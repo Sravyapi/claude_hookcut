@@ -56,16 +56,8 @@ class TranscriptService:
 
             settings = get_settings()
 
-            # Webshare rotating proxy (recommended) or generic proxy
-            if settings.WEBSHARE_PROXY_USERNAME and settings.WEBSHARE_PROXY_PASSWORD:
-                from youtube_transcript_api.proxies import WebshareProxyConfig
-                ytt_api = YouTubeTranscriptApi(
-                    proxy_config=WebshareProxyConfig(
-                        proxy_username=settings.WEBSHARE_PROXY_USERNAME,
-                        proxy_password=settings.WEBSHARE_PROXY_PASSWORD,
-                    )
-                )
-            elif settings.YTDLP_PROXY:
+            # Use YTDLP_PROXY for transcript fetching (direct proxy URL)
+            if settings.YTDLP_PROXY:
                 from youtube_transcript_api.proxies import GenericProxyConfig
                 ytt_api = YouTubeTranscriptApi(
                     proxy_config=GenericProxyConfig(
