@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: str = ""
     GEMINI_API_KEY: str = ""
     WHISPER_API_KEY: str = ""  # Falls back to OPENAI_API_KEY if empty
+    YOUTUBE_API_KEY: str = ""  # YouTube Data API v3 for reliable metadata
 
     # Auth (V1 — NextAuth.js)
     NEXTAUTH_SECRET: str = ""
