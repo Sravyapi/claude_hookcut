@@ -112,6 +112,27 @@ class FFmpegResult:
     file_size_bytes: Optional[int] = None
 
 
+def _extract_error_from_stderr(stderr: str) -> str:
+    """Extract meaningful error from FFmpeg/yt-dlp stderr (skip verbose encoder params)."""
+    lines = stderr.strip().splitlines()
+    # FFmpeg errors are usually in the last few lines after "Conversion failed" or "Error"
+    error_lines = []
+    for line in reversed(lines):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        # Stop collecting once we hit verbose encoder params
+        if any(kw in stripped for kw in ["keyint=", "weightb=", "scenecut=", "mbtree="]):
+            break
+        error_lines.append(stripped)
+        if len(error_lines) >= 5:
+            break
+    if error_lines:
+        return " | ".join(reversed(error_lines))
+    # Fallback: last 500 chars
+    return stderr[-500:]
+
+
 def extract_segment(
     youtube_url: str,
     start_seconds: float,
@@ -125,16 +146,15 @@ def extract_segment(
         "--download-sections", f"*{start_seconds}-{end_seconds}",
         "-f", "bestvideo[height<=720]+bestaudio/best[height<=720]",
         "--merge-output-format", "mp4",
-        "--force-keyframes-at-cuts",
         "-o", output_path,
         youtube_url,
     ]
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
         if result.returncode != 0:
             return FFmpegResult(
                 success=False, output_path=output_path,
-                error=f"yt-dlp failed: {result.stderr[-1500:]}"
+                error=f"yt-dlp failed: {_extract_error_from_stderr(result.stderr)}"
             )
         if not os.path.exists(output_path):
             return FFmpegResult(
@@ -155,7 +175,7 @@ def extract_segment(
     except subprocess.TimeoutExpired:
         return FFmpegResult(
             success=False, output_path=output_path,
-            error="yt-dlp timed out after 180 seconds"
+            error="yt-dlp timed out after 300 seconds"
         )
     except Exception as e:
         return FFmpegResult(success=False, output_path=output_path, error=str(e))
@@ -319,7 +339,7 @@ def render_short(
         if result.returncode != 0:
             return FFmpegResult(
                 success=False, output_path=output_path,
-                error=f"FFmpeg render failed: {result.stderr[-1500:]}"
+                error=f"FFmpeg render failed: {_extract_error_from_stderr(result.stderr)}"
             )
         duration = probe_duration(output_path)
         return FFmpegResult(
