@@ -19,15 +19,8 @@ def _ytdlp_base_args() -> list[str]:
         "--no-playlist",
     ]
     settings = get_settings()
-    # Webshare proxy or generic proxy for yt-dlp
-    if settings.WEBSHARE_PROXY_USERNAME and settings.WEBSHARE_PROXY_PASSWORD:
-        proxy_url = (
-            f"http://{settings.WEBSHARE_PROXY_USERNAME}"
-            f":{settings.WEBSHARE_PROXY_PASSWORD}"
-            f"@p.webshare.io:80"
-        )
-        args.extend(["--proxy", proxy_url])
-    elif settings.YTDLP_PROXY:
+    # YTDLP_PROXY must be a full proxy URL: http://user:pass@ip:port
+    if settings.YTDLP_PROXY:
         args.extend(["--proxy", settings.YTDLP_PROXY])
     return args
 
