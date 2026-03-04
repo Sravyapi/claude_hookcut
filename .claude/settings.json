@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -q 'hookcut-backend'; then cd /Users/sravyapidugu/Documents/codebase/claude_hookcut/hookcut-backend && python -m ruff check --fix \"$FILE_PATH\" 2>/dev/null; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

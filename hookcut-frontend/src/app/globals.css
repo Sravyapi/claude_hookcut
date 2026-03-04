@@ -1,0 +1,552 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 240 7% 4%;
+    --foreground: 215 25% 90%;
+    --card: 240 7% 6%;
+    --card-foreground: 215 25% 90%;
+    --popover: 240 7% 6%;
+    --popover-foreground: 215 25% 90%;
+    --primary: 263 70% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 215 25% 90%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 215 10% 50%;
+    --accent: 263 70% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 100% / 0.06;
+    --input: 0 0% 100% / 0.06;
+    --ring: 263 70% 58%;
+    --radius: 0.875rem;
+
+    /* Design tokens */
+    --color-primary: #7c3aed;
+    --color-primary-glow: rgba(124, 58, 237, 0.15);
+    --color-surface-0: #06060e;
+    --color-surface-1: rgba(255, 255, 255, 0.02);
+    --color-surface-2: rgba(255, 255, 255, 0.04);
+    --color-surface-3: rgba(255, 255, 255, 0.06);
+    --color-border-subtle: rgba(255, 255, 255, 0.04);
+    --color-border-default: rgba(255, 255, 255, 0.08);
+    --color-border-strong: rgba(255, 255, 255, 0.12);
+  }
+}
+
+@theme inline {
+  --color-background: #06060e;
+  --color-foreground: #e2e8f0;
+  --font-sans: var(--font-sans, "Inter"), system-ui, -apple-system, sans-serif;
+}
+
+/* ─── Base ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Noise texture overlay for depth */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(139, 92, 246, 0.5);
+  outline-offset: 2px;
+}
+
+/* ─── Glass Morphism ─── */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.glass-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+.glass-strong {
+  background: rgba(6, 6, 14, 0.8);
+  backdrop-filter: blur(40px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(32px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ─── Gradient Border (mask-based) ─── */
+.gradient-border {
+  position: relative;
+}
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.4),
+    rgba(139, 92, 246, 0.1) 40%,
+    transparent 60%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ─── Grid Pattern (for hero background) ─── */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed, #6d28d9);
+  color: white;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 12px 28px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 0 20px rgba(139, 92, 246, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.btn-primary:hover::before {
+  opacity: 1;
+}
+.btn-primary:hover {
+  box-shadow:
+    0 0 40px rgba(139, 92, 246, 0.3),
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 15px rgba(139, 92, 246, 0.2),
+    0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.btn-primary:disabled::before {
+  display: none;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #e2e8f0;
+  font-weight: 500;
+  border-radius: 14px;
+  padding: 12px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.btn-secondary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 12px 28px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 0 20px rgba(16, 185, 129, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.btn-success:hover {
+  box-shadow:
+    0 0 40px rgba(16, 185, 129, 0.3),
+    0 8px 24px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ─── Score Bars ─── */
+.score-bar-fill {
+  transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Animations (infinite loops — kept as CSS) ─── */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.5), 0 0 60px rgba(139, 92, 246, 0.15); }
+}
+.pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.orbit {
+  animation: orbit 3s linear infinite;
+}
+.orbit-reverse {
+  animation: orbit 4s linear infinite reverse;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.02) 25%,
+    rgba(255,255,255,0.08) 50%,
+    rgba(255,255,255,0.02) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -20px) scale(1.05); }
+  50% { transform: translate(-10px, 20px) scale(0.95); }
+  75% { transform: translate(-25px, -10px) scale(1.02); }
+}
+.float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+@keyframes float-slower {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-20px, 15px) scale(1.03); }
+  66% { transform: translate(15px, -25px) scale(0.97); }
+}
+.float-slower {
+  animation: float-slower 25s ease-in-out infinite;
+}
+
+@keyframes border-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Shimmer sweep for badges & gradient text */
+@keyframes shimmer-sweep {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-badge {
+  background-size: 200% 100%;
+  animation: shimmer-sweep 3s linear infinite;
+}
+
+/* Marquee for horizontal scroll */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Confetti burst particles */
+@keyframes confetti-1 { 0% { transform: translate(0,0) scale(1); opacity: 1; } 100% { transform: translate(-30px,-60px) scale(0); opacity: 0; } }
+@keyframes confetti-2 { 0% { transform: translate(0,0) scale(1); opacity: 1; } 100% { transform: translate(25px,-55px) scale(0); opacity: 0; } }
+@keyframes confetti-3 { 0% { transform: translate(0,0) scale(1); opacity: 1; } 100% { transform: translate(-20px,-70px) scale(0); opacity: 0; } }
+@keyframes confetti-4 { 0% { transform: translate(0,0) scale(1); opacity: 1; } 100% { transform: translate(35px,-45px) scale(0); opacity: 0; } }
+@keyframes confetti-5 { 0% { transform: translate(0,0) scale(1); opacity: 1; } 100% { transform: translate(-15px,-80px) scale(0); opacity: 0; } }
+@keyframes confetti-6 { 0% { transform: translate(0,0) scale(1); opacity: 1; } 100% { transform: translate(20px,-65px) scale(0); opacity: 0; } }
+
+/* Typewriter cursor blink */
+@keyframes blink-cursor {
+  0%, 100% { border-color: rgba(139, 92, 246, 0.6); }
+  50% { border-color: transparent; }
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ─── Gradient Text ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #c084fc 0%, #8b5cf6 40%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-animated {
+  background: linear-gradient(
+    135deg,
+    #c084fc 0%,
+    #8b5cf6 25%,
+    #a78bfa 50%,
+    #7c3aed 75%,
+    #c084fc 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer-sweep 4s linear infinite;
+}
+
+/* ─── Background Mesh ─── */
+.bg-mesh {
+  background-color: #06060e;
+  background-image:
+    radial-gradient(at 15% 15%, rgba(139, 92, 246, 0.07) 0, transparent 60%),
+    radial-gradient(at 85% 85%, rgba(59, 130, 246, 0.05) 0, transparent 60%),
+    radial-gradient(at 50% 50%, rgba(168, 85, 247, 0.03) 0, transparent 60%);
+}
+
+/* ─── Checkbox ─── */
+.hook-checkbox {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+.hook-checkbox:checked {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  border-color: #8b5cf6;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.3);
+}
+.hook-checkbox:checked::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+.hook-checkbox:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.15);
+}
+
+/* ─── Niche Chip Selector ─── */
+.niche-chip {
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  position: relative;
+}
+.niche-chip:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+}
+.niche-chip.active {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.4);
+  color: #c4b5fd;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.1);
+}
+
+/* ─── Circular Score Gauge ─── */
+.score-ring {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.score-ring-track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.05);
+}
+.score-ring-fill {
+  fill: none;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Animated Header Border ─── */
+.animated-border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(139, 92, 246, 0.3) 20%,
+    rgba(124, 58, 237, 0.5) 50%,
+    rgba(139, 92, 246, 0.3) 80%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: border-flow 4s ease-in-out infinite;
+}
+
+/* ─── Phone Mockup ─── */
+.phone-frame {
+  position: relative;
+  width: 200px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #111;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.06),
+    0 0 0 3px rgba(139, 92, 246, 0.1),
+    0 20px 60px rgba(0, 0, 0, 0.6);
+  aspect-ratio: 9 / 16;
+}
+.phone-frame::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 10;
+}
+
+/* ─── Timeline (progress) ─── */
+.timeline-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.timeline-line {
+  width: 2px;
+  height: 20px;
+  margin-left: 17px;
+  border-radius: 1px;
+  transition: background-color 0.5s ease;
+}
+
+/* Horizontal stepper */
+.stepper-line {
+  height: 2px;
+  flex: 1;
+  border-radius: 1px;
+  transition: background-color 0.5s ease;
+}
+
+/* ─── Success celebration ─── */
+@keyframes celebrate {
+  0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+  50% { transform: scale(1.05) rotate(1deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.celebrate {
+  animation: celebrate 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ─── Horizontal scroll snap ─── */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-snap-x > * {
+  scroll-snap-align: start;
+}
+
+/* Hide scrollbar for carousel areas */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

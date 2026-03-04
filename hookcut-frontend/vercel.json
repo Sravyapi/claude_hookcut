@@ -1,0 +1,14 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXTAUTH_URL": "@nextauth_url",
+    "NEXTAUTH_SECRET": "@nextauth_secret",
+    "GOOGLE_CLIENT_ID": "@google_client_id",
+    "GOOGLE_CLIENT_SECRET": "@google_client_secret",
+    "NEXT_PUBLIC_API_URL": "@api_url",
+    "NEXT_PUBLIC_POSTHOG_KEY": "@posthog_key",
+    "NEXT_PUBLIC_POSTHOG_HOST": "@posthog_host"
+  }
+}

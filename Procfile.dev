@@ -1,0 +1,4 @@
+backend: cd hookcut-backend && watchfiles --filter python 'uvicorn app.main:app --host 0.0.0.0 --port 8000' ./app
+worker: cd hookcut-backend && watchfiles --filter python 'celery -A app.tasks.celery_app worker --loglevel=info --concurrency=2' ./app
+beat: cd hookcut-backend && celery -A app.tasks.celery_app beat --loglevel=info
+frontend: cd hookcut-frontend && PATH="/opt/homebrew/opt/node@22/bin:$PATH" npm run dev

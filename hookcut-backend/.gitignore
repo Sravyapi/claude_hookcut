@@ -1,0 +1,13 @@
+# Bytecode and packaging metadata
+__pycache__/
+*.egg-info/
+.env
+*.db
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+build/
+.ruff_cache/
+hookcut_storage/

@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+*.pyo
+.env
+.git
+.pytest_cache
+*.egg-info
+hookcut.db
+/tmp
+.ruff_cache

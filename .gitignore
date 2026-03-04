@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+
+# Build artifacts
+dump.rdb
+*.db-shm
+*.db-wal
+
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Docs (local only)
+Docs/
