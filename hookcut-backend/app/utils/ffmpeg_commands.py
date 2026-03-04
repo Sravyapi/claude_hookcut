@@ -12,14 +12,20 @@ logger = logging.getLogger(__name__)
 
 def _ytdlp_base_args() -> list[str]:
     """Common yt-dlp args that help bypass YouTube bot detection on server IPs."""
+    settings = get_settings()
     args = [
         "--no-warnings",
         "--geo-bypass",
-        "--extractor-args", "youtube:player_client=android_creator",
         "--retries", "3",
         "--no-playlist",
     ]
-    settings = get_settings()
+    # Use cookies file if available (most reliable bot bypass)
+    cookies_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "cookies.txt")
+    if os.path.exists(cookies_path):
+        args.extend(["--cookies", cookies_path])
+    else:
+        # Without cookies, use mobile client (less likely to trigger bot check)
+        args.extend(["--extractor-args", "youtube:player_client=mweb"])
     # YTDLP_PROXY must be a full proxy URL: http://user:pass@ip:port
     if settings.YTDLP_PROXY:
         args.extend(["--proxy", settings.YTDLP_PROXY])
