@@ -7,13 +7,9 @@ RUN apt-get update && \
 
 WORKDIR /app
 
-# Install Python deps
-COPY pyproject.toml .
-COPY app/__init__.py app/__init__.py
-RUN pip install --no-cache-dir .
-
-# Copy app
+# Copy everything first, then install
 COPY . .
+RUN pip install --no-cache-dir .
 
 # Create temp directory for video processing
 RUN mkdir -p /tmp/hookcut
