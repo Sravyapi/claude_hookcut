@@ -56,6 +56,7 @@ class Settings(BaseSettings):
     YTDLP_PROXY: str = ""  # Generic proxy URL (e.g., http://user:pass@proxy:port)
     WEBSHARE_PROXY_USERNAME: str = ""  # Webshare rotating proxy (recommended)
     WEBSHARE_PROXY_PASSWORD: str = ""
+    YOUTUBE_COOKIES_B64: str = ""  # Base64-encoded YouTube cookies.txt (Netscape format)
 
     # Operational
     TEMP_FILE_TTL_HOURS: int = 24

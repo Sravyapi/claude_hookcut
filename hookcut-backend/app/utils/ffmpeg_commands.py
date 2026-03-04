@@ -1,3 +1,4 @@
+import base64
 import json
 import os
 import subprocess
@@ -8,6 +9,27 @@ from typing import Optional
 from app.config import get_settings
 
 logger = logging.getLogger(__name__)
+
+# Cookies file path (shared with transcript.py)
+_COOKIES_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "cookies.txt"
+)
+
+
+def _ensure_cookies_file() -> str:
+    """Write cookies from YOUTUBE_COOKIES_B64 env var to disk if not already present."""
+    if os.path.exists(_COOKIES_PATH):
+        return _COOKIES_PATH
+    b64 = os.environ.get("YOUTUBE_COOKIES_B64", "")
+    if b64:
+        try:
+            data = base64.b64decode(b64)
+            with open(_COOKIES_PATH, "wb") as f:
+                f.write(data)
+            logger.info("Decoded YOUTUBE_COOKIES_B64 to %s", _COOKIES_PATH)
+        except Exception as e:
+            logger.warning("Failed to decode YOUTUBE_COOKIES_B64: %s", e)
+    return _COOKIES_PATH
 
 
 def _ytdlp_base_args() -> list[str]:
@@ -20,10 +42,7 @@ def _ytdlp_base_args() -> list[str]:
         "--no-playlist",
     ]
     # Use cookies file if available (most reliable bot bypass)
-    # In Docker: /app/app/utils/ffmpeg_commands.py → 3 levels up → /app/cookies.txt
-    cookies_path = os.path.join(
-        os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "cookies.txt"
-    )
+    cookies_path = _ensure_cookies_file()
     if os.path.exists(cookies_path):
         args.extend(["--cookies", cookies_path])
     else:

@@ -1,3 +1,4 @@
+import base64
 import subprocess
 import json
 import os
@@ -10,11 +11,26 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-# Path to Netscape-format cookies.txt (exported from browser)
-# In Docker: /app/app/services/transcript.py → 3 levels up → /app/cookies.txt
+# Cookies file path: check env var first, then file on disk
 _COOKIES_PATH = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "cookies.txt"
 )
+
+
+def _ensure_cookies_file() -> str:
+    """Write cookies from YOUTUBE_COOKIES_B64 env var to disk if not already present."""
+    if os.path.exists(_COOKIES_PATH):
+        return _COOKIES_PATH
+    b64 = os.environ.get("YOUTUBE_COOKIES_B64", "")
+    if b64:
+        try:
+            data = base64.b64decode(b64)
+            with open(_COOKIES_PATH, "wb") as f:
+                f.write(data)
+            logger.info("Decoded YOUTUBE_COOKIES_B64 to %s", _COOKIES_PATH)
+        except Exception as e:
+            logger.warning("Failed to decode YOUTUBE_COOKIES_B64: %s", e)
+    return _COOKIES_PATH
 
 
 @dataclass
@@ -64,11 +80,12 @@ class TranscriptService:
             settings = get_settings()
 
             # Strategy: cookies (most reliable) > proxy > direct
+            cookies_path = _ensure_cookies_file()
             kwargs = {}
-            if os.path.exists(_COOKIES_PATH):
+            if os.path.exists(cookies_path):
                 import requests
                 session = requests.Session()
-                cj = http.cookiejar.MozillaCookieJar(_COOKIES_PATH)
+                cj = http.cookiejar.MozillaCookieJar(cookies_path)
                 cj.load(ignore_discard=True, ignore_expires=True)
                 session.cookies = cj
                 kwargs["http_client"] = session
