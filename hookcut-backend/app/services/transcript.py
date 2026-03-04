@@ -144,9 +144,13 @@ class TranscriptService:
                 "--output", output_template,
                 url,
             ]
+            logger.info("yt-dlp subtitle cmd: %s", " ".join(cmd))
+            cookies_path = _ensure_cookies_file()
+            if os.path.exists(cookies_path):
+                logger.info("Cookies file size: %d bytes", os.path.getsize(cookies_path))
             result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
             if result.returncode != 0:
-                logger.warning(f"yt-dlp subtitles cmd failed for {video_id}: {result.stderr[:300]}")
+                logger.warning(f"yt-dlp subtitles cmd failed for {video_id}: {result.stderr[:500]}")
 
             sub_file = None
             for f in os.listdir(work_dir):
