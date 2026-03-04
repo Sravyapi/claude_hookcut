@@ -4,7 +4,25 @@ import logging
 from dataclasses import dataclass
 from typing import Optional
 
+from app.config import get_settings
+
 logger = logging.getLogger(__name__)
+
+
+def _ytdlp_base_args() -> list[str]:
+    """Common yt-dlp args that help bypass YouTube bot detection on server IPs."""
+    args = [
+        "--no-warnings",
+        "--geo-bypass",
+        "--extractor-args", "youtube:player_client=android_creator",
+        "--retries", "3",
+        "--no-playlist",
+    ]
+    settings = get_settings()
+    proxy = getattr(settings, "YTDLP_PROXY", "")
+    if proxy:
+        args.extend(["--proxy", proxy])
+    return args
 
 # ─── Runtime capability detection ───
 _subtitles_filter_available: Optional[bool] = None
@@ -96,16 +114,16 @@ def extract_segment(
     """Extract a video segment using yt-dlp --download-sections. Never downloads full video."""
     cmd = [
         "yt-dlp",
+        *_ytdlp_base_args(),
         "--download-sections", f"*{start_seconds}-{end_seconds}",
         "-f", "bestvideo[height<=720]+bestaudio/best[height<=720]",
         "--merge-output-format", "mp4",
-        "--no-playlist",
         "--force-keyframes-at-cuts",
         "-o", output_path,
         youtube_url,
     ]
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
         if result.returncode != 0:
             return FFmpegResult(
                 success=False, output_path=output_path,
@@ -116,14 +134,21 @@ def extract_segment(
                 success=False, output_path=output_path,
                 error="yt-dlp completed but output file not found"
             )
+        # Validate file isn't corrupt/empty
+        file_size = os.path.getsize(output_path)
+        if file_size < 10000:  # Less than 10KB is certainly corrupt
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error=f"Downloaded file too small ({file_size} bytes), likely corrupt"
+            )
         return FFmpegResult(
             success=True, output_path=output_path,
-            file_size_bytes=os.path.getsize(output_path),
+            file_size_bytes=file_size,
         )
     except subprocess.TimeoutExpired:
         return FFmpegResult(
             success=False, output_path=output_path,
-            error="yt-dlp timed out after 120 seconds"
+            error="yt-dlp timed out after 180 seconds"
         )
     except Exception as e:
         return FFmpegResult(success=False, output_path=output_path, error=str(e))

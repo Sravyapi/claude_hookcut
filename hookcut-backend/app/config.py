@@ -52,6 +52,9 @@ class Settings(BaseSettings):
     POSTHOG_API_KEY: str = ""
     POSTHOG_HOST: str = "https://app.posthog.com"
 
+    # yt-dlp
+    YTDLP_PROXY: str = ""  # Optional proxy for yt-dlp (e.g., socks5://host:port)
+
     # Operational
     TEMP_FILE_TTL_HOURS: int = 24
     MAX_CONCURRENT_ANALYSES: int = 10

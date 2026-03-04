@@ -106,13 +106,14 @@ class TranscriptService:
             url = f"https://www.youtube.com/watch?v={video_id}"
             output_template = os.path.join(work_dir, "subs")
 
+            from app.utils.ffmpeg_commands import _ytdlp_base_args
             cmd = [
                 "yt-dlp",
+                *_ytdlp_base_args(),
                 "--write-auto-sub",
                 "--sub-lang", "en",
                 "--sub-format", "json3",
                 "--skip-download",
-                "--no-playlist",
                 "--output", output_template,
                 url,
             ]
@@ -156,11 +157,12 @@ class TranscriptService:
             audio_path = os.path.join(work_dir, "audio.m4a")
 
             # Download audio only (not full video)
+            from app.utils.ffmpeg_commands import _ytdlp_base_args
             cmd = [
                 "yt-dlp",
+                *_ytdlp_base_args(),
                 "-f", "bestaudio[ext=m4a]/bestaudio",
                 "--output", audio_path,
-                "--no-playlist",
                 url,
             ]
             result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
