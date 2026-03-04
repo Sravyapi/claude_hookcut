@@ -1,12 +1,15 @@
 import subprocess
 import json
 import os
+import re
 import shutil
 import tempfile
 import logging
 import http.cookiejar
 from dataclasses import dataclass
 from typing import Optional
+
+import httpx
 
 from app.utils.ffmpeg_commands import _ensure_cookies_file, _COOKIES_PATH
 
@@ -20,12 +23,20 @@ class TranscriptResult:
     language_detected: Optional[str] = None
 
 
+    # Piped API instances (tried in order, public YouTube frontends not blocked like cloud IPs)
+    PIPED_INSTANCES = [
+        "https://pipedapi.kavin.rocks",
+        "https://pipedapi.adminforge.de",
+        "https://pipedapi.in.projectsegfau.lt",
+    ]
+
 class TranscriptService:
     """
-    3-provider cascade for transcript acquisition.
+    4-provider cascade for transcript acquisition.
     1. youtube-transcript-api (primary)
     2. yt-dlp subtitle extraction (fallback 1)
-    3. OpenAI Whisper API (fallback 2)
+    3. Piped API (fallback 2 — bypasses cloud IP blocks)
+    4. OpenAI Whisper API (fallback 3)
     All fail → None returned, no credits deducted.
     """
 
@@ -38,6 +49,11 @@ class TranscriptService:
         result = self._try_ytdlp_subtitles(video_id, language)
         if result:
             logger.info(f"Transcript via yt-dlp subtitles for {video_id}")
+            return result
+
+        result = self._try_piped_api(video_id, language)
+        if result:
+            logger.info(f"Transcript via Piped API for {video_id}")
             return result
 
         from app.config import get_settings
@@ -145,8 +161,7 @@ class TranscriptService:
                 url,
             ]
             # Log command with proxy credentials redacted
-            import re as _re
-            safe_log = _re.sub(r'--proxy\s+\S+', '--proxy ***', " ".join(cmd))
+            safe_log = re.sub(r'--proxy\s+\S+', '--proxy ***', " ".join(cmd))
             logger.info("yt-dlp subtitle cmd: %s", safe_log)
             cookies_path = _ensure_cookies_file()
             if os.path.exists(cookies_path):
@@ -180,6 +195,88 @@ class TranscriptService:
             return None
         finally:
             shutil.rmtree(work_dir, ignore_errors=True)
+
+    def _try_piped_api(
+        self, video_id: str, language: str
+    ) -> Optional[TranscriptResult]:
+        """Fetch transcript via Piped (public YouTube frontend) — bypasses cloud IP blocks."""
+        lang_codes = self._get_lang_codes(language)
+        for instance in PIPED_INSTANCES:
+            try:
+                # Get stream info which includes subtitle URLs
+                resp = httpx.get(
+                    f"{instance}/streams/{video_id}",
+                    timeout=15,
+                    follow_redirects=True,
+                )
+                if resp.status_code != 200:
+                    logger.debug("Piped %s returned %d for %s", instance, resp.status_code, video_id)
+                    continue
+
+                data = resp.json()
+                subtitles = data.get("subtitles", [])
+                if not subtitles:
+                    logger.debug("Piped %s: no subtitles for %s", instance, video_id)
+                    continue
+
+                # Find best subtitle match by language code
+                sub_url = None
+                for code in [*lang_codes, "en"]:
+                    for sub in subtitles:
+                        sub_code = sub.get("code", "")
+                        if sub_code == code or sub_code.startswith(code):
+                            sub_url = sub.get("url")
+                            break
+                    if sub_url:
+                        break
+
+                # Fall back to first available subtitle
+                if not sub_url and subtitles:
+                    sub_url = subtitles[0].get("url")
+
+                if not sub_url:
+                    continue
+
+                # Fetch the subtitle content (VTT format from Piped)
+                sub_resp = httpx.get(sub_url, timeout=15, follow_redirects=True)
+                if sub_resp.status_code != 200:
+                    continue
+
+                text = self._parse_vtt(sub_resp.text)
+                if not text or len(text.strip()) < 50:
+                    continue
+
+                return TranscriptResult(
+                    text=text,
+                    provider="piped_api",
+                    language_detected=code if sub_url else None,
+                )
+            except Exception as e:
+                logger.debug("Piped %s failed for %s: %s", instance, video_id, e)
+                continue
+
+        logger.warning("All Piped instances failed for %s", video_id)
+        return None
+
+    def _parse_vtt(self, vtt_text: str) -> str:
+        """Parse WebVTT subtitle format into timestamped text."""
+        lines = []
+        current_time = None
+        for line in vtt_text.split("\n"):
+            line = line.strip()
+            # Match VTT timestamp lines: 00:00:01.000 --> 00:00:04.000
+            ts_match = re.match(r"(\d{2}):(\d{2}):(\d{2})\.\d{3}\s*-->", line)
+            if ts_match:
+                h, m, s = int(ts_match.group(1)), int(ts_match.group(2)), int(ts_match.group(3))
+                total_min = h * 60 + m
+                current_time = f"[{total_min}:{s:05.2f}]"
+            elif line and not line.startswith("WEBVTT") and not line.startswith("Kind:") and not line.startswith("Language:") and current_time:
+                # Strip VTT tags like <c> </c>
+                clean = re.sub(r"<[^>]+>", "", line)
+                if clean.strip():
+                    lines.append(f"{current_time} {clean.strip()}")
+                    current_time = None
+        return "\n".join(lines)
 
     def _try_whisper_api(
         self, video_id: str, language: str
