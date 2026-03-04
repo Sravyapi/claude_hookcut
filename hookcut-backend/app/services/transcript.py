@@ -11,7 +11,10 @@ from typing import Optional
 logger = logging.getLogger(__name__)
 
 # Path to Netscape-format cookies.txt (exported from browser)
-_COOKIES_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "cookies.txt")
+# In Docker: /app/app/services/transcript.py → 3 levels up → /app/cookies.txt
+_COOKIES_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "cookies.txt"
+)
 
 
 @dataclass

@@ -20,7 +20,10 @@ def _ytdlp_base_args() -> list[str]:
         "--no-playlist",
     ]
     # Use cookies file if available (most reliable bot bypass)
-    cookies_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "cookies.txt")
+    # In Docker: /app/app/utils/ffmpeg_commands.py → 3 levels up → /app/cookies.txt
+    cookies_path = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "cookies.txt"
+    )
     if os.path.exists(cookies_path):
         args.extend(["--cookies", cookies_path])
     else:
