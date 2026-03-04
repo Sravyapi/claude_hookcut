@@ -144,7 +144,10 @@ class TranscriptService:
                 "--output", output_template,
                 url,
             ]
-            logger.info("yt-dlp subtitle cmd: %s", " ".join(cmd))
+            # Log command with proxy credentials redacted
+            import re as _re
+            safe_log = _re.sub(r'--proxy\s+\S+', '--proxy ***', " ".join(cmd))
+            logger.info("yt-dlp subtitle cmd: %s", safe_log)
             cookies_path = _ensure_cookies_file()
             if os.path.exists(cookies_path):
                 logger.info("Cookies file size: %d bytes", os.path.getsize(cookies_path))
