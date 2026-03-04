@@ -28,5 +28,7 @@ celery_app.conf.update(
     task_track_started=True,
     task_acks_late=True,
     worker_prefetch_multiplier=1,
-    result_expires=3600,
+    result_expires=300,  # 5 min — Railway free Redis has ~25MB limit
+    worker_max_tasks_per_child=20,  # Restart worker process every 20 tasks to free memory
+    broker_connection_retry_on_startup=True,
 )
