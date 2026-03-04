@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 import logging
@@ -275,26 +276,50 @@ def _split_caption_lines(words: list[str]) -> list[str]:
     return lines if lines else [""]
 
 
-def render_short(
+def _probe_video_stream(filepath: str) -> Optional[dict]:
+    """Probe input file for video stream info (width, height, codec)."""
+    try:
+        cmd = [
+            "ffprobe", "-v", "error",
+            "-select_streams", "v:0",
+            "-show_entries", "stream=width,height,codec_name",
+            "-of", "json",
+            filepath,
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
+        if result.returncode == 0 and result.stdout.strip():
+            data = json.loads(result.stdout)
+            streams = data.get("streams", [])
+            if streams:
+                return streams[0]
+    except Exception:
+        pass
+    return None
+
+
+def _build_render_cmd(
     input_path: str,
-    subtitle_path: str,
     output_path: str,
+    subtitle_path: Optional[str] = None,
     watermark: bool = False,
-) -> FFmpegResult:
-    """
-    Single-pass FFmpeg render: 16:9 → 9:16 + audio normalization + captions + watermark.
-    """
-    # Build video filter chain
+    use_subtitles: bool = True,
+) -> list[str]:
+    """Build the FFmpeg render command. Separated for retry logic."""
     vf_parts = [
-        # Center-crop 16:9 to 9:16
-        f"crop=ih*{ASPECT_RATIO}:ih:(iw-ih*{ASPECT_RATIO})/2:0",
+        # Center-crop 16:9 to 9:16 (min clamp prevents negative crop on narrow videos)
+        f"crop='min(ih*{ASPECT_RATIO},iw)':ih:'(iw-min(ih*{ASPECT_RATIO},iw))/2':0",
         # Scale to Shorts resolution
         f"scale={SHORTS_WIDTH}:{SHORTS_HEIGHT}:force_original_aspect_ratio=decrease",
         f"pad={SHORTS_WIDTH}:{SHORTS_HEIGHT}:(ow-iw)/2:(oh-ih)/2:black",
     ]
 
     # Burn in captions (requires libass — gracefully skip if unavailable)
-    if subtitle_path and os.path.exists(subtitle_path) and _has_subtitles_filter():
+    if (
+        use_subtitles
+        and subtitle_path
+        and os.path.exists(subtitle_path)
+        and _has_subtitles_filter()
+    ):
         # FFmpeg subtitles filter requires forward slashes and escaped colons
         sub_escaped = subtitle_path.replace("\\", "/").replace(":", "\\:")
         vf_parts.append(f"subtitles='{sub_escaped}'")
@@ -308,14 +333,13 @@ def render_short(
 
     vf = ",".join(vf_parts)
 
-    # Audio filter: silence removal + normalization + padding
+    # Audio filter: normalization + padding (skip silence removal — can eat short clips)
     af = (
-        "silenceremove=start_periods=1:start_silence=0.3:start_threshold=-40dB,"
         "loudnorm=I=-14:TP=-1:LRA=11,"
         "apad=pad_dur=0.3"
     )
 
-    cmd = [
+    return [
         "ffmpeg", "-y",
         "-i", input_path,
         "-vf", vf,
@@ -327,18 +351,86 @@ def render_short(
         output_path,
     ]
 
+
+def render_short(
+    input_path: str,
+    subtitle_path: str,
+    output_path: str,
+    watermark: bool = False,
+) -> FFmpegResult:
+    """
+    Single-pass FFmpeg render: 16:9 → 9:16 + audio normalization + captions + watermark.
+    Retries without subtitles if first attempt produces 0 frames.
+    """
+    # Validate input has a video stream
+    video_info = _probe_video_stream(input_path)
+    if not video_info:
+        return FFmpegResult(
+            success=False, output_path=output_path,
+            error="Input file has no video stream (ffprobe found nothing)"
+        )
+    logger.info(
+        "Render input: %sx%s codec=%s",
+        video_info.get("width"), video_info.get("height"), video_info.get("codec_name"),
+    )
+
+    # Attempt 1: full pipeline with subtitles
+    cmd = _build_render_cmd(input_path, output_path, subtitle_path, watermark, use_subtitles=True)
+    result = _run_ffmpeg_render(cmd, output_path)
+    if result.success:
+        return result
+
+    # If render produced 0 frames, retry without subtitles
+    if result.error and "frame=" in result.error and "frame= 0" not in result.error:
+        # Non-zero frames but still failed — don't retry, return error as-is
+        return result
+
+    logger.warning("Render produced 0 frames, retrying without subtitles filter")
+    cmd = _build_render_cmd(input_path, output_path, subtitle_path, watermark, use_subtitles=False)
+    result = _run_ffmpeg_render(cmd, output_path)
+    if result.success:
+        return result
+
+    # Final fallback: minimal pipeline (just scale + pad, no crop)
+    logger.warning("Retry without subtitles also failed, trying minimal pipeline")
+    vf_minimal = (
+        f"scale={SHORTS_WIDTH}:{SHORTS_HEIGHT}:force_original_aspect_ratio=decrease,"
+        f"pad={SHORTS_WIDTH}:{SHORTS_HEIGHT}:(ow-iw)/2:(oh-ih)/2:black"
+    )
+    cmd_minimal = [
+        "ffmpeg", "-y",
+        "-i", input_path,
+        "-vf", vf_minimal,
+        "-c:v", VIDEO_CODEC, "-preset", ENCODER_PRESET, "-crf", CRF_QUALITY,
+        "-c:a", AUDIO_CODEC, "-b:a", AUDIO_BITRATE,
+        "-movflags", "+faststart",
+        "-t", str(MAX_SHORT_DURATION_SECONDS),
+        output_path,
+    ]
+    return _run_ffmpeg_render(cmd_minimal, output_path)
+
+
+def _run_ffmpeg_render(cmd: list[str], output_path: str) -> FFmpegResult:
+    """Execute an FFmpeg render command and return structured result."""
     try:
+        logger.info("FFmpeg cmd: %s", " ".join(cmd[:6]) + " ...")
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
         if result.returncode != 0:
             return FFmpegResult(
                 success=False, output_path=output_path,
                 error=f"FFmpeg render failed: {_extract_error_from_stderr(result.stderr)}"
             )
+        # Verify output file exists and has content
+        if not os.path.exists(output_path) or os.path.getsize(output_path) < 1000:
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error="FFmpeg completed but output file missing or too small"
+            )
         duration = probe_duration(output_path)
         return FFmpegResult(
             success=True, output_path=output_path,
             duration_seconds=duration,
-            file_size_bytes=os.path.getsize(output_path) if os.path.exists(output_path) else None,
+            file_size_bytes=os.path.getsize(output_path),
         )
     except subprocess.TimeoutExpired:
         return FFmpegResult(

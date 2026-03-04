@@ -1,9 +1,12 @@
 FROM python:3.12-slim
 
-# Install system deps (ffmpeg for video processing, yt-dlp for metadata)
+# Install system deps (ffmpeg + libass for subtitle burn-in, yt-dlp for downloads)
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg && \
-    rm -rf /var/lib/apt/lists/* && \
+    apt-get install -y --no-install-recommends \
+        ffmpeg \
+        libass9 \
+        fonts-liberation \
+    && rm -rf /var/lib/apt/lists/* && \
     pip install --no-cache-dir yt-dlp
 
 WORKDIR /app
