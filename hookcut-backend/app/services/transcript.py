@@ -145,7 +145,9 @@ class TranscriptService:
                 "--output", output_template,
                 url,
             ]
-            subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+            if result.returncode != 0:
+                logger.warning(f"yt-dlp subtitles cmd failed for {video_id}: {result.stderr[:300]}")
 
             sub_file = None
             for f in os.listdir(work_dir):
@@ -154,6 +156,7 @@ class TranscriptService:
                     break
 
             if sub_file is None:
+                logger.warning(f"yt-dlp subtitles: no subtitle file found for {video_id}")
                 return None
 
             if sub_file.endswith(".json3"):
