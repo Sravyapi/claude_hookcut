@@ -53,8 +53,9 @@ class TranscriptService:
         try:
             from youtube_transcript_api import YouTubeTranscriptApi
 
+            ytt_api = YouTubeTranscriptApi()
             lang_codes = self._get_lang_codes(language)
-            transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+            transcript_list = ytt_api.list(video_id)
 
             transcript = None
             for code in lang_codes:
@@ -76,14 +77,14 @@ class TranscriptService:
             if transcript is None:
                 return None
 
-            entries = transcript.fetch()
+            fetched = transcript.fetch()
             lines = []
-            for entry in entries:
-                start = entry["start"]
+            for snippet in fetched:
+                start = snippet.start
                 minutes = int(start // 60)
                 seconds = start % 60
                 ts = f"[{minutes}:{seconds:05.2f}]"
-                lines.append(f"{ts} {entry['text']}")
+                lines.append(f"{ts} {snippet.text}")
 
             text = "\n".join(lines)
             if len(text.strip()) < 50:
@@ -92,10 +93,10 @@ class TranscriptService:
             return TranscriptResult(
                 text=text,
                 provider="youtube_transcript_api",
-                language_detected=transcript.language_code,
+                language_detected=fetched.language_code,
             )
         except Exception as e:
-            logger.debug(f"youtube-transcript-api failed for {video_id}: {e}")
+            logger.warning(f"youtube-transcript-api failed for {video_id}: {e}")
             return None
 
     def _try_ytdlp_subtitles(
