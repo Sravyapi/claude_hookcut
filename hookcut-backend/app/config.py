@@ -24,7 +24,6 @@ class Settings(BaseSettings):
 
     # Auth (V1 — NextAuth.js)
     NEXTAUTH_SECRET: str = ""
-    NEXTAUTH_URL: str = "http://localhost:3000"
 
     # Payments (V1)
     STRIPE_SECRET_KEY: str = ""
@@ -54,15 +53,10 @@ class Settings(BaseSettings):
 
     # Proxy (required for YouTube access from cloud servers)
     YTDLP_PROXY: str = ""  # Generic proxy URL (e.g., http://user:pass@proxy:port)
-    WEBSHARE_PROXY_USERNAME: str = ""  # Webshare rotating proxy (recommended)
-    WEBSHARE_PROXY_PASSWORD: str = ""
     YOUTUBE_COOKIES_B64: str = ""  # Base64-encoded YouTube cookies.txt (Netscape format)
 
     # Operational
     TEMP_FILE_TTL_HOURS: int = 24
-    MAX_CONCURRENT_ANALYSES: int = 10
-    RATE_LIMIT_ANALYSES_PER_HOUR: int = 10
-    RATE_LIMIT_API_PER_MINUTE: int = 50
 
     @model_validator(mode='after')
     def validate_required_settings(self) -> 'Settings':
@@ -101,7 +95,7 @@ class Settings(BaseSettings):
     def effective_whisper_key(self) -> str:
         return self.WHISPER_API_KEY or self.OPENAI_API_KEY
 
-    model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
+    model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 
 
 @lru_cache

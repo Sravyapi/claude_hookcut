@@ -123,16 +123,6 @@ export const POLL_CONFIG = {
 export const DEFAULT_LANGUAGE = "English";
 export const DEFAULT_NICHE = "Generic";
 
-export const SESSION_STATUS = {
-  PENDING: "pending",
-  FETCHING_TRANSCRIPT: "fetching_transcript",
-  ANALYZING: "analyzing",
-  HOOKS_READY: "hooks_ready",
-  GENERATING_SHORTS: "generating_shorts",
-  COMPLETED: "completed",
-  FAILED: "failed",
-} as const;
-
 export const SHORT_STATUS = {
   QUEUED: "queued",
   DOWNLOADING: "downloading",

@@ -15,7 +15,7 @@ URL → validate → analyze (Celery) → transcript cascade → LLM hook identi
 
 ## Admin System
 - RBAC: `get_admin_user` dependency in `dependencies.py` → requires `User.role == "admin"`
-- 20 endpoints under `/api/admin/` (routers/admin.py)
+- 21 endpoints under `/api/admin/` (routers/admin.py)
 - AdminService (22 methods) in services/admin_service.py
 - Rule engine: 17 base rules (A-Q) + custom, versioned, revertable
 - NARM: LLM-powered insights from LearningLog data

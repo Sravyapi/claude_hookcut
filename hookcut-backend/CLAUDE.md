@@ -65,7 +65,7 @@ python -m ruff check app/                       # lint
 - `app/tasks/celery_app.py` — Celery config + shared constants (ERROR_MSG_MAX_LEN, FREE_MONTHLY_MINUTES, DOWNLOAD_URL_EXPIRES_SECONDS)
 - `app/utils/ffmpeg_commands.py` — CAPTION_STYLES dict, VALID_CAPTION_STYLES, ASS subtitle generation
 - `app/models/admin.py` — AdminAuditLog, PromptRule, ProviderConfig, NarmInsight
-- `app/schemas/admin.py` — 24 Pydantic admin schemas
+- `app/schemas/admin.py` — 23 Pydantic admin schemas
 - `app/services/admin_service.py` — AdminService (22 static methods)
-- `app/routers/admin.py` — 20 admin endpoints, prefix="/admin"
+- `app/routers/admin.py` — 21 admin endpoints, prefix="/admin"
 - `alembic/versions/007_add_admin_tables.py` — 4 new tables

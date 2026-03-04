@@ -111,7 +111,7 @@ const SessionRow = memo(function SessionRow({ session }: { session: SessionSumma
         {thumbUrl ? (
           <img
             src={thumbUrl}
-            alt=""
+            alt={session.video_title || "Video thumbnail"}
             className="w-full h-full object-cover"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = "none";
@@ -189,6 +189,10 @@ export default function DashboardPage() {
     setSearch(value);
     if (searchTimerRef.current) clearTimeout(searchTimerRef.current);
     searchTimerRef.current = setTimeout(() => setDebouncedSearch(value), 250);
+  }, []);
+
+  useEffect(() => {
+    return () => { if (searchTimerRef.current) clearTimeout(searchTimerRef.current); };
   }, []);
 
   useEffect(() => {

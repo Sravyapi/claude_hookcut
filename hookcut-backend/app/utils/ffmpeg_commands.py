@@ -72,7 +72,8 @@ def _has_subtitles_filter() -> bool:
                     "Shorts will render without burned-in captions. "
                     "Fix: brew install libass && brew reinstall ffmpeg"
                 )
-        except Exception:
+        except Exception as e:
+            logger.warning("FFmpeg subtitle filter check failed: %s", e)
             _subtitles_filter_available = False
     return _subtitles_filter_available
 
@@ -320,8 +321,8 @@ def _probe_video_stream(filepath: str) -> Optional[dict]:
             streams = data.get("streams", [])
             if streams:
                 return streams[0]
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug("Failed to get video stream info: %s", e)
     return None
 
 
@@ -506,8 +507,8 @@ def probe_duration(filepath: str) -> Optional[float]:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
         if result.returncode == 0 and result.stdout.strip():
             return float(result.stdout.strip())
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug("Failed to probe duration: %s", e)
     return None
 
 

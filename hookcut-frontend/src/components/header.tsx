@@ -5,7 +5,7 @@ import { useSession, signOut } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { User, Settings, LogOut, LayoutDashboard, CreditCard, Menu, X } from "lucide-react";
+import { Settings, LogOut, LayoutDashboard, CreditCard, Menu, X } from "lucide-react";
 import { api } from "@/lib/api";
 import { useUser } from "@/components/providers";
 import { Button } from "@/components/ui/button";
@@ -37,10 +37,14 @@ export default function Header({ onReset }: { onReset?: () => void }) {
   const { scrollY } = useScroll();
   const headerBg = useTransform(scrollY, [0, 80], [0, 1]);
   const headerBorder = useTransform(scrollY, [0, 80], [0, 0.06]);
+  const headerBgColor = useTransform(headerBg, (v) => `rgba(6, 6, 14, ${0.4 + v * 0.5})`);
+  const headerBlur = useTransform(headerBg, (v) => `blur(${20 + v * 20}px) saturate(${1 + v * 0.4})`);
+  const headerBorderColor = useTransform(headerBorder, (v) => `rgba(255, 255, 255, ${v})`);
 
   useEffect(() => {
+    if (status !== "authenticated") return;
     api.getBalance().then((b) => setBalance(b.total_available)).catch(() => undefined);
-  }, []);
+  }, [status]);
 
   const userInitials = session?.user?.name
     ? session.user.name
@@ -66,9 +70,9 @@ export default function Header({ onReset }: { onReset?: () => void }) {
       <motion.header
         className="fixed top-0 left-0 right-0 z-50 animated-border-bottom"
         style={{
-          backgroundColor: useTransform(headerBg, (v) => `rgba(6, 6, 14, ${0.4 + v * 0.5})`),
-          backdropFilter: useTransform(headerBg, (v) => `blur(${20 + v * 20}px) saturate(${1 + v * 0.4})`),
-          borderBottomColor: useTransform(headerBorder, (v) => `rgba(255, 255, 255, ${v})`),
+          backgroundColor: headerBgColor,
+          backdropFilter: headerBlur,
+          borderBottomColor: headerBorderColor,
         }}
       >
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -292,7 +296,7 @@ export default function Header({ onReset }: { onReset?: () => void }) {
               <div className="border-t border-white/[0.06] pt-4">
                 <div className="flex items-center gap-3 mb-4 px-1">
                   <Avatar className="h-8 w-8">
-                    {session.user.image && <AvatarImage src={session.user.image} alt="" />}
+                    {session.user.image && <AvatarImage src={session.user.image} alt={session?.user?.name || "User avatar"} />}
                     <AvatarFallback className="text-xs">{userInitials}</AvatarFallback>
                   </Avatar>
                   <div className="min-w-0">

@@ -223,16 +223,14 @@ class TestUpdateUserRole:
 class TestAdminRules:
     @patch("app.routers.admin.AdminService.list_rules")
     def test_returns_rule_list(self, mock_list, admin_client):
-        from app.schemas.admin import PromptRuleListResponse, PromptRuleResponse
-        mock_list.return_value = PromptRuleListResponse(
-            rules=[PromptRuleResponse(
-                id="rule-1", rule_key="A", version=1,
-                title="One topic per hook",
-                content="One topic per hook -- 3+ topics = FAIL",
-                is_base_rule=True, is_active=True,
-                created_at="2026-01-01T00:00:00",
-            )]
-        )
+        from app.schemas.admin import PromptRuleResponse
+        mock_list.return_value = [PromptRuleResponse(
+            id="rule-1", rule_key="A", version=1,
+            title="One topic per hook",
+            content="One topic per hook -- 3+ topics = FAIL",
+            is_base_rule=True, is_active=True,
+            created_at="2026-01-01T00:00:00",
+        )]
 
         resp = admin_client.get("/api/admin/rules")
 
@@ -248,15 +246,13 @@ class TestAdminRules:
 class TestAdminProviders:
     @patch("app.routers.admin.AdminService.list_providers")
     def test_returns_provider_list(self, mock_list, admin_client):
-        from app.schemas.admin import ProviderListResponse, ProviderConfigResponse
-        mock_list.return_value = ProviderListResponse(
-            providers=[ProviderConfigResponse(
-                provider_name="gemini", is_primary=True, is_fallback=False,
-                is_enabled=True, model_id="gemini-2.5-flash",
-                api_key_last4="ab12", api_key_set=True,
-                updated_at="2026-01-01T00:00:00",
-            )]
-        )
+        from app.schemas.admin import ProviderConfigResponse
+        mock_list.return_value = [ProviderConfigResponse(
+            provider_name="gemini", is_primary=True, is_fallback=False,
+            is_enabled=True, model_id="gemini-2.5-flash",
+            api_key_last4="ab12", api_key_set=True,
+            updated_at="2026-01-01T00:00:00",
+        )]
 
         resp = admin_client.get("/api/admin/providers")
 

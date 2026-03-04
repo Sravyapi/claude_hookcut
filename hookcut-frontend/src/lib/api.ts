@@ -59,12 +59,6 @@ async function getAuthToken(): Promise<string | null> {
   return tokenPromise;
 }
 
-/** Clear the cached token (call on sign-out). */
-export function clearAuthToken() {
-  cachedToken = null;
-  tokenFetchedAt = 0;
-}
-
 // ─── Request Helper ───
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {

@@ -15,6 +15,7 @@ from sqlalchemy.orm import sessionmaker
 os.environ["FEATURE_V0_MODE"] = "false"
 os.environ["NEXTAUTH_SECRET"] = "test-secret-for-jwt-signing-min-32chars!"
 os.environ["DATABASE_URL"] = "sqlite://"
+os.environ["TESTING"] = "true"
 
 # Import AFTER env vars are set
 from app.models.base import Base

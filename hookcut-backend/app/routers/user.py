@@ -7,17 +7,13 @@ All business logic lives in UserService. This module only:
   3. Returns the response schema
 """
 from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from app.dependencies import get_db, get_current_user_id
 from app.exceptions import HookCutError
 from app.schemas.billing import BalanceResponse
+from app.schemas.user import CurrencyUpdateRequest
 from app.services.user_service import UserService
-
-
-class CurrencyUpdateRequest(BaseModel):
-    currency: str
 
 
 router = APIRouter()

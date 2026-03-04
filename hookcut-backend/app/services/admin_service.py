@@ -149,8 +149,10 @@ class AdminService:
                     "id": s.id,
                     "user_email": email,
                     "video_title": s.video_title,
+                    "video_id": s.video_id,
                     "status": s.status,
                     "niche": s.niche,
+                    "minutes_charged": s.minutes_charged,
                     "created_at": s.created_at.isoformat() if s.created_at else None,
                 }
                 for s, email in recent_rows
@@ -286,13 +288,10 @@ class AdminService:
             sessions = [
                 {
                     "id": s.id,
-                    "user_id": s.user_id,
                     "user_email": email,
-                    "youtube_url": s.youtube_url,
                     "video_title": s.video_title,
-                    "video_duration_seconds": s.video_duration_seconds,
+                    "video_id": s.video_id,
                     "niche": s.niche,
-                    "language": s.language,
                     "status": s.status,
                     "minutes_charged": s.minutes_charged,
                     "created_at": s.created_at.isoformat() if s.created_at else None,
@@ -1053,6 +1052,9 @@ class AdminService:
         Store last4 in DB and write the actual key to the .env file.
         Never logs the actual key -- only the last 4 characters.
         """
+        if not re.match(r'^[A-Za-z0-9_\-\.]+$', api_key):
+            raise ValueError("API key contains invalid characters")
+
         provider = db.scalar(
             select(ProviderConfig).where(
                 ProviderConfig.provider_name == provider_name

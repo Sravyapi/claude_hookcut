@@ -108,6 +108,7 @@ function PhoneStatusBar() {
 const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string; index: number }) {
   const [downloading, setDownloading] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [hasPlayed, setHasPlayed] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const { data } = useShortPoller(shortId, true);
 
@@ -212,7 +213,8 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                     className="w-full h-full object-cover"
                     playsInline
                     loop
-                    onEnded={() => setIsPlaying(false)}
+                    onEnded={() => { setIsPlaying(false); setHasPlayed(true); }}
+                    aria-label="Generated short video"
                   />
                 ) : data.thumbnail_url ? (
                   <img
@@ -238,7 +240,13 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                   </div>
                 )}
                 {/* Play/pause overlay */}
-                <div className={`absolute inset-0 flex items-center justify-center bg-black/20 transition-opacity ${
+                <div
+                  role="button"
+                  tabIndex={0}
+                  aria-label={isPlaying ? "Pause video" : "Play video"}
+                  onClick={togglePlay}
+                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); togglePlay(); } }}
+                  className={`absolute inset-0 flex items-center justify-center bg-black/20 transition-opacity ${
                   isPlaying ? "opacity-0 group-hover:opacity-100" : "opacity-100"
                 }`}>
                   <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
@@ -254,7 +262,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                   </div>
                 </div>
                 {/* Confetti burst */}
-                {!isPlaying && <ConfettiBurst />}
+                {hasPlayed && !isPlaying && <ConfettiBurst />}
               </div>
             )}
 

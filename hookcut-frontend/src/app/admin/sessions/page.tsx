@@ -115,7 +115,7 @@ function SessionDetailPanel({
                         <span className="text-[10px] text-white/30">
                           Attention:{" "}
                           <span className="text-violet-300 font-medium">
-                            {(hook.attention_score * 100).toFixed(0)}%
+                            {hook.attention_score.toFixed(1)}/10
                           </span>
                         </span>
                       </div>
