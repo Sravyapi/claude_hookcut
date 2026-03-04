@@ -4,10 +4,14 @@ import os
 import shutil
 import tempfile
 import logging
+import http.cookiejar
 from dataclasses import dataclass
 from typing import Optional
 
 logger = logging.getLogger(__name__)
+
+# Path to Netscape-format cookies.txt (exported from browser)
+_COOKIES_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "cookies.txt")
 
 
 @dataclass
@@ -56,17 +60,23 @@ class TranscriptService:
 
             settings = get_settings()
 
-            # Use YTDLP_PROXY for transcript fetching (direct proxy URL)
-            if settings.YTDLP_PROXY:
+            # Strategy: cookies (most reliable) > proxy > direct
+            kwargs = {}
+            if os.path.exists(_COOKIES_PATH):
+                import requests
+                session = requests.Session()
+                cj = http.cookiejar.MozillaCookieJar(_COOKIES_PATH)
+                cj.load(ignore_discard=True, ignore_expires=True)
+                session.cookies = cj
+                kwargs["http_client"] = session
+                logger.info("Using cookies.txt for transcript fetch")
+            elif settings.YTDLP_PROXY:
                 from youtube_transcript_api.proxies import GenericProxyConfig
-                ytt_api = YouTubeTranscriptApi(
-                    proxy_config=GenericProxyConfig(
-                        http_url=settings.YTDLP_PROXY,
-                        https_url=settings.YTDLP_PROXY,
-                    )
+                kwargs["proxy_config"] = GenericProxyConfig(
+                    http_url=settings.YTDLP_PROXY,
+                    https_url=settings.YTDLP_PROXY,
                 )
-            else:
-                ytt_api = YouTubeTranscriptApi()
+            ytt_api = YouTubeTranscriptApi(**kwargs)
 
             lang_codes = self._get_lang_codes(language)
             transcript_list = ytt_api.list(video_id)
