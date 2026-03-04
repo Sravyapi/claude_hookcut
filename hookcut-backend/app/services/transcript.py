@@ -52,8 +52,30 @@ class TranscriptService:
     ) -> Optional[TranscriptResult]:
         try:
             from youtube_transcript_api import YouTubeTranscriptApi
+            from app.config import get_settings
 
-            ytt_api = YouTubeTranscriptApi()
+            settings = get_settings()
+
+            # Webshare rotating proxy (recommended) or generic proxy
+            if settings.WEBSHARE_PROXY_USERNAME and settings.WEBSHARE_PROXY_PASSWORD:
+                from youtube_transcript_api.proxies import WebshareProxyConfig
+                ytt_api = YouTubeTranscriptApi(
+                    proxy_config=WebshareProxyConfig(
+                        proxy_username=settings.WEBSHARE_PROXY_USERNAME,
+                        proxy_password=settings.WEBSHARE_PROXY_PASSWORD,
+                    )
+                )
+            elif settings.YTDLP_PROXY:
+                from youtube_transcript_api.proxies import GenericProxyConfig
+                ytt_api = YouTubeTranscriptApi(
+                    proxy_config=GenericProxyConfig(
+                        http_url=settings.YTDLP_PROXY,
+                        https_url=settings.YTDLP_PROXY,
+                    )
+                )
+            else:
+                ytt_api = YouTubeTranscriptApi()
+
             lang_codes = self._get_lang_codes(language)
             transcript_list = ytt_api.list(video_id)
 

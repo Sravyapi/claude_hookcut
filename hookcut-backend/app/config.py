@@ -52,8 +52,10 @@ class Settings(BaseSettings):
     POSTHOG_API_KEY: str = ""
     POSTHOG_HOST: str = "https://app.posthog.com"
 
-    # yt-dlp
-    YTDLP_PROXY: str = ""  # Optional proxy for yt-dlp (e.g., socks5://host:port)
+    # Proxy (required for YouTube access from cloud servers)
+    YTDLP_PROXY: str = ""  # Generic proxy URL (e.g., http://user:pass@proxy:port)
+    WEBSHARE_PROXY_USERNAME: str = ""  # Webshare rotating proxy (recommended)
+    WEBSHARE_PROXY_PASSWORD: str = ""
 
     # Operational
     TEMP_FILE_TTL_HOURS: int = 24
