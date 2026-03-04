@@ -1,9 +1,10 @@
 FROM python:3.12-slim
 
-# Install system deps (ffmpeg for video processing)
+# Install system deps (ffmpeg for video processing, yt-dlp for metadata)
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ffmpeg && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    pip install --no-cache-dir yt-dlp
 
 WORKDIR /app
 
