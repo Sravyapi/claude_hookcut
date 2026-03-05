@@ -23,21 +23,36 @@ class TranscriptResult:
     language_detected: Optional[str] = None
 
 
-# Piped API instances (tried in order, public YouTube frontends not blocked like cloud IPs)
+# Invidious instances — direct captions endpoint, no YouTube URL needed
+INVIDIOUS_INSTANCES = [
+    "https://inv.nadeko.net",
+    "https://invidious.nerdvpn.de",
+    "https://invidious.privacyredirect.com",
+    "https://vid.puffyan.us",
+]
+
+# Piped API instances (fallback for stream metadata)
 PIPED_INSTANCES = [
+    "https://pipedapi.in.projectsegfau.lt",
+    "https://pipedapi.leptons.xyz",
+    "https://pipedapi.nosebs.ru",
+    "https://piped-api.privacy.com.de",
+    "https://api.piped.yt",
+    "https://pipedapi.drgns.space",
+    "https://pipedapi.darkness.services",
     "https://pipedapi.kavin.rocks",
     "https://pipedapi.adminforge.de",
-    "https://pipedapi.in.projectsegfau.lt",
 ]
 
 
 class TranscriptService:
     """
-    4-provider cascade for transcript acquisition.
+    5-provider cascade for transcript acquisition.
     1. youtube-transcript-api (primary)
     2. yt-dlp subtitle extraction (fallback 1)
-    3. Piped API (fallback 2 — bypasses cloud IP blocks)
-    4. OpenAI Whisper API (fallback 3)
+    3. Invidious captions API (fallback 2 — direct captions endpoint)
+    4. Piped API (fallback 3 — streams endpoint with subtitle URLs)
+    5. OpenAI Whisper API (fallback 4)
     All fail → None returned, no credits deducted.
     """
 
@@ -50,6 +65,11 @@ class TranscriptService:
         result = self._try_ytdlp_subtitles(video_id, language)
         if result:
             logger.info(f"Transcript via yt-dlp subtitles for {video_id}")
+            return result
+
+        result = self._try_invidious_captions(video_id, language)
+        if result:
+            logger.info(f"Transcript via Invidious captions for {video_id}")
             return result
 
         result = self._try_piped_api(video_id, language)
@@ -197,6 +217,75 @@ class TranscriptService:
         finally:
             shutil.rmtree(work_dir, ignore_errors=True)
 
+    def _try_invidious_captions(
+        self, video_id: str, language: str
+    ) -> Optional[TranscriptResult]:
+        """Fetch transcript via Invidious captions API — direct VTT endpoint."""
+        lang_codes = self._get_lang_codes(language)
+        for instance in INVIDIOUS_INSTANCES:
+            try:
+                # List available captions
+                resp = httpx.get(
+                    f"{instance}/api/v1/captions/{video_id}",
+                    timeout=15,
+                    follow_redirects=True,
+                )
+                if resp.status_code != 200:
+                    logger.warning("Invidious %s returned %d for %s", instance, resp.status_code, video_id)
+                    continue
+
+                data = resp.json()
+                captions = data.get("captions", [])
+                if not captions:
+                    logger.warning("Invidious %s: no captions for %s", instance, video_id)
+                    continue
+
+                # Find best caption match by language code
+                caption_label = None
+                for code in [*lang_codes, "en"]:
+                    for cap in captions:
+                        cap_code = cap.get("language_code", "")
+                        if cap_code == code or cap_code.startswith(code):
+                            caption_label = cap.get("label")
+                            break
+                    if caption_label:
+                        break
+
+                # Fall back to first available caption
+                if not caption_label and captions:
+                    caption_label = captions[0].get("label")
+
+                if not caption_label:
+                    continue
+
+                # Fetch the VTT content
+                vtt_resp = httpx.get(
+                    f"{instance}/api/v1/captions/{video_id}",
+                    params={"label": caption_label},
+                    timeout=15,
+                    follow_redirects=True,
+                )
+                if vtt_resp.status_code != 200:
+                    logger.warning("Invidious %s: caption fetch failed (%d) for %s", instance, vtt_resp.status_code, video_id)
+                    continue
+
+                text = self._parse_vtt(vtt_resp.text)
+                if not text or len(text.strip()) < 50:
+                    logger.warning("Invidious %s: caption text too short for %s", instance, video_id)
+                    continue
+
+                return TranscriptResult(
+                    text=text,
+                    provider="invidious_api",
+                    language_detected=caption_label,
+                )
+            except Exception as e:
+                logger.warning("Invidious %s failed for %s: %s", instance, video_id, e)
+                continue
+
+        logger.warning("All Invidious instances failed for %s", video_id)
+        return None
+
     def _try_piped_api(
         self, video_id: str, language: str
     ) -> Optional[TranscriptResult]:
@@ -211,22 +300,24 @@ class TranscriptService:
                     follow_redirects=True,
                 )
                 if resp.status_code != 200:
-                    logger.debug("Piped %s returned %d for %s", instance, resp.status_code, video_id)
+                    logger.warning("Piped %s returned %d for %s", instance, resp.status_code, video_id)
                     continue
 
                 data = resp.json()
                 subtitles = data.get("subtitles", [])
                 if not subtitles:
-                    logger.debug("Piped %s: no subtitles for %s", instance, video_id)
+                    logger.warning("Piped %s: 200 OK but no subtitles in response for %s", instance, video_id)
                     continue
 
                 # Find best subtitle match by language code
                 sub_url = None
+                matched_code = None
                 for code in [*lang_codes, "en"]:
                     for sub in subtitles:
                         sub_code = sub.get("code", "")
                         if sub_code == code or sub_code.startswith(code):
                             sub_url = sub.get("url")
+                            matched_code = code
                             break
                     if sub_url:
                         break
@@ -234,26 +325,30 @@ class TranscriptService:
                 # Fall back to first available subtitle
                 if not sub_url and subtitles:
                     sub_url = subtitles[0].get("url")
+                    matched_code = subtitles[0].get("code")
 
                 if not sub_url:
+                    logger.warning("Piped %s: subtitles present but no URL for %s", instance, video_id)
                     continue
 
                 # Fetch the subtitle content (VTT format from Piped)
                 sub_resp = httpx.get(sub_url, timeout=15, follow_redirects=True)
                 if sub_resp.status_code != 200:
+                    logger.warning("Piped %s: subtitle URL returned %d for %s", instance, sub_resp.status_code, video_id)
                     continue
 
                 text = self._parse_vtt(sub_resp.text)
                 if not text or len(text.strip()) < 50:
+                    logger.warning("Piped %s: subtitle text too short (%d chars) for %s", instance, len(text.strip()) if text else 0, video_id)
                     continue
 
                 return TranscriptResult(
                     text=text,
                     provider="piped_api",
-                    language_detected=code if sub_url else None,
+                    language_detected=matched_code,
                 )
             except Exception as e:
-                logger.debug("Piped %s failed for %s: %s", instance, video_id, e)
+                logger.warning("Piped %s failed for %s: %s", instance, video_id, e)
                 continue
 
         logger.warning("All Piped instances failed for %s", video_id)
