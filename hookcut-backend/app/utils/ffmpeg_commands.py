@@ -1,6 +1,7 @@
 import base64
 import json
 import os
+import re
 import subprocess
 import logging
 from dataclasses import dataclass
@@ -167,7 +168,7 @@ def extract_segment(
         "yt-dlp",
         *_ytdlp_base_args(),
         "--download-sections", f"*{start_seconds}-{end_seconds}",
-        "-f", "bestvideo[height<=720]+bestaudio/best[height<=720]",
+        "-f", "bestvideo[height<=720][vcodec^=avc1]+bestaudio/bestvideo[height<=720]+bestaudio/best[height<=720]",
         "--merge-output-format", "mp4",
         "-o", output_path,
         youtube_url,
@@ -411,7 +412,9 @@ def render_short(
         return result
 
     # If render produced non-zero frames but still failed — don't retry
-    if result.error and "frame=" in result.error and "frame= 0" not in result.error:
+    # FFmpeg outputs "frame=    0" with variable whitespace, so use regex
+    zero_frames = bool(result.error and re.search(r"frame=\s*0\s", result.error))
+    if result.error and "frame=" in result.error and not zero_frames:
         return result
 
     # Attempt 2: skip loudnorm (it misbehaves on short clips ~3s or less)
