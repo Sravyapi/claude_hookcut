@@ -23,13 +23,12 @@ class TranscriptResult:
     language_detected: Optional[str] = None
 
 
-# Piped API instances (tried in order, public YouTube frontends not blocked like cloud IPs)
-PIPED_INSTANCES = [
-    "https://pipedapi.kavin.rocks",
-    "https://pipedapi.adminforge.de",
-    "https://pipedapi.in.projectsegfau.lt",
-]
-
+    # Piped API instances (tried in order, public YouTube frontends not blocked like cloud IPs)
+    PIPED_INSTANCES = [
+        "https://pipedapi.kavin.rocks",
+        "https://pipedapi.adminforge.de",
+        "https://pipedapi.in.projectsegfau.lt",
+    ]
 
 class TranscriptService:
     """
