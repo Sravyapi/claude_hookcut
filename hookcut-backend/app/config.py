@@ -55,6 +55,10 @@ class Settings(BaseSettings):
     YTDLP_PROXY: str = ""  # Generic proxy URL (e.g., http://user:pass@proxy:port)
     YOUTUBE_COOKIES_B64: str = ""  # Base64-encoded YouTube cookies.txt (Netscape format)
 
+    # Cloudflare Worker transcript proxy (bypasses YouTube cloud IP blocks)
+    CF_TRANSCRIPT_WORKER_URL: str = ""  # e.g., https://hookcut-transcript.user.workers.dev
+    CF_WORKER_API_KEY: str = ""  # Optional Bearer token for worker auth
+
     # Operational
     TEMP_FILE_TTL_HOURS: int = 24
 

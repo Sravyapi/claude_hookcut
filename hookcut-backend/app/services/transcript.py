@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 @dataclass
 class TranscriptResult:
     text: str
-    provider: str  # "youtube_transcript_api", "ytdlp_subtitles", "whisper_api"
+    provider: str  # "youtube_transcript_api", "ytdlp_subtitles", "cf_worker", "whisper_api"
     language_detected: Optional[str] = None
 
 
@@ -47,12 +47,13 @@ PIPED_INSTANCES = [
 
 class TranscriptService:
     """
-    5-provider cascade for transcript acquisition.
+    6-provider cascade for transcript acquisition.
     1. youtube-transcript-api (primary)
     2. yt-dlp subtitle extraction (fallback 1)
-    3. Invidious captions API (fallback 2 — direct captions endpoint)
-    4. Piped API (fallback 3 — streams endpoint with subtitle URLs)
-    5. OpenAI Whisper API (fallback 4)
+    3. Cloudflare Worker (fallback 2 — edge IPs bypass YouTube blocks)
+    4. Invidious captions API (fallback 3 — direct captions endpoint)
+    5. Piped API (fallback 4 — streams endpoint with subtitle URLs)
+    6. OpenAI Whisper API (fallback 5)
     All fail → None returned, no credits deducted.
     """
 
@@ -65,6 +66,11 @@ class TranscriptService:
         result = self._try_ytdlp_subtitles(video_id, language)
         if result:
             logger.info(f"Transcript via yt-dlp subtitles for {video_id}")
+            return result
+
+        result = self._try_cf_worker(video_id, language)
+        if result:
+            logger.info(f"Transcript via CF Worker for {video_id}")
             return result
 
         result = self._try_invidious_captions(video_id, language)
@@ -216,6 +222,48 @@ class TranscriptService:
             return None
         finally:
             shutil.rmtree(work_dir, ignore_errors=True)
+
+    def _try_cf_worker(
+        self, video_id: str, language: str
+    ) -> Optional[TranscriptResult]:
+        """Fetch transcript via Cloudflare Worker — edge IPs bypass YouTube cloud blocks."""
+        from app.config import get_settings
+        settings = get_settings()
+
+        if not settings.CF_TRANSCRIPT_WORKER_URL:
+            return None
+
+        try:
+            lang_code = self._get_lang_codes(language)[0]
+            headers = {}
+            if settings.CF_WORKER_API_KEY:
+                headers["Authorization"] = f"Bearer {settings.CF_WORKER_API_KEY}"
+
+            resp = httpx.get(
+                f"{settings.CF_TRANSCRIPT_WORKER_URL}/transcript",
+                params={"v": video_id, "lang": lang_code},
+                headers=headers,
+                timeout=30,
+            )
+
+            if resp.status_code != 200:
+                logger.warning("CF Worker returned %d for %s: %s", resp.status_code, video_id, resp.text[:200])
+                return None
+
+            data = resp.json()
+            text = data.get("text", "")
+            if not text or len(text.strip()) < 50:
+                logger.warning("CF Worker: transcript too short for %s", video_id)
+                return None
+
+            return TranscriptResult(
+                text=text,
+                provider="cf_worker",
+                language_detected=data.get("language"),
+            )
+        except Exception as e:
+            logger.warning("CF Worker failed for %s: %s", video_id, e)
+            return None
 
     def _try_invidious_captions(
         self, video_id: str, language: str
