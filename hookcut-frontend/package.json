@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "/opt/homebrew/opt/node@22/bin/node node_modules/.bin/next dev --webpack",
+    "dev": "NEXT_TELEMETRY_DISABLED=1 FORCE_COLOR=1 /opt/homebrew/opt/node@22/bin/node node_modules/.bin/next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "remotion:studio": "/opt/homebrew/opt/node@22/bin/node node_modules/.bin/remotion studio src/remotion/Root.tsx",
+    "remotion:render:hero": "/opt/homebrew/opt/node@22/bin/node node_modules/.bin/remotion render src/remotion/Root.tsx HookCutHeroDemo public/videos/hero-demo.mp4 --codec=h264",
+    "remotion:render:explainer": "/opt/homebrew/opt/node@22/bin/node node_modules/.bin/remotion render src/remotion/Root.tsx HookScoreExplainer public/videos/hook-score-explainer.mp4 --codec=h264",
+    "remotion:render:comparison": "/opt/homebrew/opt/node@22/bin/node node_modules/.bin/remotion render src/remotion/Root.tsx PenaltyEngineComparison public/videos/penalty-comparison.mp4 --codec=h264"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",
@@ -19,6 +23,8 @@
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-tabs": "^1.1.13",
     "@radix-ui/react-toast": "^1.2.15",
+    "@remotion/cli": "^4.0.434",
+    "@remotion/player": "^4.0.434",
     "@sentry/nextjs": "^10.40.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -29,6 +35,7 @@
     "posthog-js": "^1.356.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "remotion": "^4.0.434",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
