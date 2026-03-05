@@ -81,8 +81,9 @@ export default function Header({ onReset }: HeaderProps) {
   const headerBorderOpacity = useTransform(scrollY, [0, 80], [0, 1]);
 
   useEffect(() => {
+    if (status !== "authenticated") return;
     api.getBalance().then((b) => setBalance(b.total_available)).catch(() => undefined);
-  }, []);
+  }, [status]);
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {

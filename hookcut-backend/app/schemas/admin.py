@@ -190,7 +190,7 @@ class NarmInsightResponse(BaseModel):
     insight_type: str
     title: str
     content: str
-    confidence: float
+    confidence: str
     time_range_days: int
     created_at: str
 

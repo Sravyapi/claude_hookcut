@@ -107,7 +107,7 @@ async def list_rules(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleListResponse:
-    return AdminService.list_rules(db)
+    return {"rules": AdminService.list_rules(db)}
 
 
 @router.post("/rules")
@@ -134,7 +134,7 @@ async def seed_rules(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleListResponse:
-    return AdminService.seed_rules(db, admin_user)
+    return {"rules": AdminService.seed_rules(db, admin_user)}
 
 
 @router.get("/rules/{rule_key}/history")
@@ -143,7 +143,7 @@ async def get_rule_history(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleHistoryResponse:
-    return AdminService.get_rule_history(db, rule_key)
+    return {"versions": AdminService.get_rule_history(db, rule_key)}
 
 
 @router.patch("/rules/{rule_id}")
@@ -185,7 +185,7 @@ async def list_providers(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> ProviderListResponse:
-    return AdminService.list_providers(db)
+    return {"providers": AdminService.list_providers(db)}
 
 
 @router.patch("/providers/{provider_name}")
@@ -225,7 +225,7 @@ async def trigger_narm_analysis(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> NarmInsightsListResponse:
-    return AdminService.trigger_narm_analysis(db, body.time_range_days, admin_user)
+    return {"insights": AdminService.trigger_narm_analysis(db, body.time_range_days, admin_user)}
 
 
 @router.get("/narm/insights")
@@ -233,4 +233,4 @@ async def get_narm_insights(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> NarmInsightsListResponse:
-    return AdminService.get_narm_insights(db)
+    return {"insights": AdminService.get_narm_insights(db)}

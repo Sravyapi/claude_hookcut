@@ -11,3 +11,4 @@ dist/
 build/
 .ruff_cache/
 hookcut_storage/
+cookies.txt

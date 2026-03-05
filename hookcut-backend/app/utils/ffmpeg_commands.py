@@ -1,5 +1,7 @@
+import base64
 import json
 import os
+import re
 import subprocess
 import logging
 from dataclasses import dataclass
@@ -8,6 +10,27 @@ from typing import Optional
 from app.config import get_settings
 
 logger = logging.getLogger(__name__)
+
+# Cookies file path (shared with transcript.py)
+_COOKIES_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "cookies.txt"
+)
+
+
+def _ensure_cookies_file() -> str:
+    """Write cookies from YOUTUBE_COOKIES_B64 env var to disk if not already present."""
+    if os.path.exists(_COOKIES_PATH):
+        return _COOKIES_PATH
+    b64 = os.environ.get("YOUTUBE_COOKIES_B64", "")
+    if b64:
+        try:
+            data = base64.b64decode(b64)
+            with open(_COOKIES_PATH, "wb") as f:
+                f.write(data)
+            logger.info("Decoded YOUTUBE_COOKIES_B64 to %s", _COOKIES_PATH)
+        except Exception as e:
+            logger.warning("Failed to decode YOUTUBE_COOKIES_B64: %s", e)
+    return _COOKIES_PATH
 
 
 def _ytdlp_base_args() -> list[str]:
@@ -20,7 +43,7 @@ def _ytdlp_base_args() -> list[str]:
         "--no-playlist",
     ]
     # Use cookies file if available (most reliable bot bypass)
-    cookies_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "cookies.txt")
+    cookies_path = _ensure_cookies_file()
     if os.path.exists(cookies_path):
         args.extend(["--cookies", cookies_path])
     else:
@@ -50,7 +73,8 @@ def _has_subtitles_filter() -> bool:
                     "Shorts will render without burned-in captions. "
                     "Fix: brew install libass && brew reinstall ffmpeg"
                 )
-        except Exception:
+        except Exception as e:
+            logger.warning("FFmpeg subtitle filter check failed: %s", e)
             _subtitles_filter_available = False
     return _subtitles_filter_available
 
@@ -144,7 +168,7 @@ def extract_segment(
         "yt-dlp",
         *_ytdlp_base_args(),
         "--download-sections", f"*{start_seconds}-{end_seconds}",
-        "-f", "bestvideo[height<=720]+bestaudio/best[height<=720]",
+        "-f", "bestvideo[height<=720][vcodec^=avc1]+bestaudio/bestvideo[height<=720]+bestaudio/best[height<=720]",
         "--merge-output-format", "mp4",
         "-o", output_path,
         youtube_url,
@@ -298,8 +322,8 @@ def _probe_video_stream(filepath: str) -> Optional[dict]:
             streams = data.get("streams", [])
             if streams:
                 return streams[0]
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug("Failed to get video stream info: %s", e)
     return None
 
 
@@ -309,6 +333,7 @@ def _build_render_cmd(
     subtitle_path: Optional[str] = None,
     watermark: bool = False,
     use_subtitles: bool = True,
+    skip_loudnorm: bool = False,
 ) -> list[str]:
     """Build the FFmpeg render command. Separated for retry logic."""
     vf_parts = [
@@ -339,11 +364,11 @@ def _build_render_cmd(
 
     vf = ",".join(vf_parts)
 
-    # Audio filter: normalization + padding (skip silence removal — can eat short clips)
-    af = (
-        "loudnorm=I=-14:TP=-1:LRA=11,"
-        "apad=pad_dur=0.3"
-    )
+    # Audio filter: loudnorm can fail on short clips (<3s), so it's skippable
+    if skip_loudnorm:
+        af = "apad=pad_dur=0.3"
+    else:
+        af = "loudnorm=I=-14:TP=-1:LRA=11,apad=pad_dur=0.3"
 
     return [
         "ffmpeg", "-y",
@@ -380,25 +405,34 @@ def render_short(
         video_info.get("width"), video_info.get("height"), video_info.get("codec_name"),
     )
 
-    # Attempt 1: full pipeline with subtitles
+    # Attempt 1: full pipeline (subtitles + loudnorm)
     cmd = _build_render_cmd(input_path, output_path, subtitle_path, watermark, use_subtitles=True)
     result = _run_ffmpeg_render(cmd, output_path)
     if result.success:
         return result
 
-    # If render produced 0 frames, retry without subtitles
-    if result.error and "frame=" in result.error and "frame= 0" not in result.error:
-        # Non-zero frames but still failed — don't retry, return error as-is
+    # If render produced non-zero frames but still failed — don't retry
+    # FFmpeg outputs "frame=    0" with variable whitespace, so use regex
+    zero_frames = bool(result.error and re.search(r"frame=\s*0\s", result.error))
+    if result.error and "frame=" in result.error and not zero_frames:
         return result
 
-    logger.warning("Render produced 0 frames, retrying without subtitles filter")
-    cmd = _build_render_cmd(input_path, output_path, subtitle_path, watermark, use_subtitles=False)
+    # Attempt 2: skip loudnorm (it misbehaves on short clips ~3s or less)
+    logger.warning("Render produced 0 frames, retrying without loudnorm")
+    cmd = _build_render_cmd(input_path, output_path, subtitle_path, watermark, use_subtitles=True, skip_loudnorm=True)
     result = _run_ffmpeg_render(cmd, output_path)
     if result.success:
         return result
 
-    # Final fallback: minimal pipeline (just scale + pad, no crop)
-    logger.warning("Retry without subtitles also failed, trying minimal pipeline")
+    # Attempt 3: skip both loudnorm and subtitles
+    logger.warning("Retry without loudnorm failed, trying without subtitles too")
+    cmd = _build_render_cmd(input_path, output_path, subtitle_path, watermark, use_subtitles=False, skip_loudnorm=True)
+    result = _run_ffmpeg_render(cmd, output_path)
+    if result.success:
+        return result
+
+    # Attempt 4: minimal pipeline (just scale + pad, no crop, no loudnorm)
+    logger.warning("All retries failed, trying minimal pipeline")
     vf_minimal = (
         f"scale={SHORTS_WIDTH}:{SHORTS_HEIGHT}:force_original_aspect_ratio=decrease,"
         f"pad={SHORTS_WIDTH}:{SHORTS_HEIGHT}:(ow-iw)/2:(oh-ih)/2:black"
@@ -484,8 +518,8 @@ def probe_duration(filepath: str) -> Optional[float]:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
         if result.returncode == 0 and result.stdout.strip():
             return float(result.stdout.strip())
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug("Failed to probe duration: %s", e)
     return None
 
 

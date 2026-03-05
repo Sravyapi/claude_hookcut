@@ -5,6 +5,7 @@ V1: Enforces per-user rate limits via Redis.
 """
 import logging
 import re
+from functools import lru_cache
 from fastapi import HTTPException
 from app.config import get_settings
 
@@ -61,5 +62,6 @@ class RateLimiter:
             )
 
 
+@lru_cache(maxsize=1)
 def get_rate_limiter() -> RateLimiter:
     return RateLimiter()

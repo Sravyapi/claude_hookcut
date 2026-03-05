@@ -18,7 +18,8 @@ class GeminiProvider(LLMProvider):
         return "gemini"
 
     def generate(self, prompt: str, max_tokens: int = 4000) -> LLMResponse:
-        url = f"{self.base_url}/models/{self.model}:generateContent?key={self.api_key}"
+        url = f"{self.base_url}/models/{self.model}:generateContent"
+        headers = {"x-goog-api-key": self.api_key, "Content-Type": "application/json"}
         payload = {
             "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {
@@ -30,7 +31,7 @@ class GeminiProvider(LLMProvider):
 
         try:
             with httpx.Client(timeout=180) as client:
-                resp = client.post(url, json=payload)
+                resp = client.post(url, json=payload, headers=headers)
                 if resp.status_code == 429:
                     raise RuntimeError(
                         "Gemini rate limit hit (429). Free tier allows ~15 requests/minute. "

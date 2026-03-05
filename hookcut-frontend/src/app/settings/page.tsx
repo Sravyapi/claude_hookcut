@@ -72,7 +72,8 @@ export default function SettingsPage() {
         setProfile(data);
         if (data.currency === "USD" || data.currency === "INR") setCurrency(data.currency);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("Failed to load profile:", err);
         if (session?.user) {
           setProfile({ id: "", email: session.user.email || "", plan_tier: "free", currency: "USD", role: "user", created_at: "" });
         }
@@ -201,7 +202,7 @@ export default function SettingsPage() {
                       <div className="flex items-center gap-4 mb-6 p-4 rounded-xl bg-white/[0.03] border border-white/[0.05]">
                         <Avatar className="h-12 w-12">
                           {session.user.image && (
-                            <AvatarImage src={session.user.image} alt="" />
+                            <AvatarImage src={session.user.image} alt="User avatar" />
                           )}
                           <AvatarFallback className="text-sm font-semibold">
                             {userInitials}

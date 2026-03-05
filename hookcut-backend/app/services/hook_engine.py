@@ -49,7 +49,7 @@ class HookEngine:
     """
     LLM-only hook identification engine.
     Sends full transcript to LLM in one pass, returns exactly 5 hook candidates.
-    Retry: 3 attempts with backoff (0s, 2s, 5s). 3rd attempt uses fallback provider.
+    Retry: 3 attempts with backoff (0s, 5s, 30s). 3rd attempt uses fallback provider.
     """
 
     def analyze(
@@ -102,7 +102,8 @@ class HookEngine:
         """Try fallback provider on last attempt, fall back to primary if not configured."""
         try:
             return get_fallback_provider(primary.name)
-        except Exception:
+        except Exception as e:
+            logger.warning("Fallback provider unavailable, using primary: %s", e)
             return primary
 
     def _parse_and_validate(self, raw_text: str) -> list[HookCandidate]:

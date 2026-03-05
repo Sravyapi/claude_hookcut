@@ -226,6 +226,17 @@ FUNNEL_ROLES = [
     "extended_demo",
 ]
 
+# 7-dimension holistic scoring used in hook evaluation prompts
+SCORE_DIMENSIONS = [
+    "scroll_stop",
+    "curiosity_gap",
+    "stakes_intensity",
+    "emotional_voltage",
+    "standalone_clarity",
+    "thematic_focus",
+    "thought_completeness",
+]
+
 # Regeneration fee tiers (confirmed by user)
 REGEN_FEE_TIERS_INR = [
     (15 * 60, 1000),    # <=15min source video: Rs 10 (1000 paisa)
