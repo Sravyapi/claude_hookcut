@@ -13,6 +13,23 @@ import { ShortsStep } from "../components/shorts-step";
 import { Footer } from "../components/footer";
 import { slideRight } from "../lib/motion";
 
+
+/** Safely extract a human-readable error string from any thrown value */
+function extractErrorMessage(err: unknown, fallback: string): string {
+  if (typeof err === "string") return err || fallback;
+  if (err instanceof Error) return err.message || fallback;
+  if (err && typeof err === "object") {
+    const e = err as Record<string, unknown>;
+    if (typeof e.message === "string" && e.message) return e.message;
+    if (typeof e.detail === "string" && e.detail) return e.detail;
+    if (Array.isArray(e.detail) && e.detail.length > 0) {
+      const first = e.detail[0] as Record<string, unknown>;
+      if (typeof first?.msg === "string") return first.msg;
+    }
+  }
+  return fallback;
+}
+
 export default function Home() {
   const [step, setStep] = useState<Step>("input");
   const [sessionId, setSessionId] = useState("");
@@ -32,7 +49,11 @@ export default function Home() {
     async (status: TaskStatus) => {
       const result = status.result;
       if (result?.error) {
-        setError(result.error as string);
+        const msg =
+          typeof result.error === "string"
+            ? result.error
+            : extractErrorMessage(result.error as unknown, "Analysis failed. Please try again.");
+        setError(msg);
         setStep("input");
         return;
       }
@@ -100,9 +121,7 @@ export default function Home() {
       setSessionId(result.session_id);
       setTaskId(result.task_id);
     } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Failed to start analysis"
-      );
+      setError(extractErrorMessage(err, "Failed to start analysis. Please try again."));
       setStep("input");
     }
   }, []);
@@ -119,9 +138,7 @@ export default function Home() {
       analysisStartRef.current = Date.now();
       setTaskId(result.task_id);
     } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Regeneration failed"
-      );
+      setError(extractErrorMessage(err, "Regeneration failed. Please try again."));
     } finally {
       setIsRegenerating(false);
     }
@@ -138,9 +155,7 @@ export default function Home() {
       setShortIds(result.short_ids);
       setStep("shorts");
     } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Failed to start short generation"
-      );
+      setError(extractErrorMessage(err, "Failed to start short generation. Please try again."));
     }
   }, [sessionId]);
 
