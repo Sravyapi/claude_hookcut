@@ -66,9 +66,9 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center px-4 py-16">
       {/* Background orbs — more dramatic */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-violet-600/[0.08] blur-[140px] float-slow" />
-        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-purple-600/[0.06] blur-[120px] float-slower" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-indigo-500/[0.04] blur-[80px]" />
+        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#E84A2F]/[0.08] blur-[140px] float-slow" />
+        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-[#E84A2F]/[0.06] blur-[120px] float-slower" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-[#E84A2F]/[0.04] blur-[80px]" />
       </div>
 
       <motion.div
@@ -81,7 +81,7 @@ export default function LoginPage() {
         <div className="glass-strong rounded-3xl p-8">
           {/* Logo */}
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center text-white font-bold text-2xl shadow-xl shadow-violet-500/30">
+            <div className="w-16 h-16 rounded-2xl bg-[#E84A2F] flex items-center justify-center text-white font-bold text-2xl shadow-xl shadow-[#E84A2F]/30">
               H
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function LoginPage() {
           {/* Heading */}
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-white mb-2">
-              Sign in to <span className="gradient-text">HookCut</span>
+              Sign in to <span className="text-[#E84A2F]">HookCut</span>
             </h1>
             <p className="text-white/40 text-sm leading-relaxed">
               Turn YouTube videos into viral Shorts with AI-powered hook
@@ -140,7 +140,7 @@ export default function LoginPage() {
           <div className="text-center">
             <Link
               href="/"
-              className="text-sm text-violet-400/70 hover:text-violet-300 transition-colors"
+              className="text-sm text-[#E84A2F]/70 hover:text-[#E84A2F] transition-colors"
             >
               ← Back to home
             </Link>
@@ -179,7 +179,7 @@ export default function LoginPage() {
                 key={i}
                 onClick={() => setTestimonialIdx(i)}
                 className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
-                  i === testimonialIdx ? "bg-violet-400 w-3" : "bg-white/15"
+                  i === testimonialIdx ? "bg-[#E84A2F] w-3" : "bg-white/15"
                 }`}
               />
             ))}

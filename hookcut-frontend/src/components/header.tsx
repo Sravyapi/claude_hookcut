@@ -189,7 +189,7 @@ export default function Header({ onReset }: HeaderProps) {
             <div className="relative" ref={resourcesRef}>
               <button
                 onClick={() => setResourcesOpen((v) => !v)}
-                className="flex items-center gap-1 px-3.5 py-2 rounded-lg text-sm font-medium text-white/50 hover:text-white/80 hover:bg-white/[0.04] transition-all duration-200"
+                className="flex items-center gap-1 px-3.5 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/[0.06] transition-all duration-200"
                 aria-expanded={resourcesOpen}
                 aria-haspopup="true"
               >
@@ -204,7 +204,7 @@ export default function Header({ onReset }: HeaderProps) {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 6, scale: 0.96 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-2 w-52 rounded-xl border border-[--color-border-def] bg-[--color-surface-1] shadow-xl shadow-black/30 overflow-hidden py-1"
+                  className="absolute top-full left-0 mt-2 w-52 rounded-xl border border-white/10 bg-[#1A1A1A] shadow-xl shadow-black/40 overflow-hidden py-1"
                   role="menu"
                 >
                   {RESOURCES_LINKS.map((link) => (
@@ -213,7 +213,7 @@ export default function Header({ onReset }: HeaderProps) {
                       href={link.href}
                       onClick={() => setResourcesOpen(false)}
                       role="menuitem"
-                      className="block px-4 py-2.5 text-sm text-white/60 hover:text-white hover:bg-white/[0.04] transition-colors"
+                      className="block px-4 py-2.5 text-sm text-white/80 hover:text-white hover:bg-white/[0.08] transition-colors"
                     >
                       {link.label}
                     </Link>
