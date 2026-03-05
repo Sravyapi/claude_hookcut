@@ -1,430 +1,417 @@
-# HookCut — Brand Identity Guide
+# HookCut Brand Identity
 
-> Version 1.0 · March 2026 · Maintained by the HookCut design team
+> v1.0 · March 2026 · **tl;dr:** orange, Outfit font, "Find the hook. Stop the scroll." — don't mess with any of that.
 
 ---
 
-## 1. Brand Essence
+## What We're Building Here
 
-### Mission
-Surface the scroll-stopping moments hiding inside every YouTube video — so creators never have to guess which clip will go viral.
+HookCut is not a generic AI tool. It's not a clipper. It's not a SaaS dashboard for people who wear lanyards.
 
-### Vision
-Become the default hook intelligence layer for short-form video creation across India and beyond.
+It's a **hook intelligence engine** for creators who know that the first 2 seconds decide everything — and are tired of guessing.
 
-### Tagline (locked)
+Our brand has two jobs:
+1. Make creators instantly feel like *"yes, this gets me"*
+2. Make competitors feel faintly embarrassed by comparison
+
+Everything in this doc — the colors, the words, the animations — serves those two jobs.
+
+---
+
+## The Tagline (It's Locked. Don't Touch It.)
+
 > **"Find the hook. Stop the scroll."**
 
-This line does not change. It is used verbatim across all touchpoints: homepage hero, OG tags, email subjects, App Store description, social bios.
+Short. Sharp. Does what it says. Used verbatim everywhere:  
+homepage H1, OG tags, app store listings, email subjects, the tweet when we hit 10k users.
 
-### Brand Personality
-| Trait | What it means in practice |
-|-------|--------------------------|
-| **Precise** | We show scores, not opinions. Numbers, not vibes. |
-| **Confident** | We don't hedge. "The hook is at 1:32." Not "maybe around 1:32." |
-| **Creator-forward** | We speak to creators, not IT departments. Casual but never sloppy. |
-| **Transparent (selectively)** | We explain what we found and why it matters. We don't expose how we found it. |
-| **Energetic** | Fast, sharp, direct. No filler. No corporate speak. |
-
-### What HookCut Is NOT
-- ❌ An "AI clipper" — we are a **hook analysis engine** / **hook scoring platform**
-- ❌ A generic video editor
-- ❌ A batch clip factory (volume ≠ quality)
-- ❌ An enterprise SaaS tool
-- ❌ A purple brand (purple = OpusClip territory — we are orange)
+No variations. No "Find YOUR hook." No "Stop THE scroll." No emoji in the tagline. No period at the end in H1 context.
 
 ---
 
-## 2. Logo
+## Brand Personality — The Vibe Check
 
-### Wordmark
-**HookCut** — rendered in Outfit 800 (ExtraBold), letter-spacing `-0.02em`.
+Think: **sharp creative friend who also knows how to ship code.**
 
-The capital **C** in "Cut" is intentional and locked. It creates a visual rhythm: `Hook` + `Cut` read as two strong words fused into one brand name.
+| Trait | In practice |
+|-------|-------------|
+| 🎯 **Precise** | We show scores, not opinions. "87 score" beats "pretty viral." |
+| 💪 **Confident** | "The hook is at 1:32." Not "there might be a hook around 1:32." |
+| 🙋 **Creator-peer** | We talk like creators, not IT managers. Casual but never sloppy. |
+| ⚡ **Fast** | Short sentences. Direct. No filler. No "it's important to note that…" |
+| 🔍 **Honest (selectively)** | We tell you *what* we found and *why it works*. We don't explain *how* we found it. |
 
-- ✅ `HookCut` — correct
-- ❌ `Hookcut` — incorrect (loses the visual split)
-- ❌ `HOOKCUT` — incorrect (all-caps loses personality)
-- ❌ `hookcut` — incorrect (too casual, loses brand hierarchy)
-
-### Logo Mark (Icon)
-A minimal hook glyph — a stylized fishhook or bent play-cursor, 20×20px SVG path. Used as:
-- Favicon (32×32, 16×16)
-- App icon companion to wordmark
-- Loading spinner variant
-
-### Color Variants
-| Context | Wordmark color | Background |
-|---------|---------------|------------|
-| Marketing site (light) | `#0A0A0A` (near-black) | `#FAFAF8` or white |
-| Product UI (dark) | `#F5F5F5` (near-white) | `#111111` |
-| On orange/colored bg | `#FFFFFF` | `#E84A2F` |
-
-### Logo Rules
-- **No gradients** on the logo — solid color only
-- **No drop shadows**, glows, or 3D effects
-- **No stretching** — maintain aspect ratio always
-- **Minimum size**: 80px wide (digital), 25mm wide (print)
-- **Clear space**: equal to the height of the "H" on all sides
+### We Are NOT:
+- ❌ An "AI clipper" — say **hook analysis engine** or **hook scoring platform**
+- ❌ A bulk clip factory (volume ≠ quality — we hate this about competitors)
+- ❌ An enterprise product (no lanyards, no "enterprise plan," no "solution" as a noun)
+- ❌ A purple brand (purple = OpusClip. We are orange. Very different.)
 
 ---
 
-## 3. Color System
+## Logo
 
-### Primary Brand Color
-| Name | Hex | RGB | Use |
-|------|-----|-----|-----|
-| **Vermillion Orange** | `#E84A2F` | `232, 74, 47` | Primary CTA, active states, hook scores 66–80, brand accent |
-| Vermillion Dark | `#D13F25` | `209, 63, 37` | Hover state for primary buttons |
-| Vermillion Glow | `rgba(232,74,47,0.12)` | — | Subtle backgrounds, focus rings |
+### The Wordmark
 
-**Why this orange?** It sits between bold warm red and energetic orange — closer to "urgent creative" than "construction warning." It reads as confident and viral-energy on both light and dark backgrounds. It is deliberately NOT neon orange, NOT coral, NOT saffron.
+**HookCut** — rendered in **Outfit ExtraBold (800)**, tracking `-0.02em`.
 
-### Marketing Site Palette (Light)
-| Token | Hex | Use |
-|-------|-----|-----|
-| `--bg` | `#FAFAF8` | Page background — warm off-white (not pure white) |
-| `--surface` | `#FFFFFF` | Card backgrounds |
-| `--surface-raised` | `#F4F4F5` | Alternate section backgrounds |
-| `--text-primary` | `#0A0A0A` | Headings, primary text |
-| `--text-muted` | `#71717A` | Body text, descriptions |
-| `--text-light` | `#A1A1AA` | Captions, metadata, timestamps |
-| `--border` | `#E4E4E7` | Card borders, dividers |
-| `--border-strong` | `#D4D4D8` | Input borders on focus |
+The capital **C** in "Cut" is **locked and intentional**. `Hook` + `Cut` are two strong words fused into one brand name. The capital C creates a visual beat — Hook *[pause]* Cut.
 
-### Product UI Palette (Dark)
-| Token | CSS Variable | Hex | Use |
-|-------|-------------|-----|-----|
-| Background | `--color-bg` | `#111111` | Page background — warm dark (not cold blue-black) |
-| Surface 1 | `--color-surface-1` | `#1A1A1A` | Card backgrounds |
-| Surface 2 | `--color-surface-2` | `#212121` | Elevated surfaces |
-| Surface 3 | `--color-surface-3` | `#2A2A2A` | Hover / active states |
-| Primary | `--color-primary` | `#E84A2F` | Same orange — unified across light/dark |
-| Primary Glow | `--color-primary-glow` | `rgba(232,74,47,0.18)` | Glow effects |
-| Text | `--color-text` | `#F5F5F5` | Body text on dark |
-| Muted | `--color-muted` | `#A1A1AA` | Secondary text |
-| Border Sub | `--color-border-sub` | `rgba(255,255,255,0.04)` | Very subtle dividers |
-| Border Default | `--color-border-def` | `rgba(255,255,255,0.08)` | Standard borders |
-| Border Strong | `--color-border-str` | `rgba(255,255,255,0.14)` | Emphasized borders |
-| Success | `--color-success` | `#16A34A` | Completed states |
-| Warning | `--color-warning` | `#F59E0B` | Caution states |
-| Error | `--color-error` | `#EF4444` | Error states |
-
-### Hook Score Color Ramp
-Scores map visually to engagement potential:
-
-| Score Range | Color | Hex | Label |
-|-------------|-------|-----|-------|
-| 0–40 | Red | `#DC2626` | Poor |
-| 41–65 | Amber | `#F59E0B` | Moderate |
-| 66–80 | Orange | `#E84A2F` | Good (brand) |
-| 81–100 | Green | `#16A34A` | Exceptional |
-
-The 66–80 "Good" range uses the brand orange intentionally — mid-tier high performers carry the brand color, reinforcing recognition.
-
-### Color Don'ts
-- ❌ No purple (`#8b5cf6`, `violet-*`, `purple-*`) — this is OpusClip's color
-- ❌ No jet-black (`#000000` or `#06060e`) background — too cold/techy
-- ❌ No pure white (`#FFFFFF`) as the only background — use `#FAFAF8`
-- ❌ No gold gradient effects — reads as AI slop
-- ❌ No saffron as a primary color — India section uses it as a pill accent only
-- ❌ No neon / glow background blobs
-
----
-
-## 4. Typography
-
-### Type Scale
-| Role | Font | Weight | Size | Letter Spacing | Line Height |
-|------|------|--------|------|---------------|-------------|
-| Display (marketing hero) | Outfit | 800 | 64px | -0.04em | 1.05 |
-| H1 | Outfit | 700 | 44px | -0.03em | 1.1 |
-| H2 | Outfit | 700 | 30px | -0.02em | 1.15 |
-| H3 | Outfit | 600 | 22px | -0.01em | 1.2 |
-| Body | Geist Sans | 400 | 17px | 0 | 1.6 |
-| Body Small | Geist Sans | 400 | 14px | 0 | 1.5 |
-| Label / Eyebrow | Geist Sans | 600 | 12px | +0.08em uppercase | 1.2 |
-| Score / Timestamp | Geist Mono | 700 | varies | 0 | 1 |
-| Code / Debug | Geist Mono | 400 | 13px | 0 | 1.5 |
-
-### Font Loading (Next.js)
-```typescript
-import { Geist, Geist_Mono, Outfit } from 'next/font/google'
-
-const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
-const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' })
-const outfit = Outfit({ subsets: ['latin'], weight: ['600','700','800'], variable: '--font-display' })
+```
+Hook  →  what we find
+Cut   →  what we do with it
 ```
 
-### Tailwind Usage
+On dark backgrounds (header, product UI):
+- `Hook` = `#FFFFFF` (white)
+- `Cut` = `#E84A2F` (brand orange)
+
+On light backgrounds (marketing site):
+- `Hook` = `#0A0A0A` (near-black)
+- `Cut` = `#E84A2F` (brand orange)
+
+The two-tone wordmark is the logo. No box, no badge, no container. Just the type.
+
+### What the Cap-C Wordmark Inspired By
+The cap-C style was chosen from our design exploration (Canva reference `DAHDHk_nRRs`, slide 1) — the bold all-caps C in "Cut" gives the word visual weight and makes the brand name scannable at small sizes.
+
+### The Hook Icon (Secondary Mark)
+For favicons, app icons, and loading states: a minimal fishhook/bent-cursor SVG glyph, 20×20px. Clean 2px stroke. Used only when the full wordmark can't fit.
+
+```
+Color on dark bg:  #E84A2F (orange stroke)
+Color on light bg: #0A0A0A (dark stroke)
+Minimum size:      16×16px (favicon only)
+```
+
+### Logo Rules — The Hard Ones
+| ✅ Do | ❌ Don't |
+|-------|---------|
+| `HookCut` — exact casing | `Hookcut`, `hookcut`, `HOOKCUT` |
+| Two-tone type mark | Colored background box/"chip" around the logo |
+| Solid orange on "Cut" | Gradient, glow, 3D effect on wordmark |
+| Maintain aspect ratio | Stretch or squash |
+| 80px wide minimum | Smaller than 80px in digital |
+| Clear space = cap-height on all sides | Crowding with other elements |
+
+### Logo in Context
+- **Header (dark):** `Hook` white + `Cut` orange, no icon container, sits naturally in the nav bar
+- **Footer:** Same as header
+- **OG image:** White wordmark on `#0A0A0A` background, large
+- **Favicon:** Orange hook glyph on dark bg, no wordmark
+- **On orange CTAs:** White `HookCut` — both words white
+
+---
+
+## Colors
+
+### The One That Matters
+
+**Vermillion Orange — `#E84A2F`**
+
+This is not construction orange. Not coral. Not salmon. Not neon. It's the color of urgency, creativity, and "wait, what?" — the feeling of a great hook.
+
+```
+Hex:   #E84A2F
+RGB:   232, 74, 47
+HSL:   ~10°, 79%, 55%
+Hover: #D13F25
+Glow:  rgba(232, 74, 47, 0.12)  — light bg
+Glow:  rgba(232, 74, 47, 0.18)  — dark bg
+```
+
+It's the same orange on both marketing (light) and product (dark) — intentional. One brand, two contexts.
+
+### Marketing Site — Light Palette
+
+Used on: homepage, `/features`, `/blog`, `/pricing`, all marketing routes.
+
+| Token | Value | Use |
+|-------|-------|-----|
+| Page background | `#FAFAF8` | Warm off-white — not pure white |
+| Card background | `#FFFFFF` | With `1px solid #E4E4E7` |
+| Alt section bg | `#F4F4F5` | Every other marketing section |
+| Text — primary | `#0A0A0A` | Headlines, body |
+| Text — muted | `#71717A` | Descriptions, body text |
+| Text — light | `#A1A1AA` | Captions, timestamps, metadata |
+| Border | `#E4E4E7` | Cards, dividers, inputs |
+| Border — strong | `#D4D4D8` | Focused inputs |
+| Primary | `#E84A2F` | CTAs, active states, brand accents |
+
+### Product UI — Dark Palette
+
+Used on: dashboard, `/analyze` flow, settings, admin.
+
+| CSS Variable | Hex | Use |
+|-------------|-----|-----|
+| `--color-bg` | `#111111` | Page background — warm dark, never jet black |
+| `--color-surface-1` | `#1A1A1A` | Cards |
+| `--color-surface-2` | `#212121` | Elevated cards |
+| `--color-surface-3` | `#2A2A2A` | Hover/active states |
+| `--color-primary` | `#E84A2F` | Same orange everywhere |
+| `--color-text` | `#F5F5F5` | Body text on dark |
+| `--color-muted` | `#A1A1AA` | Secondary text |
+| `--color-border-def` | `rgba(255,255,255,0.08)` | Standard borders |
+| `--color-border-str` | `rgba(255,255,255,0.14)` | Emphasized borders |
+| `--color-success` | `#16A34A` | ✓ Completed |
+| `--color-warning` | `#F59E0B` | ⚠ Caution |
+| `--color-error` | `#EF4444` | ✗ Error |
+
+### Hook Score Color Ramp
+
+This is how scores map to colors in the UI. Creators see this on every hook card.
+
+```
+0  ────── 40   →  #DC2626  (red)     "Not great, don't post this"
+41 ────── 65   →  #F59E0B  (amber)   "Decent, maybe"
+66 ────── 80   →  #E84A2F  (orange)  "Good — brand zone"
+81 ─────  100  →  #16A34A  (green)   "Post this immediately"
+```
+
+The 66–80 "Good" range uses our brand orange on purpose — mid-tier high performers carry the brand color and reinforce recall.
+
+### The Forbidden Colors
+
+| Color | Why banned |
+|-------|-----------|
+| Any purple (`#8b5cf6`, `violet-*`, `purple-*`) | That's OpusClip's color. We are not OpusClip. |
+| Jet black `#000000` | Too cold. Too techy. Too "edgy startup." Use `#111111`. |
+| Pure white `#FFFFFF` as page bg | Use `#FAFAF8` — slightly warm, less harsh |
+| Gold gradient effects | Reads as AI slop. Banned. |
+| Saffron as dominant UI color | India accent only, pill badges, never primary |
+| Neon anything | Nope |
+
+---
+
+## Typography
+
+### The Stack
+
+| Role | Font | Weight | Size | Notes |
+|------|------|--------|------|-------|
+| **Display** (marketing H1) | Outfit | 800 | 64px | `-0.04em` tracking |
+| **H1** | Outfit | 700 | 44px | `-0.03em` tracking |
+| **H2** | Outfit | 700 | 30px | `-0.02em` tracking |
+| **H3** | Outfit | 600 | 22px | `-0.01em` tracking |
+| **Body** | Geist Sans | 400 | 17px | `1.6` line height |
+| **Body small** | Geist Sans | 400 | 14px | — |
+| **Label / eyebrow** | Geist Sans | 600 | 12px | `+0.08em`, uppercase |
+| **Score / timestamp** | Geist Mono | 700 | varies | `tabular-nums` |
+
+**Outfit** = personality, punch, creator energy. Headlines only.  
+**Geist Sans** = legible, clean, does what it needs to do. Body text.  
+**Geist Mono** = scores, timestamps, credit balances. Anything that's a number.
+
+### In Tailwind:
 ```tsx
-// Display headlines (marketing)
+// Marketing headline
 className="font-[family-name:--font-display] font-extrabold text-[64px] tracking-[-0.04em]"
 
-// Scores and timestamps
-className="font-mono tabular-nums"
+// Score display
+className="font-mono tabular-nums text-2xl font-bold"
 
-// Body text
-className="font-sans text-base leading-relaxed"
+// Eyebrow label
+className="text-xs font-semibold uppercase tracking-widest text-[#E84A2F]"
 ```
 
 ### Typography Rules
-- **Never use default system fonts** for brand-facing surfaces
-- **Display font (Outfit)** only for headlines — not body text
-- **Monospace (Geist Mono)** for all numeric values: scores, timestamps, credit balances, percentages
-- **Tracking**: Always negative for headlines (-0.02em to -0.04em). Never positive for headlines.
-- **Orphans**: Headlines over 2 lines should not leave a single word on the last line — rewrite copy or use `max-w` to force wrap
+- Monospace for **every number** that matters (scores, minutes, prices, timestamps)
+- Headline tracking always **negative** — never positive for H1/H2
+- Display font (Outfit) **only** for headlines, never body paragraphs
+- No orphans — if a headline wraps, the last line needs at least 2 words
 
 ---
 
-## 5. Voice & Tone
+## Voice & Tone
 
-### Core Principles
-1. **Say what it does, not how it does it** — "HookCut surfaces the moments most likely to stop a scroll." Not "Our proprietary 7-dimension scoring engine analyzes attention retention coefficients."
-2. **Numbers over adjectives** — "87 out of 100" beats "really high score"
-3. **Creator-peer, not SaaS-vendor** — Write like a sharp creator friend who also ships code, not like enterprise software
-4. **Active, not passive** — "HookCut identifies…" not "Hooks are identified by…"
+### The Quick Test
+Before publishing copy, ask: *"Would a sharp creator friend actually say this, or does it sound like a press release?"*
+
+**Creator friend says:** "HookCut found 5 hooks in your podcast. The best one scored 87."  
+**Press release says:** "Our proprietary AI-powered engagement detection system has identified 5 potential viral content segments."
+
+Write like the first.
 
 ### Vocabulary Guide
-| Use this | Not this |
-|----------|----------|
+
+| ✅ Say this | ❌ Not this |
+|------------|------------|
 | Hook analysis engine | AI clipper |
 | Hook scoring platform | Automatic clipping tool |
 | Surfaces scroll-stopping moments | Generates clips |
-| Hook Score | Virality score / engagement score |
-| Find My Hooks → | Submit / Analyze / Generate |
-| Start Analyzing → | Try for free / Sign up |
+| Hook Score | Virality score / Engagement score |
+| Find My Hooks → | Submit / Analyze / Process |
+| Start Analyzing → | Try for free / Sign up / Get started |
 | Intelligently surfaces | Uses AI to find |
-| Scroll-stopping potential | Viral potential (overused) |
-| Penalty / rejects | Filters out |
-| Creator | Content creator / Youtuber |
-| ₹499/month | $X/month (for India audiences) |
+| Rejects / Penalizes | Filters out |
+| Creator | Content creator / YouTuber |
+| ₹499/month | $X/month (for Indian audiences) |
+| Scroll-stopping potential | Viral potential |
 
-### Error Messages
-Errors should be:
-- Specific: say what failed, not just "something went wrong"
-- Actionable: tell them what to do next
-- Human: not technical/stacktrace language
+### CTA Copy Rules
+- Always ends with ` →` (space + arrow)
+- 2–5 words max
+- Verb-first: "Find My Hooks →", "Start Analyzing →", "See Pricing →"
+- Never: "Click here", "Learn more" (alone), "Submit"
 
-| Scenario | Copy |
-|----------|------|
-| Invalid YouTube URL | "That doesn't look like a YouTube URL. Paste a link starting with youtube.com/watch?v=" |
-| Video too long | "This video is over 3 hours — try a shorter one for best results." |
-| Analysis failed | "Analysis didn't complete. Your credits haven't been charged. Try again in a moment." |
-| No hooks found | "We couldn't find strong hook moments in this video. Try a different video or a shorter segment." |
-| Network error | "Connection issue. Check your internet and try again." |
+### Error Messages — Be a Human, Not a Stack Trace
 
-### Copy Length Rules
-- **Hero headlines**: 4–8 words max
-- **Sub-headlines**: 1–2 sentences, under 30 words
-- **CTA buttons**: 2–5 words, always with directional arrow →
-- **Micro-copy** (below inputs): under 10 words
-- **Feature descriptions**: 1–3 sentences
-- **Blog posts**: 1,500–2,000 words, SEO-optimized
+| What broke | What to say |
+|-----------|-------------|
+| Bad YouTube URL | "That doesn't look like a YouTube URL. Try one that starts with `youtube.com/watch?v=`" |
+| Video too long | "This video is over 3 hours — try a shorter one for faster results." |
+| Analysis failed | "Analysis didn't complete. Your credits haven't been charged. Give it another go." |
+| No hooks found | "We couldn't find strong hook moments here. Try a different video or a punchier segment." |
+| Network error | "Connection hiccup. Check your internet and try again." |
+| [object Object] | 🚫 This should never reach the user. Fix the error handling. |
 
 ---
 
-## 6. UI Component Language
+## UI Patterns
 
 ### Buttons
-| Variant | Use | Color |
-|---------|-----|-------|
-| Primary | Main CTA ("Find My Hooks →", "Start Analyzing →") | `#E84A2F` bg, white text |
-| Secondary | Supporting actions ("See Pricing", "Learn More") | Outline / ghost |
-| Destructive | Delete / permanent actions | Red (`#EF4444`) |
-| Ghost | Low-emphasis actions | Transparent + muted text |
 
-CTA copy always ends with `→` — it signals forward momentum.
+| Variant | Style | When to use |
+|---------|-------|-------------|
+| Primary | `#E84A2F` bg, white text, `rounded-xl` | Main CTA — max 1 per section |
+| Secondary | Outline / ghost | Supporting actions |
+| Destructive | `#EF4444` text, subtle bg | Delete, remove |
+| Ghost | Transparent | Low-emphasis links |
 
 ### Cards
-- Border radius: `1rem` (cards), `0.625rem` (small elements)
-- Marketing cards: white bg, `1px solid #E4E4E7`, subtle `box-shadow`
-- Product cards: `#1A1A1A` bg, `rgba(255,255,255,0.08)` border
-- No glassmorphism on marketing cards — clean solid surfaces only
-- Minimal glassmorphism permitted in product UI for depth (not decoration)
 
-### Spacing Scale
-Built on Tailwind's default 4px base:
-- Tight (within components): 4px, 8px, 12px
-- Standard (between elements): 16px, 20px, 24px
-- Generous (between sections): 48px, 64px, 96px
-- Marketing section padding: `py-24` (96px vertical)
+- **Marketing:** white bg, `1px solid #E4E4E7`, gentle shadow, `radius: 1rem`
+- **Product (dark):** `#1A1A1A` bg, `rgba(255,255,255,0.08)` border, `radius: 1rem`
+- **No glassmorphism on marketing cards** — solid surfaces, clean
+- Acceptable glassmorphism: product UI depth cues only, not decoration
 
-### Animations
-| Element | Animation | Duration |
-|---------|-----------|----------|
-| Page transitions | Slide right (`slideRight` variant) | 300ms ease |
-| Cards entering | Fade up (`fadeUpItem` variant) | 200ms, staggered |
-| Hook score ring | Spring fill | stiffness 45, damping 18 |
-| Timeline marker pulse | Radial expand + fade | 1.2s, infinite loop |
-| Ticker | Linear translate | 24s, infinite |
-| Error banner | Fade down | 200ms ease |
+### The Hook Timeline (Our Signature Visual)
 
-**Animation philosophy**: Purposeful, never decorative. Every animation communicates state or guides attention. No spinning logos, no parallax scrolling, no scroll-triggered particle effects.
-
----
-
-## 7. The Hook Timeline (Brand Identity Element)
-
-The `<HookTimeline />` SVG component is a signature visual element — it appears across:
-- The marketing homepage (Section 4: "The Problem")
-- The hooks step in the product UI (above hook card grid)
+The `<HookTimeline />` SVG is a brand identity element. It appears everywhere:
+- Marketing homepage Section 4 ("Most viewers decide to scroll in 2 seconds")
+- The hooks step above the hook card grid
 - FigJam architecture diagrams
-- Canva reference designs
 - Social media assets
 
-**Visual spec:**
-- Full-width horizontal track line — `rgba(255,255,255,0.08)` on dark, `rgba(0,0,0,0.08)` on light
-- Triangle markers (▲) at each hook timestamp — colored by score ramp
-- Timestamp labels below each marker — monospace, muted
-- Active hook: orange glow ring animation (2px stroke, radial expand, 1.2s loop)
-- Dark background required when using white SVG strokes
+**Important:** The timeline uses white SVG strokes. It needs a dark background container (`#111111`) to be visible. Don't put it on `#FAFAF8` — it'll disappear.
 
-This visual communicates the core product value instantly: *your video has hidden moments of viral potential, and we found them.*
+### Animation Philosophy
 
----
+Every animation earns its place. Ask: *"Does this help the user understand what happened, or is it just for show?"*
 
-## 8. Photography & Illustration
+| Element | Animation | Vibe |
+|---------|-----------|------|
+| Page transitions | Slide right | Directional, purposeful |
+| Cards entering view | Fade up, staggered | Organic, not flashy |
+| Score ring fill | Spring physics | Satisfying, game-like |
+| Timeline marker pulse | Radial expand + fade | "We found something" |
+| Error banner | Fade down | Urgent but calm |
 
-### Creator Testimonials
-Use abstract circular avatar illustrations — geometric or painterly, not photos of real people. This avoids:
-- Fake review appearance
-- Privacy/consent issues
-- Stock photo "corporate" feel
-
-**Color palette for avatars**: Use brand-adjacent colors — blue, emerald, teal. Not purple.
-
-### Product Screenshots
-When showing the UI in marketing contexts:
-- Use real product components rendered with mock data (not browser screenshots)
-- Dark UI always renders on a dark background — never float a dark window on a white page without a containing card
-- Add 1–2° rotation for "placed on a surface" feel — never straight-on floating
-
-### Icons
-Use Lucide React icons throughout (already installed). Style: `strokeWidth={1.5}` for decorative, `strokeWidth={2}` for interactive.
-
-No icon libraries mixing (no Heroicons, no FontAwesome alongside Lucide).
+Banned: spinning logos, scroll-triggered particle effects, parallax, entrance animations on every single element.
 
 ---
 
-## 9. Brand Application Examples
+## Algorithm Messaging (Important)
 
-### ✅ Correct Usage
-- "Find the hook. Stop the scroll." on the hero
-- "87 score · CURIOSITY GAP · 0:14 → 0:47" on a hook card
-- "₹499/month · UPI accepted" in the India section
-- "HookCut intelligently surfaces the moments most likely to stop a scroll."
-- Score gauge with orange ring at 74, green ring at 87
+Our scoring system is the product. The internals are the secret.
 
-### ❌ Incorrect Usage
-- "Our AI-powered algorithm analyzes your content using machine learning…" (too generic)
-- "Generate unlimited clips automatically" (sounds like a bulk clipper)
-- Any purple color in the UI
-- "Try for free" as the primary CTA (implies confusion about free tier)
-- "Submit" or "Upload" on the main action button
-- Showing 7 scoring dimensions in marketing copy (never expose internals)
-
----
-
-## 10. Algorithm Messaging Rules
-
-HookCut uses a proprietary scoring system. In all public-facing copy:
-
-### DO say:
+### Always OK to say:
 - "HookCut intelligently surfaces the moments most likely to stop a scroll"
 - "Each hook gets a score from 0–100 based on scroll-stopping potential"
-- "HookCut automatically rejects filler segments, greetings, and sponsor reads"
-- "Composite hooks layer multiple engagement techniques for maximum impact"
-- "18 hook type classifications including Curiosity Gap, Pain Escalation, Social Proof…"
+- "HookCut automatically rejects filler, greetings, and sponsor reads"
+- "18 hook type classifications including Curiosity Gap, Pain Escalation, Social Proof..."
+- "Composite hooks layer multiple techniques for maximum impact"
 
-### NEVER say:
-- The names of the 7 scoring dimensions (attention_score, hook_type_strength, etc.)
-- How the transcript is processed
-- Which LLM powers the analysis
-- The threshold scores used for rejection
-- Specific weights in the scoring formula
+### Never say publicly:
+- The names of the 7 scoring dimensions
+- Which LLM powers the analysis (Gemini/Claude/GPT)
+- The specific rejection thresholds
+- How transcript processing works
+- Scoring weights or formulas
 
-The score is the output. The output is the product. The algorithm is the secret.
+The score is the output. The output is the brand. The algorithm is the moat.
 
 ---
 
-## 11. SEO & Metadata
+## India Positioning
 
-### Default OG Image
-Size: 1200×630px
-Background: `#0A0A0A`
-Center: HookCut wordmark (white) + tagline "Find the hook. Stop the scroll." (white/60)
-Bottom-right: Example hook score gauge (87, green ring)
+HookCut has an explicit India-first stance. This isn't a footnote — it's a differentiator.
 
-### Page Title Format
+- **Pricing:** Show ₹ first, always. "₹499/month · No dollar conversion surprises."
+- **Payment:** UPI support is a real differentiator vs. all Western competitors. Lead with it.
+- **Languages:** 12+ Indian languages for video analysis. State this as a feature.
+- **Hinglish:** Acceptable in social copy and email. ("Bhai, ye hook toh fire hai 🔥"). Never in product UI.
+- **Flag emoji 🇮🇳:** OK in India-specific pills and social content. Don't overdo it.
+- **Saffron:** Pill/badge accent only. Not a primary UI color. Not a background.
+
+---
+
+## What Good Looks Like
+
+### ✅ Nailed it
 ```
-[Page-Specific Title] | HookCut
+"87 · CURIOSITY GAP · 0:14 → 0:47"
+"Find the hook. Stop the scroll."
+"₹499/month · UPI accepted · 12+ languages"
+"HookCut intelligently surfaces the moments most likely to stop a scroll."
+"Your next viral Short is already in your video."
 ```
-Examples:
-- `Find the hook. Stop the scroll. | HookCut` (homepage)
-- `HookCut vs OpusClip: Which Tool Finds Better Hooks? | HookCut` (blog)
-- `YouTube Hook Ideas for Finance Creators | HookCut` (niche page)
 
-### Meta Description Length
-150 characters max. Always includes: primary keyword + benefit + brand name.
-
----
-
-## 12. India Brand Considerations
-
-HookCut has explicit India-first positioning:
-
-### Language
-- Primary: English
-- Secondary: Hinglish copy acceptable in social/email ("Bhai, ye hook toh fire hai 🔥")
-- Never mix scripts in UI (no Devanagari in the product)
-- 12+ Indian languages supported for video analysis — state this as a feature, not the interface language
-
-### Pricing Display
-- Always show ₹ (rupee) price first for Indian audiences
-- Never show only USD pricing on Indian-facing pages
-- "No dollar conversion surprises" is a valid, specific marketing claim
-
-### Payment
-- Highlight UPI support explicitly — it's a true differentiator vs. Western competitors
-- "UPI accepted" pill in the India section
-
-### Visual
-- Indian flag emoji (🇮🇳) acceptable in India-specific pills
-- No saffron, white, green color combinations that read as the Indian flag pattern in the UI
-- Saffron (`#FF9933`) only as a pill/badge accent — never as a dominant UI color
+### ❌ Miss
+```
+"Our AI-powered algorithm analyzes content using machine learning…"
+"Generate unlimited clips automatically at scale"
+[any purple in the UI]
+"Try for free" as the primary CTA
+"Submit" on the main action button
+Showing 7 scoring dimensions in public copy
+```
 
 ---
 
-## 13. File Naming & Asset Organization
+## File Organization
 
 ```
 public/
-  og-image.png          # 1200×630 OG image
-  logo-dark.svg         # White wordmark (for dark backgrounds)
-  logo-light.svg        # Dark wordmark (for light backgrounds)
+  og-image.png           # 1200×630, dark bg, white wordmark
+  logo-dark.svg          # White+orange wordmark (for dark bg)
+  logo-light.svg         # Dark+orange wordmark (for light bg)
   favicon.ico
-  icon-32.png
-  icon-16.png
-  apple-touch-icon.png  # 180×180
+  icon-32.png            # Orange hook glyph
 
-src/
-  app/
-    globals.css         # Product UI CSS variables (dark palette)
-    marketing.css       # Marketing site CSS variables (light palette)
-  components/
-    hook-timeline.tsx   # Brand identity SVG component
-    hero-hook-preview.tsx
+src/app/
+  globals.css            # Product dark palette CSS variables
+  marketing.css          # Marketing light palette
+  layout.tsx             # Font loading (Outfit + Geist)
+
+src/components/
+  hook-timeline.tsx      # Brand identity SVG component ← iconic
+  hero-hook-preview.tsx  # Hero right-column visual
+  header.tsx             # Two-tone wordmark logo, no icon box
+  footer.tsx             # SEO footer, 4-column
 ```
 
 ---
 
-## 14. Version History
+## Reference Designs
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | March 2026 | Initial brand identity — complete rebrand from purple/glassmorphism to orange/warm-dark |
+| Artifact | ID / URL | What's in it |
+|----------|----------|--------------|
+| Canva — logo wordmark (cap-C style) | `DAHDHk_nRRs` slide 1 | The HookCut wordmark style we're using |
+| Canva — eye-with-flower motif | `DAHDHqqjBzY` | Decorative icon concept for future exploration |
+| Canva — Hook Score Infographic | `DAH8bPTyp6A` (approx) | Score gauge, color ramp, what scores mean |
+| Canva — Marketing Homepage Mockup | See memory file | Full 13-section scroll |
+| Canva — Product UI Presentation | See memory file | All 4 flow steps |
+| FigJam diagrams | 7 boards | Architecture, state machines, user journey |
 
 ---
 
-*This document is the single source of truth for HookCut's visual identity, voice, and design decisions. All new components, copy, and marketing materials should be validated against it.*
+## Version History
+
+| Version | Date | What changed |
+|---------|------|-------------|
+| 1.0 | March 2026 | Initial brand identity — full rebrand from purple/glassmorphism → orange/warm-dark |
+
+---
+
+*Single source of truth for HookCut's visual identity, copy standards, and design decisions. When in doubt, come back here.*

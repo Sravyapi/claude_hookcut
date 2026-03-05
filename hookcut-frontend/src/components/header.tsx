@@ -34,37 +34,6 @@ interface HeaderProps {
   onReset?: () => void;
 }
 
-function HookCutLogo() {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      aria-hidden="true"
-      className="shrink-0"
-    >
-      {/* Hook glyph — stylised fishhook / play cursor */}
-      <path
-        d="M14 4C14 4 16 4 16 7C16 10 13 11 10 11C7 11 5 12.5 5 15C5 16.5 6 17.5 7.5 17.5"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      <path
-        d="M5.5 14L7.5 17.5L4 17.5"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
-  );
-}
-
 export default function Header({ onReset }: HeaderProps) {
   const { data: session, status } = useSession();
   const router = useRouter();
@@ -151,11 +120,8 @@ export default function Header({ onReset }: HeaderProps) {
             whileTap={{ scale: 0.98 }}
             aria-label="HookCut home"
           >
-            <div className="w-8 h-8 rounded-lg bg-[--color-primary] flex items-center justify-center shadow-md shadow-[--color-primary-glow] transition-shadow duration-200 group-hover:shadow-lg group-hover:shadow-[--color-primary-glow]">
-              <HookCutLogo />
-            </div>
-            <span className="font-display font-extrabold text-[17px] tracking-tight text-white/90 leading-none">
-              HookCut
+            <span className="font-[family-name:--font-display] font-extrabold text-[18px] tracking-[-0.02em] leading-none">
+              <span className="text-white">Hook</span><span className="text-[#E84A2F]">Cut</span>
             </span>
           </motion.button>
 
