@@ -1,66 +1,69 @@
 "use client";
 
-import { useState, useCallback, useEffect, useRef, useMemo, memo } from "react";
+import { useState, useCallback, useMemo, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import type { Hook, CaptionStyle } from "../lib/types";
-import { MAX_SELECTED_HOOKS } from "../lib/constants";
-import HookCard from "./hook-card";
+import type { Hook, CaptionStyle } from "@/lib/types";
+import { MAX_SELECTED_HOOKS } from "@/lib/constants";
+import { HookCard } from "./hook-card";
+import { HookTimeline, type TimelineHook } from "./hook-timeline";
 import TrimSlider, { parseTimestamp } from "./trim-slider";
-import { staggerContainer, fadeUpItem } from "../lib/motion";
+import { staggerContainer, fadeUpItem } from "@/lib/motion";
 
-const CAPTION_STYLE_OPTIONS: { value: CaptionStyle; label: string; description: string; preview: { font: string; color: string; bg: string } }[] = [
-  { value: "clean", label: "Clean", description: "Professional & readable", preview: { font: "font-sans", color: "text-white", bg: "bg-black/60" } },
-  { value: "bold", label: "Bold", description: "High-energy & impactful", preview: { font: "font-bold", color: "text-white", bg: "bg-black/70" } },
-  { value: "neon", label: "Neon", description: "Trendy & eye-catching", preview: { font: "font-black", color: "text-cyan-400", bg: "bg-indigo-950/70" } },
-  { value: "minimal", label: "Minimal", description: "Subtle & elegant", preview: { font: "font-light", color: "text-white/80", bg: "bg-black/40" } },
+// ─── Caption style config ─────────────────────────────────────────────────────
+
+const CAPTION_STYLE_OPTIONS: {
+  value: CaptionStyle;
+  label: string;
+  description: string;
+  preview: { font: string; color: string; bg: string };
+}[] = [
+  {
+    value: "clean",
+    label: "Clean",
+    description: "Professional & readable",
+    preview: { font: "font-sans", color: "text-white", bg: "bg-black/60" },
+  },
+  {
+    value: "bold",
+    label: "Bold",
+    description: "High-energy & impactful",
+    preview: { font: "font-bold", color: "text-white", bg: "bg-black/70" },
+  },
+  {
+    value: "neon",
+    label: "Neon",
+    description: "Trendy & eye-catching",
+    preview: { font: "font-black", color: "text-cyan-400", bg: "bg-slate-950/70" },
+  },
+  {
+    value: "minimal",
+    label: "Minimal",
+    description: "Subtle & elegant",
+    preview: { font: "font-light", color: "text-white/80", bg: "bg-black/40" },
+  },
 ];
+
+// ─── Props ────────────────────────────────────────────────────────────────────
 
 interface HooksStepProps {
   hooks: Hook[];
   videoTitle: string;
   regenerationCount: number;
-  onSelectHooks: (hookIds: string[], captionStyle: string, timeOverrides: Record<string, { start_seconds: number; end_seconds: number }>) => void;
+  onSelectHooks: (
+    hookIds: string[],
+    captionStyle: string,
+    timeOverrides: Record<string, { start_seconds: number; end_seconds: number }>
+  ) => void;
   onRegenerate: () => void;
   isRegenerating: boolean;
   analysisElapsed?: number;
+  /** Used to position timeline markers — pass video_duration_seconds from AnalyzeResponse */
+  videoDurationSeconds?: number;
 }
 
-const COUNT_UP_MAX_DURATION = 2000; // Hard cap: snap to final value after 2s
+// ─── Component ────────────────────────────────────────────────────────────────
 
-function useCountUp(target: number, duration = 900) {
-  const [value, setValue] = useState(0);
-  const rafRef = useRef<number | undefined>(undefined);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-
-  useEffect(() => {
-    const start = performance.now();
-    const tick = (now: number) => {
-      const elapsed = now - start;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      setValue(target * eased);
-      if (progress < 1) {
-        rafRef.current = requestAnimationFrame(tick);
-      }
-    };
-    rafRef.current = requestAnimationFrame(tick);
-
-    // Safety timeout: snap to final value if animation runs too long
-    timeoutRef.current = setTimeout(() => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      setValue(target);
-    }, COUNT_UP_MAX_DURATION);
-
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, [target, duration]);
-
-  return value;
-}
-
-export default memo(function HooksStep({
+export const HooksStep = memo(function HooksStep({
   hooks,
   videoTitle,
   regenerationCount,
@@ -68,10 +71,14 @@ export default memo(function HooksStep({
   onRegenerate,
   isRegenerating,
   analysisElapsed = 0,
+  videoDurationSeconds = 0,
 }: HooksStepProps) {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [captionStyle, setCaptionStyle] = useState<CaptionStyle>("clean");
-  const [timeOverrides, setTimeOverrides] = useState<Record<string, { start_seconds: number; end_seconds: number }>>({});
+  const [timeOverrides, setTimeOverrides] = useState<
+    Record<string, { start_seconds: number; end_seconds: number }>
+  >({});
+  const [activeHookId, setActiveHookId] = useState<string | null>(null);
 
   const toggleHook = useCallback((id: string) => {
     setSelectedIds((prev) => {
@@ -90,156 +97,73 @@ export default memo(function HooksStep({
     });
   }, []);
 
-  const avgScore = useMemo(() => hooks.length > 0 ? hooks.reduce((sum, h) => sum + h.attention_score, 0) / hooks.length : 0, [hooks]);
-  const topScore = useMemo(() => hooks.length > 0 ? Math.max(...hooks.map((h) => h.attention_score)) : 0, [hooks]);
+  const handleHoverChange = useCallback((id: string | null) => setActiveHookId(id), []);
 
-  const animatedAvg = useCountUp(avgScore);
-  const animatedTop = useCountUp(topScore);
-  const animatedCount = useCountUp(hooks.length);
+  const handleGenerate = useCallback(
+    () => onSelectHooks(Array.from(selectedIds), captionStyle, timeOverrides),
+    [onSelectHooks, selectedIds, captionStyle, timeOverrides]
+  );
 
-  const selectedHooks = useMemo(() => hooks.filter((h) => selectedIds.has(h.id)), [hooks, selectedIds]);
+  const avgScore = useMemo(
+    () => (hooks.length > 0 ? hooks.reduce((s, h) => s + h.attention_score, 0) / hooks.length : 0),
+    [hooks]
+  );
+
+  const selectedHooks = useMemo(
+    () => hooks.filter((h) => selectedIds.has(h.id)),
+    [hooks, selectedIds]
+  );
+
+  const timelineHooks: TimelineHook[] = useMemo(
+    () =>
+      hooks.map((h) => ({
+        id: h.id,
+        start_time: h.start_time,
+        attention_score: h.attention_score,
+        rank: h.rank,
+      })),
+    [hooks]
+  );
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* Header */}
+      {/* ── Header ── */}
       <motion.div
-        className="text-center mb-8"
-        initial={{ opacity: 0, y: 16 }}
+        className="mb-6"
+        initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.45 }}
       >
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/8 border border-emerald-500/15 text-emerald-400 text-xs font-medium mb-5">
-          <svg
-            className="w-3.5 h-3.5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2.5}
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          Analysis Complete
+        <div className="flex items-center gap-2 mb-1">
+          <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+          <span className="text-xs text-emerald-400 font-medium">Analysis Complete</span>
         </div>
+        <p className="text-sm text-white/40 truncate max-w-lg">{videoTitle}</p>
+      </motion.div>
 
-        <h2 className="text-3xl font-bold text-white/90 mb-1">
-          Hook Segments Found
-        </h2>
-        <p className="text-white/35 text-sm truncate max-w-md mx-auto">
-          {videoTitle}
+      {/* ── Hook Discovery Timeline ── */}
+      <motion.div
+        className="bg-[--color-surface-1] border border-[--color-border-def] rounded-2xl px-5 pt-4 pb-3 mb-6"
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, delay: 0.05 }}
+      >
+        <HookTimeline
+          hooks={timelineHooks}
+          durationSeconds={videoDurationSeconds}
+          activeHookId={activeHookId}
+          className="mb-1"
+        />
+        {/* 1-line status bar */}
+        <p className="text-[11px] text-[--color-muted] font-mono">
+          {hooks.length} hook{hooks.length !== 1 ? "s" : ""} found
+          {" · "}
+          Avg {avgScore.toFixed(1)}
+          {analysisElapsed > 0 && ` · Analyzed in ${analysisElapsed}s`}
         </p>
       </motion.div>
 
-      {/* Stats cards */}
-      <motion.div
-        className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8"
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        <div className="glass-card rounded-2xl p-4 text-center">
-          <div className="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center mx-auto mb-2">
-            <svg
-              className="w-4 h-4 text-violet-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              />
-            </svg>
-          </div>
-          <div className="text-2xl font-bold gradient-text leading-none tabular-nums mb-1">
-            {Math.round(animatedCount)}
-          </div>
-          <div className="text-[10px] text-white/25 uppercase tracking-wider">
-            Hooks Found
-          </div>
-        </div>
-
-        <div className="glass-card rounded-2xl p-4 text-center">
-          <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center mx-auto mb-2">
-            <svg
-              className="w-4 h-4 text-emerald-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </div>
-          <div className="text-2xl font-bold text-emerald-400 leading-none tabular-nums mb-1">
-            {animatedTop.toFixed(1)}
-          </div>
-          <div className="text-[10px] text-white/25 uppercase tracking-wider">
-            Top Score
-          </div>
-        </div>
-
-        <div className="glass-card rounded-2xl p-4 text-center">
-          <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center mx-auto mb-2">
-            <svg
-              className="w-4 h-4 text-purple-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-              />
-            </svg>
-          </div>
-          <div className="text-2xl font-bold text-white/70 leading-none tabular-nums mb-1">
-            {animatedAvg.toFixed(1)}
-          </div>
-          <div className="text-[10px] text-white/25 uppercase tracking-wider">
-            Avg Score
-          </div>
-        </div>
-
-        {analysisElapsed > 0 && (
-          <div className="glass-card rounded-2xl p-4 text-center">
-            <div className="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center mx-auto mb-2">
-              <svg
-                className="w-4 h-4 text-cyan-400"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <div className="text-2xl font-bold text-cyan-400 leading-none tabular-nums mb-1">
-              {analysisElapsed}s
-            </div>
-            <div className="text-[10px] text-white/25 uppercase tracking-wider">
-              Analysis Time
-            </div>
-          </div>
-        )}
-      </motion.div>
-
-      {/* Selection hint */}
+      {/* ── Selection hint ── */}
       <AnimatePresence>
         {selectedIds.size === 0 && (
           <motion.p
@@ -253,7 +177,7 @@ export default memo(function HooksStep({
         )}
       </AnimatePresence>
 
-      {/* Hook cards — 2-column grid on desktop */}
+      {/* ── Hook cards ── */}
       <motion.div
         className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"
         variants={staggerContainer}
@@ -267,57 +191,39 @@ export default memo(function HooksStep({
               selected={selectedIds.has(hook.id)}
               onToggle={toggleHook}
               disabled={selectedIds.size >= MAX_SELECTED_HOOKS}
+              onHoverChange={handleHoverChange}
             />
           </motion.div>
         ))}
       </motion.div>
 
-      {/* Caption style picker — visible when hooks are selected */}
+      {/* ── Caption style picker (visible when hooks selected) ── */}
       <AnimatePresence>
         {selectedIds.size > 0 && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="mb-6 overflow-hidden"
+            className="mb-5 overflow-hidden"
           >
-            <div className="text-xs text-white/30 uppercase tracking-wider mb-3 text-center">
+            <p className="text-[11px] text-[--color-muted] uppercase tracking-wider mb-2.5 font-semibold">
               Caption Style
-            </div>
+            </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               {CAPTION_STYLE_OPTIONS.map((opt) => (
-                <button
+                <CaptionStyleCard
                   key={opt.value}
-                  onClick={() => setCaptionStyle(opt.value)}
-                  className={`group relative rounded-xl p-3 text-left transition-all ${
-                    captionStyle === opt.value
-                      ? "ring-2 ring-violet-500 bg-violet-500/10"
-                      : "glass-card hover:bg-white/[0.04]"
-                  }`}
-                >
-                  {/* Preview bar */}
-                  <div className={`rounded-lg px-3 py-2 mb-2 ${opt.preview.bg}`}>
-                    <span className={`text-sm ${opt.preview.font} ${opt.preview.color} leading-tight`}>
-                      Sample Text
-                    </span>
-                  </div>
-                  <div className="text-sm font-medium text-white/80">{opt.label}</div>
-                  <div className="text-[10px] text-white/30">{opt.description}</div>
-                  {captionStyle === opt.value && (
-                    <div className="absolute top-2 right-2 w-4 h-4 rounded-full bg-violet-500 flex items-center justify-center">
-                      <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                  )}
-                </button>
+                  option={opt}
+                  selected={captionStyle === opt.value}
+                  onSelect={setCaptionStyle}
+                />
               ))}
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Trim controls for selected hooks */}
+      {/* ── Trim controls ── */}
       <AnimatePresence>
         {selectedIds.size > 0 && (
           <motion.div
@@ -326,9 +232,9 @@ export default memo(function HooksStep({
             exit={{ opacity: 0, height: 0 }}
             className="mb-6 overflow-hidden"
           >
-            <div className="text-xs text-white/30 uppercase tracking-wider mb-3 text-center">
+            <p className="text-[11px] text-[--color-muted] uppercase tracking-wider mb-2.5 font-semibold">
               Trim Boundaries
-            </div>
+            </p>
             <div className="space-y-2">
               {selectedHooks.map((h) => {
                 const origStart = parseTimestamp(h.start_time);
@@ -337,9 +243,9 @@ export default memo(function HooksStep({
                 return (
                   <div
                     key={h.id}
-                    className="glass-card rounded-xl p-3 flex items-center gap-3"
+                    className="bg-[--color-surface-1] border border-[--color-border-def] rounded-xl p-3 flex items-center gap-3"
                   >
-                    <span className="text-[10px] font-bold text-violet-400/60 uppercase shrink-0">
+                    <span className="text-[10px] font-bold text-[--color-primary]/60 uppercase font-mono shrink-0">
                       #{h.rank}
                     </span>
                     <TrimSlider
@@ -362,14 +268,15 @@ export default memo(function HooksStep({
         )}
       </AnimatePresence>
 
-      {/* Sticky action bar with gradient backdrop */}
+      {/* ── Sticky action bar ── */}
       <div className="sticky bottom-0 pt-4 pb-6">
         <div
-          className="rounded-2xl p-4 flex items-center justify-between gap-4 shadow-[0_-8px_40px_rgba(0,0,0,0.5)]"
+          className="rounded-2xl p-4 flex items-center justify-between gap-4"
           style={{
-            background: "rgba(6, 6, 14, 0.88)",
-            backdropFilter: "blur(24px) saturate(1.4)",
+            background: "rgba(17,17,17,0.92)",
+            backdropFilter: "blur(20px) saturate(1.4)",
             border: "1px solid rgba(255,255,255,0.06)",
+            boxShadow: "0 -8px 40px rgba(0,0,0,0.5)",
           }}
         >
           {/* Left: selection chips */}
@@ -378,7 +285,7 @@ export default memo(function HooksStep({
               <span className="text-xs text-white/25">No hooks selected</span>
             ) : (
               <div className="flex items-center gap-1.5 flex-wrap">
-                <span className="text-xs text-white/40 shrink-0">
+                <span className="text-xs text-white/40 shrink-0 font-mono">
                   {selectedIds.size}/{MAX_SELECTED_HOOKS}
                 </span>
                 <AnimatePresence>
@@ -388,7 +295,7 @@ export default memo(function HooksStep({
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       exit={{ scale: 0.8, opacity: 0 }}
-                      className="text-[10px] px-2 py-0.5 rounded-full bg-violet-500/15 text-violet-300 border border-violet-500/20 truncate max-w-[100px]"
+                      className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-primary]/15 text-[--color-primary] border border-[--color-primary]/20 truncate max-w-[110px]"
                       title={h.hook_text}
                     >
                       #{h.rank} {h.hook_type}
@@ -399,7 +306,7 @@ export default memo(function HooksStep({
             )}
           </div>
 
-          {/* Right: action buttons */}
+          {/* Right: actions */}
           <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={onRegenerate}
@@ -408,36 +315,15 @@ export default memo(function HooksStep({
             >
               {isRegenerating ? (
                 <>
-                  <svg
-                    className="w-4 h-4 spin"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="3"
-                      strokeDasharray="30 70"
-                    />
+                  <svg className="w-4 h-4 spin" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" strokeDasharray="30 70" />
                   </svg>
-                  Regenerating...
+                  Regenerating…
                 </>
               ) : (
                 <>
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                    />
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                   </svg>
                   Regenerate
                   {regenerationCount > 0 && (
@@ -448,29 +334,62 @@ export default memo(function HooksStep({
             </button>
 
             <button
-              onClick={() => onSelectHooks(Array.from(selectedIds), captionStyle, timeOverrides)}
+              onClick={handleGenerate}
               disabled={selectedIds.size === 0}
               className="btn-primary text-sm flex items-center gap-2"
             >
-              Generate {selectedIds.size}{" "}
+              Generate {selectedIds.size > 0 ? selectedIds.size : ""}{" "}
               {selectedIds.size === 1 ? "Short" : "Shorts"}
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </button>
           </div>
         </div>
       </div>
     </div>
+  );
+});
+
+// ─── Caption Style Card subcomponent ─────────────────────────────────────────
+
+interface CaptionStyleCardProps {
+  option: (typeof CAPTION_STYLE_OPTIONS)[number];
+  selected: boolean;
+  onSelect: (v: CaptionStyle) => void;
+}
+
+const CaptionStyleCard = memo(function CaptionStyleCard({
+  option,
+  selected,
+  onSelect,
+}: CaptionStyleCardProps) {
+  const handleClick = useCallback(() => onSelect(option.value), [onSelect, option.value]);
+
+  return (
+    <button
+      onClick={handleClick}
+      className={`relative rounded-xl p-3 text-left transition-all ${
+        selected
+          ? "ring-2 ring-[--color-primary] bg-[--color-primary]/10"
+          : "bg-[--color-surface-1] border border-[--color-border-def] hover:border-[--color-border-str]"
+      }`}
+      aria-pressed={selected}
+    >
+      <div className={`rounded-lg px-3 py-2 mb-2 ${option.preview.bg}`}>
+        <span className={`text-sm ${option.preview.font} ${option.preview.color} leading-tight`}>
+          Sample Text
+        </span>
+      </div>
+      <div className="text-[13px] font-medium text-white/80">{option.label}</div>
+      <div className="text-[10px] text-[--color-muted]">{option.description}</div>
+      {selected && (
+        <div className="absolute top-2 right-2 w-4 h-4 rounded-full bg-[--color-primary] flex items-center justify-center">
+          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+      )}
+    </button>
   );
 });
