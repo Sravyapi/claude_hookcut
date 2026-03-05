@@ -162,7 +162,31 @@ def extract_segment(
     end_seconds: float,
     output_path: str,
 ) -> FFmpegResult:
-    """Extract a video segment using yt-dlp --download-sections. Never downloads full video."""
+    """Extract a video segment. Tries yt-dlp first, falls back to Piped API streams."""
+    # Try yt-dlp first (works with cookies/proxy on non-blocked IPs)
+    result = _extract_via_ytdlp(youtube_url, start_seconds, end_seconds, output_path)
+    if result.success:
+        return result
+
+    logger.warning("yt-dlp extraction failed, trying Piped API: %s", result.error)
+
+    # Fallback: get stream URLs from Piped API and extract with FFmpeg directly
+    video_id = youtube_url.split("v=")[-1].split("&")[0]
+    piped_result = _extract_via_piped(video_id, start_seconds, end_seconds, output_path)
+    if piped_result.success:
+        return piped_result
+
+    # Return original yt-dlp error if both fail
+    return result
+
+
+def _extract_via_ytdlp(
+    youtube_url: str,
+    start_seconds: float,
+    end_seconds: float,
+    output_path: str,
+) -> FFmpegResult:
+    """Extract a video segment using yt-dlp --download-sections."""
     cmd = [
         "yt-dlp",
         *_ytdlp_base_args(),
@@ -200,6 +224,120 @@ def extract_segment(
             success=False, output_path=output_path,
             error="yt-dlp timed out after 300 seconds"
         )
+    except Exception as e:
+        return FFmpegResult(success=False, output_path=output_path, error=str(e))
+
+
+# Piped instances for video stream fallback
+_PIPED_INSTANCES = [
+    "https://pipedapi.kavin.rocks",
+    "https://pipedapi.adminforge.de",
+    "https://pipedapi.in.projectsegfau.lt",
+]
+
+
+def _extract_via_piped(
+    video_id: str,
+    start_seconds: float,
+    end_seconds: float,
+    output_path: str,
+) -> FFmpegResult:
+    """Extract a segment via Piped API stream URLs + FFmpeg. Bypasses YouTube IP blocks."""
+    import httpx
+
+    for instance in _PIPED_INSTANCES:
+        try:
+            resp = httpx.get(f"{instance}/streams/{video_id}", timeout=15, follow_redirects=True)
+            if resp.status_code != 200:
+                logger.debug("Piped %s returned %d", instance, resp.status_code)
+                continue
+
+            data = resp.json()
+
+            # Find best video stream (prefer 720p or lower for size)
+            video_streams = sorted(
+                [s for s in data.get("videoStreams", []) if s.get("videoOnly", False) and s.get("height", 0) <= 720],
+                key=lambda s: s.get("height", 0),
+                reverse=True,
+            )
+            audio_streams = sorted(
+                data.get("audioStreams", []),
+                key=lambda s: s.get("bitrate", 0),
+                reverse=True,
+            )
+
+            if not video_streams or not audio_streams:
+                # Try combined streams if separate video/audio not available
+                combined = [s for s in data.get("videoStreams", []) if not s.get("videoOnly", False) and s.get("height", 0) <= 720]
+                if combined:
+                    stream_url = combined[0].get("url")
+                    if not stream_url:
+                        continue
+                    return _ffmpeg_extract_from_url(stream_url, None, start_seconds, end_seconds, output_path)
+                logger.debug("Piped %s: no suitable streams for %s", instance, video_id)
+                continue
+
+            video_url = video_streams[0].get("url")
+            audio_url = audio_streams[0].get("url")
+            if not video_url or not audio_url:
+                continue
+
+            result = _ffmpeg_extract_from_url(video_url, audio_url, start_seconds, end_seconds, output_path)
+            if result.success:
+                logger.info("Segment extracted via Piped (%s) for %s", instance, video_id)
+                return result
+
+        except Exception as e:
+            logger.debug("Piped %s extract failed for %s: %s", instance, video_id, e)
+            continue
+
+    return FFmpegResult(success=False, output_path=output_path, error="All Piped instances failed for video extraction")
+
+
+def _ffmpeg_extract_from_url(
+    video_url: str,
+    audio_url: Optional[str],
+    start_seconds: float,
+    end_seconds: float,
+    output_path: str,
+) -> FFmpegResult:
+    """Download and extract a segment from direct stream URLs using FFmpeg."""
+    duration = end_seconds - start_seconds
+    cmd = [
+        "ffmpeg", "-y",
+        "-ss", str(start_seconds),
+        "-i", video_url,
+    ]
+    if audio_url:
+        cmd.extend(["-ss", str(start_seconds), "-i", audio_url])
+    cmd.extend([
+        "-t", str(duration),
+        "-c:v", "libx264", "-preset", "faster", "-crf", "23",
+        "-c:a", "aac", "-b:a", "192k",
+        "-movflags", "+faststart",
+    ])
+    if audio_url:
+        cmd.extend(["-map", "0:v:0", "-map", "1:a:0"])
+    cmd.append(output_path)
+
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        if result.returncode != 0:
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error=f"FFmpeg URL extract failed: {_extract_error_from_stderr(result.stderr)}"
+            )
+        if not os.path.exists(output_path) or os.path.getsize(output_path) < 10000:
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error="FFmpeg URL extract produced empty/corrupt file"
+            )
+        return FFmpegResult(
+            success=True, output_path=output_path,
+            file_size_bytes=os.path.getsize(output_path),
+        )
+    except subprocess.TimeoutExpired:
+        return FFmpegResult(success=False, output_path=output_path, error="FFmpeg URL extract timed out")
     except Exception as e:
         return FFmpegResult(success=False, output_path=output_path, error=str(e))
 
