@@ -39,14 +39,14 @@ function CreditRing({ balance }: { balance: CreditBalance }) {
           cy="56"
           r={radius}
           fill="none"
-          stroke="#8b5cf6"
+          stroke="#E84A2F"
           strokeWidth="7"
           strokeLinecap="round"
           strokeDasharray={circumference}
           initial={{ strokeDashoffset: circumference }}
           animate={{ strokeDashoffset: offset }}
           transition={{ type: "spring", stiffness: 45, damping: 18, delay: 0.4 }}
-          style={{ filter: "drop-shadow(0 0 10px rgba(139,92,246,0.5))" }}
+          style={{ filter: "drop-shadow(0 0 10px rgba(232,74,47,0.5))" }}
         />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -285,7 +285,7 @@ export default function DashboardPage() {
         >
           <div className="flex items-center justify-between mb-5">
             <div className="flex items-center gap-2">
-              <CreditCard className="w-4 h-4 text-violet-400" />
+              <CreditCard className="w-4 h-4 text-[#E84A2F]" />
               <h2 className="text-sm font-semibold text-white/80">Credit Balance</h2>
             </div>
             <Button variant="secondary" size="sm" asChild>
@@ -311,14 +311,14 @@ export default function DashboardPage() {
                   label="Subscription"
                   value={`${balance.paid_minutes_remaining.toFixed(1)}`}
                   sub={`of ${balance.paid_minutes_total.toFixed(0)} min`}
-                  color="border-violet-500/20"
+                  color="border-[#E84A2F]/20"
                 />
                 <StatCard
                   icon={<Zap className="w-3.5 h-3.5" />}
                   label="Pay-As-You-Go"
                   value={`${balance.payg_minutes_remaining.toFixed(1)}`}
                   sub="min (no expiry)"
-                  color="border-purple-500/20"
+                  color="border-[#E84A2F]/15"
                 />
                 <StatCard
                   icon={<Clock className="w-3.5 h-3.5" />}
@@ -344,7 +344,7 @@ export default function DashboardPage() {
           {/* History header + search */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-5 border-b border-white/[0.05]">
             <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 text-violet-400" />
+              <Clock className="w-4 h-4 text-[#E84A2F]" />
               <h2 className="text-sm font-semibold text-white/80">Session History</h2>
               {history && (
                 <span className="text-[10px] text-white/25 ml-1">
@@ -362,7 +362,7 @@ export default function DashboardPage() {
                 value={search}
                 onChange={(e) => handleSearchChange(e.target.value)}
                 placeholder="Filter by title..."
-                className="w-full sm:w-52 pl-9 pr-3 py-2 text-xs bg-white/[0.04] border border-white/[0.06] rounded-lg text-white/70 placeholder-white/20 outline-none focus:border-violet-500/40 focus:ring-1 focus:ring-violet-500/20 transition-all"
+                className="w-full sm:w-52 pl-9 pr-3 py-2 text-xs bg-white/[0.04] border border-white/[0.06] rounded-lg text-white/70 placeholder-white/20 outline-none focus:border-[#E84A2F]/40 focus:ring-1 focus:ring-[#E84A2F]/20 transition-all"
               />
             </div>
           </div>

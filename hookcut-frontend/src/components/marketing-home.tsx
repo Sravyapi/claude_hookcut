@@ -417,13 +417,13 @@ export const MarketingHome = memo(function MarketingHome({ onAnalyze }: Marketin
               The difference between a viral Short and a dead one isn&apos;t the content — it&apos;s the hook. HookCut analyzes your video and identifies the moments most likely to trigger curiosity, emotion, and tension.
             </p>
           </div>
-          <div className="bg-[#FAFAF8] rounded-2xl p-6 border border-[#E4E4E7]">
+          <div className="bg-[#111111] rounded-2xl p-6 border border-[#222222]">
             <HookTimeline
               hooks={DEMO_TIMELINE_HOOKS}
               durationSeconds={600}
               activeHookId={null}
             />
-            <p className="text-center text-xs text-[#A1A1AA] mt-4 font-mono">
+            <p className="text-center text-xs text-white/30 mt-4 font-mono">
               5 hooks found in this video. Scroll-stopping moments highlighted.
             </p>
           </div>
