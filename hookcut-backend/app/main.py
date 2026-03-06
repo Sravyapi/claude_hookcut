@@ -80,4 +80,4 @@ app = create_app()
 
 def get_app() -> FastAPI:
     """Factory for uvicorn: `uvicorn app.main:get_app --factory`"""
-    return create_app()
+    return app

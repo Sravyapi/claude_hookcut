@@ -3,10 +3,14 @@ import logging
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
+from sqlalchemy import func, select
 from app.tasks.celery_app import celery_app, ERROR_MSG_MAX_LEN, DOWNLOAD_URL_EXPIRES_SECONDS
 from app.dependencies import get_db_session
 from app.config import get_settings
 from app.services.credit_manager import CreditManager
+from app.models.session import AnalysisSession, Hook, Short
+from app.services.short_generator import ShortGenerator
+from app.services.storage import StorageService
 
 logger = logging.getLogger(__name__)
 
@@ -21,10 +25,6 @@ def generate_short(self, short_id: str):
     settings = get_settings()
 
     try:
-        from app.models.session import AnalysisSession, Hook, Short
-        from app.services.short_generator import ShortGenerator
-        from app.services.storage import StorageService
-
         short = db.get(Short, short_id)
         if not short:
             logger.error(f"Short {short_id} not found")
@@ -139,26 +139,31 @@ def generate_short(self, short_id: str):
         db.close()
 
 
+def _get_short_status_counts(db, session_id: str) -> dict[str, int]:
+    """Return {status: count} for all shorts in a session — single query."""
+    from sqlalchemy import func
+    rows = db.execute(
+        select(Short.status, func.count(Short.id))
+        .where(Short.session_id == session_id)
+        .group_by(Short.status)
+    ).all()
+    return {status: count for status, count in rows}
+
+
 def _check_session_completion(db, session):
     """If all shorts are ready, mark session completed."""
-    from sqlalchemy import func, select
-    from app.models.session import Short
-
-    total = db.execute(select(func.count(Short.id)).where(Short.session_id == session.id)).scalar()
-    ready = db.execute(select(func.count(Short.id)).where(Short.session_id == session.id, Short.status == "ready")).scalar()
-    if total > 0 and total == ready:
+    counts = _get_short_status_counts(db, session.id)
+    total = sum(counts.values())
+    if total > 0 and counts.get("ready", 0) == total:
         session.status = "completed"
         db.commit()
 
 
 def _check_all_shorts_failed(db, session):
     """If ALL shorts failed, refund credits and mark session as failed."""
-    from sqlalchemy import func, select
-    from app.models.session import Short
-
-    total = db.execute(select(func.count(Short.id)).where(Short.session_id == session.id)).scalar()
-    failed = db.execute(select(func.count(Short.id)).where(Short.session_id == session.id, Short.status == "failed")).scalar()
-    if total > 0 and total == failed:
+    counts = _get_short_status_counts(db, session.id)
+    total = sum(counts.values())
+    if total > 0 and counts.get("failed", 0) == total:
         CreditManager(db).refund_and_fail(
             session.id,
             error_msg="All Short generations failed. Credits refunded.",

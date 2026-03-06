@@ -4,6 +4,11 @@ from sqlalchemy.exc import SQLAlchemyError
 from app.tasks.celery_app import celery_app
 from app.dependencies import get_db_session
 from app.services.credit_manager import CreditManager
+from app.models.session import AnalysisSession, Hook
+from app.models.learning import LearningLog
+from app.services.transcript import TranscriptService
+from app.services.hook_engine import HookEngine
+from app.exceptions import HookEngineError
 
 logger = logging.getLogger(__name__)
 
@@ -17,12 +22,6 @@ def run_analysis(self, session_id: str):
     """
     db = get_db_session()
     try:
-        from app.models.session import AnalysisSession, Hook
-        from app.models.learning import LearningLog
-        from app.services.transcript import TranscriptService
-        from app.services.hook_engine import HookEngine
-        from app.exceptions import HookEngineError
-
         session = db.get(AnalysisSession, session_id)
         if not session:
             logger.error(f"Session {session_id} not found")

@@ -65,6 +65,48 @@ function extractErrorMessage(err: unknown, fallback: string): string {
   return fallback;
 }
 
+function ErrorBanner({ error, onDismiss }: { error: string; onDismiss: () => void }) {
+  return (
+    <AnimatePresence>
+      {error && (
+        <motion.div
+          initial={{ opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -12 }}
+          className="fixed top-16 left-0 right-0 z-40 px-4 py-2"
+        >
+          <div className="max-w-2xl mx-auto p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm flex items-center gap-3">
+            <svg
+              className="w-4 h-4 shrink-0"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"
+              />
+            </svg>
+            <span>{error}</span>
+            <button
+              onClick={onDismiss}
+              className="ml-auto text-red-400/60 hover:text-red-400 transition-colors"
+              aria-label="Dismiss error"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
 interface Props {
   marketingContent: React.ReactNode;
 }
@@ -246,48 +288,7 @@ export default function HomeStateMachine({ marketingContent }: Props) {
     return (
       <AnalyzeContext.Provider value={handleAnalyze}>
         <Header />
-        <AnimatePresence>
-          {error && (
-            <motion.div
-              initial={{ opacity: 0, y: -12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              className="fixed top-16 left-0 right-0 z-40 px-4 py-2"
-            >
-              <div className="max-w-2xl mx-auto p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm flex items-center gap-3">
-                <svg
-                  className="w-4 h-4 shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"
-                  />
-                </svg>
-                <span>{error}</span>
-                <button
-                  onClick={() => setError("")}
-                  className="ml-auto text-red-400/60 hover:text-red-400 transition-colors"
-                  aria-label="Dismiss error"
-                >
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <ErrorBanner error={error} onDismiss={() => setError("")} />
         {marketingContent}
       </AnalyzeContext.Provider>
     );
@@ -298,38 +299,7 @@ export default function HomeStateMachine({ marketingContent }: Props) {
   return (
     <>
       <Header onReset={resetAll} />
-
-      <AnimatePresence>
-        {error && (
-          <motion.div
-            initial={{ opacity: 0, y: -12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            className="fixed top-16 left-0 right-0 z-40 px-4 py-2"
-          >
-            <div className="max-w-2xl mx-auto mb-6 p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm flex items-start gap-3">
-              <svg
-                className="w-5 h-5 shrink-0 mt-0.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"
-                />
-              </svg>
-              <div>
-                <p className="font-medium mb-0.5">Analysis Error</p>
-                <p className="text-white/50">{error}</p>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <ErrorBanner error={error} onDismiss={() => setError("")} />
 
       <main id="main-content" className="pt-24 pb-12 px-6">
         <AnimatePresence mode="wait">
