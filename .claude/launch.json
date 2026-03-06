@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "Frontend (Next.js)",
-      "runtimeExecutable": "npm",
+      "runtimeExecutable": "/opt/homebrew/opt/node@22/bin/npm",
       "runtimeArgs": ["run", "dev"],
       "cwd": "hookcut-frontend",
       "port": 3000
@@ -12,18 +12,21 @@
       "name": "Backend (FastAPI)",
       "runtimeExecutable": "uvicorn",
       "runtimeArgs": ["app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"],
+      "cwd": "hookcut-backend",
       "port": 8000
     },
     {
       "name": "Celery Worker",
       "runtimeExecutable": "celery",
       "runtimeArgs": ["-A", "app.tasks.celery_app", "worker", "--loglevel=info", "--concurrency=2"],
+      "cwd": "hookcut-backend",
       "port": 0
     },
     {
       "name": "Celery Beat",
       "runtimeExecutable": "celery",
       "runtimeArgs": ["-A", "app.tasks.celery_app", "beat", "--loglevel=info"],
+      "cwd": "hookcut-backend",
       "port": 0
     }
   ]

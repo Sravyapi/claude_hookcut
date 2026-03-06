@@ -6,199 +6,239 @@
  *
  * Endpoint: GET /transcript?v={videoId}&lang=en
  * Returns:  { "text": "[0:00.00] line...\n...", "language": "en" }
- *
- * Deploy: wrangler deploy
- * Set secret: wrangler secret put API_KEY
  */
 
-const BROWSER_UA =
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+const CONSENT_COOKIE = "CONSENT=PENDING+987; SOCS=CAESEwgDEgk2NDcwNTI0NjAaAmVuIAEaBgiA_LyaBg";
 
 export default {
   async fetch(request, env) {
-    // CORS preflight
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: corsHeaders() });
     }
-
-    // Auth check (optional — only if API_KEY secret is set)
     if (env.API_KEY) {
       const auth = request.headers.get("Authorization") || "";
       if (auth !== `Bearer ${env.API_KEY}`) {
-        return jsonResponse({ error: "Unauthorized" }, 401);
+        return json({ error: "Unauthorized" }, 401);
       }
     }
-
     const url = new URL(request.url);
-
-    if (url.pathname === "/transcript") {
-      return handleTranscript(url);
-    }
-
-    if (url.pathname === "/health") {
-      return jsonResponse({ status: "ok" });
-    }
-
-    return jsonResponse({ error: "Not found" }, 404);
+    if (url.pathname === "/transcript") return handleTranscript(url);
+    if (url.pathname === "/health") return json({ status: "ok" });
+    return json({ error: "Not found" }, 404);
   },
 };
+
+const INNERTUBE_API_KEY = "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8";
 
 async function handleTranscript(url) {
   const videoId = url.searchParams.get("v");
   const lang = url.searchParams.get("lang") || "en";
 
   if (!videoId || !/^[a-zA-Z0-9_-]{11}$/.test(videoId)) {
-    return jsonResponse({ error: "Invalid or missing video ID" }, 400);
+    return json({ error: "Invalid or missing video ID" }, 400);
   }
 
   try {
-    // Step 1: Fetch the YouTube watch page
-    const ytResp = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
-      headers: {
-        "User-Agent": BROWSER_UA,
-        "Accept-Language": "en-US,en;q=0.9",
-      },
-    });
-
-    if (!ytResp.ok) {
-      return jsonResponse(
-        { error: `YouTube returned ${ytResp.status}` },
-        502
-      );
-    }
-
-    const html = await ytResp.text();
-
-    // Step 2: Extract ytInitialPlayerResponse from page HTML
-    const playerMatch = html.match(
-      /var\s+ytInitialPlayerResponse\s*=\s*(\{.+?\});/s
-    );
-    if (!playerMatch) {
-      // Fallback: try the embedded JSON format
-      const embeddedMatch = html.match(
-        /ytInitialPlayerResponse"\s*:\s*(\{.+?\})\s*,\s*"/s
-      );
-      if (!embeddedMatch) {
-        return jsonResponse(
-          { error: "Could not extract player response" },
-          404
-        );
+    // Stage 1: Get caption tracks via YouTube Player API (Android Client)
+    const playerResp = await fetch(
+      `https://www.youtube.com/youtubei/v1/player?key=${INNERTUBE_API_KEY}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "User-Agent": "com.google.android.youtube/20.10.38 (Linux; U; Android 10; en_US)",
+          "X-Goog-Api-Format-Version": "2",
+        },
+        body: JSON.stringify({
+          context: {
+            client: {
+              clientName: "ANDROID",
+              clientVersion: "20.10.38",
+              hl: "en",
+            },
+          },
+          videoId: videoId,
+        }),
       }
-      return processCaptions(JSON.parse(embeddedMatch[1]), lang);
+    );
+
+    if (!playerResp.ok) {
+      return json({ error: `Player API returned ${playerResp.status}` }, 502);
     }
 
-    return processCaptions(JSON.parse(playerMatch[1]), lang);
+    const data = await playerResp.json();
+
+    // Check playability
+    const playStatus = data?.playabilityStatus?.status;
+    if (playStatus !== "OK") {
+      return json({ error: `Video unplayable: ${playStatus}` }, 404);
+    }
+
+    // Extract caption tracks
+    const tracks = data?.captions?.playerCaptionsTracklistRenderer?.captionTracks;
+    if (!tracks || tracks.length === 0) {
+      return json({ error: "No captions available" }, 404);
+    }
+
+    // Find best language match
+    const langCodes = expandLangCodes(lang);
+    let track = null;
+    for (const code of langCodes) {
+      track = tracks.find(t => t.languageCode === code || t.languageCode.startsWith(code + "-"));
+      if (track) break;
+    }
+    if (!track) {
+      track = tracks.find(t => t.languageCode.startsWith("en")) || tracks[0];
+    }
+    if (!track?.baseUrl) {
+      return json({ error: "No usable caption track" }, 404);
+    }
+
+    // Stage 2: Fetch the actual caption content
+    // The player API returns baseUrl params which are properly signed and IP-agnostic.
+    let fetchUrl = track.baseUrl;
+    fetchUrl = fetchUrl.replace("&fmt=srv3", ""); // Remove default formatting if present
+    fetchUrl += fetchUrl.includes("?") ? "&fmt=json3" : "?fmt=json3";
+
+    const text = await fetchJson3(fetchUrl);
+    if (!text) {
+      return json({ error: "Caption content unavailable / could not fetch" }, 404);
+    }
+
+    return json({
+      text,
+      language: track.languageCode,
+      track_name: track?.name?.runs?.[0]?.text || "",
+    });
   } catch (err) {
-    return jsonResponse({ error: `Worker error: ${err.message}` }, 500);
+    return json({ error: `Worker error: ${err.message}` }, 500);
   }
 }
 
-async function processCaptions(playerResponse, lang) {
-  // Step 3: Extract caption tracks
-  const captionTracks =
-    playerResponse?.captions?.playerCaptionsTracklistRenderer?.captionTracks;
+async function fetchViaInnertube(videoId, langCode) {
+  // YouTube innertube API — same API that youtube-transcript-api uses internally.
+  // Does not use IP-signed URLs, so works from any edge node.
+  try {
+    const payload = {
+      context: {
+        client: {
+          clientName: "WEB",
+          clientVersion: "2.20240313.05.00",
+          hl: langCode || "en",
+        },
+      },
+      params: btoa(`\n\x0b${videoId}`),
+    };
 
-  if (!captionTracks || captionTracks.length === 0) {
-    return jsonResponse({ error: "No captions available" }, 404);
-  }
-
-  // Step 4: Find best matching track
-  const langCodes = expandLangCodes(lang);
-  let track = null;
-
-  for (const code of langCodes) {
-    track = captionTracks.find(
-      (t) => t.languageCode === code || t.languageCode.startsWith(code + "-")
+    const resp = await fetch(
+      "https://www.youtube.com/youtubei/v1/get_transcript?prettyPrint=false",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "User-Agent": UA,
+          "Referer": "https://www.youtube.com/",
+          "Cookie": CONSENT_COOKIE,
+        },
+        body: JSON.stringify(payload),
+      }
     );
-    if (track) break;
+
+    if (!resp.ok) return null;
+    const data = await resp.json();
+
+    // Navigate innertube response structure
+    const actions = data?.actions;
+    if (!actions?.length) return null;
+
+    const renderer = actions[0]?.updateEngagementPanelAction
+      ?.content?.transcriptRenderer
+      ?.content?.transcriptSearchPanelRenderer
+      ?.body?.transcriptSegmentListRenderer;
+
+    if (!renderer) {
+      // Try alternate path
+      const altRenderer = actions[0]?.updateEngagementPanelAction
+        ?.content?.transcriptRenderer
+        ?.body?.transcriptBodyRenderer;
+      if (altRenderer) {
+        return parseInnertubeSegments(altRenderer.transcriptSegmentListRenderer);
+      }
+      return null;
+    }
+
+    return parseInnertubeSegments(renderer);
+  } catch {
+    return null;
   }
+}
 
-  // Fall back to English, then first available
-  if (!track) {
-    track =
-      captionTracks.find((t) => t.languageCode.startsWith("en")) ||
-      captionTracks[0];
+function parseInnertubeSegments(renderer) {
+  if (!renderer?.initialSegments?.length) return null;
+  const lines = [];
+  for (const seg of renderer.initialSegments) {
+    const segment = seg.transcriptSegmentRenderer;
+    if (!segment) continue;
+    const startMs = parseInt(segment.startMs || "0", 10);
+    const sec = startMs / 1000;
+    const min = Math.floor(sec / 60);
+    const s = sec % 60;
+    const text = segment.snippet?.runs?.map(r => r.text || "").join("").trim();
+    if (text && text !== "\n") {
+      lines.push(`[${min}:${s.toFixed(2).padStart(5, "0")}] ${text}`);
+    }
   }
+  const result = lines.join("\n");
+  return result.trim().length >= 50 ? result : null;
+}
 
-  if (!track?.baseUrl) {
-    return jsonResponse({ error: "No usable caption track found" }, 404);
+async function fetchJson3(url) {
+  try {
+    const resp = await fetch(url, {
+      headers: { "User-Agent": UA, "Referer": "https://www.youtube.com/", "Cookie": CONSENT_COOKIE },
+    });
+    if (!resp.ok) return null;
+    const body = await resp.text();
+    if (!body || body.length < 10) return null;
+    const data = JSON.parse(body);
+    return parseJson3(data);
+  } catch {
+    return null;
   }
-
-  // Step 5: Fetch caption content in json3 format
-  const captionUrl = track.baseUrl + "&fmt=json3";
-  const captionResp = await fetch(captionUrl, {
-    headers: { "User-Agent": BROWSER_UA },
-  });
-
-  if (!captionResp.ok) {
-    return jsonResponse(
-      { error: `Caption fetch returned ${captionResp.status}` },
-      502
-    );
-  }
-
-  const captionData = await captionResp.json();
-
-  // Step 6: Parse json3 → timestamped text
-  const text = parseJson3(captionData);
-
-  if (!text || text.trim().length < 50) {
-    return jsonResponse({ error: "Caption text too short" }, 404);
-  }
-
-  return jsonResponse({
-    text,
-    language: track.languageCode,
-    track_name: track.name?.simpleText || "",
-  });
 }
 
 function parseJson3(data) {
   const lines = [];
   for (const event of data.events || []) {
     const startMs = event.tStartMs || 0;
-    const startSec = startMs / 1000;
-    const minutes = Math.floor(startSec / 60);
-    const seconds = startSec % 60;
-
+    const sec = startMs / 1000;
+    const min = Math.floor(sec / 60);
+    const s = sec % 60;
     const segs = event.segs || [];
-    const text = segs
-      .map((s) => s.utf8 || "")
-      .join("")
-      .trim();
-
+    const text = segs.map(s => s.utf8 || "").join("").trim();
     if (text && text !== "\n") {
-      const ts = `[${minutes}:${seconds.toFixed(2).padStart(5, "0")}]`;
-      lines.push(`${ts} ${text}`);
+      lines.push(`[${min}:${s.toFixed(2).padStart(5, "0")}] ${text}`);
     }
   }
-  return lines.join("\n");
+  const result = lines.join("\n");
+  return result.trim().length >= 50 ? result : null;
 }
 
 function expandLangCodes(lang) {
   const mapping = {
     en: ["en", "en-US", "en-GB", "en-IN"],
-    hi: ["hi", "hi-IN"],
-    ta: ["ta", "ta-IN"],
-    te: ["te", "te-IN"],
-    kn: ["kn", "kn-IN"],
-    ml: ["ml", "ml-IN"],
-    mr: ["mr", "mr-IN"],
-    gu: ["gu", "gu-IN"],
-    pa: ["pa", "pa-IN"],
-    bn: ["bn", "bn-IN"],
+    hi: ["hi", "hi-IN"], ta: ["ta", "ta-IN"], te: ["te", "te-IN"],
+    kn: ["kn", "kn-IN"], ml: ["ml", "ml-IN"], mr: ["mr", "mr-IN"],
+    gu: ["gu", "gu-IN"], pa: ["pa", "pa-IN"], bn: ["bn", "bn-IN"],
     or: ["or", "or-IN"],
   };
   return mapping[lang] || [lang, "en"];
 }
 
-function jsonResponse(data, status = 200) {
+function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
-    status,
-    headers: {
-      "Content-Type": "application/json",
-      ...corsHeaders(),
-    },
+    status, headers: { "Content-Type": "application/json", ...corsHeaders() },
   });
 }
 

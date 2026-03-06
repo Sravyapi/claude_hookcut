@@ -59,6 +59,10 @@ class Settings(BaseSettings):
     CF_TRANSCRIPT_WORKER_URL: str = ""  # e.g., https://hookcut-transcript.user.workers.dev
     CF_WORKER_API_KEY: str = ""  # Optional Bearer token for worker auth
 
+    # Cobalt API (video download from cloud IPs — replaces yt-dlp on servers)
+    COBALT_API_URL: str = ""  # e.g., https://your-cobalt-instance.com
+    COBALT_API_KEY: str = ""  # Optional Api-Key for Cobalt auth
+
     # Operational
     TEMP_FILE_TTL_HOURS: int = 24
 
