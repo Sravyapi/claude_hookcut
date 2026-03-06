@@ -3,6 +3,8 @@ import { api } from "../lib/api";
 import type { TaskStatus } from "../lib/types";
 import { POLL_CONFIG } from "../lib/types";
 
+const MAX_POLLS = 120; // ~10 min with exponential backoff — prevents infinite polling on stuck tasks
+
 export function usePollTask(
   taskId: string | null,
   sessionId: string | null,
@@ -68,6 +70,11 @@ export function usePollTask(
           onErrorRef.current(status.error || "Task failed. Please try again.");
         } else {
           // PENDING, STARTED, or other transient states
+          if (pollCountRef.current >= MAX_POLLS) {
+            setIsPolling(false);
+            onErrorRef.current("Analysis timed out. Please refresh and try again.");
+            return;
+          }
           if (onProgressRef.current) {
             onProgressRef.current(0, "Waiting for worker...");
           }

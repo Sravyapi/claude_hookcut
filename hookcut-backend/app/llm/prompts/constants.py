@@ -246,6 +246,28 @@ REGEN_FEE_TIERS_INR = [
 ]
 REGEN_FEE_USD_CENTS = 30  # Flat $0.30
 
+# Single source of truth for the 17 base hook rules (A–Q).
+# Imported by hook_identification.py (prompt building) and admin_service.py (DB seeding).
+BASE_HOOK_RULES: dict[str, dict[str, str]] = {
+    "A": {"title": "One topic per hook", "content": "One topic per hook \u2014 3+ topics = FAIL"},
+    "B": {"title": "Contextual grounding", "content": "Contextual grounding \u2014 viewer must know WHO and WHY immediately"},
+    "C": {"title": "Specificity serves one point only", "content": "Specificity serves one point only"},
+    "D": {"title": "Character + proof arc", "content": "Character + proof arc (person + achievement in tight sequence)"},
+    "E": {"title": "Let hook breathe", "content": "Let hook breathe \u2014 include follow-up sentences that complete the thought"},
+    "F": {"title": "Urgency/FOMO framing", "content": "Urgency/FOMO framing (\"while you were sleeping...\")"},
+    "G": {"title": "No generic claims without specific proof", "content": "No generic claims without specific proof"},
+    "H": {"title": "Narrative escalation", "content": "Narrative escalation: intrigue\u2192proof\u2192escalation\u2192contrast\u2192open loop"},
+    "I": {"title": "Composite hooks", "content": "Composite hooks: stitch non-contiguous segments for stronger arcs (mark as \"X:XX+Y:YY [composite]\")"},
+    "J": {"title": "End at the landing", "content": "End at the landing \u2014 not before, not after"},
+    "K": {"title": "Unresolved mechanism", "content": "Unresolved mechanism: viewer knows WHAT not HOW"},
+    "L": {"title": "Pain escalation", "content": "Pain escalation: layer frustration (statement\u2192specifics\u2192vivid analogy)"},
+    "M": {"title": "Elimination hooks", "content": "Elimination hooks: remove expected answers systematically"},
+    "N": {"title": "Objection handling", "content": "Objection handling: catch viewers at bounce moment"},
+    "O": {"title": "Funnel role diversity", "content": "Funnel role diversity: 5 hooks serve different purposes"},
+    "P": {"title": "Strip section labels", "content": "Strip section labels/navigation text from hook starts"},
+    "Q": {"title": "Workflow demos", "content": "Workflow demos: include full step-by-step sequence, don't cut mid-demo"},
+}
+
 
 def get_regen_fee(video_duration_seconds: float, currency: str) -> int:
     """Return regeneration fee in smallest currency unit (paisa/cents)."""

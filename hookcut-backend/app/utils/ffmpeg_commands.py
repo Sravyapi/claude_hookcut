@@ -5,6 +5,7 @@ import re
 import subprocess
 import logging
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Optional
 
 import httpx
@@ -14,9 +15,7 @@ from app.config import get_settings
 logger = logging.getLogger(__name__)
 
 # Cookies file path (shared with transcript.py)
-_COOKIES_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "cookies.txt"
-)
+_COOKIES_PATH = str(Path(__file__).parent.parent.parent / "cookies.txt")
 
 
 def _ensure_cookies_file() -> str:

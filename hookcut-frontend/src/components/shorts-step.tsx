@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useCallback, useEffect, useRef, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import ShortCard from "./short-card";
 
@@ -10,7 +10,6 @@ interface ShortsStepProps {
 }
 
 export const ShortsStep = memo(function ShortsStep({ shortIds, onReset }: ShortsStepProps) {
-  const handleReset = useCallback(() => onReset(), [onReset]);
   const startRef = useRef(Date.now());
   const [elapsed, setElapsed] = useState(0);
 
@@ -82,7 +81,7 @@ export const ShortsStep = memo(function ShortsStep({ shortIds, onReset }: Shorts
         transition={{ delay: 0.3 }}
       >
         <button
-          onClick={handleReset}
+          onClick={onReset}
           className="btn-secondary text-sm inline-flex items-center gap-2"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

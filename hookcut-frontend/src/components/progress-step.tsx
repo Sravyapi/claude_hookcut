@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 interface ProgressStepProps {
-  stage: string;
   progress: number;
   videoTitle: string;
   startTime: number;
@@ -184,7 +183,7 @@ export const ProgressStep = memo(function ProgressStep({
   progress,
   videoTitle,
   startTime,
-}: ProgressStepProps) {
+}: ProgressStepProps) {  // stage prop removed — progress value drives stage derivation internally
   const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {

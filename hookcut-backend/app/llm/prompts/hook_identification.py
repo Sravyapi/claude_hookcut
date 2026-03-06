@@ -1,23 +1,13 @@
-from app.llm.prompts.constants import NICHES, LANGUAGES, HOOK_TYPES, FUNNEL_ROLES
+from app.llm.prompts.constants import NICHES, LANGUAGES, HOOK_TYPES, FUNNEL_ROLES, BASE_HOOK_RULES
 
-_HARDCODED_RULES_SECTION = """17 RULES (A-Q):
-A. One topic per hook — 3+ topics = FAIL
-B. Contextual grounding — viewer must know WHO and WHY immediately
-C. Specificity serves one point only
-D. Character + proof arc (person + achievement in tight sequence)
-E. Let hook breathe — include follow-up sentences that complete the thought
-F. Urgency/FOMO framing ("while you were sleeping...")
-G. No generic claims without specific proof
-H. Narrative escalation: intrigue→proof→escalation→contrast→open loop
-I. Composite hooks: stitch non-contiguous segments for stronger arcs (mark as "X:XX+Y:YY [composite]")
-J. End at the landing — not before, not after
-K. Unresolved mechanism: viewer knows WHAT not HOW
-L. Pain escalation: layer frustration (statement→specifics→vivid analogy)
-M. Elimination hooks: remove expected answers systematically
-N. Objection handling: catch viewers at bounce moment
-O. Funnel role diversity: 5 hooks serve different purposes
-P. Strip section labels/navigation text from hook starts
-Q. Workflow demos: include full step-by-step sequence, don't cut mid-demo"""
+# Build from the single source of truth in constants.py
+_rules_lines = [f"{k}. {v['content']}" for k, v in BASE_HOOK_RULES.items()]
+_first_key = next(iter(BASE_HOOK_RULES))
+_last_key = next(reversed(BASE_HOOK_RULES))
+_HARDCODED_RULES_SECTION = (
+    f"{len(BASE_HOOK_RULES)} RULES ({_first_key}-{_last_key}):\n"
+    + "\n".join(_rules_lines)
+)
 
 
 def _build_prompt_skeleton(niche: str, transcript: str, language: str, rules_section: str) -> str:

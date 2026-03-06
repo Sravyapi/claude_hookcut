@@ -14,6 +14,7 @@ from app.utils.ffmpeg_commands import (
 )
 from app.config import get_settings
 from app.exceptions import ShortGenerationError
+from app.utils.text import title_from_hook_text
 
 logger = logging.getLogger(__name__)
 
@@ -56,12 +57,14 @@ class ShortGenerator:
         work_dir = tempfile.mkdtemp(prefix=f"hookcut_short_{short_id[:8]}_")
 
         try:
-            # Step 1: Signal download start, then run yt-dlp + LLM calls in parallel
+            # Step 1: Download segment (sequential — LLM calls wait until done
+            # to avoid hitting Gemini concurrently with other in-flight shorts)
             _progress("downloading", 35, "Downloading segment...")
-            with ThreadPoolExecutor(max_workers=3) as executor:
-                segment_future = executor.submit(
-                    self._extract_segments, youtube_url, hook, work_dir
-                )
+            segment_path = self._extract_segments(youtube_url, hook, work_dir)
+
+            # Step 2: Caption cleanup + title generation in parallel (2 LLM calls)
+            _progress("processing", 55, "Generating captions & title...")
+            with ThreadPoolExecutor(max_workers=2) as executor:
                 caption_future = executor.submit(
                     self._clean_captions, hook["hook_text"], language
                 )
@@ -71,12 +74,10 @@ class ShortGenerator:
                     hook.get("hook_type", ""),
                     hook.get("attention_score", 0.0),
                 )
-
-                segment_path = segment_future.result()
                 cleaned_captions = caption_future.result()
                 title = title_future.result()
 
-            # Step 2: Signal render start
+            # Step 3: Signal render start
             _progress("processing", 65, "Rendering video...")
 
             # Step 3: Generate ASS subtitles
@@ -189,16 +190,9 @@ class ShortGenerator:
             )
             response = provider.generate(prompt, max_tokens=100)
             title = response.text.strip().strip('"').strip("'")
-            return title[:60] if title else _title_from_hook_text(hook_text)
+            return title[:60] if title else title_from_hook_text(hook_text)
         except Exception as e:
             logger.warning(f"Title generation failed: {e}")
-            return _title_from_hook_text(hook_text)
+            return title_from_hook_text(hook_text)
 
 
-def _title_from_hook_text(hook_text: str) -> str:
-    """Generate a simple title from the first words of the hook when LLM is unavailable."""
-    words = hook_text.split()
-    title = " ".join(words[:8])
-    if len(words) > 8:
-        title = title.rstrip(".,;:!?") + "..."
-    return title[:60] if title else "Short"
