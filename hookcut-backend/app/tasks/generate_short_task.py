@@ -33,20 +33,18 @@ def generate_short(self, short_id: str):
         session = db.get(AnalysisSession, short.session_id)
         hook = db.get(Hook, short.hook_id)
 
-        # --- Step 1: Download + Process ---
-        short.status = "processing"
-        db.commit()
-        self.update_state(
-            state="PROGRESS",
-            meta={"stage": "Generating Short...", "progress": 10},
-        )
-
         generator = ShortGenerator()
         storage = StorageService()
 
         # Use time overrides if set (from trim controls)
         start_sec = short.start_seconds_override if short.start_seconds_override is not None else hook.start_seconds
         end_sec = short.end_seconds_override if short.end_seconds_override is not None else hook.end_seconds
+
+        def on_progress(status: str, pct: int, label: str):
+            """Callback from generator to update DB status + Celery progress."""
+            short.status = status
+            db.commit()
+            self.update_state(state="PROGRESS", meta={"stage": label, "progress": pct})
 
         result = generator.generate(
             youtube_url=session.youtube_url,
@@ -57,6 +55,8 @@ def generate_short(self, short_id: str):
                 "end_seconds": end_sec,
                 "hook_text": hook.hook_text,
                 "is_composite": hook.is_composite,
+                "hook_type": hook.hook_type or "",
+                "attention_score": hook.attention_score or 0.0,
             },
             session_id=session.id,
             short_id=short.id,
@@ -64,13 +64,11 @@ def generate_short(self, short_id: str):
             language=session.language,
             niche=session.niche,
             caption_style=short.caption_style or "clean",
+            on_progress=on_progress,
         )
 
-        # --- Step 2: Upload + Finalize ---
-        self.update_state(
-            state="PROGRESS",
-            meta={"stage": "Saving Short...", "progress": 80},
-        )
+        # --- Step 3: Upload ---
+        on_progress("uploading", 85, "Uploading...")
 
         video_key = f"shorts/{short.id}/video.mp4"
         thumb_key = f"shorts/{short.id}/thumbnail.jpg"

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* Limit Tailwind v4 scan to src/ only — prevents scanning node_modules/.next/etc */
 @source "../**/*.{ts,tsx,mdx}";
@@ -88,6 +89,18 @@ body::before {
 :focus-visible {
   outline: 2px solid rgba(232, 74, 47, 0.6);
   outline-offset: 2px;
+}
+
+/* ─── Marquee ─── */
+@keyframes mkticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.mk-ticker {
+  animation: mkticker 30s linear infinite;
+  display: flex;
+  width: max-content;
 }
 
 /* ─── Surface Cards ─── */

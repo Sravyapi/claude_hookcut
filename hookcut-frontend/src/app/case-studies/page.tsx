@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/mdx";
+import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Creator Case Studies | HookCut",
@@ -27,6 +28,7 @@ export default function CaseStudiesPage() {
 
   return (
     <div className="bg-[#FAFAF8] min-h-screen">
+      <Header />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#E84A2F] focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"

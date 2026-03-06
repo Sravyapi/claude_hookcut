@@ -1,0 +1,58 @@
+<svg
+  width="460"
+  height="100"
+  viewBox="0 0 460 100"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="HookCut"
+>
+  <!--
+    HookCut Logo — Primary (dark surface)
+    To use on light background: swap fill colors to #0D0D0D, remove the bg rect.
+    Import into Figma: File → Import, or drag this SVG onto the canvas.
+    The bg rect on line below can be deleted in Figma for transparent usage.
+  -->
+
+  <!-- Background — delete in Figma to use as transparent logo -->
+  <rect width="460" height="100" fill="#0D0D0D"/>
+
+  <!-- ═══ EYE ICON ═══ -->
+  <!-- Almond-shaped eye: 66px wide, ~30px tall, centered at (47, 50) -->
+  <path
+    d="M 14,50 C 25,35 69,35 80,50 C 69,65 25,65 14,50 Z"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+  />
+
+  <!--
+    Play triangle iris: equilateral, right-pointing, centroid at (47, 50)
+    Height 18px → right tip at x=59, left base at x=41, half-side ≈ 10.4
+  -->
+  <polygon points="41,40 41,60 59,50" fill="#E8541A"/>
+
+  <!-- ═══ WORDMARK ═══ -->
+  <text
+    x="96"
+    y="67"
+    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-size="52"
+    font-weight="700"
+    fill="#FFFFFF"
+    letter-spacing="-0.5"
+  >HookCut</text>
+
+  <!--
+    Arc accent above the "C" in HookCut.
+    At Inter Bold 52px, "Hook" ≈ 130px wide → "C" center ≈ x 243.
+    Nudge the x values ±4px in Figma if your font render differs slightly.
+  -->
+  <path
+    d="M 228,22 Q 244,12 260,22"
+    fill="none"
+    stroke="#E8541A"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+</svg>

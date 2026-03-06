@@ -7,6 +7,8 @@ interface Props {
   params: Promise<{ niche: string }>;
 }
 
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   return nichePages.map((p) => ({ niche: p.slug }));
 }

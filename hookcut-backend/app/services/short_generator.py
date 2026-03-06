@@ -3,7 +3,7 @@ import tempfile
 import logging
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
-from typing import Optional
+from typing import Callable, Optional
 
 from app.llm.provider import get_provider
 from app.llm.prompts.caption_cleanup import build_caption_cleanup_prompt, build_title_generation_prompt
@@ -47,11 +47,17 @@ class ShortGenerator:
         language: str = "English",
         niche: str = "Generic",
         caption_style: str = "clean",
+        on_progress: Optional[Callable[[str, int, str], None]] = None,
     ) -> ShortResult:
+        def _progress(status: str, pct: int, label: str):
+            if on_progress:
+                on_progress(status, pct, label)
+
         work_dir = tempfile.mkdtemp(prefix=f"hookcut_short_{short_id[:8]}_")
 
         try:
-            # Steps 1-3: Run yt-dlp extraction + both LLM calls in parallel
+            # Step 1: Signal download start, then run yt-dlp + LLM calls in parallel
+            _progress("downloading", 35, "Downloading segment...")
             with ThreadPoolExecutor(max_workers=3) as executor:
                 segment_future = executor.submit(
                     self._extract_segments, youtube_url, hook, work_dir
@@ -60,14 +66,20 @@ class ShortGenerator:
                     self._clean_captions, hook["hook_text"], language
                 )
                 title_future = executor.submit(
-                    self._generate_title, hook["hook_text"], niche, language
+                    self._generate_title,
+                    hook["hook_text"], niche, language,
+                    hook.get("hook_type", ""),
+                    hook.get("attention_score", 0.0),
                 )
 
                 segment_path = segment_future.result()
                 cleaned_captions = caption_future.result()
                 title = title_future.result()
 
-            # Step 4: Generate ASS subtitles
+            # Step 2: Signal render start
+            _progress("processing", 65, "Rendering video...")
+
+            # Step 3: Generate ASS subtitles
             segment_duration = probe_duration(segment_path) or 30.0
             segment_size = os.path.getsize(segment_path) if os.path.exists(segment_path) else 0
             logger.info(
@@ -158,15 +170,35 @@ class ShortGenerator:
             logger.warning(f"Caption cleanup failed, using raw text: {e}")
             return hook_text
 
-    def _generate_title(self, hook_text: str, niche: str, language: str) -> str:
-        """Use LLM to generate a Short-optimized title."""
+    def _generate_title(
+        self,
+        hook_text: str,
+        niche: str,
+        language: str,
+        hook_type: str = "",
+        attention_score: float = 0.0,
+    ) -> str:
+        """Use LLM to generate a catchy Short-optimized title."""
         try:
             settings = get_settings()
             provider = get_provider(settings.LLM_PRIMARY_PROVIDER)
-            prompt = build_title_generation_prompt(hook_text, niche, language)
+            prompt = build_title_generation_prompt(
+                hook_text, niche, language,
+                hook_type=hook_type,
+                attention_score=attention_score,
+            )
             response = provider.generate(prompt, max_tokens=100)
             title = response.text.strip().strip('"').strip("'")
-            return title[:60] if title else "Hook Segment"
+            return title[:60] if title else _title_from_hook_text(hook_text)
         except Exception as e:
             logger.warning(f"Title generation failed: {e}")
-            return "Hook Segment"
+            return _title_from_hook_text(hook_text)
+
+
+def _title_from_hook_text(hook_text: str) -> str:
+    """Generate a simple title from the first words of the hook when LLM is unavailable."""
+    words = hook_text.split()
+    title = " ".join(words[:8])
+    if len(words) > 8:
+        title = title.rstrip(".,;:!?") + "..."
+    return title[:60] if title else "Short"

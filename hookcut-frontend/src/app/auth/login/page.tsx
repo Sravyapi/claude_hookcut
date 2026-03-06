@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { signIn } from "next-auth/react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -51,8 +52,19 @@ function GoogleIcon({ className }: { className?: string }) {
   );
 }
 
+const AUTH_ERRORS: Record<string, string> = {
+  Callback: "Sign-in failed during callback. Try again.",
+  OAuthCallback: "OAuth callback error. Check your Google account settings.",
+  OAuthCreateAccount: "Could not create account. Contact support.",
+  OAuthAccountNotLinked: "This email is already linked to another account.",
+  SessionRequired: "You must be signed in to access that page.",
+  Default: "An unexpected error occurred. Please try again.",
+};
+
 export default function LoginPage() {
   const [testimonialIdx, setTestimonialIdx] = useState(0);
+  const searchParams = useSearchParams();
+  const error = searchParams.get("error");
 
   useEffect(() => {
     const t = setInterval(
@@ -96,6 +108,14 @@ export default function LoginPage() {
               detection
             </p>
           </div>
+
+          {/* Error banner */}
+          {error && (
+            <div className="mb-5 px-4 py-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm text-center">
+              {AUTH_ERRORS[error] ?? AUTH_ERRORS.Default}
+              <span className="block text-xs text-red-400/60 mt-0.5">Error: {error}</span>
+            </div>
+          )}
 
           {/* Google button */}
           <button

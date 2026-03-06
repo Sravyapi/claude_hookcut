@@ -18,7 +18,7 @@ class LLMResponse:
 
 class LLMProvider(ABC):
     @abstractmethod
-    def generate(self, prompt: str, max_tokens: int = 4000) -> LLMResponse:
+    def generate(self, prompt: str, max_tokens: int = 4000, json_mode: bool = False) -> LLMResponse:
         pass
 
     @property

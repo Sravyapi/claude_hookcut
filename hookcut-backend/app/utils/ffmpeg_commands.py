@@ -689,25 +689,49 @@ def _run_ffmpeg_render(cmd: list[str], output_path: str) -> FFmpegResult:
 
 
 def extract_thumbnail(input_path: str, output_path: str) -> FFmpegResult:
-    """Extract the middle frame as a JPG thumbnail."""
+    """
+    Extract the most visually interesting frame as a thumbnail.
+
+    Uses FFmpeg's thumbnail filter which analyzes the full video in batches
+    and selects the frame with the most visual interest (avoids blurry,
+    dark, or monotone frames). Then applies a subtle contrast/saturation
+    lift to make the thumbnail pop.
+    """
     duration = probe_duration(input_path) or 5.0
-    seek_time = duration / 2
+    # Cap at 30 candidates — enough for quality selection, keeps extraction fast
+    n_candidates = max(10, min(30, int(duration * 2)))
+
+    vf = (
+        f"thumbnail=n={n_candidates},"
+        "eq=contrast=1.05:saturation=1.15:brightness=0.02"
+    )
 
     cmd = [
         "ffmpeg", "-y",
-        "-ss", str(seek_time),
         "-i", input_path,
-        "-vframes", "1",
+        "-vf", vf,
+        "-frames:v", "1",
         "-q:v", "2",
         output_path,
     ]
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
         if result.returncode != 0:
-            return FFmpegResult(
-                success=False, output_path=output_path,
-                error=f"Thumbnail extraction failed: {result.stderr[:300]}"
-            )
+            # Fallback: middle frame without enhancement
+            fallback_cmd = [
+                "ffmpeg", "-y",
+                "-ss", str(duration / 2),
+                "-i", input_path,
+                "-vframes", "1",
+                "-q:v", "2",
+                output_path,
+            ]
+            fallback = subprocess.run(fallback_cmd, capture_output=True, text=True, timeout=30)
+            if fallback.returncode != 0:
+                return FFmpegResult(
+                    success=False, output_path=output_path,
+                    error=f"Thumbnail extraction failed: {result.stderr[:300]}"
+                )
         return FFmpegResult(success=True, output_path=output_path)
     except Exception as e:
         return FFmpegResult(success=False, output_path=output_path, error=str(e))

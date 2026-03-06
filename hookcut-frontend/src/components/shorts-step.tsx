@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useCallback } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import ShortCard from "./short-card";
 
@@ -11,6 +11,17 @@ interface ShortsStepProps {
 
 export const ShortsStep = memo(function ShortsStep({ shortIds, onReset }: ShortsStepProps) {
   const handleReset = useCallback(() => onReset(), [onReset]);
+  const startRef = useRef(Date.now());
+  const [elapsed, setElapsed] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setElapsed(Math.floor((Date.now() - startRef.current) / 1000));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const elapsedFormatted = `${Math.floor(elapsed / 60)}:${String(elapsed % 60).padStart(2, "0")}`;
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -33,6 +44,14 @@ export const ShortsStep = memo(function ShortsStep({ shortIds, onReset }: Shorts
         <p className="text-[--color-muted] text-sm">
           Each Short is being rendered in 9:16 format with captions
         </p>
+
+        {/* Elapsed clock */}
+        <div className="inline-flex items-center gap-1.5 mt-3 text-[11px] text-white/25 font-mono">
+          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span className="tabular-nums">{elapsedFormatted} elapsed</span>
+        </div>
       </motion.div>
 
       {/* Cards — horizontal scroll on desktop, vertical on mobile */}

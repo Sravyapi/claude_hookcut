@@ -14,6 +14,24 @@ export const NICHES = [
   "Generic",
 ] as const;
 
+export const LANGUAGES = [
+  { value: "English",   label: "English" },
+  { value: "Hinglish",  label: "Hinglish (Hindi + English)" },
+  { value: "Hindi",     label: "Hindi" },
+  { value: "Tamil",     label: "Tamil" },
+  { value: "Telugu",    label: "Telugu" },
+  { value: "Kannada",   label: "Kannada" },
+  { value: "Malayalam", label: "Malayalam" },
+  { value: "Marathi",   label: "Marathi" },
+  { value: "Gujarati",  label: "Gujarati" },
+  { value: "Punjabi",   label: "Punjabi" },
+  { value: "Bengali",   label: "Bengali" },
+  { value: "Odia",      label: "Odia" },
+  { value: "Other",     label: "Other Language" },
+] as const;
+
+export type Language = typeof LANGUAGES[number]["value"];
+
 export const HOOK_TYPE_COLORS: Record<string, string> = {
   "Curiosity Gap": "bg-purple-500/20 text-purple-300 border-purple-500/30",
   "Direct Benefit": "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
@@ -66,6 +84,31 @@ export const HOOK_TYPE_DESCRIPTIONS: Record<string, string> = {
 };
 
 export const PAYG_OPTIONS = [100, 200, 500, 1000] as const;
+
+// Shared demo hook data — used by hero-section (animated) and marketing-home (static showcase)
+export const DEMO_HOOKS = [
+  {
+    score: 9.2,
+    type: "CURIOSITY GAP",
+    timestamp: "0:14",
+    text: "Nobody talks about this YouTube trick that tripled my views overnight...",
+    color: "#E84A2F",
+  },
+  {
+    score: 8.5,
+    type: "FEAR-BASED",
+    timestamp: "2:31",
+    text: "I tested 47 AI tools and what I found will change how you post forever...",
+    color: "#F59E0B",
+  },
+  {
+    score: 7.8,
+    type: "CONTRARIAN",
+    timestamp: "4:07",
+    text: "Everyone is wrong about what makes a Short go viral in 2025...",
+    color: "#10B981",
+  },
+] as const;
 
 export function getStatusConfig(status: string): { label: string; color: string } {
   switch (status) {

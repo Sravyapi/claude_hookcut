@@ -1,0 +1,32 @@
+<svg
+  width="100"
+  height="100"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="HookCut"
+>
+  <!--
+    HookCut Icon — Square lockup for favicon, app icon, avatar.
+    Scales cleanly from 16px to 512px.
+    Delete the bg rect for transparent placement.
+  -->
+
+  <!-- Background with rounded corners (20% radius = 20px) -->
+  <rect width="100" height="100" fill="#0D0D0D" rx="20"/>
+
+  <!-- Almond eye: 72px wide, ~34px tall, centered at (50, 50) -->
+  <path
+    d="M 14,50 C 26,33 74,33 86,50 C 74,67 26,67 14,50 Z"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+
+  <!--
+    Play triangle iris: equilateral, right-pointing, centroid at (50, 50)
+    Height 22px → right tip x=65, left base x=43, half-side ≈ 12.7
+  -->
+  <polygon points="43,37 43,63 65,50" fill="#E8541A"/>
+</svg>

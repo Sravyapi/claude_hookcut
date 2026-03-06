@@ -17,16 +17,18 @@ class GeminiProvider(LLMProvider):
     def name(self) -> str:
         return "gemini"
 
-    def generate(self, prompt: str, max_tokens: int = 4000) -> LLMResponse:
+    def generate(self, prompt: str, max_tokens: int = 4000, json_mode: bool = False) -> LLMResponse:
         url = f"{self.base_url}/models/{self.model}:generateContent"
         headers = {"x-goog-api-key": self.api_key, "Content-Type": "application/json"}
+        generation_config: dict = {
+            "maxOutputTokens": max_tokens * 2,  # Extra budget for thinking tokens
+            "temperature": 0.7,
+        }
+        if json_mode:
+            generation_config["responseMimeType"] = "application/json"
         payload = {
             "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {
-                "maxOutputTokens": max_tokens * 2,  # Extra budget for thinking tokens
-                "temperature": 0.7,
-                "responseMimeType": "application/json",
-            },
+            "generationConfig": generation_config,
         }
 
         try:

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getUseCase, getAllUseCaseSlugs } from "@/lib/use-cases";
+import Header from "@/components/header";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -46,6 +47,7 @@ export default async function UseCasePage({ params }: Props) {
 
   return (
     <div className="bg-[#FAFAF8] min-h-screen">
+      <Header />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}

@@ -77,7 +77,7 @@ class HookEngine:
                     f"Hook analysis attempt {attempt + 1}/{MAX_RETRIES} "
                     f"via {provider.name}"
                 )
-                response = provider.generate(prompt, max_tokens=8000)
+                response = provider.generate(prompt, max_tokens=8000, json_mode=True)
                 hooks = self._parse_and_validate(response.text)
 
                 return HookEngineResult(

@@ -11,6 +11,7 @@ import { PAYG_OPTIONS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
+import Header from "@/components/header";
 
 /* ─── Constants ─── */
 const TIER_ICONS: Record<string, React.ReactNode> = {
@@ -20,9 +21,9 @@ const TIER_ICONS: Record<string, React.ReactNode> = {
 };
 
 const TIER_FEATURES: Record<string, string[]> = {
-  free: ["5 analysis minutes", "Watermarked output", "All 18 hook types", "Community support"],
-  lite: ["60 watermark-free minutes", "No watermarks", "Hook regeneration", "Priority processing"],
-  pro: ["300 watermark-free minutes", "No watermarks", "Advanced analytics", "Priority support", "Hook regeneration"],
+  free: ["120 analysis minutes/month", "Watermarked output", "All 18 hook types", "Community support"],
+  lite: ["100 watermark-free minutes", "No watermarks", "Hook regeneration", "Priority processing"],
+  pro: ["500 watermark-free minutes", "No watermarks", "Advanced analytics", "Priority support", "Hook regeneration"],
 };
 
 const TIER_STYLES: Record<
@@ -47,7 +48,7 @@ const TIER_STYLES: Record<
 
 /* ─── Feature comparison data ─── */
 const COMPARISON_FEATURES = [
-  { label: "Minutes / month", free: "5 min", lite: "60 min", pro: "300 min" },
+  { label: "Minutes / month", free: "120 min", lite: "100 min", pro: "500 min" },
   { label: "Watermark-free output", free: false, lite: true, pro: true },
   { label: "All 18 hook types", free: true, lite: true, pro: true },
   { label: "AI scoring (7 dimensions)", free: true, lite: true, pro: true },
@@ -194,26 +195,28 @@ export default function PricingPage() {
       tier: "free",
       name: "Free",
       price: "Free",
-      desc: "5 min included",
-      features: ["5 analysis minutes", "Watermarked output", "All 18 hook types", "Community support"],
+      desc: "120 min/month included",
+      features: ["120 analysis minutes/month", "Watermarked output", "All 18 hook types", "Community support"],
     },
     {
       tier: "lite",
       name: "Lite",
-      price: "$9",
-      desc: "60 watermark-free min",
-      features: ["60 watermark-free minutes", "No watermarks", "Hook regeneration", "Priority processing"],
+      price: "$7",
+      desc: "100 watermark-free min",
+      features: ["100 watermark-free minutes", "No watermarks", "Hook regeneration", "Priority processing"],
     },
     {
       tier: "pro",
       name: "Pro",
-      price: "$29",
-      desc: "300 watermark-free min",
-      features: ["300 watermark-free minutes", "No watermarks", "Advanced analytics", "Priority support", "Hook regeneration"],
+      price: "$13",
+      desc: "500 watermark-free min",
+      features: ["500 watermark-free minutes", "No watermarks", "Advanced analytics", "Priority support", "Hook regeneration"],
     },
   ];
 
   return (
+    <>
+    <Header />
     <main className="pt-24 pb-16">
       <div className="max-w-5xl mx-auto px-6">
         {/* Page header */}
@@ -502,5 +505,6 @@ export default function PricingPage() {
         </motion.div>
       </div>
     </main>
+    </>
   );
 }

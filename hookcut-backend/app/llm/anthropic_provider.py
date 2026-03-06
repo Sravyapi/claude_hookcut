@@ -13,7 +13,7 @@ class AnthropicProvider(LLMProvider):
     def name(self) -> str:
         return "anthropic"
 
-    def generate(self, prompt: str, max_tokens: int = 4000) -> LLMResponse:
+    def generate(self, prompt: str, max_tokens: int = 4000, json_mode: bool = False) -> LLMResponse:
         response = self.client.messages.create(
             model=self.model,
             max_tokens=max_tokens,

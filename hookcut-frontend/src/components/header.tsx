@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { LogOut, LayoutDashboard, Settings, CreditCard, Menu, X, ChevronDown } from "lucide-react";
+import { LogOut, LayoutDashboard, Settings, CreditCard, Menu, X } from "lucide-react";
 import { api } from "@/lib/api";
 import { useUser } from "@/components/providers";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -19,51 +19,44 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const NAV_LINKS = [
-  { href: "/dashboard", label: "Dashboard" },
-  { href: "/pricing", label: "Pricing" },
-] as const;
-
-const RESOURCES_LINKS = [
-  { href: "/blog", label: "Blog" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/features", label: "Features" },
-  { href: "/use-cases/youtube-creators", label: "Use Cases" },
-  { href: "/case-studies", label: "Case Studies" },
-  { href: "/opus-clip-alternative", label: "vs OpusClip" },
-  { href: "/klap-alternative", label: "vs Klap" },
-  { href: "/vizard-alternative", label: "vs Vizard" },
-  { href: "/ai-hook-finder", label: "AI Hook Finder" },
-  { href: "/youtube-shorts-generator", label: "Shorts Generator" },
+  { href: "/#features", label: "Features", match: "features" },
+  { href: "/#pricing", label: "Pricing", match: "pricing" },
+  { href: "/use-cases", label: "Use Cases", match: "use-cases" },
+  { href: "/blog", label: "Blog", match: "blog" },
 ] as const;
 
 interface HeaderProps {
   onReset?: () => void;
 }
 
-function HookCutLogo() {
+function HookCutWordmark() {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0">
-      {/* Eye outline */}
-      <path
-        d="M2 10C2 10 5.5 4.5 10 4.5C14.5 4.5 18 10 18 10C18 10 14.5 15.5 10 15.5C5.5 15.5 2 10 2 10Z"
-        stroke="white"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      {/* Iris / flower center */}
-      <circle cx="10" cy="10" r="2.5" fill="#E84A2F" />
-      {/* Flower petals - 6 small circles radiating */}
-      <circle cx="10" cy="6.8" r="0.7" fill="white" opacity="0.7" />
-      <circle cx="10" cy="13.2" r="0.7" fill="white" opacity="0.7" />
-      <circle cx="12.9" cy="8.3" r="0.7" fill="white" opacity="0.7" />
-      <circle cx="7.1" cy="11.7" r="0.7" fill="white" opacity="0.7" />
-      <circle cx="12.9" cy="11.7" r="0.7" fill="white" opacity="0.7" />
-      <circle cx="7.1" cy="8.3" r="0.7" fill="white" opacity="0.7" />
-      {/* Pupil highlight */}
-      <circle cx="11" cy="9" r="0.8" fill="white" opacity="0.9" />
-    </svg>
+    <span
+      className="font-display font-extrabold text-[18px] tracking-tight leading-none select-none"
+      aria-label="HookCut"
+    >
+      <span className="text-white/90">Hook</span>
+      <span className="relative inline-block text-[#E84A2F]">
+        {/* Curved hook accent above the C */}
+        <svg
+          aria-hidden="true"
+          className="absolute pointer-events-none"
+          style={{ top: -8, left: 1 }}
+          width="12"
+          height="7"
+          viewBox="0 0 12 7"
+          fill="none"
+        >
+          <path
+            d="M 1 6 C 3 0.5 9 0.5 11 6"
+            stroke="#E84A2F"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+        </svg>
+        Cut
+      </span>
+    </span>
   );
 }
 
@@ -75,28 +68,28 @@ export default function Header({ onReset }: HeaderProps) {
   const { role } = useUser();
   const [balance, setBalance] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [resourcesOpen, setResourcesOpen] = useState(false);
-  const resourcesRef = useRef<HTMLDivElement>(null);
   const isAdmin = role === "admin";
 
   const { scrollY } = useScroll();
   const headerBgOpacity = useTransform(scrollY, [0, 80], [0, 1]);
   const headerBorderOpacity = useTransform(scrollY, [0, 80], [0, 1]);
+  const bgColor = useTransform(
+    headerBgOpacity,
+    (v) => `rgba(17, 17, 17, ${0.5 + v * 0.45})`
+  );
+  const bgFilter = useTransform(
+    headerBgOpacity,
+    (v) => `blur(${16 + v * 16}px) saturate(${1 + v * 0.3})`
+  );
+  const borderColor = useTransform(
+    headerBorderOpacity,
+    (v) => `rgba(255, 255, 255, ${v * 0.06})`
+  );
 
   useEffect(() => {
     if (status !== "authenticated") return;
     api.getBalance().then((b) => setBalance(b.total_available)).catch(() => undefined);
   }, [status]);
-
-  useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
-      if (resourcesRef.current && !resourcesRef.current.contains(e.target as Node)) {
-        setResourcesOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
-  }, []);
 
   const userInitials = session?.user?.name
     ? session.user.name
@@ -128,20 +121,11 @@ export default function Header({ onReset }: HeaderProps) {
       <motion.header
         className="fixed top-0 left-0 right-0 z-50 animated-border-bottom"
         style={{
-          backgroundColor: useTransform(
-            headerBgOpacity,
-            (v) => `rgba(17, 17, 17, ${0.5 + v * 0.45})`
-          ),
-          backdropFilter: useTransform(
-            headerBgOpacity,
-            (v) => `blur(${16 + v * 16}px) saturate(${1 + v * 0.3})`
-          ),
+          backgroundColor: bgColor,
+          backdropFilter: bgFilter,
           borderBottomWidth: "1px",
           borderBottomStyle: "solid",
-          borderBottomColor: useTransform(
-            headerBorderOpacity,
-            (v) => `rgba(255, 255, 255, ${v * 0.06})`
-          ),
+          borderBottomColor: borderColor,
         }}
         role="banner"
       >
@@ -149,23 +133,37 @@ export default function Header({ onReset }: HeaderProps) {
           {/* Logo */}
           <motion.button
             onClick={handleLogoClick}
-            className="flex items-center gap-2.5 group"
+            className="flex items-center"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             aria-label="HookCut home"
           >
-            <div className="w-8 h-8 rounded-lg bg-[--color-primary] flex items-center justify-center shadow-md shadow-[--color-primary-glow] transition-shadow duration-200 group-hover:shadow-lg group-hover:shadow-[--color-primary-glow]">
-              <HookCutLogo />
-            </div>
-            <span className="font-display font-extrabold text-[17px] tracking-tight leading-none">
-              <span className="text-white/90">Hook</span><span className="text-[#E84A2F]">Cut</span>
-            </span>
+            <HookCutWordmark />
           </motion.button>
 
           {/* Desktop nav */}
           <nav className="hidden sm:flex items-center gap-1 relative" aria-label="Main navigation">
+            {isAdmin && (
+              <Link
+                href="/dashboard"
+                className={`relative px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  pathname === "/dashboard"
+                    ? "text-white"
+                    : "text-white/65 hover:text-white/90 hover:bg-white/[0.05]"
+                }`}
+              >
+                Dashboard
+                {pathname === "/dashboard" && (
+                  <motion.div
+                    layoutId="nav-indicator"
+                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 rounded-full bg-[--color-primary]"
+                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                  />
+                )}
+              </Link>
+            )}
             {NAV_LINKS.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive = pathname.startsWith(`/${link.match}`);
               return (
                 <Link
                   key={link.href}
@@ -173,7 +171,7 @@ export default function Header({ onReset }: HeaderProps) {
                   className={`relative px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     isActive
                       ? "text-white"
-                      : "text-white/50 hover:text-white/80 hover:bg-white/[0.04]"
+                      : "text-white/65 hover:text-white/90 hover:bg-white/[0.05]"
                   }`}
                 >
                   {link.label}
@@ -187,43 +185,6 @@ export default function Header({ onReset }: HeaderProps) {
                 </Link>
               );
             })}
-
-            {/* Resources dropdown */}
-            <div className="relative" ref={resourcesRef}>
-              <button
-                onClick={() => setResourcesOpen((v) => !v)}
-                className="flex items-center gap-1 px-3.5 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/[0.06] transition-all duration-200"
-                aria-expanded={resourcesOpen}
-                aria-haspopup="true"
-              >
-                Resources
-                <ChevronDown
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${resourcesOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-              {resourcesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 6, scale: 0.96 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: 6, scale: 0.96 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-2 w-64 rounded-xl border border-[--color-border-def] bg-[--color-surface-1] shadow-xl shadow-black/30 overflow-hidden py-1"
-                  role="menu"
-                >
-                  {RESOURCES_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      onClick={() => setResourcesOpen(false)}
-                      role="menuitem"
-                      className="block px-4 py-2.5 text-sm text-white/80 hover:text-white hover:bg-white/[0.08] transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </div>
           </nav>
 
           {/* Right section */}
@@ -328,18 +289,18 @@ export default function Header({ onReset }: HeaderProps) {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : status === "unauthenticated" ? (
-              <div className="hidden sm:flex items-center gap-2">
+              <div className="hidden sm:flex items-center gap-1">
                 <Link
                   href="/auth/login"
-                  className="px-3.5 py-1.5 text-sm font-medium text-white/60 hover:text-white/90 transition-colors"
+                  className="px-4 py-2 text-sm font-medium text-white/65 hover:text-white transition-colors rounded-lg hover:bg-white/[0.05]"
                 >
-                  Sign In
+                  Log In
                 </Link>
                 <Link
                   href="/auth/login"
-                  className="btn-primary px-4 py-2 text-sm rounded-lg font-semibold"
+                  className="btn-primary px-5 py-2 text-sm rounded-full font-semibold"
                 >
-                  Start Analyzing →
+                  Try for Free
                 </Link>
               </div>
             ) : null}
@@ -378,30 +339,29 @@ export default function Header({ onReset }: HeaderProps) {
           />
           <div className="absolute right-0 top-16 bottom-0 w-72 glass-strong border-l border-[--color-border-def] p-6 overflow-y-auto">
             <nav className="flex flex-col gap-1 mb-6" aria-label="Mobile navigation">
+              {isAdmin && (
+                <Link
+                  href="/dashboard"
+                  onClick={closeMobileMenu}
+                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                    pathname === "/dashboard"
+                      ? "text-white bg-[--color-primary]/10 border border-[--color-primary]/20"
+                      : "text-white/50 hover:text-white hover:bg-white/[0.04]"
+                  }`}
+                >
+                  Dashboard
+                </Link>
+              )}
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={closeMobileMenu}
                   className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                    pathname === link.href
+                    pathname.startsWith(`/${link.match}`)
                       ? "text-white bg-[--color-primary]/10 border border-[--color-primary]/20"
                       : "text-white/50 hover:text-white hover:bg-white/[0.04]"
                   }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <div className="h-px bg-[--color-border-def] my-2" />
-              <p className="px-4 text-[10px] text-white/25 uppercase tracking-wider font-medium mb-1">
-                Resources
-              </p>
-              {RESOURCES_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={closeMobileMenu}
-                  className="px-4 py-2.5 rounded-xl text-sm text-white/40 hover:text-white/70 hover:bg-white/[0.04] transition-colors"
                 >
                   {link.label}
                 </Link>

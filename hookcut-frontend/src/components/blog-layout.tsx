@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { PostFrontmatter } from "@/lib/mdx";
+import Header from "@/components/header";
 
 interface BlogLayoutProps {
   frontmatter: PostFrontmatter;
@@ -13,6 +14,7 @@ export function BlogLayout({ frontmatter, children, type = "blog" }: BlogLayoutP
 
   return (
     <div className="bg-[#FAFAF8] min-h-screen">
+      <Header />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#E84A2F] focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
@@ -20,7 +22,7 @@ export function BlogLayout({ frontmatter, children, type = "blog" }: BlogLayoutP
         Skip to content
       </a>
 
-      {/* Header */}
+      {/* Article header */}
       <header className="pt-32 pb-12 px-6 border-b border-[#E4E4E7] bg-white">
         <div className="max-w-3xl mx-auto">
           <nav className="flex items-center gap-2 text-xs text-[#A1A1AA] mb-6" aria-label="Breadcrumb">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "How It Works | HookCut — Hook Analysis in 3 Steps",
@@ -114,6 +115,7 @@ export default function HowItWorksPage() {
 
   return (
     <div className="bg-[#FAFAF8] min-h-screen">
+      <Header />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
