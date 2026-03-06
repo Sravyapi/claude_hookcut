@@ -1,9 +1,15 @@
 import type { NextConfig } from "next";
 import path from "path";
 
+// Standalone mode + file tracing needed for self-hosted Docker (Railway).
+// On Vercel, Vercel handles bundling natively — standalone breaks path resolution.
+const isVercel = !!process.env.VERCEL;
+
 const nextConfig: NextConfig = {
-  output: "standalone",
-  outputFileTracingRoot: path.join(__dirname, "../../"),
+  ...(isVercel ? {} : {
+    output: "standalone",
+    outputFileTracingRoot: path.join(__dirname, "../../"),
+  }),
   serverExternalPackages: [],
   async headers() {
     return [
