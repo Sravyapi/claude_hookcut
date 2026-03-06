@@ -26,13 +26,47 @@ const NAV_LINKS = [
 const RESOURCES_LINKS = [
   { href: "/blog", label: "Blog" },
   { href: "/how-it-works", label: "How It Works" },
+  { href: "/features", label: "Features" },
   { href: "/use-cases/youtube-creators", label: "Use Cases" },
   { href: "/case-studies", label: "Case Studies" },
+  { href: "/opus-clip-alternative", label: "vs OpusClip" },
+  { href: "/klap-alternative", label: "vs Klap" },
+  { href: "/vizard-alternative", label: "vs Vizard" },
+  { href: "/ai-hook-finder", label: "AI Hook Finder" },
+  { href: "/youtube-shorts-generator", label: "Shorts Generator" },
 ] as const;
 
 interface HeaderProps {
   onReset?: () => void;
 }
+
+function HookCutLogo() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0">
+      {/* Eye outline */}
+      <path
+        d="M2 10C2 10 5.5 4.5 10 4.5C14.5 4.5 18 10 18 10C18 10 14.5 15.5 10 15.5C5.5 15.5 2 10 2 10Z"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      {/* Iris / flower center */}
+      <circle cx="10" cy="10" r="2.5" fill="#E84A2F" />
+      {/* Flower petals - 6 small circles radiating */}
+      <circle cx="10" cy="6.8" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="10" cy="13.2" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="12.9" cy="8.3" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="7.1" cy="11.7" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="12.9" cy="11.7" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="7.1" cy="8.3" r="0.7" fill="white" opacity="0.7" />
+      {/* Pupil highlight */}
+      <circle cx="11" cy="9" r="0.8" fill="white" opacity="0.9" />
+    </svg>
+  );
+}
+
 
 export default function Header({ onReset }: HeaderProps) {
   const { data: session, status } = useSession();
@@ -120,8 +154,11 @@ export default function Header({ onReset }: HeaderProps) {
             whileTap={{ scale: 0.98 }}
             aria-label="HookCut home"
           >
-            <span className="font-[family-name:--font-display] font-extrabold text-[18px] tracking-[-0.02em] leading-none">
-              <span className="text-white">Hook</span><span className="text-[#E84A2F]">Cut</span>
+            <div className="w-8 h-8 rounded-lg bg-[--color-primary] flex items-center justify-center shadow-md shadow-[--color-primary-glow] transition-shadow duration-200 group-hover:shadow-lg group-hover:shadow-[--color-primary-glow]">
+              <HookCutLogo />
+            </div>
+            <span className="font-display font-extrabold text-[17px] tracking-tight leading-none">
+              <span className="text-white/90">Hook</span><span className="text-[#E84A2F]">Cut</span>
             </span>
           </motion.button>
 
@@ -170,7 +207,7 @@ export default function Header({ onReset }: HeaderProps) {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 6, scale: 0.96 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-2 w-52 rounded-xl border border-white/10 bg-[#1A1A1A] shadow-xl shadow-black/40 overflow-hidden py-1"
+                  className="absolute top-full left-0 mt-2 w-64 rounded-xl border border-[--color-border-def] bg-[--color-surface-1] shadow-xl shadow-black/30 overflow-hidden py-1"
                   role="menu"
                 >
                   {RESOURCES_LINKS.map((link) => (
