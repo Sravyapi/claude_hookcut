@@ -312,7 +312,6 @@ export default function HomeStateMachine({ marketingContent }: Props) {
               exit="exit"
             >
               <ProgressStep
-                stage={stage}
                 progress={progress}
                 videoTitle={videoTitle}
                 startTime={analysisStartRef.current}

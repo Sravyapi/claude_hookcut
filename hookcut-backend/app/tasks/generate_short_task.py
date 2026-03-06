@@ -4,6 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from sqlalchemy import func, select
+from celery.exceptions import SoftTimeLimitExceeded
 from app.tasks.celery_app import celery_app, ERROR_MSG_MAX_LEN, DOWNLOAD_URL_EXPIRES_SECONDS
 from app.dependencies import get_db_session
 from app.config import get_settings
@@ -15,7 +16,7 @@ from app.services.storage import StorageService
 logger = logging.getLogger(__name__)
 
 
-@celery_app.task(bind=True, max_retries=0)
+@celery_app.task(bind=True, max_retries=0, soft_time_limit=600, time_limit=660)
 def generate_short(self, short_id: str):
     """
     Generate a single YouTube Short from a selected hook.
@@ -120,6 +121,21 @@ def generate_short(self, short_id: str):
             "duration": result.duration_seconds,
         }
 
+    except SoftTimeLimitExceeded:
+        logger.error(f"Short generation timed out for {short_id}")
+        user_msg = "Short generation timed out after 10 minutes. Please try again."
+        try:
+            short = db.get(Short, short_id)
+            if short:
+                short.status = "failed"
+                short.error_message = user_msg[:ERROR_MSG_MAX_LEN]
+                db.commit()
+                session = db.get(AnalysisSession, short.session_id)
+                if session:
+                    _check_all_shorts_failed(db, session)
+        except Exception as inner_err:
+            logger.exception(f"Failed to mark short {short_id} as timed out: {inner_err}")
+        return {"error": user_msg}
     except Exception as e:
         logger.exception(f"Short generation failed for {short_id}: {e}")
         try:

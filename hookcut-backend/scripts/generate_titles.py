@@ -31,6 +31,7 @@ from app.dependencies import get_db_session
 from app.llm.provider import get_provider
 from app.llm.prompts.caption_cleanup import build_title_generation_prompt
 from app.models.session import Short
+from app.utils.text import title_from_hook_text
 from sqlalchemy import select
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s  %(message)s")
@@ -61,12 +62,7 @@ def generate_title_for_short(short: Short) -> str:
 
     response = provider.generate(prompt, max_tokens=100)
     title = response.text.strip().strip('"').strip("'")
-    if not title:
-        words = hook_text.split()
-        title = " ".join(words[:8])
-        if len(words) > 8:
-            title = title.rstrip(".,;:!?") + "..."
-    return title[:60]
+    return title[:60] if title else title_from_hook_text(hook_text)
 
 
 def main():

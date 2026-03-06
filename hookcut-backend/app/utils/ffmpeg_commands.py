@@ -453,7 +453,13 @@ def generate_ass_subtitles(
 
     # Group words into display lines (3–7 words each, sentence-aware)
     lines = _split_caption_lines(words)
-    time_per_line = duration_seconds / max(len(lines), 1)
+
+    # Allocate time proportionally to word count so longer lines get more screen time
+    word_counts = [max(len(line.split()), 1) for line in lines]
+    total_words = sum(word_counts)
+    offsets = [0.0]
+    for wc in word_counts:
+        offsets.append(offsets[-1] + duration_seconds * wc / total_words)
 
     style_line = CAPTION_STYLES.get(style, CAPTION_STYLES["clean"])
 
@@ -475,8 +481,8 @@ def generate_ass_subtitles(
     )
 
     for i, line in enumerate(lines):
-        start = i * time_per_line
-        end = min((i + 1) * time_per_line, duration_seconds)
+        start = offsets[i]
+        end = offsets[i + 1]
         start_str = _seconds_to_ass_time(start)
         end_str = _seconds_to_ass_time(end)
         escaped = line.replace("\\", "\\\\").replace("{", "\\{").replace("}", "\\}")
