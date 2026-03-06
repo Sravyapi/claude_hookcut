@@ -67,6 +67,7 @@ function HookCutLogo() {
   );
 }
 
+
 export default function Header({ onReset }: HeaderProps) {
   const { data: session, status } = useSession();
   const router = useRouter();
@@ -191,7 +192,7 @@ export default function Header({ onReset }: HeaderProps) {
             <div className="relative" ref={resourcesRef}>
               <button
                 onClick={() => setResourcesOpen((v) => !v)}
-                className="flex items-center gap-1 px-3.5 py-2 rounded-lg text-sm font-medium text-white/50 hover:text-white/80 hover:bg-white/[0.04] transition-all duration-200"
+                className="flex items-center gap-1 px-3.5 py-2 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/[0.06] transition-all duration-200"
                 aria-expanded={resourcesOpen}
                 aria-haspopup="true"
               >
@@ -215,7 +216,7 @@ export default function Header({ onReset }: HeaderProps) {
                       href={link.href}
                       onClick={() => setResourcesOpen(false)}
                       role="menuitem"
-                      className="block px-4 py-2.5 text-sm text-white/60 hover:text-white hover:bg-white/[0.04] transition-colors"
+                      className="block px-4 py-2.5 text-sm text-white/80 hover:text-white hover:bg-white/[0.08] transition-colors"
                     >
                       {link.label}
                     </Link>

@@ -24,5 +24,3 @@ dump.rdb
 .vscode/
 *.swp
 
-# Docs (local only)
-Docs/

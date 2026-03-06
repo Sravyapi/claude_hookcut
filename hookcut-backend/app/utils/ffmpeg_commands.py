@@ -7,6 +7,8 @@ import logging
 from dataclasses import dataclass
 from typing import Optional
 
+import httpx
+
 from app.config import get_settings
 
 logger = logging.getLogger(__name__)
@@ -137,27 +139,219 @@ class FFmpegResult:
 
 
 def _extract_error_from_stderr(stderr: str) -> str:
-    """Extract meaningful error from FFmpeg/yt-dlp stderr (skip verbose encoder params)."""
+    """Extract meaningful error from FFmpeg/yt-dlp stderr (skip progress & encoder params)."""
     lines = stderr.strip().splitlines()
-    # FFmpeg errors are usually in the last few lines after "Conversion failed" or "Error"
+
+    # Skip patterns: progress output lines and verbose encoder params
+    _skip_patterns = ["frame=", "size=", "bitrate=", "speed=",
+                      "keyint=", "weightb=", "scenecut=", "mbtree="]
+    # Error indicator patterns (prioritize lines containing these)
+    _error_indicators = ["error", "invalid", "no such", "failed",
+                         "conversion failed", "not found", "cannot", "unable"]
+
+    # Pass 1: collect lines with error indicators (most useful)
     error_lines = []
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        lower = stripped.lower()
+        if any(kw in lower for kw in _error_indicators):
+            if not any(skip in lower for skip in _skip_patterns):
+                error_lines.append(stripped)
+
+    if error_lines:
+        # Return last 5 error-indicator lines (most relevant are at the end)
+        return " | ".join(error_lines[-5:])
+
+    # Pass 2: fall back to last 5 non-progress, non-encoder-param lines
+    tail_lines = []
     for line in reversed(lines):
         stripped = line.strip()
         if not stripped:
             continue
-        # Stop collecting once we hit verbose encoder params
-        if any(kw in stripped for kw in ["keyint=", "weightb=", "scenecut=", "mbtree="]):
+        lower = stripped.lower()
+        if any(skip in lower for skip in _skip_patterns):
+            continue
+        tail_lines.append(stripped)
+        if len(tail_lines) >= 5:
             break
-        error_lines.append(stripped)
-        if len(error_lines) >= 5:
-            break
-    if error_lines:
-        return " | ".join(reversed(error_lines))
+    if tail_lines:
+        return " | ".join(reversed(tail_lines))
+
     # Fallback: last 500 chars
     return stderr[-500:]
 
 
 def extract_segment(
+    youtube_url: str,
+    start_seconds: float,
+    end_seconds: float,
+    output_path: str,
+) -> FFmpegResult:
+    """Extract a video segment. Tries Cobalt API first (cloud-friendly), falls back to yt-dlp."""
+    settings = get_settings()
+
+    # Method 1: Cobalt API — works from cloud IPs (Railway, AWS, etc.)
+    if settings.COBALT_API_URL:
+        cobalt_result = _try_cobalt_segment(
+            youtube_url, start_seconds, end_seconds, output_path
+        )
+        if cobalt_result.success:
+            return cobalt_result
+        logger.warning(
+            "Cobalt download failed: %s. Falling back to yt-dlp.", cobalt_result.error
+        )
+
+    # Method 2: yt-dlp — works locally, often blocked from cloud IPs
+    return _extract_segment_ytdlp(youtube_url, start_seconds, end_seconds, output_path)
+
+
+def _try_cobalt_segment(
+    youtube_url: str,
+    start_seconds: float,
+    end_seconds: float,
+    output_path: str,
+) -> FFmpegResult:
+    """Download video via Cobalt API, then extract segment with FFmpeg locally.
+
+    Cobalt tunnel URLs don't support HTTP range requests, so we download
+    the full video first, then trim with FFmpeg (copy mode, no re-encode).
+    The full video is cleaned up after extraction.
+    """
+    settings = get_settings()
+    work_dir = os.path.dirname(output_path)
+    full_video_path = os.path.join(work_dir, "cobalt_full.mp4")
+
+    try:
+        # Step 1: Get download URL from Cobalt
+        headers = {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        }
+        if settings.COBALT_API_KEY:
+            headers["Authorization"] = f"Api-Key {settings.COBALT_API_KEY}"
+
+        resp = httpx.post(
+            settings.COBALT_API_URL,
+            json={
+                "url": youtube_url,
+                "videoQuality": "720",
+                "youtubeVideoCodec": "h264",
+            },
+            headers=headers,
+            timeout=30,
+        )
+        if resp.status_code != 200:
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error=f"Cobalt API returned {resp.status_code}: {resp.text[:200]}",
+            )
+
+        data = resp.json()
+        status = data.get("status")
+
+        if status == "error":
+            error_info = data.get("error", {})
+            code = error_info.get("code", "unknown") if isinstance(error_info, dict) else str(error_info)
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error=f"Cobalt error: {code}",
+            )
+
+        download_url = data.get("url")
+        if not download_url:
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error=f"Cobalt returned status '{status}' but no download URL",
+            )
+
+        logger.info("Cobalt returned %s URL for %s", status, youtube_url)
+
+        # Step 2: Download full video via httpx streaming
+        with httpx.stream("GET", download_url, timeout=300, follow_redirects=True) as stream:
+            stream.raise_for_status()
+            with open(full_video_path, "wb") as f:
+                for chunk in stream.iter_bytes(chunk_size=65536):
+                    f.write(chunk)
+
+        full_size = os.path.getsize(full_video_path)
+        if full_size < 10000:
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error=f"Cobalt download too small ({full_size} bytes)",
+            )
+        logger.info("Cobalt downloaded %d bytes to %s", full_size, full_video_path)
+
+        # Step 3: Extract segment — try copy first, fall back to re-encode
+        duration = end_seconds - start_seconds
+
+        # Attempt 1: copy mode (fast, preserves quality)
+        cmd_copy = [
+            "ffmpeg", "-y",
+            "-ss", str(start_seconds),
+            "-i", full_video_path,
+            "-t", str(duration),
+            "-c", "copy",
+            "-avoid_negative_ts", "make_zero",
+            "-movflags", "+faststart",
+            output_path,
+        ]
+        result = subprocess.run(cmd_copy, capture_output=True, text=True, timeout=60)
+
+        if result.returncode == 0 and os.path.exists(output_path) and os.path.getsize(output_path) >= 10000:
+            # Validate the segment has a decodable video stream
+            probe = _probe_video_stream(output_path)
+            if probe and probe.get("width"):
+                logger.info("Cobalt segment extracted via copy (%d bytes)", os.path.getsize(output_path))
+                return FFmpegResult(
+                    success=True, output_path=output_path,
+                    file_size_bytes=os.path.getsize(output_path),
+                )
+            logger.warning("Cobalt copy segment has no decodable video, re-encoding")
+
+        # Attempt 2: re-encode (slower but guarantees clean keyframes)
+        cmd_reencode = [
+            "ffmpeg", "-y",
+            "-ss", str(start_seconds),
+            "-i", full_video_path,
+            "-t", str(duration),
+            "-c:v", VIDEO_CODEC, "-preset", ENCODER_PRESET, "-crf", "18",
+            "-c:a", AUDIO_CODEC, "-b:a", AUDIO_BITRATE,
+            "-movflags", "+faststart",
+            output_path,
+        ]
+        result = subprocess.run(cmd_reencode, capture_output=True, text=True, timeout=120)
+
+        if result.returncode == 0 and os.path.exists(output_path) and os.path.getsize(output_path) >= 10000:
+            logger.info("Cobalt segment extracted via re-encode (%d bytes)", os.path.getsize(output_path))
+            return FFmpegResult(
+                success=True, output_path=output_path,
+                file_size_bytes=os.path.getsize(output_path),
+            )
+
+        return FFmpegResult(
+            success=False, output_path=output_path,
+            error=f"FFmpeg segment extraction failed: {_extract_error_from_stderr(result.stderr)}",
+        )
+
+    except httpx.TimeoutException:
+        return FFmpegResult(
+            success=False, output_path=output_path,
+            error="Cobalt download timed out",
+        )
+    except Exception as e:
+        return FFmpegResult(
+            success=False, output_path=output_path,
+            error=f"Cobalt error: {e}",
+        )
+    finally:
+        # Clean up full video to save disk space
+        if os.path.exists(full_video_path):
+            os.remove(full_video_path)
+
+
+def _extract_segment_ytdlp(
     youtube_url: str,
     start_seconds: float,
     end_seconds: float,
@@ -192,6 +386,17 @@ def extract_segment(
                 success=False, output_path=output_path,
                 error=f"Downloaded file too small ({file_size} bytes), likely corrupt"
             )
+        # Validate the segment has a decodable video stream (matches Cobalt path)
+        probe = _probe_video_stream(output_path)
+        if not probe or not probe.get("width"):
+            return FFmpegResult(
+                success=False, output_path=output_path,
+                error=f"yt-dlp segment has no decodable video stream ({file_size} bytes)"
+            )
+        logger.info(
+            "yt-dlp segment: %sx%s codec=%s (%d bytes)",
+            probe.get("width"), probe.get("height"), probe.get("codec_name"), file_size,
+        )
         return FFmpegResult(
             success=True, output_path=output_path,
             file_size_bytes=file_size,
@@ -337,8 +542,8 @@ def _build_render_cmd(
 ) -> list[str]:
     """Build the FFmpeg render command. Separated for retry logic."""
     vf_parts = [
-        # Center-crop 16:9 to 9:16 (min clamp prevents negative crop on narrow videos)
-        f"crop='min(ih*{ASPECT_RATIO},iw)':ih:'(iw-min(ih*{ASPECT_RATIO},iw))/2':0",
+        # Center-crop 16:9 to 9:16 with safety guard (max 2px prevents 0-width crash)
+        f"crop='max(min(ih*{ASPECT_RATIO},iw),2)':ih:'(iw-max(min(ih*{ASPECT_RATIO},iw),2))/2':0",
         # Scale to Shorts resolution
         f"scale={SHORTS_WIDTH}:{SHORTS_HEIGHT}:force_original_aspect_ratio=decrease",
         f"pad={SHORTS_WIDTH}:{SHORTS_HEIGHT}:(ow-iw)/2:(oh-ih)/2:black",
@@ -400,9 +605,11 @@ def render_short(
             success=False, output_path=output_path,
             error="Input file has no video stream (ffprobe found nothing)"
         )
+    input_size = os.path.getsize(input_path) if os.path.exists(input_path) else 0
     logger.info(
-        "Render input: %sx%s codec=%s",
+        "Render input: %sx%s codec=%s size=%d bytes path=%s",
         video_info.get("width"), video_info.get("height"), video_info.get("codec_name"),
+        input_size, input_path,
     )
 
     # Attempt 1: full pipeline (subtitles + loudnorm)

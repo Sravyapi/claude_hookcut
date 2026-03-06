@@ -69,6 +69,11 @@ class ShortGenerator:
 
             # Step 4: Generate ASS subtitles
             segment_duration = probe_duration(segment_path) or 30.0
+            segment_size = os.path.getsize(segment_path) if os.path.exists(segment_path) else 0
+            logger.info(
+                "Segment ready: path=%s size=%d bytes duration=%.1fs",
+                segment_path, segment_size, segment_duration,
+            )
             subtitle_path = os.path.join(work_dir, "captions.ass")
             generate_ass_subtitles(cleaned_captions, segment_duration, subtitle_path, style=caption_style)
 
@@ -81,6 +86,10 @@ class ShortGenerator:
                 watermark=is_watermarked,
             )
             if not render_result.success:
+                logger.error(
+                    "FFmpeg render failed for short %s: %s (input=%s, size=%d)",
+                    short_id, render_result.error, segment_path, segment_size,
+                )
                 raise ShortGenerationError(f"FFmpeg render failed: {render_result.error}")
 
             # Step 6: Extract thumbnail
