@@ -26,8 +26,14 @@ const NAV_LINKS = [
 const RESOURCES_LINKS = [
   { href: "/blog", label: "Blog" },
   { href: "/how-it-works", label: "How It Works" },
+  { href: "/features", label: "Features" },
   { href: "/use-cases/youtube-creators", label: "Use Cases" },
   { href: "/case-studies", label: "Case Studies" },
+  { href: "/opus-clip-alternative", label: "vs OpusClip" },
+  { href: "/klap-alternative", label: "vs Klap" },
+  { href: "/vizard-alternative", label: "vs Vizard" },
+  { href: "/ai-hook-finder", label: "AI Hook Finder" },
+  { href: "/youtube-shorts-generator", label: "Shorts Generator" },
 ] as const;
 
 interface HeaderProps {
@@ -200,7 +206,7 @@ export default function Header({ onReset }: HeaderProps) {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 6, scale: 0.96 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute top-full left-0 mt-2 w-52 rounded-xl border border-[--color-border-def] bg-[--color-surface-1] shadow-xl shadow-black/30 overflow-hidden py-1"
+                  className="absolute top-full left-0 mt-2 w-64 rounded-xl border border-[--color-border-def] bg-[--color-surface-1] shadow-xl shadow-black/30 overflow-hidden py-1"
                   role="menu"
                 >
                   {RESOURCES_LINKS.map((link) => (
