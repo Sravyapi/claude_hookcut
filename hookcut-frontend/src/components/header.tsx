@@ -36,31 +36,27 @@ interface HeaderProps {
 
 function HookCutLogo() {
   return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      aria-hidden="true"
-      className="shrink-0"
-    >
-      {/* Hook glyph — stylised fishhook / play cursor */}
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="shrink-0">
+      {/* Eye outline */}
       <path
-        d="M14 4C14 4 16 4 16 7C16 10 13 11 10 11C7 11 5 12.5 5 15C5 16.5 6 17.5 7.5 17.5"
+        d="M2 10C2 10 5.5 4.5 10 4.5C14.5 4.5 18 10 18 10C18 10 14.5 15.5 10 15.5C5.5 15.5 2 10 2 10Z"
         stroke="white"
-        strokeWidth="2"
+        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
         fill="none"
       />
-      <path
-        d="M5.5 14L7.5 17.5L4 17.5"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
+      {/* Iris / flower center */}
+      <circle cx="10" cy="10" r="2.5" fill="#E84A2F" />
+      {/* Flower petals - 6 small circles radiating */}
+      <circle cx="10" cy="6.8" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="10" cy="13.2" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="12.9" cy="8.3" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="7.1" cy="11.7" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="12.9" cy="11.7" r="0.7" fill="white" opacity="0.7" />
+      <circle cx="7.1" cy="8.3" r="0.7" fill="white" opacity="0.7" />
+      {/* Pupil highlight */}
+      <circle cx="11" cy="9" r="0.8" fill="white" opacity="0.9" />
     </svg>
   );
 }
@@ -154,8 +150,8 @@ export default function Header({ onReset }: HeaderProps) {
             <div className="w-8 h-8 rounded-lg bg-[--color-primary] flex items-center justify-center shadow-md shadow-[--color-primary-glow] transition-shadow duration-200 group-hover:shadow-lg group-hover:shadow-[--color-primary-glow]">
               <HookCutLogo />
             </div>
-            <span className="font-display font-extrabold text-[17px] tracking-tight text-white/90 leading-none">
-              HookCut
+            <span className="font-display font-extrabold text-[17px] tracking-tight leading-none">
+              <span className="text-white/90">Hook</span><span className="text-[#E84A2F]">Cut</span>
             </span>
           </motion.button>
 
