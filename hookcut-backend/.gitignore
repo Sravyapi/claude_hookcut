@@ -12,3 +12,7 @@ build/
 .ruff_cache/
 hookcut_storage/
 cookies.txt
+cookies_*.txt
+*.nyxpath.com_cookies.txt
+*.db.bak.*
+storage/
