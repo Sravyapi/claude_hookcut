@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { useToast } from "@/components/ui/use-toast";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { User, Mail, DollarSign, CreditCard, Clock, Zap, AlertTriangle } from "lucide-react";
@@ -49,6 +50,7 @@ function BalanceRow({
 export default function SettingsPage() {
   const { data: session, status: authStatus } = useSession();
   const router = useRouter();
+  const { toast } = useToast();
 
   const [activeTab, setActiveTab] = useState<Tab>("account");
   const [profile, setProfile] = useState<UserProfile | null>(null);
@@ -84,7 +86,10 @@ export default function SettingsPage() {
     api
       .getBalance()
       .then(setBalance)
-      .catch((err) => console.warn("Failed to load balance:", err))
+      .catch((err) => {
+        console.error("Failed to load balance:", err);
+        toast({ title: "Failed to load balance", description: "Could not fetch credit balance. Please refresh.", variant: "destructive" });
+      })
       .finally(() => setLoadingBalance(false));
   }, [authStatus, session]);
 
@@ -96,7 +101,8 @@ export default function SettingsPage() {
       setCurrency(c);
       if (profile) setProfile({ ...profile, currency: c });
     } catch (err) {
-      console.warn("Failed to update currency:", err);
+      console.error("Failed to update currency:", err);
+      toast({ title: "Failed to save currency", description: "Please try again.", variant: "destructive" });
     } finally {
       setSavingCurrency(false);
     }

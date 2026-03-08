@@ -73,7 +73,8 @@ export default function AdminDashboardPage() {
       .then(setDashboard)
       .catch((err) => {
         console.warn("Failed to load admin dashboard:", err);
-        toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+        const detail = err?.message || err?.detail;
+        toast({ title: "Error", description: detail ? `Failed to load dashboard statistics: ${detail}` : "Failed to load dashboard statistics.", variant: "destructive" });
       })
       .finally(() => setLoading(false));
 
@@ -83,7 +84,8 @@ export default function AdminDashboardPage() {
       .catch((err) => {
         console.warn("Failed to load NARM insights:", err);
         setInsights([]);
-        toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+        const detail = err?.message || err?.detail;
+        toast({ title: "Error", description: detail ? `Failed to load NARM insights: ${detail}` : "Failed to load NARM insights.", variant: "destructive" });
       })
       .finally(() => setInsightsLoading(false));
   }, [toast]);
@@ -97,7 +99,8 @@ export default function AdminDashboardPage() {
       }
     } catch (err) {
       console.warn("NARM analysis failed:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to run NARM analysis: ${detail}` : "Failed to run NARM analysis.", variant: "destructive" });
     } finally {
       setNarmRunning(false);
     }

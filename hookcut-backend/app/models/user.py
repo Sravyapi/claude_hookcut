@@ -1,5 +1,6 @@
 import uuid
 from datetime import datetime, timezone
+from typing import Optional
 from sqlalchemy import String, Float, DateTime, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.models.base import Base
@@ -10,6 +11,8 @@ class User(Base):
 
     id: Mapped[str] = mapped_column(String(255), primary_key=True)  # Clerk user ID or local ID
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True)
+    name: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    hashed_password: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
     currency: Mapped[str] = mapped_column(String(3), default="USD")  # "INR" or "USD"
     plan_tier: Mapped[str] = mapped_column(String(20), default="free")  # "free", "lite", "pro"
 

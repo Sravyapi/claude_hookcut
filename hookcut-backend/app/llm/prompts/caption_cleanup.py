@@ -1,5 +1,15 @@
+import re
+
+
+def sanitize_for_prompt(text: str, max_len: int = 500) -> str:
+    """Strip control characters from LLM output before re-embedding in another prompt."""
+    cleaned = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)
+    return cleaned[:max_len]
+
+
 def build_caption_cleanup_prompt(hook_text: str, language: str = "English") -> str:
     """Build prompt for cleaning transcript text for Short captions."""
+    safe_hook_text = sanitize_for_prompt(hook_text)
     return f"""Clean this transcript segment for YouTube Short captions.
 
 Rules:
@@ -15,7 +25,7 @@ Rules:
 Language: {language}
 
 Segment:
-{hook_text}"""
+{safe_hook_text}"""
 
 
 def build_title_generation_prompt(
@@ -26,6 +36,7 @@ def build_title_generation_prompt(
     attention_score: float = 0.0,
 ) -> str:
     """Build prompt for generating a catchy, Short-optimized title."""
+    safe_hook_text = sanitize_for_prompt(hook_text)
     hook_type_line = f"Hook type: {hook_type}\n" if hook_type else ""
     score_line = f"Hook score: {attention_score:.1f}/10\n" if attention_score else ""
 
@@ -47,4 +58,4 @@ What makes a great Shorts title:
 - Output ONLY the title text — no quotes, no explanation
 
 Hook transcript:
-{hook_text}"""
+{safe_hook_text}"""

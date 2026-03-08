@@ -59,7 +59,8 @@ export default function PromptRuleEnginePage() {
       setRules(data.rules);
     } catch (err) {
       console.warn("Failed to load rules:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to load rules: ${detail}` : "Failed to load rules.", variant: "destructive" });
     } finally {
       setLoading(false);
     }
@@ -92,7 +93,8 @@ export default function PromptRuleEnginePage() {
       setRules(data.rules);
     } catch (err) {
       console.warn("Failed to seed rules:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to seed base rules: ${detail}` : "Failed to seed base rules.", variant: "destructive" });
     } finally {
       setSeeding(false);
     }
@@ -113,7 +115,8 @@ export default function PromptRuleEnginePage() {
       );
     } catch (err) {
       console.warn("Failed to save rule:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to save rule: ${detail}` : "Failed to save rule.", variant: "destructive" });
     } finally {
       setSaving(false);
     }
@@ -128,7 +131,8 @@ export default function PromptRuleEnginePage() {
       setSelectedRule(null);
     } catch (err) {
       console.warn("Failed to delete rule:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to delete rule: ${detail}` : "Failed to delete rule.", variant: "destructive" });
     } finally {
       setDeleting(false);
     }
@@ -147,7 +151,8 @@ export default function PromptRuleEnginePage() {
       setHistory(data);
     } catch (err) {
       console.warn("Failed to load history:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to load rule history: ${detail}` : "Failed to load rule history.", variant: "destructive" });
     } finally {
       setLoadingHistory(false);
     }
@@ -165,7 +170,8 @@ export default function PromptRuleEnginePage() {
       setShowHistory(false);
     } catch (err) {
       console.warn("Failed to revert rule:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to revert rule: ${detail}` : "Failed to revert rule.", variant: "destructive" });
     } finally {
       setReverting(null);
     }
@@ -178,7 +184,8 @@ export default function PromptRuleEnginePage() {
       setPreview(data);
     } catch (err) {
       console.warn("Failed to preview prompt:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to load prompt preview: ${detail}` : "Failed to load prompt preview.", variant: "destructive" });
     } finally {
       setLoadingPreview(false);
     }
@@ -199,7 +206,8 @@ export default function PromptRuleEnginePage() {
       setSelectedRule(created);
     } catch (err) {
       console.warn("Failed to create rule:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to create rule: ${detail}` : "Failed to create rule.", variant: "destructive" });
     } finally {
       setCreatingRule(false);
     }

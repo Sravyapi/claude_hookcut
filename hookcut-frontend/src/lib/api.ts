@@ -101,8 +101,8 @@ export const api = {
       body: JSON.stringify({ youtube_url, niche, language }),
     }),
 
-  getTaskStatus: (taskId: string) =>
-    request<TaskStatus>(`/tasks/${taskId}`),
+  getTaskStatus: (taskId: string, signal?: AbortSignal) =>
+    request<TaskStatus>(`/tasks/${taskId}`, { signal }),
 
   getHooks: (sessionId: string) =>
     request<HooksResponse>(`/sessions/${sessionId}/hooks`),
@@ -127,8 +127,8 @@ export const api = {
       }),
     }),
 
-  getShort: (shortId: string) =>
-    request<Short>(`/shorts/${shortId}`),
+  getShort: (shortId: string, signal?: AbortSignal) =>
+    request<Short>(`/shorts/${shortId}`, { signal }),
 
   downloadShort: (shortId: string) =>
     request<DownloadResponse>(`/shorts/${shortId}/download`, {
@@ -140,8 +140,9 @@ export const api = {
 
   // V1 auth / billing / user endpoints
   syncUser: (email: string) =>
-    request<{ user_id: string; is_new: boolean; plan_tier: string; role: string }>(`/auth/sync?email=${encodeURIComponent(email)}`, {
+    request<{ user_id: string; is_new: boolean; plan_tier: string; role: string }>("/auth/sync", {
       method: "POST",
+      body: JSON.stringify({ email }),
     }),
 
   getPlans: () =>

@@ -5,7 +5,7 @@ Routers call these static methods and convert HookCutError to HTTPException.
 """
 import logging
 
-from sqlalchemy import func, select
+from sqlalchemy import func, select, literal_column
 from sqlalchemy.orm import Session
 
 from app.exceptions import UserNotFoundError, InvalidStateError
@@ -42,17 +42,16 @@ class UserService:
         Returns dict with sessions list, total, page, per_page.
         """
         offset = (max(page, 1) - 1) * per_page
-        total = db.execute(
-            select(func.count()).select_from(AnalysisSession)
-            .where(AnalysisSession.user_id == user_id)
-        ).scalar()
-        sessions = db.execute(
-            select(AnalysisSession)
+        count_col = func.count().over().label("total_count")
+        rows = db.execute(
+            select(AnalysisSession, count_col)
             .where(AnalysisSession.user_id == user_id)
             .order_by(AnalysisSession.created_at.desc())
             .offset(offset)
             .limit(per_page)
-        ).scalars().all()
+        ).all()
+        total = rows[0][1] if rows else 0
+        sessions = [r[0] for r in rows]
 
         return {
             "sessions": [

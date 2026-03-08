@@ -3,6 +3,8 @@ import { api } from "../lib/api";
 import type { Short } from "../lib/types";
 import { POLL_CONFIG, SHORT_STATUS } from "../lib/types";
 
+const MAX_POLLS = 120; // 10 minutes at 5s intervals
+
 export function useShortPoller(
   shortId: string,
   enabled: boolean
@@ -17,13 +19,23 @@ export function useShortPoller(
     if (!enabled) return;
 
     let active = true;
+    let abortController: AbortController | null = null;
     pollCountRef.current = 0;
     setIsLoading(true);
     setError(null);
 
     const doPoll = async () => {
+      pollCountRef.current += 1;
+      if (pollCountRef.current >= MAX_POLLS) {
+        if (!active) return;
+        setError("Short generation timed out. Please try again.");
+        setIsLoading(false);
+        return;
+      }
+
+      abortController = new AbortController();
       try {
-        const result = await api.getShort(shortId);
+        const result = await api.getShort(shortId, abortController.signal);
         if (!active) return;
         setData(result);
         setIsLoading(false);
@@ -36,7 +48,6 @@ export function useShortPoller(
             POLL_CONFIG.initial * POLL_CONFIG.multiplier ** pollCountRef.current,
             POLL_CONFIG.max
           );
-          pollCountRef.current++;
           timerRef.current = setTimeout(doPoll, delay);
         }
       } catch (err) {
@@ -50,6 +61,7 @@ export function useShortPoller(
 
     return () => {
       active = false;
+      abortController?.abort();
       if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, [shortId, enabled]);

@@ -269,6 +269,15 @@ class AdminService:
             for sh in session.shorts
         ]
 
+        # Truncate transcript to avoid returning 100KB+ payloads in admin detail
+        transcript_preview: str | None = None
+        if session.transcript:
+            transcript_preview = (
+                session.transcript[:500] + "..."
+                if len(session.transcript) > 500
+                else session.transcript
+            )
+
         return {
             "id": session.id,
             "user_id": session.user_id,
@@ -281,6 +290,7 @@ class AdminService:
             "language": session.language,
             "status": session.status,
             "transcript_provider": session.transcript_provider,
+            "transcript": transcript_preview,
             "minutes_charged": session.minutes_charged,
             "created_at": session.created_at.isoformat() if session.created_at else None,
             "hooks": hooks,
@@ -371,7 +381,8 @@ class AdminService:
                 )
                 stmt = stmt.where(AdminAuditLog.created_at <= end_dt)
 
-            stmt = stmt.order_by(desc(AdminAuditLog.created_at)).limit(10000)
+            # Cap at 1,000 to prevent memory exhaustion and slow responses on large datasets.
+            stmt = stmt.order_by(desc(AdminAuditLog.created_at)).limit(1000)
             rows = db.execute(stmt).all()
 
             return [
@@ -476,13 +487,22 @@ class AdminService:
         """Create a custom prompt rule. Auto-assigns key after Q if not provided."""
         try:
             if not rule_key:
-                # Find the highest existing key and pick the next letter
-                max_key_row = db.scalar(
-                    select(func.max(PromptRule.rule_key))
+                # Find the highest existing key using integer-aware comparison
+                # to avoid lexicographic bugs (e.g. "Z2" > "Z10")
+                all_keys = list(
+                    db.scalars(select(PromptRule.rule_key)).all()
                 )
-                if max_key_row and len(max_key_row) == 1 and max_key_row.isalpha():
-                    next_ord = ord(max_key_row.upper()) + 1
-                    rule_key = chr(next_ord) if next_ord <= ord("Z") else f"Z{next_ord - ord('Z')}"
+                # Partition into single-letter keys (A-Z) and Z{N} extended keys
+                single_letter_keys = [k for k in all_keys if len(k) == 1 and k.isalpha()]
+                extended_keys = [k for k in all_keys if len(k) > 1 and k[0] == "Z" and k[1:].isdigit()]
+
+                if extended_keys:
+                    max_num = max(int(k[1:]) for k in extended_keys)
+                    rule_key = f"Z{max_num + 1}"
+                elif single_letter_keys:
+                    max_letter = max(single_letter_keys, key=lambda k: ord(k.upper()))
+                    next_ord = ord(max_letter.upper()) + 1
+                    rule_key = chr(next_ord) if next_ord <= ord("Z") else "Z1"
                 else:
                     rule_key = "R"
 
@@ -693,24 +713,21 @@ class AdminService:
     def seed_rules(
         db: Session, admin_user: User
     ) -> list[PromptRule]:
-        """Seed the 17 base rules A-Q if no rules exist yet."""
-        existing_count = db.scalar(
-            select(func.count(PromptRule.id))
-        ) or 0
-        if existing_count > 0:
-            logger.info(
-                "Rules already exist (%d), skipping seed", existing_count
-            )
-            return list(
-                db.scalars(
-                    select(PromptRule)
-                    .where(PromptRule.is_active == True)  # noqa: E712
-                    .order_by(PromptRule.rule_key)
-                ).all()
-            )
+        """Seed the 17 base rules A-Q using an upsert pattern (idempotent/resumable)."""
+        # Fetch all existing (rule_key, version) pairs to detect what already exists
+        existing_pairs = set(
+            db.execute(
+                select(PromptRule.rule_key, PromptRule.version)
+            ).all()
+        )
 
         rules: list[PromptRule] = []
+        inserted_keys: list[str] = []
         for key, data in BASE_RULES.items():
+            if (key, 1) in existing_pairs:
+                # Already seeded — skip to make this call idempotent
+                logger.debug("Rule %s v1 already exists, skipping", key)
+                continue
             rule = PromptRule(
                 rule_key=key,
                 version=1,
@@ -722,23 +739,35 @@ class AdminService:
             )
             db.add(rule)
             rules.append(rule)
+            inserted_keys.append(key)
 
-        db.flush()
+        if not rules:
+            logger.info("All base rules already exist, nothing to seed")
+        else:
+            db.flush()
+            AdminService.create_audit_log(
+                db,
+                admin_user=admin_user,
+                action="prompt_rule_created",
+                resource_type="prompt_rule",
+                resource_id=None,
+                before_state=None,
+                after_state={"rules_seeded": inserted_keys},
+                description=f"Seeded {len(inserted_keys)} base rules ({', '.join(inserted_keys)})",
+            )
+            db.commit()
+            for rule in rules:
+                db.refresh(rule)
+            logger.info("Seeded %d base rules: %s", len(inserted_keys), inserted_keys)
 
-        AdminService.create_audit_log(
-            db,
-            admin_user=admin_user,
-            action="prompt_rule_created",
-            resource_type="prompt_rule",
-            resource_id=None,
-            before_state=None,
-            after_state={"rules_seeded": list(BASE_RULES.keys())},
-            description="Seeded 17 base rules (A-Q)",
+        # Return all active rules regardless of what was just inserted
+        return list(
+            db.scalars(
+                select(PromptRule)
+                .where(PromptRule.is_active == True)  # noqa: E712
+                .order_by(PromptRule.rule_key)
+            ).all()
         )
-        db.commit()
-        for rule in rules:
-            db.refresh(rule)
-        return rules
 
     # ------------------------------------------------------------------
     # 15. Preview prompt built from DB rules
@@ -921,9 +950,10 @@ class AdminService:
             current_primary.provider_name if current_primary else None
         )
 
-        # Unset all is_primary
+        # Unset all is_primary; set updated_at explicitly since onupdate only
+        # fires for ORM-level updates, not bulk db.execute(update(...)) calls.
         db.execute(
-            update(ProviderConfig).values(is_primary=False)
+            update(ProviderConfig).values(is_primary=False, updated_at=datetime.now(timezone.utc))
         )
 
         target.is_primary = True
@@ -1009,13 +1039,21 @@ class AdminService:
                     if not found:
                         new_lines.append(f"{env_var}={api_key}\n")
 
-                    with open(env_path, "w") as f:
+                    tmp_path = env_path + ".tmp"
+                    with open(tmp_path, "w") as f:
                         f.writelines(new_lines)
+                    os.replace(tmp_path, env_path)  # atomic on POSIX
                 else:
-                    with open(env_path, "w") as f:
+                    tmp_path = env_path + ".tmp"
+                    with open(tmp_path, "w") as f:
                         f.write(f"{env_var}={api_key}\n")
+                    os.replace(tmp_path, env_path)  # atomic on POSIX
             except OSError as e:
                 logger.error("Failed to write API key to .env: %s", e)
+
+        # Clear the LRU cache so the next get_provider() call picks up the new key
+        from app.llm.provider import get_provider
+        get_provider.cache_clear()
 
         AdminService.create_audit_log(
             db,
@@ -1043,6 +1081,11 @@ class AdminService:
         """
         Query LearningLog aggregates, call primary LLM provider to
         generate insights, store and return NarmInsight records.
+
+        NOTE: This runs synchronously in the request thread. The LLM call is
+        capped at max_tokens=2000 which limits wall-clock time, but on slow
+        providers this can still block for 30-60s.
+        # TODO: Move to background Celery task to avoid request timeout on large datasets.
         """
         cutoff = datetime.now(timezone.utc) - timedelta(days=time_range_days)
 
@@ -1163,11 +1206,14 @@ class AdminService:
             }
 
             # --- Call LLM ---
+            # Use ensure_ascii=True + code fences to prevent prompt injection
+            # from any string values embedded in the analytics data
+            data_str = json.dumps(summary, ensure_ascii=True, separators=(",", ":"))
             llm_prompt = (
                 "You are an analytics expert for HookCut, a YouTube Shorts "
                 "hook extraction platform. Analyze this data and generate "
                 "3-5 actionable insights.\n\n"
-                f"DATA:\n{json.dumps(summary, indent=2)}\n\n"
+                f"DATA:\n```json\n{data_str}\n```\n\n"
                 "Return ONLY valid JSON array with 3-5 objects, each with:\n"
                 '{"insight_type": "hook_preference|niche_trend|'
                 'regeneration_pattern|engagement_pattern",\n'
@@ -1200,7 +1246,15 @@ class AdminService:
                 if not isinstance(parsed, list):
                     parsed = [parsed]
 
+                # Map LLM string confidence labels to float values
+                _CONFIDENCE_MAP = {"high": 0.9, "medium": 0.5, "low": 0.2}
+
                 for item in parsed[:5]:
+                    raw_conf = item.get("confidence", "medium")
+                    if isinstance(raw_conf, str):
+                        conf_float = _CONFIDENCE_MAP.get(raw_conf.lower(), 0.5)
+                    else:
+                        conf_float = float(raw_conf) if raw_conf else 0.5
                     insight = NarmInsight(
                         insight_type=item.get(
                             "insight_type", "engagement_pattern"
@@ -1208,7 +1262,7 @@ class AdminService:
                         title=item.get("title", "Untitled Insight"),
                         content=item.get("content", ""),
                         data_summary=summary,
-                        confidence=item.get("confidence", "medium"),
+                        confidence=conf_float,
                         time_range_days=time_range_days,
                     )
                     db.add(insight)
@@ -1229,7 +1283,7 @@ class AdminService:
                         f"Top niches: {', '.join(n['niche'] for n in popular_niches[:3])}."
                     ),
                     data_summary=summary,
-                    confidence="low",
+                    confidence=0.2,
                     time_range_days=time_range_days,
                 )
                 db.add(basic_insight)

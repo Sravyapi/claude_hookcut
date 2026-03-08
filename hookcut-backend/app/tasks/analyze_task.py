@@ -13,7 +13,7 @@ from app.exceptions import HookEngineError
 logger = logging.getLogger(__name__)
 
 
-@celery_app.task(bind=True, max_retries=0)
+@celery_app.task(bind=True, max_retries=0, soft_time_limit=600, time_limit=660)
 def run_analysis(self, session_id: str):
     """
     Main analysis task: transcript fetch → LLM hook identification.
@@ -33,7 +33,11 @@ def run_analysis(self, session_id: str):
         self.update_state(state="PROGRESS", meta={"stage": "Fetching transcript...", "progress": 10})
 
         transcript_service = TranscriptService()
-        transcript_result = transcript_service.fetch(session.video_id, session.language)
+        transcript_result = transcript_service.fetch(
+            session.video_id,
+            session.language,
+            video_duration_seconds=session.video_duration_seconds,
+        )
 
         if not transcript_result:
             # All 3 providers failed — refund credits
@@ -104,10 +108,8 @@ def run_analysis(self, session_id: str):
             )
             return {"error": "Failed to save hooks"}
 
-        # Log learning events: hook_presented
-        hooks = db.execute(
-            select(Hook).where(Hook.session_id == session_id)
-        ).scalars().all()
+        # Log learning events: hook_presented (use already-in-memory hooks from the flush above)
+        hooks = [obj for obj in db.identity_map.values() if isinstance(obj, Hook) and obj.session_id == session_id]
         for hook in hooks:
             log_entry = LearningLog(
                 session_id=session_id,
@@ -140,6 +142,11 @@ def run_analysis(self, session_id: str):
 
     except Exception as e:
         logger.exception(f"Analysis task failed for session {session_id}: {e}")
+        try:
+            import sentry_sdk
+            sentry_sdk.capture_exception(e)
+        except Exception:
+            pass
         user_msg = _friendly_error(e)
         try:
             CreditManager(db).refund_and_fail(

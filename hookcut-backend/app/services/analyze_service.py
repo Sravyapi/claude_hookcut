@@ -4,6 +4,7 @@ AnalyzeService — owns all analysis business logic.
 Routers call these static methods and convert HookCutError to HTTPException.
 """
 import logging
+import os
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -12,6 +13,7 @@ from app.exceptions import (
     InvalidURLError,
     MetadataFetchError,
     VideoAccessibilityError,
+    VideoTooLongError,
     InsufficientCreditsError,
     SessionNotFoundError,
     InvalidStateError,
@@ -95,6 +97,14 @@ class AnalyzeService:
         ok, err = metadata_svc.validate_accessibility(metadata)
         if not ok:
             raise VideoAccessibilityError(err)
+
+        # Enforce maximum video duration before any credits are touched
+        _MAX_VIDEO_MINUTES = int(os.getenv("MAX_VIDEO_MINUTES", "60"))
+        if metadata.duration_seconds > _MAX_VIDEO_MINUTES * 60:
+            raise VideoTooLongError(
+                f"Video exceeds {_MAX_VIDEO_MINUTES}-minute limit "
+                f"({metadata.duration_seconds // 60} min submitted)"
+            )
 
         # Calculate minutes needed (source video duration)
         minutes_needed = metadata.duration_seconds / 60.0

@@ -1,10 +1,10 @@
-from pydantic import BaseModel, field_validator, model_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 from typing import Optional
 from app.llm.prompts.constants import NICHES, LANGUAGES
 
 
 class AnalyzeRequest(BaseModel):
-    youtube_url: str
+    youtube_url: str = Field(..., max_length=2048)
     niche: str = "Generic"
     language: str = "English"
 

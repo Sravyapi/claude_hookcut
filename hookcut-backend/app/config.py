@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///hookcut.db"
     REDIS_URL: str = "redis://localhost:6379/0"
     FRONTEND_URL: str = "http://localhost:3000"
+    API_BASE_URL: str = "http://127.0.0.1:8000"
     DEBUG: bool = False
 
     # LLM
@@ -91,11 +92,14 @@ class Settings(BaseSettings):
 
         # JWT secret must be strong enough for HS256
         if self.NEXTAUTH_SECRET and len(self.NEXTAUTH_SECRET) < 32:
-            logger.warning(
-                "NEXTAUTH_SECRET is shorter than 32 characters. "
-                "HS256 requires at least 256 bits (32 bytes) for secure signing. "
-                "Generate a stronger secret with: openssl rand -base64 48"
-            )
+            if not self.DEBUG:
+                raise ValueError("JWT_SECRET must be at least 32 characters in production")
+            else:
+                logger.warning(
+                    "NEXTAUTH_SECRET is shorter than 32 characters. "
+                    "HS256 requires at least 256 bits (32 bytes) for secure signing. "
+                    "Generate a stronger secret with: openssl rand -base64 48"
+                )
 
         return self
 

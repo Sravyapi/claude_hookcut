@@ -14,6 +14,7 @@ export function usePollTask(
 ): { isPolling: boolean; stopPolling: () => void } {
   const pollRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pollCountRef = useRef(0);
+  const isInFlightRef = useRef(false);
   const [isPolling, setIsPolling] = useState(false);
 
   const onCompleteRef = useRef(onComplete);
@@ -40,13 +41,17 @@ export function usePollTask(
     }
 
     let cancelled = false;
+    let abortController: AbortController | null = null;
     pollCountRef.current = 0;
     setIsPolling(true);
 
     const doPoll = async () => {
       if (cancelled) return;
+      if (isInFlightRef.current) return;
+      isInFlightRef.current = true;
+      abortController = new AbortController();
       try {
-        const status = await api.getTaskStatus(taskId);
+        const status = await api.getTaskStatus(taskId, abortController.signal);
         if (cancelled) return;
 
         const delay = Math.min(
@@ -86,6 +91,8 @@ export function usePollTask(
         pollCountRef.current = 0;
         setIsPolling(false);
         onErrorRef.current("Lost connection. Please try again.");
+      } finally {
+        isInFlightRef.current = false;
       }
     };
 
@@ -93,6 +100,8 @@ export function usePollTask(
 
     return () => {
       cancelled = true;
+      isInFlightRef.current = false;
+      abortController?.abort();
       if (pollRef.current) {
         clearTimeout(pollRef.current);
         pollRef.current = null;

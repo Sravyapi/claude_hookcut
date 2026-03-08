@@ -86,27 +86,31 @@ export const HOOK_TYPE_DESCRIPTIONS: Record<string, string> = {
 export const PAYG_OPTIONS = [100, 200, 500, 1000] as const;
 
 // Shared demo hook data — used by hero-section (animated) and marketing-home (static showcase)
+// Video IDs map to real, high-view-count YouTube videos so thumbnails load reliably.
 export const DEMO_HOOKS = [
   {
     score: 9.2,
     type: "CURIOSITY GAP",
     timestamp: "0:14",
-    text: "Nobody talks about this YouTube trick that tripled my views overnight...",
+    text: "The #1 mistake 90% of YouTubers make in the first 30 seconds",
     color: "#E84A2F",
+    videoId: "dQw4w9WgXcQ",
   },
   {
     score: 8.5,
     type: "FEAR-BASED",
     timestamp: "2:31",
-    text: "I tested 47 AI tools and what I found will change how you post forever...",
+    text: "I tested 47 different hooks — here's what actually works",
     color: "#F59E0B",
+    videoId: "9bZkp7q19f0",
   },
   {
     score: 7.8,
     type: "CONTRARIAN",
     timestamp: "4:07",
-    text: "Everyone is wrong about what makes a Short go viral in 2025...",
+    text: "Nobody talks about this editing trick that doubled my retention",
     color: "#10B981",
+    videoId: "kJQP7kiw5Fk",
   },
 ] as const;
 

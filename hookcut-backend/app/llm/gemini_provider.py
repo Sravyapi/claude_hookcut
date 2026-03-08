@@ -21,7 +21,7 @@ class GeminiProvider(LLMProvider):
         url = f"{self.base_url}/models/{self.model}:generateContent"
         headers = {"x-goog-api-key": self.api_key, "Content-Type": "application/json"}
         generation_config: dict = {
-            "maxOutputTokens": max_tokens * 2,  # Extra budget for thinking tokens
+            "maxOutputTokens": max(min(max_tokens * 2, 8192), 1024),  # Extra budget for thinking tokens; capped at 8192, minimum 1024
             "temperature": 0.7,
         }
         if json_mode:
@@ -32,9 +32,14 @@ class GeminiProvider(LLMProvider):
         }
 
         try:
-            with httpx.Client(timeout=180) as client:
+            with httpx.Client(timeout=120) as client:
                 resp = client.post(url, json=payload, headers=headers)
                 if resp.status_code == 429:
+                    try:
+                        import sentry_sdk
+                        sentry_sdk.capture_message("Gemini rate limit hit (429)", level="warning")
+                    except Exception:
+                        pass
                     raise RuntimeError(
                         "Gemini rate limit hit (429). Free tier allows ~15 requests/minute. "
                         "Wait 60 seconds and try again."
@@ -44,6 +49,11 @@ class GeminiProvider(LLMProvider):
         except RuntimeError:
             raise
         except Exception as e:
+            try:
+                import sentry_sdk
+                sentry_sdk.capture_exception(e)
+            except Exception:
+                pass
             raise RuntimeError(f"Gemini API request failed: {e}") from e
 
         try:

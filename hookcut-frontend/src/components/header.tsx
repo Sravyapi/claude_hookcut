@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { LogOut, LayoutDashboard, Settings, CreditCard, Menu, X } from "lucide-react";
 import { api } from "@/lib/api";
 import { useUser } from "@/components/providers";
@@ -143,7 +143,7 @@ export default function Header({ onReset }: HeaderProps) {
 
           {/* Desktop nav */}
           <nav className="hidden sm:flex items-center gap-1 relative" aria-label="Main navigation">
-            {isAdmin && (
+            {status === "authenticated" && (
               <Link
                 href="/dashboard"
                 className={`relative px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -323,108 +323,112 @@ export default function Header({ onReset }: HeaderProps) {
       </motion.header>
 
       {/* Mobile menu */}
-      {mobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 20 }}
-          className="fixed inset-0 z-40 sm:hidden"
-          role="dialog"
-          aria-label="Mobile navigation"
-        >
-          <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-            onClick={closeMobileMenu}
-            aria-hidden="true"
-          />
-          <div className="absolute right-0 top-16 bottom-0 w-72 glass-strong border-l border-[--color-border-def] p-6 overflow-y-auto">
-            <nav className="flex flex-col gap-1 mb-6" aria-label="Mobile navigation">
-              {isAdmin && (
-                <Link
-                  href="/dashboard"
-                  onClick={closeMobileMenu}
-                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                    pathname === "/dashboard"
-                      ? "text-white bg-[--color-primary]/10 border border-[--color-primary]/20"
-                      : "text-white/50 hover:text-white hover:bg-white/[0.04]"
-                  }`}
-                >
-                  Dashboard
-                </Link>
-              )}
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={closeMobileMenu}
-                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                    pathname.startsWith(`/${link.match}`)
-                      ? "text-white bg-[--color-primary]/10 border border-[--color-primary]/20"
-                      : "text-white/50 hover:text-white hover:bg-white/[0.04]"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
+      <AnimatePresence mode="wait">
+        {mobileMenuOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-40 sm:hidden"
+            role="dialog"
+            aria-label="Mobile navigation"
+          >
+            <div
+              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+              onClick={closeMobileMenu}
+              aria-hidden="true"
+            />
+            <div className="absolute right-0 top-16 bottom-0 w-72 glass-strong border-l border-[--color-border-def] p-6 overflow-y-auto">
+              <nav className="flex flex-col gap-1 mb-6" aria-label="Mobile navigation">
+                {status === "authenticated" && (
+                  <Link
+                    href="/dashboard"
+                    onClick={closeMobileMenu}
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                      pathname === "/dashboard"
+                        ? "text-white bg-[--color-primary]/10 border border-[--color-primary]/20"
+                        : "text-white/50 hover:text-white hover:bg-white/[0.04]"
+                    }`}
+                  >
+                    Dashboard
+                  </Link>
+                )}
+                {NAV_LINKS.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={closeMobileMenu}
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                      pathname.startsWith(`/${link.match}`)
+                        ? "text-white bg-[--color-primary]/10 border border-[--color-primary]/20"
+                        : "text-white/50 hover:text-white hover:bg-white/[0.04]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
 
-            {balance !== null && (
-              <div className="glass rounded-xl p-4 mb-6">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-white/40 font-medium">Credits</span>
-                  <span className="font-semibold text-white tabular-nums font-mono">
-                    {balance.toFixed(0)}
-                    <span className="text-white/35 font-normal ml-0.5 text-xs">min</span>
-                  </span>
-                </div>
-              </div>
-            )}
-
-            {session?.user ? (
-              <div className="border-t border-[--color-border-def] pt-4">
-                <div className="flex items-center gap-3 mb-4 px-1">
-                  <Avatar className="h-8 w-8">
-                    {session.user.image && (
-                      <AvatarImage src={session.user.image} alt="" aria-hidden="true" />
-                    )}
-                    <AvatarFallback className="text-xs bg-[--color-surface-3]">
-                      {userInitials}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-2">
-                      <p className="text-sm font-medium text-white/80 truncate">
-                        {session.user.name}
-                      </p>
-                      {isAdmin && (
-                        <span className="px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider rounded bg-[--color-primary]/20 text-[--color-primary] border border-[--color-primary]/30 shrink-0">
-                          Admin
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-xs text-white/30 truncate">{session.user.email}</p>
+              {balance !== null && (
+                <div className="glass rounded-xl p-4 mb-6">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-white/40 font-medium">Credits</span>
+                    <span className="font-semibold text-white tabular-nums font-mono">
+                      {balance.toFixed(0)}
+                      <span className="text-white/35 font-normal ml-0.5 text-xs">min</span>
+                    </span>
                   </div>
                 </div>
-                <button
-                  onClick={handleSignOut}
-                  className="w-full px-4 py-2.5 rounded-xl text-sm text-red-400 hover:bg-red-500/10 transition-colors text-left flex items-center gap-2"
+              )}
+
+              {session?.user ? (
+                <div className="border-t border-[--color-border-def] pt-4">
+                  <div className="flex items-center gap-3 mb-4 px-1">
+                    <Avatar className="h-8 w-8">
+                      {session.user.image && (
+                        <AvatarImage src={session.user.image} alt="" aria-hidden="true" />
+                      )}
+                      <AvatarFallback className="text-xs bg-[--color-surface-3]">
+                        {userInitials}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <p className="text-sm font-medium text-white/80 truncate">
+                          {session.user.name}
+                        </p>
+                        {isAdmin && (
+                          <span className="px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider rounded bg-[--color-primary]/20 text-[--color-primary] border border-[--color-primary]/30 shrink-0">
+                            Admin
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-xs text-white/30 truncate">{session.user.email}</p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={handleSignOut}
+                    className="w-full px-4 py-2.5 rounded-xl text-sm text-red-400 hover:bg-red-500/10 transition-colors text-left flex items-center gap-2"
+                  >
+                    <LogOut className="w-4 h-4" aria-hidden="true" />
+                    Sign Out
+                  </button>
+                </div>
+              ) : status === "unauthenticated" ? (
+                <Link
+                  href="/auth/login"
+                  onClick={closeMobileMenu}
+                  className="btn-primary w-full text-center text-sm py-3 block rounded-xl"
                 >
-                  <LogOut className="w-4 h-4" aria-hidden="true" />
-                  Sign Out
-                </button>
-              </div>
-            ) : status === "unauthenticated" ? (
-              <Link
-                href="/auth/login"
-                onClick={closeMobileMenu}
-                className="btn-primary w-full text-center text-sm py-3 block rounded-xl"
-              >
-                Start Analyzing →
-              </Link>
-            ) : null}
-          </div>
-        </motion.div>
-      )}
+                  Start Analyzing →
+                </Link>
+              ) : null}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

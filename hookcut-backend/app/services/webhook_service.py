@@ -6,17 +6,40 @@ import logging
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from app.models.user import User, Subscription
+from app.models.billing import ProcessedWebhook
 from app.services.credit_manager import CreditManager
 from app.services.subscription_service import SubscriptionService
 from app.services.payment_service import PLAN_MINUTES
 
 logger = logging.getLogger(__name__)
 
+# Maximum minutes that can be granted in a single PAYG purchase.
+# Guards against metadata tampering (e.g., minutes=999999 injected via Stripe metadata).
+MAX_MINUTES_PER_PURCHASE = 10_000
+
 
 class WebhookService:
+
     @staticmethod
-    def handle_stripe_checkout_completed(db: Session, data: dict) -> dict:
+    def _is_duplicate(db: Session, provider: str, event_id: str) -> bool:
+        """Return True if this (provider, event_id) was already processed."""
+        row = db.get(ProcessedWebhook, {"provider": provider, "event_id": event_id})
+        return row is not None
+
+    @staticmethod
+    def _mark_processed(db: Session, provider: str, event_id: str) -> None:
+        """Insert an idempotency record. Must be called inside an open transaction."""
+        db.add(ProcessedWebhook(provider=provider, event_id=event_id))
+
+    @staticmethod
+    def handle_stripe_checkout_completed(
+        db: Session, data: dict, event_id: str
+    ) -> dict:
         """Handle Stripe checkout.session.completed event."""
+        if WebhookService._is_duplicate(db, "stripe", event_id):
+            logger.info(f"Duplicate Stripe event ignored: {event_id}")
+            return {"status": "duplicate"}
+
         metadata = data.get("metadata", {})
         user_id = metadata.get("user_id")
         if not user_id:
@@ -24,7 +47,7 @@ class WebhookService:
             return {"status": "ignored"}
 
         if metadata.get("purchase_type") == "payg":
-            minutes = int(metadata.get("minutes", 100))
+            minutes = min(int(metadata.get("minutes", 100)), MAX_MINUTES_PER_PURCHASE)
             credit_mgr = CreditManager(db)
             credit_mgr.add_payg_minutes(
                 user_id, minutes,
@@ -45,11 +68,17 @@ class WebhookService:
             )
             logger.info(f"Subscription: {plan_tier} activated for {user_id}")
 
+        WebhookService._mark_processed(db, "stripe", event_id)
+        db.commit()
         return {"status": "ok"}
 
     @staticmethod
-    def handle_stripe_invoice_paid(db: Session, data: dict) -> dict:
+    def handle_stripe_invoice_paid(db: Session, data: dict, event_id: str) -> dict:
         """Handle Stripe invoice.paid event (subscription renewal)."""
+        if WebhookService._is_duplicate(db, "stripe", event_id):
+            logger.info(f"Duplicate Stripe event ignored: {event_id}")
+            return {"status": "duplicate"}
+
         sub_id = data.get("subscription")
         if sub_id:
             sub = db.execute(
@@ -66,11 +95,20 @@ class WebhookService:
                     provider="stripe", provider_ref=data.get("id", ""),
                 )
                 logger.info(f"Renewal: {minutes} minutes for {sub.user_id}")
+
+        WebhookService._mark_processed(db, "stripe", event_id)
+        db.commit()
         return {"status": "ok"}
 
     @staticmethod
-    def handle_stripe_subscription_deleted(db: Session, data: dict) -> dict:
+    def handle_stripe_subscription_deleted(
+        db: Session, data: dict, event_id: str
+    ) -> dict:
         """Handle Stripe customer.subscription.deleted event."""
+        if WebhookService._is_duplicate(db, "stripe", event_id):
+            logger.info(f"Duplicate Stripe event ignored: {event_id}")
+            return {"status": "duplicate"}
+
         sub_id = data.get("id")
         sub = db.execute(
             select(Subscription).where(
@@ -83,13 +121,21 @@ class WebhookService:
             user = db.get(User, sub.user_id)
             if user:
                 user.plan_tier = "free"
-            db.commit()
             logger.info(f"Subscription cancelled for {sub.user_id}")
+
+        WebhookService._mark_processed(db, "stripe", event_id)
+        db.commit()
         return {"status": "ok"}
 
     @staticmethod
-    def handle_razorpay_subscription_charged(db: Session, entity: dict, notes: dict) -> dict:
+    def handle_razorpay_subscription_charged(
+        db: Session, entity: dict, notes: dict, event_id: str
+    ) -> dict:
         """Handle Razorpay subscription.charged event."""
+        if WebhookService._is_duplicate(db, "razorpay", event_id):
+            logger.info(f"Duplicate Razorpay event ignored: {event_id}")
+            return {"status": "duplicate"}
+
         user_id = notes.get("user_id")
         if not user_id:
             return {"status": "ignored"}
@@ -102,16 +148,25 @@ class WebhookService:
             currency="INR",
         )
         logger.info(f"Razorpay subscription charged: {plan_tier} for {user_id}")
+
+        WebhookService._mark_processed(db, "razorpay", event_id)
+        db.commit()
         return {"status": "ok"}
 
     @staticmethod
-    def handle_razorpay_order_paid(db: Session, entity: dict, notes: dict) -> dict:
+    def handle_razorpay_order_paid(
+        db: Session, entity: dict, notes: dict, event_id: str
+    ) -> dict:
         """Handle Razorpay order.paid event."""
+        if WebhookService._is_duplicate(db, "razorpay", event_id):
+            logger.info(f"Duplicate Razorpay event ignored: {event_id}")
+            return {"status": "duplicate"}
+
         user_id = notes.get("user_id")
         if not user_id:
             return {"status": "ignored"}
         if notes.get("purchase_type") == "payg":
-            minutes = int(notes.get("minutes", 100))
+            minutes = min(int(notes.get("minutes", 100)), MAX_MINUTES_PER_PURCHASE)
             credit_mgr = CreditManager(db)
             credit_mgr.add_payg_minutes(
                 user_id, minutes,
@@ -121,11 +176,20 @@ class WebhookService:
                 provider_ref=entity.get("id", ""),
             )
             logger.info(f"Razorpay PAYG: {minutes} minutes for {user_id}")
+
+        WebhookService._mark_processed(db, "razorpay", event_id)
+        db.commit()
         return {"status": "ok"}
 
     @staticmethod
-    def handle_razorpay_subscription_cancelled(db: Session, entity: dict, notes: dict) -> dict:
+    def handle_razorpay_subscription_cancelled(
+        db: Session, entity: dict, notes: dict, event_id: str
+    ) -> dict:
         """Handle Razorpay subscription.cancelled event."""
+        if WebhookService._is_duplicate(db, "razorpay", event_id):
+            logger.info(f"Duplicate Razorpay event ignored: {event_id}")
+            return {"status": "duplicate"}
+
         user_id = notes.get("user_id")
         if not user_id:
             return {"status": "ignored"}
@@ -141,6 +205,8 @@ class WebhookService:
             user = db.get(User, sub.user_id)
             if user:
                 user.plan_tier = "free"
-            db.commit()
             logger.info(f"Razorpay subscription cancelled for {user_id}")
+
+        WebhookService._mark_processed(db, "razorpay", event_id)
+        db.commit()
         return {"status": "ok"}

@@ -2,5 +2,10 @@ name = "hookcut-transcript"
 main = "worker.js"
 compatibility_date = "2024-09-25"
 
+# Route worker through custom domain — prevents discovery via .workers.dev URL
+[[routes]]
+pattern = "transcript-worker.hookcut.nyxpath.com/*"
+zone_name = "hookcut.nyxpath.com"
+
 # Secrets (set via: wrangler secret put API_KEY)
 # API_KEY — optional Bearer token for auth

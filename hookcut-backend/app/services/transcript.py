@@ -5,6 +5,7 @@ import re
 import shutil
 import tempfile
 import logging
+import time
 import http.cookiejar
 from dataclasses import dataclass
 from typing import Optional
@@ -44,6 +45,41 @@ PIPED_INSTANCES = [
     "https://pipedapi.adminforge.de",
 ]
 
+# ─── Instance health-check cache (MED-06) ───
+_HEALTH_CACHE_TTL = 300  # 5 minutes
+
+_invidious_health_cache: dict = {"healthy": [], "updated_at": 0.0}
+_piped_health_cache: dict = {"healthy": [], "updated_at": 0.0}
+
+
+def _get_healthy_instances(instances: list[str], cache: dict, api_path: str) -> list[str]:
+    """Return only instances that responded < 500 on a lightweight probe.
+
+    Results are cached for _HEALTH_CACHE_TTL seconds to avoid adding latency
+    on every transcript fetch. Falls open: if all instances fail the probe,
+    the full list is returned so the caller can still try them.
+    """
+    now = time.time()
+    if now - cache["updated_at"] < _HEALTH_CACHE_TTL and cache["healthy"]:
+        return cache["healthy"]
+
+    healthy = []
+    for inst in instances:
+        try:
+            r = httpx.get(f"{inst}{api_path}", timeout=3.0, follow_redirects=True)
+            if r.status_code < 500:
+                healthy.append(inst)
+        except Exception:
+            pass
+
+    result = healthy if healthy else instances  # fail open
+    cache.update({"healthy": result, "updated_at": now})
+    logger.info(
+        "Instance health-check: %d/%d healthy for %s",
+        len(healthy), len(instances), api_path,
+    )
+    return result
+
 
 class TranscriptService:
     """
@@ -57,7 +93,7 @@ class TranscriptService:
     All fail → None returned, no credits deducted.
     """
 
-    def fetch(self, video_id: str, language: str = "English") -> Optional[TranscriptResult]:
+    def fetch(self, video_id: str, language: str = "English", video_duration_seconds: Optional[float] = None) -> Optional[TranscriptResult]:
         result = self._try_youtube_transcript_api(video_id, language)
         if result:
             logger.info(f"Transcript via youtube-transcript-api for {video_id}")
@@ -85,7 +121,7 @@ class TranscriptService:
 
         from app.config import get_settings
         if get_settings().FEATURE_WHISPER_FALLBACK:
-            result = self._try_whisper_api(video_id, language)
+            result = self._try_whisper_api(video_id, language, video_duration_seconds)
             if result:
                 logger.info(f"Transcript via Whisper API for {video_id}")
                 return result
@@ -270,7 +306,10 @@ class TranscriptService:
     ) -> Optional[TranscriptResult]:
         """Fetch transcript via Invidious captions API — direct VTT endpoint."""
         lang_codes = self._get_lang_codes(language)
-        for instance in INVIDIOUS_INSTANCES:
+        instances = _get_healthy_instances(
+            INVIDIOUS_INSTANCES, _invidious_health_cache, "/api/v1/trending"
+        )
+        for instance in instances:
             try:
                 # List available captions
                 resp = httpx.get(
@@ -339,7 +378,10 @@ class TranscriptService:
     ) -> Optional[TranscriptResult]:
         """Fetch transcript via Piped (public YouTube frontend) — bypasses cloud IP blocks."""
         lang_codes = self._get_lang_codes(language)
-        for instance in PIPED_INSTANCES:
+        instances = _get_healthy_instances(
+            PIPED_INSTANCES, _piped_health_cache, "/trending"
+        )
+        for instance in instances:
             try:
                 # Get stream info which includes subtitle URLs
                 resp = httpx.get(
@@ -423,13 +465,23 @@ class TranscriptService:
         return "\n".join(lines)
 
     def _try_whisper_api(
-        self, video_id: str, language: str
+        self, video_id: str, language: str, video_duration_seconds: Optional[float] = None
     ) -> Optional[TranscriptResult]:
         work_dir = tempfile.mkdtemp(prefix="hookcut_whisper_")
         try:
             from openai import OpenAI
             from app.config import get_settings
             settings = get_settings()
+
+            # Guard: skip Whisper for videos longer than 60 minutes to avoid
+            # downloading massive audio files that will exceed the 25 MB API limit anyway.
+            _MAX_WHISPER_DURATION = 3600  # seconds
+            if video_duration_seconds is not None and video_duration_seconds > _MAX_WHISPER_DURATION:
+                logger.warning(
+                    "Skipping Whisper for %s: duration %.0fs exceeds %ds limit",
+                    video_id, video_duration_seconds, _MAX_WHISPER_DURATION,
+                )
+                return None
 
             url = f"https://www.youtube.com/watch?v={video_id}"
             audio_path = os.path.join(work_dir, "audio.m4a")

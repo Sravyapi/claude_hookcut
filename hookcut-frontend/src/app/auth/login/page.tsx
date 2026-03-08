@@ -6,22 +6,11 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-const TESTIMONIALS = [
-  {
-    quote: "Generated 50 Shorts from one podcast. Insane ROI.",
-    author: "Alex M.",
-    role: "Content Creator",
-  },
-  {
-    quote: "Hook quality is 10x better than manual editing. I'm hooked.",
-    author: "Sarah K.",
-    role: "YouTube Producer",
-  },
-  {
-    quote: "Cut my Short creation time from 2 hours to 10 minutes.",
-    author: "James T.",
-    role: "Indie Creator",
-  },
+const claims = [
+  { text: "No subscription required — pay only for what you use", icon: "💳", label: "Flexible Pricing" },
+  { text: "5 free minutes included with every account", icon: "🎁", label: "Free to Try" },
+  { text: "AI identifies hooks across 18 hook types and 6 funnel roles", icon: "🤖", label: "AI-Powered" },
+  { text: "Generate YouTube Shorts in under 2 minutes", icon: "⚡", label: "Lightning Fast" },
 ];
 
 /* Google's official colored "G" mark */
@@ -58,21 +47,68 @@ const AUTH_ERRORS: Record<string, string> = {
   OAuthCreateAccount: "Could not create account. Contact support.",
   OAuthAccountNotLinked: "This email is already linked to another account.",
   SessionRequired: "You must be signed in to access that page.",
+  CredentialsSignin: "Invalid email or password.",
   Default: "An unexpected error occurred. Please try again.",
 };
 
 export default function LoginPage() {
-  const [testimonialIdx, setTestimonialIdx] = useState(0);
+  const [claimIdx, setClaimIdx] = useState(0);
   const searchParams = useSearchParams();
   const error = searchParams.get("error");
+  const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+
+  // Email/password form state
+  const [authMode, setAuthMode] = useState<"login" | "signup">("login");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     const t = setInterval(
-      () => setTestimonialIdx((i) => (i + 1) % TESTIMONIALS.length),
+      () => setClaimIdx((i) => (i + 1) % claims.length),
       4000
     );
     return () => clearInterval(t);
   }, []);
+
+  function handleModeToggle() {
+    setAuthMode((m) => (m === "login" ? "signup" : "login"));
+    setEmailError("");
+  }
+
+  async function handleEmailSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setEmailError("");
+    setIsSubmitting(true);
+
+    try {
+      const result = await signIn("credentials", {
+        redirect: false,
+        email,
+        password,
+        mode: authMode === "signup" ? "register" : "login",
+        name: authMode === "signup" ? name : "",
+        callbackUrl,
+      });
+
+      if (result?.error) {
+        // NextAuth surfaces CredentialsSignin or the thrown error message
+        const msg =
+          result.error === "CredentialsSignin"
+            ? AUTH_ERRORS.CredentialsSignin
+            : result.error;
+        setEmailError(msg);
+      } else if (result?.ok) {
+        window.location.href = callbackUrl;
+      }
+    } catch {
+      setEmailError("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-16">
@@ -101,7 +137,8 @@ export default function LoginPage() {
           {/* Heading */}
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-white mb-2">
-              Sign in to <span className="text-[#E84A2F]">HookCut</span>
+              {authMode === "login" ? "Sign in to" : "Join"}{" "}
+              <span className="text-[#E84A2F]">HookCut</span>
             </h1>
             <p className="text-white/40 text-sm leading-relaxed">
               Turn YouTube videos into viral Shorts with AI-powered hook
@@ -109,7 +146,7 @@ export default function LoginPage() {
             </p>
           </div>
 
-          {/* Error banner */}
+          {/* Error banner (OAuth / URL errors) */}
           {error && (
             <div className="mb-5 px-4 py-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm text-center">
               {AUTH_ERRORS[error] ?? AUTH_ERRORS.Default}
@@ -119,15 +156,118 @@ export default function LoginPage() {
 
           {/* Google button */}
           <button
-            onClick={() => signIn("google", { callbackUrl: "/" })}
-            className="w-full flex items-center justify-center gap-3 px-5 py-3.5 rounded-xl bg-white text-gray-800 font-semibold text-sm hover:bg-gray-50 transition-colors duration-200 shadow-lg shadow-black/20 mb-5"
+            onClick={() => signIn("google", { callbackUrl })}
+            className="w-full flex items-center justify-center gap-3 px-5 py-3.5 rounded-xl bg-white text-gray-800 font-semibold text-sm hover:bg-gray-50 transition-colors duration-200 shadow-lg shadow-black/20"
           >
             <GoogleIcon className="w-5 h-5" />
             Continue with Google
           </button>
 
+          {/* Divider */}
+          <div className="flex items-center gap-3 my-5">
+            <div className="flex-1 h-px bg-white/10" />
+            <span className="text-xs text-white/25 font-medium">or</span>
+            <div className="flex-1 h-px bg-white/10" />
+          </div>
+
+          {/* Email/password form */}
+          <form onSubmit={handleEmailSubmit} noValidate>
+            {authMode === "signup" && (
+              <div className="mb-3">
+                <label
+                  htmlFor="name"
+                  className="block text-xs text-white/50 mb-1.5 font-medium"
+                >
+                  Full name
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  autoComplete="name"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Your name"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E84A2F]/50 focus:bg-white/8 transition-colors"
+                />
+              </div>
+            )}
+
+            <div className="mb-3">
+              <label
+                htmlFor="email"
+                className="block text-xs text-white/50 mb-1.5 font-medium"
+              >
+                Email address
+              </label>
+              <input
+                id="email"
+                type="email"
+                autoComplete="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="you@example.com"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E84A2F]/50 focus:bg-white/8 transition-colors"
+              />
+            </div>
+
+            <div className="mb-4">
+              <label
+                htmlFor="password"
+                className="block text-xs text-white/50 mb-1.5 font-medium"
+              >
+                Password
+              </label>
+              <input
+                id="password"
+                type="password"
+                autoComplete={authMode === "signup" ? "new-password" : "current-password"}
+                required
+                minLength={authMode === "signup" ? 8 : 1}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder={authMode === "signup" ? "At least 8 characters" : "Your password"}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E84A2F]/50 focus:bg-white/8 transition-colors"
+              />
+            </div>
+
+            {/* Inline error */}
+            {emailError && (
+              <div className="mb-4 px-3.5 py-2.5 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-xs">
+                {emailError}
+              </div>
+            )}
+
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full px-5 py-3 rounded-xl bg-[#E84A2F] text-white font-semibold text-sm hover:bg-[#E84A2F]/90 transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-[#E84A2F]/20"
+            >
+              {isSubmitting
+                ? authMode === "signup"
+                  ? "Creating account..."
+                  : "Signing in..."
+                : authMode === "signup"
+                ? "Create account"
+                : "Sign in"}
+            </button>
+          </form>
+
+          {/* Mode toggle */}
+          <p className="text-center text-xs text-white/30 mt-4">
+            {authMode === "login" ? "Don't have an account?" : "Already have an account?"}{" "}
+            <button
+              type="button"
+              onClick={handleModeToggle}
+              className="text-[#E84A2F]/80 hover:text-[#E84A2F] transition-colors font-medium"
+            >
+              {authMode === "login" ? "Sign up" : "Sign in"}
+            </button>
+          </p>
+
           {/* Trust text */}
-          <div className="flex items-center justify-center gap-2 text-xs text-white/25 mb-6">
+          <div className="flex items-center justify-center gap-2 text-xs text-white/25 mt-5 mb-4">
             <svg
               className="w-3.5 h-3.5"
               fill="none"
@@ -147,13 +287,13 @@ export default function LoginPage() {
           {/* Legal */}
           <p className="text-center text-[11px] text-white/20 leading-relaxed mb-4">
             By signing in, you agree to our{" "}
-            <span className="text-white/35 hover:text-white/50 cursor-pointer transition-colors">
+            <Link href="/terms" className="underline hover:text-white transition-colors">
               Terms of Service
-            </span>{" "}
+            </Link>{" "}
             and{" "}
-            <span className="text-white/35 hover:text-white/50 cursor-pointer transition-colors">
+            <Link href="/privacy" className="underline hover:text-white transition-colors">
               Privacy Policy
-            </span>
+            </Link>
             .
           </p>
 
@@ -167,39 +307,34 @@ export default function LoginPage() {
           </div>
         </div>
 
-        {/* Rotating testimonial */}
+        {/* Rotating product claims */}
         <div className="mt-6 px-4">
           <AnimatePresence mode="wait">
             <motion.div
-              key={testimonialIdx}
+              key={claimIdx}
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ duration: 0.3 }}
               className="text-center"
             >
-              <p className="text-xs text-white/30 italic leading-relaxed mb-2">
-                &ldquo;{TESTIMONIALS[testimonialIdx].quote}&rdquo;
+              <span className="inline-block text-[10px] px-2.5 py-1 rounded-full bg-[#E84A2F]/15 text-[#E84A2F]/80 border border-[#E84A2F]/20 font-medium mb-2">
+                {claims[claimIdx].label}
+              </span>
+              <p className="text-xs text-white/35 leading-relaxed">
+                {claims[claimIdx].icon} {claims[claimIdx].text}
               </p>
-              <div className="flex items-center justify-center gap-1.5">
-                <span className="text-[11px] font-medium text-white/40">
-                  {TESTIMONIALS[testimonialIdx].author}
-                </span>
-                <span className="text-[11px] text-white/20">·</span>
-                <span className="text-[11px] text-white/25">
-                  {TESTIMONIALS[testimonialIdx].role}
-                </span>
-              </div>
             </motion.div>
           </AnimatePresence>
           {/* Dots */}
           <div className="flex items-center justify-center gap-1.5 mt-3">
-            {TESTIMONIALS.map((_, i) => (
+            {claims.map((_, i) => (
               <button
                 key={i}
-                onClick={() => setTestimonialIdx(i)}
+                onClick={() => setClaimIdx(i)}
+                aria-label={`View claim ${i + 1}`}
                 className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
-                  i === testimonialIdx ? "bg-[#E84A2F] w-3" : "bg-white/15"
+                  i === claimIdx ? "bg-[#E84A2F] w-3" : "bg-white/15"
                 }`}
               />
             ))}

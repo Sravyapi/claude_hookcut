@@ -39,6 +39,8 @@ export default function UrlStep({ onAnalyze }: UrlStepProps) {
   const mouseY = useMotionValue(0);
   const orbX = useTransform(mouseX, [-400, 400], [-15, 15]);
   const orbY = useTransform(mouseY, [-400, 400], [-15, 15]);
+  const orb2X = useTransform(orbX, (v) => -v * 0.7);
+  const orb2Y = useTransform(orbY, (v) => -v * 0.7);
 
   useEffect(() => {
     const handleMouse = (e: MouseEvent) => {
@@ -101,7 +103,7 @@ export default function UrlStep({ onAnalyze }: UrlStepProps) {
           className="absolute top-[-10%] left-[10%] w-80 h-80 rounded-full bg-violet-500/[0.05] blur-[100px] float-slow"
         />
         <motion.div
-          style={{ x: useTransform(orbX, (v) => -v * 0.7), y: useTransform(orbY, (v) => -v * 0.7) }}
+          style={{ x: orb2X, y: orb2Y }}
           className="absolute bottom-[-10%] right-[12%] w-72 h-72 rounded-full bg-blue-500/[0.04] blur-[90px] float-slower"
         />
         <div className="absolute top-[40%] right-[5%] w-56 h-56 rounded-full bg-purple-500/[0.03] blur-[70px] float-slow" style={{ animationDelay: "-7s" }} />

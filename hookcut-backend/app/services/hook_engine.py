@@ -14,7 +14,8 @@ from app.exceptions import HookEngineError
 logger = logging.getLogger(__name__)
 
 MAX_RETRIES = 3
-RETRY_DELAYS = [0, 5, 30]  # seconds before each attempt (longer for rate limits)
+RETRY_DELAYS = [0, 2, 2]  # seconds before each attempt — kept short; Celery workers must not block long
+# TODO: Use Celery countdown retry instead of blocking sleep
 
 
 @dataclass

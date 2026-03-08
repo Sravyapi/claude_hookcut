@@ -28,10 +28,23 @@ def _ensure_cookies_file() -> str:
             data = base64.b64decode(b64)
             with open(_COOKIES_PATH, "wb") as f:
                 f.write(data)
+            os.chmod(_COOKIES_PATH, 0o600)
             logger.info("Decoded YOUTUBE_COOKIES_B64 to %s", _COOKIES_PATH)
         except Exception as e:
             logger.warning("Failed to decode YOUTUBE_COOKIES_B64: %s", e)
     return _COOKIES_PATH
+
+
+def _validate_cobalt_url(url: str) -> str:
+    """Validate a URL returned by the Cobalt API to prevent SSRF attacks.
+
+    Raises ValueError if the URL is not a safe HTTPS URL.
+    """
+    from urllib.parse import urlparse
+    parsed = urlparse(url)
+    if parsed.scheme != "https":
+        raise ValueError(f"Cobalt returned non-HTTPS URL: {url!r}")
+    return url
 
 
 def _ytdlp_base_args() -> list[str]:
@@ -267,8 +280,11 @@ def _try_cobalt_segment(
 
         logger.info("Cobalt returned %s URL for %s", status, youtube_url)
 
-        # Step 2: Download full video via httpx streaming
-        with httpx.stream("GET", download_url, timeout=300, follow_redirects=True) as stream:
+        # Validate URL before fetching to prevent SSRF via malicious redirect URLs
+        _validate_cobalt_url(download_url)
+
+        # Step 2: Download full video via httpx streaming (redirects disabled after validation)
+        with httpx.stream("GET", download_url, timeout=300, follow_redirects=False) as stream:
             stream.raise_for_status()
             with open(full_video_path, "wb") as f:
                 for chunk in stream.iter_bytes(chunk_size=65536):

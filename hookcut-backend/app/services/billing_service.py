@@ -5,6 +5,7 @@ Routers call these static methods and convert HookCutError to HTTPException.
 """
 import logging
 from dataclasses import dataclass
+from datetime import datetime
 
 from sqlalchemy.orm import Session
 
@@ -126,30 +127,47 @@ class BillingService:
     def sync_user(db: Session, user_id: str, email: str) -> dict:
         """
         Ensure user exists in backend after NextAuth login.
+        Uses upsert to avoid duplicate user race conditions on concurrent logins.
         Returns dict with user_id, is_new, plan_tier, role.
         """
-        user = db.get(User, user_id)
-        is_new = False
+        from sqlalchemy.dialects.postgresql import insert as pg_insert
 
-        if not user:
-            user = User(id=user_id, email=email, currency="USD")
-            db.add(user)
-            db.flush()
+        # Check if user already exists (to determine is_new)
+        existing = db.get(User, user_id)
+        is_new = existing is None
 
-            balance = CreditBalance(user_id=user_id)
-            db.add(balance)
-            db.commit()
-            is_new = True
+        # Upsert user — idempotent on concurrent logins
+        stmt = pg_insert(User).values(
+            id=user_id,
+            email=email,
+            currency="USD",
+        ).on_conflict_do_update(
+            index_elements=["email"],
+            set_={"updated_at": datetime.utcnow()},
+        )
+        db.execute(stmt)
+        db.flush()
+
+        # Create credit balance only for genuinely new users
+        if is_new:
+            balance_stmt = pg_insert(CreditBalance).values(
+                user_id=user_id,
+            ).on_conflict_do_nothing()
+            db.execute(balance_stmt)
+
+        db.commit()
 
         if is_new:
             identify_user(user_id, {"email": email})
             track_event(user_id, "user_signed_up", {"email": email})
 
+        # Refresh to get current DB state (plan_tier, role, etc.)
+        user = db.get(User, user_id)
         return {
             "user_id": user_id,
             "is_new": is_new,
-            "plan_tier": user.plan_tier,
-            "role": user.role,
+            "plan_tier": user.plan_tier if user else "free",
+            "role": user.role if user else "user",
         }
 
     @staticmethod
@@ -196,6 +214,9 @@ class BillingService:
         settings = get_settings()
         stripe.api_key = settings.STRIPE_SECRET_KEY
 
+        if not settings.STRIPE_WEBHOOK_SECRET:
+            raise InvalidStateError("Stripe webhook secret is not configured")
+
         try:
             event = stripe.Webhook.construct_event(
                 payload, signature, settings.STRIPE_WEBHOOK_SECRET
@@ -206,14 +227,15 @@ class BillingService:
         from app.services.webhook_service import WebhookService
 
         event_type = event["type"]
+        event_id = event["id"]
         data = event["data"]["object"]
 
         if event_type == "checkout.session.completed":
-            return WebhookService.handle_stripe_checkout_completed(db, data)
+            return WebhookService.handle_stripe_checkout_completed(db, data, event_id)
         elif event_type == "invoice.paid":
-            return WebhookService.handle_stripe_invoice_paid(db, data)
+            return WebhookService.handle_stripe_invoice_paid(db, data, event_id)
         elif event_type == "customer.subscription.deleted":
-            return WebhookService.handle_stripe_subscription_deleted(db, data)
+            return WebhookService.handle_stripe_subscription_deleted(db, data, event_id)
 
         return {"status": "ok"}
 
@@ -227,6 +249,9 @@ class BillingService:
         import razorpay
         import json
         settings = get_settings()
+
+        if not settings.RAZORPAY_WEBHOOK_SECRET:
+            raise InvalidStateError("Razorpay webhook secret is not configured")
 
         try:
             client = razorpay.Client(
@@ -245,13 +270,21 @@ class BillingService:
         event_type = body.get("event", "")
         entity = BillingService._extract_razorpay_entity(body)
         notes = entity.get("notes", {})
+        # Razorpay has no global event id; compose one from event type + entity id.
+        razorpay_event_id = f"{event_type}:{entity.get('id', '')}"
 
         if event_type == "subscription.charged":
-            return WebhookService.handle_razorpay_subscription_charged(db, entity, notes)
+            return WebhookService.handle_razorpay_subscription_charged(
+                db, entity, notes, razorpay_event_id
+            )
         elif event_type == "order.paid":
-            return WebhookService.handle_razorpay_order_paid(db, entity, notes)
+            return WebhookService.handle_razorpay_order_paid(
+                db, entity, notes, razorpay_event_id
+            )
         elif event_type == "subscription.cancelled":
-            return WebhookService.handle_razorpay_subscription_cancelled(db, entity, notes)
+            return WebhookService.handle_razorpay_subscription_cancelled(
+                db, entity, notes, razorpay_event_id
+            )
 
         return {"status": "ok"}
 

@@ -20,7 +20,9 @@ def get_engine():
         if settings.DATABASE_URL.startswith("sqlite"):
             connect_args["check_same_thread"] = False
         else:
-            kwargs["pool_size"] = 5
+            kwargs["pool_size"] = 3
+            kwargs["max_overflow"] = 7
+            kwargs["pool_timeout"] = 30
             kwargs["pool_pre_ping"] = True
             connect_args["connect_timeout"] = 10
         _engine = create_engine(

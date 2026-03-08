@@ -7,12 +7,27 @@ All business logic lives in BillingService. This module only:
   3. Returns the response schema
 """
 from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel, EmailStr
 from sqlalchemy.orm import Session
 
 from app.dependencies import get_db, get_current_user_id
 from app.exceptions import HookCutError
 from app.schemas.billing import PlansResponse
 from app.services.billing_service import BillingService
+
+
+class CheckoutRequest(BaseModel):
+    plan_tier: str
+
+
+class PaygRequest(BaseModel):
+    minutes: int = 100
+
+
+class SyncUserRequest(BaseModel):
+    email: EmailStr
+
 
 router = APIRouter()
 
@@ -28,13 +43,13 @@ async def get_plans(
 
 @router.post("/billing/checkout")
 async def create_checkout(
-    plan_tier: str,
+    req: CheckoutRequest,
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
 ):
     """Create a checkout session for subscription purchase."""
     try:
-        result = BillingService.create_checkout(db, user_id, plan_tier)
+        result = BillingService.create_checkout(db, user_id, req.plan_tier)
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)
 
@@ -43,13 +58,13 @@ async def create_checkout(
 
 @router.post("/billing/payg")
 async def purchase_payg(
-    minutes: int = 100,
+    req: PaygRequest,
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
 ):
     """Purchase PAYG minutes."""
     try:
-        result = BillingService.create_payg_checkout(db, user_id, minutes)
+        result = BillingService.create_payg_checkout(db, user_id, req.minutes)
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)
 
@@ -60,28 +75,12 @@ async def purchase_payg(
 
 @router.post("/auth/sync")
 async def sync_user(
-    email: str,
+    req: SyncUserRequest,
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
 ):
     """Ensure user exists in backend after NextAuth login."""
-    return BillingService.sync_user(db, user_id, email)
-
-
-# --- V0-only endpoints for testing ---
-
-@router.post("/billing/v0-grant")
-async def v0_grant_credits(
-    paid_minutes: float = 0,
-    payg_minutes: float = 0,
-    db: Session = Depends(get_db),
-    user_id: str = Depends(get_current_user_id),
-):
-    """V0 only: Grant test credits without payment."""
-    try:
-        return BillingService.v0_grant_credits(db, user_id, paid_minutes, payg_minutes)
-    except HookCutError as e:
-        raise HTTPException(status_code=e.status_code, detail=e.detail)
+    return BillingService.sync_user(db, user_id, str(req.email))
 
 
 # --- Webhook handlers ---
@@ -89,11 +88,21 @@ async def v0_grant_credits(
 @router.post("/webhooks/stripe")
 async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
     """Handle Stripe webhook events."""
-    payload = await request.body()
+    # HIGH-18: Reject immediately if signature header is absent (before reading body)
     sig = request.headers.get("stripe-signature")
+    if not sig:
+        return JSONResponse({"detail": "Missing stripe-signature header"}, status_code=400)
+
+    payload = await request.body()
 
     try:
-        return BillingService.handle_stripe_webhook(db, payload, sig)
+        # HIGH-19: stripe.Webhook.construct_event is a blocking HMAC call — run it
+        # in a thread pool so it does not block the async event loop.
+        import anyio
+        result = await anyio.to_thread.run_sync(
+            lambda: BillingService.handle_stripe_webhook(db, payload, sig)
+        )
+        return result
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)
 
@@ -107,4 +116,10 @@ async def razorpay_webhook(request: Request, db: Session = Depends(get_db)):
     try:
         return BillingService.handle_razorpay_webhook(db, payload, sig)
     except HookCutError as e:
+        # HIGH-32: Return 400 on signature/validation failures rather than propagating as 500
+        if e.status_code in (400, 401, 403):
+            return JSONResponse({"detail": "Invalid signature"}, status_code=400)
         raise HTTPException(status_code=e.status_code, detail=e.detail)
+    except Exception:
+        # HIGH-32: Catch unexpected errors from signature verification and return 400
+        return JSONResponse({"detail": "Invalid signature"}, status_code=400)

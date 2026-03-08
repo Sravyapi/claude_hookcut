@@ -9,6 +9,7 @@ interface ProgressStepProps {
   progress: number;
   videoTitle: string;
   startTime: number;
+  done?: boolean;
 }
 
 // ─── Stage config ─────────────────────────────────────────────────────────────
@@ -114,12 +115,11 @@ interface StageCardProps {
   icon: React.ReactNode;
   isDone: boolean;
   isActive: boolean;
-  isPending: boolean;
   fillRatio: number;
 }
 
 const StageCard = memo(function StageCard({
-  label, icon, isDone, isActive, isPending, fillRatio,
+  label, icon, isDone, isActive, fillRatio,
 }: StageCardProps) {
   return (
     <div
@@ -183,16 +183,19 @@ export const ProgressStep = memo(function ProgressStep({
   progress,
   videoTitle,
   startTime,
+  done = false,
 }: ProgressStepProps) {  // stage prop removed — progress value drives stage derivation internally
   const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {
     if (!startTime) return;
+    if (done) return;
+    if (progress >= 100) return;
     const tick = () => setElapsed(Math.floor((Date.now() - startTime) / 1000));
     tick();
     const timer = setInterval(tick, 1000);
     return () => clearInterval(timer);
-  }, [startTime]);
+  }, [startTime, done, progress]);
 
   const elapsedFormatted = `${Math.floor(elapsed / 60)}:${String(elapsed % 60).padStart(2, "0")}`;
   const activeIdx = getStageIndex(progress);
@@ -259,7 +262,6 @@ export const ProgressStep = memo(function ProgressStep({
               icon={s.icon}
               isDone={isDone}
               isActive={isActive}
-              isPending={i > activeIdx}
               fillRatio={fillRatio}
             />
           );

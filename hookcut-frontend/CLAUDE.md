@@ -57,10 +57,32 @@ Next.js 16, React 19, Tailwind CSS 4, TypeScript 5, shadcn/ui, NextAuth.js (Goog
 - `Hook.scores` should be typed `HookScores` not `Record<string, number>` (MEDIUM)
 - `SHORT_STATUS` duplicated between frontend const and backend model comment
 
+## Aesthetics (apply to all new UI work)
+Commit to a **bold aesthetic direction** before writing any code. HookCut's visual identity:
+- **Dark glass-morphism** — deep navy/slate backgrounds, frosted-glass cards with `backdrop-blur`
+- **Typography** — high-contrast weight pairings (thin display headers + bold labels), never Inter/Roboto/Arial
+- **Color** — electric indigo (`#6366f1`) primary · emerald (`#10b981`) success · rose (`#f43f5e`) error · CSS variables for all tokens
+- **Motion** — staggered reveals on load, subtle hover lifts, scale micro-interactions; always respect `prefers-reduced-motion`
+- **Backgrounds** — layered gradients + subtle noise texture, never flat solid colors
+- Never: Inter/Roboto/Arial, purple-on-white gradients, generic rounded card grids, cookie-cutter AI aesthetics
+
+## Design-to-Ship Pipeline
+```
+/frontend-design <description>       # Generate with bold aesthetic direction
+/baseline-ui <file>                  # Polish spacing, typography, interaction states
+/fixing-accessibility <file>         # Keyboard nav, ARIA, focus management
+/fixing-motion-performance <file>    # reduced-motion support, perf budgets
+```
+
+## Code Formatting
+- Prettier: `.prettierrc` (100 char width, 2 spaces, trailing commas)
+- PostToolUse hook auto-runs Prettier + ESLint on every `.tsx/.ts` edit
+
 ## Build
 ```bash
 # Must use Node 22 (not 25) for Next.js 16
 npm run dev      # development
 npm run build    # production build
 npm run lint     # eslint
+npx prettier --write src/  # format all
 ```

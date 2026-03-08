@@ -1,7 +1,7 @@
 import logging
 from dataclasses import dataclass
 from typing import Optional
-from sqlalchemy import select
+from sqlalchemy import select, update
 from sqlalchemy.orm import Session
 
 from app.models.user import CreditBalance
@@ -55,17 +55,21 @@ class CreditManager:
         If ANY free minutes used, session is watermarked.
         Uses a savepoint to prevent race conditions between balance check and deduction.
         """
-        balance = self._get_or_create_balance(user_id)
-
-        if balance.total_available < minutes:
-            return DeductionResult(
-                success=False, paid_used=0, payg_used=0, free_used=0,
-                is_watermarked=False,
-                error=f"Insufficient minutes. Available: {balance.total_available:.1f}, "
-                      f"needed: {minutes:.1f}",
-            )
+        self._get_or_create_balance(user_id)  # ensure row exists before locking
 
         with self.db.begin_nested():
+            balance = self.db.execute(
+                select(CreditBalance).where(CreditBalance.user_id == user_id).with_for_update()
+            ).scalar_one()
+
+            if balance.total_available < minutes:
+                return DeductionResult(
+                    success=False, paid_used=0, payg_used=0, free_used=0,
+                    is_watermarked=False,
+                    error=f"Insufficient minutes. Available: {balance.total_available:.1f}, "
+                          f"needed: {minutes:.1f}",
+                )
+
             remaining = minutes
             paid_used = 0.0
             payg_used = 0.0
@@ -190,7 +194,25 @@ class CreditManager:
             _log.error(f"refund_and_fail: session {session_id} not found")
             return
 
-        if not session.credits_refunded and session.minutes_charged > 0:
+        if session.minutes_charged > 0:
+            # Atomic check-and-set to prevent double refund from concurrent processes
+            result = self.db.execute(
+                update(AnalysisSession)
+                .where(
+                    AnalysisSession.id == session_id,
+                    AnalysisSession.credits_refunded == False,
+                )
+                .values(credits_refunded=True)
+                .returning(AnalysisSession.id)
+            )
+            self.db.flush()
+            if result.rowcount == 0:
+                # Already refunded by another process — skip credit addition
+                session.status = "failed"
+                session.error_message = error_msg
+                self.db.commit()
+                _log.info(f"Session {session_id} already refunded; skipping duplicate refund")
+                return
             self.refund(
                 user_id=session.user_id,
                 session_id=session.id,
@@ -198,7 +220,6 @@ class CreditManager:
                 payg_minutes=session.payg_minutes_used,
                 free_minutes=session.free_minutes_used,
             )
-            session.credits_refunded = True
 
         session.status = "failed"
         session.error_message = error_msg

@@ -94,7 +94,8 @@ function ProviderCard({
       onRefresh();
     } catch (err) {
       console.warn("Failed to update provider:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to update model configuration: ${detail}` : "Failed to update model configuration.", variant: "destructive" });
     } finally {
       setSaving(false);
     }
@@ -107,7 +108,8 @@ function ProviderCard({
       onRefresh();
     } catch (err) {
       console.warn("Failed to set primary:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to set primary provider: ${detail}` : "Failed to set primary provider.", variant: "destructive" });
     } finally {
       setSettingPrimary(false);
     }
@@ -123,7 +125,8 @@ function ProviderCard({
       onRefresh();
     } catch (err) {
       console.warn("Failed to update API key:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to update API key: ${detail}` : "Failed to update API key.", variant: "destructive" });
     } finally {
       setUpdatingKey(false);
     }
@@ -319,7 +322,8 @@ export default function ModelProviderPage() {
       setProviders(data.providers);
     } catch (err) {
       console.warn("Failed to load providers:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to load model providers: ${detail}` : "Failed to load model providers.", variant: "destructive" });
     } finally {
       setLoading(false);
     }

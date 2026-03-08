@@ -19,6 +19,7 @@ class OpenAIProvider(LLMProvider):
             max_tokens=max_tokens,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
+            timeout=120,
         )
         choice = response.choices[0]
         return LLMResponse(

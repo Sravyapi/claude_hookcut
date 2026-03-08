@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useReducer, useCallback, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { api } from "@/lib/api";
 import type { Hook, Step, VideoMeta, TaskStatus } from "@/lib/types";
@@ -29,21 +29,21 @@ interface PersistedWorkflow {
 
 function saveWorkflow(state: Omit<PersistedWorkflow, "savedAt">) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...state, savedAt: Date.now() }));
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ ...state, savedAt: Date.now() }));
   } catch {}
 }
 
 function clearWorkflow() {
-  try { localStorage.removeItem(STORAGE_KEY); } catch {}
+  try { sessionStorage.removeItem(STORAGE_KEY); } catch {}
 }
 
 function loadWorkflow(): PersistedWorkflow | null {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = sessionStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
     const data = JSON.parse(raw) as PersistedWorkflow;
     if (Date.now() - data.savedAt > STORAGE_TTL_MS) {
-      localStorage.removeItem(STORAGE_KEY);
+      sessionStorage.removeItem(STORAGE_KEY);
       return null;
     }
     return data;
@@ -107,59 +107,191 @@ function ErrorBanner({ error, onDismiss }: { error: string; onDismiss: () => voi
   );
 }
 
+// ── State machine ─────────────────────────────────────────────────────────────
+
+type AppState =
+  | { step: "input"; error: string }
+  | {
+      step: "analyzing";
+      sessionId: string;
+      taskId: string;
+      videoTitle: string;
+      progress: number;
+      stage: string;
+      error: string;
+    }
+  | {
+      step: "hooks";
+      sessionId: string;
+      videoTitle: string;
+      hooks: Hook[];
+      regenerationCount: number;
+      isRegenerating: boolean;
+      analysisElapsed: number;
+      error: string;
+    }
+  | { step: "shorts"; sessionId: string; shortIds: string[]; error: string };
+
+type Action =
+  | { type: "ANALYZE_STARTED"; sessionId: string; taskId: string; videoTitle: string }
+  | { type: "POLL_PROGRESS"; progress: number; stage: string }
+  | { type: "HOOKS_LOADED"; hooks: Hook[]; regenerationCount: number; elapsed: number }
+  | { type: "RESTORE_HOOKS"; sessionId: string; videoTitle: string; hooks: Hook[]; regenerationCount: number }
+  | { type: "RESTORE_SHORTS"; sessionId: string; shortIds: string[] }
+  | { type: "REGENERATE_STARTED"; taskId: string; regenerationCount: number }
+  | { type: "SHORTS_SELECTED"; shortIds: string[] }
+  | { type: "SET_ERROR"; error: string }
+  | { type: "DISMISS_ERROR" }
+  | { type: "RESET" };
+
+const initialState: AppState = { step: "input", error: "" };
+
+function reducer(state: AppState, action: Action): AppState {
+  switch (action.type) {
+    case "ANALYZE_STARTED":
+      return {
+        step: "analyzing",
+        sessionId: action.sessionId,
+        taskId: action.taskId,
+        videoTitle: action.videoTitle,
+        progress: 0,
+        stage: "Submitting analysis...",
+        error: "",
+      };
+
+    case "POLL_PROGRESS":
+      if (state.step !== "analyzing") return state;
+      return { ...state, progress: action.progress, stage: action.stage };
+
+    case "HOOKS_LOADED":
+      if (state.step !== "analyzing") return state;
+      return {
+        step: "hooks",
+        sessionId: state.sessionId,
+        videoTitle: state.videoTitle,
+        hooks: action.hooks,
+        regenerationCount: action.regenerationCount,
+        isRegenerating: false,
+        analysisElapsed: action.elapsed,
+        error: "",
+      };
+
+    case "RESTORE_HOOKS":
+      return {
+        step: "hooks",
+        sessionId: action.sessionId,
+        videoTitle: action.videoTitle,
+        hooks: action.hooks,
+        regenerationCount: action.regenerationCount,
+        isRegenerating: false,
+        analysisElapsed: 0,
+        error: "",
+      };
+
+    case "RESTORE_SHORTS":
+      return {
+        step: "shorts",
+        sessionId: action.sessionId,
+        shortIds: action.shortIds,
+        error: "",
+      };
+
+    case "REGENERATE_STARTED":
+      if (state.step !== "hooks") return state;
+      return {
+        step: "analyzing",
+        sessionId: state.sessionId,
+        taskId: action.taskId,
+        videoTitle: state.videoTitle,
+        progress: 0,
+        stage: "Regenerating hooks...",
+        error: "",
+      };
+
+    case "SHORTS_SELECTED":
+      if (state.step !== "hooks") return state;
+      return {
+        step: "shorts",
+        sessionId: state.sessionId,
+        shortIds: action.shortIds,
+        error: "",
+      };
+
+    case "SET_ERROR":
+      return { ...initialState, error: action.error };
+
+    case "DISMISS_ERROR":
+      return { ...state, error: "" };
+
+    case "RESET":
+      return initialState;
+
+    default:
+      return state;
+  }
+}
+
+// ── Component ─────────────────────────────────────────────────────────────────
+
 interface Props {
   marketingContent: React.ReactNode;
 }
 
 export default function HomeStateMachine({ marketingContent }: Props) {
-  const [step, setStep] = useState<Step>("input");
-  const [sessionId, setSessionId] = useState("");
-  const [taskId, setTaskId] = useState("");
-  const [videoTitle, setVideoTitle] = useState("");
-  const [progress, setProgress] = useState(0);
-  const [stage, setStage] = useState("Starting analysis...");
-  const [hooks, setHooks] = useState<Hook[]>([]);
-  const [regenerationCount, setRegenerationCount] = useState(0);
-  const [shortIds, setShortIds] = useState<string[]>([]);
-  const [error, setError] = useState("");
-  const [isRegenerating, setIsRegenerating] = useState(false);
-  const [analysisElapsed, setAnalysisElapsed] = useState(0);
+  const [state, dispatch] = useReducer(reducer, initialState);
   const analysisStartRef = useRef<number>(0);
 
-  // ── Restore workflow on mount ──────────────────────────────────────────────
+  const taskId = state.step === "analyzing" ? state.taskId : "";
+  const sessionId = "sessionId" in state ? state.sessionId : "";
+
+  // ── Restore workflow on mount ────────────────────────────────────────────────
   useEffect(() => {
     const saved = loadWorkflow();
     if (!saved || saved.step === "input") return;
 
-    setSessionId(saved.sessionId);
-    setVideoTitle(saved.videoTitle);
-
     if (saved.step === "analyzing" && saved.taskId) {
-      setTaskId(saved.taskId);
-      setStep("analyzing");
+      dispatch({
+        type: "ANALYZE_STARTED",
+        sessionId: saved.sessionId,
+        taskId: saved.taskId,
+        videoTitle: saved.videoTitle,
+      });
     } else if (saved.step === "hooks") {
       api.getHooks(saved.sessionId)
         .then((data) => {
-          setHooks(data.hooks);
-          setRegenerationCount(data.regeneration_count);
-          setStep("hooks");
+          dispatch({
+            type: "RESTORE_HOOKS",
+            sessionId: saved.sessionId,
+            videoTitle: saved.videoTitle,
+            hooks: data.hooks,
+            regenerationCount: data.regeneration_count,
+          });
         })
         .catch(() => clearWorkflow());
     } else if (saved.step === "shorts" && saved.shortIds.length > 0) {
-      setShortIds(saved.shortIds);
-      setStep("shorts");
+      dispatch({
+        type: "RESTORE_SHORTS",
+        sessionId: saved.sessionId,
+        shortIds: saved.shortIds,
+      });
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // ── Persist workflow on every step/session change ──────────────────────────
+  // ── Persist workflow on every step/session change ────────────────────────────
   useEffect(() => {
-    if (step === "input") {
+    if (state.step === "input") {
       clearWorkflow();
       return;
     }
-    saveWorkflow({ step, sessionId, taskId, videoTitle, shortIds });
-  }, [step, sessionId, taskId, videoTitle, shortIds]);
+    saveWorkflow({
+      step: state.step,
+      sessionId: "sessionId" in state ? state.sessionId : "",
+      taskId: state.step === "analyzing" ? state.taskId : "",
+      videoTitle: "videoTitle" in state ? state.videoTitle : "",
+      shortIds: state.step === "shorts" ? state.shortIds : [],
+    });
+  }, [state]);
 
   const handlePollComplete = useCallback(
     async (status: TaskStatus) => {
@@ -169,35 +301,33 @@ export default function HomeStateMachine({ marketingContent }: Props) {
           typeof result.error === "string"
             ? result.error
             : extractErrorMessage(result.error as unknown, "Analysis failed. Please try again.");
-        setError(msg);
-        setStep("input");
+        dispatch({ type: "SET_ERROR", error: msg });
         return;
       }
       try {
         const hooksData = await api.getHooks(sessionId);
-        setHooks(hooksData.hooks);
-        setRegenerationCount(hooksData.regeneration_count);
-        if (analysisStartRef.current) {
-          setAnalysisElapsed(Math.round((Date.now() - analysisStartRef.current) / 1000));
-        }
-        setStep("hooks");
+        dispatch({
+          type: "HOOKS_LOADED",
+          hooks: hooksData.hooks,
+          regenerationCount: hooksData.regeneration_count,
+          elapsed: analysisStartRef.current
+            ? Math.round((Date.now() - analysisStartRef.current) / 1000)
+            : 0,
+        });
       } catch (err) {
         console.warn("Failed to load hooks:", err);
-        setError("Failed to load hooks. Please try again.");
-        setStep("input");
+        dispatch({ type: "SET_ERROR", error: "Failed to load hooks. Please try again." });
       }
     },
     [sessionId]
   );
 
   const handlePollError = useCallback((error: string) => {
-    setError(error);
-    setStep("input");
+    dispatch({ type: "SET_ERROR", error });
   }, []);
 
   const handlePollProgress = useCallback((progress: number, stage: string) => {
-    setProgress(progress);
-    setStage(stage);
+    dispatch({ type: "POLL_PROGRESS", progress, stage });
   }, []);
 
   const { stopPolling } = usePollTask(
@@ -211,58 +341,49 @@ export default function HomeStateMachine({ marketingContent }: Props) {
   const resetAll = useCallback(() => {
     stopPolling();
     clearWorkflow();
-    setStep("input");
-    setSessionId("");
-    setTaskId("");
-    setVideoTitle("");
-    setProgress(0);
-    setStage("Starting analysis...");
-    setHooks([]);
-    setRegenerationCount(0);
-    setShortIds([]);
-    setError("");
-    setIsRegenerating(false);
-    setAnalysisElapsed(0);
     analysisStartRef.current = 0;
+    dispatch({ type: "RESET" });
   }, [stopPolling]);
 
   const handleAnalyze = useCallback(
     async (url: string, niche: string, language: string, meta: VideoMeta) => {
-      setError("");
-      setVideoTitle(meta.title);
-      setProgress(0);
-      setStage("Submitting analysis...");
-      setStep("analyzing");
+      dispatch({ type: "DISMISS_ERROR" });
       analysisStartRef.current = Date.now();
       try {
         const result = await api.analyze(url, niche, language);
-        setSessionId(result.session_id);
-        setTaskId(result.task_id);
+        dispatch({
+          type: "ANALYZE_STARTED",
+          sessionId: result.session_id,
+          taskId: result.task_id,
+          videoTitle: meta.title,
+        });
       } catch (err) {
-        setError(extractErrorMessage(err, "Failed to start analysis. Please try again."));
-        setStep("input");
+        dispatch({
+          type: "SET_ERROR",
+          error: extractErrorMessage(err, "Failed to start analysis. Please try again."),
+        });
       }
     },
     []
   );
 
   const handleRegenerate = useCallback(async () => {
-    if (!sessionId) return;
-    setIsRegenerating(true);
+    if (!sessionId || state.step !== "hooks") return;
     try {
       const result = await api.regenerateHooks(sessionId);
-      setRegenerationCount(result.regeneration_count);
-      setProgress(0);
-      setStage("Regenerating hooks...");
-      setStep("analyzing");
       analysisStartRef.current = Date.now();
-      setTaskId(result.task_id);
+      dispatch({
+        type: "REGENERATE_STARTED",
+        taskId: result.task_id,
+        regenerationCount: result.regeneration_count,
+      });
     } catch (err) {
-      setError(extractErrorMessage(err, "Regeneration failed. Please try again."));
-    } finally {
-      setIsRegenerating(false);
+      dispatch({
+        type: "SET_ERROR",
+        error: extractErrorMessage(err, "Regeneration failed. Please try again."),
+      });
     }
-  }, [sessionId]);
+  }, [sessionId, state.step]);
 
   const handleSelectHooks = useCallback(
     async (
@@ -273,22 +394,26 @@ export default function HomeStateMachine({ marketingContent }: Props) {
       if (!sessionId) return;
       try {
         const result = await api.selectHooks(sessionId, hookIds, captionStyle, timeOverrides);
-        setShortIds(result.short_ids);
-        setStep("shorts");
+        dispatch({ type: "SHORTS_SELECTED", shortIds: result.short_ids });
       } catch (err) {
-        setError(extractErrorMessage(err, "Failed to start short generation. Please try again."));
+        dispatch({
+          type: "SET_ERROR",
+          error: extractErrorMessage(err, "Failed to start short generation. Please try again."),
+        });
       }
     },
     [sessionId]
   );
 
+  const error = state.error;
+
   // ── Marketing / input step ───────────────────────────────────────────────────
 
-  if (step === "input") {
+  if (state.step === "input") {
     return (
       <AnalyzeContext.Provider value={handleAnalyze}>
         <Header />
-        <ErrorBanner error={error} onDismiss={() => setError("")} />
+        <ErrorBanner error={error} onDismiss={() => dispatch({ type: "DISMISS_ERROR" })} />
         {marketingContent}
       </AnalyzeContext.Provider>
     );
@@ -299,11 +424,11 @@ export default function HomeStateMachine({ marketingContent }: Props) {
   return (
     <>
       <Header onReset={resetAll} />
-      <ErrorBanner error={error} onDismiss={() => setError("")} />
+      <ErrorBanner error={error} onDismiss={() => dispatch({ type: "DISMISS_ERROR" })} />
 
       <main id="main-content" className="pt-24 pb-12 px-6">
         <AnimatePresence mode="wait">
-          {step === "analyzing" && (
+          {state.step === "analyzing" && (
             <motion.div
               key="analyzing"
               variants={slideRight}
@@ -312,14 +437,14 @@ export default function HomeStateMachine({ marketingContent }: Props) {
               exit="exit"
             >
               <ProgressStep
-                progress={progress}
-                videoTitle={videoTitle}
+                progress={state.progress}
+                videoTitle={state.videoTitle}
                 startTime={analysisStartRef.current}
               />
             </motion.div>
           )}
 
-          {step === "hooks" && (
+          {state.step === "hooks" && (
             <motion.div
               key="hooks"
               variants={slideRight}
@@ -328,18 +453,18 @@ export default function HomeStateMachine({ marketingContent }: Props) {
               exit="exit"
             >
               <HooksStep
-                hooks={hooks}
-                videoTitle={videoTitle}
-                regenerationCount={regenerationCount}
+                hooks={state.hooks}
+                videoTitle={state.videoTitle}
+                regenerationCount={state.regenerationCount}
                 onSelectHooks={handleSelectHooks}
                 onRegenerate={handleRegenerate}
-                isRegenerating={isRegenerating}
-                analysisElapsed={analysisElapsed}
+                isRegenerating={state.isRegenerating}
+                analysisElapsed={state.analysisElapsed}
               />
             </motion.div>
           )}
 
-          {step === "shorts" && (
+          {state.step === "shorts" && (
             <motion.div
               key="shorts"
               variants={slideRight}
@@ -347,7 +472,7 @@ export default function HomeStateMachine({ marketingContent }: Props) {
               animate="show"
               exit="exit"
             >
-              <ShortsStep shortIds={shortIds} onReset={resetAll} />
+              <ShortsStep shortIds={state.shortIds} onReset={resetAll} />
             </motion.div>
           )}
         </AnimatePresence>

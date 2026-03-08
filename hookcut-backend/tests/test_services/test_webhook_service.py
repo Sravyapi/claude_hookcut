@@ -47,7 +47,7 @@ class TestStripeCheckoutCompleted:
         }
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            result = WebhookService.handle_stripe_checkout_completed(db, data)
+            result = WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
         assert result == {"status": "ok"}
         MockCM.assert_called_once_with(db)
@@ -73,7 +73,7 @@ class TestStripeCheckoutCompleted:
         }
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            WebhookService.handle_stripe_checkout_completed(db, data)
+            WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
         mock_instance.add_payg_minutes.assert_called_once_with(
             "wh-sc2", 100,
@@ -96,7 +96,7 @@ class TestStripeCheckoutCompleted:
         }
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
             mock_instance = MockSS.return_value
-            result = WebhookService.handle_stripe_checkout_completed(db, data)
+            result = WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
         assert result == {"status": "ok"}
         MockSS.assert_called_once_with(db)
@@ -120,7 +120,7 @@ class TestStripeCheckoutCompleted:
         }
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
             mock_instance = MockSS.return_value
-            WebhookService.handle_stripe_checkout_completed(db, data)
+            WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
         mock_instance.activate_subscription.assert_called_once()
         call_kwargs = mock_instance.activate_subscription.call_args[1]
@@ -139,7 +139,7 @@ class TestStripeCheckoutCompleted:
         }
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
             mock_instance = MockSS.return_value
-            WebhookService.handle_stripe_checkout_completed(db, data)
+            WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
         call_kwargs = mock_instance.activate_subscription.call_args[1]
         assert call_kwargs["subscription_id"] == "cs_fallback_id"
@@ -149,12 +149,12 @@ class TestStripeCheckoutCompleted:
             "id": "cs_no_user",
             "metadata": {},
         }
-        result = WebhookService.handle_stripe_checkout_completed(db, data)
+        result = WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
         assert result == {"status": "ignored"}
 
     def test_empty_metadata_returns_ignored(self, db):
         data = {"id": "cs_empty"}
-        result = WebhookService.handle_stripe_checkout_completed(db, data)
+        result = WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
         assert result == {"status": "ignored"}
 
     def test_currency_uppercased(self, db):
@@ -171,7 +171,7 @@ class TestStripeCheckoutCompleted:
         }
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            WebhookService.handle_stripe_checkout_completed(db, data)
+            WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
         call_kwargs = mock_instance.add_payg_minutes.call_args[1]
         assert call_kwargs["currency"] == "EUR"
@@ -191,7 +191,7 @@ class TestStripeInvoicePaid:
         }
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            result = WebhookService.handle_stripe_invoice_paid(db, data)
+            result = WebhookService.handle_stripe_invoice_paid(db, data, "evt_test")
 
         assert result == {"status": "ok"}
         mock_instance.add_paid_minutes.assert_called_once_with(
@@ -211,7 +211,7 @@ class TestStripeInvoicePaid:
         }
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            WebhookService.handle_stripe_invoice_paid(db, data)
+            WebhookService.handle_stripe_invoice_paid(db, data, "evt_test")
 
         mock_instance.add_paid_minutes.assert_called_once_with(
             "wh-ip2", 100,  # lite = 100 minutes
@@ -221,7 +221,7 @@ class TestStripeInvoicePaid:
 
     def test_no_subscription_id_returns_ok(self, db):
         data = {"id": "inv_no_sub"}
-        result = WebhookService.handle_stripe_invoice_paid(db, data)
+        result = WebhookService.handle_stripe_invoice_paid(db, data, "evt_test")
         assert result == {"status": "ok"}
 
     def test_unknown_subscription_id_returns_ok(self, db):
@@ -229,7 +229,7 @@ class TestStripeInvoicePaid:
             "id": "inv_unknown",
             "subscription": "sub_nonexistent",
         }
-        result = WebhookService.handle_stripe_invoice_paid(db, data)
+        result = WebhookService.handle_stripe_invoice_paid(db, data, "evt_test")
         assert result == {"status": "ok"}
 
     def test_cancelled_subscription_not_renewed(self, db):
@@ -244,7 +244,7 @@ class TestStripeInvoicePaid:
         }
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            result = WebhookService.handle_stripe_invoice_paid(db, data)
+            result = WebhookService.handle_stripe_invoice_paid(db, data, "evt_test")
 
         # Subscription is cancelled -> query filters for "stripe" provider only,
         # but the status isn't filtered in the invoice handler, so it WILL match.
@@ -264,7 +264,7 @@ class TestStripeInvoicePaid:
         }
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            WebhookService.handle_stripe_invoice_paid(db, data)
+            WebhookService.handle_stripe_invoice_paid(db, data, "evt_test")
 
         mock_instance.add_paid_minutes.assert_not_called()
 
@@ -278,7 +278,7 @@ class TestStripeSubscriptionDeleted:
                                  plan_tier="pro")
 
         data = {"id": "sub_del_1"}
-        result = WebhookService.handle_stripe_subscription_deleted(db, data)
+        result = WebhookService.handle_stripe_subscription_deleted(db, data, "evt_test")
 
         assert result == {"status": "ok"}
         db.refresh(sub)
@@ -289,7 +289,7 @@ class TestStripeSubscriptionDeleted:
 
     def test_unknown_subscription_returns_ok(self, db):
         data = {"id": "sub_nonexistent"}
-        result = WebhookService.handle_stripe_subscription_deleted(db, data)
+        result = WebhookService.handle_stripe_subscription_deleted(db, data, "evt_test")
         assert result == {"status": "ok"}
 
     def test_wrong_provider_not_matched(self, db):
@@ -298,7 +298,7 @@ class TestStripeSubscriptionDeleted:
         sub = _make_subscription(db, "wh-sd2", provider="razorpay", sub_id="sub_rz_del")
 
         data = {"id": "sub_rz_del"}
-        WebhookService.handle_stripe_subscription_deleted(db, data)
+        WebhookService.handle_stripe_subscription_deleted(db, data, "evt_test")
 
         db.refresh(sub)
         assert sub.status == "active"  # unchanged
@@ -314,7 +314,7 @@ class TestStripeSubscriptionDeleted:
         # The query filters by provider + provider_subscription_id but NOT status,
         # so this will still match and set status to "cancelled" again.
         data = {"id": "sub_idem"}
-        result = WebhookService.handle_stripe_subscription_deleted(db, data)
+        result = WebhookService.handle_stripe_subscription_deleted(db, data, "evt_test")
         assert result == {"status": "ok"}
 
         db.refresh(sub)
@@ -332,7 +332,7 @@ class TestRazorpaySubscriptionCharged:
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
             mock_instance = MockSS.return_value
             result = WebhookService.handle_razorpay_subscription_charged(
-                db, entity, notes
+                db, entity, notes, "evt_test"
             )
 
         assert result == {"status": "ok"}
@@ -352,7 +352,7 @@ class TestRazorpaySubscriptionCharged:
 
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
             mock_instance = MockSS.return_value
-            WebhookService.handle_razorpay_subscription_charged(db, entity, notes)
+            WebhookService.handle_razorpay_subscription_charged(db, entity, notes, "evt_test")
 
         call_kwargs = mock_instance.activate_subscription.call_args[1]
         assert call_kwargs["plan_tier"] == "lite"
@@ -361,7 +361,7 @@ class TestRazorpaySubscriptionCharged:
         entity = {"id": "rz_sub_no_user"}
         notes = {}
         result = WebhookService.handle_razorpay_subscription_charged(
-            db, entity, notes
+            db, entity, notes, "evt_test"
         )
         assert result == {"status": "ignored"}
 
@@ -372,7 +372,7 @@ class TestRazorpaySubscriptionCharged:
 
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
             mock_instance = MockSS.return_value
-            WebhookService.handle_razorpay_subscription_charged(db, entity, notes)
+            WebhookService.handle_razorpay_subscription_charged(db, entity, notes, "evt_test")
 
         call_kwargs = mock_instance.activate_subscription.call_args[1]
         assert call_kwargs["currency"] == "INR"
@@ -384,7 +384,7 @@ class TestRazorpaySubscriptionCharged:
 
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
             mock_instance = MockSS.return_value
-            WebhookService.handle_razorpay_subscription_charged(db, entity, notes)
+            WebhookService.handle_razorpay_subscription_charged(db, entity, notes, "evt_test")
 
         call_kwargs = mock_instance.activate_subscription.call_args[1]
         assert call_kwargs["subscription_id"] == ""
@@ -404,7 +404,7 @@ class TestRazorpayOrderPaid:
 
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            result = WebhookService.handle_razorpay_order_paid(db, entity, notes)
+            result = WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_test")
 
         assert result == {"status": "ok"}
         MockCM.assert_called_once_with(db)
@@ -427,7 +427,7 @@ class TestRazorpayOrderPaid:
 
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            WebhookService.handle_razorpay_order_paid(db, entity, notes)
+            WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_test")
 
         mock_instance.add_payg_minutes.assert_called_once_with(
             "wh-ro2", 100,
@@ -448,7 +448,7 @@ class TestRazorpayOrderPaid:
 
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            result = WebhookService.handle_razorpay_order_paid(db, entity, notes)
+            result = WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_test")
 
         assert result == {"status": "ok"}
         mock_instance.add_payg_minutes.assert_not_called()
@@ -456,7 +456,7 @@ class TestRazorpayOrderPaid:
     def test_missing_user_id_returns_ignored(self, db):
         entity = {"id": "order_no_user"}
         notes = {"purchase_type": "payg"}
-        result = WebhookService.handle_razorpay_order_paid(db, entity, notes)
+        result = WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_test")
         assert result == {"status": "ignored"}
 
     def test_always_uses_inr_currency(self, db):
@@ -470,7 +470,7 @@ class TestRazorpayOrderPaid:
 
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            WebhookService.handle_razorpay_order_paid(db, entity, notes)
+            WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_test")
 
         call_kwargs = mock_instance.add_payg_minutes.call_args[1]
         assert call_kwargs["currency"] == "INR"
@@ -486,7 +486,7 @@ class TestRazorpayOrderPaid:
 
         with patch("app.services.webhook_service.CreditManager") as MockCM:
             mock_instance = MockCM.return_value
-            WebhookService.handle_razorpay_order_paid(db, entity, notes)
+            WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_test")
 
         call_kwargs = mock_instance.add_payg_minutes.call_args[1]
         assert call_kwargs["amount"] == 0
@@ -503,7 +503,7 @@ class TestRazorpaySubscriptionCancelled:
         entity = {"id": "rz_sub_del"}
         notes = {"user_id": "wh-rxc1"}
         result = WebhookService.handle_razorpay_subscription_cancelled(
-            db, entity, notes
+            db, entity, notes, "evt_test"
         )
 
         assert result == {"status": "ok"}
@@ -517,7 +517,7 @@ class TestRazorpaySubscriptionCancelled:
         entity = {"id": "rz_no_user"}
         notes = {}
         result = WebhookService.handle_razorpay_subscription_cancelled(
-            db, entity, notes
+            db, entity, notes, "evt_test"
         )
         assert result == {"status": "ignored"}
 
@@ -526,7 +526,7 @@ class TestRazorpaySubscriptionCancelled:
         entity = {"id": "rz_no_sub"}
         notes = {"user_id": "wh-rxc2"}
         result = WebhookService.handle_razorpay_subscription_cancelled(
-            db, entity, notes
+            db, entity, notes, "evt_test"
         )
         assert result == {"status": "ok"}
 
@@ -539,7 +539,7 @@ class TestRazorpaySubscriptionCancelled:
         entity = {"id": "rz_already_can"}
         notes = {"user_id": "wh-rxc3"}
         result = WebhookService.handle_razorpay_subscription_cancelled(
-            db, entity, notes
+            db, entity, notes, "evt_test"
         )
 
         assert result == {"status": "ok"}
@@ -555,7 +555,7 @@ class TestRazorpaySubscriptionCancelled:
 
         entity = {"id": "sub_stripe_only"}
         notes = {"user_id": "wh-rxc4"}
-        WebhookService.handle_razorpay_subscription_cancelled(db, entity, notes)
+        WebhookService.handle_razorpay_subscription_cancelled(db, entity, notes, "evt_test")
 
         db.refresh(sub)
         assert sub.status == "active"  # unchanged
@@ -574,7 +574,7 @@ class TestRazorpaySubscriptionCancelled:
         entity = {"id": "rz_multi"}
         notes = {"user_id": "wh-rxc6"}
         result = WebhookService.handle_razorpay_subscription_cancelled(
-            db, entity, notes
+            db, entity, notes, "evt_test"
         )
 
         assert result == {"status": "ok"}

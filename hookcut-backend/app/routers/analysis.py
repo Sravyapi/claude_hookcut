@@ -6,7 +6,7 @@ All business logic lives in AnalyzeService. This module only:
   2. Calls AnalyzeService
   3. Returns the response schema
 """
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from sqlalchemy.orm import Session
 
 from app.dependencies import get_db, get_current_user_id
@@ -22,6 +22,7 @@ from app.schemas.analysis import (
     SelectHooksResponse,
 )
 from app.schemas.hooks import HooksListResponse, HookResponse, HookScores
+from app.models.session import AnalysisSession
 from app.services.analyze_service import AnalyzeService
 
 router = APIRouter()
@@ -37,6 +38,7 @@ def validate_url(req: VideoValidateRequest):
 
 @router.post("/analyze", response_model=AnalyzeResponse)
 async def start_analysis(
+    request: Request,
     req: AnalyzeRequest,
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
@@ -45,7 +47,7 @@ async def start_analysis(
     Start hook analysis for a YouTube video.
     Credits deducted at this point. Dispatches async Celery task.
     """
-    rate_limiter.check(user_id, "analyze", limit=10, window_seconds=900)
+    rate_limiter.check(user_id, "analyze", limit=10, window_seconds=900, request=request)
 
     try:
         result = AnalyzeService.start_analysis(
@@ -62,7 +64,11 @@ async def start_analysis(
 
 
 @router.get("/sessions/{session_id}/hooks", response_model=HooksListResponse)
-def get_hooks(session_id: str, db: Session = Depends(get_db)):
+def get_hooks(
+    session_id: str,
+    db: Session = Depends(get_db),
+    user_id: str = Depends(get_current_user_id),
+):
     """Get the 5 hooks for a session."""
     try:
         data = AnalyzeService.get_hooks(db=db, session_id=session_id)
@@ -70,6 +76,8 @@ def get_hooks(session_id: str, db: Session = Depends(get_db)):
         raise HTTPException(status_code=e.status_code, detail=e.detail)
 
     session = data["session"]
+    if session.user_id != user_id:
+        raise HTTPException(status_code=404, detail="Session not found")
     hooks = data["hooks"]
 
     return HooksListResponse(
@@ -100,6 +108,7 @@ def get_hooks(session_id: str, db: Session = Depends(get_db)):
 
 @router.post("/sessions/{session_id}/regenerate", response_model=RegenerateResponse)
 def regenerate_hooks(
+    request: Request,
     session_id: str,
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
@@ -108,7 +117,11 @@ def regenerate_hooks(
     Regenerate hooks. 1st free, 2nd+ charged.
     Replaces all previous hooks.
     """
-    rate_limiter.check(user_id, "regenerate", limit=5, window_seconds=900)
+    rate_limiter.check(user_id, "regenerate", limit=5, window_seconds=900, request=request)
+
+    session = db.get(AnalysisSession, session_id)
+    if not session or session.user_id != user_id:
+        raise HTTPException(status_code=404, detail="Session not found")
 
     try:
         result = AnalyzeService.regenerate_hooks(db=db, session_id=session_id)
@@ -120,13 +133,18 @@ def regenerate_hooks(
 
 @router.post("/sessions/{session_id}/select-hooks", response_model=SelectHooksResponse)
 def select_hooks(
+    request: Request,
     session_id: str,
     req: SelectHooksRequest,
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
 ):
     """Select 1-3 hooks to generate Shorts from."""
-    rate_limiter.check(user_id, "select_hooks", limit=10, window_seconds=900)
+    rate_limiter.check(user_id, "select_hooks", limit=10, window_seconds=900, request=request)
+
+    session = db.get(AnalysisSession, session_id)
+    if not session or session.user_id != user_id:
+        raise HTTPException(status_code=404, detail="Session not found")
 
     try:
         result = AnalyzeService.select_hooks(

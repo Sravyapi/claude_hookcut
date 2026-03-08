@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime, timezone
 from typing import Optional
-from sqlalchemy import String, Integer, Boolean, DateTime, Text, ForeignKey, JSON
+from sqlalchemy import String, Float, Integer, Boolean, DateTime, Text, ForeignKey, JSON
 from sqlalchemy.orm import Mapped, mapped_column
 from app.models.base import Base
 
@@ -89,8 +89,8 @@ class NarmInsight(Base):
     title: Mapped[str] = mapped_column(String(200))
     content: Mapped[str] = mapped_column(Text)
     data_summary: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
-    confidence: Mapped[str] = mapped_column(String(20), default="medium")
-    # "high", "medium", "low"
+    confidence: Mapped[float] = mapped_column(Float, default=0.5)
+    # 0.0-1.0 (migrated from VARCHAR "high"/"medium"/"low" via migration 010)
     time_range_days: Mapped[int] = mapped_column(Integer, default=30)
     created_at: Mapped[datetime] = mapped_column(
         DateTime, default=lambda: datetime.now(timezone.utc)

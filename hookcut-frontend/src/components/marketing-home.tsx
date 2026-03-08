@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { HeroSection } from "./hero-section";
 import { DEMO_HOOKS } from "@/lib/constants";
@@ -262,42 +264,67 @@ export function MarketingHome() {
               return (
                 <div
                   key={hook.type}
-                  className={`rounded-2xl border border-[#E4E4E7] bg-white p-6 flex flex-col gap-4 shadow-sm ${offsets[i]}`}
+                  className={`rounded-2xl border border-[#E4E4E7] bg-white overflow-hidden flex flex-col gap-0 shadow-sm ${offsets[i]}`}
                 >
-                  <div className="flex items-center gap-4">
-                    <div className="relative w-16 h-16 shrink-0">
-                      <svg
-                        viewBox="0 0 64 64"
-                        className="w-full h-full -rotate-90"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="28"
-                          fill="none"
-                          stroke="#F4F4F5"
-                          strokeWidth="4"
-                        />
-                        <circle
-                          cx="32"
-                          cy="32"
-                          r="28"
-                          fill="none"
-                          stroke={hook.color}
-                          strokeWidth="4"
-                          strokeLinecap="round"
-                          strokeDasharray={circumference}
-                          strokeDashoffset={strokeOffset}
-                        />
-                      </svg>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="font-mono font-bold text-[#111] text-base">
-                          {hook.score}
-                        </span>
-                      </div>
+                  {/* Real YouTube thumbnail */}
+                  <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9" }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`https://img.youtube.com/vi/${hook.videoId}/maxresdefault.jpg`}
+                      alt={hook.text}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const img = e.target as HTMLImageElement;
+                        if (img.src.includes("maxresdefault")) {
+                          img.src = `https://img.youtube.com/vi/${hook.videoId}/hqdefault.jpg`;
+                        } else {
+                          img.style.display = "none";
+                        }
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div
+                      className="absolute bottom-2 left-2 text-[9px] font-mono font-semibold px-1.5 py-0.5 rounded"
+                      style={{ background: `${hook.color}CC`, color: "#fff" }}
+                    >
+                      {hook.timestamp}
                     </div>
-                    <div>
+                  </div>
+
+                  <div className="p-5 flex flex-col gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="relative w-14 h-14 shrink-0">
+                        <svg
+                          viewBox="0 0 64 64"
+                          className="w-full h-full -rotate-90"
+                          aria-hidden="true"
+                        >
+                          <circle
+                            cx="32"
+                            cy="32"
+                            r="28"
+                            fill="none"
+                            stroke="#F4F4F5"
+                            strokeWidth="4"
+                          />
+                          <circle
+                            cx="32"
+                            cy="32"
+                            r="28"
+                            fill="none"
+                            stroke={hook.color}
+                            strokeWidth="4"
+                            strokeLinecap="round"
+                            strokeDasharray={circumference}
+                            strokeDashoffset={strokeOffset}
+                          />
+                        </svg>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="font-mono font-bold text-[#111] text-base">
+                            {hook.score}
+                          </span>
+                        </div>
+                      </div>
                       <span
                         className="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full"
                         style={{
@@ -308,12 +335,9 @@ export function MarketingHome() {
                       >
                         {hook.type}
                       </span>
-                      <p className="text-[11px] text-[#A1A1AA] font-mono mt-2">
-                        {hook.timestamp}
-                      </p>
                     </div>
+                    <p className="text-[13px] text-[#0A0A0A]/60 leading-relaxed">{hook.text}</p>
                   </div>
-                  <p className="text-[13px] text-[#0A0A0A]/60 leading-relaxed">{hook.text}</p>
                 </div>
               );
             })}

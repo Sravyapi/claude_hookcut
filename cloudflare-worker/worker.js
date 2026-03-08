@@ -11,38 +11,54 @@
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
 const CONSENT_COOKIE = "CONSENT=PENDING+987; SOCS=CAESEwgDEgk2NDcwNTI0NjAaAmVuIAEaBgiA_LyaBg";
 
+// Required secrets — set via: wrangler secret put API_KEY / wrangler secret put INNERTUBE_API_KEY
 export default {
   async fetch(request, env) {
+    // Fail fast if required secrets are not configured
+    if (!env.API_KEY) {
+      return new Response(JSON.stringify({ error: "Worker not configured" }), { status: 503, headers: { "Content-Type": "application/json" } });
+    }
+    if (!env.INNERTUBE_API_KEY) {
+      return new Response(JSON.stringify({ error: "Worker not configured" }), { status: 503, headers: { "Content-Type": "application/json" } });
+    }
+
+    const requestOrigin = request.headers.get("Origin");
+    const allowedOrigin = getAllowedOrigin(requestOrigin);
+
     if (request.method === "OPTIONS") {
-      return new Response(null, { status: 204, headers: corsHeaders() });
+      if (!allowedOrigin) return new Response(null, { status: 403 });
+      return new Response(null, { status: 204, headers: corsHeaders(allowedOrigin) });
     }
-    if (env.API_KEY) {
-      const auth = request.headers.get("Authorization") || "";
-      if (auth !== `Bearer ${env.API_KEY}`) {
-        return json({ error: "Unauthorized" }, 401);
-      }
+
+    if (!allowedOrigin) {
+      return new Response(JSON.stringify({ error: "Forbidden" }), { status: 403, headers: { "Content-Type": "application/json" } });
     }
+
+    // Authentication is mandatory — API_KEY must always be deployed
+    const auth = request.headers.get("Authorization") || "";
+    if (auth !== `Bearer ${env.API_KEY}`) {
+      return jsonWithOrigin({ error: "Unauthorized" }, 401, allowedOrigin);
+    }
+
     const url = new URL(request.url);
-    if (url.pathname === "/transcript") return handleTranscript(url);
-    if (url.pathname === "/health") return json({ status: "ok" });
-    return json({ error: "Not found" }, 404);
+    if (url.pathname === "/transcript") return handleTranscript(url, env, allowedOrigin);
+    if (url.pathname === "/health") return jsonWithOrigin({ status: "ok" }, 200, allowedOrigin);
+    return jsonWithOrigin({ error: "Not found" }, 404, allowedOrigin);
   },
 };
 
-const INNERTUBE_API_KEY = "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8";
-
-async function handleTranscript(url) {
+async function handleTranscript(url, env, allowedOrigin) {
   const videoId = url.searchParams.get("v");
   const lang = url.searchParams.get("lang") || "en";
 
   if (!videoId || !/^[a-zA-Z0-9_-]{11}$/.test(videoId)) {
-    return json({ error: "Invalid or missing video ID" }, 400);
+    return jsonWithOrigin({ error: "Invalid or missing video ID" }, 400, allowedOrigin);
   }
 
   try {
     // Stage 1: Get caption tracks via YouTube Player API (Android Client)
     const playerResp = await fetch(
-      `https://www.youtube.com/youtubei/v1/player?key=${INNERTUBE_API_KEY}`,
+      `https://www.youtube.com/youtubei/v1/player?key=${env.INNERTUBE_API_KEY}`,
       {
         method: "POST",
         headers: {
@@ -64,7 +80,12 @@ async function handleTranscript(url) {
     );
 
     if (!playerResp.ok) {
-      return json({ error: `Player API returned ${playerResp.status}` }, 502);
+      // Player API failed — fall back to Innertube get_transcript API
+      const innertubeText = await fetchViaInnertube(videoId, lang);
+      if (innertubeText) {
+        return jsonWithOrigin({ text: innertubeText, language: lang, track_name: "" }, 200, allowedOrigin);
+      }
+      return jsonWithOrigin({ error: `Player API returned ${playerResp.status}` }, 502, allowedOrigin);
     }
 
     const data = await playerResp.json();
@@ -72,13 +93,13 @@ async function handleTranscript(url) {
     // Check playability
     const playStatus = data?.playabilityStatus?.status;
     if (playStatus !== "OK") {
-      return json({ error: `Video unplayable: ${playStatus}` }, 404);
+      return jsonWithOrigin({ error: `Video unplayable: ${playStatus}` }, 404, allowedOrigin);
     }
 
     // Extract caption tracks
     const tracks = data?.captions?.playerCaptionsTracklistRenderer?.captionTracks;
     if (!tracks || tracks.length === 0) {
-      return json({ error: "No captions available" }, 404);
+      return jsonWithOrigin({ error: "No captions available" }, 404, allowedOrigin);
     }
 
     // Find best language match
@@ -92,7 +113,7 @@ async function handleTranscript(url) {
       track = tracks.find(t => t.languageCode.startsWith("en")) || tracks[0];
     }
     if (!track?.baseUrl) {
-      return json({ error: "No usable caption track" }, 404);
+      return jsonWithOrigin({ error: "No usable caption track" }, 404, allowedOrigin);
     }
 
     // Stage 2: Fetch the actual caption content
@@ -101,18 +122,22 @@ async function handleTranscript(url) {
     fetchUrl = fetchUrl.replace("&fmt=srv3", ""); // Remove default formatting if present
     fetchUrl += fetchUrl.includes("?") ? "&fmt=json3" : "?fmt=json3";
 
-    const text = await fetchJson3(fetchUrl);
+    let text = await fetchJson3(fetchUrl);
     if (!text) {
-      return json({ error: "Caption content unavailable / could not fetch" }, 404);
+      // Stage 2 fetch failed — fall back to Innertube get_transcript API
+      text = await fetchViaInnertube(videoId, track.languageCode || lang);
+    }
+    if (!text) {
+      return jsonWithOrigin({ error: "Caption content unavailable / could not fetch" }, 404, allowedOrigin);
     }
 
-    return json({
+    return jsonWithOrigin({
       text,
       language: track.languageCode,
       track_name: track?.name?.runs?.[0]?.text || "",
-    });
+    }, 200, allowedOrigin);
   } catch (err) {
-    return json({ error: `Worker error: ${err.message}` }, 500);
+    return jsonWithOrigin({ error: `Worker error: ${err.message}` }, 500, allowedOrigin);
   }
 }
 
@@ -236,15 +261,20 @@ function expandLangCodes(lang) {
   return mapping[lang] || [lang, "en"];
 }
 
-function json(data, status = 200) {
+function getAllowedOrigin(requestOrigin) {
+  const allowed = ["https://api.hookcut.nyxpath.com", "https://hookcut.nyxpath.com"];
+  return allowed.includes(requestOrigin) ? requestOrigin : null;
+}
+
+function jsonWithOrigin(data, status = 200, allowedOrigin) {
   return new Response(JSON.stringify(data), {
-    status, headers: { "Content-Type": "application/json", ...corsHeaders() },
+    status, headers: { "Content-Type": "application/json", ...corsHeaders(allowedOrigin) },
   });
 }
 
-function corsHeaders() {
+function corsHeaders(allowedOrigin) {
   return {
-    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin": allowedOrigin,
     "Access-Control-Allow-Methods": "GET, OPTIONS",
     "Access-Control-Allow-Headers": "Authorization, Content-Type",
   };

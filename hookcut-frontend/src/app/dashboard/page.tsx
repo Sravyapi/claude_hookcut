@@ -229,6 +229,16 @@ export default function DashboardPage() {
     fetchHistory(page);
   }, [authStatus, page, fetchHistory]);
 
+  const totalPages = history ? Math.ceil(history.total / history.per_page) : 1;
+
+  const filteredSessions = useMemo(
+    () =>
+      (history?.sessions ?? []).filter((s) =>
+        s.video_title.toLowerCase().includes(debouncedSearch.toLowerCase())
+      ),
+    [history, debouncedSearch]
+  );
+
   if (authStatus === "loading") {
     return (
       <main className="pt-24 pb-12">
@@ -241,16 +251,6 @@ export default function DashboardPage() {
   }
 
   if (authStatus === "unauthenticated") return null;
-
-  const totalPages = history ? Math.ceil(history.total / history.per_page) : 1;
-
-  const filteredSessions = useMemo(
-    () =>
-      (history?.sessions ?? []).filter((s) =>
-        s.video_title.toLowerCase().includes(debouncedSearch.toLowerCase())
-      ),
-    [history, debouncedSearch]
-  );
 
   return (
     <main className="pt-24 pb-12">

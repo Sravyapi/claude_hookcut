@@ -19,6 +19,7 @@ services:
       timeout: 5s
       retries: 5
 
+  # DEV ONLY — no auth, no persistence. Never use this config in production.
   redis:
     image: redis:7-alpine
     ports:

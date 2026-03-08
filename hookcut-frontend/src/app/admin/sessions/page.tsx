@@ -228,7 +228,8 @@ export default function AdminSessionsPage() {
       setData(result);
     } catch (err) {
       console.warn("Failed to load sessions:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to load sessions: ${detail}` : "Failed to load sessions.", variant: "destructive" });
     } finally {
       setLoading(false);
     }

@@ -16,8 +16,6 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import { api } from "@/lib/api";
-import type { UserProfile } from "@/lib/types";
 import { Skeleton } from "@/components/ui/skeleton";
 
 /* ─── Sidebar navigation items ─── */
@@ -35,37 +33,21 @@ export default function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { status: authStatus } = useSession();
+  const { data: session, status: authStatus } = useSession();
   const router = useRouter();
   const pathname = usePathname();
-
-  const [profile, setProfile] = useState<UserProfile | null>(null);
-  const [loading, setLoading] = useState(true);
   const [collapsed, setCollapsed] = useState(false);
 
   useEffect(() => {
     if (authStatus === "unauthenticated") {
       router.push("/");
-      return;
+    } else if (authStatus === "authenticated" && !session?.user?.isAdmin) {
+      router.push("/");
     }
-    if (authStatus === "authenticated") {
-      api
-        .getProfile()
-        .then((data) => {
-          setProfile(data);
-          if (data.role !== "admin") {
-            router.push("/");
-          }
-        })
-        .catch(() => {
-          router.push("/");
-        })
-        .finally(() => setLoading(false));
-    }
-  }, [authStatus, router]);
+  }, [authStatus, session, router]);
 
   /* ─── Loading state ─── */
-  if (authStatus === "loading" || loading) {
+  if (authStatus === "loading") {
     return (
       <main className="pt-24 pb-12">
         <div className="max-w-7xl mx-auto px-6 flex gap-6">
@@ -77,7 +59,7 @@ export default function AdminLayout({
   }
 
   /* ─── Gate: not admin ─── */
-  if (!profile || profile.role !== "admin") {
+  if (!session?.user?.isAdmin) {
     return null;
   }
 

@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Literal, Optional
 
 
@@ -177,7 +177,11 @@ class ProviderUpdateRequest(BaseModel):
 
 
 class SetApiKeyRequest(BaseModel):
-    api_key: str
+    api_key: str = Field(
+        min_length=10,
+        max_length=512,
+        pattern=r'^[A-Za-z0-9_\-]+',
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -190,7 +194,7 @@ class NarmInsightResponse(BaseModel):
     insight_type: str
     title: str
     content: str
-    confidence: str
+    confidence: float
     time_range_days: int
     created_at: str
 

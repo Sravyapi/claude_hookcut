@@ -206,7 +206,8 @@ export default function AuditLogPage() {
       setData(result);
     } catch (err) {
       console.warn("Failed to load audit logs:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to load audit logs: ${detail}` : "Failed to load audit logs.", variant: "destructive" });
     } finally {
       setLoading(false);
     }
@@ -236,10 +237,11 @@ export default function AuditLogPage() {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      URL.revokeObjectURL(url);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
     } catch (err) {
       console.warn("Failed to export audit logs:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to export audit logs: ${detail}` : "Failed to export audit logs.", variant: "destructive" });
     } finally {
       setExporting(false);
     }

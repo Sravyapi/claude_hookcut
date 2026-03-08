@@ -18,6 +18,7 @@ class AnthropicProvider(LLMProvider):
             model=self.model,
             max_tokens=max_tokens,
             messages=[{"role": "user", "content": prompt}],
+            timeout=120,
         )
         text = ""
         for block in response.content:

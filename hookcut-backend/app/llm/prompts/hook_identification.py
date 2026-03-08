@@ -17,6 +17,14 @@ def _build_prompt_skeleton(niche: str, transcript: str, language: str, rules_sec
     build_hook_prompt (hardcoded rules) and build_hook_prompt_from_rules
     (dynamic rules) delegate here.
     """
+    MAX_TRANSCRIPT_CHARS = 60_000  # ~15k tokens
+    if len(transcript) > MAX_TRANSCRIPT_CHARS:
+        import logging
+        logging.getLogger(__name__).warning(
+            f"Transcript truncated from {len(transcript)} to {MAX_TRANSCRIPT_CHARS} chars"
+        )
+        transcript = transcript[:MAX_TRANSCRIPT_CHARS] + "\n[TRANSCRIPT TRUNCATED]"
+
     n = NICHES.get(niche, NICHES["Generic"])
     lang = LANGUAGES.get(language, LANGUAGES["English"])
 

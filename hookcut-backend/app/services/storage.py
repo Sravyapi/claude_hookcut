@@ -63,7 +63,8 @@ class StorageService:
                 ExpiresIn=expires_in,
             )
         else:
-            return f"http://127.0.0.1:8000/api/storage/{key}"
+            settings = get_settings()
+            return f"{settings.API_BASE_URL}/api/storage/{key}"
 
     def delete(self, key: str):
         """Delete a file from storage."""

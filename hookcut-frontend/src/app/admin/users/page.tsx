@@ -49,14 +49,18 @@ function ConfirmDialog({
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={onCancel}
+        aria-hidden="true"
       />
       <motion.div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="confirm-dialog-title"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
         className="relative bg-[#0a0a14] border border-white/10 rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl"
       >
-        <h3 className="text-base font-semibold text-white mb-2">{title}</h3>
+        <h3 id="confirm-dialog-title" className="text-base font-semibold text-white mb-2">{title}</h3>
         <p className="text-sm text-white/50 mb-6">{message}</p>
         <div className="flex items-center gap-3 justify-end">
           <button
@@ -100,7 +104,8 @@ export default function AdminUsersPage() {
       setData(result);
     } catch (err) {
       console.warn("Failed to load users:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to load users: ${detail}` : "Failed to load users.", variant: "destructive" });
     } finally {
       setLoading(false);
     }
@@ -129,7 +134,8 @@ export default function AdminUsersPage() {
       await fetchUsers(page);
     } catch (err) {
       console.warn("Failed to update role:", err);
-      toast({ title: "Error", description: "Failed to load data. Please try again.", variant: "destructive" });
+      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
+      toast({ title: "Error", description: detail ? `Failed to update user role: ${detail}` : "Failed to update user role.", variant: "destructive" });
     } finally {
       setUpdatingUserId(null);
       setPendingRoleChange(null);

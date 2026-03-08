@@ -110,7 +110,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasPlayed, setHasPlayed] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const { data } = useShortPoller(shortId, true);
+  const { data, error: pollerError } = useShortPoller(shortId, true);
 
   const togglePlay = () => {
     if (!videoRef.current) return;
@@ -135,6 +135,21 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
       setDownloading(false);
     }
   };
+
+  // Error state (e.g. timeout or network failure)
+  if (pollerError && !data) {
+    return (
+      <div className="glass rounded-2xl overflow-hidden border border-red-500/15">
+        <div className="p-5 flex flex-col items-center text-center gap-3">
+          <svg className="w-8 h-8 text-red-400/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+          </svg>
+          <p className="text-sm text-red-400/80">{pollerError}</p>
+          <p className="text-xs text-white/30">Please contact support if this persists.</p>
+        </div>
+      </div>
+    );
+  }
 
   // Loading skeleton
   if (!data) {

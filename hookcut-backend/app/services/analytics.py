@@ -1,19 +1,24 @@
 import logging
+import threading
 from app.config import get_settings
 
 logger = logging.getLogger(__name__)
 _posthog_client = None
+_posthog_lock = threading.Lock()
 
 
 def _get_client():
     global _posthog_client
     if _posthog_client is None:
-        settings = get_settings()
-        if settings.POSTHOG_API_KEY:
-            import posthog
-            posthog.project_api_key = settings.POSTHOG_API_KEY
-            posthog.host = settings.POSTHOG_HOST
-            _posthog_client = posthog
+        with _posthog_lock:
+            # Re-check inside the lock to prevent double-initialization.
+            if _posthog_client is None:
+                settings = get_settings()
+                if settings.POSTHOG_API_KEY:
+                    import posthog
+                    posthog.project_api_key = settings.POSTHOG_API_KEY
+                    posthog.host = settings.POSTHOG_HOST
+                    _posthog_client = posthog
     return _posthog_client
 
 

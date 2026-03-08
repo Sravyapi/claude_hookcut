@@ -128,6 +128,18 @@ class ShortGenerationError(HookCutError):
     detail = "Short generation failed"
 
 
+# --- Auth Errors ---
+
+class AuthenticationError(HookCutError):
+    status_code = 401
+    detail = "Authentication failed"
+
+
+class ConflictError(HookCutError):
+    status_code = 409
+    detail = "Resource already exists"
+
+
 # --- Storage ---
 
 class StorageError(HookCutError):

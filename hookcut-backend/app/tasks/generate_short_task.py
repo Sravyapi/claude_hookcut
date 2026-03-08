@@ -47,64 +47,68 @@ def generate_short(self, short_id: str):
             db.commit()
             self.update_state(state="PROGRESS", meta={"stage": label, "progress": pct})
 
-        result = generator.generate(
-            youtube_url=session.youtube_url,
-            hook={
-                "start_time": hook.start_time,
-                "end_time": hook.end_time,
-                "start_seconds": start_sec,
-                "end_seconds": end_sec,
-                "hook_text": hook.hook_text,
-                "is_composite": hook.is_composite,
-                "hook_type": hook.hook_type or "",
-                "attention_score": hook.attention_score or 0.0,
-            },
-            session_id=session.id,
-            short_id=short.id,
-            is_watermarked=short.is_watermarked,
-            language=session.language,
-            niche=session.niche,
-            caption_style=short.caption_style or "clean",
-            on_progress=on_progress,
-        )
+        work_dir = None
+        try:
+            result = generator.generate(
+                youtube_url=session.youtube_url,
+                hook={
+                    "start_time": hook.start_time,
+                    "end_time": hook.end_time,
+                    "start_seconds": start_sec,
+                    "end_seconds": end_sec,
+                    "hook_text": hook.hook_text,
+                    "is_composite": hook.is_composite,
+                    "hook_type": hook.hook_type or "",
+                    "attention_score": hook.attention_score or 0.0,
+                },
+                session_id=session.id,
+                short_id=short.id,
+                is_watermarked=short.is_watermarked,
+                language=session.language,
+                niche=session.niche,
+                caption_style=short.caption_style or "clean",
+                on_progress=on_progress,
+            )
 
-        # --- Step 3: Upload ---
-        on_progress("uploading", 85, "Uploading...")
+            work_dir = Path(result.video_path).parent
 
-        video_key = f"shorts/{short.id}/video.mp4"
-        thumb_key = f"shorts/{short.id}/thumbnail.jpg"
+            # --- Step 3: Upload ---
+            on_progress("uploading", 85, "Uploading...")
 
-        # Upload video + thumbnail in parallel
-        has_thumb = result.thumbnail_path and Path(result.thumbnail_path).exists()
-        with ThreadPoolExecutor(max_workers=2) as executor:
-            video_future = executor.submit(storage.upload, result.video_path, video_key)
-            thumb_future = None
-            if has_thumb:
-                thumb_future = executor.submit(
-                    storage.upload, result.thumbnail_path, thumb_key
-                )
-            video_future.result()
-            if thumb_future:
-                thumb_future.result()
+            video_key = f"shorts/{short.id}/video.mp4"
+            thumb_key = f"shorts/{short.id}/thumbnail.jpg"
 
-        download_url = storage.get_download_url(video_key, expires_in=DOWNLOAD_URL_EXPIRES_SECONDS)
+            # Upload video + thumbnail in parallel
+            has_thumb = result.thumbnail_path and Path(result.thumbnail_path).exists()
+            with ThreadPoolExecutor(max_workers=2) as executor:
+                video_future = executor.submit(storage.upload, result.video_path, video_key)
+                thumb_future = None
+                if has_thumb:
+                    thumb_future = executor.submit(
+                        storage.upload, result.thumbnail_path, thumb_key
+                    )
+                video_future.result()
+                if thumb_future:
+                    thumb_future.result()
 
-        # --- Finalize ---
-        short.status = "ready"
-        short.title = result.title
-        short.cleaned_captions = result.cleaned_captions
-        short.video_file_key = video_key
-        short.thumbnail_file_key = thumb_key if has_thumb else None
-        short.duration_seconds = result.duration_seconds
-        short.file_size_bytes = result.file_size_bytes
-        short.download_url = download_url
-        short.download_url_expires_at = datetime.now(timezone.utc) + timedelta(seconds=DOWNLOAD_URL_EXPIRES_SECONDS)
-        short.expires_at = datetime.now(timezone.utc) + timedelta(hours=settings.TEMP_FILE_TTL_HOURS)
-        db.commit()
+            download_url = storage.get_download_url(video_key, expires_in=DOWNLOAD_URL_EXPIRES_SECONDS)
 
-        # Cleanup temp working directory
-        work_dir = Path(result.video_path).parent
-        shutil.rmtree(work_dir, ignore_errors=True)
+            # --- Finalize ---
+            short.status = "ready"
+            short.title = result.title
+            short.cleaned_captions = result.cleaned_captions
+            short.video_file_key = video_key
+            short.thumbnail_file_key = thumb_key if has_thumb else None
+            short.duration_seconds = result.duration_seconds
+            short.file_size_bytes = result.file_size_bytes
+            short.download_url = download_url
+            short.download_url_expires_at = datetime.now(timezone.utc) + timedelta(seconds=DOWNLOAD_URL_EXPIRES_SECONDS)
+            short.expires_at = datetime.now(timezone.utc) + timedelta(hours=settings.TEMP_FILE_TTL_HOURS)
+            db.commit()
+        finally:
+            # Always clean up temp working directory, even on failure
+            if work_dir and work_dir.exists():
+                shutil.rmtree(work_dir, ignore_errors=True)
 
         self.update_state(
             state="PROGRESS",
@@ -138,6 +142,11 @@ def generate_short(self, short_id: str):
         return {"error": user_msg}
     except Exception as e:
         logger.exception(f"Short generation failed for {short_id}: {e}")
+        try:
+            import sentry_sdk
+            sentry_sdk.capture_exception(e)
+        except Exception:
+            pass
         try:
             short = db.get(Short, short_id)
             if short:

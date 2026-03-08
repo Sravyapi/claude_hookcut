@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
 import Header from "@/components/header";
+import { useToast } from "@/components/ui/use-toast";
 
 /* ─── Constants ─── */
 const TIER_ICONS: Record<string, React.ReactNode> = {
@@ -130,6 +131,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 export default function PricingPage() {
   const { status: authStatus } = useSession();
   const router = useRouter();
+  const { toast } = useToast();
 
   const [plans, setPlans] = useState<PlansResponse | null>(null);
   const [loading, setLoading] = useState(true);
@@ -145,7 +147,10 @@ export default function PricingPage() {
     api
       .getPlans()
       .then(setPlans)
-      .catch((err) => console.warn("Failed to load plans:", err))
+      .catch((err) => {
+        console.error("Failed to load plans:", err);
+        toast({ title: "Failed to load plans", description: "Could not fetch pricing information. Please refresh.", variant: "destructive" });
+      })
       .finally(() => setLoading(false));
   }, []);
 
@@ -159,7 +164,8 @@ export default function PricingPage() {
       const result = await api.createCheckout(tier);
       if (result?.checkout_url) window.location.href = result.checkout_url;
     } catch (err) {
-      console.warn("Checkout failed:", err);
+      console.error("Checkout failed:", err);
+      toast({ title: "Checkout failed", description: "Please try again or contact support.", variant: "destructive" });
     } finally {
       setCheckoutLoading(null);
     }
@@ -175,7 +181,8 @@ export default function PricingPage() {
       await api.purchasePayg(paygMinutes);
       router.push("/dashboard");
     } catch (err) {
-      console.warn("PAYG purchase failed:", err);
+      console.error("PAYG purchase failed:", err);
+      toast({ title: "Purchase failed", description: "Please try again or contact support.", variant: "destructive" });
     } finally {
       setPaygLoading(false);
     }

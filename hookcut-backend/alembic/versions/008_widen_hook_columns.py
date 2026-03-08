@@ -20,10 +20,12 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    op.alter_column("hooks", "hook_type", type_=sa.Text(), existing_nullable=False)
-    op.alter_column("hooks", "funnel_role", type_=sa.Text(), existing_nullable=False)
+    with op.batch_alter_table("hooks") as batch_op:
+        batch_op.alter_column("hook_type", type_=sa.Text(), existing_nullable=False)
+        batch_op.alter_column("funnel_role", type_=sa.Text(), existing_nullable=False)
 
 
 def downgrade() -> None:
-    op.alter_column("hooks", "hook_type", type_=sa.String(50), existing_nullable=False)
-    op.alter_column("hooks", "funnel_role", type_=sa.String(30), existing_nullable=False)
+    with op.batch_alter_table("hooks") as batch_op:
+        batch_op.alter_column("hook_type", type_=sa.String(50), existing_nullable=False)
+        batch_op.alter_column("funnel_role", type_=sa.String(30), existing_nullable=False)
