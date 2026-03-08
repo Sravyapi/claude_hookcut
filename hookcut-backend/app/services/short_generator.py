@@ -80,7 +80,7 @@ class ShortGenerator:
             # Step 3: Signal render start
             _progress("processing", 65, "Rendering video...")
 
-            # Step 3: Generate ASS subtitles
+            # Step 4: Generate ASS subtitles
             segment_duration = probe_duration(segment_path) or 30.0
             segment_size = os.path.getsize(segment_path) if os.path.exists(segment_path) else 0
             logger.info(

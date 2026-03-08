@@ -18,6 +18,7 @@ import { api } from "@/lib/api";
 import type { ProviderConfig } from "@/lib/types";
 import { useToast } from "@/components/ui/use-toast";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
+import { extractErrorMessage } from "@/lib/utils";
 
 /* ─── Constants ─── */
 
@@ -94,8 +95,7 @@ function ProviderCard({
       onRefresh();
     } catch (err) {
       console.warn("Failed to update provider:", err);
-      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
-      toast({ title: "Error", description: detail ? `Failed to update model configuration: ${detail}` : "Failed to update model configuration.", variant: "destructive" });
+      toast({ title: "Error", description: `Failed to update model configuration: ${extractErrorMessage(err, "Unknown error")}`, variant: "destructive" });
     } finally {
       setSaving(false);
     }
@@ -108,8 +108,7 @@ function ProviderCard({
       onRefresh();
     } catch (err) {
       console.warn("Failed to set primary:", err);
-      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
-      toast({ title: "Error", description: detail ? `Failed to set primary provider: ${detail}` : "Failed to set primary provider.", variant: "destructive" });
+      toast({ title: "Error", description: `Failed to set primary provider: ${extractErrorMessage(err, "Unknown error")}`, variant: "destructive" });
     } finally {
       setSettingPrimary(false);
     }
@@ -125,8 +124,7 @@ function ProviderCard({
       onRefresh();
     } catch (err) {
       console.warn("Failed to update API key:", err);
-      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
-      toast({ title: "Error", description: detail ? `Failed to update API key: ${detail}` : "Failed to update API key.", variant: "destructive" });
+      toast({ title: "Error", description: `Failed to update API key: ${extractErrorMessage(err, "Unknown error")}`, variant: "destructive" });
     } finally {
       setUpdatingKey(false);
     }
@@ -322,8 +320,7 @@ export default function ModelProviderPage() {
       setProviders(data.providers);
     } catch (err) {
       console.warn("Failed to load providers:", err);
-      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
-      toast({ title: "Error", description: detail ? `Failed to load model providers: ${detail}` : "Failed to load model providers.", variant: "destructive" });
+      toast({ title: "Error", description: `Failed to load model providers: ${extractErrorMessage(err, "Unknown error")}`, variant: "destructive" });
     } finally {
       setLoading(false);
     }

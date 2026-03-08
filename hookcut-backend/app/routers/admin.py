@@ -10,8 +10,9 @@ from app.schemas.admin import (
     PromptPreviewRequest, PromptPreviewResponse,
     ProviderConfigResponse, ProviderListResponse, ProviderUpdateRequest,
     SetApiKeyRequest, NarmAnalyzeRequest, NarmInsightsListResponse,
-    AdminUserResponse,
+    AdminUserResponse, HookEngineModeResponse, HookEngineModeUpdateRequest,
 )
+from app.services.engine_mode import get_engine_mode, set_engine_mode
 
 router = APIRouter(prefix="/admin")
 
@@ -35,8 +36,9 @@ async def list_users(
     db: Session = Depends(get_db),
     page: int = Query(1, ge=1),
     per_page: int = Query(20, ge=1, le=100),
+    search: str | None = Query(None),
 ) -> AdminUserListResponse:
-    return AdminService.list_users(db, page, per_page)
+    return AdminService.list_users(db, page, per_page, search)
 
 
 @router.patch("/users/{user_id}/role")
@@ -234,3 +236,22 @@ async def get_narm_insights(
     db: Session = Depends(get_db),
 ) -> NarmInsightsListResponse:
     return {"insights": AdminService.get_narm_insights(db)}
+
+
+# ── Hook Engine Mode ──────────────────────────────────────────────────────
+
+
+@router.get("/hook-engine-mode")
+async def get_hook_engine_mode_endpoint(
+    admin_user=Depends(get_admin_user),
+) -> HookEngineModeResponse:
+    return HookEngineModeResponse(mode=get_engine_mode())
+
+
+@router.patch("/hook-engine-mode")
+async def set_hook_engine_mode_endpoint(
+    body: HookEngineModeUpdateRequest,
+    admin_user=Depends(get_admin_user),
+) -> HookEngineModeResponse:
+    mode = set_engine_mode(body.mode)
+    return HookEngineModeResponse(mode=mode)

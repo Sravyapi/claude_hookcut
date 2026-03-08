@@ -1,6 +1,7 @@
 import os
 import shutil
 import logging
+from functools import lru_cache
 from pathlib import Path
 from app.config import get_settings
 
@@ -75,3 +76,9 @@ class StorageService:
             if os.path.exists(path):
                 os.remove(path)
                 logger.debug(f"Deleted local file: {path}")
+
+
+@lru_cache(maxsize=1)
+def get_storage_service() -> StorageService:
+    """Return a cached singleton StorageService instance."""
+    return StorageService()

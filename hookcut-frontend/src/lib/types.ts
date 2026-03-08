@@ -112,26 +112,6 @@ export type CaptionStyle = "clean" | "bold" | "neon" | "minimal";
 
 export type Step = "input" | "analyzing" | "hooks" | "shorts";
 
-// ─── Constants ───
-
-export const POLL_CONFIG = {
-  initial: 1000,
-  multiplier: 1.5,
-  max: 5000,
-} as const;
-
-export const DEFAULT_LANGUAGE = "English";
-export const DEFAULT_NICHE = "Generic";
-
-export const SHORT_STATUS = {
-  QUEUED: "queued",
-  DOWNLOADING: "downloading",
-  PROCESSING: "processing",
-  UPLOADING: "uploading",
-  READY: "ready",
-  FAILED: "failed",
-} as const;
-
 // ─── V1 Types ───
 
 export interface UserProfile {
@@ -288,7 +268,7 @@ export interface NarmInsight {
   insight_type: string;
   title: string;
   content: string;
-  confidence: string;
+  confidence: number;
   time_range_days: number;
   created_at: string;
 }

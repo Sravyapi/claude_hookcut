@@ -30,8 +30,6 @@ export const LANGUAGES = [
   { value: "Other",     label: "Other Language" },
 ] as const;
 
-export type Language = typeof LANGUAGES[number]["value"];
-
 export const HOOK_TYPE_COLORS: Record<string, string> = {
   "Curiosity Gap": "bg-purple-500/20 text-purple-300 border-purple-500/30",
   "Direct Benefit": "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
@@ -62,57 +60,22 @@ export const FUNNEL_ROLE_LABELS: Record<string, string> = {
   extended_demo: "Extended Demo",
 };
 
-export const HOOK_TYPE_DESCRIPTIONS: Record<string, string> = {
-  "Curiosity Gap": "Creates an unresolved question the viewer must stay to answer",
-  "Direct Benefit": "Promises a clear, tangible outcome the viewer wants",
-  "Fear-Based": "Triggers loss aversion — what they'll miss or lose",
-  Authority: "Leverages credentials or expertise to build instant trust",
-  Contrarian: "Challenges conventional wisdom to provoke engagement",
-  Counterintuitive: "Presents a surprising claim that defies expectations",
-  "Story-Based": "Opens a narrative arc the viewer needs to see resolved",
-  "Pattern Interrupt": "Breaks the scroll pattern with something unexpected",
-  "High Stakes Warning": "Signals urgent consequences of inaction",
-  "Social Proof": "Uses others' results or popularity to validate the message",
-  Elimination: "Systematically removes expected answers, building suspense",
-  "Objection Handler": "Catches viewers at the moment they'd normally bounce",
-  "Pain Escalation": "Layers frustration to make the solution feel urgent",
-  "Personal Transformation": "Shows a before/after journey viewers aspire to",
-  "Live Proof": "Demonstrates results in real-time for instant credibility",
-  "FOMO Setup": "Creates fear of missing exclusive or time-limited value",
-  "Zero-Second Claim": "Opens with a bold, attention-grabbing statement immediately",
-  "Extended Demo": "Walks through a complete process, building investment step by step",
-};
+export const POLL_CONFIG = {
+  initial: 1000,
+  multiplier: 1.5,
+  max: 5000,
+} as const;
+
+export const SHORT_STATUS = {
+  QUEUED: "queued",
+  DOWNLOADING: "downloading",
+  PROCESSING: "processing",
+  UPLOADING: "uploading",
+  READY: "ready",
+  FAILED: "failed",
+} as const;
 
 export const PAYG_OPTIONS = [100, 200, 500, 1000] as const;
-
-// Shared demo hook data — used by hero-section (animated) and marketing-home (static showcase)
-// Video IDs map to real, high-view-count YouTube videos so thumbnails load reliably.
-export const DEMO_HOOKS = [
-  {
-    score: 9.2,
-    type: "CURIOSITY GAP",
-    timestamp: "0:14",
-    text: "The #1 mistake 90% of YouTubers make in the first 30 seconds",
-    color: "#E84A2F",
-    videoId: "dQw4w9WgXcQ",
-  },
-  {
-    score: 8.5,
-    type: "FEAR-BASED",
-    timestamp: "2:31",
-    text: "I tested 47 different hooks — here's what actually works",
-    color: "#F59E0B",
-    videoId: "9bZkp7q19f0",
-  },
-  {
-    score: 7.8,
-    type: "CONTRARIAN",
-    timestamp: "4:07",
-    text: "Nobody talks about this editing trick that doubled my retention",
-    color: "#10B981",
-    videoId: "kJQP7kiw5Fk",
-  },
-] as const;
 
 export function getStatusConfig(status: string): { label: string; color: string } {
   switch (status) {

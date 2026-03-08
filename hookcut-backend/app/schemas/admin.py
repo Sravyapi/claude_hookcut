@@ -1,3 +1,4 @@
+from datetime import datetime
 from pydantic import BaseModel, Field
 from typing import Literal, Optional
 
@@ -69,9 +70,14 @@ class AdminSessionListResponse(BaseModel):
 
 
 class AdminSessionDetailResponse(AdminSessionSummary):
+    user_id: str
+    youtube_url: str
+    video_duration_seconds: Optional[float] = None
+    language: Optional[str] = None
+    transcript_provider: Optional[str] = None
+    transcript: Optional[str] = None
     hooks: list[dict]
     shorts: list[dict]
-    transcript_text: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------
@@ -88,7 +94,7 @@ class AuditLogResponse(BaseModel):
     description: str
     before_state: Optional[dict] = None
     after_state: Optional[dict] = None
-    created_at: str
+    created_at: datetime
 
     model_config = {"from_attributes": True}
 
@@ -113,7 +119,7 @@ class PromptRuleResponse(BaseModel):
     content: str
     is_base_rule: bool
     is_active: bool
-    created_at: str
+    created_at: datetime
 
     model_config = {"from_attributes": True}
 
@@ -162,7 +168,7 @@ class ProviderConfigResponse(BaseModel):
     model_id: str
     api_key_last4: str
     api_key_set: bool
-    updated_at: str
+    updated_at: datetime
 
     model_config = {"from_attributes": True}
 
@@ -196,7 +202,7 @@ class NarmInsightResponse(BaseModel):
     content: str
     confidence: float
     time_range_days: int
-    created_at: str
+    created_at: datetime
 
     model_config = {"from_attributes": True}
 
@@ -207,3 +213,16 @@ class NarmInsightsListResponse(BaseModel):
 
 class NarmAnalyzeRequest(BaseModel):
     time_range_days: int = 30
+
+
+# ---------------------------------------------------------------------------
+# Hook Engine Mode
+# ---------------------------------------------------------------------------
+
+
+class HookEngineModeResponse(BaseModel):
+    mode: str
+
+
+class HookEngineModeUpdateRequest(BaseModel):
+    mode: Literal["llm_only", "deterministic_only", "llm_with_deterministic_fallback"]

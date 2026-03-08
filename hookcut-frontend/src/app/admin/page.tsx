@@ -37,23 +37,22 @@ function StatCard({
 }
 
 /* ─── Confidence badge ─── */
-function ConfidenceBadge({ confidence }: { confidence: string }) {
-  const c = confidence.toLowerCase();
-  if (c === "high")
+function ConfidenceBadge({ confidence }: { confidence: number }) {
+  if (confidence >= 0.7)
     return (
       <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/25 font-medium">
-        High
+        High ({(confidence * 100).toFixed(0)}%)
       </span>
     );
-  if (c === "medium")
+  if (confidence >= 0.4)
     return (
       <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/25 font-medium">
-        Medium
+        Medium ({(confidence * 100).toFixed(0)}%)
       </span>
     );
   return (
     <span className="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/50 border border-white/10 font-medium">
-      {confidence}
+      Low ({(confidence * 100).toFixed(0)}%)
     </span>
   );
 }
@@ -66,6 +65,8 @@ export default function AdminDashboardPage() {
   const [loading, setLoading] = useState(true);
   const [insightsLoading, setInsightsLoading] = useState(true);
   const [narmRunning, setNarmRunning] = useState(false);
+  const [engineMode, setEngineMode] = useState<string>("llm_only");
+  const [engineModeLoading, setEngineModeLoading] = useState(true);
 
   useEffect(() => {
     api
@@ -77,6 +78,12 @@ export default function AdminDashboardPage() {
         toast({ title: "Error", description: detail ? `Failed to load dashboard statistics: ${detail}` : "Failed to load dashboard statistics.", variant: "destructive" });
       })
       .finally(() => setLoading(false));
+
+    api
+      .adminGetHookEngineMode()
+      .then((data) => setEngineMode(data.mode))
+      .catch(() => {})
+      .finally(() => setEngineModeLoading(false));
 
     api
       .adminNarmInsights()
@@ -105,6 +112,20 @@ export default function AdminDashboardPage() {
       setNarmRunning(false);
     }
   }, [toast]);
+
+  const handleEngineMode = useCallback(
+    async (mode: string) => {
+      try {
+        const result = await api.adminSetHookEngineMode(mode);
+        setEngineMode(result.mode);
+        toast({ title: "Hook engine mode updated", description: `Now using: ${result.mode.replace(/_/g, " ")}` });
+      } catch (err) {
+        const detail = (err as { message?: string })?.message;
+        toast({ title: "Error", description: detail || "Failed to update engine mode.", variant: "destructive" });
+      }
+    },
+    [toast],
+  );
 
   return (
     <div className="space-y-6">
@@ -142,6 +163,45 @@ export default function AdminDashboardPage() {
       ) : (
         <p className="text-white/40 text-sm">Unable to load dashboard data.</p>
       )}
+
+      {/* ─── Hook Engine Mode ─── */}
+      <motion.div
+        className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6"
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.1 }}
+      >
+        <h2 className="text-sm font-semibold text-white/80 mb-1">
+          Hook Engine Mode
+        </h2>
+        <p className="text-[11px] text-white/30 mb-4">
+          Controls how hooks are identified. Admin-only — does not affect user-facing labels.
+        </p>
+        {engineModeLoading ? (
+          <Skeleton className="h-10 w-full" />
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {[
+              { value: "llm_only", label: "LLM Only", desc: "Default — full AI analysis" },
+              { value: "deterministic_only", label: "Deterministic Only", desc: "Keyword heuristics, no API calls" },
+              { value: "llm_with_deterministic_fallback", label: "LLM + Fallback", desc: "Try LLM first, fall back to deterministic" },
+            ].map((opt) => (
+              <button
+                key={opt.value}
+                onClick={() => handleEngineMode(opt.value)}
+                className={`px-4 py-2.5 rounded-xl text-left transition-all duration-200 border ${
+                  engineMode === opt.value
+                    ? "bg-[#E84A2F]/15 border-[#E84A2F]/40 text-white"
+                    : "bg-white/[0.03] border-white/[0.06] text-white/50 hover:bg-white/[0.06] hover:text-white/70"
+                }`}
+              >
+                <span className="text-xs font-medium block">{opt.label}</span>
+                <span className="text-[10px] text-white/30 block mt-0.5">{opt.desc}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </motion.div>
 
       {/* ─── Recent Sessions ─── */}
       <motion.div

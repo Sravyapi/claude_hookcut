@@ -14,8 +14,6 @@ interface HookCardProps {
   selected: boolean;
   onToggle: (id: string) => void;
   disabled: boolean;
-  /** Called with hook id on enter, null on leave — parent uses this to pulse timeline marker */
-  onHoverChange?: (id: string | null) => void;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -130,19 +128,10 @@ export const HookCard = memo(function HookCard({
   selected,
   onToggle,
   disabled,
-  onHoverChange,
 }: HookCardProps) {
   const typeColor = HOOK_TYPE_COLORS[hook.hook_type] ?? "bg-white/10 text-white/70 border-white/20";
   const funnelLabel = FUNNEL_ROLE_LABELS[hook.funnel_role] ?? hook.funnel_role;
 
-  const handleMouseEnter = useCallback(
-    () => onHoverChange?.(hook.id),
-    [onHoverChange, hook.id]
-  );
-  const handleMouseLeave = useCallback(
-    () => onHoverChange?.(null),
-    [onHoverChange]
-  );
   const handleClick = useCallback(() => {
     if (!(disabled && !selected)) onToggle(hook.id);
   }, [disabled, selected, onToggle, hook.id]);
@@ -158,8 +147,6 @@ export const HookCard = memo(function HookCard({
   return (
     <motion.div
       onClick={handleClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
       className={`rounded-2xl cursor-pointer relative overflow-hidden border transition-colors duration-150 ${
         selected
           ? "bg-[--color-surface-2] border-[--color-primary]/40 ring-1 ring-[--color-primary]/20"

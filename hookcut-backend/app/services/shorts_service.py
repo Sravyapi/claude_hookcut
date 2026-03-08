@@ -7,19 +7,47 @@ import os
 import logging
 from datetime import datetime, timedelta, timezone
 
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.exceptions import ShortNotFoundError, ShortNotReadyError, InvalidStateError
 from app.models.learning import LearningLog
 from app.models.session import Short
 from app.schemas.shorts import ShortResponse, ShortDownloadResponse
-from app.services.storage import StorageService
+from app.services.storage import get_storage_service
 from app.tasks.celery_app import DOWNLOAD_URL_EXPIRES_SECONDS
 
 logger = logging.getLogger(__name__)
 
 
 class ShortsService:
+
+    @staticmethod
+    def get_short_for_user(db: Session, short_id: str, user_id: str) -> Short:
+        """
+        Look up a Short by ID and verify the requesting user owns it.
+
+        Raises: ShortNotFoundError if not found or not owned by user.
+        """
+        short = db.get(Short, short_id)
+        if not short or not short.session or short.session.user_id != user_id:
+            raise ShortNotFoundError()
+        return short
+
+    @staticmethod
+    def verify_file_ownership(db: Session, file_key: str, user_id: str) -> None:
+        """
+        Verify that a file_key belongs to a Short owned by the requesting user.
+
+        Raises: ShortNotFoundError if not found or not owned.
+        """
+        short = db.execute(
+            select(Short).where(
+                (Short.video_file_key == file_key) | (Short.thumbnail_file_key == file_key)
+            )
+        ).scalar_one_or_none()
+        if not short or not short.session or short.session.user_id != user_id:
+            raise ShortNotFoundError("File not found")
 
     @staticmethod
     def serve_local_file(file_key: str) -> tuple[str, str]:
@@ -29,7 +57,7 @@ class ShortsService:
         Returns (absolute_file_path, media_type) tuple.
         Raises: InvalidStateError (R2 mode), ShortNotFoundError (file missing)
         """
-        storage = StorageService()
+        storage = get_storage_service()
         if storage.s3:
             raise InvalidStateError("Not available in R2 mode")
         path = storage._safe_local_path(file_key)
@@ -48,10 +76,14 @@ class ShortsService:
         short = db.get(Short, short_id)
         if not short:
             raise ShortNotFoundError()
+        return ShortsService.get_short_response(db, short)
 
+    @staticmethod
+    def get_short_response(db: Session, short: Short) -> ShortResponse:
+        """Build a ShortResponse from an already-fetched Short object."""
         thumbnail_url = None
         if short.thumbnail_file_key:
-            storage = StorageService()
+            storage = get_storage_service()
             thumbnail_url = storage.get_download_url(
                 short.thumbnail_file_key, expires_in=DOWNLOAD_URL_EXPIRES_SECONDS
             )
@@ -88,7 +120,7 @@ class ShortsService:
         if not short.video_file_key:
             raise InvalidStateError("No video file available")
 
-        storage = StorageService()
+        storage = get_storage_service()
         download_url = storage.get_download_url(
             short.video_file_key, expires_in=DOWNLOAD_URL_EXPIRES_SECONDS
         )
@@ -124,6 +156,8 @@ class ShortsService:
         short = db.get(Short, short_id)
         if not short:
             raise ShortNotFoundError()
+
+        short.status = "discarded"
 
         if short.session:
             log_entry = LearningLog(

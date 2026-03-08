@@ -21,7 +21,7 @@ class GeminiProvider(LLMProvider):
         url = f"{self.base_url}/models/{self.model}:generateContent"
         headers = {"x-goog-api-key": self.api_key, "Content-Type": "application/json"}
         generation_config: dict = {
-            "maxOutputTokens": max(min(max_tokens * 2, 8192), 1024),  # Extra budget for thinking tokens; capped at 8192, minimum 1024
+            "maxOutputTokens": max(min(max_tokens * 3, 32768), 1024),  # 3x budget for thinking tokens; Gemini 2.5 Flash supports up to 65k
             "temperature": 0.7,
         }
         if json_mode:

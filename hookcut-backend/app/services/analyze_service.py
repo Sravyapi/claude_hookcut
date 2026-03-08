@@ -4,7 +4,6 @@ AnalyzeService — owns all analysis business logic.
 Routers call these static methods and convert HookCutError to HTTPException.
 """
 import logging
-import os
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -99,7 +98,8 @@ class AnalyzeService:
             raise VideoAccessibilityError(err)
 
         # Enforce maximum video duration before any credits are touched
-        _MAX_VIDEO_MINUTES = int(os.getenv("MAX_VIDEO_MINUTES", "60"))
+        from app.config import get_settings
+        _MAX_VIDEO_MINUTES = get_settings().MAX_VIDEO_MINUTES
         if metadata.duration_seconds > _MAX_VIDEO_MINUTES * 60:
             raise VideoTooLongError(
                 f"Video exceeds {_MAX_VIDEO_MINUTES}-minute limit "
@@ -194,7 +194,7 @@ class AnalyzeService:
         }
 
     @staticmethod
-    def regenerate_hooks(db: Session, session_id: str) -> dict:
+    def regenerate_hooks(db: Session, session_id: str, user_id: str | None = None) -> dict:
         """
         Regenerate hooks. 1st free, 2nd+ charged.
 
@@ -203,6 +203,9 @@ class AnalyzeService:
         """
         session = db.get(AnalysisSession, session_id)
         if not session:
+            raise SessionNotFoundError()
+
+        if user_id is not None and session.user_id != user_id:
             raise SessionNotFoundError()
 
         if session.status not in ("hooks_ready", "completed"):
@@ -269,6 +272,7 @@ class AnalyzeService:
         hook_ids: list[str],
         caption_style: str,
         time_overrides: dict,
+        user_id: str | None = None,
     ) -> dict:
         """
         Select hooks and dispatch Short generation tasks.
@@ -278,6 +282,9 @@ class AnalyzeService:
         """
         session = db.get(AnalysisSession, session_id)
         if not session:
+            raise SessionNotFoundError()
+
+        if user_id is not None and session.user_id != user_id:
             raise SessionNotFoundError()
 
         if session.status != "hooks_ready":
@@ -332,9 +339,9 @@ class AnalyzeService:
                     event_metadata={"hook_type": hook.hook_type},
                 ))
 
-        # Create Short records and dispatch tasks
+        # Create Short records first, commit so Celery workers can see them
         short_ids = []
-        task_ids = []
+        shorts = []
 
         for hook_id in hook_ids:
             override = time_overrides.get(hook_id)
@@ -349,13 +356,18 @@ class AnalyzeService:
             )
             db.add(short)
             db.flush()
-
-            task = generate_short.delay(short.id)
-            short.task_id = task.id
             short_ids.append(short.id)
-            task_ids.append(task.id)
+            shorts.append(short)
 
         session.status = "generating_shorts"
+        db.commit()
+
+        # Dispatch Celery tasks AFTER commit so workers can find the Short rows
+        task_ids = []
+        for short in shorts:
+            task = generate_short.delay(short.id)
+            short.task_id = task.id
+            task_ids.append(task.id)
         db.commit()
 
         return {

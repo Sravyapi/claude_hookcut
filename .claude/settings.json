@@ -7,6 +7,11 @@
           {
             "type": "command",
             "command": "if echo \"$TOOL_INPUT\" | grep -q 'hookcut-backend'; then cd /Users/sravyapidugu/Documents/codebase/claude_hookcut/hookcut-backend && python -m ruff check --fix \"$FILE_PATH\" 2>/dev/null; fi"
+          },
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -q 'hookcut-frontend' && echo \"$FILE_PATH\" | grep -qE '\\.(tsx?|jsx?)$'; then cd /Users/sravyapidugu/Documents/codebase/claude_hookcut/hookcut-frontend && npx prettier --write \"$FILE_PATH\" 2>/dev/null && npx next lint --fix --file \"$FILE_PATH\" 2>/dev/null; fi",
+            "async": true
           }
         ]
       }

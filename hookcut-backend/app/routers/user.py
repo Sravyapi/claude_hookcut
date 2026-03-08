@@ -6,7 +6,7 @@ All business logic lives in UserService. This module only:
   2. Calls UserService
   3. Returns the response schema
 """
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
 from app.dependencies import get_db, get_current_user_id
@@ -31,7 +31,7 @@ async def get_balance(
 @router.get("/user/history")
 async def get_history(
     page: int = 1,
-    per_page: int = 20,
+    per_page: int = Query(default=20, le=100),
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
 ) -> dict:

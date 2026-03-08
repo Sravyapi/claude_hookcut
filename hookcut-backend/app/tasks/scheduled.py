@@ -79,9 +79,9 @@ def cleanup_expired_files():
     db = get_db_session()
     try:
         from app.models.session import Short
-        from app.services.storage import StorageService
+        from app.services.storage import get_storage_service
 
-        storage = StorageService()
+        storage = get_storage_service()
         last_id = None
         total_processed = 0
         while True:

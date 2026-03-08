@@ -11,7 +11,7 @@ from app.config import get_settings
 from app.services.credit_manager import CreditManager
 from app.models.session import AnalysisSession, Hook, Short
 from app.services.short_generator import ShortGenerator
-from app.services.storage import StorageService
+from app.services.storage import get_storage_service
 
 logger = logging.getLogger(__name__)
 
@@ -28,14 +28,30 @@ def generate_short(self, short_id: str):
     try:
         short = db.get(Short, short_id)
         if not short:
-            logger.error(f"Short {short_id} not found")
+            logger.error(
+                f"Short {short_id} not found in DB. "
+                "This usually means the Celery task was dispatched before the DB transaction was committed."
+            )
             return {"error": "Short not found"}
 
         session = db.get(AnalysisSession, short.session_id)
+        if not session:
+            logger.error(f"Session {short.session_id} not found for short {short_id}")
+            short.status = "failed"
+            short.error_message = "Parent session not found"
+            db.commit()
+            return {"error": "Session not found"}
+
         hook = db.get(Hook, short.hook_id)
+        if not hook:
+            logger.error(f"Hook {short.hook_id} not found for short {short_id}")
+            short.status = "failed"
+            short.error_message = "Associated hook not found"
+            db.commit()
+            return {"error": "Hook not found"}
 
         generator = ShortGenerator()
-        storage = StorageService()
+        storage = get_storage_service()
 
         # Use time overrides if set (from trim controls)
         start_sec = short.start_seconds_override if short.start_seconds_override is not None else hook.start_seconds
@@ -166,7 +182,6 @@ def generate_short(self, short_id: str):
 
 def _get_short_status_counts(db, session_id: str) -> dict[str, int]:
     """Return {status: count} for all shorts in a session — single query."""
-    from sqlalchemy import func
     rows = db.execute(
         select(Short.status, func.count(Short.id))
         .where(Short.session_id == session_id)
@@ -176,21 +191,33 @@ def _get_short_status_counts(db, session_id: str) -> dict[str, int]:
 
 
 def _check_session_completion(db, session):
-    """If all shorts are ready, mark session completed."""
+    """If all shorts are in a terminal state, update session accordingly.
+
+    Terminal states: ready, failed, discarded.
+    - If any short is "ready" → session "completed"
+    - If all shorts failed → refund credits and mark session "failed"
+    """
     counts = _get_short_status_counts(db, session.id)
     total = sum(counts.values())
-    if total > 0 and counts.get("ready", 0) == total:
+    if total == 0:
+        return
+
+    terminal = counts.get("ready", 0) + counts.get("failed", 0) + counts.get("discarded", 0)
+    if terminal < total:
+        return  # Some shorts still in progress
+
+    if counts.get("ready", 0) > 0:
         session.status = "completed"
         db.commit()
-
-
-def _check_all_shorts_failed(db, session):
-    """If ALL shorts failed, refund credits and mark session as failed."""
-    counts = _get_short_status_counts(db, session.id)
-    total = sum(counts.values())
-    if total > 0 and counts.get("failed", 0) == total:
+    else:
+        # All terminal but none ready — all failed/discarded
         CreditManager(db).refund_and_fail(
             session.id,
             error_msg="All Short generations failed. Credits refunded.",
             _logger=logger,
         )
+
+
+def _check_all_shorts_failed(db, session):
+    """Legacy wrapper — completion logic now handled by _check_session_completion."""
+    _check_session_completion(db, session)

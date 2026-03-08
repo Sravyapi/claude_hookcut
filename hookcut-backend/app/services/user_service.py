@@ -5,7 +5,7 @@ Routers call these static methods and convert HookCutError to HTTPException.
 """
 import logging
 
-from sqlalchemy import func, select, literal_column
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from app.exceptions import UserNotFoundError, InvalidStateError

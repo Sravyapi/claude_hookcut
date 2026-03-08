@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Search } from "lucide-react";
 import { api } from "@/lib/api";
+import { extractErrorMessage } from "@/lib/utils";
 import { useToast } from "@/components/ui/use-toast";
 import type { AdminUser, AdminUserList } from "@/lib/types";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -86,7 +87,9 @@ export default function AdminUsersPage() {
   const { toast } = useToast();
   const [data, setData] = useState<AdminUserList | null>(null);
   const [page, setPage] = useState(1);
+  const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   /* Role change confirmation state */
   const [confirmOpen, setConfirmOpen] = useState(false);
@@ -97,23 +100,30 @@ export default function AdminUsersPage() {
   } | null>(null);
   const [updatingUserId, setUpdatingUserId] = useState<string | null>(null);
 
-  const fetchUsers = useCallback(async (p: number) => {
+  const fetchUsers = useCallback(async (p: number, q?: string) => {
     setLoading(true);
     try {
-      const result = await api.adminUsers(p);
+      const result = await api.adminUsers(p, q || undefined);
       setData(result);
     } catch (err) {
       console.warn("Failed to load users:", err);
-      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
-      toast({ title: "Error", description: detail ? `Failed to load users: ${detail}` : "Failed to load users.", variant: "destructive" });
+      toast({ title: "Error", description: extractErrorMessage(err, "Failed to load users."), variant: "destructive" });
     } finally {
       setLoading(false);
     }
   }, [toast]);
 
   useEffect(() => {
-    fetchUsers(page);
-  }, [page, fetchUsers]);
+    fetchUsers(page, search);
+  }, [page, search, fetchUsers]);
+
+  const handleSearchChange = (value: string) => {
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      setPage(1);
+      setSearch(value);
+    }, 250);
+  };
 
   const totalPages = data ? Math.ceil(data.total / data.per_page) : 1;
 
@@ -134,8 +144,7 @@ export default function AdminUsersPage() {
       await fetchUsers(page);
     } catch (err) {
       console.warn("Failed to update role:", err);
-      const detail = (err as { message?: string; detail?: string })?.message || (err as { detail?: string })?.detail;
-      toast({ title: "Error", description: detail ? `Failed to update user role: ${detail}` : "Failed to update user role.", variant: "destructive" });
+      toast({ title: "Error", description: extractErrorMessage(err, "Failed to update user role."), variant: "destructive" });
     } finally {
       setUpdatingUserId(null);
       setPendingRoleChange(null);
@@ -154,16 +163,29 @@ export default function AdminUsersPage() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
+        className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4"
       >
-        <h1 className="text-2xl font-bold text-white">User Management</h1>
-        <p className="text-white/40 text-sm mt-0.5">
-          View and manage platform users
-          {data && (
-            <span className="text-white/25 ml-2">
-              ({data.total} total)
-            </span>
-          )}
-        </p>
+        <div>
+          <h1 className="text-2xl font-bold text-white">User Management</h1>
+          <p className="text-white/40 text-sm mt-0.5">
+            View and manage platform users
+            {data && (
+              <span className="text-white/25 ml-2">
+                ({data.total} total)
+              </span>
+            )}
+          </p>
+        </div>
+        <div className="relative w-full sm:w-72">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/25 pointer-events-none" />
+          <input
+            type="text"
+            placeholder="Search by email..."
+            aria-label="Search users by email"
+            onChange={(e) => handleSearchChange(e.target.value)}
+            className="w-full pl-9 pr-4 py-2 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm text-white/80 placeholder-white/20 outline-none focus:border-violet-500/40 focus:ring-1 focus:ring-violet-500/20 transition-all"
+          />
+        </div>
       </motion.div>
 
       {/* ─── Users table ─── */}

@@ -44,27 +44,28 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-4 group w-fit">
-              <div className="w-8 h-8 rounded-lg bg-[--color-primary] flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path
-                    d="M14 4C14 4 16 4 16 7C16 10 13 11 10 11C7 11 5 12.5 5 15C5 16.5 6 17.5 7.5 17.5"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M5.5 14L7.5 17.5L4 17.5"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <span className="font-display font-extrabold text-[17px] tracking-tight text-white/80">
-                HookCut
+            <Link href="/" className="flex items-center mb-4 group w-fit">
+              <span className="font-display font-extrabold text-[18px] tracking-tight leading-none select-none" aria-label="HookCut">
+                <span className="text-white/90">Hook</span>
+                <span className="relative inline-block text-[#E84A2F]">
+                  <svg
+                    aria-hidden="true"
+                    className="absolute pointer-events-none"
+                    style={{ top: -8, left: 1 }}
+                    width="12"
+                    height="7"
+                    viewBox="0 0 12 7"
+                    fill="none"
+                  >
+                    <path
+                      d="M 1 6 C 3 0.5 9 0.5 11 6"
+                      stroke="#E84A2F"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                  Cut
+                </span>
               </span>
             </Link>
             <p className="text-sm text-white/35 leading-relaxed max-w-[200px]">

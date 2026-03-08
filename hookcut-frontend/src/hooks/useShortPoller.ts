@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { api } from "../lib/api";
 import type { Short } from "../lib/types";
-import { POLL_CONFIG, SHORT_STATUS } from "../lib/types";
+import { POLL_CONFIG, SHORT_STATUS } from "../lib/constants";
 
 const MAX_POLLS = 120; // 10 minutes at 5s intervals
 

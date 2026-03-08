@@ -12,6 +12,7 @@ import { getStatusConfig } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
+import { youtubeThumbUrl } from "@/lib/utils";
 
 /* ─── Credit ring ─── */
 function CreditRing({ balance }: { balance: CreditBalance }) {
@@ -92,7 +93,7 @@ const SessionRow = memo(function SessionRow({ session }: { session: SessionSumma
   const router = useRouter();
   const statusConfig = getStatusConfig(session.status);
   const thumbUrl = session.video_id
-    ? `https://img.youtube.com/vi/${session.video_id}/mqdefault.jpg`
+    ? youtubeThumbUrl(session.video_id)
     : null;
   const dateStr = new Date(session.created_at).toLocaleDateString(undefined, {
     month: "short",

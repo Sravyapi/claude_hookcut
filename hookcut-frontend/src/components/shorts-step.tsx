@@ -53,21 +53,16 @@ export const ShortsStep = memo(function ShortsStep({ shortIds, onReset }: Shorts
         </div>
       </motion.div>
 
-      {/* Cards — horizontal scroll on desktop, vertical on mobile */}
+      {/* Cards */}
       <div
-        className={`flex gap-4 mb-10 ${
+        className={`flex gap-5 mb-10 ${
           shortIds.length > 1
-            ? "flex-col sm:flex-row sm:overflow-x-auto sm:snap-x no-scrollbar sm:pb-4 sm:gap-5"
+            ? "flex-col items-center sm:flex-row sm:justify-center sm:items-start sm:flex-wrap"
             : "justify-center"
         }`}
       >
         {shortIds.map((id, i) => (
-          <div
-            key={id}
-            className={`${
-              shortIds.length > 1 ? "sm:snap-start sm:shrink-0 sm:w-[280px]" : "sm:w-[300px]"
-            } w-full`}
-          >
+          <div key={id} className="w-full max-w-[320px]">
             <ShortCard shortId={id} index={i} />
           </div>
         ))}
@@ -93,5 +88,3 @@ export const ShortsStep = memo(function ShortsStep({ shortIds, onReset }: Shorts
     </div>
   );
 });
-
-export default ShortsStep;

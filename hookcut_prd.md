@@ -71,6 +71,9 @@
 - **Performance Improvements:** `HooksStep`, `HookCard`, and `SessionRow` wrapped with `React.memo`. Score calculations memoized with `useMemo`. Dashboard search debounced (250ms). Celery `worker_prefetch_multiplier` reduced from 4 to 1. History endpoint uses single base query. Shorts router uses relationship navigation. Timer cleanup with `useRef`. Callback stabilization with refs. Unbounded `export_audit_logs` query capped at 10,000.
 - **Maintainability Pass:** Extracted shared constants (`ERROR_MSG_MAX_LEN`, `FREE_MONTHLY_MINUTES`, `DOWNLOAD_URL_EXPIRES_SECONDS`). Standardized error message truncation. Fixed CONTRACTS.md retry delay mismatch. Shared `getStatusConfig()` function in frontend constants. `NICHES` imported from constants (not duplicated). Error toasts added to all admin pages.
 - **Competitive Features (March 2026):** Caption style presets (4 styles), hook boundary trimming (±10s), video preview before download, enhanced "Why It Works" education, analysis speed badge + timer.
+- **Deterministic Hook Engine v4 (March 2026):** Complete rule-based hook identification system (1,730 lines). Three-layer architecture: Hook State Machine (narrative arc tracking), Hook Density Map (sliding window attention clustering), Per-Segment Scoring (7 dimensions + 3 expert features + 15 templates + 12 grammar patterns). Narrative-aware scoring (no fixed duration limits). Cross-layer bonus integration. Admin-controlled engine mode toggle (LLM Only / Deterministic Only / LLM + Fallback) via Redis.
+- **Infrastructure (March 2026):** Cobalt API integration for cloud-based video download. Cloudflare Worker transcript proxy for YouTube IP block bypass. Redis-backed engine mode state for cross-process consistency.
+- **UI Improvements (March 2026):** Removed hook timeline visualization from hooks page. Wider hook card grid (3 columns). Clean 9:16 Short preview (removed phone mockup UI). Engine mode toggle on Find My Hooks page (admin only).
 - **Test Count:** 120 backend tests passing (up from 105 pre-audit).
 
 ---
@@ -107,17 +110,88 @@ Users are billed based on the duration of the source video processed, not the du
 **Global Launch (V1)**
 V1 is a global launch. HookCut supports creators worldwide, with particularly strong support for Indian English and Indian-language creators as a key differentiator. INR and USD pricing are both active from day one. Language is selected by the creator at analysis time. Indian English filler phrases ("hello dosto", "subscribe karo", "namaskar dosto") are still penalised in the LLM prompt regardless of niche.
 
-**Hook Engine: LLM-Only (Final Decision)**
-Hook identification is LLM-only. Deterministic heuristics-based approaches and hybrid approaches were both evaluated and abandoned due to unacceptably low accuracy. There is no deterministic pre-filtering stage, no keyword scoring, and no rule-based hook detection. The LLM is the only hook identification mechanism.
+**Hook Engine: Multi-Mode (Admin-Controlled)**
+Hook identification supports three modes, switchable at runtime by admins:
+- **LLM Only** (default) — full LLM analysis, highest accuracy
+- **Deterministic Only** — rule-based analysis using the v4 deterministic engine, zero LLM API calls
+- **LLM + Deterministic Fallback** — tries LLM first, falls back to deterministic on failure (rate limits, API errors)
+
+Mode is stored in Redis (`hookcut:hook_engine_mode`) for cross-process consistency (web server + Celery workers read the same value). Admin toggle is available on the Find My Hooks page (visible only to admin users before URL submission) and on the admin dashboard.
 
 ---
 
 ## 03 Hook Engine
 
-**Architecture: Pure LLM, No Pre-Filtering**
-The hook engine sends the full transcript to the LLM in one pass. There is no deterministic pre-filtering, no keyword scoring, and no rule-based hook detection. Deterministic and hybrid approaches were both evaluated and abandoned due to unacceptably low accuracy.
+**Architecture: Multi-Mode (LLM + Deterministic)**
 
-The V1 implementation uses Gemini 2.5 Flash as the primary LLM provider with Claude Sonnet 4 as the fallback. The user has no option to choose the provider. Provider selection was based on cost-per-analysis vs. accuracy benchmarks.
+The hook engine operates in one of three modes, selected by admin at runtime:
+
+### Mode 1: LLM Only (Default)
+The LLM engine sends the full transcript to the LLM in one pass. The V1 implementation uses Gemini 2.5 Flash as the primary LLM provider with Claude Sonnet 4 as the fallback. The user has no option to choose the provider. Provider selection was based on cost-per-analysis vs. accuracy benchmarks.
+
+### Mode 2: Deterministic Only (No LLM Calls)
+The deterministic engine v4 (`app/services/deterministic_engine.py`, ~1,730 lines) identifies hooks using a three-layer detection pipeline with zero LLM API calls. Designed for: LLM rate limit scenarios, cost reduction, API outage resilience.
+
+**Deterministic Engine v4 Architecture:**
+
+**Layer 1 — Hook State Machine** (sequential narrative state tracking)
+Tracks narrative progression through 6 states: NEUTRAL → OBSERVATION → EXPECTATION → CONTRADICTION → ESCALATION → CURIOSITY_PEAK → EXPLANATION. Extracts complete narrative arcs as hook candidates. Supports the 5-stage Curiosity Escalation Model used by educational channels (Veritasium, 3Blue1Brown, Kurzgesagt). Naturally handles multiple hooks in long transcripts (resets after each arc completes).
+
+**Layer 2 — Hook Density Map** (sliding window attention signal density)
+8-second windows with 3-second step across the full transcript timeline. Uses a 5-tier Attention Signal Hierarchy:
+
+| Tier | Signal Type | Weight |
+|---|---|---|
+| 1 | Cognitive Shock (contradictions, belief violations) | 3.0 |
+| 2 | Curiosity Gap (information asymmetry, mystery) | 2.5 |
+| 3 | Stakes & Consequences (risk, reward, urgency) | 2.0 |
+| 4 | Viewer Relevance (direct address, identity targeting) | 1.5 |
+| 5 | Structural Narrative (organization, transitions) | 1.0 |
+
+Density peaks above threshold 6.0 mark high-attention candidate zones. Not limited to the first 30 seconds — detects mid-video re-hooks.
+
+**Layer 3 — Per-Segment Scoring** (7 dimensions + expert features + templates)
+- 7 display dimensions (same as LLM engine): scroll_stop, curiosity_gap, stakes_intensity, emotional_voltage, standalone_clarity, thematic_focus, thought_completeness
+- 3 expert features: contrarian signal (0.10 weight), numerical specificity (0.10), authority signal (0.10)
+- 15 viral hook template matchers (Mistake, Contrarian, Curiosity Gap, Authority, If-You, Hidden Rule, Pattern Interrupt, Shocking Statistic, Outcome, Fear, Curiosity Question, Reveal, Direct Benefit, Secret, Story)
+- 12 Hook Template Grammar detectors (structural patterns: Expectation→Contradiction, Observation→Mystery, Problem→Stakes, Hidden Cause, Counterintuitive Fact, Story Setup, Authority Insight, Question Hook, Rule Revelation, Consequence Warning, Paradox Hook, Resolution Promise)
+- Narrative phase detection (dual model: short-form arc + 5-stage curiosity escalation)
+- Narrative-aware temporal multiplier (soft positional preference, no hard duration cutoffs — a 60s lecture hook is treated fairly)
+- Triple-combo bonus (pattern interrupt + curiosity gap + viewer relevance)
+- Discovery/Insight pattern dictionary
+- Transcript normalization (speech disfluency removal before analysis)
+
+**Cross-Layer Integration:**
+- Per-segment scores get bonuses when confirmed by state machine arcs (+0.3 per stage traversed, max +1.5) and/or density peaks (+0.15 per density unit above threshold, max +1.0)
+- State machine arcs with 3+ stages are also scored as standalone candidates
+- Final scoring formula: `(weighted_dimensions × temporal_multiplier) + combo_bonus + max(template_bonus, grammar_bonus) + narrative_bonus + cross_layer_bonus`
+
+**Key Design Principle:** Hook length = narrative tension arc, NOT fixed duration. Short-form hooks (3-10s) and lecture hooks (30-90s) are both valid. The engine detects where the curiosity buildup completes, not how many seconds pass.
+
+**Expert Scoring Formula (per-segment):**
+
+| Feature | Weight |
+|---|---|
+| Pattern Interrupt (scroll_stop) | 0.20 |
+| Curiosity Gap | 0.20 |
+| Direct Viewer Relevance (emotional_voltage) | 0.15 |
+| Standalone Clarity | 0.10 |
+| Thought Completeness | 0.10 |
+| Thematic Focus | 0.05 |
+| Contrarian Statement | 0.10 |
+| Numerical Specificity | 0.10 |
+| Authority Signal | 0.10 |
+
+**Output:** Same as LLM engine — 5 hooks with 7-dimension scores, hook types, funnel roles, attention scores, and context-aware insights (platform dynamics, viewer psychology, improvement suggestions). Provider reported as `deterministic`, model as `rule-based-v4`.
+
+### Mode 3: LLM + Deterministic Fallback
+Tries the LLM engine first. If all LLM attempts fail (rate limits, API errors, timeouts), automatically falls back to the deterministic engine instead of returning an error.
+
+### Engine Mode Control
+- Stored in Redis key `hookcut:hook_engine_mode` (shared across web server + Celery workers)
+- Admin API: `GET /api/admin/hook-engine-mode`, `PATCH /api/admin/hook-engine-mode`
+- Frontend toggle: visible on Find My Hooks page (admin users only, before URL submission) and admin dashboard
+- Source: `app/services/engine_mode.py`
 
 **What the LLM Does**
 - Reads the full transcript in one pass
@@ -437,13 +511,24 @@ Feedback analysis and proposed rule updates are not applied automatically. All f
 - 18 hook types, 7-dimension holistic scoring, 6 funnel roles
 - 4 caption style presets (Clean, Bold, Neon, Minimal)
 - Hook boundary trimming (±10s)
-- Inline video preview before download
+- Inline video preview before download (9:16 portrait, clean container — no phone mockup)
 - Enhanced "Why It Works" education (platform dynamics, viewer psychology, creator tips)
 - Analysis speed badge + elapsed timer
 - Free watermarked tier (120 min/mo) + Lite + Pro + PAYG
 - Data learning loop (LearningLog)
 - Dashboard with session history, credit balance, and search
 - Admin dashboard with NARM recommendations, rule engine, model management, and audit log
+- **Deterministic hook engine v4** — 3-layer architecture (state machine + density map + per-segment scoring), 1,730 lines, zero LLM API calls
+- **Hook engine mode toggle** — admin-only, 3 modes (LLM Only, Deterministic Only, LLM + Fallback), Redis-backed cross-process state
+- **Engine mode toggle on Find My Hooks page** — visible to admin users before URL submission for real-time switching
+- **Hook State Machine** — sequential narrative tracking (6 states), detects complete curiosity escalation arcs in educational/lecture content
+- **Hook Density Map** — sliding window (8s/3s step) with 5-tier attention signal hierarchy, finds attention clusters across full timeline
+- **12 Hook Template Grammar** — structural pattern detection (Expectation→Contradiction, Observation→Mystery, etc.)
+- **15 viral hook template matchers** — regex-based detection of common hook structures
+- **Narrative-aware temporal scoring** — no fixed hook duration limits; lecture hooks (30-90s) scored fairly alongside short-form hooks (3-10s)
+- **Transcript normalization** — speech disfluency removal before analysis
+- **Cobalt API integration** — alternative video download from cloud IPs (replaces yt-dlp on servers with YouTube IP blocks)
+- **Cloudflare Worker transcript proxy** — bypasses YouTube cloud IP blocks for transcript fetching
 
 **V1.1 — Post-Launch Improvements**
 - A/B hook variants (multiple FFmpeg renders per hook)
@@ -482,7 +567,11 @@ Feedback analysis and proposed rule updates are not applied automatically. All f
 | Transcript — fallback 1 | yt-dlp | Subtitle extraction |
 | Transcript — fallback 2 | OpenAI Whisper API | Audio transcription only when needed |
 | Video segment extraction | yt-dlp --download-sections | Never downloads full video |
+| Video segment extraction — fallback | Cobalt API | Cloud-based download when yt-dlp blocked by YouTube IP restrictions |
+| Transcript proxy | Cloudflare Worker | Bypasses YouTube cloud IP blocks for transcript fetching |
 | Video/audio processing | FFmpeg | Single-pass rendering only |
+| Hook engine — deterministic | Rule-based v4 (1,730 lines) | 3-layer: state machine + density map + per-segment scoring |
+| Engine mode state | Redis | `hookcut:hook_engine_mode` key, cross-process shared state |
 | LLM — primary | Gemini 2.5 Flash (Google AI API) | Raw HTTP via httpx, JSON mode |
 | LLM — fallback | Claude Sonnet 4 (Anthropic API) | Official SDK |
 | LLM — tertiary | GPT-4o (OpenAI API) | Official SDK |
@@ -572,4 +661,4 @@ Feedback analysis and proposed rule updates are not applied automatically. All f
 
 ---
 
-*HookCut • NyxPath • Confidential • Version 4.0 • March 2026*
+*HookCut • NyxPath • Confidential • Version 5.0 • March 2026*

@@ -39,8 +39,8 @@ class TestGetShort:
 
 
 class TestDownloadShort:
-    @patch("app.services.shorts_service.StorageService")
-    def test_download_ready_short(self, mock_storage_cls, client, db):
+    @patch("app.services.shorts_service.get_storage_service")
+    def test_download_ready_short(self, mock_get_storage, client, db):
         make_user(db, user_id=TEST_USER_ID)
         session = make_session(db, TEST_USER_ID)
         hook = make_hook(db, session.id)
@@ -48,7 +48,7 @@ class TestDownloadShort:
         short.video_file_key = "shorts/test/video.mp4"
         db.commit()
 
-        mock_storage = mock_storage_cls.return_value
+        mock_storage = mock_get_storage.return_value
         mock_storage.get_download_url.return_value = "https://storage.example.com/video.mp4"
 
         resp = client.post(f"/api/shorts/{short.id}/download")

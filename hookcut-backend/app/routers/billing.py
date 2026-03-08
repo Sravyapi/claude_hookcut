@@ -6,10 +6,14 @@ All business logic lives in BillingService. This module only:
   2. Calls BillingService
   3. Returns the response schema
 """
+import logging
+
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, EmailStr
 from sqlalchemy.orm import Session
+
+logger = logging.getLogger(__name__)
 
 from app.dependencies import get_db, get_current_user_id
 from app.exceptions import HookCutError
@@ -113,6 +117,9 @@ async def razorpay_webhook(request: Request, db: Session = Depends(get_db)):
     payload = await request.body()
     sig = request.headers.get("x-razorpay-signature", "")
 
+    if not sig:
+        return JSONResponse({"detail": "Missing signature"}, status_code=400)
+
     try:
         return BillingService.handle_razorpay_webhook(db, payload, sig)
     except HookCutError as e:
@@ -122,4 +129,5 @@ async def razorpay_webhook(request: Request, db: Session = Depends(get_db)):
         raise HTTPException(status_code=e.status_code, detail=e.detail)
     except Exception:
         # HIGH-32: Catch unexpected errors from signature verification and return 400
+        logger.exception("Razorpay webhook error")
         return JSONResponse({"detail": "Invalid signature"}, status_code=400)

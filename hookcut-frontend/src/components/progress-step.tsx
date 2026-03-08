@@ -285,5 +285,3 @@ export const ProgressStep = memo(function ProgressStep({
     </motion.div>
   );
 });
-
-export default ProgressStep;

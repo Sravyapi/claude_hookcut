@@ -19,7 +19,7 @@ class AnalysisSession(Base):
     video_duration_seconds: Mapped[float] = mapped_column(Float)
     niche: Mapped[str] = mapped_column(String(50))
     language: Mapped[str] = mapped_column(String(50))
-    status: Mapped[str] = mapped_column(String(30), default="pending")
+    status: Mapped[str] = mapped_column(String(30), default="pending", index=True)
     # Status values: pending, fetching_transcript, analyzing,
     #                hooks_ready, generating_shorts, completed, failed
     transcript_provider: Mapped[Optional[str]] = mapped_column(String(50), nullable=True)
@@ -36,7 +36,7 @@ class AnalysisSession(Base):
     paid_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
     payg_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
     free_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
 
     hooks: Mapped[list["Hook"]] = relationship(
         back_populates="session", cascade="all, delete-orphan"
@@ -57,8 +57,8 @@ class Hook(Base):
     )
     rank: Mapped[int] = mapped_column(Integer)
     hook_text: Mapped[str] = mapped_column(Text)
-    start_time: Mapped[str] = mapped_column(String(20))
-    end_time: Mapped[str] = mapped_column(String(20))
+    start_time: Mapped[str] = mapped_column(String(20))  # TODO LOW-06: deprecated, derive from start_seconds instead
+    end_time: Mapped[str] = mapped_column(String(20))  # TODO LOW-06: deprecated, derive from end_seconds instead
     start_seconds: Mapped[float] = mapped_column(Float)
     end_seconds: Mapped[float] = mapped_column(Float)
     hook_type: Mapped[str] = mapped_column(Text)
@@ -71,6 +71,13 @@ class Hook(Base):
     is_composite: Mapped[bool] = mapped_column(Boolean, default=False)
     is_selected: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True, onupdate=lambda: datetime.now(timezone.utc))
+
+    @property
+    def start_time_display(self) -> str:
+        """Derive display time from start_seconds (seconds is the canonical field)."""
+        total = int(self.start_seconds or 0)
+        return f"{total // 60:02d}:{total % 60:02d}"
 
     session: Mapped["AnalysisSession"] = relationship(back_populates="hooks")
     shorts: Mapped[list["Short"]] = relationship(back_populates="hook")
@@ -104,10 +111,11 @@ class Short(Base):
     download_url_expires_at: Mapped[Optional[datetime]] = mapped_column(
         DateTime, nullable=True
     )
-    expires_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    expires_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True, index=True)
     error_message: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     task_id: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True, onupdate=lambda: datetime.now(timezone.utc))
 
     session: Mapped["AnalysisSession"] = relationship(back_populates="shorts")
     hook: Mapped["Hook"] = relationship(back_populates="shorts")

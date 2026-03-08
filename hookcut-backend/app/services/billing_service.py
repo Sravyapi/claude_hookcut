@@ -5,7 +5,7 @@ Routers call these static methods and convert HookCutError to HTTPException.
 """
 import logging
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 
 from sqlalchemy.orm import Session
 
@@ -137,13 +137,14 @@ class BillingService:
         is_new = existing is None
 
         # Upsert user — idempotent on concurrent logins
-        stmt = pg_insert(User).values(
+        insert_stmt = pg_insert(User).values(
             id=user_id,
             email=email,
             currency="USD",
-        ).on_conflict_do_update(
-            index_elements=["email"],
-            set_={"updated_at": datetime.utcnow()},
+        )
+        stmt = insert_stmt.on_conflict_do_update(
+            index_elements=["id"],
+            set_={"updated_at": datetime.now(timezone.utc), "email": insert_stmt.excluded.email},
         )
         db.execute(stmt)
         db.flush()

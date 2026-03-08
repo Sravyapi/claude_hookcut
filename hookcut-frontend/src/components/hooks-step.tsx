@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { Hook, CaptionStyle } from "@/lib/types";
 import { MAX_SELECTED_HOOKS } from "@/lib/constants";
 import { HookCard } from "./hook-card";
-import { HookTimeline, type TimelineHook } from "./hook-timeline";
 import TrimSlider, { parseTimestamp } from "./trim-slider";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
 
@@ -57,8 +56,6 @@ interface HooksStepProps {
   onRegenerate: () => void;
   isRegenerating: boolean;
   analysisElapsed?: number;
-  /** Used to position timeline markers — pass video_duration_seconds from AnalyzeResponse */
-  videoDurationSeconds?: number;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -71,14 +68,12 @@ export const HooksStep = memo(function HooksStep({
   onRegenerate,
   isRegenerating,
   analysisElapsed = 0,
-  videoDurationSeconds = 0,
 }: HooksStepProps) {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [captionStyle, setCaptionStyle] = useState<CaptionStyle>("clean");
   const [timeOverrides, setTimeOverrides] = useState<
     Record<string, { start_seconds: number; end_seconds: number }>
   >({});
-  const [activeHookId, setActiveHookId] = useState<string | null>(null);
 
   const toggleHook = useCallback((id: string) => {
     setSelectedIds((prev) => {
@@ -97,8 +92,6 @@ export const HooksStep = memo(function HooksStep({
     });
   }, []);
 
-  const handleHoverChange = useCallback((id: string | null) => setActiveHookId(id), []);
-
   const handleGenerate = useCallback(
     () => onSelectHooks(Array.from(selectedIds), captionStyle, timeOverrides),
     [onSelectHooks, selectedIds, captionStyle, timeOverrides]
@@ -114,53 +107,31 @@ export const HooksStep = memo(function HooksStep({
     [hooks, selectedIds]
   );
 
-  const timelineHooks: TimelineHook[] = useMemo(
-    () =>
-      hooks.map((h) => ({
-        id: h.id,
-        start_time: h.start_time,
-        attention_score: h.attention_score,
-        rank: h.rank,
-      })),
-    [hooks]
-  );
-
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       {/* ── Header ── */}
       <motion.div
-        className="mb-6"
+        className="mb-8"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.45 }}
       >
-        <div className="flex items-center gap-2 mb-1">
-          <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-          <span className="text-xs text-emerald-400 font-medium">Analysis Complete</span>
+        <div className="flex items-start justify-between gap-4 flex-wrap">
+          <div>
+            <h1 className="text-2xl font-bold text-white tracking-tight mb-1">
+              Hook Segments
+            </h1>
+            <p className="text-sm text-white/35 truncate max-w-lg">{videoTitle}</p>
+          </div>
+          <div className="flex items-center gap-3 text-xs text-white/30 font-mono tabular-nums shrink-0">
+            <span className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              {hooks.length} hooks
+            </span>
+            <span>avg {avgScore.toFixed(1)}/10</span>
+            {analysisElapsed > 0 && <span>{analysisElapsed}s</span>}
+          </div>
         </div>
-        <p className="text-sm text-white/40 truncate max-w-lg">{videoTitle}</p>
-      </motion.div>
-
-      {/* ── Hook Discovery Timeline ── */}
-      <motion.div
-        className="bg-[--color-surface-1] border border-[--color-border-def] rounded-2xl px-5 pt-4 pb-3 mb-6"
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.45, delay: 0.05 }}
-      >
-        <HookTimeline
-          hooks={timelineHooks}
-          durationSeconds={videoDurationSeconds}
-          activeHookId={activeHookId}
-          className="mb-1"
-        />
-        {/* 1-line status bar */}
-        <p className="text-[11px] text-[--color-muted] font-mono">
-          {hooks.length} hook{hooks.length !== 1 ? "s" : ""} found
-          {" · "}
-          Avg {avgScore.toFixed(1)}
-          {analysisElapsed > 0 && ` · Analyzed in ${analysisElapsed}s`}
-        </p>
       </motion.div>
 
       {/* ── Selection hint ── */}
@@ -170,7 +141,7 @@ export const HooksStep = memo(function HooksStep({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="text-center text-xs text-white/25 mb-4"
+            className="text-center text-sm text-white/25 mb-6"
           >
             Select up to {MAX_SELECTED_HOOKS} hooks to generate Shorts
           </motion.p>
@@ -179,7 +150,7 @@ export const HooksStep = memo(function HooksStep({
 
       {/* ── Hook cards ── */}
       <motion.div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8"
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8"
         variants={staggerContainer}
         initial="hidden"
         animate="show"
@@ -191,7 +162,6 @@ export const HooksStep = memo(function HooksStep({
               selected={selectedIds.has(hook.id)}
               onToggle={toggleHook}
               disabled={selectedIds.size >= MAX_SELECTED_HOOKS}
-              onHoverChange={handleHoverChange}
             />
           </motion.div>
         ))}

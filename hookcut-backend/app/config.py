@@ -47,6 +47,12 @@ class Settings(BaseSettings):
     FEATURE_WHISPER_FALLBACK: bool = True
     FEATURE_R2_STORAGE: bool = False
 
+    # Hook Engine Mode (admin-only toggle)
+    # "llm_only" — default, always use LLM
+    # "deterministic_only" — keyword heuristics, no LLM calls
+    # "llm_with_deterministic_fallback" — try LLM first, fall back to deterministic
+    HOOK_ENGINE_MODE: str = "llm_only"
+
     # Monitoring
     SENTRY_DSN: str = ""
     POSTHOG_API_KEY: str = ""
@@ -65,6 +71,7 @@ class Settings(BaseSettings):
     COBALT_API_KEY: str = ""  # Optional Api-Key for Cobalt auth
 
     # Operational
+    MAX_VIDEO_MINUTES: int = 60
     TEMP_FILE_TTL_HOURS: int = 24
 
     @model_validator(mode='after')

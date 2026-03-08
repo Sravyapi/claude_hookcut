@@ -21,7 +21,7 @@ class TestGetShort:
         short.duration_seconds = 28.5
         db.commit()
 
-        with patch("app.services.shorts_service.StorageService") as mock_storage_cls:
+        with patch("app.services.shorts_service.get_storage_service") as mock_storage_cls:
             mock_storage = MagicMock()
             mock_storage_cls.return_value = mock_storage
 
@@ -38,7 +38,7 @@ class TestGetShort:
         with pytest.raises(ShortNotFoundError):
             ShortsService.get_short(db, "nonexistent-short-id")
 
-    @patch("app.services.shorts_service.StorageService")
+    @patch("app.services.shorts_service.get_storage_service")
     def test_includes_thumbnail_url_when_present(self, mock_storage_cls, db):
         user = make_user(db, user_id="gs2")
         session = make_session(db, user.id)
@@ -65,14 +65,14 @@ class TestGetShort:
         short = make_short(db, session.id, hook.id, status="queued")
         # thumbnail_file_key is None by default
 
-        with patch("app.services.shorts_service.StorageService"):
+        with patch("app.services.shorts_service.get_storage_service"):
             result = ShortsService.get_short(db, short.id)
 
         assert result.thumbnail_url is None
 
 
 class TestDownloadShort:
-    @patch("app.services.shorts_service.StorageService")
+    @patch("app.services.shorts_service.get_storage_service")
     def test_generates_download_url_for_ready_short(self, mock_storage_cls, db):
         user = make_user(db, user_id="ds1")
         session = make_session(db, user.id)
@@ -118,7 +118,7 @@ class TestDownloadShort:
             ShortsService.download_short(db, short.id)
         assert "No video file" in exc_info.value.detail
 
-    @patch("app.services.shorts_service.StorageService")
+    @patch("app.services.shorts_service.get_storage_service")
     def test_updates_short_download_url_in_db(self, mock_storage_cls, db):
         user = make_user(db, user_id="ds4")
         session = make_session(db, user.id)
@@ -137,7 +137,7 @@ class TestDownloadShort:
         assert short.download_url == "https://cdn.example.com/video.mp4"
         assert short.download_url_expires_at is not None
 
-    @patch("app.services.shorts_service.StorageService")
+    @patch("app.services.shorts_service.get_storage_service")
     def test_creates_learning_log_entry(self, mock_storage_cls, db):
         user = make_user(db, user_id="ds5")
         session = make_session(db, user.id)

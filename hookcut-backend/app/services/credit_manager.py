@@ -124,25 +124,32 @@ class CreditManager:
         self, user_id: str, session_id: str,
         paid_minutes: float = 0, payg_minutes: float = 0, free_minutes: float = 0,
     ):
-        """Refund credits to the SAME buckets they were deducted from."""
-        balance = self._get_or_create_balance(user_id)
+        """Refund credits to the SAME buckets they were deducted from.
+        Uses a savepoint with row-level locking to prevent race conditions."""
+        self._get_or_create_balance(user_id)  # ensure row exists before locking
 
-        balance.paid_minutes_remaining += paid_minutes
-        balance.payg_minutes_remaining += payg_minutes
-        balance.free_minutes_remaining += free_minutes
+        with self.db.begin_nested():
+            balance = self.db.execute(
+                select(CreditBalance).where(CreditBalance.user_id == user_id).with_for_update()
+            ).scalar_one()
 
-        total = paid_minutes + payg_minutes + free_minutes
-        transaction = Transaction(
-            user_id=user_id,
-            type="credit_refund",
-            session_id=session_id,
-            minutes_amount=total,
-            description=(
-                f"Refunded {total:.1f} min "
-                f"(paid={paid_minutes:.1f}, payg={payg_minutes:.1f}, free={free_minutes:.1f})"
-            ),
-        )
-        self.db.add(transaction)
+            balance.paid_minutes_remaining += paid_minutes
+            balance.payg_minutes_remaining += payg_minutes
+            balance.free_minutes_remaining += free_minutes
+
+            total = paid_minutes + payg_minutes + free_minutes
+            transaction = Transaction(
+                user_id=user_id,
+                type="credit_refund",
+                session_id=session_id,
+                minutes_amount=total,
+                description=(
+                    f"Refunded {total:.1f} min "
+                    f"(paid={paid_minutes:.1f}, payg={payg_minutes:.1f}, free={free_minutes:.1f})"
+                ),
+            )
+            self.db.add(transaction)
+
         self.db.commit()
         logger.info(f"Refunded {total:.1f} min to user {user_id} for session {session_id}")
 
@@ -203,7 +210,6 @@ class CreditManager:
                     AnalysisSession.credits_refunded == False,
                 )
                 .values(credits_refunded=True)
-                .returning(AnalysisSession.id)
             )
             self.db.flush()
             if result.rowcount == 0:

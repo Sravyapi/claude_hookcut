@@ -32,6 +32,22 @@ export function getScoreColor(value: number): {
   return { hex: "#f87171", gradient: "from-red-500 to-red-400", dot: "bg-red-400" };
 }
 
-export function youtubeThumbUrl(videoId: string): string {
-  return `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+export function youtubeThumbUrl(videoId: string, quality: "default" | "mqdefault" | "hqdefault" | "sddefault" | "maxresdefault" = "mqdefault"): string {
+  return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
+}
+
+/** Extract a human-readable error message from an unknown thrown value. */
+export function extractErrorMessage(err: unknown, fallback: string): string {
+  if (typeof err === "string") return err || fallback;
+  if (err instanceof Error) return err.message || fallback;
+  if (err && typeof err === "object") {
+    const e = err as Record<string, unknown>;
+    if (typeof e.message === "string" && e.message) return e.message;
+    if (typeof e.detail === "string" && e.detail) return e.detail;
+    if (Array.isArray(e.detail) && e.detail.length > 0) {
+      const first = e.detail[0] as Record<string, unknown>;
+      if (typeof first?.msg === "string") return first.msg;
+    }
+  }
+  return fallback;
 }

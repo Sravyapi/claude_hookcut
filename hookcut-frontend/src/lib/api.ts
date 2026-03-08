@@ -85,6 +85,16 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
   return res.json();
 }
 
+async function fetchBlob(url: string): Promise<string> {
+  const token = await getAuthToken();
+  const headers: Record<string, string> = {};
+  if (token) headers["Authorization"] = `Bearer ${token}`;
+  const res = await fetch(url, { headers });
+  if (!res.ok) throw new Error(`Failed to fetch video: ${res.status}`);
+  const blob = await res.blob();
+  return URL.createObjectURL(blob);
+}
+
 // ─── API Client ───
 
 export const api = {
@@ -135,6 +145,8 @@ export const api = {
       method: "POST",
     }),
 
+  getVideoBlobUrl: (url: string) => fetchBlob(url),
+
   getBalance: () =>
     request<CreditBalance>("/user/balance"),
 
@@ -175,8 +187,13 @@ export const api = {
   adminDashboard: () =>
     request<AdminDashboard>("/admin/dashboard"),
 
-  adminUsers: (page?: number) =>
-    request<AdminUserList>("/admin/users" + (page ? "?page=" + page : "")),
+  adminUsers: (page?: number, search?: string) => {
+    const params = new URLSearchParams();
+    if (page) params.set("page", String(page));
+    if (search) params.set("search", search);
+    const qs = params.toString();
+    return request<AdminUserList>("/admin/users" + (qs ? "?" + qs : ""));
+  },
 
   adminUpdateRole: (userId: string, role: string) =>
     request<AdminUser>(`/admin/users/${userId}/role`, {
@@ -270,4 +287,13 @@ export const api = {
 
   adminNarmInsights: () =>
     request<{ insights: NarmInsight[] }>("/admin/narm/insights"),
+
+  adminGetHookEngineMode: () =>
+    request<{ mode: string }>("/admin/hook-engine-mode"),
+
+  adminSetHookEngineMode: (mode: string) =>
+    request<{ mode: string }>("/admin/hook-engine-mode", {
+      method: "PATCH",
+      body: JSON.stringify({ mode }),
+    }),
 };

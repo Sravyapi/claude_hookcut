@@ -8,6 +8,8 @@ from app.models.session import AnalysisSession, Hook
 from app.models.learning import LearningLog
 from app.services.transcript import TranscriptService
 from app.services.hook_engine import HookEngine
+from app.services.deterministic_engine import DeterministicEngine
+from app.services.engine_mode import get_engine_mode
 from app.exceptions import HookEngineError
 
 logger = logging.getLogger(__name__)
@@ -55,20 +57,61 @@ def run_analysis(self, session_id: str):
         db.commit()
         self.update_state(state="PROGRESS", meta={"stage": "Analyzing hooks...", "progress": 40})
 
-        hook_engine = HookEngine()
-        try:
-            result = hook_engine.analyze(
-                transcript=transcript_result.text,
-                niche=session.niche,
-                language=session.language,
-            )
-        except HookEngineError as e:
-            CreditManager(db).refund_and_fail(
-                session_id,
-                error_msg="Analysis unavailable. Credits not deducted. Try again.",
-                _logger=logger,
-            )
-            return {"error": str(e)}
+        engine_mode = get_engine_mode()
+        logger.info(f"Hook engine mode: {engine_mode}")
+
+        result = None
+        if engine_mode == "deterministic_only":
+            try:
+                result = DeterministicEngine().analyze(
+                    transcript=transcript_result.text,
+                    niche=session.niche,
+                    language=session.language,
+                )
+            except HookEngineError as e:
+                CreditManager(db).refund_and_fail(
+                    session_id,
+                    error_msg="Deterministic analysis failed. Credits not deducted.",
+                    _logger=logger,
+                )
+                return {"error": str(e)}
+        elif engine_mode == "llm_with_deterministic_fallback":
+            try:
+                result = HookEngine().analyze(
+                    transcript=transcript_result.text,
+                    niche=session.niche,
+                    language=session.language,
+                )
+            except HookEngineError:
+                logger.warning("LLM hook engine failed, falling back to deterministic")
+                try:
+                    result = DeterministicEngine().analyze(
+                        transcript=transcript_result.text,
+                        niche=session.niche,
+                        language=session.language,
+                    )
+                except HookEngineError as e:
+                    CreditManager(db).refund_and_fail(
+                        session_id,
+                        error_msg="Analysis unavailable. Credits not deducted. Try again.",
+                        _logger=logger,
+                    )
+                    return {"error": str(e)}
+        else:
+            # Default: llm_only
+            try:
+                result = HookEngine().analyze(
+                    transcript=transcript_result.text,
+                    niche=session.niche,
+                    language=session.language,
+                )
+            except HookEngineError as e:
+                CreditManager(db).refund_and_fail(
+                    session_id,
+                    error_msg="Analysis unavailable. Credits not deducted. Try again.",
+                    _logger=logger,
+                )
+                return {"error": str(e)}
 
         # --- Step 3: Store hooks ---
         self.update_state(state="PROGRESS", meta={"stage": "Saving hooks...", "progress": 80})
@@ -108,8 +151,8 @@ def run_analysis(self, session_id: str):
             )
             return {"error": "Failed to save hooks"}
 
-        # Log learning events: hook_presented (use already-in-memory hooks from the flush above)
-        hooks = [obj for obj in db.identity_map.values() if isinstance(obj, Hook) and obj.session_id == session_id]
+        # Log learning events: hook_presented
+        hooks = db.execute(select(Hook).where(Hook.session_id == session_id)).scalars().all()
         for hook in hooks:
             log_entry = LearningLog(
                 session_id=session_id,

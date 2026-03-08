@@ -5,7 +5,6 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.models.user import User, Subscription
-from app.models.billing import Transaction
 from app.services.credit_manager import CreditManager
 from app.services.payment_service import PLAN_MINUTES
 
@@ -45,6 +44,7 @@ class SubscriptionService:
             sub.plan_tier = plan_tier
             sub.provider_subscription_id = subscription_id
             sub.current_period_start = now
+            sub.current_period_end = now + timedelta(days=30)
         else:
             sub = Subscription(
                 user_id=user_id,
@@ -67,15 +67,5 @@ class SubscriptionService:
                 provider=provider, provider_ref=subscription_id,
             )
 
-        # Log transaction
-        txn = Transaction(
-            user_id=user_id,
-            type="subscription_payment",
-            money_amount=0,
-            currency=currency,
-            provider=provider,
-            provider_ref=subscription_id,
-            description=f"Subscription: {plan_tier} via {provider}",
-        )
-        self.db.add(txn)
+        # Transaction already created by add_paid_minutes() above
         self.db.commit()

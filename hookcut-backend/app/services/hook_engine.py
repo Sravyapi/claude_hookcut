@@ -50,7 +50,7 @@ class HookEngine:
     """
     LLM-only hook identification engine.
     Sends full transcript to LLM in one pass, returns exactly 5 hook candidates.
-    Retry: 3 attempts with backoff (0s, 5s, 30s). 3rd attempt uses fallback provider.
+    Retry: 3 attempts with backoff (0s, 2s, 2s). 3rd attempt uses fallback provider.
     """
 
     def analyze(

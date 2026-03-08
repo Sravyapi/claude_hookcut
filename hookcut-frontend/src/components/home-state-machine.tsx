@@ -1,11 +1,14 @@
 "use client";
 
 import { useReducer, useCallback, useRef, useEffect } from "react";
+import { useSession } from "next-auth/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { api } from "@/lib/api";
+import { extractErrorMessage } from "@/lib/utils";
 import type { Hook, Step, VideoMeta, TaskStatus } from "@/lib/types";
 import { usePollTask } from "@/hooks/usePollTask";
 import Header from "@/components/header";
+import { AuthenticatedHome } from "@/components/authenticated-home";
 import { ProgressStep } from "@/components/progress-step";
 import { HooksStep } from "@/components/hooks-step";
 import { ShortsStep } from "@/components/shorts-step";
@@ -48,21 +51,6 @@ function loadWorkflow(): PersistedWorkflow | null {
     }
     return data;
   } catch { return null; }
-}
-
-function extractErrorMessage(err: unknown, fallback: string): string {
-  if (typeof err === "string") return err || fallback;
-  if (err instanceof Error) return err.message || fallback;
-  if (err && typeof err === "object") {
-    const e = err as Record<string, unknown>;
-    if (typeof e.message === "string" && e.message) return e.message;
-    if (typeof e.detail === "string" && e.detail) return e.detail;
-    if (Array.isArray(e.detail) && e.detail.length > 0) {
-      const first = e.detail[0] as Record<string, unknown>;
-      if (typeof first?.msg === "string") return first.msg;
-    }
-  }
-  return fallback;
 }
 
 function ErrorBanner({ error, onDismiss }: { error: string; onDismiss: () => void }) {
@@ -239,6 +227,7 @@ interface Props {
 
 export default function HomeStateMachine({ marketingContent }: Props) {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { status: authStatus } = useSession();
   const analysisStartRef = useRef<number>(0);
 
   const taskId = state.step === "analyzing" ? state.taskId : "";
@@ -410,11 +399,12 @@ export default function HomeStateMachine({ marketingContent }: Props) {
   // ── Marketing / input step ───────────────────────────────────────────────────
 
   if (state.step === "input") {
+    const isAuthenticated = authStatus === "authenticated";
     return (
       <AnalyzeContext.Provider value={handleAnalyze}>
         <Header />
         <ErrorBanner error={error} onDismiss={() => dispatch({ type: "DISMISS_ERROR" })} />
-        {marketingContent}
+        {isAuthenticated ? <AuthenticatedHome /> : marketingContent}
       </AnalyzeContext.Provider>
     );
   }

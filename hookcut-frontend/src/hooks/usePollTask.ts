@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { api } from "../lib/api";
 import type { TaskStatus } from "../lib/types";
-import { POLL_CONFIG } from "../lib/types";
+import { POLL_CONFIG } from "../lib/constants";
 
 const MAX_POLLS = 120; // ~10 min with exponential backoff — prevents infinite polling on stuck tasks
 

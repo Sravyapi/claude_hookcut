@@ -19,7 +19,7 @@ from app.models.user import User, Subscription
 from app.models.session import AnalysisSession, Hook, Short
 from app.models.learning import LearningLog
 from app.models.admin import AdminAuditLog, PromptRule, ProviderConfig, NarmInsight
-from app.exceptions import ResourceNotFoundError, HookCutError
+from app.exceptions import ResourceNotFoundError, HookCutError, InvalidStateError
 from app.llm.prompts.constants import BASE_HOOK_RULES as BASE_RULES
 
 logger = logging.getLogger(__name__)
@@ -83,11 +83,18 @@ class AdminService:
     # ------------------------------------------------------------------
     @staticmethod
     def list_users(
-        db: Session, page: int = 1, per_page: int = 20
+        db: Session, page: int = 1, per_page: int = 20, search: str | None = None
     ) -> dict:
-        """Return paginated users with per-user session counts."""
+        """Return paginated users with per-user session counts. Optional email search."""
         try:
-            total = db.scalar(select(func.count(User.id))) or 0
+            count_stmt = select(func.count(User.id))
+
+            if search:
+                safe_search = search.replace("%", "\\%").replace("_", "\\_")
+                search_filter = User.email.ilike(f"%{safe_search}%")
+                count_stmt = count_stmt.where(search_filter)
+
+            total = db.scalar(count_stmt) or 0
 
             session_count_sub = (
                 select(
@@ -104,7 +111,14 @@ class AdminService:
                     session_count_sub,
                     User.id == session_count_sub.c.user_id,
                 )
-                .order_by(desc(User.created_at))
+            )
+
+            if search:
+                safe_search = search.replace("%", "\\%").replace("_", "\\_")
+                stmt = stmt.where(User.email.ilike(f"%{safe_search}%"))
+
+            stmt = (
+                stmt.order_by(desc(User.created_at))
                 .offset((page - 1) * per_page)
                 .limit(per_page)
             )
@@ -224,10 +238,12 @@ class AdminService:
     @staticmethod
     def get_session_detail(db: Session, session_id: str) -> dict:
         """Full session with hooks, shorts, and user email."""
+        from sqlalchemy.orm import selectinload
         row = db.execute(
             select(AnalysisSession, User.email)
             .join(User, AnalysisSession.user_id == User.id)
             .where(AnalysisSession.id == session_id)
+            .options(selectinload(AnalysisSession.hooks), selectinload(AnalysisSession.shorts))
         ).first()
 
         if not row:
@@ -271,11 +287,11 @@ class AdminService:
 
         # Truncate transcript to avoid returning 100KB+ payloads in admin detail
         transcript_preview: str | None = None
-        if session.transcript:
+        if session.transcript_text:
             transcript_preview = (
-                session.transcript[:500] + "..."
-                if len(session.transcript) > 500
-                else session.transcript
+                session.transcript_text[:500] + "..."
+                if len(session.transcript_text) > 500
+                else session.transcript_text
             )
 
         return {
@@ -992,7 +1008,7 @@ class AdminService:
         Never logs the actual key -- only the last 4 characters.
         """
         if not re.match(r'^[A-Za-z0-9_\-\.]+$', api_key):
-            raise ValueError("API key contains invalid characters")
+            raise InvalidStateError("API key contains invalid characters")
 
         provider = db.scalar(
             select(ProviderConfig).where(

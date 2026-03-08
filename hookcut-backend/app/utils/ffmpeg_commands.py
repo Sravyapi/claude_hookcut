@@ -532,6 +532,70 @@ def _split_caption_lines(words: list[str]) -> list[str]:
     return lines if lines else [""]
 
 
+def _ass_to_drawtext_filters(ass_path: str) -> list[str]:
+    """Parse ASS subtitle file and convert to drawtext filter chains.
+
+    Fallback for when libass is not available. Produces one drawtext filter
+    per dialogue line with enable='between(t,start,end)'.
+    """
+    try:
+        with open(ass_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        filters = []
+        for line in content.splitlines():
+            if not line.startswith("Dialogue:"):
+                continue
+            # Format: Dialogue: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+            parts = line.split(",", 9)
+            if len(parts) < 10:
+                continue
+            start_str = parts[1].strip()
+            end_str = parts[2].strip()
+            text = parts[9].strip()
+
+            # Convert ASS time H:MM:SS.cc to seconds
+            start_sec = _ass_time_to_seconds(start_str)
+            end_sec = _ass_time_to_seconds(end_str)
+            if start_sec is None or end_sec is None:
+                continue
+
+            # Escape special chars for drawtext
+            escaped = (
+                text.replace("\\", "\\\\")
+                .replace("'", "'\\''")
+                .replace(":", "\\:")
+                .replace("%", "%%")
+            )
+
+            filters.append(
+                f"drawtext=text='{escaped}'"
+                f":fontsize=48:fontcolor=white:borderw=3:bordercolor=black"
+                f":font=Arial"
+                f":x=(w-text_w)/2:y=h-text_h-120"
+                f":enable='between(t,{start_sec:.2f},{end_sec:.2f})'"
+            )
+
+        return filters
+    except Exception as e:
+        logger.warning("Failed to convert ASS to drawtext: %s", e)
+        return []
+
+
+def _ass_time_to_seconds(time_str: str) -> Optional[float]:
+    """Convert ASS time format H:MM:SS.cc to seconds."""
+    try:
+        parts = time_str.split(":")
+        h = int(parts[0])
+        m = int(parts[1])
+        s_parts = parts[2].split(".")
+        s = int(s_parts[0])
+        cs = int(s_parts[1]) if len(s_parts) > 1 else 0
+        return h * 3600 + m * 60 + s + cs / 100.0
+    except (ValueError, IndexError):
+        return None
+
+
 def _probe_video_stream(filepath: str) -> Optional[dict]:
     """Probe input file for video stream info (width, height, codec)."""
     try:
@@ -570,16 +634,17 @@ def _build_render_cmd(
         f"pad={SHORTS_WIDTH}:{SHORTS_HEIGHT}:(ow-iw)/2:(oh-ih)/2:black",
     ]
 
-    # Burn in captions (requires libass — gracefully skip if unavailable)
-    if (
-        use_subtitles
-        and subtitle_path
-        and os.path.exists(subtitle_path)
-        and _has_subtitles_filter()
-    ):
-        # FFmpeg subtitles filter requires forward slashes and escaped colons
-        sub_escaped = subtitle_path.replace("\\", "/").replace(":", "\\:")
-        vf_parts.append(f"subtitles='{sub_escaped}'")
+    # Burn in captions
+    if use_subtitles and subtitle_path and os.path.exists(subtitle_path):
+        if _has_subtitles_filter():
+            # Preferred: ASS subtitles via libass (full styling support)
+            sub_escaped = subtitle_path.replace("\\", "/").replace(":", "\\:")
+            vf_parts.append(f"subtitles='{sub_escaped}'")
+        else:
+            # Fallback: drawtext filters (built-in, no libass needed)
+            drawtext_filters = _ass_to_drawtext_filters(subtitle_path)
+            if drawtext_filters:
+                vf_parts.extend(drawtext_filters)
 
     # Watermark (free tier only)
     if watermark:

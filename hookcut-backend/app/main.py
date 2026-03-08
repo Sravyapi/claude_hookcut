@@ -163,16 +163,20 @@ def create_app() -> FastAPI:
             checks["database"] = f"error: {str(e)[:100]}"
             overall = "degraded"
 
-        # Redis check
+        # Redis check (lazy singleton to avoid creating a connection per call)
         try:
-            import redis as redis_lib
-            r = redis_lib.from_url(settings.REDIS_URL)
-            r.ping()
+            if not hasattr(health, "_redis_client"):
+                import redis as redis_lib
+                health._redis_client = redis_lib.from_url(settings.REDIS_URL)
+            health._redis_client.ping()
             checks["redis"] = "ok"
         except Exception as e:
             logger.error(f"Health check Redis error: {e}")
             checks["redis"] = f"error: {str(e)[:100]}"
             overall = "degraded"
+            # Reset client so next call retries connection
+            if hasattr(health, "_redis_client"):
+                del health._redis_client
 
         return {"status": overall, "checks": checks, "version": APP_VERSION}
 

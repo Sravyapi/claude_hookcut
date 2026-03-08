@@ -61,8 +61,8 @@ class Subscription(Base):
     plan_tier: Mapped[str] = mapped_column(String(20))  # "lite", "pro"
     currency: Mapped[str] = mapped_column(String(3))
     provider: Mapped[str] = mapped_column(String(20))  # "stripe", "razorpay"
-    provider_subscription_id: Mapped[str] = mapped_column(String(255))
-    status: Mapped[str] = mapped_column(String(20), default="active")
+    provider_subscription_id: Mapped[str] = mapped_column(String(255), index=True)
+    status: Mapped[str] = mapped_column(String(20), default="active", index=True)
     current_period_start: Mapped[datetime] = mapped_column(DateTime)
     current_period_end: Mapped[datetime] = mapped_column(DateTime)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))

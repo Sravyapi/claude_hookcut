@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useRef, memo } from "react";
+import { useState, useRef, useEffect, useCallback, memo } from "react";
 import { motion } from "framer-motion";
 import { api } from "../lib/api";
-import { SHORT_STATUS } from "../lib/types";
+import { SHORT_STATUS } from "../lib/constants";
 import { useShortPoller } from "../hooks/useShortPoller";
 import { formatDuration, formatFileSize } from "../lib/utils";
 
@@ -73,46 +73,26 @@ function Waveform() {
   );
 }
 
-function PhoneStatusBar() {
-  return (
-    <div className="absolute top-0 inset-x-0 h-7 flex items-center justify-between px-2.5 bg-gradient-to-b from-black/60 to-transparent z-10">
-      <span className="text-[9px] text-white/50 font-semibold tabular-nums">9:41</span>
-      <div className="flex items-center gap-1">
-        <div className="flex items-end gap-px" style={{ height: 10 }}>
-          {[40, 60, 80, 100].map((h, i) => (
-            <div
-              key={i}
-              className="w-0.5 bg-white/40 rounded-sm"
-              style={{ height: `${h}%` }}
-            />
-          ))}
-        </div>
-        <svg className="w-4 h-2.5 ml-1 text-white/40" viewBox="0 0 16 10" fill="none">
-          <rect
-            x="0.5"
-            y="0.5"
-            width="13"
-            height="9"
-            rx="1.5"
-            stroke="currentColor"
-            strokeWidth="1"
-          />
-          <rect x="14" y="3" width="2" height="4" rx="0.5" fill="currentColor" opacity="0.5" />
-          <rect x="2" y="2" width="8" height="6" rx="0.5" fill="currentColor" />
-        </svg>
-      </div>
-    </div>
-  );
-}
-
 const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string; index: number }) {
   const [downloading, setDownloading] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasPlayed, setHasPlayed] = useState(false);
+  const [videoBlobUrl, setVideoBlobUrl] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const { data, error: pollerError } = useShortPoller(shortId, true);
 
-  const togglePlay = () => {
+  // Fetch video as authenticated blob when ready
+  useEffect(() => {
+    if (!data?.download_url || data.status !== SHORT_STATUS.READY) return;
+    let revoke = "";
+    api.getVideoBlobUrl(data.download_url).then((url) => {
+      revoke = url;
+      setVideoBlobUrl(url);
+    }).catch(() => undefined);
+    return () => { if (revoke) URL.revokeObjectURL(revoke); };
+  }, [data?.download_url, data?.status]);
+
+  const togglePlay = useCallback(() => {
     if (!videoRef.current) return;
     if (isPlaying) {
       videoRef.current.pause();
@@ -121,9 +101,9 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
       videoRef.current.play();
       setIsPlaying(true);
     }
-  };
+  }, [isPlaying]);
 
-  const handleDownload = async () => {
+  const handleDownload = useCallback(async () => {
     if (!data) return;
     setDownloading(true);
     try {
@@ -134,7 +114,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
     } finally {
       setDownloading(false);
     }
-  };
+  }, [data, shortId]);
 
   // Error state (e.g. timeout or network failure)
   if (pollerError && !data) {
@@ -158,7 +138,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
         <div className="p-4">
           <div
             className="rounded-[20px] overflow-hidden shimmer mx-auto"
-            style={{ width: 160, height: Math.round(160 * (16 / 9)) }}
+            style={{ width: 240, height: Math.round(240 * (16 / 9)) }}
           />
           <div className="mt-4 space-y-2">
             <div className="h-4 w-3/4 rounded-lg shimmer" />
@@ -180,7 +160,8 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
 
   const stageInfo = STAGE_PROGRESS[data.status] || { pct: 0, label: data.status };
 
-  const frameWidth = 160;
+  // 9:16 aspect ratio — proper portrait Short dimensions
+  const frameWidth = 240;
   const frameHeight = Math.round(frameWidth * (16 / 9));
 
   return (
@@ -201,14 +182,13 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
         <div className="relative mx-auto" style={{ width: frameWidth, height: frameHeight }}>
           {/* Bezel */}
           <div
-            className="absolute inset-0 rounded-[20px] overflow-hidden"
+            className="absolute inset-0 rounded-2xl overflow-hidden"
             style={{
               background: "var(--color-surface-1)",
-              border: "2px solid rgba(139,92,246,0.2)",
-              boxShadow: "0 0 0 1px rgba(0,0,0,0.4), 0 8px 32px rgba(0,0,0,0.4), 0 0 20px rgba(139,92,246,0.08)",
+              border: "1px solid rgba(255,255,255,0.08)",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.4)",
             }}
           >
-            <PhoneStatusBar />
 
             {/* Processing: waveform */}
             {isProcessing && (
@@ -220,10 +200,10 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
             {/* Ready: video preview */}
             {isReady && (
               <div className="relative w-full h-full group cursor-pointer" onClick={togglePlay}>
-                {data.download_url ? (
+                {videoBlobUrl ? (
                   <video
                     ref={videoRef}
-                    src={data.download_url}
+                    src={videoBlobUrl}
                     poster={data.thumbnail_url || undefined}
                     className="w-full h-full object-cover"
                     playsInline

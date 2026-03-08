@@ -334,6 +334,7 @@ export default function Header({ onReset }: HeaderProps) {
             className="fixed inset-0 z-40 sm:hidden"
             role="dialog"
             aria-label="Mobile navigation"
+            onKeyDown={(e) => { if (e.key === "Escape") closeMobileMenu(); }}
           >
             <div
               className="absolute inset-0 bg-black/60 backdrop-blur-sm"

@@ -22,7 +22,6 @@ from app.schemas.analysis import (
     SelectHooksResponse,
 )
 from app.schemas.hooks import HooksListResponse, HookResponse, HookScores
-from app.models.session import AnalysisSession
 from app.services.analyze_service import AnalyzeService
 
 router = APIRouter()
@@ -119,12 +118,8 @@ def regenerate_hooks(
     """
     rate_limiter.check(user_id, "regenerate", limit=5, window_seconds=900, request=request)
 
-    session = db.get(AnalysisSession, session_id)
-    if not session or session.user_id != user_id:
-        raise HTTPException(status_code=404, detail="Session not found")
-
     try:
-        result = AnalyzeService.regenerate_hooks(db=db, session_id=session_id)
+        result = AnalyzeService.regenerate_hooks(db=db, session_id=session_id, user_id=user_id)
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)
 
@@ -142,10 +137,6 @@ def select_hooks(
     """Select 1-3 hooks to generate Shorts from."""
     rate_limiter.check(user_id, "select_hooks", limit=10, window_seconds=900, request=request)
 
-    session = db.get(AnalysisSession, session_id)
-    if not session or session.user_id != user_id:
-        raise HTTPException(status_code=404, detail="Session not found")
-
     try:
         result = AnalyzeService.select_hooks(
             db=db,
@@ -153,6 +144,7 @@ def select_hooks(
             hook_ids=req.hook_ids,
             caption_style=req.caption_style,
             time_overrides=req.time_overrides,
+            user_id=user_id,
         )
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)
