@@ -232,6 +232,37 @@ class CreditManager:
         self.db.commit()
         _log.info(f"Session {session_id} failed and credits refunded: {error_msg}")
 
+    def claim_free_topup(self, user_id: str) -> CreditBalance:
+        """Claim a free top-up: adds 120 free watermarked minutes.
+        Limited number of times per account (free_topups_remaining)."""
+        self._get_or_create_balance(user_id)  # ensure row exists
+
+        with self.db.begin_nested():
+            balance = self.db.execute(
+                select(CreditBalance).where(CreditBalance.user_id == user_id).with_for_update()
+            ).scalar_one()
+
+            if balance.free_topups_remaining <= 0:
+                from app.exceptions import InsufficientCreditsError
+                raise InsufficientCreditsError("No free top-ups remaining")
+
+            balance.free_minutes_remaining += 120.0
+            balance.free_minutes_total += 120.0
+            balance.free_topups_remaining -= 1
+
+            transaction = Transaction(
+                user_id=user_id,
+                type="free_topup",
+                minutes_amount=120.0,
+                description=f"Free top-up: 120 min added ({balance.free_topups_remaining} top-ups remaining)",
+            )
+            self.db.add(transaction)
+
+        self.db.commit()
+        self.db.refresh(balance)
+        logger.info(f"Free top-up claimed by user {user_id}, {balance.free_topups_remaining} remaining")
+        return balance
+
     def get_balance(self, user_id: str) -> CreditBalance:
         return self._get_or_create_balance(user_id)
 

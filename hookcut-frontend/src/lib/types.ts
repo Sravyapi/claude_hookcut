@@ -106,6 +106,7 @@ export interface CreditBalance {
   free_minutes_total: number;
   payg_minutes_remaining: number;
   total_available: number;
+  free_topups_remaining: number;
 }
 
 export type CaptionStyle = "clean" | "bold" | "neon" | "minimal";

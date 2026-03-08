@@ -9,6 +9,7 @@ class BalanceResponse(BaseModel):
     free_minutes_total: float
     payg_minutes_remaining: float
     total_available: float
+    free_topups_remaining: int = 3
 
 
 class PlanInfo(BaseModel):

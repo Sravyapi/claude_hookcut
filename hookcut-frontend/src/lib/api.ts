@@ -150,6 +150,9 @@ export const api = {
   getBalance: () =>
     request<CreditBalance>("/user/balance"),
 
+  claimFreeTopup: () =>
+    request<CreditBalance>("/billing/free-topup", { method: "POST" }),
+
   // V1 auth / billing / user endpoints
   syncUser: (email: string) =>
     request<{ user_id: string; is_new: boolean; plan_tier: string; role: string }>("/auth/sync", {

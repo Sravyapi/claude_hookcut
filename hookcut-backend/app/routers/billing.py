@@ -17,8 +17,9 @@ logger = logging.getLogger(__name__)
 
 from app.dependencies import get_db, get_current_user_id
 from app.exceptions import HookCutError
-from app.schemas.billing import PlansResponse
+from app.schemas.billing import PlansResponse, BalanceResponse
 from app.services.billing_service import BillingService
+from app.services.credit_manager import CreditManager
 
 
 class CheckoutRequest(BaseModel):
@@ -73,6 +74,19 @@ async def purchase_payg(
         raise HTTPException(status_code=e.status_code, detail=e.detail)
 
     return {"checkout_url": result.checkout_url, "session_id": result.session_id}
+
+
+@router.post("/billing/free-topup", response_model=BalanceResponse)
+async def claim_free_topup(
+    db: Session = Depends(get_db),
+    user_id: str = Depends(get_current_user_id),
+):
+    """Claim a free top-up of 120 watermarked minutes (limited per account)."""
+    try:
+        balance = CreditManager(db).claim_free_topup(user_id)
+    except HookCutError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.detail)
+    return balance
 
 
 # --- User sync endpoint (called by frontend after NextAuth login) ---

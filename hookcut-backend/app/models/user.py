@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime, timezone
 from typing import Optional
-from sqlalchemy import String, Float, DateTime, ForeignKey
+from sqlalchemy import String, Float, Integer, DateTime, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.models.base import Base
 
@@ -40,6 +40,7 @@ class CreditBalance(Base):
     free_minutes_remaining: Mapped[float] = mapped_column(Float, default=120.0)
     free_minutes_total: Mapped[float] = mapped_column(Float, default=120.0)
     payg_minutes_remaining: Mapped[float] = mapped_column(Float, default=0.0)
+    free_topups_remaining: Mapped[int] = mapped_column(Integer, default=3)  # free top-ups allowed per account
     last_free_reset: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     user: Mapped["User"] = relationship(back_populates="credit_balance")

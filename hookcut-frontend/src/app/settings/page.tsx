@@ -383,6 +383,25 @@ export default function SettingsPage() {
                         sub={`/ ${balance.free_minutes_total.toFixed(0)} min`}
                       />
                     </div>
+
+                    {/* Free top-up */}
+                    {balance.free_topups_remaining > 0 && (
+                      <button
+                        onClick={async () => {
+                          try {
+                            const updated = await api.claimFreeTopup();
+                            setBalance(updated);
+                            toast({ title: "Top-up claimed!", description: `120 free minutes added. ${updated.free_topups_remaining} top-up${updated.free_topups_remaining === 1 ? "" : "s"} remaining.` });
+                          } catch (err) {
+                            const detail = (err as { message?: string })?.message;
+                            toast({ title: "Error", description: detail || "Failed to claim free top-up.", variant: "destructive" });
+                          }
+                        }}
+                        className="w-full mt-4 px-4 py-2.5 rounded-xl bg-[--color-primary]/10 border border-[--color-primary]/20 text-[--color-primary] text-sm font-medium hover:bg-[--color-primary]/15 transition-colors"
+                      >
+                        Claim Free Top-Up ({balance.free_topups_remaining} remaining)
+                      </button>
+                    )}
                   </div>
                 ) : (
                   <p className="text-white/35 text-sm">Unable to load balance.</p>
