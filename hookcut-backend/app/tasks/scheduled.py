@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from sqlalchemy import select
 from app.tasks.celery_app import celery_app, FREE_MONTHLY_MINUTES
 from app.dependencies import get_db_session
@@ -155,6 +155,62 @@ def check_negative_balances():
             except Exception:
                 pass
         return {"checked": True, "negative_count": len(negatives)}
+    finally:
+        db.close()
+        if redis_client:
+            try:
+                redis_client.delete(lock_key)
+            except Exception as e:
+                logger.warning(f"Failed to release lock '{lock_key}': {e}")
+
+
+@celery_app.task
+def cleanup_stuck_sessions():
+    """Mark sessions stuck in pending/analyzing for >1 hour as failed and refund credits."""
+    lock_key = "lock:cleanup_stuck_sessions"
+    acquired, redis_client = _acquire_task_lock(lock_key, ttl=120)
+    if not acquired:
+        logger.info("cleanup_stuck_sessions: lock held by another worker, skipping")
+        return {"skipped": True}
+
+    db = get_db_session()
+    try:
+        from app.models.session import AnalysisSession
+        from app.services.credit_manager import CreditManager
+
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=1)
+        stuck = db.execute(
+            select(AnalysisSession).where(
+                AnalysisSession.status.in_(("pending", "analyzing")),
+                AnalysisSession.created_at < cutoff,
+            )
+        ).scalars().all()
+
+        total_recovered = 0
+        for session in stuck:
+            logger.warning(
+                f"Stuck session {session.id} (status={session.status}, "
+                f"created_at={session.created_at}). Marking failed and refunding."
+            )
+            CreditManager(db).refund_and_fail(
+                session.id,
+                error_msg="Analysis timed out. Your credits have been refunded. Please try again.",
+                _logger=logger,
+            )
+            total_recovered += 1
+
+        if total_recovered:
+            db.commit()
+            logger.info(f"Recovered {total_recovered} stuck session(s)")
+            try:
+                import sentry_sdk
+                sentry_sdk.capture_message(
+                    f"Recovered {total_recovered} stuck session(s)",
+                    level="warning",
+                )
+            except Exception:
+                pass
+        return {"recovered": total_recovered}
     finally:
         db.close()
         if redis_client:

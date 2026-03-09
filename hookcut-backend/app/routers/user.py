@@ -30,8 +30,8 @@ async def get_balance(
 
 @router.get("/user/history")
 async def get_history(
-    page: int = 1,
-    per_page: int = Query(default=20, le=100),
+    page: int = Query(default=1, ge=1),
+    per_page: int = Query(default=20, ge=1, le=100),
     db: Session = Depends(get_db),
     user_id: str = Depends(get_current_user_id),
 ) -> dict:

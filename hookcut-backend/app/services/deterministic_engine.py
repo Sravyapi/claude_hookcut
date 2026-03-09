@@ -458,19 +458,9 @@ TRANSITION_PATTERNS = _compile_patterns({
 # Hook ends when the narrative arc completes (all phases present)
 # OR when an explanation boundary is hit.
 
-def _narrative_completion_score(text: str) -> float:
-    """Score how complete the narrative tension arc is (0-5).
-
-    Two models merged:
-    1. Short-form: problem → stakes → curiosity → outcome_tease
-    2. Curiosity Escalation (educational/lecture):
-       observation → expectation → contradiction → escalated_mystery → knowledge_promise
-
-    Returns max of both models (a segment may match either pattern).
-    """
-    text_lower = text.lower()
-
-    # ── Model A: Short-form hook arc (0-4) ──
+def _narrative_model_a(text: str, text_lower: str) -> float:
+    """Model A: Short-form hook arc (0-4).
+    Tracks: problem → stakes → curiosity → outcome_tease."""
     a = 0.0
     # Problem present
     if (_match_count(text, NEGATION_PATTERNS) > 0
@@ -496,8 +486,12 @@ def _narrative_completion_score(text: str) -> float:
         "the key is", "turns out", "it turns out",
     ]):
         a += 1.0
+    return a
 
-    # ── Model B: 5-Stage Curiosity Escalation (educational/lecture) (0-5) ──
+
+def _narrative_model_b(text: str, text_lower: str) -> float:
+    """Model B: 5-Stage Curiosity Escalation for educational/lecture content (0-5).
+    Tracks: observation → expectation → contradiction → escalated_mystery → knowledge_promise."""
     b = 0.0
     # Stage 1: Intriguing observation (anomaly/surprise words)
     if (_match_count(text, CONCEPTUAL_TENSION_PATTERNS) > 0
@@ -538,7 +532,22 @@ def _narrative_completion_score(text: str) -> float:
         "the answer lies in", "the explanation is",
     ]):
         b += 1.0
+    return b
 
+
+def _narrative_completion_score(text: str) -> float:
+    """Score how complete the narrative tension arc is (0-5).
+
+    Two models merged:
+    1. Short-form: problem → stakes → curiosity → outcome_tease
+    2. Curiosity Escalation (educational/lecture):
+       observation → expectation → contradiction → escalated_mystery → knowledge_promise
+
+    Returns max of both models (a segment may match either pattern).
+    """
+    text_lower = text.lower()
+    a = _narrative_model_a(text, text_lower)
+    b = _narrative_model_b(text, text_lower)
     # Return the higher of both models (normalized to same scale)
     return max(a, b * 0.8)  # Scale B to 0-4 range for consistency
 
@@ -759,14 +768,8 @@ class _DimensionScores:
     thought_completeness: float = 0.0
 
 
-def _score_dimensions(text: str) -> _DimensionScores:
-    """Score each dimension independently based on specific signal patterns."""
-    scores = _DimensionScores()
-    text_lower = text.lower()
-    words = text.split()
-    word_count = len(words)
-
-    # ─── D1: scroll_stop (Pattern Interrupt Power) ───
+def _score_scroll_stop(text: str, words: list[str]) -> float:
+    """D1: Score pattern interrupt power (0-10)."""
     d1 = 0.0
     # Imperative opening
     if words and words[0].lower().rstrip(".,!?") in (
@@ -785,9 +788,11 @@ def _score_dimensions(text: str) -> _DimensionScores:
         d1 += 1.5
     # Negation framing
     d1 += min(_match_score(text, NEGATION_PATTERNS) * 0.4, 2.0)
-    scores.scroll_stop = min(d1, 10.0)
+    return min(d1, 10.0)
 
-    # ─── D2: curiosity_gap ───
+
+def _score_curiosity_gap(text: str, text_lower: str) -> float:
+    """D2: Score curiosity gap strength (0-10)."""
     d2 = 0.0
     d2 += min(_match_score(text, OPEN_LOOP_PATTERNS), 5.0)
     d2 += min(_match_score(text, MYSTERY_PATTERNS), 3.0)
@@ -804,9 +809,11 @@ def _score_dimensions(text: str) -> _DimensionScores:
     # Question without answer in segment
     if "?" in text and not any(a in text_lower for a in ["the answer is", "it's because", "that's why"]):
         d2 += 1.0
-    scores.curiosity_gap = min(d2, 10.0)
+    return min(d2, 10.0)
 
-    # ─── D3: stakes_intensity ───
+
+def _score_stakes_intensity(text: str) -> float:
+    """D3: Score stakes/risk/reward intensity (0-10)."""
     d3 = 0.0
     d3 += min(_match_score(text, RISK_PATTERNS), 6.0)
     d3 += min(_match_score(text, REWARD_PATTERNS), 4.5)
@@ -815,9 +822,11 @@ def _score_dimensions(text: str) -> _DimensionScores:
         d3 += 1.5
     # Absolute language
     d3 += min(_match_score(text, ABSOLUTE_PATTERNS) * 0.3, 1.5)
-    scores.stakes_intensity = min(d3, 10.0)
+    return min(d3, 10.0)
 
-    # ─── D4: emotional_voltage ───
+
+def _score_emotional_voltage(text: str) -> float:
+    """D4: Score emotional voltage / viewer relevance (0-10)."""
     d4 = 0.0
     # Identity targeting
     d4 += min(_match_score(text, IDENTITY_PATTERNS), 4.0)
@@ -836,9 +845,11 @@ def _score_dimensions(text: str) -> _DimensionScores:
     # Exclamatory tone
     if "!" in text:
         d4 += 0.5
-    scores.emotional_voltage = min(d4, 10.0)
+    return min(d4, 10.0)
 
-    # ─── D5: standalone_clarity ───
+
+def _score_standalone_clarity(text: str, text_lower: str, words: list[str], word_count: int) -> float:
+    """D5: Score standalone clarity (0-10, neutral default 5.0)."""
     d5 = 5.0  # neutral default
     # Complete sentence
     if re.search(r'[.!?]\s*$', text.strip()):
@@ -856,10 +867,11 @@ def _score_dimensions(text: str) -> _DimensionScores:
     # Has own subject + verb (crude check: has at least 2 content words before a verb-like word)
     if word_count >= 5:
         d5 += 1.0
-    scores.standalone_clarity = max(0.0, min(10.0, d5))
+    return max(0.0, min(10.0, d5))
 
-    # ─── D6: thematic_focus ───
-    # Fewer unique words relative to total = more focused
+
+def _score_thematic_focus(words: list[str]) -> float:
+    """D6: Score thematic focus via content word density (0-10)."""
     stopwords = {"the", "a", "an", "is", "are", "was", "were", "be", "been", "being",
                  "have", "has", "had", "do", "does", "did", "will", "would", "could",
                  "should", "may", "might", "can", "shall", "to", "of", "in", "for",
@@ -875,11 +887,13 @@ def _score_dimensions(text: str) -> _DimensionScores:
         total = len(content_words)
         density = unique / total  # 0.3-1.0
         d6 = 10.0 - (density - 0.3) * 14.0  # 0.3→10, 1.0→0.2
-        scores.thematic_focus = max(1.0, min(10.0, d6))
+        return max(1.0, min(10.0, d6))
     else:
-        scores.thematic_focus = 5.0
+        return 5.0
 
-    # ─── D7: thought_completeness ───
+
+def _score_thought_completeness(text: str, word_count: int) -> float:
+    """D7: Score thought completeness (0-10)."""
     d7 = 0.0
     # Contains both a claim AND a stake
     has_claim = word_count >= 5  # at least a sentence fragment
@@ -905,7 +919,23 @@ def _score_dimensions(text: str) -> _DimensionScores:
         d7 -= 1.0
     if not stripped or stripped[-1] not in ".!?\"'":
         d7 -= 1.0  # ends mid-clause
-    scores.thought_completeness = max(0.0, min(10.0, d7))
+    return max(0.0, min(10.0, d7))
+
+
+def _score_dimensions(text: str) -> _DimensionScores:
+    """Score each dimension independently based on specific signal patterns."""
+    scores = _DimensionScores()
+    text_lower = text.lower()
+    words = text.split()
+    word_count = len(words)
+
+    scores.scroll_stop = _score_scroll_stop(text, words)
+    scores.curiosity_gap = _score_curiosity_gap(text, text_lower)
+    scores.stakes_intensity = _score_stakes_intensity(text)
+    scores.emotional_voltage = _score_emotional_voltage(text)
+    scores.standalone_clarity = _score_standalone_clarity(text, text_lower, words, word_count)
+    scores.thematic_focus = _score_thematic_focus(words)
+    scores.thought_completeness = _score_thought_completeness(text, word_count)
 
     return scores
 
@@ -1297,6 +1327,107 @@ class _StateMachineHook:
     stages_hit: int  # number of distinct stages traversed
 
 
+@dataclass
+class _SMContext:
+    """Mutable state machine context for hook arc tracking."""
+    state: int = _SM_NEUTRAL
+    hook_start: float = 0.0
+    hook_text_parts: list[str] = field(default_factory=list)
+    stages_hit: int = 0
+    max_state: int = 0
+
+    def reset(self) -> None:
+        """Reset to neutral state."""
+        self.state = _SM_NEUTRAL
+        self.hook_text_parts = []
+        self.stages_hit = 0
+        self.max_state = 0
+
+    def _advance_to(self, new_state: int) -> None:
+        """Advance to a new state, updating stages_hit and max_state."""
+        self.state = new_state
+        self.stages_hit += 1
+        self.max_state = new_state
+
+
+def _sm_handle_neutral(ctx: _SMContext, seg: dict, text: str, signals: dict[str, bool]) -> None:
+    """Handle state machine in NEUTRAL state."""
+    if signals["observation"]:
+        ctx.state = _SM_OBSERVATION
+        ctx.hook_start = seg["start"]
+        ctx.hook_text_parts = [text]
+        ctx.stages_hit = 1
+        ctx.max_state = _SM_OBSERVATION
+
+
+def _sm_handle_observation(ctx: _SMContext, text: str, signals: dict[str, bool]) -> None:
+    """Handle state machine in OBSERVATION state."""
+    ctx.hook_text_parts.append(text)
+    if signals["expectation"]:
+        ctx._advance_to(_SM_EXPECTATION)
+    elif signals["contradiction"]:
+        # Skip expectation, go straight to contradiction
+        ctx._advance_to(_SM_CONTRADICTION)
+
+
+def _sm_handle_expectation(ctx: _SMContext, text: str, signals: dict[str, bool]) -> None:
+    """Handle state machine in EXPECTATION state."""
+    ctx.hook_text_parts.append(text)
+    if signals["contradiction"]:
+        ctx._advance_to(_SM_CONTRADICTION)
+
+
+def _sm_handle_contradiction(ctx: _SMContext, text: str, signals: dict[str, bool]) -> None:
+    """Handle state machine in CONTRADICTION state."""
+    ctx.hook_text_parts.append(text)
+    if signals["escalation"]:
+        ctx._advance_to(_SM_ESCALATION)
+    elif signals["curiosity_peak"]:
+        ctx._advance_to(_SM_CURIOSITY_PEAK)
+
+
+def _sm_handle_escalation(ctx: _SMContext, text: str, signals: dict[str, bool]) -> None:
+    """Handle state machine in ESCALATION state."""
+    ctx.hook_text_parts.append(text)
+    if signals["curiosity_peak"]:
+        ctx._advance_to(_SM_CURIOSITY_PEAK)
+
+
+def _sm_handle_curiosity_peak(ctx: _SMContext, signals: dict[str, bool]) -> None:
+    """Handle state machine in CURIOSITY_PEAK state."""
+    if signals["explanation"]:
+        ctx.state = _SM_EXPLANATION
+
+
+def _sm_try_emit(ctx: _SMContext, seg: dict, hooks: list[_StateMachineHook]) -> None:
+    """Emit a hook if the state machine has reached curiosity peak or explanation with enough stages."""
+    if ctx.state in (_SM_CURIOSITY_PEAK, _SM_EXPLANATION) and ctx.stages_hit >= 2:
+        hook_end = seg.get("end", seg["start"] + 15)
+        hooks.append(_StateMachineHook(
+            start_seconds=ctx.hook_start,
+            end_seconds=hook_end,
+            text=" ".join(ctx.hook_text_parts),
+            max_state=ctx.max_state,
+            stages_hit=ctx.stages_hit,
+        ))
+        ctx.reset()
+
+
+def _sm_check_timeout(ctx: _SMContext, seg: dict, hooks: list[_StateMachineHook]) -> None:
+    """Check if the state machine has been building too long without progression."""
+    if ctx.state > _SM_NEUTRAL and seg["start"] - ctx.hook_start > 120:
+        # Save partial hook if it reached contradiction
+        if ctx.max_state >= _SM_CONTRADICTION and ctx.stages_hit >= 2:
+            hooks.append(_StateMachineHook(
+                start_seconds=ctx.hook_start,
+                end_seconds=seg.get("end", seg["start"] + 15),
+                text=" ".join(ctx.hook_text_parts),
+                max_state=ctx.max_state,
+                stages_hit=ctx.stages_hit,
+            ))
+        ctx.reset()
+
+
 def _run_state_machine(segments: list[dict]) -> list[_StateMachineHook]:
     """Run the hook state machine over sequential transcript segments.
 
@@ -1313,11 +1444,16 @@ def _run_state_machine(segments: list[dict]) -> list[_StateMachineHook]:
             unique_segs.append(seg)
 
     hooks: list[_StateMachineHook] = []
-    state = _SM_NEUTRAL
-    hook_start = 0.0
-    hook_text_parts: list[str] = []
-    stages_hit = 0
-    max_state = 0
+    ctx = _SMContext()
+
+    _SM_HANDLERS = {
+        _SM_NEUTRAL: lambda seg, text, signals: _sm_handle_neutral(ctx, seg, text, signals),
+        _SM_OBSERVATION: lambda seg, text, signals: _sm_handle_observation(ctx, text, signals),
+        _SM_EXPECTATION: lambda seg, text, signals: _sm_handle_expectation(ctx, text, signals),
+        _SM_CONTRADICTION: lambda seg, text, signals: _sm_handle_contradiction(ctx, text, signals),
+        _SM_ESCALATION: lambda seg, text, signals: _sm_handle_escalation(ctx, text, signals),
+        _SM_CURIOSITY_PEAK: lambda seg, text, signals: _sm_handle_curiosity_peak(ctx, signals),
+    }
 
     for seg in unique_segs:
         text = _normalize_transcript(seg["text"].strip())
@@ -1330,97 +1466,25 @@ def _run_state_machine(segments: list[dict]) -> list[_StateMachineHook]:
         if signals["filler"]:
             continue
 
-        if state == _SM_NEUTRAL:
-            if signals["observation"]:
-                state = _SM_OBSERVATION
-                hook_start = seg["start"]
-                hook_text_parts = [text]
-                stages_hit = 1
-                max_state = _SM_OBSERVATION
-
-        elif state == _SM_OBSERVATION:
-            hook_text_parts.append(text)
-            if signals["expectation"]:
-                state = _SM_EXPECTATION
-                stages_hit += 1
-                max_state = _SM_EXPECTATION
-            elif signals["contradiction"]:
-                # Skip expectation, go straight to contradiction
-                state = _SM_CONTRADICTION
-                stages_hit += 1
-                max_state = _SM_CONTRADICTION
-
-        elif state == _SM_EXPECTATION:
-            hook_text_parts.append(text)
-            if signals["contradiction"]:
-                state = _SM_CONTRADICTION
-                stages_hit += 1
-                max_state = _SM_CONTRADICTION
-
-        elif state == _SM_CONTRADICTION:
-            hook_text_parts.append(text)
-            if signals["escalation"]:
-                state = _SM_ESCALATION
-                stages_hit += 1
-                max_state = _SM_ESCALATION
-            elif signals["curiosity_peak"]:
-                state = _SM_CURIOSITY_PEAK
-                stages_hit += 1
-                max_state = _SM_CURIOSITY_PEAK
-
-        elif state == _SM_ESCALATION:
-            hook_text_parts.append(text)
-            if signals["curiosity_peak"]:
-                state = _SM_CURIOSITY_PEAK
-                stages_hit += 1
-                max_state = _SM_CURIOSITY_PEAK
-
-        elif state == _SM_CURIOSITY_PEAK:
-            # Hook is complete — check for explanation start
-            if signals["explanation"]:
-                state = _SM_EXPLANATION
+        handler = _SM_HANDLERS.get(ctx.state)
+        if handler:
+            handler(seg, text, signals)
 
         # Emit hook when we reach curiosity peak or explanation
-        if state in (_SM_CURIOSITY_PEAK, _SM_EXPLANATION) and stages_hit >= 2:
-            hook_end = seg.get("end", seg["start"] + 15)
-            hooks.append(_StateMachineHook(
-                start_seconds=hook_start,
-                end_seconds=hook_end,
-                text=" ".join(hook_text_parts),
-                max_state=max_state,
-                stages_hit=stages_hit,
-            ))
-            # Reset for potential next hook
-            state = _SM_NEUTRAL
-            hook_text_parts = []
-            stages_hit = 0
-            max_state = 0
+        _sm_try_emit(ctx, seg, hooks)
 
         # Timeout: if we've been building for too long without progression, reset
-        if state > _SM_NEUTRAL and seg["start"] - hook_start > 120:
-            # Save partial hook if it reached contradiction
-            if max_state >= _SM_CONTRADICTION and stages_hit >= 2:
-                hooks.append(_StateMachineHook(
-                    start_seconds=hook_start,
-                    end_seconds=seg.get("end", seg["start"] + 15),
-                    text=" ".join(hook_text_parts),
-                    max_state=max_state,
-                    stages_hit=stages_hit,
-                ))
-            state = _SM_NEUTRAL
-            hook_text_parts = []
-            stages_hit = 0
-            max_state = 0
+        _sm_check_timeout(ctx, seg, hooks)
 
     # Flush any in-progress hook that reached at least contradiction
-    if max_state >= _SM_CONTRADICTION and stages_hit >= 2:
+    if ctx.max_state >= _SM_CONTRADICTION and ctx.stages_hit >= 2:
         last_seg = unique_segs[-1] if unique_segs else {"start": 0, "end": 15}
         hooks.append(_StateMachineHook(
-            start_seconds=hook_start,
+            start_seconds=ctx.hook_start,
             end_seconds=last_seg.get("end", last_seg["start"] + 15),
-            text=" ".join(hook_text_parts),
-            max_state=max_state,
-            stages_hit=stages_hit,
+            text=" ".join(ctx.hook_text_parts),
+            max_state=ctx.max_state,
+            stages_hit=ctx.stages_hit,
         ))
 
     return hooks
@@ -1449,6 +1513,129 @@ def _seconds_to_timestamp(seconds: float) -> str:
     m = int(seconds) // 60
     s = int(seconds) % 60
     return f"{m}:{s:02d}"
+
+
+def _score_and_classify_segment(
+    text: str, start_seconds: float, end_seconds: float,
+    preferred_types: list[str],
+) -> _ScoredSegment | None:
+    """Score a single text segment and classify its hook type.
+
+    Returns a _ScoredSegment or None if the segment should be rejected.
+    """
+    text = _normalize_transcript(text.strip())
+    if not text or len(text.split()) < 4:
+        return None
+
+    # Reject filler
+    filler_hits = _match_count(text, FILLER_PATTERNS)
+    if filler_hits >= 2:
+        return None
+
+    # Trim at hook boundary if detected
+    boundary = _detect_hook_end(text)
+    if boundary and boundary > 30:
+        text = text[:boundary].rstrip()
+
+    # Score all 7 dimensions
+    dims = _score_dimensions(text)
+
+    # Compute auxiliary scores for classification
+    authority_s = _match_score(text, AUTHORITY_PATTERNS)
+    story_s = _match_score(text, STORY_PATTERNS)
+    benefit_s = _match_score(text, BENEFIT_PATTERNS)
+
+    # Classify hook type
+    hook_type, funnel_role = _classify_hook_type(
+        dims.scroll_stop, dims.curiosity_gap, dims.stakes_intensity,
+        dims.emotional_voltage, text, authority_s, story_s, benefit_s,
+    )
+
+    # Niche bonus: boost score if hook type is preferred for this niche
+    niche_bonus = 0.0
+    if hook_type in preferred_types:
+        niche_bonus = 0.8
+
+    # Compute final score
+    final = _compute_final_score(dims, start_seconds, text, authority_s) + niche_bonus
+
+    return _ScoredSegment(
+        text=text,
+        start_seconds=start_seconds,
+        end_seconds=end_seconds,
+        final_score=final,
+        dimensions=dims,
+        hook_type=hook_type,
+        funnel_role=funnel_role,
+    )
+
+
+def _apply_cross_layer_bonuses(
+    seg: _ScoredSegment,
+    sm_hooks: list[_StateMachineHook],
+    density_peaks: list[dict],
+) -> None:
+    """Apply cross-layer bonuses from state machine arcs and density peaks (mutates seg.final_score)."""
+    # Bonus if segment falls within a state machine hook arc
+    for sm in sm_hooks:
+        if seg.start_seconds >= sm.start_seconds and seg.end_seconds <= sm.end_seconds + 5:
+            sm_bonus = 0.3 * sm.stages_hit
+            seg.final_score += min(sm_bonus, 1.5)
+            break
+
+    # Bonus if segment falls within a density peak
+    for peak in density_peaks:
+        if seg.start_seconds < peak["end"] and seg.end_seconds > peak["start"]:
+            density_bonus = min((peak["density"] - 6.0) * 0.15, 1.0)
+            seg.final_score += density_bonus
+            break
+
+    seg.final_score = min(10.0, seg.final_score)
+
+
+def _score_state_machine_arcs(
+    sm_hooks: list[_StateMachineHook],
+    preferred_types: list[str],
+) -> list[_ScoredSegment]:
+    """Score state machine arcs as standalone hook candidates."""
+    results: list[_ScoredSegment] = []
+    for sm in sm_hooks:
+        if sm.stages_hit < 3:
+            continue  # Only use arcs with substantial progression
+        text = sm.text
+        if len(text.split()) < 6:
+            continue
+
+        # Trim at hook boundary
+        boundary = _detect_hook_end(text)
+        if boundary and boundary > 30:
+            text = text[:boundary].rstrip()
+
+        dims = _score_dimensions(text)
+        authority_s = _match_score(text, AUTHORITY_PATTERNS)
+        story_s = _match_score(text, STORY_PATTERNS)
+        benefit_s = _match_score(text, BENEFIT_PATTERNS)
+        hook_type, funnel_role = _classify_hook_type(
+            dims.scroll_stop, dims.curiosity_gap, dims.stakes_intensity,
+            dims.emotional_voltage, text, authority_s, story_s, benefit_s,
+        )
+        niche_bonus = 0.8 if hook_type in preferred_types else 0.0
+        final = _compute_final_score(dims, sm.start_seconds, text, authority_s) + niche_bonus
+        # State machine arc bonus (complete arcs are high confidence)
+        final += 0.3 * sm.stages_hit
+        final = min(10.0, final)
+
+        if final >= 2.0:
+            results.append(_ScoredSegment(
+                text=text[:500],  # cap very long arcs
+                start_seconds=sm.start_seconds,
+                end_seconds=sm.end_seconds,
+                final_score=final,
+                dimensions=dims,
+                hook_type=hook_type,
+                funnel_role=funnel_role,
+            ))
+    return results
 
 
 class DeterministicEngine:
@@ -1504,115 +1691,24 @@ class DeterministicEngine:
         # ── Layer 3: Per-segment scoring ──
         scored: list[_ScoredSegment] = []
         for seg in segments:
-            text = _normalize_transcript(seg["text"].strip())
-            if not text or len(text.split()) < 4:
-                continue
-
-            # Reject filler
-            filler_hits = _match_count(text, FILLER_PATTERNS)
-            if filler_hits >= 2:
-                continue
-
-            # Trim at hook boundary if detected
-            boundary = _detect_hook_end(text)
-            if boundary and boundary > 30:
-                text = text[:boundary].rstrip()
-
-            # Score all 7 dimensions
-            dims = _score_dimensions(text)
-
-            # Compute auxiliary scores for classification
-            authority_s = _match_score(text, AUTHORITY_PATTERNS)
-            story_s = _match_score(text, STORY_PATTERNS)
-            benefit_s = _match_score(text, BENEFIT_PATTERNS)
-
-            # Classify hook type
-            hook_type, funnel_role = _classify_hook_type(
-                dims.scroll_stop, dims.curiosity_gap, dims.stakes_intensity,
-                dims.emotional_voltage, text, authority_s, story_s, benefit_s,
+            result = _score_and_classify_segment(
+                seg["text"], seg["start"], seg.get("end", seg["start"] + 15),
+                preferred_types,
             )
-
-            # Niche bonus: boost score if hook type is preferred for this niche
-            niche_bonus = 0.0
-            if hook_type in preferred_types:
-                niche_bonus = 0.8
-
-            # Compute final score
-            final = _compute_final_score(dims, seg["start"], text, authority_s) + niche_bonus
+            if result is None:
+                continue
 
             # ── Cross-layer bonuses ──
-            seg_start = seg["start"]
-            seg_end = seg.get("end", seg_start + 15)
-
-            # Bonus if segment falls within a state machine hook arc
-            for sm in sm_hooks:
-                if seg_start >= sm.start_seconds and seg_end <= sm.end_seconds + 5:
-                    # Scale bonus by how many stages the arc traversed
-                    sm_bonus = 0.3 * sm.stages_hit
-                    final += min(sm_bonus, 1.5)
-                    break
-
-            # Bonus if segment falls within a density peak
-            for peak in density_peaks:
-                if seg_start < peak["end"] and seg_end > peak["start"]:
-                    # Density > 6 means multiple strong signals clustered here
-                    density_bonus = min((peak["density"] - 6.0) * 0.15, 1.0)
-                    final += density_bonus
-                    break
-
-            final = min(10.0, final)
+            _apply_cross_layer_bonuses(result, sm_hooks, density_peaks)
 
             # Skip very weak segments
-            if final < 1.5:
+            if result.final_score < 1.5:
                 continue
 
-            scored.append(_ScoredSegment(
-                text=text,
-                start_seconds=seg_start,
-                end_seconds=seg_end,
-                final_score=final,
-                dimensions=dims,
-                hook_type=hook_type,
-                funnel_role=funnel_role,
-            ))
+            scored.append(result)
 
         # ── Also score state machine arcs as candidates ──
-        for sm in sm_hooks:
-            if sm.stages_hit < 3:
-                continue  # Only use arcs with substantial progression
-            text = sm.text
-            if len(text.split()) < 6:
-                continue
-
-            # Trim at hook boundary
-            boundary = _detect_hook_end(text)
-            if boundary and boundary > 30:
-                text = text[:boundary].rstrip()
-
-            dims = _score_dimensions(text)
-            authority_s = _match_score(text, AUTHORITY_PATTERNS)
-            story_s = _match_score(text, STORY_PATTERNS)
-            benefit_s = _match_score(text, BENEFIT_PATTERNS)
-            hook_type, funnel_role = _classify_hook_type(
-                dims.scroll_stop, dims.curiosity_gap, dims.stakes_intensity,
-                dims.emotional_voltage, text, authority_s, story_s, benefit_s,
-            )
-            niche_bonus = 0.8 if hook_type in preferred_types else 0.0
-            final = _compute_final_score(dims, sm.start_seconds, text, authority_s) + niche_bonus
-            # State machine arc bonus (complete arcs are high confidence)
-            final += 0.3 * sm.stages_hit
-            final = min(10.0, final)
-
-            if final >= 2.0:
-                scored.append(_ScoredSegment(
-                    text=text[:500],  # cap very long arcs
-                    start_seconds=sm.start_seconds,
-                    end_seconds=sm.end_seconds,
-                    final_score=final,
-                    dimensions=dims,
-                    hook_type=hook_type,
-                    funnel_role=funnel_role,
-                ))
+        scored.extend(_score_state_machine_arcs(sm_hooks, preferred_types))
 
         # Sort by score descending
         scored.sort(key=lambda s: s.final_score, reverse=True)
@@ -1628,6 +1724,20 @@ class DeterministicEngine:
         selected.sort(key=lambda s: s.final_score, reverse=True)
 
         # Build HookCandidates
+        hooks = self._build_hook_candidates(selected)
+
+        return HookEngineResult(
+            hooks=hooks,
+            provider="deterministic",
+            model="rule-based-v4",
+            attempts=1,
+            input_tokens=None,
+            output_tokens=None,
+        )
+
+    @staticmethod
+    def _build_hook_candidates(selected: list[_ScoredSegment]) -> list[HookCandidate]:
+        """Convert scored segments into HookCandidate objects."""
         hooks: list[HookCandidate] = []
         for rank, seg in enumerate(selected, 1):
             d = seg.dimensions
@@ -1667,15 +1777,7 @@ class DeterministicEngine:
                 improvement_suggestion=tip,
                 is_composite=False,
             ))
-
-        return HookEngineResult(
-            hooks=hooks,
-            provider="deterministic",
-            model="rule-based-v4",
-            attempts=1,
-            input_tokens=None,
-            output_tokens=None,
-        )
+        return hooks
 
     def _select_top_5(
         self, candidates: list[_ScoredSegment], preferred_types: list[str],

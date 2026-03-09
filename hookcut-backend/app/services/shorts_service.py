@@ -8,7 +8,7 @@ import logging
 from datetime import datetime, timedelta, timezone
 
 from sqlalchemy import select
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, selectinload
 
 from app.exceptions import ShortNotFoundError, ShortNotReadyError, InvalidStateError
 from app.models.learning import LearningLog
@@ -29,7 +29,11 @@ class ShortsService:
 
         Raises: ShortNotFoundError if not found or not owned by user.
         """
-        short = db.get(Short, short_id)
+        short = db.execute(
+            select(Short)
+            .where(Short.id == short_id)
+            .options(selectinload(Short.session))
+        ).scalar_one_or_none()
         if not short or not short.session or short.session.user_id != user_id:
             raise ShortNotFoundError()
         return short
@@ -44,7 +48,7 @@ class ShortsService:
         short = db.execute(
             select(Short).where(
                 (Short.video_file_key == file_key) | (Short.thumbnail_file_key == file_key)
-            )
+            ).options(selectinload(Short.session))
         ).scalar_one_or_none()
         if not short or not short.session or short.session.user_id != user_id:
             raise ShortNotFoundError("File not found")

@@ -1091,6 +1091,142 @@ class AdminService:
     # 21. Trigger NARM analysis
     # ------------------------------------------------------------------
     @staticmethod
+    def _aggregate_hook_selection_data(db: Session, cutoff: datetime) -> dict:
+        """Aggregate hook selection rates by hook_type since cutoff."""
+        presented_stmt = (
+            select(
+                LearningLog.event_metadata["hook_type"].label("hook_type"),
+                func.count(LearningLog.id).label("cnt"),
+            )
+            .where(
+                LearningLog.event_type == "hook_presented",
+                LearningLog.created_at >= cutoff,
+            )
+            .group_by("hook_type")
+        )
+        selected_stmt = (
+            select(
+                LearningLog.event_metadata["hook_type"].label("hook_type"),
+                func.count(LearningLog.id).label("cnt"),
+            )
+            .where(
+                LearningLog.event_type == "hook_selected",
+                LearningLog.created_at >= cutoff,
+            )
+            .group_by("hook_type")
+        )
+
+        presented_rows = db.execute(presented_stmt).all()
+        selected_rows = db.execute(selected_stmt).all()
+
+        presented_map = {
+            str(row.hook_type): row.cnt for row in presented_rows
+        }
+        selected_map = {
+            str(row.hook_type): row.cnt for row in selected_rows
+        }
+
+        selection_rates = {}
+        for ht, presented_count in presented_map.items():
+            sel_count = selected_map.get(ht, 0)
+            rate = (sel_count / presented_count * 100) if presented_count > 0 else 0
+            selection_rates[ht] = {
+                "presented": presented_count,
+                "selected": sel_count,
+                "rate_pct": round(rate, 1),
+            }
+        return selection_rates
+
+    @staticmethod
+    def _aggregate_niche_data(db: Session, cutoff: datetime) -> tuple[list[dict], int, int, float]:
+        """Aggregate popular niches and regeneration rate since cutoff.
+
+        Returns (popular_niches, total_sessions_count, regen_sessions_count, regen_rate).
+        """
+        niche_stmt = (
+            select(
+                LearningLog.niche,
+                func.count(LearningLog.id).label("cnt"),
+            )
+            .where(
+                LearningLog.event_type == "hook_presented",
+                LearningLog.created_at >= cutoff,
+            )
+            .group_by(LearningLog.niche)
+            .order_by(desc("cnt"))
+            .limit(10)
+        )
+        niche_rows = db.execute(niche_stmt).all()
+        popular_niches = [
+            {"niche": row.niche, "count": row.cnt}
+            for row in niche_rows
+        ]
+
+        total_sessions_count = db.scalar(
+            select(func.count(func.distinct(LearningLog.session_id)))
+            .where(LearningLog.created_at >= cutoff)
+        ) or 0
+
+        regen_sessions_count = db.scalar(
+            select(func.count(func.distinct(LearningLog.session_id)))
+            .where(
+                LearningLog.event_type == "regeneration_triggered",
+                LearningLog.created_at >= cutoff,
+            )
+        ) or 0
+
+        regen_rate = (
+            (regen_sessions_count / total_sessions_count * 100)
+            if total_sessions_count > 0
+            else 0
+        )
+
+        return popular_niches, total_sessions_count, regen_sessions_count, regen_rate
+
+    @staticmethod
+    def _aggregate_attention_scores(db: Session, cutoff: datetime) -> dict:
+        """Aggregate average attention scores by niche since cutoff."""
+        attn_stmt = (
+            select(
+                AnalysisSession.niche,
+                func.avg(Hook.attention_score).label("avg_score"),
+            )
+            .join(
+                AnalysisSession,
+                Hook.session_id == AnalysisSession.id,
+            )
+            .where(AnalysisSession.created_at >= cutoff)
+            .group_by(AnalysisSession.niche)
+        )
+        attn_rows = db.execute(attn_stmt).all()
+        return {
+            row.niche: round(float(row.avg_score), 2)
+            for row in attn_rows
+            if row.avg_score is not None
+        }
+
+    @staticmethod
+    def _build_narm_summary(
+        time_range_days: int,
+        selection_rates: dict,
+        popular_niches: list[dict],
+        regen_rate: float,
+        total_sessions_count: int,
+        regen_sessions_count: int,
+        avg_attention: dict,
+    ) -> dict:
+        """Format aggregated data into the summary dict for LLM consumption."""
+        return {
+            "time_range_days": time_range_days,
+            "hook_selection_rates": selection_rates,
+            "popular_niches": popular_niches,
+            "regeneration_rate_pct": round(regen_rate, 1),
+            "total_sessions": total_sessions_count,
+            "regen_sessions": regen_sessions_count,
+            "avg_attention_by_niche": avg_attention,
+        }
+
+    @staticmethod
     def trigger_narm_analysis(
         db: Session, time_range_days: int, admin_user: User
     ) -> list[NarmInsight]:
@@ -1106,120 +1242,17 @@ class AdminService:
         cutoff = datetime.now(timezone.utc) - timedelta(days=time_range_days)
 
         try:
-            # --- Hook selection rates by hook_type ---
-            presented_stmt = (
-                select(
-                    LearningLog.event_metadata["hook_type"].label("hook_type"),
-                    func.count(LearningLog.id).label("cnt"),
-                )
-                .where(
-                    LearningLog.event_type == "hook_presented",
-                    LearningLog.created_at >= cutoff,
-                )
-                .group_by("hook_type")
+            selection_rates = AdminService._aggregate_hook_selection_data(db, cutoff)
+            popular_niches, total_sessions_count, regen_sessions_count, regen_rate = (
+                AdminService._aggregate_niche_data(db, cutoff)
             )
-            selected_stmt = (
-                select(
-                    LearningLog.event_metadata["hook_type"].label("hook_type"),
-                    func.count(LearningLog.id).label("cnt"),
-                )
-                .where(
-                    LearningLog.event_type == "hook_selected",
-                    LearningLog.created_at >= cutoff,
-                )
-                .group_by("hook_type")
+            avg_attention = AdminService._aggregate_attention_scores(db, cutoff)
+
+            summary = AdminService._build_narm_summary(
+                time_range_days, selection_rates, popular_niches,
+                regen_rate, total_sessions_count, regen_sessions_count,
+                avg_attention,
             )
-
-            presented_rows = db.execute(presented_stmt).all()
-            selected_rows = db.execute(selected_stmt).all()
-
-            presented_map = {
-                str(row.hook_type): row.cnt for row in presented_rows
-            }
-            selected_map = {
-                str(row.hook_type): row.cnt for row in selected_rows
-            }
-
-            selection_rates = {}
-            for ht, presented_count in presented_map.items():
-                sel_count = selected_map.get(ht, 0)
-                rate = (sel_count / presented_count * 100) if presented_count > 0 else 0
-                selection_rates[ht] = {
-                    "presented": presented_count,
-                    "selected": sel_count,
-                    "rate_pct": round(rate, 1),
-                }
-
-            # --- Most popular niches ---
-            niche_stmt = (
-                select(
-                    LearningLog.niche,
-                    func.count(LearningLog.id).label("cnt"),
-                )
-                .where(
-                    LearningLog.event_type == "hook_presented",
-                    LearningLog.created_at >= cutoff,
-                )
-                .group_by(LearningLog.niche)
-                .order_by(desc("cnt"))
-                .limit(10)
-            )
-            niche_rows = db.execute(niche_stmt).all()
-            popular_niches = [
-                {"niche": row.niche, "count": row.cnt}
-                for row in niche_rows
-            ]
-
-            # --- Regeneration rate ---
-            total_sessions_count = db.scalar(
-                select(func.count(func.distinct(LearningLog.session_id)))
-                .where(LearningLog.created_at >= cutoff)
-            ) or 0
-
-            regen_sessions_count = db.scalar(
-                select(func.count(func.distinct(LearningLog.session_id)))
-                .where(
-                    LearningLog.event_type == "regeneration_triggered",
-                    LearningLog.created_at >= cutoff,
-                )
-            ) or 0
-
-            regen_rate = (
-                (regen_sessions_count / total_sessions_count * 100)
-                if total_sessions_count > 0
-                else 0
-            )
-
-            # --- Average attention scores by niche ---
-            attn_stmt = (
-                select(
-                    AnalysisSession.niche,
-                    func.avg(Hook.attention_score).label("avg_score"),
-                )
-                .join(
-                    AnalysisSession,
-                    Hook.session_id == AnalysisSession.id,
-                )
-                .where(AnalysisSession.created_at >= cutoff)
-                .group_by(AnalysisSession.niche)
-            )
-            attn_rows = db.execute(attn_stmt).all()
-            avg_attention = {
-                row.niche: round(float(row.avg_score), 2)
-                for row in attn_rows
-                if row.avg_score is not None
-            }
-
-            # --- Build summary ---
-            summary = {
-                "time_range_days": time_range_days,
-                "hook_selection_rates": selection_rates,
-                "popular_niches": popular_niches,
-                "regeneration_rate_pct": round(regen_rate, 1),
-                "total_sessions": total_sessions_count,
-                "regen_sessions": regen_sessions_count,
-                "avg_attention_by_niche": avg_attention,
-            }
 
             # --- Call LLM ---
             # Use ensure_ascii=True + code fences to prevent prompt injection

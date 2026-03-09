@@ -50,6 +50,8 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["X-Frame-Options"] = "DENY"
         response.headers["Strict-Transport-Security"] = "max-age=63072000; includeSubDomains"
         response.headers["X-Content-Security-Policy"] = "default-src 'self'"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+        response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
         return response
 
 
@@ -163,12 +165,13 @@ def create_app() -> FastAPI:
             checks["database"] = f"error: {str(e)[:100]}"
             overall = "degraded"
 
-        # Redis check (lazy singleton to avoid creating a connection per call)
+        # Redis check (lazy singleton, run in thread to avoid blocking event loop)
         try:
             if not hasattr(health, "_redis_client"):
                 import redis as redis_lib
                 health._redis_client = redis_lib.from_url(settings.REDIS_URL)
-            health._redis_client.ping()
+            import anyio
+            await anyio.to_thread.run_sync(health._redis_client.ping)
             checks["redis"] = "ok"
         except Exception as e:
             logger.error(f"Health check Redis error: {e}")

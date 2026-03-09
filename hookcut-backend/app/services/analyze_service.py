@@ -201,7 +201,11 @@ class AnalyzeService:
         Returns dict for RegenerateResponse.
         Raises: SessionNotFoundError, InvalidStateError
         """
-        session = db.get(AnalysisSession, session_id)
+        session = db.execute(
+            select(AnalysisSession)
+            .where(AnalysisSession.id == session_id)
+            .with_for_update()
+        ).scalar_one_or_none()
         if not session:
             raise SessionNotFoundError()
 
@@ -280,7 +284,11 @@ class AnalyzeService:
         Returns dict for SelectHooksResponse.
         Raises: SessionNotFoundError, HooksNotReadyError, InvalidStateError
         """
-        session = db.get(AnalysisSession, session_id)
+        session = db.execute(
+            select(AnalysisSession)
+            .where(AnalysisSession.id == session_id)
+            .with_for_update()
+        ).scalar_one_or_none()
         if not session:
             raise SessionNotFoundError()
 
