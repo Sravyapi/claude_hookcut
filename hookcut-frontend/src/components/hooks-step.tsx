@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useMemo, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Scissors } from "lucide-react";
 import type { Hook, CaptionStyle } from "@/lib/types";
 import { MAX_SELECTED_HOOKS } from "@/lib/constants";
 import { HookCard } from "./hook-card";
@@ -56,6 +57,7 @@ interface HooksStepProps {
   onRegenerate: () => void;
   isRegenerating: boolean;
   analysisElapsed?: number;
+  sessionId?: string;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -68,9 +70,11 @@ export const HooksStep = memo(function HooksStep({
   onRegenerate,
   isRegenerating,
   analysisElapsed = 0,
+  sessionId,
 }: HooksStepProps) {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [captionStyle, setCaptionStyle] = useState<CaptionStyle>("clean");
+  const handleCaptionStyleChange = useCallback((v: CaptionStyle) => setCaptionStyle(v), []);
   const [timeOverrides, setTimeOverrides] = useState<
     Record<string, { start_seconds: number; end_seconds: number }>
   >({});
@@ -150,7 +154,7 @@ export const HooksStep = memo(function HooksStep({
 
       {/* ── Hook cards ── */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8"
         variants={staggerContainer}
         initial="hidden"
         animate="show"
@@ -167,6 +171,22 @@ export const HooksStep = memo(function HooksStep({
         ))}
       </motion.div>
 
+      {/* ── Manual clipper CTA ── */}
+      <div className="flex items-center gap-4 my-6">
+        <div className="flex-1 h-px bg-white/10" />
+        <span className="text-sm text-white/30">Or clip it yourself</span>
+        <div className="flex-1 h-px bg-white/10" />
+      </div>
+      <div className="text-center mb-6">
+        <a
+          href={`/clip${sessionId ? `?session=${sessionId}` : ""}`}
+          className="inline-flex items-center gap-2 text-sm text-violet-400 hover:text-violet-300 transition-colors"
+        >
+          <Scissors className="w-4 h-4" />
+          Open Manual Clipper &rarr;
+        </a>
+      </div>
+
       {/* ── Caption style picker (visible when hooks selected) ── */}
       <AnimatePresence>
         {selectedIds.size > 0 && (
@@ -176,7 +196,7 @@ export const HooksStep = memo(function HooksStep({
             exit={{ opacity: 0, height: 0 }}
             className="mb-5 overflow-hidden"
           >
-            <p className="text-[11px] text-[--color-muted] uppercase tracking-wider mb-2.5 font-semibold">
+            <p className="text-xs text-[--color-muted] uppercase tracking-wider mb-2.5 font-semibold">
               Caption Style
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -185,7 +205,7 @@ export const HooksStep = memo(function HooksStep({
                   key={opt.value}
                   option={opt}
                   selected={captionStyle === opt.value}
-                  onSelect={setCaptionStyle}
+                  onSelect={handleCaptionStyleChange}
                 />
               ))}
             </div>
@@ -202,7 +222,7 @@ export const HooksStep = memo(function HooksStep({
             exit={{ opacity: 0, height: 0 }}
             className="mb-6 overflow-hidden"
           >
-            <p className="text-[11px] text-[--color-muted] uppercase tracking-wider mb-2.5 font-semibold">
+            <p className="text-xs text-[--color-muted] uppercase tracking-wider mb-2.5 font-semibold">
               Trim Boundaries
             </p>
             <div className="space-y-2">
@@ -352,7 +372,7 @@ const CaptionStyleCard = memo(function CaptionStyleCard({
         </span>
       </div>
       <div className="text-[13px] font-medium text-white/80">{option.label}</div>
-      <div className="text-[10px] text-[--color-muted]">{option.description}</div>
+      <div className="text-xs text-[--color-muted]">{option.description}</div>
       {selected && (
         <div className="absolute top-2 right-2 w-4 h-4 rounded-full bg-[--color-primary] flex items-center justify-center">
           <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

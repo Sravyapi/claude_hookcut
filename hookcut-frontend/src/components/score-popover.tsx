@@ -4,18 +4,7 @@ import { memo, useState, useCallback, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { HookScores } from "@/lib/types";
 import { getScoreColor } from "@/lib/utils";
-
-const SCORE_LABELS: Record<keyof HookScores, string> = {
-  scroll_stop: "Scroll Stop",
-  curiosity_gap: "Curiosity Gap",
-  stakes_intensity: "Stakes",
-  emotional_voltage: "Emotion",
-  standalone_clarity: "Clarity",
-  thematic_focus: "Focus",
-  thought_completeness: "Completeness",
-};
-
-export { SCORE_LABELS };
+import { SCORE_LABELS } from "@/lib/constants";
 
 interface ScorePopoverProps {
   scores: HookScores;

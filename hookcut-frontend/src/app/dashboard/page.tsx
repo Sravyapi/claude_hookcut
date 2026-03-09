@@ -51,7 +51,7 @@ function CreditRing({ balance }: { balance: CreditBalance }) {
         />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="text-2xl font-bold text-white tabular-nums leading-none">
+        <span className={`${balance.total_available > 999 ? "text-xl" : "text-2xl"} font-bold text-white tabular-nums leading-none`}>
           {balance.total_available.toFixed(0)}
         </span>
         <span className="text-[9px] text-white/30 uppercase tracking-wider mt-1">
@@ -77,8 +77,8 @@ function StatCard({
   color: string;
 }) {
   return (
-    <div className={`glass-card rounded-xl p-4 border ${color}`}>
-      <div className="flex items-center gap-2 mb-2 text-white/40">
+    <div className="glass-card rounded-xl p-4 border border-white/[0.06]">
+      <div className={`flex items-center gap-2 mb-2 ${color}`}>
         {icon}
         <span className="text-[10px] uppercase tracking-wider font-medium">{label}</span>
       </div>
@@ -105,7 +105,7 @@ const SessionRow = memo(function SessionRow({ session }: { session: SessionSumma
     <motion.button
       variants={fadeUpItem}
       onClick={() => router.push(`/?session=${session.id}`)}
-      className="w-full flex items-center gap-4 px-4 py-3.5 rounded-xl hover:bg-white/[0.03] transition-colors duration-200 group text-left"
+      className="w-full flex items-center gap-4 px-4 py-3.5 rounded-xl hover:bg-white/[0.05] transition-colors duration-200 group text-left"
     >
       {/* Thumbnail */}
       <div className="relative w-16 h-9 rounded-lg overflow-hidden shrink-0 bg-white/[0.04]">
@@ -113,6 +113,7 @@ const SessionRow = memo(function SessionRow({ session }: { session: SessionSumma
           <img
             src={thumbUrl}
             alt={session.video_title || "Video thumbnail"}
+            loading="lazy"
             className="w-full h-full object-cover"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = "none";
@@ -289,7 +290,7 @@ export default function DashboardPage() {
               <CreditCard className="w-4 h-4 text-[#E84A2F]" />
               <h2 className="text-sm font-semibold text-white/80">Credit Balance</h2>
             </div>
-            <Button variant="secondary" size="sm" asChild>
+            <Button size="sm" asChild>
               <Link href="/pricing">Top Up</Link>
             </Button>
           </div>
@@ -305,28 +306,30 @@ export default function DashboardPage() {
             </div>
           ) : balance ? (
             <div className="flex flex-col sm:flex-row items-center gap-6">
-              <CreditRing balance={balance} />
-              <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-3 w-full">
+              <div className="w-full sm:w-auto flex justify-center">
+                <CreditRing balance={balance} />
+              </div>
+              <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
                 <StatCard
                   icon={<CreditCard className="w-3.5 h-3.5" />}
                   label="Subscription"
                   value={`${balance.paid_minutes_remaining.toFixed(1)}`}
                   sub={`of ${balance.paid_minutes_total.toFixed(0)} min`}
-                  color="border-[#E84A2F]/20"
+                  color="text-[#E84A2F]"
                 />
                 <StatCard
                   icon={<Zap className="w-3.5 h-3.5" />}
                   label="Pay-As-You-Go"
                   value={`${balance.payg_minutes_remaining.toFixed(1)}`}
                   sub="min (no expiry)"
-                  color="border-[#E84A2F]/15"
+                  color="text-amber-400/70"
                 />
                 <StatCard
                   icon={<Clock className="w-3.5 h-3.5" />}
                   label="Free"
                   value={`${balance.free_minutes_remaining.toFixed(1)}`}
                   sub={`of ${balance.free_minutes_total.toFixed(0)} min`}
-                  color="border-white/[0.06]"
+                  color="text-white/40"
                 />
               </div>
             </div>
@@ -433,7 +436,7 @@ export default function DashboardPage() {
               </>
             ) : (
               /* Empty state */
-              <div className="text-center py-16">
+              <div className="text-center py-24">
                 <div className="w-16 h-16 rounded-2xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white/15"

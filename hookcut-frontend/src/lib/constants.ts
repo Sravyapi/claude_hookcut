@@ -77,6 +77,16 @@ export const SHORT_STATUS = {
 
 export const PAYG_OPTIONS = [100, 200, 500, 1000] as const;
 
+export const SCORE_LABELS: Record<string, string> = {
+  scroll_stop: "Scroll Stop",
+  curiosity_gap: "Curiosity Gap",
+  stakes_intensity: "Stakes",
+  emotional_voltage: "Emotion",
+  standalone_clarity: "Clarity",
+  thematic_focus: "Focus",
+  thought_completeness: "Completeness",
+};
+
 export function getStatusConfig(status: string): { label: string; color: string } {
   switch (status) {
     case "pending":

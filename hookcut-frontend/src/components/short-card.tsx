@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback, memo } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { api } from "../lib/api";
 import { SHORT_STATUS } from "../lib/constants";
 import { useShortPoller } from "../hooks/useShortPoller";
@@ -53,19 +53,24 @@ function ConfettiBurst() {
 
 function Waveform() {
   const heights = [0.55, 0.9, 0.65, 1.0, 0.75, 0.9, 0.6];
+  const prefersReducedMotion = useReducedMotion();
   return (
     <div className="flex items-center justify-center gap-1">
       {heights.map((h, i) => (
         <motion.div
           key={i}
           className="w-1.5 rounded-full bg-violet-400/70"
-          animate={{ scaleY: [h, 0.25, h] }}
-          transition={{
-            duration: 0.85,
-            repeat: Infinity,
-            delay: i * 0.11,
-            ease: "easeInOut",
-          }}
+          animate={prefersReducedMotion ? { scaleY: h } : { scaleY: [h, 0.25, h] }}
+          transition={
+            prefersReducedMotion
+              ? { duration: 0 }
+              : {
+                  duration: 0.85,
+                  repeat: Infinity,
+                  delay: i * 0.11,
+                  ease: "easeInOut",
+                }
+          }
           style={{ height: 36 }}
         />
       ))}
@@ -78,17 +83,23 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasPlayed, setHasPlayed] = useState(false);
   const [videoBlobUrl, setVideoBlobUrl] = useState<string | null>(null);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const seekBarRef = useRef<HTMLDivElement>(null);
+  const blobFetchedRef = useRef<string | null>(null);
   const { data, error: pollerError } = useShortPoller(shortId, true);
 
-  // Fetch video as authenticated blob when ready
+  // Fetch video as authenticated blob when ready (ref guard prevents refetch)
   useEffect(() => {
     if (!data?.download_url || data.status !== SHORT_STATUS.READY) return;
+    if (blobFetchedRef.current === data.download_url) return;
+    blobFetchedRef.current = data.download_url;
     let revoke = "";
     api.getVideoBlobUrl(data.download_url).then((url) => {
       revoke = url;
       setVideoBlobUrl(url);
-    }).catch(() => undefined);
+    }).catch(() => { blobFetchedRef.current = null; });
     return () => { if (revoke) URL.revokeObjectURL(revoke); };
   }, [data?.download_url, data?.status]);
 
@@ -102,6 +113,13 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
       setIsPlaying(true);
     }
   }, [isPlaying]);
+
+  const handleSeek = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (!videoRef.current || !seekBarRef.current) return;
+    const rect = seekBarRef.current.getBoundingClientRect();
+    const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    videoRef.current.currentTime = pct * videoRef.current.duration;
+  }, []);
 
   const handleDownload = useCallback(async () => {
     if (!data) return;
@@ -136,10 +154,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
     return (
       <div className="glass rounded-2xl overflow-hidden">
         <div className="p-4">
-          <div
-            className="rounded-[20px] overflow-hidden shimmer mx-auto"
-            style={{ width: 240, height: Math.round(240 * (16 / 9)) }}
-          />
+          <div className="rounded-2xl overflow-hidden shimmer mx-auto w-full aspect-[9/16]" />
           <div className="mt-4 space-y-2">
             <div className="h-4 w-3/4 rounded-lg shimmer" />
             <div className="h-3 w-1/2 rounded-lg shimmer" />
@@ -160,13 +175,9 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
 
   const stageInfo = STAGE_PROGRESS[data.status] || { pct: 0, label: data.status };
 
-  // 9:16 aspect ratio — proper portrait Short dimensions
-  const frameWidth = 240;
-  const frameHeight = Math.round(frameWidth * (16 / 9));
-
   return (
     <motion.div
-      className={`glass rounded-2xl overflow-hidden flex flex-col transition-all duration-500 ${
+      className={`glass-card rounded-2xl overflow-hidden flex flex-col transition-all duration-500 ${
         isReady
           ? "border-emerald-500/15 shadow-[0_0_40px_rgba(52,211,153,0.06)]"
           : isFailed
@@ -178,17 +189,14 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
       transition={{ delay: index * 0.12, type: "spring", stiffness: 200, damping: 24 }}
     >
       <div className="p-5">
-        {/* Phone frame - portrait, centered */}
-        <div className="relative mx-auto" style={{ width: frameWidth, height: frameHeight }}>
-          {/* Bezel */}
-          <div
-            className="absolute inset-0 rounded-2xl overflow-hidden"
-            style={{
-              background: "var(--color-surface-1)",
-              border: "1px solid rgba(255,255,255,0.08)",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.4)",
-            }}
-          >
+        {/* Video frame - portrait 9:16, centered */}
+        <div className="relative mx-auto w-full aspect-[9/16] rounded-2xl overflow-hidden"
+          style={{
+            background: "var(--color-surface-1)",
+            border: "1px solid rgba(255,255,255,0.08)",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.4)",
+          }}
+        >
 
             {/* Processing: waveform */}
             {isProcessing && (
@@ -209,6 +217,8 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                     playsInline
                     loop
                     onEnded={() => { setIsPlaying(false); setHasPlayed(true); }}
+                    onTimeUpdate={() => setCurrentTime(videoRef.current?.currentTime || 0)}
+                    onLoadedMetadata={() => setDuration(videoRef.current?.duration || 0)}
                     aria-label="Generated short video"
                   />
                 ) : data.thumbnail_url ? (
@@ -258,6 +268,23 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                 </div>
                 {/* Confetti burst */}
                 {hasPlayed && !isPlaying && <ConfettiBurst />}
+                {/* Seek bar */}
+                {duration > 0 && (
+                  <div
+                    ref={seekBarRef}
+                    className="absolute bottom-0 left-0 right-0 h-6 flex items-end cursor-pointer group/seek"
+                    onClick={(e) => { e.stopPropagation(); handleSeek(e); }}
+                  >
+                    <div className="w-full h-1 group-hover/seek:h-1.5 transition-all bg-white/15">
+                      <div
+                        className="h-full bg-violet-400 rounded-r-full relative"
+                        style={{ width: `${(currentTime / duration) * 100}%` }}
+                      >
+                        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-white opacity-0 group-hover/seek:opacity-100 transition-opacity" />
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 
@@ -279,7 +306,6 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                 </svg>
               </div>
             )}
-          </div>
         </div>
 
         {/* Card info */}
@@ -325,7 +351,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
               </span>
             )}
             {data.is_watermarked && (
-              <span className="text-[10px] text-amber-400/60 bg-amber-500/8 px-2 py-0.5 rounded-full border border-amber-500/10">
+              <span className="text-xs text-amber-400/60 bg-amber-500/8 px-2 py-0.5 rounded-full border border-amber-500/10">
                 Watermarked
               </span>
             )}
@@ -377,8 +403,8 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
           {isProcessing && (
             <div className="mb-3">
               <div className="flex items-center justify-between mb-1.5">
-                <span className="text-[10px] text-white/30">{stageInfo.label}</span>
-                <span className="text-[10px] text-violet-400/60 tabular-nums font-medium">
+                <span className="text-xs text-white/30">{stageInfo.label}</span>
+                <span className="text-xs text-violet-400/60 tabular-nums font-medium">
                   {stageInfo.pct}%
                 </span>
               </div>
@@ -398,7 +424,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
             <button
               onClick={handleDownload}
               disabled={downloading}
-              className="btn-success w-full text-sm py-2.5 flex items-center justify-center gap-2"
+              className="btn-primary w-full text-sm py-2.5 flex items-center justify-center gap-2"
             >
               {downloading ? (
                 <>

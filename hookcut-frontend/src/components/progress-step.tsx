@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, memo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -65,25 +65,34 @@ function getStageIndex(progress: number): number {
 // ─── Pulsing orb ──────────────────────────────────────────────────────────────
 
 function PulsingOrb({ progress }: { progress: number }) {
+  const prefersReducedMotion = useReducedMotion();
   return (
-    <div className="relative flex items-center justify-center w-32 h-32 mx-auto mb-8">
+    <div className="relative flex items-center justify-center w-[40rem] h-[40rem] mx-auto mb-[44px]">
       {/* Outer rings */}
       {[0, 1, 2].map((i) => (
         <motion.div
           key={i}
           className="absolute rounded-full border border-violet-500/20"
           style={{ width: 56 + i * 24, height: 56 + i * 24 }}
-          animate={{ scale: [1, 1.12, 1], opacity: [0.4, 0.15, 0.4] }}
-          transition={{
-            duration: 2.4,
-            repeat: Infinity,
-            delay: i * 0.5,
-            ease: "easeInOut",
-          }}
+          animate={
+            prefersReducedMotion
+              ? { scale: 1, opacity: 0.3 }
+              : { scale: [1, 1.12, 1], opacity: [0.4, 0.15, 0.4] }
+          }
+          transition={
+            prefersReducedMotion
+              ? { duration: 0 }
+              : {
+                  duration: 2.4,
+                  repeat: Infinity,
+                  delay: i * 0.5,
+                  ease: "easeInOut",
+                }
+          }
         />
       ))}
       {/* Core */}
-      <div className="relative w-14 h-14 rounded-full bg-gradient-to-br from-violet-600/40 to-purple-700/40 border border-violet-500/30 backdrop-blur-sm flex items-center justify-center"
+      <div className="relative w-[18rem] h-[18rem] rounded-full bg-gradient-to-br from-violet-600/40 to-purple-700/40 border border-violet-500/30 backdrop-blur-sm flex items-center justify-center"
         style={{ boxShadow: "0 0 32px rgba(139,92,246,0.25)" }}>
         <svg className="w-6 h-6 text-violet-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
@@ -123,7 +132,7 @@ const StageCard = memo(function StageCard({
 }: StageCardProps) {
   return (
     <div
-      className={`relative flex flex-col items-center gap-2 p-4 rounded-2xl border transition-all duration-500 ${
+      className={`relative flex flex-col items-center gap-2 p-[28px] rounded-2xl border transition-all duration-500 ${
         isActive
           ? "border-violet-500/30 bg-violet-500/8"
           : isDone
@@ -133,7 +142,7 @@ const StageCard = memo(function StageCard({
     >
       {/* Icon */}
       <div
-        className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-500 ${
+        className={`w-[44px] h-[44px] rounded-xl flex items-center justify-center transition-all duration-500 ${
           isDone
             ? "bg-emerald-500/15 text-emerald-400"
             : isActive
@@ -152,7 +161,7 @@ const StageCard = memo(function StageCard({
 
       {/* Label */}
       <span
-        className={`text-[11px] font-medium text-center leading-tight transition-colors duration-500 ${
+        className={`text-[14px] font-medium text-center leading-tight transition-colors duration-500 ${
           isDone ? "text-white/40" : isActive ? "text-white/80" : "text-white/20"
         }`}
       >
@@ -160,7 +169,7 @@ const StageCard = memo(function StageCard({
       </span>
 
       {/* Mini progress bar */}
-      <div className="w-full h-[3px] rounded-full bg-white/5 overflow-hidden">
+      <div className="w-full h-[4px] rounded-full bg-white/5 overflow-hidden">
         <motion.div
           className={`h-full rounded-full ${isDone ? "bg-emerald-500" : "bg-violet-500"}`}
           initial={{ width: "0%" }}
@@ -203,7 +212,7 @@ export const ProgressStep = memo(function ProgressStep({
 
   return (
     <motion.div
-      className="max-w-sm mx-auto flex flex-col items-center"
+      className="max-w-[550px] mx-auto flex flex-col items-center"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -219,7 +228,7 @@ export const ProgressStep = memo(function ProgressStep({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -6 }}
           transition={{ duration: 0.3 }}
-          className="text-base font-semibold text-white/85 mb-1 text-center"
+          className="text-[28px] font-semibold text-white/85 mb-1 text-center"
         >
           {activeStage.label}
         </motion.p>
@@ -233,7 +242,7 @@ export const ProgressStep = memo(function ProgressStep({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="text-[13px] text-white/35 text-center leading-relaxed mb-6 px-4"
+          className="text-[16px] text-white/35 text-center leading-relaxed mb-[32px] px-4"
         >
           {activeStage.detail}
         </motion.p>
@@ -241,16 +250,16 @@ export const ProgressStep = memo(function ProgressStep({
 
       {/* Video being analyzed */}
       {videoTitle && (
-        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/8 mb-8 max-w-full">
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/8 mb-[40px] max-w-full">
           <svg className="w-3.5 h-3.5 text-red-400/70 shrink-0" viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
           </svg>
-          <span className="text-[11px] text-white/40 truncate max-w-[220px]">{videoTitle}</span>
+          <span className="text-[14px] text-white/40 truncate max-w-[340px]">{videoTitle}</span>
         </div>
       )}
 
       {/* 3-stage cards */}
-      <div className="grid grid-cols-3 gap-2.5 w-full mb-6">
+      <div className="grid grid-cols-3 gap-[18px] w-full mb-6">
         {STAGES.map((s, i) => {
           const isDone = progress >= s.max;
           const isActive = !isDone && progress >= s.min;
@@ -269,7 +278,7 @@ export const ProgressStep = memo(function ProgressStep({
       </div>
 
       {/* Footer: elapsed + progress */}
-      <div className="flex items-center gap-3 text-[11px] text-white/20 font-mono">
+      <div className="flex items-center gap-3 text-[13px] text-white/20 font-mono">
         <span className="tabular-nums text-violet-400/50 font-medium">{progress}%</span>
         {elapsed > 0 && (
           <>

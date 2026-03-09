@@ -7,12 +7,6 @@ const spring: Transition = {
   damping: 24,
 };
 
-const springSnappy: Transition = {
-  type: "spring",
-  stiffness: 300,
-  damping: 25,
-};
-
 /* ─── Container that staggers children ─── */
 export const staggerContainer: Variants = {
   hidden: {},
@@ -35,16 +29,6 @@ export const fadeUpItem: Variants = {
   },
 };
 
-/* ─── Scale in (cards, modals) ─── */
-export const scaleIn: Variants = {
-  hidden: { opacity: 0, scale: 0.95 },
-  show: {
-    opacity: 1,
-    scale: 1,
-    transition: springSnappy,
-  },
-};
-
 /* ─── Slide right (step transitions) ─── */
 export const slideRight: Variants = {
   hidden: { opacity: 0, x: 40 },
@@ -57,15 +41,5 @@ export const slideRight: Variants = {
     opacity: 0,
     x: -40,
     transition: { duration: 0.2 },
-  },
-};
-
-/* ─── Fade up (single element) ─── */
-export const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: spring,
   },
 };
