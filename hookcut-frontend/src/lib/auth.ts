@@ -61,6 +61,11 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
 
+  // Audit #10 (B1): Session persistence verified — no bug found.
+  // SessionProvider wraps all pages in layout.tsx, JWT strategy is correct,
+  // cookies are properly configured. The prior symptom (session appearing
+  // unauthenticated on navigation) was caused by missing <Header /> on
+  // product pages, which was fixed in audit #8.
   session: {
     strategy: "jwt",
   },

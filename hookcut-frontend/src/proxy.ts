@@ -22,6 +22,7 @@ export const config = {
     "/dashboard/:path*",
     "/settings/:path*",
     "/admin/:path*",
+    "/clip",
   ],
 };
 

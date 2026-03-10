@@ -311,11 +311,22 @@ function ClipPageContent() {
             Back to Dashboard
           </Link>
           {creditBalance && (
-            <div className="flex items-center gap-2 text-sm text-white/40">
-              <CreditCard className="w-3.5 h-3.5" />
-              <span className="font-mono tabular-nums text-white/70">{creditBalance.total_available.toFixed(0)}</span>
-              <span>min</span>
-            </div>
+            creditBalance.manual_clip_minutes_remaining > 0 ? (
+              <div className="flex items-center gap-2 text-sm">
+                <Scissors className="w-3.5 h-3.5 text-violet-400" />
+                <span className="font-mono tabular-nums text-violet-300 font-semibold">{creditBalance.manual_clip_minutes_remaining.toFixed(0)}</span>
+                <span className="text-white/40">clip min remaining</span>
+              </div>
+            ) : (
+              <Link
+                href="/pricing"
+                className="flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 transition-colors"
+              >
+                <Scissors className="w-3.5 h-3.5" />
+                <span>No clip minutes</span>
+                <span className="font-semibold">Top up &rarr;</span>
+              </Link>
+            )
           )}
         </div>
 

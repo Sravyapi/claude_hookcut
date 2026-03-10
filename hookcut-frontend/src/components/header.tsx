@@ -67,7 +67,8 @@ export default function Header({ onReset }: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
   const { role } = useUser();
-  const [balance, setBalance] = useState<number | null>(null);
+  const [aiMinutes, setAiMinutes] = useState<number | null>(null);
+  const [clipMinutes, setClipMinutes] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolledPast200, setScrolledPast200] = useState(false);
   const isAdmin = role === "admin";
@@ -91,7 +92,10 @@ export default function Header({ onReset }: HeaderProps) {
   useEffect(() => {
     if (status !== "authenticated") return;
     api.getBalance()
-      .then((b) => setBalance(b.total_available))
+      .then((b) => {
+        setAiMinutes(b.paid_minutes_remaining + b.free_minutes_remaining + b.payg_minutes_remaining);
+        setClipMinutes(b.manual_clip_minutes_remaining);
+      })
       .catch((err) => console.warn("Failed to load balance:", err));
   }, [status]);
 
@@ -200,17 +204,20 @@ export default function Header({ onReset }: HeaderProps) {
           {/* Right section */}
           <div className="flex items-center gap-3">
             {/* Credit balance (desktop) */}
-            {balance !== null && (
+            {aiMinutes !== null && clipMinutes !== null && (
               <Link
                 href="/dashboard"
-                className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-[--color-border-str] bg-[--color-surface-1] text-sm hover:bg-[--color-surface-2] transition-colors duration-200"
-                aria-label={`${balance.toFixed(0)} minutes of credits remaining`}
+                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-[--color-border-str] bg-[--color-surface-1] text-sm hover:bg-[--color-surface-2] transition-colors duration-200"
+                aria-label={`AI: ${aiMinutes.toFixed(0)} minutes, Clip: ${clipMinutes.toFixed(0)} minutes remaining`}
               >
                 <CreditCard className="w-3.5 h-3.5 text-[--color-muted]" aria-hidden="true" />
-                <span className="font-semibold text-white/90 tabular-nums font-mono">
-                  {balance.toFixed(0)}
+                <span className="font-semibold text-white/90 tabular-nums font-mono text-xs">
+                  AI {aiMinutes.toFixed(0)}
                 </span>
-                <span className="text-white/35 text-xs">min</span>
+                <span className="text-white/25">·</span>
+                <span className="font-semibold text-violet-300/90 tabular-nums font-mono text-xs">
+                  Clip {clipMinutes.toFixed(0)}
+                </span>
               </Link>
             )}
 
@@ -251,17 +258,27 @@ export default function Header({ onReset }: HeaderProps) {
                     </div>
                   </DropdownMenuLabel>
 
-                  {balance !== null && (
+                  {aiMinutes !== null && clipMinutes !== null && (
                     <>
                       <DropdownMenuSeparator />
-                      <div className="px-2 py-2">
+                      <div className="px-2 py-2 space-y-1.5">
                         <div className="flex items-center justify-between text-sm">
                           <span className="text-white/40 flex items-center gap-1.5">
                             <CreditCard className="w-3.5 h-3.5" aria-hidden="true" />
-                            Credits
+                            AI Credits
                           </span>
                           <span className="font-semibold text-white tabular-nums font-mono">
-                            {balance.toFixed(0)}
+                            {aiMinutes.toFixed(0)}
+                            <span className="text-white/35 font-normal ml-0.5 text-xs">min</span>
+                          </span>
+                        </div>
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-white/40 flex items-center gap-1.5">
+                            <Scissors className="w-3.5 h-3.5" aria-hidden="true" />
+                            Clip Credits
+                          </span>
+                          <span className="font-semibold text-violet-300 tabular-nums font-mono">
+                            {clipMinutes.toFixed(0)}
                             <span className="text-white/35 font-normal ml-0.5 text-xs">min</span>
                           </span>
                         </div>
@@ -392,12 +409,19 @@ export default function Header({ onReset }: HeaderProps) {
                 ))}
               </nav>
 
-              {balance !== null && (
-                <div className="glass rounded-xl p-4 mb-6">
+              {aiMinutes !== null && clipMinutes !== null && (
+                <div className="glass rounded-xl p-4 mb-6 space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-white/40 font-medium">Credits</span>
+                    <span className="text-xs text-white/40 font-medium">AI Credits</span>
                     <span className="font-semibold text-white tabular-nums font-mono">
-                      {balance.toFixed(0)}
+                      {aiMinutes.toFixed(0)}
+                      <span className="text-white/35 font-normal ml-0.5 text-xs">min</span>
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-white/40 font-medium">Clip Credits</span>
+                    <span className="font-semibold text-violet-300 tabular-nums font-mono">
+                      {clipMinutes.toFixed(0)}
                       <span className="text-white/35 font-normal ml-0.5 text-xs">min</span>
                     </span>
                   </div>

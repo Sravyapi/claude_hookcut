@@ -287,18 +287,42 @@ export default function DashboardPage() {
             </p>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="outline" asChild>
-              <Link href="/clip">
-                <Scissors className="w-4 h-4" />
-                Manual Clip
-              </Link>
-            </Button>
-            <Button asChild>
-              <Link href="/">
-                <Plus className="w-4 h-4" />
-                New Video
-              </Link>
-            </Button>
+            {balance && balance.manual_clip_minutes_remaining > 0 ? (
+              <Button variant="outline" asChild>
+                <Link href="/clip" className="flex flex-col items-center leading-tight">
+                  <span className="flex items-center gap-1.5"><Scissors className="w-4 h-4" /> Manual Clip</span>
+                  <span className="text-[10px] text-violet-300/70 font-normal">{balance.manual_clip_minutes_remaining.toFixed(0)} min available</span>
+                </Link>
+              </Button>
+            ) : (
+              <div className="relative">
+                <Button variant="outline" disabled className="opacity-50 pointer-events-none">
+                  <Scissors className="w-4 h-4" />
+                  Manual Clip
+                </Button>
+                <Link href="/pricing" className="absolute inset-0 flex items-center justify-center text-[10px] font-semibold text-amber-400 hover:text-amber-300 bg-black/60 rounded-md">
+                  Top up &rarr;
+                </Link>
+              </div>
+            )}
+            {balance && (balance.paid_minutes_remaining + balance.free_minutes_remaining + balance.payg_minutes_remaining) > 0 ? (
+              <Button asChild>
+                <Link href="/?new=1" className="flex flex-col items-center leading-tight">
+                  <span className="flex items-center gap-1.5"><Zap className="w-4 h-4" /> AI Analysis</span>
+                  <span className="text-[10px] text-white/50 font-normal">{(balance.paid_minutes_remaining + balance.free_minutes_remaining + balance.payg_minutes_remaining).toFixed(0)} min available</span>
+                </Link>
+              </Button>
+            ) : (
+              <div className="relative">
+                <Button disabled className="opacity-50 pointer-events-none">
+                  <Zap className="w-4 h-4" />
+                  AI Analysis
+                </Button>
+                <Link href="/pricing" className="absolute inset-0 flex items-center justify-center text-[10px] font-semibold text-amber-400 hover:text-amber-300 bg-black/60 rounded-md">
+                  Top up &rarr;
+                </Link>
+              </div>
+            )}
           </div>
         </motion.div>
 
@@ -492,7 +516,7 @@ export default function DashboardPage() {
                       Analyze a YouTube video to get started
                     </p>
                     <Button asChild size="sm">
-                      <Link href="/">
+                      <Link href="/?new=1">
                         <Plus className="w-4 h-4" />
                         Analyze Your First Video
                       </Link>

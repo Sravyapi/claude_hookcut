@@ -248,7 +248,7 @@ export function MarketingHome() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto">
             {PLANS.map((plan) => {
               const isHighlighted = plan.highlighted;
-              const monthlyPrice = plan.priceINR;
+              const monthlyPrice = plan.priceUSD;
               const annualPrice = Math.round(monthlyPrice * 0.8);
               const displayPrice = annual && monthlyPrice > 0 ? annualPrice : monthlyPrice;
 
@@ -271,13 +271,13 @@ export function MarketingHome() {
                     </p>
                     <p className="text-white text-3xl font-bold font-mono">
                       {plan.period
-                        ? <>{"\u20B9"}{displayPrice}<span className={`text-base font-normal ${isHighlighted ? "text-white/60" : "text-white/25"}`}>/mo</span></>
-                        : <>{"\u20B9"}0</>
+                        ? <>{"$"}{displayPrice}<span className={`text-base font-normal ${isHighlighted ? "text-white/60" : "text-white/25"}`}>/mo</span></>
+                        : <>Free</>
                       }
                     </p>
                     {annual && monthlyPrice > 0 && (
                       <p className={`text-sm line-through ${isHighlighted ? "text-white/50" : "text-white/40"}`}>
-                        {"\u20B9"}{monthlyPrice}/mo
+                        {"$"}{monthlyPrice}/mo
                       </p>
                     )}
                     <p className={`text-sm ${isHighlighted ? "text-white/60" : "text-white/25"}`}>
@@ -318,7 +318,7 @@ export function MarketingHome() {
           <div className="mt-6 max-w-3xl mx-auto rounded-xl border border-white/[0.06] bg-white/[0.02] px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <p className="text-white/70 text-sm font-semibold">Need more minutes?</p>
-              <p className="text-white/30 text-sm">Top up anytime at {"\u20B9"}5/min — no subscription required.</p>
+              <p className="text-white/30 text-sm">Top up anytime — no subscription required.</p>
             </div>
             <Link
               href="/pricing"
