@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/mdx";
 import Header from "@/components/header";
+import AuthRedirect from "@/components/auth-redirect";
 
 export const metadata: Metadata = {
   title: "HookCut Blog — Creator Tips, Hook Strategy | HookCut",
@@ -28,6 +29,7 @@ export default function BlogIndexPage() {
 
   return (
     <div className="bg-[var(--color-bg)] min-h-screen">
+      <AuthRedirect />
       <Header />
       <a
         href="#main-content"

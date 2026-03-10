@@ -410,12 +410,14 @@ export default function HomeStateMachine({ marketingContent }: Props) {
 
   if (state.step === "input") {
     const isAuthenticated = authStatus === "authenticated";
+    const wantsNewAnalysis = !!searchParams.get("new");
+    const shouldRedirect = isAuthenticated && !wantsNewAnalysis;
     return (
       <AnalyzeContext.Provider value={handleAnalyze}>
         <Header />
         <ErrorBanner error={error} onDismiss={() => dispatch({ type: "DISMISS_ERROR" })} />
-        {isAuthenticated ? (
-          // Authenticated users are redirected to /dashboard; show loading skeleton
+        {shouldRedirect ? (
+          // Authenticated users without ?new are redirected to /dashboard
           <main className="pt-24 pb-12 px-6">
             <div className="max-w-2xl mx-auto flex flex-col items-center gap-4">
               <div className="w-12 h-12 rounded-full border-2 border-white/10 border-t-[--color-primary] animate-spin" />

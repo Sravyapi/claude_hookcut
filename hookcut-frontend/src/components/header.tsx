@@ -25,6 +25,13 @@ const NAV_LINKS = [
   { href: "/blog", label: "Blog", match: "blog" },
 ] as const;
 
+const APP_NAV_LINKS = [
+  { href: "/dashboard", label: "Dashboard", match: "dashboard" },
+  { href: "/?new=1", label: "AI Analysis", match: "new" },
+  { href: "/clip", label: "Manual Clip", match: "clip" },
+  { href: "/settings", label: "Settings", match: "settings" },
+] as const;
+
 interface HeaderProps {
   onReset?: () => void;
 }
@@ -156,27 +163,10 @@ export default function Header({ onReset }: HeaderProps) {
 
           {/* Desktop nav */}
           <nav className="hidden sm:flex items-center gap-1 relative" aria-label="Main navigation">
-            {status === "authenticated" && (
-              <Link
-                href="/dashboard"
-                className={`relative px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  pathname === "/dashboard"
-                    ? "text-white"
-                    : "text-white/65 hover:text-white/90 hover:bg-white/[0.05]"
-                }`}
-              >
-                Dashboard
-                {pathname === "/dashboard" && (
-                  <motion.div
-                    layoutId="nav-indicator"
-                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 rounded-full bg-[--color-primary]"
-                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                  />
-                )}
-              </Link>
-            )}
-            {NAV_LINKS.map((link) => {
-              const isActive = pathname.startsWith(`/${link.match}`);
+            {(status === "authenticated" ? APP_NAV_LINKS : NAV_LINKS).map((link) => {
+              const isActive = link.match === "new"
+                ? pathname === "/" && new URLSearchParams(typeof window !== "undefined" ? window.location.search : "").has("new")
+                : pathname.startsWith(`/${link.match}`);
               return (
                 <Link
                   key={link.href}
@@ -379,20 +369,7 @@ export default function Header({ onReset }: HeaderProps) {
             />
             <div className="absolute right-0 top-16 bottom-0 w-72 glass-strong border-l border-[--color-border-def] p-6 overflow-y-auto">
               <nav className="flex flex-col gap-1 mb-6" aria-label="Mobile navigation">
-                {status === "authenticated" && (
-                  <Link
-                    href="/dashboard"
-                    onClick={closeMobileMenu}
-                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                      pathname === "/dashboard"
-                        ? "text-white bg-[--color-primary]/10 border border-[--color-primary]/20"
-                        : "text-white/50 hover:text-white hover:bg-white/[0.04]"
-                    }`}
-                  >
-                    Dashboard
-                  </Link>
-                )}
-                {NAV_LINKS.map((link) => (
+                {(status === "authenticated" ? APP_NAV_LINKS : NAV_LINKS).map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}

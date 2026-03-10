@@ -144,6 +144,10 @@ export default function PricingPage() {
   const paygMinutes = PAYG_OPTIONS[paygIdx];
 
   useEffect(() => {
+    if (authStatus === "authenticated") router.push("/dashboard");
+  }, [authStatus, router]);
+
+  useEffect(() => {
     setLoading(true);
     api
       .getPlans()

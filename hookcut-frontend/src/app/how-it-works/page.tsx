@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/header";
+import AuthRedirect from "@/components/auth-redirect";
 
 export const metadata: Metadata = {
   title: "How HookCut Works — URL to Short in 3 Steps",
@@ -115,6 +116,7 @@ export default function HowItWorksPage() {
 
   return (
     <div className="bg-[var(--color-bg)] min-h-screen">
+      <AuthRedirect />
       <Header />
       <script
         type="application/ld+json"

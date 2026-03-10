@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/header";
+import AuthRedirect from "@/components/auth-redirect";
 
 export const metadata: Metadata = {
   title: "HookCut Features — AI Hook Scoring, 18 Hook Types | HookCut",
@@ -162,6 +163,7 @@ const FEATURES = [
 export default function FeaturesPage() {
   return (
     <div className="bg-[var(--color-bg)] min-h-screen">
+      <AuthRedirect />
       <Header />
       <a
         href="#main-content"
