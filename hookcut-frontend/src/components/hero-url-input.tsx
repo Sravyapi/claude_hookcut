@@ -1,12 +1,19 @@
 "use client";
 
-import { useState, useCallback, memo } from "react";
+import { useState, useCallback, useEffect, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "@/lib/api";
 import type { VideoMeta } from "@/lib/types";
 import { NICHES, LANGUAGES } from "@/lib/constants";
 import { formatDuration } from "@/lib/utils";
 import { useAnalyze } from "@/contexts/analyze-context";
+import { useUser } from "@/components/providers";
+
+const ENGINE_MODES = [
+  { value: "llm_only", label: "LLM Only", desc: "Full AI analysis" },
+  { value: "deterministic_only", label: "Deterministic", desc: "Keyword heuristics, no API calls" },
+  { value: "llm_with_deterministic_fallback", label: "LLM + Fallback", desc: "LLM first, deterministic fallback" },
+] as const;
 
 interface HeroUrlInputProps {
   light?: boolean;
@@ -14,12 +21,23 @@ interface HeroUrlInputProps {
 
 const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputProps) {
   const onAnalyze = useAnalyze();
+  const { role } = useUser();
+  const isAdmin = role === "admin";
   const [url, setUrl] = useState("");
   const [validating, setValidating] = useState(false);
   const [videoMeta, setVideoMeta] = useState<VideoMeta | null>(null);
   const [error, setError] = useState("");
   const [niche, setNiche] = useState("Generic");
   const [language, setLanguage] = useState("English");
+  const [engineMode, setEngineMode] = useState("llm_only");
+
+  // Fetch current engine mode for admins
+  useEffect(() => {
+    if (!isAdmin) return;
+    api.adminGetHookEngineMode()
+      .then((data) => setEngineMode(data.mode))
+      .catch(() => {}); // silently fail for non-admins
+  }, [isAdmin]);
 
   const handleUrlChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setUrl(e.target.value);
@@ -58,10 +76,14 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
     [handleValidate]
   );
 
-  const handleSubmit = useCallback(() => {
+  const handleSubmit = useCallback(async () => {
     if (!videoMeta) return;
+    // Admin: persist engine mode choice before starting analysis
+    if (isAdmin) {
+      try { await api.adminSetHookEngineMode(engineMode); } catch {}
+    }
     onAnalyze(url.trim(), niche, language, videoMeta);
-  }, [url, niche, videoMeta, onAnalyze]);
+  }, [url, niche, videoMeta, onAnalyze, isAdmin, engineMode]);
 
   const borderBase = light
     ? "border-[#E4E4E7] bg-white focus-within:border-[#E84A2F]/50"
@@ -202,6 +224,36 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
                 ))}
               </select>
             </div>
+
+            {/* Engine mode selector — admin only */}
+            {isAdmin && (
+              <div className="mb-4">
+                <label className={`block text-xs font-medium mb-1.5 ${light ? "text-[#71717A]" : "text-white/40"}`}>
+                  Hook Engine <span className="text-[#E84A2F] text-[10px]">(Admin)</span>
+                </label>
+                <div className="flex flex-wrap gap-1.5">
+                  {ENGINE_MODES.map((m) => (
+                    <button
+                      type="button"
+                      key={m.value}
+                      onClick={() => setEngineMode(m.value)}
+                      className={`text-xs px-3 py-1.5 rounded-lg border font-medium transition-colors ${
+                        engineMode === m.value
+                          ? "bg-[#E84A2F]/15 border-[#E84A2F]/40 text-white"
+                          : light
+                            ? "text-[#71717A] border-[#E4E4E7] hover:border-[#D4D4D8]"
+                            : "text-white/40 border-white/[0.1] hover:border-white/20"
+                      }`}
+                    >
+                      {m.label}
+                    </button>
+                  ))}
+                </div>
+                <p className={`text-[10px] mt-1 ${light ? "text-[#A1A1AA]" : "text-white/25"}`}>
+                  {ENGINE_MODES.find((m) => m.value === engineMode)?.desc}
+                </p>
+              </div>
+            )}
 
             <button
               type="button"
