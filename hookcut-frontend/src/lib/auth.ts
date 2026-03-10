@@ -91,11 +91,38 @@ export const authOptions: NextAuthOptions = {
   },
 
   callbacks: {
-    async jwt({ token, user }) {
+    async jwt({ token, user, account }) {
       // On initial sign-in, persist the user id and role into the token
       if (user) {
         token.sub = user.id;
-        token.role = (user as { role?: string }).role ?? "user";
+        const userRole = (user as { role?: string }).role;
+        if (userRole) {
+          // Credentials sign-in — role comes from backend login/register response
+          token.role = userRole;
+        } else if (account?.provider === "google" && user.email) {
+          // Google OAuth sign-in — fetch role from backend since Google doesn't provide it
+          const backendUrl =
+            process.env.NEXTAUTH_BACKEND_URL || "http://localhost:8000";
+          const apiBase =
+            process.env.NEXT_PUBLIC_API_URL || `${backendUrl}/api`;
+          try {
+            const res = await fetch(`${apiBase}/auth/role`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: user.email }),
+            });
+            if (res.ok) {
+              const data = await res.json();
+              token.role = data.role ?? "user";
+            } else {
+              token.role = "user";
+            }
+          } catch {
+            token.role = "user";
+          }
+        } else {
+          token.role = "user";
+        }
         token.isAdmin = token.role === "admin";
       }
       return token;

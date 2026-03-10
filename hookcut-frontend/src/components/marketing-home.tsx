@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { HeroSection } from "./hero-section";
 import { Target, Globe, Ban, Lightbulb, Smartphone, Wallet } from "lucide-react";
+import { PLANS } from "@/lib/pricing-data";
 
 // ── How it works ────────────────────────────────────────────────────────────
 
@@ -245,113 +246,72 @@ export function MarketingHome() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto">
-            {/* Free */}
-            <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-6 flex flex-col">
-              <div className="mb-6">
-                <p className="text-white/30 text-xs font-semibold uppercase tracking-wider mb-1">
-                  Free
-                </p>
-                <p className="text-white text-3xl font-bold font-mono">{"\u20B9"}0</p>
-                <p className="text-white/25 text-sm">120 min included</p>
-              </div>
-              <ul className="space-y-2.5 flex-1 mb-6">
-                {["5 hooks per video", "3 Shorts per video", "Watermarked"].map(
-                  (f) => (
-                    <li
-                      key={f}
-                      className="flex items-center gap-2.5 text-sm text-white/60"
+            {PLANS.map((plan) => {
+              const isHighlighted = plan.highlighted;
+              const monthlyPrice = plan.priceINR;
+              const annualPrice = Math.round(monthlyPrice * 0.8);
+              const displayPrice = annual && monthlyPrice > 0 ? annualPrice : monthlyPrice;
+
+              return (
+                <div
+                  key={plan.key}
+                  className={`rounded-xl p-6 flex flex-col ${
+                    isHighlighted
+                      ? "bg-[#E84A2F]"
+                      : "border border-white/[0.06] bg-white/[0.02]"
+                  }`}
+                >
+                  <div className="mb-6">
+                    <p
+                      className={`text-xs font-semibold uppercase tracking-wider mb-1 ${
+                        isHighlighted ? "text-white/60" : "text-white/30"
+                      }`}
                     >
-                      <Check />
-                      {f}
-                    </li>
-                  ),
-                )}
-              </ul>
-              <Link
-                href="/auth/login"
-                className="block w-full py-2.5 rounded-lg text-sm font-semibold text-center bg-white/[0.06] text-white/50 hover:bg-white/[0.1] transition-colors"
-              >
-                Start Free
-              </Link>
-            </div>
-
-            {/* Starter — highlighted */}
-            <div className="rounded-xl bg-[#E84A2F] p-6 flex flex-col">
-              <div className="mb-6">
-                <p className="text-white/60 text-xs font-semibold uppercase tracking-wider mb-1">
-                  Starter
-                </p>
-                <p className="text-white text-3xl font-bold font-mono">
-                  {"\u20B9"}{annual ? "399" : "499"}
-                  <span className="text-base font-normal text-white/60">/mo</span>
-                </p>
-                {annual && (
-                  <p className="text-white/50 text-sm line-through">{"\u20B9"}499/mo</p>
-                )}
-                <p className="text-white/60 text-sm">200 min of video</p>
-              </div>
-              <ul className="space-y-2.5 flex-1 mb-6">
-                {[
-                  "5 hooks per video",
-                  "3 Shorts per video",
-                  "No watermark",
-                  "Priority queue",
-                ].map((f) => (
-                  <li
-                    key={f}
-                    className="flex items-center gap-2.5 text-sm text-white/80"
+                      {plan.name}
+                    </p>
+                    <p className="text-white text-3xl font-bold font-mono">
+                      {plan.period
+                        ? <>{"\u20B9"}{displayPrice}<span className={`text-base font-normal ${isHighlighted ? "text-white/60" : "text-white/25"}`}>/mo</span></>
+                        : <>{"\u20B9"}0</>
+                      }
+                    </p>
+                    {annual && monthlyPrice > 0 && (
+                      <p className={`text-sm line-through ${isHighlighted ? "text-white/50" : "text-white/40"}`}>
+                        {"\u20B9"}{monthlyPrice}/mo
+                      </p>
+                    )}
+                    <p className={`text-sm ${isHighlighted ? "text-white/60" : "text-white/25"}`}>
+                      {plan.period ? `${plan.minutes} min of video` : `${plan.minutes} min included`}
+                    </p>
+                  </div>
+                  <ul className="space-y-2.5 flex-1 mb-6">
+                    {plan.features.map((f) => (
+                      <li
+                        key={f}
+                        className={`flex items-center gap-2.5 text-sm ${
+                          isHighlighted ? "text-white/80" : "text-white/60"
+                        }`}
+                      >
+                        <Check white={isHighlighted} />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href={plan.key === "free" ? "/auth/login" : "/pricing"}
+                    className={`block w-full py-2.5 rounded-lg text-sm font-semibold text-center transition-colors ${
+                      isHighlighted
+                        ? "bg-white text-[#E84A2F] hover:bg-white/90"
+                        : plan.key === "pro"
+                          ? "bg-[#E84A2F] text-white hover:bg-[#D13F25]"
+                          : "bg-white/[0.06] text-white/50 hover:bg-white/[0.1]"
+                    }`}
                   >
-                    <Check white />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/pricing"
-                className="block w-full py-2.5 rounded-lg text-sm font-semibold text-center bg-white text-[#E84A2F] hover:bg-white/90 transition-colors"
-              >
-                Get Started
-              </Link>
-            </div>
-
-            {/* Pro */}
-            <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-6 flex flex-col">
-              <div className="mb-6">
-                <p className="text-white/30 text-xs font-semibold uppercase tracking-wider mb-1">
-                  Pro
-                </p>
-                <p className="text-white text-3xl font-bold font-mono">
-                  {"\u20B9"}{annual ? "799" : "999"}
-                  <span className="text-base font-normal text-white/25">/mo</span>
-                </p>
-                {annual && (
-                  <p className="text-white/40 text-sm line-through">{"\u20B9"}999/mo</p>
-                )}
-                <p className="text-white/25 text-sm">500 min of video</p>
-              </div>
-              <ul className="space-y-2.5 flex-1 mb-6">
-                {[
-                  "5 hooks per video",
-                  "3 Shorts per video",
-                  "No watermark",
-                  "Priority support",
-                ].map((f) => (
-                  <li
-                    key={f}
-                    className="flex items-center gap-2.5 text-sm text-white/60"
-                  >
-                    <Check />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/pricing"
-                className="block w-full py-2.5 rounded-lg text-sm font-semibold text-center bg-[#E84A2F] text-white hover:bg-[#D13F25] transition-colors"
-              >
-                Go Pro
-              </Link>
-            </div>
+                    {plan.cta}
+                  </Link>
+                </div>
+              );
+            })}
           </div>
 
           {/* Pay-as-you-go */}
@@ -376,6 +336,8 @@ export function MarketingHome() {
       </section>
 
       {/* ── 6. FINAL CTA ── */}
+      {/* MarketingHome only renders for unauthenticated users (see HomeStateMachine),
+          so CTA links to /auth/login are intentional. */}
       <section className="bg-[#0A0A0A] border-t border-white/[0.04] py-32 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-[clamp(28px,4.5vw,52px)] font-extrabold text-white mb-4 tracking-[-0.035em] leading-[1.1] font-[family-name:--font-display]">

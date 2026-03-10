@@ -6,6 +6,7 @@ Routers call these static methods and convert HookCutError to HTTPException.
 import logging
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from typing import Optional
 
 from sqlalchemy.orm import Session
 
@@ -49,9 +50,9 @@ class CheckoutResult:
 class BillingService:
 
     @staticmethod
-    def get_plans(db: Session, user_id: str) -> PlansResponse:
-        """Get available subscription plans for user's currency."""
-        user = db.get(User, user_id)
+    def get_plans(db: Session, user_id: Optional[str] = None) -> PlansResponse:
+        """Get available subscription plans. Uses user's currency if authenticated, USD otherwise."""
+        user = db.get(User, user_id) if user_id else None
         currency = user.currency if user else "USD"
         plans = PLANS_INR if currency == "INR" else PLANS_USD
 

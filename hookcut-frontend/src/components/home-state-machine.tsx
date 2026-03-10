@@ -2,13 +2,13 @@
 
 import { useReducer, useCallback, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { api } from "@/lib/api";
 import { extractErrorMessage } from "@/lib/utils";
 import type { Hook, Step, VideoMeta, TaskStatus } from "@/lib/types";
 import { usePollTask } from "@/hooks/usePollTask";
 import Header from "@/components/header";
-import { AuthenticatedHome } from "@/components/authenticated-home";
 import { ProgressStep } from "@/components/progress-step";
 import { HooksStep } from "@/components/hooks-step";
 import { ShortsStep } from "@/components/shorts-step";
@@ -228,7 +228,15 @@ interface Props {
 export default function HomeStateMachine({ marketingContent }: Props) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { status: authStatus } = useSession();
+  const router = useRouter();
   const analysisStartRef = useRef<number>(0);
+
+  // Redirect authenticated users to dashboard when on input step
+  useEffect(() => {
+    if (authStatus === "authenticated" && state.step === "input") {
+      router.push("/dashboard");
+    }
+  }, [authStatus, state.step, router]);
 
   const taskId = state.step === "analyzing" ? state.taskId : "";
   const sessionId = "sessionId" in state ? state.sessionId : "";
@@ -405,7 +413,15 @@ export default function HomeStateMachine({ marketingContent }: Props) {
       <AnalyzeContext.Provider value={handleAnalyze}>
         <Header />
         <ErrorBanner error={error} onDismiss={() => dispatch({ type: "DISMISS_ERROR" })} />
-        {isAuthenticated ? <AuthenticatedHome /> : marketingContent}
+        {isAuthenticated ? (
+          // Authenticated users are redirected to /dashboard; show loading skeleton
+          <main className="pt-24 pb-12 px-6">
+            <div className="max-w-2xl mx-auto flex flex-col items-center gap-4">
+              <div className="w-12 h-12 rounded-full border-2 border-white/10 border-t-[--color-primary] animate-spin" />
+              <p className="text-white/40 text-sm">Redirecting to dashboard...</p>
+            </div>
+          </main>
+        ) : marketingContent}
       </AnalyzeContext.Provider>
     );
   }

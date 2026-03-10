@@ -2,6 +2,9 @@ from fastapi import APIRouter, Depends, Query, HTTPException, Request
 from sqlalchemy.orm import Session
 from app.dependencies import get_db, get_admin_user
 from app.services.admin_service import AdminService
+from app.services.admin_rule_service import AdminRuleService
+from app.services.admin_provider_service import AdminProviderService
+from app.services.narm_service import NarmService
 from app.middleware.rate_limit import get_rate_limiter
 from app.schemas.admin import (
     AdminDashboardResponse, AdminUserListResponse, RoleUpdateRequest,
@@ -111,7 +114,7 @@ async def list_rules(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleListResponse:
-    return {"rules": AdminService.list_rules(db)}
+    return {"rules": AdminRuleService.list_rules(db)}
 
 
 @router.post("/rules")
@@ -122,7 +125,7 @@ async def create_rule(
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
     rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
-    rule = AdminService.create_rule(db, body.title, body.content, body.rule_key, admin_user)
+    rule = AdminRuleService.create_rule(db, body.title, body.content, body.rule_key, admin_user)
     return rule
 
 
@@ -132,7 +135,7 @@ async def preview_prompt(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptPreviewResponse:
-    return AdminService.preview_prompt(db, body.niche, body.language)
+    return AdminRuleService.preview_prompt(db, body.niche, body.language)
 
 
 @router.post("/rules/seed")
@@ -140,7 +143,7 @@ async def seed_rules(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleListResponse:
-    return {"rules": AdminService.seed_rules(db, admin_user)}
+    return {"rules": AdminRuleService.seed_rules(db, admin_user)}
 
 
 @router.get("/rules/{rule_key}/history")
@@ -149,7 +152,7 @@ async def get_rule_history(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleHistoryResponse:
-    return {"versions": AdminService.get_rule_history(db, rule_key)}
+    return {"versions": AdminRuleService.get_rule_history(db, rule_key)}
 
 
 @router.patch("/rules/{rule_id}")
@@ -161,7 +164,7 @@ async def update_rule(
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
     rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
-    rule = AdminService.update_rule(db, rule_id, admin_user, body.title, body.content, body.is_active)
+    rule = AdminRuleService.update_rule(db, rule_id, admin_user, body.title, body.content, body.is_active)
     return rule
 
 
@@ -174,7 +177,7 @@ async def revert_rule(
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
     rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
-    rule = AdminService.revert_rule(db, rule_id, version_id, admin_user)
+    rule = AdminRuleService.revert_rule(db, rule_id, version_id, admin_user)
     return rule
 
 
@@ -184,7 +187,7 @@ async def delete_rule(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ):
-    AdminService.delete_rule(db, rule_id, admin_user)
+    AdminRuleService.delete_rule(db, rule_id, admin_user)
     return {"status": "deleted"}
 
 
@@ -195,7 +198,7 @@ async def list_providers(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> ProviderListResponse:
-    return {"providers": AdminService.list_providers(db)}
+    return {"providers": AdminProviderService.list_providers(db)}
 
 
 @router.patch("/providers/{provider_name}")
@@ -205,7 +208,7 @@ async def update_provider(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> ProviderConfigResponse:
-    return AdminService.update_provider(db, provider_name, admin_user, body.is_enabled, body.model_id)
+    return AdminProviderService.update_provider(db, provider_name, admin_user, body.is_enabled, body.model_id)
 
 
 @router.post("/providers/{provider_name}/set-primary")
@@ -214,7 +217,7 @@ async def set_primary_provider(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> ProviderConfigResponse:
-    return AdminService.set_primary_provider(db, provider_name, admin_user)
+    return AdminProviderService.set_primary_provider(db, provider_name, admin_user)
 
 
 @router.post("/providers/{provider_name}/set-key")
@@ -226,20 +229,21 @@ async def set_api_key(
     db: Session = Depends(get_db),
 ) -> ProviderConfigResponse:
     rate_limiter.check(admin_user.id, "admin_set_key", limit=5, window_seconds=3600, request=request)
-    return AdminService.set_api_key(db, provider_name, body.api_key, admin_user)
+    return AdminProviderService.set_api_key(db, provider_name, body.api_key, admin_user)
 
 
 # ── NARM (Niche Audience Response Modeling) ────────────────────────────────
 
-@router.post("/narm/analyze")
+@router.post("/narm/analyze", status_code=202)
 async def trigger_narm_analysis(
     request: Request,
     body: NarmAnalyzeRequest,
     admin_user=Depends(get_admin_user),
-    db: Session = Depends(get_db),
-) -> NarmInsightsListResponse:
+):
     rate_limiter.check(admin_user.id, "admin_narm", limit=3, window_seconds=3600, request=request)
-    return {"insights": AdminService.trigger_narm_analysis(db, body.time_range_days, admin_user)}
+    from app.tasks.narm_task import run_narm_analysis
+    run_narm_analysis.delay(body.time_range_days, admin_user.id)
+    return {"status": "accepted", "message": "NARM analysis started"}
 
 
 @router.get("/narm/insights")
@@ -247,7 +251,7 @@ async def get_narm_insights(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> NarmInsightsListResponse:
-    return {"insights": AdminService.get_narm_insights(db)}
+    return {"insights": NarmService.get_narm_insights(db)}
 
 
 # ── Hook Engine Mode ──────────────────────────────────────────────────────

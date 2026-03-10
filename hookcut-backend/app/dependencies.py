@@ -1,4 +1,4 @@
-from typing import Generator
+from typing import Generator, Optional
 from fastapi import Depends, HTTPException, Request
 from sqlalchemy.orm import Session
 from app.models.base import get_session_factory
@@ -22,6 +22,14 @@ def get_db_session() -> Session:
 async def get_current_user_id(request: Request) -> str:
     """FastAPI dependency: extracts authenticated user ID from request."""
     return await get_authenticated_user_id(request)
+
+
+async def get_optional_user_id(request: Request) -> Optional[str]:
+    """FastAPI dependency: extracts user ID if authenticated, returns None otherwise."""
+    try:
+        return await get_authenticated_user_id(request)
+    except HTTPException:
+        return None
 
 
 async def get_admin_user(

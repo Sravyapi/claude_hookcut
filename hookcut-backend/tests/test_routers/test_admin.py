@@ -221,7 +221,7 @@ class TestUpdateUserRole:
 
 
 class TestAdminRules:
-    @patch("app.routers.admin.AdminService.list_rules")
+    @patch("app.routers.admin.AdminRuleService.list_rules")
     def test_returns_rule_list(self, mock_list, admin_client):
         from app.schemas.admin import PromptRuleResponse
         mock_list.return_value = [PromptRuleResponse(
@@ -244,7 +244,7 @@ class TestAdminRules:
 
 
 class TestAdminProviders:
-    @patch("app.routers.admin.AdminService.list_providers")
+    @patch("app.routers.admin.AdminProviderService.list_providers")
     def test_returns_provider_list(self, mock_list, admin_client):
         from app.schemas.admin import ProviderConfigResponse
         mock_list.return_value = [ProviderConfigResponse(

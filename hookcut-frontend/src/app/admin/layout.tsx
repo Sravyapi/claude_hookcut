@@ -19,6 +19,7 @@ import {
   X,
 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+import Header from "@/components/header";
 
 /* ─── Sidebar navigation items ─── */
 const NAV_ITEMS = [
@@ -108,6 +109,8 @@ export default function AdminLayout({
   }
 
   return (
+    <>
+    <Header />
     <main className="pt-20 pb-12 min-h-screen">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:flex gap-6">
         {/* ─── Mobile top bar ─── */}
@@ -192,5 +195,6 @@ export default function AdminLayout({
         <div className="flex-1 min-w-0">{children}</div>
       </div>
     </main>
+    </>
   );
 }

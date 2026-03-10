@@ -15,7 +15,9 @@ from sqlalchemy.orm import Session
 
 logger = logging.getLogger(__name__)
 
-from app.dependencies import get_db, get_current_user_id
+from typing import Optional
+
+from app.dependencies import get_db, get_current_user_id, get_optional_user_id
 from app.exceptions import HookCutError
 from app.schemas.billing import PlansResponse, BalanceResponse
 from app.services.billing_service import BillingService
@@ -40,9 +42,9 @@ router = APIRouter()
 @router.get("/billing/plans", response_model=PlansResponse)
 async def get_plans(
     db: Session = Depends(get_db),
-    user_id: str = Depends(get_current_user_id),
+    user_id: Optional[str] = Depends(get_optional_user_id),
 ):
-    """Get available subscription plans for user's currency."""
+    """Get available subscription plans. Returns user's currency if authenticated, USD otherwise."""
     return BillingService.get_plans(db, user_id)
 
 

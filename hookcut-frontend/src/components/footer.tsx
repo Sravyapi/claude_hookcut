@@ -14,10 +14,9 @@ const FOOTER_SECTIONS = [
   {
     heading: "Resources",
     links: [
-      { href: "/blog", label: "Blog" },
+      { href: "/blog", label: "Blog & Case Studies" },
       { href: "/how-it-works", label: "How It Works" },
       { href: "/use-cases/youtube-creators", label: "Use Cases" },
-      { href: "/case-studies", label: "Case Studies" },
     ],
   },
   {
@@ -98,13 +97,13 @@ export function Footer() {
 
         {/* Social links */}
         <div className="mt-12 flex items-center gap-4">
-          <a href="#" className="text-white/25 hover:text-white/50 transition-colors duration-150" aria-label="Twitter">
+          <a href="#" aria-disabled="true" title="Coming soon" aria-label="Follow us on Twitter" className="text-white/25 cursor-default pointer-events-none transition-colors duration-150" rel="noopener noreferrer" target="_blank">
             <Twitter className="w-4 h-4" aria-hidden="true" />
           </a>
-          <a href="#" className="text-white/25 hover:text-white/50 transition-colors duration-150" aria-label="YouTube">
+          <a href="#" aria-disabled="true" title="Coming soon" aria-label="Follow us on YouTube" className="text-white/25 cursor-default pointer-events-none transition-colors duration-150" rel="noopener noreferrer" target="_blank">
             <Youtube className="w-4 h-4" aria-hidden="true" />
           </a>
-          <a href="#" className="text-white/25 hover:text-white/50 transition-colors duration-150" aria-label="LinkedIn">
+          <a href="#" aria-disabled="true" title="Coming soon" aria-label="Follow us on LinkedIn" className="text-white/25 cursor-default pointer-events-none transition-colors duration-150" rel="noopener noreferrer" target="_blank">
             <Linkedin className="w-4 h-4" aria-hidden="true" />
           </a>
         </div>

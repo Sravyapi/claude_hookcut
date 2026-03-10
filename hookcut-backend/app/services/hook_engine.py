@@ -16,8 +16,10 @@ logger = logging.getLogger(__name__)
 
 MAX_LLM_RESPONSE_SIZE = 100_000  # 100KB — reject oversized LLM responses before parsing
 MAX_RETRIES = 3
-RETRY_DELAYS = [0, 2, 2]  # seconds before each attempt — kept short; Celery workers must not block long
-# TODO: Use Celery countdown retry instead of blocking sleep
+RETRY_DELAYS = [0, 1, 1]  # seconds before each attempt
+# Sleep is acceptable here: this runs inside a Celery worker where concurrency is
+# per-process (prefork), and each LLM call already blocks for 5-30s. A 1s retry
+# delay is negligible compared to the LLM round-trip.
 
 
 @dataclass
@@ -70,6 +72,10 @@ class HookEngine:
         last_error = None
         for attempt in range(MAX_RETRIES):
             if attempt > 0:
+                logger.warning(
+                    "Retrying hook analysis (attempt %d/%d) after %ds delay",
+                    attempt + 1, MAX_RETRIES, RETRY_DELAYS[attempt],
+                )
                 time.sleep(RETRY_DELAYS[attempt])
 
             # Use fallback provider on the last attempt

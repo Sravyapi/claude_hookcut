@@ -11,6 +11,7 @@ import { api } from "@/lib/api";
 import type { CreditBalance, UserProfile } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import Header from "@/components/header";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 type Tab = "account" | "billing";
@@ -110,12 +111,15 @@ export default function SettingsPage() {
 
   if (authStatus === "loading") {
     return (
-      <main className="pt-24 pb-12">
-        <div className="max-w-2xl mx-auto px-6 space-y-4">
-          <Skeleton className="h-10 w-48" />
-          <Skeleton className="h-96 w-full" />
-        </div>
-      </main>
+      <>
+        <Header />
+        <main className="pt-24 pb-12">
+          <div className="max-w-2xl mx-auto px-6 space-y-4">
+            <Skeleton className="h-10 w-48" />
+            <Skeleton className="h-96 w-full" />
+          </div>
+        </main>
+      </>
     );
   }
 
@@ -130,6 +134,8 @@ export default function SettingsPage() {
     : session?.user?.email?.[0]?.toUpperCase() ?? "U";
 
   return (
+    <>
+    <Header />
     <main className="pt-24 pb-12">
       <div className="max-w-2xl mx-auto px-6">
         {/* Header */}
@@ -415,5 +421,6 @@ export default function SettingsPage() {
         </AnimatePresence>
       </div>
     </main>
+    </>
   );
 }

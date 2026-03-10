@@ -12,7 +12,7 @@ from typing import Optional
 
 import httpx
 
-from app.utils.ffmpeg_commands import _ensure_cookies_file, _COOKIES_PATH
+from app.utils.ffmpeg_commands import _ensure_cookies_file
 
 logger = logging.getLogger(__name__)
 
@@ -173,14 +173,14 @@ class TranscriptService:
                     transcript = transcript_list.find_transcript([code])
                     break
                 except Exception:
-                    logger.debug("Transcript variant %s not found for %s", code, video_id)
+                    logger.warning("Transcript variant %s not found for %s", code, video_id)
                     continue
 
             if transcript is None:
                 try:
                     transcript = transcript_list.find_transcript(["en"])
                 except Exception:
-                    logger.debug("Transcript variant en not found for %s", video_id)
+                    logger.warning("Transcript variant en not found for %s", video_id)
                     for t in transcript_list:
                         if t.is_generated:
                             transcript = t

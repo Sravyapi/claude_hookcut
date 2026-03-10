@@ -3,16 +3,16 @@ import Link from "next/link";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
-  title: "How HookCut Works — URL to Short in 3 Steps | HookCut",
+  title: "How HookCut Works — URL to Short in 3 Steps",
   description:
     "Paste a YouTube URL. HookCut analyzes the transcript, scores the top hook moments, and generates vertical Shorts — in under 2 minutes.",
   openGraph: {
-    title: "How HookCut Works — URL to Short in 3 Steps | HookCut",
+    title: "How HookCut Works — URL to Short in 3 Steps",
     description: "Paste a YouTube URL. Get scored hooks and ready-to-post Shorts in under 2 minutes.",
     type: "website",
     url: "https://hookcut.ai/how-it-works",
   },
-  twitter: { card: "summary_large_image", title: "How HookCut Works — URL to Short in 3 Steps | HookCut", description: "Paste a YouTube URL. Get scored hooks and ready-to-post Shorts in under 2 minutes." },
+  twitter: { card: "summary_large_image", title: "How HookCut Works — URL to Short in 3 Steps", description: "Paste a YouTube URL. Get scored hooks and ready-to-post Shorts in under 2 minutes." },
   alternates: { canonical: "https://hookcut.ai/how-it-works" },
 };
 
@@ -180,6 +180,28 @@ export default function HowItWorksPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Manual Clipper */}
+        <section className="py-16 md:py-24 px-6 bg-[var(--color-surface-1)]">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-h2 font-[family-name:--font-display] font-bold text-[var(--color-text)] mb-4">
+              Or clip any moment yourself
+            </h2>
+            <p className="text-[var(--color-muted)] leading-relaxed mb-8">
+              Know exactly which moment you want? Use the Manual Clipper to set precise start and end points,
+              choose your caption style, and export — no AI needed.
+            </p>
+            <Link
+              href="/clip"
+              className="btn-primary inline-flex items-center gap-2 text-sm"
+            >
+              Open Manual Clipper
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </div>
         </section>
 

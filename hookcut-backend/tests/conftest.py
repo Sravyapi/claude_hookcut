@@ -23,7 +23,7 @@ from app.models.user import User, CreditBalance, Subscription  # noqa: F401
 from app.models.session import AnalysisSession, Hook, Short  # noqa: F401
 from app.models.billing import Transaction  # noqa: F401
 from app.models.learning import LearningLog  # noqa: F401
-from app.dependencies import get_db, get_current_user_id
+from app.dependencies import get_db, get_current_user_id, get_optional_user_id
 from app.main import create_app
 
 
@@ -92,6 +92,10 @@ def _make_app(with_auth_override=True):
         async def override_get_current_user_id():
             return TEST_USER_ID
         application.dependency_overrides[get_current_user_id] = override_get_current_user_id
+
+        async def override_get_optional_user_id():
+            return TEST_USER_ID
+        application.dependency_overrides[get_optional_user_id] = override_get_optional_user_id
 
     return application
 

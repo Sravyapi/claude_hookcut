@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
 import { youtubeThumbUrl } from "@/lib/utils";
+import Header from "@/components/header";
 
 /* ─── Credit ring ─── */
 function CreditRing({ balance }: { balance: CreditBalance }) {
@@ -151,8 +152,18 @@ const SessionRow = memo(function SessionRow({ session }: { session: SessionSumma
         </div>
       </div>
 
-      {/* Status badge */}
+      {/* Session type + Status badge */}
       <div className="shrink-0 flex items-center gap-2">
+        {/* TODO: Add session_type field to SessionSummary type when backend supports it */}
+        {(session as SessionSummary & { session_type?: string }).session_type === "manual_clip" ? (
+          <span className="hidden sm:inline-flex text-[10px] px-2 py-0.5 rounded-full font-medium bg-violet-500/15 text-violet-300 border border-violet-500/20">
+            Manual
+          </span>
+        ) : (
+          <span className="hidden sm:inline-flex text-[10px] px-2 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300 border border-blue-500/20">
+            AI
+          </span>
+        )}
         <span
           className={`hidden sm:inline-flex text-[11px] px-2.5 py-0.5 rounded-full font-medium ${statusConfig.color}`}
         >
@@ -243,18 +254,23 @@ export default function DashboardPage() {
 
   if (authStatus === "loading") {
     return (
-      <main className="pt-24 pb-12">
-        <div className="max-w-5xl mx-auto px-6 space-y-6">
-          <Skeleton className="h-40 w-full" />
-          <Skeleton className="h-96 w-full" />
-        </div>
-      </main>
+      <>
+        <Header />
+        <main className="pt-24 pb-12">
+          <div className="max-w-5xl mx-auto px-6 space-y-6">
+            <Skeleton className="h-40 w-full" />
+            <Skeleton className="h-96 w-full" />
+          </div>
+        </main>
+      </>
     );
   }
 
   if (authStatus === "unauthenticated") return null;
 
   return (
+    <>
+    <Header />
     <main className="pt-24 pb-12">
       <div className="max-w-5xl mx-auto px-6">
         {/* Page header */}
@@ -270,12 +286,20 @@ export default function DashboardPage() {
               {session?.user?.name ? `Welcome back, ${session.user.name.split(" ")[0]}` : "Welcome back"}
             </p>
           </div>
-          <Button asChild>
-            <Link href="/">
-              <Plus className="w-4 h-4" />
-              New Video
-            </Link>
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button variant="outline" asChild>
+              <Link href="/clip">
+                <Scissors className="w-4 h-4" />
+                Manual Clip
+              </Link>
+            </Button>
+            <Button asChild>
+              <Link href="/">
+                <Plus className="w-4 h-4" />
+                New Video
+              </Link>
+            </Button>
+          </div>
         </motion.div>
 
         {/* Credit section */}
@@ -481,5 +505,6 @@ export default function DashboardPage() {
         </motion.div>
       </div>
     </main>
+    </>
   );
 }

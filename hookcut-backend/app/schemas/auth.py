@@ -18,3 +18,12 @@ class AuthResponse(BaseModel):
     user_id: str
     email: str
     name: str
+    role: str = "user"
+
+
+class RoleLookupRequest(BaseModel):
+    email: EmailStr
+
+
+class RoleLookupResponse(BaseModel):
+    role: str = "user"

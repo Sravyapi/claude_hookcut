@@ -96,6 +96,12 @@ class AuthService:
         }
 
     @staticmethod
+    def get_role_by_email(db: Session, email: str) -> str:
+        """Return the role for a user by email, defaulting to 'user' if not found."""
+        user = db.execute(select(User).where(User.email == email)).scalar_one_or_none()
+        return (user.role or "user") if user else "user"
+
+    @staticmethod
     def login(db: Session, email: str, password: str) -> dict:
         user = db.execute(select(User).where(User.email == email)).scalar_one_or_none()
         if not user or not user.hashed_password:

@@ -1,19 +1,22 @@
 "use client";
 
-import { Suspense, useReducer, useCallback, useRef, useState, useEffect, memo } from "react";
+import { Suspense, useReducer, useCallback, useRef, useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Scissors, Plus, Play, Loader2, Download, AlertCircle, CheckCircle2 } from "lucide-react";
+import { Scissors, Plus, Play, Loader2, ArrowLeft, CreditCard } from "lucide-react";
+import Link from "next/link";
 import { api } from "@/lib/api";
 import { YouTubePlayer } from "@/components/clip/youtube-player";
 import { TimelineScrubber } from "@/components/clip/timeline-scrubber";
 import { ClipQueue } from "@/components/clip/clip-queue";
 import { ClipSettings } from "@/components/clip/clip-settings";
-import { useShortPoller } from "@/hooks/useShortPoller";
+import { ClipForm } from "@/components/clip/clip-form";
+import { GeneratingStep } from "@/components/clip/clip-status";
 import type { CaptionStyle, YTPlayerInstance } from "@/lib/types";
-import { SHORT_STATUS } from "@/lib/constants";
 import { formatClipTime } from "@/lib/clip-utils";
+import Header from "@/components/header";
+import type { CreditBalance } from "@/lib/types";
 
 // State machine types
 type ClipEntry = {
@@ -205,13 +208,22 @@ function ClipPageContent() {
   const [state, dispatch] = useReducer(clipperReducer, undefined, initialState);
   const playerRef = useRef<YTPlayerInstance | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [creditBalance, setCreditBalance] = useState<CreditBalance | null>(null);
 
   // Auth gate
   useEffect(() => {
     if (status === "unauthenticated") {
-      router.push("/auth/login");
+      router.push("/auth/login?callbackUrl=/clip");
     }
   }, [status, router]);
+
+  // Fetch credit balance
+  useEffect(() => {
+    if (status !== "authenticated") return;
+    api.getBalance()
+      .then(setCreditBalance)
+      .catch((err) => console.warn("Failed to load balance:", err));
+  }, [status]);
 
   // Auto-load URL from query param
   useEffect(() => {
@@ -275,16 +287,39 @@ function ClipPageContent() {
 
   if (status === "loading") {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <Loader2 className="w-8 h-8 animate-spin text-violet-400" />
-      </div>
+      <>
+        <Header />
+        <div className="min-h-screen flex items-center justify-center">
+          <Loader2 className="w-8 h-8 animate-spin text-violet-400" />
+        </div>
+      </>
     );
   }
 
   return (
+    <>
+    <Header />
     <main className="min-h-screen bg-[var(--color-surface-primary)] pt-20 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        {/* Header */}
+        {/* Back to dashboard + credit display */}
+        <div className="flex items-center justify-between mb-6">
+          <Link
+            href="/dashboard"
+            className="inline-flex items-center gap-1.5 text-sm text-white/40 hover:text-white/70 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Dashboard
+          </Link>
+          {creditBalance && (
+            <div className="flex items-center gap-2 text-sm text-white/40">
+              <CreditCard className="w-3.5 h-3.5" />
+              <span className="font-mono tabular-nums text-white/70">{creditBalance.total_available.toFixed(0)}</span>
+              <span>min</span>
+            </div>
+          )}
+        </div>
+
+        {/* Page title */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 text-violet-300 text-sm mb-4">
             <Scissors className="w-4 h-4" />
@@ -311,26 +346,11 @@ function ClipPageContent() {
 
         {/* Step: URL Input */}
         {state.step === "input" && (
-          <div className="glass-card p-6 rounded-2xl">
-            <label className="block text-sm text-white/60 mb-2">YouTube URL</label>
-            <div className="flex gap-3">
-              <input
-                type="url"
-                value={state.url}
-                onChange={e => dispatch({ type: "SET_URL", url: e.target.value })}
-                onKeyDown={e => e.key === "Enter" && handleLoadVideo()}
-                placeholder="https://www.youtube.com/watch?v=..."
-                className="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-violet-500/50"
-              />
-              <button
-                onClick={handleLoadVideo}
-                disabled={!state.url}
-                className="px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-medium disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
-              >
-                Load Video
-              </button>
-            </div>
-          </div>
+          <ClipForm
+            url={state.url}
+            onUrlChange={(url) => dispatch({ type: "SET_URL", url })}
+            onSubmit={handleLoadVideo}
+          />
         )}
 
         {/* Step: Video Loaded — Clipper Interface */}
@@ -452,176 +472,6 @@ function ClipPageContent() {
         )}
       </div>
     </main>
+    </>
   );
 }
-
-/* ─── Generating Step: polls each short and shows results ─── */
-function GeneratingStep({
-  shortIds,
-  onAllDone,
-  isComplete,
-  onReset,
-}: {
-  shortIds: string[];
-  onAllDone: () => void;
-  isComplete: boolean;
-  onReset: () => void;
-}) {
-  const doneCountRef = useRef(0);
-  const firedRef = useRef(false);
-
-  const handleShortDone = useCallback(() => {
-    doneCountRef.current += 1;
-    if (doneCountRef.current >= shortIds.length && !firedRef.current) {
-      firedRef.current = true;
-      onAllDone();
-    }
-  }, [shortIds.length, onAllDone]);
-
-  return (
-    <div className="space-y-6">
-      <div className="glass-card p-6 rounded-2xl text-center">
-        <h3 className="text-lg font-semibold text-white mb-2">
-          {isComplete ? "Clips Ready!" : "Generating Clips..."}
-        </h3>
-        <p className="text-sm text-white/50 mb-6">
-          {isComplete
-            ? "Your clips are ready to download"
-            : `Processing ${shortIds.length} clip${shortIds.length !== 1 ? "s" : ""}...`}
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {shortIds.map((shortId, i) => (
-            <ClipShortCard
-              key={shortId}
-              shortId={shortId}
-              index={i}
-              onDone={handleShortDone}
-            />
-          ))}
-        </div>
-
-        <button
-          onClick={onReset}
-          className="mt-6 px-6 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/60 text-sm border border-white/10 transition-colors"
-        >
-          Clip Another Video
-        </button>
-      </div>
-    </div>
-  );
-}
-
-/* ─── Individual clip card with polling ─── */
-const ClipShortCard = memo(function ClipShortCard({
-  shortId,
-  index,
-  onDone,
-}: {
-  shortId: string;
-  index: number;
-  onDone: () => void;
-}) {
-  const { data, isLoading, error } = useShortPoller(shortId, true);
-  const firedRef = useRef(false);
-  const [blobUrl, setBlobUrl] = useState<string | null>(null);
-
-  const isDone =
-    data?.status === SHORT_STATUS.READY || data?.status === SHORT_STATUS.FAILED;
-
-  useEffect(() => {
-    if (isDone && !firedRef.current) {
-      firedRef.current = true;
-      onDone();
-    }
-  }, [isDone, onDone]);
-
-  // Fetch video with auth and create blob URL for preview + download
-  useEffect(() => {
-    if (data?.status !== SHORT_STATUS.READY || blobUrl) return;
-    let cancelled = false;
-
-    api.downloadShort(shortId).then(async (result) => {
-      if (!result.download_url || cancelled) return;
-      const url = await api.getVideoBlobUrl(result.download_url);
-      if (!cancelled) setBlobUrl(url);
-    }).catch((err) => {
-      console.warn("Failed to load video preview:", err);
-    });
-
-    return () => { cancelled = true; };
-  }, [data?.status, shortId, blobUrl]);
-
-  // Clean up blob URL on unmount
-  useEffect(() => {
-    return () => { if (blobUrl) URL.revokeObjectURL(blobUrl); };
-  }, [blobUrl]);
-
-  const handleDownload = useCallback(() => {
-    if (!blobUrl) return;
-    const a = document.createElement("a");
-    a.href = blobUrl;
-    a.download = `clip-${index + 1}.mp4`;
-    a.click();
-  }, [blobUrl, index]);
-
-  return (
-    <div className="glass-card p-4 rounded-xl flex flex-col items-center gap-3">
-      <div className="text-sm font-medium text-white/80">Clip #{index + 1}</div>
-
-      {/* Loading / Processing */}
-      {(isLoading || (data && !isDone)) && (
-        <div className="flex items-center gap-2 text-violet-300 text-sm">
-          <Loader2 className="w-4 h-4 animate-spin" />
-          <span>{data?.status ?? "queued"}</span>
-        </div>
-      )}
-
-      {/* Ready */}
-      {data?.status === SHORT_STATUS.READY && (
-        <>
-          {blobUrl ? (
-            <video
-              src={blobUrl}
-              controls
-              playsInline
-              preload="metadata"
-              className="w-full rounded-lg aspect-[9/16] max-h-[480px] bg-black"
-              aria-label={`Clip ${index + 1} preview`}
-            />
-          ) : (
-            <div className="w-full aspect-[9/16] max-h-[480px] bg-black/50 rounded-lg flex items-center justify-center">
-              <Loader2 className="w-5 h-5 animate-spin text-white/40" />
-            </div>
-          )}
-          {data.duration_seconds != null && (
-            <div className="text-xs text-white/40">
-              {formatClipTime(data.duration_seconds)}
-            </div>
-          )}
-          <button
-            onClick={handleDownload}
-            className="w-full px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium transition-colors flex items-center justify-center gap-1.5"
-          >
-            <Download className="w-3.5 h-3.5" /> Download
-          </button>
-        </>
-      )}
-
-      {/* Failed */}
-      {data?.status === SHORT_STATUS.FAILED && (
-        <>
-          <AlertCircle className="w-6 h-6 text-red-400" />
-          <div className="text-xs text-red-300/80">
-            {data.error_message || "Generation failed"}
-          </div>
-        </>
-      )}
-
-      {/* Error from polling */}
-      {error && !data && (
-        <div className="text-xs text-red-300/80">{error}</div>
-      )}
-    </div>
-  );
-});

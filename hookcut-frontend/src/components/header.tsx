@@ -5,7 +5,7 @@ import { useSession, signOut } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { LogOut, LayoutDashboard, Settings, CreditCard, Menu, X, Scissors } from "lucide-react";
+import { LogOut, LayoutDashboard, Settings, CreditCard, Menu, X, Scissors, Shield } from "lucide-react";
 import { api } from "@/lib/api";
 import { useUser } from "@/components/providers";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -19,8 +19,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const NAV_LINKS = [
-  { href: "/#features", label: "Features", match: "features" },
-  { href: "/#pricing", label: "Pricing", match: "pricing" },
+  { href: "/features", label: "Features", match: "features" },
+  { href: "/pricing", label: "Pricing", match: "pricing" },
   { href: "/clip", label: "Clipper", match: "clip" },
   { href: "/use-cases", label: "Use Cases", match: "use-cases" },
   { href: "/blog", label: "Blog", match: "blog" },
@@ -278,6 +278,16 @@ export default function Header({ onReset }: HeaderProps) {
                     <LayoutDashboard className="w-4 h-4 mr-2 text-white/35" aria-hidden="true" />
                     Dashboard
                   </DropdownMenuItem>
+
+                  {isAdmin && (
+                    <DropdownMenuItem
+                      onClick={() => router.push("/admin")}
+                      className="cursor-pointer"
+                    >
+                      <Shield className="w-4 h-4 mr-2 text-white/35" aria-hidden="true" />
+                      Admin Panel
+                    </DropdownMenuItem>
+                  )}
 
                   <DropdownMenuItem
                     onClick={() => router.push("/settings")}

@@ -21,6 +21,7 @@ celery_app = Celery(
         "app.tasks.analyze_task",
         "app.tasks.generate_short_task",
         "app.tasks.scheduled",
+        "app.tasks.narm_task",
     ],
 )
 

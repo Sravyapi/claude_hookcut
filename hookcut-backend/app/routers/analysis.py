@@ -35,8 +35,10 @@ rate_limiter = get_rate_limiter()
 
 
 @router.post("/validate-url", response_model=VideoValidateResponse)
-def validate_url(req: VideoValidateRequest):
+def validate_url(request: Request, req: VideoValidateRequest):
     """Validate YouTube URL and return video metadata."""
+    client_ip = request.client.host if request.client else "unknown"
+    rate_limiter.check(f"ip:{client_ip}", "validate_url", limit=30, window_seconds=900, request=request)
     return AnalyzeService.validate_url(req)
 
 
