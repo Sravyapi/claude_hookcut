@@ -72,7 +72,7 @@ export function HeroSection() {
     return () => {
       mountedRef.current = false;
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps -- Run once on mount for demo carousel timing
 
   const showThumbnail = !active && phase === "idle";
   const showScanner   = !active && phase === "loading";

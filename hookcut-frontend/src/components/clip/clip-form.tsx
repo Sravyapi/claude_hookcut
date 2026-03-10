@@ -22,6 +22,7 @@ export const ClipForm = memo(function ClipForm({ url, onUrlChange, onSubmit }: C
           className="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-violet-500/50"
         />
         <button
+          type="button"
           onClick={onSubmit}
           disabled={!url}
           className="px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-medium disabled:opacity-40 disabled:cursor-not-allowed transition-colors"

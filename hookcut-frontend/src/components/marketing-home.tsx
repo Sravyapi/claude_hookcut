@@ -173,6 +173,7 @@ export function MarketingHome() {
             {/* Annual/Monthly toggle */}
             <div className="flex items-center justify-center gap-3 mt-6">
               <button
+                type="button"
                 onClick={() => setAnnual(false)}
                 className={`text-sm font-medium px-4 py-1.5 rounded-full transition-colors ${
                   !annual
@@ -183,6 +184,7 @@ export function MarketingHome() {
                 Monthly
               </button>
               <button
+                type="button"
                 onClick={() => setAnnual(true)}
                 className={`text-sm font-medium px-4 py-1.5 rounded-full transition-colors ${
                   annual

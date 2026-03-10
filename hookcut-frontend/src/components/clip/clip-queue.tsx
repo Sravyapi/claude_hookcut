@@ -41,6 +41,7 @@ const ClipItem = memo(function ClipItem({
         <div className="text-xs text-white/40">{duration.toFixed(1)}s</div>
       </div>
       <button
+        type="button"
         onClick={onEdit}
         className="p-1.5 rounded-lg hover:bg-white/10 text-white/40 hover:text-white/80 transition-colors"
         aria-label={`Edit clip ${index + 1}`}
@@ -48,6 +49,7 @@ const ClipItem = memo(function ClipItem({
         <Pencil className="w-3.5 h-3.5" />
       </button>
       <button
+        type="button"
         onClick={onRemove}
         className="p-1.5 rounded-lg hover:bg-red-500/10 text-white/40 hover:text-red-400 transition-colors"
         aria-label={`Remove clip ${index + 1}`}

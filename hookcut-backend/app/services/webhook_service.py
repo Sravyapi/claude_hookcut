@@ -83,7 +83,8 @@ class WebhookService:
                 logger.info(f"PAYG: {minutes} minutes provisioned for {user_id}")
             else:
                 plan_tier = metadata.get("plan_tier", "lite")
-                SubscriptionService(db).activate_subscription(
+                SubscriptionService.activate_subscription(
+                    db,
                     user_id=user_id,
                     plan_tier=plan_tier,
                     provider="stripe",
@@ -155,7 +156,8 @@ class WebhookService:
             if not user_id:
                 return {"status": "ignored"}
             plan_tier = notes.get("plan_tier", "lite")
-            SubscriptionService(db).activate_subscription(
+            SubscriptionService.activate_subscription(
+                db,
                 user_id=user_id,
                 plan_tier=plan_tier,
                 provider="razorpay",

@@ -85,6 +85,7 @@ export class ErrorBoundary extends React.Component<
             )}
 
             <button
+              type="button"
               onClick={this.handleReset}
               className="btn-primary text-sm inline-flex items-center gap-2"
             >

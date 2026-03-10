@@ -12,11 +12,9 @@ logger = logging.getLogger(__name__)
 
 
 class SubscriptionService:
-    def __init__(self, db: Session):
-        self.db = db
-
+    @staticmethod
     def activate_subscription(
-        self,
+        db: Session,
         user_id: str,
         plan_tier: str,
         provider: str,
@@ -24,14 +22,14 @@ class SubscriptionService:
         currency: str,
     ) -> None:
         """Activate or update a subscription and provision credits."""
-        user = self.db.get(User, user_id)
+        user = db.get(User, user_id)
         if not user:
             return
 
         user.plan_tier = plan_tier
 
         # Create or update subscription record
-        sub = self.db.execute(
+        sub = db.execute(
             select(Subscription).where(
                 Subscription.user_id == user_id,
                 Subscription.provider == provider,
@@ -56,16 +54,16 @@ class SubscriptionService:
                 current_period_start=now,
                 current_period_end=now + timedelta(days=30),
             )
-            self.db.add(sub)
+            db.add(sub)
 
         # Provision paid minutes
         minutes = PLAN_MINUTES.get(plan_tier, 0)
         if minutes > 0:
-            credit_mgr = CreditManager(self.db)
+            credit_mgr = CreditManager(db)
             credit_mgr.add_paid_minutes(
                 user_id, minutes,
                 provider=provider, provider_ref=subscription_id,
             )
 
         # Transaction already created by add_paid_minutes() above
-        self.db.commit()
+        db.commit()

@@ -96,7 +96,7 @@ export function YouTubePlayer({ videoId, onReady, onError }: YouTubePlayerProps)
         playerRef.current = null;
       }
     };
-  }, [videoId]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [videoId]); // eslint-disable-line react-hooks/exhaustive-deps -- Load YouTube API once on mount
 
   return (
     <div className="w-full relative rounded-xl overflow-hidden" style={{ aspectRatio: "16/9" }}>

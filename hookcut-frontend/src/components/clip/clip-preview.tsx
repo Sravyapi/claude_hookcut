@@ -96,6 +96,7 @@ export const ClipShortCard = memo(function ClipShortCard({
             </div>
           )}
           <button
+            type="button"
             onClick={handleDownload}
             className="w-full px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium transition-colors flex items-center justify-center gap-1.5"
           >

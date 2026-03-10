@@ -94,6 +94,7 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
           aria-label="YouTube URL"
         />
         <button
+          type="button"
           onClick={handleValidate}
           disabled={validating || !url.trim()}
           className="shrink-0 px-5 py-2.5 rounded-lg btn-primary text-sm font-semibold disabled:opacity-40 flex items-center gap-2"
@@ -162,6 +163,7 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
             <div className="flex flex-wrap gap-1.5 mb-4 overflow-x-auto no-scrollbar">
               {NICHES.map((n) => (
                 <button
+                  type="button"
                   key={n}
                   onClick={() => setNiche(n)}
                   className={`text-xs px-3 py-1 rounded-full border font-medium transition-colors ${
@@ -202,6 +204,7 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
             </div>
 
             <button
+              type="button"
               onClick={handleSubmit}
               className="w-full py-3 rounded-xl bg-[#E84A2F] text-white font-semibold text-sm hover:bg-[#D13F25] transition-colors"
             >

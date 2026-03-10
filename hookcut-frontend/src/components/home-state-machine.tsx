@@ -272,7 +272,7 @@ export default function HomeStateMachine({ marketingContent }: Props) {
         shortIds: saved.shortIds,
       });
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- Run once on mount to start polling
   }, []);
 
   // ── Persist workflow on every step/session change ────────────────────────────

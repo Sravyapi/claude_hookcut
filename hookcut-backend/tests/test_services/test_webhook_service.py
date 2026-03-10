@@ -95,12 +95,11 @@ class TestStripeCheckoutCompleted:
             },
         }
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
-            mock_instance = MockSS.return_value
             result = WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
         assert result == {"status": "ok"}
-        MockSS.assert_called_once_with(db)
-        mock_instance.activate_subscription.assert_called_once_with(
+        MockSS.activate_subscription.assert_called_once_with(
+            db,
             user_id="wh-sc3",
             plan_tier="pro",
             provider="stripe",
@@ -119,11 +118,10 @@ class TestStripeCheckoutCompleted:
             },
         }
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
-            mock_instance = MockSS.return_value
             WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
-        mock_instance.activate_subscription.assert_called_once()
-        call_kwargs = mock_instance.activate_subscription.call_args[1]
+        MockSS.activate_subscription.assert_called_once()
+        call_kwargs = MockSS.activate_subscription.call_args[1]
         assert call_kwargs["plan_tier"] == "lite"
 
     def test_subscription_uses_session_id_when_no_subscription(self, db):
@@ -138,10 +136,9 @@ class TestStripeCheckoutCompleted:
             },
         }
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
-            mock_instance = MockSS.return_value
             WebhookService.handle_stripe_checkout_completed(db, data, "evt_test")
 
-        call_kwargs = mock_instance.activate_subscription.call_args[1]
+        call_kwargs = MockSS.activate_subscription.call_args[1]
         assert call_kwargs["subscription_id"] == "cs_fallback_id"
 
     def test_missing_user_id_returns_ignored(self, db):
@@ -330,14 +327,13 @@ class TestRazorpaySubscriptionCharged:
         notes = {"user_id": "wh-rc1", "plan_tier": "pro"}
 
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
-            mock_instance = MockSS.return_value
             result = WebhookService.handle_razorpay_subscription_charged(
                 db, entity, notes, "evt_test"
             )
 
         assert result == {"status": "ok"}
-        MockSS.assert_called_once_with(db)
-        mock_instance.activate_subscription.assert_called_once_with(
+        MockSS.activate_subscription.assert_called_once_with(
+            db,
             user_id="wh-rc1",
             plan_tier="pro",
             provider="razorpay",
@@ -351,10 +347,9 @@ class TestRazorpaySubscriptionCharged:
         notes = {"user_id": "wh-rc2"}  # no plan_tier
 
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
-            mock_instance = MockSS.return_value
             WebhookService.handle_razorpay_subscription_charged(db, entity, notes, "evt_test")
 
-        call_kwargs = mock_instance.activate_subscription.call_args[1]
+        call_kwargs = MockSS.activate_subscription.call_args[1]
         assert call_kwargs["plan_tier"] == "lite"
 
     def test_missing_user_id_returns_ignored(self, db):
@@ -371,10 +366,9 @@ class TestRazorpaySubscriptionCharged:
         notes = {"user_id": "wh-rc3", "plan_tier": "lite"}
 
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
-            mock_instance = MockSS.return_value
             WebhookService.handle_razorpay_subscription_charged(db, entity, notes, "evt_test")
 
-        call_kwargs = mock_instance.activate_subscription.call_args[1]
+        call_kwargs = MockSS.activate_subscription.call_args[1]
         assert call_kwargs["currency"] == "INR"
 
     def test_entity_id_fallback_to_empty_string(self, db):
@@ -383,10 +377,9 @@ class TestRazorpaySubscriptionCharged:
         notes = {"user_id": "wh-rc4", "plan_tier": "pro"}
 
         with patch("app.services.webhook_service.SubscriptionService") as MockSS:
-            mock_instance = MockSS.return_value
             WebhookService.handle_razorpay_subscription_charged(db, entity, notes, "evt_test")
 
-        call_kwargs = mock_instance.activate_subscription.call_args[1]
+        call_kwargs = MockSS.activate_subscription.call_args[1]
         assert call_kwargs["subscription_id"] == ""
 
 
