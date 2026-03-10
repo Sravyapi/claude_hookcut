@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "YouTube Shorts Generator — Hook-Scored, Caption-Ready | HookCut",
+  title: "YouTube Shorts Generator — Turn Long Videos Into Viral Clips | HookCut",
   description:
     "HookCut is a YouTube Shorts generator that scores every clip before you download it. Get the top 5 hook moments from any YouTube video — scored, explained, and generated as 9:16 Shorts with captions.",
   openGraph: {
-    title: "YouTube Shorts Generator — Hook-Scored, Caption-Ready | HookCut",
+    title: "YouTube Shorts Generator — Turn Long Videos Into Viral Clips | HookCut",
     description:
       "HookCut generates YouTube Shorts from the hook moments most likely to go viral — not just any moments. Scored, explained, captioned.",
     type: "website",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "YouTube Shorts Generator — Hook-Scored, Caption-Ready | HookCut",
+    title: "YouTube Shorts Generator — Turn Long Videos Into Viral Clips | HookCut",
     description:
       "HookCut generates YouTube Shorts from the hook moments most likely to go viral — scored, explained, captioned.",
   },
@@ -123,5 +123,18 @@ const data: CompetitorData = {
 };
 
 export default function YouTubeShortsGeneratorPage() {
-  return <AlternativePage data={data} />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "HookCut",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+        "description": "AI-powered YouTube hook detection and Shorts generation"
+      }) }} />
+      <AlternativePage data={data} />
+    </>
+  );
 }

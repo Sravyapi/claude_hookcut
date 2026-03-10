@@ -2,9 +2,12 @@
 Shared hook engine mode — persisted in Redis so web + Celery workers stay in sync.
 """
 
+import logging
 from functools import lru_cache
 
 import redis
+
+logger = logging.getLogger(__name__)
 from app.config import get_settings
 
 REDIS_KEY = "hookcut:hook_engine_mode"
@@ -21,7 +24,8 @@ def get_engine_mode() -> str:
     try:
         mode = _redis_client().get(REDIS_KEY)
         return mode if mode in VALID_MODES else DEFAULT_MODE
-    except Exception:
+    except Exception as e:
+        logger.warning("Failed to read engine mode from Redis: %s", e)
         return DEFAULT_MODE
 
 

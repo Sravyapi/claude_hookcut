@@ -8,6 +8,10 @@ if [ ! -f "$PYTHON" ]; then
   exit 1
 fi
 
+# Kill any orphaned Celery workers from previous sessions
+pkill -f "celery -A app.tasks.celery_app" 2>/dev/null && echo "[cleanup] Killed stale Celery processes" || true
+sleep 0.5
+
 # Kill all background jobs on Ctrl+C or exit
 cleanup() {
   echo ""

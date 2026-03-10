@@ -36,6 +36,7 @@ class AnalysisSession(Base):
     paid_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
     payg_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
     free_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
+    source_type: Mapped[str] = mapped_column(String(10), default="ai")  # "ai" or "manual"
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
 
     hooks: Mapped[list["Hook"]] = relationship(
@@ -92,12 +93,15 @@ class Short(Base):
     session_id: Mapped[str] = mapped_column(
         String(36), ForeignKey("analysis_sessions.id", ondelete="CASCADE"), index=True
     )
-    hook_id: Mapped[str] = mapped_column(
-        String(36), ForeignKey("hooks.id", ondelete="CASCADE"), index=True
+    hook_id: Mapped[Optional[str]] = mapped_column(
+        String(36), ForeignKey("hooks.id", ondelete="SET NULL"), nullable=True, index=True
     )
     status: Mapped[str] = mapped_column(String(20), default="queued")
     # Status values: queued, downloading, processing, uploading, ready, failed, expired
     caption_style: Mapped[str] = mapped_column(String(20), default="clean")
+    source_type: Mapped[str] = mapped_column(String(10), default="ai")  # "ai" or "manual"
+    aspect_ratio: Mapped[str] = mapped_column(String(5), default="9:16")
+    captions_failed: Mapped[bool] = mapped_column(Boolean, default=False)
     start_seconds_override: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     end_seconds_override: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     is_watermarked: Mapped[bool] = mapped_column(Boolean, default=True)
@@ -118,4 +122,4 @@ class Short(Base):
     updated_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True, onupdate=lambda: datetime.now(timezone.utc))
 
     session: Mapped["AnalysisSession"] = relationship(back_populates="shorts")
-    hook: Mapped["Hook"] = relationship(back_populates="shorts")
+    hook: Mapped[Optional["Hook"]] = relationship(back_populates="shorts")

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback, useRef } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Search } from "lucide-react";
+import { ChevronLeft, ChevronRight, Search, Shield, Users } from "lucide-react";
 import { api } from "@/lib/api";
 import { extractErrorMessage } from "@/lib/utils";
 import { useToast } from "@/components/ui/use-toast";
@@ -21,7 +21,7 @@ function roleBadge(role: string) {
 
 function tierBadge(tier: string) {
   if (tier === "pro")
-    return "bg-emerald-500/15 text-emerald-300 border-emerald-500/25";
+    return "bg-[--color-success]/15 text-emerald-300 border-[--color-success]/25";
   if (tier === "business")
     return "bg-blue-500/15 text-blue-300 border-blue-500/25";
   return "bg-white/5 text-white/50 border-white/10";
@@ -43,6 +43,15 @@ function ConfirmDialog({
   onConfirm: () => void;
   onCancel: () => void;
 }) {
+  useEffect(() => {
+    if (!open) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onCancel();
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [open, onCancel]);
+
   if (!open) return null;
 
   return (
@@ -59,7 +68,7 @@ function ConfirmDialog({
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
-        className="relative bg-[#0a0a14] border border-white/10 rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl"
+        className="relative glass-card rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl"
       >
         <h3 id="confirm-dialog-title" className="text-base font-semibold text-white mb-2">{title}</h3>
         <p className="text-sm text-white/50 mb-6">{message}</p>
@@ -72,7 +81,7 @@ function ConfirmDialog({
           </button>
           <button
             onClick={onConfirm}
-            className="px-4 py-2 rounded-xl text-sm font-medium bg-violet-500/20 text-violet-300 border border-violet-500/30 hover:bg-violet-500/30 transition-colors"
+            className="px-4 py-2 rounded-xl text-sm font-medium bg-[--color-primary]/20 text-[--color-primary] border border-[--color-primary]/30 hover:bg-[--color-primary]/30 transition-colors"
           >
             {confirmLabel}
           </button>
@@ -166,7 +175,12 @@ export default function AdminUsersPage() {
         className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4"
       >
         <div>
-          <h1 className="text-2xl font-bold text-white">User Management</h1>
+          <div className="flex items-center gap-2.5">
+            <h1 className="text-2xl font-bold text-white">User Management</h1>
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-primary]/10 text-[--color-primary] border border-[--color-primary]/20 font-semibold uppercase tracking-wider">
+              <Shield className="w-3 h-3 inline-block mr-1 -mt-px" />Admin
+            </span>
+          </div>
           <p className="text-white/40 text-sm mt-0.5">
             View and manage platform users
             {data && (
@@ -183,14 +197,14 @@ export default function AdminUsersPage() {
             placeholder="Search by email..."
             aria-label="Search users by email"
             onChange={(e) => handleSearchChange(e.target.value)}
-            className="w-full pl-9 pr-4 py-2 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm text-white/80 placeholder-white/20 outline-none focus:border-violet-500/40 focus:ring-1 focus:ring-violet-500/20 transition-all"
+            className="w-full pl-9 pr-4 py-2 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm text-white/80 placeholder-white/20 outline-none focus:border-[--color-primary]/40 focus:ring-1 focus:ring-[--color-primary]/20 transition-all"
           />
         </div>
       </motion.div>
 
       {/* ─── Users table ─── */}
       <motion.div
-        className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden"
+        className="glass-card rounded-2xl overflow-hidden"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.1 }}
@@ -204,7 +218,7 @@ export default function AdminUsersPage() {
         ) : data && data.users.length > 0 ? (
           <>
             {/* Table header */}
-            <div className="grid grid-cols-[2fr_1fr_1fr_0.8fr_0.8fr_1.2fr] gap-4 px-6 py-3 text-[10px] font-medium text-white/25 uppercase tracking-wider border-b border-white/[0.06]">
+            <div className="grid grid-cols-[2fr_1fr_1fr_0.8fr_0.8fr_1.2fr] gap-4 px-6 py-3 text-[10px] font-medium text-white/25 uppercase tracking-wider border-b border-white/[0.05]">
               <span>Email</span>
               <span>Role</span>
               <span>Plan Tier</span>
@@ -218,6 +232,7 @@ export default function AdminUsersPage() {
               variants={staggerContainer}
               initial="hidden"
               animate="show"
+              className="divide-y divide-white/[0.05]"
             >
               {data.users.map((user) => {
                 const dateStr = new Date(user.created_at).toLocaleDateString(
@@ -229,7 +244,7 @@ export default function AdminUsersPage() {
                   <motion.div
                     key={user.id}
                     variants={fadeUpItem}
-                    className="grid grid-cols-[2fr_1fr_1fr_0.8fr_0.8fr_1.2fr] gap-4 px-6 py-3.5 hover:bg-white/[0.02] transition-colors border-b border-white/[0.03] last:border-0 items-center"
+                    className="grid grid-cols-[2fr_1fr_1fr_0.8fr_0.8fr_1.2fr] gap-4 px-6 py-3.5 hover:bg-white/[0.02] transition-colors even:bg-white/[0.02] items-center"
                   >
                     {/* Email */}
                     <span className="text-sm text-white/70 truncate">
@@ -239,6 +254,7 @@ export default function AdminUsersPage() {
                     {/* Role selector */}
                     <div className="relative">
                       <select
+                        aria-label={`Change role for ${user.email}`}
                         value={user.role}
                         onChange={(e) => handleRoleSelect(user, e.target.value)}
                         disabled={updatingUserId === user.id}
@@ -320,7 +336,11 @@ export default function AdminUsersPage() {
           </>
         ) : (
           <div className="py-16 text-center">
-            <p className="text-sm text-white/30">No users found.</p>
+            <div className="w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center mx-auto mb-4">
+              <Users className="w-7 h-7 text-white/15" />
+            </div>
+            <p className="text-sm text-white/40 mb-1">No users found</p>
+            <p className="text-xs text-white/25">Try adjusting your search query.</p>
           </div>
         )}
       </motion.div>

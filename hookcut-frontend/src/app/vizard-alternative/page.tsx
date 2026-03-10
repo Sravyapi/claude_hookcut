@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "Best Vizard Alternative for Hook Scoring & Shorts | HookCut",
+  title: "HookCut vs Vizard — Hook Scoring for Indian Creators | HookCut",
   description:
-    "Want a Vizard alternative that scores hooks instead of just identifying timestamps? HookCut's 0–100 Hook Score tells you which moments are most likely to go viral — before you post.",
+    "HookCut scores hooks 0-100 before you clip. Vizard identifies segments without scoring. Indian pricing at Rs499/mo. Try free.",
   openGraph: {
-    title: "Best Vizard Alternative for Hook Scoring & Shorts | HookCut",
+    title: "HookCut vs Vizard — Hook Scoring for Indian Creators | HookCut",
     description:
-      "HookCut's 0–100 Hook Score tells you which moments are most likely to go viral — before you post.",
+      "HookCut scores hooks 0-100 before you clip. Vizard identifies segments without scoring. Indian pricing at Rs499/mo. Try free.",
     type: "website",
     url: "https://hookcut.ai/vizard-alternative",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Vizard Alternative for Hook Scoring & Shorts | HookCut",
+    title: "HookCut vs Vizard — Hook Scoring for Indian Creators | HookCut",
     description:
-      "HookCut's 0–100 Hook Score tells you which moments are most likely to go viral — before you post.",
+      "HookCut scores hooks 0-100 before you clip. Vizard identifies segments without scoring. Indian pricing at Rs499/mo. Try free.",
   },
   alternates: { canonical: "https://hookcut.ai/vizard-alternative" },
 };

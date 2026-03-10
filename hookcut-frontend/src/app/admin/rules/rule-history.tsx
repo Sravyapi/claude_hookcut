@@ -26,7 +26,7 @@ export default function RuleHistoryPanel({
   onRevert,
 }: RuleHistoryProps) {
   return (
-    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
+    <div className="glass-card rounded-2xl overflow-hidden">
       <button
         onClick={onToggleHistory}
         aria-expanded={showHistory}

@@ -13,6 +13,7 @@ import {
   Key,
   CheckCircle,
   AlertCircle,
+  Shield,
 } from "lucide-react";
 import { api } from "@/lib/api";
 import type { ProviderConfig } from "@/lib/types";
@@ -137,7 +138,7 @@ function ProviderCard({
   return (
     <motion.div
       variants={fadeUpItem}
-      className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col"
+      className="glass-card rounded-2xl p-6 flex flex-col"
     >
       {/* Header */}
       <div className="flex items-center justify-between mb-5">
@@ -340,8 +341,11 @@ export default function ModelProviderPage() {
           transition={{ duration: 0.4 }}
         >
           <h1 className="text-2xl font-bold text-white flex items-center gap-3">
-            <Cpu className="w-6 h-6 text-violet-400" />
+            <Cpu className="w-6 h-6 text-[--color-primary]" />
             Model / Provider Management
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-primary]/10 text-[--color-primary] border border-[--color-primary]/20 font-semibold uppercase tracking-wider">
+              <Shield className="w-3 h-3 inline-block mr-1 -mt-px" />Admin
+            </span>
           </h1>
           <p className="text-white/40 text-sm mt-0.5">
             Configure LLM providers, API keys, and model selection
@@ -354,7 +358,7 @@ export default function ModelProviderPage() {
             {Array.from({ length: 3 }).map((_, i) => (
               <div
                 key={i}
-                className="h-96 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl animate-pulse"
+                className="h-96 glass-card rounded-2xl animate-pulse"
               />
             ))}
           </div>
@@ -378,7 +382,7 @@ export default function ModelProviderPage() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.05 }}
-            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-12 text-center"
+            className="glass-card rounded-2xl p-12 text-center"
           >
             <div className="w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center mx-auto mb-4">
               <Cpu className="w-7 h-7 text-white/15" />

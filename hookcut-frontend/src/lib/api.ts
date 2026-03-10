@@ -23,6 +23,8 @@ import type {
   PromptPreview,
   ProviderConfig,
   NarmInsight,
+  GenerateClipsRequest,
+  GenerateClipsResponse,
 } from "./types";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
@@ -31,7 +33,7 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
 
 let cachedToken: string | null = null;
 let tokenFetchedAt = 0;
-const TOKEN_TTL_MS = 4 * 60 * 1000; // refresh every 4 min (JWT lives 5+ min)
+const TOKEN_TTL_MS = 3 * 60 * 1000; // refresh every 3 min (JWT lives 5+ min, gives 2 min buffer)
 let tokenPromise: Promise<string | null> | null = null;
 
 async function getAuthToken(): Promise<string | null> {
@@ -127,6 +129,7 @@ export const api = {
     hookIds: string[],
     captionStyle: string = "clean",
     timeOverrides: Record<string, { start_seconds: number; end_seconds: number }> = {},
+    aspectRatio: string = "9:16",
   ) =>
     request<SelectHooksResponse>(`/sessions/${sessionId}/select-hooks`, {
       method: "POST",
@@ -134,6 +137,7 @@ export const api = {
         hook_ids: hookIds,
         caption_style: captionStyle,
         time_overrides: timeOverrides,
+        aspect_ratio: aspectRatio,
       }),
     }),
 
@@ -298,5 +302,13 @@ export const api = {
     request<{ mode: string }>("/admin/hook-engine-mode", {
       method: "PATCH",
       body: JSON.stringify({ mode }),
+    }),
+
+  // ─── Manual Clipper endpoints ───
+
+  generateClips: (req: GenerateClipsRequest) =>
+    request<GenerateClipsResponse>("/clips/generate", {
+      method: "POST",
+      body: JSON.stringify(req),
     }),
 };

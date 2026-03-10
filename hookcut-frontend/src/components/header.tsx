@@ -5,7 +5,7 @@ import { useSession, signOut } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { LogOut, LayoutDashboard, Settings, CreditCard, Menu, X } from "lucide-react";
+import { LogOut, LayoutDashboard, Settings, CreditCard, Menu, X, Scissors } from "lucide-react";
 import { api } from "@/lib/api";
 import { useUser } from "@/components/providers";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -21,6 +21,7 @@ import {
 const NAV_LINKS = [
   { href: "/#features", label: "Features", match: "features" },
   { href: "/#pricing", label: "Pricing", match: "pricing" },
+  { href: "/clip", label: "Clipper", match: "clip" },
   { href: "/use-cases", label: "Use Cases", match: "use-cases" },
   { href: "/blog", label: "Blog", match: "blog" },
 ] as const;
@@ -32,7 +33,7 @@ interface HeaderProps {
 function HookCutWordmark() {
   return (
     <span
-      className="font-display font-extrabold text-[18px] tracking-tight leading-none select-none"
+      className="font-display font-extrabold text-[22px] tracking-tight leading-none select-none"
       aria-label="HookCut"
     >
       <span className="text-white/90">Hook</span>
@@ -41,16 +42,16 @@ function HookCutWordmark() {
         <svg
           aria-hidden="true"
           className="absolute pointer-events-none"
-          style={{ top: -8, left: 1 }}
-          width="12"
-          height="7"
-          viewBox="0 0 12 7"
+          style={{ top: -10, left: 1 }}
+          width="14"
+          height="8"
+          viewBox="0 0 14 8"
           fill="none"
         >
           <path
-            d="M 1 6 C 3 0.5 9 0.5 11 6"
+            d="M 1 7 C 3.5 0.5 10.5 0.5 13 7"
             stroke="#E84A2F"
-            strokeWidth="1.5"
+            strokeWidth="1.8"
             strokeLinecap="round"
           />
         </svg>
@@ -68,6 +69,7 @@ export default function Header({ onReset }: HeaderProps) {
   const { role } = useUser();
   const [balance, setBalance] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolledPast200, setScrolledPast200] = useState(false);
   const isAdmin = role === "admin";
 
   const { scrollY } = useScroll();
@@ -88,8 +90,16 @@ export default function Header({ onReset }: HeaderProps) {
 
   useEffect(() => {
     if (status !== "authenticated") return;
-    api.getBalance().then((b) => setBalance(b.total_available)).catch(() => undefined);
+    api.getBalance()
+      .then((b) => setBalance(b.total_available))
+      .catch((err) => console.warn("Failed to load balance:", err));
   }, [status]);
+
+  useEffect(() => {
+    const onScroll = () => setScrolledPast200(window.scrollY > 200);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const userInitials = session?.user?.name
     ? session.user.name
@@ -119,7 +129,7 @@ export default function Header({ onReset }: HeaderProps) {
   return (
     <>
       <motion.header
-        className="fixed top-0 left-0 right-0 z-50 animated-border-bottom"
+        className={`fixed top-0 left-0 right-0 z-50 overflow-hidden animated-border-bottom border-t-2 transition-[border-color] duration-300 ${scrolledPast200 ? "border-[--color-primary]" : "border-transparent"}`}
         style={{
           backgroundColor: bgColor,
           backdropFilter: bgFilter,
@@ -193,7 +203,7 @@ export default function Header({ onReset }: HeaderProps) {
             {balance !== null && (
               <Link
                 href="/dashboard"
-                className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-[--color-border-def] bg-[--color-surface-1] text-sm hover:bg-[--color-surface-2] transition-colors duration-200"
+                className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-[--color-border-str] bg-[--color-surface-1] text-sm hover:bg-[--color-surface-2] transition-colors duration-200"
                 aria-label={`${balance.toFixed(0)} minutes of credits remaining`}
               >
                 <CreditCard className="w-3.5 h-3.5 text-[--color-muted]" aria-hidden="true" />
@@ -327,9 +337,9 @@ export default function Header({ onReset }: HeaderProps) {
         {mobileMenuOpen && (
           <motion.div
             key="mobile-menu"
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 20 }}
+            exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.2 }}
             className="fixed inset-0 z-40 sm:hidden"
             role="dialog"

@@ -1,7 +1,8 @@
-from fastapi import APIRouter, Depends, Query, HTTPException
+from fastapi import APIRouter, Depends, Query, HTTPException, Request
 from sqlalchemy.orm import Session
 from app.dependencies import get_db, get_admin_user
 from app.services.admin_service import AdminService
+from app.middleware.rate_limit import get_rate_limiter
 from app.schemas.admin import (
     AdminDashboardResponse, AdminUserListResponse, RoleUpdateRequest,
     AdminSessionListResponse, AdminSessionDetailResponse,
@@ -15,6 +16,7 @@ from app.schemas.admin import (
 from app.services.engine_mode import get_engine_mode, set_engine_mode
 
 router = APIRouter(prefix="/admin")
+rate_limiter = get_rate_limiter()
 
 
 # ── Dashboard ──────────────────────────────────────────────────────────────
@@ -36,7 +38,7 @@ async def list_users(
     db: Session = Depends(get_db),
     page: int = Query(1, ge=1),
     per_page: int = Query(20, ge=1, le=100),
-    search: str | None = Query(None),
+    search: str | None = Query(None, max_length=100),
 ) -> AdminUserListResponse:
     return AdminService.list_users(db, page, per_page, search)
 
@@ -114,10 +116,12 @@ async def list_rules(
 
 @router.post("/rules")
 async def create_rule(
+    request: Request,
     body: PromptRuleCreateRequest,
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
+    rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
     rule = AdminService.create_rule(db, body.title, body.content, body.rule_key, admin_user)
     return rule
 
@@ -150,22 +154,26 @@ async def get_rule_history(
 
 @router.patch("/rules/{rule_id}")
 async def update_rule(
+    request: Request,
     rule_id: str,
     body: PromptRuleUpdateRequest,
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
+    rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
     rule = AdminService.update_rule(db, rule_id, admin_user, body.title, body.content, body.is_active)
     return rule
 
 
 @router.post("/rules/{rule_id}/revert/{version_id}")
 async def revert_rule(
+    request: Request,
     rule_id: str,
     version_id: str,
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
+    rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
     rule = AdminService.revert_rule(db, rule_id, version_id, admin_user)
     return rule
 
@@ -211,11 +219,13 @@ async def set_primary_provider(
 
 @router.post("/providers/{provider_name}/set-key")
 async def set_api_key(
+    request: Request,
     provider_name: str,
     body: SetApiKeyRequest,
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> ProviderConfigResponse:
+    rate_limiter.check(admin_user.id, "admin_set_key", limit=5, window_seconds=3600, request=request)
     return AdminService.set_api_key(db, provider_name, body.api_key, admin_user)
 
 
@@ -223,10 +233,12 @@ async def set_api_key(
 
 @router.post("/narm/analyze")
 async def trigger_narm_analysis(
+    request: Request,
     body: NarmAnalyzeRequest,
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> NarmInsightsListResponse:
+    rate_limiter.check(admin_user.id, "admin_narm", limit=3, window_seconds=3600, request=request)
     return {"insights": AdminService.trigger_narm_analysis(db, body.time_range_days, admin_user)}
 
 

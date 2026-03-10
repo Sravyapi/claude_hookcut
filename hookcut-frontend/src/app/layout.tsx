@@ -61,7 +61,7 @@ export default function RootLayout({
       lang="en"
       className={`dark ${geist.variable} ${geistMono.variable} ${outfit.variable}`}
     >
-      <body className="min-h-screen antialiased font-sans">
+      <body className="min-h-screen antialiased font-sans bg-grid">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-[--color-primary] focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"

@@ -1,4 +1,5 @@
 import json
+import re
 import time
 import logging
 from dataclasses import dataclass
@@ -13,6 +14,7 @@ from app.exceptions import HookEngineError
 
 logger = logging.getLogger(__name__)
 
+MAX_LLM_RESPONSE_SIZE = 100_000  # 100KB — reject oversized LLM responses before parsing
 MAX_RETRIES = 3
 RETRY_DELAYS = [0, 2, 2]  # seconds before each attempt — kept short; Celery workers must not block long
 # TODO: Use Celery countdown retry instead of blocking sleep
@@ -92,7 +94,7 @@ class HookEngine:
             except Exception as e:
                 last_error = e
                 logger.warning(
-                    f"Hook analysis attempt {attempt + 1} failed: {e}"
+                    f"Hook analysis attempt {attempt + 1} failed: {type(e).__name__}: {e}"
                 )
 
         raise HookEngineError(
@@ -109,14 +111,14 @@ class HookEngine:
 
     def _parse_and_validate(self, raw_text: str) -> list[HookCandidate]:
         """Parse LLM JSON response and validate exactly 5 hooks."""
+        # Size check before parsing
+        if len(raw_text) > MAX_LLM_RESPONSE_SIZE:
+            raise HookEngineError("LLM response too large")
+
         # Clean markdown fences if present
         text = raw_text.strip()
-        if text.startswith("```"):
-            text = text.split("\n", 1)[1] if "\n" in text else text[3:]
-        if text.startswith("json"):
-            text = text[4:]
-        if text.endswith("```"):
-            text = text[:-3]
+        text = re.sub(r'^```(?:json)?\s*\n', '', text)
+        text = re.sub(r'\n```\s*$', '', text)
         text = text.strip()
 
         try:

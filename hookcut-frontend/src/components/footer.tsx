@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Twitter, Youtube, Linkedin } from "lucide-react";
 
 const FOOTER_SECTIONS = [
   {
@@ -40,27 +41,27 @@ const FOOTER_SECTIONS = [
 export function Footer() {
   return (
     <footer className="bg-[#0A0A0A] border-t border-white/[0.06]" role="contentinfo">
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="max-w-6xl mx-auto px-6 py-16 pb-20 sm:pb-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center mb-4 group w-fit">
-              <span className="font-display font-extrabold text-[18px] tracking-tight leading-none select-none" aria-label="HookCut">
+              <span className="font-display font-extrabold text-[22px] tracking-tight leading-none select-none" aria-label="HookCut">
                 <span className="text-white/90">Hook</span>
                 <span className="relative inline-block text-[#E84A2F]">
                   <svg
                     aria-hidden="true"
                     className="absolute pointer-events-none"
-                    style={{ top: -8, left: 1 }}
-                    width="12"
-                    height="7"
-                    viewBox="0 0 12 7"
+                    style={{ top: -10, left: 1 }}
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
                     fill="none"
                   >
                     <path
-                      d="M 1 6 C 3 0.5 9 0.5 11 6"
+                      d="M 1 7 C 3.5 0.5 10.5 0.5 13 7"
                       stroke="#E84A2F"
-                      strokeWidth="1.5"
+                      strokeWidth="1.8"
                       strokeLinecap="round"
                     />
                   </svg>
@@ -68,8 +69,8 @@ export function Footer() {
                 </span>
               </span>
             </Link>
-            <p className="text-sm text-white/35 leading-relaxed max-w-[200px]">
-              Find the hook. Stop the scroll.
+            <p className="text-sm text-white/35 leading-relaxed max-w-[240px]">
+              Turn any YouTube video into a scroll-stopping Short. AI-powered. Creator-first.
             </p>
           </div>
 
@@ -95,9 +96,25 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-14 pt-6 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-3">
+        {/* Social links */}
+        <div className="mt-12 flex items-center gap-4">
+          <a href="#" className="text-white/25 hover:text-white/50 transition-colors duration-150" aria-label="Twitter">
+            <Twitter className="w-4 h-4" aria-hidden="true" />
+          </a>
+          <a href="#" className="text-white/25 hover:text-white/50 transition-colors duration-150" aria-label="YouTube">
+            <Youtube className="w-4 h-4" aria-hidden="true" />
+          </a>
+          <a href="#" className="text-white/25 hover:text-white/50 transition-colors duration-150" aria-label="LinkedIn">
+            <Linkedin className="w-4 h-4" aria-hidden="true" />
+          </a>
+        </div>
+
+        {/* Gradient rule */}
+        <div className="mt-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/20">
-            © 2026 HookCut · Built for creators · ₹499/month
+            © 2026 HookCut · Built for creators · Made in India
           </p>
           <div className="flex items-center gap-4">
             <Link

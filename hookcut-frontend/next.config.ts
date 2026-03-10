@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Content-Security-Policy-Report-Only",
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://accounts.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; connect-src 'self' https://api.hookcut.nyxpath.com https://app.posthog.com https://*.sentry.io; frame-src https://accounts.google.com; font-src 'self' data:; object-src 'none'; base-uri 'self';",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://accounts.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; connect-src 'self' https://api.hookcut.nyxpath.com https://app.posthog.com https://*.sentry.io; frame-src https://accounts.google.com https://www.youtube.com; font-src 'self' data:; object-src 'none'; base-uri 'self';",
           },
         ],
       },

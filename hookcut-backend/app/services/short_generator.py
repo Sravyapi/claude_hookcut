@@ -41,13 +41,21 @@ class ShortGenerator:
     def generate(
         self,
         youtube_url: str,
-        hook: dict,
+        hook: Optional[dict],
         session_id: str,
         short_id: str,
         is_watermarked: bool,
         language: str = "English",
         niche: str = "Generic",
         caption_style: str = "clean",
+        transcript_text: str = "",
+        aspect_ratio: str = "9:16",
+        captions_enabled: bool = True,
+        audio_normalization: bool = True,
+        source_type: str = "ai",
+        start_seconds: Optional[float] = None,
+        end_seconds: Optional[float] = None,
+        video_title: Optional[str] = None,
         on_progress: Optional[Callable[[str, int, str], None]] = None,
     ) -> ShortResult:
         def _progress(status: str, pct: int, label: str):
@@ -60,43 +68,79 @@ class ShortGenerator:
             # Step 1: Download segment (sequential — LLM calls wait until done
             # to avoid hitting Gemini concurrently with other in-flight shorts)
             _progress("downloading", 35, "Downloading segment...")
-            segment_path = self._extract_segments(youtube_url, hook, work_dir)
+            if hook is not None:
+                segment_path = self._extract_segments(youtube_url, hook, work_dir)
+            else:
+                # Manual clip: use start_seconds/end_seconds directly
+                seg_path = os.path.join(work_dir, "segment.mp4")
+                result = extract_segment(youtube_url, start_seconds or 0, end_seconds or 30, seg_path)
+                if not result.success:
+                    raise ShortGenerationError(f"Segment extraction failed: {result.error}")
+                segment_path = seg_path
 
-            # Step 2: Caption cleanup + title generation in parallel (2 LLM calls)
+            # Step 2: Caption cleanup + title generation
             _progress("processing", 55, "Generating captions & title...")
-            with ThreadPoolExecutor(max_workers=2) as executor:
-                caption_future = executor.submit(
-                    self._clean_captions, hook["hook_text"], language
-                )
-                title_future = executor.submit(
-                    self._generate_title,
-                    hook["hook_text"], niche, language,
-                    hook.get("hook_type", ""),
-                    hook.get("attention_score", 0.0),
-                )
-                cleaned_captions = caption_future.result()
-                title = title_future.result()
+
+            if hook is not None:
+                hook_text = hook["hook_text"]
+            elif captions_enabled and transcript_text:
+                # For manual clips with captions, extract relevant portion
+                hook_text = transcript_text
+            else:
+                hook_text = ""
+
+            if captions_enabled and hook_text:
+                with ThreadPoolExecutor(max_workers=2) as executor:
+                    caption_future = executor.submit(
+                        self._clean_captions, hook_text, language
+                    )
+                    title_future = executor.submit(
+                        self._generate_title,
+                        hook_text, niche, language,
+                        hook.get("hook_type", "") if hook else "",
+                        hook.get("attention_score", 0.0) if hook else 0.0,
+                    )
+                    cleaned_captions = caption_future.result()
+                    title = title_future.result()
+            else:
+                cleaned_captions = ""
+                title = f"{video_title} - Clip" if video_title else "Manual Clip"
 
             # Step 3: Signal render start
             _progress("processing", 65, "Rendering video...")
 
-            # Step 4: Generate ASS subtitles
+            # Step 4: Generate ASS subtitles (only if captions enabled)
             segment_duration = probe_duration(segment_path) or 30.0
             segment_size = os.path.getsize(segment_path) if os.path.exists(segment_path) else 0
             logger.info(
                 "Segment ready: path=%s size=%d bytes duration=%.1fs",
                 segment_path, segment_size, segment_duration,
             )
+
             subtitle_path = os.path.join(work_dir, "captions.ass")
-            generate_ass_subtitles(cleaned_captions, segment_duration, subtitle_path, style=caption_style)
+            if captions_enabled and cleaned_captions:
+                hook_start = (hook.get("start_seconds", 0.0) or 0.0) if hook else (start_seconds or 0.0)
+                hook_end = (hook.get("end_seconds", 0.0) or 0.0) if hook else (end_seconds or 0.0)
+                generate_ass_subtitles(
+                    cleaned_captions, segment_duration, subtitle_path,
+                    style=caption_style,
+                    transcript_text=transcript_text,
+                    start_seconds=hook_start,
+                    end_seconds=hook_end,
+                )
+            else:
+                subtitle_path = None  # No captions
 
             # Step 5: Single-pass FFmpeg render
             output_path = os.path.join(work_dir, "output.mp4")
             render_result = render_short(
                 input_path=segment_path,
-                subtitle_path=subtitle_path,
+                subtitle_path=subtitle_path or "",
                 output_path=output_path,
                 watermark=is_watermarked,
+                caption_style=caption_style,
+                aspect_ratio=aspect_ratio,
+                audio_normalization=audio_normalization,
             )
             if not render_result.success:
                 logger.error(

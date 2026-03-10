@@ -1,3 +1,6 @@
+import os
+os.environ.setdefault("OPENCV_OPENCL_RUNTIME", "disabled")
+
 from celery import Celery
 from celery.schedules import crontab
 from kombu import Queue
@@ -25,6 +28,14 @@ celery_app = Celery(
 ERROR_MSG_MAX_LEN = 500
 FREE_MONTHLY_MINUTES = 120.0
 DOWNLOAD_URL_EXPIRES_SECONDS = 3600
+
+# Rate limit constants (shared across routers)
+ANALYZE_RATE_LIMIT = 10
+ANALYZE_RATE_WINDOW = 900  # 15 minutes
+REGENERATE_RATE_LIMIT = 5
+REGENERATE_RATE_WINDOW = 900
+SELECT_HOOKS_RATE_LIMIT = 10
+SELECT_HOOKS_RATE_WINDOW = 900
 
 celery_app.conf.update(
     task_serializer="json",

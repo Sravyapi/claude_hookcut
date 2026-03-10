@@ -32,7 +32,7 @@ function BalanceRow({
   sub?: string;
 }) {
   return (
-    <div className="flex items-center justify-between py-3 border-b border-white/[0.04] last:border-0">
+    <div className="flex items-center justify-between py-3 border-b border-white/[0.06] last:border-0">
       <div className="flex items-center gap-3 text-white/50">
         {icon}
         <span className="text-sm">{label}</span>
@@ -166,7 +166,7 @@ export default function SettingsPage() {
                 {activeTab === tab.id && (
                   <motion.div
                     layoutId="tab-bg"
-                    className="absolute inset-0 bg-white/[0.07] rounded-lg"
+                    className="absolute inset-0 bg-white/[0.07] rounded-lg border-b-2 border-[--color-primary]"
                     transition={{ type: "spring", stiffness: 300, damping: 28 }}
                   />
                 )}
@@ -256,7 +256,7 @@ export default function SettingsPage() {
                             disabled={savingCurrency}
                             className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
                               currency === c
-                                ? "bg-violet-500/15 text-violet-300 border border-violet-500/35"
+                                ? "bg-violet-500/15 text-violet-300 border border-violet-500/35 ring-2 ring-[--color-primary]"
                                 : "bg-white/[0.03] text-white/45 border border-white/[0.06] hover:bg-white/[0.06] hover:text-white/60"
                             }`}
                           >
@@ -276,14 +276,17 @@ export default function SettingsPage() {
               </div>
 
               {/* Danger zone */}
-              <div className="glass-card rounded-2xl p-6 border border-red-500/10">
+              <div className="glass-card rounded-2xl p-6 border border-[--color-error] mt-8">
                 <div className="flex items-center gap-2 mb-3">
                   <AlertTriangle className="w-4 h-4 text-red-400/70" />
                   <h2 className="text-sm font-semibold text-red-400/70">Danger Zone</h2>
                 </div>
-                <p className="text-xs text-white/35 mb-4 leading-relaxed">
+                <p className="text-xs text-white/35 mb-2 leading-relaxed">
                   Signing out will end your current session. To delete your account,
                   please contact support.
+                </p>
+                <p className="text-xs text-red-400/60 mb-4 leading-relaxed">
+                  Warning: This action cannot be undone. Any unsaved changes will be lost.
                 </p>
                 <button
                   onClick={() => signOut({ callbackUrl: "/" })}

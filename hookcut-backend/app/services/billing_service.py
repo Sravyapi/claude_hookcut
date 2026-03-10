@@ -14,7 +14,6 @@ from app.exceptions import UserNotFoundError, InvalidStateError, PaymentProcessi
 from app.models.user import User, CreditBalance
 from app.schemas.billing import PlanInfo, PlansResponse
 from app.services.analytics import track as track_event, identify as identify_user
-from app.services.credit_manager import CreditManager
 from app.services.payment_service import PaymentService
 
 logger = logging.getLogger(__name__)
@@ -24,8 +23,7 @@ def _ensure_payments_enabled() -> None:
     """Guard: raise InvalidStateError if V0 mode is active (payments disabled)."""
     if get_settings().FEATURE_V0_MODE:
         raise InvalidStateError(
-            "Payment processing not available in V0 mode. "
-            "Use /api/billing/v0-grant to add test credits."
+            "Payment processing not available in V0 mode."
         )
 
 
@@ -169,39 +167,6 @@ class BillingService:
             "is_new": is_new,
             "plan_tier": user.plan_tier if user else "free",
             "role": user.role if user else "user",
-        }
-
-    @staticmethod
-    def v0_grant_credits(db: Session, user_id: str, paid_minutes: float, payg_minutes: float) -> dict:
-        """
-        V0 only: Grant test credits without payment.
-
-        Raises: InvalidStateError (not V0 mode)
-        """
-        if not get_settings().FEATURE_V0_MODE:
-            raise InvalidStateError("Only available in V0 mode")
-
-        credit_mgr = CreditManager(db)
-
-        if paid_minutes > 0:
-            credit_mgr.add_paid_minutes(
-                user_id, paid_minutes, provider="v0_test", provider_ref="v0_grant"
-            )
-        if payg_minutes > 0:
-            credit_mgr.add_payg_minutes(
-                user_id, payg_minutes,
-                amount=0, currency="USD", provider="v0_test", provider_ref="v0_grant",
-            )
-
-        balance = credit_mgr.get_balance(user_id)
-        return {
-            "granted": {"paid_minutes": paid_minutes, "payg_minutes": payg_minutes},
-            "balance": {
-                "paid": balance.paid_minutes_remaining,
-                "payg": balance.payg_minutes_remaining,
-                "free": balance.free_minutes_remaining,
-                "total": balance.total_available,
-            },
         }
 
     @staticmethod

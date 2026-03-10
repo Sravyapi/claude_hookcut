@@ -1034,10 +1034,12 @@ class AdminService:
         env_var = env_var_map.get(provider_name)
 
         if env_var:
-            env_path = os.path.join(
-                os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
-                ".env",
-            )
+            from pathlib import Path
+            env_path = (Path(__file__).parent.parent.parent / ".env").resolve()
+            project_root = Path(__file__).parent.parent.parent.resolve()
+            if not str(env_path).startswith(str(project_root)):
+                raise ValueError("Invalid .env path")
+            env_path = str(env_path)
             try:
                 if os.path.exists(env_path):
                     with open(env_path, "r") as f:

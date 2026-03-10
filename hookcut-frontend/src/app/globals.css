@@ -46,6 +46,14 @@
     --color-border-str:    rgba(255, 255, 255, 0.14);
     --radius-card:         1rem;
     --radius-sm:           0.5rem;
+
+    /* Shadows */
+    --shadow-card:   0 1px 3px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2);
+    --shadow-modal:  0 8px 32px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3);
+    --shadow-glow:   0 0 24px var(--color-primary-glow);
+
+    /* Transitions */
+    --transition-default: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -505,4 +513,76 @@ body::before {
 }
 .ticker-track:hover {
   animation-play-state: paused;
+}
+
+/* ─── Typography Scale ─── */
+.text-hero {
+  font-size: clamp(36px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+.text-h1 {
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.text-h2 {
+  font-size: clamp(22px, 3vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+.text-h3 {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.text-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ─── Float Animations (login page orbs) ─── */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(15px, -20px) scale(1.02); }
+  66% { transform: translate(-10px, 10px) scale(0.98); }
+}
+@keyframes float-slower {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(-20px, 15px) scale(1.01); }
+  50% { transform: translate(10px, -25px) scale(0.99); }
+  75% { transform: translate(15px, 10px) scale(1.02); }
+}
+.float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+.float-slower {
+  animation: float-slower 12s ease-in-out infinite;
+}
+
+/* ─── GPU acceleration for marquee ─── */
+.mk-ticker {
+  will-change: transform;
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  .float-slow,
+  .float-slower {
+    animation: none;
+  }
+  .mk-ticker,
+  .marquee,
+  .ticker-track {
+    animation: none;
+  }
+  .shimmer,
+  .shimmer-badge {
+    animation: none;
+  }
+  .hook-pulse {
+    animation: none;
+  }
 }

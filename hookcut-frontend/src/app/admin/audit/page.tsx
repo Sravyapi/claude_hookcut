@@ -10,6 +10,7 @@ import {
   ChevronUp,
   Download,
   Filter,
+  Shield,
 } from "lucide-react";
 import { api } from "@/lib/api";
 import type { AuditLog, AuditLogList } from "@/lib/types";
@@ -260,8 +261,11 @@ export default function AuditLogPage() {
         >
           <div>
             <h1 className="text-2xl font-bold text-white flex items-center gap-3">
-              <FileText className="w-6 h-6 text-violet-400" />
+              <FileText className="w-6 h-6 text-[--color-primary]" />
               Audit Logs
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-primary]/10 text-[--color-primary] border border-[--color-primary]/20 font-semibold uppercase tracking-wider">
+                <Shield className="w-3 h-3 inline-block mr-1 -mt-px" />Admin
+              </span>
             </h1>
             <p className="text-white/40 text-sm mt-0.5">
               Track all administrative actions across the system
@@ -311,13 +315,13 @@ export default function AuditLogPage() {
 
         {/* Table */}
         <motion.div
-          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden"
+          className="glass-card rounded-2xl overflow-hidden"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
         >
           {/* Table header (desktop) */}
-          <div className="hidden md:grid grid-cols-[1.5fr_1fr_0.8fr_2fr_1fr_auto] gap-4 items-center px-5 py-3 border-b border-white/[0.06] bg-white/[0.02]">
+          <div className="hidden md:grid grid-cols-[1.5fr_1fr_0.8fr_2fr_1fr_auto] gap-4 items-center px-5 py-3 border-b border-white/[0.05] bg-white/[0.02]">
             <span className="text-[10px] font-medium text-white/30 uppercase tracking-wider">
               Admin Email
             </span>

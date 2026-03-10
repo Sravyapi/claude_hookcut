@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "Best Choppity Alternative for Hook Analysis | HookCut",
+  title: "HookCut vs Choppity — Smarter Hook Identification | HookCut",
   description:
-    "Looking for a Choppity alternative with hook scoring? HookCut finds the 5 moments in any YouTube video most likely to go viral — scored 0–100 with explanations, not just timestamps.",
+    "Choppity chops clips. HookCut scores hooks 0-100, classifies 18 types, and explains why each works. Smarter hook finding.",
   openGraph: {
-    title: "Best Choppity Alternative for Hook Analysis | HookCut",
+    title: "HookCut vs Choppity — Smarter Hook Identification | HookCut",
     description:
-      "HookCut finds the 5 moments in any YouTube video most likely to go viral — scored 0–100 with explanations, not just timestamps.",
+      "Choppity chops clips. HookCut scores hooks 0-100, classifies 18 types, and explains why each works. Smarter hook finding.",
     type: "website",
     url: "https://hookcut.ai/choppity-alternative",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Choppity Alternative for Hook Analysis | HookCut",
+    title: "HookCut vs Choppity — Smarter Hook Identification | HookCut",
     description:
-      "HookCut finds the 5 moments in any YouTube video most likely to go viral — scored 0–100 with explanations.",
+      "Choppity chops clips. HookCut scores hooks 0-100, classifies 18 types, and explains why each works. Smarter hook finding.",
   },
   alternates: { canonical: "https://hookcut.ai/choppity-alternative" },
 };

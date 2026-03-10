@@ -1,11 +1,12 @@
 "use client";
 
-import { memo, useCallback } from "react";
+import { memo, useCallback, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Hook } from "@/lib/types";
 import { HOOK_TYPE_COLORS, FUNNEL_ROLE_LABELS } from "@/lib/constants";
 import { getScoreColor } from "@/lib/utils";
 import { ScorePopover } from "./score-popover";
+import { parseTimestamp } from "./trim-slider";
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -34,8 +35,9 @@ function ScoreGauge({ score }: { score: number }) {
   const targetOffset = circumference - (score / 10) * circumference;
 
   return (
-    <div className="flex flex-col items-center gap-1" aria-hidden="true">
-      <div className="relative w-[88px] h-[88px]">
+    <div className="flex flex-col items-center gap-1">
+      <span className="sr-only">Attention score: {score} out of 10</span>
+      <div className="relative w-[88px] h-[88px]" aria-hidden="true">
         <svg viewBox="0 0 80 80" className="w-full h-full -rotate-90">
           <circle cx="40" cy="40" r={radius} fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="5" />
           <motion.circle
@@ -60,7 +62,7 @@ function ScoreGauge({ score }: { score: number }) {
           <span className="text-[9px] text-white/30 uppercase tracking-wider mt-0.5">score</span>
         </div>
       </div>
-      <span className="text-[11px] font-semibold" style={{ color: hex }}>
+      <span className="text-xs font-semibold" style={{ color: hex }}>
         {getGradeLabel(score)}
       </span>
     </div>
@@ -86,11 +88,11 @@ function InsightRow({ label, text, labelColor, icon, accent = false }: InsightRo
           : "bg-[--color-border-sub] border-[--color-border-sub]"
       }`}
     >
-      <div className={`flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider mb-0.5 ${labelColor}`}>
+      <div className={`flex items-center gap-1 text-xs font-semibold uppercase tracking-wider mb-0.5 ${labelColor}`}>
         <span aria-hidden="true">{icon}</span>
         {label}
       </div>
-      <p className="text-[11px] text-white/50 leading-relaxed">{text}</p>
+      <p className="text-xs text-white/50 leading-relaxed">{text}</p>
     </div>
   );
 }
@@ -129,6 +131,7 @@ export const HookCard = memo(function HookCard({
   onToggle,
   disabled,
 }: HookCardProps) {
+  const [showFullText, setShowFullText] = useState(false);
   const typeColor = HOOK_TYPE_COLORS[hook.hook_type] ?? "bg-white/10 text-white/70 border-white/20";
   const funnelLabel = FUNNEL_ROLE_LABELS[hook.funnel_role] ?? hook.funnel_role;
 
@@ -188,31 +191,43 @@ export const HookCard = memo(function HookCard({
         {/* ── Hook type + funnel role ── */}
         <div className="flex flex-col items-center gap-1.5 mb-4">
           <div className="flex items-center gap-2 flex-wrap justify-center">
-            <span className={`text-[11px] px-2.5 py-0.5 rounded-full border font-semibold tracking-wide ${typeColor}`}>
+            <span className={`text-xs px-2.5 py-0.5 rounded-full border font-semibold tracking-wide ${typeColor}`}>
               {hook.hook_type.toUpperCase()}
             </span>
             {hook.is_composite && (
-              <span className="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400/80 border border-amber-500/15">
+              <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400/80 border border-amber-500/15">
                 Composite
               </span>
             )}
           </div>
-          <span className="text-[11px] text-[--color-muted] text-center">
+          <span className="text-xs text-[--color-muted] text-center">
             {hook.funnel_role.replace(/_/g, " ").toUpperCase()} · {funnelLabel}
           </span>
         </div>
 
         {/* ── Hook text ── */}
-        <p className="text-[15px] text-white/80 leading-relaxed line-clamp-3 mb-3">
+        <p className={`text-[15px] text-white/80 leading-relaxed mb-1 ${showFullText ? "" : "line-clamp-3"}`}>
           {hook.hook_text}
         </p>
+        {hook.hook_text.length > 120 && (
+          <button
+            onClick={(e) => { e.stopPropagation(); setShowFullText((v) => !v); }}
+            className="text-xs text-[--color-primary]/70 hover:text-[--color-primary] transition-colors mb-3"
+          >
+            {showFullText ? "Show less" : "Show more"}
+          </button>
+        )}
+        {hook.hook_text.length <= 120 && <div className="mb-3" />}
 
         {/* ── Timestamp ── */}
-        <div className="flex items-center justify-center gap-1.5 text-[12px] text-[--color-muted] font-mono mb-4">
+        <div className="flex items-center justify-center gap-1.5 text-xs text-[--color-muted] font-mono mb-4">
           <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span className="tabular-nums">{hook.start_time} → {hook.end_time}</span>
+          <span className="tabular-nums">
+            {hook.start_time} → {hook.end_time}{" "}
+            ({Math.round(parseTimestamp(hook.end_time) - parseTimestamp(hook.start_time))}s)
+          </span>
         </div>
 
         {/* ── Divider ── */}

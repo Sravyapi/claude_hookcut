@@ -40,7 +40,7 @@ export default function RuleEditor({
   const [confirmDelete, setConfirmDelete] = useState(false);
 
   return (
-    <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+    <div className="glass-card rounded-2xl p-6">
       <div className="flex items-center justify-between mb-5">
         <h2 className="text-sm font-semibold text-white/70 flex items-center gap-2">
           <BookOpen className="w-4 h-4 text-violet-400" />
@@ -79,7 +79,7 @@ export default function RuleEditor({
             value={editContent}
             onChange={(e) => onEditContent(e.target.value)}
             rows={10}
-            className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.06] text-sm text-white/80 placeholder-white/20 outline-none focus:border-violet-500/40 focus:ring-1 focus:ring-violet-500/20 transition-all font-mono min-h-[200px] resize-y"
+            className="w-full px-4 py-3 rounded-xl bg-[--color-surface-3] border border-white/[0.06] text-sm text-white/80 placeholder-white/20 outline-none focus:border-[--color-primary]/40 focus:ring-1 focus:ring-[--color-primary]/20 transition-all font-mono min-h-[200px] resize-y"
           />
         </div>
 

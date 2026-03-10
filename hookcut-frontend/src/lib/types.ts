@@ -92,6 +92,9 @@ export interface Short {
   download_url_expires_at: string | null;
   thumbnail_url: string | null;
   error_message: string | null;
+  source_type?: "ai" | "manual";
+  aspect_ratio?: "9:16" | "1:1" | "4:5";
+  captions_failed?: boolean;
 }
 
 export interface DownloadResponse {
@@ -107,6 +110,8 @@ export interface CreditBalance {
   payg_minutes_remaining: number;
   total_available: number;
   free_topups_remaining: number;
+  manual_clip_minutes_remaining: number;
+  manual_clip_minutes_total: number;
 }
 
 export type CaptionStyle = "clean" | "bold" | "neon" | "minimal";
@@ -273,3 +278,45 @@ export interface NarmInsight {
   time_range_days: number;
   created_at: string;
 }
+
+// ─── YouTube Player Types ───
+
+export interface YTPlayerInstance {
+  playVideo(): void;
+  pauseVideo(): void;
+  seekTo(seconds: number, allowSeekAhead?: boolean): void;
+  getCurrentTime(): number;
+  getDuration(): number;
+  destroy(): void;
+}
+
+export interface YTPlayerEvent {
+  target: YTPlayerInstance;
+  data: number;
+}
+
+// ─── Manual Clipper Types ───
+
+export type ClipSegment = {
+  start_time: number;
+  end_time: number;
+};
+
+export type GenerateClipsRequest = {
+  youtube_url: string;
+  clips: ClipSegment[];
+  caption_style: CaptionStyle;
+  captions_enabled: boolean;
+  audio_normalization: boolean;
+  aspect_ratio: "9:16" | "1:1" | "4:5";
+  ai_session_id?: string;
+};
+
+export type GenerateClipsResponse = {
+  session_id: string;
+  short_ids: string[];
+  task_ids: string[];
+  total_duration_seconds: number;
+  minutes_deducted: number;
+  is_free_reclip: boolean;
+};

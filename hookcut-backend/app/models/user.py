@@ -14,7 +14,7 @@ class User(Base):
     name: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
     hashed_password: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
     currency: Mapped[str] = mapped_column(String(3), default="USD")  # "INR" or "USD"
-    plan_tier: Mapped[str] = mapped_column(String(20), default="free")  # "free", "lite", "pro"
+    plan_tier: Mapped[str] = mapped_column(String(20), default="free")  # "free", "lite", "pro", "pro_max"
 
     role: Mapped[str] = mapped_column(String(20), default="user")  # "user" or "admin"
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
@@ -41,6 +41,8 @@ class CreditBalance(Base):
     free_minutes_total: Mapped[float] = mapped_column(Float, default=120.0)
     payg_minutes_remaining: Mapped[float] = mapped_column(Float, default=0.0)
     free_topups_remaining: Mapped[int] = mapped_column(Integer, default=3)  # free top-ups allowed per account
+    manual_clip_minutes_remaining: Mapped[float] = mapped_column(Float, default=0.0)
+    manual_clip_minutes_total: Mapped[float] = mapped_column(Float, default=0.0)
     last_free_reset: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     user: Mapped["User"] = relationship(back_populates="credit_balance")

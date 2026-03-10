@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   LayoutDashboard,
   Users,
@@ -15,6 +15,8 @@ import {
   Shield,
   ChevronLeft,
   ChevronRight,
+  Menu,
+  X,
 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -37,21 +39,29 @@ export default function AdminLayout({
   const router = useRouter();
   const pathname = usePathname();
   const [collapsed, setCollapsed] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const isAdmin = session?.user?.isAdmin;
 
   useEffect(() => {
     if (authStatus === "unauthenticated") {
       router.push("/");
-    } else if (authStatus === "authenticated" && !session?.user?.isAdmin) {
+    } else if (authStatus === "authenticated" && !isAdmin) {
       router.push("/");
     }
-  }, [authStatus, session, router]);
+  }, [authStatus, isAdmin, router]);
+
+  /* Close mobile menu on route change */
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
 
   /* ─── Loading state ─── */
   if (authStatus === "loading") {
     return (
       <main className="pt-24 pb-12">
         <div className="max-w-7xl mx-auto px-6 flex gap-6">
-          <Skeleton className="w-64 h-[calc(100vh-8rem)] shrink-0" />
+          <Skeleton className="w-64 h-[calc(100vh-8rem)] shrink-0 hidden lg:block" />
           <Skeleton className="flex-1 h-[calc(100vh-8rem)]" />
         </div>
       </main>
@@ -69,22 +79,82 @@ export default function AdminLayout({
     return pathname.startsWith(href);
   }
 
+  /* ─── Shared nav link renderer ─── */
+  function renderNavLink(item: (typeof NAV_ITEMS)[number], mobile?: boolean) {
+    const Icon = item.icon;
+    const active = isActive(item.href);
+
+    return (
+      <Link
+        key={item.href}
+        href={item.href}
+        className={`relative flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 group ${
+          active
+            ? "text-white bg-[--color-primary]/10 border-l-2 border-[--color-primary]"
+            : "text-white/45 hover:text-white/75 hover:bg-white/[0.04] border-l-2 border-transparent"
+        } ${mobile ? "" : ""}`}
+        title={!mobile && collapsed ? item.label : undefined}
+      >
+        <Icon
+          className={`w-4 h-4 shrink-0 transition-colors ${
+            active
+              ? "text-[--color-primary]"
+              : "text-white/35 group-hover:text-white/55"
+          }`}
+        />
+        {(mobile || !collapsed) && <span className="truncate">{item.label}</span>}
+      </Link>
+    );
+  }
+
   return (
     <main className="pt-20 pb-12 min-h-screen">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 flex gap-6">
-        {/* ─── Sidebar ─── */}
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:flex gap-6">
+        {/* ─── Mobile top bar ─── */}
+        <div className="lg:hidden flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2">
+            <Shield className="w-4 h-4 text-[--color-primary] shrink-0" />
+            <span className="text-sm font-semibold text-white/80">Admin Panel</span>
+          </div>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="p-2 rounded-xl text-white/50 hover:text-white/70 hover:bg-white/[0.04] transition-colors"
+            aria-label={mobileOpen ? "Close admin menu" : "Open admin menu"}
+          >
+            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
+
+        {/* ─── Mobile drawer ─── */}
+        <AnimatePresence>
+          {mobileOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.2 }}
+              className="lg:hidden overflow-hidden mb-4"
+            >
+              <nav className="glass-strong rounded-2xl p-3 flex flex-col gap-0.5">
+                {NAV_ITEMS.map((item) => renderNavLink(item, true))}
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* ─── Desktop Sidebar ─── */}
         <motion.aside
           initial={{ opacity: 0, x: -16 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}
-          className={`shrink-0 sticky top-20 self-start h-[calc(100vh-6rem)] transition-all duration-300 ${
+          className={`hidden lg:block shrink-0 sticky top-20 self-start h-[calc(100vh-6rem)] transition-all duration-300 ${
             collapsed ? "w-16" : "w-60"
           }`}
         >
-          <div className="h-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-3 flex flex-col">
+          <div className="h-full glass-strong rounded-2xl p-3 flex flex-col">
             {/* Admin badge */}
             <div className="flex items-center gap-2 px-3 py-2.5 mb-2">
-              <Shield className="w-4.5 h-4.5 text-violet-400 shrink-0" />
+              <Shield className="w-4.5 h-4.5 text-[--color-primary] shrink-0" />
               {!collapsed && (
                 <span className="text-sm font-semibold text-white/80 truncate">
                   Admin Panel
@@ -97,43 +167,7 @@ export default function AdminLayout({
 
             {/* Nav links */}
             <nav className="flex-1 flex flex-col gap-0.5">
-              {NAV_ITEMS.map((item) => {
-                const Icon = item.icon;
-                const active = isActive(item.href);
-
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`relative flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 group ${
-                      active
-                        ? "text-white bg-violet-500/15 border border-violet-500/25"
-                        : "text-white/45 hover:text-white/75 hover:bg-white/[0.04] border border-transparent"
-                    }`}
-                    title={collapsed ? item.label : undefined}
-                  >
-                    <Icon
-                      className={`w-4 h-4 shrink-0 transition-colors ${
-                        active
-                          ? "text-violet-400"
-                          : "text-white/35 group-hover:text-white/55"
-                      }`}
-                    />
-                    {!collapsed && <span className="truncate">{item.label}</span>}
-                    {active && (
-                      <motion.div
-                        layoutId="admin-nav-active"
-                        className="absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 rounded-full bg-violet-500"
-                        transition={{
-                          type: "spring",
-                          stiffness: 300,
-                          damping: 25,
-                        }}
-                      />
-                    )}
-                  </Link>
-                );
-              })}
+              {NAV_ITEMS.map((item) => renderNavLink(item))}
             </nav>
 
             {/* Collapse toggle */}

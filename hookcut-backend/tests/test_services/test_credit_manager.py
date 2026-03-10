@@ -100,7 +100,7 @@ class TestDeductionOrder:
         assert result.payg_used == 3.0
         assert result.free_used == 2.0
         assert result.is_watermarked is True  # free minutes used
-        assert result.credits_source == "mixed"
+        assert result.credits_source == "paid"  # Returns highest-priority source used
 
     def test_deduct_insufficient_fails(self, db):
         make_user(db, user_id="do5")
@@ -220,9 +220,9 @@ class TestDeductionResult:
         r = DeductionResult(success=True, paid_used=0, payg_used=0, free_used=10, is_watermarked=True)
         assert r.credits_source == "free"
 
-    def test_credits_source_mixed(self):
+    def test_credits_source_primary(self):
         r = DeductionResult(success=True, paid_used=5, payg_used=0, free_used=5, is_watermarked=True)
-        assert r.credits_source == "mixed"
+        assert r.credits_source == "paid"  # Returns highest-priority source
 
     def test_total_used(self):
         r = DeductionResult(success=True, paid_used=3, payg_used=2, free_used=1, is_watermarked=True)

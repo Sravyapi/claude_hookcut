@@ -45,7 +45,7 @@ export const ShortsStep = memo(function ShortsStep({ shortIds, onReset }: Shorts
         </p>
 
         {/* Elapsed clock */}
-        <div className="inline-flex items-center gap-1.5 mt-3 text-[11px] text-white/25 font-mono">
+        <div className="inline-flex items-center gap-1.5 mt-3 text-xs text-white/25 font-mono">
           <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>

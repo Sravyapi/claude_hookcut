@@ -32,6 +32,9 @@ class UserService:
             free_minutes_total=balance.free_minutes_total,
             payg_minutes_remaining=balance.payg_minutes_remaining,
             total_available=balance.total_available,
+            free_topups_remaining=balance.free_topups_remaining,
+            manual_clip_minutes_remaining=balance.manual_clip_minutes_remaining,
+            manual_clip_minutes_total=balance.manual_clip_minutes_total,
         )
 
     @staticmethod

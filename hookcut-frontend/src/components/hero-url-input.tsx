@@ -74,7 +74,7 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
   return (
     <div className="w-full">
       <div
-        className={`flex items-center gap-2 border rounded-xl px-4 py-1 transition-all duration-300 shadow-sm ${borderBase}`}
+        className={`flex items-center gap-2 border rounded-xl px-4 py-1 transition-all duration-300 shadow-sm min-h-[52px] ${borderBase}`}
       >
         <svg
           className="w-5 h-5 text-red-500 shrink-0"
@@ -90,13 +90,13 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
           onChange={handleUrlChange}
           onKeyDown={handleKeyDown}
           placeholder="Paste a YouTube URL..."
-          className={`flex-1 bg-transparent outline-none py-3.5 text-base ${textColor}`}
+          className={`flex-1 bg-transparent outline-none py-3.5 text-[16px] ${textColor}`}
           aria-label="YouTube URL"
         />
         <button
           onClick={handleValidate}
           disabled={validating || !url.trim()}
-          className="shrink-0 px-5 py-2.5 rounded-lg bg-[#E84A2F] text-white text-sm font-semibold hover:bg-[#D13F25] disabled:opacity-40 transition-colors flex items-center gap-2"
+          className="shrink-0 px-5 py-2.5 rounded-lg btn-primary text-sm font-semibold disabled:opacity-40 flex items-center gap-2"
         >
           {validating && (
             <svg
@@ -159,7 +159,7 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
               {formatDuration(videoMeta.duration_seconds)} ·{" "}
               ~{(videoMeta.duration_seconds / 60).toFixed(1)} credits
             </p>
-            <div className="flex flex-wrap gap-1.5 mb-4">
+            <div className="flex flex-wrap gap-1.5 mb-4 overflow-x-auto no-scrollbar">
               {NICHES.map((n) => (
                 <button
                   key={n}

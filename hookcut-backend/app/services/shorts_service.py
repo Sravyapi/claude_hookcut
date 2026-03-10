@@ -85,11 +85,19 @@ class ShortsService:
     @staticmethod
     def get_short_response(db: Session, short: Short) -> ShortResponse:
         """Build a ShortResponse from an already-fetched Short object."""
+        storage = get_storage_service()
+
         thumbnail_url = None
         if short.thumbnail_file_key:
-            storage = get_storage_service()
             thumbnail_url = storage.get_download_url(
                 short.thumbnail_file_key, expires_in=DOWNLOAD_URL_EXPIRES_SECONDS
+            )
+
+        # Generate a presigned URL when ready but no URL set yet
+        download_url = short.download_url
+        if short.status == "ready" and short.video_file_key and not download_url:
+            download_url = storage.get_download_url(
+                short.video_file_key, expires_in=DOWNLOAD_URL_EXPIRES_SECONDS
             )
 
         return ShortResponse(
@@ -101,7 +109,7 @@ class ShortsService:
             cleaned_captions=short.cleaned_captions,
             duration_seconds=short.duration_seconds,
             file_size_bytes=short.file_size_bytes,
-            download_url=short.download_url,
+            download_url=download_url,
             download_url_expires_at=short.download_url_expires_at,
             thumbnail_url=thumbnail_url,
             error_message=short.error_message,

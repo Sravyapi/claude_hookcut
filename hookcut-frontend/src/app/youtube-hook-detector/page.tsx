@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "YouTube Hook Detector — Find Viral Moments in Any Video | HookCut",
+  title: "Free YouTube Hook Detector — Find Viral Moments | HookCut",
   description:
     "HookCut is the #1 YouTube hook detector. Paste any video URL and detect the top 5 hook moments — each scored 0–100 and explained. Download as a 9:16 Short in under 2 minutes.",
   openGraph: {
-    title: "YouTube Hook Detector — Find Viral Moments in Any Video | HookCut",
+    title: "Free YouTube Hook Detector — Find Viral Moments | HookCut",
     description:
-      "HookCut detects the top 5 hook moments in any YouTube video — scored 0–100 with explanations. Download as Shorts in under 2 minutes.",
+      "HookCut detects the top 5 hook moments in any YouTube video — scored 0-100 with explanations. Download as Shorts in under 2 minutes.",
     type: "website",
     url: "https://hookcut.ai/youtube-hook-detector",
   },
   twitter: {
     card: "summary_large_image",
-    title: "YouTube Hook Detector — Find Viral Moments in Any Video | HookCut",
+    title: "Free YouTube Hook Detector — Find Viral Moments | HookCut",
     description:
-      "HookCut detects the top 5 hook moments in any YouTube video — scored 0–100 with explanations. Download as Shorts in under 2 minutes.",
+      "HookCut detects the top 5 hook moments in any YouTube video — scored 0-100 with explanations. Download as Shorts in under 2 minutes.",
   },
   alternates: { canonical: "https://hookcut.ai/youtube-hook-detector" },
 };
@@ -119,5 +119,18 @@ const data: CompetitorData = {
 };
 
 export default function YouTubeHookDetectorPage() {
-  return <AlternativePage data={data} />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "HookCut",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+        "description": "AI-powered YouTube hook detection and Shorts generation"
+      }) }} />
+      <AlternativePage data={data} />
+    </>
+  );
 }

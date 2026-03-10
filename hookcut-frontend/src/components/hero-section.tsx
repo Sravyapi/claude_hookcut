@@ -1,14 +1,23 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { motion } from "framer-motion";
 import { Play, Heart, MessageCircle, Share2 } from "lucide-react";
 import { youtubeThumbUrl } from "@/lib/utils";
 import { HeroUrlInput } from "@/components/hero-url-input";
 
+// ── Timing constants ───────────────────────────────────────────────────────────
+const WAVEFORM_BARS = 32;
+const HOOK_PIN_POSITIONS = [6, 22, 35, 57, 76] as const;
+const DEMO_IDLE_MS = 2000;
+const DEMO_LOADING_MS = 2800;
+const DEMO_RESULTS_MS = 4000;
+const DEMO_SHORTS_MS = 5000;
+const DEMO_FADEOUT_MS = 900;
+
 // ── Seeded waveform (no SSR hydration mismatch) ────────────────────────────────
 function buildWaveform(seed: number) {
-  return Array.from({ length: 32 }, (_, i) => 20 + ((i * seed + 13) % 65));
+  return Array.from({ length: WAVEFORM_BARS }, (_, i) => 20 + ((i * seed + 13) % 65));
 }
 
 // ── Demo video data — 3 rotating videos ─────────────────────────────────────
@@ -270,7 +279,7 @@ function MockThumbnail({ video }: { video: DemoVideo }) {
         </div>
 
         {/* Hook moment pins */}
-        {([6, 22, 35, 57, 76] as const).map((left, i) => (
+        {HOOK_PIN_POSITIONS.map((left, i) => (
           <div
             key={i}
             className="absolute bottom-3 w-[2px] rounded-full"
@@ -342,7 +351,7 @@ function WaveformScanner({ video }: { video: DemoVideo }) {
       className="w-full rounded-2xl border border-white/[0.06] bg-[#0D0D0D] px-5 py-4"
     >
       <div className="flex items-center justify-between mb-2.5">
-        <p className="text-[10px] text-white/22 font-mono uppercase tracking-widest">
+        <p className="text-[10px] text-white/40 font-mono uppercase tracking-widest">
           Scanning transcript…
         </p>
         <motion.span
@@ -386,7 +395,7 @@ function WaveformScanner({ video }: { video: DemoVideo }) {
         ).map(([label, delay]) => (
           <motion.span
             key={label}
-            className="text-[9px] font-mono text-white/18 flex items-center gap-1"
+            className="text-[9px] font-mono text-white/40 flex items-center gap-1"
             animate={{ opacity: [0.25, 0.65, 0.25] }}
             transition={{ duration: 2.2, repeat: Infinity, delay }}
           >
@@ -432,7 +441,7 @@ function DemoInputBar({
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
       </svg>
 
-      <span className={`flex-1 text-sm font-mono truncate transition-colors duration-300 ${showUrl ? "text-white/50" : "text-white/18"}`}>
+      <span className={`flex-1 text-sm font-mono truncate transition-colors duration-300 ${showUrl ? "text-white/50" : "text-white/40"}`}>
         {showUrl ? video.url : "Paste a YouTube URL to analyze…"}
       </span>
 
@@ -530,7 +539,7 @@ function DemoHookCard({
               <span className="text-[8px] font-bold uppercase tracking-wider pt-px shrink-0 w-16" style={{ color: labelColor }}>
                 {label}
               </span>
-              <p className="text-[10px] text-white/32 leading-relaxed">{text}</p>
+              <p className="text-[10px] text-white/45 leading-relaxed">{text}</p>
             </div>
           ))}
         </div>
@@ -585,7 +594,7 @@ function MockShortThumbnail({ index, video }: { index: number; video: DemoVideo 
 
 // ── YouTube Short card (shorts phase) ─────────────────────────────────────────
 
-function DemoShortCard({
+const DemoShortCard = React.memo(function DemoShortCard({
   hook,
   video,
   index,
@@ -681,7 +690,7 @@ function DemoShortCard({
       </div>
     </motion.div>
   );
-}
+});
 
 // ── Main HeroSection ───────────────────────────────────────────────────────────
 
@@ -708,24 +717,24 @@ export function HeroSection() {
       while (mountedRef.current) {
         setDemoIndex(idx);
         setPhase("idle");
-        await wait(2000);
+        await wait(DEMO_IDLE_MS);
         if (!mountedRef.current) return;
 
         setPhase("loading");
-        await wait(2800);
+        await wait(DEMO_LOADING_MS);
         if (!mountedRef.current) return;
 
         setPhase("results");
-        await wait(4000);
+        await wait(DEMO_RESULTS_MS);
         if (!mountedRef.current) return;
 
         setPhase("shorts");
-        await wait(5000);
+        await wait(DEMO_SHORTS_MS);
         if (!mountedRef.current) return;
 
         // Fade out everything before switching to next video
         setPhase("fadeout");
-        await wait(900);
+        await wait(DEMO_FADEOUT_MS);
         if (!mountedRef.current) return;
 
         idx = (idx + 1) % DEMO_VIDEOS.length;
@@ -777,7 +786,7 @@ export function HeroSection() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#E84A2F] animate-pulse" aria-hidden="true" />
             Turn long-form into viral Shorts
           </div>
-          <h1 className="text-[clamp(44px,7.5vw,100px)] font-extrabold text-white leading-[1.0] tracking-[-0.04em] mb-5 font-[family-name:--font-display]">
+          <h1 className="text-hero text-[clamp(44px,7.5vw,100px)] font-extrabold text-white leading-[1.0] tracking-[-0.04em] mb-5 font-[family-name:--font-display]">
             Find the hook.
             <br />
             <span className="text-[#E84A2F]">Stop the scroll.</span>
@@ -839,7 +848,7 @@ export function HeroSection() {
           >
             <div className="overflow-hidden">
               <div className="flex items-center justify-between px-0.5 mb-3">
-                <p className="text-[10px] text-white/18 font-mono uppercase tracking-widest">
+                <p className="text-[10px] text-white/40 font-mono uppercase tracking-widest">
                   5 hook moments · {video.channel}
                 </p>
                 <div className="flex items-center gap-1.5">
@@ -908,7 +917,7 @@ export function HeroSection() {
                 >
                   Try with your video →
                 </button>
-                <p className="text-white/18 text-xs mt-2.5">120 minutes free · No credit card</p>
+                <p className="text-white/40 text-xs mt-2.5">120 minutes free · No credit card</p>
               </div>
             </div>
           </div>

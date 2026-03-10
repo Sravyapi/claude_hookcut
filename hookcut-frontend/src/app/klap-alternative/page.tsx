@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "Best Klap Alternative for YouTube Hook Analysis | HookCut",
+  title: "HookCut vs Klap — AI Hook Detection With Creator Education | HookCut",
   description:
-    "Searching for a Klap alternative that scores hooks instead of just clipping them? HookCut identifies the top 5 viral moments in any YouTube video — scored, explained, and ready to post.",
+    "HookCut scores hooks 0-100 with explanations. Klap clips without scoring. Get creator education with every hook. Try free.",
   openGraph: {
-    title: "Best Klap Alternative for YouTube Hook Analysis | HookCut",
+    title: "HookCut vs Klap — AI Hook Detection With Creator Education | HookCut",
     description:
-      "HookCut identifies the top 5 viral moments in any YouTube video — scored, explained, and ready to post as Shorts.",
+      "HookCut scores hooks 0-100 with explanations. Klap clips without scoring. Get creator education with every hook. Try free.",
     type: "website",
     url: "https://hookcut.ai/klap-alternative",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Klap Alternative for YouTube Hook Analysis | HookCut",
+    title: "HookCut vs Klap — AI Hook Detection With Creator Education | HookCut",
     description:
-      "HookCut identifies the top 5 viral moments in any YouTube video — scored, explained, and ready to post as Shorts.",
+      "HookCut scores hooks 0-100 with explanations. Klap clips without scoring. Get creator education with every hook. Try free.",
   },
   alternates: { canonical: "https://hookcut.ai/klap-alternative" },
 };

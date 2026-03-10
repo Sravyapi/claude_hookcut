@@ -6,7 +6,7 @@ import shutil
 import tempfile
 import logging
 import time
-import http.cookiejar
+from http.cookiejar import MozillaCookieJar
 from dataclasses import dataclass
 from typing import Optional
 
@@ -15,6 +15,8 @@ import httpx
 from app.utils.ffmpeg_commands import _ensure_cookies_file, _COOKIES_PATH
 
 logger = logging.getLogger(__name__)
+
+WHISPER_MAX_FILE_SIZE_BYTES = 25 * 1024 * 1024
 
 
 @dataclass
@@ -69,8 +71,8 @@ def _get_healthy_instances(instances: list[str], cache: dict, api_path: str) -> 
             r = httpx.get(f"{inst}{api_path}", timeout=3.0, follow_redirects=True)
             if r.status_code < 500:
                 healthy.append(inst)
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning("Health check failed for %s: %s", inst, e)
 
     result = healthy if healthy else instances  # fail open
     cache.update({"healthy": result, "updated_at": now})
@@ -97,6 +99,11 @@ class TranscriptService:
         result = self._try_youtube_transcript_api(video_id, language)
         if result:
             logger.info(f"Transcript via youtube-transcript-api for {video_id}")
+            return result
+
+        result = self._try_innertube_android(video_id, language)
+        if result:
+            logger.info(f"Transcript via innertube ANDROID API for {video_id}")
             return result
 
         result = self._try_ytdlp_subtitles(video_id, language)
@@ -144,7 +151,7 @@ class TranscriptService:
             if os.path.exists(cookies_path):
                 import requests
                 session = requests.Session()
-                cj = http.cookiejar.MozillaCookieJar(cookies_path)
+                cj = MozillaCookieJar(cookies_path)
                 cj.load(ignore_discard=True, ignore_expires=True)
                 session.cookies = cj
                 kwargs["http_client"] = session
@@ -259,6 +266,144 @@ class TranscriptService:
         finally:
             shutil.rmtree(work_dir, ignore_errors=True)
 
+    def _try_innertube_android(
+        self, video_id: str, language: str
+    ) -> Optional[TranscriptResult]:
+        """Fetch transcript via YouTube innertube ANDROID player API.
+
+        The ANDROID client has different bot detection than WEB and often
+        works when other methods are blocked. Uses YouTube Data API key
+        if available for added legitimacy.
+        """
+        from app.config import get_settings
+        settings = get_settings()
+
+        try:
+            lang_code = self._get_lang_codes(language)[0]
+
+            # Build player API URL — append YouTube Data API key if available
+            player_url = "https://www.youtube.com/youtubei/v1/player"
+            if settings.YOUTUBE_API_KEY:
+                player_url += f"?key={settings.YOUTUBE_API_KEY}"
+
+            resp = httpx.post(
+                player_url,
+                headers={
+                    "Content-Type": "application/json",
+                    "User-Agent": "com.google.android.youtube/20.10.38 (Linux; U; Android 10; en_US)",
+                    "X-Goog-Api-Format-Version": "2",
+                },
+                json={
+                    "context": {
+                        "client": {
+                            "clientName": "ANDROID",
+                            "clientVersion": "20.10.38",
+                            "hl": "en",
+                        }
+                    },
+                    "videoId": video_id,
+                },
+                timeout=15,
+            )
+
+            if resp.status_code != 200:
+                logger.debug("Innertube ANDROID returned %d for %s", resp.status_code, video_id)
+                return None
+
+            data = resp.json()
+            if data.get("playabilityStatus", {}).get("status") != "OK":
+                logger.debug("Innertube ANDROID: video not OK for %s", video_id)
+                return None
+
+            tracks = (
+                data.get("captions", {})
+                .get("playerCaptionsTracklistRenderer", {})
+                .get("captionTracks", [])
+            )
+            if not tracks:
+                logger.debug("Innertube ANDROID: no caption tracks for %s", video_id)
+                return None
+
+            # Find best language match
+            track = None
+            lang_codes = self._get_lang_codes(language)
+            for code in lang_codes:
+                track = next(
+                    (t for t in tracks if t.get("languageCode", "").startswith(code)),
+                    None,
+                )
+                if track:
+                    break
+            if not track:
+                track = next(
+                    (t for t in tracks if t.get("languageCode", "").startswith("en")),
+                    tracks[0],
+                )
+
+            base_url = track.get("baseUrl", "")
+            if not base_url:
+                return None
+
+            # Fetch the actual captions in json3 format
+            # Try via CF Worker first (as a proxy) since local IP may be rate-limited,
+            # then fall back to direct fetch
+            caption_url = base_url.replace("&fmt=srv3", "") + "&fmt=json3"
+
+            cap_resp = None
+            if settings.CF_TRANSCRIPT_WORKER_URL and settings.CF_WORKER_API_KEY:
+                try:
+                    # Use CF Worker as a caption URL proxy
+                    proxy_resp = httpx.get(
+                        f"{settings.CF_TRANSCRIPT_WORKER_URL}/proxy-caption",
+                        params={"url": caption_url},
+                        headers={
+                            "Authorization": f"Bearer {settings.CF_WORKER_API_KEY}",
+                            "Origin": "https://api.hookcut.nyxpath.com",
+                        },
+                        timeout=15,
+                    )
+                    if proxy_resp.status_code == 200:
+                        cap_resp = proxy_resp
+                except Exception as e:
+                    logger.warning("CF Worker proxy request failed: %s", e)
+
+            if not cap_resp or cap_resp.status_code != 200:
+                cap_resp = httpx.get(
+                    caption_url,
+                    headers={"User-Agent": "com.google.android.youtube/20.10.38"},
+                    timeout=15,
+                )
+
+            if cap_resp.status_code != 200:
+                logger.debug("Innertube ANDROID: caption fetch returned %d for %s", cap_resp.status_code, video_id)
+                return None
+
+            cap_data = cap_resp.json()
+            lines = []
+            for event in cap_data.get("events", []):
+                start_ms = event.get("tStartMs", 0)
+                sec = start_ms / 1000
+                minutes = int(sec) // 60
+                secs = sec % 60
+                segs = event.get("segs", [])
+                text = "".join(s.get("utf8", "") for s in segs).strip()
+                if text and text != "\n":
+                    lines.append(f"[{minutes}:{secs:05.2f}] {text}")
+
+            text = "\n".join(lines)
+            if len(text.strip()) < 50:
+                logger.debug("Innertube ANDROID: transcript too short for %s", video_id)
+                return None
+
+            return TranscriptResult(
+                text=text,
+                provider="innertube_android",
+                language_detected=track.get("languageCode"),
+            )
+        except Exception as e:
+            logger.debug("Innertube ANDROID failed for %s: %s", video_id, e)
+            return None
+
     def _try_cf_worker(
         self, video_id: str, language: str
     ) -> Optional[TranscriptResult]:
@@ -271,7 +416,7 @@ class TranscriptService:
 
         try:
             lang_code = self._get_lang_codes(language)[0]
-            headers = {}
+            headers = {"Origin": "https://api.hookcut.nyxpath.com"}
             if settings.CF_WORKER_API_KEY:
                 headers["Authorization"] = f"Bearer {settings.CF_WORKER_API_KEY}"
 
@@ -501,7 +646,7 @@ class TranscriptService:
 
             # Whisper API: 25MB limit
             file_size = os.path.getsize(audio_path)
-            if file_size > 25 * 1024 * 1024:
+            if file_size > WHISPER_MAX_FILE_SIZE_BYTES:
                 logger.warning(f"Audio too large for Whisper: {file_size} bytes")
                 return None
 

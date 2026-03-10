@@ -152,8 +152,8 @@ def check_negative_balances():
                     level="error",
                     extras={"user_ids": user_ids},
                 )
-            except Exception:
-                pass
+            except Exception as e:
+                logger.warning("Failed to report negative balances to Sentry: %s", e)
         return {"checked": True, "negative_count": len(negatives)}
     finally:
         db.close()
@@ -208,8 +208,8 @@ def cleanup_stuck_sessions():
                     f"Recovered {total_recovered} stuck session(s)",
                     level="warning",
                 )
-            except Exception:
-                pass
+            except Exception as e:
+                logger.warning("Failed to report stuck sessions to Sentry: %s", e)
         return {"recovered": total_recovered}
     finally:
         db.close()

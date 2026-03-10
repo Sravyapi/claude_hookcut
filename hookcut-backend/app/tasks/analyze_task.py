@@ -15,6 +15,39 @@ from app.exceptions import HookEngineError
 logger = logging.getLogger(__name__)
 
 
+def _analyze_with_fallback(
+    engine_mode: str,
+    transcript: str,
+    niche: str,
+    language: str,
+):
+    """Run hook analysis with engine mode branching and fallback logic.
+
+    Returns the analysis result from the appropriate engine.
+    Raises HookEngineError if all engines fail.
+    """
+    if engine_mode == "deterministic_only":
+        return DeterministicEngine().analyze(
+            transcript=transcript, niche=niche, language=language,
+        )
+
+    if engine_mode == "llm_with_deterministic_fallback":
+        try:
+            return HookEngine().analyze(
+                transcript=transcript, niche=niche, language=language,
+            )
+        except HookEngineError:
+            logger.warning("LLM hook engine failed, falling back to deterministic")
+            return DeterministicEngine().analyze(
+                transcript=transcript, niche=niche, language=language,
+            )
+
+    # Default: llm_only
+    return HookEngine().analyze(
+        transcript=transcript, niche=niche, language=language,
+    )
+
+
 @celery_app.task(bind=True, max_retries=0, soft_time_limit=600, time_limit=660)
 def run_analysis(self, session_id: str):
     """
@@ -42,7 +75,7 @@ def run_analysis(self, session_id: str):
         )
 
         if not transcript_result:
-            # All 3 providers failed — refund credits
+            # All providers failed — refund credits
             CreditManager(db).refund_and_fail(
                 session_id,
                 error_msg="No transcript found. Try a video with captions enabled.",
@@ -60,58 +93,20 @@ def run_analysis(self, session_id: str):
         engine_mode = get_engine_mode()
         logger.info(f"Hook engine mode: {engine_mode}")
 
-        result = None
-        if engine_mode == "deterministic_only":
-            try:
-                result = DeterministicEngine().analyze(
-                    transcript=transcript_result.text,
-                    niche=session.niche,
-                    language=session.language,
-                )
-            except HookEngineError as e:
-                CreditManager(db).refund_and_fail(
-                    session_id,
-                    error_msg="Deterministic analysis failed. Credits not deducted.",
-                    _logger=logger,
-                )
-                return {"error": str(e)}
-        elif engine_mode == "llm_with_deterministic_fallback":
-            try:
-                result = HookEngine().analyze(
-                    transcript=transcript_result.text,
-                    niche=session.niche,
-                    language=session.language,
-                )
-            except HookEngineError:
-                logger.warning("LLM hook engine failed, falling back to deterministic")
-                try:
-                    result = DeterministicEngine().analyze(
-                        transcript=transcript_result.text,
-                        niche=session.niche,
-                        language=session.language,
-                    )
-                except HookEngineError as e:
-                    CreditManager(db).refund_and_fail(
-                        session_id,
-                        error_msg="Analysis unavailable. Credits not deducted. Try again.",
-                        _logger=logger,
-                    )
-                    return {"error": str(e)}
-        else:
-            # Default: llm_only
-            try:
-                result = HookEngine().analyze(
-                    transcript=transcript_result.text,
-                    niche=session.niche,
-                    language=session.language,
-                )
-            except HookEngineError as e:
-                CreditManager(db).refund_and_fail(
-                    session_id,
-                    error_msg="Analysis unavailable. Credits not deducted. Try again.",
-                    _logger=logger,
-                )
-                return {"error": str(e)}
+        try:
+            result = _analyze_with_fallback(
+                engine_mode=engine_mode,
+                transcript=transcript_result.text,
+                niche=session.niche,
+                language=session.language,
+            )
+        except HookEngineError as e:
+            CreditManager(db).refund_and_fail(
+                session_id,
+                error_msg="Analysis unavailable. Credits not deducted. Try again.",
+                _logger=logger,
+            )
+            return {"error": str(e)}
 
         # --- Step 3: Store hooks ---
         self.update_state(state="PROGRESS", meta={"stage": "Saving hooks...", "progress": 80})
@@ -188,8 +183,8 @@ def run_analysis(self, session_id: str):
         try:
             import sentry_sdk
             sentry_sdk.capture_exception(e)
-        except Exception:
-            pass
+        except Exception as e2:
+            logger.warning("Failed to report exception to Sentry: %s", e2)
         user_msg = _friendly_error(e)
         try:
             CreditManager(db).refund_and_fail(
@@ -199,7 +194,7 @@ def run_analysis(self, session_id: str):
             )
         except Exception as inner_err:
             logger.exception(f"Failed to refund/fail session {session_id}: {inner_err}")
-        return {"error": user_msg}
+        return {"error": user_msg}  # explicit return prevents further status updates
     finally:
         db.close()
 

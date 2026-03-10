@@ -38,8 +38,8 @@ class GeminiProvider(LLMProvider):
                     try:
                         import sentry_sdk
                         sentry_sdk.capture_message("Gemini rate limit hit (429)", level="warning")
-                    except Exception:
-                        pass
+                    except Exception as e:
+                        logger.warning("Failed to report rate limit to Sentry: %s", e)
                     raise RuntimeError(
                         "Gemini rate limit hit (429). Free tier allows ~15 requests/minute. "
                         "Wait 60 seconds and try again."
@@ -52,8 +52,8 @@ class GeminiProvider(LLMProvider):
             try:
                 import sentry_sdk
                 sentry_sdk.capture_exception(e)
-            except Exception:
-                pass
+            except Exception as e2:
+                logger.warning("Failed to report exception to Sentry: %s", e2)
             raise RuntimeError(f"Gemini API request failed: {e}") from e
 
         try:

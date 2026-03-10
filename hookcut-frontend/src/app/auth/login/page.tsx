@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const claims = [
   { text: "No subscription required — pay only for what you use", icon: "💳", label: "Flexible Pricing" },
-  { text: "5 free minutes included with every account", icon: "🎁", label: "Free to Try" },
+  { text: "120 minutes free with every account — no credit card needed", icon: "🎁", label: "Free to Try" },
   { text: "AI identifies hooks across 18 hook types and 6 funnel roles", icon: "🤖", label: "AI-Powered" },
   { text: "Generate YouTube Shorts in under 2 minutes", icon: "⚡", label: "Lightning Fast" },
 ];
@@ -114,9 +114,9 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center px-4 py-16">
       {/* Background orbs — more dramatic */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#E84A2F]/[0.08] blur-[140px] float-slow" />
-        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-[#E84A2F]/[0.06] blur-[120px] float-slower" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-[#E84A2F]/[0.04] blur-[80px]" />
+        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[var(--color-primary)]/[0.08] blur-[140px] float-slow" />
+        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-[var(--color-primary)]/[0.06] blur-[120px] float-slower" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-[var(--color-primary)]/[0.04] blur-[80px]" />
       </div>
 
       <motion.div
@@ -126,11 +126,11 @@ export default function LoginPage() {
         transition={{ type: "spring", stiffness: 180, damping: 22 }}
       >
         {/* Card */}
-        <div className="glass-strong rounded-3xl p-8">
+        <div className="glass-strong rounded-3xl p-6 min-[380px]:p-8 shadow-[var(--shadow-modal)]">
           {/* Logo */}
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 rounded-2xl bg-[#E84A2F] flex items-center justify-center text-white font-bold text-2xl shadow-xl shadow-[#E84A2F]/30">
-              H
+            <div className="w-20 h-20 rounded-2xl bg-[var(--color-primary)] flex items-center justify-center shadow-xl shadow-[var(--color-primary)]/30">
+              <span className="gradient-text font-bold text-3xl">H</span>
             </div>
           </div>
 
@@ -138,7 +138,7 @@ export default function LoginPage() {
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-white mb-2">
               {authMode === "login" ? "Sign in to" : "Join"}{" "}
-              <span className="text-[#E84A2F]">HookCut</span>
+              <span className="text-[var(--color-primary)]">HookCut</span>
             </h1>
             <p className="text-white/40 text-sm leading-relaxed">
               Turn YouTube videos into viral Shorts with AI-powered hook
@@ -157,7 +157,7 @@ export default function LoginPage() {
           {/* Google button */}
           <button
             onClick={() => signIn("google", { callbackUrl })}
-            className="w-full flex items-center justify-center gap-3 px-5 py-3.5 rounded-xl bg-white text-gray-800 font-semibold text-sm hover:bg-gray-50 transition-colors duration-200 shadow-lg shadow-black/20"
+            className="w-full flex items-center justify-center gap-3 px-5 py-3.5 min-h-[48px] rounded-xl bg-white text-gray-800 font-semibold text-sm hover:bg-gray-50 transition-colors duration-200 shadow-lg shadow-black/20"
           >
             <GoogleIcon className="w-5 h-5" />
             Continue with Google
@@ -188,7 +188,7 @@ export default function LoginPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Your name"
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E84A2F]/50 focus:bg-white/8 transition-colors"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-white/8 transition-colors"
                 />
               </div>
             )}
@@ -208,7 +208,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E84A2F]/50 focus:bg-white/8 transition-colors"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-white/8 transition-colors"
               />
             </div>
 
@@ -228,7 +228,7 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder={authMode === "signup" ? "At least 8 characters" : "Your password"}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[#E84A2F]/50 focus:bg-white/8 transition-colors"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--color-primary)]/50 focus:bg-white/8 transition-colors"
               />
             </div>
 
@@ -242,7 +242,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full px-5 py-3 rounded-xl bg-[#E84A2F] text-white font-semibold text-sm hover:bg-[#E84A2F]/90 transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-[#E84A2F]/20"
+              className="w-full px-5 py-3 rounded-xl bg-[var(--color-primary)] text-white font-semibold text-sm hover:bg-[var(--color-primary)]/90 transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-[var(--color-primary)]/20"
             >
               {isSubmitting
                 ? authMode === "signup"
@@ -260,7 +260,7 @@ export default function LoginPage() {
             <button
               type="button"
               onClick={handleModeToggle}
-              className="text-[#E84A2F]/80 hover:text-[#E84A2F] transition-colors font-medium"
+              className="text-[var(--color-primary)]/80 hover:text-[var(--color-primary)] transition-colors font-medium"
             >
               {authMode === "login" ? "Sign up" : "Sign in"}
             </button>
@@ -281,7 +281,7 @@ export default function LoginPage() {
                 d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
               />
             </svg>
-            No credit card required · 5 free minutes included
+            120 minutes free · No credit card
           </div>
 
           {/* Legal */}
@@ -297,14 +297,16 @@ export default function LoginPage() {
             .
           </p>
 
-          <div className="text-center">
-            <Link
-              href="/"
-              className="text-sm text-[#E84A2F]/70 hover:text-[#E84A2F] transition-colors"
-            >
-              ← Back to home
-            </Link>
-          </div>
+        </div>
+
+        {/* Back to home */}
+        <div className="text-center mt-4">
+          <Link
+            href="/"
+            className="text-sm text-[var(--color-primary)]/70 hover:text-[var(--color-primary)] transition-colors"
+          >
+            ← Back to home
+          </Link>
         </div>
 
         {/* Rotating product claims */}
@@ -318,10 +320,10 @@ export default function LoginPage() {
               transition={{ duration: 0.3 }}
               className="text-center"
             >
-              <span className="inline-block text-[10px] px-2.5 py-1 rounded-full bg-[#E84A2F]/15 text-[#E84A2F]/80 border border-[#E84A2F]/20 font-medium mb-2">
+              <span className="inline-block text-[10px] px-2.5 py-1 rounded-full bg-[var(--color-primary)]/15 text-[var(--color-primary)]/80 border border-[var(--color-primary)]/20 font-medium mb-2">
                 {claims[claimIdx].label}
               </span>
-              <p className="text-xs text-white/35 leading-relaxed">
+              <p className="text-xs text-white/50 leading-relaxed">
                 {claims[claimIdx].icon} {claims[claimIdx].text}
               </p>
             </motion.div>
@@ -333,8 +335,8 @@ export default function LoginPage() {
                 key={i}
                 onClick={() => setClaimIdx(i)}
                 aria-label={`View claim ${i + 1}`}
-                className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
-                  i === claimIdx ? "bg-[#E84A2F] w-3" : "bg-white/15"
+                className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                  i === claimIdx ? "bg-[var(--color-primary)] w-4" : "bg-white/15"
                 }`}
               />
             ))}

@@ -10,10 +10,12 @@ class BalanceResponse(BaseModel):
     payg_minutes_remaining: float
     total_available: float
     free_topups_remaining: int = 3
+    manual_clip_minutes_remaining: float = 0.0
+    manual_clip_minutes_total: float = 0.0
 
 
 class PlanInfo(BaseModel):
-    tier: Literal["free", "lite", "pro"]
+    tier: Literal["free", "lite", "pro", "pro_max"]
     price_display: str
     watermark_free_minutes: int
     currency: Literal["USD", "INR"]

@@ -1,5 +1,6 @@
 """Tests for AdminService — dashboard, user management, rule CRUD, audit log."""
 import pytest
+from sqlalchemy import select
 
 from tests.conftest import make_user, make_session, TEST_USER_ID
 from app.exceptions import ResourceNotFoundError
@@ -90,7 +91,7 @@ class TestUpdateUserRole:
         admin = make_admin(db)
         target = make_user(db, user_id="role2")
         AdminService.update_user_role(db, target.id, "admin", admin)
-        log = db.query(AdminAuditLog).filter_by(resource_id=target.id).first()
+        log = db.execute(select(AdminAuditLog).where(AdminAuditLog.resource_id == target.id)).scalar_one_or_none()
         assert log is not None
         assert log.action == "role_changed"
 
@@ -120,7 +121,7 @@ class TestCreateRule:
     def test_creates_audit_log(self, db):
         admin = make_admin(db)
         rule = AdminService.create_rule(db, title="Audit Rule", content="...", rule_key="X9", admin_user=admin)
-        log = db.query(AdminAuditLog).filter_by(resource_id=rule.id).first()
+        log = db.execute(select(AdminAuditLog).where(AdminAuditLog.resource_id == rule.id)).scalar_one_or_none()
         assert log is not None
         assert log.action == "prompt_rule_created"
 

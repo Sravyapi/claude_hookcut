@@ -130,7 +130,7 @@ def create_app() -> FastAPI:
         CORSMiddleware,
         allow_origins=origins,
         allow_credentials=True,
-        allow_methods=["*"],
+        allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
         allow_headers=["*"],
     )
 
@@ -140,7 +140,7 @@ def create_app() -> FastAPI:
     # OBS-08: Correlation ID on every response
     app.add_middleware(RequestIDMiddleware)
 
-    from app.routers import analysis, shorts, tasks, user, billing, admin, auth
+    from app.routers import analysis, shorts, tasks, user, billing, admin, auth, clip
     app.include_router(analysis.router, prefix="/api", tags=["analysis"])
     app.include_router(shorts.router, prefix="/api", tags=["shorts"])
     app.include_router(tasks.router, prefix="/api", tags=["tasks"])
@@ -148,6 +148,7 @@ def create_app() -> FastAPI:
     app.include_router(billing.router, prefix="/api", tags=["billing"])
     app.include_router(admin.router, prefix="/api", tags=["admin"])
     app.include_router(auth.router, prefix="/api", tags=["auth"])
+    app.include_router(clip.router, prefix="/api", tags=["clips"])
 
     from app.dependencies import get_db
 

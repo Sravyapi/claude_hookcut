@@ -3,16 +3,16 @@ import Link from "next/link";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
-  title: "How It Works | HookCut — Hook Analysis in 3 Steps",
+  title: "How HookCut Works — URL to Short in 3 Steps | HookCut",
   description:
     "Paste a YouTube URL. HookCut analyzes the transcript, scores the top hook moments, and generates vertical Shorts — in under 2 minutes.",
   openGraph: {
-    title: "How It Works | HookCut",
+    title: "How HookCut Works — URL to Short in 3 Steps | HookCut",
     description: "Paste a YouTube URL. Get scored hooks and ready-to-post Shorts in under 2 minutes.",
     type: "website",
     url: "https://hookcut.ai/how-it-works",
   },
-  twitter: { card: "summary_large_image", title: "How It Works | HookCut", description: "Paste a YouTube URL. Get scored hooks and ready-to-post Shorts in under 2 minutes." },
+  twitter: { card: "summary_large_image", title: "How HookCut Works — URL to Short in 3 Steps | HookCut", description: "Paste a YouTube URL. Get scored hooks and ready-to-post Shorts in under 2 minutes." },
   alternates: { canonical: "https://hookcut.ai/how-it-works" },
 };
 
@@ -114,7 +114,7 @@ export default function HowItWorksPage() {
   };
 
   return (
-    <div className="bg-[#FAFAF8] min-h-screen">
+    <div className="bg-[var(--color-bg)] min-h-screen">
       <Header />
       <script
         type="application/ld+json"
@@ -122,24 +122,24 @@ export default function HowItWorksPage() {
       />
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#E84A2F] focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--color-primary)] focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
       >
         Skip to content
       </a>
 
       {/* Hero */}
-      <section className="pt-32 pb-16 px-6 text-center">
+      <section className="pt-32 pb-16 md:pb-24 px-6 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl font-[family-name:--font-display] font-bold text-[#0A0A0A] leading-tight tracking-tight mb-6">
+          <h1 className="text-h1 font-[family-name:--font-display] font-bold text-[var(--color-text)] leading-tight tracking-tight mb-6">
             From YouTube URL<br />to viral Short in 6 steps.
           </h1>
-          <p className="text-lg text-[#71717A] leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--color-muted)] leading-relaxed mb-8 max-w-2xl mx-auto">
             HookCut analyzes your video&apos;s transcript, identifies the top hook moments, scores each one,
             and generates ready-to-post vertical Shorts — all in under 2 minutes.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-[#E84A2F] text-white text-sm font-semibold hover:bg-[#D13F25] transition-colors"
+            className="btn-primary inline-flex items-center gap-2 text-sm"
           >
             Try it now — 120 minutes free
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -151,32 +151,32 @@ export default function HowItWorksPage() {
 
       <main id="main-content">
         {/* Step list */}
-        <section className="py-16 px-6">
+        <section className="py-16 md:py-24 px-6">
           <div className="max-w-3xl mx-auto space-y-0">
             {STEPS.map((step, i) => (
               <div key={step.number} className="relative flex gap-8">
                 {/* Connector line */}
                 <div className="flex flex-col items-center shrink-0">
-                  <div className="w-10 h-10 rounded-full bg-[#E84A2F] text-white flex items-center justify-center text-sm font-bold shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-sm font-bold shrink-0">
                     {i + 1}
                   </div>
                   {i < STEPS.length - 1 && (
-                    <div className="w-px flex-1 bg-[#E4E4E7] mt-3 mb-3 min-h-[3rem]" aria-hidden="true" />
+                    <div className="w-px flex-1 bg-[var(--color-border-def)] mt-3 mb-3 min-h-[3rem]" aria-hidden="true" />
                   )}
                 </div>
 
                 {/* Content */}
                 <div className="pb-10">
                   <div className="flex items-center gap-3 mb-2">
-                    <h2 className="text-xl font-[family-name:--font-display] font-bold text-[#0A0A0A]">
+                    <h2 className="text-h3 font-[family-name:--font-display] font-bold text-[var(--color-text)]">
                       {step.title}
                     </h2>
-                    <span className="px-2.5 py-0.5 rounded-full bg-[#E84A2F]/10 text-[#E84A2F] text-xs font-semibold">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-semibold">
                       {step.badge}
                     </span>
                   </div>
-                  <p className="text-[#0A0A0A] font-medium mb-2 leading-relaxed">{step.description}</p>
-                  <p className="text-[#71717A] text-sm leading-relaxed">{step.detail}</p>
+                  <p className="text-[var(--color-text)] font-medium mb-2 leading-relaxed">{step.description}</p>
+                  <p className="text-[var(--color-muted)] text-sm leading-relaxed">{step.detail}</p>
                 </div>
               </div>
             ))}
@@ -184,16 +184,16 @@ export default function HowItWorksPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 px-6 bg-white border-t border-[#E4E4E7]">
+        <section className="py-16 md:py-24 px-6 bg-[var(--color-surface-1)]">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-[family-name:--font-display] font-bold text-[#0A0A0A] mb-10">
+            <h2 className="text-h2 font-[family-name:--font-display] font-bold text-[var(--color-text)] mb-10">
               Frequently asked questions
             </h2>
             <dl className="space-y-6">
               {FAQS.map((faq) => (
-                <div key={faq.q} className="border-b border-[#E4E4E7] pb-6 last:border-0 last:pb-0">
-                  <dt className="font-semibold text-[#0A0A0A] mb-2">{faq.q}</dt>
-                  <dd className="text-[#71717A] leading-relaxed text-sm">{faq.a}</dd>
+                <div key={faq.q} className="border-b border-[var(--color-border-def)] pb-6 last:border-0 last:pb-0">
+                  <dt className="font-semibold text-[var(--color-text)] mb-2">{faq.q}</dt>
+                  <dd className="text-[var(--color-muted)] leading-relaxed text-sm">{faq.a}</dd>
                 </div>
               ))}
             </dl>
@@ -201,15 +201,15 @@ export default function HowItWorksPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 px-6 bg-[#0A0A0A] text-center">
+        <section className="py-16 md:py-24 px-6 text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl font-[family-name:--font-display] font-bold text-white mb-4">
+            <h2 className="text-h2 font-[family-name:--font-display] font-bold text-[var(--color-text)] mb-4">
               Ready to find your hooks?
             </h2>
-            <p className="text-white/50 mb-10">Paste any YouTube URL. First 120 minutes are free.</p>
+            <p className="text-[var(--color-muted)] mb-10">Paste any YouTube URL. First 120 minutes are free.</p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-[#E84A2F] text-white font-semibold hover:bg-[#D13F25] transition-colors"
+              className="btn-primary inline-flex items-center gap-2 text-sm"
             >
               Start Analyzing
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

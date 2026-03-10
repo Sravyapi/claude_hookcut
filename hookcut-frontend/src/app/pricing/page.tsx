@@ -32,18 +32,18 @@ const TIER_STYLES: Record<
   { topBorder: string; badge?: string; glow: string; recommended?: boolean }
 > = {
   free: {
-    topBorder: "from-white/[0.06] to-white/[0.02]",
+    topBorder: "from-white/[0.06] to-white/[0.04]",
     glow: "",
   },
   lite: {
-    topBorder: "from-violet-500 to-purple-600",
+    topBorder: "from-[#E84A2F] to-[#D13F25]",
     badge: "Most Popular",
-    glow: "shadow-[0_0_40px_rgba(139,92,246,0.12)]",
+    glow: "shadow-[0_0_48px_rgba(232,74,47,0.12)]",
     recommended: true,
   },
   pro: {
-    topBorder: "from-purple-400 via-violet-500 to-indigo-600",
-    glow: "shadow-[0_0_50px_rgba(139,92,246,0.16)]",
+    topBorder: "from-[#E84A2F] via-[#FF6B47] to-[#E84A2F]",
+    glow: "shadow-[0_0_60px_rgba(232,74,47,0.15)]",
   },
 };
 
@@ -107,7 +107,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       >
         <span className="text-sm font-medium text-white/75">{q}</span>
         <ChevronDown
-          className={`w-4 h-4 text-white/30 shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          className={`w-4 h-4 text-white/30 shrink-0 transition-transform duration-150 ${open ? "rotate-180" : ""}`}
         />
       </button>
       <AnimatePresence>
@@ -233,14 +233,14 @@ export default function PricingPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-500/8 border border-violet-500/15 text-violet-300 text-xs font-medium mb-5">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[--color-primary]/8 border border-[--color-primary]/15 text-[#FF6B47] text-xs font-medium mb-5">
             <Sparkles className="w-3.5 h-3.5" />
             Simple, transparent pricing
           </div>
           <h1 className="text-4xl font-bold text-white mb-3">
             Choose Your <span className="gradient-text">Plan</span>
           </h1>
-          <p className="text-white/45 max-w-md mx-auto text-sm">
+          <p className="text-white/60 max-w-md mx-auto text-sm">
             Unlock more minutes, remove watermarks, and supercharge your Shorts production.
           </p>
         </motion.div>
@@ -280,9 +280,9 @@ export default function PricingPage() {
                   variants={fadeUpItem}
                   className={`relative glass rounded-2xl overflow-hidden flex flex-col transition-all duration-300 ${styles.glow} ${
                     isRecommended
-                      ? "md:-mt-2 md:mb-2 ring-2 ring-violet-500/30"
+                      ? "md:-mt-2 md:mb-2 ring-2 ring-[--color-primary]/30"
                       : "hover:border-white/10"
-                  } ${isCurrent ? "ring-2 ring-violet-500/50" : ""}`}
+                  } ${isCurrent ? "ring-2 ring-[--color-primary]/50" : ""}`}
                   whileHover={{ y: isRecommended ? -4 : -2 }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 >
@@ -297,8 +297,8 @@ export default function PricingPage() {
                       <span
                         className={`text-[10px] px-2.5 py-1 rounded-full font-semibold ${
                           isCurrent
-                            ? "bg-violet-500/20 text-violet-200 border border-violet-500/30"
-                            : "bg-violet-500 text-white"
+                            ? "bg-[--color-primary]/20 text-[#FF6B47] border border-[--color-primary]/30"
+                            : "bg-[--color-primary] text-white"
                         }`}
                       >
                         {isCurrent ? "Current Plan" : styles.badge}
@@ -312,9 +312,9 @@ export default function PricingPage() {
                       <div
                         className={`w-9 h-9 rounded-xl flex items-center justify-center ${
                           plan.tier === "pro"
-                            ? "bg-purple-500/15 text-purple-300"
+                            ? "bg-[--color-primary]/15 text-[#FF6B47]"
                             : plan.tier === "lite"
-                              ? "bg-violet-500/15 text-violet-300"
+                              ? "bg-[--color-primary]/15 text-[#FF6B47]"
                               : "bg-white/[0.06] text-white/50"
                         }`}
                       >
@@ -331,14 +331,14 @@ export default function PricingPage() {
                         <span className="text-sm text-white/35">/month</span>
                       )}
                     </div>
-                    <p className="text-xs text-white/40 mb-6">{desc}</p>
+                    <p className="text-xs text-white/60 mb-6">{desc}</p>
 
                     {/* Features */}
                     <ul className="space-y-2.5 flex-1 mb-6">
                       {features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
-                          <Check className="w-4 h-4 text-violet-400 shrink-0 mt-0.5" />
-                          <span className="text-sm text-white/65">{feature}</span>
+                          <Check className="w-4 h-4 text-[#E84A2F] shrink-0 mt-0.5" />
+                          <span className="text-sm text-white/60">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -413,7 +413,7 @@ export default function PricingPage() {
                     <div
                       key={i}
                       className={`grid grid-cols-4 gap-4 px-6 py-3 items-center ${
-                        i % 2 === 0 ? "" : "bg-white/[0.01]"
+                        i % 2 === 0 ? "bg-white/[0.02]" : ""
                       } border-b border-white/[0.04] last:border-0`}
                     >
                       <span className="text-xs text-white/50">{row.label}</span>
@@ -442,11 +442,11 @@ export default function PricingPage() {
           transition={{ delay: 0.2 }}
         >
           <div className="text-center mb-6">
-            <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center mx-auto mb-3">
-              <Zap className="w-5 h-5 text-violet-400" />
+            <div className="w-10 h-10 rounded-xl bg-[--color-primary]/10 flex items-center justify-center mx-auto mb-3">
+              <Zap className="w-5 h-5 text-[#FF6B47]" />
             </div>
             <h2 className="text-lg font-bold text-white mb-1">Need More Minutes?</h2>
-            <p className="text-white/40 text-sm">
+            <p className="text-white/60 text-sm">
               Top up anytime. No subscription required. Credits never expire.
             </p>
           </div>
@@ -471,16 +471,20 @@ export default function PricingPage() {
               step={1}
               value={paygIdx}
               onChange={(e) => setPaygIdx(Number(e.target.value))}
-              className="w-full h-1.5 rounded-full appearance-none bg-white/10 cursor-pointer accent-violet-500"
+              className="w-full h-1.5 rounded-full appearance-none bg-white/10 cursor-pointer accent-[#E84A2F]"
               style={{
-                background: `linear-gradient(to right, #8b5cf6 0%, #8b5cf6 ${(paygIdx / 3) * 100}%, rgba(255,255,255,0.1) ${(paygIdx / 3) * 100}%, rgba(255,255,255,0.1) 100%)`,
+                background: `linear-gradient(to right, #E84A2F 0%, #E84A2F ${(paygIdx / 3) * 100}%, rgba(255,255,255,0.1) ${(paygIdx / 3) * 100}%, rgba(255,255,255,0.1) 100%)`,
               }}
             />
             <div className="flex justify-between mt-2">
-              {PAYG_OPTIONS.map((m) => (
-                <span key={m} className="text-[10px] text-white/25">
+              {PAYG_OPTIONS.map((m, i) => (
+                <button
+                  key={m}
+                  onClick={() => setPaygIdx(i)}
+                  className="text-[10px] text-white/25 hover:text-white/50 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                >
                   {m}
-                </span>
+                </button>
               ))}
             </div>
           </div>
@@ -510,6 +514,16 @@ export default function PricingPage() {
             ))}
           </div>
         </motion.div>
+
+        {/* Trust strip */}
+        <motion.p
+          className="text-center text-xs text-white/40 mt-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
+          30-day money-back guarantee &middot; No questions asked &middot; Cancel anytime
+        </motion.p>
       </div>
     </main>
     </>

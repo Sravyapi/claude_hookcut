@@ -48,6 +48,9 @@ for i in $(seq 1 10); do
     sleep 1
 done
 
+# Disable OpenCV OpenCL to prevent segfault on Apple Silicon with Celery prefork
+export OPENCV_OPENCL_RUNTIME=disabled
+
 echo "Starting app services (backend + worker + beat + frontend)..."
 echo ""
 echo "  Backend:  http://localhost:8000"

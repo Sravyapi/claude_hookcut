@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "Best AI Hook Finder for YouTube Videos | HookCut",
+  title: "AI Hook Finder — Identify Scroll-Stopping Moments Free | HookCut",
   description:
     "HookCut is the best AI hook finder for YouTube creators. Paste any URL, get the top 5 hook moments scored 0–100 with explanations — and download them as Shorts in under 2 minutes.",
   openGraph: {
-    title: "Best AI Hook Finder for YouTube Videos | HookCut",
+    title: "AI Hook Finder — Identify Scroll-Stopping Moments Free | HookCut",
     description:
       "HookCut is the best AI hook finder for YouTube creators. Get scored hook moments with explanations — ready as Shorts in under 2 minutes.",
     type: "website",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best AI Hook Finder for YouTube Videos | HookCut",
+    title: "AI Hook Finder — Identify Scroll-Stopping Moments Free | HookCut",
     description:
       "HookCut is the best AI hook finder for YouTube creators. Get scored hook moments with explanations — ready as Shorts in under 2 minutes.",
   },
@@ -119,5 +119,18 @@ const data: CompetitorData = {
 };
 
 export default function AiHookFinderPage() {
-  return <AlternativePage data={data} />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "HookCut",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+        "description": "AI-powered YouTube hook detection and Shorts generation"
+      }) }} />
+      <AlternativePage data={data} />
+    </>
+  );
 }

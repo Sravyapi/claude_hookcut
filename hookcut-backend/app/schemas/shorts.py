@@ -5,7 +5,7 @@ from datetime import datetime
 
 class ShortResponse(BaseModel):
     id: str
-    hook_id: str
+    hook_id: Optional[str] = None
     status: str
     is_watermarked: bool
     title: Optional[str] = None

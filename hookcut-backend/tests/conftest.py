@@ -139,7 +139,7 @@ def make_user(db, user_id=None, email=None, currency="USD", plan_tier="free"):
 
 def make_session(
     db, user_id, video_id="dQw4w9WgXcQ", status="hooks_ready",
-    minutes_charged=5.0, video_duration_seconds=300.0,
+    minutes_charged=5.0, video_duration_seconds=300.0, source_type="ai",
 ):
     """Create a test analysis session."""
     session = AnalysisSession(
@@ -152,6 +152,7 @@ def make_session(
         language="English",
         status=status,
         minutes_charged=minutes_charged,
+        source_type=source_type,
     )
     db.add(session)
     db.commit()
@@ -184,7 +185,7 @@ def make_hook(db, session_id, rank=1, hook_text="Test hook", attention_score=8.5
     return hook
 
 
-def make_short(db, session_id, hook_id, status="queued"):
+def make_short(db, session_id, hook_id=None, status="queued"):
     """Create a test short."""
     short = Short(
         session_id=session_id,

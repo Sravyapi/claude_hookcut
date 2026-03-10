@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, Shield, Film } from "lucide-react";
 import { api } from "@/lib/api";
 import { getStatusConfig } from "@/lib/constants";
 import { useToast } from "@/components/ui/use-toast";
@@ -31,11 +31,11 @@ const STATUS_FILTERS = [
 function shortStatusBadge(status: string) {
   const s = status.toLowerCase();
   if (s === "ready")
-    return "bg-emerald-500/15 text-emerald-300 border-emerald-500/25";
+    return "bg-[--color-success]/15 text-emerald-300 border-[--color-success]/25";
   if (s === "processing" || s === "downloading" || s === "uploading")
     return "bg-amber-500/15 text-amber-300 border-amber-500/25";
   if (s === "failed")
-    return "bg-red-500/15 text-red-300 border-red-500/25";
+    return "bg-[--color-error]/15 text-red-300 border-[--color-error]/25";
   return "bg-white/5 text-white/50 border-white/10";
 }
 
@@ -98,7 +98,7 @@ function SessionDetailPanel({
                   className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-xs font-bold text-violet-400 tabular-nums shrink-0 mt-0.5">
+                    <span className="text-xs font-bold text-[--color-primary] tabular-nums shrink-0 mt-0.5">
                       #{hook.rank}
                     </span>
                     <div className="flex-1 min-w-0">
@@ -114,7 +114,7 @@ function SessionDetailPanel({
                         </span>
                         <span className="text-[10px] text-white/30">
                           Attention:{" "}
-                          <span className="text-violet-300 font-medium">
+                          <span className="text-[--color-primary] font-medium">
                             {hook.attention_score.toFixed(1)}/10
                           </span>
                         </span>
@@ -159,7 +159,7 @@ function SessionDetailPanel({
                     </p>
                   )}
                   {short.error_message && (
-                    <p className="text-xs text-red-400/70 mt-1 truncate">
+                    <p className="text-xs text-[--color-error]/70 mt-1 truncate">
                       {short.error_message}
                     </p>
                   )}
@@ -194,8 +194,8 @@ function SessionDetailPanel({
                   transition={{ duration: 0.2 }}
                   className="overflow-hidden"
                 >
-                  <div className="mt-3 bg-white/[0.02] border border-white/[0.04] rounded-xl p-4 max-h-64 overflow-y-auto scrollbar-thin">
-                    <p className="text-xs text-white/40 leading-relaxed whitespace-pre-wrap">
+                  <div className="mt-3 bg-[--color-surface-3] border border-white/[0.04] rounded-xl p-4 max-h-64 overflow-y-auto scrollbar-thin">
+                    <p className="text-xs text-white/40 leading-relaxed whitespace-pre-wrap font-mono">
                       {detail.transcript_text}
                     </p>
                   </div>
@@ -262,7 +262,12 @@ export default function AdminSessionsPage() {
         className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
       >
         <div>
-          <h1 className="text-2xl font-bold text-white">Session Browser</h1>
+          <div className="flex items-center gap-2.5">
+            <h1 className="text-2xl font-bold text-white">Session Browser</h1>
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-primary]/10 text-[--color-primary] border border-[--color-primary]/20 font-semibold uppercase tracking-wider">
+              <Shield className="w-3 h-3 inline-block mr-1 -mt-px" />Admin
+            </span>
+          </div>
           <p className="text-white/40 text-sm mt-0.5">
             Browse and inspect all analysis sessions
             {data && (
@@ -281,7 +286,7 @@ export default function AdminSessionsPage() {
           <select
             value={statusFilter}
             onChange={(e) => handleFilterChange(e.target.value)}
-            className="appearance-none px-3 py-2 rounded-xl text-sm bg-white/[0.04] border border-white/[0.08] text-white/70 outline-none focus:border-violet-500/40 focus:ring-1 focus:ring-violet-500/20 transition-all cursor-pointer"
+            className="appearance-none px-3 py-2 rounded-xl text-sm bg-white/[0.04] border border-white/[0.08] text-white/70 outline-none focus:border-[--color-primary]/40 focus:ring-1 focus:ring-[--color-primary]/20 transition-all cursor-pointer"
           >
             {STATUS_FILTERS.map((s) => (
               <option
@@ -302,7 +307,7 @@ export default function AdminSessionsPage() {
 
       {/* ─── Sessions table ─── */}
       <motion.div
-        className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden"
+        className="glass-card rounded-2xl overflow-hidden"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.1 }}
@@ -316,7 +321,7 @@ export default function AdminSessionsPage() {
         ) : data && data.sessions.length > 0 ? (
           <>
             {/* Table header */}
-            <div className="grid grid-cols-[1.5fr_2fr_0.8fr_1fr_0.8fr_1fr_auto] gap-3 px-6 py-3 text-[10px] font-medium text-white/25 uppercase tracking-wider border-b border-white/[0.06]">
+            <div className="grid grid-cols-[1.5fr_2fr_0.8fr_1fr_0.8fr_1fr_auto] gap-3 px-6 py-3 text-[10px] font-medium text-white/25 uppercase tracking-wider border-b border-white/[0.05]">
               <span>User Email</span>
               <span>Video Title</span>
               <span>Niche</span>
@@ -331,6 +336,7 @@ export default function AdminSessionsPage() {
               variants={staggerContainer}
               initial="hidden"
               animate="show"
+              className="divide-y divide-white/[0.05]"
             >
               {data.sessions.map((session: AdminSessionSummary) => {
                 const statusConfig = getStatusConfig(session.status);
@@ -345,7 +351,7 @@ export default function AdminSessionsPage() {
                     {/* Row */}
                     <button
                       onClick={() => toggleExpand(session.id)}
-                      className="w-full grid grid-cols-[1.5fr_2fr_0.8fr_1fr_0.8fr_1fr_auto] gap-3 px-6 py-3.5 hover:bg-white/[0.02] transition-colors border-b border-white/[0.03] items-center text-left"
+                      className="w-full grid grid-cols-[1.5fr_2fr_0.8fr_1fr_0.8fr_1fr_auto] gap-3 px-6 py-3.5 hover:bg-white/[0.02] transition-colors items-center text-left even:bg-white/[0.02]"
                     >
                       <span className="text-sm text-white/60 truncate">
                         {session.user_email}
@@ -419,10 +425,16 @@ export default function AdminSessionsPage() {
           </>
         ) : (
           <div className="py-16 text-center">
-            <p className="text-sm text-white/30">
+            <div className="w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center mx-auto mb-4">
+              <Film className="w-7 h-7 text-white/15" />
+            </div>
+            <p className="text-sm text-white/40 mb-1">
               {statusFilter !== "all"
-                ? `No sessions with status "${statusFilter.replace(/_/g, " ")}".`
-                : "No sessions found."}
+                ? `No sessions with status "${statusFilter.replace(/_/g, " ")}"`
+                : "No sessions found"}
+            </p>
+            <p className="text-xs text-white/25">
+              {statusFilter !== "all" ? "Try a different filter." : "Sessions will appear here as users analyze videos."}
             </p>
           </div>
         )}

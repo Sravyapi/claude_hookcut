@@ -6,6 +6,7 @@ import {
   BookOpen,
   Plus,
   Sparkles,
+  Shield,
 } from "lucide-react";
 import { api } from "@/lib/api";
 import type {
@@ -226,8 +227,11 @@ export default function PromptRuleEnginePage() {
         >
           <div>
             <h1 className="text-2xl font-bold text-white flex items-center gap-3">
-              <BookOpen className="w-6 h-6 text-violet-400" />
+              <BookOpen className="w-6 h-6 text-[--color-primary]" />
               Prompt Rule Engine
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-primary]/10 text-[--color-primary] border border-[--color-primary]/20 font-semibold uppercase tracking-wider">
+                <Shield className="w-3 h-3 inline-block mr-1 -mt-px" />Admin
+              </span>
             </h1>
             <p className="text-white/40 text-sm mt-0.5">
               Manage base and custom prompt rules for hook extraction
@@ -255,7 +259,7 @@ export default function PromptRuleEnginePage() {
             transition={{ duration: 0.4, delay: 0.05 }}
           >
             {/* Base Rules */}
-            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
+            <div className="glass-card rounded-2xl overflow-hidden">
               <div className="px-5 py-4 border-b border-white/[0.05]">
                 <h2 className="text-sm font-semibold text-white/70">
                   Base Rules (A-Q)
@@ -319,7 +323,7 @@ export default function PromptRuleEnginePage() {
             </div>
 
             {/* Custom Rules */}
-            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden">
+            <div className="glass-card rounded-2xl overflow-hidden">
               <div className="px-5 py-4 border-b border-white/[0.05]">
                 <h2 className="text-sm font-semibold text-white/70">
                   Custom Rules
@@ -406,10 +410,10 @@ export default function PromptRuleEnginePage() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -12 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6"
+                  className="glass-card rounded-2xl p-6"
                 >
                   <h2 className="text-sm font-semibold text-white/70 mb-5 flex items-center gap-2">
-                    <Plus className="w-4 h-4 text-violet-400" />
+                    <Plus className="w-4 h-4 text-[--color-primary]" />
                     New Custom Rule
                   </h2>
 
@@ -435,7 +439,7 @@ export default function PromptRuleEnginePage() {
                         onChange={(e) => setNewContent(e.target.value)}
                         placeholder="Rule content..."
                         rows={8}
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.06] text-sm text-white/80 placeholder-white/20 outline-none focus:border-violet-500/40 focus:ring-1 focus:ring-violet-500/20 transition-all font-mono min-h-[200px] resize-y"
+                        className="w-full px-4 py-3 rounded-xl bg-[--color-surface-3] border border-white/[0.06] text-sm text-white/80 placeholder-white/20 outline-none focus:border-[--color-primary]/40 focus:ring-1 focus:ring-[--color-primary]/20 transition-all font-mono min-h-[200px] resize-y"
                       />
                     </div>
                     <div className="flex items-center gap-3">
@@ -508,7 +512,7 @@ export default function PromptRuleEnginePage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-12 flex flex-col items-center justify-center text-center"
+                  className="glass-card rounded-2xl p-12 flex flex-col items-center justify-center text-center"
                 >
                   <div className="w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center mb-4">
                     <BookOpen className="w-7 h-7 text-white/15" />

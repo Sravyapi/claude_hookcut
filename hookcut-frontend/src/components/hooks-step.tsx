@@ -9,6 +9,20 @@ import { HookCard } from "./hook-card";
 import TrimSlider, { parseTimestamp } from "./trim-slider";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
 
+// ─── Aspect ratio config ─────────────────────────────────────────────────────
+
+type AspectRatio = "9:16" | "1:1" | "4:5";
+
+const ASPECT_RATIO_OPTIONS: {
+  value: AspectRatio;
+  label: string;
+  platform: string;
+}[] = [
+  { value: "9:16", label: "9:16", platform: "Shorts / TikTok" },
+  { value: "1:1", label: "1:1", platform: "Instagram / X" },
+  { value: "4:5", label: "4:5", platform: "Instagram / FB" },
+];
+
 // ─── Caption style config ─────────────────────────────────────────────────────
 
 const CAPTION_STYLE_OPTIONS: {
@@ -52,7 +66,8 @@ interface HooksStepProps {
   onSelectHooks: (
     hookIds: string[],
     captionStyle: string,
-    timeOverrides: Record<string, { start_seconds: number; end_seconds: number }>
+    timeOverrides: Record<string, { start_seconds: number; end_seconds: number }>,
+    aspectRatio: string
   ) => void;
   onRegenerate: () => void;
   isRegenerating: boolean;
@@ -75,6 +90,8 @@ export const HooksStep = memo(function HooksStep({
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [captionStyle, setCaptionStyle] = useState<CaptionStyle>("clean");
   const handleCaptionStyleChange = useCallback((v: CaptionStyle) => setCaptionStyle(v), []);
+  const [aspectRatio, setAspectRatio] = useState<AspectRatio>("9:16");
+  const handleAspectRatioChange = useCallback((v: AspectRatio) => setAspectRatio(v), []);
   const [timeOverrides, setTimeOverrides] = useState<
     Record<string, { start_seconds: number; end_seconds: number }>
   >({});
@@ -97,8 +114,8 @@ export const HooksStep = memo(function HooksStep({
   }, []);
 
   const handleGenerate = useCallback(
-    () => onSelectHooks(Array.from(selectedIds), captionStyle, timeOverrides),
-    [onSelectHooks, selectedIds, captionStyle, timeOverrides]
+    () => onSelectHooks(Array.from(selectedIds), captionStyle, timeOverrides, aspectRatio),
+    [onSelectHooks, selectedIds, captionStyle, timeOverrides, aspectRatio]
   );
 
   const avgScore = useMemo(
@@ -207,6 +224,39 @@ export const HooksStep = memo(function HooksStep({
                   selected={captionStyle === opt.value}
                   onSelect={handleCaptionStyleChange}
                 />
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* ── Aspect ratio picker (visible when hooks selected) ── */}
+      <AnimatePresence>
+        {selectedIds.size > 0 && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="mb-5 overflow-hidden"
+          >
+            <p className="text-xs text-[--color-muted] uppercase tracking-wider mb-2.5 font-semibold">
+              Aspect Ratio
+            </p>
+            <div className="flex gap-2">
+              {ASPECT_RATIO_OPTIONS.map((opt) => (
+                <button
+                  key={opt.value}
+                  onClick={() => handleAspectRatioChange(opt.value)}
+                  className={`relative rounded-xl px-4 py-2.5 text-left transition-all ${
+                    aspectRatio === opt.value
+                      ? "ring-2 ring-[--color-primary] bg-[--color-primary]/10"
+                      : "bg-[--color-surface-1] border border-[--color-border-def] hover:border-[--color-border-str]"
+                  }`}
+                  aria-pressed={aspectRatio === opt.value}
+                >
+                  <div className="text-sm font-medium text-white/80">{opt.label}</div>
+                  <div className="text-xs text-[--color-muted]">{opt.platform}</div>
+                </button>
               ))}
             </div>
           </motion.div>

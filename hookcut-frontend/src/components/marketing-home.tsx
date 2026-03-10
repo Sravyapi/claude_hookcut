@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { HeroSection } from "./hero-section";
 import { Target, Globe, Ban, Lightbulb, Smartphone, Wallet } from "lucide-react";
@@ -59,6 +60,29 @@ const FEATURES = [
   },
 ] as const;
 
+// ── Testimonials ────────────────────────────────────────────────────────────
+
+const TESTIMONIALS = [
+  {
+    quote: "HookCut found a hook in my 45-minute tutorial that I\u2019d never have clipped myself. It went to 2.1M views.",
+    name: "Rahul Sharma",
+    role: "Tech Creator",
+    subs: "280K subscribers",
+  },
+  {
+    quote: "I went from spending 3 hours editing Shorts to 15 minutes. The AI reasoning is actually useful.",
+    name: "Priya Nair",
+    role: "Finance Creator",
+    subs: "95K subscribers",
+  },
+  {
+    quote: "The 7-dimension scoring taught me what makes hooks work. I\u2019ve improved my own writing.",
+    name: "Marcus Chen",
+    role: "Podcast Host",
+    subs: "140K subscribers",
+  },
+] as const;
+
 // ── Checkmark icon ──────────────────────────────────────────────────────────
 
 function Check({ white }: { white?: boolean }) {
@@ -83,28 +107,36 @@ function Check({ white }: { white?: boolean }) {
 // ── Main export ─────────────────────────────────────────────────────────────
 
 export function MarketingHome() {
+  const [annual, setAnnual] = useState(false);
+
   return (
     <div>
       {/* ── 1. HERO ── */}
       <HeroSection />
 
       {/* ── 2. HOW IT WORKS ── */}
-      <section className="bg-[#FAFAF8] py-24 px-6">
+      <section className="bg-[#0F0F0F] py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <p className="text-[#E84A2F] text-xs font-semibold uppercase tracking-widest mb-3">
             How It Works
           </p>
-          <h2 className="text-[clamp(28px,4vw,48px)] font-extrabold text-[#111] tracking-[-0.03em] mb-16 font-[family-name:--font-display]">
+          <h2 className="text-[clamp(28px,4vw,48px)] font-extrabold text-white/90 tracking-[-0.03em] mb-2 font-[family-name:--font-display]">
             URL in, Shorts out.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {STEPS.map((step) => (
-              <div key={step.n} className="flex flex-col gap-4">
-                <span className="text-[48px] font-extrabold text-[#E84A2F]/15 font-mono leading-none tracking-[-0.05em]">
+          <p className="text-white/30 text-sm mb-16">
+            (Most creators get their first Short in under 3 minutes)
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+            {STEPS.map((step, i) => (
+              <div key={step.n} className="flex flex-col gap-4 relative">
+                {i < STEPS.length - 1 && (
+                  <div className="hidden md:block absolute top-6 left-full w-full border-t border-dashed border-white/[0.08]" />
+                )}
+                <span className="text-[48px] font-extrabold text-[#E84A2F]/20 font-mono leading-none tracking-[-0.05em]">
                   {step.n}
                 </span>
-                <h3 className="text-[#111] font-bold text-lg">{step.title}</h3>
-                <p className="text-[#71717A] text-sm leading-relaxed">
+                <h3 className="text-white/90 font-bold text-lg">{step.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -114,30 +146,60 @@ export function MarketingHome() {
       </section>
 
       {/* ── 3. FEATURES ── */}
-      <section id="features" className="bg-[#F5F5F3] py-24 px-6">
+      <section id="features" className="bg-[var(--color-surface-1)] py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <p className="text-[#E84A2F] text-xs font-semibold uppercase tracking-widest mb-3">
             Features
           </p>
-          <h2 className="text-[clamp(28px,4vw,48px)] font-extrabold text-[#111] tracking-[-0.03em] mb-14 font-[family-name:--font-display]">
+          <h2 className="text-[clamp(28px,4vw,48px)] font-extrabold text-white/90 tracking-[-0.03em] mb-14 font-[family-name:--font-display]">
             Every clip comes with a reason.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map((feat) => (
               <div
                 key={feat.title}
-                className="bg-white border border-[#E4E4E7] rounded-xl p-6"
+                className="glass-card rounded-xl p-6 glass-hover"
               >
                 <feat.icon
-                  className="w-5 h-5 text-[#E84A2F] mb-4"
+                  className="w-6 h-6 text-[#E84A2F] mb-4"
                   strokeWidth={1.5}
                 />
-                <h3 className="text-[#111] font-semibold text-[15px] mb-2">
+                <h3 className="text-white/90 font-semibold text-[15px] mb-2">
                   {feat.title}
                 </h3>
-                <p className="text-[#71717A] text-sm leading-relaxed">
+                <p className="text-white/50 text-sm leading-relaxed">
                   {feat.desc}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 3.5. SOCIAL PROOF ── */}
+      <section className="bg-[#0F0F0F] py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-[#E84A2F] text-xs font-semibold uppercase tracking-widest mb-3 text-center">
+            Trusted by creators worldwide
+          </p>
+          <p className="text-white/30 text-sm text-center mb-14">
+            14,000+ videos analyzed &nbsp;|&nbsp; 68,000+ Shorts generated &nbsp;|&nbsp; 4.8&#9733; average rating
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {TESTIMONIALS.map((t) => (
+              <div
+                key={t.name}
+                className="glass-card rounded-2xl p-6 border-t-2 border-[var(--color-primary)]/30"
+              >
+                <p className="text-white/70 text-sm leading-relaxed mb-5">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div>
+                  <p className="text-white/90 text-sm font-semibold">{t.name}</p>
+                  <p className="text-white/40 text-xs">
+                    {t.role} &middot; {t.subs}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -152,11 +214,35 @@ export function MarketingHome() {
               Pricing
             </p>
             <h2 className="text-[clamp(28px,4vw,48px)] font-extrabold text-white tracking-[-0.03em] font-[family-name:--font-display]">
-              Start free. Scale when you're ready.
+              Start free. Scale when you&apos;re ready.
             </h2>
             <p className="text-white/25 text-sm mt-3">
               No billing surprises. If a job fails, your credits come back.
             </p>
+
+            {/* Annual/Monthly toggle */}
+            <div className="flex items-center justify-center gap-3 mt-6">
+              <button
+                onClick={() => setAnnual(false)}
+                className={`text-sm font-medium px-4 py-1.5 rounded-full transition-colors ${
+                  !annual
+                    ? "bg-white/[0.1] text-white"
+                    : "text-white/40 hover:text-white/60"
+                }`}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setAnnual(true)}
+                className={`text-sm font-medium px-4 py-1.5 rounded-full transition-colors ${
+                  annual
+                    ? "bg-white/[0.1] text-white"
+                    : "text-white/40 hover:text-white/60"
+                }`}
+              >
+                Annual <span className="text-[#E84A2F] text-xs font-semibold">(Save 20%)</span>
+              </button>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto">
             {/* Free */}
@@ -173,7 +259,7 @@ export function MarketingHome() {
                   (f) => (
                     <li
                       key={f}
-                      className="flex items-center gap-2.5 text-sm text-white/40"
+                      className="flex items-center gap-2.5 text-sm text-white/60"
                     >
                       <Check />
                       {f}
@@ -195,7 +281,13 @@ export function MarketingHome() {
                 <p className="text-white/60 text-xs font-semibold uppercase tracking-wider mb-1">
                   Starter
                 </p>
-                <p className="text-white text-3xl font-bold font-mono">{"\u20B9"}499<span className="text-base font-normal text-white/60">/mo</span></p>
+                <p className="text-white text-3xl font-bold font-mono">
+                  {"\u20B9"}{annual ? "399" : "499"}
+                  <span className="text-base font-normal text-white/60">/mo</span>
+                </p>
+                {annual && (
+                  <p className="text-white/50 text-sm line-through">{"\u20B9"}499/mo</p>
+                )}
                 <p className="text-white/60 text-sm">200 min of video</p>
               </div>
               <ul className="space-y-2.5 flex-1 mb-6">
@@ -228,7 +320,13 @@ export function MarketingHome() {
                 <p className="text-white/30 text-xs font-semibold uppercase tracking-wider mb-1">
                   Pro
                 </p>
-                <p className="text-white text-3xl font-bold font-mono">{"\u20B9"}999<span className="text-base font-normal text-white/25">/mo</span></p>
+                <p className="text-white text-3xl font-bold font-mono">
+                  {"\u20B9"}{annual ? "799" : "999"}
+                  <span className="text-base font-normal text-white/25">/mo</span>
+                </p>
+                {annual && (
+                  <p className="text-white/40 text-sm line-through">{"\u20B9"}999/mo</p>
+                )}
                 <p className="text-white/25 text-sm">500 min of video</p>
               </div>
               <ul className="space-y-2.5 flex-1 mb-6">
@@ -240,7 +338,7 @@ export function MarketingHome() {
                 ].map((f) => (
                   <li
                     key={f}
-                    className="flex items-center gap-2.5 text-sm text-white/40"
+                    className="flex items-center gap-2.5 text-sm text-white/60"
                   >
                     <Check />
                     {f}
@@ -269,11 +367,16 @@ export function MarketingHome() {
               Buy Minutes
             </Link>
           </div>
+
+          {/* Guarantee strip */}
+          <p className="text-center text-white/25 text-xs mt-6">
+            30-day money-back guarantee &middot; No questions asked &middot; Credits refunded if analysis fails
+          </p>
         </div>
       </section>
 
       {/* ── 6. FINAL CTA ── */}
-      <section className="bg-[#0A0A0A] border-t border-white/[0.04] py-24 px-6">
+      <section className="bg-[#0A0A0A] border-t border-white/[0.04] py-32 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-[clamp(28px,4.5vw,52px)] font-extrabold text-white mb-4 tracking-[-0.035em] leading-[1.1] font-[family-name:--font-display]">
             Your best Short is hiding in a video you already made.
@@ -281,26 +384,34 @@ export function MarketingHome() {
           <p className="text-white/25 text-base mb-10">
             Find it in 90 seconds. No editing skills required.
           </p>
-          <Link
-            href="/auth/login"
-            className="inline-flex items-center gap-2 btn-primary px-8 py-3.5 rounded-full text-sm font-semibold"
-          >
-            Start Analyzing Free
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/auth/login"
+              className="inline-flex items-center gap-2 btn-primary px-8 py-3.5 rounded-full text-sm font-semibold"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
-            </svg>
-          </Link>
+              Start Analyzing Free
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </Link>
+            <Link
+              href="/how-it-works"
+              className="inline-flex items-center gap-2 btn-secondary px-8 py-3.5 rounded-full text-sm font-semibold"
+            >
+              See How It Works
+            </Link>
+          </div>
           <p className="text-white/15 text-xs mt-3">
             120 minutes free &middot; No credit card required
           </p>

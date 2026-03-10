@@ -3,16 +3,16 @@ import Link from "next/link";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
-  title: "Features | HookCut — Hook Analysis Engine for YouTube Shorts",
+  title: "HookCut Features — AI Hook Scoring, 18 Hook Types | HookCut",
   description:
     "HookCut identifies the scroll-stopping moments in any YouTube video. Scored, explained, clipped, and ready to post as Shorts in under 2 minutes.",
   openGraph: {
-    title: "Features | HookCut",
+    title: "HookCut Features — AI Hook Scoring, 18 Hook Types | HookCut",
     description: "Hook scoring, 18 hook types, composite detection, penalty filtering, and transparent credit billing.",
     type: "website",
     url: "https://hookcut.ai/features",
   },
-  twitter: { card: "summary_large_image", title: "Features | HookCut", description: "Hook scoring, 18 hook types, composite detection, penalty filtering, and transparent credit billing." },
+  twitter: { card: "summary_large_image", title: "HookCut Features — AI Hook Scoring, 18 Hook Types | HookCut", description: "Hook scoring, 18 hook types, composite detection, penalty filtering, and transparent credit billing." },
   alternates: { canonical: "https://hookcut.ai/features" },
 };
 
@@ -30,19 +30,19 @@ const FEATURES = [
       "Grade label included: Needs Work · Moderate · High Impact · Exceptional",
     ],
     visual: (
-      <div className="bg-[#111111] rounded-2xl p-6 text-center">
+      <div className="glass-card rounded-2xl p-6 text-center">
         <div className="relative w-24 h-24 mx-auto mb-3">
           <svg viewBox="0 0 80 80" className="w-full h-full -rotate-90">
             <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="5" />
-            <circle cx="40" cy="40" r="36" fill="none" stroke="#16A34A" strokeWidth="5" strokeLinecap="round"
+            <circle cx="40" cy="40" r="36" fill="none" stroke="var(--color-success)" strokeWidth="5" strokeLinecap="round"
               strokeDasharray="226" strokeDashoffset="22" />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-3xl font-bold text-white font-mono">9.0</span>
-            <span className="text-[9px] text-white/30 uppercase tracking-wider">score</span>
+            <span className="text-3xl font-bold text-[var(--color-text)] font-mono">9.0</span>
+            <span className="text-[9px] text-[var(--color-muted)] uppercase tracking-wider">score</span>
           </div>
         </div>
-        <span className="text-sm font-semibold text-[#16A34A]">Exceptional</span>
+        <span className="text-sm font-semibold text-[var(--color-success)]">Exceptional</span>
       </div>
     ),
   },
@@ -59,14 +59,14 @@ const FEATURES = [
       "Funnel role classification: TOFU · MOFU · BOFU",
     ],
     visual: (
-      <div className="bg-[#111111] rounded-2xl p-5 space-y-2">
+      <div className="glass-card rounded-2xl p-5 space-y-2">
         {["CURIOSITY GAP", "SHOCK STATISTIC", "CONTRARIAN CLAIM", "PAIN ESCALATION", "OPEN LOOP"].map((type, i) => (
           <div key={type} className="flex items-center gap-2">
-            <div className={`w-2 h-2 rounded-full ${i === 0 ? "bg-[#E84A2F]" : i === 1 ? "bg-amber-400" : i === 2 ? "bg-blue-400" : i === 3 ? "bg-purple-400" : "bg-emerald-400"}`} />
-            <span className="text-[11px] font-semibold tracking-wide text-white/70">{type}</span>
+            <div className={`w-2 h-2 rounded-full ${i === 0 ? "bg-[var(--color-primary)]" : i === 1 ? "bg-amber-400" : i === 2 ? "bg-blue-400" : i === 3 ? "bg-purple-400" : "bg-emerald-400"}`} />
+            <span className="text-[11px] font-semibold tracking-wide text-[var(--color-muted)]">{type}</span>
           </div>
         ))}
-        <p className="text-[10px] text-white/30 pt-1">+13 more hook types</p>
+        <p className="text-[10px] text-[var(--color-muted)] pt-1">+13 more hook types</p>
       </div>
     ),
   },
@@ -83,12 +83,12 @@ const FEATURES = [
       "Narrative arc classification: Intrigue → Proof → Escalation → Open Loop",
     ],
     visual: (
-      <div className="bg-[#111111] rounded-2xl p-5">
+      <div className="glass-card rounded-2xl p-5">
         <div className="flex items-center gap-2 mb-3">
           <span className="text-[11px] px-2.5 py-0.5 rounded-full border font-semibold tracking-wide bg-amber-500/10 text-amber-300 border-amber-500/20">CURIOSITY GAP</span>
           <span className="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400/80 border border-amber-500/15">Composite</span>
         </div>
-        <p className="text-[13px] text-white/70 leading-relaxed">
+        <p className="text-[13px] text-[var(--color-muted)] leading-relaxed">
           "The one investment mistake that&apos;s quietly costing you thousands — and nobody&apos;s talking about it."
         </p>
       </div>
@@ -107,7 +107,7 @@ const FEATURES = [
       "Mid-sentence cuts and filler transitions rejected",
     ],
     visual: (
-      <div className="bg-[#111111] rounded-2xl p-5 space-y-2">
+      <div className="glass-card rounded-2xl p-5 space-y-2">
         {[
           { label: "\"Hey guys, welcome back...\"", pass: false },
           { label: "Sponsor segment (2:14–3:02)", pass: false },
@@ -116,10 +116,10 @@ const FEATURES = [
           { label: "\"Nobody talks about this trick...\"", pass: true },
         ].map((item) => (
           <div key={item.label} className="flex items-center gap-2.5">
-            <span className={`text-base ${item.pass ? "text-[#16A34A]" : "text-[#DC2626]"}`} aria-hidden="true">
+            <span className={`text-base ${item.pass ? "text-[var(--color-success)]" : "text-[#DC2626]"}`} aria-hidden="true">
               {item.pass ? "✓" : "✕"}
             </span>
-            <span className={`text-[11px] ${item.pass ? "text-white/70" : "text-white/30 line-through"}`}>{item.label}</span>
+            <span className={`text-[11px] ${item.pass ? "text-[var(--color-muted)]" : "text-[var(--color-muted)]/50 line-through"}`}>{item.label}</span>
           </div>
         ))}
       </div>
@@ -138,18 +138,18 @@ const FEATURES = [
       "India pricing: ₹499/month — pay via UPI",
     ],
     visual: (
-      <div className="bg-[#111111] rounded-2xl p-5">
+      <div className="glass-card rounded-2xl p-5">
         <div className="space-y-3">
           {[
             { label: "10-min YouTube video", credits: "10 credits", cost: "₹4.99" },
             { label: "60-min podcast episode", credits: "60 credits", cost: "₹29.93" },
             { label: "Failed analysis", credits: "Refunded", cost: "₹0" },
           ].map((item) => (
-            <div key={item.label} className="flex items-center justify-between border-b border-white/[0.05] pb-2 last:border-0 last:pb-0">
-              <span className="text-[11px] text-white/50">{item.label}</span>
+            <div key={item.label} className="flex items-center justify-between border-b border-[var(--color-border-sub)] pb-2 last:border-0 last:pb-0">
+              <span className="text-[11px] text-[var(--color-muted)]">{item.label}</span>
               <div className="flex items-center gap-3">
-                <span className="text-[11px] font-mono text-[#E84A2F]">{item.credits}</span>
-                <span className="text-[11px] font-mono text-white/30">{item.cost}</span>
+                <span className="text-[11px] font-mono text-[var(--color-primary)]">{item.credits}</span>
+                <span className="text-[11px] font-mono text-[var(--color-muted)]">{item.cost}</span>
               </div>
             </div>
           ))}
@@ -161,11 +161,11 @@ const FEATURES = [
 
 export default function FeaturesPage() {
   return (
-    <div className="bg-[#FAFAF8] min-h-screen">
+    <div className="bg-[var(--color-bg)] min-h-screen">
       <Header />
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#E84A2F] focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--color-primary)] focus:text-white focus:rounded-lg focus:text-sm focus:font-medium"
       >
         Skip to content
       </a>
@@ -173,19 +173,19 @@ export default function FeaturesPage() {
       {/* Hero */}
       <section className="pt-32 pb-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#E84A2F]/10 border border-[#E84A2F]/20 text-[#E84A2F] text-xs font-semibold mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 text-[var(--color-primary)] text-xs font-semibold mb-6">
             What HookCut does
           </div>
-          <h1 className="text-5xl sm:text-6xl font-[family-name:--font-display] font-bold text-[#0A0A0A] leading-tight tracking-tight mb-6">
+          <h1 className="text-h1 font-[family-name:--font-display] font-bold text-[var(--color-text)] leading-tight tracking-tight mb-6">
             Built for hooks,<br />not clips.
           </h1>
-          <p className="text-lg text-[#71717A] leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-lg text-[var(--color-muted)] leading-relaxed max-w-2xl mx-auto mb-10">
             HookCut is a hook analysis engine. It doesn&apos;t just cut your video into clips — it identifies the moments
             most likely to stop a scroll, scores them, and explains why.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-[#E84A2F] text-white text-sm font-semibold hover:bg-[#D13F25] transition-colors"
+            className="btn-primary inline-flex items-center gap-2 text-sm"
           >
             Find My Hooks
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -197,27 +197,27 @@ export default function FeaturesPage() {
 
       <main id="main-content">
         {/* Feature sections */}
-        <div className="divide-y divide-[#E4E4E7]">
+        <div className="space-y-0">
           {FEATURES.map((feature, i) => (
             <section
               key={feature.id}
               id={feature.id}
-              className={`py-20 px-6 ${i % 2 === 1 ? "bg-white" : "bg-[#FAFAF8]"}`}
+              className={`py-20 px-6 ${i % 2 === 1 ? "bg-[var(--color-surface-1)]" : ""}`}
             >
               <div className="max-w-5xl mx-auto">
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:grid-flow-dense" : ""}`}>
                   {/* Text side */}
                   <div className={i % 2 === 1 ? "lg:col-start-1" : ""}>
-                    <div className="text-[#E84A2F] font-mono text-sm font-bold mb-3">{feature.number}</div>
-                    <h2 className="text-3xl font-[family-name:--font-display] font-bold text-[#0A0A0A] mb-3 leading-tight">
+                    <div className="text-[var(--color-primary)] font-mono text-sm font-bold mb-3">{feature.number}</div>
+                    <h2 className="text-h2 font-[family-name:--font-display] font-bold text-[var(--color-text)] mb-3 leading-tight">
                       {feature.title}
                     </h2>
-                    <p className="text-[#71717A] font-medium mb-4 text-sm">{feature.tagline}</p>
-                    <p className="text-[#71717A] leading-relaxed mb-6">{feature.description}</p>
+                    <p className="text-[var(--color-muted)] font-medium mb-4 text-sm">{feature.tagline}</p>
+                    <p className="text-[var(--color-muted)] leading-relaxed mb-6">{feature.description}</p>
                     <ul className="space-y-2.5" aria-label={`${feature.title} details`}>
                       {feature.details.map((detail) => (
-                        <li key={detail} className="flex items-start gap-2.5 text-sm text-[#71717A]">
-                          <svg className="w-4 h-4 text-[#E84A2F] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <li key={detail} className="flex items-start gap-2.5 text-sm text-[var(--color-muted)]">
+                          <svg className="w-4 h-4 text-[var(--color-primary)] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                           </svg>
                           {detail}
@@ -237,22 +237,22 @@ export default function FeaturesPage() {
         </div>
 
         {/* Final CTA */}
-        <section className="py-24 px-6 bg-[#0A0A0A] text-center">
+        <section className="py-24 px-6 bg-[var(--color-surface-1)] text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl font-[family-name:--font-display] font-bold text-white mb-4">
+            <h2 className="text-h2 font-[family-name:--font-display] font-bold text-[var(--color-text)] mb-4">
               Your next viral Short is already in your video.
             </h2>
-            <p className="text-white/50 mb-10">Find it in under 2 minutes.</p>
+            <p className="text-[var(--color-muted)] mb-10">Find it in under 2 minutes.</p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-[#E84A2F] text-white font-semibold hover:bg-[#D13F25] transition-colors"
+              className="btn-primary inline-flex items-center gap-2 text-sm"
             >
               Start Analyzing
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Link>
-            <p className="text-white/25 text-xs mt-4">120 free minutes · No credit card · Results in ~2 minutes</p>
+            <p className="text-[var(--color-muted)] text-xs mt-4">120 free minutes · No credit card · Results in ~2 minutes</p>
           </div>
         </section>
       </main>

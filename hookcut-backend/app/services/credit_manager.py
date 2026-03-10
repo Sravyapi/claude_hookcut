@@ -26,16 +26,13 @@ class DeductionResult:
 
     @property
     def credits_source(self) -> str:
-        sources = []
         if self.paid_used > 0:
-            sources.append("paid")
+            return "paid"
         if self.payg_used > 0:
-            sources.append("payg")
+            return "payg"
         if self.free_used > 0:
-            sources.append("free")
-        if len(sources) > 1:
-            return "mixed"
-        return sources[0] if sources else "free"
+            return "free"
+        return "none"
 
 
 class CreditManager:
@@ -118,6 +115,82 @@ class CreditManager:
 
         self.db.commit()
 
+        return result
+
+    def deduct_manual_credits(
+        self, user_id: str, minutes: float, session_id: str, plan_tier: str
+    ) -> DeductionResult:
+        """
+        Deduct manual clip minutes.
+        - Pro/Pro Max: no deduction (unlimited manual clips)
+        - Lite: deduct from manual_clip_minutes_remaining
+        - Free: deduct from manual_clip_minutes_remaining (separate from AI pool)
+        - PAYG: deduct from payg_minutes_remaining at 2 INR/min rate
+        - Order: Manual pool -> PAYG -> reject (do NOT fall through to AI pool)
+        """
+        if plan_tier in ("pro", "pro_max"):
+            return DeductionResult(
+                success=True, paid_used=0, payg_used=0, free_used=0,
+                is_watermarked=False,
+            )
+
+        self._get_or_create_balance(user_id)  # ensure row exists before locking
+
+        with self.db.begin_nested():
+            balance = self.db.execute(
+                select(CreditBalance).where(CreditBalance.user_id == user_id).with_for_update()
+            ).scalar_one()
+
+            remaining = minutes
+            manual_used = 0.0
+            payg_used = 0.0
+            free_used = 0.0
+
+            # Capture original totals before deduction for error messages
+            original_manual = balance.manual_clip_minutes_remaining
+            original_payg = balance.payg_minutes_remaining
+
+            # 1. Manual clip pool first (Lite and Free tiers)
+            if remaining > 0 and balance.manual_clip_minutes_remaining > 0:
+                take = min(remaining, balance.manual_clip_minutes_remaining)
+                balance.manual_clip_minutes_remaining -= take
+                manual_used = take
+                remaining -= take
+
+            # 2. PAYG minutes second
+            if remaining > 0 and balance.payg_minutes_remaining > 0:
+                take = min(remaining, balance.payg_minutes_remaining)
+                balance.payg_minutes_remaining -= take
+                payg_used = take
+                remaining -= take
+
+            if remaining > 0.01:  # small epsilon for float precision
+                return DeductionResult(
+                    success=False, paid_used=0, payg_used=0, free_used=0,
+                    is_watermarked=False,
+                    error=f"Insufficient manual clip minutes. Available: {original_manual + original_payg:.1f}, needed: {minutes:.1f}",
+                )
+
+            is_watermarked = plan_tier == "free"
+
+            result = DeductionResult(
+                success=True, paid_used=manual_used, payg_used=payg_used,
+                free_used=free_used, is_watermarked=is_watermarked,
+            )
+
+            transaction = Transaction(
+                user_id=user_id,
+                type="credit_deduction",
+                session_id=session_id,
+                minutes_amount=minutes,
+                description=(
+                    f"Manual clip: deducted {minutes:.1f} min "
+                    f"(manual={manual_used:.1f}, payg={payg_used:.1f})"
+                ),
+            )
+            self.db.add(transaction)
+
+        self.db.commit()
         return result
 
     def refund(

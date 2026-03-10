@@ -63,7 +63,7 @@ function ErrorBanner({ error, onDismiss }: { error: string; onDismiss: () => voi
           exit={{ opacity: 0, y: -12 }}
           className="fixed top-16 left-0 right-0 z-40 px-4 py-2"
         >
-          <div className="max-w-2xl mx-auto p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm flex items-center gap-3">
+          <div className="max-w-2xl mx-auto p-3 rounded-xl bg-[--color-error]/10 border border-[--color-error]/20 text-[--color-error] text-sm flex items-center gap-3">
             <svg
               className="w-4 h-4 shrink-0"
               fill="none"
@@ -81,7 +81,7 @@ function ErrorBanner({ error, onDismiss }: { error: string; onDismiss: () => voi
             <span>{error}</span>
             <button
               onClick={onDismiss}
-              className="ml-auto text-red-400/60 hover:text-red-400 transition-colors"
+              className="ml-auto text-[--color-error]/60 hover:text-[--color-error] transition-colors"
               aria-label="Dismiss error"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -378,11 +378,12 @@ export default function HomeStateMachine({ marketingContent }: Props) {
     async (
       hookIds: string[],
       captionStyle: string = "clean",
-      timeOverrides: Record<string, { start_seconds: number; end_seconds: number }> = {}
+      timeOverrides: Record<string, { start_seconds: number; end_seconds: number }> = {},
+      aspectRatio: string = "9:16"
     ) => {
       if (!sessionId) return;
       try {
-        const result = await api.selectHooks(sessionId, hookIds, captionStyle, timeOverrides);
+        const result = await api.selectHooks(sessionId, hookIds, captionStyle, timeOverrides, aspectRatio);
         dispatch({ type: "SHORTS_SELECTED", shortIds: result.short_ids });
       } catch (err) {
         dispatch({
@@ -450,6 +451,7 @@ export default function HomeStateMachine({ marketingContent }: Props) {
                 onRegenerate={handleRegenerate}
                 isRegenerating={state.isRegenerating}
                 analysisElapsed={state.analysisElapsed}
+                sessionId={state.sessionId}
               />
             </motion.div>
           )}

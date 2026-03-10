@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "Best Submagic Alternative for Viral Hook Detection | HookCut",
+  title: "HookCut vs Submagic — Hooks First, Not Just Captions | HookCut",
   description:
-    "Submagic adds captions. HookCut finds the hooks worth captioning. Get scored, explained hook moments from any YouTube video — then generate your Short with captions included.",
+    "Submagic adds captions. HookCut finds the hooks worth captioning first, then generates Shorts with captions. Try 120 free mins.",
   openGraph: {
-    title: "Best Submagic Alternative for Viral Hook Detection | HookCut",
+    title: "HookCut vs Submagic — Hooks First, Not Just Captions | HookCut",
     description:
-      "HookCut finds the hooks worth captioning. Get scored hook moments from any YouTube video — then generate your Short with captions included.",
+      "Submagic adds captions. HookCut finds the hooks worth captioning first, then generates Shorts with captions. Try 120 free mins.",
     type: "website",
     url: "https://hookcut.ai/submagic-alternative",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Submagic Alternative for Viral Hook Detection | HookCut",
+    title: "HookCut vs Submagic — Hooks First, Not Just Captions | HookCut",
     description:
-      "HookCut finds the hooks worth captioning. Get scored hook moments from any YouTube video — then generate your Short with captions included.",
+      "Submagic adds captions. HookCut finds the hooks worth captioning first, then generates Shorts with captions. Try 120 free mins.",
   },
   alternates: { canonical: "https://hookcut.ai/submagic-alternative" },
 };

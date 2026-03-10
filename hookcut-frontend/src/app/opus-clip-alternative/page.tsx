@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import { AlternativePage, type CompetitorData } from "@/components/alternative-page";
 
 export const metadata: Metadata = {
-  title: "Best OpusClip Alternative for Viral Hook Detection | HookCut",
+  title: "HookCut vs OpusClip — Better Hook Scoring, Indian Pricing | HookCut",
   description:
-    "Looking for an OpusClip alternative that actually explains why each clip is worth posting? HookCut scores every hook 0–100 and surfaces only the moments most likely to stop a scroll.",
+    "HookCut scores every hook 0-100 and surfaces only scroll-stopping moments. Indian pricing at Rs499/mo via UPI. Try free.",
   openGraph: {
-    title: "Best OpusClip Alternative for Viral Hook Detection | HookCut",
+    title: "HookCut vs OpusClip — Better Hook Scoring, Indian Pricing | HookCut",
     description:
-      "HookCut scores every hook 0–100 and surfaces only the moments most likely to stop a scroll. No more random clips.",
+      "HookCut scores every hook 0-100 and surfaces only scroll-stopping moments. Indian pricing at Rs499/mo via UPI. Try free.",
     type: "website",
     url: "https://hookcut.ai/opus-clip-alternative",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best OpusClip Alternative for Viral Hook Detection | HookCut",
+    title: "HookCut vs OpusClip — Better Hook Scoring, Indian Pricing | HookCut",
     description:
-      "HookCut scores every hook 0–100 and surfaces only the moments most likely to stop a scroll. No more random clips.",
+      "HookCut scores every hook 0-100 and surfaces only scroll-stopping moments. Indian pricing at Rs499/mo via UPI. Try free.",
   },
   alternates: { canonical: "https://hookcut.ai/opus-clip-alternative" },
 };

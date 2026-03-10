@@ -19,13 +19,15 @@ export const authOptions: NextAuthOptions = {
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) return null;
         const isRegister = credentials.mode === "register";
+        // NEXT_PUBLIC_API_URL already includes /api (e.g. http://localhost:8000/api)
+        // NEXTAUTH_BACKEND_URL is the base URL without /api
         const backendUrl =
           process.env.NEXTAUTH_BACKEND_URL ||
-          process.env.NEXT_PUBLIC_API_URL ||
           "http://localhost:8000";
+        const apiBase = process.env.NEXT_PUBLIC_API_URL || `${backendUrl}/api`;
         const endpoint = isRegister
-          ? `${backendUrl}/api/auth/register`
-          : `${backendUrl}/api/auth/login`;
+          ? `${apiBase}/auth/register`
+          : `${apiBase}/auth/login`;
         const body: Record<string, string> = {
           email: credentials.email,
           password: credentials.password,

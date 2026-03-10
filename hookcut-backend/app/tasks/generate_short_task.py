@@ -12,6 +12,7 @@ from app.services.credit_manager import CreditManager
 from app.models.session import AnalysisSession, Hook, Short
 from app.services.short_generator import ShortGenerator
 from app.services.storage import get_storage_service
+from app.services.transcript import TranscriptService
 
 logger = logging.getLogger(__name__)
 
@@ -42,20 +43,30 @@ def generate_short(self, short_id: str):
             db.commit()
             return {"error": "Session not found"}
 
-        hook = db.get(Hook, short.hook_id)
-        if not hook:
-            logger.error(f"Hook {short.hook_id} not found for short {short_id}")
-            short.status = "failed"
-            short.error_message = "Associated hook not found"
-            db.commit()
-            return {"error": "Hook not found"}
+        # For manual clips, hook is None
+        hook = None
+        if short.hook_id:
+            hook = db.get(Hook, short.hook_id)
+            if not hook:
+                logger.error(f"Hook {short.hook_id} not found for short {short_id}")
+                short.status = "failed"
+                short.error_message = "Associated hook not found"
+                db.commit()
+                return {"error": "Hook not found"}
 
         generator = ShortGenerator()
         storage = get_storage_service()
 
+        is_manual = getattr(short, 'source_type', 'ai') == "manual"
+
         # Use time overrides if set (from trim controls)
-        start_sec = short.start_seconds_override if short.start_seconds_override is not None else hook.start_seconds
-        end_sec = short.end_seconds_override if short.end_seconds_override is not None else hook.end_seconds
+        start_sec = short.start_seconds_override
+        end_sec = short.end_seconds_override
+
+        if not is_manual and hook:
+            # AI mode: use hook times with optional overrides
+            start_sec = short.start_seconds_override if short.start_seconds_override is not None else hook.start_seconds
+            end_sec = short.end_seconds_override if short.end_seconds_override is not None else hook.end_seconds
 
         def on_progress(status: str, pct: int, label: str):
             """Callback from generator to update DB status + Celery progress."""
@@ -63,28 +74,65 @@ def generate_short(self, short_id: str):
             db.commit()
             self.update_state(state="PROGRESS", meta={"stage": label, "progress": pct})
 
+        # For manual clips, fetch transcript if not already present
+        if is_manual and not session.transcript_text:
+            on_progress("processing", 10, "Fetching transcript for captions...")
+            try:
+                ts = TranscriptService()
+                transcript_result = ts.fetch(session.video_id, session.language or "English")
+                if transcript_result:
+                    session.transcript_text = transcript_result.text
+                    db.commit()
+                    logger.info("Fetched transcript for manual session %s (%d chars)", session.id, len(transcript_result.text))
+            except Exception as e:
+                logger.warning("Failed to fetch transcript for manual clip captions: %s", e)
+                # Continue without captions rather than failing the whole clip
+
         work_dir = None
         try:
-            result = generator.generate(
-                youtube_url=session.youtube_url,
-                hook={
-                    "start_time": hook.start_time,
-                    "end_time": hook.end_time,
-                    "start_seconds": start_sec,
-                    "end_seconds": end_sec,
-                    "hook_text": hook.hook_text,
-                    "is_composite": hook.is_composite,
-                    "hook_type": hook.hook_type or "",
-                    "attention_score": hook.attention_score or 0.0,
-                },
-                session_id=session.id,
-                short_id=short.id,
-                is_watermarked=short.is_watermarked,
-                language=session.language,
-                niche=session.niche,
-                caption_style=short.caption_style or "clean",
-                on_progress=on_progress,
-            )
+            if is_manual:
+                result = generator.generate(
+                    youtube_url=session.youtube_url,
+                    hook=None,
+                    session_id=session.id,
+                    short_id=short.id,
+                    is_watermarked=short.is_watermarked,
+                    language=session.language,
+                    niche=session.niche,
+                    caption_style=short.caption_style or "clean",
+                    transcript_text=session.transcript_text or "",
+                    aspect_ratio=getattr(short, 'aspect_ratio', '9:16') or '9:16',
+                    captions_enabled=True,
+                    audio_normalization=True,
+                    source_type="manual",
+                    start_seconds=start_sec,
+                    end_seconds=end_sec,
+                    video_title=session.video_title,
+                    on_progress=on_progress,
+                )
+            else:
+                result = generator.generate(
+                    youtube_url=session.youtube_url,
+                    hook={
+                        "start_time": hook.start_time,
+                        "end_time": hook.end_time,
+                        "start_seconds": start_sec,
+                        "end_seconds": end_sec,
+                        "hook_text": hook.hook_text,
+                        "is_composite": hook.is_composite,
+                        "hook_type": hook.hook_type or "",
+                        "attention_score": hook.attention_score or 0.0,
+                    },
+                    session_id=session.id,
+                    short_id=short.id,
+                    is_watermarked=short.is_watermarked,
+                    language=session.language,
+                    niche=session.niche,
+                    caption_style=short.caption_style or "clean",
+                    transcript_text=session.transcript_text or "",
+                    aspect_ratio=getattr(short, 'aspect_ratio', '9:16') or '9:16',
+                    on_progress=on_progress,
+                )
 
             work_dir = Path(result.video_path).parent
 
@@ -161,8 +209,8 @@ def generate_short(self, short_id: str):
         try:
             import sentry_sdk
             sentry_sdk.capture_exception(e)
-        except Exception:
-            pass
+        except Exception as e2:
+            logger.warning("Failed to report exception to Sentry: %s", e2)
         try:
             short = db.get(Short, short_id)
             if short:

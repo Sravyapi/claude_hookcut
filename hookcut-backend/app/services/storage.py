@@ -35,8 +35,10 @@ class StorageService:
     def _safe_local_path(self, key: str) -> str:
         """Resolve local path for key and verify it is within the storage directory."""
         base = Path(self.local_dir).resolve()
-        dest = (base / key.replace("/", os.sep)).resolve()
-        if not str(dest).startswith(str(base) + os.sep) and dest != base:
+        dest = (base / key).resolve()
+        try:
+            dest.relative_to(base)
+        except ValueError:
             raise ValueError(f"Invalid storage key: path traversal detected in '{key}'")
         return str(dest)
 

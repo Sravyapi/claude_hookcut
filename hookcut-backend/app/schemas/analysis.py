@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, field_validator, model_validator
-from typing import Optional
+from typing import Literal, Optional
 from app.llm.prompts.constants import NICHES, LANGUAGES
 
 
@@ -68,6 +68,7 @@ class TimeOverride(BaseModel):
 class SelectHooksRequest(BaseModel):
     hook_ids: list[str]
     caption_style: str = "clean"
+    aspect_ratio: Literal["9:16", "1:1", "4:5"] = "9:16"
     time_overrides: dict[str, TimeOverride] = {}
 
     @field_validator("hook_ids")

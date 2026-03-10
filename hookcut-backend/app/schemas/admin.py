@@ -185,7 +185,7 @@ class ProviderUpdateRequest(BaseModel):
 class SetApiKeyRequest(BaseModel):
     api_key: str = Field(
         min_length=10,
-        max_length=512,
+        max_length=1024,
         pattern=r'^[A-Za-z0-9_\-]+',
     )
 

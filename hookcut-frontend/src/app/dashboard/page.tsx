@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Clock, CreditCard, Zap, Plus, ChevronLeft, ChevronRight, Search } from "lucide-react";
+import { Clock, CreditCard, Zap, Plus, ChevronLeft, ChevronRight, Search, Scissors } from "lucide-react";
 import { api } from "@/lib/api";
 import type { CreditBalance, HistoryResponse, SessionSummary } from "@/lib/types";
 import { getStatusConfig } from "@/lib/constants";
@@ -309,7 +309,7 @@ export default function DashboardPage() {
               <div className="w-full sm:w-auto flex justify-center">
                 <CreditRing balance={balance} />
               </div>
-              <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
+              <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
                 <StatCard
                   icon={<CreditCard className="w-3.5 h-3.5" />}
                   label="Subscription"
@@ -330,6 +330,13 @@ export default function DashboardPage() {
                   value={`${balance.free_minutes_remaining.toFixed(1)}`}
                   sub={`of ${balance.free_minutes_total.toFixed(0)} min`}
                   color="text-white/40"
+                />
+                <StatCard
+                  icon={<Scissors className="w-3.5 h-3.5" />}
+                  label="Manual Clips"
+                  value={`${balance.manual_clip_minutes_remaining.toFixed(1)}`}
+                  sub={`of ${balance.manual_clip_minutes_total.toFixed(0)} min`}
+                  color="text-violet-400/70"
                 />
               </div>
             </div>

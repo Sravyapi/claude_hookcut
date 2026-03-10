@@ -23,6 +23,11 @@ from app.schemas.analysis import (
 )
 from app.schemas.hooks import HooksListResponse, HookResponse, HookScores
 from app.services.analyze_service import AnalyzeService
+from app.tasks.celery_app import (
+    ANALYZE_RATE_LIMIT, ANALYZE_RATE_WINDOW,
+    REGENERATE_RATE_LIMIT, REGENERATE_RATE_WINDOW,
+    SELECT_HOOKS_RATE_LIMIT, SELECT_HOOKS_RATE_WINDOW,
+)
 
 router = APIRouter()
 
@@ -46,7 +51,7 @@ async def start_analysis(
     Start hook analysis for a YouTube video.
     Credits deducted at this point. Dispatches async Celery task.
     """
-    rate_limiter.check(user_id, "analyze", limit=10, window_seconds=900, request=request)
+    rate_limiter.check(user_id, "analyze", limit=ANALYZE_RATE_LIMIT, window_seconds=ANALYZE_RATE_WINDOW, request=request)
 
     try:
         result = AnalyzeService.start_analysis(
@@ -116,7 +121,7 @@ def regenerate_hooks(
     Regenerate hooks. 1st free, 2nd+ charged.
     Replaces all previous hooks.
     """
-    rate_limiter.check(user_id, "regenerate", limit=5, window_seconds=900, request=request)
+    rate_limiter.check(user_id, "regenerate", limit=REGENERATE_RATE_LIMIT, window_seconds=REGENERATE_RATE_WINDOW, request=request)
 
     try:
         result = AnalyzeService.regenerate_hooks(db=db, session_id=session_id, user_id=user_id)
@@ -135,7 +140,7 @@ def select_hooks(
     user_id: str = Depends(get_current_user_id),
 ):
     """Select 1-3 hooks to generate Shorts from."""
-    rate_limiter.check(user_id, "select_hooks", limit=10, window_seconds=900, request=request)
+    rate_limiter.check(user_id, "select_hooks", limit=SELECT_HOOKS_RATE_LIMIT, window_seconds=SELECT_HOOKS_RATE_WINDOW, request=request)
 
     try:
         result = AnalyzeService.select_hooks(
@@ -145,6 +150,7 @@ def select_hooks(
             caption_style=req.caption_style,
             time_overrides=req.time_overrides,
             user_id=user_id,
+            aspect_ratio=req.aspect_ratio,
         )
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)

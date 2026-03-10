@@ -17,6 +17,8 @@ from app.exceptions import (
     SessionNotFoundError,
     InvalidStateError,
     HooksNotReadyError,
+    ResourceNotFoundError,
+    AuthenticationError,
 )
 from app.llm.prompts.constants import get_regen_fee
 from app.models.billing import Transaction
@@ -277,6 +279,7 @@ class AnalyzeService:
         caption_style: str,
         time_overrides: dict,
         user_id: str | None = None,
+        aspect_ratio: str = "9:16",
     ) -> dict:
         """
         Select hooks and dispatch Short generation tasks.
@@ -358,6 +361,7 @@ class AnalyzeService:
                 hook_id=hook_id,
                 status="queued",
                 caption_style=caption_style,
+                aspect_ratio=aspect_ratio,
                 start_seconds_override=override.start_seconds if override else None,
                 end_seconds_override=override.end_seconds if override else None,
                 is_watermarked=session.is_watermarked,
@@ -382,6 +386,34 @@ class AnalyzeService:
             "short_ids": short_ids,
             "task_ids": task_ids,
         }
+
+    @staticmethod
+    def verify_task_ownership(db: Session, task_id: str, user_id: str) -> None:
+        """Ensure the task_id belongs to the requesting user via session or short lookup.
+
+        Raises: ResourceNotFoundError (task not found), AuthenticationError (wrong user)
+        """
+        # Check AnalysisSession.task_id
+        session = db.execute(
+            select(AnalysisSession).where(AnalysisSession.task_id == task_id)
+        ).scalar_one_or_none()
+        if session:
+            if session.user_id != user_id:
+                raise AuthenticationError("Not authorized to poll this task")
+            return
+
+        # Check Short.task_id (join to session for user_id)
+        short = db.execute(
+            select(Short).where(Short.task_id == task_id)
+        ).scalar_one_or_none()
+        if short:
+            parent = db.get(AnalysisSession, short.session_id)
+            if not parent or parent.user_id != user_id:
+                raise AuthenticationError("Not authorized to poll this task")
+            return
+
+        # Task not found in DB — could be stale or invalid
+        raise ResourceNotFoundError("Task not found")
 
     @staticmethod
     def _ensure_user(db: Session, user_id: str) -> None:

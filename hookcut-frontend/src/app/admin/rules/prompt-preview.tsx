@@ -42,7 +42,7 @@ export default function PromptPreviewPanel({
 }: PromptPreviewPanelProps) {
   return (
     <motion.div
-      className="mt-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6"
+      className="mt-6 glass-card rounded-2xl p-6"
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.15 }}

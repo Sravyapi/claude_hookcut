@@ -2,6 +2,12 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
+import {
+  Shield,
+  Film,
+  AlertCircle,
+  BarChart3,
+} from "lucide-react";
 import { api } from "@/lib/api";
 import { getStatusConfig } from "@/lib/constants";
 import { useToast } from "@/components/ui/use-toast";
@@ -27,7 +33,7 @@ function StatCard({
   return (
     <motion.div
       variants={fadeUpItem}
-      className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6"
+      className="glass-card rounded-2xl p-6"
     >
       <div className="text-3xl mb-3">{emoji}</div>
       <p className="text-3xl font-bold text-white tabular-nums">{value.toLocaleString()}</p>
@@ -40,7 +46,7 @@ function StatCard({
 function ConfidenceBadge({ confidence }: { confidence: number }) {
   if (confidence >= 0.7)
     return (
-      <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/25 font-medium">
+      <span className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-success]/15 text-emerald-300 border border-[--color-success]/25 font-medium">
         High ({(confidence * 100).toFixed(0)}%)
       </span>
     );
@@ -134,23 +140,31 @@ export default function AdminDashboardPage() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
+        className="flex items-center gap-3"
       >
-        <h1 className="text-2xl font-bold text-white">Admin Dashboard</h1>
-        <p className="text-white/40 text-sm mt-0.5">
-          Platform overview and analytics
-        </p>
+        <div>
+          <div className="flex items-center gap-2.5">
+            <h1 className="text-2xl font-bold text-white">Admin Dashboard</h1>
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-[--color-primary]/10 text-[--color-primary] border border-[--color-primary]/20 font-semibold uppercase tracking-wider">
+              <Shield className="w-3 h-3 inline-block mr-1 -mt-px" />Admin
+            </span>
+          </div>
+          <p className="text-white/40 text-sm mt-0.5">
+            Platform overview and analytics
+          </p>
+        </div>
       </motion.div>
 
       {/* ─── Stat cards ─── */}
       {loading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {Array.from({ length: 4 }).map((_, i) => (
             <Skeleton key={i} className="h-32" />
           ))}
         </div>
       ) : dashboard ? (
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           variants={staggerContainer}
           initial="hidden"
           animate="show"
@@ -161,12 +175,16 @@ export default function AdminDashboardPage() {
           <StatCard emoji="💳" label="Active Subscriptions" value={dashboard.active_subscriptions} />
         </motion.div>
       ) : (
-        <p className="text-white/40 text-sm">Unable to load dashboard data.</p>
+        <div className="glass-card rounded-2xl p-12 text-center">
+          <AlertCircle className="w-10 h-10 text-[--color-error]/60 mx-auto mb-3" />
+          <p className="text-white/40 text-sm">Unable to load dashboard data.</p>
+          <p className="text-white/25 text-xs mt-1">Check your connection and try refreshing the page.</p>
+        </div>
       )}
 
       {/* ─── Hook Engine Mode ─── */}
       <motion.div
-        className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6"
+        className="glass-card rounded-2xl p-6"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.1 }}
@@ -191,7 +209,7 @@ export default function AdminDashboardPage() {
                 onClick={() => handleEngineMode(opt.value)}
                 className={`px-4 py-2.5 rounded-xl text-left transition-all duration-200 border ${
                   engineMode === opt.value
-                    ? "bg-[#E84A2F]/15 border-[#E84A2F]/40 text-white"
+                    ? "bg-[--color-primary]/15 border-[--color-primary]/40 text-white"
                     : "bg-white/[0.03] border-white/[0.06] text-white/50 hover:bg-white/[0.06] hover:text-white/70"
                 }`}
               >
@@ -205,7 +223,7 @@ export default function AdminDashboardPage() {
 
       {/* ─── Recent Sessions ─── */}
       <motion.div
-        className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden"
+        className="glass-card rounded-2xl overflow-hidden"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.15 }}
@@ -225,7 +243,7 @@ export default function AdminDashboardPage() {
         ) : dashboard && dashboard.recent_sessions.length > 0 ? (
           <div className="overflow-x-auto">
             {/* Table header */}
-            <div className="grid grid-cols-[1.5fr_2fr_1fr_1fr_0.8fr_1fr] gap-4 px-6 py-3 text-[10px] font-medium text-white/25 uppercase tracking-wider border-b border-white/[0.04]">
+            <div className="grid grid-cols-[1.5fr_2fr_1fr_1fr_0.8fr_1fr] gap-4 px-6 py-3 text-[10px] font-medium text-white/25 uppercase tracking-wider border-b border-white/[0.05]">
               <span>User</span>
               <span>Video Title</span>
               <span>Niche</span>
@@ -239,6 +257,7 @@ export default function AdminDashboardPage() {
               variants={staggerContainer}
               initial="hidden"
               animate="show"
+              className="divide-y divide-white/[0.05]"
             >
               {dashboard.recent_sessions.slice(0, 10).map((session: AdminSessionSummary) => {
                 const statusConfig = getStatusConfig(session.status);
@@ -251,7 +270,7 @@ export default function AdminDashboardPage() {
                   <motion.div
                     key={session.id}
                     variants={fadeUpItem}
-                    className="grid grid-cols-[1.5fr_2fr_1fr_1fr_0.8fr_1fr] gap-4 px-6 py-3 hover:bg-white/[0.02] transition-colors border-b border-white/[0.03] last:border-0"
+                    className="grid grid-cols-[1.5fr_2fr_1fr_1fr_0.8fr_1fr] gap-4 px-6 py-3 hover:bg-white/[0.02] transition-colors even:bg-white/[0.02]"
                   >
                     <span className="text-sm text-white/60 truncate">
                       {session.user_email}
@@ -279,15 +298,19 @@ export default function AdminDashboardPage() {
             </motion.div>
           </div>
         ) : (
-          <div className="py-12 text-center">
-            <p className="text-sm text-white/30">No sessions yet.</p>
+          <div className="py-16 text-center">
+            <div className="w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center mx-auto mb-4">
+              <Film className="w-7 h-7 text-white/15" />
+            </div>
+            <p className="text-sm text-white/40 mb-1">No sessions yet</p>
+            <p className="text-xs text-white/25">Sessions will appear here as users analyze videos.</p>
           </div>
         )}
       </motion.div>
 
       {/* ─── NARM Insights ─── */}
       <motion.div
-        className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden"
+        className="glass-card rounded-2xl overflow-hidden"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.25 }}
@@ -320,7 +343,7 @@ export default function AdminDashboardPage() {
             </div>
           ) : insights.length > 0 ? (
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 gap-4"
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
               variants={staggerContainer}
               initial="hidden"
               animate="show"
@@ -358,9 +381,12 @@ export default function AdminDashboardPage() {
               })}
             </motion.div>
           ) : (
-            <div className="py-8 text-center">
-              <p className="text-sm text-white/30 mb-2">No insights available.</p>
-              <p className="text-xs text-white/20">
+            <div className="py-12 text-center">
+              <div className="w-14 h-14 rounded-2xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center mx-auto mb-4">
+                <BarChart3 className="w-7 h-7 text-white/15" />
+              </div>
+              <p className="text-sm text-white/40 mb-1">No insights available</p>
+              <p className="text-xs text-white/25">
                 Click &quot;Run Analysis&quot; to generate insights from session data.
               </p>
             </div>
