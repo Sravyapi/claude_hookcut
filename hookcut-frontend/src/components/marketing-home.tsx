@@ -61,28 +61,6 @@ const FEATURES = [
   },
 ] as const;
 
-// ── Testimonials ────────────────────────────────────────────────────────────
-
-const TESTIMONIALS = [
-  {
-    quote: "HookCut found a hook in my 45-minute tutorial that I\u2019d never have clipped myself. It went to 2.1M views.",
-    name: "Rahul Sharma",
-    role: "Tech Creator",
-    subs: "280K subscribers",
-  },
-  {
-    quote: "I went from spending 3 hours editing Shorts to 15 minutes. The AI reasoning is actually useful.",
-    name: "Priya Nair",
-    role: "Finance Creator",
-    subs: "95K subscribers",
-  },
-  {
-    quote: "The 7-dimension scoring taught me what makes hooks work. I\u2019ve improved my own writing.",
-    name: "Marcus Chen",
-    role: "Podcast Host",
-    subs: "140K subscribers",
-  },
-] as const;
 
 // ── Checkmark icon ──────────────────────────────────────────────────────────
 
@@ -172,36 +150,6 @@ export function MarketingHome() {
                 <p className="text-white/50 text-sm leading-relaxed">
                   {feat.desc}
                 </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3.5. SOCIAL PROOF ── */}
-      <section className="bg-[#0F0F0F] py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-[#E84A2F] text-xs font-semibold uppercase tracking-widest mb-3 text-center">
-            Trusted by creators worldwide
-          </p>
-          <p className="text-white/30 text-sm text-center mb-14">
-            14,000+ videos analyzed &nbsp;|&nbsp; 68,000+ Shorts generated &nbsp;|&nbsp; 4.8&#9733; average rating
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {TESTIMONIALS.map((t) => (
-              <div
-                key={t.name}
-                className="glass-card rounded-2xl p-6 border-t-2 border-[var(--color-primary)]/30"
-              >
-                <p className="text-white/70 text-sm leading-relaxed mb-5">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <div>
-                  <p className="text-white/90 text-sm font-semibold">{t.name}</p>
-                  <p className="text-white/40 text-xs">
-                    {t.role} &middot; {t.subs}
-                  </p>
-                </div>
               </div>
             ))}
           </div>
