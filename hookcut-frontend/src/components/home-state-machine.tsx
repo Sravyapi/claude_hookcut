@@ -471,6 +471,7 @@ export default function HomeStateMachine({ marketingContent }: Props) {
                 isRegenerating={state.isRegenerating}
                 analysisElapsed={state.analysisElapsed}
                 sessionId={state.sessionId}
+                onReset={resetAll}
               />
             </motion.div>
           )}

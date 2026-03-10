@@ -73,6 +73,7 @@ interface HooksStepProps {
   isRegenerating: boolean;
   analysisElapsed?: number;
   sessionId?: string;
+  onReset?: () => void;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -86,6 +87,7 @@ export const HooksStep = memo(function HooksStep({
   isRegenerating,
   analysisElapsed = 0,
   sessionId,
+  onReset,
 }: HooksStepProps) {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [captionStyle, setCaptionStyle] = useState<CaptionStyle>("clean");
@@ -144,13 +146,24 @@ export const HooksStep = memo(function HooksStep({
             </h1>
             <p className="text-sm text-white/35 truncate max-w-lg">{videoTitle}</p>
           </div>
-          <div className="flex items-center gap-3 text-xs text-white/30 font-mono tabular-nums shrink-0">
-            <span className="flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-              {hooks.length} hooks
-            </span>
-            <span>avg {avgScore.toFixed(1)}/10</span>
-            {analysisElapsed > 0 && <span>{analysisElapsed}s</span>}
+          <div className="flex items-center gap-3 shrink-0">
+            <div className="flex items-center gap-3 text-xs text-white/30 font-mono tabular-nums">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                {hooks.length} hooks
+              </span>
+              <span>avg {avgScore.toFixed(1)}/10</span>
+              {analysisElapsed > 0 && <span>{analysisElapsed}s</span>}
+            </div>
+            {onReset && (
+              <button
+                type="button"
+                onClick={onReset}
+                className="px-3 py-1.5 rounded-lg border border-white/[0.1] text-xs text-white/50 hover:text-white/80 hover:border-white/20 transition-colors"
+              >
+                New Video
+              </button>
+            )}
           </div>
         </div>
       </motion.div>
