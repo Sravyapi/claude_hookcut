@@ -206,7 +206,7 @@ export const HookCard = memo(function HookCard({
         </div>
 
         {/* ── Hook text ── */}
-        <p className={`text-[15px] text-white/80 leading-relaxed mb-1 ${showFullText ? "" : "line-clamp-3"}`}>
+        <p className={`text-sm sm:text-[15px] text-white/80 leading-relaxed mb-1 ${showFullText ? "" : "line-clamp-3"}`}>
           {hook.hook_text}
         </p>
         {hook.hook_text.length > 120 && (

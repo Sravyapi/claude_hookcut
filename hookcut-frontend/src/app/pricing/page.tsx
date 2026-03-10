@@ -388,8 +388,8 @@ export default function PricingPage() {
                 className="overflow-hidden"
               >
                 <div className="glass-card rounded-2xl overflow-hidden mt-6">
-                  {/* Table header */}
-                  <div className="grid grid-cols-4 gap-4 px-6 py-3 border-b border-white/[0.06] bg-white/[0.02]">
+                  {/* Table header — hidden on mobile, shown as grid on sm+ */}
+                  <div className="hidden sm:grid grid-cols-4 gap-4 px-6 py-3 border-b border-white/[0.06] bg-white/[0.02]">
                     <span className="text-xs text-white/30 font-medium">Feature</span>
                     {["Free", "Lite", "Pro"].map((t) => (
                       <span
@@ -403,18 +403,21 @@ export default function PricingPage() {
                   {COMPARISON_FEATURES.map((row, i) => (
                     <div
                       key={i}
-                      className={`grid grid-cols-4 gap-4 px-6 py-3 items-center ${
+                      className={`flex flex-col gap-1 px-4 py-3 sm:grid sm:grid-cols-4 sm:gap-4 sm:px-6 sm:items-center ${
                         i % 2 === 0 ? "bg-white/[0.02]" : ""
                       } border-b border-white/[0.04] last:border-0`}
                     >
-                      <span className="text-xs text-white/50">{row.label}</span>
-                      <div className="text-center">
+                      <span className="text-xs text-white/50 font-medium sm:font-normal">{row.label}</span>
+                      <div className="flex sm:flex-col items-center gap-3 sm:gap-0">
+                        <span className="text-[10px] text-white/30 sm:hidden w-10">Free</span>
                         <FeatureCell value={row.free} />
                       </div>
-                      <div className="text-center">
+                      <div className="flex sm:flex-col items-center gap-3 sm:gap-0 sm:text-center">
+                        <span className="text-[10px] text-white/30 sm:hidden w-10">Lite</span>
                         <FeatureCell value={row.lite} />
                       </div>
-                      <div className="text-center">
+                      <div className="flex sm:flex-col items-center gap-3 sm:gap-0 sm:text-center">
+                        <span className="text-[10px] text-white/30 sm:hidden w-10">Pro</span>
                         <FeatureCell value={row.pro} />
                       </div>
                     </div>

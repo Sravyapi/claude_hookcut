@@ -242,7 +242,7 @@ export type DemoHook = DemoVideo["hooks"][number];
 export const MockThumbnail = memo(function MockThumbnail({ video }: { video: DemoVideo }) {
   return (
     <div
-      className="w-64 sm:w-80 rounded-xl overflow-hidden shadow-2xl border border-white/[0.07]"
+      className="w-56 min-[400px]:w-64 sm:w-80 max-w-full rounded-xl overflow-hidden shadow-2xl border border-white/[0.07]"
     >
       {/* Thumbnail */}
       <div
