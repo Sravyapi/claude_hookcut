@@ -2,7 +2,7 @@
 
 import { useReducer, useCallback, useRef, useEffect } from "react";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { api } from "@/lib/api";
 import { extractErrorMessage } from "@/lib/utils";
@@ -229,14 +229,15 @@ export default function HomeStateMachine({ marketingContent }: Props) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { status: authStatus } = useSession();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const analysisStartRef = useRef<number>(0);
 
-  // Redirect authenticated users to dashboard when on input step
+  // Redirect authenticated users to dashboard — unless they explicitly want a new analysis (?new=1)
   useEffect(() => {
-    if (authStatus === "authenticated" && state.step === "input") {
+    if (authStatus === "authenticated" && state.step === "input" && !searchParams.get("new")) {
       router.push("/dashboard");
     }
-  }, [authStatus, state.step, router]);
+  }, [authStatus, state.step, router, searchParams]);
 
   const taskId = state.step === "analyzing" ? state.taskId : "";
   const sessionId = "sessionId" in state ? state.sessionId : "";
