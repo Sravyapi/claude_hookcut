@@ -173,7 +173,7 @@ const SessionRow = memo(function SessionRow({ session }: { session: SessionSumma
 
       {/* Minutes */}
       <span className="hidden sm:block text-xs text-white/40 tabular-nums shrink-0 w-16 text-right">
-        {session.minutes_charged.toFixed(1)} min
+        {(session.minutes_charged ?? 0).toFixed(1)} min
       </span>
 
       {/* Date */}

@@ -152,7 +152,12 @@ export const api = {
   getVideoBlobUrl: (url: string) => fetchBlob(url),
 
   getBalance: () =>
-    request<CreditBalance>("/user/balance"),
+    request<CreditBalance>("/user/balance").then((b) => ({
+      ...b,
+      manual_clip_minutes_remaining: b.manual_clip_minutes_remaining ?? 0,
+      manual_clip_minutes_total: b.manual_clip_minutes_total ?? 0,
+      total_available: b.total_available ?? 0,
+    })),
 
   claimFreeTopup: () =>
     request<CreditBalance>("/billing/free-topup", { method: "POST" }),
