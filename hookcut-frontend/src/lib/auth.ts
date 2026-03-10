@@ -72,28 +72,7 @@ export const authOptions: NextAuthOptions = {
 
   secret: process.env.NEXTAUTH_SECRET,
 
-  debug: process.env.NODE_ENV === "development",
-
-  cookies: {
-    pkceCodeVerifier: {
-      name: "next-auth.pkce.code_verifier",
-      options: {
-        httpOnly: true,
-        sameSite: "lax",
-        path: "/",
-        secure: process.env.NODE_ENV === "production",
-      },
-    },
-    state: {
-      name: "next-auth.state",
-      options: {
-        httpOnly: true,
-        sameSite: "lax",
-        path: "/",
-        secure: process.env.NODE_ENV === "production",
-      },
-    },
-  },
+  debug: true, // TODO: revert to process.env.NODE_ENV === "development" after OAuth fix confirmed
 
   callbacks: {
     async jwt({ token, user, account }) {
