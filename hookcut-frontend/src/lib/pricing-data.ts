@@ -1,3 +1,23 @@
+/** Detect currency from browser timezone — India → INR, everywhere else → USD */
+export function detectCurrency(): "INR" | "USD" {
+  if (typeof Intl === "undefined") return "USD";
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    return tz?.startsWith("Asia/Kolkata") || tz?.startsWith("Asia/Calcutta")
+      ? "INR"
+      : "USD";
+  } catch {
+    return "USD";
+  }
+}
+
+export function formatPrice(plan: (typeof PLANS)[number], currency: "INR" | "USD"): string {
+  const price = currency === "INR" ? plan.priceINR : plan.priceUSD;
+  if (price === 0) return "Free";
+  const symbol = currency === "INR" ? "₹" : "$";
+  return `${symbol}${price}`;
+}
+
 export const PLANS = [
   {
     key: "free",

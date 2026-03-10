@@ -123,7 +123,7 @@ class BillingService:
         return CheckoutResult(checkout_url=result.checkout_url, session_id=result.session_id)
 
     @staticmethod
-    def sync_user(db: Session, user_id: str, email: str) -> dict:
+    def sync_user(db: Session, user_id: str, email: str, currency: str | None = None) -> dict:
         """
         Ensure user exists in backend after NextAuth login.
         Uses upsert to avoid duplicate user race conditions on concurrent logins.
@@ -136,14 +136,20 @@ class BillingService:
         is_new = existing is None
 
         # Upsert user — idempotent on concurrent logins
+        # Use detected currency for new users, default USD
+        detected_currency = currency if currency in ("INR", "USD") else "USD"
         insert_stmt = pg_insert(User).values(
             id=user_id,
             email=email,
-            currency="USD",
+            currency=detected_currency,
         )
         stmt = insert_stmt.on_conflict_do_update(
             index_elements=["id"],
-            set_={"updated_at": datetime.now(timezone.utc), "email": insert_stmt.excluded.email},
+            set_={
+                "updated_at": datetime.now(timezone.utc),
+                "email": insert_stmt.excluded.email,
+                "currency": insert_stmt.excluded.currency,
+            },
         )
         db.execute(stmt)
         db.flush()

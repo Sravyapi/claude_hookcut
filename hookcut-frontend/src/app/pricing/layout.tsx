@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Pricing — Start Free, $7/month",
+  title: "Pricing — Start Free, Upgrade Anytime",
   description:
-    "Choose your HookCut plan. Start with 120 free minutes. Lite at $7/mo, Pro at $13/mo. AI-powered YouTube hook detection and Shorts generation for creators.",
+    "Choose your HookCut plan. Start with 120 free minutes. Affordable Lite and Pro plans for creators. AI-powered YouTube hook detection and Shorts generation.",
   openGraph: {
-    title: "Pricing — Start Free, $7/month",
+    title: "Pricing — Start Free, Upgrade Anytime",
     description:
       "Choose your HookCut plan. Start with 120 free minutes. AI-powered YouTube Shorts generation.",
     url: "https://hookcut.ai/pricing",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing — Start Free, $7/month",
+    title: "Pricing — Start Free, Upgrade Anytime",
     description:
       "Choose your HookCut plan. Start with 120 free minutes. AI-powered YouTube Shorts generation.",
   },

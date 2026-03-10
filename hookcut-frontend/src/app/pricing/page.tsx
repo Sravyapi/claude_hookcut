@@ -8,7 +8,7 @@ import { Check, X, Zap, Sparkles, Crown, ChevronDown } from "lucide-react";
 import { api } from "@/lib/api";
 import type { PlansResponse, PlanInfo } from "@/lib/types";
 import { PAYG_OPTIONS } from "@/lib/constants";
-import { PLANS } from "@/lib/pricing-data";
+import { PLANS, detectCurrency } from "@/lib/pricing-data";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { staggerContainer, fadeUpItem } from "@/lib/motion";
@@ -189,7 +189,7 @@ export default function PricingPage() {
     }
   };
 
-  const currency = plans?.currency || "USD";
+  const currency = plans?.currency || detectCurrency();
   const currentTier = plans?.current_tier || "free";
 
   const formatPrice = (plan: PlanInfo) => {
@@ -198,13 +198,19 @@ export default function PricingPage() {
   };
 
   /* Static fallback plans derived from shared pricing data */
-  const staticPlans = PLANS.map((p) => ({
-    tier: p.key,
-    name: p.name,
-    price: p.priceUSD === 0 ? "Free" : `$${p.priceUSD}`,
-    desc: p.key === "free" ? `${p.minutes} min/month included` : `${p.minutes} watermark-free min`,
-    features: [...p.features],
-  }));
+  const detectedCurrency = detectCurrency();
+  const staticPlans = PLANS.map((p) => {
+    const price = detectedCurrency === "INR" ? p.priceINR : p.priceUSD;
+    const sym = detectedCurrency === "INR" ? "₹" : "$";
+    return {
+      tier: p.key,
+      name: p.name,
+      price: price === 0 ? "Free" : `${sym}${price}`,
+      price_display: price === 0 ? "Free" : `${sym}${price}/mo`,
+      desc: p.key === "free" ? `${p.minutes} min/month included` : `${p.minutes} watermark-free min`,
+      features: [...p.features],
+    };
+  });
 
   return (
     <>

@@ -20,9 +20,8 @@ import {
 
 const NAV_LINKS = [
   { href: "/features", label: "Features", match: "features" },
+  { href: "/how-it-works", label: "How It Works", match: "how-it-works" },
   { href: "/pricing", label: "Pricing", match: "pricing" },
-  { href: "/clip", label: "Clipper", match: "clip" },
-  { href: "/use-cases", label: "Use Cases", match: "use-cases" },
   { href: "/blog", label: "Blog", match: "blog" },
 ] as const;
 

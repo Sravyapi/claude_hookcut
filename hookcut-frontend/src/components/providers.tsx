@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { SessionProvider, useSession } from "next-auth/react";
 import { api } from "@/lib/api";
+import { detectCurrency } from "@/lib/pricing-data";
 
 interface UserContextValue {
   role: string | null;
@@ -22,7 +23,7 @@ function AuthSync({ setRole }: { setRole: (role: string) => void }) {
     if (status === "authenticated" && session?.user?.email && !synced.current) {
       synced.current = true;
       api
-        .syncUser(session.user.email)
+        .syncUser(session.user.email, detectCurrency())
         .then((data) => {
           if (data.role) setRole(data.role);
         })

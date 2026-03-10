@@ -34,6 +34,7 @@ class PaygRequest(BaseModel):
 
 class SyncUserRequest(BaseModel):
     email: EmailStr
+    currency: str | None = None  # "INR" or "USD", auto-detected by frontend
 
 
 router = APIRouter()
@@ -100,7 +101,7 @@ async def sync_user(
     user_id: str = Depends(get_current_user_id),
 ):
     """Ensure user exists in backend after NextAuth login."""
-    return BillingService.sync_user(db, user_id, str(req.email))
+    return BillingService.sync_user(db, user_id, str(req.email), currency=req.currency)
 
 
 # --- Webhook handlers ---

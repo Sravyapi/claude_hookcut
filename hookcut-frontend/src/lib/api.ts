@@ -158,10 +158,10 @@ export const api = {
     request<CreditBalance>("/billing/free-topup", { method: "POST" }),
 
   // V1 auth / billing / user endpoints
-  syncUser: (email: string) =>
+  syncUser: (email: string, currency?: string) =>
     request<{ user_id: string; is_new: boolean; plan_tier: string; role: string }>("/auth/sync", {
       method: "POST",
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email, currency }),
     }),
 
   getPlans: () =>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { HeroSection } from "./hero-section";
 import { Target, Globe, Ban, Lightbulb, Smartphone, Wallet } from "lucide-react";
-import { PLANS } from "@/lib/pricing-data";
+import { PLANS, detectCurrency } from "@/lib/pricing-data";
 
 // ── How it works ────────────────────────────────────────────────────────────
 
@@ -109,6 +109,7 @@ function Check({ white }: { white?: boolean }) {
 
 export function MarketingHome() {
   const [annual, setAnnual] = useState(false);
+  const [currency] = useState<"INR" | "USD">(detectCurrency);
 
   return (
     <div>
@@ -248,9 +249,10 @@ export function MarketingHome() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto">
             {PLANS.map((plan) => {
               const isHighlighted = plan.highlighted;
-              const monthlyPrice = plan.priceUSD;
+              const monthlyPrice = currency === "INR" ? plan.priceINR : plan.priceUSD;
               const annualPrice = Math.round(monthlyPrice * 0.8);
               const displayPrice = annual && monthlyPrice > 0 ? annualPrice : monthlyPrice;
+              const sym = currency === "INR" ? "₹" : "$";
 
               return (
                 <div
@@ -271,13 +273,13 @@ export function MarketingHome() {
                     </p>
                     <p className="text-white text-3xl font-bold font-mono">
                       {plan.period
-                        ? <>{"$"}{displayPrice}<span className={`text-base font-normal ${isHighlighted ? "text-white/60" : "text-white/25"}`}>/mo</span></>
+                        ? <>{sym}{displayPrice}<span className={`text-base font-normal ${isHighlighted ? "text-white/60" : "text-white/25"}`}>/mo</span></>
                         : <>Free</>
                       }
                     </p>
                     {annual && monthlyPrice > 0 && (
                       <p className={`text-sm line-through ${isHighlighted ? "text-white/50" : "text-white/40"}`}>
-                        {"$"}{monthlyPrice}/mo
+                        {sym}{monthlyPrice}/mo
                       </p>
                     )}
                     <p className={`text-sm ${isHighlighted ? "text-white/60" : "text-white/25"}`}>
