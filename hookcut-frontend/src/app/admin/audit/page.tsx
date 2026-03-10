@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { memo, useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FileText,
@@ -52,7 +52,7 @@ function getActionColor(action: string) {
 
 /* ─── Audit Row ─── */
 
-function AuditRow({ log }: { log: AuditLog }) {
+const AuditRow = memo(function AuditRow({ log }: { log: AuditLog }) {
   const [expanded, setExpanded] = useState(false);
 
   const dateStr = new Date(log.created_at).toLocaleDateString(undefined, {
@@ -185,7 +185,7 @@ function AuditRow({ log }: { log: AuditLog }) {
       </AnimatePresence>
     </motion.div>
   );
-}
+});
 
 /* ─── Main Page ─── */
 

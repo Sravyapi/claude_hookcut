@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   BookOpen,
@@ -82,8 +82,8 @@ export default function PromptRuleEnginePage() {
     }
   }, [selectedRule]);
 
-  const baseRules = rules.filter((r) => r.is_base_rule);
-  const customRules = rules.filter((r) => !r.is_base_rule);
+  const baseRules = useMemo(() => rules.filter((r) => r.is_base_rule), [rules]);
+  const customRules = useMemo(() => rules.filter((r) => !r.is_base_rule), [rules]);
 
   /* ─── Handlers ─── */
 

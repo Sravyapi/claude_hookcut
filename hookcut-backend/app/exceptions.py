@@ -140,13 +140,6 @@ class ConflictError(HookCutError):
     detail = "Resource already exists"
 
 
-# --- Storage ---
-
-class StorageError(HookCutError):
-    status_code = 500
-    detail = "Storage operation failed"
-
-
 # --- FastAPI Exception Handler ---
 
 async def hookcut_exception_handler(_request: Request, exc: HookCutError) -> JSONResponse:

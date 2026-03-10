@@ -16,7 +16,7 @@ from sqlalchemy import func, select, desc
 from sqlalchemy.orm import Session
 
 from app.models.user import User, Subscription
-from app.models.session import AnalysisSession, Hook, Short
+from app.models.session import AnalysisSession, Short
 from app.models.admin import AdminAuditLog
 from app.exceptions import ResourceNotFoundError, HookCutError
 
@@ -400,8 +400,8 @@ class AdminService:
                 )
                 stmt = stmt.where(AdminAuditLog.created_at <= end_dt)
 
-            # Cap at 1,000 to prevent memory exhaustion and slow responses on large datasets.
-            stmt = stmt.order_by(desc(AdminAuditLog.created_at)).limit(1000)
+            # Cap at 10,000 to prevent OOM on large date ranges.
+            stmt = stmt.order_by(desc(AdminAuditLog.created_at)).limit(10_000)
             rows = db.execute(stmt).all()
 
             return [

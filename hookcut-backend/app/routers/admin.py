@@ -18,6 +18,13 @@ from app.schemas.admin import (
 )
 from app.services.engine_mode import get_engine_mode, set_engine_mode
 
+ADMIN_WRITE_RATE_LIMIT = 20
+ADMIN_WRITE_RATE_WINDOW = 3600
+ADMIN_KEY_RATE_LIMIT = 5
+ADMIN_KEY_RATE_WINDOW = 3600
+ADMIN_NARM_RATE_LIMIT = 3
+ADMIN_NARM_RATE_WINDOW = 3600
+
 router = APIRouter(prefix="/admin")
 rate_limiter = get_rate_limiter()
 
@@ -124,7 +131,7 @@ async def create_rule(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
-    rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
+    rate_limiter.check(admin_user.id, "admin_write", limit=ADMIN_WRITE_RATE_LIMIT, window_seconds=ADMIN_WRITE_RATE_WINDOW, request=request)
     rule = AdminRuleService.create_rule(db, body.title, body.content, body.rule_key, admin_user)
     return rule
 
@@ -163,7 +170,7 @@ async def update_rule(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
-    rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
+    rate_limiter.check(admin_user.id, "admin_write", limit=ADMIN_WRITE_RATE_LIMIT, window_seconds=ADMIN_WRITE_RATE_WINDOW, request=request)
     rule = AdminRuleService.update_rule(db, rule_id, admin_user, body.title, body.content, body.is_active)
     return rule
 
@@ -176,7 +183,7 @@ async def revert_rule(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> PromptRuleResponse:
-    rate_limiter.check(admin_user.id, "admin_write", limit=20, window_seconds=3600, request=request)
+    rate_limiter.check(admin_user.id, "admin_write", limit=ADMIN_WRITE_RATE_LIMIT, window_seconds=ADMIN_WRITE_RATE_WINDOW, request=request)
     rule = AdminRuleService.revert_rule(db, rule_id, version_id, admin_user)
     return rule
 
@@ -228,7 +235,7 @@ async def set_api_key(
     admin_user=Depends(get_admin_user),
     db: Session = Depends(get_db),
 ) -> ProviderConfigResponse:
-    rate_limiter.check(admin_user.id, "admin_set_key", limit=5, window_seconds=3600, request=request)
+    rate_limiter.check(admin_user.id, "admin_set_key", limit=ADMIN_KEY_RATE_LIMIT, window_seconds=ADMIN_KEY_RATE_WINDOW, request=request)
     return AdminProviderService.set_api_key(db, provider_name, body.api_key, admin_user)
 
 
@@ -240,7 +247,7 @@ async def trigger_narm_analysis(
     body: NarmAnalyzeRequest,
     admin_user=Depends(get_admin_user),
 ):
-    rate_limiter.check(admin_user.id, "admin_narm", limit=3, window_seconds=3600, request=request)
+    rate_limiter.check(admin_user.id, "admin_narm", limit=ADMIN_NARM_RATE_LIMIT, window_seconds=ADMIN_NARM_RATE_WINDOW, request=request)
     from app.tasks.narm_task import run_narm_analysis
     run_narm_analysis.delay(body.time_range_days, admin_user.id)
     return {"status": "accepted", "message": "NARM analysis started"}
