@@ -29,7 +29,7 @@ def upgrade() -> None:
     # 3. Add captions_failed flag to shorts
     op.add_column(
         "shorts",
-        sa.Column("captions_failed", sa.Boolean(), nullable=False, server_default="0"),
+        sa.Column("captions_failed", sa.Boolean(), nullable=False, server_default="false"),
     )
 
     # 4. Make hook_id nullable on shorts

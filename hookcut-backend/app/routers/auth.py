@@ -3,6 +3,8 @@ Auth router — email/password registration and login.
 
 Thin HTTP adapter: extracts request data, delegates to AuthService, returns response.
 """
+import logging
+
 from fastapi import APIRouter, Depends, Request
 from sqlalchemy.orm import Session
 
@@ -11,6 +13,7 @@ from app.middleware.rate_limit import get_rate_limiter
 from app.schemas.auth import AuthResponse, LoginRequest, RegisterRequest, RoleLookupRequest, RoleLookupResponse
 from app.services.auth_service import AuthService
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
 rate_limiter = get_rate_limiter()
 
@@ -20,7 +23,11 @@ async def register(req: RegisterRequest, request: Request, db: Session = Depends
     """Register a new user with email and password."""
     client_ip = request.client.host if request.client else "unknown"
     rate_limiter.check(f"ip:{client_ip}", "auth_register", limit=10, window_seconds=900, request=request)
-    return AuthService.register(db, req.email, req.password, req.name)
+    try:
+        return AuthService.register(db, req.email, req.password, req.name)
+    except Exception as e:
+        logger.exception("Registration failed for %s: %s", req.email, e)
+        raise
 
 
 @router.post("/auth/login", response_model=AuthResponse)
