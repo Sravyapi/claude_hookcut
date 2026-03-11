@@ -83,6 +83,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
   const [isPlaying, setIsPlaying] = useState(false);
   const [hasPlayed, setHasPlayed] = useState(false);
   const [videoBlobUrl, setVideoBlobUrl] = useState<string | null>(null);
+  const [videoFetchError, setVideoFetchError] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -99,7 +100,11 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
     api.getVideoBlobUrl(data.download_url).then((url) => {
       revoke = url;
       setVideoBlobUrl(url);
-    }).catch(() => { blobFetchedRef.current = null; });
+    }).catch((err) => {
+      console.error("Failed to fetch video blob:", err);
+      blobFetchedRef.current = null;
+      setVideoFetchError(true);
+    });
     return () => { if (revoke) URL.revokeObjectURL(revoke); };
   }, [data?.download_url, data?.status]);
 
@@ -119,6 +124,14 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
     const rect = seekBarRef.current.getBoundingClientRect();
     const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
     videoRef.current.currentTime = pct * videoRef.current.duration;
+  }, []);
+
+  const handleTimeUpdate = useCallback(() => {
+    setCurrentTime(videoRef.current?.currentTime || 0);
+  }, []);
+
+  const handleLoadedMetadata = useCallback(() => {
+    setDuration(videoRef.current?.duration || 0);
   }, []);
 
   const handleDownload = useCallback(async () => {
@@ -217,10 +230,17 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                     playsInline
                     loop
                     onEnded={() => { setIsPlaying(false); setHasPlayed(true); }}
-                    onTimeUpdate={() => setCurrentTime(videoRef.current?.currentTime || 0)}
-                    onLoadedMetadata={() => setDuration(videoRef.current?.duration || 0)}
+                    onTimeUpdate={handleTimeUpdate}
+                    onLoadedMetadata={handleLoadedMetadata}
                     aria-label="Generated short video"
                   />
+                ) : videoFetchError ? (
+                  <div className="w-full h-full flex flex-col items-center justify-center gap-2 bg-gradient-to-b from-red-500/10 to-red-500/5">
+                    <svg className="w-8 h-8 text-red-400/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                    </svg>
+                    <p className="text-xs text-red-400/70 text-center px-4">Unable to load video preview</p>
+                  </div>
                 ) : data.thumbnail_url ? (
                   <img
                     src={data.thumbnail_url}
@@ -245,9 +265,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                   </div>
                 )}
                 {/* Play/pause overlay */}
-                <div
-                  role="button"
-                  tabIndex={0}
+                <button
                   aria-label={isPlaying ? "Pause video" : "Play video"}
                   onClick={togglePlay}
                   onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); togglePlay(); } }}
@@ -265,7 +283,7 @@ const ShortCard = memo(function ShortCard({ shortId, index }: { shortId: string;
                       </svg>
                     )}
                   </div>
-                </div>
+                </button>
                 {/* Confetti burst */}
                 {hasPlayed && !isPlaying && <ConfettiBurst />}
                 {/* Seek bar */}

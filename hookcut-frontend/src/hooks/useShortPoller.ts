@@ -25,9 +25,9 @@ export function useShortPoller(
     setError(null);
 
     const doPoll = async () => {
+      if (!active) return;
       pollCountRef.current += 1;
       if (pollCountRef.current >= MAX_POLLS) {
-        if (!active) return;
         setError("Short generation timed out. Please try again.");
         setIsLoading(false);
         return;

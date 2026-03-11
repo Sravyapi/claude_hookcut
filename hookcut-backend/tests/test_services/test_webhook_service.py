@@ -6,6 +6,7 @@ from sqlalchemy import select
 from tests.conftest import make_user
 from app.models.user import CreditBalance, Subscription
 from app.services.webhook_service import WebhookService
+from app.services.billing_service import BillingService
 
 
 # ─── Helpers ───
@@ -575,3 +576,399 @@ class TestRazorpaySubscriptionCancelled:
         assert sub.status == "cancelled"
         db.refresh(user)
         assert user.plan_tier == "free"
+
+
+# ─── Idempotency (ProcessedWebhook deduplication) ───
+
+class TestWebhookIdempotency:
+    def test_duplicate_stripe_checkout_event_ignored(self, db):
+        """Replaying the same stripe event_id a second time returns duplicate status."""
+        make_user(db, user_id="wh-idem1")
+        data = {
+            "id": "cs_idem_stripe",
+            "amount_total": 200,
+            "currency": "usd",
+            "metadata": {
+                "user_id": "wh-idem1",
+                "purchase_type": "payg",
+                "minutes": "200",
+            },
+        }
+        with patch("app.services.webhook_service.CreditManager"):
+            first = WebhookService.handle_stripe_checkout_completed(db, data, "evt_stripe_idem")
+
+        assert first == {"status": "ok"}
+
+        # Replay the same event_id
+        with patch("app.services.webhook_service.CreditManager") as MockCM2:
+            second = WebhookService.handle_stripe_checkout_completed(db, data, "evt_stripe_idem")
+
+        assert second == {"status": "duplicate"}
+        # CreditManager should NOT have been instantiated on the duplicate
+        MockCM2.assert_not_called()
+
+    def test_duplicate_razorpay_event_ignored(self, db):
+        """Replaying the same razorpay event_id a second time returns duplicate status."""
+        make_user(db, user_id="wh-idem2")
+        entity = {"id": "order_idem", "amount": 10000}
+        notes = {
+            "user_id": "wh-idem2",
+            "purchase_type": "payg",
+            "minutes": "100",
+        }
+        with patch("app.services.webhook_service.CreditManager"):
+            first = WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_rz_idem")
+
+        assert first == {"status": "ok"}
+
+        with patch("app.services.webhook_service.CreditManager") as MockCM2:
+            second = WebhookService.handle_razorpay_order_paid(db, entity, notes, "evt_rz_idem")
+
+        assert second == {"status": "duplicate"}
+        MockCM2.assert_not_called()
+
+    def test_idempotency_prevents_double_credit(self, db):
+        """Processing the same checkout event twice should not double-grant credits."""
+        make_user(db, user_id="wh-idem3")
+        data = {
+            "id": "cs_double_credit",
+            "amount_total": 200,
+            "currency": "usd",
+            "metadata": {
+                "user_id": "wh-idem3",
+                "purchase_type": "payg",
+                "minutes": "200",
+            },
+        }
+        call_count = {"n": 0}
+
+        def counting_add_payg(*args, **kwargs):
+            call_count["n"] += 1
+
+        with patch("app.services.webhook_service.CreditManager") as MockCM:
+            mock_instance = MockCM.return_value
+            mock_instance.add_payg_minutes.side_effect = counting_add_payg
+            WebhookService.handle_stripe_checkout_completed(db, data, "evt_double_credit")
+
+        with patch("app.services.webhook_service.CreditManager") as MockCM2:
+            mock_instance2 = MockCM2.return_value
+            mock_instance2.add_payg_minutes.side_effect = counting_add_payg
+            WebhookService.handle_stripe_checkout_completed(db, data, "evt_double_credit")
+
+        # add_payg_minutes should have been called exactly once (not twice)
+        assert call_count["n"] == 1
+
+    def test_same_event_id_different_providers_are_independent(self, db):
+        """The same event_id string for different providers should each be processed once."""
+        make_user(db, user_id="wh-idem4")
+        stripe_data = {
+            "id": "cs_shared_id",
+            "amount_total": 200,
+            "currency": "usd",
+            "metadata": {
+                "user_id": "wh-idem4",
+                "purchase_type": "payg",
+                "minutes": "100",
+            },
+        }
+        rz_entity = {"id": "order_shared", "amount": 10000}
+        rz_notes = {
+            "user_id": "wh-idem4",
+            "purchase_type": "payg",
+            "minutes": "100",
+        }
+
+        with patch("app.services.webhook_service.CreditManager"):
+            stripe_result = WebhookService.handle_stripe_checkout_completed(
+                db, stripe_data, "shared-event-id"
+            )
+
+        with patch("app.services.webhook_service.CreditManager"):
+            rz_result = WebhookService.handle_razorpay_order_paid(
+                db, rz_entity, rz_notes, "shared-event-id"
+            )
+
+        # Both should succeed — different provider namespaces
+        assert stripe_result == {"status": "ok"}
+        assert rz_result == {"status": "ok"}
+
+
+# ─── TestRazorpayWebhookService (consolidated top-level scenarios) ───
+
+class TestRazorpayWebhookService:
+    """
+    Consolidated tests for Razorpay webhook handling covering all major scenarios.
+    Tests operate at BillingService.handle_razorpay_webhook (signature layer) and
+    WebhookService handler level to mirror the Stripe test structure.
+    """
+
+    # --- payment.captured → add credits ---
+
+    def test_payment_captured_provisions_minutes(self, db):
+        """order.paid with purchase_type=payg provisions PAYG minutes (payment captured path)."""
+        make_user(db, user_id="rz-ws1")
+        entity = {"id": "order_cap_1", "amount": 19900}
+        notes = {
+            "user_id": "rz-ws1",
+            "purchase_type": "payg",
+            "minutes": "200",
+        }
+
+        with patch("app.services.webhook_service.CreditManager") as MockCM:
+            mock_instance = MockCM.return_value
+            result = WebhookService.handle_razorpay_order_paid(
+                db, entity, notes, "order.paid:order_cap_1"
+            )
+
+        assert result == {"status": "ok"}
+        MockCM.assert_called_once_with(db)
+        mock_instance.add_payg_minutes.assert_called_once_with(
+            "rz-ws1", 200,
+            amount=19900,
+            currency="INR",
+            provider="razorpay",
+            provider_ref="order_cap_1",
+        )
+
+    def test_payment_captured_defaults_to_100_minutes(self, db):
+        """order.paid without 'minutes' note defaults to 100."""
+        make_user(db, user_id="rz-ws2")
+        entity = {"id": "order_cap_2", "amount": 9900}
+        notes = {
+            "user_id": "rz-ws2",
+            "purchase_type": "payg",
+        }
+
+        with patch("app.services.webhook_service.CreditManager") as MockCM:
+            mock_instance = MockCM.return_value
+            WebhookService.handle_razorpay_order_paid(
+                db, entity, notes, "order.paid:order_cap_2"
+            )
+
+        call_kwargs = mock_instance.add_payg_minutes.call_args
+        assert call_kwargs[0][1] == 100  # positional: user_id, minutes
+
+    # --- payment failed → no credits ---
+
+    def test_payment_failed_does_not_provision_minutes(self, db):
+        """
+        Razorpay fires 'payment.failed' events that are not handled by any
+        WebhookService method — the billing service returns {"status": "ok"}
+        without provisioning credits.
+        """
+        import json
+        import sys
+        from unittest.mock import MagicMock
+
+        make_user(db, user_id="rz-ws3")
+        payload = json.dumps({
+            "event": "payment.failed",
+            "payload": {
+                "payment": {
+                    "entity": {
+                        "id": "pay_fail_1",
+                        "amount": 9900,
+                        "notes": {
+                            "user_id": "rz-ws3",
+                            "purchase_type": "payg",
+                            "minutes": "100",
+                        },
+                    }
+                }
+            },
+        }).encode()
+
+        mock_razorpay = MagicMock()
+        mock_client_instance = MagicMock()
+        mock_razorpay.Client.return_value = mock_client_instance
+        mock_client_instance.utility.verify_webhook_signature.return_value = None
+
+        with (
+            patch("app.services.billing_service.get_settings") as mock_settings,
+            patch.dict(sys.modules, {"razorpay": mock_razorpay}),
+            patch("app.services.webhook_service.CreditManager") as MockCM,
+        ):
+            settings = mock_settings.return_value
+            settings.RAZORPAY_WEBHOOK_SECRET = "test_secret"
+            settings.RAZORPAY_KEY_ID = "rzp_test_id"
+            settings.RAZORPAY_KEY_SECRET = "rzp_test_secret"
+
+            result = BillingService.handle_razorpay_webhook(db, payload, "valid_sig")
+
+        assert result == {"status": "ok"}
+        MockCM.assert_not_called()
+
+    # --- subscription.charged → subscription activated ---
+
+    def test_subscription_charged_activates_subscription(self, db):
+        """subscription.charged event activates the user's subscription plan."""
+        make_user(db, user_id="rz-ws4")
+        entity = {"id": "rz_sub_ws4"}
+        notes = {"user_id": "rz-ws4", "plan_tier": "pro"}
+
+        with patch("app.services.webhook_service.SubscriptionService") as MockSS:
+            result = WebhookService.handle_razorpay_subscription_charged(
+                db, entity, notes, "subscription.charged:rz_sub_ws4"
+            )
+
+        assert result == {"status": "ok"}
+        MockSS.activate_subscription.assert_called_once_with(
+            db,
+            user_id="rz-ws4",
+            plan_tier="pro",
+            provider="razorpay",
+            subscription_id="rz_sub_ws4",
+            currency="INR",
+        )
+
+    def test_subscription_charged_defaults_plan_tier_to_lite(self, db):
+        """subscription.charged without plan_tier note defaults to 'lite'."""
+        make_user(db, user_id="rz-ws5")
+        entity = {"id": "rz_sub_ws5"}
+        notes = {"user_id": "rz-ws5"}
+
+        with patch("app.services.webhook_service.SubscriptionService") as MockSS:
+            WebhookService.handle_razorpay_subscription_charged(
+                db, entity, notes, "subscription.charged:rz_sub_ws5"
+            )
+
+        call_kwargs = MockSS.activate_subscription.call_args[1]
+        assert call_kwargs["plan_tier"] == "lite"
+
+    # --- subscription.cancelled → subscription cancelled ---
+
+    def test_subscription_cancelled_cancels_plan(self, db):
+        """subscription.cancelled event cancels the subscription and resets user to free."""
+        user = make_user(db, user_id="rz-ws6", plan_tier="pro")
+        sub = _make_subscription(db, "rz-ws6", provider="razorpay",
+                                 sub_id="rz_sub_ws6", plan_tier="pro")
+
+        entity = {"id": "rz_sub_ws6"}
+        notes = {"user_id": "rz-ws6"}
+        result = WebhookService.handle_razorpay_subscription_cancelled(
+            db, entity, notes, "subscription.cancelled:rz_sub_ws6"
+        )
+
+        assert result == {"status": "ok"}
+        db.refresh(sub)
+        assert sub.status == "cancelled"
+        db.refresh(user)
+        assert user.plan_tier == "free"
+
+    def test_subscription_cancelled_missing_user_returns_ignored(self, db):
+        """subscription.cancelled with no user_id in notes returns ignored."""
+        entity = {"id": "rz_sub_no_user"}
+        notes = {}
+        result = WebhookService.handle_razorpay_subscription_cancelled(
+            db, entity, notes, "subscription.cancelled:rz_sub_no_user"
+        )
+        assert result == {"status": "ignored"}
+
+    # --- invalid signature → rejected ---
+
+    def test_invalid_signature_raises_invalid_state(self, db):
+        """handle_razorpay_webhook raises InvalidStateError when signature is wrong."""
+        import json
+        import sys
+        import pytest
+        from unittest.mock import MagicMock
+        from app.exceptions import InvalidStateError
+
+        payload = json.dumps({
+            "event": "order.paid",
+            "payload": {"order": {"entity": {"id": "order_bad_sig", "amount": 9900,
+                                              "notes": {}}}},
+        }).encode()
+
+        mock_razorpay = MagicMock()
+        mock_client_instance = MagicMock()
+        mock_razorpay.Client.return_value = mock_client_instance
+        mock_client_instance.utility.verify_webhook_signature.side_effect = Exception(
+            "SignatureVerificationError"
+        )
+
+        with (
+            patch("app.services.billing_service.get_settings") as mock_settings,
+            patch.dict(sys.modules, {"razorpay": mock_razorpay}),
+        ):
+            settings = mock_settings.return_value
+            settings.RAZORPAY_WEBHOOK_SECRET = "real_secret"
+            settings.RAZORPAY_KEY_ID = "rzp_test_id"
+            settings.RAZORPAY_KEY_SECRET = "rzp_test_secret"
+
+            with pytest.raises(InvalidStateError, match="Invalid webhook signature"):
+                BillingService.handle_razorpay_webhook(db, payload, "bad_signature")
+
+    def test_missing_webhook_secret_raises_invalid_state(self, db):
+        """handle_razorpay_webhook raises InvalidStateError when secret is not configured."""
+        import json
+        import sys
+        import pytest
+        from unittest.mock import MagicMock
+        from app.exceptions import InvalidStateError
+
+        payload = json.dumps({"event": "order.paid", "payload": {}}).encode()
+
+        mock_razorpay = MagicMock()
+
+        with (
+            patch("app.services.billing_service.get_settings") as mock_settings,
+            patch.dict(sys.modules, {"razorpay": mock_razorpay}),
+        ):
+            settings = mock_settings.return_value
+            settings.RAZORPAY_WEBHOOK_SECRET = ""  # not configured
+
+            with pytest.raises(InvalidStateError, match="Razorpay webhook secret"):
+                BillingService.handle_razorpay_webhook(db, payload, "any_sig")
+
+    # --- idempotency: same event_id twice → no double credit ---
+
+    def test_same_event_id_twice_no_double_credit(self, db):
+        """Processing the same Razorpay order.paid event twice does not double-grant credits."""
+        make_user(db, user_id="rz-ws7")
+        entity = {"id": "order_idem_ws", "amount": 9900}
+        notes = {
+            "user_id": "rz-ws7",
+            "purchase_type": "payg",
+            "minutes": "100",
+        }
+        event_id = "order.paid:order_idem_ws"
+        call_count = {"n": 0}
+
+        def counting_add_payg(*args, **kwargs):
+            call_count["n"] += 1
+
+        with patch("app.services.webhook_service.CreditManager") as MockCM:
+            MockCM.return_value.add_payg_minutes.side_effect = counting_add_payg
+            first = WebhookService.handle_razorpay_order_paid(db, entity, notes, event_id)
+
+        assert first == {"status": "ok"}
+
+        with patch("app.services.webhook_service.CreditManager") as MockCM2:
+            MockCM2.return_value.add_payg_minutes.side_effect = counting_add_payg
+            second = WebhookService.handle_razorpay_order_paid(db, entity, notes, event_id)
+
+        assert second == {"status": "duplicate"}
+        assert call_count["n"] == 1  # credits granted exactly once
+
+    def test_duplicate_subscription_charged_event_not_reprocessed(self, db):
+        """Replaying the same subscription.charged event_id returns duplicate status."""
+        make_user(db, user_id="rz-ws8")
+        entity = {"id": "rz_sub_ws8"}
+        notes = {"user_id": "rz-ws8", "plan_tier": "pro"}
+        event_id = "subscription.charged:rz_sub_ws8"
+
+        with patch("app.services.webhook_service.SubscriptionService"):
+            first = WebhookService.handle_razorpay_subscription_charged(
+                db, entity, notes, event_id
+            )
+
+        assert first == {"status": "ok"}
+
+        with patch("app.services.webhook_service.SubscriptionService") as MockSS2:
+            second = WebhookService.handle_razorpay_subscription_charged(
+                db, entity, notes, event_id
+            )
+
+        assert second == {"status": "duplicate"}
+        MockSS2.activate_subscription.assert_not_called()

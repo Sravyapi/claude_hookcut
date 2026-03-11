@@ -1,6 +1,9 @@
+import re
 from datetime import datetime
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from typing import Literal, Optional
+
+_RULE_KEY_RE = re.compile(r"^[A-Za-z0-9_]{1,32}$")
 
 
 # ---------------------------------------------------------------------------
@@ -132,6 +135,13 @@ class PromptRuleCreateRequest(BaseModel):
     title: str
     content: str
     rule_key: Optional[str] = None
+
+    @field_validator("rule_key")
+    @classmethod
+    def validate_rule_key(cls, v: Optional[str]) -> Optional[str]:
+        if v is not None and not _RULE_KEY_RE.match(v):
+            raise ValueError("rule_key must be 1–32 alphanumeric characters or underscores")
+        return v
 
 
 class PromptRuleUpdateRequest(BaseModel):
