@@ -153,6 +153,7 @@ def create_app() -> FastAPI:
     from app.dependencies import get_db
 
     @app.get("/api/health")
+    @app.get("/health")
     async def health(db: Session = Depends(get_db)):
         checks: dict = {}
         overall = "healthy"
