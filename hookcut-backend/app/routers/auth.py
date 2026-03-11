@@ -27,7 +27,8 @@ async def register(req: RegisterRequest, request: Request, db: Session = Depends
         return AuthService.register(db, req.email, req.password, req.name)
     except Exception as e:
         logger.exception("Registration failed for %s: %s", req.email, e)
-        raise
+        from fastapi.responses import JSONResponse
+        return JSONResponse(status_code=500, content={"detail": f"Registration error: {type(e).__name__}: {str(e)[:300]}"})
 
 
 @router.post("/auth/login", response_model=AuthResponse)
