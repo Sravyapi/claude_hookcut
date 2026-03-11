@@ -2,6 +2,8 @@ import { getToken } from "next-auth/jwt";
 import { NextRequest, NextResponse } from "next/server";
 import * as jose from "jose";
 
+export const runtime = "nodejs";
+
 const secret = new TextEncoder().encode(process.env.NEXTAUTH_SECRET!);
 
 export async function GET(req: NextRequest) {
