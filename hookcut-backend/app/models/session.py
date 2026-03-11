@@ -101,6 +101,7 @@ class Short(Base):
     caption_style: Mapped[str] = mapped_column(String(20), default="clean")
     source_type: Mapped[str] = mapped_column(String(10), default="ai")  # "ai" or "manual"
     aspect_ratio: Mapped[str] = mapped_column(String(5), default="9:16")
+    audio_normalization: Mapped[bool] = mapped_column(Boolean, default=True)
     captions_failed: Mapped[bool] = mapped_column(Boolean, default=False)
     start_seconds_override: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     end_seconds_override: Mapped[Optional[float]] = mapped_column(Float, nullable=True)

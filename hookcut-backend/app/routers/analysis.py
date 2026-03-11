@@ -153,6 +153,7 @@ def select_hooks(
             time_overrides=req.time_overrides,
             user_id=user_id,
             aspect_ratio=req.aspect_ratio,
+            audio_normalization=req.audio_normalization,
         )
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)

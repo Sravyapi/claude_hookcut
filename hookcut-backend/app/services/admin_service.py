@@ -23,6 +23,11 @@ from app.exceptions import ResourceNotFoundError, HookCutError
 logger = logging.getLogger(__name__)
 
 
+def _escape_sql_like(value: str) -> str:
+    """Escape SQL LIKE wildcards to prevent unintended pattern matching."""
+    return value.replace("%", "\\%").replace("_", "\\_")
+
+
 class AdminService:
     """All methods are static — no instance state required."""
 
@@ -93,7 +98,7 @@ class AdminService:
             count_stmt = select(func.count(User.id))
 
             if search:
-                safe_search = search.replace("%", "\\%").replace("_", "\\_")
+                safe_search = _escape_sql_like(search)
                 search_filter = User.email.ilike(f"%{safe_search}%")
                 count_stmt = count_stmt.where(search_filter)
 
@@ -117,7 +122,7 @@ class AdminService:
             )
 
             if search:
-                safe_search = search.replace("%", "\\%").replace("_", "\\_")
+                safe_search = _escape_sql_like(search)
                 stmt = stmt.where(User.email.ilike(f"%{safe_search}%"))
 
             stmt = (

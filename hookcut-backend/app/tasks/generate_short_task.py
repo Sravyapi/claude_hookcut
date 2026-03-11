@@ -57,7 +57,7 @@ def generate_short(self, short_id: str):
         generator = ShortGenerator()
         storage = get_storage_service()
 
-        is_manual = getattr(short, 'source_type', 'ai') == "manual"
+        is_manual = short.source_type == "manual"
 
         # Use time overrides if set (from trim controls)
         start_sec = short.start_seconds_override
@@ -101,9 +101,9 @@ def generate_short(self, short_id: str):
                     niche=session.niche,
                     caption_style=short.caption_style or "clean",
                     transcript_text=session.transcript_text or "",
-                    aspect_ratio=getattr(short, 'aspect_ratio', '9:16') or '9:16',
+                    aspect_ratio=short.aspect_ratio or '9:16',
                     captions_enabled=True,
-                    audio_normalization=True,
+                    audio_normalization=short.audio_normalization if short.audio_normalization is not None else True,
                     source_type="manual",
                     start_seconds=start_sec,
                     end_seconds=end_sec,
@@ -130,7 +130,8 @@ def generate_short(self, short_id: str):
                     niche=session.niche,
                     caption_style=short.caption_style or "clean",
                     transcript_text=session.transcript_text or "",
-                    aspect_ratio=getattr(short, 'aspect_ratio', '9:16') or '9:16',
+                    aspect_ratio=short.aspect_ratio or '9:16',
+                    audio_normalization=short.audio_normalization if short.audio_normalization is not None else True,
                     on_progress=on_progress,
                 )
 

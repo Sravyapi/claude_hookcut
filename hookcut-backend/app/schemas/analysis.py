@@ -69,6 +69,7 @@ class SelectHooksRequest(BaseModel):
     hook_ids: list[str]
     caption_style: str = "clean"
     aspect_ratio: Literal["9:16", "1:1", "4:5"] = "9:16"
+    audio_normalization: bool = True
     time_overrides: dict[str, TimeOverride] = {}
 
     @field_validator("hook_ids")

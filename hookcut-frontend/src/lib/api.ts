@@ -130,6 +130,7 @@ export const api = {
     captionStyle: string = "clean",
     timeOverrides: Record<string, { start_seconds: number; end_seconds: number }> = {},
     aspectRatio: string = "9:16",
+    audioNormalization: boolean = true,
   ) =>
     request<SelectHooksResponse>(`/sessions/${sessionId}/select-hooks`, {
       method: "POST",
@@ -138,6 +139,7 @@ export const api = {
         caption_style: captionStyle,
         time_overrides: timeOverrides,
         aspect_ratio: aspectRatio,
+        audio_normalization: audioNormalization,
       }),
     }),
 

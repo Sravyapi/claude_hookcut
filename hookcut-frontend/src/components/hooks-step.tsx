@@ -67,7 +67,8 @@ interface HooksStepProps {
     hookIds: string[],
     captionStyle: string,
     timeOverrides: Record<string, { start_seconds: number; end_seconds: number }>,
-    aspectRatio: string
+    aspectRatio: string,
+    audioNormalization: boolean
   ) => void;
   onRegenerate: () => void;
   isRegenerating: boolean;
@@ -94,6 +95,7 @@ export const HooksStep = memo(function HooksStep({
   const handleCaptionStyleChange = useCallback((v: CaptionStyle) => setCaptionStyle(v), []);
   const [aspectRatio, setAspectRatio] = useState<AspectRatio>("9:16");
   const handleAspectRatioChange = useCallback((v: AspectRatio) => setAspectRatio(v), []);
+  const [audioNormalization, setAudioNormalization] = useState(true);
   const [timeOverrides, setTimeOverrides] = useState<
     Record<string, { start_seconds: number; end_seconds: number }>
   >({});
@@ -116,8 +118,8 @@ export const HooksStep = memo(function HooksStep({
   }, []);
 
   const handleGenerate = useCallback(
-    () => onSelectHooks(Array.from(selectedIds), captionStyle, timeOverrides, aspectRatio),
-    [onSelectHooks, selectedIds, captionStyle, timeOverrides, aspectRatio]
+    () => onSelectHooks(Array.from(selectedIds), captionStyle, timeOverrides, aspectRatio, audioNormalization),
+    [onSelectHooks, selectedIds, captionStyle, timeOverrides, aspectRatio, audioNormalization]
   );
 
   const avgScore = useMemo(
@@ -271,6 +273,40 @@ export const HooksStep = memo(function HooksStep({
                   <div className="text-xs text-[--color-muted]">{opt.platform}</div>
                 </button>
               ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* ── Audio normalization toggle ── */}
+      <AnimatePresence>
+        {selectedIds.size > 0 && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="mb-5 overflow-hidden"
+          >
+            <div className="flex items-center justify-between bg-[--color-surface-1] border border-[--color-border-def] rounded-xl px-4 py-3">
+              <div>
+                <p className="text-sm font-medium text-white/80">Audio Normalization</p>
+                <p className="text-xs text-[--color-muted]">Normalize volume levels (loudnorm)</p>
+              </div>
+              <button
+                type="button"
+                role="switch"
+                aria-checked={audioNormalization}
+                onClick={() => setAudioNormalization((v) => !v)}
+                className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full transition-colors duration-200 ${
+                  audioNormalization ? "bg-[--color-primary]" : "bg-white/10"
+                }`}
+              >
+                <span
+                  className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-sm ring-0 transition-transform duration-200 ${
+                    audioNormalization ? "translate-x-[22px]" : "translate-x-[2px]"
+                  } mt-[2px]`}
+                />
+              </button>
             </div>
           </motion.div>
         )}

@@ -280,6 +280,7 @@ class AnalyzeService:
         time_overrides: dict,
         user_id: str | None = None,
         aspect_ratio: str = "9:16",
+        audio_normalization: bool = True,
     ) -> dict:
         """
         Select hooks and dispatch Short generation tasks.
@@ -362,6 +363,7 @@ class AnalyzeService:
                 status="queued",
                 caption_style=caption_style,
                 aspect_ratio=aspect_ratio,
+                audio_normalization=audio_normalization,
                 start_seconds_override=override.start_seconds if override else None,
                 end_seconds_override=override.end_seconds if override else None,
                 is_watermarked=session.is_watermarked,

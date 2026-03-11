@@ -388,11 +388,12 @@ export default function HomeStateMachine({ marketingContent }: Props) {
       hookIds: string[],
       captionStyle: string = "clean",
       timeOverrides: Record<string, { start_seconds: number; end_seconds: number }> = {},
-      aspectRatio: string = "9:16"
+      aspectRatio: string = "9:16",
+      audioNormalization: boolean = true
     ) => {
       if (!sessionId) return;
       try {
-        const result = await api.selectHooks(sessionId, hookIds, captionStyle, timeOverrides, aspectRatio);
+        const result = await api.selectHooks(sessionId, hookIds, captionStyle, timeOverrides, aspectRatio, audioNormalization);
         dispatch({ type: "SHORTS_SELECTED", shortIds: result.short_ids });
       } catch (err) {
         dispatch({
