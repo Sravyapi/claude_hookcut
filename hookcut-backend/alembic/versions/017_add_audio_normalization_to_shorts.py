@@ -12,7 +12,7 @@ from alembic import op
 def upgrade() -> None:
     op.add_column(
         "shorts",
-        sa.Column("audio_normalization", sa.Boolean(), server_default=sa.text("1"), nullable=False),
+        sa.Column("audio_normalization", sa.Boolean(), server_default=sa.text("true"), nullable=False),
     )
 
 
