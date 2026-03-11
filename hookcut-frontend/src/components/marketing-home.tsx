@@ -196,7 +196,7 @@ export function MarketingHome() {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-2xl mx-auto">
             {PLANS.map((plan) => {
               const isHighlighted = plan.highlighted;
               const monthlyPrice = currency === "INR" ? plan.priceINR : plan.priceUSD;
@@ -233,7 +233,7 @@ export function MarketingHome() {
                       </p>
                     )}
                     <p className={`text-sm ${isHighlighted ? "text-white/60" : "text-white/25"}`}>
-                      {plan.period ? `${plan.minutes} min of video` : `${plan.minutes} min included`}
+                      {plan.period ? `${plan.aiMinutes} AI min/mo` : `${plan.aiMinutes} AI min included`}
                     </p>
                   </div>
                   <ul className="space-y-2.5 flex-1 mb-6">
@@ -254,9 +254,7 @@ export function MarketingHome() {
                     className={`block w-full py-2.5 rounded-lg text-sm font-semibold text-center transition-colors ${
                       isHighlighted
                         ? "bg-white text-[#E84A2F] hover:bg-white/90"
-                        : plan.key === "pro"
-                          ? "bg-[#E84A2F] text-white hover:bg-[#D13F25]"
-                          : "bg-white/[0.06] text-white/50 hover:bg-white/[0.1]"
+                        : "bg-white/[0.06] text-white/50 hover:bg-white/[0.1]"
                     }`}
                   >
                     {plan.cta}
