@@ -23,12 +23,7 @@ async def register(req: RegisterRequest, request: Request, db: Session = Depends
     """Register a new user with email and password."""
     client_ip = request.client.host if request.client else "unknown"
     rate_limiter.check(f"ip:{client_ip}", "auth_register", limit=10, window_seconds=900, request=request)
-    try:
-        return AuthService.register(db, req.email, req.password, req.name)
-    except Exception as e:
-        logger.exception("Registration failed for %s: %s", req.email, e)
-        from fastapi.responses import JSONResponse
-        return JSONResponse(status_code=500, content={"detail": f"Registration error: {type(e).__name__}: {str(e)[:300]}"})
+    return AuthService.register(db, req.email, req.password, req.name)
 
 
 @router.post("/auth/login", response_model=AuthResponse)
