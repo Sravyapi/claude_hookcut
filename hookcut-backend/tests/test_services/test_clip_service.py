@@ -190,45 +190,16 @@ class TestCreditDeduction:
 
     @patch("app.services.clip_service.generate_short")
     @patch("app.services.clip_service.validate_youtube_url", return_value=(True, "dQw4w9WgXcQ", None))
-    def test_lite_deducts_manual_minutes(self, mock_validate, mock_task, db):
+    def test_free_tier_always_allowed_watermarked(self, mock_validate, mock_task, db):
+        """Free tier: clips always allowed, watermarked, no deduction."""
         mock_task.delay.return_value = MagicMock(id="task-1")
-        user = make_user(db, user_id=TEST_USER_ID, plan_tier="lite")
-
-        # Give lite user manual clip minutes
-        balance = db.execute(select(CreditBalance).where(CreditBalance.user_id == TEST_USER_ID)).scalar_one()
-        balance.manual_clip_minutes_remaining = 100.0
-        balance.manual_clip_minutes_total = 100.0
-        db.commit()
-
-        request = _make_request()  # 30s clip = 0.5 min
-        result = ClipService.generate_clips(db, TEST_USER_ID, request)
-
-        assert result.minutes_deducted == pytest.approx(0.5, abs=0.01)
-
-    @patch("app.services.clip_service.generate_short")
-    @patch("app.services.clip_service.validate_youtube_url", return_value=(True, "dQw4w9WgXcQ", None))
-    def test_free_tier_insufficient_minutes(self, mock_validate, mock_task, db):
         make_user(db, user_id=TEST_USER_ID, plan_tier="free")
-        # Free user has 0 manual clip minutes by default
-
-        request = _make_request()
-        with pytest.raises(InsufficientCreditsError):
-            ClipService.generate_clips(db, TEST_USER_ID, request)
-
-    @patch("app.services.clip_service.generate_short")
-    @patch("app.services.clip_service.validate_youtube_url", return_value=(True, "dQw4w9WgXcQ", None))
-    def test_free_tier_watermarked(self, mock_validate, mock_task, db):
-        mock_task.delay.return_value = MagicMock(id="task-1")
-        user = make_user(db, user_id=TEST_USER_ID, plan_tier="free")
-
-        # Give free user manual clip minutes
-        balance = db.execute(select(CreditBalance).where(CreditBalance.user_id == TEST_USER_ID)).scalar_one()
-        balance.manual_clip_minutes_remaining = 120.0
-        db.commit()
+        # No manual clip minutes needed — clips are always free
 
         request = _make_request()
         result = ClipService.generate_clips(db, TEST_USER_ID, request)
 
+        assert result.minutes_deducted == 0.0
         session = db.get(AnalysisSession, result.session_id)
         assert session.is_watermarked is True
 
@@ -242,11 +213,13 @@ class TestFreeReclip:
         mock_task.delay.return_value = MagicMock(id="task-1")
         make_user(db, user_id=TEST_USER_ID, plan_tier="free")
 
-        # Create a completed AI session for the same video
+        # Create a paid (non-watermarked) AI session for the same video
         ai_session = make_session(
             db, TEST_USER_ID, video_id="dQw4w9WgXcQ",
             status="completed", source_type="ai",
         )
+        ai_session.is_watermarked = False  # Paid/PAYG AI analysis
+        db.commit()
 
         request = _make_request(ai_session_id=ai_session.id)
         result = ClipService.generate_clips(db, TEST_USER_ID, request)

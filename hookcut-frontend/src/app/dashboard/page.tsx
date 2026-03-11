@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Clock, CreditCard, Zap, Plus, ChevronLeft, ChevronRight, Search, Scissors, ArrowRight, Sparkles } from "lucide-react";
+import { Plus, ChevronLeft, ChevronRight, Search, Scissors, ArrowRight, Sparkles } from "lucide-react";
 import { api } from "@/lib/api";
 import type { CreditBalance, HistoryResponse, SessionSummary } from "@/lib/types";
 import { getStatusConfig } from "@/lib/constants";
@@ -205,7 +205,6 @@ export default function DashboardPage() {
 
   const totalMinutes = balance ? balance.total_available : 0;
   const hasAiMinutes = balance ? (balance.paid_minutes_remaining + balance.free_minutes_remaining + balance.payg_minutes_remaining) > 0 : false;
-  const hasClipMinutes = balance ? balance.manual_clip_minutes_remaining > 0 : false;
   const firstName = session?.user?.name?.split(" ")[0];
 
   if (authStatus === "loading") {
@@ -281,7 +280,7 @@ export default function DashboardPage() {
 
           {/* Manual Clip card */}
           <Link
-            href={hasClipMinutes ? "/clip" : "/pricing"}
+            href="/clip"
             className="glass-card rounded-2xl p-5 group hover:border-violet-500/20 transition-all duration-300 block"
           >
             <div className="flex items-start justify-between mb-4">
@@ -291,12 +290,7 @@ export default function DashboardPage() {
               <ArrowRight className="w-4 h-4 text-white/15 group-hover:text-white/40 group-hover:translate-x-0.5 transition-all" />
             </div>
             <h3 className="text-sm font-semibold text-white mb-0.5">Manual Clip</h3>
-            <p className="text-xs text-white/35">
-              {hasClipMinutes
-                ? `${balance!.manual_clip_minutes_remaining.toFixed(0)} min available`
-                : "Top up to get started"
-              }
-            </p>
+            <p className="text-xs text-white/35">Always free · watermark-free with Pro</p>
           </Link>
         </motion.div>
 
@@ -340,9 +334,6 @@ export default function DashboardPage() {
                   )}
                   {balance.payg_minutes_remaining > 0 && (
                     <CreditLine label="Pay-As-You-Go" value={balance.payg_minutes_remaining} color="bg-amber-400" />
-                  )}
-                  {balance.manual_clip_minutes_total > 0 && (
-                    <CreditLine label="Manual Clips" value={balance.manual_clip_minutes_remaining} total={balance.manual_clip_minutes_total} color="bg-violet-400" />
                   )}
                 </div>
               </>

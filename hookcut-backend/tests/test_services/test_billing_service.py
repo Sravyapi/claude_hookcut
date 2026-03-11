@@ -17,16 +17,16 @@ class TestGetPlans:
 
         assert result.currency == "USD"
         assert result.current_tier == "free"
-        assert len(result.plans) == 3
+        assert len(result.plans) == 2
         assert result.plans == PLANS_USD
 
     def test_returns_inr_plans_for_inr_user(self, db):
-        make_user(db, user_id="bp2", currency="INR", plan_tier="lite")
+        make_user(db, user_id="bp2", currency="INR", plan_tier="pro")
         result = BillingService.get_plans(db, "bp2")
 
         assert result.currency == "INR"
-        assert result.current_tier == "lite"
-        assert len(result.plans) == 3
+        assert result.current_tier == "pro"
+        assert len(result.plans) == 2
         assert result.plans == PLANS_INR
 
     def test_defaults_to_usd_for_unknown_user(self, db):
@@ -36,11 +36,11 @@ class TestGetPlans:
         assert result.current_tier == "free"
         assert result.plans == PLANS_USD
 
-    def test_plan_tiers_are_free_lite_pro(self, db):
+    def test_plan_tiers_are_free_pro(self, db):
         make_user(db, user_id="bp3")
         result = BillingService.get_plans(db, "bp3")
         tiers = [p.tier for p in result.plans]
-        assert tiers == ["free", "lite", "pro"]
+        assert tiers == ["free", "pro"]
 
 
 class TestCreateCheckout:
@@ -67,7 +67,7 @@ class TestCreateCheckout:
         mock_settings.return_value = MagicMock(FEATURE_V0_MODE=False)
 
         with pytest.raises(UserNotFoundError):
-            BillingService.create_checkout(db, "nonexistent", "lite")
+            BillingService.create_checkout(db, "nonexistent", "pro")
 
     @patch("app.services.billing_service.PaymentService")
     @patch("app.services.billing_service.get_settings")
@@ -99,7 +99,7 @@ class TestCreateCheckout:
         make_user(db, user_id="cc4")
 
         with pytest.raises(PaymentProcessingError) as exc_info:
-            BillingService.create_checkout(db, "cc4", "lite")
+            BillingService.create_checkout(db, "cc4", "pro")
         assert "Failed to create checkout session" in exc_info.value.detail
 
 

@@ -6,7 +6,6 @@ from sqlalchemy import select, func
 from sqlalchemy.orm import Session
 
 from app.exceptions import (
-    InsufficientCreditsError,
     InvalidStateError,
     InvalidURLError,
     SessionNotFoundError,
@@ -15,7 +14,6 @@ from app.exceptions import (
 from app.models.session import AnalysisSession, Short
 from app.models.user import User
 from app.schemas.clip import GenerateClipsRequest, GenerateClipsResponse
-from app.services.credit_manager import CreditManager
 from app.tasks.generate_short_task import generate_short
 from app.utils.youtube import validate_youtube_url
 
@@ -84,12 +82,18 @@ class ClipService:
                 f"You have {existing_clip_count} existing clips."
             )
 
-        # 5. Create AnalysisSession FIRST (so we have real session.id for credit deduction)
+        # 5. Determine watermark status.
+        # New pricing model:
+        #   - Pro/Pro Max → always watermark-free
+        #   - Free re-clip (AI-analyzed with paid/PAYG credits) → watermark-free
+        #   - Everyone else → watermarked (still always free, no deduction)
         minutes_deducted = 0.0
-        is_watermarked = user.plan_tier == "free"
-
-        if not is_free_reclip and user.plan_tier in ("pro", "pro_max"):
+        if user.plan_tier in ("pro", "pro_max") or is_free_reclip:
             is_watermarked = False
+            credits_source = "paid" if user.plan_tier in ("pro", "pro_max") else "payg"
+        else:
+            is_watermarked = True
+            credits_source = "free"
 
         session = AnalysisSession(
             user_id=user_id,
@@ -102,28 +106,14 @@ class ClipService:
             status="generating_shorts",
             source_type="manual",
             minutes_charged=0.0,
-            credits_source="free" if is_free_reclip else ("paid" if user.plan_tier != "free" else "free"),
+            credits_source=credits_source,
             is_watermarked=is_watermarked,
         )
         db.add(session)
         db.flush()  # Get session.id
 
-        # 6. Deduct credits with real session.id (skip for free re-clip and Pro/Pro Max)
-        if not is_free_reclip and user.plan_tier not in ("pro", "pro_max"):
-            cm = CreditManager(db)
-            result = cm.deduct_manual_credits(
-                user_id=user_id,
-                minutes=total_minutes,
-                session_id=session.id,
-                plan_tier=user.plan_tier,
-            )
-            if not result.success:
-                db.rollback()
-                raise InsufficientCreditsError(result.error)
-            minutes_deducted = total_minutes
-            is_watermarked = result.is_watermarked
-            session.minutes_charged = minutes_deducted
-            session.is_watermarked = is_watermarked
+        # 6. No credit deduction — manual clips are always free.
+        # (Watermark removal is free for Pro users and re-clips from paid AI sessions.)
 
         # 7. Create Short records
         shorts = []
@@ -184,5 +174,6 @@ class ClipService:
             and ai_session.video_id == video_id
             and ai_session.source_type == "ai"
             and ai_session.status in ("completed", "hooks_ready")
+            and not ai_session.is_watermarked  # Only paid/PAYG analyses qualify
             and created >= cutoff
         )

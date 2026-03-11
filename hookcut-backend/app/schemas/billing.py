@@ -15,7 +15,7 @@ class BalanceResponse(BaseModel):
 
 
 class PlanInfo(BaseModel):
-    tier: Literal["free", "lite", "pro", "pro_max"]
+    tier: Literal["free", "pro", "pro_max"]
     price_display: str
     watermark_free_minutes: int
     currency: Literal["USD", "INR"]

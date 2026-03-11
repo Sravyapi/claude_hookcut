@@ -30,14 +30,12 @@ def _ensure_payments_enabled() -> None:
 
 PLANS_INR = [
     PlanInfo(tier="free", price_display="Free", watermark_free_minutes=0, currency="INR"),
-    PlanInfo(tier="lite", price_display="Rs 499/mo", watermark_free_minutes=100, currency="INR"),
-    PlanInfo(tier="pro", price_display="Rs 999/mo", watermark_free_minutes=500, currency="INR"),
+    PlanInfo(tier="pro", price_display="Rs 499/mo", watermark_free_minutes=300, currency="INR"),
 ]
 
 PLANS_USD = [
     PlanInfo(tier="free", price_display="Free", watermark_free_minutes=0, currency="USD"),
-    PlanInfo(tier="lite", price_display="$7/mo", watermark_free_minutes=100, currency="USD"),
-    PlanInfo(tier="pro", price_display="$13/mo", watermark_free_minutes=500, currency="USD"),
+    PlanInfo(tier="pro", price_display="$7/mo", watermark_free_minutes=300, currency="USD"),
 ]
 
 
@@ -71,8 +69,8 @@ class BillingService:
         """
         _ensure_payments_enabled()
 
-        if plan_tier not in ("lite", "pro"):
-            raise InvalidStateError("Invalid plan tier. Must be 'lite' or 'pro'")
+        if plan_tier not in ("pro",):
+            raise InvalidStateError("Invalid plan tier. Must be 'pro'")
 
         user = db.get(User, user_id)
         if not user:

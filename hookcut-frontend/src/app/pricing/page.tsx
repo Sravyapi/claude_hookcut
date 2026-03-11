@@ -15,49 +15,17 @@ import { staggerContainer, fadeUpItem } from "@/lib/motion";
 import Header from "@/components/header";
 import { useToast } from "@/components/ui/use-toast";
 
-/* ─── Constants ─── */
-const TIER_ICONS: Record<string, React.ReactNode> = {
-  free: <Sparkles className="w-5 h-5" />,
-  lite: <Zap className="w-5 h-5" />,
-  pro: <Crown className="w-5 h-5" />,
-};
-
-const TIER_FEATURES: Record<string, string[]> = {
-  free: ["120 analysis minutes/month", "Watermarked output", "All 18 hook types", "Community support"],
-  lite: ["100 watermark-free minutes", "No watermarks", "Hook regeneration", "Priority processing"],
-  pro: ["500 watermark-free minutes", "No watermarks", "Advanced analytics", "Priority support", "Hook regeneration"],
-};
-
-const TIER_STYLES: Record<
-  string,
-  { topBorder: string; badge?: string; glow: string; recommended?: boolean }
-> = {
-  free: {
-    topBorder: "from-white/[0.06] to-white/[0.04]",
-    glow: "",
-  },
-  lite: {
-    topBorder: "from-[#E84A2F] to-[#D13F25]",
-    badge: "Most Popular",
-    glow: "shadow-[0_0_48px_rgba(232,74,47,0.12)]",
-    recommended: true,
-  },
-  pro: {
-    topBorder: "from-[#E84A2F] via-[#FF6B47] to-[#E84A2F]",
-    glow: "shadow-[0_0_60px_rgba(232,74,47,0.15)]",
-  },
-};
-
 /* ─── Feature comparison data ─── */
 const COMPARISON_FEATURES = [
-  { label: "Minutes / month", free: "120 min", lite: "100 min", pro: "500 min" },
-  { label: "Watermark-free output", free: false, lite: true, pro: true },
-  { label: "All 18 hook types", free: true, lite: true, pro: true },
-  { label: "AI scoring (7 dimensions)", free: true, lite: true, pro: true },
-  { label: "Hook regeneration", free: false, lite: true, pro: true },
-  { label: "Priority processing", free: false, lite: true, pro: true },
-  { label: "Advanced analytics", free: false, lite: false, pro: true },
-  { label: "Priority support", free: false, lite: false, pro: true },
+  { label: "AI analysis minutes / month", free: "120 min", pro: "300 min" },
+  { label: "Manual clips", free: "Unlimited (watermarked)", pro: "Unlimited (watermark-free)" },
+  { label: "Watermark-free output", free: false, pro: true },
+  { label: "Free clips on analyzed videos", free: false, pro: true },
+  { label: "All 18 hook types", free: true, pro: true },
+  { label: "AI scoring (7 dimensions)", free: true, pro: true },
+  { label: "Hook regeneration", free: false, pro: true },
+  { label: "Priority processing", free: false, pro: true },
+  { label: "Priority support", free: false, pro: true },
 ];
 
 /* ─── FAQ data ─── */
@@ -67,8 +35,16 @@ const FAQS = [
     a: "Minutes are based on the duration of the source YouTube video you analyze. A 10-minute video costs 10 minutes from your balance.",
   },
   {
+    q: "Are manual clips always free?",
+    a: "Yes — watermarked manual clips are always free for everyone. Pro users and PAYG users who analyzed a video get watermark-free clips on those videos at no extra cost.",
+  },
+  {
+    q: "What is Pay-As-You-Go?",
+    a: "PAYG lets you buy AI analysis minutes without a subscription. Minutes never expire. Clips on any PAYG-analyzed video are automatically watermark-free.",
+  },
+  {
     q: "Do credits expire?",
-    a: "Subscription credits reset at the start of each billing month. Pay-As-You-Go credits never expire and roll over indefinitely.",
+    a: "Subscription credits reset at the start of each billing month. Pay-As-You-Go credits never expire and roll over indefinitely. Free tier resets monthly.",
   },
   {
     q: "Can I cancel anytime?",
@@ -77,10 +53,6 @@ const FAQS = [
   {
     q: "What format are the Shorts in?",
     a: "MP4 with H.264 video and AAC audio, 1080×1920 (9:16), with burned-in captions and optional watermark.",
-  },
-  {
-    q: "What YouTube video length is supported?",
-    a: "Videos up to 60 minutes long are supported. Longer videos may be added in a future update.",
   },
 ];
 
@@ -196,31 +168,26 @@ export default function PricingPage() {
   const currency = plans?.currency || detectCurrency();
   const currentTier = plans?.current_tier || "free";
 
-  const formatPrice = (plan: PlanInfo) => {
-    if (plan.tier === "free") return "Free";
-    return plan.price_display;
+  const getPrice = (plan: PlanInfo | (typeof PLANS)[number]) => {
+    if ("price_display" in plan) return plan.price_display;
+    const price = currency === "INR" ? (plan as (typeof PLANS)[number]).priceINR : (plan as (typeof PLANS)[number]).priceUSD;
+    if (price === 0) return "Free";
+    return `${currency === "INR" ? "₹" : "$"}${price}`;
   };
 
-  /* Static fallback plans derived from shared pricing data */
-  const detectedCurrency = detectCurrency();
-  const staticPlans = PLANS.map((p) => {
-    const price = detectedCurrency === "INR" ? p.priceINR : p.priceUSD;
-    const sym = detectedCurrency === "INR" ? "₹" : "$";
-    return {
-      tier: p.key,
-      name: p.name,
-      price: price === 0 ? "Free" : `${sym}${price}`,
-      price_display: price === 0 ? "Free" : `${sym}${price}/mo`,
-      desc: p.key === "free" ? `${p.minutes} min/month included` : `${p.minutes} watermark-free min`,
-      features: [...p.features],
-    };
-  });
+  const displayPlans = plans?.plans ?? PLANS.map((p) => ({
+    tier: p.key,
+    price_display: getPrice(p),
+    watermark_free_minutes: p.aiMinutes,
+    currency: currency,
+  } as PlanInfo));
 
   return (
     <>
     <Header />
     <main className="pt-24 pb-16">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
+
         {/* Page header */}
         <motion.div
           className="text-center mb-14"
@@ -230,73 +197,63 @@ export default function PricingPage() {
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[--color-primary]/8 border border-[--color-primary]/15 text-[#FF6B47] text-xs font-medium mb-5">
             <Sparkles className="w-3.5 h-3.5" />
-            Simple, transparent pricing
+            Try free. Pay to publish clean.
           </div>
           <h1 className="text-4xl font-bold text-white mb-3">
-            Choose Your <span className="gradient-text">Plan</span>
+            Simple, <span className="gradient-text">Honest</span> Pricing
           </h1>
-          <p className="text-white/60 max-w-md mx-auto text-sm">
-            Unlock more minutes, remove watermarks, and supercharge your Shorts production.
+          <p className="text-white/55 max-w-md mx-auto text-sm leading-relaxed">
+            Clips are always free. Watermarks come off when you pay.
+            120 AI minutes every month, on us.
           </p>
         </motion.div>
 
-        {/* Plan cards */}
+        {/* Plan cards — 2 columns */}
         {loading ? (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-            {Array.from({ length: 3 }).map((_, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12 max-w-2xl mx-auto">
+            {Array.from({ length: 2 }).map((_, i) => (
               <Skeleton key={i} className="h-96" />
             ))}
           </div>
         ) : (
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12 items-start"
+            className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12 max-w-2xl mx-auto"
             variants={staggerContainer}
             initial="hidden"
             animate="show"
           >
-            {(plans?.plans ?? staticPlans).map((plan) => {
-              const styles = TIER_STYLES[plan.tier] || TIER_STYLES.free;
+            {displayPlans.map((plan) => {
               const isCurrent = plan.tier === currentTier;
-              const isRecommended = styles.recommended;
+              const isPro = plan.tier === "pro";
 
-              const price = plans
-                ? formatPrice(plan as PlanInfo)
-                : (plan as (typeof staticPlans)[number]).price;
-              const desc = plans
-                ? (plan as PlanInfo).watermark_free_minutes > 0
-                  ? `${(plan as PlanInfo).watermark_free_minutes} watermark-free min`
-                  : "Watermarked output"
-                : (plan as (typeof staticPlans)[number]).desc;
-              const features = TIER_FEATURES[plan.tier] ?? (plan as (typeof staticPlans)[number]).features;
+              const staticPlan = PLANS.find((p) => p.key === plan.tier);
+              const features = staticPlan?.features ?? [];
+              const price = getPrice(plan);
 
               return (
                 <motion.div
                   key={plan.tier}
                   variants={fadeUpItem}
-                  className={`relative glass rounded-2xl overflow-hidden flex flex-col transition-all duration-300 ${styles.glow} ${
-                    isRecommended
-                      ? "md:-mt-2 md:mb-2 ring-2 ring-[--color-primary]/30"
+                  className={`relative glass rounded-2xl overflow-hidden flex flex-col transition-all duration-300 ${
+                    isPro
+                      ? "ring-2 ring-[--color-primary]/30 shadow-[0_0_48px_rgba(232,74,47,0.12)] md:-mt-2 md:mb-2"
                       : "hover:border-white/10"
                   } ${isCurrent ? "ring-2 ring-[--color-primary]/50" : ""}`}
-                  whileHover={{ y: isRecommended ? -4 : -2 }}
+                  whileHover={{ y: isPro ? -4 : -2 }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 >
                   {/* Gradient top border */}
-                  <div
-                    className={`h-[3px] bg-gradient-to-r ${styles.topBorder}`}
-                  />
+                  <div className={`h-[3px] bg-gradient-to-r ${isPro ? "from-[#E84A2F] to-[#D13F25]" : "from-white/[0.06] to-white/[0.04]"}`} />
 
                   {/* Badge */}
-                  {(styles.badge || isCurrent) && (
+                  {(isPro || isCurrent) && (
                     <div className="absolute top-3 right-3">
-                      <span
-                        className={`text-[10px] px-2.5 py-1 rounded-full font-semibold ${
-                          isCurrent
-                            ? "bg-[--color-primary]/20 text-[#FF6B47] border border-[--color-primary]/30"
-                            : "bg-[--color-primary] text-white"
-                        }`}
-                      >
-                        {isCurrent ? "Current Plan" : styles.badge}
+                      <span className={`text-[10px] px-2.5 py-1 rounded-full font-semibold ${
+                        isCurrent
+                          ? "bg-[--color-primary]/20 text-[#FF6B47] border border-[--color-primary]/30"
+                          : "bg-[--color-primary] text-white"
+                      }`}>
+                        {isCurrent ? "Current Plan" : "Most Popular"}
                       </span>
                     </div>
                   )}
@@ -304,19 +261,13 @@ export default function PricingPage() {
                   <div className="p-6 flex flex-col flex-1">
                     {/* Tier info */}
                     <div className="flex items-center gap-2.5 mb-4">
-                      <div
-                        className={`w-9 h-9 rounded-xl flex items-center justify-center ${
-                          plan.tier === "pro"
-                            ? "bg-[--color-primary]/15 text-[#FF6B47]"
-                            : plan.tier === "lite"
-                              ? "bg-[--color-primary]/15 text-[#FF6B47]"
-                              : "bg-white/[0.06] text-white/50"
-                        }`}
-                      >
-                        {TIER_ICONS[plan.tier]}
+                      <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${
+                        isPro ? "bg-[--color-primary]/15 text-[#FF6B47]" : "bg-white/[0.06] text-white/50"
+                      }`}>
+                        {isPro ? <Crown className="w-5 h-5" /> : <Sparkles className="w-5 h-5" />}
                       </div>
                       <h3 className="text-lg font-bold text-white">
-                        {plans ? plan.tier.charAt(0).toUpperCase() + plan.tier.slice(1) : (plan as (typeof staticPlans)[number]).name}
+                        {plan.tier.charAt(0).toUpperCase() + plan.tier.slice(1)}
                       </h3>
                     </div>
 
@@ -326,7 +277,9 @@ export default function PricingPage() {
                         <span className="text-sm text-white/35">/month</span>
                       )}
                     </div>
-                    <p className="text-xs text-white/60 mb-6">{desc}</p>
+                    <p className="text-xs text-white/50 mb-6">
+                      {isPro ? "300 AI analysis min/mo · Watermark-free" : "120 AI analysis min/mo · Watermarked"}
+                    </p>
 
                     {/* Features */}
                     <ul className="space-y-2.5 flex-1 mb-6">
@@ -353,9 +306,7 @@ export default function PricingPage() {
                         onClick={() => handleUpgrade(plan.tier)}
                         disabled={checkoutLoading === plan.tier}
                       >
-                        {checkoutLoading === plan.tier
-                          ? "Redirecting..."
-                          : `Upgrade to ${plans ? plan.tier.charAt(0).toUpperCase() + plan.tier.slice(1) : (plan as (typeof staticPlans)[number]).name}`}
+                        {checkoutLoading === plan.tier ? "Redirecting..." : "Upgrade to Pro"}
                       </button>
                     )}
                   </div>
@@ -377,9 +328,7 @@ export default function PricingPage() {
             className="flex items-center gap-2 mx-auto text-sm text-white/40 hover:text-white/60 transition-colors"
           >
             <span>Compare all features</span>
-            <ChevronDown
-              className={`w-4 h-4 transition-transform duration-200 ${comparisonOpen ? "rotate-180" : ""}`}
-            />
+            <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${comparisonOpen ? "rotate-180" : ""}`} />
           </button>
 
           <AnimatePresence>
@@ -391,23 +340,17 @@ export default function PricingPage() {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="overflow-hidden"
               >
-                <div className="glass-card rounded-2xl overflow-hidden mt-6">
-                  {/* Table header — hidden on mobile, shown as grid on sm+ */}
-                  <div className="hidden sm:grid grid-cols-4 gap-4 px-6 py-3 border-b border-white/[0.06] bg-white/[0.02]">
+                <div className="glass-card rounded-2xl overflow-hidden mt-6 max-w-2xl mx-auto">
+                  <div className="hidden sm:grid grid-cols-3 gap-4 px-6 py-3 border-b border-white/[0.06] bg-white/[0.02]">
                     <span className="text-xs text-white/30 font-medium">Feature</span>
-                    {["Free", "Lite", "Pro"].map((t) => (
-                      <span
-                        key={t}
-                        className="text-xs font-semibold text-center text-white/60"
-                      >
-                        {t}
-                      </span>
+                    {["Free", "Pro"].map((t) => (
+                      <span key={t} className="text-xs font-semibold text-center text-white/60">{t}</span>
                     ))}
                   </div>
                   {COMPARISON_FEATURES.map((row, i) => (
                     <div
                       key={i}
-                      className={`flex flex-col gap-1 px-4 py-3 sm:grid sm:grid-cols-4 sm:gap-4 sm:px-6 sm:items-center ${
+                      className={`flex flex-col gap-1 px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:items-center ${
                         i % 2 === 0 ? "bg-white/[0.02]" : ""
                       } border-b border-white/[0.04] last:border-0`}
                     >
@@ -415,10 +358,6 @@ export default function PricingPage() {
                       <div className="flex sm:flex-col items-center gap-3 sm:gap-0">
                         <span className="text-[10px] text-white/30 sm:hidden w-10">Free</span>
                         <FeatureCell value={row.free} />
-                      </div>
-                      <div className="flex sm:flex-col items-center gap-3 sm:gap-0 sm:text-center">
-                        <span className="text-[10px] text-white/30 sm:hidden w-10">Lite</span>
-                        <FeatureCell value={row.lite} />
                       </div>
                       <div className="flex sm:flex-col items-center gap-3 sm:gap-0 sm:text-center">
                         <span className="text-[10px] text-white/30 sm:hidden w-10">Pro</span>
@@ -443,9 +382,11 @@ export default function PricingPage() {
             <div className="w-10 h-10 rounded-xl bg-[--color-primary]/10 flex items-center justify-center mx-auto mb-3">
               <Zap className="w-5 h-5 text-[#FF6B47]" />
             </div>
-            <h2 className="text-lg font-bold text-white mb-1">Need More Minutes?</h2>
-            <p className="text-white/60 text-sm">
-              Top up anytime. No subscription required. Credits never expire.
+            <h2 className="text-lg font-bold text-white mb-1">Pay As You Go</h2>
+            <p className="text-white/55 text-sm leading-relaxed">
+              No subscription needed. Buy AI analysis minutes and get
+              watermark-free clips on every video you analyze.
+              Credits never expire.
             </p>
           </div>
 
