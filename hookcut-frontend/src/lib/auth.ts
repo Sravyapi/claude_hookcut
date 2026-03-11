@@ -7,7 +7,7 @@ export const authOptions: NextAuthOptions = {
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      checks: ["none"],
+      checks: ["pkce"],
       authorization: {
         params: {
           prompt: "consent",
@@ -80,7 +80,7 @@ export const authOptions: NextAuthOptions = {
 
   secret: process.env.NEXTAUTH_SECRET,
 
-  debug: true, // TODO: revert to process.env.NODE_ENV === "development" after OAuth fix confirmed
+  debug: process.env.NODE_ENV === "development",
 
   callbacks: {
     async jwt({ token, user, account }) {
