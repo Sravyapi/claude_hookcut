@@ -15,6 +15,7 @@ import { ShortsStep } from "@/components/shorts-step";
 import { Footer } from "@/components/footer";
 import { slideRight } from "@/lib/motion";
 import { AnalyzeContext } from "@/contexts/analyze-context";
+import { HeroUrlInput } from "@/components/hero-url-input";
 
 // ── Workflow persistence ─────────────────────────────────────────────────────
 
@@ -413,6 +414,39 @@ export default function HomeStateMachine({ marketingContent }: Props) {
     const isAuthenticated = authStatus === "authenticated";
     const wantsNewAnalysis = !!searchParams.get("new");
     const shouldRedirect = isAuthenticated && !wantsNewAnalysis;
+
+    // Authenticated users with ?new=1 get a clean, focused analysis UI
+    if (isAuthenticated && wantsNewAnalysis) {
+      return (
+        <AnalyzeContext.Provider value={handleAnalyze}>
+          <Header />
+          <ErrorBanner error={error} onDismiss={() => dispatch({ type: "DISMISS_ERROR" })} />
+          <main id="main-content" className="pt-24 pb-12 px-6">
+            <div className="max-w-2xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="text-center mb-8"
+              >
+                <h1 className="text-2xl font-bold text-white mb-2">New Analysis</h1>
+                <p className="text-white/35 text-sm">
+                  Paste a YouTube URL to find the 5 moments most likely to stop the scroll
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+              >
+                <HeroUrlInput />
+              </motion.div>
+            </div>
+          </main>
+        </AnalyzeContext.Provider>
+      );
+    }
+
     return (
       <AnalyzeContext.Provider value={handleAnalyze}>
         <Header />
