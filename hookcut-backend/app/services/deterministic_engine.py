@@ -738,8 +738,11 @@ class DeterministicEngine:
                 "stakes_intensity": round(s.stakes, 1),
                 "emotional_voltage": round(s.relevance, 1),
                 "standalone_clarity": round(s.clarity, 1),
-                "thematic_focus": 5.0,  # neutral — not scored in simplified engine
                 "thought_completeness": round(s.completeness, 1),
+                "click_through_likelihood": 5.0,  # not scored in deterministic engine
+                "linguistic_compression": 5.0,
+                "novelty_delta": 5.0,
+                "information_density": 5.0,
             }
 
             dynamics, psychology, tip = _generate_insights(seg.text, seg.hook_type, seg.scores)
@@ -753,10 +756,13 @@ class DeterministicEngine:
                 end_seconds=seg.end_seconds,
                 hook_type=seg.hook_type,
                 funnel_role=seg.funnel_role,
+                cognitive_tension="",
                 scores=score_dict,
                 attention_score=round(seg.final_score, 1),
-                platform_dynamics=dynamics,
-                viewer_psychology=psychology,
+                virality_score=0.0,
+                justification="",
+                algorithm_dynamics={"retention_mechanics": dynamics, "watch_time_effect": "", "scroll_interruption": ""},
+                viewer_psychology={"primary_trigger": "", "mechanism": psychology, "tension_created": ""},
                 improvement_suggestion=tip,
                 is_composite=False,
             ))

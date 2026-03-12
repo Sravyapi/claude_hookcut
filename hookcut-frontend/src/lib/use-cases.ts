@@ -57,7 +57,7 @@ export const USE_CASES: UseCase[] = [
     features: [
       { title: "Full-episode analysis", description: "Works on 3-hour episodes just as well as 30-minute ones. No length limit." },
       { title: "Clip boundary trimming", description: "Fine-tune start and end points ±10 seconds after seeing the hook score." },
-      { title: "Hinglish and multilingual support", description: "Hindi, English, Tamil, Telugu, and 8 more languages supported." },
+      { title: "Multilingual support with code-switching", description: "Telugu, Hindi, and English supported — including natural code-switching between all three." },
     ],
     testimonial: {
       quote:

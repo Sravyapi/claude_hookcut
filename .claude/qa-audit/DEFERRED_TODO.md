@@ -265,6 +265,22 @@ Status key: `[x]` = fixed in code | `[~]` = in progress (current session) | `[ ]
 
 ---
 
+## LLM — Two-Pass Hook Extraction Upgrade (deferred)
+
+**Current state**: Single LLM call with internal discovery→evaluation pipeline (Stage 1 = discovery mode, Stage 2-3 = evaluation mode). Works within one call using cognitive separation instructions.
+
+**When to upgrade**: If real user data shows the single-call pipeline still biases intro sections and misses mid-video hooks despite the "DISCOVERY MODE" instruction.
+
+**Proper fix**: Split into two actual LLM calls:
+1. **Pass 1 — Discovery**: Send transcript + cluster detection instructions. Returns 12–20 raw candidates as JSON (timestamp, text, tier, one-line reason). No scoring.
+2. **Pass 2 — Editorial**: Send candidates + scoring/selection prompt. Returns final 5 hooks with full scores, justification, virality, etc.
+
+**Cost impact**: Doubles LLM cost per analysis (~$0.006 on Gemini Flash, ~$0.128 on GPT-4o) and latency (~16-30s total vs ~8-15s).
+
+**Files to modify**: `app/llm/prompts/hook_identification.py` (split into two prompt builders), `app/services/hook_engine.py` (chain two LLM calls).
+
+---
+
 ## HIGH-21 — NARM: Full Async Migration (deferred)
 
 **Current state**: Runs synchronously, added blocking note + TODO comment.

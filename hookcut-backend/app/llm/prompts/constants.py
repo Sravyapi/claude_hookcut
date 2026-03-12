@@ -1,5 +1,5 @@
 # Ported from hookcut_engine.jsx — source of truth for all LLM prompt construction.
-# LANGUAGES: 13 entries (12 + Other) from hookcut_v4_prd3.jsx LANGUAGES config
+# LANGUAGES: 3 supported languages (Telugu, Hindi, English) with code-switching support
 # NICHES: 8 entries from hookcut_v4_prd3.jsx NICHES config
 # HOOK_TYPES: 18 entries — union of PRD (13) + engine (15)
 # FUNNEL_ROLES: 6 entries
@@ -9,97 +9,28 @@ LANGUAGES = {
     "English": {
         "label": "English",
         "promptNote": (
-            "LANGUAGE: English (possibly Indian English with Hinglish code-switching). "
-            "Hindi words mixed into English are acceptable — do not reject hooks for code-switching."
-        ),
-    },
-    "Hinglish": {
-        "label": "Hinglish (Hindi + English)",
-        "promptNote": (
-            "LANGUAGE: Hinglish — a natural mix of Hindi and English common among Indian creators. "
-            "Both languages flow within sentences. Output hook_text in the ORIGINAL mixed language "
-            "exactly as spoken — NEVER normalize to pure English or pure Hindi."
+            "LANGUAGE: English — may include natural code-switching with Hindi or Telugu. "
+            "Hinglish (Hindi+English) and Tenglish (Telugu+English) mixing within sentences is "
+            "common and acceptable. Output hook_text in the ORIGINAL mixed language exactly as "
+            "spoken — NEVER normalize or translate."
         ),
     },
     "Hindi": {
         "label": "Hindi",
         "promptNote": (
-            "LANGUAGE: Hindi (Devanagari or romanized). Code-switching to English for technical "
-            "terms is normal. Output hook_text in the ORIGINAL Hindi — NEVER translate."
-        ),
-    },
-    "Tamil": {
-        "label": "Tamil",
-        "promptNote": (
-            "LANGUAGE: Tamil (or Tanglish — Tamil mixed with English). Code-switching to English "
-            "is very common among Tamil tech/education creators. Output hook_text in the ORIGINAL "
-            "language — NEVER translate."
+            "LANGUAGE: Hindi (Devanagari or romanized) — code-switching to English for technical "
+            "terms and to Telugu for regional references is normal. This is Hinglish territory: "
+            "both languages may flow within the same sentence. Output hook_text in the ORIGINAL "
+            "mixed language exactly as spoken — NEVER translate or normalize to pure Hindi."
         ),
     },
     "Telugu": {
         "label": "Telugu",
         "promptNote": (
-            "LANGUAGE: Telugu (or Telugu mixed with English). Code-switching to English for "
-            "technical terms is very common. Output hook_text in the ORIGINAL language — "
-            "NEVER translate."
-        ),
-    },
-    "Kannada": {
-        "label": "Kannada",
-        "promptNote": (
-            "LANGUAGE: Kannada (or Kannada mixed with English). Code-switching is common. "
-            "Output hook_text in the ORIGINAL language — NEVER translate."
-        ),
-    },
-    "Malayalam": {
-        "label": "Malayalam",
-        "promptNote": (
-            "LANGUAGE: Malayalam (or Manglish — Malayalam mixed with English). Code-switching "
-            "is common. Output hook_text in the ORIGINAL language — NEVER translate."
-        ),
-    },
-    "Marathi": {
-        "label": "Marathi",
-        "promptNote": (
-            "LANGUAGE: Marathi (or Marathi mixed with English/Hindi). Code-switching is common. "
-            "Output hook_text in the ORIGINAL language — NEVER translate."
-        ),
-    },
-    "Gujarati": {
-        "label": "Gujarati",
-        "promptNote": (
-            "LANGUAGE: Gujarati (or Gujarati mixed with English/Hindi). Code-switching is common "
-            "especially in business/finance content. Output hook_text in the ORIGINAL language — "
-            "NEVER translate."
-        ),
-    },
-    "Punjabi": {
-        "label": "Punjabi",
-        "promptNote": (
-            "LANGUAGE: Punjabi (Gurmukhi or romanized, or Punjabi mixed with English/Hindi). "
-            "Code-switching is common. Output hook_text in the ORIGINAL language — NEVER translate."
-        ),
-    },
-    "Bengali": {
-        "label": "Bengali",
-        "promptNote": (
-            "LANGUAGE: Bengali (or Banglish — Bengali mixed with English). Code-switching is "
-            "common. Output hook_text in the ORIGINAL language — NEVER translate."
-        ),
-    },
-    "Odia": {
-        "label": "Odia",
-        "promptNote": (
-            "LANGUAGE: Odia (or Odia mixed with English/Hindi). Code-switching is common. "
-            "Output hook_text in the ORIGINAL language — NEVER translate."
-        ),
-    },
-    "Other": {
-        "label": "Other Language",
-        "promptNote": (
-            "LANGUAGE: Auto-detect from transcript. Code-switching to English or Hindi is normal "
-            "for Indian creators. Apply all hook rules identically. Output hook_text in the "
-            "ORIGINAL language — NEVER translate."
+            "LANGUAGE: Telugu — code-switching to English for technical/business terms and to "
+            "Hindi for cultural references is very common (Tenglish). All three languages may "
+            "appear within the same sentence. Output hook_text in the ORIGINAL mixed language "
+            "exactly as spoken — NEVER translate or normalize to pure Telugu."
         ),
     },
 }
@@ -215,6 +146,7 @@ HOOK_TYPES = [
     "FOMO Setup",
     "Zero-Second Claim",
     "Extended Demo",
+    "Identity Hook",
 ]
 
 FUNNEL_ROLES = [
@@ -226,15 +158,18 @@ FUNNEL_ROLES = [
     "extended_demo",
 ]
 
-# 7-dimension holistic scoring used in hook evaluation prompts
+# 10-dimension holistic scoring used in hook evaluation prompts
 SCORE_DIMENSIONS = [
     "scroll_stop",
     "curiosity_gap",
     "stakes_intensity",
     "emotional_voltage",
     "standalone_clarity",
-    "thematic_focus",
     "thought_completeness",
+    "click_through_likelihood",
+    "linguistic_compression",
+    "novelty_delta",
+    "information_density",
 ]
 
 # Regeneration fee tiers (confirmed by user)

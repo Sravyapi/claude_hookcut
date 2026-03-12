@@ -21,7 +21,7 @@ from app.schemas.analysis import (
     SelectHooksRequest,
     SelectHooksResponse,
 )
-from app.schemas.hooks import HooksListResponse, HookResponse, HookScores
+from app.schemas.hooks import HooksListResponse, HookResponse, HookScores, AlgorithmDynamics, ViewerPsychology
 from app.services.analyze_service import AnalyzeService
 from app.tasks.celery_app import (
     ANALYZE_RATE_LIMIT, ANALYZE_RATE_WINDOW,
@@ -99,10 +99,13 @@ def get_hooks(
                 end_time=h.end_time,
                 hook_type=h.hook_type,
                 funnel_role=h.funnel_role,
+                cognitive_tension=h.cognitive_tension or "",
                 scores=HookScores(**h.scores) if h.scores else HookScores(),
                 attention_score=h.attention_score,
-                platform_dynamics=h.platform_dynamics,
-                viewer_psychology=h.viewer_psychology,
+                virality_score=h.virality_score or 0.0,
+                justification=h.justification or "",
+                algorithm_dynamics=AlgorithmDynamics(**(h.algorithm_dynamics or {})),
+                viewer_psychology=ViewerPsychology(**(h.viewer_psychology or {})),
                 improvement_suggestion=h.improvement_suggestion or "",
                 is_composite=h.is_composite,
                 is_selected=h.is_selected,

@@ -183,9 +183,18 @@ export const HookCard = memo(function HookCard({
       </AnimatePresence>
 
       <div className="p-5">
-        {/* ── Score gauge ── */}
-        <div className="flex justify-center mb-4">
-          <ScoreGauge score={hook.attention_score} />
+        {/* ── Score gauges ── */}
+        <div className="flex justify-center items-center gap-6 mb-4">
+          <div className="flex flex-col items-center">
+            <ScoreGauge score={hook.attention_score} />
+            <span className="text-[10px] text-[--color-muted] mt-1">Attention</span>
+          </div>
+          {hook.virality_score > 0 && (
+            <div className="flex flex-col items-center">
+              <ScoreGauge score={hook.virality_score} />
+              <span className="text-[10px] text-[--color-muted] mt-1">Virality</span>
+            </div>
+          )}
         </div>
 
         {/* ── Hook type + funnel role ── */}
@@ -194,6 +203,11 @@ export const HookCard = memo(function HookCard({
             <span className={`text-xs px-2.5 py-0.5 rounded-full border font-semibold tracking-wide ${typeColor}`}>
               {hook.hook_type.toUpperCase()}
             </span>
+            {hook.cognitive_tension && (
+              <span className="text-xs px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400/80 border border-purple-500/15">
+                {hook.cognitive_tension.replace(/_/g, " ")}
+              </span>
+            )}
             {hook.is_composite && (
               <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400/80 border border-amber-500/15">
                 Composite
@@ -233,17 +247,31 @@ export const HookCard = memo(function HookCard({
         {/* ── Divider ── */}
         <div className="border-t border-[--color-border-sub] mb-4" />
 
+        {/* ── Justification ── */}
+        {hook.justification && (
+          <p className="text-sm text-[--color-text-secondary] mb-3 italic leading-relaxed">
+            {hook.justification}
+          </p>
+        )}
+
         {/* ── Insight rows ── */}
         <div className="space-y-2 mb-4" onClick={(e) => e.stopPropagation()}>
           <InsightRow
-            label="Platform Dynamics"
-            text={hook.platform_dynamics}
+            label="Algorithm Dynamics"
+            text={[
+              hook.algorithm_dynamics?.retention_mechanics,
+              hook.algorithm_dynamics?.watch_time_effect,
+              hook.algorithm_dynamics?.scroll_interruption,
+            ].filter(Boolean).join(" · ")}
             labelColor="text-[--color-primary]/70"
             icon={<PlatformIcon />}
           />
           <InsightRow
             label="Viewer Psychology"
-            text={hook.viewer_psychology}
+            text={[
+              hook.viewer_psychology?.mechanism,
+              hook.viewer_psychology?.tension_created,
+            ].filter(Boolean).join(" — ")}
             labelColor="text-blue-400/70"
             icon={<PsychIcon />}
           />

@@ -398,10 +398,10 @@ class TestGetLangCodes:
         codes = TranscriptService._get_lang_codes("Klingon")
         assert codes == ["en"]
 
-    def test_hinglish_includes_hindi_and_english(self):
+    def test_hinglish_defaults_to_english(self):
+        """Hinglish is not a standalone language — defaults to English."""
         codes = TranscriptService._get_lang_codes("Hinglish")
-        assert "hi" in codes
-        assert "en" in codes
+        assert codes == ["en"]
 
 
 class TestParseVtt:

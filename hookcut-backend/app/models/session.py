@@ -64,21 +64,18 @@ class Hook(Base):
     end_seconds: Mapped[float] = mapped_column(Float)
     hook_type: Mapped[str] = mapped_column(Text)
     funnel_role: Mapped[str] = mapped_column(Text)
+    cognitive_tension: Mapped[str] = mapped_column(Text, default="")
     scores: Mapped[dict] = mapped_column(JSON)
     attention_score: Mapped[float] = mapped_column(Float)
-    platform_dynamics: Mapped[str] = mapped_column(Text, default="")
-    viewer_psychology: Mapped[str] = mapped_column(Text, default="")
+    virality_score: Mapped[float] = mapped_column(Float, default=0.0)
+    justification: Mapped[str] = mapped_column(Text, default="")
+    algorithm_dynamics: Mapped[dict] = mapped_column(JSON, default=dict)
+    viewer_psychology: Mapped[dict] = mapped_column(JSON, default=dict)
     improvement_suggestion: Mapped[str] = mapped_column(Text, default="")
     is_composite: Mapped[bool] = mapped_column(Boolean, default=False)
     is_selected: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True, onupdate=lambda: datetime.now(timezone.utc))
-
-    @property
-    def start_time_display(self) -> str:
-        """Derive display time from start_seconds (seconds is the canonical field)."""
-        total = int(self.start_seconds or 0)
-        return f"{total // 60:02d}:{total % 60:02d}"
 
     session: Mapped["AnalysisSession"] = relationship(back_populates="hooks")
     shorts: Mapped[list["Short"]] = relationship(back_populates="hook")

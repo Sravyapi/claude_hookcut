@@ -140,8 +140,8 @@ Additionally, a global `hookcut_exception_handler` is registered in `main.py` fo
 ### GET `/api/sessions/{session_id}/hooks`
 - **Auth:** None
 - **Response:** `HooksListResponse { session_id, status, regeneration_count: int, hooks: HookResponse[] }`
-- **HookResponse fields:** `{ id, rank: int, hook_text, start_time, end_time, hook_type, funnel_role, scores: HookScores, attention_score: float, platform_dynamics, viewer_psychology, improvement_suggestion: str = "", is_composite: bool, is_selected: bool }`
-- **HookScores:** 7 named float fields, each clamped [0, 10]: `scroll_stop, curiosity_gap, stakes_intensity, emotional_voltage, standalone_clarity, thematic_focus, thought_completeness`
+- **HookResponse fields:** `{ id, rank: int, hook_text, start_time, end_time, hook_type, funnel_role, scores: HookScores, attention_score: float, algorithm_dynamics: dict, viewer_psychology: dict, cognitive_tension: str, virality_score: float, justification: str, improvement_suggestion: str = "", is_composite: bool, is_selected: bool }`
+- **HookScores:** 10 named float fields, each clamped [0, 10]: `scroll_stop, curiosity_gap, stakes_intensity, emotional_voltage, standalone_clarity, thought_completeness, click_through_likelihood, linguistic_compression, novelty_delta, information_density`
 - **Delegates to:** `AnalyzeService.get_hooks(db, session_id)` (static method)
 - **Errors:** 404 "Session not found"
 

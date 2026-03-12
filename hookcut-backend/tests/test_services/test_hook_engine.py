@@ -19,18 +19,32 @@ def _make_valid_hook_json(num_hooks: int = 5) -> str:
             "end_time": f"{i}:30",
             "hook_type": "Curiosity Gap",
             "funnel_role": "curiosity_opener",
+            "cognitive_tension": "hidden_knowledge",
             "scores": {
                 "scroll_stop": 8,
                 "curiosity_gap": 9,
                 "stakes_intensity": 7,
                 "emotional_voltage": 8,
                 "standalone_clarity": 8,
-                "thematic_focus": 7,
                 "thought_completeness": 8,
+                "click_through_likelihood": 7,
+                "linguistic_compression": 8,
+                "novelty_delta": 7,
+                "information_density": 8,
             },
             "attention_score": 8.5,
-            "platform_dynamics": "High scroll-stop potential",
-            "viewer_psychology": "Creates strong curiosity",
+            "virality_score": 7.0,
+            "justification": "Strong curiosity gap with clear stakes",
+            "algorithm_dynamics": {
+                "retention_mechanics": "High scroll-stop potential",
+                "watch_time_effect": "Open loop drives completion",
+                "scroll_interruption": "Bold claim interrupts feed"
+            },
+            "viewer_psychology": {
+                "primary_trigger": "curiosity_loop",
+                "mechanism": "Creates strong curiosity",
+                "tension_created": "What is the answer?"
+            },
             "improvement_suggestion": "Add more urgency",
         })
     return json.dumps({"hooks": hooks})
@@ -313,8 +327,11 @@ class TestParseAndValidate:
                 "stakes_intensity": 7,
                 "emotional_voltage": 8,
                 "standalone_clarity": 8,
-                "thematic_focus": 7,
                 "thought_completeness": 8,
+                "click_through_likelihood": 7,
+                "linguistic_compression": 8,
+                "novelty_delta": 7,
+                "information_density": 8,
             },
             "attention_score": 12,  # Above max
         }

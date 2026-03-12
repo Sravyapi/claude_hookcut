@@ -358,12 +358,15 @@ class HookCandidate:
     end_time: str                    # e.g. "1:55" or "1:55+4:10" for composite
     start_seconds: float             # Parsed from start_time
     end_seconds: float               # Parsed from end_time
-    hook_type: str                   # One of 18 HOOK_TYPES (case-insensitive matched)
+    hook_type: str                   # One of 19 HOOK_TYPES (case-insensitive matched)
     funnel_role: str                 # One of 6 FUNNEL_ROLES (case-insensitive matched)
-    scores: dict                     # 7 dimensions, each clamped [0, 10]
+    scores: dict                     # 10 dimensions, each clamped [0, 10]
     attention_score: float           # Overall score, clamped [0, 10]
-    platform_dynamics: str           # LLM analysis of platform fit
-    viewer_psychology: str           # LLM analysis of viewer psychology
+    algorithm_dynamics: dict         # {retention_mechanics, watch_time_effect, scroll_interruption}
+    viewer_psychology: dict          # {primary_trigger, mechanism, tension_created}
+    cognitive_tension: str           # LLM-generated cognitive tension description
+    virality_score: float            # 0.0-10.0 virality prediction
+    justification: str               # LLM-generated justification for hook ranking
     improvement_suggestion: str      # LLM-generated actionable creator tip
     is_composite: bool               # True if hook spans multiple non-contiguous segments
 ```
@@ -381,10 +384,10 @@ class HookCandidate:
 ### Invariants
 
 - **Exactly 5 hooks** returned or exception raised. Never 0-4 or 6+.
-- **Score clamping:** All 7 score dimensions and `attention_score` are clamped to `[0, 10]` via `max(0, min(10, float(val)))`.
+- **Score clamping:** All 10 score dimensions and `attention_score` are clamped to `[0, 10]` via `max(0, min(10, float(val)))`.
 - **Score dimensions** (all present in `scores` dict, defaulting to 0 if missing):
-  - `scroll_stop`, `curiosity_gap`, `stakes_intensity`, `emotional_voltage`, `standalone_clarity`, `thematic_focus`, `thought_completeness`
-- **Hook type fuzzy matching:** Case-insensitive match attempted against 18 `HOOK_TYPES`. If no match, the raw value is kept with a warning logged.
+  - `scroll_stop`, `curiosity_gap`, `stakes_intensity`, `emotional_voltage`, `standalone_clarity`, `thought_completeness`, `click_through_likelihood`, `linguistic_compression`, `novelty_delta`, `information_density`
+- **Hook type fuzzy matching:** Case-insensitive match attempted against 19 `HOOK_TYPES`. If no match, the raw value is kept with a warning logged.
 - **Funnel role fuzzy matching:** Case-insensitive match with `_` substitution attempted against 6 `FUNNEL_ROLES`. If no match, the raw value is kept with a warning logged.
 - **Timestamp parse failure** defaults to `start_seconds=0.0, end_seconds=0.0` (does not raise).
 - **Overlap detection** is warn-only (logged, not raised). Non-composite hooks are checked.
@@ -467,7 +470,7 @@ class TranscriptResult:
 @staticmethod
 def _get_lang_codes(language: str) -> list[str]:
     """
-    Map language name (e.g. "English", "Hindi", "Tamil") to a list of
+    Map language name (e.g. "English", "Hindi", "Telugu") to a list of
     YouTube language codes in priority order.
     Returns ["en"] for unrecognized languages.
     """
@@ -1194,7 +1197,7 @@ class FFmpegResult:
 **Exported by services (HookEngine validation, schema validation):**
 
 ```python
-HOOK_TYPES: list[str]    # 18 hook type strings
+HOOK_TYPES: list[str]    # 19 hook type strings
 FUNNEL_ROLES: list[str]  # 6 funnel role strings
 NICHES: dict[str, dict]  # 8 niche configs with softRange, stakes, tone, preferredTypes
 LANGUAGES: dict[str, dict]  # 13 language configs with label and promptNote
@@ -1256,12 +1259,15 @@ def get_regen_fee(video_duration_seconds: float, currency: str) -> int:
 | `end_time` | `str(20)` | |
 | `start_seconds` | `float` | |
 | `end_seconds` | `float` | |
-| `hook_type` | `str(50)` | One of 18 HOOK_TYPES |
+| `hook_type` | `str(50)` | One of 19 HOOK_TYPES |
 | `funnel_role` | `str(30)` | One of 6 FUNNEL_ROLES |
-| `scores` | `JSON` | 7-dimension dict, each [0, 10] |
+| `scores` | `JSON` | 10-dimension dict, each [0, 10] |
 | `attention_score` | `float` | [0, 10] |
-| `platform_dynamics` | `Text` | |
-| `viewer_psychology` | `Text` | |
+| `algorithm_dynamics` | `JSON` | {retention_mechanics, watch_time_effect, scroll_interruption} |
+| `viewer_psychology` | `JSON` | {primary_trigger, mechanism, tension_created} |
+| `cognitive_tension` | `Text` | |
+| `virality_score` | `float` | [0, 10] |
+| `justification` | `Text` | |
 | `improvement_suggestion` | `Text` | LLM-generated actionable creator tip |
 | `is_composite` | `bool` | |
 | `is_selected` | `bool` | Set when user selects for Short generation |
@@ -1416,8 +1422,11 @@ class HookScores(BaseModel):
     stakes_intensity: float = 0
     emotional_voltage: float = 0
     standalone_clarity: float = 0
-    thematic_focus: float = 0
     thought_completeness: float = 0
+    click_through_likelihood: float = 0
+    linguistic_compression: float = 0
+    novelty_delta: float = 0
+    information_density: float = 0
 
 class HookResponse(BaseModel):
     id: str
@@ -1429,8 +1438,11 @@ class HookResponse(BaseModel):
     funnel_role: str
     scores: HookScores
     attention_score: float
-    platform_dynamics: str
-    viewer_psychology: str
+    algorithm_dynamics: dict
+    viewer_psychology: dict
+    cognitive_tension: str
+    virality_score: float
+    justification: str
     is_composite: bool
     is_selected: bool
 

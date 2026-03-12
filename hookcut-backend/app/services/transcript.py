@@ -709,16 +709,7 @@ class TranscriptService:
     def _get_lang_codes(language: str) -> list[str]:
         mapping = {
             "English": ["en", "en-IN", "en-US", "en-GB"],
-            "Hinglish": ["hi", "en-IN", "en"],
-            "Hindi": ["hi", "hi-IN"],
-            "Tamil": ["ta", "ta-IN"],
-            "Telugu": ["te", "te-IN"],
-            "Kannada": ["kn", "kn-IN"],
-            "Malayalam": ["ml", "ml-IN"],
-            "Marathi": ["mr", "mr-IN"],
-            "Gujarati": ["gu", "gu-IN"],
-            "Punjabi": ["pa", "pa-IN"],
-            "Bengali": ["bn", "bn-IN"],
-            "Odia": ["or", "or-IN"],
+            "Hindi": ["hi", "hi-IN", "en-IN", "en"],
+            "Telugu": ["te", "te-IN", "en-IN", "en"],
         }
         return mapping.get(language, ["en"])

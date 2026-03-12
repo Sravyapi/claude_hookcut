@@ -31,14 +31,26 @@ class FakeHookCandidate:
     end_seconds: float = 30.0
     hook_type: str = "Curiosity Gap"
     funnel_role: str = "curiosity_opener"
+    cognitive_tension: str = "hidden_knowledge"
     scores: dict = field(default_factory=lambda: {
         "scroll_stop": 8, "curiosity_gap": 9, "stakes_intensity": 7,
         "emotional_voltage": 8, "standalone_clarity": 8,
-        "thematic_focus": 7, "thought_completeness": 8,
+        "thought_completeness": 8, "click_through_likelihood": 7,
+        "linguistic_compression": 8, "novelty_delta": 7, "information_density": 8,
     })
     attention_score: float = 8.5
-    platform_dynamics: str = "High scroll-stop potential"
-    viewer_psychology: str = "Creates strong curiosity"
+    virality_score: float = 7.0
+    justification: str = "Strong curiosity gap"
+    algorithm_dynamics: dict = field(default_factory=lambda: {
+        "retention_mechanics": "High scroll-stop potential",
+        "watch_time_effect": "",
+        "scroll_interruption": "",
+    })
+    viewer_psychology: dict = field(default_factory=lambda: {
+        "primary_trigger": "curiosity_loop",
+        "mechanism": "Creates strong curiosity",
+        "tension_created": "",
+    })
     improvement_suggestion: Optional[str] = None
     is_composite: bool = False
 

@@ -19,8 +19,8 @@
    - [Caption Cleanup Prompt](#52-caption-cleanup-prompt)
    - [Title Generation Prompt](#53-title-generation-prompt)
 6. [Constants Registry](#6-constants-registry)
-   - [HOOK_TYPES (18)](#61-hook_types-18-entries)
-   - [SCORE_DIMENSIONS (7)](#62-score_dimensions-7-entries)
+   - [HOOK_TYPES (19)](#61-hook_types-19-entries)
+   - [SCORE_DIMENSIONS (10)](#62-score_dimensions-10-entries)
    - [FUNNEL_ROLES (6)](#63-funnel_roles-6-entries)
    - [NICHES (8)](#64-niches-8-entries)
    - [LANGUAGES (13)](#65-languages-13-entries)
@@ -260,12 +260,12 @@ All prompt construction lives in `prompts/`. Prompts are pure f-string templates
 5. **3-tier signal patterns:** Tier 1 (strongest), Tier 2 (strong), Tier 3 (enhancement).
 6. **Boundary rules:** Sentence boundaries, standalone test, peak tension ending.
 7. **17 rules (A-Q):** One topic per hook, contextual grounding, specificity, character arcs, breathing room, urgency, narrative escalation, composite hooks, landing points, unresolved mechanism, pain escalation, elimination, objection handling, funnel diversity, strip labels, workflow demos.
-8. **Scoring dimensions:** 7 dimensions (0-10 scale) plus editorial `attention_score`.
+8. **Scoring dimensions:** 10 dimensions (0-10 scale) plus editorial `attention_score`.
 9. **Classification instructions:** Hook type from `HOOK_TYPES`, funnel role from `FUNNEL_ROLES`.
 10. **Output schema:** Exact JSON structure for 5 hooks.
 11. **Transcript:** The full transcript appended at the end.
 
-**Expected output:** Exactly 5 hooks in JSON format with fields: `rank`, `hook_text`, `start_time`, `end_time`, `hook_type`, `funnel_role`, `scores` (7 dims), `attention_score`, `platform_dynamics`, `viewer_psychology`, `improvement_suggestion`.
+**Expected output:** Exactly 5 hooks in JSON format with fields: `rank`, `hook_text`, `start_time`, `end_time`, `hook_type`, `funnel_role`, `scores` (10 dims), `attention_score`, `algorithm_dynamics` (dict: retention_mechanics, watch_time_effect, scroll_interruption), `viewer_psychology` (dict: primary_trigger, mechanism, tension_created), `cognitive_tension`, `virality_score`, `justification`, `improvement_suggestion`.
 
 ### Dynamic Hook Prompt from Admin Rules
 
@@ -317,14 +317,14 @@ This file is the single source of truth for all domain enumerations used in prom
 # Ported from hookcut_engine.jsx
 # LANGUAGES: 13 entries (12 + Other)
 # NICHES: 8 entries
-# HOOK_TYPES: 18 entries -- union of PRD (13) + engine (15)
+# HOOK_TYPES: 19 entries -- union of PRD (13) + engine (15) + Identity Hook
 # FUNNEL_ROLES: 6 entries
-# SCORE_DIMENSIONS: 7 entries (engine's holistic approach)
+# SCORE_DIMENSIONS: 10 entries (engine's holistic approach)
 ```
 
-### 6.1 HOOK_TYPES (18 entries)
+### 6.1 HOOK_TYPES (19 entries)
 
-A flat list of strings. The union of PRD-defined types (13) and engine-defined types (15), deduplicated.
+A flat list of strings. The union of PRD-defined types (13) and engine-defined types (15), deduplicated, plus Identity Hook.
 
 | # | Hook Type | Typical Use |
 |---|---|---|
@@ -346,10 +346,11 @@ A flat list of strings. The union of PRD-defined types (13) and engine-defined t
 | 16 | FOMO Setup | Exclusivity, scarcity, or urgency trigger |
 | 17 | Zero-Second Claim | High-stakes claim delivered immediately at second zero |
 | 18 | Extended Demo | Full workflow/demo sequence (can run 30-50s) |
+| 19 | Identity Hook | Appeals to viewer's sense of self or group identity |
 
 **Validation behavior:** The `HookEngine._validate_hook()` method does a case-insensitive fuzzy match against this list. Unknown types are logged as warnings but kept as-is (not rejected).
 
-### 6.2 SCORE_DIMENSIONS (7 entries)
+### 6.2 SCORE_DIMENSIONS (10 entries)
 
 Not stored as a standalone constant in `constants.py`, but embedded in the prompt and validated in `hook_engine.py`. The canonical list:
 
@@ -360,12 +361,15 @@ Not stored as a standalone constant in `constants.py`, but embedded in the promp
 | `stakes_intensity` | How high are the perceived consequences? | -- |
 | `emotional_voltage` | Strength of emotional reaction provoked | -- |
 | `standalone_clarity` | Can a stranger understand this with zero prior context? | -- |
-| `thematic_focus` | Does the hook stay on one topic? | **GATING: score < 5 means the hook cannot be ranked in the top 3** |
 | `thought_completeness` | Does the hook end at the right moment? | Cuts early = 4 or less; goes past landing = 5 or less; delivers value while withholding = 8+ |
+| `click_through_likelihood` | How likely is the viewer to click/engage further? | -- |
+| `linguistic_compression` | How efficiently does the hook convey its message? | -- |
+| `novelty_delta` | How surprising or novel is the claim vs. common knowledge? | -- |
+| `information_density` | How much meaningful content is packed per second? | -- |
 
 All dimensions are scored 0-10 (float, clamped by `max(0, min(10, float(val)))`).
 
-**`attention_score`** is a separate field (not part of the 7 dimensions). It is the LLM's independent editorial judgment (0-10), explicitly not a formula over the other dimensions.
+**`attention_score`** is a separate field (not part of the 10 dimensions). It is the LLM's independent editorial judgment (0-10), explicitly not a formula over the other dimensions.
 
 ### 6.3 FUNNEL_ROLES (6 entries)
 
@@ -421,23 +425,13 @@ A dictionary keyed by language name. Each entry contains:
 | `label` | `str` | Human-readable display name |
 | `promptNote` | `str` | Language-specific instruction injected into the prompt |
 
-**The 13 languages:**
+**The 3 supported languages:**
 
 | Key | Label | Notable Prompt Guidance |
 |---|---|---|
-| `English` | English | Accepts Indian English with Hinglish code-switching |
-| `Hinglish` | Hinglish (Hindi + English) | Natural Hindi-English mix; never normalize to either pure language |
-| `Hindi` | Hindi | Devanagari or romanized; English technical terms acceptable |
-| `Tamil` | Tamil | Tanglish (Tamil + English) recognized |
-| `Telugu` | Telugu | Telugu-English code-switching recognized |
-| `Kannada` | Kannada | Kannada-English code-switching recognized |
-| `Malayalam` | Malayalam | Manglish (Malayalam + English) recognized |
-| `Marathi` | Marathi | Marathi-English/Hindi code-switching recognized |
-| `Gujarati` | Gujarati | Gujarati-English/Hindi code-switching; common in business/finance |
-| `Punjabi` | Punjabi | Gurmukhi or romanized; Punjabi-English/Hindi recognized |
-| `Bengali` | Bengali | Banglish (Bengali + English) recognized |
-| `Odia` | Odia | Odia-English/Hindi code-switching recognized |
-| `Other` | Other Language | Auto-detect from transcript; all rules apply identically |
+| `English` | English | Accepts code-switching with Hindi and Telugu (Hinglish/Tenglish) |
+| `Hindi` | Hindi | Devanagari or romanized; Hindi↔English and Hindi↔Telugu code-switching recognized |
+| `Telugu` | Telugu | Telugu↔English and Telugu↔Hindi code-switching (Tenglish) recognized |
 
 All `promptNote` values enforce the rule: **output hook_text in the ORIGINAL language -- NEVER translate.**
 

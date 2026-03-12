@@ -38,8 +38,23 @@ export interface HookScores {
   stakes_intensity: number;
   emotional_voltage: number;
   standalone_clarity: number;
-  thematic_focus: number;
   thought_completeness: number;
+  click_through_likelihood: number;
+  linguistic_compression: number;
+  novelty_delta: number;
+  information_density: number;
+}
+
+export interface AlgorithmDynamics {
+  retention_mechanics: string;
+  watch_time_effect: string;
+  scroll_interruption: string;
+}
+
+export interface ViewerPsychology {
+  primary_trigger: string;
+  mechanism: string;
+  tension_created: string;
 }
 
 export interface Hook {
@@ -50,10 +65,13 @@ export interface Hook {
   end_time: string;
   hook_type: string;
   funnel_role: string;
+  cognitive_tension: string;
   scores: HookScores;
   attention_score: number;
-  platform_dynamics: string;
-  viewer_psychology: string;
+  virality_score: number;
+  justification: string;
+  algorithm_dynamics: AlgorithmDynamics;
+  viewer_psychology: ViewerPsychology;
   improvement_suggestion: string;
   is_composite: boolean;
   is_selected: boolean;

@@ -7,7 +7,7 @@ from typing import Optional
 
 from app.llm.provider import get_provider, get_fallback_provider
 from app.llm.prompts.hook_identification import build_hook_prompt
-from app.llm.prompts.constants import HOOK_TYPES, FUNNEL_ROLES
+from app.llm.prompts.constants import HOOK_TYPES, FUNNEL_ROLES, SCORE_DIMENSIONS
 from app.utils.time_format import timestamp_to_seconds
 from app.config import get_settings
 from app.exceptions import HookEngineError
@@ -32,10 +32,13 @@ class HookCandidate:
     end_seconds: float
     hook_type: str
     funnel_role: str
+    cognitive_tension: str
     scores: dict
     attention_score: float
-    platform_dynamics: str
-    viewer_psychology: str
+    virality_score: float
+    justification: str
+    algorithm_dynamics: dict
+    viewer_psychology: dict
     improvement_suggestion: str
     is_composite: bool
 
@@ -176,11 +179,9 @@ class HookEngine:
             else:
                 logger.warning(f"Unknown funnel role '{funnel_role}', keeping as-is")
 
-        # Parse scores
+        # Parse scores (10 dimensions from constants.py)
         scores = h.get("scores", {})
-        for dim in ["scroll_stop", "curiosity_gap", "stakes_intensity",
-                     "emotional_voltage", "standalone_clarity",
-                     "thematic_focus", "thought_completeness"]:
+        for dim in SCORE_DIMENSIONS:
             val = scores.get(dim, 0)
             scores[dim] = max(0, min(10, float(val)))
 
@@ -197,6 +198,27 @@ class HookEngine:
             end_seconds = 0.0
 
         attention_score = max(0, min(10, float(h.get("attention_score", 0))))
+        virality_score = max(0, min(10, float(h.get("virality_score", 0))))
+
+        # Parse algorithm_dynamics (dict with 3 sub-fields)
+        algo_raw = h.get("algorithm_dynamics", {})
+        if isinstance(algo_raw, str):
+            algo_raw = {"retention_mechanics": algo_raw, "watch_time_effect": "", "scroll_interruption": ""}
+        algorithm_dynamics = {
+            "retention_mechanics": str(algo_raw.get("retention_mechanics", "")),
+            "watch_time_effect": str(algo_raw.get("watch_time_effect", "")),
+            "scroll_interruption": str(algo_raw.get("scroll_interruption", "")),
+        }
+
+        # Parse viewer_psychology (dict with 3 sub-fields)
+        psych_raw = h.get("viewer_psychology", {})
+        if isinstance(psych_raw, str):
+            psych_raw = {"primary_trigger": "", "mechanism": psych_raw, "tension_created": ""}
+        viewer_psychology = {
+            "primary_trigger": str(psych_raw.get("primary_trigger", "")),
+            "mechanism": str(psych_raw.get("mechanism", "")),
+            "tension_created": str(psych_raw.get("tension_created", "")),
+        }
 
         return HookCandidate(
             rank=int(h["rank"]),
@@ -207,10 +229,13 @@ class HookEngine:
             end_seconds=end_seconds,
             hook_type=hook_type,
             funnel_role=funnel_role,
+            cognitive_tension=str(h.get("cognitive_tension", "")),
             scores=scores,
             attention_score=attention_score,
-            platform_dynamics=str(h.get("platform_dynamics", "")),
-            viewer_psychology=str(h.get("viewer_psychology", "")),
+            virality_score=virality_score,
+            justification=str(h.get("justification", "")),
+            algorithm_dynamics=algorithm_dynamics,
+            viewer_psychology=viewer_psychology,
             improvement_suggestion=str(h.get("improvement_suggestion", "")),
             is_composite=is_composite,
         )

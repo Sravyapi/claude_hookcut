@@ -366,12 +366,15 @@ class HookCandidate:
     end_time: str                # e.g. "3:00" or "1:30+3:45" (composite)
     start_seconds: float         # parsed numeric start
     end_seconds: float           # parsed numeric end
-    hook_type: str               # one of 18 hook types
+    hook_type: str               # one of 19 hook types
     funnel_role: str             # one of 6 funnel roles
-    scores: dict                 # 7-dimension scoring dict (keys below)
+    scores: dict                 # 10-dimension scoring dict (keys below)
     attention_score: float       # 0.0-10.0 aggregate score
-    platform_dynamics: str       # LLM-generated platform analysis
-    viewer_psychology: str       # LLM-generated psychology analysis
+    algorithm_dynamics: dict     # {retention_mechanics, watch_time_effect, scroll_interruption}
+    viewer_psychology: dict      # {primary_trigger, mechanism, tension_created}
+    cognitive_tension: str       # LLM-generated cognitive tension description
+    virality_score: float        # 0.0-10.0 virality prediction
+    justification: str           # LLM-generated justification for hook ranking
     is_composite: bool           # True if hook spans non-contiguous segments
 ```
 
@@ -383,8 +386,11 @@ class HookCandidate:
     "stakes_intensity": float,
     "emotional_voltage": float,
     "standalone_clarity": float,
-    "thematic_focus": float,
-    "thought_completeness": float
+    "thought_completeness": float,
+    "click_through_likelihood": float,
+    "linguistic_compression": float,
+    "novelty_delta": float,
+    "information_density": float
 }
 ```
 

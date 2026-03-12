@@ -15,19 +15,9 @@ export const NICHES = [
 ] as const;
 
 export const LANGUAGES = [
-  { value: "English",   label: "English" },
-  { value: "Hinglish",  label: "Hinglish (Hindi + English)" },
-  { value: "Hindi",     label: "Hindi" },
-  { value: "Tamil",     label: "Tamil" },
-  { value: "Telugu",    label: "Telugu" },
-  { value: "Kannada",   label: "Kannada" },
-  { value: "Malayalam", label: "Malayalam" },
-  { value: "Marathi",   label: "Marathi" },
-  { value: "Gujarati",  label: "Gujarati" },
-  { value: "Punjabi",   label: "Punjabi" },
-  { value: "Bengali",   label: "Bengali" },
-  { value: "Odia",      label: "Odia" },
-  { value: "Other",     label: "Other Language" },
+  { value: "English", label: "English" },
+  { value: "Hindi",   label: "Hindi" },
+  { value: "Telugu",  label: "Telugu" },
 ] as const;
 
 export const HOOK_TYPE_COLORS: Record<string, string> = {
@@ -83,8 +73,11 @@ export const SCORE_LABELS: Record<string, string> = {
   stakes_intensity: "Stakes",
   emotional_voltage: "Emotion",
   standalone_clarity: "Clarity",
-  thematic_focus: "Focus",
   thought_completeness: "Completeness",
+  click_through_likelihood: "Click-Through",
+  linguistic_compression: "Compression",
+  novelty_delta: "Novelty",
+  information_density: "Density",
 };
 
 export function getStatusConfig(status: string): { label: string; color: string } {
