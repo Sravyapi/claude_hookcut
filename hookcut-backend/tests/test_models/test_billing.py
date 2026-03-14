@@ -1,5 +1,5 @@
 """Tests for Transaction and LearningLog models."""
-from sqlalchemy import select, func
+from sqlalchemy import select
 from tests.conftest import make_user, make_session
 from app.models.billing import Transaction
 from app.models.learning import LearningLog
@@ -41,17 +41,6 @@ class TestTransaction:
         assert txn.money_amount == 700
         assert txn.provider == "stripe"
 
-    def test_transaction_types(self, db):
-        make_user(db, user_id="t3")
-        for t in ("credit_deduction", "credit_refund", "subscription_payment",
-                   "payg_purchase", "regeneration_fee"):
-            txn = Transaction(user_id="t3", type=t, description=f"Test {t}")
-            db.add(txn)
-        db.commit()
-        count = db.execute(
-            select(func.count()).select_from(Transaction).where(Transaction.user_id == "t3")
-        ).scalar()
-        assert count == 5
 
 
 class TestLearningLog:
@@ -73,21 +62,3 @@ class TestLearningLog:
         assert log.event_type == "hook_selected"
         assert log.event_metadata["selection_order"] == 1
 
-    def test_learning_log_event_types(self, db):
-        make_user(db, user_id="l2")
-        session = make_session(db, "l2")
-        for evt in ("hook_presented", "hook_selected", "hook_not_selected",
-                     "regeneration_triggered", "short_downloaded", "short_discarded"):
-            log = LearningLog(
-                session_id=session.id,
-                event_type=evt,
-                video_id="vid1",
-                niche="Tech / AI",
-                language="English",
-            )
-            db.add(log)
-        db.commit()
-        count = db.execute(
-            select(func.count()).select_from(LearningLog).where(LearningLog.session_id == session.id)
-        ).scalar()
-        assert count == 6

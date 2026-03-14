@@ -40,7 +40,8 @@ class HookCandidate:
     algorithm_dynamics: dict
     viewer_psychology: dict
     improvement_suggestion: str
-    is_composite: bool
+    primary_speaker: Optional[str] = None
+    is_composite: bool = False
 
 
 @dataclass
@@ -63,23 +64,28 @@ class HookEngine:
     def analyze(
         self, transcript: str, niche: str, language: str = "English",
         rules: list[dict] | None = None,
+        interview_mode: bool = False,
     ) -> HookEngineResult:
         settings = get_settings()
         if rules:
             from app.llm.prompts.hook_identification import build_hook_prompt_from_rules
-            prompt = build_hook_prompt_from_rules(rules, niche, transcript, language)
+            prompt = build_hook_prompt_from_rules(rules, niche, transcript, language, interview_mode=interview_mode)
         else:
-            prompt = build_hook_prompt(niche, transcript, language)
+            prompt = build_hook_prompt(niche, transcript, language, interview_mode=interview_mode)
         primary = get_provider(settings.LLM_PRIMARY_PROVIDER)
 
         last_error = None
         for attempt in range(MAX_RETRIES):
             if attempt > 0:
+                # Use longer delay for rate limit errors
+                delay = RETRY_DELAYS[attempt]
+                if last_error and ("429" in str(last_error) or "rate limit" in str(last_error).lower()):
+                    delay = max(delay, 20)  # Wait at least 20s on rate limit
                 logger.warning(
                     "Retrying hook analysis (attempt %d/%d) after %ds delay",
-                    attempt + 1, MAX_RETRIES, RETRY_DELAYS[attempt],
+                    attempt + 1, MAX_RETRIES, delay,
                 )
-                time.sleep(RETRY_DELAYS[attempt])
+                time.sleep(delay)
 
             # Use fallback provider on the last attempt
             provider = primary if attempt < MAX_RETRIES - 1 else self._get_retry_provider(primary)
@@ -237,6 +243,7 @@ class HookEngine:
             algorithm_dynamics=algorithm_dynamics,
             viewer_psychology=viewer_psychology,
             improvement_suggestion=str(h.get("improvement_suggestion", "")),
+            primary_speaker=h.get("primary_speaker"),
             is_composite=is_composite,
         )
 

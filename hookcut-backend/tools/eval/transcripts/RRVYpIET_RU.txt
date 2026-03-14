@@ -1,0 +1,1819 @@
+[0:00.00] hey everyone welcome back to take you
+[0:01.12] forward so in this video we are going to
+[0:02.56] learn about c plus stl what is stl stl
+[0:05.28] is basically standard template library
+[0:07.20] now in order to write codes in c plus
+[0:09.12] plus assume you're you're going to use a
+[0:11.44] container or an algorithm a lot of times
+[0:13.76] what happens is you don't need to
+[0:15.04] pre-define the container or write the
+[0:17.04] long long codes for that container or
+[0:18.72] for an algorithm so stl is basically a
+[0:21.84] compilation of algorithms containers
+[0:24.08] iterators functions in a minimized
+[0:27.20] version so that you don't have to write
+[0:28.96] lengthy lines of code and you can use
+[0:30.48] that stl and you can get access to a
+[0:32.64] container or to an algorithm so in this
+[0:34.80] video i will be teaching you all the stl
+[0:36.96] that is actually required to get started
+[0:38.80] with dsa so please make sure you watch
+[0:40.96] this video till the end to understand or
+[0:42.64] to learn c plus plus stl in depth so
+[0:45.52] without uh wasting any time let's get
+[0:47.28] started so let's understand the skeleton
+[0:49.20] of a c plus plus code so you can see
+[0:50.80] this is the entire skeleton of a code
+[0:52.88] and the first line is hash include bits
+[0:55.92] stdc plus plus dot h generally uh this
+[0:59.12] is nothing but a library and
+[1:01.92] you would have learned about something
+[1:03.52] like math dot h so in order to
+[1:06.64] include all the algorithms in math
+[1:09.12] library you have to hash include math
+[1:10.72] dot
+[1:11.60] similarly in order to include all the
+[1:13.36] libraries in string you have to give
+[1:15.68] string dot h
+[1:17.12] similarly if you are wanting to add
+[1:18.64] anything you have to actually write hash
+[1:20.32] include the library.h name for sure now
+[1:23.60] imagine you are writing an
+[1:25.36] algorithm or a program where you require
+[1:27.52] a bunch of libraries so you cannot
+[1:28.96] actually waste a lot of time in
+[1:30.88] including all the libraries individually
+[1:33.04] so what c plus plus tells us okay hey
+[1:35.28] listen i have all the libraries in
+[1:37.36] inside this stdc plus dot h so just
+[1:40.24] include this one and all the libraries
+[1:42.48] are automatically included and i don't
+[1:44.64] need to individually add them now this
+[1:47.28] is the
+[1:48.16] main where you actually write the entire
+[1:50.24] lines of code now what is this actually
+[1:52.32] for using namespace std now imagine
+[1:56.24] just for a case imagine i write scene of
+[1:58.80] a and a is an integer so this works but
+[2:03.12] if you just omit this line
+[2:05.04] this will actually give error now if you
+[2:07.36] don't add this line you actually have to
+[2:09.12] write std double colon scene of a or std
+[2:12.72] double colon c out of a this basically
+[2:15.92] takes an input into a this basically
+[2:18.64] prints the a into the screen so if you
+[2:21.20] don't write using namespace std this
+[2:24.88] you have to write every time so that's a
+[2:26.88] again hectic process so that is the
+[2:28.32] reason what we do is we write using
+[2:30.16] namespace std and we omit this but if
+[2:32.88] you want to know about more in depth you
+[2:34.96] can definitely read a lot of articles
+[2:36.56] i'll be leaving a link of an article in
+[2:38.64] the description below you can check that
+[2:39.84] out
+[2:40.56] so before moving to the stl part let's
+[2:42.32] understand functions so there are a
+[2:43.84] couple of functions one is the void so
+[2:45.92] if you write void and probably print and
+[2:48.72] over here you give c out let's say my
+[2:50.88] name raj
+[2:52.00] and i call the print function so what
+[2:54.64] happens is this print function calls and
+[2:57.60] this will output raj in the screen now
+[3:00.16] this is a void function what does a void
+[3:01.84] function means it will not return you
+[3:03.76] anything okay so that is one kind of
+[3:05.20] function and the other kind of function
+[3:06.96] is a return type function assume i write
+[3:10.16] int of sum a int of b and i say can you
+[3:13.76] please return a plus b and over here i
+[3:16.48] say int
+[3:18.16] s equal to sum can you just do a sum of
+[3:20.40] one and b so what happens is it calls
+[3:22.48] this function passes one into a passes
+[3:25.28] five into b and returns a plus b yes and
+[3:28.56] it returns a plus b so you get a plus b
+[3:31.76] that is basically 1 plus 5 6 into the s
+[3:34.72] and now if you do a c out of s what
+[3:36.96] happens is this actually prints
+[3:39.68] 6 into the screen you need to understand
+[3:42.08] this now this is a return type function
+[3:44.16] right now this can be a double this can
+[3:45.84] be anything like you can use any data
+[3:47.92] type as you wish to so these are the
+[3:49.44] basic stuffs about the c plus plus
+[3:51.28] skeleton of record okay so before moving
+[3:53.36] to the next part of the video i'd love
+[3:54.80] to thank the sponsor of this video which
+[3:56.40] is coding ninjas according ninjas is
+[3:58.64] india's
+[4:13.52] now why coding ninjas because engage
+[4:15.36] your courses
+[4:16.88] well structured so
+[4:18.80] learning
+[4:21.28] and also the courses are very well
+[4:22.56] curated because these courses are
+[4:24.00] prepared by people who have been at
+[4:26.48] iit's as well as stanford and by the
+[4:28.56] people who have been at amazon facebook
+[4:30.72] and google now if you don't believe it
+[4:32.48] you can check out the facebook as well
+[4:34.08] as the google rating of coding ninjas
+[4:36.88] the best thing about them that i find
+[4:38.80] personally is the doubt resolution time
+[4:41.36] like the average doubt resolution time
+[4:43.20] in the last one year has been 10 minutes
+[4:45.36] like if you're raising it out it gets
+[4:47.28] solved within 10 minutes so that's the
+[4:49.60] amazing that's the most amazing thing
+[4:51.52] that they do provide so if you are
+[4:53.28] looking out to buy any of the courses
+[4:55.28] you can check out the link in the
+[4:56.16] description you can easily get an
+[4:58.16] additional 20 discount on whatever price
+[5:00.96] that has been going around so guys make
+[5:02.64] sure you check out coding ninjas the
+[5:03.68] link will be in the description now it's
+[5:05.44] time that we move into the actual part
+[5:06.96] that is the c plus stl so you need to
+[5:09.04] understand that c plus plus stl is
+[5:10.64] divided into four parts the first being
+[5:12.48] algorithms the second being containers
+[5:14.40] the third being functions the fourth
+[5:16.08] being i traders so as of now we will be
+[5:18.24] learning about containers it can be
+[5:20.32] vector it can be queue set map and a lot
+[5:22.72] of other things and we during the course
+[5:24.96] of learning containers i will be also
+[5:26.80] teaching you what are iterators so these
+[5:28.96] couple of things we'll be learning at
+[5:30.32] first after that i'll be talking about
+[5:32.08] different algorithms and different
+[5:33.60] functions that do exist in c plus plus
+[5:36.00] stl so before moving on to containers
+[5:38.00] you have to actually learn about pairs
+[5:40.08] now what is pairs pairs is a part of
+[5:42.00] utility library okay now imagine i say
+[5:44.88] that i want to store couple of integers
+[5:46.80] like on a store one and i want to store
+[5:48.88] three so the only way that you can do is
+[5:50.64] you can store it in a pair now how is
+[5:52.56] pair defined you define the pair
+[5:55.44] stuff and then you see the first step
+[5:57.36] that you want to store is of integer
+[5:58.80] data type the second step that you want
+[6:00.80] to store is of integer data type then
+[6:03.20] you enclose them into curly braces so
+[6:05.92] what happens is this actually stores
+[6:08.00] everything into a variable p so this
+[6:10.88] variable p is now having one comma three
+[6:13.84] that is the meaning of this particular
+[6:16.32] line so that's how you define now in
+[6:18.48] place of this int you can also have
+[6:20.72] something like double string character
+[6:23.04] the data type can be anything okay now
+[6:26.16] if p is storing something like one comma
+[6:29.04] three now if i'm accessing p it's
+[6:31.44] actually a pair what if i want to access
+[6:33.44] this one what if i want to access this
+[6:35.36] three so it's very simple what you say
+[6:37.20] is you just write p dot first p dot
+[6:40.16] first and that will go and access this
+[6:42.56] particular one and if you write p dot
+[6:44.80] second that will go and access this
+[6:46.80] particular three so that is as simple as
+[6:49.20] it can get so if you are printing p
+[6:51.68] p dot first one gets printed
+[6:54.32] if you are printing p dot second three
+[6:56.08] gets printed i hope uh this is clear now
+[6:58.32] imagine you are wanting to store so as
+[7:00.72] of now you know that if you declare an
+[7:02.48] integer data type or a string data type
+[7:04.24] or a character data type you can always
+[7:06.16] store a single variable like if i want
+[7:08.16] to store int a equal to 2 that's fine
+[7:10.40] and i also know if i want to store two
+[7:12.16] variables i can use something like pair
+[7:14.72] but what if the question comes up and
+[7:16.48] they see that let's store three
+[7:17.84] variables four variables five variables
+[7:19.92] can you do it yes we can do it we can
+[7:21.92] use the nested property of pair yes we
+[7:24.00] can use the nested property of pay i
+[7:25.92] imagine i say you that you're going to
+[7:27.28] store one three four so what you'll see
+[7:29.44] is okay
+[7:30.40] i have one pair and i know this pair can
+[7:32.88] store two guys
+[7:34.48] so this is the first guy and the second
+[7:36.56] guy in a pair so what i'll say is the
+[7:38.72] second guy can be of a paired data type
+[7:41.60] thereby the second guy stores two guys
+[7:44.64] in itself that is how you can do it if
+[7:47.04] you're wanting to store three variables
+[7:49.52] got it like pair of integer then in the
+[7:52.08] second guy you say that i'm going to
+[7:53.68] store a pair in itself so basically one
+[7:57.20] comma and the second guy is a pair so
+[7:59.28] again a curly brace and three comma four
+[8:01.60] so that's how you can also store three
+[8:03.52] and eventually if they're asking you to
+[8:04.88] store four variables you can go nested
+[8:07.12] nested nested nested that you can
+[8:09.28] improvise okay so that's how you
+[8:11.04] actually store more than two variables
+[8:12.96] in a pair but now if you want to access
+[8:15.20] this one
+[8:16.24] now if you remember well enough i told
+[8:18.24] you pair contains two guys right and
+[8:20.96] this guy was called first if you
+[8:22.96] remember well enough this guy was called
+[8:24.40] first and this guy was called second
+[8:27.20] correct now but this second guy now
+[8:29.36] stores two guys so can i say this guy is
+[8:33.04] nothing but
+[8:34.16] first you get second then seconds first
+[8:37.20] so seconds first is what this particular
+[8:40.80] guy is and what is this guy this is
+[8:43.68] nothing but the second dot second so
+[8:46.64] this is second or second as simple as
+[8:49.92] that so this is how you can easily
+[8:51.60] access so if i ask you what is p dot
+[8:53.52] first it's one if i ask you what is p
+[8:56.08] dot second or second it's actually four
+[8:58.88] if i ask you p dot second dot first it's
+[9:01.04] actually three this will be the output
+[9:03.20] if i write c out okay
+[9:05.44] now what if i declare now as of now you
+[9:08.80] would have been declaring arrays like
+[9:10.88] integer array right
+[9:13.28] or character array
+[9:15.12] or something like a string array but can
+[9:17.36] i declare a pair array yes you can
+[9:19.28] declare a pair array
+[9:21.12] the data type can be anything pair can
+[9:22.96] also be data type now this is the index
+[9:25.36] zero this is the index one this is the
+[9:27.92] index two now so you are storing pairs
+[9:30.88] in your array indexes as of now so pair
+[9:33.68] can be treated as a data type it
+[9:35.92] generally lies inside the utility
+[9:38.72] library yes it lies inside the utility
+[9:41.44] library okay now if i'm if i'm trying to
+[9:43.84] access
+[9:44.80] array1 so that's basically this dot
+[9:47.52] second now of this guy which is the
+[9:49.84] second that's five so if i'm trying to
+[9:51.84] print this this is going to print five
+[9:54.80] so this is the entire knowledge of pair
+[9:57.60] that is required in order to get started
+[9:59.52] with data structures and algorithms and
+[10:01.76] the next part we'll be learning about
+[10:03.28] vectors so the first container that we
+[10:05.04] will be learning is vectors please
+[10:07.12] understand every possible function about
+[10:09.36] vectors because these functions will be
+[10:11.52] similar in all the other containers like
+[10:13.76] q list map set so please please make
+[10:16.64] sure you understand all the functions in
+[10:18.72] vector in depth so till now if i ask you
+[10:22.48] to store five values the
+[10:25.28] normal thing you would have done was you
+[10:26.88] would have declared an array of size
+[10:29.12] five and that will be giving you access
+[10:32.64] to five possible indexes right if you
+[10:35.52] remember well enough this gives access
+[10:37.44] to five possible indexes the first one
+[10:39.44] being zero the second one being one two
+[10:42.00] three four now but afterwards if you
+[10:44.48] want to modify it like if i want that i
+[10:46.48] want to enter one more element i cannot
+[10:49.04] modify the size of this array because
+[10:51.20] this array has been declared of size 5
+[10:53.92] and i cannot modify the size because
+[10:56.56] arrays are constant in size so this is
+[10:59.04] where something like vector comes in
+[11:01.12] vector is a container which is dynamic
+[11:03.44] in nature like you can always increase
+[11:05.92] the size of the vector whenever you wish
+[11:08.64] to so if there is a requirement where
+[11:10.56] you do not know the size of a particular
+[11:12.88] data structure that will be required
+[11:14.72] that's when you think of a vector and
+[11:16.08] that is the best place to use vector so
+[11:18.88] vector is a container only okay which
+[11:20.72] stores elements in a similar fashion as
+[11:23.12] the array does okay now in order to
+[11:25.36] declare vector it's very simple you just
+[11:27.20] give the vector name then you give the
+[11:28.88] data type it can be integer double cache
+[11:31.20] string anything and then you declare the
+[11:33.76] data type name like over here it's v it
+[11:35.84] can be large it can be striver it can be
+[11:37.76] vec it can be abcd it can be anything
+[11:39.92] okay so right after that there's a
+[11:42.08] function as push back so if you're
+[11:43.68] saying pushback of one what it does is
+[11:46.00] this line basically does is it creates
+[11:47.84] an empty container remember this it
+[11:49.52] creates an empty container in the next
+[11:51.52] line it says pushback of one so this
+[11:54.08] empty container says okay i'm empty so
+[11:56.40] i'm gonna take
+[11:57.60] one into it so pushback of one will do
+[11:59.76] this i'm gonna take one into it now
+[12:02.40] there is another function as
+[12:04.40] in place back what do you mean by
+[12:06.40] employees back it's a similar to
+[12:08.48] pushback it is similar to pushback so
+[12:10.48] the moment you do in place back to it
+[12:13.04] dynamically increases its size and
+[12:15.60] inserts two at the back it dynamically
+[12:18.00] increases its size and pushes two in the
+[12:21.60] back now generically m plays back is
+[12:24.00] faster than pushback now you can find
+[12:26.24] the reasoning why and quora i'll be
+[12:28.72] leaving the link in the description okay
+[12:30.72] now this is how you can define vector
+[12:33.60] now can we define vector of a paired
+[12:35.36] data type you can again define vector of
+[12:37.28] a data type as i said so what you just
+[12:39.60] need to do is you need to change the
+[12:40.88] data type declaration inside this so if
+[12:43.44] you just change it you can always but
+[12:46.00] over here there is a trick as i said
+[12:47.68] there are a couple of ways in which you
+[12:48.96] can insert elements into vector one was
+[12:51.12] push back the other one was in place
+[12:53.20] back so if you're using push back you
+[12:55.20] have to insert like one comma two you
+[12:56.96] have to give the curly braces in order
+[12:59.28] to
+[13:00.16] enter like in order to insert a
+[13:02.08] particular pair but if you're using m
+[13:04.40] place back and you write without curly
+[13:06.32] braces one comma two and plays back
+[13:09.76] automatically assumes it to be a pair
+[13:12.32] and takes it as an input and
+[13:15.04] inserts into the vector that you have
+[13:17.12] defined so that is how in place back is
+[13:19.76] different from pushback in terms of
+[13:22.00] syntax now what if i want to declare a
+[13:25.04] container with a lot of elements already
+[13:27.52] filled so imagine this is the size now
+[13:30.24] this is how you can also declare
+[13:31.84] something of a size like this is the
+[13:33.68] size that you can give so what happens
+[13:35.52] is a container containing hundred like
+[13:38.48] containing five instances of hundred is
+[13:41.44] already defined it's a container
+[13:43.68] containing five instances of hundred is
+[13:46.24] already defined where this is the zeroth
+[13:48.32] index this is the first index this is
+[13:49.76] the second index this is the third index
+[13:52.16] and this is the fourth index so
+[13:54.00] container of size five is already
+[13:57.28] defined with five instances of hundred
+[14:00.40] what if i don't want to declare with
+[14:02.00] hundred you can just declare of this if
+[14:04.32] you do this what happens is a container
+[14:06.48] of size five with five instances of zero
+[14:10.08] or any garbage value is declared now
+[14:12.40] this depends on the compiler okay that's
+[14:14.88] how you can easily do it so similarly if
+[14:16.88] i uh do something like v1 of 520 this
+[14:19.92] will uh declare a container of
+[14:22.88] five instances of 20 okay now what if i
+[14:26.24] want to copy this container into some
+[14:28.64] other vector so you just need to declare
+[14:30.64] another vector v2 and you need to pass
+[14:32.88] on this particular vector v1 so v2 will
+[14:35.44] be this similar container but a copy of
+[14:38.72] it like a copy of it not the same one it
+[14:41.36] will be another container of five
+[14:43.52] instances of 20 so this is how
+[14:46.00] generically the declaration is if you
+[14:47.84] know these kind of declarations it does
+[14:49.68] work you don't need to declare any
+[14:51.44] further you might be thinking but trevor
+[14:53.76] what we what if we define the size of
+[14:56.16] the vector to be five can we increase it
+[14:57.84] afterwards yes
+[14:59.44] even after this
+[15:00.96] you try this line push back one after
+[15:03.28] this line if you try this it increases
+[15:05.92] its size and
+[15:08.08] inserts one at the back yes even if you
+[15:10.32] try this line after this it will
+[15:12.64] increase its size and expand to a size
+[15:16.00] of six
+[15:17.28] so it is allowed its dynamic in nature
+[15:19.68] you can always increase the size of
+[15:21.52] vector even if you are predefining the
+[15:23.92] size to be five remember this now how do
+[15:26.32] you access elements in a vector one of
+[15:28.16] the easiest ways is imagine your vector
+[15:30.64] is like having twenty ten fifteen five
+[15:34.40] and seven imagine uh this is what your
+[15:36.96] vector as of now as the container as of
+[15:39.12] now as and
+[15:40.96] this is the zeroth index as i told you
+[15:43.20] the first index second index third index
+[15:45.12] and fourth index the best way uh to
+[15:47.36] access them is you can say v1 so if you
+[15:49.68] say similar to array if you say v1 it
+[15:51.60] means n this actually means n if you say
+[15:54.80] v3 it actually means
+[15:57.28] 5 so you can actually access it in the
+[16:00.00] similar fashion as you do for an array
+[16:02.16] okay that's how you can access it that's
+[16:04.00] one of the ways like you can write
+[16:05.52] directly v0 or you can write v dot at
+[16:09.28] generally uh people don't use this so
+[16:11.04] you can just avoid it you can simply uh
+[16:12.96] use the stuff that you use in array okay
+[16:15.92] what's the other way the other way is an
+[16:18.16] iterator yes the other way isn't
+[16:21.84] now i was telling you that through uh
+[16:24.16] through the lecture we will be learning
+[16:25.28] about containers and hydrators so let's
+[16:27.84] understand iterators
+[16:29.84] what is the nitrato
+[16:31.36] imagine the vector like let's take the
+[16:32.96] same vector only 15 and 6 and 7 imagine
+[16:36.08] this was the vector okay now
+[16:38.24] if i write like for iterator you have to
+[16:40.40] write this whatever whatever data type
+[16:43.04] you have taken vector that data type
+[16:45.28] double colons
+[16:46.88] and you have to write iterator and this
+[16:48.96] can be anything this can be i t this can
+[16:50.64] be by t that this can be anything this
+[16:52.96] is just a name but the syntax is
+[16:56.40] the data structure data type double
+[16:58.32] colon iterator this and you write v dot
+[17:01.44] begin
+[17:02.32] so i traitor basically means it points
+[17:04.88] to the memory address because these guys
+[17:07.76] would be stored somewhere in the memory
+[17:09.68] like it this 20 would have been
+[17:11.20] somewhere stored in the memory right and
+[17:13.04] that memory can have any address the
+[17:14.72] address can be 8 000 5 67 something
+[17:17.76] something remember the address can be
+[17:19.28] anything this 10 will be right after
+[17:21.60] that this 15 will be right after that
+[17:23.92] right so
+[17:25.28] all these possible values are actually
+[17:27.20] stored in memory so what we do is if we
+[17:30.24] write v dot begin it actually points to
+[17:32.32] that memory it points directly to the
+[17:34.56] memory right not to the element it
+[17:36.80] points to the memory understand that v
+[17:39.36] dot begin means it's pointing to here
+[17:42.40] but on the memory okay so if you're
+[17:44.56] trying to print v dot begin you're
+[17:46.64] printing the memory address not the
+[17:48.08] element and in order to access like if
+[17:50.88] you have read about c plus plus in order
+[17:53.12] to access anything that is in the memory
+[17:55.84] you just write star like if i write star
+[18:00.00] v dot begin
+[18:01.44] understand this
+[18:03.20] v dot begin is going to give you the
+[18:06.08] memory this portion and the moment you
+[18:07.92] write star the element inside this is
+[18:10.64] accessed
+[18:11.92] now let's understand again if i'm
+[18:14.16] writing v dot begin
+[18:15.68] this is actually pointing to the memory
+[18:18.08] where 20 is okay
+[18:20.08] the next time i'm doing i'm saying hey i
+[18:21.92] trader can you just move ahead so this
+[18:23.92] begin does is this goes here
+[18:26.32] so now the iterator instead of begin is
+[18:29.20] right at the next memory address because
+[18:30.88] i have shifted the memory and inside all
+[18:34.16] of these are contiguous memory locations
+[18:36.64] all of these are contagious memory
+[18:38.00] locations so if you are shifting it plus
+[18:40.56] plus it moves to the next memory again
+[18:42.80] if you do it plus plus moves to the next
+[18:44.32] memory after that if you're doing star
+[18:46.24] of it what will happen what will happen
+[18:48.48] as of now it was 20 so if you do start
+[18:50.64] of id this actually prints 10 because it
+[18:53.60] has shifted to 10 and now you're saying
+[18:55.36] star access the value at that memory so
+[18:57.76] you get 10 i hope that makes sense okay
+[19:00.88] what if right after this i do an i t
+[19:03.20] plus 2. so basically i'm saying shifted
+[19:05.92] by two positions to this portion shifted
+[19:08.72] directly by two positions to this
+[19:10.24] portion which has a six now if i try to
+[19:12.40] print this it will print six so this is
+[19:15.28] how you can easily use the iterator i
+[19:19.04] twitter is nothing but points to the
+[19:21.04] memory where the element is lying i hope
+[19:23.84] that makes sense okay
+[19:26.16] so we are talking about iterators now
+[19:28.16] you must be thinking do we have any
+[19:29.92] other iterators apart from begin we do
+[19:32.08] have we have something like end reverse
+[19:34.48] end and reverse begin okay now imagine i
+[19:37.68] have something like 10 20 30 40 as the
+[19:40.72] vector okay so this is what the vector
+[19:42.96] is so if i'm saying
+[19:45.12] vector dot end like
+[19:47.76] where does this point to
+[19:49.60] remember this end will not point to this
+[19:51.76] portion
+[19:52.72] end will not point to this portion
+[19:55.92] instead of that end will point to
+[19:57.68] somewhere
+[19:58.88] right after 40 the memory location that
+[20:01.44] is after 40. now if you on this iterator
+[20:05.12] do an i t minus minus
+[20:07.60] then this iterator will move to 40 then
+[20:10.32] only this will move to 40 so
+[20:12.32] end points to a memory location that is
+[20:15.12] right after the last element please
+[20:17.44] understand this is very very important
+[20:19.52] in terms of iterator
+[20:21.36] so you understood about end but what
+[20:22.96] about something like reverse and these
+[20:25.36] couple of things are never used but just
+[20:27.20] just know it like it's never ever used
+[20:29.52] what is reverse and reverse end
+[20:31.76] basically means
+[20:33.12] i am going to
+[20:34.80] reverse this i'm going to reverse this
+[20:37.44] so apparently the reverse is
+[20:39.36] 40 at first then 30 then 20 then 10 so
+[20:41.84] now the end is 10 so right after end so
+[20:44.40] that's this position is where it will be
+[20:46.56] pointing as this position is where it
+[20:48.40] will be pointing reverse and
+[20:50.40] end means right after right and reverse
+[20:52.48] begin will be pointing to this reverse
+[20:54.56] begin will be pointing to this and there
+[20:56.24] is a specific thing about this it moves
+[20:58.32] in the reverse way now if i try to do it
+[21:00.96] plus plus on this
+[21:02.80] if i do i t plus plus i t as of now is
+[21:05.36] pointing here i t plus plus will move
+[21:06.88] here
+[21:08.00] yes
+[21:08.88] and after this id plus plus will move
+[21:10.48] here so it's a reverse i trade i have to
+[21:12.72] think it in the reverse way like if you
+[21:14.64] just uh think this array in the reverse
+[21:16.48] it's 40 vector rather 40 30 10 uh 2010
+[21:20.24] and now if i talk about end this is end
+[21:22.32] and if i talk about begin this is begin
+[21:24.32] and if i say begin plus plus it moves to
+[21:26.40] 30 so it's that way reverse everything
+[21:28.80] is in the reverse order
+[21:30.48] never used
+[21:31.92] do you need to know just know it for the
+[21:33.84] sake of knowing but no one is going to
+[21:35.60] ask you we have uh discussed about v of
+[21:38.00] zero v of at of zero what is v dot back
+[21:40.80] as the name recommends if the vector is
+[21:42.96] having something like this
+[21:44.96] v dot back means
+[21:47.36] the element which is at 30 is the
+[21:50.08] element which is at 30 that is the
+[21:51.92] meaning of
+[21:53.04] this now if i'm if i'm wanting to print
+[21:55.52] the vector there are a couple of ways
+[21:57.60] imagine i have 10 20 30 as the vector
+[22:00.08] and i want to print it the simplest way
+[22:02.56] is
+[22:03.36] i know the indexes are 0 1 2 so i can
+[22:06.08] directly loop from 0 1 2. like i can
+[22:09.60] just go across and say key i'll loop
+[22:11.60] from 0 1 2 and print it that's a very
+[22:13.92] simple way the other thing is i say i'm
+[22:16.64] going to do it i trader wise because i
+[22:18.80] know
+[22:19.60] this guy is
+[22:20.96] begin so i did begin and i know the last
+[22:23.68] guy is end right after the last guy is
+[22:25.92] end so i'm going to run the iterator
+[22:28.00] till it does not reaches the last guy
+[22:29.92] i'm going to do an id plus plus the
+[22:31.68] first time i get 10
+[22:33.84] next i move it i get 20 next i move it i
+[22:37.36] get 30 and i will print every time star
+[22:40.48] of id and this is how you can print the
+[22:43.68] entire vector this is how you can print
+[22:46.00] the entire vector but but but there is a
+[22:48.64] shortcut now you must not be like no one
+[22:51.84] wants to write
+[22:53.60] these long syntaxes because stl means
+[22:56.56] short like standard template library but
+[22:58.56] it means everything in a very simpler
+[23:01.04] fashion so still gives you something
+[23:02.80] like auto
+[23:04.24] so if you write auto it automatically
+[23:06.56] assigns it to a vector iterator you
+[23:08.16] don't have to say that this is a vector
+[23:10.00] iterator you don't need to define the
+[23:11.76] data type it automatically defines the
+[23:14.24] data type now even if you write integer
+[23:16.48] a equal to 5
+[23:18.32] so you're defining a to be of integer
+[23:20.40] data type even if you write something
+[23:22.08] like auto of a equal to five
+[23:24.72] computer automatically says that this is
+[23:26.32] an integer so this a will be of integer
+[23:28.48] data type so if you write auto the data
+[23:30.72] type is automatically assigned according
+[23:33.44] to the data according to the data the
+[23:35.44] data type is automatically assigned like
+[23:37.12] if this would have been something like
+[23:38.80] raj string
+[23:40.16] and i would have written auto of a
+[23:42.48] a would have been automatically string
+[23:44.40] so auto means auto assignation so that's
+[23:47.28] that's the beauty of c plus plus
+[23:49.20] if for some time you don't know the data
+[23:50.88] type you can just write auto c plus plus
+[23:53.04] will take care of it and it will
+[23:54.72] automatically assign the data type for
+[23:56.72] you
+[23:57.52] the other way to print the vector is
+[23:59.52] using the for each loop so if i use this
+[24:01.52] for each loop which is
+[24:03.28] i t on v so it's basically means if the
+[24:06.08] vector is 10 20 and 30 i'm saying i t
+[24:09.36] first time id is here next time id is
+[24:11.28] here next time id is here and you can
+[24:13.12] simply print the id auto means on the
+[24:15.68] data type please i trade on the data
+[24:17.36] type first nitrates on the 10 not in not
+[24:20.64] an iterator not not an iterator this
+[24:23.28] means over here int because it is of
+[24:26.24] integer data type automatically i trade
+[24:28.72] 10 then 20 then 30 and automatically
+[24:31.28] prints it entirely so that's about
+[24:34.48] how to declare a vector how to use it in
+[24:37.84] a vector how to print a vector now let's
+[24:40.08] understand the deletion in a vector
+[24:42.64] so imagine i want to delete something so
+[24:44.56] there is something as an erase function
+[24:46.56] and if i have the vector like 10 20 12
+[24:49.04] 23 i say begin dot plus one
+[24:52.24] now in order to use the erase function
+[24:54.40] there are a couple of things
+[24:56.00] either you give the iterator that click
+[24:57.84] the location of the address
+[24:59.76] the location of the address that you
+[25:01.04] want to delete that this is the address
+[25:02.88] that i want to delete please please
+[25:04.24] delete this address so i'm saying okay
+[25:07.60] begin plus 1 what does this mean
+[25:10.24] begin plus 1 means 20
+[25:12.48] so if you just do erase of this address
+[25:15.76] so the vector will be now 10
+[25:18.32] 12 13 the vector will be reshuffled the
+[25:21.60] vector will be reshuffled into 10
+[25:23.92] 12 and 13 that is how the reshuffling
+[25:27.28] will go on so that is one way to erase
+[25:30.32] so we have understood how to erase
+[25:32.40] single element but what if i have a
+[25:34.24] vector like 10 20 30 and 40 and 50 and i
+[25:38.48] says driver i want to delete these
+[25:40.64] couple of elements i don't want to go
+[25:42.48] single do you have something i say yes i
+[25:44.80] have and that's like it is and i say
+[25:47.52] give me the starting address
+[25:49.52] and give me the end address after the
+[25:51.68] element
+[25:52.80] very important end address after the
+[25:55.28] element so starting if i want to delete
+[25:57.92] 20 can i say that's nothing but
+[26:00.88] begin plus 1
+[26:02.32] i can say because right after begin that
+[26:04.48] is where 20 is
+[26:06.00] i want to delete 30
+[26:07.52] that is begin plus 2 but i said right
+[26:09.60] after what you want to delete so that's
+[26:11.92] begin plus three
+[26:13.52] that's begin plus three three is
+[26:15.52] pointing to here so i'm gonna delete
+[26:17.12] this portion but you have to give this
+[26:19.04] end after after the guy that you want to
+[26:21.52] delete after right right after 30 you
+[26:23.76] have to give the address so apparently
+[26:25.84] it deletes start and this is something
+[26:28.00] like this end is not included the start
+[26:30.32] is included got it so please make sure
+[26:32.32] you give something as which is not
+[26:34.40] included right after one right after
+[26:36.72] that okay so that's how you can easily
+[26:40.08] delete it okay so for this example we
+[26:42.40] have 10 20 12 23 35 what do you mean by
+[26:45.76] plus 2 that means 12 what do you mean by
+[26:48.16] plus 4 plus 2 plus 3 plus 4 so plus 4 is
+[26:51.44] here so apparently
+[26:53.28] this and this will get deleted and you
+[26:55.20] will be left out with 10 20 and 35 i
+[26:57.76] hope that makes sense
+[27:00.00] now we're going to learn about insert
+[27:02.40] function insert again if you want to
+[27:04.64] insert something it's very simple
+[27:06.72] first of all if you declare this this
+[27:08.64] creates 100 like two instances of 100 in
+[27:12.16] a container now if i want to insert a
+[27:15.60] 300 right at the start right at the
+[27:18.16] start so i say uh dot begin
+[27:20.96] and please insert 300. so this does is
+[27:24.08] this inserts
+[27:25.68] right
+[27:26.64] at the beginning okay 300. now imagine
+[27:29.84] you had like 10 20
+[27:32.48] 30 40 okay
+[27:34.48] and i want to insert something here on
+[27:37.20] inside of five here so do you write this
+[27:39.36] is the first position this is the first
+[27:40.80] position so instead of begin you have to
+[27:43.28] write begin
+[27:44.64] on the first position can you please
+[27:47.04] insert five so if you write this this
+[27:49.12] five will go here and get inserted right
+[27:51.44] at the first position that's how you do
+[27:53.68] insert now that was for single element
+[27:56.16] you inserted single element what if i
+[27:58.32] say that you have 10 20 or 30
+[28:01.76] 40 as the vector i want to insert
+[28:05.04] two fives imagine i want to insert two
+[28:07.20] fives
+[28:08.40] how do you do that so you say
+[28:10.72] i wanna insert at the first position
+[28:13.52] the number of elements that i to insert
+[28:15.92] and the number that i want to insert
+[28:17.92] so this will do is
+[28:19.52] this will take 5 and 5 and insert it
+[28:22.48] right after 10 so this makes it
+[28:25.04] 10
+[28:25.92] 5
+[28:26.72] 5
+[28:27.60] 20 30 40 so if i say over here you had
+[28:31.76] 30 100 100 so i'm saying begin plus 1
+[28:34.88] which is right after 300 two positions
+[28:37.20] like two two occurrences of ten two
+[28:39.52] occurrences of ten inserted
+[28:41.36] understood very simple so that's how the
+[28:43.68] insert function does work for this now
+[28:46.24] what if you have a vector and you want
+[28:48.32] to insert it into some other vector now
+[28:50.32] imagine i say that okay i have a vector
+[28:52.56] like for this example we have 50 50. so
+[28:55.12] i had a 50 and 50 vector
+[28:57.44] okay now this vector is named as copy so
+[29:00.32] this is the line that declares that okay
+[29:02.24] now i already had this vector 30 10 10
+[29:05.68] 100 100
+[29:07.12] and now i want to insert this 50 50
+[29:10.48] somewhere so add that somewhere i give
+[29:13.04] that address and i say please and enter
+[29:16.24] this entire vector
+[29:18.00] please enter this entire vector so it
+[29:20.40] will easily
+[29:21.68] take this entire vector and enter it if
+[29:24.64] you want to have a portion of this
+[29:26.24] vector you can give that starting
+[29:28.32] portion and you can give this after end
+[29:30.72] portion and that will also do it again
+[29:32.72] not required what is required is it is
+[29:35.68] and this portion this is hardly required
+[29:38.96] if you just know erase and
+[29:40.88] insert about a single element does okay
+[29:43.68] that's how you can easily do about
+[29:45.68] vector now what are the other functions
+[29:47.44] in vector v dot size will give you how
+[29:49.76] many elements are there in the vector as
+[29:51.28] of now
+[29:52.48] dot pop back if this is the vector pops
+[29:54.88] out the last element dot swap is very
+[29:57.04] simple if this is a vector v1 this is a
+[29:59.20] vector v2 it swaps the vector as the
+[30:01.20] name recommends v dot clear doesn't
+[30:04.00] matter how big your vector is trims it
+[30:06.32] down to an empty vector trims it down to
+[30:08.32] an empty vector erases everything okay
+[30:11.12] and v dot empty says does your vector
+[30:13.36] like if your vector also has like a
+[30:15.36] minimum of one element it says not empty
+[30:18.56] not empty but if the vector has nothing
+[30:20.32] it will say true empty so these are the
+[30:22.48] functions that are generically required
+[30:24.72] in a vector
+[30:26.24] so the next container that we will be
+[30:27.76] learning is list a list is exactly
+[30:30.32] similar to vector but the only stuff in
+[30:32.64] list is it is it gives you front
+[30:35.68] operations as well now list is a
+[30:37.92] container again dynamic in nature same
+[30:40.16] way of declaration you can push back to
+[30:42.40] you can in place back forward so this is
+[30:44.32] the list that will happen if you push
+[30:46.00] back to n4 and after that if you say
+[30:48.00] push front
+[30:49.36] this front goes over here five like it
+[30:51.28] directly pushes it into the front in
+[30:53.68] vector you have to use the insert
+[30:55.92] operation and if you're inserting
+[30:57.84] somewhere that does take a lot of time
+[31:00.88] like insert function in a vector is very
+[31:03.28] costly like we will we will read about
+[31:05.76] time complexities in further data
+[31:07.92] algorithmic lectures but as of now just
+[31:10.08] remember an insert in a vector is
+[31:12.16] costlier and a list since the internal
+[31:15.20] operation is a doubly linked list like a
+[31:17.28] doubly linked list is maintained for a
+[31:19.04] list and for a vector a singly link list
+[31:21.20] is maintained so thereby something like
+[31:23.04] push front is very very cheap
+[31:26.00] in terms of complexity time complex
+[31:27.84] device when you compare it to a vector
+[31:29.76] okay and there is employees front as
+[31:31.44] well all of the functions
+[31:33.44] begin r and reverse and size clear empty
+[31:37.60] all other functions are similar to
+[31:39.52] vector so i will not be explaining that
+[31:41.04] okay so that is about list now the next
+[31:43.84] container that we will be talking about
+[31:45.52] is dq again similar to list and vector
+[31:48.80] you just declare it push back push front
+[31:52.00] pop back pop front back front and all of
+[31:55.12] the functions are
+[31:56.64] similar not going to explain this as
+[31:58.40] well it is exactly similar to less than
+[32:01.12] vector so the next container that we
+[32:03.20] will be learning is stack now stack is
+[32:05.92] something
+[32:06.80] as lifo
+[32:08.40] lifo means last in remember this last in
+[32:12.80] first out the guy who went in last
+[32:16.24] is the guy who will come out at first so
+[32:19.52] generally you can uh just imagine a
+[32:22.16] stack to be a data structure like this
+[32:24.56] and this is how you declare a stack
+[32:26.64] stack the data type and the variable
+[32:28.96] name okay so declare the variable name
+[32:30.80] like this i'm saying uh push one so push
+[32:33.60] one i'm saying push to i push to as i
+[32:36.00] push three i push three i'm again seeing
+[32:38.24] push three i push three i see employees
+[32:40.88] is similar to push so i say push five
+[32:43.52] now
+[32:44.32] these are the push operations
+[32:46.16] right after that if someone says stack
+[32:48.56] dot top so as i said who's the last guy
+[32:51.28] who went in the last guy that went in
+[32:53.76] you know is nothing but five so this
+[32:57.04] will print five is this will print five
+[33:00.64] now realize
+[33:02.16] this over here indexing access is not
+[33:04.56] allowed you cannot say this is index
+[33:06.32] zero this is index one something like
+[33:08.64] this you cannot see in stack there are
+[33:11.44] only three functions
+[33:13.36] one is push one is pop the other one is
+[33:16.80] top all other there like size uh clearer
+[33:19.04] there but these are the generic three
+[33:21.20] functions that you have to deal with so
+[33:23.12] if i'm saying top it gives you five but
+[33:26.00] the five is still in the stack the five
+[33:28.32] is still in the stack now the moment i
+[33:30.40] say pop
+[33:31.44] it deletes this from the stack now five
+[33:33.92] is not in the stack now if i'm saying
+[33:35.92] top right before five was there three
+[33:39.36] said prince three now if i'm at this
+[33:41.20] moment saying stack dot size there are
+[33:43.28] four elements so i print four i'm saying
+[33:46.08] stack is the stack empty the answer is
+[33:48.72] false it has four elements now if i'm
+[33:51.28] saying swap it to some other stack i
+[33:53.52] declare another stack
+[33:55.44] one
+[33:56.72] and i say can you please swap it so swap
+[33:59.60] is very understandable both
+[34:02.08] uh both the guys will swap so i hope
+[34:05.12] push is clear pop is clear pop means
+[34:06.96] delete top means just tell me what is
+[34:09.28] that top you don't need to delete just
+[34:10.56] tell me what is at the top so that is
+[34:12.16] how the stack stl works like
+[34:15.36] now talking about complexity wise in
+[34:17.20] stack all the operations are we go off
+[34:20.40] one operations everything happens in
+[34:23.28] constant time so let's learn about the
+[34:25.68] next container now now the next
+[34:27.04] container that we will be learning is a
+[34:29.04] queue data structure now a queue data
+[34:31.04] structure is similar to stack but over
+[34:34.00] here it is fifo
+[34:35.76] okay fifo means first in the guy who
+[34:39.20] gets in first comes out first
+[34:42.08] stack was last in okay
+[34:44.96] now you can uh you can just think it in
+[34:47.12] this way like if you if you're
+[34:48.72] forgetting names you can say like you go
+[34:51.20] into a
+[34:52.32] platform and if you're buying a ticket
+[34:54.48] what do you generally do the person
+[34:55.92] comes in the first person who comes and
+[34:57.76] stands and the next person who comes in
+[34:59.28] and stands so the first guy who gets the
+[35:01.68] ticket this guy then this guy gets the
+[35:03.60] ticket and if someone is coming it's a
+[35:05.28] queue that that happens so that that is
+[35:07.20] where the concept comes in first in
+[35:09.20] first out so if i'm saying push one i
+[35:11.52] push one push two i push to push four so
+[35:14.48] i pushed one two and four
+[35:16.48] and the next line i'm saying q dot back
+[35:18.72] plus equal to but back will mean four it
+[35:21.04] does not means this guy back will mean
+[35:23.12] four only so over here i'm saying add
+[35:25.28] plus five this makes it nine i'm not
+[35:27.68] saying q dot back so if i'm saying q dot
+[35:29.84] back it prints the last guy nine okay
+[35:33.44] i'm saying q dot front prints one just
+[35:36.24] prints does not deletes if i'm saying q
+[35:38.80] dot pop deletes deletes deletes the
+[35:41.04] front guy first 10 guy
+[35:43.04] q at front is now 2 so it prints 2 it is
+[35:47.12] similar and now all the operations are
+[35:49.60] much more similar to stack size and all
+[35:51.52] these things that's how q works again
+[35:54.32] all the operations are happening in
+[35:56.56] constant time the next thing that we
+[35:58.88] will learn is priority queue now as the
+[36:01.28] name recommends priority the guy who has
+[36:03.84] the largest value stays at the top it's
+[36:06.80] similar to queue but there is some
+[36:09.44] something that happens inside which
+[36:11.04] you'll learn probably after a couple of
+[36:12.96] years when you are appearing for
+[36:14.56] interviews but as of now just understand
+[36:16.80] the logic okay
+[36:18.40] so remember if you're declaring priority
+[36:20.32] queue like this
+[36:21.44] the maximum element stays at the top or
+[36:24.56] the largest element if you're using
+[36:26.24] character the largest character if
+[36:27.52] you're using integer the largest integer
+[36:29.20] if you're using the string the
+[36:30.28] lexicographically largest string will
+[36:32.56] stay at the top okay so
+[36:34.72] i'm saying q dot
+[36:36.72] push five so you push in five i say q
+[36:40.00] dot push two so you push in two i say q
+[36:42.96] dot push eight so you push it eight now
+[36:45.52] i say q dot push n say position ten okay
+[36:48.64] now the moment i say pq dot co
+[36:50.72] out of all these elements which one is
+[36:53.04] the largest 10 so it prints 10 and that
+[36:57.12] is the guy who will be at the top now if
+[37:00.00] you are trying to insert something like
+[37:01.52] 3
+[37:02.32] 3 the 3 will go right here
+[37:05.60] the 3 will go right here
+[37:07.44] and this is
+[37:08.40] not a linear data structure inside of it
+[37:10.64] a tree data structure is maintained
+[37:12.40] which you learn in the later half now
+[37:14.08] understand one thing the data is not
+[37:16.16] stored in a linear fashion in like
+[37:18.64] inside at inside a tree is maintained
+[37:21.44] okay which probably you learn someday
+[37:24.08] okay so as of now if i say pq dot pop
+[37:26.56] the topmost element is popped n is
+[37:28.72] popped if i say again or pq top is the
+[37:30.96] topmost 8 yes
+[37:33.12] so this is how the priority key works
+[37:34.96] again
+[37:36.08] push
+[37:37.76] top
+[37:38.72] and pop main functions the other ones
+[37:41.04] are size and md size and md is very
+[37:43.04] simple and swap is also very simple so
+[37:45.12] these are the functions what if i want a
+[37:47.12] priority queue which stores the minimum
+[37:49.36] element at the top then this is how the
+[37:51.52] syntax is priority queue
+[37:53.84] data type
+[37:55.52] vector
+[37:56.80] and this greater end you have to write
+[37:59.52] and if you give this data type and now
+[38:01.28] if you push 5
+[38:02.88] 5 is there if you push 2 towards then if
+[38:06.00] you push 8 8 is there if you push 10 10
+[38:08.72] is there but this time if you try to
+[38:10.00] access pq top 2 will come out so that's
+[38:12.96] how you maintain a very simple
+[38:15.52] minimum priority queue and generally
+[38:18.00] it's known as
+[38:19.44] mean
+[38:20.32] heap
+[38:21.12] and this is known as
+[38:22.64] max
+[38:23.60] heap remember this the terms that you
+[38:25.68] learn in ds algo as you move forward
+[38:28.32] what is the time complexity of push push
+[38:31.12] happens in logarithmic of n
+[38:33.76] top happens in b go of one and the pop
+[38:37.20] which is the deletion again happens in
+[38:39.52] logarithmic of n so this is how it
+[38:42.48] happens if you don't know what is
+[38:43.68] logarithmic of n no issues just keep
+[38:45.76] this in your mind as you move forward
+[38:47.52] you will understand india's algo now the
+[38:50.40] next container is very very interesting
+[38:52.96] and that is nothing but the set
+[38:54.72] container now what is set just remember
+[38:57.44] one thing
+[38:58.40] it stores everything in the sorted order
+[39:01.04] and stores unique just remember these
+[39:03.36] couple of points and you know what is a
+[39:04.88] set everything in the sorted and just
+[39:07.28] unique just two points and you're done
+[39:09.76] let's understand so
+[39:11.76] imagine this is the container okay and i
+[39:14.08] say insert one so you insert one imagine
+[39:16.72] you say in place two so you insert two
+[39:19.28] imagine you say insert two unique
+[39:22.32] so will it store two again no it does
+[39:24.88] not no it does not it does not stores
+[39:27.44] too if i say insert four
+[39:29.68] will it yes if i say insert three it
+[39:32.40] will but it will insert it here
+[39:35.28] again a very important thing sorted
+[39:37.44] stores in a sorted order at first it
+[39:40.16] will have one then it will have two then
+[39:42.64] it will have three then it will have
+[39:44.40] four everything in the sorted fashion so
+[39:46.48] it stores everything in the sorted
+[39:48.56] fashion so this is how the set will be
+[39:50.48] storing again a container is it a linear
+[39:53.28] container no a tree is maintained so i'm
+[39:55.92] just explaining you this via this bucket
+[39:58.64] but inside of this there is an entire
+[40:00.24] tree which is maintained again which you
+[40:01.84] learn as you move forward
+[40:03.92] so
+[40:04.80] insert and place works in a similar
+[40:06.88] fashion sorted and unique okay
+[40:10.72] now there are functions if i say set dot
+[40:12.96] find three and this is the set so it
+[40:15.60] will return an iterator remember this
+[40:17.68] returns an iterator which points to this
+[40:20.64] three which points to this three it
+[40:23.20] returns an iterator which points to this
+[40:25.76] three okay so basically this is an
+[40:28.40] iterator remember iterator points to the
+[40:30.96] address
+[40:32.32] perfect now if i say set dot find six is
+[40:34.96] six here no
+[40:36.72] if an element is not in the set please
+[40:38.56] hear me out properly if an element is
+[40:40.56] not here in the set
+[40:42.00] it will always return
+[40:44.32] set dot end that means an iterator which
+[40:48.24] points to
+[40:50.40] right after the end imagine the set is
+[40:52.96] having one two four five
+[40:55.36] and you did
+[40:56.48] set dot find three okay and you don't
+[41:00.08] have a three so you will have an
+[41:01.76] iterator end this is the iterator which
+[41:03.92] points after five after five that's
+[41:06.24] where dot find
+[41:08.08] will turn the iterator to be it points
+[41:10.24] afterwards okay and after this there is
+[41:12.56] set dot it is very simple erases this
+[41:15.44] guy five it raises this guy five out of
+[41:18.00] it like if this is the set if this is a
+[41:20.24] set it will delete five it'll simply
+[41:22.24] delete five you don't have to think
+[41:23.60] anything deletes five and maintains the
+[41:26.00] sorted order deletes five and maintains
+[41:28.00] the sorted order now
+[41:30.80] as i said set is nothing but
+[41:33.52] unique
+[41:34.72] and sorted so if you're trying to count
+[41:39.60] if it exists if it exists it will only
+[41:41.76] have one occurrence because it does
+[41:43.60] contain unique and if it does not exist
+[41:45.68] it will have zero so if one is there in
+[41:47.68] the set it will give you one like one
+[41:50.00] occurrence if it is not it will give you
+[41:51.84] zero as simple as that okay
+[41:54.72] you can also erase like you can either
+[41:56.56] give the element to be erased like you
+[41:58.72] can give the element to be erased or you
+[42:01.76] can give
+[42:02.80] that okay this is the address or the
+[42:05.04] iterator please go and erase this
+[42:07.36] iterator as simple as that now in vector
+[42:10.48] we did learn about it is
+[42:13.04] start comma end
+[42:15.28] similar thing also works over here if
+[42:17.44] you want to erase everything yes if you
+[42:19.36] want to erase everything between two and
+[42:22.00] four imagine you had something like this
+[42:24.48] so two is here four is here if you get
+[42:27.28] the first guy if you get the second guy
+[42:29.28] so if you do find you'll get the two zai
+[42:30.96] traitor if you do find a four you'll get
+[42:32.72] the force iterator so it deletes two and
+[42:35.20] three remember this it deletes two and
+[42:36.64] three not four four is this bracket
+[42:39.76] and this is this please remember this
+[42:41.68] now in set there are other functions
+[42:43.52] like size empty swap everything is
+[42:46.00] similar to vector that is begin all of
+[42:48.16] these are similar to vector so i will
+[42:49.60] not be explaining them the most
+[42:51.20] important are find count and insert
+[42:54.40] these are the most important ones and as
+[42:56.56] well as it is now
+[42:59.52] they have something as a lower bound and
+[43:01.28] an upper bound so i will be linking a
+[43:03.52] video in the description which explains
+[43:06.00] lower bound in depth and upper bound in
+[43:08.32] depth so please go back and watch lower
+[43:10.88] bound and upper bound once you have seen
+[43:13.36] that you will actually understand how
+[43:15.60] does this low bound and upper bound work
+[43:18.16] in a set it's the exact same that will
+[43:21.20] be taught in the video which is in the
+[43:23.44] description so please make sure you
+[43:24.64] watch it now in set everything happens
+[43:26.88] in logarithmic time complexity if you're
+[43:29.44] inserting it takes logarithmic if you're
+[43:31.20] erasing it takes logarithmic everything
+[43:33.76] happens in a logarithmic time complexity
+[43:36.24] again if you don't know log in no issues
+[43:38.32] please remember this in your head now we
+[43:40.08] did learn about set and i said sorted
+[43:43.20] and
+[43:44.00] unique that means it will just contain
+[43:46.00] one occurrence of two you can insert
+[43:48.48] thousands of occurrences of two but it
+[43:50.08] will just store one occurrence of two
+[43:52.56] but there is something as multiset if
+[43:54.40] you define multi set it only obeys
+[43:57.68] sorted and will not over unique it will
+[44:00.08] store multiple occurrence like if you
+[44:01.92] try to insert one one one stores all the
+[44:04.40] occurrence and you try to erase one but
+[44:06.96] all the occurrences are erased this time
+[44:09.28] but if you do an it is one it erases
+[44:12.24] every one and this time count will count
+[44:15.28] you the number of ones in the multi set
+[44:18.40] but if you want to delete imagine your
+[44:20.40] multiset is containing three ones
+[44:22.80] and i just want to delete one occurrence
+[44:25.28] of one or two occurrence of one or three
+[44:27.52] occurrence of one so what i can do is i
+[44:29.84] can just find out the
+[44:32.32] first
+[44:33.36] occurrence of one so i'll just do
+[44:35.68] multi set dot find because i know find
+[44:38.24] points to the iterator and also erase
+[44:40.48] that iterator instead of saying it is
+[44:42.72] element because if i say understand if i
+[44:45.76] say erase element it erases all the
+[44:48.40] elements but if i say
+[44:50.64] it is address
+[44:52.40] it only
+[44:53.76] erases that portion it only raises that
+[44:56.72] portion and i don't know it is like two
+[44:59.12] two ones so i say it find one
+[45:02.32] and
+[45:03.20] go till two
+[45:04.56] go till two so it really raise both of
+[45:06.08] them both of them so
+[45:08.32] either it is element it is address or
+[45:12.00] it is starting address and right after
+[45:14.96] the end that's it diet raters and rest
+[45:17.76] all functions are same as set stores
+[45:20.80] everything in the sorted but not unique
+[45:22.80] stores multiple occurrence like one one
+[45:25.04] one two three three four it can store
+[45:27.92] multiple occurrences as well so that is
+[45:30.40] the definition of multi-set now we did
+[45:33.04] learn about set we did learn about
+[45:34.64] multi-set now there is something as
+[45:36.88] unordered set everything is similar to
+[45:39.76] set the only thing that is omitted like
+[45:42.32] it stores unique the only thing on it is
+[45:44.96] it does not stores in the sorted order
+[45:46.88] we don't know how it will store it has
+[45:48.88] randomized order it has randomized order
+[45:52.08] like if i put in one after that i put in
+[45:54.56] five after that i put in two after that
+[45:56.72] i put in three after that i put in six
+[45:58.64] it can have this order it can have any
+[46:00.48] order in the world but it will just have
+[46:02.24] unique elements like if i try to insert
+[46:04.24] one again it will say i have one i have
+[46:07.20] one and in most of the cases
+[46:09.84] the time complexity is b go of one
+[46:13.20] everything like all the operations are
+[46:15.28] same insert erase all the operations are
+[46:18.88] same but only the lower bound and upper
+[46:22.32] bound function does not work all the
+[46:24.56] operations work but the lower bound and
+[46:26.32] the upper bound functions do not work
+[46:28.40] remember this all operations are similar
+[46:30.32] to set and they do not store everything
+[46:32.32] in sorted order so
+[46:34.16] all the operations are generically in a
+[46:36.80] big o of one constant time but in the
+[46:39.36] worst case which happens once in a
+[46:41.76] millennium like if the data is
+[46:44.40] through like
+[46:45.76] possibly given in such a way that they
+[46:47.60] want you to explore the worst case which
+[46:50.64] does not happen
+[46:52.40] then the unordered set goes for a we go
+[46:55.60] off and linear time it goes for the
+[46:57.60] worst case again does not happens every
+[47:00.00] day happens once in a blue moon the time
+[47:02.80] complexity goes till we go off and you
+[47:04.80] just write them down in notes you will
+[47:06.88] understand these things when you move
+[47:08.08] across or when you grow in experience
+[47:10.32] that's how the unordered site works
+[47:12.56] so the next container that we will be
+[47:14.00] learning is a map container okay now you
+[47:17.52] can think this as something like just
+[47:19.44] take a task when i say in your college
+[47:22.48] there will be
+[47:23.52] like there might be multiple people with
+[47:25.84] raj
+[47:26.72] name but how do you distinguish
+[47:28.56] themselves
+[47:30.08] by roll numbers right one raj might have
+[47:32.40] a roll number of 23 the other raj might
+[47:34.96] have a roll number of 25 the other raj
+[47:36.88] might have of 28 so you know this one
+[47:39.28] guy is of roll number 23 the other guy
+[47:41.04] is the roll number 25 the other guy is
+[47:43.12] of roll number 28. so generally this is
+[47:46.08] uh in in your class this is store like
+[47:48.16] this roll number one roll number two
+[47:50.40] roll number three and so on if there are
+[47:52.32] 50 people you store it like this so map
+[47:55.04] you can think this as a as a data
+[47:57.04] structure or a container which says the
+[47:59.36] roll number is my key
+[48:01.20] and over here the value can be the name
+[48:03.76] so this is what the data structure means
+[48:06.24] you store unique keys because
+[48:08.56] you can't have 23 rule number twice you
+[48:11.04] can have it just once so the keys are
+[48:13.84] unique
+[48:14.80] the keys are unique but the values can
+[48:17.12] be like
+[48:18.32] over here there can be a raj over here
+[48:20.08] there can be a rod so there is one guy
+[48:22.16] with key three was raj there is one guy
+[48:24.32] with key 50 who is raj there can be
+[48:26.80] duplicate values but it has to be a
+[48:28.88] unique key so you can think map as a
+[48:31.20] container which stores everything in
+[48:33.28] respect of
+[48:35.04] key and
+[48:36.24] values and very important thing
+[48:39.20] this key can be of any data structure it
+[48:42.08] can be integer sorry any data type it
+[48:44.40] can be integer it can be double it can
+[48:46.80] be pair
+[48:48.08] it can be anything
+[48:50.00] similarly this value can be anything so
+[48:52.40] how do you define map
+[48:53.92] this is key this is value
+[48:56.64] he is integer value is integer over here
+[49:00.32] he is an integer and they're saying
+[49:02.64] value is two integers
+[49:05.04] over here they're saying key is two
+[49:07.44] integers and value is one integer so you
+[49:10.64] can define it as you wish to that is on
+[49:14.00] you this is how you define okay now if
+[49:16.88] i'm defining the map to be this for an
+[49:18.88] example assume you're defining the map
+[49:20.32] to be this now i say
+[49:23.04] one equal to two it means
+[49:24.96] on the key one can you please store two
+[49:27.28] so this is what it stores internally in
+[49:29.68] the map
+[49:30.56] internally in the map it stores one
+[49:32.72] comma two next i say i don't want to
+[49:35.60] store it like this and place three one
+[49:37.60] so it stores three is the key and the
+[49:39.68] value to three is one
+[49:41.44] it does a similar thing stores it into
+[49:43.12] the map again i say insert you can also
+[49:45.60] use insert two comma four goes and
+[49:48.64] stores
+[49:49.76] two comma four
+[49:52.56] and this is how you can store all these
+[49:54.24] three variables okay so in this way you
+[49:57.44] can actually store for this particular
+[49:59.92] declaration and remember one thing
+[50:02.80] map
+[50:03.60] stores
+[50:04.64] unique keys very very important map
+[50:07.12] stores unique keys
+[50:09.36] in sorted order something similar to set
+[50:12.08] data structure map stores unique keys in
+[50:15.44] sorted order something similar to set
+[50:19.36] data structure okay now this is the
+[50:22.00] declaration the second declaration for
+[50:24.32] this declaration sorry or this
+[50:25.92] declaration this is the key so you have
+[50:28.40] declared the key like this and the value
+[50:30.48] is a single integer so this is it for
+[50:32.56] this it will be storing like okay key is
+[50:35.20] 2 comma 3 so this is stored and the
+[50:37.44] value corresponding value is 10 perfect
+[50:40.16] so this can be stored like this that's
+[50:42.72] how it generically stores okay i hope
+[50:45.44] that makes a lot of sense i told you
+[50:47.60] that everything is stored in a sorted
+[50:49.36] order so this will at first store 1
+[50:51.44] comma 2
+[50:52.56] then it will store 2 comma 4
+[50:54.72] then it will store 3 comma 1 this three
+[50:57.76] lines will be storing like this so again
+[51:00.48] if you want to
+[51:02.24] explore or if you want to iterate on the
+[51:04.64] map one of the ways is you start from
+[51:06.88] beginner nitrato and you go until end
+[51:09.12] iterator similar in the vector all you
+[51:11.20] do is you say i t you run a for each
+[51:13.76] loop first time id is here so it stores
+[51:16.24] in a pair next time id is here stores in
+[51:18.48] a pair next time id is here it stores in
+[51:20.40] a pair if it is storing in a pair this
+[51:22.32] is id dot first
+[51:24.80] and this is id.second so first time
+[51:26.88] prints
+[51:27.84] one two next time goes here prints to
+[51:31.44] four next time goes here prints three
+[51:34.32] one so we try to do this c out this is
+[51:36.96] how you can actually
+[51:38.88] traverse in a map and everything is
+[51:40.80] stored in a sorted order of key in a
+[51:43.36] sorted order of key not value sorted
+[51:46.00] order of key remember this sorted key is
+[51:48.80] how it stores no duplicates all uniques
+[51:52.40] okay
+[51:53.28] now if i want to access
+[51:55.04] map of one if i want to access map of
+[51:58.00] one it says a value two it says a value
+[52:01.60] two because at one you're storing to but
+[52:04.00] if it tries to access five will it find
+[52:06.32] five there is no five so what happens it
+[52:08.88] it says null but if you want to print it
+[52:11.12] it actually goes on prints zero or null
+[52:13.28] okay because it does not exist so if
+[52:15.52] something does not exist it gives you
+[52:17.28] zero okay so this is how you can easily
+[52:19.68] access for a key now if you wanna know
+[52:22.56] the iterator imagine you want to know
+[52:25.12] where the key2 lies the address of it so
+[52:27.44] again the find function will come over
+[52:29.28] here and say map.find3 so this is where
+[52:32.32] you get it diet rater in order to access
+[52:35.20] this
+[52:35.92] you give a star so this access is this
+[52:38.48] and we want the value dot second got it
+[52:41.60] it gives you the iterator to the
+[52:43.84] this three comma
+[52:45.36] one
+[52:46.56] okay this id is this
+[52:48.48] so if you give a star
+[52:50.08] it's the element
+[52:51.60] and if you give a second it has the one
+[52:54.00] that's how you can easily access this as
+[52:56.08] well
+[52:56.96] now over here if you try to do dot find
+[52:59.36] five and five is not there it points to
+[53:02.40] nothing but dot and and means after the
+[53:05.36] map after the map okay make sense
+[53:07.92] and again the lower bound and upper
+[53:09.20] bound functions if you have seen the
+[53:10.56] video in the description you can
+[53:12.08] understand how lower bound and upper
+[53:14.00] bound works okay and all the other
+[53:16.08] functions like it is swap size empty are
+[53:18.64] same so i'm not going to explain it
+[53:20.00] again
+[53:22.40] next thing is multi-map similar to map
+[53:25.92] only thing is you can store duplicate
+[53:28.72] keys
+[53:29.60] you can store duplicate keys something
+[53:31.68] similar to set and multi set as i told
+[53:34.40] you right duplicate keys but everything
+[53:36.64] in the sorted order this time you can
+[53:38.80] store like one comma two and then you
+[53:40.96] can come across and again store like one
+[53:42.64] comma three right so you can store
+[53:44.56] duplicate keys over here unordered map
+[53:47.36] again unordered map is similar only this
+[53:50.24] portion will go across it will not store
+[53:52.64] in sorted it will be randomized it will
+[53:54.80] be randomized but it will
+[53:57.28] it will not have duplicate as well it
+[53:58.56] will just have unique keys unordered map
+[54:01.36] will have unique keys
+[54:03.68] but it will not be sorted and the
+[54:06.00] difference is like the map
+[54:08.72] works in logarithmic of time
+[54:10.96] and the unordered map in the in almost
+[54:13.44] all cases works in constant time in the
+[54:16.32] worst case it goes for big offen again
+[54:18.64] this worst case happens once in a blue
+[54:21.12] moon not always
+[54:22.72] in almost all the cases we go of one is
+[54:25.04] what appears so as of now i can say that
+[54:27.60] i have completed containers and
+[54:29.28] iterators now this is not required not
+[54:32.08] required no need to learn it just omit
+[54:33.76] this now i'll be telling you the all the
+[54:35.84] important algorithms like which are
+[54:37.68] mandatory like you should know and all
+[54:39.76] the other algorithms which i will not
+[54:42.08] teach you will eventually learn while
+[54:44.24] you code but that are not like those are
+[54:46.16] not important so as of now you can just
+[54:47.76] leave it eventually with time if it's
+[54:49.60] required learn at that moment no need to
+[54:51.84] learn it now
+[54:53.12] so let's move across to learn some
+[54:54.32] algorithms now if i say you that hey
+[54:56.56] listen i give you an array of size like
+[54:59.60] one five
+[55:00.96] three or two okay of size four and i
+[55:03.60] want you to sort it so you will be like
+[55:05.60] let's apply bubble shot my shot
+[55:07.60] selection sort so and so but in c plus
+[55:10.72] stl if you just write the line
+[55:13.04] sort
+[55:14.56] a comma
+[55:15.92] it's a four size so this actually means
+[55:18.72] the first position the first position of
+[55:20.96] the first nitrator the starting nitrator
+[55:23.44] and this means the last titrator
+[55:26.00] a plus four actually means this portion
+[55:29.68] then portion the last iterator
+[55:32.16] again similar to something like start
+[55:36.08] start is included and end is not
+[55:38.00] included so you write the starting
+[55:39.60] iterator which is a
+[55:41.20] which actually points to this and a plus
+[55:43.28] 4 which actually points to this so all
+[55:45.04] the elements
+[55:46.48] are sorted
+[55:47.68] right after this line it will have one
+[55:49.76] two three five so you don't have to
+[55:51.92] actually use moist short bubble short
+[55:53.52] selection sort it sorts that into one
+[55:55.68] line
+[55:56.64] and if you're using vector the starting
+[55:58.48] is begin
+[56:00.00] this is the ending the starting iterator
+[56:01.68] and the ending iterator so in this way
+[56:03.28] you can sort any container not map all
+[56:06.08] like all
+[56:07.76] not map i'm talking about vectors and
+[56:10.08] arrays over here okay now what if i just
+[56:13.36] wanted like i had something like one
+[56:15.28] three
+[56:16.16] two five and rather
+[56:19.20] let's keep it like five two
+[56:20.88] okay and i wanted just this portion to
+[56:23.36] be sorted
+[56:24.56] so
+[56:25.28] i know a plus two because this is a plus
+[56:27.68] two for sure i know a plus 4 right after
+[56:30.24] this is a plus 4 so only this portion
+[56:32.72] will be sorted
+[56:34.16] so this is how only this portion will be
+[56:35.68] sorted perfect
+[56:37.36] what if i want to sort them in
+[56:38.88] descending order imagine you have like 1
+[56:41.44] 3 5 and 2 i want to sort them in
+[56:43.84] descending order so it's very simple
+[56:46.00] give the starting iterator give the
+[56:47.52] ending iterator the portion that you
+[56:49.12] want to sort and just write greater end
+[56:51.52] yes just right greater in and this is
+[56:54.72] nothing but a comparator an inbuilt
+[56:56.48] comparator which automatically sorts it
+[56:59.20] like i'll teach you comparator
+[57:00.72] automatically will sort it in the
+[57:02.24] descending order like this in a
+[57:04.48] descending order you just need to write
+[57:06.32] greater end and it automatically sorts
+[57:08.32] it into a descending order now what if i
+[57:11.68] want to sort it in some other fashion
+[57:13.92] because as of now we know how to sort it
+[57:16.56] in increasing we know how to sort it in
+[57:18.88] decreasing but what if i want to sort it
+[57:21.12] in my
+[57:22.56] my way
+[57:24.84] because going across you will see that
+[57:27.60] this my way is being used a lot for an
+[57:30.08] example
+[57:31.20] we have declared a pair array and these
+[57:33.28] are the pairs one two two one four one
+[57:35.44] okay and i want you to sort according to
+[57:39.44] second element like i want you to sort
+[57:41.84] it in in order of increasing second
+[57:44.32] element please understand i want to sort
+[57:46.64] it according to increasing second
+[57:48.88] element okay and
+[57:50.88] if the second element is same
+[57:52.96] then sort according to the first element
+[57:54.72] but in decreasing but in decreasing what
+[57:57.12] do i mean by that
+[57:58.48] so as of now
+[58:00.00] can i say the second element is 2 1 and
+[58:02.32] 1
+[58:03.12] so this 2 comma 1 and 4 comma 1 are the
+[58:06.00] guys who should appear right at the
+[58:08.32] first
+[58:09.20] okay
+[58:10.08] because the second elements are one and
+[58:13.12] one and after that i can say after that
+[58:16.48] one comma two will appear because
+[58:18.16] because of this portion
+[58:20.64] so can i say that i've sorted according
+[58:22.72] to the second element
+[58:24.08] but i still have a problem now these
+[58:25.92] couple of guys
+[58:27.68] are having same second element
+[58:29.92] now if they have the same second element
+[58:32.32] i want you to sort it according to the
+[58:34.08] first element but in descending which
+[58:36.00] means i want you to have
+[58:38.64] 4 comma 1 at first
+[58:41.12] and then 2 comma 1
+[58:42.72] that means among them among them i
+[58:45.04] wanted to sort it according to
+[58:46.48] descending so first 4 then 2 and then
+[58:49.20] you can write so first sorted according
+[58:51.84] to the second and if there is a group
+[58:54.64] which is having the same second
+[58:56.96] then among them sorted according to the
+[58:59.44] first so this is my way this is my way
+[59:01.92] okay it's it's something like a
+[59:03.76] combination of increasing as well as
+[59:06.00] decreasing so this is where
+[59:08.40] generically you write the first iterator
+[59:10.96] the last iterator and a comp
+[59:13.84] and a
+[59:15.20] comp perimeters and a comp now this is
+[59:18.56] nothing but a
+[59:20.08] self-written comparator a self-written
+[59:22.64] comparator and this comparator is
+[59:25.28] nothing but a boolean function is
+[59:27.28] nothing but a boolean function so i've
+[59:29.68] written this but i'll just teach you how
+[59:31.68] to write it it's very simple you write
+[59:33.44] boolean comparator
+[59:35.68] and this is the function okay this has
+[59:37.84] to return a true and a false this has to
+[59:39.68] return our true end of false now go back
+[59:42.16] and see what is the data type that you
+[59:44.32] that you just had and the data type if
+[59:46.32] you see was pair of ended just copy
+[59:48.16] paste and have couple of guys pair one
+[59:50.48] and pair two that's it have couple of
+[59:52.32] guys this is the first thing that you'll
+[59:53.68] do have couple of guys now please
+[59:56.40] understand this that this is player one
+[59:58.00] and this is pair two so forget about the
+[60:00.08] array forget about the array and now
+[60:02.00] think of this two instances where you
+[60:04.80] have two pairs
+[60:09.20] where you have two pairs this is p1
+[60:12.72] this is p2 while writing comparator just
+[60:15.68] focus
+[60:17.04] what have you been said sorted according
+[60:19.84] to the second element so you say okay
+[60:22.16] okay
+[60:23.44] if
+[60:25.20] my p1 dot second
+[60:27.12] is already
+[60:30.00] smaller than second
+[60:32.48] that means it's true
+[60:36.64] we are assuming we are assuming that the
+[60:39.20] pair one
+[60:40.40] lies before p2
+[60:42.48] lies before p2 that is what the
+[60:44.32] assumption is the pair one lies before
+[60:47.12] p2 and that is okay if the second guy is
+[60:51.44] lesser than the second guy i'm okay they
+[60:54.08] should actually so they are in the
+[60:56.00] correct order this competitor says are
+[60:58.88] two guys in the correct order or not and
+[61:00.96] i'm saying they are in the correct order
+[61:02.72] they are in the correct order because
+[61:04.40] this guy is smaller than this guy and
+[61:06.64] that is what i was said so if they are
+[61:09.28] they are in the correct order
+[61:11.04] but but
+[61:12.08] i know one thing if it's the opposite
+[61:15.04] if
+[61:15.84] this is the case i will say they are not
+[61:17.76] in the correct order because if i have
+[61:20.16] two guys
+[61:21.52] okay and imagine this is five and this
+[61:23.52] is four and i'm saying p1 occurs before
+[61:25.44] p2 this is wrong this is wrong
+[61:27.60] if this second is actually greater than
+[61:29.76] this i know this is wrong so i say they
+[61:31.84] are not in the correct order so what
+[61:33.52] happens is comparator internally says p1
+[61:37.28] and p2 are not in the correct order can
+[61:39.12] you please swap them so apparently four
+[61:41.76] comes before five this is what happens
+[61:44.32] so they do internal comparisons and they
+[61:46.24] swap so i told them false they are not
+[61:48.56] so they will swap internally but do we
+[61:51.28] have any other conditions we have
+[61:53.12] what if
+[61:54.16] they are same
+[61:56.00] because that's the only condition that
+[61:57.20] is left
+[61:58.24] that is the only condition because if if
+[62:00.88] these two conditions do not happen i
+[62:02.88] know we will come to a point that they
+[62:04.96] are same i don't need to write if
+[62:06.64] because that's the only condition that
+[62:08.40] is left they are same now if they are
+[62:10.56] same
+[62:11.44] will again try to
+[62:13.12] evaluate
+[62:14.88] i know if they are same
+[62:16.48] this is p 1
+[62:18.24] and this is p 2 and this time it is
+[62:21.04] descending so this guy is greater than
+[62:23.60] this guy it's okay otherwise it's not
+[62:26.56] so can i say
+[62:28.32] if p1 dot first is actually greater than
+[62:31.44] p2 dot first it's okay because this is
+[62:33.92] what i was looking for else i say it's
+[62:36.40] not
+[62:37.84] if they're equal it's fine i i even if i
+[62:40.32] swap or do not stop it's okay so can i
+[62:42.72] say if it's greater it's okay that's
+[62:44.88] what i'm looking for whatever it's not
+[62:46.32] that's false please swap it if it's not
+[62:48.88] i need in descending can you please just
+[62:50.24] swap it so you just analyze
+[62:52.96] everything whenever you try to write a
+[62:54.32] comparator always analyze everything in
+[62:56.72] terms of two pairs don't think in terms
+[62:59.36] of arrays just pick up yes i repeat you
+[63:02.32] just need to do one thing just pick up
+[63:04.56] one pair just take another pair and try
+[63:07.44] to analyze p1 and p2 that is your job so
+[63:09.76] you have learned about comparators so
+[63:11.76] anytime there is my way my way sorting
+[63:14.72] you can write the comparators just need
+[63:16.48] to write this and you should be done
+[63:18.32] just focus on the data type and try to
+[63:21.12] just have evaluate two data types and
+[63:23.36] write it nothing different okay so this
+[63:25.84] is again one more stl which is very
+[63:27.68] important which is built in popcorn so
+[63:29.92] if number seven what is the binary of
+[63:32.08] seven it's one one one that's the binary
+[63:35.04] of seven so there's a built in pump
+[63:36.72] count it says okay this has three bits
+[63:39.12] as one
+[63:40.16] typically uh number seven means zero
+[63:42.56] zero zero zero zero zero
+[63:44.56] like these are the 32 bits inside the
+[63:46.40] computer in 32 bits it's zero zero zero
+[63:48.96] zero zero zero and one one one so built
+[63:51.12] in popcorn says how many ones are there
+[63:53.36] or how many set bits are there so it
+[63:55.36] will return three set bits if this
+[63:58.00] number would have been six which is
+[63:59.52] nothing but
+[64:00.80] one one zero six is nothing but one one
+[64:02.80] zero so built in popcorn would have
+[64:04.40] returned two the number of set bits okay
+[64:08.48] if the number is long long then built in
+[64:10.80] popcorn becomes built in popcorn ll
+[64:13.68] built in popcorn ll if the number is
+[64:15.44] long long integer will not suffice that
+[64:17.76] perfect
+[64:18.96] now the last thing is not the last
+[64:20.88] second last thing is next permutation
+[64:23.36] now if i write a string as
+[64:25.36] one two three and i want to have all the
+[64:28.64] permutations of it all the permutations
+[64:31.12] so what i can say is okay listen
+[64:33.68] i'm gonna have the string and i know i
+[64:36.32] know the next permutation is one three
+[64:37.92] two i know the next permutation like if
+[64:40.32] i talk about dictionary order
+[64:42.40] 2 1 3 the next permutation is
+[64:45.36] 2 3 1
+[64:46.80] the next is 3 1 2 the next is 3 to 1
+[64:51.36] can i say
+[64:52.80] these are the dictionary like these are
+[64:54.64] the six permutations that you can have
+[64:56.96] three factorial is six
+[64:58.64] so if you want to print them what you do
+[65:00.08] is you first print the first string
+[65:03.36] then you say can you have the next
+[65:04.56] permutation please and you have the next
+[65:06.24] permutation and it takes you the string
+[65:08.64] which was this
+[65:10.64] becomes 132 and now you print it
+[65:13.36] again the string now becomes 2 1 3 and
+[65:16.32] you print it again the string becomes 2
+[65:18.40] 3 1 you print it again the string
+[65:20.24] becomes 3 1 2 and you print it again the
+[65:22.24] string becomes three to one and you
+[65:23.44] printed right after this it goes to
+[65:26.08] null
+[65:27.60] it says no more permutations it returns
+[65:30.08] a false
+[65:31.52] if there are no more permutation it
+[65:33.44] returns a false and if it returns or
+[65:36.00] false the while loop breaks and this is
+[65:38.16] how you can print all permutations of a
+[65:40.96] string
+[65:42.24] here's a catch what if the string was
+[65:45.36] 231
+[65:46.88] then
+[65:47.84] it would have started from 231 an x
+[65:50.64] permutation of 231 is 312. and the next
+[65:53.92] is 321.
+[65:55.44] so it would have just printed like first
+[65:57.52] tense then this then this right after
+[66:00.56] this no permutations so it's very
+[66:03.04] important that if you want to print all
+[66:05.28] the permutations you start from the
+[66:08.08] sorted guy like you just start from the
+[66:11.04] sorted guy and you can easily sort it
+[66:12.96] you know the stl now
+[66:14.72] in this fashion you start from the
+[66:16.80] sorted guy and that's how you can easily
+[66:19.76] print it
+[66:20.96] now the last one is max element imagine
+[66:24.24] you have an array like 1
+[66:26.80] n
+[66:27.76] 5
+[66:28.88] 6 and even the maximum element so if you
+[66:31.20] give max element
+[66:33.68] star titrator and iterator it gives you
+[66:36.96] the address and if you give the star
+[66:39.36] it gives you the element similarly main
+[66:41.36] element is also there
+[66:43.68] right so these are the algorithms that
+[66:45.44] are generically used in ds algo in your
+[66:48.48] day-to-day life all the other algorithms
+[66:50.24] are there but they are not widely used
+[66:52.24] and you will not be requiring them so
+[66:53.84] whatever stl i've taught in this video
+[66:55.36] is more than enough to get started with
+[66:56.88] c plus so just in case you've understood
+[66:58.96] everything it's an honest request that
+[67:00.56] get into the comment section and just
+[67:02.32] write one line comment because that is
+[67:03.92] the only thing that keeps you motivated
+[67:05.60] to make these kind of content and if
+[67:07.04] you're probably the first time on this
+[67:09.36] channel please do consider subscribing
+[67:11.12] because i have a lot of content
+[67:12.16] regarding trees graphs dynamic
+[67:13.60] programming dsa that might help you in
+[67:15.68] your longer run so please make sure you
+[67:17.36] subscribe to this channel as well and
+[67:18.96] you can like this video and yeah please
+[67:20.64] please do comment because that keeps me
+[67:22.56] going with this i'll be wrapping up this
+[67:24.08] video let's meet in some other video
+[67:25.68] till then bye take care
+[67:28.02] [Music]
+[67:31.28] don't ever forget

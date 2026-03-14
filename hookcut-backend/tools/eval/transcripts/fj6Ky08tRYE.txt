@@ -1,0 +1,2197 @@
+[0:00.20] transform your data into stunning
+[0:01.96] visuals that tell a story discover how
+[0:05.32] TBL and powerbi can bring your insights
+[0:08.12] to life explore the Art of Storytelling
+[0:11.64] with these powerful tools let's get
+[0:15.32] [Music]
+[0:18.44] started so what exactly is data
+[0:21.52] visualization so when you talk about
+[0:23.52] data visualization these are the three
+[0:26.00] things that I can think of right data
+[0:29.24] visualization basically is at the
+[0:32.28] intersection of design information
+[0:35.52] science and
+[0:37.56] communication let me give you one more
+[0:39.84] example okay let's assume that you want
+[0:43.20] to figure out the sales on quarterly
+[0:46.92] basis for a particular domain or a
+[0:50.12] particular product now in that case what
+[0:53.00] You' be needing here is information the
+[0:55.52] data that tells you all the possible
+[0:58.88] cells in a particular water for a
+[1:00.56] particular product next you need to
+[1:04.36] communicate this information to somebody
+[1:07.20] right it could be to yourself it could
+[1:09.28] be to a stakeholder to a product owner
+[1:11.28] or whoever is the concerned party the
+[1:14.32] third thing is how do you present this
+[1:16.36] data to somebody right how do you
+[1:18.16] communicate this message this is through
+[1:20.28] the form of design if you do it through
+[1:22.00] the form of design which can be
+[1:24.12] visualized properly we call it data
+[1:27.04] visualization so that is where you need
+[1:29.96] information a particular design that can
+[1:32.32] communicate a particular message and
+[1:34.20] that is what data visualization is say
+[1:36.80] for example I have 10,000 records with
+[1:39.64] me now in that case if I just go ahead
+[1:43.28] and put those 10,000 records um in a
+[1:46.64] sheet and present it to somebody that
+[1:48.40] won't make any sense instead if I create
+[1:51.60] a graph that shows or talks or gives a
+[1:54.92] gist about what do those 10,000 records
+[1:57.84] represent I can convey all that that
+[2:00.20] information in a mere graph in a mere
+[2:02.96] Visual and that is what data
+[2:04.92] visualization lets you do in other words
+[2:07.80] data visualization is nothing but the
+[2:09.96] process where you convey information by
+[2:13.48] creating effective visualizations to
+[2:16.48] present a particular set of information
+[2:19.60] now data visualization as they say is
+[2:22.72] effective because of two other reasons
+[2:25.00] or one another reason that is it conveys
+[2:28.44] a lot of information in a very small
+[2:30.96] space you often might have heard a
+[2:33.24] saying a picture is worth th000 words or
+[2:35.96] 100 words I don't know what that is so
+[2:37.68] what that means is you can convey a lot
+[2:40.04] of information using a picture rather
+[2:43.24] than putting it in the form of text
+[2:45.44] right or in the form of written
+[2:47.56] information so to give you another
+[2:50.04] example let's assume that you like to
+[2:52.04] read a book or you like reading books so
+[2:55.12] when you talk about reading books I'm
+[2:57.04] sure that if you read novels these are
+[2:59.24] like 300
+[3:00.48] 500,000 Pages books right and if I ask
+[3:04.68] you to skim through it or go through it
+[3:07.12] completely I'm sure even if you're an
+[3:08.96] nid reader it would take a couple of
+[3:10.40] days for you to finish a good book isn't
+[3:12.04] it and that is how fast an individual
+[3:14.44] can read unless we planning to break a
+[3:16.04] Guin world record right what if I tell
+[3:18.96] you that go ahead and watch a movie on
+[3:21.64] this topic I'm sure if there's a movie
+[3:24.00] you can finish it in like 2 hours 3
+[3:26.36] hours or if it is something like lord of
+[3:28.28] rings maybe three and a half hours right
+[3:30.68] so what I'm trying to put forth here is
+[3:34.12] when you watch a movie you consume
+[3:36.36] similar amount of information in Far
+[3:39.32] lesser time a book that takes somebody
+[3:42.48] to read maybe 2 days 2 to 7 days you can
+[3:45.56] convey that information in like 3 hours
+[3:47.96] now some of you might argue the fact
+[3:49.76] that in books you have lot more details
+[3:52.96] but let's assume that you still can
+[3:54.60] grasp like 80% of the information that
+[3:56.64] is there in that book in like those
+[3:58.16] three hours so it is still saving a
+[4:01.00] considerable amount of time what is
+[4:03.60] happening here is basically when you
+[4:05.84] read a book and when they describe a
+[4:07.60] particular character an event or a
+[4:10.00] situation they are trying to put forth a
+[4:12.24] lot of information there say for example
+[4:14.16] the character has brown hair the
+[4:16.12] character has nice blue eyes right when
+[4:19.88] you talk about creating a movie you
+[4:21.64] don't have to write all those things say
+[4:24.48] all those things you can study quite a
+[4:27.48] few things by visuals right you can see
+[4:30.48] the hero you can see the character you
+[4:32.48] can see that character's eyes right or
+[4:36.12] be it imagining a particular location be
+[4:40.32] understanding okay when somebody shot
+[4:41.60] someone what angle did that person shot
+[4:44.28] that in we can notice that in a split of
+[4:46.64] a second but if that was described in a
+[4:48.52] book it would take a page at least to
+[4:50.60] describe the details or a couple of
+[4:52.16] paragraphs so the point that I'm trying
+[4:54.20] to make here is when you use
+[4:56.88] visualization you can convey a lot more
+[4:59.24] information in a very little or a very
+[5:02.24] small space and that is what data
+[5:04.80] visualization is for you in a nutshell
+[5:07.36] moving further if you talk about data
+[5:09.72] visualization and if you are to trace
+[5:12.04] back its um Roots When did it start now
+[5:16.04] data visualization is not something that
+[5:18.16] started yesterday or not something that
+[5:21.12] started 5 years back but we've been
+[5:24.16] hearing about data science a lot these
+[5:26.08] days and data visualization as well
+[5:28.52] right so when you talk about data
+[5:30.36] visualization in general right data
+[5:33.08] visualization is popular these days
+[5:35.80] because we are talking about the data
+[5:38.52] that is being generated these days the
+[5:41.28] amount of Digital Data the amount of any
+[5:43.36] form of data that we generate these days
+[5:45.40] is much much larger than what we had few
+[5:48.40] years back right and the reason for that
+[5:51.16] is the use of social media the use of
+[5:54.72] internet and the use of
+[5:58.32] smartphones yes
+[6:00.40] the Advent or the increase in the usage
+[6:03.16] of internet
+[6:04.36] rather has made us move to Smart devices
+[6:08.76] which can consume data so we see a lot
+[6:12.08] of interactions happening on digital
+[6:14.32] mediums these days what that means is a
+[6:17.00] lot of Digital Data is being generated
+[6:19.72] if you go back like 15 years from now
+[6:21.60] when we did not have Android phones back
+[6:24.36] then in order to process data we used to
+[6:27.72] do it physically right writing notes
+[6:30.48] reaching out to people talking to them
+[6:32.56] but these days we video call people we
+[6:34.72] basically shop stuff online how because
+[6:38.24] with the Advent of Android and
+[6:40.08] smartphones we had technology that could
+[6:43.20] get everything delivered to us in M
+[6:46.04] click get information about everything
+[6:47.96] with M click thanks to the internet as
+[6:49.88] well and this is where the world started
+[6:52.16] changing and this is where the
+[6:53.84] information that we had started changing
+[6:56.88] around 20156 in India it was in 16 if
+[7:00.08] I'm not wrong February when Gio Reliance
+[7:03.72] announced a SIM card called as Gio
+[7:06.64] Reliance Geo which offered free internet
+[7:10.48] and calling for 6 months so we saw
+[7:13.68] people flocking into buying those SIM
+[7:15.44] cards now it was aimed at getting more
+[7:18.12] benefit or basically was a stunt to
+[7:21.16] ensure they grasped the Telecom Market
+[7:23.72] in process what they also did was when
+[7:25.92] they provided free internet to people
+[7:27.96] with some millions of people moving to
+[7:30.24] social media platform and when a country
+[7:32.64] like India moves to social media
+[7:34.48] platform we are talking about 130 crores
+[7:37.72] of people right and when you talk about
+[7:40.08] these many people right we are getting
+[7:42.48] numbers here and this is where the usage
+[7:45.32] of data increased and this happened
+[7:47.32] worldwide not just in India last 10 15
+[7:49.80] years we've seen a lot of data being
+[7:51.36] generated and a lot of importance being
+[7:52.92] given to it and that is where when you
+[7:55.52] have this much data it is important to
+[7:57.60] understand this data so you can control
+[7:59.76] your businesses and your plans better so
+[8:03.12] is data visualization something that
+[8:05.44] came up recently no if you are to
+[8:09.08] understand or Trace back its roots of
+[8:11.52] data visualization one of the first
+[8:14.20] instances when data visualization was
+[8:16.52] used was in
+[8:19.08] 1781 it was used by William Playfair who
+[8:22.56] used geometric charts a form of data
+[8:26.04] visualization to explore exports from 17
+[8:29.60] different countries to Scotland so yes
+[8:32.40] if you are thinking data visualization
+[8:34.32] is something that came up yesterday no
+[8:37.20] my friend that is not the case data
+[8:40.36] visualization has been there in the
+[8:41.84] market for a very very long time and
+[8:45.36] with the increase in the Digital Data
+[8:47.44] that we consume these days this is going
+[8:50.40] to be here for a longer duration serving
+[8:53.80] a lot longer purposes so what are the
+[8:56.92] different data visualization tools tools
+[8:59.68] that are there in the market now when
+[9:02.04] you talk about data visualization tools
+[9:05.00] there are quite a few popular data
+[9:07.28] visualization tools out
+[9:10.04] there you have Tablo you have Excel
+[9:14.04] powerbi the one that we are talking
+[9:15.60] about apart from that you have tools
+[9:17.16] like click view click sense right when
+[9:19.96] you talk about tools like click view
+[9:21.68] click sense those are again data
+[9:23.80] visualization tools powerful ones but
+[9:26.28] more towards the analytical side of
+[9:28.28] things when you talk about powerbi and
+[9:31.36] tableu these are endtoend
+[9:33.72] analytical yet data visualization and
+[9:36.56] business intelligence
+[9:38.52] Tools in this race you have something
+[9:41.12] called as Excel now many of you might
+[9:44.24] wonder as in why are we having excel in
+[9:46.80] this race guys Excel is one of those
+[9:50.08] perennial
+[9:51.32] horses that has been there in the race
+[9:54.04] since a very long time and I don't see
+[9:56.60] it dying down anytime soon people who
+[9:59.04] are skilled in Excel can do so many
+[10:01.40] things why because Excel is a
+[10:03.88] multi-purpose tool we cannot just report
+[10:07.20] data record data but you can also create
+[10:10.56] visualizations out of it and the best
+[10:12.88] thing about Excel is it also serves as a
+[10:15.44] base as a file that can be imported in
+[10:19.00] the form of a data source for tblo
+[10:21.48] powerb and other tools and then you can
+[10:23.72] actually go ahead and create
+[10:24.88] visualizations in these tools so it acts
+[10:27.80] as a supplement for these tools as as
+[10:29.40] well and that is why Excel Finds Its
+[10:32.12] place in this list of these tools so
+[10:35.40] that is what Excel is Right other tools
+[10:38.24] that you have is your tblo you have your
+[10:40.40] powerbi right now these tools these
+[10:42.84] initiated around 2013 and 14 right tblo
+[10:46.16] was the first one that came into market
+[10:47.60] and it was closely followed by powerbi
+[10:50.00] okay so Tableau again is a very popular
+[10:52.84] product one of the leading ones when you
+[10:55.16] talk about data visualization tools if
+[10:57.92] you take a look at Gartner quadrant
+[11:00.24] these two are very close to each other
+[11:02.16] suggesting that they're highly popular
+[11:04.40] and highly
+[11:05.68] competitive power be on the other hand
+[11:07.88] is a Microsoft product so um again one
+[11:11.32] of the benefits is we all know how big a
+[11:13.60] company how big a giant Microsoft is
+[11:16.24] when you talk about the tech World they
+[11:18.32] already have plenty of tools that they
+[11:21.44] have to offer with powerbi the benefit
+[11:24.36] is it readily integrates with this stack
+[11:27.48] of products offered by Microsoft
+[11:29.88] giving it an edge in the market if you
+[11:32.32] look at it from visualization
+[11:34.44] perspective TBL gives you high quality
+[11:37.60] visualizations with great smoothness
+[11:40.36] powerbi on the other hand gives you a
+[11:42.92] lot of options when it comes to
+[11:44.64] visualizations you can create so many
+[11:46.76] types of visualizations and it also
+[11:48.96] gives you better integration facility
+[11:52.00] compared to
+[11:53.16] tblo so again as an individual you might
+[11:56.28] wonder which is the best tool to meet my
+[11:58.92] need
+[11:59.88] so there's no perfect winner here it's
+[12:02.44] all about understanding which tool would
+[12:05.12] fit into your business requirements
+[12:06.92] better and then again going ahead and
+[12:08.84] picking one because when you talk about
+[12:11.16] tblo or powerbi from a job perspective
+[12:14.72] both of these tools are fairly strong
+[12:17.24] fairly good and offer fairly large
+[12:19.60] number of options when you talk about
+[12:22.92] jobs when you talk about it from a
+[12:24.64] career perspective or when you talk
+[12:26.80] about a different company is wanting to
+[12:28.92] use using these tools so yes these tools
+[12:32.08] are right up there in the market and
+[12:34.44] even if you're skilled in any one of
+[12:36.08] these three they're fairly good tools
+[12:38.16] out there but we will be talking about a
+[12:40.52] specific tool only so um I believe by
+[12:44.56] now you understood what data
+[12:46.04] visualization is and how it works um and
+[12:49.44] what are the different tools that um
+[12:52.08] data
+[12:53.04] visualization uh offers to us or we can
+[12:55.24] do data visualization using it right
+[12:57.48] okay so what exactly is tab so when you
+[12:59.80] talk about tblo right whether you talk
+[13:02.20] about connection to
+[13:04.28] collaboration tblo is basically one of
+[13:06.76] the most popular tools that is out there
+[13:08.96] and this is an important line here it is
+[13:11.64] an end to end analytics platform I would
+[13:14.68] call it an ENT analytics platform I
+[13:17.44] would rather call it an end data
+[13:19.68] visualization platform that helps um
+[13:23.68] process your data in a way that would be
+[13:25.88] very helpful in generating meaningful
+[13:28.32] insights out of your dat
+[13:30.52] data what are some of its features um
+[13:33.60] you have opt visualizations that it
+[13:35.72] offers right I mean the amount of
+[13:37.20] visualizations that you can generate
+[13:38.72] using tblo are
+[13:40.96] plenty um it gives you automatic
+[13:44.60] functions as well functions that um
+[13:47.04] actually simplify the process of
+[13:48.68] visualization something that we' be
+[13:50.12] seeing in the further sessions that we
+[13:52.08] have it lets you readily connect to the
+[13:54.72] data that is there with you and it gives
+[13:57.72] you um in depth analysis I mean you can
+[14:00.68] actually go ahead and um basically drill
+[14:04.08] down into your data further and further
+[14:05.84] further and further making it easier for
+[14:08.28] you to actually go ahead and visualize
+[14:10.60] your data in different or a number of
+[14:13.32] ways if you talk about tblo product
+[14:15.72] family right I
+[14:17.80] mean um there are quite a few products
+[14:20.52] that tblo offers these are the popular
+[14:22.60] ones that you see on the screen right
+[14:24.80] tblo as we all know is one of the
+[14:26.52] leading data visualization Tools in
+[14:29.60] market and uh it offers different
+[14:32.72] solutions that serve different purposes
+[14:35.48] say for example uh basically tblo reader
+[14:38.96] is one so let's not talk about reader
+[14:41.36] first we'll come to the reader part
+[14:42.80] later first let's talk about tblo server
+[14:46.24] right so tblo server and tblo public now
+[14:49.80] both of these are server supporting
+[14:53.84] products that tblo offers tblo server is
+[14:57.08] something that you can actually go ahead
+[14:59.68] and install on your existing server now
+[15:02.52] if you talk about an Enterprise level um
+[15:05.80] business an application right you would
+[15:07.88] be wanting to visualize your data in
+[15:10.84] that case what you do is you use
+[15:12.88] something like a tblo server something
+[15:14.88] that can be
+[15:16.16] installed on your existing server right
+[15:20.08] the other thing is your tblo public so
+[15:22.44] as the name suggests right it is based
+[15:25.08] on tblo server a server that uh tblo
+[15:28.60] owns um it is a
+[15:32.28] platform uh where actually people can go
+[15:34.80] ahead and share their knowledge okay so
+[15:37.40] let's assume that um you are a professor
+[15:41.04] or a contributor and you want to
+[15:42.80] contribute to the tblo community you can
+[15:45.08] do it with tblo public and your data
+[15:47.52] would be visible to people who are a
+[15:50.24] part of that Community tblo online is
+[15:53.60] more of a cloud offering that um tblo
+[15:56.92] offers to you and tblo reader and you
+[15:59.56] also have something called as tblo
+[16:00.88] mobile now these are something that let
+[16:03.16] you read into tblo dashboards tableu
+[16:06.72] reports that you create okay so these
+[16:09.12] are read only tools that you have or
+[16:10.84] products you have where um you actually
+[16:14.48] have to go ahead and uh wait for
+[16:16.92] somebody to share that document with you
+[16:19.12] and then since somebody has shared it
+[16:21.00] with you you can access it using your
+[16:23.60] tblo reader or tblo mobile product that
+[16:25.92] you have with you okay so these are some
+[16:28.40] of the key terms that you need to know
+[16:30.48] about tblo so let's just quickly switch
+[16:33.04] into the tblo desktop version so um guys
+[16:37.36] this is how tblo desktop looks okay so
+[16:41.48] this is the free version that I have
+[16:43.76] right when you say tag Tableau desktop
+[16:45.84] there are two parts of it you have the
+[16:48.64] uh developer version or the paid version
+[16:50.76] and you have the free version as well
+[16:53.08] okay so when you say or when you talk
+[16:56.12] about the um
+[17:00.32] free version right um it lets you create
+[17:03.68] visualizations right it lets you create
+[17:05.76] reports but in case if you need to go
+[17:07.84] ahead and publish those to a particular
+[17:09.56] dashboard this is where an online or a
+[17:11.20] paid account would be needed so a paid
+[17:14.12] account gives you more features but if
+[17:16.12] you wish to get started and start
+[17:18.60] practicing tblo start using tblo for
+[17:22.12] some fundamentals right uh you can
+[17:24.80] actually go ahead and use uh tblo
+[17:28.32] desktop as as well okay the free version
+[17:31.00] so let's just go ahead and explore this
+[17:32.64] version what I also said was I'll show
+[17:35.32] you how it is similar or different to
+[17:37.52] powerbi right so I might have a desktop
+[17:39.96] app with me let me quickly open that for
+[17:41.68] you okay so we can compare these face to
+[17:44.88] face I'll spend like 2 3 minutes just
+[17:47.56] walking you through how powerbi also
+[17:50.00] works right so that you get a clear
+[17:52.96] picture about both these platforms or
+[17:55.12] both these tools rather so meanwhile it
+[17:58.20] opens let's let um continue talking
+[18:00.32] about tblo right so guys um as I
+[18:04.32] mentioned it connects to different data
+[18:06.88] sources right so when you say different
+[18:09.04] data sources what you see on the left
+[18:11.12] hand
+[18:11.92] side okay the powerbi desktop thing is
+[18:15.20] initializing let me minimize that
+[18:17.84] meanwhile it opens right so when you say
+[18:20.84] you can connect to different data
+[18:22.12] sources see there are quite a few
+[18:23.68] options here as you can see on my screen
+[18:26.04] right you can connect to all these data
+[18:27.76] sources that are there and even there
+[18:29.80] like if you click on this more option
+[18:31.40] here You' get to know that there are
+[18:32.76] plenty of other options that you can
+[18:34.12] connect to see whether you talk about
+[18:36.36] Microsoft Excel server MySQL Oracle even
+[18:39.64] something like AWS database now Amazon
+[18:42.76] red shift is a good example of AWS
+[18:45.20] database service so you can even connect
+[18:47.84] to that server as well if you have data
+[18:50.16] on that server right and there are more
+[18:52.16] options even if you talk about picking
+[18:53.92] up files whether it's an Excel file text
+[18:56.28] file Json file right whether you talk
+[18:58.44] about Microsoft Access PDF files spatial
+[19:02.04] files even statistical files now some of
+[19:04.48] these to be very Frank I've not even
+[19:06.40] used it in my life we are mostly
+[19:08.32] concerned with the top four or five
+[19:09.84] files that we mostly use but yeah if
+[19:11.80] even if you're using those files you can
+[19:13.28] do that and there are more options that
+[19:15.24] you can go ahead and look into right
+[19:18.16] same is with powerbi as well it gives
+[19:19.88] you plenty of options that you can
+[19:21.52] connect to let me just go ahead and show
+[19:23.44] it to you people there two windows that
+[19:25.08] are open let me just go ahead and
+[19:37.44] show you this part right this is how the
+[19:39.96] powerbi version of things also looks uh
+[19:43.68] you'll get to see how similar it is to
+[19:45.76] tablet not worry if I say get data right
+[19:48.64] it gives me plenty of options as well
+[19:50.92] the ones that I can pick from if you
+[19:52.12] feel that these are less click on more
+[19:54.32] and you'll know that there are many
+[19:56.28] other options that fall under it
+[19:59.60] you see there are plenty of options that
+[20:02.00] you can choose from you can choose
+[20:03.40] different files you can connect to
+[20:04.92] different uh data sources as well see
+[20:07.44] there plenty of them so um both function
+[20:12.04] very similarly uh in powerbi 2 you can
+[20:15.92] import your data in tblo to you can
+[20:17.60] import your data uh let me go back to
+[20:19.84] tblo for now right if I just like scroll
+[20:23.08] down you see that there are different
+[20:24.56] data sources that you can connect to
+[20:26.00] there are some sample data sets so if I
+[20:28.04] open one of these data sets let's say I
+[20:30.20] open the sample data
+[20:34.40] store right you see uh this is how the
+[20:37.16] interface looks and it is very similar
+[20:39.00] to what you get okay let me just close
+[20:41.56] this for
+[20:44.32] now
+[20:46.04] right yeah so you can see the interfaces
+[20:48.76] are very similar this one and this one
+[20:51.32] right the only difference here is you
+[20:53.68] have your data fields here in the left
+[20:56.36] hand panel in case of powerb if I import
+[20:59.44] a particular set of data let's say I say
+[21:01.84] get data I import an Excel file it
+[21:05.08] should basically let me pick some data
+[21:07.72] set I have a super store data set here
+[21:09.48] as well you would see that all the data
+[21:11.56] would get imported here
+[21:16.12] okay and in powerbi if you are importing
+[21:19.16] data it would give you an option as to
+[21:21.08] what data do you want to load I've just
+[21:24.00] said yes to all the data that was
+[21:26.60] there and I'll just load all the data
+[21:29.28] that is there at my
+[21:45.28] disposal see guys all the data has come
+[21:48.28] here on the right hand side right so I
+[21:50.72] can play with the visualizations here in
+[21:53.76] Tableau it is on the left hand side
+[21:56.48] right if you talk about power
+[22:00.20] bi forgive me for the noise guys I've
+[22:03.12] been doing these sessions from home so
+[22:05.60] yep there could be some disturbance here
+[22:07.96] or there so um guys when you talk about
+[22:10.92] powerb you have to pick and drop these
+[22:12.60] things here I put it here right and
+[22:15.92] there would be a certain set of
+[22:17.12] visualization that would be generated
+[22:19.04] here so I've just picked up a category
+[22:22.48] here and for that I'm just going to go
+[22:24.20] ahead and say
+[22:26.28] profit you see it has actually gone
+[22:28.76] ahead and picked up a particular kind of
+[22:31.04] visualization here for me there you
+[22:35.68] go same is with tblo as well uh let's
+[22:39.80] talk about tblo a little more because
+[22:41.60] that is the main topic of discussion for
+[22:43.12] today so let's say I do a similar
+[22:45.80] practice here let me just pick an order
+[22:50.24] date put it here I put it here yep and
+[22:55.28] let me just go ahead and
+[22:57.20] say I I want to compare it with
+[23:01.80] profit there you go the information
+[23:03.72] would be here probably not the best of
+[23:05.92] fields that I should have
+[23:09.76] picked and by default it has picked
+[23:12.68] up a quarterly thing here
+[23:15.64] right we'll discuss these pointers do
+[23:17.92] not worry
+[23:19.40] right uh before that let me just talk
+[23:22.52] about certain other pointers before we
+[23:24.40] get into the details of visualization
+[23:26.76] right so guys you see the options on the
+[23:28.84] left hand side of the screen
+[23:30.68] right so there are some things that are
+[23:33.96] blue in color some are in green color
+[23:37.16] right so these are your quantitative
+[23:39.64] measures okay the ones in the green
+[23:42.52] color and the ones in the blue are your
+[23:45.44] Dimensions so Dimensions think of them
+[23:47.72] as the attributes right as the column
+[23:49.60] names that you have and the green
+[23:51.68] colored ones are the operations
+[23:53.60] mathematical operations that you can
+[23:55.12] perform on your data that you have Okay
+[23:58.24] so say for example
+[24:01.44] uh I need to find
+[24:05.88] out
+[24:07.40] cities and City wise maybe I want to go
+[24:10.36] ahead and find out profit so profit is
+[24:14.28] my operation there you go so it is
+[24:17.16] giving me numbers again these are not
+[24:20.12] the best of visualizations because the
+[24:22.48] data here is not in that format I'll
+[24:24.76] show you some good visualizations do not
+[24:26.32] worry about that
+[24:30.40] let's just say we go ahead and pick
+[24:33.60] up our order date right this would tell
+[24:37.76] me about the data right and let me just
+[24:41.16] go ahead and say profit here
+[25:01.32] let's just go ahead and say sales for a
+[25:05.04] while let me remove this thing
+[25:09.80] from yep since it is in Bim form bin
+[25:13.04] form I can see this or sales data better
+[25:16.20] here right so I'm what I'm getting here
+[25:17.92] is I'm basically getting my sales for
+[25:19.88] 2016 17 18 19 right so that is what
+[25:24.72] visualization does now some of you asked
+[25:26.52] me as in um can we do this in Python how
+[25:29.92] is it different from matplot lip see you
+[25:32.08] can do these things using python but the
+[25:34.32] difference here is see with tools like
+[25:36.48] taable it is just a pick and drop
+[25:38.08] activity for you you do not have to
+[25:40.68] invest too much thought you do not have
+[25:42.36] to worry about any coding knowledge
+[25:44.20] right to give you another example just
+[25:47.16] say I click on this icon and you see
+[25:49.84] I've replaced my X column with Y there
+[25:53.00] you go you see at the top here this
+[25:54.76] changes
+[25:56.56] here here is in my columns now if I
+[26:00.48] click on it again my year would be in
+[26:02.72] the rows part right so that is what it
+[26:05.32] does for you so this is how it basically
+[26:08.64] simplifies the process of data
+[26:10.08] visualization for you right now again uh
+[26:13.76] I have to click on these icons right now
+[26:15.84] to get information about these pointers
+[26:18.84] right can I do something else with it
+[26:21.96] right uh I don't want to click on it or
+[26:23.88] hover on it to get information about
+[26:25.64] this data so instead I just click on
+[26:27.96] this marker here right show Mark
+[26:30.84] labels there you go it's going to give
+[26:32.72] me values written right in front of me
+[26:34.88] so I get to know straight away that in
+[26:37.92] 2016 I basically made ored sales that
+[26:42.24] was worth 48 4247
+[26:45.84] 470533 right so this is how easy it is
+[26:48.64] here right um what are the other things
+[26:51.40] that I can do right I can actually go
+[26:54.72] ahead and play with this data a little
+[26:57.48] more okay I can try out other
+[26:59.20] visualizations as well you see I just
+[27:01.92] clicked on this pie chart and it is
+[27:03.84] giving me information in a pi form so
+[27:07.64] each piece or each slice here represents
+[27:10.68] a particular year and if I click on
+[27:12.88] it I get this information just by
+[27:17.88] hovering around
+[27:19.60] it if I click on this Mark again I'll be
+[27:22.44] getting this data like this right so
+[27:25.36] when you talk about this data right you
+[27:27.08] can play around it you can actually go
+[27:29.32] ahead and do a lot of things with the
+[27:30.92] data it depends how do you want to
+[27:33.08] actually go ahead and understand this
+[27:34.52] particular data let me just go ahead and
+[27:38.48] say category right so I'll be getting
+[27:43.76] yearly distribution
+[27:46.00] of
+[27:48.56] uh sales for different categories
+[27:51.68] whether you talk about furniture office
+[27:53.56] sales technology right all this is very
+[27:56.60] blue however right let's let's assume
+[27:58.56] that I want to go ahead and give
+[28:00.92] different colors to different
+[28:02.96] categories let me just go ahead and put
+[28:05.08] this category and put it in a
+[28:07.84] filter
+[28:11.36] okay let's just say Okay so it will
+[28:14.44] remove the other categories this is one
+[28:17.24] way of dealing with it right so if I
+[28:20.24] just remove it from here okay I'll get
+[28:22.84] all the categories again but let's
+[28:24.76] assume that I want to color my
+[28:27.12] category so it will give me different
+[28:29.28] colors for different categories for me
+[28:31.28] to basically differentiate as in what
+[28:33.44] office sales are what furniture is what
+[28:36.08] technology are or how the numbers are
+[28:38.08] doing when you talk about it from a
+[28:39.60] sales perspective and again if I add a
+[28:42.00] marker here I'll be getting all this
+[28:44.16] information in little more detail i' get
+[28:46.32] to understand how do these things work
+[28:48.80] right what is powerbi in little more
+[28:51.80] detail in the previous video of this
+[28:54.44] course we've already discussed the
+[28:56.56] different data visualization tool
+[28:58.76] we also talked about powerbi to some
+[29:00.64] extent let's try and understand powerbi
+[29:03.96] as in what all can it do what it is and
+[29:06.52] how does one Define it so when you take
+[29:10.00] a look at the
+[29:11.32] definition powerbi is a tool which
+[29:14.40] basically lets you control quite a few
+[29:16.24] things right be it from connection to
+[29:19.96] collaboration Pia is the most powerful
+[29:23.40] secure and flexible endtoend analytics
+[29:27.12] platform for your data data when you say
+[29:29.00] an end to end platform right from data
+[29:32.64] consumption or data sourcing to the end
+[29:36.64] process where you generate reports out
+[29:38.96] of it right pobi takes care of quite a
+[29:42.40] lot of things so when we are talking
+[29:45.36] about data visualization tools the
+[29:47.56] primary function here is to take in your
+[29:49.52] raw data and generate visualizations out
+[29:53.08] of it which can convey some of the
+[29:55.04] missions or messages very effectively
+[29:59.16] and that is what powerbi does for you it
+[30:01.68] gives you end to end solution to quite a
+[30:04.32] lot of problems that you may have in
+[30:05.84] your hand okay and that is what powerbi
+[30:08.72] is in a
+[30:10.08] nutshell let's try and understand
+[30:12.32] powerbi a little more with the features
+[30:14.76] that it offers to start with powerbi
+[30:18.20] offers AR visualizations so the number
+[30:22.04] of options when it comes to visualizing
+[30:24.28] your data are plenty they are numerous
+[30:28.48] and you can actually go ahead and
+[30:31.32] customize your visualizations and do a
+[30:33.48] lot of things with it as we get into the
+[30:36.12] demo part we'll be discussing these bits
+[30:38.12] in lot more detail and all of a sudden
+[30:40.64] these Concepts like depth automatic
+[30:42.72] functions connecting to data after
+[30:44.84] visualizations it will start making a
+[30:46.56] lot more sense to you but for now let's
+[30:48.80] try and understand what the definition
+[30:50.92] or what do these pointers stand for So
+[30:52.72] when you say app visualizations the aim
+[30:55.48] here is to generate visualizations that
+[30:58.12] way detailed or a lot more information
+[31:00.64] for you with ease you can get into the
+[31:03.48] depth of Concepts so this is where your
+[31:07.16] drill down features come into picture
+[31:09.84] how do you get into depth of information
+[31:12.28] let's assume that there's a business
+[31:14.88] problem for which you're reporting
+[31:16.40] certain data and presenting it in the
+[31:18.12] form of visuals and that certain data is
+[31:21.04] nothing but the sales on yearly basis so
+[31:25.04] what we realized was let's assume that I
+[31:27.56] quoted data for four years where I
+[31:29.68] showed the profits or sales whatever it
+[31:32.56] is right let's assume sales for last 3
+[31:34.80] to four years now what we realized was
+[31:38.00] this year there was a sudden Spike or
+[31:41.28] there was a high increase in the sales
+[31:44.12] that we did so if I have to figure out
+[31:46.80] um let's assume something like I want to
+[31:49.72] understand in which part of the year did
+[31:51.52] I get more sales so I can actually go
+[31:54.68] ahead and drill down and take a look at
+[31:56.80] quarterly data for this year I can
+[31:59.08] compare it with quarterly data for
+[32:00.52] previous years and what that would tell
+[32:02.04] me is as in which quarter did we have
+[32:05.88] more performance was it consistent was
+[32:07.84] it a particular quarter that we got more
+[32:09.68] information in so when you say drill
+[32:11.92] deeper or get into the depths of
+[32:14.04] information that is what you do here
+[32:17.32] then you have something called as
+[32:18.76] automatic functions now what are
+[32:20.56] automatic functions automatic functions
+[32:23.96] are nothing but the ease with which you
+[32:26.48] can actually go ahead and create
+[32:29.08] visualizations where powerbi supports
+[32:31.76] you by giving you ample and good
+[32:35.56] suggestions for your data if you are not
+[32:38.32] certain as in for what visualization
+[32:40.80] should I opt for when I choose this
+[32:42.36] particular data do not worry about it
+[32:45.00] all you have to do is put that data and
+[32:47.28] if that can be visualized powerbi by
+[32:50.24] default will suggest certain
+[32:51.88] visualizations for you again something
+[32:54.24] that we' be seeing as we perform demo
+[32:57.16] and we get into to the Practical part of
+[32:59.04] things for this course the next point is
+[33:02.04] connection to data there are very less
+[33:05.16] data sources out there in the market to
+[33:07.72] which a tool like powerbi cannot connect
+[33:10.56] you so when you talk about powerbi I
+[33:13.36] don't think I've seen any tool yet or
+[33:15.04] known any tool yet that you cannot
+[33:16.96] import your data from into
+[33:19.60] powerbi again the different connection
+[33:22.04] sources is something that we'll discuss
+[33:24.04] as we move further so this is what
+[33:26.56] powerb is in a nutsh be it from
+[33:28.72] connection to collaboration it is an end
+[33:30.84] to end Analytics tool for your data okay
+[33:33.48] and apart from that it provides features
+[33:35.28] like it gives you op visualizations uh
+[33:37.84] in-depth Drilling and um understanding
+[33:40.40] of your data it lets you basically go
+[33:42.76] ahead and use automatic functions
+[33:45.12] something that you can use to connect uh
+[33:48.44] or basically you can use to create more
+[33:50.08] better visualizations and you can also
+[33:51.96] connect to different data sources making
+[33:54.12] it easily available for different
+[33:56.24] requirements so when you talk about the
+[33:58.56] powerbi architecture we are not going to
+[34:01.20] get into the complications of how the
+[34:03.72] architecture Works in detail but there
+[34:06.04] are three important pointers that you
+[34:07.84] need to understand and you can see those
+[34:09.72] pointers at the right bottom corner of
+[34:13.16] this slide where we've talked about data
+[34:15.96] integration processing and presentation
+[34:18.72] of information what that means is when
+[34:22.08] you talk about any data the first step
+[34:25.28] is to get your data from different
+[34:27.24] sources
+[34:28.92] the next step is once you have the data
+[34:31.40] you integrate it you transform it into
+[34:34.76] more edible data and once the data is
+[34:37.44] edible you just present it in a better
+[34:40.04] manner so people who work in ETL can
+[34:43.12] relate to this right extract transform
+[34:45.36] and load that is what we do so basically
+[34:48.16] when you talk about powerbi it works no
+[34:51.00] differently right one as I've mentioned
+[34:54.20] there are very few data sources to which
+[34:56.44] powerbi cannot connect to so You' be
+[35:00.00] taking in data from different data
+[35:01.88] sources right and then you would move it
+[35:04.68] to powerbi Services which is their
+[35:07.32] online platform now once it is there in
+[35:09.84] powerbi Services you can then through
+[35:12.28] the Gateway move it to the servers it
+[35:14.52] can be your private server or powerbi
+[35:16.76] server and if and when required you can
+[35:19.32] use tools like powerbi desktop okay
+[35:23.40] which can be used to basically go ahead
+[35:25.92] and create visualizations
+[35:28.20] using powerbi or basically using this
+[35:31.12] tool you can create visualizations so
+[35:33.48] what are the sub tools that you can use
+[35:35.40] this is something we'll see as we move
+[35:37.00] forward but this is how the architecture
+[35:39.52] of powerbi works I hope that is clear to
+[35:42.44] you
+[35:43.20] people let us now go ahead and
+[35:45.88] understand the different components of
+[35:48.32] powerbi so when you talk about the
+[35:51.16] different components of powerbi we have
+[35:54.36] quite a few components that powerbi
+[35:56.80] offers to us
+[35:58.28] so um to name of you you have your power
+[36:01.16] query you have your power view you have
+[36:03.40] your uh powerbi Q&A power pivot then you
+[36:06.76] have other features as well right be it
+[36:09.00] your mobile features be it your desktop
+[36:11.68] features right there plenty of these out
+[36:13.84] there in the market let's try and
+[36:16.40] understand them one by one okay so first
+[36:19.28] and foremost let's talk about power
+[36:21.04] query Now power query is one of the
+[36:23.60] important components of powerbi that can
+[36:26.24] be included in your Excel or it can also
+[36:29.72] be used as a component of powerbi
+[36:32.36] desktop Now using power query what you
+[36:36.00] can do is you can basically delete your
+[36:39.12] data from numerous data sources or even
+[36:42.44] extract your data from a wide range of
+[36:44.44] different databases be your Oracle SQL
+[36:48.08] Server be MySQL be other databases as
+[36:51.96] well or different sources as well what
+[36:54.16] you can also do here is you can f data
+[36:56.20] from records now these records can be
+[36:58.40] like text files csvs and even Excel
+[37:02.08] files right so when you talk about
+[37:04.12] powerbi it gives you feature of working
+[37:06.60] with data be dealing with different data
+[37:09.12] sources be deleting or fetching data all
+[37:12.16] these things can be done by using your
+[37:14.24] powerbi query or power query what
+[37:16.84] powerbi also does is it gives you a
+[37:19.32] strong GUI that is graphical user
+[37:22.20] interface so that you can actually go
+[37:24.08] ahead and transform a lot of your data
+[37:26.84] and use this data as you need now when
+[37:29.52] you talk about transforming you might
+[37:31.00] require data such as date and time
+[37:33.56] changes adding columns changing the
+[37:36.28] types um of your data and content right
+[37:39.84] and many other different options that
+[37:41.48] are there on your plate now when you
+[37:43.12] talk about power query again it is
+[37:44.96] useful as it uses formula like your M
+[37:48.32] formula language um Power query M
+[37:50.96] formula language is what we call and it
+[37:53.44] is more vigorous than a normal GUI so
+[37:57.32] that that is what your power query lets
+[37:58.88] you do it lets you deal with GUI
+[38:01.16] requirements as well and all the data
+[38:03.00] processing that we discussed at the
+[38:05.04] initial point of start now let's try and
+[38:08.20] understand the other components um I'm
+[38:09.88] going to go through these components in
+[38:12.16] random orders so let's now discuss the
+[38:15.48] power P what it is and how does it
+[38:19.28] function so when you talk about power
+[38:21.88] pivot power pivot again is a data
+[38:24.44] modeling and calculation engine it is
+[38:26.96] used for for modeling simple and complex
+[38:29.48] data in power pivot you can set or
+[38:32.84] create relationships between different
+[38:35.12] tables and calculate values that can be
+[38:37.68] viewed in power tables or P tables
+[38:40.00] rather now when you talk about it what
+[38:42.04] it does is it also gives you a lot of
+[38:44.00] space where you can actually go ahead
+[38:45.36] and create your designs and another
+[38:47.36] important thing is when you talk about
+[38:49.56] power pivot it uses Dax that is data
+[38:54.20] analysis Expressions something that
+[38:56.20] we'll see to some extent as as we move
+[38:58.00] further so um it is a very strong
+[39:01.08] concept when you talk about Dax and it
+[39:02.88] serves quite a lot of purposes in
+[39:05.44] general so we'll discuss that as we move
+[39:07.40] further the next point that we would be
+[39:09.84] talking about now is your power view
+[39:12.48] when you talk about Power view again it
+[39:15.36] is a data visualization component a
+[39:18.00] basic one a fundamental one though and
+[39:20.08] what it does is it is a component that
+[39:22.44] lets you interact with the data and
+[39:25.12] connect to different data sources that
+[39:26.72] you have just like you do in power query
+[39:29.64] but the other thing that it gives you
+[39:31.52] here is you can retrieve the metadata
+[39:33.48] that you have okay and it can be used
+[39:35.08] for data analysis now there are many
+[39:37.28] blueprints for visualization in Power
+[39:39.52] view lists if you talk about it in
+[39:41.68] general form and with power viiew what
+[39:43.72] you can also do is you can filter your
+[39:45.36] data for every visualization component
+[39:47.96] or for an entire report if you want to
+[39:50.32] you can add slices to it right you can
+[39:52.96] slice and dice your data and when you
+[39:55.04] talk about reports in powerview these
+[39:56.92] are interactive in nature and can
+[39:59.20] highlight some important parts of the
+[40:00.92] data or different components in Power
+[40:02.84] view to interact with each other now
+[40:05.28] next you have on your plate is power map
+[40:07.60] okay so when you talk about power map
+[40:09.68] power map is used to visualize
+[40:12.08] geospatial data which can be in 3D mode
+[40:15.48] right so power map basically lets you
+[40:17.72] deal with Geographic data now when
+[40:19.76] you're talking about this data type we
+[40:21.84] are talking about data that is specific
+[40:23.64] to a particular location and you need
+[40:26.28] separate kind of visualiz Iz ation for
+[40:27.92] it and when you talk about power map it
+[40:30.24] lets you get all these data in place and
+[40:32.40] also let you render this data in 3D mode
+[40:34.64] so what that means is with power map you
+[40:36.88] can go ahead and attribute or assume one
+[40:39.48] of the attributes and then actually go
+[40:41.68] ahead and create different views be heat
+[40:44.56] maps and stuff like that okay so when it
+[40:47.04] comes to dealing with Geographic data
+[40:49.24] you can always op for something like a
+[40:51.44] power map now we've been going around
+[40:54.76] and around talking about different
+[40:56.20] visualizations and the ease with which
+[40:57.96] you can actually go ahead and get your
+[40:59.16] data the important Point here is we need
+[41:01.44] to question the data that we have right
+[41:03.44] can we do that when you have powerb Q&A
+[41:06.36] you can definitely do that it is nothing
+[41:08.88] but a language motor you can think of it
+[41:10.72] as a language motor that basically lets
+[41:13.48] you go through your data model and
+[41:16.88] question it to get certain important
+[41:18.88] answers okay and when you talk about it
+[41:21.68] it helps you find solutions to quite
+[41:23.72] important questions that are there
+[41:25.28] figure out certain hints related to the
+[41:27.36] data and then using which you can either
+[41:29.76] create more visualizations or just
+[41:32.16] understand the existing visualizations
+[41:34.32] better apart from that you have some
+[41:36.12] tools that powerbi offers now we've
+[41:37.92] talked about the important components
+[41:39.52] and all the five ones are covered but
+[41:41.60] then there are certain other parts to it
+[41:43.96] right you have a powerbi desktop a
+[41:46.16] desktop related service or a software
+[41:48.96] that you can install on your system and
+[41:50.92] once you do that you can go ahead and
+[41:52.44] create visualizations out of it then you
+[41:54.44] have something called as powerbi website
+[41:56.32] to which you can go ahead and publish
+[41:57.72] your reports and um dashboards and then
+[42:00.88] you have powerbi mobile apps now when
+[42:04.04] you talk about mobile apps these are
+[42:05.96] important one you cannot make changes to
+[42:08.28] your data to your visualizations when on
+[42:10.36] mobile but let's assume that you're
+[42:12.04] stuck somewhere and you need to take a
+[42:13.48] look at the report that has been sent or
+[42:15.56] a dashboard that has been shared what do
+[42:17.36] you do if somebody shares it with you on
+[42:19.28] your phone and you have powerbi which
+[42:22.68] has access to take a look at that
+[42:24.44] particular dashboard or visual you can
+[42:27.48] do that using your powerbi mobile so
+[42:30.56] again guys there are other subp parts
+[42:33.52] subc components but these are the core
+[42:35.48] ones I Believe by now the different
+[42:37.68] components of powerbi are clear to you
+[42:39.80] people so what are the building blocks
+[42:42.04] of powerbi now this is another important
+[42:45.40] concept theoretical in nature but very
+[42:48.52] important when you talk about its
+[42:50.04] practical applications something that is
+[42:52.28] going to help us carry out our demos for
+[42:54.60] this course much better so let's try and
+[42:56.72] understand what are building blocks of
+[42:58.08] powerbi now when you talk about powerbi
+[43:00.96] the major purpose of using powerbi is to
+[43:03.64] generate effective visualizations so
+[43:07.24] when you talk about these effective
+[43:09.64] visualizations we are talking about some
+[43:12.72] key Concepts that concern visualizations
+[43:15.72] so what exactly is visualization let's
+[43:17.84] try and understand that first when you
+[43:20.48] actually present your data in a visual
+[43:22.92] form say for example you have certain
+[43:24.84] set of information that can be
+[43:26.64] represented presented by a pie chart or
+[43:28.64] a bar graph what it is we'll understand
+[43:30.72] these graphs and charts as we move
+[43:32.60] further but let's assume that you want
+[43:34.16] to convey that information in that form
+[43:36.32] it would be easier for people to consume
+[43:38.36] that information than the return
+[43:39.92] information that we've discussed and
+[43:42.28] when you create a visual out of the
+[43:44.24] information you have we call it
+[43:46.16] visualization the other important Point
+[43:48.40] here is data sets Now to create
+[43:52.00] visualizations you'd be needing
+[43:53.92] different data sets data sets can be in
+[43:57.28] any form we've already discussed
+[43:59.84] different sources of data that powerbi
+[44:03.64] supports right so understanding how the
+[44:07.00] data looks like and how to get your data
+[44:09.20] in is something that concerns your data
+[44:13.52] sets bit here okay and next as we move
+[44:17.04] further we have some other bits that we
+[44:19.84] can discuss and which are thoroughly or
+[44:22.32] equally important right and those are
+[44:25.48] your tiles
+[44:27.76] basically your reports and your
+[44:29.72] dashboards so let's try and understand
+[44:31.56] them one by one first in this list we'll
+[44:33.88] pick up what tiles are so when you talk
+[44:36.96] about tiles tiles again is a flexible
+[44:40.20] movable visualization that you can pick
+[44:43.48] up you can put it in a report you can
+[44:45.36] put it in a dashboard and that would
+[44:47.44] convey a single set of information that
+[44:50.40] concerns your requirement and when you
+[44:53.08] build on it and you create multiple such
+[44:55.84] visualizations and and tiles together
+[44:58.88] you put it in a report now when you talk
+[45:01.28] about a report a report is basically one
+[45:04.80] or more pages of visualizations graphics
+[45:07.68] and texts that you can put together and
+[45:10.76] convey a certain set of information it
+[45:13.48] is a little different than what a
+[45:14.92] dashboard is whereas if you talk about
+[45:17.44] dashboard in particular it is nothing
+[45:19.00] but um basically conveying a lot of
+[45:23.40] information on a single page as we move
+[45:25.80] further we'll be classifying these two
+[45:27.48] topics in detail but let me quickly give
+[45:29.80] you a quick overview of all these
+[45:31.44] Services again so the first thing that
+[45:33.72] you have on your plate is your data sets
+[45:36.20] right data sets is nothing but a
+[45:38.12] different data sources from where you'll
+[45:39.60] get your data next to it is creating
+[45:42.12] visualizations out of the data that you
+[45:43.84] have and a single visualization would be
+[45:46.56] known as a tile if I basically go ahead
+[45:49.12] and create multiple tiles or
+[45:50.48] visualizations using the same data
+[45:52.36] source then it is called as a report and
+[45:55.04] when I have multiple reports with me I
+[45:56.76] can pick important pointers from each
+[45:58.64] report and put it on a single canvas
+[46:01.36] where I try to build a story it is
+[46:03.20] called as a dashboard so these are the
+[46:05.48] components of powerbi or the building
+[46:08.12] blocks rather not the components these
+[46:09.88] are the building blocks of
+[46:12.48] powerbi let us now go ahead and discuss
+[46:15.60] powerbi reports in a little more detail
+[46:18.92] when you talk about powerbi reports now
+[46:22.28] powerbi reports are nothing but a
+[46:25.92] multi-perspective view or information
+[46:29.00] into a particular data set right with
+[46:32.72] visualizations that represent different
+[46:34.92] findings and insights from that data set
+[46:38.00] so we are referring to a single data set
+[46:40.04] as I mentioned a report may be a single
+[46:42.48] visualization or it could be multiple
+[46:44.60] pages of different visualizations so
+[46:47.68] here your data set is single please note
+[46:50.12] that okay in powerbi you can create your
+[46:54.12] reports and you can edit the data that
+[46:56.24] is there in your reports but when you
+[46:58.40] publish it as a dashboard dashboard is
+[47:01.12] where you can interact with the data but
+[47:03.44] it is difficult to change a data once it
+[47:05.40] is published in the form of a report
+[47:08.20] let's try and understand what dashboards
+[47:10.16] are first so when you talk about
+[47:13.96] dashboards dashboards are basically
+[47:17.44] Concepts where you try to build a
+[47:19.92] particular story if you go with the
+[47:21.88] definition it is a single page also
+[47:24.92] known as a canvas that uses
+[47:27.64] visualizations to tell a particular
+[47:30.00] story it is limited to one page and a
+[47:33.76] point note is that a good dashboard
+[47:37.68] contains only the important elements of
+[47:40.44] that story enough of reading the
+[47:42.64] definition that is there on the screen
+[47:44.16] which has a grammatical error right now
+[47:46.56] let me explain this concept to you more
+[47:49.28] practically let's assume that you work
+[47:51.68] for a particular company and you work
+[47:53.28] for X team let's assume a marketing team
+[47:57.16] now you could be reporting data your
+[47:59.80] personal data or your team's data that
+[48:01.80] there's a possibility of that how does
+[48:03.64] that work let's assume that there's a
+[48:05.24] manager in the company who who basically
+[48:07.88] handles a marketing team and there are
+[48:10.00] like 15 marketing guys so there could be
+[48:12.56] a possibility that on monthly basis
+[48:15.24] every marketing guy reports the data to
+[48:17.32] the manager so there would be like 12
+[48:19.88] guys 15 guys who report their data
+[48:21.68] having 15 reports and then this is what
+[48:24.36] my monthly report or weekly report would
+[48:26.52] look like so there would be 15 reports
+[48:28.92] with the manager a manager would
+[48:31.20] consolidate that report into one major
+[48:34.60] report that he has where he talks about
+[48:36.88] the entire marketing team which has
+[48:39.16] important information about every report
+[48:41.72] that you have on a surface level there
+[48:43.60] could be hundreds of such teams or maybe
+[48:45.76] 10 15 teams in the company that serve
+[48:48.04] different purposes let's assume that all
+[48:50.32] these 15 teams have managers who create
+[48:53.68] 15 individual reports for their teams
+[48:55.96] now if I talk about a stakeholder a
+[48:57.80] stakeholder might not be interested in
+[48:59.64] taking a look at those individual
+[49:01.48] reports what he wants is he wants an
+[49:03.72] insight as to what improved what did not
+[49:05.88] and what we can do better for that what
+[49:07.72] if we build a dashboard where we take in
+[49:11.20] important pointers or the noticeable
+[49:13.84] pointers that need to be noticed from
+[49:16.20] each of these reports for individual
+[49:19.32] teams and put it on a canvas where we
+[49:22.08] can build a story out of it say for
+[49:24.48] example just because there were a lot of
+[49:26.36] YouTube videos that were published on a
+[49:28.16] particular Channel we saw a lot of
+[49:30.88] traffic being generated for sales leads
+[49:34.52] and this is where the increase in sales
+[49:36.72] happen so we are passing on the
+[49:39.00] information and trying to build a story
+[49:40.84] by connecting the dots from different
+[49:42.56] reports and when you pick up this
+[49:44.56] important information and build a story
+[49:46.92] we do that on a single canvas and that
+[49:49.64] canvas here is called as a dashboard so
+[49:52.44] I hope what a dashboard is is clear to
+[49:55.00] you people let us now go ahead and
+[49:58.08] understand how to install powerbi and
+[50:01.36] understand what its interface is once we
+[50:04.00] do that we can come back and cover some
+[50:06.60] of the other Concepts that would help us
+[50:09.04] go ahead and demonstrate all that that
+[50:11.44] we've looked into so let's do that so
+[50:13.68] dear attendees this is how the powerbi
+[50:16.80] desktop looks like we talk about it at
+[50:20.52] stretch but before that let me show you
+[50:22.20] how to install BBI so to do that open
+[50:25.96] your Google
+[50:27.64] or any browser that you have with you
+[50:30.08] there you go so um let's just go ahead
+[50:32.00] and look for powerbi
+[50:35.20] installation okay and if you select it
+[50:39.04] it would redirect you to some of the
+[50:40.68] suggestions and you can just come here
+[50:42.12] and look for this first one powerbi
+[50:45.96] microsoft.com so when you click on this
+[50:48.16] downloads panel here or suggestion in
+[50:50.84] the link so you can basically see that
+[50:53.24] you can download different powerbi tools
+[50:55.32] that you have on your platter do you
+[50:58.16] want powerbi Microsoft desktop powerbi
+[51:01.28] mobile the ones that we discussed right
+[51:03.96] on premise servers and stuff you should
+[51:06.56] actually go ahead and download your
+[51:08.76] powerbi desktop version so um if you
+[51:11.80] click on open Microsoft Store it would
+[51:13.88] take you to that particular place so
+[51:16.20] again this is basically redirecting you
+[51:18.16] to Microsoft stack of products available
+[51:20.72] in their Play Store or in their local
+[51:22.52] store okay so this is where you can
+[51:24.80] actually go ahead and download your
+[51:27.08] powerbi desktop you'd get an option of
+[51:30.24] downloading here but since I already
+[51:32.20] have it downloaded on on my system it
+[51:34.28] says launch so if I click on launch it
+[51:36.80] would basically take me to the software
+[51:40.04] that I've already installed you can see
+[51:41.92] the product is installed is what it says
+[51:44.12] because I have it on my system you have
+[51:46.40] all the information here and all the
+[51:48.28] system requirements I don't think there
+[51:50.08] are any major six system requirements
+[51:52.00] it's a very basic desktop tool you see
+[51:54.52] these are the requirements it has you
+[51:56.28] need like 2 GB of memory that is very
+[51:58.44] low again so you can download a powerbi
+[52:01.20] version for that once you do that guys
+[52:03.40] it's just click and launch kind of an
+[52:05.16] action so just continue clicking on it
+[52:07.36] till it asks you to uh click on finish
+[52:10.36] and once you do that you''ll be having
+[52:11.88] powerbi installed on your system as
+[52:14.44] simple as that so make sure you do that
+[52:16.80] you download powerbi here it is a free
+[52:19.76] of cost tool when you use it on your
+[52:21.96] desktop and um basically there are no
+[52:25.16] premium features here from a learn 's
+[52:26.88] perspective this should be more than
+[52:28.16] enough for you to go ahead and get
+[52:30.48] started so that is what powerbi desktop
+[52:33.76] installation looks like I'm not going to
+[52:35.88] walk you through the installation
+[52:37.20] process in detail it's not complicated
+[52:39.56] anybody can do it and once you install
+[52:42.16] this is what you'd have on your plate so
+[52:44.08] this is how the interface of powerbi
+[52:47.48] looks like let's quickly walk through
+[52:49.88] some of the important pointers that are
+[52:52.20] there on our plate and once we
+[52:55.52] understand how the interface looks like
+[52:57.04] or Works we' go back and cover some of
+[52:59.48] the important Concepts and then we would
+[53:01.40] get into full-fledged demo as to how to
+[53:04.72] do these things practically so what
+[53:08.00] exactly is this interface useful for
+[53:11.20] first and foremost you have these panes
+[53:14.48] here when you click on file you see it
+[53:16.16] would show you the reports that you've
+[53:18.40] created now I've created plenty of those
+[53:20.36] here uh you can save those you can even
+[53:22.64] click on get data to basically connect
+[53:24.56] to different data sources you can Import
+[53:26.72] and Export um your existing files you
+[53:29.64] can publish it to the powerbi services
+[53:32.04] where you can um have a reports created
+[53:34.96] or your dashboards created rather and
+[53:37.12] you have other options as well you can
+[53:38.52] even click on get started to basically
+[53:41.36] get information about power so let's not
+[53:43.64] do that let's just go back for now
+[53:45.44] there's another option here get data you
+[53:47.52] see so this is where you can import data
+[53:50.32] from different sources into your powerbi
+[53:53.68] so I'm going to just go ahead and import
+[53:55.64] certain set of information for now that
+[53:57.92] can be used later on so um let's just go
+[54:01.04] ahead and import an Excel file I think I
+[54:04.88] should be having an Excel data store yes
+[54:07.64] there's a data set with me here super
+[54:09.64] store is the name of the data set and
+[54:11.72] once I click on it it should be able to
+[54:14.08] import that data for me and show me how
+[54:17.00] to actually go ahead and put this data
+[54:19.80] in so you see the Navigator understood
+[54:22.28] that these are the different data
+[54:23.52] sources that are there in the sheet that
+[54:25.44] I just imported I can just click on
+[54:28.04] these things telling that okay import
+[54:29.72] data from all these three files I'm
+[54:32.44] going to say load you can transform the
+[54:34.04] data if you want but you can do that
+[54:35.44] later as well we are not going to do
+[54:37.16] that because this is a fairly edited
+[54:38.68] sheet that we have with
+[54:41.28] us and just like that guys our data
+[54:44.00] would be imported you see there's orders
+[54:46.48] there's people and there's returns so it
+[54:48.16] would be importing data from all these
+[54:50.36] three aspects or all these three
+[54:52.76] features that we have on a plate has he
+[54:54.56] imported yes the data has been imported
+[54:56.44] you see um you see it on the right hand
+[54:58.96] side and you get all the categories of
+[55:01.56] data that has been imported now in case
+[55:03.72] of table2 you have a very similar
+[55:06.16] interface the fact that we are talking
+[55:08.08] about different data visualization tools
+[55:11.36] let us go ahead and look for tblo as
+[55:13.84] well so I'll show you that interface as
+[55:15.76] well how does tblo works
+[55:18.72] okay so meanwhile it opens let's
+[55:21.12] continue talking about it so these are
+[55:22.88] the different sources through which you
+[55:24.20] can import data you see the submit sign
+[55:27.00] here the summation sign indicates it's a
+[55:29.76] function that you are using here to
+[55:32.24] calculate these values or a measure
+[55:33.92] rather apart from that these are your
+[55:36.68] data that is more dimensional in nature
+[55:40.48] and if you come down here this is more
+[55:42.60] quantitative or measure kind of a data
+[55:45.04] when you talk about profit um be a
+[55:47.64] discount right your quantity um your
+[55:51.44] sales so this is more of a quantitative
+[55:53.76] data here you see your different
+[55:56.28] visualizations that you can use
+[55:58.12] something that we'll discuss as we get
+[56:00.00] into the details of things right so you
+[56:02.68] can also import your data right from
+[56:05.08] different sources if I click on gate
+[56:06.52] data you'll see that there's so many
+[56:08.48] data sources here I mentioned that there
+[56:10.00] would be very few data sources to which
+[56:12.20] power B cannot connect to and I'm very
+[56:14.68] sure about it you see you can connect to
+[56:17.08] the all these data sources that are
+[56:18.76] there with you and these are plenty of
+[56:20.32] data sources I'm sure there would be
+[56:22.24] very few organizations that use anything
+[56:24.48] apart from these data sources
+[56:26.76] so you can go ahead and choose your data
+[56:28.76] from all these data sources you can
+[56:31.20] basically go ahead and work around with
+[56:33.28] other sources as well right if you come
+[56:35.52] here you see you have options of data
+[56:37.44] modeling so basically you can go ahead
+[56:40.28] and do quite a few other things here
+[56:41.96] right if you need a new measure you can
+[56:43.68] do that so when you click on new
+[56:46.80] measure basically you talking about
+[56:48.92] running your Dex queries something that
+[56:51.00] we'll see as we move further okay um
+[56:53.76] apart from that if you click on view you
+[56:55.80] can BAS basically add filters bookmarks
+[56:58.84] and also analyze some of the
+[57:00.84] performances that is there so the
+[57:03.12] options when you talk about powerbi is
+[57:04.84] flaty if you just want to go ahead and
+[57:06.84] take a look at your data in plain
+[57:08.32] hindsight click here so this is where
+[57:10.48] you'll be creating all your
+[57:11.44] visualizations this is where you'll see
+[57:13.28] all your data you can again go ahead and
+[57:15.40] arrange your data in different ways
+[57:16.76] different forms different formats so you
+[57:19.48] have the um basically support to take
+[57:23.00] care of all these things here say why do
+[57:25.76] I not see my data
+[57:28.72] here come here go to
+[57:32.16] modeling and is it because we've opened
+[57:35.12] a particular um pain here no no need to
+[57:39.24] worry about it as we go ahead you see
+[57:42.52] there's a lot of data here it's just not
+[57:44.36] visible so I'm going to say sort it in
+[57:46.88] descending order and then we'll see yeah
+[57:48.52] there you go everything is here so it
+[57:50.24] was hidden for some reason so when I did
+[57:52.28] go ahead and change this you can add
+[57:53.68] filters here right whether you want to
+[57:55.64] sort a in ascending order descending
+[57:57.44] order do you want to sort it do you want
+[57:59.00] to clear certain set of information or
+[58:01.28] run certain functions so when you do go
+[58:03.28] ahead and run Dax queries on it you can
+[58:05.28] do quite a few things with it but that
+[58:07.60] is a discussion for the later half for
+[58:10.00] now let's just go ahead and understand
+[58:12.52] how the interface looks like right this
+[58:14.16] is where you can actually go ahead and
+[58:15.36] create relationships now we have three
+[58:16.88] tables you can create a relationship
+[58:18.92] between them if they are not related you
+[58:20.56] can relate them in a way that you feel
+[58:22.56] would make it easier for you to process
+[58:24.12] your data at the bottom here you have
+[58:27.44] different Pines if I click here you'll
+[58:29.24] see there's a page thing here so you can
+[58:31.00] add multiple Pages where you can create
+[58:33.08] different visualizations now let's go
+[58:35.24] back to the powerbi sorry the Tableau
+[58:37.08] thing this is how the Tableau interface
+[58:39.20] looks like you can connect to different
+[58:40.76] data sources here okay and once you do
+[58:44.04] that and if you come down here and you
+[58:45.36] click on simple sample data Super Store
+[58:49.00] where which is a data set
+[58:50.92] that tblo supports or it is an inbuild
+[58:53.64] data set you would see tablo's inter
+[58:56.24] face in case of table to you
+[58:59.36] see there are um and once you import the
+[59:03.16] data you see all these here in case of
+[59:05.04] powerbi we had it on the right hand side
+[59:07.16] and this is where you'll have all the
+[59:08.44] visuals like powerbi you see so um again
+[59:12.32] we'll understand how Tableau interface
+[59:14.44] also works in case of Tableau if you
+[59:16.72] want to create dashboards and reports
+[59:19.28] you have the option for it the story
+[59:21.12] option dashboard option and Report
+[59:22.64] option here and here in case of powerbi
+[59:25.12] that is little different
+[59:26.60] so this is about the different
+[59:28.52] interfaces for both tblo and
+[59:30.92] powerbi that's it for the interface part
+[59:33.52] let us now go ahead and try and
+[59:35.20] understand what powerbi Dax is so when
+[59:38.44] we talk about powerbi Dax powerbi Dax
+[59:42.32] stands for data analysis Expressions
+[59:45.64] which again is nothing but a collection
+[59:47.52] of functions operators and constants it
+[59:50.68] is used in formula and basically it
+[59:53.76] returns one or more variables
+[59:56.16] it is a native formula and a query
+[59:57.84] Language by Microsoft now this is what
+[60:00.20] the definition has to say let me however
+[60:03.28] simplify the whole data here the whole
+[60:06.08] definition for you in simple
+[60:08.68] words Dax or data analysis queries are
+[60:12.28] nothing but these are a process where
+[60:14.80] you can create functions right or
+[60:17.40] basically you can create sub functions
+[60:20.00] using which you can generate certain
+[60:21.92] values say for example um you are
+[60:24.92] talking about um certain data set where
+[60:27.72] you have maybe categories with you now
+[60:31.24] um you want to count the number of
+[60:33.60] categories that are there so you can
+[60:35.16] create a separate function called as
+[60:36.72] count and you can add that as a measure
+[60:38.92] in your table values so that next time
+[60:42.32] when you look for the count you have
+[60:43.88] that as a column name with you now why
+[60:45.84] do you need this to start with even when
+[60:48.28] you have all this data filtering and all
+[60:50.40] the processing with you if you have
+[60:52.84] something like backs you can always on
+[60:55.32] the Fly add custom functions custom
+[60:58.00] measures to your data as we get into the
+[61:00.96] demo part we would understand how to go
+[61:03.48] ahead and set this in process but before
+[61:06.52] that let's quickly understand some of
+[61:08.32] the pointers that are here to start with
+[61:11.76] Dax is a functional query language so
+[61:14.28] you can basically create certain
+[61:16.08] functions and basically bring out
+[61:18.24] certain functions that you want to to
+[61:19.80] generate results it deals with
+[61:21.88] relational data yes obviously if you
+[61:24.40] talk about something like powerbi you're
+[61:26.44] mostly concerned with relational data
+[61:28.20] not mostly always concerned with
+[61:29.60] relational data and it helps you perform
+[61:32.16] aggregations this is something we'll see
+[61:34.52] as we get into the demo part next let us
+[61:38.04] go ahead and understand what are the
+[61:40.60] components of powerbi Dax so when you
+[61:44.32] talk about Dax in general Dax has three
+[61:47.84] components one is the syntax the other
+[61:49.56] one is the function and the third one is
+[61:51.56] the context now when you talk about a
+[61:54.44] function function is nothing but a
+[61:56.80] formula something like sum something
+[61:59.24] like count right so that is a function
+[62:01.80] syntax what is a syntax syntax is
+[62:04.32] nothing but grammar to implement
+[62:06.40] something right when you talk about
+[62:08.60] Syntax for English language grammar for
+[62:10.84] English language it is nothing but how
+[62:12.44] you form a sentence right in mathematics
+[62:15.68] syntax can be creating mathematical
+[62:18.52] functions mathematical formula that
+[62:20.60] would give you result just like in
+[62:22.48] programming we have syntax that is used
+[62:25.08] to basically convey a particular action
+[62:27.40] right similarly when you talk about
+[62:30.24] powerbi we are talking about
+[62:32.00] mathematical calculations here
+[62:33.96] aggregations here and for that You' be
+[62:35.96] needing some grammar some syntax and
+[62:38.28] this is what the component syntax of
+[62:40.40] powerbi gives you next you have context
+[62:44.72] now context is the ability to create
+[62:47.00] functions right so if you are dealing
+[62:50.04] with um basically adding or working with
+[62:54.48] row values this context would be called
+[62:57.24] as row context similarly if you're are
+[63:00.64] adding a filter either to a column or
+[63:04.00] even to a row or to the entire data then
+[63:06.96] it is called as a f filter context so
+[63:09.84] basically you have two contexts here
+[63:11.72] that is your filter context and your row
+[63:14.16] context similarly you have functions and
+[63:16.68] syntax in powerbi Dax let us now go
+[63:20.24] ahead and move into the powerbi console
+[63:22.48] and try and understand how Dax function
+[63:26.00] can be created or how do they work we
+[63:28.68] would be going ahead and creating quite
+[63:30.20] a lot of visualizations but that is for
+[63:32.04] the later bit for now let's try and
+[63:34.72] understand how powerbi Dax works and
+[63:36.88] what all can you do with powerbi Dax so
+[63:40.28] um to do that let's assume that we have
+[63:42.92] quite a few um measures here quite a few
+[63:46.48] stuff that we can work around with so
+[63:48.36] here's a column name called as
+[63:50.00] subcategory let's try and write a Dax
+[63:52.60] query for it or a function for it that
+[63:54.64] gives you the count of the subcategories
+[63:58.00] that we have with us so if we come here
+[63:59.64] in the data source You' get to know that
+[64:02.80] uh we would be having this category of
+[64:04.76] subd data somewhere right this is what
+[64:07.40] we have here let's assume that I want to
+[64:10.88] count all these categories now
+[64:13.44] fortunately for us we can keep a track
+[64:15.48] of it if I scroll down you would see
+[64:17.16] that there are 9994 rows so our count
+[64:20.32] should be around that right if we create
+[64:23.12] a account function for or account
+[64:24.88] measure for this this particular
+[64:26.36] subcategory so what I'm going to do now
+[64:28.28] is I'm going to test if the hypothesis
+[64:29.84] is correct if I create a count function
+[64:32.52] that basically gives me a count of the
+[64:34.96] total rows under a subcategory can we do
+[64:38.08] that yes how do we do that I come here I
+[64:41.80] right click and I say new
+[64:45.32] measure and what is the measure that I'm
+[64:47.44] going to create let's call
+[64:52.52] it
+[64:54.44] subcategory count
+[64:57.92] okay so as you can see um powerbi is
+[65:01.40] smart enough to give you suggestions
+[65:03.88] where it would suggest certain things to
+[65:06.36] you um basically operate with so that
+[65:09.24] your functioning becomes easier let's
+[65:10.92] see how does that work if I come here
+[65:13.80] okay and now I want to count it right so
+[65:16.76] all I have to do is I have to just type
+[65:19.12] c u maybe right so it will suggest the
+[65:22.60] possible functions if I had to do some I
+[65:25.04] would have typed
+[65:26.48] Su right it would have given me that so
+[65:29.32] again it is suggestive this interface
+[65:31.72] where if you put in certain values it
+[65:33.28] would suggest a solution for it now let
+[65:35.00] us go ahead and look for count and
+[65:36.76] select count there you go and it would
+[65:39.84] open the Syntax for you what it suggests
+[65:42.28] is enter the column name for which you
+[65:44.72] want to count right let's
+[65:47.32] say
+[65:49.64] subcategory you see so the orders table
+[65:52.08] has subcategory I'm just going to go
+[65:54.04] ahead and enter it here and I'm going to
+[65:55.68] hit the enter
+[65:57.12] button and once I do that the category
+[65:59.56] gets added here you see so if I come
+[66:01.64] here and drop it here you see it creates
+[66:04.68] a bar graph for me okay we'll understand
+[66:06.84] all these graphs and stuff but I want to
+[66:09.16] check whether the count is correct or
+[66:10.96] not so there's a visualization powerbi
+[66:14.80] called as card
+[66:17.28] visualization you see it gives you this
+[66:20.08] number suggesting that there are these
+[66:22.52] many subscribers and that is the not
+[66:24.68] subscribers sub category count and that
+[66:26.80] is the count that we saw here at the
+[66:28.12] bottom isn't it 9994 so it is giving us
+[66:31.96] right and exact values that meet our
+[66:34.24] requirements isn't it I'm going to
+[66:36.12] remove this for now and I'm going to
+[66:38.20] remove this from here as
+[66:39.88] well so the subcategory count thing I
+[66:42.92] want to delete it I do not want it here
+[66:44.92] I'm going to just delete it yes so this
+[66:48.04] is how your Dax basically works like
+[66:51.84] okay I hope that is clear to you people
+[66:56.32] now let us get into the final bit of
+[66:59.12] this course and let us try and
+[67:00.92] understand visual analytics visual
+[67:03.76] analytics is nothing but the ability to
+[67:05.84] use visualization to convey information
+[67:08.60] better so this is where we are going to
+[67:10.92] get into the details into the demo of
+[67:12.96] powerbi we will explore powerbi to the
+[67:15.76] core and at the same time we would
+[67:17.76] understand different visualizations that
+[67:19.44] are there with us so let us just go
+[67:21.44] ahead or go back to our powerbi console
+[67:26.00] and see how we can do all these things
+[67:29.36] so I've gone ahead and I've opened up
+[67:31.36] the powerb console let's try and
+[67:34.76] understand this console so I've actually
+[67:37.20] given you an explanation as to what this
+[67:39.68] interface does and how it looks like now
+[67:42.88] we are going to go ahead and drill down
+[67:44.52] into it from more of visual analytics
+[67:47.76] perspective but for us to understand
+[67:50.28] this better let us try and understand
+[67:52.72] the different visualizations
+[67:55.68] that we have with this or what are the
+[67:58.00] popular visualizations charts and graphs
+[68:01.68] that we know of so let me quickly
+[68:03.92] explain those to you okay let's do that
+[68:07.24] so talking about the types of
+[68:11.20] visuals or charts we can
+[68:16.36] create or we can think of now there are
+[68:19.20] plenty of those I mean the 40s 50s
+[68:22.12] hundreds of these so we'll discuss the
+[68:24.12] basic ones and the important ones that
+[68:26.52] are Centric to all the other charts so
+[68:28.68] the very first chart that should come to
+[68:31.12] your mind is bar graph or a bar chart
+[68:35.36] this is something that is very popularly
+[68:37.56] used as uh many statisticians this is
+[68:41.24] something that we learn in schools as
+[68:42.92] well right a bar graph is more of a
+[68:45.72] graph that gives the information about
+[68:48.64] two values and how do they work around
+[68:51.08] each other let me quickly Define this
+[68:52.72] for you to start with and then we can go
+[68:55.08] ahead and see this in the visualization
+[68:57.28] part as well so when you talk about bar
+[68:59.84] graphs it is the simplest and the most
+[69:01.92] straightforward way to compare various
+[69:04.24] categories in the classic graph it is
+[69:07.48] one of the most recognized
+[69:09.80] visualizations graphs are charts out
+[69:12.24] there when you talk about bar graphs
+[69:14.92] they are very popular or known for
+[69:18.80] visually presenting nearly any type of
+[69:20.96] data in particular we are talking about
+[69:23.88] if you want to compare multiple
+[69:26.16] variables this would be a good option to
+[69:28.32] do that and to give you an example let's
+[69:30.60] come here let's just go ahead and create
+[69:33.44] a sample visualization again guys I'll
+[69:35.44] be talking about quite a few pointers do
+[69:37.32] not engage yourself into this as in if
+[69:40.72] you feel that this interface is new but
+[69:43.08] we'll get into the details of it see
+[69:44.60] this is a bar graph right what you see
+[69:46.56] here so this is how you create a bar
+[69:48.92] graph how do we get into the details of
+[69:51.24] it this is something we'll discuss once
+[69:52.68] we are done with talking about all the
+[69:54.44] graphs that are there with this now let
+[69:56.60] us go back to the sheet and talk about
+[69:58.32] the next one then is the pie chart so
+[70:01.28] when you talk about the pie chart or py
+[70:02.72] graph it's not a graph it's a chart
+[70:04.40] basically pie chart is nothing but a
+[70:07.20] circular graph or a visualization that
+[70:09.76] you can think of and when you talk about
+[70:11.92] this this is how a pie chart looks like
+[70:15.00] but the fact that there's only one value
+[70:16.72] here um it would look a little different
+[70:18.96] so let's just put in categories here and
+[70:21.48] this is what a pie chart looks like so
+[70:23.44] basically you're talking about a
+[70:24.84] particular entity if divided into
+[70:27.36] multiple parts or into subcategories how
+[70:30.00] would that entity look like when you're
+[70:32.04] looking for this sort of information
+[70:33.92] this graph is called as your pie chart
+[70:36.72] and again if I remove this there is
+[70:39.84] third thing on our list which is a line
+[70:42.96] graph or a line
+[70:44.48] chart let's call it line graph line
+[70:47.88] graphs are something that are very
+[70:50.44] important when you talk about comparing
+[70:53.88] two variables in in real time or in time
+[70:58.04] format to give you an idea let's assume
+[71:01.32] that you have order date with you and
+[71:04.12] you want to calculate
+[71:05.92] profit and you create a line graph see
+[71:09.88] this is something that would give you
+[71:11.12] value for two variables in varying time
+[71:13.56] so that is what a line graph does for
+[71:16.08] you again I'm covering these things
+[71:18.68] quickly
+[71:20.16] because I want to discuss other pointers
+[71:23.56] as we get into the details of data
+[71:25.28] visualization but these are the basics
+[71:27.04] that should also be clear to you people
+[71:28.76] so I'm just walking you through those
+[71:30.52] pointers and then you have your
+[71:32.52] histograms now histograms are nothing
+[71:34.56] but continuous bar graphs that basically
+[71:37.64] show values for basically continuous
+[71:40.76] values that are broken down in intervals
+[71:43.16] like let's assume that you want to draw
+[71:45.92] a graph for values between 10 to 20
+[71:48.68] similarly 20 to 30 is another graph so
+[71:51.12] you'll be having a bar graph that is
+[71:53.48] connected to each other maybe 10 15
+[71:55.44] graphs or bars that are connected to
+[71:58.44] each other that kind of diagram is
+[71:59.92] called as a histogram so these are some
+[72:02.28] of the popular graphs that people use
+[72:05.08] the other one are your Geographic graphs
+[72:08.16] or geospatial graphs these are something
+[72:11.32] that I used to convey information based
+[72:13.20] on the location something that we'll see
+[72:15.84] as we get into the visual analytics part
+[72:18.32] which we are going to do right away so
+[72:20.36] let's just go back and now try and
+[72:22.76] understand how powerbi works and what
+[72:25.28] all can we do with powerbi so um all the
+[72:29.68] formalities all the basics that are
+[72:32.12] required have been covered now let us
+[72:34.40] try and understand how can we create
+[72:36.24] visualization using powerbi now all this
+[72:39.72] while we've talked about all the
+[72:41.64] concepts that are important for you to
+[72:43.72] get started with this demo let's just go
+[72:46.00] ahead and try and Implement those things
+[72:47.84] one by one in the previous demo where I
+[72:50.32] talked about the interface we've
+[72:52.76] actually gone ahead and see how we can
+[72:55.28] um basically uh import data and how the
+[72:58.20] data looks like as you can see here so
+[72:59.72] we are still with the Super Store data
+[73:01.48] set that was there with us now what we
+[73:04.12] are going to do here is we are going to
+[73:06.36] go ahead and continue our visualization
+[73:09.48] from there so there are certain things
+[73:11.36] about the interface that we might have
+[73:13.64] not discussed here yet that is how do we
+[73:17.12] create visualizations in powerbi now
+[73:20.04] there are plenty of options for you to
+[73:22.04] do that um one is you can either double
+[73:25.32] click on the column name that you have
+[73:28.04] the other thing is you can first select
+[73:29.80] a visualization like this and you can
+[73:32.36] put in values there or you can first
+[73:34.16] select values here and then choose a
+[73:36.04] visualization to meet your needs by
+[73:38.12] default powerbi will suggest certain
+[73:40.48] visualizations which it feels is best to
+[73:43.88] represent a particular set of
+[73:45.36] information so you can choose both the
+[73:47.52] options if you want to let's try and do
+[73:50.40] the visualization process and see how
+[73:52.96] does it go or how does it work for us
+[73:55.56] so to start with first let's try and
+[73:57.84] visualize certain data what I'm going to
+[73:59.56] do is I'm going to pick up order
+[74:01.92] date okay and while I do that I'm going
+[74:04.56] to go ahead and put in my
+[74:07.88] profits you see so it gives me profits
+[74:10.32] for n number of years that are there
+[74:12.84] with powerbi you can right away adjust
+[74:16.36] all the profit and stuff that you want
+[74:18.40] here itself all your graphs can be
+[74:20.48] resized to meet your needs and you can
+[74:23.00] actually go ahead and look into the
+[74:24.16] values the way you want
+[74:25.80] now what you see here is you see profits
+[74:29.00] for the following years right it's what
+[74:31.48] 13 14 15 16 right so it's fairly old
+[74:34.76] data uh but doesn't matter it is for the
+[74:37.04] demo purpose so we should not be putting
+[74:38.60] in too much thoughts into these things
+[74:40.40] how do we go about this um drilling down
+[74:43.00] process here I had given you an example
+[74:45.04] in the theory part where I mentioned
+[74:46.36] that you can drill down into your data
+[74:48.72] now let's assume that you want to take a
+[74:50.20] look at the
+[74:51.56] data by drilling down can we drill down
+[74:57.48] yes so let me click
+[75:02.64] here so we should have gotten values
+[75:06.20] yeah there you go so it has drilled down
+[75:08.04] now and you see the data is there as per
+[75:10.16] the quarters that we have right so it is
+[75:13.48] quarter 1 quarter 2 quarter 3 quarter 4
+[75:16.56] so the the data here is now divided into
+[75:18.68] quarters if I want if I go back it would
+[75:21.04] give me yearly data and if I click on
+[75:23.00] this it would give me quarter and yearly
+[75:25.64] data both the final one so it is merging
+[75:28.24] all the views that are there so you see
+[75:30.24] quarter 1 quarter 2 quarter 3 for 2013
+[75:33.00] similarly for 14 right and this is how
+[75:35.56] it looks like in powerbi you can
+[75:38.84] actually have marked labels as well if
+[75:40.88] you want to take a look at values you
+[75:42.40] can just hover on it and you'll get the
+[75:44.00] value if you click on this particular
+[75:46.04] thing um it will give you okay I
+[75:49.40] actually accidentally clicked somewhere
+[75:51.12] else so it has just changed the access
+[75:53.44] for the data something that I do not
+[75:55.28] want so I'm going to remove it from here
+[75:56.68] for now I'm going to just go back and
+[75:58.64] put in the data again so order date is
+[76:00.96] what I have and I have the profit here
+[76:03.36] with me isn't
+[76:03.98] [Music]
+[76:05.32] it now if I just come here and if I just
+[76:09.76] put this information in a corner let's
+[76:12.16] try and create some other visualizations
+[76:14.24] as well I'm going to go ahead and pick
+[76:16.00] this visualization and I'm going to show
+[76:18.12] you how powerbi functions so now I'm
+[76:21.64] going to just expand this information
+[76:23.68] whatever it is here want a bigger chart
+[76:25.84] for this and again let me just go ahead
+[76:28.16] and put
+[76:29.44] in
+[76:31.72] profit
+[76:33.32] and let's see if we can put in something
+[76:35.76] else what is the other thing that we can
+[76:37.36] put in let's put in
+[76:39.65] [Music]
+[76:42.12] sales you see for the total sales The
+[76:44.72] Profit that we had was limited and if I
+[76:47.20] click on the profit that I want to
+[76:50.12] see it's represented by this if I click
+[76:53.60] here this is what I'll get but this is
+[76:55.88] not one of the best um visualizations
+[76:58.44] that I would want let's just come here
+[77:00.20] and put an order date
+[77:02.24] here
+[77:03.76] now if I click on this particular thing
+[77:06.32] it would highlight that particular graph
+[77:08.80] in the other visualization that I have
+[77:11.12] so you can do that as well right let's
+[77:13.68] assume that you want to find out profit
+[77:15.52] based on the subcategory that you have
+[77:17.80] so I'm going to remove the order date
+[77:19.48] for now and I'm going to come ahead and
+[77:21.52] pick my subcategory option here I can
+[77:25.00] drag and drop it and it will still
+[77:26.68] represent the same information to me now
+[77:29.36] let's just go ahead and click on this
+[77:30.68] particular value you see so what this
+[77:33.28] suggests is
+[77:35.16] copers had this much amount of profit
+[77:38.44] and for every year this is the amount so
+[77:40.96] there was a rise in copier profit and it
+[77:43.80] was a fairly good amount of Rise if I
+[77:45.80] come here and if I click on it the
+[77:47.68] profit is
+[77:49.40] 49543 right if I come here it is
+[77:53.20] 61618 this year it is 81726 and this
+[77:56.48] particular year it is
+[77:58.12] 93507 so basically if I compare it with
+[78:00.84] this value The Profit has almost doubled
+[78:05.12] right so um this is how you can actually
+[78:07.88] go ahead and track your data in numerous
+[78:10.28] Ways by using powerbi again let's assume
+[78:13.40] that you want to play around with the
+[78:15.16] colors that you have you can do that in
+[78:17.64] the access you can again play around
+[78:19.56] with a lot of stuff we'll drill down
+[78:21.24] further but for now let's just come here
+[78:24.40] and and let's play with the data colors
+[78:27.44] can I change colors let's assume that I
+[78:31.00] want to have a different color for my
+[78:33.04] graphs if I select this and I
+[78:37.88] just change the color here let's say I
+[78:40.76] want a pink so all of this will change
+[78:44.48] or have a different color and you see
+[78:46.56] all of it is reflecting here apart from
+[78:50.12] that if you want to do other things you
+[78:52.04] can actually go ahead and play around
+[78:53.36] with it do you want borders here do you
+[78:55.40] want backgrounds do you want to add
+[78:57.12] images in background you can do that why
+[78:59.44] do we need to add images in the
+[79:01.00] background what purpose does that serve
+[79:03.36] for me let's assume that I use images in
+[79:06.36] the background in that case the benefit
+[79:09.04] that I get out of adding those images in
+[79:11.04] the background is um let's assume that
+[79:13.68] I'm putting forth a report for a
+[79:15.12] particular company let's assume that I
+[79:17.04] want to have a logo there of that
+[79:18.88] company I can do that let's assume I'm
+[79:20.76] creating an IPL dashboard so in that if
+[79:22.96] I add a background of IPL trophy or
+[79:25.28] maybe IPL teams together and I make it
+[79:28.04] little less uh I reduce its transparency
+[79:30.68] in that case um whatever is on top that
+[79:33.56] would get highlighted yet having a plain
+[79:35.48] background about IPL in the back so you
+[79:38.08] can actually go ahead and do all these
+[79:40.00] things here right so this is how you go
+[79:42.16] ahead and create visualizations in
+[79:44.12] powerbi let us come ahead or in the next
+[79:47.04] page rather and create other kinds of
+[79:49.08] visualizations that we can think of so
+[79:51.12] let me just go ahead and use this this
+[79:54.12] is a geographic graph and since it is a
+[79:56.80] geographic graph I'm going to go ahead
+[79:58.52] and put in profit
+[79:59.93] [Music]
+[80:01.24] here so this will take time to load
+[80:03.76] because it's a geographic graph at times
+[80:05.68] it consumes more time than expected and
+[80:09.00] let's just talk about profits
+[80:12.60] statewise are we getting any information
+[80:15.64] here yeah there you go so there's some
+[80:18.36] information
+[80:21.16] here this is not again the best of
+[80:23.52] visualizations that you could have used
+[80:25.88] let's see if we can reflect any
+[80:27.96] information here right uh for that I'm
+[80:30.52] going to go ahead and put in
+[80:33.40] my
+[80:37.72] sales okay again not the best of visuals
+[80:40.84] so let's just uncheck all of this
+[80:42.92] information that we have with
+[80:45.16] this right and I'm going to just go
+[80:47.56] ahead and remove this for now the reason
+[80:49.80] I'm doing that is I'll tell
+[80:52.48] you let's assume you put in state States
+[80:54.96] here okay you see it is giving you
+[80:57.92] information about different states that
+[80:59.44] are
+[81:00.48] there so this these are the different
+[81:03.04] states now let us come here and add
+[81:06.72] certain values if I add states to the
+[81:10.08] legend it will give different colors to
+[81:12.84] it if I add
+[81:14.92] it
+[81:16.48] latitude again there should not be any
+[81:19.24] change here but instead let's just go
+[81:21.24] ahead and add profit now let's see if we
+[81:24.40] get any profit here we
+[81:26.04] won't yeah it's there so basically you
+[81:29.12] see New York is the one that had good
+[81:33.32] amount of chunk of profit right
+[81:35.40] similarly here California also has good
+[81:38.16] amount of profit what this suggests is
+[81:40.72] two of the major states in the country
+[81:44.12] had a surplus amount of profit and it is
+[81:46.68] understandable these are the bigger
+[81:48.56] States or the more industrious states of
+[81:51.96] the country so basically again you can
+[81:54.08] create visualizations depending upon how
+[81:57.24] do you want to deal with it right let's
+[82:00.16] assume that I come back to my previous
+[82:03.76] table or sheet and here I put in this
+[82:06.96] thing this is a card value so if I click
+[82:09.56] on the card value and if I put in my
+[82:11.84] profit here it will give me profit right
+[82:15.20] so this is the profit we had in total
+[82:17.96] okay let's assume that I want to filter
+[82:20.56] it can I do that
+[82:23.20] yes so
+[82:25.16] so what are the filter conditions that
+[82:27.60] we can have here okay we cannot apply
+[82:30.48] filter condition to this maybe to this
+[82:32.32] we can uh let's try and filter it
+[82:38.72] out uh so whatever is the profit which
+[82:41.80] is let's assume the maximum profit here
+[82:44.80] right now is 4452 right so let's put
+[82:49.48] forth details saying that whatever is
+[82:51.24] the profit that is below
+[82:54.16] [Music]
+[83:07.65] [Music]
+[83:11.04] 30,000 okay not a great filter we'll add
+[83:13.48] filters later but I hope the idea or the
+[83:15.76] just is clear to you and when you talk
+[83:17.80] about a card image it will give you
+[83:19.60] values based on the
+[83:21.92] other visualizations that you have so
+[83:24.60] you can always have highlighters added
+[83:27.04] here or there and this is how the
+[83:29.00] visualizations look like when you create
+[83:30.96] visualizations using powerbi so we've
+[83:33.72] seen a line chart before we've seen a
+[83:36.36] pie chart now and we've seen a bar graph
+[83:38.56] as well so this is how you actually go
+[83:40.24] ahead and create visualizations and
+[83:42.08] there are plenty of options here for you
+[83:44.36] to choose from if you want Global
+[83:46.48] Information you can come here and just
+[83:48.84] click on this globe and you can have
+[83:50.76] information represented globally as well
+[83:53.08] if you want to so if you if you put
+[83:54.68] forth the state here you'll have Global
+[83:57.64] representation of the information that
+[83:59.12] we just did so you can use these you can
+[84:01.44] use these if you want so it depends upon
+[84:03.92] your usage what are you trying to use
+[84:05.64] and how are you trying to play around
+[84:06.92] with the data there are plenty of things
+[84:09.68] that you can look into right but when
+[84:12.08] you create uh a report right so you've
+[84:14.80] created a report here you can publish it
+[84:17.56] let's try and do that let's save this
+[84:19.64] report as demo
+[84:22.56] report or GLA
+[84:25.00] let's just say save now it would ask me
+[84:27.32] do you want to open it or where do you
+[84:30.16] want to save it to start with save it in
+[84:33.20] my workspace for this you would be
+[84:35.04] needing your email ID so make sure you
+[84:37.00] have one so publishing it to powerbi so
+[84:39.56] it would put it on powerbi server when
+[84:41.52] it gets published so this is where
+[84:43.16] you'll be needing internet connections
+[84:44.60] as well so when you click on it it
+[84:46.40] should open that report for
+[84:48.80] you there you go this is the report that
+[84:52.64] we created now now since it is published
+[84:55.80] you cannot just come here and do
+[84:57.76] whatever changes you want you can
+[84:59.36] interact with it but not go ahead and
+[85:00.92] make changes here now this is a report
+[85:03.44] but I want to publish it to a dashboard
+[85:07.24] so in a dashboard you are going to go
+[85:09.40] ahead and put in certain visuals that
+[85:11.36] you have right so we discussed what
+[85:14.08] dashboards are dashboards are nothing
+[85:16.04] but a single canvas where you can take
+[85:18.08] in data from different reports as well
+[85:20.28] so to give you a context you see there
+[85:23.04] are there would be quite a few reports
+[85:24.88] that I have created till time so let me
+[85:27.64] just see if there are reports here in my
+[85:33.36] workspace there you go so these are some
+[85:35.80] older uh dashboards that are there with
+[85:38.72] me and these are multiple reports that I
+[85:41.12] have with me so what I'm going to do now
+[85:42.96] is I'm going to try and create a
+[85:44.32] dashboard where I'll pick in some random
+[85:47.24] reports or yeah some random reports and
+[85:49.68] from those reports I'll pick up some
+[85:51.08] random visualizations that I would add
+[85:53.88] to one canvas to One dashboard so let's
+[85:56.80] pick one demo report GL is the first one
+[85:59.08] that we've created right today so let's
+[86:01.56] just click on this and let's say I want
+[86:03.32] this graph so I'm going to select
+[86:08.28] it and I'm going to
+[86:11.64] say pin it to a dashboard what is the
+[86:15.60] dashboard I'll just create a new one
+[86:17.28] let's call
+[86:18.64] it
+[86:20.97] [Music]
+[86:22.24] GLA powerbi
+[86:25.44] and I'm going to say pin it
+[86:27.76] here do you want to go to the Dashboard
+[86:30.24] please do
+[86:31.32] that you see there's this visualization
+[86:35.92] and again now you cannot act on it okay
+[86:38.56] you cannot make changes to it but you
+[86:40.28] can go back to the report from where it
+[86:42.04] was created how you click here and it
+[86:44.80] will take you back to the report right
+[86:46.96] so I'm going to go back again to my
+[86:49.04] workspace and here I'm going to go to
+[86:50.88] the report this time I'm going to pick
+[86:52.20] up a random report like let's say report
+[86:58.44] one and I'm going to go ahead and pick
+[87:00.52] up this py
+[87:02.20] chart I'm going to say pin where to the
+[87:05.16] dashboard which one GLA powerbi so if I
+[87:08.88] go it says do you want to create a phone
+[87:11.48] view if you create a phone view you can
+[87:13.28] send these on your mobile app and you
+[87:15.92] can view it there as well okay so this
+[87:18.44] is how you do it the icon went away
+[87:20.76] though so I'm going to go back to the
+[87:22.16] reports in the workspace I'm going to go
+[87:23.92] to the dashboards that I have and gla
+[87:26.24] powerb is what I'm going to open you see
+[87:28.36] I picked up another visual from another
+[87:30.28] report and now in this report we have
+[87:32.52] two different visuals with this right so
+[87:35.64] this is how you actually go ahead and
+[87:37.04] create reports in powerbi or dashboards
+[87:40.36] rather not reports these are dashboards
+[87:42.20] so this is how you create dashboards in
+[87:44.32] powerbi right and in powerbi you can
+[87:47.92] also go ahead and ask questions to the
+[87:50.04] data that you have Okay so let's assume
+[87:52.76] that I'm in Q&A and I'm going to check
+[87:54.92] if I come back here you see this is
+[87:57.40] profit that we have so I'm going to ask
+[87:59.40] a
+[88:00.40] question
+[88:02.50] [Music]
+[88:04.04] 2014 okay so it's opening table for me I
+[88:06.84] don't want that I just want the
+[88:10.13] [Music]
+[88:14.68] profit it says blank that is not
+[88:17.28] possible let's just go back here and
+[88:20.20] check my profit in
+[88:22.08] 2014 was 6 1618 so let's just say
+[88:27.36] [Music]
+[88:34.72] profit okay this is irritating but let's
+[88:37.28] try
+[88:43.36] this
+[88:46.28] 24 it's
+[88:51.32] 62.8k there you go so it's near about
+[88:54.16] that I'm not sure why is it giving a
+[88:55.52] different value but it's near about that
+[88:57.20] right so this is how you can ask
+[88:58.96] questions to your powerbi data that you
+[89:01.00] have and you can do numerous things with
+[89:03.12] it similarly if I go back to the Tableau
+[89:05.80] interface I told you that we can
+[89:07.12] visualize data here as well in Tableau 2
+[89:09.64] the interface is fairly similar right
+[89:12.20] you can just double click on a
+[89:13.88] particular value and You' get
+[89:15.80] information about that say for example I
+[89:17.92] just double clicked on order data so yes
+[89:20.64] we have the order date now and now I'm
+[89:22.72] going to go ahead
+[89:25.31] [Music]
+[89:29.52] and close this one
+[89:32.48] up remove okay next what I'm going to do
+[89:35.48] is I'm going to go ahead and pick up
+[89:38.12] sales one of the easiest data to deal
+[89:40.68] with right
+[89:43.40] sales so it will give
+[89:46.76] me sales based on the
+[89:51.36] year you see and by default it suggest a
+[89:54.40] line graph suggesting that you would be
+[89:56.52] calculating sales for a particular year
+[90:00.56] and since it is values that are changing
+[90:02.92] in time you can have sales for multiple
+[90:06.32] years represented by a line graph a Tabo
+[90:09.52] also suggest certain things on the fly
+[90:12.36] if you have one visualization like this
+[90:14.44] you can actually go ahead and put it on
+[90:15.84] a dashboard and for that you have to
+[90:17.80] just click here and that sheet where you
+[90:20.52] created all the information that would
+[90:22.20] be available here in T you have options
+[90:25.40] of tiled and floating visuals as well so
+[90:28.24] if I want to add it here if I choose
+[90:30.76] floating I can just go ahead and add it
+[90:33.76] here and it floats around
+[90:37.64] see let's assume that I make it
+[90:40.96] tiled this one will move but if I add a
+[90:44.20] new
+[90:46.12] sheet it won't move around in this case
+[90:48.68] so let me remove this let me show
+[90:51.72] you you see it's not possible for you to
+[90:54.40] move it just consume the whole Space you
+[90:57.12] can maybe minimize it but not move it
+[90:58.84] around right so this is how table works
+[91:01.20] for you right but we are mostly focusing
+[91:03.64] on powerbi right now so let's just close
+[91:06.16] the Tableau thing and come to powerbi so
+[91:08.32] this is how you create different
+[91:09.84] visualizations in powerbi and these are
+[91:12.36] the different things that you can do
+[91:13.76] with powerbi at stretch at length I hope
+[91:17.68] that you've understood all these details
+[91:19.56] as in how powerbi Works what all can you
+[91:21.60] do with it what are the types of
+[91:23.16] visualizations that you can have in
+[91:24.64] powerbi and how to play around with all
+[91:26.96] the data that you have so you can keep
+[91:29.44] experimenting and keep trying keep
+[91:31.60] creating more visualizations there are a
+[91:33.56] lot of things that you can work around
+[91:34.88] in powerbi this video walks you through
+[91:38.40] creating impactful data visualizations
+[91:41.08] using TBL and powerbi covering essential
+[91:44.64] tips for Designing clear interactive and
+[91:48.12] Visually engaging dashboards learn how
+[91:51.12] to make data driven insights accessible
+[91:54.40] and compelling using the unique
+[91:56.44] strengths of each tool to tell stories
+[91:59.36] that leave a lasting impression if you
+[92:02.20] want more tips on data visualization and
+[92:05.16] analytics subscribe to our channel for
+[92:08.00] more videos

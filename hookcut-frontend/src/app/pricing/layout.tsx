@@ -2,22 +2,30 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Pricing — Start Free, Upgrade Anytime",
+  title: "HookCut Pricing — Free AI YouTube Shorts Maker | Pro Plans from $9/mo",
   description:
-    "Choose your HookCut plan. Start with 120 free minutes. Affordable Lite and Pro plans for creators. AI-powered YouTube hook detection and Shorts generation.",
+    "Start making YouTube Shorts for free with 120 AI minutes/month. Pro plan: 300 min, watermark-free, priority processing — $9/mo or ₹499/mo. Pay-as-you-go available. No credit card to start.",
+  keywords: [
+    "youtube shorts maker pricing",
+    "AI video clipping tool free",
+    "youtube shorts generator price",
+    "hookcut pricing",
+    "free youtube shorts tool",
+  ],
   openGraph: {
-    title: "Pricing — Start Free, Upgrade Anytime",
+    title: "HookCut Pricing — Free YouTube Shorts Maker | Plans from $9/mo",
     description:
-      "Choose your HookCut plan. Start with 120 free minutes. AI-powered YouTube Shorts generation.",
+      "120 free AI minutes/month. Pro: 300 min, watermark-free, $9/mo. No credit card to start.",
     url: "https://hookcut.ai/pricing",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing — Start Free, Upgrade Anytime",
+    title: "HookCut Pricing — Free YouTube Shorts Maker",
     description:
-      "Choose your HookCut plan. Start with 120 free minutes. AI-powered YouTube Shorts generation.",
+      "120 free AI minutes/month. Pro: 300 min, watermark-free, $9/mo. No credit card to start.",
   },
+  alternates: { canonical: "https://hookcut.ai/pricing" },
 };
 
 export default function PricingLayout({

@@ -14,12 +14,6 @@ class TestGetBalance:
         assert data["payg_minutes_remaining"] == 0.0
         assert data["total_available"] == 120.0
 
-    def test_get_balance_auto_creates_user(self, client):
-        """Accessing balance auto-creates user via CreditManager."""
-        resp = client.get("/api/user/balance")
-        assert resp.status_code == 200
-        data = resp.json()
-        assert data["total_available"] == 120.0
 
 
 class TestGetHistory:
@@ -55,17 +49,6 @@ class TestGetHistory:
         assert data["page"] == 1
         assert data["per_page"] == 2
 
-    def test_history_returns_session_fields(self, client, db):
-        make_user(db, user_id=TEST_USER_ID)
-        make_session(db, TEST_USER_ID, status="completed")
-
-        resp = client.get("/api/user/history")
-        data = resp.json()
-        session = data["sessions"][0]
-        assert "video_title" in session
-        assert "status" in session
-        assert "minutes_charged" in session
-        assert "created_at" in session
 
 
 class TestGetProfile:

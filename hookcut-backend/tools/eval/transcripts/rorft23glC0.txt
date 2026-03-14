@@ -1,0 +1,421 @@
+[0:01.36] [Music]
+[0:06.08] hello everyone welcome back the most
+[0:09.48] awaited topic of this chapter The Entity
+[0:12.76] relationship diagram which is also
+[0:15.12] called as simply ER diagram let's step
+[0:18.68] into the topics of the day what we are
+[0:20.96] going to learn in this presentation we
+[0:23.08] are going to understand the entity
+[0:25.00] relationship diagram which is the ER
+[0:27.04] diagram and also we are going to
+[0:29.48] understand this ER diagram with the help
+[0:31.56] of the basic structure and components of
+[0:34.04] the ER model while waiting let's step
+[0:37.20] into the topic of the day the ER diagram
+[0:40.56] as I mentioned ER diagram means it is
+[0:43.04] the entity relationship diagram we know
+[0:45.80] what is an entity and we know how
+[0:47.68] relationship is also formed among
+[0:49.64] entities so this diagram is going to
+[0:52.32] basically involve the entities and the
+[0:54.52] relationship among the entities and we
+[0:57.16] also have seen the basic components of
+[0:59.08] the ER model which which are the entity
+[1:00.84] sets the attributes and the relationship
+[1:03.76] sets let's start with the basics of this
+[1:06.00] ER diagram now basically this ER diagram
+[1:09.20] is used to express the overall logical
+[1:12.04] structure of a database we have already
+[1:14.40] seen about the ER model which is mainly
+[1:16.84] used for expressing the overall logical
+[1:19.12] structure of a database and we know ER
+[1:21.76] model is a high level data model and
+[1:24.28] basically this ER diagram is a graphical
+[1:27.64] representation so it is depicted or
+[1:30.24] portrayed as diagrams so er model when
+[1:33.36] it is portrayed as diagrams they are
+[1:35.56] represented as ER diagrams and that is
+[1:38.60] why it is mentioned that this is a
+[1:40.36] graphical representation and as I
+[1:42.56] mentioned a picture is a worth of
+[1:44.72] thousand words so it's easy to
+[1:47.20] understand things with the picture and
+[1:49.04] that to when it involves a lot of
+[1:50.88] complexities instead of having a written
+[1:53.48] or a verbal communication if things are
+[1:56.24] represented with the help of diagrams it
+[1:58.48] has more advantages and hence these are
+[2:02.04] simple and clear while looking at the
+[2:04.32] diagram itself we will be able to
+[2:06.12] understand how many relations are there
+[2:08.24] I mean how many tables are there what
+[2:10.32] are the attributes in the table how
+[2:12.28] relationships are formed among the
+[2:14.00] entities which is a primary key
+[2:15.80] attribute is there any weak relationship
+[2:18.44] Etc and because of its Simplicity and
+[2:21.48] the very clear nature of depicting the
+[2:23.44] things it has a widespread usage in the
+[2:26.60] database deployment areas we are done
+[2:29.60] with the basics of ER diagram let's step
+[2:32.12] into the notations that are used in the
+[2:34.32] ER diagram when we talk about entities
+[2:37.24] The Entity set is actually represented
+[2:39.40] using rectangle and if it is a single
+[2:41.80] rectangle it means it is a strong entity
+[2:44.56] set and when things are represented with
+[2:46.80] double rectangle then it is a weak
+[2:48.80] entity set don't worry about this what
+[2:51.12] is a strong entity set and what is a
+[2:52.96] weak entity set now anyway I'm going to
+[2:55.36] show you some examples shortly that time
+[2:57.84] I will explain you what is strong entity
+[3:00.00] set and what is weak entity set with
+[3:02.00] some examples so this is about the
+[3:04.40] entity set and what about the
+[3:06.40] relationship when we have strong entity
+[3:09.08] set and weak entity set we also do have
+[3:12.32] strong relationship and weak
+[3:14.16] relationship when relationship is
+[3:16.40] expressed with a single Diamond it is
+[3:18.76] strong relationship if it is depicted
+[3:21.28] with two diamonds or a Double Diamond it
+[3:24.12] is a weak relationship anyway when we
+[3:27.20] understand strong entity and weak entity
+[3:29.56] that time I will explain you what is
+[3:31.44] strong relationship and what is weak
+[3:33.20] relationship just recollect what are the
+[3:35.32] basic components of ER diagram or ER
+[3:37.76] model The Entity sets the relationship
+[3:41.04] what is missing attributes and these
+[3:43.72] attributes in ER diagram are represented
+[3:46.16] like this we have already seen about
+[3:47.92] this in the previous presentation single
+[3:49.96] oval it is simple attribute or single
+[3:52.20] valued attribute and composite attribute
+[3:54.68] is represented like this multivalued
+[3:57.04] attribute is represented with double
+[3:58.84] oval and derived attribute is expressed
+[4:01.40] with dotted oval and remember we also
+[4:04.12] have null values in the attribute level
+[4:06.88] so these are the notations that are used
+[4:09.00] in the ER diagram in order to understand
+[4:11.96] things clearly let's see few examples
+[4:14.76] and things will be easy for you to
+[4:16.64] understand let me show you a part of the
+[4:18.96] ER diagram here it is this instructor is
+[4:23.04] an entity student is an entity
+[4:26.00] instructor and student have advice is
+[4:28.44] relationship so in instructor advises
+[4:31.08] student and what are the attributes of
+[4:33.00] instructor relation the instructor ID
+[4:35.44] name and salary what are the attributes
+[4:38.04] of student entity student ID name and
+[4:41.44] credits earned so this is how actually
+[4:44.84] an ER diagram is represented now when
+[4:47.92] you look into this it is a simple
+[4:50.12] rectangle and it is a simple diamond
+[4:52.04] symbol so it means this is a strong
+[4:54.36] entity and this is also a strong entity
+[4:57.20] and if we represent with double I mean
+[4:59.24] double rectangle or Double Diamond then
+[5:02.08] it is a weak entity or weak relationship
+[5:04.96] let's see that shortly there are some
+[5:07.32] conventions that represents ER diagram
+[5:09.68] like this but in this lecture series I'm
+[5:12.08] going to represent the same kind of ER
+[5:14.00] diagram like this can you see here I'm
+[5:16.44] going to represent entity and attributes
+[5:18.68] like this so the first half is the
+[5:20.96] instructor which is the name of the
+[5:22.72] entity set like here and the attributes
+[5:25.40] are represented like this ID name and
+[5:27.60] salary which are the attributes ID name
+[5:29.92] salary here and the same advises
+[5:32.20] relationship here and the equivalent for
+[5:34.56] this entity student is represented like
+[5:36.84] this student with the attributes ID name
+[5:39.08] and credits can you see here ID name and
+[5:41.44] credits and again this is a strong
+[5:43.60] relationship only because it is
+[5:45.56] represented with single Diamond if it is
+[5:48.04] Double Diamond then it is a weak
+[5:49.60] relationship now you may be wondering
+[5:51.56] what is a strong relationship and what
+[5:53.20] is a weak relationship let me explain
+[5:55.56] that now let me take the same a diagram
+[5:58.20] and go to a new page in order to depict
+[6:00.56] this so let me focus on only this part
+[6:04.04] now when you look into this this is an
+[6:06.20] ER diagram that has only two relations
+[6:08.80] or two tables or two entities to be
+[6:11.16] precise instructor entity and student
+[6:14.08] entity and what is the relationship it
+[6:16.64] is advises relationship I mean
+[6:19.96] instructor advises student I'm going to
+[6:23.12] bring in something from the previous
+[6:25.44] lecture can you recollect this we have
+[6:28.28] seen the basic structure and components
+[6:30.76] where the relationship among the
+[6:32.44] entities are depicted if you are
+[6:35.12] directly watching this lecture I request
+[6:37.08] you to watch my previous lecture I mean
+[6:39.28] part two of the ER model in order to
+[6:41.76] understand things better this is the
+[6:43.72] entity set instructor and this is the
+[6:45.56] entity set student and we have advises
+[6:48.20] relationship and the same is here the
+[6:50.72] instructor entity set student entity set
+[6:53.20] and advises relationship now what is
+[6:55.84] additional here the date attribute that
+[6:58.92] gives more information about the
+[7:00.72] relationship when the relationship is
+[7:02.80] formed I mean on what date this
+[7:05.28] instructor is assigned as the adviser
+[7:07.64] for this particular student let me take
+[7:10.56] John John is appointed as the instructor
+[7:13.68] for Jennifer on third of May 2024 now
+[7:17.68] there is an attribute here and what
+[7:19.80] attribute is this it's a date attribute
+[7:22.32] that gives more information about this
+[7:24.08] relationship isn't it how this is
+[7:26.52] represented in ER diagram we are going
+[7:28.84] to use dotted lines with the attribute
+[7:32.08] date in order to tell the relationship
+[7:34.56] attribute what is this relationship and
+[7:37.48] what attribute it is date attribute that
+[7:40.36] tells or gives more information about
+[7:42.72] the association when the instructor is
+[7:45.96] assigned as the adviser to the student
+[7:48.84] so what is this diagram this is the
+[7:51.32] attribute attached to the relationship
+[7:53.68] set what is the relationship set the
+[7:56.60] advises is the relationship set that has
+[7:59.04] an attribute that is attached to this
+[8:01.76] relationship set isn't it so we use
+[8:04.16] dotted lines in order to represent this
+[8:06.84] remember what is a dotted line it is an
+[8:09.20] attribute attached to a relationship set
+[8:12.32] what is this it's a line line means it
+[8:16.04] is used to connect the entity with the
+[8:17.96] relationship set or the relationship set
+[8:20.76] with the entity so two entities are
+[8:23.60] associated with the help of relationship
+[8:25.56] set and lines are used to connect the
+[8:27.96] entity with the relationship set so
+[8:30.36] remember two types of lines are here the
+[8:32.68] dotted line and the straight line so
+[8:35.04] dotted lines are to connect the
+[8:37.20] attribute with the relationship set so
+[8:39.56] attribute attached to the relationship
+[8:41.44] set is represented using dotted line and
+[8:44.04] straight line is used to connect the
+[8:46.04] entity or entity set with the
+[8:47.92] relationship let's see another example
+[8:50.48] and what we are going to see now the
+[8:52.96] strong entity set if you see the
+[8:55.16] relationship is with single Diamond so
+[8:57.32] obviously this is a strong relationship
+[8:59.44] and at the same time if you see here
+[9:01.56] this is also single rectangle only so
+[9:04.16] this is a strong entity set and this is
+[9:06.28] also strong entity set now we need to
+[9:08.88] understand what is a strong entity set
+[9:11.32] when an entity has a primary key
+[9:13.56] attribute then it is a strong entity set
+[9:16.72] because this entity set is not depending
+[9:19.44] on any other entity because it has a
+[9:23.08] primary key attribute which helps in
+[9:25.16] identifying the records uniquely
+[9:27.40] similarly coming to this entity set
+[9:29.64] student we also have a primary key
+[9:31.84] attribute here so the relationship that
+[9:34.44] is formed between two strong entity set
+[9:37.16] is going to be a strong relationship
+[9:39.28] only and that is why this relationship
+[9:41.52] is a strong relationship I hope now you
+[9:43.96] are able to understand what is a strong
+[9:45.96] entity set the entities in the strong
+[9:48.60] entity set are not dependent on other
+[9:50.84] entity also it will have a primary key
+[9:54.04] attribute let's now see the weak entity
+[9:56.76] set here is an example for weak entity
+[10:00.00] can you see here it is represented using
+[10:02.12] Double Diamond so when it is represented
+[10:04.52] with Double Diamond it is a weak
+[10:07.00] relationship and also what are new
+[10:09.20] things here this is a strong entity set
+[10:12.12] but this is a weak entity set the reason
+[10:14.64] is there is no primary key attribute and
+[10:17.36] the attributes are underlined with
+[10:19.20] dashed lines so from this it's clear
+[10:21.76] that there is no primary key attribute
+[10:24.00] like this attribute in this course
+[10:25.80] relation however in section there is no
+[10:28.24] primary key attribute since there is no
+[10:30.48] primary key attribute this is a weak
+[10:32.52] entity set so the relationship formed
+[10:35.00] between a strong entity set and this
+[10:37.28] weak entity set is a weak
+[10:39.68] relationship also we have double light
+[10:42.40] what does it mean this is dealing with
+[10:44.48] the participation whether it is a total
+[10:46.88] participation or an optional
+[10:48.88] participation or partial participation
+[10:51.72] don't worry about this now we have an
+[10:53.64] exclusive lecture that deals with
+[10:55.48] participation so for now just understand
+[10:58.04] double lines deals with with total
+[11:00.04] participation the entities present in
+[11:02.24] the entity set must compulsorily
+[11:04.36] participate in at least one entity in
+[11:07.32] the relationship anyway I will explain
+[11:09.92] more about this later also we have an
+[11:12.84] arrowed line here there are some
+[11:14.80] conventions that uses arrowed line to
+[11:17.00] represent the cardinality ratio or the
+[11:19.48] cardinality number but in this lecture
+[11:21.76] series we are going to represent
+[11:23.28] something different because here the
+[11:25.44] exact numbers cannot be specified anyway
+[11:27.84] in the coming presentation you are going
+[11:29.40] to understand about the mapping
+[11:30.76] cardinalities in diagram for now just
+[11:33.56] understand this is a weak relationship
+[11:35.92] This Is the participation related and
+[11:38.08] this is cardinality related so this
+[11:40.72] example is for a weak entity set because
+[11:44.16] this entity set has no primary key
+[11:46.08] attribute also the attributes are
+[11:48.64] dependent on a strong entity set in
+[11:50.92] order to ensure its existence when we
+[11:54.20] see an example for ER diagram we will be
+[11:56.48] able to know things better since we are
+[11:58.84] going to deal about the participation in
+[12:00.84] the coming presentation I'm going to
+[12:02.96] ignore this for now what about this this
+[12:05.56] is actually the cardinality ratio isn't
+[12:07.80] it so here instructor and student are
+[12:11.00] having a relationship instructor advises
+[12:13.80] student and what is the cardinality
+[12:16.12] ratio this is represented with some
+[12:18.32] numbers here so no worries this is the
+[12:21.24] way to represent the cardinality limits
+[12:23.52] in the next presentation I will tell you
+[12:25.28] the numbers here and how it differs when
+[12:27.60] we give numbers here and here
+[12:30.12] so this is how cardinality limits are
+[12:32.32] represented in the ER diagram let's see
+[12:35.40] the next example here is an example of
+[12:38.40] an instructor entity this instructor
+[12:41.36] entity has ID name address phone number
+[12:46.32] date of birth age and salary as the
+[12:49.24] attributes I request you to pause this
+[12:51.40] video for a while and compare this with
+[12:54.52] the type of attribute that we have seen
+[12:56.64] in the recent lecture
+[12:59.68] I hope you are done from this we can say
+[13:03.00] this is a primary key attribute this is
+[13:05.48] a composite attribute right so name has
+[13:08.20] first name middle name and last name
+[13:10.56] what about the attribute address this is
+[13:12.80] a complex attribute because it has
+[13:15.16] Street and Street has Street number
+[13:17.56] street name and apartment number and
+[13:20.32] what are the other attributes in the
+[13:21.64] street it's city state and zip zip or
+[13:25.00] postal code so remember this is a
+[13:27.24] composite attribute under another
+[13:29.16] composite attribute and what about this
+[13:31.84] phone number we have seen this phone
+[13:33.68] number is a multivalued attribute so
+[13:35.72] multivalued attributes are represented
+[13:37.72] using this flow brackets and what about
+[13:40.64] date of birth this is a single valued
+[13:43.08] attribute this is simply mentioned just
+[13:44.92] like that single valued attribute or
+[13:47.16] even simple attributes what about this
+[13:50.28] age this age is a derived attribute from
+[13:53.20] which attribute this age can be derived
+[13:55.36] from this date of birth attribute and
+[13:57.64] that is why age is represented with
+[13:59.88] parenthesis meaning it is a derived
+[14:02.64] attribute what about salary this is a
+[14:05.20] simple attribute because this is atomic
+[14:07.28] in nature which cannot be decomposed
+[14:09.68] into further components or further
+[14:11.56] values so salary is a simple attribute
+[14:14.60] which is just like that represented so
+[14:17.00] what we understand from here is this is
+[14:19.12] how an entity is represented with
+[14:21.68] different types of attribute now I want
+[14:24.36] to show one more thing here which is
+[14:26.76] this we have only one entity
+[14:29.96] which is course which has course ID as
+[14:32.16] the primary key attribute which has
+[14:33.96] other attributes like title and credits
+[14:36.72] and we also have a relationship and this
+[14:39.28] relationship is a strong relationship
+[14:41.12] only and the relationship is
+[14:43.44] prerequisite is it a binary relationship
+[14:46.64] no a binary relationship is formed
+[14:49.00] between two entity sets but here we have
+[14:51.28] only one entity and we have this
+[14:53.96] relationship achieved with the help of
+[14:56.40] course ID and prerequisite ID then what
+[14:59.40] kind of relationship is it it is
+[15:01.76] recursive relationship I will elaborate
+[15:04.24] about this recursive relationship in the
+[15:06.12] a diagram examples but for now I will
+[15:08.68] just give you only few things let's say
+[15:10.80] there are two courses here course one
+[15:12.80] and course two let's say course two that
+[15:15.40] requires course one as a prerequisite
+[15:17.96] let's say if one student has to undergo
+[15:19.84] course two then course one should have
+[15:22.04] been completed in that case course one
+[15:25.12] and course two are interl so that course
+[15:27.96] two can be complet
+[15:29.68] if and only if course one is completed
+[15:32.56] and that is why these kind of
+[15:34.00] relationship are represented as
+[15:35.72] recursive relationship I'm not
+[15:37.72] articulating more about this because we
+[15:39.64] are going to see that when we see some
+[15:41.36] examples in the ER diagram now let me
+[15:44.16] show you another example just tell me is
+[15:47.80] it an attribute or an entity it is an
+[15:50.68] entity right if it is an attribute we
+[15:53.48] have already seen in this presentation
+[15:55.44] it is connected with a dotted line so
+[15:57.24] that this is a descriptive attribute we
+[15:59.28] have seen date as an example but here
+[16:01.60] this is Project which is an entity set
+[16:03.80] not an attribute like instructor like
+[16:06.44] student and these three are strong
+[16:09.28] entities and that is why we have a
+[16:11.60] strong relationship now what this
+[16:13.96] example is all about this is an example
+[16:17.12] for tary relationship because this
+[16:19.80] relationship is formed between three
+[16:21.96] entities instructor project and student
+[16:25.84] remember the third entity is connected
+[16:28.04] with the help of dotted lines because
+[16:30.68] this exist only when these two exist
+[16:33.84] remember these dotted lines or dashed
+[16:35.96] lines are used to link attributes of a
+[16:38.08] relation to the relationship set or it
+[16:40.40] is used in a tary relationship and
+[16:42.92] that's it guys what are the topics we
+[16:44.60] have seen in this presentation we have
+[16:46.48] seen the entity relationship diagram
+[16:48.68] which is the ER diagram with various
+[16:50.68] notations that are used in the ER
+[16:52.48] diagram and also we have understood the
+[16:54.72] basic structure and components of the ER
+[16:56.92] model with the help of some examples in
+[16:59.16] E
+[17:00.20] diagram I hope the session is
+[17:02.20] informative and thank you for watching
+[17:06.08] [Applause]
+[17:08.27] [Music]

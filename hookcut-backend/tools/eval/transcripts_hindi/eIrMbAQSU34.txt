@@ -1,0 +1,3479 @@
+[0:00.03] Hi! My name is Mosh and I'm gonna be your
+instructor in this Java course. In this
+[0:03.99] course, you're gonna learn everything you
+need to get started programming in Java.
+[0:07.41] We'll start off by installing all the
+necessary tools to build Java
+[0:11.07] applications then you're gonna learn
+about the basics of Java you'll learn
+[0:14.70] how Java code gets executed you'll learn
+how to build simple algorithms and
+[0:19.41] throughout this course I'm gonna share
+with you lots of tips and shortcuts from
+[0:23.10] my years of experience I'll teach you
+how to write good code like a
+[0:26.64] professional developer so we'll end up
+watching this course you will have a
+[0:30.39] solid foundation in Java and be ready to
+learn about advanced Java features I've
+[0:35.25] designed this course for anyone who
+wants to learn Java if you're a beginner
+[0:38.46] don't worry I'll make Java super simple
+and hold your hands through this entire
+[0:42.30] course you're not too old or too young
+you'll write your first Java program in
+[0:46.26] minutes
+my name is mosh I'm a software engineer
+[0:48.72] with two decades of experience and I've
+taught over 3 million people how to code
+[0:53.37] and how to become professional software
+engineers I have a coding school at code
+[0:58.11] with mass comm where you can find plenty
+of courses that help you take her coding
+[1:02.43] skills to the next level I hope you'll
+stick around and learn this beautiful
+[1:05.82] and powerful programming language and
+now award from this video sponsor as
+[1:10.14] someone who runs an online business I
+cannot stress enough the importance of
+[1:14.31] staying safe online which is why I was
+so excited when dashlane reached out to
+[1:18.21] me if you don't know - Lane is the
+password manager and VPN recommended by
+[1:23.19] Apple and Google and it's a fantastic
+safeguard for keeping your information
+[1:27.27] secure it's completely free to use for
+your first device so head over to - Ling
+[1:31.59] comm / marché - give it a go if you want
+to upgrade to the premium to get VPN or
+[1:36.21] dark web monitoring you can use the
+promo code mosh to get 10% off sign up
+[1:41.28] for - 9 today and keep yourself safe
+online now back to the course
+[1:48.75] in this java tutorial we're going to
+download and install the necessary tools
+[1:53.89] to build java applications so open up
+your browser and search for jdk download
+[2:01.14] jdk is short for Java development kit
+and it's basically a software
+[2:05.86] development environment for building
+Java applications it has a compiler it
+[2:10.51] has a bunch of code that we can reuse it
+has a Java Runtime environment at a
+[2:15.01] bunch of other stuff so over here you
+can see this page on Oracle com Java se
+[2:21.52] which is short for Java standard edition
+click on this now over here click on
+[2:27.64] this icon now on this page we can see
+Java development kit for various
+[2:33.31] platforms like Linux Mac OS and Windows
+here I'm on a Mac so I'm gonna download
+[2:38.47] this dmg file over here now before we do
+this first we need to accept the license
+[2:44.44] agreement all right now let's download
+the dmg let me open this we're gonna say
+[2:49.87] this package let's double click this and
+here we see this installation wizard
+[2:54.55] it's super easy just click continue and
+install you have to enter your
+[2:59.62] computer's password and then alright
+done beautiful so we can move this to
+[3:07.36] trash now the next piece of software we
+need is a code editor there are so many
+[3:11.92] cool editors for building Java
+applications the popular ones are
+[3:15.31] NetBeans Eclipse and IntelliJ in this
+Java course I'm gonna use IntelliJ but
+[3:20.98] if you have a favorite editor feel free
+to use that to take this course that's
+[3:24.43] perfectly fine so let's search for
+IntelliJ download all right you can see
+[3:32.47] download IntelliJ IDEA click on this
+link over here download the community
+[3:38.02] edition which is absolutely free and
+it's more than enough for this course so
+[3:42.22] download all right now let's drag and
+drop this onto the Applications folder
+[3:49.05] beautiful alright we've installed all
+the necessary tools to build Java
+[3:53.35] applications so next we're gonna look at
+the anatomy of a Java program
+[4:02.20] in this java tutorial we're gonna look
+at the anatomy of java programs the
+[4:07.55] smallest building block in java programs
+are functions
+[4:10.73] if function is a block of code that
+performs a task as a metaphor think of
+[4:15.38] the buttons on the remote control of
+your TV each button performs a task
+[4:19.45] functions in programming languages are
+exactly the same for example we can have
+[4:23.48] a function for sending emails to people
+we can have a function for converting
+[4:27.98] someone's weight in pounds to kilograms
+we can have a function for validating
+[4:31.97] users input and so on now let's see how
+we can code a function in Java we start
+[4:37.25] by specifying the return type of that
+function some functions return a value
+[4:41.12] like a number at day time and so on
+other functions don't return anything so
+[4:45.92] the return type of this functions is
+void void is a reserved keyword in Java
+[4:50.09] and that's why I've coded that in blue
+here now after the return type we have
+[4:55.10] the name of our function so here we
+should give our function a proper
+[4:58.82] descriptive name like send email this
+name clearly identifies the purpose of
+[5:04.82] this function okay now after the name we
+have a pair of parentheses and inside
+[5:10.31] these parentheses we add the parameters
+for this function we use these
+[5:14.30] parameters to pass values to our
+function for example our send email
+[5:18.77] function should have parameters like who
+is the receiver what is the subject of
+[5:22.46] this email what is the content of this
+email and so on now in this tutorial
+[5:26.15] we're not gonna worry about parameters
+we'll look at them in the future
+[5:29.18] now after the parentheses we had a pair
+of curly braces and inside these braces
+[5:34.70] we write the actual Java code now one
+thing I want you to pay attention to
+[5:39.17] here is that in Java we put the left
+brace on the same line where we define
+[5:44.33] our function in other programming
+languages like C sharp it's more
+[5:48.74] conventional to put the left brace on a
+new line but we don't do that in Java so
+[5:53.33] we put the left brace on the same line
+where we define our function now every
+[5:58.61] Java program should have at least one
+function and that function is called
+[6:02.33] main so main is the entry point to our
+programs whenever we execute a Java
+[6:08.03] program the main function gets called
+and the code inside this
+[6:12.06] function gets executed okay now these
+functions don't exist on their own they
+[6:16.68] should always belong to a class so a
+class is a container for one or more
+[6:22.26] related functions basically we use these
+classes to organize our code just like
+[6:26.64] how products are organized in a
+supermarket in a supermarket we have
+[6:30.54] various sections like vegetables fruits
+cleaning products and so on each section
+[6:35.67] contains related products by the same
+token a class in java contains related
+[6:41.49] functions now every Java program should
+have at least one class that contains
+[6:46.53] the main function can you guess the name
+of that class its main so this is how we
+[6:52.11] define a class in Java we start with a
+class keyword then we give our class a
+[6:57.06] proper descriptive name and then we add
+a pair of curly braces now the functions
+[7:02.49] that we define in between these curly
+braces belong to this class and more
+[7:07.29] accurately we refer to them as methods
+so a method is a function that is part
+[7:12.24] of a class in some programming languages
+like Python we can have a function that
+[7:16.89] exists outside of a class so we call it
+a function but when a function belongs
+[7:21.66] to a class we refer to it as a method of
+that class okay now in Java all these
+[7:27.63] classes and methods should have an
+access modifier an access modifier is a
+[7:33.06] special keyword that determines if other
+classes and methods in this program can
+[7:38.19] access these classes and methods we have
+various access modifiers like public
+[7:43.23] private and so on now most of the time
+we use the public access modifier so we
+[7:48.36] put that in front of our class and
+Method declarations so this is the basic
+[7:53.49] structure of a Java program at a minimum
+we have a main class and inside this
+[7:58.86] main class we have the main method now
+you might be curious why we have a
+[8:03.00] capital m in the name of this class
+because in Java we use different
+[8:07.14] conventions for naming our classes and
+our methods to name our classes we use
+[8:11.76] the Pascal naming convention and that
+basically means the first letter of
+[8:16.32] every word should be uppercase in
+contrast to name our methods we use the
+[8:21.15] camel naming convention and that means
+the first letter of every word should be
+[8:25.44] operate
+case except the first wart so that is
+[8:28.70] why we have a capital m in the name of
+this class alright now that you
+[8:32.60] understand the anatomy of a Java program
+let's create a new Java project and see
+[8:37.43] all these building blocks in action in
+this Java tutorial you're gonna learn
+[8:46.67] how to write and execute your first Java
+program so let's open IntelliJ IDEA here
+[8:53.30] on the home screen let's create a new
+project alright on the left side select
+[8:58.88] java and make sure project sdk is not
+black so earlier we downloaded jdk or
+[9:04.58] Java development kit version 12 that is
+why JDK version 12 is selected here if
+[9:10.70] you don't see that make sure to select
+it from this drop-down list alright now
+[9:14.84] let's click on next on this page select
+create project from template so we're
+[9:20.51] gonna create a command line application
+which is an application that we can run
+[9:24.11] from the command line it doesn't have a
+graphical user interface or a GUI
+[9:28.82] now I know command line application is
+not as exciting as an application with a
+[9:33.14] graphical user interface like a mobile
+app or a desktop app but trust me
+[9:37.70] building an application with a graphical
+user interface is very complicated so
+[9:41.48] for now we're just gonna build command
+line applications to learn Java properly
+[9:45.80] once you learn Java properly then you
+can learn about building desktop or
+[9:49.85] mobile applications with Java all right
+now let's click on next on this page we
+[9:55.85] have to give our project a name let's
+call it hello world now over here you
+[10:01.10] can see the location of this project so
+it's inside the idea projects folder now
+[10:06.56] right below that you can see the base
+package which is set to comm that code
+[10:10.94] with Marsh on my machine and your
+mission is probably gonna be comm dot
+[10:15.11] package what is this well here we talked
+about classes and methods I told you
+[10:20.63] that a class is a container for related
+methods so we use classes to organize
+[10:25.31] our code by the same token we have a
+concept called package and we use a
+[10:30.17] package to group related classes so as
+our applications grow we're gonna end up
+[10:34.91] with hundreds or even thousands of
+classes so we should properly organize
+[10:38.81] this class
+us into packages now by convention the
+[10:42.35] base package for a Java project is the
+domain name of your company in Reverse
+[10:46.31] so my website is code with mass comm
+that is why I'm gonna set the base
+[10:51.02] package for this project to come that
+code with Marsh now it doesn't mean that
+[10:55.70] you should have an actual domain
+registered on an Internet this is just a
+[10:59.18] way to create a namespace for our
+classes so now every class that we
+[11:03.29] create in this project will belong to
+this package we're gonna talk about
+[11:07.25] packages in more detail in the future so
+for now just type a base package for
+[11:12.02] your project it can become that your
+name or whatever it doesn't really
+[11:15.56] matter all right now let's go forward
+alright here's our first Java project
+[11:22.04] now this code editor might look a little
+bit intimidating at first but trust me
+[11:26.21] it's really easy and you're gonna learn
+about it throughout this course on the
+[11:29.57] left side we have the project panel
+where we can see all the folders and
+[11:33.38] files in a project for example on the
+top we have the hello word project
+[11:39.34] inside this project we have the source
+folder where we have the source code of
+[11:44.03] a project now in this folder we have
+another folder that is calm that code
+[11:49.46] with Marsh that is the name of our base
+package and in this package we have this
+[11:54.26] class main so you can see this main file
+opened on the right side here now look
+[12:00.32] at the name of this file its main the
+Java so all Java files should have the
+[12:05.03] Java extension okay now let's collapse
+the project panel by clicking on this
+[12:10.88] icon that is better so see what we have
+here on top of this file we have the
+[12:16.43] package statement and this is used to
+specify what package this class belongs
+[12:21.89] to so the main class that we have here
+belongs to this package now this package
+[12:27.89] statement is terminated by semicolon so
+in Java wherever we have a statement we
+[12:32.93] should terminate that statement with a
+semicolon this is exactly like c-sharp
+[12:36.83] or C++ now below this package statement
+we have our main class exactly like what
+[12:42.71] you saw in the previous tutorial so we
+have public class main with a pair of
+[12:47.84] curly braces inside this class we have
+our main method so it's a public method
+[12:52.94] which may
+it's accessible from other parts of this
+[12:55.58] program it's static we haven't talked
+about static metals yet we'll talk about
+[13:00.17] them in the future for now just remember
+that the main method in your program
+[13:03.77] should always be static the return top
+of this method is void which means this
+[13:08.36] method is not gonna return a value and
+here in parentheses we have one
+[13:12.44] parameter for this function we can use
+these parameters to pass values to our
+[13:16.73] program again we'll look at this in the
+future now right after this parameters
+[13:20.90] as you can see the left brace and this
+is where we write the code in this
+[13:25.79] method now by default we have this line
+prefix with two slashes this indicates a
+[13:31.61] comment we use these comments to explain
+our code to other people so these
+[13:36.02] comments don't get executed now let's
+remove this comment and write a bit of
+[13:40.76] code to print something on the terminal
+so here we're gonna use the system class
+[13:45.71] in Java so capital S system here in this
+tooltip you can see the system class is
+[13:51.89] defined in this package Java dot Lang or
+language also look at this icon on the
+[13:58.13] left side this indicates a class now
+inside this class we have various
+[14:02.96] members we can use the dot operator to
+see the members defined in the system
+[14:08.06] class now the member that we're gonna
+access is out look at the icon of this
+[14:13.52] member it's F which is short for field
+you're gonna talk about fields in the
+[14:17.75] future when we talk about classes and
+object-oriented programming now what is
+[14:22.13] interesting here is the type of this
+field and you can see that on the right
+[14:25.19] side that is print string so print
+string is another class that is defined
+[14:30.50] in Java so once again we use the dot
+operator to look at the methods or
+[14:35.63] members defined in the print stream
+class the method we're gonna use is
+[14:40.49] print Ln which is short for line look at
+the icon for this method so M indicates
+[14:45.80] a method now you press ENTER and
+IntelliJ automatically adds these
+[14:52.43] parentheses as well as a semicolon so
+now with the code on line six we're
+[14:57.32] calling or executing the print line
+method earlier I told you that inside
+[15:01.91] this parenthesis we can pass values to
+our methods here we want to print the
+[15:06.35] hello word
+on the terminal so let's type double
+[15:09.71] quotes and inside these quotes right
+hello world so hello word is textual
+[15:15.71] data in Java whenever we deal with
+textual data we should always surround
+[15:20.39] them with double quotes now we say we
+have his string so a string is a
+[15:25.28] sequence of characters all right so
+we're done with our first program now to
+[15:30.23] execute this we can click on this icon
+on the toolbar look at the shortcut on
+[15:35.12] Mac it's ctrl + R I always prefer to use
+shortcuts because they're faster so ctrl
+[15:40.64] + R now IntelliJ is building our
+application and we can see the result in
+[15:46.97] this little terminal window so here's
+our hello work message so that was our
+[15:52.46] first Java program next I'm going to
+explain how Java code gets executed
+[15:56.72] under the hood
+hey Marsh here I just wanted to let you
+[16:01.76] know that you really don't have to
+memorize anything in this course I've
+[16:04.79] put together a comprehensive cheat sheet
+with summary notes that you can download
+[16:08.27] below this video so I've done my best to
+create the best possible Java course and
+[16:13.67] I would really appreciate it if you
+support me by liking and sharing this
+[16:17.54] video on the social networks that you
+use often also be sure to subscribe and
+[16:21.71] enable the notifications so next time I
+upload a video you'll get notified thank
+[16:26.06] you so much and let's continue watching
+[16:29.92] all right now let's see what exactly
+happens under the hood the moment we run
+[16:34.76] a Java program in IntelliJ
+there are basically two steps involved
+[16:38.66] here compilation and execution in the
+compilation step IntelliJ uses the Java
+[16:44.54] compiler to compile our code into a
+different format called Java bytecode
+[16:49.10] this Java compiler comes with the Java
+development kit that we downloaded at
+[16:54.14] the beginning of the course let me show
+you so here we can right click on this
+[16:58.07] main the Java and in this context menu
+we have an item called open in terminal
+[17:04.31] it's down below unfortunately it's not
+visible in my recording window it's
+[17:08.54] called open in terminal on Mac and
+probably open in command prompt on
+[17:12.77] Windows so let's open that we get this
+terminal window or command prompt on
+[17:18.77] windows here we're currently inside of
+this folder code with Maj that is where
+[17:23.69] we have our main the Java file now we
+can invoke the Java compiler like this
+[17:28.61] Java C and pass the name or Java file as
+an argument so main the Java if you're
+[17:35.51] on Mac or Linux make sure to spell this
+with a capital M because these operating
+[17:39.47] systems are case-sensitive so enter now
+let's look at the content of this folder
+[17:45.29] on Mac or Linux we can type LS on
+windows we type dir so let's take a look
+[17:52.40] in this folder now we have a new file
+main class this is the bytecode
+[17:57.25] representation of this Java file now let
+me use IntelliJ to run our Java program
+[18:02.75] this class file gets stored somewhere
+else let me show you so back to the
+[18:07.70] project panel here in our project we
+have this source folder where we
+[18:12.89] our source code and we have this out
+folder where we have the result of the
+[18:17.39] compilation so inside this folder we
+have production inside this we have
+[18:22.43] hello world the same name as our project
+inside hello world we have comm which is
+[18:27.08] the name of our top level package inside
+this package we have a sub package that
+[18:32.36] is code with Marsh and here we have our
+main dat class file so this was the
+[18:37.28] compilation step now this Java bytecode
+that we have in this file is platform
+[18:42.13] independent and that means it can run on
+Windows Mac Linux or any operating
+[18:47.63] systems that has a Java runtime
+environment if you go to java.com slash
+[18:53.48] download we can download java or more
+accurately java runtime environment for
+[18:58.67] various operating systems this Java
+Runtime environment has a software
+[19:02.96] component called Java Virtual Machine or
+JVM this JVM takes our Java bytecode and
+[19:09.79] translates it to the native code for the
+underlying operating system so if you're
+[19:15.02] on Windows machine this Java Virtual
+Machine converts or Java bytecode into
+[19:19.85] the native code that windows can
+understand this architecture is the
+[19:23.63] reason why Java applications are
+portable or platform independent we can
+[19:28.67] write a Java program on a Windows
+machine and execute it on Linux Mac or
+[19:33.26] any other operating systems that have a
+Java runtime environment
+[19:36.74] c-sharp and python also have the same
+architecture that's why they are
+[19:40.91] platform independent as well now let me
+show you how to invoke this java virtual
+[19:45.74] machine to run a Java program so back to
+this terminal window let me expand this
+[19:51.88] currently we are inside of this folder
+code with Marsh and in this folder we
+[19:56.12] have this class file now let's go one
+level up so CD dot dot and one more time
+[20:03.73] so now we are inside the source folder
+we can invoke Java Virtual Machine like
+[20:09.08] this they type Java and then we type the
+full pass to our main class file what do
+[20:14.72] I mean by that well earlier we defined
+this package comm that code with Marsh
+[20:20.24] and this class the main class is part of
+this package so the full path
+[20:26.39] this class is calm dot code with Marsh
+dot main make sure to use a capital M
+[20:34.82] here because this is case sensitive now
+when we press ENTER Java will look at
+[20:40.19] this folder calm inside this folder it
+will look at this other folder code with
+[20:44.42] Marsh and then it will find main that
+class in that folder it will load the
+[20:49.28] bytecode and convert it to the native
+code for the operating system we are
+[20:53.21] using so take a look so it executed our
+program hello world beautiful let me run
+[20:59.27] a program using IntelliJ all these steps
+are hidden from us we don't see the
+[21:03.44] compilation or execution steps
+[21:08.16] so you have seen Java in action now let
+me tell you five interesting facts about
+[21:13.33] Java Java was developed by James Gosling
+in 1995 at Sun Microsystems which was
+[21:20.08] later acquired by Oracle in 2010 it was
+originally called oke after an oak tree
+[21:25.57] that stood outside Gosling's office
+later it was renamed to green and was
+[21:29.92] finally renamed to Java inspired by Java
+coffee that's why its logo looks like
+[21:34.90] this we have four editions of Java for
+building different kinds of applications
+[21:39.55] we have Java standard edition this is
+the core Java platform which is what
+[21:44.02] we're using in this course it contains
+all of the libraries that every Java
+[21:48.01] developer must learn
+we have Java Enterprise Edition which is
+[21:51.91] used for building very large-scale and
+distributed systems it's built on top of
+[21:56.98] java standard edition and provides
+additional libraries for building fault
+[22:01.99] tolerant distributed multi-tiered
+software we have java micro Edition
+[22:07.03] which is a subset of Java standard
+edition designed for mobile devices so
+[22:12.04] it has libraries specific to mobile
+devices and finally we have Java card
+[22:16.60] which is used in smart cards the latest
+version of Java is Java standard edition
+[22:22.48] 12 which was released just a few months
+ago in March 2019 Java has close to 9
+[22:28.18] million developers worldwide currently
+about 3 billion mobile phones run Java
+[22:32.89] as well as 120 million TV sets and every
+blu-ray player according to indeed.com
+[22:38.95] the average salary of a Java developer
+is just over $100,000 per year in the US
+[22:45.28] so as we can see Java is everywhere
+which means more opportunities for you
+[22:49.42] to get hired as a professional
+programmer now let me give you a quick
+[22:56.11] overview of how I've structured this
+course so you can get the most out of it
+[23:00.04] this course is the first part of my
+complete four-part Java series each part
+[23:05.35] is about three to four hours long so it
+can easily complete it in a day or two
+[23:09.34] in the first part which is what you're
+watching you're gonna learn the
+[23:12.94] fundamentals of programming with Java in
+the next section you'll learn about the
+[23:17.05] type system in Java you will learn how
+to work with various types such as
+[23:21.24] purrs strings boolean's and arrays by
+the end of this section you will build a
+[23:25.83] mortgage calculator as your first Java
+project will be improving this
+[23:30.48] calculator bit by bit routers course
+next you will learn about control flow
+[23:35.13] statements that are used to build
+algorithms we'll be talking about
+[23:38.88] various types of conditional statements
+and loops later in this section we'll
+[23:43.29] add data validation to our mortgage
+calculator to force the user to enter
+[23:47.70] valid values at this point you'll be
+able to build basic algorithms and
+[23:52.38] that's great
+but being a good programmer requires
+[23:54.90] knowing how to write good code code that
+is clean and expressive that's what
+[24:00.03] separates an outstanding programmer from
+an average programmer so in the
+[24:03.96] following section we'll talk about clean
+coding I will show you various
+[24:07.35] techniques that professional programmers
+use to make their code clean and
+[24:11.25] maintainable and finally in the last
+section you will learn how to find and
+[24:15.72] fix errors in your java programs as well
+as how to package them for deployment so
+[24:20.76] others can use them so the materials in
+the first part will give you a solid
+[24:25.11] foundation on how to start programming
+in Java in the second part we'll talk
+[24:30.33] about object oriented programming which
+is a style of programming use in most if
+[24:34.86] not all Java applications whether you
+want to use Java to build web mobile or
+[24:39.93] desktop applications you need to
+understand object-oriented programming
+[24:43.50] well because otherwise you're going to
+constantly hit obstacles in the third
+[24:47.79] part we're going to talk about core Java
+API is or application programming
+[24:52.14] interfaces you'll learn about many of
+the useful classes in the standard Java
+[24:56.67] library and finally in the last part
+we'll be looking at the advanced
+[25:00.45] features in Java such as streams threads
+database programming and so on so I hope
+[25:06.33] you're gonna join me on this journey and
+master Java the most popular programming
+[25:10.80] language behind millions of apps and
+websites
+[25:15.73] you
+[25:24.29] intersection we're gonna look at the
+fundamentals of programming in Java
+[25:28.17] you're gonna learn about variables and
+constants primitive and reference types
+[25:32.76] you're gonna learn about casting or type
+conversion you will learn how to work
+[25:37.11] with numbers strings and arrays and how
+to read input from the user
+[25:41.31] once you learn all this I'm gonna give
+you a project you're gonna build a
+[25:44.73] mortgage calculator on your own so make
+sure to pay great attention to all the
+[25:48.75] materials you're gonna learn because
+you're gonna use most of them in this
+[25:51.66] project are you ready now let's jump in
+and get started in this tutorial we're
+[26:02.13] gonna talk about variables in Java we
+use variables to temporarily store data
+[26:06.84] in computer's memory here is an example
+imagine in this program you want to
+[26:11.28] store someone's age in the memory so we
+declare a variable like this ant age
+[26:16.85] equals 30 so int or integer is the type
+of this variable so in this variable we
+[26:23.58] can only store integers which are whole
+numbers like 1 2 3 4 numbers that don't
+[26:28.59] have a decimal point now in Java we have
+several different types I'm gonna talk
+[26:32.52] about them in the next tutorial so first
+we specify the type of our variable then
+[26:37.44] we give it a name or a label this is
+also called an identifier because we use
+[26:42.18] it to identify our variable this equal
+sign is called the assignment operator
+[26:46.98] and 30 is the initial value that we are
+assigning to this variable so we say on
+[26:52.59] line 6 we're initializing this variable
+which means we're giving it an initial
+[26:57.18] value you always have to initialize our
+variables before reading them so with
+[27:02.34] this line we're storing number 30
+somewhere in computer's memory and we're
+[27:06.33] assigning this label to that memory
+location now on line 7 instead of
+[27:10.92] printing hello world we can print the
+value of the age variable take a look so
+[27:16.65] I'm gonna run this program using ctrl +
+R there you go now we see 30 on the
+[27:23.55] terminal beautiful we can also change
+the value of our variable so after we
+[27:28.77] initialize it per house we can change it
+to 35 now when we run this program again
+[27:35.74] we see it 35 beautiful we can also
+initialize multiple variables on the
+[27:41.38] same line but this is something that I
+don't recommend because it makes your
+[27:44.95] code ugly and hard to read here is an
+example we can declare another variable
+[27:49.53] like temperature and set it to 20 so
+using a comma we can declare multiple
+[27:55.81] variables on the same line now even
+though this is technically possible it's
+[27:59.95] not something that I recommend so it's
+always better to declare one variable on
+[28:05.47] each line like this we can also copy the
+value of one variable into another here
+[28:10.99] is an example let me delete these
+variables and declare a new variable
+[28:15.07] called my age we set it to 30 and then
+we declare another variable like her age
+[28:21.10] and we set it to my age so now when we
+print her age we're gonna see 30 take a
+[28:29.62] look
+so on line seven recapping the value of
+[28:34.97] this variable into this other variable
+now one thing I want you to pay
+[28:38.78] attention to here is the convention I
+have used for naming our variables as I
+[28:43.55] told you before this is called the
+camelcase notation so we should
+[28:47.51] capitalize the first letter of every
+word except the first word so in this
+[28:52.67] case the first word my it's all in
+lowercase but the second word starts
+[28:57.35] with a capital letter so this is all
+about declaring and initializing
+[29:00.92] variables in the next tutorial we're
+going to talk about various types in
+[29:04.82] Java in this tutorial we're going to
+talk about various types in Java
+[29:14.62] basically we have two categories of
+types we have primitive types for
+[29:19.07] storing simple values and non primitive
+types or reference types for storing
+[29:23.81] complex objects so in the category of
+primitive types we have white which
+[29:28.46] takes one byte of memory and in one bite
+we can store values from 128 to 127 now
+[29:36.26] the more bytes we have the larger
+numbers we can store so next we have
+[29:40.19] short which takes two bytes and with
+this we can store values up to 32,000
+[29:45.08] next we have integer which we have seen
+before integers take four bytes of
+[29:49.28] memory and allow us to store values up
+to two billion then we have long which
+[29:54.29] takes eight bytes and with this we can
+store even larger numbers now all these
+[29:58.67] types are for storing whole numbers that
+don't have a decimal point if you want
+[30:03.29] to store a number that has a decimal
+point you have to use float or double
+[30:07.00] float takes four bytes double takes
+eight bytes so obviously we double we
+[30:11.27] can store larger numbers next we have
+char for storing a single character like
+[30:16.04] ABC and this chart I've take two bytes
+so they support international letters
+[30:21.53] and finally we have boolean for storing
+boolean values which can be true or
+[30:25.88] false just like yes or no in English now
+let's take a look at a few examples
+[30:30.53] earlier we use an integer for storing
+someone's age but as you learned
+[30:35.66] integers take four bytes and allow us to
+store values up to two billion we don't
+[30:40.67] need four bytes of memory to store
+someone's age all we need is one byte
+[30:44.87] because with one bite we can store
+values up to 127 so I'm gonna change
+[30:50.12] this to byte that is better now let's
+look at another example let's say we
+[30:55.13] want to store the number of times a
+YouTube video has been watched so we
+[30:59.15] define an integer called views count
+note that I'm always using meaningful
+[31:04.07] names for my variables because these
+names help us understand what this code
+[31:07.94] does I've seen some people use variable
+names like V or V 1 or n nobody knows
+[31:14.00] what these variables do so as a best
+practice always use meaningful and
+[31:18.23] descriptive names for your variables so
+views count we set this to a large
+[31:23.33] number like 1 2 3 4 5 6 7 8 9 now in
+Java whenever you deal with a large
+[31:30.08] number like this you can use an
+underscore to separate every three
+[31:34.79] digits just like how we use a comma in
+our documents to make our numbers more
+[31:40.10] readable we can use an underscore in
+Java so with integers we can store
+[31:46.55] values up to two billion but let's say
+the number of times this video has been
+[31:50.60] watched is three billion so I had a
+three here now we have a red on the line
+[31:55.58] that indicates an error
+let me hover our mouse over it we see
+[31:59.15] this tooltip integer number too large so
+we need to change the type of this
+[32:03.98] variable to long however the error is
+still there what's going on here the
+[32:09.74] reason we're getting this error is that
+by default Java sees these numbers as
+[32:13.16] integers so even though we have defined
+the type of this variable as long Java
+[32:17.78] compiler sees this value as an integer
+and he thinks this value is too large
+[32:22.22] for an integer to solve this problem we
+need to add an L as a suffix or this
+[32:27.23] number we can use an uppercase or a
+lowercase L but as you can see a
+[32:31.85] lowercase L kind of looks like a 1 so
+it's better to use a capital L so these
+[32:37.76] are examples of whole numbers now let's
+declare a variable for storing a number
+[32:41.72] with a decimal point so double price we
+set this to 1099 obviously the double
+[32:49.01] variable is too large for storing the
+price of a product so we can change this
+[32:53.00] to float that is better but you have a
+compilation error here take a look
+[32:58.47] incompatible types required float but
+found double the reason we're seeing
+[33:04.42] this error is that by default Java sees
+these numbers with a decimal point as
+[33:08.41] double so even though we set the type of
+this variable to float Java sees this
+[33:13.69] number as a double so just like how we
+added a suffix to this number to
+[33:19.30] represent it as a long we need to add a
+suffix here to represent this number as
+[33:23.74] a float and that suffix is F once again
+we can use an upper case or lower case F
+[33:30.06] so these are examples of numbers now
+let's store a character so char we call
+[33:36.76] it letter and we set it to a note that
+we should always surround single
+[33:42.19] characters with single quotes and
+multiple characters or strings with
+[33:46.87] double quotes
+okay so char represents only one
+[33:50.44] character string represents a series of
+characters and finally let's see an
+[33:55.30] example of a boolean so we define a
+boolean variable called is eligible is
+[34:01.24] this person eligible for loan or not we
+said this to true or false these are the
+[34:08.53] boolean values now note that all these
+words coded in orange are reserved
+[34:13.36] keywords in Java
+just like public static void class
+[34:18.01] package these are all reserved keywords
+so we cannot use these reserved keywords
+[34:22.54] the name our variables classes and
+methods in the last tutorial you learned
+[34:32.65] that we use primitive types to store
+simple values like numbers boolean
+[34:37.15] values or single characters in contrast
+use reference types to store complex
+[34:42.97] objects like data objects or mail
+messages these are complex objects now
+[34:48.85] in Java we have eight primitive types
+that you have seen before all the other
+[34:52.81] types are reference types let me show
+you an example so here in this program
+[34:58.33] first I'm gonna declare a primitive type
+let's say white age equals 30 now
+[35:05.56] declaring and initializing a reference
+type is slightly different from
+[35:09.73] primitive type let me show you
+so let's type date now here in this
+[35:14.73] tooltip box which is called intellisense
+we can see various classes that have
+[35:19.29] date in their name so IntelliJ is
+helping us complete our code by
+[35:23.64] suggesting these class names now here we
+have a date class in this package Java
+[35:28.80] the util so this package contains a lot
+of utility classes that are useful in a
+[35:33.75] lot of programs you also have a date
+class in a different package Java SQL or
+[35:39.30] sequel which is used for programming
+databases so this is the benefit of
+[35:43.71] packages we can have the same class but
+in different packages they don't
+[35:47.94] conflict so packages create a namespace
+for our classes okay now in this case if
+[35:54.00] we select the first date class and press
+enter or tab IntelliJ automatically adds
+[36:00.54] this line for us import Java that you
+till the date so because currently we
+[36:07.17] are in this package in order to use a
+class from a different package we need
+[36:12.09] to import it so here we're importing the
+date class in this package will talk
+[36:16.95] about packages in more detail in the
+future so back to our date variable
+[36:21.35] let's give this variable a name collect
+now now we set this here we need to use
+[36:27.84] the new operator to allocate memory for
+this variable and this is one of the
+[36:32.22] differences between the primitive and
+reference types when declaring primitive
+[36:36.09] types we don't need to allocate memory
+memory is allocated and released by Java
+[36:40.44] Runtime environment but when dealing
+with reference types we should always
+[36:44.34] allocate memory now we don't have to
+release this memory Java Runtime
+[36:48.06] environment will automatically take care
+of that so we use the new operator and
+[36:52.59] then repeat the name of our class in
+this case date and then we add
+[36:56.70] parentheses followed by a semicolon in
+this example this variable we have
+[37:02.43] defined here is an instance of the date
+class so this class is defined template
+[37:07.86] or blueprints for creating new objects
+new instances as another example we can
+[37:13.68] have a class called human and we can
+have objects like John Bob Mary and so
+[37:18.81] on so an object is an instance of a
+class now this object or this class
+[37:24.76] have members that we can access using
+the dot operator so we can type now dot
+[37:30.07] and these are all the members defined in
+this class or in this object for example
+[37:34.87] we have a method called get time and
+this returns the time component of this
+[37:39.76] object this is another difference
+between primitive types and reference
+[37:43.30] types these primitive types don't have
+members so if you type age dot we don't
+[37:48.88] see anything these items you see here
+are not members of age their code
+[37:52.93] snippets which allow us to quickly
+generate code for example we can select
+[37:56.95] for I and this automatically generates
+this block of code for us we'll talk
+[38:01.21] about this in the future so this age
+variable is a primitive type it's not an
+[38:06.49] object it doesn't have any members and
+that's why when we use the dot operator
+[38:10.99] we don't see anything here now let's
+delete this line and instead print the
+[38:15.28] value of this data object so once again
+we can type system this is a class so we
+[38:21.19] can use the dot operator to access its
+members here we have out which is a
+[38:25.03] field and the type of this field is
+print string which is another class in
+[38:29.71] Java so once again we can use a dot
+operator and call the print line
+[38:34.57] function now let me show you a very cool
+shortcut instead of typing all this we
+[38:39.22] can use one of these code snippets so we
+type s oh you see and press tab and this
+[38:45.85] generates this piece of code for us all
+right now let's pass our data object
+[38:49.75] here note that I have not surrounded
+this variable with double quotes because
+[38:54.55] this is a string and if you run this
+program we'll see now on the terminal
+[38:58.75] there you go
+we don't want this you want the value of
+[39:02.17] our data object not a label so let's
+remove the quotes I run the program
+[39:09.10] again so here's the current date I'm on
+my machine I've learned a little bit
+[39:19.99] about the differences between the
+primitive and reference types so you
+[39:23.74] know that we use primitive types for
+storing simple values and reference
+[39:27.88] types for storing complex objects but
+there's a very important difference
+[39:31.63] between these two categories of types in
+terms of memory management and that's
+[39:36.55] what we're going to talk about in this
+tutorial
+[39:38.50] so I'm going to declare a primitive
+variable X and set it to 1 and then I'm
+[39:44.08] going to declare another variable like Y
+and set it to X so in this example we
+[39:50.29] have two different variables x and y and
+these two variables are at different
+[39:54.49] memory locations so they're completely
+independent of each other in other words
+[39:59.89] if I change the value of X Y is not
+going to get affected let me show you so
+[40:05.23] I'm gonna update X to 2 and then print Y
+so syu t tab y let's take a look
+[40:13.48] so run as you can see Y is not affected
+because x and y are completely
+[40:19.63] independent of each other however when
+we use a reference time this behavior is
+[40:24.85] different
+let's take a look so I'm gonna delete
+[40:27.67] all the code here in Java we have a
+point class that is defined in this
+[40:34.99] package Java that awt so we press ENTER
+and now we have this import statement on
+[40:42.28] the top beautiful let's declare a
+variable like point 1 and set it to new
+[40:47.44] point here we can pass the initial
+values for x and y so I'm gonna pass 1
+[40:54.49] and 1 so intelligent automatically adds
+these labels x and y now just like
+[41:02.23] before I'm gonna declare another
+variable point 2 and set it to point 1
+[41:07.98] and this is where things get interesting
+when Java Runtime environment executes
+[41:12.88] line 8 first it's going to allocate some
+memory to store this point object let's
+[41:19.12] see if the address of that memory
+location is 100 then it's going to
+[41:23.29] allocate a separate part of the memory
+and it's going to attach this label to
+[41:28.24] that memory location point 1 in that
+memory location it's going to store the
+[41:33.40] address of our point object so this is
+the critical difference between
+[41:38.08] primitive and reference types when we
+declare a primitive variable like a byte
+[41:42.34] the value that we assigned to that
+variable will be stored in that memory
+[41:46.03] location but when we use a reference
+type like this point class our variable
+[41:50.74] is going to hold the ax
+of that point object in memory not the
+[41:54.70] actual pointer object now look at line 9
+here we're copying the value that we
+[42:00.07] have in this variable into this other
+variable so that value as you learn is
+[42:04.66] not the point object is the address or
+the reference to the point object in
+[42:09.52] memory that is why we refer to these
+tiles as reference types because they
+[42:13.96] don't store the actual values they store
+a reference to an object somewhere in
+[42:18.64] the memory so in this example point one
+and point two are referencing the exact
+[42:24.91] same point object in memory we only have
+one point object so these two variables
+[42:30.49] are not independent of each other
+they're referencing the same object and
+[42:34.63] that means if I update this point object
+through either of these variables the
+[42:38.89] changes will be visible to the other
+variable I'm gonna show you so using the
+[42:43.96] first variable point one we're going to
+update the value of x so we use the dot
+[42:49.36] operator and here we can see the members
+of this object X on Y are both fields
+[42:54.97] which are variables that exist inside of
+a class so we said X just like a regular
+[43:00.16] variable to a different value let's say
+two now because point one and point two
+[43:06.07] are referencing the exact same object if
+we print point two we're going to see
+[43:11.14] the change that we just made
+take a look so S or ut tab let's print
+[43:17.95] point to run the program there you go
+so the change was visible so remember
+[43:27.67] this reference types are copied by the
+references whereas primitive types are
+[43:32.68] copied by their value and these values
+are completely independent of each other
+[43:42.06] in this tutorial we're gonna look at
+strings in Java so earlier in the course
+[43:47.20] we printed the hello world message on a
+terminal this hello word that we have
+[43:51.01] here is a string or more accurately it's
+a string literal
+[43:54.97] that means a string value now let's
+extract this from here and store it in a
+[43:59.38] string variable so cut just before this
+line we type string now look this string
+[44:07.30] class is defined in Java that Lang
+package what is interesting is that we
+[44:12.58] don't have an import statement to import
+this package or import this class
+[44:16.45] because this package is automatically
+imported so we can use any classes that
+[44:20.77] are defined in this package now let's
+declare a variable called message and
+[44:27.42] because this is a reference type we
+should instantiate this variable using
+[44:31.90] the new operator so Neal string and here
+in parenthesis we type our message hello
+[44:39.22] world however here we have this little
+warning take a look new string is
+[44:45.10] redundant because in Java there is a
+shorter way to initialize string
+[44:49.78] variables let me show you so instead of
+using the new operator we simply set
+[44:54.16] this to our string literal now on the
+surface this looks like a primitive type
+[45:00.58] because we are not using the new
+operator but this is just a shorthand to
+[45:04.87] initialize a string variable strings are
+reference types in Java but because we
+[45:09.85] use them often there is a short way to
+create them
+[45:12.43] so now let's pass message to the print
+line method and run our program you get
+[45:19.75] the exact same result as before
+beautiful now let's look at a few
+[45:23.62] interesting things that you can do with
+strings we can concatenate or joining a
+[45:27.94] string with another one using the plus
+operator so here we can combine this
+[45:32.77] with another string with two exclamation
+marks and here's the result now because
+[45:42.52] string is a class it has members that we
+can access using the dot operator so we
+[45:47.35] can type message dot and these are all
+the methods or functions do
+[45:51.88] find in the string class for example we
+have this method here ends with and with
+[45:57.16] this we can check to see if our string
+ends with a character or sequence of
+[46:01.24] characters for example here we can pass
+their string to see if our message ends
+[46:05.95] with two exclamation marks
+now instead of printing the message
+[46:10.33] let's print this expression here so
+let's run the program we get true so
+[46:19.84] this method that we have called here
+returns a boolean value which can be
+[46:23.98] true or false we also have another
+method starts with let's take a look now
+[46:30.09] in this case we get false because our
+message doesn't start with two
+[46:34.39] exclamation marks another useful method
+is length so we can call that to get the
+[46:40.84] length of a string which is the number
+of characters so message dot length take
+[46:46.60] a look
+so in this string we have 13 characters
+[46:51.22] and this is useful in situations where
+you want to check the length of the
+[46:55.00] input by the user for example you might
+have a sign-up form with a username
+[46:58.75] field you can check the length of
+someone's username and give them an
+[47:02.50] error if the username is longer than
+let's say 20 characters pretty useful we
+[47:07.96] also have another method that is index
+of and this returns the index of the
+[47:14.62] first occurrence of the character or the
+string that we pass here for example if
+[47:19.30] you pass H the index of H is 0 so let's
+run the program there you go we get 0 if
+[47:27.25] you pass e we get 1 because the index of
+the first II in this message is 1 now
+[47:35.29] what if you pass a character or a string
+that doesn't exist in this message let's
+[47:39.49] say Skye we get negative 1 so with this
+method we can check to see if a string
+[47:47.83] contains certain characters or words or
+sentences and so on another useful
+[47:53.14] method is replace and with this we can
+replace one or more characters with
+[47:58.72] something else for example we can
+replace any exclamation marks with
+[48:05.50] let's say a store so this replace metal
+has two parameters one is target the
+[48:12.05] other is replacement and here we're
+passing two values for these parameters
+[48:16.73] here's the first value here is the
+second value and we have separated these
+[48:20.57] values using a comma now in programming
+terms we refer to this values as
+[48:26.05] arguments a lot of programmers don't
+know the difference between parameters
+[48:30.23] and arguments parameters are the holes
+that we define in our methods arguments
+[48:35.54] are the actual values that we pass to
+these methods so in this case target and
+[48:40.67] replacement or parameters but
+exclamation mark and asterisk are
+[48:45.08] arguments now let's run this program and
+see what happens so our explanation
+[48:53.45] marks are replaced with stars now what
+is important here is that this method
+[48:58.28] does not modify our original string it
+returns a new string so if we print our
+[49:05.75] original string right after SRU T tab
+message you can see the original string
+[49:15.23] is not changed because in Java strings
+are immutable
+[49:19.13] we cannot mutate them we cannot change
+them so any methods that modify a string
+[49:23.84] will always return a new string object
+okay we also have another useful method
+[49:30.41] to lowercase
+let's take a look
+[49:35.48] so to lowercase converts all characters
+to lowercase and once again you can see
+[49:41.03] that the original string is not affected
+because this method returns a new string
+[49:46.22] okay we also have two uppercase and
+another useful method is trim trim and
+[49:54.46] with this we can get rid of extra white
+spaces that can be at the beginning or
+[49:58.94] the end of a string sometimes our users
+type unnecessary spaces in form fields
+[50:03.71] so using the trim method we can get rid
+of these white spaces let me show you so
+[50:08.30] I'm gonna add a couple of spaces before
+and after our message now when we trim
+[50:15.50] it these white spaces are gonna get
+removed take a look so here's the
+[50:21.86] original string you can see two white
+spaces at the beginning and here's our
+[50:26.48] string after trimming so these are some
+useful methods in the string class but
+[50:31.64] this glass has more methods than we
+don't have time to cover in this lecture
+[50:35.39] but as we go through the course you're
+gonna learn more about the string class
+[50:38.45] and other useful classes in Java third
+times will include special characters in
+[50:49.10] our strings like a tab or a new line or
+a backslash or double quotes so in this
+[50:54.50] tutorial I'm gonna show you how to
+include these special characters in your
+[50:57.71] strings so here we have the string hello
+Marsh let's say we want to surround
+[51:01.94] Marsh with double quotes now here's the
+problem if we add a double quote here
+[51:07.16] Java compiler thinks this is the
+termination of our string so it doesn't
+[51:11.84] stand what we have after that's why we
+have a compilation error the fixes
+[51:15.80] problem we need to prefix this double
+code with a backslash
+[51:20.00] so using this backslash we have escaped
+the double quote now one more time let's
+[51:26.36] add backslash double code here now let's
+run the program and see what we get so
+[51:32.57] we get hello Marsh in double quote
+beautiful so double quote is one of
+[51:37.67] those special characters that you need
+to be aware of another special character
+[51:41.21] is backslash let's say we want to store
+the pass to a directory on a Windows
+[51:45.56] machine so that will look like this C
+Drive
+[51:49.19] backslash windows backslash whatever now
+if you want to store this in a string we
+[51:55.76] need to escape each backslash let me
+show you so C Drive backslash now we
+[52:02.75] have a problem
+Java compiler thinks we're escaping the
+[52:05.90] double code here so it thinks our string
+is not terminated with another double
+[52:10.22] code but that's not what we want you
+want to add a backslash here so we need
+[52:14.84] to prefix our backslash with another
+backslash now we type windows one more
+[52:20.96] time something let's run the program so
+even though we have two backslashes in
+[52:28.73] our code we actually see one backslash
+in a terminal window in other escape
+[52:33.92] sequences backslash N and we use that to
+add a new line to our strings so let's
+[52:39.68] change this to backslash N and run the
+program to see what happens now our
+[52:45.41] string is broken down onto multiple
+lines by the first line we have C Drive
+[52:50.03] then we have Windows so wherever we had
+a backslash n Java will insert a new
+[52:55.49] line we can also add a tab in our
+strings
+[52:58.28] so if you add backslash T here there
+will be a tab which means C Drive and
+[53:03.71] windows let's take a look so C Drive
+here we have a tab and then windows now
+[53:11.21] in Java we have a few more escape
+sequences but quite honestly they're
+[53:14.78] hardly used so remember these four
+escape sequences that we cover in this
+[53:19.43] tutorial
+[53:25.14] in this tutorial we're going to talk
+about arrays in Java we use arrays to
+[53:29.80] store a list of items like a list of
+numbers or a list of people or a list of
+[53:34.66] messages let me show you so here we have
+an integer variable you want to convert
+[53:39.13] this to an integer array so right after
+int we add square brackets now we have a
+[53:46.03] compilation error because we're storing
+a single number in this array so to fix
+[53:50.95] this we need to remove one because
+arrays are reference types we need to
+[53:55.54] use the new operator here then we repeat
+the type one more time enter a and here
+[54:01.12] in square brackets we specify the size
+or the length of this array how many
+[54:05.62] items do we want to include in this
+array let's say five also we should
+[54:09.97] change the name of this variable from
+number two numbers because we're dealing
+[54:14.26] with a list of items so always pay
+attention to the name of your variables
+[54:18.54] now you can access individual items in
+this array using an index so we type
+[54:24.07] numbers square brackets to reference the
+first element or first item we use zero
+[54:30.31] now we can set this to a value like 1
+similarly we can set the second item to
+[54:37.81] 2 now what if we use an invalid index
+let's say 10 this array doesn't have 10
+[54:43.12] items so let's see what happens numbers
+of 10 we said this to 3 when we run this
+[54:50.26] program we get an exception exceptions
+are Javas way to report errors so in
+[54:57.34] this case an exception was raised and
+our program crashed we'll talk about
+[55:01.27] exceptions in detail later in the course
+so now let's remove the last line and
+[55:06.78] treinta sorry
+so sou t tab numbers let's see what we
+[55:12.40] get
+we get this weird string in sort of the
+[55:16.73] items in our array here's the reason
+by default when we print an array Java
+[55:21.56] returns the string which is calculated
+based on the address of this object in
+[55:25.97] memory so if you have another array and
+we print that we're gonna see something
+[55:29.87] different because each object is gonna
+be in a different memory space okay now
+[55:34.94] how can we see the actual items in this
+array well we have a class in Java
+[55:39.62] called arrays let me show you
+arrays so this class is defined in Java
+[55:44.66] that util package let's press ENTER now
+this is important on the top beautiful
+[55:50.78] so we can use the dot operator to access
+the members of this class here we have a
+[55:55.94] method called two string now as you see
+it this method is implemented multiple
+[56:01.43] times so in the first implementation
+this method gets a float array in the
+[56:06.65] second implementation it takes an
+integer array and so on so for all
+[56:10.52] primitive types as well as reference
+types this method is implemented
+[56:13.85] multiple times this is what we call
+method overloading now we can call this
+[56:19.49] method and pass our integer array and
+this will return the string
+[56:26.15] representation of this array so we can
+cut this from here and pass it to our
+[56:30.71] print method like this now let's run the
+program one more time and here's our
+[56:37.43] array beautiful so the first two items
+are initialized the others are set to 0
+[56:41.96] by default because here we're dealing
+with an integer array if you had a
+[56:45.53] boolean array all items why default get
+initialized to false if you have a
+[56:50.27] string array all items get initialized
+to an empty string
+[56:53.78] okay now this syntax for creating and
+initializing an array is a little bit
+[57:00.29] tedious and it's an older syntax there
+is a newer way to initialize an array if
+[57:05.24] we know the items ahead of time like in
+this case so I'm going to remove these
+[57:09.41] two lines I'm also gonna remove the new
+operator here we use curly braces and
+[57:15.76] inside these braces we add all the items
+in this array let's say 2 3 5 1 & 4 now
+[57:22.79] we have 5 items so the length of this
+array is gonna be 5 we can read that
+[57:27.50] using the lengths
+so if we type numbers dot look here we
+[57:31.67] have is filled look at the icon it's an
+F so this is a field which is like a
+[57:36.05] variable in a class and the type of this
+field is an integer so this returns the
+[57:41.09] number of items in this array let's get
+that and printed using our print method
+[57:47.23] like this take a look so we get five now
+in Java arrays have a fixed size so once
+[57:56.93] we create them we cannot add or remove
+additional items to them they have a
+[58:00.80] fixed length if you want to be able to
+add or remove additional items from an
+[58:04.85] array you should use one of the
+collection classes that we'll talk about
+[58:07.85] later in the course for now all I want
+you to remember is that arrays have a
+[58:12.35] fixed length now currently our array is
+not sorted these numbers are in some
+[58:17.36] kind of random order we can easily sort
+this array using the sort method of the
+[58:22.13] arrays class let me show you so I'm
+gonna remove this line and call arrays
+[58:27.80] dot sort once again you can see this
+method is overloaded because it's
+[58:33.32] implemented with different parameter
+types so we call this method and pass
+[58:38.00] our numbers array
+now when we run this program we can see
+[58:43.47] our array is sorted beautiful
+[58:50.71] so yeah I've learned that we use arrays
+to store a list of objects in Java we
+[58:55.73] can also create multi-dimensional arrays
+for example we can create a
+[58:59.69] two-dimensional array to store a matrix
+or we can create a three-dimensional
+[59:04.10] array to store data for cube these are
+useful in scientific computations let me
+[59:09.56] show you so here we have a single
+dimensional array to convert this to a
+[59:13.52] two-dimensional array we need to add
+another pair of square brackets now we
+[59:18.68] have a compilation error because we need
+to repeat these brackets on the other
+[59:21.95] side so let's say we want to create a 2
+by 3 matrix so 2 rows and 3 columns we
+[59:29.18] add in other brackets here and change
+these lengths to 2 and 3 so now we have
+[59:35.57] 2 rows and 3 columns now to access
+individual items in this array we need
+[59:41.00] to supply two indexes first the index of
+the row so we can go to the first row
+[59:46.37] and then the first column and initialize
+that to 1 now let us print this so and
+[59:53.78] so you t-tap once again we use our
+arrays class dot to string and pass this
+[60:00.92] object
+take a look once again we get this weird
+[60:05.87] string because here we're dealing with a
+multi-dimensional array to solve this
+[60:09.92] problem we need to use another method in
+this class called deep to string use
+[60:16.67] this for printing multi-dimensional
+arrays take a look now we have this
+[60:22.07] matrix which has two rows and in each
+row we have three columns we can also
+[60:28.49] create a three dimensional array all we
+have to do is to add another pair of
+[60:33.02] brackets and specify the length of that
+dimension pretty easy now what about the
+[60:39.38] curly brace syntax let me show you so
+let's revert this back to a two
+[60:44.87] dimensional array we're gonna get rid of
+the new operator and use curly braces
+[60:50.26] now let's say in this matrix we're gonna
+have two rows and three columns so each
+[60:55.67] row is an array itself because it's a
+list of items right
+[60:59.12] so we add another array here let's say 1
+2 3 then comma now we add the second row
+[61:07.58] which is another array in this row we're
+gonna have 3 numbers 4 5 & 6
+[61:13.64] now let's remove this line we don't need
+it anymore and print this array so
+[61:20.15] here's the end result you have learned a
+lot about variables ya learned that when
+[61:30.26] declaring them we need to initialize
+them and we can always change their
+[61:33.53] value later on throughout the lifetime
+of our programs however there are times
+[61:38.24] that we don't want the value of a
+variable to change for example let's
+[61:41.75] declare a variable called pi and set it
+to 3.14 now here we need to add an F to
+[61:49.04] represent this as a float because by
+default Java compiler sees this number
+[61:53.51] as a decimal okay now you know that we
+use pi to calculate the area of a circle
+[61:58.84] what if before we calculate the area of
+a circle I come here and type pi equals
+[62:04.13] 1 then all our calculations are gonna
+get messed up we don't want this to
+[62:08.15] happen that's when we use constants so
+if we type final here Java compiler will
+[62:15.14] treat this as a constant so once we
+initialize this we cannot change its
+[62:19.97] value later on you can see here we have
+a compilation error and it says cannot
+[62:25.07] assign a value to final variable pi so
+pi is a final variable or a constant now
+[62:31.82] by convention we use all capital letters
+to name constants so this should be PI
+[62:38.20] beautiful now I tell you a little side
+story in one of my early courses that I
+[62:42.77] created years ago that was c-sharp
+basics for beginners there I used the
+[62:47.27] same example to teach the concept of
+constants but I pronounce this word as P
+[62:51.62] instead of Pi and believe it or not to
+this day people make fun of me for
+[62:56.18] saying P instead of Pi but that's how we
+learned this back in Iran we pronounce
+[63:02.24] it as P and I think Greek people also
+say P but anyway I just thought to share
+[63:06.59] this video to change the mood now you're
+done with constants next we're gonna
+[63:11.15] talk about arithmetic
+expressions
+[63:18.83] in this tutorial we're going to talk
+about arithmetic expressions in Java so
+[63:23.67] in Java we have the same arithmetic
+operators that we have in math we have
+[63:27.48] addition subtraction multiplication
+division and modulus which is the
+[63:33.36] remainder of a division let's look at a
+few examples so I'm gonna declare an
+[63:37.80] integer called result and here we can
+type 10 plus 3 now when we print result
+[63:44.43] it's gonna be 13 pretty straightforward
+there you go so this is addition we also
+[63:49.59] have subtraction multiplication division
+is an interesting one let's take a look
+[63:56.94] so here the result is a whole number
+because in Java the division of two
+[64:01.44] whole numbers is a whole number if you
+want to get a floating-point number here
+[64:05.34] you need to convert these numbers to a
+float or a double let me show you
+[64:10.05] so we prefix this number with
+parentheses and in parentheses we type
+[64:16.23] double now we are casting or converting
+this number to a double similarly we
+[64:22.83] should do that here and now we have a
+compilation error because on the left
+[64:27.57] side we declared an integer but here the
+result of this expression is a double
+[64:33.18] and by the way an expression is a piece
+of code that produces a value so what we
+[64:38.07] have here is an expression because it
+produces a value so to fix this problem
+[64:42.78] we need to change this to double now
+when we run this program we get this
+[64:47.13] floating point number beautiful so these
+are the arithmetic operators and these
+[64:52.56] numbers that we have here are called
+operands we also have increment and
+[64:56.79] decrement operators let me show you so
+I'm gonna declare a new variable int X
+[65:03.00] we set it to 1 now if you want to
+increase the value of x by 1 we use the
+[65:07.71] increment operator now let's print this
+on a terminal so we get 2 there you go
+[65:14.52] we can apply this operator as a postfix
+or as a prefix and we get the same
+[65:20.67] result
+take a look too however if we use this
+[65:24.66] on the right side of an assignment
+operator we get different results let me
+[65:28.77] show you so I'm gonna declare another
+variable Y we set it to X plus plus in
+[65:35.10] this case because we have applied the
+increment operator as a postfix first
+[65:39.93] the value of x will get copied to Y so Y
+would be 1 and then X will be
+[65:45.57] incremented by 1 so if you print x and y
+x is gonna be 2 and Y is gonna be 1 take
+[65:54.21] a look so X is 2 and Y is 1 beautiful
+however if you apply this as a prefix
+[66:03.08] first X will be incremented by 1 so it
+will be 2 and then it will be copied to
+[66:08.94] Y so in this case both
+X&Y will be to take a look so we get two
+[66:16.05] and two now what if you want to
+increment X by more than one let's say
+[66:21.24] by two well there are two ways to do
+this let's remove Y we don't really need
+[66:26.07] it anymore we can write x equals x plus
+2 so first we add 2 to X the result will
+[66:34.47] be three and then three will be copied
+into X the other way is to use the
+[66:38.79] Augmented or compound assignment
+operator so we can write X plus equals
+[66:45.87] two what we have on line eight is
+exactly identical to what we have on
+[66:50.19] line seven well as you can see it's
+shorter so this is a better way to write
+[66:54.60] the same code now this is one of the
+Augmented assignment operators we have
+[66:59.43] the Augmented assignment operator for
+other arithmetic operators so we can
+[67:04.08] type X minus equals 2 and this would
+reduce the value of x by 2 we also have
+[67:09.72] multiply and divide so these are the
+Augmented or compound assignment
+[67:15.99] operators right now I've got a question
+for you here we have declared this
+[67:25.47] variable X it goes to 10 plus 3 times 2
+what do you think is the result of this
+[67:30.84] expression the result is 16 let's run
+this program and find out so run there
+[67:37.92] you go we got 16 but why well this is a
+very basic math concept that
+[67:42.87] unfortunately a lot of people don't know
+in math the multiplication and division
+[67:48.18] operators have a higher priority so they
+get applied first in this example this
+[67:53.94] expression 3 times 2 is evaluated first
+the result is 6 and then 6 is added to
+[68:00.18] 10 that's why we get 16 now if you want
+to change the order of these operators
+[68:04.56] you can always use parentheses for
+example if you want this expression to
+[68:08.73] be evaluated first we wrap it in
+parentheses so like this now Java
+[68:15.81] compiler will first evaluate this
+expression the result will be 13 and
+[68:19.83] then 13 is multiplied by 2 so we get 26
+take a look
+[68:24.95] there you go so be aware of the order of
+these operations parentheses always have
+[68:31.29] the highest priority then we have
+multiplication and division and finally
+[68:36.15] we have addition and subtraction in this
+tutorial we're going to talk about
+[68:45.96] casting and type conversion so I'm gonna
+declare a short variable call X and set
+[68:52.56] it to 1 and then I'm gonna declare an
+integer called Y and set it to X plus 2
+[68:58.56] in this example we're adding a short to
+an integer what do you think the result
+[69:04.29] is gonna be well let's take a look
+so sou t let's print Y we get 3 that is
+[69:12.63] what you were expecting but let me
+explain what happens under the hood for
+[69:17.07] this expression to get executed because
+we're dealing with two different types
+[69:21.18] of values one is a short the other is an
+integer one of these values should be
+[69:25.83] converted to the other type so they are
+equal now I got a question for you how
+[69:29.85] many bytes do we have in a short
+variable we have 2 bytes how many bytes
+[69:34.17] do we have in an integer 4 bytes so any
+values that we store in a short variable
+[69:39.15] can also be stored in an integer
+variable right so when this piece of
+[69:44.01] code is gonna get executed this is
+what's gonna happen first Java looks at
+[69:48.48] the value in this variable it's 1 right
+it's going to allocate another variable
+[69:54.57] an anonymous variable somewhere in
+memory we don't know where that is we
+[69:58.29] don't know the name of that variable it
+doesn't have a name it's anonymous that
+[70:02.31] variable is gonna be an integer then
+Java is gonna copy the value of x into
+[70:07.23] that memory space and then it will add
+these two numbers together this is what
+[70:11.37] we call implicit casting let me type it
+here implicit casting that means
+[70:17.67] automatic casting or automatic
+conversion we don't have to worry about
+[70:21.15] it whenever we have a value and that
+value can be converted to a data type
+[70:24.99] that is bigger casting or conversion
+happens implicitly or automatically so
+[70:30.93] byte can be automatically converted to
+short and this can be converted to int
+[70:35.40] and long okay
+now what about floating-point numbers
+[70:39.73] let's look at an example I'm gonna
+change this to a double one point one
+[70:45.25] now here we have a compilation error
+because on the right side of the
+[70:48.64] assignment operator we have a
+floating-point number a double on the
+[70:52.78] left side we have an integer so we need
+to change this to double now when we
+[70:57.73] execute this code we're gonna get 3.1
+let's verify this there you go now let's
+[71:04.57] see how casting happens here in this
+case we're dealing with a double and an
+[71:10.66] integer an integer is less precise than
+a double because in a double we can have
+[71:16.75] digits after the decimal point so in
+this example Java is going to
+[71:22.09] automatically cast this integer to a
+double so that will be two point zero
+[71:27.43] and then two point zero will be added to
+one point one okay so back to this chain
+[71:33.61] here we're gonna have float and then
+double so as a general rule of thumb
+[71:40.06] implicit casting happens whenever you're
+not gonna lose data there is no chance
+[71:45.19] for data loss now what if you want Y to
+be an integer so in this example we
+[71:51.22] don't care about the digits after the
+decimal point you want to see three on
+[71:54.85] the terminal how should we do this this
+is where we should explicitly cast the
+[71:59.56] result so we should cast X to an integer
+like this parentheses int this is
+[72:07.18] explicit casting we convert X to an
+integer so the result would be one
+[72:11.89] without a decimal point one will be
+added to 2 and Y would be three take a
+[72:17.23] look there you go so this is all about
+implicit and explicit casting now this
+[72:25.18] explicit casting can only happen between
+compatible types so all these types are
+[72:30.28] compatible because they're all numbers
+but we cannot cast a string to a number
+[72:34.44] in other words if X was a string like
+this let's say 1
+[72:43.09] we cannot cast eggs to an integer
+because they are not compatible so how
+[72:47.74] do we do this
+well for all these primitive types you
+[72:50.80] have learned you have wrapper classes so
+in Java we have a class which is a
+[72:55.63] reference type called integer this class
+is defined in Java the Lang package and
+[73:02.34] in this class we have a method called
+parse int so this method takes a string
+[73:08.23] and returns an integer so integer is the
+wrapper class for the int primitive type
+[73:14.65] we also have short and in this class we
+have parse short so it takes a string
+[73:20.89] and returns a short similarly we have
+float and double and obviously the name
+[73:27.19] of these metas are different so here we
+have parse float so back to this example
+[73:33.96] let's say we get X as a string and we
+want to convert it to an integer this is
+[73:38.74] how we do it
+integer dot parse int we pass X here and
+[73:44.08] then add it to take a look so we get 3
+you might be curious why this matters
+[73:51.46] why should we parse or convert a string
+to a number to add it to something else
+[73:55.66] well pretty much in most frameworks for
+building user interfaces whether you're
+[74:00.82] building a desktop or a mobile
+application or web application we always
+[74:04.93] receive input from the user as a string
+so if you have a form with a bunch of
+[74:09.04] text boxes or drop-down lists almost
+always we get values as a strings so
+[74:14.77] that's why we need to convert these
+strings to their numeric representation
+[74:18.85] ok now what if X is a floating-point
+number here what will happen when we try
+[74:25.93] to parse this as an integer
+let's take a look once again we get an
+[74:32.20] exception which is how Java reports
+errors to our programs we're going to
+[74:37.30] talk about exceptions in detail in the
+future
+[74:39.52] so if the user enters one point one we
+cannot use this method instead we should
+[74:45.52] use float or double let's say double
+because that's easier double parse
+[74:50.82] double so we parse this number as a
+double add two to it and then store the
+[74:56.56] result
+in a double and then we will get 3.1
+[75:00.88] beautiful next we're gonna look at the
+math class for performing mathematical
+[75:04.84] operations in this tutorial we're going
+to look at the math class for performing
+[75:14.74] mathematical operations so in Java we
+have this math class that is defined in
+[75:19.42] Java that Lang package so it's always
+there we don't need to explicitly import
+[75:23.74] it now this class has a number of useful
+methods the first method I'm gonna show
+[75:27.79] you is the round method and with this we
+can round a floating-point number to a
+[75:32.38] whole number so as you can see this
+method is overloaded which means it's
+[75:36.25] implemented twice in the first
+implementation it takes a float and
+[75:39.85] returns an int and a second
+implementation it takes a double and
+[75:44.17] returns a log so let's pass 1.1 as a
+float to this method and store the
+[75:51.19] result in an integer like this now we
+print the result and we get one
+[76:00.07] beautiful another useful method is seal
+or sealing which returns the smallest
+[76:06.61] integer that is greater than or equal to
+this number so the ceiling of 1.1 is 2
+[76:12.61] now here we have a compilation error
+because this method returns a double but
+[76:17.62] we're storing the result in an integer
+so here we need to explicitly cast this
+[76:22.84] to an integer and now you can see the
+ceiling of this number is 2 we have
+[76:28.84] another useful method that is floor so
+the floor of a number is the largest
+[76:34.48] integer that is smaller or equal to this
+number in this case it's gonna be 1
+[76:38.95] let's take a look there you go another
+useful method is max which returns the
+[76:46.93] greater of two values and once again
+this method is overloaded so in the
+[76:51.22] first implementation we get two integers
+we have other implementations for longs
+[76:55.09] floats and doubles so let's pass two
+integers here one and two this will
+[77:01.81] return the greater number which is 2
+there you go similar to this we have min
+[77:08.53] is pretty straightforward in
+the useful method is random for
+[77:13.46] generating a random value between 0 and
+1 once again we get a compilation error
+[77:18.38] because this method returns a double so
+let's change that to double now every
+[77:24.53] time we run this program we get a
+different number and this number is a
+[77:29.87] floating-point number between 0 to 1 now
+what if you want a number between 0 to
+[77:34.67] let's say 100 instead of 0 to 1 well we
+simply multiply this by 100 take a look
+[77:42.70] so every time we run this we get a
+different number between 0 to 100 now if
+[77:48.62] we don't want these digits after the
+decimal point we can either round this
+[77:52.22] number or cast it to an integer let me
+show you so we can call math that round
+[77:58.34] and pass the result of this expression
+so I'm gonna cut this add parenthesis to
+[78:04.43] call the round method and then paste
+that expression now let's run this code
+[78:10.27] so every time we get a double we still
+have the fraction here so we can change
+[78:17.45] the type to an INT now we have a
+compilation error because the round
+[78:21.80] method returns a long but here we have
+declared an integer this is one of those
+[78:25.82] cases where implicit casting cannot
+happen because we have a value that is
+[78:30.50] represented in 8 bytes of memory and you
+want to store that in a variable that
+[78:34.34] has only 4 bytes of memory so implicit
+casting doesn't work but we can use
+[78:39.05] explicit casting because we know the
+result of this expression is a number
+[78:43.10] between 0 to 100 so we can definitely
+store it in an integer so let's add int
+[78:48.26] here now let's run this again there you
+go now what if we don't use the round
+[78:56.39] method here let's see what happens so
+I'm gonna remove the call to the round
+[79:01.22] method and simply I apply this casting
+over here let's see what we get now
+[79:08.33] every time we run this program we get 0
+do you know why because here we're
+[79:12.68] applying this casting to the result of
+this method call not this entire
+[79:18.14] expression as you saw earlier every time
+we call the random method it generates a
+[79:23.39] number between 0
+to one so when we cast that number to an
+[79:27.68] integer we'll lose the fraction we
+always get zero and zero times 100 is
+[79:32.78] zero to solve this problem we need to
+wrap this entire expression in
+[79:37.52] parenthesis so we add parentheses around
+this and now let me run this we get an
+[79:45.47] integer between 0 and 100 quite often
+when we worked with numbers we need to
+[79:56.42] format them as currency values for
+example we might have a number like this
+[79:59.90] imagine this is the price of a product
+to display this to the user you want to
+[80:04.22] add a dollar sign here and separate
+every three digits with a comma or if
+[80:09.77] you might have a number like 0.1 and we
+want to represent this as a percentage
+[80:14.27] value so instead of 0.1 you want to
+display 10% so in this tutorial I'm
+[80:19.73] gonna show you how to format numbers in
+Java we have this class number format
+[80:25.25] that is defined in Java the text package
+in this package we have a lot of classes
+[80:30.14] for handling text dates numbers and so
+on so let's press ENTER here it's
+[80:35.51] important on the top beautiful now I
+want to declare a variable so let's give
+[80:39.95] this variable a name currency now we
+need to instantiate this new number
+[80:45.46] format however we get a compilation
+error here let's take a look number
+[80:50.75] format is abstract it cannot be
+instantiated so in Java we have this
+[80:55.25] concept of abstract classes so some
+classes are abstract and they're
+[80:59.24] basically like a half-baked cake we
+cannot use the new operator to create an
+[81:03.11] instance of them we're going to talk
+about abstract classes and why they
+[81:06.59] exist later in the course for now
+remember that we cannot create an
+[81:09.95] instance of the number format class
+because it's abstract so there is
+[81:14.90] another way let me show you this class
+has a bunch of methods that start with
+[81:20.39] get so we have get currency instance and
+when we call this method this will
+[81:25.61] create an instance of the number format
+class and return it so instead of using
+[81:30.38] the new operator we're gonna use this
+method here this is what we call a
+[81:34.37] factory method because it's like a
+factory it creates new are
+[81:38.27] jects now look at the return type of
+this method it's a number format object
+[81:42.44] okay so we call this method now we get
+the return value and store it in a
+[81:48.35] variable of type number format called
+currency okay let me say improperly zoom
+[81:55.43] out so you can see all the code there
+you go so on the right side of the
+[81:59.24] assignment operator we're calling the
+get currency instance method we get the
+[82:03.47] result which is a number from an object
+and store it in this variable okay now
+[82:08.81] I'm gonna zoom in so you can see clear a
+name
+[82:12.76] alright that's better now this object
+has a method for formatting values once
+[82:21.05] again you can see this method is
+overloaded we have multiple
+[82:23.93] implementations we can give it a long or
+a double or whatever so I'm gonna call
+[82:28.73] this method and pass a value like one
+two three four five six seven point
+[82:34.40] eight nine one so we have three digits
+after decimal and a few other digits
+[82:39.89] here now this method will return a
+string representation of this number
+[82:43.96] formatted as a currency so let's get
+that and store it in a string variable
+[82:49.61] like result and then we're gonna print
+result on a terminal see what we get
+[82:58.24] so we get this dollar sign every three
+digits are separated using a comma and
+[83:03.74] we only have two digits after the
+decimal point so this class is very
+[83:08.42] handy in formatting numbers as
+currencies we have another method for
+[83:12.29] formatting a number as a percent and
+that is get percent instance right now
+[83:19.55] it returns an instance of the number
+format class specialized for formatting
+[83:24.53] numbers as a percent so we need to
+rename this variable from currency to
+[83:28.67] percent now we don't want to manually
+change this because there are multiple
+[83:31.82] references to this variable this other
+reference was not updated so let me show
+[83:36.08] you the proper way to rename objects in
+intellij if you right click here you can
+[83:41.06] see this refactor menu and here we have
+rename now look at this shortcut on the
+[83:46.13] right side unfortunately it's not
+visible in my recording window but on
+[83:49.79] Mac is Shift + F
+I always use shortcuts because they're
+[83:54.14] faster so let's press shift and f6 now
+we get this red box and below this we
+[84:01.22] can see a few suggestions for a better
+name we can choose one of these or pick
+[84:05.66] our own name I'm gonna change this to
+percent and note that as I'm typing this
+[84:12.02] the other reference gets updated
+automatically so this is very helpful
+[84:15.38] now let's press Enter
+okay we're done with renaming now let's
+[84:21.02] pass a different value here so let's say
+we have a number like 0.1 we want to
+[84:27.35] format this as a percent let's run the
+program there you go you get 10%
+[84:32.21] beautiful now let me show you a cool
+technique in this program we don't
+[84:37.28] really need this percent object because
+we have used it in a single place it
+[84:41.78] would make sense to have this as a
+separate variable if you have multiple
+[84:45.02] references to it so what can we do here
+we can completely get rid of this object
+[84:49.37] so let's delete this piece of code we're
+basically calling this method of the
+[84:54.47] number format class as you know this
+method returns a number format object so
+[84:59.84] right after calling this method and
+before the semicolon we can use the dot
+[85:03.86] operator to access the methods or
+members of the number format object so
+[85:08.90] here we call the format method straight
+away and pass our value this is what we
+[85:14.24] call method chaining we're chaining
+multiple methods together so here's one
+[85:18.80] method and here's another method now
+this returns a string so we can store it
+[85:24.17] in this result variable let me cut this
+expression from here and put it over
+[85:29.99] here now we have double semicolons I'm
+going to delete one of them
+[85:35.72] all right beautiful in this tutorial I'm
+gonna show you how to read input from
+[85:46.22] the user in Java we have this scanner
+class that is defined in Java did util
+[85:51.53] package let's import this and create a
+scanner object so new scanner now here
+[85:59.57] inside this parenthesis we need to
+specify where we're gonna read data from
+[86:03.14] we're gonna read it from the terminal
+window are we gonna read it from a file
+[86:06.65] or what to work with the terminal window
+we type system dot in this is one of the
+[86:12.89] fields in the system class a fill as I
+told you before is like a variable that
+[86:17.39] we define in a class so we have system
+that in we also have system that out
+[86:22.19] which we used to print something on the
+terminal right now let's use system that
+[86:27.47] in and terminate this statement with a
+semicolon now this object has a bunch of
+[86:32.84] methods for reading data and all these
+methods start with next so we have next
+[86:38.45] byte for reading a byte we have next
+line for reading a line we have next
+[86:43.22] boolean for ending a boolean and so on
+so let's call the next byte method and
+[86:47.57] see what we get
+this returns a byte value so we can
+[86:51.05] store it in a byte variable let's say
+someone's age and then we print it on a
+[86:57.05] terminal saying you are plus h so here
+we're concatenating a string with a byte
+[87:05.42] and in this scenario we're gonna have
+implicit casting or implicit type
+[87:09.59] conversion so Java will automatically
+convert this byte variable here tray
+[87:14.87] string so they can be added together
+okay now let's run this program and see
+[87:19.55] what happens so here in the terminal
+window we can type 20 enter and it says
+[87:25.58] your 20 beautiful but this is pretty
+boring let's add a label here and ask
+[87:29.63] the user to type something for example
+before reading data we're gonna call the
+[87:35.39] print line method and say age : now
+let's run the program so we get this
+[87:41.63] label here however whatever we type will
+appear on the next line this is because
+[87:47.36] the print line method adds a new
+line after this label the Soviets issue
+[87:52.87] recall the print method now let's run
+the program one more time we get this
+[87:58.52] popup box because our program hasn't
+finished execution so we need to tell
+[88:02.48] IntelliJ that you want to stop and rerun
+this program all right now whatever we
+[88:09.47] type appears right in front of this
+label beautiful ENTER we are 20 now what
+[88:15.83] if we type a floating-point number like
+20 point 1 we get an exception because
+[88:22.58] this method can only parse white values
+if you want to get a floating-point
+[88:27.23] number we need to call next float or
+next double what if you want to read our
+[88:33.62] string we don't have next string we have
+next and next line let's look at the
+[88:39.53] differences so first I'm going to call
+the next method here we have a
+[88:43.04] compilation issue because this method
+returns a string I'm gonna change this
+[88:47.36] to a string let me collapse this that's
+better
+[88:50.63] we should also rename this variable so
+what was the shortcut Shift + f6 now
+[88:56.66] let's train just a name enter beautiful
+and one last time we should also update
+[89:02.90] the label name run the program so I'm
+gonna type my name here Marsh it says
+[89:09.62] your Amash pretty under for one more
+time this time I'm gonna type my
+[89:13.31] full-name maha Madani but we don't get
+the last name here's the reason these
+[89:19.55] wars that we have here these are called
+tokens every time we call the next
+[89:24.29] method it reads one token so here we
+have a space we have two tokens and we
+[89:29.39] need to call the next method two times
+to get the full name the first time we
+[89:33.50] call it it returns Marsh the second time
+we call it it returns Hamid ani then we
+[89:37.55] need to combine this suit together this
+is not ideal so that's when we use the
+[89:41.99] next line method with this method we get
+the in turn line that the user enters no
+[89:46.61] matter how many spaces or tabs are there
+take a look so Marsh
+[89:52.40] comma Donny and we get the full name now
+what if I type a few spaces before my
+[89:59.15] name let's see what happens
+so those spaces also appear here and
+[90:04.09] this looks a little bit odd this is
+where we use the trim method remember we
+[90:08.20] trim we can get rid of all these white
+spaces before or after a string so this
+[90:14.59] next line method returns a string that
+we are storing in this variable right
+[90:18.34] now just before storing the result in
+this variable here we can use the dot
+[90:23.38] operator to access the members of this
+string object so we call the trim method
+[90:29.17] and then store the result in this
+variable once again we're chaining
+[90:33.82] multiple methods here let's run the
+program so a few spaces Maharani and you
+[90:42.19] get this beautiful output
+[90:48.76] right now it's time for a project I want
+you to use what you have learned in a
+[90:52.91] section and build a mortgage calculator
+like this so when you run this program
+[90:57.47] we get a few questions the first
+question is the principal or the amount
+[91:02.03] of loan we want to get let's say
+$100,000 the second question is the
+[91:07.61] annual interest rate let's say three
+point nine two percent and the third
+[91:13.52] question is period in years let's say
+you want to get a loan for thirty years
+[91:17.45] so this program calculates our monthly
+payments and displays it as a currency
+[91:22.46] this is a great exercise for you to
+practice all the materials you learn in
+[91:26.51] this section now before you get started
+I want to give you a few hints here is a
+[91:30.77] formula for calculating the mortgage or
+the monthly payments I found this page
+[91:35.36] on wikiHow comm is called calculate
+mortgage payments so let's see how this
+[91:40.43] works mortgage equals P or principal or
+the amount we're gonna loan multiplied
+[91:45.86] by R which is our monthly interest rate
+this is very important so this number
+[91:51.35] that we get here is our annual interest
+rate we need to divide this by 12 also
+[91:56.36] take into account that this number is
+represented as a percent to calculate
+[92:00.41] the actual interest rate you need to
+divide this number by 100 so in this
+[92:04.88] example the interest rate is zero point
+zero three nine two so whatever the user
+[92:10.70] enters divided by 100 and then divided
+by twelve to get to the monthly interest
+[92:15.38] rate now we have this monthly interest
+rate we need to multiply this by this
+[92:19.85] expression here we need to add 1 to this
+interest rate and raise it to the power
+[92:24.89] of n where n is the number of payments
+so we need to multiply this number by 12
+[92:31.04] or 12 months to calculate the number of
+payments now to raise this number to the
+[92:36.35] power of n you need to use the power
+method of the math class so this math
+[92:41.69] class has this power or power method
+that takes two arguments or two values a
+[92:46.28] and B so go ahead and spend ten to
+fifteen minutes on this exercise when
+[92:51.53] you're done come back see my solution
+[92:58.95] all right let's see what I've done here
+and by the way don't worry if your coat
+[93:02.44] is different from mine
+we all think and coat differently so
+[93:05.68] it's perfectly fine if your code is
+different
+[93:07.54] just look at my coat see what I've done
+here and see if there are ways you can
+[93:10.84] improve your coat
+that's what matters okay so here in our
+[93:15.43] main method first I've declared two
+final variables or constants
+[93:19.72] the first one is months in year which
+I've set to 12 and the second one is
+[93:23.86] percent which I've set to 100 the reason
+I declared this constant is that I
+[93:28.03] didn't want to have magic numbers in
+this code so over here where we
+[93:32.95] calculate the monthly interest we get
+the annual interest divided by percent
+[93:37.54] and then months in here this code is
+very self-explanatory someone else
+[93:42.34] reading this code we'll have no problem
+understanding what's going on here in
+[93:45.58] contrast if you had a magic number here
+like divided by 12 and then for whatever
+[93:50.91] someone else reading this code would
+wonder what is this for doing here what
+[93:54.70] is 12 it's quite obvious to you that 12
+is the number of months in a year but
+[93:58.93] trust me sometimes other people cannot
+see this straight away so as a best
+[94:03.31] practice avoid magic numbers in your
+code always use constants or final
+[94:08.71] variables to describe them
+so let's revert this back all right so
+[94:14.86] after declaring this constant I've
+created this scanner object here we ask
+[94:19.27] the first question
+principle and we read the answer as an
+[94:23.50] integer
+I thought integer is a good datatype for
+[94:25.87] storing the principle because short is
+not enough with short we can store a
+[94:30.85] maximum of $32,000 that's not enough
+what if someone wants to find us
+[94:36.04] $1,000,000 so int is good and it allows
+us to store a value up to two billion
+[94:40.74] next we ask the second question annual
+interest rate we read this as a float
+[94:45.97] here I could use double but the interest
+rate is a small number so float is
+[94:50.41] sufficient for that we don't really need
+double so we get the annual interest and
+[94:54.37] then based on that we calculate the
+monthly interest also see how I have
+[94:59.44] named my variables all variables have a
+proper meaningful names there are no
+[95:04.33] magic words here like MI as it short for
+monthly interest
+[95:08.35] or m1 or m2 do not use magic names for
+your variables always use meaningful and
+[95:14.35] descriptive names alright next we get
+the period we read this as a byte
+[95:21.46] because the maximum number we want to
+support is 30 so one byte is sufficient
+[95:25.57] to store the number 30 or anything
+smaller now based on the number of years
+[95:29.89] we calculate the number of payments note
+the camel notation here I've capitalized
+[95:34.96] the first letter of every word except
+the first word so we get the Earth's and
+[95:39.73] x months in here
+again the code is very self-explanatory
+[95:44.31] once we collect all this data then we
+calculate the mortgage so we get a
+[95:49.69] principal multiplied by this expression
+and then divide it by this other
+[95:54.79] expression let's have a quick look here
+now this looks a little bit complicated
+[95:58.57] so if you're not download my source code
+look below this video I'm attached it
+[96:02.62] for you to download and finally after we
+calculate the mortgage we use the number
+[96:07.54] format class to format this value as a
+currency so we get a result store it in
+[96:14.14] this string mortgage format it and print
+it over here now here we can also avoid
+[96:19.54] declaring this variable and simply add
+this expression over here but it decided
+[96:24.67] to do this to increase the readability
+of this code otherwise this line would
+[96:28.48] be so long but that's just my personal
+preference you don't have to follow this
+[96:32.10] alright so this was my implementation of
+the mortgage calculator
+[96:35.79] however this program has a number of
+problems the first problem is input
+[96:41.08] validation so if we run this and enter a
+non numeric value like XYZ our program
+[96:49.96] crashes or as another example if we
+enter a negative value here our program
+[96:55.15] is not gonna behave properly so that's
+where conditional statements come to the
+[96:58.93] rescue in the next section we're going
+to talk about conditional statements you
+[97:02.62] will learn how to use these statements
+to validate the values entered by the
+[97:06.46] user so that brings us to the end of
+this section I hope you learn a lot and
+[97:10.60] thank you for watching
+[97:17.09] so in this section you'll learn all
+about variables and constants you learn
+[97:21.21] about primitive and reference types you
+learn that primitive types store simple
+[97:24.99] values but reference types hold
+references to complex objects that's why
+[97:29.16] we call them reference types you also
+learn about casting and type conversion
+[97:33.54] you learn about two types of casting
+implicit and explicit you learn how to
+[97:37.71] work with numbers strings and arrays and
+finally you learned how to read input
+[97:42.33] from the terminal I hope you learned a
+lot I've been enjoying the course so far
+[97:45.96] in the next section we're going to look
+at conditional statements for
+[97:48.84] controlling the flow of our programs so
+I'll see you in the next section
+[98:01.51] hey Marcia I just want to make a quick
+announcement this course you've been
+[98:05.56] watching is actually the beginning of my
+complete Java series in this course we
+[98:10.45] only talk about the basics but in my
+complete series we go way beyond that so
+[98:15.07] if you're serious about Java if you're
+looking for a job as a Java developer I
+[98:18.73] highly encourage you to enroll in my
+complete Java series it's exactly the
+[98:22.75] same structure the same quality but it
+has way more content plus you will get a
+[98:28.09] certificate of completion that you can
+add to your resume so if you're
+[98:31.72] interested I put the link down below you
+can get the course with a discount and
+[98:34.96] if you're not happy for any reasons you
+can ask for a refund within the first 30
+[98:39.58] days so I hope to see you in the course
+in this section we're going to look at
+[98:45.04] control flow or controlling the flow of
+execution of our programs you're gonna
+[98:50.20] start off by talking about comparison
+operators for comparing values then I'm
+[98:54.46] gonna talk about logical operators like
+the logical and logical or and logical
+[98:59.53] not we use these operators for
+implementing real world rules and then
+[99:04.24] we're gonna talk about three different
+types of control flow statements we're
+[99:07.93] going to talk about conditional
+statements for making decisions in our
+[99:11.50] programs then we're going to talk about
+loops for executing code repeatedly and
+[99:16.03] finally we're going to revisit our
+mortgage calculator and add error
+[99:20.08] handling to it
+so if a user enters an invalid value we
+[99:24.07] keep asking them to try again all right
+now let's jump in and get started we're
+[99:34.93] gonna start this section by talking
+about comparison operators we use these
+[99:38.83] operators to compare primitive values
+for example our x on y equal or not so
+[99:45.10] I'm gonna declare two integers x and y
+now let's compare this to see if they're
+[99:52.36] equal or not
+so first I'm gonna add this print line
+[99:56.17] statement now to compare these variables
+we type x equals y so here we have two
+[100:02.77] equal signs and this is the Equality
+operator don't confuse this with a
+[100:06.76] single equal sign that we use for
+assignment that is the operator used
+[100:11.02] over here okay so two equal signs
+repairs
+[100:14.98] the Equality operator now when we run
+this program we get true because these
+[100:20.62] values are equal this expression that we
+have here is called a boolean expression
+[100:25.65] so earlier I told you that an expression
+is a piece of code that produces a value
+[100:30.67] this piece of code produces a boolean
+value true or false that's why we refer
+[100:35.23] to it as a boolean expression we also
+have the inequality operator so when we
+[100:41.17] run this program we're gonna see false
+let's take a look we get false because
+[100:46.12] these two variables are equal so the
+expression X is not equal to Y returns
+[100:52.48] false we also have greater than greater
+than or equal to less than and less than
+[101:00.28] or equal to so if I change Y to 2 this
+expression is gonna evaluate to true
+[101:05.53] because X is less than or equal to Y
+take a look there you go
+[101:11.32] next we're going to talk about logical
+operators in the last tutorial you learn
+[101:21.61] that a boolean expression produces a
+boolean value now there are times we
+[101:25.93] want to combine multiple boolean
+expressions let me show you so I'm going
+[101:29.98] to declare an integer called temperature
+and set it to 22 next we declare a
+[101:36.46] boolean variable is warm now we want to
+check to see if temperature is greater
+[101:41.71] than 20 and less than 30 so we write a
+boolean expression like this temperature
+[101:47.41] greater than 20 here we need to use the
+end operator so these two ampersands
+[101:53.32] represent the logical and operator in
+Java
+[101:56.35] after this we add our second condition
+temperature less than 30 now if both
+[102:03.19] these conditions are true the result of
+this boolean expression is going to be
+[102:06.88] true
+otherwise if at least one of these is
+[102:09.31] false the result would be false let's
+take a look so I'm gonna print is warm
+[102:14.44] on a terminal
+[102:18.19] the result is true but if you change the
+temperature to let's say 12 the result
+[102:25.96] is gonna be false and this is how this
+works Java will evaluate this expression
+[102:30.40] from left to right first it looks at the
+first condition the first condition is
+[102:34.96] false because temperature is not greater
+than 20 so because this expression is
+[102:39.52] false it doesn't matter what we have
+after the and operator Java will ignore
+[102:45.31] the other expressions because the and
+operator will return true if both
+[102:49.00] conditions are true okay now let's look
+at another operator that is the or
+[102:54.01] operator so I'm going to delete all this
+code and start with a new example let's
+[102:59.35] declare a boolean has high income we set
+it to true and another boolean has good
+[103:07.57] credit we set this to true as well so
+let's say we're building an application
+[103:12.22] for processing loans we want to see if a
+new applicant is eligible for a loan or
+[103:16.96] not
+so we declare another boolean is
+[103:21.09] eligible and by the way look at the
+names I have used for these variables
+[103:25.57] they're very meaningful and descriptive
+so here's the rule an applicant is
+[103:30.94] eligible if they have high income or
+good credit if one of these conditions
+[103:35.59] is true they are eligible so we write
+has high income or so these two vertical
+[103:43.54] bars represent the or operator so if
+they have high income or good credit
+[103:49.68] then they are eligible so with the or
+operator if at least one condition is
+[103:55.51] true the result will be true in this
+example when Java evaluates this
+[104:00.31] expression it starts from the left side
+this boolean variable is true so it
+[104:05.11] doesn't matter what we have after Java
+will not evaluate the rest of this
+[104:09.07] expression it simply returns true
+however if this variable was false Java
+[104:15.67] would continue evaluating this
+expression hoping that the next boolean
+[104:19.60] value or the next boolean expression is
+true so this is the or operator and
+[104:24.10] finally we have the not operator that we
+use to reverse a value let me show you
+[104:28.93] how that works
+so
+[104:31.13] let's declare another boolean variable
+has criminal record we set this to false
+[104:37.57] so here's the rule we want to implement
+in order for someone to be eligible for
+[104:42.20] a loan they should either have high
+income or good credit and they should
+[104:47.12] not have any criminal records so let's
+see how we can implement this rule we
+[104:52.64] have implemented the first part they
+should either have high income or good
+[104:56.30] credit now we want to make sure they
+don't have any criminal records so we
+[105:01.37] need to combine the result of this
+expression with this boolean value using
+[105:05.60] the and operator so first we wrap this
+expression in parentheses then we apply
+[105:11.93] the end operator and here we add has
+criminal record now you want to make
+[105:17.75] sure they don't have criminal record and
+this is where we use the not operator so
+[105:22.64] the not operator will reverse the value
+of this boolean variable or expression
+[105:27.14] in this case this variable is set to
+false so when we apply the not operator
+[105:32.33] to it the result would be true so if the
+first condition is true and the second
+[105:37.85] condition is true then that person is
+eligible for a new loan so as you can
+[105:43.31] see these logical operators are very
+useful in implementing real word rules
+[105:47.71] next we're going to talk about if
+statements in this tutorial we're going
+[105:57.59] to look at if statements in Java if
+statements are extremely important
+[106:01.82] because they allow us to build programs
+that can make decisions based on certain
+[106:05.93] conditions here's an example in this
+file we have a bunch of conditions if
+[106:11.36] temperature is greater than 30 perhaps
+you want to display two messages to the
+[106:15.56] user it's a hot day drink plenty of
+water otherwise if it's between 20 and
+[106:21.08] 30 you want to print it's a nice day and
+otherwise we want to print it's a cold
+[106:26.12] day so let's see how we can implement
+these rules in a Java program back to
+[106:31.58] our main file we start by declaring a
+variable temperature we set it to 32 now
+[106:38.78] we use an if statement followed by a
+pair of parentheses inside this
+[106:42.77] parenthesis we type
+an expression or a boolean value so
+[106:46.94] let's say temp is greater than 30 now if
+this condition is true the statement
+[106:53.69] that we had after this if statement will
+be executed so let's print it's a hot
+[107:00.25] day let's run the program we get this
+message because temperature is greater
+[107:06.89] than 30 now what if you want to print
+another message like drink plenty of
+[107:11.24] water here we should add curly braces to
+define a code block so if this condition
+[107:17.21] is true all the code that we have inside
+of this block would be executed let's
+[107:22.37] add another message here drink water
+okay so this was our first condition now
+[107:29.45] let's add a second condition so after
+the right brace we type LS if once again
+[107:35.72] we add our parentheses and inside these
+parentheses we type a boolean expression
+[107:39.85] if 10 is greater than 20 and it's less
+than or equal to 30
+[107:47.33] you want to print a different message
+like beautiful day now here I haven't
+[107:54.50] added the braces because we have a
+single statement so braces are only
+[107:58.49] required if we have multiple statements
+now this is a little bit controversial
+[108:03.02] some people believe we should always add
+braces whether we have a single
+[108:06.38] statement or not other people like
+myself believe this creates unnecessary
+[108:10.43] noise in the code in this tutorial I'm
+gonna add the braces first and then
+[108:14.36] remove them so you can see the
+difference so let's add a pair of curly
+[108:19.07] braces here and finally our last
+condition so if none of these two
+[108:23.30] conditions are true let me print a
+different message so here we simply type
+[108:27.71] LS we don't have any more conditions so
+let's add a code block and print cold
+[108:35.63] day now let me define a few terms here
+we have an if statement and this
+[108:41.84] statement has three clauses or three
+sections here's the first Clause here's
+[108:47.81] the second Clause and here's the third
+Clause pay attention to how a formatted
+[108:53.18] this if statement so first we have the
+if Clause the else if
+[108:58.23] and else clauses are placed after these
+right braces so we have some kind of
+[109:03.60] hierarchy here here we have a parent
+followed by two children now let's get
+[109:08.88] rid of these unnecessary braces and
+reformat our code to see the difference
+[109:12.75] so I'm gonna remove the braces for the
+else clause and also one more time here
+[109:19.61] that's better now we can simplify this
+boolean expression basically we don't
+[109:25.32] need this piece of code here here's the
+reason if the first condition is not
+[109:30.63] true what does it mean that means the
+temperature is less than or equal to 30
+[109:34.89] so this expression here is unnecessary
+let's delete this and simplify our code
+[109:40.26] that's better now look at how this code
+is formatted on the top we have if the
+[109:45.84] else if Clause is a little bit indented
+but the else Clause is not indented it's
+[109:51.03] at the same level as the if Clause and
+this looks a little bit ugly the code is
+[109:55.68] not symmetrical so if you want to get
+rid of the curly braces a better way to
+[110:00.57] format this code is like this so instead
+of adding the else if or else classes
+[110:07.44] after curly braces we add them on a new
+line now all these clauses are at the
+[110:13.32] same level the code is easier to read in
+this tutorial I'm gonna show you a very
+[110:23.70] cool technique for simplifying if
+statements so let's start by declaring a
+[110:28.68] variable called income and set it to
+120,000 now here we can use an
+[110:35.79] underscore in between these three digits
+to make our code more readable now let's
+[110:40.86] say we want to declare a boolean
+variable called has high income if the
+[110:46.35] income is more than $100,000 you want to
+set this to true otherwise we want to
+[110:50.82] set this to false so here we can write
+an if statement like this if income is
+[110:57.48] greater than $100,000 we want to set has
+high income to true however we get a
+[111:07.56] compilation error here
+let's take a look declaration not
+[111:11.13] allowed here
+so we cannot declare a variable here we
+[111:14.49] can only declare variables inside code
+blocks like this code block over here so
+[111:20.40] to declare this variable we need to add
+curly braces to define a new code block
+[111:25.56] now we have a different problem this
+variable that we have defined is scoped
+[111:30.33] to this code block so it's only
+available here we cannot access it
+[111:34.77] outside of this block let me show you so
+if we print has high income you can see
+[111:42.96] we have a compilation error cannot
+resolve symbol has high income because
+[111:47.52] this variable is not available outside
+of the block in which it's declared so
+[111:52.17] to solve this problem we can declare
+this variable after setup this block
+[111:56.75] boolean has high income and then we can
+simply set it to true in this block now
+[112:04.41] we don't need these braces anymore so
+let's simplify the code we add an else
+[112:09.57] clause otherwise we said has high income
+to false let's remove this print method
+[112:15.75] we don't need it anymore so this is one
+way to implement this scenario but this
+[112:20.55] code looks very amateurish a
+professional programmer doesn't write
+[112:24.18] code like this let's improve it step by
+step one way to improve this is to give
+[112:29.73] this boolean variable an initial value
+for example we can set it to false
+[112:34.74] initially and then we implement this
+condition so if the income is more than
+[112:40.07] $100,000 then we set this variable to
+true with this we no longer need is else
+[112:46.29] Clause
+so that was one improvement but it's
+[112:49.86] still not ideal in situations like this
+we can completely get rid of this if
+[112:54.69] statement here let me show you instead
+of hard-coding false here we type our
+[113:01.14] expression income is greater than
+$100,000 so here we have a boolean
+[113:07.47] expression if this boolean expression
+evaluates to true this boolean variable
+[113:12.99] is going to be true otherwise it's going
+to be false so this is the simplest the
+[113:17.43] most elegant and the most professional
+way to implement this scenario now one
+[113:22.68] more improvement before we finish this
+tutorial I
+[113:25.62] personally prefer to wrap this
+expression in parentheses even though
+[113:29.04] technically we don't need parentheses
+here but these parentheses make our code
+[113:33.03] more clear more readable let me show you
+so I'm gonna wrap this inside these
+[113:38.16] parentheses now it's very clear we're
+obviously on the right side of this
+[113:42.18] assignment operator we have a boolean
+expression in this tutorial we're gonna
+[113:52.17] look at the ternary operator in Java so
+we're gonna continue with the example
+[113:56.40] from the last tutorial we had this
+income variable imagine this is the
+[114:00.51] income or customers now depending on
+their income
+[114:03.78] you want to put these customers in
+different classes if their income is
+[114:07.14] more than $100,000 you want to put them
+in the first class otherwise we want to
+[114:11.55] put them in the economy class so here's
+one way to implement the scenario we
+[114:16.77] declare this string variable class name
+note that we cannot call this class
+[114:22.35] because class is a reserved keyword so
+class name now we write our first
+[114:27.78] condition if income is greater than
+$100,000 we said class name to first
+[114:35.84] otherwise we set it to economy
+[114:41.73] now as you learn in the last tutorial
+this code looks very amateurish a
+[114:45.84] professional programmer doesn't write
+code like this so one way to simplify
+[114:49.62] this is to give this variable an initial
+value so we assume they are in the
+[114:55.50] economy class and then we check this
+condition if this condition is true we
+[114:59.67] put them in the first class so with this
+we can get rid of this else clause that
+[115:04.68] is better now in the last tutorial I
+showed you how to simplify this even
+[115:08.91] further but the technique you learned
+there cannot be used here in other words
+[115:13.53] we cannot add income greater than
+$100,000 here because here we have a
+[115:21.18] boolean expression but on the left side
+we have declared a string variable so we
+[115:26.19] want to set this to a different string
+depending on the result of this
+[115:29.88] expression and this is where we use the
+ternary operator so we start with our
+[115:35.16] condition then we type a question mark
+if this condition is true we add this
+[115:41.58] value here otherwise we add the other
+value so this question mark and colon is
+[115:48.69] the ternary operator in Java it has
+three pieces first we have a condition
+[115:54.06] if this condition is true this value
+will be returned and assigned to our
+[115:58.68] class named variable otherwise this
+other value will be returned now we can
+[116:04.23] completely get rid of this if statement
+so put the ternary operator in your tool
+[116:10.02] box it's very helpful next we're going
+to look at switch statements in Java in
+[116:19.80] this tutorial we're going to look at
+switch statements in Java we use three
+[116:24.09] statements to execute different parts of
+code depending on the value of an
+[116:27.93] expression kind of similar to if
+statements let me show you so let's say
+[116:32.10] we're gonna write a program and check
+the role of the current user and then
+[116:35.58] we're gonna print different messages or
+give them different features depending
+[116:38.79] on their row so let's declare a string
+variable called role and here we set
+[116:45.21] this to admin now to check the role of
+the user we can write an if statement
+[116:49.89] like this if role equals admin then
+perhaps
+[116:55.50] we want to print you are an admin now
+you might be wondering why we have this
+[117:00.69] condition here it's obvious that this
+condition is always true because we have
+[117:04.32] set roll to admin but this is just for
+demonstration in a real program we are
+[117:09.06] not gonna hard code this admin here so
+we're gonna read the role of the current
+[117:13.53] user from somewhere else
+we don't know what it is at the time of
+[117:16.86] writing code okay so here we have one
+condition
+[117:20.22] let's write another condition else if
+role equals moderator perhaps we want to
+[117:27.21] display a different message so you are a
+moderator and finally if the role is
+[117:34.47] none of these values you want to print
+you are a guest so this is one way to
+[117:40.32] implement this scenario using an if
+statement we can also implement this
+[117:44.64] using a switch statement and sometimes
+that looks a little bit cleaner let me
+[117:48.90] show you so we start with a switch
+statement then we add parentheses and
+[117:55.11] inside this parenthesis we add our
+variable in this case row next we define
+[118:00.09] a block of code and in this block we add
+one or more case clauses so we have a
+[118:06.57] case for an admin we add a colon here
+now what do we want to do here if the
+[118:11.61] role is admin you want to print you are
+an admin so I'm gonna copy this line
+[118:17.07] from here and then paste it over here
+now after this line we need to add a
+[118:22.14] break statement to jump out of this
+switch block okay then we add another
+[118:27.87] case Clause so case moderator once again
+you got a colon and here we're gonna
+[118:34.41] print this other message so we paste it
+here and then we're gonna break
+[118:40.70] now optionally we can have a default
+clause here so if none of these previous
+[118:45.41] cases apply the code that we write in
+this section will be executed so here we
+[118:49.58] want to print you are a guest
+now here we don't need to use a break
+[118:54.59] statement because we're at the end of
+the switch block so will automatically
+[118:58.70] jump out of this block in contrast if we
+didn't use this break statement here
+[119:03.86] Java will continue executing these other
+lines here so if the role is admin first
+[119:08.45] it will execute this line and then it
+will jump to this case block it will
+[119:12.44] execute this other line and then after
+it executes this break statement it will
+[119:16.52] jump out of this switch block okay so
+this is how we use a switch statement
+[119:21.94] now compare this with wave statement
+some people prefer to use if statements
+[119:28.19] others prefer to use a switch statement
+now one more thing before we finish this
+[119:32.69] tutorial here we're comparing the value
+of role with strings but we could also
+[119:37.19] use integers other than the long type so
+if roll was a byte short or an integer
+[119:42.80] our cases would look like this case one
+case two and so on now here we have a
+[119:50.27] compilation error because roll is a
+string let's change this to an integer
+[119:55.13] and we can initialize this to one so as
+you can see with sweet statements we can
+[120:01.46] execute different code depending on the
+value of an expression
+[120:10.25] all right now it's time for an exercise
+this exercise I'm gonna give you is a
+[120:14.49] popular interview question so I want you
+to write a program that behaves like
+[120:18.90] this here we should enter a number if
+this number is divisible by five we get
+[120:25.08] this so if you run the program again and
+enter ten once again we get fit now if
+[120:32.37] this number is divisible by 3 we get
+buzz if this number is divisible by both
+[120:37.95] five and three like fifteen or thirty or
+whatever we get fizzbuzz and if this
+[120:45.27] number is not divisible by five or three
+like two we get the same number printed
+[120:51.81] on the terminal so go ahead and spend
+five to ten minutes on this exercise
+[120:55.74] you'll see my solution next
+[121:01.19] all right to read the number first we
+need to use the scanner object so
+[121:05.61] scanner we import this and instantiate
+it and as you know here we need to pass
+[121:12.24] system that in to read data from the
+terminal now we print a message so we're
+[121:19.74] gonna use the print method instead of
+print line here we add a label like
+[121:23.67] number and then we call scanner the next
+int to read a number we store it in this
+[121:32.19] variable number okay so the first part
+is done now we need to check to see if
+[121:37.20] this number is divisible by five or not
+so we can write an if statement like
+[121:41.64] this if number here we use the modulus
+operator which returns the remainder of
+[121:47.31] a division so we divide this by five and
+if the remainder equals zero that means
+[121:53.31] this number is divisible by 5 so we
+print fizz now
+[122:01.85] otherwise if this number is divisible by
+3 we print buzz we need another
+[122:10.41] condition if this number is divisible by
+5 and 3 so here we use the and operator
+[122:18.20] number divisible by 3 equals 0 in this
+case we want to print fizz buzz
+[122:25.10] otherwise you want to print the same
+number like this now this is not the
+[122:30.99] right solution as I will show you in a
+second this program has a book but it's
+[122:35.13] a very common solution that I see
+amongst my students so let's run this
+[122:38.79] program and see what is wrong here
+all right here we enter five we get fizz
+[122:45.82] utiful what if you enter ten ten is also
+divisible by 5 so we get fits so far so
+[122:52.90] good what about a number that is
+divisible by 3 we get buzz good what if
+[123:00.88] we enter a number that is divisible by
+both 5 & 3 like 15 we get physican why
+[123:07.87] is that here's the reason with this
+implementation if we enter 15 this first
+[123:13.57] condition will evaluate to true so we
+get fizz these other else clauses will
+[123:19.27] be ignored and that is why this line
+will not be executed so in situations
+[123:25.03] like this you should have the most
+specific conditions on the top and the
+[123:30.07] most generic ones on the bottom in this
+case we want to move this condition to
+[123:35.38] the top so if the number is divisible by
+5 & 3 we're gonna print fizzbuzz so this
+[123:44.62] is very specific otherwise if the number
+is only divisible by 5 we print fizz
+[123:50.40] else if it's divisible by 3 we print
+buzz and finally if none of his
+[123:56.50] conditions is true then we print the
+same number now let's run the program
+[124:01.21] one more time so we enter 15 and we get
+fizzbuzz beautiful so here's one way to
+[124:07.12] solve this problem now I've seen some
+people argue that we have repeated this
+[124:12.07] expression twice number is divisible by
+5 we have that here on line 12 as well
+[124:18.07] as line 14 in programming we have this
+concept called dry which is short for
+[124:22.96] don't repeat yourself so some people
+argue that here we have repeated this
+[124:27.82] expression and this is not a good
+solution here is another way let me show
+[124:31.84] you so we're gonna get rid of this
+second condition here instead we're
+[124:37.36] gonna add a code block over here so if
+the number is divisible by 5 first we
+[124:43.45] check to see if the number is also
+divisible by 3 if that's the case we
+[124:48.70] print fizzbuzz
+otherwise we print just fizz
+[124:54.59] like this okay now we no longer need
+these two lines because we already
+[124:59.18] implemented this concept here so first
+we check to see if the number is
+[125:03.68] divisible by five if not we check to see
+if it's divisible by three and otherwise
+[125:08.84] so here is another way to solve this
+problem but in my opinion this approach
+[125:12.77] is kind of amateurish and ugly because
+these nested if-else statements are
+[125:17.69] considered a bad practice now this is
+not terribly bad but the more you nest
+[125:22.67] these L statements the more confusing
+your code is going to be to other people
+[125:27.05] so I personally prefer the previous
+solution even though we had a bit of
+[125:30.62] repetition in the code the more you
+program the more you build software the
+[125:34.49] more you realize that there is no way to
+build ideal software programming and
+[125:39.05] problem solving is all about trade-offs
+every solution has certain strengths and
+[125:43.58] certain weaknesses this solution doesn't
+have any repetition or duplication in
+[125:47.96] the code but it has a nested structure
+and these nested structures make our
+[125:52.31] code hard to read and understand the
+previous solution had a bit of
+[125:56.51] repetition but it had a flat structure
+there is no nesting here and this code
+[126:01.10] is cleaner and easier to read there are
+times that we want to repeat one or more
+[126:11.00] statements for example let's say we have
+this hello world message here let's say
+[126:16.79] we want to print this five times on the
+terminal we don't want to repeat this
+[126:20.36] code like this this looks very ugly
+that's where we use loops in Java we
+[126:25.70] have a few different types of loops the
+first one that I'm going to talk about
+[126:28.76] in this tutorial is for loops so let's
+see how we can use a for loop here I'm
+[126:33.47] going to delete all this code you start
+by typing the for keyword followed by
+[126:38.66] parentheses and inside these parentheses
+we need to do three things first we need
+[126:43.88] to declare a loop or counter variable so
+let's declare a variable called I and
+[126:49.30] initialize it to 0 quit often use
+variable names like I J and K for loop
+[126:55.40] counters next we add a semicolon to
+terminate the first statement then we
+[127:00.92] write a boolean expression that
+determines how many times this loop is
+[127:05.24] gonna get executed so I
+than five as long as I is less than five
+[127:11.24] this loop will be executed once again we
+add a semicolon and finally we increment
+[127:17.39] I by one like this so this is the basic
+structure for a for loop now here we can
+[127:24.35] repeat one or more statements using this
+for loop so we can add our hello world
+[127:29.38] message here like here we have a single
+statement so we don't need braces but if
+[127:34.67] you have multiple statements that we
+want to repeat we need to define a code
+[127:39.05] block here now I'm gonna remove this
+because you don't really need them so
+[127:44.63] let's run this code and see what we get
+you get hello world printed five times
+[127:49.82] on the terminal beautiful now let me
+explain how this code gets executed when
+[127:54.62] Java sees this for loop first it will
+execute this statement so here we are
+[127:59.90] initializing I to zero then Java
+evaluates this condition is this
+[128:05.24] condition true obviously it is because
+zero is less than five so the control
+[128:09.68] moves to line seven this line gets
+executed now at the end of this
+[128:14.54] iteration or at the end of this loop the
+control moves here
+[128:18.35] so I is incremented by one now we are at
+the beginning of the second iteration
+[128:23.72] once again this condition is evaluated
+is one less than five obviously it is so
+[128:29.09] once again the body of this loop gets
+executed now fast forward at the end of
+[128:35.51] the fifth iteration I will become five
+five is not less than five so the loop
+[128:41.00] condition will be false and control
+moves outside of this for loop now
+[128:46.13] here's one thing you need to remember if
+you want to execute something five times
+[128:49.13] you can initialize your loop counter or
+loop variable to zero and use the less
+[128:54.41] than operator here another way is to
+initialize this to one and then use the
+[128:59.60] less than or equal to operator here now
+to make this more interesting let's
+[129:04.58] print I over here so here we add a space
+and then concatenate this string with I
+[129:10.51] take a look so we get hello ward one two
+three four five in contrast if we
+[129:17.33] initialize I to zero and use the less
+than operator
+[129:22.66] we will get hello word zero one two
+three four we can also print these
+[129:27.65] numbers in reverse order so we
+initialize I to five and execute this
+[129:33.71] loop as long as I is greater than zero
+but here instead of incrementing I we
+[129:40.55] decrement it now we get hello world five
+four three two one
+[129:46.40] so this is all about for loops next
+we're gonna look at while loops in this
+[129:57.29] tutorial we're gonna talk about while
+loops in Java while loops are very
+[130:01.25] similar to for loops in terms of their
+functionality but they're different in
+[130:04.85] terms of syntax let me show you so we're
+gonna continue with the example from the
+[130:08.60] last tutorial I'm gonna rewrite this
+code using a while loop so first we
+[130:13.85] declare a loop variable and I initialize
+it to zero
+[130:18.20] next we type while and here in
+parentheses we type our loop condition
+[130:23.68] while I is greater than zero then we're
+gonna execute the code inside this block
+[130:30.11] so I'm gonna copy this from here paste
+it in this block and finally we need to
+[130:35.90] decrement I like this so at the end of
+each iteration we decrement I just like
+[130:43.22] our for loops so as you can see we can
+achieve the same thing using a for loop
+[130:47.69] or a while loop
+however the implementation using the for
+[130:51.77] loop is a little bit lighter and cleaner
+so in situations where you know ahead of
+[130:57.17] time how many times you want to execute
+one or more statements it's better to
+[131:02.12] use a for loop while loops are better in
+situations where we don't know exactly
+[131:06.11] how many times you want to repeat
+something for example let's say we're
+[131:10.19] going to write a program and ask the
+user to continuously enter something
+[131:14.12] until they type quit the moment they
+type quit we're gonna terminate the
+[131:18.08] program in that situation we don't know
+how many times the user is going to
+[131:21.89] enter something so let's write that
+program using a while loop
+[131:25.76] I'm gonna delete everything from here
+[131:29.66] all right we're gonna start with our
+while loop now what is our loop
+[131:33.41] condition here we don't have a counter
+variable in this example instead we want
+[131:37.85] to check to see if the user entered quit
+or not so here we can declare a string
+[131:43.69] called input and initialize it to an
+empty string then we can write a while
+[131:49.46] loop like this while input does not
+equal to quit now this code is not gonna
+[131:56.24] work because input is a string which is
+a reference type and we cannot use
+[132:00.95] comparison operators between reference
+types because these operators will
+[132:04.97] compare the address or a string objects
+not their value so if you have two
+[132:09.35] strings quit and quit but stored in
+different memory locations to have
+[132:13.46] different addresses so we can use the
+inequality operator to compare their
+[132:18.02] value instead we need to use the equals
+method of string objects so we want to
+[132:24.71] check to see if the input equals quit
+now here we need to apply the not
+[132:29.63] operator so as long as the input does
+not equal quit we're gonna continuously
+[132:34.85] ask the user to enter something so here
+we can print a label like input and then
+[132:42.47] we can use a scanner object to read
+something from the terminal so let's
+[132:46.91] create a scanner object and instantiate
+it using system dot in I didn't call
+[132:54.80] scanner that next this will return a
+string so we can store it in this input
+[133:00.14] variable now with this implementation in
+every iteration we're going to create a
+[133:05.60] new scanner object so if the user enters
+10 numbers we're gonna create 10 scanner
+[133:10.94] objects in memory this is unnecessary
+and it's actually a bad practice because
+[133:15.53] it's going to pollute our memory so it's
+better to create the scanner object
+[133:19.43] outside of a while loop and then simply
+use it here also here we are assuming
+[133:26.39] that the user is typing everything in
+lowercase so if they type quit in
+[133:30.26] uppercase or any combinations of
+lowercase and uppercase characters this
+[133:34.61] logic is not gonna work the way we want
+so over here right after reading
+[133:40.85] something from the terminal we're gonna
+call the
+[133:43.53] to lowercase method of string objects to
+convert it to lowercase now to make this
+[133:48.99] program more interesting let's echo back
+whatever the user enters so we simply
+[133:54.27] print that on the terminal now let's run
+this and see what happens
+[134:00.67] so I'm going to enter if your numbers
+like 1 2 & 3 whatever we type gets a
+[134:06.28] code back but the moment we type quit
+our program terminates so while loops
+[134:12.61] are useful in situations where we don't
+know ahead of time how many times we
+[134:16.39] want to repeat something in Java we have
+another type of loop called a do-while
+[134:26.44] loop it's very similar to a while loop
+but it gets executed at least once let
+[134:31.39] me show you what I mean so I'm gonna
+rewrite the same code using a do-while
+[134:34.72] loop we start with a do keyword then we
+create a code block at the end of this
+[134:41.35] code block we type while followed by our
+loop condition so not input dot equals
+[134:49.57] quit and then we terminate this using a
+semicolon now inside the body of this
+[134:55.27] loop we'll simply copy all these lines
+we have here
+[135:01.68] now compared these two types of loops
+with while loops we check the condition
+[135:06.82] first so if the condition is false the
+first time this loop will never get
+[135:11.50] executed in contrast with do-while loops
+we check the condition last so do-while
+[135:17.92] loops always get executed at least once
+even if the condition is false that is
+[135:23.23] the only difference the reality most of
+the time we use while loops do-while
+[135:27.64] loops are rarely used but there are
+certain cases for that so just be aware
+[135:31.30] of them but most of the time prefer to
+use wire loops
+[135:39.69] we're gonna continue with the example
+from the last tutorial this program we
+[135:44.26] have written has a tiny problem let me
+show you so I'm gonna run this enter a
+[135:50.56] couple numbers these numbers get echo
+back beautiful
+[135:53.80] if we type quit the program terminates
+but the word quit also gets echoed back
+[135:59.59] this is a bit weird so let's look at a
+couple ideas for solving this problem
+[136:03.75] back to our code one way to solve this
+problem is to check the input before
+[136:09.00] printing it so here we can type an if
+statement if the input does not equal
+[136:15.28] quit then we're print it so not equal
+input dot equals quit if this condition
+[136:24.01] is true then we're going to print the
+input let's take a look so one to quit
+[136:31.65] beautiful we solved the problem there is
+another way to solve this problem as
+[136:35.89] well let me show you we can reverse this
+condition so if the user types quit you
+[136:41.11] can immediately jump out of the loop
+using the break statement so I'm gonna
+[136:45.28] remove the nut operator if the user
+types quit we're gonna break out of the
+[136:51.16] loop otherwise we're gonna continue
+execution and print this input on a
+[136:55.99] terminal so when Java sees the break
+statement it will ignore everything else
+[137:00.25] after and it will terminate the loop
+let's run the program
+[137:05.00] once again we enter a couple numbers
+followed by quit beautiful so this is
+[137:10.58] the break statement we also have the
+continuous statement that moves control
+[137:14.81] to the beginning of a loop let me show
+you so let's imagine if the user types
+[137:19.52] pass we don't want to echo that but also
+we don't want to terminate the loop you
+[137:23.96] want to ask the user to try one more
+time so after we read the input we can
+[137:28.88] check to see if input equals pass this
+is where we use the continuous statement
+[137:35.27] when Java sees this it would move
+control to the beginning of the loop so
+[137:40.55] all these other statements are gonna get
+ignored and what the user types is not
+[137:44.66] gonna get printed on the terminal let's
+run the program and see this in action
+[137:48.61] so we type 1 2 pass it doesn't get
+echoed back one more time and finally
+[137:55.76] quit so to recap the break statement
+terminates a loop and the continue
+[138:02.15] statement moves control to the beginning
+of a loop now one last thing before
+[138:06.08] finish this tutorial in this
+implementation we don't really need this
+[138:10.13] loop condition because the moment user
+types quit this break statement is gonna
+[138:15.20] kick in and terminate the loop so we can
+simplify this code by using a true as
+[138:21.08] our loop condition so this is always
+true and this loop is gonna get executed
+[138:26.21] forever until the user types quit this
+is a very common technique that you see
+[138:31.31] amongst professional programmers just
+remember if you're using this technique
+[138:35.54] make sure to have a break statement
+otherwise you will end up with an
+[138:39.26] infinite loop that executes forever it
+never terminates and that can be very
+[138:43.79] dangerous in terms of memory consumption
+so if you're using while true make sure
+[138:48.17] you have a break statement in your loop
+[138:55.21] the last type of loop we want to look at
+is the for each loop in Java we use for
+[139:00.50] each loops to iterate over arrays or
+collections let me show you so I'm going
+[139:05.00] to start by declaring a string array
+called fruit and we initialize this with
+[139:10.73] three items let's say Apple mango and
+orange now let's say we want to iterate
+[139:19.25] over this array and print each item on a
+terminal we can use any of the loops you
+[139:23.54] learn about earlier like a for loop or a
+while loop but we can also use the for
+[139:28.16] each loop which is a bit easier let me
+show you first I'm going to use the for
+[139:32.12] loop to iterate over this array so we
+type for here we declare our loop
+[139:37.13] variable or loop counter into I we set
+it to zero as long as I is less than
+[139:42.74] fruits that length we're going to
+increment I by one after each iteration
+[139:47.90] and here we simply print fruits of I
+let's run the program and see what we
+[139:54.86] get so we get each item on a new line
+beautiful now there is another way to
+[140:00.68] write the same code using the for each
+loop here we type for in parentheses
+[140:06.44] with declare and loop variable but the
+type of this variable should be based on
+[140:10.82] the type of items in our array so here
+we have a string array and that means
+[140:15.38] every item in this array is a string so
+here we should declare a string variable
+[140:20.95] we call it fruit here we type a colon
+and then the name of our array fruits
+[140:27.61] now in each iteration fruit will hold
+the value of one item in this array so
+[140:34.37] here we don't have to declare a numeric
+counter we don't have to write a boolean
+[140:38.69] expression like this we don't have to
+increment our counter it's much easier
+[140:43.04] to iterate over an array now if we print
+fruit we get the exact same result as
+[140:50.12] before take a look
+so the first three items are from our
+[140:54.41] for loop and here's the result our for
+each loop
+[140:58.57] so this is the for each loop however
+this for each loop has a couple of
+[141:02.17] limitations one limitation is that it's
+always forward only so we cannot iterate
+[141:07.15] over this array from the end to the
+beginning in contrast we can easily do
+[141:11.83] this with a for loop so here we can
+initialize I to fruits that length then
+[141:17.74] we change this operator to greater than
+and replace this value with zero so as
+[141:23.35] long as I is greater than zero we're
+going to decrement I the second
+[141:27.73] limitation of the for each loop is that
+here we don't have access to the index
+[141:31.75] of each item all we have is this loop
+variable which holds the value of each
+[141:37.21] item in this array in contrast in our
+for loops we can access both the index
+[141:43.30] and the actual item so I represents the
+index of each item and fruits of I
+[141:48.43] returns the item at the given index so
+if you need the index then you'll have
+[141:53.53] to use the for loop otherwise it's much
+easier to use the for each loop
+[142:02.46] all right now let's get back to our
+mortgage calculator and implement some
+[142:06.85] basic error handling
+so here I've changed this question by
+[142:10.69] adding this label that identifies the
+range of values we can enter so the
+[142:14.80] minimum amount of loan we can get is
+$1,000 and maximum is 1 million dollars
+[142:19.54] so if I enter 1 here I get this message
+enter a number between one thousand and
+[142:25.72] one million and now we are asked this
+question one more time if I keep
+[142:30.16] entering invalid values I get asked the
+same question now let's enter a valid
+[142:35.80] value like 1 million dollars next we'll
+have to enter the annual interest rate
+[142:41.95] now here we need to enter a value that
+is greater than 0 and less than or equal
+[142:46.48] to 30 so if I enter 0 we get this
+message enter a value greater than 0 and
+[142:51.97] less than or equal to 30
+once again we're asked this question one
+[142:56.89] more time so let's enter a valid value
+like 3.9 to here we need to enter a
+[143:03.34] value between 1 and 30 so if you enter 0
+we get an error message and we're asked
+[143:09.10] the same question so let's enter 30 and
+finally we get the result here's our
+[143:14.20] mortgage or monthly payments so go ahead
+and spend five to ten minutes on
+[143:19.42] extending this mortgage calculator by
+adding error-handling to it you'll see
+[143:23.89] my solution X
+[143:30.31] all right let me show you how I'm gonna
+solve this problem step by step so for
+[143:35.24] each question we want to validate the
+value that the user enters if the value
+[143:39.56] is invalid you want to keep asking the
+same question so this is where we can
+[143:43.46] use an infinite loop let me show you so
+here's our first question principal I'm
+[143:48.98] gonna wrap these two lines inside an
+infinite loop while true
+[143:55.65] so we're gonna keep asking the same
+question until the user enters a valid
+[144:00.33] value so here after we read the
+principle we can write an if statement
+[144:04.95] like this if principle is greater than
+or equal to 1000 and it is less than or
+[144:12.42] equal to 1 million and here we can use
+an underscore to separate these digits
+[144:18.15] to make our code more readable so if the
+user enters a valid value then we can
+[144:22.56] break out of this infinite loop
+otherwise we're gonna print an error
+[144:26.88] message so enter a value between 1001
+million like this ok now if you look on
+[144:38.01] the right side here you can see this red
+bar this indicates an error and here in
+[144:43.08] this preview window you can see exactly
+where we have an error it's down below
+[144:47.19] on line 30 where we calculate the
+mortgage so if you click on this red bar
+[144:52.52] we jump over here principal is
+highlighted in red so here we have a
+[144:57.66] compilation error cannot resolve symbol
+principle here is the reason because
+[145:02.16] we've wrapped these few lines inside
+this while loop and earlier I told you
+[145:07.41] that whenever you declare a variable
+that variable scope to the Block in
+[145:11.61] which it's defined so this is where we
+have declared the principal variable and
+[145:15.84] it's scoped to this block it's not
+available outside of this block that's
+[145:20.97] why we get this compilation error so to
+solve this problem we need to declare
+[145:24.96] this outside of this while loop we can
+do it right here after radicular our
+[145:30.24] constants so let's say int principle and
+we can initialize it to 0 now we remove
+[145:36.57] the declaration from here and the error
+is gone now we need to repeat the same
+[145:42.27] pattern with other questions so real
+quick here's our second question where
+[145:47.52] we read the annual interest once again
+we add an infinite loop
+[145:55.45] now the moment we read the annual
+interests invalidate the data so if
+[146:00.40] annual interest is greater than or equal
+to let's say one and it is less than or
+[146:06.19] equal to 30 then we're gonna break out
+of this infinite loop
+[146:11.32] now here we should also calculate the
+monthly interest so the proper way to do
+[146:16.60] this is like this if the user enters a
+valid value we add a code block here
+[146:22.33] first we calculate the monthly interest
+and then break out of the loop otherwise
+[146:29.46] we print an error message enter a value
+between 1 and 30 okay now if you look to
+[146:40.36] the right side again we have two
+compilation errors monthly interest is
+[146:44.53] not resolved because we have declared it
+inside of this block so let's move the
+[146:50.92] declaration to the top here we remove
+the float keyword and declare monthly
+[146:57.67] interest over here
+that's better and finally for the last
+[147:02.87] question one more time we're to wrap it
+in this infinite loop
+[147:11.91] this is where we read the number of
+years and right after this line we need
+[147:16.84] to do our data validation so if yours is
+greater than or equal to one and it's
+[147:23.14] less than or equal to 30 here we add a
+code block this is where we calculate
+[147:29.83] the number of payments and then we break
+actually I forgot to type an S here
+[147:36.27] otherwise if the user enters an invalid
+value will simply print an error message
+[147:40.65] enter a value between 1 and 30 now here
+once again we have a compilation error
+[147:47.35] because number of payments cannot be
+resolved so we remove the declaration
+[147:52.39] from here and we'll be to the top right
+here number of payments so this is how
+[148:01.15] we add data validation to this program
+the problem is that this code the code
+[148:05.74] inside the main method is now getting a
+little bit too long and this hurt the
+[148:10.78] maintainability of our program someone
+else reading this code they have to look
+[148:14.77] at all these statements to figure out
+what's going on this is where we need to
+[148:18.73] break this code down into smaller easier
+to read and easier to understand chunks
+[148:23.65] and that's what I'm gonna show you next
+[148:28.56] so in this section you'll learn how to
+control the flow of execution of your
+[148:32.68] programs we started off by talking about
+the comparison operators for comparing
+[148:37.48] primitive values then we talked about
+the logical operators like and or and
+[148:42.67] not I showed you how we can use these
+operators for implementing real word
+[148:47.38] rules and then we talked about three
+types of control flow statements you
+[148:52.06] learn about conditional statements like
+if and switch for making decisions in
+[148:56.98] our programs then you learn about loops
+for executing code repeatedly we looked
+[149:02.05] at four types of loops for loops while
+loops do-while loops and for each loops
+[149:07.21] and finally we looked at the break and
+continue statements for breaking or
+[149:11.86] jumping to the beginning of a loop I
+hope you learned a lot and been enjoying
+[149:15.88] the course so far
+[149:26.74] as Martin Fowler said any fool can write
+code that a computer can understand good
+[149:32.30] programmers write code that humans can
+understand I can't agree more if you
+[149:37.01] have seen any of my courses you probably
+know that I've put a lot of emphasis on
+[149:40.73] writing clean code so I have dedicated
+this entire section on clean coding
+[149:45.05] we're going to continue extending our
+mortgage calculator and add new features
+[149:49.07] to it along the way you will see our
+code starts to get messy and hard to
+[149:53.18] maintain so I will show you a few
+techniques for changing the structure of
+[149:57.02] the code and make it clean and beautiful
+are you ready let's jump in and get
+[150:01.85] started
+[150:04.09] hey guys maj here i want to congratulate
+you on your determination for learning I
+[150:09.14] would really appreciate it if you
+support me by liking and sharing this
+[150:12.71] video also subscribe to my channel and
+enable notifications so next time I
+[150:17.21] upload a video you get notified now if
+you want to learn more I would encourage
+[150:20.78] you to enroll in my ultimate Java series
+as I told you earlier this YouTube
+[150:25.49] tutorial is the first two hours of this
+series if you're serious about learning
+[150:29.12] Java and want to become a professional
+job of developer I highly encourage you
+[150:33.32] to enroll in this series in case you're
+interested I put the link down below in
+[150:37.16] the description box thank you on have a
+fantastic day

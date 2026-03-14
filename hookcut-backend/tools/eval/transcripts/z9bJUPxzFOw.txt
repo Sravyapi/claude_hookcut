@@ -1,0 +1,589 @@
+[0:03.28] So let's continue with our playlist
+[0:04.96] today for starting off. Avery, welcome
+[0:06.72] back to the channel. I hope you guys are
+[0:08.08] doing extremely well. So the problem
+[0:10.32] that I will be solving today is LRU
+[0:13.84] cache. So what is the problem statement?
+[0:16.80] You'll have to design a data structure
+[0:19.12] that follows the constraints of a least
+[0:22.08] recently used cache. So what you have to
+[0:25.76] do is you'll have to implement LRU cache
+[0:28.24] class that implements the constructor
+[0:31.36] where it is taking the capacity and
+[0:34.00] initializing the LRU cache to that
+[0:36.72] capacity. That means it cannot store
+[0:39.12] more values than the particular
+[0:41.44] capacity. After that you'll have to
+[0:43.60] implement a get functionality which is
+[0:46.16] taking the key and you'll have to return
+[0:48.16] the value of the key which is stored in
+[0:50.00] the cache and if it is not stored you
+[0:52.32] end up returning minus one. After that
+[0:55.04] you'll have to implement the void put
+[0:57.20] functionality where you'll be given a
+[0:59.20] key you'll be given a value. So imagine
+[1:01.52] if your cache already has the key you
+[1:03.84] just update the value to that key done.
+[1:06.88] What if it doesn't have in that case
+[1:08.96] you'll have to add the key value pair to
+[1:11.04] the cache. What if the capacity is full
+[1:14.08] and you cannot add it? In that case, you
+[1:16.72] delete the least recently used key and
+[1:19.36] then you add this particular key and
+[1:21.52] value given to you.
+[1:24.08] Everything like the get and put
+[1:25.92] functionality has to run in a b of one
+[1:29.60] average time complexity throughout.
+[1:32.72] Okay, let's understand this with an
+[1:35.12] example. So the first thing is you have
+[1:37.52] a cache of a size four as to put 2A 6.
+[1:41.68] So the cache is empty. You could end up
+[1:44.08] adding 2A 6 where 2 is the key, six is
+[1:46.56] the value. As to put 4A 7, you can again
+[1:49.36] do it because the cache is still having
+[1:51.68] a size. 8A 11 you can still add it. 7A
+[1:57.20] 10 you can still add it. Remember
+[2:01.28] you need to keep a track of the least
+[2:03.44] recently used and I'm keeping a track by
+[2:07.60] maintaining this particular order. The
+[2:09.52] last one that was used was 2a 6. The the
+[2:12.80] recent one was this one 7 10 because I
+[2:15.36] just entered it. Okay. After that get
+[2:19.20] two. So the value is six. You can you
+[2:22.08] could easily figure out from here. But
+[2:24.32] this one is used. So what you'll do is
+[2:26.40] you'll take it and place it at the front
+[2:28.40] because this is now used recently. Okay,
+[2:32.08] get eight. So the value of 8 is 11. So
+[2:35.68] you could return 11 and at the same time
+[2:38.48] what you could do is you could take 8 11
+[2:41.36] and you could place it at the front
+[2:42.88] because this is least recently used.
+[2:46.64] Done. After that you have a put of 5a 6.
+[2:50.88] Put of 5a 6. Can you put it into the
+[2:53.52] cache? First of all, five is not there.
+[2:56.32] So you cannot replace the value. Can you
+[2:58.48] put it into the cache? No, you cannot
+[3:00.40] because the cache already has four
+[3:02.40] elements and that is the maximum
+[3:04.08] capacity it can hold. So what you will
+[3:06.48] be doing is you'll be like okay I need
+[3:07.68] to delete. So you always delete the last
+[3:10.40] one that is 4a 7 goes off
+[3:14.16] just goes off. So you've deleted it.
+[3:17.12] What next? You take 5a 6 and you put it
+[3:21.36] over here.
+[3:22.88] So this is my
+[3:26.00] cache as of now. So I'm done with this.
+[3:28.72] After that I'm asked to get seven. So
+[3:31.20] what's the value of seven? 10. So can I
+[3:33.36] say that this is somewhere here and it
+[3:36.64] will go over here because this is least
+[3:38.56] recently used. After that I will put 5a
+[3:42.16] 7. Do I have a five in the cache? I do
+[3:45.12] have. I do have. So what I'll do is
+[3:47.92] first of all I'll take this five put it
+[3:50.80] first and then I'll take off the six
+[3:54.08] I'll say what's the new value seven
+[3:55.84] replace it and done so this will
+[3:58.80] maintain the order of least recently
+[4:00.96] used but I'm done dusted so this is what
+[4:04.96] we need to implement it's not something
+[4:08.32] that you'll have to solve you'll have to
+[4:11.04] have knowledge of doubly link list and
+[4:14.80] map data structure So typically linkless
+[4:17.84] and hashing is all you need to know. In
+[4:20.72] case you don't know it, please stop the
+[4:22.88] video as of now. Go back and watch my
+[4:24.72] link list. Go back and watch my hashing
+[4:26.80] playlist. You'll understand what a map
+[4:29.04] does and how double link list like how
+[4:31.44] addition in dlink list works, how
+[4:33.04] deletion in dlink list works. All of
+[4:35.20] these things are very very important
+[4:36.80] because this is a extremely
+[4:38.56] implementationheavy problem. So in order
+[4:41.36] to solve this particular problem, I'll
+[4:43.28] be using a doubly link list where every
+[4:46.96] node will be storing the key and value.
+[4:49.60] So key and value and the next pointer
+[4:52.64] and the previous pointer. Again, I'm
+[4:54.64] assuming you know what is a doubling.
+[4:57.44] Under that assumption,
+[4:59.92] I will be solving this particular
+[5:01.60] problem. Along with this what I will be
+[5:04.00] doing is I'll be typically defining a
+[5:07.52] map data structure.
+[5:10.32] Now this map data structure will be
+[5:12.00] storing the key and the node position.
+[5:15.20] Remember the node address. Why? You'll
+[5:18.56] understand as we go across. So to start
+[5:21.68] off what you will be doing is we'll be
+[5:24.00] straight away taking a head. So this
+[5:26.80] will be a dummy head. It stores minus1
+[5:29.76] minus one. So this is my dummy head.
+[5:32.16] You'll be taking a dummy tail as well.
+[5:34.80] It is also storing a minus one minus
+[5:36.64] one. And the dummy head's previous is
+[5:39.44] pointing to null. But the next is
+[5:41.36] pointing to tail. Remember this the
+[5:43.28] dummy tail. So the dummy tail's previous
+[5:45.68] is pointing to head and the next is
+[5:48.64] pointing to null. So this is how
+[5:50.72] initially my configuration will look
+[5:52.48] like with an empty map data structure.
+[5:55.84] So we start off with the first thing
+[5:57.52] which is the capacity for. So maybe I
+[6:00.00] can just store the capacity to be four.
+[6:03.04] Done. After that the first functionality
+[6:05.92] like the first operation is put of 2, 6.
+[6:09.84] First thing you'll do is you'll be like
+[6:11.84] okay can I put it across? Yeah I do. I
+[6:14.80] can because the capacity is four. So I
+[6:17.60] can definitely put it across. Does it
+[6:19.44] have it already? Because if it has
+[6:22.08] already do I have to replace it but it
+[6:24.96] is not there. How do I know it? I can
+[6:27.04] have a hashing kind of a thing which
+[6:28.80] tells me if two is there or not. It
+[6:30.96] tells me if two is there or not. So I
+[6:32.72] definitely know two is not there. So I
+[6:34.16] just need to put it across. So what
+[6:35.84] you'll do is you'll say hey insert it.
+[6:38.72] Insert it. So you'll go ahead and say
+[6:40.80] insert it. So you'll be inserting right
+[6:42.96] after head. Remember this. You'll be
+[6:44.24] inserting right after head. So you will
+[6:47.20] make something like this. What I'll do
+[6:49.28] is just to you know ease out
+[6:53.04] going forward. I'll just insert it right
+[6:55.28] after head over here. So, insert 2, 6
+[6:58.96] over here. And I'll make sure because
+[7:01.20] this is a doubly linked list. I'm asking
+[7:03.76] it to be inserted right after head. So,
+[7:06.96] I make sure that the next is pointing to
+[7:08.80] tail and this continues. So, basically
+[7:11.68] what happened is heads next is now
+[7:13.52] pointing to this. I inserted it in
+[7:15.60] between and imagine this is at some
+[7:18.32] random address. So, I'll be storing two
+[7:20.88] comma the address of it. the address of
+[7:22.96] it the address is a reference to where
+[7:26.96] this particular value is perfect after
+[7:29.76] that when as to insert 4A 6 I'll again
+[7:33.12] do the same thing I'll say okay can I go
+[7:35.12] ahead and insert 4A 6 so I'll take 4 6
+[7:39.44] and I'll insert it so the next will be
+[7:41.60] pointing here the previous will be
+[7:42.80] pointing here the next and the previous
+[7:45.12] again done and please make sure you
+[7:46.96] insert 4 6 4 comma the node location
+[7:50.96] after that 8 comma 11 again 8 is not
+[7:54.08] there that means I'll have to insert it
+[7:56.56] so I go ahead and say 8 is not there can
+[7:58.96] you please insert it so the value is 8A
+[8:02.24] 11 so I take 8 11 and I insert it and
+[8:05.92] the previous is here this is there this
+[8:07.84] is there perfect after that there's a 7A
+[8:10.08] 10 but for this please make sure 8 comma
+[8:12.56] address is going into your hashing
+[8:15.12] hashmap after that there is 7A 10 so
+[8:18.32] what I will be doing is I'll be again
+[8:20.72] checking in the hash dash up it's not
+[8:22.16] there so I'll be inserting it. So I take
+[8:24.24] that value and I say hey 7a 10 and the
+[8:28.56] next this and this 7 comma address.
+[8:33.04] Okay. After that I've been asked to get
+[8:36.24] to I've been asked to get to. So when
+[8:39.76] I've been asked to get to what I will do
+[8:41.60] first of all is I'll go into the map and
+[8:43.68] I'll say okay two where are you? He says
+[8:46.16] hey I'm here. I'm like give me a value.
+[8:49.04] So I have the node. So I could just do a
+[8:51.20] node dot value. it'll give me the value.
+[8:53.84] So the value is six. I'll easily get the
+[8:56.40] value. But we need to keep a track of
+[8:59.20] least recently used. So all I need to do
+[9:02.32] is all I need to do is first of all I
+[9:04.80] need to delete it. Keep it in mind.
+[9:07.12] Delete. Delete. You know how to delete
+[9:09.12] in a double link list to delete the
+[9:11.28] given node. So I've deleted the given
+[9:13.36] node. I'll have to insert it at the
+[9:15.76] front. I'll have to insert it at the
+[9:17.36] front. So what I can do is quickly just
+[9:20.24] take it across
+[9:22.16] just move it back and I could take the
+[9:24.64] new one which is 2a 6 and I'll put it
+[9:28.88] over here. So it's a deletion and an
+[9:31.60] insertion. It's a deletion and an
+[9:33.60] insertion at the front. Done. After that
+[9:36.72] I've been asked to get eight. I'll again
+[9:38.80] go and check if eight is there. It says
+[9:40.80] yes 8 is there. It points me where it
+[9:43.12] is. So I get the value which is 8a 11.
+[9:46.96] So 8a 11 I get the value 11. So once
+[9:50.08] I've got the value what do I do? I
+[9:53.28] basically do one thing which is I say
+[9:55.52] hey listen this is no more here. There's
+[9:58.56] no more here. Can you basically go ahead
+[10:02.72] and put it at the front? I'm like why
+[10:04.56] not? I'll put it at the front which is 8
+[10:07.44] 11. So I put it at the front. Please
+[10:11.04] make sure that you reuse the nodes.
+[10:14.00] Don't create new nodes because if you
+[10:15.76] create new nodes you'll have to update
+[10:18.16] the map and that will add to extra time
+[10:20.48] complexity. Try to reuse the nodes.
+[10:23.20] Right? Perfect. So okay again done.
+[10:26.40] After that I've been asked to put five,
+[10:28.64] six. So I go ahead and check on the map.
+[10:30.64] Do I have a five? I don't have a five. I
+[10:32.80] don't have a five and I see that the map
+[10:35.12] has four elements which is equal to the
+[10:37.28] capacity. So I already have four
+[10:39.44] elements. I need to take off the last
+[10:41.28] one. I need to take off the last one.
+[10:43.28] Can I take off the last one? Super
+[10:44.96] simple. I get the last node. How do you
+[10:47.68] get the last node? You have a tail. You
+[10:49.60] have a tail. So you say, "Hey, who's
+[10:51.04] your last?" So I say tail dot previous
+[10:53.44] is the node that I need to delete. Tail.
+[10:56.40] Is the node that I need to delete. Okay,
+[10:58.16] please delete it. So first you delete
+[11:00.24] from here. So the value is four. So go
+[11:03.68] in the map and say where's four? So
+[11:05.52] delete four as well. So I've deleted
+[11:07.68] this.
+[11:09.52] So now the double link list looks like
+[11:11.68] this. Correct. So maybe I could just,
+[11:14.64] you know, move it across
+[11:17.52] just to make it easy. So I've moved it
+[11:19.52] across. Now what do I need to do? I need
+[11:21.92] to take the five, create a new node. So
+[11:24.00] I've created a new node 5, 6. And make
+[11:26.64] sure the next is pointing to the next
+[11:28.64] one. And this is this. And this is as it
+[11:32.32] is. So I have a five. And please make
+[11:34.08] sure to store the reference to this
+[11:36.16] five. No. Done. After that, I've been
+[11:38.56] asked to, you know, get seven. Do I have
+[11:40.88] a seven? Yeah, I do have a seven. Where
+[11:42.32] is the seven here? I get the value at
+[11:44.40] first which is 10. After that, what I do
+[11:47.68] is I take this particular node itself. I
+[11:50.32] take this particular node itself. I take
+[11:52.24] it off. My bad. So 7, 10. So I'll take
+[11:55.68] 7A 10. So if I take it off, uh this
+[11:59.52] thing will go back
+[12:02.80] and 7A 10 will come across here. 7A 10
+[12:06.08] and the next and the previous. I'm just
+[12:08.88] taking it out and putting it at front.
+[12:10.88] Okay, done. After that, there's a
+[12:13.28] question of putting five, 7. So, what I
+[12:16.00] do is I go ahead and check. Hey, is
+[12:17.76] there a five? He says, yeah, yes, there
+[12:19.84] is a five. Yes, there is a five. Like,
+[12:21.84] okay, I just need to replace it. So, I
+[12:23.60] get the reference. So, I just pick pick
+[12:25.20] out the node. Please make sure you pick
+[12:26.88] out the node. So, I'll just pick out uh
+[12:28.48] her. I will just pick out the 5, 7 node.
+[12:31.84] Make sure it's the same node. Make sure
+[12:33.44] it is the same node. So, you pick out
+[12:34.88] the 5, 7. So, once you've picked it out,
+[12:37.36] it will look something like this.
+[12:40.32] insert the same node. Take the same node
+[12:42.40] and insert it over here. So the
+[12:44.48] reference doesn't changes. You just
+[12:46.72] change pointers. You just change
+[12:49.12] pointers. Get the node, delete it. Get
+[12:52.56] the node, delete it. And after that,
+[12:55.12] insert. Insert. Done. Perfect. So time
+[12:59.12] to write down the pseudo code. So
+[13:00.96] please, please make sure you should be
+[13:03.12] knowing what a doubly link list is. So
+[13:05.76] if I get back to the dry run, what all
+[13:08.32] do we need? We definitely need a map
+[13:10.64] data structure so that we can have the
+[13:12.88] key and the direct reference to the
+[13:15.12] node. So if you observed you did observe
+[13:18.40] one thing we were deleting nodes like we
+[13:21.44] had a reference we deleted and what did
+[13:24.16] deletion mean over here? We were just
+[13:25.92] changing links we were just changing
+[13:28.48] links but the node was as it is because
+[13:31.92] we're reusing that node. We're not
+[13:33.52] creating new nodes. Okay we could delete
+[13:35.84] from here as well. So that is typically
+[13:37.92] something like this. So deletion of a
+[13:40.00] node is what we need. So what I could do
+[13:42.48] is I could write a function deletion of
+[13:45.44] a node
+[13:47.84] of a given node a deletion
+[13:51.12] of a node where you take a node and you
+[13:55.60] end up deleting it. So you're given a
+[13:57.68] node and you end up deleting it. That
+[14:00.24] node can be anywhere. It can be here. It
+[14:02.08] can be at the end. Can be anywhere.
+[14:04.48] Okay. So that is something I definitely
+[14:06.00] need from doubly link list. So assume we
+[14:08.64] know it because I've already done this
+[14:10.88] thing in the doubly link list lectures.
+[14:13.12] Please go back and watch it. How to
+[14:14.48] delete a node whenever the reference is
+[14:17.36] given. What else do we need? Whenever we
+[14:20.16] are deleting we're kind of using it and
+[14:22.72] in order to mark it as the least
+[14:24.72] recently used what we are doing is we
+[14:27.76] putting it right after head right after
+[14:30.72] head. So what I can do is I can say
+[14:34.40] insert
+[14:37.84] after head
+[14:40.72] and again you'll be given a node. Again
+[14:42.32] you'll be given a node. So you just have
+[14:45.04] to insert after head. Now if if you're
+[14:47.28] able to write these two functions I
+[14:49.12] think my job is done. My job is done.
+[14:50.88] And please make sure the doubly uh link
+[14:54.16] list that you define it should be
+[14:56.16] storing a key a value a next pointer and
+[14:59.28] a previous pointer.
+[15:02.24] So the code is given below like you can
+[15:04.96] find the code in any given language.
+[15:06.80] It's it's given below. What I'll
+[15:08.56] recommend you to do is open it on some
+[15:10.48] other tab so that you could follow
+[15:12.32] across whatever I am doing. So as of now
+[15:14.88] just remember you have a function
+[15:16.32] deletion of a node insert after head and
+[15:19.20] the node is containing a key a value a
+[15:21.12] next and a previous right. So let's get
+[15:23.92] on to the code. I'll be writing down the
+[15:25.44] pseudo code. So we have a class which is
+[15:29.44] L ru cache.
+[15:32.80] What all do we need? We definitely need
+[15:35.60] a map data structure. So a map which is
+[15:38.08] storing a integer and the node reference
+[15:42.16] star for C++. For Java people you don't
+[15:44.16] have to give a star and a map. We also
+[15:46.72] need the capacity where we know how many
+[15:49.04] like what's the size of the cache. Along
+[15:51.60] with this we definitely need a head
+[15:55.12] and a tail. Why do we need it? As I
+[15:58.32] implement, you'll understand. So, we'll
+[16:00.16] definitely need this head and the state,
+[16:02.80] right? Okay. After this, we'll have to
+[16:05.84] uh write across the
+[16:08.80] constructor which is taking a capacity.
+[16:13.04] So, what I can do is I can say the
+[16:14.80] capacity
+[16:17.60] this is underscore equal to capacity
+[16:20.08] underscore.
+[16:22.24] That is done. I could always say
+[16:24.32] initially the map will have no elements.
+[16:26.48] So you could just clear it across and I
+[16:28.32] can always say initially the heads next
+[16:30.96] will be pointing to tail and the tails
+[16:34.64] previous will be pointing to head. So we
+[16:37.92] have a small link list to start off
+[16:39.52] with. Perfect. This is how my LRU cache
+[16:42.64] will look like. That was the next
+[16:44.64] function that I'll have to write. That's
+[16:46.16] the get function. So let's write it. So
+[16:48.48] I have to write in get where I've been
+[16:50.88] given a key and and I need to find the
+[16:53.68] value if it does exist. So first of all
+[16:56.64] if it doesn't exist which means if the
+[16:59.04] map doesn't have it the map doesn't have
+[17:02.16] it. So can I say if the map doesn't have
+[17:04.00] it and depending on your language you
+[17:05.68] can write it. If the map doesn't have it
+[17:08.00] in that scenario I know the answer will
+[17:10.16] be returned minus one because it's not
+[17:13.04] there. But if it does have it I
+[17:15.36] definitely have a value. So what I could
+[17:17.28] do is I could do a node star and a node
+[17:20.40] and I could go to the map. Hey map can
+[17:23.44] you give me the value for the given key.
+[17:26.48] So what this map will give is the map is
+[17:29.12] storing if you remember reference it'll
+[17:30.72] give you the entire node. It'll give you
+[17:32.16] the entire node. So you have the node
+[17:34.08] you definitely have the node. So at the
+[17:36.00] end of the day you could return the node
+[17:40.16] value
+[17:42.24] because you have the reference node. We
+[17:44.16] could straight away extract the value.
+[17:46.32] But are we done? No, we're not done.
+[17:48.88] We've touched someone. We've touched
+[17:51.12] someone. Now we need to put it at front
+[17:53.76] because this is least recently used. So
+[17:56.56] what I'll do is first of all I'll say
+[17:59.04] delete the node
+[18:02.00] and I'll pass on the node. Remember the
+[18:04.88] function that we wrote like we said that
+[18:07.44] there's a hypothetical function that
+[18:08.96] deletes the node. Okay. Once it is
+[18:11.52] deleted, can I say insert after head?
+[18:16.16] Remember it's a dummy head. It's a dummy
+[18:17.84] head and we use the same node. Don't
+[18:21.44] create one more node because it will be
+[18:23.44] space complexity like you'll add up
+[18:25.20] additional space complexity. Reuse the
+[18:27.36] given node itself. So I've inserted it
+[18:29.36] after head. I need to do anything else.
+[18:31.36] Now we're done here. I just deleted it.
+[18:33.84] Put it across to keep a track of the
+[18:35.84] least recently used. Perfect. What's the
+[18:38.64] next one? I need to write the put
+[18:41.28] function as well. The put function will
+[18:43.52] be I'll be given a key and I'll be given
+[18:46.32] a value. Okay,
+[18:49.44] what are the cases? I know one thing for
+[18:52.00] sure. If it is already existing, I just
+[18:54.32] need to change it. So I'll be like, hey,
+[18:56.56] does the map has it?
+[18:59.04] If the map has the value key, again,
+[19:01.68] depending on the language, the syntax
+[19:03.52] will vary. If the map has this value
+[19:06.72] key, what will I be doing? I'll be like
+[19:08.88] okay maybe I can get the node
+[19:11.44] nodes node and you could always say map
+[19:14.16] hey map can you give me the value and
+[19:16.32] the map will give you the reference to
+[19:18.08] that node wherever you stored element
+[19:20.16] perfect and you could straight away say
+[19:22.16] node dot value can you just replace your
+[19:25.52] value by the value given to us the new
+[19:27.92] value perfect so we used it I've
+[19:30.08] recently used it so what I do is delete
+[19:32.88] node
+[19:35.28] and this node would be deleted since I
+[19:37.44] recently used it. I say insert after
+[19:39.84] head or whatever is the function name
+[19:42.08] and I insert it and we are done. Yeah,
+[19:45.76] we're done. No need to change anything
+[19:47.28] in the map because the map is storing a
+[19:49.12] reference to the node. Pretty cool. What
+[19:52.08] if it is not in the map? If it is not in
+[19:55.44] the map, then there can be multiple
+[19:57.20] conditions. What if my cache is already
+[19:59.52] filled up? Okay, so it means if the
+[20:03.76] number of elements that I store MP dot
+[20:07.92] uh
+[20:09.60] size equal to capacity.
+[20:13.68] If this is the case, what I'll do is I
+[20:16.72] have to delete. I'll have to get rid of
+[20:18.48] this guy. Which guy? The least recently
+[20:21.84] used. How do you figure that out? Go
+[20:23.92] back to the dry. This is your dummy tail
+[20:26.32] that you initially defined. The least
+[20:28.48] recently element is this one, which is
+[20:30.40] the previous of the dummy tail, which is
+[20:31.92] the previous of the dummy tail. So what
+[20:34.24] I do is I simply go over and I say hey I
+[20:38.48] know the node and the node is nothing
+[20:41.04] but the tails previous. So I can easily
+[20:44.56] get the node. Okay, if I have the node I
+[20:47.36] can also easily get the MP like from the
+[20:50.16] map I could easily erase it. I could say
+[20:51.84] MP
+[20:53.36] do delete or erase whatever you have
+[20:55.36] from the map. I could always say node
+[20:57.76] key because I if I have the node
+[20:59.36] reference I have the key. I could delete
+[21:01.36] it out of the map. Okay, it's gone from
+[21:03.28] the map. I need to take it out from the
+[21:05.28] cache as well. So I say delete node.
+[21:08.80] Delete the node. And since I have the
+[21:10.48] node, I'll delete it. So what I've done
+[21:12.48] is even if the size was full, I ended up
+[21:15.68] deleting one element from it. Perfect.
+[21:19.12] Done. What after this? If it is deleted,
+[21:21.28] I have someone new. Okay. If I have
+[21:23.52] someone new, I'll say node star node new
+[21:27.20] node or whatever is whatever you write
+[21:30.00] key value. So I'll I'll create a new
+[21:32.56] node. Okay, this is created. And I'll
+[21:34.80] say MP of key. Can you store this new
+[21:38.40] nodes reference? Done. And after that
+[21:40.64] I'll say insert after head. Insert after
+[21:44.24] head. And I'll pass on this node which
+[21:47.92] can be inserted.
+[21:50.08] And we are done. We're done here as
+[21:52.08] well. Okay.
+[21:54.96] What is the time complexity? Let's
+[21:56.64] analyze. This is definitely p of fun.
+[21:59.36] Okay. This is also B of one. Assuming
+[22:03.52] the delete works in B of one, which it
+[22:05.60] will because it's just a link change.
+[22:08.08] Insert after head, it is also a link
+[22:10.16] change. It will also work in B of one.
+[22:13.12] This one is something that might take B
+[22:15.68] of login depending on the language that
+[22:18.32] we're using, the map that you're using.
+[22:20.16] So I'll just leave it to you. The put am
+[22:22.56] I doing something extra wagon? Am I
+[22:24.56] running a loop? No. This is also big of
+[22:26.80] one assuming that the map is taking B of
+[22:29.04] one. We're using a map that takes login.
+[22:30.88] This will end up being login depending
+[22:32.72] on the language, the map, etc. You can
+[22:35.60] say BO of one or PO of login. So I was
+[22:38.96] able to design it but then you should be
+[22:42.72] able to delete the node. It's very
+[22:44.96] simple. If you're given a node and if
+[22:46.80] you want to delete it. So what you do is
+[22:48.80] you get the previous node at first which
+[22:52.24] is node.re because it is a doubly linked
+[22:54.80] list. you get the after node the node
+[22:56.96] after it which is node next. So once
+[23:01.12] you've got it all you need to do is the
+[23:03.52] previous nodes next
+[23:06.56] should point to after node
+[23:10.16] and the after nodes previous
+[23:13.92] basic link list should point to the
+[23:17.76] previous done. This is how you easily
+[23:21.28] delete a node by cutting off links.
+[23:23.68] Okay, insert after head. You have the
+[23:25.52] dummy head with you, right? You have the
+[23:26.88] dummy head. So all you need to do is
+[23:29.12] okay, you need to figure out as of now
+[23:33.52] what is head connected to? What is head
+[23:35.60] connected to? So current after head.
+[23:38.72] Current after head. So maybe you could
+[23:40.16] write current after head. Now this is
+[23:43.04] nothing but head.ext. So you have it.
+[23:46.64] There's the current after head. All you
+[23:48.64] need to do is head. Next
+[23:52.96] could easily be written as node because
+[23:54.88] this is the new node. So head would be
+[23:57.04] pointing to it. Okay.
+[23:59.52] Nodes next will always be pointing to
+[24:01.92] the cur after head like the previous one
+[24:04.64] that you had.
+[24:06.56] So basically if you insert something it
+[24:08.72] will be pointing to this and the
+[24:10.00] previous will be pointing to this. So I
+[24:12.00] made sure that the next is pointing to
+[24:13.76] this and please make sure that the nodes
+[24:16.00] previous
+[24:17.76] is pointing to the head. done simple
+[24:21.28] link changes and I'm good to go. You can
+[24:23.92] find the entire code given below. This
+[24:25.92] was more like a pseudo code but if you
+[24:28.08] followed the entire pseudo code then
+[24:29.84] going through the code that I've given
+[24:31.60] below should be a cakewalk. So yeah that
+[24:34.40] will be it for this one. I hope you have
+[24:36.48] understood it and if you're still now
+[24:37.92] watching please please do consider
+[24:39.68] giving us a like and if you're new to
+[24:40.88] our channel do consider subscribing to
+[24:42.96] us as well. With this I'll be wrapping
+[24:44.72] up this video. Let's meet in some other
+[24:46.00] video. Till then take care. Whenever
+[24:48.00] your heart is broken,
+[24:50.64] don't ever forget you're golden.

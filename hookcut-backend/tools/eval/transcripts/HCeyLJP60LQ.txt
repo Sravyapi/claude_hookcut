@@ -1,0 +1,331 @@
+[0:00.24] Welcome to anti-gravity. Now this is the
+[0:03.60] new IDE from Google. Now of course it's
+[0:06.64] not new for Google. They have built
+[0:08.24] multiple IDs for different use cases but
+[0:10.96] this is a AI powered IDE. Now again this
+[0:14.32] is not the first time we are getting
+[0:15.36] this type of ids from any other company
+[0:16.96] or maybe even for Google but this is a
+[0:20.08] standalone ID which you can run on your
+[0:22.08] machine. Now it is AI powered. So of
+[0:24.56] course you can use AI agents. it will
+[0:27.12] help it will be your assistant AI
+[0:29.36] assistant when you're building project.
+[0:31.36] uh but let's see how it works and before
+[0:33.12] we do that I just want to show you using
+[0:35.12] this you can build different kind of
+[0:36.88] applications maybe front end fullstack
+[0:38.64] applications and interestingly pricing
+[0:41.52] this is free to start with I mean for
+[0:43.60] individual they are saying uh it's free
+[0:45.84] but I'm not sure till when it will be
+[0:47.76] free but at this point it's free again
+[0:50.00] they're into testing phase uh the team
+[0:52.40] plan enterprise plan is not there yet
+[0:54.72] it's just released and how to download
+[0:58.08] it's very simple you can just click on
+[0:59.44] download here and you will at the
+[1:01.12] version on your machine. Now, one of the
+[1:02.64] thing about anti-gravity is it is also
+[1:04.64] based on let me show you. So, this is
+[1:06.48] the anti-gravity when you download and
+[1:08.64] install. Uh the only thing is if you
+[1:10.48] want to use this, you have to log into
+[1:11.92] your account a Google account then only
+[1:14.24] you can use it. But if you go to help
+[1:16.72] and about this is based on the
+[1:19.28] opensource version of VS code. So again
+[1:22.08] there are multiple IDEs AI based ids
+[1:24.48] which are based on VS code. So if you
+[1:27.12] are used to VS code you will know how to
+[1:29.52] use it. So this is the screen where you
+[1:31.68] can write the code. You got the project.
+[1:33.60] So you just have to open the folder. I
+[1:35.60] got a folder called test anti-gravity.
+[1:38.00] Uh and this is where you can write your
+[1:40.32] requirements right or the prompts. Now
+[1:42.88] in the prompt you can see we have option
+[1:44.80] of planning and fast. So basically this
+[1:47.36] is almost same as ask and uh agent mode.
+[1:52.00] But then in the planning it also acts
+[1:54.24] like a agent mode where it will show you
+[1:55.92] the entire steps and I'll show you the
+[1:58.00] steps in some time. But what makes this
+[2:00.24] IDE better than the other IDs? Two
+[2:02.96] things. One is the agent manager and
+[2:05.92] second is the inbuilt browser. So if you
+[2:08.80] want to do some UI testing and uh you
+[2:11.76] can ask the browser to do it for you. I
+[2:14.16] have not tested it yet in that sense but
+[2:17.52] uh okay you have to add extension as
+[2:19.36] well. We'll do that. So I will open the
+[2:21.60] agent manager here and basically you can
+[2:24.56] work with multiple projects at the same
+[2:26.16] time. So you can create multiple agents
+[2:28.08] for multiple projects and you can switch
+[2:31.12] between the projects there. Uh this is
+[2:33.44] my workspace and I can type the thing
+[2:35.52] here or I can type the code there. You
+[2:37.76] can change the model. So you got Germany
+[2:40.40] 3 pro which is a very good model. But if
+[2:42.40] you want to use set you can try that. Uh
+[2:45.04] you can use GPD the oss and you can also
+[2:48.56] use that. Okay. But I will not be
+[2:50.80] working in the agent manager at this
+[2:52.96] point. I will just stick to the agent
+[2:54.72] mode here. So let me create a simple
+[2:57.12] project and the project may be for the
+[2:59.20] personal finance. Okay. So I want to
+[3:01.36] know where I'm spending money from where
+[3:02.96] I'm getting the money uh so that I can
+[3:05.44] plan it better. So I want to say build a
+[3:08.96] personal finance app using Python fast
+[3:13.36] API and react in front end. Okay. I
+[3:17.36] should be able to uh declare it and uh
+[3:21.36] debit and show weekly report. Okay.
+[3:24.88] Okay. So this this is the plan. Okay.
+[3:26.56] And of course you can customize it. But
+[3:28.48] then the beautiful thing about this is
+[3:29.92] when you when you go into the planning
+[3:31.20] phase. Let me click here. It will show
+[3:33.20] you the entire plan. So uh it will go
+[3:35.76] step by step. So it's analyzing the
+[3:37.44] project structure and uh it will create
+[3:40.64] a initial blueprint. Okay. Looks good.
+[3:43.04] It's still thinking. But it will start
+[3:45.04] assigning tasks as well. Okay. This was
+[3:47.52] I was talking about. Uh so if you
+[3:49.28] dismiss this, so this is the task it's
+[3:51.28] going to complete. is going to create a
+[3:53.12] new uh project which will have this
+[3:55.60] files which is main model schema
+[3:58.16] database in the front end it will do all
+[4:00.40] the structure
+[4:02.40] and it is going to use ubicon to run
+[4:04.80] this I'm just concerned which package
+[4:07.04] manager it is going to use let's see so
+[4:08.96] I will click on
+[4:11.60] uh okay I could also submit the command
+[4:13.60] in fact you can add the command I'm not
+[4:15.44] sure which package manager it's going to
+[4:16.80] use so I will specifically ask it to use
+[4:21.20] Choose UV
+[4:23.20] package manager and you can add the
+[4:25.68] comment and it will use it. So I'll
+[4:27.20] click on proceed. Now it might change
+[4:29.52] the plan. I'm not sure what it was
+[4:31.84] thinking when it was creating the
+[4:33.12] project. I mean what package man is
+[4:34.80] going to use but based on my command is
+[4:36.88] it might change its process. So you can
+[4:39.36] see somewhere it is mentioned updating
+[4:41.44] the implementation plan to include UV as
+[4:43.52] a package manager. Okay. So it is
+[4:45.44] adopting the commands as well and this
+[4:47.60] is helpful right? The one of the problem
+[4:49.28] with the wipe coding which we say is
+[4:51.52] when you build a project it will give
+[4:53.12] you the project and then it will take a
+[4:54.88] lot of time to debug it. It might not
+[4:56.64] follow the plan. Uh but when you see the
+[4:59.04] plan when you see the task you can
+[5:00.48] actually select the task and you can add
+[5:02.56] comments there. What are things you have
+[5:04.32] to want to modify. Uh and now this is
+[5:07.52] the implementation plan it's going to go
+[5:09.68] with. And I think I'm okay with the plan
+[5:12.32] and I can start this. So it's
+[5:14.64] implementing now. Okay. It says it's got
+[5:16.56] the green light. Okay. So it will create
+[5:19.12] different folder structure, right? And I
+[5:21.52] just have to accept it. If you don't
+[5:23.28] want to wait for the steps, you can go
+[5:25.52] into the fast mode where it will do
+[5:27.20] everything for you. Uh but I will stick
+[5:29.60] to the planning mode and Okay. Accept
+[5:32.08] this. Except this. Okay. So a prompt
+[5:35.84] model trying to start a new
+[5:37.60] conversation. Okay. There was some
+[5:40.16] issue. Is it still continuing? Okay.
+[5:42.24] What a time to get the error. I'll say
+[5:44.24] continue. So maybe there was some issue.
+[5:46.48] So I should have read the error
+[5:47.68] properly. Okay, it says add the Python
+[5:50.64] extension. Again, this is given by the
+[5:51.92] ID, not by the agents. Uh I don't want
+[5:54.24] to do that. So you can see it is slowly
+[5:56.16] creating all the folder structure. It's
+[5:58.08] not touching the UI at this point. It's
+[6:00.08] only focusing on the back end. I mean
+[6:01.28] that's how the things should go and okay
+[6:05.04] it's editing the file adding some things
+[6:07.12] again something similar which we see in
+[6:09.52] the other ids and now it's starting with
+[6:11.92] the front end. Let me accept that
+[6:14.24] install with npm. Yes, not given the
+[6:17.60] prompt yet. Agent terminated due to
+[6:20.40] error. Okay, I'm not sure if if the
+[6:22.96] Google team when they were demoing this,
+[6:24.64] they got the error, but I'm getting a
+[6:26.56] lot of errors. Not sure why.
+[6:30.08] Maybe this is a feedback for them. So,
+[6:31.68] front end is also ready. I just want to
+[6:33.60] check the versions. Uh, okay. Looks
+[6:36.88] good. Version looks good. And we got all
+[6:40.08] the files here. Okay, so now it says run
+[6:43.28] the command. Yes, except. Okay, so it it
+[6:47.28] found some errors and it should be able
+[6:49.12] to uh solve that now. So by time it is
+[6:51.84] happening, I can open the agent manager
+[6:53.36] and I can start with the new project or
+[6:57.28] I can say add a cloud monitor. Yeah,
+[7:01.76] this is what I was expecting but it's
+[7:03.44] going to change the architecture. Okay,
+[7:06.24] it's doing this task. So once it is
+[7:07.92] complete, I think it will put that into
+[7:09.44] inbox that your task is completed and it
+[7:11.84] will give some suggestions. But by the
+[7:13.44] time it is happening, I will just accept
+[7:14.88] it here. And again, there's a error. Not
+[7:17.20] sure what the error is. Let me know when
+[7:19.52] you try this on your machine. Are you
+[7:21.20] facing any issues? Let me know in the
+[7:22.80] comments.
+[7:24.40] Okay, let's
+[7:26.72] run this accept. Okay, now it will use
+[7:31.92] the browser to test it. So, let me set
+[7:34.40] up the browser and I have to add the
+[7:36.96] extension.
+[7:38.80] Add to Chrome. Okay, I have to sign in
+[7:40.88] here as well. I thought it will use my
+[7:42.64] default browser. It's not doing that.
+[7:46.80] Okay. So, it found the error and then it
+[7:49.28] will start debugging it now. So, we
+[7:51.52] don't have to actually click anywhere.
+[7:52.64] It will just do it automatically. So,
+[7:54.08] it's clicking somewhere. I'm not sure
+[7:56.64] where. Back view.
+[7:59.84] So, when you see this blue borders, that
+[8:02.16] means it is doing something with the UI.
+[8:04.96] Okay. It's making a lot of changes. I
+[8:06.40] should have went for the fast mode.
+[8:08.80] Okay. Again, error. So let's see what
+[8:11.12] the troubleshooting guide says. Okay,
+[8:12.96] they don't have much. Okay, no problem.
+[8:17.68] Let's continue. So when you get error,
+[8:20.00] you ask the AI tool to solve it and AI
+[8:23.12] itself is giving you an error. So are we
+[8:25.84] successfully failing to demo the
+[8:28.64] anti-gravity? Still working out. Still
+[8:30.88] working out. Is it because it is
+[8:33.12] interfering with my two projects? I
+[8:36.56] don't think so. We started this later
+[8:38.64] and this is currently working. This has
+[8:40.72] just stopped. So it will ask my
+[8:43.04] permissions and what to do. So that will
+[8:44.80] go ahead. But yeah, looks looks good.
+[8:48.56] Okay. Uh restarting front end server,
+[8:51.20] verifying functionality, creating.
+[8:54.48] Okay, looks good. We walk through. And
+[8:58.16] now if I just click this. Okay, I think
+[9:01.44] there's something wrong with the CSS and
+[9:03.20] we can just test it out there. But if I
+[9:05.60] add a transaction, so let's say I'm
+[9:08.24] adding a transaction of I received
+[9:10.16] $1,000 from somewhere and then this was
+[9:13.44] my uh freelance work. Some description
+[9:17.44] add transaction. Okay, great. Just went
+[9:20.48] up. It was 5,000. Now it became 6,000.
+[9:23.52] So working is there and it is
+[9:25.60] maintaining this. How do I get the
+[9:27.36] weekly report? There's no button for the
+[9:29.36] weekly report. Oh, this is a weekly
+[9:30.64] report itself. Okay, I can just test it.
+[9:33.52] I can ask use your browser testing to
+[9:38.48] check something is wrong
+[9:42.08] with layout. Okay, let's see if it is
+[9:45.84] using the browser to check it properly.
+[9:47.76] Okay, so you can see blue borders it is
+[9:49.84] it will do the things by itself now. So
+[9:52.24] that's their goal. Okay, we don't have
+[9:54.00] to do anything apart from accepting what
+[9:56.16] they what the changes they are trying to
+[9:57.60] make. Or maybe this was the plan UI from
+[10:00.72] from uh Germany. I should have said I
+[10:04.72] need a proper UI. Okay, it found the
+[10:08.72] error. It created the error. But this
+[10:12.00] changes which you made is giving me an
+[10:14.48] error. Solve it like it's not doing
+[10:18.16] anything and the blank front end. Run
+[10:20.48] the project.
+[10:22.32] I mean the project is running otherwise
+[10:23.84] we could have got some other error
+[10:27.44] except some changes. Nothing in the
+[10:29.76] front end yet. Maybe it's also true for
+[10:32.00] the AI. If something is working, don't
+[10:34.24] touch. Oh, okay. I fix the layout
+[10:37.12] issues. Refactor. The project is
+[10:38.88] running. You can check now. Project is
+[10:40.48] still okay. Uh, yeah, this is running
+[10:43.12] now. But I can change the layout the way
+[10:45.04] I want. Uh, I can say modernize the
+[10:48.32] layout
+[10:49.92] but keep it simple. Let's see. And while
+[10:54.08] the happening, let me just check out the
+[10:55.68] backend files. The model it is going to
+[10:58.08] follow. So, transactions.
+[11:00.32] Okay, they're using SQL Alchemy and uh
+[11:05.84] so they got three APIs for the
+[11:08.72] transaction post, get and weekly report.
+[11:11.60] Okay, perfect. And
+[11:15.12] for the CR operations, these are the
+[11:16.88] methods for the CRUD. Looks good. Okay,
+[11:20.08] the code looks good compared to what AI
+[11:22.08] normally generates. So, accept all the
+[11:24.00] changes and it broke.
+[11:27.84] Okay.
+[11:31.36] Is it running with those changes? No.
+[11:34.16] Error in front end.
+[11:36.72] So, normally you don't have to copy
+[11:38.72] paste the code. It will do it for you.
+[11:40.96] But you got the gist, right? So, it
+[11:42.24] basically run through the UI using the
+[11:45.44] browser and it will make the changes.
+[11:48.32] So, made some changes in the UI file and
+[11:52.96] it's blank. Okay. UI is blank.
+[11:57.20] and error. So I'll say continue. This is
+[12:00.08] the worst product review or maybe the
+[12:02.64] best one
+[12:04.48] because things are not working. Please
+[12:06.88] try again later. Oh, because the model
+[12:08.88] provide is overloaded.
+[12:11.04] Now I saw the error
+[12:13.44] because of of the huge demand. Okay,
+[12:15.60] it's testing it. If this looks good, I
+[12:18.00] I'm going to use it. I need to spend I
+[12:20.56] need to monitor my money. It's going.
+[12:23.04] Let's see if it can solve its own bug.
+[12:27.60] So accept the changes. Did some changes.
+[12:31.76] Okay. Finally, finally we got the UI. So
+[12:35.76] you can add the transaction. It will
+[12:37.44] look here. And then this is the total
+[12:39.68] credit, total debit. I got this much of
+[12:42.88] balance.
+[12:44.56] Okay. Looks good. Looks good. This is
+[12:46.16] what you can do with this. And uh one of
+[12:49.20] the best thing about this again this is
+[12:50.64] not you can only do it with this. There
+[12:52.72] are multiple uh AI based ids available
+[12:56.16] but this planning which it was showing
+[12:58.48] is amazing and next time I will wait for
+[13:00.56] Google to sponsor the videos. So we have
+[13:02.72] got work through we got the browser in
+[13:05.36] build. So it looks good. So let me know
+[13:07.36] your thoughts in the comment section and
+[13:09.20] try it out. Uh I'm not sure if I'm going
+[13:11.44] to use it for Java but I should try
+[13:14.00] that. So today we tried with Python and
+[13:15.84] React. Maybe I'll try it with Java as
+[13:18.08] well and we'll let you know in the
+[13:19.20] comments how was my experience. Let know
+[13:21.68] your comments.

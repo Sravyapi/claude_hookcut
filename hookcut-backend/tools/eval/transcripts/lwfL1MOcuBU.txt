@@ -1,0 +1,661 @@
+[0:00.72] Hey there everyone, my name is Atesh and
+[0:03.04] welcome to another video on this channel
+[0:04.80] and this video is about system design.
+[0:07.36] Yes, we are talking a lot about system
+[0:09.76] design on this channel. So in case you
+[0:11.20] are new and you like to know about
+[0:13.68] system design as well as programming
+[0:15.36] tutorials, hit that subscribe. I keep on
+[0:18.16] popping up with so many such videos. And
+[0:20.96] this video is specially on a special
+[0:23.04] subject of system design known as
+[0:25.12] performance. Yeah, in the last video we
+[0:27.20] talked about scalability. This one is
+[0:28.96] all about performance and not just
+[0:30.64] random talk. I'll give you five precise
+[0:33.20] question that you can ask yourself and
+[0:35.36] as well as in any system to make that
+[0:37.92] system performant and again system
+[0:39.84] design is all about pros and cons. What
+[0:42.00] are the setbacks? What are the
+[0:43.44] advantages of it? So you'll get to know
+[0:45.44] all about it and where you can actually
+[0:46.88] get a higher weightage or lower
+[0:48.40] weightage. You'll get to know all about
+[0:50.08] this. In case you are just getting
+[0:52.32] started in the software industry like
+[0:54.32] first year of the job, second year of
+[0:55.92] the job itself, uh it would be fun video
+[0:58.48] to watch. You will understand a lot of
+[1:00.16] detail and uh I'll also walk you through
+[1:02.72] apart from these five question that what
+[1:04.48] inspired me to actually make this video.
+[1:06.40] There was a small diagram that I saw and
+[1:08.80] I will walk you through with that as
+[1:10.08] well. So let me take you on to the
+[1:11.84] screen. Uh this is where we are going to
+[1:13.36] have a discussion on the performance.
+[1:15.36] Once we have the discussion on the
+[1:16.96] performance then I'll take you on to
+[1:18.56] these pqueries. I have some uh example
+[1:21.60] set up here for you. Uh we'll come on to
+[1:23.60] this one. So uh first let's talk about
+[1:25.84] the performance and why this video was
+[1:28.88] created. So I was setting up a database
+[1:31.92] monitoring for one of our application
+[1:34.32] and I was about to get started with this
+[1:36.24] database monitoring which I think
+[1:37.52] everybody should do otherwise how will
+[1:39.44] you know how your database is performing
+[1:41.04] is it good? Is is your query is
+[1:42.80] optimized or not. So if you come here in
+[1:46.08] this section you will find this diagram
+[1:47.84] and in this diagram if you zoom this
+[1:49.84] there is a subject known as slow
+[1:51.52] queries. So how does these database
+[1:54.48] calculates the slow queries? What are
+[1:56.80] the parameters for it? I will discuss
+[1:58.96] them in the video because if you are
+[2:00.48] just a beginner in programming you tend
+[2:02.96] to calculate these slow query queries or
+[2:05.12] even the slow request a little bit not
+[2:07.76] the correct way. I will walk you through
+[2:09.68] all the correct way how it is being done
+[2:11.36] and that's the inspiration for this
+[2:13.04] video. Uh by the way do check out site
+[2:15.04] 24 by7 they are giving away a whole six
+[2:17.36] month for free. Link is in the
+[2:18.72] description. Highly highly recommended
+[2:21.04] uh very affordable product works like a
+[2:23.36] charm. All right and anyways it's 6
+[2:26.24] month free so you can try this out. So
+[2:28.16] here are my five question that I would
+[2:30.24] uh say that everyone should ask and you
+[2:32.72] should also ask uh for yourself. So
+[2:35.12] whenever you are designing a system
+[2:36.72] there are a couple of questions that we
+[2:38.08] ask ourself all the time is this uh
+[2:42.00] latency sensitive I will come on to
+[2:44.32] these each one of the term uh very
+[2:46.32] quickly don't you worry about that uh
+[2:48.64] sensitive so some applications are
+[2:50.88] latency sensitive some are not that much
+[2:53.52] sensitive you are just making them it is
+[2:55.28] sensitive but it is not I will
+[2:56.96] definitely discuss what are these points
+[2:59.04] apart from this another question that
+[3:00.64] you should ask yourself is is this uh
+[3:03.68] throughput
+[3:06.16] uh is this throughput sensitive?
+[3:09.36] This is important and I'm totally okay
+[3:11.44] totally fine that you don't know what is
+[3:12.96] latency, what is throughput or how to
+[3:14.56] even define that. I'll give you a
+[3:15.92] precise example so that you never forget
+[3:17.76] about this. Another question that you
+[3:20.00] should ask yourself always while
+[3:21.60] designing the performance system is uh
+[3:24.24] can I cache this? Uh just trust me 80%
+[3:29.28] of your performance comes from the
+[3:30.96] caching nothing else. So always ask this
+[3:34.16] can I cache this? Apart from this always
+[3:36.72] ask yourself can I index this? The
+[3:39.52] moment you ask yourself can I index
+[3:41.28] this? Your database queries are mostly
+[3:43.52] fixed but overdoing the index is also a
+[3:46.32] bad idea. But again it does a lot more
+[3:49.28] good than the bad in most cases. So try
+[3:51.52] to ask yourself can I index this? And
+[3:55.28] last and final question through which
+[3:57.04] the entire discussion is going to be
+[3:58.72] held around is going to be does user
+[4:02.00] need to wait. Uh if uh no and I will
+[4:06.80] write this answer as well again with
+[4:08.80] this what do I mean by when I say does
+[4:11.20] user need to wait if user doesn't need
+[4:14.64] to wait for this uh make it a sync. What
+[4:19.68] does that mean? So there are sometimes
+[4:21.92] confirmation emails that you want to
+[4:24.16] send to the user. Does user need that
+[4:27.04] email to be sent out and then only he
+[4:29.04] can move? Probably not. The email is a
+[4:31.60] totally different service. We can make
+[4:32.96] this an async se uh sequence or we can
+[4:35.52] even run a Q system for that. And these
+[4:37.84] are the only five question that one need
+[4:39.92] to ask to make the whole system as
+[4:42.24] performant. So always ask is this
+[4:44.32] latency sensitive? Is this throughput
+[4:46.16] sensitive? Can I cache this? Uh can I
+[4:48.64] index this? Does user need to wait? If
+[4:51.68] no, then make it a sync. A sync can be a
+[4:54.96] whole different micros service can be a
+[4:57.36] Q request or a Q service entirely.
+[4:59.52] Bullmq, Kafka, whatever you're using. Uh
+[5:02.00] that's the thing. Now sometimes CDN
+[5:04.48] comes into the picture and they actually
+[5:06.88] change the whole parameter because CDN
+[5:08.96] actually gives you a whole lot of
+[5:10.72] extraordinary advantage. Now that you
+[5:12.80] know about it, let's go one by one and
+[5:15.12] try to discuss about latency,
+[5:16.80] throughput, cache, index and all these
+[5:18.56] five question in dev. That will give you
+[5:20.32] a whole idea of what the performance
+[5:22.40] system looks like.
+[5:24.64] All right. Step one to answer all these
+[5:26.72] questions and even before we answer all
+[5:28.40] these questions. I know the very first
+[5:31.12] confusion for everyone is to figure out
+[5:33.92] uh what is even a latency or even what
+[5:36.56] is a throughput or even also what's the
+[5:39.36] difference between the latency as well
+[5:41.20] as throughput. I'll give you a great
+[5:42.80] example. You will never forget this
+[5:44.32] after uh this video. So latency and
+[5:47.68] throughput both can be kind of
+[5:50.16] understood by a simple highway example.
+[5:52.80] So if you look at this latency, latency
+[5:54.64] is all about an empty highway in which
+[5:57.60] you are driving let's just say 100 km/h
+[6:00.96] that's a latency that's a low latency
+[6:03.60] highway is all empty nobody's there and
+[6:06.16] you are able to drive uh 100 km per hour
+[6:10.00] that's your latency but what's the
+[6:11.52] throughput throughut is another highway
+[6:13.76] consider this as highway B this highway
+[6:16.40] is allowing you only to ride at a speed
+[6:19.28] of 40 km/h but uh
+[6:22.64] In a given hour, let's just say 10,000
+[6:25.84] cars are able to pass through that
+[6:27.28] highway. Yeah, this is the great example
+[6:30.16] that you always have to remember.
+[6:31.44] Latency means high speeded car. The
+[6:33.44] whole highway is empty. Throughput
+[6:35.12] simply means it allows 10,000 cars per
+[6:38.48] hour to pass on. But the speed is little
+[6:40.72] reduced. It's like uh 40 km/h or 50
+[6:44.16] km/h. And if you want to learn more
+[6:46.72] about what are the trade-offs of this
+[6:48.48] latency versus the throughput just
+[6:50.40] imagine that uh the first one option is
+[6:53.68] super fast option. So latency just try
+[6:55.60] to understand this from the zomato
+[6:57.36] perspective. I keep on getting somehow
+[6:59.52] zomato probably I'm ordering food a lot
+[7:01.44] or something. So uh consider this that
+[7:03.84] first option is very fast for zomato
+[7:05.68] that latency and they are somehow able
+[7:08.80] to achieve this in 50 millisecond.
+[7:11.12] That's fast but with the 50 millisecond
+[7:13.60] they can only serve uh maybe thousand
+[7:16.24] requests or thousand queries uh per
+[7:19.04] second. So QBS
+[7:21.04] this sounds great but until you hear
+[7:23.12] about the another option that hey our
+[7:24.88] queries will be little bit slower uh
+[7:26.96] maybe 200 milliseconds and if the
+[7:29.68] queries at 200 milliseconds now we are
+[7:31.76] able to handle 50,000
+[7:34.40] queries per second. Which option will
+[7:36.24] you choose? If you happen to choose the
+[7:38.16] first option, this looks great all the
+[7:40.56] time, but your server will crash
+[7:43.12] definitely in every single lunchtime.
+[7:46.32] But the second option, this will not
+[7:48.08] crash. It is little slower. And that's
+[7:49.92] what the system design is. You always
+[7:52.56] understand what's my bottleneck, what's
+[7:54.48] my pros and cons and all of that. So
+[7:57.12] always ask that which one you are
+[7:58.56] looking up for. In most of the cases,
+[8:00.48] you either look for the latency or for
+[8:02.40] the throughput. Most of the design
+[8:04.96] systems that you are going to be build
+[8:06.40] up some are very latency sensitive uh
+[8:09.52] maybe games where I want maybe less
+[8:12.00] queries per second or less requests per
+[8:13.76] second but I want extremely high latency
+[8:16.16] but in the case of real world e-commerce
+[8:18.16] scenario Zomemetto is of course an
+[8:19.76] e-commerce a little different one but
+[8:21.60] it's an e-commerce so in that scenario I
+[8:24.00] would any day prefer 200 milliseconds if
+[8:26.56] I am allowed to have 50,000 queries per
+[8:29.36] second. uh sometimes CDN also comes into
+[8:32.40] the picture which somehow magically
+[8:34.48] improves a whole lot of things in the
+[8:36.24] transactions and all of that but again
+[8:38.00] let's not go into that I hope the
+[8:39.76] latency and throughput is clear you will
+[8:41.52] never have any issue with them ever in
+[8:44.00] the future
+[8:45.68] okay moving on to the second part now
+[8:47.76] that the first two questions are clear
+[8:49.36] that latency sensitive or throughput
+[8:51.04] sensitive and again you either can have
+[8:53.28] one in most of the cases in fact in all
+[8:55.92] of the cases but I'll still be on the
+[8:58.32] safer side we'll say that in most of the
+[9:00.32] in like 95% 99% of the case you can have
+[9:04.24] either the latency sensitive or
+[9:05.60] throughut. Next come up is next comes up
+[9:07.84] is uh the caching. Now I will definitely
+[9:11.04] do a dedicated video on cache. Let me
+[9:13.60] know in the comment section. I would
+[9:14.80] love to do a a different video on the
+[9:16.72] caching. But here's the thing about the
+[9:18.64] caching. Caching always improves your
+[9:21.28] performance. So let's just say you go to
+[9:23.84] McDonald's food examples again. You go
+[9:26.80] to McDonald's and in the McDonald's when
+[9:29.36] you arrive then only they start to make
+[9:31.04] burger. This will never work. They
+[9:32.96] always do the caching. They keep on
+[9:34.80] making the burgers and as the customer
+[9:36.72] walks in they just keep on giving them
+[9:38.56] the suppliers. And this is the case for
+[9:41.12] most of the time and always remember
+[9:43.60] there's a standard rule in the whole
+[9:45.52] world of IT which is known as uh 80 this
+[9:48.56] is a rule in variety of cases. So this
+[9:50.56] is a 8020 rule. 80% of your uh content
+[9:54.88] will uh sorry 20% of your content will
+[9:57.92] get 80% of the traffic. If you
+[10:00.40] understand this rule, if you have worked
+[10:01.84] in any real world system, you know that
+[10:03.76] only 20% of the content or 20% of the
+[10:06.88] restaurants, whatever you're doing, only
+[10:08.72] 20% of the data is the most valuable and
+[10:11.36] people always look for that. So 80% of
+[10:13.44] the traffic is going to go there. And if
+[10:15.76] you don't have a proper caching
+[10:17.12] strategy, this is going to affect you a
+[10:19.12] lot. With the caching a lot of interview
+[10:21.28] questions also comes up like uh there's
+[10:23.28] Instagram celebrity uh question that
+[10:25.60] comes up a lot the e-commerce homepage
+[10:28.16] trending proh products these are all
+[10:30.32] always cached so this is one there and
+[10:33.84] uh invalidating the cache is still one
+[10:36.16] of the toughest problem and what you
+[10:38.56] will learn more about the caching in the
+[10:40.16] dedicated video uh things like if you
+[10:42.16] want to study on your own is LRU cache
+[10:44.96] uh there is a LFU cache there is a FIFO
+[10:47.92] cache and probably some others that I
+[10:49.68] don't remember on top of the head but
+[10:51.68] caching is the most performant thing
+[10:54.08] that you can do for your application and
+[10:56.64] I highly highly recommend everybody to
+[10:58.56] learn more about the cache there are
+[11:00.64] different points where you can actually
+[11:02.08] add the cache and CDN is also one of the
+[11:04.32] cache that you have to increase the
+[11:05.84] performance of your application but it's
+[11:08.00] not always a lot of people always
+[11:09.76] believe that if we are caching then the
+[11:12.00] caching will look something like this so
+[11:13.92] this is going to be our server and
+[11:16.72] server I mean to say the back end and uh
+[11:19.68] this is going to be our u maybe database
+[11:24.56] and there are a lot of places where you
+[11:26.80] can place the cache and how it actually
+[11:28.80] routes. So and there are strategies for
+[11:31.60] that. So server always looks into the
+[11:33.60] cache first and if it doesn't found then
+[11:35.84] he can actually always query the
+[11:37.28] database and then database sends the
+[11:39.76] data back. It writes the data back to
+[11:42.24] the cache and then sends the response.
+[11:44.56] There could be another way that you can
+[11:46.88] have a small machine or a cache where it
+[11:49.04] always goes ahead and look for the
+[11:51.20] values in the cache. If it doesn't find
+[11:53.36] the value in the cache, then probably a
+[11:55.52] small function or something can uh query
+[11:57.92] directly into the database and then
+[12:00.00] always all of your records goes to the
+[12:02.00] cache and through the cache it goes
+[12:03.44] there. There are different strategies,
+[12:05.44] different pros and cons. A whole lot of
+[12:07.28] architecture has improved. Reddius is
+[12:09.52] not the older radius that you study in
+[12:11.52] the books. has tremendously changed and
+[12:14.16] upst
+[12:15.84] whole other things are here. So probably
+[12:18.00] we'll discuss about the cache later on.
+[12:20.24] Right now is not the point. We we are
+[12:22.96] just talking about performance in this
+[12:24.32] video. Now next one is index. So we are
+[12:27.60] talking about database. When you're
+[12:29.12] studying the database we need to do an
+[12:30.88] activity together.
+[12:33.20] Now where the database actually fails
+[12:35.76] you is not just the index. Let me show
+[12:37.84] you a couple of codes that I've seen a
+[12:40.48] lot of people writing that the more you
+[12:42.40] understand your database, the better
+[12:43.92] programmer you are going to become
+[12:45.20] because our job is just to save the data
+[12:47.36] and retrieve the data. That's day in and
+[12:49.36] day out our job. So let's just say you
+[12:51.76] are simply building a shopping cart
+[12:55.36] and in this shopping cart a user is
+[12:58.16] adding items. Let's just say there are
+[12:59.68] 10 items in this cart. One of the bad
+[13:02.32] code that you can absolutely write at
+[13:04.56] this place is uh let's just say whatever
+[13:06.64] the database you are using it's not the
+[13:08.48] fault of MongoDB or the Postgress or
+[13:10.80] MySQL it's the bad code writing practice
+[13:13.44] let's just say you simply go ahead and
+[13:14.96] say get cart that consumes to one query
+[13:18.64] very fine no problem at all but now that
+[13:21.12] you have 10 items or 10 products in the
+[13:24.16] cart uh probably some people I know you
+[13:27.04] don't do it but some people actually do
+[13:28.72] this uh for each item
+[13:31.52] get
+[13:33.04] product details that's actually
+[13:36.16] constitutes to the 10 more queries
+[13:40.24] and this is not good. So in total you
+[13:43.12] are actually writing uh 11 queries
+[13:47.60] and this pattern is known as n +1
+[13:50.24] queries and I think everybody should
+[13:52.00] study that everybody should focus on how
+[13:54.16] not to fall into n plus1 queries. This
+[13:56.80] will definitely make your system a lot
+[13:58.72] more performant. You can perform join
+[14:01.12] operations. You can there are a lot of
+[14:02.80] ways how we can optimize this. But my
+[14:04.48] point is this is how we do that. But
+[14:06.40] again coming back on to the example that
+[14:08.24] I showed you that in this application
+[14:10.64] how do they actually calculate the slow
+[14:12.48] query? Every programmer should know
+[14:14.32] about these slow queries. This is known
+[14:16.40] as u there's a constant saying in the
+[14:19.36] system design world that average always
+[14:21.76] lies in the system design. I'll show you
+[14:23.76] why they actually uh say this. So let's
+[14:26.32] come back on to this example that we are
+[14:28.64] going to do. So average is not a good
+[14:31.84] thing in system design. If you are
+[14:33.52] trying to calculate average of your
+[14:35.44] database or even your request response
+[14:37.68] time, you're not going to do justice to
+[14:39.92] your system. This is where the
+[14:41.76] percentile system comes into the entire
+[14:44.16] system design ecosystem. This is known
+[14:46.32] as P calculation. P for percentile.
+[14:49.04] These are P50s. And by the way, in case
+[14:51.20] you don't know these uh P calculation
+[14:53.28] percentile, these are also noted in your
+[14:55.76] SLAs, the service level agreement. Uh if
+[14:58.24] you don't fulfill that, you need to pay
+[14:59.84] fine sometimes for that. So anyways,
+[15:02.08] coming back onto this. So P50 queries
+[15:04.48] refer to the 50th percentile of query
+[15:07.04] performance also known as median. I know
+[15:09.92] very cryptic. This is the definition
+[15:11.52] you'll find in uh chart GPT, in Google
+[15:14.00] search and everywhere. So doesn't make
+[15:15.76] sense. So I have created a simple uh
+[15:18.00] diagram for you or maths for you. Don't
+[15:20.88] worry I will not allow you to do too
+[15:22.24] much maths. I I'll do it myself. So
+[15:24.48] let's just say these are users who are
+[15:26.16] getting the request. Now again this
+[15:28.00] example can be added for the request
+[15:29.92] response as well as for the database
+[15:31.76] queries as well. Most of the books refer
+[15:34.16] for the database queries but this can be
+[15:36.56] applied for the request response as
+[15:38.64] well. So let's just say there is a user
+[15:40.80] one which makes some queries and he gets
+[15:44.56] a response in 220 milliseconds.
+[15:46.96] Similarly, user B comes up. He gets a
+[15:49.28] response very fast, 50 millisecond only.
+[15:52.16] And if you go and look for this, there
+[15:54.08] is a user D which gets a response in uh
+[15:57.52] 40 to 100 millisecond. Probably a
+[15:59.44] database crash, some bug, whatever it
+[16:02.08] is. And by the way, how you're going to
+[16:03.36] find that bug? This is why the database
+[16:05.60] monitoring actually comes into the
+[16:06.88] picture. Otherwise, you will just be
+[16:09.04] lost in the logs. That's why I say use
+[16:11.36] the link in description. Uh they give a
+[16:13.68] whole six month free anyways. And you
+[16:15.68] can also see the user J is 2800
+[16:20.16] milliseconds 2,800 milliseconds. So how
+[16:23.28] do we calculate the average and how do
+[16:25.28] we calculate the P values? That's the
+[16:27.12] important question here.
+[16:29.52] Okay, the easiest step to do this is
+[16:31.84] first of all let's highlight where the
+[16:33.52] problems are. Uh first of all we need to
+[16:35.84] calculate where is the middle point of
+[16:38.16] this. So step one is to take these
+[16:40.08] queries and sort them. Sorting is
+[16:42.32] important by the way. uh these tools
+[16:44.24] actually do this all for you. You don't
+[16:45.52] need to do that but you need to know how
+[16:46.88] this is being done. So my favorite query
+[16:50.16] would be this one. So this 50
+[16:53.36] I can change this arrow now. Yep. So
+[16:56.32] this 50 is probably one of my favorite
+[16:58.56] query as of now because everybody wants
+[17:01.20] 50 millisecond query or probably 50 is
+[17:03.36] too much. Sometimes the query can be 5
+[17:05.44] millisecond that would be good but your
+[17:07.04] application does really complex job. So
+[17:08.96] this is the uh I would say this is the
+[17:10.96] good one.
+[17:13.20] And this is where things can actually be
+[17:15.92] a little bit interesting. This is not
+[17:19.04] the bad part. This is probably a DV
+[17:21.52] timeout
+[17:23.36] that hey things are not going well here.
+[17:25.68] Now here is a lie that actually can come
+[17:27.68] up. So how do we calculate that how your
+[17:29.60] system is performing? Most people will
+[17:31.60] do 50 + 60 + 75 + 95 da da da plus 4200
+[17:38.40] and divided by 10. What does this
+[17:42.00] actually reveals to you? If you do the
+[17:44.00] calculation here, you're going to find
+[17:45.44] that this comes out to 813 uh
+[17:48.48] milliseconds. So what does this
+[17:50.56] millisecond tells us? This tells us the
+[17:53.04] average. Yeah, that's interesting one.
+[17:55.92] So this is
+[17:59.12] average
+[18:00.64] and the fun fact is this average tells
+[18:04.40] you nothing because if based on this
+[18:07.52] average you are telling your
+[18:10.40] stakeholders that hey on an average our
+[18:14.00] user actually spends 813 millconds on
+[18:18.24] the website and he gets his response.
+[18:20.56] you are doing an injustice because this
+[18:23.28] is not how the users are actually seeing
+[18:25.28] your website. The performance
+[18:26.64] calculation is not correct here. So how
+[18:29.36] do we calculate this whole uh performant
+[18:32.16] thing? Let me also walk you through with
+[18:33.68] that. The step one is to find or divide
+[18:36.48] the thing into middle way. So in this
+[18:38.72] case the middle is around 140. So this
+[18:41.92] is where things are this is where
+[18:44.72] actually P50 start. I don't do these
+[18:46.88] calculations manually. I just came up
+[18:48.48] with an example for you. So we are
+[18:49.76] calculating on the go. So this is the
+[18:51.44] P50 that you have. The P50 is just the
+[18:54.40] center of whatever you're doing. If you
+[18:56.16] don't find the exact center, just pick
+[18:58.00] any of the later ones. So this is the
+[18:59.60] P50. And what also happens this is the
+[19:03.20] next value that you also want to
+[19:04.72] calculate. And this is where P50 starts
+[19:07.20] and this is where P50 ends. So these two
+[19:09.84] values
+[19:11.36] calculates your P50 value. How do we
+[19:14.00] calculate that? Uh pretty simple. This
+[19:15.68] is 140 180. So all you have to do is uh
+[19:19.52] 140 + 180 and all you have to do is uh
+[19:23.92] just divide it by two. That's it. Two
+[19:27.04] values. So if you do this one then you
+[19:29.52] will find out that this actually results
+[19:32.00] in 160.
+[19:35.12] So this is your typical user
+[19:38.96] seeing your website. So a typical user
+[19:41.52] when comes to your application or for
+[19:43.44] all of your queries, he sees your
+[19:45.36] application or gets a result in 160
+[19:48.00] millisecond. That is the first step.
+[19:49.92] This is how you calculate the P values
+[19:51.52] or the P50 values. And where the problem
+[19:54.56] comes up and the problem reveals
+[19:56.56] similarly people calculate uh this one
+[19:58.72] what we calculated is actually P50.
+[20:03.20] And the step one in any application that
+[20:05.76] we want to make performant is to reduce
+[20:07.92] this number as low as possible. Some
+[20:11.04] people even reduce it down to single
+[20:12.80] digit. Yeah, their database queries are
+[20:15.52] that fast. So this typically says that
+[20:18.56] on an average when user comes to our
+[20:20.56] website to take any data he gets the
+[20:23.68] response in 160 mconds but there are
+[20:26.00] some outliers. This is where the new
+[20:28.24] value is calculated and this value is
+[20:30.96] known as P99.
+[20:34.96] Some people even calculate P99.99
+[20:39.44] because at that scale when you have a
+[20:41.28] million request comes up and even if
+[20:43.52] just one query the P99th query is
+[20:45.76] performing bad that means probably over
+[20:47.92] 10,000 people are frustrated that's a
+[20:49.84] 10,000 tweets. So that way you can
+[20:52.48] actually now optimize. So you are just
+[20:54.80] not lying to yourself. You are actually
+[20:56.56] calculating it better that on an average
+[20:58.40] user is getting 160 mcond response from
+[21:01.44] our database or from our request
+[21:03.28] response of the server. But we can
+[21:05.20] optimize once the P50 is optimized it's
+[21:07.68] in single digit or probably double digit
+[21:09.44] or whatever optimization best you can
+[21:11.12] have. Then you move on to the P99 or
+[21:13.84] something like that. So our problem is
+[21:15.84] not the whole response. Our problem is
+[21:17.76] just these two guys. So we need to
+[21:19.44] optimize for the P99 queries and that's
+[21:22.48] how you find out and that's how all
+[21:24.16] these database that they mention these
+[21:26.00] slow queries that what queries are slow
+[21:28.16] they actually run this whole calculation
+[21:30.40] through all the queries that you are
+[21:32.48] making and once they find out that okay
+[21:34.88] what's your average P50 and if P50
+[21:37.60] sounds industry standard then they
+[21:39.52] actually gives you uh the P99 response
+[21:42.08] by the way you can customize all of this
+[21:43.92] so doesn't really matter
+[21:47.44] okay to sum this all up. Uh just
+[21:49.68] remember that all these database queries
+[21:52.40] and perform these are all performance
+[21:54.16] metrics. So your step one is always to
+[21:56.40] calculate the P50 the average value the
+[21:59.04] true average of a user how much time it
+[22:01.20] is getting and then you moves at the
+[22:03.12] very top you want to then optimize P90
+[22:05.36] then you want to optimize P95 P9 and
+[22:08.64] whatever the metrics your application
+[22:10.40] has been saved. So coming back onto
+[22:12.24] this. So I hope now you get an idea that
+[22:14.48] okay latency is all done for us. The
+[22:16.64] throughput is all done for us. The
+[22:18.08] caching is done. The indexing is also
+[22:20.88] done for us. Now since I chose
+[22:23.84] performance as this topic for the video
+[22:25.84] otherwise we definitely can go much
+[22:27.52] deeper on this indexing databases there.
+[22:30.56] This is where you study about vertical
+[22:32.72] uh vertical and the vertical scaling and
+[22:34.96] horizontal scaling and so much more in
+[22:36.80] the database. But let's keep it short
+[22:38.72] here. Now last but not the least is the
+[22:41.44] most important part. Does user need to
+[22:43.12] wait? If no, make it a sync. Uh this is
+[22:45.68] where uh at the beginner level you can
+[22:48.80] start to learn about the advanced
+[22:50.32] concept of the programming and back end
+[22:52.88] or anything in general. This simply says
+[22:55.12] that if you go to a restaurant and
+[22:57.44] restaurant gives you a ticket or a
+[22:59.28] counter that hey your order is going to
+[23:01.68] get prepared. You have two options. You
+[23:03.76] can just stand there in the line or you
+[23:05.76] can just take that token, sit somewhere,
+[23:08.08] scroll the reels, enjoy your time and
+[23:10.56] then as soon as the order is complete,
+[23:12.56] they can just ring you, shout out at
+[23:14.80] you, whatever they can do at you and you
+[23:17.12] can just collect the order. This is
+[23:18.48] exactly where things happen. So if you
+[23:20.56] look at this application, there are a
+[23:22.00] lot of things where things can be a
+[23:23.76] sync. For example, email sending is one
+[23:26.08] of them. Like email is not the fastest
+[23:28.88] thing that you can have on the website.
+[23:30.48] So usually the email sending process
+[23:32.56] takes some time. This can be offloaded a
+[23:35.44] sync this can be made into a queue or
+[23:37.12] anything like that. Also things like uh
+[23:39.60] if you're processing some image we are
+[23:41.60] doing that. Similarly there can be a
+[23:43.36] video processing which takes insane
+[23:45.52] amount of time. This definitely 100%
+[23:48.40] needs to be a sync. Uh video transcoding
+[23:50.88] also comes into this one. But again uh
+[23:53.44] there there are more things that can be
+[23:55.04] done at this point. You can learn about
+[23:57.84] all these things like there is the
+[23:59.92] event-driven architecture you can learn
+[24:01.52] at this point. You can learn about
+[24:03.28] realtime processing versus job
+[24:05.60] scheduling. So there's another topic
+[24:07.52] that you can learn about here. Uh how
+[24:09.52] you can handle failures and how is
+[24:12.16] automatic retry is implemented in here.
+[24:14.88] There are so many things here uh like
+[24:16.80] ingest is there which helps you to do
+[24:18.80] automatic retries of the workflow. There
+[24:20.80] are so many even workflows by versel
+[24:22.56] does the same. So there are so many
+[24:24.32] things up here. So this video was
+[24:26.88] designed around all performance in the
+[24:29.04] system design that these are the five
+[24:31.04] question that you need to ask yourself
+[24:32.56] to make a real world system uh which is
+[24:35.04] performant and if you ask these question
+[24:36.72] and work on these question you will do
+[24:38.56] absolutely good stuff but as I always
+[24:40.88] say if you cannot measure it you cannot
+[24:43.68] improve it and for measuring I highly
+[24:45.76] recommend to use site 24x7 uh there's a
+[24:48.40] link in the description section they do
+[24:50.00] a whole lot of monitoring measurement
+[24:52.88] everything that's a one-stop go to go I
+[24:55.04] hope you're enjoying the system design
+[24:56.48] video. If yes, do let me know in the
+[24:58.24] comment section. I would love to make
+[24:59.60] more videos around it to get you all the
+[25:02.08] basics done. Then we'll do the case
+[25:03.52] studies as well about designing WhatsApp
+[25:06.00] or because we are also designing some of
+[25:07.68] this stuff in house. So let me know in
+[25:09.68] the comment section and I'll surely
+[25:11.12] catch you up in the next video.

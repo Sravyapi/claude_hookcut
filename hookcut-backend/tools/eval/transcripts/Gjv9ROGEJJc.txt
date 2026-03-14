@@ -1,0 +1,378 @@
+[0:00.24] Hey everyone, I hope you all are safe
+[0:02.24] and doing good. So I guess now you can
+[0:04.32] easily tell the difference among
+[0:06.00] artificial intelligence, machine
+[0:07.44] learning and deep learning. You know the
+[0:09.52] basic idea about these three terms not
+[0:11.36] in deep but basic idea. Now before
+[0:13.92] moving further into generative AI, let's
+[0:16.24] discuss in brief first history of AI
+[0:19.28] when this artificial intelligence came
+[0:21.12] into picture. Now maybe you are thinking
+[0:23.52] that in recent years 3 four five years
+[0:25.92] we heard about AI more and more after
+[0:28.72] Chad GP came into picture but it's not
+[0:30.48] like that the birth of AI is in 1950s
+[0:35.28] it's not a new term it came into picture
+[0:38.48] in 1950s in 1950 Alen Turin published a
+[0:43.68] research paper and in that research
+[0:45.76] paper he asked can machine think a
+[0:48.80] simple question let me show you that
+[0:50.00] research paper
+[0:52.00] So this is the research paper computing
+[0:53.84] machinery and intelligence. And in this
+[0:55.92] research paper he simply ask a question
+[0:57.84] can machine think
+[1:00.16] and this question is the main reason
+[1:02.56] that nowadays you have to ask such type
+[1:05.20] of question that will AI going to take
+[1:07.28] her job? This simple question
+[1:10.16] this is the birth of AI. So now in this
+[1:14.64] paper after that like he he also
+[1:17.60] proposes he also proposes a touring
+[1:20.32] test. Initially the test name was the
+[1:22.96] imitation game this test but after later
+[1:27.20] uh
+[1:29.12] this test was named Turing test. And
+[1:32.16] what is this Turing test? Let me show
+[1:34.40] you. So see uh in Turing test what is
+[1:37.12] this test? I'll tell you in brief. So a
+[1:40.00] test would be evaluated. There is an
+[1:42.48] evaluator, a person suppose and in one
+[1:47.20] room there is one computer and in one
+[1:49.20] room there is another person. This
+[1:51.76] person is the judge or you can say
+[1:53.28] evaluator but they cannot see each
+[1:56.24] other. Right? Now in one room we are
+[1:59.68] having machine a computer. In one room
+[2:01.12] we are having another human. So now this
+[2:03.60] evaluator he or she the evaluator has to
+[2:07.60] analyze like he'll ask few questions
+[2:11.12] text questions nobody will say anything
+[2:14.00] in just text question he'll ask computer
+[2:17.28] and this person will answer those
+[2:19.76] questions and if this person within that
+[2:22.24] time frame after asking few questions
+[2:23.92] within 5 to 10 minutes is not able to
+[2:27.52] distinguish which is machine and which
+[2:29.76] is human that means the machine passed
+[2:34.00] this Turing test, right? This machine
+[2:37.44] can mimic human behavior because this
+[2:39.52] evaluator is not not able to distinguish
+[2:42.00] that the answer is coming from a machine
+[2:43.68] or from a human,
+[2:46.08] right? So means this machine has passed
+[2:49.52] this test, this Turing test. This is
+[2:51.76] basically Turing test. The basic idea in
+[2:54.16] simple terms I have explained this
+[2:55.92] Turing test to you and Chad Gypy already
+[2:59.52] passed this Turing test, right? So if a
+[3:02.64] machine can fool a human evaluator into
+[3:05.28] believing it's human like it is a human
+[3:07.76] not a machine then it passes the test
+[3:10.16] this is during test the evaluator ask
+[3:12.32] questions via text interface to both the
+[3:14.32] human and the computer
+[3:16.80] right and today's like virtual assistant
+[3:19.44] in our phone we are having virtual
+[3:21.20] assistant attempt to mimic human
+[3:22.80] conversation and many chat boards even
+[3:25.36] chat GPT has passed this touring test so
+[3:29.20] he proposes at that time during test to
+[3:34.32] uh evaluate the machine I mean uh to
+[3:37.04] find out that can machine think like we
+[3:40.24] human think right after that in 1956
+[3:45.04] there was a conference and at that
+[3:47.52] conference basically this term came into
+[3:49.92] picture artificial intelligence the very
+[3:52.16] first time in that conference
+[3:55.28] right so the first official use of
+[3:57.52] artificial intelligence as a field name
+[3:59.60] officially AI was I know uh adopted as a
+[4:04.08] field after that artificial intelligence
+[4:07.20] in 1956 in that conference organized by
+[4:11.04] Joan McCarthy and after that I mean a
+[4:14.48] team of researchers start started
+[4:17.36] working in this field in AI field right
+[4:21.20] now after in 1960s this was the these
+[4:26.40] years was full of hope so researcher
+[4:29.36] were working worked on reasoning and
+[4:32.16] problem solving using logics and rules.
+[4:35.04] They write down hardcoded rules. If this
+[4:37.76] then this if this then this
+[4:40.48] to help machine to think and to
+[4:42.56] understand on hardcoded rules. Still
+[4:45.52] machines are not able to learn itself.
+[4:48.08] They provide their rules and all. And
+[4:50.24] then like uh Eliza chatbot was created
+[4:53.36] but it was not successful. actually the
+[4:55.92] chatboard that mimicked a
+[4:57.76] psychotherapist
+[4:59.44] but there were some problems in this
+[5:02.08] chatbot also. So uh it was not that much
+[5:05.36] uh you can say uh matching the hype of
+[5:08.00] AI or the expectations right and during
+[5:11.68] this year now government agencies
+[5:14.24] provide millions millions into AI
+[5:16.88] research right so after that okay after
+[5:21.44] that in 1970s
+[5:23.52] 1970s
+[5:25.04] this was like you can say the first AI
+[5:27.68] winter first AI winter means computers
+[5:30.80] were too slow and the results were not
+[5:33.04] according to the expectation. Whatever
+[5:35.44] AI hype was there, the results was were
+[5:37.60] not according to that. So what funding
+[5:41.04] dropped, government agencies slashed
+[5:43.44] their AI budget because of that what
+[5:47.44] both the progress and the support rose.
+[5:50.16] So during this time this was the first
+[5:51.68] AI winter. After that in 1980s early
+[5:55.44] 1980s from 1980 to87
+[5:58.88] it was an era of rise of expert systems.
+[6:01.76] Yeah. A researcher was still working
+[6:03.76] even though in 1960s budget were not
+[6:06.48] that much like funding were not provided
+[6:08.32] but still researchers were working. So
+[6:11.92] after in the early 1980s few expert
+[6:15.28] systems were made like mine medical
+[6:18.08] diagnosis system for bacterial infection
+[6:20.16] could help in medical diagnosis. Exxon
+[6:23.04] helped configure computer systems.
+[6:26.48] But now during this time AI companies
+[6:30.08] valued over $1 billion collectively. So
+[6:33.04] yeah but after that these system these
+[6:35.68] export system were uh hard to maintain
+[6:38.32] and very costly. So that's why again a
+[6:41.68] second AI winter came in late 80s from
+[6:45.76] 1987 to 19 around 92 and 93. Again see
+[6:51.44] these expert system these expert system
+[6:53.60] used if then if then rule. So they have
+[6:57.04] hardcoded few rules to solve domain
+[7:00.08] specific problems like this is for
+[7:02.32] medical diagnosis. This is for to help
+[7:04.32] configure computer systems. So domain
+[7:06.64] specific problems they have hardcoded
+[7:08.24] few rules but still they were uh costly
+[7:11.52] and they were hard to maintain. So
+[7:13.84] that's why in late '90s second AI winter
+[7:17.44] came expert system couldn't easily
+[7:19.60] expand beyond their programming because
+[7:21.20] they were hardcoded so they have limited
+[7:23.28] knowledge right and
+[7:26.72] specialized AI workstations obviously uh
+[7:30.48] to work on this AI and all there was not
+[7:32.88] simple desktop they were uh working
+[7:35.52] these things these models were working
+[7:36.96] so there were specialized AI workstation
+[7:39.12] but at that time desktop were revolving
+[7:43.68] This was desktop evolution and during
+[7:45.44] that time so because of that these
+[7:47.60] specialized AI workstation became
+[7:49.28] obsolete as PCs grew powerful more
+[7:52.40] computational power in PCs and these
+[7:55.84] expert system were very expensive and
+[7:57.36] hard to maintain so that's why what
+[7:59.68] happened research continued with less
+[8:01.44] hype and more realistic goals so this
+[8:03.92] was AI winter second AI winter but still
+[8:06.48] researchers were working still
+[8:09.84] now after that in 1990s is this was a
+[8:13.52] time of machine learning and games. Now
+[8:16.32] they changed their approach from
+[8:18.48] hardcoded rules to to machine learning
+[8:21.36] to learning algorithm learn from data.
+[8:23.76] So machine learning came into picture
+[8:25.60] during that time right and after that in
+[8:29.60] 1997
+[8:31.36] this was a major milestone IBM's deep
+[8:34.88] blue system defeated you know a world
+[8:37.20] chess champion proving that AI can even
+[8:40.32] master the most complex games like chess
+[8:44.56] because this system AI system defeated
+[8:47.36] world the world chess championship right
+[8:50.88] and this was an era of early deep
+[8:52.56] learning techniques
+[8:53.84] Now during this time AI began focusing
+[8:56.24] on specific on specific task rather than
+[8:59.60] general intelligence. Now the era of
+[9:02.32] 2000 came into picture and at this time
+[9:04.56] AI enters into a real life in everyday
+[9:06.96] life but I think we may we may not have
+[9:09.28] noticed this thing you know at that time
+[9:12.72] there was growth of digital data
+[9:14.96] internet was also booming booming and so
+[9:17.28] data was there. So growth of data was
+[9:20.16] there, data availability and
+[9:21.52] computational power as well as and
+[9:22.88] algorithm. So and that's exactly will be
+[9:26.40] needed to train a AI model. Data as well
+[9:29.20] as computational power and algorithms
+[9:30.96] solid algorithms. What else they need?
+[9:34.32] So then it's a boom in again modern AI
+[9:37.20] era. So AI enters into everyday life
+[9:40.64] like this Roomba came into picture. So
+[9:43.68] this was in vacuum cleaner and Google
+[9:46.88] search AI powered algorithm
+[9:48.80] revolutionize information retrieval like
+[9:51.76] uh in search engines and as well as
+[9:54.48] recommendation systems Netflix, YouTube,
+[9:57.20] Amazon, Facebook they started using this
+[9:59.76] AIS uh to enhance user experience to
+[10:03.04] save to learn from your preferences and
+[10:04.80] recommend you accordingly
+[10:06.88] right smartphone smartphones like we got
+[10:10.08] voice recognition and predictive text
+[10:12.00] become more common at that time. Okay.
+[10:15.60] So this is the era when AI enters into a
+[10:18.32] real life into everyday life but we I
+[10:21.12] guess didn't notice that this thing at
+[10:23.04] that time. So in 2011 IBM Watson
+[10:28.24] he this system defeated human champions
+[10:31.20] on Jeopardy. This was a quiz show on
+[10:34.40] television and there was uh I guess two
+[10:37.36] former champions and this system
+[10:39.60] defeated those two champions in this in
+[10:42.32] this quiz show. So now obviously this
+[10:46.80] this has proved that now machines could
+[10:49.68] understand could understand and respond
+[10:51.20] to natural language also right but at a
+[10:54.72] level competitive with human experts
+[10:56.80] even with human expert or even better
+[10:58.88] than those. So this was a major
+[11:01.52] milestone and in the same year Apple
+[11:04.08] also released Siri the first virtual
+[11:06.48] assistant. In 2012, AlexNet this was
+[11:10.16] also a deep learning deep learning model
+[11:12.72] won uh competition image net proving
+[11:16.24] that deep learning power in image
+[11:18.80] recognition. Basically uh their system
+[11:21.52] excel in recognizing cats
+[11:24.64] with unsupervised data, unlabeled data.
+[11:27.60] no background information was provided.
+[11:30.16] So uh they were using deep learning
+[11:32.48] neural networks.
+[11:34.64] So this was also a major milestone.
+[11:37.44] Okay. After that in 2016
+[11:41.36] I guess you have heard this news that uh
+[11:44.00] humanoid robot Sophia the first citizen
+[11:47.20] the first robot citizen which got the
+[11:49.84] citizenship citizenship of Saudi Arabia
+[11:52.96] humanlike robot was there can see can uh
+[11:55.92] you can say uh replicate the emotions
+[11:58.32] and can respond accordingly.
+[12:00.64] Okay, this came into picture and after
+[12:03.84] that in 17 this was also a major
+[12:06.08] milestone.
+[12:07.60] In 17 uh Google brain team published a
+[12:12.24] paper
+[12:14.00] and in that paper published a concept of
+[12:16.96] transformer transformer architecture.
+[12:20.16] This was this was really playing a big
+[12:23.04] role nowadays in charge.
+[12:25.60] So they introduced the paper name was
+[12:28.40] attention is all you need and they
+[12:30.00] introduced the transformer architecture
+[12:31.76] revolutionizing natural language
+[12:33.36] processing. Natural language processing
+[12:35.52] due to its the core idea was self
+[12:38.24] attention mechanism self attention.
+[12:41.76] The core idea is that the model can pay
+[12:44.16] attention to uh different parts of the
+[12:46.48] input like a sentence while processing
+[12:48.32] each word. So this helps to improve the
+[12:51.44] context in which we are talking with the
+[12:53.68] model. Right? So this enabled the
+[12:55.84] machine to better understand context in
+[12:57.52] language like um in charge JP when if I
+[13:00.88] if I ask to charge JP that uh do you
+[13:03.84] know something about Ji Khatri so it
+[13:06.72] will tell me then next question I'll ask
+[13:09.92] is she a good teacher I'm not asking
+[13:11.84] that is Janti Khatri a good teacher I'm
+[13:13.60] just asking is she a good teacher so
+[13:15.68] chut understand the context she I'm
+[13:18.00] using in the context of jenti khatri
+[13:19.68] only right so this is basically uh the
+[13:24.00] term we are using the context
+[13:25.84] understanding the context chart GPT can
+[13:27.92] easily understand the context we are
+[13:29.44] talking about like we human also uh uh
+[13:33.84] do conversation in this way only right
+[13:36.40] we can understand that if I I'm I'm uh
+[13:39.68] saying she then I'm uh you can say uh
+[13:42.08] talking about jandi khatri even if a
+[13:43.92] machine can also understand because of
+[13:46.16] this model this architecture transformer
+[13:48.08] architecture transformer model right
+[13:51.68] after this 17 there the next year only
+[13:56.64] open AAI released their first GPT GPT
+[14:00.32] first the birth of GPT we can say
+[14:04.24] generative pre-trained transformer
+[14:08.24] okay and this obviously the name suggest
+[14:10.72] this use the that the previous
+[14:12.32] transformer architecture that model to
+[14:15.60] train their this model GPT first after
+[14:19.76] that we know that this 117 million
+[14:23.28] parameter So this was a little bit less
+[14:25.44] having only 117 million parameters only
+[14:27.84] not billions but this marked the
+[14:30.32] beginning of a new era in this language
+[14:33.28] AI that GPS after that GPT now GP 3 4.5
+[14:38.40] is there okay so uh because of this we
+[14:42.88] could generate text from simple prompts
+[14:45.76] and now in we are in 20s so this is the
+[14:49.60] era of we can say generative AI and AGI
+[14:53.36] I artificial general intelligence but
+[14:57.76] let's see we'll reach till AI or not but
+[14:59.76] we are in the phase of generative AI now
+[15:02.08] in 2020s generative AI means now we have
+[15:05.60] those models like chat GPT but we can
+[15:08.16] have Delhi mid generary uh sorry
+[15:10.08] midjourney and using this we can
+[15:12.48] generate image text audio video code
+[15:16.00] using GitHub copilot we can generate
+[15:17.76] code so we can generate these many
+[15:20.56] things with simple prompts with just
+[15:22.48] simple promp Just give write a story on
+[15:24.56] this and you will get the story complete
+[15:26.64] story in 100 words. So in 100 words you
+[15:29.28] will get the story. You will ask simply
+[15:32.16] uh generate a picture of a cat uh eating
+[15:35.76] something or drinking milk on moon
+[15:37.92] maybe. So aperture would be there a cute
+[15:40.80] cat doing the same thing with just
+[15:43.60] simple prompts we can do this thing. So
+[15:45.84] now we are in the era of generative AI.
+[15:49.36] Okay. These models and these models are
+[15:51.92] trained on huge data set huge data set
+[15:55.36] using deep learning deep neural networks
+[15:58.88] exactly behaving like human brain like
+[16:01.44] having neurons multi-layer neurons and
+[16:03.68] like this connected connected with each
+[16:06.08] other and they are so powerful but still
+[16:09.36] still the questions are about AI ethics
+[16:12.48] security privacy and future of work so
+[16:14.96] these are still the question you know
+[16:16.48] debate topics okay and Now generative AI
+[16:20.64] tools reach hundreds of millions of
+[16:23.04] user. We know this thing right now.
+[16:25.52] Okay. And investment or also in AI
+[16:28.24] startup are like rising up to like high
+[16:31.84] level. But still this is a debate will
+[16:34.56] be reached to AGI artificial general
+[16:36.80] intelligence. Can machine machine that
+[16:40.00] can think and learn like we human do? Is
+[16:42.80] it possible completely? Let's see. This
+[16:44.88] is still debatable topic. It will happen
+[16:46.72] or not in future. So I guess now you
+[16:49.12] have some idea
+[16:51.28] uh that where this AI starts and now
+[16:54.72] where we are. This all started from a
+[16:57.04] simple question. Can machine think and
+[16:59.92] now see where we are. Okay. So this is
+[17:03.52] all about you can say history of AI. Now
+[17:05.76] in the next lecture we will be
+[17:07.44] discussing about generative AI. So now
+[17:10.64] we'll see in the next lecture. Until
+[17:11.76] then, bye-bye. Take

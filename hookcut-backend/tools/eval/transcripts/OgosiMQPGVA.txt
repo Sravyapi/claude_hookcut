@@ -1,0 +1,328 @@
+[0:00.64] Hello everyone, welcome to Nesso
+[0:02.72] Academy. In this lecture, we will
+[0:05.20] understand functions in C++. So without
+[0:09.60] any further delay, let's get started
+[0:11.60] with this lecture and let's see what are
+[0:13.84] the topics. The first topic is
+[0:16.64] introduction to functions. First I will
+[0:19.28] introduce you to functions. Then we will
+[0:22.40] understand how to define a function,
+[0:25.12] call a function and declare a function.
+[0:28.88] So these are all the topics. Let's start
+[0:31.20] with the first one. Introduction to
+[0:33.52] functions.
+[0:35.04] So what is a function? A function is a
+[0:39.12] reusable block of code that performs a
+[0:42.64] specific task. So think of a function as
+[0:46.00] a block of code which you can reuse as
+[0:49.28] many times as you want and it has the
+[0:52.40] capability to perform some task on its
+[0:55.20] own.
+[0:56.64] So we can imagine a function as a
+[0:59.12] machine which can accept inputs. It can
+[1:03.04] operate on those inputs and then it
+[1:06.08] produces an output.
+[1:08.40] Let's take an example to properly
+[1:10.24] understand this. Let us assume we want
+[1:12.64] to add two numbers. For this purpose we
+[1:15.44] can define a function add like this.
+[1:18.48] This add function can receive inputs.
+[1:21.76] The two inputs we pass to this function
+[1:24.00] let's say are 20 and 50.
+[1:28.00] This function will operate on these
+[1:30.24] inputs and then it produces the output
+[1:33.68] 70. We are getting 70 because 20 + 50 is
+[1:38.00] 70.
+[1:39.52] So with this we have understood what a
+[1:41.92] function is. Now let's see what are the
+[1:44.96] different types of functions we have in
+[1:47.36] C++.
+[1:49.28] We have two types of functions. We have
+[1:52.16] predefined functions and userdefined
+[1:55.44] functions. Predefined functions are
+[1:58.08] those functions which are already
+[2:00.16] defined for us. We do not have to define
+[2:03.04] them. This means we do not have to write
+[2:05.36] code for them. We can directly use those
+[2:08.16] functions in our code if we want. Let's
+[2:11.28] say we want to calculate square root of
+[2:13.28] a number. We already have the function
+[2:15.60] for the same. The function name is sqrt.
+[2:19.84] Similarly, if you want to calculate x
+[2:22.24] power y, we have the function for the
+[2:24.88] same which is called pow. To this
+[2:27.04] function, we can pass the inputs x and
+[2:29.28] y. If we want to know whether a specific
+[2:32.32] character is an alphabet or not, we have
+[2:35.52] the function which is called is alpha to
+[2:38.16] do this job. If we want to know what's
+[2:41.04] the length of the string, then we have
+[2:42.96] the function str len to calculate the
+[2:45.92] length of the string.
+[2:48.24] So these are all the predefined
+[2:50.16] functions. These functions are already
+[2:52.64] defined for us. We can directly use
+[2:54.96] these functions in our code.
+[2:58.40] But what if we want to define our own
+[3:01.20] functions?
+[3:03.20] We may want to do this because we do not
+[3:05.92] have any predefined function for the job
+[3:08.64] that we want to do. In this case,
+[3:10.96] obviously we want to define our own
+[3:13.04] functions and we can do that. These type
+[3:16.56] of functions are called userdefined
+[3:19.92] functions. As the name itself suggests
+[3:23.28] these functions are called userdefined.
+[3:26.40] This means these functions are defined
+[3:29.12] by the user or programmer.
+[3:33.12] The focus of this lecture is to
+[3:35.28] understand how to define our own
+[3:37.92] functions and how to use them whenever
+[3:40.96] we want to.
+[3:43.76] So in this lecture in the subsequent
+[3:46.88] topics we will properly understand how
+[3:50.16] to define our own functions and how to
+[3:53.04] use them. So with this we are done with
+[3:56.24] the introduction to functions. Now let's
+[3:59.36] move to the second topic to understand
+[4:01.52] how to define a function.
+[4:04.96] Let's first understand the meaning of
+[4:06.88] defining a function. Defining a function
+[4:10.24] is same as writing the code for the
+[4:13.20] function that specifies how the function
+[4:16.48] performs its task. So when we define a
+[4:19.92] function, we write the code for that
+[4:22.32] function which is responsible to perform
+[4:24.88] the task on behalf of the function.
+[4:29.20] Now here is the syntax of defining a
+[4:31.52] function in C++.
+[4:33.60] We need to specify the return type.
+[4:35.68] First this return type represents the
+[4:38.72] type of the output returned by the
+[4:41.52] function. Then we need to provide the
+[4:44.08] name of the function. Then within
+[4:46.72] parenthesis we can provide the
+[4:48.32] parameters which are the inputs to the
+[4:51.28] function. We can provide as many
+[4:53.76] parameters as we want. and then within
+[4:57.20] braces we define the function body.
+[5:00.88] Function body represents the code which
+[5:03.84] is responsible to perform the task on
+[5:07.12] behalf of the function. I hope this
+[5:10.32] syntax is clear to you. Now let's
+[5:14.00] implement this syntax. Let's understand
+[5:16.56] how to implement this behavior in C++
+[5:20.24] programs. Let's define a function add.
+[5:24.24] Here is the definition of the function
+[5:26.16] add. Name of the function is add. Return
+[5:29.60] type is int. This means this function
+[5:31.76] will return an integer output. The
+[5:34.72] parameters are also integer parameters.
+[5:38.00] Here we have a and b. And here is the
+[5:41.92] body of this function. We have return a
+[5:44.80] + b. This function has the capability to
+[5:47.92] add a and b and then return the result.
+[5:52.16] So obtained.
+[5:54.56] So that's the function definition in
+[5:57.12] C++. Here we have defined the add
+[6:00.24] function. So with this we have
+[6:02.56] understood how to define a function. But
+[6:06.32] defining a function is not enough.
+[6:10.40] If we have a program and if we define a
+[6:12.88] function then it is not enough because
+[6:15.76] the function will not execute on its
+[6:18.32] own. We need to call the function to
+[6:22.08] execute it. And this is exactly what we
+[6:24.96] will learn in the next topic. For now,
+[6:27.44] we are done with defining a function.
+[6:31.12] Now, let's understand how to call a
+[6:33.68] function.
+[6:35.60] Calling a function means asking the
+[6:38.32] function to execute its task. So, when
+[6:41.76] we call a function, we ask the function
+[6:45.20] to simply execute.
+[6:48.56] And we can call a function from the main
+[6:51.92] function or from some other function.
+[6:55.04] That is what I have written here. A
+[6:56.80] function can be called from the main
+[6:59.68] function or some other function.
+[7:03.52] Here is the syntax to call a function.
+[7:06.16] We need to specify the name of the
+[7:08.00] function first. Then within parenthesis
+[7:10.64] we can provide the arguments based on
+[7:13.44] the parameters we have defined. So the
+[7:16.40] number of arguments must match with the
+[7:19.12] number of parameters we have defined for
+[7:21.92] the function.
+[7:23.84] At the end we need to put the semicolon.
+[7:27.20] So when we call the function we do not
+[7:29.12] specify the return type. We simply write
+[7:32.40] the name of the function and within
+[7:34.40] parenthesis we provide the arguments.
+[7:37.04] These arguments are the actual values we
+[7:40.48] pass to the function.
+[7:43.68] Now let's consider the add function and
+[7:46.80] let's call that function. For this
+[7:49.20] purpose, let's write the program.
+[7:52.88] Here is the complete program. I have
+[7:55.68] included the IO stream header file. And
+[7:58.00] here is the definition of the add
+[7:59.92] function. After this definition, we have
+[8:02.96] the definition of the main function. And
+[8:05.52] inside this main function, I have
+[8:07.92] written this stdc outline. And here I am
+[8:11.84] calling the add function. You can
+[8:14.08] compare this call with this syntax. Here
+[8:17.28] I have specified the name of the
+[8:19.28] function. Then within parenthesis I have
+[8:21.76] provided the actual values which are the
+[8:24.40] arguments.
+[8:26.24] These arguments will be passed to these
+[8:28.56] parameters.
+[8:30.40] When we call a function, the control
+[8:32.88] shifts to the definition of the
+[8:34.96] function. So from the main function now
+[8:38.24] we move to the definition of this add
+[8:41.60] function. These parameters A and B will
+[8:44.80] receive values three and four
+[8:47.60] respectively. This means variable A will
+[8:50.24] receive three and variable B will
+[8:52.56] receive four.
+[8:54.64] Now we know this add function will add
+[8:57.28] these numbers. We will get seven and
+[9:00.08] this value will be returned to the
+[9:02.96] caller only.
+[9:05.28] So that's the meaning of this statement.
+[9:07.92] Return a + b means return the result of
+[9:11.92] a + b to the caller of the function add.
+[9:17.28] This means this caller will receive
+[9:19.12] value seven. So here in place of add 3a
+[9:22.40] 4 7 will be available. This will be
+[9:26.16] available at runtime. So when we execute
+[9:29.36] this program we know we will get the
+[9:31.28] output 7. I hope this is clear to you.
+[9:35.20] So in this way we can call a function.
+[9:37.84] When we call a function we'll be able to
+[9:40.80] execute that function. Without executing
+[9:43.68] a function a function is of no use.
+[9:48.08] Now here you can observe one thing. I
+[9:51.12] have defined this function before this
+[9:54.08] main function. And this is important to
+[9:57.84] do because whenever we call a function,
+[10:01.52] its definition must be available before
+[10:04.40] it. That is why I have defined this
+[10:07.84] function before the main function.
+[10:10.96] But what if we want to define this
+[10:12.88] function after this main function? This
+[10:15.84] can be the requirement. Maybe we want
+[10:18.72] that the main function should be
+[10:20.48] available at the top of the program
+[10:22.64] always.
+[10:24.24] then we need to define this function
+[10:26.56] after the main function. Now if we shift
+[10:30.00] this function after the main function
+[10:32.96] then we will get error from the
+[10:35.20] compiler.
+[10:36.96] This is because compiler reads the code
+[10:39.36] from top to bottom. It has to see the
+[10:42.24] definition of the function first before
+[10:45.20] calling the function.
+[10:47.60] Therefore, writing this code is correct.
+[10:50.80] And we cannot shift this function after
+[10:53.92] the main function like this. If we want
+[10:57.52] to shift this function after the main
+[10:59.76] function, then we need to declare this
+[11:03.20] function before calling the function.
+[11:08.32] This is exactly what we will learn in
+[11:10.32] the next topic. For now, we are done
+[11:12.48] with calling a function. This means we
+[11:14.96] are done with this topic. Now let's move
+[11:17.44] to the fourth topic which is about
+[11:20.24] declaring a function. Declaring a
+[11:23.12] function means telling the compiler
+[11:25.68] about the name, return type and types of
+[11:29.36] parameters of the function. So when we
+[11:32.96] declare a function, we inform the
+[11:35.84] compiler about the name of the function,
+[11:39.04] the return type of the function and the
+[11:41.52] types of parameters of the function.
+[11:45.68] So we can say that it allows us to
+[11:48.88] define a function after it is called.
+[11:52.96] When we declare a function, we would be
+[11:55.28] able to define the function after it is
+[11:58.72] called. This is the importance of
+[12:01.84] declaring a function.
+[12:04.24] Now here is the syntax to declare a
+[12:06.24] function. We need to specify the return
+[12:08.72] type first. then the name of the
+[12:10.88] function and within parenthesis we need
+[12:13.04] to provide the parameters of the
+[12:14.96] function and at the end the semicolon
+[12:18.40] will come not the braces that's the
+[12:21.92] difference between declaration and
+[12:23.60] definition. In case of definition, we
+[12:26.56] always have braces and within braces we
+[12:29.44] provide the code of the function because
+[12:31.92] we want to define the function. But when
+[12:34.40] we declare the function, we end this
+[12:37.84] statement with semicolon.
+[12:42.16] We do not add braces. So that's the
+[12:45.12] declaration. We just tell the compiler
+[12:48.24] about the name of the function, the
+[12:50.56] return type of the function and also the
+[12:53.52] types of the parameters of the function.
+[12:56.88] Now let's take the same example program
+[12:59.04] to understand how to declare the
+[13:01.92] function. Here is the example program we
+[13:05.04] took in the last topic.
+[13:07.60] Here we have the definition of the add
+[13:09.60] function which is available before
+[13:12.48] calling the function.
+[13:14.80] Now let's say we want to define this
+[13:17.52] function after the main function. As I
+[13:20.40] have mentioned this already, we cannot
+[13:22.72] do this. Now if we do this, we will get
+[13:25.28] error from the compiler. But if we want
+[13:28.40] to really shift this function to the
+[13:31.20] bottommost place of this program, then
+[13:34.16] we need to declare this function before
+[13:37.20] calling this function like this. Here I
+[13:41.04] have declared the add function with
+[13:43.20] these parameters and this return type.
+[13:46.80] At the end we have the semicolon. This
+[13:48.96] semicolon is telling us that this is the
+[13:51.60] declaration not the definition. Now here
+[13:54.80] you can observe this declaration is
+[13:56.56] available before calling the function.
+[13:59.52] So it is perfectly valid.
+[14:02.24] And here you can observe the definition
+[14:04.48] of the add function is available after
+[14:06.96] the main function. Now there is no
+[14:09.28] problem. We will get the output seven as
+[14:12.24] expected.
+[14:14.64] With this declaration we are telling the
+[14:16.72] compiler that the definition of this
+[14:19.04] function is available somewhere in the
+[14:21.28] code. Don't worry at all if I call the
+[14:24.64] function.
+[14:27.36] Now I would like to mention that we do
+[14:29.60] not have to specify the name of the
+[14:31.84] parameters here.
+[14:34.08] This is not mandatory because compiler
+[14:37.28] has to do nothing with these names.
+[14:40.32] Compiler is only interested in the types
+[14:44.00] of the parameters. Therefore, we can
+[14:47.44] remove these names. And this is how our
+[14:50.24] declaration looks like. This is also the
+[14:52.80] valid declaration.
+[14:54.88] Now, when we execute this program, we
+[14:56.96] will get the same output seven.
+[15:00.24] So with this we have properly understood
+[15:02.48] the significance of declaring a
+[15:04.96] function. This means we are done with
+[15:06.80] the last topic also and we are done with
+[15:10.24] this lecture. Okay friends, this is it
+[15:13.44] for now. Thank you for watching this
+[15:15.20] lecture. I will see you in the next one.
+[15:18.94] [Applause]
+[15:21.09] [Music]

@@ -1,0 +1,425 @@
+[0:00.40] Hi everyone, welcome to another learn on
+[0:03.20] the go. Most of you and that includes
+[0:05.36] me, we have a decent amount of a corpus
+[0:08.64] in mutual funds and as I explained in an
+[0:11.12] earlier video, it's the fund manager who
+[0:13.36] is basically the karta dharta of our
+[0:16.16] investing fortunes. That said, in this
+[0:18.80] video, I'll be taking you through some
+[0:21.12] simple yet effective techniques that
+[0:23.52] help us understand if the fund manager
+[0:26.40] really is a skilled allocator of our
+[0:29.04] capital or are the returns he or she
+[0:31.68] delivers is nothing but dumb luck. If
+[0:34.48] you're into mutual funds, I'm sure
+[0:36.00] you'll find many parts of this video
+[0:38.32] very useful. By the way, this is episode
+[0:41.36] 23 and I hope you like it.
+[0:53.04] Okay. So, why does a manager selection
+[0:56.00] process matter? I'm sure you've come
+[0:58.24] across those PIVA reports which look to
+[1:00.72] answer a single question that is, do
+[1:03.20] active fund managers actually beat their
+[1:05.92] benchmarks over time. Now, believe me,
+[1:08.48] it's a very clever report. I say clever
+[1:10.56] because it hides a lot of things which
+[1:13.04] you and I will not find acceptable. For
+[1:16.56] example, the benchmarks this PIA report
+[1:18.96] uses is not an applesto apples
+[1:21.36] comparison. Like when it's comparing
+[1:23.36] large caps, their methodology uses the
+[1:25.76] large midcap index which is a different
+[1:28.40] benchmark and I really don't know why.
+[1:30.88] Similarly, the report talks of a mids
+[1:33.52] small cap category but uses the small
+[1:36.00] cap index as its benchmark. Another
+[1:38.40] observation which I think is an
+[1:40.08] important one is that the SPAR report is
+[1:42.80] comparing the active funds performance
+[1:45.20] which includes the fees and the expense
+[1:47.52] ratio with an index and because you
+[1:50.24] really can't invest in an index this is
+[1:53.28] not really a fair fight. Instead have
+[1:55.76] the SPIA report compared these active
+[1:59.04] funds with let's say an index fund and
+[2:01.68] applied the 2.3 sometimes.5%
+[2:05.60] expense ratio I anyways we have to get
+[2:09.28] our analysis right and I think this
+[2:11.36] table here is a better and a more
+[2:13.52] authentic representation of things I've
+[2:15.92] mapped the trailing three-year
+[2:17.68] performance of actively managed large
+[2:20.16] cap funds all 31 of them and against
+[2:23.28] these a standard NIFTY50 index fund has
+[2:27.28] delivered a kagger of just 14.3% which
+[2:30.96] means 80% of the active large cap funds
+[2:34.16] have done better than the index. It's
+[2:36.08] the same on a five-year basis with the
+[2:38.32] average Nifty50 index fund ranked at 22
+[2:41.76] in a pool of 29 schemes and on a 10-year
+[2:45.04] basis it's at 19 out of 26 schemes. You
+[2:48.80] can do the same exercise for midcaps,
+[2:51.12] small caps, multicaps, etc. Just
+[2:53.60] download what you need in an Excel
+[2:55.28] sheet. It's all there on
+[2:56.88] moneycontrol.com.
+[2:58.40] That said, I'm not endorsing active
+[3:01.04] mutual funds, neither index funds.
+[3:03.04] Personally, I truly believe there's a
+[3:05.20] place for both types of funds in one's
+[3:08.16] portfolio. And if you haven't watched
+[3:10.00] it, please do go through this webinar
+[3:12.00] from December last year where I featured
+[3:14.40] some of the more important frameworks
+[3:16.40] and systems that I've come across or
+[3:19.04] have built for myself and I'm also
+[3:21.12] implementing these in my own investing.
+[3:23.60] All right, let's come to the main event.
+[3:26.00] How to determine if a fund's success,
+[3:28.56] its performance is based on the fund
+[3:31.36] manager skill or not? Understandably,
+[3:34.24] there's no single way of verifying the
+[3:36.88] presence of such skill. And therefore,
+[3:38.72] we'll have to look at it from multiple
+[3:40.40] angles, both quantitative and
+[3:42.96] qualitative. I also didn't want this to
+[3:45.52] be a research grade video with
+[3:47.28] statistics and complicated formulas. So,
+[3:49.60] I've kept those out. And hopefully this
+[3:52.08] turns out to be something that normal
+[3:54.48] investors like you and me can easily
+[3:56.96] apply. Okay, let's start with the first
+[3:58.80] technique which is to examine the funds
+[4:01.68] long-term consistency across market
+[4:04.24] cycles. It's a very logical thing to do.
+[4:08.56] A rising tide lifts all boats.
+[4:15.28] And what do we check here? It's
+[4:17.12] obviously return but not trailing
+[4:19.36] returns. Instead, we'll check for
+[4:21.28] rolling returns. If this term is new to
+[4:23.68] you, I'll request you to understand this
+[4:26.24] further on chart GPT or some AI model.
+[4:29.76] Make sure your prompt also asks for an
+[4:31.76] example as the concept is a lot easier
+[4:34.24] to understand that way. Okay, let's now
+[4:36.16] go on to the practical implementation.
+[4:38.00] For this, I'll be using the power up
+[4:39.76] money app. I use it all the time. So,
+[4:42.40] I'm on the mutual fund page and let's
+[4:44.80] click on select. Now,
+[4:48.40] as you can see here, we have different
+[4:50.72] categories of equity funds right at the
+[4:53.12] top. We'll stick to large caps. And
+[4:55.52] here's a list of funds. Let's start from
+[4:59.28] the top. So, we have Nepon India, uh,
+[5:02.08] White Oak Capital, ICA Credential, Kotak
+[5:06.00] Large Cap Funds. So, the app also tells
+[5:08.80] me that Kotak large cap is something
+[5:11.28] which I have in my portfolio. SBI large
+[5:14.00] cap and so on. Okay, we then have the
+[5:16.24] elite scores which is a combination of
+[5:18.80] consistency, volatility and recency. I
+[5:22.08] think it's a part of the elite
+[5:23.60] subscription which is definitely worth
+[5:25.68] having. Uh there's a lot of stuff inside
+[5:28.16] it including ranking, there are trends,
+[5:31.76] there is rebalancing allocation is about
+[5:34.32] to come up. I think it's due next month
+[5:36.72] and uh the best part is that it's not
+[5:38.96] expensive at all. It's 9999 rupees plus
+[5:42.40] GST and this is for the entire year. So
+[5:45.36] do have a look at it. It's it's
+[5:47.12] definitely worth it. At least I I find
+[5:48.96] it very useful. Okay, I'm swiping
+[5:51.12] towards the right and here we have
+[5:53.28] rolling returns. So this is what we are
+[5:55.52] really interested in. Uh let me start
+[5:57.44] off by sorting on the basis of the
+[6:01.20] fiveear returns. Okay. So the usual
+[6:03.68] suspects are all there. There is Nepon
+[6:06.08] India. Um ICI credential canraeco
+[6:12.16] wise I think most of these guys are also
+[6:14.56] pretty old aged. Uh these are direct
+[6:17.52] funds I think should be 13 years. Yeah
+[6:20.00] most of them. See except for that
+[6:22.08] Mahindra Manulife most of the other
+[6:24.40] funds which are in the top category
+[6:26.00] they're all 13 years. And uh yeah, from
+[6:30.32] the looks of it, uh in terms of the
+[6:32.72] rolling return, it seems uh most of them
+[6:35.92] have actually been able to navigate the
+[6:39.04] different market cycles pretty well and
+[6:41.76] have a decent rolling return to offer.
+[6:45.28] It's it's it's 19 18 17% for the top uh
+[6:50.00] 10 odd funds, which is quite a decent
+[6:52.80] number to have. Just to be double sure,
+[6:54.88] I tried this rolling return analysis
+[6:57.20] with the index, the Nifty50, which came
+[6:59.76] to a three-year average of 13.5% and a
+[7:04.08] 5-year average of 14%, which means for
+[7:07.28] the top large cap funds that we saw in
+[7:09.84] the PowerUp Money app, their performance
+[7:12.16] is generally attributable to their fund
+[7:14.48] manager's efforts. In a nutshell, any
+[7:16.64] scheme that has beaten the benchmark in
+[7:19.04] most rolling windows is indicative of
+[7:21.68] the fund manager's skill and it's
+[7:24.24] definitely not luck. The ulta version of
+[7:26.56] this is that if a fund has had one or
+[7:29.68] two standal years but has been mediocre
+[7:32.00] otherwise, then it's purely luck and
+[7:34.08] it's also the reason why rolling return
+[7:36.80] analysis is given more weightage than
+[7:39.52] looking at trading returns. A second
+[7:41.92] technique one can employ is to look at
+[7:44.64] benchmark relative returns in the sense
+[7:46.88] that which are those funds that have
+[7:48.64] consistently outperformed their
+[7:50.80] benchmark by 2 to 3%. As an example,
+[7:53.92] let's try small caps this time, the
+[7:55.76] Nifty Small Cap 250 index. And here's
+[7:59.04] what this index has delivered every year
+[8:01.52] since 2018. As expected, there were some
+[8:04.00] bull periods like in 2021 and 23 and
+[8:08.08] also a few lull periods like 2018, 19,22
+[8:13.12] and of course last year. So here's what
+[8:15.92] I did. I picked some of the popular
+[8:19.28] small cap schemes that have been there
+[8:20.96] for long. I then populated their yearly
+[8:24.24] performance direct plans and now let's
+[8:26.88] compare them with the benchmark. For
+[8:28.80] example, DSP small cap back in the day.
+[8:31.12] I remember this was called DSP micro
+[8:33.60] cap. So this scheme has had 5 years of
+[8:37.12] outperformance that is it delivered
+[8:39.36] returns higher than the benchmark and
+[8:41.44] for 3 years it underperformed the nifty
+[8:44.08] small cap 250. It's the same with Tata
+[8:46.96] small cap 5 is to three. The ICI
+[8:50.00] credential small cap fund is even steel.
+[8:52.56] So four years of outperformance and four
+[8:55.36] under same is the case with HDFC for
+[8:58.64] all. But then we have the Nippon India
+[9:02.00] small cap fund. It's a scheme that has
+[9:04.32] beaten the benchmark in seven of the
+[9:06.56] last 8 years with the year 2024 being a
+[9:10.08] small exception. I say small because the
+[9:12.48] scheme was just 1.9%
+[9:15.04] below the benchmark but in all other
+[9:17.36] years it managed to beat it. Should we
+[9:19.84] call this skill or is it luck? I'll
+[9:22.16] leave it to you to decide. But just FYI,
+[9:25.12] this small cap scheme from Nepon India
+[9:27.92] was above the benchmark in not only
+[9:30.80] those seven years but in the 3 years
+[9:33.20] prior to that as well, making it 10 out
+[9:35.84] of 11 for them. My point is consistently
+[9:38.80] beating the benchmark is another
+[9:40.96] excellent way of understanding if your
+[9:42.96] fund manager is skillful or not. A third
+[9:46.32] observation and something I'll suggest
+[9:48.24] every mutual fund investor to do is to
+[9:50.72] check out the tenure of the fund manager
+[9:53.04] running the scheme. Let's try this one.
+[9:55.36] HTFC Flexicap it's uh one of the biggest
+[9:59.44] funds in its category. I think after
+[10:01.92] parataric flexiap I think this is number
+[10:04.08] two in terms of assets under management.
+[10:06.72] And see this it's uh uh ranked one. It's
+[10:11.04] been informed for quite some time. uh
+[10:14.08] yeah in the last 2 years it's been
+[10:16.24] absolutely informed um rolling returns
+[10:19.52] so we had uh discussed that earlier so
+[10:21.84] it's done 7% more than category on a
+[10:25.20] 3-year rolling return basis which is
+[10:27.84] really good let's go further um yeah
+[10:31.84] everything's nice see the amum it's
+[10:33.92] 96,000 crores it's about to cross the
+[10:36.96] one lakh cr what I'm really interested
+[10:39.76] in is right at the bottom fund managers
+[10:42.88] is and see this. So I think Mr. Muchell
+[10:46.40] is a junior fund manager. The top dog is
+[10:50.00] of course Amit Ganatra who was appointed
+[10:53.12] very recently just this month and he
+[10:55.76] comes from Invesco India where he was
+[10:58.56] the head of equities. So he's
+[11:00.88] essentially taken over from Rashi Jen
+[11:03.28] who exited in November last year who in
+[11:06.08] turn took over from Mr. Prashant Jen who
+[11:08.56] managed this fund from 1995 until 2022.
+[11:13.36] This means until 2022 the HDFC flexiap
+[11:17.44] fund was managed in a particular style
+[11:19.92] which was predominantly value. Then when
+[11:23.04] Rashi Jen ran this fund it was largely
+[11:25.84] bottom up stock picking with a fairly
+[11:28.24] concentrated portfolio. But now with Mr.
+[11:30.72] Ganatra managing this fund. It will be
+[11:32.88] his investing style at play and
+[11:35.04] therefore one has to monitor the
+[11:36.80] performance and holdings more carefully
+[11:39.20] now to see if it aligns with your
+[11:41.20] preferences. Believe me, this single
+[11:43.20] check on a fund manager's tenure can
+[11:45.68] help you eliminate a number of false
+[11:47.92] winners. Making a clear distinction
+[11:50.24] between skill and riding on someone
+[11:53.04] else's legacy. The fourth strategy is
+[11:55.76] downside protection and it connects with
+[11:57.84] what I said earlier. A rising tide lifts
+[12:01.76] all boats. Meaning while luck would
+[12:04.16] shine in bull markets, it's the skill
+[12:07.04] that keeps things from breaking in a
+[12:09.28] bearish face. So in a way this is a
+[12:11.52] variation to what we did earlier as in
+[12:14.40] instead of observing all years, we want
+[12:16.80] to now focus only on the bearish periods
+[12:19.60] and compare the index with the schemes
+[12:22.08] in only that difficult period. for
+[12:24.00] example, and although the Nifty50 hasn't
+[12:26.64] seen too many negative years, 2018, 22,
+[12:31.36] 24, and even last year, 2025, these were
+[12:35.20] below the Nifty50s long-term average.
+[12:37.92] So, let's examine those bearish years.
+[12:40.72] Okay? So, there's no outright winner
+[12:42.96] here with every scheme underperforming
+[12:45.44] the benchmark in at least two out of
+[12:47.52] four occasions. But if one examines
+[12:49.92] deeply, ICIA potential large cap seems
+[12:52.96] to have just slightly missed the mark in
+[12:55.60] 2025 and it has delivered a decent alpha
+[12:59.36] in 2022 and 24. An almost similar
+[13:03.20] situation is seen with Nepon India where
+[13:05.76] it outperformed the Nifty50 index by 8%
+[13:09.36] in these two years with a downside of
+[13:12.24] only 2.3% last year. Now I'm not saying
+[13:15.36] this is the only way of doing things. In
+[13:17.68] fact, there are some variations to
+[13:19.60] downside protection as well. For
+[13:21.44] example, and I'm sure you know this,
+[13:23.84] Parak Parik Flexiap, the fund managers
+[13:26.48] there have kept a decent amount of money
+[13:28.72] in cash somewhere around 20% which
+[13:31.76] definitely offers a cushion when things
+[13:34.16] are going south. But this can work the
+[13:36.56] other way as well and we saw a glimpse
+[13:38.40] of that earlier this month when the
+[13:40.56] nifty 500 jumped by over 2 and a.5% but
+[13:44.24] the parakaric flexiaps NAV grew by only
+[13:47.60] half of that number. My point is it is
+[13:50.32] important and always better to look at
+[13:52.56] things from multiple angles. A
+[13:54.56] combination of things and believe me
+[13:56.72] doesn't take much time to compile all
+[13:59.20] this data if you know what you are
+[14:01.44] doing. Okay, I'll be quick now. The
+[14:04.32] fifth way to differentiate skill versus
+[14:07.52] luck is to link it with the AUM, the
+[14:10.32] assets under management. Let me start
+[14:12.88] from the top. So something you would
+[14:14.88] have heard at least I hear all the time
+[14:17.44] is that as the AUM increases the
+[14:19.92] performance of the fund goes down not
+[14:22.40] that it goes down down but it comes
+[14:24.72] closer to benchmark returns. Now if
+[14:27.44] that's the case then it becomes a useful
+[14:30.32] metric to explore in the sense that if
+[14:32.48] the fund's performance holds even when
+[14:35.44] the AUM is going up then much of it
+[14:38.72] should be attributable to the skill of
+[14:40.64] the manager rather than luck. You can
+[14:42.88] definitely try this out on some of the
+[14:44.96] bigger funds. Parak flexi cap, HDFC
+[14:48.40] flexiap, IC approve large cap, nippon
+[14:51.84] India small cap, etc. Let's do another
+[14:54.48] technique. This one's a bit qualitative
+[14:57.20] and is based on a few scheme
+[15:00.08] characteristics. For instance, the top
+[15:02.40] 10 holdings of a scheme can give you a
+[15:04.72] strong idea on whether the fund manager
+[15:07.20] is actually doing some stock picking.
+[15:09.84] That is applying his or her skills or
+[15:12.48] are they simply doing closet indexing.
+[15:15.28] If you're coming across this word for
+[15:16.88] the first time, closet indexing is when
+[15:19.68] an actively managed mutual fund claims
+[15:22.80] to pick stocks actively, but in reality,
+[15:26.08] its portfolio looks very similar to its
+[15:28.48] benchmark index. For example, this here
+[15:31.60] represents the Nifty50's top 10
+[15:34.64] holdings. And these are the top 10
+[15:36.56] holdings of the Canra Roeco Flexiap
+[15:39.36] Fund. As one sees here, there's a lot of
+[15:42.00] overlap in terms of stocks. In fact,
+[15:44.80] eight out of the Nifty's top 10 are
+[15:47.44] here. And in sharp contrast is another
+[15:50.16] flexiap. This one's by Modilal Oswal,
+[15:52.96] which has a lot less overlap. Another
+[15:55.92] fund characteristic is the level of
+[15:57.84] conviction and of special mention are
+[16:00.48] the schemes managed by Motilal Oswal AMC
+[16:03.76] where every fund of theirs have between
+[16:05.92] 25 and 35 holdings in them. This shows a
+[16:09.44] high amount of conviction and again
+[16:11.68] something that can be aligned to the
+[16:13.36] fund manager skill rather than luck. And
+[16:16.08] lastly there's the style of investing.
+[16:18.64] So if someone's doing contrarian
+[16:20.88] investing, value investing, then believe
+[16:23.52] you me, getting results from there is
+[16:26.24] often a function of skill rather than
+[16:28.72] luck. The point I want to make here is
+[16:31.20] that certain characteristics like a
+[16:33.76] well-defined and repeatable stock
+[16:36.00] picking process, consistency in strategy
+[16:38.72] and action, high levels of conviction,
+[16:41.28] and strong risk management strategies
+[16:44.00] are traits we often look for. And when
+[16:46.56] combined with on ground performance,
+[16:48.88] this can give us a fair idea of how
+[16:51.84] skillful a fund manager really is. All
+[16:55.12] right, so we've covered quite a bit
+[16:57.44] here. I'm sure everyone understands
+[16:59.84] identifying something as subjective as
+[17:02.16] skill isn't easy. So this is definitely
+[17:04.88] an attempt at this and I'm sure over
+[17:07.76] time this process will evolve as well. A
+[17:10.64] simple way of applying this is the
+[17:12.80] scorecard method with a point being
+[17:15.28] offered for every condition met. These
+[17:18.08] are eight boxes. So let's say if a fund
+[17:20.56] or a fund manager gets five or more
+[17:23.04] points then there's more skill at play
+[17:25.60] than luck. More so I think this slide
+[17:28.08] very nicely summarizes the techniques as
+[17:30.40] well. And personally, I find this
+[17:33.20] science plus art kind of an assessment a
+[17:36.16] lot more relevant, structured, and
+[17:38.56] effective than using something like a
+[17:41.04] sharp ratio, Jensen's alpha, trainers
+[17:44.08] ratio, etc. Not that these aren't
+[17:46.48] relevant, but I find this better. And
+[17:48.72] just to doubly sure, I find myself going
+[17:51.36] back to the PowerUp Money app to verify
+[17:53.60] the rankings, rolling returns, and some
+[17:56.40] other useful tools that the company has
+[17:58.48] built up there. I'm not sure if I said
+[18:01.04] it. Uh, PowerUp money. The app is
+[18:03.12] absolutely free to use. It's been made
+[18:05.36] like a mutual fund advisory platform.
+[18:07.76] So, it's purely research. And if you're
+[18:10.08] already using it, do explore subscribing
+[18:12.08] to the elite feature. It's just 9999
+[18:16.00] rupees plus GST for the entire year and
+[18:18.88] I'm sure you'll find it very helpful.
+[18:20.96] That said, I hope today's video was
+[18:23.44] helpful, informative, and actionable.
+[18:26.24] Selecting the right fund manager is
+[18:28.40] nothing short of finding the next
+[18:31.04] multibagger. And if you can get the
+[18:33.12] right one, someone who can give you 3,
+[18:35.44] four, 5% more than benchmark, then it's
+[18:38.48] an Alice in Wonderland situation. That
+[18:41.28] said, uh thank you for your time. I uh
+[18:45.04] wish you the very best. Uh have a
+[18:47.12] pleasant day ahead and I'll see you very
+[18:49.28] soon. Bye-bye.

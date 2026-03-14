@@ -193,12 +193,19 @@ export const HooksStep = memo(function HooksStep({
       >
         {hooks.map((hook) => (
           <motion.div key={hook.id} variants={fadeUpItem}>
-            <HookCard
-              hook={hook}
-              selected={selectedIds.has(hook.id)}
-              onToggle={toggleHook}
-              disabled={selectedIds.size >= MAX_SELECTED_HOOKS}
-            />
+            <div className="relative">
+              {hook.primary_speaker && (
+                <span className="absolute top-2 right-2 z-10 text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-400 border border-cyan-500/20 font-medium">
+                  {hook.primary_speaker}
+                </span>
+              )}
+              <HookCard
+                hook={hook}
+                selected={selectedIds.has(hook.id)}
+                onToggle={toggleHook}
+                disabled={selectedIds.size >= MAX_SELECTED_HOOKS}
+              />
+            </div>
           </motion.div>
         ))}
       </motion.div>

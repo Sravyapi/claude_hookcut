@@ -41,8 +41,7 @@ class GeminiProvider(LLMProvider):
                     except Exception as e:
                         logger.warning("Failed to report rate limit to Sentry: %s", e)
                     raise RuntimeError(
-                        "Gemini rate limit hit (429). Free tier allows ~15 requests/minute. "
-                        "Wait 60 seconds and try again."
+                        "Gemini rate limit hit (429). Please wait 60 seconds and try again."
                     )
                 resp.raise_for_status()
                 data = resp.json()

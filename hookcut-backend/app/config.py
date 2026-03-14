@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str = ""
     ANTHROPIC_API_KEY: str = ""
     GEMINI_API_KEY: str = ""
+    ASSEMBLYAI_API_KEY: str = ""
     WHISPER_API_KEY: str = ""  # Falls back to OPENAI_API_KEY if empty
     YOUTUBE_API_KEY: str = ""  # YouTube Data API v3 for reliable metadata
 

@@ -449,7 +449,7 @@ class TestManualClip:
                 video_title="My Awesome Video",
             )
 
-        assert result.title == "My Awesome Video - Clip"
+        assert result.title == "My Awesome Video"
 
 
 # ─── Test: composite hook ───

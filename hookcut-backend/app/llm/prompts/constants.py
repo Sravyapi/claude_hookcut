@@ -201,6 +201,7 @@ BASE_HOOK_RULES: dict[str, dict[str, str]] = {
     "O": {"title": "Funnel role diversity", "content": "Funnel role diversity: 5 hooks serve different purposes"},
     "P": {"title": "Strip section labels", "content": "Strip section labels/navigation text from hook starts"},
     "Q": {"title": "Workflow demos", "content": "Workflow demos: include full step-by-step sequence, don't cut mid-demo"},
+    "R": {"title": "Duration bias", "content": "Duration bias: strongly prefer hooks ≥10 seconds. Hooks under 10s rarely build enough tension or curiosity to drive complete watch + source video pull. Score hooks <10s at least 2 points lower on attention_score unless the hook is exceptionally dense and self-contained. A sub-10s hook must be extraordinary to justify selection — default to longer alternatives."},
 }
 
 

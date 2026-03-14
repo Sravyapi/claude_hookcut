@@ -1,0 +1,261 @@
+[0:01.35] [Music]
+[0:06.04] in our previous presentations we
+[0:08.20] understood the time complexity and the
+[0:11.56] space complexity in details now in this
+[0:14.96] lecture we will understand commonly used
+[0:18.28] logarithms and summations while doing
+[0:21.16] the analysis of algorithms so let's get
+[0:24.44] started and let's see what are the
+[0:26.16] topics of this
+[0:28.00] lecture the first topic of the this
+[0:30.16] lecture is understanding logarithms
+[0:33.04] first we will understand basics of
+[0:35.84] logarithms and then we will understand
+[0:38.32] some of the commonly used logarithms
+[0:40.44] while doing the analysis of algorithms
+[0:43.28] and then we will understand some of the
+[0:45.28] commonly used summations while doing the
+[0:48.16] analysis of
+[0:49.80] algorithms so these are the topics of
+[0:52.16] this lecture so let's get started with
+[0:54.88] the basics of logarithms
+[0:57.72] first so what is a log logarithm in
+[1:01.16] order to understand what is logarithm
+[1:03.88] let's take the general form of logarithm
+[1:07.16] which is log a base
+[1:09.88] B log a base B is the general form of
+[1:15.32] logarithm here a represents the argument
+[1:19.12] of the logarithm and B represents the
+[1:22.84] base of the
+[1:24.68] logarithm but what is the meaning of log
+[1:27.68] a base B log log a base B tells how many
+[1:32.68] times we need to multiply B by itself in
+[1:36.88] order to obtain a so this is the meaning
+[1:40.40] of log a base B in order to properly
+[1:44.84] understand this meaning let's take one
+[1:46.92] simple example let's say we want to find
+[1:50.56] log
+[1:51.68] 128 base
+[1:53.96] 2 the argument of logarithm is
+[1:57.92] 128 and the base is
+[2:00.92] 2 log 128 base 2 tells the number of
+[2:06.04] times we need to multiply 2 by itself to
+[2:09.72] obtain
+[2:12.28] 128 how many times do we multiply 2 by
+[2:15.48] itself to obtain
+[2:17.32] 128 we need to multiply 2 by itself 7
+[2:21.60] times to obtain
+[2:23.92] 128 because 2^ 7 is
+[2:28.04] 128 so log 128 base 2 is
+[2:32.96] 7 I hope now it is clear what is the
+[2:35.76] meaning of logarithm so logarithm tells
+[2:39.36] the number of times we multiply Base by
+[2:42.20] itself to obtain the argument this means
+[2:46.20] we must always look at the power of the
+[2:48.88] base in this case 2^ 7 is
+[2:54.00] 128 hence 7 is the logarithm of 128 base
+[2:59.48] 2
+[3:00.64] so now as we have understood what is the
+[3:03.40] logarithm let's move to the next topic
+[3:06.00] where we will discuss some of the
+[3:07.92] commonly used logarithms while doing
+[3:10.64] analysis of
+[3:12.84] algorithms the first commonly used
+[3:15.36] logarithm is log a base a which is equal
+[3:19.72] to 1
+[3:21.76] why how many times do we multiply a
+[3:25.12] which is the base by itself to obtain
+[3:27.80] the argument a we need to multiply a by
+[3:32.04] itself only one time to obtain a that is
+[3:35.72] why we are getting one here a^ 1 is a so
+[3:39.68] logarithm of a base a is 1 let's take
+[3:44.40] one simple example let's find out what
+[3:47.60] is log 10 base 10 10^ 1 is 10 therefore
+[3:53.44] 1 is the logarithm of 10 base 10 the
+[3:57.64] second logarithm is log 1 1 base a which
+[4:01.00] is equal to
+[4:02.36] 0 why are we getting Zer here because a^
+[4:06.28] 0 is 1 let's take one simple example
+[4:10.40] let's find out what is log 1 base 10 log
+[4:14.56] 1 base 10 is 0 because 10 power 0 is 1
+[4:19.32] and we must always look at the power of
+[4:21.36] the
+[4:22.24] base base here is 10 and argument is 1
+[4:27.00] 10^ 0 is 1 that's why we are getting
+[4:30.36] zero as the result of log 1 base 10 now
+[4:34.44] let's move to the third logarithm the
+[4:36.60] third logarithm is log a power B base C
+[4:40.40] which is equal to B * log a base C you
+[4:44.84] need to remember this property of
+[4:46.84] logarithm and it is the most frequently
+[4:49.20] used
+[4:50.68] logarithm log a power B Bas C is equal
+[4:54.88] to B * log a base C
+[4:59.88] the power comes before logarithm and
+[5:02.96] that's why we are getting B * log a Bas
+[5:06.08] C now let's take one example to properly
+[5:09.36] understand this logarithm let's find out
+[5:11.96] what is log 10^ 2 base 10 if we apply
+[5:16.68] this property of logarithm two should
+[5:19.92] come before logarithm so this is equal
+[5:23.28] to 2 * log 10 base 10 what is log 10
+[5:28.04] base 10 we just saw log 10 base 10 is 1
+[5:33.08] so we will get 2 * 1 which is equal to 2
+[5:37.44] so log 10^ 2 base 10 is 2 let's move to
+[5:42.72] the fourth logarithm log a Bas C is
+[5:46.88] equal to log a base C plus log B base C
+[5:51.96] let's take one simple example to
+[5:54.00] understand this
+[5:55.32] logarithm let's find out what is log
+[5:58.72] 1,00 base 10 we can rewrite log 1,00
+[6:03.36] base 10 as log 100 base 10 plus log 10
+[6:08.56] base 10 according to this property 1,000
+[6:12.52] can be written as 100 * 10 and because
+[6:16.36] of this we can get log 100 base 10 + log
+[6:20.20] 10 base 10 now how many times do we
+[6:23.00] multiply 10 by itself to obtain 100 two
+[6:26.64] times therefore log 100 base 10 is 2
+[6:30.20] what about log 10 base 10 log 10 Bas 10
+[6:32.84] is 1 so we will get 2 + 1 which is equal
+[6:37.32] to 3 so 3 is the answer for log 1,00
+[6:42.52] base 10 and it is true as well how many
+[6:46.28] times do we multiply base 10 by itself
+[6:49.28] to obtain the argument
+[6:51.80] 1,000 three times here also we are
+[6:55.20] getting the value three now let's move
+[6:58.00] to the fifth logarithm the fifth
+[7:00.16] logarithm is log a / B base C which is
+[7:04.68] equal to log a base C minus log B Bas C
+[7:09.28] so when we have multiplication we need
+[7:11.36] to add and when we have division we need
+[7:14.92] to
+[7:15.72] subtract let's take one simple example
+[7:18.84] let's say we want to find what is log
+[7:21.92] 100 / 10 base
+[7:24.44] 10 this can be Rewritten as log 100 base
+[7:28.64] 10 minus log 10 base 10 what is log 100
+[7:33.36] base 10 we just saw it is equal to 2 and
+[7:36.52] log 10 base 10 is 1 so we will get 2 - 1
+[7:40.76] which is equal to 1 so this is the
+[7:43.48] result of log 100 divide by 10 base 10
+[7:47.96] we applied this property log a by B base
+[7:51.48] c equal to log a base C minus log B Bas
+[7:55.16] C now here comes the sixth logarithm log
+[7:58.84] a BAS B is equal to 1 by log B base a so
+[8:04.36] here we have log a base B and we can
+[8:07.64] rewrite this as 1 by log B base a here
+[8:13.76] base becomes argument and argument
+[8:17.00] becomes base now here is the simple
+[8:20.24] example let's say we want to find what
+[8:22.80] is log 2 base
+[8:25.08] 32 we can write this as 1 by log 3 2
+[8:30.72] base2 base becomes argument and argument
+[8:35.20] becomes base what is log 32 base 2 log
+[8:40.08] 32 base 2 is 5 because 2^ 5 is
+[8:44.04] 32 therefore we will get 1X 5 here and
+[8:47.72] what is 1x 5 1X 5 is
+[8:51.04] 0.2 so 0.2 is the answer for log 2 base
+[8:56.28] 32 now here comes the sth logarithm
+[9:00.00] log a base B is log a base C / log B
+[9:05.44] base C so we can use a new base C for
+[9:09.24] both log a and log B so log a base B can
+[9:13.40] be written as log a base C / by log B
+[9:17.96] base C now here comes an example let's
+[9:21.68] say we want to find what is log 256 base
+[9:26.08] 16 log 256 base 16 can be written as log
+[9:30.88] 256 base 2 / log 16 base 2 I'm assuming
+[9:36.32] the base is 2 for both these
+[9:39.76] logarithms what is log 256 base 2 how
+[9:43.64] many times do we multiply 2 by itself to
+[9:46.48] obtain
+[9:47.84] 256 we need to multiply two by itself
+[9:51.08] eight times so we will get 8 as the
+[9:54.44] result for log 256 base 2 what about log
+[9:58.24] 16 base 2 log 16 base 2 is 4 so here we
+[10:03.00] are getting 8 by 4 which is equal to 2
+[10:06.84] so log 256 base 16 is 2 it can be
+[10:11.16] observed that these properties of
+[10:13.68] logarithms can help us in simplification
+[10:17.08] of the logarithms it is easy to find log
+[10:20.68] 256 base 2 and log 16 base2 compared to
+[10:24.36] log 256 base 16 so whenever in need we
+[10:28.12] can apply these prop properties now here
+[10:30.80] comes the eighth logarithm a power log B
+[10:34.56] Bas C is equal to B Power log a base C
+[10:39.16] so we can switch A and B so a power log
+[10:43.56] B base C becomes B Power log a base C
+[10:48.68] here is an example let's say we want to
+[10:51.44] find 100 Power log 16 base
+[10:55.00] 10 this can be written as 16 Power log
+[10:58.84] 100 base 10 what is log 100 base 10 log
+[11:03.24] 100 base 10 is 2 so we will get 16 power
+[11:06.88] 2 which is equal to
+[11:10.04] 256 so this is the result of 100 Power
+[11:13.64] log 16 base 10 so these are some of the
+[11:17.52] commonly used logarithms now let's move
+[11:20.84] to the next topic and let's discuss some
+[11:23.28] of the commonly used summations while
+[11:25.76] doing the analysis of
+[11:27.92] algorithms the first commonly used
+[11:30.36] summation is 1 + 2 + 3 + 4 up to n this
+[11:35.84] represents the sum of N natural numbers
+[11:38.44] which is equal to n into n + 1 / 2 and
+[11:43.52] using the ASM totic notation we can
+[11:45.88] write Theta of
+[11:48.12] n² so n into n + 1 / 2 is equal to Theta
+[11:52.96] of n² why we can expand this n into n is
+[11:57.52] n² and N into 1 1 is n so we will get n²
+[12:02.12] + n in the numerator and in the
+[12:04.88] denominator we have
+[12:06.76] 2 we can also rewrite this as n² by 2 +
+[12:11.80] n by 2 2 is the constant term so we can
+[12:15.48] eliminate from both the fractions we
+[12:17.36] will get n² + N Out of n s and n n sare
+[12:21.96] is the dominating term therefore
+[12:24.36] asymptotically we can say n into n + 1 /
+[12:28.24] 2 is Theta of n² now here comes the
+[12:31.80] second summation 1 2 + 2 2 + 3 2 + 4 S
+[12:36.76] up to n² is n into n + 1 into 2 n + 1 /
+[12:43.40] 6 this represents the sum of the squares
+[12:46.48] of first n natural numbers and this is
+[12:50.16] equal to Theta of n Cub why we can
+[12:54.56] expand this fraction the same way we
+[12:56.48] expanded this and we will observe that n
+[12:59.92] Cub is the dominating term hence we can
+[13:03.76] ASM totically say that n into n + 1 into
+[13:07.32] 2 n + 1 / 6 is Theta of n Cub let's see
+[13:12.92] the third summation the third summation
+[13:15.52] is 1 Cub + 2 Cub + 3 Cub + 4 Cub up to n
+[13:20.48] cub and this is equal to n² into n + 1 s
+[13:26.64] / 4 this is the SU
+[13:29.64] of cube of n natural numbers and this is
+[13:33.60] ASM totically equal to Theta of n^ 4
+[13:37.00] because of the same reason we need to
+[13:40.00] expand this fraction and then we will
+[13:42.76] observe that n^ 4 is the dominating term
+[13:47.12] and hence we will get Theta of n^ 4 as
+[13:49.96] the result the fourth summation in this
+[13:53.08] list is 1 + 1X 2 + 1X 3 + 1X 4 and so on
+[13:59.48] up to 1 by
+[14:01.36] n this summation is equal to log n base
+[14:05.76] e and therefore we can write it as Theta
+[14:09.36] of log n we do not have to worry about
+[14:12.72] the base here in the ASM totic notation
+[14:16.08] hence we can write Theta of log n here
+[14:19.16] the fifth summation in this list is n c0
+[14:23.20] + nc1 + nc2 + nc3 and so on up to n c n
+[14:30.80] what does this C represents C represents
+[14:33.44] the combination the combination from
+[14:36.16] permutations and
+[14:37.92] combinations this summation is equal to
+[14:40.96] 2^ n and 2^ n is ASM totically equal to
+[14:46.24] Theta of 2^ n so these are some of the
+[14:50.16] commonly used summations while doing the
+[14:53.04] analysis of algorithms so we are done
+[14:56.12] with this topic commonly used summations
+[14:59.08] and this means we are done with this
+[15:01.08] lecture okay friends this is it for now
+[15:04.36] thank you for watching this presentation
+[15:06.36] I will see you in the next one
+[15:09.88] [Applause]
+[15:12.07] [Music]

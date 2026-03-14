@@ -1,0 +1,1098 @@
+[0:00.40] Hey everyone, I hope you all are safe
+[0:02.48] and doing good. So in the previous
+[0:04.08] lecture we have discussed arrays. Now in
+[0:06.24] this video we'll see more about arrays
+[0:08.48] and we'll see for each loop how to use
+[0:10.56] for each loop with array. So I have told
+[0:13.92] you in previous lecture like we can
+[0:16.40] create arrays of all the primitive types
+[0:19.84] whether it's arrays of integer arrays of
+[0:22.32] character arrays of double arrays of
+[0:24.16] float arrays of boolean and this arrays
+[0:26.64] of bite and short for all the primitive
+[0:29.04] types we can create arrays and we have
+[0:31.36] seen that thing also we have created
+[0:33.12] some arrays but I have told you one more
+[0:35.76] thing that I have you can create arrays
+[0:37.84] of object references as well right like
+[0:41.36] if I write something like This int this
+[0:45.36] numbers. So this this is what arrays of
+[0:49.52] int type. If write here double and same
+[0:53.68] syntax this and here name of the arrays
+[0:55.60] then this is arrays of double type. Any
+[0:57.92] number you can ar r. So a ar r r r r r r
+[1:00.16] r r r r r r r r r r r r r r is array of
+[1:00.96] double types. Like this you can create
+[1:02.72] arrays of all the primitive types. Now
+[1:04.80] you can create arrays of object
+[1:07.12] references as well not just of primitive
+[1:09.52] types.
+[1:11.76] So like I told you like arrays is like a
+[1:14.64] collection of elements of same type.
+[1:18.00] Fixed number of elements are there of
+[1:19.68] same type. So same it can be a
+[1:23.04] collection of object references as well.
+[1:26.48] Array is itself an object I told you.
+[1:29.44] Okay. And let's take one class. Any
+[1:32.48] class you can take student employee any.
+[1:35.12] And you create object of that class.
+[1:37.60] What is the syntax? Suppose you have a
+[1:39.60] class something like this.
+[1:42.48] This is the class I am having something
+[1:44.48] some attributes and some methods and
+[1:46.16] all. But the name of the class is
+[1:48.08] employee. How to create object of this
+[1:50.16] class? You know the syntax very well.
+[1:52.48] Just name of this class. Then the object
+[1:55.04] name suppose object name any name you
+[1:57.12] can take like obj. Any name you can take
+[1:59.68] ab xyz employees anything is equal to
+[2:02.96] new. And
+[2:05.52] this is what basically default
+[2:08.00] constructor
+[2:10.32] employee. So this is how we can create
+[2:12.72] object of this class or instance of this
+[2:15.84] class or more precisely more precisely
+[2:17.84] if I say then this OBJ is what object
+[2:20.56] reference.
+[2:22.16] So this object has been created of
+[2:24.16] employee type in heap area like this is
+[2:26.80] like heap memory here and in stack we
+[2:30.32] have this obj which is referring to this
+[2:33.28] object. Something like this is happening
+[2:34.88] internally in memory. Right now you can
+[2:38.88] create this arrays of these object
+[2:42.00] references.
+[2:44.24] This is what one object. If you want to
+[2:46.64] create second object then you will
+[2:48.72] simply write maybe employee or second
+[2:51.12] object name is equal to new this. If you
+[2:52.96] want to create four object so four time
+[2:55.68] you need to write down the same line OBJ
+[2:58.32] 1, OBJ 2, OBJ 33, OBJ4 something like
+[3:00.40] this or employee 1, employee 2, employee
+[3:02.08] 3, employee 4. Rather than writing
+[3:04.40] repeating this code we can create array
+[3:06.24] of object references
+[3:09.04] arrays because object references are of
+[3:10.80] same type. So we can like it's a
+[3:12.96] collection of object references and that
+[3:14.56] is simply like array is a collection of
+[3:16.48] elements of same same type right. So now
+[3:19.92] if you want to create five
+[3:23.36] object references so we can simply
+[3:25.68] syntax is same almost same. So just the
+[3:30.08] name here we write simply what data type
+[3:33.28] then this syntax sorry the this bracket
+[3:36.16] then the array name suppose I take
+[3:38.32] numbers
+[3:40.24] then at the same time you can
+[3:42.08] instantiate this with new and here the
+[3:47.44] again the data type whatever is the data
+[3:49.04] type and here the size of the array this
+[3:52.08] is the uh the syntax okay same here just
+[3:56.56] the class type the name of the type is
+[3:58.96] here class. Class is what basically you
+[4:00.56] can say it's a userdefined data type as
+[4:02.88] well. We have defined our own data type.
+[4:04.80] So we can create any object of this
+[4:08.56] type. So this is kind of data type but
+[4:11.60] user defined. These are built-in data
+[4:13.36] type. So same you have to after employ
+[4:19.52] this is now an array. OBJ is now not a
+[4:22.72] single object. It's an array of object
+[4:26.80] or array references of which type?
+[4:29.76] Employee type is equal to new. Here
+[4:32.64] rather than constructor you pass here
+[4:34.64] whatever is the data type that is
+[4:36.08] employee and size size. So here you pass
+[4:40.72] here something like this and size like
+[4:42.88] five
+[4:44.72] simple. So now this obj is an object
+[4:49.44] sorry an array of object references of
+[4:52.96] employee type five object references are
+[4:55.84] there.
+[4:57.36] So what is happening now behind the
+[4:59.28] scene in this heap in this heap now
+[5:04.72] memory has been allocated
+[5:07.20] for five object references
+[5:11.28] not actual object OBJ is what object
+[5:14.88] reference. So in memory uh let me show
+[5:18.80] you this thing here suppose this is heap
+[5:21.20] area. So here we have like
+[5:25.68] these are five object references. So
+[5:28.16] this is 0 1 2 3 4. Oh let me just write
+[5:32.00] down this here 0 1 2 3 4 index and the
+[5:36.24] starting index is at this stack
+[5:39.60] right and the name is obj. So this is
+[5:43.44] referring to here. So this is one object
+[5:46.24] reference another object reference
+[5:47.60] another object reference. Object
+[5:48.72] reference object reference.
+[5:51.36] So here it is containing reference of
+[5:54.08] this array of object references and I'm
+[5:57.44] saying that this is itself an object
+[5:59.28] reference because we have created array
+[6:01.92] of object references.
+[6:04.88] So actually whenever you use this new
+[6:07.20] the memory would be allocated in heap
+[6:08.88] and the reference or the address would
+[6:10.64] be stored in ST. There are so two part
+[6:13.68] of memory two memory areas. Now itself
+[6:17.84] will store reference not actual object.
+[6:21.76] This thing you need to take care this
+[6:23.44] thing you need to keep here in mind.
+[6:24.88] This thing you need to understand. If an
+[6:27.28] employee I have two thing one is like
+[6:29.68] maybe string the name of the employee
+[6:32.40] and one is double
+[6:36.88] and salary.
+[6:40.56] Two things are there right? So the
+[6:44.48] actual object data would be stored
+[6:47.76] somewhere else. It is still an object
+[6:50.08] reference. This array of object
+[6:52.24] references. So now each and individual
+[6:55.28] object it still contains what? Reference
+[6:58.48] of something. So like reference of some
+[7:02.16] data here. Now what is actually that
+[7:04.24] data? This is actual object. So now you
+[7:10.40] instantiate individual object and how?
+[7:14.56] So to access this you write simply
+[7:18.48] obj and same the subscript like index
+[7:21.92] zero is equal to memory you have to
+[7:26.08] create now actual object. So again new
+[7:28.72] and the type is what simply employee
+[7:34.72] employee and that's it.
+[7:37.76] Now this will create a new object
+[7:40.48] somewhere and in the heap and the
+[7:44.00] reference of this is stored in this OBJ
+[7:47.20] zero here something like this. Now here
+[7:50.64] actually this data is stored name and
+[7:52.56] salary. So memory has been allocated to
+[7:54.64] store this data name and salary. Here
+[7:56.80] the actual object the actual data has
+[7:58.56] been stored. Reference of this is here
+[8:01.04] and reference of this is here. Something
+[8:03.76] like this is happening behind the scene.
+[8:06.48] Okay. So if you want to access
+[8:09.36] for the first object name
+[8:13.28] how you will access first you have to go
+[8:16.32] here how how you will go here at the
+[8:18.80] first index of this array the name is
+[8:21.68] using this obj you can access obj and
+[8:25.52] this is at zeroth index and dot n
+[8:30.96] whatever here you want to access like
+[8:32.56] name
+[8:34.56] and you can assign some value like
+[8:36.32] Jenny.
+[8:39.36] So in here in this memory in this name
+[8:42.40] variable is there and there Jenny would
+[8:44.00] be stored something like this and to
+[8:45.52] access if you want to access then this
+[8:47.20] also you need to in system.out.print
+[8:49.76] print len you will write this thing only
+[8:52.64] right. So array of object means object
+[8:55.92] references means it stores multiple
+[8:58.32] object of same type means it stores
+[9:00.96] object
+[9:02.96] object basically references not the
+[9:04.96] actual object more precisely if I say
+[9:07.60] then it is arrays of object references.
+[9:11.44] Okay declaration same as you declare
+[9:13.92] primitive arrays but here you use class
+[9:16.88] name.
+[9:18.64] How you initialize create object of each
+[9:21.12] array element. See like this create
+[9:24.16] object of each array element. So for
+[9:26.80] first element I'm creating the object.
+[9:29.68] Same for second you will write like obj
+[9:32.88] 1 is equal to new employee and this this
+[9:36.00] is how you create allocate the memory
+[9:38.96] and then to initialize to give some here
+[9:42.08] the data you can simply use the array
+[9:44.96] initializer here only or you can simply
+[9:47.04] write something this kind of thing also
+[9:50.08] okay so actually the behind the scene
+[9:52.16] what is happening you got the concept
+[9:54.40] now let me show you this thing
+[9:57.12] practically how to create array of
+[9:59.44] object references and all. So let's
+[10:01.52] create a new Java class and uh I'm
+[10:05.04] naming it for each loop because
+[10:07.12] basically we will discuss here for each
+[10:08.72] loop.
+[10:10.32] Okay. So first let's discuss how to
+[10:12.00] create arrays of object preferences. Now
+[10:14.88] first you need to suppose I have a
+[10:16.72] class. So within the same package see
+[10:19.60] within this only I have many classes
+[10:22.96] right. So there can be a class employee.
+[10:26.16] Suppose I create a class here employee
+[10:30.40] or you can create a class or if you have
+[10:32.24] any class like in care demo if you have
+[10:35.68] a class care demo so you can use that
+[10:38.00] this class only you can create object
+[10:39.92] references for this class array of
+[10:41.76] object references for this class in this
+[10:43.52] for each loop because this is in same
+[10:46.24] object you can access this it's public
+[10:50.24] let's create a new class here class
+[10:52.08] employee and there I'm simply using like
+[10:54.32] string
+[10:56.32] only two field I'm taking emp name and
+[10:59.20] uh like double
+[11:02.96] salary two things only that's it I am
+[11:07.36] nothing in this class or if you want you
+[11:10.08] can take one more like
+[11:12.80] void
+[11:14.48] display one method we can have and this
+[11:17.44] is going to display the whatever the
+[11:19.92] information in this class like the
+[11:22.88] employee employee name and the MP ID.
+[11:33.52] So in this display we are just printing
+[11:36.16] the name and the employee salary. This
+[11:38.00] is our class. We have one more class
+[11:39.68] within the same program within the same
+[11:42.56] application. So the one class is public.
+[11:45.92] In this class
+[11:48.08] I'm having main and within this main I
+[11:50.24] want to create an object. So array of
+[11:55.36] objects of this class. How to create
+[11:57.44] object of this class? Simple method is
+[12:00.08] employee name of the object. Suppose I'm
+[12:02.56] taking obj is equal to new and this is
+[12:06.16] the constructor. And if you access want
+[12:08.40] to access these elements then yeah we
+[12:10.88] can access just the object name dot emp
+[12:15.04] name and we can assign some value
+[12:16.56] suppose jenny something like this
+[12:20.48] right and like same obj dot both the
+[12:23.60] things we can access salary double
+[12:26.16] salary we can take something like this
+[12:27.60] anything here point something like this
+[12:31.84] right and then if you want to print then
+[12:34.48] you just call obg dot
+[12:36.48] display. Simple as that. Okay. Now if
+[12:41.76] you run this, let's see what output you
+[12:44.64] will get or you will get let's select
+[12:47.60] the current file. But here is one error
+[12:50.24] in this program because this is colon
+[12:53.44] here it should be semicolon. Let's run
+[12:56.64] this.
+[12:58.48] See employee name is Jenny. Salary is
+[13:00.24] this. You got it? Now you want to create
+[13:03.92] second employee and you want to assign
+[13:06.72] EMP name and salary for second employee.
+[13:08.80] So what is this one way you just create
+[13:12.72] just copy paste these things
+[13:15.92] and create OBJ one or any other object.
+[13:19.68] So we have two employees. So OBJ one you
+[13:22.80] can set the name and the salary and you
+[13:25.04] can change the name and all. If you want
+[13:26.64] to create five objects, so same you need
+[13:28.32] to copy paste all these lines. But one
+[13:30.72] is what? Rather than duplicating the
+[13:32.72] same code again and again, you just
+[13:34.16] create array. Okay, simple. So let's
+[13:37.92] just delete this thing. And now create
+[13:40.64] array of object references. So
+[13:44.32] the syntax is same subscript here.
+[13:47.52] Sorry, this square bracket and the name.
+[13:50.00] Name you can say OBG also. But it's
+[13:53.20] always recommended that
+[13:56.40] you take name something like this. If
+[13:58.64] the employees a class then
+[14:01.12] employees
+[14:03.04] because it is
+[14:05.76] employees in plural form because it is
+[14:08.40] like uh containing more than one object.
+[14:11.28] So employees new and here you have to
+[14:13.76] give the size employee and the size is
+[14:17.36] suppose three simple
+[14:20.64] data type it's of employee type the
+[14:23.60] class is because employee it's a defined
+[14:25.36] user defined data type and then the size
+[14:27.68] syntax is almost same as like if you
+[14:29.84] create int array exactly same you write
+[14:32.40] int this bracket object array name new
+[14:36.56] int size here rather than int the type
+[14:39.68] is employee so that's that This is the
+[14:41.28] only difference. Now it's obviously this
+[14:44.00] OBJ is not allowed here. Now
+[14:47.52] one more thing I want to tell you. Now
+[14:48.96] object references has been created
+[14:51.92] three object references and these object
+[14:55.20] references the by default value of
+[14:56.80] object references are null. So within
+[14:59.36] these object references we are having
+[15:01.04] now null actually. So if you want to
+[15:05.20] print suppose if I want to print s out
+[15:08.00] and simply employees I want to print
+[15:10.88] this employees
+[15:13.28] what do you think what it will print
+[15:15.20] let's run this and I'll show you see
+[15:19.92] it's some weird kind of thing this
+[15:22.88] bracket show that it's array l means
+[15:24.96] like it array of object references
+[15:28.40] of employee type
+[15:31.44] and then some address kind of thing,
+[15:35.28] right? It's not ex exactly the memory
+[15:38.08] address. It's like hash code kind of
+[15:40.80] thing because in Java
+[15:43.52] uh they're working in an abstract way.
+[15:46.16] user don't have the idea of memory
+[15:48.08] addresses and all. So we don't know
+[15:49.76] exactly but it's kind of like some hash
+[15:52.64] code related to that memory address
+[15:55.20] right and this employee we have this is
+[15:57.68] in stack so it is containing reference
+[15:59.68] to whatever in heap that has created
+[16:03.20] like
+[16:04.88] three an array of three object
+[16:07.36] references. Now if you want to access
+[16:11.60] at zero in the heap at first index what
+[16:15.76] is there? So you will get null because
+[16:18.56] by default you haven't initialized
+[16:20.32] anything. So by default in object
+[16:22.08] references there will be null like by
+[16:26.24] default value for int is zero for float
+[16:28.32] is 0.0f for character it's something
+[16:30.72] else for string it's null. So same for
+[16:32.48] object references it's null. So if you
+[16:35.60] print a zero or one or like at one index
+[16:39.04] or two index you will get here null
+[16:41.76] only. See at here only you will get
+[16:43.52] null. And if you want to access here out
+[16:45.76] of bound that is four.
+[16:48.32] Let's run this and see what exception
+[16:50.48] you are getting. Area out of index out
+[16:52.40] of bound exception you are getting
+[16:54.80] because three objects are there. So 0 1
+[16:57.20] 2 only till two indexes are there. Now
+[17:00.96] actually you have to now declare I you
+[17:04.72] can say instantiate
+[17:07.12] individual object. So how you will do?
+[17:09.92] You cannot directly say like employees
+[17:12.24] and at zero index let's just access emp
+[17:16.32] name and let's put here jenn
+[17:20.88] something like this and let's just print
+[17:24.88] it's zero dot name sorry emp name
+[17:30.40] something like this.
+[17:32.64] Let's run this and see.
+[17:37.28] See now null pointer exception I have
+[17:41.12] told you at first.
+[17:43.44] So actually two areas are there. This is
+[17:46.72] heap area and this is what stack area.
+[17:48.96] This thing we have seen. So whenever you
+[17:51.12] call whenever you run the program then
+[17:53.12] the main method is being called and this
+[17:55.12] is the main frame. Stack frame. So this
+[17:59.12] is stack frame for main in stack memory.
+[18:02.56] Whenever you call any method then one
+[18:04.56] frame has been pushed in this stack
+[18:07.76] assoc related to for that method. So for
+[18:10.72] main we have one frame and within this
+[18:12.56] main we are having what whatever the
+[18:16.16] local object of this main local variable
+[18:18.08] of this main
+[18:20.16] those value those variable would be
+[18:21.76] stored. So we have here first employee
+[18:24.72] something like this or employees this is
+[18:27.68] the object right. So this is containing
+[18:29.76] reference of here 1 2 3
+[18:34.64] array we have done like something like
+[18:37.04] this
+[18:42.08] something like this we have done
+[18:44.72] so three objects are there and the
+[18:46.80] references here so these are object
+[18:48.08] references here I'm having null here
+[18:51.36] also null here also null because these
+[18:54.40] are object reference these are not
+[18:55.76] containing actual header these are
+[18:57.12] object reference means it will store
+[18:58.72] address of some other part and you need
+[19:01.84] to create this object now. You haven't
+[19:03.76] created this object yet. That's why it
+[19:05.44] is now null. And if you want to access
+[19:08.00] this like
+[19:10.24] employees name of this is employees, it
+[19:13.44] is referring to here index 0 1 2 0 dot
+[19:19.28] emp name and you want to assign some
+[19:22.32] value here like Jenny.
+[19:25.20] So see it is null. So obviously it will
+[19:27.60] give you null pointer exception. You
+[19:29.28] cannot access something like this. First
+[19:32.16] just assign some address here. Then only
+[19:35.36] you can access.
+[19:38.72] So for this you have to create the
+[19:40.64] actual object for this index for the
+[19:44.32] first object reference then it will
+[19:46.48] refer here and then you can access
+[19:48.40] something like this. Then this will be
+[19:50.32] correct. Same for all the three you have
+[19:52.72] to do right. So let's do this thing.
+[19:56.72] See you cannot assign field emp name
+[19:58.40] because employee zero is null right now.
+[20:02.40] Okay. So what you need to do to work
+[20:04.56] this thing first create
+[20:07.52] like employees zero is equal to create
+[20:11.52] object for this new
+[20:14.40] name of the type is employee. It is same
+[20:17.44] like we are creating object of any
+[20:18.96] class.
+[20:20.64] This is the constructor now right?
+[20:24.08] So now memory has been allocated. The
+[20:25.60] actual object object has been created
+[20:27.12] and the reference for that object is
+[20:28.48] stored in employee zero at zero index.
+[20:31.12] Now you can access now this is valid is
+[20:33.12] equal to Jenny and same you can like
+[20:35.84] employees zero second field is what via
+[20:39.84] salary is equal to some kind of salary
+[20:42.32] like we can have something like this and
+[20:46.00] if you want to print so same we can do
+[20:50.32] employees zero and then dot and then
+[20:53.92] sell so it will give you two things
+[20:57.92] right both the things it will show
+[21:00.40] something like this or if you don't want
+[21:02.08] to like we have a display method also so
+[21:04.48] directly you can call this
+[21:07.20] display
+[21:09.12] have to call employees zero dot display
+[21:16.08] at this I want to call this method
+[21:18.32] display so let's run this
+[21:22.16] and see employee name Jenny employee
+[21:24.08] salary is this
+[21:26.32] you got it now so like this you just
+[21:30.40] Initialize all the three employees
+[21:34.32] one and two. Employees one and two are
+[21:36.72] still null. Those object references are
+[21:38.32] still null because we have created the
+[21:40.16] object for zerooth index only for the
+[21:44.24] first object only in the array for first
+[21:48.08] object. So for first, for second, for
+[21:50.56] third same thing you need to do right
+[21:53.04] you can just controll C and Ctrl V. So
+[21:56.64] let's create first and here for first
+[22:01.20] for first and for first.
+[22:04.24] So let's change here something like name
+[22:06.96] also and some salary also.
+[22:10.64] So it will give you two employees in
+[22:12.40] this. If you access the third employee
+[22:15.68] then it will give you null still right
+[22:18.80] or if you don't want to initialize
+[22:20.32] something like this rather than this you
+[22:22.88] can one more ways you can just here
+[22:28.88] create
+[22:31.28] like this and you can simply write new
+[22:35.60] employee like this. This is first like
+[22:39.60] this. Rather than writing this line
+[22:42.32] explicitly, we have just used array
+[22:45.04] initializer to initialize each and every
+[22:48.24] object of that array
+[22:50.72] object reference of that array. First,
+[22:52.24] for first, second and third we have
+[22:53.92] created. Right?
+[22:56.72] Now, if you run this, obviously it will
+[22:58.64] not print anything because we have to
+[23:00.08] set first to print. So, we just set here
+[23:05.04] name and salary. and just display you
+[23:09.68] don't need to write this line so it will
+[23:12.56] print for the first employee
+[23:16.24] Jenny and this and if you simply print
+[23:18.88] if suppose I simply print here
+[23:22.64] employees and at one what we have I'm
+[23:26.32] not going to access any name or salary
+[23:28.08] I'm just simply printing employees and
+[23:30.08] at zero sorry at one index what is there
+[23:32.96] so obviously here we should get some
+[23:35.04] reference kind of thing so this kind of
+[23:36.96] thing you will get here. So don't worry
+[23:39.28] about this thing. It is some reference
+[23:40.64] of the actual object right
+[23:45.36] or it's like not actual uh address like
+[23:47.52] it's some kind of hash code kind of
+[23:49.60] thing or what if I use this thing rather
+[23:53.60] than writing this
+[23:56.32] I simply delete this
+[23:59.12] and use array initializer. So this is
+[24:01.20] the third way the most simplest one.
+[24:04.32] Let's run this and it will also print
+[24:07.20] same like Jenny and this is the salary
+[24:09.84] for first employee. So the three ways we
+[24:13.52] can apply with this in the previous
+[24:15.84] lecture also for primitive arrays we
+[24:18.40] have discussed three ways to create to
+[24:20.80] declare and initialize that array. All
+[24:22.40] the three ways I have discussed here.
+[24:24.40] Okay, this is what just array
+[24:26.40] initializer we are using.
+[24:28.72] No explicitly you need to write down
+[24:30.24] here new employees and all. So you can
+[24:33.12] try this out. This is how we can create
+[24:36.32] arrays of object references. So you can
+[24:39.12] create arrays of string also because
+[24:40.72] string is also an object. Here also if
+[24:44.08] you want to create like string
+[24:46.80] and this kind of thing and names is
+[24:49.92] equal to just assign some name Jenny,
+[24:54.72] pile
+[24:56.48] any name you can assign maybe like Rahul
+[25:03.04] something like this. So this is also
+[25:05.44] names is also an array of object
+[25:08.08] references. Okay, string is not
+[25:10.00] primitive type. String is also an like a
+[25:14.40] special class in Java. So we are
+[25:15.84] creating like an object reference. So
+[25:18.48] it's like arrays of object references.
+[25:21.84] Okay, here also if you need to print
+[25:24.16] like s o u t and if you need to print
+[25:27.92] names at zero
+[25:30.72] so it will give you simply Jenny
+[25:34.40] see Jenny and this is for the second one
+[25:38.64] here no need to write down explicitly
+[25:40.40] like something like this new employee
+[25:43.04] and this because it is special thing
+[25:45.44] it's implicitly in string either you can
+[25:48.32] write down this thing also or if you
+[25:49.60] simply write down string this and just
+[25:52.32] print x is the something like this.
+[25:54.80] Okay, in string it it it it is allowed.
+[25:58.08] Now let's discuss what for each loop. So
+[26:01.68] we have discussed this thing how to
+[26:03.52] declare, how to initialize arrays of
+[26:05.12] object reference, how to create an
+[26:07.20] object array. This thing also I have
+[26:09.36] shown you practically right and this is
+[26:13.20] what one example let's this is a class
+[26:16.32] student then how to create the array of
+[26:18.56] the students and then how to initialize
+[26:20.40] each object this thing we have seen with
+[26:22.72] one class that is what employee class
+[26:27.04] now initializing and printing we have
+[26:28.96] seen this thing also how to access how
+[26:30.56] to initialize how to print this thing
+[26:32.32] also we have discussed practically now
+[26:34.64] next is for each loop one loop You have
+[26:38.32] we have discussed that is the
+[26:39.60] traditional for loop and if you access
+[26:42.48] or traverse the array elements this
+[26:44.48] thing we have seen in previous video how
+[26:46.00] to use for loop just start from zero run
+[26:49.36] the loop till the length of the array I
+[26:51.84] ++ and then just print using index name
+[26:54.80] of the array in those square bracket
+[26:56.72] just use the index or that counter
+[26:59.76] variable you take like I that's it but
+[27:02.64] there is an enhanced loop also that is
+[27:04.88] for each loop and it is much more
+[27:07.52] simpler than the traditional for loop
+[27:10.72] and this is basically used to traverse
+[27:13.52] arrays or those collections like array
+[27:15.84] list or some other collections but right
+[27:17.68] now we are discussing arrays so we will
+[27:19.28] discuss for each loop in the context of
+[27:20.96] arrays only right what is the syntax of
+[27:26.16] this for each loop if there is some
+[27:28.40] array suppose I have this array
+[27:31.84] numbers and here I am having some
+[27:33.92] numbers 1 2 3 4 5 like This if you want
+[27:38.32] to traverse this or print all the
+[27:39.84] numbers either you can use traditional
+[27:41.92] for loop but here we will use that
+[27:44.24] enhanced for loop that is for each loop
+[27:46.88] the what is the syntax see simply the
+[27:50.00] for keyword is same then we write we
+[27:53.12] write the data type we will take a we
+[27:56.32] take a variable so the data type here
+[27:58.72] must be same of this collection
+[28:03.92] here simply we have array so same of
+[28:06.96] this data type is int. So you have to
+[28:09.04] take the same data type that is int only
+[28:11.52] here you will take the variable name any
+[28:13.52] name you can take XYZ ABC anything so
+[28:17.44] simply suppose I'm taking here num
+[28:21.60] then colon it's not semicolon it's colon
+[28:26.16] and after that just name of that
+[28:29.04] collection or the array you want to
+[28:31.44] traverse or you want to print or you
+[28:33.92] want to access here I want to access
+[28:35.92] array the name of the array is numbers
+[28:37.76] so Here simply write
+[28:40.24] numbers.
+[28:42.64] That's it. And here in simply
+[28:45.52] system.out.print ln we use we write only
+[28:49.76] this variable.
+[28:52.00] No index kind of thing. No square
+[28:55.12] bracket nothing else. You simply print
+[28:56.88] num and it will give you 1 2 3 4 5. Now
+[29:00.24] see in traditional four you have to
+[29:02.48] initialize that counter variable. You
+[29:04.72] take then put some condition termination
+[29:07.12] condition then update I ++ or I minus
+[29:09.60] minus and then in here also you write
+[29:11.92] the name of the array and in subscript
+[29:14.32] this variable you take whatever variable
+[29:15.92] variable you take that's I or num or
+[29:17.60] anything here you can take I also it's
+[29:20.88] not like that you have to write down num
+[29:22.32] you cannot take I no
+[29:24.72] it's not like that for that uh I has a
+[29:27.60] copyright like for the traditional four
+[29:29.68] has a copyright of using this I variable
+[29:32.08] no this I variable you can use with for
+[29:34.32] each loop also with enhanced loop also
+[29:37.28] right but here this I is not a control
+[29:42.00] variable
+[29:43.84] it's not contain the it's not have the
+[29:46.96] index of that array
+[29:49.52] this this variable whether it's i or num
+[29:52.40] suppose here I'm taking num so this
+[29:54.24] variable represents the elements of the
+[29:57.60] array itself
+[29:59.84] now in numbers we are having these
+[30:01.52] elements
+[30:03.60] So at first at first this one would be
+[30:08.88] assigned to this num. So in num at first
+[30:11.28] we have one. So that's why we simply
+[30:14.00] printing num and it will give you one
+[30:16.08] only. Then in next iteration
+[30:19.92] this two this two would be assigned to
+[30:22.88] this num. Now num becomes two and now
+[30:25.04] next time two would be printed and till
+[30:28.32] end of this array it would be repeated
+[30:30.24] and till five we will get automatically
+[30:33.52] this this is implicit the condition is
+[30:35.52] implicitly written here no need to write
+[30:37.28] explicitly modification is also done
+[30:39.68] implicitly no need to write that thing
+[30:41.52] so they have the makers of Java made
+[30:43.28] this loop a much more simpler and
+[30:45.04] cleaner see it's much more simple to
+[30:47.60] write and clean to understand easy to
+[30:49.44] understand it's more readable right
+[30:52.64] Because
+[30:54.16] that traditional for loop
+[30:57.20] was uh being used by the developers most
+[31:00.80] frequently used loop that's why they did
+[31:03.28] this thing that let's modify it a little
+[31:05.36] bit and let's make it easy to use more
+[31:08.24] readable that's why they enhanced this
+[31:10.40] thing we also generally you generally
+[31:13.04] use for loop rather than while and do
+[31:14.72] loop most of the cases we love loop for
+[31:17.36] loop so that's why they enhance this
+[31:19.36] loop a little bit right Now here this
+[31:24.24] variable or is not not containing any
+[31:26.40] index of this array 0 1 2 3 4. No.
+[31:30.64] So if you need to access the index or if
+[31:33.20] you need to uh modify the elements of
+[31:36.08] the array based on the position or the
+[31:38.56] index in that case you cannot use this
+[31:40.48] loop
+[31:42.16] because this will not store index. This
+[31:44.40] will this variable will store the
+[31:46.80] element itself. In that case you have to
+[31:49.44] go for traditional loop only. But if you
+[31:52.08] want to print simply the array traverse
+[31:53.68] the array don't want to modify anything
+[31:55.36] then simply you can use for each loop
+[31:58.24] and further for most of the programs we
+[32:01.84] will use for each loop only for arrays
+[32:04.08] because it's simple to use right so I
+[32:07.44] hope you got the syntax of using for
+[32:09.76] each loop and the advantages also why we
+[32:12.72] use for each loop. So let's see a
+[32:15.12] program on this for each loop. So let's
+[32:17.44] just comment out everything here. And in
+[32:19.68] main we simply first create a array of
+[32:24.00] type int. Suppose I have numbers array
+[32:27.04] of numbers and simply here I'm taking
+[32:30.48] some values in this array.
+[32:33.60] Any value you can take. If you want to
+[32:36.16] print all these things one way is we
+[32:38.32] simply use traditional for loop and that
+[32:40.48] thing you know very well. Let's take a
+[32:42.16] counter variable and this should run
+[32:43.92] from
+[32:46.00] 0 to numbers dot length till the length
+[32:48.88] of the array and a++
+[32:51.84] and we simply in system.out.t So print
+[32:54.16] ln we can access like numbers and in
+[32:57.28] subscript just the index that is in i
+[32:59.36] variable
+[33:00.96] right. So rather than ln we simply print
+[33:03.36] here with a
+[33:05.44] space in the same line. So it is
+[33:08.08] traditional for loop to access to
+[33:10.56] traverse the array. Okay. Array out of
+[33:14.00] bound exception y area out of bound
+[33:16.40] exception. It should be less than only
+[33:18.32] not less than equal to because length is
+[33:20.88] 1 2 3 4 5. So it will give you five but
+[33:24.96] index is from 0 to four. So it should be
+[33:27.20] less than five not less than equal to
+[33:28.88] five. This thing you need to take care.
+[33:32.24] Array always starts from zero. So you'll
+[33:34.64] get this one. This one. Now rather than
+[33:36.80] this loop I want to print this array
+[33:39.52] with four each loop. So four the data
+[33:42.24] type. So the return type is exactly same
+[33:44.24] as the data type of this array or the
+[33:46.08] collection whatever you use here array
+[33:47.44] list or array or whatever else. Here
+[33:49.84] int. So int then variable name let's
+[33:53.12] suppose I only same name then colon then
+[33:57.28] name of that array or that collection
+[33:59.84] and within this we simply write here I
+[34:03.12] simple here I is not having any address
+[34:06.88] so let's just comment out the
+[34:08.24] traditional four let's just print the
+[34:11.36] array with this so you'll get the same
+[34:14.00] output right but if you want to print
+[34:17.12] this in the single line say yeah you can
+[34:19.76] just Choose print here and with a space
+[34:23.92] that it will print in a single line all
+[34:25.92] the things see.
+[34:29.04] So as you can see this is much more
+[34:31.52] cleaner and easy to read and simpler to
+[34:34.24] write rather than this thing this
+[34:37.12] condition this uh plus and kind of thing
+[34:40.00] is implicitly added here in this for
+[34:42.00] each loop. You don't need to write down
+[34:43.28] explicitly.
+[34:44.88] Okay. But there is no index kind of
+[34:46.80] thing. This I here I here is working as
+[34:51.28] an index. See in index we are writing
+[34:53.76] something like this.
+[34:55.76] But here this I represents the actual
+[34:58.96] elements of the array not the index. So
+[35:00.72] we are simply printing I. So if you want
+[35:03.84] to access the index and you want to
+[35:07.68] modify the array element using the index
+[35:10.72] then we cannot use for each loop. For
+[35:12.40] that you have to use this loop only
+[35:16.00] traditional for loop because there is no
+[35:17.36] index here. So it simplifies like you
+[35:20.32] can say the looping
+[35:23.36] by reducing the need for an explicit
+[35:25.36] index variable and suppose here the
+[35:28.56] array is of like double
+[35:33.12] something like this. Now it will give
+[35:34.72] you error. See provided is int and
+[35:37.84] required type is double. I I told you
+[35:39.44] that this type should be same as the
+[35:43.04] type of this collection or the array
+[35:44.72] whatever you take here. So here you must
+[35:47.20] take double
+[35:50.08] because
+[35:52.72] from numbers at first the first element
+[35:56.00] would be stored would be assigned to
+[35:57.84] this I so definitely this is in double
+[36:00.80] this should be double
+[36:02.88] but if this is int
+[36:06.32] in that case see it will not give any
+[36:08.72] error so it's not like that uh type
+[36:11.28] should be exactly matching it should be
+[36:13.36] like more precisely uh if I say then it
+[36:15.92] should be compatible means this is 34 is
+[36:18.96] now int. So that's at first this I
+[36:23.04] becomes 34 when this value would be
+[36:26.48] assigned when this loop is going to be
+[36:28.56] executed this I would be 34 I is double
+[36:32.00] so it's okay I is having larger data
+[36:34.32] type 34 is smaller so it will be
+[36:36.88] automatically promoted to double and
+[36:39.52] 344.0 would be stored in this and it
+[36:42.64] will print 34.0 zero. You run this and
+[36:45.68] see
+[36:48.48] see all are converted to double and it
+[36:50.72] will give you this output. So do not
+[36:54.48] think that it should be exactly same
+[36:57.44] means whenever I say like exactly it
+[36:59.60] should be same it means it should be
+[37:01.04] compatible
+[37:03.36] type promotion is allowed but the type
+[37:06.24] like demotion kind of thing is not
+[37:07.76] allowed. If here you take double and
+[37:10.24] here you take int that is not allowed
+[37:11.92] because double cannot be converted
+[37:13.20] automatically by to int. Larger to int
+[37:16.80] means sorry larger to small means there
+[37:19.36] should be a lossy conversion
+[37:22.88] we can lost something like if we have
+[37:25.92] two glasses one is full of water and
+[37:30.24] like one is like uh that big glass and
+[37:34.00] full of water and another one is small
+[37:35.68] one. So if someone say
+[37:38.56] just uh convert just uh you can say
+[37:41.04] transfer the water in that small glass
+[37:43.92] so definitely some water will would be
+[37:47.12] you know uh lost like a spill on the
+[37:49.36] floor. So there would be loss of some
+[37:52.16] data that's why automatically it's not
+[37:54.96] to be done. Yeah you can type cast that
+[37:57.28] thing that will be allowed
+[37:59.92] right. So here explicitly we cannot put
+[38:02.96] any condition kind of thing that we have
+[38:04.64] done in pattern printing question I less
+[38:07.44] than something like this. So this kind
+[38:09.20] of thing is not allowed here. So this
+[38:11.84] loop is simply
+[38:13.84] mainly for traversing traversing arrays
+[38:16.56] and collections. Traversing means just
+[38:18.40] printing from here to here from starting
+[38:20.32] to end. This is kind of traversing.
+[38:23.44] So mainly to traverse arrays and
+[38:25.52] collections simply for that this for
+[38:28.32] each loop it does not give you some
+[38:31.76] access to that index of this array.
+[38:35.36] So we cannot use it when you want to
+[38:37.04] modify the array based on the index or
+[38:38.80] based on the position.
+[38:40.96] Okay. Now let's have some exercises on
+[38:44.48] this for each loop. So first exercise is
+[38:47.60] you have to print. Let me just write
+[38:49.60] down this thing. first latest opener
+[38:51.84] project that is coding exercises
+[38:55.20] and there
+[38:57.76] we just print up uh new Java class.
+[39:07.60] So here we have four each loop exercises
+[39:09.92] this thing. Let me write down the first
+[39:12.40] coding statement.
+[39:21.76] That's it.
+[39:35.52] So these are three exercises. So first
+[39:37.44] is this sum of all the elements of an
+[39:39.76] integer array using for each loop. Then
+[39:42.72] count how many times a specific
+[39:44.32] character appears in a given character
+[39:46.08] array. There is a character array having
+[39:48.32] some characters and you will be given
+[39:49.84] one character. Suppose in array we have
+[39:52.32] we are having a b then a then c then I
+[39:55.04] have just given you a character that is
+[39:56.48] a you just have to count how many times
+[39:58.24] a is there and just print that count.
+[40:01.28] Third is you have to print all the even
+[40:02.88] number from an in array. These are very
+[40:04.48] simple one but using for loop you have
+[40:06.56] to do this these programs. So pause the
+[40:09.20] video now and try this out. So I hope
+[40:11.12] you have done the first one. Let's try
+[40:13.04] out this. So let's just first obviously
+[40:16.40] in main function we write sum
+[40:18.08] everything.
+[40:19.68] So this is our first exercise
+[40:23.44] right? Let's take an int array. Any
+[40:26.96] array you can take numbers.
+[40:31.68] This is the array we have. So what we
+[40:33.60] do? How to print sum of all the
+[40:35.68] elements? First access this then access
+[40:40.48] this and do 1 + 2 that is three. Now x
+[40:43.28] is the third element and do whatever is
+[40:45.52] sum in of those previous two just add
+[40:47.52] three there then add four then zero then
+[40:50.56] 8 then 10 and something like this. So
+[40:52.72] let's take a variable like sum is equal
+[40:54.96] to zero at first
+[40:58.08] right and traverse the array because we
+[41:00.88] have to traverse we need each and every
+[41:02.48] element so just traversing is required
+[41:04.24] so we use for each loop. So int let's
+[41:07.04] take a variable num and the array name
+[41:09.60] is numbers. Now what you need to do
+[41:12.72] simple sum plus equal to whatever the
+[41:15.36] number is there that's it and after that
+[41:19.12] simply print
+[41:21.28] sum
+[41:23.04] simple as that it's not that much stuff
+[41:26.48] let's just select the current file here
+[41:28.56] and run this
+[41:31.36] so what would be the sum here it's 28 so
+[41:34.96] you can just use some calculator and do
+[41:36.72] it is 28 only so I guess that was not
+[41:39.60] that much this is not that much
+[41:41.84] Let's try out the second one. If you
+[41:43.92] haven't tried it out now, you can pause
+[41:45.68] the video and try this second exercise.
+[41:50.32] Okay, you are given a character array.
+[41:53.36] Let's take a character array.
+[42:02.24] So this kind of thing we have like this
+[42:04.64] is a character array we are having
+[42:07.76] array name is letters and this is how
+[42:09.52] you can initialize this the simplest
+[42:11.20] form I'm using there are three ways to
+[42:13.84] initialize the array you can take
+[42:15.92] anything any way you can use but this is
+[42:18.40] the simplest one that's why I'm taking
+[42:20.40] using array initializer now
+[42:24.16] target let's suppose uh the target
+[42:28.80] or the letter or any variable name you
+[42:30.96] can uh take here. The target is you have
+[42:34.48] to find out how many times a is there
+[42:38.16] in this character array. So you traverse
+[42:41.44] this. If this is a just you do count ++
+[42:46.72] then check this next next one. If this
+[42:48.80] is a just do count plus+ otherwise
+[42:52.08] x is the next element check the next
+[42:53.76] element check the next element and the
+[42:55.36] next element till the end of the array.
+[42:56.88] So it mean you have to traverse the
+[42:58.32] array from starting to end and for that
+[43:00.88] we have a loop. We know that is very
+[43:02.96] simple. So first let's take count is
+[43:05.52] equal to zero and for traversing we have
+[43:08.00] a loop four but the array type should be
+[43:10.40] like car
+[43:12.48] care car and let's take ch variable name
+[43:14.80] and letters
+[43:18.08] and we have to put some condition if the
+[43:20.72] ch is equal to is equal to target
+[43:25.28] whatever the letter you have given if
+[43:27.68] this is the case if both are equal then
+[43:29.52] only we will do count ++
+[43:32.88] that's it and after this for loop let
+[43:35.76] just print whatever the count is that's
+[43:38.40] very simple so it should print one true
+[43:41.28] because count of a is two in this array
+[43:45.12] so see you get here two
+[43:48.88] if you change this target if the target
+[43:51.28] is suppose B let's run this and B is
+[43:54.88] only single time so it will print one
+[43:58.16] very simple it's not that much stuff or
+[44:02.56] rather then cap
+[44:04.64] suppose I take here int see it is not
+[44:07.36] giving you any error okay now let's see
+[44:11.68] what output you will get here
+[44:14.96] it will give you one only because int is
+[44:18.64] larger and we know I told you that
+[44:21.84] characters are basically internally
+[44:24.16] stored as unsigned integer so int also
+[44:28.16] you can take it's not at all a big
+[44:32.56] Okay, but the data type should be
+[44:34.56] compatible.
+[44:36.32] So I would recommend better to take the
+[44:38.00] same data type just to avoid the
+[44:40.64] confusion.
+[44:42.24] Now let's try out the third one. I hope
+[44:44.64] you have done this program. Print all
+[44:47.20] the even number from an int array. So
+[44:49.60] let's take an array only.
+[44:52.24] Integer array we have to take. So let's
+[44:54.16] just copy paste this thing. And from
+[44:56.64] here you have to print all the even
+[44:58.00] number.
+[45:00.16] So how to print? You have to traverse
+[45:01.92] the array from starting to end and check
+[45:04.56] if the number is even. Just print that
+[45:06.80] otherwise skip that. How to check this
+[45:10.32] is even or not? It's very simple. It's
+[45:12.40] divisible by two then even otherwise
+[45:14.40] not. So let's just
+[45:17.92] write here int num and then numbers.
+[45:22.80] Let's put if condition if whatever the
+[45:24.96] num
+[45:26.56] modulo 2 equal to equal to zero. Sorry,
+[45:29.20] it's uh mode equal to equal to0.
+[45:34.16] In that case, we are going to print here
+[45:36.40] whatever the num is.
+[45:38.72] Simple as that. Otherwise, we don't
+[45:40.24] print anything. So, it will give you 2 4
+[45:44.24] and 0 8 and 10. If you just remove this
+[45:49.04] zero because obviously 0 mode 2 is equal
+[45:51.36] to 0 only.
+[45:53.52] So, if you uh change this to 20. Let's
+[45:57.60] run this.
+[46:02.40] Okay, we are getting a 2 4 28 and 10 and
+[46:05.68] this thing we want. So I hope you have
+[46:07.68] done all these things. These are not
+[46:10.24] that much stuff. So we are done with
+[46:12.72] this for each loop introduction how to
+[46:15.60] use what are the advantages the syntax
+[46:17.52] and the limitations. This is one example
+[46:21.04] here for each versus traditional loop.
+[46:23.68] This is just the comparison. The syntax
+[46:25.36] is much more simpler for for each loop
+[46:27.12] than this traditional four index X is
+[46:30.32] not possible in for each loop. Yes, it's
+[46:32.16] there modification. It's limited in for
+[46:34.16] each loop. We cannot modify because we
+[46:35.68] don't have like access to that index. So
+[46:39.36] directly using the index, we cannot
+[46:41.60] access the we cannot modify the array
+[46:43.92] element. Reverse iteration is not
+[46:46.16] possible in for each. In traditional for
+[46:49.12] it's possible. Reverse means like this
+[46:51.68] is an array. So using traditional four
+[46:54.80] we can reverse the array from reverse
+[46:56.88] also just set the starting of that I
+[47:00.32] till the length of the array like this
+[47:02.00] is the array 1 2 3 4 so I want to
+[47:05.84] reverse it from here I want to print 4 3
+[47:07.76] 2 1 so for each loop in for each loop
+[47:09.84] it's not possible because that will
+[47:11.36] definitely go from here to here only but
+[47:14.80] with traditional four we can do this
+[47:16.40] thing you can pause the video and try
+[47:18.00] this out how to print this thing with
+[47:20.00] traditional four I hope you have done
+[47:22.32] this it's very simple
+[47:23.68] Just set the variable like int i is
+[47:26.48] equal to whatever the numbers the array
+[47:30.08] suppose numbers
+[47:32.24] dot
+[47:34.00] length minus one and then i greater than
+[47:38.16] equal to zero and i ++ simple
+[47:43.20] so length is four so it would be like
+[47:45.44] three so at three whatever you have 3 2
+[47:48.56] 1 0 so this would be traversed in
+[47:50.88] reverse order so with the traditional
+[47:52.32] four is possible. So some benefits like
+[47:55.28] it's more readable, it's more clean
+[47:57.92] code, safety is there because index out
+[48:01.44] of bound errors are less in this case.
+[48:03.92] More optimized for arrays and
+[48:06.32] collections like array list and list
+[48:10.00] something like this. It's best to use to
+[48:12.40] traverse arrays and collections and it
+[48:14.88] works with arrays and more iterable
+[48:16.56] object. Iterable means array is an
+[48:19.04] object and that is iterable object.
+[48:20.56] iterable. We can iterate through the
+[48:22.24] array. We can iterate through the list
+[48:24.00] array list. So these are iterable
+[48:25.76] objects. Okay. Now there are some
+[48:28.32] exercises for you. You have to create
+[48:30.08] string array with five color and just
+[48:32.32] print those five colors or one more
+[48:35.44] challenge is what you can print index
+[48:37.20] for each color. So you just try out this
+[48:39.04] exercise with both traditional four and
+[48:41.84] for each loop. Next is you have to
+[48:44.88] create
+[48:46.40] array of three book objects. Means it's
+[48:49.36] like this book is a class. So you have
+[48:52.24] to create array of object references of
+[48:55.20] that class. We have seen that thing
+[48:57.76] also.
+[48:59.28] And you just print use for each loop to
+[49:01.76] print book titles. In that class we have
+[49:04.56] titles of that book and you have to
+[49:05.92] access those titles. So it's like
+[49:07.76] example of array of object references.
+[49:10.56] Okay. Now that's about this. But
+[49:13.20] whatever exercises we have done two
+[49:15.20] exercise and two are here. So just try
+[49:17.52] out these exercises with traditional for
+[49:19.52] loop as well as for each loop. You get a
+[49:21.76] better understanding between you know
+[49:23.92] the difference between the traditional
+[49:25.84] four and for each loop. Right? So that's
+[49:28.96] it about this lecture. In the next
+[49:30.64] lecture probably we'll say we'll see 2D
+[49:33.12] arrays or first we'll see some exercises
+[49:35.76] on arrays only to get a better
+[49:38.48] understanding on arrays. Okay. Some lead
+[49:40.80] code problems as well. So now I'll in
+[49:43.04] the next lecture. Till then bye-bye.
+[49:44.56] Take this.

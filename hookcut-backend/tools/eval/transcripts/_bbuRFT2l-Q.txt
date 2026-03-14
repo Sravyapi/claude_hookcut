@@ -1,0 +1,583 @@
+[0:00.20] Hi everyone, this is GKCS!
+[0:02.00] Today's video will be a little different
+from our usual research paper analysis.
+[0:05.92] It's going to be about predictions
+in the AI space
+[0:09.24] and this is a risky topic to pick,
+but I will try to keep it as fact
+[0:13.08] based as possible, as close
+to the existing research as possible.
+[0:17.60] But we are in 2025.
+[0:19.44] AI is really, really hot,
+and so making any predictions for 2030
+[0:23.76] or 2035 is going to be a challenge.
+[0:27.84] You can let me know in the comments
+whether you find this video useful.
+[0:31.32] The main idea of this video
+by the end of this, is that
+[0:34.16] you have a decent idea of what is going
+on, what are the current trends here,
+[0:38.52] and potentially what are the market
+[0:41.60] forces
+[0:43.16] that are driving the search in the
+AI space.
+[0:45.84] So let's start.
+[0:47.52] All right.
+[0:47.84] One of the things that we should really
+look into is the return on investment
+[0:54.08] from scaling large language models.
+[0:57.36] Okay.
+[0:58.20] And the return on investment from GPT 3.5,
+[1:03.16] the training of GPT 3.5 to GPT four.
+[1:08.68] To GPT 4.5
+[1:12.20] to GPT
+[1:14.40] 5.2 is lower and lower
+and lower and lower.
+[1:20.40] Okay, it's not that the models
+are not getting smarter, it's just that
+[1:23.32] they are not getting as smart
+as you would have expected them to.
+[1:26.72] So these large language models,
+when trained on more
+[1:29.88] and more data,
+when trained for longer and longer,
+[1:32.96] are having larger neural networks
+with more and more parameters.
+[1:37.88] But the return on investment
+is not worth it.
+[1:42.12] Okay,
+[1:43.88] or should I say
+the return on investment is less and less?
+[1:45.72] So every time you do this.
+[1:47.96] This is just one company, GPT.
+[1:49.64] So is it not the case for Gemini?
+[1:53.32] Is it not the case for Deep Sik?
+[1:56.12] Is it not the case for Kwan or Lama?
+[2:00.16] But all of them seem to be suffering
+from the same problem.
+[2:03.36] Low return on investment
+for more and more scaling of the models.
+[2:08.60] That's one trend.
+[2:10.44] The second thing which is happening
+is that
+[2:13.68] most companies
+are now looking at cost optimization.
+[2:19.08] So if you have a large language model,
+[2:21.36] can you run that model for cheap?
+[2:24.36] If you are going to use
+an API of a large language model,
+[2:27.16] can that API cost be low?
+[2:29.84] Okay, so it's now cost considerations
+more than intelligence.
+[2:35.04] One of the reasons for
+[2:35.96] this is because companies are becoming
+more and more savvy at using these models.
+[2:39.88] So they're bringing in domain knowledge
+[2:42.00] when they are making queries to these
+models, resulting in good performance.
+[2:45.84] Even if you use a, let's
+say, small language model,
+[2:50.16] which really helps reduce costs.
+[2:52.72] Now, if you are going to use
+a small language model,
+[2:55.28] you are probably going to train it
+yourself.
+[2:57.12] Okay.
+[2:57.44] As a medium
+or slightly large organization, Netflix,
+[3:01.28] various
+other organizations are doing this.
+[3:03.36] So the LMS, the LM providers
+[3:06.16] like OpenAI are under pressure
+[3:09.36] to reduce costs because intelligence
+is not really increasing.
+[3:14.04] One thing you can do is reduce costs
+so that you get more customers
+[3:16.92] and more use of your existing products.
+[3:20.92] And the third trend that is
+[3:23.40] quite popular and quite interesting is
+[3:26.84] company specific.
+[3:30.16] Models.
+[3:31.92] These are different from large language
+models.
+[3:33.84] Those models are trained on very large
+sets of data, and they are trained
+[3:37.28] for general intelligence.
+[3:42.72] But when you're looking at company
+specific models,
+[3:44.44] for example, NASA has one
+which is able to predict forest fires.
+[3:48.68] It's able to predict glacier movement.
+[3:50.88] If there's floods, then it's able
+to quickly detect and track that.
+[3:54.92] Swiggy has one for finding out
+[3:58.08] preferences of a user
+when they're ordering from a restaurant.
+[4:00.96] Netflix has something
+for their own recommendation engine,
+[4:03.76] so people are building
+their own foundation models.
+[4:08.48] Trained on company specific data.
+[4:11.00] And this is really helping companies
+do well.
+[4:14.04] Instead of firing queries
+at a general intelligence model.
+[4:18.12] There are various reasons for this.
+[4:19.20] One is you are expecting that
+the cost of a small language model
+[4:22.44] or a company
+specific model will be less. So.
+[4:24.48] The second thing is
+you have complete control over the model.
+[4:27.12] And the third thing is
+that the data quality is much higher.
+[4:29.88] So for those factors
+you can call it a market force,
+[4:33.80] but it's also a trend that is taking more
+and more company specific models.
+[4:39.32] Okay.
+[4:39.56] So the three trends that we notice
+here are one
+[4:42.88] reduced ROI as the model scale.
+[4:45.44] Second, people really want low cost as
+they're using these models more and more.
+[4:50.72] And thirdly,
+companies are building their own models.
+[4:53.92] These give us some clues as to what
+the future of AI is going to look like.
+[4:57.40] But now let's look at market forces
+before we make the predictions.
+[5:05.60] The first thing that's happened
+[5:06.96] is that the hype around
+large language models
+[5:12.12] has gone down.
+[5:16.80] Strongly gone down.
+[5:19.28] This happened before Chang GPT five,
+[5:21.68] with GPT 4.5 being released.
+[5:24.80] People were wondering,
+is this really better than four?
+[5:28.56] I remember when 3.5 came out.
+[5:30.80] Of course, all of us were stunned
+by its performance, and rightly so.
+[5:35.16] We for the first time saw a bot
+which could hold a conversation,
+[5:38.76] which could give recommendations,
+which could do search for you is crazy.
+[5:41.88] Was very, very good.
+[5:44.04] Four was better.
+[5:45.40] Much better.
+[5:46.32] It had the idea of rank higher,
+[5:49.28] I think,
+[5:50.88] external tool calling.
+[5:52.16] A lot of the things that you're looking
+for were there and for image generation.
+[5:58.00] So that was amazing.
+[5:59.76] 4.5 and four hardly had a difference.
+[6:03.68] And five and 4.5, I think, are just
+[6:07.68] there's almost no difference,
+except that the cost here
+[6:09.64] is much less. So.
+[6:13.44] 3.5 came out in 2022
+[6:15.16] November 4th came out in 2023,
+[6:19.72] 4.5 came out in 2024
+[6:22.44] and five came out in 2025.
+[6:26.16] In 2022, the hype around
+I was at its peak.
+[6:29.68] So this I would give it a score of 100.
+[6:31.44] Hype score
+and the person to blame for this
+[6:35.16] or the company to blame for
+this will be OpenAI.
+[6:39.92] You can understand why
+their marketing message has to be strong.
+[6:43.08] They need people to use the large language
+models.
+[6:45.12] They need people to invest in them
+and believe
+[6:47.68] the key to the future
+is being held by OpenAI.
+[6:50.36] Someone who didn't do this was Google.
+[6:53.24] Google was oddly quiet
+about the capabilities of large language
+[6:57.00] models in future.
+[6:58.36] And Lamar
+actually went on the open source route.
+[7:02.04] Okay, so meta open source Lamar.
+[7:04.96] And they were hoping that people will use
+AI to build applications,
+[7:09.76] which then can be,
+you know, controlled by meta.
+[7:14.92] But 2022, everyone
+thinks that AGI is around the corner.
+[7:18.96] Sam Altman talks about six months,
+nine months says that.
+[7:22.28] Have you past the singularity or not?
+[7:24.24] Ridiculous statements
+made on purpose to create hype.
+[7:27.72] Very successful, very good strategy.
+[7:30.04] Works out.
+[7:31.24] Let's go to 2023.
+[7:33.72] When GPT four comes out,
+it really is a significant improvement.
+[7:37.64] Not only can it get the latest data,
+[7:40.60] but it also has multimodal capabilities.
+[7:43.44] So the improvement was significant.
+[7:46.08] I do not know anyone who said
+that 3.5 is still better than four.
+[7:49.72] Okay.
+[7:50.00] It was it was an obvious improvement
+and companies were ready to pay top dollar
+[7:54.24] to get the best AI that they could.
+[7:57.16] It's also at this time, around this time
+when Mark Zuckerberg,
+[8:01.20] meta said that they're going to create
+an S2 level intelligence.
+[8:07.60] Okay.
+[8:07.92] Within a year.
+[8:08.88] So 2024 or 2025 at most.
+[8:12.60] Now, this was a tall claim,
+[8:15.60] and it seemed realistic
+because I could generate code quite well.
+[8:21.08] Score this pretty decent.
+[8:22.12] It could also review code quite well.
+[8:24.60] It seemed like if you improve it
+a little more and give it domain
+[8:27.72] specific information for generating code,
+it's going to do really, really well.
+[8:31.80] A lot of other companies
+also came in Anthropic Gemini perplexity.
+[8:35.08] A lot of these companies came together
+in 2023.
+[8:37.68] They started becoming popular
+[8:40.24] in 2024.
+[8:42.16] The hype around I had reduced the reason
+being in one year or one and a half years,
+[8:47.76] most companies
+had started experimenting with AI
+[8:50.64] and some of them had started understanding
+what's going on.
+[8:53.92] So the knowledge gap
+which builds hype, had reduced.
+[8:57.88] People understood that even
+[9:00.08] after giving domain specific information,
+these bots are not reliable.
+[9:03.92] They have some code problems.
+[9:05.84] One is that they hallucinate.
+[9:11.08] So they're unreliable.
+[9:14.40] The second thing is that
+[9:15.24] they cannot set their own goals.
+[9:21.36] So they require handholding,
+[9:23.20] which is the entire subject
+of prompt engineering.
+[9:27.36] And thirdly, they're incapable
+[9:28.68] or incompetent.
+[9:33.48] Which we can clearly just call not AGI.
+[9:36.40] Okay.
+[9:37.84] This does not mean that
+these models were not useful.
+[9:40.44] A lot of AI that you see now has replaced
+software engineers.
+[9:44.88] So generating boilerplate code
+or generating an email
+[9:48.24] or generating something from scratch,
+the formats are fed so well into this,
+[9:53.28] into this element
+that it can generate the initial draft
+[9:57.16] version of code or emails or text or blogs
+very well.
+[10:02.60] In fact, the entire websites
+which are running on pure AI.
+[10:07.24] Okay.
+[10:07.84] Because what they do is they try
+to summarize things well, having said
+[10:11.52] that, the hype around LMS has gone down
+from 100 to maybe 50 right now.
+[10:17.24] Half the hype that you had earlier.
+[10:19.68] The second thing to consider
+[10:21.04] when it comes to market
+forces is the lack of data.
+[10:26.40] To train these models,
+[10:28.16] it's not a lack of infrastructure,
+but a lack of data.
+[10:31.68] So if you think of large language models,
+you initially have data
+[10:35.00] that is being gathered by.
+[10:37.32] Either you write pages, you write blogs,
+you create videos
+[10:41.72] that is then processed.
+[10:45.16] Which is basically training
+a large language model.
+[10:47.20] And then you have model solving.
+[10:51.40] And then you have applications
+[10:52.44] being built
+on top of these large language models.
+[10:55.72] So if you are in this space,
+let's say OpenAI.
+[11:00.72] You want to convince app builders
+[11:02.64] that LMS are the best thing
+after sliced bread.
+[11:07.56] If you are Nvidia,
+[11:09.40] then you want to do the same thing,
+because as people build more apps,
+[11:12.72] they're going to use more models
+serving companies
+[11:15.84] and eventually that's going to end up
+with more GPUs in the market.
+[11:21.24] But for
+[11:21.68] this pipeline to keep getting fed,
+you need lots of data
+[11:25.44] and you need new techniques
+to process this data.
+[11:28.76] Okay.
+[11:29.04] So the processor is being sold GPUs,
+but you need algorithms here
+[11:34.44] which are going to be powered by research.
+[11:37.88] A lot of funding has gone into research.
+[11:39.36] You would expect that
+neural neural algorithms keep coming.
+[11:42.04] But research has its own pace.
+[11:43.72] It requires
+time to come to the real world.
+[11:46.80] So that means you have only one lever
+to pull.
+[11:50.52] Which brings us back to our first problem
+of diminishing returns.
+[11:54.16] As you are scaling these models
+up, as you are bringing more
+[11:56.76] and more data into these models,
+they really aren't becoming much smarter.
+[12:00.80] And in fact, there was a question,
+I think in one of the interviews,
+[12:03.48] Sam Altman asked his chief
+data engineer that,
+[12:07.16] do you think we are
+going to hit AGI in GPT 60?
+[12:11.88] And the engineer who
+[12:13.56] has has built, you know, for five
+or at least led the teams said that
+[12:19.52] I do not think GPT is going to do it okay.
+[12:21.72] Which means I do not think large language
+models are going to go
+[12:26.08] in the AGI space for various problems
+that we discussed.
+[12:29.76] The hallucinate,
+they have no way to set goals.
+[12:32.96] They are internally not consistent.
+[12:35.36] You know,
+they do not have logic, internal logic.
+[12:37.60] If they say that from a you should go to B
+[12:40.56] and then you say,
+what are the substeps here?
+[12:42.40] So from A actually we should go to A1
+and then A2 and A3 and then B
+[12:48.72] the models really don't understand this,
+they just understand A to B
+[12:52.44] if you tell them
+what about A1 or a two or A3.
+[12:54.60] They cannot explain any of these steps
+[12:56.52] in fact, they can't even explain
+why they are going to be okay.
+[12:59.24] While a human is able
+[13:00.36] to recursively break down the problem
+and understand them quite well.
+[13:04.72] Apart from that,
+a human does not hallucinate.
+[13:06.60] Humans have tremendous energy efficiency.
+[13:09.60] Definitely 60 or 100
+is not going to be replacing a human.
+[13:13.40] So I'm going to be AGI.
+[13:15.72] Okay.
+[13:16.04] So where does this put us?
+[13:17.48] What kind of predictions
+can we make in the AI space?
+[13:20.52] There is a lack of data that is dying
+hype.
+[13:22.80] Companies are building
+their own models, costs are being reduced
+[13:26.00] and ROI is worse than ever.
+[13:28.72] So what do we expect in future?
+[13:31.60] One is more engineers.
+[13:34.76] Most likely heads are going to be hired.
+[13:39.96] From 2026 there is no new model out there.
+[13:44.48] The companies are feeling comfortable
+with the existing technology.
+[13:47.80] They have seen the limits
+of the existing technology
+[13:49.68] so they know that which spaces
+they have to cover.
+[13:52.92] So you will see talent being hired.
+[13:55.56] Most likely software engineers are going
+to see the tech window toying.
+[14:01.76] The second one is
+that there is going to be a push
+[14:03.60] from the research side
+for newer advanced models.
+[14:09.24] Okay, there's
+[14:09.60] quite a bit of research in the
+AI space right now.
+[14:12.84] Contrastive learning is one thing.
+[14:14.52] You have diffusion based models also,
+and something which is quite interesting
+[14:19.08] by Yann LeCun is jetpack joint embedding
+predictive architecture.
+[14:23.64] This has many benefits.
+[14:25.48] I talked about internal consistency,
+missing large language models,
+[14:28.60] japa with little data
+[14:32.08] can train itself to be quite good.
+[14:34.72] And another benefit
+is that it builds a world model
+[14:37.72] and then it changes the world
+model as you are in your data comes in.
+[14:42.00] So it seems like a superior
+architecture in practice.
+[14:45.72] It is doing quite well, but
+it's still in the proof of concept phase.
+[14:49.56] It's not replaced a large language.
+[14:51.08] Models performance is not that good yet,
+and the third thing,
+[14:54.44] which is a bit of a conspiracy
+from my side, is that
+[14:58.64] I think the companies
+[15:01.72] are going
+to be called out for misleading marketing.
+[15:10.04] So, for example,
+I think Salesforce was the company
+[15:12.60] whose CEO said that
+we won't need engineers after a few years,
+[15:17.88] unless they are planning
+to close their company.
+[15:20.84] I don't think that's going to happen.
+[15:22.92] Okay.
+[15:24.60] Mark Zuckerberg,
+like we said, said that psd2 level
+[15:27.00] intelligence is going to be found.
+[15:28.56] I don't think these models are smart
+enough to even beat an intern
+[15:32.68] when it comes to actually thinking
+about business problems
+[15:34.84] and solving business problems.
+Nowhere close.
+[15:37.32] So the marketing that you will see
+is going to be much more measured
+[15:40.84] moving forward.
+They're going to talk about reduce costs.
+[15:43.32] They're going to talk about ease of use,
+ease of integrating into existing systems.
+[15:47.64] There's going to be talk about how you can
+[15:49.12] bring in domain specific knowledge
+and make these models perform quite well.
+[15:53.04] The presentations
+I hope, are not going to look like magic,
+[15:56.08] although that works
+best when it comes to generating eyeballs.
+[16:01.08] But I do think that as companies
+become more and more mature,
+[16:03.84] they're going to look through
+that initial veneer of perfection
+[16:07.96] and they're going to look at really,
+what does this model
+[16:10.68] do for me and my company.
+[16:12.96] So thank you for watching this.
+[16:14.12] I hope that this gives you an idea of what
+trends are current in the AI space,
+[16:18.24] and what is going to come up in the next
+few years 2030, 20, 35.
+[16:22.16] We are going to see a lot of these search
+around models which have internal
+[16:26.28] consistency in logic and have maybe
+some goal setting abilities.
+[16:30.60] I still think that is very, very far,
+but it's possible.
+[16:33.04] Research is always good.
+[16:34.92] The second thing is that
+we are probably going to see more hiring,
+[16:37.40] which is good news,
+which means investing your time and effort
+[16:40.60] in learning
+AI is probably going to be useful.
+[16:45.48] Okay, I'm also going to
+[16:46.52] give a short rant before I leave.
+[16:49.68] I really think that
+some of the benchmarks.
+[16:55.48] That have been
+[16:56.04] claimed,
+the scores that have been claimed,
+[16:59.12] on benchmarks by large language
+models, I'm not going to name
+[17:02.52] them. Are fake
+[17:07.12] or are highly misleading,
+[17:09.48] especially around computer programing.
+[17:11.76] I'm talking about code forces,
+competitions or at code competitions.
+[17:15.76] The research papers
+that have been published by OpenAI
+[17:19.24] are talking about 99.8
+percentile performance.
+[17:26.16] I think that's bullshit.
+[17:27.48] Okay. It's not true, simply put.
+[17:30.00] Because when I try
+oh three mini or one, it
+[17:34.28] performs terribly in contests.
+[17:37.36] So either they are hiding their best model
+somewhere in a closet or
+[17:42.56] some human is helping them out.
+[17:44.28] Okay?
+[17:44.88] Or they are gaming the benchmarks
+that using 50 submissions,
+[17:49.68] I don't know, 100 submissions.
+[17:50.88] Maybe they have ten models
+running in parallel
+[17:53.20] and then they take the best model
+submission.
+[17:56.36] Whatever would be the case,
+these benchmarks seem completely
+[17:59.72] rigged.
+[18:01.68] The other thing is the toxicity,
+which was in social media.
+[18:05.44] On social media, a lot of AI influencers
+[18:08.20] talked about how humanity
+is going to be overtaken very soon,
+[18:12.00] and they didn't see it in a healthy way.
+[18:13.32] They said it in a almost anti-human way.
+[18:15.84] Okay, so this was very sad to see
+[18:18.88] when humanity is in a crisis,
+when people are scared,
+[18:22.84] a lot of people
+try to take advantage of this
+[18:25.96] situation and come up with their own
+[18:28.88] completely misinformed opinions.
+[18:31.60] The worst thing about this
+is that it is powered
+[18:33.84] partly by industry leaders
+like Sam Altman,
+[18:38.52] Mark Zuckerberg
+[18:40.56] and Elon Musk
+[18:42.92] because they knew better than most people
+how these models work.
+[18:46.52] They knew better than most people
+what the capabilities of these models are.
+[18:49.44] And yet for, I would say, a quick profit,
+[18:52.80] they completely allowed toxicity to roam
+[18:56.28] around the hype, to get more and more
+feverish in the social media space.
+[19:01.84] In fact, they went to Joe
+Rogan and talked about ridiculous things
+[19:04.84] that, you know, they are going to replace
+humanity in a few years.
+[19:09.08] So yes, the only guy I am proud of
+[19:11.28] actually, is Yann LeCun.
+[19:15.12] And Geoffrey Hinton,
+[19:17.52] both of these are top level researchers
+who were quite measured
+[19:22.44] in the way that they described
+the capabilities of these systems.
+[19:25.48] So thank you, Yann LeCun.
+[19:26.60] If you ever watch this video
+and thank you, Geoffrey Hinton.
+[19:29.68] You are an asset to humanity,
+especially during trying times.
+[19:34.00] Okay. Thank you for watching this.
+[19:35.20] And again, do leave your opinions
+and thoughts in the comments.
+[19:38.52] I'll see you next time. Bye bye.

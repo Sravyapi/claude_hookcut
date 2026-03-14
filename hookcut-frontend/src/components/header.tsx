@@ -76,7 +76,6 @@ export default function Header({ onReset }: HeaderProps) {
   const [aiMinutes, setAiMinutes] = useState<number | null>(null);
   const [clipMinutes, setClipMinutes] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolledPast200, setScrolledPast200] = useState(false);
   const isAdmin = role === "admin";
 
   const { scrollY } = useScroll();
@@ -104,12 +103,6 @@ export default function Header({ onReset }: HeaderProps) {
       })
       .catch((err) => console.warn("Failed to load balance:", err));
   }, [status]);
-
-  useEffect(() => {
-    const onScroll = () => setScrolledPast200(window.scrollY > 200);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const userInitials = session?.user?.name
     ? session.user.name
@@ -139,7 +132,7 @@ export default function Header({ onReset }: HeaderProps) {
   return (
     <>
       <motion.header
-        className={`fixed top-0 left-0 right-0 z-50 overflow-hidden animated-border-bottom border-t-2 transition-[border-color] duration-300 ${scrolledPast200 ? "border-[--color-primary]" : "border-transparent"}`}
+        className="fixed top-0 left-0 right-0 z-50 overflow-hidden animated-border-bottom border-t-2 border-transparent"
         style={{
           backgroundColor: bgColor,
           backdropFilter: bgFilter,

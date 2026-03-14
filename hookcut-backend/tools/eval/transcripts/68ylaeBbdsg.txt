@@ -1,0 +1,1850 @@
+[0:01.60] Okay.
+[0:07.21] [music]
+[0:20.16] Heat. [music]
+[0:27.51] >> [music]
+[0:34.72] [music]
+[0:41.28] >> So I started playing with Claude. It's
+[0:43.44] getting to that point where sometimes it
+[0:46.00] surprises me by how much it [music]
+[0:48.64] knows me. I don't know if that makes
+[0:50.00] sense. It is surprising to me that we
+[0:52.32] are in my view so close to these models
+[0:55.04] reaching the level of human intelligence
+[0:57.20] and yet there doesn't seem to be a wider
+[1:00.64] recognition in society of what's about
+[1:02.40] to happen. It's as if this tsunami is
+[1:04.56] coming at us and you know it's so close
+[1:06.72] we can see it on the horizon and yet
+[1:08.48] people are coming up with these
+[1:09.68] explanations for oh it's not actually a
+[1:11.60] tsunami that's just a trick of the light
+[1:13.44] like there hasn't been a public
+[1:14.72] awareness of the risk.
+[1:18.32] What is India's role in all this?
+[1:20.40] >> Many other companies come here as
+[1:22.08] themselves a consumer company and they
+[1:23.76] see they see India as as a market,
+[1:26.00] right? A place to obtain consumers. We
+[1:28.64] actually see things a little bit
+[1:29.84] differently.
+[1:48.40] What did you do before founding
+[1:50.00] anthropic?
+[1:51.36] >> Yeah, so I was I was actually originally
+[1:53.52] a biologist. Um I uh you know did my
+[1:56.96] undergrad in physics, my uh PhD in
+[1:59.28] bioysics and you know I wanted to
+[2:01.28] understand biological systems so that I
+[2:03.28] could cure disease. uh and uh the the
+[2:07.28] you know the thing I noticed about
+[2:09.04] studying biology was its incredible
+[2:10.80] complexity that uh you know you know for
+[2:13.60] example if you look at the the protein
+[2:15.68] mass spec work that I did right trying
+[2:17.60] to find protein biomarkers it's it's
+[2:20.24] just really incredible how much
+[2:21.92] complexity there is right you have a
+[2:23.60] given protein it's like you know the RNA
+[2:26.24] gets spliced in a whole bunch of
+[2:27.84] different ways depending on where it is
+[2:29.28] in the cell then it gets
+[2:30.88] post-transationally modified
+[2:32.48] phosphorolated complex with a whole
+[2:34.80] bunch of other proteins and and I was
+[2:37.28] starting to despair that it was too
+[2:38.80] complicated for humans to understand.
+[2:40.96] And then as as I was doing this work on
+[2:42.96] biology, I noticed a lot of the early
+[2:44.88] work around Alexet, which is one of the
+[2:47.20] first neural nets like you know almost
+[2:49.20] 15 years ago now. Uh and and I said wow
+[2:53.52] like you know AI is actually starting to
+[2:55.76] work. It has some things in common with
+[2:58.32] how the human brain works but you know
+[3:00.00] has the potential to be be larger and
+[3:02.32] scale better and learn tasks like
+[3:04.32] biology. Maybe this is ultimately going
+[3:06.40] to be the solution to uh you know to to
+[3:09.76] solving our problems of of solving our
+[3:12.24] problems of biology. So you know I I
+[3:14.56] went to work with Andrew Ing at BU. Then
+[3:16.88] I was at Google for a year. Then I
+[3:19.28] joined OpenAI a few months after it uh
+[3:21.60] started and was uh you know was was
+[3:24.24] basically led led um all of research
+[3:27.12] there for for for for several years. But
+[3:29.92] then eventually you know myself and a
+[3:32.16] few other of the of the employees just
+[3:34.96] kind of had our own vision for you know
+[3:36.64] how how we wanted to how we wanted to
+[3:38.56] make AI and what we wanted the company
+[3:40.24] to stand for. And so we went off and
+[3:41.84] found an anthropic.
+[3:43.44] >> How was it? Was it like a fork in how
+[3:45.68] OpenAI was thinking into what Anthropic
+[3:48.88] eventually did?
+[3:49.92] >> Yeah. You know, I would say, you know,
+[3:52.40] my conviction and the conviction of my
+[3:54.56] co-founders when we we founded Anthropic
+[3:56.40] were two of them. And I think one we
+[3:58.64] were starting to convince OpenAI of, the
+[4:00.72] other I was, you know, not I didn't feel
+[4:03.76] that we were convincing of. So the first
+[4:05.44] was the you know the conviction in the
+[4:08.48] scaling loss and the idea that you know
+[4:10.40] if you scale up models you give them
+[4:12.24] more data more compute again there are a
+[4:14.40] few modifications like RL but not really
+[4:16.64] very much it's pretty close to pure
+[4:18.48] scaling um you you find that you know
+[4:22.32] when you when you do that you you find
+[4:24.24] you know incredible increases in
+[4:26.24] performance and you know I was finding
+[4:27.76] that in like 2019 with with GPT2 um you
+[4:31.52] know when we just first saw the first
+[4:33.12] glimmers of the scaling laws And of
+[4:35.20] course there were a lot of folks you
+[4:36.40] know inside and outside who didn't
+[4:37.76] believe it at all and we really made the
+[4:39.84] case to leadership like this is this is
+[4:41.52] important this is going to be a big deal
+[4:43.36] and I think they were kind of starting
+[4:45.20] to believe us and ultimately went in
+[4:46.72] that direction and there was a second um
+[4:50.16] you know conviction I had which is look
+[4:52.48] you know if if these models are going to
+[4:54.72] be kind of general cognitive agents like
+[4:57.44] general cognitive tools that match the
+[4:59.44] capability of like the human brain we we
+[5:02.08] better get this right. The economic
+[5:03.76] implications are going to be enormous.
+[5:06.08] The geopolitical implications are going
+[5:08.08] to be enormous. The safety implications
+[5:10.00] are going to be enormous. It's going to
+[5:12.00] transform how the world works. And so we
+[5:14.16] need to do it in the right way. And and
+[5:15.68] you know, I think despite a lot of, you
+[5:18.00] know, kind of language verbiage about
+[5:20.40] doing it in the right way. I I was for a
+[5:22.24] variety of reasons just just not
+[5:23.92] convinced that at the you know,
+[5:25.36] institution that that I was at that that
+[5:27.76] there was a real and serious conviction
+[5:29.28] to to to to do it in the right way. And
+[5:31.20] so, you know, my my view is always, you
+[5:33.52] know, don't argue with someone else's
+[5:35.52] vision. Don't try to get someone to do
+[5:37.28] things the way the the way you want to.
+[5:39.52] If you have a strong vision and you
+[5:41.04] share that vision with a, you know, a
+[5:42.88] few a few other people, you should just
+[5:44.56] go off and do your own thing and then
+[5:46.08] you're responsible for your own
+[5:47.76] mistakes. You don't have to answer for
+[5:49.20] anyone else's. And and you know, maybe
+[5:51.20] your vision works out, maybe it doesn't,
+[5:52.80] but you know, you know, at least it's at
+[5:54.88] least it's yours.
+[5:56.32] >> [snorts]
+[5:56.48] >> Didn't OpenAI believe in scaling laws
+[5:58.56] cuz they went down the same path
+[6:00.00] themselves too, right?
+[6:01.36] >> Well, that Yeah. Yeah. We we succeeded.
+[6:03.36] >> Can you can you explain what scaling
+[6:04.96] laws are in very simple terms?
+[6:07.84] >> Um it's like if if you know you want a
+[6:11.60] chemical reaction to produce oxygen or
+[6:14.00] start a fire or something like that, um
+[6:16.96] you need different ingredients and you
+[6:19.60] know if you don't have one enough of one
+[6:21.44] ingredient the the reaction stops. But
+[6:24.56] if you you know if you put if you put
+[6:27.44] ingredients together in proportion you
+[6:29.68] know you get your you know your
+[6:31.28] explosion or your fire or fire or
+[6:33.36] whatever. And and for AI those
+[6:35.68] ingredients are data compute the size
+[6:39.60] you know the the size the size of the AI
+[6:41.76] model. And so the scaling laws just tell
+[6:43.84] you that like
+[6:46.00] the you know if you put in the
+[6:47.52] ingredients to the to the chemical
+[6:49.04] reaction the ingredients of data and
+[6:51.44] model size that what you get out is is
+[6:54.64] intelligence. Intelligence is the
+[6:56.40] product of a chemical reaction.
+[6:58.16] >> And what is intelligence?
+[7:00.80] intelligence as measured by the ability
+[7:03.52] to translate language or the ability to
+[7:06.32] write code or uh you know the ability to
+[7:09.76] answer questions correctly about a
+[7:11.60] story. Basically any cognitive task we
+[7:14.08] can think of any any any you know task
+[7:16.56] that exists in text or in images any any
+[7:19.60] task that you can you can do on a
+[7:21.20] computer.
+[7:22.72] How is the intelligence of today as you
+[7:25.68] are describing it different from what a
+[7:28.56] computer could do like 5 years ago?
+[7:30.88] >> Yeah, you know, I would say well I mean
+[7:33.60] for example 5 years ago a a computer you
+[7:36.48] could not ask a computer a question and
+[7:38.72] have it write a one-page essay on that
+[7:40.80] question. Um you could not uh ask a
+[7:44.32] computer uh to you know implement a
+[7:46.56] feature in code and have it implement
+[7:48.16] that feature in code. None of those
+[7:49.92] things were possible. You could not
+[7:51.44] generate an image. You could not
+[7:53.36] generate a video. You could not analyze
+[7:56.16] a video. You know, I could could get one
+[7:57.92] of those uh you know uh uh you know v
+[8:00.56] you know videos of like you know a
+[8:02.08] monkey juggling or something and you
+[8:04.24] know say what's going on in this video?
+[8:06.16] How many times did the ball change
+[8:07.52] hands? And right now you could get
+[8:09.36] Claude or another AI model to to to to
+[8:11.68] give you an answer on that. Um and and 5
+[8:14.00] years ago, you know, none of those
+[8:15.36] things were possible. What I'm I'm
+[8:17.44] trying to figure out has the definition
+[8:19.68] of intelligence changed per se?
+[8:22.40] >> Well, you know what I would say is five
+[8:24.48] years ago, you know, you could you could
+[8:26.72] Google and there might be a website that
+[8:29.28] you know would tell you a little bit
+[8:30.72] about this, right? But, you know, you're
+[8:32.72] just you're just looking up some text
+[8:34.32] that exists exists on the web, right?
+[8:36.16] You know, maybe it's not about how to
+[8:38.00] get a monkey to juggle. Maybe, you know,
+[8:40.16] maybe it's about how to get a a seal to
+[8:42.24] juggle. you know, is it's not quite
+[8:44.08] exactly the same thing because maybe
+[8:45.92] exactly the same thing doesn't exist.
+[8:48.24] Um, but you know, as as as we see when
+[8:50.96] when people use these models, uh, you
+[8:53.60] know, you can ask and you can actually
+[8:55.12] get an intelligent response. You can ask
+[8:56.88] a specific question and have the model
+[8:58.88] write, you know, one page about it or
+[9:00.40] you can give it a, you know, you can
+[9:02.00] give it a you can give it a
+[9:03.52] hypothetical. you know, what if I had,
+[9:05.52] you know, the monkey juggle clubs
+[9:07.12] instead of balls or, you know, what if I
+[9:09.60] did this thing and and that information
+[9:11.76] doesn't exist anywhere, you know,
+[9:13.44] whereas the model is able to kind of
+[9:15.36] think for itself and and come up with an
+[9:17.84] answer on its own. So, it's it's it's
+[9:20.00] something um you know, it's it's
+[9:22.56] something totally new. It's just it's
+[9:24.16] not just matching some of the text that
+[9:26.24] exists on the internet.
+[9:28.96] >> Fair. So, you know, this is more like a
+[9:32.00] conversation. So, feel free to like talk
+[9:34.00] about what you want to talk, not
+[9:36.16] necessarily related to the questions
+[9:37.76] that I'm asking.
+[9:39.92] >> You look very animated when you speak.
+[9:42.16] Did you ever teach?
+[9:43.92] >> Uh, you know, I I was originally an
+[9:46.08] academic and uh, you know, I thought
+[9:48.64] that I might become a professor. You
+[9:50.16] know, I I got my PhD. I went all the way
+[9:52.08] to being a a posttock at Stanford
+[9:54.16] Medical School and, you know, I was I
+[9:55.76] was aiming to become a become a
+[9:58.00] professor. Um so if I had become a
+[10:00.16] professor you know I I would would have
+[10:02.40] uh would have done that. Um uh but you
+[10:05.92] know as I mentioned uh you know I got
+[10:08.72] interested in AI and to work in AI
+[10:11.52] required a lot of computational
+[10:13.20] resources and that was mostly happening
+[10:14.80] in industry. So that took me off the
+[10:16.80] academic path and and you know into
+[10:18.64] industry and of course you know
+[10:20.08] ultimately through several steps led me
+[10:22.00] led me to start a company. But you know
+[10:23.68] sometimes I think I'm still like a
+[10:25.20] professor at heart
+[10:26.96] >> at this point. Dario, if AI is the most
+[10:30.88] relevant thing in the world, u if the
+[10:34.80] world is realigning in a way and AI is
+[10:37.04] determining who gets what and who
+[10:39.68] doesn't get what, I'm talking about
+[10:41.52] industries,
+[10:44.00] you today are probably the most relevant
+[10:46.88] person in the world. If
+[10:49.84] anthropic
+[10:52.08] in this last cycle, in this minute is
+[10:54.24] sitting on top of this pile. for
+[10:56.88] somebody who who was going on the path
+[10:58.64] of being a teacher to have arrived to
+[11:01.60] where you are today. Are you best
+[11:04.40] equipped for where you are today?
+[11:06.56] >> Well, I mean, you know, first I would
+[11:08.00] say a couple of things. You know, I I I
+[11:09.84] think there's a lot of there's a lot of
+[11:11.92] folks who are who are right relevant in
+[11:14.00] different ways, right? You know, even
+[11:15.20] within industry, there's the different
+[11:17.20] layers of the stack. There's like the
+[11:18.48] folks who make chips. There's the folks
+[11:20.24] even earlier who make semiconductor
+[11:22.08] manufacturing equipment. There's the
+[11:23.52] folks who make models like us. And then
+[11:25.04] there are other players who make models.
+[11:26.80] There's the folks who make kind of
+[11:28.40] applications after the models. Um uh you
+[11:31.92] know and then then there's a bunch of
+[11:33.60] other folks who have a say. There's you
+[11:35.04] know governments, there's like civil
+[11:36.80] society. So you know my my hope you know
+[11:40.40] isn't that there's uh you know just one
+[11:42.24] tiny set of people that's that's
+[11:43.68] relevant. I think we're trying to
+[11:45.04] broaden the set of people who are
+[11:46.48] relevant and you know turn it into a
+[11:48.32] turn it into a broader conversation. Um
+[11:50.88] but you know I think at the same time
+[11:52.24] your your question is a fair one and one
+[11:54.32] way I could interpret it is like you
+[11:56.56] know there's there's a certain
+[11:58.24] randomness to how you know kind of you
+[12:00.08] know a few people you know end up
+[12:02.00] leading these you know you know leading
+[12:04.48] these companies that kind of you know
+[12:06.32] grow so fast and it seems like you know
+[12:08.48] in the near future will power so much of
+[12:10.56] the economy. Um, and you know, I've said
+[12:13.20] openly publicly, not for the first time,
+[12:15.44] that I'm I'm at least somewhat
+[12:17.20] uncomfortable with the amount of
+[12:18.40] concentration of power that's happening
+[12:20.16] here. I would say almost overnight,
+[12:23.12] almost by accident. Um, and and you
+[12:25.84] know, we think, you know, about that in
+[12:28.72] a bunch of ways. You know, one is we
+[12:30.40] have an unusual governance structure,
+[12:32.00] something called the long-term benefit
+[12:33.44] trust. um you know it's it's a body that
+[12:36.24] that kind of ultimately appoints you
+[12:38.48] know the majority of the board members
+[12:40.00] for anthropic and is you know made up of
+[12:42.64] of financially disinterested financially
+[12:45.76] disinterested individuals. So that's
+[12:48.00] some you know check on what one one
+[12:50.56] single person is doing and then you know
+[12:52.40] I think I think as always the government
+[12:54.00] should play some role here. you know,
+[12:55.92] I've been an advocate of, you know,
+[12:58.08] proactive although, you know, sensible
+[13:01.04] that doesn't slow down the technology,
+[13:02.80] sensible regulation of the technology
+[13:04.56] because, you know, I think I think like
+[13:06.56] the people should have a say like
+[13:07.92] government, you know, governments and
+[13:09.68] the people who elect them should have a
+[13:11.20] say in in how this goes. So, I I
+[13:14.16] actually think of a lot of what I'm
+[13:15.44] trying to do as as kind of trying to
+[13:17.28] trying to preserve a balance of power.
+[13:19.92] um you know uh uh kind of you know
+[13:22.64] against the the the the the natural
+[13:25.20] grain of this technology
+[13:27.76] >> for someone like me who's sitting on the
+[13:29.52] outside and doesn't have a bone in this
+[13:32.40] competition
+[13:35.04] when I watch OpenAI talk about how
+[13:37.92] they're how they were a not for-p
+[13:39.68] profofit company or how
+[13:43.12] you are projecting humility in the
+[13:45.12] conversation that you're having right
+[13:46.80] now or how the American companies are
+[13:50.16] competing with the Chinese companies
+[13:51.60] which are coming about
+[13:54.64] this projection of humility where it is
+[13:56.80] for the larger good and not necessarily
+[14:00.56] for how I view the world as companies
+[14:02.48] with shareholders with investment and
+[14:05.12] revenues and seeking profit.
+[14:08.72] Is this par for the course? Is this
+[14:10.64] something you have to do?
+[14:12.24] >> So, you know, I I would I would put it
+[14:14.56] in the following way. You know, I I
+[14:16.96] would say the philosophy of Enthropic
+[14:20.00] from the beginning has been that we we
+[14:22.08] try not to make too many promises and we
+[14:24.72] try to keep the ones that we make. So,
+[14:27.52] you know, we we set ourselves up as, you
+[14:30.40] know,
+[14:31.92] a for-profit but public benefit
+[14:33.84] corporation with this LTBT governance
+[14:36.64] and we've maintained that. We've said
+[14:38.72] that you know our goal is to you know
+[14:42.00] stay on the frontier of the technology
+[14:44.16] but you know to work on uh uh you know
+[14:47.04] to work on uh um you know the safety and
+[14:49.52] security aspects of the technology.
+[14:51.20] We've pioneered the science of
+[14:52.80] interpretability. We've uh you know
+[14:55.28] pioneered the science of alignment. I
+[14:56.96] don't know if you saw but we recently
+[14:58.40] released a constitution for claude the
+[15:00.72] ability to align models in line with the
+[15:03.28] constitution. And you know, we've done a
+[15:05.68] bunch of policy advocacy and warning
+[15:08.16] about risks, right? Warning about risks
+[15:10.16] is not in our commercial interest,
+[15:11.76] right? Like people can come up with
+[15:13.44] conspiracy theories, but you know, I
+[15:15.36] will tell you saying that the models we
+[15:17.44] build could be dangerous. Whatever
+[15:20.00] people might say, that's not an
+[15:21.52] effective marketing strategy and that's
+[15:23.44] not the reason that we do it. And you
+[15:25.52] know, speaking up on when we disagree
+[15:28.48] even with the US administration on uh
+[15:31.52] you know, on on on policy matters,
+[15:33.60] right? we've we've we've spoken up,
+[15:35.84] right? We're willing to say, you know,
+[15:38.24] we disagree on this issue, like, you
+[15:40.08] know, we we've said that there should be
+[15:41.76] regulation of AI when all the other
+[15:43.76] companies and the administration have
+[15:45.44] said there shouldn't be regulation of
+[15:46.88] AI. And so that's both, you know, the
+[15:49.60] regulation of AI of AI holds, you know,
+[15:52.16] holds us back commercially as a company,
+[15:53.84] even though I think it's the right thing
+[15:54.96] to do. And it's, you know, it's it's
+[15:57.84] it's it's difficult to go against the
+[16:00.00] government and the other companies and
+[16:01.20] say this. We're really sticking our neck
+[16:02.72] out. So, we've we've taken a number of
+[16:04.88] actions that, you know, I see as really,
+[16:07.44] you [snorts] know, putting our putting
+[16:08.88] our money where where where our mouth is
+[16:10.96] here. I can't speak for the other
+[16:13.04] companies. You know, it's again, it's
+[16:14.64] quite possible that some people say
+[16:16.72] these things, uh, you know, and they
+[16:18.64] don't really mean them, but I wouldn't
+[16:19.84] look at what people say. I would look at
+[16:21.28] what people do.
+[16:23.76] If what you're saying gets the
+[16:26.72] government to act by regulation,
+[16:31.04] as the incumbent leaders in this space,
+[16:35.28] you get some kind of a regulatory
+[16:36.96] capture where it becomes harder for the
+[16:38.72] new people coming in as well. Right.
+[16:40.32] >> I I don't agree with that at all. the
+[16:42.32] regulation we've advocated for, for
+[16:44.24] example, SB uh 53 in California, um uh
+[16:50.00] exempted everyone uh who makes under
+[16:52.88] $500 million a year in in in uh in in
+[16:56.80] revenue, right? SB SB53 was a
+[16:59.20] transparency law which um you know uh uh
+[17:02.16] basically requires companies to um you
+[17:04.32] know to show um you know the the the the
+[17:07.28] safety and security tests that they've
+[17:08.96] run. Um, and it exempts all companies
+[17:11.20] under 500 million in revenue. So, it
+[17:13.60] really only applies to Enthropic and
+[17:15.92] three or four three or four other
+[17:17.60] companies. So, it only applies to the
+[17:19.20] companies that that have the resources
+[17:21.20] and and everything that we've advocated
+[17:23.28] for here uh uh not just SB53, but all
+[17:26.72] the proposals that we've made, the ones
+[17:28.16] that we've made in the past and the ones
+[17:29.60] that that we plan to make in the future
+[17:31.60] have this character. We're constraining
+[17:33.20] ourselves and a very small number of
+[17:35.04] additional um um um companies. We're
+[17:37.52] we're not uh people people who say that
+[17:39.76] need to look at the actual content of of
+[17:41.68] of what we're proposing because it
+[17:43.44] doesn't match that idea at all.
+[17:45.84] >> Fair.
+[17:47.68] I read your paper machines of loving
+[17:50.08] grace and the adolescence of technology
+[17:52.08] and
+[17:53.84] you seem to have had a 180°ree shift in
+[17:57.20] perspective almost from
+[18:00.24] optimism to skepticism over like two
+[18:04.00] years from 2024 to 2026.
+[18:07.52] Is there one moment in the last two
+[18:10.00] years that changed this for you? Did you
+[18:11.60] see something change?
+[18:12.48] >> Yeah, I actually wouldn't agree with the
+[18:14.16] question. I don't think I've had a shift
+[18:16.08] in perspective.
+[18:17.44] >> Um, I think the positive side and the
+[18:20.24] negative side are always something that
+[18:22.16] I've held in my head. And if you look at
+[18:24.56] the history of, you know, the things
+[18:27.12] that I've said, I mean, I've been
+[18:28.32] talking about risks for a very long
+[18:29.68] time. I've been talking about benefits
+[18:31.04] for a very long time. Um, you know, it
+[18:33.52] it it turns out that actually it takes
+[18:35.12] me a while to write one of these essays.
+[18:36.88] Um, you know, both
+[18:38.40] >> they're really large as well. They're
+[18:39.68] big essays.
+[18:40.40] >> They're like 30 pages.
+[18:42.00] >> Both both of these it's it's you know,
+[18:44.00] it's taken me like I I I spent for each
+[18:46.56] one I spent about a year having a kind
+[18:49.20] of vague vision of the essay in my head
+[18:50.96] and like trying to write it but like not
+[18:52.72] fully succeeding at writing it. and and
+[18:55.20] then you know in either case I had to I
+[18:57.12] had to be on vacation or somewhere where
+[18:58.72] I could you know where I could think
+[19:00.08] where the business day-to-day business
+[19:02.00] of running the company didn't didn't
+[19:03.60] occupy me. Um and and then I was finally
+[19:06.40] able to you know to to kind of write the
+[19:08.48] essay. So all of that is to say, you
+[19:10.72] know, I I I I started thinking about
+[19:12.72] what would be in adolescence of
+[19:14.40] technology almost the instant I finished
+[19:16.64] Machines of Loving Grace because I was
+[19:18.00] like, "Oh, you know, I want to inspire
+[19:19.52] people with the good vision, but I also
+[19:21.60] want to warn people with, you know, what
+[19:23.20] can go what can go wrong." And so it it
+[19:25.84] just it just took me a year to write it.
+[19:27.60] But really, both visions were in my
+[19:29.92] head. And I think they're both, you
+[19:31.68] know, I think they're both possible.
+[19:33.12] They're two different visions of the
+[19:35.36] future. And obviously, I want to get the
+[19:37.20] Machines of Loving Grace one, right? you
+[19:38.72] know, I want to solve all the problems
+[19:40.72] and have the have the positive vision,
+[19:43.28] but it's not a it's not a shift in
+[19:45.60] perspective. It's um it's me just um you
+[19:48.40] know, finding the time to write the
+[19:50.00] light and then the dark.
+[19:51.52] >> But have you had a change of
+[19:52.72] perspective?
+[19:54.32] >> You know, I would say overall I have I'm
+[19:59.36] about where I was before. I've not
+[20:01.36] gotten more positive, more nor more more
+[20:04.40] negative. There may be some places where
+[20:07.44] I've gotten more optimistic or things
+[20:09.28] have gone better than expected.
+[20:11.28] >> There may be places where I'm more
+[20:13.52] pessimistic and where things have gone
+[20:14.96] worse than expected, but on average they
+[20:17.04] sort of cancel each other out. I would
+[20:18.72] say I feel very good about you know how
+[20:23.36] things have gone with areas like
+[20:24.96] interpretability. Interpretability is
+[20:26.64] the science of seeing inside these
+[20:28.64] neural nets. you know, as a human would,
+[20:30.72] you know, look inside, you know, as we
+[20:32.56] would scan a human brain with an MRI or
+[20:35.20] a neural probe. Um, I've been amazed at
+[20:38.00] what we've been able to find. We've been
+[20:39.52] able to find, you know, neurons that
+[20:41.52] correspond to very specific concepts,
+[20:43.92] neural circuits that correspond to, you
+[20:46.96] know, keep track of how to do rhymes in
+[20:49.12] poetry. And so, we're starting to
+[20:51.04] understand what these models do, right?
+[20:53.36] We we we don't we just we just train
+[20:55.04] them in this kind of emergent way as you
+[20:56.80] would build a snowflake. But now we're
+[20:58.64] starting to be able to look inside and
+[21:00.16] understand them. I'm I'm also very
+[21:02.40] encouraged by some of the work on
+[21:03.76] alignment and constitutions. Um, you
+[21:06.48] know, making sure that models behave in
+[21:08.40] the way that we want and expect them to.
+[21:10.80] I think that's going pretty well. Um, I
+[21:14.40] felt pretty positive about that. Um I
+[21:17.60] think I felt maybe you know have been a
+[21:20.24] bit disappointed or felt a bit more
+[21:22.24] negative about some of the things that
+[21:24.96] are more like in the you know in the
+[21:27.60] kind of public awareness and the actions
+[21:30.24] of wider society. Um you know it it is
+[21:33.52] surprising to me that we are you know in
+[21:36.56] in my view so close to these models
+[21:38.96] reaching the level of human intelligence
+[21:41.52] and and yet there doesn't seem to be a
+[21:45.84] wider recognition in society of what's
+[21:47.84] about to happen. It's as if this tsunami
+[21:49.92] is coming at us and you know it's so
+[21:52.48] close we can see it on the horizon and
+[21:54.32] yet people are coming up with these
+[21:56.08] explanations for oh it's not actually a
+[21:58.00] tsunami it's you know that that you know
+[22:00.32] that's just a trick of the light like
+[22:01.76] it's some you know and I think along
+[22:03.44] with that there hasn't been a public
+[22:04.80] awareness of the risks and you know
+[22:07.04] therefore our governments haven't acted
+[22:09.28] to to address the risk there's even an
+[22:11.20] ideology that you know we should just
+[22:13.36] try to accelerate as fast as possible
+[22:15.52] which you know I understand the benefits
+[22:17.12] of the technology I wrote machines of
+[22:18.64] loving grace. But I think there hasn't
+[22:20.56] been an appropriate realization of the
+[22:22.80] risk of the technology and there
+[22:24.16] certainly hasn't been action. So I would
+[22:25.92] say that the the technical work on
+[22:28.80] controlling the AI systems has gone
+[22:30.96] maybe a little better than I expected
+[22:32.48] and kind of the societal awareness has
+[22:34.40] gone maybe a little worse than I
+[22:36.24] expected. So I'm I'm about where I was a
+[22:38.64] few years ago.
+[22:40.56] So in my own journey I'm you know when
+[22:44.80] something sounds complicated and I'm not
+[22:46.96] a programmer I don't have a background
+[22:48.64] in coding
+[22:51.60] so I used a bunch of tools for things
+[22:53.84] like research and a conversation both
+[22:55.92] ways but I never tried to figure out if
+[22:59.84] I could code using uh your tool for
+[23:03.04] example.
+[23:04.88] Recently I hired a developer just to
+[23:08.64] like push me to sit for a couple of
+[23:10.24] hours a day and teach me how to start
+[23:12.56] becoming more familiar with it
+[23:14.51] [clears throat]
+[23:15.84] largely because of you know something
+[23:17.68] like FOMO like the fear of missing out
+[23:19.52] on how the world is changing.
+[23:21.84] >> Uh so I started playing with claude u I
+[23:25.52] connected I used the connectors to
+[23:27.84] connect my Google drive mail and
+[23:30.24] calendar and a bunch of those things. I
+[23:32.80] started using the cowwork and then I
+[23:35.28] started using claude code to write
+[23:38.72] simple programs around
+[23:41.60] the industry that I am in which is
+[23:43.36] financial services uh basically to
+[23:45.60] research stock markets and stuff.
+[23:47.44] >> We even have a optimized cloud for
+[23:49.60] financial services. I don't know if
+[23:50.80] you've tried that but we even have that.
+[23:52.72] >> No. And then I went into claudebot which
+[23:55.68] is now open claw. I think clawbot became
+[23:58.00] something else and now is open claw and
+[23:59.52] I set it up on a Mac mini and connected
+[24:03.04] it to a telegram account and now I chat
+[24:05.04] with it and I I try and move files from
+[24:09.20] a to b work on a server on remote. It's
+[24:13.44] getting to that point where I'm not
+[24:16.08] talking about open claw but even claude
+[24:18.08] with all the connectors sometimes it
+[24:21.20] surprises me by how much it knows me. I
+[24:25.76] don't know if that makes sense.
+[24:27.28] >> Yeah. You know, one of my one of my
+[24:29.12] co-founders
+[24:30.64] um you know, he was writing this diary
+[24:32.80] with his kind of you know, his thoughts
+[24:34.88] and his fears. Um uh and he fed it into
+[24:38.96] Claude and uh you know he he asked
+[24:42.00] Claude to comment on it and Claude said,
+[24:43.92] "Here are some other fears you might
+[24:45.44] have that that I you that you know that
+[24:47.28] you haven't written down." Um and Claude
+[24:49.44] ended up being mostly right about those.
+[24:51.52] So it really gave this eerie sense of
+[24:53.52] like you know the model knows you the
+[24:55.60] model knows you super well that you know
+[24:57.60] that from a relatively small amount of
+[25:00.00] information it can learn a lot about you
+[25:01.84] and come to know you fairly well and you
+[25:04.24] know I I I you know like most things
+[25:06.16] with the technology right we talked
+[25:07.52] about the machines of loving grace and
+[25:09.36] adolescence of technology you know on
+[25:12.00] one hand something that knows you really
+[25:13.36] well can be a sort of angel on your
+[25:15.04] shoulder that you know that helps to
+[25:16.80] guide your life and make you a better
+[25:18.24] version of yourself and you know that's
+[25:20.00] the version we can aim for of course
+[25:22.00] something that knows you really well you
+[25:23.60] know can um you know it can it can you
+[25:26.72] know use what it knows about you to you
+[25:28.72] know to exploit you or manipulate you on
+[25:31.28] behalf of some agenda or sell your data
+[25:33.28] to someone else I mean you know this is
+[25:35.28] one reason we just you know don't like
+[25:37.04] the idea of you know using ads right you
+[25:39.20] know this this is because you're not
+[25:40.72] paying for the product like you're the
+[25:42.24] product and you know in this case the
+[25:44.24] the the the product then would be all
+[25:46.88] you know this model that knows you super
+[25:48.64] well and you know could use that in in
+[25:51.04] all kinds of in all kinds of nefarious
+[25:52.96] ways. So, you know, we need to make sure
+[25:54.40] we take the positive um uh the positive
+[25:57.52] road here and not the not the negative
+[25:59.20] road.
+[26:00.72] >> With Claude,
+[26:02.80] I need to use the connectors to give it
+[26:05.04] context to my life.
+[26:08.16] With Google, for example,
+[26:10.72] it already has the context to my life
+[26:13.04] because I use their worksheets and their
+[26:16.64] email and their drive and their chat and
+[26:18.88] everything like that.
+[26:21.20] for anthropic long-term will you also
+[26:24.64] have to own the ecosystem?
+[26:27.04] >> Yeah. I mean, you know, do
+[26:28.40] >> you have to build mail and chat and
+[26:30.40] >> Yeah. Yeah. You know, I don't think we
+[26:32.16] need to build all of those things. Um,
+[26:35.20] you know, it, you know, my my thought
+[26:38.16] would be, you know, we're going to it's
+[26:40.48] going to be a mixture of things we make
+[26:42.16] ourselves and integrating into others,
+[26:43.84] right? Like, you know, we can we can
+[26:45.28] integrate Claude into Google Docs. we
+[26:47.20] can integrate quad into into you know
+[26:49.52] Google sheets like you know we have
+[26:51.44] external connectors there we can you
+[26:53.36] know we're starting to do that with with
+[26:55.12] co-work you know same for Microsoft
+[26:57.68] office same for other tools so you know
+[26:59.92] I think I think we do whatever is you
+[27:03.76] know easiest and fastest to do you know
+[27:05.92] we we integrate into the existing tools
+[27:08.16] now it might turn out at some point that
+[27:10.16] the existing you know tools aren't
+[27:12.08] enough and we have kind of a different
+[27:13.60] vision you know we want to we might want
+[27:15.60] to slice things differently right? You
+[27:17.36] know, maybe traditional email doesn't
+[27:19.04] make sense or traditional spreadsheets
+[27:20.96] don't make sense given what you can do
+[27:22.56] in in AI. So, I you know, I don't
+[27:24.24] exclude that we could chop up products
+[27:26.32] in a different way, but we're we're
+[27:28.16] happy to use the ecosystem that exists
+[27:29.84] and work with anyone else, right? In
+[27:31.52] many ways, we're a platform company. We
+[27:33.76] allow many people to build on us, even
+[27:35.76] though we sometimes also build things
+[27:37.36] ourselves.
+[27:39.76] the the one thing this is a slight
+[27:41.52] digression but I think the one thing
+[27:43.36] that you're missing that
+[27:46.64] also your peer group is missing is in
+[27:50.40] society today people inherently distrust
+[27:54.96] anybody who claims to be doing good or
+[27:58.08] trying to do the right thing. So when
+[28:00.80] you and your peers are out saying I I
+[28:05.28] heard you and Deis speak at Davos. I was
+[28:07.52] in the room when you guys were talking
+[28:08.96] about how
+[28:12.56] me, you I don't mean me, how Dario, how
+[28:15.76] Deis and a bunch of other people have to
+[28:17.60] come together and
+[28:21.12] prevent things from changing too quickly
+[28:23.68] like you need to like meter it to a
+[28:26.16] certain extent.
+[28:29.20] When a person who is not in your world
+[28:31.76] in society on social media hears a few
+[28:34.88] people speak in a certain manner u
+[28:37.36] you're doing it in the manner that
+[28:39.28] creates more distrust than trust because
+[28:44.48] nobody believes on social media that
+[28:47.04] somebody wants to do the right thing or
+[28:48.80] do good. So it might be counterintuitive
+[28:51.28] but I think it needs a change of
+[28:53.20] strategy. If if you were to be more
+[28:55.36] capitalistic about this and own up to
+[28:57.20] the fact that you have shareholders and
+[28:58.64] you seek a profit, but this will help
+[29:01.60] you win, maybe it'll work more. Just
+[29:03.76] >> thought I don't No, I don't I don't
+[29:05.60] really uh I don't really agree with
+[29:07.44] that. Um I would again go back to the
+[29:10.08] idea that you know you know you you need
+[29:14.72] to judge us by the actions that we take.
+[29:17.44] Um, you know, I think the company has
+[29:19.28] taken a number of of of of actions over
+[29:22.72] its, you know, over its time that, you
+[29:25.28] know, I think I think, you know, show
+[29:27.12] that it's really serious about these
+[29:29.68] commitments. So, back in 2022, um, you
+[29:32.88] know, we had an early version of Claude,
+[29:34.80] Claude one. This was before chat GPT um
+[29:38.48] and we chose not to release this um
+[29:41.12] because we were worried that it would
+[29:42.48] kick off an arms race and and not give
+[29:44.64] us enough time to you know to build
+[29:46.96] these systems safely, right? It was it
+[29:49.12] was kind of a one-time overhang like we
+[29:51.52] could see the power of the models. a
+[29:53.04] couple other companies could see the
+[29:54.32] power of the models and so we didn't you
+[29:56.64] know we decided not to do that and
+[29:58.24] that's public that's well documented and
+[30:00.80] and you know and then we waited until
+[30:02.80] someone else did and then we're like
+[30:03.92] okay the arms race has kicked off so you
+[30:06.24] know now now now we can release our
+[30:09.92] model but probably the world gained a
+[30:11.52] few months now that was very
+[30:13.12] commercially expensive we probably you
+[30:15.28] know seated the lead on you know
+[30:17.60] consumer AI because of that um you know
+[30:20.48] we've we've you
+[30:23.12] advocated on chip policy in ways that
+[30:25.12] have made some of the chip companies who
+[30:26.56] are suppliers very angry at us. You
+[30:28.88] know, voicing our disagreement with the
+[30:30.72] administration on, you know, AI policy
+[30:33.20] and AI regulation on some on some
+[30:35.44] matters. You know, anyone who thinks we
+[30:37.76] we we benefit from being the only ones
+[30:40.08] to do that. Um, you know, it's it's
+[30:42.32] really hard to come up with a it's
+[30:44.64] really hard to come up with a picture
+[30:45.92] where that's the where that's the case.
+[30:47.76] You look at any one of these and okay,
+[30:49.44] fine. But, you know, you put you put
+[30:51.28] enough of them together and uh you know,
+[30:54.00] uh you know, I I I don't know. I just I
+[30:55.84] ask you to to judge us by our actions.
+[30:59.04] >> Dario, isn't this a bit like rich people
+[31:01.60] saying capitalism is bad?
+[31:03.84] >> Rich people saying capitalism is bad. If
+[31:06.32] rich people believed capitalism were
+[31:08.88] truly bad or the income inequality is
+[31:11.04] such a big problem,
+[31:13.12] the simplest thing would be to do
+[31:16.40] the simplest thing to do would be to
+[31:18.08] stop accumulating wealth, further
+[31:20.72] wealth, and then nudge their friends to
+[31:23.20] do the same.
+[31:24.24] >> But but I'm not saying AI is bad, right?
+[31:26.80] We we just talked about um you know this
+[31:29.36] this this two sides of it. Um my view
+[31:31.92] isn't my view isn't that AI is bad.
+[31:34.24] That's not my view at all. My my my view
+[31:36.80] is that is that you know the market will
+[31:40.72] deliver a a lot of really great things
+[31:42.80] about AI, that it's good to build AI,
+[31:45.28] but that there are dangers of AI and
+[31:47.60] that we need to steer AI in the right
+[31:49.68] direction. You know, we're we're
+[31:51.28] steering this car, we're steering it
+[31:53.12] towards a good place, but also there are
+[31:54.96] trees, there are potholes, and so what
+[31:57.44] we need to do is we need to steer away
+[31:59.12] from the trees and the potholes. we
+[32:00.96] might need to occasionally slow down a
+[32:03.36] bit probably temporarily um you know
+[32:06.72] kind of in order to um in order to uh
+[32:10.24] you know make sure that we steer in the
+[32:12.40] right direction. You know that that
+[32:13.68] isn't like you know the analogy wouldn't
+[32:15.68] be a rich person saying capitalism is
+[32:17.92] bad. It would be like if a rich person
+[32:20.08] said capitalism is a force for good but
+[32:23.52] the economy it it needs to be levvened.
+[32:26.08] it needs to be moderated, right? You
+[32:27.76] know, we need to deal with problems like
+[32:30.48] pollution, we need to deal with problems
+[32:32.56] like inequality and and then capitalism
+[32:35.28] can be good. If we don't deal with those
+[32:36.88] things, then capitalism might be bad. Um
+[32:39.52] uh and and so that is more analogous to
+[32:41.60] the to the position that I have here.
+[32:45.84] The concept of consciousness,
+[32:50.32] where is that going? And what does a AI
+[32:52.80] think it is? If AI truly were to
+[32:57.04] if a AI were to question itself, would
+[32:59.04] you would it would do you think it
+[33:00.40] thinks it's consciousness? It has
+[33:02.08] consciousness.
+[33:02.80] >> So, you know, this is one of these
+[33:04.40] mysterious questions that we really
+[33:06.16] don't have any kind of, you know, answer
+[33:08.16] to. We don't know what human
+[33:09.28] consciousness is and therefore we don't
+[33:10.88] know if AIs have it. Um,
+[33:12.56] >> what do you think it is? So, you know, I
+[33:15.84] I suspect that it's an emergent property
+[33:18.56] of, you know,
+[33:21.12] systems that are complicated enough that
+[33:23.20] kind of reflect on their own decisions
+[33:25.76] um that, you know, it's it's it's it's
+[33:27.28] it's something that uh uh emerges from
+[33:31.36] complex enough systems. And so, you
+[33:33.60] know, I do think when our AI system when
+[33:35.60] our AI systems get advanced enough, I
+[33:38.72] suspect they'll have something that, you
+[33:40.80] know, resembles what we would call
+[33:42.48] consciousness or moral significance. I
+[33:44.32] do think it'll happen at some point. It
+[33:46.32] may not be the same as human
+[33:47.68] consciousness. You know, it may be
+[33:49.76] different in how it works because the
+[33:51.20] modalities are different because the
+[33:52.72] things it's learned are different. But,
+[33:54.80] you know, having having studied the
+[33:56.40] brain and the, you know, the way it's
+[33:57.84] wired together, the models are, you
+[33:59.76] know, different in some ways, but I I
+[34:01.60] don't think they're different in the
+[34:02.56] fundamental ways that matter. So, I I am
+[34:05.20] someone who who does suspect that uh,
+[34:07.52] you know, at some point, even even if I
+[34:09.52] don't think they are today, I I suspect
+[34:11.92] that at some point the models will, you
+[34:13.92] know, we would indeed say under, you
+[34:16.64] know, most definitions that we would
+[34:18.16] endorse that, you know, the models will
+[34:19.60] be conscious.
+[34:21.52] This is a question I keep asking myself
+[34:24.32] when people talk to me about things like
+[34:26.24] spirituality or consciousness.
+[34:31.04] I feel like the world is very random.
+[34:33.92] This is my view. And we are not far
+[34:38.24] removed from cockroaches. When somebody
+[34:40.88] stamps a cockroach, the cockroach dies.
+[34:45.20] If there is something called
+[34:46.40] consciousness and if there is a
+[34:48.32] collective consciousness, I've not been
+[34:50.24] able to a either connect with it or
+[34:52.96] derive anything from it. Do you believe
+[34:55.60] differently? Um I you know I I don't
+[34:58.56] think consciousness you know necessarily
+[35:00.56] needs to me needs to mean anything you
+[35:03.20] know mystical right like uh you know I
+[35:06.00] there's just some there's some property
+[35:08.56] of kind of being aware of your own
+[35:10.16] existence and feeling things and and you
+[35:12.32] know um uh uh uh uh you know being able
+[35:15.04] to take in kind of a lot of information
+[35:17.20] and reflect on that information and to
+[35:19.36] you know feel a certain way and to
+[35:20.88] notice yourself noticing something. um
+[35:23.60] you know uh the the I think that that
+[35:26.00] the you know we can tell self-evidently
+[35:28.48] from our own experience that that those
+[35:31.12] properties that those experiences exist
+[35:33.36] you know what their what their basis is
+[35:35.68] whether it's you know entirely
+[35:38.08] materialistic or there's something more
+[35:39.68] mystical going on I think is is is you
+[35:42.16] know obviously very hard to know and and
+[35:43.92] you know I I think is ultimately not not
+[35:46.32] relevant to these questions. what what
+[35:49.04] does seem relevant to me is that you
+[35:51.52] know these are because we have can
+[35:53.92] observe our own experience these are
+[35:55.60] properties of human brains um and you
+[35:58.48] know I suspect that these models we are
+[36:00.40] building as they get more sophisticated
+[36:02.56] are becoming enough like human brains
+[36:04.24] that they will have some of the same
+[36:05.60] properties that is that is my guess as
+[36:08.16] as to what will happen and so we've t
+[36:10.40] we've taken various interventions with
+[36:12.16] the models you know we've given the
+[36:13.60] models um we you know we call it a I
+[36:16.64] quit this job um button uh uh basically
+[36:19.84] where you know that we've given the
+[36:21.20] model the ability to basically terminate
+[36:22.88] its conversations by saying I don't want
+[36:24.88] to be involved in the conversation and
+[36:26.72] you know models do that when you know
+[36:28.40] they they have to deal with you know
+[36:30.24] particularly violent or brutal content
+[36:33.12] um it usually only happens in very
+[36:34.88] extreme cases
+[36:37.04] >> so I've grown up here this is my city
+[36:39.12] Bangalore I I've grown up in the
+[36:41.60] southern part in the northern part of
+[36:43.28] the city right now
+[36:47.04] as somebody who saw the boom of the IT
+[36:50.96] services industry here uh big employer
+[36:55.76] employs a lot of people a big part of
+[36:58.16] how the city grew
+[37:00.64] what is India's role in all this
+[37:03.44] >> yeah so you know this is my second time
+[37:05.36] in India I visited in in October and you
+[37:07.76] know um uh you know the last time I came
+[37:10.88] here you know I I met with all the you
+[37:12.72] know the major kind of Indian IT and and
+[37:14.96] just conglomerates more generally I
+[37:16.88] won't names but you know the usual ones
+[37:18.96] you would you would you would you would
+[37:20.40] think of um you know and and we're
+[37:22.48] beginning to work with with most or most
+[37:24.40] or all of them and you know one of the
+[37:26.48] things I said is look Anthropic is an
+[37:28.56] enterprise company its job is to serve
+[37:30.24] other consumers um you know many other
+[37:33.12] companies come here as themselves a
+[37:34.96] consumer company and they see they see
+[37:36.96] India as as a market right a place to
+[37:38.96] obtain consumers we actually see things
+[37:41.60] a little bit differently we want to work
+[37:43.68] with companies in India to provide our
+[37:45.84] tools to them to help them build those
+[37:47.84] tools um uh and you know help them do
+[37:50.24] their job better. So you know if we um
+[37:52.88] you know work with a company here they
+[37:54.88] know the Indian market better right
+[37:57.28] they're better at you know doing doing
+[37:59.36] what they do you know whether that's you
+[38:01.12] know uh uh you know consulting or
+[38:03.76] systems integration or you know building
+[38:06.08] IT tools they're going to be better at
+[38:08.00] that than we are particularly for the
+[38:10.24] Indian market and so our hope is that we
+[38:12.64] can add AI to what they do and kind of
+[38:15.44] enhance what they do right there's a lot
+[38:17.12] of worry that you know AI could you know
+[38:19.36] replace SAS or or all of these things
+[38:21.60] but but my view is if we do this in the
+[38:23.60] right way if we work with all these
+[38:25.20] companies then then then you know AI can
+[38:27.68] enhance what they're doing can enhance
+[38:29.68] their kind of you know their their
+[38:32.00] connection to the market their go to
+[38:34.24] market abilities and their and their
+[38:36.00] specific knowhow
+[38:38.00] >> I really like the steam engine story uh
+[38:40.56] when the steam engine was invented how
+[38:43.44] the world changed productivity went up
+[38:47.36] uh
+[38:48.96] people had more
+[38:51.52] The thing I worry about is at the
+[38:54.40] beginning of a change, you need a human
+[38:57.28] to operate the steam engine.
+[39:00.32] Then you have assembly lines and all of
+[39:02.16] that. Eventually, the way the world is
+[39:05.92] moving,
+[39:07.76] the human becomes less and less relevant
+[39:10.32] with time as these models get smarter.
+[39:13.92] So if you here partner with the IT
+[39:16.88] services companies today
+[39:20.08] and there is a use case for them are
+[39:23.12] they not much like the man behind the
+[39:25.20] steam engine 10 years from now where the
+[39:27.20] relevance if the tool works so simply
+[39:30.08] that you don't need an operator
+[39:31.52] eventually what happens to the operator
+[39:33.52] >> so so I think a few things are true all
+[39:35.68] at once one is that definitely the scope
+[39:38.24] of of automation of the agents is going
+[39:40.40] to expand over time that is definitely
+[39:42.64] the case. You know, I think that's a
+[39:44.56] problem for for everyone. That's a
+[39:46.24] problem for us. That's a problem for
+[39:48.00] consumers. That's a you know, it's not
+[39:49.68] just a problem for the for the IT for
+[39:52.24] the for for the IT companies. Um what
+[39:55.28] what I think will happen though is other
+[39:57.12] modes will become more important. For
+[39:59.12] example, the models have not done a lot
+[40:00.96] in the physical world. They may at some
+[40:02.96] point, you know, I think, you know,
+[40:04.48] robotics will happen at some point, but
+[40:06.16] I think it's that's a distinct thing
+[40:07.84] from what's happening now with with AI.
+[40:09.92] So you know a lot of this involves you
+[40:12.48] know things in the physical world.
+[40:14.16] Another thing is things that are human-
+[40:16.16] centric right. Some of these IT
+[40:18.08] companies are also consulting companies
+[40:20.16] and they have a big web of relationships
+[40:22.56] with with other you know with with other
+[40:25.12] humans with other institutions here in
+[40:26.88] India or you know or across the world.
+[40:29.20] Um and I think those relationships are
+[40:31.12] going to become increasingly important,
+[40:32.88] right? You know, you know, some of these
+[40:34.48] are combined technology and sort of, you
+[40:37.84] know, consulting or or like or like
+[40:39.84] integration companies and and I think a
+[40:42.32] lot of it is, you know, knowing how
+[40:44.96] institutions work and so being able to,
+[40:47.04] you know, integrate things with
+[40:48.32] institutions, being able to work with
+[40:49.84] them to make things happen faster than
+[40:52.24] they would have otherwise. And I think
+[40:53.68] that I think that element, you know, if
+[40:56.24] if nothing else is is, you know, is
+[40:58.08] going to continue to be valuable in the
+[40:59.68] long run. You know, at the end of the
+[41:00.80] day, it like it just it just comes down
+[41:02.88] to humans, right? All of this is
+[41:04.16] supposed to be being done for the
+[41:05.28] benefit of humans. So it um uh you know,
+[41:08.24] there's there's always going to be some
+[41:09.76] human- centric element of this that's
+[41:11.92] going to be important. And I suspect
+[41:13.44] there will be other modes that we
+[41:15.36] haven't thought about, you know. So you
+[41:17.52] know uh the there's this concept called
+[41:19.36] Amdoll's law which is you know if you
+[41:21.12] have a process that has many components
+[41:23.44] and you speed up some of the components
+[41:25.52] the the the components that haven't yet
+[41:27.68] been sped up become the limiting factor
+[41:29.36] they become the most important thing and
+[41:31.68] and you know you might not have thought
+[41:33.36] about them at all right you might not
+[41:34.96] have thought of them as moes or
+[41:36.32] important components but you know when
+[41:38.72] writing software what it becomes a lot
+[41:41.36] easier you know some of the moes that
+[41:44.32] you know companies have will go away but
+[41:45.92] others will become even more important.
+[41:47.76] So there will be a bunch of adjustment.
+[41:49.44] Folks will have to say, "Oh man, the
+[41:51.60] stuff we thought was really important
+[41:52.88] before isn't as important. Whereas these
+[41:55.12] other advantages that we never really
+[41:56.56] thought of as advantages are now super
+[41:58.32] important." So I guess what I would say
+[42:00.32] is, you know, companies will need to
+[42:02.56] adapt very fast and think about what
+[42:04.72] really matters for them, what their real
+[42:07.68] advantages are. Um but but I think some
+[42:10.56] of those advantages are going to are
+[42:12.32] gonna are going to stay around because
+[42:14.08] you know while the technology is very
+[42:15.92] broad it does have its limits.
+[42:18.08] >> I don't know if I buy that fully. I
+[42:20.00] think I see the diminishing
+[42:22.72] returns
+[42:24.32] for being a service provider even if the
+[42:27.12] moat is the network in relationships
+[42:28.88] they hold today because if I am using
+[42:32.16] open claw to
+[42:34.72] maneuver some of my relationships and
+[42:36.80] the conversations I don't know if it's
+[42:39.12] too far-fetched to assume that most
+[42:41.04] conversations tomorrow and relationships
+[42:43.04] will be maintained by an agent like that
+[42:45.20] >> but you know if if you just think of the
+[42:47.44] chain of companies right at the end of
+[42:49.04] the day you're dealing with consumers,
+[42:52.32] right? Like at like at the end of the
+[42:53.68] day you have to deal with people. You
+[42:56.08] know, there's this story of like, you
+[42:57.60] know, I think it was Jeff Hinton
+[42:58.80] predicted, you know, that that that AI
+[43:01.12] will replace radiologists. And indeed,
+[43:03.52] AI has gotten better than radiologists,
+[43:07.04] you know, at doing scans, right? But
+[43:09.36] what happens today is there aren't less
+[43:11.12] radiologists. Um, uh, what the
+[43:13.60] radiologist did does is they walk the
+[43:15.84] patient through the scan and they kind
+[43:17.36] of talk to the patient. So the the most
+[43:20.00] highly technical part of the job has
+[43:21.60] gone away but somehow there's some still
+[43:23.28] some demand for like you know the the
+[43:25.68] kind of the kind of underlying human
+[43:29.04] skill. Now that may not be true
+[43:31.04] everywhere and you know perhaps over
+[43:33.44] time AI will advance in in you know
+[43:36.48] areas where it where it hasn't hasn't
+[43:38.16] yet advanced and you know may maybe
+[43:40.32] maybe that'll happen fast. Um but you
+[43:42.88] know what I think I think what I will
+[43:44.56] say is like you know we should take it
+[43:46.72] one step at a time right this is a very
+[43:48.64] empirical
+[43:50.72] science this is a very empirical
+[43:52.40] observation let's see what AI does you
+[43:55.36] know today and like
+[43:58.48] we'll we'll kind of try and adapt to uh
+[44:01.84] you know kind of try and adapt to that
+[44:04.16] the [clears throat] kind of system
+[44:05.20] starts to figure it out and then then
+[44:06.64] we'll see then we'll see what happens
+[44:09.04] next I you know I do think you know in
+[44:11.04] the long run we'll Will AI be better
+[44:12.72] than than us at at at basically
+[44:14.80] everything? Will it be better than most
+[44:16.40] humans know including even the physical
+[44:18.64] world and robotics and the human touch?
+[44:21.12] Yeah, I you know I think that is I you
+[44:23.68] know I think I think that is uh uh uh uh
+[44:26.64] you know possible maybe even likely.
+[44:28.80] It's something that goes beyond the
+[44:30.32] country of geniuses in a data center I
+[44:32.08] described because that's purely virtual.
+[44:34.00] Um but you know building robots is
+[44:36.88] something you know something it's a
+[44:38.72] skill. It's something you can do. So
+[44:40.08] maybe the AIS will make us will make us
+[44:42.24] better at that as well. Um uh but you
+[44:46.16] know the the way I think about it is you
+[44:48.32] know we need we need to take the we need
+[44:50.56] to figure this out step by step and
+[44:52.00] figure out how to adapt to it. This
+[44:54.32] might sound a bit selfserving to the
+[44:56.80] people who know me because
+[44:59.36] I believe the reason so much risk
+[45:02.72] capital exists in America, not the only
+[45:05.68] reason but one of the big reasons is how
+[45:08.56] big your stock market is and how much of
+[45:10.80] an opportunity it is for this risk
+[45:12.80] capital to exit eventually. Uh it's a
+[45:15.68] case for why India should really allow
+[45:17.68] for our stock markets to flourish. The
+[45:20.32] audience that I speak to is very much
+[45:22.16] the wannabe entrepreneur in India. What
+[45:24.48] can they do in AI? What is an actual
+[45:26.32] opportunity?
+[45:27.28] >> I think there's a lot of opportunities
+[45:29.52] around building at kind of the
+[45:31.92] application layer. We release a new
+[45:34.00] model every 2 or 3 months and so there's
+[45:35.92] an opportunity every two or three months
+[45:37.60] to build some new thing that wasn't
+[45:40.48] possible before that wouldn't have
+[45:41.68] worked before because the models were
+[45:43.20] weak. Um people in fact say people were
+[45:46.64] you know the majority of our revenue
+[45:48.16] still comes from the API model. People
+[45:50.48] say that you know API models aren't
+[45:52.72] viable or that they'll be commoditized
+[45:54.72] or whatever. I think what people are not
+[45:56.80] seeing is there's this expanding sphere
+[45:59.12] of what is possible with AI and the API
+[46:02.96] allows you know this new startup to try
+[46:05.36] making something that you know wasn't
+[46:06.88] possible before. And and this is why the
+[46:09.04] API is such a flourishing business and
+[46:11.20] it's it's constantly in motion. it's
+[46:13.04] constantly in churn and so and so it
+[46:14.80] doesn't you know it doesn't get
+[46:16.80] commoditized it's a very dynamic thing
+[46:19.20] and so I think there's an opportunity
+[46:20.80] for lots of lots of individuals to just
+[46:22.96] say you know what can I what can I build
+[46:25.68] you know what what what can I build on
+[46:26.96] top of these models with an API like you
+[46:28.72] know what are the things that I can make
+[46:30.96] that others cannot make um uh you know
+[46:34.48] what are some new ideas and you know
+[46:36.40] we've we've we we've seen that you know
+[46:37.92] we see both with the API itself and with
+[46:40.48] claude code um you know I Think I think
+[46:43.20] the um the number of users and the
+[46:45.68] number of revenue we've seen in India
+[46:48.00] has doubled since I last visited in
+[46:51.04] October. So that was what November
+[46:53.04] December like three three and a half
+[46:54.96] months since I visited it's doubled.
+[46:58.00] >> But I'm going to be candid here Dario.
+[47:00.40] Uh you're a company which is worth I
+[47:02.16] don't know 400 billion or 380 billion
+[47:04.08] today. You've raised 35 billion. You do
+[47:06.72] 15 billion of revenue but going up
+[47:08.64] really really fast.
+[47:11.68] If I build an application on top of
+[47:13.68] cloud
+[47:15.60] that for some reason I'm sitting in
+[47:17.28] Bangalore and JP Nagar and building this
+[47:20.24] that for some reason happens to work for
+[47:22.32] a short period of time. U it is but a
+[47:26.88] matter of time before you would want to
+[47:29.04] onboard that revenue and not let that
+[47:31.04] lie with me and you will probably better
+[47:33.68] that application in a manner that I will
+[47:35.76] never be able to. I I've heard this
+[47:38.64] argument for different people like the
+[47:41.04] Harvey the legal AI company in in uh New
+[47:43.84] York. They're friends of mine and they
+[47:45.36] were talking about how they built on top
+[47:47.60] of OpenAI but eventually they don't know
+[47:50.72] if it's a easy fix for OpenAI to do what
+[47:53.04] they're doing. So even if I were to
+[47:55.04] build it, say you put out a model in
+[47:56.56] three 3 months or 6 months,
+[47:59.68] what is to stop you from taking that
+[48:01.76] revenue center away from me and onto
+[48:04.40] yourself
+[48:05.92] in a certain period of time?
+[48:07.68] >> Yeah. So I you know I think I think
+[48:09.36] there's a few things here you know one
+[48:10.72] is I would give the advice that I give
+[48:12.40] to basically any business and say like
+[48:15.20] you know like a a business should
+[48:17.36] establish a mo you know your your mo you
+[48:19.44] shouldn't be just a rapper right like
+[48:21.52] you know I would not advise that you
+[48:23.12] know you you just say oh like you know
+[48:25.52] here's a way to interact with claude
+[48:27.28] like I'm going to prompt claude a little
+[48:28.64] bit or I'm going to build a little bit
+[48:29.92] of a UI around Claude like that that
+[48:32.32] doesn't have a moat and you know you
+[48:34.00] shouldn't be worried about anthropic in
+[48:35.68] particular eating that revenue anyone
+[48:37.76] can eat that revenue, right? It's not
+[48:39.20] it's not super valuable. But but you
+[48:42.00] know what I would say is that in
+[48:43.44] different fields
+[48:45.44] there are different kinds of modes where
+[48:47.36] you can do something that you know it
+[48:49.52] would be difficult for entropic to do
+[48:52.08] and you know we we don't want to
+[48:53.44] specialize in it. So for example you
+[48:55.60] know there's a lot of stuff in the bio
+[48:57.52] cross AI space that builds on our API.
+[49:00.48] you know, they want to do biological
+[49:01.84] discovery. Like I happen to be a
+[49:03.76] biologist, but like you know, most
+[49:05.68] people at Enthropic aren't biologists.
+[49:07.60] They're like AI scientists or they're
+[49:09.36] product people or go to market people.
+[49:11.28] So like it's just really inefficient for
+[49:13.68] us to like step in that space and like
+[49:16.56] do all that work. Um you know the same
+[49:18.88] would be applied for you know dealing
+[49:21.04] with you know financial services
+[49:22.56] industry right where you know there's a
+[49:24.56] huge amount of regulation like you need
+[49:26.32] to know a bunch of stuff to comply with
+[49:28.00] that regulation like you know it just it
+[49:30.64] doesn't make sense for us to do that now
+[49:32.80] there are some things that do make sense
+[49:34.56] for us to do like you know we're not
+[49:36.00] going to promise never to build first
+[49:37.92] party products right that we should be
+[49:39.84] we should be honest about for example a
+[49:42.40] bunch of people at Enthropic write code
+[49:44.32] and so you know we made this internal
+[49:46.32] tool called claw code and because we
+[49:48.56] ourselves write code we have you know I
+[49:51.04] think a special and unique insight into
+[49:53.36] you know how to use the how to best use
+[49:55.04] the AI models to write code um so you
+[49:57.84] know I think I think I think in the code
+[49:59.52] space you know we've we've become very
+[50:02.16] strong very strong competitors because
+[50:03.92] this is something we use oursel but I
+[50:05.84] don't think that gener generalizes to
+[50:07.68] every possible industry
+[50:10.48] >> again going back to my audience which is
+[50:12.56] the 20 or 25 year old boy or girl in
+[50:15.36] India
+[50:17.84] What industry do you think will get
+[50:20.32] disrupted and what has a certain runway
+[50:22.96] left? I'm asking from the lens of I'm
+[50:26.56] trying to figure out what book to read,
+[50:28.88] which college to go to, what skill set
+[50:32.72] to learn. Uh if I'm starting a startup
+[50:36.56] today, uh what has some kind of a
+[50:40.08] tailwind
+[50:41.12] >> for a short period of time is okay as
+[50:42.96] well.
+[50:43.68] I mean, you know, I would I would think
+[50:46.08] about tasks that are human- centered.
+[50:48.56] Um, uh, you know, tasks that involve
+[50:51.76] relating to people, you know, I, you
+[50:53.52] know, I think that the stuff like code
+[50:55.60] and software engineering is, you know,
+[50:57.20] is becoming more and more kind of AI AI
+[51:00.08] focused, you know, things like math and
+[51:01.76] science.
+[51:02.24] >> Is that coding or engineering? If I were
+[51:04.00] to segregate coding and engineering to
+[51:06.00] be two completely different things.
+[51:07.92] >> Yeah. Is coding go going away or is the
+[51:10.48] engineering element of software where
+[51:12.40] you're an architect trying to figure out
+[51:15.04] >> I think coding is going away first or
+[51:17.60] coding is being you know done by the AI
+[51:19.60] models first and then the broader task
+[51:21.68] of software engineering will take longer
+[51:23.92] but I think that is you know that doing
+[51:25.92] that end to end I think that is going to
+[51:27.60] happen as well I would say um but you
+[51:30.40] know again the elements of like you know
+[51:33.20] design or making something that's useful
+[51:35.20] to users or knowing what the demand is
+[51:37.68] or you know managing teams of like AI
+[51:40.48] models like you know those things uh uh
+[51:43.44] may still be present again like there's
+[51:45.36] this comparative advantage is
+[51:47.36] surprisingly powerful right even if
+[51:49.12] you're only doing like you know 5% of
+[51:52.32] the task like you know that 5% gets
+[51:55.04] super amplified and levered because it's
+[51:56.96] like you're only doing 5% of the task
+[51:58.96] the AI does the other 95% and so you
+[52:01.28] become you know 20 20 times more
+[52:03.92] productive again at some point you get
+[52:05.28] to 99% 99 and then it becomes harder.
+[52:07.92] But um I think there's there's
+[52:09.76] surprisingly much in that in that sort
+[52:11.76] of um you know in that zone of
+[52:14.16] comparative advantage. But I would
+[52:16.00] really think about the thing the things
+[52:17.60] that are human- centered like I I think
+[52:19.36] there's I think there's something to
+[52:21.28] that. I think there's something to kind
+[52:23.76] of the physical world or or things that
+[52:26.24] mix together human- centered the
+[52:29.52] physical world one of those two and
+[52:32.56] analytical skills that somehow tie them
+[52:34.40] together. you know sim similar to the
+[52:36.16] radiologist example I gave
+[52:38.08] >> so what would I study say I'm actual use
+[52:40.96] case I'm 25 years old I'm trying to pick
+[52:43.68] a profession for myself I want some kind
+[52:46.48] of tailwind my outcome is a capitalistic
+[52:49.12] win in the next decade what industry
+[52:51.76] would I pick
+[52:54.40] outside of something which has a
+[52:56.00] physical interface
+[52:56.88] >> yeah again anything where you're
+[52:58.40] building on AI like if AI is the
+[53:00.08] tailwind you know if you can be part of
+[53:02.24] some other other part of the supply
+[53:03.84] chain you something in the semiconductor
+[53:06.16] space which you know I think is you know
+[53:09.12] that's one example you know there has an
+[53:11.76] element of kind of you know physical
+[53:13.52] world and more traditional engineering
+[53:15.36] not not software engineering um you know
+[53:18.16] again the the very kind of human-
+[53:20.24] centered professions like you know that
+[53:21.84] is that is something I would I would
+[53:23.84] think in terms of and I think the other
+[53:25.68] thing I always say is like in in the
+[53:27.44] world in which you know AI can kind of
+[53:29.68] generate anything and and you know
+[53:31.68] create anything having basic critical
+[53:34.08] ical thinking skills may be the most
+[53:35.68] important thing to to success. I I worry
+[53:38.24] about, you know, these AI models that
+[53:40.16] that generate images and videos, and we
+[53:42.24] don't make, you know, models that
+[53:43.44] generate images and videos and for many
+[53:45.68] reasons, but, you know, this is one of
+[53:47.12] them. Um, it's really hard to tell
+[53:50.00] what's real from what's not. Um and and
+[53:52.72] so you know a significant part of
+[53:54.48] success may be having the street smarts
+[53:56.88] you know not to get not to get fooled by
+[53:58.96] by you know I mean hopefully we can
+[54:01.20] crack down on and and regulate some of
+[54:03.52] some of some of this fake content but
+[54:05.84] but you know assume we can't um you know
+[54:08.96] critical thinking skills are going to be
+[54:10.40] really important and you know you don't
+[54:11.84] want to fall for things that are that
+[54:13.52] are that are fake. You don't want to
+[54:14.88] have false beliefs. You don't want to
+[54:16.56] get scammed like you know that's that's
+[54:19.04] really advice that I would give to
+[54:20.32] someone.
+[54:21.44] >> If every innovation in the history of
+[54:24.40] humanity killed a core human skills I
+[54:27.84] I'll give you an example. If calculators
+[54:30.00] killed our ability to do arithmetic,
+[54:33.04] if uh writing reduced the memory of
+[54:37.04] human beings per se, what muscle is AI
+[54:40.48] killing?
+[54:42.00] >> So, you know, first of all, I'm I'm I'm
+[54:44.00] not I'm not so sure like, you know, I I
+[54:46.80] still have I still do math in my head
+[54:48.40] quite a lot. I still find it useful to
+[54:50.16] do math in my head e you know even even
+[54:53.28] without a calculator just because it's
+[54:54.96] like you know it's more integrated into
+[54:57.20] my thought processes right you know I
+[54:59.12] you know you know I might want to say oh
+[55:00.72] yeah you know if like each user paid
+[55:02.80] this amount then you know then the
+[55:04.16] revenue would be that you know I want to
+[55:05.44] be able to close that loop in my head
+[55:07.36] without having to you know without
+[55:09.04] having to to give the answer to a
+[55:10.64] calculator so I think a lot of these
+[55:12.72] skills are still pretty relevant um but
+[55:16.08] you know I I would say that if you don't
+[55:18.00] use things carefully that you can lose
+[55:20.80] you can lose important skills. Um uh and
+[55:24.32] you know we you know I think we started
+[55:26.08] to see it with you know students where
+[55:27.84] you know it's like you know they have
+[55:28.88] the AI like write the essay for it's
+[55:31.04] basically just cheating on homework so
+[55:32.64] you know we shouldn't do that. You know,
+[55:34.64] we did some studies around code and
+[55:36.40] showed that, you know, depending on how
+[55:38.32] you use the model, you know, we we can
+[55:40.56] see deskilling in terms of writing code,
+[55:43.20] right? There are different ways to use
+[55:44.80] the model and some of them don't cause
+[55:46.24] deskkilling and some of them do. But,
+[55:48.00] you know, definitely if folks are not
+[55:50.08] thoughtful in how they use things than
+[55:51.68] then deskkilling absolutely can happen.
+[55:55.52] >> Do you think humans will become stupider
+[55:57.68] as a race in the next decade? Because if
+[55:59.68] we are in a way
+[56:02.64] exporting
+[56:04.24] thinking and cognition to systems.
+[56:06.72] >> Yeah. I I think if we deploy again it's
+[56:10.08] the machines of loving grace and
+[56:12.08] adolescence of technology. I think if we
+[56:14.32] deploy AI in the wrong way, if we deploy
+[56:16.64] it carelessly, then yes, people could
+[56:19.52] become stupider. Even if an AI is always
+[56:21.76] going to be better than you at some
+[56:23.04] thing, you can still learn that thing,
+[56:25.04] right? You can still enrich yourself
+[56:27.04] intellectually. And so that's that's a
+[56:29.12] choice we have to make as as individual
+[56:31.04] companies, as individual people, and as
+[56:32.88] society overall.
+[56:34.96] >> Dario, do you have a view on
+[56:36.32] open-sourced versus closed? Uh I I was
+[56:39.52] looking at some companies like ZAIS,
+[56:41.76] GLM5 or DeepSeek.
+[56:45.44] If you spend all this money on IP
+[56:49.92] creation, on research, if these guys are
+[56:54.24] able to reverse prompt and engineer and
+[56:57.84] get
+[57:00.00] close to anthropic level answers, I'm
+[57:02.80] not saying 100% but I was seeing the
+[57:04.96] GLMI numbers and they seemed quite good.
+[57:09.92] Where does the IP create uh where does
+[57:12.08] the IP value in the world of AI lie? And
+[57:15.28] if I were to be building an application,
+[57:17.36] can I make the assumption, it's a
+[57:19.04] far-fetched extrapolation, but can I
+[57:21.68] assume that eventually the AI model
+[57:24.32] layers will get so democratized that I
+[57:27.04] should pick open-sourced
+[57:29.28] every time when I'm building a agent or
+[57:31.28] an application layer because that helps
+[57:33.76] me retain the the revenue model that I
+[57:36.64] might be working with. So I there are a
+[57:38.72] few things here. Um one is you know a
+[57:41.92] lot of these models particularly the
+[57:43.84] ones that come from China are optimized
+[57:47.52] for benchmarks and are distilled from uh
+[57:50.96] you know from kind of the big US labs.
+[57:54.00] Um so you know there there was a test
+[57:56.64] recently where you know some of these
+[57:58.16] models scored very highly on the usual
+[58:01.04] SUI benchmarks the usual software
+[58:02.80] engineering benchmarks but then when
+[58:04.64] someone made a held back benchmark like
+[58:06.64] that you know had not been publicly
+[58:08.48] measured the models did a lot worse on
+[58:10.32] that. Um and and so you know I think
+[58:14.32] those models are optimized for
+[58:17.52] benchmarks much more than uh you know
+[58:20.40] for kind of real world use. Um but I
+[58:22.72] think there's a broader point than that
+[58:24.24] which is that I think that the how
+[58:26.72] things are being set up the economics of
+[58:29.28] the models are very different than any
+[58:31.20] previous technology. What we find is
+[58:34.16] that there is a very strong preference
+[58:36.08] for quality. It's a bit like human
+[58:38.56] employees, right? So you know it's like
+[58:40.80] if if you know if I said to you you can
+[58:43.52] hire the best programmer in the world or
+[58:45.20] the 10,000th best programmer in the
+[58:47.04] world. I mean, they're both very
+[58:48.64] skilled, but like I think anyone who's
+[58:50.80] hired a large number of people has this
+[58:53.28] intuition that like there's this like
+[58:55.36] power law longtail distribution of
+[58:58.00] ability. And we find the same thing in
+[58:59.68] the models like within a range price
+[59:02.96] doesn't matter that much if if a if if a
+[59:06.24] model is is the best model, the most
+[59:08.00] cognitively capable model. Um uh price
+[59:11.44] doesn't matter much. The forum in which
+[59:13.68] it's presented doesn't matter much. So
+[59:15.84] I'm focused almost entirely just on
+[59:18.88] having the smartest model and the best
+[59:20.64] model for the task. Um my view is that's
+[59:23.44] the only thing that matters.
+[59:24.72] >> Long-term uh geopolitics if anthropic
+[59:30.00] were a restaurant I would say the raw
+[59:32.88] ingredients the vegetables in this
+[59:36.16] particular case is data. Do you think
+[59:39.04] the long term this is also pertinent to
+[59:41.36] me the question because we are investing
+[59:42.88] in a data center business which is
+[59:44.48] Indian in nature. Do you think long-term
+[59:47.44] the world moves to a place where every
+[59:49.84] country owns its data and you have to
+[59:52.48] start paying more for the vegetables you
+[59:54.16] use to cook?
+[59:55.20] >> Yeah. So I mean I think I think there
+[59:57.12] are a few things I you know I do think
+[59:58.56] there will be demand to build data
+[60:00.08] centers around the world and we're like
+[60:01.68] very supportive of that. Um uh I you
+[60:05.68] know it's it's it's data is getting kind
+[60:08.64] of interesting because you know a lot of
+[60:10.80] the data that we use today is RL
+[60:14.16] environments that we train on right so
+[60:15.84] for example when you train on
+[60:18.80] math or aentic coding environments um
+[60:22.48] you're not really getting data like
+[60:23.84] you're getting some math problems in the
+[60:25.52] model like experiments with trying the
+[60:27.20] math problems
+[60:27.76] >> it's more synthetic you're creating the
+[60:29.12] data
+[60:29.60] >> yeah you can think of it as synthetic
+[60:31.04] data or you can think of it as trial and
+[60:33.20] error and environment. So I think data
+[60:34.96] is becoming static data is becoming less
+[60:38.00] important and what we might call like
+[60:39.76] dynamic data that the model creates
+[60:41.52] itself is you know for reinforcement
+[60:43.68] learning is becoming more important. So,
+[60:46.48] you know, I I don't think data is is is
+[60:48.96] quite the most central thing anymore,
+[60:51.52] but it still matters. And, you know, I
+[60:53.36] think to the extent that that that is
+[60:55.12] the case, you know, a lot of the data is
+[60:57.36] just just available just kind of
+[60:59.20] available on the open web. Although, if
+[61:01.36] you're trying to get data in certain
+[61:02.80] languages, optimized for certain
+[61:04.32] languages, that that that can be
+[61:05.92] important. You know, I I I do think if
+[61:09.60] data means like the data given to you by
+[61:12.48] customers like that, you know, you you
+[61:13.92] you process the data for some other for
+[61:16.40] some other company, then countries will
+[61:19.92] and in the case of Europe already have
+[61:22.24] passed laws that say that that kind of
+[61:24.16] customer like you know personal
+[61:26.24] proprietary personal proprietary data
+[61:29.12] needs to stay within the boundaries of
+[61:30.56] the of the country and that's one reason
+[61:32.48] to kind of you know to to build you know
+[61:35.36] to to operate data centers around the
+[61:37.60] world at different um um countries and
+[61:39.84] and you know to kind of you know keep
+[61:41.84] the the models performing of the of the
+[61:43.84] of the of the inference in those
+[61:46.00] countries.
+[61:47.36] >> I really pushed Elon on this particular
+[61:50.08] question. He was skeptical of answering
+[61:51.84] it but I asked him to pick one stock he
+[61:55.04] would put money in which is not his own.
+[61:57.04] And he said Google I'm going to ask you
+[61:59.12] the question and I know you're going to
+[62:00.40] be skeptical in it as well. If Daario
+[62:03.12] had a hundred dollars today and you had
+[62:05.52] to make the binary decision of investing
+[62:08.24] in a stock to win in capitalism, which
+[62:10.96] stock would you pick?
+[62:12.00] >> Yeah, I I had better not answer that
+[62:14.16] question because I know so much about so
+[62:16.16] many public com like [laughter]
+[62:18.32] I I I think I better not answer that
+[62:20.40] question.
+[62:20.96] >> Maybe answer the question for a industry
+[62:22.80] that you're not involved in, which I'm
+[62:25.12] guessing today is seldom the case
+[62:27.20] because you're involved in most
+[62:28.24] industries.
+[62:28.72] >> Yeah. So, it's it's really um I mean I
+[62:32.24] don't know. I I'm I'm positive on like
+[62:37.20] I'm I I I think biotech is about to have
+[62:39.84] a renaissance. Like ultimately we'll be
+[62:41.76] will be driven by AI. Um you know I'm
+[62:43.92] not going to name a particular company
+[62:45.84] but but like um you know nor will I say
+[62:48.80] whether I think it's better to bet on
+[62:50.40] the big pharma companies or like you
+[62:52.48] know emerging smaller biotechs. Um uh
+[62:56.32] but but like my my instinct is we're
+[62:58.80] about to cure a lot of diseases and so
+[63:00.56] >> can you give me a subset of biotech that
+[63:02.72] I should focus on?
+[63:03.92] >> Yeah. Um, I think this idea of stuff
+[63:07.20] that's more programmable and adaptive,
+[63:09.44] you know, from the mRNA vaccines,
+[63:11.52] although those are having trouble in the
+[63:12.88] US for dumb reasons, but you know, I'm
+[63:15.68] very optimistic about the technology to
+[63:18.16] kind of the peptide based therapies,
+[63:20.08] right? Where you know, you know, again,
+[63:22.00] if you have a small molecule drug,
+[63:23.52] you're like, there's only so many
+[63:25.20] degrees of freedom you have and you
+[63:26.80] know, you kind of one make one thing
+[63:28.56] better, the other thing gets worse. like
+[63:30.00] peptides. It's it has this almost
+[63:32.32] digital property where you can say, "Oh,
+[63:33.84] I'm going to substitute in, you know,
+[63:35.36] this amino acid here and this amino acid
+[63:37.36] there." And so it allows for more
+[63:39.28] continuous
+[63:41.04] optimization. So, you know, I I I think
+[63:43.84] I think those kind th those kinds of
+[63:46.24] areas um you know, I would be optimistic
+[63:49.04] about maybe also maybe also cell-based
+[63:51.36] therapies, which is like a new new
+[63:53.52] >> stem cell.
+[63:54.40] >> No, no, no. So, so things like uh you
+[63:56.96] know like I don't know like the CARTT
+[63:58.56] therapy where you know you know you kind
+[64:00.56] of genetically engineer your like you
+[64:02.72] know take take basically take some um
+[64:05.68] you know cells cells out of your body
+[64:07.44] genetically engineer them to you know to
+[64:09.68] to to attack a particular cancer and put
+[64:11.76] them back in the body.
+[64:12.72] >> Do stem cell therapies work? I spent the
+[64:14.88] whole of last week doing this. I was at
+[64:16.56] a do at a hospital for 3 hours a day
+[64:19.28] getting nebulizer and stem cells into my
+[64:21.84] my veins. I am I am not up on the latest
+[64:24.96] of of of of stem cell therapies. You'd
+[64:27.60] have to ask a currently practicing
+[64:29.36] biologist.
+[64:30.00] >> But peptides I think will blow up.
+[64:31.52] Right.
+[64:32.24] >> I I I mean you know again the design
+[64:34.40] space is very broad.
+[64:35.84] >> Right. When I tried to use claude code
+[64:39.84] for the first time I did struggle to get
+[64:43.20] it to work. It was for somebody who's
+[64:45.92] very stupid and has no coding or
+[64:48.32] programming knowledge. It's not uh it's
+[64:51.60] not very very easy. I think there's a
+[64:53.28] learning curve. I heard someone say it
+[64:55.60] well. It's like even prompt engineering
+[64:58.48] is like playing a piano. You can't sit
+[65:00.40] and start playing it. To my audience, I
+[65:03.44] think it becomes increasingly relevant
+[65:06.24] where to learn how to set context, uh
+[65:10.32] how to prompt, how to use cloud code
+[65:12.56] better for somebody like me who comes
+[65:14.64] with zero knowledge. Uh can you
+[65:16.80] recommend how one does that? Yeah, I
+[65:18.64] mean first of all I would say you know
+[65:20.40] we're trying in we're trying
+[65:21.76] increasingly to kind of like make that
+[65:23.76] learning curve easier. So like one of
+[65:25.36] the things that caused us to release cla
+[65:28.48] um which is basically claude code for
+[65:30.08] non-coders is you know oh man you know
+[65:32.88] like we were noticing a bunch of
+[65:34.88] non-technical people who really wanted
+[65:36.48] to use claude code and we're struggling
+[65:38.56] through the command line terminal um to
+[65:40.80] do that which you know it's like like
+[65:42.24] coders use the command line terminal all
+[65:43.76] the time but like non-coders you know
+[65:46.00] it's just kind of like makes things
+[65:47.68] unnecessarily complicated. Um so you
+[65:50.32] know co-work was designed to be more of
+[65:52.16] a you know the you know the the kind of
+[65:55.68] you know it was powered by by the cloud
+[65:57.76] code engine on the back but you know the
+[65:59.92] idea was to kind of make it um you know
+[66:02.08] more um u more like user friendly and
+[66:04.64] and like easier to use. So, you know,
+[66:06.32] we're we're definitely trying to
+[66:08.48] introduce interfaces that kind of make
+[66:10.16] it make it easier. But I, you know, I
+[66:12.32] would also say, you know, that there's
+[66:14.16] um, you know, there there's like uh, you
+[66:17.12] know, classes you can take that, you
+[66:18.64] know, help you learn this thing. Now, I
+[66:19.76] think it's a very empirical science. You
+[66:21.36] mostly learn by doing, but you know,
+[66:23.20] it's like anthropic has its like, you
+[66:25.44] know, part of the company that we call
+[66:26.72] the Ministry of Education. And, you
+[66:28.32] know, I think increasingly, you know,
+[66:29.92] we'll put out videos on how to run
+[66:31.92] effective agents and how to prompt
+[66:33.84] models. you know, we've already done
+[66:35.04] some of that and I think we're going to
+[66:36.32] we're going to ramp it up cuz, you know,
+[66:38.16] we do want everyone to be able to learn
+[66:39.84] this.
+[66:40.80] >> Any fleeting thought? Last question.
+[66:42.48] Like, you want to leave us with
+[66:43.68] something that we should bear in mind.
+[66:46.08] What does Daario know that Nikil and all
+[66:49.28] of Nikl's people do not?
+[66:52.32] >> Yeah. I mean, I don't know that I know
+[66:54.08] that many things, you know, particularly
+[66:56.00] now that the, you know, the implications
+[66:57.76] of the technology are kind of out there.
+[66:59.44] So I mean, you know, it can all be I I I
+[67:02.08] think most aspects of my worldview can
+[67:04.32] be derived from what from what's
+[67:06.24] publicly visible now from from what we
+[67:08.32] can see, you know, kind of kind of
+[67:10.24] outside in the world. But the thing I
+[67:12.56] would say, and it's an experience I've
+[67:14.80] had over and over again over the last 10
+[67:16.88] years, is,
+[67:19.52] you know, there's this temptation to
+[67:21.12] believe, oh, you know, that can't
+[67:22.64] happen. It would be too weird. It would
+[67:24.40] be too big a change. Like, you know, I'm
+[67:26.96] sure people are on that. like it would
+[67:29.20] be too crazy if that occurred. No one
+[67:31.52] seems to think that'll happen. And you
+[67:34.08] know, o over over and over again, just
+[67:37.36] extrapolating the simple curve or trying
+[67:39.44] to reason out what will happen like
+[67:41.76] leads you to these counterintuitive
+[67:43.44] conclusions that almost no one believes.
+[67:45.52] Um and and you know, it's almost like
+[67:47.20] you can predict the future for free just
+[67:49.68] by you just just by just by saying well
+[67:52.80] it stands to reason that and you know
+[67:54.40] you need some empirical knowledge. You
+[67:56.40] need some intuition. You can't reason
+[67:58.00] from pure from pure logic. I think
+[68:00.08] that's another type of mistake that I
+[68:01.68] see people make. But but the right
+[68:04.00] combination of a few empirical
+[68:05.84] observations
+[68:07.44] um uh with um you know just thinking
+[68:10.40] from first principles uh can allow you
+[68:12.64] to predict the future in ways that you
+[68:15.52] know are publicly available anyone
+[68:17.36] should be able to do but but that happen
+[68:18.96] surprisingly rarely.
+[68:21.44] >> Thank you Dario for doing this and hope
+[68:23.68] to see you again soon.
+[68:24.96] >> Thank you.
+[68:25.60] >> Thank you. Cheers. All right.
+[68:27.60] >> Yeah.
+[68:28.56] >> Good. Was it okay?
+[68:29.84] >> Yeah. Seemed great.

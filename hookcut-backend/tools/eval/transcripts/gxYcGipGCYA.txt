@@ -1,0 +1,1590 @@
+[0:00.80] Hey there everyone, my name is and I
+[0:03.04] make coding related videos and things
+[0:05.44] are not looking that great with the
+[0:07.36] uptime these days. If you have been
+[0:09.92] around on the Twitter, you have seen
+[0:11.20] that a lot of services goes down here
+[0:13.12] and there. Uh recently Gemini was down,
+[0:15.76] claude was down, Superbase here and
+[0:17.76] there goes down quite a lot. There are
+[0:19.92] so many other services that goes down.
+[0:21.76] Even sometimes I've seen Twitter goes
+[0:23.52] down and there is no status page of
+[0:25.20] that. And same happens with GitHub also
+[0:28.00] sometimes that it goes down but there's
+[0:29.52] no information in their own status page.
+[0:32.48] It feels like they are having this PNG
+[0:35.20] image on the status page. I'm really
+[0:37.68] frustrated with that and that's when
+[0:39.52] this idea clicked that can we build our
+[0:42.80] own SAS product which we can actually
+[0:45.76] sell and give it away to the people as
+[0:48.40] well some free some as a paid credit and
+[0:51.76] third party monitors their uptime and
+[0:53.92] downtime instead of companies monitoring
+[0:55.92] their own downtime and then forget to
+[0:58.08] update the pages. What if somebody else
+[1:00.72] actually monitors that or at least I can
+[1:02.96] monitor my own updowns and downtimes and
+[1:06.64] all of these things? And this can be a
+[1:08.72] proven SAS idea. It sells a lot. Let me
+[1:11.68] give you an idea about that and give you
+[1:13.44] a story of how it happened and uh why it
+[1:15.92] happened. So in case you noticed, I did
+[1:17.84] tweeted this around uh just a couple of
+[1:20.64] days ago uh just on 2nd of March. So,
+[1:23.12] Gemini was down and it was down like so
+[1:26.00] bad. I had to build a small interface
+[1:28.48] for myself where I can quickly just
+[1:30.24] verify that Gemini is down and then when
+[1:32.56] you scroll this it says claude is down
+[1:34.32] too and same with the claude and so many
+[1:36.80] other things. uh like people are just
+[1:39.12] posting back and forth and I realized
+[1:41.36] there needs to be a reliable service
+[1:43.04] which instead of saying that hey some
+[1:44.48] things are deg it's just down man come
+[1:46.48] on you can just give it to us and then I
+[1:48.48] realized that can we go ahead and look
+[1:51.68] onto the status page which gives me all
+[1:53.60] these things so I was looking for the
+[1:55.52] status page and so many services are
+[1:57.84] there but all of them are really
+[1:59.60] expensive to just give you an idea uh
+[2:01.92] there is uptime robot and so many others
+[2:03.84] as well and this charges $7 per month uh
+[2:07.36] for solopreneurs uh 10 monitors you can
+[2:09.60] set up and you can do a 60-second
+[2:11.92] monitoring interval so basically 1
+[2:13.92] minute can we do it and then there's
+[2:16.24] HTTP port monitoring uh keyword
+[2:18.32] monitoring API UDP we can always go as
+[2:21.84] much as we want we can enhance that but
+[2:23.84] can we build a system which can solve
+[2:26.96] this problem at least have as simple auh
+[2:29.92] on this and then I also saw the news
+[2:33.36] that uh downtime is actually a pretty
+[2:35.84] big SAS business in itself. If you
+[2:37.92] notice it here, the acquisition of the
+[2:39.68] Accenture, Accenture already has
+[2:42.08] acquired Okla which owns down detector
+[2:44.56] as well as speed test. So even if you
+[2:46.72] build an application which just does the
+[2:48.64] speed test but have been doing it
+[2:50.00] reliably for years and as well as a down
+[2:52.48] detector, we can technically build a SAS
+[2:56.56] and can sell it. Yeah, that that would
+[2:58.64] be cool. And what if AI does that? That
+[3:01.60] would be a true test of the AI that can
+[3:03.92] it build a reliable system for me where
+[3:06.16] I can just go ahead and build a down
+[3:07.84] detector for me. So that's where I saw
+[3:10.16] this open source project. It's getting
+[3:12.56] really popular and go ahead give it a
+[3:14.88] star as well and again 1.9K stars
+[3:17.52] already and you should definitely try
+[3:19.76] this out. So it says the backend built
+[3:21.68] for agent take development AI native
+[3:23.84] superbase alternative. That's a pretty
+[3:26.00] bold claim that you are AI native. I
+[3:28.08] love that. And you are superbase
+[3:29.60] alternative. All right, that's cool. And
+[3:31.92] it's open source as well. And I really
+[3:33.52] like one thing about it, which is just
+[3:35.68] here, deploy with Docker. So one click
+[3:37.44] and I can deploy it wherever I like. So
+[3:39.20] everything is under my control. So I
+[3:41.52] thought let's give it a try. Let's see
+[3:43.12] how that works. And we're going to see
+[3:44.64] this all together. That's the fun part.
+[3:47.52] I have no script for this video, no
+[3:49.52] existing code. I want to see that can AI
+[3:51.92] build this whole thing for me. If it
+[3:54.08] fails, you're going to see this. If this
+[3:55.84] succeed, on how much level it succeeds,
+[3:57.84] you're going to see all of that. Ah,
+[4:00.00] that's a cool video, but I don't know
+[4:02.16] the result of this video. So, there will
+[4:05.04] be a lot of poses because sometimes AI
+[4:07.28] do a lot of stuff. I'll come back in
+[4:08.88] here. So, this video is going to take me
+[4:10.48] a lot of time to record and publish
+[4:12.64] this. So, my humble request, please uh
+[4:15.28] drop a comment in the comment section
+[4:16.88] that you need more such videos or just a
+[4:19.60] heart or a thanks for this video would
+[4:21.28] be really motivating for me. So, please
+[4:23.36] please go ahead and drop a comment in
+[4:25.20] this one. So, I have already logged in.
+[4:28.32] It says you can actually create your
+[4:30.24] organization. Already did that. And now
+[4:32.40] it says create a personal project. I'm
+[4:34.40] here. Uh I tried couple of uh projects
+[4:37.12] up here. They are all paused and all
+[4:38.64] these things. Don't really care for
+[4:40.08] that. We're going to set up all things
+[4:42.16] fresh here. Uh by the way, you can also
+[4:44.32] check out the subscription. I am on to
+[4:46.00] the free plan. If I click on the upgrade
+[4:47.76] plan, their plans are pretty
+[4:49.60] interesting. This is $0 per month, which
+[4:52.08] we are going to test it out. It also
+[4:53.52] gives me $1 of AI model credits. Uh, I
+[4:56.48] think I can use some AI in that. And
+[4:58.40] then there's a $25 per month which gives
+[5:00.48] me $10 in model credits uh per month.
+[5:04.32] And then there are a 100,000 monthly
+[5:06.40] active user which is a lot. These are
+[5:08.56] not just users. These are active users.
+[5:11.12] And if any of the SAS has 100,000 active
+[5:13.84] users, they are making way way more than
+[5:16.48] $25. Uh 8GB, 25GB, it's all good. But
+[5:20.00] we're going to test this on to the free
+[5:21.44] one and then if required, if our SAS
+[5:23.44] works good, I'll be I'll not hesitate to
+[5:26.08] upgrade this and sell it even. So let's
+[5:29.20] see how we can go ahead and do that
+[5:30.72] projects. I want to create a new
+[5:32.16] project. All right, for this I'll be
+[5:34.32] using cursor because I think that works
+[5:36.48] great. I have a down detector. Let's see
+[5:38.56] what happens with this. And I'm going to
+[5:40.48] call this one as down detector.
+[5:45.28] And this one is going to be SAS. Let's
+[5:47.44] not use dashes.
+[5:50.08] Okay, regions are also there. I think
+[5:52.08] the nearest one. Oh, that's a nice
+[5:53.60] animation. That's a nice animation. Can
+[5:56.08] I do it also? No, only on the suggest
+[5:58.80] selection of the events. I can play
+[6:01.44] around with this. But anyways, uh there
+[6:03.60] is a down detector SAS. Click on create
+[6:05.76] project. And there we go. Everything
+[6:08.24] will happen in the real time in front of
+[6:10.32] you so that we can see how much time
+[6:11.84] does it take, what it takes. Okay. And
+[6:14.96] now it says uh recommended is install in
+[6:17.76] the cursor. But I do have a long
+[6:19.92] drop-down list. I'll add it to cursor.
+[6:22.08] There's a VS Code extension as well. We
+[6:24.08] can do that. But we'll go with the
+[6:25.60] recommended one. Add to cursor.
+[6:28.80] Open cursor app. It opens. It says
+[6:30.80] installing MCP. Uh will execute
+[6:32.96] commands. Yes, I want you to do that. I
+[6:35.04] don't want to write any of that. Uh gets
+[6:38.00] everything. It even sets my API key and
+[6:40.24] the base URL. Love that. And there we
+[6:43.84] go. It says loading the tools. 17 tools
+[6:46.88] loaded. What are the tools? So there's
+[6:49.60] fetch docs, fetch SDK docs so that it
+[6:52.16] gives the context buckets also uh
+[6:55.36] templates metadata functions create
+[6:58.24] functions. We'll be using functions left
+[6:59.76] and right. Uh get functions, update
+[7:01.84] functions, delete function. Uh yes, I'll
+[7:03.84] be not using it. I'll be actually going
+[7:05.76] all the way in that how much can I
+[7:08.08] actually push this. All right. Uh let's
+[7:10.96] see next. Verify the connection. Love
+[7:13.52] that. Give me this copy button. Always
+[7:15.28] give me the copy button. I can just now
+[7:17.92] ask the agent to run this
+[7:20.88] and it says planning next move waiting
+[7:22.96] for extension
+[7:26.00] and still planning
+[7:29.60] okay inforge.
+[7:31.60] So all the things that you're going to
+[7:33.04] see in this video is going to be real
+[7:34.80] time so that you can also see and for
+[7:36.80] this I have prepared my tea so that I
+[7:38.72] can just enjoy sip the tea and let the
+[7:40.80] agent do the work.
+[7:46.56] Yeah, I'm going to say allow MCP tools.
+[7:48.80] Yeah, please allow that. Do whatever you
+[7:50.96] want.
+[7:52.48] People are giving their entire life to
+[7:53.92] claude code. I can at least give my
+[7:55.44] agents the autonomy to act on behalf of
+[7:59.04] me.
+[8:02.64] Oh, now it's doing
+[8:04.96] all of the things.
+[8:07.68] H
+[8:09.44] if you tell me what you are building
+[8:10.88] example o DV storage function. No, I'm
+[8:12.96] going to tell you way beyond that. I can
+[8:15.44] pull up the machine uh matching docs and
+[8:18.08] outline uh concrete steps. Don't just
+[8:21.52] get the concrete steps. Uh get me. All
+[8:23.84] right. So here we can see that we have
+[8:25.44] the quick chat prompt as CRM AI chatbot
+[8:28.16] e-commerce notion clone Reddit. How does
+[8:31.04] the Reddit clone looks like?
+[8:33.92] Okay. This will give us some example of
+[8:35.60] how to write the prompt. uh build an app
+[8:38.16] uh similar to Reddit with community-
+[8:40.00] based discussion threading using ins
+[8:43.52] platform that has these features has a
+[8:46.88] community list and all these features.
+[8:48.88] So I think I can copy this prompt and uh
+[8:53.60] that would be good idea. Uh I can just
+[8:55.60] copy this whole prompt actually and uh
+[8:58.88] now we have MCP fetch doc. So this so
+[9:01.44] this is all track record. Now uh what we
+[9:04.00] can do is we can go here and I can just
+[9:06.64] paste this and let's see we're going to
+[9:08.56] then copy all of this and uh throw it
+[9:10.88] all in the agent so that they can work
+[9:12.48] on this. All right. Build an app uh
+[9:14.72] similar to
+[9:17.76] downtime
+[9:19.76] detector
+[9:22.00] uh with
+[9:23.76] community based discussion. No, no, this
+[9:26.00] is not.
+[9:29.12] We are going to modify this
+[9:33.04] which
+[9:35.60] can track the downtime
+[9:41.44] oops
+[9:43.52] downtime status of any endpoint actually
+[9:49.68] any endpoint
+[9:52.72] using insforce as a back end and that's
+[9:54.80] really what I want to do now here comes
+[9:56.80] the feature list what are the features
+[9:58.88] that you want. Definitely don't want it
+[10:01.28] like this, like this, like this.
+[10:06.32] Maybe don't need this. I can just carry
+[10:08.24] on with the same prompt so that later on
+[10:10.00] I can copy. So what are the features
+[10:12.00] that I'm looking up for?
+[10:14.96] It can ping to an API endpoint.
+[10:25.28] Uh first of all, it should be login. So
+[10:28.24] let's give it whole instruction what I
+[10:29.76] want to build. User should be able to
+[10:35.20] create an account
+[10:38.64] and login. That's the bare minimum. Once
+[10:41.76] the user has created an account and
+[10:43.60] login, you can go away.
+[10:46.24] User can go ahead and create an account
+[10:48.00] and login. uh user can enter
+[10:52.96] oops a URL
+[10:56.48] and platform
+[11:00.08] will
+[11:01.60] ping that URL
+[11:04.32] every 1 minute. So we are making that
+[11:09.84] 1 minute
+[11:11.68] and we'll get the
+[11:15.92] status
+[11:17.44] of application
+[11:21.92] if it is up or not.
+[11:26.88] It will
+[11:28.72] create a
+[11:31.04] graph of
+[11:34.40] uptime and down time.
+[11:38.64] That's good. And apart from that,
+[11:43.04] users should also be able
+[11:48.00] to add AI endpoints
+[11:53.68] uh to check
+[11:58.16] their
+[12:00.16] uptime. That would be cool. So that I
+[12:02.48] can check whether Gemini is up or Claude
+[12:04.16] is up. And we have $1 AI credit. So I
+[12:06.56] think that should work fine. And their
+[12:08.96] uptime
+[12:10.72] and
+[12:13.04] maintain a graph for them also.
+[12:19.28] All right. A user at max
+[12:24.16] uh can add five end points because rest
+[12:28.08] of them will be paid. Five end points.
+[12:33.20] Also need an admin account
+[12:38.00] to
+[12:39.52] get number of users as
+[12:43.84] well
+[12:46.16] as number of end points we are
+[12:51.84] monitoring
+[12:53.60] very detailed about the prompt data. So
+[12:55.84] I think this is good for the initial
+[12:58.00] start of what we we're pushing it but
+[13:00.56] this is not uh really uh like surely it
+[13:03.52] is doable but if having the cloud
+[13:06.16] functions and all of that spinning up a
+[13:08.00] cloud function every minute it's going
+[13:09.92] to test it thoroughly that can it
+[13:12.00] actually do it and then probably we can
+[13:13.60] put some pricing and can compete with
+[13:15.12] them. I would love to compete with them
+[13:17.52] and I would just see API monitoring is
+[13:19.60] there UDP location specific monitoring
+[13:21.52] we can do we can just ask AI to do it
+[13:23.76] and then only five integration we'll
+[13:25.60] allow more than that and we'll also say
+[13:28.16] that there is no limit on the seat as
+[13:30.08] well
+[13:31.60] all right let's copy all of this go back
+[13:34.56] to this
+[13:36.32] all right so we have given a thorough
+[13:37.92] prompt and uh no don't show me the
+[13:40.80] pop-ups as of now and
+[13:45.04] all sent to agent SDK. I have no idea if
+[13:48.40] it is going to be able to do it or not
+[13:50.00] but I will test it more. I will
+[13:52.00] thoroughly study more what I can build
+[13:54.48] and I would love to give it to you as
+[13:56.00] well for testing this. All right. I
+[13:58.24] would love to see what you are thinking.
+[14:00.24] This is one of my favorite thing to see
+[14:02.32] what they are doing behind the scene.
+[14:03.84] The user want me to build a downtime
+[14:05.36] detector app with the following
+[14:06.72] features. Backend is ins. They're making
+[14:09.68] database table o storage maybe for
+[14:12.16] avdars or nothing. Functions. This is
+[14:14.48] where you you should really really
+[14:16.00] focus. So there's a lot of functional
+[14:17.60] work I'm doing actually rereading the
+[14:19.76] requirement platform will ping that URL
+[14:21.60] every 1 minute. I'll implement as a
+[14:23.28] backend cron if available or client side
+[14:25.52] polling both can be done
+[14:28.72] front end will be reacts
+[14:31.76] react would be good and admin dashboard
+[14:34.32] for total users. Download the template
+[14:36.40] design the database schema and yes
+[14:39.20] please allow everything whatever you
+[14:40.88] want to do. Add this to list. Oh, I can
+[14:43.84] hit shift and enter to add this in the
+[14:46.48] allow list. Next time I'll do it.
+[14:48.48] Otherwise, I'll just
+[14:50.72] So, I can just go ahead and hit uh shift
+[14:53.12] and enter
+[14:58.96] this to allow list. Please,
+[15:04.24] I need to add this to allow list
+[15:06.08] somehow. But anyways, let's see this in
+[15:09.52] real time what's happening. Let's see
+[15:10.88] also in the back end what's going on. I
+[15:12.64] would love to see in the ins forge. What
+[15:15.28] are you doing?
+[15:17.68] So far no tables. So far we don't have
+[15:19.76] any user. Let's see.
+[15:23.92] So it's downloading. It's use allow
+[15:26.88] list.
+[15:31.92] Uh run everything. Enable run
+[15:34.96] everything. Yes, I'm living on the edge.
+[15:37.04] Run everything.
+[15:39.28] Oh man, this is how usually the new
+[15:41.92] people who are building the SAS, they're
+[15:43.68] live on the edge. Do whatever. Just
+[15:46.16] build me the app and don't make any
+[15:48.16] mistake. For this application, I can
+[15:50.08] actually do that.
+[15:54.00] I really like that
+[15:56.40] how this is actually storing the env
+[15:58.64] directly on there. Uh it is generating
+[16:00.64] the codebase. So I do have the URL and
+[16:03.52] API uh enviables but it is keeping them
+[16:06.56] as an example. uh all my original ones
+[16:09.84] hopefully are there in this one and I'll
+[16:12.80] be monitoring we'll be evaluating the
+[16:14.56] code as well uh to see so we have env
+[16:19.76] not going to do that uh but there's a
+[16:21.76] source assets
+[16:24.32] and
+[16:26.48] uh so there's app jsx app dsx so this is
+[16:29.76] how the basic boiler plate is as of now
+[16:32.88] haven't installed anything so there is
+[16:34.40] no npm installed uh it doesn't work that
+[16:37.36] way we have main
+[16:40.00] standard template nothing extraordinary
+[16:43.12] uh configurations and everything are
+[16:44.72] there
+[16:46.32] all right uh so I'll pause the video I
+[16:48.48] think at this moment and uh there are
+[16:52.16] some errors as well let's see oh but at
+[16:54.16] least I can see the tables are there so
+[16:56.08] profile is there endpoint is there
+[16:57.60] status check is there uh good database I
+[17:01.04] think these are the three things we are
+[17:02.32] pointing but we'll not stop here we'll
+[17:04.32] go more than this it is doing the stuff
+[17:06.56] so don't to interrupt in between and
+[17:08.96] want to do. I just want to visualize
+[17:10.56] this and we will do much much more than
+[17:13.52] that. So again that's why these videos
+[17:15.92] are going to take more time to see
+[17:17.44] actually what's happening. I'll be
+[17:19.60] stating the screen if you want to sit
+[17:21.76] along with me and want to w it's very
+[17:23.84] fun to watch actually
+[17:26.00] that I can actually do all of this.
+[17:30.32] All right. So this is all in main.tsx.
+[17:33.44] Okay. So it's bringing in the react dom.
+[17:36.48] That's good. Browser react ins react. So
+[17:39.60] this is going to come in in. And then we
+[17:42.72] have client ins client is there. Okay.
+[17:45.84] What else do you have? App.tsx.
+[17:49.76] So this one is all gone. And now we are
+[17:52.00] having routing as well. Protected routes
+[17:54.32] are there. Uh signed out landing. Uh we
+[17:57.60] are evaluating this
+[18:00.24] and we are living on the edge. Uh
+[18:02.32] whatever it is doing. Now we have hooks
+[18:04.48] as well. Components as well. So
+[18:06.00] components still cooking up uh hooks are
+[18:09.92] there ensure the profiles. So this one
+[18:11.84] is what it's going to do. It's going to
+[18:14.00] check whether the use user. So it
+[18:16.16] queries a hook use user and gets a user
+[18:19.04] and is loaded there. If it is loaded,
+[18:21.12] there's no user. If a profile is there,
+[18:24.24] I really like the syntax of this. Dot
+[18:26.56] from profile from profile select the
+[18:29.20] user ID uh which is equal to the user ID
+[18:31.92] matching the user ID and maybe sing
+[18:33.84] maybe single. That's interesting. I need
+[18:35.92] to check what it does. I have no idea
+[18:38.48] right now. But uh it's doing a lot of
+[18:41.60] work and you just need a lot of tokens
+[18:44.08] for this to work on. And luckily the
+[18:47.04] tokens are accessible for me. And then
+[18:50.40] there is a utility. It has designed a
+[18:51.92] ping utility very straightforward which
+[18:55.04] status is up. If the response gets uh
+[18:57.92] there in how much time then it simply
+[19:00.56] stores up and down. So you have realized
+[19:02.48] that some of the softwares are not
+[19:04.88] really that complex to make definitely a
+[19:07.04] little complex to maintain but we are
+[19:09.52] going to see how it works. In the
+[19:11.44] meantime I can analyze what more you
+[19:13.76] give a slow response alert.
+[19:17.28] Can we configure an email
+[19:20.80] which sends the I'll be just monitoring
+[19:23.04] here throughout the video and I'll be
+[19:24.40] analyzing what guys what do you guys
+[19:26.56] offer and I'm going to uh just replicate
+[19:29.84] this through the AI and basic status
+[19:32.88] page. We'll give user a status page as
+[19:35.44] well. We'll give a user public status
+[19:36.88] page. We will modify the requirements
+[19:39.28] once this is all done. Yeah. So we will
+[19:42.32] give a basic status page to the user.
+[19:44.32] Let's collect the requirements. This is
+[19:46.56] fun. So this is what we'll be doing. Uh
+[19:49.60] basic status page for the user. What
+[19:52.00] else? Uh we will definitely give a slow
+[19:55.60] response alert. This is required for me
+[19:58.64] personally.
+[20:00.72] Okay. Slow response alerts. Maybe this
+[20:04.08] time we'll choose an email.
+[20:07.04] I think ins can send email hopefully.
+[20:09.84] Don't know. And then there is UDP
+[20:12.80] monitoring is easy. The API monitoring
+[20:14.64] we are already doing HTTP port ping
+[20:17.20] monitoring kind of a same thing.
+[20:20.40] Anyways, can we do DNS monitoring?
+[20:23.76] Oh, that's interesting. Okay, what else
+[20:26.40] can we pick up from here? What are your
+[20:29.12] integrations? I would love to know.
+[20:31.04] Features
+[20:33.20] chron job monitoring,
+[20:36.08] incident management, IT alerting.
+[20:40.40] What's your integrations?
+[20:45.68] All right. Anyways, these two features
+[20:48.32] we have shortlisted that we are going to
+[20:50.24] work on this as well since I can just
+[20:53.28] ask AI to do the things. And it says uh
+[20:57.36] rerun build after fixes. It is also
+[21:00.08] fixing me. Admin.com
+[21:04.24] maybe.
+[21:05.92] So let's just wait if it
+[21:10.56] downtime detector. I think it is all
+[21:12.16] done.
+[21:15.52] Can I ask it to deploy also? Let me
+[21:17.60] check.
+[21:20.00] Insge. There's a deployment tab.
+[21:25.68] And I can say deploy my app to Ins. Copy
+[21:28.88] that. It will be useful in a minute.
+[21:35.60] And it says summary in what's in the
+[21:38.56] first what's in the place. So we have
+[21:40.96] endpoint monitoring graph admin is there
+[21:45.84] okay how to run don't want to run you
+[21:48.40] just deploy it for me otherwise what's
+[21:51.36] the point of building replace your admin
+[21:54.00] example so is there any entry in the
+[21:55.84] database
+[21:58.32] so it says loading
+[22:05.20] endpoints
+[22:08.96] do I need to hit a refresh
+[22:16.40] Note on pulling ping runs in the browser
+[22:18.72] every 60cond while in the dashboard is
+[22:20.96] open. If you need 24x7 checks regardless
+[22:23.44] of the user tab uh you would add a
+[22:26.08] schedule functions.
+[22:29.12] So
+[22:30.96] let's not do the polling and all these
+[22:32.64] things. I want the application. I'll
+[22:34.56] check this one.
+[22:37.44] Uh, infinite recursion detected in the
+[22:39.52] policy. Oh man, that's the error.
+[22:43.52] Let's see.
+[22:45.84] Let's give it to this one.
+[22:49.12] Profile in DB shows this error. It's
+[22:53.04] your code. You're going to fix it, not
+[22:55.20] me.
+[22:59.52] Landing next move.
+[23:06.80] Hopefully, it is going to be able to fix
+[23:08.32] that.
+[23:14.32] That's the agent.
+[23:16.72] But I'm very happy to see this that it
+[23:18.88] was able to do all these things and
+[23:21.68] probably authentication. The email is
+[23:23.60] there. Do I need to configure it?
+[23:25.76] Requires email verification. H I'll
+[23:29.52] probably turn it off to test the
+[23:31.68] application.
+[23:37.36] run everything is the option planning
+[23:39.52] next move
+[23:44.48] hopefully nothing more to say and
+[23:46.72] whatever the errors are going to be
+[23:48.00] there I'll show you the errors as well
+[23:51.20] and if it works I'll show you that it
+[23:53.28] works as well
+[23:56.96] okay it can run raw SQL queries as well
+[24:00.80] now the admin page is all there
+[24:02.48] hopefully it is saying that it is all
+[24:03.92] Good. All right, let me check that. Oh,
+[24:06.88] now it has fixed the error. So, we have
+[24:08.32] is admin. There is no record in the
+[24:10.00] admin endpoint. We have ID, user URL.
+[24:13.92] That is good. Do we have any functions?
+[24:16.08] That's what I want to see. I don't have
+[24:18.24] functions.
+[24:24.24] And uh let's see this.
+[24:27.28] Can I now deploy this? I want to check
+[24:29.36] the deploy and then I'll take it to the
+[24:31.68] extreme. I want to see how much it can
+[24:34.40] do.
+[24:37.52] And
+[24:40.16] I'll just paste this. Deploy my app to
+[24:42.16] ins.
+[24:44.24] Oh man, these agents love to update read
+[24:46.24] me so much.
+[24:53.20] Cause of the error. You can read this
+[24:54.96] and learn from this as well. The admin
+[24:56.80] can read all profile RLS uh role level
+[24:59.44] security by the way in case you are
+[25:01.60] totally a vip coder have no idea what
+[25:03.28] RLS is. This is role level policy was
+[25:05.20] defined as allow select if select is
+[25:07.68] admin from profile where user ID to
+[25:10.08] decide if you can again not going to do
+[25:11.84] that. We are not here. We are here
+[25:13.20] purely in the VIP code. How to make
+[25:15.36] someone admin? Insert into app admin.
+[25:18.56] No, I'm not going to do it. You are
+[25:19.92] going to do it for me. First of all,
+[25:21.76] deploy this app uh to ins.
+[25:34.24] I think I should make more such videos
+[25:36.80] where we test an application to see
+[25:39.28] whether they can end to end build the
+[25:41.28] whole stuff and check everything.
+[25:46.48] Maybe we can do one more session on just
+[25:48.32] on cloud code as well which is also
+[25:50.80] surprisingly good. We can actually
+[25:52.40] integrate this whole uh ins agent in
+[25:55.28] claude code and see how that terminal
+[25:57.44] actually behaves and how that actually
+[25:59.44] works. Oh man, this is so fun to watch.
+[26:03.84] I thought that I'll be pausing the video
+[26:05.44] and going in out but I am realizing that
+[26:09.76] having this experience of sitting and
+[26:11.76] enjoy you should also have this. Okay.
+[26:13.92] So there's a deployment URL in force the
+[26:16.88] status initializing. We'll be moving
+[26:18.56] building
+[26:20.64] uh building then ready uh provider is
+[26:23.44] versel. So I don't need to login into
+[26:25.52] warell or anything that's great and it's
+[26:29.28] ready up here. Do I get the detail here
+[26:32.32] as well? I would love to see.
+[26:36.64] Okay. So here is my application. This is
+[26:39.60] my insite.
+[26:42.48] There's a create an account. So what
+[26:44.56] I'll do for this one in the
+[26:46.00] authentication in the email
+[26:48.80] configuration, I can just close off this
+[26:52.64] email verification requirement. Password
+[26:55.20] six character is good because I'm just
+[26:56.88] testing it and save this. Now probably I
+[27:01.52] can just hit a refresh and test the
+[27:03.60] application with multiple accounts
+[27:05.12] before I go live.
+[27:10.00] Oh, did I change the configurations? Oh,
+[27:12.64] no, it is there.
+[27:14.72] Okay, so create an account.
+[27:20.32] Let's see. Oh, this is very familiar.
+[27:23.68] So, we're going to go ahead and use one
+[27:25.84] at the rate uh down
+[27:29.84] uh app. Good name if I wish I could use
+[27:33.28] that domain. and then
+[27:36.40] I'll just use
+[27:39.04] basic.
+[27:43.76] Okay, let's see if I can actually do a
+[27:45.84] sign up with this. I can actually
+[27:47.12] configure and hit the Google and GitHub
+[27:49.60] login URL as well. U getting the basic
+[27:52.40] password as well. Sign up. All right.
+[27:56.24] So, we uh I know the password is really
+[27:58.24] bad. Don't save it. Okay. So here are
+[28:00.72] the endpoints that I want to check and
+[28:02.80] it's going to be type URL or the AI
+[28:04.88] endpoint and the name I can give. Uh
+[28:08.00] let's test uh with one of my
+[28:09.84] application. Don't want to test anybody
+[28:11.44] else's application. Uh these are APIs
+[28:14.08] that I built a long time ago. Not I
+[28:16.32] built actually the team built uh the
+[28:19.28] whole team. We can actually ping this
+[28:21.60] URL and we'll add one more URL which
+[28:23.92] doesn't work. So this is the endpoint
+[28:27.68] and I'll call this one as a free API
+[28:32.08] and add this.
+[28:34.96] And now let's check. Okay, nice. Nice
+[28:38.08] graph. Uh response time is 100%.
+[28:43.12] That is good. It also checks it after
+[28:46.88] every uh so right now it's late night
+[28:49.36] 238. So it should be technically
+[28:51.68] checking in every 1 minute. Can we spin
+[28:54.88] up a function to check the uptime every
+[28:57.20] 1 minute? That would be good because I
+[29:00.08] don't know how reliable this is.
+[29:03.84] How is it working? I wouldn't know.
+[29:06.24] Again, wipe coders don't know that. They
+[29:08.00] just want it. So, how is it checking up
+[29:12.64] time uh for a URL?
+[29:16.48] Oh, that's not a agent. That's probably
+[29:18.56] an ask mode, but um let's just do
+[29:21.76] anyways. This is how wipe coding does.
+[29:25.76] Hopefully it doesn't plan anything. Uh I
+[29:28.24] just want to know that how you're doing
+[29:31.12] it. And
+[29:36.48] let's see. Uh there's a ping utility
+[29:39.60] source utils ping which actually
+[29:41.60] determines the up time. I don't think so
+[29:43.76] this is going to be reliable because if
+[29:45.52] I move away from the URL this is
+[29:50.40] oh when it run uh dashboard polling so
+[29:53.20] it's doing a polling
+[29:56.08] and you know what's the interesting part
+[29:59.04] if you are a developer you know the
+[30:00.40] polling you know the issues of the ping
+[30:02.88] then probably you can do it and
+[30:08.00] it's 239 and it says uh it is status is
+[30:13.04] But
+[30:15.20] the thing is I want to know about this
+[30:18.48] every minute. I want to store this data.
+[30:23.44] So the ping uh that's good response time
+[30:26.56] the uptime is up. Uh but this is not
+[30:29.84] what I want.
+[30:32.64] I want to see the application up time
+[30:39.52] for every
+[30:42.08] minute
+[30:45.04] and uh for every minute
+[30:48.80] also what more I want to do I want to
+[30:50.48] see the application up time for every
+[30:52.72] minute
+[30:56.88] even if user is not on the page. age.
+[31:04.96] I want to see
+[31:08.16] a graph per minute
+[31:13.44] and past information too for the
+[31:18.32] downtime
+[31:20.64] up or downtime that would be better.
+[31:25.20] I don't want to explicitly say it that
+[31:27.60] use functions because that's how the
+[31:29.04] wipe coders will be doing it. they don't
+[31:30.40] know what the cloud functions are and
+[31:31.68] all these things. So, uh I want to see
+[31:34.08] all the past information of the graph.
+[31:36.24] So, let's see what what happens when I
+[31:38.08] say that I want to see the application
+[31:39.60] up time for every minute. Even if user
+[31:42.00] is not on the page, I want to see the
+[31:44.24] graph.
+[31:46.72] Ah, now it's going into the chron era.
+[31:50.32] Let's see what it does.
+[31:55.60] Come on, man. Do it faster. We want to
+[31:58.08] compete with so many companies. We want
+[31:59.52] to build a roll out of our own SAS.
+[32:06.40] All right.
+[32:11.36] Elevate privileges provide a service
+[32:14.00] role.
+[32:15.76] Oh, now it is going into the edge
+[32:17.36] functions.
+[32:20.96] Lot of thinking. So AI can do the smart
+[32:22.96] work thinking and the back end is
+[32:24.72] handling whatever AI. That's why they
+[32:26.48] call it actually. I I guess now I'm
+[32:28.88] getting it. Uh why they call it themsel
+[32:31.44] as this line uh the back end built for
+[32:34.00] agentic development or AI native because
+[32:36.96] I'm not doing anything and whatever the
+[32:38.80] AI is doing it's able to handle all of
+[32:40.72] that.
+[32:42.56] All right. But this is good. This is
+[32:45.52] really good that we are able to reach
+[32:47.28] this much of this. That's a different
+[32:49.36] case that I'm not happy with this but
+[32:51.04] I'm not going to leave it here.
+[32:57.12] Okay, a lot of work.
+[33:00.88] So now it is creating a function format
+[33:03.12] for creating a dbrpc and edge function.
+[33:06.00] Now we are there. So now it's going to
+[33:07.92] do edge function. And I'm really
+[33:09.92] interested to see what goes in the edge
+[33:11.92] function.
+[33:13.52] Uh nothing goes as of now. Oh, we do
+[33:16.24] have real time as well. And we have the
+[33:18.72] model gateway as well
+[33:21.68] which I can enable for chat GPT and uh
+[33:25.04] Gemini also. So, so Gemini 3 Pro is
+[33:27.04] there which is text generation but I'm
+[33:28.96] more interested in 3.1
+[33:31.20] where I can see if it is up and running
+[33:34.32] or not but anyways let's check the
+[33:36.32] functions it is not there now it has
+[33:38.88] started to write functions creating the
+[33:40.48] edge function and updating the front end
+[33:43.52] create a DBRPC edge functions for server
+[33:46.00] side uptime checking now we are on it
+[33:48.64] now it is doing the work that's
+[33:50.88] interesting
+[33:54.64] I can just provide read the instruction
+[33:56.24] and technically could leave the chair as
+[33:58.80] well. I just enjoy my tea, touch some
+[34:00.80] grass.
+[34:05.92] Still doing the work. Don't worry. Still
+[34:08.16] doing the work. But we will analyze and
+[34:10.24] thoroughly check what it's doing.
+[34:12.16] Probably because just of anxiety. But
+[34:14.08] can we build this SAS? And can we earn
+[34:17.28] some money with this? Maybe. Who knows?
+[34:28.16] This is probably the chillest video.
+[34:29.84] Enjoying the tea and
+[34:34.40] okay, right now nothing
+[34:40.96] planning next moves. It has done a lot
+[34:43.20] of work actually. The function was
+[34:45.44] created base URL.
+[34:50.56] Can't even keep up with this. The speed
+[34:52.72] is really good.
+[34:56.72] Okay, so removing client side polling
+[34:58.72] only the edge function records the check
+[35:00.72] and improve the graph to show per minute
+[35:03.20] history. This is exactly what I want.
+[35:14.00] All right, still doing it. Updating the
+[35:16.56] endpoint. Do we have Oh, there we go.
+[35:19.44] Finally we have a function here. Can I
+[35:21.68] click on this? And this is really
+[35:24.32] interesting way of writing the code
+[35:25.68] these days. You can have these uh
+[35:27.84] functions or lambdas. Superbase support
+[35:30.16] them. In sport support them almost all
+[35:31.92] platform supports that. And here if you
+[35:34.64] are a little bit carefully and by the
+[35:36.08] way they also use the dino environment.
+[35:38.08] Uh superbase does the same. And then it
+[35:41.20] can fetch the URL
+[35:44.80] and endpoint. It can check for all the
+[35:46.96] endpoints. Oh, one function for checking
+[35:48.72] all the endpoints
+[35:50.88] and any of I guess I guess any of the
+[35:54.64] URL that I'm adding will use the same
+[35:56.40] function and there could be multiple of
+[35:58.88] them. It can go ahead and just check the
+[36:00.48] data
+[36:04.16] and now it's updating the readme
+[36:05.76] favorite thing.
+[36:10.96] And is it going to autodeploy?
+[36:14.00] Probably not.
+[36:26.48] Still writing the code, planning the
+[36:29.44] next move.
+[36:31.84] Taking time, taking time. I'm little bit
+[36:34.88] definitely doing way faster than me,
+[36:38.48] but I'm still cautious that hey, do it
+[36:40.40] fast and so that I can check quickly
+[36:42.32] whether you are done or not. This is
+[36:44.72] fun.
+[36:46.00] This is fun. I'm enjoying this.
+[36:53.04] Okay, let's pause this for a moment so
+[36:55.36] that it can do all the stuff and if
+[36:57.04] there is any error or anything, I'll
+[37:00.00] show it to you. Oh, it is actually
+[37:03.20] verifying the build
+[37:06.16] and summary. Summary. Yeah, we'll not
+[37:08.96] pause it. We'll just check it. Up time
+[37:10.88] checks every minute when uh you are not
+[37:13.04] on the page. Edge function checks the
+[37:15.28] uptime. The database is also updated.
+[37:18.24] And now to run it every time, call the
+[37:21.04] functions every minute from a chron job.
+[37:23.36] Good. GitHub actions or server in the
+[37:26.88] inforge development. Set environment to
+[37:28.48] uptime check functions. Hopefully, it
+[37:30.96] has done it. What you need in the
+[37:32.48] inforge set environment for the uptime
+[37:35.04] checking. No, I'm not going to do it.
+[37:39.60] I'll just say
+[37:43.04] deploy it. That's all I'm going to do.
+[37:51.28] I'm not going to deploy. You will deploy
+[37:53.28] it for me. Your code, you deploy it.
+[38:02.16] Okay. It's creating a deployment on Ins.
+[38:06.96] That's the power of MCP. If you can
+[38:09.68] actually get the context to your agent
+[38:12.08] so that it doesn't hallucinate, then it
+[38:14.08] can actually perform a lot of stuff.
+[38:15.92] There we go. It's all done. Uh same site
+[38:18.40] hopefully. Uh let's hopefully hopefully
+[38:20.96] let me check the deployment. It is the
+[38:23.52] same site. So we don't have any other
+[38:24.96] site. Can I go ahead and just do a
+[38:26.96] refresh
+[38:28.80] and let's sign in
+[38:33.36] one at the rate
+[38:35.92] down app
+[38:38.32] and a really lame password that I set
+[38:41.60] up.
+[38:45.04] And there we go. So, we have this. Can I
+[38:49.12] go ahead and delete this? Yeah, remove
+[38:51.84] this. I didn't ask it to have this.
+[38:55.04] remove this endpoint status history will
+[38:56.96] be deleted. Yes, that's what I want. So
+[38:59.12] again going back and taking this
+[39:01.60] endpoint copy this go back up here and I
+[39:05.28] want to add this. This is going to be
+[39:07.76] free API. This is a URL. Let's add this
+[39:12.56] added.
+[39:14.96] And now it says no status data check
+[39:17.68] runs every minute via chron. Uh, setup
+[39:20.96] uptime checks chron to see data. Set up
+[39:25.60] the uptime check to crawl. Oh, set up
+[39:28.08] the uptime.
+[39:31.84] Where do I do that?
+[39:37.12] Uptime checks. I need to set some uptime
+[39:39.04] checks to see the data. I don't know how
+[39:44.16] to do that.
+[39:47.04] Okay, let's see what's the visualizer
+[39:49.04] does. So, this is I guess my DB
+[39:54.88] and there's admin app. All right,
+[39:57.20] there's logs as well. Oh, there's a lot
+[39:59.20] of logs
+[40:02.40] and there's function logs. So far, I
+[40:04.40] guess no function has
+[40:07.04] is running
+[40:10.08] and then there is nothing for us. And
+[40:13.04] the dashboard is there which says all of
+[40:15.68] these details. One user, two o provider
+[40:18.40] enabled, tables and buckets and all of
+[40:20.88] that. So I guess we have to wait for a
+[40:23.84] little to actually get all the data.
+[40:28.24] Let's just wait for a few time. It has
+[40:30.56] done zero checks as of now. I'll wait
+[40:33.20] for a few minutes to see actually it is
+[40:35.04] working or not. So let me pause the
+[40:36.40] video.
+[40:37.92] All right. So I'm back. Uh touch some
+[40:39.92] grass. But now let's see. Uh this is
+[40:42.16] going to be uptime and I tried
+[40:44.08] refreshing it and I see no data in here.
+[40:47.36] I can go back and this is where we are.
+[40:50.24] The situation is it is supposed to be
+[40:52.48] working but it is not. It says zero
+[40:54.56] uptime check. So let's just copy this
+[40:58.48] and go back to cursor and say um I am
+[41:03.04] not
+[41:04.64] able to see any data for any URL. It
+[41:10.96] just says this.
+[41:16.16] I want every thing to be enabled.
+[41:22.48] And the best part, make no mistake,
+[41:26.64] can we really say that?
+[41:30.40] All right, let's go ahead and see that.
+[41:32.72] So,
+[41:35.12] all right. So technically what I was
+[41:36.88] expecting that when I go there I if I
+[41:38.72] have added that u automatically from the
+[41:41.60] database a chron job a fun a chron job
+[41:44.16] will be run and that function is going
+[41:46.00] to pick up the values in my endpoints
+[41:48.64] will run the checks on that for each one
+[41:51.12] of them and we'll save the entry in my
+[41:52.64] database that's what I want it to do
+[41:55.84] that's how the downtime detector works
+[41:58.08] there's admin admin only this shouldn't
+[42:00.40] be there if I'm a user I don't I should
+[42:03.76] not be able to see even
+[42:07.04] And by the way, uh I just named one. So
+[42:09.44] that's why it says there's a profile as
+[42:11.12] well. Can I edit? I can edit my name as
+[42:14.56] well.
+[42:16.40] I can add one is my name.
+[42:20.08] It does that nicely.
+[42:23.92] And there we go. Let's see what's
+[42:25.76] happening.
+[42:28.96] Uh reenabling the client set check. So
+[42:30.80] we record the status when the app is
+[42:32.48] open and the data appears without
+[42:34.56] setting up external chron. Adding
+[42:36.80] immediate and every minute polling
+[42:39.52] regarding adding the client side check
+[42:40.96] on data pering without chron. Run an
+[42:43.12] immediate check when the dashboard and
+[42:44.80] endpoints details loaded and run the
+[42:46.96] checks every minute while the dashboard
+[42:48.56] is open. So basically it's saying that
+[42:50.96] it's running the functions and
+[42:52.48] everything hopefully but it's not
+[42:54.72] polling them. So that's why I'm not able
+[42:56.48] to see the data. That means I should be
+[42:58.48] able to see the data in the database.
+[43:01.36] And there's a status check. There's no
+[43:03.92] status check. There's endpoint in here.
+[43:06.64] Uh
+[43:08.24] but technically it's not saving this in
+[43:10.72] the end status check.
+[43:13.52] Let's see what it's doing.
+[43:17.60] But one thing I'm impressed is whatever
+[43:19.60] the agents are saying, the ins
+[43:22.88] that is nice. Uh it's the flaw in the
+[43:25.44] logic of the LLM, the large lying
+[43:28.08] models.
+[43:30.16] U but this should be good.
+[43:36.40] Okay, updating the empty state message
+[43:38.72] pointing now that the client checks are
+[43:40.72] enabled.
+[43:45.20] Now I would like to crossverify this
+[43:47.52] this time.
+[43:50.56] Reenable onloading as soon as the
+[43:52.32] dashboard
+[43:54.08] Okay, I have to go a little technical. I
+[43:56.40] was not hoping to go there, but uh
+[43:58.96] notice uh checks are done from the
+[44:00.72] browser if a URL doesn't allow. Let's go
+[44:03.76] a little technical.
+[44:06.40] Can a function run every minute,
+[44:12.80] get the status,
+[44:15.44] and
+[44:16.96] store
+[44:18.88] it in a DB?
+[44:22.24] Then
+[44:23.76] front end
+[44:25.52] can
+[44:27.20] pull this status from DB and show every
+[44:33.20] minute. Come on, do this.
+[44:40.72] You're already halfway there.
+[44:46.24] Now it's searching and doing all the
+[44:47.84] documentation. Have to nudge a little
+[44:49.68] bit technically. It's definitely not
+[44:51.92] 100% for the non- tech people. Uh people
+[44:54.48] who know the tech can actually move fast
+[44:56.64] forward.
+[44:58.24] So that's good. Let's wait for a few
+[45:00.24] minutes more. I'll pause the video to
+[45:02.16] let it do its job. Whenever it stuckss,
+[45:04.00] I'll show you that as well. Wherever it
+[45:05.92] does good, I'll show you that as well.
+[45:08.80] One thing that you can see here now it
+[45:10.40] is nudged in the right direction. So it
+[45:12.16] says implementing the trigger for
+[45:13.52] existing edge function every minute from
+[45:15.92] the front end uh serverside pings no
+[45:18.72] course and having the front end pull the
+[45:20.88] DB. I'll not I don't want to do this
+[45:23.68] every minute. It should happen
+[45:24.80] automatically. It should be a chron but
+[45:27.36] let's see. Let's wait.
+[45:29.60] Oh man, it's still not listening to me.
+[45:31.60] Notice here it says function runs every
+[45:33.44] minute to write the DB. Uh the uptake
+[45:35.68] check age functions triggered by front
+[45:37.52] end. No, I don't want front end. uh
+[45:39.60] there is a provision here that it can
+[45:41.60] use schedules.
+[45:43.52] So I can just say use the schedules to
+[45:46.00] run the functions every minute. Let's
+[45:48.16] let's modify the prompt a little bit. uh
+[45:51.52] use schedules in ins
+[46:02.32] function to check
+[46:06.80] up time of
+[46:09.28] given set of URLs
+[46:15.12] every minute.
+[46:21.68] This should happen
+[46:25.04] uh automatically
+[46:28.88] in back end.
+[46:32.24] Front end
+[46:34.80] should just
+[46:38.48] pull the data from DB. Come on, do this.
+[46:47.92] Okay, now we have nuzzed it more.
+[46:52.96] Thank goodness that it gives me the
+[46:54.96] exact plan and what it has done. And I
+[46:57.52] want to see some data in here. There's
+[47:00.16] function here, but I want to see it here
+[47:02.16] as well. It has all the ingredients
+[47:04.48] needed to do this.
+[47:07.76] All right, it's searching for the info
+[47:09.76] schedule functions chron job
+[47:11.36] documentation. That's good. Now it is
+[47:13.76] nudged in the right direction. So it is
+[47:15.28] just there and there's a fetch SDK doc
+[47:18.24] JSON.
+[47:20.24] Oh, there's a function architecture. Now
+[47:22.32] read the schedule architecture.
+[47:26.72] You should add something here.
+[47:30.16] All right, let's wait for a little and
+[47:31.84] let's see what happens.
+[47:34.32] All right, so this has taken a little
+[47:36.00] bit different approach, but I think
+[47:37.52] that's also doable. So what it has done
+[47:39.76] is it says uh since it's all based on
+[47:42.40] postgress so it's using a pg chron which
+[47:44.48] is also a chron job and the job name is
+[47:47.04] uptime check every minute it schedules
+[47:49.12] on every minute the command calls it and
+[47:52.48] there's a front end only pulls the db
+[47:54.56] which is exactly what I want and then
+[47:56.48] there's a readme update and all we have
+[47:58.80] to do is say uh deploy it I guess it
+[48:02.48] doesn't auto deploy it but let's just
+[48:05.04] say deploy
+[48:08.64] All right. Leading planning move. I
+[48:10.40] think now it is deploying it.
+[48:13.76] Or is it already deployed? No, it is
+[48:16.16] creating a deployment in in Forge. Run
+[48:18.80] everything.
+[48:21.60] Yeah, living on the edge. Run
+[48:22.96] everything. That's fun.
+[48:26.88] And the deployment has been started.
+[48:29.92] One thing is there. The deployment is
+[48:31.68] really ridiculously fast.
+[48:34.16] So can I just hit a refresh?
+[48:37.12] Oh the one of the sign of deployment is
+[48:39.36] I have to relog in. So let's just sign
+[48:41.84] in.
+[48:44.72] What's the name down here? Down.app
+[48:52.96] sign in.
+[48:55.60] And
+[48:57.12] let's see if now it is doing anything.
+[49:00.64] Uh no status here. Backend run the
+[49:02.48] checks every minute. This page posts the
+[49:04.16] TV every minute. Too much of information
+[49:06.40] now. Uh but all we have to do now is
+[49:09.76] wait for a few more minutes uh to see
+[49:12.96] what's happening. Let's see first of all
+[49:14.48] in the functions functions.
+[49:17.20] So there's this function
+[49:19.52] in the tables we have status check
+[49:23.52] profiles and app. Do I need to add my
+[49:26.72] endpoint again? I don't think so.
+[49:31.44] There's a profile. There's endpoint. So
+[49:33.36] I have user ID. Oh, there we go. I
+[49:36.48] thought we have only one couple of
+[49:37.92] fields.
+[49:39.60] Shrink it down.
+[49:42.40] Endpoint, the name, the type, URL, and
+[49:44.48] the created at. Hopefully, it should
+[49:47.60] work. I guess 1 minute has passed.
+[49:50.96] And since it's polling, I should not be
+[49:53.20] able to refresh.
+[49:55.84] Let's ask it.
+[50:00.40] Where are we
+[50:02.64] storing the result from the function
+[50:07.84] that runs every minute?
+[50:14.08] Can you
+[50:16.72] give me the table name?
+[50:25.12] Are we storing that or not?
+[50:28.56] Okay. Okay, the result from the function
+[50:29.84] that runs every minute are stored in the
+[50:31.60] status check table. The schema is public
+[50:34.64] and all that. So, all right, I'm looking
+[50:36.48] into correct table. Uh, it's in the
+[50:38.56] status check, but I see no records
+[50:42.56] and it's been couple of
+[50:49.68] there is no data in that table.
+[50:54.40] Can you
+[50:56.80] verify
+[51:00.40] if
+[51:02.48] the function is running every minute or
+[51:08.24] not.
+[51:11.52] I have an end point in the DB
+[51:18.08] but
+[51:20.80] but there is nothing in the dashboard.
+[51:36.64] Okay, let it check and then we will it
+[51:38.80] force it a little bit to somehow use uh
+[51:42.96] the functions schedules
+[51:47.44] and I can click on add schedule and I
+[51:49.44] can I can do all of this but I want AI
+[51:51.92] to do it for me so that it can run it
+[51:54.08] and then store the things.
+[52:01.20] Why are you not using
+[52:05.76] schedules
+[52:10.00] which
+[52:11.76] are available
+[52:15.84] in INSF forge
+[52:20.16] with the functions
+[52:25.04] to
+[52:28.08] easily
+[52:31.04] run functions
+[52:33.36] as on chron.
+[52:42.80] Now
+[52:45.20] you do all the stuff later on.
+[52:55.92] You have all the access. You should be
+[52:57.36] using that. Let's check in the meantime
+[52:59.76] if we have any data in here. No, we have
+[53:02.96] no data in the dashboard so far. So that
+[53:07.20] means it's good. We are pushing it to
+[53:08.64] the boundaries.
+[53:10.96] Finally, AI is listening to me. So uh
+[53:14.40] notice here what the summary says. The
+[53:16.24] inforge MCP tools uh you have don't
+[53:19.68] expose a create schedule tool only
+[53:21.92] create functions. Okay, I wasn't using
+[53:24.64] insource schedule before because I was
+[53:27.84] not exposed to this one. Uh the fetch
+[53:30.32] docs list doesn't include a schedule.
+[53:33.20] Schedules are documented in the
+[53:35.04] different architecture. So the app was
+[53:37.12] using a manual pgron. What's done now?
+[53:39.76] Manual pgron removed and ins used
+[53:42.88] instead. Probably they need to update a
+[53:44.96] little bit on their MCP and probably
+[53:46.40] they don't saw this use case that
+[53:48.64] somebody like me will be recording a
+[53:50.56] video on some late night to test this.
+[53:53.04] So now we have this uptime check every
+[53:54.72] minute and the secret. Oh, that's a
+[53:57.28] secret tab. Shouldn't be opening that up
+[53:59.12] on especially in a video. But now we
+[54:01.20] have function and now technically in the
+[54:04.16] tables
+[54:06.08] uh we should be able to see this
+[54:10.64] but I'm not able to see.
+[54:14.16] Okay. So can I go ahead uh into the
+[54:17.68] function and trigger this function
+[54:21.12] manually?
+[54:22.96] There's no way to trigger it manually.
+[54:25.12] There should be a button here. There's
+[54:27.36] no way to trigger manually, but I have
+[54:29.28] this in the schedule.
+[54:31.68] So, created at 311,
+[54:34.40] last run on 313
+[54:36.88] and next run is on 314.
+[54:40.80] I guess there is a little bit time
+[54:42.16] mismatch as from my clock,
+[54:45.44] but technically it should be done uh at
+[54:48.16] least once now. And if I go and look
+[54:51.60] into the tables status check, uh
+[54:56.40] I still
+[54:59.60] don't see any new data in status. What's
+[55:04.88] the name of the table? Status checks.
+[55:13.84] Fix that.
+[55:18.88] Okay. Okay, so there is no still data.
+[55:20.56] Now it will check. So now at least our
+[55:22.40] chrons and our functions are fixed.
+[55:24.96] Hopefully I haven't checked the code
+[55:29.20] and now it's going to see that whether
+[55:31.12] this is able to put some data in the
+[55:33.84] table or not.
+[55:37.92] Okay, let it do the job and we'll see
+[55:39.92] again.
+[55:41.84] All right, so we are here and it has
+[55:43.92] fixed it and the fix are very
+[55:45.52] interesting actually. So it still
+[55:48.40] reverted it back. I didn't do anything.
+[55:50.80] It reverted it back entirely in the
+[55:52.72] Postgress and now it's a Postgress chron
+[55:55.68] job again. So PG chron always works. Now
+[55:58.96] the status check and everything. And now
+[56:00.40] it's saying that you don't need to even
+[56:01.60] rebuild the app because it's just a
+[56:03.20] function change. And when I go up here
+[56:05.36] and check it is actually working.
+[56:09.44] Okay. So this is the uptime uh per
+[56:12.08] minute and there's the last 7 days as
+[56:14.72] well. So you can see now it is saying
+[56:16.64] that check has been run. There's been
+[56:19.04] three checks and hopefully within the
+[56:20.96] video it will do its fourth check as
+[56:22.72] well. So this is the up time. This is
+[56:25.76] the up time and this is up. Uh this is
+[56:28.72] good. I can have a response time. But
+[56:30.88] can we also get a minuteby minute GitHub
+[56:35.36] like graph? That would be cool. So let's
+[56:38.88] ask it. Uh, can we get a graph like
+[56:46.56] GitHub for
+[56:50.32] each minute
+[56:56.56] for the URL?
+[57:01.04] Strange requests,
+[57:05.12] but let's see if we can do it. Can it
+[57:07.36] upload it and push it? Again, this has
+[57:10.24] to do more with the cursor side. I guess
+[57:12.88] not on the ins forge side,
+[57:15.84] but hey, no harm in asking. And let's
+[57:20.00] also give it a URL which is uh not
+[57:24.64] working well and I don't know how to
+[57:27.28] find that kind of a URL but I can give
+[57:29.52] it something uh which doesn't exist. So,
+[57:32.48] https
+[57:35.04] and then there is my api dot
+[57:39.52] chicode.com
+[57:42.16] and this will be down api
+[57:49.12] and this will be URL as well. Let's add
+[57:51.44] this and it says JWT expired. I need to
+[57:54.32] relog.
+[57:56.32] Hit a refresh.
+[57:59.12] Oh, that's interesting.
+[58:06.72] chyode.com/appi
+[58:09.36] it doesn't exist
+[58:12.56] down api
+[58:15.44] and if it is not able to oh it is able
+[58:18.64] to add that so down api
+[58:22.32] and it will run the check
+[58:25.44] hopefully let's see
+[58:28.24] how the graphs and everything okay It
+[58:31.12] says the graph is there. But hey, you
+[58:33.44] didn't deploy it.
+[58:36.16] Deploy it.
+[58:39.52] And the fun part is it is deploying on
+[58:41.20] Versel. But I don't know where it is
+[58:42.64] deploying it. They can internally change
+[58:44.32] their architecture from Versell to
+[58:45.68] Netifi or their own AWS. Who cares? It
+[58:48.72] does it for me.
+[58:52.48] And hopefully let's see it has run six
+[58:55.36] checks by the time we have been up. uh
+[58:57.84] the the response time has changed and
+[59:00.16] it's a really nice graph. Uh uptime is
+[59:02.96] always up obviously this is what
+[59:04.80] everyone wants to see but sadly it
+[59:07.20] doesn't happen. I would definitely add
+[59:09.84] uh more onto this one and
+[59:13.12] this also has done one check which is
+[59:15.04] good which is good. So hey we are very
+[59:17.60] close to build our SAS that's good
+[59:21.36] and let's see it has deployed it now
+[59:24.64] probably I have to refresh.
+[59:27.04] Yeah, new login. That means it has done
+[59:29.76] something. One at the rate down dot app.
+[59:41.68] Yeah, I know. Don't do this.
+[59:45.44] Where's the graph?
+[59:52.64] Oh, it it didn't had the graph. What it
+[59:55.04] is doing? uh GitHub style permanent
+[59:57.20] graph grid of the style but where is
+[59:59.20] that graph interaction
+[60:05.36] I don't know where it is putting that
+[60:07.12] graph
+[60:12.08] I want that
+[60:15.20] graph to be in each end point
+[60:21.36] just
+[60:22.96] above the
+[60:27.20] graph of what's the first graph? Uh this
+[60:30.48] is uptime
+[60:35.68] downtime.
+[60:39.04] Where is that graph? Where did you wrote
+[60:40.72] the code? You wrote the code in here.
+[60:44.32] I guess
+[60:49.28] you didn't add that anywhere.
+[60:56.48] Adding the time to timeline chart back.
+[61:01.12] What back? You never added that.
+[61:07.04] No man, I want all three
+[61:15.36] graphs
+[61:18.80] on one page.
+[61:21.20] Do I need to be more explicit with the
+[61:22.80] instruction?
+[61:25.92] For each endpoint, there is a GitHub
+[61:27.84] style. There's uptime, downtime,
+[61:29.76] response time.
+[61:31.76] Are you doing this?
+[61:37.76] I don't want to jump into the code. Uh,
+[61:40.32] so do we need to check in the
+[61:42.16] components? Then we have app.
+[61:45.68] Where is the dashboard? This is the
+[61:48.16] dashboard, I guess.
+[61:50.24] In the dashboard, we have to navigate.
+[61:53.60] Oh, there's a lot of code that it's
+[61:55.60] writing. There's the endpoint detail.
+[62:00.96] And then there's a sign out. This is
+[62:02.72] protected route.
+[62:06.72] Need to understand that code base as
+[62:08.64] well, but I'm not interested in that.
+[62:13.20] And I'll probably say to deploy it.
+[62:18.00] Can I refresh it?
+[62:20.24] H nothing.
+[62:23.28] So hopefully it will do its job. Then
+[62:25.36] I'll come back again and we'll push it
+[62:27.76] more to the limit. I'm not done yet. I
+[62:29.92] want to have more fun.
+[62:32.48] All right. This is very very
+[62:33.92] interesting. So it says I asked it to
+[62:36.16] deploy it and just one command and now
+[62:38.00] it says deploy. But when you go up here,
+[62:40.72] one of our ideal way of checking the
+[62:42.64] deployment is if we hit the refresh, it
+[62:44.40] asks me to login. Uh it does it now. But
+[62:47.28] if I check it up here, there's an error
+[62:48.88] here. So we'll fix this hopefully by the
+[62:51.60] agent itself. Let's see first of all
+[62:53.36] whether it is working or not. I'm hoping
+[62:55.12] it is not
+[62:58.00] down app
+[63:03.92] and let's sign in.
+[63:06.48] Okay, too many pop-ups
+[63:09.04] and we don't see it. That's because
+[63:11.52] somebody needs to go into the deployment
+[63:13.28] see the deployment log that there is an
+[63:15.04] error. And here's the error message. I
+[63:17.68] can copy the metadata. It nicely gives
+[63:20.32] me the error. And what's the error?
+[63:22.16] There's a linting type error. npm run
+[63:24.32] build. And uh hopefully so let's just
+[63:28.32] give it this
+[63:30.48] and hopefully it will be able to fix uh
+[63:33.84] the build failure log as well.
+[63:36.88] This platform is nicely built to capture
+[63:39.68] the essence errors web hook event ID and
+[63:41.92] all of the details. What is required to
+[63:44.40] fix the details? Somebody has thought
+[63:46.16] really well on this one. Anyways, so
+[63:48.48] it's now running the build, planning the
+[63:50.88] next move. Let it do the job. It's doing
+[63:53.44] it really fast. And I'll pause the
+[63:56.56] video. I'll catch up again. That's why
+[63:57.92] I'm saying putting up a comment is
+[63:59.92] really important at this case. It gives
+[64:01.92] me motivation. And uh the ability to
+[64:04.88] keep on recording such videos, pause,
+[64:06.96] record again, pause, record again, and
+[64:08.80] then give you the whole experience that
+[64:10.32] what happened, how it happened so that
+[64:12.48] you can enjoy it. All right. So, looks
+[64:15.28] like the build is succeed. The failing
+[64:17.20] because the endpoint prof was declared.
+[64:19.68] All right. It hasn't deployed it yet.
+[64:22.96] So, retry the deployment. What are you
+[64:26.80] waiting for?
+[64:32.64] And it's thinking running everything.
+[64:34.56] Let's see if we are getting any new
+[64:36.40] deployment ID.
+[64:41.68] What are you doing? Yeah, we are on run
+[64:44.32] everything mode. Deployment started. It
+[64:47.12] will give a user binary. So there we go.
+[64:49.76] And if I refresh this, this one is
+[64:52.16] building now. Let's see if it gets
+[64:54.16] success in the real time.
+[64:57.60] That's nice. Can I click on it? It says
+[65:00.32] meta data. But what are other option?
+[65:03.28] There's a sync. There's a cancel. Sync
+[65:05.84] seems good. Let's hit refresh. It is
+[65:08.48] ready. So technically I should be able
+[65:10.72] to see my graphs now. and log me out
+[65:13.68] again just like always. No. Oh, there we
+[65:16.56] go. There we go. It's nice. So, it says
+[65:18.56] now we have GitHub style graph.
+[65:21.68] This is nice.
+[65:24.40] Ah, this looks so good. And now if the
+[65:26.48] API goes down, uh, then it will show me
+[65:29.28] another graph hopefully.
+[65:32.32] And
+[65:34.00] this is my for chai code API
+[65:37.44] and this is for free API.
+[65:43.36] chico.com/appi
+[65:44.88] the details.
+[65:48.48] Oh, this is nice. Uh let me check why is
+[65:52.08] it showing everything on the dashboard
+[65:53.52] itself. It should be able to show me
+[65:55.20] that in the card structure but probably
+[65:57.20] it has misinterpreted. Now let's test it
+[66:00.48] more.
+[66:02.80] Okay, I'm not done here. Uh for each of
+[66:06.72] the end point
+[66:10.80] give user a toggle
+[66:14.88] to
+[66:16.88] share
+[66:18.64] that view
+[66:21.52] in public.
+[66:26.08] It
+[66:27.84] gives a unique
+[66:31.28] URL to user to share
+[66:37.92] API data or API downtime in public
+[66:45.04] without login. Ah that's very
+[66:48.00] interesting to go for. Uh I know this
+[66:50.48] can consume a lot of resources that's
+[66:51.76] why we are keeping it toggleable and
+[66:53.60] maybe this could be a pro feature so
+[66:55.68] that companies can come and put it up
+[66:58.08] here and we monitor everything and
+[67:00.24] obviously we enhance the application and
+[67:02.40] then it's uptime or downtime verified by
+[67:06.08] third party that would be a great
+[67:09.28] okay so yeah I'm not stopping in here we
+[67:12.48] definitely are going to work more on
+[67:14.00] this one
+[67:16.08] and there are a couple of options it is
+[67:18.24] evaluating
+[67:19.36] Let it do the job. Let's pause again and
+[67:21.52] come back again.
+[67:23.76] All right. So, our new deployment is
+[67:25.60] ready. I haven't seen it yet. We'll see
+[67:27.76] that. All I asked it is to deploy it.
+[67:30.08] That's the command I gave it. And rest
+[67:32.48] of all the stuff was previous. Let's see
+[67:34.40] how it's doing, how well it is going on
+[67:37.04] again. Oh, nice. We have nice graph
+[67:39.36] animations, everything. Let's hit the
+[67:41.28] refresh. Usual stuff is it allows me to
+[67:44.08] log in again.
+[67:45.84] Okay, so one at the rate down app and
+[67:51.92] then
+[67:53.60] really bad password
+[67:58.56] and click on okay and there we go. So uh
+[68:02.48] how do I actually
+[68:05.52] enable this?
+[68:07.76] This is URL. Oh, probably I need to go
+[68:10.40] inside this. The cards are not really
+[68:12.08] nice. So there we go. We have a login.
+[68:14.32] There's something here the toggle uh
+[68:16.80] share this view. No login required. Oh,
+[68:20.32] this is not good. But anyways, so now I
+[68:22.88] have this whatever insource site and
+[68:25.36] share. I can copy this link and let's
+[68:28.24] open this in incognito. We are able to
+[68:30.80] see that. There we go. Our downtime
+[68:32.56] detector.
+[68:34.64] So nice. This is good. And now I can
+[68:38.88] have public page. No login required.
+[68:41.04] Technically company can use it and this
+[68:44.40] will be much more transparent than their
+[68:46.08] own page because we can add a guaranteed
+[68:49.28] up time by third party and we can see
+[68:51.36] how the response time even is
+[68:54.32] and if enough of the budget we can apply
+[68:57.12] the same strategy for AI as well. We can
+[68:59.04] just make a call to hi to API it gives
+[69:01.12] us a response and we can note down that
+[69:03.20] time. That's how I built my own as well
+[69:05.12] and we can host it in public. So there
+[69:08.16] we go. uh not really bad and we we
+[69:11.84] haven't spent much of the time. So
+[69:13.76] definitely we can do the slow response
+[69:15.92] uh this slow response alerts we haven't
+[69:18.32] done but we do have the response time
+[69:20.88] measuring. So this actually is not just
+[69:22.72] a slow time measuring this is actually
+[69:24.96] showing the real time uh what is the
+[69:27.28] response time realtime response time
+[69:29.04] nice so that is good and what else we
+[69:32.08] can do uh SS I think we can do all the
+[69:34.80] monitoring here http port ping all of
+[69:37.60] that we can even do 30 second tell us I
+[69:39.76] I can run a function every second you
+[69:42.08] just pay me uh probably $50 a month and
+[69:45.36] I I can do that add 200 monitors,000
+[69:48.96] monitors I can also give that No
+[69:51.12] problem. With the pricing of Ins, I
+[69:53.12] think I can match easily $29 per month.
+[69:55.44] This is all I can give for $20 maybe.
+[69:59.28] So, full feature status page. We'll give
+[70:01.52] better status page. We'll ask EI to
+[70:03.60] design better. Oh man, this is so fun.
+[70:06.48] This whole video was so fun to record.
+[70:09.52] I'll not even delete this. I'll keep
+[70:11.76] this one. But one thing I'll do before I
+[70:13.68] forget this is in the O configuration.
+[70:17.28] Now it's time to turn on because I don't
+[70:19.20] want people and I can do a verification
+[70:21.36] or link. That's super nice. And I'll
+[70:24.08] just save this so that if anybody logs
+[70:26.00] in now I can just work with this. O
+[70:29.28] methods email is fine. What else do I
+[70:32.48] need to do?
+[70:34.48] I think I can have a domain connected
+[70:37.60] somewhere.
+[70:40.00] Okay. API keys and everything is nice.
+[70:42.72] Deployment
+[70:44.80] visit is all good. domains. We do have
+[70:47.92] domains
+[70:49.76] and we can add a custom domain as well.
+[70:52.56] Can we create ins? Can we call it as
+[70:55.84] downtime
+[70:57.52] insight?
+[70:59.12] Save it.
+[71:01.44] There we go. This one is much better.
+[71:04.56] So, we have our own custom domain now.
+[71:07.52] Let's see. There we go. Downtime
+[71:09.76] detector uh monitor any URL anytime. Add
+[71:13.52] up to five endpoint. We ping them every
+[71:15.60] minute and show that time. That is nice.
+[71:17.84] So all that's all it takes and feel free
+[71:19.76] to visit downtime. Fforge.
+[71:23.36] This is my website which we built in the
+[71:25.44] video. Uh try to use it. Share the URL
+[71:29.12] and let's see what happens and how much
+[71:31.28] we can actually take on this uh hit on
+[71:34.24] this database and on this back end. So
+[71:36.40] feel free to add your own downtime. You
+[71:38.08] can add up to five and uh you can even
+[71:40.64] share the page. So if you're watching
+[71:41.84] this video, do create an account. uh do
+[71:44.16] add some of the PE uh URLs which usually
+[71:46.64] goes down and uh share the whole URL and
+[71:50.48] that would be pretty nice. There we go.
+[71:53.68] So this was a pretty cool stream. I
+[71:56.48] enjoyed a lot. Not a stream actually a
+[71:58.56] video but you can watch it as a stream.
+[72:00.48] So we built a whole startup without
+[72:02.08] writing a single line of code which is
+[72:03.84] fun. And you also realize that at some
+[72:06.08] points it was not all doing well but I
+[72:07.92] had to nudge it in the right direction.
+[72:09.76] If I had no knowledge about the crons,
+[72:11.68] how the function works, uh when the
+[72:13.52] chron runs, how it's stored in the DBs
+[72:15.20] and how to share that, it it wouldn't be
+[72:17.68] possible. But you don't need to be a too
+[72:20.16] much expert. You can also try these out.
+[72:22.08] And again, my always take is curiosity
+[72:24.64] is the number one thing that anybody
+[72:26.56] should have. Uh writing code, not
+[72:28.32] writing to code doesn't really matter.
+[72:30.08] You can eventually write more code, fix
+[72:31.76] these things. If there is a critical
+[72:33.44] issue, you can always jump into the
+[72:34.72] codebase since you know the all code and
+[72:36.72] where it is adding the things, not
+[72:38.08] adding the things. We can do all of that
+[72:39.84] as well. But having this ability to ship
+[72:42.32] products this fast is is the reality. I
+[72:46.24] wouldn't be shy to say that hey don't
+[72:48.08] write this. If it is possible do it.
+[72:50.48] There will be another opportunities or
+[72:52.40] how the things will merge and uh
+[72:54.24] deviate. But one thing is for sure
+[72:56.24] foundation is the most important thing
+[72:58.40] in the age of AI. If you don't know how
+[73:00.40] things works, how the system works, the
+[73:02.08] design of the system, where to nudge the
+[73:04.32] AI in what direction, then it can be a
+[73:06.64] little bit troublesome. So yeah, but
+[73:09.84] that's good. I enjoyed this. I will do
+[73:12.08] it more. Uh if you want me to do it
+[73:14.08] more, uh do tweet and do let me know in
+[73:16.08] the comment section. I would love to do
+[73:17.28] this this time not with the cursor but
+[73:19.92] probably some different tool whichever
+[73:21.52] you say claude or open AAI codeex
+[73:23.92] whatever you want. I would love to test
+[73:25.68] that. So that is it and definitely I'll
+[73:28.24] leave the link in the description
+[73:29.52] section. You try it out. You test it out
+[73:31.28] and at least try and test out my
+[73:33.12] downtime detector. What more feature you
+[73:34.96] want me to add it? We'll do it in the
+[73:36.48] video itself. No more behind the scene.
+[73:38.96] Uh that is it. Hope you enjoyed this.
+[73:40.80] Let's catch up in the next such video.

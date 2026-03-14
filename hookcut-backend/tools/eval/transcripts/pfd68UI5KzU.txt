@@ -1,0 +1,286 @@
+[0:01.31] [music]
+[0:03.36] Hello everyone, welcome back to the
+[0:05.04] school. In today's video, we are going
+[0:06.64] to understand about DNS. How does a
+[0:09.60] browser know which web page to hit? Do
+[0:12.08] they know by domain name or do they get
+[0:14.48] these things through IP addresses? Let's
+[0:17.28] find out. So whenever on our browser or
+[0:20.72] on our machine whenever we write any
+[0:23.60] address let's say telescope.com it is
+[0:26.08] going to redirect us to the telescope
+[0:28.72] page which is our homepage. Maybe some
+[0:31.76] banners here, maybe some courses section
+[0:33.92] here. It is like this only. Now how do
+[0:38.16] our browser figure out which page to
+[0:40.72] show? Because as humans we communicate
+[0:43.76] through names but systems don't
+[0:45.60] communicate through names. In order to
+[0:47.68] establish the communication between one
+[0:49.76] system to another system, we need IP
+[0:52.24] addresses. So that means there should be
+[0:54.56] some place in between or some system in
+[0:56.96] between our browser or our OS through
+[1:00.40] which we are going to get the correct IP
+[1:03.04] addresses of each and every site. So we
+[1:06.24] will send telescu.com and in return we
+[1:09.20] will get some IP addresses. So this can
+[1:11.52] be the IP address of Tellesco. I'm not
+[1:13.44] exactly sure about the IP address but
+[1:15.36] yeah like this our DNS works. So DNS
+[1:19.52] basically stands for domain name system.
+[1:23.28] Domain means any specific URL or any
+[1:25.92] specific domain. Domain is this only
+[1:28.00] telescope.com. There can be multiple
+[1:30.48] domains telescope.net google.com
+[1:33.28] Facebook.com WhatsApp.com.web
+[1:35.76] I think. But yeah you get the point.
+[1:37.92] These all things are domain. And what is
+[1:39.92] subdomain? If I write any subdomain
+[1:42.48] let's say docs.tlesco.com
+[1:46.48] or any other subdomain let's say course.
+[1:49.04] So they both are subdomains of
+[1:51.12] tlesco.com where telescope.com acts as
+[1:54.56] an umbrella and under which we can
+[1:56.64] create multiple subdomains if and when
+[1:59.12] required. So these are the domain and
+[2:01.20] subdomains. But mind it the machines the
+[2:04.40] computers doesn't communicate with each
+[2:06.72] other through these domain names. So
+[2:08.72] they need IP addresses. Let's figure out
+[2:11.44] ways on which our system can handle the
+[2:13.52] IP addresses. Let's say we are building
+[2:16.00] a browser. Why do we need DNS? Why do we
+[2:19.36] need another system for maintaining the
+[2:22.08] domains? We can basically install or
+[2:25.60] store all the domain name list on our
+[2:27.92] browser only. Now is this even possible?
+[2:31.20] Let's say if we have only two or three
+[2:33.92] websites, maybe 10 websites, we can
+[2:35.76] store their names even 100 also. But the
+[2:38.96] current number of domains which exist in
+[2:41.20] our world is more than 350 million. And
+[2:44.64] as a browser, browser doesn't know which
+[2:47.28] sites I'm going to use. Whether I'm
+[2:48.96] going to use tag overflow one day and
+[2:50.80] Gemini the other. So we can't store all
+[2:53.92] the 350 plus domains into our browser.
+[2:56.48] That will crash our system. So two
+[2:58.56] reasons because of which we can't store
+[3:00.56] the entire domain list on our browser
+[3:03.44] are first thing is it will get heavier
+[3:06.24] and to store such amount of information
+[3:08.72] we need a high storage browser so that
+[3:11.20] will also impact the performance of the
+[3:12.88] system. Now the other point is what if
+[3:16.80] the IP changes after some time. What if
+[3:19.84] let's say I am running any site
+[3:21.68] tles.com. I have purchased my domain
+[3:24.64] from maybe godaddy and tomorrow I decide
+[3:27.36] to discontinue my service from godaddy
+[3:29.68] and I'll move to Google domains. So I'll
+[3:32.32] purchase or renew the domain from there.
+[3:35.04] In that case my IP can be changed. And
+[3:38.72] if it restores I need to reassure that
+[3:41.36] in all the browsers where telescope.com
+[3:43.52] is running I need to update them. I need
+[3:46.24] to send them some update. So through
+[3:48.08] this we can estimate that it can't be
+[3:50.00] stored in one browser and also it can't
+[3:52.72] be stored in a single server also
+[3:54.56] because it will also get heavier. There
+[3:56.48] are more than 350 million domains. That
+[3:58.88] means if we are going to store it in a
+[4:01.04] tabular manner. So the here will be the
+[4:03.20] domain name and the corresponding IP
+[4:05.92] addresses accordingly. So here we will
+[4:08.08] have any domain name such as google.com
+[4:10.40] and here we will have the IP address
+[4:12.48] 1.2.3.4
+[4:14.80] for example. So by this we will create
+[4:17.28] the entire list. This is not possible
+[4:18.96] for a single machine to handle because
+[4:21.36] if that machine breaks then the entire
+[4:23.84] system the entire internet will break.
+[4:26.08] Anyone in the world will not be able to
+[4:28.08] use any internet services or any web
+[4:31.20] pages for that matter. No APIs will get
+[4:33.84] because it all depends on the DNS. So
+[4:36.72] one thing is sure we need a certain kind
+[4:38.80] of system in order to fulfill this
+[4:40.64] requirement. That's why we have one of
+[4:42.80] the most beautifully designed system
+[4:44.96] DNS. Let's start from the high level. So
+[4:47.76] this is our machine which is going to
+[4:50.16] use some internet service provider and
+[4:52.80] under this service provider we have
+[4:54.64] something called as DNS resolver. So
+[4:56.96] this DNS resolver is responsible for us
+[4:59.92] to getting the correct IP of any
+[5:02.16] websites or any domain which we are
+[5:04.40] trying to process. In order to
+[5:06.24] understand this clearly, let me take
+[5:08.00] this and put it aside so that I can draw
+[5:11.04] more things onto our screen. So the
+[5:14.08] first call it is going to make is to our
+[5:17.92] root server. Now there are 13 root
+[5:20.72] servers in this entire world. That means
+[5:24.32] there are 30 companies who own 13 web
+[5:27.76] servers in this entire world. They are
+[5:30.24] not physically 13 but they are
+[5:31.92] categorized into 13. So that means out
+[5:34.96] of these 13 we are going to hit one of
+[5:36.96] them and get the response. These root
+[5:39.04] servers are typically named from A to M
+[5:42.00] like this. Again from this A to M they
+[5:45.36] are owned from various companies. So you
+[5:47.92] can see the complete list of the root
+[5:49.52] servers with the companies which own
+[5:51.68] that root servers on the screen. You
+[5:54.16] don't have to remember all of them. You
+[5:55.68] just have to see and understand that
+[5:57.60] these are the service providers or the
+[5:59.60] root servers from which we are going to
+[6:02.00] get some information in order to process
+[6:04.72] our domain. Now let's come back to
+[6:06.80] screen. As discussed, we were searching
+[6:09.28] for telescope.com. Also I can remove
+[6:12.24] this. Now, now when we are searching for
+[6:14.32] telescope.com, the root server doesn't
+[6:16.96] know anything about telescope.com, but
+[6:18.96] it knows about the tldds which are tople
+[6:22.88] domains. What is tople domain? If I talk
+[6:26.48] about com this is our tople
+[6:29.68] domain.com.net.gov.in.uk.
+[6:35.52] us.education
+[6:37.36] maybe.edu we use them. These all domains
+[6:40.88] are the top level domains of any
+[6:42.72] website. So that means if we need to
+[6:45.04] find out where telescope.com is, we
+[6:47.04] first need to know which server is
+[6:49.20] handling all the coms. So in order to do
+[6:52.00] that, a root server will give the
+[6:54.64] response that okay, you can go to one of
+[6:57.44] the tldds which is handling the tople
+[7:00.56] domain for.com and the root server will
+[7:03.36] return the IP address of that. Maybe
+[7:05.44] this is the IP address and from now we
+[7:07.92] know that we are going to hit any TLDD
+[7:11.04] tople domain for our.com. Now from this
+[7:15.28] TLD we are again not going to get the
+[7:18.00] complete IP address of the site. We are
+[7:20.56] going to get the proper server or the
+[7:23.20] name server or the authoritative servers
+[7:25.92] which are managing the all the IP
+[7:28.08] addresses for our domains. Let's say
+[7:30.48] this is the IP address of our
+[7:32.08] authoritative name server and from this
+[7:34.64] we are going to make another call which
+[7:37.28] are our authoritative name servers and
+[7:39.76] from here we are going to actually get
+[7:42.64] where our telescope.com resides the IP
+[7:45.60] address which was 1928 3841 and once
+[7:49.36] this is captured through our browser the
+[7:52.40] IP then it is going to make the call to
+[7:55.44] telescope.com server and it is going to
+[7:57.84] get the web page which is desired. head
+[7:59.84] for I get it this can be little
+[8:01.52] confusing at start. So let me reiterate
+[8:03.44] it for once. So whenever we click on any
+[8:06.64] site whenever we want to find any site
+[8:09.68] let it be telescope.com it is first
+[8:12.48] going to our service provider internet
+[8:15.20] service provider also you can see um it
+[8:18.72] can go through router and router can
+[8:20.56] also have DNS resolver. So from internet
+[8:23.52] service provider which have DNS resolver
+[8:26.56] this component is going to resolve all
+[8:28.96] our queries for us and ultimately will
+[8:31.76] give us a perfectly fine working IP
+[8:34.64] address for telescope.com or any other
+[8:37.04] site for that matter. So the first step
+[8:39.84] is it will go to the root servers. What
+[8:42.80] is root servers? There are 13 companies
+[8:45.68] who own these root servers. Who doesn't
+[8:49.04] know the IP address of your site
+[8:50.72] directly but knows with TLD to follow.
+[8:54.24] So from root server it is going to check
+[8:57.60] what is your TLD tople domain and in
+[9:01.76] this case it is.com. Now as it is com it
+[9:05.28] is going to get the IP address of the
+[9:07.60] TLD which is handling the com domain. So
+[9:11.12] after this first call now we are going
+[9:13.20] to call the TLD which we get from the
+[9:15.68] root server and from this also we are
+[9:18.96] not going to get the complete IP address
+[9:20.88] of telescu we are going to get on which
+[9:23.52] name server we are going to hit to get
+[9:25.84] the complete IP address of tlesco.com.
+[9:28.96] So from here we are going to get the
+[9:30.80] authoritative name servers IP and
+[9:33.52] accordingly we are going to hit our
+[9:35.44] third and final call to our
+[9:37.76] authoritative name servers. Our
+[9:39.76] authoritative name servers are mostly
+[9:42.56] can be configured in GoDaddy or
+[9:44.80] Hostinger or any other service providers
+[9:47.28] in your content application and from
+[9:49.76] these authoritative name servers we are
+[9:52.24] going to get the IP address of
+[9:54.72] telescope.com. Now in order to click one
+[9:57.84] site we have to do these three
+[9:59.76] operations. This can be heavy right? So
+[10:02.40] this is only done first time and the
+[10:04.48] next time when you click on anything it
+[10:07.20] basically takes the value from cache.
+[10:09.84] Now cache can be stored in three
+[10:11.92] locations here or more than three if you
+[10:14.00] think about it but three are definite
+[10:16.32] locations. The first is the DNS resolver
+[10:19.52] can have the cache to have all the
+[10:22.32] common IP addresses which we are going
+[10:24.08] to take or the all the common domains
+[10:26.64] which we are trying to hit. it can store
+[10:29.20] it here. Also on our system, we have two
+[10:32.56] things. One is OS and one is browser. In
+[10:35.52] both of these areas, we can basically
+[10:37.44] add that domain and the IP address in
+[10:40.08] order to get the details fast. So
+[10:42.64] browser also maintain that cache. OS
+[10:44.80] level also we can basically maintain the
+[10:47.76] cache and on a DNS resolver side also a
+[10:51.36] cache is maintained in order to get the
+[10:53.36] details fast. Now when we are at this
+[10:56.08] topic let me tell you about one more
+[10:57.76] thing that whenever we create domain
+[10:59.92] name systems like this docs or
+[11:01.92] subdomains these all entirely creates a
+[11:05.92] zone in the authoritative name server
+[11:09.20] that means telescope.com including all
+[11:11.84] the subdomains. So one zone can contain
+[11:14.96] multiple domain list which will include
+[11:17.92] only the domains specifically to that
+[11:20.40] particular main domain. Okay. And
+[11:23.20] through this it is easier to get to the
+[11:25.52] main domain. So in this case whenever we
+[11:28.40] are hitting the root server we are
+[11:30.32] getting the IP of TLD again hitting the
+[11:32.88] TLD getting the IP of authoritative name
+[11:35.84] server and in authoritative name servers
+[11:38.48] we can have different zones attached to
+[11:41.52] different domains and in this zone if it
+[11:44.56] is Tellesco zone in that case all the
+[11:47.52] domains which are associated with
+[11:49.12] telescope.com will be here. So if
+[11:51.68] instead of telescope.com if we are
+[11:53.68] hitting courses.talesco.com
+[11:55.92] and from this the authoritative name
+[11:58.32] server will get that this is our telesc
+[12:00.72] zone and in telescop zone we will get
+[12:03.36] the courses.talesco.com
+[12:05.84] IP address also. So yeah this is it for
+[12:08.48] DNS for now. I hope you understand it.
+[12:11.28] If you get it let me know in the
+[12:12.96] comments. If you have any queries also
+[12:14.64] let me know in the comments. We'll see
+[12:16.40] you around in the next video. Thank you.

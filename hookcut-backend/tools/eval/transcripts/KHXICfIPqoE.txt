@@ -1,0 +1,233 @@
+[0:00.56] In our previous lecture, we have
+[0:02.48] understood single inheritance. Now in
+[0:05.68] this lecture, we will understand the
+[0:07.52] second type of inheritance which is the
+[0:11.04] multilevel inheritance. So without any
+[0:13.92] further delay, let's get started with
+[0:15.60] this lecture and let's see what are the
+[0:17.60] topics.
+[0:19.20] There's only one topic and the name of
+[0:20.96] the topic is multi-level inheritance.
+[0:24.00] Now let's understand what is multi-level
+[0:26.40] inheritance.
+[0:27.92] Multi-level inheritance can be thought
+[0:30.56] of as a chain of inheritance where a
+[0:33.60] class can inherit from a derived class.
+[0:37.52] So we can think of multi-level
+[0:39.76] inheritance as a chain of inheritance
+[0:43.68] and it is possible because a class can
+[0:46.96] inherit from a derived class.
+[0:50.64] Now to understand this point properly,
+[0:52.96] let's consider the syntax of the
+[0:54.88] multi-level inheritance. Here is how the
+[0:57.44] syntax looks like. Here I'm assuming
+[1:00.24] this is the base class. We have class A.
+[1:04.24] Then we have class B which is inheriting
+[1:07.20] from class A. So we can say class B is
+[1:11.68] derived from class A.
+[1:15.04] We also have class C which is inheriting
+[1:18.56] from class B. Understand that class C is
+[1:22.88] inheriting from class B. This means
+[1:26.48] class C is derived from class B and we
+[1:29.60] know this that class B is the derived
+[1:32.08] class. Here this class is inheriting
+[1:34.80] from a derived class. So here we have a
+[1:37.84] multi-level inheritance and this can be
+[1:40.56] visualized like this. C is inheriting
+[1:44.16] from B and B is inheriting from A. This
+[1:47.84] is what we can observe. C is inheriting
+[1:50.56] from B and B is inheriting from A.
+[1:56.32] So with this we have understood what is
+[1:58.48] multilevel inheritance and how it looks
+[2:01.44] like. Now let's understand how to
+[2:04.40] implement multi-level inheritance with
+[2:06.96] the help of a C++ program. Here is the
+[2:10.40] example program. Here is the class
+[2:12.72] grandparent with public member function
+[2:14.96] house that allows us to display
+[2:17.28] grandparent owns a house.
+[2:20.32] Then after this we have the class parent
+[2:23.36] which is inheriting from the class
+[2:25.76] grandparent.
+[2:27.44] So this is the derived class of the
+[2:30.16] class grandparent.
+[2:32.48] Now here we can observe public
+[2:34.48] inheritance is applied. Therefore, this
+[2:37.44] public member function is treated as the
+[2:39.76] public member function of the class
+[2:42.16] parent and it also has its own public
+[2:46.08] member function car that allows us to
+[2:48.24] display parent owns a car.
+[2:51.92] After this, we have the class child
+[2:54.00] which is inheriting from the class
+[2:56.72] parent. Here you can observe this class
+[3:00.00] is inheriting from a derived class. And
+[3:03.60] this is what we observe in multi-level
+[3:05.52] inheritance.
+[3:07.36] Here we form a chain of inheritance
+[3:09.44] where a class can inherit from a derived
+[3:12.72] class. Here this class is inheriting
+[3:15.28] from the derived class parent. Here also
+[3:18.24] we have the public inheritance.
+[3:20.16] Therefore, these two member functions
+[3:23.12] are now the public member functions of
+[3:25.76] this class child. Also, it has its own
+[3:28.80] public member function laptop that
+[3:31.04] allows us to display child owns a
+[3:33.76] laptop.
+[3:36.40] I hope this program is clear to you.
+[3:39.20] Now, here we can observe that child is
+[3:42.32] inheriting from parent and parent is
+[3:45.36] inheriting from grandparent. So here we
+[3:48.08] have a chain of inheritance.
+[3:51.52] I hope this is clear to you. So clearly
+[3:53.68] this is multi-level inheritance. Now
+[3:57.04] let's define the main function. Inside
+[3:59.28] the main function we will define the
+[4:01.44] object of the class child and we will
+[4:04.24] call these functions with the help of
+[4:06.48] the object of this class. Like this.
+[4:10.00] Here we have the main function with the
+[4:11.92] object of the class child which is C.
+[4:14.48] And through this object we are calling
+[4:16.72] house, car and laptop functions.
+[4:20.80] It is possible to call all these
+[4:23.12] functions with the help of the object of
+[4:25.52] this class child because these functions
+[4:29.28] are all the public member functions of
+[4:31.84] this class as well. So when we execute
+[4:35.28] this program we know we will get this
+[4:37.20] output. Grandparent owns a house, parent
+[4:40.48] owns a car and child owns a laptop.
+[4:45.28] I hope this concept is clear to you. Now
+[4:48.32] let's say in place of these public
+[4:50.80] access specifiers, we have protected
+[4:54.32] access specifiers.
+[4:57.60] Now what happens in this case? Here we
+[5:00.16] have the protected access specifier.
+[5:02.96] This means this public member function
+[5:05.28] is now treated as the protected member
+[5:08.40] function of the class parent.
+[5:12.56] This is how it works. We know that if we
+[5:14.96] specify the protected specifier then the
+[5:19.04] public member functions get transformed
+[5:21.76] to protected member functions in the
+[5:25.12] derived class. Here this public member
+[5:28.48] function will be transformed to
+[5:30.72] protected member function in this class
+[5:34.40] and we also have this public member
+[5:36.08] function car in this class.
+[5:38.80] Here also we have the protected access
+[5:40.80] specifier. This means these two member
+[5:43.76] functions are now the protected member
+[5:46.72] functions of the class child. This is
+[5:50.24] because protected member function
+[5:52.72] remains protected in the derived class
+[5:56.24] and public member function becomes
+[5:59.28] protected in the derived class. That is
+[6:02.16] why now we have these two member
+[6:04.80] functions inside this class as protected
+[6:08.64] member functions.
+[6:10.88] Also we have this public member function
+[6:12.88] laptop.
+[6:14.48] Now this means we can call this function
+[6:17.12] with the help of the object of this
+[6:19.28] class inside the main function. But now
+[6:22.96] we cannot call these functions with the
+[6:26.08] help of the object of this class inside
+[6:28.96] the main function. So these two lines
+[6:31.44] are now invalid.
+[6:35.12] In order to execute this program, we
+[6:37.36] need to remove these two lines.
+[6:40.08] Now we have just this line that allows
+[6:42.32] us to display this specific message on
+[6:45.04] the screen. So when we execute this
+[6:46.88] program we will get the output child
+[6:49.68] owns a laptop.
+[6:53.36] Now let's say we want to get the
+[6:55.36] previous output. The output that we were
+[6:57.92] getting before.
+[7:00.48] In order to get that output, we need to
+[7:03.60] call these two functions within the
+[7:06.96] function laptop like this. It is
+[7:10.88] possible to call these functions within
+[7:12.88] this class because these functions are
+[7:15.52] now the protected member functions of
+[7:17.60] this class. Here I'm calling the house
+[7:20.96] function. This means this message will
+[7:23.20] be displayed first. Then after this I'm
+[7:25.92] calling the car function. So we will get
+[7:28.48] this message next. After this this
+[7:31.60] message will be displayed and this is
+[7:33.36] what we want. So when we execute this
+[7:36.08] program we will get this output. This is
+[7:38.56] the output we were getting before as
+[7:40.40] well.
+[7:42.40] Now let's say in place of these
+[7:44.56] protected access specifiers we have
+[7:47.28] private access specifiers.
+[7:50.24] Now what happens in this case? What
+[7:52.32] change we will observe in the behavior
+[7:54.64] of inheritance?
+[7:57.20] Here we have the private access
+[7:59.04] specifier. This means this public member
+[8:01.60] function is now treated as the private
+[8:04.08] member function of this class parent.
+[8:08.24] Now this means we cannot access this
+[8:11.12] function from the object of this
+[8:14.32] specific class and no other class can
+[8:17.12] access this function as well through the
+[8:20.16] parent class.
+[8:24.00] This will be completely clear in a
+[8:25.76] moment. Here we can observe that this
+[8:28.40] member function is now the private
+[8:30.40] member function of the class parent. And
+[8:32.96] we also have this public member
+[8:34.48] function. Now because of this private
+[8:37.04] access specifier, this public member
+[8:39.76] function is now treated as the private
+[8:42.48] member function of the class child. But
+[8:45.52] what about this function house?
+[8:50.00] As we know this member function is the
+[8:52.80] private member function of this class
+[8:55.52] and class child is inheriting from this
+[8:58.88] specific class. Therefore, we will not
+[9:01.84] be able to access this function because
+[9:04.88] this is private to this class and
+[9:06.96] private members are not directly
+[9:09.52] accessible in the derived classes. So
+[9:12.96] clearly the derived class of this class
+[9:16.00] would not be able to access the function
+[9:18.72] house directly.
+[9:21.04] Here we only have the private member
+[9:22.96] function car and the public member
+[9:24.96] function laptop. Now this means we
+[9:27.84] cannot call house function like this. We
+[9:31.12] can only call the car function. This is
+[9:33.28] what I have mentioned here. Only car is
+[9:35.44] accessible not the house.
+[9:38.88] Now in order to get the output as before
+[9:42.48] we need to call this function within
+[9:45.04] this function like this we can call this
+[9:48.24] function. There is no problem here. Now
+[9:51.12] everything is fine. When we execute the
+[9:53.52] program we will get the output as
+[9:55.92] before. Here we can observe first the
+[9:58.64] laptop function will be called. Inside
+[10:01.20] the laptop function we are calling the
+[10:03.20] car function. Inside car function we are
+[10:06.08] calling the house function. This is the
+[10:09.04] reason why this message is displayed
+[10:11.28] first. After this we are getting this
+[10:13.92] message and then we are getting this
+[10:16.56] message. I hope this is clear to you. So
+[10:20.32] this is how multilevel inheritance works
+[10:23.28] with different access specifiers. I hope
+[10:26.72] this concept is completely clear to you.
+[10:29.04] So with this we are done with the topic
+[10:32.32] multilevel inheritance and this means we
+[10:36.08] are done with this lecture. Okay friends
+[10:39.20] this is it for now. Thank you for
+[10:40.88] watching this lecture. I will see you in
+[10:42.96] the next one.
+[10:49.11] >> [music]

@@ -1,0 +1,2626 @@
+[0:00.61] [Music]
+[0:01.52] welcome to the complete python Mastery
+[0:03.60] course in this course you're going to
+[0:05.12] learn everything about python from
+[0:06.88] Basics to more advanced concepts so by
+[0:09.08] the end of the course you'll be able to
+[0:10.92] confidently use Python for AI machine
+[0:13.28] learning web development and automation
+[0:15.76] if you have been looking for a
+[0:17.00] comprehensive easy to follow well
+[0:19.00] organized and practical course that
+[0:21.00] takes you from Zero to Hero this is the
+[0:23.04] right python course for you you don't
+[0:24.64] need any prior knowledge of python to
+[0:26.52] get started I will explain everything
+[0:28.60] step by step in simple terms so you can
+[0:31.00] build a solid foundation I'm m hamadani
+[0:33.80] a software engineer with over 20 years
+[0:35.84] of experience and I've taught Millions
+[0:38.20] how to code and become professional
+[0:40.04] software Engineers through my YouTube
+[0:41.84] channel and online school quote withm
+[0:43.96] mar.com if you're new here make sure to
+[0:46.48] subscribe as I upload new videos all the
+[0:48.72] time now let's jump in and get
+[0:51.37] [Music]
+[0:57.44] started in this course you're going to
+[0:59.44] learn everything you need to get started
+[1:01.32] with python just be aware that I've
+[1:03.44] designed this course for beginners so if
+[1:05.44] you have some programming experience
+[1:07.12] check out my other python course for
+[1:09.12] developers you can see the link on the
+[1:11.12] top right corner of this video so python
+[1:14.88] is the world's fastest growing and most
+[1:17.64] popular programming language not just
+[1:19.92] amongst software developers but also
+[1:22.68] amongst mathematicians data analysts
+[1:26.12] scientists accountants Network engineers
+[1:29.28] and even kids kids in fact it's the
+[1:31.68] ideal programming language to learn
+[1:33.60] first but what makes python so special
+[1:36.64] here are six reasons with python you can
+[1:39.36] solve complex problems in less time with
+[1:42.52] fewer lines of code than many other
+[1:45.08] languages that's why huge companies like
+[1:47.96] Google Spotify Dropbox and Facebook have
+[1:51.96] embraced this beautiful and Powerful
+[1:54.24] language here is an example let's say we
+[1:57.08] want to extract the first three
+[1:59.32] characters of the text hello work this
+[2:02.28] is the code we would have to write in C
+[2:05.24] this is how we would do this in
+[2:06.88] JavaScript and here's how we would do it
+[2:09.16] in Python see how clean and simple the
+[2:12.20] language is and that's just the
+[2:14.00] beginning python is a multi-purpose
+[2:16.48] language and you can use it for a wide
+[2:18.28] range of jobs such as data analysis Ai
+[2:21.68] and machine learning writing automation
+[2:24.28] scripts building web mobile and desktop
+[2:27.56] applications as well as software testing
+[2:30.00] or even hacking so if you want a
+[2:32.40] high-paying long lasting career in any
+[2:35.24] of these areas especially Ai and machine
+[2:38.04] learning python is the language to put
+[2:41.44] those opportunities at your fingertips
+[2:44.12] in fact according to indeed.com the
+[2:46.88] average salary of a python developer in
+[2:49.24] the US was over
+[2:52.08] $115,000 in March 2018 and here are four
+[2:56.12] more reasons that make python the most
+[2:58.64] desirable language python is a highle
+[3:01.52] language so you don't have to worry
+[3:03.16] about complex tasks such as memory
+[3:05.76] management as you do in
+[3:07.56] C++ it's crossplatform which means we
+[3:10.72] can build and run python apps on Windows
+[3:13.76] Mac and Linux it has a huge community so
+[3:17.32] whenever you get stuck there is someone
+[3:19.12] out there to help and it has a large
+[3:22.00] ecosystem of libraries Frameworks and
+[3:25.00] tools whatever you want to do it is
+[3:27.32] likely that someone else has done it
+[3:29.00] before because because python has been
+[3:30.80] around for over 20 years there are two
+[3:34.12] versions of python out there python 2
+[3:36.80] which is the Legacy version of python
+[3:38.96] and is going to be supported until year
+[3:41.52] 2020 and Python 3 which is python for
+[3:44.48] the future in this course you're going
+[3:46.56] to Learn Python 3 hi my name is msh
+[3:49.64] hamadani and I'm going to be your
+[3:51.12] instructor in this course I'm a software
+[3:53.28] engineer with 18 years of experience and
+[3:56.04] I've taught way over a million people
+[3:58.44] how to codee or how to become top
+[4:01.32] professional software Engineers to learn
+[4:03.92] more about me and my courses head over
+[4:06.04] to Cod with.com all right now let's get
+[4:11.80] started all right the first thing I want
+[4:13.88] you to do is open your browser and head
+[4:16.24] over to python.org on this page under
+[4:19.24] downloads you can download the latest
+[4:21.32] version of python at the time of this
+[4:23.24] video the latest version is python 3.13
+[4:26.64] chances are in the future when you're
+[4:28.24] watching this video there is a new newer
+[4:30.04] version of python available don't worry
+[4:32.20] what I'm going to show you in this
+[4:33.24] tutorial will apply to Future versions
+[4:35.44] of python as well so go ahead and
+[4:37.32] download the latest
+[4:38.76] version now if you're on windows before
+[4:41.20] you click install make sure to check
+[4:43.28] this little box here that says add
+[4:45.40] python to path this step is very
+[4:47.52] important and it will save you a lot of
+[4:49.32] headaches later so check this box and
+[4:51.52] follow the
+[4:53.08] installation now to verify that python
+[4:55.56] is successfully installed click this
+[4:58.48] magnifier and and here in this search
+[5:00.72] bar type
+[5:02.28] terminal now here in the terminal window
+[5:05.00] type python D- version this verifies
+[5:08.60] that we have successfully installed
+[5:10.48] python
+[5:11.92] 3.13 now if you're on Mac press command
+[5:14.80] and space to bring up the spotlight
+[5:17.08] search here type
+[5:19.52] terminal now to verify that we have
+[5:21.72] installed python correctly on Mac we
+[5:24.24] should type Python 3
+[5:27.24] space-- version
+[5:29.76] so as you can see I've successfully
+[5:31.64] installed python 3.13 on this
+[5:40.00] machine so this environment you see here
+[5:42.68] is what we call python interpreter which
+[5:45.84] is basically a program that executes
+[5:48.24] python code we can type our python code
+[5:50.56] in a file and give it to this
+[5:51.92] interpreter or we can type our code
+[5:54.20] directly here in this interactive shell
+[5:57.36] so here we can write an expression like
+[5:59.24] two + 2 in programming an expression is
+[6:02.72] a piece of code that produces a value so
+[6:05.80] here when we add 2 + 2 we get a value
+[6:09.24] that is why we refer to this piece of
+[6:10.96] code as an expression so enter we get
+[6:14.12] four let's try a different kind of
+[6:16.36] expression let's see if two is greater
+[6:19.52] than one we get true which is an example
+[6:22.84] of a Boolean value you're going to learn
+[6:24.88] about these Boolean values in the next
+[6:26.64] section now what if we type two is
+[6:29.68] greater than five enter we get false so
+[6:34.20] in programming we have true and false
+[6:36.84] which are similar to yes and no in
+[6:39.24] English now what if we type two is
+[6:42.28] greater than but we don't add a second
+[6:44.40] value here just press
+[6:46.16] enter we get a syntax error in
+[6:49.96] programming syntax means grammar so just
+[6:52.72] like we have the concept of grammar in
+[6:54.80] the languages that we speak we have the
+[6:56.84] exact same concept in programming if we
+[6:59.24] write a sentence that is not
+[7:01.04] grammatically correct chances are some
+[7:03.20] people may not understand that sentence
+[7:05.60] so in this example we have this
+[7:07.44] expression which is incomplete it
+[7:09.76] doesn't have the right grammar or syntax
+[7:12.36] that is why python interpreter is
+[7:14.80] complaining by returning an error so
+[7:17.56] this interactive shell is a great way to
+[7:19.72] quickly experiment with a bit of python
+[7:21.72] code but that's not how we build real
+[7:24.00] world applications to do that we need a
+[7:26.32] code editor and that's what I'm going to
+[7:28.24] show you in the next lecture
+[7:31.08] [Music]
+[7:35.84] when it comes to typing python code you
+[7:38.08] have two options you can use a code
+[7:40.60] editor or an IDE which is short for
+[7:44.00] integrated development environment an
+[7:46.96] IDE is basically a code editor with some
+[7:49.72] fancy features like autoc completion
+[7:52.32] which means as you type code this
+[7:54.36] feature helps you complete your code so
+[7:56.56] you don't have to type every character
+[7:58.32] by hand it's a per activity boosting
+[8:00.56] feature it also gives you additional
+[8:02.80] features like debugging which means
+[8:05.28] finding and fixing bugs in your programs
+[8:07.92] testing and so on for both code editors
+[8:10.64] and Ides there's so many options out
+[8:12.72] there the most popular code editors are
+[8:15.64] vs code atom and Sublime you can use the
+[8:19.16] code editor that you prefer in terms of
+[8:21.84] the Ides again there are so many options
+[8:23.84] out there the most popular one is pie
+[8:26.36] charm in this course I'm going to use vs
+[8:29.12] code or Visual Studio code because
+[8:31.36] that's my favorite code editor later in
+[8:33.92] the course I will show you how to
+[8:35.36] install a Plugin or an extension that
+[8:37.84] will convert vs code to a powerful ID so
+[8:41.32] before going any further head over to
+[8:43.44] code. visual studio.com and download the
+[8:46.60] latest version of vs
+[8:54.04] code now with vs code open on the top
+[8:58.08] from the file menu go to to
+[9:00.28] open and somewhere on your disk create a
+[9:03.12] new
+[9:04.00] folder let's call this folder hello
+[9:08.24] world and then open it beautiful now
+[9:12.48] click this icon on the top this opens up
+[9:15.48] the Explorer panel in this panel you can
+[9:18.00] see all the files and folders in your
+[9:20.28] project so let's add a new file and call
+[9:24.56] that
+[9:25.80] app.py so all our python files should
+[9:28.76] have the p my extension press enter now
+[9:33.08] let's close
+[9:34.28] this and type a bit of python code in
+[9:37.44] this lecture we're going to use one of
+[9:38.76] the built-in functions in Python called
+[9:41.60] print so in Python we have a lot of
+[9:43.92] buil-in functions for performing various
+[9:46.12] kinds of tasks for example as a metaphor
+[9:48.76] think of the remote control of your TV
+[9:51.20] on this remote control you have a bunch
+[9:53.08] of functions like turn on turn off
+[9:55.68] change the channel change the volume and
+[9:57.60] so on these are the build buin functions
+[10:00.28] in your TV we have the same concept in
+[10:02.96] Python and many other programming
+[10:04.88] languages so one of these built-in
+[10:07.04] functions that comes with python is
+[10:10.32] print and we can use this to print
+[10:13.04] something on the screen now whenever you
+[10:15.52] want to use a function you should open
+[10:17.84] and close parentheses in programming we
+[10:20.88] say we're calling the print function
+[10:23.76] calling a function means executing it
+[10:26.96] now let's display the hello world
+[10:28.88] message on the screen whenever you want
+[10:31.28] to work with text you should put your
+[10:33.24] text in between quotes either double
+[10:36.88] quotes or single quote now I'm going to
+[10:39.76] go with double quote and add hello
+[10:44.56] world and then put a happy Persian cat
+[10:47.72] here beautiful save the changes with
+[10:50.72] command and s on Mac or control and S on
+[10:54.36] Windows now to execute this code we need
+[10:57.20] to go back to command prompt on Windows
+[10:59.40] or terminal on Mac but the good news is
+[11:02.36] that we don't have to switch programs
+[11:04.48] here in vs code we have an integrated
+[11:06.88] terminal so press control and back tick
+[11:11.12] that is the key before number one on
+[11:13.44] your keyboard that is just below the
+[11:16.04] escape
+[11:17.20] button so this is our integrated
+[11:19.60] terminal now if you're on Windows type
+[11:22.28] python if you're on Mac or Linux type
+[11:24.76] Python 3 and next to that add the name
+[11:27.88] of our file that is app p and here's our
+[11:32.60] hello word message in the terminal
+[11:35.08] beautiful now let's take this to the
+[11:36.96] next level and make it a little bit more
+[11:38.88] interesting let's close this terminal
+[11:41.04] window by pressing control and back tick
+[11:44.76] and add a second line of code so one
+[11:47.48] more time
+[11:48.76] print this time let's add quotes with a
+[11:52.04] star in between them now let's say you
+[11:55.08] want to repeat this star 10 times so
+[11:57.76] here we can multiply this is by 10 save
+[12:01.76] the changes open up the terminal and run
+[12:05.28] our
+[12:06.12] program and you can see this star is
+[12:09.20] repeated 10
+[12:10.48] times so as you see the instructions in
+[12:13.08] our program are executed from top to
+[12:15.84] bottom in order in the next lecture I'm
+[12:18.44] going to show you how to convert this vs
+[12:20.44] code to a powerful IDE for building
+[12:23.12] python applications
+[12:26.10] [Music]
+[12:30.24] in this lecture I'm going to show you
+[12:31.56] how to convert vs code to a powerful IDE
+[12:34.84] by using an extension called python with
+[12:37.96] this extension or plug-in we get a
+[12:40.08] number of features such as linting which
+[12:42.88] basically means analyzing our code for
+[12:45.40] potential errors we also get debugging
+[12:48.48] which involves finding and fixing errors
+[12:51.24] we'll look at this later in the course
+[12:53.20] we also get autoc completion which
+[12:55.44] basically helps us write code faster so
+[12:57.96] we don't have to type every character we
+[13:00.28] get code formatting which is all about
+[13:02.52] making our code clean and readable just
+[13:05.12] like how we format our articles
+[13:07.28] newspapers books to make them clean and
+[13:10.00] readable we get unit testing which
+[13:12.52] involves writing a bunch of tests for
+[13:14.76] our code we can run these tests in an
+[13:17.48] automated fashion to make sure our code
+[13:19.84] is behaving correctly and finally we get
+[13:22.68] code Snippets which are reusable code
+[13:25.60] blocks that we can quickly generate so
+[13:27.68] we don't have to type them all by hand
+[13:29.96] now don't worry about memorizing any of
+[13:31.64] these as we go through the course you're
+[13:33.44] going to learn about these
+[13:35.36] features so back to vs code on the left
+[13:38.32] side click this icon this opens the
+[13:41.08] extensions panel where we can install
+[13:43.08] additional extensions to enhance vs code
+[13:45.64] up here in the search bar search for
+[13:49.04] python all right look we have an
+[13:51.48] official extension for python from
+[13:53.64] Microsoft so go ahead and install this
+[13:57.84] now you might see a box here saying
+[13:59.68] reload if you see that make sure to
+[14:01.48] click it to reload vs code now with this
+[14:03.92] extension installed we have a ton of new
+[14:05.92] functionality in vs code for writing
+[14:07.84] python code the first one I'm going to
+[14:09.56] show you in this lesson is the ability
+[14:11.40] to run our code so back to app.py look
+[14:15.60] with this extension installed now we
+[14:17.56] have this play icon on the top for
+[14:19.52] running our code so if we click it we
+[14:22.32] can see the output of our program in the
+[14:24.40] terminal window
+[14:31.60] in this lecture I'm going to show you
+[14:32.84] linting and action so let's start by
+[14:35.52] writing some invalid code like this
+[14:38.24] print space with no parenthesis and then
+[14:42.20] hello world earlier I told you that
+[14:45.08] print is a built-in function and
+[14:46.96] whenever you want to use or call a
+[14:48.68] function you should always use
+[14:50.76] parenthesis now to be more precise this
+[14:53.08] is actually valid python 2 code but
+[14:55.84] because we're using Python 3 here this
+[14:58.00] is invalid code from python 3's point of
+[15:01.04] view so now when I save the changes you
+[15:04.48] can see this red underline here let's
+[15:07.40] hover our Mouse over this underline you
+[15:10.52] can see this tool tip it's coming from
+[15:12.64] Pilot and here's the error message
+[15:14.68] missing parenthesis in call to print did
+[15:18.00] you mean print with parenthesis so this
+[15:20.44] is the benefit of lenting as you're
+[15:22.64] writing code you can see potential
+[15:24.68] problems in your code you don't have to
+[15:26.52] wait to run your program to see these
+[15:28.60] errors
+[15:30.08] so now if we put parenthesis here and
+[15:34.44] save the changes you can see that red
+[15:36.68] underline is gone let's look at another
+[15:40.08] error let's type two plus and then save
+[15:43.52] the changes earlier we run this code in
+[15:46.92] Python interpreter's interactive shell
+[15:49.88] there we got a syntax or grammar error
+[15:53.52] so if you hover your mouse here one more
+[15:55.80] time you can see pilent is telling us
+[15:58.36] that this is invalid syntax or invalid
+[16:01.04] grammar it's like an incomplete sentence
+[16:04.40] so this is linting an action now let me
+[16:06.56] show you a couple useful shortcuts here
+[16:09.56] on the top look at the view menu here we
+[16:13.04] have this problems menu look at the
+[16:15.56] shortcut on Mac it's shift command and M
+[16:19.24] on Windows it's probably shift control M
+[16:22.44] so as you're working with vs code try to
+[16:24.64] memorize these shortcuts because they
+[16:26.72] really help you write code faster
+[16:29.68] now let's take a look at this problems
+[16:33.00] panel so this problems panel lists all
+[16:36.16] the issues in your code in one place so
+[16:38.72] if you have an application with multiple
+[16:40.40] files this is really useful because some
+[16:42.80] of those files may not currently be open
+[16:45.44] so this linter pilent will analyze all
+[16:48.36] your files and if it finds any issues it
+[16:50.72] will list them here in the problems
+[16:52.48] panel now you can also put this on the
+[16:54.76] right side of the screen so let's put it
+[16:57.60] here so so as you write code these
+[17:00.88] problems will appear here now let's fix
+[17:03.28] this issue so I'm going to add three
+[17:05.44] here save the changes and you can see
+[17:08.28] the problem disappeared and one last
+[17:10.68] thing before we finish this lecture once
+[17:12.92] again on the top let's go to the view
+[17:15.12] menu the first item is command pallet
+[17:18.80] this is a very important feature in vs
+[17:20.92] code once again look at the shortcut
+[17:23.28] that is shift command and P on Mac or
+[17:26.00] shift control p on Windows
+[17:29.56] with this command pallet you can execute
+[17:31.64] various commands in vsod if you type
+[17:34.60] lint here you can see all commands
+[17:37.52] related to linting as you can see all
+[17:40.16] these commands are prefixed with python
+[17:43.28] because these commands come with the
+[17:45.56] python extension that we installed
+[17:47.16] earlier so these are additional features
+[17:49.76] available to us in vs code the First
+[17:52.28] Command here is Select
+[17:54.72] linter in this list you can see various
+[17:57.12] linters available for p pent so as
+[17:59.88] you're reading tutorials or talking to
+[18:01.56] other people you will hear about linters
+[18:03.72] such as flake 8 my pie pep 8 and so on
+[18:08.20] different developers prefer different
+[18:10.04] linters I personally prefer py lint that
+[18:13.44] is the most popular one and that is the
+[18:15.36] default linter set and the python
+[18:17.92] extension of vs code if you're
+[18:20.32] adventurous you can try using other
+[18:22.32] linters on your own the difference
+[18:24.60] between these linters is in how they
+[18:26.60] find and Report errors some error
+[18:29.56] messages are more meaningful or more
+[18:31.44] friendly the others are more ambiguous
+[18:34.28] so that's all about linting in the next
+[18:36.80] lecture we'll talk about formatting
+[18:44.52] code in Python Community we have a bunch
+[18:47.24] of documents called python enhancement
+[18:50.48] proposals or peps here on Google if you
+[18:53.76] search for python
+[18:55.84] peps you can see the list of all these
+[18:58.36] PS
+[18:59.24] under python.org
+[19:01.40] sdev peps let's have a quick look
+[19:06.08] here so here are the peps you can see
+[19:09.04] each pep has a number and a title the
+[19:12.32] one that is very popular amongst python
+[19:14.84] developers is Pep 8 which is a style
+[19:17.60] guide for python code a style guide is
+[19:20.56] basically a document that defines a
+[19:22.44] bunch of rules for formatting and
+[19:24.72] styling our code if you follow these
+[19:27.20] conventions the code that you right will
+[19:29.16] end up being consistent with other
+[19:31.32] people's code now if you have time you
+[19:33.80] can go ahead and read this pep eight
+[19:36.16] documentation but if not don't worry
+[19:38.32] because throughout this course I'm going
+[19:39.88] to explain the key things in pep 8 in
+[19:43.00] this lecture I'm going to show you a
+[19:44.24] tool that helps you automatically format
+[19:46.76] your code according to pep
+[19:49.28] 8 so back in vs code let's write some
+[19:52.20] python code x equal 1 here I'm declaring
+[19:56.56] a variable and setting it to one if if
+[19:58.76] you're not familiar with variables don't
+[20:00.44] worry in the next section you're going
+[20:01.96] to learn about them so according to pep
+[20:04.56] 8 this code is considered ugly because
+[20:07.72] by convention we should add a space
+[20:10.20] around this equal sign or the assignment
+[20:13.60] operator now since you're starting out
+[20:15.80] with python you probably don't know
+[20:17.44] these rules so let me show you a tool
+[20:19.32] that helps you automatically format your
+[20:21.20] code let's revert this back to its
+[20:23.64] original state now we need to go back to
+[20:26.40] the command pallet remember so it's
+[20:29.08] right here under View and the shortcut
+[20:31.84] is shift command and
+[20:34.04] P here if you search for format you can
+[20:37.28] see this command format document the
+[20:40.16] first time you execute this command
+[20:42.56] you're going to see this message here
+[20:44.96] formatter autopep8 is not installed so
+[20:48.48] there are a bunch of tools for
+[20:49.76] formatting python code the most popular
+[20:52.12] one is Auto Pep 8 and this is the tool
+[20:55.36] that this python extension we installed
+[20:57.52] uses to format our our code now if you
+[20:59.72] don't see this you can install autopep8
+[21:01.92] using the extensions panel so once again
+[21:04.64] on the left side click this icon and
+[21:07.08] search for Auto Pep
+[21:10.04] 8 there it is let's install
+[21:14.36] it good so let's go ahead and install
+[21:19.76] this good now one more time let's open
+[21:23.40] up the command pallet and execute format
+[21:26.84] document
+[21:28.68] see this tool automatically formats our
+[21:30.72] code beautiful let's take a look at
+[21:32.84] another example I'm going to declare
+[21:35.08] another variable Y and set it to two and
+[21:38.12] a variable with a long name like unit
+[21:41.00] underline price and we set this to three
+[21:43.72] now some developers have this habit of
+[21:46.72] formatting their variable declarations
+[21:48.92] like this so they put all
+[21:52.28] these equal signs in the same column
+[21:55.68] according to pep 8 this is considered
+[21:57.60] ugly so once again let's format our code
+[22:02.52] that is better beautiful now let me show
+[22:05.20] you a trick opening up this command
+[22:07.64] palet and searching for format document
+[22:09.84] every time is a little bit timec
+[22:11.84] consuming so I'm going to show you how
+[22:14.20] to have your file automatically
+[22:15.84] formatted as soon as you save the
+[22:18.04] changes on the top let's go to the code
+[22:21.08] menu preferences and
+[22:25.48] settings here in the search box search
+[22:28.28] for for format on
+[22:30.92] save so we have this option editor
+[22:33.76] format on Save take this now back to
+[22:38.28] app.py I'm going to change the
+[22:40.20] formatting of these lines make them
+[22:42.64] really ugly now as soon as I save the
+[22:46.04] changes you can see my code is
+[22:48.52] reformatted
+[22:51.93] [Music]
+[22:55.44] beautiful all right now let's talk about
+[22:57.56] a few different ways to run python code
+[22:59.80] as I told you before one way to run
+[23:01.64] python code is by opening the terminal
+[23:03.84] window if you're on Windows type python
+[23:06.52] if you're on Mac type Python 3 followed
+[23:09.28] by the name of the file this approach is
+[23:11.64] useful in situations where you don't
+[23:13.64] have access to a code editor okay now
+[23:16.28] with the python extension in vs code
+[23:18.68] there is a simpler way to run python
+[23:20.36] code we get this play button on the top
+[23:23.08] when we click it we see the output in
+[23:25.12] the terminal but clicking this button
+[23:27.28] every time we change our code is a
+[23:29.08] little bit tedious so let me show you
+[23:31.20] how to associate a shortcut to this
+[23:33.12] button first we close this next we bring
+[23:36.16] up the command pallet the shortcut on
+[23:38.24] Mac is shift command and P on Windows is
+[23:41.52] shift control
+[23:43.28] P here we search for open keyboard
+[23:47.12] shortcuts look we have this command up
+[23:49.72] here now on this window we can see all
+[23:52.60] the commands in vs code and the
+[23:54.52] shortcuts associated with them here in
+[23:57.04] the search bar search for run python
+[24:01.00] file okay so this is the command that is
+[24:04.16] associated with the play button as you
+[24:06.40] can see we don't currently have any key
+[24:08.28] bindings or shortcuts here so double
+[24:11.20] click in this column now here you can
+[24:13.64] press any key combination for creating a
+[24:15.92] shortcut I'm going to press controll and
+[24:18.56] R okay now we press enter with this in
+[24:22.56] place we can go back to app.py and press
+[24:26.52] controlr and here we see the out
+[24:32.04] beautiful when we talk about python we
+[24:34.40] mean two separate things that are
+[24:35.88] closely related Python language and a
+[24:38.72] particular implementation python as a
+[24:41.16] language is just a specification that
+[24:43.60] defines a set of rules and grammar for
+[24:46.44] writing python code a python
+[24:48.84] implementation is basically a program
+[24:51.64] that understands those rules and can
+[24:53.84] execute python code earlier in the
+[24:56.12] course we downloaded python from py
+[24:58.36] python.org this is the default
+[25:00.52] implementation of python called cpython
+[25:03.68] It's a program written in C that's why
+[25:05.84] it's called C python so here in terminal
+[25:09.16] when we run python we get this C python
+[25:12.40] this is the default implementation of
+[25:14.28] python there are a few other
+[25:15.88] implementations out there such as jython
+[25:18.72] written in Java iron python written in C
+[25:22.88] and piie written in a subset of python
+[25:25.88] itself as new features are added to the
+[25:28.32] the Python language they are first
+[25:30.24] supported by cpython because that's the
+[25:32.56] default implementation and then they
+[25:34.72] will gradually come to the other
+[25:37.20] implementations in theory if we give
+[25:39.56] some python code to any of these
+[25:41.28] implementations we should get the same
+[25:43.32] result but in practice that's not always
+[25:46.08] the case certain features may be
+[25:48.36] available in one implementation but not
+[25:50.64] another or they may just behave a little
+[25:53.36] bit differently in a particular
+[25:55.48] implementation now you might ask what is
+[25:57.92] the point of this why do we have several
+[26:00.20] implementations of python wouldn't C
+[26:02.52] python be enough well it's for the same
+[26:05.32] reason that we have multiple operating
+[26:07.32] systems or multiple browsers or multiple
+[26:09.72] programming languages after all these
+[26:12.20] years we programmers haven't agreed on a
+[26:14.48] single programming language and that's
+[26:16.72] the same story with python
+[26:18.96] implementations however there is one
+[26:21.56] technical reason behind these
+[26:23.16] implementations that you should be aware
+[26:25.16] of since jyon is implemented in Java it
+[26:28.96] allows you to reuse some existing Java
+[26:32.00] code in a Python program so if you're a
+[26:34.60] Java developer and you want to import
+[26:36.64] some Java code into a Python program you
+[26:39.28] should use jython instead of
+[26:41.64] cpython similarly iron python is written
+[26:44.68] in C so if you're a c developer and want
+[26:47.28] to bring some C code into a Python
+[26:49.72] program you will have to use iron python
+[26:53.00] next we'll look at how exactly cpython
+[26:56.08] executes python code
+[26:59.21] [Music]
+[27:02.72] the programming languages we use like C
+[27:05.16] C Java python these are all Simple Text
+[27:09.32] based languages that we humans
+[27:11.72] understand computers don't understand
+[27:13.48] them they only understand machine code
+[27:16.16] so if we have some code written in C we
+[27:18.84] should convert it to machine code and
+[27:20.92] that's the job of a c compiler so a c
+[27:23.88] compiler is a program that knows how to
+[27:26.44] convert or compile C code into machine
+[27:29.12] code however this machine code is
+[27:31.76] specific to the type of CPU of a
+[27:34.16] computer so if we compile a c program on
+[27:37.04] a Windows machine we can't execute it on
+[27:39.44] a Mac because Windows and Mac have
+[27:41.88] different machine code just like how
+[27:44.16] people from different countries speak
+[27:46.08] different languages Java came to solve
+[27:48.64] this problem Java compiler doesn't
+[27:51.08] compile Java code into machine code
+[27:54.08] instead it compiles it into a portable
+[27:56.68] language called jav Java bite code which
+[27:59.64] is not specific to a hardware platform
+[28:02.24] like Windows or Mac now we still need to
+[28:05.24] convert Java bite code to machine code
+[28:07.88] so Java also comes with a program called
+[28:10.60] Java virtual machine or jvm for doing
+[28:13.60] this when we run a Java program jvm
+[28:16.84] kicks in it loads our Java bite code and
+[28:19.88] then at runtime it will convert each
+[28:22.28] instruction to machine code with this
+[28:24.68] model we can run Java bite code on any
+[28:27.12] platforms that have a jvm we have jvm
+[28:30.44] implementations for Windows Mac and so
+[28:33.00] on so the jvm implementation on Windows
+[28:36.28] knows how to convert Java bite code into
+[28:39.64] machine code that a Windows machine can
+[28:41.92] understand C and python have also taken
+[28:44.64] the same route so they are platform
+[28:47.16] independent when we run a Python program
+[28:49.64] using cpython first it will compile our
+[28:52.48] python code into python bite code then
+[28:55.44] it will pass that bite code to python
+[28:58.24] virtual machine which will in turn
+[29:00.36] convert it into machine code and execute
+[29:02.52] it this is how cpython works in the last
+[29:05.76] lecture we talked about various python
+[29:08.04] implementations I told you that if you
+[29:09.80] want to reuse some Java code in a Python
+[29:12.64] program you should use jython now let's
+[29:15.76] see how jython makes this possible when
+[29:18.68] you use jython to run a Python program
+[29:21.48] instead of compiling your python code
+[29:23.64] into python by code it will compile it
+[29:26.36] to Java by code so we can take this Java
+[29:29.32] bite code and run it using Java virtual
+[29:31.72] machine and that's why you can import
+[29:33.80] some Java code into a Python program
+[29:36.40] when using jython because the end result
+[29:38.80] is Java bite code which will eventually
+[29:40.88] be executed by Java virtual
+[29:44.20] [Music]
+[29:48.24] machine so I've got a few questions for
+[29:50.68] you cuz I want to see if you have been
+[29:52.20] really paying attention to this video or
+[29:53.92] not you better have so here's the first
+[29:57.04] question for for each question I want
+[29:59.08] you to pause the video think about the
+[30:00.96] answer for a few seconds when you're
+[30:02.72] ready continue watching so here's the
+[30:05.16] first question what is an
+[30:08.32] expression an expression is a piece of
+[30:10.68] code that produces a value here's an
+[30:14.04] example of an expression what do you
+[30:16.08] think is the value of this
+[30:18.00] expression well here we have this string
+[30:21.76] we're multiplying this by three so the
+[30:24.72] result will be a string of three
+[30:27.36] asterisk
+[30:28.68] like this here's another question what
+[30:31.48] is a syntax
+[30:32.96] error a syntax error is a kind of error
+[30:35.84] that is due to bad syntax or bad grammar
+[30:39.04] in the code and finally the last
+[30:41.48] question what does a linter
+[30:43.96] do a linter is a tool that checks our
+[30:46.96] code for potential errors mostly in the
+[30:49.92] category of syntactical Errors so if you
+[30:52.68] have grammatical issues in our code the
+[30:54.72] linter will tell us before running our
+[30:56.76] program okay okay that's it for now if
+[30:59.32] you like more quizzes and programming
+[31:01.32] exercises look at the link below this
+[31:04.00] video and if you have enjoyed this video
+[31:06.08] I hope you have please support me by
+[31:08.84] giving a thumbs up please like this
+[31:10.56] video and share it with others in the
+[31:12.68] next section we're going to look at the
+[31:14.20] fundamentals of
+[31:15.75] [Music]
+[31:16.96] python hey guys I just wanted to let you
+[31:19.20] know that this tutorial is actually the
+[31:21.36] first two hours of my complete python
+[31:23.88] Mastery course if you're finding this
+[31:25.76] helpful and want to dive even deeper the
+[31:27.92] the full course covers everything from
+[31:29.72] beginner Basics to advanced concepts
+[31:31.72] like machine learning web development
+[31:33.40] and automation you'll also get Hands-On
+[31:35.68] projects to build your skills step by
+[31:37.84] step I put the link in the description
+[31:39.76] box if you're ready to take your python
+[31:41.76] knowledge to the next level now let's
+[31:47.80] continue let's start this section by a
+[31:50.16] discussion of variables which are one of
+[31:52.08] the Core Concepts in programming we use
+[31:55.04] variables to store data in computer's
+[31:57.44] memory here are a few examples I'm going
+[31:59.88] to Define a variable called students
+[32:02.32] underline count and setting it to a
+[32:05.68] th000 when we run this program python
+[32:08.56] interpreter will allocate some memory
+[32:11.08] and store this number thousand in that
+[32:13.60] memory space then it will have this
+[32:16.96] variable reference that memory location
+[32:20.40] so this variable is just like a label
+[32:22.84] for that memory location we can use this
+[32:25.36] variable or this label anywhere in our
+[32:27.60] program program to get access to that
+[32:29.60] memory location and the data stored
+[32:31.84] there so now if we print students count
+[32:37.16] and run our program we will get the
+[32:40.20] number thousand so this is the basic of
+[32:43.32] variables now what kind of data can we
+[32:45.88] store in computer's memory well we have
+[32:49.04] several different kinds of data in this
+[32:51.28] section we're going to look at the
+[32:52.68] built-in primitive types in Python
+[32:55.96] primitive types can be numbers
+[32:58.36] booleans and strings let me show you so
+[33:01.52] here we have a whole number we refer to
+[33:04.40] this as an integer in programming we can
+[33:07.48] also have numbers with a decimal point
+[33:09.76] let's take a look so rating we set this
+[33:12.36] to
+[33:13.64] 4.99 this is what we call a float or a
+[33:17.08] floating Point number and this
+[33:19.00] terminology is not specific to python in
+[33:21.64] the future when you learn a new
+[33:23.48] programming language you're going to
+[33:24.92] hear these terms again now let's take a
+[33:27.56] look at an example of a
+[33:29.28] Boolean is published we set this to true
+[33:34.64] or false these are examples of Boolean
+[33:38.80] values in programming so Boolean values
+[33:41.28] can either be true or false and these
+[33:43.92] are exactly like yes and no in English
+[33:47.04] later in the course you will learn that
+[33:48.84] we'll use these Boolean values to make
+[33:51.12] decisions in our programs for example if
+[33:54.08] the user is an admin user perhaps we
+[33:56.76] want to give them extra
+[33:58.44] permissions so these are the Boolean
+[34:00.44] values now take into account that python
+[34:03.44] is a case sensitive language which means
+[34:06.36] lowercase and uppercase characters have
+[34:08.60] different meanings so Boolean values
+[34:11.08] should always start with a capital
+[34:13.28] letter like what you see here if we type
+[34:16.28] false or false these are not accepted
+[34:19.32] Boolean values in Python only what you
+[34:21.88] see here is a valid Boolean value so
+[34:24.36] false or true and finally let's take a
+[34:27.48] look at an example of a string so of
+[34:30.16] course underline name we set this to a
+[34:33.08] string like Python Programming so a
+[34:36.64] string as I told you before is like text
+[34:39.60] whenever you want to work with text in
+[34:41.16] your programs you need to surround your
+[34:43.16] text with quotes so these are the basics
+[34:46.24] of
+[34:51.80] variables so these are the variables
+[34:53.96] from the last lecture now I've got a
+[34:56.16] question for you there are four things
+[34:58.40] that I've consistently used in this
+[35:00.36] program can you spot them if you want
+[35:03.04] you can pause the video think about this
+[35:05.04] for a few seconds and then continue
+[35:07.64] watching so here are those four things
+[35:10.68] the first thing is that all my variable
+[35:13.12] names are descriptive and meaningful so
+[35:16.80] students count represents the number of
+[35:19.04] students for a course or course name
+[35:22.00] clearly explains that this variable
+[35:23.84] holds the name of a course one of the
+[35:26.40] issues that I see a lot amongst beginner
+[35:28.84] programmers is that they use mystical
+[35:31.36] names for their variables something like
+[35:33.92] this CN as in short for course name when
+[35:37.96] someone else reads this code they have
+[35:39.60] no idea what CN stands for or they use
+[35:42.68] variable names like C1 when I look at
+[35:45.36] that code I wonder where is C2 and what
+[35:48.16] is the difference between C1 and C2 so
+[35:50.80] these variable names are very mystical
+[35:53.44] that's a bad practice make sure your
+[35:55.76] variable names are always descriptive
+[35:57.96] and meaningful because this makes your
+[36:00.04] code more maintainable now there are
+[36:02.68] times that you can use short variable
+[36:04.64] names like x y z if you're dealing with
+[36:08.32] things like coordinates so that's an
+[36:10.84] exception now the second thing that I
+[36:13.76] have consistently used in this code is
+[36:16.28] that I have used lowercase letters to
+[36:18.56] name my variables so here we don't have
+[36:21.40] course name all in capital or in title
+[36:25.92] case all letter are lowercase right
+[36:30.12] let's delete this the third thing that
+[36:32.96] I've consistently used here is that I
+[36:35.12] have used an underscore to separate
+[36:37.64] multiple words and I've done this to
+[36:39.88] make my variable names more readable
+[36:42.76] because in Python we cannot have a space
+[36:45.40] in variable names so we cannot have
+[36:47.36] course name and if you put these two
+[36:49.60] words together it's a little bit hard to
+[36:51.88] read that's why we use an underscore and
+[36:54.96] the fourth thing that I have used
+[36:56.24] consistently here is that I have put a
+[36:58.92] space around this equal sign again
+[37:02.36] that's one of the issues I see a lot
+[37:04.20] amongst beginners they write code like
+[37:07.60] this this is a little bit ugly this is
+[37:10.92] what we call Dirty code dirty stinky
+[37:14.36] smelly you should write code that is
+[37:16.28] clean and beautiful so other people can
+[37:19.36] read it like a story like a newspaper
+[37:21.64] article it should be formatted properly
+[37:24.72] and that's why we have pep 8 in Python
+[37:28.00] now the good thing is if you forget
+[37:29.68] these rules when you save the changes
+[37:31.96] autopep8 kicks in and it automatically
+[37:34.68] reformats your code but that aside you
+[37:36.96] should always give yourself the habit of
+[37:39.12] writing clean code without relying too
+[37:41.56] much on the tooling so these are all the
+[37:44.12] best practices about naming your
+[37:46.12] variables next we're going to look at
+[37:48.16] strings in more
+[37:54.36] detail so here we have this course
+[37:56.52] variable set to Python Programming as I
+[37:59.40] told you before whenever you work with
+[38:01.16] text you should surround your text with
+[38:03.60] quotes you can either use double quotes
+[38:06.20] or single quotes that's more of a
+[38:08.16] personal preference but quite often we
+[38:10.52] use double quotes we also have triple
+[38:13.68] quotes and we use them to format a long
+[38:16.92] string for example if you have let's say
+[38:20.32] a variable message that is the message
+[38:23.32] we want to include in the body of an
+[38:26.00] email you can use triple quotes to
+[38:28.92] format it like this hi John this is msh
+[38:34.08] from code with m.com blah blah blah so
+[38:38.44] that's when we use triple codes now we
+[38:41.56] don't need this in this lecture so
+[38:43.92] delete let me show you a few useful
+[38:46.28] things you can do with strings first of
+[38:48.72] all we have this built-in function in
+[38:51.52] Python for getting the length of strings
+[38:54.88] what is a function a function is
+[38:57.04] basically Bally a reusable piece of code
+[38:59.60] that carries out a task as a metaphor
+[39:02.48] think of the remote control of your TV
+[39:05.16] on this remote control you have buttons
+[39:07.12] for different functions like turn on
+[39:09.36] turn off change the channel and so on
+[39:11.92] these are the built-in functions in your
+[39:14.12] TV in Python and many other programming
+[39:17.28] languages we have the exact same concept
+[39:19.96] so we have functions that are built into
+[39:22.24] the language on the platform you can
+[39:24.12] reuse these functions to perform various
+[39:26.56] tasks so here we can use the built-in
+[39:29.28] Len function to get the length of a
+[39:31.72] string which means the number of
+[39:33.48] characters in that string now whenever
+[39:36.00] you want to use a function you should
+[39:37.96] use
+[39:39.20] parenthesis now we say we're calling
+[39:42.08] this function which basically means
+[39:43.88] we're using this function now some
+[39:46.36] functions take additional data which we
+[39:49.36] refer to as arguments these arguments
+[39:52.20] are inputs to these functions so this
+[39:55.92] Len function takes an input or an
+[39:58.44] argument here we pass our course
+[40:01.20] variable and this will return the number
+[40:03.68] of characters in this string so let's
+[40:06.76] print that and see what we get run the
+[40:10.52] program we get 18 because we have 18
+[40:14.32] characters here let's look at another
+[40:17.40] example if you want to get access to a
+[40:20.00] specific character in this string you
+[40:22.36] use the square bracket notation so here
+[40:25.24] we add course square bracket brackets to
+[40:28.48] get the first character you use the
+[40:30.64] index zero so in Python like many other
+[40:34.56] languages strings are zero index which
+[40:38.28] means the index of the first character
+[40:40.44] or the first element is zero so now when
+[40:43.76] we print
+[40:46.56] this we'll get P okay now you can also
+[40:51.76] use a negative index like minus1 what
+[40:56.28] does that mean well if zero represents
+[41:01.04] the first character here what do you
+[41:03.32] think negative 1 represents that takes
+[41:06.36] us back to the end of the string so that
+[41:09.20] Returns the first character from the end
+[41:11.68] of the string let's draun this program
+[41:14.32] you will see we'll get
+[41:16.20] G there you go using a similar syntax
+[41:20.84] you can slice strings let me show you so
+[41:24.52] I'm going to duplicate this line and
+[41:26.48] remove
+[41:27.76] ne1 now let's say we want to extract the
+[41:30.92] first three characters in this string so
+[41:33.84] here we need two indexes the start index
+[41:37.28] colon the end index so this will return
+[41:40.64] a new string that contains the first
+[41:43.56] three characters in this course variable
+[41:46.80] that would be P Y and T so the index of
+[41:50.44] these characters are zero 1 and two so
+[41:53.88] that means the character at the end
+[41:56.24] index is not included okay let's run the
+[42:00.32] program and make sure we get the right
+[42:02.16] result there you go
+[42:04.32] PYT now what if we don't include the end
+[42:08.08] index what do you think we're going to
+[42:09.96] get it's Common Sense we start from
+[42:13.68] index zero and go all the way to the end
+[42:16.08] of the string so this will return a new
+[42:18.40] string that is exactly the same as the
+[42:21.24] original string let's take a
+[42:24.12] look so we get Python programming
+[42:28.64] now what if we don't include the start
+[42:30.76] index but include the end index what do
+[42:34.20] you think we're going to get once again
+[42:36.72] it's common sense so by default python
+[42:39.08] will put zero here so it will start from
+[42:41.48] the beginning of the string so when I
+[42:43.68] run this program we should get PYT one
+[42:46.72] more time there you
+[42:48.80] go and finally as the last example if we
+[42:52.20] don't include the start and the end
+[42:54.76] Index this will return a copy of of the
+[42:57.48] original string let's look at this so we
+[43:01.36] get Python
+[43:03.40] Programming now you don't have to
+[43:05.16] memorize any of these just remember we
+[43:07.92] use the Len function to get the length
+[43:09.72] of a string we use bracket notation to
+[43:12.40] get access to a specific element or a
+[43:14.92] specific character and we use this
+[43:17.24] notation to slice a
+[43:24.24] string so we have this string here
+[43:26.56] python Pro programming now let's say we
+[43:29.04] want to put a double quote in the middle
+[43:31.92] of this string there is a problem here
+[43:35.12] python interpreter sees this second
+[43:37.88] string as the end of the string so the
+[43:40.88] rest of the code is meaningless and
+[43:43.36] invalid how do we solve this problem
+[43:46.36] well there are two ways one way is to
+[43:49.00] use single Cotes for our string and then
+[43:53.36] we can use a double code in the middle
+[43:55.52] of the string but what if for whatever
+[43:58.28] reason perhaps for being consistent in
+[44:00.68] our code we decided to use double quotes
+[44:04.56] how can we add another double code in
+[44:06.96] the middle of this string well we can
+[44:10.00] prefix this with a backs slash backslash
+[44:13.84] in Python strings is a special character
+[44:16.96] we have a jargon for that called Escape
+[44:19.60] character we use it to escape the
+[44:22.68] character after let me show you what I
+[44:25.44] mean so let's let's print this course
+[44:29.36] and run this
+[44:31.24] program what's going on here we don't
+[44:33.76] have the backs slash because we use that
+[44:36.40] to escape this double code and basically
+[44:39.44] display it here so backs slash is an
+[44:43.24] escape character and back SL double
+[44:45.80] quote is an escape sequence in Python
+[44:48.76] strings we have a few other Escape
+[44:50.64] sequences that you should be aware of
+[44:53.20] let me show you so in Python we use a
+[44:56.40] hash sign to indicate a comment a
+[44:59.32] comment is like additional note that we
+[45:01.56] add to our program it's not executed by
+[45:04.08] python interpreter okay so here are the
+[45:07.64] Escape sequences you have seen back SL
+[45:10.28] double quote we also have back SL single
+[45:14.48] code so we can use that to add a single
+[45:17.76] code here let's run the program here it
+[45:21.40] is
+[45:22.80] beautiful we also have double backs
+[45:25.72] slash so if you want to include a
+[45:28.08] backslash in your strings you should
+[45:30.52] prefix it with another backslash let me
+[45:33.12] show you so when we run this we get
+[45:35.44] python one back slash
+[45:38.40] programming and finally we have back sln
+[45:42.20] which is short for new line so now if I
+[45:45.36] add a back slash n here see what we
+[45:50.08] get we get a new line after python so
+[45:53.64] programming will end up on the second
+[45:55.92] line so these are the Escape sequences
+[45:58.76] in
+[46:04.40] Python here we have two variables first
+[46:07.28] and last let's say we want to print my
+[46:09.84] full name on the console so we can
+[46:12.64] Define another variable full set it to
+[46:16.64] first then concatenate it with a space
+[46:21.12] and one more time concatenate it with
+[46:24.20] last now when we print full
+[46:27.88] we get my full name on the console
+[46:30.88] beautiful now this approach of using
+[46:33.84] concatenation to build a string is okay
+[46:37.00] but there is a better and newer approach
+[46:39.88] we can use formatted strings so here we
+[46:42.96] can set full to this string and prefix
+[46:46.60] it with an F which can be lowercase or
+[46:50.12] uppercase this formatted string doesn't
+[46:52.68] have a constant value like these two
+[46:55.48] strings here It's actually an expression
+[46:58.68] that will be evaluated at runtime so
+[47:02.00] here we want to add our first name we
+[47:04.44] use curly braces to print the value of
+[47:08.24] the first variable after that we add a
+[47:11.68] space and then we add curly braces one
+[47:14.56] more time to print the last name so at
+[47:18.40] run time this expression will be
+[47:20.52] evaluated what we have in between curly
+[47:23.88] braces will be replaced at runtime
+[47:27.68] now let's run this program one more time
+[47:30.40] we get the exact same result just be
+[47:33.40] aware that you can put any valid
+[47:35.52] expressions in between curly braces so
+[47:38.96] earlier you learned about the built-in
+[47:41.12] Len function we can call Len here to get
+[47:45.00] the length of this string let's run this
+[47:48.40] program one more time so we get
+[47:50.76] four we can also replace last with an
+[47:53.92] expression like this 2 + 2 let's run
+[47:57.32] this program we get four and four so
+[48:01.32] when using formatted strings you can put
+[48:03.80] any valid expressions in between curly
+[48:12.56] braces in this lecture we're going to
+[48:14.60] look at a few useful functions available
+[48:17.04] to work with strings so earlier you
+[48:19.40] learned about this builtin Len function
+[48:22.92] this function is general purpose so it's
+[48:24.96] not limited to Strings later I will show
+[48:27.36] you how to use this function with other
+[48:29.36] kind of objects but in Python we have
+[48:32.36] quite a few functions that are specific
+[48:34.28] to a strings let me show you so here if
+[48:37.36] we type course dot see all these are
+[48:43.20] functions available on strings now in
+[48:46.96] precise terms we refer to these
+[48:48.88] functions as methods this is a term in
+[48:52.16] object-oriented programming that you
+[48:53.64] will learn about later in the course for
+[48:56.52] now now what I want you to take away is
+[48:59.08] that everything in Python is an object
+[49:02.12] and objects have functions we call
+[49:04.64] methods that we can access using the dot
+[49:08.16] notation so here course is an object we
+[49:11.28] use the dot notation to access its
+[49:13.64] functions or more accurately methods
+[49:16.60] let's take a look at a few of these
+[49:18.08] methods we have upper to convert a
+[49:21.20] string to uppercase now let's print this
+[49:25.32] and run the program
+[49:27.28] here's what we get beautiful now note
+[49:29.96] that the methods that you call here
+[49:32.12] return a new string so the original
+[49:34.76] string is not affected let me show you
+[49:37.36] so print course run the program one more
+[49:41.12] time look this is our original string
+[49:43.88] right so course. upper returns a new
+[49:47.68] string a new value we can store it in a
+[49:50.52] variable like course underline
+[49:54.08] Capital like this now to keep this demo
+[49:57.64] simple and consistent I'm going to
+[49:59.32] revert this back and use a print
+[50:02.88] statement we also have the lower method
+[50:06.72] to convert a string to lowercase we also
+[50:09.88] have title which will capitalize the
+[50:13.52] first letter of every word so if our
+[50:16.44] string was like this when we call the
+[50:20.40] title method we get Python Programming
+[50:23.76] as you see here okay
+[50:27.00] another useful method is strip and we
+[50:29.36] use it to trim any white space at the
+[50:32.00] beginning or end of a string this is
+[50:34.36] particularly useful when we receive
+[50:36.60] input from the user let me show you so
+[50:39.28] let's
+[50:40.20] imagine the user entered a couple of
+[50:43.52] white spaces at the beginning of this
+[50:45.56] string when we call course. strip those
+[50:50.16] white spaces will be removed take a look
+[50:53.76] so note that in the first three examples
+[50:55.72] we have the those white spaces but in
+[50:58.52] the last one it is removed so a strip
+[51:01.24] removes the white space from both the
+[51:03.36] beginning and end of a string we also
+[51:06.16] have l strip which is short for left
+[51:08.68] strip and R strip which is short for
+[51:11.76] Right strip so it will remove the white
+[51:13.64] space from the end of a string if you
+[51:16.44] want to get the index of a character or
+[51:19.32] a sequence of characters in your string
+[51:21.76] you should use the find method and me
+[51:23.84] show you so of course
+[51:27.48] find so as an argument here we pass
+[51:31.16] another string we can pass a character
+[51:35.08] or a series of characters let's find the
+[51:37.96] index of
+[51:39.52] Pro run the program so the index of pro
+[51:43.20] is nine so if we start from zero here
+[51:46.08] all the way to nine this is the index of
+[51:49.48] pro okay now as I told you before python
+[51:53.28] is a case sensitive language so if I
+[51:56.12] pass a capital P here obviously we don't
+[51:59.40] have these exact characters in our
+[52:02.12] string so let's see what we get we get
+[52:06.20] -1 that means this string was not found
+[52:09.24] in the original
+[52:10.68] string another useful method is replace
+[52:14.60] so we call replace with this we can
+[52:18.20] replace a character or a sequence of
+[52:20.60] characters with something else so let's
+[52:23.00] say we want to replace all lowercase P's
+[52:26.20] with
+[52:27.16] J with this we
+[52:29.52] get jython durog gramming whatever that
+[52:33.72] means and finally if you want to check
+[52:36.08] for the existence of a character or a
+[52:39.08] sequence of characters in your string
+[52:41.24] you can use the in Operator Let Me Show
+[52:44.52] You So
+[52:45.72] print we write an expression like this
+[52:48.64] Pro in
+[52:51.52] course so this is an expression as I
+[52:54.40] told you before an expression is a piece
+[52:56.28] of code that produces a value so this
+[52:59.44] expression checks to see if we have Pro
+[53:02.12] in course the difference between this
+[53:04.88] expression and calling the fine method
+[53:07.84] is that the fine method Returns the
+[53:10.08] index of these characters in our string
+[53:13.80] but as this expression returns a Boolean
+[53:16.24] so it's a true or false let me show you
+[53:18.84] so run the
+[53:20.04] program we get the Boolean
+[53:23.72] true and finally we have the not
+[53:26.76] operator and we use that to see if our
+[53:29.16] string does not contain a character or a
+[53:32.52] sequence of characters
+[53:35.52] so let's change this to
+[53:39.68] Swift not in course when this expression
+[53:44.12] is evaluated what do you think we're
+[53:45.88] going to get well we don't have Swift in
+[53:49.28] this string so not in will return true
+[53:53.88] let's take a look there you go
+[53:57.24] go so these are the useful string
+[53:59.80] Methods next we'll look at
+[54:07.16] numbers in Python we have three types of
+[54:09.92] numbers two of these you have already
+[54:11.84] seen before they are integers and floats
+[54:16.44] we also have complex numbers so complex
+[54:20.20] numbers in math are in the form a plus b
+[54:23.56] i where I is the imaginary number number
+[54:27.04] now if you're not familiar with this
+[54:28.36] concept don't worry this is something
+[54:30.28] that is used a lot in mathematics and
+[54:32.76] electrical engineering if you want to
+[54:34.84] use Python to build web applications
+[54:37.08] you're never going to use complex
+[54:38.60] numbers but let me quickly show you the
+[54:40.84] Syntax for representing complex numbers
+[54:44.12] instead of I we use J so here is an
+[54:47.76] example 1 + 2 J so X now is a complex
+[54:52.48] number and by the way as I told you
+[54:54.72] before this is just a common or an
+[54:57.12] additional note in our program when we
+[54:59.72] run this program anything after this H
+[55:02.12] sign will be ignored so these are the
+[55:04.72] three types of numbers we have in Python
+[55:07.24] for all these types of numbers we have
+[55:09.64] the standard arithmetic operations that
+[55:12.36] we have in math let me show you so we
+[55:16.12] have
+[55:18.04] addition
+[55:19.76] subtraction
+[55:21.76] multiplication division but we actually
+[55:24.40] have two different types of divisions
+[55:26.52] let me show you first let's run this
+[55:29.12] program so with this division operator
+[55:32.04] which is a slash we get a floating Point
+[55:35.28] number if you want an integer you use
+[55:38.36] double slashes let me show
+[55:41.28] you so double slash run the
+[55:44.64] program we get three okay we also have
+[55:50.16] modulus which is the remainder of a
+[55:52.44] division and finally exponent Which is
+[55:56.00] less left to the power of right so 10 to
+[55:59.28] the power of 3 will be a th000 these are
+[56:02.56] the standard arithmetic operators now
+[56:05.52] for all these operators we have a
+[56:07.64] special operator called augmented
+[56:10.44] assignment operator let me show you so
+[56:13.52] let's imagine we have X set to 10 we
+[56:17.84] want to increment X by let's say three
+[56:21.56] we can write an expression like this x =
+[56:24.44] x + 3 or we can use an augmented
+[56:28.36] assignment operator that is a little bit
+[56:30.60] shorter so we write X+ equal three these
+[56:35.96] two statements are exactly the same now
+[56:39.12] here I'm using addition as an example
+[56:41.72] you can use any of these operators
+[56:44.48] here next I'm going to show you some
+[56:46.76] useful functions to work with
+[56:53.48] numbers in this lecture we're going to
+[56:55.60] look at a few few useful functions to
+[56:57.52] work with numbers so we have this
+[57:00.08] built-in function round for rounding a
+[57:03.40] number so if we pass 2.9 here and print
+[57:07.44] the result we will get three we have
+[57:11.68] another useful built-in function called
+[57:14.24] ABS which Returns the absolute value of
+[57:17.12] a number so if we pass -2.9 here we'll
+[57:22.60] get positive 2.9 now teic we have only a
+[57:27.24] handful of built-in functions to work
+[57:29.52] with numbers if you want to write a
+[57:31.64] program that involves complex
+[57:34.16] mathematical calculations you need to
+[57:36.52] use the math module a module is like a
+[57:39.84] separate file with some python code so
+[57:42.48] in Python we have this math module which
+[57:45.04] includes lots of mathematical functions
+[57:47.56] for working with numbers but we need to
+[57:49.84] import this module so we can use it on
+[57:53.08] the top we type import math now math in
+[57:58.28] this program is an object so we can use
+[58:01.96] the dot notation to see all the
+[58:04.96] functions or more accurately all the
+[58:07.60] methods available in this object as an
+[58:10.92] example we have math. seal for getting
+[58:14.64] the ceiling of a number so if we pass
+[58:17.12] 2.2 here and run this
+[58:21.04] program we get
+[58:23.76] three now in this math module we have
+[58:26.28] lots of functions let me show you how to
+[58:28.36] find the complete list here on Google
+[58:32.12] search for Python 3 make sure to add the
+[58:35.40] version number math
+[58:39.36] module on this
+[58:41.52] page you can see all the functions in
+[58:44.60] the math module so in this lecture we
+[58:46.68] looked at math. seal we also have math.
+[58:50.68] copy sign Fabs and so on as an exercise
+[58:54.32] I encourage you to play with a couple of
+[58:56.24] functions in this
+[59:02.36] module all right now let's take a look
+[59:04.56] at another useful built-in function in
+[59:07.36] Python we use the input function to get
+[59:10.68] input from the user as an argument we
+[59:13.56] pass a string this will be a label that
+[59:16.56] will be displayed in the terminal you'll
+[59:18.72] see that in a second so let's add X
+[59:22.28] colon now this function returns a string
+[59:25.68] so we can store it in this variable now
+[59:29.68] let's imagine that y should be x + 1
+[59:34.52] save the changes now don't run this
+[59:37.12] program using the code Runner extension
+[59:39.96] because code Runner by default runs your
+[59:42.52] program in the output window which is
+[59:44.28] read only so you won't be able to enter
+[59:46.68] a value so open up the terminal using
+[59:50.20] control and backspace once again if
+[59:53.28] you're on Windows type python if you're
+[59:55.12] on Mac or Linux Linux type Python 3 and
+[59:58.40] then
+[59:59.48] app.py so here's our label let's enter a
+[60:02.56] value like one we got an error type
+[60:06.52] error what is going on here well when we
+[60:10.68] receive input from the user this input
+[60:13.24] always comes as a string so this
+[60:16.28] expression at runtime will look like
+[60:19.00] this string 1 + 1 note that the number
+[60:23.52] one is different from string one because
+[60:26.20] these are two different types now when
+[60:28.52] python sees this expression it doesn't
+[60:30.48] know what to do because two objects can
+[60:33.08] be concatenated if they are of the same
+[60:35.76] type so here we need to convert this
+[60:38.64] string one to a number in Python we have
+[60:42.00] a few built-in functions for type
+[60:44.44] conversion we have int for converting a
+[60:48.24] number to an integer we have
+[60:51.16] float we have bull and stir or string
+[60:56.40] now in this case we don't need to
+[60:57.72] convert X to a string because X is
+[61:00.20] already a string if you don't believe me
+[61:02.20] let me show you so I'm going to comment
+[61:04.28] out these few
+[61:06.36] lines now let's
+[61:09.92] print type of X so type is another
+[61:14.28] built-in function we pass an object as
+[61:16.96] an argument and it returns its type also
+[61:20.24] I'm going to comment out this line
+[61:22.24] because that's the bad boy we don't want
+[61:23.68] to execute this save the changes back in
+[61:26.64] the terminal let's run this program one
+[61:28.76] more time enter one look this is what
+[61:33.04] the type function returns now don't
+[61:35.00] worry about the class we'll talk about
+[61:37.20] classes later in the course so the type
+[61:39.56] of X is a stir or
+[61:42.72] string so let's delete this line to fix
+[61:47.00] this problem we need to convert X to an
+[61:50.64] integer and then we can print both X and
+[61:54.28] Y using a format of string remember so
+[61:57.44] we add an F quotes right here we add a
+[62:00.52] label like X then we'll add a field so
+[62:04.88] here we want to print the value of x
+[62:07.56] variable after that we add some more
+[62:10.32] text and finally we want to print the
+[62:12.84] value of y let's run this program one
+[62:16.48] more
+[62:17.52] time so here in the terminal let's enter
+[62:21.56] one and here's the result X is one and Y
+[62:24.92] is two beautiful
+[62:27.16] now all these built-in functions are
+[62:29.44] self-explanatory the only tricky one is
+[62:31.80] bull because in Python we have this
+[62:33.92] concept of truthy and falsey values
+[62:37.52] these are values that are not exactly a
+[62:39.56] Boolean true or false but they can be
+[62:42.40] interpreted as a Boolean true or false
+[62:45.84] so here are the falsy values in Python
+[62:49.96] M2 strings are considered falsy so
+[62:52.48] they're interpreted as a Boolean false
+[62:55.36] numbers Z is also falsy we have an
+[62:58.44] object called non which represents the
+[63:01.08] absence of a value we'll look at this
+[63:03.04] later in the course so whenever we use
+[63:06.48] these values in a boan context we get
+[63:10.12] false anything else will be true let me
+[63:13.16] show you a few
+[63:14.48] examples so in this interactive shell in
+[63:17.16] Python let's
+[63:19.00] convert number zero to Bull that's falsy
+[63:22.72] so we get false what about bull of one
+[63:26.72] we get true if we pass a negative number
+[63:30.00] we also get true if we pass a number
+[63:33.28] larger than one like five we still get
+[63:35.64] true so we only get false when we try to
+[63:38.80] convert zero to aoia now with strings I
+[63:42.16] told you that an empty string is falsey
+[63:45.40] so here we'll get false anything else is
+[63:48.96] true so even if I have a string that is
+[63:52.52] false we'll get true because the this is
+[63:56.00] not an empty string it's a string with a
+[63:58.28] few characters that's why it's evaluated
+[64:01.12] as
+[64:05.48] true all right once again it's time for
+[64:08.16] another quiz let's see if you have been
+[64:10.12] really paying attention to this tutorial
+[64:12.28] so here's the first question what are
+[64:14.56] the built-in primitive types in
+[64:20.68] Python we have strings numbers and
+[64:24.16] booleans numbers can can be integers
+[64:27.36] Floats or complex numbers here's the
+[64:30.96] second question you have this variable
+[64:33.20] fruit set to Apple what do you think we
+[64:35.88] will see on the terminal when we print
+[64:38.28] fruit of
+[64:43.76] one well using screw brackets we can
+[64:46.80] access individual characters the index
+[64:49.48] of the first character is zero so this
+[64:51.92] expression Returns the second character
+[64:54.08] which is p what if we add a colon and
+[64:58.36] negative one
+[65:03.48] here well using the syntax we can slice
+[65:06.56] a string our start index is one and our
+[65:09.72] end index is negative -1 which refers to
+[65:12.32] the first character from the end of the
+[65:14.44] string now when slicing a string the
+[65:17.48] character at the end index or1 is not
+[65:21.12] included so with this expression we'll
+[65:23.28] get all the characters starting from the
+[65:26.28] second character which is p all the way
+[65:29.12] until we get to e so the result of this
+[65:31.92] expression is PPL L here's another
+[65:35.56] question what is the result of this
+[65:42.64] expression well this is what we call the
+[65:45.28] modulus operator and it Returns the
+[65:48.04] remainder of a division which is in this
+[65:50.24] case
+[65:51.40] one and finally the last question what
+[65:54.52] do you think we will see when we print
+[65:56.76] bull of
+[66:02.60] false well earlier I told you about
+[66:04.96] falsy values in Python so number zero an
+[66:08.40] mty string and the non-ob these are all
+[66:11.12] falsy values anything that is not falsey
+[66:14.04] is considered truthy here we have a
+[66:16.40] string that has five characters it
+[66:18.52] doesn't matter what those characters are
+[66:20.88] this is not an empty string so it's not
+[66:23.48] falsey it's truy so when we convert it
+[66:26.80] using the bull function we'll get the
+[66:29.00] Boolean true and this brings us to the
+[66:31.60] end of the section in the next section
+[66:33.60] you're going to learn the fundamentals
+[66:35.56] of computer programming I hope you have
+[66:37.60] enjoyed this section and thank you for
+[66:46.08] watching we're going to start this
+[66:47.96] section by exploring comparison
+[66:50.16] operators we use comparison operators to
+[66:52.92] compare values here are a few examples
+[66:55.64] so 10 is greater than three we get true
+[66:59.68] so what we have here is a Boolean
+[67:02.16] expression because when this expression
+[67:04.24] is evaluated we'll get a Boolean value
+[67:07.20] that is true or false here is another
+[67:09.88] example 10 is greater than or equal to
+[67:13.00] three once again we get true we also
+[67:16.48] have less than so 10 is less than 20 we
+[67:20.08] have less than or equal to here's the
+[67:23.20] equality operator so 10 is equal to 10
+[67:27.32] what about this expression what do you
+[67:30.12] think we're going to get we get false
+[67:32.80] because this values have different types
+[67:35.16] and they're stored differently in the
+[67:36.80] computer's memory and finally we have
+[67:40.36] the not equal operator so now with this
+[67:44.12] expression we should get true beautiful
+[67:47.24] we can also use these comparison
+[67:48.96] operators with strings let me show you
+[67:51.88] so we can check to see if bag is greater
+[67:55.16] than and apple we get true because when
+[67:58.68] we sort these two words bag comes after
+[68:01.80] so it's considered greater now what
+[68:04.16] about this one bag equals Capital bag we
+[68:08.88] get false here's the reason every
+[68:11.76] character you see here has a numeric
+[68:13.80] representation in programming let me
+[68:16.28] show you so we have this built-in
+[68:17.80] function called or don't worry about
+[68:20.12] memorizing this because you're probably
+[68:21.96] never going to use this in the future
+[68:24.12] but let me show you the numeric
+[68:26.12] representation of the letter B so that
+[68:29.44] is 98 in
+[68:31.60] contrast capital B is represented as
+[68:34.92] 66 that is the reason these two strings
+[68:38.40] are not equal so these are the
+[68:40.88] comparison operators in Python next
+[68:43.16] we'll look at conditional
+[68:49.84] statements in almost every program there
+[68:52.56] are times you need to make decisions and
+[68:54.80] that's when you use use an if statement
+[68:57.48] here's an example let's say we have a
+[68:59.96] variable called temperature we set it to
+[69:03.12] 35 now if temperature is greater than 30
+[69:06.80] perhaps we want to display a message to
+[69:08.76] the user so we use an if statement if
+[69:12.68] after if we add a condition which is
+[69:15.24] basically a Boolean expression an
+[69:17.36] expression that produces a Boolean value
+[69:20.44] so if temperature is greater than 30
+[69:23.72] here we have a Boolean expression if
+[69:26.00] this expression evaluates to true the
+[69:28.76] following statements will be executed
+[69:30.84] let me show you now here's the important
+[69:33.20] part that a lot of beginners miss when
+[69:35.96] you use an if statement you should
+[69:38.32] always terminate your statement with a
+[69:41.24] colon now let's see what happens when I
+[69:43.48] press
+[69:44.32] enter our cursor is indented so here we
+[69:47.76] have two white spaces this is very
+[69:50.16] important because using these
+[69:52.20] indentations python interpreter will
+[69:54.56] know what statements should be executed
+[69:57.48] if this condition is true here we want
+[70:00.00] to print a message like it's warm we can
+[70:04.24] print another message as well drink
+[70:07.88] water so we can have as many statements
+[70:10.44] as we want here as long as they are
+[70:12.72] indented they belong to this if block
+[70:16.80] now when we finish here we should remove
+[70:19.08] indentation to indicate the end of this
+[70:21.76] if block so here we can add a print
+[70:24.40] statement with a message like Don this
+[70:27.36] statement will always be executed
+[70:29.48] whether this condition is true or not
+[70:32.72] now note that when I save the changes
+[70:35.96] this indentation you see here is going
+[70:37.64] to be doubled up take a look save there
+[70:40.96] you go so when we save the changes autop
+[70:44.00] pep 8 reformats our code and uses four
+[70:47.12] white spaces for indentation so one 2 3
+[70:50.16] 4 it uses four white spaces because
+[70:53.08] that's what pep 8 recommends
+[70:56.12] all right now let's run this
+[70:57.92] program so because temperature is
+[71:00.32] greater than 30 we see the first two
+[71:02.80] messages and we see the dawn message
+[71:05.68] regardless so if I change the
+[71:07.60] temperature to let's say 15 and run the
+[71:11.04] program one more time look this Dawn
+[71:14.16] message is executed whether our
+[71:16.92] condition is true or not so pay great
+[71:19.44] attention to these indentations that's
+[71:21.52] one of the issues I see in beginner's
+[71:23.48] code let's say they want both these
+[71:25.88] print statements to be executed if the
+[71:28.16] condition is true accidentally they
+[71:30.84] remove the indentation on the fourth
+[71:33.04] line and that's why their program
+[71:35.00] doesn't work as they expect so be
+[71:37.40] careful about this now what if you want
+[71:40.08] to have multiple conditions we use an L
+[71:43.48] if statement so L if that is short for
+[71:46.80] L's if here we can add another condition
+[71:50.88] another expression so temperature is
+[71:53.60] greater than 20 one once again colon
+[71:56.92] enter now by default here vs code is
+[71:59.92] using two white spaces so don't worry
+[72:02.16] about this as soon as you save the
+[72:03.76] changes those two white spaces will be
+[72:06.28] converted to four white spaces so let's
+[72:09.28] print a different
+[72:10.80] message it's
+[72:13.00] nice save the changes now look all these
+[72:17.08] lines are indented
+[72:19.00] consistently you can have as many l
+[72:21.36] statements as you want and optionally
+[72:23.96] you can also have an else statement so
+[72:27.16] if none of the previous conditions are
+[72:29.08] true then what you have in the else
+[72:31.88] block will be executed once again we add
+[72:34.76] the colon annotation
+[72:37.72] print here we can add a message like
+[72:40.28] it's
+[72:41.28] called save the changes in this case
+[72:44.44] temperature is 15 so none of these two
+[72:48.08] conditions will be true and we will see
+[72:50.64] it's called let's run the program there
+[72:53.68] you go
+[73:00.16] in this lecture I'm going to show you a
+[73:01.72] technique for writing cleaner code so
+[73:04.48] let's say we're building an application
+[73:06.04] for University and we want to check to
+[73:08.76] see if the person who's applying for
+[73:11.36] this University program is eligible or
+[73:13.76] not so we start by defining a variable
+[73:17.08] called age set it to 22 now if age is
+[73:21.96] greater than or equal to 18 colon
+[73:25.92] print
+[73:28.60] eligible remove the initation else colon
+[73:32.96] print not eligible let's run the program
+[73:37.96] make sure it works beautiful now there
+[73:41.28] is nothing wrong in this piece of code
+[73:43.44] but I want to show you a cleaner way to
+[73:45.60] achieve the same result instead of
+[73:48.00] having a print statement here we can
+[73:50.60] define a variable like message and set
+[73:53.64] it to this string
+[73:55.96] that is the first step so message equals
+[74:00.16] this string and then we will
+[74:02.84] print this
+[74:04.80] message now when you have an if L
+[74:07.64] statement with this structure where
+[74:09.76] you're basically assigning a value to a
+[74:12.04] variable you can rewrite this in a
+[74:14.44] simpler way so this is how it works all
+[74:18.80] we want to do over these VI lines is to
+[74:21.20] assign a value to this message variable
+[74:24.00] right so with start with message we set
+[74:27.28] it to
+[74:28.56] eligible if age is greater than or equal
+[74:32.00] to 18 else we set it to not
+[74:36.20] eligible this statement is almost like
+[74:38.88] plain English so what we have on line
+[74:41.56] seven is exactly equivalent to these
+[74:45.16] four lines of code delete save the
+[74:48.68] changes run the program you can see this
+[74:51.60] person is eligible if I change the age
+[74:54.48] to 12 12 and run the program we get not
+[74:59.08] eligible so what we have here is called
+[75:01.80] Turner
+[75:07.92] operator in Python we have three logical
+[75:11.12] operators and we use these operators to
+[75:13.92] model more complex conditions so these
+[75:17.32] operators are and or and not let's see a
+[75:22.56] real word example of using these
+[75:24.12] operators so imagine we're building an
+[75:26.40] application for processing loans so we
+[75:29.36] need two variables High income we can
+[75:33.24] set this to
+[75:34.56] true and good underlined credit we set
+[75:38.92] it to true now here's the condition we
+[75:41.60] want to implement if the applicant has
+[75:44.52] high income and good credit score then
+[75:47.92] they are eligible for the loan so if
+[75:51.84] High income and good credit
+[75:55.60] we add the colon and print
+[75:59.20] eligible now note that here I have not
+[76:01.80] compared the value of this variable with
+[76:04.56] true that is one of the issues I see in
+[76:07.04] a lot of beginners code this is
+[76:08.84] redundant and unprofessional because
+[76:11.52] High income is a Boolean so it's either
+[76:14.04] true or false we don't need to compare
+[76:16.52] true with true so if this condition is
+[76:20.12] true and this second condition is true
+[76:23.52] then we will print eligible in the
+[76:26.64] terminal so save the changes and run the
+[76:29.80] program obviously this person is
+[76:32.52] eligible however if one of these
+[76:35.08] conditions is false we will not see
+[76:38.36] eligible in the terminal so let's add an
+[76:41.80] lse statement here and
+[76:44.28] print not
+[76:46.92] eligible run the program we see not
+[76:50.60] eligible so this is how the and operator
+[76:53.48] works with and operator if both
+[76:56.60] conditions are true the result will be
+[76:58.76] true in contrast with the or operator as
+[77:02.48] long as at least one of the conditions
+[77:04.44] is true the result will be true so if I
+[77:07.64] replace and with or here we should see
+[77:11.96] eligible in the terminal let's run it
+[77:14.60] one more time there you go so these are
+[77:17.40] the and and or operators now let's take
+[77:20.00] a look at an example of the not operator
+[77:22.72] so I'm going to Define another variable
+[77:25.36] student set it to True temporarily I'm
+[77:28.72] going to remove this expression and
+[77:30.40] simplify it we'll come back to this
+[77:32.36] later so let's say if the person is
+[77:35.44] eligible if they are not a student the
+[77:38.88] not operator basically inverses the
+[77:41.44] value of a Boolean so in this case
+[77:43.68] student is true when we apply the not
+[77:46.96] operator the result will be false so in
+[77:50.00] this case our condition will be false
+[77:52.00] and that's why this print statement will
+[77:54.68] not not be executed let me show you so
+[77:57.28] save run the program they're not
+[78:00.52] eligible if student was
+[78:03.48] false when we apply the not operator
+[78:06.08] will get true so our condition will be
+[78:08.32] true and we'll see eligible let's run it
+[78:10.88] one more time there you go with these
+[78:14.04] operators we can model even more complex
+[78:16.92] conditions here's an example a person
+[78:19.64] can be eligible if they have either High
+[78:22.76] income or good CR credit and they should
+[78:27.00] not be a student let me show you how to
+[78:29.52] implement this condition so if High
+[78:33.48] income or good credit we want at least
+[78:37.52] one of these conditions to be true so we
+[78:40.96] put these in parenthesis we want to
+[78:43.72] separate these from the other condition
+[78:45.92] which is not a student now the result of
+[78:49.24] this should be true which means at least
+[78:51.72] one of these conditions should be true
+[78:54.28] after that will add and not
+[78:58.40] student and finally call so with these
+[79:02.12] operators you can model all kinds of
+[79:04.40] real word
+[79:10.20] scenarios so here's the example from the
+[79:12.64] last lecture a person is eligible for a
+[79:15.28] loan if they have high income and good
+[79:18.80] credit and they're not a student now one
+[79:22.64] thing you need to know about this
+[79:23.80] Boolean operator
+[79:25.28] is that they are short circuit what do I
+[79:27.76] mean by that well when python
+[79:30.32] interpreter wants to evaluate this
+[79:32.44] expression it starts from the first
+[79:35.32] argument if this is true it continues
+[79:38.24] the evaluation to see if the second
+[79:40.32] argument is also true so it continues
+[79:42.84] the evaluation all the way to the end of
+[79:45.60] this
+[79:46.44] expression however as soon as one of
+[79:48.96] these arguments is false the evaluation
+[79:52.04] stops let me show you what I mean so if
+[79:54.44] I change High income to false when
+[79:57.56] python interpreter sees this expression
+[80:01.12] it starts here it knows that high income
+[80:03.72] is false so it doesn't matter what comes
+[80:06.96] after the result of this entire
+[80:09.44] expression will always be false because
+[80:11.84] at least one of the arguments or one of
+[80:14.20] the operant is false this is what we
+[80:17.00] call short circuiting just like the
+[80:19.20] short circuit concept we have in
+[80:21.60] electronics so the evaluation stops as
+[80:24.68] as soon as one of these arguments
+[80:26.92] evaluates to false we have the same
+[80:29.88] concept with the or operator so if I
+[80:32.96] change these and operators to or let's
+[80:36.72] see what happens with the or operator we
+[80:39.96] know that at least one of the arguments
+[80:41.96] should be true so the evaluation stops
+[80:44.96] as soon as we find an argument that
+[80:46.80] evaluates to true in this case when
+[80:49.32] python interpreter evaluates this
+[80:51.32] expression it sees that high income is
+[80:53.76] false so so it continues the evaluation
+[80:56.44] hoping that the next argument will be
+[80:59.00] true here good credit is true so
+[81:02.20] evaluation stops and the result of this
+[81:05.08] entire expression will be true so in
+[81:08.72] Python logical operators are short
+[81:16.60] circuit in this lecture I'm going to
+[81:18.60] show you how to chain comparison
+[81:20.80] operators this is a very powerful
+[81:22.76] technique for writing clean code here's
+[81:24.88] an example let's say we want to
+[81:26.68] implement a rule that says age should be
+[81:29.92] between 18 and
+[81:32.64] 65 here's how we can implement it so we
+[81:35.72] Define a variable like AG set it to 22
+[81:39.32] now if age is greater than or equal to
+[81:42.28] 18 and age is less than 65 then we print
+[81:48.60] eligible now here's a question for you
+[81:51.08] how do we write this rule in math we can
+[81:53.64] write it like this
+[81:57.44] well more accurately we should have an
+[81:59.88] equal sign here so age should be between
+[82:03.04] 18 and 65 this is how we write this rule
+[82:06.60] in math now I've got some good news for
+[82:08.96] you we can write the exact same
+[82:11.04] expression in Python so I'm going to
+[82:13.92] move this up put an if statement here
+[82:18.68] line four and line three are exactly
+[82:21.52] equivalent but as you can see line four
+[82:23.88] is cleaner and easier to read so let's
+[82:27.04] get rid of line
+[82:28.80] three this is what we call chaining
+[82:31.84] comparison
+[82:38.76] operators all right here's a little quiz
+[82:41.16] for you I want you to pause the video
+[82:43.72] and think about this quiz for 10 to 20
+[82:46.00] seconds what do you think we'll see on
+[82:48.04] the terminal when we run this program so
+[82:51.24] pause the video figure out the answer
+[82:53.36] when you're ready come back continue
+[82:57.92] watching all right let's see what
+[82:59.80] happens when we run this program first
+[83:02.48] we get this if statement in this case
+[83:04.52] we're comparing two different objects
+[83:06.44] for equality and these objects have
+[83:08.64] different types we have a number
+[83:10.88] compared with a string so number 10 and
+[83:13.88] string 10 are not equal that is why a
+[83:17.00] will not be printed on the terminal so
+[83:19.60] the control moves to the L If part here
+[83:22.92] we have two Boolean Expressions here's
+[83:25.60] the first one here's the second one and
+[83:28.96] they are combined using the logical end
+[83:31.84] so if both these expressions are
+[83:33.88] evaluated to true then this entire
+[83:37.00] expression will be true and we will see
+[83:39.24] be on the terminal let's see if both
+[83:41.72] these expressions are evaluated to True
+[83:44.32] here's the first part bag is greater
+[83:47.00] than Apple that is true because when we
+[83:49.80] sort these words bag comes after Apple
+[83:53.52] but look at the second part part this
+[83:55.60] expression is evaluated to false because
+[83:58.16] bag is not greater than cat so when we
+[84:01.08] apply The Logical end between true and
+[84:03.84] false the result will be false that is
+[84:07.28] why this statement will not be executed
+[84:09.56] so to control moves to the lse part and
+[84:13.12] when we run this program the letter c
+[84:15.24] will be printed on the
+[84:21.68] terminal there are times that we may
+[84:23.92] want to repeat a task a number of times
+[84:26.72] for example let's say we send a message
+[84:28.88] to a user if that message cannot be
+[84:31.52] delivered perhaps we want to retry three
+[84:34.00] times now for Simplicity let's imagine
+[84:37.28] this print statement is equivalent to
+[84:39.80] sending a message in a real world
+[84:42.92] program to send a message to a user we
+[84:45.00] have to write five to 10 lines of code
+[84:47.40] now if you want to retry three times we
+[84:49.64] don't want to repeat all that code that
+[84:51.40] is ugly that's when we use a loop we use
+[84:54.72] Loops to create repetition so here is
+[84:57.84] how it works we start with four number
+[85:02.04] in we have a built-in function called
+[85:04.80] range now how many times we want to
+[85:07.12] repeat this task let's say three times
+[85:10.04] so we call range and pass three as an
+[85:12.96] argument now similar to our if
+[85:15.16] statements we need to terminate this
+[85:17.40] line with a
+[85:18.56] colon enter we get indentation so in
+[85:22.20] this block we can write all this
+[85:24.44] statements that should be repeated three
+[85:26.24] times let's do a print a message like
+[85:29.92] attempt save the changes run the program
+[85:33.96] so we have attempt printed three times
+[85:36.56] beautiful now what is this number let's
+[85:39.28] take a look it's a variable of type
+[85:42.80] integer so let's pass it as the second
+[85:46.04] argument to the print function number
+[85:49.48] run the program this is what we get 012
+[85:54.56] so here we have a for Loop this for Loop
+[85:57.28] is executed three times in each
+[86:00.00] iteration number will have a different
+[86:02.44] value initially it will be zero in the
+[86:04.80] second iteration it will be one and
+[86:06.88] finally in the last iteration it will be
+[86:08.72] two now here we can do something fun we
+[86:11.88] can
+[86:12.84] add one to this around the program and
+[86:16.96] now the messages that we print are kind
+[86:18.96] of more meaningful or more user friendly
+[86:21.64] like attempting number one attempting
+[86:23.48] number two and so on we can take this to
+[86:26.16] the next level so we can pass another
+[86:28.72] argument here I'm going to add an
+[86:30.60] expression one more time number + one so
+[86:34.20] we'll get 1 2 3 now I want to put this
+[86:36.88] expression in parenthesis so let's
+[86:39.72] select this put it in parenthesis and
+[86:43.12] then multiply it by a DOT so here we
+[86:47.48] have a string that is multiplied by a
+[86:50.20] number the result will be that string
+[86:52.44] repeated that number of times let's take
+[86:55.00] a look so run the program see that's
+[86:58.88] pretty cool isn't it now let me show you
+[87:01.52] one more thing before we finish this
+[87:03.04] lecture as you saw this range function
+[87:05.60] generates numbers starting from zero all
+[87:08.00] the way up to this number here but it
+[87:10.20] doesn't include this number here we can
+[87:12.48] pass another argument say start from one
+[87:16.32] and finish before
+[87:18.20] four with this change we don't need to
+[87:20.56] add one to number every time because in
+[87:23.52] the first ation this number variable
+[87:25.80] will be set to one so we can simplify
+[87:28.56] our code and make it
+[87:30.28] cleaner let's run it one more time we
+[87:32.76] get the exact same result we can also
+[87:36.20] pass a third argument as a step so I'm
+[87:39.24] going to change the second argument to
+[87:41.40] 10 and pass two as a step look at the
+[87:45.92] result these are the numbers we get 1 3
+[87:48.84] 5 and so on so pretty useful you're
+[87:51.44] going to use this function a lot in real
+[87:53.40] world application
+[88:00.16] continuing with the example from the
+[88:01.64] last lecture let's imagine the scenario
+[88:04.16] where after the first attempt we can
+[88:06.28] successfully send the message in that
+[88:08.68] case we want to jump out of this Loop we
+[88:11.20] don't want to repeat this task of
+[88:13.88] sending a message three times let me
+[88:16.20] show you how to implement this so in
+[88:18.40] this demo I'm going to simulate the
+[88:20.16] scenario where we can successfully send
+[88:22.40] a message so we Define a variable
+[88:26.28] successful and set it to
+[88:28.56] true now here after this print statement
+[88:32.28] we'll have an if statement if successful
+[88:36.88] colon then perhaps we can
+[88:39.64] print
+[88:41.64] successful now here we want to jump out
+[88:44.08] of this Loop for that we use the Breck
+[88:46.88] statement let's trun this program and
+[88:49.00] see what happens so there you go after
+[88:52.60] the first attempt you're successful and
+[88:55.92] there are no more
+[88:57.32] attempts so once again I want you to pay
+[88:59.84] great attention to the indentation here
+[89:02.20] because that's one of the common issues
+[89:04.00] amongst beginners so here's our for Loop
+[89:07.92] these two lines are indented with four
+[89:09.84] spaces and they belong to our for Loop
+[89:13.12] in every iteration these two lines will
+[89:15.16] be executed now when we get to line four
+[89:18.92] if this condition is true then these two
+[89:22.28] lines will be executed because both
+[89:24.96] these lines are indented below this if
+[89:28.52] statement now let's take this program to
+[89:30.72] the next level what if we attempt three
+[89:33.64] times and we still cannot send an email
+[89:36.52] perhaps we want to display a different
+[89:38.16] message to the user we say hey we Tred
+[89:40.40] three times but it didn't work so I'm
+[89:43.60] going to change successful to false now
+[89:47.80] at the end here we can add an L
+[89:50.56] statement this is what we call a for l
+[89:53.32] statement
+[89:54.56] what we put under this L statement will
+[89:56.92] only be executed if this Loop completes
+[89:59.96] without an early termination so if we
+[90:02.52] never break out of this Loop then the L
+[90:05.76] statement will be executed so here we
+[90:08.12] can print a message like attempted three
+[90:11.68] times and
+[90:13.20] failed so run the
+[90:17.56] program see what we get three attempts
+[90:20.76] followed by this message attempted three
+[90:22.84] times and failed
+[90:24.72] in contrast if we change successful to
+[90:27.84] true because we terminate this Loop
+[90:30.28] using this break statement what we have
+[90:33.32] in the else block will not be executed
+[90:35.80] take a look R the program we have one
+[90:38.72] attempt successful
+[90:45.60] done in programming we have this concept
+[90:48.32] called nested Loops so we can put one
+[90:50.80] Loop inside of another loop and with
+[90:53.36] this we can get some interesting results
+[90:55.80] let me show you so I'm going to start
+[90:58.36] with this Loop for X in range five colon
+[91:04.24] now inside of this Loop I'm going to add
+[91:06.56] another loop so for y in range three
+[91:12.92] colon and then in our second Loop I'm
+[91:15.40] going to add a print statement here we
+[91:18.32] can use formatted strings to display
+[91:21.68] coordinates remember formatted strings
+[91:24.12] so we have F followed by quotes now here
+[91:27.84] we add parentheses for our coordinates
+[91:30.60] first we want to display X and then
+[91:33.48] comma followed by y let's run this
+[91:37.20] program and see what happens there you
+[91:40.36] go pretty cool isn't it so we get zero
+[91:43.48] and zero 0o and one zero and two then we
+[91:46.44] get one and zero one and one one and two
+[91:49.28] and so on now let me explain how exactly
+[91:52.72] python interpreter executes this code so
+[91:55.92] here we have two Loops this is what we
+[91:58.00] call the outer loop and this is the
+[92:00.96] inner loop so the execution of our
+[92:03.56] program starts here in the first
+[92:05.76] iteration of this Loop X is zero now we
+[92:09.32] get to this statement which is a child
+[92:12.68] of this four statement because it's
+[92:15.28] indented four times this statement
+[92:17.64] itself is a loop so what we have inside
+[92:21.40] of this Loop will be executed three
+[92:24.48] times in the first iteration X is zero
+[92:28.36] because we're still in the first
+[92:29.72] iteration of the outer loop and Y is
+[92:32.80] also zero because we are in the first
+[92:34.92] iteration of the inner loop that is why
+[92:37.44] we get zero and zero now we go to the
+[92:40.96] second iteration of this Inner Loop in
+[92:43.80] this iteration y will be one whereas X
+[92:46.88] is still zero that is why we get 0 and
+[92:49.76] one and similarly in the third iteration
+[92:52.36] of our inner loop we'll get
+[92:54.48] zero and two in the terminal now we're
+[92:57.40] done with the execution of the inner
+[92:59.20] loop so the control moves back to our
+[93:01.92] outer loop here will be in the second
+[93:04.16] iteration so X will be one and then we
+[93:08.08] start here again so we have to execute
+[93:10.80] this inner loop three times in the first
+[93:13.44] iteration y will be zero and X is one so
+[93:17.16] here we have one and zero then we'll get
+[93:19.20] one and one and one and two you got the
+[93:21.60] point so this is all about nested
+[93:29.60] Loops so you have learned how to use for
+[93:32.20] Loops to repeat one or more statements
+[93:34.80] in your programs now let's dive deeper
+[93:37.52] and see what this range function returns
+[93:40.64] so earlier you learned about the
+[93:43.56] built-in type function with this
+[93:46.08] function we can get the type of an
+[93:47.64] object so if I pass Five here and run
+[93:51.92] this program this is what we get so the
+[93:54.96] type of this number or this object is
+[93:57.48] int or integer now let's look at the
+[94:00.92] type of the value that we get from the
+[94:03.52] range function so as an argument we pass
+[94:07.36] range of a number let's run this program
+[94:11.92] so this range function returns an object
+[94:15.44] of type range so in Python we have
+[94:19.12] primitive types like numbers strings and
+[94:21.88] booleans but we also have complex types
+[94:25.08] range is an example of one of those
+[94:27.00] complex types throughout this course
+[94:29.20] you're going to learn about a lot of
+[94:31.00] other complex types now what is
+[94:33.72] interesting about this range object is
+[94:36.52] that it's iterable which means we can
+[94:39.36] iterate over it or use it in a for Loop
+[94:43.12] that is why we can write code like
+[94:46.96] this so This range function returns a
+[94:50.56] range object which is iterable which
+[94:52.76] means we can iterate over it in each
+[94:55.72] iteration X will have a different value
+[94:59.52] now range objects are not the only
+[95:01.76] iterable objects in Python strings are
+[95:04.48] also iterable so here we can add a
+[95:08.72] string like
+[95:10.84] python now in each iteration X will hold
+[95:14.52] one character in this string let me show
+[95:17.20] you so print X and I'm going to delete
+[95:21.20] these two lines
+[95:22.64] here let's run this program so in each
+[95:26.32] iteration we'll get one character and
+[95:29.08] print it we have another complex type
+[95:32.24] called list which we use to store a list
+[95:35.12] of objects so we add square brackets
+[95:38.80] this indicates a list now we can add a
+[95:41.24] list of numbers or a list of strings
+[95:43.64] like a list of names you will learn
+[95:45.56] about lists later in the course so let's
+[95:48.80] run this one more time as you can see we
+[95:51.80] can iterate over lists in in each
+[95:53.96] iteration will get one object in this
+[95:56.96] list now later in the course I will show
+[95:59.72] you how to create your own custom
+[96:02.04] objects that are iterable for example
+[96:04.68] you will learn how to write code like
+[96:06.28] this for item in shopping cart print
+[96:12.76] item so shopping cart is going to be a
+[96:15.48] custom object that you will create it's
+[96:17.72] not going to be an integer or string or
+[96:20.00] Boolean it's a custom object it has a
+[96:22.52] different structure and we'll make it
+[96:24.64] iterable so we can use it in a for Loop
+[96:27.52] and in each iteration we can get one
+[96:29.48] item in the shopping cart and printed on
+[96:31.96] a
+[96:37.44] terminal so you have learned that we use
+[96:39.64] four Loops to iterate over iterable
+[96:42.40] objects in Python we have another kind
+[96:45.08] of loop that is a while loop and we use
+[96:47.72] that to repeat something as long as a
+[96:49.92] condition is true here's an example so
+[96:52.84] let's define a variable number and set
+[96:55.60] it to a 100 now we use while and here we
+[96:59.88] add a condition as long as number is
+[97:03.20] greater than zero we add a colon once
+[97:06.72] again we have indentation so we can
+[97:09.04] repeat one or more statements we can
+[97:12.04] print this
+[97:13.96] number and then we can divide it by half
+[97:16.76] so number equals
+[97:19.40] number use the integer division to
+[97:22.72] divide it by two
+[97:24.36] or we can use the augmented assignment
+[97:26.68] operator to shorten this code like
+[97:31.64] this now let's run this
+[97:34.12] program so here's what we get initially
+[97:36.72] our number is 100 we divide it by half
+[97:40.04] we get 50 then 25 and so on so as you
+[97:43.56] can see in this example we are not
+[97:45.88] iterating over an itable like a range
+[97:48.96] object or a string or a list we are
+[97:51.60] evaluating a condition and repeating a
+[97:55.24] task let me show you a real word example
+[97:57.92] of a y Loop in this interactive shell
+[98:01.16] python is waiting for an input we can
+[98:03.40] type something like 2 + 2 it will
+[98:05.60] evaluate it and ask for the next input
+[98:08.56] we can add another expression like 10 is
+[98:10.72] greater than two so these steps will
+[98:13.36] continue until we press contrl D so
+[98:18.24] behind the scene we have a y Loop that
+[98:20.40] continues execution until we press contr
+[98:23.88] D that is the condition that causes the
+[98:26.56] Y Loop to terminate let me show you how
+[98:29.00] to build something like this in
+[98:31.48] Python so let's Define a variable
+[98:34.72] command and set it to an empty string
+[98:38.12] now here we need a y Loop we want this y
+[98:41.16] Loop to execute as long as command does
+[98:43.92] not equal to quit so command does not
+[98:47.96] equal to quit
+[98:51.08] colon in this Loop we want to continue
+[98:53.44] continuously get input from the user so
+[98:56.16] we use the built-in input function we
+[98:59.44] add a label like this get the result and
+[99:02.88] store it in the command
+[99:05.84] variable now at this point python
+[99:08.16] interactive shell will evaluate this
+[99:10.08] command we're not going to do that in
+[99:11.88] this lecture because that's way too
+[99:13.40] complex for Simplicity we can just Echo
+[99:16.40] back what the user entered so
+[99:19.32] print Echo and as the second argument we
+[99:23.52] as this command so this is our y Loop it
+[99:27.16] will execute until we type quit now as I
+[99:31.08] told you before don't run this program
+[99:33.12] using the code Runner extension because
+[99:35.48] by default it will run your program in
+[99:37.36] the output window which is read only so
+[99:40.12] open up the terminal using control and
+[99:42.40] back tick and run python or Python 3
+[99:47.32] app.py so here's our Command Prompt
+[99:49.84] let's type 2+ two it echoes back let's
+[99:53.76] type 3 * 2 there you go if we type quit
+[99:58.68] our program terminates now let's try it
+[100:01.12] one more time what if we type quit in
+[100:05.12] uppercase the program doesn't terminate
+[100:07.84] because as you learned before lowercase
+[100:10.04] and uppercase characters have different
+[100:12.08] numeric
+[100:13.28] representations so quit in lowercase is
+[100:15.80] different from quit in
+[100:18.20] uppercase now to solve this problem an
+[100:21.20] amateur programmer may do something like
+[100:23.12] this
+[100:24.80] and command does not equal to Capital
+[100:29.80] quit so while command does not equal
+[100:33.72] quit in lowercase and quit in uppercase
+[100:37.08] continue getting input from the user
+[100:39.44] let's run this program in terminal and
+[100:41.16] see what
+[100:42.16] happens so one more time python
+[100:45.64] app.py we type quit beautiful it works
+[100:49.32] we type quit in uppercase that would
+[100:51.56] work too but what if I type quit with an
+[100:54.60] uppercase q and lowercase U our program
+[100:59.32] doesn't terminate so this is a poor way
+[101:02.56] of checking for the quit command what is
+[101:05.20] a better way let me show you so we don't
+[101:08.08] need this end operator here instead
+[101:12.52] because command is a string we can call
+[101:15.16] the lower method so whatever the user
+[101:18.60] types in first will'll convert it to
+[101:20.96] lowercase and then compare it with quit
+[101:24.44] in lowercase with this change it doesn't
+[101:27.08] matter how the user types the word quit
+[101:29.68] will always terminate the
+[101:36.28] program now the last thing I want to
+[101:38.24] discuss in this section is the concept
+[101:40.36] of infinite Loops an infinite Loop is a
+[101:43.44] loop that runs forever so if I change
+[101:47.44] this condition to true because true is
+[101:51.00] always true this y Loop will will run
+[101:53.84] forever so to jump out of this we need a
+[101:56.60] break statement so after we get the
+[101:59.04] input from the user we can get the
+[102:02.16] command convert it to
+[102:04.28] lowercase and see if it equals to quit
+[102:08.32] if that's the case we want to
+[102:10.52] break now with this change we no longer
+[102:13.08] need to initialize command to an empty
+[102:15.52] string previously we needed this because
+[102:18.28] we had a while statement like this while
+[102:21.52] command does not equal will quit so we
+[102:25.48] had to Define this command variable and
+[102:27.88] that's why we have set it to an empty
+[102:29.64] string without this line when python
+[102:32.56] interpreter tries to execute this code
+[102:34.92] it doesn't know what command is so now
+[102:38.24] that we have an infinite Loop we no
+[102:40.20] longer need to Define command and set it
+[102:42.08] to an empty string so in terms of
+[102:44.56] functionality this program is exactly
+[102:46.84] the same as the program we wrote in the
+[102:48.56] last lecture just be aware of these
+[102:51.00] infinite Loops because they run for ever
+[102:53.56] you should always have a way to jump out
+[102:56.96] of them otherwise your program will run
+[102:59.08] forever and this can sometimes cause
+[103:01.32] issues because if you're executing
+[103:03.40] operations that consume memory at some
+[103:05.92] point your program may run out of memory
+[103:07.84] and
+[103:14.00] crash all right time for an exercise I
+[103:17.20] want you to write a program to display
+[103:19.52] the even numbers between 1 to 10 so when
+[103:22.92] you run this program you should see 2 4
+[103:25.24] 6 and 8 and after these I want you to
+[103:28.20] print this message we have four even
+[103:31.52] numbers now here's a quick hint before
+[103:34.04] you get started you should call the
+[103:35.88] range function with one and 10 do not
+[103:38.92] use the third argument which is called
+[103:40.92] Step so basically I want you to iterate
+[103:43.40] over all the numbers between 1 to 10
+[103:46.24] check if each number is an even number
+[103:48.60] and then print it on the terminal so
+[103:51.32] pause the video spend 2 minutes on this
+[103:53.80] exercise when you're done come back
+[103:55.40] continue
+[103:59.60] watching so we start with a for Loop for
+[104:02.48] number in range 1 to 10
+[104:06.68] colon we check to see if the remainder
+[104:09.72] of division of this number by two equal
+[104:12.40] Z so if number modulus 2 equal Z then
+[104:18.96] reprint this
+[104:21.76] number now let's run this
+[104:24.28] program so we get 2 4 6 8 beautiful now
+[104:28.12] to count the even numbers we need a
+[104:31.08] separate variable so let's call that
+[104:33.12] count initially we set it to zero now in
+[104:36.52] this if block every time we find an even
+[104:38.88] number we need to increment count so we
+[104:42.16] said count plus equals 1 and finally
+[104:46.56] after our for Loop we can print a
+[104:49.68] formatted string we have count count
+[104:54.16] even
+[104:55.68] numbers let's run the program and here's
+[104:59.08] the result so that brings us to the end
+[105:01.76] of this section in the next section
+[105:03.68] you're going to learn how to create your
+[105:05.36] own functions I hope you enjoyed the
+[105:07.56] section and thank you for
+[105:16.64] watching so far you have learned how to
+[105:19.04] use some of the built-in functions in
+[105:21.12] Python such as print round and so on in
+[105:25.36] this section you're going to learn how
+[105:26.72] to write your own functions now you
+[105:29.16] might ask but why do we even need to
+[105:31.00] write our own functions well when you
+[105:33.60] build a real program that program is
+[105:36.28] going to consist hundreds or thousands
+[105:38.76] of lines of code you shouldn't write all
+[105:41.12] that code in one file like we have done
+[105:42.96] so far you should break that code into a
+[105:45.60] smaller more maintainable and
+[105:48.04] potentially more reusable chunks you
+[105:50.80] refer to these chunks as functions so
+[105:53.48] let me show you how to create your own
+[105:55.68] custom functions we start with the defa
+[105:59.16] keyword which is short for Define next
+[106:01.96] we need to give our function a name so
+[106:04.80] let's call this greet all the best
+[106:06.92] practices you learn about naming your
+[106:08.60] variables also apply to naming your
+[106:10.80] functions so make sure your function
+[106:12.72] names are meaningful descriptive use
+[106:16.04] lowercase letters to name your functions
+[106:18.64] and an underscore to separate multiple
+[106:21.72] words now after the name we need to add
+[106:24.72] parentheses you will see why shortly and
+[106:27.40] then we'll add a column now what is
+[106:30.52] going to happen you know it we're going
+[106:32.92] to get indentation which means the
+[106:34.96] following statements will belong to this
+[106:37.44] function so here I'm going to add two
+[106:40.96] statements hi there and welcome
+[106:46.48] aboard both these lines belong to this
+[106:48.96] function because they're
+[106:50.52] indented now we're done with this
+[106:52.52] function we need to call it so we remove
+[106:55.60] the indentation and we add two line
+[106:58.56] breaks after this function this is what
+[107:01.12] pep8 recommends to keep our code clean
+[107:03.72] and maintainable now if you forget to
+[107:05.96] add two line braks don't worry as soon
+[107:08.00] as you save the changes autopep8 will
+[107:10.56] automatically add these line braks for
+[107:12.44] you let me show you so I'm going to
+[107:14.24] remove these line braks and call this
+[107:17.64] function great with parenthesis just
+[107:20.40] like how we call the built-in functions
+[107:23.12] now save the changes there you go so we
+[107:26.88] get two line breaks after our function
+[107:29.84] now let's run this
+[107:31.28] program so we get these two messages on
+[107:34.96] the
+[107:40.56] terminal now here's a question for you
+[107:43.16] what is the difference between the GRE
+[107:45.68] and print functions the difference is
+[107:49.44] that this print function takes an input
+[107:51.88] whereas our grd function doesn't take
+[107:54.56] any inputs so let me show you how to
+[107:56.96] pass inputs like first name and last
+[107:59.12] name to this function when defining a
+[108:01.80] function in between parentheses we list
+[108:04.60] our parameters so here we add two
+[108:07.36] parameters like first underline name and
+[108:10.96] last underline name now when calling
+[108:14.08] this function we need to supply two
+[108:16.32] values for those parameters we refer to
+[108:19.32] them as arguments so m
+[108:23.72] hamedani these are the arguments to the
+[108:26.52] greed function that's one of the terms
+[108:28.48] that a lot of developers out there don't
+[108:30.24] know they don't know the difference
+[108:31.52] between parameters and arguments a
+[108:34.40] parameter is the input that you define
+[108:36.68] for your function whereas an argument is
+[108:39.64] the actual value for a given parameter
+[108:42.76] okay now let's change line two and
+[108:46.00] instead of saying hi there we can greet
+[108:47.84] a person by their full name so we can
+[108:50.44] convert this to a formatted string
+[108:53.64] and pass two Fields here first name as
+[108:57.28] well as last name save the changes run
+[109:01.32] the program and this is what we get in
+[109:04.16] terminal now this function is more
+[109:06.32] useful we can reuse it and call it with
+[109:08.60] different arguments so let's greet John
+[109:13.12] Smith as well run the program so we get
+[109:17.20] Hi msh hamadani and hi John Smith now
+[109:20.72] note that by default all the paramet
+[109:23.04] that you define for a function are
+[109:25.12] required so here our greed function
+[109:27.48] takes two parameters if I exclude one of
+[109:31.16] these arguments and save the changes you
+[109:34.32] can see we have this red underline so
+[109:36.92] pilent is complaining and saying there
+[109:38.84] is no value for argument last name also
+[109:42.20] if we run the program we get this type
+[109:44.12] error greet missing one required
+[109:47.52] positional
+[109:49.08] argument so let's put this back now let
+[109:52.72] ler I will show you how to define
+[109:54.76] optional
+[110:00.64] parameters so this is the simplified
+[110:02.92] version of this great function we
+[110:04.64] created earlier now in programming we
+[110:07.44] have two types of functions functions
+[110:10.96] that perform a task and functions that
+[110:14.76] calculate and return a value here are
+[110:18.28] some examples both the print and GD
+[110:21.32] functions are example of type one
+[110:24.24] they're performing a task which is
+[110:26.20] printing something on the terminal in
+[110:29.12] contrast the round
+[110:31.44] function is an example of a function
+[110:34.00] that calculates and returns a value so
+[110:37.32] the functions that you create fall into
+[110:39.36] these two categories now let me show you
+[110:42.08] how to rewrite this great function but
+[110:44.44] in the second form so instead of
+[110:46.48] printing this string on the terminal we
+[110:49.68] simply return it let me show you so I'm
+[110:52.64] I'm going to delete all this
+[110:54.40] code Define a new function but call it
+[110:57.84] get underline greeting we add the name
+[111:01.96] parameter and simply return this
+[111:04.72] formatted string High
+[111:07.72] name that's all we have to do so we use
+[111:10.36] the return statement to return a value
+[111:12.56] from this function now we can call this
+[111:15.80] function get underlined greeting pass a
+[111:19.64] name like msh because it returns a value
+[111:23.40] we can store that value in a separate
+[111:26.32] variable like message now you might be
+[111:29.12] curious which form of these gting
+[111:31.32] functions is better well with this first
+[111:34.32] implementation we loged to printing
+[111:36.72] something in the terminal in the future
+[111:39.04] if we want to write that message in a
+[111:41.00] file or send it in an email we have to
+[111:43.56] create another function so we cannot
+[111:46.24] reuse this great function in other
+[111:48.80] scenarios in contrast this second form
+[111:52.64] is not tied to printing something on the
+[111:54.88] terminal it simply returns a value now
+[111:58.16] we get this value and we can do whatever
+[112:00.08] we want with it we can print it on the
+[112:03.44] terminal or we can use the built-in open
+[112:07.56] function to write this message to a file
+[112:10.68] so we can create a file like content.
+[112:14.16] txt open it for writing this returns a
+[112:17.76] file object and then we can call file.
+[112:20.24] write message now and don't worry about
+[112:23.52] these two lines later in the course I'm
+[112:25.36] going to talk about working with files
+[112:27.84] but what I want you to take away here is
+[112:29.92] that we have this message variable and
+[112:31.60] we can do whatever we want with it we
+[112:33.68] can print it on the terminal write it to
+[112:35.76] a file send it in an email and so on and
+[112:39.32] one more thing before we finish this
+[112:40.72] lecture so here's our GD function and as
+[112:43.52] you can see we're simply printing a
+[112:45.72] string now if we call GRE give it a name
+[112:50.84] run the program we get this message hi
+[112:53.16] msh but what if we put this inside of a
+[112:56.92] call to the print function let's see
+[113:00.40] what we get we get high M followed by
+[113:04.20] nonan what is this nonan is the return
+[113:07.40] value of the great function so in Python
+[113:10.72] all functions by default return the non
+[113:13.80] value non is an object that represents
+[113:16.48] the absence of a value later in the
+[113:18.76] course you're going to learn more about
+[113:20.04] nonone what matters now is that all
+[113:22.68] functions return non by default unless
+[113:25.56] you specifically return a value so here
+[113:29.36] if we
+[113:30.84] return some
+[113:33.28] string none will no longer be returned
+[113:36.52] now I just want to clarify something
+[113:38.28] earlier I told you that we have two
+[113:39.84] types of functions in programming
+[113:41.88] functions that carry out a task or
+[113:44.20] functions that calculate and return a
+[113:46.28] value so back to the code we previously
+[113:49.80] had so even though this function returns
+[113:52.68] nonone by default it is still classified
+[113:55.56] as a function that carries out a
+[114:02.92] task let's create another function we
+[114:06.64] call it increment we want to use this
+[114:09.16] function to increment a number by a
+[114:12.20] given value so here we simply return
+[114:15.96] number plus
+[114:18.52] by now we can call this function like
+[114:21.56] this and commment two and one this
+[114:24.76] returns a value so we can store it in a
+[114:27.68] variable like result and then print it
+[114:30.56] on the terminal let's run the program we
+[114:33.72] get three beautiful now we can simplify
+[114:36.64] this code we have used this result
+[114:39.08] variable only in a single place that is
+[114:41.80] line six so we don't really need it so
+[114:45.28] on line six we can replace result with a
+[114:48.88] call to increment function like this
+[114:52.92] so when python interpreter executes this
+[114:55.56] code first it will call the increment
+[114:58.44] function it will get the result and
+[115:00.88] temporarily store it in a variable for
+[115:02.72] us we don't see that variable and then
+[115:04.88] it will pass that variable as an
+[115:06.76] argument to the print function now if we
+[115:10.52] run this program we get the exact same
+[115:12.88] result beautiful now we can make this
+[115:15.56] code more readable if someone else looks
+[115:18.12] at line five they may not know exactly
+[115:21.44] what these arguments are four we can use
+[115:24.52] a keyword argument to make this code
+[115:27.00] more readable so this one here is the
+[115:30.48] value of this by parameter we can prefix
+[115:34.36] it with the name of the parameter like
+[115:37.56] this now we can read this code almost
+[115:40.48] like plain English increment to by one
+[115:44.36] so if you're calling a function with
+[115:46.00] multiple arguments and it's not quite
+[115:48.48] clear what these arguments are for you
+[115:50.84] can make your code more read
+[115:52.92] by using keyword arguments so here y
+[115:56.20] equals 1 is a keyword
+[116:03.04] argument earlier I told you that all the
+[116:05.80] parameters that you define for a
+[116:07.28] function are required by default in this
+[116:10.44] lecture I'm going to show you how to
+[116:12.16] make the by parameter optional so let's
+[116:15.88] say we don't want to
+[116:17.36] explicitly pass by equals 1 every time
+[116:20.96] we want to call this incr function we
+[116:23.36] want to use this function to increment a
+[116:25.52] value by one so we remove the second
+[116:29.12] argument now we need to give this
+[116:31.24] parameter a default value so we set it
+[116:34.24] to one now if we call this function and
+[116:37.56] don't Supply the second argument this
+[116:39.96] default value will be used otherwise the
+[116:42.52] value that we specify here will be used
+[116:44.56] let me show you so we run this program
+[116:48.12] the result is three but if we pass the
+[116:51.72] second AR argument here will increment
+[116:54.64] two by five so we will get seven so you
+[116:58.60] can see it's pretty easy to make a
+[117:00.40] parameter optional just be aware that
+[117:03.16] all these optional parameters should
+[117:05.44] come after the required parameters in
+[117:09.32] other words I cannot add another
+[117:12.52] required parameter here let's call that
+[117:14.96] another I cannot add that here if I save
+[117:18.04] the changes you can see we get a red
+[117:20.68] underline here so all the optional
+[117:23.72] parameters should come after the
+[117:26.60] required parameters now obviously in
+[117:29.28] this case we don't need the second
+[117:30.96] parameter so let's delete
+[117:37.92] it there are times that you may want to
+[117:40.40] create a function that takes a variable
+[117:42.80] number of arguments here is an example
+[117:45.76] let's define this function multiply that
+[117:48.88] takes two parameters X and Y and simply
+[117:52.80] returns x * y now we can call this
+[117:57.08] function like
+[117:59.56] this so far so good but what if you want
+[118:02.76] to pass one or two more arguments here
+[118:06.60] that doesn't work because our multiply
+[118:08.60] function takes only two parameters to
+[118:11.32] solve this problem we need to replace
+[118:13.96] these two parameters with a single
+[118:16.28] parameter we use a plural name here to
+[118:19.08] indicate that this is a collection of
+[118:21.52] arguments
+[118:22.72] and then we prefix it with an asterisk
+[118:25.28] this is the magical part let me show you
+[118:27.60] what happens when you use an asterisk
+[118:29.92] here so temporarily let's delete this
+[118:32.96] line and simply print numbers let's see
+[118:36.32] what we get here so run the
+[118:38.76] program you can see all our arguments
+[118:41.96] and they're packed in parenthesis what
+[118:44.64] is this well earlier you learned about
+[118:48.08] lists I briefly mentioned that you can
+[118:50.80] use square bracket to create a list of
+[118:53.52] objects like 2 3 4 5 now later in the
+[118:56.76] course we have a comprehensive section
+[118:58.44] about lists so don't worry about the
+[119:00.48] details of lists and how they work but
+[119:03.36] what I want you to note here is that the
+[119:05.56] only difference between this list and
+[119:08.20] what we have here is in the notation so
+[119:11.40] we use square brackets to create lists
+[119:14.20] and parentheses to create toles some
+[119:17.00] people call it tles or tuples so a
+[119:19.72] topple is similar to a list and that
+[119:22.08] it's a collection of objects the
+[119:24.28] difference is that we cannot modify this
+[119:26.24] collection we cannot add a new object to
+[119:28.88] this toppo once again later in the
+[119:31.16] course we're going to have a
+[119:32.36] comprehensive section about lists top
+[119:35.12] holes and other data structures what
+[119:37.64] matters now is that these topples just
+[119:40.56] like lists are iterable so we can
+[119:43.20] iterate over them which means we can use
+[119:45.48] them in Loops let me show you
+[119:48.48] so let's write for number in numbers
+[119:53.76] colon let's just print one number at a
+[119:57.48] time actually we don't need this line so
+[120:00.60] delete and run the program so we iterate
+[120:04.32] over this top hole and in each iteration
+[120:06.88] we get one number and printed on the
+[120:08.88] terminal so now with a simple change we
+[120:11.36] can calculate the product of all these
+[120:13.96] numbers all we have to do is to Define a
+[120:17.40] variable like total initially we set it
+[120:20.12] to one and then in each each
+[120:22.72] iteration we get total and multiply it
+[120:26.76] by the current number or we can rewrite
+[120:29.76] this statement using an augmented
+[120:32.56] assignment operator so total times equal
+[120:37.44] number line five and four are exactly
+[120:40.96] identical so I'm going to use LINE five
+[120:43.36] because it's shorter and cleaner delete
+[120:46.84] and finally we'll return the total now
+[120:50.44] one of the issues I see often in
+[120:52.68] beginnner code is that they don't use
+[120:55.12] this indentation properly so they put
+[120:57.80] the return statement here and then they
+[121:00.08] wonder why their function doesn't work
+[121:02.20] properly if you put the return statement
+[121:04.64] here it will be part of the for Loop so
+[121:07.96] it will be executed in each iteration in
+[121:10.92] this case after the first iteration
+[121:13.56] because of this return statement will
+[121:15.40] return from this multiply function so
+[121:18.00] the total will not be calculated
+[121:20.00] properly we need to put this at the same
+[121:22.76] level of indentation as other statements
+[121:26.04] in this function so here we have our
+[121:28.12] four statement we Loop over all the
+[121:30.84] numbers we calculate the total and then
+[121:33.84] finally return it so with this
+[121:36.96] implementation we can get the result and
+[121:39.48] printed on the terminal let's run the
+[121:42.72] program and you can see the product of
+[121:45.96] these numbers is
+[121:48.52] 120 hey guys I just wanted to let you
+[121:50.76] know that this tutorial is actually the
+[121:53.00] first two hours of my complete python
+[121:55.48] Mastery course if you're finding this
+[121:57.32] helpful and want to dive even deeper the
+[121:59.48] full course covers everything from
+[122:01.32] beginner Basics to advanced concepts
+[122:03.32] like machine learning web development
+[122:04.96] and automation you'll also get Hands-On
+[122:07.28] projects to build your skills step by
+[122:09.40] step I put the link in the description
+[122:11.32] box if you're ready to take your python
+[122:13.32] knowledge to the next level

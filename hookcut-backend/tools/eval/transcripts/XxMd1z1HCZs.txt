@@ -1,0 +1,632 @@
+[0:00.40] Hi everyone, it was just uh last month
+[0:03.44] our country hosted the India AI impact
+[0:06.96] summit. As usual, a lot of
+[0:09.12] controversies, much of it was noise. But
+[0:11.76] what was very much real were the $280
+[0:15.20] billion of market value that was wiped
+[0:18.40] off in a single day. And this happened
+[0:20.88] because of a single plug-in from
+[0:23.12] Anthropic. Not just US stocks. A similar
+[0:26.24] pattern was seen back home with Infosys
+[0:29.12] down 21% since the 3rd of February. TCS
+[0:33.28] dropped by 20%.
+[0:35.52] Tech lost 20 as well and so on. In spite
+[0:38.64] of this massive fall, Jeffre just last
+[0:41.68] week downgraded a number of tech
+[0:43.92] companies on AI concerns as the overall
+[0:46.80] mood of the market changes to one of
+[0:49.44] panic with everyone running away from
+[0:52.16] anything that looks like it could be
+[0:54.00] replaced by an AI agent. This is
+[0:57.36] disruption at the highest level. And the
+[1:00.08] real question for you and me is which
+[1:03.28] are those companies that are more likely
+[1:05.36] to survive this onslaught and which
+[1:07.60] won't? It's the milliondoll or rather
+[1:11.04] billion dollar question and the rest of
+[1:13.12] this video will be a reflection of that.
+[1:15.36] It's a fight to the finish. And this is
+[1:18.08] episode number 25.
+[1:29.28] Let me be honest here. That feeling, the
+[1:32.32] discomfort that AI could replace humans,
+[1:35.36] I kind of always had it. This was right
+[1:37.92] from the days when James Cameroon
+[1:39.92] introduced us to Skynet in the
+[1:42.16] Terminator series. And so when Anthropic
+[1:44.88] launched its co-work tool in the middle
+[1:47.12] of January, it only added to the
+[1:49.52] shifting narrative that instead of AI
+[1:52.48] helping companies get productive, how
+[1:55.20] likely is it that AI will replace parts
+[1:58.00] of what these companies do? If you
+[2:00.16] aren't sure of what Claude Co does, very
+[2:03.68] simply, it's an agent that can plug
+[2:06.80] directly into your hardware. So servers,
+[2:09.36] internal systems, even your laptop and
+[2:12.00] it will sit inside the software like a
+[2:14.40] helper operating across tools which
+[2:16.88] means it can sort files on your desktop.
+[2:20.48] It can give you a summary of your
+[2:22.32] financial holdings from that folder you
+[2:24.48] would have marked as private. It can
+[2:26.80] schedule your tasks, sync your calendar,
+[2:29.36] process your bills and many such things
+[2:32.24] without your direct involvement. For
+[2:35.12] example, one of the plugins Anthropic
+[2:37.76] launched last month was a legal AI
+[2:40.56] agent. It's a tool that can review legal
+[2:43.12] documents, perform compliance checks,
+[2:45.36] and handle complex tasks that previously
+[2:48.00] required multiple specialized software
+[2:50.16] platforms. From an economic standpoint,
+[2:52.88] this matters because legal software has
+[2:55.52] historically been a high margin business
+[2:58.56] where much of the work is repeatable.
+[3:01.04] The pricing too has typically been a
+[3:03.68] function of usage or a per user license
+[3:06.64] cost and now with co-work and other
+[3:08.96] similar AI applications this model is
+[3:11.92] very much in danger. It's not the
+[3:14.16] pricing bit I think that's immaterial
+[3:17.12] but the bigger issue is the potential
+[3:19.44] obsollesence that the traditional model
+[3:22.16] faces. Essentially people have started
+[3:24.80] wondering what else is likely to be
+[3:27.36] replaced over the coming few months.
+[3:29.52] maybe customer support, finance, data
+[3:32.64] processing. I think there's a good
+[3:34.00] chance of that. Uh marketing workflows,
+[3:37.04] legal, product management or any or all
+[3:40.48] of the functions I've listed on this
+[3:42.64] slide. Vote Kosla who himself is a tech
+[3:45.92] billionaire said something in these
+[3:48.08] lines warning that IT services and VPO
+[3:51.36] firms could almost completely disappear
+[3:53.76] in the next 5 years. Nvidia's Jensen
+[3:56.56] Huang is a bit more pragmatic and
+[3:58.96] retains the view that AI is a tool that
+[4:01.76] helps software companies add a lot more
+[4:04.32] value to their offerings. Actually, let
+[4:06.80] me play that clip for you. Software is a
+[4:09.84] tool.
+[4:12.32] There's this notion that the tool
+[4:14.80] industry
+[4:16.56] is in decline and will be replaced by
+[4:19.36] AI.
+[4:21.28] You could tell because there's a whole
+[4:22.80] bunch of software companies whose stock
+[4:24.16] prices are under a lot of pressure
+[4:26.40] >> because somehow AI is going to replace
+[4:29.12] them. It is the most illogical thing in
+[4:32.16] the world and time will prove itself.
+[4:34.24] >> Now see Mr. Huang here is talking about
+[4:37.36] product software which is very different
+[4:39.84] from what Mr. Kosla was referring to
+[4:42.40] which is outsourcing or IT services as
+[4:45.28] we often call it in India. So these are
+[4:48.16] already two different things here. The
+[4:50.64] effect of AI is different in either
+[4:53.68] cases. But that's not all. It also
+[4:56.40] includes transformation projects, SAS
+[4:59.68] which is software as a service
+[5:02.56] platforms. And I had done a video on
+[5:04.88] this earlier covering Zomato, PBFT and
+[5:07.52] Dreamfolks, cloud infrastructure, cyber
+[5:10.32] security, consulting, semiconductors,
+[5:13.12] DevOps, AI models, system integrators,
+[5:16.24] robotics, blockchains and much much
+[5:18.56] more. So while the general mood of the
+[5:21.12] market is to bring everything down, a
+[5:23.68] total collapse, but the fact is the
+[5:26.08] intensity of AI disruption isn't the
+[5:28.72] same for each of these segments. And I'm
+[5:30.88] sure a better understanding of this can
+[5:33.28] reveal to us some mispriced
+[5:35.28] opportunities. I won't be discussing
+[5:37.92] specific stocks in this video, but what
+[5:40.64] we'll do here is we look at seven eight
+[5:44.24] different subsectors within IT and
+[5:47.04] examine the level and extent of
+[5:49.04] disruption that's possible in each of
+[5:50.96] these due to AI. Let's start with the
+[5:53.76] first one, IT services and consulting.
+[5:57.12] This is basically the outsourcing of
+[6:00.80] large scale digital transformations,
+[6:03.04] system integration and infrastructure
+[6:05.52] management that's done by global fortune
+[6:08.72] 500 clients through Indian companies. So
+[6:11.36] companies like TCS, Infosys, Vipro, HCL,
+[6:15.28] Persistent, emphasis, Coforge etc. These
+[6:18.32] guys operate on a massive scale. They
+[6:20.96] generate steady cash flows and as it
+[6:23.44] stands these are likely to bear the
+[6:25.76] brunt of disruption. Why? It's primarily
+[6:30.16] because of the way a traditional IT
+[6:32.88] services company operates. Okay. So very
+[6:36.40] basic commercially there are two kinds
+[6:39.28] of models here. The first is time and
+[6:42.32] material t and m wherein the client pays
+[6:45.60] per developer per hour. And secondly,
+[6:48.64] there are fixed price contracts. Now the
+[6:51.44] problem in both scenarios is that AI can
+[6:54.24] do the same work with fewer people and
+[6:56.80] in fewer hours. Essentially there's
+[6:59.60] effort compression here. And because
+[7:01.92] revenue in IT services is a function of
+[7:04.48] billable hours, there is visible revenue
+[7:07.20] damage for these models. Even in fixed
+[7:09.76] price contracts, while the client will
+[7:12.08] pay for the initial execution, it's very
+[7:14.56] likely that renewals won't be at a 5%
+[7:17.76] escalation, but are more likely to be at
+[7:20.32] a massive discount once the client
+[7:22.24] realizes that AI can do the same job at
+[7:25.12] a much cheaper rate. It's what investors
+[7:28.00] are asking the legal industry. That is
+[7:30.64] if AI agents can do the heavy lifting
+[7:33.60] then how defensible is per user pricing
+[7:36.64] for legal software platforms. The
+[7:39.28] sell-off in companies like Thompson
+[7:41.28] Reuters and Legal Zoom was in response
+[7:44.00] to this very question as investors
+[7:46.64] started looking beyond present
+[7:48.40] capabilities. They were more keen on
+[7:50.80] future leverage and how this might
+[7:52.96] reflect in their stock price. If one
+[7:55.44] wants, we can also get a little
+[7:57.44] mathematical about it. So this here is a
+[8:00.24] standard DCF framework which includes a
+[8:03.12] few years when one can forecast the
+[8:05.84] numbers particularly the growth rate and
+[8:08.48] then after a few years we assume a
+[8:10.80] terminal value which practically assumes
+[8:13.28] that the business will continue
+[8:14.88] perpetually at a certain growth rate.
+[8:17.36] Now the problem for these IT service
+[8:19.76] companies is that the cash flow so CF1,
+[8:23.20] CF2, CF3 etc. That part itself is not
+[8:27.52] clear because of margin compression,
+[8:30.40] lack of leverage, loss of client etc.
+[8:33.44] And secondly, even terminal value
+[8:35.28] estimates are now unclear because we
+[8:38.00] really don't know what advancements AI
+[8:41.04] is likely to offer and how quickly might
+[8:43.92] it destroy the traditional outsourcing
+[8:46.32] model. I hope you can see the problem
+[8:48.96] now. uh because of the uncertaintity AI
+[8:52.48] has brought to the IT services model,
+[8:55.12] the financial modeling of it, the act of
+[8:57.76] predicting what the stock price will be
+[9:00.32] next year, 2, 3, 5 years from now is
+[9:03.52] what's bringing down the target price
+[9:05.60] and slaughtering the valuation that is
+[9:08.08] the market cap of outsourcing companies.
+[9:10.64] Again, I'm not saying IT services will
+[9:13.04] die. I've worked in quite a number of
+[9:15.68] large corporations. So I know how messy
+[9:17.92] things are there. Legacy software,
+[9:20.40] fragmented databases, compliance, audit
+[9:23.44] trail, security, etc. And honestly, I
+[9:26.32] don't see how AI tools can independently
+[9:29.20] operate in such an environment yet. So
+[9:32.56] AI replacing developers entirely is
+[9:35.36] still a few years away. But it also
+[9:37.92] means IT services and outsourcing
+[9:40.64] companies must now move from being
+[9:43.20] manpower vendors to true technology
+[9:46.16] platforms by redesigning their service
+[9:48.96] delivery, embedding AI into their
+[9:51.36] workflows, and by building reusable
+[9:53.60] platforms. In fact, here's a snapshot
+[9:56.16] from the latest investor presentation
+[9:58.32] released by Infosys. Believe me, 90% of
+[10:01.52] the deck, so that's 100 plus slides, was
+[10:04.64] all entirely on AI. So if you are an
+[10:08.48] investor in any of these companies then
+[10:10.64] do watch out for how the discussion is
+[10:13.68] changing from growth in the number of
+[10:15.52] seats and renewals to more crucial
+[10:17.76] variables like usage and outcome. All
+[10:20.64] right the next set of IT companies in
+[10:23.68] the Indian space are what we refer to as
+[10:26.80] E R&D engineering research and
+[10:29.12] development companies. Tata Alexi, KPI
+[10:31.76] technologies, scient L&T technology
+[10:34.48] services and Tata Technologies are some
+[10:37.20] of the companies in the sector as an
+[10:39.28] offering. E R&D companies bring together
+[10:41.84] hardware and software such as in the
+[10:44.72] design of automotive software like what
+[10:47.20] Tat and KPIT do or aerospace components
+[10:50.88] and even telecom infrastructure and
+[10:52.88] medical devices. Much like IT services,
+[10:56.08] the traditional e R&D service model was
+[10:59.04] long dependent on linear headcount
+[11:01.36] growth, which is now being dismantled
+[11:03.60] thanks to efficiency gains provided by
+[11:06.16] both generative and agentic AI. To put
+[11:09.28] this in numbers, AIdriven simulation is
+[11:12.16] now capable of reducing design iteration
+[11:15.36] cycles by up to 40% while generative AI
+[11:18.72] tools are slashing product design times
+[11:21.20] by as much as 90% in specific high
+[11:24.80] complexity use cases. It is for this
+[11:27.76] reason that e R&D companies are
+[11:30.48] embedding AI across the entire product
+[11:33.52] life cycle from initial
+[11:35.36] conceptualization to design, simulation,
+[11:38.32] prototyping, testing all the way to
+[11:40.80] postmarket maintenance which brings us
+[11:43.44] to the real question. Are e R&D
+[11:46.56] companies likely to face the same level
+[11:48.88] of disruption that outsourcing models
+[11:51.60] are potentially facing? I honestly don't
+[11:54.72] think so. And there's a very interesting
+[11:56.80] and visual way to explain this. So the
+[11:59.36] IT services model is shaped a lot like a
+[12:02.80] pyramid. An extremely wide base with
+[12:05.44] lacks of junior engineers performing
+[12:07.84] repetitive tasks like coding, testing
+[12:10.72] and maintenance, a thin middle with
+[12:13.44] managers and architects, and a very
+[12:16.24] narrow top with senior leaders and
+[12:18.32] partners. Now the part AI is currently
+[12:21.20] attacking is the big blue base at the
+[12:23.84] bottom. And let's assume AI shaves off
+[12:26.40] large parts of this. Actually, there's
+[12:28.56] nothing to assume here. It seems this is
+[12:31.28] already happening. And now notice the
+[12:33.68] shape of the structure. So what was
+[12:36.32] originally a pyramid, thanks to AI, is
+[12:39.36] now looking more like a diamond. And
+[12:41.76] that's what experts think a modern ed
+[12:45.36] business model might look like. That is
+[12:47.60] a narrow top with strategic experts, a
+[12:50.80] narrow bottom with a small layer of
+[12:53.20] junior staff and much of the rest being
+[12:55.52] handled by automation and AI and the
+[12:58.32] largest group the bulge in the middle
+[13:01.04] consisting of domain specialists and
+[13:03.76] mid-level experts. Presently companies
+[13:06.64] have started moving in this direction
+[13:08.72] like KPIT technologies which is
+[13:10.56] transitioning from a traditional
+[13:12.56] serviceoriented firm to a solutions
+[13:15.28] provider. Likewise, L&T Technology
+[13:17.76] Services has launched proprietary
+[13:19.52] frameworks like Gen IQ for AI software
+[13:22.80] development and is aggressively
+[13:24.88] expanding its AI patent portfolio.
+[13:28.24] Tech has developed and deployed AI force
+[13:30.96] a patented agentic AI platform and so
+[13:34.08] on. So there is progress here. E R&D
+[13:37.84] companies do know what is to be done and
+[13:40.08] in terms of what you as a shareholder or
+[13:43.28] a prospective investor would need to do
+[13:46.32] is to look out for the revenue per
+[13:49.36] employee as a ballpark leading companies
+[13:52.16] are expected to see this metric rise by
+[13:54.80] at least 60% over 2024 levels as they
+[13:58.40] shift from labor dependency to platform
+[14:00.80] leverage. Secondly, watch out for a
+[14:03.28] diamond shaped workforce wherein the
+[14:05.76] largest layer consists of mid-level
+[14:08.32] domain specialists and platform
+[14:10.32] engineers rather than entry-level staff.
+[14:12.88] Then you'll need to assess how much of a
+[14:15.44] company's revenue is tied to business
+[14:18.00] results rather than ours worked.
+[14:20.32] Remember, we're looking for outcome or
+[14:22.40] consumptionbased pricing rather than TNM
+[14:24.80] contracts. And finally, prefer companies
+[14:27.12] that are adopting a domain first
+[14:29.76] strategy. that is building the
+[14:32.00] capabilities to solve complex system
+[14:34.24] level problems rather than spreading
+[14:36.32] themselves too thin. For the Indian e
+[14:39.04] R&D space, AI is forcing a painful but
+[14:43.04] necessary evolution and it seems quite
+[14:45.36] clear firms that will strive in the
+[14:47.28] space will be those with very high
+[14:49.52] knowledge density rather than headcount.
+[14:52.16] The third type of IT businesses are SAS
+[14:55.20] companies and those that sell software
+[14:57.52] products. SAS as we all know stands for
+[15:00.96] software as a service and as an
+[15:03.68] ecosystem it has now entered a period of
+[15:06.80] profound structural volatility to the
+[15:09.12] extent that industry analysts have
+[15:11.68] termed this period SAS apocalypse. You
+[15:15.04] see the typical elevator pitch given by
+[15:17.92] SAS companies was pretty simple. Why do
+[15:21.28] you want to spend millions of dollars
+[15:23.60] building a product when you can simply
+[15:26.00] rent it out for a few dollars a month?
+[15:28.96] So the underlying essence of this pitch
+[15:31.04] was creating a software is expensive.
+[15:35.04] But now AI is flipping that story line
+[15:38.00] by saying hey you don't need to spend
+[15:40.56] money on building software. I will build
+[15:43.52] it for you on the cheap. I hope you're
+[15:46.00] seeing this. It's the same thing again.
+[15:48.56] That is anything that requires labor
+[15:50.80] which is software developers, testers,
+[15:53.36] project managers etc. can all be done by
+[15:57.12] AI. It won't cost that much money and
+[16:00.80] ipso facto SAS companies aren't really
+[16:03.60] required. Now I kind of don't agree with
+[16:06.80] that in the sense that AI in a practical
+[16:09.60] sense. I mean there's a theory and
+[16:12.48] there's on ground execution and I really
+[16:14.96] don't think AI can operate in a vacuum
+[16:18.16] and any AI derived output would still
+[16:21.28] require structured data governance
+[16:23.84] frameworks and regulatory guardrails
+[16:26.24] that only legacy systems can provide. I
+[16:29.20] mean let's be real here. So if you're
+[16:31.20] say the CFO of a company, let's say a
+[16:34.48] bank or say a healthcare provider, how
+[16:37.52] likely are you to leave your systems,
+[16:39.76] your entire lifeline of the company to
+[16:43.12] artificial intelligence generated
+[16:45.60] workflows? Not very likely I guess and
+[16:48.40] that's where one feels vertical SAS
+[16:50.56] providers. So basically companies that
+[16:52.88] have domain expertise, have extensive
+[16:56.16] partner ecosystems etc. one feels they
+[16:59.12] are likely to demonstrate a higher
+[17:01.20] survival rate as compared to their
+[17:03.44] horizontal counterparts and that's
+[17:05.84] really my point here as in a SAS
+[17:08.88] business is not really about copying the
+[17:12.16] interface or replicating code which is
+[17:14.24] where this entire doomsday scenario has
+[17:16.96] been built upon but if one thinks a
+[17:19.84] layer deeper SAS or software is actually
+[17:23.12] a business and believe me when I say it
+[17:25.76] no AI can clone a business with a few
+[17:28.64] keystrokes. So yes, you can build
+[17:31.52] something that looks like an accounting
+[17:33.76] software or a lead management system or
+[17:36.24] CRM over the weekend, but how does one
+[17:39.92] perfect the recommendation algorithm?
+[17:42.72] How are you going to build the API
+[17:44.72] integrations, the advertiser
+[17:46.64] relationships, the community culture,
+[17:49.20] credibility, the brand uh distribution
+[17:52.48] channels, safety infrastructure and so
+[17:55.28] many other things that come with the
+[17:57.28] software. In my view, this SAS
+[18:00.16] apocalypse thesis that is prevailing
+[18:03.28] currently seems a bit bearish on the
+[18:06.24] incumbents and a bit too bullish on
+[18:08.64] startups. That said, some price
+[18:11.04] correction is deserved. Some SAS
+[18:13.60] companies will be disrupted. But the
+[18:15.52] great ones, the ones that have built a
+[18:17.92] strong mode, it's very likely they will
+[18:20.56] survive. And not just survive, they are
+[18:22.64] more likely to flourish as they develop
+[18:24.80] and use AI tools to their advantage to
+[18:27.36] build faster to serve their customers
+[18:29.36] better. And I'm sure that will help them
+[18:31.44] widen their lead. Okay, I'll be quick
+[18:33.92] now. The fourth kind of technology
+[18:36.32] business that's facing the AI onslaught
+[18:39.28] is the business process management
+[18:41.52] sector or ITES IT enabled services. One
+[18:45.60] knows them more as BPOS, business
+[18:48.00] process outsourcing call centers but
+[18:50.40] over the years the segment has moved
+[18:52.64] aggressively up the value chain. Today's
+[18:55.20] BPM establishments so companies like
+[18:57.20] Genpat, WNS Global Services, EXL, First
+[19:00.48] Source etc. They handle complex data
+[19:03.20] analytics, financial modeling, claims
+[19:05.92] processing for the healthcare sector,
+[19:07.76] risk management and many more such
+[19:10.64] outsourced activities. Now, structurally
+[19:13.44] this sector much like IT services has
+[19:16.16] been built on the foundation of labor
+[19:19.20] arbitrage and serves a massive human
+[19:22.24] workforce. But now with the industry
+[19:24.72] aggressively pivoting towards AIled
+[19:27.12] operations, many of these rigid
+[19:29.36] rule-based repetitive taskbased models
+[19:32.40] are getting fundamentally altered from a
+[19:34.88] per seat model. Leaders in the space. So
+[19:37.76] players like Genpack, EXL, WNS are
+[19:40.96] quickly transitioning to an outcomebased
+[19:43.60] or transaction based pricing. In other
+[19:45.84] words, clients are being built on actual
+[19:48.56] business value delivered like invoices
+[19:51.28] processed, calls taken, frauds detected,
+[19:54.64] etc. rather than the human hours worked.
+[19:57.52] Personally, I think the BPM landscape
+[19:59.92] will be the most disrupted of all the
+[20:02.80] segments we've discussed so far. Again,
+[20:04.96] these companies won't suddenly
+[20:06.56] disappear, but they'll instead be forced
+[20:08.88] to do this balancing act of not only
+[20:12.24] aggressively scaling their data, tech,
+[20:14.96] AI segment, but they have to do it in an
+[20:17.60] environment of outcomebased pricing
+[20:20.00] rather than perceived pricing. We are
+[20:22.24] already seeing evidence of this with
+[20:24.64] massive call center or data entry hub
+[20:27.36] kind of operations being replaced by
+[20:29.84] human plus AI pods where smaller teams
+[20:32.88] of highly skilled domain experts work
+[20:35.84] alongside AI co-pilots. A fifth segment
+[20:39.36] within IT are infrastructure companies.
+[20:42.24] Most specifically, I'm referring to data
+[20:44.64] centers. And understandably, the growth
+[20:47.20] of AI is a massive scale and revenue
+[20:50.16] booster for these data centers with most
+[20:53.28] of the well- capitalized corporations on
+[20:55.84] our planet targeting to invest hundreds
+[20:58.64] of billions of dollars on growing their
+[21:01.20] AI capabilities. Beyond data centers,
+[21:03.76] companies that sell chips, servers,
+[21:06.56] networking equipment, cables,
+[21:08.24] semiconductors are all primed to benefit
+[21:11.28] from the AI disruption. And that's where
+[21:14.40] investor interest is moving towards. A
+[21:17.12] sixth segment which needs a brief
+[21:19.04] mention is advertising. Now you must be
+[21:21.68] wondering what has advertising to do
+[21:24.16] with this disruption being caused by AI.
+[21:27.76] Well, let's take Meta as an example. As
+[21:30.80] most of you are aware, Meta is the
+[21:33.12] company that owns Facebook, Instagram,
+[21:35.68] and WhatsApp. There's a fair chance you
+[21:38.24] use at least one of these platforms on a
+[21:40.48] daily basis. and advertising is how Meta
+[21:44.08] makes money from them. The company's
+[21:46.48] investments into AI helps it improve
+[21:49.60] this important monetization engine via
+[21:52.72] better targeting product recommendations
+[21:55.36] AI powered ad tools within videos etc.
+[21:58.80] which in turn results in higher
+[22:00.72] conversion efficiency, encouraging
+[22:03.04] advertisers to spend more and position
+[22:05.76] Meta's ad inventory as the better
+[22:08.40] performing option than its social media
+[22:10.96] competitors, thereby becoming a strong
+[22:13.76] competitive mode for them to enjoy. The
+[22:16.48] seventh and final sub sector within the
+[22:18.96] IT space is consumer tech. These are
+[22:21.52] companies like Eternal, Swiggy, PBF
+[22:23.84] Fintech, that's policy bazar, InfoE with
+[22:26.72] no make my trip etc. where the impact of
+[22:30.16] AI is largely viewed as an enhancer
+[22:33.60] rather than an existential threat. I do
+[22:36.72] realize the share price might not be
+[22:38.96] reflecting that on an immediate basis
+[22:42.16] with the market cap of many of these
+[22:44.08] companies declining but from a business
+[22:46.72] model perspective what consumer tech
+[22:48.80] businesses do have which others don't is
+[22:51.76] a physical world mo that is next to
+[22:54.48] impossible for AI to disrupt for example
+[22:57.60] the core mode of a Zumato are its
+[23:00.56] delivery services the fact that food has
+[23:03.36] to be delivered from point A to point be
+[23:06.24] from the restaurant to the consumer's
+[23:08.56] house is what differentiates them from
+[23:11.20] other technology- based models
+[23:13.28] especially service companies that said
+[23:15.76] other platforms so the likes of say a
+[23:18.48] policy bazar no.com or even a make my
+[23:21.68] trip it's my opinion that AI can disrupt
+[23:25.60] some of what they do given the virtual
+[23:27.68] nature of their offerings but the
+[23:29.52] physical loop of a Zumato or Swiggy
+[23:32.72] ensures that their survival their
+[23:34.72] existence isn't as much threatened by
+[23:37.12] AI. In fact, on the other hand, AI can
+[23:40.16] help them improve their unit economics
+[23:42.40] and therefore their profit margin with
+[23:44.40] better prediction capabilities around
+[23:46.72] demand spikes, delivery routes, customer
+[23:49.36] service, and product pricing. All right,
+[23:52.00] let's quickly recap our seven segments
+[23:54.48] specific to IT. First up, we discussed
+[23:57.36] the impact of AI on the IT services and
+[24:00.40] consulting industry. the likes of TCS,
+[24:03.12] Infosys, Vipro, etc. And from the looks
+[24:06.32] of it, the intensity of disruption here
+[24:09.04] is a bit high. While companies have
+[24:11.76] started transitioning to outcomebased
+[24:14.00] pricing and true technology platforms,
+[24:16.88] the impact of AI is so high, it's really
+[24:20.56] difficult for me to pinpoint who might
+[24:22.96] emerge as a winner here. We then looked
+[24:26.24] at e R&D companies. I think the impact
+[24:29.20] of AI for these guys, KPI, TEK, Tata,
+[24:33.52] Alexi, Scient etc. is actually positive
+[24:36.64] in the sense that AIdriven automation
+[24:39.20] will not only replace the bottom layer
+[24:41.68] of junior coders but it is also likely
+[24:44.96] to accelerate high-end design which will
+[24:48.00] help domain first companies with high
+[24:50.72] knowledge density and those who
+[24:53.04] specialize in complex systems like
+[24:55.44] semiconductor design auto software etc.
+[24:58.64] In the case of SAS or companies that
+[25:00.88] create software products, the intensity
+[25:03.52] of disruption is mostly on the higher
+[25:06.00] side with a prevailing fear that AI
+[25:09.36] agents will bypass interfaces and
+[25:12.08] replicate workflows for pennies. While
+[25:14.96] one can't argue the soft side of things,
+[25:17.52] that is the importance of relationships,
+[25:20.40] business development, feedback loops,
+[25:22.72] etc. In my opinion, the SAS and software
+[25:26.72] companies that will exist and flourish
+[25:29.52] will be the ones with a heavy data mode,
+[25:32.96] the ones which have high switching costs
+[25:36.00] and those that have built extensive and
+[25:38.88] strong partner ecosystems. We then
+[25:41.60] looked at BPM, business process
+[25:44.16] management companies, the likes of
+[25:46.40] Genpack, WNS, EXL, etc. where I'll say
+[25:50.16] the risk of disruption is the highest of
+[25:53.12] any of the IT segments that we have
+[25:55.04] covered today. I really don't know how
+[25:57.36] these companies might survive this
+[25:59.60] onslaught, but from what I can see, it's
+[26:02.32] wise to stay away from BPM businesses at
+[26:05.52] least from an investing standpoint. All
+[26:08.00] right, we then looked at IT
+[26:09.52] infrastructure. Things are looking up
+[26:12.00] here. AI is in fact a very positive
+[26:15.28] trigger for data centers, chip makers,
+[26:18.00] networking companies, etc. as these
+[26:20.56] serve as the foundational picks and
+[26:23.04] shovels of the AI boom. Advertising tech
+[26:26.40] is another likely beneficiary of the
+[26:28.72] disruption with AI acting as a direct
+[26:31.68] multiplier for conversion efficiency and
+[26:34.72] ad monetization. And finally, we
+[26:36.88] examined consumer tech, new age internet
+[26:39.68] companies like Zomato, Swiggy, Make My
+[26:41.84] Trip, Policy Bazar, etc. While the
+[26:44.08] overall intensity of the ongoing AI
+[26:46.72] purge is likely to be low here, it
+[26:49.20] really depends on the particular
+[26:51.28] platform's operating model with one
+[26:53.84] doing better than the other. So that's
+[26:56.24] really it for today's video. I wanted to
+[26:59.04] put everything or most of it in a single
+[27:02.16] video so that we can understand what is
+[27:04.80] now very apparent that AI will affect
+[27:07.92] different types of IT companies
+[27:09.84] differently. Some will flourish, some
+[27:11.92] will get disrupted, some will have to
+[27:14.00] change the way they operate. But what is
+[27:16.32] still unshakable and undisputable truth
+[27:20.08] is that the IT industry is not ending.
+[27:22.72] It's just that the old model of
+[27:24.24] operations is slowing down which is now
+[27:27.04] accelerating. A new model of delivery
+[27:29.36] that's more domain specific which is a
+[27:31.44] combination of physical and virtual AI
+[27:34.00] and one that is based on outcome
+[27:36.16] delivery. For investors the uncertainty
+[27:38.80] and volatility that we are now
+[27:40.96] experiencing with IT stocks especially
+[27:43.12] in the domestic space Indian companies I
+[27:45.68] think that's only going to increase from
+[27:47.76] here. But do watch out for these
+[27:49.68] different subsectors that we have
+[27:51.20] discussed in today's videos. Some
+[27:53.12] sectors will definitely do better than
+[27:55.04] the rest as it is only out of chaos do
+[27:58.08] the winners really emerge. Most
+[28:00.16] importantly, don't forget to wear an
+[28:02.56] Indian jersey this Sunday for the T20
+[28:05.52] World Cup finals. Here's wishing the
+[28:07.84] Indian cricket team the very best. Have
+[28:10.32] a wonderful day ahead and I'll see you
+[28:12.72] very soon.

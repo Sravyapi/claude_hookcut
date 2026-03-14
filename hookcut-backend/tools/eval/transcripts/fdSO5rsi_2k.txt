@@ -1,0 +1,203 @@
+[0:00.48] Hello everyone, welcome to Nesso
+[0:02.56] Academy. In the previous lecture, we
+[0:04.88] have understood call sequence of
+[0:07.76] constructors and destructors. Now we are
+[0:10.72] in this lecture and the name of this
+[0:12.64] lecture is virtual base class. In this
+[0:16.16] lecture we will understand the concept
+[0:18.24] of virtual base class properly. So
+[0:21.04] without any further delay let's get
+[0:22.88] started with this lecture and let's see
+[0:24.96] what are the topics.
+[0:26.96] The first topic is the diamond problem.
+[0:30.08] First I will introduce you to the
+[0:32.00] diamond problem and I will make you
+[0:34.56] understand what this problem is about.
+[0:37.68] Then we will move to the second topic
+[0:39.84] where we will understand virtual base
+[0:42.24] class properly which will help us in
+[0:44.96] resolving the diamond problem. So these
+[0:48.00] are the topics of this lecture. Let's
+[0:50.16] start with the first one the diamond
+[0:52.56] problem.
+[0:54.08] Now what is the diamond problem?
+[0:56.88] In order to understand the diamond
+[0:58.88] problem, let's consider one simple
+[1:01.04] example program.
+[1:03.60] Here I have included the IO stream
+[1:05.52] header file and here is the definition
+[1:07.76] of class A. We have the public
+[1:10.32] constructor that will display a
+[1:12.96] constructor and we also have this public
+[1:16.00] member function display which will
+[1:18.24] display I am a.
+[1:21.60] After this we have class B which is
+[1:24.48] inheriting from class A and this is
+[1:27.28] public inheritance. Therefore this
+[1:29.68] public member function will be treated
+[1:31.76] public here as well. Also we have this
+[1:35.28] public constructor that will display B
+[1:38.16] constructor.
+[1:40.08] After this class we have class C which
+[1:42.56] is inheriting from class A. Again here
+[1:45.44] we have public inheritance. Therefore
+[1:47.44] this public member function will be
+[1:49.12] treated public here as well. Apart from
+[1:51.76] this it has its own public constructor
+[1:54.48] which will display C constructor.
+[1:58.72] Now after this we have class D which is
+[2:01.84] inheriting from both the classes B and
+[2:05.28] C. Here also we have public inheritance.
+[2:08.88] Also it has its own public constructor
+[2:11.36] which will display D constructor.
+[2:14.56] Now if we observe these classes
+[2:16.64] carefully we will get a diamondlike
+[2:19.84] structure which looks like this. Here we
+[2:22.96] know class D is inheriting from both
+[2:25.20] these classes B and C. Also we can
+[2:28.40] observe both these classes B and C are
+[2:30.96] inheriting from the same class A. So we
+[2:34.40] are getting a diamondlike structure.
+[2:38.16] Now this structure causes a problem
+[2:40.96] which is what we call the diamond
+[2:43.20] problem.
+[2:44.80] Now to understand the diamond problem
+[2:46.80] properly, let's define the main function
+[2:49.20] first. Here is the definition of the
+[2:51.36] main function with return zero
+[2:53.12] statement. Now let's define the object
+[2:56.16] of class D. Let's say the object of
+[2:59.12] class D is OBJ.
+[3:02.08] We know class D is inheriting from class
+[3:04.80] B and class B is inheriting from class
+[3:08.32] A. Therefore, the constructor of class A
+[3:10.96] will be called first. then the
+[3:13.04] constructor of class B will be called.
+[3:15.36] This is what we have learned in the last
+[3:17.28] lecture where we have learned the call
+[3:19.84] sequence of constructors and
+[3:21.92] destructors. We know this concept
+[3:24.40] already.
+[3:25.92] We also know this that class D is
+[3:28.16] inheriting from class C and class C is
+[3:31.68] inheriting from class A. Therefore, the
+[3:35.20] constructor of class A will be called
+[3:37.28] first and then the constructor of class
+[3:39.68] C will be called. At the end,
+[3:42.64] constructor of class D will be called.
+[3:45.28] So when we execute this program, we will
+[3:47.44] get this output on the screen. A
+[3:50.08] constructor, B constructor, A
+[3:52.48] constructor, C constructor, D
+[3:54.96] constructor. I hope this is clear to
+[3:57.20] you. Now here we can observe in the
+[4:00.08] output that the constructor A has been
+[4:03.20] called twice. This means this
+[4:05.84] constructor is called twice.
+[4:08.64] Now this is something that we may not
+[4:10.88] want.
+[4:12.56] To avoid this we can use one concept
+[4:15.76] which is called virtual base class.
+[4:18.72] Apart from this there is one more
+[4:20.64] problem. We have this public member
+[4:23.36] function display. We know this that
+[4:26.00] these two classes are inheriting from
+[4:28.72] class A. Therefore, these two classes
+[4:32.08] will receive their own copies of the
+[4:34.88] display function.
+[4:37.84] Now, we also know this that class D is
+[4:40.48] inheriting from both these classes. If
+[4:43.44] we try to call the display function with
+[4:45.68] the help of the object of class D, then
+[4:49.12] we will get error from the compiler.
+[4:51.44] Here I'm calling the display function
+[4:53.68] through the object of class D. We will
+[4:57.12] get error from the compiler and the
+[4:59.28] reason is very simple. We know that
+[5:02.16] display function is available in both
+[5:04.16] these classes. Now if we try to call the
+[5:06.96] display function through the object of
+[5:09.04] class D, we will get error because
+[5:12.48] compiler is confused which display
+[5:14.96] function we want to call.
+[5:17.60] Is it the display function of class B or
+[5:20.40] is it the display function of class C?
+[5:23.36] Compiler is confused and due to this
+[5:26.24] reason it will produce an error. I hope
+[5:29.84] this is clear to you. This is what
+[5:31.84] diamond problem is about. In case of
+[5:34.96] diamond problem, we have two different
+[5:37.68] problems. The first one is that the base
+[5:41.12] class constructor is called twice.
+[5:44.64] And the second problem is the inherited
+[5:47.76] function cannot be called because this
+[5:51.84] inherited function is available in
+[5:54.64] multiple classes and therefore the
+[5:57.20] compiler is confused.
+[5:59.68] Due to this reason the inherited
+[6:01.68] function cannot be called. That is what
+[6:04.80] the diamond problem is about. I hope
+[6:07.28] this is completely clear to you. Now to
+[6:09.92] resolve this diamond problem, we have
+[6:12.40] what is called virtual base class. This
+[6:14.72] is what we will understand in the next
+[6:16.48] topic. For now, we are done with the
+[6:19.36] diamond problem. We have understood what
+[6:22.00] is diamond problem. And now we know that
+[6:25.52] we need to resolve this problem. In
+[6:28.00] order to resolve this problem, we need
+[6:29.92] to move to the next topic where we will
+[6:32.48] understand the virtual base class
+[6:34.56] concept. Now what is virtual base class
+[6:38.32] and how it can help us in resolving the
+[6:41.12] diamond problem. For this purpose we
+[6:44.16] need to consider the same example
+[6:45.92] program. Here we have these classes and
+[6:49.44] we have the main function. We have the
+[6:51.36] same program as before. We know when we
+[6:54.00] execute this program we will get error
+[6:56.24] because of this specific line. Now to
+[6:59.44] resolve this issue we can define this
+[7:02.32] base class as the virtual base class and
+[7:05.92] this can be done at the time of
+[7:08.24] inheriting this class. So here before
+[7:10.96] these public keywords we need to place
+[7:13.60] the virtual keyword. I hope this is
+[7:16.72] clear to you. In both these places we
+[7:19.60] need to put the virtual keyword. Now
+[7:22.64] this class will be treated as the
+[7:24.80] virtual base class. And this simply
+[7:27.36] means that the constructor will be
+[7:29.92] called once not twice. This is what we
+[7:33.60] want. And the inherited function will be
+[7:37.60] shared among these two classes. This
+[7:40.32] means both these classes will share the
+[7:42.80] same copy of the display function. So
+[7:46.16] there will be just one copy of the
+[7:48.32] display function and therefore there is
+[7:50.72] no confusion. So if we want to call this
+[7:53.60] function with the help of the object of
+[7:55.84] class D, we can do this without any
+[7:58.56] problem. We will not get error from the
+[8:00.56] compiler. So when we execute this
+[8:02.96] program, we will get the output A
+[8:05.36] constructor, B constructor, C
+[8:07.36] constructor, D constructor and then I am
+[8:11.36] A. Here you can observe that the
+[8:14.24] constructor of class A is called once.
+[8:17.84] Apart from this we are getting the
+[8:20.48] output from the display function as
+[8:22.80] well. This means this function has been
+[8:24.80] called successfully.
+[8:27.76] So with this it is clear what is the
+[8:30.24] concept of virtual base class and how it
+[8:33.20] can help in resolving the diamond
+[8:36.08] problem.
+[8:38.00] This means we are done with the second
+[8:39.84] topic also and this clearly means we are
+[8:43.12] done with this lecture. Okay friends,
+[8:46.00] this is it for now. Thank you for
+[8:47.76] watching this lecture. I will see you in
+[8:49.92] the next one.
+[8:53.83] [music]
+[8:58.42] >> [music]

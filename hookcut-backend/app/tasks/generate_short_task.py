@@ -12,6 +12,7 @@ from app.services.credit_manager import CreditManager
 from app.models.session import AnalysisSession, Hook, Short
 from app.services.short_generator import ShortGenerator
 from app.services.storage import get_storage_service
+from app.utils import report_to_sentry
 from app.services.transcript import TranscriptService
 
 logger = logging.getLogger(__name__)
@@ -74,6 +75,19 @@ def generate_short(self, short_id: str):
             db.commit()
             self.update_state(state="PROGRESS", meta={"stage": label, "progress": pct})
 
+        # For manual clips, fetch video title if not already present
+        if is_manual and not session.video_title:
+            try:
+                from app.services.video_metadata import VideoMetadataService
+                meta = VideoMetadataService().fetch(session.video_id)
+                if meta:
+                    session.video_title = meta.title
+                    session.video_duration_seconds = meta.duration_seconds
+                    db.commit()
+                    logger.info("Fetched video title for manual session %s: %s", session.id, meta.title)
+            except Exception as e:
+                logger.warning("Failed to fetch video title for manual clip: %s", e)
+
         # For manual clips, fetch transcript if not already present
         if is_manual and not session.transcript_text:
             on_progress("processing", 10, "Fetching transcript for captions...")
@@ -90,29 +104,37 @@ def generate_short(self, short_id: str):
 
         work_dir = None
         try:
+            # Shared params for both manual and AI-hook modes
+            shared_params = dict(
+                youtube_url=session.youtube_url,
+                session_id=session.id,
+                short_id=short.id,
+                is_watermarked=short.is_watermarked,
+                language=session.language,
+                niche=session.niche,
+                caption_style=short.caption_style or "clean",
+                transcript_text=session.transcript_text or "",
+                aspect_ratio=short.aspect_ratio or "9:16",
+                audio_normalization=short.audio_normalization if short.audio_normalization is not None else True,
+                interview_mode=session.interview_mode,
+                speaker_count=session.speaker_count or 2,
+                diarization_data=session.diarization_data,
+                on_progress=on_progress,
+            )
+
             if is_manual:
                 result = generator.generate(
-                    youtube_url=session.youtube_url,
+                    **shared_params,
                     hook=None,
-                    session_id=session.id,
-                    short_id=short.id,
-                    is_watermarked=short.is_watermarked,
-                    language=session.language,
-                    niche=session.niche,
-                    caption_style=short.caption_style or "clean",
-                    transcript_text=session.transcript_text or "",
-                    aspect_ratio=short.aspect_ratio or '9:16',
                     captions_enabled=True,
-                    audio_normalization=short.audio_normalization if short.audio_normalization is not None else True,
                     source_type="manual",
                     start_seconds=start_sec,
                     end_seconds=end_sec,
                     video_title=session.video_title,
-                    on_progress=on_progress,
                 )
             else:
                 result = generator.generate(
-                    youtube_url=session.youtube_url,
+                    **shared_params,
                     hook={
                         "start_time": hook.start_time,
                         "end_time": hook.end_time,
@@ -123,16 +145,6 @@ def generate_short(self, short_id: str):
                         "hook_type": hook.hook_type or "",
                         "attention_score": hook.attention_score or 0.0,
                     },
-                    session_id=session.id,
-                    short_id=short.id,
-                    is_watermarked=short.is_watermarked,
-                    language=session.language,
-                    niche=session.niche,
-                    caption_style=short.caption_style or "clean",
-                    transcript_text=session.transcript_text or "",
-                    aspect_ratio=short.aspect_ratio or '9:16',
-                    audio_normalization=short.audio_normalization if short.audio_normalization is not None else True,
-                    on_progress=on_progress,
                 )
 
             work_dir = Path(result.video_path).parent
@@ -160,6 +172,7 @@ def generate_short(self, short_id: str):
 
             # --- Finalize ---
             short.status = "ready"
+            short.interview_layout = result.interview_layout
             short.title = result.title
             short.cleaned_captions = result.cleaned_captions
             short.video_file_key = video_key
@@ -201,17 +214,13 @@ def generate_short(self, short_id: str):
                 db.commit()
                 session = db.get(AnalysisSession, short.session_id)
                 if session:
-                    _check_all_shorts_failed(db, session)
+                    _check_session_completion(db, session)
         except Exception as inner_err:
             logger.exception(f"Failed to mark short {short_id} as timed out: {inner_err}")
         return {"error": user_msg}
     except Exception as e:
         logger.exception(f"Short generation failed for {short_id}: {e}")
-        try:
-            import sentry_sdk
-            sentry_sdk.capture_exception(e)
-        except Exception as e2:
-            logger.warning("Failed to report exception to Sentry: %s", e2)
+        report_to_sentry(e)
         try:
             short = db.get(Short, short_id)
             if short:
@@ -221,7 +230,7 @@ def generate_short(self, short_id: str):
 
                 session = db.get(AnalysisSession, short.session_id)
                 if session:
-                    _check_all_shorts_failed(db, session)
+                    _check_session_completion(db, session)
         except Exception as inner_err:
             logger.exception(f"Failed to mark short {short_id} as failed: {inner_err}")
         return {"error": str(e)}
@@ -265,8 +274,3 @@ def _check_session_completion(db, session):
             error_msg="All Short generations failed. Credits refunded.",
             _logger=logger,
         )
-
-
-def _check_all_shorts_failed(db, session):
-    """Legacy wrapper — completion logic now handled by _check_session_completion."""
-    _check_session_completion(db, session)

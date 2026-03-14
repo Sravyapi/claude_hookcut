@@ -1,0 +1,483 @@
+[0:00.48] Hey everyone, I hope you all are safe
+[0:02.40] and doing good. So in this lecture now
+[0:04.32] we'll see what is generative AI. See as
+[0:07.12] the name suggest there are two words
+[0:09.92] here. One is generative and one is AI
+[0:13.52] right? One is this plus AI. You know
+[0:16.64] what is AI? We have discussed you know
+[0:18.24] what is machine learn machine learning
+[0:19.76] what is deep learning and a little bit
+[0:22.16] history of AI as well. Right? The AI
+[0:25.44] term came into picture first time in
+[0:27.92] 1956 in that conference right as a
+[0:31.28] officially as a field of study then
+[0:32.88] adopted right now generative plus AI and
+[0:37.12] AI that can generate as well generate
+[0:39.12] what generate text image code audio
+[0:43.20] video painting art anything it can
+[0:45.20] generate like charg when you ask
+[0:47.12] something to charge GPT you will get the
+[0:48.80] answer so it is generating new text for
+[0:52.32] you it's not that it is like uh this
+[0:55.84] thing is written in any file and it it
+[0:58.08] is just fetching from that file. The
+[0:59.68] answer no.
+[1:02.24] It is generating the new text for you
+[1:04.40] based on your question based on the
+[1:06.16] context of that question because this
+[1:08.72] model has you know been trained on a
+[1:11.68] huge data set right. Same an image we
+[1:16.16] can generate like uh from any uh Delhi
+[1:19.36] or mid generary these kind of models are
+[1:21.76] there. So we can just simply give a
+[1:24.24] simple prompt create an image of a cat
+[1:27.20] on moon sitting on moon and you will get
+[1:29.60] a image.
+[1:31.60] So this is image generation simply code
+[1:34.96] even if you just ask to chat jity write
+[1:37.12] a code for this program you will get the
+[1:39.60] code in any specific language also it
+[1:41.36] will give you the code or github go
+[1:43.52] pilot is also there a github extension
+[1:45.60] that is also helping uh you to generate
+[1:48.56] in code right. So it is generative AI
+[1:53.12] means generating new content whether
+[1:55.84] it's image, whether it's text, whether
+[1:57.76] it's audio, video or anything it can
+[2:00.48] generate for you.
+[2:02.88] Okay. But now now we are in the era of
+[2:06.64] generative AI. But what is now
+[2:08.64] traditional AI? AI is in the picture
+[2:12.32] since 1956.
+[2:14.72] First time in 1956
+[2:17.12] the word AI came into picture as we have
+[2:19.20] seen in the history of AI in that
+[2:22.64] conference and after that adopted as a
+[2:25.52] official field of study AI. So at that
+[2:27.84] time was
+[2:29.84] that time comes under traditional AI
+[2:31.92] systems traditional AI not modern AI.
+[2:35.76] Now what is traditional AI? See
+[2:39.12] during that traditional time that AI
+[2:41.84] those AI systems was rule based system
+[2:44.56] means a human have written some rules
+[2:48.24] hardcoded rules like if if X then Y
+[2:52.16] something like this
+[2:54.24] or if I say like if a customer buy X
+[2:58.08] then suggest
+[2:59.92] Y to that customer.
+[3:02.96] So humans have hardcoded these rules to
+[3:06.16] build those AI systems, AI models.
+[3:09.68] Now suppose if customer buy zed not X
+[3:13.60] then suggest what if this rule is not
+[3:16.24] defined there then
+[3:18.64] those AI systems are not able to uh deal
+[3:21.04] with these new uh situations because
+[3:24.48] because they were rule based they were
+[3:26.08] hardcoded simply programmed by humans.
+[3:30.32] Okay. They are they are not able to
+[3:32.48] learn from the data. There was no
+[3:34.72] machine learning concept at that time.
+[3:36.24] Machine learning concept came into
+[3:37.68] picture in 90 I guess '90s. Before that
+[3:41.20] there was no such kind of concept. So
+[3:43.92] these were traditional AI system like we
+[3:47.04] have discussed uh mice in the system uh
+[3:50.40] to diagn diagn for diagnosis of a
+[3:53.12] disease in medical test computers also
+[3:56.24] early chatbot
+[3:58.16] um ala
+[3:59.92] okay but that was also not a successful
+[4:02.64] uh experiment but all these things comes
+[4:05.68] under traditional AI so traditional AI
+[4:07.60] follows pre-programmed rules it use if
+[4:10.80] then else statements right if then else
+[4:13.68] statements and explicit logic to make
+[4:15.28] decisions to decide something. Okay. So
+[4:18.56] they were they were like not so much
+[4:20.40] flexible can only handle the scenarios
+[4:23.52] their creators anticipated. I told you
+[4:26.24] know if I have uh coded that if customer
+[4:29.28] buy X suggest Y I mean customer buy X
+[4:33.12] product suggest Y product any name you
+[4:36.72] can give but if customer buy Z product
+[4:38.88] then what? So that is a new situation.
+[4:41.12] So they struggle with no situations. So
+[4:43.52] that was basically limitations of
+[4:45.04] traditional AI systems and these are few
+[4:48.32] examples of traditional AI system. Now
+[4:50.08] in 1990s machine learning concept came
+[4:52.56] into picture like machine can learn
+[4:54.48] itself with the help of data. It's not
+[4:57.92] like that you have to and to change the
+[5:00.40] these systems explicitly they need human
+[5:03.68] intervention. human have to hardcode new
+[5:07.36] rules, new logic to update these
+[5:11.04] systems. Okay. So that was basically
+[5:13.60] limitations of this. After that modern
+[5:17.60] AI era cames after the concept of
+[5:20.56] machine learning, right? In 1990s after
+[5:23.20] 1990s.
+[5:24.96] So machine can learn means this is
+[5:27.84] modern AI in which machine can learn
+[5:30.48] from data.
+[5:32.24] You feed you train the machine or the AI
+[5:35.20] model on a huge set of data. Then
+[5:38.00] machine learn from that recognize
+[5:40.24] patterns from the data and it improves
+[5:43.12] through the experience rather than
+[5:44.96] explicit programming. No need to
+[5:47.36] programmed explicitly for every task
+[5:49.76] because see human also we also learn
+[5:51.68] with experience.
+[5:54.40] uh as we exposed with much data or like
+[5:58.08] uh much with uh social socially or like
+[6:01.60] this then we learn things more and more.
+[6:05.76] So that's why if machines are exposed to
+[6:08.24] much data if we train them on much much
+[6:10.40] much data huge data then definitely they
+[6:13.68] give like accurate result so their
+[6:15.84] performance improve
+[6:17.84] like this. So machine also learn from
+[6:19.92] data by recognizing patterns.
+[6:23.20] So this approach helps machine handle
+[6:25.68] complexity and uncertainty better than
+[6:28.80] rulebased system. If a new new situation
+[6:32.24] came then machine can easily handle that
+[6:35.04] situation because machine at that time
+[6:38.40] was able to learn in modern AI era.
+[6:41.84] Okay. It includes technique like machine
+[6:44.64] learning, deep learning and generative
+[6:46.88] AI also now a part of modern AI. So that
+[6:49.84] era was of modern AI like we can say
+[6:53.52] these this are a few example or real
+[6:55.36] world applications of this
+[6:56.72] recommendation system
+[6:59.12] uh around 2000 all the like these
+[7:01.68] Netflix, YouTube, Amazon, Facebook they
+[7:04.00] started using recommendation system okay
+[7:07.36] I mean uh they started learning from
+[7:09.36] user preferences and accordingly suggest
+[7:11.60] the content no need to hardcode that if
+[7:13.76] a user watch this movie suggest this
+[7:16.16] movie. No, based on your history they
+[7:19.04] will they learn the pre your preferences
+[7:21.44] and suggest the content accordingly they
+[7:23.28] learn okay pro detection system voice
+[7:27.04] assistant came into picture the Google
+[7:29.20] assist uh assistant and Siri and all
+[7:31.84] traffic prediction face recognition
+[7:33.76] self-driving cars and email spam filters
+[7:38.00] so these were some real world
+[7:39.52] application of modern AI okay
+[7:43.36] now after that how modern AI system work
+[7:45.92] basically First first phase is obviously
+[7:47.92] training. So for training huge data set
+[7:50.80] was required. So they were feeded
+[7:54.24] massive data set. From that data set for
+[7:57.12] training they learn the patterns,
+[7:58.72] relationship and structures from those
+[8:00.80] data. And after that like obviously this
+[8:03.60] comes under learning.
+[8:05.84] Behind the scene what is happening?
+[8:07.36] There are solid and complex algorithms
+[8:09.44] which are working. neural networks, deep
+[8:12.00] neural networks, they are working those
+[8:13.92] kind of algorithm adjust their
+[8:15.36] parameters. Obviously, uh if you go in
+[8:18.64] deep and behind the scene, there are so
+[8:20.00] many parameters in those algorithms and
+[8:21.76] all. So, uh we'll not go in that much
+[8:24.80] that much deep but behind the scene
+[8:26.64] algorithms are working to process on
+[8:28.96] that data, optimizing the data,
+[8:30.56] enhancing the data, learning the
+[8:32.16] patterns and all and they improve
+[8:35.04] through the feedback and optimization
+[8:36.80] techniques. Third thing is after that
+[8:39.36] prediction or generation. Now uh
+[8:43.76] generation is generative AI
+[8:47.28] that comes in picture in around 2020.
+[8:50.64] Before that in modern AI most of the AI
+[8:53.92] system were used to predict. they focus
+[8:56.40] more on prediction classification of
+[8:58.72] data into categories or uh just computer
+[9:02.00] vision like uh if I ask if I feed an
+[9:05.44] image and I ask what is this image
+[9:07.60] whether it's a cat or a dog so it is
+[9:09.28] able to uh tell me that okay it's an dog
+[9:11.52] or it's a cat so they focus more on
+[9:14.64] prediction
+[9:16.16] prediction means like in medical system
+[9:18.00] also we feed the AI system lots of um
+[9:22.80] images
+[9:24.56] uh maybe um for a particular disease to
+[9:27.76] diagnose a particular disease lots of
+[9:30.32] images suppose healthy lungs image and
+[9:33.28] unhealthy lungs image. So thousands and
+[9:36.64] millions of images we feed labeled as
+[9:38.96] this image is healthy healthy lungs and
+[9:41.28] this is unhealthy lungs. So when we
+[9:45.36] feed a new image and ask okay this is
+[9:47.68] healthy or unhealthy. So based on that
+[9:49.60] data whatever the system has learned
+[9:51.36] from the images it can easily tell it
+[9:53.76] can easily predict okay these are
+[9:55.20] unhealthy lungs or these are healthy
+[9:57.20] lungs like this in prediction.
+[10:01.04] So they focus more on prediction. So
+[10:02.72] trained model apply learned patterns and
+[10:04.88] they can predict outcomes or classify
+[10:07.28] outcomes or generate new content. Now
+[10:10.16] this generate new content this is
+[10:13.28] generative AI. So this is part of modern
+[10:16.24] AI. Generative AI is a part of modern
+[10:18.16] AI.
+[10:19.84] It not only focus on prediction or
+[10:21.84] classification of data or just
+[10:23.52] identifying which image which what image
+[10:25.68] is this
+[10:27.44] or simply not just a translation kind of
+[10:29.44] thing that understand human language or
+[10:30.96] translate that to a different language.
+[10:33.04] No, it can generate new data as well.
+[10:36.64] Right? So that is generative AI. I hope
+[10:38.88] now you got the idea. Traditional AI,
+[10:41.28] modern AI and now modern AI the
+[10:43.92] generative AI is a part of modern AI.
+[10:46.00] How modern AI is different from
+[10:47.52] generative AI. Sorry, modern AI is
+[10:49.68] different from traditional AI. In
+[10:52.08] traditional AI systems, they were not
+[10:53.60] able to learn, machine were not able to
+[10:55.36] learn itself from data. They were
+[10:56.80] hardcoded. They were rule based. Logic
+[11:00.08] rules were there hardcoded by humans.
+[11:02.88] But modern AI systems can learn from
+[11:05.60] data. We train them on huge set of data.
+[11:08.32] Now what is generative AI? If I ask what
+[11:10.72] is generative AI? Now so
+[11:14.56] it is a part of modern AI that can
+[11:17.36] generate data like images, text, audio,
+[11:20.16] video, code and much more. Okay, with
+[11:24.16] just a simple prompt that's it simple
+[11:27.20] prompt you give and you will get your
+[11:28.96] answer.
+[11:31.36] So content creation generative creates
+[11:33.60] original content. Original content.
+[11:37.44] Okay. It produces text, images, music
+[11:40.64] and more than never existed before. And
+[11:43.52] these systems can write stories,
+[11:46.32] compose music, generate art, design
+[11:48.64] products with humanlike creativity. They
+[11:50.88] are so much creative. So they are
+[11:52.96] creative as we human have creativity. So
+[11:56.24] they are also creative
+[11:58.88] interactive ability. Now see modern
+[12:02.96] generative AI can
+[12:06.40] uh do conversation with us and also in a
+[12:10.32] contextual way they are context aware
+[12:13.76] like chat GP if I ask to chat GPT okay
+[12:19.84] uh like who is Jenti Khatri Lamba
+[12:23.44] so the answer will be given to me like
+[12:26.40] Jhatri Lamba and whatever like
+[12:28.56] instructor on Jenny's lectures and work
+[12:31.28] after that if I ask if I ask is she a
+[12:35.12] good teacher
+[12:36.96] or what is her age or something like
+[12:38.80] this so I don't need to tell that I'm
+[12:41.04] asking about janti khatri lama no
+[12:44.24] so jp is able to understand the context
+[12:48.72] in which I am talking I'm talking about
+[12:50.16] jantri khatri even if I I I I have
+[12:52.48] written is she a good teacher he or the
+[12:56.40] jity will understand okay I'm talking
+[12:57.84] about janti khatri and I'll get the
+[12:59.92] answer
+[13:01.60] like we human interact with each other.
+[13:05.68] So see the advancement in generative AI
+[13:08.00] nowadays generative AI is now able to
+[13:10.72] understand those systems are able to
+[13:12.24] understand the context as well. So they
+[13:14.96] talk with us in a conversation
+[13:18.24] right in a context aware uh environment
+[13:22.96] they uh you know u respond to us. So
+[13:27.60] generative AI system use deep learning
+[13:29.92] uh technique or you can say deep neural
+[13:31.68] networks or especially transformers like
+[13:33.84] GPT uh by open AI. Okay. Now few
+[13:39.04] examples of generative AI is simple a
+[13:42.56] computer or that model can write simple
+[13:44.72] text. You can ask GPT with a simple
+[13:46.88] prompt and it will give you the story or
+[13:49.04] essay whatever you want or generate an
+[13:52.40] image like a tool that Delhi or
+[13:54.80] midjourney you can use. I just give a
+[13:56.96] simple prompt. Just give me an AI image
+[13:59.44] of Jenny who is instructor
+[14:02.32] at Jenny's lectures YouTube channel.
+[14:04.64] That's it. A simple prompt and like this
+[14:07.20] kind of image is generated. So okay. Now
+[14:12.64] music
+[14:15.20] this uh AI can also compose or generate
+[14:17.68] music plus they can write code as well.
+[14:21.52] You can use GitHub or there are few
+[14:23.36] example of generative AI. Okay. Now, uh,
+[14:27.60] conventional AI versus generative AI.
+[14:30.72] So, conventional AI system versus
+[14:32.88] generative AI system. So, conventional
+[14:35.04] AI basically focus more on prediction,
+[14:37.84] classification of data, natural language
+[14:40.64] processing like uh language translation,
+[14:42.80] translation kind of thing or identifying
+[14:45.36] what this image is on those focus more
+[14:49.28] on that they were not able to generate
+[14:51.60] new things. new things. Okay. But
+[14:54.96] generative AI systems are able to
+[14:56.72] generate new things, new content, new
+[14:59.04] images, data, code, anything they can
+[15:02.64] generate. Okay. So they
+[15:06.64] focus on uh this we have discussed and
+[15:09.36] work with structured data. So they are
+[15:11.84] supposed to train on huge set of data
+[15:13.92] which is a structured data like labelled
+[15:16.24] data. This is an this image of a maybe
+[15:18.80] it's a dove. It's not a dove. It's a
+[15:20.32] cat. It's not a cat or like this.
+[15:22.72] They work on structured data, label data
+[15:24.64] most of the cases. But generative AI
+[15:27.28] system create new content like chargity.
+[15:29.92] Okay. Also generate novel outputs.
+[15:33.12] Balance creativity and coherence. They
+[15:35.60] work in they are creative as well as uh
+[15:39.12] whatever they generate that is making
+[15:41.04] sense. They uh store the context. If I
+[15:45.28] ask any question so it will just give me
+[15:47.36] the answer and it will not divert from
+[15:49.68] that topic. No. So it will maintain the
+[15:52.00] coherence
+[15:53.68] like they are intelligent. It handle
+[15:56.32] unstructured data as well. No need to u
+[15:59.28] train on just labelled data, unlabelled
+[16:01.68] data or unstructured data. Just feed
+[16:03.60] just train. Uh and it can also learn
+[16:07.04] from that unstructured data as well.
+[16:08.88] Generative AI systems. So uh to train
+[16:11.68] generative AI systems or these models we
+[16:14.48] need huge data much much more than the
+[16:17.76] data which is required to train these
+[16:19.76] conventional AI system. Yes, it's true.
+[16:23.68] Huge data is required because they also
+[16:26.96] generate new data, new ideas.
+[16:30.16] That's why more training data is
+[16:32.00] required. They learn from experiences.
+[16:35.28] They handle the new situations. Okay. Uh
+[16:37.76] how they are thinking? Generative AI
+[16:39.60] systems are thinking I have faced such
+[16:41.84] kind of uh maybe situation or something
+[16:43.76] like this before. So this may be the
+[16:45.68] answer. May be the answer. It will
+[16:47.28] generate new thing.
+[16:49.68] Right? So um if if I draw a diagram, you
+[16:53.92] know the diagram previously we have seen
+[16:55.76] what is this was AI
+[16:59.76] and subset of AI. Machine learning is
+[17:02.64] subset of AI. Now deep learning is
+[17:05.44] subset of machine learning. And now here
+[17:08.32] we have generative AI.
+[17:11.12] This is subset of deep learning. Deep
+[17:14.48] learning it uses those those deep neural
+[17:16.80] networks. Okay. those multi-layer
+[17:21.20] uh structure neural networks to learn as
+[17:24.80] well as now plus one more thing is
+[17:27.20] generate to generate new content.
+[17:30.32] So it is subset of deep learning
+[17:33.84] right. So this is basic introduction to
+[17:35.76] generative AI. We'll see in deep what
+[17:38.16] are chat GP and these things how
+[17:39.92] actually they work. What is LLM
+[17:42.08] transformer and these things but I hope
+[17:44.72] now the basic idea you got what is
+[17:46.32] generative AI. So you have to take care
+[17:48.64] of these some key takeaways or some
+[17:50.56] important points that very first thing
+[17:52.40] is
+[17:54.40] to train these machines we need a
+[17:56.96] massive amount of data huge amount of
+[17:58.88] data.
+[18:00.72] and good amount of data. If you feed bad
+[18:03.12] data or garbage data, obviously you will
+[18:04.96] not get you will get bad results
+[18:08.48] but huge amount of data will be
+[18:10.08] required. Seriously like huge huge huge
+[18:12.48] amount of data to train these generative
+[18:14.64] AI systems
+[18:16.56] okay to increase the data or uh to uh
+[18:21.52] you know increase the task accuracy.
+[18:24.56] Right? It is simple common sense. If I
+[18:27.68] feed only suppose if I feed only uh 10
+[18:30.64] images
+[18:32.88] or five images of suppose cat
+[18:36.88] okay to train the system and if I give a
+[18:41.12] sixth image with something different
+[18:42.80] from this obviously computers are not
+[18:45.36] having their own brain they are not so
+[18:46.80] much smart so maybe that AI model is not
+[18:50.80] able to recognize this thing because we
+[18:52.88] have trained on a small set of data and
+[18:55.28] suppose I have shown I I have feed
+[18:57.52] millions of images of a cat
+[19:00.40] after that if I uh ask after feeding an
+[19:04.32] image I ask okay it's it's a cat or not
+[19:07.44] so probability are more that we will get
+[19:10.08] accurate answer that's why the amount of
+[19:12.88] data is very important to get the
+[19:14.32] accuracy
+[19:16.32] very first thing now second thing is
+[19:18.48] obviously to handle to process this
+[19:20.16] amount of data especially in training
+[19:22.00] training of these systems they have to
+[19:24.16] process huge amount of data to learn
+[19:26.48] patterns from them to recognize the
+[19:28.40] structure and all. So processing such a
+[19:31.36] large data set whether it's for
+[19:33.36] prediction or generating new content it
+[19:35.28] involve millions or sometimes billions
+[19:37.20] of mathematical operations. So now you
+[19:39.60] can imagine the computational power
+[19:41.44] required it's huge. So we need like GPUs
+[19:46.24] TPUs to handle to train these systems.
+[19:50.32] And third thing is now modern AI is now
+[19:53.12] evolving to understand human language in
+[19:55.68] a more natural way
+[19:58.72] conversational and context aware way
+[20:01.20] like I have given you one example
+[20:04.40] charge jutity understand our context
+[20:06.24] what we are trying to ask
+[20:09.36] first I ask suppose uh to charge uh what
+[20:12.72] is like maybe capital of hana and after
+[20:15.44] that if I ask how's the weather there
+[20:18.80] so charge LGBT understand me that I'm
+[20:21.12] asking about the weather in where the
+[20:25.12] capital of Hana right so we have to
+[20:29.12] understand the context I'm talking about
+[20:32.08] so that's why we are shifting more
+[20:35.04] towards conversational u and contextual
+[20:38.96] uh way
+[20:40.88] so modern AI is now that much
+[20:44.64] intelligent that it can understand our
+[20:47.84] context as
+[20:49.60] with with just simple prompts it can
+[20:52.00] generate whatever we want accordingly.
+[20:56.24] So you you need to uh these are simple
+[20:59.04] like three points you need to remember
+[21:01.20] right now in the next lecture we will be
+[21:04.56] discussing more about like chargeity how
+[21:06.64] chargypity works and all that is all
+[21:08.96] about the basics of the terms we are
+[21:11.20] using and more terms also we'll be using
+[21:13.44] LLMs and all those also we'll be
+[21:15.28] discussing one by one later so now
+[21:17.44] that's it for this lecture now I'll see
+[21:18.80] you in the next lecture till then
+[21:19.68] bye-bye take This

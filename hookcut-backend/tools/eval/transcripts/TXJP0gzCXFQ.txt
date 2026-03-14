@@ -1,0 +1,955 @@
+[0:00.80] Hey there everyone, my name is Atesh and
+[0:02.80] I want to ask you a very simple
+[0:04.32] question. Have you heard about the term
+[0:06.24] scalability? And if you've heard about
+[0:08.00] the term scalability, let me know in the
+[0:09.84] comment section. And also let me know
+[0:11.76] that have you always heard about the
+[0:13.60] term scalability in the context of
+[0:15.60] system design only. But if I ask you
+[0:18.56] what is scalability? Have you ever felt
+[0:20.72] that I am frozen? And if somebody will
+[0:22.88] ask me in the interview, I will not be
+[0:24.32] able to give a proper example or a
+[0:26.08] walkthrough of what is what the
+[0:27.60] scalability truly means. I will give you
+[0:29.76] an example and by the end of this video
+[0:32.00] you will have a complete clarity about
+[0:34.24] the scalability how you should study
+[0:35.92] that how you should answer that in an
+[0:37.76] interview and even to understand that as
+[0:39.68] a software engineer let me know in the
+[0:41.60] comment section I have a small comment
+[0:43.36] target probably just 100 comments that
+[0:45.12] will help me to get motivation and
+[0:47.60] record more videos about these terms but
+[0:49.68] rest assured this video is going to be
+[0:51.84] your final end goal of understanding
+[0:54.72] scalability in and out all the tech
+[0:57.20] jarens interviews all caught up and also
+[0:59.84] as a software engineer. So let me take
+[1:01.92] you onto the screen and discuss what the
+[1:03.76] scalability means and how you should
+[1:05.28] actually perceive the scalability means
+[1:07.44] here. So let's just say this is your
+[1:10.40] small cafe with a few e at the end and
+[1:13.60] apart from that you also serve burger
+[1:15.68] and that's your uh joint name that we
+[1:18.48] serve cafe and burger. Business is doing
+[1:22.00] good and you are serving 50 customers a
+[1:25.52] day. That's pretty good, pretty awesome.
+[1:28.16] But one day a celebrity walks into your
+[1:30.32] store and made an Instagram post and now
+[1:34.24] you are getting 500 or maybe 5,000
+[1:37.68] customers.
+[1:39.44] Now you are not able to serve this. I'm
+[1:41.44] pretty sure you have heard these kinds
+[1:42.64] of example a lot and this is truly known
+[1:45.68] as a scalability issue and you have
+[1:48.72] heard about that this is issue but what
+[1:51.76] you have never thought about this that
+[1:54.32] why this is a scalability issue because
+[1:56.56] in the software world we just cannot say
+[1:58.48] that hey our machine crashed it was a
+[2:00.48] scalability no that's not correct this
+[2:02.56] is not how we address anything in the
+[2:04.80] software world all in the real world as
+[2:06.56] well we ask more detailed questions in
+[2:09.28] this case they're all Right? This is a
+[2:11.52] scalability issue. But why this is a
+[2:13.92] scalability issue? Why we are not able
+[2:16.16] to handle 5,000 customers? If we don't
+[2:19.12] address the point that why we are not
+[2:21.04] able to address 5,000 customers in a
+[2:23.52] day, then we need to ask questions
+[2:26.24] like what is the problem here? Is the
+[2:29.52] problem with the tables?
+[2:31.68] Are we able to not serve 5,000 customers
+[2:34.88] at a time in the table? So, do we need
+[2:36.48] to expand in the terms of tables? Do we
+[2:38.64] need to get more space and more tables?
+[2:41.12] Maybe you have never thought about it.
+[2:43.20] It was all takeaways. So tables are not
+[2:45.92] required in this case. Ah that's a light
+[2:48.00] bulb moment that oh I never thought
+[2:49.92] about that this could be a takeaway
+[2:51.44] thing or maybe there's a thing in the
+[2:53.92] kitchen. Is your kitchen not able to
+[2:55.84] handle that? Do you need more people in
+[2:57.44] the kitchen to actually pack the food?
+[2:59.28] Or maybe you have already prepared 5,000
+[3:01.12] burgers. A lot of joint does that. So is
+[3:03.60] this a problem of uh chefs? Do we need
+[3:06.32] more chef or do we need more space in
+[3:07.92] the kitchen or do we need more staff to
+[3:10.00] handle that or we don't have uh enough
+[3:13.20] parking?
+[3:15.36] What is the issue? If you don't answer
+[3:17.52] these question, that means you truly
+[3:19.04] don't understand scalability because
+[3:20.72] this is what exactly you will be asked
+[3:22.72] by yourself. For example, if let's just
+[3:24.56] say I take you onto this uh website
+[3:26.72] which is site 24x7 which is one of my
+[3:29.20] favorite website to monitor the website.
+[3:31.68] Now let's just say you launched a
+[3:33.92] website and it crashed. Now you want to
+[3:35.84] know the reason why the website crashed.
+[3:37.76] The very first question that this
+[3:39.28] website asked you, hey you want to
+[3:40.88] monitor that because if you cannot
+[3:42.40] monitor that, you cannot measure it.
+[3:44.32] What cannot be measured cannot be
+[3:45.92] improved. 101 of system design. Let's
+[3:48.80] just say if I click on add monitor, what
+[3:50.88] do you want to monitor? A database, a
+[3:53.60] container, a network, a net flow. They
+[3:57.20] have insane amount of scroll here, but
+[4:00.64] you get the point. What do you really
+[4:02.24] want to do? You want to monitor file
+[4:03.52] uploads. You want to manage mon monitor
+[4:05.20] the rest APIs. What do you really want
+[4:07.44] to do? The rest APIs transactions rest
+[4:09.76] API. Maybe you want to monitor the
+[4:11.60] chrome. Maybe you want to monitor your
+[4:14.24] engineext. How your load balancer is
+[4:15.92] doing. What do you really want to do? So
+[4:18.48] when you actually learn about these
+[4:20.08] monitoring things which you can
+[4:21.20] absolutely do at site 24x7 uh link is in
+[4:24.40] the description. You can also they have
+[4:25.84] insane amount of free tier. But my point
+[4:28.24] is now can you compare it with a site
+[4:31.12] 24x7? Exactly. You will be absolutely
+[4:34.56] confused here that what should I
+[4:36.88] monitor? Should I monitor my tables
+[4:40.16] maybe database? Maybe should I monitor
+[4:42.40] my kitchens chef enough parking? This is
+[4:45.28] exactly how you learn and understand the
+[4:47.20] system design and sca especially the
+[4:49.04] scalability topic. That scalability is
+[4:51.44] not just about saying hey that let's
+[4:53.28] increase the server. It's about going
+[4:55.44] into the nitty-g gritties of of what
+[4:57.52] should I actually monitor in the term of
+[5:00.64] software as well. And you need to
+[5:01.84] understand a few key terms here as well.
+[5:04.16] Uh the few terms that you always go for
+[5:06.48] this is oops let's go back. The first
+[5:10.16] term that we see about is the load. What
+[5:12.64] is load? Load is generally perceived as
+[5:16.24] a number of requests. But that's okay.
+[5:19.36] It can be one of the thing. But load can
+[5:21.60] also be users. The number of users that
+[5:24.08] we have maybe the data. There are too
+[5:26.40] many file uploads. There are too many
+[5:28.48] transactions that are happening.
+[5:30.00] Anything can be a load but in order to
+[5:32.48] measure the scalability we need to
+[5:34.24] define what we consider as a load. If
+[5:36.40] you cannot define it, you cannot improve
+[5:38.32] it. Then we have to also work with
+[5:40.80] performance. What do we call a good
+[5:43.76] performance? Is it the speed of the
+[5:45.84] website load or is it the response time?
+[5:50.16] Uh of course everything is important but
+[5:52.00] we need to actually understand what we
+[5:53.92] are calling it as up performance or the
+[5:55.76] downgrade in the performance. uh maybe
+[5:57.76] we are going for the whole uh
+[5:59.60] throughput. You need to understand one
+[6:01.60] more term here. But this is the key
+[6:03.52] important and then comes the
+[6:05.44] scalability.
+[6:07.12] Uh what do we tell that how this
+[6:10.16] actually grows? So you will hear the
+[6:12.08] term something like this that whenever
+[6:14.08] terms the scalability comes it says uh
+[6:16.64] how well
+[6:18.80] uh does the system grows
+[6:23.36] up or down? down is also important part
+[6:27.36] of the scalability. You don't want to
+[6:29.36] keep on resources infinitely scaled up
+[6:32.08] when the scalability is not required. If
+[6:34.56] you understand these three terms, the
+[6:36.56] load, the performance and the
+[6:38.24] scalability, then you will be able to
+[6:40.32] address the question. Let's get another
+[6:42.56] example here to make you understand
+[6:44.16] this. So for example, our favorite
+[6:46.00] website
+[6:47.92] Zumato. What makes Zumato as scalable?
+[6:51.36] Insane amount of engineering, great
+[6:53.20] engineering. But if you look at closely
+[6:55.60] and if I divide this into three parts.
+[6:58.32] Uh this is oops what does this is doing?
+[7:01.84] Oops my bad. So this is morning
+[7:09.20] and this is lunch. Usually that's a
+[7:12.96] breakfast would be good. Breakfast
+[7:16.40] that's a lunch and then we have the
+[7:20.64] dinner.
+[7:22.24] Zumato needs to first calculate what's
+[7:24.88] the user behavior between the lunch,
+[7:27.68] between the dinner and between the
+[7:29.44] breakfast. And you can obviously see
+[7:31.36] that the breakfast definitely have a
+[7:33.28] load but it's okayish load. It's not
+[7:35.92] that much load that they have to
+[7:37.36] insanely scale. Uh lunch definitely a
+[7:40.40] good amount of load that they have in
+[7:42.32] this case. And in case of dinner, I am
+[7:45.28] pretty sure a whole lot of people are
+[7:47.04] actually ordering uh in case of the
+[7:49.60] dinners. So we would have probably much
+[7:51.60] more load in the dinner case.
+[7:53.84] Understanding the business is the real
+[7:55.76] system design. If you tr truly
+[7:58.08] understand the user behavior that when
+[8:00.16] is user coming more to my website at
+[8:02.24] what time, what event, what occasion is
+[8:04.56] it a sale, is it an event has our
+[8:07.68] founder, co-founder, CEO has appeared on
+[8:09.68] some podcast or some news channel. What
+[8:12.24] will drive more of these things? So if
+[8:15.04] we look at the scale of Zumato, it's
+[8:17.60] actually insane scale that they are
+[8:19.92] handling. So assuming that they have
+[8:22.48] more than 50 million active user, that
+[8:25.28] that's a lot. And not only that, they
+[8:27.52] have around 1.5 uh million plus
+[8:30.80] restaurants that they are uh listing uh
+[8:33.60] currently and their order value or order
+[8:37.20] actually is millions daily. that that's
+[8:42.24] what you need to understand what's the
+[8:43.84] scale is and if you have this data then
+[8:46.96] you can actually determine what's the
+[8:48.48] peak traffic is it lunch is it dinner
+[8:50.88] and you can actually until unless as I
+[8:53.04] mentioned if you don't monitor the
+[8:55.12] things and not just the site traffic you
+[8:57.12] also need to monitor because people all
+[8:59.28] the time uh just looking at the things
+[9:02.08] so you need to understand user behavior
+[9:03.68] so at that time you can actually monitor
+[9:05.28] the database that when the maximum
+[9:06.96] amount of transactions are happening and
+[9:09.36] that what makes the system scalable
+[9:11.60] So
+[9:13.36] what is scalability here? Scalability
+[9:16.24] simply means uh how many users I can
+[9:18.96] serve per second per minute. uh how many
+[9:21.76] requests per second my network my load
+[9:24.80] balancer my application as well as my
+[9:27.28] database can handle how much amount of
+[9:29.68] data I can store because I have to store
+[9:31.84] users orders user save user payment
+[9:35.12] references there's whole lot that needs
+[9:36.88] to be there and if you add something
+[9:38.64] more on here uh let's just say for this
+[9:40.88] they all prepare for the war rooms uh
+[9:43.12] what if it is a new year obviously new
+[9:45.76] year Valentine all these needs extra
+[9:47.84] attention there so I hope now you got
+[9:50.24] the idea idea that what the scalability
+[9:52.16] is. So far we have been talking just
+[9:53.84] about the scalability the definition the
+[9:56.88] precise terms the addressibility the
+[9:59.76] business standards the logic all are
+[10:01.68] required to understand the scalability.
+[10:03.60] Now moving on uh the question which are
+[10:05.52] usually there
+[10:07.52] and the next obvious question that you
+[10:10.40] will address is type of scalability.
+[10:15.28] Once you understand the scalability
+[10:19.20] scalability the next obvious question is
+[10:21.84] the scalability that the types of it and
+[10:24.16] they are very easy to understand and you
+[10:25.76] can answer them quite easily in any
+[10:27.44] interview. The first one is vertical.
+[10:30.00] That's pretty easy to define pretty easy
+[10:32.00] to sum up. I call this as get buffed up.
+[10:34.96] So get beefy servers. By the term beefy
+[10:37.68] server means uh give them bigger CPU
+[10:40.08] give them bigger RAM give them bigger
+[10:41.92] storage. If you have 8 GB, upgrade it to
+[10:43.92] 32GB. If you have 32GB of RAM, give that
+[10:46.80] a 128 GB of RAM. Definitely possible in
+[10:50.16] the era of AWS. You can have insane
+[10:52.08] amount of RAM. You can have insane
+[10:53.76] amount of storage. All this is possible.
+[10:56.32] But there are some pros and cons. And
+[10:58.00] that's exactly what you learn in the
+[10:59.36] system design. It's not about just
+[11:00.88] always saying that it's a vertical
+[11:02.96] scaling or always saying it's a
+[11:04.40] horizontal scaling. No, the interviewer
+[11:06.64] is more focused on why vertical scaling
+[11:09.52] doesn't work and what are the pros of
+[11:11.84] it. Maybe I want to do vertical scaling.
+[11:14.00] Tell me the reason what advantage do I
+[11:16.24] get in vertical scaling. First and the
+[11:18.32] most important advantage. There is no
+[11:20.48] code change required. Yeah, that's
+[11:22.64] that's the biggest advantage. You don't
+[11:24.72] need to change anything. Your existing
+[11:27.04] code works fine. And in lot of cases,
+[11:30.96] this is actually a good thing. You don't
+[11:32.48] need horizontal scaling. And people get
+[11:34.32] surprised in the interviews that oh I
+[11:36.24] thought horizontal scaling is always
+[11:37.84] done. No, it's not. Sometimes you just
+[11:40.40] have a small burst of traffic. Maybe you
+[11:42.80] are not zomata you are just handling few
+[11:44.56] traffic which are there in in the lunch
+[11:47.04] time it's more so you can just upgrade
+[11:48.48] in during the lunchtime we do that in
+[11:50.24] some of our application in real world
+[11:52.00] and that's why I'm saying that no code
+[11:54.00] changes required there is no uh
+[11:56.16] distribution system complexity that you
+[11:58.00] need to install it's easier to maintain
+[12:00.08] easier it's lower latency everything is
+[12:02.24] at one place your database everything it
+[12:04.40] works in a lot of cases but since all
+[12:07.28] the system design that you have studied
+[12:08.80] or the books that you have referred
+[12:10.64] always go for horizontal.
+[12:16.08] So remember horizontal is not the always
+[12:18.64] right choice. Uh but it's sometime
+[12:22.16] especially in the interviewer where the
+[12:23.76] scale is humongous especially like
+[12:25.44] Zomato Swiggy something like that this
+[12:27.52] is usually the answer. Uh this is like
+[12:29.92] hiring more friend instead of beefing up
+[12:31.68] the server we just get more servers. Now
+[12:35.36] the very first thing that should come to
+[12:36.88] your mind okay so does my application
+[12:39.36] live into more instances now? Yeah,
+[12:42.32] that's exactly what the horizontal thing
+[12:44.16] is. We just get more of these machines.
+[12:47.20] So, we just rack up these machines one
+[12:49.36] on top of other and call this. Hey, now
+[12:52.08] we have more servers to address more
+[12:53.92] customer. But how does a user get to
+[12:57.60] know that I have to go to the first
+[13:00.96] instance or the second one or the third
+[13:03.28] one or the fourth one? H that's a qu and
+[13:06.48] that is where you learn the new thing
+[13:08.32] about uh the system design which is you
+[13:11.52] need to have something known as load
+[13:14.16] balancer here. So let's just add this
+[13:16.00] one. So we'll have a load balancer
+[13:20.32] and the moment you start learning about
+[13:22.40] the scalability you learn about the new
+[13:24.48] terms. So we have the load balancer
+[13:26.08] here. What does this load balancer does?
+[13:28.24] It actually distributes the load
+[13:29.92] intelligently to different machines. How
+[13:32.56] does the machine talks to each other if
+[13:34.40] they require to? That's another
+[13:35.68] strategy. How does the load balancer
+[13:38.16] gets to know that I need to send the
+[13:39.76] data to first machine or the fourth
+[13:41.36] machine? Maybe the first machine is
+[13:42.80] already serving 100 customer. These are
+[13:44.72] just chilling out. No customers at all.
+[13:47.12] So these strategies to distribute the
+[13:49.76] load is what you study in the system
+[13:51.60] design and in the scalability as well.
+[13:54.40] Uh this one horizontal has the near
+[13:56.80] unlimited scaling potential because
+[13:59.36] who's stopping you to have 500 servers
+[14:01.36] or 5,000 or 5 million? You definitely
+[14:03.76] can have. So in order to learn the
+[14:05.76] scalability, you need to learn the
+[14:07.04] horizontal scaling and all the related
+[14:08.88] terms in that. Usually interview ask
+[14:11.28] about and tries to see that whether you
+[14:13.60] know about what's the pros and cons of
+[14:15.84] vertical scaling because most people
+[14:17.28] just memorize the cons of vertical
+[14:20.40] scaling but it is not it's not always
+[14:22.56] the con. So now that you know uh the
+[14:24.72] basics of uh how the things actually
+[14:27.36] grows with the type of scalability
+[14:30.40] now the next term that you need to
+[14:32.16] understand in the scalability is yeah
+[14:34.48] that's very important is describing load
+[14:38.24] if you don't do this you truly are not
+[14:40.64] understanding the scalability no
+[14:42.88] scalability uh runs like hey I just want
+[14:45.92] to serve everything no you you don't do
+[14:48.00] that you first pick up your problem that
+[14:50.48] this is what I'm describing as load this
+[14:52.40] is what choking me and I'll fix that and
+[14:54.80] then I'll probably pick another
+[14:56.16] parameter but you need to describe what
+[14:58.32] the load is and in terms of load it's
+[15:01.12] not just about the traffic there are
+[15:02.72] different kinds of load that you have so
+[15:05.20] for example uh let's just say you have
+[15:07.68] uh different kinds of load maybe let me
+[15:10.32] try to define a few of them so the first
+[15:12.80] and the basic one that you'll hear a lot
+[15:14.88] is request per second that's a very
+[15:17.60] obvious your application needs to handle
+[15:19.76] uh the request per second data but what
+[15:21.92] also you need to handle is concurrent
+[15:24.88] user. You never thought about it but
+[15:27.12] this is also a parameter you need to
+[15:28.64] understand about it. Okay, I my
+[15:30.80] application need to handle a lot of
+[15:32.48] requests that are coming up. But what
+[15:33.76] about the people who are never leaving
+[15:35.60] your application? They are staying there
+[15:37.92] uh measuring where the food delivery guy
+[15:40.08] is and are staying there. So can you
+[15:42.40] handle those kinds of concurrent load
+[15:44.32] that is also and another thing that you
+[15:47.60] study is uh read write ratio once a user
+[15:52.64] has done the transaction in your
+[15:54.32] database he's just reading the data he's
+[15:56.80] not writing more data he's reading a lot
+[15:59.04] definitely he's checking his order
+[16:00.72] checking the delivery position and u
+[16:02.96] maybe doing a lot of stuff but he's not
+[16:04.80] writing a lot so what kind of strategies
+[16:07.04] you can learn about balancing this read
+[16:09.36] write ratios this is what you study in
+[16:11.12] the data database optimization. Uh we
+[16:13.28] have one write database and three read
+[16:15.44] database. There are a lot of strategies
+[16:16.72] on that. But my point is that
+[16:18.64] scalability is what teaches you system
+[16:21.04] design. Maybe maybe you also want to
+[16:23.76] take another parameter into this which
+[16:25.68] is uh data volume. How much data is
+[16:28.80] coming in? Maybe you are not designing
+[16:31.68] Zumato. Maybe you're designing the the
+[16:34.40] support chat in the Zumato. That is also
+[16:36.96] a scale insane scalable problem. So data
+[16:39.84] volume maybe a lot of people are adding
+[16:42.00] photos in that. So that also needs to
+[16:44.32] handle that volume. Not only just read
+[16:46.24] and write requests the user real time
+[16:48.24] the concurrent user you're also getting
+[16:50.16] images where you going to store those
+[16:51.84] images are you going to compress them
+[16:53.28] are you not going to compress them it's
+[16:55.60] a TVs of data in hour and on top of that
+[16:58.72] a lot of people what misses miss this
+[17:00.88] data is how you're storing logs
+[17:03.76] everything needs to be logged and these
+[17:05.84] small KBs of logs in millions and
+[17:08.96] millions of user they actually gets uh
+[17:10.72] really insane so if you look at this
+[17:12.56] there's lot of monitoring happening so
+[17:14.72] even if If you look at the system design
+[17:16.40] of how 24 by7 they manage where they are
+[17:19.28] storing all of this data what database
+[17:21.20] they are actually using what kind of
+[17:23.68] logs they are keeping and where they are
+[17:25.52] keeping this log and how they are
+[17:26.80] reading this log that's the insane
+[17:28.80] problem and for how long duration they
+[17:31.28] are keeping this log so once you
+[17:33.12] actually look at these application these
+[17:34.96] are very production grade application uh
+[17:36.96] then you actually see that what's there
+[17:38.48] in the app log so if you look at this oh
+[17:40.64] I'm not in the my main account where I'm
+[17:42.48] actually monitoring this but anyways you
+[17:43.92] get the idea that how this actually goes
+[17:46.24] for that. And again the most important
+[17:49.20] thing that you have to study during the
+[17:51.44] system design of this is uh what is
+[17:54.80] commonly known as celebrity problem.
+[17:58.24] Everybody's understand that. I'll
+[18:00.16] probably make videos about that also.
+[18:01.92] Let me know in the comment section. So
+[18:03.68] if a celebrity tweets uh that particular
+[18:07.12] thing is about to get viral that's a
+[18:08.80] Twitter problem but that's also a
+[18:10.48] problem for Zomato. Maybe some
+[18:12.56] restaurant is doing insane amount of
+[18:14.32] advertisement. Maybe it has featured on
+[18:15.92] short tank, maybe on another posters or
+[18:18.48] somewhere. So how you're going to
+[18:20.32] describe the load for that spike because
+[18:22.56] it regularly doesn't get that amount of
+[18:24.88] traffic. So these kinds of things you
+[18:26.80] need to have a baseline and again what's
+[18:28.88] important here is to understand few more
+[18:30.64] terms. There is something known as a
+[18:32.72] baseline load that you have to
+[18:34.40] understand. Then you have to understand
+[18:36.48] the peak load. What's the highest amount
+[18:38.72] of load that we are getting? You also
+[18:40.72] need to measure and put some metrics on
+[18:43.52] the spike load as well because these are
+[18:46.40] just some amount of time. And then there
+[18:48.88] is also known as stress test. You also
+[18:51.60] study that. This is nothing much. It is
+[18:53.92] push until the system breaks. This is
+[18:55.60] what you do. Sometimes your client also
+[18:57.44] does it for you. But this is the stress
+[18:59.28] test. And then there's also known as
+[19:01.20] something known as a soak test. So what
+[19:03.12] the soak test is it's nothing is
+[19:04.88] sustained high load for hours. How much
+[19:07.04] longer are you able to soak the load
+[19:10.16] till everything is going on? So there is
+[19:12.24] a soak test also known as sometimes
+[19:14.16] known as a soak uh period. What's your
+[19:18.08] soak period? These are corporate terms
+[19:20.00] but these are expected from you to uh
+[19:22.08] learn from them. Okay. Then uh once you
+[19:25.36] have understood uh the describing of the
+[19:27.36] load, the next term that you understand
+[19:29.20] in the scalability of this is uh
+[19:33.20] performance
+[19:35.44] uh matrix.
+[19:37.44] Have I written that correctly? Hopefully
+[19:39.44] I have. So this is performance matrix.
+[19:42.08] So what the performance matrix is? Okay,
+[19:44.72] now that you understand all about what's
+[19:46.64] going on with the load, but let's talk
+[19:48.96] about performance. How do we measure the
+[19:50.96] performance? uh how our system is
+[19:52.96] performing under that load that
+[19:54.88] performance is what you call this uh one
+[19:57.84] of the common term one of the common
+[20:00.08] thing that you actually measure
+[20:02.56] is response time that's the first thing
+[20:04.88] that you do let me give you an example
+[20:07.60] to understand that why the performance
+[20:09.60] metrics actually matters and how it
+[20:11.84] looks for let's just say a user on
+[20:14.64] Zomato is looking and searching for
+[20:16.72] pizza so if he is getting uh that result
+[20:20.72] in less than 100 millisecond that feels
+[20:23.92] magic. Some of the queries some of the
+[20:25.84] result actually on Zomato comes in less
+[20:27.84] than 100 millisecond. So that's okay.
+[20:29.76] That's fine. And in usual system design
+[20:32.88] terms, whenever there's a 100 under
+[20:34.96] under 100 millisecond, that's okay. But
+[20:37.20] let's just say the next stop is some
+[20:39.36] other user is getting it 100 to 300
+[20:42.56] millisecond. Uh that still feels good in
+[20:46.08] terms of system design. It's okay. It's
+[20:48.00] bearable. Uh even 300 to a,000
+[20:52.56] millisecond is considered as okay. I'll
+[20:56.24] accept this. Okay. Now things gets
+[20:58.96] interesting. Anything above thousand
+[21:01.76] milliseconds especially when people are
+[21:03.44] watching a lot of reels uh they start
+[21:06.48] leaving at this point in the modern
+[21:08.88] terms and if you go ahead anything above
+[21:12.08] 3,000 milliseconds
+[21:14.56] uh that's called as losing money. You
+[21:18.40] need to understand this. Everybody knows
+[21:20.56] it who's taking your interviews, who you
+[21:22.96] are giving to interviews, who are
+[21:24.24] working in the corporate, they know
+[21:25.84] this. And they ask you this in the
+[21:27.28] system design that hey, what's the
+[21:29.04] response time? What's acceptable? This
+[21:31.04] is the standard. And again, it's not
+[21:32.72] really hardcoded like it's 100 to 300
+[21:35.04] only. It could be 400 for some, it could
+[21:36.96] be 200 for some, depends on what you're
+[21:38.80] looking for. But you need to understand
+[21:41.04] that these are the things that you will
+[21:42.56] be working on. Not only that, this is
+[21:44.24] one of the performance metrics. Uh
+[21:46.16] another performance metrics is your P50.
+[21:49.04] Now what is this P50? Uh P99 uh all
+[21:53.04] these these are queries. So you look for
+[21:56.96] the relative scale that let's just say
+[21:59.36] 50% of my queries are they optimized or
+[22:02.16] not or what does 50% of my query takes
+[22:05.60] time. Are 50% of my database queries are
+[22:08.40] under uh 2 milliseconds and rest of them
+[22:11.44] are like above that. I will definitely
+[22:13.52] make a dedicated video. Next one is
+[22:15.28] going to be on this P matrix what this
+[22:16.96] is but this is an uh interesting this is
+[22:19.28] an interview gold that you are talking
+[22:21.28] about the percentiles of your query that
+[22:23.60] means you have definitely worked on a
+[22:25.04] real system which actually takes care
+[22:26.48] about this one. Another thing that uh
+[22:28.72] apart from the response time that you
+[22:30.32] will be working on is something known as
+[22:33.04] uh throughput.
+[22:34.80] If you have never studied or gone
+[22:36.72] through with throughput you should
+[22:37.92] really get it. Uh throughput is nothing.
+[22:39.84] It's how many requests you can handle
+[22:41.28] per unit time. how you're defining the
+[22:43.60] unit time that is is your unit time
+[22:45.60] about uh request come to your server and
+[22:48.00] leaves your server is that your
+[22:49.68] throughput or is your throughput when
+[22:51.36] user uh clicks on a button and then he
+[22:53.92] gets the data back is that your
+[22:55.44] throughput so end to end journey is
+[22:57.04] known as your throughput and uh it's
+[22:59.44] dependent on how you're go going for
+[23:01.52] that and another thing that you also
+[23:03.28] measure for the performance is your
+[23:06.32] error rate I'll definitely talk about
+[23:08.48] the error rate in the separate video but
+[23:10.08] it's what percentage of request fails
+[23:13.04] And that's okay. But if you don't get
+[23:16.08] the matrix, always use uh site 24x7 to
+[23:19.52] measure your we also use it for error
+[23:21.60] monitoring rate. Let me give you an
+[23:23.20] example why the error rate actually uh
+[23:26.16] means a lot. So let's just say your
+[23:28.32] error rate is less than.1
+[23:30.80] uh%.
+[23:32.72] Okay. And you feel very happy that all
+[23:36.24] right our error rate is very low. It's
+[23:38.08] 0.1.
+[23:40.08] That means one in thousand uh request
+[23:45.60] request fails. That's okay. But do you
+[23:49.36] also understand that if you're serving
+[23:51.92] million user, so many users are not able
+[23:55.12] to place their orders. What if you're
+[23:57.28] serving 10 million users? This 01 error
+[24:00.16] rate, how much millions of rupees,
+[24:03.36] probably millions of dollars of orders
+[24:05.68] you're not able to accept? that means
+[24:07.12] you're losing the business. System
+[24:09.04] design is all about understanding the
+[24:10.80] business and make sure that business
+[24:12.08] runs smoothly. So always look for that
+[24:14.56] how many actually error rate is actually
+[24:16.96] once you understand and start seeing
+[24:18.96] this in real world in terms of money you
+[24:20.96] will be able to understand the error
+[24:22.16] rate so much better. Uh there's so much
+[24:25.28] more onto this like availability time up
+[24:27.28] time and all of that. These are all part
+[24:28.80] of performance metrics and that's why I
+[24:30.40] say use this one. They actually give you
+[24:32.16] all of this. I don't remember all of
+[24:33.44] them but they actually auto configure
+[24:35.12] all these things for you. So I don't
+[24:36.88] really bother much about them. They give
+[24:38.56] you all the standard performance
+[24:39.92] metrics. That's the next thing that you
+[24:41.36] learn about. Okay. Now here's the thing
+[24:45.52] which a lot of people don't even mention
+[24:47.68] in their system design interviews and
+[24:50.32] especially don't talk about in the
+[24:51.84] scalability. The next one is measure
+[24:56.96] performance.
+[24:58.72] Once we have defined that these are our
+[25:00.88] performance metrics, these are our load
+[25:03.60] these are our performance metrics. How
+[25:06.16] do we measure them? What do we measure
+[25:09.04] and how do we measure them? The real
+[25:11.36] time monitoring is uh the most important
+[25:13.76] term here is uh real time monitoring and
+[25:18.08] you should really know out of the box a
+[25:20.16] few tools definitely site 24x7 is one of
+[25:22.72] them but there are others as well. You
+[25:24.72] definitely need to mention a few of them
+[25:26.48] that hey this is how I'm going to
+[25:28.56] monitor uh my entire website. They also
+[25:31.68] expect you to know a little bit about
+[25:33.52] that's a short term but I'll call this
+[25:34.88] one as APM application performance
+[25:37.92] monitoring. It's a bit mouthful. Uh by
+[25:40.72] the way site 24x7 gives you free APM.
+[25:43.20] You can actually put that on any of your
+[25:44.88] website. This is how you measure the
+[25:46.96] performance. So whenever somebody says
+[25:48.40] how do you measure the performance you
+[25:49.68] should really know a few terms like I
+[25:51.52] will measure the APM. That's a real-time
+[25:53.52] monitoring that I'll do on that one. Uh
+[25:55.92] I will also connect some of the time
+[25:57.60] series data. You should have seen that.
+[26:00.16] And again this is a big big jargon word.
+[26:02.40] I am planning to cover this uh
+[26:04.40] performance measuring in the upcoming
+[26:05.92] videos. I'll do a separate video on that
+[26:07.60] but that's really uh on with them. Now
+[26:11.28] uh this is the basic that we have gone
+[26:13.20] through. Definitely there is lot more to
+[26:15.68] study and understand that.
+[26:18.96] But apart from that there is one more
+[26:21.36] interesting thing that you should really
+[26:22.72] know and we'll do that now is
+[26:24.96] diagramming the stuff. Yes, you
+[26:27.36] sometimes do that on the board,
+[26:28.80] sometimes do them in the things like uh
+[26:30.48] this one. Uh so let me walk you through
+[26:32.32] that how this is actually done in the
+[26:34.40] real world on at least the basic. This
+[26:36.56] is not an architecture video for Zumato.
+[26:38.72] I'll probably do that in some other
+[26:40.08] video that would be fun. Uh but this is
+[26:41.92] how you actually do that. First of all,
+[26:44.08] this is where you actually mention that
+[26:45.84] hey, who are my users? You should be
+[26:48.24] absolutely clear that what are your
+[26:50.00] users? In your case, it could be mobile,
+[26:52.72] it could be web or in some cases, it is
+[26:55.76] API client as well. So getting an idea
+[26:58.88] of who is the user, who is the client.
+[27:00.88] That's the first thing. Another thing
+[27:02.72] that you study in the scalability that
+[27:04.72] is 100% there is how your user user is
+[27:08.32] going to interact with the CDN. This is
+[27:10.40] content delivery network. It could be
+[27:12.48] Cloudflare. But you need to understand
+[27:14.64] that CDNs are meant for static content.
+[27:18.64] Things like images, CSS, even JavaScript
+[27:21.92] sometimes are actually put up on uh the
+[27:24.40] CDN. So yes, user actually interacts
+[27:26.56] with the CDN. Uh the arrows are not
+[27:29.76] quite well somehow. Anyways, so this is
+[27:32.56] the first that user actually interacts
+[27:34.24] and you should know that. And after that
+[27:36.48] where the user interacts for the very
+[27:38.72] first time is actually the API uh
+[27:41.28] gateway. Yeah, it interacts with both of
+[27:44.32] them at the same time. This API gateway
+[27:46.80] is also known as sometimes load
+[27:49.28] balancer. This load balancer as I
+[27:51.84] mentioned uh is sometimes responsible
+[27:53.76] for your rate limiting, your
+[27:55.76] authentication and even the routing as
+[27:58.08] well. So this is also you need to
+[27:59.76] understand and get in the habit of
+[28:01.76] making these very basic diagram. They
+[28:04.00] will help you to work on that. Now where
+[28:07.28] do we go after this API gateway? Now
+[28:09.76] there are two places where you can
+[28:11.36] potentially go. The one is application.
+[28:14.64] So you directly go with the application
+[28:16.32] where servers are there and this is on
+[28:18.00] the autoscaling most of the time and
+[28:20.24] especially in the case of Zomato. But
+[28:22.24] there is also a layer of radius here.
+[28:25.44] Now by the term radius here I simply
+[28:27.60] mean to say there is a caching layer.
+[28:29.52] There is some kind of radius or
+[28:31.12] equivalent of radius mechanism that is
+[28:33.12] there. And there are a lot of places
+[28:35.92] where actually you can put the radius.
+[28:37.36] I'll do a dedicated video on that as
+[28:39.04] well that there are a couple of
+[28:40.08] strategies of where to put the radius or
+[28:42.16] where to put the caching here. But again
+[28:44.32] there could be two ways here that
+[28:46.08] application uh API gateway can throw you
+[28:48.48] to the application or to the radius
+[28:50.80] here. Now in the companies like uh
+[28:54.32] Zumato and scale of the Zumato then you
+[28:57.04] actually interact with something known
+[28:59.12] as micros service layer
+[29:03.28] because in the scale of Zumato
+[29:05.52] microservices actually make sense and
+[29:07.76] you will have definitely different kind
+[29:09.36] of microservices like there will be a
+[29:11.52] user service, there will be a restaurant
+[29:13.52] service, there is will be an order
+[29:15.12] service, there will be a payment service
+[29:17.68] and uh not only that there will be
+[29:19.92] probably a delivery service, There is a
+[29:22.08] search service, review service. You
+[29:24.48] don't need to go too much. If you go too
+[29:26.72] much, that is actually a difficult point
+[29:28.88] in the system design interviews. Use
+[29:31.76] you're opening up yourself to getting
+[29:34.56] questioned on any one of them. Don't do
+[29:36.96] that. Just mention a couple of them and
+[29:39.28] then says there could be other
+[29:40.64] microservices as well. Or in case you
+[29:42.80] don't have a comfort in the
+[29:44.16] microservices, don't even mention
+[29:45.52] microservices. That is totally okay.
+[29:47.60] You're not expected to code or you're
+[29:49.44] not expected to know everything. But in
+[29:51.44] the scale of Zumato, you mentioned this.
+[29:53.12] That's an additional point that just
+[29:54.96] keep that in. But here are a couple of
+[29:56.72] things that you also need to have. These
+[29:59.04] uh microservices uh also cannot function
+[30:02.88] uh without having some kind of uh
+[30:05.28] message Q system. Uh which message Q?
+[30:09.12] Rabbit MQ. What these Q service might be
+[30:11.20] doing? Uh they might be doing email,
+[30:13.12] they might be doing SMS, they might be
+[30:15.12] doing some kind of a sync task. A Q
+[30:17.68] service is important in these diagrams.
+[30:20.00] You need to have that. Apart from that,
+[30:22.40] there is usually an event stream as
+[30:24.88] well.
+[30:27.20] Event stream and that event stream
+[30:29.20] usually uh the most popular one is
+[30:30.88] Kafka, but it could be there, it could
+[30:32.96] not be there. Again, depends on how much
+[30:35.28] depth you really want to go. And after
+[30:38.00] that, there is also a kind of a database
+[30:41.12] layer. So, this is a database layer.
+[30:45.12] What happens in this database layer?
+[30:47.04] That's also an interview question. Uh
+[30:49.60] there could be one database here but
+[30:51.44] there could be multiple databases
+[30:54.00] probably sharded by cities in case of
+[30:56.48] Zumato. So Pune might have one,
+[30:58.40] Bangalore, Bangaluru might have one,
+[31:00.56] Hyderabad might have one, Delhi uh there
+[31:02.88] could be based on that there could be
+[31:04.40] other strategies that they are pulling
+[31:05.76] up but I think in the database layer and
+[31:07.76] definitely it's a read heavy database.
+[31:09.60] So as the user is writing there are a
+[31:11.92] lot of copies needs to happen uh which
+[31:14.32] are read only database and if the main
+[31:16.08] database fails uh the read database
+[31:18.88] actually upgrades itself as a write
+[31:20.96] database again. So there I will do
+[31:22.64] definitely separate video on them but
+[31:24.32] this is kind of a basic one and there is
+[31:26.32] one more layer on top of that. So once
+[31:28.08] you have a database layer uh there needs
+[31:30.16] to be something known as a storage
+[31:32.72] layer. You also need to understand about
+[31:34.40] the storage like S3 the bigquery the
+[31:36.64] elastic search. Yeah, I can go on and on
+[31:39.28] but this is something that you need to
+[31:40.72] get. Again, I repeat this. There could
+[31:42.24] be an S3 or equivalent of S3. There are
+[31:44.96] many services. There could be BigQuery
+[31:47.12] here as well. The analytical warehouse,
+[31:49.20] the all the things are also in the
+[31:50.88] storage layer. And there could be
+[31:52.24] elastic search as well. And last but not
+[31:55.68] the least, which usually people actually
+[31:57.76] forget about, there is 100% 1,000% some
+[32:02.00] kind of monitoring uh as well as one
+[32:05.76] observability.
+[32:09.28] Maybe I'm writing it incorrect, but
+[32:10.72] that's okay. Spelling mistakes are okay.
+[32:13.04] So monitoring and observability layer.
+[32:14.96] This is where you add things like site
+[32:16.80] 24x7 or equivalent of that. And that's
+[32:19.28] the basic. And now look at this the
+[32:21.28] diagram that we have drawn. It's
+[32:22.40] definitely not the nicest one. When I'll
+[32:23.84] do a case study on the Zomato itself,
+[32:25.84] I'll probably do it more. But this is
+[32:28.24] all where majority of your system design
+[32:30.32] interviews look for. And this is all
+[32:31.92] coming up through the scalability only
+[32:35.04] because you care about the scale. That
+[32:37.44] is why you care about all these things
+[32:39.20] and all these things are required. Is it
+[32:41.28] required by every single application?
+[32:43.12] No. Some of them are interview friendly.
+[32:45.76] Some of them are heavy scale friendly
+[32:47.44] like Zumato, Swiggy or something. But I
+[32:49.84] hope this video has given you enough
+[32:51.20] idea that from where we started
+[32:52.96] summarizing this again. So scalability
+[32:55.44] is an insanely great term for system
+[32:58.56] design interviews. And the first thing
+[33:00.32] that you need to care about is the this
+[33:03.04] example always. Why are you not able to
+[33:05.44] serve 5,000 customers? We serve 50
+[33:07.76] customers daily. And ask questions like
+[33:10.16] uh am I missing tables? Am I missing
+[33:12.16] kitchen chef or I don't have parking?
+[33:14.40] What is missing? So I can fix it one by
+[33:16.24] one. I could have been missing more than
+[33:18.24] that, but at least let me address these
+[33:20.16] things first. So the first thing that
+[33:22.08] you go ahead and work on is the type of
+[33:24.08] scalability. What scalability suits for
+[33:26.00] you? Is it vertical, horizontal?
+[33:27.76] Remember, there's no right answer.
+[33:29.12] There's no silver bullet. Uh vertical,
+[33:31.44] maybe you don't want to do any code
+[33:32.88] changes. Maybe your scale is just maybe
+[33:35.12] some cohort which serves 5 to 10,000
+[33:37.28] people. Just do a vertical scaling and
+[33:38.80] go ahead, move on. Uh but for some
+[33:40.96] cases, horizontal scaling makes sense.
+[33:42.64] We want to have multiple server. The
+[33:44.80] moment you have horizontal scaling,
+[33:46.24] that's where you unlock the door to
+[33:47.92] learn so many more things. Load
+[33:49.44] balancer, the strategies of load
+[33:50.96] balancing and all of that. Request per
+[33:53.04] second, celebrity problems and whatnot.
+[33:55.28] Then we studied about performance
+[33:56.72] matrix. What do I need to study for
+[33:58.80] this? And this is where you study about
+[34:00.80] what are considered as good request
+[34:02.64] response time which are not considered
+[34:04.40] as. You also study about P50s, P90s, the
+[34:07.20] database queries, how many queries are
+[34:08.80] faster. I'll do a dedicated video on
+[34:10.80] this one next. We study about error rate
+[34:13.04] and the understand the scale. Always
+[34:15.52] measure the scale from the payment
+[34:17.76] perspective, money perspective. You will
+[34:19.60] do much better here. And then we look
+[34:21.60] for the performance measure. We what do
+[34:23.68] we measure the real-time uh monitoring
+[34:25.84] or the APM monitoring and all of that
+[34:27.92] and all you want to do monitoring about
+[34:29.84] the discovering the devices, MySQL, uh
+[34:32.88] or you want to do the capacity planning.
+[34:34.80] They actually do give you the capacity
+[34:36.32] planning. Their capacity planning is
+[34:37.92] actually pretty good. I was very
+[34:40.08] impressed with that. happily impressed
+[34:41.92] and then we did a small diagram of what
+[34:44.32] more could be there in this uh system
+[34:46.56] design videos that I'm about to throw on
+[34:48.32] this channel. Uh there's user, there's
+[34:50.32] CDN, there's API gateway, there's lot in
+[34:53.20] just the API gateway and the strategies
+[34:55.12] of API gateways and there's a lot in
+[34:57.92] just where to place the radius. Reddit
+[35:00.00] could have been placed in the
+[35:01.12] application before the database query uh
+[35:04.64] in the d in between the database query.
+[35:06.80] There's a lot of places. I'll definitely
+[35:08.16] do a video on this one. And then we talk
+[35:10.24] about a little bit of microservices, a
+[35:12.24] little bit of message Q, event streams,
+[35:14.40] database layers, we studied about them,
+[35:16.48] storage layer and monitoring and
+[35:17.84] observability. A lot of people miss this
+[35:20.24] layer and once you add this, you are
+[35:21.92] giving yourself an additional point that
+[35:23.68] these things actually works and these
+[35:25.52] things actually do great. So this was
+[35:29.04] the basic of what is scalability and
+[35:32.72] what doors scalability opens for you for
+[35:35.60] a system design interview or to become a
+[35:37.68] better engineer for yourself. I hope
+[35:39.76] this video has done enough justice and
+[35:41.52] sparked enough curiosity to learn more
+[35:43.52] about these topics. Uh stay tuned, hit
+[35:45.84] that subscribe, let me know in the
+[35:47.20] comment section which video would you
+[35:48.48] like to go next because I'm planning to
+[35:49.92] make a video on all of them. the
+[35:51.68] placement of the caching radius as well
+[35:54.64] as the P50 P99 all these percentiles of
+[35:57.92] the queries what they are and how you
+[35:59.52] can measure them pretty fantastic one
+[36:01.52] and I'll go for that one that is it for
+[36:03.76] this video let's go ahead and catch up
+[36:05.44] in the next

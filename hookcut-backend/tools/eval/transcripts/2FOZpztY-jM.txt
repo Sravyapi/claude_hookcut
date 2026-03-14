@@ -1,0 +1,2083 @@
+[0:00.16] The original promise of SAS was hey
+[0:02.64] right now you buy a new version of
+[0:04.72] software from me every year instead why
+[0:06.88] don't you just pay me a subscription fee
+[0:08.48] we'll keep updating the software for you
+[0:10.96] that promise has not been true for
+[0:12.40] enterprises so I feel the next decade is
+[0:15.04] not about replacing SAS it's actually
+[0:16.96] using SAS more right how do you actually
+[0:18.72] use SAS to deliver that promise that a
+[0:20.80] SAS provider will continue to release
+[0:22.80] new feature functionality and your
+[0:24.80] digital worker will take care of
+[0:26.32] adopting it using it you don't need to
+[0:28.80] know way it [music] changed this 6
+[0:30.80] months ago and that's consumed by a
+[0:32.24] digital worker and they could write an
+[0:33.60] email saying hey I [music] found
+[0:34.96] Salesforce just came out with a new
+[0:36.16] update this will make our lives easier
+[0:37.84] so I'll start doing this differently for
+[0:39.28] you that's the life we should get into
+[0:41.52] so there's like two kinds of archetypes
+[0:42.96] of founders certain founders [music] are
+[0:44.72] of the archetype of they fall in love
+[0:46.40] with a problem right and then they try
+[0:48.40] to find an industry or industries where
+[0:50.24] they can apply this I am of the second
+[0:52.00] archetype and that's why for me I'm not
+[0:53.68] that tied to the problem I'll tie
+[0:55.02] [music] to the industry you know
+[0:56.48] obviously a successful founder has to
+[0:58.16] pivot if they don't pivot you know then
+[0:59.92] you're dead in water anyway.
+[1:05.12] >> I'm Sudhart Alwalia, host of the Neon
+[1:06.88] Show podcast, managing partner at Neon
+[1:08.56] Fund. We have invested in some of the
+[1:09.92] best enterprise AI companies started by
+[1:12.00] like Indian diaspora of folks globally
+[1:13.84] and specifically by second time
+[1:15.12] founders. For example, you build Grey
+[1:16.56] Orange, right? At its peak took it to a
+[1:18.48] three billion kind of market cap, right?
+[1:20.56] 100 million plus revenues, right? And we
+[1:23.12] are very proud to be in your next
+[1:24.16] journey in Buddy.
+[1:25.36] >> You're so kind, Sedat. I think uh at the
+[1:27.44] end of the day I think from literally
+[1:29.20] our first call right the depth of
+[1:31.44] questions the the the effort you really
+[1:33.92] put in and what you bring uh is huge.
+[1:36.32] >> Thanks. So the goal here is you know
+[1:38.48] today not just um educate folks about
+[1:41.44] your journey but also what you are
+[1:42.96] building is buddy is so interesting
+[1:44.08] because like one of the toughest
+[1:45.60] industries a founder can choose to build
+[1:47.28] in right and you had good initial
+[1:49.28] success product market fit in this
+[1:51.28] industry right so just let me start with
+[1:53.60] you know uh buddy solves a core problem
+[1:56.64] in senior care living homes and a senior
+[1:59.20] care living home is a very emotional
+[2:00.80] decision for a parent or a grandparent
+[2:02.56] to move in right it's a long 3 to four
+[2:04.80] year gustation period where multiple
+[2:07.28] people are involved from the family in
+[2:08.56] decision-m. So how does family make
+[2:10.96] these decisions to move to a senior key
+[2:12.56] living home and what role does buddy
+[2:14.64] play in this entire life cycle? Senior
+[2:16.40] living for a lot of people I mean
+[2:17.68] including me for a couple of years ago
+[2:19.36] was a you knew the industry right but
+[2:21.36] what is senior living senior living at
+[2:22.80] the end of the day is uh age restricted
+[2:25.28] living right but it's so usually in the
+[2:27.28] US it's 55 years plus age which is where
+[2:29.76] people move in there is independent
+[2:31.28] living assisted living memory care those
+[2:33.12] are all the fragments right now as you
+[2:35.28] said one thing I love about the industry
+[2:37.12] is the fact that you know we're all
+[2:38.88] headed there right so it's like we might
+[2:40.56] be a couple of years away decades away
+[2:42.72] it depends but it's a very it's
+[2:44.56] something that we will all experience
+[2:45.84] erience right and some of us are
+[2:47.52] experiencing you know with our parents
+[2:49.04] with our grandparents. So it's a it is
+[2:51.12] as you said it's an emotional industry
+[2:52.48] but it's also industry which is
+[2:53.76] emotionally connected to ourselves. You
+[2:55.28] can connect with why is this such a
+[2:57.04] tough journey right whereas if you think
+[2:58.96] about other enterprise businesses that
+[3:00.48] you're in right sometimes you can like
+[3:02.64] you know you might not connect with it
+[3:03.92] as to you know somebody's buying
+[3:05.04] software or somebody's buying this thing
+[3:06.56] you're not buying there. So in this case
+[3:08.80] I love that about the industry that it's
+[3:10.40] very connected to who we are and we are
+[3:12.00] going to go through this cycle in
+[3:12.96] ourselves. So specifically on your
+[3:15.52] question, it's it's emotional at at lot
+[3:18.88] of different levels, right? So let's
+[3:20.32] kind of start with I would say at the
+[3:22.64] senior itself. So the person who's going
+[3:24.00] to move into a senior living. So for
+[3:25.52] them, think of it as a uh they're
+[3:28.24] usually living in their house for 20 to
+[3:29.76] 30 years already, right? This is a
+[3:31.76] decision which they never thought about,
+[3:33.20] right? Like you think about it if you're
+[3:34.56] living in your house for 15 20 years,
+[3:36.48] right? You're like, hey, I'm going to,
+[3:38.08] you know, like die here, right? This is
+[3:39.52] my place, right? So it's not something
+[3:41.36] you naturally plan for that I'll live
+[3:43.28] here till I move to a senior living
+[3:44.88] facility. So firstly it's emotionally
+[3:47.76] tormenting right one of the biggest
+[3:49.84] things for a senior is that usually in
+[3:52.40] those years right you have a long life
+[3:54.64] to go right like senior living is not
+[3:56.16] like you're you know like in the
+[3:57.92] industry we almost like saying it's not
+[3:59.12] the place you're going to die. It's a
+[4:00.48] place you might might die but but at the
+[4:02.48] end of the day you you can live there
+[4:03.76] for 10 15 20 years. We know seniors who
+[4:05.60] live there for 30 years. So it's not
+[4:06.80] like oh my god this is it but it is
+[4:09.12] connected to some a big milestone in
+[4:10.80] your life. So that's why it's emotional
+[4:12.80] and secondly they've not taken a
+[4:14.24] decision as big as this right probably
+[4:16.72] the last 15 20 years because you stop
+[4:18.56] changing things you know if it's working
+[4:20.40] why why fix it and last but not the
+[4:22.56] least a lot of this are people who are
+[4:24.96] single by then right they've lost a
+[4:26.56] spouse and as a result right it becomes
+[4:28.96] even tougher because you know your
+[4:30.32] partner your soulmate is not there for
+[4:31.92] like one of the biggest decisions you're
+[4:33.60] taking at that time. So obviously a it's
+[4:36.00] it's tough for the senior obviously
+[4:37.92] whether you're a single or you're
+[4:39.04] deciding as a couple both ways it's
+[4:40.72] tough then just think about like you go
+[4:42.88] to one generation down so the adult
+[4:45.04] child right the child of the senior
+[4:47.04] right for them you know their average
+[4:49.52] age is in the 55 60 years of age right
+[4:51.76] they're making this decision it starts
+[4:53.76] with first accepting you know that your
+[4:55.68] parent now is reaching a age where they
+[4:57.76] need to move into a senior living right
+[4:59.44] so that's that's it selfacceptance right
+[5:02.32] some of these seniors need you know like
+[5:04.08] extra help like assisted care or other
+[5:06.16] things right and it goes through the
+[5:07.68] emotional challenges of like um why
+[5:09.76] can't I provide this or why you know
+[5:11.36] what why is this happening is it really
+[5:12.88] needed so you have all of that
+[5:14.64] >> and uh if you can just talk about an
+[5:17.12] economic sense like in US how like
+[5:19.68] what's the size of this market for
+[5:21.20] senior care living homes and how many of
+[5:22.96] the population let's say 300 million
+[5:24.16] population do as they age touch this
+[5:26.88] industry
+[5:27.84] >> sure so I'll say uh let's go broad
+[5:31.12] numbers right so I mean I as industry
+[5:33.60] there are probably 30 to 40,000 senior
+[5:35.68] living facilities and this is like you
+[5:37.76] know at the minimum lower end but
+[5:39.36] usually about 1 one and a half% of you
+[5:41.84] know like the seniors who are eligible
+[5:43.12] in that age end up moving into those
+[5:45.68] facilities right so that's kind of in
+[5:47.60] terms of very less people so we say that
+[5:49.92] obviously it is expensive right so we
+[5:51.92] say that about 10% of seniors can afford
+[5:55.04] it right and probably only 10% of that
+[5:57.68] 10% so about a percent or so actually
+[6:00.40] make that jump right the industry
+[6:02.32] obviously has like senior living then
+[6:04.08] has home care which is also getting help
+[6:05.68] in your home which is also part of the
+[6:07.12] industry in the longer spectrum. So it
+[6:09.04] is obviously the classic hundreds of
+[6:10.64] billions uh you know size company. It is
+[6:13.36] at the intersection of real estate,
+[6:15.60] healthcare and hospitality. That's a
+[6:17.36] very important thing to remember that
+[6:18.64] you have all three of those things at
+[6:20.64] play in the industry.
+[6:22.40] >> Wow. And you know now buddy comes on the
+[6:25.12] tech part of it. So can you share like
+[6:26.64] the journey of buddy? When does it start
+[6:28.24] playing a role?
+[6:28.96] >> Sure. So I I like saying as buddy comes
+[6:30.88] on the non- tech part. Let me explain
+[6:32.32] what that means. Right. So, so if you
+[6:34.32] think about as an industry, right, it's
+[6:35.60] a big industry. There are many
+[6:37.36] facilities. There's all of this going
+[6:38.56] in. So, obviously, you know, SAS is
+[6:40.24] prevalent in the industry, right? So,
+[6:41.84] you have your C CRM for sales. You have
+[6:44.56] your EHRs for your healthcare electronic
+[6:47.04] health records. You have your resident
+[6:48.96] portals, you have your community, you
+[6:50.80] know, you have software, right? Like
+[6:52.24] there's decent chunk of software. It's
+[6:53.76] it's a mature industry in that sense,
+[6:55.52] right? I think buddy comes in from the
+[6:57.36] non- tech part. What that means is that
+[6:58.96] you know while obviously all of these
+[7:00.24] SAS tools have increased and they're
+[7:01.92] important and they've become very
+[7:03.20] affordable very easy to deploy right if
+[7:05.68] you go to the the lives of actually the
+[7:07.84] people the executive director which is
+[7:09.36] the person who runs a facility or you go
+[7:11.28] to the salesperson at a facility all of
+[7:13.60] these people are really day in day like
+[7:16.48] providing service to the seniors right
+[7:18.24] so for them these tools are good to have
+[7:20.96] they're not really you know that
+[7:22.24] integrated in their life so that's where
+[7:23.60] buddy comes in our vision is fairly
+[7:25.52] simple we are zero UIUX What that means
+[7:28.24] is we do not introduce another piece of
+[7:29.92] software, right? We're just saying, hey,
+[7:31.52] you're using all the software you're
+[7:32.80] using, right? Can you actually use a
+[7:34.80] digital teammate for you that goes in
+[7:37.12] and stitches all of these softwares
+[7:38.64] together and gets it easy for you to do,
+[7:40.32] right? So that's kind of how buddy comes
+[7:41.92] in uh in the place. I can talk about use
+[7:43.84] cases, but you can guide me where to go.
+[7:46.24] >> Yeah, I think let's dive into the the
+[7:47.60] use cases uh buddy. So obviously one of
+[7:51.04] our biggest use case right is helping
+[7:54.08] sales people in these communities manage
+[7:56.16] their cold or colder leads right what
+[7:58.24] that means is that so in some sense the
+[8:01.04] industry is I like calling it an
+[8:02.80] enterprise sale process why because if
+[8:04.80] you think about nowhere in consumer do
+[8:06.48] you have so many parties so many people
+[8:08.72] so long a length of sale right like even
+[8:10.96] if probably I think of the longest
+[8:12.32] decision you take is probably buying a
+[8:14.24] house or you know buying a car right
+[8:15.92] depending on those are probably the two
+[8:17.44] there still decisions you take over a
+[8:19.04] period of you know when you're really
+[8:20.24] going to decide you're going to it's a
+[8:22.00] six-month decision 3 month decision
+[8:23.84] something like that. So one is that's
+[8:25.04] the time horizon and the second horizon
+[8:27.04] is usually you'll ask your friend and
+[8:29.36] you'll ask you know like somebody else
+[8:30.56] about like hey which locality should I
+[8:32.40] buy the house or what what's your
+[8:33.76] experience with that car on both these
+[8:35.44] tangents and the time usually this
+[8:37.92] decision can average 3 to four years
+[8:39.92] right so it's like 5x longer than any
+[8:41.76] decision that does and on the second end
+[8:44.24] uh it's like everybody's involved in
+[8:45.68] your family you're not moving in right
+[8:47.04] like if you think about your tree if any
+[8:48.48] grandparent has told you like I have
+[8:50.16] seven kids and I have 24 grandchildren
+[8:53.04] everybody knows that you know you're
+[8:54.40] moving in. So they might not all be
+[8:56.00] involved but some way or the other
+[8:57.28] people are involved. So that's why I
+[8:58.56] really think of it as a enterprise sale
+[9:00.32] although it's called a consumer sale
+[9:01.92] right so while it is enterprise the
+[9:03.68] biggest challenge for a salesperson is
+[9:05.92] that on one tangent you have length and
+[9:07.84] you have all these people but any
+[9:09.28] saleserson is dealing with 500 to a
+[9:11.44] thousand open leads right and that's
+[9:13.52] where you know buddy comes in that says
+[9:15.52] hey you've got all of these people in
+[9:17.20] your database how who's who's the right
+[9:20.08] person you should follow up with when
+[9:21.44] should you do how can I quickly do all
+[9:23.12] the research you know like you would
+[9:24.48] have done 20 calls with these people
+[9:25.68] over the next two years so that's where
+[9:27.68] you know the digital teammates that
+[9:28.96] bodybuilds comes in. So the digital
+[9:30.96] teammate very simply does this which is
+[9:32.64] says starts at looks at your calendar
+[9:34.64] says hey you have some time here open
+[9:36.88] let me go find people that you should
+[9:39.20] reach out to goes digs through the
+[9:41.04] database finds the people then doesn't
+[9:43.28] stop there says says okay what is my
+[9:45.52] best practices as a as a company right
+[9:47.60] like who are the people I can help at
+[9:49.28] which stage they are finds those people
+[9:51.44] does research on all the calls
+[9:53.12] transcripts that have been read for
+[9:54.56] those people and comes back and says hey
+[9:56.80] here you go and it's the simplicity of
+[9:58.56] it you get an email which says I found
+[10:00.32] this time in your calendar this week and
+[10:02.16] I just set up a call. If you find time,
+[10:04.00] why don't you give this person a call?
+[10:05.44] Why don't you do a home visit? Uh
+[10:07.12] whatever that is.
+[10:08.80] >> So basically this AI teammate you can
+[10:11.36] say act as a highly specialized EA to to
+[10:14.32] each one of the sales person.
+[10:16.16] >> Uh interesting. So we like calling it as
+[10:18.00] a teammate more than assistant. And
+[10:19.84] there's very specific reasons for this
+[10:21.68] right. So when you think of a assistant,
+[10:24.00] assistant is something that a person can
+[10:25.92] delegate task to, right? uh our
+[10:28.16] teammates actually work for the central
+[10:30.56] like the head of sales or the regional
+[10:32.16] sales heads uh they work with the
+[10:34.56] salesperson and it's a very thin space
+[10:36.72] because if you think about it like what
+[10:38.24] we can't do with these digital teammates
+[10:39.92] is you can't as a salesp person I can't
+[10:41.60] assign them task it's like hey next week
+[10:43.12] I want you to do this right you can't do
+[10:45.12] that right what these this is truly you
+[10:48.40] know in the AI land this is truly where
+[10:50.56] a job function or role is defined for
+[10:52.48] the digital worker right and they learn
+[10:54.16] and become better but they do that every
+[10:56.64] week right so if Think about it. A
+[10:58.32] salesperson has a role. Same way this
+[11:00.24] digital teammate has a role. Hey, you
+[11:01.76] are supposed to research leads and you
+[11:03.60] are supposed to assign them for
+[11:05.04] salespeople. That role does not change
+[11:07.44] or evolve based on the saleserson.
+[11:09.36] That's why it's not a assistant. It's a
+[11:11.12] teammate, right? Who's doing this bit
+[11:12.88] and going back and forth with
+[11:14.00] >> very well summarized because as a
+[11:15.36] saleserson I cannot tell buddy what to
+[11:17.44] do. Buddy does it because it has a role
+[11:20.48] >> and you know you we have use cases where
+[11:22.48] for example let's say the digital
+[11:24.56] teammate in their case, right? So every
+[11:26.00] digital teammate that as you know is
+[11:28.08] unique to the to the operator right so
+[11:30.32] we have operators where there's the
+[11:32.16] there's a joy there's a dissa there's
+[11:33.76] harmony there is you know there are all
+[11:35.20] digital workers who are unique to that
+[11:36.88] operator every digital worker right
+[11:39.44] there there is that digital worker has a
+[11:42.08] role part of those roles could be
+[11:43.52] helping the saleserson do certain tasks
+[11:45.20] right for example hey can you go
+[11:46.64] research these things but the way it
+[11:48.32] works is when you ask a digital teammate
+[11:50.64] saleserson asks a digital teammate for
+[11:52.24] help the digital teammate is enabled to
+[11:54.16] say hey I don't know how to do that. So
+[11:56.00] it's not, you know, it's not an
+[11:56.96] assistant, it's not a chatbot, right?
+[11:58.48] There's no way to chat with it in that
+[11:59.92] sense, right? You can go and you can
+[12:01.36] email it, you can send a Slack message,
+[12:03.20] but it's not live chatting, right? Like
+[12:04.48] if you think about you don't chat uh
+[12:06.24] with a teammate. That's where the
+[12:07.68] difference comes.
+[12:08.40] >> So buddy exists right now, right? But
+[12:11.60] without buddy, how are these sales folks
+[12:13.20] doing their work?
+[12:14.72] >> So I would say the way pre-buddy how
+[12:17.76] sales people did their work was a lot of
+[12:19.76] like task creation, right? So they'll
+[12:21.52] try to create reminders. So think of it
+[12:23.44] as whenever a lead new lead will come
+[12:25.52] in. So the first couple of weeks
+[12:26.80] obviously you would interact with them
+[12:27.92] you'll find out but after that you would
+[12:29.76] set up a reminder for yourself that hey
+[12:32.24] I need to call this person after 3
+[12:33.68] months. So as a result what ends up
+[12:35.28] happening a lot is then a salesperson
+[12:37.52] usually has 100 to 200 overdue tasks and
+[12:40.64] I'm telling you the low numbers but
+[12:42.00] they're just creating a lot of tasks in
+[12:43.60] the future to be able to remember to
+[12:45.52] call this person in and they're moving
+[12:46.96] that around. That's kind of how I would
+[12:48.64] say this use case of cold leads has been
+[12:50.24] happen handled. But do seniors come
+[12:52.48] inbound in this industry? Let's say a
+[12:55.28] for a grandparent their kids or
+[12:57.60] grandkids would call like five different
+[12:59.52] senior care homes, visit those and then
+[13:01.60] there's a almost like a year of
+[13:03.20] follow-up with these homes or is it like
+[13:05.84] more like the sales people are reaching
+[13:07.36] outbound to these folks?
+[13:09.28] >> Um I mean I would say 99% of the cases
+[13:11.84] it's inbound, right, that you're doing
+[13:13.76] right now. You might have cold you don't
+[13:15.92] cold call at all. I think that's that'll
+[13:18.08] be very rare, but you could send like
+[13:19.84] postcards out and you could have ads out
+[13:22.24] there. So, you know, if people are warm,
+[13:23.92] they might call in, but you definitely
+[13:25.60] don't call, you know, you're barely able
+[13:27.44] to keep up with the people who call in,
+[13:29.36] right? So, you don't do the only thing
+[13:30.56] I'll correct is like as you said, it's
+[13:32.00] it is like not a year, it's like two
+[13:33.84] three years, right? So, it's like
+[13:34.80] depends on you might come into the CRM,
+[13:37.60] right? And then you might have moved in
+[13:38.72] in a year, but you could be looking at
+[13:40.24] senior homes or researching them online
+[13:42.08] for a couple of years, starting to think
+[13:43.84] about it. So, that's kind of how how it
+[13:45.60] comes in. Understood. And and for a
+[13:47.52] senior as we discussed earlier the
+[13:49.28] decision is not just like the social
+[13:51.36] need but also financially because let's
+[13:52.72] say they are 60 61 and they're cons now
+[13:54.72] the age spans are also increasing right
+[13:56.24] 80 or 90 year old is a common thing. So
+[13:58.48] they're thinking say 100k per year it's
+[14:00.48] almost like a 2 to3 million decision for
+[14:02.72] them if they're going to live like for
+[14:03.84] the next 20 30 years.
+[14:04.88] >> Sure that is I mean so touchwood there's
+[14:08.08] lots of like you know some could have
+[14:09.92] long-term care insurance which could
+[14:11.68] cover it. Some have savings. A lot of
+[14:13.76] them also have to go through that, you
+[14:15.04] know, they've saved for this for a long
+[14:16.48] time, right? And obviously, you know,
+[14:18.16] like it depends on which part of the
+[14:20.32] country you live at, right? If you're on
+[14:21.52] the coast, yeah, you're probably in that
+[14:23.12] price range, but there's a lot of
+[14:24.80] Midwest. There's like, you know, there
+[14:26.16] is like you can start at 30 $40,000 also
+[14:29.20] in terms of independent care. But, you
+[14:30.88] know, interestingly, um, what I've
+[14:32.72] learned is that it's usually
+[14:34.24] costneutral, right? It's not like it's
+[14:36.24] necessarily costing you more because you
+[14:38.64] are already living in a house. So the
+[14:40.08] house has equity value right as a as a
+[14:42.64] house is of a certain size you are
+[14:44.40] paying lawn you know the lawn care the
+[14:46.40] pest control the annual fire check you
+[14:49.12] know like you have a lot of expenses
+[14:50.72] which go away right that cost includes
+[14:53.60] like you know it's funny how when people
+[14:55.52] come into the industry or inquire
+[14:58.00] seniors inquire they usually start with
+[14:59.84] like okay what all is included and a lot
+[15:01.60] of the providers are like hey let's not
+[15:03.52] talk about that let's talk about what's
+[15:04.80] not included right because you have tons
+[15:06.88] of stuff which is you don't like you
+[15:08.40] know you don't think about like how How
+[15:09.44] much do groceries cost? How much does
+[15:11.12] maintenance of the stuff cost? All that
+[15:12.88] stuff is kind of part of it. So yeah, it
+[15:15.68] is a financial decision, right? Uh and
+[15:18.00] not everybody can afford it. But in some
+[15:20.00] sense, it's not something which is like
+[15:21.36] it's not a luxury buy. I want to, you
+[15:23.44] know, if you have a lot of money, you
+[15:24.80] can, you know, live in an amazing cruise
+[15:26.80] ship kind environment. So you can spend
+[15:28.32] up, but it is truly in this range of a
+[15:30.96] lot. People can afford it way more than
+[15:32.48] people who move in today. As a founder,
+[15:34.40] how did you choose among the various
+[15:36.16] problems that you could solve to only
+[15:37.76] focus on this problem and among the use
+[15:39.92] cases that you could solve to focus on
+[15:41.60] the sales use case?
+[15:43.04] >> Sure. I think uh I mean as you know this
+[15:46.08] sedat I think for me firstly I'm a much
+[15:47.84] more of interest of picking an industry
+[15:50.56] where you know so I think industry comes
+[15:52.00] first to pick than the problem right
+[15:53.60] because I think every industry unless
+[15:55.52] you invest the time spend the time in
+[15:57.36] the industry you don't find the you
+[15:59.20] might have whatever opinions that this
+[16:00.64] industry needs this right so I would say
+[16:02.56] obviously we pick the industry and we
+[16:04.16] think senior living as at the
+[16:05.60] intersection of hospitality healthcare
+[16:08.72] uh and real estate right is was a good
+[16:10.96] intersection and an industry worth
+[16:12.88] investing time in uh on the use case
+[16:14.96] I'll say obviously we had some going in
+[16:17.12] theories of you know like these would be
+[16:18.80] use cases we understand and sales and
+[16:20.72] marketing specifically I think when it
+[16:22.40] comes to enterprise sales and marketing
+[16:24.24] problems we I obviously experienced that
+[16:26.00] at buddyart myself right and going
+[16:28.16] through that whole growth of you know
+[16:30.16] doubling literally doubling your revenue
+[16:31.52] every quarter and doing all of that
+[16:33.04] stuff you get very deep into what kind
+[16:34.64] of sales and marketing tools are there
+[16:35.92] and and that kind of got me convinced on
+[16:38.00] the thought of like even before the
+[16:39.44] industry that this problem is truly a
+[16:42.48] problem which needs to be solved for an
+[16:43.76] organization and you can't solve it for
+[16:46.00] a industry or you know for everybody.
+[16:47.84] That's why you know like as as you and I
+[16:49.68] have talked about I feel like this is
+[16:51.12] not a problem that a CRM provider can
+[16:52.88] solve. This is a problem because you
+[16:54.16] want to build these solutions. Every
+[16:56.48] company operator is firstly unique in
+[16:58.64] the tech stack right so it's like it's
+[17:00.32] easy to say yes everything integrates to
+[17:02.00] each other but there are nuances of like
+[17:04.00] you know somebody uses some part of
+[17:06.00] marketing software for something
+[17:07.28] something you know like your your
+[17:08.80] stitching together of your stack is
+[17:10.88] truly unique. That's one and the second
+[17:13.04] thing is every operator's like you know
+[17:15.20] the head of sales kind of like direction
+[17:17.28] or marketing direction is very
+[17:18.64] different. So you there's no two people
+[17:20.56] who like they're similar but very
+[17:22.16] different right. So so I really
+[17:23.92] obviously were uh you know like had that
+[17:26.00] experience of like what are challenges
+[17:27.44] in sales and marketing but biggest
+[17:28.80] experience I had was what's why it needs
+[17:31.20] to be built for a particular uh
+[17:33.52] operator. So we've always been operator
+[17:35.68] focused then or a user focus then being
+[17:38.48] an industry or a source focus. That's
+[17:40.40] why you know when we like no UIUX why
+[17:42.64] did we pick that because we said okay
+[17:44.40] either we can build a UIUX for every
+[17:46.40] company right or we can choose to not
+[17:48.48] build at all and we felt like it's so
+[17:50.24] much better to not build anything
+[17:51.36] because then you don't have to train
+[17:52.40] people for how do you use this new piece
+[17:54.08] of software
+[17:55.28] >> and uh in your case specifically uh are
+[17:58.32] you limited by what the digital uh
+[18:00.64] worker ta digital teammate can do by the
+[18:03.12] hygiene the people have there in the CRM
+[18:04.88] and related tools?
+[18:06.56] >> Not not at all.
+[18:07.84] Um
+[18:09.92] I I'll tell you in this I feel like this
+[18:12.00] is more coming out of experience than
+[18:14.24] because obviously as all of us AI
+[18:16.56] founders right we we all have this
+[18:18.32] theory going in and you know but I would
+[18:20.56] say the beauty with AI and I would say
+[18:22.32] beauty with us was like I mean we the
+[18:24.00] results prove it that no it's okay you
+[18:25.92] don't like you know you don't need that
+[18:27.60] higher hygiene because see even what
+[18:29.60] does even high hygiene mean right like I
+[18:31.36] mean a lot of people talk about this
+[18:32.56] like there's this whole I cannot tell
+[18:34.48] you the number of times people quote the
+[18:36.16] whole Garbage in garbage out right all
+[18:38.64] of that. So I mean don't get me wrong it
+[18:40.48] doesn't mean that data should not be
+[18:42.72] wellmaintained and you didn't but like
+[18:44.32] we're living in the real world right in
+[18:45.76] the real world it is going software you
+[18:48.16] know all your data is going to be
+[18:49.52] convoluted generation in and they do a
+[18:53.28] fabulous job at like you know and done
+[18:55.44] and one thing we learned which is I
+[18:57.12] would say going in was a surprise in is
+[18:59.52] once you start working once you start
+[19:01.44] working with digital workers you
+[19:03.20] actually start improving your data just
+[19:04.72] naturally. So we have so many sales
+[19:06.72] people that go in and leave like you
+[19:08.24] know let's say the additional worker is
+[19:09.84] harmony and they'll be like hey how many
+[19:12.00] I didn't say this but this is something
+[19:13.28] additional here are additional notes
+[19:14.88] because see um for decades almost I
+[19:19.04] think now leaders have said hey leave
+[19:21.60] good notes in there leave good stuff in
+[19:23.68] it right but there was no incentive for
+[19:25.52] this the actual user to leave good data
+[19:28.08] for themselves right it was a very
+[19:29.60] long-winded good benefit and I I'll go
+[19:31.60] on a tangent it was almost like saying
+[19:33.20] eat healthy it's it's really important
+[19:35.04] to eat healthy. Yeah, we all know that.
+[19:36.40] But like there's no like feedback loop
+[19:38.48] on it, right? Once you have a digital
+[19:40.08] teammate that you work along with, you
+[19:42.00] directly start seeing the benefits of
+[19:43.52] like, hey, if I leave a good note here,
+[19:45.60] the the teammate, she she'll come back
+[19:47.44] and she'll actually know more context or
+[19:48.96] she'll help me with this.
+[19:50.00] >> Right. You are right.
+[19:51.68] >> But have you entered a scenario where
+[19:52.96] there's zero CRM?
+[19:55.04] >> No, I don't think I think CRM are core
+[19:56.96] like all the software are core, right?
+[19:59.20] Some record keeping are core. So I don't
+[20:01.28] think there's a scenario of zero CRM if
+[20:03.36] you
+[20:03.84] >> like people should have invested some
+[20:05.60] something in their digital tool tooling
+[20:07.52] >> for sure
+[20:08.08] >> for sure like it's not like they're
+[20:09.36] maintaining their records on Excel. No
+[20:11.36] and that's where we don't become
+[20:12.80] applicable right but I think I can talk
+[20:15.44] for the US for sure right like there
+[20:17.52] very few industries like you know you
+[20:19.04] still might have an industry where 20%
+[20:20.64] is still on excel and paperwork but they
+[20:23.36] are using some kind of like we should
+[20:24.88] from outside in we might think of it as
+[20:26.32] like backward and this thing but I don't
+[20:27.76] think there are any industries left
+[20:29.60] where people are not you know like you
+[20:31.12] can talk from obviously our industry
+[20:32.96] senior living but you can talk about
+[20:34.24] from a dentist uh you know front office
+[20:36.80] back office to you know like your
+[20:38.56] plumber to I mean you can go to like any
+[20:41.44] industry which you might think uh is
+[20:43.28] like oh that'll be a very backward
+[20:44.40] industry everyone has invested because
+[20:45.84] labor is very expensive so you want to
+[20:47.52] you would invest in some tools to be
+[20:49.44] able to make it
+[20:50.08] >> so so as a founder how do you say that
+[20:53.20] this industry you you find your own
+[20:55.20] founder market fit
+[20:56.40] >> mhm mhm so I would say um so that I've
+[21:00.32] come across two kinds of founders right
+[21:02.00] so and that's why I would say all
+[21:03.60] answers I give are on my archetype and
+[21:06.24] I'll explain those two right so there's
+[21:07.44] like two kinds of archetypes of founders
+[21:09.04] certain founders are of the archetype of
+[21:11.12] they fall in love with a problem, right?
+[21:13.20] And then they try to find an industry or
+[21:14.96] industries where they can apply this.
+[21:16.64] That's one archetype. And a second
+[21:18.08] archetype are people who fall in love
+[21:20.00] with the industry or you know like like
+[21:21.68] investing and learning about industry
+[21:23.52] and spending time in it. Right? So I am
+[21:25.52] of the second archetype and that's why
+[21:27.20] for me I'm not that tied to the problem.
+[21:28.80] I'll tie to the industry you know and I
+[21:31.04] always say like we've talked about this
+[21:32.88] that obviously a successful founder has
+[21:35.12] to pivot. If they don't pivot you know
+[21:36.72] then you're dead in water anyways.
+[21:38.24] Right? Now what you pivot on matters a
+[21:40.00] lot right? So the first archetype when
+[21:41.44] you're tied on a problem they will
+[21:43.12] usually pivot through industries right
+[21:45.12] and I'm not that archetype so I don't
+[21:46.40] even understand how they work but I'm of
+[21:47.92] the second archetype where you pick an
+[21:49.76] industry and you pivot on product all
+[21:51.20] day long right like you don't actually
+[21:52.64] care right so so to your question in
+[21:54.88] like you know I think I'll go through
+[21:56.16] use cases I'll talk to people let the
+[21:58.16] customers like you know they're experts
+[21:59.76] in their field you don't need to tell
+[22:00.88] them what the problems are you just need
+[22:02.24] to discover learn have the empathy to
+[22:04.40] you know like learn and care about their
+[22:06.00] problems that's what I would say
+[22:07.44] >> and one very you know interesting thing
+[22:09.20] especially in the AI Many industries
+[22:10.96] start as fully human like all these
+[22:12.72] factories right
+[22:14.16] >> and then they become tech enabled
+[22:16.08] >> and [clears throat] now these are
+[22:16.96] becoming fully automated let's say today
+[22:18.32] dark factories in China
+[22:20.56] >> where there is no light right because
+[22:22.08] machines don't need light to to function
+[22:23.84] >> sure
+[22:24.48] >> uh do you think this senior care living
+[22:26.88] industry is on that path uh and how
+[22:30.48] would buddy evolve along with it
+[22:32.48] >> so so that I mean I let me say this I it
+[22:36.00] might be controversial but I don't
+[22:37.92] believe in this whole like I don't even
+[22:40.00] believe that any industry is truly dark
+[22:42.40] timeout, right? And and I think
+[22:43.76] touchwood like I I have the credibility
+[22:45.36] to say it with some you know like we
+[22:47.20] have uh tens of thousands of robots
+[22:49.44] deployed so you know like and and I
+[22:51.12] would tell you for years people would
+[22:52.32] tell me this thing of like oh lights out
+[22:54.40] we you know it's like it's probably the
+[22:56.32] pursuit of lights out it's a kind of the
+[22:58.16] pursuit of that but there is no scenario
+[23:00.64] of like lights out uh in any case right
+[23:03.60] so let's talk about it right what it
+[23:05.52] means is there are certainly certain use
+[23:08.16] cases where it becomes so highly
+[23:10.48] repetitive right like you're I And phone
+[23:13.04] manufacturing is a good example. You're
+[23:14.48] like same thing you're going to go make
+[23:16.48] it. But even in phone manufacturing,
+[23:17.76] right? The model changes every two
+[23:19.36] years, right? So you actually have a lot
+[23:21.44] of human work that happens to set it up
+[23:23.52] and then sure for 6 months, you know, it
+[23:25.44] might run dark. But now in specifically
+[23:27.44] in senior living, right, every it is a
+[23:30.40] very high service touch, right? There
+[23:32.00] are like every senior's life journey is
+[23:34.16] unique, right? The service provided to
+[23:36.32] them is unique, right? there is like
+[23:38.24] these facilities have tons of people
+[23:40.08] providing service providing everything
+[23:41.84] from food cleaning maintaining sales all
+[23:44.64] of that so I don't think senior living
+[23:46.64] as an industry is headed towards you
+[23:48.96] know like lights out facilities or so
+[23:50.80] but having said that I don't think any
+[23:52.08] industry even in the industry I was in
+[23:53.84] previously which is supply chain where
+[23:55.28] everybody's like hey lights out there
+[23:57.52] are a lot of human beings in there and
+[23:59.52] and there's no problem with that right
+[24:01.36] if you think about it like we have all
+[24:03.28] the AI craze right now of like all jobs
+[24:05.84] will be removed and everything Well, I
+[24:07.84] mean sure I mean that's what we all do
+[24:09.12] as human beings every every 20 30 years
+[24:11.36] when a new tech comes in right but it
+[24:13.28] just means that you know there are parts
+[24:14.56] of our workflow which you know become
+[24:16.80] automated if you think about like you
+[24:18.08] know before computers come in right I
+[24:20.32] don't know how many people love doing
+[24:21.52] mental maths right of like oh I do
+[24:23.36] mental maths on this right it was a big
+[24:25.20] hindrance very less people could do a
+[24:26.72] lot of the jobs we do take for granted
+[24:28.80] we are like because there's a calculator
+[24:30.16] so before you know like that came in and
+[24:31.76] then obviously the computer and then the
+[24:33.12] internet so I feel like any industry
+[24:35.60] there are parts of the work that become
+[24:38.08] repetitive nonvalue added and the same
+[24:39.76] is going to happen with AI parts of the
+[24:41.44] work will become repetitive will become
+[24:43.68] uh you know those uh is just the
+[24:46.56] industry grows and human beings have a
+[24:47.92] lot of stuff to do in any industry
+[24:50.16] >> and what did you underestimate about
+[24:51.52] this market when you started it I
+[24:52.80] remember you going to a lot of
+[24:53.76] conferences to discover this industry
+[24:55.60] >> sure
+[24:58.96] I I would say I the thing that I didn't
+[25:02.24] probably appreciate enough going in was
+[25:05.36] how
+[25:06.64] So you know like this industry from
+[25:08.00] outside when you look at it right these
+[25:09.52] are like okay you're talking about a
+[25:11.20] senior living house or home uh somebody
+[25:14.00] owns that facility or somebody owns that
+[25:15.92] senior living u apartment uh location uh
+[25:19.36] what I underestimated was the fact that
+[25:21.20] there is like on the back end there's a
+[25:23.20] whole real estate angle of this right so
+[25:25.12] there is a group of owners that own a a
+[25:27.36] property so how unique every facility is
+[25:29.92] right and actually I shouldn't even use
+[25:31.28] the word facility but how unique every
+[25:33.28] senior living location is uh that
+[25:35.52] probably I I underestimated right of
+[25:37.60] like there are different owner groups
+[25:38.96] there's different everything is a REIT
+[25:40.40] so there's like multiple people who come
+[25:41.84] in they own that the operator might be
+[25:44.00] different but that's there so that's
+[25:45.68] been a good journey of like how do you
+[25:47.52] how do you maximize returns for the end
+[25:49.44] owners are not the same people operating
+[25:51.44] is probably the the place to to start
+[25:54.16] thinking about and how every uh senior
+[25:56.56] living home is is unique in that sense
+[25:58.56] >> and which are the largest name in this
+[25:59.84] industry like in terms of let's say if
+[26:01.44] you think about hotel industry you think
+[26:03.04] about Marriott you think about Hilton
+[26:04.72] you think or a few other names.
+[26:06.48] >> So I mean by by size you know like
+[26:08.72] you'll have you'll have the Brookdale
+[26:10.08] Dales of the world and you'll have the
+[26:11.84] Ericsons of the home. So there's there
+[26:13.68] but it's a very very longtail you know.
+[26:15.52] So obviously the the the Brookdale Dales
+[26:17.52] and those would be like 7800 facilities
+[26:19.68] or homes but I would say it is a very
+[26:22.24] longtail industry. So it's not like it's
+[26:24.88] definitely not like how hotel industry
+[26:26.48] of like hey Marriott or Hilton two or
+[26:29.28] three have have like consolidated that.
+[26:32.00] And that's not necessarily a bad thing
+[26:33.44] by the way. I think uh there is value in
+[26:35.52] standardizing and adding in but there's
+[26:37.60] also value in you know like being much
+[26:39.52] more it's a very high touch service uh
+[26:41.44] industry. So this is much more service
+[26:43.68] than a hotel industry. I believe
+[26:45.28] >> massively more service than a hotel
+[26:46.80] industry
+[26:47.12] >> because when we started the podcast you
+[26:49.44] said it's a intersection of three
+[26:50.56] industry. One is hospitality other is
+[26:52.48] healthcare and there was one more
+[26:54.24] >> hospitality, healthcare and real estate.
+[26:55.60] >> Real estate right? So in even in
+[26:57.60] hospitality like how is real estate and
+[27:00.00] >> uh hospitality is common but it doesn't
+[27:02.16] add healthare.
+[27:02.96] >> Yeah it's a different so I mean there
+[27:05.12] are a lot of uh you know like 50% of the
+[27:07.12] industry or 40% of the industry will not
+[27:08.72] have any healthcare by the way in the in
+[27:10.40] the home. So it's not it's intersection
+[27:12.32] but having said that it's like
+[27:13.84] hospitality also but like think of it as
+[27:16.08] in a hotel the the restaurant is
+[27:20.00] probably used by 5% of the people who
+[27:22.00] live there right so it's important to
+[27:23.44] have but the utilization is 5% right at
+[27:27.28] the minimum right one meal is
+[27:29.20] everybody's eating there
+[27:30.08] >> yeah the breakfast is there
+[27:31.20] >> right like breakfast is there right most
+[27:33.20] likely most facilities will average
+[27:34.72] actually two two facilities right so
+[27:36.48] think from a chef and a cook point of
+[27:38.16] view you are always cooking food and do
+[27:40.80] it right and then uh you go to a hotel
+[27:43.76] right for like vacation on a holiday
+[27:46.32] this thing in right you don't actually
+[27:48.00] as a chef you don't have to care that
+[27:49.36] much about like are they eating healthy
+[27:51.20] right are am I taking care are they
+[27:52.72] getting variety is there good protein
+[27:54.56] content to this thing you know so here
+[27:56.88] the chef has to make sure people are
+[27:58.32] happy with the food right but he's also
+[28:00.48] taking care of like hey I'm like I'm I
+[28:02.40] control all the nutrition they're
+[28:03.68] getting right I have to make sure that
+[28:05.44] they're doing so that's it's not
+[28:07.44] healthcare technically right like you're
+[28:09.12] taking care of what food your residents
+[28:10.40] are eating but it is healthcare right
+[28:11.68] because you are you care and you want to
+[28:13.60] make sure you I'm not overfeeding on you
+[28:15.68] know desserts or doing whereas what do
+[28:17.20] you think a restaurant does it's like
+[28:18.48] hey just put all the sugary items all
+[28:20.40] the highfat items we want them to spend
+[28:22.24] their money here
+[28:23.68] >> right here it's that's why it's
+[28:25.76] >> the incentives are completely different
+[28:27.28] >> completely different right and and it's
+[28:29.28] like the jobs of chefs are are way more
+[28:31.76] complex they're much more senior
+[28:33.04] positions they you know like chef is
+[28:34.88] probably one of the most key anchor
+[28:36.72] right and then think of the same thing
+[28:38.00] as uh the activities director in this
+[28:40.24] right exactly same different in activity
+[28:42.56] directors have to go through you know so
+[28:44.08] right now a lot of people who live in
+[28:45.68] these homes are baby boomers right so
+[28:48.72] now you have to go through like okay
+[28:50.08] this is what baby boomers interests are
+[28:51.68] this is what the next generation wants I
+[28:53.60] should do more uh you know koke classes
+[28:55.60] and I should do more pottery classes
+[28:57.52] they like doing more those things in
+[28:59.44] whereas some people needed more uh you
+[29:01.44] know let's do Bible service and let's do
+[29:03.68] so it's I mean I can go on and on about
+[29:05.68] it but it's a pretty it's intense uh
+[29:08.00] >> the first company that You started you
+[29:09.76] almost spent 15 years building it.
+[29:11.20] >> Mhm.
+[29:11.36] >> Mhm.
+[29:11.68] >> Am I right?
+[29:12.88] >> 12.
+[29:13.20] >> 12 13 years building it. You you you
+[29:15.36] became like one point of time one of the
+[29:17.04] most valuable companies or the top 25
+[29:18.88] valuable private companies in India
+[29:20.72] >> rare companies to cross 100 million in
+[29:22.40] revenues and now you are what 37 38 or
+[29:25.12] 40.
+[29:25.60] >> Yeah.
+[29:26.08] >> Right. So now what I get a feeling from
+[29:27.60] you every time I try you are in this for
+[29:29.20] a very long time. So what excites you
+[29:31.68] like because you're a founder that has
+[29:33.84] already achieved massive success in a
+[29:35.52] previous Avar, right? You could have
+[29:37.52] created data centers. [laughter]
+[29:39.84] Um I mean firstly I think I I always
+[29:42.40] like saying it to myself. It's like I
+[29:44.00] did all of that stuff but who cares,
+[29:45.84] right? Like what I mean by that is see
+[29:47.52] at the end of the day you have to find
+[29:49.68] happiness every day as a human being,
+[29:51.76] right? So it's like yeah I know I've
+[29:53.04] done all of that and did but in some
+[29:55.04] sense you have to enjoy what you do on a
+[29:56.64] dayto-day, right? I love the learning
+[29:58.24] aspect of it, right? So obviously on one
+[30:00.32] end AI is a lot of fun right but on the
+[30:02.48] other end of like how do you you know
+[30:04.08] it's senior living as an industry it's
+[30:05.92] got all of its idiosyncrasies uniqueness
+[30:09.28] you know stuff that you learn so I I
+[30:11.28] love it for the learning curve and I'm
+[30:13.04] uh I I always whenever whether it was in
+[30:15.68] supply chain logistics and now it's in
+[30:17.12] senior living I attach a lot with like
+[30:18.88] hey uh treat your customer's company as
+[30:21.36] yours and then automatically the
+[30:23.68] customer will treat your company as
+[30:25.04] theirs right so I really live and
+[30:26.96] breathe that so I like with the
+[30:28.64] customers I partner in you know whether
+[30:30.40] it was at Gree Orange it's right now I
+[30:32.48] am probably more stringent on ROI than a
+[30:34.72] lot of customers might be right and
+[30:36.00] which is like the only way I operate I'm
+[30:38.16] like why do we have to do that right and
+[30:39.68] and sure like you know some customers
+[30:41.04] will be like because I'm paying you
+[30:42.08] money to do it yeah sure I'll do it but
+[30:43.60] like convince me why we need to do it so
+[30:45.92] so I think for me that's why I really
+[30:47.44] enjoy and that's why you have to spend
+[30:48.80] the time in the industry so that's I
+[30:52.16] mean
+[30:52.48] >> yeah and as a founder what I observed is
+[30:54.00] you you you took head-on two very
+[30:56.32] difficult industries uh
+[30:58.32] >> they are I unique I don't know I mean I
+[31:01.36] don't know uh let me say this in a
+[31:03.36] different way so that I don't know what
+[31:05.12] is easy by the way like you know like
+[31:06.64] everything is tough right like it's like
+[31:08.16] when I talk to founders who ask me for
+[31:09.92] advice on like you know like industry or
+[31:11.60] this thing is like I was like if you
+[31:12.96] want it easy why are you starting like
+[31:14.24] you know it's like you're in the wrong
+[31:16.96] wrong profession right and I truly take
+[31:19.36] entrepreneurship as a profession right
+[31:20.72] so that's why I take that as a
+[31:22.00] profession
+[31:22.48] >> what do you mean by that
+[31:23.76] >> I mean I think you you learning about
+[31:25.68] the industry you changing hats you
+[31:27.60] needing to not you you know like it's a
+[31:29.84] it's just like any other job role right
+[31:31.44] like if you have a job role where you
+[31:32.80] know like you're going to do something I
+[31:34.40] think entrepreneurship is a job role of
+[31:36.32] like you need to keep changing I call it
+[31:38.48] as like rabbit holes like sometimes
+[31:39.76] you're going to go into rabbit hole of
+[31:41.04] like you know HR rabbit holes to
+[31:42.64] industry to fundraising and so as a
+[31:44.80] professional you should be comfortable
+[31:46.40] with ambiguity you should be comfortable
+[31:47.92] with learning a lot of stuff and and I
+[31:50.00] you know I feel like that's what you
+[31:51.20] learn and I would say even in gorge when
+[31:52.80] you know if you've you're doing
+[31:54.00] something and touchwood I feel like the
+[31:55.76] only reason they become successful is
+[31:57.20] because you spend the time in doing. So
+[31:59.76] it's easy to say I spent uh 12 years in
+[32:02.72] Gree Orange and there was one journey.
+[32:04.48] I'd say that was at least four journeys
+[32:06.24] right for me and I don't even by the way
+[32:07.92] like lot of people like who've done
+[32:09.44] research on me might know this but I
+[32:10.96] don't even call Gree orange as my first
+[32:12.32] startup you know I was building humanoid
+[32:14.08] robots before that for four years five
+[32:15.76] years which I call as my first startup
+[32:17.52] because you know imagine like this is
+[32:19.44] 2003s fours we built the first humanoid
+[32:21.60] robots in India the world only had four
+[32:23.60] or five teams building humanoid robots
+[32:25.84] right so everything from how do you
+[32:27.68] procure parts to fundraising do it at
+[32:30.64] you know in a college setting you can't
+[32:32.40] don't hire people you do so it's like I
+[32:33.84] call that as my first startup. Then I
+[32:35.36] would say Gree Orange has probably
+[32:36.96] definitely distinct three three or four
+[32:39.92] journeys, right? There's the whole
+[32:41.12] journey which is pre pre- US journey and
+[32:43.84] then we became US first and then we
+[32:45.52] became software first, right? So those
+[32:47.36] are like massive journeys that you go
+[32:49.28] through. So I feel like that's the
+[32:50.72] that's the that's a profession. That's
+[32:52.16] what I mean by entrepreneurship being a
+[32:53.76] profession. And it's fair for people to
+[32:56.48] you know like try it out like you try
+[32:57.84] any profession out but I feel like too
+[32:59.76] many people come into the industry of
+[33:01.28] like hey we are just going to come into
+[33:03.28] this industry and there's the initial
+[33:04.80] struggle we'll go through to figure out
+[33:06.16] the market industry but then it'll get
+[33:08.32] used to the same corporate job I had
+[33:10.16] before and at least I don't think if you
+[33:12.40] want to build a successful company
+[33:14.08] you're always going through this loop
+[33:15.36] right like this problems of product
+[33:17.04] market fit you ask me right now or
+[33:19.12] anything else right they're not just
+[33:20.64] problems that you face at like the first
+[33:22.40] you face it at you know you face it for
+[33:23.84] the first million AR then you face it at
+[33:25.60] the next 10 million then you face it you
+[33:27.12] keep it's like you're always going if
+[33:29.20] you wake up um you know we talk about
+[33:30.88] this in the team we talk about it with a
+[33:32.48] lot of people granch also like it's like
+[33:34.80] if you face problems which are new right
+[33:37.20] congratulations right like you did
+[33:38.88] you're doing something right that's why
+[33:40.08] you're facing more and more problems and
+[33:41.84] you've earned the right to solve the
+[33:43.20] next problem so that's how I I take it
+[33:45.28] as it's that is the journey of like keep
+[33:47.84] keep breaking stuff and keep figuring
+[33:49.20] out new problems to solve
+[33:50.24] >> I think your WhatsApp status also says
+[33:51.60] that you know notifications are off
+[33:54.16] You love solving problems.
+[33:55.60] >> Yeah, it is all solving problems. Always
+[33:57.60] solving, right? You have to I mean, but
+[33:59.04] that's what I think genuinely is the
+[34:00.48] profession of entrepreneur, right? Like
+[34:01.84] you are always solving problems because
+[34:04.24] see the the job is two parts, right?
+[34:06.48] Like it's like every problem you solve
+[34:08.80] creates a new problem and then you go
+[34:10.40] solve that problem, right? So if you
+[34:11.52] think imagine like what is growth growth
+[34:13.68] if you grow if you're solving the
+[34:14.96] problem of like hey how do I reach a
+[34:17.20] million dollars in ARR, right? If you
+[34:19.68] successfully solve that problem, right?
+[34:21.60] You created a whole new set of problems
+[34:23.28] of like okay first you obviously have
+[34:24.64] the problem of how do you now solve a
+[34:26.16] million to 10 million but then you also
+[34:27.76] solve of like hey how does the tech team
+[34:30.00] scale how does this you know like so
+[34:31.76] every time you solve a problem you are
+[34:33.60] creating another problem and if you
+[34:34.88] don't like solving problems it's a long
+[34:36.24] industry like so so you know long story
+[34:38.72] short to your question of like it's a
+[34:40.40] tough industry maybe but it's like you
+[34:43.04] choose your you choose your tough right
+[34:44.64] so it's like in that sense
+[34:45.92] >> and you feel for yourself that you want
+[34:48.72] to spend the peak of your career which
+[34:50.64] is for an entrepor know you start you're
+[34:51.84] a lifetime entrepreneur. You never did
+[34:53.28] anything else then being an entrepreneur
+[34:55.20] >> work for anybody.
+[34:56.08] >> Yeah. Yeah. So you want to spend your
+[34:58.48] 40s to 50s building this industry.
+[35:01.12] >> Yeah. So actually it's funny thing I
+[35:02.40] learned this in the industry after I
+[35:03.68] came in. So there was an interview for a
+[35:05.28] lady who was um some age and I'll tell
+[35:07.76] you the age later but she was being
+[35:09.04] interviewed right and she said uh hey my
+[35:11.60] um I learned this something that
+[35:13.52] somebody asked me my birthday and I said
+[35:15.04] I'm 17 and since then I've been 17.
+[35:17.60] Right. So, so and she was at that time
+[35:19.76] when the video was recorded, I think she
+[35:20.96] was 88 or something. And she said, you
+[35:22.48] know, I'm 17. So, I truly believe I'm 27
+[35:24.72] and I'm going to stay there. So, I don't
+[35:26.16] believe I'm in all those age groups. And
+[35:27.76] since I'm going to be in 27 for a very,
+[35:29.28] very long time, right? I have a lot of
+[35:30.80] industries to do and you know, like lots
+[35:32.88] of 10ear decades to be spent in a lot of
+[35:35.20] industries. So, that's kind of how I
+[35:36.32] think about it.
+[35:37.68] >> And right now, let's say from your
+[35:39.36] previous journey, what have you earned
+[35:41.20] as an entrepreneur and what have you
+[35:43.76] learning new right now?
+[35:46.40] Uh so this thing happened to me I would
+[35:50.00] say a couple of years ago already
+[35:51.36] probably towards like reorient and but
+[35:53.76] also it's like I don't take myself too
+[35:55.36] seriously. So I think that's a super
+[35:56.88] important thing to learn. So that's why
+[35:58.08] in that sense I don't have a lot of like
+[36:01.68] unlearning.
+[36:03.20] It doesn't mean that you don't unlearn
+[36:04.64] but what I mean is I don't get attached
+[36:06.40] anyways to like this is how we did it.
+[36:08.48] We solved that problem. We are just
+[36:09.76] going to rinse and repeat do this right.
+[36:12.24] I strongly believe in the concept that
+[36:14.00] our subconscious is getting trained
+[36:16.48] every time we do solve a new problem. So
+[36:18.48] you can't even help like not learn from
+[36:20.40] something. So you don't have to go about
+[36:22.32] the journey of like this work like that
+[36:24.16] click click click click right. So take
+[36:26.56] everything at its face value because
+[36:28.16] everything you know like can do. So in
+[36:29.84] some sense if you're on that truly
+[36:31.36] always learning curve. Um and don't take
+[36:34.80] your earlier self too seriously. you
+[36:36.64] don't have to like you know there's not
+[36:37.84] that bad baggage of unlearning like
+[36:40.48] I like you we have to change something
+[36:41.92] you say maybe it should be like this or
+[36:43.52] it didn't go that way okay sounds good
+[36:44.72] let's try something different out so
+[36:46.40] obviously that's that's probably more
+[36:48.40] this thing it's I would say there's one
+[36:50.64] thing uh my uh you know we as a team
+[36:53.60] really talk about is I would say the
+[36:55.60] first time when I was building reorient
+[36:56.96] for the first three four years I think I
+[36:58.88] ended up building more this is funny but
+[37:00.48] like I think I was trying to build more
+[37:02.56] a corporation because I was like oh how
+[37:04.64] will this structurally work how will at
+[37:06.24] work right and and becoming almost a
+[37:08.00] thousand people large and you know like
+[37:09.68] we had what uh we were present in 17 20
+[37:12.64] countries like you know like pretty
+[37:14.24] global this thing I can tell you even
+[37:15.76] all of that experience also now second
+[37:17.28] time around I should be probably more
+[37:18.48] biased I'm actually more less I'm like
+[37:20.24] hey we'll solve all of those problems
+[37:21.44] when when they come you don't need to
+[37:23.68] actually there's a there's a beauty and
+[37:25.52] nimleness that you can do when you're
+[37:27.52] small so you just have to do more of
+[37:29.28] that
+[37:30.48] >> and I always love you know talking about
+[37:32.08] that you have dog fooded buddy
+[37:34.88] >> say more what do you mean by that?
+[37:36.16] >> Yeah. Like you said that the buddy
+[37:38.08] internally whenever I visited you in
+[37:39.84] your office the buddies drop like you
+[37:41.60] getting used internally in the system.
+[37:44.32] >> Yeah. I mean I feel like uh I use the
+[37:46.80] analogy you know like that if you don't
+[37:48.40] drink your own Kool-Aid right then like
+[37:51.04] you're convincing other people to use
+[37:53.20] for your own sales team and you buddy is
+[37:54.72] placing task on your
+[37:56.16] >> calendar. Interesting. So we have two
+[37:57.36] digital workers inside buddy as a
+[37:59.36] company. So we have buddy and we have
+[38:00.88] harmony right? Harmony is actually our
+[38:03.12] sales and marketing digital worker.
+[38:05.28] Buddy is much more our implementation.
+[38:07.36] Uh so buddy actually builds the digital
+[38:09.04] workers. So it helps us build our
+[38:11.20] digital workers, manage our digital
+[38:12.48] workers with us, right? And harmony
+[38:14.40] actually comes into our sales and
+[38:15.92] marketing motions. And how many and
+[38:17.84] buddy have a handoffish motion? So we
+[38:20.40] absolutely have our own digital workers
+[38:22.40] and I mean otherwise like you know we're
+[38:24.40] hitting ourselves if we don't use
+[38:25.52] digital workers for ourselves. How would
+[38:26.96] we
+[38:27.84] >> So can you dive in more because you talk
+[38:29.44] about them so much like the digital
+[38:30.64] workers.
+[38:31.20] >> Mhm. And you you're speaking about them
+[38:32.96] as if they have the life of its own.
+[38:34.96] >> They do. Yeah. But uh
+[38:38.96] so just think about like you know you
+[38:40.48] you start depending on somebody doing
+[38:42.48] something, right? That's how we start
+[38:44.32] becoming dependent on on them to do
+[38:46.48] something, right? So for example, um you
+[38:48.56] know, we'll come off a call from a
+[38:50.80] customer and we'll talk a lot about
+[38:52.08] implementing. Let's say this is an
+[38:53.20] existing customer and we've talked a lot
+[38:54.64] about implementing. Hey um let's do
+[38:57.60] this. Let's change this workflow. let's
+[38:59.20] do this motion or your digital worker
+[39:00.64] should do this right uh buddy has the
+[39:02.64] first pass right so buddy like would
+[39:04.40] come back after a couple of hours and
+[39:06.16] say hey I'm thinking we need to modify
+[39:07.92] these job roles we need to do this thing
+[39:09.60] for this digital worker right so now if
+[39:11.68] I didn't have that I you get used to
+[39:13.28] that right like I can't even think about
+[39:14.72] like if you ask Naveen my co-founder and
+[39:17.28] you say you know like Naveen can you
+[39:19.12] actually assume buddy is not there I
+[39:21.20] mean he won't be he'd be like no I mean
+[39:23.20] no sure Naven trained Buddy and you know
+[39:25.44] like did all this but that's similar as
+[39:26.96] anybody else you add on your team you do
+[39:28.88] 90-day training and then do it or or you
+[39:31.68] know uh anybody in that sense you get
+[39:34.00] very used to digital workers. So in some
+[39:35.52] sense they are roles they do for you and
+[39:37.12] they repeat do for you and you get used
+[39:38.96] to them and there are a lot of things by
+[39:40.40] the way which you get used to them and
+[39:41.92] you don't worry about about them.
+[39:43.92] >> Dependability is a is a thing or
+[39:46.00] consistency whereas in in SAS you are
+[39:49.44] the worker and you expect your team to
+[39:50.96] work through these tools and get the
+[39:52.48] outcomes. That is I think that is the
+[39:54.72] really unlock right. I really feel and
+[39:57.36] you know we talked about this when you
+[39:58.56] were thinking of investing. I feel like
+[39:59.92] the next decade is to be spent if you I
+[40:03.44] might be controversial on this but I
+[40:04.80] feel like the original promise of SAS is
+[40:07.36] was not delivered in the last decade
+[40:08.88] right
+[40:09.04] >> oh yeah not delivered
+[40:10.72] >> the original promise of SAS was
+[40:12.16] delivered right let's talk
+[40:13.44] >> what was the original promise
+[40:14.32] >> so see original promise of SAS were we
+[40:15.92] were used to buying CDs right or
+[40:17.76] enterprise software right so the
+[40:19.36] original promise of SAS was hey by the
+[40:21.68] way right now you buy a new version of
+[40:23.92] software from me every year right
+[40:26.00] instead of you buying every one or two
+[40:27.68] years and going through all of this
+[40:29.20] purchase is doing why don't you just pay
+[40:30.96] me a subscription fee right and you pay
+[40:32.96] me that subscription fee we'll keep
+[40:34.40] updating the software for you right now
+[40:37.12] that was the original promise for SAS
+[40:38.64] right that and you know you've spent a
+[40:41.20] decade in enterprise that promise has
+[40:42.96] not been true for enterprise it might be
+[40:44.48] true for consumer SAS products right
+[40:47.28] like you know if you call Gmail a SAS
+[40:49.44] product or you call Zoom as a SAS
+[40:50.96] product right sure it's true but I mean
+[40:53.60] you that's not the bulk of the SAS
+[40:55.44] product market where people were even
+[40:56.72] buying every year right the core of
+[40:58.40] people who were buying every year were
+[40:59.84] the core enterprises right so for
+[41:01.52] enterprises right sure the software
+[41:03.84] Salesforce updates the software every
+[41:05.84] year but in terms of you actually using
+[41:07.68] those new features right it's like best
+[41:09.84] of luck it's like millions hundreds of
+[41:12.00] millions spent in trying to use those
+[41:13.60] new software right and also it's like
+[41:16.88] training cost stuff like that it's
+[41:18.64] through the roof so I feel the next
+[41:20.32] decade is not about replacing SAS which
+[41:22.72] is what you know it's actually using SAS
+[41:24.96] more right how do you actually use SAS
+[41:26.80] to deliver that promise that a SAS
+[41:28.40] provider will continue to release new
+[41:30.32] feature functionality. It's get it's
+[41:32.00] going to get the learnings that it gets
+[41:33.36] from industry deliver it in the new
+[41:35.36] software package that they deliver for
+[41:36.88] enterprise right and your digital worker
+[41:39.28] will take care of adopting it using it
+[41:41.52] so the users lives cannot get that
+[41:43.68] disrupted and they actually use those
+[41:44.96] feature functionality so that's why I
+[41:46.48] feel like the the original promise of
+[41:48.24] SAS was not delivered and the way we
+[41:50.24] bandaged it was by service providers by
+[41:53.04] you know enterprise software service
+[41:54.88] provider but that was just like you know
+[41:57.20] you we threw more people at the problem
+[41:58.96] but it didn't really solve the core
+[42:00.24] problem of Can I keep getting the latest
+[42:02.56] and greatest that a software provides?
+[42:05.20] >> So you're saying the next 10 years or 20
+[42:07.12] years is all about digital workers who
+[42:09.52] are kind of invisible but you depend on
+[42:12.00] them.
+[42:12.40] >> Yeah. You mean literally I mean just
+[42:14.24] think about it like at the end of the
+[42:15.84] day I don't think the job roles are
+[42:17.52] going away. The job roles will stay the
+[42:18.96] saleserson will stay the you know like
+[42:20.72] whichever roles they are right all those
+[42:22.16] roles stay but the core of it will be
+[42:24.64] that we will not need them to become
+[42:26.88] experts on the software package that
+[42:29.12] that company is using. This is a super
+[42:30.80] important thing. It doesn't mean that a
+[42:33.12] salesperson should not be trained onto
+[42:34.64] how to use a CRM, right? But as we all
+[42:37.76] know, three companies all three using
+[42:39.92] Salesforce, right? Is completely
+[42:41.84] different Salesforce. So a salesperson
+[42:43.44] doesn't learn Salesforce. They're like,
+[42:45.20] "Oh, you use accounts for this, you use
+[42:47.52] leads for this. Oh, I put this
+[42:49.20] information here. Your process is this."
+[42:50.96] So a salesperson should not need to be
+[42:53.20] learning all the idiosyncrasies of how
+[42:55.84] Salesforce is set up for you or what do
+[42:57.60] you do for marketing, right? So firstly
+[43:00.00] I mean no person in enterprise today is
+[43:02.08] using one software right they're using
+[43:03.68] minimum 10 to 15 softwares in their
+[43:05.28] daily lives right so now just think
+[43:07.28] about it 10 15 softwares yes you should
+[43:09.68] know what their softwares do that is
+[43:11.20] important as a profession but you don't
+[43:12.88] need to know in this company this does
+[43:14.96] this and this and by the way it changed
+[43:16.64] this 6 months ago and now this software
+[43:18.72] does this this software does this that
+[43:20.48] is the layer which needs to get like
+[43:23.20] almost eased out of saying a digital
+[43:25.20] worker takes care of all of that stuff
+[43:26.72] right so then when you do changes is in
+[43:29.36] the software packages or you do changes
+[43:31.36] in in the back end right so the people
+[43:33.60] who should be consuming the letter from
+[43:35.20] Salesforce which comes every quarter
+[43:36.64] know like hey new features new stuff
+[43:38.40] that's consumed by a digital worker it's
+[43:40.08] like hey I consumed it now for my
+[43:42.56] teammates who actually use the CRM what
+[43:44.40] do I need to change doing for them so
+[43:45.92] that they get used to and they could
+[43:47.20] write an email in their you know like
+[43:49.04] language saying hey Jim by the way I
+[43:50.96] found a more Salesforce just came out
+[43:52.32] with a new update this will make our
+[43:53.92] lives easier so I'll start doing this
+[43:55.36] differently for you right just think
+[43:56.96] like that's the life we should get into
+[43:58.88] rather than needing to learn every time
+[44:01.04] or unlearn every time we are doing. So
+[44:04.16] what you are trying to say is the
+[44:05.84] digital worker as they evolve they'll
+[44:07.28] move beyond LLMs because now they have a
+[44:09.52] memory they have a reasoning capability
+[44:11.44] >> and certainly they can push back also
+[44:14.48] >> for sure right so I mean our digital
+[44:16.08] workers have short-term memory long-term
+[44:18.24] memory communication modules right they
+[44:20.24] talk through email and s so you have all
+[44:22.16] of the stuff that you need to do so it's
+[44:24.16] a full-fledged you know they have their
+[44:25.68] email ids which you like sales people
+[44:27.44] can email in we do ourselves right so
+[44:29.76] for example when a community for us says
+[44:32.40] hey uh I want to do this differently
+[44:34.88] with me. They would like between the
+[44:37.12] digital worker sets up a Google sheet
+[44:38.64] with the community, right? It's like,
+[44:39.84] okay, sounds good. Hey, by the way, you
+[44:41.20] just told me this on this email. I went
+[44:42.96] ahead and created this Google sheet for
+[44:44.56] us to use commonly. Feel free to update
+[44:47.92] the Google sheet whenever you want to be
+[44:49.92] able to do. So, that's why, you know, we
+[44:51.20] truly embrace the no UI UX way. Like
+[44:53.68] that's how two people like if you and I
+[44:55.20] were doing something, right? I'll do a
+[44:57.12] email once and twice then you'll be like
+[44:58.64] so let's just put this on a Google sheet
+[45:00.32] or let's put this on a Microsoft uh
+[45:02.32] Excel share drive right and then use
+[45:04.24] that as a common that's the same exact
+[45:05.60] thing that a digital worker does like
+[45:07.04] hey let's just put it there and then we
+[45:08.40] can keep updating it there right or for
+[45:10.80] example you know our digital workers
+[45:12.16] generate a report at the end of the
+[45:13.36] month so they'll send in and then people
+[45:15.04] are like hey by the way like where is
+[45:16.88] the background of this it's like hey
+[45:18.16] here's the Google sheet I it's it's
+[45:19.60] there go it's there and that's like how
+[45:22.56] human beings would work with other
+[45:23.68] workers
+[45:24.00] >> can you share the example again of the
+[45:25.76] never split the difference at one of the
+[45:27.60] senior care living homes.
+[45:28.80] >> So you know like so our standard way of
+[45:31.20] like doing uh any digital worker is we
+[45:33.84] will go ask the CMO or the chief sales
+[45:36.16] officer saying hey can you give us your
+[45:38.32] sales manual your best practices so that
+[45:40.32] we can train the digital workers. So we
+[45:41.68] usually take two weeks to train the
+[45:43.12] digital worker in your best practices.
+[45:44.80] So one of the you know leaders at this
+[45:47.12] uh this operator he's like uh yeah we
+[45:49.76] have some but our biggest sales manual
+[45:51.44] is the book Never Split the Difference
+[45:53.12] right. So we're like okay right that
+[45:55.04] that was new for us but literally that's
+[45:56.80] what we did we trained the digital
+[45:58.08] worker to say hey you know like take the
+[45:59.76] essence of the book and if you've read
+[46:01.44] the book it's a very famous book you I'm
+[46:03.52] missing the author's name but he really
+[46:05.12] comes out with solid concepts on you
+[46:07.12] know like this is how you should do this
+[46:08.48] is how you should listen and this should
+[46:09.60] do we did so you know two weeks later
+[46:11.44] when the digital worker went in one of
+[46:12.96] the advice I was giving somewhere uh it
+[46:15.12] basically said hey let's label this and
+[46:17.20] labeling is a very core concept that
+[46:18.72] that book teaches right so let's label
+[46:20.72] this like this and he just like I I
+[46:23.04] remember this because we had a regional
+[46:24.24] sales director. She read this and she
+[46:27.20] was looking at uh you know the sales
+[46:28.72] leader uh Adam in this case and he's
+[46:31.20] like she's like Adam did you feed this
+[46:32.96] the book he's like yeah I did right I
+[46:35.44] just did that. So that's the beauty of
+[46:36.72] having your digital workers.
+[46:37.76] >> This is unique culturally.
+[46:39.12] >> It's unique. It's completely you know
+[46:40.72] like and that's you know how Adam wants
+[46:42.56] to run and it's a super important thing.
+[46:43.92] We really remove we've almost removed
+[46:46.40] this human element from companies right
+[46:48.56] if you think of it like a CRO a sales
+[46:50.72] leader a CEO you know you have your
+[46:52.88] decades and decades of experience. So
+[46:54.24] you want to run a you know like you have
+[46:55.60] limited resources doesn't matter you
+[46:56.88] know like if you're a hundred billion
+[46:58.64] dollar company or a $10 billion or a
+[47:00.40] billion dollar company resources are
+[47:02.24] always going to be limited right like
+[47:03.76] what I mean by that is that as a sales
+[47:06.16] leader right that comes into a job or
+[47:08.08] does a job you have certain things you
+[47:09.92] want to focus on right and you want all
+[47:12.80] your people as of the best thing you can
+[47:14.24] do is get your entire org under you
+[47:16.32] right focused in on doing that that's
+[47:18.72] literally what the digital worker helps
+[47:20.00] doing so that's why the digital worker
+[47:21.12] has to be trained in what's important to
+[47:22.96] you right you as a leader and let's make
+[47:25.28] sure we are doing that across the
+[47:26.72] organization
+[47:28.24] >> which brings me to another uh you know
+[47:30.32] thing that I want to discuss is claude
+[47:32.24] also like disrupting the software in
+[47:34.24] your industry because the general
+[47:35.36] narrative is tools like uh anthropic you
+[47:38.40] know are coming after different
+[47:40.16] different kind of industries
+[47:41.44] >> sure um I don't
+[47:43.52] >> people are people creating their own
+[47:45.04] software stack and senior care living
+[47:46.56] using tools like claude have you seen
+[47:48.64] that happening or is it just a hype
+[47:49.84] cycle that we are part of
+[47:51.12] >> I mean let me break this into two parts
+[47:52.56] right so I
+[47:53.84] There is a lot of hype I feel in it.
+[47:55.28] Right? What I mean by that is so when
+[47:56.56] you are building like what people are
+[47:57.76] really talking about today is like hey
+[47:59.36] claude could just build a CRM or could
+[48:01.04] build a monday uh.com right I'm like
+[48:03.84] yeah sure why why I say yes sure is
+[48:06.00] because when a CRM vendor or somebody
+[48:08.00] builds right they're building for best
+[48:10.00] practices that adopt across the industry
+[48:12.64] right so they are looking at not just
+[48:14.48] what your needs are today right they
+[48:16.48] already have customers who are 100 times
+[48:18.56] bigger than you and smaller and middle
+[48:21.12] so they're kind of trying to solve that
+[48:22.72] best practices for all of that right
+[48:24.32] like even sales Salesforce which is like
+[48:25.84] you know such a mature software right
+[48:27.60] they themselves are building best
+[48:28.80] practices for like hey how do we keep
+[48:30.16] data security right and then you will
+[48:31.60] become this then you do so they're doing
+[48:33.04] all of that good stuff right so I think
+[48:34.64] that's the part that I don't think a
+[48:36.08] claude comes in even if it does right
+[48:38.24] imagine if you're a user and you're like
+[48:40.08] hey claude go build me a CRM claude's
+[48:42.72] like sure I'll build you a CRM but by
+[48:44.64] the way it'll cost you a million dollars
+[48:46.00] because I have to take care of all the
+[48:47.44] thousands of edge cases you're like no
+[48:49.28] no no no no I don't want to spend a
+[48:50.72] million I thought this is supposed to be
+[48:51.84] cheap I'll just go buy
+[48:53.04] >> Salesforce right and that's why I feel
+[48:54.72] That part of it is is the hype part,
+[48:56.88] right? But for example, V, you know,
+[48:59.20] buddy codes, right? What does buddy code
+[49:01.44] on? I mean, it runs on, you know, you
+[49:03.92] know, all the two big model providers,
+[49:05.92] right? It runs on anthropics, LMS, runs
+[49:07.92] on OpenAI, LLMs to actually write,
+[49:09.76] reason, you know, do the integration.
+[49:11.52] So, it does write code, right? Like we
+[49:13.20] and as a team also tons of code, I'd say
+[49:15.68] what 70 80% of our code is definitely
+[49:17.76] written by LLMs at the minimum, right?
+[49:20.32] So, it's not like it's the coding is not
+[49:22.08] helpful, right? But it's not going out
+[49:23.60] and building complete stacks in right so
+[49:26.40] even ourselves we intrinsically use a
+[49:28.16] lot of you know like standard best
+[49:30.08] practices right like code and libraries
+[49:32.40] right and why would we want to like use
+[49:34.00] LMS to rewrite that stuff right which is
+[49:37.04] already really so mature so that's kind
+[49:38.72] of how we think about it
+[49:39.68] >> so in your lifetime as an entrepreneur
+[49:41.28] and now we are you know coming towards
+[49:43.04] the last 20 minutes of conclusion for
+[49:44.40] this podcast uh you have built companies
+[49:46.40] across India New York and Bay Area
+[49:48.72] >> right so what are the essential
+[49:50.00] differences that you have you
+[49:52.56] seen across these three ecosystem what
+[49:54.72] are the different ways that you have
+[49:56.08] built these companies
+[49:58.72] >> uh so actually I I'll correct that a
+[50:01.28] little bit because I think in my journey
+[50:02.72] I've probably built you know like India
+[50:04.80] for sure I have done Japan we were very
+[50:07.36] very deep in Japan right I would say we
+[50:09.52] were fairly deep in in Europe like
+[50:11.68] especially Germany dark uh you know
+[50:13.84] German and English speaking part of
+[50:15.12] Europe and we were definitely pretty
+[50:16.80] deep in Chile and and Brazil right and
+[50:18.88] then obviously US right so I'd say for
+[50:20.80] me my My experience is like those like
+[50:23.20] going very deep in and having a lot of
+[50:24.64] employees doing tens of millions of
+[50:26.80] revenue from all of those reasons. I I I
+[50:29.12] feel my experience is people worry too
+[50:30.56] much about like how unique every space
+[50:32.16] is right. So I think the thing is like
+[50:34.00] you shouldn't worry too much about right
+[50:35.60] that I think obviously Bay Area is is
+[50:38.16] beautiful at two levels right one is
+[50:40.00] like personally as a person you know
+[50:41.76] like it's great weather it's outdoors
+[50:43.84] you get to have you know like amazing
+[50:45.36] walks and talks and obviously Bay Area
+[50:47.28] is a concentration of number of people
+[50:49.04] who come from so many different walks of
+[50:50.72] life and if you talk about
+[50:52.40] entrepreneurship as a profession right
+[50:54.96] then there are a lot of people who are
+[50:56.40] you know done right so you can learn
+[50:57.76] from people who are like yeah this is
+[50:59.60] how we happened in the early days of
+[51:01.12] chipm this is you know and if you find
+[51:02.96] the pattern the pattern always keeps
+[51:04.40] history repeats I'm a strong believer in
+[51:05.76] history repeats right so that way I
+[51:07.76] would say bay area is amazing right but
+[51:09.60] having said that I used to come to bay
+[51:10.88] area probably a lot even then right but
+[51:13.76] that's got to do with the fact of like
+[51:15.20] there are a lot of people who walked the
+[51:18.00] walk what you'll have way more
+[51:19.44] concentration of everybody from you know
+[51:22.08] entrepreneurs to seasoned executives to
+[51:24.72] people right and you know you as you
+[51:27.28] visit bay area a lot I'm sure you see it
+[51:28.72] in any coffee shop or anything the only
+[51:30.88] conversation having around the room is
+[51:32.72] is something about like some funding
+[51:34.40] round happening or somebody going
+[51:36.16] through you know like layoffs or
+[51:37.92] growing. So obviously that is a super
+[51:40.08] advantage that you have in Bay Area but
+[51:42.16] I would say you don't have to like in
+[51:44.40] all these regions the biggest my turning
+[51:46.24] I remember like my first international
+[51:48.40] country was Japan and I remember like
+[51:50.72] >> you lived in Japan
+[51:51.84] >> yeah I lived in Japan and I you know
+[51:53.20] like we were growing there we built a
+[51:54.80] Japanese first big market for us were
+[51:57.52] and you know we didn't do small we
+[51:58.88] didn't work with small companies right
+[51:59.92] like at gorge orange we would work only
+[52:01.20] with large companies so we were working
+[52:02.88] with the largest companies in there we
+[52:05.60] work with the soft banks the nicayas you
+[52:07.28] know like humongous
+[52:08.48] uh brands right and I remember this
+[52:10.80] thing which always brings me a smile
+[52:12.40] which um you know Tommoan who is there
+[52:15.04] Tomosan pulled me aside before a client
+[52:17.52] meeting and he said uh so Japanese like
+[52:20.40] negotiating a lot okay don't get you
+[52:23.04] know too pulled in they really like
+[52:24.64] negotiating and back of my mind I was
+[52:26.80] smiling because as a person who's born
+[52:28.16] and bottom in India I like we thought we
+[52:30.16] negotiate a lot right and [laughter] and
+[52:32.48] you know he's like so man you have to be
+[52:34.56] careful they negotiate a lot so I just
+[52:36.32] smiled and I did and and And for me over
+[52:38.48] the years I you know same thing in in
+[52:40.72] Germany you know we were very deep in
+[52:42.16] Germany you know we were I lived there
+[52:44.08] for a couple of years we were working
+[52:45.92] with the biggest providers there and I
+[52:48.08] remember like they were like this is how
+[52:49.84] it's done in I signing a contract uh in
+[52:52.80] uh in Germany and I I'll always remember
+[52:55.28] this that you know our first big
+[52:56.88] contract there and we had done the
+[52:58.88] negotiation and the terms were done and
+[53:01.20] I we were like you know we just got up
+[53:02.80] and we were going to shake hands right
+[53:04.40] and I as I was about to shake hands
+[53:06.56] right uh One of my mentors like just
+[53:08.32] drop my hand like hit it here. He's like
+[53:09.92] hey S wait I was like what happened Wolf
+[53:12.56] Gang was his name. I was like what
+[53:13.44] happened Wolf Gang? He's like uh S in
+[53:15.52] Germany handshakes are legally binding
+[53:18.40] right. So I was like ah okay sure like
+[53:22.80] you know like I mean for me they were
+[53:24.32] legally binding in in my mind right like
+[53:26.08] and I always think they might not be
+[53:27.44] legally binding in India or they might
+[53:29.04] not be legally binding anywhere in the
+[53:30.48] but think about it. If you handshake
+[53:31.76] with somebody and if the person goes
+[53:33.60] back on their word and then they change
+[53:34.96] later, they come and haggle or do it.
+[53:36.88] It's better you don't work with them
+[53:38.00] anyways, right? So sure, it might not go
+[53:39.60] to the court of law, right? But for me,
+[53:42.16] it was not like, oh, now I should be
+[53:43.60] careful about what like you know there's
+[53:45.44] a popular saying in enterprise, right?
+[53:46.88] That if you actually go back to
+[53:48.64] referring to the contract what you
+[53:50.24] signed, there are bigger problems you're
+[53:51.92] facing, right? So I feel like the reason
+[53:54.24] I'm sharing all of these nuggets is just
+[53:55.76] because I feel like we pay too much
+[53:57.44] attention to this is how this place is
+[53:59.44] unique and this is how this place is
+[54:00.80] unique. You have to learn from every
+[54:02.80] place. There are so many unique things
+[54:04.24] to learn, right? But uh you know like
+[54:06.72] just keep building.
+[54:08.16] >> So what I've observed over last two
+[54:09.68] years of relationship is that you know
+[54:11.92] clearly you have an obsession for for
+[54:13.44] learning.
+[54:14.16] >> For sure I love learning and
+[54:16.00] >> that's what you know you why you choose
+[54:17.44] the profession of entrepreneurship. I
+[54:19.44] think
+[54:19.84] >> solving problems is one part but it
+[54:21.44] ultimately feeds your your curiosity for
+[54:24.88] >> curiosity because I think see I would
+[54:26.64] say learning with adding value. I feel
+[54:29.92] like these two things have to come hand
+[54:31.20] in hand right because yeah I enjoy
+[54:34.32] learning but think of it like if I
+[54:35.52] wanted learning I could just like go
+[54:37.20] read more books become a professor. I
+[54:39.44] really think how do you utilize that
+[54:41.28] learning as that curve which is super
+[54:43.04] important. How do you apply something in
+[54:45.60] you know like so you know like couple of
+[54:47.20] six months ago I went deep into you know
+[54:49.04] our our infrastructure was scaling and
+[54:51.12] we needed to get into Kubernetes so we
+[54:52.72] got deep into Kubernetes and we were
+[54:54.32] learning okay this is how that did so
+[54:56.08] obviously the learning of it was
+[54:57.36] beautiful but for me the takeaway from
+[54:59.12] that was also like okay this is how we
+[55:01.20] solved it you know this is how the
+[55:02.56] Kubernetes open source community came
+[55:04.08] together and solved these problems which
+[55:05.28] by the way are problems which come in 10
+[55:06.56] other places in in industry and life and
+[55:08.80] we've solved it one way like this like
+[55:10.64] how do you use that to that to that
+[55:12.88] that's where I feel like is probably
+[55:14.80] where I get my high and get my this
+[55:16.40] thing of how do you actually utilize
+[55:18.08] that learning is probably very very
+[55:20.64] unique. One of the other things that I
+[55:22.88] appreciated that how you built your
+[55:25.20] captables you were very thoughtful of
+[55:26.64] how you want to bring which investors.
+[55:28.24] Can you share your mental model on that?
+[55:30.80] >> So see I feel like uh so you know I did
+[55:34.08] my as you know I did my first journey
+[55:35.84] raised tons of money hundreds of
+[55:38.00] millions of dollars and I would say
+[55:39.28] first time around uh you don't have the
+[55:41.20] luxury of like you know like really
+[55:42.64] being thoughtful and you don't
+[55:43.76] experience and you're anyways going
+[55:44.88] through all of your uh you know FOMOs
+[55:47.52] and all your insecurities when you do it
+[55:49.04] the first time around. Second time
+[55:50.16] around I was much more thoughtful of
+[55:51.84] like see uh we whether they like it or
+[55:54.40] not or I like it or not we are going to
+[55:56.00] be you know like uh living together for
+[55:58.08] the next decade at least because you
+[55:59.68] know anyways anybody who's looking in
+[56:01.68] for a short-term quick return I mean
+[56:04.24] we'll anyways not jive well. So it's
+[56:05.68] like that's easy rejection in that sense
+[56:07.36] both for them and me that you know hey
+[56:09.12] I'm not going to ride a wave and like
+[56:10.48] you know let's go get this in. I'm not
+[56:12.08] in the in that line. But I think for me
+[56:14.48] the thoughtfulness is really about that
+[56:16.00] as you know I was telling you at the
+[56:17.44] start of today's conversation that I
+[56:19.92] really like that you know like even
+[56:21.20] though your questions more inert of like
+[56:22.88] hey how will you solve that how will you
+[56:24.24] do that there's this curiosity there is
+[56:26.00] this work that has to be put in so for
+[56:27.84] me the cap table right like as I don't
+[56:30.32] know if you the journey literally
+[56:31.36] started with I said hey I'm going to do
+[56:32.56] something I don't know what I'm going to
+[56:33.68] do right and I'm just going to uh I'm
+[56:35.76] looking if any angels it was more a give
+[56:37.92] back right because as you know sad I
+[56:39.76] could have just funded you know this
+[56:41.12] myself right but the point was I was
+[56:42.80] like this journey tough enough. It's
+[56:45.12] good to have people who are I want to
+[56:47.04] say friends but it's more friends at the
+[56:48.64] level of the good friends right the
+[56:49.84] people who challenge you who think with
+[56:51.20] you you learn from them they learn from
+[56:52.96] you so that's why I had put out that
+[56:54.40] LinkedIn post on like hey if anybody's
+[56:56.56] been u you know like been attached to me
+[56:58.72] in my journey so far known me if you
+[57:00.80] want to you know like uh take part in
+[57:02.56] the injuron period I was obviously I
+[57:04.40] didn't anticipate like got a flood l of
+[57:07.12] inbound so in that I was more looking
+[57:09.20] for people who are you know like in it
+[57:11.44] for that journey you know mutual
+[57:13.04] learning I feel like the mutual learning
+[57:14.32] is a very very important part for me and
+[57:16.72] it is mutual in every sense right like I
+[57:18.80] love partnering with people who I can
+[57:20.96] learn something from them and they're
+[57:22.40] also looking to learn something from me
+[57:24.08] and that's where you know like you have
+[57:25.60] a a good relationship so I remember um I
+[57:28.72] was influenced by this I think it was a
+[57:30.32] podcast or a interview of Vinod Kosla
+[57:32.72] somewhere where he said founders obsess
+[57:35.20] so much time in hiring executives but
+[57:37.52] don't spend the same time in you know
+[57:39.76] getting people on the cap table or the
+[57:41.28] board right because he he said it so
+[57:43.36] beautifully he you can fire executive
+[57:45.28] but you can't fire a board member or a
+[57:47.36] cap table holder. So that's why I feel
+[57:49.68] like for me I became much more I used
+[57:51.44] you know over the years I had used built
+[57:53.20] my expertise or whatever learnings on
+[57:55.76] how to get what to look for when you
+[57:57.84] hire people as executives. I probably
+[57:59.60] use the same a little bit uh of that on
+[58:02.40] all the people
+[58:03.12] >> and and what was the qualification
+[58:04.08] criteria that you've built or selection
+[58:05.84] criteria? I mean if you're down in the
+[58:07.76] dumps will you want to be with the
+[58:08.88] person like this right it's a super
+[58:10.00] important one I feel like you do it for
+[58:11.20] executive all the times you're like hey
+[58:12.72] we're going to have disagreements we're
+[58:14.08] going to not do it but when it's all you
+[58:16.24] know like I always say it and I say it
+[58:17.52] by the way for with my customers also
+[58:19.12] and probably that's where it moved from
+[58:20.88] customers to executives and move from
+[58:22.64] executive to investors which is I tell
+[58:24.16] my customers I'm like see when things
+[58:25.92] are all going well you know like we'll
+[58:27.52] be the best partners because it doesn't
+[58:29.36] cost anybody right I want to make sure
+[58:31.36] that when things are not going as per
+[58:32.96] plan right that's when we can talk it
+[58:35.36] out and we can sort it out. So I would
+[58:37.04] say the most biggest criteria first
+[58:38.48] three is that only right and that's how
+[58:39.92] you you you have to be you know like go
+[58:42.24] through that journey of like making sure
+[58:44.08] that it's not going to be like you know
+[58:45.84] even in like at a sum when you zoom out
+[58:48.72] gray orange right like it's like hey 0
+[58:50.88] to 100 million in the first three years
+[58:52.16] we went 0 to 10 million right so it's
+[58:53.76] like looks amazing right I yeah it came
+[58:56.40] through like two times we were like we
+[58:58.24] didn't have I think we were almost 4 500
+[59:00.72] people and if one order wouldn't have
+[59:02.24] come we wouldn't have had money to
+[59:03.28] payroll to so you know like I call it as
+[59:05.36] near bankruptcy Y moments twice of those
+[59:07.28] right stuff didn't go in. So it's not uh
+[59:10.08] nice and curvy at the ground level. So
+[59:12.64] just pick the people you know do it and
+[59:15.12] as you said like you know life's too
+[59:16.72] short right so I really feel like for me
+[59:19.36] it's like the your investors your
+[59:21.68] employees your board members your
+[59:23.44] customers right even customers right
+[59:25.44] you'll spend as much time with them as
+[59:26.88] much you'll spend with your family. So
+[59:28.08] it's like just like just pick people you
+[59:30.00] want to be around. One one other thing
+[59:31.68] you know I've been really curious about
+[59:33.12] is in your first journey right uh you
+[59:36.80] you raised a ton of capital right and I
+[59:39.04] think twothirds of it as you mentioned
+[59:40.56] earlier was only in secondaries money
+[59:42.64] exchanging hands right in this journey
+[59:44.64] you have been very deliberate about uh
+[59:47.52] what brought about that change
+[59:49.44] >> uh I think uh so you know like there is
+[59:52.56] this thing which is I think I I learned
+[59:54.56] it the same way as every founder who
+[59:55.92] will go through it hopefully first time
+[59:57.12] will learn right is that we have this
+[59:59.36] feeling of money solves all you know
+[60:01.92] like money solves all problems right it
+[60:04.80] is definitely an important indriant in
+[60:06.80] solving right so don't take me wrong in
+[60:08.32] like you know like I raise right now we
+[60:10.00] burn a lot of money we do all of that
+[60:11.60] stuff right but it doesn't solve all
+[60:13.44] problems that's a super important thing
+[60:14.96] to go through right and the more and
+[60:16.88] more money you raise right the problems
+[60:19.92] that you have to solve with them become
+[60:21.52] increasingly so so I've just been more
+[60:23.44] intentional I would say it's the same
+[60:25.12] thing with everything just be
+[60:26.08] intentional on what you're using that
+[60:27.76] money for and how much of that money you
+[60:30.16] need. So that's how I've been thinking
+[60:31.84] about it and that's how we've been
+[60:33.12] living about it as to do and I think you
+[60:35.12] don't have the luxury the first time you
+[60:36.32] do it and every founder I think should
+[60:38.00] have that in that you just do it and I
+[60:40.00] would say both ends by the way I think
+[60:41.52] one uh we are super super conscious
+[60:44.40] about like what money we really need and
+[60:46.80] what are problems that money can solve
+[60:48.48] and we will invest money in that and
+[60:50.00] there's a ton of things as entrepreneur
+[60:51.68] that money unfortunately cannot solve
+[60:53.36] right it's just hard work and learning
+[60:54.88] and all of that so we don't try using
+[60:56.80] money there but the second big thing is
+[60:58.64] we as a team Right. I think I completely
+[61:01.76] screwed up on this one the first time
+[61:03.04] around. Right. I I it's a long story but
+[61:05.28] like there was very late I realized in
+[61:07.12] Gree's journey that you know if you
+[61:09.68] enable especially tech and everybody in
+[61:11.92] a company to start looking at the
+[61:13.76] financial P&L of a company understand
+[61:15.68] what it is right then you are in unison
+[61:18.72] as a company right and I think I had no
+[61:20.48] idea of this is and I I would say forget
+[61:22.24] about the team I would say even myself I
+[61:24.24] feel I was not a good CEO itself right
+[61:26.08] and you know entrepreneurs go through
+[61:27.20] this journey they're first entrepreneurs
+[61:28.64] and then they learn how to become a CEO
+[61:30.80] manager you start managing people blah
+[61:32.24] blah blah right So for me I feel like
+[61:34.16] that was the big unlock. So for example
+[61:35.84] as a team we look at our entire P&L it's
+[61:38.64] completely open we review our P&L once a
+[61:40.48] month every month right and not just
+[61:42.56] that we're a small team and we want to
+[61:44.72] be a small team right so as a small team
+[61:46.72] the parts of the team like people take
+[61:48.08] care of like hey this is you're taking
+[61:49.28] care of this part of P&L you're taking
+[61:50.64] care of this part of P&L this is done
+[61:52.48] even our accountant you know like we're
+[61:54.64] early and he's like hey like why are you
+[61:56.72] getting in so much sophistication in it
+[61:58.32] we're like you know like it's not
+[61:59.36] sophistication obviously you want to be
+[62:00.48] careful but as a team as a group we want
+[62:03.76] to understand that we're running a
+[62:04.88] business right this is not it is a
+[62:06.56] business right so we need to know where
+[62:08.48] is money coming where is it going how is
+[62:10.64] it turning so I think we're way more
+[62:12.32] intentional about uh you know money as a
+[62:15.12] whole and I think it also makes it fun
+[62:17.28] >> yeah and second the last thing that I
+[62:18.72] want to discuss about is growth how your
+[62:20.72] view on growth has changed in the first
+[62:22.16] time as you mentioned you were one of
+[62:23.36] the rare companies to scale to 10
+[62:24.64] million in three year and 100 million
+[62:26.24] happened this time you are more
+[62:27.52] intentional about growth
+[62:29.76] >> I think on that front I don't think
+[62:31.12] anything has changed I'm just I feel
+[62:32.80] like I think the growth growth part
+[62:35.04] comes for me from the point of the
+[62:37.04] learning curve bit right so it's like
+[62:39.52] you I'll tell you two parts I'll say one
+[62:41.84] part is I think in gorge orange's
+[62:43.28] journey I made too many three year
+[62:45.76] fiveear plans in the first five year of
+[62:47.68] the company right and I always thought
+[62:49.44] as an engineer because you know I tried
+[62:50.96] that journey as an engineer I said as
+[62:52.16] engineer we need to plan that and focus
+[62:54.16] on that right u after like rewriting
+[62:57.20] those and touring and reflecting back
+[62:58.96] and saying so interestingly we probably
+[63:01.04] met or exceeded all of our four five
+[63:03.44] year goals from a financial point of
+[63:05.68] view but none of the plan was at all
+[63:08.48] anything we thought we would do. So I
+[63:10.64] would say from a growth point of view we
+[63:12.08] plan lesser for uh five years and three
+[63:14.56] year plans in that sense we are just
+[63:16.64] crazy about growth and growth is a good
+[63:18.08] like you know it's a good feedback on
+[63:19.36] like hey you're in a business right if
+[63:21.68] your revenue is growing right then that
+[63:24.32] is a direct testament to your solving
+[63:26.64] problems for for people right so your
+[63:28.88] revenue should keep growing your unit
+[63:30.64] economics should keep getting better
+[63:32.48] right and your margin you know like so
+[63:34.64] it's like all three of those together
+[63:36.24] right if their their shape is
+[63:38.32] directionally keep improving every
+[63:39.76] quarter over a quarter year over year
+[63:41.44] that means you're truly building a
+[63:42.80] business and truly building a business
+[63:44.08] means you're solving customer's real
+[63:45.36] problem right so that's how we think
+[63:47.36] about it but in terms of like I think
+[63:49.44] the the core tenement of growth I
+[63:51.84] remember like the first time we did I
+[63:53.52] remember the first time we hit a cr like
+[63:55.04] you know it was like in INR it was like
+[63:57.04] crazy we're like hey this and then we
+[63:58.80] moved it like I think we moved it from
+[64:00.24] that to like the first time we hit a
+[64:01.52] million dollars right and then we hit a
+[64:02.96] 10 million so it's like you you achieve
+[64:04.40] it then forget about it so I always
+[64:05.60] think about like when you're having a
+[64:06.88] bad day you look at like what you've
+[64:08.16] achieved right whenever you're having a
+[64:09.68] good day only look about what you've not
+[64:11.04] achieved. So that's how we probably
+[64:12.24] balance.
+[64:12.72] >> And my last question today is what's
+[64:14.32] your ambition for buddy as a company
+[64:17.84] >> build a really really large company have
+[64:19.44] fun doing it. That's that's what I'll
+[64:21.36] say.
+[64:21.76] >> Yeah. Thank you so much and we love this
+[64:23.28] conversation.
+[64:23.84] >> No, thank you so much for having me
+[64:24.96] here. It was so much fun.
+[64:26.24] >> It has been a pleasure and an honor
+[64:27.92] knowing you over the last couple of
+[64:29.04] years building the relationship. But I
+[64:31.04] think you know every conversation of
+[64:33.20] ours is it's a two-way learning as I
+[64:34.64] say.

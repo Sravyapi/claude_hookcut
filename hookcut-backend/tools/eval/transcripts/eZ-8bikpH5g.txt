@@ -1,0 +1,135 @@
+[0:00.08] If you want to stand out in the age of
+[0:01.92] AI, the first step is to master it. Hi
+[0:04.64] everyone, I'm Ishan Sharma and Anthropic
+[0:07.12] has launched more than 10 courses for
+[0:09.36] you to learn AI for completely free. If
+[0:11.76] I was starting from scratch with zero
+[0:13.44] skills and zero knowledge, this is how
+[0:15.52] I'd learn AI in 2026. The platform is
+[0:18.56] called anthropic.skilljar.com.
+[0:20.80] It has over 10 plus anthropic courses
+[0:23.60] for completely free that you can sign up
+[0:25.84] for, learn through one to two hours of
+[0:28.48] videos and start applying those skills
+[0:31.28] and getting started with AI. What do you
+[0:34.32] get? First of all, Claude Code in
+[0:36.40] action. Claude Code is one of the most
+[0:38.56] powerful coding assistants. It's a
+[0:41.04] coding agent in the palm of your hands
+[0:42.96] which can build the most complex
+[0:45.20] software for you in minutes without you
+[0:48.08] having to know a lot about coding.
+[0:49.92] Claude Code in action is 15 lectures, 1
+[0:52.32] hour of video and one quiz and a
+[0:54.32] certificate of completion. This is the
+[0:56.80] best part about it. Not only do you get
+[0:58.72] to learn about the best AI tools, you
+[1:01.84] also get a certificate that showcases
+[1:04.32] the work that you've done. The second
+[1:06.24] course is Claude 101. Just like Char
+[1:08.96] GPT, Claude is a great chatbot that you
+[1:12.00] can use for practically anything and
+[1:14.24] it's actually much more creative at
+[1:16.08] writing and logical tasks as well.
+[1:18.80] Claude 101. Learn how to use Claude for
+[1:20.96] everyday work tasks. Understand core
+[1:23.04] features and explore resources for more
+[1:25.36] advanced learning on other topics.
+[1:27.12] You'll learn about how Claude really
+[1:29.12] works, how to connect it with your
+[1:30.80] tools, how to put it together, different
+[1:33.20] use cases by roles, and you will also,
+[1:35.84] as always, get a certificate of
+[1:37.44] completion. The third course is AI
+[1:39.12] fluency framework and foundations. This
+[1:41.12] is where you learn about how AI systems
+[1:43.20] are built and how you can take multiple
+[1:45.84] tools, combine them together and create
+[1:47.60] a great workflow that actually works for
+[1:49.52] you to get that particular task done. As
+[1:52.16] you can see, AI fundamentals and
+[1:53.84] framework, practical AI skills, and this
+[1:56.48] is all being taught by some of the best
+[1:58.48] instructors out there. This is the third
+[2:00.80] course. The fourth one is building with
+[2:03.60] the clawed API. There's so much that you
+[2:06.08] can build with the Claude API. You get a
+[2:08.16] complete understanding of what you can
+[2:09.60] build with the Claude API itself. You
+[2:12.64] will learn to make API requests to
+[2:14.16] claude, implement multi-turn
+[2:15.76] conversations, build and evaluate
+[2:17.60] prompts systematically, create custom
+[2:19.60] tools, and integrate Claude with
+[2:21.04] external services, design and implement
+[2:22.72] rack systems. All of this is happening
+[2:25.12] in just this one course. Over 8 hours of
+[2:28.16] video, and as always, certificate of
+[2:30.32] completion. How cool is that? And if you
+[2:32.80] thought that was it, you are wrong. The
+[2:35.52] next course is introduction to model
+[2:37.12] context protocol. This is a great
+[2:39.76] framework for connecting different apps
+[2:41.52] and services together for it to work
+[2:43.76] efficiently. And this course teaches you
+[2:45.76] how to get started. In 1 hour you learn
+[2:48.24] the basics of MCPs, MCP architecture,
+[2:51.20] building MCP servers, implementing MCP
+[2:53.60] clients to connect different
+[2:55.20] applications to your server, test and
+[2:57.28] debug MCP servers. All of this is
+[2:59.36] happening right in this one course
+[3:01.68] itself. As you can see, MCB
+[3:03.52] fundamentals, client implementation, all
+[3:06.16] of this is being taught in this course
+[3:07.76] right here. Next, you can choose if
+[3:09.12] you're a student or a educator and you
+[3:10.64] can go ahead for this course. If you're
+[3:12.80] a student, you can go for the AI fluency
+[3:15.04] for students course. And this will teach
+[3:17.12] you all about the best practices for
+[3:19.12] using AI as a student. how it can help
+[3:21.44] you learn things more effectively. How
+[3:23.76] you can use it to brainstorm and to come
+[3:26.80] up with new ideas to make you better at
+[3:30.80] grasping things at learning things at
+[3:33.52] understanding the world around you. All
+[3:35.76] of this is happening in this course
+[3:37.28] right here. Moving down, you also learn
+[3:39.92] about something called as introduction
+[3:42.64] to agent skills. Now skills is really
+[3:45.84] cool. It's basically a ready-made block
+[3:48.08] of code that you can use to do anything
+[3:50.40] with claude. So basically you use claude
+[3:52.96] code and you attach skills with it and
+[3:55.44] then you can practically do anything.
+[3:57.36] For example, creating animations using
+[3:59.44] reotion skill all with the help of
+[4:01.52] claude code. So this course teaches you
+[4:03.84] how it works, how to use skills inside
+[4:07.28] of your claw code. You learn about what
+[4:09.44] are skills, how can you create your
+[4:11.04] first skill, configuration and
+[4:12.40] multi-file skills, skill versus other
+[4:14.72] clot code features, sharing skills and a
+[4:17.60] lot more all within this one course
+[4:19.68] itself. And there are more courses as
+[4:21.36] well. You can learn about the advanced
+[4:23.12] topics in MCPS. You can also learn about
+[4:25.44] using clot with Google cloud vortex AI.
+[4:28.64] You can learn all of this under one roof
+[4:31.52] on the anthropic slide itself. I mean,
+[4:34.40] this one platform gives you access to
+[4:36.48] the most important technologies to learn
+[4:38.80] today and get started with using them in
+[4:41.68] the real world for completely free. How
+[4:44.32] cool is that? That was the video. If you
+[4:46.32] have any questions, let me know below in
+[4:47.52] the comment section. This link will be
+[4:49.92] in the description of this video. I
+[4:51.52] think this is the easiest platform to
+[4:52.96] start learning AI with and especially
+[4:54.96] for free. If you're still watching this
+[4:56.40] video, write in the comment section. I
+[4:57.60] was till the very end and I will see you
+[4:59.36] in the next one. Bye-bye.

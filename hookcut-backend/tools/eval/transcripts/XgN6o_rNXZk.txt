@@ -1,0 +1,534 @@
+[0:00.08] Welcome back everyone. My name is Ain
+[0:01.76] Reddi and in this video we'll talk about
+[0:04.56] spring AI. Now see we are living in the
+[0:08.00] AI era. So whatever application you are
+[0:09.84] building basically you have to enhance
+[0:12.16] it with the help of AI capabilities. Now
+[0:15.12] there are two things with genai. One is
+[0:18.24] how do you use AI tools to enhance or to
+[0:21.84] improve your productivity and second is
+[0:24.40] how do you enhance your application. So
+[0:27.04] let's say if you are building an
+[0:28.08] application where uh this is for let's
+[0:30.24] say e-commerce and in the e-commerce
+[0:32.96] basically for the user side if they are
+[0:35.12] buying something maybe they they want
+[0:36.56] some suggestions maybe they want to talk
+[0:38.64] to a chatbot so AI should be able to
+[0:41.28] help them uh there are different ways AI
+[0:44.24] can help for a user but let's say if
+[0:46.16] you're an admin and if you are adding a
+[0:48.72] product in that scenario as well maybe
+[0:51.20] if you want to generate a image or maybe
+[0:53.60] you want to write a description for a AI
+[0:57.04] can help you there. So of course based
+[0:59.04] on your domain, based on what kind of
+[1:01.60] application you're building, you can
+[1:03.12] enhance it with the help of AI. So
+[1:05.76] that's where you you can say it's AI
+[1:07.52] enabled. Now it has actually become easy
+[1:10.88] thanks to all these AI providers. So you
+[1:13.92] don't have to basically build your own
+[1:15.44] models. We got these amazing models
+[1:17.68] created by different companies. We got
+[1:19.76] OpenAI, Google, Antropic and many more.
+[1:22.56] And they are doing good job. And of
+[1:23.92] course we don't want to compete with
+[1:25.20] them in terms of model creation. Second
+[1:28.08] is you don't have to run those models in
+[1:31.20] your machine. You can but running a
+[1:34.56] model in your machine you you need a
+[1:36.48] high configuration machine and we can do
+[1:38.72] that. Of course that's a fun of building
+[1:40.88] your own servers. But what if you can
+[1:43.44] use a cloud service? Maybe this company
+[1:46.00] can provide you the AI models running on
+[1:48.64] their servers and that is actually
+[1:50.32] happening and that's what you call model
+[1:52.40] as a service right maybe you can say
+[1:54.88] mass uh and that's what you can use. So
+[1:57.68] that's easy right? So let's say you
+[1:59.44] decided to go for open AAI or maybe
+[2:01.92] anthropic or maybe Gemini your choice
+[2:04.16] and you are choosing let's say one
+[2:06.32] personally I prefer Gemini but since
+[2:09.04] openAI was the first one to do this or
+[2:11.84] maybe the first one to get famous
+[2:13.44] because of this uh so a lot of people
+[2:15.36] talk about OpenAI but I'm a big follower
+[2:17.52] of Google so let me just go to Gemini
+[2:20.00] now if you want to use their model of
+[2:22.80] course you need to get their API key and
+[2:24.72] then whenever you want to ask or
+[2:26.56] whenever you want to talk you need to
+[2:28.40] connect you you need to hit their APIs.
+[2:30.80] So if you have a key and if you have the
+[2:32.40] API link you can hit it and based on
+[2:36.24] which language you're working with. Of
+[2:37.76] course this companies provide you SDKs
+[2:40.48] and they have API where you don't need
+[2:43.76] to follow any language you can directly
+[2:45.20] use an API or maybe you can use the
+[2:47.20] SDKs. Now if you're using a Java SDK
+[2:50.08] let's say so you got multiple options
+[2:51.68] you got Python, JavaScript Go, Java, C#
+[2:54.24] and Appcript. Okay, what is appcript?
+[2:58.72] um okay never tried it but anyway or
+[3:00.56] maybe I'm not able to recall now but
+[3:02.00] let's say if you choose Java or maybe if
+[3:03.84] you choose let's say Python very famous
+[3:06.08] in this case you can simply install uh
+[3:08.24] the library and this is the code in
+[3:10.48] Python but now since we are talking
+[3:12.56] about Java let me switch to Java this is
+[3:14.88] a dependency which you have to add in
+[3:16.24] your Maven project uh simple dependency
+[3:19.20] right and it should be available and
+[3:22.32] then you can write your Java code so it
+[3:24.48] doesn't matter is it a web application
+[3:25.68] or a standalone application you can
+[3:27.76] simply create a client. Uh you have to
+[3:31.28] once you have dependency you can import
+[3:32.80] this and you can create a client and you
+[3:35.44] can say client.mmodels.generate
+[3:37.92] content and you can pass the prompt it
+[3:40.48] will give you the answer right so you
+[3:42.72] can say response.ext text
+[3:45.60] uh that will work and that's amazing.
+[3:48.24] Good. So it's easy now. So you can
+[3:50.32] simply use this code. Of course this is
+[3:52.96] simple. So the moment you want to do
+[3:54.88] something complex in that case of course
+[3:56.96] you need to add some extra code and
+[3:59.36] there should be some examples as well.
+[4:01.12] Now let's say you decided to jump from
+[4:03.36] Gemini to let's say OpenAI mid project.
+[4:05.84] Okay, in this case or maybe you have
+[4:07.12] built a project and now you want to move
+[4:09.12] in this case you will say okay let me go
+[4:10.64] to open AI and here let me check the
+[4:12.96] code of course u openai provides SDK for
+[4:16.48] different languages you can see we have
+[4:17.92] an option here uh JavaScript python net
+[4:20.72] java and go and we decided to go with
+[4:23.20] Java so this is a dependency so you have
+[4:25.20] to change dependency and that makes
+[4:26.72] sense dependency will change based on
+[4:28.32] the SDK but look at the code code is
+[4:31.12] also changing this is the code for openi
+[4:33.68] where you have openi client In Gemini it
+[4:36.88] was the client only. So certain thing
+[4:39.60] will change and uh you need to create
+[4:42.48] object of some other class you have to
+[4:44.96] do this you have to pass the prompt as
+[4:46.80] well. This is your prompt and then you
+[4:48.80] say create uh you will say you will get
+[4:51.28] the response and then you will say
+[4:52.40] output text. I mean imagine just for a
+[4:54.48] simple prompt so many lines of code is
+[4:56.80] changing also if you go to let's say
+[4:59.12] anthropic you decided to go for claude
+[5:01.12] in this case again you need to uh so I'm
+[5:04.16] into different SDK you can see we got
+[5:05.68] Python SDK JavaScript sorry TypeScript
+[5:08.48] uh Java go Ruby uh C# PHP I think they
+[5:12.16] were smart to not have JavaScript there
+[5:14.40] not a big fan of JavaScript TypeScript
+[5:16.32] okay uh but let's say you went for uh
+[5:18.88] Java SDK here and then and reason for
+[5:21.52] Java is because Most of the enterprise
+[5:23.52] application is built on Java and now
+[5:26.16] they want to enhance it. Of course, not
+[5:28.56] every project for AI will be from
+[5:30.48] scratch. There are existing application
+[5:33.20] which you will be using and you'll be
+[5:35.76] enhancing it. Uh so if it is Java
+[5:38.88] application
+[5:40.40] so you will simply go to depend upon
+[5:42.80] which uh build tool you're using. So
+[5:44.88] let's say if you're using Maven again
+[5:46.56] dependency and look let's look at the
+[5:48.64] code and the code is different again. So
+[5:51.28] you have to import certain packages but
+[5:53.76] here it's anthropic client. I think
+[5:55.76] Gemini was smart to just have a client.
+[5:57.92] They're not saying Gemini Gemini
+[5:59.36] everywhere. Good job Gemini. But
+[6:01.60] Antropic says no you have to go for
+[6:03.12] anthropic client. Open says you have to
+[6:04.88] go for open air client and uh things
+[6:07.20] will change. Okay. So it's good they are
+[6:09.28] providing you SDKs but every SDK
+[6:11.60] different code and the problem is if you
+[6:14.32] want to switch to a different model you
+[6:16.32] need to change lot of lines of code. Of
+[6:18.56] course even AI can help you there. You
+[6:20.72] can use AI and say hey you know or maybe
+[6:23.12] to co-pilot and say change this code
+[6:25.36] from Gemini to anthropic and it will do
+[6:27.44] it for you. Uh that's a good thing right
+[6:29.36] that's a good addition but uh you're
+[6:32.24] still changing the code. What if you can
+[6:34.00] get an abstraction layer somewhere you
+[6:36.56] use certain tool which will help you to
+[6:38.80] abstract all these features and as a
+[6:41.92] user sorry as a developer what is your
+[6:44.32] job is to use that tool irrespective of
+[6:47.12] the model behind the scene and the code
+[6:49.36] will remain same. Yeah, in future if you
+[6:51.52] want to go from entropic to let's say
+[6:53.20] open AAI in that case dependency will
+[6:56.08] change the maven dependency will change
+[6:58.24] uh everything else remains the same oh
+[7:00.40] configuration might change where you
+[7:01.92] will uh specify which model you're using
+[7:04.72] uh specifically model because claude
+[7:06.64] openai gemini provide different models
+[7:09.04] right in fact in openai you you might
+[7:11.84] have heard about GPT 5 5.1 now we got
+[7:15.04] 5.2 2 even in claude we got different
+[7:17.36] options sonet opus in gemini we got uh
+[7:20.96] gemini 3.1 3.2 is 3.2 is released I
+[7:24.08] think. So those are the things which
+[7:26.40] will change the code will remain same
+[7:28.32] and that abstraction we want. Now
+[7:30.72] there's one way you can build this
+[7:32.08] abstraction layer by yourself. But then
+[7:34.16] since you use a framework one of the
+[7:36.16] famous framework in the Java world is
+[7:37.68] spring and if you have an application
+[7:39.68] already built in spring boot you don't
+[7:43.04] have to worry about creating this
+[7:44.24] abstraction layer by yourself. What you
+[7:45.84] can do is you can use something called
+[7:48.96] Spring AI and Spring AI basically is an
+[7:53.36] abstraction layer to use the AI models.
+[7:56.56] So what it does is let's say you have
+[7:58.00] your application so you got your APIs,
+[8:00.32] you got your data and you can use a
+[8:02.48] feature of generative AI. So you can use
+[8:05.68] genative AI and generative AI can push
+[8:07.84] some code or some data to you some
+[8:09.92] features and that's what you can use. uh
+[8:12.64] of course you will be hitting the models
+[8:14.32] and one thing one disclaimer when you
+[8:15.84] want to do this when you want to work
+[8:16.96] with any of this model you need to add
+[8:19.12] some credits I think Gemini provides you
+[8:21.60] some free credits but when I was using
+[8:24.00] it it was not working properly sometime
+[8:26.24] it was working sometime it was not
+[8:27.52] giving you response so it's better to
+[8:30.00] add some amount of dollars maybe one or
+[8:33.36] two dollars should be enough if you're
+[8:34.80] working with image or video generation
+[8:36.56] which will consume lot of tokens uh
+[8:39.04] again all these things tokens things
+[8:40.80] we'll talk about that in sometime may
+[8:43.04] not be in this video but we'll talk
+[8:44.72] about it but uh yeah so this you can you
+[8:47.76] have to add so you can choose any of
+[8:49.36] this I'll be using anthropic okay so I
+[8:52.80] was doing openAI in previous videos but
+[8:55.36] now I'll go with anthropic I feel it's
+[8:57.84] doing very good in terms of responses
+[9:00.48] let me know your thoughts in the
+[9:01.60] comments which model you prefer uh but
+[9:04.40] as as we as I mentioned you know we are
+[9:06.56] going to use springi so it doesn't
+[9:07.84] matter which model you use the code will
+[9:10.00] remain same the the configuration will
+[9:11.84] change and dependency will change. Okay.
+[9:14.56] So here if I go to Spring AI, so this is
+[9:17.92] what we have talked about. Now Spring AI
+[9:20.72] got its inspiration from lang chain and
+[9:23.20] llama index uh but not completely
+[9:25.68] copied. Inspiration is good but they
+[9:28.16] have done things bit differently and if
+[9:29.92] you're not sure about AI concepts again
+[9:31.68] I'm trying I will try to explain those
+[9:33.28] things but I would also recommend you to
+[9:34.96] go to spring AI docs. Uh they have very
+[9:37.36] good documentation and the best thing is
+[9:38.96] spring AI 2.0 0 version has launched.
+[9:42.00] It's still into M2. Uh G will be
+[9:44.48] available soon. And if you look at this
+[9:46.56] tab which is AI uh concepts, there are
+[9:49.44] different uh concepts here. You can go
+[9:51.12] through it. As I mentioned, we are going
+[9:52.96] to talk about these concepts step by
+[9:54.48] step. But there are different concepts
+[9:56.08] here. Maybe sometime I will refer the
+[9:57.84] same page to explain you certain
+[9:59.60] concepts. Now let me take you to a page
+[10:02.72] which is talks about chat client API.
+[10:05.44] Again we will not be going in detail.
+[10:07.12] What I want to show you is the code. Now
+[10:08.96] irrespective of which model you're
+[10:11.44] using. So if you look at the code this
+[10:13.60] is a code a simple code of talking to a
+[10:16.08] model. So this is your controller simple
+[10:17.76] controller in which you got chat client.
+[10:19.44] No way we are mentioning is it uh it is
+[10:21.92] open AI client or antropic client. We
+[10:25.28] are simply saying it's a chat client and
+[10:26.96] then you can simply hit a prompt. Okay.
+[10:30.24] Yes. In the configuration you have to
+[10:31.76] mention. So I think they don't have the
+[10:33.52] configuration mentioned anywhere. No but
+[10:35.36] I will show you where do you put that.
+[10:37.28] Is it anthropic or is it OpenAI? Cool.
+[10:39.60] So this is how it helps you. Now let's
+[10:42.08] see how do you create a project in
+[10:45.04] Spring AI and anything I'm missing
+[10:47.44] before we move to creating a project. So
+[10:50.24] there are different uh options here. So
+[10:52.40] you can see it supports all the major
+[10:53.84] providers. We got uh Antropic, OpenAI,
+[10:56.16] Microsoft, Amazon, uh Google and Olama.
+[10:58.80] So yes you can you can use local models
+[11:01.28] running with the help of Olama and you
+[11:02.80] can connect it. We got chat completion,
+[11:04.56] embedding, text to image, uh audio
+[11:07.36] transcription, text to speech and
+[11:09.12] moderation. And we get different option.
+[11:10.72] You get structured outputs. Uh we can
+[11:12.80] also work with different vector database
+[11:14.32] providers. Again, what what is vector
+[11:15.68] database? We'll talk about that. But in
+[11:17.04] case if you know uh it supports
+[11:18.72] different providers here as you can see
+[11:20.08] the list. Uh we also have an option of
+[11:22.00] tool calling which is a basic of which
+[11:24.64] is a foundation for agentic AI. Uh so
+[11:27.52] that is the option. Then you get the
+[11:29.36] option of observability.
+[11:31.44] uh then you can evaluate the models and
+[11:34.96] anything important. Yeah. So yeah we
+[11:36.80] have we have different options uh AI
+[11:39.12] concepts will go step by step one by one
+[11:42.48] but if you go to references and if you
+[11:44.96] are very specific about the models so if
+[11:46.80] you expand this the different chat
+[11:49.04] models you can work with anthropic azure
+[11:51.84] openai deepse
+[11:54.16] uh Google has different models you can
+[11:56.64] check them out and yeah okay so we got
+[11:59.60] this new option which is openai SDK
+[12:01.84] never tried this but maybe some of the
+[12:04.16] video I will try to use this. So we just
+[12:06.56] have to use the API key. Okay, it's from
+[12:11.12] the Azure. Okay, there's something I
+[12:14.64] need to explore.
+[12:16.56] We'll check that. So we also have the
+[12:18.48] support of MCP. So we can build MCP
+[12:20.40] servers with the help of uh Spring AI.
+[12:23.20] Uh drag is there. Okay. So now let's see
+[12:25.76] how do we create a Spring AI project.
+[12:27.84] It's very easy actually. Now if I go to
+[12:29.60] Spring Initializer, I think that's where
+[12:31.52] you normally create your Spring Boot
+[12:32.88] project. Uh I will choose Maven because
+[12:35.44] some of the uh models the SDK they
+[12:39.20] provide only supports Maven. So we'll
+[12:40.80] choose Maven here. The language is Java.
+[12:42.72] Uh for the spring boot we got Spring
+[12:44.40] Boot 4. So we'll use that. And uh we can
+[12:47.28] provide the example here. The group name
+[12:50.24] which is com.tiscoco
+[12:53.36] and demo I will say spring AI and then
+[12:56.72] the packaging will be jarred based on
+[12:59.12] this will be using Java 25. uh do you
+[13:01.60] want properties yaml? I will stick to
+[13:04.08] properties. And now let's add the
+[13:05.84] dependency. Of course, I want to create
+[13:07.92] a spring boot pro spring web project. So
+[13:09.92] we'll add that. Additionally, I want
+[13:12.64] spring AI as well. Now when I say AI,
+[13:15.04] you will see a lot of options here. I'm
+[13:16.88] going to select anic. So let's do that.
+[13:19.76] In fact, let me just select Gemini
+[13:21.44] first. Now if you look at Gemini which
+[13:24.32] is so vortex AI option we have but
+[13:27.28] Google genai only supports 3.5
+[13:30.88] springboard 3.5 and less than four and I
+[13:33.36] don't want to use vortex at this point
+[13:34.96] so maybe in future they will add this
+[13:36.88] support if you say open AI you can add
+[13:39.36] open AI here with supports but since we
+[13:41.76] want anthropic we'll select that
+[13:43.76] antropic claude and that's it uh we can
+[13:45.68] just click on explore just to verify the
+[13:48.32] things so we are using spring boot 4
+[13:50.48] which is here spring boot code and then
+[13:52.64] the spring AI version is this. So 2.0.0
+[13:56.88] and these are the dependencies we
+[13:58.08] adding. So we adding spring starter MVC
+[14:00.48] web MVC and the spring AI starter model
+[14:04.08] Android andic. Now once you have this
+[14:06.32] you can click on download it will
+[14:08.72] download here. I'll just unzip it. So I
+[14:10.96] got that on desktop. Unzipping done
+[14:13.04] desktop. Let me open my intellig idea.
+[14:15.20] You can use community version or you can
+[14:16.48] use ultimate version your choice
+[14:17.76] whatever you have. Let me open the
+[14:19.12] project. So this is the project. I will
+[14:20.88] click on open. Uh yes, trust. And this
+[14:24.40] is your project given to you. So if I
+[14:27.52] expand the pom uh pom xml file, I think
+[14:30.32] I have to increase the font size a bit.
+[14:32.16] Appearance. I will keep it 200. Looks
+[14:34.56] good for recording. And if I go down, so
+[14:37.20] this is the spring same thing which we
+[14:38.96] have seen. I'm just verifying things if
+[14:40.48] things are working or not. And now let
+[14:42.16] me go to src main
+[14:45.04] in the application properties. There are
+[14:46.88] certain things we have to mention here.
+[14:48.16] I will I will not mention and see what
+[14:49.84] happens. Uh I will go to the application
+[14:52.72] simple stuff and let me just run this to
+[14:54.40] check if things are working or not. The
+[14:56.80] moment I run this application and we got
+[14:59.12] an error. It says the simple API key
+[15:02.00] cannot be null. So that means when you
+[15:04.32] add the dependency for anthropic it is
+[15:06.32] looking for an API key which is not
+[15:08.08] there. So in this basically you have to
+[15:09.84] set a property for the API key. So I
+[15:11.68] will say spring AI antropic API key.
+[15:16.24] This is where you specify the key and AI
+[15:18.56] should suggest the key. But let's see
+[15:20.40] how do we get the key. So since we are
+[15:22.16] using anthropic now so let me search for
+[15:24.64] the dashboard and anthropic dashboard.
+[15:26.96] You just need to come on this page and
+[15:29.76] click on so I'm already logged in. So
+[15:31.28] you have to basically create uh account
+[15:33.84] here. So I am logged in. So if I go to
+[15:36.24] settings billing I have added some
+[15:38.56] amount here and this is the amount I
+[15:40.56] already have. So I think $2 should be
+[15:43.04] enough. And even you can get the API
+[15:45.44] keys from here or from the homepage. And
+[15:47.84] how do you create the API key? It's very
+[15:49.84] simple. You can click on create key and
+[15:52.32] mention the key name. You can say demo
+[15:54.16] and click on add. And that's it. You
+[15:57.44] will get the key. And I hope my editor
+[16:00.40] will hide this. So you just have to copy
+[16:03.60] the key and paste it there. Uh remember
+[16:06.16] when you copy the key just make sure
+[16:07.60] that you paste it somewhere safe. So
+[16:09.28] I'll go back here and I'm going to use
+[16:10.96] my old key because I've not saved it
+[16:12.96] somewhere somewhere the new key but I'll
+[16:15.28] stick to my old key. This is this is the
+[16:17.52] key which I've created before and that's
+[16:19.76] it. Once you add this key it should
+[16:21.52] work. Let's let's see what what goes
+[16:23.12] wrong. So the moment you run this uh no
+[16:25.60] error. Okay. So at this point there's no
+[16:27.12] error. Application is running but
+[16:28.64] nowhere we are using the AI feature
+[16:30.64] right. So in this basically is we have
+[16:32.80] to write some code to write a prompt
+[16:36.08] talk to the AI model. uh but the way I'm
+[16:40.16] going to do it is we can create a web
+[16:42.88] application. Okay. Uh and let's try that
+[16:46.56] in the next part. So in this we
+[16:49.44] basically created the project not doing
+[16:51.20] anything fancy here or maybe we should
+[16:52.96] do that right at least we'll make this
+[16:55.76] project as a complete project. So let's
+[16:57.44] say uh at this point in this video I
+[16:59.36] don't want to use any web feature and I
+[17:01.60] want to do it from the console. How will
+[17:03.20] I do it? Uh I have not tried this before
+[17:05.36] making a video. So this will be a
+[17:06.72] testing board for you and me in fact for
+[17:08.88] me and some learning for you hopefully.
+[17:12.88] So the first thing we need is the chat
+[17:15.12] model because see ultimately you have to
+[17:16.56] write a prompt. Okay. So let me just
+[17:18.00] write a prompt here. So I'll say string
+[17:20.48] prompt and I will say okay it has
+[17:24.08] suggested something right let's go with
+[17:25.44] that. What is the capital of France?
+[17:27.60] Okay and I want to talk to AI. So the
+[17:30.40] way I can do it is with the help of call
+[17:32.32] method. So this chat models provide you
+[17:34.40] this option of call and you can pass
+[17:36.48] your prompt here. But from where you
+[17:38.72] will get the prompt? So you will get the
+[17:40.24] prompt from the chat model. But which
+[17:42.00] chat model? Now there are two options.
+[17:44.40] If you remember when we went to this
+[17:46.24] page, there's option of chat client. But
+[17:48.16] in this video, I'm not going to use chat
+[17:49.60] client. I'm going to use chat model. But
+[17:52.56] this chat model is not abstracted. So
+[17:55.12] you have to basically use the entropic
+[17:58.16] chat model. And I will say this is chat
+[18:01.04] model equal to. Now we can say new
+[18:03.60] entropic chat model or you can use
+[18:05.76] spring container to get that. So I'll
+[18:07.84] say application
+[18:09.92] context and with the help of context you
+[18:12.88] can get a bean for this. Again not a
+[18:15.76] good way of doing this but since we I
+[18:17.60] don't want to use web so I'm just using
+[18:19.12] this technique and with the help of chat
+[18:21.68] model now you can call the prompt and
+[18:25.60] this should return you text. So I will
+[18:28.40] say response and now let's print it and
+[18:31.04] let's see what happens if we fail. If we
+[18:32.72] fail I mean if we fail we fail and then
+[18:35.28] we'll try to debug or maybe with the
+[18:36.64] help of AI we'll debug this. So let's
+[18:38.40] see let's run this application or rerun
+[18:40.32] this application and we got an error.
+[18:43.20] Okay now the error is in fact ignore the
+[18:46.24] warning here. It says it's not able to
+[18:48.08] find this model which is claw 3.7 set.
+[18:51.60] So one thing you can do is I don't know
+[18:52.96] why it is not able to find it. One thing
+[18:54.40] you can do is you can specify the model
+[18:55.92] which is actually available. Okay,
+[18:57.60] there's a suggestion. Let's try the
+[18:58.96] session and let's see if AI can actually
+[19:00.72] help us there. Okay, this is not the
+[19:03.20] actual property.
+[19:05.44] So, it's
+[19:07.20] anthropic dot chat dot
+[19:11.36] model.
+[19:13.28] Okay, it says claude but three is very
+[19:15.44] old, right? But let's see if the even 3
+[19:17.92] is working. No, same problem. So, let's
+[19:20.00] specify the model which I was using. So,
+[19:22.16] it's claude sonnet port 6. This works.
+[19:27.20] Okay, for a second I I I got scared
+[19:29.36] looking at this warning. But anyway, but
+[19:31.28] you got the answer. The capital of
+[19:32.64] France is Paris. Okay, this is working,
+[19:35.52] right? So, if you look at the code, this
+[19:36.72] is a question we have asked. Or maybe
+[19:38.40] you can you can ask it to tell me a a
+[19:42.88] joke on AI. Let's see if we can make
+[19:47.20] joke on itself. Okay. Uh there's a joke.
+[19:50.16] There are two jokes actually. Why did AI
+[19:52.40] break up with internet? because it has
+[19:54.56] too many connections but nobody really
+[19:56.64] understood it. Oh, okay. That was deep.
+[20:00.08] I asked an AI to tell me a joke. Uh, it
+[20:02.64] says error 404 human not found. Then
+[20:05.20] charged me $20 someone for that. This
+[20:08.40] was good. Okay. So, you can this is how
+[20:10.48] you can talk to the models. But again, I
+[20:12.80] know you're not happy. You want to use
+[20:14.32] chat line. You don't want to use
+[20:15.60] anthropic chat model. Next, you want to
+[20:17.84] do it with the help of controllers, not
+[20:19.68] from the main. So let's see that in the
+[20:21.92] upcoming

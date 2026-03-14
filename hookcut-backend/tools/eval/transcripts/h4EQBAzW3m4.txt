@@ -1,0 +1,594 @@
+[0:01.36] [Music]
+[0:06.08] Hello everyone, welcome back. In this
+[0:09.12] presentation, we are going to understand
+[0:11.04] about joins in SQL. Before stepping into
+[0:15.12] the topic of the day, we need to
+[0:16.96] understand what are join operations. We
+[0:20.08] have already seen about this in chapter
+[0:22.24] 2 of this playlist. In this
+[0:24.08] presentation, we are going to focus on
+[0:25.92] how join operations can be performed
+[0:28.16] between two tables in SQL. Before
+[0:31.52] stepping into the syntax and examples,
+[0:33.84] let's quickly understand the basics of
+[0:35.92] join. It is obviously one of the
+[0:38.40] fundamental operations in SQL because we
+[0:41.84] may be having a situation where the data
+[0:44.16] is distributed among multiple relations
+[0:46.72] and we need a report by taking the data
+[0:49.04] from two or more relations or tables. In
+[0:51.76] that case we need join operations.
+[0:54.40] Simply speaking the data may be residing
+[0:57.04] in multiple tables. In order to get the
+[0:59.52] data from multiple tables in a single
+[1:01.68] table then we can go for join
+[1:03.84] operations. And that is why this is
+[1:05.92] considered to be one of the fundamental
+[1:07.68] operations in SQL. So what it is going
+[1:10.48] to do? It's basically going to combine
+[1:12.80] the rows present in two relations. So
+[1:15.20] obviously it is used to combine rows
+[1:17.28] from two or more relations or tables.
+[1:20.40] what kind of relationship this join is
+[1:22.64] actually performing. When we say join is
+[1:25.36] going to combine the result from two or
+[1:27.76] more tables, obviously it is going to
+[1:30.16] establish some logical relationship,
+[1:32.16] isn't it? That is why join is considered
+[1:35.36] to establish a logical relationship
+[1:38.00] between tables. How this logical
+[1:40.24] relationship is going to be established?
+[1:42.16] Let me give you a scenario. Let's
+[1:44.16] contemplate this. We have two tables.
+[1:46.48] One is employee, another one is
+[1:48.40] department. Let us assume employee table
+[1:51.04] contains only two attributes like
+[1:52.88] employee ID and employee name.
+[1:55.52] Department table contains department ID
+[1:57.76] and department name. Do we have any
+[1:59.92] relationship between these two?
+[2:01.84] Definitely no. Because employee table
+[2:04.08] contains only employee ID and employee
+[2:06.32] name. Department table contains
+[2:08.08] department ID and department name. How
+[2:10.24] logical relationship can be established
+[2:12.16] between these two tables? We cannot
+[2:14.48] perform logical relationship between
+[2:16.40] these two tables because there are no
+[2:18.88] matching column or common column between
+[2:21.20] these two tables. So when we have a
+[2:24.24] common column or attribute between two
+[2:26.56] tables, obviously we will be able to
+[2:28.96] establish a logical relationship between
+[2:31.36] these two tables. Kindly make a note of
+[2:33.84] this. When we want to perform a join
+[2:36.28] operation, there should be a common
+[2:38.88] column between these two tables.
+[2:40.72] Otherwise, how we will be able to
+[2:42.40] establish a logical relationship? No
+[2:44.96] common columns between tables, join
+[2:47.20] cannot be performed. So, it's clear that
+[2:49.84] we need a common column in order to join
+[2:52.56] the tables. What if there are no common
+[2:55.12] columns? In that case, will we be able
+[2:57.12] to perform join operation? Definitely,
+[2:59.52] we will not be able to perform a join
+[3:01.36] operation when there are no common
+[3:03.20] columns between two or more relations.
+[3:05.36] In that case, still I want to join two
+[3:07.76] tables. What should I do? Pause this
+[3:09.84] video for a while and think about
+[3:13.16] it. I hope you all are done. In that
+[3:16.24] case, we need to go for cartesian
+[3:18.80] product. Can you recolct in relational
+[3:21.44] algebra? We have seen one of the
+[3:22.96] operations the cartesian product. What
+[3:25.60] it is going to do? It is just going to
+[3:27.92] combine all rows from one table with all
+[3:30.88] rows on the other table. Say for
+[3:32.56] example, if one table contains five rows
+[3:35.28] and another table contains six rows. So
+[3:37.92] 5 multiplied by 6 30 rows will be there
+[3:40.96] in the output when we perform cartesian
+[3:43.60] product between these two tables. Now we
+[3:45.92] need to understand how these joints are
+[3:48.00] different from cartesian product. If we
+[3:50.16] want the cartian product output there is
+[3:52.48] no restriction like we should have a
+[3:54.32] common column. A cartian product between
+[3:56.88] two tables meaning all the rows in one
+[3:59.44] table is going to be joined with all the
+[4:01.60] rows in the other table. Whereas in join
+[4:04.48] we need at least a common column. At
+[4:06.96] least one common column should be there
+[4:09.28] in order to perform join. Otherwise we
+[4:11.60] will not be able to establish a logical
+[4:14.00] relationship between the tables. I hope
+[4:16.56] the basics about the joins are clear.
+[4:19.44] Now let's see how these joins can be
+[4:22.00] performed in SQL. Let's see the various
+[4:25.04] types of joins. Here we go. The first
+[4:28.16] type of join that we are going to see is
+[4:30.32] the inner join. The second type is going
+[4:32.72] to be the left outer join. The third
+[4:34.88] type is going to be the right outer
+[4:36.64] join. The fourth type is going to be the
+[4:38.88] full outer join. And the last one we are
+[4:41.28] going to address is the natural join.
+[4:43.44] Please be noted that these are the names
+[4:46.16] in generic I have given here. Say for
+[4:48.72] example, Oracle uses the term inner
+[4:51.60] join, left outer join, right outer join,
+[4:54.00] full outer join etc. Whereas MySQL will
+[4:57.84] refer left outer join as left join and
+[5:00.56] right outer join as right join. Also
+[5:03.52] additional join operations may be
+[5:05.44] present depending on the vendors. So
+[5:07.68] before proceeding with the syntax of
+[5:09.44] join operations we need to check the
+[5:11.84] documentation of that particular
+[5:13.44] software so that we will be able to
+[5:15.68] apply the exact syntax according to the
+[5:17.92] vendor. Don't worry about this now.
+[5:20.56] Whatever we have seen theoretically in
+[5:22.72] this chapter, we are going to execute
+[5:24.80] all these things in the next chapter
+[5:26.96] which is the MySQL practicals. That time
+[5:29.76] I will be able to show you how these
+[5:31.92] join operations can be performed in
+[5:34.60] MySQL. For now we will focus on in
+[5:37.60] generic aspects joins in SQL. At first
+[5:41.12] we will start with the inner join. What
+[5:43.36] do we mean by inner join? We have
+[5:45.44] already seen about the inner join
+[5:47.28] elaborately. Now let's see how this
+[5:49.76] inner join can be done in SQL with the
+[5:52.64] help of syntax and example. In the
+[5:55.44] previous chapter we understood about the
+[5:57.44] basics. Now we are going to see some
+[5:59.68] examples in SQL. Let's see the syntax
+[6:02.56] now. Here we go. How to do join to be
+[6:06.72] precise in a join in SQL. Obviously we
+[6:10.08] are going to select the output from two
+[6:11.92] or more relations. Right? So in all the
+[6:14.24] examples whatever I am showing I'm going
+[6:16.08] to use only two tables. How to select?
+[6:18.96] We know selection can be applied on
+[6:20.88] multiple columns, right? We can retrieve
+[6:22.96] all the columns or specified columns.
+[6:25.28] Let's say if we are involving two
+[6:27.20] tables, say for example, table one and
+[6:29.44] table two. And we going to perform what
+[6:31.60] operation? The inner join, right? So I
+[6:34.08] going to perform table one inner join
+[6:36.32] table two. Obviously multiple columns
+[6:38.56] are involved. This may have n number of
+[6:40.80] columns. This may have m number of
+[6:42.56] columns. So we want to retrieve only
+[6:44.48] specified columns. The column name may
+[6:46.72] be the same in both the tables because
+[6:49.12] join requires at least one common
+[6:51.28] column. What if the column name is the
+[6:53.84] same in both the tables? In that case,
+[6:56.16] we need to resolve this conflict. Isn't
+[6:58.48] it? And that is why instead of simply
+[7:00.96] retrieving column 1, column 2, something
+[7:04.16] like this. I going to specify the table
+[7:06.64] name before the column name with the
+[7:08.56] help of a dot operator. Meaning table
+[7:11.28] 1's the specified column, table 2's the
+[7:14.80] specified column. You can use any number
+[7:17.36] of columns as per the availability in
+[7:19.76] table one and table two. Now let's go to
+[7:22.48] the syntax. Select the required columns
+[7:26.08] table 1 comma column 1 comma table 1
+[7:28.72] comma column 2. We can extend it as per
+[7:30.88] our requirement. Here I'm taking table 2
+[7:33.68] column 2. How many number of columns we
+[7:35.92] want? We can add all those things. Then
+[7:38.24] from table one inner join table two. So
+[7:41.76] here we are going to perform table one
+[7:44.24] inner join table two. And these columns
+[7:47.12] are going to be retrieved from the
+[7:49.36] output of this operation which is table
+[7:52.32] one inner join table two. So the output
+[7:54.72] of table one inner join table two is
+[7:56.80] going to be a resultant table. From that
+[7:59.36] output table we are going to retrieve
+[8:01.12] the required columns. Now what is inner
+[8:03.76] join? Inner join give the result that
+[8:06.24] are matching in both the tables. Isn't
+[8:08.56] it? So matching rows from both the
+[8:10.56] tables will be the output of inner join.
+[8:13.12] So inner join requires a condition and
+[8:15.84] that condition should be provided after
+[8:17.84] on. What is the condition? Table one's
+[8:20.80] matching column should be equal to table
+[8:23.28] 2's matching column. Remember in order
+[8:25.84] to perform an inner joining we need at
+[8:28.16] least one matching column between two
+[8:30.72] tables. We may have many matching
+[8:32.96] columns. However, we need at least one
+[8:35.60] matching column and we can choose any
+[8:37.76] matching column as per our requirement.
+[8:40.64] Here the join condition is specified
+[8:42.80] with the comparison operator is equal
+[8:44.96] to. We can use any comparison operators
+[8:47.60] like greater than, greater than or equal
+[8:49.60] to, lesser than, lesser than or equal to
+[8:52.08] or not equal to depending on our
+[8:54.68] requirement. So this is the syntax of
+[8:57.20] inner join. When I show some examples
+[8:59.36] then it will be easy for you to
+[9:00.80] understand. Let's see an example in this
+[9:02.64] slide. Now in the next slide I will
+[9:04.56] bring two tables. I will apply inner
+[9:06.48] join and I will show you the output of
+[9:08.88] inner join. Now what we are required to
+[9:11.04] focus on is the example. Here we go.
+[9:14.24] Just see I'm selecting from employee
+[9:17.60] tables employee ID, department tables
+[9:20.96] department name columns. Can you see
+[9:22.80] here? This is employee table. This is
+[9:24.88] department table. From employee table
+[9:27.04] I'm retrieving employee ID. From
+[9:29.28] department table I'm retrieving
+[9:31.12] department name from employee inner join
+[9:34.80] department. So when we join these two
+[9:37.12] tables we get the output table. From the
+[9:40.08] output table we are retrieving these two
+[9:42.32] columns because in the output table we
+[9:44.72] may have the same number of columns
+[9:46.32] appearing twice. One may be from this
+[9:48.40] table. Another may be from this table.
+[9:50.48] If the column name is the same if we
+[9:52.48] simply mention the column name our
+[9:54.48] system doesn't know which column name we
+[9:56.48] are referring to. whether we are
+[9:57.84] referring to the output from this table
+[9:59.68] or from this table and we resolve this
+[10:02.00] ambiguity by giving the fully qualified
+[10:04.48] name like this table name dot employee
+[10:07.60] ID column name let's see the condition
+[10:10.24] for this inner join employee department
+[10:12.96] ID is equal to department ID can you see
+[10:16.88] here there is a common column department
+[10:19.52] id that is present on both the tables
+[10:22.00] employee table as well as department
+[10:24.24] table let's say if we are simply
+[10:26.00] retrieving department ID I mean
+[10:28.36] department ID the output of this join
+[10:31.28] will contain two columns department ID
+[10:33.28] and department ID one from employee
+[10:35.52] another from department so this select
+[10:38.08] doesn't know which column I am referring
+[10:40.00] to whether the column from this or this
+[10:42.88] but this approach will help us resolve
+[10:44.96] this ambiguity now let's understand this
+[10:47.52] example with two tables I'll bring this
+[10:50.00] example to a new slide here we go you
+[10:53.04] see the same example select employee
+[10:55.44] employee ID E comma department do
+[10:57.84] department name from employee inner join
+[11:00.32] department. So here is the join
+[11:02.08] operation and the join condition is on
+[11:05.36] employee tables employee ID should be
+[11:07.60] equal to department tables department
+[11:10.08] ID. Let me bring in both the tables.
+[11:12.16] What are the tables? Employee and
+[11:14.08] department. Here we go. Here is the
+[11:16.48] employee table. Here is the department
+[11:18.80] table. Just see employee table contains
+[11:21.20] three columns. Employee ID, department
+[11:23.52] ID, employee name. Department table
+[11:26.08] contains department ID, department name
+[11:28.16] and department zone. We need to
+[11:30.08] understand whether joins can be
+[11:31.92] performed on this or not. We can see
+[11:33.84] join can be performed on this because
+[11:35.60] there is a common column department ID
+[11:38.16] and department ID here as well. So
+[11:40.64] obviously join can be performed.
+[11:42.64] Remember the name need not match in
+[11:45.04] order to perform the join. This may have
+[11:46.96] a different name. This may have a
+[11:48.48] different name. No problem in that. Only
+[11:50.72] thing is the data type of this should
+[11:52.96] match. If the data type is matching then
+[11:55.60] we can perform the join operation. And
+[11:57.84] that's why here we are giving the join
+[11:59.76] condition as employee tables department
+[12:02.00] ID should be equal to department tables
+[12:04.16] department ID. So we are comparing this
+[12:06.96] department ID with this department ID.
+[12:09.60] Now let's see how inner join works.
+[12:11.84] Inner join actually works on the
+[12:14.40] matching rows from both the tables.
+[12:16.40] Right? Let's see the matching rows. Two
+[12:18.24] is here. Two is here. Three is here.
+[12:20.96] Three is here. So the output is going to
+[12:23.20] contain six columns. This part please
+[12:25.76] focus on this part. This is going to
+[12:28.00] contain three columns here, three
+[12:30.24] columns here. So obviously six columns
+[12:32.32] will be there from this output. From
+[12:34.48] these six columns we are going to
+[12:36.16] retrieve only two columns. Employee ID
+[12:39.20] from employee table which is this and
+[12:41.60] department name from this because this
+[12:44.56] table does not contain department name.
+[12:46.48] Now we can see two rows are going to be
+[12:48.64] there in the output. They are 101 which
+[12:52.08] is this 101 is actually Sujit Singh who
+[12:55.44] is working for the department ID 2.
+[12:57.52] What's the department name? Department
+[12:59.68] name is finance. So we are getting the
+[13:02.00] output 101 finance as the first row and
+[13:05.36] we also get 103. Why? Because matching
+[13:08.24] rows from both the table. We have two
+[13:10.24] and three are matching in both the
+[13:12.24] tables and that's why inner join gives
+[13:14.88] matching rows from both the tables. So
+[13:16.72] we get 103 Risha
+[13:19.32] upput. While retrieving we are not
+[13:21.60] taking the name we are getting the
+[13:23.28] department name which is sales because
+[13:25.20] three is belonging to sales. So 103
+[13:28.80] sales. So the output of inner join is
+[13:31.68] going to be only two rows. Why? Because
+[13:35.52] it's going to retrieve the data based on
+[13:37.84] matching rows from both the tables. I
+[13:40.40] hope the explanation is clear to you. In
+[13:42.64] case we want name I mean employee name
+[13:45.52] and department zone as well. You can add
+[13:48.00] those columns here by simply giving a
+[13:50.40] comma employee do employee name,
+[13:54.56] department.E department zone. This is as
+[13:57.60] per our requirement. We can extend the
+[13:59.84] number of columns. I hope inner join is
+[14:02.40] clear to you. As we are now clear with
+[14:04.48] this inner join, I will start explaining
+[14:06.88] the other joins easily. The reason is we
+[14:09.68] are going to use the same two tables
+[14:11.84] employee as well as department. Let's
+[14:14.56] now move on to the second type of join
+[14:16.40] that we are going to see today which is
+[14:18.48] the left outer join. Let's see the
+[14:20.64] syntax. The same syntax only difference
+[14:23.28] is instead of inner join we are going to
+[14:25.28] use the keyword left outer join. See
+[14:27.60] here the syntax selecting table one
+[14:29.92] column 1 table two column 2 as per our
+[14:32.16] requirement from table one left outer
+[14:35.68] join table two and the join condition is
+[14:38.24] on table 1's matching column is equal to
+[14:41.20] table 2's matching column remember as I
+[14:44.08] already mentioned any join that we want
+[14:46.32] to perform we need a common column that
+[14:48.40] is available in both the relations or
+[14:50.72] tables let's see the example selecting
+[14:53.84] employee tables employee ID department
+[14:56.48] tables department name from employee
+[14:59.28] left out of join department on the join
+[15:02.40] condition employees department ID should
+[15:04.64] be equal to department's department ID
+[15:07.20] let me bring in the same example to the
+[15:08.96] next slide like this the same example
+[15:11.68] you can see it here but this time it's
+[15:14.24] left out a join now let me bring in both
+[15:16.80] the tables the employee table and the
+[15:18.96] department table in a join just combined
+[15:21.76] matching rows from two tables and that's
+[15:23.76] why we get two and three because two and
+[15:26.40] alone are matching in both the tables.
+[15:28.56] What about left outer join? Left outer
+[15:30.88] join means what is the left side of this
+[15:33.44] operation? Left outer join. What is the
+[15:35.52] left side? Employee. So all the rows
+[15:38.32] from employee table will be there in the
+[15:40.16] output and matching rows from the right
+[15:42.88] hand side table. Remember what operation
+[15:45.44] it is? Left outer join meaning all the
+[15:48.56] rows from left hand side and only
+[15:50.80] matching rows from the right hand side.
+[15:52.72] Meaning in the output we will be getting
+[15:55.36] the employee ID because that is what we
+[15:57.60] are retrieving. We will get 101 102 and
+[16:01.08] 103. But only matching rows from the
+[16:04.16] right hand side. Matching rows are 2 and
+[16:06.80] 3. Right? 2 and 3. However, for four
+[16:10.40] there is no matching row. What value
+[16:12.24] will be there in the output? It will be
+[16:14.32] a null value. I already told you about
+[16:16.48] this in the previous chapter. So the
+[16:18.40] output is going to contain all the rows
+[16:20.72] from the left hand side table which is
+[16:22.48] employee table and that is why it is
+[16:24.80] mentioned here because left hand side is
+[16:27.20] employee table. So we get all the
+[16:29.28] employee ids 101 102 and 103 from left
+[16:33.68] hand side table and only matching rows
+[16:36.16] from the right hand side table. Matching
+[16:37.92] rows are 2 and 3. Right? For two it is
+[16:40.56] finance, three it is sales. Can you see
+[16:42.72] here? Two 101 is two. So 101 is finance.
+[16:46.96] 103 is sales because Risha up who is
+[16:50.40] having the employee ID 103 is belonging
+[16:52.80] to the department 3 means sales. What
+[16:55.76] about four? Actually the employee ID
+[16:58.32] pertaining to this department ID four is
+[17:01.64] 102. 102 will be there because it's a
+[17:04.64] left outer join. What about the value
+[17:06.96] four which is not there here in the
+[17:08.96] right hand side table for which it uses
+[17:11.36] a null value. So this is about the left
+[17:14.48] outer joint. With this knowledge, let's
+[17:16.48] move on to the right outer join. In the
+[17:18.24] left outer join, all the rows from the
+[17:20.08] left hand side table will be appearing
+[17:21.52] in the output. In right outer join, all
+[17:24.32] the rows from the right hand side table
+[17:25.84] will be there in the output. That's the
+[17:27.68] difference between left outer join and
+[17:29.92] right outer join. So the syntax is going
+[17:32.16] to be the same with the only difference
+[17:34.48] instead of left outer join it will be
+[17:36.72] right outer join. And the example is
+[17:38.96] also going to be the same with only
+[17:41.04] difference is instead of the previous
+[17:42.80] example which had left out join here it
+[17:45.44] is going to use right outer join. That's
+[17:47.76] it. Now let's bring in the same example
+[17:50.16] here. Here we go. The same example
+[17:52.88] operation is right outer join. Let's
+[17:55.04] bring in the same two tables employee
+[17:56.88] and department. Now we know output is
+[17:59.60] going to contain all the department
+[18:01.92] names because department table is the
+[18:03.84] right hand side table. So we get all the
+[18:06.48] department names like operations,
+[18:08.48] finance and sales and only matching rows
+[18:11.44] from the left table. What are the
+[18:13.28] matching rows? Two and three. Right? So
+[18:16.48] employee ids pertaining to two and three
+[18:18.80] will be there in the output table. And
+[18:20.80] in this table you can see there is no
+[18:22.48] one working for operations. But
+[18:24.72] operations also will be there in the
+[18:26.40] output because we are retrieving all the
+[18:28.96] values from right hand side table. The
+[18:30.72] department name will contain all the
+[18:32.40] values in the output. Right now if you
+[18:35.12] match the left hand side we can see for
+[18:37.76] finance it's 101 because Sujit is
+[18:40.64] working for department ID 2 and that's
+[18:43.12] why 101 means finance is there 103 sales
+[18:47.12] is also there because sales 3 means it's
+[18:51.16] 103 can you see here but what about
+[18:53.92] operations no one in this table is
+[18:56.24] working for operations so that is why we
+[18:58.48] can see the employee ID as null in the
+[19:01.04] join operation if there are no values It
+[19:03.84] uses a special type of value. What's
+[19:06.24] that? Null value. Null means it's
+[19:09.36] neither zero nor blank. It could be
+[19:12.08] unknown or missing or not available. I
+[19:15.44] hope right outer join is also clear to
+[19:17.36] you. Now let's step into the next
+[19:19.44] category, the full outer join. In the
+[19:21.60] left outer join, we got all the rows
+[19:23.68] from the left hand side table and
+[19:25.20] matching rows from the right hand side
+[19:26.64] table. In right outer join, we got all
+[19:29.04] the rows from the right hand side table
+[19:30.96] and matching rows from the left hand
+[19:32.80] side table. If we combine both, it's
+[19:35.44] full outer join. Meaning both matching
+[19:38.56] and non-matching rows from both the
+[19:40.40] table will be there in the output. The
+[19:42.40] syntax is going to be the same. So I'm
+[19:44.40] not going to spend more time on this
+[19:46.16] because the only difference here is
+[19:48.16] instead of left or right or inner, we
+[19:50.32] are going to use the full outer join
+[19:52.40] keyword. So full outer join here also
+[19:54.96] full outer join between these two
+[19:56.88] tables. Let me bring in the same example
+[19:59.12] to the new slide here. Here we go. Let
+[20:01.68] me bring in both the tables. Employee
+[20:03.92] and department. Now let's analyze how
+[20:06.40] the output looks like. So our output
+[20:08.72] will definitely contain employee ID all
+[20:12.32] three employee ids also department name
+[20:15.92] all three department names. Only thing
+[20:18.32] is wherever it is not matching it uses a
+[20:21.36] null value. Can you see here in the
+[20:23.20] output we get 101 102 and 103 from left
+[20:27.68] hand side all the values. Similarly from
+[20:30.16] the right hand side also all the values
+[20:32.48] operations sales and finance. But if you
+[20:35.44] see 102 is working for department ID 4
+[20:39.36] that doesn't exist here. So it is a null
+[20:41.76] here. Similarly operations I mean the
+[20:44.72] department ID 1 there is no one working
+[20:47.12] for department ID 1 and that's why we
+[20:49.76] get null here for operations. I hope
+[20:52.64] full outer join is also clear to you.
+[20:54.88] Now let's move on to the last type of
+[20:57.12] join which is the natural join. Natural
+[21:00.32] join is equivalent to inner join. In
+[21:03.28] inner join we explicitly mention the
+[21:05.36] condition. Right? If you see just
+[21:07.60] recolct the inner joint topic we
+[21:10.08] explicitly mention the condition. I mean
+[21:12.16] the join condition table one's which
+[21:14.56] column should be compared with table
+[21:16.48] two's which column this we explicitly
+[21:18.96] mentioned in the inner join if we don't
+[21:21.28] explicitly mention that we give the task
+[21:23.76] to the database software to find the
+[21:25.84] matching column and do the join
+[21:27.60] operation then it is called as natural
+[21:30.00] join to be precise inner join we mention
+[21:33.28] the condition I mean the join condition
+[21:35.52] explicitly using the keyword on whereas
+[21:38.24] in natural join we won't specify the
+[21:40.88] condition explicitly and system will
+[21:43.20] implicitly take a join condition and
+[21:45.28] perform the operation. Remember in both
+[21:48.24] the tables there should be at least one
+[21:50.16] column having the similar data type and
+[21:52.72] the syntax is selecting the required
+[21:55.28] columns from table one natural join
+[21:57.60] table two. Can you see here there is no
+[21:59.60] on keyword and condition because we ask
+[22:02.56] our system to implicitly do this join
+[22:05.04] without explicitly mentioning the join
+[22:07.28] condition. Obviously the example looks
+[22:09.36] like this. Selecting the required
+[22:11.20] columns from employee table, natural
+[22:13.60] join department table. Let me bring in
+[22:16.24] the same example here. See here,
+[22:19.36] selecting the required columns from
+[22:21.28] employee natural join department.
+[22:23.76] Obviously, we'll have the same two
+[22:25.36] tables. Employee table and the
+[22:27.04] department table. Now you see I didn't
+[22:29.84] explicitly mention the condition. The
+[22:31.92] matching data type here will be the
+[22:34.08] department ID. It's not just the name is
+[22:36.80] matching. Even the data type is matching
+[22:39.04] here. Right? We don't know in employee
+[22:41.20] name it could be var 50 whereas
+[22:43.52] department name could be var 40. Now you
+[22:46.16] may be thinking what could be the
+[22:48.00] comparison operator used for this joint
+[22:50.24] condition because we have comparison
+[22:52.88] operators like is equal to not equal to
+[22:56.08] greater than or greater than equal to
+[22:58.32] lesser than or lesser than equal to.
+[23:00.72] Which one it will use? By default it
+[23:03.36] will use an equin conditional operator
+[23:06.00] which is is equal to. So the comparison
+[23:08.56] will be like this. Employee table I mean
+[23:11.52] employee do department ID is equal to
+[23:14.64] department tables department ID.
+[23:17.04] Remember natural join will not use
+[23:18.88] operators like greater than or lesser
+[23:20.88] than or something like this. It will be
+[23:22.88] an equin. So the output is going to
+[23:25.20] contain the same output like the inner
+[23:27.44] join because basically it is an inner
+[23:30.64] join with department ids comparison. And
+[23:34.08] that's it guys. I hope the various types
+[23:36.32] of join operations are clear to you.
+[23:38.64] Don't worry about the demonstration of
+[23:40.48] these two tables. We are going to see
+[23:42.40] that in the next chapter using MySQL
+[23:44.88] software with the same two tables for
+[23:47.44] performing various join operations in
+[23:50.20] MySQL. I hope the session is
+[23:52.24] informative. I'll see you in the next
+[23:54.16] presentation and thank you for watching.
+[23:58.02] [Applause]
+[24:00.21] [Music]

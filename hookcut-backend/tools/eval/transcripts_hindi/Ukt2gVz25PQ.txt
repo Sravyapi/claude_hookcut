@@ -1,0 +1,330 @@
+[0:00.24] There are three types of computer people
+[0:01.92] in this world. Users, programmers, and
+[0:04.32] hackers. The user just wants boring
+[0:06.40] software to make boring spreadsheets to
+[0:08.32] get boring stuff done at work. But in
+[0:10.16] their naivity, users often get
+[0:11.92] penetrated by hackers with high levels
+[0:13.84] of RZ who employ social engineering to
+[0:16.32] steal personal data, intimate photos,
+[0:18.40] and crypto wallets. But then you've got
+[0:20.40] programmers. They're the unsung heroes
+[0:22.40] who make all the software in the world
+[0:23.84] work. But they too get penetrated by
+[0:25.92] hackers. If a programmer leaves the back
+[0:27.76] door open to their mainframe, it could
+[0:29.52] lead to catastrophic consequences that
+[0:31.60] cost them, their job, and their employer
+[0:33.52] billions of dollars. The lesson to be
+[0:35.28] learned here is that you want to be the
+[0:36.88] one doing the penetrating, not some
+[0:38.48] stranger in a foreign country who
+[0:39.92] doesn't even care about your feelings.
+[0:41.36] In today's video, you'll learn the
+[0:42.80] fundamentals of ethical hacking and
+[0:44.72] penesting by looking at 10 free and
+[0:46.96] open- source tools that you can use
+[0:48.56] right now. All of which are available by
+[0:50.48] default on Kali Linux, a DRO optimized
+[0:53.20] for ethical hacking. By the end of this
+[0:55.12] video, you'll be a legit wannabe hacker
+[0:57.28] who can take down entire nations. But if
+[0:59.36] you like to do bad things, you need to
+[1:00.96] turn this video off right now. The tools
+[1:02.88] in this video, if used non-consensually,
+[1:04.96] it could break many international laws
+[1:06.64] that land you in prison. So never do
+[1:08.32] penetration testing on a website or
+[1:10.16] network without permission. But now that
+[1:11.92] all the bad guys have clicked off this
+[1:13.28] video, let's learn how to use some of
+[1:14.88] the most powerful and dangerous hacking
+[1:16.64] tools. To follow along, I would highly
+[1:18.72] recommend installing Kali Linux. And the
+[1:20.80] desktop version is awesome. Although
+[1:22.40] Microsofties can install it via WSL or
+[1:24.96] if you don't want to use Cali, you can
+[1:26.48] just install each one of these hacking
+[1:27.92] tools individually. But the best way to
+[1:29.92] get started is to spin up your own
+[1:31.52] virtual private server on Hostinger, the
+[1:33.92] sponsor of today's video. Their platform
+[1:36.00] gives you the power and flexibility to
+[1:37.84] run anything you want without locking
+[1:39.60] you into a complicated and expensive
+[1:41.52] cloud platform. You can run a basic
+[1:43.20] Linux server like Arch with powerful
+[1:45.12] hardware like NVMe SSD storage and AMD
+[1:48.24] epic chips. You can easily manage
+[1:50.00] containers with a dockervp and their
+[1:52.32] free docker manager or self-host entire
+[1:54.64] backends like superbase with a single
+[1:56.80] click and zero config nightmares. But
+[1:59.20] today I'm using hostinger to run kali
+[2:01.44] linux. And after launching the VPS with
+[2:03.44] just a few clicks, I can SSH into it
+[2:05.60] with my password. And now our hacking
+[2:07.36] journey begins. The first tool you need
+[2:09.12] to know about is end mapap. It's like
+[2:10.80] the peeping tom in your neighborhood who
+[2:12.48] looks through all the windows in your
+[2:13.68] house without actually breaking in. On a
+[2:15.84] network like the one you're connected to
+[2:17.28] right now to watch this video, there's
+[2:18.88] likely multiple hosts connected to it
+[2:20.72] like your computer, your PlayStation,
+[2:22.48] and your smart lock. And the purpose of
+[2:24.08] NAPAP is to map out a network. It does
+[2:26.24] this by sending packets over an IP
+[2:28.00] range. It then analyzes their responses
+[2:30.08] to figure out which ports are open,
+[2:31.60] which operating systems they use to help
+[2:33.52] you find back doors to exploit. Like if
+[2:35.44] grandpa misconfigured something on his
+[2:37.12] network, you can hack his printer to
+[2:38.64] send him a message. To use it, simply
+[2:40.40] use the end mapap command followed by an
+[2:42.40] IP address you have access to, like your
+[2:44.32] local network or even a URL that you
+[2:46.32] have permission to penetrate. If we do
+[2:47.76] that on a website, you'll notice we get
+[2:49.44] the IP address back. And it found that
+[2:51.12] ports 80 and 443 were open. That's
+[2:53.44] pretty cool. But we can also do a more
+[2:55.04] aggressive scan with the A option. This
+[2:57.20] will not only scan the network, but also
+[2:59.28] try to detect the operating systems, and
+[3:01.60] we'll use something called tracer route
+[3:03.12] to track the path of the packets across
+[3:04.96] the entire network, which can help
+[3:06.56] detect misconfigurations that we can
+[3:08.32] exploit. If you're interested in packets
+[3:10.08] though, another tool you'll need to know
+[3:11.44] about is Wireshark. It's like that guy
+[3:13.28] at a party who tries to eavesdrop on
+[3:15.12] every conversation. It allows you to
+[3:16.80] inspect what's happening on the network
+[3:18.24] at a microscopic level. You'll want to
+[3:20.08] use the guey on this one because it
+[3:21.68] collects tons of data from hundreds of
+[3:23.36] different protocols which are all
+[3:24.88] captured in real time and can be
+[3:26.40] analyzed offline. For example, if you
+[3:28.48] record the traffic on your network right
+[3:30.08] now and notice all this weird traffic
+[3:31.76] going to an IP address in North Korea,
+[3:33.68] you can inspect the actual payload and
+[3:35.36] might find out that they have access to
+[3:36.88] those photos that were intended for only
+[3:38.88] you and your future ex-wife to see. And
+[3:40.80] now you might be radicalized and ready
+[3:42.24] to fight back. Metas-ploit is perhaps
+[3:44.16] the most powerful hacking framework out
+[3:45.76] there. It's like a Swiss Army knife with
+[3:47.28] an AK-47 attached to it that allows even
+[3:49.60] the most unskilled script kitty to
+[3:51.12] launch an attack. For example, we might
+[3:53.04] be able to gain access to a Windows
+[3:54.72] machine with a reverse shell. Thanks to
+[3:56.40] the Eternal Blue vulnerability, open up
+[3:58.32] the Metas-ploit console and search for
+[4:00.16] Eternal Blue. That should bring up a
+[4:01.92] list of potential Windows targets. We
+[4:03.68] know that Grandpa is still on Windows 7.
+[4:05.44] So, let's go ahead and use that exploit.
+[4:07.12] From there, we can set a payload to use
+[4:08.88] a reverse shell and configure the local
+[4:10.80] host to our own IP address. And then
+[4:12.80] finally, run the exploit command.
+[4:14.48] Congratulations, you just made a
+[4:16.08] successful penetration. You can now
+[4:17.68] access all the files on this computer,
+[4:19.36] change the desktop background, and
+[4:21.04] install even more malware. But
+[4:22.64] Metas-ploit is almost too powerful, and
+[4:24.64] if you use it, you'll miss out on a lot
+[4:26.32] of cyber security learning
+[4:27.52] opportunities. The next tool you need to
+[4:28.96] know about is Air Crack. Like the name
+[4:30.88] implies, it's for hacking those magical
+[4:32.88] invisible packets floating around in the
+[4:34.72] air called Wi-Fi. When you're at
+[4:36.32] Starbucks enjoying a soy latte coding a
+[4:38.24] NodeJS app, there could be a guy behind
+[4:39.92] the dumpster using air crack who just
+[4:41.76] ran the Airmon command, but followed by
+[4:43.76] air dump to find your network as the
+[4:45.76] perfect target. He then proceeded to run
+[4:47.44] air crack to crack the Wi-Fi protected
+[4:49.76] access key and can now pull all the
+[4:51.44] packets out of thin air floating on this
+[4:53.12] network. If you're connected to a
+[4:54.48] regular unencrypted HTTP website, your
+[4:57.20] sensitive data could be intercepted.
+[4:58.96] That's why you always want to make sure
+[5:00.16] to use HTTPS when submitting forms with
+[5:02.48] personal data because even if a hacker
+[5:04.16] intercepts those packets, they'll be
+[5:05.60] encrypted. Luckily though, the cops just
+[5:07.28] arrested this guy because using air
+[5:08.96] crack on a network without permission is
+[5:10.72] highly illegal. But now it's time to
+[5:12.72] talk about passwords. normies who watch
+[5:14.80] Hollywood movies think that hackers get
+[5:16.80] access to the mainframe by running some
+[5:18.72] program that cracks their password.
+[5:20.40] >> I could launch a cyber nuke, but [music]
+[5:21.84] it'll completely fry your system.
+[5:23.28] >> And believe it or not, Hollywood movies
+[5:24.96] about hacking are 100% accurate. Kali
+[5:27.52] Linux has multiple password cracking
+[5:29.36] tools like John the Ripper and Hydra.
+[5:31.52] But the easiest tool to learn in my
+[5:32.96] opinion is Hashcat. First though, it's
+[5:35.20] crucial to understand that nobody in
+[5:37.12] their right mind stores a plain text
+[5:38.96] password in a database. Instead,
+[5:40.88] passwords get hashed with a one-way
+[5:42.64] algorithm like Shaw or BCrypt to then
+[5:44.96] salt them with another random string to
+[5:46.64] make them even more difficult to crack.
+[5:48.56] Now, even if somebody steals the
+[5:50.00] database, it's still almost impossible
+[5:52.00] to reverse engineer the hash back to the
+[5:53.92] original password. The key word here,
+[5:55.76] though, is almost. Let's imagine I found
+[5:57.76] this hash for the president's login
+[5:59.28] credentials to access the nuclear
+[6:01.12] Armageddon launch button website.
+[6:02.72] Hashcat allows us to run a variety of
+[6:04.64] different strategies to figure out the
+[6:06.24] original text value of this hash. like
+[6:08.32] we could try to brute force every
+[6:09.84] possible string combination. But a more
+[6:11.92] common technique is to use a file like
+[6:13.92] rocku.txt
+[6:15.44] which contains over 14 million common
+[6:17.52] passwords. Once we have that, we can
+[6:19.28] then use hashcat and specify a hashing
+[6:21.84] algorithm which in this example is MD5
+[6:24.40] because it can be cracked in just a few
+[6:26.00] seconds. But in real life with a hashing
+[6:28.08] algorithm like brypt, it might take
+[6:29.84] multiple days to go through the rocky
+[6:31.44] file. In any case, it looks like
+[6:32.96] President Kamacho used a weak password
+[6:34.88] and forgot to enable 2FA, which means
+[6:36.96] it's finally time to kick off
+[6:38.24] Armageddon. But you might be wondering
+[6:39.84] how I even found this top secret
+[6:41.36] website. The skipfish is a tool for
+[6:43.20] finding vulnerabilities on websites. It
+[6:45.28] will recursively crawl an entire website
+[6:47.44] and in the process scan for
+[6:48.80] vulnerabilities like cross-sight
+[6:50.32] scripting, SQL injection, and other web
+[6:52.72] application screw-ups. It provides this
+[6:54.48] nice HTML report. And what's awesome
+[6:56.56] about it is that if you've already
+[6:57.76] hacked a username and password, you can
+[6:59.76] provide those credentials to also crawl
+[7:01.44] the deep web beyond what's available to
+[7:03.28] the public. Then when you find
+[7:04.48] vulnerabilities, you can use tools like
+[7:06.24] Cross-Side Scriptor to install Worms,
+[7:08.48] just like my hero Sammy did to MySpace
+[7:10.56] back in 2005. Now, in order to be a
+[7:12.80] successful cyber criminal, you need to
+[7:14.56] think like law enforcement and use their
+[7:16.48] tools like Foremost, a forensic data
+[7:18.64] recovery tool built on a process called
+[7:20.64] file carving. Imagine you got access to
+[7:22.48] a hard drive in Area 51 somehow, but all
+[7:24.80] the data is gone. Well, if they did a
+[7:26.56] quick format and didn't overwrite the
+[7:28.00] data, it can likely be recovered with
+[7:29.68] foremost. It doesn't even need a file
+[7:31.36] system and will scan the entire disc
+[7:33.28] image bite by bite looking for unique
+[7:35.28] patterns like the bites at the beginning
+[7:36.72] of a header to identify a JPEG. When it
+[7:38.80] finds the corresponding footer, it can
+[7:40.40] then reconstruct an image that you were
+[7:42.00] never supposed to see. And that's why
+[7:43.44] when you end up with two shots to the
+[7:44.88] back of the head, it'll be ruled a
+[7:46.24] suicide. At this point, we know how to
+[7:47.84] map networks, websites, and hard drives.
+[7:50.16] But the golden goose for any hacker is a
+[7:52.16] database which can be sold for Monero on
+[7:54.08] the dark web. The SQL map allows you to
+[7:56.08] scan a website or server to find all the
+[7:58.08] databases and map out their schemas with
+[7:59.92] all the tables and columns. Once you
+[8:01.52] have that information, you can start
+[8:03.04] launching SQL injection attacks where
+[8:04.96] you submit forms with raw SQL statements
+[8:06.96] in them to try to trick their server
+[8:08.56] into running that code. Or better yet,
+[8:10.48] print that code out and paste it on the
+[8:11.92] front of your car and blow through a
+[8:13.36] bunch of speed cameras. But a more
+[8:14.88] common attack nowadays is denial of
+[8:16.80] service. You probably know how to ping a
+[8:18.56] website in Linux, but in Kali Linux, you
+[8:20.72] can use hping 3 along with the flood
+[8:22.88] option to send packets as fast as
+[8:24.88] possible to an IP address without
+[8:26.72] waiting for replies. This can flood a
+[8:28.48] server with traffic and grind it to a
+[8:30.24] halt or cost the developer millions of
+[8:32.08] dollars if they host on a serverless
+[8:33.60] platform. When used on one machine, it's
+[8:35.52] just a basic DOSs attack, but if you
+[8:37.44] distribute it across a botnet of all the
+[8:39.36] machines that you've hacked already, it
+[8:40.88] then becomes a DDoS attack. Yet another
+[8:43.04] great way to embark on a magical journey
+[8:44.88] to prison. But the sad reality of
+[8:46.72] hacking is that most people are
+[8:48.16] victimized by those they trust. Like I
+[8:50.16] trusted Prince Hyman Cholo to transfer
+[8:52.00] my inheritance after I gave him my
+[8:53.52] checking account password, but he took
+[8:55.12] all my money and went to a fish concert.
+[8:56.72] The social engineering toolkit in Kali
+[8:58.40] Linux allows you to create your own
+[9:00.08] sophisticated fishing attacks using a
+[9:02.24] variety of attack vectors like email, QR
+[9:04.80] codes, SMS text messages, Arduino IoT
+[9:07.52] devices, and of course websites. In
+[9:09.68] fact, the tool can even clone a website,
+[9:11.36] which you can then host on your server,
+[9:12.88] and when someone finds it and enters
+[9:14.40] their email and password, it goes
+[9:15.84] directly to you instead of PayPal. But
+[9:17.76] that entire attack was accomplished
+[9:19.28] without writing any JavaScript code. And
+[9:21.20] with that, we've looked at 10
+[9:22.56] dangerously powerful tools for hackers
+[9:24.32] in Kali Linux. But we've barely
+[9:26.00] scratched the surface. And you'll also
+[9:27.44] want to learn about John the Ripper,
+[9:28.80] Nikto, Burpuite, just to name a few.
+[9:31.04] Actually, you know what? Forget I ever
+[9:32.48] said anything. Nobody should know about
+[9:33.76] any of these tools. So, go ahead and
+[9:35.28] look into this device real quick. I am
+[9:37.12] just a figment of your imagination.
+[9:43.68] >> All right, guys. You just watched a
+[9:45.04] tutorial about Enterprise Oracle forms
+[9:47.12] with Microsoft Silver Light, but make
+[9:48.72] sure to smash that like button and
+[9:50.24] subscribe for more benign and totally
+[9:52.16] not illegal programming content. Huge
+[9:54.08] thanks to Hostinger for sponsoring and
+[9:56.00] make sure to check out their platform to
+[9:57.60] get the best deal on your own virtual
+[9:59.36] private server in the industry. Thanks
+[10:01.04] for watching and I will see you in the
+[10:02.64] next

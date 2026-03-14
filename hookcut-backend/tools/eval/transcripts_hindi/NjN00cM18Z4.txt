@@ -1,0 +1,1378 @@
+[0:00.00] [Music]
+[0:02.00] in order to build applications with
+[0:03.76] angular you need to be comfortable with
+[0:06.16] typescript so in this section i'm going
+[0:08.48] to introduce you to the fundamentals of
+[0:10.56] typescript and object-oriented
+[0:12.72] programming principles so by the end of
+[0:15.04] this section you will have a good
+[0:16.88] understanding of type annotations arrow
+[0:19.36] functions interfaces classes
+[0:22.32] constructors access modifiers properties
+[0:25.84] and modules
+[0:27.12] if you are familiar with this concept
+[0:28.88] and know how to implement them in
+[0:30.56] typescript feel free to skip this
+[0:32.64] section and move on to angular
+[0:34.80] otherwise you really need to watch every
+[0:36.64] lecture in this section so now let's get
+[0:38.96] started
+[0:42.88] so what is typescript
+[0:44.40] typescript is not an entirely new
+[0:46.48] language
+[0:47.52] it's a superset of javascript so that
+[0:49.76] means any valid javascript code is also
+[0:52.64] valid typescript code but typescript has
+[0:56.00] additional features that do not exist in
+[0:58.80] the current version of javascript
+[1:00.72] supported by most browsers out there
+[1:03.76] for example in typescript we have this
+[1:05.68] concept of strong or static typing if
+[1:08.56] you have worked with languages like
+[1:09.84] c-sharp and java you know that in these
+[1:12.32] languages when we define a variable we
+[1:14.72] need to specify the type of that
+[1:16.40] variable now in typescript typing is
+[1:19.12] optional so we don't have to use this
+[1:20.64] feature but using this feature makes our
+[1:23.36] applications more predictable and it
+[1:25.60] also makes it easier to debug them when
+[1:28.08] something goes wrong
+[1:29.68] typescript also brings quite a few
+[1:31.68] object-oriented features that we have
+[1:33.60] missed in javascript for a long time we
+[1:36.00] have the concept of classes interfaces
+[1:39.04] constructors access modifiers like
+[1:41.44] public and private fields properties
+[1:44.56] generics and so on you're going to learn
+[1:46.40] about this in this section
+[1:48.72] another benefit of using typescript is
+[1:51.20] that with typescript we can catch errors
+[1:53.04] at compile time instead of at runtime
+[1:55.84] but of course not all kinds of errors
+[1:57.52] but a lot of errors
+[1:59.20] so there is a compilation step involved
+[2:01.52] and when we compile our typescript code
+[2:03.52] we can catch these errors and fix them
+[2:05.52] before deploying our application and
+[2:08.16] finally another benefit of using
+[2:09.84] typescript is that we get access to some
+[2:12.72] great tools out there
+[2:14.48] one thing that i personally love about
+[2:16.08] typescript is the intellisense that we
+[2:18.40] get in our code editors again you're
+[2:20.40] going to see that in this section so
+[2:22.40] typescript is a beautiful language and
+[2:24.48] it's basically a superset of javascript
+[2:26.72] so any valid javascript code is also
+[2:28.72] valid typescript code
+[2:30.80] now the browsers out there they don't
+[2:32.64] understand typescript and it's very
+[2:34.72] unlikely that they're going to support
+[2:36.40] it in the future
+[2:37.84] so we need to compile or more accurately
+[2:40.80] transpile our typescript code into
+[2:43.12] javascript
+[2:44.40] so this is part of building our
+[2:45.92] application whenever we build our
+[2:47.92] application typescript compiler kicks in
+[2:51.12] and it transpiles our typescript code
+[2:53.68] into javascript code that browsers can
+[2:55.84] understand
+[2:57.12] now that's enough introduction next i'm
+[2:59.20] going to show you how to install
+[3:00.56] typescript and write your first
+[3:02.64] typescript program
+[3:06.00] in this lecture i'm going to show you
+[3:07.28] how to install typescript and write your
+[3:09.76] first typescript program so here we're
+[3:12.00] in the terminal we're not going to work
+[3:13.52] with angular in this section we're going
+[3:15.44] to purely focus on typescript so first
+[3:18.24] we need to install typescript globally
+[3:20.48] on our machine
+[3:21.84] so npm
+[3:23.68] install
+[3:24.88] dash g which stands for global
+[3:27.12] typescript
+[3:28.32] and of course if you're on mac you need
+[3:30.48] to put sudo at the front
+[3:35.44] all right beautiful so i have installed
+[3:37.76] the latest version of typescript which
+[3:39.44] is currently version 2.3.4
+[3:42.80] now we can type tsc which stands for
+[3:45.44] typescript compiler dash dash version
+[3:49.68] again you can see that i'm running
+[3:50.96] typescript 2.3.4
+[3:54.08] all right now i'm going to create a new
+[3:55.44] folder for this section
+[3:57.04] so let's call this ts
+[3:59.52] hello
+[4:01.04] let's go to this folder
+[4:02.96] now here i'm going to create a new file
+[4:04.48] and open it with vs code so code
+[4:07.84] main.ts
+[4:11.76] so now i'm going to write some plain
+[4:13.68] javascript code and i want to show you
+[4:15.28] that all this javascript code is also
+[4:17.76] valid typescript code so first i'm going
+[4:20.08] to define a function
+[4:22.72] let's call this log
+[4:24.40] that takes a message
+[4:28.72] and here we simply log that message on
+[4:31.04] the console
+[4:32.64] like this
+[4:35.84] then i'm going to declare
+[4:37.60] a global variable let's call this
+[4:39.68] message
+[4:41.04] and set it to this string hello world
+[4:44.08] and finally call
+[4:45.60] our log function
+[4:47.76] message
+[4:48.80] so this is just plain javascript code
+[4:50.72] right
+[4:51.68] now save
+[4:53.60] back in the terminal we need to
+[4:55.28] transpile this typescript file into
+[4:57.28] javascript
+[4:58.72] so
+[4:59.68] tsc or typescript compiler main.ts
+[5:04.48] now if you look at the files in this
+[5:05.92] folder
+[5:07.20] look we have main.js and main.ts
+[5:10.72] now this transpilation or compilation
+[5:13.04] step when you're building an angular app
+[5:15.60] happens under the hood so you don't have
+[5:18.00] to manually call the typescript compiler
+[5:21.20] in fact when you run your application
+[5:22.80] using ng-serve angular cli calls
+[5:25.84] typescript compiler under the hood to
+[5:28.16] transpile all our typescript code
+[5:31.12] all right now let's open our main.js
+[5:33.44] file so code
+[5:35.28] main.js
+[5:38.32] so it's exactly the same code that we
+[5:39.92] wrote but now it's in a javascript file
+[5:42.40] so all javascript code is also valid
+[5:45.04] typescript code
+[5:46.72] now back in the terminal i can execute
+[5:48.64] this code using node so node main.js
+[5:53.36] and we got the hello world message on
+[5:55.12] the console
+[5:56.32] so from the next lecture we're going to
+[5:57.76] look at specific features of typescript
+[6:00.24] that we don't currently have in
+[6:01.76] javascript
+[6:05.12] all right let's export typescript by
+[6:06.72] looking at variable declarations
+[6:09.44] so in typescript there are two ways to
+[6:11.92] declare a variable we can use the var
+[6:14.48] keyword which you have seen in
+[6:15.68] javascript like var number we set it to
+[6:18.24] one
+[6:19.36] or we can use the let keyword
+[6:21.52] so let count
+[6:23.60] to be 2.
+[6:24.80] now before i explain the difference i
+[6:26.72] need to clarify that the let keyword is
+[6:28.88] also being added to the javascript so
+[6:31.44] javascript has a few different versions
+[6:33.76] we have es5 or ecmoscript 5 which is the
+[6:37.60] version of javascript supported by
+[6:39.84] pretty much all browsers out there it's
+[6:42.00] been around for a long time
+[6:43.92] now we have es6 which is a newer version
+[6:46.96] and it was introduced in year 2015 and
+[6:50.24] from that point the ecmascript team
+[6:52.40] which is the team extending javascript
+[6:55.12] decided to use the year number instead
+[6:57.92] of the version number so we have
+[6:59.92] ecmascript 2015 2016 and 2017.
+[7:04.32] now in ecmoscript 2015 which is
+[7:06.56] basically es6 we also have this led
+[7:10.00] keyword but in case you are not familiar
+[7:12.00] with it let me explain how it works
+[7:15.04] so i'm going to define a function
+[7:18.00] let's call it do something it doesn't
+[7:20.24] really matter
+[7:21.68] now here i'm going to define
+[7:23.28] a 4 block
+[7:24.64] so var we set i to 0
+[7:28.00] and as long as i is less than five let's
+[7:30.96] increment it
+[7:32.24] here we have a block and then log it on
+[7:34.48] the console
+[7:36.56] now finally at the end of this function
+[7:38.32] i'm going to log this i one more time
+[7:42.00] but with the label finally
+[7:46.72] and then i'm going to call this function
+[7:48.48] here
+[7:50.56] so in the terminal i'm going to compile
+[7:52.48] this file main.ts
+[7:54.72] and also at the same time run it with
+[7:57.20] node main.js
+[8:00.72] note that the value of i at the end is
+[8:03.20] 5.
+[8:04.80] so this is the issue we have when
+[8:06.40] declaring a variable using the var
+[8:08.32] keyboard
+[8:09.52] so we have declared i here inside this
+[8:12.16] four block but is also meaningful and
+[8:15.04] available outside the four block
+[8:17.60] now if you have worked with languages
+[8:19.04] like c sharp or java you know that we
+[8:21.12] don't have this concept in those
+[8:22.80] languages
+[8:24.00] in javascript a variable declared with a
+[8:26.88] var keyword is scope to the nearest
+[8:29.68] function so in this case the nearest
+[8:31.68] function is do something
+[8:33.92] so once we declare i inside this four
+[8:36.32] block it's available anywhere in this
+[8:38.84] function now let's see what happens when
+[8:41.52] we declare this variable using the let
+[8:43.20] keyword
+[8:44.72] so let
+[8:47.28] now look we immediately got a red
+[8:49.44] underline here which indicates a
+[8:51.12] compilation error this is one of the
+[8:52.88] beauties of typescript
+[8:54.80] when you are writing typescript code you
+[8:56.32] can cache these errors at compile time
+[8:58.80] before you run your application before
+[9:00.56] you deploy it
+[9:01.92] now let's hover our mouse here
+[9:04.24] so this is the error cannot find name i
+[9:07.68] so now i is scoped to the nearest block
+[9:11.12] instead of nearest function and this is
+[9:12.88] the proper way to declare variables
+[9:15.84] which prevents a lot of issues later
+[9:18.24] down the road
+[9:19.60] now i want to clarify something let me
+[9:21.68] save this file
+[9:23.52] back in the terminal
+[9:24.96] first i'm going to remove main.js
+[9:28.80] now i'm going to recompile
+[9:31.12] our main.ts
+[9:33.20] okay we got our error here cannot find
+[9:35.04] name i however
+[9:37.84] if you look at the files in this folder
+[9:40.08] we do have main.js so even though we
+[9:42.48] have a compilation error the typescript
+[9:44.96] compiler still generated main.js
+[9:48.00] let's have a look at the content of this
+[9:49.68] file
+[9:52.00] so this is the code that is generated
+[9:54.40] so by default typescript compiler
+[9:56.80] compiles our typescript code to es5 or
+[9:59.92] ecmascript 5 which is the older version
+[10:02.08] of javascript that is supported by all
+[10:04.40] browsers out there now there we don't
+[10:06.56] have the led keyword so that's why our
+[10:09.76] compile code now uses the var keyword
+[10:12.80] and this is perfectly valid javascript
+[10:14.56] code
+[10:16.40] so i can go in the terminal and simply
+[10:19.36] run this code
+[10:21.28] and get the same output as before
+[10:23.84] so what i want to clarify here
+[10:25.92] is that typescript compiler reports
+[10:28.24] these errors but still generates valid
+[10:31.60] javascript code
+[10:33.68] so here's the takeaway for this lecture
+[10:35.76] from now on anywhere we want to declare
+[10:38.08] a variable we use the let keyword once
+[10:40.48] again this does not stop the compilation
+[10:42.56] step but at least we can catch the
+[10:44.56] issues earlier during the compile time
+[10:47.68] next we're going to look at different
+[10:49.12] types we have in typescript
+[10:53.84] in this lecture i'm going to show you
+[10:55.20] different types we have in typescript
+[10:58.80] so let me start by declaring a variable
+[11:02.00] called count and set it to 5.
+[11:04.48] now if i set this to
+[11:06.64] let's say a character or a string like a
+[11:09.52] note that i immediately get a
+[11:11.60] compilation error here telling me that
+[11:13.84] this a string or a character is not
+[11:16.32] assignable to type number
+[11:18.88] now we can perfectly do this in
+[11:20.32] javascript because in javascript we can
+[11:22.40] change the type of variables on the fly
+[11:25.36] but in typescript we get a compilation
+[11:27.84] error now once again i want to clarify
+[11:30.24] that we can perfectly compile this using
+[11:32.72] typescript compiler and we will get
+[11:34.88] valid javascript code
+[11:37.04] so if i go to terminal and type
+[11:39.12] typescript compiler
+[11:40.84] main.ts
+[11:42.64] now look this is our main.js so we have
+[11:45.28] this count variable and we have changed
+[11:47.36] its value we can perfectly execute this
+[11:49.76] no problem
+[11:51.04] however code like this is very likely
+[11:53.68] that it's going to break at some point
+[11:55.60] in the future because chances are we're
+[11:58.16] going to use this count variable inside
+[12:00.48] a 4 block so our program is going to
+[12:02.56] break at runtime we don't want this to
+[12:04.32] happen right that's one of the reasons
+[12:06.96] it's better to write the same code in
+[12:08.80] typescript so at least we can get a
+[12:10.96] warning during the compilation step
+[12:13.84] now if you hover your mouse over this
+[12:16.56] count variable
+[12:18.24] look at the tooltip
+[12:20.08] you can see a colon and number after a
+[12:22.84] discount so this indicates the type of
+[12:25.68] count variable in our program so here
+[12:28.64] typescript compiler inferred that the
+[12:30.96] type of this variable should be a number
+[12:32.80] because we set it to number five
+[12:35.20] now what if i declare a variable without
+[12:37.76] initializing it
+[12:39.36] let's look at this type
+[12:41.52] its type is now any and that's exactly
+[12:44.48] like the variables we declare in
+[12:46.16] javascript so i can set a to 1 then i
+[12:49.76] can change the value to true and then
+[12:51.84] set it to your string
+[12:53.44] even typescript doesn't complain about
+[12:55.12] this so what's the solution
+[12:57.52] if we don't know the value of a variable
+[12:59.52] ahead of time that's when we use type
+[13:02.16] annotations so here we add colon and
+[13:05.44] after that we set the type of this
+[13:07.04] variable like number
+[13:10.24] and then look on the third and fourth
+[13:12.16] lines we got compilation errors
+[13:15.28] now in typescript we have a few
+[13:17.04] different types so we have number which
+[13:19.28] can include any integer or floating
+[13:21.28] point numbers
+[13:23.52] we have booleans which can be true or
+[13:26.00] false
+[13:27.36] we have strings
+[13:30.48] we have any that you saw
+[13:32.84] earlier we have arrays so let's say we
+[13:35.68] want to declare an array of numbers we
+[13:38.40] would use number
+[13:40.00] with square brackets
+[13:42.00] now we can optionally initialize this to
+[13:44.56] an array like this
+[13:47.04] or we can declare
+[13:48.96] in any array and with this
+[13:52.16] we can set this to an array with these
+[13:53.84] values one
+[13:55.52] true
+[13:56.72] a
+[13:57.60] and false
+[13:58.96] of course it's not a good practice we
+[14:00.64] want to avoid this but i'm telling you
+[14:02.32] what is possible with typescript
+[14:05.60] now we also have another type that i
+[14:07.52] absolutely love and that's enum so let's
+[14:10.48] say we're working with a group of
+[14:12.00] related constants like colors
+[14:14.64] so in plain old or vanilla javascript we
+[14:18.08] would define constant colors like this
+[14:20.56] so color red we can set this to zero
+[14:23.84] constant
+[14:25.04] color
+[14:26.00] green we set this to one and constant
+[14:28.88] color blue set it to 2.
+[14:31.68] now this is a little bit verbose
+[14:33.84] in a lot of object-oriented languages we
+[14:35.76] have this concept called enum so we can
+[14:38.72] put all these related constants in a
+[14:40.88] container
+[14:42.24] so in typescript we can declare an enum
+[14:44.64] like this
+[14:46.24] enum or lowercase
+[14:48.64] we give it a name like color
+[14:50.64] now curly braces and here we set the
+[14:52.88] values so red
+[14:55.04] green
+[14:56.00] and blue
+[14:58.32] then we can declare a variable
+[15:00.64] like background color
+[15:03.04] and set it to color
+[15:04.80] dot
+[15:05.76] now look we have intellisense here so
+[15:08.16] this tooltip you see here allows us to
+[15:10.32] complete this code without remembering
+[15:12.16] all the details
+[15:13.60] and this is one of the things i love
+[15:15.04] about typescript
+[15:16.56] so let's set the background color to
+[15:18.48] color dot red
+[15:20.80] now in terms of the values the first
+[15:23.36] element here automatically gets the
+[15:25.76] value of zero
+[15:27.44] and each subsequent element
+[15:29.76] gets an incremented value
+[15:32.00] so we don't have to explicitly set this
+[15:34.48] but as a best practice it's better to do
+[15:36.64] so because chances are sometime in the
+[15:39.28] future someone may come here and add a
+[15:41.44] new color here like purple
+[15:43.44] and then purple would automatically
+[15:44.72] become two and the value of blue would
+[15:47.04] change to three
+[15:48.72] so this may break parts of our
+[15:50.16] application
+[15:51.44] so
+[15:52.24] let me revert this by explicitly setting
+[15:55.20] the values if somebody adds a new color
+[15:58.08] here like purple
+[15:59.68] then it will not change the value of
+[16:01.52] blue
+[16:03.20] now let me show you something let's
+[16:04.96] compile this code
+[16:06.40] and see how we get enum in javascript
+[16:10.80] so typescript compiler main.ts
+[16:15.92] look at this piece of code here this is
+[16:17.76] how we can implement the concept of
+[16:20.16] enums in javascript we can see it's very
+[16:22.56] complicated
+[16:24.00] now compare this
+[16:26.40] with how we declared an enum here it's
+[16:28.72] much cleaner
+[16:30.24] so the more you work with typescript the
+[16:32.08] more you're going to love this language
+[16:36.16] in this lecture i'm going to show you
+[16:37.76] the concept of type assertions in
+[16:40.16] typescript
+[16:41.52] so i'm going to start by declaring a
+[16:43.36] variable like message
+[16:45.68] and setting it to a string
+[16:47.68] now here we can type message dot
+[16:50.96] and look we get this beautiful
+[16:52.32] intellisense
+[16:53.52] and in this tooltip we can see all the
+[16:55.92] things we can do with a string so all
+[16:58.40] these items with this purple icons are
+[17:00.40] functions for example we have
+[17:02.80] this function called ends with
+[17:05.60] we can call this
+[17:07.12] and see if this message and let's say
+[17:09.76] with c
+[17:10.72] and this returns a boolean
+[17:12.88] so we can store the result in another
+[17:14.88] variable like ends with
+[17:18.64] c
+[17:20.96] however sometimes typescript may be a
+[17:23.68] little bit confused about the type of a
+[17:25.68] variable for example
+[17:28.00] i'm going to remove this initialization
+[17:29.68] here
+[17:32.08] initialize this variable on the second
+[17:33.84] line abc
+[17:36.00] now look at the type of this message
+[17:37.68] variable
+[17:38.80] it's any because by default when we
+[17:41.12] don't set a value the type is any
+[17:43.76] now the problem here
+[17:45.60] is that if i delete this and type period
+[17:50.00] look we don't get that intellisense
+[17:51.60] anymore
+[17:52.56] because ends with is something that we
+[17:54.64] can do with a string not with an object
+[17:56.96] of type any
+[17:58.72] so what should we do in this case we
+[18:01.36] need to explicitly tell typescript
+[18:03.36] compiler that this message variable is
+[18:05.60] actually a string
+[18:07.12] and this is what we call type assertions
+[18:10.16] now how do we do type assertions there
+[18:12.32] are two ways one way is to prefix this
+[18:15.20] variable with angle brackets
+[18:18.00] and here we put the type like string
+[18:21.20] now we need to enclose both these parts
+[18:24.08] in parenthesis
+[18:26.08] like this
+[18:27.76] then if we press period
+[18:30.32] we get our beautiful intellisense with
+[18:32.24] all the functions or methods available
+[18:34.56] on string objects
+[18:36.72] now there is also another way to do type
+[18:38.96] assertion
+[18:40.84] so let's change the name of this
+[18:42.96] variable to alternative way
+[18:45.60] and here instead of angle brackets
+[18:48.88] we use message as string
+[18:52.56] they're exactly the same
+[18:54.16] the approach you choose is purely your
+[18:55.68] personal preference
+[18:57.28] but the first approach is what you see
+[18:59.44] more in a lot of tutorials and code
+[19:01.68] bases out there
+[19:03.44] now i just want to clarify something
+[19:04.80] here this type assertion does not change
+[19:08.00] the type of this variable at runtime in
+[19:10.16] fact it's not going to restructure that
+[19:12.32] object in memory it's purely a way to
+[19:15.20] tell typescript compiler about the type
+[19:17.36] of a variable so we can access the
+[19:19.60] intellisense
+[19:23.04] another concept you need to know when
+[19:24.48] using typescript to build angular
+[19:26.32] applications is the concept of arrow
+[19:29.12] functions
+[19:30.24] so in javascript we can declare a
+[19:32.00] function like this
+[19:33.44] let
+[19:34.56] log we set this to a function
+[19:37.12] this function takes a message object
+[19:40.96] and simply logs it on the console
+[19:44.16] like this
+[19:45.76] now in timescript there is a shorter way
+[19:48.32] to define this function
+[19:50.08] so
+[19:51.36] let's call the other one do log
+[19:54.56] now we don't need the function keyword
+[19:56.08] anymore we can simply add the parameters
+[20:00.16] in this case message
+[20:02.40] then
+[20:03.28] we add this arrow and that's why we call
+[20:05.36] this an arrow function
+[20:07.60] and finally the code block
+[20:10.24] so console.log message
+[20:13.68] now if our function has only one line we
+[20:16.16] can even exclude these curly braces
+[20:19.12] so we can make this code a little bit
+[20:21.60] shorter and cleaner like this
+[20:24.24] if you are working with c sharp you have
+[20:25.52] seen this before in c sharp we call this
+[20:28.00] a lambda expression in typescript we
+[20:30.24] call it an arrow function it's exactly
+[20:32.32] the same thing
+[20:33.52] now if you have one parameter here you
+[20:35.20] can even exclude the parenthesis but i
+[20:38.24] personally don't like this because i
+[20:39.84] think it makes the code a little bit
+[20:41.92] less readable so i always like to put my
+[20:44.24] parenthesis here
+[20:46.64] to indicate to the reader of this code
+[20:48.24] that these are the parameters
+[20:50.08] now what if we don't have any parameters
+[20:52.08] we just add
+[20:53.60] empty parenthesis and of course here we
+[20:55.76] don't have the message
+[20:57.44] so if you have not seen this before get
+[20:59.60] used to it it's a really nice and clean
+[21:01.76] way to define functions
+[21:06.40] all right now let's see how we can use
+[21:08.32] custom types in typescript so i'm going
+[21:10.80] to start by declaring a function like
+[21:13.12] draw point
+[21:15.44] so this function takes an x and a y
+[21:19.52] and simply draws it on the screen now we
+[21:21.68] don't want to worry about the actual
+[21:23.52] drawing algorithm we just want to focus
+[21:25.76] on the signature of this function
+[21:28.00] now this function is not too bad here we
+[21:29.68] have only two parameters
+[21:31.60] but sometimes when working with more
+[21:33.44] complex concepts we may end up with a
+[21:36.00] function that has so many parameters
+[21:38.56] like this
+[21:40.48] this is really really bad and it's
+[21:42.08] something you should avoid at all times
+[21:44.40] in those situations it's very likely
+[21:46.96] that a group of these parameters maybe
+[21:49.12] all of them
+[21:50.16] belong to a single concept
+[21:52.48] as an example think of a car a car has
+[21:54.96] so many different properties we don't
+[21:56.64] want to pass all those properties to a
+[21:58.80] function like drive car instead we want
+[22:02.00] to encapsulate them inside an object and
+[22:05.12] only pass that one object here
+[22:08.00] so in this example
+[22:09.76] instead of passing x and y here it's
+[22:12.24] better to pass a point object
+[22:15.44] and then we can call this function like
+[22:16.88] this draw a point
+[22:19.52] we give it an object with two properties
+[22:22.88] x
+[22:23.68] and y
+[22:24.88] so now our function has a cleaner syntax
+[22:28.00] however there is a problem with this
+[22:29.68] implementation instead of a point object
+[22:33.36] i can pass a person object that has a
+[22:35.12] name property
+[22:37.12] and nowhere here we are getting a
+[22:38.80] compile-time error but we know that this
+[22:40.96] code is going to break at run time
+[22:42.96] because the algorithm in our draw point
+[22:45.36] function is expecting x and y properties
+[22:49.20] so what's the solution
+[22:50.80] well let me revert this back
+[22:53.28] okay we've got x and y
+[22:55.52] so there are two solutions to solve this
+[22:57.44] problem
+[22:58.72] one way is to use what we call inline
+[23:01.60] annotation so just like we can annotate
+[23:03.92] this parameter with the type like number
+[23:07.28] we can annotate it with a custom type or
+[23:09.68] custom object
+[23:11.28] so here we add curly braces
+[23:14.16] to indicate an object
+[23:15.92] this object is going to have a property
+[23:17.44] called x which is a number
+[23:19.76] and also another property called y which
+[23:22.24] is again a number
+[23:24.00] so this is what we call inline
+[23:26.00] annotation
+[23:27.44] it works fine for simple cases
+[23:30.08] but the problem with this as you can see
+[23:32.40] is that this is a little bit verbose
+[23:35.28] also chances are somewhere else we might
+[23:37.84] have another function that expects a
+[23:39.68] point object we don't want to repeat
+[23:41.68] this object literal in multiple places
+[23:44.80] so in those cases a better approach is
+[23:46.88] to use an interface
+[23:48.80] if you have worked with object-oriented
+[23:50.16] program languages like c-sharp and java
+[23:52.64] you know the concept of interfaces we
+[23:54.96] have the same concept in typescript
+[23:57.12] now if you have never worked with
+[23:58.24] interfaces let me show you how they work
+[24:00.72] so on the top i define an interface
+[24:05.36] i'm going to call this point
+[24:08.40] curly braces
+[24:10.32] then i add x
+[24:12.00] is a number
+[24:13.28] and y
+[24:14.64] is a number
+[24:16.64] so with this interface i'm defining the
+[24:19.20] shape of an object
+[24:20.88] and then
+[24:22.08] i can simplify this declaration
+[24:25.84] and set the type of this parameter to
+[24:28.16] point
+[24:29.12] this is much cleaner and we can also
+[24:31.36] reuse this in multiple places
+[24:34.08] just one thing
+[24:35.44] note the naming convention i have used
+[24:37.28] here so because i'm introducing a custom
+[24:40.48] type i've used pascal naming convention
+[24:44.00] so the first letter of every word in the
+[24:46.56] name of the interface should be
+[24:48.24] capitalized so here we have uppercase p
+[24:51.12] not the lowercase p okay
+[24:53.20] so when using interfaces always use
+[24:55.76] pascal naming convention
+[25:00.24] so in the last lecture we used an
+[25:02.48] interface to define the shape of a point
+[25:05.12] object
+[25:06.16] but there is a problem with this
+[25:07.60] implementation
+[25:09.28] in object-oriented programming languages
+[25:11.44] we have this concept called cohesion
+[25:14.24] which basically means things that are
+[25:16.24] related should be part of one unit they
+[25:19.04] should go together this is what we call
+[25:21.44] cohesion now back to this example
+[25:24.32] on the top we have used an interface to
+[25:26.16] define the shape of a point object
+[25:28.40] and below that we have a standalone
+[25:31.04] function
+[25:32.16] and this is where we have violated the
+[25:34.16] cohesion principle
+[25:35.92] so the concept of drawing a point is
+[25:38.48] highly related to the structure of a
+[25:40.80] point it should not be a separate
+[25:42.56] function now if we're going to build a
+[25:44.40] utility library for working with points
+[25:47.04] chances are we're going to create
+[25:49.04] another function
+[25:50.72] like get distance
+[25:52.48] that calculates the distance between two
+[25:54.56] points
+[25:55.44] so point a of type point
+[25:58.32] and point b of type point and this goes
+[26:01.60] to this code block
+[26:04.24] again we have while at the cohesion
+[26:06.40] principle we have two functions hanging
+[26:08.88] in the air separate from the point
+[26:11.36] object
+[26:13.04] since these concepts are highly related
+[26:15.20] they should be part of one unit
+[26:17.44] in object-oriented languages we call
+[26:19.60] that unit a class
+[26:21.76] so a class groups properties and
+[26:25.20] functions that are highly related
+[26:27.84] now in this implementation
+[26:29.68] unfortunately we cannot move these two
+[26:32.08] functions inside our interface
+[26:35.12] because interfaces are purely for
+[26:37.44] declarations they cannot include any
+[26:40.00] implementation in other words we cannot
+[26:42.80] have the algorithm for calculating the
+[26:45.76] distance between two points or drawing a
+[26:48.32] point inside this interface what we can
+[26:51.28] do instead
+[26:53.44] is to add
+[26:54.96] a function here a function declaration
+[26:58.00] so we're going to have a draw function
+[27:00.56] that takes no parameters
+[27:03.52] and returns void which means it doesn't
+[27:06.32] return anything now you might be asking
+[27:08.64] why don't we have this point parameter
+[27:11.52] here
+[27:12.56] because if all these members x y and
+[27:15.68] draw are part of one unit we don't need
+[27:18.08] to pass x and y as parameters to the
+[27:20.88] draw function this function can directly
+[27:23.60] access these properties x and y in the
+[27:26.40] same unit
+[27:27.52] so we don't need this parameter here
+[27:29.68] now in interfaces as i said we cannot
+[27:31.68] have implementation we can only have the
+[27:34.24] signature of a function so with this
+[27:36.32] interface we're telling typescript
+[27:38.16] compiler that our point objects should
+[27:40.32] have two properties x and y and a
+[27:42.96] function called draw the implementation
+[27:45.60] of that is somewhere else
+[27:47.36] so what should we do now to apply the
+[27:49.76] cohesion principle here
+[27:51.68] we need to use a class instead of an
+[27:53.52] interface
+[27:54.80] so on the top i'm going to change the
+[27:56.40] type
+[27:57.36] to class and here i'm going to replace
+[27:59.52] this comma with semicolon
+[28:02.88] so our point class has three members the
+[28:05.76] first two members are what we call
+[28:07.76] fields that we use for storing data
+[28:10.88] and the third member is a function
+[28:13.04] now here in this class we can have the
+[28:14.64] actual implementation of this draw
+[28:16.88] function
+[28:18.72] so we can simply define it like this
+[28:20.88] draw
+[28:22.96] and then add all that logic for drawing
+[28:25.28] a point
+[28:26.64] now similarly we can have another
+[28:28.72] function get distance
+[28:31.44] that returns the distance between this
+[28:33.20] point and another point
+[28:36.00] like this
+[28:38.16] again all that logic will end up here
+[28:41.12] now with this restructuring you can see
+[28:43.28] that everything about a point is in one
+[28:45.52] unit in one class so we have the
+[28:48.00] coordinate which includes x and y and
+[28:50.80] two functions draw and get distance
+[28:54.00] now in object oriented programming terms
+[28:56.56] we refer to these members as fields
+[28:59.12] and to these functions as methods
+[29:01.52] so when a function is part of a class we
+[29:03.76] call it a method
+[29:05.44] all right now with this new
+[29:06.40] implementation
+[29:08.00] we don't want these two functions
+[29:09.60] hanging in the air so delete
+[29:13.04] this is a much better structure
+[29:15.68] also we're not going to call drop point
+[29:17.84] like this anymore
+[29:20.40] so here's our point class in the next
+[29:22.48] lecture i'm going to show you how to
+[29:24.16] create an object of this type and call
+[29:26.32] the draw method
+[29:30.32] all right so here's our class
+[29:32.08] now let's declare a variable of this
+[29:33.92] type
+[29:34.88] so let
+[29:35.92] point
+[29:37.20] be of type
+[29:38.84] point and then
+[29:41.12] we can type point dot
+[29:43.44] look we have this beautiful intellisense
+[29:45.52] we have two methods draw and get
+[29:47.92] distance and two fields x and y
+[29:51.52] now in typescript we also have a concept
+[29:53.44] called property
+[29:55.28] which is different from a field but a
+[29:57.20] lot of people use these terms
+[29:58.96] interchangeably later in this section
+[30:01.20] you're going to learn the difference
+[30:02.40] between fields and properties
+[30:04.56] now if you want to call the draw method
+[30:06.96] simply call it like this
+[30:09.28] so this draw method is now part of the
+[30:11.84] concept of a point it's not a function
+[30:14.08] hanging in the air polluting the global
+[30:16.24] namespace now for this demo i'm going to
+[30:18.40] add
+[30:19.28] a simple
+[30:20.52] console.log here
+[30:23.04] and display the coordinates of this
+[30:24.80] point
+[30:26.08] so x
+[30:27.60] now here i want to add the x field but
+[30:30.08] we cannot use it like this
+[30:32.00] we need to prefix it with this dot
+[30:35.04] so that refers to this field in this
+[30:36.96] class
+[30:38.16] and then i'm going to add y is
+[30:41.20] once again this
+[30:43.20] dot y
+[30:45.92] now let's compile and run this program
+[30:47.76] and see what happens
+[30:49.68] so tsc
+[30:51.04] what should we type here
+[30:52.72] main.ts
+[30:54.96] and we can shortcut by adding this pipe
+[30:57.52] here
+[30:58.48] type node
+[31:00.00] and then main the js
+[31:02.84] okay we got a runtime error
+[31:05.68] cannot read property draw of undefined
+[31:09.92] so this is the problem
+[31:11.68] when we call this draw method this point
+[31:14.24] object was undefined
+[31:16.80] because here unlike the basic types we
+[31:19.12] have in typescript like numbers strings
+[31:21.68] booleans
+[31:22.80] we're dealing with a custom type when
+[31:25.04] defining an object of a custom type we
+[31:27.68] need to explicitly allocate memory to it
+[31:30.96] how do we do that
+[31:32.64] well
+[31:33.84] here where we declare the point object
+[31:36.08] or the point variable
+[31:38.32] we initialize it using the new operator
+[31:42.08] so this object is a new
+[31:44.00] point
+[31:46.16] and here we add parenthesis this is the
+[31:48.72] syntax
+[31:49.92] now you can see that we have repeated
+[31:51.52] this point here twice
+[31:54.00] so we can make this code a little bit
+[31:55.60] cleaner by removing this type annotation
+[32:00.00] because typescript compiler can infer
+[32:02.80] from this assignment here that the type
+[32:05.04] of this object is a point object
+[32:07.36] and let's verify that
+[32:09.68] so look
+[32:10.96] you're working with a point object
+[32:12.96] now one more time save
+[32:15.84] so back into terminal typescript
+[32:17.84] compiler main.ts
+[32:21.52] and then node main.js
+[32:24.64] okay we didn't get an error but you can
+[32:26.64] see that these x and y fields don't have
+[32:29.04] a value because by default they are
+[32:30.88] undefined
+[32:32.64] so we can get back here
+[32:34.56] and set point that x to let's say 1
+[32:38.24] and point that y to 2.
+[32:41.36] now back in the terminal
+[32:43.04] typescript compiler main.ts i actually
+[32:46.08] made a mistake earlier
+[32:47.76] so instead of this pipe operator we need
+[32:50.00] to use
+[32:50.96] double ampersand on mac i don't know the
+[32:53.04] windows equivalent
+[32:55.04] so with this we can combine multiple
+[32:57.28] commands
+[32:58.32] so node main.js
+[33:02.64] all right beautiful x is one and y is
+[33:05.04] two
+[33:05.92] so this is how we use the classes that
+[33:07.68] we define in our programs now i want to
+[33:10.24] highlight something here
+[33:11.76] this point here is a class
+[33:14.16] but this point here is an object
+[33:16.88] an object is an instance of a class
+[33:20.16] as a metaphor think of the concept of a
+[33:22.08] human
+[33:23.12] human could be a class but when we
+[33:25.20] create instances of this class like john
+[33:27.92] bob mary
+[33:29.52] these are all objects so that's the
+[33:32.00] difference between a class and an object
+[33:34.08] next we're going to look at constructors
+[33:38.32] all right so i've simplified the code
+[33:40.00] from the last lecture i simply removed
+[33:42.00] the method get distance because we're
+[33:44.16] not going to use it later in this
+[33:45.60] section so here on the top we define a
+[33:47.92] point class and then below that we
+[33:49.68] initialize a point object this code is a
+[33:53.12] little bit verbose because we have three
+[33:55.44] lines to create a point object and put
+[33:58.40] it in a valid state
+[34:00.16] what if this point object had a few
+[34:01.84] other properties that we had to
+[34:03.76] initialize like this
+[34:07.84] and maybe a few more here
+[34:10.32] is there a cleaner way absolutely
+[34:13.04] so let me delete this first
+[34:14.96] all right
+[34:15.84] in object-oriented programming languages
+[34:18.24] we have this concept called constructor
+[34:21.04] so every class can have a constructor
+[34:23.68] which is basically a method that is
+[34:25.68] called when we create an instance of
+[34:28.16] that class
+[34:29.60] so let me show you how it works
+[34:31.76] in the
+[34:32.84] class i'm going to add a method
+[34:35.52] the name of this method is constructor
+[34:37.84] this is a reserved keyword in typescript
+[34:41.36] now this method can have parameters so x
+[34:45.12] which is a number
+[34:46.64] and y which is also a number
+[34:49.68] and then here in this method we can
+[34:51.04] initialize these fields
+[34:53.12] so what should we write here
+[34:55.36] this dot x we set it to this x argument
+[34:58.72] that we get here
+[35:00.24] and similarly this.y
+[35:02.48] we set it to y
+[35:05.04] now look we got a compilation error here
+[35:07.52] because when creating a new point object
+[35:09.76] we need to supply these values look at
+[35:12.16] the arrow
+[35:13.36] supplied parameters do not match any
+[35:16.00] signature of call target so here we need
+[35:19.36] to supply the values for x and y
+[35:21.76] one and two
+[35:23.36] and with this we can simplify this code
+[35:26.40] and get rid of these two extra lines
+[35:29.04] and here's the end result
+[35:31.52] now what if somewhere else in our
+[35:32.88] program we don't know the initial
+[35:34.96] coordinate of a point
+[35:37.04] in other words what if i want to create
+[35:39.12] a point object without setting these
+[35:41.44] values is that possible
+[35:43.68] yes absolutely but it's a little bit
+[35:45.84] different from how you have seen that in
+[35:48.32] other languages like c sharp and java
+[35:50.88] in c sharp we can have multiple
+[35:52.72] constructors in typescript we can't
+[35:55.68] so the solution for this is to make
+[35:57.84] these parameters optional
+[36:00.16] so here after x i add a question mark
+[36:04.16] and that makes x optional
+[36:06.32] and similarly
+[36:07.76] y should be optional as well because
+[36:10.00] once you make a parameter optional
+[36:12.40] all the other parameters on the right
+[36:14.08] side of that parameter should also be
+[36:16.00] optional this is a rule by typescript
+[36:18.16] and a lot of other program languages
+[36:20.64] so now look we don't have a compilation
+[36:22.96] error when creating a point object
+[36:25.04] without initial values
+[36:29.36] all right so here i've created a point
+[36:30.96] object with an initial coordinate now
+[36:33.68] what if in our program you want to have
+[36:35.52] this rule such that when we initialize a
+[36:37.92] point object we should not be able to
+[36:40.88] change the x or y values
+[36:44.08] with this implementation i can always
+[36:46.24] come here and set point.x to a different
+[36:49.12] value
+[36:50.08] how can we avoid this
+[36:51.84] sometimes we need this feature in our
+[36:53.44] programs because it will make them more
+[36:55.36] predictable it reduces the chance for
+[36:57.84] bugs
+[36:59.04] so how should we prevent the coordinates
+[37:01.28] of this point object to change after
+[37:03.36] it's initialized
+[37:04.88] well in object-oriented languages we
+[37:06.80] have this concept called access
+[37:09.36] modifiers
+[37:10.96] an access modifier is basically a
+[37:12.88] keyword that we can apply to a member of
+[37:15.12] a class
+[37:16.16] to control its access from the outside
+[37:19.28] so in typescript we have three access
+[37:21.36] modifiers
+[37:22.48] public private and protected public and
+[37:25.44] private are the most common and by
+[37:27.68] default all members are public
+[37:30.32] let me show you what i mean
+[37:31.92] so here in our point class we have three
+[37:34.48] members right we have two fields and one
+[37:37.44] method
+[37:38.56] so
+[37:40.00] when we create a pointer object
+[37:42.00] and type point
+[37:43.60] dot look
+[37:45.28] these are the members of the class and
+[37:47.36] because they are all public we can
+[37:49.36] access them here and that's why we can
+[37:51.20] see them in the intellisense
+[37:53.04] however
+[37:54.88] i can go here
+[37:56.40] and prefix this field with the private
+[37:59.20] keyword
+[38:00.72] now
+[38:02.32] once we create this point object
+[38:04.40] if i type point dot
+[38:06.80] look x is not in the list it's not
+[38:09.52] accessible it's private so if we try to
+[38:12.40] set point.x to 3 look we have a
+[38:14.80] compilation error in typescript
+[38:17.84] says property x is private and only
+[38:20.48] accessible within class point
+[38:23.60] now with this technique i can go here
+[38:27.12] and apply the private keyword
+[38:29.68] on the y field as well and now
+[38:33.44] once i initialize a point object i can
+[38:36.00] no longer
+[38:37.36] change its coordinates i can only call
+[38:39.52] the draw method
+[38:41.20] okay so this is why we use axis
+[38:43.52] modifiers to control access to certain
+[38:46.32] members of a class from the outside you
+[38:48.80] can apply these access modifiers on
+[38:50.72] fields properties and methods
+[38:54.00] now by default
+[38:55.84] if you don't set an access modifier
+[38:58.32] it's assumed to be public so here the
+[39:00.64] draw method as you know is public i can
+[39:03.28] also add the public keyword here but
+[39:05.76] this is redundant it's just making my
+[39:07.60] code noisy
+[39:09.04] so you don't really need to add this
+[39:10.88] it's better to keep your code short and
+[39:12.88] clean and use the private access
+[39:14.80] modifier only when you need to
+[39:17.44] next i'm going to show you one of my
+[39:19.04] favorite features of typescript around
+[39:21.20] access modifiers
+[39:24.88] as you write code with typescript you
+[39:26.96] see constructors that follow a pattern
+[39:29.28] like what you see here
+[39:30.80] so here we have two parameters in our
+[39:32.80] constructor and we use these two
+[39:34.48] parameters to initialize the fields in
+[39:36.80] this class the code looks a little bit
+[39:38.96] redundant this dot x equals x and this.y
+[39:42.40] equals y typescript has a fantastic
+[39:45.04] feature that helps you achieve the same
+[39:46.96] thing with less code
+[39:49.04] so here
+[39:50.48] we can delete these two fields here
+[39:54.24] and in our constructor we can prefix our
+[39:57.20] parameters with an axis modifier
+[40:00.00] so here i want to have two private
+[40:02.08] fields x and y i can simply prefix these
+[40:07.04] with the private keyword
+[40:08.64] like this
+[40:11.68] so typescript compiler will generate
+[40:14.08] these fields for us
+[40:15.60] and also
+[40:16.88] we don't need these ugly repetitive
+[40:19.68] assignments either
+[40:21.68] so if we prefix a constructor parameter
+[40:24.32] with an access modifier with a private
+[40:26.32] or public typescript compiler will
+[40:29.20] generate a field with the exact same
+[40:31.44] name and it would also initialize that
+[40:33.36] field with the value of this argument
+[40:35.92] it's one of my favorite features and
+[40:37.92] you're going to see that a lot in this
+[40:39.44] course
+[40:40.64] now clarify something before i finish
+[40:42.32] this lecture
+[40:43.52] in this case our fills were private but
+[40:45.76] if they were public we would use the
+[40:47.76] public keyword here so this means when
+[40:50.40] we create a point object
+[40:53.84] we can access
+[40:55.20] the x field
+[40:56.88] okay
+[40:58.48] so
+[40:59.60] i'm going to revert this back
+[41:01.60] to the private
+[41:06.88] all right now this implementation has a
+[41:08.80] tiny problem we can set the initial
+[41:11.04] coordinate of this point and we can also
+[41:13.52] draw it but there is no way for us to
+[41:16.40] read the coordinate so i cannot access
+[41:18.96] point that x here to display it to the
+[41:21.52] user
+[41:22.48] what's the workaround
+[41:23.92] well one simple solution
+[41:26.32] is to define a method like this get
+[41:29.52] x
+[41:31.36] and here we simply return
+[41:33.20] this dot x
+[41:35.28] because in this class we do have access
+[41:37.92] to all the private members of this class
+[41:40.40] but we cannot access them from the
+[41:42.00] outside okay
+[41:43.84] now here
+[41:45.60] i can always call point dot get x
+[41:49.76] to get the x value and display to the
+[41:51.60] user
+[41:52.72] now let's talk about another use case
+[41:55.60] maybe we want to give the user the
+[41:56.96] ability to set the initial coordinate
+[41:59.20] here
+[42:00.08] but we also want them to be able to
+[42:02.16] change this coordinate later
+[42:04.16] only if they provide a value within a
+[42:07.12] given range
+[42:08.32] what do you mean by that let me show you
+[42:10.64] i'm going to define another method here
+[42:12.88] set x
+[42:16.48] now this method is going to get a value
+[42:19.12] that's the new value for the x field let
+[42:22.00] me scroll down
+[42:23.76] now here first we can do some basic
+[42:25.76] validation so if value is less than zero
+[42:29.92] we want to throw an error throw new
+[42:32.48] error
+[42:34.72] value cannot be
+[42:36.40] less than zero
+[42:39.76] otherwise we want to set this but x to
+[42:42.48] this new value okay
+[42:45.04] now with this implementation
+[42:47.04] we can always change the value of the x
+[42:49.92] field like this
+[42:51.20] point that set x
+[42:53.76] we set it to a new value
+[42:55.84] now if you have a use case like that in
+[42:57.44] your applications you can use what we
+[42:59.60] call a property
+[43:01.84] so in typescript and in a lot of
+[43:03.76] object-oriented programming languages we
+[43:06.00] have a concept called property which is
+[43:08.08] exactly for this very use case
+[43:11.04] so look at how i can define a property
+[43:13.60] here
+[43:14.56] we start with the keyword which is get
+[43:17.20] or set
+[43:18.56] and then the name of the property which
+[43:20.24] is in this case x
+[43:22.00] and after that we're going to have
+[43:23.28] parenthesis just like a method okay
+[43:27.12] now similarly i'm going to change this
+[43:28.56] to set with a space so we have the set
+[43:31.28] keyword and here it's like we have a
+[43:33.28] function a method
+[43:35.36] now what is the difference
+[43:36.96] the difference is that we can use these
+[43:38.64] properties like fields
+[43:41.12] so here
+[43:42.88] i can read x like this dot
+[43:46.00] note the icon of x it's the same icon we
+[43:48.72] have for fields it's not a method
+[43:51.04] anymore
+[43:52.32] so we can read x
+[43:55.12] and we can also set it like this point.x
+[43:58.24] we set it to 10.
+[43:59.84] we don't have to call a method like this
+[44:02.24] it's a cleaner syntax okay
+[44:05.92] so this is what properties are for if
+[44:08.40] you have private fields that you want to
+[44:10.56] give maybe a read-only access to the
+[44:12.48] outside or if you want to give the
+[44:14.40] consumer of your classes the ability to
+[44:16.72] set the values but you want to have some
+[44:18.40] basic validation that's when you use a
+[44:21.04] property now in this case if i want to
+[44:23.44] give only the read only access to this
+[44:25.68] underlying field i can simply comment
+[44:28.32] out
+[44:29.76] the setter
+[44:31.28] so we call this method a setter and the
+[44:34.00] other method a getter okay
+[44:36.96] and now look at this compilation error
+[44:38.64] we cannot change the value of x
+[44:41.44] now let's bring this back
+[44:43.84] one last thing before we finish this
+[44:45.20] lecture
+[44:46.32] so here i have used a capital x for the
+[44:48.88] name of my x property
+[44:51.04] in javascript and in typescript we use
+[44:53.68] camel notation to name our field
+[44:56.48] so that's why
+[44:58.00] earlier we defined this private field
+[44:59.92] here using camelcasing notation
+[45:02.32] camelcasing means the first letter of
+[45:04.40] the first word is lowercase and the
+[45:06.72] first letter of every word after is
+[45:08.72] uppercase
+[45:10.08] now what should we do to use camelcasing
+[45:12.72] notation for our properties
+[45:15.28] if i name this
+[45:17.12] the lowercase x
+[45:19.20] it clashes with the existing field so
+[45:22.08] let me revert this back
+[45:23.92] a convention we use to solve this
+[45:25.60] problem
+[45:26.80] is to prefix the name of the underlying
+[45:28.96] field with an underline so let's rename
+[45:31.60] this using f2
+[45:33.60] and prefix it with an underlay
+[45:36.24] okay
+[45:37.28] similarly for the y parameter or the y
+[45:39.92] field i'm also going to use
+[45:41.92] underline y
+[45:43.36] then we can rename this property from
+[45:45.76] capital x to lowercase x
+[45:48.32] once again we press f2
+[45:50.40] lowercase x
+[45:52.16] and note that both instances both the
+[45:54.64] getter and the setter are updated
+[45:58.84] now we can work with this x property
+[46:02.40] exactly the same way we use the x field
+[46:05.12] so here's the lesson
+[46:06.88] a property looks like a field from the
+[46:09.44] outside
+[46:10.48] but internally it's really a method in
+[46:12.80] the class well more accurately it's
+[46:15.36] either one method which is a getter or a
+[46:17.36] setter or a combination of a getter and
+[46:20.24] a setter
+[46:24.72] all right i've simplified the definition
+[46:26.72] of the point class i removed the
+[46:28.24] properties so we have a simple
+[46:29.92] constructor and the draw method and
+[46:32.24] we're using this point class below its
+[46:34.08] definition
+[46:35.36] now this is a very simple program with
+[46:37.04] only one file but the real world
+[46:38.88] application consists of tens or hundreds
+[46:41.92] of files we don't want to write all the
+[46:44.08] code in one file like main.ts
+[46:46.88] so ideally i want to move the definition
+[46:49.28] of this point class somewhere else in a
+[46:51.92] file like point.ts
+[46:54.72] so here in this project i'm going to add
+[46:56.24] a new file
+[46:58.16] point.ts
+[47:01.12] now back in main.ts
+[47:03.52] i'm going to select all this code
+[47:05.68] cut it
+[47:07.04] and move it to point a ts now in
+[47:11.20] typescript we have this concept called
+[47:13.52] modules
+[47:14.56] now what a module is requires a little
+[47:16.56] bit more explanation but for now let me
+[47:18.96] give you a simple pragmatic definition
+[47:22.32] in typescript you can think of each file
+[47:24.96] as a module so in this program
+[47:27.60] we can say we have two modules but this
+[47:29.44] is not quite accurate because these
+[47:31.60] files are not modules yet
+[47:34.96] so in point.ts we have defined this
+[47:37.84] class called point but this is not
+[47:40.00] accessible anywhere outside this file so
+[47:43.28] this file defines its own scope
+[47:46.48] in order for us to use this class
+[47:48.64] somewhere else in our program
+[47:50.72] we need to export this to the outside
+[47:53.92] so we add the export keyword here
+[47:56.48] and now this is visible outside this
+[47:58.72] file
+[47:59.84] now that we're exporting something on
+[48:01.60] top of this file
+[48:03.04] from typescript's point of view this
+[48:04.96] file is a module
+[48:06.80] now we need to go back to our main.ts
+[48:09.36] and import this class so we can use it
+[48:12.32] so back in main.ts
+[48:14.72] look we have a compilation error
+[48:17.84] cannot find name point because we have
+[48:20.80] not imported this into main.ts
+[48:24.16] so on the top
+[48:25.68] we write import
+[48:27.68] in curly braces we add the name of the
+[48:29.92] types we want to import in this case
+[48:32.84] point now if there are multiple types we
+[48:35.44] want to import
+[48:36.80] we separate them using comma okay
+[48:41.20] so we import point
+[48:43.12] from
+[48:44.24] now here we put the name of the module
+[48:47.12] in quotes what is the name of the module
+[48:49.84] it's the relative path to that module
+[48:52.64] from this file
+[48:54.08] so both these files are in the same
+[48:55.68] folder
+[48:56.72] we can use period slash which refers to
+[48:59.92] the current folder
+[49:01.60] and then
+[49:02.40] point
+[49:03.36] is the name of our module so it's not
+[49:05.72] point.ts look we get a compilation error
+[49:09.68] so the name of our module is point
+[49:12.32] now we no longer have a compilation
+[49:14.24] error here and we can create an instance
+[49:16.72] of this point class and use it
+[49:18.96] now there is a lot more to talk about
+[49:20.64] when it comes to modularity in
+[49:22.40] typescript
+[49:23.52] but that's all you need to know for now
+[49:25.52] in order to start building applications
+[49:27.60] with angular because in angular
+[49:29.68] framework we have a lot of types that
+[49:31.92] are exported so we need to import these
+[49:34.64] into our typescript files and use them
+[49:37.04] you're going to see that a lot in this
+[49:38.48] course
+[49:39.44] the only difference is that angular
+[49:41.52] modules are defined in a different way
+[49:43.76] so we don't add the relative paths to
+[49:46.72] these module files because these files
+[49:48.88] are not really part of our application
+[49:50.88] they're somewhere inside node underline
+[49:53.76] modules folder so when it comes to
+[49:56.16] importing types defined in angular
+[49:58.48] we use the library name as the module
+[50:00.88] name for example one of the libraries is
+[50:04.08] at angular slash core
+[50:07.68] okay
+[50:08.56] so here's the lesson
+[50:10.24] in typescript we divide our program into
+[50:12.80] multiple files
+[50:14.24] in each file we export one or more types
+[50:17.84] these types can be classes functions
+[50:21.04] simple variables or objects and wherever
+[50:23.68] we need to use these types we need to
+[50:25.60] import them first
+[50:27.44] when we have an import or export
+[50:29.28] statement on top of a file that file is
+[50:31.92] a module from typescript's point of view
+[50:34.80] in angular we also have the concept of
+[50:36.72] modules but angular modules are a little
+[50:39.04] bit different they're not about
+[50:40.48] organization of code in different files
+[50:42.88] they are about organization of your
+[50:44.96] application into smaller functional
+[50:47.76] areas you're going to learn about
+[50:49.36] angular modules in the next section
+[50:53.28] hi thank you for watching my angular
+[50:55.20] tutorial if you enjoyed this video
+[50:57.12] please like it and share it with others
+[50:59.68] also you can subscribe to my channel for
+[51:01.92] free new videos every week
+[51:04.24] this video is part of my complete
+[51:06.24] angular course with almost 30 hours of
+[51:09.36] high quality content where you will
+[51:11.44] learn everything about angular from the
+[51:13.20] basic to the advanced topics all in one
+[51:15.84] course so you don't have to jump from
+[51:17.44] one tutorial to another in case you're
+[51:19.68] interested you can get this course with
+[51:21.84] a big discount using the link in the
+[51:23.68] video description and if not that's
+[51:25.60] perfectly fine continue watching as the
+[51:27.92] next section is coming up

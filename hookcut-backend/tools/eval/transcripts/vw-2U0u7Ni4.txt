@@ -1,0 +1,1000 @@
+[0:00.40] hey there everyone a here back again
+[0:02.64] with another video and welcome to the
+[0:04.32] git Series so we'll continue and in this
+[0:07.36] video we're going to be focusing more on
+[0:09.36] the git branches now this is really a
+[0:12.12] fun topic and pretty awesome as well uh
+[0:14.80] some of the portion of this video uh are
+[0:17.32] considered as a little bit Advanced but
+[0:18.92] not for us we're going to be just Breeze
+[0:20.80] through it we're going to flow through
+[0:22.32] it and you'll be having so much fun so
+[0:24.72] we'll learn about the branches we'll
+[0:26.72] understand the concept behind it how it
+[0:28.40] works behind the scene and you will get
+[0:30.32] to know that how the collaborative
+[0:31.80] environment works in the git it's pretty
+[0:34.04] fun let's go ahead and get started and
+[0:35.88] we'll do everything from scratch again
+[0:37.88] we'll be initializing a repository we'll
+[0:39.60] put some files and folders onto it and
+[0:41.32] we'll start from there so what we're
+[0:43.40] going to do is let me first share the
+[0:45.20] screen because that's the most important
+[0:47.04] part and let's go ahead and uh move into
+[0:50.28] a new folder so that we can work on with
+[0:52.44] this one so what I'll do is I'll open up
+[0:55.80] my uh folder and I'll just move in here
+[0:59.00] so this is where we have been working
+[1:00.44] with the git one uh so far we have been
+[1:02.40] working with this but now let me just go
+[1:04.32] ahead and drag and drop the git 2 which
+[1:07.00] was another folder of just sitting ideal
+[1:09.04] for us so I'll just drag and drop this
+[1:11.04] one all right so this folder is open
+[1:13.84] with us and let's start working with
+[1:16.20] this first that how usually an
+[1:18.00] application is designed so I'm going to
+[1:20.32] go ahead and move into uh this folder
+[1:23.88] here so just adjusting some stuff so
+[1:26.92] let's go ahead and move on to One
+[1:28.16] Directory back and if I do a quick LS I
+[1:30.48] can see I'm still here I'm going to go
+[1:33.08] one folder back and I'm going to see
+[1:35.04] that we have git 2 this is the
+[1:37.04] intentional folder where we want to go
+[1:38.92] further let's go into git 2
+[1:42.36] oops and we'll go into git two there we
+[1:46.72] go and if I do a quick LS nothing inside
+[1:49.52] it so obviously the first step always is
+[1:51.76] to initialize the gate so this time we
+[1:54.16] can see the entire workflow happening
+[1:56.24] around let's go ahead and work on with
+[1:58.36] so we're going to go ahead and first
+[2:00.08] check the status this is always a good
+[2:01.72] idea make this a habit that always check
+[2:03.64] the git status although we understand
+[2:05.72] that it's not a git repository but it's
+[2:07.40] a good idea to have it in your flow
+[2:09.68] after that we know that we always run
+[2:11.28] the command git in it to initialize the
+[2:13.40] repository so there we go once we
+[2:15.44] initialize this and check the git status
+[2:17.36] again we see that now we actually can
+[2:20.84] understand some of the mode status like
+[2:22.60] it says git status is on Branch master
+[2:27.04] all right what is this master and what
+[2:29.48] is this Branch concept and no commits
+[2:31.60] yet okay we understand this part but
+[2:33.84] what is this Branch here and what is
+[2:35.76] this master even if I go up here and if
+[2:38.52] you just shrink this uh little bit here
+[2:41.32] uh just like that you can see on the
+[2:43.72] bottom part of it it says Master here uh
+[2:47.00] so this is pretty nice and interesting
+[2:48.64] we would love to get to know more about
+[2:50.24] it that how this actually works so right
+[2:52.48] now we can see we have nothing inside it
+[2:54.16] let's go ahead and create a couple of
+[2:55.44] files and folders so let's go ahead and
+[2:57.52] say Hey I want to create one file and
+[3:59.84] is there if I go back up here I can see
+[4:02.44] the index file is there I'm on the
+[4:04.12] master one uh that's good but I'm not
+[4:06.28] able to see the git folder and all the
+[4:07.92] things that are happening so let's go
+[4:09.92] ahead and use a command comma and just
+[4:12.60] scroll a little bit where we see all of
+[4:14.32] this so that you can see freshly how
+[4:16.28] this actually works and now you can see
+[4:18.36] there's a dogit folder which is mazed as
+[4:21.60] hey you can just go ahead and hide it
+[4:23.92] completely I'll just go ahead and cross
+[4:25.72] it off and that's it once I cross it off
+[4:28.32] I can see my git folder which I'm pretty
+[4:30.04] interested in and I can just open this
+[4:32.04] up and have a discussion on this so now
+[4:34.08] that you saw that firsthand all right so
+[4:37.52] far we have seen all this thing but now
+[4:39.96] here is the new command I can just go
+[4:41.92] ahead and run a command and that is git
+[4:44.76] Branch I'm not going to do anything
+[4:46.80] outside of it no dhm nothing like that
+[4:49.56] we'll just go ahead and learn about the
+[4:51.16] git Branch what happens with this if I
+[4:53.32] go ahead and hit enter it says an estri
+[4:56.16] a pointer which is pointing towards the
+[4:58.44] master all right
+[5:00.48] pretty interesting how do we do with
+[5:02.24] that what's this branch and let's go
+[5:04.08] ahead and study with that about all of
+[5:06.12] this through the notes these are the
+[5:07.88] best way to understand this so branches
+[5:10.28] what are these branches in the git
+[5:12.76] folder uh branches you can just simply
+[5:15.44] understand like an alternative timeline
+[5:17.32] now I don't know if you have watched the
+[5:18.84] doctor strange recently or not pretty
+[5:20.52] good movie but it's like a timeline and
+[5:23.24] every single coder who is contributing
+[5:25.36] to the same code base can be on its own
+[5:28.24] timeline without effect ing each other's
+[5:30.40] timeline so for example there is always
+[5:32.92] and always one branch on which you will
+[5:34.92] be now by default git is a pretty old
+[5:37.36] software that's why it always by default
+[5:39.60] creates a master as a branch so this
+[5:42.48] green one you can consider this as a
+[5:44.64] master branch and all these nodes are
+[5:46.96] the checkpoints or the commits that you
+[5:48.96] have made now fun thing about this
+[5:50.76] master branch is these days nobody likes
+[5:53.00] to call it as Master there's some
+[5:55.00] controversy around it we W want to go we
+[5:57.20] don't want to go into that so it's
+[5:59.16] pretty obvious that you will be asked to
+[6:01.00] rename your branch as main again call it
+[6:03.68] main Master Superman doesn't really
+[6:05.56] matter it's just a branch name so this
+[6:07.52] is our straightforward timeline and this
+[6:09.24] is where we are sitting right now and
+[6:11.12] that's why our pointer said that you are
+[6:13.40] on the master Branch pretty accurate now
+[6:17.56] how do we create the alternative
+[6:19.16] timeline and how can we work with that
+[6:21.20] that's an interesting question so that's
+[6:23.20] exactly what we'll be going and then
+[6:24.56] we'll come back and talk about the head
+[6:26.36] we will definitely keep an eye on where
+[6:28.08] the head is pointing right now and then
+[6:30.36] we'll come back first let's create a
+[6:31.80] couple of branches uh walk through with
+[6:33.88] them do some commits do some exercise
+[6:35.84] with that that would be pretty fun let's
+[6:37.80] go back right now it just says that you
+[6:40.36] are on the master Branch okay and if I
+[6:42.92] check the git status obviously there is
+[6:44.60] nothing much it's just nothing so in the
+[6:47.12] index file I'm going to go ahead and use
+[6:48.84] an exclamatory sign and hit the tab it
+[6:50.84] gives me a default so I'll just just go
+[6:52.60] ahead and say uh get learning I'm just
+[6:55.16] designing a web page not designing
+[6:57.56] basically I'm just writing some text
+[6:59.04] into this one
+[7:01.44] so looks good as a project all right
+[7:06.64] looks good now this is usually how I
+[7:08.48] write the code now if I go ahead and
+[7:10.28] check the git status and git status and
+[7:13.36] it says there's one file which is
+[7:14.88] modified I'm not uh having a history of
+[7:18.60] it or I haven't made a checkpoint of
+[7:20.52] this so would you like to make a
+[7:21.44] checkpoint of course I would like to
+[7:22.68] make a checkpoint so I'll just go ahead
+[7:24.40] and say hey I would love to add the
+[7:26.40] index.html okay and then I would like to
+[7:29.28] add commit on them by the way you can
+[7:31.08] just work with the commit directly as
+[7:33.24] well commit and add can be done in one
+[7:34.96] command as well I'll walk you through
+[7:36.16] with that one as well uh nothing of a
+[7:38.16] big deal but I usually prefer twostep
+[7:40.04] commit so there we go we have- M as an
+[7:42.68] option and add index file and I'll just
+[7:46.40] say update code for index file looks
+[7:51.48] pretty good and I'm going to just go
+[7:53.40] ahead and make a commit there we go now
+[7:55.52] we are done pretty good exercise and we
+[7:57.56] can see all the things are going but
+[7:59.68] what's interesting is even if still I
+[8:01.56] check what is git branch and there we go
+[8:05.16] it still says pointing towards master
+[8:08.60] and if I go ahead open up this git
+[8:10.28] folder first of all notice this head I
+[8:13.48] hope you can see that that's visible
+[8:15.60] nicely notice here there's a head here
+[8:18.44] and if I just click on this head it says
+[8:20.64] ref head Master time to zoom out a
+[8:23.04] little there we go uh you can see that
+[8:25.44] it says head ref head Master we'll see
+[8:28.76] that we'll check this file again one
+[8:30.16] more time once we create more branches
+[8:32.48] and also inside the ref you'll see the
+[8:34.36] heads and if I open this up there's
+[8:36.08] something known as Master what's inside
+[8:37.60] that doesn't really matter it's just a
+[8:39.04] unique code the Sha value doesn't really
+[8:41.32] matter but it says Master now step one
+[8:44.44] how do we create more branches that's
+[8:47.20] that's the most important thing there
+[8:49.00] are a couple of ways actually how you
+[8:50.72] create multiple branches and all of them
+[8:53.76] are correct there is nothing absolutely
+[8:55.64] wrong with that let's go ahead and start
+[8:57.60] with the basic one so I'm going to go
+[8:59.20] ahead and and say git branch and let's
+[9:01.04] just say there is another coder in my
+[9:03.40] team who is working on the navigation
+[9:05.96] bar and we be working on navigation bar
+[9:08.64] so I'm going to go ahead and say Navar
+[9:11.16] is the name of the branch now how do you
+[9:13.84] pick up the branch name now that's
+[9:15.64] totally internal up to the company you
+[9:17.36] can call this as Navar you can call this
+[9:19.24] as bug fix you can call this as a
+[9:21.04] feature whatever you like you can name
+[9:23.24] it whatever you like I'm going to go
+[9:24.96] ahead and say get Branch Navar I hit
+[9:27.64] enter and now let's check when I run the
+[9:29.76] git Branch command it says okay my
+[9:32.64] pointer is pointing towards the master
+[9:35.00] but there is another branch that I can
+[9:36.92] move on to and it's known as nav dashar
+[9:40.60] if I go up here uh notice here the ref
+[9:43.04] still head says Master but now we have
+[9:46.00] another folder into it which says nav
+[9:48.20] bar so yes head can be on the master or
+[9:50.96] it can be on the nav bar but here the
+[9:53.92] head is still pointing towards the
+[9:55.48] master that is still not being changed
+[9:57.68] because our pointer is pointing towards
+[9:59.48] the master okay how do I move onto a
+[10:02.80] different branch again there are
+[10:04.20] multiple ways of doing so we'll be using
+[10:06.60] the the most easiest one which is the
+[10:08.52] git uh checkout and we'll be calling
+[10:10.84] that I want to go to Navar the moment I
+[10:13.44] say get checkout uh Navar I go ahead and
+[10:16.52] hit enter now it's switched to Navar now
+[10:19.36] what changes does it actually make first
+[10:21.36] of all I would love to see the branch
+[10:23.04] okay uh the pointer of course color is
+[10:25.36] not a good idea in the terminal to check
+[10:26.92] out that hey it's green now uh the most
+[10:29.44] important thing is this pointer this
+[10:31.24] pointer is now pointing oops the pointer
+[10:33.16] is now pointing towards the Navar that's
+[10:35.52] good let's see what happens here in the
+[10:38.48] head uh the nbar is here uh the master
+[10:41.28] is here both of them are here uh both of
+[10:43.44] them actually are pointing towards the
+[10:44.92] same thing because we haven't done
+[10:46.16] anything in that other Branch but if I
+[10:48.68] go ahead and check the head now the head
+[10:51.00] is actually pointing towards the navbar
+[10:53.08] so here I'm showing you the behind the
+[10:55.24] scene details of how the git actually
+[10:57.00] works internally on the command line and
+[10:59.08] how these outputs actually comes
+[11:01.16] in okay uh this looks good but
+[11:04.36] technically I hope you can see that what
+[11:06.16] is happening and I think our git uh git
+[11:10.92] this one is going to help us to
+[11:12.68] understand the things now we can see
+[11:14.08] although we have created the branch but
+[11:15.64] you can see the navbar is here the
+[11:17.32] master is here they both are pointing to
+[11:19.12] the same location so let me tell you
+[11:21.24] what is happening right now through the
+[11:22.96] notes I think that would be much more
+[11:24.68] easier to understand so this right now
+[11:28.16] is our commit then we made one more
+[11:30.48] commit and then we created one more
+[11:32.64] Branch although we have created a branch
+[11:35.28] but the code has never changed there is
+[11:37.04] nothing which we have done here so even
+[11:39.40] though there is an alternative timeline
+[11:41.04] that is going on but that is also
+[11:42.52] pointing actually to the same code
+[11:44.68] itself so we haven't done nothing
+[11:46.48] whether you call this Branch as navbar
+[11:48.40] or Master they basically are doing
+[11:50.88] exactly the same thing the code is
+[11:52.44] exactly same so right now all of us are
+[11:54.40] sitting at this position uh so we need
+[11:56.80] to move forward in the time so we need
+[11:58.84] to do work inside uh this uh branch
+[12:02.44] which is Master we need to also work a
+[12:04.64] little bit on the nav bar so that we can
+[12:06.08] see what differences they do make and uh
+[12:08.72] does they affect each other's code
+[12:10.48] something like that all right so
+[12:12.76] currently we are on the nav bar so what
+[12:14.40] we're going to do is now we in the nav
+[12:16.36] bar so we're going to go ahead and
+[12:17.72] create a new file and since this guy is
+[12:19.76] working on a nav bar let's go ahead and
+[12:21.68] say that hey you create a nav bar. HTML
+[12:25.56] and we're going to go with that now we
+[12:27.28] have a navb bar. HTML so I'm going to go
+[12:29.52] ahead and say hey Navar this Navar
+[12:31.64] requires its own code so I'm going to go
+[12:33.16] ahead and simply have a nav and I'm
+[12:35.16] going to add some bullet points into
+[12:36.64] this so unordered list inside that list
+[12:38.72] have some of the list items and we'll
+[12:40.68] just have three of them uh basically I'm
+[12:43.48] just writing Navar here so what do we
+[12:45.64] have home we will have about us and
+[12:49.88] we'll have contact us pretty
+[12:51.76] classic uh feel free to write any text
+[12:54.12] inside it that's also exactly the same
+[12:56.72] now that we have some of the text we
+[12:58.68] have worked on on our navigation bar
+[13:00.44] maybe that's all is required it could be
+[13:02.48] as complex as code as you can imagine
+[13:04.36] but this is what I am having and
+[13:06.68] currently where I am I'm on the Navar
+[13:08.76] let's go ahead and check out the git
+[13:10.12] status if I go ahead and check this
+[13:12.32] there is one Navar which is untracked
+[13:15.32] remember reminding it again I'm on the
+[13:17.76] Navar Branch I'm going to go ahead and
+[13:20.12] say hey let's just go ahead and add this
+[13:22.24] uh this time this file name is navb bar.
+[13:24.44] HTML added this and let's go ahead and
+[13:27.16] Commit This so I'm going to go ahead and
+[13:29.24] say um let's go ahead and add this
+[13:31.76] commit message add Navar to
+[13:37.16] codebase pretty
+[13:39.24] good okay uh this is what we have done
+[13:42.00] so far that we have added a nav bar all
+[13:44.40] right now let's see what happens and
+[13:46.84] let's see what the branch situation is
+[13:48.92] in this case it will be much much
+[13:50.52] helpful to check out the git lens the
+[13:52.20] plug-in that I have mentioned earlier in
+[13:53.84] the class now notice here the Navar is
+[13:56.40] here the master is here so Navar has
+[13:58.48] moved a little a little bit ahead and
+[14:00.56] master is still at the same position all
+[14:02.88] right let's go ahead and switch the
+[14:04.52] branch and see what happens so how do I
+[14:06.44] switch the branch again pretty easy you
+[14:08.80] can just go ahead and do a good uh get
+[14:10.68] checkout and instead of the nav bar
+[14:12.96] we're going to go ahead and say hey
+[14:14.40] let's go on to the master Branch the
+[14:16.92] moment I switch to the master Branch
+[14:18.96] look what happens to my code base the
+[14:21.64] file which I made nav bar is completely
+[14:24.48] gone yep it's completely gone why is it
+[14:27.64] gone simple reason because it was added
+[14:30.60] by some another coded we haven't merged
+[14:32.88] those branches he's working on his own
+[14:35.04] timeline I am completely unaware of what
+[14:37.20] he's doing let's just say I'm also here
+[14:39.72] and I want to work on something so I'm
+[14:41.76] going to go ahead and say that I'm
+[14:43.16] working on the hero section of the
+[14:44.68] website so I'm going to go ahead and say
+[14:46.52] uh let's just go ahead and add a hero
+[14:48.28] section let's add this and once I have
+[14:51.48] this hero section and I should actually
+[14:54.56] rename this it should be moreover rather
+[14:56.88] hero section. HTML my bad and let's just
+[15:00.04] go ahead and add this let's just open
+[15:02.84] this
+[15:03.84] file remove this remove this so how does
+[15:07.56] a hero section look like we'll just go
+[15:09.64] ahead and add a section uh we'll add an
+[15:12.52] H1 onto this one and let's just add lurm
+[15:16.20] 10 words there seems good like a hero
+[15:18.92] section and what else maybe a paragraph
+[15:21.68] with some lurm words of 20 yeah there we
+[15:24.72] go so we have some laum but this is our
+[15:27.12] hero section obviously what do you want
+[15:28.64] to do now now you want to commit this
+[15:30.44] code let's just go ahead and say get add
+[15:34.08] and we have this hero section. HTML
+[15:37.52] added this let's just go ahead and do a
+[15:39.64] commit and this time we're going to say
+[15:42.48] add hero
+[15:45.20] section come on hero section to the code
+[15:48.48] base all right pretty good now what
+[15:50.84] happens to the code base all right the
+[15:52.68] hero section is here but the most
+[15:55.04] interesting part is how does everything
+[15:57.64] looks like when we change this this
+[15:59.76] let's do a
+[16:01.20] checkout I want to do a checkout onto
+[16:03.72] the
+[16:05.12] Navar the moment I do a check out on the
+[16:07.52] nav bar and I can see the nav bar is
+[16:09.84] here but hero section is gone and if I
+[16:12.56] do a check out onto the master if I go
+[16:15.60] ahead and check out the master and my
+[16:18.60] bad it's it's supposed to be Master
+[16:21.92] although AI can actually suggest me the
+[16:23.80] commands that's really nice but if I go
+[16:26.28] ahead and do this now my uh okay where
+[16:29.20] am I I am switched to master so
+[16:31.52] obviously hero section is here but so
+[16:33.64] you get the idea you get the idea that
+[16:35.80] we are having a completely different
+[16:37.80] timeline so right now this main branch
+[16:41.44] has moved into the time and have added
+[16:43.36] some of the code to the code base on the
+[16:45.56] other hand this Branch who is
+[16:48.00] representing the Navar has done working
+[16:50.16] with the Navar so they are completely on
+[16:52.28] different timeline completely different
+[16:54.04] code bases completely different file and
+[16:56.36] that's why I say it is so magical to
+[16:59.00] work on with this the most important
+[17:01.04] thing here to actually understand one
+[17:02.84] thing which is about the head now head
+[17:05.36] always points to where the branch is
+[17:07.40] currently at now it is not always
+[17:09.68] necessary that your head is pointing
+[17:11.64] towards the end of the branch usually it
+[17:13.40] does but you can actually allow your
+[17:14.92] head to point one back as well because
+[17:17.24] it's a checkpoint just like you can
+[17:19.08] restore your game into the previous
+[17:20.88] checkpoint yes exactly we can do with
+[17:23.32] the code bases as well but one thing you
+[17:25.36] need to understand that it the head the
+[17:27.20] whole idea the concept of the head came
+[17:29.48] from these cassets where you have a head
+[17:32.52] which plays onto that if you flip the
+[17:34.28] cassets uh these head is still pointing
+[17:36.64] towards wherever you left it last time
+[17:39.60] so this is a head if you switch to the
+[17:41.60] master Branch this is obviously going to
+[17:43.56] point towards here but if you switch on
+[17:45.76] to another some Branch your head is
+[17:47.92] obviously going to point towards that
+[17:49.72] Branch it's not a pretty difficult
+[17:51.96] concept to understand it's just that
+[17:53.80] wherever your branch is latest that's
+[17:55.92] where it's going to be pointing so let's
+[17:57.92] just go ahead and try out that where our
+[17:59.80] branch is so let's go ahead and learn
+[18:01.72] about it get Branch currently I'm on
+[18:04.28] master so where my branch is pointing
+[18:06.44] towards where the head is pointing the
+[18:08.84] head is obviously towards the master and
+[18:10.64] not just there are multiple commits into
+[18:12.84] the M Master Branch as well so it's
+[18:15.08] pointing towards the latest ref that's
+[18:18.16] there is so we can see that we have
+[18:20.44] nothing inside the tags as of now but
+[18:22.04] heads can be on the master or can on the
+[18:24.56] nav bar now this master as you can see
+[18:28.24] let me just you through with the git log
+[18:30.24] this is where the git logs are pretty
+[18:31.76] important and we're going to go with the
+[18:33.32] one line notice here the head is
+[18:35.76] pointing towards this Branch 31 AE and
+[18:38.28] that's exactly the file that we can see
+[18:40.20] here so it could have pointed we can
+[18:42.92] forcefully ask it that hey Point onto
+[18:45.12] this one I don't want to see the latest
+[18:46.96] comment I want to point towards the one
+[18:48.80] back comment I'll show you the commands
+[18:50.20] for that but it's completely doable so
+[18:53.32] you get the idea where the head is it
+[18:54.92] just points towards where the updated
+[18:56.88] code base is or where the intentional
+[18:58.56] code bases all right that's nice now
+[19:01.28] let's go ahead and switch uh this one so
+[19:03.20] I'll just close this so that it doesn't
+[19:04.60] mess up the things let's go ahead and uh
+[19:06.92] check out another brand so we're going
+[19:08.68] to go ahead and say get checkout and
+[19:10.60] instead of the master we're going to go
+[19:11.96] into the nav bar there we go now if I go
+[19:14.80] ahead and do the git one line again
+[19:17.28] notice here it's pointing towards the
+[19:19.20] nav bar and uh this one obviously is
+[19:22.28] gone so now if I open this up again and
+[19:25.60] I check out where the head is the head
+[19:27.56] is pointing towards this one you can
+[19:29.08] just go ahead and check this one it's
+[19:30.76] pointing towards the nav bar and this is
+[19:32.92] where right now the head is all right
+[19:35.08] quite a lot of in-depth detail now uh
+[19:37.80] coming back onto the part that both of
+[19:39.64] them are completely unaware of this and
+[19:42.24] we have learned about this so this is
+[19:43.72] the flow that we have worked on with so
+[19:45.88] far so we learned about the git Branch
+[19:48.24] command it shows me all the possible
+[19:50.24] branches are available and we can just
+[19:52.40] create a new Branch by simply saying git
+[19:54.56] branch and bug fix usually this is the
+[19:56.52] common syntax but call it navbar footer
+[19:58.80] bug fix whatever you like you can just
+[20:00.24] go with that and you can also use the
+[20:02.56] command git switch or you can check use
+[20:04.84] the command git checkout both of them
+[20:06.56] almost does exactly the same it just
+[20:08.68] moves you to another Branch so feel free
+[20:10.88] to use git switch or you can use git uh
+[20:13.28] checkout and git log we have already
+[20:15.24] seen and we have done multiple times of
+[20:17.40] the switching and all these commands now
+[20:19.48] there are a couple of shortcuts that
+[20:20.80] you'll see quite a lot around thrown in
+[20:23.12] the entire git ecosystem what you can do
+[20:25.68] is you can run the command of git switch
+[20:28.04] dasc and then the name of the branch it
+[20:30.72] will do the two things at the same time
+[20:32.44] it will create a branch and move you
+[20:34.12] there so yeah that's nice you can also
+[20:37.08] do exactly same with the git checkout as
+[20:38.88] well git checkout when used with the
+[20:41.20] option of
+[20:42.44] dashb uh B for boy yes dasb and you can
+[20:46.32] go for dark mode pink mode whatever you
+[20:48.24] like and it will just create a new
+[20:50.24] branch and will move you there as well
+[20:52.08] so again shortcuts you can use branch
+[20:54.44] and then checkout or you can use the
+[20:56.16] checkout dasb to create a new Branch as
+[20:58.40] well as move it to this one and always
+[21:01.56] commit before switching to another
+[21:02.92] branch is usually a good advice uh you
+[21:05.24] can just go ahead and give it to
+[21:06.56] yourself and always go to the git folder
+[21:08.76] and check out if you're in initial phase
+[21:10.24] to understand the concept of the head
+[21:11.96] that where the head is pointing towards
+[21:14.68] now comes up the interesting part is
+[21:17.12] obviously we don't want to hang around
+[21:18.92] with the different branches if I have to
+[21:21.00] check out the navigation bar I have to
+[21:22.96] move to entirely different branch and if
+[21:25.16] I want to check out the hero section I
+[21:26.80] have to move into uh the main branch or
+[21:29.36] the master Branch so it's not a good
+[21:32.16] thing it's not a good feasable workflow
+[21:34.32] so we need to learn something about
+[21:35.76] merging of the branches now merging of
+[21:38.08] the branches a lot of beginners are
+[21:39.88] afraid of it you don't need to be I'll
+[21:41.92] walk you through with that so there are
+[21:43.56] two types of merging one is the fast
+[21:45.44] forward merging uh in which the main
+[21:47.84] branch doesn't do much you just work
+[21:49.88] entirely onto a separate branch and then
+[21:52.00] you merge that Branch into the main
+[21:53.64] pretty easy workflow with that uh this
+[21:55.92] is the one where the master Branch
+[21:57.68] remains as it is we don't change
+[21:59.16] anything I'll show you that workflow as
+[22:00.76] well but it's much more easier to
+[22:02.48] actually merge this one but what's uh
+[22:05.68] critical to understand is not
+[22:07.76] fastforward merge in this case your
+[22:10.72] alternative branch is also working your
+[22:12.76] main branch is also working and
+[22:14.32] eventually at some point of time you
+[22:16.44] want to pack into this one so so I want
+[22:18.92] to just go ahead and uh merge these
+[22:21.48] things so in order to merge uh first and
+[22:24.24] foremost make sure you are on the branch
+[22:26.48] uh which you don't want to merge like uh
+[22:28.68] whole idea is I'm bringing something
+[22:30.92] into me so I should be on that platform
+[22:33.16] it's not like you are on different
+[22:34.40] platform and you're moving that same
+[22:36.00] platform here the ideal situation is
+[22:38.04] let's just go ahead and merge this all
+[22:40.20] right so this is pretty easy to work on
+[22:41.88] with this let's go ahead and have a
+[22:43.60] practical of this one first of all where
+[22:45.76] you are so if I go ahead and check out G
+[22:47.84] Branch I'm on Navar not a good idea I
+[22:50.64] want to be on master so that I can bring
+[22:52.80] navbar into me so I'll just go ahead and
+[22:55.20] say get check out and I'll move into
+[23:00.60] master all right let's check it one more
+[23:02.92] time now I'm in the master Branch but
+[23:05.56] the problem is that how do I merge the
+[23:08.72] Navar in the master so that I can see
+[23:11.88] the Navar onto this file now we have a
+[23:15.16] special situation right now that nothing
+[23:16.96] is conflicting each other whatever the
+[23:19.48] branch I have created that Branch guy
+[23:21.44] didn't worked on the FI the same file
+[23:23.72] that I have worked on he worked on
+[23:25.64] completely different files so that is
+[23:27.68] okay that is a good situation right now
+[23:30.04] in order to merge this all I have to do
+[23:31.92] is just run the command get merge and
+[23:34.92] the name of the branch that you want to
+[23:36.60] merge in this case I have a branch that
+[23:38.52] is Navar once I go ahead and hit enter
+[23:41.04] it's saying waiting for your editor now
+[23:43.72] this is waiting because I haven't passed
+[23:45.96] any message for this one the default
+[23:48.64] message that it gives me is merge Branch
+[23:50.84] navbar so obviously what we're doing
+[23:53.16] right now is we all are moving into the
+[23:56.16] new Zone that means this Branch was
+[23:58.52] tring here this Branch was tring here so
+[24:00.88] obviously we have to move forward in the
+[24:02.48] time we cannot go back in the time so we
+[24:04.64] are moving forward and in this
+[24:06.56] particular commit we are taking this
+[24:08.68] whole code in here but this particular
+[24:11.16] commit also needs a message a commit
+[24:13.40] message to work on with and that's
+[24:15.24] exactly what is happening it is giving
+[24:17.08] me that hey choose a message and usually
+[24:18.80] the message looks like this merge Branch
+[24:20.88] Navar so we are pulling all the code of
+[24:22.64] merge branch in here pretty nice I'll go
+[24:25.32] ahead and I'm happy with this message so
+[24:27.24] I'll just save this and close CL this
+[24:29.36] I'll go back and no I don't need any
+[24:31.84] notification and notice what happened
+[24:33.76] here it says navb bar. HTML there is
+[24:36.80] seven something here there's a plus plus
+[24:39.24] plus plus plus here that means all the
+[24:41.24] code that was there was the insertion
+[24:42.96] code no deletion code was there one file
+[24:45.80] was made changed and create mode and
+[24:48.12] whatnot now I would love to check out
+[24:50.88] the git logs that would be very very
+[24:53.04] interesting okay so at this point
+[24:56.24] everything was okay then there was this
+[24:58.52] Navar add Navar to the code base so what
+[25:01.88] happened here is all the commits that
+[25:04.16] were made in this green zone so this is
+[25:06.60] our Navar are also a part of now this
+[25:09.36] main branch so anything that happened
+[25:11.08] here is also coming in here okay so this
+[25:13.88] nav bar here then we worked and added
+[25:16.20] the hero section to the code base that
+[25:18.16] was in the main branch but now we have
+[25:20.60] merged into this all of this now how
+[25:22.64] does it looks like does it really look
+[25:24.64] like these branches and all of that yes
+[25:27.00] it looks exactly like that let me show
+[25:28.52] you that even there are tools like uh
+[25:31.08] git lens are going to show you this so
+[25:33.28] notice here now this is exactly much
+[25:36.04] much nicer to see and understand can I
+[25:38.44] zoom this a little yep so notice here we
+[25:41.48] were working here the commit was
+[25:43.00] included the head was here then we
+[25:45.08] merged out we went and we started to
+[25:48.00] create a new branch which was Navar for
+[25:50.08] bringing in the navigation bar in the
+[25:52.44] meantime we worked on this one and there
+[25:54.28] was one commit made that we wanted to
+[25:56.04] work with the hero section and now we
+[25:57.92] both are going in the future and are
+[25:59.64] merging everything how nicely and how
+[26:01.96] easily it was all done pretty nice
+[26:04.08] pretty okay let's see the code base as
+[26:06.12] well because that's where the
+[26:07.08] interesting part is apart from the git
+[26:09.28] now we have index which was already
+[26:11.24] there we have the hero section which was
+[26:12.76] already there and we have the Navar as
+[26:15.16] well so all the code that my friend has
+[26:17.16] written or my colleague has written is
+[26:19.44] now in here that is super super nice now
+[26:22.56] although it's not really kind of a fun
+[26:24.64] thing to do but a lot of companies does
+[26:26.52] this thing is writing one more
+[26:28.80] additional command and I'm going to just
+[26:30.44] show you here uh it's not really fun not
+[26:32.52] my favorite one but still a lot of
+[26:34.04] companies has asked me to do so so I can
+[26:36.80] just run a command git branch and the
+[26:38.88] Dash D it's a pretty dangerous option
+[26:41.48] that's why they call it as-h d uh fun
+[26:43.84] stuff it is actually for deleting the
+[26:45.32] branch and I want to delete the branch
+[26:48.56] Navar what happens when I do this oh it
+[26:51.68] deletes the Navar Branch what happens
+[26:54.12] when I just go ahead and run the command
+[26:55.80] get Branch now we have just one branch
+[26:58.44] which is Master hm interesting let's go
+[27:02.20] ahead and check out this and git lens
+[27:05.32] all right so git lens let me just go
+[27:06.96] ahead and start this again so although
+[27:08.84] in the git lens history we still have
+[27:10.96] this oops my bad we all all have this
+[27:14.04] once because it was previously made so
+[27:16.24] we are not deleting the history of
+[27:17.68] itself but now we're deleting this
+[27:19.76] Branch because the branch has served its
+[27:21.88] purpose it's no longer useful for us if
+[27:23.88] we need we can create more branches and
+[27:26.24] it works pretty fine so this is is the
+[27:28.64] entire part of how things are done uh
+[27:30.96] can we do something more exactly same
+[27:33.16] this time a little bit fast forward so
+[27:34.64] that you can see things happening a
+[27:35.88] little bit Fast Pace yeah so of course
+[27:38.36] why not uh we know that we have just
+[27:40.16] this Branch so how do we go ahead and
+[27:42.04] create a new Branch we can do this this
+[27:44.32] time uh using the git checkout dasb
+[27:46.72] option and we want to create footer so
+[27:48.56] let's go ahead and create a footer for
+[27:50.04] this one and we switched into the new
+[27:52.48] branch and we can just go ahead and see
+[27:54.48] get branch and there we go now we are on
+[27:56.64] the footer if we go back onto the code
+[27:58.56] file it's exactly same uh thing which
+[28:00.84] are pointing let's go ahead and create a
+[28:02.84] new file let's go ahead and say this is
+[28:04.68] footer. HTML go ahead and say hey this
+[28:08.00] one is going to be footer there we go
+[28:11.76] and nice footer um I'm running out of
+[28:15.00] the words nice footer and what do
+[28:18.72] usually people put 2024 copyright
+[28:21.20] something like that we have done this
+[28:22.88] now we want to obviously uh check out
+[28:25.16] this one not check out yet uh add this
+[28:27.68] one by the way we can do add and commit
+[28:30.32] at the same time as well I'm not
+[28:32.00] interested in that I'll just do one by
+[28:34.16] one so I'll just add this one and I'll
+[28:37.44] go ahead oops get commit and we'll just
+[28:41.92] go ahead and
+[28:44.00] use add footer section would be
+[28:47.20] nice add footer section to the code base
+[28:50.04] there we go we have done this uh so
+[28:52.00] there is a commit now and U obviously
+[28:54.48] our main branch is not aware of it let's
+[28:56.96] go ahead and get check out we don't want
+[28:59.04] to use dashb now I'll go move on to the
+[29:01.92] master and hopefully Master is not aware
+[29:04.64] of the footer whatever the work we have
+[29:06.16] done Master is not aware of it but if I
+[29:08.60] go ahead and check out this one uh G
+[29:10.68] lens now we have another footer branch
+[29:13.40] and we want to merge all the things that
+[29:15.52] we have done the footer branch has done
+[29:17.64] into this one so pretty simple in order
+[29:19.64] to merge any branch what we can do is
+[29:21.92] first uh see where we are so get branch
+[29:24.68] is a nice option to run again I'm on the
+[29:27.00] master I want to bring all the code from
+[29:28.92] the footer let's go ahead and do that
+[29:31.24] get uh
+[29:33.16] merge and we're going to go ahead and
+[29:35.12] bring in footer there we go since there
+[29:37.76] are no conflicts uh it just merged it
+[29:41.32] and uh there we go pretty nice and easy
+[29:44.28] and we can see the footer is here that's
+[29:46.28] it now coming up on to the more complex
+[29:49.48] stuff than this because this was all
+[29:51.04] easy all easy and people are not afraid
+[29:53.52] of the easy part and merging the
+[29:56.00] branches is a tricky task let me show
+[29:58.96] you why why it does so there are
+[30:02.88] possible chances where things are not
+[30:05.48] that much great things can go a little
+[30:07.96] bit messy let me show you what happens
+[30:10.28] when git tries to get into the conflict
+[30:12.64] Zone and let me show you first what are
+[30:14.32] these conflict zones so that you can
+[30:15.92] understand exactly so where we are right
+[30:18.60] now we are on to the master Branch so
+[30:22.36] let's just say we're working on the
+[30:23.76] master branch and we go ahead and check
+[30:25.36] out the index and we go here and say
+[30:29.36] footer
+[30:30.48] added okay and what happens if somebody
+[30:35.44] go ahead and push this commment nothing
+[30:37.84] bad we can just go ahead and say we have
+[30:40.32] to check the status first good practices
+[30:42.80] we know that this is here so we can just
+[30:44.44] go ahead and say get add index so assume
+[30:49.40] this is a really complex code uh we have
+[30:51.64] added this we want to have a git
+[30:54.88] commit and we'll just go here
+[30:59.92] add footer
+[31:02.00] in index
+[31:04.24] file commit that pretty nice and easy
+[31:07.68] now now comes the conflict part somebody
+[31:10.60] did checked out the branches and
+[31:12.96] somebody checked out onto the footer
+[31:14.92] Branch
+[31:16.72] get check out if I can write that and
+[31:20.88] I'll go into the footer Branch okay now
+[31:24.56] I'm in the footer
+[31:25.88] branch and uh what I did here is once I
+[31:29.76] checked into the footer Branch I
+[31:32.04] actually went into the index file again
+[31:34.52] and I see there's nothing there's
+[31:36.56] nothing inside this Branch I went up
+[31:38.64] here and I just simply said footer was
+[31:42.64] added
+[31:45.84] successfully all right so I hope you can
+[31:48.40] see this is a point of conflict now
+[31:51.00] we're also going to go ahead and add a
+[31:52.76] commit let's go ahead and say get add
+[31:56.68] index file this is the file that we want
+[31:58.68] to add get add now this time we need to
+[32:03.08] commit and we are going to go ahead and
+[32:05.48] say something different as a
+[32:09.32] commit update index file would be good
+[32:11.68] message update index file with footer
+[32:16.52] code all right so we have done this now
+[32:19.80] here's the interesting part we can go
+[32:22.08] ahead and check out we are on the footer
+[32:23.84] Branch so we can we can just go ahead
+[32:25.52] and check out this first so we have
+[32:27.28] added this one here I'll just close this
+[32:30.12] let's check out the master branch and
+[32:32.64] fun stuff here oops my bad I have to
+[32:35.16] write it properly Master Branch if I go
+[32:37.32] into the master branch open this up
+[32:39.00] footer added okay I close this I come
+[32:42.24] back here and I go ahead and say get
+[32:44.96] checkout footer I go back here and I see
+[32:48.48] the index file footer was added
+[32:50.56] successfully this is a point of conflict
+[32:52.84] and we need to discuss this how things
+[32:54.44] actually happen so the whole point is so
+[32:58.08] we have been into this whole good
+[32:59.64] situation whether the branch the main
+[33:01.32] branch was not doing anything whole work
+[33:03.36] was done on the another Branch so we
+[33:05.72] just went ahead and merged all together
+[33:08.08] and the timeline goes again like this
+[33:10.00] this is pretty good interesting nothing
+[33:11.68] bad and there is not fastforward merge
+[33:15.24] which is in which the main branch is
+[33:16.92] also working and uh another branch is
+[33:19.72] also working but the whole point is they
+[33:21.92] were working on the different files so
+[33:23.32] there was nothing too much worried about
+[33:25.00] we just made the comment but in the real
+[33:27.12] world scenario
+[33:28.52] this is where the things gets tricky and
+[33:30.80] git so the whole idea is git always
+[33:33.68] tries its best to resolve these
+[33:35.88] conflicts right now we have a conflict
+[33:37.88] but git tries automatically but git is
+[33:40.16] not an AI and of course even AI cannot
+[33:42.36] tell you which code to keep which code
+[33:44.40] to delete so G tries its best to resolve
+[33:46.60] the conflict but whenever there's such
+[33:48.96] conflict happens we need to understand
+[33:50.52] that how these conflicts are resolved
+[33:52.00] and how the diagrams actually work on
+[33:53.56] with this so first of all we need to
+[33:55.72] understand this diagram here the green
+[34:58.04] all these head whatever these fancy
+[34:59.88] things are going to come up these equal
+[35:01.36] signs and these ones just remove all of
+[35:03.60] them just keep the code that you want to
+[35:05.28] have save it and that's it so that's
+[35:07.76] what it says keep whatever you want
+[35:09.52] remove the marker and save and that's
+[35:11.40] all it's going to do so yep it's not
+[35:13.48] really that bad uh the whole thing is
+[35:15.40] that people assume that it's going to
+[35:17.36] happen automatically no it doesn't it
+[35:19.20] doesn't happen automatically so let's go
+[35:21.44] ah and check out where I am so I'm going
+[35:23.64] to go ahead and work on with the branch
+[35:25.04] I'm on footer I would love to check out
+[35:26.68] on the master branch so let's go ahead
+[35:28.96] and work on with the master there we go
+[35:32.08] uh what's the situation now Branch I am
+[35:34.00] on master and there's code in the footer
+[35:36.40] I would love to now U merge the branch
+[35:38.80] so let's go ahead and say get merge and
+[35:41.32] I want to merge the footer Branch pretty
+[35:43.24] easy uh standard stuff once I do this it
+[35:46.24] says uh Auto merging index conflict
+[35:48.92] merge conflict index Auto merging failed
+[35:51.76] fix conflicts and then commit the result
+[35:54.12] so notice here if I go ahead and open
+[35:56.44] this up now your code editor looks a
+[35:59.12] little different and depends on what is
+[36:00.52] your default code editor there is also
+[36:02.76] resolve in merge editor there's a merge
+[36:04.64] editor here as well by the way so this
+[36:07.08] is how it looks like a lot of people get
+[36:08.64] afraid of this nothing to be afraid this
+[36:10.72] is all all good so notice here it says
+[36:13.76] these are the you can by the way vs code
+[36:15.76] also gives you really nice options at
+[36:17.64] the top that you can accept the current
+[36:19.40] change you can accept the incoming
+[36:20.88] change or you can accept the both by the
+[36:22.56] way this is good of vs code but I'll
+[36:24.72] tell you what this is now notice here
+[36:26.64] this head this is footer edit this was
+[36:28.68] something which is in the master Branch
+[36:30.92] footer edit successfully was the footer
+[36:33.00] branch code now it's totally up to you
+[36:34.88] which one you want to keep or you want
+[36:36.16] to keep both totally your decision your
+[36:38.28] call but notice here how similar this is
+[36:40.56] from the diagram that we studied exactly
+[36:42.76] the top part is coming up this STP part
+[36:45.04] is coming up from your uh main branch
+[36:47.52] Master Branch this everything uh be
+[36:50.48] below the equal sign is coming up from
+[36:52.96] the incoming Branch or incoming merge
+[36:55.28] that you are going through with exactly
+[36:57.16] same nothing nothing changed here now
+[37:00.00] here's the interesting thing you can go
+[37:01.64] ahead and click on these buttons I will
+[37:03.44] not do that you try that because it's
+[37:05.24] much more easier there I'll show you how
+[37:07.08] the hard work hard part is being done so
+[37:09.44] I can just come up here and say that hey
+[37:11.16] let's just go ahead and remove this and
+[37:14.08] we definitely want to remove this part
+[37:16.20] we want to remove this part I think this
+[37:18.40] footer message much is much more better
+[37:20.56] so I'll just go ahead and remove this
+[37:21.88] footer eded I'll remove this one here as
+[37:23.88] well so this is best I'll go ahead and
+[37:26.60] save this and I go back here and notice
+[37:29.20] here it automatically fixes this up and
+[37:31.08] I can just close this again and start
+[37:32.80] this again and this is nice by the way
+[37:35.20] in the VSS code you can click on the
+[37:36.56] resolve in merge editor and this opens
+[37:38.72] up a a totally new editor and all of
+[37:40.96] these things and it's much more easier
+[37:42.80] it helps you to actually compare what's
+[37:44.84] in the footer Branch what's in the
+[37:46.12] master Branch I'll just say complete the
+[37:47.80] merge uh complete with conflict
+[37:50.84] yeah close with conflicts whatever that
+[37:53.40] is I I'm not worried much about this
+[37:55.44] code base here but you get the point
+[37:57.32] which one one you want to keep it's
+[37:58.60] totally up to you now the branches are
+[38:00.60] definitely mered so I can go ahead and
+[38:02.12] check out this and definitely we do have
+[38:04.60] some of the commits that we have to make
+[38:06.60] by the way I can make these commits from
+[38:08.12] here as well but I would love to make
+[38:09.72] these commits uh merge footer branch and
+[38:12.44] all of these things so we can just go
+[38:14.84] ahead and add this since we have
+[38:16.48] manually merged this so I'll just go
+[38:18.08] ahead and say get add whatever that is
+[38:20.92] and let's just go ahead and get
+[38:23.00] commit and I'll be saying that we have
+[38:27.32] um
+[38:28.36] merged footer
+[38:32.32] branch and there we go now everything
+[38:34.72] looks good should be all okay and
+[38:38.20] everything looks good the footer was
+[38:39.56] added successfully is the message that
+[38:41.04] we are accepting instead of the one so
+[38:43.48] you have to pick one you can pick both
+[38:45.16] as well nobody's stopping you but this
+[38:46.56] is how it goes now interestingly let's
+[38:48.96] go ahead and check out how the timeline
+[38:50.96] looks like exactly same as before we
+[38:53.60] started with this we went into this one
+[38:55.92] now this is also we started with this
+[38:57.36] one we did some commits and footer Index
+[38:59.60] this is how we solve the conflicts so
+[39:02.52] again a lot of people a lot of people
+[39:04.36] I've seen are too much worried about the
+[39:06.28] conflicts there is nothing to be worried
+[39:08.72] it's just these extra equal signs and
+[39:11.20] Arrow Signs which bothers a lot of
+[39:13.12] people vsod does a pretty good job but
+[39:15.40] yeah you got this one uh there's a lot
+[39:17.40] more to discuss and talk about this but
+[39:19.28] we're going to do that in the upcoming
+[39:21.60] uh video right now I think this is more
+[39:23.28] than enough for us for the discussion
+[39:25.16] let's go ahead and catch up in the next
+[39:26.44] video hope you're enjoying if you're
+[39:27.88] enjoying do let me know in the comment
+[39:29.44] section I'll catch you up in the next
+[39:35.52] one

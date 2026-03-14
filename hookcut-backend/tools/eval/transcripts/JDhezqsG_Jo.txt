@@ -1,0 +1,931 @@
+[0:01.84] Hello everyone. Good evening. Um and
+[0:04.48] welcome to the live stream today. Uh if
+[0:07.84] you're able to hear my voice, please let
+[0:10.08] me know just [snorts] and if you're able
+[0:12.64] to see me, then hi. Um and yes, very
+[0:17.04] good evening, very good new year 2026. I
+[0:20.88] hope the year is going well for you.
+[0:22.48] It's just been 7 days. [laughter]
+[0:24.88] I hope it goes well for the rest of the
+[0:26.88] year also. [snorts]
+[0:29.76] Yes, I I think uh any uh comment on the
+[0:33.52] live stream will make it clear to me
+[0:35.92] that uh you're able to hear me and
+[0:37.76] you're able to see me. So yes, please
+[0:40.32] let me know.
+[0:45.20] Okay. And for the first uh 3 or 4
+[0:47.84] minutes, we will be mostly waiting
+[0:50.96] because YouTube sends a notification and
+[0:52.88] then people will be joining. So yes, if
+[0:56.56] you have any questions, you can post it
+[0:58.00] now on the chat. Now is a good time.
+[1:02.00] The topic of today's live stream is that
+[1:04.40] u you know a road map for AI
+[1:06.88] engineering. A lot of us are looking to
+[1:08.56] learn AI whether we are software
+[1:10.88] engineers, DPMs, product managers. Uh we
+[1:13.84] are looking to learn the internals of AI
+[1:15.84] and most importantly how to use it. So
+[1:18.64] that's what we'll be talking about in
+[1:20.24] this session. This will be roughly 45
+[1:22.40] minutes. we will be going over the most
+[1:24.72] important skills that we need to acquire
+[1:26.64] and how we can go ahead and acquire
+[1:28.24] them. Okay? So, if you have any
+[1:30.56] questions around that, please feel free
+[1:32.40] to post them. In general, if you have
+[1:34.40] any questions around AI, you can post
+[1:35.76] them. Uh if I get the time, I'll
+[1:37.28] definitely answer.
+[1:40.16] Thank you, Royal Stats Academy. Thank
+[1:41.76] you, Norman. Um Raj Shakhar, thank you.
+[1:45.92] Thank you everyone for making it clear.
+[1:47.28] Pawan, everyone, good evening.
+[1:52.24] Yes, Purautam. This is the meta glass
+[1:53.92] here. [laughter]
+[1:56.80] In fact, I should take up a photo here.
+[2:07.68] Uh, good morning. Good morning from
+[2:10.08] India. Um, thank you. Thank you for
+[2:12.80] joining us.
+[2:16.24] Ankit. Hello.
+[2:22.64] Great.
+[2:29.12] Okay. Uh AJ is saying that maybe we can
+[2:31.76] look into the mathematical aspects of ML
+[2:33.76] and deep learning. Okay, that's
+[2:36.08] interesting. Uh Priyanu is also saying
+[2:38.40] how do we learn ML? I have completed my
+[2:40.88] undergraduate. How do I learn AI and be
+[2:43.44] job ready? I'm getting a general gist of
+[2:46.08] the uh of the doubts or comments or
+[2:49.12] thoughts um in this space. That's great.
+[2:54.64] Yes. Uh Dudla Gopala Krishna, let me
+[2:58.32] share the resources that I use to learn
+[3:01.60] about AI.
+[3:03.84] They're free. Um I have posted them here
+[3:08.56] in GitHub
+[3:10.48] and I'll share them with you right here.
+[3:12.32] They're mostly all white papers. Uh so
+[3:15.84] AI
+[3:17.76] engineering resources,
+[3:21.44] these are the original sources I use uh
+[3:24.24] to learn about AI engineering. They
+[3:28.40] I I think all of the papers are really
+[3:30.08] good. But if you're looking to start
+[3:32.96] then h where should you start? Don't
+[3:36.16] start with attention is all you need.
+[3:37.60] That would be my suggestion. Instead,
+[3:39.68] you could probably start with bite pair
+[3:41.52] encoding actually. Yeah, I think it's in
+[3:44.56] it's in decent order.
+[3:46.88] Yeah,
+[3:48.80] I've ordered it according to the flow
+[3:51.28] that you should go. So, these are all
+[3:53.12] white papers and you can use chat GPT or
+[3:55.52] notebook LM to to study using them. But
+[3:58.64] if you're serious about a engineering,
+[4:00.16] yes, white papers are the best sources
+[4:02.08] to go through. There are some books also
+[4:05.04] which are okay. But I think the amount
+[4:08.56] of information that you can get through
+[4:09.84] white papers is the most. Uh there's a
+[4:12.24] very good YouTube channel Yanik
+[4:13.60] Kilchure. He's a person who breaks down
+[4:16.40] white papers. Go for that. Yanik
+[4:19.36] Kilchure. Uh maybe I can share his
+[4:22.24] YouTube channel.
+[4:29.44] Yeah, this is him.
+[4:32.00] He's really good. The only problem is or
+[4:35.28] I mean that's who he is. Uh the the the
+[4:38.00] thing is he doesn't want you to uh you
+[4:42.40] know get job ready or anything. He's
+[4:43.76] just talking about the latest research
+[4:45.28] in AI and what's good about it. So he
+[4:47.92] summarizes it quite well but there isn't
+[4:50.80] that much focus on you know how are you
+[4:53.04] going to apply this as an engineer or
+[4:54.88] something. It's it's more about
+[4:55.92] knowledge gathering.
+[5:01.92] Okay.
+[5:03.92] Okay. So, let's start the stream guys.
+[5:05.92] Now, I have a few questions from uh on
+[5:09.52] the chat. So,
+[5:12.48] the overall, you know, agenda today is
+[5:15.92] to have an AI engineering road map. Let
+[5:18.96] me just share that with you here.
+[5:22.88] Right. And let me reduce my size. I'm
+[5:26.16] not as important as the road map. Okay.
+[5:29.04] Uh I'll put myself in the corner.
+[5:35.92] Yes,
+[5:38.72] most of this stuff should be possible
+[5:40.32] with the eye eventually.
+[5:42.88] Okay, good.
+[5:45.60] Yes.
+[5:49.44] Okay.
+[5:51.12] AI
+[5:53.36] engineering
+[5:57.04] road map
+[5:58.96] for 2026.
+[6:01.92] Okay. Um,
+[6:04.24] unlike most road maps, I'm not going to
+[6:06.00] tell you, you know, pick this resource,
+[6:08.32] pick that resource. That's not the only
+[6:10.24] thing I'll be telling you. I can give
+[6:11.44] you a list. That's that's just a single
+[6:13.52] blog. But what I'll focus on is to gain
+[6:16.16] the right kind of skills to go through
+[6:19.52] uh this AI engineering road map. Okay.
+[6:21.84] The first skill that I would strongly
+[6:24.16] recommend that you have is to um
+[6:28.00] actually read
+[6:30.64] from the source. And what I mean by this
+[6:34.16] is research papers.
+[6:39.52] The basic skills that you need to read a
+[6:41.68] research paper in my opinion are
+[6:44.00] essential. They're essential for you to
+[6:45.92] become a good engineer. And I have seen
+[6:48.08] this not only with AI but I have also
+[6:49.76] seen it with system design. If you are
+[6:51.92] very good as a engineer, you're probably
+[6:54.80] going to be having the capability to
+[6:57.44] read research papers. Okay, this happens
+[6:59.36] in system design also. You might have
+[7:00.64] heard a Google file system and other
+[7:02.48] things. Uh in algorithms, that's the
+[7:04.56] same case. In AI engineering, the
+[7:07.20] ability to read research papers is
+[7:09.60] essential.
+[7:11.44] Okay. So, a very famous paper called
+[7:13.52] attention is all you need
+[7:20.48] will not make any sense to you unless
+[7:22.00] you know how to read research papers.
+[7:24.64] There are more famous papers around this
+[7:26.80] mixture of experts.
+[7:31.04] probably the most relevant
+[7:34.72] uh engineering paper would be G-Shard
+[7:36.96] which is on mix mixture of experts. Now
+[7:39.12] to read these papers
+[7:41.36] you need a set of skills. Let me focus
+[7:43.76] on that. Okay. So this part I'll ignore.
+[7:46.64] What papers to read we'll get to later.
+[7:48.72] How to read them is more important. And
+[7:51.44] I'll take an example.
+[7:59.76] Um let me take attention is all you need
+[8:03.68] as an example.
+[8:05.76] It's very very famous
+[8:08.48] so it'll get the point across. Um
+[8:16.16] yes.
+[8:17.81] [clears throat]
+[8:18.48] Okay. Whenever you have a research paper
+[8:20.80] in front of you, it is going to be
+[8:22.08] really dry. It's going to look really
+[8:24.08] boring. But trust me, it's the best way
+[8:27.04] to to learn. Okay. Everybody else has
+[8:29.84] opinions. Research papers have facts.
+[8:32.08] And so you want to get it from the
+[8:33.28] direct source.
+[8:35.12] Here's how I read these papers. The
+[8:38.32] first thing I do is just read the
+[8:39.52] abstract. Okay? Almost always read the
+[8:42.24] abstract. Is it worth reading? Unless it
+[8:44.80] has hundreds or thousands of citations,
+[8:46.64] we are not sure whether it is worth
+[8:47.92] reading or not. And since AI is such a
+[8:50.88] new thing, uh it's good to read the read
+[8:54.88] the latest research. But you know
+[8:57.68] reading the abstract tells you whether
+[8:58.96] it is relevant to you or not.
+[9:01.60] Then read the intro.
+[9:04.24] Background is not necessary. Okay. You
+[9:06.32] can read the intro to get an idea of
+[9:08.40] what they did, what happens in this
+[9:10.24] paper. You don't need to go to the model
+[9:12.80] architecture straight away. Scroll all
+[9:15.44] the way down
+[9:17.52] to
+[9:19.20] the conclusion.
+[9:21.20] Okay. Generally papers are broken in
+[9:23.04] this way. You have the introduction. you
+[9:25.04] have the conclusion in between. You
+[9:27.04] might have related work. That's also
+[9:29.28] sometimes useful to go through just to
+[9:30.96] get a general gist of what's happening.
+[9:33.04] But experiments, results, these things
+[9:36.08] you don't really want to get into unless
+[9:37.60] you're trying to replicate the results
+[9:39.76] or you're trying to truly understand at
+[9:41.44] a very deep level what's happening like
+[9:42.96] the internal nitty-g gritties. Okay? So,
+[9:46.16] you don't need to go through this. The
+[9:47.60] next thing you need to look at is
+[9:50.00] straight away part number
+[9:52.96] three. Okay. the model architecture.
+[9:58.56] After you're done with section three, go
+[10:00.64] to the remaining sections which are
+[10:01.92] technical. Buy yourself attention is a
+[10:03.52] technical section. Go through this
+[10:04.88] training. Again, you might choose to
+[10:06.64] skip.
+[10:08.16] Now, this is the fastest way to gain
+[10:10.16] knowledge, research paper knowledge.
+[10:12.00] Okay, this is not the deepest way, but
+[10:14.32] it is probably the fastest. Okay, so
+[10:17.52] there's that's quite useful. That's
+[10:19.12] quite important to know. I'll take
+[10:20.96] another example. Uh the example that I
+[10:23.36] took was Gshard. I can also take I mean
+[10:25.84] I can take any example here
+[10:29.36] but Gshard is a good one. You see it's
+[10:31.28] got a thousand citations so it's
+[10:33.68] probably useful and if you go through it
+[10:35.60] you'll know that it is useful.
+[10:39.60] Again look at the abstract look at the
+[10:42.88] introduction.
+[10:45.52] Go through the introduction however long
+[10:47.28] it is. Usually it's it's really good.
+[10:49.20] Then comes the model. go through that
+[10:50.96] too. This is the technical bit. You you
+[10:53.12] want to study it. But before you go at
+[10:54.80] the model, before you know that it's
+[10:56.16] worth your time, worth the investment,
+[10:59.20] uh first look at the conclusion. Okay,
+[11:01.92] what are they saying? The intro and the
+[11:04.00] conclusion tell you whether this paper
+[11:05.84] is related to you, whether this paper is
+[11:07.76] worth reading because a lot of papers
+[11:10.08] out there unfortunately are just for
+[11:11.92] marketing. AI is a very hot space. It's
+[11:15.12] not just CEOs and tech professionals who
+[11:18.32] want to market themselves.
+[11:20.40] The researchers also want to market
+[11:22.16] themselves. So they just stuff AI
+[11:23.68] wherever they can. It's going to waste
+[11:25.44] your time. Don't do that. Uh skip the
+[11:28.08] papers which are not related to you or
+[11:29.36] skip the papers which don't seem to make
+[11:32.00] a lot of sense. U skip the papers where
+[11:34.80] the results are not clear. People are
+[11:36.72] just hypothesizing.
+[11:38.80] Skip those. Okay. Uh yes. So you read
+[11:42.48] the conclusion, you see that okay this
+[11:44.00] might be useful. Then you come to the
+[11:46.24] core part which is the actual technical
+[11:49.52] second section that we talked about.
+[11:51.84] Okay, this is a pretty long paper but as
+[11:54.16] an engineer it's very easy to read
+[11:55.76] because Gshard is mixture of experts u
+[11:59.60] and it's quite easy to read.
+[12:02.80] Some parts are technical some some of
+[12:04.48] the math is difficult but again like how
+[12:08.32] much depth you want to go into is kind
+[12:09.68] of up to you. Highly parallel parallel
+[12:11.68] implementation this part can be skipped.
+[12:14.72] This goes into the algorithm.
+[12:17.20] I know it sounds crazy like can I really
+[12:19.76] skip all the math and the algorithm? As
+[12:22.40] long as you have a high level
+[12:23.44] understanding of what's going on,
+[12:26.64] it's okay to skip sometimes. You know,
+[12:29.20] you might want to watch a video for
+[12:30.72] this.
+[12:32.24] Animation and uh blogs, those things
+[12:35.60] help you understand the math and the
+[12:37.04] nitty-gritties better. The paper helps
+[12:39.12] you understand the core concepts better.
+[12:44.40] Okay, so this is section three and then
+[12:47.28] this diagram really helps actually um
+[12:50.56] get a gist right even after this you
+[12:53.04] won't be able to write a CUDA program
+[12:54.56] for this but yeah it helps you
+[12:55.84] understand that the metrices are being
+[12:57.84] split into pieces
+[13:00.40] okay uh again number four I think was
+[13:03.92] quite useful I have read this part
+[13:06.64] and then when you get to results
+[13:09.84] which is down here performance and
+[13:12.08] memory consumption Again, this part is
+[13:13.76] also useful. It's it's good to know as
+[13:16.00] an engineer, but then yeah, the paper is
+[13:18.80] is over. This is a really really long
+[13:20.64] paper, but it's easy to read. And so
+[13:24.00] this is how you read papers. That's the
+[13:25.92] first skill that you want. Okay. The
+[13:28.96] first skill is to just get good at
+[13:32.48] reading from the source.
+[13:36.00] Get good at reading research papers.
+[13:39.92] Any thoughts on this, guys?
+[13:42.80] I know some of you read from books. I
+[13:45.04] know some of you watch videos. They are
+[13:47.44] great. But there's nothing like a paper
+[13:50.48] frankly.
+[13:58.08] And if you don't know how to go through
+[13:59.60] a paper, invest the time. Makes a lot of
+[14:02.40] sense.
+[14:11.84] Okay.
+[14:14.08] Right. Any questions on this part?
+[14:19.04] Where can we find the papers? Uh so you
+[14:21.92] can find these papers on Arvix. You can
+[14:24.08] find uh Google research has good papers.
+[14:27.68] I go through meta research uh the
+[14:30.96] website. My favorite ones I have posted
+[14:33.12] them here on GitHub. Uh but these are
+[14:35.60] just my favorites. Okay, I
+[14:39.52] if you're looking for the latest active
+[14:41.52] thing, then yes, this GitHub link can
+[14:43.52] help you. But there's hugging face. So I
+[14:46.96] can maybe show you that, right? Hugging
+[14:48.96] face. Uh let me write that down.
+[14:53.28] Hugging face publishes papers
+[14:56.80] or has them listed. U
+[15:01.20] and then you have Google research.
+[15:04.88] Usually these guys have pretty good
+[15:06.64] research. Uh meta research if I'm honest
+[15:12.16] is a little gimmicky sometimes.
+[15:15.44] Sometimes some of the research is really
+[15:17.12] good but sometimes it feels like they're
+[15:18.48] just adding papers
+[15:21.20] even though there isn't anything to
+[15:22.48] report. Uh Open AI is also interesting
+[15:25.20] but OpenAI is not very technical. They
+[15:27.44] don't explain the technical parts
+[15:29.76] sufficiently these days since 2023. I
+[15:32.40] think they have they're trying to hide a
+[15:33.68] lot of the technical details. Um,
+[15:36.40] Deepseek is also quite good. They are
+[15:38.96] quite open about their uh research which
+[15:41.92] is great and so yes these would be the
+[15:45.04] probably the best sources out there.
+[15:47.44] Okay, I've shared the GitHub link with
+[15:49.20] you and the names that you see here.
+[15:51.20] Hugging face, Google research, Meta
+[15:52.72] Research, OpenAI, Deepseek, they're all
+[15:55.04] all quite good. Going through them is
+[15:56.88] not going to waste your time much. Meta
+[15:58.48] Research might waste your time a little
+[16:01.52] bit. And OpenAI also is like I don't
+[16:05.28] know what's going on with them, but
+[16:06.64] yeah, the rest are pretty good.
+[16:21.36] Okay. Uh
+[16:26.80] there's a question. Is this for freshers
+[16:28.40] or experienced professionals? It's for
+[16:29.84] both. Um, if you are short on time then
+[16:33.84] you can go and watch a video. If you are
+[16:36.40] short on time then you can you know read
+[16:39.04] a blog also.
+[16:41.28] But I think because Chad GPT has come up
+[16:43.68] even if you can't read the entire paper
+[16:46.24] by yourself you can ask Chad GPT
+[16:48.48] questions around the paper. So you ask
+[16:51.20] give me a summary and I know that one of
+[16:53.44] the worries that people have is
+[16:54.48] hallucinations but CH GP is actually
+[16:56.88] pretty good at summarizing things. Okay.
+[16:59.04] So it's bad at making decisions. Uh but
+[17:02.00] it's actually quite good at summarizing
+[17:03.84] research papers. Now you can also ask it
+[17:06.08] questions. Uh you can ask it to give
+[17:08.24] examples, clarifying questions. The
+[17:10.88] better the best thing about GPT is when
+[17:12.88] you give it a paper uh you can ask
+[17:17.12] surrounding questions also. So you you
+[17:19.04] it's going to search the answer in
+[17:21.20] different papers and give you an answer.
+[17:23.04] So there's notebook LM also is quite
+[17:25.28] famous. So when you're studying text
+[17:28.48] based studying has really picked up a
+[17:30.32] lot.
+[17:32.16] Video has the major advantage that it's
+[17:34.64] easy to consume. So yeah if you want
+[17:37.36] YouTube or courses that's also pretty
+[17:39.84] good.
+[17:44.80] Omesh Chandra is saying um I don't know
+[17:46.72] why I'm scared of reading and
+[17:47.92] implementing papers. I'm a final year
+[17:49.44] student. So it's very natural to feel
+[17:54.00] scared when reading a very dry paper.
+[17:56.88] It's like reading a book, right? It's
+[17:58.64] extremely boring. It's a technical book.
+[18:00.56] Like if someone says let's read a
+[18:02.24] technical book, it's going to be you'll
+[18:04.88] say okay but actually reading the book
+[18:07.52] is going to be pretty challenging. So my
+[18:11.04] suggestion would be that use the tools
+[18:13.04] you have. Use AI.
+[18:15.44] There's various tools which can help you
+[18:17.92] read a paper to understand it. Maybe
+[18:19.68] create diagrams, visualizations. That
+[18:22.00] will help you a lot. Okay. Now, frankly,
+[18:25.04] in today's world, uh you can convert a
+[18:27.36] paper into a podcast. You can convert a
+[18:29.12] paper into an image. The most useful
+[18:30.96] thing I have found is still text. Just
+[18:32.72] talk to the bot. It's going to give you
+[18:35.20] answers. It's really good.
+[18:41.84] Uh Aditi is asking the question, can
+[18:43.36] JGBT explain the concept of math as
+[18:45.36] well? Uh and does it explain it
+[18:48.00] correctly? In my experience, yes.
+[18:51.60] Give it a paper, ask it to explain the
+[18:53.52] math. It's going to do a decent job. You
+[18:56.24] might not understand the math, so you
+[18:57.52] start asking questions. It's going to
+[18:59.28] give a, you know, a decent breakdown.
+[19:02.00] It's not going to give you the best
+[19:03.36] examples. It's not going to give you a
+[19:06.16] very nice intuitive understanding
+[19:09.12] but it's okay. I mean it's better than
+[19:11.84] nothing.
+[19:18.32] Okay. So let's get to the second part
+[19:20.80] now that I have sufficiently promoted
+[19:24.48] reading papers. But I think this is
+[19:26.32] useful. This is something that engineers
+[19:28.40] do anyway.
+[19:29.92] Senior engineers especially are expected
+[19:31.44] to go through many of these industry
+[19:34.40] research papers. So that's also the same
+[19:36.72] with AI. The only difference is AI is
+[19:39.12] more on the research side. Okay. What
+[19:42.56] else? I really think and this is
+[19:46.00] something which is a bit controversial
+[19:47.76] that you should do the internals of a
+[19:49.36] transformer.
+[19:52.24] Okay. Large language models are based on
+[19:55.52] this. the transformer.
+[19:58.96] You should know the internals of a
+[20:00.24] transformer.
+[20:01.76] If you're an AI engineer, if you're a
+[20:04.64] database engineer, in my opinion, you
+[20:07.28] should know how a B tree works, how a
+[20:10.32] log structured merge tree works, okay?
+[20:13.28] With no SQL. If you are a network
+[20:15.84] engineer, I expect you to truly
+[20:17.76] understand how HTTP works, how UDP
+[20:20.88] works, how TCP works. So I'm not saying
+[20:24.56] that you should implement this. I'm not
+[20:26.72] saying you should create your own
+[20:28.16] protocol,
+[20:30.80] but I think you should know how the
+[20:32.24] protocols work. I'm not saying you
+[20:34.16] should create your own database. You
+[20:36.00] don't need to create a database to be a
+[20:37.36] database engineer. But you should know
+[20:39.60] how this works. Okay? The internal
+[20:42.00] algorithms, the workings.
+[20:44.88] For an AI engineer, I think it's
+[20:47.92] essential to know how a large language
+[20:49.92] model works.
+[20:51.84] Okay? Although we don't say it, most AI
+[20:53.92] engineers are geni engineers now, right?
+[20:56.56] And
+[20:58.32] that means you need to know how a
+[20:59.52] transformer works.
+[21:02.08] So here's a list of things that you
+[21:03.68] should look into. Okay, 2.1
+[21:07.84] first thing quite easy also
+[21:11.04] tokenization.
+[21:13.84] How does a transformer take text and
+[21:16.80] break them into tokens? Know this quite
+[21:19.52] well. 2.2 two vectorization.
+[21:25.68] This is much easier than you would
+[21:28.48] expect. Vectors are a very intuitive way
+[21:31.60] to express what tokens are. Okay. If you
+[21:34.88] don't understand these terms, you can
+[21:36.32] look at a YouTube video which I have
+[21:37.84] created 20 terms in AI engineering.
+[21:43.68] This is completely
+[21:45.60] uh free and I think a lot of you must
+[21:47.84] have seen it. It's got like lacks of
+[21:49.20] views already.
+[21:50.96] came out 3 4 months ago
+[21:55.44] but still I think I think this is
+[21:57.76] something very useful. Okay. So 20 terms
+[22:06.96] vectorization is essential.
+[22:10.24] If you're able to talk like a engineer
+[22:12.48] then you can grasp information also like
+[22:14.88] an AI engineer. And that really helps
+[22:18.16] when you're using the same communication
+[22:19.52] language, the same jargon. Okay. So 2.3
+[22:24.40] after vectorization, you can almost see
+[22:26.32] the transformer model one by one, which
+[22:28.40] is you need to know what attention is.
+[22:31.36] Okay. Are you ever going to implement
+[22:33.12] attention at work? No. Are you ever
+[22:35.92] going to implement a B+ tree at work?
+[22:38.08] No. But knowing what's happening behind
+[22:41.12] the scenes under the hood helps you
+[22:43.20] understand which model is more suitable
+[22:45.04] for your use case.
+[22:47.20] Okay, what kind of trade-offs are they
+[22:48.64] making? Deepseek
+[22:51.92] by me making the trade-off that I will
+[22:54.16] have I'll take more uh inference time.
+[22:57.92] I'll be more expert at math and logic
+[23:02.40] but I might not be very good at
+[23:03.84] communication.
+[23:06.32] Okay, chat GPT might say that I have a
+[23:09.28] lot of money to spend. I'm going to
+[23:12.32] spend most of my time on
+[23:15.36] communication becoming a great chatbot,
+[23:17.76] but I might not be as cheap or efficient
+[23:20.96] as DeepSeek. My math and logic might
+[23:23.44] also be a shade lesser. Maybe it's as
+[23:26.16] good, but I might be a bit more
+[23:27.44] expensive. So cost is a trade-off here.
+[23:31.12] You see, even today with models, there
+[23:32.80] are trade-offs. Different products give
+[23:34.88] different features. As a engineer, you
+[23:37.76] understand why you understand why that
+[23:40.08] is happening once you know the internals
+[23:41.60] of these models.
+[23:46.40] Okay. So that is step two. You really
+[23:48.24] need to know the internals of a
+[23:49.36] transformer. Without it, it's very
+[23:51.84] difficult to be an A engineer.
+[23:54.24] Even later when there are going to be
+[23:55.60] diffusion based models, the transformer
+[23:57.68] is still core internal to these models.
+[24:02.40] Okay. So yes,
+[24:06.56] that looks like something that we can't
+[24:08.72] get rid of, but it's also it's also
+[24:11.36] quite easy. Now, I think there are a lot
+[24:12.80] of resources out there which can help
+[24:14.40] you understand what's happening behind
+[24:16.80] the scenes with a transformer.
+[24:19.52] The research papers are all public. Go
+[24:22.00] through these two.
+[24:26.00] Any questions until now guys?
+[24:30.48] I know it's a very boring podcast. Uh
+[24:33.28] but it's also you know it's it's for
+[24:35.84] engineers, it's for you guys. Uh the
+[24:38.16] best resources sometimes are a bit
+[24:40.88] boring but yeah.
+[24:46.00] Okay. If you know how to read papers and
+[24:48.24] you know how the transformer works
+[24:50.00] internally, let's go for number three.
+[24:54.32] Okay. which is core capabilities
+[25:01.28] of the AI engineer
+[25:04.88] in 2026. This is my prediction that most
+[25:08.16] of you will
+[25:10.48] by the end of the year have these
+[25:11.92] capabilities. Okay, similar to how any
+[25:14.80] software engineer can write a CR
+[25:16.80] application, they can hit APIs, they can
+[25:20.24] uh use keys, they can create tokens.
+[25:23.28] Those are like core capabilities of any
+[25:25.04] software engineer. They know how to work
+[25:27.52] uh in any system as long as they
+[25:29.12] understand how the APIs are interacting.
+[25:31.60] The database APIs, external system APIs,
+[25:34.48] so on. Okay. The core capabilities for
+[25:37.12] an AI engineer in my opinion
+[25:41.20] are agents.
+[25:43.28] This is 2026. It's a bit risky to make
+[25:46.08] predictions, but I think it's not a
+[25:48.08] very, you know, if you do this, it's not
+[25:50.72] going to hurt you. Roughly we are all
+[25:52.88] moving towards agents. So know what
+[25:55.52] agents are. Okay, agents are pieces of
+[25:58.32] code which use LMS to make decisions. So
+[26:02.96] this is the brain.
+[26:06.16] Decisions are made here. The actions are
+[26:09.44] performed externally using tools. So the
+[26:12.96] tools may be tools which the LM has or
+[26:17.12] external servers may be connected with
+[26:19.12] MCP or even normal HTTP.
+[26:22.56] Okay. So how do you create agents? What
+[26:25.36] are agents? They are basically a big
+[26:27.28] wrapper complex wrapper over all of this
+[26:29.52] stuff. The LM, the tools and MCP.
+[26:35.76] You will be working with agents very
+[26:37.28] soon. That's that's something I see
+[26:40.56] happening.
+[26:44.16] Since these frameworks are useful, good
+[26:46.96] to know. I would say that maybe you want
+[26:49.68] to uh see how APIs work
+[26:54.80] for LMS.
+[26:57.60] Okay, which means you want model context
+[27:00.00] protocol.
+[27:04.08] Recently something has come up which you
+[27:06.08] might want to look into. Again, a lot of
+[27:08.40] this is hype sometimes, but some of it
+[27:11.04] sticks, so it's good to know. I think
+[27:12.88] it's tune,
+[27:14.96] which is JSON. Okay, using JSON
+[27:18.96] extensively to talk to the large
+[27:20.88] language model.
+[27:23.68] It helps you reduce the number of
+[27:24.88] tokens. It gives you also contextual
+[27:26.72] information when you're talking to the
+[27:28.00] large language model. Okay. And the
+[27:30.88] third thing is context engineering. This
+[27:32.64] is a very big umbrella term. Uh earlier
+[27:36.00] it used to be called prompt engineering.
+[27:38.00] The basic idea is you want the user's
+[27:42.24] chat history,
+[27:45.92] preferences,
+[27:48.48] previous responses,
+[27:54.08] etc. Okay, so let me just I think it
+[27:59.04] went out a screen. Yeah, the chat
+[28:01.20] history, preferences, previous
+[28:03.04] responses,
+[28:04.64] uh, and something which is very
+[28:07.52] standard, rag,
+[28:10.40] retrieval, augmented generation usually
+[28:12.08] done with vector databases. Lot of terms
+[28:15.04] that I have pulled up here. You have
+[28:17.84] probably heard of many of these terms.
+[28:19.28] What is a vector database? What is rag?
+[28:22.08] You know, at a high level, but code it.
+[28:25.60] Okay, build an application which uses
+[28:28.16] which uses a vector database to store
+[28:30.32] user information. Okay, that's going to
+[28:33.44] be the challenge. That's going to be
+[28:35.84] what you'll learn in 2026.
+[28:43.20] So,
+[28:45.52] any questions guys on this?
+[28:52.88] There's a question which I'll take in a
+[28:54.88] minute. What formal education would look
+[28:57.04] good on the resume? Okay, I'll I'll
+[29:00.56] answer that. But meanwhile, uh just a
+[29:03.84] short revision here. You want to gain
+[29:06.32] core capabilities as an AI engineer in
+[29:08.16] 2026.
+[29:09.84] The biggest investment that you should
+[29:12.64] make is on agents. Build an agent, see
+[29:17.12] how it works, see how it interacts with
+[29:19.04] the large language model, how does it
+[29:20.80] use tools, when it makes a mistake, how
+[29:23.28] do you avoid hallucinations?
+[29:25.28] This is where the business use cases and
+[29:27.92] for that you need to learn stuff which
+[29:29.84] is recent frameworks. Uh rag is a core
+[29:33.04] framework right now. It's I mean
+[29:34.64] framework is not really a thing. Uh rag
+[29:36.80] is a very standard
+[29:39.20] practice now. Context engineering is
+[29:41.76] very big. It's a big umbrella term. So
+[29:43.84] probably what you want to look into is
+[29:45.12] model context protocol uh and just focus
+[29:48.16] on this part.
+[29:50.16] Okay. Agents execute agents execute. Ask
+[29:55.12] lm execute.
+[29:57.28] That's the cycle.
+[30:01.04] So it would look something like this.
+[30:02.40] User query
+[30:06.24] goes to the agent which talks to the lm
+[30:10.08] which talks to the agent which then
+[30:12.16] executes
+[30:13.92] and the response is then sent back to
+[30:16.24] the agent
+[30:18.16] affecting the user.
+[30:29.28] Okay, if you're looking for formal
+[30:30.80] education around this, uh if you're
+[30:33.52] looking to gain a degree or to prove
+[30:36.40] that you're really good at AI
+[30:38.16] engineering, uh there are two ways. One
+[30:42.24] is to go and get a certificate from a
+[30:45.92] university.
+[30:47.44] Uh and the other is to try to contribute
+[30:50.48] to open source projects. You might
+[30:53.04] create your own also. So getting a
+[30:55.68] formal degree is is fine. uh
+[31:00.64] yeah from a good college will set you
+[31:03.60] forward
+[31:05.20] right you can also do distance learning
+[31:10.88] stuff like that if you're looking for a
+[31:13.12] formal degree if you don't need a formal
+[31:15.36] degree if you want to just grow in your
+[31:17.92] career then this is what you should be
+[31:19.76] doing okay if you want to grow in your
+[31:22.32] career with a formal degree which is
+[31:23.84] also a good idea then yes you can go to
+[31:26.00] institutions I think various
+[31:27.68] institutions
+[31:28.56] IS
+[31:30.64] per Stanford
+[31:33.44] there are many many of them are online
+[31:35.44] also
+[31:38.96] I'm not I I can't tell you whether they
+[31:41.28] are worth it or not but they're there
+[31:50.96] okay u there's someone who's a IIT
+[31:54.56] Madras student I'm good with Python and
+[31:56.80] now I'm learning agentic TI and machine
+[31:58.96] learning in parallel. That's great.
+[32:03.36] Uh, okay. But I didn't get your
+[32:06.24] question.
+[32:12.48] Uh, I'm learning lang chain langraph.
+[32:15.92] Great. You're in first year and you're
+[32:18.08] you're already doing really well.
+[32:23.36] Okay. Uh guys, any questions up till
+[32:26.64] this point? Just a quick recap. The most
+[32:30.48] important skill that I see for you to
+[32:32.80] become good at AI engineering is to be
+[32:34.96] able to read from awesome resources.
+[32:37.52] Choose the right resources. Resources
+[32:40.24] are not going to be some blog or some
+[32:44.08] you know some short video. I create a
+[32:46.72] lot of short videos. I write a lot of
+[32:48.40] blogs. But I can tell you that those are
+[32:50.40] like just going to give you top 20%
+[32:52.40] knowledge. Okay, this is better than
+[32:54.80] nothing. This is like having a protein
+[32:56.96] bar, right? But if you if you really
+[32:59.28] want to get
+[33:01.20] really good, then there's a full 90%
+[33:04.48] iceberg hidden. And that comes from
+[33:07.20] mainly papers. Even books in my opinion
+[33:11.44] can't match the depth that a paper can.
+[33:14.40] The paper is very specific. Uh it's very
+[33:17.60] specific to topics. So the kind of
+[33:19.60] information you get here is a lot. Since
+[33:21.76] you know this, this is a truth, you want
+[33:24.56] to start reading papers.
+[33:26.72] That's the first thing you want to do.
+[33:28.56] Learn how to read papers. Second, learn
+[33:31.76] what's happening inside a transformer.
+[33:33.44] Understand what is happening inside a
+[33:35.04] transformer. If you want to code it,
+[33:36.48] it's okay. But like I said, you don't
+[33:38.64] need to code
+[33:41.60] the B+ tree or you know, even databases
+[33:45.20] have this hashmap concept. You don't
+[33:47.36] have to do it to be absolutely sure of
+[33:50.16] how it works internally. Okay, the
+[33:51.60] algorithm, your brain can represent it,
+[33:54.08] can map that knowledge. So, it's fine.
+[33:56.48] Just learn it. Okay. The thing you want
+[33:59.44] to do, the thing you want to code are
+[34:01.84] agents. You want to know how to use the
+[34:05.12] APIs that LMS give. You want to know how
+[34:08.24] a agent can fail. And this is going to
+[34:11.28] be where you're going to be making most
+[34:12.80] of your career progression in. Okay. But
+[34:15.84] the top two are essential for you to
+[34:17.60] actually understand this well.
+[34:19.20] Otherwise, you're always going to be
+[34:20.48] scared. You're always going to say, "Oh,
+[34:22.00] I don't know how the agent is running. I
+[34:24.08] don't know how this LM is going to
+[34:25.92] perform." You will have a little bit of
+[34:28.24] an imposter syndrome. There's no need
+[34:30.24] for that.
+[34:32.00] You do these two steps, you're going to
+[34:33.84] do well. And these steps are not like
+[34:36.24] rocket science. Anyone can do it. Okay?
+[34:38.56] Anyone can read research papers. Anyone
+[34:41.04] can understand the interns of a
+[34:42.32] transformer.
+[34:45.76] Okay. In fact, for the basics, you can
+[34:47.84] use like I said videos, resources,
+[34:51.44] courses also and use AI extensively.
+[34:54.88] Chat, GPT, Notebook, LM, these are
+[34:57.20] great.
+[35:02.80] Okay, any
+[35:06.00] question remaining? Oh,
+[35:12.56] Pratam is saying, "I'm a fullstack
+[35:14.40] engineer with five plus years of
+[35:15.60] experience. I'm currently stuck in
+[35:16.96] legacy trap. How can I enhance my skills
+[35:18.88] with AI and get ahead in my career?"
+[35:24.64] Pratam, when you say legacy trap, do I
+[35:27.12] would assume that you are using
+[35:28.40] technology which is very old or obsolete
+[35:31.20] or not something that you're enjoying.
+[35:33.92] Uh, how do you get ahead in your career?
+[35:36.32] I think it would be good for you to
+[35:38.00] start preparing for interviews. If this
+[35:40.16] is the case, uh you have five plus years
+[35:42.96] of experience
+[35:45.12] when you are switching jobs. Focus on
+[35:47.68] the impact of your project. Focus on how
+[35:50.16] you did well. Okay? Not everyone is
+[35:53.60] going to have super cool projects. That
+[35:56.48] doesn't really matter to the
+[35:57.36] interviewer. Shouldn't matter to the
+[35:58.32] interviewer. What you want to say is
+[36:00.80] this was the impact. this was the
+[36:02.40] business impact and uh this is what I
+[36:05.92] did okay as long as you're focusing on
+[36:08.56] that quite good switch jobs if they are
+[36:12.72] not ready to help you switch into a role
+[36:14.88] which you enjoy then you can switch jobs
+[36:17.36] also it's much harder than it sounds but
+[36:20.24] yeah it's I mean the current situation
+[36:22.72] you're in is also not very good right so
+[36:26.64] this would be something you can
+[36:34.32] Okay, there's a question, which research
+[36:36.32] papers to study? Where can I get a list
+[36:38.08] of those to start? Uh,
+[36:42.32] you can pick these up. I have shared the
+[36:44.88] GitHub link here. Okay, they are quite
+[36:47.84] good. Um, I have also shared about the
+[36:51.92] place where I find the best research
+[36:53.68] papers. Google research is really good.
+[36:55.68] They also give you a blog often which
+[36:57.92] explains the research paper. So you can
+[37:00.32] read the blog. It's like a 3 minute 5
+[37:02.16] minute job and once you understand the
+[37:04.00] blog you can read the research paper.
+[37:06.56] So you know whether it's worth it
+[37:08.00] already. They're kind of giving you the
+[37:09.44] chat GPT uh thing but the blog is far
+[37:12.88] better than what chat GPT can write.
+[37:14.88] Okay. So Google research might be on top
+[37:17.12] for the latest. Meta research is also
+[37:19.60] interesting. They publish a lot of
+[37:21.44] research but a lot of it is nonsense.
+[37:24.08] Amazon also has that problem. They
+[37:25.92] sometimes I think they're so focused on
+[37:28.00] marketing their research that they don't
+[37:29.44] understand that people want to
+[37:30.48] understand the technical parts. Maybe
+[37:32.72] I'm the wrong audience. Okay. But
+[37:34.48] they're not bad. Sometimes they come up
+[37:36.08] with good research also. Meta and
+[37:37.76] Amazon. But Google will be on top.
+[37:40.40] Deepseek will be a close second. Uh and
+[37:44.16] OpenAI again it's become really bad. um
+[37:47.44] they they give you like one or two
+[37:49.76] paragraphs of the technical content and
+[37:51.84] they have like 10 15 page paper talking
+[37:55.44] about ethics and uh how great they are.
+[37:58.64] So
+[38:00.16] that's uh that's a thing. Um
+[38:03.92] blogs I don't think there are any good
+[38:06.48] ones. Personally I don't see any any
+[38:10.48] blogs which are better than research
+[38:11.76] papers. Not even close. Okay. Even
+[38:14.32] interview ready. Um but they can't be
+[38:17.36] right they can't give you all of it.
+[38:19.92] What the blog can give you is it can
+[38:21.28] read five research papers and give you a
+[38:22.80] gist that this is what is happening but
+[38:25.92] based on what that you have to read.
+[38:28.56] Okay, that's the reason why this is
+[38:30.72] number one, right?
+[38:32.88] Number two, uh transformer internals. If
+[38:34.96] you're looking to read those research
+[38:36.16] papers for transformer internals, um
+[38:38.08] attention is all you need is something
+[38:39.92] you should go through. Okay. Um I have
+[38:43.20] shared the GitHub link in that you have
+[38:45.52] transformers
+[38:48.08] the core architecture attention is all
+[38:49.84] you need multi-query attention group
+[38:52.56] query attention u and
+[38:56.96] mixture of experts. Why are these
+[38:58.88] helpful? Why do you want to read not
+[39:00.56] only attention is all you need but
+[39:01.76] multiquery and group query? It really
+[39:03.84] helps you understand the concepts like
+[39:06.24] every single thing in the transformer,
+[39:08.00] each block becomes clear to you when you
+[39:10.24] read the papers around it. So go through
+[39:13.52] it,
+[39:16.64] okay? It's going to be worth it if you
+[39:18.64] can. If you don't have the time, like I
+[39:20.64] said, AI can help you a lot.
+[39:26.08] Don't shy away from taking that PDF.
+[39:28.72] Download the PDF. This is my experience.
+[39:30.88] Again, if you ask it with a link,
+[39:35.04] Chad GPT does a really bad job.
+[39:36.64] Sometimes it hallucinates also, which is
+[39:38.48] like infuriating. Take the PDF, download
+[39:41.12] it, upload it onto Chad GPT and say,
+[39:44.72] "Explain this to me." And then you start
+[39:48.48] asking questions. Okay? Once you have a
+[39:51.12] general idea of what's going on, you can
+[39:52.64] read the paper. Anytime you have a
+[39:55.12] doubt, come back.
+[39:58.64] Okay, guys. I think this is perfect.
+[40:01.76] This is what I wanted to share with you
+[40:03.12] today. Um, you know, a road map for AI
+[40:08.24] engineering in 2026. Not a typical road
+[40:10.40] map that do this, then do this, then do
+[40:12.24] this, do this, then do this. No, it's a
+[40:14.48] skill-based road map. This is what you
+[40:16.64] need to do in 2026
+[40:19.60] so that you become good at a
+[40:20.96] engineering. Not that these are the
+[40:22.08] things you need to study. Okay, I have
+[40:23.60] already shared that GitHub link with
+[40:24.72] you. that that is not going to help you
+[40:28.00] um you know be able to complete it. It's
+[40:31.44] just a set of resources. What you need
+[40:33.60] to do is learn how to read,
+[40:37.28] know the internals of a transformer,
+[40:39.36] look into agents 2026. If you meet these
+[40:42.64] three goals, I think you're going to do
+[40:44.64] really well.
+[40:46.96] Okay. So, thank you everyone. Thank you
+[40:48.80] for giving me your time and uh I'll see
+[40:51.52] you on Saturday I think with maybe the
+[40:54.40] first topic I can pick out of this right
+[40:56.72] maybe tokenization topic I can pick up a
+[40:58.96] paper
+[41:00.48] I can probably pick up a bite pair
+[41:02.24] encoding the research paper and we can
+[41:04.16] have a conversation around it like a
+[41:06.24] discussion and I can go through the
+[41:08.24] internals of that so that'll be fun
+[41:10.72] cheers everyone and have a great 2026
+[41:14.40] I'll try and

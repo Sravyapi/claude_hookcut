@@ -1,0 +1,1133 @@
+[0:00.32] 3 weeks after I left Google, they
+[0:02.08] offered me $10 million to come back. And
+[0:04.32] and this is going to sound a little
+[0:06.08] insane. When someone proposed making a
+[0:08.88] chip, we're like, "Okay, how hard could
+[0:10.56] that be?" Uh, it turns out it's
+[0:13.04] incredibly hard.
+[0:13.92] >> Does NVIDIA see you as competition or as
+[0:17.36] partners?
+[0:18.32] >> Well, our goal is to provide half of the
+[0:20.08] world of inference. Find a place where
+[0:22.16] you get to see the future, see it, and
+[0:24.80] then commit to building it for everyone
+[0:27.04] else. You can try and tell people how to
+[0:29.36] do their jobs or you can tell them what
+[0:31.36] the goal is and let them figure it out
+[0:33.04] themselves. In 5 years from now, how
+[0:35.92] many of the top 10 tech companies are
+[0:38.08] going to be founded by Indians and be
+[0:40.16] based in India? The reason that I'm here
+[0:42.72] is uh I think generative AI is a
+[0:45.28] complete watershed moment where where
+[0:47.04] things are about to change.
+[0:51.17] [Music]
+[0:55.60] Jonathan, first of all, welcome to
+[0:57.28] India. It's literally uh my privilege to
+[1:00.40] host you here. I know you had a really
+[1:02.16] packed schedule. So, thank you for
+[1:03.44] making time for uh doing this for us.
+[1:06.08] >> Thanks for having me.
+[1:06.96] >> Thank you. You've been in India a couple
+[1:08.64] of times. You spent a couple of days
+[1:10.56] already. What's fascinating about India
+[1:12.80] for you?
+[1:13.52] >> Just the sheer number of people. I mean,
+[1:15.76] you're used to it here, but in the
+[1:17.84] United States, you don't have this. And
+[1:20.40] um there's a level of
+[1:22.24] entrepreneurialism. Everyone's trying to
+[1:24.80] figure out how to make it and 24/7
+[1:28.40] working like at this hotel we saw people
+[1:31.44] working on parts of it late at night.
+[1:33.52] You don't have that in the US everyone
+[1:34.80] just goes home goes to sleep. Just
+[1:36.80] imagine if you can take that and apply
+[1:39.28] it to tech in other areas.
+[1:42.08] >> Yes. India is known for its jugar
+[1:43.92] culture which is essentially make it
+[1:45.44] happen. Right. So uh you're absolutely
+[1:47.44] spot on. uh let's start from the
+[1:49.68] beginning. You were instrumental in uh
+[1:52.08] in developing TPU at uh at Google and uh
+[1:56.32] although you didn't have a an electrical
+[1:58.56] or electronics uh background and yet you
+[2:01.60] went on to design chips and what's
+[2:03.92] interesting is that the TPU project came
+[2:06.32] out of the 20% uh you know time at
+[2:09.28] Google. So when I look back it almost
+[2:11.92] seems like you were destined to to
+[2:14.24] design chips and not once but twice and
+[2:16.80] disrupt the market. So tell us a little
+[2:18.64] bit about your unconventional journey.
+[2:21.20] >> Maybe the reason I worked on it would be
+[2:23.44] a good place to start. So at Google
+[2:25.28] there was another cultural difference
+[2:27.04] which is they offered free lunch and you
+[2:29.92] would because of that stay at Google for
+[2:32.16] lunch and one day I was sitting at a
+[2:33.84] table with a bunch of researchers and
+[2:35.84] they just created a model a speech
+[2:37.76] recognition model and it outperformed
+[2:39.84] human beings at turning uh speech into
+[2:41.92] text. So the word error rate was better.
+[2:44.32] This was in I think 2012, so a long time
+[2:46.88] ago. And their problem was they didn't
+[2:49.84] have enough compute to put it in
+[2:50.96] production. They had trained it. They
+[2:52.32] had created the model, but they couldn't
+[2:54.00] afford to actually run it. So I'm like,
+[2:57.44] okay, well, I'll try and figure this
+[2:59.12] out. Uh, so I started porting their
+[3:01.60] model to a reconfigurable chip called an
+[3:03.84] FPGA.
+[3:06.32] Made some progress, showed it to some
+[3:08.80] more senior people at Google, and
+[3:10.72] eventually they green lit it and funded
+[3:12.96] it. And we decided actually it was
+[3:15.44] another engineer there uh said why don't
+[3:17.60] you just build uh a chip instead of
+[3:20.24] using a reconfigurable chip and we did
+[3:22.72] and part of it was and and this is going
+[3:26.56] to sound a little insane. Um when
+[3:29.36] someone proposed making a chip we're
+[3:31.28] like okay how hard could that be?
+[3:34.08] It turns out it's incredibly hard and if
+[3:35.76] I knew how hard it was I probably
+[3:37.20] wouldn't have done it. it was actually
+[3:38.64] the fact that I I didn't know how hard
+[3:40.56] it was that was actually um the thing
+[3:42.56] that got me started. So don't think
+[3:44.72] about how hard things are. Just sign up
+[3:46.96] for them uh and then get stuck doing
+[3:49.60] them and then you'll solve all the
+[3:50.96] problems.
+[3:51.84] >> Super. Uh it's almost like ignorance is
+[3:54.40] bliss, right? In your journey that has
+[3:56.80] been sort of the mantra. Uh but then you
+[3:59.36] said uh I read in one of the interviews
+[4:01.52] you mentioned that you're not never
+[4:02.80] going to go back to you know designing
+[4:04.72] chips. Uh and then Grock happened. So uh
+[4:07.52] can you tell us like I'm sure it must
+[4:09.92] have been a huge decision to leave
+[4:11.92] Google leave almost a security blanket
+[4:14.72] and go on to build something of your
+[4:16.56] own. So one what was the tipping point
+[4:18.80] and can you tell us how did you reframe
+[4:20.80] the risks and opportunities when you
+[4:22.96] decided to start Grock?
+[4:24.48] >> One of the things is once you get a a
+[4:26.16] job like the job that I had and people
+[4:28.56] start reaching out to you uh to hire you
+[4:31.20] start to feel a little more comfortable
+[4:32.32] leaving. So other uh chip leads at other
+[4:35.76] hyperscalers once they heard about the
+[4:37.68] Google TPU started reaching out and
+[4:39.76] trying to hire me. I think the bigger
+[4:41.68] one, I don't know that I've ever shared
+[4:42.96] this publicly before. 3 weeks after I
+[4:45.36] left Google, they offered me $10 million
+[4:47.36] to come back. Um and I was actually a
+[4:49.76] low-level engineer even though I had
+[4:51.04] done all the stuff is 20%. And that was
+[4:52.64] one of the good things about the
+[4:53.52] culture. Even a low-level engineer, if
+[4:55.44] they had a good idea, was allowed to
+[4:57.68] start something. Um the reason that I
+[5:01.04] turned it down was
+[5:04.08] um you know at that point I saw a line
+[5:06.56] of sight to being able to raise $10
+[5:08.48] million and that's what we ended up
+[5:11.12] raising. So I could have either put that
+[5:12.72] in my pocket or I could have invested it
+[5:15.28] and what would I have done if I had $10
+[5:16.96] million? I would have started Grock. So
+[5:20.16] why not just take the VC money get
+[5:22.16] started rather than having to work at
+[5:24.08] Google for another two years to earn the
+[5:25.68] 10 million. And then the other thought
+[5:28.72] that went through my mind, if I go back
+[5:30.72] to uh Google, um then I'm going to be
+[5:35.20] working with a bunch of people who feel
+[5:36.64] like they're playing it safe. But if I
+[5:38.96] do a startup and I hire a bunch of
+[5:40.96] people who are in it with me and they
+[5:42.96] are only going to make it if we're
+[5:44.40] successful, we're going to be
+[5:45.84] unstoppable. I'd much rather all of them
+[5:48.16] feel like they own a part of that uh
+[5:50.16] company that that has that $10 million
+[5:51.84] investment. And that turned out to be
+[5:53.36] very wise because we've gone through
+[5:54.48] some hard times. And I think if we all
+[5:56.88] saw it as a nineto-five job, most of the
+[5:58.96] people would have quit.
+[5:59.92] >> So passion before money is essentially
+[6:01.92] what what made you start uh Grock in
+[6:04.64] some sense.
+[6:05.28] >> Yeah.
+[6:05.68] >> Right.
+[6:06.40] >> Awesome. U you also mentioned that you
+[6:08.88] know you should be always ahead of the
+[6:10.88] wave so that you can ride the wave. When
+[6:13.68] you started Grock, nobody saw
+[6:15.92] inferencing as as an opportunity at all.
+[6:18.88] How did you spot the opportunity? Well,
+[6:21.04] >> let's go back to to where it started. So
+[6:23.44] the conversation at that lunch table
+[6:25.84] where that team had actually gotten the
+[6:27.68] model trained but they couldn't afford
+[6:29.52] to put it in production. When you're at
+[6:31.92] a company like Google, Microsoft, AWS,
+[6:35.84] you get to see the problems that the
+[6:37.60] rest of the world is going to have
+[6:38.88] before they have them, right? Um when we
+[6:42.08] started in 2016
+[6:44.24] um we focused on inference exclusively
+[6:47.76] and it was probably not until two years
+[6:50.56] ago that inference started to even
+[6:52.32] really matter and it was very painful.
+[6:54.40] We almost gave you know like it felt
+[6:55.92] like we were about to give up a couple
+[6:57.20] times. Customers kept asking us can your
+[6:58.80] chips do training and we're like no we
+[7:00.40] only do inference. But we got to see the
+[7:03.20] future. We built towards it. We stuck to
+[7:05.68] our guns. Um and that's made all the
+[7:08.64] difference. But Find a place where you
+[7:11.52] get to see the future,
+[7:13.76] see it, and then commit to building it
+[7:16.56] for everyone else.
+[7:17.60] >> Great. Also, can you tell us, you know,
+[7:19.44] founders often talk about the why, the
+[7:21.76] passion, which you briefly touched upon,
+[7:23.92] and you go back to, you know, why,
+[7:26.56] what's the purpose of the company? So,
+[7:28.24] when you started Brock in 2016, uh, till
+[7:31.04] now, has that why changed for you? Uh,
+[7:34.24] and if yes, what is the new why?
+[7:37.04] >> So, the why has stayed the same? When I
+[7:39.44] left, one of my concerns was uh stoked
+[7:42.80] by one of the other people trying to
+[7:44.00] hire me. Um they said, "Well, you've
+[7:46.80] given Google a huge advantage. Um that's
+[7:49.36] probably not good for the world for
+[7:50.64] Google to have that by themselves. Come
+[7:52.80] join us. Help us build a chip so at
+[7:55.28] least there are two companies in the
+[7:56.72] world that uh can run these models
+[7:59.04] affordably and at scale." And I'm like,
+[8:02.40] one, two, two is bigger than one. It's
+[8:04.56] actually not good enough, though. Why
+[8:06.64] not give everyone access to AI? And it
+[8:10.48] it sounds a little strange because it
+[8:12.16] was so early, but we had just at Google
+[8:15.84] competed against the world champion in
+[8:17.44] Go and beaten them. And it felt like um
+[8:22.08] real intelligence was around the corner.
+[8:24.32] Now, at the time, we had no idea it was
+[8:26.56] going to be language. Um, we just knew
+[8:29.76] that if you scaled up inference, it
+[8:31.84] would do better because we ended up
+[8:34.00] porting the the Alph Go program which
+[8:36.64] was used to compete against the world
+[8:38.56] champion in Go to TPUs and the score
+[8:42.40] improved. It was the exact same
+[8:43.84] software. No change, but just by having
+[8:46.64] more compute, it got better. And that's
+[8:49.44] exactly what we're seeing in AI today.
+[8:51.84] The difference is instead of it being um
+[8:54.24] you know a sequence of moves on a go
+[8:55.84] board, it's now a sequence of tokens or
+[8:59.52] words that are chosen by the large
+[9:01.20] language model. Just like you couldn't
+[9:03.04] pick the 30th uh go move until you'd
+[9:05.36] pick the 29th, you can't uh produce the
+[9:08.24] hundth word until you know what the 99th
+[9:10.16] word is. So it's the same problem but
+[9:13.28] now it's language. Even today if you see
+[9:15.84] most of the people are focused on
+[9:18.72] training whereas you're truly doubling
+[9:21.28] down on uh inferencing right can you
+[9:24.16] tell us a little bit more about about
+[9:26.16] that
+[9:27.28] >> well I see a lot of marketing now that
+[9:29.28] people are doing inference um I think
+[9:32.08] one of the differences between training
+[9:33.92] and inference is that for training uh
+[9:37.28] you have to have enough training for the
+[9:39.44] ML researchers and the AI researchers
+[9:41.52] that you hire with inference you have to
+[9:44.08] have enough capacity for all your users,
+[9:46.72] but also the cost difference. Uh if you
+[9:49.68] only need training um enough compute for
+[9:52.48] training to build a couple of models,
+[9:54.88] that's not nearly as much as for
+[9:56.48] inference. And you get to amvertise the
+[9:59.36] cost of the training across all the
+[10:00.88] users. So it's even less costsensitive.
+[10:04.24] With inference though, every single
+[10:07.20] token, every single query, you're paying
+[10:09.68] for that. And so it becomes a much
+[10:11.84] higher volume, lower margin business.
+[10:15.36] And so for us, a large part of what
+[10:17.44] we've done is drive the cost down. Every
+[10:20.00] single decision we make, um, as an
+[10:22.64] example, um, every server that we have,
+[10:25.84] we used to have a logo on the face
+[10:27.52] plate. We took it off and now we put it
+[10:30.24] on the the door of the rack because then
+[10:32.72] we have one instead of eight or nine of
+[10:34.96] them in each rack and it lowers the
+[10:36.48] cost. every single decision is about
+[10:39.12] reducing that cost and that that's not
+[10:41.44] something that matters for training as
+[10:42.80] much.
+[10:43.36] >> You had an early mover advantage and
+[10:45.36] maybe you still have an early mover
+[10:47.12] advantage in this uh space, right? You
+[10:50.24] are not increasing the price. You're
+[10:52.48] focused on sort of reducing the price.
+[10:55.20] Tell us a little bit about that.
+[10:56.88] >> So we could charge a lot more. um we
+[10:59.20] have a performance advantage and um I
+[11:02.00] was talking to one of the people in
+[11:04.80] charge of performance modeling for one
+[11:06.80] of the large AI labs and he asked me why
+[11:09.76] aren't you charging more?
+[11:11.44] >> And I'm like because we don't have to.
+[11:13.84] Um if we charge more now it's only
+[11:16.80] because we're building out supply. Our
+[11:19.28] goal at some point is to provide half of
+[11:22.64] the world's inference compute. And if
+[11:24.80] we're providing half of the world's
+[11:26.00] inference compute, we can't be charging
+[11:27.60] as much. What we want to do is we want
+[11:30.24] to drive the cost of compute as close to
+[11:32.16] zero as we can get it. Every year we
+[11:34.08] want to make it cheaper. And every time
+[11:35.84] it gets cheaper, people use more, right?
+[11:39.36] Uh and so rather than trying to extract
+[11:42.72] more money out of our customers, it's
+[11:45.44] our job to drive the price down so that
+[11:48.32] they can use more of it so that we can
+[11:50.00] earn more money and that way our
+[11:51.12] incentives are aligned. tell us a little
+[11:53.12] bit more about LPU uh and for uh you
+[11:57.12] know all the users and consumers who are
+[11:59.36] who are uh watching this tell us the
+[12:02.00] difference between LPU and GPU and why
+[12:05.36] does it matter today.
+[12:07.12] >> GPUs are designed to do a lot of
+[12:09.04] problems in parallel whereas um an LPU
+[12:13.44] is designed to do things both in
+[12:15.60] parallel and sequentially. CPUs only do
+[12:18.64] sequentially well. And why does
+[12:21.92] sequential matter? Uh suppose that I
+[12:25.12] asked you to write a research report on
+[12:26.96] a topic. Let's say um technology
+[12:30.48] companies in India. Now I ask you to
+[12:32.96] write that report and I ask you to write
+[12:34.96] it without hitting the backspace or
+[12:36.48] delete key once. Is it going to be a
+[12:39.20] good report?
+[12:40.72] >> Of course.
+[12:41.36] >> Probably not. Yeah. Okay. Now, if I ask
+[12:44.08] 10 different people to write that report
+[12:46.96] and they don't get to talk to each
+[12:48.24] other, 10 reports that aren't very good
+[12:52.24] don't make a good report.
+[12:54.24] >> But if I let one person write that
+[12:56.64] report, look at what they wrote, and
+[12:58.72] rewrite it 10 times, it's going to get a
+[13:00.80] lot better, isn't it?
+[13:02.96] So sequential is inherently more
+[13:04.88] powerful than parallel.
+[13:06.88] >> And that was the insight going back to
+[13:09.68] AlphaGo, right? If you could see an
+[13:12.08] entire game unfold rather than doing a
+[13:15.04] bunch of moves in parallel and then go
+[13:17.36] back and ask what did I do wrong? How do
+[13:19.60] I improve it? Then you get a lot more
+[13:22.16] capability. And so the difference
+[13:24.24] between LPUs and GPUs is that we can
+[13:26.32] also do things fast which allows us to
+[13:29.12] iterate and be sequential. In fact, the
+[13:31.44] next time you use an LLM and you ask it
+[13:33.52] to write a report, write some code or
+[13:35.68] whatever, just ask it the following
+[13:37.60] question. What are three ways that you
+[13:39.44] can make your answer better? Great. Now
+[13:42.32] apply that and it will get better.
+[13:45.12] >> Oh, interesting. Thanks for sharing
+[13:47.04] that. Uh there's also a lot of talk
+[13:49.84] about speed, but what else matters apart
+[13:53.12] from speed? Uh latency, cost, energy.
+[13:57.92] What are the three important things for
+[14:00.72] uh customers in say the next 2 three
+[14:02.64] years?
+[14:03.44] >> I would say all three of those are
+[14:05.20] important and they trade off. So what
+[14:08.32] most people don't realize is the speed
+[14:10.00] at which a token uh is delivered is also
+[14:12.64] the cost. If you improve the speed, the
+[14:15.84] cost goes up. If you improve the speed,
+[14:17.92] the amount of energy goes up. If you
+[14:19.76] decrease the energy, the speed goes
+[14:21.28] down. Um and uh the cost can go up,
+[14:24.32] right? So there there's these trade-offs
+[14:26.08] between them. Our advantage is that um
+[14:29.52] we just have a very different uh price
+[14:32.08] uh performance curve. So, we're actually
+[14:34.56] able to offer the same price as the rest
+[14:36.88] of the market at much higher speeds. So,
+[14:40.00] it'd be sort of like um being able to
+[14:43.20] fly somewhere rather than drive, but
+[14:45.84] having the cost of just a normal drive.
+[14:49.04] That's the advantage.
+[14:50.40] >> And how are you achieving that? Because
+[14:52.40] when the rest of the world is is
+[14:54.32] struggling to balance across these three
+[14:56.16] vectors, uh how is Grock sort of
+[14:59.28] bringing down the uh cost and the price
+[15:01.52] and yet sort of giving the right speed
+[15:04.08] and latency?
+[15:05.12] >> Often times you you always have to turn
+[15:07.28] that knob and the the difference between
+[15:10.72] um sort of craftsmanship or or
+[15:13.68] engineering and and going into
+[15:15.68] innovation is when you don't have to
+[15:18.08] make the trade-off anymore. So when
+[15:20.56] working around those trade-offs is when
+[15:22.40] you invent something new. And what we
+[15:24.64] did that was different was we stopped
+[15:26.88] using external memory for our chips. So
+[15:29.52] when you use uh GPUs,
+[15:32.56] let's let's use an analogy of a factory,
+[15:34.72] right? So if I want to produce cars, I
+[15:38.24] could make them by hand. And I actually
+[15:41.28] just got to see uh the McLaren factory
+[15:43.36] while I was in London. They build about
+[15:45.60] 2,000 cars a year by hand.
+[15:49.52] Now, a modern manufacturing plant can
+[15:52.16] build hundreds of thousands of cars per
+[15:53.92] year, but there's a trade-off, right?
+[15:57.60] The the trade-off is you have to build a
+[16:00.08] big large manufacturing plant, which
+[16:01.76] means you have to commit to building a
+[16:03.52] lot more cars. So, what we did when we
+[16:06.16] started was we said inference is going
+[16:07.92] to be a big problem. We're going to be
+[16:09.76] dedicating a large number of chips to
+[16:11.28] it. So rather than having each set of
+[16:13.92] chips work independently, we have them
+[16:15.44] all work together as one giant assembly
+[16:17.84] line. So the same model that might take
+[16:20.48] only eight GPUs, we'll use 4,000 LPUs on
+[16:24.00] it. And when we have 4,000 LPUs on it,
+[16:26.64] it's like a big long assembly line. You
+[16:29.04] just start by, you know, putting the
+[16:30.96] query in and then it goes all the way to
+[16:33.20] the end without having to sort of go off
+[16:35.52] and talk to that external memory like
+[16:37.20] with a GPU. every single time you read
+[16:39.84] from external memory with a GPU, you're
+[16:41.60] burning an enormous amount of power and
+[16:43.76] you're also slowing uh your processing
+[16:46.08] down significantly.
+[16:47.52] >> Since you touched upon the GPUs, uh
+[16:49.84] Nvidia is the market leader uh here and
+[16:53.36] if you look at Nvidia's GPUs, they're
+[16:55.60] they're uh famously flexible, right?
+[16:58.32] Whereas uh Grock is looking at something
+[17:00.72] which is extremely specialized. Do you
+[17:03.44] think it's an advantage or a
+[17:05.12] disadvantage? So actually that's a
+[17:07.28] little bit of a a misunderstanding in
+[17:09.28] the market and um we run large language
+[17:12.56] models, we run speech to text. We run um
+[17:15.92] text generation from or sorry speech
+[17:18.24] generation from text. Um we take images
+[17:21.84] and and turn them into text. We take
+[17:23.68] text turn them into images. We even just
+[17:25.60] want a deal to do video generation. So
+[17:27.68] we can actually do everything that the
+[17:29.04] GPUs can. the the difference and and
+[17:32.48] frankly I think if you're not highly
+[17:34.40] programmable, you're going to be left
+[17:35.76] behind because the the main difference
+[17:38.96] is the software. When I talk to people
+[17:41.20] who are buying GPUs, I'll often ask
+[17:43.84] them, if I could give you the next
+[17:45.84] generation GPU today and magically it
+[17:48.32] would work in the same data centers,
+[17:50.24] magically it would be, you know, the
+[17:51.60] same cost, same energy and everything,
+[17:53.52] so you could just use it out of the box.
+[17:55.68] But I was going to take one software
+[17:57.36] feature away, just one. I might take um
+[18:00.48] something like prefix caching away or I
+[18:03.04] might take speculative decode away.
+[18:04.88] Would you want that GPU from the future
+[18:06.56] with one software feature missing or
+[18:08.80] would you want the current GPUs with the
+[18:10.40] current software? Answer is always I
+[18:12.48] want the current GPUs with current
+[18:13.76] software because software and algorithms
+[18:16.24] have more of an impact than the
+[18:17.92] hardware. Once you're at software par
+[18:20.80] once they're equal then you can start to
+[18:23.28] compete on the hardware. So what we did
+[18:26.08] at Grock was we actually started with
+[18:27.92] the software. We spent the first six
+[18:29.60] months working on it and only after we
+[18:31.84] had a compiler and all the software
+[18:33.52] working uh did we start to design the
+[18:35.60] chip. So now we can very easily get new
+[18:38.64] models running. So um the Kimmy model
+[18:41.04] which we launched it's a trillion
+[18:42.48] parameter model. It's massive one of the
+[18:44.48] largest open source ones. Uh it was
+[18:46.56] launched on Friday and on Monday we had
+[18:48.40] it in production. We've never seen the
+[18:50.08] model before. No one gave us a heads up.
+[18:52.16] It was also a trillion parameters. So it
+[18:53.60] took us 24 hours out of the 72 hours
+[18:55.68] just to download it. So we actually
+[18:57.44] compiled it faster than we downloaded
+[18:59.04] it.
+[18:59.76] >> Wow. You know every every time you talk
+[19:03.04] tell about these stories they're they're
+[19:04.72] very unconventional because chip design
+[19:07.28] hardware is you don't think software
+[19:10.24] first but in Grock you thought software
+[19:12.32] first. Similarly, I read somewhere that
+[19:14.56] it took you literally from the first
+[19:16.40] time the order was given till you got it
+[19:19.12] got the entire data center ready was
+[19:21.12] like 51 days or something.
+[19:22.96] >> 51 days from contract signing
+[19:24.72] >> from contract. Oh wow. From contract
+[19:26.40] signing. That's insanely fast, right?
+[19:29.12] >> So actually we have a data center not
+[19:30.72] too far away from India in uh Dam in
+[19:32.96] Saudi Arabia. And so yes, we we signed
+[19:36.00] the contract 51 days later it was up and
+[19:38.32] serving traffic. But actually we we beat
+[19:40.40] that record recently. So we deployed a
+[19:43.04] data center in Europe. We decided we
+[19:45.44] were going to deploy in Europe. 34 days
+[19:48.00] later we didn't know which country. We
+[19:49.68] didn't know which data center. 34 days
+[19:51.36] later we were up and serving production
+[19:52.96] traffic from Finland.
+[19:54.16] >> And how do you go about it? Because just
+[19:56.48] creating a data center is
+[19:58.32] >> we didn't build the data center. We
+[19:59.52] rented it. But one of the benefits of
+[20:01.44] our architecture, it's air cooled. So
+[20:03.20] there's a lot of air cooled capacity
+[20:04.80] left. So there was a hyperscaler that
+[20:07.12] was moving out of an aircooled data
+[20:08.56] center. So they can move into a liquid
+[20:09.84] cooled one. and we just started taking
+[20:11.36] the space as they were moving out of it.
+[20:13.68] >> Wow. You also mentioned that uh you know
+[20:16.40] Grock can basically take the inferencing
+[20:19.76] load from Nvidia so that Nvidia can
+[20:22.32] continue to focus on training and you
+[20:24.56] can focus on inferencing. Does Nvidia
+[20:27.12] see you as competition or as partners?
+[20:30.80] >> I like to say that we're we're very
+[20:32.96] friendly with Nvidia. Training is a very
+[20:34.96] high margin business. Uh Nvidia earns 70
+[20:37.76] to 80% margin on their GPUs and um if
+[20:42.00] they want to start selling into
+[20:42.96] inference, they're going to have to
+[20:44.00] lower that margin pretty significantly.
+[20:46.16] That's not going to be great for the
+[20:47.20] shareholders. And since every single GPU
+[20:50.48] that Nvidia is going to make this year,
+[20:51.92] all 5.5 million, which is supply
+[20:54.16] constraint, um if they could make 20
+[20:56.64] million, they would sell 20 million,
+[20:58.24] right? That's how much demand there is
+[20:59.60] in the market. But they're going to sell
+[21:01.84] every single one of those for training
+[21:03.44] whether we sell any to inference or not.
+[21:05.76] And so by allowing them to focus on
+[21:07.76] training where margins are higher,
+[21:09.44] Nvidia is going to earn more money and
+[21:11.04] we'll take the low margin, high volume
+[21:12.80] inference business and we'll be happy
+[21:14.16] with it.
+[21:14.80] >> One follow-up question there. What stops
+[21:17.12] Nvidia because Nvidia has mastered the
+[21:19.36] art of creating GPUs?
+[21:21.20] >> What stops them from creating a hardware
+[21:23.28] which caters to inferencing?
+[21:25.84] >> Well, I think if they did, uh, it would
+[21:27.84] be a great market validation for us. So,
+[21:29.60] I'm not sure I'd be too concerned. But
+[21:31.68] if you think about it, any large company
+[21:34.24] with tons of money and tons of employees
+[21:36.16] should be able to copy what any startup
+[21:38.24] does. Um, it just turns out it's very
+[21:41.36] difficult to do what we've done. Um, and
+[21:44.88] it takes a long amount of time.
+[21:46.24] Employees should be able to copy what
+[21:48.08] any startup does. Um, it just turns out
+[21:51.12] it's very difficult to do what we've
+[21:53.76] done. Um, and it takes a long amount of
+[21:56.56] time. Like when I started Grock um I had
+[21:59.68] actually just uh set a record internally
+[22:03.04] at at Google um working with one of the
+[22:05.44] engineers in Google brain on uh image
+[22:08.32] classifying quality. So I you know come
+[22:10.96] up with an idea we worked on it together
+[22:13.20] uh this other engineer in Google brain
+[22:14.72] implemented it verified that it was the
+[22:17.44] highest quality image classifier. I
+[22:20.08] could have gone into AI as in the
+[22:22.24] software side. The reason that we ended
+[22:24.80] up staying on the chip side at Grock was
+[22:26.80] the realization that if someone decided
+[22:30.48] to copy us, first of all, you can't open
+[22:33.12] source it easily. Like chips have a
+[22:34.80] cost. They're made of atoms. So like,
+[22:36.88] you know, we saw TensorFlow and
+[22:38.08] everything else being given away for
+[22:39.12] free. But if someone decided to copy us,
+[22:41.76] it takes years to build a chip. So we
+[22:44.96] were going to have a multi-year
+[22:46.32] advantage. Um, now that everyone has
+[22:48.80] realized that inference is the most
+[22:50.88] important thing and they're just
+[22:52.72] starting to do it, um, it's going to be
+[22:55.12] years before they catch up. And by the
+[22:57.28] time they catch up, we're already going
+[22:58.48] to be on, uh, multiple generations ahead
+[23:00.48] of the next chip. In software, that's
+[23:02.24] much harder. So, I actually think more
+[23:04.16] entrepreneurs should do hard things that
+[23:07.20] take a long time to do because then they
+[23:09.44] get to have a a sustained advantage, a a
+[23:12.00] sort of temporal moat. You made a very
+[23:14.16] interesting point on hard work, sticking
+[23:16.48] to your core, but uh I'll come to that.
+[23:18.80] You've also expanded your partnerships
+[23:20.88] in Canada, Saudi Arabia, Europe. What
+[23:23.92] were the choices in terms of expanding
+[23:26.08] in these markets and when do we see that
+[23:28.40] in India? Now,
+[23:29.92] >> so our motto at Grock is build fast and
+[23:32.24] we choose our partners purely based on
+[23:34.16] who can move the fastest. Um in fact,
+[23:36.40] let's go back to what we were talking
+[23:37.52] about earlier. Why don't we charge more
+[23:38.88] money? Because to us, time is more
+[23:40.96] valuable than money. We have a finite
+[23:42.96] amount of time. AI is moving incredibly
+[23:44.96] quickly. So, we've been approached by
+[23:47.92] numerous countries uh who want compute
+[23:51.04] uh local for for sovereign purposes. And
+[23:54.16] what we say to them is great, show me,
+[23:56.96] move quick. Saudi Arabia moved
+[23:59.12] incredibly quickly, right? We signed the
+[24:01.04] deal. They did everything on their Let's
+[24:03.04] also be clear to do that in 51 days. It
+[24:06.48] wasn't purely us. They also had to
+[24:08.88] remove a bunch of roadblocks themselves.
+[24:11.04] we'd get all sorts of logistics done.
+[24:12.72] They had to do things on their end. In
+[24:14.16] the Canada example, um Bell Canada, our
+[24:18.24] partner there, they moved incredibly
+[24:20.00] quickly. Uh we were able to sign an
+[24:22.08] agreement very quickly. Uh and they're
+[24:24.24] committing to building a bunch of data
+[24:25.76] centers very quickly. We've actually
+[24:27.04] already got hardware in their data
+[24:28.56] centers now. So, we choose our partners
+[24:32.40] based on who is going to be moving at AI
+[24:34.80] speed.
+[24:35.36] >> And have you ever faced a challenge?
+[24:37.20] Because if you if you look at uh some of
+[24:39.44] the choices that these customers or
+[24:41.36] partners would make is look at Nvidia,
+[24:44.00] you know, one of the largest listed tech
+[24:46.40] companies in the world, amazing
+[24:47.92] valuation. Uh whereas Grock is uh you
+[24:51.36] know yeah it's a startup. So you know
+[24:53.92] there is always this concern that will a
+[24:56.48] startup even exist 2 years, 3 years, 5
+[24:58.96] years down the line. Uh have you faced
+[25:01.52] these challenges while working with
+[25:03.12] these various partnerships across the
+[25:05.28] globe? Yeah, each deal that we do
+[25:07.12] reduces the concern about that. Um, at
+[25:09.28] this point that doesn't come up anymore,
+[25:10.72] but it used to be a huge problem. Uh, I
+[25:13.04] think also the fact that we are able to
+[25:15.52] ship so quickly uh reduces some of the
+[25:18.32] concern because you know that we have
+[25:20.00] more than enough money to last to be
+[25:22.32] able to ship you the hardware even if
+[25:24.00] the worst were to happen. Uh, and I
+[25:26.24] think if you're moving slowly, that's an
+[25:28.00] even bigger concern. Jonathan, if you
+[25:30.00] look at uh I heard Jensen say uh that
+[25:32.88] you know if you if you need GPUs the
+[25:35.28] lead time is basically what
+[25:37.20] >> two years
+[25:37.68] >> two years
+[25:38.32] >> you his exact quote is if you want GPUs
+[25:41.68] in 2 years the time to put in the PO is
+[25:43.68] today
+[25:44.08] >> is today whereas uh you know again I
+[25:47.12] know GPUs and LPUs are like very
+[25:49.52] different but uh you are you have speed
+[25:53.20] at your advantage uh can you tell us a
+[25:56.24] little bit more about this because 2
+[25:58.32] years down the line you don't even know
+[25:59.92] how the world is going to look like uh
+[26:02.24] given everything that's happening in the
+[26:04.00] AI space. Oh yeah. I mean two years you
+[26:06.08] don't know what's happening in six
+[26:08.00] months, three months. I mean uh I was
+[26:10.40] just in a meeting with a bunch of very
+[26:12.08] senior um Indian tech leaders and uh
+[26:16.24] they were saying the problem they have
+[26:18.24] is there's a new model pretty much every
+[26:20.64] two to three days. So it's hard to even
+[26:22.88] find. So how do you how do you deal with
+[26:24.48] chips that are a multi-year thing? When
+[26:26.64] you're buying a GPU, there's some
+[26:28.64] special components in there that are at
+[26:31.04] the exact maximum that the supply chain
+[26:33.68] can build. like the supply chain has to
+[26:35.60] grow in order to provide them. Uh and
+[26:39.04] that's why it's two years and there's
+[26:41.36] just some lead times on some of the
+[26:43.28] parts that take two years when you put
+[26:44.96] the whole thing together. For us, if
+[26:48.16] every single LPU that we were making was
+[26:51.28] already paid for, bought, and allocated
+[26:53.76] to someone, and you came in and you
+[26:56.08] said, "I want 1 million LPUs." And you
+[26:59.84] signed a PO with us. uh the first of
+[27:02.88] those million LPUs would arrive in six
+[27:05.04] months. We just have a much simpler
+[27:07.20] supply chain. Uh we mostly buy uh parts
+[27:11.52] that are available in the market. We
+[27:13.44] have multiple sources so we can move
+[27:15.20] quickly. And part of the reason that we
+[27:17.76] designed our chips the way that we did
+[27:19.36] was to avoid those long leadtime parts
+[27:22.08] because uh inference is just a much
+[27:24.24] larger scale problem. And we knew that
+[27:26.80] it would be very difficult to predict
+[27:28.40] exactly how much hardware someone would
+[27:30.16] need to deploy. Uh but that also goes
+[27:32.64] into the decision to make um our chips
+[27:35.92] possible to deploy in aircooled data
+[27:37.36] centers because what does it matter if
+[27:40.64] our chips take six months to build and
+[27:42.64] deploy if you're going to have to wait
+[27:44.24] two years for a new liquid cooled data
+[27:45.84] center to be deployed. Meanwhile, you
+[27:47.52] have a bunch of people moving out of the
+[27:48.64] aircooled data centers and making them
+[27:50.40] available to us. So it's just a an
+[27:53.36] approach designed for maximum supply
+[27:55.20] chain flexibility.
+[27:56.48] >> Great. Uh I'm going to switch gears on
+[27:59.04] uh culture your leadership principles.
+[28:02.08] You mentioned a very important point
+[28:03.68] that you know all entrepreneurs and
+[28:05.44] founders should uh not take shortcuts
+[28:08.72] but take you know work hard stick to
+[28:11.52] your sort of core. But sometimes when
+[28:13.68] you're building uh and you're getting
+[28:15.76] revenue which perhaps might might not be
+[28:18.40] from uh the the stream that is your core
+[28:22.48] but it's a peripheral. How do you
+[28:24.56] decide? How do you basically say that no
+[28:26.96] to certain things and stick to your
+[28:29.20] core?
+[28:30.00] >> Uh for us it was very difficult until we
+[28:32.96] got product market fit. And you know
+[28:34.80] that you have product market fit because
+[28:36.40] you have more demand than you can
+[28:38.64] supply. And when you have more demand
+[28:40.96] than you can supply, you have two
+[28:42.48] options. The first option going back to
+[28:45.12] what we talked about earlier is you can
+[28:47.12] charge more so that your supply equals
+[28:49.28] your demand. Or what you can do is you
+[28:52.24] can say, I'm gonna actually keep my
+[28:54.24] prices down here, but I'm gonna be picky
+[28:56.32] about who I work with. I'm gonna pick
+[28:58.08] customers who are better fits for my
+[29:00.08] product, customers who um you just like
+[29:04.00] to work better with, right? And so we
+[29:06.08] get to be very choosy about our
+[29:07.44] customers because um even though we have
+[29:09.68] a lot more flexibility in our supply
+[29:11.52] chain, the demand is still exceeding our
+[29:13.76] supply. And so I would say get to
+[29:17.52] product market fit and then be selective
+[29:20.56] about your customers because if you're
+[29:22.08] not, you're going to be spending a lot
+[29:23.52] of time on your customers. And I would
+[29:25.92] also add one of my favorite sayings is
+[29:28.64] um uh you have to spend time to make
+[29:30.96] time. I mean that's what you're doing
+[29:32.96] when you hire, right? You're spending
+[29:34.56] time to make time. You get people who
+[29:36.24] help alleviate your time. And
+[29:40.56] just like when you make a bad hire,
+[29:43.68] picking a bad customer can eat all your
+[29:46.00] time.
+[29:47.36] >> Pick your customers incredibly
+[29:49.12] carefully. They're like your initial VC.
+[29:50.88] Your initial customers are as important
+[29:52.24] as your initial VCs and your initial
+[29:54.00] initial employees.
+[29:55.36] >> Just one uh follow-up question uh uh
+[29:58.48] question on that is uh you mentioned uh
+[30:01.60] in one of your interviews that you
+[30:03.20] should hire for luck. Uh that's an
+[30:06.00] interesting one. tell us a little bit
+[30:07.68] about that and how how did this thought
+[30:10.88] come to you that hire for luck? There's
+[30:13.28] a a great book by I think it's Jim
+[30:15.28] Collins um Return on Luck and and I read
+[30:18.80] the book or the chapter I don't remember
+[30:20.32] if it was a book or a chapter and he
+[30:23.04] made the point that after studying a
+[30:25.92] large number of companies um they they
+[30:29.60] equal they had all the same number of
+[30:31.44] lucky events but some companies seemed
+[30:34.64] uh predisposed to seizing luck. They
+[30:37.84] they saw a lucky event and they they
+[30:40.72] jumped on it. Um, as an example, uh, as
+[30:44.32] I said earlier, we didn't know that
+[30:45.84] language was going to be the form of
+[30:48.00] intelligence that was going to, you
+[30:49.44] know, predominate in AI, but we knew
+[30:51.68] certain things about it. We knew it
+[30:52.80] would be sequential and other things
+[30:54.16] like that. When LLMs came out, um,
+[30:57.68] initially we wanted to uh we wanted to
+[31:01.52] run LLMs and internally uh we had a
+[31:04.96] bunch of team members who said, "No,
+[31:06.64] we're going to be terrible at LLMs." And
+[31:08.24] we're like, "No, that's exactly what we
+[31:09.68] built for." We just kept talking
+[31:11.12] ourselves out of it and our team just
+[31:14.32] wouldn't do it. And so the we we kept
+[31:18.08] pressing and then the third time there
+[31:20.32] was an LLM opportunity, we did it and we
+[31:25.04] went viral.
+[31:26.80] So if you are more predisposed to seize
+[31:30.48] on luck, you're going to have
+[31:32.64] opportunities that others in the market
+[31:35.28] won't even see. Now, I jokingly say,
+[31:38.32] "How do you interview for luck?" Well,
+[31:40.56] you take all the resumes, you put them
+[31:42.00] in two piles, and you throw one away,
+[31:43.44] and the one you kept is the lucky pile.
+[31:45.68] >> Okay?
+[31:46.08] >> But the reality is it's a mindset,
+[31:48.08] right? The reality is um it it's about
+[31:52.24] seizing that luck and not talking
+[31:54.24] yourself out of it. And you just have to
+[31:57.12] talk to people and understand like if I
+[31:59.60] show you an opportunity, are you going
+[32:02.32] to pounce on it or are you going to talk
+[32:04.00] yourself out of it? And that's just
+[32:06.16] fantastic, right? Like you you had what
+[32:08.48] seven eight years for figuring out the
+[32:11.44] product market fit for Grock.
+[32:13.92] >> I'm sure you've you would have had as a
+[32:16.08] founder uh self-doubt moments. Just tell
+[32:19.04] us how did you sort of go through those
+[32:21.68] eight years and did you at some point
+[32:24.64] feel that you know your your team or the
+[32:27.12] trusted circle that you had did they let
+[32:29.60] you down in those eight years? Were
+[32:31.76] there any moments that you can share
+[32:33.04] with us? I mean, we almost ran out of
+[32:34.80] money at one point. So, u that was that
+[32:38.32] was a close call. So, we were about
+[32:41.12] three weeks from running out of money at
+[32:42.56] one point before we raised around. And
+[32:46.08] as we were running low on cash,
+[32:49.28] uh we had an option to either do
+[32:51.60] layoffs, which when we looked at it, we
+[32:54.80] realized we wouldn't have enough people
+[32:56.32] left to be successful. So, that wasn't a
+[32:58.56] real option. Or we could ask everyone to
+[33:02.16] take a pay cut, which is probably the
+[33:04.72] the scariest thing you could possibly
+[33:06.24] do. And we also realized um it wouldn't
+[33:10.00] be fair to just do a pay cut across the
+[33:12.08] board. Um not everyone was in the same
+[33:14.48] circumstance. And um it it was just sort
+[33:18.24] of the wrong approach. What we came up
+[33:19.52] with instead was um we used an analogy
+[33:22.72] from World War II in the United States.
+[33:25.28] So the United States didn't have enough
+[33:27.28] money to pay for World War II. So what
+[33:29.60] they did was they issued war bonds,
+[33:31.68] which was people could buy bonds and
+[33:33.44] then they'd be paid an interest rate
+[33:34.96] over time. Uh so what we did was we we
+[33:38.48] called it Grock bonds, which was
+[33:41.04] employees were allowed to reduce their
+[33:42.48] salary. Uh and in exchange for that,
+[33:44.80] they got equity. And 80% of Grock
+[33:49.04] employees volunteered for this. In fact,
+[33:51.52] when we announced it, we even told
+[33:53.44] everyone, "We're going to keep it
+[33:54.88] anonymous who does it because we don't
+[33:56.48] want you to feel pressured." Despite
+[33:58.40] that, 80% signed up. 50% went to the
+[34:01.76] statutory minimum salary by law.
+[34:04.08] >> Wow. That's that's really inspiring.
+[34:06.72] >> And importantly, um, we saved more than
+[34:10.96] three weeks of runway. So, had we not
+[34:13.52] gone to our Grock employees and told
+[34:16.16] them, "We're running low on money. We
+[34:18.24] want to do Grock bonds." um we wouldn't
+[34:21.12] have made it. But on the other hand, I
+[34:23.84] think we also got a lot stronger because
+[34:25.76] there was a lot more trust. Um no one
+[34:28.16] had to worry that we weren't going to be
+[34:29.84] honest about, you know, the cash
+[34:31.68] situation or anything like that because
+[34:33.52] we went out and we asked them and we
+[34:35.44] expected a lot of resignations when we
+[34:37.28] said that. Um I it was a tiny handful.
+[34:41.36] Um almost everyone stayed.
+[34:44.00] >> Wow. That's a great because my next
+[34:46.48] question was you know like how do you
+[34:48.32] navigate uh scarcity? So uh great sort
+[34:51.44] of example of that but in those eight
+[34:53.52] years uh Jonathan or even today like are
+[34:56.48] there any self-doubt moments that you
+[34:58.64] have?
+[34:59.20] >> Yes, you definitely have doubt and um
+[35:02.32] the biggest thing about being a founder
+[35:03.92] is dealing with your own psychology. Uh
+[35:07.44] if you were a 100% rational being and
+[35:10.48] you had no emotions, being a founder
+[35:12.00] would be easy. Um, you multiply that by
+[35:15.44] the fact that every time something goes
+[35:17.60] wrong and someone is worried, you feel
+[35:19.84] that worry. In fact, probably for the
+[35:23.28] last eight years, I haven't had a good
+[35:25.52] day or a bad day. I've always had both
+[35:27.68] every single day. Something goes wrong
+[35:29.92] every single day. And a good day is a
+[35:32.72] day where you get about six or more good
+[35:35.20] things for every one bad thing. So it
+[35:37.28] takes a different kind of psychology to
+[35:40.40] when someone's telling you something bad
+[35:42.08] is happening going okay but in the mix
+[35:44.64] of everything else it's okay. That leads
+[35:47.04] to a lot of self-doubt and a lot of
+[35:48.64] concern and you just have to keep going.
+[35:50.64] You just have to go okay I got punched
+[35:53.04] in the teeth.
+[35:54.96] I'm going to move on. And I've literally
+[35:57.76] gone from one meeting where at the end
+[35:59.92] of the meeting I'm like I can't believe
+[36:02.40] I'm I'm I'm still going like what's
+[36:04.40] going on to the next meeting where I'm
+[36:06.08] like oh I have to do an all hands I have
+[36:08.16] to put on the smile I have to talk to
+[36:09.52] everyone. Uh and then I've had other
+[36:11.76] times where you know people have come to
+[36:14.08] me and given me all sorts of great news
+[36:16.32] and then I had to go into a meeting
+[36:17.84] where I had to give someone some bad
+[36:19.20] news. You just have to learn to deal
+[36:21.20] with it.
+[36:22.64] >> Great. Uh you also mentioned that you
+[36:25.92] know one should always avoid the rich
+[36:28.32] person's disease.
+[36:30.00] >> Can you tell us what that is?
+[36:32.56] >> Yeah, one of the things that will kill a
+[36:35.20] startup is too much money. Um I like to
+[36:38.72] refer to it as financial diabetes,
+[36:40.72] right? You get too much money, you uh
+[36:43.28] stop controlling your spend, you don't
+[36:46.08] focus on building the right product. The
+[36:48.48] reality is constraints breed innovation
+[36:50.80] and creativity. So
+[36:54.16] it's not a coincidence I believe that a
+[36:57.84] lot of the most successful startups
+[37:00.24] early in their uh startup journey uh
+[37:03.60] faced financial um downturns.
+[37:07.12] It forced them to to put in uh
+[37:09.36] constraints. Uh we've recently raised
+[37:12.64] quite a bit of money, you know, over a
+[37:14.32] billion dollars. But for most of Grock's
+[37:17.36] journey, we have been the uh most poorly
+[37:21.12] funded AI chip startup. Uh I don't think
+[37:24.48] if you compare us to to any others at
+[37:27.20] any stage along the way, we had more
+[37:28.96] money. Now we've raised more than anyone
+[37:31.28] else, but we've become the leader, but
+[37:33.44] we did that in large part because we
+[37:35.68] were able to control our spend and and
+[37:37.68] put all the the discipline in place.
+[37:40.32] >> No. Awesome. It's just been an
+[37:42.40] incredible journey so far for Grock and
+[37:44.96] I'm sure there are many more incredible
+[37:47.60] milestones for you in the future. Uh
+[37:49.68] let's shift gears to India, right? India
+[37:51.84] is the land of opportunity. Uh there are
+[37:54.80] just so many innovations happening
+[37:56.48] across across different pockets of the
+[37:58.72] country. uh and especially when it comes
+[38:00.80] to AI ambition whether you look at
+[38:03.28] startups, SMBs, government initiatives,
+[38:05.68] the developer talent pool that we have.
+[38:08.08] Uh so many different things happening uh
+[38:11.04] from your perspective, how are you
+[38:13.04] seeing this opportunity for for Grock?
+[38:15.52] >> First of all, we have about 2 million
+[38:17.04] developers now. We just hit that
+[38:18.56] milestone. 400,000 of them are in India.
+[38:22.00] We've done no marketing. We've done
+[38:23.68] nothing. And the reason that I'm here is
+[38:27.68] uh I think generative AI is a complete
+[38:29.68] watershed moment where where things are
+[38:31.52] about to change. If if we were talking 3
+[38:33.92] years ago and I said I think someone's
+[38:36.56] going to uh have a small startup that's
+[38:38.80] going to successfully take on Google and
+[38:40.72] and everyone's going to be worried about
+[38:42.00] Google's future, you would have said I
+[38:43.36] was nuts. Now everyone's looking at
+[38:45.76] OpenAI and going maybe OpenAI is going
+[38:48.40] to beat Google. Right now the entire
+[38:51.20] playboard is being upset. Every
+[38:53.84] incumbent company with a moat is at risk
+[38:56.96] and a startup could be started today
+[38:59.60] that is going to supplant any one of
+[39:01.60] those tech companies. If you look in
+[39:04.08] Silicon Valley top 10 tech companies
+[39:07.12] what at least three of them are run by
+[39:09.12] Indians
+[39:10.40] >> and we are very proud of that.
+[39:12.08] >> And and now here's the question in five
+[39:14.96] years from now how many of the top 10
+[39:17.44] tech companies are going to be founded
+[39:19.44] by Indians and be based in India? one,
+[39:22.80] two, three. I don't think it's going to
+[39:24.48] be zero. I think the question is how
+[39:26.80] many
+[39:27.52] >> and what does Grock look like say two
+[39:30.40] years, three years down the line?
+[39:32.08] >> Well, our goal is to provide half of the
+[39:33.92] world's inference. And so everything we
+[39:36.40] do, every decision we make is how do we
+[39:38.88] get to that point? You know, we we set a
+[39:40.88] goal about 18 months ago um to serve 25
+[39:44.80] million tokens per second. We even put
+[39:46.32] it on this little challenge coin. Uh,
+[39:48.72] and that's sort of a a measure of
+[39:50.48] intelligence, like how many tokens in
+[39:52.56] total our entire platform could serve.
+[39:54.88] We're about to have to retire this coin
+[39:56.48] because we're actually at over 20
+[39:58.16] million tokens now of capacity.
+[40:00.96] >> And so, we're going to have to have a
+[40:02.48] bigger one. Um, and of course, the world
+[40:04.96] hasn't stayed still. It's continued to
+[40:07.12] increase the number of tokens uh per
+[40:09.04] second that are produced, but this is
+[40:11.60] actually not too far off from what Azure
+[40:14.24] reported serving uh on average per
+[40:16.48] second. So that's hyperscaler level.
+[40:18.72] We're just gonna ramp our production.
+[40:21.20] We're going to continue improving our
+[40:22.56] software. Uh and we're going to continue
+[40:25.28] um winning more customers.
+[40:26.88] >> Awesome. When did you create this coin?
+[40:28.72] So
+[40:29.04] >> I think this is barely a year old.
+[40:30.96] >> Oh wow.
+[40:31.60] >> Yeah. I um I think we introduced the
+[40:34.08] goal at the beginning of 2024.
+[40:37.92] And the coin we probably introduced
+[40:39.84] about midway through the year. And
+[40:40.96] everyone at Grock carries one of these
+[40:42.32] as a reminder. In fact, that's another
+[40:44.00] lesson. You can try and tell people how
+[40:46.24] to do their jobs or you can tell them
+[40:48.16] what the goal is and let them figure it
+[40:49.84] out themselves. No one at Google was
+[40:52.24] telling me to come up with the TPU. They
+[40:54.80] just said what the problem was and try
+[40:56.64] to solve it. If you get everyone aligned
+[40:58.72] on a goal that's so simple you can put
+[41:00.72] it on a coin. Then uh everyone's going
+[41:03.04] to be working in the in rowing in the
+[41:04.88] same direction to solve that problem.
+[41:07.20] >> Awesome. Uh don't whisper broadcast.
+[41:10.72] That's been your line in terms of
+[41:12.88] leadership principles. So
+[41:14.56] >> fantastic. Before we close, I'm going to
+[41:16.64] do a quick lightning round. Uh so would
+[41:19.60] love to hear your responses. Inference
+[41:21.76] of or training. What would you choose?
+[41:24.00] >> Inference.
+[41:24.96] >> Efficiency or flexibility?
+[41:26.72] >> Flexibility.
+[41:28.00] >> India as a strategic market or a talent
+[41:30.56] pool.
+[41:31.68] >> Uh why do I have to choose?
+[41:34.56] >> Uh one leadership principle that you
+[41:36.88] live by.
+[41:37.92] >> Intentional leadership. And I probably
+[41:39.68] need to explain what that means. Um, so
+[41:42.24] there's a book called Turn the Ship
+[41:43.60] Around, uh, by David Marquette. Uh, he
+[41:46.40] took the lowest performing nuclear
+[41:48.56] submarine in the US fleet and turned it
+[41:50.24] into the highest performing by moving
+[41:52.48] from command and control to getting
+[41:55.12] everyone to make their own decisions.
+[41:56.56] Very much like this, but the way that it
+[41:59.04] works is instead of me telling you what
+[42:01.04] to do, uh, I say this is the overall
+[42:03.76] objective. Like, um, in the submarine
+[42:05.84] case, uh, dive the boat. Then the person
+[42:08.24] who's in charge of setting the depth
+[42:09.60] says diving to uh 500 feet. If no one
+[42:12.72] says anything, they're free to do it.
+[42:14.56] But if someone remembers that the hatch
+[42:16.80] is open on the submarine, they say stop.
+[42:18.72] It uh dramatically increases the the
+[42:21.52] rate at which you can run.
+[42:23.12] >> Awesome. Uh what's the next breakthrough
+[42:25.68] at Grock that excites you the most?
+[42:28.72] >> Our next chip, which um at some point in
+[42:32.48] the future will be available.
+[42:34.40] >> Super. Jonathan, thank you so much for
+[42:36.80] spending time with us. Uh, literally
+[42:38.88] from uh rebuilding uh hardware to think
+[42:42.80] AI and software first to building a
+[42:45.52] resilient culture. It's just been a
+[42:47.92] fantastic journey uh to to read about
+[42:50.88] Grock and I'm sure you're going to you
+[42:52.96] know bring many more such incredible
+[42:54.88] milestones not just globally but also to
+[42:57.68] India. Thank you so much. Well,
+[42:59.36] >> thank you for having me.
+[43:04.03] [Music]

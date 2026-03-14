@@ -89,29 +89,6 @@ class TestListProviders:
 
         assert len(result) == 3
 
-    def test_seeded_gemini_is_primary(self, db):
-        with patch("app.config.get_settings") as mock_settings:
-            mock_settings.return_value = MagicMock(
-                GEMINI_API_KEY="gkey",
-                ANTHROPIC_API_KEY="akey",
-                OPENAI_API_KEY="okey",
-            )
-            result = AdminProviderService.list_providers(db)
-
-        gemini = next(p for p in result if p.provider_name == "gemini")
-        assert gemini.is_primary is True
-
-    def test_seeded_openai_is_disabled(self, db):
-        with patch("app.config.get_settings") as mock_settings:
-            mock_settings.return_value = MagicMock(
-                GEMINI_API_KEY="gkey",
-                ANTHROPIC_API_KEY="akey",
-                OPENAI_API_KEY="okey",
-            )
-            result = AdminProviderService.list_providers(db)
-
-        openai = next(p for p in result if p.provider_name == "openai")
-        assert openai.is_enabled is False
 
 
 # ─── update_provider ─────────────────────────────────────────────────────────

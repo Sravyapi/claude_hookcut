@@ -1,0 +1,2954 @@
+[0:00.08] Ladies and gentlemen, I have a very
+[0:01.44] interesting podcast today. A mirainti
+[0:05.28] is on the show. For people who do not
+[0:06.72] knowiints
+[0:08.96] outskill, which is one of the largest AI
+[0:11.36] education platforms in the world, he
+[0:12.56] runs staying ahead which is the largest
+[0:15.44] AI community in the world where he
+[0:16.96] promises updates every two days where
+[0:18.56] he's engaging with you about the current
+[0:20.32] state of AI. And his mission, which is
+[0:22.40] unique mission, is to help 100 million
+[0:25.76] people learn about AI.
+[0:28.88] influence
+[0:40.16] and we are touching upon things that you
+[0:41.68] know otherwise get very uncomfortable to
+[0:43.20] touch upon because
+[0:45.68] so if you're watching this order
+[0:47.04] yourself some food go out for a walk go
+[0:48.96] to the gym put this in your ears enjoy
+[0:52.32] this freeranging conversation about
+[0:54.32] artificial intelligence with webin and
+[0:56.64] by the way next episode I'm dropping
+[0:58.88] with a sports legend who you know
+[1:02.80] who you know follow for that. Hey guys,
+[1:05.28] I forgot to say if you want to be part
+[1:06.48] of the staying ahead AI community, the
+[1:07.60] link is in the description.
+[1:09.20] >> How much are you into AI?
+[1:11.12] >> Sufficiently. I mean how much should I
+[1:12.64] be?
+[1:12.88] >> What is sufficient?
+[1:14.56] >> Well, I mean I use it every day. Um I am
+[1:16.88] >> Are you rolling?
+[1:17.52] >> Yeah, we are rolling. Okay. I am um I am
+[1:20.88] reading up on at least all the
+[1:22.32] non-technical stuff of it. I listen to
+[1:24.00] Duaresh once in a while so I get a
+[1:25.52] technical understanding of it.
+[1:26.56] >> But you are you a technical guy? No, I'm
+[1:28.32] not. I'm not technically.
+[1:29.28] >> So, you're like me. Script kitty.
+[1:31.68] >> What is the word you used?
+[1:32.96] >> Script kitty.
+[1:33.84] >> Script kitty.
+[1:34.48] >> So, have you been an engineer?
+[1:35.68] >> No, I'm not.
+[1:36.32] >> Okay. So, script kitties are those
+[1:38.00] engineers
+[1:39.28] >> who if they read the line of code, they
+[1:41.36] probably will understand what it is
+[1:42.72] because they studied some code in the
+[1:44.08] past.
+[1:44.40] >> Got it.
+[1:45.28] >> But they have no idea what can do.
+[1:47.28] >> Okay.
+[1:47.68] >> Right. So, you're very good with copying
+[1:49.52] and pasting.
+[1:51.20] >> All right. But you understand so much
+[1:53.44] that copying and pasting of code doesn't
+[1:55.28] scare you. Copy paste.
+[1:57.84] a terminal window uh will not scare you
+[2:00.64] but you have never worked on it so
+[2:02.32] you'll figure you have the ability you
+[2:03.76] have the feeling that I'll figure it out
+[2:06.24] bro what a strange world we live in now
+[2:08.08] man I mean
+[2:10.48] the
+[2:21.20] average
+[2:28.56] that must be a very scary situation. No.
+[2:31.92] >> Yeah, I think uh I mean education has to
+[2:35.68] be redone completely ground up, right?
+[2:38.64] uh path traditional path that has
+[2:40.64] fundamentally changed already but uh I
+[2:43.20] think the world has not realized it. So
+[2:44.88] if you see China and stuff right
+[2:47.60] first sixth grade say I think first
+[2:49.76] grade AI
+[2:53.04] because here's the reality okay if
+[2:54.88] anybody knows what has happened in the
+[2:56.56] next 3 years they're lying
+[2:58.24] >> nobody knows
+[2:58.88] >> nobody knows
+[2:59.68] >> right and yesterday I was meeting Alex
+[3:02.40] Wong Alex Wong is the head of metai
+[3:05.52] right we had a round table
+[3:07.44] >> uh
+[3:08.32] >> and I had I was the only pseudo
+[3:10.64] technical guy in that table so I had the
+[3:13.20] opportunity to ask questions technical
+[3:14.80] questions uh and not look like an idiot
+[3:17.44] because there's nobody better than me in
+[3:19.60] that uh setup. So I asked him a
+[3:21.84] question. Yeah, tell me something.
+[3:24.72] Look, there's a PR vetted answer that
+[3:26.64] you guys give when we ask you what is
+[3:29.28] going to happen to the world, right?
+[3:31.84] >> Every AI researcher like there are
+[3:34.32] papers being published and Elon Musk
+[3:36.48] comes census, we're in singularity and
+[3:38.56] uh we're talking about Dyson spheres and
+[3:40.72] whatnot, right? We're talking about
+[3:42.48] sci-fi stuff that is turning into
+[3:44.32] reality.
+[3:46.32] Has has the government or are you guys
+[3:48.48] having a dialogue with the people on the
+[3:50.72] table on what the [ __ ] will happen to
+[3:53.60] this world two years from now?
+[3:55.52] >> How will economy even work? Yes. If see
+[3:59.12] we've been debating about jobs.
+[4:06.56] The way things are moving there are no
+[4:08.08] jobs. there are going to be very few
+[4:09.36] jobs and those few jobs will also go
+[4:11.60] away because what people are saying have
+[4:14.00] you read about the layers of
+[4:16.32] >> why don't you explain even if I have why
+[4:17.92] don't you explain us like so go through
+[4:19.52] it I
+[4:20.00] >> I'll try to explain I'll connect a lot
+[4:21.92] of dots okay and before I say this
+[4:24.64] frankly
+[4:26.48] this is me reading stuff me geeking out
+[4:28.24] on it okay right so what is the current
+[4:31.44] state current state is AI is pretty good
+[4:33.76] with most of the things right there is
+[4:35.92] something called as uh GDP
+[4:38.32] GDP val is a benchmark which kind of
+[4:41.60] measures AI versus humans on the top
+[4:45.52] skills. So they have picked up 44 jobs
+[4:48.40] which contributes to major chunk of GDP
+[4:50.72] for us right 44 jobs AI it could be
+[4:53.76] accounting nursing finance software some
+[4:56.80] 44 job roles and they give tasks the
+[5:00.00] same task a 10 year experienced uh
+[5:02.16] person in that role does today as a good
+[5:05.84] set of tasks are thrown at AI models
+[5:07.68] okay right now AI is better than better
+[5:11.76] than human in 80% of the tasks and
+[5:14.56] that's not the kicker H
+[5:16.08] >> the kicker is they're thousand times
+[5:18.72] faster
+[5:21.04] much much cheaper.
+[5:22.80] >> Oh [ __ ]
+[5:23.28] >> And that is the case today.
+[5:25.04] >> And this number was 13% 18 months back.
+[5:28.80] So GPT4 which was like oh [ __ ] what is
+[5:31.36] this? That was that score was some 12
+[5:33.52] 13%. 4.6 opus model actually yesterday
+[5:38.16] only 4.6 dropped score 30% higher than
+[5:41.68] the old model. So we are at probably 75
+[5:44.16] 80% of the task AI being better at.
+[5:47.36] >> So when this happens what people were
+[5:49.44] saying for the last one year is yeah
+[5:51.36] take AI is very good at it but there is
+[5:53.52] something that AI is not good with and
+[5:55.44] that is taking decisions because AI is
+[5:57.84] not living and having this conversation.
+[5:59.76] AI is not going around. It doesn't have
+[6:01.76] the human sense.
+[6:03.36] >> So you still need humans to do it. As a
+[6:05.84] result instead of 10 humans doing a job
+[6:08.48] there's going to be one person doing the
+[6:10.00] job with 10 different AIs. or 10
+[6:12.40] different agents. This is a narrative
+[6:14.00] that you have heard. This is a concept
+[6:15.84] called as orchestration.
+[6:17.60] >> You're you're a AI orchestrator.
+[6:19.92] >> The human instead of managing people,
+[6:22.40] they're managing AI agents, which is
+[6:24.00] great. Which made a lot of sense. Now I
+[6:26.08] ask you a question.
+[6:28.48] AI models, have you heard of Merkar?
+[6:30.96] >> No.
+[6:31.44] >> Merkar is this company which does a
+[6:33.52] billion dollars in revenue today. Okay.
+[6:36.56] Panchillo all these large companies what
+[6:39.04] it does is let's say you it wants uh
+[6:42.08] let's say a AI company this is Spotify
+[6:44.48] wants AI to get very good with
+[6:46.64] podcasting so what will it do it will
+[6:49.44] get a plurer and 10 more to come and
+[6:52.40] give uh you know like feedback to
+[6:56.16] Spotify's AI
+[7:00.24] that is reinforcement learning a human
+[7:02.40] is giving feedback to AI so that AI gets
+[7:04.40] better at
+[7:06.16] What happens when a lot of Praers right
+[7:09.20] now AI has figured out podcasting all by
+[7:11.04] itself
+[7:12.80] as a result is still winning but when
+[7:15.44] Praers Joe Rogan and 50 other podcasters
+[7:18.32] in the world come and give feedback to
+[7:19.84] AI saying this is where you're screwing
+[7:21.36] up this is what you get better with what
+[7:23.44] will happen eventually
+[7:26.88] I can't fathom what the job will be
+[7:29.52] >> right I can't imagine nobody has an
+[7:31.36] answer to this everybody says humans
+[7:32.96] evolve but boss I just told you the
+[7:35.20] speed of evolution of AI in 18 months.
+[7:37.84] >> Most of the country thinks AI is
+[7:39.20] tangibility.
+[7:41.36] >> Right? Most of the world countries are
+[7:43.04] wrong. In fact, India is better. By the
+[7:44.72] way, India is better. I'm coming from
+[7:46.56] the air summit. Of course, a lot of
+[7:47.84] things they did is questionable. But
+[7:49.68] because of sure scale things can break,
+[7:51.12] but I've seen some incredible companies
+[7:52.56] coming out as maybe interesting.
+[7:56.80] I believe someone has to figure out the
+[7:59.20] future of [ __ ] economics of how the
+[8:01.36] world works,
+[8:02.00] >> right? how the power law is changing,
+[8:04.72] >> right?
+[8:05.36] >> And power law right now, so far we were
+[8:07.20] talking about 2080, then it became 1090,
+[8:11.28] then it probably became 595. Right now,
+[8:14.16] we're probably at 0.5 and 99.5. I think
+[8:17.92] that's going to equate to 0.001 and rest
+[8:20.56] of the world.
+[8:21.20] >> Right? You have to explain. Let me do
+[8:23.04] that for people. So you are comfortable
+[8:25.12] in Hindi max
+[8:31.68] but the power law thing is basically the
+[8:33.60] tools when technology gets inserted into
+[8:35.68] the struggle of capital people with
+[8:37.52] existing capital make much more money
+[8:39.44] and then people who don't have capital
+[8:40.72] make much less money
+[8:42.80] normal the rich get richer and the poor
+[8:44.64] get poorer that distance will widen
+[8:46.64] because people who have early access to
+[8:48.08] artificial intelligence and all its
+[8:49.36] resources
+[8:51.60] I also think you are Because you know
+[8:54.08] I've been having a lot of conversations
+[8:56.72] about the future of work because
+[8:59.76] timeline level is longterm everything is
+[9:03.20] solved long-term the world autorects
+[9:05.92] population will autorect
+[9:09.20] right like all that but shortterm
+[9:12.00] jobs
+[9:17.04] or political
+[9:19.04] boss that's very dangerous to think of
+[9:22.32] like
+[9:37.92] prompt engineering will be a new job.
+[9:39.44] Prompt engineering. I think prompt
+[9:40.96] engineering is just added contextually
+[9:43.44] pick up. I mean proper engineering is
+[9:45.36] the simplest way of saying orchestration
+[9:47.44] huh language basic of orchestration
+[9:50.48] because the incentive of the artificial
+[9:51.76] intelligence is to understand you
+[9:53.20] without you making too much effort
+[10:03.52] like
+[10:08.56] as a 20ome as a 15 something as a 35
+[10:11.04] something and you deal with people of
+[10:14.00] this type all the time for a lot of
+[10:15.68] people.
+[10:17.68] Exactly. Give me a little brief on that
+[10:20.00] and then
+[10:20.96] >> tell me like what the hell like what the
+[10:23.28] hell that's the mood of the conversation
+[10:24.72] today. Huh.
+[10:25.44] >> Fair. Yeah. Uh see I've been I've been
+[10:28.96] doing too many things uh since the last
+[10:31.04] uh 10 years. I've worked for interesting
+[10:33.76] companies. I've built companies. I've
+[10:35.12] worked for companies like Uber. I've
+[10:37.28] worked for companies like Cluke. Uh did
+[10:39.84] business roles a bunch of them, right?
+[10:42.00] worked in multiple markets uh built a
+[10:44.32] few companies did growth school before
+[10:46.40] right now we are completely focused on
+[10:48.56] outskill
+[10:50.08] what we do at outskill is uh you know
+[10:53.44] teach the world AI right and while I
+[10:56.56] don't think it's a long-term solution to
+[10:58.32] the problem but I do believe that it's a
+[11:00.16] short-term solution uh of figuring out
+[11:02.72] what could be the next thing and that is
+[11:04.08] why we enable people with AI teaching AI
+[11:06.56] right uh and that's the only thing that
+[11:08.32] we do and yeah we teach to people in
+[11:11.68] more than 100 different countries every
+[11:13.28] single month.
+[11:14.08] >> We teach millions of people.
+[11:15.76] >> We have we're trying to make AI
+[11:17.36] education free.
+[11:18.72] >> Uh one that we do is via distribution.
+[11:21.36] What we are doing right now, of course,
+[11:23.12] tapping into your distribution to teach
+[11:24.80] a lot more people about AI.
+[11:26.56] >> Uh and of course, uh there is social and
+[11:29.12] then there is our zoom sessions and
+[11:30.72] stuff like that. So that's what high
+[11:32.16] level I do. So I basically the reason
+[11:34.32] why we able to have this dialogue is
+[11:35.84] because I've been geeking on this for
+[11:37.28] the last two and a half years. I've left
+[11:38.96] everything to just do this right and the
+[11:41.52] reason why I did it is because first
+[11:43.52] time when I used not chat GP but
+[11:46.32] something called as uh code interpreter
+[11:48.48] inside of chat GPD so code interpreter
+[11:51.28] back in couple of years back right after
+[11:53.28] chat GP released 3.5
+[11:57.44] they released a feature called as code
+[11:59.04] interpreter chat GP I was able to dump a
+[12:02.64] CSV file and I was able to say can you
+[12:05.28] analyze and tell me the top insights so
+[12:06.88] this was a couple of years back and when
+[12:08.72] it drew me graphs and charts and gave me
+[12:10.56] insights that my data team would do in
+[12:12.96] like 5 minutes I'm like
+[12:15.28] >> this is 2 years back
+[12:16.40] >> right
+[12:16.88] >> and since then I'm saying boss what is
+[12:19.44] going to happen to jobs because I saw it
+[12:21.12] write code at speed that no human can
+[12:23.76] even imagine
+[12:26.32] >> right right completely
+[12:27.60] >> and this was two years back so since
+[12:29.44] then till now I've been tracking I've
+[12:31.12] been seeing I've been reading I've been
+[12:32.64] geeking on what hap what is happening in
+[12:34.96] the world of AI and been playing with it
+[12:36.72] on top of
+[12:38.24] Right. So that puts me I believe in an
+[12:40.64] interesting position to kind of gauge
+[12:43.60] >> what could be the thing and I also
+[12:44.80] happen to run a 200 member company. So I
+[12:46.88] am also seeing how business how roles
+[12:49.68] are evolving inside of my company. How
+[12:52.08] my product designer
+[12:53.60] >> is able to ship a full app who someone
+[12:58.08] who was sitting on Figma right now
+[12:59.84] shipping an app which is in production
+[13:01.68] being used by users. How a intern who
+[13:04.64] joined 6 months back has built a system
+[13:06.96] that is being used by half a million
+[13:08.48] people in our uh of our users without a
+[13:10.88] software engineer.
+[13:12.80] Right? How people different kind how
+[13:14.96] marketers have become video guys who are
+[13:17.76] doing creative strategy and creating
+[13:19.44] visuals and creatives all by themselves
+[13:22.24] while before this they were just writing
+[13:23.84] copy.
+[13:25.76] How a head of performance marketing kind
+[13:28.40] of runs performance marketing via MCPs
+[13:30.72] and AI agents rather than more humans.
+[13:33.84] The world as we know it is changing in
+[13:35.84] front of us.
+[13:37.20] >> And what what puts me in this position
+[13:39.36] and what makes me
+[13:43.60] most of the people either are ignorant
+[13:46.08] about it because they're too scared of
+[13:47.52] it of accepting it or two is they just
+[13:51.04] don't realize what's happening. And both
+[13:53.60] of these guys have to be told boss if
+[13:56.08] everything was right
+[13:58.40] >> right let's say I'm wrong and I hope I'm
+[14:00.08] wrong. Let's say you're wrong and I hope
+[14:01.44] you're wrong. But it's not our thoughts.
+[14:04.96] We are reciprocating what we are
+[14:07.36] reading. I'm I'm reading what a Elon is
+[14:10.00] saying. I'm reading what a Sam is
+[14:11.20] saying. I'm I'm reading what I Yan Lakun
+[14:13.76] is saying. Right. I'm I'm saying basis
+[14:17.20] of what I'm hearing from people. And
+[14:18.96] most of the people don't have an
+[14:20.08] incentive to lie.
+[14:22.16] In fact, they have an incentive to
+[14:24.16] compress the facts.
+[14:25.04] >> Yeah. Minimize it.
+[14:25.84] >> Minimize it.
+[14:27.36] >> Which they have been doing for a very
+[14:28.72] long time, which is a sad part,
+[14:30.80] >> right? They have been trying to say this
+[14:33.12] because
+[14:37.68] nobody wants Trump to come and say that
+[14:40.64] you know what let's stop it while he
+[14:42.24] can't do it because China will screw
+[14:43.68] their asses right there's a competitive
+[14:45.92] angle to it and there isology
+[14:52.40] competitive forces
+[14:57.44] that just outweigh everything else
+[14:59.04] >> I think we are out of that uh question
+[15:00.72] also Huh?
+[15:01.36] >> There is no like back in the day. I I
+[15:04.16] don't know if you have read this that
+[15:05.44] Elon Musk and all these people signed
+[15:07.44] saying we should slow down AI pace.
+[15:09.84] >> I think so. I think so. Yes.
+[15:16.00] You're right.
+[15:25.36] The game that is playing is on a
+[15:26.72] different league. You see the world
+[15:28.64] order is changing.
+[15:30.24] Yeah. Yeah. But you know what is very
+[15:32.00] interesting about what you were just
+[15:33.44] saying right now about how performance
+[15:35.68] marketers have an ascension in their
+[15:37.44] role. Yeah. Um somebody who was doing
+[15:39.68] growth is now doing creative also.
+[15:41.20] Somebody doing PM is now suddenly also
+[15:43.76] building products.
+[15:44.80] >> So is like the short-term future of work
+[15:47.92] in artificial intelligence just
+[15:49.44] ascension key all tasks include okay
+[15:52.48] suddenly I have a whole role as opposed
+[15:54.64] to a partial sliver.
+[15:56.88] >> I think so. I believe so. I truly
+[15:58.88] believe in that because I'm seeing
+[16:00.16] incredible results in that level of
+[16:01.92] optimization because I believe you know
+[16:05.04] everybody has to become something called
+[16:06.40] as an AI generalist
+[16:08.16] >> who are generalists generalists are
+[16:09.60] problem solvers right and problem
+[16:11.84] solving as a generalist was confined to
+[16:15.04] the skills that you had before
+[16:19.20] content creator
+[16:23.68] to streamline your podcasting service
+[16:26.00] right it is confined to a point before
+[16:28.00] even though you are a strong generalist
+[16:29.76] but AI just break those barriers you can
+[16:33.28] do anything you want I was just having
+[16:34.96] dinner uh sorry lunch before I came here
+[16:37.12] and I met a couple of uh kids working
+[16:38.88] for a startup that I don't want to name
+[16:40.96] uh and they saw me and they were excited
+[16:42.96] and I asked them what do you do what do
+[16:44.56] you guys do one person is a PM product
+[16:46.40] manager and the other person is a
+[16:47.76] marketing manager and I saw the screens
+[16:49.84] set around both of them had VS code on
+[16:51.92] VS code is a ID where software engineers
+[16:53.84] write code both of them had VS code on I
+[16:56.32] was like you guys have VS code on I was
+[16:57.92] like yeah we are uh vip coding a product
+[17:01.12] to solve uh basically this company has
+[17:04.40] hundreds of YouTube channels and they're
+[17:06.48] not able to figure out what is the
+[17:08.48] insight from each of the comment that's
+[17:10.16] coming because they're getting tens of
+[17:11.28] thousands of comments so one product
+[17:13.12] manager one marketing manager look at
+[17:14.48] the combination are sitting and building
+[17:16.00] a product to understand what their
+[17:18.24] audiences are saying which is supposedly
+[17:20.88] a software engineer and a aim engineer's
+[17:23.44] job
+[17:25.44] >> a marketing manager or a product manager
+[17:30.80] I was so happy to see this.
+[17:32.00] >> What they're basically doing at that
+[17:33.20] point is probably giving requirement to
+[17:35.76] something like a cursor or whatever and
+[17:37.68] or clawed or whatever and then it is
+[17:39.28] producing the code that they're then
+[17:40.56] running.
+[17:41.04] >> Yes.
+[17:42.24] >> Wow.
+[17:42.64] >> Yes.
+[17:43.04] >> Right.
+[17:43.60] >> Yes.
+[17:44.08] >> It's a different language by the way
+[17:45.44] altogether. It's a language that they do
+[17:47.20] not speak necessarily.
+[17:48.24] >> They don't understand what's happening
+[17:51.84] but it is producing digital
+[17:53.44] infrastructure at this point. And the
+[17:55.52] cost of producing digital infrastructure
+[17:57.12] has gone to close to zero.
+[17:58.72] >> Yeah, it's the cost of inference is
+[18:00.40] going to zero. Like yeah, I was reading
+[18:02.24] one more stat today as I was coming to
+[18:04.00] this part. Uh Sam Alman just said that
+[18:07.28] India hit 100 million monthly active
+[18:09.84] users on chat GPT. 100 million
+[18:14.64] on just chat GPT right now.
+[18:19.76] >> What does that mean?
+[18:20.72] >> What does that mean? That basically
+[18:22.32] means that every 100 million people in
+[18:24.08] the country today
+[18:25.68] >> that is 20% of people who have access to
+[18:28.24] internet have an access to a superpower.
+[18:32.32] >> That's a very interesting statistic
+[18:33.84] >> that is democratization of knowledge
+[18:38.24] at billion scale.
+[18:40.56] >> Sure. Right. Huh. So like everybody from
+[18:45.84] a farmer to a carpenter to my caretaker
+[18:50.56] uh you know who now so my grandmother
+[18:53.52] has caretaker she speaks in Canada she
+[18:57.04] opens up Gemini and says auntie is
+[19:00.48] feeling like this in in Canada
+[19:03.92] >> what should I take as the next step in
+[19:06.24] the night
+[19:08.16] when nobody's up let's say I'm not
+[19:09.68] allowed
+[19:10.08] >> right
+[19:10.72] >> I just taught her tap on this button say
+[19:13.68] and Gemini says says it out saying okay
+[19:16.00] you know what give her a massage it's
+[19:17.36] for my grandma right
+[19:18.64] >> give her give her a leg massage and do
+[19:20.32] it like this in Canada
+[19:21.92] >> in Canada
+[19:22.64] >> in Canada
+[19:23.28] >> that's crazy
+[19:23.92] >> yeah it's not perfect multilingual is
+[19:25.76] not perfect Indian languages perfect
+[19:28.00] that is where AI for Bat and Joe talks
+[19:30.80] and serving a lot of work together to
+[19:33.92] build India stack but
+[19:37.52] technological
+[19:38.88] >> democratization you get my point I'll
+[19:41.44] tell you one more huh I have Sep who's
+[19:43.12] my cook
+[19:44.48] >> right uh protein shake I'm done I don't
+[19:48.56] want to drink more protein shakes right
+[19:50.16] I've tried every bloody protein shake in
+[19:51.60] the world right
+[19:52.40] >> now I've given him protein milk
+[19:56.72] and I is which is 50 g of protein done
+[19:59.52] for the day
+[20:00.80] >> and now he just goes to chat GPT or
+[20:04.00] something turns on voice because he
+[20:05.20] doesn't know how to type
+[20:07.20] WhatsApp
+[20:18.48] recipe. Every 3 days he surprises me
+[20:20.64] with a new recipe of protein
+[20:22.24] >> of protein.
+[20:26.48] Two days back he got strawberries,
+[20:29.12] raspberries or something like that and
+[20:31.44] some cumin powder something.
+[20:36.56] This is like a bloody milkshake, right?
+[20:47.04] >> It's crazy.
+[20:47.76] >> Yeah. May I was having um you know a lot
+[20:50.64] of our jobs are sitting down and sitting
+[20:52.64] down over a long period of time will
+[20:54.08] begin to hurt your neck and your back
+[20:55.60] and overall you realize
+[20:58.88] >> well I have some postural discomfort
+[21:02.80] >> for a year I was struggling with like
+[21:04.56] going to physios and trying to
+[21:05.84] understand and I did get a handle issue
+[21:10.56] we to come up with a system in my busy
+[21:13.20] schedule
+[21:16.48] of just stretches by the stretches and
+[21:18.48] strengthening.
+[21:28.08] It's like command prompt window back in
+[21:29.60] the day in 1997 before Windows came
+[21:32.08] about
+[21:37.04] reality
+[21:38.72] and boss I am I feel like a new man
+[21:47.44] and then you should do this kind of
+[21:48.72] strengthening and that kind of
+[21:49.68] strengthening idea generation
+[21:53.44] I feel like it's infinite my wife
+[21:55.20] actually you know when she's uh painting
+[21:57.36] she will use it to understand what
+[21:58.88] colors to mix to produce special
+[22:00.24] effects.
+[22:00.80] >> Beautiful.
+[22:01.44] >> I don't understand the technicality of
+[22:02.88] painting that well, but like Uska, it's
+[22:05.04] an active. There's three people in the
+[22:06.56] room.
+[22:07.12] >> There is the subject that she's
+[22:08.24] painting. There is a painter itself and
+[22:09.60] then bloody chat who she's like talking
+[22:12.24] to constantly figuring out how she wants
+[22:14.24] to express herself.
+[22:15.52] >> And
+[22:20.16] friend at this point, it's a friend with
+[22:22.48] infinite ideas. That's what it's come to
+[22:24.00] be. It's an assistant if you want it to
+[22:25.28] be. It's a friend if you want it to be.
+[22:26.72] It's a it's a EA if you want it to be
+[22:28.64] something of that nature, right? That's
+[22:30.00] what it's acquiring as a space.
+[22:31.68] >> After having spent a lot of time also on
+[22:33.44] it for personal use, I found
+[22:37.76] over a long period of time. So like at a
+[22:40.16] certain level of depth
+[22:44.32] after seven, eight corrections to my
+[22:46.48] stretching routine, it forgot what the
+[22:48.32] original use case of the stretch was. So
+[22:50.40] that taste or judgment because I look at
+[22:55.36] it from my profession.
+[22:57.60] My profession operates on personality to
+[22:59.92] some extent. It operates on systems and
+[23:02.32] optics.
+[23:04.08] Personality, taste, and judgment. That's
+[23:06.16] what my game's about.
+[23:10.32] It by nature is a game of non-verages. M
+[23:13.68] like there are certain games you play
+[23:15.84] non average wins and I feel like are
+[23:20.08] >> what do you mean by non-verages wins?
+[23:22.88] As a trader, say I trade the stock
+[23:25.04] market, right?
+[23:26.16] >> If I have the same information as
+[23:27.68] everybody else, there is nothing
+[23:29.28] exceptional I will do.
+[23:30.24] >> Got it. Got it. What is your edge?
+[23:32.24] >> Right. You need that sort of edge. The
+[23:35.20] market is moving in that direction.
+[23:37.36] Artificial intelligence. That is
+[23:39.52] something that the AI is not predicting
+[23:41.12] yet. You know, at least the ones that we
+[23:42.96] have access to because they are very
+[23:44.32] generalized. Maybe you're smiling at me
+[23:46.00] like I'm wrong. You're smiling at me
+[23:48.08] like I'm [ __ ] wrong. So tell me if I
+[23:50.32] don't know properly because
+[23:53.12] I don't think you can have super
+[23:54.56] intelligence democratized. I think
+[23:57.12] intelligence
+[23:59.04] layer like everybody has it then you
+[24:01.52] need something else as a competitive
+[24:02.80] advantage. No am I never about the tool.
+[24:04.96] It's about how you use the tool.
+[24:06.24] >> Tell me more right again like you know
+[24:10.32] your girlfriend uh does painting with
+[24:12.64] the same paintbrush that you can try to
+[24:14.96] do the same painting. No way. You can't
+[24:16.88] right? Like there's no way you'll get
+[24:18.24] there.
+[24:19.44] to generalize a statement that I made
+[24:21.36] but the thing with AI is what they have
+[24:24.16] done so far is how can anyone in the
+[24:26.80] world can use the product is what
+[24:28.40] they're optimizing for right you're
+[24:30.40] right on that level everybody has the
+[24:32.00] same tool if you ask it to write uh do a
+[24:34.80] research on the questions that I should
+[24:36.16] ask web hub like it'll give you a list
+[24:38.64] of questions and it'll probably give a
+[24:40.16] similar question to 10 more people who
+[24:41.68] ask how do you take it to one level x
+[24:43.84] one level one level more hey you know
+[24:46.56] what webhub is coming for this podcast.
+[24:49.20] Why don't you go through all the shots
+[24:50.96] of mine that I've ever created around
+[24:53.20] tech and AI pick up the comments basis
+[24:55.12] of that frame the questions that is
+[24:57.36] second layer of
+[24:59.52] better prompting or better pushing the
+[25:02.40] system to think the third layer of thing
+[25:05.12] is hey web has done so many podcasts he
+[25:07.84] has so much content go through all of
+[25:09.68] his comments podcast of his comments
+[25:12.00] podcast of his shorts and reels pull out
+[25:14.40] all the top questions that has come in
+[25:16.00] pull out the things that have done Well,
+[25:18.24] I want to add my flavor to it and then
+[25:20.40] build a question that gets to a better
+[25:22.40] layer of questioning even further. I you
+[25:24.88] can take it to even next level saying
+[25:26.80] there are some big voices
+[25:29.36] of AI coming in. So not just this
+[25:32.72] information of what has worked well and
+[25:34.32] what what webhouse audience what my
+[25:36.08] audience are asking but actually go into
+[25:38.64] Reddit and go into threads of Reddit
+[25:41.36] which is getting the highest amount of
+[25:43.60] negativity in terms of people being
+[25:45.44] scared about people need answers that
+[25:47.12] they don't have. Find me those questions
+[25:49.12] as well which is datadriven.
+[25:51.28] Now the same tool that you're using can
+[25:53.44] do all of this.
+[25:55.52] >> It's just that we don't know how to make
+[25:57.28] them happen. It's the same paintbrush,
+[25:58.88] but your girlfriend figured out that she
+[26:00.96] can use AI to mix two colors to give a
+[26:03.20] effect that you can't even comprehend.
+[26:04.88] Right. Because you are not an artist.
+[26:06.40] >> Right.
+[26:06.88] >> Right. With AI, the m the more we stay
+[26:09.36] on superficial levels. That is where it
+[26:11.68] stays. You have to push it.
+[26:13.28] >> You have to push it. You have to ask
+[26:14.72] more. You you have to say that I I don't
+[26:17.28] like this. What more can I do? Give me
+[26:19.44] more ideas. How can I make it better?
+[26:21.36] And it does help you make it better. Now
+[26:23.84] as I say this thing coming to the point
+[26:26.16] of hey it forgets context it's a
+[26:28.96] technical
+[26:30.72] problem every AI model has something
+[26:33.28] called as a context window have you
+[26:34.80] heard of context window context window
+[26:36.32] is see AI has AI is like a gaji right
+[26:40.96] information
+[26:43.12] most of the context windows are under
+[26:44.72] 200k tokens so the okay simply saying
+[26:47.60] let's say more than two books of
+[26:49.52] information if you go beyond it what was
+[26:51.36] said before it forgets
+[26:53.28] So it's it's called context window. How
+[26:55.20] much can it remember?
+[26:59.04] Let's say I'm assuming what you would
+[27:00.72] have done is you opened up a chat GP or
+[27:03.20] a Gemini or a Claude window let's say
+[27:05.28] Gemini in this case and you started to
+[27:07.04] talk to it.
+[27:13.52] So
+[27:15.44] that has gone beyond its context window.
+[27:18.00] Now there are two ways to solve this.
+[27:19.92] One is that your general tools use these
+[27:22.88] are consumer grade tools that is for
+[27:24.56] people like you, me and also Sundep
+[27:26.72] >> right everybody should be able to use it
+[27:28.48] so it by default comes with a lower
+[27:30.56] context window because of cost
+[27:31.84] optimization
+[27:34.00] but most of these models like anthropic
+[27:35.92] and all all of them have have hit a
+[27:37.52] million context window
+[27:39.92] memory is already five six 10 times
+[27:41.76] better but expensive as a result open
+[27:49.12] and you would have used the right API
+[27:50.64] there then this problem would not have
+[27:52.56] happened
+[27:53.44] >> but the best solution to context window
+[27:56.32] actually is to use a project
+[27:59.44] >> got it
+[28:00.08] >> claw project
+[28:01.20] >> right right
+[28:01.68] >> uh Gemini may there's something called
+[28:02.80] as Gemini gems
+[28:03.76] >> right
+[28:04.16] >> chat GPT has something called as
+[28:05.76] projects or chat GP also has something
+[28:07.52] called as custom GPS
+[28:09.68] >> just may you can write a prompt prompt
+[28:12.80] is not anything you don't have to go any
+[28:14.56] scientific you just talk about let's say
+[28:16.40] you had a nice conversation you got it
+[28:18.80] for the first time that AI nailed it.
+[28:21.76] Okay, to converse, it figured out the
+[28:24.08] way around it. AI nailed it. Then you
+[28:26.00] just say, look, you got all the context.
+[28:29.20] Make sure you convert everything that
+[28:30.96] I've just told you into a reusable
+[28:33.76] prompt that I can use inside of a
+[28:37.36] project. So what will AI do is for all
+[28:39.60] the conversation it has had so far,
+[28:41.84] >> it will condense all of that into a
+[28:43.60] prompt. You take that prompt, go to
+[28:45.76] chat, GP projects, sidebar. Yeah, Gemini
+[28:49.04] gems. Yeah, claw project. Whichever tool
+[28:51.28] you're using, there's always a box
+[28:53.20] called instructions. You just dump it
+[28:55.20] there.
+[28:56.96] Now, the base context is set. No matter
+[29:00.16] how many times you use that project, it
+[29:02.64] always goes back to that same book.
+[29:05.12] >> Ah, got it.
+[29:06.80] >> So, the information is retained as a
+[29:09.76] result context breaking. Every time you
+[29:12.24] found a new insight and I do this if I'm
+[29:14.24] using a project and I believe that I've
+[29:16.40] given it new instructions new insight I
+[29:18.96] say can you tell me what are the new
+[29:21.92] things that I just told you it'll again
+[29:24.72] give you an insight you copy and paste
+[29:25.92] that inside the instructions again
+[29:27.68] >> so you're building your workbook
+[29:30.72] >> instruction book
+[29:32.16] >> very interesting
+[29:33.04] >> so this is technically called as a rag
+[29:35.76] right but the simplest language for all
+[29:38.40] these commercial grade products are
+[29:40.08] essentially uh like I told you
+[29:42.72] >> memory window
+[29:43.44] >> uh it's it's a it's a instruction and on
+[29:45.92] top of that right now
+[29:48.88] memory is actually slightly different
+[29:50.96] right like memory is remembering the
+[29:53.20] nuance of things across
+[29:55.36] >> got it context is more shortterm
+[29:57.92] >> context is how much it can remember over
+[30:00.08] a course of time got it
+[30:01.44] >> right uh after a point of time so memory
+[30:04.72] and instructions every time you send a
+[30:07.36] question it doesn't answer it goes and
+[30:10.32] reads the instructions first. It goes
+[30:12.24] and reads your memory first to remind
+[30:14.48] itself what exactly it is supposed to
+[30:17.28] do. So it never forgets.
+[30:19.68] Sometimes it does. So you just have to
+[30:21.20] say, can you make sure you read the
+[30:22.72] instructions again?
+[30:23.60] >> Right.
+[30:24.08] >> And it just works.
+[30:25.12] >> It's pretty funny if you prompt your
+[30:26.72] artificial intelligence with uh extreme,
+[30:32.40] it behaves very differently. Yeah. And
+[30:35.52] so it kind of replicates the human
+[30:37.92] emotion.
+[30:40.64] And it's so funny when you're typing it,
+[30:43.04] you're like
+[30:46.56] and it gives it gives a different
+[30:48.24] response. The there is also some kind of
+[30:52.88] deep research mode you can access. For
+[30:55.52] instance, GPD has reason mode, right?
+[30:57.20] Like where it where it does like
+[30:58.80] analytical stuff and it explains why
+[31:00.56] it's thinking. And I remember the first
+[31:02.24] time I came across that it was kind of
+[31:04.32] like bro
+[31:06.48] like for the first time bro I've read
+[31:07.92] all the books you can think in the world
+[31:09.28] right like I'm very fond for the first
+[31:10.96] time I read something and I was like
+[31:12.32] this makes no sense to me this is such
+[31:14.96] advanced knowledge and now you can laugh
+[31:18.32] about it in hindsight the minute you're
+[31:19.92] first exposed to something like this
+[31:21.36] it's fairly scary and um
+[31:24.00] >> I think the short-term good news is this
+[31:26.16] is a tool but
+[31:28.40] >> I wonder you talked to a lot of people
+[31:30.64] who who are using or beginning to use
+[31:33.12] artificial intelligence what do you
+[31:34.56] observe about them like how are they
+[31:35.92] using it where what is what are some
+[31:38.24] things they can do to make it better etc
+[31:40.88] I think
+[31:42.96] the best use of tech so far of AI has
+[31:46.32] been on offloading a lot of thinking
+[31:52.56] right outsourcing thinking to AI it's
+[31:57.52] like working with AI or thinking with AI
+[32:00.08] you know what you want to do uh but you
+[32:03.20] want to get that get that AI's reasoning
+[32:05.84] model to think for you deeper
+[32:08.56] then you can because you cannot sit and
+[32:11.20] read 25 articles
+[32:13.28] so people who've been outsourcing that
+[32:15.12] thinking hey I'm thinking of uh you know
+[32:19.04] answering this question to Praar's
+[32:20.88] question
+[32:22.56] what do you think about the answer
+[32:24.80] >> first is it factually correct because I
+[32:27.76] might have read something else and I'm
+[32:29.12] telling something So is it factually
+[32:31.12] correct? Two, can you quickly get me two
+[32:33.52] three data points? These are my original
+[32:35.52] thoughts though, right? But can you get
+[32:37.04] me two three data points that validates
+[32:38.72] this?
+[32:39.52] >> So this is outsourcing of thinking,
+[32:42.24] right? And I see this people doing
+[32:43.76] across for different things like voice
+[32:45.68] mode is a powerful way to do it. A lot
+[32:47.36] of tech guys or in fact in my team the
+[32:50.08] sub tech guys like uh they operate like
+[32:52.40] tech guys. So a lot of this thinking
+[32:54.64] happens while building products also. So
+[32:56.48] I'm thinking of taking this approach.
+[32:59.44] What do you think? And oh yeah that's a
+[33:00.96] great way to go about it. They'll say
+[33:02.08] okay implement it now.
+[33:03.76] >> Right? So that outsourcing understanding
+[33:06.00] how you can outsource thinking is a very
+[33:08.16] interesting thing to do. What you should
+[33:10.00] not do
+[33:11.92] is allow AI to do all the work. So there
+[33:15.60] are two ways of going about it. Give me
+[33:17.44] answer to this question or which is a
+[33:20.72] wrong way to do. The right way to do is
+[33:22.56] this is what I'm thinking to answer this
+[33:25.04] question. Tell me how good am I or how
+[33:28.56] can I make it better?
+[33:31.12] Right? This is working with AI to the
+[33:33.84] first option is just giving the work to
+[33:35.36] AI. The moment you give work to AI, your
+[33:38.08] brain becomes a rot space. Right? You
+[33:40.16] stop thinking. Your ability to think
+[33:42.48] goes away goes to donkeys. And there
+[33:44.32] have been researchers, right? You must
+[33:45.44] have read that MIT research where uh you
+[33:48.00] know the cognitive ability of humans who
+[33:50.08] use a lot of AI to outsource in a way
+[33:52.80] that that they're not thinking anymore.
+[33:54.56] They're giving air to think. Their
+[33:56.72] cognitive ability is shrinking. It's
+[33:58.56] going down.
+[33:59.12] >> And it is already measurable.
+[34:00.80] >> It is I mean they have how they measure.
+[34:02.96] >> Can you look up the study?
+[34:03.84] >> Look up the study MIT study
+[34:07.12] one and a half years. In fact, there's a
+[34:08.64] recent study that happened on coding.
+[34:11.12] This is specifically on coding. And I'll
+[34:12.72] tell you before I go go into the coding
+[34:15.04] thing. The reason why coding is a very
+[34:16.96] very any study that happens on coding is
+[34:18.88] very interesting and is relevant to
+[34:20.80] everyone not just software engineers is
+[34:23.04] because the world on the internet runs
+[34:24.80] on code. It's just that we are not
+[34:27.12] surfaced to it.
+[34:29.12] >> Right. You don't write code to edit your
+[34:31.04] videos but it runs on the code in the
+[34:32.80] back end.
+[34:33.36] >> So anything any study on code is
+[34:35.12] actually relevant to everyone who is
+[34:37.44] working in the knowledge economy.
+[34:38.96] >> Right. Right now this coding study
+[34:42.88] failed to remember who did it quite
+[34:44.72] frankly. You can look it up again. What
+[34:47.12] they did was uh they gave a problem
+[34:48.88] statement uh to two sets of people.
+[35:00.08] were able to ship the product much
+[35:01.52] faster. People who didn't have AI, they
+[35:04.08] had to learn. Both of them had to learn
+[35:05.60] and do it. These guys took the time to
+[35:07.84] learn without AI and eventually ship the
+[35:09.76] product. Obviously, people with AI were
+[35:11.84] much faster, which is great news, right?
+[35:13.60] But then a follow-up question on when
+[35:15.68] something breaks and someone were asked
+[35:17.76] a question on the system that they
+[35:20.08] built. People who built with AI
+[35:22.48] struggled to solve for it. They could
+[35:24.80] not fix a bug. They could not figure out
+[35:26.80] how to make the changes. But the people
+[35:29.28] who did it themselves were much better
+[35:31.60] at it. Though they were fast. Now in the
+[35:34.00] bucket of people who used code or who
+[35:36.80] used AI to build it, there were two
+[35:38.48] kinds of people. One who just got AI to
+[35:41.76] do everything for themselves. They are
+[35:43.12] the guys who suck donkeys. But there's
+[35:45.44] another set of people who took the
+[35:47.12] approach of understanding what the
+[35:49.60] problem is with AI figuring out what AI
+[35:52.96] is actually doing and working with it
+[35:55.76] where actually the best out of these
+[35:57.20] three lots.
+[35:59.36] >> So it's not alone it's not only AI it's
+[36:01.76] that AI right okay
+[36:03.28] >> it's with AI
+[36:04.48] >> are the people who did it. So there's a
+[36:06.64] fine line that you have to draw. So when
+[36:08.80] interns and all these kids join, right?
+[36:10.72] In the orientation, I say one thing. If
+[36:13.28] you not if you are someone who will not
+[36:15.52] use AI, you will not be in this company
+[36:17.20] for a very long time. But if you are
+[36:19.36] someone who use only AI, you'll not be
+[36:22.24] good enough to be in any company in the
+[36:23.92] world.
+[36:24.88] >> You have to find that middle ground.
+[36:26.56] That's very interesting and that's very
+[36:27.84] well said actually. I think it is um you
+[36:30.96] know I was reading this about um
+[36:33.20] lawyers. I come from
+[36:35.68] >> a lot of people in my family are
+[36:36.96] lawyers. So uh I almost also became a
+[36:41.20] lawyer.
+[36:42.16] The context is
+[36:48.00] right.
+[36:53.52] Right. Spiritually
+[36:57.84] I was reading this. I think the chief
+[36:59.44] justice from the chief justice Supreme
+[37:00.88] Court said something. They're writing
+[37:03.04] their petitions. Lawyers are writing it
+[37:04.56] in using AI and it's just producing
+[37:07.12] [ __ ]
+[37:07.76] >> What is that? Mankind versus
+[37:09.36] >> mercy. Mercy versus mankind. And it's
+[37:12.32] producing some [ __ ] case like case
+[37:14.16] laws and whatever and inserting it. It
+[37:16.32] is uh AI did something where it quoted a
+[37:18.88] judgment written by some other judge
+[37:21.28] where the judge has not said anything of
+[37:22.80] that nature at all. cross referencing
+[37:24.72] paper. So,
+[37:28.88] but it has never come out of his mouth
+[37:34.88] and he realizes
+[37:37.20] you would bake something into law that
+[37:39.60] only AI imagined and
+[37:44.72] right and so the the chief justice was
+[37:47.36] well obviously angry annoyed at the fact
+[37:50.96] >> but it's very well said key no matter
+[37:54.24] what person of what age
+[37:57.04] they are asking me about artificial
+[37:59.76] intelligence or even social class like
+[38:01.36] my driver sitting be like
+[38:04.16] right
+[38:08.16] crazy but
+[38:10.40] voice through he will find a way to
+[38:11.84] access it also but it's kind of like
+[38:15.28] magic and it's going to invade every
+[38:16.80] part of our lives and so we have to find
+[38:18.40] a way to work with it that is not
+[38:23.68] there has to be that sort of element
+[38:25.04] Right. Yeah. Very interesting.
+[38:26.24] >> And it's not just India. I think this is
+[38:28.48] uh lawyers being very lazy on not having
+[38:31.52] a paid account of a tool. I guess
+[38:33.84] because while hination is true ease
+[38:37.04] where it quoted things that didn't
+[38:38.48] exist,
+[38:39.68] >> this is where it becomes important for
+[38:41.60] you to have the knowledge of using the
+[38:44.40] right tool for the right task.
+[38:46.80] >> You cannot just throw like you cannot
+[38:49.92] just be that person who will just ask a
+[38:51.68] question and get an answer and use it.
+[38:53.20] >> Right.
+[38:53.76] >> Right. citations and all these used to
+[38:56.24] be problems before. They're not so much
+[38:58.00] of a problem anymore
+[38:59.44] >> because of features like deep research
+[39:01.60] and all which builds everything
+[39:05.28] >> basis of available information to
+[39:08.64] notebook type tool if I had to do
+[39:11.68] something with law in fact I have done a
+[39:13.68] few things companies you know what
+[39:15.20] happens right so I need to be a micro
+[39:17.92] lawyer myself every founder has to be
+[39:20.48] >> so basically I have my notebook LM set
+[39:22.80] up where I have fed in every corporate
+[39:26.56] locker uh stuff and I keep doing deep
+[39:28.88] research to keep adding sources of you
+[39:31.04] know citations of case laws and all of
+[39:33.28] that and I query that knowledge rather
+[39:36.40] than open chat GP knowledge.
+[39:39.52] So any question any answer that comes
+[39:41.36] for any question comes from this rather
+[39:44.40] than the open word as a result
+[39:45.92] hallucination fundamentally goes down
+[39:48.48] >> wrong citations
+[39:49.92] >> to fix this
+[39:51.60] >> the way I you the way I operate when it
+[39:53.92] comes to I can't be wrong in this is I
+[39:56.56] don't rely on one model
+[39:57.84] >> okay
+[39:58.32] >> answer
+[40:00.32] I will basically go to a claude
+[40:02.80] >> turn on the extended thinking and turn
+[40:04.40] on the research mode on and I'll say
+[40:06.40] these are the facts vet it and tell me
+[40:09.20] how many of them are correct, how many
+[40:10.64] of them are wrong or how many of them
+[40:12.24] are directionally correct.
+[40:14.16] >> I want to have understanding of all of
+[40:15.84] this and it gives me the second layer of
+[40:17.84] vetting. SN AI cannot do it. It's just
+[40:20.64] that you don't understand how to use AI
+[40:22.56] to do it in the right way.
+[40:24.16] >> That's it.
+[40:25.52] >> Right? Because I have seen this
+[40:27.28] screw-ups being done not just by lawyers
+[40:29.04] man like Deoid Consulting has published
+[40:31.84] a report for US I think for Fed, right?
+[40:36.32] Which was which had all wrong citations.
+[40:38.24] They were fined. Deoid was fined for
+[40:40.08] this.
+[40:40.88] >> So I was sitting with a guy. I mean I
+[40:43.12] turned around and he was making this
+[40:44.88] fancy deck. I didn't know who he was.
+[40:46.72] And he was switching between uh chat GPT
+[40:49.52] and deck chat GP. Copy paste copy paste
+[40:51.36] copy paste.
+[40:54.16] He was like I'm a VP in this consulting
+[40:56.08] firm and I'm going for a presentation
+[40:58.56] for a client and hence I'm doing but
+[41:00.48] you're using AI bro for everything. Yeah
+[41:02.32] that's what we do. Then why do people
+[41:04.32] pay you? and he turns around and like
+[41:05.84] look man I don't want to say this but
+[41:07.84] the reality is that people pay us
+[41:09.52] because they don't know how to use AI
+[41:10.72] anymore
+[41:11.52] >> really that's that's what he throws
+[41:13.28] around and goes back to his work
+[41:16.00] >> wow
+[41:17.68] it almost sounds like a and say the
+[41:20.56] producer is using AI and say the
+[41:22.56] consumer is using AI like you know the
+[41:24.00] funny instance is I am texting somebody
+[41:26.00] for something and I'm using AI to text
+[41:28.08] them and they're texting me back using
+[41:29.60] chat GPD prompt and so eventually
+[41:32.08] computer computers
+[41:35.28] you're just like performing, right? Um,
+[41:37.60] >> orchestrating.
+[41:38.48] >> Orchestrating is a big word at that
+[41:39.92] point, boss. Like, you know, I think one
+[41:41.44] of the mistakes that freshers use,
+[41:43.20] freshers do when they're using
+[41:44.32] artificial intelligence is they use it
+[41:46.00] in communication. And I think it's such
+[41:48.00] an instant distrust signal.
+[41:58.72] You'll tell me these are my thoughts. I
+[42:00.16] just used AI to compress them. You're
+[42:02.00] making a fundamental social mistake
+[42:03.52] here. I will not be able to trust your
+[42:05.12] intelligence because you mastered it
+[42:06.40] behind AI very early like at least or
+[42:10.40] >> I think it goes back to the theme of
+[42:12.24] supplementing what you know
+[42:14.72] >> adding AI into the workflow as opposed
+[42:16.88] to AI becoming the workflow itself at
+[42:19.28] least in these realms. Right.
+[42:21.12] >> Fair. I think I think I think we're so
+[42:23.20] early to these things that I think our
+[42:24.96] judgments will also evolve.
+[42:26.32] >> That's a good point.
+[42:27.20] >> Right. Uh Mdash does annoy me. Right? Uh
+[42:31.84] when I see emails, when I get cold
+[42:33.44] emails and all, but I also realize that
+[42:36.56] without that mdash, if the person would
+[42:38.16] have written the email, I hope that it
+[42:39.68] was his knowledge or her knowledge and
+[42:41.60] they used it and not just said write a
+[42:43.28] code email to web hub.
+[42:44.40] >> Right?
+[42:45.04] >> But I also do the same
+[42:46.80] >> now I'm judging that person based of the
+[42:48.88] fact that that person forgot to do a
+[42:50.40] chain prompt saying make sure you remove
+[42:52.16] mdash.
+[42:52.88] >> Right?
+[42:53.76] >> Now the way I judge that person right
+[42:56.16] now is like okay the person how do I
+[42:58.64] treat this person? Like the person is
+[43:00.00] using AI, it's a good job. I want I want
+[43:02.00] to work with more people who use AI.
+[43:03.84] >> But then the person is using fundamental
+[43:05.68] AI which my grandmother uses. So I'm not
+[43:07.92] so happy with you.
+[43:09.28] >> So I'm okay with you using AI but just
+[43:11.04] using it in the right way.
+[43:12.16] >> Right. Right.
+[43:12.88] >> Right. Uh andically treated
+[43:21.60] which mimics my style of writing. Okay.
+[43:24.32] My bloody content is generated using AI.
+[43:30.48] I generate 100 million views per month
+[43:33.20] on just content which is generated using
+[43:34.88] AI.
+[43:35.28] >> All right.
+[43:35.76] >> Now, if anybody says that, bro, you
+[43:37.84] didn't put effort AI created. I'm like,
+[43:39.60] are you [ __ ] mad?
+[43:40.88] >> Do you think 100 million people will
+[43:42.24] watch my content if I put no effort?
+[43:44.24] >> All the thoughts are mine.
+[43:46.08] >> It's me thinking. It's just that I
+[43:48.48] didn't have the time to sit and shoot
+[43:50.24] content.
+[43:50.88] >> Right. Right. So it's the same feeling
+[43:52.80] that I have before I judge someone
+[43:54.16] saying that hey you use AI today.
+[43:55.44] >> I see what you mean. Um you know I was
+[43:58.72] talking to Vun yesterday
+[44:00.56] >> and I was likeun the first two places
+[44:04.40] where AI will or rather I I'll say it
+[44:07.12] like this the first point of contact
+[44:08.80] people will have with artificial
+[44:09.92] intelligence is content. Not just in the
+[44:11.68] sense or tweets
+[44:15.04] but
+[44:16.56] if I look at the world as an evolution
+[44:18.40] of media cycle we went from radio waves
+[44:21.84] to television waves which were
+[44:23.04] gatecapped by production houses
+[44:26.00] to then
+[44:27.92] democratized
+[44:29.20] >> but it is still curated content it is
+[44:31.28] still content makes that then Himmanu
+[44:33.12] consumes or consumes now we are in
+[44:34.96] personalized content era where whatever
+[44:36.64] I talk to it gives me personalized
+[44:38.24] responses at the end of the day it's
+[44:39.52] content it's low-level entertainment
+[44:42.32] mano even the way Chad GBT responds and
+[44:44.96] says oh by the way do you also want me
+[44:46.40] to answer these three questions it's
+[44:48.00] this continuation of content right um
+[44:50.88] and we are already in the era where all
+[44:52.80] content is personalized
+[44:55.52] >> my guess is most people in this case
+[44:57.52] will be using
+[45:00.00] artificial intelligence for low-level
+[45:01.60] anxiety management
+[45:04.32] uncertainty uncertainty macro level and
+[45:07.76] I'm like hey boss uncertainty boss
+[45:09.92] uncertainty
+[45:11.12] Is that your read also in in people like
+[45:13.92] the primary purpose eventually becomes
+[45:16.40] this pseudotherapy kind of a zone for
+[45:18.72] people? It is a huge use case, right?
+[45:21.36] >> Huge use case.
+[45:22.00] >> Huge.
+[45:22.80] >> And it has become a entry barrier. I
+[45:26.08] mean, it has become an entry point for a
+[45:28.08] lot of people to use AI, right? Uh
+[45:30.88] because uncertaintity, questions of
+[45:33.28] uncert uncertaintity is something there
+[45:35.60] was nobody to answer them and now they
+[45:37.20] have somebody to answer,
+[45:38.64] >> right? Like it's crazy, dude. My dad
+[45:41.20] recently got diagnosed with cancer.
+[45:43.68] >> Oh, I'm sorry, bro.
+[45:44.48] >> Yeah. But he's doing well right now,
+[45:45.76] right? Rice up coach it's all good right
+[45:48.00] now and he is so educated on this right
+[45:50.80] now purely because of AI every bloody
+[45:53.12] report that comes in goes inside of it
+[45:54.96] if he feels back pain before he tells me
+[45:57.52] he tells AI
+[45:58.56] >> hey these are uh because AI knows what
+[46:00.88] has happened and he I've given him the
+[46:02.64] project of all his files inside of it so
+[46:04.96] it has context right and it has become
+[46:08.00] his go-to thing and AI in a way has been
+[46:10.80] quite nice right it is more positive
+[46:13.12] than negative
+[46:14.64] >> for most of the cases Right? Because if
+[46:17.68] you go to a doctor, what is happening
+[46:19.36] with hospitals in the in the country,
+[46:21.52] right? My grandmom is feeling a little
+[46:24.00] unwell. So we take her to hospital and
+[46:25.68] the doctor says admit her, right? Just
+[46:28.72] admit her because that's how they can
+[46:29.92] make money. Right? Same happens with
+[46:32.24] this. But an AI is able to take a step
+[46:35.12] back, look at your reports and able to
+[46:37.04] gauge you based on data, based on
+[46:38.64] reports, based on reality like the
+[46:41.52] scientific movements that have happened,
+[46:43.68] based on all the data it has. As a
+[46:45.68] result, it is able to guide him and tell
+[46:47.76] him, "Look, you just had a therapy
+[46:49.76] session a couple of days back that could
+[46:52.16] lead to inflammation and that could lead
+[46:53.92] to back pain. So, it's fine
+[46:58.56] stretch and he did those stretches. 3 4
+[47:01.04] days later, the pain went away and he
+[47:03.12] built that trust. You know what I mean?
+[47:05.12] With
+[47:07.44] now if I say something, dad, you're
+[47:10.00] wrong." He says, "No, look what Chad [ __ ]
+[47:12.96] said.
+[47:14.96] It was right before so it's right now
+[47:16.48] also I don't trust you son
+[47:18.32] >> right
+[47:18.64] >> I trust this damn thing more then I have
+[47:20.64] to debate more I have to ask him show me
+[47:23.20] your conversation show what you asked it
+[47:25.92] this is beautiful
+[47:28.08] but if there is something wrong it will
+[47:29.68] put those red flags as well which has
+[47:31.12] done it for my grandmom
+[47:33.28] >> right it put those red flags at 2:00 in
+[47:35.20] the night I saw some symptoms kind of
+[47:37.44] worsening on my grandmom and I asked AI
+[47:40.48] it said boss this is not looking good
+[47:43.68] just call an ambulance and take her to
+[47:45.44] ICU and we did
+[47:49.44] or else what would I have done
+[47:55.52] because instinctively first thing to our
+[47:57.04] head is not that take her to the
+[47:58.48] hospital ICU is not something that is
+[48:00.64] commonly thrown at in India right we
+[48:02.16] don't even know what the entry point to
+[48:03.28] ICU is stage exactly because for us in
+[48:06.96] movies that we have seen ICU
+[48:12.00] yes you're
+[48:13.60] for us. So the only thing that I could
+[48:15.36] think of at that point of time is let's
+[48:16.88] see what happens in the morning.
+[48:18.56] >> We will take her to the hospital and I
+[48:20.24] asked AI the same thing. Can't I take
+[48:21.76] her to hospital at 9:00 in the morning?
+[48:23.76] >> And it said no. AI said 8 hours back you
+[48:26.80] said this is the condition. 8 hours
+[48:28.96] later you said this is the condition and
+[48:30.48] it asked me to get some test done of a
+[48:32.32] sodium test done. I got the test done or
+[48:34.64] sodium low ta
+[48:37.52] >> right which also doctor recommended but
+[48:39.28] three hours later when I got access to a
+[48:41.04] doctor on pract
+[48:42.64] >> right
+[48:43.12] >> but I had recommended before that so I
+[48:44.80] did a test on the beauty of the country
+[48:46.40] that we live in man
+[48:47.68] >> I can get a test done at any hour in
+[48:50.80] hours without an appointment
+[48:52.88] >> right
+[48:53.76] >> got the test done send the report back
+[48:55.68] AI said look this is what it is the
+[48:58.08] symptoms are this it could be this this
+[49:00.16] this and this
+[49:01.68] >> it's not worth taking a risk considering
+[49:03.44] how old she is and if you delay it till
+[49:05.92] the morning,
+[49:07.60] you don't want things to get worse now.
+[49:09.92] So if you can afford to if you can just
+[49:14.32] take her to ICU that's the best thing
+[49:15.68] you can do as a grandson being nice as
+[49:17.92] well.
+[49:18.16] >> And there's a moral push to
+[49:19.28] >> Yeah, there's a moral push to it always.
+[49:20.96] Always
+[49:21.84] >> right.
+[49:22.24] >> So interesting.
+[49:23.52] >> And I'm like what my dad was like I told
+[49:25.60] my dad this is I was like my dad was
+[49:27.36] like wait till morning like she's
+[49:29.20] talking and all but like
+[49:33.92] like no let's take her and we took her.
+[49:36.88] >> Um
+[49:38.88] my grandfather has a very unique eye
+[49:40.72] condition. um very rare and anytime we
+[49:46.00] get any tests done even when he's sick
+[49:48.08] like at this point my father will be
+[49:49.36] like
+[49:52.08] and once I started doing that trust now
+[49:54.56] I get blood test done every 3 months
+[49:55.92] just to be on top of my health right
+[49:58.32] >> everything to the tea like I spend 5
+[50:00.88] 6,000 rupees every 3 months test my body
+[50:03.68] every organ right
+[50:04.88] >> and not only was I able to be like there
+[50:07.36] is a delta here for which I would have
+[50:08.80] paid a doctor
+[50:12.56] What are supplements that I can also
+[50:14.64] consider? Acha. Why are certain just
+[50:16.48] vitamin D is a big one, right? All of us
+[50:18.00] are deficient in vitamin D. All of us.
+[50:20.00] Now, here is something I learned. No
+[50:21.84] matter how much oral vitamin D I took,
+[50:24.08] it's just not cutting it.
+[50:25.60] >> It will not move the needle beyond a
+[50:27.20] point.
+[50:27.52] >> No. But the minute I found liposomaal
+[50:30.08] spray that goes under the tongue.
+[50:32.08] >> Interesting,
+[50:32.72] >> bro. My vitamin D went from 10 12 at a
+[50:36.56] certain point, which is very low to 50
+[50:38.80] in 3 months. which you will not find
+[50:40.72] without injections but I just found the
+[50:42.72] right thing that works for my body I
+[50:44.48] guess and this is an experimentation
+[50:46.48] tracker you if you don't have on the
+[50:47.92] health side
+[50:48.96] >> I would have needed an expert boss for
+[50:50.56] this kind of stuff right and so being
+[50:52.48] able to understand your body so quickly
+[50:54.72] um I started dealing with some amount of
+[50:56.88] health anxiety as a function of just
+[50:58.16] growing up suddenly start thinking oh
+[51:00.88] ailments right um family history um for
+[51:05.60] instance sleep apnea is a big one
+[51:08.56] family
+[51:09.84] and having a very light sleep is a
+[51:12.24] proper thing and I started developing
+[51:14.00] early symptoms of sleep apnea. Sleep
+[51:15.84] apnea complicated unspoken. I bet people
+[51:19.76] listening to this podcast don't know
+[51:20.80] what sleep
+[51:26.56] because obstructive sleep apnea or
+[51:28.16] obstructive sleep apnea or central
+[51:29.68] nervous system sleep apnea bro. Suddenly
+[51:32.64] I know everything like like [ __ ]
+[51:34.96] research like you know um and it also
+[51:38.96] helps me not go into these spirals
+[51:41.04] because if you remember
+[51:46.80] right like Google did not have that kind
+[51:48.64] of precision until it has moved to LLM
+[51:50.80] based search functions and it's very
+[51:53.20] interesting because you are also right
+[51:55.44] about the fact where the AI is
+[51:58.08] encouraging you you go do the stupid
+[51:59.52] [ __ ] go it'll tell you where you're
+[52:02.00] wrong. Also, I don't think it does that
+[52:03.68] job perfectly. I think the beauty I
+[52:06.32] found of deep AI usage in some of the
+[52:08.48] people I know use it a lot. Their sense
+[52:10.40] of judgment is very retained.
+[52:15.36] They'll be like, "No, no, it got it
+[52:16.80] wrong." So, that sense of judgment is
+[52:18.48] very retained. But overall, what I'm
+[52:20.80] trying to think about here is that
+[52:23.20] strong to I said, "Vun, what do you
+[52:24.72] think about the psychological cost of
+[52:26.40] everybody being in their own bubble
+[52:27.92] talking to their own AI all the time?" M
+[52:29.68] he said whether you like to believe it
+[52:31.84] or not we are all low psychosis patients
+[52:35.12] already
+[52:44.88] that level and it's micro it's not it's
+[52:47.04] not diagnostic
+[52:49.44] but that's a very interesting POV too
+[52:51.20] that we all have more pronounced
+[52:53.76] individuality because this stuff is
+[52:55.68] telling us you're right this
+[52:56.96] confirmation you're confirmed go ahead
+[52:58.72] do this Right. That's a great idea.
+[53:00.80] >> That's a great idea. I think it's a
+[53:02.32] life-changing idea you've come across.
+[53:03.84] Prairie
+[53:04.56] >> there's a word for this. I forgot the I
+[53:06.00] forgot the word. I'm terrible with these
+[53:07.60] remembering of these words. This this
+[53:09.52] characteristic of AI has a word. Can't
+[53:12.24] remember it.
+[53:12.72] >> Okay. Sophensy.
+[53:13.60] >> Secoensy. Yes. Yes.
+[53:15.04] >> Right.
+[53:15.92] >> AI is offensic.
+[53:18.48] >> Seopantic. So interesting. key AI and
+[53:22.24] the most ideal
+[53:24.88] engagement tactic that these companies
+[53:27.52] who spent hundreds of billions of
+[53:28.96] dollars had was chu
+[53:31.60] right
+[53:34.64] there is a social clue in there. There's
+[53:36.72] a social clue in there. We've known this
+[53:38.48] from without AI also.
+[53:43.44] This boot booting, right? AI confirms it
+[53:47.12] because it's optimized for the opposite.
+[53:49.60] AI got it because of the society.
+[53:51.60] >> Sure. Right. Right. In the sense that it
+[53:53.84] still is the meta, the most effective
+[53:56.00] tactical, right? Short at anything. So
+[53:59.12] interesting. I've only mostly use GPT
+[54:02.00] some Grock and Grock's kind of unhinged.
+[54:04.24] But are anthropic and claude also
+[54:06.08] psychopentic?
+[54:07.36] >> Everything is because they're
+[54:08.80] fundamentally the way they are trained
+[54:10.96] >> the core material is that. But there's a
+[54:13.28] way to make it better by putting in
+[54:15.28] instructions. All these apps have
+[54:18.08] instructions uh core instruction that
+[54:20.32] you can set up for whole of your
+[54:22.32] product. The whole of chat define
+[54:25.20] instructions.
+[54:27.04] I always say be the opposite of being
+[54:29.44] nice. Tell me why I'm wrong.
+[54:31.84] >> Right? Don't don't try to be nice. Don't
+[54:33.76] try to convince me. Tell me the facts.
+[54:36.00] So you write an instruction like that
+[54:37.44] and you evolve over time. It get better.
+[54:39.52] It gets much much better.
+[54:40.88] >> Got it. Got it. So how much of your life
+[54:43.28] at this point is covered with AI as an
+[54:45.52] educator?
+[54:46.08] >> All of it.
+[54:46.56] >> Most of it or all of it? All of it. And
+[54:48.88] there's no difference between most and
+[54:49.92] all. 90% like you were saying
+[54:51.68] >> anything that can be done with AI is
+[54:53.52] being done with AI. Is all of it
+[54:54.72] according to Got it.
+[54:55.60] >> Now can I sit and uh teach a Zoom
+[54:59.20] session with 25,000 people live on it?
+[55:03.12] It can't be done with AI today.
+[55:05.04] >> So I do it.
+[55:06.00] >> Got it.
+[55:06.40] >> But can I make a 20inut video on YouTube
+[55:09.04] without me shooting it? Yes, it can be
+[55:11.04] done because an editing team it's not
+[55:12.64] live. So my editing team can edit it out
+[55:14.64] nicely even if my AI clone does it.
+[55:16.96] >> So that is AI.
+[55:18.24] >> Got it. So you're teaching the live
+[55:20.00] stuff is you're teaching it yourself and
+[55:22.40] a lot of the video stuff you can sort of
+[55:23.92] offload. I see what
+[55:24.72] >> and this is and this is example of
+[55:26.48] content creation, right? like you pick
+[55:28.88] up anything uh that there is
+[55:32.64] >> it's mostly AI first at this point of
+[55:35.28] time
+[55:35.92] >> from starting from hey like what's
+[55:38.32] happening on my Slack uh again like I
+[55:40.64] said 200 employees in a company on a
+[55:42.48] Monday Slack is a [ __ ] mess there'll
+[55:44.08] be thousand messages
+[55:44.96] >> right
+[55:45.28] >> there is and I'm tagged on everything
+[55:47.04] because cing webHub is important
+[55:49.36] >> right every team thinks CCing web is
+[55:51.20] important so everybody CCs me for
+[55:52.88] something that I don't need to don't
+[55:54.64] need my attention of also right
+[55:56.16] >> so the way I use Slack is fundamentally
+[55:58.32] different. My AI reads my Slack first
+[56:01.60] and tells me what I should read, then I
+[56:04.64] read those things. Same goes with
+[56:06.08] emails. If a unknown number calls me on
+[56:08.40] my phone, I don't pick up. It's my AI
+[56:10.08] agent that picks up my phone, talks,
+[56:12.08] understands, and if it thinks it's worth
+[56:14.08] it, then it does a offloading to me. If
+[56:16.72] it's a known number, then it comes to me
+[56:18.48] directly. If it's a number which is
+[56:19.92] saved,
+[56:20.56] >> that's crazy. WebHub, that's crazy. If I
+[56:24.32] call you with an unknown number, I'm
+[56:25.92] going to be speaking My phone's charging
+[56:28.00] outside thankfully. I'm not excited to
+[56:30.32] speak. Bro, I had this experience. I've
+[56:31.76] said this on the podcast many times, but
+[56:33.20] this was kind of shocking for me. I was
+[56:34.48] in uh Vegas about four or five months
+[56:36.08] ago. Get into the hotel. It's dead of
+[56:38.00] the night. The room is smelling. So, I'm
+[56:39.68] like, boss, somebody needs to come clean
+[56:41.04] this.
+[56:41.68] >> Call uh reception and I speak to this
+[56:43.68] woman for pleasant woman for 2 minutes.
+[56:45.28] I am like explaining, listen, it's been
+[56:47.20] a long day. I need somebody to come in
+[56:48.64] urgently and clean this. What is the
+[56:50.08] smell like? I tell her what the smell is
+[56:51.28] like. Where do you think it's coming
+[56:52.16] from? I tell her where it's coming from.
+[56:53.76] Okay, thank you so much. I'll send
+[56:54.88] someone shortly. And as soon as I'm
+[56:56.32] about to hang up, I realize this was not
+[56:58.40] a real person.
+[56:59.92] >> I just spent two or three minutes on the
+[57:01.60] phone with a bloody AI
+[57:04.00] >> and something in the end like something
+[57:05.92] that humans don't naturally say gave it
+[57:08.72] away.
+[57:12.56] And I turned to I'm like this is
+[57:15.76] wowing.
+[57:26.80] like you know the the feeling when you
+[57:28.16] encounter it in a lab it's very
+[57:29.52] different because you can say this is a
+[57:31.20] uniqueness in the wild is very different
+[57:33.44] and this is going to take up all the
+[57:35.84] service sector jobs
+[57:36.72] >> oh bo is dead
+[57:37.60] >> bo customer service this is not me
+[57:39.12] saying by again
+[57:41.36] the keyboard barriers right
+[57:46.72] but the reality is it's not me saying
+[57:48.48] look at vinod kosla's conversation now
+[57:50.72] if you doubt like if you question the
+[57:53.20] credibility of vin kosa then I don't
+[57:54.80] know who you are and where you come from
+[57:56.24] so I'll I'll not get into that debate
+[57:57.92] but
+[57:58.64] >> Vinod Kosa yesterday I was watching a
+[58:01.04] podcast uh with Mint because he's in
+[58:03.60] India right now
+[58:04.72] >> right said BO is dead IT sector is dead
+[58:09.60] financial sector is dead
+[58:11.84] >> every large uh
+[58:13.68] >> pattern matching system
+[58:15.28] >> every large company in the country that
+[58:17.60] operates on the economy of internet is
+[58:20.48] fundamentally dead
+[58:22.56] >> it is still on to a point right now
+[58:24.56] because adoption is slower but adoption
+[58:27.04] will happen in 3 years and it will be
+[58:29.20] dead in 3 years of
+[58:33.36] like that is a question that nobody has
+[58:34.64] an answer to
+[58:35.28] >> right no but like from your education
+[58:36.72] POV when you're teaching people like
+[58:38.48] what are you trying to do to help them
+[58:39.84] because
+[58:40.72] >> there has to be despair right like
+[58:42.56] despair confusion
+[58:44.88] but there is some place to go
+[58:47.20] >> so that's individual level so that is
+[58:49.68] what I recommend everyone I say long see
+[58:52.48] there is going to be
+[58:53.76] dystopian world
+[58:54.96] >> and then there's going to be utopia is
+[58:56.88] what I believe and a lot of people
+[58:58.24] believe and the reason why I believe
+[58:59.52] this is because whenever this job loss
+[59:01.84] happens and all of this happens right
+[59:03.76] the world takes time to tweak itself to
+[59:06.64] figure out what what needs to be done
+[59:08.00] but the world always figures it out
+[59:10.08] right and this phase is going to be
+[59:11.76] dystopian and it is very likely to
+[59:14.72] happen or it's happening already because
+[59:16.16] of speed now in this dystopian space who
+[59:20.00] are the people who are going to win
+[59:22.16] people who are going to win are people
+[59:23.52] are going to orchestrate things while or
+[59:26.72] I don't believe orchestration is a
+[59:28.24] long-term win game because long-term we
+[59:29.76] don't know what it's going to be nobody
+[59:31.12] knows but if you want to win the next
+[59:33.52] five six years because that's all you
+[59:35.04] can optimize for at
+[59:37.92] like orchestration
+[59:40.00] orchestration right I think the
+[59:42.08] orchestration part will kick in in a
+[59:43.68] year from now okay
+[59:44.48] >> because it has only happened to code to
+[59:46.56] an extent right now because there's a
+[59:48.24] lot of building phase figuring out
+[59:49.52] that's happening
+[59:50.40] >> tech is there
+[59:51.92] >> adoption is taking time right so I think
+[59:55.28] 5 years I believe 5 years is where
+[59:57.12] orchestrators will win so optimize for
+[59:59.84] these five years
+[60:02.08] >> and so what you then eventually end up
+[60:03.76] teaching a lot of your students is
+[60:04.88] orchestrator
+[60:05.28] >> how to orchestrate a so that is what I
+[60:08.00] say become a generalist
+[60:09.84] >> right what is a generalist
+[60:11.52] >> when you're thrown a problem at you
+[60:13.52] >> you need to figure out a way to solve it
+[60:15.12] and you cannot say I'm not a software
+[60:16.72] engineer you cannot say I'm not a
+[60:18.16] product manager you cannot say I'm not a
+[60:19.68] designer
+[60:20.32] >> it's your bloody problem to solve it to
+[60:22.40] use AI to solve it. And how do you do
+[60:24.40] that? When you have access to the right
+[60:25.68] AI tools, when you know what is AI
+[60:27.60] capable of, which AI is capable of what?
+[60:29.84] How to build agents, how to wipe code,
+[60:31.84] how to build rags. And for any of these
+[60:34.16] things, you don't need to be a
+[60:35.76] developer.
+[60:36.72] >> So anyone in the world who can use
+[60:38.56] internet who has common sense will be
+[60:40.80] able to do it. It's an adoption problem.
+[60:43.84] >> So get out of that silo that you're
+[60:45.92] living in saying subchangasi. It is not
+[60:48.08] the case. M
+[60:49.68] >> come out and put in the effort is what
+[60:51.36] we say.
+[60:52.80] >> Just in case the dystopia and the utopia
+[60:56.00] doesn't happen, well, you're still fine.
+[60:58.24] >> Right. Right.
+[60:58.80] >> In case it happens, well, you have a
+[61:01.20] winning hand.
+[61:02.40] >> How do I make you that one out of 10 who
+[61:05.60] will survive this game is what we
+[61:07.52] optimize for because I can only increase
+[61:09.44] your odds. I can't make you win win.
+[61:11.36] >> Yeah. Of course. Right. Right. Right.
+[61:12.48] Right. Right. So what you're teaching
+[61:14.24] basically when students come to you PEL
+[61:16.32] is tool use and then you are going into
+[61:19.60] more advanced situations like VIP coding
+[61:21.92] agent banana and and this kind of stuff
+[61:24.24] and then you're building a collection
+[61:25.44] and is that the offering key then by the
+[61:28.00] time you leave this educational
+[61:29.36] situation
+[61:30.48] >> you have it you get the context
+[61:32.88] >> see again we we don't say that everybody
+[61:37.04] who goes through this will win people
+[61:39.28] who execute are the people who will win
+[61:41.52] Right.
+[61:44.88] So what do we do? We basically say you
+[61:46.24] have to become an AI generalist. Here is
+[61:48.32] a five-step road map on there are five
+[61:50.80] levels to it. Level one you learn basics
+[61:53.12] of tool use. Which AI tool to use?
+[61:55.20] Where? Where do you use JGB? Where do
+[61:56.48] you use cloud? Where do you use Gemini?
+[61:58.16] Where do you use a notebook LM? Where do
+[61:59.60] you use NA10? Where do you use a replet
+[62:02.00] versus a cursor versus anti-gravity? All
+[62:04.32] the tools stack that you have build your
+[62:05.76] own AI toolkit. That is level number
+[62:07.20] one. Right? You get surface to tools,
+[62:09.92] right tools in the right place. That is
+[62:11.68] basic. Level two is doing the same
+[62:15.04] beyond text. Get your hang around
+[62:17.60] images, videos, audio and everything
+[62:19.28] around it. Because as a generalist, your
+[62:21.60] game is not confined to only one set. It
+[62:24.00] could be any problem that you that could
+[62:25.36] be thrown at you.
+[62:26.48] >> So get a hang of that part. That is the
+[62:28.32] foundation. On level three, we say look,
+[62:30.64] you have figured out how to prompt. You
+[62:32.08] have figured out how to use AI tools and
+[62:33.84] everything. In level three, you should
+[62:35.36] get into the building zone. How can you
+[62:37.04] automate things
+[62:38.40] >> that you do on everyday level which you
+[62:40.32] don't want to do? Let's say you don't
+[62:41.92] want to check your emails. Let's say you
+[62:43.60] don't want to respond to the calls.
+[62:44.80] Let's say you don't feel like making a
+[62:46.16] call to anyone. You don't want to order
+[62:47.52] pizza. It doesn't matter what it is.
+[62:49.12] There are 10 things that you do, seven
+[62:50.48] things that you don't enjoy. How do you
+[62:51.68] automate it? Well, there you learn
+[62:53.68] things around MCPS, model context
+[62:55.92] protocol or there you learn around how
+[62:58.32] to build projects, how to build rag
+[63:00.00] systems, right? things like that or how
+[63:02.80] to build basic NAT automations or basic
+[63:06.08] Zapier or make automations which can
+[63:07.92] automate things for you
+[63:09.60] >> right and you can do all of this without
+[63:11.20] code you don't need to be a developer
+[63:13.28] for any of this right that is level
+[63:15.60] three once you have understood
+[63:17.20] automation automation still needs you to
+[63:20.88] come in and say hey do this for me how
+[63:23.60] can you automate it without you saying
+[63:26.48] anything is an agent
+[63:28.00] >> right
+[63:28.32] >> it does end to-end task
+[63:30.40] >> so In level four where we say learn how
+[63:32.80] to use agentic software and also learn
+[63:35.36] how to build your own AI agents. How can
+[63:38.08] you use a tool like Lindy? How can you
+[63:39.52] use a tool like NA10 again to build
+[63:41.12] agents or Opel right now or any of the
+[63:44.00] agent tools out there? There's a problem
+[63:46.16] that you want AI to do. How can you
+[63:47.68] build an agent for that? Today the
+[63:49.60] worlds of openclass opened up which is
+[63:51.76] absolutely bonkers.
+[63:53.44] >> Right.
+[63:53.84] >> Actually tell me a little more about
+[63:55.04] that because that looked a little
+[63:56.32] bonkers when I first saw. I
+[63:57.44] >> I'll show you also.
+[63:58.24] >> Sure. Sure. Sure. Huh. Right.
+[63:59.12] >> Right. That's level four and level five
+[64:00.72] is finally wipe coding.
+[64:02.16] >> How can you productize stuff that can
+[64:04.32] work beyond you as well?
+[64:05.84] >> So these are the five levels we
+[64:07.20] basically say people to cover. What we
+[64:09.20] can do in our sessions at scale with
+[64:11.20] tens of thousands of people on them is
+[64:13.44] we directionally tell them key we teach
+[64:16.64] them a few and we give them a road map.
+[64:18.80] Now people who actually win are not the
+[64:20.56] ones that take our learnings and say
+[64:22.24] thank you so much this is helpful.
+[64:23.60] People who win are eventually who learn
+[64:26.00] from what we say, take the road map and
+[64:28.40] continue their learning.
+[64:30.56] >> They are the people who will win. But
+[64:32.72] that's what we do on a high level.
+[64:34.40] >> That's very interesting.
+[64:35.28] >> Yeah. So this is what we feel is a full
+[64:37.28] stack AI first problem solver can do and
+[64:39.76] we've seen enough and our employees are
+[64:41.44] our guinea pigs to start with. They've
+[64:43.12] been doing incredible work right now.
+[64:44.88] Right.
+[64:45.36] >> Right. And uh yeah
+[64:46.96] >> my question
+[64:52.48] see the adoption problem is effectively
+[64:54.88] a trust problem right or it's a lowest
+[64:58.08] hanging fruit kind of problem like if
+[65:01.52] somebody saw the benefit they could get
+[65:03.92] >> with the lowest lowest amount of effort
+[65:06.16] the likelihood of them adopting it
+[65:07.68] increases quite a bit.
+[65:09.28] >> Not every time.
+[65:10.08] >> Aa that's not the case every time.
+[65:11.68] >> Not every I'll tell you a case when it's
+[65:13.12] not every time but yeah go on.
+[65:14.32] >> Right. What I'm trying to understand is
+[65:15.68] for most people that are watching either
+[65:17.52] they work a job or they have some kind
+[65:19.12] of a freelance self ownership kind of a
+[65:20.96] thing, right? What's the easiest
+[65:23.04] possible thing in your experience they
+[65:24.32] can do to get ROI on that experiment?
+[65:27.84] >> I think uh the easiest thing that you
+[65:29.44] can do right now is take a paper out,
+[65:31.68] >> write down 10 things that you do every
+[65:33.36] day which takes 80% of your time, right?
+[65:36.48] and just take a picture of that and
+[65:38.08] upload that inside of Gemini and say hey
+[65:40.56] based on today's technology and please
+[65:42.08] turn on the pro mode on Gemini it's free
+[65:44.24] anyways so or chat GPD or whatever
+[65:46.96] whichever AI tool you use upload that
+[65:48.96] picture and say look these are the
+[65:50.24] things that I do which takes up 80% of
+[65:51.84] my time based on the technology that
+[65:53.84] exists today in AI what are the things
+[65:57.20] that I can automate
+[65:59.28] you will see 80% of the things that you
+[66:01.04] write no matter who you are and what you
+[66:02.80] do 70 to 80% for most of
+[66:06.40] Chad Gibb or Gemini will give you an
+[66:07.92] answer saying these are the things that
+[66:09.04] you can automate and this is what you
+[66:10.40] need to do take one at a time you don't
+[66:13.60] need me you don't need this podcast you
+[66:16.32] have see the beauty of the world that we
+[66:18.16] living in is content is democratized
+[66:21.04] >> right
+[66:21.60] >> knowledge is everywhere
+[66:23.28] >> right
+[66:23.68] >> we are just not seeking for it
+[66:25.52] >> right right so you just do this isn't
+[66:28.96] this is this very hard to do not really
+[66:31.52] >> just do this and the moment you get
+[66:33.84] point number one and you get a descript
+[66:35.04] description you're like oh this is
+[66:36.32] interesting I want to go deep into it
+[66:37.76] copy the whole thing paste it back into
+[66:39.76] chat GPT and say give me all the bloody
+[66:42.56] resources out there which can help me to
+[66:44.40] teach this in fact it's better if you go
+[66:45.84] to Gemini because Gemini has access to
+[66:47.36] YouTube
+[66:48.40] >> right this is what it is make me a list
+[66:51.60] of uh YouTube videos so that I can learn
+[66:54.88] this and automate this
+[66:57.92] you'll get a you'll get a bunch of
+[66:59.60] YouTube videos and when you're trying to
+[67:01.36] implement something if you get stuck
+[67:02.80] somewhere go to Google AI Studio
+[67:05.28] You can share your screen, say that,
+[67:06.80] hey, this is how my screen looks like. I
+[67:08.40] got stuck. I'm not able to set this up.
+[67:09.92] Tell me what needs to be done. There's
+[67:11.36] an AI tutor on the other end which will
+[67:13.36] literally tell you, click on this
+[67:14.48] button, tap on that button, fix this up
+[67:17.12] for me, fix this, do this, and it'll fix
+[67:19.20] things for you.
+[67:20.24] >> If you're slightly advanced user,
+[67:23.20] I would not even do it. I will just
+[67:24.88] message it to my Jerry, which is my
+[67:26.80] executive assistant, which will figure
+[67:28.32] it out itself by opening its own browser
+[67:30.40] and doing everything for me. And Jerry
+[67:31.84] is your tech
+[67:32.96] >> executive assistant which is open claw
+[67:34.72] right now.
+[67:35.20] >> All right.
+[67:35.60] >> Which is open claw right now. I just
+[67:36.72] switched it to openclaw. Before this it
+[67:38.48] was on n
+[67:40.24] >> but n now.
+[67:41.28] >> And where is your assistant? Is it on?
+[67:43.20] Oh, on slack. Okay. Okay. Okay. Okay.
+[67:44.80] Oh, so aa
+[67:46.32] >> interesting.
+[67:46.96] >> And it can it has agency enough to go
+[67:49.52] outside Slack and wherever else as well.
+[67:51.28] >> Yeah, I've given it full control.
+[67:54.00] >> And you've used what device for that?
+[67:55.68] >> What do you mean?
+[67:56.16] >> Like it must be ported on a device now.
+[67:58.40] Yeah,
+[67:58.72] >> so it's it's on my Mac.
+[67:59.84] >> Ah, it's on your Mac. It's on my Mac
+[68:01.20] Mini. A lot of people for OpenClaw take
+[68:03.84] a different Mac Mini. I've been a little
+[68:06.24] >> braver here and I said I'll put it on my
+[68:08.24] main main Mac Mini. Let's see what
+[68:09.52] happens. But right now the Mac Mini runs
+[68:11.28] all the time
+[68:12.24] >> and sometimes I just make sure Open Team
+[68:14.88] Viewer to see if I'm away to see it's
+[68:17.12] not doing anything nasty inside.
+[68:18.72] >> That's crazy.
+[68:19.44] >> But yeah, I've trusted a little more
+[68:20.88] than what I should. I I was like
+[68:26.16] cancel
+[68:32.00] next Twitter cancel.
+[68:34.08] >> Uh but that's that's crazy bro your PC
+[68:36.40] is operating on its own all the time.
+[68:37.84] >> Yeah. Not all the time only when so most
+[68:40.80] of things are automated basis of what I
+[68:43.20] want like Slack is my biggest time
+[68:46.40] monger so that is automated. every 3
+[68:48.80] hours it sends me a message saying hey I
+[68:51.36] check Slack and uh you know these are
+[68:54.00] the things that I found nothing to worry
+[68:55.60] about you can continue your work that's
+[68:57.44] what it says unless there is something
+[68:58.88] important that I have to attend right it
+[69:00.64] checks my emails right if I have to talk
+[69:02.96] to someone and I'm too lazy or they're
+[69:04.48] not picking up my phone I call you you
+[69:06.16] don't pick I offload it to my saying
+[69:08.32] keep calling Plucker and pass this
+[69:09.60] message till it act till plucker
+[69:11.36] actually responds back you can see Jerry
+[69:13.52] has just messaged me something it's
+[69:14.80] proactive by the way it messages me
+[69:17.12] proactively so So it has sent me a
+[69:18.64] message. Oh, Slack scan. I told you,
+[69:20.80] right? It does a Slack scan. Don't read
+[69:22.64] things out.
+[69:23.28] >> No, no. Aa
+[69:25.68] >> every 3 hours it's proactively sends me
+[69:27.52] message.
+[69:27.92] >> So it's basically given all the
+[69:30.56] important details that you must attend
+[69:32.16] to in your Slack in one message so that
+[69:34.32] you have a compression of information.
+[69:36.16] You don't have to read through.
+[69:37.04] >> This is one thing. This is one thing.
+[69:38.48] This is one thing. So yesterday one of
+[69:41.12] the use case was I was in the India air
+[69:42.64] summit
+[69:43.44] >> and uh I wanted someone uh to kind of uh
+[69:47.68] talk to and we were supposed to meet and
+[69:49.44] I was realizing that
+[69:51.28] >> you know he will call me I will not pick
+[69:53.36] up and then I'll call him he will not
+[69:54.88] pick up
+[69:55.28] >> because you're both no like because we
+[69:58.72] are in the India summit and it's a mess
+[70:00.64] and whatever. So I just said till this
+[70:02.80] person picks up keep calling him and
+[70:05.28] tell him that I'm at the meta booth till
+[70:08.00] he acknowledges the message keep calling
+[70:10.00] him.
+[70:10.56] >> He got the call seven times.
+[70:12.80] >> H
+[70:13.36] >> he got the call seven times from my AI
+[70:15.52] and it outright says it sounds like me
+[70:18.00] >> but my AI outright says that hey I'm web
+[70:21.04] AI executive assistant. So I'm not
+[70:24.16] trying to be Webhub like
+[70:25.28] >> right right right
+[70:26.48] >> and it says hey webhub is in the meta
+[70:28.72] booth he would love to see you there and
+[70:31.68] he'll be there for the next couple of
+[70:32.88] hours
+[70:33.20] >> right
+[70:33.68] >> right first time he picked up he could
+[70:35.68] not understand something or he said
+[70:36.96] something and he cut down because he
+[70:38.00] thought it's me and then it again called
+[70:40.24] back to him I think it called like five
+[70:43.12] six times and then finally and it was
+[70:44.56] going from my international number
+[70:45.60] because it doesn't go from my number
+[70:46.88] >> right
+[70:47.44] >> right so it finally picks up and says
+[70:49.28] webhub this is webhub AI executive
+[70:51.04] assistant please come into the meta
+[70:52.88] booth and that guy was like, "Yeah, I'll
+[70:55.04] be there." And it stopped calling.
+[70:57.84] >> So this is these are very small things
+[70:59.68] if you think about it.
+[71:00.80] >> Sure.
+[71:01.12] >> But uh it can do almost everything.
+[71:03.44] That's what I'm trying to say. Let's say
+[71:05.04] uh before your podcast, right? Before we
+[71:07.28] do this, I was like look like uh what
+[71:09.36] are the things that are not spoken
+[71:10.64] about? Are there things that I should
+[71:12.24] speak about based on the things that
+[71:13.44] have happened? So it did a research for
+[71:15.28] me and gave me a bunch of things like
+[71:16.88] for instance that uh like the uh the GDP
+[71:20.08] index that I told you GDP the GDP val
+[71:22.88] had a big difference right now that
+[71:25.04] happened yesterday so I was out
+[71:28.24] >> I was not aware so it pinged me saying
+[71:30.16] bro GDP val numbers have gone up by 300
+[71:32.56] points
+[71:33.44] >> you should talk about it
+[71:34.48] >> and so your project knows what you've
+[71:36.72] spoken of in all your media appearances
+[71:39.60] >> not the project this is uh so these
+[71:42.80] assistants these agent Agents are 100
+[71:45.36] times or 20 30 times more complicated
+[71:47.92] than or more advanced than a project.
+[71:50.08] >> Okay.
+[71:50.80] >> Right. So,
+[71:51.44] >> so you have an agent that goes out and
+[71:53.12] collects all your media presence and
+[71:54.48] what you've said.
+[71:55.20] >> I have done it once and stored it in the
+[71:57.52] memory.
+[71:57.84] >> You stored it in the memory and now what
+[71:59.76] happens is that it takes the proper set
+[72:02.08] of all things you can say versus the
+[72:03.92] things you've said already and then
+[72:05.92] tells you what the differential is.
+[72:07.20] >> Yes. And it also has told me what I
+[72:09.52] should not say in my podcast. Like for
+[72:11.20] instance what cancer like there's like
+[72:13.76] listen if you're saying if you're
+[72:15.68] quoting something quoting a number make
+[72:17.76] sure you quote that it's not yours right
+[72:20.56] okay
+[72:21.04] >> so proactively before this also I used
+[72:23.92] to say it but it'll come in the end or
+[72:25.76] it'll come in the beginning and
+[72:35.44] I know what you mean 30 second clip
+[72:38.24] right you optimize for the space Right.
+[72:40.00] Right. Right.
+[72:40.40] >> Right. And you you don't think of your
+[72:42.16] editor is not thinking of that oh this
+[72:43.84] clip will get canceled out.
+[72:45.04] >> Right.
+[72:45.36] >> You have to think about it. And I'm not
+[72:46.96] Samman that my policy team is sitting
+[72:48.64] behind my ass saying that I want to see
+[72:50.40] every clip that goes out.
+[72:51.44] >> Right.
+[72:52.00] >> And a content will go out without that
+[72:54.24] little nuance of context
+[72:56.32] >> and it'll cause all the trouble.
+[72:57.36] >> It'll cause all the trouble. It has
+[72:58.72] caused all the trouble so far.
+[72:59.84] >> Oh, you've had that?
+[73:00.64] >> Yeah. I I mean not that bother it
+[73:02.64] affects me,
+[73:03.60] >> but I'm like my girlfriend was like just
+[73:06.64] just be a little reassuring.
+[73:08.80] >> All right. Just say that it's not you,
+[73:10.72] it's Vinod Kosa saying and say it three
+[73:12.32] times.
+[73:12.72] >> Yeah. Right.
+[73:13.60] >> Just say that uh just outright say if
+[73:16.56] you're quoting based on GDP value.
+[73:18.56] You're thinking that you're quoting
+[73:19.68] based on GDP val. But just know just
+[73:22.56] remember it and say it.
+[73:24.16] >> And these are all nice little
+[73:25.28] instructions that have come in from my
+[73:27.20] PR.
+[73:27.92] >> Give me some uh
+[73:28.96] >> which is an AI.
+[73:31.04] >> Yeah.
+[73:32.00] >> Yeah. At this point I'm not certain if
+[73:33.36] I'm sitting with you at all. Uh but bro,
+[73:35.60] you actually do live in the future. Like
+[73:37.36] frankly uh I have used artificial
+[73:41.12] intelligence. I know some people who use
+[73:42.40] it to quite an extent but I think you're
+[73:44.72] really maxing. You're AI maxing.
+[73:47.52] >> I I I would like to I think I'm AI
+[73:50.64] maxing for who I am as a non-software
+[73:52.72] engineer. So I do a lot of things that I
+[73:54.88] possibly can.
+[73:56.00] >> But I think a lot more can be done. If I
+[73:58.00] was an engineer I would have been able
+[73:59.36] to do a lot more.
+[74:00.24] >> Right.
+[74:00.72] >> Uh but uh I get my software engineers to
+[74:03.04] help me. Is there is there any value in
+[74:04.88] the future world for degrees and
+[74:06.56] education in this case because I would
+[74:08.48] suppose so right
+[74:10.32] >> I don't think there's value for degrees
+[74:11.60] and certificates even today what is
+[74:13.44] valuable is the experience that you go
+[74:15.28] through right
+[74:15.92] >> so I went into four years of college
+[74:18.08] right I didn't go through a great
+[74:19.28] college like like not an IIT or anything
+[74:22.08] like that's what I mean not by a very
+[74:24.00] well-known college you went to Colombia
+[74:25.44] if I'm not wrong
+[74:26.48] >> right I don't know your reflection of
+[74:28.32] that but I've always heard you speak
+[74:29.92] education of very highly right
+[74:31.60] >> I'm a huge fan
+[74:32.32] >> I know I M
+[74:33.04] >> I know but I'll tell you that I don't
+[74:35.44] dis education I don't say anyone not to
+[74:38.56] go into education or not to do education
+[74:40.80] not because or I never say not to go
+[74:44.88] through this experience of education
+[74:46.80] purely because it teaches you more than
+[74:48.88] the books
+[74:49.68] >> sure
+[74:50.00] >> books have not taught me anything even
+[74:52.64] before a era forget about a era I don't
+[74:55.04] think my 10th 11th 12th has helped me
+[74:58.08] with anything that I've done so far I
+[74:59.76] think school education is different I
+[75:01.52] don't know how it has helped me And I'm
+[75:02.72] sure it has helped me in some form of
+[75:03.92] fashion that I can't understand.
+[75:05.68] Engineering is when I'm capable enough
+[75:07.92] to know what how it has helped me and
+[75:10.88] has not helped me in any way of what I
+[75:12.80] have studied. Right? Maybe the only
+[75:14.88] thing that has helped me is code because
+[75:17.60] software engineer I mean computer
+[75:18.64] science engineering doesn't mean I've
+[75:20.08] written code
+[75:21.04] >> right
+[75:21.28] >> that's the only trait that has given me
+[75:22.72] but that that didn't need four years of
+[75:24.24] engineering but what it gave me is
+[75:27.36] exposure. What it gave me is how to
+[75:30.00] manage people. What it taught me is how
+[75:32.32] I can be with myself independently. What
+[75:34.88] it taught me is that I can take bets.
+[75:37.36] What it taught me is how to make
+[75:39.44] friends. What it taught me, what it
+[75:42.00] built me is a network of incredible
+[75:44.08] people that I can still rely on.
+[75:46.32] >> Right. Those things cannot happen
+[75:48.00] without a college. It teaches you life.
+[75:49.68] >> Sure.
+[75:50.40] >> It's not so much about the books. It
+[75:52.00] never works.
+[75:52.96] >> Now, I don't This is education in India.
+[75:54.80] Right.
+[75:55.20] >> Right. Right. Right. It's gamified and I
+[75:56.88] get the frustration.
+[76:02.32] The minute that thing happens, once
+[76:04.00] you're mature, you look back, you're
+[76:05.12] like,
+[76:12.56] but that's the that's
+[76:13.76] >> and also one interesting thing that I've
+[76:14.96] seen with education is that it's the
+[76:17.20] correlation of your grades to your
+[76:20.24] outcomes in life.
+[76:21.36] >> It's really not true. Huh? It's
+[76:23.44] variable. I know some really
+[76:25.60] backbenchers who've done phenomenal work
+[76:27.28] and some front benchers who've gone
+[76:28.88] backbencher territory. Right. Yeah. Yes.
+[76:30.56] Yes.
+[76:31.04] >> I mean again I'm not quoting see most of
+[76:34.00] the things that we speak about education
+[76:35.44] goes into dusbin when you're talking
+[76:37.60] about the top 2% or top 1% like like
+[76:41.12] there is no way to kind of even debate
+[76:44.40] that hey if you are going through an IIT
+[76:46.80] I am MIT Colombia Stern whatever Harvard
+[76:50.16] Stanford there the game is different.
+[76:53.12] I'm not even I don't think we will ever
+[76:55.44] be able to have this debate saying that
+[76:57.20] it's not worth it. M
+[76:58.00] >> I think it's always going to be worth it
+[76:59.20] because of pure density of incredible
+[77:02.40] people.
+[77:02.80] >> Mhm.
+[77:03.68] >> That's it. Period. Right. I think that
+[77:06.08] is invaluable according to me. But
+[77:08.56] anything below that, when you go to the
+[77:10.48] 5%, 10%,
+[77:12.80] below 10%.
+[77:14.96] >> I still think everybody should go
+[77:16.32] through the whatever that percent is,
+[77:18.48] you should still go through it. But you
+[77:20.48] should be clear about what you're
+[77:21.60] getting out of it.
+[77:22.40] >> Yeah. Education. I think for India Gorov
+[77:25.28] actually Goravjal changed my view when I
+[77:27.04] heard him speak on a podcast and he
+[77:28.56] explained it's like there is only one
+[77:30.96] game that promises social mobility in
+[77:33.04] India degrees
+[77:36.64] becomes a permission slip for you to be
+[77:38.24] like
+[77:41.36] I can apply to a multinational
+[77:42.64] corporation in Gura or in Bangalore get
+[77:44.96] that job socially move up and whether
+[77:47.60] people like it or not because these the
+[77:49.28] tech crowd tends to be very
+[77:50.40] philosophical whether people like it or
+[77:52.24] not fundamentally Life is about status
+[77:55.12] and so if a person sees I as a father
+[77:58.24] see acceleration there is no way I will
+[78:02.00] not tell them to go to college
+[78:03.52] everything else you know if you've ever
+[78:04.96] been friends with athletes in school
+[78:07.36] badminton they make this very clear
+[78:09.60] distinction at a certain point
+[78:13.20] >> and the reason is because even though
+[78:15.60] sports top 1%
+[78:18.72] your life is set beyond any
+[78:21.20] >> but the odds that you will get that very
+[78:23.84] low
+[78:24.40] >> but high if you're able to manage a
+[78:26.40] degree and get through to even
+[78:28.64] >> a simple company that does a simple job
+[78:30.56] and you are a simple accountant in that
+[78:32.40] company your social status guaranteed
+[78:34.40] accelerates more
+[78:35.12] >> he's right and that is true like if you
+[78:37.04] want to get into a TCS Vipro Cognizant
+[78:38.96] Accenture blah blah blah all of that
+[78:40.32] they have that tick tick box that you
+[78:42.32] need to have a degree
+[78:43.92] >> right but they will not exist 3 years
+[78:46.40] from now in the way they do if they
+[78:48.32] continue to operate with this framework
+[78:50.96] of degree being the Why? Why did they
+[78:53.44] have to have that? You have to go back
+[78:55.04] to the genesis of why these things
+[78:56.80] existed? Because in a country like ours,
+[79:00.72] there are millions of people who want a
+[79:02.16] job,
+[79:02.48] >> right?
+[79:02.88] >> And you cannot have such a wide funnel.
+[79:04.56] You cannot interview so many people. So,
+[79:06.00] how do you reduce the funnel of your
+[79:08.96] inflow? By putting barriers,
+[79:10.64] >> right? Huh?
+[79:11.04] >> So, this became a barrier. Right.
+[79:12.40] >> Right. Right. Right.
+[79:13.04] >> It's a terrible barrier.
+[79:14.00] >> Qualification criteria.
+[79:15.36] >> It's a terrible terrible barrier. Right.
+[79:17.28] Now if you think about these companies
+[79:19.92] the reason why people generalized
+[79:22.16] careers to top five IT companies was
+[79:24.56] because they were were the biggest
+[79:27.04] hirers in the country but in the last 12
+[79:30.00] months do you know how many people have
+[79:32.96] how many net employees have these
+[79:34.48] companies added top five companies in
+[79:36.00] India together
+[79:37.60] >> I have no idea but I I don't think it's
+[79:39.28] a big number like zero negative
+[79:40.88] >> 17 satra so like topflow satra net net
+[79:46.16] that's why like outflow plus inflow
+[79:48.32] >> right is net
+[79:49.84] >> 17 top five ID companies I will not name
+[79:53.52] them you know what they are yeah
+[79:55.68] >> these were the mass recruiters
+[80:01.44] right right
+[80:05.20] >> right what are you optimizing for boss
+[80:07.60] you are not living in a world of tick
+[80:08.96] boxes anymore
+[80:10.48] >> so if look like will I still say you
+[80:13.52] should go and get a go into education I
+[80:16.32] I will still say you should go into
+[80:17.60] education because when you're that
+[80:19.28] young, you don't know what you want to
+[80:20.56] do.
+[80:20.88] >> Right?
+[80:21.36] >> So this gives you direction in some form
+[80:23.36] or fashion.
+[80:24.00] >> Right?
+[80:24.48] >> You go through the four years of
+[80:25.84] experience without your parents around.
+[80:27.84] In fact, I recommend everyone to go to a
+[80:29.28] hostel.
+[80:29.68] >> Right.
+[80:30.16] >> Right. Because the world that you live
+[80:31.44] in is different. You should be as far
+[80:33.12] away from your parents and your comfort
+[80:34.56] zone as possible because you learn life.
+[80:37.68] But you should optimize your time.
+[80:39.36] Doesn't matter which college you are in.
+[80:40.64] Content, information, knowledge is
+[80:42.88] democratized. Everything is out there
+[80:44.64] for free.
+[80:46.24] So play your Counter Strike, watch your
+[80:48.56] Netflix, you have four years to chill,
+[80:51.36] but do something with your time.
+[80:53.60] >> Build things because this is the era of
+[80:56.00] builders. Everybody in the world can
+[80:58.32] build right now. Use your time when
+[81:00.72] you're in college to build stuff. Fail.
+[81:03.04] Look, look, I think for anyone to
+[81:04.64] succeed, they have to fail at least 50
+[81:06.00] times. Micro, macro, big, small failures
+[81:10.00] all together. If you're not failed
+[81:11.52] enough, there is no way you'll succeed.
+[81:13.04] Even if you succeed, that will turn into
+[81:14.40] failure.
+[81:15.68] So increase your failures when you're in
+[81:18.72] college.
+[81:20.32] >> So by the time you come out of college,
+[81:22.40] you have seen what failure looks like.
+[81:25.12] It doesn't hurt you and your odds of
+[81:26.96] winning just goes up.
+[81:28.96] >> You know what my view on education
+[81:30.72] particularly from my experiences
+[81:34.24] student and CS CA charted accountant? I
+[81:37.76] was a charted accountant student, right?
+[81:39.28] Um and
+[81:40.72] >> had I not gotten into an Ivy League
+[81:42.64] university, I'd have probably finished,
+[81:44.00] right?
+[81:44.96] But complain day one say or for whatever
+[81:47.60] reason I was a little more first
+[81:48.88] principal. I was like
+[81:58.32] how can you punish me for calculation
+[82:00.72] when a calculator has been invented? Why
+[82:04.08] would I be punished for arithmetic that
+[82:06.24] I can do in my head? Right? And so these
+[82:08.80] exams that value how you pass or fail
+[82:11.12] will get gified along incentive plus
+[82:14.24] disincentive to negative right.
+[82:17.84] >> I found a lot of beauty in reading a
+[82:20.64] wide variety of subjects that opened my
+[82:22.64] mind for the first time.
+[82:23.52] >> What did you study?
+[82:24.48] >> So my core education was in psychology
+[82:26.80] and economics but I did the 3D route
+[82:29.60] where I sat in religion film
+[82:33.44] right. So I studied physics, I said
+[82:34.96] biology which I would have never
+[82:36.24] studied. My accounting student, right? I
+[82:37.92] studied uh religion, anthropology, I
+[82:40.08] studied mathematics, bro. I took
+[82:42.24] advanced courses in mathematics I would
+[82:43.68] have never taken.
+[82:44.40] >> You got the ROI, man.
+[82:45.52] >> So I I was like and um they offer some
+[82:49.76] very interesting classes. Liberal arts
+[82:51.04] side to help you learn how to think that
+[82:54.56] end.
+[82:55.52] >> Why I'm mentioning this is in hindsight,
+[82:57.44] I wish I'd started building sooner. See,
+[82:59.28] I started building in college. I I did
+[83:03.20] and even still I wish I was like five
+[83:05.04] years younger because five years
+[83:07.04] compounding is insanity but the partal
+[83:10.32] if you and I sit and compound on the
+[83:11.76] thing we're building it's insanity what
+[83:14.24] can happen and you're right you take 50
+[83:16.32] failures no matter how smart you are no
+[83:17.68] matter how well positioned you are you
+[83:19.04] take 50 failures that no most people
+[83:20.56] don't see it happen silently before
+[83:22.16] you're like
+[83:24.32] right and so life is such a long fight
+[83:26.64] in any which case you get also very
+[83:28.56] bored of exploring in the way that
+[83:30.80] college students spend for the first
+[83:32.32] four or five years and then you want to
+[83:33.92] do something
+[83:34.32] >> because you have nothing to lose during
+[83:35.68] college. No, right.
+[83:37.20] >> That is the beauty.
+[83:38.32] >> I think it's the best bloody time.
+[83:40.08] >> In so many ways, it is. Right. There is
+[83:43.20] when you meet older people, they'd be
+[83:44.40] reminiscing about college and you're in
+[83:45.60] college. You're like a fight. Like, you
+[83:47.44] know, and then you were older and you're
+[83:48.88] like, man, they were so right.
+[83:51.84] Now you're the older people,
+[83:52.88] >> right? Now you're the older people.
+[83:54.00] You've hit 30 like you're status. And
+[83:56.24] you look back, you're like truly if I
+[83:58.72] could tell somebody in college or school
+[84:00.16] what they should do is they should enjoy
+[84:01.36] it more.
+[84:01.92] >> Yeah.
+[84:02.32] >> Right. Such a value.
+[84:03.60] >> I had written a note on this. I was like
+[84:05.60] I worked too much during my college.
+[84:07.60] >> So you
+[84:07.92] >> I had three startups during my college.
+[84:09.76] >> Oh wow.
+[84:10.40] >> Right. It failed. I started one more
+[84:11.92] that failed. I started one more. I was
+[84:13.52] bloody working all the time not going to
+[84:14.96] classes and all.
+[84:16.24] >> So I I like when after four years when I
+[84:18.72] had to write a note on like somebody
+[84:21.04] asked me this question in one of the
+[84:22.72] talks and I had to think hm
+[84:25.60] I was like I wish man I'd gone out for
+[84:27.28] the dinner with my friends because now I
+[84:29.76] don't have their time then I did.
+[84:31.84] >> That's very interesting. I sometimes
+[84:33.36] think the opposite. Yeah, I wish I
+[84:34.88] started early and this is the nature of
+[84:36.32] humanity.
+[84:38.00] We're never happy, right?
+[84:45.04] When I see my colleagues who are now
+[84:46.88] successful because they've worked in
+[84:48.72] media or tech and then they're spending
+[84:50.72] money having fun.
+[85:01.04] I had the exact opposite experience. I
+[85:03.68] had so much fun.
+[85:08.08] Like if my wife ever asks me, "Where do
+[85:09.76] you want to go travel?" I'm like, "I've
+[85:10.88] seen whatever I wanted to see. Right
+[85:12.32] now, I just want to build." And so I
+[85:14.40] exhausted that bit where no extra dinner
+[85:16.88] with my friends is going to make me
+[85:18.08] happy. I'm sick of my friends.
+[85:20.48] However, in the 7 years that I lived
+[85:22.24] abroad, I didn't live close to my
+[85:23.44] family. So every extra dinner with my
+[85:25.28] family makes me happy. And this is human
+[85:26.96] nature. Now, whatever you don't have,
+[85:28.08] >> everybody's trying to find a balance,
+[85:29.36] >> right? Whatever you don't have. Yes.
+[85:31.44] >> Right. But um it is true I also
+[85:34.48] graduated in 22
+[85:36.88] >> college
+[85:38.72] that is the year Chad GPD hits and so my
+[85:41.60] education is pre GPD
+[85:45.68] and I had to write that essay and I
+[85:47.52] swear to God bro
+[85:52.24] I don't think anything is written it
+[85:54.40] completely right I'm very skeptical of
+[85:56.64] the fact
+[85:58.56] especially writing for writing sake
+[86:07.12] I don't think you should delegate that.
+[86:08.48] I think you should write it. I I think I
+[86:10.40] I I'll tell you why it has become 10
+[86:12.08] times better
+[86:13.44] >> for writing using AI while you write it
+[86:16.08] yourself because there are two things of
+[86:18.24] writing, right? One is that how you
+[86:19.60] write, how you craft it, that's a skill
+[86:22.16] that very few people have. The thing
+[86:24.32] that I think everybody, the reason why
+[86:26.32] everybody should write is because that
+[86:28.08] pushes you to think harder. Yes.
+[86:29.92] >> Right. That thinking harder can still
+[86:32.40] happen. In fact, the thinking harder can
+[86:34.64] become 10x better with AI.
+[86:38.40] That's what I'm saying, right? Have if
+[86:40.64] you were writing that essay, did you
+[86:41.92] speak with 10 different friends?
+[86:43.52] >> Well, you go to 10 different sources,
+[86:45.12] you read 10 different things, you come
+[86:46.56] up with opinions, you synthesize them.
+[86:48.32] >> Once you had opinion, did you put that
+[86:49.76] opinion in front of a friend saying,
+[86:50.72] "Yeah, what do you think of this? What
+[86:53.36] is
+[86:53.60] >> It depends on which context we're
+[86:54.88] talking about."
+[87:02.64] I I'll go back to an example that
+[87:04.32] everybody would relate to or at least
+[87:06.16] most of them would like let's say I have
+[87:07.44] to put a slack message like because you
+[87:09.12] took the example of Slack message right
+[87:11.20] >> right I got I get AI to do it
+[87:13.92] >> but it starts with a voice note into my
+[87:18.80] claude or chat GPT or Gemini or open
+[87:21.20] claw or whatever it starts with a voice
+[87:23.20] note saying look this is what I want to
+[87:25.44] say this is how I'm thinking these are
+[87:28.48] my raw thoughts.
+[87:30.56] help me organize this
+[87:32.24] >> and also as I as you organize this also
+[87:35.44] tell me what are the downsides of this
+[87:38.48] will this affect a set of people that it
+[87:40.72] should not affect should I smoothen it
+[87:43.68] out
+[87:45.20] in a few places
+[87:46.32] >> right
+[87:47.12] >> so that because you are doing let's like
+[87:49.76] right now if I put a tweet out it still
+[87:52.56] goes out right now but that tweet is PR
+[87:54.96] vetted to a point where my thoughts are
+[87:57.92] going out but it's not offending people
+[87:59.60] also Right?
+[88:00.56] >> So I'm like every time I put something
+[88:02.08] out, I write it. I put my voice note out
+[88:03.92] and I say that look, I'm going to put
+[88:05.84] this on Twitter.
+[88:07.76] >> Will this create problems or will this
+[88:11.44] bother a few people? Will this lead to
+[88:14.64] negativity? If that is the case, why?
+[88:18.00] >> And how can I soothen it out while
+[88:20.08] putting my word out?
+[88:21.12] >> Oh,
+[88:23.20] right. So it does help. I mean, unless
+[88:25.84] you are someone who's like, "No, I want
+[88:27.92] to put it raw, which is fine." No, I
+[88:29.92] meant more in the sense of if you're
+[88:31.28] given base writing work
+[88:35.28] but I in my head is whatever I it's
+[88:38.08] emotions it's some ideas but nebulous
+[88:41.20] once you put it on paper this is a type
+[88:43.28] or you type it which is what paper means
+[88:45.28] what really happens is thought
+[88:46.56] organizing
+[88:48.24] or that is what I do as well I do it on
+[88:51.92] voice note and you do it in typing like
+[88:54.16] it's thinking
+[88:54.88] >> actually voice notes also like most of
+[88:56.56] my AI consumption is voice where I speak
+[88:58.72] to it and it sends me text back, right?
+[89:00.96] That's the best way because I can
+[89:02.48] otherwise
+[89:04.00] once I start speaking, it organizes
+[89:05.36] itself in my head.
+[89:06.08] >> I mean, quite frankly, I use a tool
+[89:07.52] called whisper flow. I don't know if
+[89:08.64] you've heard of it.
+[89:09.28] >> I have heard of it. I don't know what it
+[89:10.48] does.
+[89:10.80] >> It's magic,
+[89:11.68] >> right? It's voice to text. So on my
+[89:14.24] computer, I just put a function tab and
+[89:16.56] spacebar. I have my earphones plugged in
+[89:19.12] and I'm walking and I'm talking and it
+[89:21.28] takes all that information that I'm
+[89:22.72] talking, condenses that into nicer
+[89:24.96] format and just spaces it.
+[89:27.20] >> That's crazy. Yeah,
+[89:28.32] >> that's crazy.
+[89:29.12] >> No, but this is very popular right now.
+[89:30.96] It's I think it's a no-brainer,
+[89:33.20] >> right? And
+[89:34.48] >> for us who have the like on a phone, I'm
+[89:36.56] sure you use a lot of voice notes.
+[89:37.76] >> Sure.
+[89:38.24] >> Right. It's very instinctive on a
+[89:40.72] computer as well, but we never used it
+[89:42.32] because dictation is terrible.
+[89:43.92] >> The tech of dictation has been terrible.
+[89:45.76] Right.
+[89:46.16] >> But uh companies like whisperflow and
+[89:47.92] all are coming which are working purely
+[89:49.60] on small language models which are
+[89:51.84] optimized for transcription and it's
+[89:53.92] beautiful. It's beautiful. So I would go
+[89:56.56] on my LinkedIn let's say I've got a
+[89:58.16] message from someone saying hey I was
+[90:00.16] supposed to get this email from your
+[90:01.28] team and I've not got it. I get a lot of
+[90:02.72] those messages because of the scale that
+[90:04.08] we operate at email.
+[90:08.48] So it's the same standard reply I have
+[90:10.08] to give every time.
+[90:11.20] >> So I just put function space a function
+[90:13.20] button and I just say support response
+[90:16.56] >> and it just autofills the whole thing.
+[90:18.08] Do you remember the text auto right now
+[90:20.80] it's happening via voice
+[90:22.32] >> my LinkedIn URL fills up my LinkedIn URL
+[90:24.72] actually https/lin.com/in
+[90:27.36] same goes with if I say my social
+[90:28.88] handles all my social handles it
+[90:30.72] autofills that so little little things
+[90:32.72] but it saves up time and I think when it
+[90:35.60] comes to context a lot of times also
+[90:37.76] this happens with me I don't know if it
+[90:39.04] happens with you that as I type I forget
+[90:42.16] what I'm typing so I have some thoughts
+[90:44.64] that I want to type out but as I start
+[90:47.60] First point, second point, third point.
+[90:51.12] But with voice because it's so fresh and
+[90:54.24] words per second, words per minute that
+[90:56.24] you can type is like 30 40 30 40 words
+[90:58.56] per person. But voice is 250.
+[91:03.92] >> So it's six times more efficient.
+[91:05.76] >> Right. Right. Right.
+[91:06.56] >> So your context window, it helps your
+[91:09.52] context window as well.
+[91:10.88] >> But yeah, anyways, whisper is quite
+[91:12.80] cool. So any of those tools, a bunch of
+[91:14.80] them,
+[91:15.52] >> any of these tools are quite cool.
+[91:17.28] >> Nice. Um, what else are you thinking
+[91:20.48] about these days?
+[91:23.44] >> What else am I thinking about these
+[91:25.60] days?
+[91:28.00] Yeah,
+[91:31.92] I barely think about anything except for
+[91:34.08] AI these days quite frankly. uh again
+[91:37.04] right like I told you the the reason why
+[91:39.36] we spoke so much about health is because
+[91:41.12] grandmom father
+[91:43.28] so that is one I don't
+[91:45.12] >> but that's it work and a huh
+[91:46.64] >> work work and family and uh that's
+[91:50.32] pretty much
+[91:50.72] >> tends to be like that for men after a
+[91:52.72] certain how old are you now
+[91:53.92] >> 30 31 huh 31 as of
+[91:57.44] >> like your birthday's already been this
+[91:58.96] year
+[91:59.92] >> September
+[92:00.88] >> 30 31 running into 32
+[92:03.12] >> [ __ ] you
+[92:04.00] >> well man I just turn 30 myself.
+[92:07.76] That's why I stopped at 30 and then I
+[92:09.52] was like you question
+[92:12.88] please please
+[92:19.68] context window. That's crazy, bro. This
+[92:22.00] has been a good chat, man. We should do
+[92:23.28] this again sometime.
+[92:24.88] >> Yeah. How long have we been talking?
+[92:26.88] >> 1 hour 40 minutes.
+[92:27.92] >> 1 hour 40 minutes.
+[92:29.12] >> Nice.
+[92:29.76] >> Yeah. Did you Did you feel like the time
+[92:31.84] passed?
+[92:32.56] >> Yeah, it was quick.
+[92:34.08] >> Yeah. Good stuff, man. Uh it's a lot of
+[92:37.04] information, frankly. I'm just realizing
+[92:38.64] how how much there is to do with AI.
+[92:42.24] Like, you know, um even even myself who
+[92:44.80] uses so much and I know so many people
+[92:46.24] who use so much like listening to you,
+[92:47.84] I'm like, "Fuck,
+[92:49.20] >> what are the top things that you use AI
+[92:51.44] for?
+[92:52.40] >> Mostly thinking.
+[92:54.00] >> Um most of my job is either strategy or
+[92:57.68] research, right?
+[93:00.16] Both of which are purely intellectual
+[93:02.00] jobs. M and so it's mostly this this is
+[93:03.92] what I'm thinking what's wrong with this
+[93:05.12] this is what I'm thinking what's wrong
+[93:06.00] with this if we do this run a simulation
+[93:07.52] and tell me right
+[93:08.48] >> have you come across this uh a Chinese
+[93:10.88] company they launched a AI model which
+[93:15.20] simulates human decision making
+[93:18.72] so
+[93:20.56] so let's say you have to take a decision
+[93:22.08] and you don't know what the
+[93:22.88] repercussions are going to be let's say
+[93:24.72] I have to take a decision in my company
+[93:26.16] that 200 people I don't know what the
+[93:27.28] repercussions will be because everybody
+[93:28.72] have everybody has their own kind of uh
+[93:31.84] uh you No repercussions on any decision
+[93:33.84] that you take, right? Ah, this one
+[93:36.24] >> simile. Huh?
+[93:37.20] >> Simile.
+[93:38.88] Yeah, it simulates human behavior. So,
+[93:42.16] it basically runs a simulation ecosystem
+[93:45.20] with a lot of AI humans, takes those
+[93:48.88] sessions in to see what will be the
+[93:50.96] impact of it and eventually gives you a
+[93:53.04] report that you know based on this human
+[93:56.40] simulation what you're thinking is right
+[93:58.08] or wrong. And say if you want to
+[93:59.52] simulate hey like I mean this is too big
+[94:01.20] of a simulation to be done but let's say
+[94:03.20] can universal basic income work in India
+[94:05.68] >> right so it does the multi-order human
+[94:08.16] simulation
+[94:08.64] >> simulation
+[94:09.28] >> oh [ __ ] yoga free yoga free
+[94:11.44] >> I was thinking that this is the only
+[94:12.72] thing that might not be able to work
+[94:14.48] because someone has to simulate the
+[94:16.16] simulation experiments every country
+[94:18.40] every government does it
+[94:20.08] >> right but it needs such a massive infra
+[94:23.60] they give it to a Mckenzie PWC or
+[94:25.60] someone to be able to do it
+[94:26.72] >> right right
+[94:27.44] >> right but Now there's a Chinese company
+[94:29.52] which is doing it.
+[94:31.36] >> Yeah,
+[94:31.60] >> I saw a video. I don't know if I don't
+[94:33.84] know why it's not uh maybe this is not
+[94:36.40] the actual website. I don't know. I saw
+[94:38.16] a video or just look for this video.
+[94:40.48] It's it's wild but again you said
+[94:42.32] simulation so it
+[94:44.24] >> so generally that is what I'm doing. So
+[94:45.84] for for me I found more utility in being
+[94:48.48] able to express
+[94:52.96] and then there is a bouncing partner
+[94:54.32] otherwise you would not have had um
+[94:56.40] research fairly simple on any of these
+[94:59.12] but beyond
+[95:01.44] very little like you know management so
+[95:04.16] to some extent you can think of setting
+[95:05.92] up systems manag
+[95:08.40] but very little what else
+[95:10.16] >> so you're not using in your content
+[95:13.76] you're not using AI in in your work work
+[95:17.28] per se.
+[95:17.92] >> I mean, yeah, sure. But it's not me
+[95:20.00] directly using it. Then my organization
+[95:21.44] is using it. They're bringing up scripts
+[95:22.88] for instance. Say I we cracked this
+[95:25.12] system of creating a 50 million view
+[95:27.60] funnel on Instagram which is completely
+[95:29.60] except I have to record. I I I think the
+[95:31.76] betting is in two direction. Either you
+[95:33.44] bet on the direction that all content
+[95:34.64] will be AI and you do AI avatars or AI
+[95:37.12] morphs like that's becoming very popular
+[95:39.12] or you realize key at the edges
+[95:42.00] personality will win. So power and if
+[95:46.56] you stand out then people will value
+[95:48.96] your personality even more and so from a
+[95:51.68] career POV we pick the personality route
+[95:55.04] reasons um I think if people know it's
+[95:58.16] AI value alignment
+[96:00.72] >> no by the way just to tell you I have
+[96:02.88] not picked a side here
+[96:04.64] >> right
+[96:05.04] >> I create content using AI because that's
+[96:07.20] the only way I can create content
+[96:08.56] >> and that's also your business like it's
+[96:10.16] very aligned with your value you or Vun
+[96:12.56] both value is
+[96:13.68] >> actually I'm not thinking on those lines
+[96:14.88] at all. So my direction thinking was if
+[96:16.64] you remember all of us started content
+[96:18.40] creation at the same time in some form
+[96:19.84] of fashion during pandemic we all met
+[96:21.68] and Raji you know we've had that
+[96:24.00] conversation Raj's podcast as well about
+[96:25.60] you right
+[96:28.24] >> you guys you went into education you
+[96:30.96] found your way in content you're
+[96:32.40] extremely good at it right so is Raj is
+[96:34.96] phenomenal at it and people took their
+[96:36.88] directions I took the business building
+[96:38.88] route and because of that
+[96:40.32] >> I was not able to create content at all
+[96:41.84] while we all started with content I see
+[96:44.16] right I didn't have the time to do it or
+[96:46.16] this was never my PR.
+[96:48.24] >> So AI enabled me to put my thoughts out
+[96:51.84] there in a format that works for people.
+[96:54.00] >> I see for scaling purposes we've thought
+[96:57.44] avatar because you know and this is like
+[97:00.32] way before and we were like
+[97:02.40] hypothetically running it
+[97:04.96] case if you're building if you're
+[97:06.24] becoming an influencer which is not the
+[97:07.76] influencer of the old time influencer as
+[97:09.04] in somebody was influenced which is a
+[97:10.16] huge thing by the way
+[97:13.28] correct.
+[97:15.52] emotions, people will not align
+[97:17.28] themselves with your values and
+[97:18.72] therefore you don't build any influence.
+[97:20.16] You may build an audience and you know
+[97:21.92] in content creation as a profession I
+[97:23.52] think one of the missing differences is
+[97:24.80] what influence do you have versus what
+[97:26.16] audience do you have and they're not the
+[97:27.92] same anymore right or uh influence
+[97:30.88] building which is which has a 10 year
+[97:32.16] long ROI is not the same as audience
+[97:33.92] building because that has only platform
+[97:35.12] ROI so we went over this discussion I
+[97:37.12] was at network school in Malaysia and I
+[97:39.20] was talking to a bunch of people about
+[97:40.32] this because you know it's such a
+[97:41.68] vibrant tech environment and that's when
+[97:43.60] we were having this conversation key AI
+[97:45.52] avatar side you can actually get a lot
+[97:48.00] of information across if you're doing a
+[97:49.60] news channel AI is best because you need
+[97:52.00] speed
+[97:53.60] use case different but if you're doing a
+[97:55.28] podcast and all my questions are done by
+[97:56.88] AI for web hub then I'm not different
+[97:59.44] from almost anybody else except I
+[98:01.44] learned a bunch of new things about how
+[98:02.80] you can prompt yourself better um I do
+[98:05.92] think however
+[98:08.88] um so we were designing a titling
+[98:12.32] testiment
+[98:15.60] we arrive at some kind of an
+[98:16.80] optimization strategy that strategy
+[98:19.04] would taken us a day or two to build in
+[98:21.44] terms of
+[98:23.52] check mark.
+[98:28.96] What I've realized about content is
+[98:31.04] generally it's very what's the word
+[98:33.84] you're playing with the average IQ of
+[98:35.52] people
+[98:37.12] respond for. If you give AI enough
+[98:40.16] context, it'll set the strategy that can
+[98:42.16] be executed on its own. What I learned
+[98:43.92] today is I can probably also automate
+[98:45.76] this.
+[98:46.32] >> Yeah. So that AI checks itself what is
+[98:48.72] happening after 24 hours instead of
+[98:50.24] somebody manual doing it
+[98:51.76] >> and that's the evolution I'm realizing
+[98:53.60] from this conversation but use so a lot
+[98:56.88] of it is just text usage we haven't done
+[98:58.48] agentic or wipe coding usage because
+[99:00.40] it's not being very important but today
+[99:02.96] I'm realizing processes automate that's
+[99:06.24] very interesting
+[99:07.04] >> no bro it's I think that is a real
+[99:10.08] arbitrage
+[99:10.80] >> I think you have an angle in there in
+[99:12.48] that I think you can be hired by
+[99:14.24] organizations to improve their workflows
+[99:16.08] in this too. I don't know if that's
+[99:17.76] something
+[99:18.32] >> that is not some I if if I start taking
+[99:20.48] that up that could become such a large
+[99:22.32] business because we get insane number of
+[99:23.60] inbounds
+[99:24.24] >> right
+[99:24.64] >> but I what I've realized over the course
+[99:27.20] of time is if you try to do 25 different
+[99:30.08] things you'll be good at nothing
+[99:31.36] >> right
+[99:31.92] >> so I've ch I'm trying I've learned it
+[99:35.52] the hard way that you should learn how
+[99:36.96] to say no
+[99:38.32] >> right even though it costs you on short
+[99:40.16] term
+[99:40.96] >> but I think it's a lot of money bro
+[99:42.64] maybe more than what you make because
+[99:44.08] organizational enterprise customers
+[99:46.00] That's what I'm trying to say, right?
+[99:47.12] It's like right now I have not been
+[99:50.00] optimizing for money at all.
+[99:52.00] >> Okay?
+[99:52.64] >> Because I know if I have to make money,
+[99:54.24] there are 10 other things that I would
+[99:55.84] do right now which will make me a lot
+[99:57.52] more money with where I sit today.
+[99:59.28] >> Like for instance,
+[100:00.56] >> I can't put it on camera. Okay.
+[100:02.32] >> Right. I can't put it on camera.
+[100:03.68] >> So you have some like AI hacks.
+[100:05.60] >> What do you mean? Like I mean I'm just
+[100:06.96] joking but what I mean is like you know
+[100:08.72] some of those guys were using it on poly
+[100:10.32] market
+[100:14.00] and they've created these strategies. I
+[100:15.92] mean I meant something like that but I
+[100:17.28] was joking. Huh?
+[100:17.84] >> I know I know what you're saying. I
+[100:19.60] think uh
+[100:21.84] >> No, not for this conversation.
+[100:23.28] >> I think you're smiling. I think you're
+[100:24.40] smiling. I think you're smiling. There's
+[100:25.92] something you're hiding. Huh?
+[100:27.12] >> No. No. Uh but I I like what I truly
+[100:30.16] feel is
+[100:32.24] uh you know anything that you believe or
+[100:34.96] that you want to get done today can be
+[100:37.76] done.
+[100:40.00] You just have to double click on each of
+[100:42.56] them and say that I want to go deeper. I
+[100:44.40] want to go deeper. I want to go deeper.
+[100:46.08] So uh for the titling experiment that
+[100:47.76] you did right because we have
+[100:49.84] >> so if you see our content ecosystem that
+[100:52.08] I've built out I don't know if you
+[100:53.04] follow my content ecosystem at all.
+[100:54.88] Everything is AI. Like I said,
+[100:56.56] Instagram, we've got to one and a half
+[101:00.00] million. Uh, and we were at like 150K 16
+[101:05.12] months back, 15 months back. And the
+[101:08.48] space is not easy. Education is not easy
+[101:10.32] at all.
+[101:11.12] >> And average views for us is like 600K,
+[101:13.20] 700K per video. YouTube we started same
+[101:16.96] 300k subs 70 80 100k views on an average
+[101:20.40] on AI content which is again globally
+[101:23.52] not many people are able to drive all
+[101:25.68] this has happened because of agentic
+[101:27.60] systems so the the title test that
+[101:31.36] you're talking about right there that's
+[101:32.56] a very interesting experiment that we
+[101:34.00] did in fact we are running basis of that
+[101:36.40] >> you know vid IQ right
+[101:37.52] >> I have yeah
+[101:38.88] >> vid IQ has outlier scores and on every
+[101:41.52] topic you can see what topics win and
+[101:43.52] outlier scores and all I told you right
+[101:45.52] browsing a browsing agents
+[101:47.76] >> browsing agents are AI using a computer
+[101:51.12] just like you
+[101:52.80] >> they are called browsing agents and
+[101:54.40] there's a benchmark called as OS world
+[101:55.92] right now and AI today can browse
+[101:58.72] websites that you have never browsed
+[102:00.24] before let's say you come across a new
+[102:02.08] website
+[102:03.28] >> you figure out how to browse it you
+[102:05.20] figure out how to use a video vid IQ
+[102:06.96] >> right
+[102:07.60] >> AI can figure that out better than you
+[102:09.44] by using a computer
+[102:11.76] by opening its own computer and doing it
+[102:13.28] so even if There is no API AI can use
+[102:15.68] that website like a human.
+[102:17.28] >> Got it.
+[102:17.84] >> So we have given the you know uh browser
+[102:21.12] access to this. So it scrolls through
+[102:23.36] every single day a chron opens a browser
+[102:26.64] puts the 10 15 20 keywords that we
+[102:28.96] create content on searches for it just
+[102:31.52] like a human on opens different browser
+[102:33.92] for so it's called agent swarm. So a
+[102:36.80] agent a browser use open for a specific
+[102:39.68] keyword goes through all in the last 24
+[102:42.64] hours. looks at outlier scores and
+[102:45.84] basically does this analysis of title,
+[102:48.80] topic and duration and thumbnail
+[102:52.56] parallelly for us.
+[102:55.12] So I'm looking up my AI is looking up
+[102:57.76] content
+[102:58.80] >> and how well is that done for you?
+[103:00.48] >> What do you mean how well?
+[103:01.36] >> Like are you able to measure if it's
+[103:04.00] done well for you or not?
+[103:04.96] >> And it's working for us.
+[103:05.84] >> Sure. Working for us but how much like
+[103:08.16] do you know the difference that it has
+[103:09.44] caused? So uh so far I mean it this
+[103:12.32] basically dictates dictates our content
+[103:14.32] strategy.
+[103:15.12] >> So it dictates from the very start.
+[103:17.44] >> Right. Right. Got it. Got it. Got it.
+[103:18.72] >> I mean you same goes with uh Instagram.
+[103:21.84] >> Right. Got it. Like AI is basically
+[103:24.24] watching I don't know tens of thousands
+[103:26.72] of pieces of content. So the thing is if
+[103:28.72] a AI content on any topic has gone out
+[103:31.52] on the internet in last 24 hours I have
+[103:33.68] a data point on that.
+[103:35.84] >> Very interesting.
+[103:36.80] >> At least of the ones that we are
+[103:38.00] finding. So we eventually end up finding
+[103:39.92] newer profiles
+[103:41.28] >> and the newer profiles gets added. So
+[103:47.28] after hundreds of scrolls then it's very
+[103:49.52] hard but
+[103:51.84] I'm tracking you for life my bro.
+[103:53.28] >> Oh wow. Damn. You're dangerous.
+[103:56.00] >> No like this. This is I'm basically
+[103:58.48] saying all this is possible and you can
+[104:00.56] apply things like this no matter
+[104:03.44] what you do content because you said
+[104:06.72] >> right. Right. No. Of course. Of course,
+[104:08.00] of course, of course, of course.
+[104:09.04] >> But I think what you guys are doing is
+[104:10.32] better than 99% of the people already,
+[104:12.24] >> right?
+[104:13.28] >> Kudos.
+[104:13.84] >> Thank you.

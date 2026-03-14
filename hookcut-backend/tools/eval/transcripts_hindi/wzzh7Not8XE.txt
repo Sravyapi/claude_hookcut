@@ -1,0 +1,201 @@
+[0:00.24] The programming world recently witnessed
+[0:02.08] something unprecedented. The fastest
+[0:04.08] rise of an open- source project in the
+[0:06.08] history of the universe. A project that
+[0:08.00] went from failed side project to over
+[0:10.16] 200,000 GitHub stars in a matter of
+[0:12.24] weeks. A project that's already been
+[0:14.00] acquired by OpenAI for probably some
+[0:16.00] absurd amount of money. That project, of
+[0:18.24] course, is OpenClaw, a tool that's not
+[0:20.56] much more than a basic JavaScript AI
+[0:22.48] rapper. But what most people fail to
+[0:24.40] realize is that every piece of software
+[0:26.32] you use today is built on the shoulders
+[0:28.24] of giants. And sadly, many of those
+[0:30.40] giants died in battle a long time ago.
+[0:32.64] Nearly every piece of meaningful
+[0:34.08] software out there is built with the
+[0:35.76] blood, sweat, and tears of highly
+[0:37.28] creative and talented programmers.
+[0:39.36] What's depressing, though, is that
+[0:40.72] almost all of those programmers never
+[0:42.40] got to reap the glory and money from
+[0:44.16] their own creations. In today's video,
+[0:46.08] we're going to look at the stories of
+[0:47.68] five open- source projects that achieved
+[0:49.76] a meteoric rise, then crashed out under
+[0:52.00] the weight of their own success. It is
+[0:53.68] February 26th, 2026, [music]
+[0:55.76] and you're watching the code report.
+[0:57.28] Yesterday, I was working on laying out
+[0:58.96] some sick beats with the Arteria
+[1:00.64] Microreak. But what I failed to realize
+[1:02.88] is that this commercial product is
+[1:04.64] actually based upon the incredible work
+[1:06.48] of the developer behind Mutable
+[1:08.24] Instruments, Emily Glay. It's an
+[1:10.24] incredible tool that can make Soundwaves
+[1:12.16] do anything you can imagine. It's coded
+[1:14.24] by hand in C++, but there was always a
+[1:16.80] problem in the background. Burnout. This
+[1:19.04] project was managed by a solo business
+[1:20.88] owner who just wanted something else in
+[1:22.56] life. And when she decided to move on to
+[1:24.32] a new venture, the project simply faded
+[1:26.40] away. But as the old saying goes, it's
+[1:28.64] better to burn out than to fade away.
+[1:30.48] And that's what happened to a popular
+[1:32.16] project called Faker.js, a project that
+[1:34.88] burned out in spectacular fashion. Faker
+[1:37.28] was a JavaScript library with millions
+[1:39.20] of weekly downloads that generated fake
+[1:41.44] data, which was awesome for automated
+[1:43.60] testing and astroturfing millions of
+[1:45.52] fake users for your social media app to
+[1:47.52] raise money from PCs. But one fateful
+[1:49.84] day in 2022, the developer Marac Squires
+[1:52.88] did something bold. He deleted the
+[1:54.56] source code, replaced it with the text
+[1:56.48] endgame, and published version 6.6.6 on
+[1:59.92] npm. And this instabric thousands of
+[2:02.16] JavaScript apps when they went to update
+[2:03.92] dependencies. The corporations that
+[2:05.76] depended on his work were rightfully
+[2:07.44] pissed. But he was pissed himself for
+[2:09.52] providing free work with no pay and made
+[2:11.68] this update in protest. Unfortunately
+[2:13.84] though, he was kicked out of his own
+[2:15.20] project and it was taken over by a new
+[2:16.80] developer and still lives on today. But
+[2:19.20] sometimes even projects that are
+[2:20.80] wellunded with big teams can still fail
+[2:23.12] like Pars. Before Superbase 1 and even
+[2:26.00] before Firebase 1, there was a backend
+[2:28.24] as a service called Pars in 2011 that
+[2:31.20] provided a database in Oth for mobile
+[2:33.12] apps. Developers loved it so much that
+[2:35.44] Facebook acquired it for $85 million in
+[2:38.16] 2013, which was considered a lot of
+[2:40.24] money back then. That gave the project
+[2:42.32] access to the most talented developers
+[2:44.00] in the industry. But just a few years
+[2:46.00] later in 2016, it was killed by Facebook
+[2:48.40] and shut down. Any developer using it
+[2:50.56] was forced to migrate to a new platform.
+[2:52.64] Zuck decided that hosting mobile app
+[2:54.56] infrastructure was a waste of time. But
+[2:56.56] the story has a semi-happy ending. The
+[2:58.80] code behind pars server was open-
+[3:00.40] sourced which allowed developers to
+[3:02.40] self-host and maintain it independently.
+[3:04.72] But if you're an elderly developer from
+[3:06.40] that time period, another project you
+[3:08.40] might remember is Meteor. one of the
+[3:10.40] first frameworks to do full stack
+[3:12.00] JavaScript before it was cool. In 2013,
+[3:14.64] Ruby on Rails was all the rage, but
+[3:16.72] Meteor looked like the next big thing
+[3:18.40] because it did all the same stuff, but
+[3:20.16] relied entirely on JavaScript instead of
+[3:22.32] the beautiful yet esoteric Ruby
+[3:24.32] language. Its design also used websocket
+[3:27.04] connections and stateful servers to
+[3:28.88] perform instant UI updates that felt
+[3:31.12] magical on early demos, but that was
+[3:33.28] also part of the problem. When apps went
+[3:35.20] into production, they were difficult to
+[3:36.96] maintain and didn't easily scale
+[3:38.88] horizontally in the cloud. When React
+[3:40.96] and Angular hit the scene a few years
+[3:42.56] later, devs decided it was best to
+[3:44.72] separate the client from the server
+[3:46.24] again, and its popularity slowly faded
+[3:48.40] into the abyss. Ironically, future
+[3:50.48] frameworks like Next would start
+[3:51.92] reintroducing these same concepts once
+[3:53.92] again. But timing is everything in
+[3:55.68] software, and Meteor was just born
+[3:57.68] before its time. Well, actually, maybe
+[3:59.76] timing isn't everything. Like in the
+[4:01.60] case of open Solaris in 2005, Linux was
+[4:05.04] the dominant open- source operating
+[4:06.72] system on servers. But this superior new
+[4:09.36] horse entered the race based on Sun
+[4:11.36] Micros Systemystems Solaris Unix. It has
+[4:13.68] the ZFS file system, Drace
+[4:16.08] observability, and even had containers
+[4:18.24] before Docker was a thing. On paper, it
+[4:20.48] was the far better OS. But then in 2010,
+[4:23.28] something really bad happened. Oracle
+[4:25.12] acquired Sun Microsystems, and almost
+[4:27.44] overnight, the project's future
+[4:28.96] evaporated. Open development stopped.
+[4:31.28] Source releases quietly disappeared and
+[4:33.44] the community realized the experiment
+[4:35.12] was over. Oracle put Solaris back behind
+[4:37.44] closed doors to protect its enterprise
+[4:39.28] business of forcing developers to fork
+[4:41.52] the last available code. So even though
+[4:43.36] the timing was great and it was
+[4:44.88] technically brilliant, it failed because
+[4:46.56] the ownership changed. But possibly the
+[4:48.88] most spectacular open- source failure of
+[4:50.88] all time is one you didn't see coming.
+[4:52.88] Mozilla Firefox, which is a prime
+[4:55.20] example of when open sourcing your code
+[4:57.28] goes wrong. You see, in the 1990s,
+[4:59.68] Netscape dominated the web browser
+[5:01.52] market share, but Microsoft wanted a
+[5:03.60] piece of that pie. So, what Microsoft
+[5:05.60] did was bundle Internet Explorer
+[5:07.60] directly into Windows, turning the
+[5:09.44] browser into a free default instead of a
+[5:11.60] product you had to choose. When Netscape
+[5:13.60] started losing market share, their
+[5:15.12] response was radical, open source the
+[5:17.12] browser and rallied the internet to its
+[5:18.96] side. The internet cheered, but the
+[5:20.96] problem is that the code was a mess.
+[5:22.72] Eventually, this code became the Mosilla
+[5:24.64] project, but the transition was a
+[5:26.48] nightmare that required a near total
+[5:28.16] rewrite of all its legacy code.
+[5:29.92] Meanwhile, Internet Explorer rapidly
+[5:31.84] captured new users through distribution
+[5:33.76] alone. But by the time Mosilla
+[5:35.28] eventually produced Firefox, which was
+[5:37.28] faster, safer, and just better. Netscape
+[5:39.84] itself was already dead. The company
+[5:41.68] lost the browser war, proving that open-
+[5:43.68] source can build better software, but it
+[5:45.76] can't beat platform control and
+[5:47.20] distribution. Ironically though, that
+[5:49.20] same failure revived browser competition
+[5:51.52] and laid the groundwork for the modern
+[5:53.20] web, meaning Firefox succeeded
+[5:54.96] technically by first losing
+[5:56.56] commercially. But if you dream of
+[5:58.00] building your own failed open- source
+[5:59.60] project in 2026, you need to know about
+[6:01.84] Code Rabbit, the sponsor of today's
+[6:03.68] video. They just launched a new feature
+[6:05.60] that lets you customize how their AI
+[6:07.44] code reviewer writes pull request
+[6:08.88] summaries. So instead of wasting time
+[6:10.80] decoding your team's PRs, you and your
+[6:12.88] team can tell Code Rabbit exactly what
+[6:14.72] information you want to see in every
+[6:16.16] summary. Like here, we made a dock
+[6:18.08] telling it to include what changed and
+[6:19.76] why with special callouts to any
+[6:21.76] branching changes or new dependencies. A
+[6:24.08] code rabbit will follow these
+[6:25.28] instructions to make sure that every PR
+[6:27.20] gets a clean summary that everyone can
+[6:29.04] quickly scan. It's already saving dev
+[6:30.96] teams hundreds of hours and you can try
+[6:32.72] it for free with the link below. This
+[6:34.48] has been the code report. Thanks for
+[6:36.00] watching and I will see you in the next
+[6:37.60] one.

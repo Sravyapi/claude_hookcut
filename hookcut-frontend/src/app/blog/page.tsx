@@ -5,21 +5,29 @@ import Header from "@/components/header";
 import AuthRedirect from "@/components/auth-redirect";
 
 export const metadata: Metadata = {
-  title: "HookCut Blog — Creator Tips, Hook Strategy | HookCut",
+  title: "YouTube Shorts Strategy Blog — Hook Types, Viral Tips, AI Tools | HookCut",
   description:
-    "Insights on YouTube hook strategy, viral Shorts creation, and AI-powered content analysis from the HookCut team.",
+    "Learn how to find viral hooks, repurpose long-form videos into Shorts, choose caption styles, and grow with AI-powered clip tools. Guides, comparisons, and creator strategies.",
+  keywords: [
+    "youtube shorts tips",
+    "video hook strategy",
+    "youtube shorts guide",
+    "viral shorts creation",
+    "AI video clipping blog",
+    "content repurposing tips",
+  ],
   openGraph: {
-    title: "HookCut Blog — Creator Tips, Hook Strategy | HookCut",
+    title: "YouTube Shorts Strategy Blog | HookCut",
     description:
-      "Insights on YouTube hook strategy, viral Shorts creation, and AI-powered content analysis from the HookCut team.",
+      "Guides on hook psychology, video repurposing, caption styles, and AI tools for YouTube creators.",
     type: "website",
     url: "https://hookcut.ai/blog",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HookCut Blog — Creator Tips, Hook Strategy | HookCut",
+    title: "YouTube Shorts Strategy Blog | HookCut",
     description:
-      "Insights on YouTube hook strategy, viral Shorts creation, and AI-powered content analysis from the HookCut team.",
+      "Guides on hook psychology, video repurposing, caption styles, and AI tools for YouTube creators.",
   },
   alternates: { canonical: "https://hookcut.ai/blog" },
 };
@@ -44,10 +52,11 @@ export default function BlogIndexPage() {
             HookCut Blog
           </div>
           <h1 className="text-h1 font-[family-name:--font-display] font-bold text-[var(--color-text)] mb-4">
-            Hook strategy for creators
+            YouTube Shorts strategy for creators
           </h1>
           <p className="text-[var(--color-muted)] text-lg">
-            Research, tactics, and insights to help you create Shorts that stop the scroll.
+            Hook psychology, repurposing workflows, AI tool comparisons, and
+            data-backed tactics to help you create Shorts that stop the scroll.
           </p>
         </div>
       </section>

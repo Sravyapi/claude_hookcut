@@ -1,0 +1,1638 @@
+[0:00.32] Hello all, my name is Krishna and
+[0:02.08] welcome to my YouTube channel. So guys,
+[0:03.84] another amazing crash course for
+[0:05.68] everyone of you out here. In this video,
+[0:08.80] we are going to discuss about LLM
+[0:10.88] chatbot and rag evaluation techniques.
+[0:14.08] Now this is one of the most important
+[0:16.80] videos that was requested by everyone
+[0:18.56] and the reason is very simple. Nowadays
+[0:21.04] people are focusing on how to probably
+[0:23.76] use different evaluation metrics uh for
+[0:26.00] any kind of applications that you
+[0:27.52] specifically develop. Let it be a
+[0:29.44] chatbot or a rag application or an
+[0:32.16] agentic workflow anything as such LLM
+[0:35.28] evaluation technique is must. So what we
+[0:38.56] going to do in this particular crash
+[0:39.60] course I think it'll be for a 1 hour uh
+[0:42.40] you know completely we'll discuss about
+[0:44.24] different different evaluation
+[0:45.36] techniques. Now for this we are
+[0:47.20] definitely going to use lang chain we
+[0:48.80] going to use lang already. If you know
+[0:51.44] uh in my previous videos I have covered
+[0:53.20] many things with respect to lang lang
+[0:54.88] graph and lang. Langmith is a kind of
+[0:56.72] cloud where you'll be able to you know
+[0:58.80] do all these evaluation stuffs. You can
+[1:00.72] probably go ahead and see the reports of
+[1:03.04] various evaluation techniques over
+[1:04.72] there. If you're developing agentic
+[1:06.32] workflows, you'll be able to see the
+[1:07.68] entire flow how the data how how each
+[1:09.84] and every node is basically getting
+[1:11.28] executed. So uh we will be referring
+[1:13.92] this uh here our focus will be on four
+[1:16.40] different things. AI judge evaluation,
+[1:18.64] gold gold standard evaluation,
+[1:20.16] functional test, human evaluations and
+[1:22.96] here we'll be doing something like data
+[1:24.80] construction, regression testing. We'll
+[1:26.88] also try to do human annotations. Um I
+[1:29.92] know this will be like a uh series of
+[1:32.00] videos. Right now we are just getting
+[1:33.92] started and this will be something
+[1:35.60] amazing to get started with right. So
+[1:37.76] please make sure that you watch this
+[1:39.12] video till the end. U please make sure
+[1:41.84] that you implement everything is given
+[1:43.92] with respect to code with respect to
+[1:45.36] return materials. uh I'll be sharing in
+[1:47.60] the description of this particular
+[1:48.64] video. So let's go ahead and enjoy this
+[1:50.24] particular video. Hello guys, welcome to
+[1:52.64] this new amazing module on understanding
+[1:54.64] about evaluation of chat bots and rag
+[1:57.12] application.
+[1:58.88] So this is one of the most important
+[2:01.28] module in this entire uh course that we
+[2:04.72] are specifically studying and our main
+[2:07.44] aim over here is basically to understand
+[2:09.76] like how do we go ahead and evaluate a
+[2:11.68] chatbot application or a rag application
+[2:13.92] itself. Inside this module again there
+[2:16.32] will be a series of videos wherein we
+[2:19.44] will be seeing examples for both chatbot
+[2:22.08] and different kind of rag applications
+[2:23.68] itself. Okay. So let's let's consider
+[2:26.56] this simple chatbot that you are able to
+[2:29.28] see in front of you. Right. Inside this
+[2:31.28] chatbot I'm just giving an input and
+[2:33.12] this chatbot is generating a kind of
+[2:34.80] output. Now when we see this kind of
+[2:37.52] chat bots right there are many question
+[2:39.36] that may come in your mind. Okay. The
+[2:41.52] first thing is that which LLM models to
+[2:44.32] use. Okay, which LLM models to use
+[2:49.36] because they are different different
+[2:51.76] models, right? You may use OpenAI
+[2:53.76] models, you can use Google generative
+[2:55.36] AI, Google Germany models. You can go
+[2:58.08] ahead and probably even use Grock
+[3:00.16] opensource LLM models. So yes, cost is
+[3:03.44] one of the factor which will actually
+[3:04.88] help you to decide. But more important
+[3:07.76] than cost is how accurate your output is
+[3:10.56] basically getting generated for a
+[3:12.40] specific use case. Right? So this is one
+[3:14.56] of the most important question. Now the
+[3:16.88] second thing is that the input and the
+[3:18.64] output that is basically getting
+[3:20.00] generated. How do we decide this LLM is
+[3:22.48] absolutely fine for this particular use
+[3:24.64] case. So here also we need to have some
+[3:29.92] ground truth
+[3:32.32] ground truth
+[3:34.24] for the output. Right? So here whatever
+[3:37.76] response is basically getting generated
+[3:40.08] we should be able to compare both of
+[3:42.32] this specific response along with the
+[3:44.32] groundput ground truth from this
+[3:47.20] specific input right and then we should
+[3:49.36] probably go ahead and decide that we how
+[3:52.32] we are going to probably compare the LLM
+[3:54.32] models right so this comparison of the
+[3:56.72] output that is getting generated is also
+[3:58.96] really really important okay so for this
+[4:02.80] data generation you need to really know
+[4:05.12] how to create the data. Right? Now when
+[4:09.76] I say data,
+[4:11.68] it should be something like this. For
+[4:13.12] this particular input, this should be my
+[4:15.28] output. Right? This should be the sample
+[4:17.92] of data that should be present with you.
+[4:20.08] Right? And based on this whatever output
+[4:22.96] is there and whatever the LLM model is
+[4:25.20] basically getting generated or whatever
+[4:27.68] LLM model is generating the output you
+[4:29.92] should be able to compare it and then
+[4:32.16] you should decide on some important
+[4:34.80] evaluation metrics. Okay. So third is
+[4:38.32] you should basically go ahead and decide
+[4:40.40] on the evaluation metrics.
+[4:44.96] Now the question arises in the
+[4:46.64] evaluation metrics who is basically
+[4:48.24] going to do this comparison and all
+[4:50.00] right. So here in this particular video
+[4:52.88] I will be showing you a specific
+[4:54.80] approach which is called as LLM as a
+[4:56.88] judge.
+[4:59.04] The LLM will be specifically deciding
+[5:02.24] because if we use LLM with a specific
+[5:04.88] prompt and then we try to compare the
+[5:07.84] output then definitely you should be
+[5:10.40] able to see some of the performance
+[5:12.08] metrics and this is for a chatbot for
+[5:14.00] rag application. I will be showing you
+[5:15.60] some other way. Okay. So here clearly
+[5:18.72] you can see that what are the steps we
+[5:21.04] are basically going to follow. Okay the
+[5:24.48] first step is that we definitely need to
+[5:26.80] gather data points. So if I say
+[5:29.36] step-by-step implementation the first
+[5:31.12] step is that we will be gathering some
+[5:32.88] data points. Gathering some data points.
+[5:38.96] When I say data points it should be
+[5:40.72] based on a specific input. It should be
+[5:42.40] there should be some kind of output.
+[5:44.16] Right? Now the question arises how this
+[5:46.56] data point should be you know and again
+[5:49.60] for this we will design one kind of
+[5:51.44] schema where I have some kind of input
+[5:53.44] and output okay output data points
+[5:57.44] then after having the specific data
+[6:00.00] points what we are going to do is that
+[6:02.72] second step
+[6:04.72] right to understand the correct next we
+[6:07.76] will use LLM as a judge
+[6:10.64] okay LLM as a judge so this step also So
+[6:14.64] I will be showing you how we can go
+[6:16.16] ahead and implement it. Coming to the
+[6:18.72] third most important step is based on
+[6:22.24] the evaluation metrics. Then we'll see
+[6:25.04] that how can we go ahead and apply
+[6:26.72] evaluation metrics. Then fourth we will
+[6:29.52] be doing the comparison with multiple uh
+[6:32.96] multiple LLM models. So we will do the
+[6:36.56] comparison with multiple LLM models and
+[6:40.56] whichever gives the best evaluation
+[6:42.72] metrics result we may select that LLM
+[6:46.00] model. Okay. So these are the steps that
+[6:48.96] we are going to do and for this we are
+[6:52.08] going to use lang.
+[6:55.52] Now why I'm using lang because we will
+[6:57.76] be able to do the entire tracking in the
+[7:00.80] langraph cloud on the lang cloud itself.
+[7:03.76] Okay. So let's go ahead and do this step
+[7:06.16] by step and see that how these things
+[7:08.56] can be implemented. Okay. So here you
+[7:11.12] can see chatbot and rag evaluation. I've
+[7:13.12] just put some definition for rag. You
+[7:15.76] know you can just go ahead and read it.
+[7:17.60] So first of all what I will do I will go
+[7:19.68] ahead and write chatbot
+[7:22.48] evaluation. Okay chatbot evaluation. Now
+[7:26.96] inside this chatbot evaluation the first
+[7:28.80] thing that you actually required I'll
+[7:31.28] open my command prompt. Okay. And
+[7:34.32] quickly I will go ahead and add my
+[7:38.80] library which is called as lang because
+[7:40.80] I require lang and one more library
+[7:42.72] which is called as openai. Okay so I'll
+[7:45.28] be using both this specific libraries to
+[7:48.80] do the installation. Okay because I will
+[7:51.36] be requiring it. Okay so here you can
+[7:53.12] see that because okay my spelling is
+[7:55.92] long. Langsmith
+[7:58.00] okay uv langsmith and openi. You can see
+[8:01.76] that I've installed both of them. So
+[8:04.56] again, please remember this name UV add
+[8:06.96] lang and open AAI. Now the first thing
+[8:09.68] is that if I'm using Langmith, okay, I
+[8:13.60] need to go ahead and create an API key
+[8:16.80] for Langsmith. Okay, so go to or just go
+[8:20.32] ahead and search for Langsmith. Okay, so
+[8:23.60] here you'll be getting the first page.
+[8:26.24] And from this lang, I will just go ahead
+[8:28.16] and click on sign up. And if you know
+[8:29.68] about lang uh it is a unified
+[8:32.16] observability and eval platforms that
+[8:33.92] team can debug test and monitor AI app
+[8:36.00] performance whether building with langin
+[8:38.08] or not. Okay. So that is the reason we
+[8:40.40] are specifically using this. Now once I
+[8:42.64] go ahead and sign up this is how it
+[8:44.64] looks like. Okay. Um and I hope uh from
+[8:48.88] this entire course you may have seen
+[8:50.48] about lang or you should know about lang
+[8:52.72] itself. Okay. So inside this you have so
+[8:54.96] many different tracing projects. You can
+[8:56.48] go ahead and trace do each and
+[8:58.24] everything whatever you want. Okay. Now
+[9:00.32] to get the API key I will go to
+[9:01.92] settings. Inside this settings I will go
+[9:04.48] ahead and create an API key. So let's
+[9:06.56] say I will go ahead and write
+[9:08.56] evaluation.
+[9:10.64] Okay. Then I will create the API key. So
+[9:13.36] I'll copy this API key. Then I'll go
+[9:16.40] back over here. Open my env file and
+[9:19.92] I'll paste it over here. See I'm pasting
+[9:22.08] it over here in front of you. I have to
+[9:24.48] create a key called as langsmith API
+[9:27.12] key. Okay. So I can go ahead and just
+[9:29.52] use this. So for my purpose I will be
+[9:32.16] using this. Okay. Langsmith API key.
+[9:35.92] Perfect. Uh now the next thing is that
+[9:38.80] once I have this key now it's time that
+[9:42.08] we go ahead and import all the specific
+[9:44.40] libraries. So first of all I will go
+[9:45.60] ahead and write import OS and then from
+[9:50.08] env import load_.env. PNB and I will go
+[9:54.08] ahead and initialize this two two keys
+[9:57.60] that I want to really really import
+[10:00.56] right so here I will write OS environ
+[10:05.68] one is the
+[10:08.24] lang API key so I will just go ahead and
+[10:12.16] set up the environment for langmmith API
+[10:15.12] key and I'll write os get
+[10:18.32] env
+[10:21.28] and then I will go ahead and use lang
+[10:24.72] API key.
+[10:27.12] Okay. Now once I've done this uh the
+[10:30.00] next thing is that I will just go ahead
+[10:31.20] and write os.environ for the same open
+[10:34.48] AI API key because I will be requiring
+[10:37.36] an open AI API key. So I'll just go
+[10:39.20] ahead and write os dot get env
+[10:43.68] openai
+[10:46.32] ai key. So once I initialize both of
+[10:49.76] them u then I can also go ahead and use
+[10:54.00] langsmith tracing so that I will be able
+[10:56.00] to trace each and everything. So I'll
+[10:57.84] write environment and here we will go
+[11:01.36] ahead and set this langmmith tracing is
+[11:04.96] equal to and I'll make it as true. Okay.
+[11:09.28] So these are the basic environment
+[11:11.44] variables that I have uh loaded it
+[11:14.24] right. I mean I have to load it. Now the
+[11:18.00] next step is that I will first of all
+[11:20.64] create the data points. Now create the
+[11:24.00] data points. Now see for creating the
+[11:26.48] data points basically means for a
+[11:27.92] specific input what will be the output.
+[11:30.32] And for this what we will do I will go
+[11:32.56] ahead and import from langmmith import
+[11:37.28] client. Now see if I go back to lang.
+[11:41.52] Okay if I go back over here. Okay, here
+[11:45.68] you'll be able to see that in Langmith
+[11:47.44] you will be able to do the observability
+[11:50.24] where you can trace the project, monitor
+[11:52.08] it. Here you can also evaluate. So
+[11:54.96] inside the evaluation you'll be able to
+[11:56.88] see that there is something called as
+[11:58.00] data sets and experiments. There is
+[12:00.16] something called as annotation NQ and
+[12:02.16] you can also do prompt engineering. And
+[12:04.00] finally if you want to do deployment you
+[12:05.52] can go ahead with langraph dep platform
+[12:07.44] deployment uh platforms right where we
+[12:10.24] have already seen langraph studio. Now
+[12:13.20] here I'm planning to use this
+[12:14.72] evaluation. Now inside evaluation you
+[12:17.12] will be having something called as data
+[12:18.56] sets and experiment. So the main aim of
+[12:22.72] this particular section in the lang is
+[12:25.04] that you can go ahead and create your
+[12:26.88] new data over here and you can also
+[12:28.56] evaluate it directly over here by
+[12:30.24] performing some experiments. Okay. So we
+[12:33.68] are going to go ahead and use this
+[12:35.60] specific module itself. Okay. Now the
+[12:38.72] first step is that I want to go ahead
+[12:40.08] and create some data and store it over
+[12:42.48] here. Okay. So let's go ahead and do
+[12:44.48] that. I will go ahead and store it
+[12:46.80] directly over here. So I'll go over here
+[12:50.16] and I'll import from langmmit import
+[12:51.92] client. I will quickly go ahead and
+[12:54.16] initialize my client. So it'll be like
+[12:56.64] client of client. Okay. Um this will
+[13:00.56] basically be my variable. So I'm
+[13:02.00] initializing a client. This client will
+[13:04.24] be responsible in uploading the data
+[13:06.72] set. So I will say define the data set
+[13:08.96] and these are like these are your test
+[13:12.56] data
+[13:15.20] test data. Okay. Now I will go ahead and
+[13:18.56] write data set name is equal to let's
+[13:22.00] say uh it's a simple chatbot
+[13:26.64] evaluation. I'm just going to go ahead
+[13:28.40] and write like this. Okay. Now the
+[13:31.52] question rises how do we go ahead and
+[13:34.24] create a data set? So data set is equal
+[13:36.16] to client dot create
+[13:40.72] there's a there's a method which is
+[13:42.72] called as client.tcreate data set and I
+[13:44.88] will give the data set name. Okay now
+[13:50.16] this will be an empty data set but
+[13:51.84] inside this what see this is the
+[13:54.56] function if you see this function it
+[13:56.24] creates a data set in langmmith API but
+[13:58.96] inside this I need to insert some
+[14:00.56] examples right. So here I can go ahead
+[14:03.20] and write client dot create examples.
+[14:08.00] See there are so many different
+[14:09.20] different examples. U there are so many
+[14:12.32] different different inbuilt functions
+[14:13.68] like this. Create commit, create chat
+[14:15.92] example, create annotation q, create
+[14:18.24] data set, right? Create data set we have
+[14:20.00] used. I'll just go ahead and write
+[14:21.20] create examples. Okay. Now create
+[14:23.36] examples. Here you can see you can give
+[14:24.88] the input data set ID, data set name.
+[14:27.36] All these are parameters. Create a data
+[14:29.84] set example in the lang API. Examples
+[14:32.16] are row in a data set containing the
+[14:33.68] input and the expected output only. It
+[14:35.44] requires an input or expected output. So
+[14:37.92] here I will just go ahead and write
+[14:40.00] something like data set
+[14:43.28] ID. First of all I need to go ahead and
+[14:44.72] give the ID. So for this I will say data
+[14:46.88] set dot id. Okay. So if I'm directly
+[14:50.00] giving this dot ID, right? Whatever
+[14:52.24] variable this is, this will by default
+[14:54.80] initialize some kind of ID as the data
+[14:57.04] is getting inserted. Now the next thing
+[14:59.20] is that we will go ahead and set up our
+[15:01.60] examples. Now this is where we will be
+[15:04.00] putting our data set. Now with the help
+[15:07.28] of chart GPT and when I was seeing the
+[15:10.00] documentation I've created some data set
+[15:11.76] over here. You can see over here. So
+[15:14.88] inside this data set you have like input
+[15:16.80] and output. So if you see it is like
+[15:20.40] this is input this is output. It should
+[15:22.08] be in the form of key value pairs. Like
+[15:24.48] question is what is lang chain? Answer
+[15:26.40] is a framework for building LLM
+[15:27.92] application.
+[15:29.68] Then question what is lang then output a
+[15:33.44] platform for observing this. Then
+[15:35.20] similarly like this we have done this
+[15:37.04] and it should be like a uh in inside a
+[15:39.52] list of examples. So guys now once we
+[15:41.92] have created this as an examples all I
+[15:44.48] will do is that I will just go ahead and
+[15:46.24] execute this code. Okay. Now after this
+[15:48.88] code is executed right. So what will
+[15:50.96] happen is that directly this all records
+[15:53.68] will directly get created inside lang.
+[15:55.92] So let's see that. So I'm just going to
+[15:57.92] erode this. So it is giving me an error.
+[16:01.20] Let's say conflict for data set. Uh okay
+[16:05.20] data set name. I'll just go ahead and
+[16:06.80] give some other data set name. Just a
+[16:08.64] second. I think I have created something
+[16:11.68] like this. Okay. So I'll say chatbot
+[16:14.16] evaluation. I think I earlier I created
+[16:17.20] this. So let me just go ahead and
+[16:18.56] execute this now. Now here you can
+[16:20.48] clearly see that my five records has got
+[16:23.28] inserted. Now it's time that we go ahead
+[16:25.68] and see this specific data set over
+[16:27.44] here. So here you can see simple chatbot
+[16:30.48] uh see simple chatbot evaluation earlier
+[16:32.88] I had created it. So that was an error.
+[16:34.88] So I got this chatbot evaluation.
+[16:38.24] See all the five records are there. So
+[16:40.88] whatever name you are specifically
+[16:42.48] giving you will be able to see that
+[16:44.24] specific record. And you can see just
+[16:46.16] now it has got updated. Uh right now
+[16:47.84] it's 3:31 p.m. Right? So all these
+[16:50.88] specific records has got updated. So if
+[16:52.88] you see over here, this is my input.
+[16:54.40] This is my reference output. So this is
+[16:56.56] my ground truth. Okay? I'm just
+[16:59.04] considering this as my ground truth. So
+[17:01.60] this is how you go ahead and insert the
+[17:04.96] data. Okay. And here you can clearly see
+[17:07.68] what I have actually done. I've created
+[17:09.20] a client. I've given a data set name. We
+[17:11.60] have created an empty data set. And then
+[17:13.36] we are adding any number of examples as
+[17:15.52] we want. Okay. So you can also automate
+[17:18.16] this particular process. Let's say if
+[17:19.68] there are specific data set some team
+[17:21.92] are actually working they are doing the
+[17:23.68] annotation putting inputs and outputs
+[17:25.76] you can also directly read that
+[17:27.36] particular data set from a CSV file from
+[17:29.20] an excel file and directly go ahead and
+[17:31.20] insert it over here. Right. So this is
+[17:33.52] the first step wherein we specifically
+[17:36.40] discussed that we need to go ahead and
+[17:38.64] gather some data points and create it
+[17:40.32] for us. Okay. Now in the next step what
+[17:43.60] we are going to do is that as I told you
+[17:45.92] right we are going to use LLM as a
+[17:47.92] judge. Right. So if you're using LLM as
+[17:50.48] a judge LLM will probably whatever the
+[17:54.00] LLM model is generating the output we
+[17:56.16] will go ahead and see the correctness
+[17:58.16] for that specific output and we'll build
+[18:00.48] up a second step and that is what we are
+[18:02.48] going to discuss in the next video. So
+[18:04.72] yes this was it from my side. I'll see
+[18:06.16] you all in the next video. Thank you.
+[18:08.88] Hello guys. So we are going to continue
+[18:10.56] the discussion with respect to
+[18:11.84] evaluation of chatbot. Already in our
+[18:13.92] previous video we have seen that how we
+[18:16.32] can go ahead and directly create a data
+[18:17.92] points and insert even in the lang cloud
+[18:21.44] right. So we have done that both step
+[18:23.52] and you could see that inside my lang
+[18:25.92] cloud we are also able to see this
+[18:27.76] particular data set. Now we can apply
+[18:30.32] different different evaluation metrics.
+[18:32.88] Now already I have said that the kind of
+[18:34.64] evaluation metrics that I'm actually
+[18:36.16] going to apply is that I will create LLM
+[18:38.48] as a judge who will be responsible in
+[18:41.60] evaluating
+[18:43.28] the output that is generated by any LLM
+[18:45.60] itself. Right? So for this what I will
+[18:47.36] do I will quickly go back to my coding
+[18:50.80] file and here I will go ahead and write
+[18:54.16] um we are going to go ahead and define
+[18:56.48] the metrics and as I said for this we
+[19:00.56] will be using llm
+[19:03.84] llm as a judge okay now for this quickly
+[19:09.84] what I am actually going to do I will
+[19:13.36] just go ahead and import so I'll write
+[19:16.24] import open AI. Now see when I say uh
+[19:19.60] I'm using LLM as a judge I will create a
+[19:22.88] function wherein I will say that hey
+[19:24.96] this is the prompt what LLM should
+[19:26.96] basically follow based on the output
+[19:29.60] that is generated by any LLM that we are
+[19:31.68] using we need to go ahead and judge
+[19:33.92] whether those response based on the
+[19:35.84] input is correct or not. Okay now along
+[19:38.88] with this I will go ahead and import
+[19:40.40] from langmmith import wrappers.
+[19:44.00] Okay, then I will go ahead and define my
+[19:47.28] open AAI_client.
+[19:49.68] This client will be my OpenAI model. So
+[19:53.20] here I will say OpenAI client is equal
+[19:55.84] to rappers dot wrap_AI.
+[20:01.36] Now if you see this wrappers, this
+[20:03.20] module provides a convenient tracing
+[20:05.44] wrappers for popular libraries. See in
+[20:07.20] langu
+[20:09.12] since we also want to make sure to trace
+[20:11.92] each and every call that is specifically
+[20:13.84] happening in the LLM we can directly use
+[20:16.24] this particular wrappers and with the
+[20:18.96] help of this wrap open AAI it will patch
+[20:21.20] the open AAI client to make it traceable
+[20:23.20] that's it okay we are just using the
+[20:25.68] specific inbuilt function over here it
+[20:27.92] supports chat and responses API sync and
+[20:30.40] sync opAI clients and all so you'll just
+[20:33.20] understand why I'm actually making it as
+[20:35.44] wrap openi Okay. And here we will go
+[20:38.16] ahead and call our open AAI do. OpenAI
+[20:40.80] for using any specific models. Okay. Now
+[20:43.92] the next thing is that we will go ahead
+[20:45.52] and use some kind of instructions. Okay.
+[20:48.64] So instructions over here will be
+[20:50.56] evalore instruction. I'm saying that you
+[20:52.96] are a expert professor specializing in
+[20:55.60] grading student answer to the question.
+[20:58.16] Okay. So this is the evaluation
+[21:00.72] instruction. So now I'm just going to go
+[21:03.52] ahead and use one evaluation metric that
+[21:06.40] is correctness. I'll be defining this as
+[21:08.48] my own custom one. Here we will be
+[21:11.04] giving our inputs. The inputs will be in
+[21:13.68] the form of dictionary,
+[21:16.16] the output will also be in the form of
+[21:18.56] dictionary.
+[21:20.32] Then there will also be a reference
+[21:22.64] output. Okay, reference outputs. And
+[21:26.16] this output reference output is the
+[21:28.56] ground truth output. Okay, so this will
+[21:30.72] also be in the dictionary and this
+[21:32.88] function should return a boolean value.
+[21:35.04] Okay, saying that how accurate or how
+[21:37.84] whether it is correct or not. That's it.
+[21:39.68] Okay, now what we are going to do over
+[21:42.40] here is that I will go ahead and define
+[21:44.56] a variable. Inside this variable, I'm
+[21:47.52] just saying that hey uh let me see this
+[21:50.88] output spelling is wrong. Okay, so
+[21:52.96] inside this I'm defining a prompt which
+[21:55.92] is saying you are grading the following
+[21:57.76] question. So this is my input. So here I
+[22:01.12] will go ahead and define this as
+[22:02.24] outputs. Okay, you're grading the
+[22:03.92] following question. Here is the input of
+[22:05.84] question. Here is the real answer. You
+[22:08.16] are grading the following predicted
+[22:10.08] answer. Okay. And this answer will be
+[22:11.92] generated by the chatbot. Respond with
+[22:14.24] correct or incorrect grade colon. Okay.
+[22:17.28] So here it will either respond correct
+[22:20.08] or incorrect and it should be a boolean
+[22:22.32] value as returned. Right. And that grade
+[22:24.40] is equal to that specific value will
+[22:26.08] come automatically. Now inside this
+[22:28.40] particular function what we are going to
+[22:30.32] quickly do is that we are going to go
+[22:32.32] ahead and define our response variable
+[22:34.32] and here I'm going to use my
+[22:35.68] openi_client
+[22:37.36] dot chat completion chat dot completions
+[22:42.24] dotcreate okay create and here we going
+[22:46.80] to use model is equal to gpt 40 mini
+[22:52.64] okay
+[22:55.44] temperature
+[22:57.04] is equal to zero comma messages is equal
+[23:02.00] to
+[23:03.52] here I will be defining two important
+[23:06.64] keys. So here one comma and the another
+[23:10.32] comma in the first we are going to
+[23:12.72] define the role. So ro will be nothing
+[23:15.68] but system ro col colon system
+[23:20.80] and then my content should be whatever
+[23:24.40] content we have specifically given in
+[23:26.48] the eval instruction. So this is a
+[23:28.24] system prompt. You can just consider
+[23:29.76] that I'm providing a system prompt to my
+[23:33.60] U LLM model saying that hey you are an
+[23:36.48] expert professor specialized in grading
+[23:38.40] students and all right then the role
+[23:41.20] next role will be for the user because
+[23:43.28] user will be supplying the message. So
+[23:45.68] here uh I will just go ahead and give my
+[23:48.96] user and content
+[23:52.48] will be nothing but it will be user
+[23:55.36] content. Okay, whatever user_content is
+[23:58.80] basically given over here. So this is
+[24:01.20] what is the user giving as a message
+[24:03.68] over here itself. Okay, so once this is
+[24:06.64] done uh then after this you can just go
+[24:10.40] ahead and write dot choices of zero and
+[24:14.56] you just read the last messages
+[24:16.96] message.content.
+[24:18.56] Okay. So this is how you specifically
+[24:20.48] return it and uh it will just return see
+[24:25.36] here it is responding either correct or
+[24:27.28] incorrect. Right. So what I will do if
+[24:31.52] it should definitely return a boolean
+[24:34.00] value. So here what I will do I will
+[24:35.60] write
+[24:37.20] something like this. Okay. Correct. If
+[24:40.00] the response is correct it is just going
+[24:41.68] to give as true. Okay. If the response
+[24:44.64] is correct it is going to give true.
+[24:46.00] Otherwise it will give false. Okay. So
+[24:48.48] this is what we have basically done with
+[24:50.64] respect to defining metrics. Okay. Now
+[24:53.28] along with this I can also define one
+[24:55.12] more metric. See this is just one of the
+[24:57.28] metric wherein this is the system
+[24:59.92] prompt. This is the user question. We
+[25:01.76] are just comparing it and uh this
+[25:04.40] particular openAI client is basically
+[25:06.32] making the decisions out there. Right
+[25:08.48] now what we'll do we will go ahead and
+[25:10.24] create one more metric. And this metric
+[25:12.16] is something called as concision. Okay,
+[25:14.56] I'll talk about this. But this metric is
+[25:16.64] very simple. It is just checking over
+[25:19.20] here. I'll just go ahead and give it
+[25:22.08] checks whether
+[25:24.24] there's just like one kind of metrics I
+[25:26.40] have applied it from my end. So here
+[25:28.88] what we are doing is that here we are
+[25:31.04] checking whether the actual output is
+[25:32.64] less than two times the length of the
+[25:34.24] expected results. That's it. Okay. So
+[25:36.56] here you can see I have the output I
+[25:38.00] have the ref reference output. I'm just
+[25:39.68] comparing. Okay. If the length of output
+[25:42.40] response is less than 2 into length of
+[25:44.56] this. So if both this satisfaction uh if
+[25:48.40] both this criteria has been satisfied
+[25:50.08] that basically means it has passed both
+[25:52.40] this particular metrics. Okay. So this
+[25:55.04] is my first metric and this is my second
+[25:56.80] metric. Now u the third important step
+[26:02.32] will be like how to go ahead and run the
+[26:04.96] evaluation. Okay. and understand this
+[26:08.00] specific evaluation should directly run
+[26:10.64] in the lang also and it should should
+[26:13.20] you should be able to see the answer.
+[26:15.36] Okay. Now that specific thing we will
+[26:18.08] try to see in the next video. So finally
+[26:20.40] guys we are into the run evaluation step
+[26:23.68] wherein we are going to specifically run
+[26:25.44] the evaluations for this particular
+[26:27.04] chatbot and uh if you remember we have
+[26:29.92] created two different metrics. One is
+[26:32.56] this correctness function and the other
+[26:34.24] one was the concision function. Okay. So
+[26:37.04] based on both these functions we are
+[26:38.72] going to define the evaluations now.
+[26:40.40] Okay. We we have to run uh I can
+[26:42.56] basically say that these are my
+[26:44.08] evaluation metrics and based on this we
+[26:45.92] need to run every evaluations. So first
+[26:48.48] of all before I go ahead and start
+[26:51.52] running any evaluation. First of all
+[26:53.92] what I will do is that I will just go
+[26:55.60] ahead and create a default instruction.
+[26:57.84] So this is my default instruction. It
+[27:00.08] responds to the user question in a short
+[27:01.92] concise manner. One short sentences.
+[27:04.40] This is what you need to generate with
+[27:06.00] respect to the llm and then I will
+[27:08.48] define one function which is called as
+[27:10.40] my app. Now inside this my app I give my
+[27:14.64] model like gp4 mini there will be a
+[27:17.04] question and there will be an
+[27:18.24] instruction based on this because my lm
+[27:21.12] needs to generate an output and then for
+[27:22.96] that particular output we will go ahead
+[27:25.12] and run both this particular metrics.
+[27:27.20] Right? So here you can see I'm returning
+[27:29.28] openai client.hatcomp completion.create.
+[27:31.44] I have model I have this message
+[27:32.96] instruction question and we are
+[27:34.24] basically giving this. Okay. So once I
+[27:36.48] execute this here you can actually see
+[27:38.56] this particular function will be called.
+[27:40.56] Okay. Now uh now this function needs to
+[27:45.12] be called for every question inside my
+[27:47.76] data set. So what I will do since this
+[27:52.88] and this function is nothing but it is
+[27:54.72] basically my chatbot function you can
+[27:56.32] just say right my app chatbot what it is
+[27:59.28] doing it is basically taking the
+[28:00.56] question model instruction and it is
+[28:02.56] generating some kind of output so I will
+[28:06.16] go ahead and call this for every input
+[28:09.92] question right so I will call my app for
+[28:15.68] every data points and then we will
+[28:17.76] compare Okay.
+[28:19.92] So for this what I will do I will go
+[28:21.76] ahead and write I will create a function
+[28:23.36] called as ls target input is equal to
+[28:25.84] str
+[28:27.44] whenever I give an input. So that input
+[28:29.28] question needs to be mapped over here.
+[28:31.20] Okay. And this function needs to be
+[28:32.56] called for every input. Okay. U input of
+[28:36.08] question is basically every questions
+[28:37.68] over there and this my app will be
+[28:39.36] called and for that every response will
+[28:41.28] be generated. So once you have both
+[28:43.04] these functions now we can go ahead and
+[28:45.44] run our evaluation. So run our
+[28:48.16] evaluation.
+[28:49.76] Okay. So for this I will go ahead and
+[28:51.84] write experimental or experiment results
+[28:56.00] is equal to client dot evaluate
+[29:00.56] and here I'm going to specifically use
+[29:02.56] ls target. So this is the function that
+[29:06.00] is basically going to take every inputs.
+[29:09.04] uh so I'm giving this this is my uh I'll
+[29:12.32] say your AI system which will be
+[29:14.96] generating the response then I have my
+[29:17.60] data I need to provide my data set so
+[29:19.76] data set name um this data is the same
+[29:24.32] data that we had actually worked on
+[29:26.24] right the third important parameter is
+[29:28.40] something called as evaluators now
+[29:29.84] inside this we have created two function
+[29:31.68] one is correctness
+[29:33.68] concision okay and then fourth is I will
+[29:38.56] Just go ahead and write experiment is
+[29:40.48] equal to or experiment prefix like what
+[29:44.48] should be the name of the experiment if
+[29:46.48] see for this particular data we need to
+[29:48.08] run an experiment right so I will just
+[29:49.84] go ahead and write this as my name so
+[29:52.32] this will be nothing but open AAI
+[29:55.04] 40 mini okay
+[29:58.24] prefix name for my experiment so once I
+[30:00.48] go ahead and execute this now see the
+[30:02.08] magic or I will say hey uh open AAI4
+[30:06.08] mini I'll say this is for my chatbot and
+[30:10.00] let's see whether this will run or not.
+[30:11.76] Okay, so as soon as I run this, you see
+[30:14.64] this. Okay, it'll take some time based
+[30:17.20] on all the input question and here you
+[30:19.12] can see you can view the v uh evaluation
+[30:21.76] results for the experiment in this
+[30:23.20] specific uh uh URL. Okay, now what I
+[30:26.64] will do, please remember this name
+[30:28.48] openAI 40 mini chartbot. Okay, I will go
+[30:31.36] back to my lang quickly and I will go to
+[30:35.04] data sets and experiments. So here you
+[30:37.60] can see chartbot evaluation name is
+[30:40.08] there. Okay. Uh and here you can see
+[30:42.64] this concision and correctness and this
+[30:45.60] is my experiment name right. So for
+[30:48.48] correctness it is somewhere around 6.
+[30:51.12] For concision it is somewhere around
+[30:53.04] 0.40. Okay. And if you see for the
+[30:56.24] examples over here uh it is there
+[30:59.12] evaluators pair-wise experiments also
+[31:01.60] there are multiple options over here.
+[31:03.28] But I think I will just go ahead and
+[31:04.88] click this. Now you'll be able to see
+[31:07.28] your input, your reference output and
+[31:09.04] your output. So this is the output that
+[31:11.36] is here. You can see reference output is
+[31:13.68] over here. Okay,
+[31:16.08] this is the output that has got
+[31:17.60] generated. Okay, and we are basically
+[31:20.32] comparing it and based on this concision
+[31:22.16] and correctness some information you're
+[31:24.40] able to get. Isn't it just amazing? Now
+[31:28.08] there may be scenarios that you also
+[31:29.60] want to use different different models.
+[31:31.52] Right? So for this also you can go ahead
+[31:33.68] and try different different models. So
+[31:35.04] here what I will do I will go back to my
+[31:36.96] code and I will rebuild this specific
+[31:39.76] function. See this function over here
+[31:42.48] takes input right
+[31:45.12] and here I will go ahead and call this
+[31:46.96] function for every data points. I'm
+[31:49.12] giving a response my input. So in my my
+[31:51.76] input right you can also go ahead and
+[31:53.20] give your uh model name. So here by
+[31:55.92] default it was GP4 mini. Let's try some
+[31:58.08] other model. So here I will go ahead and
+[32:00.32] say after question model is equal to and
+[32:03.04] let's try GPT4 turbo
+[32:06.56] for turbo. Okay. And let's call this
+[32:12.08] and now my LS target is done. Now I'll
+[32:14.16] call the same experiment and this time
+[32:16.56] I'll write for turbo turbo chartbot.
+[32:21.84] Okay. And let's execute this. Now this
+[32:24.72] will be my second experiment that will
+[32:26.16] get created.
+[32:28.48] So once I go ahead and see here in my
+[32:31.92] chatbot evaluation this will take some
+[32:34.08] time. So this is my second experiment
+[32:36.16] and here the accuracy is very good.
+[32:38.08] Correctness is one. Okay I think it is
+[32:41.76] one only. So it's still things are
+[32:44.32] getting generated. It is taking some
+[32:45.92] time. Yeah now it is there. And here you
+[32:48.96] can see that correctness is one. And
+[32:51.04] based on this the concision is less.
+[32:53.68] Okay. Correctness. Okay. It is 6. I
+[32:56.48] thought it was one. I think it just got
+[32:58.48] reduced because 6 and 02. So if you get
+[33:01.20] an option whether I should go ahead with
+[33:02.96] OpenAI 4 mini or OpenAI 4 Turbo
+[33:05.36] definitely the option will be OpenAI 4
+[33:07.60] mini. Right. So guys I hope you like
+[33:09.92] this particular video. Now what you can
+[33:11.76] do is that you can even try with
+[33:13.20] different different models different GPT
+[33:15.04] versions specifically with respect to
+[33:16.64] OpenAI and you can just go ahead and see
+[33:18.88] with respect to that particular CC and
+[33:20.48] you can also observe them in the uh
+[33:22.00] langu. But I hope you were able to
+[33:24.24] understand this particular video. This
+[33:25.60] was about rag evolution for a chatbot.
+[33:27.92] Okay. And here all the steps that we
+[33:30.40] specifically followed. We created data
+[33:32.00] points. Uh we made LLM as a judge. We
+[33:35.52] created multiple metrics evaluation
+[33:37.28] metrics and we compared multiple LLM
+[33:38.96] models. Now based on this you can go
+[33:40.48] ahead and select any of the model that
+[33:42.08] you like. Now what we going to do in the
+[33:44.80] next video in the upcoming videos we are
+[33:46.64] going to see for a rag application. Now
+[33:48.48] see for rag application what should be
+[33:50.56] the usual metrics and how we can use LLM
+[33:53.60] as a judge to probably go ahead and
+[33:56.00] create this because see at the end of
+[33:57.60] the day in rag you have third party
+[33:59.92] datas you have company data you may have
+[34:02.56] internal data so for this how we can go
+[34:05.20] ahead and apply the evaluation metrics
+[34:06.80] that is what we are going to discuss in
+[34:08.16] the next video so I hope you like this
+[34:10.40] particular video I will see you all in
+[34:11.68] the next video thank you take care hello
+[34:13.44] guys so we are going to continue the
+[34:15.36] discussion with respect to evaluation
+[34:16.72] metrics in this particular video and in
+[34:18.48] the upcoming series of videos we are
+[34:20.00] going to discuss about rag evaluation.
+[34:23.28] Now in rag evaluation we are going to
+[34:25.04] specifically talk about topics like how
+[34:26.96] to create test data sets, how to run rag
+[34:30.16] app with those specific test data sets,
+[34:33.36] how to measure rag performance
+[34:36.96] again by using different different
+[34:38.56] evaluation metrics. So all these things
+[34:41.04] we will discuss it step by step. Okay.
+[34:43.92] And again here we are going to use
+[34:45.84] langsmith since uh in the back end you
+[34:48.56] will be able to see that particular data
+[34:49.92] you'll be able to run experiments right
+[34:52.96] so we will be specifically doing all
+[34:55.84] these things okay so in order to make
+[34:59.68] you understand like how we are going to
+[35:02.56] go ahead with the rag evaluation
+[35:05.12] uh there are some things and I I'll just
+[35:07.60] show you workflow to understand which
+[35:09.84] all evaluation metrics also we will be
+[35:11.76] discussing about okay so Let's consider
+[35:14.00] this particular diagram. This diagram
+[35:15.52] was actually given in the documentation
+[35:17.44] of Langsmith itself. Okay. And with
+[35:20.24] respect to this particular documentation
+[35:21.92] here you can see that here is my search
+[35:24.48] retriever. Okay. It can be a document
+[35:26.64] search, it can be a web search or
+[35:28.00] anything as such. So here when we give
+[35:30.48] the question and with respect to this
+[35:32.64] particular search when we get this
+[35:34.16] relevant documents the first important
+[35:36.40] performance metric is that should we not
+[35:39.12] check whether these documents are really
+[35:41.36] relevant or not? Okay, based on this
+[35:44.00] particular input question. So this can
+[35:46.16] be one of the metrics. The other metrics
+[35:48.80] is that once we generate the output by
+[35:52.32] taking this particular relevance
+[35:53.60] documents to and uh integrating it with
+[35:56.24] LM or giving it to the LLM in the form
+[35:58.24] of context once we generate the answer
+[36:00.88] their second important metrics is that
+[36:02.64] is the answer grounded in the documents.
+[36:05.28] Okay. So we basically go ahead and find
+[36:06.88] out groundness. We go ahead and find out
+[36:09.12] retrieval relevance. The third important
+[36:11.76] thing is that once we get the output we
+[36:14.16] try to find out the correctness.
+[36:16.40] Correctness basically means does the
+[36:18.08] answer match the ground truth answer.
+[36:21.04] Okay. So because we should also have
+[36:23.36] some kind of ground oath right and with
+[36:24.96] respect to correctness the answer that
+[36:26.80] is generated is it similar to the ground
+[36:28.64] truth answer or not? Okay. One more very
+[36:31.60] important thing is that with respect to
+[36:33.28] the answer relevance does the answer
+[36:35.44] addresses the question. So here are some
+[36:38.56] few metrics that you should be able to
+[36:41.28] see based on which you can actually go
+[36:43.92] ahead and run a evaluation metrics on
+[36:45.84] top of a rag to check the performance of
+[36:48.16] the rag itself because accuracy is the
+[36:50.48] main key thing but if I just consider by
+[36:54.16] seeing this particular flow there can be
+[36:56.56] four amazing metrics that we can go
+[36:58.32] ahead and implement it and we'll do it
+[36:59.84] step by step as we go ahead but this
+[37:02.64] we'll still discuss and we'll we'll
+[37:04.40] we'll implement each and everything step
+[37:06.16] by step. Okay. Now how we are going to
+[37:09.28] go ahead and do the rag emulation. So
+[37:10.80] first of all what we will do the first
+[37:12.56] step the first and the most important
+[37:14.40] step is that so here what all steps we
+[37:16.56] are going to follow. The first step is
+[37:19.04] that we will go ahead and create a rag.
+[37:22.32] Okay retrieval augmented generation
+[37:24.08] where there should be a retriever there
+[37:25.60] should be some data set. So when I say
+[37:27.52] rag there we will follow this entire
+[37:30.16] cycle. We will go from data injection to
+[37:34.88] creating retriever
+[37:37.28] and then we will also be creating this
+[37:39.60] generation. Now after doing this
+[37:43.20] inside this retriever you know that we
+[37:45.20] will be putting some kind of document.
+[37:46.48] Now based on that document we will the
+[37:48.88] second step will be that we will go
+[37:50.16] ahead and create our test data. And here
+[37:53.68] also the test data will be created in
+[37:55.44] such a way that we will be able to see
+[37:57.60] that based on a specific answer what is
+[37:59.76] the oh sorry based on a specific
+[38:01.60] question based on a specific question
+[38:05.28] what is the answer? Okay what is the
+[38:08.24] answer? So this answer will be our
+[38:10.80] ground truth. Okay. And then third the
+[38:14.64] most important thing we will go ahead
+[38:16.88] and create different evaluation metrics.
+[38:20.48] This evaluation metrics will be based on
+[38:23.12] this will be based on all these things
+[38:25.60] that we discussed 1 2 3 4 and here if
+[38:29.68] you really want to implement all these
+[38:31.04] things we will again consider LLM as a
+[38:34.64] judge because LLM are really good. They
+[38:38.00] are improving day by day. you have such
+[38:40.24] a powerful models then why not use LLM
+[38:42.48] as a judge in order to find all this or
+[38:45.36] in order to implement all this
+[38:46.80] evaluation metrics. So we'll go step by
+[38:49.76] step. So first of all in this particular
+[38:51.60] video let's go ahead and finish this
+[38:53.92] step. Okay where we'll create a drag
+[38:56.32] where we have data injection retriever
+[38:58.08] and generation. So this step must be
+[39:00.80] easy now for you all because we have
+[39:03.12] implemented it many number of times.
+[39:05.20] Okay many many number of times. So
+[39:07.44] quickly uh let's see this okay here what
+[39:11.44] we are going to basically do is that
+[39:13.28] I'll be taking three important blogs
+[39:16.16] article okay and I will try to create
+[39:19.12] this particular rag so first of all we
+[39:20.96] will go ahead and create a rag so for
+[39:23.04] rag you'll be able to see that I'm using
+[39:25.68] web- based loader we have inmemory
+[39:27.52] vector store openai embeddings recursive
+[39:29.60] character textplitter I've used lang
+[39:32.24] open aai and this time we have used
+[39:34.32] inmemory vector store okay so these are
+[39:36.16] my list of URLs. So blogs URL you can
+[39:39.68] see rel related to agent prompt
+[39:41.68] engineering advisor attack LLM. This was
+[39:44.64] available even in the documentation. So
+[39:46.72] I thought of giving this particular
+[39:48.24] example. You can go ahead and apply with
+[39:50.24] any number of examples that you like.
+[39:52.40] Then we load all the documents from the
+[39:55.12] uh URL. Okay. We get all the documents.
+[39:57.68] We initialize a text splitter. Then we
+[40:00.16] have recursive character text splitter.
+[40:02.16] Then once we do this, we split the
+[40:04.00] specific documents. we get the vector
+[40:06.00] store and we finally get the retriever.
+[40:07.84] So this is my retriever. So the rag part
+[40:10.80] that you will be able to see we are able
+[40:14.32] to implement this. Okay. So this will
+[40:16.64] take some time to execute because there
+[40:17.92] are so many content over here. But I
+[40:19.44] think it should be now with respect to
+[40:21.36] retriever I can just go ahead and use
+[40:22.80] this and write doinvoke. If I ask a
+[40:25.28] question what is agents I should be able
+[40:28.16] to see the answer. Okay. So I'm getting
+[40:30.40] all this particular context. Okay. Now
+[40:34.72] this is done. So here you can see I've
+[40:36.80] also got this lang rate limit exceeded
+[40:40.48] because uh we have limited number of
+[40:42.72] requests that we can do for lang. But
+[40:44.80] it's okay uh we'll try to do this. Okay.
+[40:48.16] Now the next thing is that what we are
+[40:50.08] going to do is we are going to define
+[40:52.80] the u generative pipeline. Okay. Because
+[40:56.00] we need to go ahead and generate it. So
+[40:57.92] for this what I will do already you know
+[41:00.16] I have my LLM. So this is uh my LLM was
+[41:03.60] not defined. Let's see on the top
+[41:06.00] somewhere I should have defined LLM.
+[41:08.56] Okay. Uh here it is.
+[41:13.68] Oh
+[41:15.84] uh let's see where is the okay lm is not
+[41:17.76] defined. No worries. I will go ahead and
+[41:19.20] define it again. Okay. So first of all I
+[41:21.36] will go ahead and write import OS and
+[41:24.16] with respect to OS I will uh okay I
+[41:28.24] already have loaded the environment
+[41:30.40] variable right so I will say init so let
+[41:33.76] me go ahead and write from lang chain
+[41:36.96] under uh lang chain
+[41:40.80] dot chat models we are going to
+[41:43.12] specifically use chat models import init
+[41:46.48] model init chat model and here we going
+[41:48.72] to go ahead and use init chat model and
+[41:53.84] specifically we're going to use the
+[41:55.20] model like open AI
+[41:58.16] GPT 40 mini okay let's use this specific
+[42:02.08] model and this is what is my LLM looks
+[42:04.48] like okay now once I have this LLM model
+[42:07.44] over here okay it looks good now what
+[42:10.00] I'm actually going to do is that I will
+[42:12.00] go ahead and create that rag part see
+[42:15.76] rag part I have the retriever right but
+[42:18.48] I also need to have the uh the
+[42:22.24] generation part right. So I will first
+[42:24.08] of all import from langmmith.
+[42:27.44] Langsmith import
+[42:30.96] for lang import traceable. Okay once we
+[42:35.76] are using this traceable that basically
+[42:37.36] means I also want to trace everything of
+[42:39.60] this in the lang itself. Okay. So for
+[42:42.64] this I will go ahead and add this
+[42:44.96] decorator. So on any function that you
+[42:47.44] add this decorator the tracing will
+[42:49.12] automatically start. So here I can go
+[42:51.04] ahead and write traceable and here I
+[42:53.44] will go ahead and write definition
+[42:54.72] rag_bot. So this will basically be my
+[42:57.36] bot and here I will go ahead and write
+[42:59.84] my question as str. Okay. So here we
+[43:03.84] specifically give a question and in
+[43:06.16] return we get a dictionary. Okay. Now
+[43:08.72] rag_bot should be very very simple. What
+[43:11.04] it should happen? I should be using this
+[43:13.84] retriever dot invoke I should be giving
+[43:17.44] the question over here. So the once I
+[43:19.52] give this question based on this I will
+[43:22.00] be getting the relevant context. So here
+[43:24.72] you can see that I will be getting the
+[43:26.96] relevant context. So first of all I
+[43:29.12] really want to go ahead and define my
+[43:30.40] entire rag itself. So this rag_bot will
+[43:33.20] be my generation part. Right? Then what
+[43:36.00] we'll do we will go ahead and use a dock
+[43:38.88] string and we'll combine all the
+[43:40.48] documents that we have. Right. So here
+[43:42.88] you can see I have written like this
+[43:46.08] empty space dot join with respect to all
+[43:48.96] the page content from all the documents
+[43:50.64] that I'm getting. Now the next thing is
+[43:52.72] that we will go ahead and create a
+[43:55.04] prompt because at the end of the day
+[43:57.36] inside this prompt only we'll give this
+[43:58.96] documents right. So you are a helpful
+[44:00.72] assistant with good at analyzing source
+[44:02.40] information answering the question. Use
+[44:03.84] the following so and so use three
+[44:05.68] sentences maximum keep the answer
+[44:07.28] concise and this is what is my document
+[44:09.28] string. Okay, document string means what
+[44:11.76] is the relevant context that we are
+[44:13.36] getting, right? And then finally we will
+[44:16.40] go ahead and use llm
+[44:18.88] lm invoke over here. Okay, so let me
+[44:21.92] quickly go ahead and write llm.t invoke
+[44:24.88] and here we are going to specifically
+[44:26.88] give based on our roles that we have
+[44:29.12] decided right. So roles instruction and
+[44:32.24] all the information is over here. Okay.
+[44:34.56] So here you can see that I've given role
+[44:36.80] system user instructions content is
+[44:39.52] equal to question. Okay. So here you can
+[44:41.60] basically see based on this whatever
+[44:43.20] instruction is there whatever question
+[44:44.72] is basically coming in we are getting
+[44:45.92] the invoke statement we're doing it and
+[44:48.32] this becomes my AI message or response.
+[44:50.88] Okay. And we are going to go ahead and
+[44:53.68] return this
+[44:55.84] return this as answer
+[45:01.12] colon AI
+[45:03.84] message dot content
+[45:07.44] content. Okay. And then we also going to
+[45:10.00] go ahead and give out documents whatever
+[45:11.84] documents were there right which is our
+[45:14.24] relevant documents itself. I mean
+[45:15.84] retrieve documents. So this becomes my
+[45:18.40] generation function. Very simple right?
+[45:21.12] So I have created this as
+[45:24.24] very important we had created this
+[45:26.00] entire rag. Now what we can actually do
+[45:29.12] this rag bot can basically go ahead and
+[45:31.04] answer with respect to any questions
+[45:32.48] that we specifically ask and
+[45:34.32] automatically we should be able to get
+[45:36.08] the AI message.content and answer. So
+[45:38.32] let's say if I go ahead and ask over
+[45:40.80] here uh AI sorry I'll go ahead and just
+[45:44.16] call this particular function ragbot
+[45:46.64] with the question. So here if I go ahead
+[45:48.96] and ask what is agents
+[45:52.96] okay then I should be able to get the
+[45:54.80] answer over here with the message
+[45:56.56] content and documents with respect to
+[45:58.32] the author. So agent refers to
+[45:59.52] autonomous entity particularly in this
+[46:01.12] and this answer is there and this is my
+[46:03.04] entire context with respect to the
+[46:04.40] documents. Okay now you know that we
+[46:08.72] have used this three important article
+[46:11.28] as our retriever. Okay. So here if you
+[46:13.28] go ahead and see we have created this
+[46:15.28] entire rag from data injection to
+[46:16.88] retriever to generation. Now it's time
+[46:18.80] that we go ahead and create a test data
+[46:20.72] for question answering. Okay. So in
+[46:23.28] order to create the test data. So let's
+[46:24.96] go ahead and create our data set and
+[46:27.68] we'll make sure that this data set will
+[46:29.60] be available in the um you know we we go
+[46:32.96] ahead and import this directly in the
+[46:34.32] lang. Okay. So for creating this
+[46:36.48] particular data set again we will go
+[46:38.24] ahead and write from lang import client
+[46:42.56] okay client we will go ahead and
+[46:44.88] initialize our client is equal to client
+[46:48.16] okay and then first of all we will go
+[46:50.08] ahead and create our examples of the
+[46:53.04] data set where I'll be having the inputs
+[46:55.60] and outputs see so input question is how
+[46:58.40] does the regent react using
+[47:00.00] self-reflection and this is the answer
+[47:01.36] so this is my ground truth okay ground
+[47:04.48] truth Okay, with respect to the inputs
+[47:06.24] and outputs. So this is how you should
+[47:07.60] basically go ahead and uh uh keep it
+[47:09.92] right. So here inside you have questions
+[47:11.84] and answers also. Okay, now I will go
+[47:15.52] ahead and create the data set
+[47:20.24] data set and examples in lang. Okay,
+[47:25.76] lang. Now how do you do that? If you
+[47:27.52] remember previously I will just go ahead
+[47:30.40] and write something like this.
+[47:33.60] Okay. So here you can see data set
+[47:35.84] client.create data set. I will just go
+[47:37.92] ahead and use the data set name. So let
+[47:39.84] me go ahead and write rag test
+[47:43.28] evaluation. Okay. So this is my data set
+[47:46.88] and this is based on the data that I
+[47:49.04] have right my my external data from that
+[47:51.68] blog. So based on this I created this
+[47:53.44] three input data itself and we'll try to
+[47:55.60] test on basis of this. This output is my
+[47:58.88] ground truth right when the LLM
+[48:00.72] generates an output we'll compare with
+[48:02.08] this output. Okay. So once we do this
+[48:04.40] and once we execute it. So here you'll
+[48:07.44] be able to see that this data has got
+[48:09.04] created. So let's see in our lang chain
+[48:11.60] whether that data will be available or
+[48:13.20] not. So if I go back to data and
+[48:14.64] experiments. So uh where is it? Uh rag
+[48:19.68] test evaluation. See three records may
+[48:21.92] be there. Oh yeah. Okay. So how does
+[48:24.24] react is there? How does react? Uh this
+[48:27.12] question is there. Agent uses
+[48:28.40] self-reflection. And this is the answer.
+[48:30.16] So I have all my data sets right now.
+[48:33.04] It's time that we start working on our
+[48:37.52] evaluators. See this step is very
+[48:40.48] simple. Whatever we have done the couple
+[48:42.40] of steps. Now we have to go ahead and
+[48:45.44] start creating our evaluators. Now
+[48:48.00] evaluators are something really
+[48:49.92] important. We are going to go ahead and
+[48:52.32] use four different evaluators. Okay. So
+[48:55.44] for this I will just go ahead and write
+[48:57.12] some comments also for you. Okay. So
+[49:01.36] it's okay in the next video I will show
+[49:03.12] you. Before that I will just go ahead
+[49:04.64] and write it down. So here I will say
+[49:06.72] that from the next video we are going to
+[49:09.36] go ahead and work with the evaluators.
+[49:12.48] Okay evaluators or metrics like what all
+[49:15.52] metrics we have to specifically work on.
+[49:18.08] So here quickly you could see that from
+[49:20.40] this particular diagram we implemented
+[49:23.12] the first step second step. Now the
+[49:25.68] third step is that we will go ahead and
+[49:27.60] create all these evaluation metrics.
+[49:29.04] Four evaluation metrics 1 2 3 four one
+[49:32.48] by one. Okay. And then we will start
+[49:34.72] working on it. So I hope you like this
+[49:36.80] particular video. This was it from my
+[49:38.56] side. I'll see you in the next video
+[49:39.84] where we talk more about evaluation
+[49:41.36] metrics and I'll show you how we can use
+[49:43.20] LLM as a judge. Okay. So yeah, I'll see
+[49:45.52] you in the next video. Thank you. Hello
+[49:47.44] guys. So we are going to continue the
+[49:48.96] discussion with respect to evaluation
+[49:50.64] metrics. The first evaluation metrics
+[49:52.96] that we are going to discuss about is
+[49:54.64] correctness. That is nothing but
+[49:56.80] response versus reference answer. Now
+[50:00.56] already in our previous video we have
+[50:02.48] done this two steps right creation of
+[50:05.04] rag and also creation of the test data
+[50:07.68] and we inserted even in the lang. Now we
+[50:10.88] have to go ahead and design evaluation
+[50:12.56] metrics which all eval evaluation common
+[50:15.36] metrics we can discuss with respect to
+[50:17.76] rag are four. Okay. So here is the
+[50:20.16] entire diagram. The first evaluation
+[50:22.48] metrics we will go ahead and discuss
+[50:23.84] about correctness. Now what does
+[50:25.44] correctness basically mean since you
+[50:27.76] know that we already have the ground
+[50:29.68] truth answer available in the lang
+[50:32.32] right? for every question that we
+[50:34.48] specifically ask or with respect to the
+[50:36.56] question that we have designed. Right?
+[50:39.52] So that actually becomes a ground truth
+[50:41.92] answer and correctness basically means
+[50:44.00] that whatever LLM is generating we are
+[50:46.80] going to compare that with our ground
+[50:48.88] truth answer. So that is the reason we
+[50:51.04] have written something called as
+[50:52.80] response versus reference answer.
+[50:54.80] Response basically means it has been
+[50:56.72] generated by the LLM and reference
+[50:58.88] answer is actually your ground truth
+[51:01.12] value. So here the goal is measure how
+[51:04.08] similar or correct is the rack chain
+[51:06.88] answer relative to a ground truth answer
+[51:09.76] mode. It requires a ground truth
+[51:11.36] reference answer supplied through a data
+[51:13.28] set evaluator. Here we are going to use
+[51:15.76] LLM as a judge to assess answer
+[51:18.08] correctness. That basically means LLM
+[51:20.24] will make sure to compare the ground to
+[51:22.96] answer and the reference answer sorry
+[51:24.56] and the response answer. So we'll go
+[51:27.12] ahead and implement this already. In our
+[51:29.12] previous video we have done all these
+[51:30.40] things. So let's go ahead and do this.
+[51:32.32] So for this I will go ahead and write
+[51:34.08] for typing extension. First of all I'm
+[51:37.44] going to go ahead and import annotated
+[51:40.56] type date. Okay. So why we are doing
+[51:42.40] this? Because we actually require this.
+[51:45.04] Now the first thing what we are going to
+[51:46.96] do is that
+[51:49.12] um see when LLM is basically comparing
+[51:52.16] the ground to answer and the response it
+[51:54.16] needs to provide you the output in some
+[51:56.64] specific format right. So for that what
+[51:59.76] we will do we will go ahead and write
+[52:01.68] okay this will be my correctness output
+[52:05.04] schema. Okay. So this is how my output
+[52:07.12] is going to come. Okay. Now how the
+[52:09.60] output will going to come? I will go
+[52:11.12] ahead and define class and I will write
+[52:14.08] class correct correctness
+[52:16.72] grade. Okay. So this will basically be
+[52:18.72] my class. It will be of type date. So my
+[52:22.08] LLM should provide a response based on
+[52:24.56] this specific class. Okay. Now in this
+[52:27.12] we will define two different variables.
+[52:28.96] One is explanation.
+[52:30.88] This explanation is nothing but it will
+[52:32.64] be an annotated type. Here I'm going to
+[52:35.36] go ahead and write string. Along with
+[52:37.52] that I will also go ahead and provide
+[52:39.12] some description. I'll say explain your
+[52:42.72] reasoning
+[52:44.40] for the score that you generate by
+[52:47.52] comparing. Okay. So this basically
+[52:49.52] becomes my description. Second, I'll say
+[52:52.24] I'll also define a variable called as
+[52:53.84] correct which will also be a type of
+[52:55.84] annotated. It will be a boolean variable
+[52:58.64] and here we will say true if the answer
+[53:03.20] is correct
+[53:05.68] or false otherwise. Okay, false
+[53:09.20] otherwise. So this two we are going and
+[53:12.24] defining it. Right now the next thing is
+[53:15.76] that we will go ahead and write the
+[53:17.12] correctness prompt. So what specific
+[53:19.76] prompt we will be using? We will
+[53:21.52] basically go ahead and write correctness
+[53:23.36] prompt. So for this we will go ahead and
+[53:25.44] create a prompt. The prompt looks
+[53:27.20] something like this. Okay? Because this
+[53:29.20] prompt will be used by the LLM. See I'm
+[53:31.92] saying that you're a teacher grading a
+[53:33.36] quiz. You will be given an answer. Uh
+[53:35.60] you'll be given a question. The ground
+[53:37.20] truth and the answer. So these three
+[53:39.44] things will be given and the student
+[53:41.12] answer will be given. When we say
+[53:42.40] student answer that basically means we
+[53:43.76] are considering it as a LLM answer. Here
+[53:46.16] is the great criteria to follow. Grade
+[53:48.16] the student answer based on only the
+[53:50.16] factual accuracy relative to the ground
+[53:52.16] truth answer. Ensure that student does
+[53:54.64] not contain any conflicting statements.
+[53:57.44] It's okay if the student answer contains
+[53:59.36] more information than the ground truth
+[54:01.44] as long as as long as it is accurate.
+[54:04.32] Okay. Correctness. So this will be the
+[54:06.48] score. A correctness value of true means
+[54:08.24] student answer meet all the criteria.
+[54:10.24] False means it does not meet all the
+[54:11.92] criteria. Explain your reasoning in
+[54:13.76] step-by-step manner. All this
+[54:14.96] information I've given it over here.
+[54:16.56] Okay. Now it's time that we go ahead and
+[54:19.36] create our LLM. Right? So now my LLM I
+[54:22.88] will use a init chat model. So let's say
+[54:25.28] over here my model name will be nothing
+[54:27.20] but open AI or instead of using this
+[54:31.52] what I'll do since I'm going to also go
+[54:33.60] ahead and use this. So I will go ahead
+[54:36.32] and import from langchain
+[54:41.04] open AAI import or lang chain
+[54:45.92] uh open AI import
+[54:49.12] chat openai. Let's go ahead and use chat
+[54:52.08] openai instead of initi because here I
+[54:55.12] will try to give my structured output.
+[54:56.96] Okay. So here I will be using open AI
+[54:59.52] model. So my model name will be nothing
+[55:01.84] but here I will go ahead and say model
+[55:04.32] is equal to GPT4
+[55:07.84] mini. Okay. And then you'll be able to
+[55:11.04] see that I will also give my temperature
+[55:12.64] value. Let's say okay let's go ahead and
+[55:14.48] set up some temperature value.
+[55:16.88] Temperature value is equal to zero.
+[55:18.56] Okay. And then this I will go ahead and
+[55:21.20] write with structured output with
+[55:23.84] structured output because L&M needs to
+[55:25.68] provide the based on output based on
+[55:27.52] this particular class that is
+[55:29.12] correctness grade. Okay. And then uh we
+[55:32.72] will also make sure to provide the
+[55:34.40] response in the form of schema. So here
+[55:37.20] I will go ahead and write comma method
+[55:40.24] is equal to and let's go ahead and
+[55:42.72] select this as JSON schema. Okay. And
+[55:47.60] here we are going to make it strict is
+[55:49.60] equal to true. So I'm just saying that
+[55:51.76] follow this specific structured output
+[55:54.32] only. Okay. So these are the parameters
+[55:56.56] that we are specifically using in order
+[55:58.08] to create the ll. Now the next step is
+[56:00.80] that we will go ahead and define our
+[56:02.80] correctness uh response right the how
+[56:05.60] the evaluator will be. So here I will go
+[56:08.00] ahead and define a function. So here you
+[56:10.32] can see that uh let me change it to
+[56:12.80] greater lm. So here you can see in the
+[56:15.60] correctness uh function it is a
+[56:17.68] independent function because this
+[56:19.36] function is nothing but my evaluator. It
+[56:21.44] takes the input output reference output
+[56:23.60] in the form of dictionary and gives you
+[56:24.96] a boolean value. So here uh you can see
+[56:27.52] I have given this particular answer uh
+[56:30.32] question first of all see this is how we
+[56:32.00] are going to give the entire context to
+[56:33.68] my LLM. So question will be here input
+[56:36.08] of question ground truth will be here
+[56:37.68] reference output of answer student
+[56:39.36] answer will be the output of answer
+[56:40.96] right and then we are using this greater
+[56:42.96] llm to invoke all the specific things
+[56:44.96] based on correctness instruction
+[56:46.64] correctness instruction is nothing but
+[56:48.16] the prompt that we are giving to the llm
+[56:50.64] and this is my user uh answer user
+[56:53.28] answer basically means this will be my
+[56:54.64] llm answer right and then finally we
+[56:57.20] return grade of correct whether it is
+[56:58.80] true or false so this becomes my
+[57:01.52] correctness uh grade Okay. So this is
+[57:05.04] what we have defined for this. Okay. So
+[57:07.44] this you can see correctness. Right. Now
+[57:10.08] the second thing is that we can also go
+[57:11.92] ahead and see the relevance part. Answer
+[57:14.00] relevance. Does the answer address the
+[57:15.68] question? Okay. It can be input versus
+[57:18.48] output. So if we are able to create this
+[57:21.12] the next step is that after this
+[57:23.60] evaluator we'll just go ahead and
+[57:24.88] execute it. The next evaluator that we
+[57:27.28] are going to go ahead and create is
+[57:29.36] relevance versus response input. Okay.
+[57:32.32] So here I will just go ahead and give a
+[57:34.24] marker for you. Now it's very easy for
+[57:37.12] you because you know how to basically go
+[57:39.28] ahead and do correctness. If you know
+[57:40.72] this it's all about playing with LM and
+[57:43.12] prompt. Okay. So here you got relevance
+[57:46.24] response versus input. This time we are
+[57:48.72] going to check response versus input.
+[57:50.40] The flow is similar to above but we look
+[57:52.08] at the input and output without needing
+[57:54.16] the reference output. Without a
+[57:56.24] reference answer we can't grade accuracy
+[57:58.40] but still grade relevance. So here we
+[58:01.20] are trying to find out the relevance. So
+[58:02.96] for relevance again I will create a
+[58:04.64] separate class, separate function and
+[58:06.56] separate evaluator. See something like
+[58:08.24] this. So this will be my relevance grade
+[58:10.56] explanation and relevant. These are my
+[58:12.88] information. This is my prompt. Okay.
+[58:16.00] Then this is my relevance LLM. Okay.
+[58:18.80] With structured output method, JSON
+[58:20.40] schema everything. And here inside this
+[58:22.48] you'll be able to see that we are going
+[58:23.68] to go ahead and do this. Here we are
+[58:25.68] just comparing input and the output.
+[58:27.92] This output is basically generated by
+[58:29.52] the LLM. This input is given by us. And
+[58:31.84] here you can see a prompt. You are a
+[58:33.28] teacher grading a quiz. You'll be given
+[58:34.96] a question and a student answer. Ensure
+[58:37.04] the student answer concise and relevant
+[58:38.56] to the question. Ensure the student
+[58:40.08] answer helps to answer the question. And
+[58:41.84] relevance value of true means the
+[58:43.20] student answer meet all the criteria.
+[58:45.44] Here it does not meet all the criteria.
+[58:47.04] If it is false, explain your reasoning
+[58:49.04] step by step. All this information and
+[58:50.64] finally we get the grade of relevant
+[58:52.72] values. Okay. So this becomes my second
+[58:55.60] important metric that is nothing but
+[58:58.00] relevance. This is my first evaluation
+[59:00.24] metric that is nothing but correctness.
+[59:02.24] So this is also a evaluator. Okay.
+[59:06.00] Evaluator metric
+[59:08.56] eval
+[59:10.48] evaluator.
+[59:15.04] Okay. Perfect. Now once this is done uh
+[59:18.16] with respect to relevance now again
+[59:19.76] let's go back to the diagram. Relevance
+[59:22.16] is done. Now we will also focus on
+[59:24.32] groundness. Right? So groundness is like
+[59:26.80] is the answer grounded in the document.
+[59:29.28] Okay? Is the answer grounded in the
+[59:31.04] document? That basically means this we
+[59:33.44] are going to compare between response
+[59:36.08] versus retrieve documents. Okay.
+[59:38.40] Whatever answer is there we are going to
+[59:39.84] compare with the retrieve documents.
+[59:41.36] Okay. So for this I will again go ahead
+[59:43.68] and write one statement for you. You can
+[59:46.00] just go ahead and observe this. Now
+[59:47.76] since we have discussed so many things
+[59:49.36] of this I think it'll be easy for you to
+[59:52.08] just go ahead in there. So here we are
+[59:53.84] generate seeing the response versus the
+[59:55.68] retrieve documents. We're comparing it
+[59:57.12] with the retriever output. Okay. So here
+[60:00.16] again I have created a class of grounded
+[60:02.16] data. Grounded instruction is like this.
+[60:04.40] This is the prompt. Okay. Here is a
+[60:06.48] grade criteria to follow. Ensure the
+[60:08.16] student answer is in the facts. Ensure
+[60:10.56] the student does not contain
+[60:11.60] hallucinated information outside the
+[60:13.28] scope of facts. All these things. Then
+[60:15.44] grounded LLM is there with structured
+[60:18.56] output everything is over here. And then
+[60:20.80] you can see this is my another evaluator
+[60:22.48] which is called as groundness. The same
+[60:24.32] thing we taking the retriever content
+[60:26.32] and we are comparing it with the uh with
+[60:29.84] the generated response. Okay. So this
+[60:32.48] becomes my third evaluator. Finally the
+[60:35.04] fourth evaluator if you see in the
+[60:36.40] diagram that is nothing but retrieval
+[60:39.52] relevance that is retrieve documents
+[60:41.68] versus the input. Okay. whatever input
+[60:43.84] is there versus the uh retrieve
+[60:46.40] documents from this. So for that I will
+[60:48.88] just go ahead and mark another one. I'll
+[60:51.52] write retrieval
+[60:54.32] relevance
+[60:57.12] uh retrieved
+[60:58.88] docs versus input and now I think you
+[61:02.72] can do this guys just go and see the
+[61:05.28] code just see the prompt right this is
+[61:07.84] my greater llm again I've created
+[61:09.60] another llms with respect to this
+[61:11.68] retrieval elements and then we have
+[61:13.92] created this okay so here I'm getting
+[61:16.96] this so here also you can see the prompt
+[61:18.96] you are a teaching grading you'll be
+[61:20.56] given a question and set of facts
+[61:21.92] provided by student your goal is to
+[61:23.92] identify facts that are completely
+[61:25.20] unrelated to the question and this is
+[61:27.60] what is the prompt it's all about since
+[61:30.56] you are using LLM as a judge so you can
+[61:33.28] actually do this now finally you run the
+[61:37.92] evaluation okay
+[61:42.32] uh run the evaluation over here
+[61:47.44] okay now for running the evaluation It's
+[61:50.80] very simple. I'll create a function
+[61:53.68] called as target rag bots of input of
+[61:56.32] questions. And here is my experimental
+[61:58.08] results. I've given my target data set
+[62:00.40] name. Target if you see what is target.
+[62:05.28] What is target? Let's see. Target is
+[62:08.56] this specific function. Right here we
+[62:10.72] are giving the inputs over here. And
+[62:12.88] here is my data set name. And this is
+[62:15.28] the most important thing. What all
+[62:16.48] evaluators we are using. So I have
+[62:18.08] created all custom correctness
+[62:19.44] groundness relevance and retrieval
+[62:21.04] relevance. I've created drag do
+[62:23.20] relevance over here version I've given
+[62:25.84] some LCL context let's say GPT4
+[62:30.16] 0.125 preview we have done it and now if
+[62:33.84] you also want to display it here also
+[62:35.36] you can go ahead and display it okay to
+[62:37.12] pandas so now let's go ahead and execute
+[62:39.52] this I think we should be now this will
+[62:41.84] get executed if pandas is not there then
+[62:44.16] I have to install pandas I think pandas
+[62:46.48] is not there
+[62:48.32] um invalid schema incorrectness Let's
+[62:52.08] see what is that
+[62:55.04] correctness. Correctness.
+[62:57.28] Uh correctness. Correctness.
+[63:06.16] Invalid schema. Okay. Okay. Okay. I made
+[63:09.60] one mistake because this we need to
+[63:12.16] provide a parameter with descriptions.
+[63:14.32] Okay. So true if that this this we have
+[63:17.04] to keep it as empty because this comes
+[63:18.48] at the last. Okay. And once we go ahead
+[63:21.44] and execute now I think it should work.
+[63:24.40] Now let's execute this evaluation again.
+[63:26.48] So guys finally let's go ahead and uh
+[63:29.52] run the evaluation. Now you can see over
+[63:32.08] here I've kept up all the evaluator
+[63:34.08] metrics which we have actually created
+[63:35.60] in a custom way. And here we are also
+[63:38.64] going to display this in the form of
+[63:40.00] pandas. Okay. So let me quickly go ahead
+[63:42.24] and execute this.
+[63:44.64] So here you can see that the evaluation
+[63:46.56] metrics is being sent to Langsmith. It
+[63:48.96] is going to take some time based on the
+[63:51.84] number of input and output questions
+[63:53.60] that we have. Uh and it is going to do
+[63:57.28] one thing that it is also going to check
+[63:59.12] with respect to all these evaluators. So
+[64:01.28] there will be a graph that will be
+[64:02.64] created in the lang with respect to all
+[64:04.88] these evaluator metrics. Okay. So here
+[64:07.60] you can see it took 15 seconds 15.42
+[64:10.24] seconds it is almost completed. So let's
+[64:12.24] see whether it is getting updated or not
+[64:14.24] over here. So here you can see
+[64:16.08] beautifully this got up uh updated. Now
+[64:19.20] you have this correctness, groundness,
+[64:21.28] relevance, all the specific values.
+[64:24.08] Okay. So here you can see with respect
+[64:26.32] to relevance uh you are able to find out
+[64:28.80] the accuracy of one. Correctness is also
+[64:30.96] one. Groundness is somewhere around.5.
+[64:34.16] If you see inside this you'll also be
+[64:36.00] able to see more information. Okay. And
+[64:39.04] uh with respect to this you can see that
+[64:40.80] this is my input. This is my reference
+[64:43.04] output the ground truth and this is the
+[64:45.12] output that is generated by the uh LLM
+[64:48.32] right and then here you can see
+[64:50.00] correctness groundness relevance
+[64:51.84] retrieval all the specific information
+[64:54.08] is basically over here which is really
+[64:56.16] really good and you can also see the
+[64:58.40] accuracy uh how much latency it is with
+[65:01.28] respect to this what is the token cost
+[65:02.88] and many more things right and this is
+[65:05.68] how you go ahead and decide it you know
+[65:07.60] and at the end of the day we are playing
+[65:10.64] up with amazing techniques, metrics.
+[65:14.00] Over here considering LLM as a judge
+[65:16.72] over here we again based on our diagram
+[65:19.44] that we have specifically used, we found
+[65:21.36] out all this important metrics that is
+[65:24.24] correctness, groundness, retrieval,
+[65:25.76] relevance and answer relevance. Now
+[65:28.16] there may be scenarios that you may try
+[65:30.56] to add some more different techniques in
+[65:33.28] your entire rack pipeline. So you can
+[65:35.76] also make those kind of necessary
+[65:37.44] changes and implement more additional
+[65:39.44] metrics. But here uh in this particular
+[65:42.00] video my main aim is aim was to show you
+[65:44.48] that how you can go ahead and perform
+[65:47.12] some kind of evaluation for uh rag uh
+[65:50.24] you know by applying or by creating your
+[65:52.00] own custom metrics. So I hope you like
+[65:54.24] this particular video. Uh this was it
+[65:56.40] from my side. Uh this was about uh
+[65:59.28] evaluation with the help of Langra uh
+[66:01.44] Langchin and I hope you got an idea like
+[66:04.24] how to go ahead and do the evaluation
+[66:06.08] with respect to chatbot and even rag. So
+[66:09.12] yes this was it. I will see you in the
+[66:10.56] next video. Thank you.

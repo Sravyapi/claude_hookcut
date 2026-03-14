@@ -1,0 +1,2211 @@
+[0:00.24] idea.
+[0:07.41] [Music]
+[0:14.77] [Music]
+[0:24.00] I don't know.
+[0:30.84] [Music]
+[0:36.96] Okay. Hello everybody. I hope I am
+[0:39.60] audible. I think Mike my voice is
+[0:41.92] audible right?
+[0:43.04] >> Yes, it's completely fine. Voice is
+[0:45.28] audible.
+[0:45.76] >> Like so it's after many days we have
+[0:49.04] come live. Yeah. A lot of work, lot of
+[0:51.52] classes, lot of Udemy courses. So we are
+[0:54.64] working really hard to provide best
+[0:56.24] things to you all but just give a hi so
+[0:58.80] that we can see you all and again uh
+[1:00.48] this session will be an amazing session
+[1:02.08] where we are going to you know teach you
+[1:06.40] about AI so that you can automate most
+[1:08.88] of your task which is definitely
+[1:10.48] required by everyone of out here right
+[1:13.12] so just make sure to hit like and uh
+[1:17.28] let's show your excitement over here
+[1:19.12] right so we'll be able to take this
+[1:21.04] sessions regularly as we go ahead So M
+[1:24.32] anything that you want to say before we
+[1:26.48] start?
+[1:27.52] >> Yeah, just so uh one minute. Yeah. So hi
+[1:30.08] everyone. I know it's been a lot of time
+[1:32.32] since we have been active but uh we will
+[1:33.84] be doing that a lot more. Uh that is
+[1:35.36] something which we are planning as well
+[1:37.20] and yeah we are now back with very very
+[1:40.08] exciting series freef fall of all of you
+[1:42.08] which we will talk a little bit more. We
+[1:44.00] also have a very good Q&A plan for all
+[1:45.76] of you tomorrow which I will of course
+[1:47.76] be telling a little bit more and yes uh
+[1:49.84] the final and the main aim is to make
+[1:51.76] sure that we are able to make everyone
+[1:54.00] skilled in AI no matter the background
+[1:56.48] no matter where the person is technical
+[1:58.32] nontechnical and you will see that how
+[2:00.08] we are working very hard towards that so
+[2:02.24] with respect to that and of course as I
+[2:04.16] said we are working on the live classes
+[2:05.92] Udei some awesome platform as well so
+[2:08.88] hopefully all of us will be able to have
+[2:11.28] a very good uh future career And we are
+[2:13.84] here to help you in the same. So yeah,
+[2:15.92] it's then continue
+[2:17.36] >> and the main aim is that see uh
+[2:19.28] everybody should learn. There are free
+[2:21.36] content, there are paid content from
+[2:24.08] wherever you want to go ahead and run,
+[2:25.60] please go ahead and run it. Okay. But at
+[2:27.52] the end of the day, I think I feel that
+[2:29.28] yeah AI should be one of the thing that
+[2:31.44] you should definitely incorporate in
+[2:33.36] your life. Whatever things you're
+[2:35.36] actually doing, please go ahead and
+[2:37.12] start learning AI, start doing it
+[2:39.20] because now you're able to do some
+[2:40.96] amazing work with it.
+[2:43.36] Okay. Uh so perfect. Uh so what will be
+[2:45.92] the agenda of today's uh session will be
+[2:49.20] that now
+[2:52.16] I hope everybody has heard about AI
+[2:54.08] right but how you can use AI for your
+[2:56.96] day-to-day task your day-to-day work
+[2:59.68] over here we are not teaching you how to
+[3:01.68] code and all we are just giving you an
+[3:03.92] idea like how you're going to
+[3:05.36] specifically use AI to do some of your
+[3:08.24] work and today's use case is all about
+[3:10.56] social media I know many of you use
+[3:13.28] social media from LinkedIn to Instagram
+[3:15.44] to Facebook many more things. So today
+[3:18.48] uh we'll be doing that and again uh uh
+[3:21.04] prerequisite I think m you don't require
+[3:23.36] coding knowledge also right? uh nothing
+[3:25.04] as such uh no prerequisite as such we
+[3:27.28] will be keeping it very accessible
+[3:29.52] easily understandable to all of you
+[3:32.16] specifically we are focused like even if
+[3:33.84] you have no if you don't know what
+[3:35.20] coding is at all like you don't
+[3:36.40] generally know what coding is you will
+[3:37.76] be able to do the same that is what we
+[3:39.12] are now planning to make our uh like
+[3:42.96] lessons which we will be going live for
+[3:44.88] all of you so no coding no problem
+[3:47.52] >> perfect so this entire session all the
+[3:49.84] materials will be given in the
+[3:51.52] description uh link there is a free dash
+[3:54.08] dashboard course access for you all.
+[3:56.24] Please go ahead and explore it. And what
+[3:58.32] we are doing is that every week we'll be
+[4:00.08] having at least two two sessions I guess
+[4:02.08] this kind of sessions where we'll be
+[4:03.52] discussing about some of the use cases.
+[4:05.04] We'll be completing it. Okay. Uh our
+[4:08.24] main aim is basically to show you like
+[4:10.08] how you can use AI efficiently in order
+[4:12.64] to automate many of the things right. Uh
+[4:15.28] that will be our plan as we go ahead.
+[4:17.36] Okay. Uh so here you can see just a
+[4:20.08] quick question in the era of generative
+[4:21.44] AI. How do you see the impact of data
+[4:23.36] engineering to maintain clean and
+[4:24.80] reliable data? M you can answer this.
+[4:27.60] >> Yeah. So uh Y data engineering I
+[4:30.16] personally feel that is going to be one
+[4:31.76] of the fields which is going to be least
+[4:33.84] effective because I have worked a lot in
+[4:36.00] data engineering taken a course as well
+[4:38.08] and across all the platforms. The way
+[4:40.16] you will be going to work on data like
+[4:43.92] you handle the data that is what the
+[4:45.52] core of data engineering is. So it will
+[4:47.92] be becoming very accessible but that is
+[4:50.40] I guess still some place where jobs will
+[4:52.64] increase like I was reading a report
+[4:53.84] where in data engineering jobs will
+[4:55.36] increase and yes it's going to be very
+[4:57.68] helpful uh if you actually understand
+[4:59.52] how to manage data because AI is in any
+[5:02.16] ways going to be get powered by data to
+[5:04.40] data engineering specifically is going
+[5:06.08] to be very helpful at all uh like at all
+[5:07.76] stages.
+[5:10.32] So uh I think m we can start the
+[5:12.56] session. Uh so guys without wasting any
+[5:14.64] time please do make sure to hit like
+[5:16.48] share with all your friends with this
+[5:17.92] specific video but the kind of use case
+[5:19.76] that we are going to develop will be
+[5:20.96] quite amazing and you'll be seeing that.
+[5:22.88] So m I think we can start we start with
+[5:25.04] the agenda what we are going to actually
+[5:26.40] do and then uh we can go ahead with the
+[5:28.48] use case.
+[5:29.04] >> Sure. Sure. Yeah. So let me start with
+[5:30.96] the same everyone just give me a minute.
+[5:32.64] Let me just set things up and let me
+[5:34.48] also know once you're able to see my
+[5:35.84] screen I will start by sharing my
+[5:37.44] screen.
+[5:43.12] It's been heard that market is down. AI
+[5:45.12] is taking all the jobs. What's your
+[5:46.56] opinion
+[5:48.32] guys? Come on. Not seeing right kind of
+[5:51.12] I guess.
+[5:53.04] >> Okay.
+[5:54.08] >> But yeah, it's nothing like that. You
+[5:56.24] need to get upskilled. That's it.
+[5:58.80] >> Yeah. Continue please.
+[6:00.64] >> Cool. So great everyone. So this is the
+[6:02.96] series which we are starting AI for
+[6:04.48] everyone where we will be mastering AI
+[6:07.36] agents and automation something which
+[6:10.40] have been in very much demand. So we
+[6:14.08] will be having multiple session using
+[6:15.92] multiple tools where we will make sure
+[6:17.92] that we can make you pro in using AI
+[6:21.12] right so that you understand AI without
+[6:23.44] any jargon without any issues as such
+[6:27.20] now let's talk about today's use case
+[6:29.20] specifically today's use case is going
+[6:31.04] to be on social media automation
+[6:34.24] now coming to social media automation
+[6:36.16] pretty sure that all of you are using
+[6:38.64] social media like LinkedIn Twitter right
+[6:42.00] so let me get the icons as as that make
+[6:44.08] it a little bit better. So yeah, let's
+[6:46.00] say I can have Twitter here then we have
+[6:48.32] the LinkedIn. Yes, we have the LinkedIn
+[6:49.52] as well. Any other we can find here
+[6:52.40] which might be present. H no. So no
+[6:55.60] worries. Uh we can have uh other things
+[6:57.52] as well for sure. So now everyone what
+[7:00.24] the plan for today's session is that how
+[7:04.72] can we use our AI to automate content
+[7:09.84] generation across different different
+[7:11.52] platforms. Right. So I can surely add
+[7:13.52] another uh maybe some other button or
+[7:17.36] some other overall uh like social media
+[7:20.32] as well right. So you can have YouTube
+[7:22.32] as well. We have YouTube post. Similarly
+[7:24.40] we can have any other which you guys are
+[7:27.04] interested. So maybe I can talk about
+[7:28.56] that. We can have substax related blogs
+[7:30.32] which can be created. So all those
+[7:32.00] things are what we will be seeing that
+[7:34.32] how can we automate using our AI and
+[7:38.56] using the workflow and automating
+[7:41.04] things. So that is what that is where
+[7:43.12] the idea is going to come everyone and
+[7:46.40] this is we are going to do now over the
+[7:49.20] next few weeks we will be taking
+[7:50.64] multiple classes where I will be walking
+[7:52.48] all of you through uh these use case
+[7:56.00] that how you can automate these advanced
+[7:57.84] use cases yeah medium logs everything
+[7:59.92] works Instagram as well these advanced
+[8:02.72] use cases you can use all of them and
+[8:04.96] you can genuinely have AI integrated
+[8:07.68] into your everyday workflow so we can
+[8:09.20] have let's a
+[8:11.28] uh automated email replying right these
+[8:13.60] are the kind of use cases the real world
+[8:15.44] use cases which we are going to automate
+[8:16.96] with all of you right we will be using
+[8:19.28] no code tools uh initially and if the
+[8:21.92] need arises I will also be making you go
+[8:23.92] towards the code the idea is that at
+[8:25.84] least you should understand what is it
+[8:28.00] then implementing or overall executing
+[8:30.48] them is not of a big problem right so
+[8:33.28] for the timing today we are going to use
+[8:35.12] this awesome tool NAN right which I'm
+[8:37.76] pretty sure many of you must have heard
+[8:39.04] by It's pretty good. Um kind of a very
+[8:42.08] plug-and-play kind of a thing. Easy to
+[8:44.32] use when you understand the things
+[8:46.48] pretty nicely, right? So that is the
+[8:48.72] whole idea behind taking and doing this
+[8:50.72] thing on Nitin. But of course I will be
+[8:53.20] teaching you in such a way that even if
+[8:54.88] you have to do the same via code and you
+[8:56.64] will get the idea that okay where
+[8:58.00] exactly the design of the or how exactly
+[9:00.48] the design of the systems are coming in.
+[9:02.48] So that is going to be the whole idea
+[9:04.16] right. So yeah that is what we are going
+[9:07.20] to learn and through this overall series
+[9:09.20] which we have planned for you which uh
+[9:11.12] we will be taking and going live at
+[9:12.72] least two uh two days a week right so
+[9:15.68] every week we will be going live at
+[9:16.88] least twice where we will be taking a
+[9:19.20] multiple usage use cases and then we
+[9:21.68] will be having them right so this is the
+[9:24.96] idea with which we will be connecting
+[9:26.72] every uh I think every week right two
+[9:30.24] times a day at least and for the next
+[9:32.16] one or two months and this is going to
+[9:34.08] be completely
+[9:35.28] As Krishna sir has mentioned you can go
+[9:37.04] and download the resources everything
+[9:38.56] which we will be doing uh we will be
+[9:40.96] having there okay so that's the whole
+[9:42.24] idea and we will be making sure that we
+[9:44.16] tell everyone everything what might be
+[9:45.60] required what might be not so there we
+[9:48.24] will of course be uh handling everything
+[9:50.48] okay so with that let's now move forward
+[9:52.80] everyone now the very first thing which
+[9:54.40] I want all of you to do is to head out
+[9:56.96] to nat.io io. So this is the website
+[10:00.24] which I'm pinging as well right
+[10:04.72] now for anyone who doesn't have an idea
+[10:07.28] like anything any idea about NA10 right
+[10:09.60] I know that many people might be there I
+[10:11.60] recently created an awesome resource for
+[10:13.68] the same as well so I will highly highly
+[10:15.60] suggest that you go through the same
+[10:17.60] everything today is going to be free so
+[10:19.36] you don't have to take any issues right
+[10:22.00] if I go on YouTube and on my channel uh
+[10:25.28] then this is the which okay where's the
+[10:28.80] video one minute I have an upcoming
+[10:31.20] video and yeah this is the video I was
+[10:32.80] talking about everyone so we'll highly
+[10:34.88] suggest that all of you go and check the
+[10:36.48] same out right let me skip the ad and we
+[10:39.92] can see the same right so we have these
+[10:42.48] thing where I have explained everything
+[10:45.04] though uh today's video as well it will
+[10:46.96] not be any requisite I will making sure
+[10:48.56] that you understand each and everything
+[10:50.08] without any idea as well right great so
+[10:53.44] let's now start everyone let's continue
+[10:56.00] and first let's head on to nit.io.
+[10:59.04] I'm sharing the link with all of you
+[11:00.48] once again. So you can go through the
+[11:01.84] same right. So let me share this link
+[11:03.84] again.
+[11:10.64] And this uh these sessions are going to
+[11:12.56] be very much uh direct like we will be
+[11:15.20] making sure that we study for 1 and a
+[11:17.12] half, 2 hours, 3 hours whatever time is
+[11:18.88] required. And the way we are going to go
+[11:22.48] about this let me tell you that as well
+[11:24.08] so that all of you do understand. I will
+[11:26.72] be starting a timer of let's say 20
+[11:28.48] minutes 20 minutes timer
+[11:31.36] and then it will be kind of followed by
+[11:33.20] a 5 minutes break uh 5 minutes not break
+[11:35.60] 5 minutes outs okay because we want that
+[11:38.32] people properly understand people who
+[11:40.72] are being with us they properly
+[11:42.40] understand and they get the best
+[11:43.68] experience you can already see that all
+[11:45.68] the things which we are doing the voice
+[11:47.04] quality the audio video screen
+[11:48.96] everything we are at the best post uh
+[11:50.64] best level so I will be starting a timer
+[11:53.12] via so one minute yeah focus was bad
+[11:56.88] >> focus session let's say for teaching for
+[11:58.88] 20 minutes and then we will be having
+[12:03.52] like the 5 minutes for the doubts and
+[12:06.00] everything so that whoever is properly
+[12:08.64] focused he will surely love that and yes
+[12:11.44] we will be having a good uh run in this
+[12:13.60] way okay so I can just have it on the
+[12:16.08] separate screen but this is what we'll
+[12:18.16] run
+[12:20.16] cool everyone so I hope all of you are
+[12:21.52] ready I would want that you do write in
+[12:23.60] the chat so that we I I know that people
+[12:25.84] are watching they're understanding
+[12:27.68] though I will be taking the doubts in
+[12:29.92] the once the timer gets over. Okay. So
+[12:32.40] this is going to be a philosophy for the
+[12:34.88] full course. That is the idea. Okay. I
+[12:38.96] hope each and everyone is clear with
+[12:40.08] this. Anyone has any doubt?
+[12:43.04] Did you teach a yes? We do teach
+[12:45.52] agentic. So these are the kinds of doubt
+[12:47.44] which I will avoid once I start teaching
+[12:49.52] in depth. Right. Uh yeah I do teach
+[12:52.00] agentic AI with respect to agentic AI
+[12:54.40] autogenui lang chain lang graph adk
+[12:58.80] agno
+[13:00.32] all of these frameworks like we have
+[13:02.56] classes we are going for them right so
+[13:05.04] yeah for agent is something which I
+[13:06.96] guess we know as well
+[13:12.24] let me make the screen bigger as well if
+[13:14.32] it's possible okay one minute let me
+[13:16.24] check
+[13:18.00] uh just a second everyone
+[13:29.20] Okay. So, yeah, I'm just trying to test
+[13:32.00] out something.
+[13:33.76] I hope we can add that. Yeah.
+[13:38.40] Okay,
+[13:40.64] cool. I think uh it's added, right?
+[13:46.96] screen to
+[13:50.96] circle
+[13:53.68] ah okay so I should have added great so
+[13:55.76] everyone I hope you're able to see the
+[13:56.88] screen properly uh on like me and Chris
+[13:59.04] are on either of the side right so that
+[14:01.44] shall be helpful
+[14:04.08] great so yeah let's uh now start
+[14:08.32] and today what we are going to do as we
+[14:10.40] have discussed already we will be
+[14:12.08] automating the social media game now
+[14:15.12] this is just two of the icons which we
+[14:17.20] have created. Now of course you can ask
+[14:19.12] it to like write Facebook post as well.
+[14:21.68] Okay. So though we use Facebook a lot
+[14:23.52] less but surely you can use the same for
+[14:25.92] Facebook as well. Then we can talk about
+[14:28.80] Twitter, we can talk about medium. So
+[14:30.96] the idea there is that we need to
+[14:33.68] understand the whole process so that we
+[14:36.32] are able to design a system in a way
+[14:39.68] that we are using it right in a way that
+[14:42.72] we are using it and we can then generate
+[14:44.64] this particular thing by any way we
+[14:46.56] want. So if you want we can have a
+[14:48.32] medium blog as well right so totally
+[14:51.12] totally fine not a problem once you
+[14:53.92] understand the whole approach that is
+[14:55.52] going to be something very very helpful.
+[14:57.12] So I can have the medium uh icon as well
+[14:59.44] here and I can put it here.
+[15:03.92] Great. Now as I said the overall
+[15:08.08] platform which we are going to use here
+[15:10.08] is going to be nent right that is
+[15:12.56] something which I have already given you
+[15:14.40] an idea we know about how to use the
+[15:17.52] same and since it's a no code easy to
+[15:20.40] use platform the whole idea is to that
+[15:23.20] how can we make best use of nitin as our
+[15:26.40] platform for the AI related stuff so let
+[15:30.16] me just make it easier to follow great
+[15:34.08] and in the process we will also be
+[15:36.40] making sure that we are able to also
+[15:40.72] have other applications like Google
+[15:42.88] sheets or let's say any other as well
+[15:45.20] right whatever we want so I've just keep
+[15:47.20] kept it very open so that we are able to
+[15:50.48] make our logic flow right we can
+[15:52.96] understand that okay how the logic is
+[15:54.32] flowing and then we can make that call
+[15:55.60] that okay how exactly or what exactly is
+[15:57.84] happening that is the whole idea because
+[15:59.68] I want that you understand in depth how
+[16:03.92] we automate these things. So that is
+[16:05.92] something which we are going to have
+[16:07.68] here everyone. Okay. So now with this
+[16:10.72] thing clear let's move forward and go to
+[16:13.76] any here we will be going to get started
+[16:17.36] and we can create our account everyone
+[16:20.72] right all of you can use and create your
+[16:23.28] free account. So any 10 is totally
+[16:25.20] totally free that should not be a
+[16:26.72] problem right it is having a caveat
+[16:28.96] where it is 14-day free trial. Okay but
+[16:31.76] I think you can create multiple
+[16:33.12] accounts. So that does keep it in a way
+[16:35.44] that till the time you are learning it
+[16:37.44] is going to be free. Okay. Now let's
+[16:40.56] start and what I will be doing I will be
+[16:42.96] creating a new account. So let me do uh
+[16:45.04] may here then I can have one second. So
+[16:48.56] just a second everyone let me quickly
+[16:50.08] log into my account.
+[16:52.72] Meanwhile all of us can do the same as
+[16:54.72] well right? I can just quickly log into
+[16:56.48] the account and start with the same.
+[17:07.76] Just setting up something
+[17:35.28] Great. So let me add the screen back.
+[17:39.28] Great everyone. So actually I have
+[17:41.12] logged into my account now. Empala12 is
+[17:43.68] the name of the workspace which I'm
+[17:45.76] using. Right here I can now just open my
+[17:48.64] instance. You can easily just go and
+[17:50.96] create your own account as well. So if I
+[17:53.04] just open an incognito window here,
+[17:55.84] let's say if this is an incognito window
+[17:58.00] everyone, then if I just go on nitn.io,
+[18:02.08] right? This is where you can get
+[18:04.24] started.
+[18:06.16] Just enter your name, any email id, then
+[18:09.04] the password and the account name as
+[18:11.12] well. So account name is just like how
+[18:12.80] you can have your uh ID or some uh
+[18:16.32] overall identifier. You can just add
+[18:18.72] let's say if my name is my I can add may
+[18:20.72] 123 or something right it should be
+[18:22.56] unique okay so with respect to that now
+[18:25.44] let's move forward and let me close this
+[18:27.92] I am pretty sure that all of you can
+[18:29.84] easily create an account here that
+[18:31.36] should not be a problem it is going to
+[18:33.20] be 14-day free trial right the whole
+[18:35.68] pricing strategy is written here which
+[18:38.32] pretty sure all of you have an idea
+[18:39.68] already but I believe for the project
+[18:42.64] for the learning time 14 day is more
+[18:45.60] than enough you can easily create your
+[18:47.36] new account and you can download your
+[18:49.52] workflows as JSON. So that should be
+[18:51.04] helpful as well. Right? So now if I go
+[18:53.20] back everyone now let me open the
+[18:55.36] instance and this will open my
+[18:58.96] workspace. Here you can see that how I
+[19:01.44] have already created some of the overall
+[19:05.52] workflows. Now I am also using a trial
+[19:08.80] account uh trial account so that I face
+[19:10.88] the same issues as all of you will face
+[19:13.44] right? so that I am also not using
+[19:15.04] something which is paid where you don't
+[19:16.96] have access to that. So I'm in the same
+[19:18.88] boat as all of you. That's the whole
+[19:20.48] idea. Now let's move forward and let me
+[19:23.60] create a workflow. So I can just create
+[19:25.12] a empty workflow and this is going to be
+[19:28.16] our canvas where we are going to rock
+[19:30.32] and where we are going to do our AI
+[19:32.64] related stuff. Right? So let's jump
+[19:35.68] back. Uh let me uh close this. So just a
+[19:38.80] second let me close something as well.
+[19:42.40] So many things are open because I was
+[19:43.92] working before this.
+[19:46.08] Okay.
+[19:48.88] But I guess we should be good to
+[19:50.56] continue. That should not be a problem.
+[19:54.00] Yeah. So let me add the screen back.
+[19:56.96] Great. So this is going to be our canvas
+[19:59.04] everyone where we are going to make all
+[20:00.96] the things work for us. Right. This is
+[20:03.28] the by default any workflow. Okay. This
+[20:07.12] is where we will be doing all the things
+[20:09.04] related to any overall integration which
+[20:12.48] we want to make. The best thing is that
+[20:14.88] it supports AI as well from scratch. So
+[20:17.60] if I go here once I add a trigger then
+[20:20.16] after that I can just have this AI where
+[20:22.40] we can have all these different
+[20:24.16] different agents as well as LLM
+[20:26.80] providers anthropic, Gemini, OpenAI
+[20:29.36] which I'm pretty sure all of you also
+[20:30.80] have an idea about. Right now let's do
+[20:33.76] one thing. Let me just quickly go and
+[20:37.36] tell you that how we are going to flow
+[20:39.12] or how we are going to make go about our
+[20:41.44] social media automation. Okay. So for
+[20:44.40] that let me first create social uh one
+[20:47.20] minute. So this is something you have to
+[20:49.12] for correct social
+[20:52.32] media
+[20:54.40] automation right this is what we are
+[20:57.12] planning. The idea is if I'm able to
+[20:59.12] make it for one of the use case then
+[21:01.20] surely you can expand the same for some
+[21:04.64] different use case as well. For example,
+[21:07.12] if let's say I am able to automate
+[21:09.12] writing LinkedIn related post then you
+[21:12.08] can go forward and make sure that you
+[21:14.32] can just tweak your prompt right and
+[21:17.12] understand and give it some reference so
+[21:19.68] that it can write Twitter related post
+[21:21.60] as well. So that is going to be the
+[21:22.88] whole idea just like how I have LinkedIn
+[21:24.96] here right. So how just I I will be
+[21:27.84] doing it for LinkedIn today. You will be
+[21:30.24] able to then do it for Twitter then for
+[21:32.32] Facebook. You can also make it write the
+[21:34.32] blogs everything as well. That is the
+[21:36.16] whole idea. Right now let's discuss the
+[21:39.28] system design or diagram of how we are
+[21:41.44] going to uh make sure that we just go
+[21:44.80] about the same. Right. The very first
+[21:47.28] thing which works in this particular
+[21:49.60] init is something known as trigger. So
+[21:52.72] we can have a it triggered manually via
+[21:55.84] some we can have it triggered let's say
+[22:00.16] let me avoid the same and write it like
+[22:02.08] this. So we can have it triggered
+[22:05.12] either say manually right
+[22:11.52] manually
+[22:14.24] then if we are interested we can have it
+[22:16.40] trigger based on some schedule
+[22:21.76] or if we want we can also schedule we
+[22:25.36] can also trigger the same based on some
+[22:28.16] external trigger. So external trigger
+[22:32.88] right now this external trigger can be
+[22:36.24] say WhatsApp message even a telegram
+[22:38.56] message you it can be a slack related
+[22:40.72] thing it can be a new entry into our
+[22:43.92] Google sheets right so we can specify
+[22:45.84] those external triggers now this I will
+[22:48.00] be discussing with all of you in depth
+[22:50.00] uh in the future projects as well so for
+[22:52.08] the timing we will be doing a simple
+[22:54.48] schedule or a simple trigger uh which is
+[22:57.60] manual right so that is going to be the
+[22:59.20] whole idea. Now once this thing is clear
+[23:02.16] right once that you understand that okay
+[23:04.00] how we will be triggering for example as
+[23:06.48] of now I have created a manual trigger
+[23:08.64] here. So all of you what you can do once
+[23:10.80] you have the empty canvas if you click
+[23:12.88] on first add first step you can easily
+[23:15.76] get the very first one which is trigger
+[23:17.60] manually right now the good thing you
+[23:19.84] will see is that as I'm using any as I'm
+[23:22.80] using any the way I will be explaining
+[23:25.28] you things here based on my mind the
+[23:27.84] similar kind of a thing you will be able
+[23:29.44] to do here just by dragging and dropping
+[23:32.00] right so that is the whole idea that it
+[23:35.20] kind of is very good in prototyping
+[23:37.28] something as of Now I will still say
+[23:39.44] that though it is very helpful in other
+[23:41.68] approach as well but with respect to
+[23:43.20] prototyping it is pretty good that it is
+[23:46.48] able to quickly bring your ideas to
+[23:48.40] life. So that is the whole idea that is
+[23:50.24] why we are using this no code tool.
+[23:51.76] Okay.
+[23:53.52] Now next comes something known as where
+[23:56.72] we will be able to search something. For
+[23:59.68] the same I will like to have
+[24:03.36] search
+[24:05.12] Google maybe right search Google or some
+[24:08.64] other location
+[24:10.40] for topics. So the very first thing
+[24:13.60] which I as a user let me get myself as a
+[24:16.16] user here. So okay which kind of user am
+[24:18.48] I? Okay I think I'm this happy one. So I
+[24:21.28] can get this one right. This is better.
+[24:24.24] Now let's say if this person this is me
+[24:26.40] as mayank the way I right now go about
+[24:29.36] my content is that first I try to
+[24:32.32] research right first I try to get all
+[24:34.64] the topics first I do try to get the
+[24:36.72] research work done then based on that
+[24:39.76] research I try to move forward and I
+[24:42.48] generate the ideas right so this is the
+[24:45.04] flow in which we normally work ideas
+[24:48.96] then once the ideas are in place once
+[24:51.44] the ideas are in place then I go forward
+[24:53.92] forward and make sure that I can create
+[24:56.64] some two or three content right
+[25:00.32] and then last is something which we can
+[25:02.40] post as of now to avoid any overall
+[25:06.24] issue we just post via post directly
+[25:10.08] right so it is not based on our
+[25:13.92] like it we will not be posting it
+[25:15.68] directly from the editor we will be
+[25:17.04] posting it manually so I will just say
+[25:18.64] posting manually so as to avoid any
+[25:21.20] issues here right so this is the whole
+[25:22.80] workflow everyone in which I do it as of
+[25:25.20] now. So pretty short should be clear
+[25:27.84] because the way you do it in real life
+[25:29.60] normally that is very helpful. Okay. So
+[25:31.52] I don't want want that. I just want this
+[25:33.68] to be green
+[25:36.72] right works. Yeah. Cool. So this one is
+[25:39.36] fine as green. Right. And I can just
+[25:42.16] have my so that this is in a straight
+[25:43.76] line. Yeah. Cool. So if this is my this
+[25:46.32] is how I right now go and do all the
+[25:48.40] things. Now the whole idea or the use
+[25:51.68] case becomes that how can if see this is
+[25:55.84] one thing which I always say that if you
+[25:57.20] want to automate something and there are
+[25:58.48] many many tutorials which you will see
+[26:00.56] they will always promise you that hey
+[26:02.00] you can do this you can do that unless
+[26:03.60] you understand the use case in real life
+[26:05.76] the way you will be able to do the same
+[26:08.16] if you have to do it manually you cannot
+[26:09.92] automate that it's not that you can
+[26:11.60] automate something out of thin air you
+[26:13.76] have to understand the use case very
+[26:15.44] much in depth so with respect to that
+[26:18.08] everyone what we will be doing now right
+[26:20.88] what we will be doing now is that we
+[26:23.68] will be moving forward and we will make
+[26:26.24] sure that we just copy this use case and
+[26:29.52] see where exactly I might be needing AI
+[26:31.68] if I will be needing AI at all or not so
+[26:34.08] that is the whole idea with which we
+[26:35.52] will be moving forward right so now
+[26:38.72] let's move forward and I think once I
+[26:40.56] have the topics either I can do it
+[26:42.08] manually or I can have an AI for that as
+[26:44.16] well so for the same let me get another
+[26:46.88] very important thing. So just we will
+[26:50.16] have two icons, right? We will plug it
+[26:51.92] in wherever it is required, right? So we
+[26:53.52] will see that okay where exactly we
+[26:55.12] might need our brain or where we might
+[26:57.60] need uh AI as well. Okay. So you will
+[26:59.92] understand the same once I do the do it
+[27:01.60] in front of you that will be helpful. So
+[27:03.36] let me get this AI chip once. So this is
+[27:06.40] an AI chip.
+[27:08.56] So anytime I will add an icon this
+[27:10.48] application will not work nicely.
+[27:12.24] Something which I have to fix in this.
+[27:15.04] And similarly what I can have I can have
+[27:20.40] this another one which is one of my
+[27:22.72] favorite icon. So this is an agent.
+[27:24.88] Okay.
+[27:26.96] Okay. One minute. Where is the agent? I
+[27:29.52] think we can make our agent a little bit
+[27:30.96] smaller.
+[27:33.68] So this is our agent and we have the AI
+[27:36.48] as well for with us which can do stuff.
+[27:38.40] Right
+[27:40.16] now coming back to how we have this flow
+[27:42.80] and what I would want something I would
+[27:44.88] like to help you visually understand. I
+[27:47.12] will have this here.
+[27:49.84] This is how you do automation. Right? So
+[27:51.84] this is the manual flow. I will write it
+[27:54.32] down as well. This is my manual flow.
+[28:00.24] Manual
+[28:02.00] flow.
+[28:03.52] And this is going to be my
+[28:07.12] automated flow. Okay, automated flow.
+[28:11.36] Now up till now we have seen that how
+[28:13.12] can we have a manual trigger. I guess it
+[28:14.96] is very important that we first set or
+[28:17.36] how we are going to automate. Once we
+[28:19.36] have done the same then is where we
+[28:21.04] should move to edit and then is all the
+[28:23.76] ref over work or how we should create
+[28:25.52] our edit. Okay. Now again I think very
+[28:28.64] important to understand if you do this
+[28:30.24] properly then Len is just a piece of
+[28:32.08] cake like that is not where the major
+[28:33.92] problem will happen right. So with that
+[28:36.56] if I have done this thing then I think
+[28:38.80] next part which becomes is something
+[28:41.36] where how I am going to generate or how
+[28:44.80] I am going to generate some ideas right
+[28:47.84] so I will say that content
+[28:50.64] content ideas or let's say
+[28:54.56] topics right now what they can do they
+[28:58.40] can just give me a structured output so
+[29:01.68] it can just give me a structured output
+[29:04.88] and I believe here I can use AI. So I
+[29:07.20] can use AI here, right? AI can be very
+[29:09.68] nicely used here. For the timing, I will
+[29:12.64] be doing the manual research, right? So
+[29:14.64] we can have them out as well. For the
+[29:16.72] timing, let's not confuse our use case.
+[29:18.48] We will just add one by one. Okay. So
+[29:21.04] I'm just going to use a overall AI here
+[29:24.08] so that we can get right now once I have
+[29:27.92] the content ideas everything then I
+[29:30.00] think is somewhere we should be moving
+[29:31.52] towards and again just one thing I have
+[29:34.48] as of now considering how this is the
+[29:36.80] very first project which we are doing
+[29:38.64] kept it very very easy with respect to
+[29:40.72] the understanding surely there can be
+[29:42.72] multiple things there can be like tens
+[29:44.80] of these boxes we can have human in the
+[29:46.64] loop we can have different different
+[29:47.92] ideas but the whole idea Idea is that
+[29:51.20] the whole understanding is that if you
+[29:54.00] are able to understand the easy use case
+[29:56.00] then you will be able to make the
+[29:57.12] difficult one. So don't make the mistake
+[29:58.80] of saying that hey I will automate my
+[30:01.04] whole life will sit and will enjoy. No
+[30:02.96] that is not going to happen. If you are
+[30:04.80] able to automate the easy thing first
+[30:06.40] then you will be able to do the manual
+[30:07.84] one as well. Right now moving forward
+[30:11.20] next I think is somewhere where we can
+[30:13.44] have another box and now I can have some
+[30:17.12] agent. Right? This time I can have some
+[30:19.44] agent which can generate things for me.
+[30:22.08] Right? So if I have this agent now
+[30:23.84] everyone this particular agent which can
+[30:27.68] generate my post generate posts right
+[30:33.36] now as a very good practice to make sure
+[30:35.52] that I'm able to handle all of them very
+[30:37.60] nicely. Right? I will be wanting that I
+[30:40.48] have some database kind of a thing. Now
+[30:43.92] since this is again a very very uh
+[30:46.56] initial use case what I will be doing I
+[30:48.96] will be just using Google sheets as the
+[30:50.88] one for a database right so Google
+[30:53.68] sheets will be used as a database let me
+[30:55.84] add it here and we can just say Google
+[31:00.08] sheets okay so cool I think this is what
+[31:04.24] we will be using as DB for the time
+[31:06.00] being now you can use a SQL DB you can
+[31:07.92] use a NoSQL DB you could generally use a
+[31:11.28] complex
+[31:13.04] uh big data table as well. Not a problem
+[31:15.36] at all. If you understand what you're
+[31:17.28] doing, that's not going to be a problem
+[31:18.56] at all. Okay. So, yeah, with that we are
+[31:21.44] actually done with our first 20 minutes.
+[31:23.44] Now, let me just go to and ask your
+[31:26.40] doubts. I think some people were asking
+[31:28.80] for my uh social. So, let me just share
+[31:31.36] that so you can connect with me. Okay.
+[31:33.92] Yeah, we can use notion as well again.
+[31:35.60] Uh so, Namine that as I said that's
+[31:37.44] totally on you what you want to use. Not
+[31:39.04] a problem at all. So, everyone uh these
+[31:41.60] are my socials. If you want to connect
+[31:43.20] with me, okay, I do make content uh at
+[31:46.32] many places, okay? So, just see the same
+[31:49.20] and do follow me here. More and more
+[31:51.04] content is coming. Now, let me see uh
+[31:54.32] bro Hindi now. Anyway, your audience
+[31:55.84] also knows Hindi again. Bab, I think
+[31:57.68] that I speak a very easy to
+[31:59.52] understandable English. Okay, so should
+[32:02.08] not be a problem, right?
+[32:04.96] Hindi is also fine. Hindi maybe. Okay,
+[32:08.96] let me see please. Where do you get the
+[32:10.80] icon? Google search. Simple Google
+[32:12.16] search. Okay, just go to Google, search
+[32:14.32] for icons. See it uh session is
+[32:16.88] completed. So let me have a another one
+[32:21.20] for doubts and it can be for 5 minutes.
+[32:24.56] 5 minutes.
+[32:26.56] Cool. So yeah, do send your message
+[32:28.00] quickly everyone. This doubt session is
+[32:29.92] running for the time being. Let me see.
+[32:32.40] Uh hey, where do you get the icon? Okay.
+[32:33.92] Hey, I'm watching your tutorial. It's
+[32:36.32] amazing. I've been searching for
+[32:37.68] tutorial and found yours. Yeah, JNK. So
+[32:39.44] everyone if you're not aware which
+[32:40.96] tutorial is being taugh talked about
+[32:42.88] here just go to my YouTube okay so what
+[32:46.40] I can go I can go to YouTube and go to
+[32:49.04] my kagaral
+[32:50.72] and okay not this one okay so I just
+[32:52.96] also have a video for day after tomorrow
+[32:56.00] but just see this video 7our videos I
+[32:58.32] know pretty long took me a lot of time
+[33:00.16] as well just see this video and you
+[33:02.88] shall be able to okay I think I sent the
+[33:04.72] Instagram one by mistake copy this avoid
+[33:10.56] And this video you can talk about. Okay.
+[33:13.20] Hello manga. What to automate my
+[33:14.72] workflow for my fast food. Kazzy again
+[33:17.12] don't know what exactly fast food is.
+[33:18.56] You might have to give a little bit more
+[33:19.76] idea. With automation you will not get
+[33:21.60] reach as you get manually because social
+[33:23.12] media platform know if you're posting
+[33:24.24] manually or using API. So insect wars
+[33:26.08] again we can man post manually by copy
+[33:28.24] pasting. Right? So that should not be a
+[33:29.60] problem. If you're using docker make
+[33:31.44] sure that you have volume in your
+[33:32.32] container. So Naven I already have
+[33:34.24] created a video where I have talked
+[33:36.88] about how you can uh have these things
+[33:39.60] right. So one minute if we go forward.
+[33:44.16] Yeah. So how you can host N10 in under 3
+[33:46.32] minutes. It can be on docker. It can be
+[33:48.64] via this trial as well or on some server
+[33:51.92] as well. So everything you will find
+[33:53.28] there. Yeah. So your workflow will not
+[33:55.68] get deleted after 14-day trial. I mean I
+[33:57.52] think they give you an extension of some
+[34:00.24] uh okay some seven or 14 days more. So
+[34:04.08] yes you should be able to like avoid
+[34:06.48] getting your workflow deleted. But what
+[34:08.48] you can do you can just save and
+[34:10.00] download it from here right you can just
+[34:11.68] easily save. Okay so you can just easily
+[34:15.04] save and download it from here. Download
+[34:16.72] simply you can just save that. Okay
+[34:20.48] thank you such a great m thank you. Okay
+[34:22.80] my question would be if you can make
+[34:24.08] calls video on iOS app using the edit
+[34:25.92] inflow. Sure um I can dis uh discuss
+[34:28.32] that. This is my email. If you would
+[34:29.68] like to have some use case which might
+[34:31.20] be very helpful for all of you just mail
+[34:33.60] me up and I will see the same. Okay.
+[34:36.24] Does any focuses mainly on social media?
+[34:38.48] No. It's totally on you how you do that.
+[34:39.84] Okay. Use docker. Uh again naven and
+[34:42.56] everyone I think using docker for the
+[34:44.24] very first time when you're using nitin
+[34:45.76] not the best way of doing it. There are
+[34:47.60] some issues as well. So we will avoid
+[34:49.04] that. Okay.
+[34:51.60] Okay. Let me see. Yeah I think these are
+[34:53.84] all the doubts. uh just you can ask the
+[34:55.52] same if anything else is there. Now let
+[34:58.32] me see uh what are the doubts after we
+[35:00.80] started this chat session. Let me see
+[35:03.84] can we use any on local server mean 5 6
+[35:05.76] 7 minute. Yes exactly what's so this is
+[35:07.68] where if you have no idea just go and
+[35:09.68] see this video how to host edit in under
+[35:12.16] 3 minutes. I have told you that how you
+[35:14.08] can do on docker right very very easy
+[35:16.00] steps you will not face any problem.
+[35:17.76] Okay
+[35:19.52] great. Uh what skill we will be learning
+[35:21.60] here? AI. The skill which is in most
+[35:23.52] demand. Sir, how do mathematics mean in
+[35:26.56] data sciences field? Uh kush you will be
+[35:28.80] knowing you will be requiring to know a
+[35:30.48] little bit in depth about mathematics if
+[35:32.00] you are entering the data science or AI
+[35:33.44] fields right especially when you are
+[35:35.28] learning in depth. So yeah
+[35:38.72] here what is represented by AI? Is it
+[35:40.56] LLM? Yeah, majorly when I when I have
+[35:42.72] drawn AI here it means LLM for the time
+[35:45.68] being. Okay.
+[35:48.00] without no code tool like n using lang
+[35:51.68] chain lm python can we achieve the same?
+[35:53.52] Yes of course kashina. So in the back
+[35:55.20] end some code is only getting written
+[35:57.04] right. See code is the ultimate way.
+[35:59.44] Code is like the truth. Okay. So I can
+[36:01.52] do one thing. I can make myself bigger
+[36:04.16] and one minute. Let me change this.
+[36:06.32] Yeah. Cool. So code is the ultimate
+[36:08.56] truth. Right. After that you can use
+[36:10.64] some like in the end some someone has
+[36:12.40] just made it easier for you that is all.
+[36:14.00] Okay. Okay. I rejected to see into
+[36:17.20] campus placement. Okay. How is unfair
+[36:19.36] with my face paral? Okay. Because if it
+[36:22.96] is written that you need attendance then
+[36:24.96] you need attendance. So yeah CJ pays 8.5
+[36:27.60] doesn't matter 60% attendance rules
+[36:29.60] sometime happens. Okay. Uh my great to
+[36:32.56] love watch. Thank you. Okay. Kush I
+[36:34.56] think your doubt is solved. Just working
+[36:36.64] on UI for the app to automate SM and
+[36:39.28] then this great timing. Thank you. How
+[36:42.24] blockchain can be integrated into AI? If
+[36:44.40] you understand blockchain in depth then
+[36:46.08] I think it should not be difficult at
+[36:47.44] all. Blockchain normally is a easy
+[36:49.04] concept to understand not very much
+[36:50.64] difficult to implement. Okay.
+[36:53.44] Using BRF for view for admin panel for
+[36:55.44] maker checker for posting it. Again sort
+[36:57.36] of we can make it as complex as we want.
+[36:58.96] For the timing I'm keeping it easy.
+[37:00.64] Okay.
+[37:02.24] Can we do mobile and web mobile web and
+[37:04.96] mobile app apps in uh are you asking
+[37:07.84] about creating them explorer AJ or are
+[37:09.92] you asking about integrating them? If
+[37:11.76] integration then yes you can do that.
+[37:13.68] Creating I don't guess you can create
+[37:15.12] that. It is for creating these workflows
+[37:16.64] not for apps.
+[37:19.52] What is the prerequisite to learn your
+[37:21.52] latest rack course in UDI? I think
+[37:23.28] you're talking about the latest rack
+[37:24.80] course which we have made live on Udemy.
+[37:27.12] Uh basic uh if you know about LLM etc it
+[37:29.60] should be pretty good. Okay. So I see
+[37:30.96] that our doubt has ended. Let me quickly
+[37:32.56] go through the same.
+[37:35.36] Uh I'm making I am working on making my
+[37:38.24] N server my own what I require. I didn't
+[37:41.12] get it. You will have to explain a
+[37:42.64] little bit like what exactly the server
+[37:44.16] are you trying to host it locally? I try
+[37:46.40] to fork n because it's open source and
+[37:48.40] do something extra. Yeah
+[37:51.68] sir is this a course or a single video.
+[37:53.36] So summit this is going to be a course
+[37:56.80] like every week uh we will be meeting
+[37:58.40] and we will be doing some use cases.
+[38:00.16] Okay
+[38:02.00] is using lang chain as a back end sir
+[38:03.68] right? Uh I don't guess how that's the
+[38:05.44] case. I don't know I will have to go
+[38:07.44] through that but I don't guess it's
+[38:08.48] using lang chain like it's not just
+[38:10.56] using lang chain it will be using other
+[38:12.00] things as well. Okay. Yeah, lang flow
+[38:14.64] also you can do. You can do in make as
+[38:16.08] well. That should not be a problem.
+[38:17.04] Moido,
+[38:18.72] what is it that you're drawing manually
+[38:20.24] while teaching Excaliraw?
+[38:24.08] Uh, latest rack course not showing in
+[38:25.68] Udemy business chitra punjan because
+[38:27.52] Udemy business it takes time. The best
+[38:29.44] of the courses get listed in UDMI. Uh,
+[38:31.60] so yeah
+[38:34.72] road map to learn AI as a fresher or
+[38:36.56] beginner. I will be creating a video on
+[38:37.92] that. Okay. So do go to my channel and
+[38:40.64] yeah that should be pretty fine. Okay,
+[38:43.36] just sharing the channel again and go to
+[38:45.28] my channel. I will be shortly making a
+[38:46.72] video on that.
+[38:48.96] Okay,
+[38:50.64] is this video recorded? You will be
+[38:52.08] uploading YouTube. It is a live session
+[38:54.24] uh zinc. So, please go through the same
+[38:56.64] and yes we can see the same afterwards I
+[38:59.44] guess but you will be able to download
+[39:01.12] all the resources on some other platform
+[39:03.44] plus I guess videos will also be
+[39:04.64] uploaded there only. So, we will discuss
+[39:06.32] we will just share that. Okay,
+[39:09.20] cool. Seems like we are back. Now let me
+[39:12.24] move forward and let's continue. Few
+[39:14.56] more things for your information
+[39:16.08] everyone. So
+[39:18.32] I would just quickly share the same
+[39:20.16] right.
+[39:21.76] First thing we will be going live. So
+[39:23.84] let me just try to write it down. Okay.
+[39:26.56] Yeah. So I can write it here. We will be
+[39:30.56] going live on 15th
+[39:34.48] August. that is tomorrow at 8:00 p.m.
+[39:40.88] for FAQs or Q&A right so basically you
+[39:45.84] can ask anything uh we I will be
+[39:47.44] scheduling that in some time so yeah do
+[39:50.56] render the same it will be on the same
+[39:52.16] questioners and meet my channel and then
+[39:54.32] we can surely ask and enter your doubts
+[39:56.96] right along with that uh this is a
+[40:01.04] series of videos for a free course AI
+[40:08.24] for everyone which you can check out
+[40:11.04] like I we will add the same in the link
+[40:12.80] in the description. I think you will
+[40:14.16] already be able to see the same in the
+[40:16.40] description. We will add that link right
+[40:19.20] and one very important thing so let me
+[40:21.44] just avoid that and let me just paste
+[40:23.36] it. We are also bringing another course
+[40:26.08] everyone ji for professionals and
+[40:27.76] leaders boot camp. Now again this is
+[40:29.76] also where we will be doing each and
+[40:32.96] everything from scratch. So if you will
+[40:34.56] go through the slavers this detailed
+[40:36.16] course slavers
+[40:38.00] the whole idea of this is for
+[40:40.56] professionals majorly right even if you
+[40:42.64] are in college this is going to be fine
+[40:44.72] the idea is this one okay so see this is
+[40:48.64] the whole idea of this course if you
+[40:50.56] ever wanted to learn AI without diving
+[40:52.24] into complex code and instead
+[40:54.56] confidently apply to transform work
+[40:56.24] career or business no matter if you are
+[40:57.84] in college if you are in job if you at a
+[41:00.24] higher level as well we will be teaching
+[41:02.56] you these things so if you have no idea
+[41:04.08] about okay what is AI what are agents
+[41:05.84] what is rag what are tokens okay what
+[41:08.56] are these different different LLM
+[41:09.92] providers all these things we will be
+[41:12.08] explaining you in this course so I'm
+[41:13.92] sharing the link of this as well okay
+[41:16.24] and yeah do enroll in the same everyone
+[41:18.16] if you like so that is going to be very
+[41:19.92] helpful okay it's going to be a live
+[41:21.60] course we will be going live every
+[41:23.04] Saturday Sunday at 8:00 p.m. This is the
+[41:26.56] timings right. So just go through the
+[41:28.80] slay bus as well. I'm sharing the slay
+[41:30.48] bus as well and surely you can go
+[41:32.40] through the same and it will be helpful.
+[41:34.16] Okay. So what is the difference between
+[41:36.08] live and Udemy? Uh Udemy I think live is
+[41:38.88] a way better in terms of how we teach.
+[41:40.64] Uh you have the live interaction
+[41:42.08] everything. Udemy we try to make it
+[41:44.16] available for people who are not able to
+[41:46.96] let's say enroll in life on majorly we
+[41:49.12] try to provide it but uh yeah live we
+[41:52.16] teach a lot more extra things making
+[41:54.00] sure that you understand the doubt with
+[41:55.44] proper support interview experiences
+[41:57.60] idea everything yeah
+[42:01.20] great so let me close this and let's now
+[42:03.36] continue everyone
+[42:05.36] so what I will be doing I will be
+[42:06.96] starting the timer again timer focus
+[42:10.88] no not doubt this time each for 20
+[42:13.20] minutes.
+[42:15.12] Let me have it here. Okay,
+[42:17.92] great. So now let's move forward and we
+[42:21.28] have seen already that how can we do
+[42:22.80] these things where we can generate the
+[42:24.24] idea generate post. Here we will be
+[42:26.08] using an agent. So now let's move
+[42:28.88] forward and this time let's now go and
+[42:31.68] do this thing in real world. Okay. So
+[42:33.28] now let's go to any and do these things
+[42:35.04] one by one. So for the very first thing
+[42:37.68] everyone what I will be doing pay
+[42:39.04] attention
+[42:40.64] I can have plus this icon. So pay on
+[42:43.28] this I can just click this plus once I
+[42:45.84] click this plus and here there are so
+[42:48.40] many applications. If you see we have
+[42:51.36] all these applications which pretty sure
+[42:53.92] you must have seen on the homepage as
+[42:56.16] well. We have an idea about this as
+[42:58.00] well. Then here in this application I
+[43:01.60] will be selecting about doc Google docs
+[43:05.52] right and I can just do a get a
+[43:07.84] document. Okay so pay attention now we
+[43:11.12] have just linked a document here. Okay
+[43:14.64] the idea is that I will be saving all
+[43:16.96] these uh search Google or location like
+[43:20.96] any other location I will be saving this
+[43:22.96] I could have used any API here as well
+[43:25.12] but don't want to make it very much
+[43:26.56] complex. I just want to make sure that I
+[43:30.72] can save all my research here and then I
+[43:34.32] can move forward with the same. Okay. So
+[43:36.00] that my post can be created. Okay. Now
+[43:39.28] once I have done the same everyone pay a
+[43:41.12] lot of attention. I can have content
+[43:43.04] ideas or topics. So for this I will be
+[43:46.80] using I will be using your AI now
+[43:49.84] because if you see we have this small AI
+[43:51.68] button this cute small AI button which I
+[43:54.08] will be referring to. Now for this I
+[43:56.96] will be clicking this plus sign and I
+[43:58.80] will be going on AI. For the AI I will
+[44:02.08] be using the favorite one. So my
+[44:03.92] favorite has been open AI due to some or
+[44:05.84] the other reason. So I will be using
+[44:07.04] this open AI and I will just message a
+[44:09.76] model. Okay. I will just message a
+[44:11.76] model. Now you will be getting free
+[44:15.44] credits from NAN only. If you will go
+[44:18.80] here you will see a small popup here
+[44:22.40] because of which you can get free
+[44:23.76] credits. So no need to go and like have
+[44:26.24] your own key as a timing as well and it
+[44:28.88] is being pretty nicely with like pretty
+[44:30.88] nicely integrated and it provides you
+[44:32.56] this open AI fee credits and I am using
+[44:35.52] the same so that none of us face the
+[44:38.40] problem where we should have the key etc
+[44:40.72] at least for the prototyping or for the
+[44:42.72] learning phase okay
+[44:45.52] so resource is going to be text we can
+[44:47.60] see the same then we can have this
+[44:50.16] content or document ID we will see how
+[44:52.00] we will connect that don't worry
+[44:53.84] We we can select the model. Let's see
+[44:55.68] what all models are present. I can
+[44:57.20] select for mini should be fine.
+[45:00.24] Then I can just have some prompt as a
+[45:02.32] user. And I think yeah that is more or
+[45:04.88] less what we get when we have a model
+[45:06.80] here. So we can easily just create a
+[45:08.40] model which is going to give us all of
+[45:11.52] our overall
+[45:13.84] ideas. So I can just press press the
+[45:16.24] space and I could just say generate
+[45:20.88] topic or ideas right now let me first
+[45:25.52] now go and create do one thing let me
+[45:28.72] create a new docs docs dot new okay so
+[45:32.16] it has created a new doc let's say here
+[45:35.60] I am just saying that okay content idea
+[45:38.40] or content research right so if I go
+[45:42.00] back to my diagram First I will be doing
+[45:44.80] the content research. It can be again on
+[45:47.36] Google or any other platform. Content
+[45:49.44] research is a better word. Content
+[45:51.76] research. Let me make it in red. Uh the
+[45:54.88] word on red also works. We can have this
+[45:56.72] in red. Now say I go to Google and let
+[46:00.88] me search about any new topic which is
+[46:04.16] very famous. So let's go on tech news
+[46:06.32] maybe and let's go on news. Let's see.
+[46:11.04] Okay. Why is tech always phones? Phone
+[46:15.28] tech is way more than phones. Okay. So,
+[46:16.72] Apple plans to release AI powered smart
+[46:18.72] home devices. Seems like Apple is kind
+[46:20.56] of doing a lots of things in this,
+[46:22.56] right? I will just go on chatgpd.com.
+[46:29.20] Paste this. do research on this and
+[46:34.72] provide me with the
+[46:39.20] summary from different sources. Right?
+[46:44.48] Let me paste this
+[46:46.88] and hopefully again it will search the
+[46:48.56] web. This is also some AI. It is showing
+[46:50.64] you that okay how it has done all these
+[46:52.24] things. I think it is using J. Now it is
+[46:54.56] using JP5. So seems like a little bit
+[46:56.48] better. Now what I can do I can just
+[46:59.04] copy paste all of these things for the
+[47:00.56] time being.
+[47:03.36] So till here and I can add it to my
+[47:06.40] document. Okay great. So I have added
+[47:09.04] the same onto my document everyone as
+[47:10.80] you can see right. So simple approach
+[47:12.88] nothing else done the research. I can
+[47:15.20] just quickly say that hey I have done my
+[47:17.68] research I am all ready. So let me just
+[47:20.72] mark it as
+[47:22.96] right
+[47:24.88] and we have used some wild card entry
+[47:26.88] here. We have not talked about the same
+[47:28.96] but seems like we have used Google doc
+[47:31.76] here for the time being. Now again
+[47:33.60] totally on you if you want to use notion
+[47:35.84] any other application I don't guess that
+[47:37.84] makes a lot of difference as long as
+[47:39.76] you're able to provide the same frankly
+[47:42.32] if you want you can just have a letter
+[47:44.80] written anyways in your blood via some
+[47:47.44] ink AI doesn't care as long as it is
+[47:49.76] getting the information okay so let me
+[47:52.00] zoom in yeah and we have this via the
+[47:55.92] Google uh doc now I have created this
+[47:59.52] documentation this is from my email id
+[48:02.00] mail to
+[48:03.28] So you can reach out to me here as well.
+[48:04.56] I have many email ids but AI with my ink
+[48:07.68] is better. Okay, if you have any doubts
+[48:09.44] whatsoever. Now let me go to our NAN and
+[48:14.56] let me connect my document. So I want to
+[48:16.88] make sure that this particular document
+[48:19.52] it is able to connect to the one which I
+[48:21.84] have created. So for the same what I
+[48:23.60] will be doing, let me go back right and
+[48:26.80] now let me click on this button.
+[48:30.08] Once I click on this button, it is
+[48:31.84] asking me in a very easy to understand
+[48:33.76] way that hey can you please give me the
+[48:35.60] credential with which I can connect. So
+[48:37.36] I can just do select a new create new
+[48:38.88] credentials and we can do o
+[48:40.72] authorization o2. This is again the
+[48:43.84] easiest way right we can follow. Uh let
+[48:46.80] me just check okay it will be requiring
+[48:48.64] some things maybe then we will have to
+[48:50.16] move some other way.
+[48:52.48] Uh okay because I think this is not the
+[48:54.80] case in uh okay so we will we will use
+[48:58.08] some other one. No worries we will use
+[48:59.36] some other one. Close back to canvas. So
+[49:02.56] again it will be just requiring some uh
+[49:06.24] this client ID and secret which you will
+[49:09.20] have to get like this is all the details
+[49:11.52] which is written here. Okay, I thought
+[49:12.88] that it will be direct but I think for
+[49:14.72] these one. Okay, for the following nodes
+[49:17.12] you you can authenticate by signing with
+[49:18.96] Google, right? But seems like here we
+[49:22.08] need to have the Google cloud account.
+[49:23.60] So something which I would like to avoid
+[49:25.52] right here what I would like to do then
+[49:27.84] I would just like to see some other uh
+[49:30.00] application. Okay. So let me see what
+[49:31.76] all other are supported. So we will not
+[49:34.56] be using Google documentation. go sorry
+[49:37.12] Google doc right because it requires a
+[49:40.80] Google cloud account something which I
+[49:42.40] would like to avoid. So if I show you
+[49:44.32] just to show you if we would have used
+[49:46.00] Google sheets it can directly just uh
+[49:51.04] one minute yeah so what it can do we can
+[49:53.04] just directly log into this we can just
+[49:54.88] directly do sign in with Google and can
+[49:56.48] get authenticated something which seems
+[49:59.20] like uh this is not supporting right
+[50:01.44] something which it is not supporting
+[50:02.96] like I could easily tell you how to do
+[50:05.28] the same but I think we it's better if
+[50:07.28] you use some other one okay so let me do
+[50:08.72] one thing let me delete this delete this
+[50:11.68] and let's see which other application we
+[50:13.52] can use. So see the action in the app.
+[50:15.20] Let me just go here.
+[50:18.00] Yeah. So I know one of them which we can
+[50:19.52] use. I can use Google task. Okay. And I
+[50:22.96] can say get a task, right? So let's go
+[50:26.00] back. Let's connect this. For people who
+[50:28.16] are not aware Google task, let me show
+[50:29.52] you what it is. Pretty nice app. Let's
+[50:32.32] go on Google. Google tasks. And the
+[50:36.40] reason I'm again using Google related
+[50:38.16] apps because they are very easy to
+[50:39.76] understand being our very first project.
+[50:41.28] the way we will be doing this I can get
+[50:43.44] rid of them should be fine
+[50:46.24] and let's say I just now create a new
+[50:47.92] task right this is my AI news and in the
+[50:53.20] details so in this only I can add the
+[50:55.36] details in the details I will just paste
+[50:57.52] everything from here copy sorry copy
+[50:59.12] everything from here and I can just
+[51:01.44] paste it right so these are all the
+[51:03.92] details which are very nicely now
+[51:05.36] supported I can just
+[51:09.20] and double click yeah so I can see all
+[51:10.48] the details here right I can see all
+[51:12.08] these details I don't want to do
+[51:14.40] anything else as well so let's go back
+[51:16.72] to any and let me do one more thing okay
+[51:19.44] let me do one more quick thing
+[51:22.16] so that all of you don't get this messed
+[51:26.00] up let me just quickly delete this and
+[51:29.44] get the Google task one so this is the
+[51:31.44] one which we are using now okay and I
+[51:33.68] think it makes a lot of sense we can
+[51:35.04] just create a new task and we can just
+[51:37.04] have the full workflow work for the same
+[51:39.36] so we can create a trigger on that as
+[51:40.96] well. Okay. So, it should not be a
+[51:42.08] problem. Now, uh since we have created
+[51:44.64] the task, let me just delete this one.
+[51:46.80] Should be fine. Let me delete all task.
+[51:49.52] That's good. And let's now go back,
+[51:52.40] right? Let's now go back. Now, once I am
+[51:56.48] at my NA, I can just connect first. I
+[51:59.68] will have to make sure that I connect my
+[52:01.76] NAN. Okay? So, this connection is very
+[52:03.92] important to be made. Pay attention.
+[52:07.12] See the connection which I'm talking
+[52:08.64] about. This is the connection. So let me
+[52:11.12] make it smaller. Let me make it like
+[52:13.44] this. This connection needs to be made
+[52:16.16] here everyone that task and any they can
+[52:18.40] connect with each other. Okay. So task
+[52:19.92] and any they can connect. Now for that
+[52:23.12] what I will be doing? I will be just
+[52:26.32] doing a Google task account. Let me just
+[52:29.04] uh create a new credentials. I can sign
+[52:31.36] in with Google and I can just select
+[52:33.92] mail to Kagarval the email ID which I'm
+[52:35.76] using and I can continue. Okay.
+[52:39.28] So now with this what we can do pay
+[52:42.24] attention once we have connected this we
+[52:44.32] can just easily do a get ID right and
+[52:48.72] here I could just provide this
+[52:51.28] particular task is there right let me
+[52:54.08] see uh what are the different things 1
+[52:56.48] minute
+[52:58.48] let us go back
+[53:00.80] and we can say get many right so we can
+[53:03.44] just have get many now you can see that
+[53:05.52] how we have the my task list here let me
+[53:07.60] refresh refresh the same as well. First
+[53:09.04] let me get my task and I can just
+[53:11.84] execute this and see I'm able to get my
+[53:15.12] task right this was the task which I
+[53:17.92] created because this connection has been
+[53:20.88] made with any tenant task right I could
+[53:24.32] easily access and get this thing title
+[53:26.32] is a news you can just maybe for the
+[53:28.64] timing avoid all these things which are
+[53:30.08] written here right uh but the notes are
+[53:32.80] something which I can use as well right
+[53:34.88] so yeah I think this is something which
+[53:36.56] we can easily easily use everyone this
+[53:38.56] can be a research we can see the same in
+[53:41.12] JSON or tabular manner as well right so
+[53:44.16] we can see the same in JSON where all of
+[53:46.16] the details are coming right now once I
+[53:49.28] have done this let me join this thing
+[53:52.40] and now let me do one thing I have the
+[53:55.60] AI now I have this content ideas or
+[53:58.24] topics now where I will be now making
+[54:00.64] sure that I can generate the ideas for
+[54:04.00] this resource is going to be text
+[54:06.80] operation ation is messenger model is
+[54:09.68] GPT4 mini. So these things are very very
+[54:12.00] important very much how like you select
+[54:13.84] things here how I can have the model
+[54:15.84] selected GPD 5 or any other word right I
+[54:19.44] think I'm logged in but shall be great
+[54:21.84] now let's write a prompt for this what I
+[54:25.20] will be doing pay attention I will be
+[54:27.60] writing hi can you please generate the
+[54:34.40] LinkedIn
+[54:35.92] post ideas so let me make it three
+[54:39.20] LinkedIn post ideas
+[54:41.44] based on the below research.
+[54:45.84] Now when I do this below research, I can
+[54:48.16] just grab this notes and copy this here.
+[54:51.12] See everything came here. So all of the
+[54:54.24] things which I wanted, they are here
+[54:55.68] now. Right? So this is now dynamic in
+[54:58.40] nature. Tomorrow when this changes in my
+[55:00.24] task, I can just easily get the same.
+[55:01.92] Right? Okay. So that's all. That's
+[55:04.24] pretty good. Make sure that you also
+[55:08.48] provide the reference
+[55:13.36] reference of how or what exactly
+[55:19.76] is needed. Okay. To write the post to
+[55:24.96] write the post
+[55:27.84] output
+[55:29.52] three ideas like below. Okay. So it
+[55:34.40] should be
+[55:36.56] topic
+[55:38.24] then it should be research
+[55:41.76] and I can just say topic one research
+[55:44.88] one
+[55:47.28] topic
+[55:50.00] two research
+[55:53.92] two and I can say topic two research two
+[55:58.16] research three sorry. So yes I think
+[56:01.20] that is very helpful. We can see that
+[56:02.80] okay how exactly this is coming out
+[56:04.40] here. Now of course we can make it a lot
+[56:06.48] better in terms of how we are giving it
+[56:08.40] the input but I believe that is very
+[56:10.00] easy to do. Now I can just stop it uh
+[56:12.32] and I can just try to simplify output
+[56:14.80] and output content as JSON. Let me just
+[56:17.44] execute the steps and let's see what it
+[56:19.04] is doing. Okay. So let it execute and we
+[56:23.04] should be able to see the output in the
+[56:24.72] way we have given it. So let's see.
+[56:31.04] Great. Seems like it is giving us the
+[56:32.64] output. So sure, here are the things.
+[56:35.60] Now it is giving uh let me copy this and
+[56:39.52] I can make it a little bit easier for
+[56:40.96] you to read. So let me copy all of this
+[56:45.12] and just paste it in chat GPD.
+[56:49.44] Can you make above easy to read? And
+[56:53.68] let's see what it has given.
+[56:56.40] Okay. See
+[56:58.56] future of smart homes. Apple vision.
+[57:00.56] Apple is stepping up its game all these
+[57:02.56] things and it is giving us these things.
+[57:04.32] Now pay attention it is the same thing
+[57:05.76] which is written here future of smart
+[57:08.32] homes Apple AI vision Apple is taking
+[57:10.72] significant leap into the this this then
+[57:13.52] second I believe will be this key to
+[57:15.60] Apple's home uh Siri 2.0 key to Apple's
+[57:18.32] home ecosystem right I hope you're able
+[57:20.72] to easily understand exactly how it is
+[57:22.56] happening see Siri 2.0
+[57:24.72] And then last is robot from your home
+[57:26.72] Apple's next big idea. So seems like I
+[57:29.36] am able to generate these ideas right
+[57:30.96] now. I have three ideas for my LinkedIn
+[57:32.72] post easily. I could make sure that I
+[57:35.28] can write post on that. Now ideally in
+[57:38.80] future classes and in future videos we
+[57:41.12] will be seeing that how can we make it
+[57:43.76] how can I make it a lot better? How can
+[57:46.72] I connect it to let's say notion or how
+[57:48.72] can I even have an API which does this
+[57:50.56] for me. So I just have to maybe provide
+[57:52.40] some AI news as an input and everything
+[57:56.08] AI will be doing for me. But since this
+[57:58.40] is the very first project which you are
+[58:00.24] doing I believe it should be very easy
+[58:02.24] to understand. So that is the whole idea
+[58:04.00] everyone. Okay. So this is the approach
+[58:07.44] which we will be following and of course
+[58:10.08] we can have it connected to multiple
+[58:11.92] different different other uh let's say
+[58:15.12] tools as well. But again since this is
+[58:17.20] the first project let's keep it a lot
+[58:18.72] easy. And I believe this is where this
+[58:21.20] flow the way we have seen the manual
+[58:24.16] flow and tried to make it in AI and as
+[58:27.92] of now though we have done it till here
+[58:29.36] I think this is very much helpful right
+[58:31.12] so we here we have done it we will see
+[58:33.36] the generate post part but for the time
+[58:35.52] being I think uh let me just get back
+[58:37.36] and see that what are doubts which you
+[58:38.80] are having so let's see this
+[58:42.64] send the Google doc uh okay I can send
+[58:45.20] the Google doc but uh I believe that was
+[58:47.52] anyway See share okay I'm sharing the
+[58:51.92] link let me know if you can see this
+[58:53.28] directly or else I will make it
+[58:56.32] accessible to all okay cool great so
+[58:59.52] everyone are you able to follow till now
+[59:01.04] I will ask the doubt but are you able to
+[59:02.48] follow till now quickly tell me in the
+[59:04.24] chat
+[59:08.32] do show some thumbs up thumbs down love
+[59:11.20] on the chat anything
+[59:13.52] Okay.
+[59:24.24] Then we will continue.
+[59:40.72] Yes. And it is free only local. If you
+[59:42.48] want to host cloud, it's paid. So yeah,
+[59:45.28] that is always the case. No, there just
+[59:47.76] many. So should be fine. Let me take the
+[59:49.28] doubts. Meanwhile, let me know in the
+[59:50.72] chat. Meanwhile, how are you liking the
+[59:52.24] session? Now again, being the very first
+[59:54.64] session, we have kept it very easy. As
+[59:56.40] we keep on moving forward, it will be
+[59:57.92] becoming a lot difficult and you will be
+[60:00.08] able to make end to end agents by the
+[60:02.08] end of this free course, free sessions.
+[60:04.08] Okay. So that is the whole idea here.
+[60:08.96] direct chat
+[60:12.00] generate LinkedIn post for the topic but
+[60:13.60] sumit again uh we can automate this
+[60:16.72] thing uh in future I will be expanding
+[60:19.04] this overall workflow
+[60:23.12] uh you will not be going to go to chat
+[60:24.88] GP again and again we can easily just
+[60:26.96] have this thing handled so that is where
+[60:29.52] the idea is okay so let me give the
+[60:32.48] access to each and every one of you
+[60:35.20] anyone with the link okay I I think
+[60:38.16] anyone can see this now it's a simple
+[60:39.84] copy paste nothing I've done okay so yes
+[60:42.48] summit what I was saying is the idea
+[60:44.32] here is to make sure automation for that
+[60:47.92] again the very first workflow I cannot
+[60:49.44] make it very difficult
+[60:51.84] when I make it more complex and in
+[60:53.84] future when I come up with the 2.0 O
+[60:55.92] version of this it will be in multiple
+[60:58.00] steps right it will be able to do it for
+[61:00.08] all of the frames all of the social
+[61:02.88] media as well so that is where it will
+[61:04.24] be helpful okay
+[61:09.76] uh wildlife again I really want to clear
+[61:13.36] it like do it pretty quickly I think I'm
+[61:15.12] doing it very slow when I'm doing it so
+[61:16.48] if you're focusing and you are able to
+[61:17.76] understand it just try to do it padily
+[61:20.48] if I wait while I'm teaching then it
+[61:22.08] will be a very long session and I'm not
+[61:23.68] sure till how long I've been teaching
+[61:25.44] Okay, it has been already an hour. So,
+[61:26.96] yeah, I think pretty good hopefully.
+[61:29.60] Okay.
+[61:32.80] Uh, Zingzang, I've given the access.
+[61:34.48] Please see the same. Okay. I've given
+[61:36.88] the excess shall be helpful.
+[61:54.88] Okay. So, let me ask that out.
+[62:03.76] Most people do use LinkedIn for all
+[62:05.20] creativity. club again the idea is that
+[62:06.96] it can give you some ideas and you can
+[62:08.40] work on that. So I'm not saying to
+[62:09.76] automate maybe posting as well. I will
+[62:11.68] not be posting it uh automatically. I
+[62:13.68] will be posting we will be posting it
+[62:15.04] manually only. Okay. So the idea comes
+[62:17.60] here that we are not asking you to uh do
+[62:20.32] any compromise on the credibility. Just
+[62:22.40] use AI as a helper not as a doer maybe.
+[62:25.04] So that is helpful as well. If you don't
+[62:26.56] want to do that okay
+[62:29.52] sir I want to start with geni I know
+[62:31.68] HTML all the teaches. Yes, Zel tracks
+[62:35.04] you can see my channel. We have content
+[62:37.52] on AI. Okay.
+[62:40.24] Please can this be implemented in
+[62:41.60] Python? Yes, this can easily be
+[62:42.72] integrated with Python. Though it is
+[62:44.32] very easy here because in Python you
+[62:45.92] will have to do this thing, right? Sir,
+[62:47.84] coding needed to is to make an A agent.
+[62:49.52] No AJ, that is the whole idea. Coding is
+[62:51.12] not needed. Okay.
+[62:53.76] Can we make an AI agent that will create
+[62:55.28] Tik Tok video and post it on Tik Tok
+[62:56.80] platform? Yes, you can easily do that.
+[62:58.08] Should not be a problem. If you want I
+[62:59.92] can also create a in the coming days
+[63:02.40] what I will do is I will create a agent
+[63:05.84] which creates creates video for you.
+[63:07.84] Okay. Though it will be paid like you
+[63:09.28] will be needing some key which will be
+[63:10.64] paid. I will find the cheapest one and
+[63:13.36] then we will see the same in action.
+[63:15.04] Okay. I hope that is helpful.
+[63:48.96] Sorry. Can we use Grock for this? I
+[63:50.96] think uh Grock is not supported out of
+[63:52.96] the Oh, let me check it. We can use open
+[63:55.04] router which is a free one but again
+[63:56.72] anyway it provides this thing. Grock
+[63:58.80] chat model is also there so it should be
+[64:00.24] fine. Not a problem. Okay, we can use
+[64:02.96] Grock as well. I'm just not use grock. I
+[64:04.88] like open auto mode. So different
+[64:07.28] between zap ply and it make more or less
+[64:09.36] they are all the same just for using it
+[64:11.12] nothing else. Okay. So say something
+[64:13.28] about web connection with nan again
+[64:15.44] cannot make it the difficult one in the
+[64:17.20] very starting I have to make sure that
+[64:18.48] you understand these things. Okay let me
+[64:20.24] see the previous one for videos you can
+[64:22.32] use agent. Yes we can use agent that
+[64:23.76] should not be a problem. Okay,
+[64:28.16] similar products to NAN uh para there
+[64:30.96] are projects like make lang flow zapier
+[64:34.80] all of these are the one which you can
+[64:36.08] use okay
+[64:40.08] I came now only what's the context so
+[64:42.40] you see this diagram we are able to
+[64:43.76] trying to just create a very first agent
+[64:46.24] this is the very first class of our AI
+[64:48.72] for everyone uh series where we are
+[64:51.28] planning to teach you how you can make
+[64:52.96] these things right in a very easy to
+[64:55.36] understand way without any coding. First
+[64:57.12] you understand these things. So first
+[64:58.48] I'm teaching about automation and how
+[65:00.08] you can integrate AI into that. So
+[65:01.44] that's the whole idea
+[65:04.24] okay
+[65:07.44] cool. So let's now move forward
+[65:09.28] everyone. I think I've answered most of
+[65:11.36] the doubts. If anything is there then
+[65:12.80] let me know.
+[65:15.68] Most of the courses are directed towards
+[65:17.36] using common popular AI but none of
+[65:18.88] these tools are used in enterprise
+[65:19.84] level. Are you planning to include these
+[65:21.04] tools? uh I think you have not checked
+[65:23.60] out our courses like for example I have
+[65:25.68] a course on autogen on Udemy where we
+[65:28.72] have taught about things which are used
+[65:30.16] directly in uh enterprise level right so
+[65:33.52] yes that is going to be very helpful
+[65:35.36] should not be a problem right we teach
+[65:38.16] at all levels like if you want to
+[65:40.24] understand let's say at a level of
+[65:42.88] proper complexity
+[65:44.96] or let's say at a level of easy to
+[65:47.12] understand way so for non- tech
+[65:48.40] companies or tech companies both of them
+[65:49.76] should be helpful Okay.
+[65:53.36] So I think uh most of the doubt related
+[65:55.92] to what I'm teaching are done. Uh for
+[65:58.80] career related doubt as I said we have a
+[66:00.56] Q&A tomorrow and yes everyone. So as I
+[66:03.68] shared before we also are coming up with
+[66:05.68] the course. Let me just share it again
+[66:07.52] with all of you. So we kind of this is
+[66:10.40] also where we will be teaching not just
+[66:12.08] Nin workflows or any no code tools. We
+[66:14.24] will be teaching about many things in
+[66:16.08] depth. So just check out the syllabus
+[66:18.32] and you can reach out to our team if you
+[66:20.24] want to enroll. Here we will be teaching
+[66:22.40] you about geni fundamentals all these
+[66:24.40] mastery then no code automation advanced
+[66:27.44] techniques how you can use rag etc. But
+[66:29.84] you understand rag etc as well. So that
+[66:31.68] is something which you will be doing
+[66:32.96] here right. So let me close this and I
+[66:35.92] can just share this link all with all of
+[66:37.52] you.
+[66:39.20] The idea is here we want to make sure
+[66:41.04] that if even if you are from any field
+[66:43.04] right no matter tech non tech you
+[66:45.28] understand AI in depth. So with that
+[66:47.12] let's now continue. I think five minutes
+[66:48.88] have been done. Now we can continue and
+[66:51.92] let's move forward. So let me just have
+[66:54.16] I'm pretty sure that all of you will be
+[66:55.60] able to easily follow. I have been
+[66:57.20] following a very easy to understand way.
+[66:59.44] Right now let's move forward and do the
+[67:01.84] part where we will be generating the
+[67:03.44] post using an AI agent. So for the time
+[67:06.16] being we have done the part where we
+[67:09.20] have done the content research. As of
+[67:10.88] now I have not used any API here. I will
+[67:13.20] be using an API here in future. Right.
+[67:16.08] So just a minute everyone. Just give me
+[67:17.68] a second.
+[67:20.32] Just one minute. Okay.
+[67:23.12] So let me now tell. Okay. Great. So I
+[67:26.00] think it should be up. Great. So as of
+[67:28.00] now we have again not uh used any API
+[67:30.72] here. In future projects we will be
+[67:32.40] using API. We have just made sure that
+[67:34.64] we have generated the content ideas. Now
+[67:36.64] this is a very very easy automation
+[67:38.08] which I believe everyone doesn't matter
+[67:39.76] if the person is even in school. If a
+[67:42.08] person is let's say even in a non- tech
+[67:44.08] company he doesn't even know what a code
+[67:45.60] is he will be able to understand and
+[67:47.52] that is the whole idea in the very first
+[67:49.04] class. Now let's move forward and let's
+[67:51.84] see that since we have generated the
+[67:53.28] ideas how can we make them how can we
+[67:56.00] make them right added or updated in our
+[67:59.04] row. So for the same what I will be
+[68:00.72] doing pay attention okay I will be going
+[68:03.92] to Google and do a sheets dot blue. So
+[68:06.88] I'm creating a new sheet here everyone.
+[68:10.16] I am saying here let's say content
+[68:13.36] ideas.
+[68:15.12] Now I have let's say here um
+[68:20.32] let's say I can write here what is the
+[68:23.68] topic okay reference and I can just
+[68:28.16] let's say have the post here. I can just
+[68:30.00] have the post here. Now pay a lot of
+[68:32.88] attention what I will be doing. I will
+[68:34.64] be going back and now I want to connect.
+[68:37.44] Now I want to connect this sheet which I
+[68:39.36] have created. So now we are using this
+[68:40.88] Google sheet which I will be creating
+[68:43.44] which I will be connecting right with my
+[68:47.04] this content ideas. So I can update my
+[68:50.72] ideas here. That is the whole idea that
+[68:52.16] I can update my ideas here. Right? So
+[68:54.08] let me just connect this here. Now
+[68:56.08] credentials I can create a new
+[68:57.44] credential. Simple oath login will work
+[68:59.92] just how you do it on any website. So
+[69:01.60] let me do and sign in with Google. I can
+[69:03.92] just select my email id. The main one
+[69:05.60] where I have created this thing. Select
+[69:07.76] all. Now I will highly highly suggest to
+[69:10.72] use your email ID. Throw away email ID.
+[69:12.64] Not your primary one. That will be very
+[69:14.80] helpful. Let me close this. Not this.
+[69:18.24] Let me close it. It has been done. Now I
+[69:21.60] have to just select the document. So if
+[69:24.00] I just search here, you will find many
+[69:25.44] of them. But I think content ideas is
+[69:27.84] the one which we want. Now we can also
+[69:31.36] verify the same using this thing using
+[69:33.44] this ID. Okay. So I think it is 15 FY
+[69:36.88] VC. If I go back go to the expression 15
+[69:41.84] FY VC is written. Okay. So that I think
+[69:44.88] is pretty fine. Should not be a problem.
+[69:47.04] I can just close it again. Go to fixed
+[69:49.84] and do it by from list
+[69:52.72] content ideas. Okay. So I am just now
+[69:55.76] connected to my sheet. In this if I see
+[69:58.96] the very first one which is my sheet one
+[70:01.60] is the one which I want to connect to.
+[70:03.52] So I can just select
+[70:05.84] sheet one here and you can see that how
+[70:08.80] again all of this is happening right but
+[70:11.68] now the problem arises either I need to
+[70:14.32] get so pay a lot of attention here what
+[70:16.48] exactly is the problem okay
+[70:19.28] either I need to get this content in a
+[70:21.76] easy to understand manner right either I
+[70:24.80] need to make sure that okay this
+[70:26.48] particular thing I'm able to drag and
+[70:29.12] drop something to make it here or I can
+[70:30.96] ask AI to do this for me Okay, I will
+[70:33.52] repeat it again. What is the problem? If
+[70:36.16] you want to map out this
+[70:39.68] topic, right, map out this topic, then
+[70:42.96] it's a problem, right? Then it's a
+[70:44.96] problem because you cannot just easily
+[70:47.36] get out this topic, then get the
+[70:49.36] reference. All of these things I will
+[70:51.28] not be able to do easily. So for the
+[70:53.76] same what I will or I can do is
+[70:56.48] something where
+[70:59.28] I can connect it to an AI. So people are
+[71:01.76] asking now that sir we can do it
+[71:03.20] manually as well. Well you can do it
+[71:04.80] manually but let's say tomorrow what if
+[71:07.12] you want hundreds of these ideas you
+[71:09.68] will not be doing it manually where you
+[71:11.28] copy paste these things and this is
+[71:12.96] where I guess automation and AI are
+[71:14.88] useful. Now let's go back and quickly
+[71:18.96] just go uh get out of this and pay
+[71:22.24] attention. Okay. So I'm going to now add
+[71:24.08] an agent. Let me delete this. I am going
+[71:26.80] to add an agent here.
+[71:29.92] So I have just added an agent here.
+[71:31.84] Everyone pay attention. Now for people
+[71:34.00] who are not aware what an agent is.
+[71:36.64] Where is the icon? Yeah. So agent is for
+[71:39.76] me something which I like to say a lot.
+[71:42.24] If anyone has previously learned from
+[71:44.32] me, he will know that for me agent is
+[71:46.96] just a digital human. Everyone. So agent
+[71:49.92] is just a digital human. Right? Now what
+[71:53.28] do we mean by this digital human? Well,
+[71:55.28] the whole idea becomes that whatever a
+[71:57.68] human which is let's say me as a person
+[72:00.08] can work then this digital human can
+[72:02.96] also do the same thing right if I have
+[72:04.64] the brain I can provide it with a brain
+[72:06.56] so it can have a brain which is normally
+[72:08.96] an LLM
+[72:11.04] we can give it some instruction just
+[72:12.56] like I can get some instructions
+[72:16.16] right I think the spelling is wrong let
+[72:18.80] me make it right instruction and I can
+[72:21.84] also give it some tools so just like I
+[72:23.68] can use a calculator I can use any of
+[72:25.44] these things. This can also use a some
+[72:28.16] tools, right? So as an example for me,
+[72:31.12] this Google sheet is a tool, right? This
+[72:32.88] is what a tool is for me. Google sheets.
+[72:35.68] So now what I will be doing, I will be
+[72:38.56] using this sheet as a tool. So pay
+[72:41.36] attention. See, this is what I'm giving
+[72:42.72] you as a tool and I can connect it. One
+[72:45.12] minute. Let me delete this. Let me add a
+[72:48.08] tool like this. So again, this was a
+[72:50.24] simple node. Tool node is different. So
+[72:52.40] let me go to this to a sheet and I can
+[72:56.16] do Google sheets. Okay.
+[72:58.80] Now I can say tool description can be
+[73:00.56] set automatically resources all
+[73:02.32] operation. I want to do update or append
+[73:07.04] a row. I can let's say append a row in a
+[73:09.36] sheet. Right? This is what I can do.
+[73:11.36] Append a new row or uh update an
+[73:13.84] existing one which is upsert insert plus
+[73:16.16] update. I want to just do an append row.
+[73:18.80] Okay. I can select my content ideas one.
+[73:22.00] I can select my sheet one. And
+[73:27.12] now I see all the topics. Right? Now I
+[73:29.36] see all the topics. Now I can have this
+[73:32.72] topic. I can Okay. So I will just tell
+[73:34.64] you what this button is. Everyone pay
+[73:36.08] attention.
+[73:37.92] Now still there is an issue. Still there
+[73:40.00] is an issue where I cannot easily drag
+[73:42.88] and drop things. Right. So I will be
+[73:44.56] using AI here where I will ask my AI
+[73:46.80] that hey you automatically select like
+[73:49.52] see let model define this parameter
+[73:52.16] because my agent I am saying that okay
+[73:54.08] this agent is smart it is having a
+[73:55.52] brain. If I am having a brain my brain
+[73:58.80] tells me that I can copy this is the
+[74:01.60] topic I can copy this and I can paste it
+[74:04.08] here and I can paste it here. Similarly,
+[74:07.52] in a very very similar sense, I am just
+[74:10.08] saying that okay, as an AI, as an AI,
+[74:13.76] you use your brain and tell me what the
+[74:15.28] topic should be. So, I can just make it
+[74:17.76] set done by this particular AI. Okay. I
+[74:22.08] can also ask that hey, you can have this
+[74:24.16] post as well. Okay. So, you can have
+[74:25.92] this post as well which can be updated
+[74:27.60] here directly. Now, once I have created
+[74:30.80] C this AI agent, it is having a tool as
+[74:34.48] well.
+[74:35.76] Now if you want you can have memory
+[74:37.44] provided to our agent as well though we
+[74:39.20] will not be needing this here. Now let
+[74:41.36] me provide a chat model. So chat model
+[74:43.28] can be simple again open AI1. Let's see
+[74:45.76] that one.
+[74:47.44] So let us have where is the open router?
+[74:51.04] Okay chat model free credits one I am
+[74:53.92] using 4.1 mini that should not be a
+[74:55.60] problem. Okay. Now you will see some
+[74:56.80] other models as well because agent is a
+[74:59.28] little better right? It can have the
+[75:00.72] listening capabilities because it's a
+[75:02.32] digital human. It can have the text to
+[75:05.20] speech TTS whisper deli for images and
+[75:08.72] vision that is the idea and I can just
+[75:12.32] now just like I can give an instruction
+[75:14.08] to a human being I can give an
+[75:15.36] instruction to an agent as well. So I've
+[75:17.12] given the brain I given the tool now
+[75:19.52] let's talk about instructions okay for
+[75:22.72] the instruction I will add and just have
+[75:26.32] 1 minute so frequency pattern
+[75:29.28] response format okay let's see this 4.0
+[75:32.08] O model 40 mini maybe
+[75:35.12] maximum number of token response format
+[75:37.44] is something which I can add settings
+[75:40.56] notes that should not be a problem
+[75:44.08] any free credits okay
+[75:48.16] for mini okay let me just check what are
+[75:50.24] the other one response format
+[75:53.68] and okay that is fine yeah so I've given
+[75:55.44] it the brain okay uh sorry my I just got
+[75:57.76] a little confused chat model I've given
+[75:59.28] it the brain in the agent I can provide
+[76:00.96] it with the instructions So see I can
+[76:03.52] just provide it with the system message
+[76:05.44] which are going to be my instruction.
+[76:06.96] Okay. So pay attention. This is where I
+[76:08.80] can just have my instructions everyone.
+[76:11.60] Now let's see what are the instruction
+[76:13.60] which I'm going to do. I will first
+[76:15.60] click on this expression expression and
+[76:18.72] I will make it bigger. So now you are a
+[76:20.80] helpful assistant who helps to generate
+[76:24.64] the LinkedIn posts for the user.
+[76:31.36] You will be given
+[76:34.00] the content
+[76:36.00] which will have three post ideas
+[76:42.64] and reference
+[76:44.80] and reference as below. So again I can
+[76:49.52] just drag and drop this. See all the
+[76:51.92] content is here.
+[76:54.24] Now I can say here make sure that you
+[77:00.32] update
+[77:02.40] the same on Google sheet tool provided
+[77:08.40] to you
+[77:10.48] which has three
+[77:14.48] columns. What are the columns? Let's see
+[77:16.80] the same everyone. What are the
+[77:18.00] different different columns? Now coming
+[77:20.16] to columns I have the topic, reference
+[77:21.84] and post. So I can copy this and just
+[77:24.08] paste it here. Topic reference and post.
+[77:26.72] Okay. Post should be concise
+[77:31.60] with a good hook
+[77:35.28] and hashtags in the bottom. So yes, I'm
+[77:39.68] just giving it a very simple
+[77:40.80] instructions. The whole benefit is that
+[77:43.04] though chat GP could have done this, I
+[77:44.72] would have to do this things manually.
+[77:46.24] Right now when I close this, everyone
+[77:48.48] pay attention. uh prompt or user message
+[77:51.12] we can give here as well. So what I can
+[77:53.60] do for the prompt, let me pay just copy
+[77:56.32] this here. Content add here or I could
+[77:59.76] actually just change it to define below
+[78:01.76] and
+[78:03.52] I could have just pasted all of this
+[78:05.28] here. Okay, so this is the user message
+[78:07.36] and let me delete this system message.
+[78:09.20] I'm deleting this is the user message
+[78:11.28] which is having the reference to this
+[78:12.80] task. Okay,
+[78:15.12] now we don't need a fallback model. If
+[78:16.80] you need you can have another brain,
+[78:18.40] right? So that if one model fails, it
+[78:20.08] goes to another model. And yes, I think
+[78:22.96] this is more than what we need. It is
+[78:25.12] going to have a tool. It is going to
+[78:27.20] have this open a chat model. And now
+[78:30.40] when I do this, pay attention. Let me
+[78:32.48] run this. Let's see the same once I run
+[78:34.40] it. Okay. So it is executing. See it is
+[78:38.64] working the brain. Hopefully it will try
+[78:40.88] to get to this tool as well. It will try
+[78:43.28] to use this tool as well if the AI model
+[78:45.44] is capable. Right? So see it is using
+[78:48.32] this tool everyone right it is just
+[78:50.40] generating like an how an agent will
+[78:51.84] work now it is going back I see trying
+[78:54.56] right three here hopefully hopefully it
+[78:57.28] will be doing something for me let's see
+[78:58.56] what it does in the end
+[79:01.04] and again it's a simple approach because
+[79:02.56] this is the first time I'm doing it now
+[79:04.00] pay attention
+[79:05.68] it has created the very first one post
+[79:08.16] so if I have to see this pay attention I
+[79:11.36] can just select all of this row
+[79:14.96] I can just wrap the text. Now you have
+[79:17.44] to run this in a loop which I will tell
+[79:18.72] you how to do that. Should not be a
+[79:20.08] problem. This is the reference which it
+[79:22.40] must have gotten. And if I copy this, if
+[79:25.12] I copy this, go to chat GPT, paste it.
+[79:30.24] Can you show above in easy to you read
+[79:35.76] manner?
+[79:37.84] Okay. So pay attention. Of course,
+[79:39.76] here's your LinkedIn post. So it is
+[79:41.04] understood LinkedIn post. Meet your new
+[79:43.12] companion. Apple is working on a
+[79:44.56] tabletop robot expected in 2027. It not
+[79:47.28] just a smart it not it's not just smart
+[79:49.60] it's a fun tool feature include video
+[79:51.84] conferencing interactive animation is
+[79:53.52] designed that alive and engaging this
+[79:56.08] could transform how we use technology at
+[79:57.68] home making it more personal etc and
+[79:59.68] then it's giving me these hashtags
+[80:02.08] again for the very first topic it has
+[80:04.32] done the same these are the one appi
+[80:06.56] vision and I think it has took up this
+[80:08.64] tool one so the thing is that why it has
+[80:11.20] done this because if you will go on edit
+[80:13.36] it you will see that how
+[80:17.04] it just
+[80:19.28] uh append a row it's append row not
+[80:21.52] append rows okay so we could do the same
+[80:25.36] we have a simple simple thing here we
+[80:27.44] can have a loop one which you can try
+[80:29.12] out uh so if I show you this loop we can
+[80:32.88] have loop over items so it can work on
+[80:34.64] multiple things or we can ask our ideas
+[80:37.84] to be generated in a JSON we can get
+[80:40.08] output as a JSON and they will be
+[80:42.48] generated as a JSON so that is the whole
+[80:44.80] idea Yeah right now again a simple
+[80:47.60] workflow which we have done which is
+[80:49.12] going to generate our thing. Now what I
+[80:51.76] want for all of you as homework is that
+[80:54.16] you see that okay how can we do this
+[80:56.32] thing in a multi like we can have these
+[80:58.08] three things updated right I will give
+[81:00.16] you a very basic idea how you can do
+[81:01.60] that if you are able to generate a JSON
+[81:05.20] right which is having three three things
+[81:07.44] here let's say first first then second
+[81:12.32] and then third it will be able to work
+[81:14.32] on the same and give you the output so
+[81:16.08] that is all what we have to do everyone
+[81:18.48] and that is going to be very very
+[81:19.92] helpful for each and every one of you.
+[81:21.68] Right? So with that uh the very first
+[81:25.04] class and again I know that many of you
+[81:26.48] will be thinking that this is easy. Well
+[81:28.32] yes because it was the very first class
+[81:30.64] for our uh AI for everyone right. We
+[81:34.24] will be making it more complex but I
+[81:36.08] want to take everyone with me. I want to
+[81:38.24] make sure that everyone understand these
+[81:40.00] things and for the same we have
+[81:42.24] specifically made sure that this first
+[81:43.84] project it is very easy so all of you
+[81:45.44] can quickly get up to the length. Now
+[81:47.60] tomorrow we will be having a Q&A and
+[81:50.00] post that we will also be having a
+[81:53.36] overall multiple classes where I will be
+[81:55.84] building upon these things. Okay. So
+[81:57.28] they are very very important. I could
+[81:59.20] have made this workflow very very
+[82:00.88] difficult to follow but I have
+[82:02.24] specifically made sure that it is very
+[82:03.84] easy for the time being. By the end of
+[82:06.32] this free course only you will see that
+[82:08.08] how we can create uh like post or
+[82:12.16] content which is having videos. we can
+[82:14.56] create and post them directly as well.
+[82:17.04] So just as to show you we can have a
+[82:19.20] LinkedIn here as well. So we have
+[82:20.56] LinkedIn as well. Okay. And we can
+[82:22.48] create a post right. So we can connect
+[82:25.28] to LinkedIn here. Standard we can
+[82:27.60] connect to the account right. Then we
+[82:30.80] can post it as well. Something which I
+[82:32.80] normally try to avoid because as someone
+[82:35.12] said that we have to first go through
+[82:36.48] the uh what is written. we will see the
+[82:39.44] human in the loop concept as well that
+[82:41.12] it wastes waits for your overall
+[82:43.36] approval and this is where we are going
+[82:45.68] to build on this. Okay. So cool. Yeah,
+[82:48.48] with that everyone I hope you have
+[82:49.84] understood this in proper depth. Make
+[82:51.92] sure that you save your workflow and you
+[82:55.12] will be able to see what we uh give like
+[82:57.92] as I told in the starting you will be
+[82:59.36] able to download all the things from the
+[83:01.04] official link which we will be giving in
+[83:03.36] the description of the video. Okay. So
+[83:05.68] with that uh you can ask your doubts and
+[83:08.24] if all is good just tell me how you like
+[83:10.16] the session and we will be building upon
+[83:12.00] the session. So do make sure that you
+[83:14.48] continuously attend the session every
+[83:16.08] week. Okay
+[83:21.12] great. So let me uh you can ask it out
+[83:23.04] everyone uh that should be helpful.
+[83:24.80] Okay.
+[83:28.08] AI tutorials uh Creo AI uh is this video
+[83:30.88] available on your YouTube channel? Not
+[83:32.24] as of now. Shabbaz, can you please bring
+[83:34.32] a QA to do it? Okay, we'll work on that.
+[83:36.48] Should be fine. What is the difference
+[83:38.32] between system prompt and user prompt?
+[83:40.24] Bhaves, I will discuss the same in the
+[83:42.08] next video. Okay. So, when we will do
+[83:43.44] that, I will first then maybe explain a
+[83:45.44] little bit about edit in depth and have
+[83:47.04] the AI related things here. Okay. Can
+[83:50.16] you create with specific length for the
+[83:51.76] content topics? Yes, Parasi. So, you can
+[83:54.00] connect that easily. What you can do?
+[83:56.40] Pay attention. I will be showing you
+[83:58.32] something. So what I can do just let me
+[84:01.04] make myself smaller here.
+[84:03.68] Okay. And I will be showing you how you
+[84:06.72] can use this awesome tool air table.
+[84:10.48] Okay. So we will use air table where you
+[84:13.20] will be able to better handle your
+[84:14.80] content like it is a little bit better
+[84:16.32] than Google sheets in terms of how you
+[84:18.32] manage content and yeah we there we will
+[84:20.80] see that how you can use and make sure
+[84:22.24] that for different different content. So
+[84:24.08] it fills up like this. Okay. So I will
+[84:25.76] be integrating that into our edited
+[84:27.12] workflow. Okay. So, let's go back.
+[84:31.60] Let me see. Let me stop the share as
+[84:33.60] well. Okay. Not leave. Share the screen.
+[84:37.20] Stop. And now, let me take the notes.
+[84:39.52] Okay.
+[84:43.68] One minute.
+[84:46.80] Great.
+[84:48.40] Uh, okay. Please bring back five plus
+[84:51.04] hours video transformers. Okay. Uh, sir,
+[84:53.28] I faced lots of problem to sign up for
+[84:55.04] Google tools. Uh, M. I hope. Uh sir oath
+[84:57.84] is not working on local or self hosted
+[84:59.44] nitin. Yes pav. So you will have to fix
+[85:02.16] that up. I highly suggest to use the
+[85:03.68] nitin cloud the one which en normally
+[85:05.36] gives you. Okay.
+[85:08.80] Yes. If you do the same thing via python
+[85:10.56] salt tax then it will be little bit
+[85:12.16] difficult. And everyone please make sure
+[85:14.16] that you also again like and share the
+[85:15.84] video with everyone. Okay. And do
+[85:17.60] subscribe to the channels as well. And
+[85:19.92] of course uh we will be bringing more
+[85:21.76] and more content like this. So it is
+[85:23.44] helpful to all of you. I think you have
+[85:25.84] mine anchor sir social. So please make
+[85:28.08] sure that you reach out there. Sir can
+[85:30.24] you how to use APIs for GPTOs 20B? Uh
+[85:33.20] san I will share the same maybe in one
+[85:35.04] of the project where we will see how we
+[85:36.32] can access local uh API local uh let's
+[85:39.44] say LLM as well. Okay. So go GPTOSS
+[85:43.60] shall also be helpful there. 20 billion
+[85:45.60] I might not be able to download on my
+[85:46.96] laptop but yes we will see that. Okay.
+[85:51.12] So we are getting account when we are
+[85:52.56] using it by docker. So can you tell me
+[85:54.32] the automation be continue when docker
+[85:55.84] is not running? Uh no mandra that will
+[85:57.92] not be the case. Now if your container
+[85:59.12] goes down then it will be a problem.
+[86:02.96] Cool. I think these were the doubts
+[86:04.80] everyone. Uh I'm just quickly sharing
+[86:07.92] the links which I did earlier. So please
+[86:11.44] make sure that you reach out all of us
+[86:13.20] here. I'm sharing the course link as
+[86:15.04] well. So for people who are looking
+[86:16.80] forward to quickly start their journey
+[86:18.24] into AI, we will be doing the same.
+[86:20.56] Okay. I think you have socials as well.
+[86:22.40] you are seeing the same on his YouTube
+[86:24.00] channel. I'm just sharing that uh course
+[86:27.04] link because I think someone asked for
+[86:28.96] the same. Let me do that. So you can
+[86:31.44] check out the same. Okay. Why should one
+[86:33.68] need to prefer N10 over lang flow?
+[86:35.20] Because NA10 is a lot better when it
+[86:37.36] comes to uh integrations etc. Lang flow
+[86:40.00] is a little bit more towards
+[86:41.44] specifically with AI but unnecessarily
+[86:44.56] many time we don't need AI. So that is
+[86:46.32] where it will be helpful. Okay.
+[86:49.68] Is it possible to receive certain posts
+[86:51.12] on social media from specific profile?
+[86:52.72] Adita, if you're asking about scraping
+[86:54.80] LinkedIn, that is not very
+[86:56.24] straightforward. Uh we have some limits
+[86:58.64] there and I will highly suggest to not
+[87:00.72] do that because it can uh lead to just
+[87:03.36] having your account blocked. Okay,
+[87:06.00] cool everyone. So I think these were all
+[87:07.36] the things. We will be having a Q&A
+[87:09.44] tomorrow at 8:00 Q&A where you can ask
+[87:11.68] your doubts. So I see many of the doubts
+[87:13.20] related to career as well which we will
+[87:15.76] be very happy to answer. Okay,
+[87:19.20] very good concept that you have taken.
+[87:21.36] Yeah. So again, wildlife lover, we will
+[87:23.76] be doing the same things in depth in the
+[87:25.60] coming weeks. So that will be helpful.
+[87:27.04] Okay,
+[87:29.76] cool. I think these are all the doubts
+[87:31.44] which I see and we should be all good,
+[87:34.80] right?
+[87:37.12] If anything else is there, just quickly
+[87:38.64] ask me and I will clear out the same.
+[87:56.00] Okay, I think mine kit is done. Huh?
+[87:57.76] Session.
+[87:58.32] >> Yeah. Yes, the session is done. We have
+[88:00.16] created an easy way through which you
+[88:01.92] can create LinkedIn thing and I told
+[88:03.44] that how we will be making it more
+[88:05.44] complex in the future classes.
+[88:08.24] >> Okay. So guys all the description links
+[88:11.04] that you are able to see the dashboard
+[88:12.88] link all the materials will be uploaded
+[88:14.56] there and again you can also go ahead
+[88:16.72] and check out our new course that we are
+[88:18.56] bringing for generative AI for leaders
+[88:20.40] and professional everything is in the
+[88:22.56] description you can go ahead and contact
+[88:24.40] even our support team they'll help you
+[88:26.00] out counseling team whatever
+[88:27.92] requirements that you have but this
+[88:29.52] specific course is for AI uh leaders
+[88:32.64] professionals anyone who is not much
+[88:35.76] into doing coding work but you really
+[88:38.08] want to use AI stuff in your day-to-day
+[88:41.20] uh activities that you do in your office
+[88:42.96] work and all right so you can go ahead
+[88:44.96] and explore that um yeah other than that
+[88:48.00] tomorrow we'll be having the live
+[88:49.28] session at that point of time we'll meet
+[88:50.88] you all and um yeah tomorrow since it is
+[88:53.84] 15th August there'll be a lot of things
+[88:55.36] that will be coming up tomorrow for you
+[88:56.88] all uh we'll be happy to um do that
+[89:02.32] okay so I think uh this is it uh thank
+[89:05.20] you m for taking this amazing session Uh
+[89:08.80] uh thank you everyone. Please do make
+[89:10.24] sure to hit like, share your learnings
+[89:12.16] in LinkedIn and all the platforms and
+[89:14.16] definitely we'll see you all in in the
+[89:15.84] next session. Thank you. Have a great
+[89:18.00] day. Bye-bye. Take care. Mike, any last
+[89:20.40] thing that you want to say?
+[89:22.00] >> No, no. So thanks a lot everyone and I
+[89:23.76] do hope that all of you will be very
+[89:26.24] happy with what all we are bringing in
+[89:28.00] the world of AI. Now we have extensively
+[89:30.08] worked for the last couple of months to
+[89:31.68] bring this content to you and via this
+[89:33.76] AI for everyone series which we will be
+[89:35.36] doing uh in every week for free live. I
+[89:38.48] hope that all of you are very
+[89:39.76] comfortable in AI. Please do reach out
+[89:41.76] to me or Chris if you have any doubts
+[89:43.28] and we will be happy to get you started
+[89:45.12] in AI. Doesn't matter if you know coding
+[89:47.36] if you are a coder. The good thing that
+[89:49.04] we know each and everything for now for
+[89:51.20] the non-coders as well and for the
+[89:52.64] coders and that is the mindset which we
+[89:55.04] are learning that we are making AI
+[89:56.32] accessible to everyone. So that is what
+[89:58.00] we will be doing it. Okay. So yeah,
+[90:00.16] thanks a lot. We'll see you tomorrow as
+[90:01.60] well at 8:00.
+[90:03.20] >> Thank you guys. Have a great day.
+[90:04.72] Bye-bye. Take care. Thank you. We're
+[90:07.20] ending the session.

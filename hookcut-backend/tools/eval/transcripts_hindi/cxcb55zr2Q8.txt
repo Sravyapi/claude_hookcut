@@ -1,0 +1,149 @@
+[0:00.24] The last few weeks have been concerning
+[0:01.84] if you're a software developer and very
+[0:03.84] concerning if you're a software mega
+[0:05.68] corporation that relies on the SAS
+[0:07.68] business model. The model where your
+[0:09.44] customer never really owns your React
+[0:11.12] app, but instead rents the privilege to
+[0:13.12] click buttons forever at an 80% profit
+[0:15.44] margin. Adobe, Salesforce, Service Now,
+[0:18.48] Shopify, and many other companies
+[0:20.64] collectively saw $1 trillion wiped off
+[0:22.96] their market cap over the past few
+[0:24.56] weeks. But the big question is why? You
+[0:27.44] probably already know the answer. It's
+[0:29.12] not interest rates or accounting fraud.
+[0:31.20] It's AI. The suits just realized that if
+[0:33.76] an AI agent can swap out the work of 10
+[0:36.00] people in 10 milliseconds, they don't
+[0:38.00] need to buy 10 seats. They need zero. In
+[0:40.64] today's video, we'll look at seven
+[0:42.16] recent developments in the AI space that
+[0:44.32] support the thesis that software as a
+[0:46.32] service is headed towards a death
+[0:47.60] spiral. It is February 17th, 2026, and
+[0:50.96] you're watching the code report. Last
+[0:52.72] week, OpenAI released the Codeex app for
+[0:54.80] Mac OS, which they describe as a command
+[0:57.36] center for agents. The app itself had
+[0:59.36] over 1 million downloads in its first
+[1:01.12] week, and it provides a simple way to
+[1:02.96] handle agentic workflows in parallel
+[1:04.88] that anyone can use. And what makes that
+[1:06.88] so scary is that it means your boss no
+[1:08.80] longer needs to ask you, the developer,
+[1:10.48] to build an app, but instead can build
+[1:12.40] the app himself and then just ask you to
+[1:14.56] debug the 10,000 lines of code it
+[1:16.32] generated. But behind OpenAI's Codeex
+[1:18.56] app is the second thing you need to know
+[1:20.16] about, the Codeex 5.3 model. Not only is
+[1:23.36] it their most advanced coding model yet
+[1:25.20] that crushes the Trust Me Bro
+[1:26.64] benchmarks, but it's also 25% faster
+[1:29.44] than previous versions, and it's also
+[1:31.36] able to integrate skills now that allow
+[1:33.52] to do things like image generation,
+[1:35.44] writing, and research to handle the full
+[1:37.44] girth of responsibilities by a product
+[1:39.28] development team. That's impressive. But
+[1:41.60] OpenAI's biggest rival in the coding
+[1:43.44] space is Claude, which just released
+[1:45.60] Opus 4.6. 6. Not only is it excellent at
+[1:48.64] generating code, but now Enthropic is
+[1:50.64] trying to break into other areas like
+[1:52.72] legal analysis, financial modeling, and
+[1:55.20] a bunch of other things that they'll use
+[1:56.64] to justify expensive enterprise
+[1:58.56] subscriptions. But the big Silicon
+[2:00.48] Valley closed models are not the only
+[2:02.16] thing making progress. Alibaba just
+[2:04.32] released Quen 3 Coder Next, which is an
+[2:06.88] openweight, highly capable coding model
+[2:09.12] that gives companies the ability to host
+[2:11.20] their own serious developer brain behind
+[2:13.28] a firewall. And that kills another SAS
+[2:15.44] advantage, vendor lockin, because why
+[2:17.68] rent five different dev tools at $49 per
+[2:20.08] month when you can self-host your own
+[2:21.60] brain that rebuilds them all from
+[2:22.96] scratch for free. That's a no-brainer.
+[2:25.28] But another big release comes from ZAI
+[2:27.44] with GLM5. It's a model that targets
+[2:30.16] complex systems engineering and long
+[2:32.24] horizon agentic jobs, and its
+[2:34.16] performance approaches and sometimes
+[2:36.08] beats the best closed models in the
+[2:37.76] industry. But it's not the only open
+[2:39.36] model challenger. Miniax M2.5 has been
+[2:42.40] going viral the last couple days because
+[2:44.24] it also manages intelligence on par with
+[2:46.32] Frontier models at a fraction of the
+[2:48.00] compute price. We're getting very close
+[2:49.52] to the point of making these $200 AI
+[2:51.84] plans obsolete because models like M2.5
+[2:54.96] are making top tier reasoning feel
+[2:56.80] cheap, portable, and increasingly open
+[2:58.96] to anyone with a decent GPU instead of a
+[3:01.60] corporate expense account. It's pretty
+[3:03.20] clear that none of these AI companies
+[3:04.72] have much of a moat and the real battle
+[3:06.40] being fought right now is who can build
+[3:08.00] the best platform for autonomous code
+[3:10.16] orchestration. And Microsoft wants to be
+[3:12.32] the company that wins that battle with
+[3:13.84] their GitHub agent HQ. A GitHub was
+[3:16.24] originally designed just for code
+[3:17.76] hosting, but now it's a complete AI
+[3:19.76] agent orchestration platform. Agents can
+[3:22.00] open issues, generate branches, and
+[3:24.08] merge code when tests pass. Its project
+[3:26.40] management, QA, and DevOps automation
+[3:29.04] all rolled into one. But what about
+[3:30.88] Google? They've been relatively quiet
+[3:32.88] with Gemini releases lately. However,
+[3:34.88] Whimo, their self-driving car company,
+[3:37.04] just released the Whimo world model,
+[3:39.20] which is all about simulation and
+[3:40.88] prediction at scale. It demonstrates how
+[3:43.04] AI systems can model complex
+[3:44.96] environments, make decisions, and act
+[3:46.96] autonomously. But the thing is, when you
+[3:49.20] translate that into business software
+[3:51.20] like forecasting, logistics, risk
+[3:53.44] modeling, and operations, it starts to
+[3:55.68] make a lot of traditional SAS dashboards
+[3:57.68] that visualize these things look
+[3:59.12] obsolete. And with that, we've looked at
+[4:01.04] seven new developments in AI with one
+[4:03.12] theme. When intelligence becomes
+[4:04.80] abundant, software stops charging per
+[4:06.88] human. And when the seat dies, so does
+[4:08.96] the SAS profit margin. But even if SAS
+[4:11.28] dies, there will be new opportunities
+[4:13.04] for developers who know how to use
+[4:14.64] modern tools like Oz by Warp, the
+[4:17.12] sponsor of today's video. Warp already
+[4:19.20] brought you a modern terminal, and they
+[4:20.96] just launched Oz, a cloud platform for
+[4:23.28] coding agents. is so instead of being
+[4:25.04] stuck with one agent on your local
+[4:26.64] machine, Oz lets you run hundreds of
+[4:28.48] them in the cloud where they can make
+[4:30.08] changes across multiple repos
+[4:31.84] simultaneously. That means you could
+[4:33.68] have one agent fixing a bug from Linear,
+[4:35.92] another one updating docs from a pull
+[4:37.76] request, and a third one scanning logs
+[4:39.76] from a Graphana alert, all running at
+[4:41.68] the same time. You can quickly launch
+[4:43.52] new agents from the Oz web app or CLI,
+[4:46.00] or set them up on schedules and event
+[4:48.00] triggers. But once they're live, you can
+[4:49.84] watch them work and steer things as
+[4:51.76] needed. Try running your own agent today
+[4:53.60] at the link below and use the code
+[4:55.52] fireship for a special discount. This
+[4:57.52] has been the code report. Thanks for
+[4:59.12] watching and I will see you in the next
+[5:00.80] one.

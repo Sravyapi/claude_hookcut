@@ -1,0 +1,998 @@
+[0:00.24] Hey everyone, I hope you all are safe
+[0:02.16] and doing good. So in this lecture we
+[0:04.32] will see what is method overloading in
+[0:06.40] Java. In the previous lecture we have
+[0:07.76] seen parameter passing mechanism in
+[0:09.76] Java. And the small topic is left in
+[0:11.36] method that is method overloading. So
+[0:15.20] basically what is method overloading?
+[0:17.84] How we achieve this thing? We'll see
+[0:19.84] practically this thing with examples
+[0:21.44] don't worry. Right? What is method
+[0:23.76] overloading? So if within a same class I
+[0:27.44] am having multiple methods with same
+[0:30.40] name
+[0:32.08] but different parameters then this is
+[0:35.28] known as method overloading. Like in my
+[0:38.72] class I have two or three students with
+[0:40.72] same name. But how we can I can
+[0:44.00] differentiate those students? The name
+[0:46.72] is same but obviously that appearance or
+[0:49.28] the physical appearance is different.
+[0:50.96] Now how they look that is different.
+[0:54.56] So that's how I can differentiate
+[0:56.24] between those students having same name.
+[0:58.48] So same if in programming more than one
+[1:02.32] method like more than like two method or
+[1:04.08] three method or four methods are having
+[1:05.60] same name. So there must be something to
+[1:08.00] differentiate among these methods and
+[1:11.36] that is what based on parameters we can
+[1:14.40] differentiate
+[1:16.24] means maybe in some method we are
+[1:18.00] passing two parameter
+[1:20.24] in another method I'm passing three
+[1:21.76] parameter or maybe in one method I'm
+[1:23.92] passing int type of parameter in another
+[1:26.64] meth method I'm passing string type of
+[1:28.48] parameter so based on parameter list we
+[1:30.88] can differentiate methods right so
+[1:34.64] method overloading basically allow
+[1:36.16] allows us to to create multiple methods
+[1:38.64] with the same name but each with a
+[1:41.60] unique method signature. Method
+[1:45.44] signature we have discussed I'll tell
+[1:47.12] you this thing practically also which is
+[1:49.36] defined by the number and the type of
+[1:51.12] parameter they accept. Like for this
+[1:53.20] example, let's take this example.
+[1:56.08] Here I am having one method that is sum.
+[2:00.32] Return type of sum is int and it is
+[2:02.48] having it is accept to two parameter of
+[2:05.36] int type int int int a b one method is
+[2:09.44] having return type is double name is
+[2:11.76] same. See sum sum name is same but here
+[2:15.52] I am passing two parameters only but the
+[2:19.36] type of the parameter is different. Here
+[2:21.20] I'm passing int. Here I'm passing
+[2:23.44] double. So this is how we can
+[2:25.28] differentiate the methods. Here you need
+[2:27.60] to take care the name is same.
+[2:31.52] In this example the name is same print.
+[2:35.36] Print number of parameter is also same
+[2:38.24] one and one. Here we are passing string.
+[2:40.88] Here I'm passing int. So it will also
+[2:43.60] print. It will also print.
+[2:46.56] It will also add. It will also add. But
+[2:49.20] parameters are different. It will add to
+[2:51.04] int value. It will add to double value.
+[2:54.24] Right? So basically why we need this
+[2:56.40] method overloading. See if suppose you
+[3:00.40] want to print int value,
+[3:04.08] string value
+[3:06.08] and you want to print like care value,
+[3:08.72] you want to print float value, double
+[3:11.28] value
+[3:13.04] or boolean value, something like this.
+[3:15.60] You want to print these values. Whatever
+[3:18.32] user will pass you print these values.
+[3:21.20] So if method overloading is not
+[3:23.28] supported in Java means if we are not
+[3:25.76] allowed to create diff multiple methods
+[3:28.72] with same name within the same class
+[3:31.04] then what you need to do like the method
+[3:33.60] you want to print maybe the name you
+[3:35.52] will take like print int or display int
+[3:38.40] something like this. For string we write
+[3:41.76] print
+[3:43.28] string the name of the method. For care
+[3:46.32] we simply maybe write print care like
+[3:49.84] for this print float print double
+[3:53.12] although the functionality is same all
+[3:55.92] the methods are printing that's it right
+[4:00.00] but see name is different
+[4:03.52] okay now you have to remember the names
+[4:06.88] of every function like if you want to
+[4:09.20] print then call exact name of this then
+[4:12.24] string then exact name you call this and
+[4:15.36] Right? So this is like it's kind of less
+[4:18.24] readable,
+[4:20.64] not maintainable this code. But what if
+[4:24.24] I can have
+[4:27.20] the method name same that is print only
+[4:33.36] to print int string care flo anything
+[4:36.32] you can print method name would be print
+[4:38.32] only based on parameter here simply pass
+[4:41.92] int here I simply pass like string maybe
+[4:46.96] like this here next in next simply pass
+[4:50.48] character then float then double See now
+[4:53.76] method name is same print. So now you
+[4:56.40] don't need to remember like the exact
+[4:58.08] name what would be the name because the
+[5:00.00] name is same. So it allows method
+[5:02.72] overloading allows the consistent naming
+[5:05.12] convention. For similar functionality
+[5:08.40] just use same name. If you want to print
+[5:11.28] int just pass int. So somewhere we have
+[5:14.48] defined these methods. And when you call
+[5:16.40] this method what is the way? simply the
+[5:18.64] method name
+[5:20.72] and I'm passing suppose print uh five
+[5:24.40] method name I am passing
+[5:27.84] jenny method name I am passing 5.5
+[5:33.76] like suppose I'm having a print for
+[5:37.12] double also like this so now the method
+[5:40.72] name is same
+[5:43.60] I pass int one if I pass string and in
+[5:47.36] one and I'm passing double value. So
+[5:49.20] it's now the headache of compiler at
+[5:52.16] compile time compiler will you know
+[5:55.76] identify if this method is there but out
+[5:58.72] of these method defined method which
+[6:00.64] method is to be invoked. So if I'm
+[6:03.28] passing int so this method is to be
+[6:05.28] invoked if I'm passing string then this
+[6:08.08] print would be invoked. If I'm passing
+[6:09.76] double then this method would be
+[6:11.20] invoked. So compiler will decide at
+[6:14.16] compile time only right? It will like
+[6:17.84] write in bite code that okay for this
+[6:20.72] statement this overloaded method is to
+[6:23.12] be called. So the name is same that is
+[6:25.28] why we call these method as overloaded
+[6:28.56] methods. So compiler decide at compile
+[6:30.80] time which overloaded method is to be
+[6:33.28] called based on the parameters you pass
+[6:36.16] based on your parameter list.
+[6:39.20] Right? So here here I'm passing
+[6:40.80] different type of parameter number of
+[6:43.60] parameter is same only one parameter I'm
+[6:45.60] passing but type is different here int
+[6:48.16] here string here double maybe some
+[6:50.16] character or float or something like
+[6:51.76] this or boolean
+[6:54.00] right so that's why we need so now here
+[6:57.60] see it's I guess more readable print
+[7:00.88] print rather than print print string
+[7:03.28] print car like this I guess you agree
+[7:06.32] with me so this thing is more readable
+[7:08.56] so it is going to make your going to
+[7:10.72] make your code more readable, more
+[7:12.16] maintainable because it gives us the
+[7:15.92] consistent naming convention,
+[7:18.48] right? And it gives us the flexibility
+[7:20.96] of working with different types of data
+[7:24.40] with same name.
+[7:26.56] That is also a case. So that's why there
+[7:30.40] is a concept of method overloading.
+[7:31.84] That's why we like need method
+[7:33.60] overloading or these are you can say
+[7:35.76] comes under the benefits or advantages
+[7:38.00] of using method overloading. So your
+[7:40.32] code will look cleaner, more clear,
+[7:44.00] clean, more readable if you use method
+[7:46.64] overloading rather than this. So without
+[7:49.68] overloading you write this thing
+[7:52.00] different different names. Although the
+[7:54.08] functionality is same with overloading
+[7:56.24] you simply write same name print print
+[7:57.76] print print and param on the bas of
+[8:00.40] parameter you just differentiate these
+[8:02.00] methods right so your code would be more
+[8:06.24] maintainable more readable more clean
+[8:10.32] fine okay now this is method overloading
+[8:15.04] I I guess you get the idea what is
+[8:17.44] method overloading basically
+[8:19.92] okay this is what need also we have
+[8:21.76] discussed what is need of method
+[8:23.20] overloading. There are so many benefits
+[8:25.20] of method overloading like readability
+[8:26.96] of the code and enhance the code
+[8:28.80] readability, flexibility. It allows you
+[8:31.12] to handle different data types or
+[8:33.68] scenarios using the same method name and
+[8:36.16] maintainability. So it simplifies the
+[8:39.44] maintenance by reducing the need of for
+[8:42.32] separate method for separate for similar
+[8:45.20] task. task was similar print print but
+[8:48.88] rather than having the separate name for
+[8:51.28] similar task it allows us to take same
+[8:53.60] name right so your code will be more uh
+[8:58.64] maintainable now there are some rules
+[9:00.96] you need to follow for method
+[9:02.64] overloading first rule is the method
+[9:05.92] name must be same
+[9:09.60] okay only then you can overload that
+[9:12.00] method method name must be same that is
+[9:14.80] for sure Right? Now parameters must be
+[9:19.44] different. Now how parameters can be
+[9:22.56] different? Either you can change the
+[9:25.28] number of parameter. Either you can
+[9:27.52] change the type of parameter. See the
+[9:30.56] number or the type of parameter must be
+[9:32.96] different or both the cases can be
+[9:35.44] there. Number is also changed and their
+[9:38.40] type is also changed for those
+[9:39.84] parameters.
+[9:41.52] Okay. Let's take this example.
+[10:03.04] So these are some methods.
+[10:06.40] See method name must be same. This is
+[10:09.44] the rule. First rule, second name
+[10:11.44] parameters must be different. So here
+[10:14.56] these are valid method overloading. Two
+[10:17.04] parameters you are passing. Here we are
+[10:19.20] passing three parameters. Number of
+[10:21.12] parameters are different. Here I'm
+[10:22.88] passing two parameter but see one is int
+[10:25.52] a one is double b so that is also
+[10:28.00] different from these two this is also
+[10:30.80] valid only two parameter I'm passing but
+[10:34.24] see int a double b here double a int b
+[10:37.20] so order is different
+[10:40.00] number of parameter are same type is
+[10:42.16] also same one is int one is double but
+[10:44.56] the order is different in in this first
+[10:47.36] parameter is int second parameter is int
+[10:50.40] this second parameter is double in This
+[10:52.00] first parameter is double. So if order
+[10:53.68] is different then also it will work. It
+[10:55.28] is a valid method overloading. Here we
+[10:58.00] are passing two but double and double
+[10:59.68] two are different. Double and double
+[11:01.68] right. So parameter list must be
+[11:03.92] different.
+[11:05.76] Okay. Now if you think that let's take
+[11:09.60] one more like here I'm passing here I
+[11:12.96] have void sum and here suppose let's
+[11:15.60] change the return type of this int sum
+[11:18.96] and simply pass
+[11:21.92] uh we cannot say int sum and simply pass
+[11:24.32] here like
+[11:26.40] int a int b.
+[11:29.60] So in this case it will accepting two
+[11:32.24] arguments of type int and int and
+[11:35.60] returning return type is int. But it is
+[11:38.48] not a valid method overloading. See int
+[11:41.68] int int int two parameter only the
+[11:45.04] return type is different
+[11:47.60] but alone the return type alone cannot
+[11:50.88] differentiate the methods.
+[11:54.48] Return type alone is not responsible.
+[11:58.08] See return type is irrelevant.
+[12:01.92] So the return type does not affect the
+[12:04.00] method overloading.
+[12:05.92] So now it will give you error like maybe
+[12:09.76] already defined the sum here. This is
+[12:12.64] not valid. Parameter list must be
+[12:14.88] different. Parameters must be different
+[12:16.48] to achieve method overloading.
+[12:19.04] Right?
+[12:21.04] See in the definition we have seen this
+[12:23.12] thing that they must be different. and
+[12:24.56] their method signature must be different
+[12:27.04] and method signature in the previous uh
+[12:29.28] one of the previous lecture I have told
+[12:30.56] you what is method signature it includes
+[12:34.16] the name of that method like for this
+[12:37.20] method the method signature is the name
+[12:40.96] and the type
+[12:44.32] int int and number of parameters. This
+[12:46.24] is the method signature for this. If you
+[12:49.44] find out, if you write the method
+[12:51.04] signature, then that is sum int, comm,
+[12:56.48] int,
+[12:58.24] return type is not included in the
+[13:00.32] method signature. So both the method
+[13:02.00] signatures are same, right? So yeah,
+[13:04.96] that's why in the definition it's
+[13:06.96] written that it should be differentiate
+[13:09.20] based on their method signature should
+[13:11.28] be unique.
+[13:13.36] Now method signature for this is sum
+[13:16.08] double double. So that is different for
+[13:18.64] the sum sum double int sum int double
+[13:22.48] order is different. So this is method
+[13:24.96] signature.
+[13:26.64] Okay. So now the basic idea is it's
+[13:29.68] clear to you what is method overloading
+[13:31.44] and what are the rules. If you want to
+[13:33.60] achieve method overloading then what are
+[13:36.00] some rules?
+[13:38.00] Okay. Now let me just show you this
+[13:39.84] thing till now whatever we have
+[13:41.12] discussed practically then we will see
+[13:43.36] later further.
+[13:46.40] So in our first project this let's
+[13:49.04] create a new Java class and we are
+[13:51.36] discussing here method overloading
+[13:55.68] let's create a method simple method
+[13:57.52] let's create now void simply print and
+[14:01.36] here we are just having int a
+[14:05.44] and here simply printing here
+[14:10.88] whatever the int value we pass and one
+[14:14.64] more method we are having the same let's
+[14:17.04] just uh copy paste this method only but
+[14:19.84] in this case we are passing not int we
+[14:22.40] are passing suppose double value so here
+[14:26.08] we simply print printing double value
+[14:33.76] and in the next simply let's take string
+[14:37.12] str and printing string
+[14:42.40] you can take variable m a also but I'm
+[14:44.40] just taking str. So three methods we
+[14:46.64] have taken having the same name print.
+[14:50.48] Now let's call these methods where we
+[14:53.04] call these methods in sorry in uh main.
+[14:57.76] So first let's call uh let's call print
+[15:02.08] simply pass five
+[15:04.88] and print here we are passing Jenny
+[15:10.16] and in next print I'm passing simply
+[15:14.16] 6 76 something like this that's it
+[15:18.80] okay so which method now is to be called
+[15:22.72] because all are having same name so at
+[15:25.04] the compile time only The compiler Java
+[15:28.32] compiler determines which method is to
+[15:30.64] be called based on the method signature.
+[15:34.96] So I'm passing int here. So method
+[15:37.20] signature for this is what? Print int
+[15:40.80] like this method signature is print the
+[15:43.12] name of the method and simply int one
+[15:46.24] parameter type int. So this is matched
+[15:49.20] with this method signature. So at this
+[15:51.52] point of time this method is to be
+[15:53.12] called right not these two. Let's just
+[15:56.56] comment out these two and I'll show you
+[15:58.48] the let's uh debug this. Let's just add
+[16:02.64] some debugging points the break points.
+[16:05.12] Let's just debug this. So you can easily
+[16:07.28] debug and you can check which method is
+[16:09.68] going to be called. This is the best way
+[16:11.52] to check right. So at now we are having
+[16:16.88] control is here. First control will go
+[16:19.20] to the main then control is here at this
+[16:21.60] calling. Now let's just step over. Now
+[16:24.96] see the control is at this line because
+[16:27.92] we are in this function um this method
+[16:31.52] int a so it will print printing integer
+[16:34.16] value a a is equal to 5. So it will
+[16:37.52] print here five and simply return. So
+[16:40.00] let's just
+[16:41.92] step over now see control is at the
+[16:44.48] closing bracket
+[16:46.64] and we the output is printing integer
+[16:49.20] value five. So let's just step over now.
+[16:52.16] Control is back to the caller and after
+[16:54.72] calling this after just this line
+[16:56.40] whatever is there control will be at
+[16:58.48] that line. So just after this calling
+[17:00.72] caller method the
+[17:03.36] we are just uh closing the main. So
+[17:06.32] control is here and that's it. Right? So
+[17:10.40] this is how
+[17:12.32] this is to be called. Now print let's
+[17:15.20] just check for this print Jenny and
+[17:17.20] let's just uh
+[17:21.28] comment out this thing okay we are not
+[17:24.24] we shouldn't run this so we we will
+[17:26.16] debug this let's just debug this to get
+[17:28.48] it step by step so in the console
+[17:30.96] there's nothing now step over see now
+[17:33.20] the control is here within this string
+[17:35.68] method
+[17:37.36] and str is now Jenny str has been
+[17:40.32] assigned to Jenny and control is at this
+[17:42.80] So once you step over this would be
+[17:44.40] printed string value Jenny and print
+[17:47.92] exit. So at the compile time only
+[17:51.68] compiler decides
+[17:53.92] at the bite code only it will like write
+[17:55.84] which method is to be called and by the
+[17:58.16] JVM at runtime and this is basically
+[17:59.76] known as method binding.
+[18:05.20] Okay.
+[18:06.96] Now I hope you got the idea what is
+[18:08.80] method overloading and how to write this
+[18:10.32] thing. Now let me just tell you with one
+[18:13.44] more example. Here we are having suppose
+[18:15.68] addition addition of two numbers. So
+[18:18.00] let's just comment out these things.
+[18:32.24] Now we are having two methods.
+[18:35.68] So here at the first method I'm just
+[18:38.48] writing static end. So let's just
+[18:41.44] comment out all the previous thing all
+[18:43.76] the previous methods and we'll just have
+[18:46.72] two methods. So let's just comment out
+[18:48.32] these things. Static void add intend and
+[18:52.24] static int I have just changed the
+[18:54.24] return type. Method name is same
+[18:55.84] parameter uh number of parameter is same
+[18:58.00] and the type is also same. So this will
+[19:00.00] give you error. If I just call this,
+[19:02.48] let's suppose I call this add and 2, 3.
+[19:08.64] So it's like some error. It's already
+[19:10.96] defined in method overloading.
+[19:13.68] It's already defined because method
+[19:16.32] signature for this is add int int. For
+[19:18.40] this also add int int and the method
+[19:20.32] signature is same. So return type alone
+[19:22.56] cannot differentiate the methods. You
+[19:25.20] have to change something. Suppose I
+[19:27.04] change here int c. Now see there is no
+[19:30.08] error.
+[19:31.28] So now add two three we are passing
+[19:33.28] means it will simply call there are two
+[19:35.20] parameters. So this thing and if I pass
+[19:39.44] here like add 2a 3 2a 2a 1 then this
+[19:44.00] will this thing will call this method
+[19:48.96] but it is returning something. So you
+[19:50.96] have to like in let's just
+[19:55.36] fetch this into result and after that
+[19:57.76] just print
+[19:59.84] whatever the result is right. So let's
+[20:02.88] run this and now you'll get the output
+[20:05.52] five and four.
+[20:08.64] Okay why five and four? Because we are
+[20:10.80] just writing here return a + b and there
+[20:13.20] are three parameters. So a + b + c. So
+[20:16.48] now this point it will give give you
+[20:18.56] five and five only.
+[20:21.20] Okay, because 2 + 2 + 1 is also five.
+[20:23.84] Let's make it two. So, it will give you
+[20:25.20] now six, right?
+[20:28.72] And both static and instance method can
+[20:30.72] be overloaded. These are static method.
+[20:33.60] But if you make it instance method, that
+[20:36.96] will also work fine. But only difference
+[20:38.96] is now you cannot call these directly.
+[20:41.36] You have to first create object of this
+[20:43.76] class method overloading and let's
+[20:45.84] create object name is obj
+[20:48.24] simply and now you can call these
+[20:51.28] methods how to call just object name
+[20:54.00] what is obj dot with dot operator and
+[20:57.20] here also simply
+[20:59.36] same thing you need to do sorry
+[21:04.96] this will work now right let's run this
+[21:08.08] and you will get five and six out So
+[21:11.12] both the methods whether it's static or
+[21:13.36] instance you can overload both the type
+[21:14.88] of methods. Now overloading
+[21:19.44] with the different types of parameter we
+[21:21.36] have seen here we are overloading with
+[21:24.16] different types of parameters. We are
+[21:25.76] printing here type of parameter is int
+[21:28.24] here double here string. Now overloading
+[21:31.04] we have seen with different number of
+[21:32.72] parameters. Number is different. Here we
+[21:35.36] have two here we have three. Now let's
+[21:37.52] have one more uh let's have one more
+[21:40.80] thing void
+[21:44.00] not int let's take it double this time
+[21:47.84] return time method name is same and here
+[21:50.64] I'm passing int a comma
+[21:53.68] second is double b
+[21:58.72] it will simply return a + b and
+[22:03.36] one more we have here I'm having first
+[22:06.48] is double
+[22:08.40] and the next is int. I mean the order is
+[22:11.44] different.
+[22:14.48] So these two we are having right.
+[22:19.12] Okay. Now
+[22:23.36] okay what we are saying here is
+[22:24.88] identifier expected. So obviously we
+[22:26.72] cannot take both void and double. Void
+[22:29.44] means no return type. Double means
+[22:30.88] double return type. So that would
+[22:32.40] definitely be an error. Yeah, sometimes
+[22:35.20] I do silly mistakes. Sorry. Double and
+[22:37.84] double add add two parameter but order
+[22:41.76] is different. So this will give you
+[22:45.44] uh this will give you no error. Let's
+[22:47.28] just comment out these two.
+[22:50.64] And let's just call now. So method
+[22:52.64] overloading I'm int and double. Suppose
+[22:54.96] I'm passing here int and here I'm
+[22:56.64] passing 3.2.
+[23:00.00] So this will call this thing because the
+[23:03.20] signature is what the signature for this
+[23:06.48] this method is what the method name
+[23:09.20] first is int and next is double
+[23:13.52] so this signature is exactly matching
+[23:15.92] with this calling first add then int and
+[23:18.88] then double so it will call this now in
+[23:20.88] second case if I call something like
+[23:22.88] this 2.2 two and then just two.
+[23:27.84] So now this this will add
+[23:32.24] provided is uh what is the error?
+[23:34.24] Provided is double and required is int
+[23:37.20] only
+[23:38.80] here one uh okay the error is what
+[23:42.32] provided is double and required is int.
+[23:46.40] Fine. See required is int because the
+[23:48.96] whatever the result we are storing
+[23:51.20] whatever this method will return we are
+[23:53.04] storing that into a variable result and
+[23:54.72] the type of result is int. But this will
+[23:57.44] return double. So that's why you're
+[23:59.84] getting an error. So you can make it to
+[24:02.48] double or you can cast this result to
+[24:04.88] int. That is also fine. So just make it
+[24:07.92] double and just print. Let's run this.
+[24:10.96] And now you will not get any error. 4.2
+[24:14.56] and two because we are printing only one
+[24:16.72] this thing. We are not printing this
+[24:19.28] whatever it is returning. We are just
+[24:22.08] calling this. We are not fetching that
+[24:23.68] output in a simple variable or we are
+[24:25.44] not uh calling this into system.out
+[24:29.12] print ln. This will print these values
+[24:33.28] right now.
+[24:37.36] So I hope you got this method will call
+[24:40.64] this
+[24:42.40] and this method
+[24:45.68] will call this right because of the
+[24:49.60] signature right so these are like order
+[24:52.72] of parameters different types of
+[24:54.16] parameters is different and let's just
+[24:56.96] now unccomment these things and what if
+[24:59.92] now let me tell you one more thing let
+[25:02.40] me just show you one more thing let's
+[25:05.20] just comment out these these lines
+[25:08.16] And here
+[25:11.12] suppose I'm creating two variable that
+[25:13.36] is byte of type by uh 1 is equal to this
+[25:17.60] and b2 is equal to 20
+[25:21.76] and now in system.out.t print ln I'm
+[25:25.68] calling like obj dot add and I'm just
+[25:29.68] passing 10 20.
+[25:33.84] That's it.
+[25:37.12] So now what
+[25:39.76] what is the error here? What output you
+[25:41.60] will get here? See here it is showing
+[25:44.00] now the error that is cannot resolve
+[25:46.16] print len void obj dot add.
+[25:51.36] Okay fine. Why you are getting this
+[25:53.20] error? Let me just first comment out
+[25:56.72] this and simply call this. I'll tell you
+[25:59.12] why you were getting this error. OBJ dot
+[26:01.04] add
+[26:02.64] and sorry we are passing here B1 not 10
+[26:05.44] and 20 and B2 whatever variable we have
+[26:07.68] created. What do you think?
+[26:11.36] See there is no
+[26:13.60] method out of these four
+[26:16.88] having byte parameters having the type
+[26:19.92] of parameter byte byte. So maybe you
+[26:22.64] must be thinking like this should give
+[26:24.24] error because there is no matching
+[26:27.92] method signature
+[26:30.24] but this will not give any error. Which
+[26:32.48] method is going to be called
+[26:35.28] by so if exact matching is not found
+[26:38.48] then it will go for the next larger data
+[26:41.52] type.
+[26:43.04] B1 can be converted to next short. So it
+[26:46.48] will check for the method signature
+[26:48.16] having short short like add first
+[26:51.28] parameter short second parameter also
+[26:53.44] short something like this
+[26:56.56] but see there's no short now it will
+[26:59.52] move to the next larger that is now int
+[27:03.68] now we got int int. So at this point of
+[27:07.36] time this will call this method int int.
+[27:13.84] It's like type promotion.
+[27:17.04] So this thing is also there in method
+[27:18.56] overloading. If I show you, let's just
+[27:21.92] debug this. Let's just uh add some
+[27:24.64] debugging point here
+[27:27.52] for this method, for this method as well
+[27:29.44] and for this method as well. This would
+[27:31.60] not be called definitely because there
+[27:33.04] are three parameters that is for sure
+[27:34.88] and we're passing only two parameter.
+[27:37.44] Let's just debug this and see which
+[27:39.76] method is going to be called here.
+[27:43.52] So in console there is nothing right
+[27:45.04] now. So we are at this place right now.
+[27:48.16] Control is here. Step over. So after
+[27:51.28] executing this line B1 is equal to 10.
+[27:53.44] B2 is equal to 20. Control is here at
+[27:56.00] this point of time. So method
+[27:58.40] overloading B1 10 B2.
+[28:02.32] So let's just step over and which method
+[28:04.16] is going to be called this one. See the
+[28:06.00] control is
+[28:07.76] within this method. Now add in a A into
+[28:10.32] B. Now a becomes 10, b becomes 20 and we
+[28:12.80] are just printing a plus b. So let's
+[28:14.64] step over and it will print 30. That's
+[28:17.12] it. Step over and out of the program
+[28:20.48] disconnected.
+[28:22.96] So type promotion can be there. But
+[28:24.88] because of this type promotion now if if
+[28:27.44] I suppose suppose let's take one more
+[28:29.68] thing. Let's just copy paste this thing.
+[28:32.88] And now one more method I have. But that
+[28:36.56] method I'm having
+[28:39.12] short and short.
+[28:45.04] So we are having now 1 2 3 4
+[28:49.12] 1 2 3 4 five methods.
+[28:51.92] What do you think? Now everything is
+[28:55.04] same. We are taking by type of thing
+[28:57.36] here by data type. Which method is going
+[28:59.92] to be called?
+[29:01.92] Exact matching. Matching is not there.
+[29:03.84] So it will go to the next larger after
+[29:06.16] bite there is short. Yeah, we have short
+[29:08.56] short at this point of time. It will
+[29:10.16] call this method, not int method, not
+[29:14.32] the method having
+[29:16.88] int parameter. Let's just debug this and
+[29:19.44] I'll show you. Let's debug this and uh
+[29:24.16] see on the console right now we have
+[29:25.68] nothing. Control is here. Step over. B1
+[29:29.60] 10 B2 10. Let's step over and now see we
+[29:32.24] are in this method. Add short A, short
+[29:34.80] B. Now a becomes 10, b becomes 20 and a
+[29:37.76] + b.
+[29:40.00] Right? So this is kind of type
+[29:42.80] promotion. I hope you got this. But now
+[29:45.84] let me show you one more thing and u
+[29:49.36] let's just remove all the break points
+[29:50.96] here. I hope till now whatever we have
+[29:53.52] discussed that is clear to you. Right
+[29:56.08] now rather than calling these let's just
+[29:58.56] comment out these two. So we are calling
+[30:02.40] now
+[30:07.84] 1 comma 2. So both are intent. So
+[30:09.68] definitely it will go for this
+[30:13.76] int
+[30:15.68] right.
+[30:19.60] If I just print this into
+[30:23.28] system.out.print ln. Let us see. I'm not
+[30:26.56] sure which this is going to be called.
+[30:28.48] We can debug this and we can see. So it
+[30:32.32] is showing cannot resolve method in
+[30:34.32] void.
+[30:36.72] Okay, we are calling just uh this is
+[30:40.16] void. So it is not returning anything.
+[30:41.92] So this should be calling is like this,
+[30:45.52] right?
+[30:47.76] Let's run this and see. Stop the
+[30:50.16] debugging. Now
+[30:55.04] variable value of the parameter is
+[30:56.80] always one. This is always true. So it
+[31:00.72] will call now int int this method having
+[31:04.24] int parameter. It will not call the
+[31:05.84] method having short. But obviously one
+[31:07.84] and two are also come in integer. So
+[31:10.24] short is also like int. But by default
+[31:12.80] when you pass any int value so that
+[31:14.48] would be considered as integer value.
+[31:16.16] Then that would be considered as the
+[31:17.28] array type is int only not bite or
+[31:20.16] short. If you're taking bite or short,
+[31:22.56] you have to specifically tell that okay
+[31:24.40] this is short type this is short type or
+[31:26.88] this is bite type like in this previous
+[31:29.12] case by default if you pass any int
+[31:31.68] value then that would be considered
+[31:32.96] under int data type. So it will call not
+[31:36.08] short it will call this add having int
+[31:39.52] parameter. Okay. Now one more thing I
+[31:42.24] want to show you. Let's just comment out
+[31:44.11] [clears throat] this
+[31:46.08] and comment out this as well. Okay. We
+[31:49.04] don't comment out this. Let us comment
+[31:50.48] out this only. Now we are passing one
+[31:54.48] and two. See now ambiguous method call.
+[31:58.80] At this point of time don't think that
+[32:00.72] if you're not having a method having int
+[32:03.84] parameter it will call short parameter.
+[32:05.84] No these are int only. These are int lit
+[32:11.04] and short is smaller int is larger. So
+[32:13.76] demotion is not possible
+[32:16.32] from smaller to larger is possible but
+[32:19.28] this is larger int.
+[32:21.76] So larger to smaller is not possible. So
+[32:24.88] definitely it will not call this one.
+[32:28.32] Why it is showing you ambiguous method
+[32:30.80] call. See both add in double and add
+[32:37.52] double int match.
+[32:41.76] Both method are matching these methods.
+[32:45.44] Let us comment out this also.
+[32:49.28] And let us comment out this also. Then
+[32:52.56] you'll get it better. Now we are having
+[32:54.72] this int double and double int. And we
+[32:57.92] are passing int int.
+[33:00.32] So it is giving you ambiguity error.
+[33:02.72] Ambiguous method call. Both methods are
+[33:05.12] matching. See there's no exact match,
+[33:08.16] right? No both the parameter int int.
+[33:10.32] There's no exact match. Now if there's
+[33:12.56] no exact match then I have told you it
+[33:15.44] will go for the next larger data type.
+[33:19.36] So now one suppose one is matching with
+[33:23.68] this like int and it will go for two
+[33:26.64] would be converted to double that is
+[33:28.56] fine because int is smaller double is
+[33:30.40] larger so it can do type promotion but
+[33:33.20] second case is also same. One can also
+[33:36.56] one is integer so it can also be
+[33:38.16] promoted to double and two is also in.
+[33:41.12] So compiler is not now confused
+[33:44.40] which is going to be called.
+[33:46.96] So that's why you are getting here
+[33:48.24] ambiguity error. So ambiguity occurs
+[33:50.56] when the compiler cannot determine which
+[33:54.64] overloaded method to call which one
+[33:58.08] because we are having two methods in
+[34:00.96] this case. So if you have multiple
+[34:03.36] methods match the method invocation.
+[34:10.16] So this is method invocation and both
+[34:12.16] the methods are matching. So compiler is
+[34:14.80] confused. Now which is to be called. So
+[34:17.04] that's why you're getting ambiguity
+[34:18.96] error. And the reason of ambiguity here
+[34:20.72] is what is the reason?
+[34:23.76] Reason for ambiguity is type promotion
+[34:28.56] because int can be promoted to larger
+[34:31.36] type that is long or float uh like
+[34:34.48] double like this
+[34:37.44] because of type promotion. So you need
+[34:39.44] to take care of this thing also while
+[34:40.64] doing method overloading. So because of
+[34:43.28] uh type promotion there can be some
+[34:45.76] ambiguity. So while writing method
+[34:47.44] overloading you have to take care of
+[34:49.36] this thing also
+[34:51.28] right
+[34:55.28] and now see if I change it something
+[34:57.12] like this if I change a little bit 2.3
+[35:00.48] now there's no ambiguity error because
+[35:03.12] the method signature for this is add int
+[35:07.60] double and exit mass is found at int
+[35:10.48] double so it will call this method you
+[35:13.20] can check this if you add some break
+[35:16.08] point here and here also you can check
+[35:18.48] which method is going to be called. You
+[35:19.92] can just debug this and you can check
+[35:22.08] this.
+[35:23.84] So at console there's nothing. Let's
+[35:25.92] step over. So at this point of time we
+[35:27.84] have this a at this line step over. Now
+[35:32.56] see we are the control is into this
+[35:35.44] method body of this method a is one b is
+[35:38.08] 2.3 return a plus b. So it will return
+[35:40.56] whatever the value is
+[35:42.96] and that's it. Right now let's just stop
+[35:46.08] this debugging and if I change it a
+[35:48.80] little bit 1.1
+[35:51.28] sorry 1.1
+[35:53.76] now cannot resolve method because there
+[35:55.92] is no double and double
+[35:58.40] one is double one is int. So it's not
+[36:00.56] like that. Okay, this is double. This is
+[36:02.80] matching with this and this is double.
+[36:04.72] This is int. Double is larger. Int is
+[36:06.64] smaller. So larger to smaller is not
+[36:08.32] possible.
+[36:10.00] In that case you have to type cast. If
+[36:11.60] you type cast this thing here, if I type
+[36:14.24] cast this to int
+[36:17.12] then it's fine.
+[36:19.12] Now this is double and this is int. So
+[36:21.84] it will go to this. B value is always
+[36:25.28] two. Although we are passing 2.3 but we
+[36:29.12] are converting this into int type
+[36:31.60] casting this into int. So that's why b
+[36:33.68] uh b value becomes two. So it will call
+[36:36.88] this method right and if you will not
+[36:39.20] type cast simply you pass here int at
+[36:42.48] this point of time it will call this
+[36:43.84] method because first is double second is
+[36:46.96] end. So exact match is found. You can
+[36:49.68] just debug this and you can check this
+[36:52.16] out. So this is the
+[36:54.72] best way to check which method is going
+[36:56.56] to be called. So here after this see we
+[36:58.56] are in this method second one now double
+[37:01.92] int and it will print whatever the
+[37:04.40] result is
+[37:06.40] right it is not printing anything
+[37:09.04] because we are not uh it is returning
+[37:11.04] something and we are just calling this
+[37:12.48] like this. So if you want to print you
+[37:14.96] just have to take a like variable double
+[37:20.08] result is equal to this and you can just
+[37:22.00] simply print this result that thing I
+[37:24.24] have no need to tell you that thing you
+[37:26.48] know right.
+[37:29.36] Second type of thing is ambiguity can
+[37:31.92] occurs when
+[37:34.00] you pass null as an argument.
+[37:36.88] So we know there is a null lit in Java
+[37:39.68] boolean literal true and false and we
+[37:41.92] are having null lit as well. So those
+[37:44.40] object references can be null like
+[37:47.52] string can be null any object can be
+[37:49.76] null
+[37:51.44] and how to pass object that thing I have
+[37:53.28] shown you in previous video right so
+[37:56.08] let's just take one more example here
+[38:06.88] so we are having one method display we
+[38:09.36] are passing string here string is not a
+[38:10.96] primitive type string is a reference
+[38:12.72] type object reference frames. So here
+[38:15.36] this is of static type I have taken. So
+[38:17.36] let's just we don't need to create
+[38:18.80] object of this class. We can simply call
+[38:20.64] this display display and
+[38:24.72] Jenny.
+[38:26.32] So it will call this method. So right
+[38:28.08] now we are not passing anything like I
+[38:30.00] am going to pass what null lit.
+[38:35.04] See null lit. So see the name is now
+[38:38.32] value of parameter name is always null.
+[38:42.08] Now if you run this
+[38:44.80] then what output you will get here? See
+[38:48.00] null. Now one more method let's take
+[38:51.84] static and same method same type let's
+[38:54.80] suppose I'm taking same method display
+[38:56.40] and here I'm passing object at this
+[38:58.00] point of time. So we're creating object
+[39:00.32] of this obj new this and now in display
+[39:06.32] I want to pass
+[39:08.40] the object OBJ
+[39:11.84] right
+[39:14.00] this thing rather than object we are
+[39:16.24] passing simply null so let's just create
+[39:20.88] here this and we're passing null and
+[39:24.00] let's just create here it will
+[39:27.76] accept
+[39:29.36] method overloading and OBJ1
+[39:33.44] it will accept the reference of the
+[39:36.64] already existed object. This thing we
+[39:38.88] have discussed in the previous lecture
+[39:40.24] how to pass this object right. So let's
+[39:43.84] just um print out OBJ1
+[39:48.48] dot we have taken
+[39:51.20] some id
+[39:55.36] ID whatever the id is so I'm just
+[39:57.44] printing the id okay right now I'm again
+[40:01.12] passing here null see now it will give
+[40:04.56] you ambiguous method call and rather
+[40:08.24] than this null if I simply pass suppose
+[40:10.48] I do this thing obj do ID is equal equal
+[40:13.12] to 10 and I'm simply passing here rather
+[40:16.40] than null
+[40:20.56] whatever the object is.
+[40:23.76] So it will call which method I'm calling
+[40:27.28] obj. So let's just I'm passing here
+[40:30.56] object. So it will call which method?
+[40:32.72] See 10 is going to be printed. So if you
+[40:35.76] check it, if you debug this, let's just
+[40:37.76] debug this here. Let's just add some
+[40:40.08] break point in both the methods and
+[40:42.64] debug.
+[40:45.04] See now let's just step over and it is
+[40:47.52] now in this method display method
+[40:49.68] overloading OBJ1 system.out out print 10
+[40:52.64] obj 1 dot id right let's just debug this
+[40:56.40] and it will simply print 10 now out
+[41:01.28] so we're passing object actually but now
+[41:04.48] we are passing null
+[41:07.60] see now ambiguous method call both when
+[41:13.04] you hover the cursor here then it will
+[41:15.12] show you both display string
+[41:18.96] and display method overloading
+[41:21.60] in this match.
+[41:24.48] So both are matching
+[41:26.72] because we can pass string literal can
+[41:29.92] be null in a string we can pass null in
+[41:32.56] an object reference we can object
+[41:34.72] reference can be also null. So both are
+[41:38.48] matching in this case also you will get
+[41:41.04] ambiguity kind of thing error. So
+[41:43.76] ambiguity can occur with
+[41:47.04] null as an argument. So this thing also
+[41:50.00] you need to take care when you're
+[41:52.48] dealing with these object preferences.
+[41:54.80] Don't pass null here. Pass the matching
+[41:58.56] value either like here name or either
+[42:00.96] pass here object.
+[42:03.12] Right?
+[42:04.64] So there can be ambiguity errors
+[42:07.68] and these are see userdefined methods.
+[42:09.76] We are defining these methods and we are
+[42:11.60] overloading these methods. But in Java
+[42:14.56] libraries also there are already those
+[42:17.44] predefined methods are also already
+[42:20.32] overloaded methods. There are many
+[42:22.96] overloaded methods in Java libraries
+[42:25.52] like we have print print ln these are
+[42:28.16] overloaded methods. Let me show you this
+[42:30.24] thing also. So when you search on Google
+[42:32.96] like print stream class in Java this is
+[42:36.08] from Oracle help center. So let's just
+[42:37.92] open this thing only and this is the
+[42:40.16] class print stream. So in this obviously
+[42:43.60] we know we have those method print and
+[42:45.44] print ln. So these are overloaded
+[42:47.68] methods. See same name parameter is
+[42:51.52] different type boolean b car parameter
+[42:54.24] number of parameter is different but
+[42:55.76] type is sorry number of parameter is
+[42:58.00] same one one parameter but type is
+[42:59.68] different name is print. Print it will
+[43:02.56] print a boolean value print a character.
+[43:04.64] It will print a array of character then
+[43:06.72] double then float then int. Same for
+[43:09.84] print ln also. Print len ln is also
+[43:12.40] overloaded. See same method name but
+[43:17.36] it will terminate the current line by
+[43:19.68] writing the line separator string. It
+[43:22.08] will print the boolean. It will print
+[43:24.40] the character. It will print array of
+[43:26.40] character. Then it will print double
+[43:28.08] then float then int then long.
+[43:31.20] Okay. So like this in more also like
+[43:35.36] there are so many predefined methods in
+[43:37.44] maths uh those math class also there are
+[43:40.48] many methods that are overloaded methods
+[43:42.56] but these are simply we are using these
+[43:44.80] method print and print ln that's why I'm
+[43:46.72] showing you because print ln we can use
+[43:50.40] print ln and here we can pass simply
+[43:52.40] string that would be printed we can use
+[43:54.40] print ln and simply pass any int so
+[43:56.80] integer would be printed if you pass
+[43:58.88] float float would be printed so that's
+[44:01.28] why uh I'm showing you this thing that
+[44:03.76] print ln is also overloaded method
+[44:07.68] right
+[44:10.24] so overloading also makes these APIs
+[44:13.92] easier to use and more intuitive okay so
+[44:16.96] we have seen this thing overloading with
+[44:18.72] different parameters
+[44:21.20] type of parameter we have changed right
+[44:24.08] then overloading with different number
+[44:25.76] of parameter and this is different type
+[44:27.84] of parameter type is int here type is
+[44:29.92] double here different Number of
+[44:32.08] parameter here one parameter of string
+[44:34.24] type here two parameter one is string
+[44:36.00] one is int. So this is how we can
+[44:38.64] achieve overloading ambiguity also we
+[44:41.20] have discussed how you can get the
+[44:42.48] ambiguity what can be the reason with
+[44:44.88] example. So to avoid this ambiguity you
+[44:47.76] have to provide the argument that
+[44:50.24] matches the exact signature of one of
+[44:53.60] the overloaded method to avoid ambiguity
+[44:57.52] right like this this example you have
+[44:59.36] taken exactly this example benefits also
+[45:02.08] I have told you already code readability
+[45:04.40] flexibility readability and reusability
+[45:06.40] and maintainability this thing we have
+[45:08.48] seen reusability means the same name
+[45:10.96] method name we can use again and again
+[45:13.52] readability means obviously Same name we
+[45:15.92] are taking different parameter we are
+[45:17.36] passing. So it would be more readable
+[45:20.16] because it provides a consistent naming
+[45:22.40] convention for related functions for
+[45:24.48] similar action. We can handle various
+[45:27.20] data types or scenarios using the same
+[45:29.36] method name. So it provide you the
+[45:31.12] flexibility to handle different data
+[45:32.72] types. Maintainability also by reducing
+[45:35.92] the need for separate method for similar
+[45:38.08] task. Right? You can take only single uh
+[45:41.76] method name. So it is going to increase
+[45:44.32] the maintainability also. So I hope you
+[45:46.72] got this thing like what is method
+[45:49.04] overloading right now. In the next video
+[45:52.24] we will see in the next lecture we will
+[45:53.60] see one coding exercise based on this uh
+[45:55.68] method overloading. So now I'll see the
+[45:57.68] next lecture. Till then bye-bye.

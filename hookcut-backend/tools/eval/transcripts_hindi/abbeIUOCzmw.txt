@@ -1,0 +1,163 @@
+[0:00.08] Throughout history, there have been some
+[0:01.60] rivalries that have shaped our lives as
+[0:03.52] developers. Rails versus Django, SQL
+[0:06.08] versus NoSQL, web components versus
+[0:08.48] feeling the love and embrace of a woman.
+[0:10.40] And just a few days ago, we got another
+[0:12.32] update in one of my favorite niche tech
+[0:14.32] rivalries, Versel versus Cloudflare. If
+[0:16.96] billionaires passive aggressively having
+[0:18.80] a downtime measuring contest on your
+[0:20.64] timeline isn't your thing, you may have
+[0:22.24] missed that Germo from Verscell and
+[0:24.24] Matthew from Cloudflare really don't
+[0:26.00] like each other. And that rivalry got
+[0:27.68] amped up even more last week when
+[0:29.52] Cloudflare released V-Next, a
+[0:31.44] re-implementation of the Nex.js API
+[0:34.08] built on V, essentially freeing up your
+[0:36.16] Next.js app to be deployed anywhere. In
+[0:38.48] this video, we'll break down how they
+[0:40.08] did it, what it may mean for other open-
+[0:42.08] source projects in the future, and find
+[0:44.00] out if it actually works. It is March
+[0:45.92] 2nd, 2026, and you're watching the code
+[0:48.48] report. Love it or hate it, Next is
+[0:50.48] still the most popular way to create a
+[0:52.16] React app. But despite that,
+[0:54.08] historically its biggest weakness has
+[0:56.00] had nothing to do with its API, but
+[0:58.00] rather its lack of deployment targets.
+[0:59.92] If you have a next app and you want to
+[1:01.44] deploy it on Versell, cool. Everything
+[1:03.36] will work nice since Verscell
+[1:04.80] essentially provides a bespoke runtime
+[1:06.64] for things like routing, middleware,
+[1:08.64] ISR, and image optimization. But if you
+[1:11.20] have a next app and you want to deploy
+[1:12.72] it somewhere not on Verscell, like
+[1:14.40] Cloudflare, or Netlefi, it gets a little
+[1:16.48] trickier. If you've had this constraint,
+[1:18.24] odds are you've used the Open Next
+[1:19.92] project to get around it. The way
+[1:21.28] Openext works is it takes the
+[1:22.96] traditional output you get from running
+[1:24.72] next build and then repackages it to run
+[1:27.04] on whichever platform you'd like. And as
+[1:29.04] you might imagine, this process of
+[1:30.80] needing to reverse engineer and build on
+[1:32.80] top of next output is fragile and prone
+[1:35.36] to errors as the build output changes
+[1:37.36] over time. So the crazy folks at
+[1:39.12] Cloudflare got together and thought,
+[1:40.72] what if instead of building on top of
+[1:42.24] the output, we just entirely rebuilt the
+[1:44.32] next framework from scratch on Vit. Now
+[1:46.40] this isn't a novel idea and it's not the
+[1:48.40] first time it's been tried. Cloudflare
+[1:50.16] themselves had even tried it in the past
+[1:51.76] and failed. So what makes this time
+[1:53.76] different? Well, obviously AI. It took
+[1:56.24] them just one day to get basic SSR,
+[1:58.88] middleware, server actions, and
+[2:00.72] streaming to work. But by day three,
+[2:02.64] they were able to deploy to Cloudflare
+[2:04.56] workers with full client hydration. And
+[2:06.88] then they spent the rest of the week
+[2:08.16] fixing edge cases, expanding the test
+[2:10.32] suite, and bringing API coverage up to
+[2:12.72] 94% of the next API. All for about a
+[2:15.44] grand total of $1,100 in AI tokens. And
+[2:18.56] because it's built on Vit, it can take
+[2:20.32] advantage of Vit's architecture, which
+[2:22.16] includes rolldown, the Rustbased bundler
+[2:24.32] for improved performance. So what does
+[2:26.32] Verscell think about all this? As you
+[2:28.00] can imagine, they're not the biggest
+[2:29.60] fans. The Verscell CTO tweeted about it
+[2:32.08] being a quote slop fork, and Gromo
+[2:34.48] himself tweeted a Cloudflare to Verscell
+[2:36.48] migration guide and some critical
+[2:38.08] vulnerabilities that they found in the
+[2:39.68] project. Those vulnerabilities make it
+[2:41.44] feel like a true Nex.js clone, but since
+[2:43.60] I know you don't have any actual users,
+[2:45.44] that doesn't matter. So, let's find out
+[2:47.12] if it actually works. Here's the app for
+[2:49.04] our newsletter, byes.dev. It's a pretty
+[2:51.28] generic next app that allows people to
+[2:53.12] sign up for the newsletter and displays
+[2:54.88] an archive of our past issues, which it
+[2:56.88] gets from disk. We also have an endpoint
+[2:58.96] that spits back HTML that we can paste
+[3:01.28] into our email platform for sending. For
+[3:03.60] basic apps, you could probably just
+[3:05.20] install V-Next and swap out the next
+[3:07.36] command for it in your package JSON and
+[3:09.36] it may work. But for this one though,
+[3:10.96] we'll need some refactoring to get it
+[3:12.56] working with V. Thankfully, Cloudflare
+[3:14.48] also built an agent skill to make it
+[3:16.40] pretty simple. Since I'm using cursor, I
+[3:18.48] can install it with this command and
+[3:20.08] then once it's installed, the agent can
+[3:22.00] use it when it helps migrate the project
+[3:23.84] to V-Next. The biggest thing to look out
+[3:25.68] for is compatibility with V. For
+[3:27.84] example, it'll add type module in our
+[3:29.92] package JSON so that all the JS files in
+[3:32.40] the project will be treated as ES
+[3:34.24] modules. And it'll refactor any JS files
+[3:36.72] that have JSX in them to use the JSX
+[3:39.60] extension since it's required by V. And
+[3:41.68] my favorite part is when it says it's
+[3:43.28] done, even though half the app is still
+[3:45.04] broken. But after some follow-up
+[3:46.80] begging, it did eventually figure it
+[3:48.56] out. And we now have our next app
+[3:50.16] running entirely on V. The big question
+[3:52.32] is, was it worth it to switch to be
+[3:54.32] honest, probably not yet. Always
+[3:56.00] remember, when it comes to bleeding edge
+[3:57.84] software, you're the one who bleeds.
+[3:59.68] Beyond the slop narrative, though, I
+[4:01.20] think the more interesting part is how
+[4:02.80] great V is. In Cloudflare's own Trust Me
+[4:05.04] Bro benchmarks, they found that
+[4:06.32] production build times with V-Ex were up
+[4:08.32] to 4.4 four times faster than next and
+[4:10.72] the client bundle size was 57% smaller
+[4:13.68] both almost entirely because of vit and
+[4:15.68] rolldown and in my own I probably
+[4:17.60] screwed something up so don't trust me
+[4:19.12] pro benchmarks I was able to achieve 5x
+[4:21.36] faster builds on the bites website with
+[4:23.12] v- next build times are never something
+[4:24.88] I really care to optimize so I'm not
+[4:26.72] going to ship it to production but it's
+[4:28.40] interesting enough that I'll check back
+[4:29.76] on the project in a few months and no
+[4:31.36] matter how much code agents write for
+[4:33.12] you still need to understand how that
+[4:34.96] code works under the hood and the best
+[4:36.64] way to do that is by mastering computer
+[4:38.48] science science fundamentals with
+[4:39.76] Brilliant, the sponsor of today's video.
+[4:41.92] I'd highly recommend their algorithmic
+[4:43.84] thinking course where you'll learn how
+[4:45.28] to design algorithms from first
+[4:47.04] principles to solve classic computer
+[4:48.88] science problems. The best part was
+[4:50.72] learning how to implement greedy
+[4:52.32] optimizations which are built to make
+[4:54.24] the locally optimal choice at each step
+[4:56.40] in order to reach the overall global
+[4:58.24] optimum. And you'll learn all these
+[4:59.76] techniques by solving actual problems
+[5:01.76] created by MIT professors, not just
+[5:04.24] watching videos. Then scan the QR code
+[5:06.24] or use the link in the description for a
+[5:08.24] free 30-day trial and 20% off their
+[5:10.88] premium subscription. This has been the
+[5:12.56] Code Report. Thanks for watching and I
+[5:14.64] will see you in the next one.

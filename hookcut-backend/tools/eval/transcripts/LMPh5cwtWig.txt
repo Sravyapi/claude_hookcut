@@ -1,0 +1,612 @@
+[0:00.16] It is easier than ever before to build
+[0:02.72] AI agents in 2025.
+[0:06.56] AI agent AI agent agent capabilities
+[0:09.68] agents. Hi everyone, I'm Ishan Sharma
+[0:12.72] and the best skill you can learn in 2025
+[0:14.88] is how to build and sell AI agents.
+[0:16.96] Today in this video, I'm going to show
+[0:18.64] you how to build AI agents effortlessly
+[0:21.44] without knowing how to code by simply
+[0:23.52] using make.com. It's going to be a
+[0:25.52] stepbystep tutorial. Watch till the end
+[0:27.92] because we'll be building a personal
+[0:30.00] assistant agent. This agent is going to
+[0:32.24] help you plan your entire day, tell you
+[0:34.24] what events you have on your calendar,
+[0:36.24] help you prepare for those events. It's
+[0:38.80] also going to help you summarize all of
+[0:41.28] your emails for the day. It will help
+[0:43.12] you reply to those emails as well, and
+[0:45.28] give you answers to any question that
+[0:47.20] you might have. All of this packed into
+[0:49.20] one agent itself. I'll show you how to
+[0:51.76] make it. make.com just had an amazing
+[0:54.16] new update in which it allows you to now
+[0:56.00] create agents from scratch right in
+[0:58.64] make.com again with no coding experience
+[1:01.84] simply by dragging and dropping and that
+[1:04.48] is what we'll be having a look at today.
+[1:06.24] So hit the like button and subscribe and
+[1:07.92] let's jump into the laptop and have a
+[1:09.76] look at make.com. So this as you can see
+[1:12.56] is make.com. It's an amazing platform
+[1:14.88] with which you can build automations
+[1:16.40] that can scale. Now they have the latest
+[1:19.12] update which allows you to create AI
+[1:21.04] agents. So let me log into it. Let me
+[1:23.68] sign in. You can make a free account.
+[1:26.64] Now I've made a separate video talking
+[1:28.32] about how to make simple AI automations
+[1:30.64] using make.com. We built a lead
+[1:32.96] generation scenario and I'm going to
+[1:35.84] show you how to build AI agents today.
+[1:38.56] So this is what make AI agents look
+[1:40.80] like. You can basically go ahead and
+[1:42.40] click on create an agent. We will
+[1:46.28] basically go ahead and say let's just
+[1:48.88] say that this agent is our personal
+[1:51.68] assistant. The model we can use any
+[1:54.08] model. I'll just go with 2.0 flash and
+[1:56.56] the system prompt. This is very
+[1:58.24] important. You can literally just go to
+[2:00.00] chat GPT and ask it
+[2:05.24] generate question I might
+[2:10.04] have and chat GPD is going to give you a
+[2:13.48] welldetailed in-depth prompt for exactly
+[2:16.24] this. Right? So what we'll do is we'll
+[2:19.36] basically just have to copy this entire
+[2:22.80] prompt and paste it inside of that box
+[2:27.52] right here.
+[2:28.88] And as you can see now you have an
+[2:30.80] in-depth prompt. You can click on save.
+[2:32.96] And once you do that, there you go. This
+[2:35.36] is your AI agent right here on mate.com.
+[2:38.88] But what does it lack? It lacks system
+[2:41.52] tools. Now you gave it a system prompt
+[2:43.68] which is going to help it get an idea
+[2:45.92] for what all you have to do. Right? So
+[2:48.32] it says you are a proactive, intelligent
+[2:50.32] and efficient personal assistant for
+[2:52.32] Ishan Sharma. Your job is to help him
+[2:54.72] organize and optimize his day, manage
+[2:56.40] his communications and answer any
+[2:57.68] queries that he might have with accuracy
+[2:59.52] and clarity. You have to do day
+[3:02.00] planning. You have to do email
+[3:03.60] management. You have to just provide
+[3:05.92] general knowledge support. So that's
+[3:08.08] what the prompt is. But it also needs to
+[3:10.96] have some tools. So any AI agent is
+[3:13.68] basically a large language model which
+[3:16.00] has access to tools to actions that it
+[3:19.68] can do. So what you can basically do is
+[3:21.44] you can go here and start adding tools.
+[3:24.32] Now we will have to create these tools
+[3:26.64] from scratch which is what I'm going to
+[3:28.48] show you right now. So let's first of
+[3:31.52] all go onto scenarios and we can start
+[3:35.12] building scenarios from scratch. And
+[3:37.44] once we do that we can basically add
+[3:40.00] those scenarios as tools into our AI
+[3:42.56] agent for it to access those tools and
+[3:45.52] execute certain functions. For example,
+[3:47.84] a function could be summarizing all of
+[3:49.60] your emails. So that is going to be one
+[3:51.36] scenario. Another function could be
+[3:53.20] looking at the events in your calendar
+[3:56.08] and giving you a summary and planning
+[3:57.60] your day. That is another scenario that
+[3:59.28] we can create. So let me just go ahead
+[4:00.80] and create a new scenario right here on
+[4:02.76] make.com. And we will start with our
+[4:06.32] first app. This one is going to be a
+[4:09.04] Telegram bot, right? So let's say that
+[4:11.52] you can access this agent on Telegram.
+[4:14.48] So, we'll just go ahead and go for
+[4:16.40] Telegram bot and I want to watch for
+[4:19.60] updates. So, I'll just go ahead and do
+[4:22.00] this. I have already created a web hook.
+[4:24.88] Now, you can add a web hook right here
+[4:27.60] and we will go ahead and keep it like
+[4:30.60] so. And I will click on save and we will
+[4:34.88] be able to save this as a Telegram bot.
+[4:37.44] Now, you can very easily go on to
+[4:39.40] Telegram and once you do that, you can
+[4:41.68] build your own bot from scratch. So all
+[4:44.48] you have to do is to basically just go
+[4:46.16] here and just say forward slash newbot
+[4:50.40] and this will help you create a new bot.
+[4:52.32] It will ask you for the name. So you
+[4:53.92] give it a name and then you will have a
+[4:55.36] bot ready for you to use in telegram
+[4:57.20] itself. Once you do that there is going
+[4:59.52] to be this little token that you can
+[5:02.08] basically copy and you can then paste
+[5:04.56] this token right into this telegram bot
+[5:07.92] when you are adding a web hook. So
+[5:10.24] basically you go on to connection, you
+[5:12.24] add a connection and you enter this
+[5:13.92] token right here which I've already
+[5:15.28] entered before. So I don't have to do
+[5:17.12] this all the way again. So this should
+[5:20.32] be good to go. And now we have a
+[5:22.72] telegram bot which will watch for
+[5:24.40] replies and messages. Okay, that is the
+[5:27.12] first step. The next step is for me to
+[5:29.36] create a router. So I want to have a if
+[5:31.52] else condition here. If I am messaging
+[5:34.64] that I want you to plan my day, then it
+[5:37.20] should access my Google calendar and
+[5:39.28] then plan my day using a Gemini module
+[5:41.36] and then give me a response afterwards.
+[5:43.28] If it does not say plan my day, I can
+[5:45.84] ask it to do something else. So for that
+[5:48.08] I need a router. So I'll go ahead and
+[5:50.48] search for a router module which is
+[5:53.20] right here. And as you can see now I
+[5:54.88] have two different conditions. So the
+[5:57.76] first condition I can set up a filter
+[5:59.68] and I can say label um check for plan my
+[6:05.68] day request the condition is going to be
+[6:10.24] basically on the text that we get. So
+[6:13.36] the message text right so you can
+[6:16.72] basically just drag and drop the output
+[6:19.04] from this telegram bot is all of this
+[6:21.68] information. Now we go into the message
+[6:23.68] section. We can drag and drop the text
+[6:25.52] part of it. Right? And then we can
+[6:27.76] basically say equals to or contains
+[6:30.56] contains case insensitive. So I can say
+[6:33.84] plan my day. And that's all you need.
+[6:37.68] And you can then click on save. So this
+[6:40.40] is going to execute if the message
+[6:43.76] contains plan my day. And now we can
+[6:47.20] start by adding our Google calendar. Now
+[6:50.64] I want it to search for all the events.
+[6:53.36] If I'm asking it to plan my day, it
+[6:55.20] first needs to have a look at the
+[6:56.48] current events in my day itself. So I'm
+[6:59.44] going to ask it to search events. And
+[7:02.08] now I have already connected my Google
+[7:04.88] calendar with make.com. You can
+[7:06.56] basically just click on add and it will
+[7:08.64] ask you to sign in with Google and give
+[7:10.48] it permission to read your Google
+[7:13.28] calendar. So you give it the permission
+[7:15.12] and then you will have access to it like
+[7:16.72] I have it right here. Now, there is a
+[7:19.20] calendar ID that I can set. So, I'll
+[7:21.04] just go ahead and click on this primary
+[7:23.84] calendar ID. Start date. It's pretty
+[7:27.20] much up to me, but I can actually keep
+[7:31.40] it to now. So, now is going to be the
+[7:36.20] date and the end date is basically going
+[7:39.36] to be now + 1. So basically what I want
+[7:44.08] is I want it to look at my calendar from
+[7:48.48] this particular time to the next one day
+[7:52.80] and I wanted to scan for all the events
+[7:54.88] in this particular time and when it does
+[7:57.04] that it's going to be able to fetch all
+[8:00.08] of my events in that particular time.
+[8:02.80] Click on select all and we can limit it
+[8:05.04] by let's just say five for now. can
+[8:07.92] click on save and now we have a Google
+[8:09.72] calendar module which will search all of
+[8:12.08] the events. Now I wanted to take this
+[8:15.60] input into a Gemini LLM. So I'll go onto
+[8:19.52] Google Gemini AI module and I'll click
+[8:21.36] on create a completion. So create a
+[8:24.16] completion is basically how you get a
+[8:25.84] reply from Gemini. Now I'm going to
+[8:28.40] create a connection. So you can add a
+[8:30.16] connection and enter your API key which
+[8:32.56] you can access by simply going on to AI.
+[8:35.08] studio which is basically Google AI
+[8:37.36] studio and you can click on get API
+[8:40.24] keys. So once this thing loads up click
+[8:43.12] on get API key and you can basically
+[8:46.48] create an API key right here and then
+[8:48.16] utilize that. So once you do that you
+[8:51.04] can basically then click on save and
+[8:52.48] then you would have a good to go Gemini
+[8:54.88] connection right here. I already have
+[8:56.96] this saved up right here so I won't do
+[8:58.48] it again. The model I'll just go with a
+[9:00.48] very well- tested model which is Gemini
+[9:03.04] 2.0 flash. Now I'll go into the
+[9:05.44] messages. Role would be user, parts
+[9:08.16] would be text. And this is where I can
+[9:11.28] enter the prompt that I want Gemini to
+[9:14.88] look at. So this is where I'm going to
+[9:17.68] ask Gemini to give me the complete plan
+[9:20.48] of my day. Look at it one by one and
+[9:23.04] give me exactly what to do next. So if I
+[9:25.44] enter this text, which is basically
+[9:26.96] based on the following calendar events,
+[9:29.04] create a detailed and motivational day
+[9:30.96] plan for me. include time block
+[9:32.72] suggestions for work, meals, exercise
+[9:34.96] and breaks. The event is going to be
+[9:37.52] this summary and then this start. So
+[9:41.36] what you can also do is before we go
+[9:44.48] ahead with this Gemini module, let me
+[9:46.96] just delete this and start with a text
+[9:50.20] aggregator. So this is a way for us to
+[9:53.92] take all of the text together. The model
+[9:56.16] would be Google calendar. Text would be
+[9:59.52] the result that we get from
+[10:03.40] it. Um, which is going to be
+[10:08.04] summary at start time. So, we'll go
+[10:12.72] ahead and put that and then we will put
+[10:16.48] a row separator and then we'll click on
+[10:18.80] save. So what this does is it basically
+[10:20.80] looks at your Google calendar and it's
+[10:23.20] going to check for events one by one and
+[10:25.28] give you those events. Now if you don't
+[10:27.68] add this text aggregator, it will keep
+[10:30.64] firing Gemini again and again. So it
+[10:32.96] will get just one event and then will
+[10:35.20] try to plan your entire day around it.
+[10:36.64] Let's say you have four meetings in a
+[10:38.40] particular day. If you don't use text
+[10:40.16] aggregator, it will give you one event
+[10:42.08] to Gemini and the Gemini will think that
+[10:44.08] okay, you only have one meeting. Then it
+[10:45.68] will plan your day accordingly. then it
+[10:47.60] will get another the next meeting then
+[10:49.84] it will plan the entire day accordingly.
+[10:51.28] So it will send you multiple messages
+[10:52.64] and multiple responses which you want to
+[10:54.72] avoid. So you want Google calendar to
+[10:57.36] give you just one complete answer with
+[11:00.00] all of the events lined up in one text
+[11:03.20] field which is what you will get with
+[11:05.20] text aggregator. So I set it up like
+[11:07.68] that and I can save it and I can add
+[11:11.12] another module which would be our Gemini
+[11:13.76] bot right here. create a completion. You
+[11:17.12] can add a connection. So you can
+[11:19.56] basically oh wait a minute you can
+[11:22.56] basically click on add and get your API
+[11:25.04] key from Google AI studio. So click on
+[11:26.88] get API key and then you can paste that
+[11:29.76] key for completely free and create a
+[11:31.76] connection. I already have one so I will
+[11:33.84] not do that again. You can go and add
+[11:36.96] any model. I'll go with Gemini 2.0
+[11:39.48] flash. And then we can add our message.
+[11:43.20] So I'll go ahead and click on role of
+[11:44.88] user parts would be message type would
+[11:47.28] be text and then we can enter the actual
+[11:49.60] text which we receive from the tools. So
+[11:53.36] what we have to basically do here is
+[11:57.08] create this prompt. So based on the
+[12:00.16] following calendar events create a
+[12:02.08] detailed and motivational day plan for
+[12:04.16] me include time block suggestions for
+[12:06.48] work, meals, exercise and breaks and
+[12:09.20] then I can write down all the events. So
+[12:12.24] this is going to be the output I get
+[12:14.16] from the text aggregator which is I've
+[12:16.80] mentioned right here. Keep the
+[12:20.20] response to less
+[12:24.20] than,000 characters. Right? This is
+[12:26.72] important because Gemini often gives you
+[12:29.04] a very long reply which you do not
+[12:30.72] really want. So now we're going to go
+[12:32.40] ahead and click on save. I think that
+[12:35.76] looks good. And let's just, you know,
+[12:38.88] test it out once and let's wait for a
+[12:41.04] message. So I'll go ahead into this
+[12:42.88] particular bot and I'll say let's just
+[12:45.84] say plan my day and it should get a
+[12:49.92] response which I got right here and then
+[12:52.40] it gave us an error in Google calendar.
+[12:54.48] Let's have a look at this. So it says um
+[12:57.04] invalid date and parameter time max.
+[12:59.92] Okay, we need to fix this right now. We
+[13:02.16] can fix it by by writing this and then
+[13:04.00] we can click on save. And now let's try
+[13:06.40] to save this one. And let's try to run
+[13:08.40] this once again.
+[13:11.04] Let me again say plan my day please. You
+[13:14.96] can write anything as long as it has
+[13:16.64] plan my day in it. It should work. So as
+[13:19.36] you can see it's going to go ahead and
+[13:21.36] go through the router. It has plan my
+[13:24.32] day text. So it went through the tools
+[13:26.72] and we got the response in Gemini AI
+[13:30.72] which is now if you go in the output you
+[13:34.40] get the result. So you get this as the
+[13:37.32] entire day plan right? So this is what
+[13:39.92] we basically have. Now we need to
+[13:41.92] receive this as well. So we'll go on to
+[13:44.68] Telegram and then we'll go on to send a
+[13:47.68] message or reply. And right here we can
+[13:50.56] basically just go on to our particular
+[13:52.88] bot. You can click on the chat ID which
+[13:55.84] we can derive right from our telegram
+[13:57.92] message. So whoever sent us this message
+[14:00.80] will have a chat ID. So I'll go on to
+[14:03.12] chat and I'll just take this ID and drop
+[14:05.60] drag and drop it in the chat ID section.
+[14:08.48] And that should be good to go. And then
+[14:11.04] we have the text section which is
+[14:14.48] basically going to be the response from
+[14:16.56] the Google Gemini AI. So I'll go ahead
+[14:19.12] and grab this result and paste it right
+[14:22.12] here. And everything else should just be
+[14:25.84] okay. And once we save this, we can now
+[14:28.24] go ahead and run this automation. Now,
+[14:31.36] if I again go here and say, "Plan my
+[14:35.32] day," it should get back to
+[14:37.88] me with a reply. So, let's go back here.
+[14:41.52] And this is my one simple message. It's
+[14:44.88] going to help me plan my day in less
+[14:46.72] than a,000 characters. Very simple to
+[14:49.20] set up. Doesn't take a lot of time. And
+[14:51.68] now you have one scenario ready to go.
+[14:54.08] How cool is that? If that sounds
+[14:56.64] exciting, if you've already built this
+[14:58.40] to this point, hit the like button. Let
+[15:00.56] me know also in the comment section if
+[15:01.76] you have any questions about what I'm
+[15:03.68] doing right now. But this is the router.
+[15:05.60] We can also set one more condition. So
+[15:07.36] we can say it set up a filter and we can
+[15:09.76] ask it
+[15:12.20] um any other query. So if it has any
+[15:16.72] other question if you're asking um the
+[15:20.24] condition is going to be from the
+[15:23.72] message that we get. So the text and
+[15:30.60] contains does not contain actually. So
+[15:33.20] does not contain plan my day. So if you
+[15:36.64] do not have this as a message and we can
+[15:39.52] just click on save. So if you don't say
+[15:42.08] plan my day in your message then any
+[15:44.72] other query will pass through this other
+[15:46.88] condition. So we can again attach it to
+[15:48.80] a Gemini AI which will be to create a
+[15:51.96] completion. We can again hook it up with
+[15:55.52] a 2.0
+[15:57.32] flash message is role is user parts
+[16:01.68] message type is text and the text is
+[16:04.16] going to be the message we got as the
+[16:08.16] question. So we can basically say that
+[16:10.00] you are a smart concise AI assistant.
+[16:12.24] Answer the following question clearly
+[16:14.16] and helpfully. And then I can basically
+[16:16.64] paste in the question which is the
+[16:18.64] response I get from the Gemini AI if I
+[16:23.20] can see
+[16:24.28] that. Um so that that's going to be from
+[16:26.80] the message itself. So that is going to
+[16:28.48] be text. So I'll paste the text right
+[16:31.00] here and I can now save this as it is.
+[16:36.92] Let's let's try running this right now
+[16:39.28] and seeing what happens. So I'm going to
+[16:41.28] ask a different question this time. I'll
+[16:42.88] say why is the sky blue and it should
+[16:47.52] get back to me with a message from
+[16:49.28] Gemini itself. Let's wait and
+[16:52.28] watch. Does it work or does it not
+[16:58.20] work? Okay, I don't think this works.
+[17:00.80] Let's see. Let's see what's happening.
+[17:02.32] Okay, it does work. Okay, we don't have
+[17:03.84] the message um send message feature
+[17:06.48] right here. So, let's quickly add that
+[17:08.16] that. So, we'll go send a message. Um,
+[17:11.76] the bot is this one. The chat ID is from
+[17:15.44] the bot itself, which is right
+[17:19.16] here. And the text is going to be the
+[17:21.76] response from the Gemini AI. And that is
+[17:25.92] all that we need. Let me try saving this
+[17:28.72] once again. And let's try running this.
+[17:31.36] And let me ask a different question.
+[17:34.36] Um, how tall is Empire
+[17:38.60] State Building? Let's see. Should get
+[17:42.08] back to me with the answer. The Empire
+[17:43.84] State Building is this feet tall to the
+[17:46.08] tip of its lightning rod. And there you
+[17:47.84] go. You have a ready to go scenario
+[17:50.56] which is going to help you plan your day
+[17:52.80] or it can also help you answer any of
+[17:54.64] the questions that you might have built
+[17:56.48] right in front of you without writing a
+[17:58.24] single line of code. How cool is that?
+[18:00.08] So, this is one scenario. Let's build
+[18:01.52] one more scenario so that our agent can
+[18:03.36] actually have more tools to use. So we
+[18:05.68] would basically save this once
+[18:08.60] again. We can call this
+[18:12.68] um scenario one for our agent. Let's
+[18:17.20] make one more scenario right here. So
+[18:18.48] I'll quickly go ahead and show you how
+[18:20.24] to do it. Let's try to make a scenario
+[18:22.88] which will help us summarize our emails.
+[18:24.64] So we would first of all need to get
+[18:26.80] access to Gmail watch emails. So this is
+[18:30.40] going to get access to all of your
+[18:32.32] emails. Now you need to login into this
+[18:35.52] to give you access. So you basically can
+[18:37.44] click on add and sign in with your
+[18:39.12] Google account. Give it access to your
+[18:40.72] email. I have already given it access to
+[18:42.48] a email. I'll keep the folder as all
+[18:45.52] mail. Let's see if that works. All mail
+[18:48.56] is good to go. And everything else looks
+[18:52.00] nice. Let's put the maximum number of
+[18:54.00] results to five. Mark emails as read.
+[18:57.44] Show advanced settings.
+[19:00.80] And you basically now have an ability to
+[19:03.44] read all the emails, right? So let's
+[19:06.32] just click on save. The criteria is
+[19:08.72] going to be all emails. And now we can
+[19:11.28] save the emails. Emails after a specific
+[19:14.16] date. All
+[19:17.64] emails. Date. Let's just put the date to
+[19:20.64] be I don't know
+[19:23.00] 20 25th. Let's go with that.
+[19:26.64] And now we have this one module which
+[19:29.52] will check for all the emails. Let's say
+[19:31.44] I want to summarize these emails, right?
+[19:33.28] So what do we do about that? We can
+[19:36.72] basically add a module which is going to
+[19:39.68] look at all of these emails. So we'll
+[19:41.68] have a
+[19:43.40] Gemini. It will help us summarize and
+[19:46.88] create a response. Again the same thing,
+[19:49.04] create a simple connection. Add your API
+[19:50.96] key. We'll add 2.0 flash once again
+[19:54.64] because it's fast. It's simple. It is
+[19:57.20] reliable. We'll add the role to be user
+[19:59.84] paths to be message type to be text and
+[20:02.40] then the actual text itself. Now, this
+[20:04.80] is where we need to enter uh what do we
+[20:07.44] want this module to do. So, we wanted to
+[20:10.16] look at all of our emails, summarize
+[20:12.40] those emails, and then get back to me
+[20:15.04] with a solid reply and give me
+[20:18.08] suggestions on how to reply to those
+[20:19.36] emails as well. Now what we can also do
+[20:21.12] is instead of going through this one by
+[20:24.12] one we can simply just you know delete
+[20:26.80] this module attach it to a text
+[20:28.24] aggregator. Gmail watch emails text
+[20:30.48] would be the reply we get subject and
+[20:34.56] the
+[20:36.60] text sent
+[20:39.16] by
+[20:40.76] the sender
+[20:44.36] name from the email address.
+[20:49.64] Yeah. And then we can
+[20:52.36] basically have a row separator. So we'll
+[20:55.12] have a new row. And we can now save all
+[20:57.36] of this. And now we can attach our final
+[21:00.64] module to create a
+[21:03.80] completion. And this should be better.
+[21:07.76] So let's just go with 2.0 flash. Um I'll
+[21:11.28] go with role to be user paths to be text
+[21:14.72] and the text itself. So you are an email
+[21:20.36] manager. Your role is to
+[21:23.96] look at the below emails, summarize them
+[21:28.96] and
+[21:30.04] suggest a reply to each,
+[21:34.12] a twoline reply to each for
+[21:38.28] example emails. And let's just you know
+[21:42.48] write uh the text that we get from the
+[21:45.12] text aggregator. Then we can click on
+[21:47.32] save. And then what we can do is we can
+[21:50.40] take this response and we can send it as
+[21:52.32] a email as well. So let's just go to
+[21:54.40] Gmail and send an email. Let's go with
+[21:57.36] that. Now again you need to add a
+[21:59.76] connection if you have not already. And
+[22:01.52] this is where we can set where do you
+[22:03.76] want to send this email. Now I can send
+[22:06.72] it to my work email which is this one
+[22:10.56] right here. And the subject could
+[22:13.68] basically be your email
+[22:18.60] report. And we can also have the content
+[22:23.28] which would actually be the result
+[22:25.64] itself. That's all you need. Um we can
+[22:28.64] quickly just click on
+[22:31.80] save. And this is our simple scenario
+[22:35.68] which is going to give us check all of
+[22:38.40] our emails, take them together, give it
+[22:41.60] to Gemini to summarize it to give us a
+[22:43.84] reply and then send it back to another
+[22:46.56] email of ours. So let me give you an
+[22:48.48] example of what that would look like. So
+[22:50.08] if I run this once, I basically have to
+[22:51.84] send an email to hey and be like uh sup
+[22:55.68] and I can get back by saying
+[22:58.68] um what do you think is the deadline for
+[23:03.28] the project we are doing with Google and
+[23:07.68] then we can basically just send this
+[23:10.20] email and let's see what happens. So it
+[23:12.72] got one email, it sent it to the text
+[23:14.80] aggregator, it sent it to the summarizer
+[23:17.68] and then send that as an email itself.
+[23:20.80] So this is working flawlessly. We can to
+[23:23.96] testify to see if it works. We can
+[23:26.16] always just go to our actual email and
+[23:29.04] get this as a report. Okay, here's a
+[23:32.08] here's a summary and the suggested email
+[23:34.08] for the each email from Don Pivot
+[23:37.84] partners. We got some email and it is
+[23:40.40] giving us this huge chunk of text. Now
+[23:43.52] we can always make it more structured
+[23:46.24] but this is just an example of how the
+[23:48.56] summarizer and replier would actually
+[23:50.48] work. So this is basically how it works.
+[23:53.04] We've built two scenarios now. Now all
+[23:55.12] we have to do is let's just say uh
+[23:58.12] scenario two for our agent and we can
+[24:01.68] basically just save this. And once we do
+[24:04.32] that, let's go
+[24:05.88] back to the main agents and we can turn
+[24:09.28] this on as well. And once we do that, if
+[24:13.36] you go
+[24:14.52] back, you basically should be having two
+[24:18.08] scenarios which are working for us and
+[24:20.56] we can add that to our agent and then
+[24:22.16] our agent would be good to go. Now you
+[24:23.68] can change the schedule to on demand and
+[24:26.96] then save it right here. And then this
+[24:29.36] would be available as a scenario to add
+[24:32.16] in our agent as well. So now if we go
+[24:34.32] into our agent, we have our system
+[24:38.08] prompt which I already showed you. This
+[24:39.84] is the system prompt. But then we also
+[24:41.52] have access to tools. We click on this.
+[24:44.00] You can basically add scenario one and
+[24:46.80] scenario two. So we'll click on this and
+[24:50.00] then we can add both of them into our
+[24:53.20] agent like so. Then we can just click on
+[24:57.12] save and now this agent is good to go.
+[25:01.12] There are so many apps you can actually
+[25:02.80] be using but I'm just giving you a very
+[25:05.12] simple example of using Telegram bot in
+[25:07.60] which I can basically watch for
+[25:12.12] updates and we can again you know add
+[25:16.28] our bot. Click on
+[25:19.56] save. We can save this and now we can
+[25:23.20] ask any question to this current bot
+[25:25.04] that we have because after this we can
+[25:28.80] search agents and you have the make AI
+[25:31.84] agent right here. The option is to run
+[25:34.40] an agent and now we can select the agent
+[25:37.28] that we want to run. For our case we'll
+[25:39.76] be running the personal assistant agent
+[25:42.00] which has access to both of these
+[25:43.76] scenarios right here. And now I can
+[25:46.24] basically just say save. And there you
+[25:49.20] go. This is what an agent looks like. I
+[25:51.68] can now run this. And that is literally
+[25:54.00] all you need to create an AI agent from
+[25:56.16] scratch. This is what it looks like. You
+[25:58.00] can simply message it anything you want
+[25:59.84] right here. You can ask it any
+[26:01.36] questions. You can ask it to check your
+[26:03.36] your status for the day, your plan for
+[26:05.60] the day. You can ask it to summarize all
+[26:07.68] of your emails, reply to your emails,
+[26:09.36] and it will do that effortlessly right
+[26:12.16] using make.com. This is how you create
+[26:15.52] make agents from scratch without writing
+[26:18.08] a single line of code. If you want to
+[26:20.00] learn more about make.com and how to
+[26:22.16] build agents with it, check out my
+[26:24.00] previous video I made on how to make
+[26:25.84] scenarios using make.com if you want to
+[26:28.32] understand the basics of that. But this
+[26:30.40] is an incredibly powerful platform which
+[26:32.48] can help you create any AI automation
+[26:35.52] and now AI agents as well. Go have a
+[26:38.72] look at that. Thanks a lot for watching
+[26:40.24] this video till the very end. I will see
+[26:41.60] you all in the next video. Hit the like
+[26:43.84] button and subscribe. And thanks to
+[26:45.28] make.com for sponsoring this video. I'll
+[26:47.44] see you in the next one. Bye-bye.

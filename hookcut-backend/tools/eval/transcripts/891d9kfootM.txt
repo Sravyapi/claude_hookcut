@@ -1,0 +1,932 @@
+[0:00.88] Hey there everyone.
+[0:01.74] My name is Hitesh and welcome back to the series where
+[0:04.13] we are trying to build a SaaS product with the help
+[0:06.96] of AI, or rather AI powered SaaS with the Cloudnary.
+[0:11.47] So in this video we're going to be
+[0:12.61] exploring about the image upload and the video
+[0:15.45] upload via the next JS to the cloudinary.
+[0:18.62] And for this we'll be dissecting the Cloudnari's
+[0:21.83] documentation, all the resources that they have.
+[0:24.36] And we'll be exploring the platform as well
+[0:26.29] because you'll be using this as a saasden.
+[0:28.46] So definitely you need to be a familiar, you need to
+[0:30.96] have a familiarization with the platform itself and all the docs
+[0:34.04] and where you can find the stuff and all that.
+[0:36.04] So step one is to explore the documentation and then
+[0:39.04] I'll walk you through the easy way of uploading the
+[0:41.12] things, which is just copy paste the code, and I'll
+[0:42.92] walk you through with some of the other advanced ways.
+[0:45.51] Maybe you want to upload more
+[0:46.53] stuff, not just images and video.
+[0:48.26] So it's going to be full packed video
+[0:50.30] tutorial that only video tutorial need to watch
+[0:52.72] to upload anything on the cloudy.
+[0:54.55] Yes, that's what we're going to be handling up.
+[0:56.56] So let me go ahead and by the way,
+[0:58.69] in case you haven't joined yet, our discord.
+[1:00.65] So go ahead and join our discord.
+[1:03.06] It's available there and we help you
+[1:04.88] a lot in building the stuff.
+[1:06.35] The entire community is there, over 50,000 developers anyways,
+[1:10.58] so let me go ahead and share this.
+[1:11.95] So this is my cloudnary account
+[1:13.52] and yes, good stats there.
+[1:15.11] We actually consume it a lot, by the way.
+[1:17.52] So what we're going to do is just walk you
+[1:19.56] through that, how usually it happens and how it works.
+[1:22.18] So I just search for upload images to Cloudnary
+[1:25.36] and let's just even remove the next J's.
+[1:27.02] Let's just go ahead and search.
+[1:27.99] So this is the first documentation that you
+[1:30.04] interact and this is how usually you search
+[1:32.43] for the things and go for it.
+[1:34.00] It gives you that if you want to upload
+[1:35.67] and Cloudinary's upload capability, you can upload media assets
+[1:38.82] in bulk with a variety of options.
+[1:40.93] That's exactly what we want to do.
+[1:42.55] Now here's a quick example that Cloudnary gives you.
+[1:44.88] The example were to upload hat Jpeg.
+[1:47.25] So this is the node j's example.
+[1:49.10] And you might be wondering, I want
+[1:50.74] to go ahead and use next js.
+[1:52.28] Is node js going to be useful for me or something else?
+[1:55.46] I'll walk you through with that.
+[1:56.87] So you can see we have to install a package cloud
+[1:58.97] nari and it has a v two and which gives you
+[2:01.38] an uploader which has methods like upload and then which can
+[2:05.14] upload the file and use the file name.
+[2:07.58] Or you can just create your own file names and can
+[2:10.03] give you result back and you can kind of dump this
+[2:13.30] result on the console and see more what's happening now, other
+[2:17.08] things you can set the public ids and all of that.
+[2:19.51] We would prefer to get the public id from the
+[2:21.66] cloud narrate cell because it's a nicely randomly generated one.
+[2:25.16] We can also go ahead and request for quality analysis and
+[2:27.82] what more, there's so much more that you can do.
+[2:30.71] So familiarizing yourself with the documentation
+[2:33.03] is the most important stuff.
+[2:34.72] If I go ahead and explore it more, there's
+[2:36.61] nice video tutorial and stuff going on with that.
+[2:39.04] So that's also decent.
+[2:41.37] And we can see this is how it goes.
+[2:43.08] But again, you might not be very much in control
+[2:45.71] that hey, will I be able to do it?
+[2:47.32] Not and all of that.
+[2:48.35] Don't worry, I'll still dive deep
+[2:50.46] into the documentation part as well.
+[2:52.59] So here we can see we have some of the upload large
+[2:55.57] and this is what they say that hey, you can use an
+[2:57.99] upload large and upload the videos like this as well.
+[3:01.28] So cloudready actually provides you a variety
+[3:03.41] of ways of uploading the things, doing
+[3:05.18] the things as much as you want.
+[3:06.51] So image upload is just an upload.
+[3:08.29] But there is also an upload large which is aware that
+[3:11.57] hey, the video might take some time and it can, hey,
+[3:15.13] you can set up the chunk size as well, like what
+[3:17.13] you are allowing, what you are not allowing.
+[3:18.68] So a lot of options are available here.
+[3:21.17] A lot that you can do.
+[3:22.51] Maybe you are interested in finding more about it.
+[3:24.85] But before I show you more of the stuff, let
+[3:27.09] me go ahead and walk you through with how to
+[3:28.72] read these documentation for further resource and research purpose.
+[3:32.29] So if you go at the very top of the cloud, there
+[3:34.21] is a getting started guide, which is okay, this is where you
+[3:37.08] might want to spend more of the time in the guides.
+[3:39.16] Reference and SDKs guides gives you the raw
+[3:42.23] guide idea that I want to upload videos.
+[3:44.57] The best practices.
+[3:45.54] What are the player practices?
+[3:46.72] So these are all guides.
+[3:48.12] They actually literally tell you what to
+[3:50.21] do and what not to do. That's best.
+[3:52.24] Another one is references.
+[3:53.58] References is I know what I'm doing, just
+[3:56.05] tell me how exactly to do it.
+[3:57.75] For example, I want the upload API.
+[3:59.47] What is this and how it works.
+[4:01.13] So give me a reference point of it and then
+[4:03.52] it gives you the more advanced kind of a documentation
+[4:07.33] that hey, this is how the cloudnary works.
+[4:09.56] This is your cloud name and this is
+[4:10.93] the action that you need to go.
+[4:12.15] Example is there and this is how you'll
+[4:13.65] be able to upload on the post.
+[4:15.32] And this will also give you more
+[4:16.72] idea about hey, what is this upload?
+[4:18.27] Looks like you can go ahead and say it's
+[4:19.72] assigned upload syntax, an optional parameter and whatnot.
+[4:22.36] You can go quite in depth in that.
+[4:24.59] Another part is the SDK where you can simply find that.
+[4:27.97] I want to know more about what cloud navy can
+[4:29.93] do in the backend SDK of python or pHp.
+[4:32.37] In our case it's going to be node jsdeV.
+[4:34.22] So you can go ahead and find more about
+[4:35.88] what is the true power of the node SDK.
+[4:39.18] So for example, if I can go ahead and look for
+[4:41.09] the cloudinary image, it says hey, this is going to be
+[4:43.77] a front face png, I want to transform it.
+[4:47.35] So transformation, it gives you an array
+[4:49.46] like parameter that you can provide and
+[4:51.54] in that you can see the gravity.
+[4:53.05] That means my focus is going to be on the face.
+[4:55.82] I want this height to be cropped as thumbnail, I want
+[4:58.77] the radius to be 20 circular images, I want the effect
+[5:01.34] to be sepiade and I want overlay as cloudnary icon.
+[5:05.31] You can have your own icon by the
+[5:06.55] way, effect is going to be brightness, opacity.
+[5:08.87] So a lot of the thing you can do on
+[5:11.27] the go and you can build your own filters, people
+[5:14.08] just click a photo, tap on the things and you
+[5:16.31] just change it and transform it just with one URL.
+[5:19.60] And this is how it looks like.
+[5:21.10] Yeah, nice and easy way to give the watermark
+[5:23.23] damage or somebody buys your product or an app,
+[5:25.76] then you remove the watermark and hey, give them
+[5:27.71] a sepia look or something like that.
+[5:29.47] So possibilities are a lot here.
+[5:31.50] And just like you notice that how
+[5:33.06] you can actually go ahead and research
+[5:35.23] about their documentation and whatnot.
+[5:36.93] But one thing is for sure,
+[5:37.96] we need to install this cloudinary.
+[5:39.66] We will also need that.
+[5:40.86] So let's go ahead and copy this.
+[5:42.60] And that's exactly what we are going to
+[5:44.49] use in this whole tutorial as well.
+[5:47.98] But I'll walk you through a little bit more
+[5:49.52] than that and some good practices and probably easier
+[5:51.81] way of doing the things as well.
+[5:53.46] I'll close this one and I'll just go
+[5:55.82] ahead and paste this NPM, install cloudinary and
+[5:58.22] we won't be using Cloudinary v two. V two.
+[5:59.94] We'll extract the v two from the
+[6:01.86] cloudinary and we'll be using that.
+[6:03.18] So anyways, it is all up here.
+[6:04.95] All right, now how do we upload the image?
+[6:07.69] Now one thing is really nice about this is
+[6:09.90] if I go again into the guide and especially
+[6:11.94] the upload assets, you're going to notice upload assets.
+[6:15.34] Uploading client side, uploading, uploading preset.
+[6:18.09] There's documentation for
+[6:19.80] transform image transformation.
+[6:21.27] We'll definitely go into that.
+[6:22.57] But let's see how do we upload asset?
+[6:24.56] If I go ahead and simply say upload assets, this
+[6:27.17] is what I get only, which is v two uploader.
+[6:30.32] Do I want to use uploader?
+[6:32.31] Technically, yes, I can go ahead and use it, but
+[6:35.09] there are a lot more things after this uploader.
+[6:38.01] So go ahead and use the uploader.
+[6:39.67] And then what should I do after that?
+[6:41.79] There is just an upload, but there are more methods.
+[6:44.77] And I'll show you one interesting
+[6:46.53] method apart from this as well.
+[6:48.62] One more thing I would like to mention about this is,
+[6:51.44] and the way I'm covering it in depth so that maybe
+[6:53.68] whatever you want to do, you have enough of knowledge and
+[6:56.54] the documentation readability so that you can do it.
+[6:59.30] Now what you're going to notice is if you
+[7:01.14] go ahead and look for the media explorer, I'll
+[7:03.26] show you some of the images that we use.
+[7:05.16] Whatever the action you perform in the cloudnary dashboard, it actually
+[7:08.76] comes up as an SDK and you can just click for
+[7:11.29] it and see that, hey, how the SDK behaves.
+[7:13.48] For example, do I have anything that I
+[7:15.94] can just go ahead and remove it samples?
+[7:19.36] Yes, I can go ahead and probably. Okay. Okay.
+[7:23.63] The SDK code for actions
+[7:24.91] you execute within display here.
+[7:26.24] So let me go ahead and try this.
+[7:27.70] Probably, yeah, so I can just select
+[7:29.78] it and I can delete this.
+[7:32.18] I would love to delete this.
+[7:33.66] And what you will notice that every action that you
+[7:36.36] perform in the cloud, nary, it actually tells you that
+[7:38.55] what just happened, you just called v two API and
+[7:41.92] you've used delete resources and then you have provided the
+[7:45.05] name of this probably public id.
+[7:47.37] And then this was a type upload resource
+[7:49.28] was image and then console logging as well.
+[7:51.48] So everything that you do can be copied and you
+[7:54.01] can just copy and paste this code as well.
+[7:55.72] Similarly, same thing happens when you try
+[7:57.20] to upload the things as well.
+[7:58.98] And then there is a transformation center as well.
+[8:01.09] Maybe you want to transform the image.
+[8:02.43] There is a media Management.
+[8:03.75] Everything that you want to do, you can
+[8:05.68] try out this rounded corner, you can try
+[8:07.90] out by replacing the background or something.
+[8:09.82] You can just click on it and you'll see what
+[8:12.03] it happens and how it happens all up here.
+[8:15.08] That is the nice one.
+[8:16.46] And you can do it URL based, you
+[8:18.52] can do it node based, however you like.
+[8:20.86] It's up to you how you
+[8:21.83] want to perform these operations.
+[8:23.68] And you can see in the real world that hey, this
+[8:25.58] was the image, this is the before, this is the after.
+[8:27.73] So this is original, this is transformed.
+[8:29.94] There's so much that you can do.
+[8:31.80] Anyways, now enough of the talking.
+[8:34.87] Now let's see how we can upload the
+[8:36.26] image and create a URL for this.
+[8:38.16] First of all we need couple of stuff from it.
+[8:41.28] So probably I'll go into the getting started dashboard.
+[8:44.94] So here it is.
+[8:46.24] After login it comes NPM, install, cloudinary.
+[8:48.48] We have done that.
+[8:49.50] Now it says upload, optimize and transform.
+[8:51.70] So yeah, a lot of stuff is given up here and
+[8:55.33] we will be modifying it a little bit, but I think
+[8:58.50] we can keep some of the stuff as in here.
+[9:01.18] Now they actually don't send you the API key.
+[9:03.31] We'll be checking it a little bit different,
+[9:04.86] but I'm going to just copy this to
+[9:06.80] show you that how we can modify it.
+[9:09.34] And this is what mostly you will be doing.
+[9:11.14] So let's go ahead and try image upload first.
+[9:14.17] That makes sense.
+[9:15.23] So API and we're going to call
+[9:16.88] this one as new folder of course.
+[9:19.59] And this is going to be image upload.
+[9:21.66] Image upload.
+[9:25.56] Inside this we're going to be creating a new file.
+[9:28.26] So let me go ahead and close
+[9:29.94] this new file route ts using typescript.
+[9:36.94] Let's just copy and paste all the
+[9:38.39] things that was given to me.
+[9:39.48] Of course I'm going to go ahead and modify
+[9:41.43] this and I'm going to read it, rewrite it.
+[9:44.86] I didn't knew that they are using a sync function.
+[9:47.35] I'm not going to be using a sink function even
+[9:49.77] a little bit, but I'll keep this one and I'll
+[9:52.30] modify this and let's go ahead and write.
+[9:54.23] Of course, whatever I'm doing, I'm going
+[9:55.56] to send the request and response.
+[9:56.91] So we're going to go ahead and say
+[9:58.05] let's just go ahead and grab a the
+[10:00.15] next, not like that, definitely next request.
+[10:05.88] And we'll be also having the next response.
+[10:12.24] Next response.
+[10:14.52] I just need next.
+[10:16.92] Oh, I don't need API request, I need it from server.
+[10:22.29] Hopefully now better suggestion will come next.
+[10:28.11] Yeah, there we go.
+[10:29.06] Next request and we also have next response.
+[10:34.89] All right, so this is our cloud navy. Now.
+[10:37.19] Also, one more thing we are going to need, and
+[10:39.22] that is going to be needed by the clerk.
+[10:41.37] So we want to check.
+[10:42.38] Only the authenticated users are able
+[10:44.39] to check, although we have placed
+[10:46.21] enough of restrictions on our middleware.
+[10:48.63] But having an additional check never hurts anyone.
+[10:51.47] So I'm going to go ahead and say I want
+[10:53.41] to use auth, and this auth is going to be
+[10:58.08] going to come from the clerk next year.
+[10:59.87] So now apart from this, we obviously
+[11:02.00] need some of the cloud nary configuration.
+[11:03.69] So let's just go ahead and since we already have
+[11:05.57] this cloudinary as just like this, which is okay, and
+[11:09.14] we're going to go ahead and cut this out because
+[11:12.11] I want to re modify this piece of code and
+[11:15.19] we'll have it up here in the space.
+[11:17.11] Now, obviously we are not going
+[11:18.11] to be placing it like this.
+[11:19.60] This needs to be changed.
+[11:20.69] So I'm going to go ahead and place them because
+[11:22.86] you obviously have no idea about my API circumental.
+[11:25.30] You go ahead and grab your own.
+[11:26.94] I'll be just changing them up here.
+[11:28.62] So let me go ahead and remove this.
+[11:31.21] I'll remove this and I'll remove this.
+[11:35.27] The better way of doing the thing
+[11:37.28] is going to be like this.
+[11:39.43] And then just go ahead and say process dot env.
+[11:44.57] And then we are going to go ahead and say
+[11:47.77] this one is next public cloudinary cloud name, and the
+[11:57.83] next one is going to be cloudinary API key.
+[12:09.67] And this one is cloudinary API secret.
+[12:21.27] The way this one is written as a cloudinary
+[12:23.56] public because this is going to be used by
+[12:25.56] the client side as well, or could be used.
+[12:28.01] This one needs to be hundred percent secure.
+[12:30.05] So we are not even prefixing
+[12:31.61] it with the cloud next public.
+[12:33.69] This is 101 basics of it.
+[12:35.54] All right, so this is part is done.
+[12:37.01] Now, since we are using typescript, we have
+[12:38.77] to actually add a little bit more.
+[12:41.36] Not required.
+[12:42.69] But since we're using typescript, better to use
+[12:44.91] that one, that one is designing an interface.
+[12:47.90] This is purely just because
+[12:49.53] we are using typescript here.
+[12:51.75] So we're going to say that we are going to use
+[12:53.97] a cloud and this is going to be uploaded result, and
+[12:59.79] you have to definitely study the result a little bit more
+[13:03.42] to finally understand that what it actually gives you, one thing
+[13:06.58] it always gives you back no matter what you upload is
+[13:09.12] public id, which is going to be of type string.
+[13:12.42] And apart from that it can give you more stuff as well.
+[13:15.12] So a lot of stuff comes with it.
+[13:17.25] I'm going to just call this one as key which is
+[13:19.41] going to be a string and rest of the stuff can
+[13:22.61] come up in any this is not really the idealistic way,
+[13:25.90] but we are much more worried just about the public id.
+[13:28.72] So you can go ahead and write your own stuff now
+[13:30.97] apart from this, I don't want to use this whole method.
+[13:34.25] I'm going to write my own because I
+[13:35.78] think that's better for me at least.
+[13:38.15] We're going to go ahead and say a sink export a sync.
+[13:41.27] This is going to be a
+[13:42.01] function post request, next request.
+[13:44.25] There we go.
+[13:45.37] Let's go ahead and add it like this.
+[13:47.23] The first step I want to do is verify
+[13:49.77] whether the user is logged in or not.
+[13:51.91] So I can just go ahead and easily do that user
+[13:54.84] id and I can grab my user id with auth. There we go.
+[14:01.18] This is the auth.
+[14:02.46] Now first I'll check whether there is no auth.
+[14:04.47] I'm going to go ahead and return it like this.
+[14:06.45] If there is no user id I'm going
+[14:11.57] to go ahead and return a next response. Suggest me.
+[14:16.23] Come on Jason.
+[14:17.52] Error unauthorized 401 pretty good enough.
+[14:20.52] Now what do I want to do next?
+[14:22.70] The next step is that since this is an
+[14:25.03] API route, that means I'm writing the backend.
+[14:27.02] First I'm going to go ahead and grab form data and from
+[14:30.95] the form data I will pick up a file and then I'll
+[14:33.80] just convert into array buffer and we'll try to use it.
+[14:37.49] Now I'll show you a couple of ways of how to do it.
+[14:39.77] There are a couple of ways how you can do it.
+[14:41.46] One easy way is just directly use the upload dot
+[14:44.25] uploader dot upload which we just saw in here.
+[14:46.95] But I'm showing you a foolproof
+[14:48.36] way of doing the things.
+[14:49.74] You can upload anything with that.
+[14:51.18] One easy way is you can just grab the file.
+[14:53.96] So this is what you do and
+[14:55.22] you just go ahead and upload.
+[14:56.47] And here you just take the file from the,
+[14:58.26] from data and just upload it up here.
+[14:59.80] This is all you have to do.
+[15:00.86] Send this and it will upload that.
+[15:02.73] You can also optionally mention the public id
+[15:04.85] or cloudready will do on its own magic.
+[15:07.35] But what I'm about to show is actually a
+[15:09.21] foolproof way and you can upload anything with it.
+[15:11.56] So I think that would be much more useful for
+[15:13.40] you again, from the perspective of building this SAS.
+[15:16.47] So first of all, let's go
+[15:17.79] ahead and say, hey, try catch.
+[15:19.96] That would be good.
+[15:21.28] So in the try catch part, let's go
+[15:23.28] ahead and first grab a form data.
+[15:25.25] So that one is going to come up await.
+[15:27.49] That is going to be request form data.
+[15:29.97] There we go.
+[15:31.01] Let's hold this into a variable.
+[15:32.48] Call this one as form data.
+[15:35.30] Just like that.
+[15:36.37] Once we have this form data, then we would
+[15:38.29] like to extract a file out of it.
+[15:40.31] So let's go ahead and say I'll hold
+[15:42.44] that into a variable file and form data.
+[15:46.67] Form.
+[15:48.11] No suggestions.
+[15:49.13] Yes, suggestions. Form data.
+[15:51.05] We'll just get a file.
+[15:53.00] We're going to call this one as file.
+[15:54.40] Feel free to call it whatever you like based
+[15:56.04] on the the front end that you are designing.
+[15:58.41] So let's just say we have a file.
+[15:59.97] We have to actually go ahead and typecast is as a file.
+[16:04.44] Otherwise let's just go ahead and
+[16:06.10] call this one as null.
+[16:07.22] So there are chances that it might be a file.
+[16:09.48] It might be null as well.
+[16:11.84] We don't know for sure.
+[16:13.18] Let's verify this that if there is no
+[16:15.10] file, let's go ahead and throw some errors.
+[16:17.52] So let's go ahead and say if there is
+[16:21.85] no file, then let's just go ahead and say
+[16:28.10] we're going to go ahead and return.
+[16:33.62] Next response if it can suggest me file not found.
+[16:37.41] There we go. Nice and easy.
+[16:39.07] So so far the check is done.
+[16:40.40] Now if the file is present.
+[16:42.28] Now file has a property that we can use known
+[16:45.08] as array buffer and that will give you bytes and
+[16:47.60] from that byte you can create the buffer.
+[16:49.15] There are two steps and you can do this for any file.
+[16:51.99] And then it's a stream of buffer that you
+[16:54.60] can actually transfer it as a stream bytes.
+[16:57.04] Again, let me give you the steps again one by one.
+[16:59.28] I think that would be better.
+[17:00.57] So the step one is let's just
+[17:01.96] go ahead and use await for it.
+[17:03.46] The file has a lot of properties that you can use.
+[17:05.67] You can see array buffer last modified and all of this.
+[17:08.53] This is the way how you actually
+[17:10.52] go ahead and create this array buffer.
+[17:12.43] And you can just go ahead and click on it and see that.
+[17:15.40] Hey, how this array buffer use, it's a promise.
+[17:17.88] You can read more about it on MD and Docs.
+[17:20.15] This is like treating any file like a file,
+[17:22.81] not just as an image or a video.
+[17:24.20] It's just a file and it has a blob.
+[17:26.53] That's what it is.
+[17:27.57] Now this is going to go ahead and we
+[17:29.26] are going to refer this one as bytes.
+[17:31.80] There we go.
+[17:32.85] Now this is not all done.
+[17:33.95] There is a three step process of it.
+[17:35.45] This is one step process of
+[17:36.84] converting it as array buffer.
+[17:39.44] But you cannot upload an array buffer, so you have to
+[17:41.78] actually go ahead and create a buffer out of it.
+[17:44.44] And this is always kind of
+[17:45.86] a memorized step for everyone.
+[17:47.21] So we're going to go ahead and use a buffer
+[17:48.83] buffer, and this one will be created from the bytes.
+[17:51.90] That's it.
+[17:52.72] As long as you remember these two steps.
+[17:54.71] That means now you can upload anything anywhere.
+[17:57.75] Yes, that's the magic part of it.
+[17:59.74] All right, apart from this.
+[18:01.29] Now that's nothing new.
+[18:02.66] Now we can just use the cloudinary stuff and
+[18:05.16] cloudnary magic and just throw it on the cloud. Nutty.
+[18:07.95] Let's just go ahead and say await.
+[18:09.64] And we're going to create a new promise.
+[18:13.94] New promise promise, just like that.
+[18:15.46] And inside this new promise we can
+[18:17.33] just go ahead and have it.
+[18:18.73] Now, this promise obviously is going to return
+[18:20.69] something what we have already defined that.
+[18:22.73] So this is going to create a cloud nary upload result.
+[18:24.99] This is the type of data I'm expecting back and
+[18:27.64] in here I can just go ahead and use.
+[18:29.86] Just like this classic promise creation,
+[18:33.49] we're going to have a resolve.
+[18:35.64] This is JavaScript 101 resolve reject.
+[18:39.88] And we're going to say what happens on
+[18:41.93] resolve and what happens on the reject.
+[18:43.69] That's what we're going to mention.
+[18:45.20] So this part we're going to use cloud nary.
+[18:48.22] So let's just go ahead and say cloudinary upload.
+[18:50.47] And then we can just go ahead and say uploader.
+[18:53.23] And this is going to say dot upload.
+[18:57.69] Now there is so much upload,
+[18:59.05] chunked upload, all of that.
+[19:00.63] We are going to use upload stream.
+[19:03.22] And this is responsible for uploading
+[19:05.21] any data on the cloud nary.
+[19:06.82] But we can provide some options.
+[19:08.14] Let's just go ahead and do that.
+[19:09.36] One of the common option that you'll be providing,
+[19:11.62] the first one is where to store that.
+[19:13.97] As you can see in the cloudinary, if I go onto
+[19:16.47] my dashboard, not on the dashboard, in the media explorer, we
+[19:20.88] can see so much is going on in this and where
+[19:23.59] to throw the file directly up here or in some folders.
+[19:26.05] This is where you mentioned that.
+[19:27.27] Hey, the first parameter is going to be this folder.
+[19:31.09] Where should I keep it?
+[19:32.12] Let's just go ahead and hard code this.
+[19:33.57] As of now, let's just call this one as next.
+[19:39.59] Cloudy nary image or cloudready uploads.
+[19:45.91] My keyboard is little skewed.
+[19:47.96] All right, there we go. This is the first step.
+[19:50.60] The next step is to see that
+[19:52.60] what happens on the error part.
+[19:54.39] So let's go ahead and do a callback.
+[19:56.99] So next step is obviously first is upload response.
+[20:00.09] The next one is callback.
+[20:01.13] So let's just go ahead and oops.
+[20:04.40] Let's just go ahead and use a callback just like
+[20:06.89] this in which we have the result and error.
+[20:09.10] Let's first handle the error part.
+[20:11.36] If we are going to have
+[20:13.06] the error, then reject this reject.
+[20:18.29] That's our rejection handling and with the error.
+[20:22.52] All right, what else is there in the else part?
+[20:26.13] We can go ahead and say hey, if it is resolved
+[20:30.52] resolve, then just go ahead and throw the response like that.
+[20:34.80] This is extra. There we go.
+[20:37.74] And do we have result? Result.
+[20:40.55] It is there and it's throwing error because it's
+[20:45.26] not of type of cloud nd so I'm pretty
+[20:47.37] sure that it comes up like this.
+[20:48.62] So we're going to go ahead and cast
+[20:50.07] it as like this again, type scripty sting.
+[20:53.04] So this is all what you do just like that.
+[20:55.85] Now once this is all done, that means
+[20:58.01] all this cloudinary upload stream has worked.
+[21:01.04] Then one more thing that you have to do
+[21:02.97] because you are taking this as a buffer.
+[21:05.85] So what we can do is now come up here.
+[21:08.10] Once this is all done, we have to end the buffer.
+[21:10.99] So we're going to go ahead and
+[21:12.01] take this one as upload stream.
+[21:15.27] And actually we haven't stored that into a variable
+[21:17.78] so it doesn't know which one to end.
+[21:19.46] So let's just store that const
+[21:21.83] upload stream just like that.
+[21:27.98] Now it has a reference of it.
+[21:29.76] I can just go ahead and say
+[21:31.81] that upload stream now can end.
+[21:36.78] So let's just go ahead and end it
+[21:38.77] and which one to end the buffer.
+[21:41.83] So this is all good part.
+[21:43.57] And again, I know this is a little bit
+[21:45.97] overwhelming for a lot of people, but hey, this
+[21:47.77] is why you watch tutorials, to learn new things,
+[21:49.66] not just to watch what you already know.
+[21:51.83] And what you already know is this part.
+[21:53.86] Hey, I can do just a quick upload.
+[21:55.61] Yes, you can do that anytime.
+[21:57.16] But this is a foolproof way.
+[21:58.30] And you'll notice that how we can actually
+[22:00.08] reuse this, we'll use exactly same code copy
+[22:03.09] and pasted in the video part as well.
+[22:05.89] That's where you are going to start. See that?
+[22:07.46] Hey, this is really good and nice.
+[22:09.40] Alright, so this part is all done. So await.
+[22:11.37] Promise is all done.
+[22:12.42] We don't need to, let's just store that into a
+[22:14.66] variable as well if we are already up here.
+[22:16.77] So let's just call this one as result.
+[22:21.31] And just like that, now that I have this result, I
+[22:23.93] can just go ahead and send it as a response.
+[22:26.69] So return.
+[22:28.73] You can suggest me next response.
+[22:30.46] We can send the result just like this.
+[22:32.78] And actually we probably can use a little bit more magic
+[22:36.16] up here now we don't need to send it like this.
+[22:38.05] Status is okay, I'm not worried about that.
+[22:40.53] Instead of this, let's just go ahead and say
+[22:42.27] I want to send you directly a public id.
+[22:45.55] Public id.
+[22:46.50] And we can extract the public id from this
+[22:48.90] result because this is something that always comes.
+[22:52.21] And then we can just go
+[22:53.49] ahead and say public underscore id.
+[22:57.06] Alright, so better result.
+[22:59.24] And let's just say like this.
+[23:05.47] And there we go.
+[23:09.13] Just trying to arrange that a little
+[23:11.27] bit better so that it's easier.
+[23:13.21] Alright, so this is much easier on the eyes.
+[23:15.41] So there we go.
+[23:15.97] We have this one got up and running.
+[23:18.05] Now let's just go ahead and
+[23:19.05] handle the error part as well.
+[23:20.36] First of all, let's just do a console log.
+[23:22.52] In the case of cloud narrator is
+[23:23.85] important that you do the console log.
+[23:26.19] It fails a lot of time for me, so I
+[23:28.65] always do that, at least when I'm building the product.
+[23:31.02] So let's just go ahead and do a console log
+[23:33.19] and throwing up error just like this also is fine.
+[23:36.64] But I would say upload image failed and we're
+[23:44.02] going to throw the error just like this and
+[23:46.31] then we're going to return the next response.
+[23:50.56] Suggestions? Jason?
+[23:51.89] Upload image failed.
+[23:52.98] 500 just like that.
+[23:54.40] Alright, so you saw that.
+[23:55.53] Okay, this is how we upload the image.
+[23:57.18] It took us a lot of time,
+[23:58.57] a lot of effort was being made.
+[24:00.76] But the idea behind that is that it is really nice.
+[24:04.16] A lot of thing can be done now and let me show
+[24:07.00] you the magic we have gone through with all this process.
+[24:09.43] All right, now let me show you something.
+[24:11.63] I can just go ahead, click on the API new folder and I'm
+[24:15.80] going to say this one is going to be my video upload.
+[24:19.70] Video upload.
+[24:22.90] And inside the video upload we're going to go ahead
+[24:25.22] and say this is going to be a new file.
+[24:27.12] Of course route tsdem or better if we
+[24:31.48] could create a utility on that as well.
+[24:33.83] But hey, let's just go ahead, copy this anyways.
+[24:37.42] It's there.
+[24:38.62] So there we go.
+[24:39.82] It can work right out of the box.
+[24:41.72] But there is a little bit more
+[24:43.21] requirement when we are uploading the video.
+[24:45.34] It's not just we are sending the video, otherwise it
+[24:47.28] would be nice, can work out of the box.
+[24:49.76] But if you remember we are also talking to Prisma.
+[24:52.80] So whatever the user is uploading
+[24:54.56] we are taking that information.
+[24:55.88] It's not just going to be any route.
+[24:57.59] So let me just go ahead and walk you through.
+[24:59.56] We still have this, this one here.
+[25:01.42] So if I go ahead and upload the video and
+[25:04.27] it asks me to sign up and I can just
+[25:08.01] sign up if I remember the password, hopefully it does.
+[25:11.92] So let me go ahead and show you that.
+[25:19.08] All right, if I remember my password, which I
+[25:26.92] don't, let me go ahead and create a new
+[25:29.92] user quickly there and show you something.
+[25:33.10] All right, finally in the platform and yeah,
+[25:35.96] I forgot the password anyways, so this is
+[25:38.20] all the information that is coming.
+[25:39.68] We are able to add the title, we are able to add
+[25:41.96] the description, and then we are picking up the video file.
+[25:45.08] Now this API that you are designing, obviously this, whenever
+[25:48.67] you hit the upload button, this is going to request
+[25:50.63] to your own API in the next js.
+[25:52.73] And that API needs to do couple of tasks.
+[25:54.91] First of all, it needs to upload the
+[25:57.00] buffer or the video, whatever you're using for
+[25:59.27] that, it needs to send it there.
+[26:00.80] Then the response needs to come back and
+[26:02.70] that response will give you a public id.
+[26:04.80] And through that public id you need to
+[26:06.68] store everything onto a database as well.
+[26:08.79] So Prisma also needs to come into picture.
+[26:11.21] Once you have this public id, then you have to
+[26:12.92] say unique id, which automatically will be given to you,
+[26:15.56] a title, a description and a public id.
+[26:18.04] Then the original size, compressed size duration,
+[26:20.28] so you don't have all this information.
+[26:22.32] So we need to figure out a way that, how
+[26:24.23] you can actually do all of that stuff here.
+[26:26.34] Otherwise this application is absolutely fine.
+[26:29.08] It can work out the box.
+[26:30.30] So that's the good part.
+[26:31.76] We are, let's just go ahead and walk through it.
+[26:34.32] This is all import statement cloudinary configuration.
+[26:36.77] All right, I'm good with that.
+[26:38.29] But now the cloud result is going
+[26:41.36] to be a little bit different.
+[26:42.35] Obviously the public id will be there, I'll
+[26:44.12] keep it there, but I'll also keep the
+[26:46.11] bytes and the duration of it.
+[26:47.78] So let's just go ahead and add this.
+[26:49.58] This one is going to have
+[26:50.75] one more information which is bytes.
+[26:52.79] Let's just go ahead.
+[26:54.02] And this is what you get with the videos automatically.
+[26:56.75] So we're going to go ahead and say this is going
+[26:58.56] to be number and we're going to be saying duration, which
+[27:02.47] is optional and this is going to be a number.
+[27:06.43] The reason for optional is sometimes maybe you want
+[27:08.70] to use it not for videos but PDF.
+[27:10.67] Then the duration doesn't come for that.
+[27:12.54] And there could be more ways of handling this.
+[27:14.62] Anyways, now we are going to go ahead and say hey,
+[27:16.93] this is going to be our post method of course.
+[27:20.09] And inside the post method before we actually hit
+[27:22.78] that, I would love to do a global initialization
+[27:26.03] of my prisma even before the cloud nary config.
+[27:28.71] So this is where I would like
+[27:29.60] to start that, hey, I need prisma.
+[27:31.16] So give me prisma.
+[27:32.48] Let's just go ahead and say prisma.
+[27:35.44] And that's going to be coming
+[27:36.69] up from new and Prisma client. There we go.
+[27:42.00] Why is it giving me the extension?
+[27:44.16] I don't need this prisma client.
+[27:49.59] Now once this is done, let's go up here.
+[27:51.46] So first of all, obviously we'll go ahead
+[27:53.25] and say that hey, in here we can
+[27:55.68] actually do one more check for this.
+[27:58.49] Of course we can do the check for user id.
+[28:00.39] There is no big deal.
+[28:01.59] You can go ahead and you should do that.
+[28:03.19] Actually I should keep this as an assignment for you.
+[28:05.91] Hey, this is your to do to do to
+[28:09.13] check user all right, good assignment for you.
+[28:12.26] Now let's just do another kind of
+[28:13.86] a check which is really important.
+[28:16.56] Let's just go ahead and say that hey, if there is
+[28:18.98] no environment variables just like this, as you can see, then
+[28:23.65] go ahead and throw some error on this case.
+[28:25.63] This is also one more check that we should
+[28:27.50] have done in the previous video as well.
+[28:28.94] But as you go more, proceed into SAS
+[28:31.19] application building more professional covering all edge cases.
+[28:33.82] Then you can probably go ahead and try that.
+[28:35.75] In this we can just go says cloudready credentials
+[28:38.23] not found and something so errors can be given.
+[28:40.49] Now next step is simple. Same step.
+[28:42.74] We can go ahead and have the form data.
+[28:44.90] So let's just go ahead and hey, give
+[28:47.09] us the form data and all these things.
+[28:49.44] I think this all can go inside the try catch.
+[28:53.23] Let's just cut this out and send it up here.
+[28:58.61] There we go.
+[28:59.48] So to do task is for you.
+[29:01.31] Then the cloud nary task is for you as well.
+[29:04.36] Then we are checking up here.
+[29:07.00] And there we go. Looks easy. So form data.
+[29:10.12] The step one is to grab a form data.
+[29:11.92] What we're going to grab from this,
+[29:13.28] we're going to say request form data. The file.
+[29:15.70] Yeah, we'll be getting the file like this.
+[29:17.22] But we have other information as well.
+[29:19.16] So let's just go ahead and say we will have
+[29:20.74] a title and that can be grabbed from, from data.
+[29:23.10] That can be a string. I don't think so.
+[29:25.06] It will be null or we'll just
+[29:27.84] not allow to submit the form.
+[29:30.29] We'll have a description and that description will be
+[29:34.51] coming up from form data description as string and
+[29:37.77] we'll also have a original size as well.
+[29:40.10] So const original size.
+[29:44.00] There are a couple of ways how we can grab it.
+[29:45.47] It's not a big deal.
+[29:46.29] Form data dot get original size just like that.
+[29:50.54] So how we're going to grab all
+[29:52.52] these information, now that's a big question.
+[29:55.44] Now this is exactly the point where sometimes
+[29:57.73] people ask me that, hey tish, can we
+[30:00.06] get the original file size automatically? No, you won't.
+[30:03.45] You won't be getting this.
+[30:04.36] You need to send this to me because if there is
+[30:06.94] a file that is getting uploaded, you can handle that event
+[30:09.31] and can send me the file size as a string.
+[30:11.58] That's a front end thing and
+[30:12.90] that you can handle easily.
+[30:14.02] I'll show you that as well.
+[30:15.06] Don't you worry about that part.
+[30:16.50] But this can be handled.
+[30:17.85] Now after this, the first thing is, yeah, this one
+[30:20.50] is nice that if you don't have a file, we
+[30:22.10] would love to give you an error message.
+[30:23.90] Rest of the stuff, hey, convert this into
+[30:25.72] bytes and buffer array buffer to buffer.
+[30:27.89] Hey, stuff is same.
+[30:29.61] After that the cloud Navy can actually go
+[30:31.53] ahead and upload and upload the stream.
+[30:33.20] Hey, stuff is same.
+[30:34.57] Now we can go ahead and have this folder changed.
+[30:37.64] Yeah, I would love to change this folder.
+[30:39.49] In fact, I would love to add
+[30:40.63] additional properties on this one as well.
+[30:42.85] Yes, you can go ahead and literally do that.
+[30:45.13] I'll just call this one as video video dashboard.
+[30:49.73] Upload.
+[30:51.58] Uploads.
+[30:52.48] It's a folder name you can give
+[30:53.71] that we would also define here.
+[30:55.95] And that you can do is resource type.
+[30:59.46] Resource type.
+[31:00.34] And I'll go ahead and say this
+[31:01.92] is going to be a video resource.
+[31:03.71] You can mention the other resources as well,
+[31:05.36] but I'll go ahead and do that.
+[31:06.90] And apart from this, you can also
+[31:08.32] go ahead and do transformation on the
+[31:10.12] video to save your storage and bandwidth.
+[31:12.33] So there's a nice option here which says
+[31:14.56] transformation and it has so many properties.
+[31:17.17] The interesting part is it's an array.
+[31:19.06] Yeah, that's the transformation.
+[31:21.28] And there we go.
+[31:22.53] Just goes like this.
+[31:25.76] And inside this I can go ahead and say
+[31:27.85] that, hey, what do you want in this one?
+[31:29.49] I'll say let's start with the quality.
+[31:32.12] We're going to go ahead and not bother much about it.
+[31:34.63] It's going to be auto and we
+[31:36.22] are only allowing user to upload.
+[31:38.17] So we're going to say that hey, we have a fetch
+[31:40.19] format as well and that's not going to be auto.
+[31:42.98] We will be restricting it to mp4.
+[31:44.78] So hey, I don't have to write an extra validation
+[31:48.27] or checker that hey, whether things are going up nicely
+[31:50.68] or not, which file to support, which one to not,
+[31:52.89] I can just add a couple of variations.
+[31:54.82] This part don't need to be edited.
+[31:56.67] This is all once the code you
+[31:57.92] have written that works, upload, stream ends.
+[31:59.95] Hey, it's a buffer so go ahead and use that.
+[32:02.28] But rest of the thing actually changes because
+[32:04.79] we don't want to return just like that.
+[32:06.82] We want to actually, instead of doing this part,
+[32:09.67] we want to add and remember this is on
+[32:12.41] our behalf because we have a flow like that.
+[32:15.05] Cloudnary has nothing to do with that.
+[32:16.79] So let's just go ahead and create a video and
+[32:19.91] we are going to go ahead and say await.
+[32:22.21] And we're going to go ahead and say prisma,
+[32:24.72] go ahead and talk to video and just go
+[32:26.59] ahead and create a data like that.
+[32:28.34] Let's see how good they are doing.
+[32:29.85] Title description public id result do we
+[32:33.07] have calling it as a result?
+[32:34.35] Yeah, nice.
+[32:35.42] Result is going to have a public id the original size
+[32:39.33] and this one is going to be probably my typo.
+[32:41.84] I'm sure that is why I love AI.
+[32:45.98] Sometimes it saves me, original size is good.
+[32:48.85] Compress size.
+[32:50.36] This is interesting because you cannot
+[32:52.60] actually use it like this.
+[32:53.75] Result bytes is okay.
+[32:55.13] This is where the AI fails.
+[32:57.56] This needs to be string.
+[32:59.40] All right, and duration, this is
+[33:02.36] going to be result duration.
+[33:04.40] If we get that, that's great.
+[33:06.10] Otherwise we'll call it as zero.
+[33:08.20] And duration, duration, it should be
+[33:11.22] all okay, what am I missing?
+[33:14.80] What am I missing here?
+[33:16.50] Give me suggestions.
+[33:18.03] Type number is not assignable to type string.
+[33:22.16] So this should be number.
+[33:26.56] This should be number.
+[33:28.60] And what we are getting here is
+[33:31.20] probably, but this should be a number.
+[33:34.66] Let me go ahead and quickly check this.
+[33:37.20] All right, having error is good sometime and I
+[33:39.50] don't, I really don't chop out these part because
+[33:41.82] hey, there was an error and that's how the
+[33:43.42] programs and softwares are being designed.
+[33:45.17] Let me show you how I actually fixed that.
+[33:47.38] So it was bothering me a little bit that
+[33:48.97] hey, why is this duration not taking the result?
+[33:51.98] Because I know result duration is usually numbers or I
+[33:54.90] have optionally provided zero if it doesn't get it.
+[33:57.02] So what's wrong with it?
+[33:58.43] I checked first here at the top that
+[34:00.13] hey, what kind of interface I'm designing.
+[34:02.06] It looks okay, but why is it bothering me?
+[34:04.61] Then another step to check it, because here what
+[34:07.32] makes sense is since you are creating a prisma,
+[34:09.75] there might be a problem in the Prisma model.
+[34:11.76] I went up here, checked it and couldn't
+[34:14.46] really figure out what's going on because you
+[34:16.33] cannot figure out much unless until there is
+[34:18.42] a data everything looks okay, there's nothing suspicious.
+[34:22.02] Compressed size, original size, public id created at
+[34:24.68] updated ad duration, nothing to be seen.
+[34:27.26] Then I went into the prisma file and find out, oh
+[34:29.78] that means I actually accidentally made it as a string.
+[34:32.09] It needs to be float, changed it and run the same
+[34:35.15] command again that hey we need to migrate this again.
+[34:37.51] So the migration happened and we probably
+[34:40.05] have got new SQL commands as well.
+[34:42.37] So this one is the float fix which I kept
+[34:45.19] it and it says hey alter one table and then
+[34:48.02] go ahead and change it as a double precision. That's it.
+[34:50.73] That's it.
+[34:51.52] But yes it is good that you are able to
+[34:53.57] witness this, that hey this is how things are being
+[34:55.61] designed on the go and this is how you face
+[34:57.60] the errors and this is where your intuition kicks in
+[34:59.90] that hey the things didn't went according to us anyways.
+[35:03.46] Once this is all being done, the video, we have
+[35:05.43] a response, we can send a response back to video.
+[35:07.42] This is taking too much of the line so we can
+[35:09.26] just reduce it down to like this and probably this.
+[35:12.53] So all we need to do is send this and
+[35:15.29] this needs a different message this time we'll say upload
+[35:19.06] video failed in case it did and that's it.
+[35:22.86] We can just go ahead and send the response like this.
+[35:25.32] And since we have connected with the
+[35:26.86] prisma we need to disconnect as well.
+[35:29.02] Error message should be little different.
+[35:31.14] Let's just go ahead and say upload video failed.
+[35:35.93] And once this is all done let's just go ahead and
+[35:38.31] invoke the finally block and say await, I have prisma and
+[35:44.60] we're going to say disconnect and there we go.
+[35:47.06] Now this is one such example where you can now
+[35:50.51] handle pretty much any file, MP3, PDF, whatever comes to
+[35:54.15] you and you have seen two variations in that.
+[35:56.82] One is directly uploading it just like here and here.
+[35:59.59] We are actually interacting with database on the
+[36:01.88] go and we are just doing that.
+[36:03.48] So I think you do not need
+[36:05.76] any other guide other than this.
+[36:08.44] That hey this is all what you
+[36:09.72] need to upload anything on the cloud.
+[36:13.20] On the cloud dairy.
+[36:14.39] So I think this solves a lot of
+[36:15.63] your problem and solves a lot of stuff.
+[36:17.58] But again cloudnary docs are also great, you can
+[36:19.58] use the upload methods and upload large methods and
+[36:22.15] chunk and all of those methods, they're absolutely good.
+[36:24.67] But hey this is also nice so I hope you
+[36:27.31] have enjoyed this video and you have seen and witnessed
+[36:29.67] some of the real time debugging issues as well.
+[36:32.18] If you are enjoying this, please, please, please do
+[36:35.02] share the series on the Twitter and on LinkedIn.
+[36:37.27] I would be very, very thankful to you.
+[36:39.33] And if you can leave a drop, just a
+[36:41.61] heart or just a high or a thanks in
+[36:44.33] the comment section, I would be really, really happy.
+[36:47.29] That's it for this one.
+[36:48.26] Let's catch up in the next video.

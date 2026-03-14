@@ -1,0 +1,1275 @@
+[0:00.08] What do you think about Chinese stress?
+[0:01.84] Do you think you can beat China?
+[0:03.52] >> You are now looking to get to 15 crores
+[0:05.76] this year. Next year you're looking at
+[0:07.20] 50 crores.
+[0:07.60] >> 50 crores. So
+[0:11.60] be with the fact that you might be a low
+[0:13.36] repeat category for your for lifetime.
+[0:15.76] >> Biggest toy company is Lego. And how
+[0:17.52] they solve for it is what looks like a
+[0:19.52] infinite variety is actually a very
+[0:21.12] small variety. In your case your repeat
+[0:22.88] rate is zero because there is no
+[0:24.88] interoperability.
+[0:28.72] Why should this not plug on top of this
+[0:30.40] and make a better system?
+[0:31.68] >> Oh, okay.
+[0:32.48] >> How are these toys better than Chinese?
+[0:34.64] Uh
+[1:06.32] Okay, Vanesh, welcome to a brand new
+[1:09.68] episode of a season 5 of the barber
+[1:12.08] shop. Yes,
+[1:12.72] >> we are calling it Kulk scale. Okay.
+[1:14.80] >> Okay. So, over the next 1 hour, we want
+[1:17.12] to understand clap store maybe in 3 4 5
+[1:19.68] minutes.
+[1:20.08] >> Understood. and then go directly into
+[1:21.76] the we have read the materials of go
+[1:24.32] directly into the problems that you are
+[1:26.40] facing. Yeah. Are these some initial
+[1:27.84] thoughts from yourself?
+[1:28.72] >> Well, I'm really looking forward to
+[1:30.08] learning a bit more about the business
+[1:32.24] and about how you guys are scaling. It
+[1:33.76] seems to be an amazing business so far.
+[1:36.16] >> Yes. Yes.
+[1:36.80] >> And I think there's an element of uh
+[1:38.80] business here, but there's also an
+[1:39.92] element of doing good
+[1:41.68] >> through what you do. So, I'm quite
+[1:43.12] interested to explore that.
+[1:44.40] >> Yeah. Yeah. Thank you for inviting us.
+[1:45.92] >> Yes. Go ahead. Stage is yours.
+[1:47.68] >> Yes.
+[1:48.00] >> Yeah. Uh so Vang said 22 studed
+[1:51.28] psychology as my major and we started
+[1:54.08] clap back in 2020 but started as a
+[1:56.32] generic brand.
+[1:57.84] >> How old are you guys?
+[1:59.04] >> 23 22.
+[2:00.40] >> Okay.
+[2:00.72] >> Yeah. Amazing. So started as a generic
+[2:03.52] brand during 12th after 12th. Uh pered
+[2:06.00] to toys then moved into a category uh PC
+[2:08.96] boards which we are selling right now
+[2:10.40] and started our own manufacturing over
+[2:12.40] the journey. Uh got some good mentors
+[2:14.96] have learned from them. uh Kishan
+[2:17.60] himself uh scaled from scratch like
+[2:21.76] learned the manufacturing ourself and uh
+[2:24.64] now it like from a 10 pieces per day
+[2:28.08] manufacturing it has become now a
+[2:29.68] thousand pieces per day manufacturing
+[2:31.12] unit back in Pune
+[2:33.04] >> uh it has been a crazy journey learning
+[2:35.60] failing making mistakes and then again
+[2:38.48] uh making it work
+[2:39.84] >> so yeah that's about uh how we are where
+[2:42.96] we are and our overall mission is to
+[2:45.20] reduce mindless screen time of kids
+[2:46.88] because we know postcoid screen time of
+[2:48.88] kids increased crazily like only in
+[2:51.52] India less than like for kids less than
+[2:53.52] five around 3.5 hours
+[2:57.68] screen
+[2:58.40] >> a day for a kid under five it's crazy
+[3:00.72] and is it interactive or just watching
+[3:02.40] watching
+[3:02.80] >> this is watching screen watching YouTube
+[3:04.72] and playing games
+[3:06.80] >> so YouTube scrolling is of one of the
+[3:09.28] most challenges which parents are facing
+[3:10.88] for younger kids
+[3:12.16] >> but that was crazy so we decided we need
+[3:14.48] to work on this And what was the best
+[3:16.56] way to do it to make interactive
+[3:18.80] creative toys and help these videos? So
+[3:22.00] yeah.
+[3:22.72] >> Yeah. So problem statement
+[3:29.28] you I was going to ask you busy boards,
+[3:31.12] stem toys and software what is the
+[3:33.28] division of your you know roughly doing
+[3:34.96] 1 1.2 crores per month.
+[3:36.64] >> So only from busyboard we are doing this
+[3:38.24] currently and next month we are
+[3:39.36] launching this category.
+[3:40.16] >> We are not launching. Oh okay. And in
+[3:42.08] within busy boards how many toys do you
+[3:43.68] have? Uh currently eight SQ out of those
+[3:45.60] four are best four%.
+[3:49.68] >> So here
+[3:58.08] four years 2 years what we
+[4:02.80] use.
+[4:04.72] So in a sitting 15 20 minutes is what we
+[4:07.68] have got data about.
+[4:13.36] So this is the toy they have in their
+[4:14.72] hand when they're eating something.
+[4:17.28] >> Price
+[4:18.24] >> uh starts from 500 to 1,800 2,000. This
+[4:21.60] one is the most expensive one. This is
+[4:23.28] for 1,000.
+[4:24.72] >> Okay. Very good. Very good. So how are
+[4:26.56] you going to go from 15 to 50?
+[4:27.84] >> So the more categories what else?
+[4:29.52] >> Yeah. More categories what we feel.
+[4:33.92] But with that we also have our first
+[4:35.92] question key. How should we like what
+[4:37.92] are the factors we should focus on?
+[4:39.04] Product expansion is something we are
+[4:40.80] doing. But do we need to like work on
+[4:44.08] more like team
+[4:47.20] plus if you're increasing category to
+[4:49.12] manufacturing?
+[4:51.52] So that was our first how should we do
+[4:53.84] it like what you feel should be the
+[4:55.92] levers we should focus on when we go
+[4:58.32] from 15 to 50 revenue and in terms of
+[5:01.52] question.
+[5:03.04] So end of numbers.
+[5:09.92] So we want to focus on and second thing
+[5:12.32] we planned orders per category.
+[5:22.48] So that's how we are planning.
+[5:28.64] Okay.
+[5:31.92] So this is currently
+[5:46.88] 6 months to four years
+[5:55.28] >> because of the price point and
+[5:56.40] everything
+[5:58.64] focus on India.
+[5:59.52] >> Yes. Yes. Yes. Quickcommerce quick this
+[6:01.76] is gifting and quickcommerce is lifting
+[6:03.04] I think will lead to like 7% of the
+[6:04.88] growth right
+[6:05.84] >> availility
+[6:08.56] stores how many are you available
+[6:09.92] >> only around 500 to 350
+[6:12.08] >> that's a 10x growth and 5,000 will go to
+[6:14.16] 10,000 next year
+[6:15.52] >> you have to go from 500 whatever 500 to
+[6:18.00] what 8,000
+[6:20.00] >> so distribution also is something should
+[6:21.68] be focused on right because distribution
+[6:24.16] capital heavy business so while going
+[6:25.92] from 50 to 50 what are the two three
+[6:27.76] things we should majorly focus on think
+[6:30.08] Yeah.
+[6:32.40] >> Poor axis of thinking order,
+[6:33.84] >> huh?
+[6:34.72] >> So you have your product,
+[6:37.52] >> right? So if you're saying you're at one
+[6:39.84] per month,
+[6:40.48] >> yeah,
+[6:41.28] >> this one per month will go to
+[6:43.04] >> 4.5 4.9
+[6:44.48] >> So you the sum of it will come from same
+[6:46.16] same skew growth, right?
+[6:47.20] >> Yes.
+[6:48.24] >> Which is uh
+[6:50.48] >> 15 20% month on month. You'll probably
+[6:52.08] like triple in the year.
+[6:53.04] >> Triple in the year.
+[6:53.68] >> So let's say three.
+[6:55.36] >> Yeah.
+[6:55.76] >> And another
+[6:57.68] three from new products.
+[6:58.88] >> Mhm. Yeah.
+[7:01.20] >> So this is one way of thinking about it,
+[7:02.48] right?
+[7:03.20] >> I thought that that it is different
+[7:04.80] where currently you're doing one a
+[7:06.40] month. The base product will do only
+[7:08.96] 0.15 and actually two will come from 15%
+[7:12.64] month 15% total 15% for this category
+[7:15.60] only business month total month%
+[7:18.80] month
+[7:31.76] distribution
+[7:34.00] and plus innovation like The last
+[7:36.56] product we launched newer was around 6
+[7:38.24] months ago.
+[7:40.72] Now set so we will now plan to launch
+[7:43.36] newer products. So your new SKUs which
+[7:46.80] is expansion into more customers which
+[7:48.56] is basically more customers
+[7:51.92] >> we'll get take it to five. Now if you
+[7:53.20] look at channel
+[7:55.52] >> so the product growth so now you know
+[7:57.52] that you have to build half your
+[7:58.48] business on new products
+[7:59.92] >> and build it out. So that's a separate
+[8:01.12] question around funnel building
+[8:04.00] some amount of CRM etc for this right
+[8:06.24] >> now channel may uh
+[8:09.68] if you are
+[8:11.60] right now if I were to say D2C is 50%
+[8:14.56] right
+[8:14.80] >> 50%
+[8:16.32] >> and quick commerce is
+[8:18.64] >> 10% 10% how much is Amazon
+[8:21.44] >> 35%. So 50, 10 and 35 is Now tell me how
+[8:26.32] much will Amazon get to in terms of
+[8:28.32] growth, Amazon, Flipkart etc. How much
+[8:30.56] will kick? How much will D2C?
+[8:33.76] >> Uh D2C we feel 4550
+[8:37.04] it won't grow.
+[8:39.28] >> Yeah.
+[8:39.60] >> Okay. quick commerce will grow is what
+[8:41.84] we feel around 20% of
+[8:49.52] in terms of percentage wise
+[8:52.80] marketers will push it more compared to
+[9:07.92] healthy you should buy you should spend
+[9:09.44] more
+[9:19.12] we feel with website it will also grow
+[9:21.04] but at a larger pace because inventory
+[9:23.84] >> website you should always build out the
+[9:25.44] website because people come on the
+[9:26.64] website engage with your products and
+[9:28.32] then go and buy on link right so you
+[9:30.40] should always have a website view and
+[9:31.76] give good rates on the website
+[9:33.12] >> okay okay
+[9:34.24] >> in my view okay so
+[9:39.04] Your D2C should at least double
+[9:45.52] extra. Okay.
+[9:47.36] >> Okay. Okay.
+[9:47.92] >> From this current 50, 50 + 51 should be
+[9:50.16] your D2C goal. Quickcommerce can be a
+[9:52.16] big part. So of this four, four delta
+[9:55.36] here. Of this four, 50 will come from
+[9:58.24] D2C.
+[9:59.04] >> Mhm.
+[9:59.44] >> My view is you can put three or so from
+[10:02.00] quick.
+[10:02.88] >> Okay.
+[10:03.36] >> So click commas can be three and another
+[10:05.84] 50 or so can come from Amazon, Flipkart,
+[10:07.60] etc. In my view your customers will
+[10:09.20] either buy from your website or they'll
+[10:10.48] buy from and Amazon etc. might be some
+[10:13.28] some remnant customers who continue to
+[10:15.20] believe intalc
+[10:36.56] okay so this should double though and
+[10:40.40] continue so the stuff that should
+[10:42.08] increases number of sessions. So if your
+[10:44.08] revenue has gone up 2x your number of
+[10:45.60] sessions 5x
+[10:49.92] should go into building out D2C so that
+[10:51.76] the spillover effects onto quick
+[10:53.92] commerce and this thing is a lot
+[10:57.04] >> right that's how you should I think so 1
+[10:59.20] cr from D2C so let's say
+[11:02.88] >> 1 cr from D2C quick commerce is 3 plus
+[11:05.76] one so 3.1 or so
+[11:07.36] >> and Amazon will be another 1 cr okay
+[11:09.36] >> that's how your 5 crores gets built out
+[11:11.52] your investment the other one is I was
+[11:12.80] actually thinking was was more around
+[11:14.16] geography.
+[11:14.88] >> Mhm. Mhm.
+[11:16.08] >> Toy companies from India selling to the
+[11:17.84] world is an amazing way to grow
+[11:22.64] but we have tested in the US market. So
+[11:24.88] category in the US market is very large
+[11:26.88] I would say huge
+[11:33.04] month
+[11:41.84] October last October we have sent around
+[11:43.68] 300 units just to test it until today we
+[11:45.68] have sold around 280 29 units very
+[11:47.60] minimum where is that coming. This is a
+[11:49.84] testing
+[11:57.68] manufacturing
+[12:02.24] four to six month capital
+[12:04.64] 5 months is what we were looking
+[12:07.28] then I think it becomes
+[12:09.52] you'll get a much better gross margin
+[12:11.36] 65% India business your US business can
+[12:13.76] actually get you 70 72 to 73%
+[12:16.88] >> 80% gross margin which is very varies.
+[12:18.80] So the way to think about it and I like
+[12:19.76] Adi's framework is
+[12:21.12] >> if you can compensate for a cash loss
+[12:23.52] through gross margin
+[12:25.04] >> it's a six month investment basically
+[12:26.48] then you will keep circulating. So this
+[12:27.92] is the third way of taking from 15 to
+[12:30.08] 50.
+[12:30.56] >> Right. Right. Right. Right. Right.
+[12:32.40] >> Other thoughts I think that makes makes
+[12:35.52] a lot of sense. But is there a consumer
+[12:37.36] lens to this? So
+[12:42.40] repeat
+[12:48.00] which is a lower end thing.
+[12:51.36] How can you
+[12:53.52] age is something that will play a big
+[12:55.36] role here because
+[12:57.76] once he grows up or maybe the
+[13:00.40] educational one but other than that
+[13:04.96] my point is if you are a young child I
+[13:07.92] don't know right
+[13:09.84] >> but can the three-year-old not also play
+[13:11.28] with this
+[13:11.68] >> yes he can he can so do
+[13:15.52] older kids younger kids so we are
+[13:18.40] struggling with repeat rate so That's
+[13:20.24] how
+[13:22.80] like there are huge players dominated
+[13:24.88] with generic toys, Chinese toys, wood
+[13:26.32] toys.
+[13:28.32] So founders should focus on doubling
+[13:29.84] down these numbers or always focus on
+[13:31.36] acquiring new customers.
+[13:33.68] >> That is also question given that the toy
+[13:36.40] category is a category with very
+[13:38.56] uncertain globally
+[13:40.32] >> globally.
+[13:41.20] >> So I think you always need to
+[13:43.36] >> innovate
+[13:43.92] >> innovate and get the new toys out there,
+[13:46.08] >> right? Do you have any data or any
+[13:47.68] connection with customers who buy you
+[13:50.72] yes
+[14:00.80] majorly so that is the reason why people
+[14:03.76] aren't buying again and second reason is
+[14:06.40] to value
+[14:08.24] for the initial versions like for the
+[14:09.76] this one or the solar system one which
+[14:11.12] we have it but for the initial version
+[14:16.00] Unknowingly
+[14:20.48] that is something
+[14:24.24] you created a prototype and saw the
+[14:26.80] result
+[14:28.80] all these new things that you are doing
+[14:30.32] your existing user base
+[14:33.20] yes
+[14:35.28] to what is the conversion rate of being
+[14:37.52] able to sell a new toy to your 100,000
+[14:39.92] customers on
+[14:41.20] >> okay it's a very good point
+[14:44.48] >> for
+[14:46.32] And this is for the smaller kids.
+[14:59.12] I don't know. Okay.
+[15:12.56] If that works. Yeah. Right. Right.
+[15:13.76] Right.
+[15:16.00] message frequency. You can also pass
+[15:19.68] back some of the cost benefit that you
+[15:21.12] have by saving CA to those customers.
+[15:22.80] >> Right? Right. Offers discounts can be
+[15:25.12] done. Understood.
+[15:25.92] >> You can also user you can also use them
+[15:28.88] as affiliates.
+[15:30.24] >> Right.
+[15:30.72] >> So if they sell to somebody else, they
+[15:33.52] can take some portion of the revenue.
+[15:37.28] >> So you can also start creating
+[15:39.12] evangelists from people who are buying
+[15:40.80] your toys.
+[15:52.08] similar to other than cars right or
+[15:54.48] dolls you may want many dolls many cars
+[15:57.36] but other than that there is no
+[16:03.44] right
+[16:05.92] so as a child if I'm playing with this I
+[16:09.12] don't necessarily know clap store So
+[16:11.12] question is
+[16:12.88] toy.
+[16:15.44] Okay. Okay.
+[16:17.04] >> I think with toys now and maybe we
+[16:19.44] should look at Lego or toys. Lego is a
+[16:21.44] great example.
+[16:22.24] >> If music is the thing that's working
+[16:24.88] >> then you should have at least 20 SKs in
+[16:26.88] music. One with harmonium, one with
+[16:28.56] tabla, one with flu whatever right
+[16:31.28] >> the the the stimulant is fine because I
+[16:33.84] think
+[16:34.64] >> toys are sold like you know like it's an
+[16:36.88] Alice in Wonderland moment.
+[16:38.08] >> Okay. A child will come like oh there's
+[16:39.92] thousand things in their in their room
+[16:41.36] also or whatever
+[16:42.24] >> they'll have one of these they'll have
+[16:43.44] one with harmonium they'll have one with
+[16:45.20] >> saxophone one whatever blowing into it
+[16:48.80] etc
+[16:49.52] >> if you have a large assortment and it's
+[16:51.92] easier said than done you have to think
+[16:54.80] but I think
+[16:56.16] >> that's the way to solve for repeats so
+[16:58.16] the biggest toy company is Lego and how
+[17:00.48] they solve for it is what looks like a
+[17:02.24] infinite variety is actually a very
+[17:03.68] small variety
+[17:04.96] >> so parts
+[17:15.76] manufacturing
+[17:17.52] high volume
+[17:29.20] but the company has solved to have a
+[17:31.20] very high repeat rate on components
+[17:32.72] which they manued. In your case, your
+[17:34.72] repeat rate is zero because there is no
+[17:36.80] interoperability.
+[17:40.32] Why should this not plug on top of this
+[17:41.76] and make a better system? Okay. Okay.
+[17:44.56] Nice. So, if you create, if you're
+[17:46.40] selling a system,
+[17:59.60] all of them are unique, but they are a
+[18:01.60] system.
+[18:03.68] repeat
+[18:08.88] need to create a system create a way for
+[18:11.44] consumer to buy multiple times
+[18:13.76] >> for which you might need to have more.
+[18:15.12] So right now I think in the first stage
+[18:16.96] acquiring more customers is fine.
+[18:18.80] >> Then going deeper with the customers
+[18:20.32] through
+[18:21.52] >> building out more
+[18:23.28] >> in areas which work out of it is working
+[18:29.12] right for the sound is the one thing
+[18:31.52] that that works or the phone let's say
+[18:33.76] phone fidgeting with a phone like device
+[18:36.32] is what works then you know that this is
+[18:38.32] your core. Now
+[18:42.32] >> right something moving some string and a
+[18:44.00] ball
+[18:47.04] then he's right I want one of these I
+[18:48.72] want the like the customer also has more
+[18:50.96] variety so if I'm somebody who sees
+[18:54.08] these toys
+[18:59.12] what unites your range right initially
+[19:02.16] we have work on the packaging which is
+[19:03.92] making us stand Right.
+[19:11.76] Right.
+[19:14.72] So, how do I know?
+[19:17.12] Because
+[19:19.92] not clear. So, I have
+[19:28.24] Okay. So,
+[19:31.44] endorsement strategy like
+[19:40.08] So what we thought
+[19:43.76] existing.
+[19:45.52] So what we are doing is we collaborated
+[19:46.88] with the agency which was doing creating
+[19:49.28] a strategy for us and executing design
+[19:51.12] strategy. So endorse brand strategy for
+[19:53.84] example brand toys by clap toys
+[19:58.88] for the three categories that's how we
+[20:00.80] are going with this customer
+[20:03.44] >> for the for examp
+[20:16.16] >> I don't I don't know what you think I
+[20:17.92] don't think customers think so much
+[20:19.28] about category and all the way we are
+[20:20.88] thinking Yes.
+[20:22.16] >> Okay.
+[20:22.64] >> It's okay. Like it's
+[20:30.80] >> category, but there is some appleness
+[20:32.88] about each product.
+[20:34.40] >> So you can see from a design language
+[20:36.72] key. So there are some very interesting
+[20:38.96] things about your design language.
+[20:40.32] There's a very interesting use of wood
+[20:42.72] natural materials. There's also
+[20:44.48] >> this is also wood.
+[20:46.16] >> So now it there is wood. There's always
+[20:49.20] some electronics and some technology.
+[20:50.56] Yes. Yes. Yes. Electronics is the core
+[20:52.00] of it. So this and this I can make out
+[20:54.00] this look belongs to the same.
+[20:56.00] >> Okay.
+[20:56.64] >> Okay. Because of the tactile switches
+[20:58.80] and color
+[20:59.36] >> like subbrands like Lego creator like
+[21:02.40] that.
+[21:05.60] >> So it's simple design language what my
+[21:09.68] brand is and what my brand is not. So
+[21:11.76] that will make
+[21:22.48] okay and that way your brand will become
+[21:24.56] more aware
+[21:30.56] than a few
+[21:33.28] otherwise cheaper
+[21:37.36] Chinese.
+[21:41.60] That's the issue.
+[21:42.24] >> So if you want to cross that, you need
+[21:43.92] to create a reason why you are better.
+[21:46.32] >> And if you don't want to be cheaper,
+[21:47.52] which maybe you don't want to be, then
+[21:48.96] you have to be in the better thing. But
+[21:50.08] if you're better, you have to be
+[21:51.12] recognizable. How can you be better?
+[21:53.04] >> Fair fair.
+[21:53.92] >> So design language what you said.
+[21:55.92] >> I agree. Are you who designs these toys?
+[21:58.08] This is one of you actually.
+[22:02.72] Now we are developing a team. But
+[22:05.28] development it is more customer oriented
+[22:07.44] only. So we have feedback calls, we have
+[22:10.24] interviews with them and we rate
+[22:12.32] customers based on how well they talk
+[22:14.24] and we move them to a community.
+[22:18.40] We have kept it around
+[22:21.60] so that age group
+[22:27.28] you both are very smart very very clear.
+[22:30.08] One more thing on this right. So for
+[22:31.36] example
+[22:34.88] start looking at inputs for the growth
+[22:36.56] and channel is the best way to do it
+[22:37.92] right. So if you are saying
+[22:40.72] I want more than half my business coming
+[22:42.16] from new toys to new toys in the same
+[22:43.76] design language that's very clear
+[22:45.60] >> channel if it's Amazon you're looking at
+[22:48.08] going from 50 to 1 cr you need more
+[22:50.16] reviews and ratings reviews and ratings
+[22:51.68] is the clearest thing
+[22:52.80] >> BDP and then delivery on prime within
+[22:54.88] the same day or within 2 days
+[22:56.16] >> right
+[22:56.72] >> quick commerce you're at 500 stores next
+[22:58.56] year we're going to get to 10,000 stores
+[23:00.56] at an industry level how can you get to
+[23:02.32] 6,000
+[23:03.04] >> okay
+[23:03.92] >> 10x your fillers
+[23:05.60] >> okay
+[23:06.16] >> and D2C M number of sessions, conversion
+[23:09.44] and crosselling ability.
+[23:18.96] >> That is how it should spread
+[23:21.52] also. So you should create a also if you
+[23:24.40] have a design language it starts coming
+[23:25.76] out in a performance assets also
+[23:29.12] >> completely
+[23:32.00] bonus bonus target
+[23:36.32] a broad
+[23:38.48] this is bonus which you can do in which
+[23:40.96] to say
+[23:46.00] whoever is responsible
+[23:51.28] one of the new toys for 1,000
+[23:59.44] which is 1. Okay. Okay. Okay. So
+[24:03.84] six
+[24:07.28] like this it's it looks very easy
+[24:09.44] actually
+[24:12.96] it's not butiness
+[24:42.40] What do you think about
+[24:52.72] it?
+[24:55.36] electronic parts but other than that the
+[24:58.56] wood is very good
+[25:02.24] quality
+[25:08.32] % of
+[25:17.68] a great idea. Okay.
+[25:24.64] We will give it to poor children who
+[25:26.48] can't afford toys. Okay. Okay.
+[25:28.08] >> So your toy becomes a pre-love toy and
+[25:30.40] you can actually do something good with
+[25:31.60] it.
+[25:31.92] >> Right. Right. Right.
+[25:32.64] >> It may cost you a little bit of money
+[25:34.32] >> and that then gives you a 20% 30%
+[25:37.52] discount on this fantastic new toy that
+[25:39.12] you can
+[25:40.88] >> have a recycling program on your toys
+[25:43.44] >> or you can collect it back, refurbish it
+[25:44.96] and sell it at a discount also.
+[25:47.20] >> Nice idea because it's lying around.
+[25:52.40] >> Why do you want lying around unused?
+[25:53.76] Because the battery ran out. Every time
+[25:55.68] you get the consumer to connect this toy
+[25:57.68] with your company, your brand becomes
+[25:59.68] stronger and the chance of them
+[26:00.96] remembering you for toys and buying the
+[26:02.40] new clap on the side.
+[26:10.48] So this is
+[26:18.88] it has to be here. Somewhere here. It
+[26:20.40] has to be here somewhere.
+[26:21.52] >> Okay. Okay. Okay.
+[26:22.32] >> I like this though. I like the design
+[26:23.84] aesthetic of not making it plasticky.
+[26:26.96] >> Right. Right.
+[26:28.00] >> Actually, you're right. The bag is not
+[26:29.52] plasticky is such a good thing. In fact,
+[26:31.60] if that's the case, if you're a wood
+[26:33.44] based regenerative company around toys
+[26:36.00] and you should put in reading mater
+[26:49.68] if you want to like if wood is your
+[26:51.44] thing, one of the things you can think
+[26:52.56] about if you want to go around the
+[26:54.24] refurbishment route also is about being
+[26:56.32] climate conscious
+[26:57.84] >> around put in a small small note for a
+[27:00.40] child was 5 years old
+[27:01.92] >> around why plant planting trees is
+[27:04.08] important right
+[27:05.68] >> you guys should should have a clap store
+[27:07.84] grove
+[27:08.88] >> somewhere near Satara there's a 14 trees
+[27:10.64] foundation
+[27:11.44] >> have a clap so for every 100 toys bought
+[27:13.36] plant one tree
+[27:14.16] >> give a seed with every
+[27:15.60] >> give a seed
+[27:16.24] >> seed with every one of these and let the
+[27:17.68] >> nice
+[27:18.40] >> let the child plant their own seed
+[27:20.64] >> and grow that tree
+[27:21.68] >> you are actually creating love
+[27:24.08] >> in the in for your brand through your
+[27:26.16] consumer
+[27:27.04] >> one is the toy itself
+[27:28.56] >> but the other is so many things around
+[27:30.00] it M child and the parent both.
+[27:32.88] >> So your question on repeat rate
+[27:34.72] >> so if you're selling so if you're
+[27:36.96] selling refrigerators to eskimos
+[27:38.96] >> and if the Eskimo has bought one
+[27:40.24] refrigerator they will not buy the next
+[27:41.60] one right but they may buy a snowmobile.
+[27:43.92] >> Okay
+[27:45.60] fair
+[27:47.68] it
+[27:48.16] >> okay
+[27:48.64] >> but for that they have to know your
+[27:50.08] brand you have to have a communication
+[27:51.36] channel that is open
+[27:52.32] >> understood understood. Okay,
+[27:53.84] >> very clear. So growth is clear. So there
+[27:55.28] is a product level growth, there's a
+[27:56.32] channel level growth, there is
+[27:57.68] >> there is geography. So there's US you
+[27:59.68] have to explore for which you want to
+[28:00.56] put 6 months.
+[28:01.52] >> There is consistency of the product
+[28:03.44] itself which aids the brand.
+[28:05.76] >> The brand needs to stand for something
+[28:08.08] significantly beyond toys. Climate is
+[28:09.92] one angle. There are other ways for
+[28:11.12] brand to be loved.
+[28:12.64] >> Limitation in CAC will always be there.
+[28:14.40] It is very unlikely that you can sell 10
+[28:16.08] of your toys in the same household.
+[28:17.76] Right.
+[28:19.36] >> You have to deal with the fact that you
+[28:20.72] might be a low repeat category for the
+[28:22.48] for you. You have a good AOB which is
+[28:24.88] then you can absorb
+[28:26.40] >> in the first transaction.
+[28:29.20] We want to keep it less focused.
+[28:31.20] >> Yeah. You need you need like wider
+[28:33.12] assortment.
+[28:34.40] >> Okay.
+[28:34.80] >> Because of toys as a space. Yeah.
+[28:36.64] >> I I think you already are planning a
+[28:38.56] pretty wide assortment. So you're
+[28:39.68] talking about three whole lines
+[28:42.32] >> and then each line will get deeper and
+[28:43.76] deeper.
+[28:50.48] So which is a good thing. So and you can
+[28:52.80] microat
+[28:55.04] but be careful about opening too many
+[28:56.64] categories because every category that
+[28:58.80] you opens up your complexity basically
+[29:02.56] factory
+[29:06.40] but soft totally different. So your
+[29:08.56] ability to maintain quality and
+[29:10.40] distinctiveness and what your brand
+[29:12.00] feels like across multiple lines which
+[29:13.60] are very different
+[29:14.48] >> right complexity
+[29:16.72] >> but I have still one more thing for you
+[29:18.00] on growth
+[29:18.96] >> who are your partners for customer
+[29:20.80] acquisition
+[29:23.20] >> so for example lowest age
+[29:26.40] >> 6 months
+[29:26.80] >> 6 months
+[29:27.36] >> 6 months so why are you not partnering
+[29:29.04] with diaper companies or
+[29:30.80] >> cloud hospitals cloud9 hospitals
+[29:32.80] basically there are companies in uh
+[29:35.84] nappies wipes who make a uh infant
+[29:39.44] nutrition who make a science out of CRM.
+[29:43.12] >> Okay.
+[29:44.08] >> So they have massive databases,
+[29:46.88] >> massive communication with consumers
+[29:49.20] >> and they also may be interested in
+[29:51.68] sharing
+[29:53.04] >> partnering with you some of them
+[29:55.04] >> where you can ride on their networks and
+[29:57.60] they can ride on your networks as well.
+[29:59.04] So see whether you can do
+[30:01.68] >> so uh
+[30:03.92] >> children clothes clothes
+[30:04.96] >> clothes
+[30:05.28] >> okay clothes diapers
+[30:06.32] >> maternity wear say kbad young children
+[30:09.36] children clothes right
+[30:10.72] >> anybody who's into gifting for kids
+[30:12.96] which is not competing with you
+[30:14.16] >> right right
+[30:15.12] >> uh then uh you're talking about nappies
+[30:17.68] wipes those kinds of companies
+[30:19.60] >> these could also be very good promotions
+[30:23.20] >> for some of those categories that get
+[30:24.96] you more trial
+[30:25.92] >> right okay
+[30:27.12] >> so just see whether there are some
+[30:28.80] interesting the reason I say this is in
+[30:30.16] one of my old businesses we used to have
+[30:31.68] a business that had a CRM program okay
+[30:34.08] >> that reached every mother in America by
+[30:37.12] zip code
+[30:38.48] >> and we used to get data on the some of
+[30:41.60] that data the biggest source of best
+[30:43.92] quality data
+[30:45.12] >> was a partner company that used to make
+[30:47.68] maternity wear
+[30:49.04] >> okay okay great
+[30:50.72] >> okay
+[30:51.20] >> how big is first cry for toys the
+[30:53.04] category
+[30:53.76] >> uh for us we haven't yet explored how
+[30:57.04] big is toys on first cry Uh not very
+[30:59.52] sure
+[31:02.48] in Pune right. Yeah. But the thing is
+[31:04.96] first we have been very early
+[31:09.44] because of the supply. So
+[31:12.16] how we can try and explore that but now
+[31:15.12] we are starting to focus first flip card
+[31:16.64] and for your first.
+[31:18.32] >> Got it. Got it. Got it. Okay. Let's go
+[31:20.48] to the next question.
+[31:21.20] >> Yes. Actually
+[31:22.24] >> very very impressive huh Rash and Vang.
+[31:24.16] Very very impressive. The way you guys
+[31:25.52] think about this is amazing.
+[31:26.56] >> Yeah. So we actually covered two of the
+[31:28.16] questions repeated and uh growth. Third
+[31:30.24] question was currently we have our
+[31:32.08] in-house manufacturing and we are
+[31:33.68] scaling it uh like however is needed but
+[31:37.12] how like till how long we should scale
+[31:38.80] it or should we like get third party
+[31:41.20] manufacturers contract manufacturers in
+[31:43.44] >> so first first question slightly off
+[31:45.68] track
+[31:46.32] >> how are these toys better than Chinese
+[31:47.92] toys?
+[31:48.64] >> Uh actually currently these are at par
+[31:51.76] at Chinese toys. So there is this
+[31:53.76] category. Okay. And from a cost point of
+[31:56.08] view,
+[31:57.28] >> are is your cost lower or higher than
+[31:58.96] Chinese?
+[31:59.92] >> So currently these factories
+[32:10.48] variable cost. Do you think you can beat
+[32:12.08] China? No. Honestly at scale. No.
+[32:15.92] >> Okay. So the only reason that your
+[32:17.76] business is alive in that sense is
+[32:19.68] either your creativity in creating the
+[32:21.28] toy
+[32:22.08] >> or some kind of artificial protection
+[32:24.24] that the government is giving you
+[32:26.32] >> from Chinese competition.
+[32:27.52] >> Got it. Got it.
+[32:28.64] >> Right.
+[32:29.04] >> Right.
+[32:29.76] >> Okay. So now in this world,
+[32:32.16] >> let's say you are five times the size
+[32:33.60] you are today. How will you compete
+[32:36.00] >> from a price point of view or a cost
+[32:37.44] point of view
+[32:38.64] >> and do you get economies of scale? So if
+[32:42.80] you're spending all the money to produce
+[32:44.48] it inhouse or right so either you need
+[32:46.56] to have some quality that
+[32:48.72] >> which is better or you need to have some
+[32:50.88] economy of scale which is better
+[32:53.20] >> or you need to have some secret sauce
+[32:58.16] right which keep makes your toy special
+[33:00.16] >> right
+[33:01.04] >> or you need to be sure that you can make
+[33:03.12] consistently better quality than the
+[33:04.56] best supplier in the world
+[33:05.44] >> right right
+[33:06.16] >> so is it any of these
+[33:07.20] >> yeah we feel innovation is what we will
+[33:09.44] help us compete with China so there is
+[33:11.52] brand schematics doing 700 revenue last
+[33:15.36] year and 60% coming from us
+[33:21.76] both our board and
+[33:22.80] >> yeah we met him and
+[33:26.00] in China sorry in the US market there
+[33:28.08] are a lot of other Chinese companies
+[33:30.08] Chinese employers copying his product
+[33:31.60] but still they surviving and are a
+[33:33.12] market leader there because of the
+[33:34.16] innovation they are bringing
+[33:35.28] >> give me examples of their innovation
+[33:36.48] that they do and which
+[33:38.00] >> uh so there is a very basic guardian
+[33:40.32] they have 10 in one guess. It has around
+[33:45.12] 100 cards and
+[33:48.48] so very basic.
+[33:52.24] Yeah.
+[33:54.08] And the main thing is Chinese language
+[33:57.04] barrier when they are making it in the
+[33:59.12] US market. But he being there and he
+[34:02.16] having team in the India and the US
+[34:04.08] market they solved it. They understood
+[34:05.84] the problem and they scaled it.
+[34:13.76] which is more different than the one. So
+[34:15.92] we feel even for us like we look them at
+[34:18.16] an orar kind of company innovation will
+[34:20.40] be a core at clap store and that will
+[34:22.56] help us stand out from the Chinese
+[34:24.08] competitors from the competitors in
+[34:25.36] India and grow us in the longer term. So
+[34:27.28] >> and you both are you both are core
+[34:28.88] innovators like when it comes to your
+[34:30.64] core your core skills are you both
+[34:32.00] engineer tinkering kind of
+[34:36.32] >> that's your core as founders.
+[34:37.52] >> Yeah. Yeah. But no background, no
+[34:39.04] education. But that doesn't matter.
+[34:41.28] >> So
+[34:41.84] >> I can see their eyes twinkle when they
+[34:43.84] talk about designing and all.
+[34:45.04] >> So basically this business is about
+[34:47.04] still being children and playing
+[34:53.44] it's just like what they're doing even
+[34:55.68] if they're just sitting while they just
+[34:57.36] sitting
+[34:57.92] >> kind of work which is not working. But
+[35:00.16] coming back to to your point, so do you
+[35:02.32] think that uh there are suppliers today
+[35:04.64] or in the future in India or outside who
+[35:07.28] can manufacture at the same quality that
+[35:09.12] you do and can you have systems that
+[35:10.40] manage that quality? uh might be
+[35:12.72] difficult but if we just go sit with
+[35:15.12] them and expand them but scale
+[35:19.68] partnership with yes yes
+[35:22.00] so maybe your answer so if you look at
+[35:23.84] an example of chip manufacturing right
+[35:26.88] very high tech America used to be market
+[35:30.32] leader very much in manufacturer of
+[35:31.76] chips so Intel Intel inside
+[35:34.56] >> so then what happened over a period of
+[35:36.08] time America Americans realized that
+[35:38.40] their advantage was design
+[35:40.24] >> innovation
+[35:41.44] So they focused and that's where they
+[35:43.12] were adding the value.
+[35:44.24] >> So they focused more and more on that
+[35:46.08] innovation
+[35:47.12] >> and design and getting the right chip
+[35:49.20] design and they have a stronghold on
+[35:50.64] that technology.
+[35:52.56] >> Manufacturing expertise and capability
+[35:55.52] ecosystem was in Taiwan.
+[35:57.36] >> So you now have TSMC in Taiwan. Now TSMC
+[35:59.92] manufactures chips which are designed by
+[36:01.76] everybody whether they are the Americans
+[36:03.28] or the Chinese. M
+[36:04.72] >> but if you look at the percentage of
+[36:06.56] profit that finally acres there's a
+[36:08.64] disproportionate profit that occurs
+[36:10.32] always to the apple designed in
+[36:11.76] California the profit sits in California
+[36:14.48] >> so if you think of Lululemon $100
+[36:18.80] to Chinese supplier US
+[36:22.48] $91
+[36:26.56] the cost
+[36:28.00] >> so while it is very it looks
+[36:31.84] so like you are giving business to them
+[36:33.60] Right. Right.
+[36:34.16] >> But actually you are capturing 90% of
+[36:36.00] the profit because you have the
+[36:37.52] innovation and the brand
+[36:39.20] >> and then you're finding the most
+[36:40.72] reliable supply source.
+[36:42.88] >> Okay.
+[36:43.28] >> The problem with this is key if you make
+[36:46.08] your suppliers people who are your
+[36:47.76] competitors and innovation f there is a
+[36:49.28] problem. So you I think
+[36:52.32] >> the IP and the specialness in this
+[36:54.16] business is in the creativity and
+[36:56.32] finding the right toys.
+[36:57.60] >> Okay. and the brand and the brand. But
+[37:01.04] just to point
+[37:02.80] >> just to add on to this
+[37:06.32] to do it he does everything but then
+[37:08.64] what about the single vendor dependency
+[37:10.40] or just a manufacturer dependency we
+[37:12.00] will have on them. Huh. So look in every
+[37:14.80] business needs to have a BCP right BCP
+[37:18.24] disaster. Okay.
+[37:19.68] >> So what is your recovery plan? Okay. And
+[37:29.44] what are the next steps that you'll do?
+[37:30.72] Okay.
+[37:33.28] You've got let's say
+[37:46.80] compared to this year let's say
+[37:58.96] vendor may be good enough to take you
+[38:00.96] for the next three or 4 years
+[38:02.56] >> and you can drive growth with them and
+[38:04.64] you can help them and you can become a
+[38:05.92] strong partnership. Dependence is not an
+[38:07.84] issue
+[38:11.76] and a dependency
+[38:14.08] is a problem if there is either
+[38:15.28] mortality of the vendor or there is bad
+[38:17.20] faith with the vendor.
+[38:18.08] >> Okay. Okay.
+[38:19.12] >> Or like he's saying compet
+[38:21.92] >> you smart like if you own the IP and the
+[38:24.72] brand and you are good with the vendor
+[38:26.64] in terms of business terms payment etc.
+[38:28.80] Yeah,
+[38:29.12] >> you can always create two, three, four
+[38:30.56] opportunities and for example for you
+[38:32.40] might have something else for you create
+[38:34.24] an ecosystem but design innovation and
+[38:36.32] sit with you. Then you are both focusing
+[38:38.08] on
+[38:39.20] >> the thing that actually creates most
+[38:40.56] value for you
+[38:41.76] >> as opposed to the thing which gives you
+[38:43.28] a lot of
+[38:45.36] effort to reward ratio becomes very
+[38:46.88] high.
+[38:47.20] >> Right. Right.
+[38:48.24] >> Yeah. Okay. You you guys your core
+[38:50.48] competence is key we are the best
+[38:52.56] quality and best cost producers.
+[38:54.48] >> Okay.
+[38:55.04] >> In which case there's a core competitive
+[38:56.64] advantage. You should absolutely drive
+[38:58.00] that because doing that person yourself
+[39:00.16] makes sure no one can compete with you.
+[39:02.08] >> The question is what can make you make
+[39:04.48] you bulletproof.
+[39:06.16] >> Okay.
+[39:06.48] >> Is your manufacturing strength going to
+[39:08.08] make you bulletproof or is your
+[39:09.60] innovation and design going to make you
+[39:11.12] bulletproof?
+[39:11.44] >> Innovation and design will
+[39:12.96] >> 100%. So in some industries and I don't
+[39:15.84] want to be saying that you know you
+[39:17.52] should outsource everything to China
+[39:19.04] because you should not
+[39:20.16] >> and I don't want to be saying that you
+[39:21.28] should not manufacture in India because
+[39:22.48] you should manufacture in India also
+[39:24.24] >> but you need to figure out what you in
+[39:26.40] your particular case are best at
+[39:28.16] >> and leverage that
+[39:32.96] they have multiple vendors they have
+[39:34.40] more than 500 skills that's the answer
+[39:39.12] >> the best vendor for this and the best
+[39:40.96] vendor for a plush toy
+[39:42.40] >> right maybe different because yes we are
+[39:45.04] currently software the core is we want
+[39:47.28] to integrate electronics in every toy
+[39:48.80] that's the core thesis
+[39:50.16] >> just to summarize and synthesize within
+[39:52.40] uh
+[39:53.04] >> on growth again very clear there are
+[39:55.36] three four axis of growth but
+[39:57.36] >> brand language design language is is is
+[40:00.24] the core and keep building out of that
+[40:01.76] assortment will be critical
+[40:02.96] >> right
+[40:03.36] >> on manufacturing versus
+[40:05.60] >> outsourcing versus own focus on what
+[40:07.52] gives you guys most energy
+[40:08.72] >> okay
+[40:09.12] >> so there is always a hands and legs of
+[40:11.04] business there is brain of business
+[40:12.24] there's art of business.
+[40:13.92] >> Heart and brain typically should be kept
+[40:16.00] closed. Sometimes brain can go out on
+[40:17.84] certain things which are not closed.
+[40:19.20] >> Hand and legs can always go out.
+[40:21.60] >> Right?
+[40:22.32] >> And you are the you have to figure out
+[40:23.60] what the heart is.
+[40:24.88] >> Exactly.
+[40:25.36] >> In Bombay Shaving Company's case, for
+[40:26.64] example, product design and and and
+[40:29.84] brand is the heart of the business.
+[40:31.60] >> Got it.
+[40:32.32] >> And now with trimmers, manufacturing is
+[40:34.72] becoming heart of the business.
+[40:35.68] >> Okay.
+[40:36.08] >> Now we have started moving into making
+[40:37.44] our own factories and so on. But again
+[40:39.36] there also we work with network and
+[40:41.44] manufacturers
+[40:42.64] >> to a lot.
+[40:43.36] >> But you have to as founders figure out.
+[40:45.44] So one of you are like a big factory guy
+[40:47.36] and manufacturing was your but you go
+[40:49.36] you both seem like tinkering engineering
+[40:52.16] kids friendly design people. That's
+[40:54.80] where the energy and the passion come
+[40:55.92] from.
+[40:56.64] >> That is your heart of your business.
+[40:58.08] >> Okay. Okay.
+[40:58.64] >> The brand then is the like you said
+[41:00.00] bulletproofs the heart.
+[41:01.68] >> Everything else you guys can take
+[41:05.92] the design language. Yeah. mind space.
+[41:09.20] >> So
+[41:12.80] I don't know how do you think about
+[41:14.48] >> Well, you've built an amazingly look I'd
+[41:17.60] say that a brand eventually is um think
+[41:20.80] about it almost like God bi
+[41:27.20] is it consistent always? No.
+[41:28.96] >> How how does your brand think of a brand
+[41:31.60] as a person?
+[41:33.28] >> A person has a personality.
+[41:34.64] >> Okay.
+[41:34.96] >> A person has a set of ethics. Okay.
+[41:37.60] >> So whenever you ask the person a
+[41:39.28] question, they should answer from their
+[41:41.04] heart, from the ethics that they have,
+[41:42.48] from the personality that they have,
+[41:43.60] from the boundaries that they've set.
+[41:45.28] >> They should be instantly recognizable.
+[41:46.64] When you see someone, you know, you
+[41:48.72] know,
+[41:50.72] Jesus got it,
+[42:00.08] you still can recognize it. So there are
+[42:01.60] some elements of a brand which are
+[42:03.44] totally recognizable. What are those
+[42:04.72] elements in your case? What is that
+[42:06.08] personality in your case? What are the
+[42:07.44] values of the brand?
+[42:08.56] >> How how do you always show up consistent
+[42:10.80] to your personalities and values?
+[42:12.40] >> What will your brand never do?
+[42:13.68] >> Mhm.
+[42:14.24] >> How do you know that this is
+[42:18.08] got it? Content consistent
+[42:22.32] like what are you saying? Answer these
+[42:23.36] questions. Who is the brand? It comes
+[42:24.48] from the both of you.
+[42:25.20] >> Right. Right. Right.
+[42:26.00] >> So for example, Bombay sharing company.
+[42:27.20] I'll give you example of Bomb because
+[42:28.40] that's the only thing I know. Right.
+[42:29.60] Bombay sharing company is a
+[42:31.12] culturecoded.
+[42:32.48] >> Okay.
+[42:33.12] >> Young consumer first.
+[42:34.56] >> Okay. Okay.
+[42:35.84] >> Devices for hair expression brand
+[42:38.56] >> hair expressed
+[42:40.40] >> culture generation
+[42:43.68] new age
+[42:44.48] >> things that are happening in their
+[42:45.44] cultural life whether it's
+[42:47.12] >> they hip hop whether it's sports whether
+[42:48.96] it's
+[42:49.76] >> stuff like that what is Amul is taste of
+[42:53.36] India dairy products for India very
+[42:56.64] clear
+[42:56.96] >> right defined
+[42:58.48] >> now it manifests itself in very
+[43:00.40] consistent ways will do it through
+[43:02.88] >> culturally relevant like they will
+[43:04.40] Virati Virati whatever they'll put up
+[43:07.84] something like that and every week
+[43:09.04] they'll put up something
+[43:10.00] >> right right
+[43:11.12] >> company gets involved in
+[43:12.48] >> you know the logo the colors the choice
+[43:15.28] of words the choice of faces the
+[43:16.96] expressions the ads whether it's a
+[43:18.88] Facebook ad whether it's Amazon listing
+[43:20.24] page whether it's a packaging design
+[43:24.16] it comes out in that manifestation
+[43:27.04] got it
+[43:27.36] >> you have to write down what the brand
+[43:28.80] book looks like
+[43:29.44] >> so there are frameworks to do this and
+[43:30.96] maybe you can take the Bombay shaving
+[43:32.24] company framework and try and see how
+[43:33.44] you fit into
+[43:34.96] If you want I can give you some also but
+[43:36.40] there are many such frameworks you write
+[43:38.64] it down and sometimes take decision call
+[43:40.72] is this
+[43:41.36] >> and clap is not this because we think so
+[43:44.48] >> if I decide level
+[43:46.64] >> there's no right or wrong it is
+[43:48.00] basically about you both because you are
+[43:49.20] the heart of the person what you both
+[43:50.88] think clap is will be what clap is
+[43:53.12] >> understood
+[43:54.00] >> got it got it
+[43:55.12] >> it's creative like to create it
+[43:56.32] >> so there is some something in your
+[43:58.24] expression when you talk about your toys
+[43:59.60] is clap store is about the joy of
+[44:01.60] playing
+[44:03.20] >> somehow Right, right, right.
+[44:05.52] >> Okay.
+[44:06.16] >> And okay, put it down.
+[44:07.28] >> How do you capture that emotion
+[44:08.96] >> and how do you do it in a way that
+[44:10.16] people associate it with this?
+[44:11.92] >> Okay.
+[44:12.56] >> Okay.
+[44:14.08] >> Got it.
+[44:14.72] >> Got it.
+[44:15.52] >> Do we have time for one last question?
+[44:17.28] >> Yeah. Yeah, of course.
+[44:18.16] >> Uh for us, uh not always the buyer is
+[44:22.16] the end consumer like and never the
+[44:24.16] buyer is the end consumer. Uh it is the
+[44:26.40] kid who plays with and the mother who
+[44:27.92] buys it. So from
+[44:32.08] And but what you think should be
+[44:35.52] something that we should focus on so
+[44:37.04] that the buyer also feels that it is a
+[44:39.04] value addition for kid in terms of
+[44:41.12] everything maybe that screenfree aspect
+[44:43.92] the education aspect or maybe the
+[44:45.60] outcome aspect.
+[44:46.88] >> So first of all you need to figure out
+[44:48.96] buyers you have to get the archetypes
+[44:52.32] buyer but I may be wrong. So one of them
+[44:53.92] is parent
+[44:55.52] >> and the other is gift.
+[44:57.28] >> Right. I don't know what the ratio is.
+[44:58.48] I'd say maybe 50/50 maybe
+[45:00.64] >> maybe 60 70 30
+[45:02.48] >> 70 parent 30
+[45:04.72] >> okay so now uh the parent parent
+[45:10.00] requirements for a product
+[45:11.84] >> may be different from the child's
+[45:13.04] requirement for the product
+[45:14.16] >> okay
+[45:14.64] >> so the child requirement may be innocent
+[45:16.88] joy maybe I want to spend time with it
+[45:19.36] maybe more noise
+[45:20.96] >> but the parents requirement is
+[45:24.48] exactly right right
+[45:27.28] busy
+[45:34.56] Okay, that might be also basic
+[45:36.40] requirement basic right. So if you can
+[45:39.20] answer that requirement for the parent
+[45:41.12] or the mother whatever that requirement
+[45:42.48] is on your packaging,
+[45:44.00] >> right?
+[45:44.56] >> While at the same time providing the
+[45:46.08] reassurance key the child will like
+[45:47.76] everything they want,
+[45:48.80] >> then it may make it easier for that
+[45:50.08] person to buy you and you may be more
+[45:51.36] differentiated from other toys.
+[45:52.72] >> Got it.
+[45:53.04] >> Okay. Got it.
+[45:53.92] >> Okay. So from a marketing gifter point
+[45:55.84] of view. So if you're giving someone a
+[45:58.56] gift, what do you want? The first thing
+[46:00.32] is you want to make sure that the gift
+[46:02.08] is perceived value is more than the
+[46:04.40] actual value.
+[46:05.36] >> Okay.
+[46:08.40] Right. Right. Right. Right.
+[46:10.48] >> So how do you get those premium cues in
+[46:13.52] >> for the same price? Okay. How do you get
+[46:16.88] small things that people add value to
+[46:19.36] your packaging that people think
+[46:23.68] right
+[46:25.68] the parent may not care about the
+[46:26.96] packaging at all
+[46:28.96] the giftter will really care for the
+[46:30.24] packaging
+[46:34.72] you have to be much more careful
+[46:36.40] >> okay okay
+[46:37.28] >> so again um size of gift
+[46:41.52] >> in India size of gift should be big the
+[46:44.08] thing inside may be
+[46:45.36] Right, right, right, right, right.
+[46:47.12] >> But so look at jewelry
+[46:49.44] >> or beautiful watch. You have a big box
+[46:53.20] contrast but beautifully presented.
+[46:55.12] >> Right. Right. Okay. Got it.
+[46:57.20] >> Got it.
+[46:57.76] >> So there are a lot of cultural nuances.
+[46:59.92] >> But the moment you know customer,
+[47:04.08] >> you can decide.
+[47:06.80] >> How do you meet their needs? Not just
+[47:08.00] the child.
+[47:08.48] >> The child's needs. Got it.
+[47:09.36] >> And of course you always have to meet
+[47:10.40] the child's
+[47:10.72] >> needs. Got it. Got it.
+[47:12.80] >> What's your capital situation? Uh
+[47:14.80] currently
+[47:16.16] >> are you raising money?
+[47:17.12] >> Yeah, we are raising right now. So uh we
+[47:19.52] are raising around 10 CR at 40 pre money
+[47:22.00] which may say around five has already
+[47:23.92] been committed and have started it. Five
+[47:26.16] is something we are still talking who is
+[47:27.84] doing the five
+[47:28.56] >> uh three through kishor's angel network
+[47:31.28] one through the WTF fund and
+[47:32.88] >> they're doubling down.
+[47:33.76] >> Yeah. and one from uh India founder
+[47:36.96] friends cure footsk founder dilipumar
+[47:39.44] roman si them all and palm's founder the
+[47:43.04] brand from puli
+[47:44.48] >> got it yes got it
+[47:45.52] >> have we evaluated
+[47:47.12] >> yeah we have uh at the time we were have
+[47:49.76] a hold investing four months back
+[47:52.00] >> are we have we opened up our investing
+[47:53.60] thing right now
+[47:54.80] >> no we don't
+[47:55.92] >> okay
+[47:56.56] >> let us know before you close the rounds
+[47:58.08] >> yes yes
+[47:59.20] >> is it okay to take some extra capital
+[48:01.12] like I'm very happy to I think you're on
+[48:04.00] to something big.
+[48:04.96] >> You guys are very impressive at your
+[48:06.96] age.
+[48:07.76] >> This kind of maturity, large market. I
+[48:09.68] think there's an opportunity to build a
+[48:10.80] global business from India.
+[48:12.08] >> Yes.
+[48:12.48] >> I think we need to find ways to get
+[48:14.16] dollars inside the country. That's very
+[48:16.24] >> one more thought. Uh your toys are built
+[48:20.00] for a real audience.
+[48:22.48] >> Mhm. So I know a lot of interesting
+[48:24.56] brands from a few interesting brands
+[48:26.16] from India that have gone and created
+[48:27.92] multi- cr multi- tens of crores of
+[48:31.12] business purely on the Tik Tok store in
+[48:33.60] America.
+[48:34.16] >> America okay Indian Indian brands
+[48:35.92] >> Indian brands with zero employees in
+[48:37.60] America.
+[48:38.40] >> Okay great
+[48:39.20] >> building on Tik Tok
+[48:40.48] >> huge and you can build great content on
+[48:43.28] Tik Tok shop with all of this.
+[48:44.64] >> Okay so think of that.
+[48:46.40] >> Yes we can talk this Tik Tok will be
+[48:48.80] huge for you I think.
+[48:49.84] >> Okay.
+[48:51.44] Got it. Great. Vang thank you so much
+[48:53.84] for coming on the barber shop and
+[48:55.68] sharing this inspiring journey. I'm
+[48:57.20] hoping that after this discussion there
+[48:58.24] is at least some direction
+[49:00.08] >> for you and also for our viewers to
+[49:01.60] think about in their lives if they ever
+[49:03.20] start a business or if they're in their
+[49:04.40] business. I'm sure they are grappling
+[49:05.92] with questions like this and for me I
+[49:07.68] always learn whenever I'm around young
+[49:09.28] founders mentors like Adi. So thank you
+[49:11.12] for spending the time.
+[49:13.44] Thank you. Awesome.

@@ -83,10 +83,18 @@ class TestBuildRenderCmd:
 
     def test_crop_filter_has_max_guard(self):
         cmd = _build_render_cmd("/tmp/input.mp4", "/tmp/output.mp4")
-        vf_arg = cmd[cmd.index("-vf") + 1]
-        # The crop expression should have a max(..., 2) guard
-        assert "max(min(" in vf_arg
-        assert ",2)" in vf_arg
+        # Landscape input uses filter_complex with blur-fill background
+        if "-filter_complex" in cmd:
+            fc_arg = cmd[cmd.index("-filter_complex") + 1]
+            assert "max(min(" in fc_arg
+            assert ",2)" in fc_arg
+            # Verify blur-fill background is present
+            assert "gblur=sigma=" in fc_arg
+            assert "overlay=" in fc_arg
+        else:
+            vf_arg = cmd[cmd.index("-vf") + 1]
+            assert "max(min(" in vf_arg
+            assert ",2)" in vf_arg
 
     def test_command_includes_required_flags(self):
         cmd = _build_render_cmd("/tmp/input.mp4", "/tmp/output.mp4")

@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 
 from app.models.user import User
 from app.models.admin import ProviderConfig
-from app.exceptions import ResourceNotFoundError, HookCutError, InvalidStateError
+from app.exceptions import ResourceNotFoundError, InvalidStateError
 
 logger = logging.getLogger(__name__)
 

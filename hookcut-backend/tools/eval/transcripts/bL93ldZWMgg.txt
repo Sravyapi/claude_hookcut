@@ -1,0 +1,362 @@
+[0:00.16] Indian space techch company Agnikul
+[0:01.76] Cosmos wants to put an AI data center in
+[0:04.64] Earth's orbit by the end of 2026.
+[0:07.84] Now I know what many of you are
+[0:09.20] thinking. Even Sam Alman thinks that
+[0:11.28] this is a ridiculous idea. But Agnikul's
+[0:14.08] founder Shinat Ravi Chandran disagrees
+[0:16.24] and so does Elon Musk. According to
+[0:18.24] them, putting AI data centers in space
+[0:20.56] is the only long-term solution to the
+[0:22.80] energy cooling and infrared constraints
+[0:25.04] of developing AI on Earth. But the
+[0:27.60] question is can Agnikul Cosmos do it
+[0:29.92] that do in less than a year. Welcome to
+[0:32.00] our weekly Indian startup news show. I'm
+[0:34.08] Panka your host and you're watching
+[0:35.84] backstage with millionaires a channel
+[0:37.60] that's also part of Zerodha's 01
+[0:39.52] network.
+[0:44.96] Okay before we start this week we
+[0:46.64] launched one of the most requested
+[0:48.32] features for our personal finance app
+[0:50.24] Finanjo and that feature is goal-based
+[0:52.88] investing. See, to achieve any long-term
+[0:54.96] financial goal like buying a car or
+[0:56.80] buying a house before a certain age, you
+[0:59.04] need to systematically save and invest
+[1:01.12] your money for a long period. And this
+[1:03.36] planning is extremely hard, which is why
+[1:05.44] a lot of us don't achieve these goals on
+[1:07.68] time. And this is what we're trying to
+[1:09.04] solve with this new feature in Finanjo.
+[1:11.20] Here you can set up a goal in the time
+[1:12.96] period to achieve that goal [music] and
+[1:14.96] finan will help you to achieve this step
+[1:16.80] by step. The apps AI will tell you
+[1:18.64] exactly how much you need to save and
+[1:20.40] invest every month. With our platform,
+[1:22.56] you can start investing with as little
+[1:24.16] as 100 rupees per day in liquid funds
+[1:26.72] with guaranteed returns of up to 7%. We
+[1:29.60] partnered with ICICI access and Adita
+[1:32.08] Brill Fund houses to ensure your money
+[1:34.08] remains safe and growing. And if for
+[1:36.40] some reason you lag behind on your plan,
+[1:38.25] [music] the app will reset your goal and
+[1:40.24] you can continue on your journey. So if
+[1:42.64] you want to try out this feature,
+[1:43.84] download Finanjo by clicking on the link
+[1:45.68] in the description [music] of this
+[1:46.96] video. And if you already have Finanjo
+[1:49.04] app, check out this new feature in the
+[1:50.80] grow section of the app. And now coming
+[1:53.04] back to the main video. So a few weeks
+[1:54.96] back, Agnikul announced that they have
+[1:56.48] partnered with NE cloud to host an AI
+[1:58.56] data platform in space by the end of
+[2:00.64] 2026. And this would be a prototype by
+[2:03.28] the way. And if it is successful, the
+[2:04.96] team will then work on making it
+[2:06.40] commercially viable by reaching out to
+[2:08.48] potential clients. Now at the outset,
+[2:10.64] this looks like a crazy ambitious idea.
+[2:12.96] And a lot of people are dissing this.
+[2:14.96] But the thing is there are some very
+[2:16.80] strong arguments in favor of this idea
+[2:18.96] and the biggest of which is energy or
+[2:21.44] the lack of it [music] on earth. See
+[2:23.36] everyone knows that AI models consume a
+[2:25.76] lot of energy. But that phrase a lot of
+[2:28.00] energy doesn't really land until you see
+[2:30.24] the actual numbers. [music] The Chad
+[2:31.84] GBD4 model for example which came out in
+[2:34.08] 2023 consumed over 50,000 megawatt hour
+[2:37.68] of electricity. And that energy by the
+[2:39.52] way is enough to power 43,000 Indian
+[2:42.24] households for a year. And that's just
+[2:44.24] GPD4. Today we have even bigger models
+[2:46.80] like Llama 4 and Chad GPD 5.3 which are
+[2:50.32] approaching 1 terowatt hour of energy
+[2:52.56] consumption which is a massive massive
+[2:54.56] number. Along with this every time we
+[2:56.32] ask a query to these AI models they
+[2:58.64] again use energy to give [music] you a
+[3:00.72] response and since there are billions of
+[3:02.88] queries asked every single day this
+[3:04.96] makes the total energy consumption a
+[3:07.44] mindbogling number. [music] And then
+[3:09.20] there is water needed and this is the
+[3:10.96] part people don't talk about enough.
+[3:12.96] See, AI data centers use massive amount
+[3:15.36] of water for cooling. In fact, a
+[3:17.44] medium-sized data center can consume
+[3:19.20] around 416 million L of water a year,
+[3:23.04] which is the amount of water 1 lakh
+[3:25.12] Indian households use in a day. And
+[3:27.44] that's just one data center. In 2023,
+[3:30.16] Google's entire fleet of data centers
+[3:32.24] consume nearly 23 billion L of water.
+[3:35.52] And that's enough water for over a
+[3:37.52] million people annually. And this is
+[3:39.44] where it becomes an India problem. India
+[3:41.52] has 18% of the world's population but
+[3:44.00] only 4% of its freshwater. We are
+[3:46.56] already one of the most water stressed
+[3:48.40] countries on the planet. Nearly 600
+[3:50.48] million Indians face high water stress
+[3:52.64] every year. 21 cities including Delhi,
+[3:55.44] Bengaluru and Chennai are projected to
+[3:57.52] run out of groundwater by 2030. At the
+[4:00.40] same time, we want to be an AI
+[4:02.08] superpower. The government has launched
+[4:03.52] the ambitious India AI mission for that.
+[4:06.08] But the energy and water demands to make
+[4:08.56] it a reality is just insane. Also, we
+[4:11.52] are inviting global companies to build
+[4:13.36] their data centers in India. So, all in
+[4:15.44] all, India more than any other country
+[4:17.52] needs a ton of energy and water and
+[4:20.00] Agnul Cosmos is trying to solve that
+[4:22.16] problem for India. See, [music] in
+[4:23.76] space, you have unlimited solar energy.
+[4:26.00] The sun is available to you 24/7. No
+[4:28.32] night cycles or monsoon clouds blocking
+[4:30.96] panels. And a solar panel in orbit
+[4:33.12] generates roughly 10 times more power
+[4:35.28] than the same panel on Earth. And that's
+[4:37.28] because it receives direct sunlight
+[4:39.12] including UV rays. Also, since every bit
+[4:41.44] of energy is coming from solar, there
+[4:43.44] are zero emissions or environmental
+[4:45.76] damage. Then another great thing is that
+[4:47.84] you don't need water at all. Space is
+[4:50.32] near absolute zero [music] and so you
+[4:52.32] radiate heat directly into the vacuum
+[4:54.40] and because of that you don't need any
+[4:56.08] cooling towers or water systems to cool
+[4:58.56] down your data centers and hence water
+[5:00.96] consumption is near zero. So all in all
+[5:03.52] this sounds like a perfect solution on
+[5:05.36] paper but we need to get many things
+[5:07.20] right to make it a reality and the first
+[5:09.44] is the massive launch cost and weight.
+[5:11.84] See Agnikul's Agniban rocket can carry
+[5:14.00] about 300 kg to low earth orbit. A small
+[5:17.04] data center on the other hand, even a
+[5:18.80] prototype weighs [music] several tons.
+[5:21.20] And so you're looking at multiple
+[5:22.72] launches, each by the way costing
+[5:24.56] millions of dollars. And since Agnicle
+[5:26.64] does not have reusable rockets yet, the
+[5:28.72] cost is going to be massive. The second
+[5:30.88] issue is cooling. And this one surprises
+[5:33.28] people. Yes, space is cold, but in a
+[5:35.84] vacuum, there is no air to carry the
+[5:38.00] heat away. So your only option is
+[5:40.24] thermal radiation. Essentially, your
+[5:42.24] hardware has to glow hot and radiate
+[5:44.40] heat away like a piece of iron. But that
+[5:46.56] is way inefficient compared to earth
+[5:48.72] where you can just push air or water
+[5:50.40] away through a system. The third problem
+[5:52.40] is radiations. See earth's atmosphere
+[5:55.28] protects the data center electronics
+[5:57.12] from constant bombardment of high energy
+[5:59.52] cosmic particles. In orbit though there
+[6:01.76] is nothing between your servers and
+[6:03.68] space radiation and that causes issues
+[6:05.84] like memory errors, hardware degradation
+[6:07.92] and bit flips. So you would need heavy
+[6:10.40] shielding which adds more weight and
+[6:12.64] which means the launch gets even more
+[6:14.80] costlier. And the fourth issue is
+[6:16.56] maintenance. See, even if something
+[6:18.00] breaks on earth, you can send a
+[6:19.60] technician. But in space, you either
+[6:21.76] have to build very expensive robotic
+[6:23.60] repair system or you need to send real
+[6:25.68] humans to repair them. And neither of
+[6:27.68] them is cheap. So here's the thing. The
+[6:29.92] problem Agnikol is trying to solve is
+[6:31.84] very very important for India. But the
+[6:34.24] technology and economics are just not
+[6:36.48] there yet. So Agnikul's plans for
+[6:38.40] commercial operations by 2027 might be a
+[6:41.52] stretch. In fact, it might be a couple
+[6:43.36] more years before it becomes financially
+[6:45.44] viable. And at the same time, we need
+[6:47.36] some breakthroughs [music] in thermal
+[6:48.88] management, radiation shielding, launch
+[6:50.80] economics, and autonomous maintenance
+[6:53.12] all at once to make this work. So, my
+[6:55.84] honest take is this. Agnikol might get a
+[6:57.92] small prototype into orbit by 2027. A
+[7:00.88] few servers, a proof of concept. It will
+[7:03.36] probably work technically, but it won't
+[7:05.52] be commercially viable. At least not
+[7:07.44] yet. But here is something that matters
+[7:09.36] right now. By forcing these kinds of
+[7:11.12] conversations, by making people
+[7:12.72] seriously think about space as a
+[7:15.20] solution to Earth's resource
+[7:16.40] constraints, Agnikol is doing something
+[7:18.64] genuinely valuable because whether or
+[7:20.64] not they crack it, somebody has to.
+[7:23.04] India cannot build its AI future on
+[7:25.20] energy and water that it does not have.
+[7:27.68] So is this a genius or a ridiculous
+[7:29.84] idea? Probably a little bit of both.
+[7:32.00] It's genius as a long-term vision, but
+[7:34.00] certainly sounds ridiculous as a
+[7:35.76] near-term solution. But the thing is in
+[7:37.84] startups the ridiculous ideas are often
+[7:40.00] the ones that eventually reshape the
+[7:42.00] world just never as fast as the founders
+[7:44.08] think. All right, next up on February
+[7:46.00] 27, 2026, Rishi Gupta, the MD and CEO of
+[7:49.12] Finnopayments Bank was arrested by the
+[7:51.36] director general of GST Intelligence.
+[7:53.36] And what makes this even more shocking
+[7:55.20] is the fact that RBI had just cleared
+[7:57.44] him for another three-year term. So what
+[7:59.76] exactly happened? Investigators have
+[8:01.36] alleged that Rishi was one of the
+[8:02.80] masterminds behind an organized
+[8:04.32] syndicate that routed money from illegal
+[8:06.40] online gaming platforms through shell
+[8:08.40] companies and middlemen tied to Feno.
+[8:10.72] Two firms named in the case were found
+[8:12.48] to be ghost companies and were allegedly
+[8:14.48] running online gaming platforms without
+[8:16.48] declaring their actual earnings or
+[8:18.24] paying GST. Around 2500 cr rupees was
+[8:21.04] allegedly routed through these merchants
+[8:23.04] with the GST evasion estimated at 840 cr
+[8:26.64] rupees. But Fino was quick to push back.
+[8:29.28] The bank said that the investigation is
+[8:31.12] about third-party program managers, not
+[8:33.44] the bank's own compliance. Also, they
+[8:35.36] have pointed out that they had already
+[8:36.80] cut off real money gaming merchants back
+[8:38.80] in August 2025. And they've also said
+[8:41.76] that no other bank official is under the
+[8:44.00] scanner. This is just about Rishi alone.
+[8:46.40] And now with the CEO out of the picture,
+[8:48.32] the board has brought in CFO Kathan
+[8:50.24] Merchant as their interim head to keep
+[8:52.64] things running. He came out to assure
+[8:54.48] investors saying that the customer
+[8:56.08] balances are safe and the bank is still
+[8:58.08] opening around 10,000 new accounts every
+[9:00.24] day. But here is what makes the timing
+[9:02.40] particularly bad for Feno. Just in
+[9:04.32] December 2025, Fino had received RBI's
+[9:06.88] inprincipal approval to upgrade them
+[9:08.72] from a payments bank to a small finance
+[9:11.52] bank. One of the biggest milestone in
+[9:13.60] the company's history. And now with
+[9:15.44] their CEO arrested and regulators paying
+[9:17.52] close attention, the entire bank's
+[9:19.36] journey is under a cloud.
+[9:22.32] All right, moving on to some quick news
+[9:23.76] updates. Aman Gupta, the founder of
+[9:25.52] Boat, has launched a new venture called
+[9:27.68] Offbeat Studios, [music] making his
+[9:29.36] first entrepreneurial move after
+[9:30.96] stepping away from his day-to-day
+[9:32.32] operations at Bo. And all of this is
+[9:34.40] happening just before Bo announced their
+[9:36.40] IPO. Regarding his new plan, Ammon has
+[9:38.40] called this new journey as Ammon 2.0,
+[9:40.88] but he hasn't shared any details about
+[9:42.72] this new venture yet. All right, next
+[9:44.64] up, Fintech Unicorn Money View has filed
+[9:46.72] its DRHP with SEBI for an IPO worth
+[9:49.28] 1,500 cr rupees. The company will use
+[9:52.00] most of the funds for expanding their
+[9:53.84] lending business, which includes
+[9:55.28] boosting their loan dispersal and
+[9:57.12] strengthening the capital base of its
+[9:58.64] NBFC firm, Wisdom Finance. All right,
+[10:01.04] next up, another fintech unicorn, Oxo
+[10:03.20] Financials, is entering the fund
+[10:05.12] management business with the launch of
+[10:06.96] Oxo Credit Fund 1, a new performing
+[10:09.60] credit fund aimed at providing secured
+[10:11.68] loans to midsized companies. The fund
+[10:13.84] has already completed its first close,
+[10:16.00] attracting investors including HNI,
+[10:18.08] family offices, and institutions. The
+[10:20.64] company has said that it'll focus on
+[10:22.32] growth capital for investment grade
+[10:24.40] businesses with an emphasis on ESG
+[10:26.72] compliant companies. All right. Next up,
+[10:28.80] seafood supply chain startup Captain
+[10:30.64] Fresh has acquired Spainbased tuna
+[10:32.64] processor Prime and hence expanding its
+[10:35.04] footprint in the global seafood market.
+[10:37.60] Prime, which specializes in premium
+[10:39.44] yellowfin tuna, services customers
+[10:41.36] across 33 countries and generates more
+[10:43.84] than €180 million or almost €213 million
+[10:48.00] in annual revenue. And this acquisition
+[10:50.16] gives Captain Fresh a major processing
+[10:52.24] base in Europe.
+[10:54.80] All right, moving on to the funding news
+[10:56.32] segment for today's video. This week,
+[10:57.92] Indian startups raised a total of $64
+[11:00.16] million, which is significantly lower
+[11:02.16] than last week's $194 million. And now,
+[11:04.64] let's take a look at some of the
+[11:05.68] companies that have raised funds this
+[11:07.20] week. The first one I want to talk about
+[11:08.64] is Quickcommerce startup Pronto. An app
+[11:10.96] that gets trained and verified house
+[11:12.88] help to your door in just 10 minutes for
+[11:15.36] stuff like cleaning, laundry,
+[11:16.80] dishwashing, or even chopping veggies.
+[11:19.12] Pronto's co-founder and CEO, Anjali
+[11:20.88] Sardana, said that the company is now
+[11:22.48] handling over $15,000 bookings per day,
+[11:25.20] and they have just raised $25 million in
+[11:27.28] their series B round at a $100 million
+[11:29.84] valuation. Following that, we have
+[11:31.76] Inamo, which is like the
+[11:32.96] behind-the-scenes engine that's powering
+[11:34.88] India's quick commerce boom [music] by
+[11:36.88] helping big platforms like Blinket or
+[11:38.88] Zeppto to run their dark stores and
+[11:41.28] handle their last mile deliveries and
+[11:43.60] they have raised $8 million. After that,
+[11:45.68] we have a Mumbai based skincare brand
+[11:47.36] called Ras Luxury Skincare, which is a
+[11:49.84] premium and natural beauty brand that
+[11:52.08] crafts high-end facial oils, serums,
+[11:54.16] creams, and body care products using
+[11:56.48] 100% organic ingredients. and they have
+[11:59.12] raised $7.5 million in their series B
+[12:01.28] round. Next up, we have Bengaluru based
+[12:03.04] Stium AI which is building a full stack
+[12:05.12] open-source AI infrastructure that can
+[12:07.12] run generative AI models super
+[12:09.52] efficiently and cheaply without relying
+[12:11.84] on expensive foreign hardware like
+[12:13.60] Nvidia's GPUs and [music] they have
+[12:15.20] raised $4 million in their preede round.
+[12:17.36] And finally, we have Chundigard based
+[12:19.04] Bubble Me, which is India's first
+[12:20.80] magnesiumdriven wellness brand. They
+[12:23.04] create simple bath and body products
+[12:24.88] like bath salts, shower balms, balms,
+[12:27.28] body mists and soaks. And these things
+[12:29.76] help you in your sleep, stress relief
+[12:31.30] [music]
+[12:32.00] and muscle recovery. And they've raised
+[12:33.84] 1.5 crore rupees in their preed round.
+[12:36.16] All right, that's all the startup news I
+[12:37.60] have for you this week. Feel free to
+[12:39.04] check out Finanjo by clicking on the
+[12:40.56] link in the description down below.
+[12:42.48] Anyways, thank you so much for watching
+[12:44.00] and I'll see you in the next

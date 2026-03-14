@@ -1,0 +1,426 @@
+[0:00.16] In this hands-on, we're going to explore
+[0:02.32] how Langchain's core components work
+[0:04.80] together to build a simple yet powerful
+[0:07.04] AI application. [music] The code
+[0:08.96] provided demonstrates how to use
+[0:10.64] Langchain for a specific use case, like
+[0:13.28] summarizing text, etc. Now, let's go
+[0:16.00] step by step to understand how each part
+[0:18.32] of the code fits into Langchain's
+[0:20.16] ecosystem. First, let's understand
+[0:22.64] chains. In lang chain, a chain is a
+[0:25.68] sequence of operations that an LLM
+[0:28.08] performs. It can be a series of prompts,
+[0:30.96] models, or even external functions all
+[0:33.84] connected in a workflow. In this code,
+[0:36.32] we begin by importing the necessary
+[0:38.72] libraries and setting the open router
+[0:41.44] API key. Then we use requests to make a
+[0:44.96] direct HTTP request to verify
+[0:47.92] authentication with open router. [music]
+[0:50.00] So here you can see we have installed
+[0:52.40] the Python packages requests which is a
+[0:55.60] simple HTTP library for making API
+[0:58.80] requests and lang chain open AAI which
+[1:02.64] integrates lang chain with open AAI's
+[1:05.12] API to interact with language models
+[1:07.52] like GPT. Next we imported the OS and
+[1:11.12] request libraries where OS is used for
+[1:13.68] managing environment variables such as
+[1:15.68] storing API keys. We then set the open
+[1:18.40] router API key which authenticates our
+[1:21.28] connection to open router a third-party
+[1:23.84] service for handling LLMs like GPT. This
+[1:27.44] key authorizes access to open router
+[1:30.16] services. Following this we test the
+[1:32.72] authentication by sending a direct HTTP
+[1:36.32] request to open router ensuring the API
+[1:39.20] key works correctly before proceeding
+[1:41.60] with lang chain integration. The header
+[1:43.76] section passes the authorization header
+[1:45.76] with the API key and specifies the
+[1:48.24] content type. The payload contains the
+[1:50.40] actual test message to send to the API.
+[1:52.80] We use the requests post function to
+[1:54.96] send the post request with the URL,
+[1:57.12] headers, and payload. If the response is
+[1:59.44] successful and returns status code 200,
+[2:02.24] then we can proceed with lang. The
+[2:05.12] response status code shows whether the
+[2:07.20] request was successful and the responses
+[2:09.76] JSON function prints the model's
+[2:11.76] response to the test message. Next, we
+[2:14.32] move forward with Lang Chain's chain in
+[2:17.12] the code. After setting up
+[2:18.40] authentication, we move on to using
+[2:20.00] Langchain itself. First, we need to set
+[2:22.56] the environment variables. We begin by
+[2:25.12] storing the open router API key and base
+[2:28.00] URL in environment variables. These
+[2:30.64] environment variables will be used later
+[2:32.48] to authenticate the API request and
+[2:34.64] communicate with the open router
+[2:36.00] service. Then we need to import the
+[2:38.48] required libraries. One is chat open AAI
+[2:41.28] and the other is prompt template. Here
+[2:43.52] chat open AAI lets us interact with open
+[2:46.56] AAI's models through lang chain while
+[2:48.88] prompt template allows us to create
+[2:51.12] reusable and dynamic input prompts for
+[2:53.68] the model making things more consistent
+[2:55.84] and cutting down on repetition. [music]
+[2:57.76] Without prompt template, we'd have to
+[3:00.08] manually define the prompt structure
+[3:02.40] every time we want to interact with the
+[3:04.40] model, which can get tedious and lead to
+[3:07.12] mistakes, especially when handling
+[3:09.52] multiple inputs or more complex tasks.
+[3:12.80] Next, we create the model instance. We
+[3:15.44] instantiate the chat open AI model. Here
+[3:18.48] you can see the model is set to open
+[3:20.56] router auto and we use the open router
+[3:23.44] API key and base URL from the
+[3:26.24] environment variables to set up the
+[3:28.08] connection. And here the temperature is
+[3:30.00] set to 0.7 which controls how creative
+[3:33.04] the model's output is making sure the
+[3:35.12] responses are balanced. Next we define
+[3:38.08] the prompt template. This template tells
+[3:40.48] the model to summarize the provided
+[3:42.56] text. Here the text inside the curly
+[3:45.52] brackets will be replaced by the actual
+[3:48.16] input when the template is used. And
+[3:50.56] finally the chain is created by
+[3:53.20] combining the prompt and the model. Here
+[3:56.40] the vertical bar operator and lang chain
+[3:59.36] make sure that the output from the
+[4:01.20] prompt is passed as input to the model
+[4:04.00] creating a workflow. We then run the
+[4:06.24] chain with the input text to get the
+[4:08.24] summary and then we print out the
+[4:10.16] generated summary. So here you can see
+[4:12.96] we've generated a summary of the content
+[4:15.60] provided. Now let's move on to working
+[4:18.32] with agents. As we discussed in lang
+[4:21.04] chain, an agent is an intelligent system
+[4:24.48] that can decide which actions to take
+[4:27.20] based on the input it receives. Agents
+[4:29.84] can be programmed to use different tools
+[4:31.92] to complete tasks. So in this code, we
+[4:35.36] start by installing the necessary Python
+[4:37.84] packages. First, Langchain, which is a
+[4:41.28] core library that helps build workflows
+[4:43.92] powered by language models. It lets us
+[4:46.32] create powerful integrations with AI
+[4:48.48] models, making it possible to automate a
+[4:50.96] variety of tasks. Next is lane chain
+[4:53.36] open AI. This module integrates OpenAI
+[4:56.32] models like GPT into lane chain
+[4:58.88] workflows, making it easier to use
+[5:01.04] language models within our workflow.
+[5:03.20] Then we have lang chain community. This
+[5:05.84] is an extension that adds extra tools
+[5:08.24] and features to Langchain which can be
+[5:10.56] useful for more advanced use cases.
+[5:12.96] After installing these packages, we
+[5:15.28] import the necessary libraries. First is
+[5:17.92] Chat OpenAI from Langchain OpenAI. This
+[5:20.80] class lets you interact with OpenAI
+[5:23.04] models like GPT. It allows us to do
+[5:25.68] things like text manipulation and much
+[5:28.16] more by bringing the power of Open AI
+[5:30.96] models into our workflows. Next, we
+[5:33.44] start by creating the LLM that powers
+[5:35.28] the agent using chat open AI. This is a
+[5:37.92] crucial step because we're instantiating
+[5:40.64] the model that helps the agent
+[5:42.40] understand tasks and generate the right
+[5:44.88] responses. In this case, we're using the
+[5:47.60] GPT 3.5 Turbo model, a powerful OpenAI
+[5:51.84] language model known for its strong
+[5:54.00] comprehension and ability to generate
+[5:56.32] coherent responses. The API key is
+[5:59.36] pulled from the environment variable,
+[6:01.60] which lets the agent securely
+[6:03.44] authenticate and interact with OpenAI's
+[6:06.32] API. Next, we define the functions that
+[6:09.52] the agent will use to carry out specific
+[6:12.08] tasks. The first one is capitalize text.
+[6:14.96] This function will capitalize the input
+[6:17.28] text, turning all the characters into
+[6:19.76] uppercase.
+[6:21.44] The next function is reverse text. This
+[6:24.32] function will reverse the input text,
+[6:26.48] flipping the string around. These
+[6:28.16] functions serve as tools for the agent,
+[6:30.88] letting it perform the task when needed.
+[6:33.28] In the next step, we define the agents
+[6:35.68] behavior with a function called agent
+[6:38.08] logic. This function processes the input
+[6:40.88] text and decides which function to call,
+[6:43.52] either capitalize or reverse. If the
+[6:46.16] input asks to capitalize, it will call
+[6:48.16] the capitalize text function. If the
+[6:50.32] input asks to reverse, it will call the
+[6:52.96] reverse text function. The next step is
+[6:55.04] testing the agent. We test the agent by
+[6:57.60] asking it to do two simple tasks. Task
+[7:00.64] one is to capitalize a sentence. Here
+[7:03.04] the agent will use the capitalized text
+[7:05.20] function to turn the provided text into
+[7:07.44] uppercase. Then the next one is the
+[7:09.60] reverse text function which reverses the
+[7:11.68] provided sentence. We use the agent
+[7:13.92] logic function to simulate the agent's
+[7:16.40] behavior which processes the input and
+[7:19.28] returns the appropriate output. [music]
+[7:21.28] So in the output we can see the agent
+[7:24.24] has capitalized the given sentence and
+[7:27.28] it has also reversed the given sentence.
+[7:30.00] So the agent has completed its task
+[7:32.00] according to the functions provided. So
+[7:34.08] the agent is not rule-based. It analyzes
+[7:36.80] the input and chooses the most
+[7:38.64] appropriate function based on the task
+[7:40.48] at hand. This autonomy allows it to
+[7:43.28] handle various tasks efficiently. You
+[7:45.84] can easily expand the agents
+[7:47.28] capabilities by adding more functions or
+[7:49.12] tasks. For example, you could add extra
+[7:51.52] functions for mathematical operations,
+[7:54.00] other text manipulations, or even
+[7:56.32] complex workflows. Agents allow for more
+[7:58.88] autonomous behavior compared to a simple
+[8:00.96] prompt response system. Now, let's see
+[8:02.96] how the output parser works with the
+[8:05.04] agents responses. So here first we've
+[8:08.48] imported the str output parser from lang
+[8:11.76] chain core output parsers. This is a
+[8:14.32] tool that helps us process and clean the
+[8:16.96] raw output produced by our agent. It
+[8:19.44] makes sure the output is in a readable
+[8:21.76] and consistent format. First we created
+[8:24.72] an instance of the str output parser
+[8:27.92] which we called parser. This instance
+[8:30.24] will be used to parse and clean the
+[8:32.40] agents responses, turning them into
+[8:34.64] userfriendly text. Next, we need to
+[8:37.28] parse the agents responses using the
+[8:39.52] output parser. So here, these two
+[8:42.00] functions will take both responses and
+[8:44.40] process them. Then the output parser
+[8:46.64] makes sure the results are clean,
+[8:48.32] readable, and ready to display. Finally,
+[8:50.96] we print the clean formatted responses
+[8:53.76] for both tasks. So here, parse response
+[8:57.12] one shows the capitalized version of the
+[8:59.20] sentence and parse response two shows
+[9:01.52] the reversed version of the sentence.
+[9:03.00] [music] The output parser makes sure the
+[9:04.96] results are displayed in a clean,
+[9:06.56] readable format, making them more
+[9:08.24] userfriendly. It also helps clean up and
+[9:11.04] format the raw output from the agent
+[9:13.28] before displaying it. This is important
+[9:15.36] when dealing with complex tasks or when
+[9:17.84] the output might have extra spaces,
+[9:20.08] special characters, or other formatting
+[9:22.08] issues. It ensures that the final output
+[9:24.56] is easy to read and use. The output we
+[9:27.44] see here is the cleaned up version of
+[9:30.32] the raw output generated by the agent.
+[9:33.12] Now let's talk about memory in lang
+[9:35.76] chain. Memory lets the model keep
+[9:38.16] context across interactions which is
+[9:40.80] essential for building applications that
+[9:42.96] need to remember previous exchanges like
+[9:45.60] conversation history. Next, we built a
+[9:48.16] memory enabled agent using Langchain's
+[9:50.80] conversation buffer memory and OpenAI's
+[9:53.52] GPT 3.5 Turbo model. The agent keeps
+[9:56.80] context across multiple interactions,
+[9:59.60] allowing it to remember previous
+[10:01.52] messages and gives smarter responses
+[10:03.84] based on earlier conversations. We start
+[10:06.48] by installing Langchain Classic, which
+[10:09.04] includes conversation buffer memory, an
+[10:11.44] important part for keeping track of
+[10:13.12] conversation history. Then we also
+[10:15.20] install Langchain's OpenAI package to
+[10:17.76] interact with OpenAI's language models
+[10:19.84] like GPT 3.5 Turbo. Next, you'll set
+[10:23.36] your API key. The Open AI API key is
+[10:27.12] stored in an environment variable. This
+[10:29.44] key authenticates the requests made to
+[10:31.52] OpenAI's API. Optionally, if you're
+[10:34.32] using Open Router, you can set the base
+[10:36.80] URL. This is essential for
+[10:38.80] authenticating and securely accessing
+[10:41.12] OpenAI's language model. Without it, the
+[10:43.92] model won't work. Next, you'll create
+[10:46.00] the language model or LLM. The chat open
+[10:49.12] AI object is created and set up to use
+[10:51.60] the GPT3.5 Turbo model. The model is
+[10:54.80] initialized with the API key stored in
+[10:56.96] the environment variable. Next is
+[10:59.04] initializing the conversation history.
+[11:01.36] History is a list that stores the
+[11:03.76] sequence of messages exchanged between
+[11:06.08] the user and the AI. This history is
+[11:08.88] essential for maintaining context in
+[11:10.96] conversations. as the model will use it
+[11:13.44] to generate relevant responses. At
+[11:16.00] first, we add the user's initial message
+[11:18.56] to the history. Storing the conversation
+[11:20.72] history is crucial for keeping the
+[11:22.40] context. Without this history, the model
+[11:25.28] would treat each message separately,
+[11:27.68] which could cause it to lose coherence
+[11:29.76] in multi-turn conversations. Then comes
+[11:32.40] the model invocation. [music] The first
+[11:34.16] call to the llm.invoke function sends
+[11:36.88] the conversation history, which contains
+[11:38.96] the user's first message, to the model.
+[11:41.20] The AI responds to this initial message
+[11:44.16] and the response is added to the history
+[11:46.16] list. Then the model's response is
+[11:48.64] stored in the history as an AI message.
+[11:51.04] This allows the agent to remember what
+[11:52.96] it previously said. In the second user
+[11:55.60] message, the user asks, "Can you remind
+[11:58.72] me what I said?" So this message is
+[12:01.52] added to the history, continuing the
+[12:03.76] conversation context. Then comes model
+[12:06.56] reinvocation with history. The model is
+[12:09.20] invoked again, but this time it has
+[12:11.76] access to the full conversation history,
+[12:14.08] which includes both the user's input and
+[12:16.48] the AI's previous response. This step
+[12:18.72] allows the model to remember previous
+[12:20.80] messages and generate a response based
+[12:23.04] on the entire conversation, not just the
+[12:25.36] current message. Finally, the AI
+[12:27.68] response. The model provides a response
+[12:29.84] to the user's request based on the
+[12:31.60] entire conversation history. This
+[12:33.52] enables the agent to reference past
+[12:35.84] messages, providing more meaningful and
+[12:38.40] coherent responses. This approach to
+[12:40.80] memory enables the agent to maintain
+[12:43.28] context, making it capable of handling
+[12:46.08] multi-turn conversations with meaningful
+[12:48.80] back and forth exchanges. You can easily
+[12:51.44] extend this by adding more sophisticated
+[12:53.84] memory structures or integrating more
+[12:56.32] advanced features like long-term memory
+[12:58.80] for complex applications. Let's talk
+[13:01.28] about loaders. So loading and processing
+[13:04.24] documents in real world applications you
+[13:06.88] often need to handle large data sets or
+[13:09.12] documents in various formats and lang
+[13:11.68] chain makes it easy to work with them.
+[13:13.36] We'll walk through loading and
+[13:15.12] processing PDF and CSV files using
+[13:18.32] document loaders. Let's start by loading
+[13:20.72] a PDF file. In this example, we load a
+[13:23.68] PDF file containing information on
+[13:26.24] sustainable development and extract its
+[13:29.04] contents. We begin by installing the
+[13:32.24] necessary libraries and importing the py
+[13:35.76] PDF loader. [music] Here the loaders
+[13:37.76] load method loads the PDF and returns
+[13:39.76] the content as documents. Here len of
+[13:42.00] docs shows the number of pages or
+[13:43.68] documents in the PDF. We display the
+[13:46.16] first 300 characters of the first pages
+[13:48.88] content using docs page content and the
+[13:52.08] metadata to understand the context of
+[13:54.16] the document like file source and
+[13:56.72] document attributes. In the output, you
+[13:58.96] can see that the document contains three
+[14:00.72] pages. The first document's text shows
+[14:03.20] the beginning of the content on
+[14:04.88] sustainable development and the metadata
+[14:07.36] includes details like the document
+[14:09.20] source, creator, and the total number of
+[14:11.76] pages. Now, let's move on to loading a
+[14:14.64] CSV file using the CSV loader. This is
+[14:18.24] often useful when dealing with
+[14:20.00] structured data in CSV format. In this
+[14:22.96] example, we load a CSV file containing
+[14:25.44] order data. We use the CSV loader to
+[14:28.00] load the CSV file from a given path.
+[14:30.56] Then land of documents outputs the total
+[14:33.36] number of documents or rows loaded from
+[14:35.76] the CSV. Next, we display the first 150
+[14:39.60] characters of a document text and its
+[14:41.92] metadata such as the source and row
+[14:44.32] number. In the output, we can see that
+[14:46.56] 9,800 documents were loaded from the CSV
+[14:49.76] file. The first three document snippets
+[14:52.32] show the first 150 characters of the
+[14:55.04] order data, including details like order
+[14:58.00] ID, order date, and customer name, along
+[15:01.20] with metadata indicating the source file
+[15:03.76] and row number. With the pydF loader,
+[15:06.96] Langchain lets us extract and process
+[15:09.52] content from PDFs, making it easy to
+[15:12.16] convert documents into a structured
+[15:14.24] format that can be fed into a general AI
+[15:17.12] model. With the CSV loader, Langchain
+[15:19.76] allows you to load CSV files and work
+[15:22.16] directly with structured data, which can
+[15:24.40] be useful for applications that require
+[15:26.56] data processing or analysis. Now, let's
+[15:29.44] talk about splitters. This is essential
+[15:31.92] when working with large documents
+[15:34.24] because it ensures the model can handle
+[15:36.56] text in manageable sizes while
+[15:39.04] preserving as much context as possible.
+[15:41.52] In this example, we use the recursive
+[15:44.16] character text splitter to break a long
+[15:46.56] text into smaller, more digestible
+[15:49.12] pieces. Let's take a look at the code
+[15:51.76] and the output. The recursive character
+[15:54.48] text splitter divides the text into
+[15:56.80] chunks of 100 characters with a 20
+[15:59.68] character overlap between each chunk.
+[16:02.00] This ensures that the model can maintain
+[16:04.40] context across adjacent chunks. The text
+[16:07.52] is processed into smaller chunks while
+[16:10.24] trying to preserve sentence and
+[16:12.16] paragraph boundaries whenever possible.
+[16:14.56] The chunk length will show the total
+[16:16.80] number of chunks the text has been
+[16:18.64] divided into. Each chunk is printed out
+[16:21.12] to show how the long text is broken down
+[16:23.36] into manageable pieces for processing.
+[16:25.60] So in the output you can see that the
+[16:27.60] long text has been split into three
+[16:29.44] chunks. The first chunk contains the
+[16:31.60] beginning of the explanation. The second
+[16:33.76] chunk continues the explanation and the
+[16:36.40] third chunk completes the thought.
+[16:38.24] Here's how the chunks are printed. The
+[16:40.08] total number of chunks printed here is
+[16:42.00] three, which means the original text was
+[16:44.32] split into three manageable parts. Each
+[16:46.88] chunk shows a portion of the original
+[16:48.88] text with overlapping characters between
+[16:51.52] adjacent chunks to maintain context and
+[16:54.08] coherence.
+[16:54.96] >> If you enjoyed this video, you can
+[16:56.64] enroll in Greatle Learning Academy for
+[16:58.64] free. Choose from hundreds of courses
+[17:00.56] across multiple domains and earn a
+[17:02.64] certificate of completion along the way.
+[17:04.72] And if you want to take it a step
+[17:06.00] further, you can try Great Learning
+[17:07.68] Academy Pro Plus with a free trial. It
+[17:10.24] provides access to additional premium
+[17:12.32] courses with more advanced content from
+[17:14.40] distinguished faculty along with
+[17:16.08] features like guided projects, a resume
+[17:18.40] builder, and mock interviews to make
+[17:20.16] your learning journey even richer.
+[17:21.46] [music] Link is in the description.

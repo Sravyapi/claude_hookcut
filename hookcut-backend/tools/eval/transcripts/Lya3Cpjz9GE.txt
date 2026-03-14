@@ -1,0 +1,155 @@
+[0:00.48] Right now, most people think AI is just
+[0:02.88] tools like chat GPT answering questions.
+[0:05.52] You type a prompt and the AI gives a
+[0:07.60] response and that's it. But the next
+[0:09.60] wave of AI is very different. Imagine an
+[0:12.32] AI that doesn't just answer your
+[0:14.00] questions. It plans task, makes decision
+[0:17.04] and completes work on its own. Instead
+[0:19.28] of being just a tool, it starts behaving
+[0:21.52] more like a digital worker. And that's
+[0:23.68] where the difference between generative
+[0:25.28] AI and agentic AI begins. Understanding
+[0:27.92] this shift is important because it could
+[0:30.08] shape the future of technology, jobs,
+[0:32.32] and productivity. So, in this video,
+[0:34.56] we'll break down what generative AI is,
+[0:37.20] what agentic AI means, the key
+[0:39.28] differences between them, and why many
+[0:41.36] experts believe agentic AI is the next
+[0:43.52] major evolution of artificial
+[0:45.52] intelligence. So, let's start with the
+[0:47.12] AI most people already know, generative
+[0:49.76] AI. Generative AI is a type of
+[0:52.00] artificial intelligence that can create
+[0:54.16] new content based on patterns it has
+[0:56.48] learned from massive data sets. Instead
+[0:58.72] of just analyzing information, it can
+[1:01.04] actually generate new outputs. These
+[1:03.44] outputs can include texts, images, code,
+[1:06.80] audio, and video. Some of the most
+[1:09.12] popular generative AI tools today
+[1:11.04] include Chad GPT, MidJourney, and Dali.
+[1:14.64] These tools can produce incredibly
+[1:16.56] massive results in seconds. For example,
+[1:19.04] you can ask AI. These tools can produce
+[1:21.44] incredibly impressive results in
+[1:23.36] seconds. For example, you can ask AI to
+[1:26.24] write an email, generate marketing
+[1:28.24] content, create an image, summarize a
+[1:30.96] document, or even explain a complex
+[1:33.12] topic. And almost instantly, the AI
+[1:35.20] produces an answer. But here is one
+[1:37.44] important limitation. Generative AI is
+[1:40.08] prompt based. It only works when you
+[1:42.24] tell it what to do. It doesn't take
+[1:44.48] initiative. It doesn't plan task. and it
+[1:47.52] doesn't execute actions in the real
+[1:49.36] world. It simply generates an output in
+[1:51.68] response to a prompt. And that's where
+[1:53.84] the next evolution of AI begins. If
+[1:56.96] generative AI is about creating content,
+[1:59.60] the next generation of AI is about
+[2:01.76] something much bigger. It's about
+[2:03.76] getting work done. And this brings us to
+[2:06.32] agentic AI. Agentic AI refers to AI
+[2:09.12] systems that can act as autonomous
+[2:11.44] agents. Instead of simply responding to
+[2:13.84] prompts, these systems can set goals,
+[2:16.40] break complex task into smaller steps,
+[2:18.64] make decisions, use external tools, and
+[2:21.28] execute actions. In simple terms,
+[2:23.68] generative AI answers questions. Agentic
+[2:26.40] AI solves problems. Let's look at a
+[2:28.96] simple example. Imagine you tell an AI,
+[2:31.12] "Plan a 3-day trip to Japan under
+[2:33.60] $1,500."
+[2:35.28] A generative AI system might respond
+[2:37.68] with suggestions like places to visit,
+[2:40.32] travel tips, hotel recommendations. But
+[2:42.80] an agentic AI system would go much
+[2:44.96] further. It could search for flights,
+[2:47.12] compare hotel prices, build a complete
+[2:49.52] itinerary, book reservations, and send
+[2:52.00] you the final travel plan all
+[2:54.40] automatically. Instead of just
+[2:56.32] suggesting ideas, the AI actually
+[2:58.56] completes the task. That's the key
+[3:00.72] difference. So, what really separates
+[3:02.24] generative AI from agentic AI? Let's
+[3:04.80] break it down in simple terms. First,
+[3:07.28] interaction. Generative AI is prompt
+[3:10.08] based. You ask a question and the AI
+[3:12.32] gives a response. Agentic AI is goal
+[3:15.04] based. You give it an objective and the
+[3:17.12] system figures out how to achieve it.
+[3:19.76] Second, autonomy. Generative AI has low
+[3:22.80] autonomy. It depends completely on our
+[3:25.44] user instructions. Agentic AI has higher
+[3:27.92] autonomy. It can plan multiple steps and
+[3:30.56] take actions independently. Number
+[3:32.88] three, execution. Generative AI mainly
+[3:36.08] produces content. Agentic AI performs
+[3:38.80] actions and executes workflows. Because
+[3:41.36] of this, many experts believe Agentic AI
+[3:44.00] represents the next major phase of
+[3:46.00] artificial intelligence. Now, let's see
+[3:47.92] why Agentic AI is a big deal. The reason
+[3:50.32] Agentic AI is getting so much attention
+[3:52.56] is because it moves AI from being just a
+[3:55.44] tool. It becomes a digital worker.
+[3:57.76] Instead of helping with one small task
+[3:59.92] at a time, AI could start managing
+[4:02.08] entire workflows. For example, in
+[4:04.48] marketing, an AI agent research a topic,
+[4:07.28] write a blog post, generate images,
+[4:09.84] schedule social media post, and analyze
+[4:12.16] engagement data all automatically. In
+[4:15.04] software development, an AI agent could
+[4:17.44] analyze product requirements, generate
+[4:19.60] code, test the code, detect bugs, and
+[4:22.56] deploy updates. This level of automation
+[4:25.28] could dramatically increase productivity
+[4:27.36] across industry. So, are we already
+[4:29.28] seeing agentic AI? The idea of agentic
+[4:32.16] AI isn't just theoretical. We're already
+[4:34.56] starting to see early experiments.
+[4:36.40] Projects like AutoGPT, Baby AGI are
+[4:39.44] examples of systems designed to operate
+[4:41.92] with minimal human input. These tools
+[4:44.56] use powerful language models like those
+[4:46.64] behind chat GPD, but add extra layers to
+[4:49.36] allow them to plan task, prioritize
+[4:51.60] actions, and execute workflows. Right
+[4:54.08] now, these systems are still
+[4:55.44] experimental, but they give us a glimpse
+[4:58.08] of where AI development is heading. So,
+[5:00.24] what is the future of AI? The future of
+[5:02.72] artificial intelligence will likely
+[5:04.64] combine both approaches. Generative AI
+[5:07.12] will continue to power creativity,
+[5:09.76] content generation, explanation and
+[5:11.92] ideas while agentic AI will power
+[5:14.48] automation, task execution, workflow
+[5:17.36] management. In other words, generative
+[5:19.20] AI creates the ideas and agentic AI
+[5:21.76] carries them out. So the difference
+[5:24.24] between these two types of AI can be
+[5:26.32] summarized simply into generative AI
+[5:28.56] creates content and agentic AI takes
+[5:30.96] action. And as AI continues to evolve,
+[5:33.28] we may soon see systems that don't just
+[5:35.36] answer questions, but actually work
+[5:37.20] alongside humans to complete complex
+[5:39.20] task. Understanding the shift is
+[5:41.12] important because it could shape the
+[5:42.88] next generation of AI tools, businesses,
+[5:45.52] and careers. So, if you found this
+[5:47.52] explanation helpful, let me know in the
+[5:49.60] comments. And if you want more videos
+[5:51.20] that break down complex AI topics into
+[5:53.36] simple terms, make sure to subscribe
+[5:55.60] because AI is evolving incredibly fast
+[5:58.08] and understanding these changes can make
+[6:00.24] a huge difference. Thanks for watching
+[6:02.24] and I'll see you in the next

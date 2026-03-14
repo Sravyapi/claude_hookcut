@@ -1,6 +1,7 @@
-from fastapi import APIRouter, Depends, Query, HTTPException, Request
+from fastapi import APIRouter, Depends, Query, Request
 from sqlalchemy.orm import Session
 from app.dependencies import get_db, get_admin_user
+from app.exceptions import ResourceNotFoundError
 from app.services.admin_service import AdminService
 from app.services.admin_rule_service import AdminRuleService
 from app.services.admin_provider_service import AdminProviderService
@@ -85,7 +86,7 @@ async def get_session_detail(
 ) -> AdminSessionDetailResponse:
     detail = AdminService.get_session_detail(db, session_id)
     if not detail:
-        raise HTTPException(status_code=404, detail="Session not found")
+        raise ResourceNotFoundError("Session not found")
     return detail
 
 

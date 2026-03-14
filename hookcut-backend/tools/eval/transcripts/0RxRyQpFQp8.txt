@@ -1,0 +1,684 @@
+[0:00.48] Hey everyone, I hope you all are safe
+[0:02.40] and doing good. So today we are going to
+[0:04.32] discuss what is charg basically. So
+[0:07.52] first we will be discussing what is GPT
+[0:10.16] history of GPT then we will come to
+[0:12.40] charge GPT one by one right and see
+[0:16.16] first let's see now what is in charge
+[0:18.48] GPT we have this word GPT right so what
+[0:21.76] is this GPT the full form of GPT is
+[0:24.56] generative pre-trained transformer in
+[0:27.68] the previous lecture also I have told
+[0:29.12] you in the history of uh we discussing
+[0:31.76] the history of AI then the term came
+[0:35.60] into picture transformer transformer
+[0:37.60] right so first let's see what is GPT
+[0:39.92] generative pre-trained transformer okay
+[0:43.52] it's a AI model it's a AI language model
+[0:46.96] basically that generates humanlike text
+[0:50.64] based on given prompts that is basically
+[0:52.96] GPT right and this use the technique use
+[0:57.20] the technique transformer transformer
+[1:01.36] this transformer means uh in the history
+[1:04.24] I guess you remember from the history
+[1:05.92] video. In 2017,
+[1:09.36] Google brain team uh published a
+[1:11.76] research a paper attention is all you
+[1:14.00] need. And in that paper, they introduced
+[1:15.76] this transformer architecture
+[1:18.16] basically uh applying the self attention
+[1:21.04] mechanism there. The core idea was just
+[1:24.40] to uh you know uh focus on different
+[1:27.12] different parts of the input like a
+[1:28.88] sentence while processing each word so
+[1:31.28] that to understand the relationship and
+[1:33.76] the context of that sentence or that
+[1:35.68] input. So that is a self attention
+[1:38.32] technique self attention mechanism used
+[1:40.80] in transformer and after that in the
+[1:43.44] next year only openai launched GPT1
+[1:47.04] using this transformer this architecture
+[1:50.24] or this technique.
+[1:52.16] Okay. So, generative means generate
+[1:54.80] something. Pre-trained. Pre-trained
+[1:57.44] means already trained on massive amount
+[1:59.92] of data. After that maybe fine-tuning.
+[2:02.64] I'll discuss each and every term meaning
+[2:04.24] of each and every term. Don't worry what
+[2:05.84] is fine-tuning LLM pre-trained and all.
+[2:08.08] Don't worry just you just have the idea
+[2:11.68] right now. GPT generative pre-trained
+[2:14.00] transformer using the transformer
+[2:16.00] architecture that mechanism that
+[2:18.08] technique it's an AI language model that
+[2:20.24] generates humanlike humanlike text based
+[2:23.20] on given prompts. Okay. So it learns
+[2:25.76] pattern from a massive amount of data we
+[2:28.56] feed to the these models and this helps
+[2:30.88] it predict and generate coherent
+[2:32.48] responses. Coherent responses means
+[2:34.16] coherent means in context the responses
+[2:36.88] are not in I mean making some sense. I'm
+[2:40.16] asking something and maybe that model is
+[2:42.64] giving me some answer in something some
+[2:44.64] else sense something else answer no so
+[2:48.32] the answer are making sense in some
+[2:50.56] context context we are getting the
+[2:52.48] answers okay that the meaning of this is
+[2:56.16] coherent responses is this okay so we
+[3:00.00] have discussed this transformer
+[3:00.96] architecture built on self attention
+[3:02.64] mechanism okay and this allows this
+[3:06.24] design allows the model to understand
+[3:08.32] context better than the previous
+[3:10.24] approaches.
+[3:12.08] Context better than the previous
+[3:14.00] approaches. Context means I have
+[3:15.68] discussed in the previous lecture also
+[3:17.92] when I ask something like if you ask
+[3:19.68] that charge jut right now we are using
+[3:21.36] chapity. So uh we ask do you know like
+[3:24.96] who is jandi khatri jand katri lamba. So
+[3:27.76] you will get the answer. After that if I
+[3:29.60] ask is she a good teacher.
+[3:33.04] So she means charge is able to
+[3:36.08] understand. She means I'm talking about
+[3:37.52] now Chanti Khatri Lama the context of my
+[3:40.08] next question like we are talking to a
+[3:42.16] human. I'm I don't need to write is Ji
+[3:44.96] Khatri Lama a good teacher again. No I
+[3:47.28] just write is she a good teacher and
+[3:49.28] Chad GP will understand. So Chad GPT is
+[3:52.00] able to understand the context. Right?
+[3:54.88] And this approach this architecture
+[3:57.04] transformer basically helps in this
+[3:58.96] thing to understand the context of
+[4:02.16] whatever we are talking
+[4:04.40] right now let's come to the history of
+[4:07.04] GPT so first GPT one after 2017 in 2018
+[4:13.04] OpenAI launched is its GPT1 okay the
+[4:16.56] first model but only having 117 million
+[4:20.24] parameters so uh trained on books the
+[4:23.92] main corpus was book corpus uh data set
+[4:27.12] was used for pre-taining this model but
+[4:29.60] this model was mainly just a research
+[4:32.32] prototype it was not released for public
+[4:35.04] use or some APIs no something like this
+[4:37.28] no it was just a research prototype they
+[4:40.08] were just experimenting something that's
+[4:41.92] it okay just to showcase the potential
+[4:45.04] of generative pre-training that's it so
+[4:48.80] we were not aware about this GPT and all
+[4:51.20] that at that time okay after that after
+[4:54.48] that in 19 in Feb 19 they released the
+[4:58.56] second model of GPT GPT do called GPT 2
+[5:02.56] in February uh 19 and the parameters are
+[5:05.76] with 1.5 billion parameters parameters
+[5:08.80] are what I'll discuss this thing also in
+[5:10.88] later the key terminology we use uh
+[5:15.20] we'll see later but right now if I give
+[5:17.28] you a brief then parameter means the
+[5:19.52] more parameters the more accuracy the
+[5:21.12] more memory that model is having It's
+[5:24.00] kind of memory noob in simple terms
+[5:27.12] memory noo. So the more parameter the
+[5:29.04] more memory that uh model is having and
+[5:31.84] more accuracy that's it. So obviously
+[5:34.80] see it is having 1.5 billion parameters.
+[5:39.12] Okay. So because of that it was larger
+[5:42.96] than its predecessor and having
+[5:44.88] obviously good performance. But the
+[5:47.44] thing is
+[5:49.28] uh this was trained on a massive amount
+[5:51.44] of data almost 40GB data 40GB text data
+[5:55.04] trained on 8 million web pages from Red
+[5:57.84] Hit links. I mean the user posted some
+[6:00.40] links on Redhead. So they fetch link
+[6:03.28] which are having at least three upwards
+[6:05.76] or more upwards. So that the data should
+[6:07.92] be good.
+[6:09.60] If you feed garbage data to your model,
+[6:12.16] you will get a garbage data as output.
+[6:15.28] So the data has to be good. The train
+[6:17.12] data on which you are training the model
+[6:18.80] has to be good to get good results. So
+[6:21.60] it was trained on almost 8 million
+[6:23.92] documents, 8 million web pages, right?
+[6:26.96] 40 GB text data. It makes around 40 GB
+[6:29.76] text data. Okay? So it so improving its
+[6:33.84] general knowledge and versatility
+[6:35.60] because of huge amount of data. But the
+[6:38.32] thing is initially they didn't release
+[6:40.56] this the full model 1.5 model they
+[6:43.12] didn't release 1.5 billion parameter
+[6:44.80] model. No because uh because of the fear
+[6:47.92] that because of the misuse uh they have
+[6:50.64] the fear that maybe somebody is going to
+[6:52.16] misuse it for some fake news or
+[6:54.48] something like this. So they release it
+[6:56.40] in gradually in smaller uh models having
+[6:59.76] few parameters. Right after that in
+[7:02.56] November 19 they released it for public
+[7:05.04] use full model 1.5 billion parameter
+[7:07.52] full model they released but how to use
+[7:09.84] it now it's not like that it was
+[7:11.92] available for public even at that time
+[7:14.64] also we were not aware about this thing
+[7:16.72] right so the thing is it was not a web-
+[7:20.40] based chatbot like we are having chat
+[7:22.48] GPT no there was no such kind of
+[7:25.04] interface right so you are supposed to
+[7:28.64] download it it was open source So you're
+[7:31.44] supposed to download from the open AI's
+[7:33.68] GitHub uh GitHub uh you know profile
+[7:37.60] right open GitHub and you have to use it
+[7:40.16] locally or via code right so mainly
+[7:42.64] developers and researchers uh were using
+[7:45.20] it not general user right to use it you
+[7:49.04] have to write code proper scripts to
+[7:51.76] give input and to get output so to use
+[7:54.80] it you have to be at that time good in
+[7:56.96] programming language especially mostly
+[7:59.20] in Python programming language
+[8:01.28] So any non techch or general user were
+[8:03.36] not able to use this model as well.
+[8:06.56] Right? So they have to download it and
+[8:09.04] use it either locally or via code.
+[8:11.92] Right? So you must have programming
+[8:13.92] knowledge must have programming
+[8:15.92] knowledge to use it. So that's why um it
+[8:18.48] was not that much popular at that time.
+[8:21.44] After that after that the next version
+[8:25.04] came GPT3. It was in next year in June
+[8:28.80] 2022, right? With 175 billion parameter.
+[8:32.40] See 175 billion parameters. Now you can
+[8:35.60] imagine how huge this model is and how
+[8:38.88] it was dramatically significantly um
+[8:42.56] improvement was seen in this model
+[8:44.16] because of these parameters 175 billion
+[8:47.84] parameters always you can say the memory
+[8:50.08] knobs the knowledge knobs. So the more
+[8:52.56] the memory the more uh powerful or more
+[8:55.12] accurate the model is right but this was
+[8:59.44] not open source the very first so
+[9:04.08] anybody was not able to download it from
+[9:05.84] the GitHub repository of OpenAI and use
+[9:07.84] it no they released it through APIs
+[9:12.64] application programming interface so
+[9:15.20] you're supposed to use it through the
+[9:17.28] APIs for that also you need some
+[9:19.20] technical knowledge programming
+[9:20.24] knowledge otherwise So for general user
+[9:23.04] it was not available you know obviously
+[9:26.32] it was not a a web- based chatboard kind
+[9:28.56] of thing like we have chat GPT right it
+[9:31.44] was not open source or required approval
+[9:33.04] first if you want to use it you had to
+[9:35.68] go to their you you first have to get to
+[9:38.24] approval uh weight list was there you
+[9:40.64] have to apply you will get the approval
+[9:42.80] then you can use it and then you have to
+[9:45.12] pay for it also it was paid it was not
+[9:47.52] free according to uh your uses you have
+[9:50.16] to pay per token
+[9:51.84] Right? So, especially developers or
+[9:54.00] companies or researchers used it, they
+[9:57.20] generally get the approval.
+[10:00.00] Right? And after that getting the
+[10:02.16] approval, they used it uh maybe they
+[10:04.88] integrated it to their website or some
+[10:07.28] apps or tools or they build their own
+[10:08.96] chatboard like like customer support
+[10:11.04] kind of thing or writing assistant kind
+[10:12.56] of thing or content generator or
+[10:14.72] anything.
+[10:16.64] So they could use it in this sense but
+[10:19.52] they are supposed to pay for it right
+[10:22.32] that's why it was not that much like
+[10:25.36] popular at that time in 2022 as well
+[10:28.48] right so to access it you have to access
+[10:30.88] it through open uh AI API you need
+[10:34.00] coding knowledge as well and an API key
+[10:36.72] as well and some money because it was
+[10:39.36] not free so mostly developers
+[10:41.44] researchers and companies used it not
+[10:43.92] general user which are non- tech user
+[10:47.44] Okay.
+[10:48.96] Now I hope you are aware about APIs.
+[10:52.88] Let me tell you in brief application
+[10:54.56] programming interface.
+[10:56.72] So it's like um if a real life example
+[10:59.84] I'll give you then it's like a waiter.
+[11:01.36] You go to any restaurant, you sit there,
+[11:03.52] you uh the waiter came and the you just
+[11:06.72] tell the waiter what you want. Then the
+[11:08.72] waiter will go to the kitchen and will
+[11:10.88] serve you whatever you want. You don't
+[11:12.24] have to go to kitchen and tell or
+[11:13.92] something like this. So wait is kind of
+[11:15.68] API. It's a communication. It's a bridge
+[11:18.56] between you and actually the food or
+[11:20.80] actually the kitchen. So same API is
+[11:23.20] like a bridge
+[11:25.12] between your website or app and the
+[11:28.88] other website or app you want to use.
+[11:30.64] Like see let's take one example uh my
+[11:33.36] website jenny's lectures.com. So uh I
+[11:36.48] have I'm using like razor pays API for
+[11:40.00] payment. I don't have my own payment
+[11:42.72] system means I am not going to handle
+[11:45.04] that payment kind of thing. So once user
+[11:48.16] will like click on enroll now or pay
+[11:50.16] kind of thing they'll be redirect to
+[11:52.08] that razor pay uh page and everything
+[11:55.76] the payment kind of thing is handled by
+[11:57.44] Razer Pay. So that API I'm using Razer
+[12:00.16] Pay API I am using for payment and I
+[12:03.60] have to pay for it obviously. Another
+[12:06.24] example is sometimes on a website you
+[12:08.64] get sign in with Google sign in with
+[12:11.28] Facebook something like this you get
+[12:13.20] right so you don't have to create your
+[12:15.04] own account or sign up you just click on
+[12:16.96] sign in with Google that's it so that is
+[12:19.12] what that website is using if on my
+[12:22.40] website I uh give you this uh option
+[12:24.88] sign in with Google means that website
+[12:27.84] is using Google API to sign in once you
+[12:31.60] click on sign in sign in Google so
+[12:34.24] internally the things are happening and
+[12:35.76] from Google they'll get your username,
+[12:37.60] password, authentication and all and
+[12:39.12] after that you are able to sign in. So
+[12:41.68] third party so sorry the API Google API
+[12:44.80] is using that website is using Google
+[12:46.80] API to in to uh integrate this things
+[12:50.48] sign in with Google in their website.
+[12:52.72] Okay.
+[12:54.40] So it is something like this API
+[12:56.48] application programming interface
+[12:58.80] Google, Facebook and these are having
+[13:00.48] their own authentication APIs
+[13:04.16] that generally other websites use. On
+[13:07.20] many websites you will get to see this
+[13:09.04] option sign in with Google, sign in with
+[13:10.72] Facebook, sign in with maybe Twitter or
+[13:12.80] kind of right. So this is API in simple
+[13:15.60] terms. So that is chat GPT 3. It was
+[13:20.88] trained on almost uh around five uh 570
+[13:25.60] GB of data around 570 GB of data.
+[13:29.52] Okay. So that was huge. So that's why
+[13:32.32] performance was very good of this charge
+[13:34.64] GPT3 model. But the main thing was it
+[13:37.28] was not open source and it was not free.
+[13:40.72] Next next version came that is Chad GPT.
+[13:47.44] See how to use GP3? I have told you XSY
+[13:51.52] API. Developers connect to GPT3 through
+[13:54.32] uh the API service and this requires API
+[13:57.28] key and uses is build based on tokens
+[13:59.60] process. So it was u not free.
+[14:03.20] But in this case the quality of the
+[14:04.64] output depends heavily on well-designed
+[14:06.80] prompt. How we are going to give you a
+[14:09.04] prompt? The output you get the quality
+[14:11.28] of that output depends on those prompts.
+[14:13.60] So you are supposed to uh give a very
+[14:16.16] clear and crafted prompt to get clear
+[14:19.44] output and correct output right but it
+[14:23.44] was fine-tuned again for specific task
+[14:25.92] finetuning means fine-tuning uh if I
+[14:29.28] tell you in general terms then chat GP
+[14:32.08] is also finetuning like it's a
+[14:34.40] pre-trained model that is available for
+[14:36.64] finetuning finetuning means we can train
+[14:38.80] that model on some specific data set as
+[14:41.04] well means we are fine-tuning that
+[14:44.80] like we have trained chity on general
+[14:46.72] data
+[14:48.40] massive amount of data and if you want
+[14:50.80] to train it on a smaller data related to
+[14:53.04] medical field only so that is what
+[14:55.12] finetuning we just provide the data set
+[14:57.04] related to medical and
+[14:59.68] that is what finetuning we again
+[15:01.28] training that so that basically known as
+[15:03.52] term is known as fine-tuning
+[15:06.08] so custom versions can be trained for
+[15:08.16] specialized applications
+[15:11.36] Right.
+[15:13.12] So um fine-tune for specific task GPT3 I
+[15:17.68] mean available for fine-tuning also you
+[15:20.00] can also fine-tune that particular model
+[15:21.84] on for your specific task as well. Just
+[15:24.08] provide your own data maybe personal
+[15:25.52] data and just fine-tune that model
+[15:26.88] accordingly.
+[15:29.12] Okay. Next now chat GP came into
+[15:32.24] picture. It chat GPT use 3.5 version 3.5
+[15:36.56] version GPT 3.5 and it came in November
+[15:40.96] November 2022
+[15:43.04] it based on GPT 3.5 it's an AI model
+[15:46.16] developed by open AI charge GP is also
+[15:48.48] known as it's an LLM large language
+[15:52.32] model large language model basically
+[15:56.16] this LLMs are known as AI model that are
+[15:59.92] trained on massive huge amount of data
+[16:03.44] And they are able to understand and
+[16:05.12] generate human like language that those
+[16:08.96] are LLM. JPT is LM. B is LLM. Gemini is
+[16:13.44] LLM. Cloudy is LLM. So these few
+[16:17.28] examples are of LLM large language
+[16:19.28] models. Right. So Charg is also a LLM.
+[16:22.08] Large language model. It is trained with
+[16:24.64] billions of document. Although they
+[16:26.00] haven't disclosed how much GB of data
+[16:28.24] but yeah billions of documents it has
+[16:30.72] been trained. That's why it's so much
+[16:32.56] accurate. And now the very first time
+[16:35.44] the first GPT model widely available to
+[16:38.40] the general public.
+[16:40.96] It is having its own web interface. You
+[16:43.52] directly go to the website and directly
+[16:45.12] chat.
+[16:46.88] Great and simple interface. We get very
+[16:50.08] first very first time we got at that
+[16:51.92] time in November 2022.
+[16:54.32] So even general user who are from non
+[16:56.88] tech background they don't know anything
+[16:59.60] they don't know any coding language. So
+[17:01.20] don't need any coding language to uh
+[17:03.04] interact with chat GPT. Okay. Anyone can
+[17:06.00] use it. Even a small uh child can also
+[17:09.12] use it. Right? So the very first time it
+[17:12.80] was released available to general public
+[17:14.88] and it was free at that time this
+[17:17.20] version. Okay. And you know it was one
+[17:20.88] of the most successful uh product
+[17:23.20] release ever in the history because
+[17:25.04] within 5 days of its launch
+[17:27.92] it reaches it reached 1 million user
+[17:30.32] account. Chad Gupty reached 1 million
+[17:33.12] user account just in 5 days after its
+[17:35.92] launch. It was launched in 30th of
+[17:38.08] November 2022. Okay. and till January
+[17:41.52] 2023 these user account becomes the data
+[17:44.40] the number becomes 100 million 100
+[17:46.96] million within just 2 months.
+[17:50.08] So it is one of the most successful and
+[17:54.08] most you can say popular product release
+[17:57.76] ever in the history. Even Tik Tok took
+[18:00.96] almost 7 8 months around to reach till
+[18:04.16] 100 million users.
+[18:06.80] Okay. So that was chargity. Now let me
+[18:09.04] tell you something about ch more. See
+[18:12.72] the term the name suggests chat and GPT.
+[18:16.16] Chat means we know simple general
+[18:18.00] meaning of chat is what? It just refers
+[18:20.80] to the ability of this model to uh
+[18:23.60] interact in a human kind of thing in a
+[18:26.40] conversational way in human like
+[18:28.56] language as well. This chatting. So that
+[18:30.96] is chat conversational interface
+[18:33.84] designed for dialogue. Okay. So that is
+[18:36.80] meaning of simple chat. So makes complex
+[18:39.12] AI accessible through a natural
+[18:40.88] conversation. You know how you you can
+[18:42.72] you cannot even imagine how complex this
+[18:44.72] chity or this CI model is behind the
+[18:46.72] scene. But you need to you don't need to
+[18:49.76] worry about these these complexity and
+[18:51.60] all. You just write down a simple
+[18:53.20] prompt. Okay. Write a poem for me in 100
+[18:55.76] words on u any topic you can give and it
+[19:00.08] will give you that thing behind the
+[19:02.00] scene. What is happening? You don't need
+[19:03.36] to worry about that. You don't need any
+[19:04.80] coding language or anything.
+[19:07.12] Right.
+[19:08.80] Next is GPT. Generative. G means
+[19:10.96] generative. Generative means generate
+[19:13.28] something. Text, images, audio, video,
+[19:16.48] essays, anything. New data. Generate new
+[19:19.12] data. So, generative, right? Creates new
+[19:22.40] data rather than retrieving the existing
+[19:24.56] information based on your dialogue.
+[19:27.12] Right? Next is P pre-trained.
+[19:30.24] Pre-trained means already trained from
+[19:34.00] massive amount of data learned from
+[19:36.88] massive text data set before deployment
+[19:40.08] already it was trained. So it contains
+[19:42.96] general knowledge from its training
+[19:45.04] data. Right? Next is transformer. It is
+[19:48.24] I have told you that transformer
+[19:50.00] architecture they have used here. That's
+[19:53.12] why that chip GPT uh word this came from
+[19:58.72] that only in charge GPT right based on
+[20:02.56] the transformer neural network
+[20:04.00] architecture and we know how neural
+[20:06.32] network works in one of the previous
+[20:08.96] lecture in deep learning we have
+[20:10.24] discussed neural networks having
+[20:12.08] multiple layers data is passing from one
+[20:14.48] layer to another layer processing it
+[20:15.76] each layer is processing it enhancing it
+[20:17.68] learning from it and like this we get
+[20:19.92] the output or the they classify the data
+[20:22.24] or predict the data. Right? So, uh
+[20:26.40] that's why this basically this uh
+[20:29.28] technique transformer or this model
+[20:31.12] enables the understanding of
+[20:32.24] relationship between words
+[20:35.04] because it uh works on the technique
+[20:38.16] self attention mechanism.
+[20:41.04] Okay. So, this is what like you can say
+[20:43.68] full form of charge and what is the
+[20:45.60] meaning of every every word in this
+[20:48.32] chipity. Okay. Now some key features if
+[20:51.60] I ask you key features now I guess you
+[20:53.36] can easily tell me natural conversation
+[20:55.92] we can naturally like we are talking to
+[20:57.76] a human we can naturally we can uh talk
+[21:01.20] with chat GPT also right creative
+[21:04.64] content generation it can write it can
+[21:06.88] do anything it can generate anything
+[21:08.56] whether writing essays stories poems uh
+[21:11.44] or any code you want to generate any
+[21:13.92] code that also it will do or images or
+[21:16.40] anything
+[21:18.16] write any articles blogs books or
+[21:20.16] summarize even the text or analyze the
+[21:23.20] text and give you a report generate
+[21:24.96] reports and many more things it can do
+[21:28.32] right question answer you can ask any
+[21:31.68] any complex technical question even or
+[21:33.92] general question it will give you answer
+[21:36.24] it can explain any topic
+[21:39.04] yes programming assistance yes it can
+[21:41.92] help you to write code as well help in
+[21:45.04] coding debugging and these things text
+[21:47.92] refinement helps with edit ing,
+[21:49.92] summarizing and improving written
+[21:51.76] content that also it can give you it can
+[21:54.96] summarize your uh uh text give you a
+[21:58.08] summary or analyze your text or improve
+[22:00.64] your whatever text you have written
+[22:02.32] based on your prompt obviously you have
+[22:03.60] to give prompt. So these are some key
+[22:06.32] features of chat GPT. So why chat GPT is
+[22:10.64] so popular that within the launch within
+[22:14.16] 5 days of its launch the user count the
+[22:17.36] number to 1 million
+[22:20.00] why very first thing is like its
+[22:23.28] accessibility the very first thing is so
+[22:26.96] it was easy to access free to use first
+[22:29.44] and easy to access because you are
+[22:31.36] provided a web interface chatboard kind
+[22:33.68] of thing and you directly write your
+[22:34.96] prompt and that's it no complex user
+[22:37.60] interface is There it was a simple user
+[22:39.44] interface.
+[22:40.96] So the very first thing is easy to
+[22:43.12] access kind of thing. Second thing is
+[22:46.16] humanlike response.
+[22:50.08] It feels like we are talking with a
+[22:51.60] human proper right. It can uh answer in
+[22:56.80] that conversational way and saving
+[22:59.52] having the context aware kind of thing.
+[23:03.52] It knows in which context I am right I'm
+[23:06.64] uh you know asking that question so it
+[23:08.64] saves the previous state it's not like
+[23:10.16] that previous models were like that just
+[23:12.32] give you the answer and back to state
+[23:14.24] zero they are not going to they were not
+[23:16.16] able to save the context or the history
+[23:19.36] okay but this is not charges what is the
+[23:22.88] previous question the context and the
+[23:24.72] history as well so that you don't have
+[23:26.80] to uh it it feels like that you are
+[23:30.00] talking to a human you don't have to
+[23:31.20] explain each and every uh
+[23:33.44] uh when you ask next question. Okay, it
+[23:36.88] will simply answer you in a
+[23:38.96] conversational and contextual way. Third
+[23:42.48] thing is what
+[23:44.64] it can do almost anything. It can write
+[23:47.84] essays, generate images or uh you can
+[23:50.80] say help you in code or writing
+[23:52.96] articles, blogs or uh what summarizing
+[23:57.12] the text, analyzing the text text. So
+[23:59.44] it's useful for for almost everyone for
+[24:01.52] student or for professionals or for
+[24:03.52] developers for researchers everyone
+[24:05.92] everyone can use it is useful like for
+[24:08.72] everyone. So that is one more point
+[24:12.64] behind its success. Next point is what
+[24:16.48] obviously at that time it was the first
+[24:19.92] mover I guess open AI there was no such
+[24:23.20] mainstream and generalpurpose AI
+[24:25.44] assistant available. So, OpenAI just
+[24:29.20] filled this gap and at the right time
+[24:30.88] only. So, that's why one more point is
+[24:34.24] that next point maybe why this is so
+[24:36.96] much popular is it offers web interface
+[24:40.00] for users and API for developers.
+[24:43.84] Okay. So even from a non- tech
+[24:45.92] background if you are simple end user
+[24:47.92] can also use developers can also use
+[24:50.88] using its APIs and develop uh their new
+[24:54.40] chatboard and something like this they
+[24:56.16] can integrate it also in their websites
+[24:58.16] or tools or apps or anything. So these
+[25:00.88] are like few reason reasons because of
+[25:03.92] this thing or maybe another reasons also
+[25:06.16] like because of social media and uh
+[25:08.88] everyone was like uh having some um
+[25:11.60] unique conversation and uh posting their
+[25:14.40] videos or post on social media. So
+[25:16.48] that's why it became so much popular
+[25:18.96] because of social media as well. Social
+[25:20.56] media also playing a great role in JP
+[25:23.44] success. But obviously it is incredible
+[25:27.44] that's why it's so much popular.
+[25:30.00] Okay, now you know something about
+[25:32.16] chity. What is charge GPT? And you know
+[25:34.72] history of GPS as well from where this
+[25:37.04] chop came. Now we are having chy 4 and
+[25:41.20] maybe 4.5 I don't know like where this
+[25:43.92] chop 5 will go because we are still so
+[25:47.60] much advanced.
+[25:49.60] Okay, we can't imagine.
+[25:51.84] So but those version are paid. This 3.5
+[25:55.92] is free to use but four if you use four
+[25:58.88] and those versions that are paid so you
+[26:01.28] have to pay for it. some practical
+[26:03.36] application of charge GPT in every field
+[26:05.28] almost we are having this this thing
+[26:07.84] whether it's education programming
+[26:09.84] business or entertainment or healthcare
+[26:12.64] industry or anything it is everywhere
+[26:15.92] these are simple few practical
+[26:17.76] applications of this thing okay
+[26:21.60] next is that's it about this lecture now
+[26:24.00] I hope now you have the idea about
+[26:25.60] charge this was just the introduction to
+[26:27.60] charge now we will see later on how
+[26:31.04] basically charge jibity works works what
+[26:32.80] is LLM, what is fine tuning, what is
+[26:34.48] embedding
+[26:36.96] right not we'll not go into that much
+[26:38.64] deep but yeah I'll tell you the basic
+[26:40.56] terminologies used the how charge JP is
+[26:42.80] working how they are going to be trained
+[26:44.80] okay and then we will see obviously the
+[26:47.28] prompt are also playing a great role how
+[26:50.40] to use proper prompts to get accurate
+[26:52.48] output from charge GPT it's not just a
+[26:54.88] smart chat board no it's very I mean
+[26:58.40] it's more more than that if you're able
+[27:01.52] to find out its abilities what charge GP
+[27:03.84] can do seriously it's insane it's
+[27:06.40] insanely good
+[27:08.48] so first let me show you just a
+[27:09.92] practical use of charge GPT how to use
+[27:11.68] it okay so first you're supposed to
+[27:13.36] create your account you have to go to
+[27:14.72] that openi website and you have to
+[27:16.16] create your account and then you can use
+[27:17.76] charge gy
+[27:19.68] now um you are already using it okay so
+[27:23.52] this is free version I'm just using
+[27:25.76] chargy great for everyday task it's plus
+[27:29.28] it is paid so if you want to go for paid
+[27:31.52] paid version
+[27:33.92] uh plus is 20 USD dollar per month or
+[27:38.40] this is pro is 200 so you can just read
+[27:40.72] out this thing but we are using free
+[27:44.16] for everyday task if you want to learn
+[27:46.08] something and all you can use free ask
+[27:48.48] anything just ask anything from uh this
+[27:51.04] and let me just ask um
+[27:56.08] do you know jenti katri lamba let's
+[28:02.08] So yeah, changed as Jenny and yeah it
+[28:06.00] give me it gives the
+[28:08.72] information regarding me right. If I ask
+[28:11.36] if I ask something like
+[28:17.20] is she a good teacher?
+[28:19.52] Let's see.
+[28:23.68] Yes. So widely regarded as a very good
+[28:27.12] teacher especially in field of computer
+[28:28.32] science and IT strength. Okay. Means
+[28:32.16] like chip is able to understand the
+[28:34.80] context. If she means I'm just talking
+[28:36.72] about janti katri lama. I don't have to
+[28:38.16] write is janti kat lamb good teacher.
+[28:39.92] No. So this is one of the great thing
+[28:42.56] about chipity.
+[28:45.68] It is understanding the context in which
+[28:47.68] I'm talking. I'm I'm asking my next
+[28:49.44] question. Right? Okay. So this is how we
+[28:53.68] can use it's just I just given you a
+[28:55.20] simple example
+[29:00.64] how many subscribers uh she has.
+[29:05.44] So yeah, it is giving me the latest
+[29:07.60] information
+[29:09.28] as of 21 May 2025 approximately 1.88
+[29:14.00] million subscribers. So yeah, it is
+[29:15.52] updated. I guess it's updated, right?
+[29:18.32] 840 videos. Yes. So it's true. And how
+[29:21.60] many subscribers she has? Yeah, he knows
+[29:23.60] that I'm talking about Janti Katri
+[29:24.96] Lamba. So this is how you can use for
+[29:26.64] everyday life. We will we will be uh
+[29:28.88] exploring this paid version also. It's p
+[29:30.96] paid version. I'll tell you I'll just uh
+[29:33.60] walk you through till like how to create
+[29:35.76] your own chatboard how to create you
+[29:37.36] know your own GPT also so we will be
+[29:39.92] discussing many more things later it is
+[29:42.96] just introduction so in the next lecture
+[29:45.52] we'll see now the um what is LLM what is
+[29:49.20] fine-tuning what is embedding how chargy
+[29:51.84] actually works what is happening behind
+[29:53.28] the scene okay so now I'll see you in
+[29:55.20] the next lecture till then bye-bye take
+[29:56.64] Yes.

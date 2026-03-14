@@ -1,0 +1,136 @@
+[0:00.03] in this video we're gonna talk about
+[0:02.28] react native versus flutter will flutter
+[0:04.92] killed react native let's find out
+[0:10.73] hi i'm mohammed ani and i've taught
+[0:13.29] millions of people how to become
+[0:14.76] professional software engineers through
+[0:16.86] this channel and my coding school in
+[0:18.75] this video i'm gonna compare react
+[0:20.55] native with flutter and then towards the
+[0:22.41] end i'm gonna give you my unbiased
+[0:24.24] opinion about which one you should learn
+[0:26.01] from mobile developer so react native
+[0:28.41] and flutter are the two top frameworks
+[0:30.66] or building mobile apps for iOS and
+[0:32.94] Android react native is created by
+[0:34.86] Facebook and has been around since 2015
+[0:37.29] here are five apps that are built with
+[0:39.36] react native Facebook Instagram
+[0:41.69] Pinterest Skype uber EADS and many many
+[0:45.18] more
+[0:45.63] flutter is created by Google it's a
+[0:47.88] neuro framework that came out in 2018
+[0:49.89] here are three apps built with flutter
+[0:51.93] Google at Alibaba realtor.com and of
+[0:55.56] course many many more as you can see on
+[0:57.81] Google Trends flutter has gained a lot
+[0:59.94] of popularity recently and has overtaken
+[1:02.22] react native that's because a lot of
+[1:04.32] people are curious about flutter I want
+[1:06.18] to learn it having said that at the time
+[1:08.04] of recording this video there are not as
+[1:09.78] many job opportunities for flutter
+[1:11.52] developers if you do a quick search on
+[1:13.74] indeed calm or your favorite job
+[1:15.75] searching website you can verify this
+[1:17.58] yourself indeed calm they're currently
+[1:20.30] 250 jobs for react native developers in
+[1:23.22] California compared to 42 jobs for
+[1:25.77] flutter
+[1:26.46] that's because react native has been
+[1:27.90] around for much longer than flutter even
+[1:30.30] though Google has invested a lot in
+[1:32.07] developing and improving flutter react
+[1:34.44] native is more mature and stable so it
+[1:36.69] has a higher adoption rate now where you
+[1:39.09] live these numbers might be different
+[1:40.80] and there may be more job opportunities
+[1:42.66] for flutter developers so don't just
+[1:44.88] relate on what I tell you do your own
+[1:46.71] research and see which framework has a
+[1:48.69] better job market now in terms of
+[1:51.00] programming languages react native uses
+[1:53.13] JavaScript so if you're a web developer
+[1:54.75] and no JavaScript react native is the
+[1:57.45] most straightforward path for you to get
+[1:59.31] into mobile development flutter on the
+[2:01.59] other hand uses dart which is a new
+[2:03.48] object-oriented programming language
+[2:05.28] created by Google it's very similar to
+[2:07.41] Java and JavaScript in terms of syntax
+[2:09.39] so if you know Java JavaScript or C
+[2:12.15] sharp you can quickly get up
+[2:13.68] sweet with dart I think dart is a
+[2:15.57] beautiful language that has taken the
+[2:17.34] best ideas from different programming
+[2:19.29] languages however it's still new in the
+[2:21.69] developer community whereas javascript
+[2:23.88] has been around for a very long time and
+[2:25.71] has a huge community there are lots of
+[2:28.20] books courses articles developers and
+[2:31.35] millions of lines of JavaScript code we
+[2:33.78] can use in our apps darts still new and
+[2:36.15] growing its community now one of the
+[2:38.40] selling points of flutter is that it
+[2:40.38] comes with a comprehensive library of
+[2:42.27] beautiful UI widgets so for any kind of
+[2:44.91] app you want to build there are many
+[2:46.44] beautiful widgets available right out of
+[2:48.36] the box that's not the case with react
+[2:50.52] native you have to reach out to
+[2:51.96] third-party libraries so building and
+[2:54.39] shipping apps with flutter can be faster
+[2:56.73] but of course that really depends on the
+[2:58.65] developer skills overall I think both
+[3:01.50] react native and flutter are great here
+[3:03.84] on my channel I have a comprehensive to
+[3:05.73] our tutorial on react native but I'm
+[3:07.86] creating a similar one for flutter by
+[3:09.96] the time you watch this video my flutter
+[3:11.85] tutorial might even be ready so check
+[3:13.80] the description box below for the links
+[3:15.45] now should you invest your time and
+[3:17.31] energy and react native or flutter well
+[3:19.59] here's my guidelines first of all ask
+[3:21.75] yourself why you want to learn react
+[3:23.64] native or flutter think about your goal
+[3:25.83] do you wanna learn mobile development to
+[3:27.60] get a job or do you have an idea for an
+[3:29.49] app and want to turn that idea into a
+[3:31.20] reality your goal will determine the
+[3:33.30] framework you need to learn if your goal
+[3:35.25] is to get a good job with a good salary
+[3:36.54] the job market determines whether you
+[3:38.97] should learn react native or flutter so
+[3:41.07] look at the number of jobs advertised
+[3:42.60] where you live don't listen to people
+[3:44.28] telling you you should learn this or
+[3:45.87] that do your own research and decide
+[3:48.00] based on data on the other hand if your
+[3:50.73] goal is to build an app then the job
+[3:52.56] market doesn't matter anymore
+[3:53.94] what matters is time to market being
+[3:56.64] able to quickly build and shape your app
+[3:58.59] if you know JavaScript well and you also
+[4:01.05] happen to know react then react native
+[4:03.09] is the fastest way for you to get into
+[4:05.19] mobile developer react native is based
+[4:07.56] on react so everything you know about
+[4:09.30] react also applies in react native you
+[4:11.88] just have to learn some additional stuff
+[4:13.59] on the other hand if you don't know
+[4:15.72] JavaScript then you might want to
+[4:17.28] consider a flutter because all you have
+[4:19.23] to learn to get started is the dart
+[4:21.09] language and flutter itself it's faster
+[4:23.91] than learning JavaScript yeah
+[4:25.68] and react native again if you want to
+[4:28.08] learn react native or flutter look in
+[4:29.88] the description box below for my YouTube
+[4:31.95] tutorials so do you want to learn react
+[4:34.14] native or flutter let me know in the
+[4:35.91] comment box below if you enjoyed this
+[4:37.80] video please like and share it with
+[4:39.45] others also subscribe to my channel for
+[4:41.55] more videos like this
+[4:42.66] [Music]

@@ -1,0 +1,1498 @@
+[0:00.72] Hi everyone. Today we are going to look
+[0:04.00] into vision based transformers. Uh this
+[0:07.28] is the third
+[0:09.44] um third installment third episode of
+[0:12.08] the series that we are having on AI
+[0:13.84] research papers and the intent of this
+[0:17.04] series is to actually understand AI
+[0:19.60] systems at a deep level. So the first
+[0:21.92] paper that we picked up was
+[0:22.96] tokenization. The second one that we
+[0:24.80] picked up is vectorization.
+[0:26.80] uh and now I felt like okay let's let's
+[0:29.12] steamroll a little ahead towards vision
+[0:31.52] based transformers because we have
+[0:34.08] discussed transformers earlier we have
+[0:36.08] discussed them in previous live classes
+[0:38.40] um I'll be sharing the link in the
+[0:41.04] description if you like uh but right now
+[0:43.52] in the the current link in the
+[0:45.28] description that's for a paper which is
+[0:47.12] called
+[0:50.24] I think an image is worth 16 + 16 words
+[0:52.88] we'll just double
+[0:55.60] check whether That's correct, I think.
+[0:57.12] Yeah, that's that's correct. An image is
+[0:59.04] worth 16 + 16 words. And this is
+[1:01.52] basically about vision based
+[1:02.56] transformers. It's an old paper. It's 5
+[1:05.28] years old, 2021.
+[1:07.84] It's from Google. And this is maybe 4
+[1:11.68] years after attention is all you need
+[1:13.76] came out. So
+[1:17.12] the best thing about this paper is that
+[1:19.28] it's easy to understand. the high level
+[1:22.00] understanding of this paper doesn't
+[1:23.20] require a very deep technical
+[1:25.68] understanding of how transformers work.
+[1:27.68] Uh so that's one of the reasons why I
+[1:29.76] have picked it up earlier. Uh this is
+[1:32.00] paper number three. Um otherwise this
+[1:34.56] would be very late in the series. So
+[1:39.12] yes um for the first 5 minutes we'll be
+[1:41.84] taking questions. Everyone uh can post
+[1:44.08] your questions in the chat and by the
+[1:47.28] end of this
+[1:49.20] 1 hour you should know how vision based
+[1:51.44] transformers work. Uh and you'll also
+[1:53.60] see maybe some weaknesses that it has at
+[1:56.56] a high level. We'll talk about diffusion
+[1:57.92] based models also. Okay. So if you're
+[2:00.48] interested in image generation, if
+[2:02.16] you're interested in video generation,
+[2:03.84] if you want to know how these systems
+[2:05.92] work internally, this 1 hour that you're
+[2:08.24] going to spend now is going to be worth
+[2:09.76] it.
+[2:11.92] Okay, thank you. Um, and for the first 5
+[2:15.44] minutes, if you're watching this uh
+[2:17.12] recording later, then you can just skip
+[2:18.72] the first five minutes because I wait
+[2:20.16] for people to join and also in case
+[2:22.24] there are any questions that the
+[2:24.16] audience have. But since this is
+[2:26.24] happening live right now, um guys, if
+[2:28.16] you have any questions, please post them
+[2:29.92] on the chat. I will try to answer them
+[2:32.00] to the best of my abilities. Uh, Harish
+[2:34.56] Bhardwaj, hello. Don't mind me saying
+[2:37.68] hello. Good evening uh from India and
+[2:41.68] You know, if you're in the US, then good
+[2:44.08] morning. Maybe a very early morning
+[2:46.40] right now. Yeah.
+[2:54.89] [clears throat]
+[2:58.16] [snorts] Oh, let me share the link of
+[2:59.60] the paper. It's in the description, but
+[3:01.20] I'll share it on chat also.
+[3:06.64] This is the PDF link.
+[3:12.80] And this PDF link alone is sufficient
+[3:16.40] but if you're looking for a lot of
+[3:18.96] resources um the curated ones which I
+[3:22.48] have gone through and have found quite
+[3:23.84] useful this is a list of papers it's a
+[3:27.28] GitHub link you can check that out
+[3:32.24] okay
+[3:38.16] and at the same time. If you have any
+[3:39.76] questions, you can post them on the
+[3:40.96] chat. If you uh have any questions after
+[3:43.76] the the live session is over, you can
+[3:45.76] post it in the comments. Yes. And we
+[3:50.08] have this every week at 6:00 p.m. on
+[3:54.80] Wednesdays. I'll be doing this till the
+[3:56.96] 20th of February. Uh because after that
+[4:00.08] it'll be really difficult. We are having
+[4:02.08] a AI cohort that I'm taking. This is the
+[4:04.32] first cohort I'm taking. So that's going
+[4:06.48] to be quite intense. uh I won't be able
+[4:08.48] to continue these live classes after
+[4:09.92] that.
+[4:12.88] Okay. Aman has a question. How can we
+[4:15.76] stay updated with the progress of AI?
+[4:18.72] Ammon, the best way that I have found to
+[4:20.48] stay updated is to follow
+[4:24.08] uh research papers from top
+[4:26.48] organizations. So the best company that
+[4:29.44] I have found for this is Google. Google
+[4:31.28] research is really really good. Usually
+[4:34.08] they don't have clickbait or nonsense
+[4:36.64] which is like marketing material but
+[4:39.92] Google research is really good. In terms
+[4:41.84] of universities, Stanford University is
+[4:43.84] really good. Um and in Europe there's um
+[4:48.72] a university called ETHZurich. Okay. And
+[4:51.76] Max Plank also they're all really good.
+[4:55.76] Um
+[4:57.44] then comes
+[4:59.28] once the research paper side is taken
+[5:01.52] care of are there any other independent
+[5:03.76] people who are giving good research.
+[5:05.68] Sometimes on hugging face the top paper
+[5:08.48] turns out to be pretty good but in my
+[5:10.80] opinion hugging face has a lot of papers
+[5:12.80] which
+[5:14.32] are not worth reading frankly like the
+[5:16.88] top ones are probably worth reading but
+[5:19.12] many of the times you see a lot of votes
+[5:21.28] people just are voting on the basis of
+[5:23.52] what topic they find interesting not on
+[5:25.76] how useful that paper is. Okay so that's
+[5:29.92] how we can do it. This is to stay upto
+[5:32.32] date. If you want to read older research
+[5:34.00] papers, a very good huristic is
+[5:35.92] citations. So if a paper has a lot of
+[5:38.08] citations, it's usually really really
+[5:40.24] good. Uh the one that I just shared with
+[5:42.56] you has thousands of citations. Okay? So
+[5:45.68] I think it's 10 tens of thousands. So
+[5:48.00] it's a no-brainer. You can go and read
+[5:50.40] it. It's going to be useful. Um right.
+[5:53.92] So that's how I read.
+[5:56.32] Uh if you want to stay updated,
+[6:00.32] I am there. Um there are other
+[6:03.92] researchers in this space. Yan Leon is a
+[6:06.24] very famous researcher. Um and just in
+[6:09.92] general you can go through YouTube
+[6:11.28] videos u I I oh yeah there's there's
+[6:15.44] this person he's really good Yanik
+[6:17.60] Kilchure. Okay. He's also about the
+[6:20.24] hype. I have found his YouTube channel
+[6:22.72] to be really really useful. He goes
+[6:25.20] through again uh research papers. So
+[6:29.44] this is his channel. I'm just sharing it
+[6:31.04] in the in the link. Yeah,
+[6:35.28] do follow him. Do hit the subscribe
+[6:36.96] button for him because he's definitely
+[6:38.96] worth it. Um maybe, you know, if you
+[6:42.32] have an hour, then you can watch his
+[6:44.48] live, but if you don't have an hour and
+[6:46.72] you want to watch at 2x, that's also
+[6:48.64] fine. You can skip parts, that's also
+[6:50.24] fine. But he's really good.
+[6:54.56] Okay, one final question before we
+[6:57.20] start. uh
+[7:01.20] code with Tyson. Thank you.
+[7:15.36] Okay, Vishnu has a question which is can
+[7:18.16] you share highle mind map for learning
+[7:21.04] deep learning which architectures and
+[7:22.80] papers? So
+[7:25.60] I have a list of papers which I have
+[7:27.04] just shared with you on GitHub. Those
+[7:28.80] are really good. Um I usually go through
+[7:31.68] quite a few. So
+[7:34.08] the one that I pick to write a LinkedIn
+[7:36.24] post on or Twitter post on is usually
+[7:38.00] quite good. You can you know you can
+[7:40.48] trust that it won't be a waste of time.
+[7:43.60] Um how do I go through these papers?
+[7:46.48] This is my job. I do this full-time. I
+[7:49.28] also have a team of AI engineers who are
+[7:51.76] going through papers, who are excited
+[7:53.12] about research. So there's like in total
+[7:56.32] five of us. So we find the best papers
+[7:58.80] and we write something on it. You'll see
+[8:02.24] that's one of the reasons why our posts
+[8:03.92] are
+[8:05.52] although we go through like let's say
+[8:06.80] five or six papers only two of them are
+[8:09.68] worth writing about. Okay? So that's
+[8:12.32] what I do. you may you may not be able
+[8:15.28] to do this because if you're working
+[8:16.64] full-time you know it it takes too long.
+[8:19.52] So then you follow someone like Yani
+[8:21.60] Kilchure or me or um
+[8:26.40] you know famous voices in AI Yan Nikun
+[8:29.20] for example
+[8:30.80] don't follow random people who don't
+[8:33.36] know what they're talking about but you
+[8:35.60] can I mean it's going to waste your time
+[8:36.88] so [laughter]
+[8:38.32] okay uh wonderful guys let's start with
+[8:41.36] the
+[8:43.12] the paper reading yes
+[8:46.08] what I'll do is I will share my screen
+[8:48.56] with view. Let me just share it on this
+[8:50.80] smaller screen because the reading is
+[8:53.44] clearer here.
+[8:59.76] OBS. Yes.
+[9:03.44] Let's share.
+[9:10.80] Okay.
+[9:12.32] Let me reduce my video size.
+[9:18.88] You can see the paper behind me.
+[9:22.24] Okay.
+[9:25.36] All right. And this is the
+[9:29.76] the paper.
+[9:31.76] Okay.
+[9:33.44] I hope you're able to see this. In case
+[9:35.36] you aren't, you can let me know in the
+[9:37.12] comments. But uh hopefully you're able
+[9:39.44] to see this clearly.
+[9:45.44] Okay. Wonderful. If you're not, just let
+[9:47.92] me know in the comments.
+[9:51.12] Move this here.
+[9:54.48] Okay. The paper name is an image is
+[9:57.68] worth 16x 16 words. So 256 words.
+[10:01.52] Transformers for image recognition at
+[10:03.76] scale. You can see the date 2021. This
+[10:06.88] is a long time back. This is like when
+[10:09.84] CO was just a year old. Um and for for
+[10:13.84] AI that's like really really long ago.
+[10:15.92] Okay, COVID is like long long back for
+[10:18.88] Genai. Um, this is from Google. Let's
+[10:22.72] just see the abstract. Like we said in
+[10:24.80] the previous two papers, the first thing
+[10:27.28] we do is we read the abstract. Then if
+[10:29.28] we find it interesting, then we look at
+[10:31.36] the introduction. Finally, read the
+[10:33.12] conclusion. If we find all three of
+[10:35.12] these interesting, then we read the
+[10:36.72] paper. Okay. So while the transform
+[10:39.60] architecture has become the de facto
+[10:40.88] standard for natural language processing
+[10:42.80] tasks, its application to computer
+[10:45.20] vision remain limited. Okay, this is in
+[10:47.52] 2021. In vision, attention is either
+[10:50.72] applied in conjunction with
+[10:52.56] convolutional networks, CNN's or used to
+[10:56.16] replace certain components of
+[10:57.44] convolutional neural networks. Okay,
+[10:59.76] while keeping their overall structure in
+[11:01.52] place. So okay we show that this
+[11:04.48] reliance on CNN is not necessarily is
+[11:06.88] not necessary and a pure transformer
+[11:09.52] applied directly to sequences of image
+[11:12.08] patches can perform very well on image
+[11:15.04] classification tasks
+[11:17.36] when pre-trained on large amounts of
+[11:19.28] data this part is important on large
+[11:21.28] amounts for smaller amounts of data CNN
+[11:23.60] was still very good highly efficient but
+[11:25.84] when trained on large amounts of data uh
+[11:28.08] and transferred to multiple midsized or
+[11:30.00] small image recognition benchmarks marks
+[11:32.88] vision transformers attain excellent
+[11:34.72] results compared to state-of-the-art
+[11:36.80] convolutional neural networks uh while
+[11:40.16] requiring substantially fewer
+[11:41.84] computation resources to train.
+[11:44.13] [clears throat] Okay, so it's a simple
+[11:46.88] claim like a oneliner claim transformers
+[11:50.40] at scale are better than CNN's when it
+[11:53.76] comes to image classification.
+[11:56.64] Okay, so
+[12:01.28] pretty much it. This is a single line
+[12:02.96] statement.
+[12:04.96] Now since we are finding this
+[12:06.40] interesting, let's see what they mean.
+[12:09.44] Self attention based architectures in
+[12:11.12] particular transformers have become the
+[12:13.04] model of choice in natural language
+[12:14.48] processing. The dominant approach is to
+[12:17.04] pre-train a large text corpus and then
+[12:19.28] fine-tune on a smaller task specific
+[12:22.16] data set. Okay, what do you call this?
+[12:25.36] uh pre-train on a large text corpus.
+[12:27.68] This is the pre-training step.
+[12:30.64] This part is called self-supervised
+[12:33.04] learning where the model understands the
+[12:35.84] underlying structure of the language.
+[12:39.04] For example, when I say uh I was running
+[12:42.08] so fast that when I slipped I and then I
+[12:45.52] ask you what what could be the word you
+[12:47.52] you might say I was running so fast that
+[12:49.52] when I slipped I fell. I was running so
+[12:52.16] fast that when I slipped I flew. I was
+[12:55.20] running so fast that when I slipped I
+[12:56.88] crashed. But few of you will say I was
+[12:59.52] running so fast that when I slipped I
+[13:02.08] stopped. Okay. The the the way in which
+[13:05.12] the language is flowing uh is going to
+[13:08.00] be described by just looking at the
+[13:10.16] words in the sentence. Uh and then what
+[13:13.12] you can do here is you can blank out
+[13:15.04] some of the words so that the
+[13:17.44] transformer learns how to fill in the
+[13:19.52] blanks. As it's filling in the blanks,
+[13:22.16] it learns the structure of the language.
+[13:24.72] As a kid, we used to do this also. The
+[13:26.40] teachers would sometimes blank out some
+[13:28.64] words and then we would fill in the
+[13:30.56] right word that tells us whether we
+[13:32.64] understand the underlying structure of
+[13:34.32] any language, the grammar. Okay, this is
+[13:37.44] pre-training.
+[13:39.52] Fine-tuning uh is typical supervised
+[13:43.04] learning. You have a data set, task
+[13:44.96] specific data set. Maybe you have a
+[13:48.00] customer support query or you have a
+[13:50.08] sales query. The right way to answer it
+[13:53.52] is option A and B, C and D are wrong
+[13:57.44] ways to answer it. So the model then
+[14:00.16] tries to guess is the answer A or B or C
+[14:03.28] or D. If it guesses A, it scores one
+[14:05.76] point. If it doesn't guess A, it scores
+[14:08.88] zero. Okay, that's a high level way of
+[14:11.04] looking at it. Actually, they use
+[14:12.24] something called KL divergence. But for
+[14:14.96] now, we can say that supervised learning
+[14:16.96] means our typical test data, training
+[14:18.80] data, all that stuff is there. Okay,
+[14:20.48] that's fine-tuning a model
+[14:23.68] making it speak in a particular way,
+[14:25.92] giving it a particular tone, right? Uh a
+[14:29.60] tone, a format of speaking.
+[14:32.64] Thanks to transformers, computational
+[14:34.16] efficiency and scalability, it has
+[14:35.52] become
+[14:37.44] possible to train models of
+[14:38.72] unprecedented size with 100 billion
+[14:41.52] parameters 2001, right? Uh
+[14:45.84] just recently I I saw a model with 400
+[14:48.00] billion parameters. So it's growing in
+[14:50.32] size. With the models and data sets
+[14:52.40] growing, there is still no sign of
+[14:54.40] saturating performance. Uh in 2023, this
+[14:58.88] line would scare all of us. In 2026,
+[15:02.32] this line is not really scaring us that
+[15:04.08] much. Okay, in 2023 300 billion
+[15:07.12] parameter model now we know that even
+[15:10.72] with the 500 billion parameter model
+[15:12.32] it's not so crazy.
+[15:16.72] I mean the performance is not so much
+[15:18.40] better and and we have basically hit the
+[15:21.28] limit here at least for for now uh in
+[15:24.56] terms of data
+[15:27.12] in computer vision. However,
+[15:28.96] convolutional architectures remain
+[15:30.56] dominant.
+[15:32.48] Yan Lun uh the creator of CNN inspired
+[15:36.72] by NLP successes, multiple works try
+[15:39.52] combining CNN architectures with self
+[15:41.92] attention.
+[15:44.08] Uh some replacing the convolutions
+[15:46.48] entirely.
+[15:48.96] These models while theoretically
+[15:50.48] efficient have never yet been scaled on
+[15:52.80] modern hardware accelerators due to the
+[15:54.56] use of specific attention patterns.
+[15:56.88] Okay. So people are saying it's great
+[15:59.28] but they haven't actually scaled it to
+[16:01.44] the size that they want. Therefore in a
+[16:03.68] large scale image recognition
+[16:05.36] application
+[16:07.12] classic ResNet like architectures are
+[16:08.88] still state-ofthe-art.
+[16:11.04] Okay. So ResNets are still big, CNN are
+[16:13.76] still big. Okay.
+[16:15.84] Inspired by the transformer scaling
+[16:17.52] successes in NLP, we experiment with
+[16:20.56] applying a standard transformer directly
+[16:23.04] to images with the fewest possible
+[16:25.36] modifications.
+[16:30.56] So, okay. Okay. Um, I'm just seeing some
+[16:35.28] comments. There's no audio problem. Good
+[16:38.16] stuff. Uh, to do so, we split an image
+[16:41.44] into patches and provide the sequence of
+[16:43.52] linear embeddings. Okay, there's a lot
+[16:45.44] of stuff. Let me just explain it to you.
+[16:47.28] Uh, so that every word makes sense. What
+[16:50.16] they did is they applied the transformer
+[16:52.24] directly to images. Um and instead of
+[16:55.92] having CNN in between they just got the
+[16:58.64] transformer to do the work. Uh we split
+[17:00.96] an image into patches. Okay. So now let
+[17:03.76] me start drawing a little bit so that it
+[17:05.44] makes more sense. Let's say this is your
+[17:09.92] original image.
+[17:12.64] Okay. What they have done is they have
+[17:14.88] split this into patches. So that's
+[17:18.24] like this longitudinal and this is
+[17:23.04] horizontal or latitude.
+[17:25.44] This is a 4 + 4
+[17:31.20] patch map. Okay. So this is going to be
+[17:33.76] patch zero. This is going to be patch
+[17:35.12] one. This is going to be patch two. This
+[17:36.40] is going to be patch three.
+[17:39.36] This is going to be patch four. This is
+[17:40.64] going to be patch five. Okay, that's the
+[17:43.76] idea. U
+[17:46.88] once they have split the image into
+[17:48.32] patches they provide a sequence of
+[17:49.76] linear embeddings of these patches as an
+[17:52.72] input to the transformer. Okay. So
+[17:58.72] these patches
+[18:01.36] are being converted into some sort of
+[18:02.96] vector also known as embeddings. Okay.
+[18:06.00] In the previous live session we saw what
+[18:08.40] a vector is. Here we are taking an image
+[18:10.96] patch and we are somehow converting it
+[18:13.04] into a vector. At the same time we are
+[18:14.88] also taking the position of the patch
+[18:16.16] which is index zero and converting that
+[18:18.16] also into a vector.
+[18:20.32] Typically in a transformer you take a
+[18:21.84] word
+[18:23.44] and you take the position that's called
+[18:25.28] positional embedding and then you have
+[18:27.12] the word that's called the word
+[18:28.24] embedding.
+[18:30.00] Okay. After you convert the word and the
+[18:31.76] position into vectors
+[18:34.16] you send this to the transformer.
+[18:37.60] Okay. Um here since it's a image instead
+[18:41.36] of sending the entire image it's being
+[18:43.12] split into patches split into chunks and
+[18:47.44] each patch then is getting a positional
+[18:50.00] embedding and a vector embedding the
+[18:52.00] image embedding
+[18:54.72] very similar to the word transformer.
+[18:57.84] Uh image patches are treated the same
+[18:59.44] way as tokens. Uh they just said it
+[19:01.28] here.
+[19:02.88] uh in a NLP application we train the
+[19:05.68] model on image classification in a
+[19:07.84] supervised fashion. Okay. So image
+[19:11.60] classification is a supervised problem.
+[19:15.84] The transformer itself is first going to
+[19:18.96] have self-supervised stuff as we'll see
+[19:20.80] later. Okay. It's going to be able to
+[19:22.88] predict what is a missing piece in this
+[19:25.12] image. For example, if I take a part of
+[19:28.24] this image, this patch, and I blacken it
+[19:30.64] out, and I ask the transformer, fill in
+[19:33.68] this patch. Okay, fill in the blank. Uh,
+[19:36.88] assume that this is the there's a image
+[19:39.28] of a cat. There's an eye over here.
+[19:41.52] There's an eye over here. Uh, there's a
+[19:44.16] nose over here, and there's the rest of
+[19:46.72] the face here. Now, there should have
+[19:48.64] been a mouth here. So what the
+[19:50.80] transformer is going to do is it's going
+[19:52.40] to start predicting okay uh here you
+[19:56.00] should have something like a mouth.
+[19:58.66] [clears throat]
+[20:00.24] Okay this is the ugliest cat in the
+[20:02.16] planet but this is this is as good as
+[20:05.12] Goro's drawing gets. [laughter]
+[20:08.00] Okay, so when trained on midsized data
+[20:11.04] sets such as imageet without strong
+[20:13.28] regularization, these models yet yield
+[20:16.40] modest accuracies of a few percentage
+[20:18.72] points below resets of comparable size.
+[20:21.20] They're saying that, you know, the
+[20:22.96] results are not so impressive, but this,
+[20:26.32] yeah, this may seem discouraging, but
+[20:28.56] transformers lack some of the inductive
+[20:31.36] biases
+[20:34.48] inherent to CNN, such as translation,
+[20:37.76] equance, and locality. Therefore, do not
+[20:40.32] generalize well when trained on
+[20:41.76] insufficient amounts of data. They're
+[20:43.52] basically saying that CNN's are very
+[20:45.04] well adapted for image processing since
+[20:47.76] they have certain properties.
+[20:50.64] If you if you have worked with CNN, you
+[20:52.64] know that a CNN knows data locality. It
+[20:56.40] knows that this part of the image is
+[20:57.84] somehow closer to this one, this one,
+[20:59.28] this one, this one and this one. Okay,
+[21:02.24] the architecture, the structure itself
+[21:05.12] lets the model know uh that any patch
+[21:09.12] has other neighboring patches and which
+[21:10.80] those which um patches are the
+[21:13.12] neighboring patches. Okay, so there is a
+[21:15.04] structure, there is a locality
+[21:18.72] inherent to the architecture while
+[21:20.16] transformers don't have it. They only
+[21:22.08] get it at scale. If the transformer is
+[21:25.44] trained on larger data sets, we find
+[21:27.92] that training trumps inductive bias.
+[21:32.72] Our VIT attains excellent results
+[21:35.92] um with, you know, state-of-the-art
+[21:39.20] results basically. Okay, so that's the
+[21:43.04] introduction. Pretty long introduction,
+[21:45.44] but since none of you have probably gone
+[21:47.52] through image transformers before, or
+[21:49.60] maybe even if you have, you probably
+[21:50.88] don't go through it every day. So, it's
+[21:52.88] good to go over this in a in a slow deep
+[21:56.56] way. Okay, like we said, related work is
+[21:59.92] something you can go through yourself.
+[22:02.00] Um, usually this gives you another set
+[22:04.64] of papers that you can go through which
+[22:06.32] might be useful.
+[22:08.48] uh after this we jump straight to from
+[22:12.56] abstract introduction conclusion if
+[22:14.88] those three make sense to us then we
+[22:16.32] read the actual paper okay let's do that
+[22:18.88] we have explored the direct application
+[22:20.16] of transformers to image recognition
+[22:21.92] unlike prior works that use self
+[22:23.44] attention uh we do not introduce image
+[22:25.92] specific inductive biases into the
+[22:27.92] architecture apart from the initial
+[22:29.68] patch extraction step okay they're
+[22:32.56] saying that initially when we are
+[22:34.00] extracting the patches we are doing a
+[22:35.52] little bit of handholding after that the
+[22:38.32] transformers left on their own. We
+[22:40.40] interpret the image as a sequence of
+[22:41.76] patches and process it in the standard
+[22:43.44] transformer encoder. Um, this scalable
+[22:47.60] strategy works surprisingly well.
+[22:51.36] Um, transformer matches or exceeds the
+[22:55.28] sot
+[22:57.68] sa
+[22:59.60] state-of-the-art on many image
+[23:01.84] classification data sets while being
+[23:03.44] relatively cheap to pre-train. If you
+[23:05.68] see Facebook all the time it's saying
+[23:07.76] I've cleared soda but in at some points
+[23:10.72] they do clear soda but then it becomes
+[23:12.32] very hard to say whether they have or
+[23:13.92] not. Uh most of the papers that you'll
+[23:16.56] see very often say that we are the best.
+[23:18.40] We are the best but in reality clearing
+[23:22.00] being the best is really hard. In this
+[23:23.92] case the paper actually did it. Okay.
+[23:26.08] State-of-the-art results.
+[23:29.28] While these are encouraging, many
+[23:30.80] challenges remain. Uh viter vision tasks
+[23:33.84] such as detection and segmentation is is
+[23:36.88] still a challenge. Uh
+[23:40.80] okay. Another challenge is to continue
+[23:42.32] exploring self-supervised pre-training
+[23:44.00] methods.
+[23:46.88] Our initial experiments are encouraging
+[23:48.88] further scaling of VIT would be likely
+[23:51.36] needed for improved performance
+[23:53.68] in 2025 or 2026. This is not that
+[23:59.20] exciting anymore. We have something
+[24:00.96] called diffusion based models. Stable
+[24:03.12] diffusion came out a while back and now
+[24:06.64] diffusion based models especially with
+[24:08.16] flow are very very fast. Nearly all of
+[24:10.88] the top models that you have on image or
+[24:13.52] video are diffusion based. Okay, let's
+[24:17.52] just at a higher level look at because
+[24:20.32] this paper is really short. Let's just
+[24:21.84] go over the algorithm and then we will
+[24:23.92] see how it's different from diffusion.
+[24:27.12] Okay, firstly any questions guys any any
+[24:29.84] thoughts I've just gone through the
+[24:32.72] paper the basic part of the paper for 10
+[24:35.92] minutes now we'll look at the main part
+[24:37.84] which is uh the vision transformer okay
+[24:42.72] the method
+[24:50.72] there's a question by Sadhart who will
+[24:52.72] be teaching in the AI engineering cohort
+[24:54.24] it will just be
+[24:55.68] So I'll be teaching in the AI
+[24:56.88] engineering cohort. Um all of the
+[25:00.24] sessions will be conducted by me but um
+[25:03.76] yeah
+[25:05.36] but uh a lot of the content a lot of the
+[25:08.80] um all the networking sessions uh in the
+[25:12.48] weekdays those will be much more
+[25:14.80] community based. So there will be AI
+[25:16.80] engineers at interview ready. There's
+[25:18.64] some really smart awesome engineers who
+[25:20.72] we have they'll be joining and they'll
+[25:22.96] be conducting them. Uh but all the live
+[25:25.36] classes, the instruction will be
+[25:26.88] basically just me. So that's 32 live
+[25:30.08] sessions. Yeah,
+[25:32.16] that's me.
+[25:34.24] Oh, I better stay healthy because you
+[25:37.44] know uh a 1 hour session is is a bit
+[25:40.40] exhausting. Uh and this is one and a
+[25:42.80] half hours and it's going to happen
+[25:45.12] twice a week. So, Saturday, Sunday is
+[25:47.76] going to be really intense for me, but
+[25:48.88] it's going to be fun also,
+[25:53.36] right? Quite a few people have enrolled
+[25:54.96] in the cohorts uh in the in the cohort
+[25:57.68] page. So, I'm very very happy. Thank you
+[26:00.56] for uh your interest and I'm looking
+[26:03.28] forward for 28th February. So, I better
+[26:06.24] start working out my especially my
+[26:07.92] throat muscles. Yeah. [laughter]
+[26:14.32] Why are we looking through this paper?
+[26:15.84] If every image and video use diffusion
+[26:19.04] model, uh the same reason why we look at
+[26:21.92] Galileo's telescope before we look at
+[26:24.08] Hubble's you will not understand
+[26:25.76] anything in diffusion. You'll not
+[26:27.44] understand anything in general if you
+[26:29.04] are just going to be like give me the
+[26:30.40] state-of-the-art because you're not
+[26:32.00] prepared for it. So that's the reason.
+[26:36.88] uh this also helps us actually
+[26:38.88] understand the algorithm or the uh the
+[26:41.84] underlying architecture of any
+[26:43.20] transformer
+[26:45.04] which is exciting tomorrow if you're
+[26:46.48] building something for ISRO or NASA then
+[26:51.04] they can't just do with words they have
+[26:53.44] to know the underlying structure of LMS
+[26:55.04] they have to know how to feed in data so
+[26:57.20] how can you feed in images to a
+[26:59.28] transformer is an interesting
+[27:02.56] question like how do you do that in case
+[27:05.52] you want to do predictions.
+[27:08.16] Okay, remember diffusion is for creating
+[27:11.04] videos.
+[27:12.80] Transformers are still better at uh many
+[27:16.24] other things. Generation with
+[27:19.12] transformers for images may not be the
+[27:21.76] best, but when it comes to
+[27:22.88] classification, they're pretty decent,
+[27:25.36] right? Even now, so it's useful to know.
+[27:29.44] Okay. uh vision transformer an overview
+[27:32.88] of the models depicted in figure one to
+[27:35.04] handle 2D images we reshape the image
+[27:38.88] height into width into color into a
+[27:42.08] sequence of flattened 2D patches
+[27:44.88] okay n into p square into c we'll see
+[27:47.76] what that is so you have an image
+[27:51.52] with height h
+[27:55.12] and width w and each pixel
+[28:02.80] uh will have C components per color. So
+[28:06.24] let's say RGB is just three.
+[28:12.40] Okay. So H into W into C. What they're
+[28:17.12] doing is they are flattening them
+[28:18.80] meaning they're just taking them
+[28:20.08] together in a straight line. So if this
+[28:22.88] is 0 1 2 3 okay my handwriting by chord
+[28:31.20] but don't worry I'll be using the
+[28:34.80] writing board uh later here this is
+[28:37.92] easier to present uh on YouTube live OBS
+[28:42.08] so
+[28:43.92] 1 2 3 and so on so you see that the next
+[28:46.24] row is going to be just added here
+[28:47.60] that's called flattening
+[28:49.52] okay the resolution of The original
+[28:51.68] image C is the number of channels.
+[28:55.20] P cross P is the resolution of each
+[28:56.88] image patch. So there's like we said the
+[28:59.76] original image is being cut into
+[29:01.20] patches.
+[29:05.28] Each patch is of the dimension P cross
+[29:08.72] P. So it's a square patch. Okay. uh and
+[29:14.56] n is equal to hw means the total number
+[29:17.52] of pixels divided by p square
+[29:21.28] the size of the patch. Okay. Area of the
+[29:24.16] image divided by area of a patch is n.
+[29:27.36] Fine cool.
+[29:30.56] Um
+[29:32.32] the resulting number of patches which
+[29:33.68] also serves as effective input sequence
+[29:36.00] length for the transformer. You know
+[29:37.36] what let me just show you the image.
+[29:38.88] There's a lot of talk here but the image
+[29:40.96] in one in one image explains exactly
+[29:43.28] what is happening. Let me just go there.
+[29:46.16] It's up I think. Yeah. Look what's
+[29:50.00] happening is it's taking this uh
+[29:54.56] it's taking this original image
+[29:57.36] splitting it into patches 3 + 3 here.
+[30:01.52] Okay. And then [snorts] that's being
+[30:04.08] flattened. So this is index 0 1 2 3 4 5
+[30:11.28] 6 7 and 8. So nine in total. And then
+[30:16.24] what you're doing is you're doing a
+[30:17.68] linear projection of flattened patches.
+[30:19.84] What is linear projection?
+[30:22.64] Okay, we'll figure out patch plus
+[30:24.88] position embedding. What is this? We
+[30:26.80] discussed this earlier. Positional
+[30:28.24] embedding we said is similar to how a
+[30:30.08] transformer has every index uh converted
+[30:34.00] into an embedding. That's called the
+[30:35.12] positional embedding. And this is the
+[30:36.96] patch itself. The image patch. So one
+[30:38.72] with the image patch, two with the
+[30:40.16] second image patch, three with the third
+[30:42.40] image patch, four with the fourth image
+[30:44.80] patch, and so on. Okay, this is going to
+[30:47.52] the transformer encoder. What is the
+[30:50.08] encoder going to do? It's going to drive
+[30:51.76] as much meaning that it can out of this
+[30:54.32] multi
+[30:56.24] MLP head. Okay, so
+[31:00.56] this
+[31:02.32] is then defining the class of the image.
+[31:06.40] Is this a bird?
+[31:09.12] Is this a ball? Is it a car? What's the
+[31:11.76] entire image? It's going to tell you.
+[31:13.84] Okay, here you have the transformer
+[31:15.68] encoder. This is, if you have heard of
+[31:18.64] GPT, that's a transformer decoder. What
+[31:22.16] does it do? It generates
+[31:24.40] it generates tokens. A transformer
+[31:26.56] encoder gives you information can help
+[31:29.44] classify an image. Okay? Or classify a
+[31:31.84] word. So for example, the word happy, is
+[31:35.36] it emotional or no? Yes, you can encode
+[31:38.08] that into uh a vector. Okay. So
+[31:44.88] embedded patches go and get normalized.
+[31:47.76] This is a mathematical function. Uh
+[31:49.68] multi head attention standard
+[31:51.20] transformer stuff again they get
+[31:53.52] normalized. This is another mathematical
+[31:55.20] function. MLP is uh if you have heard of
+[31:59.20] fast forward neural networks
+[32:01.68] instead of that you have MLP over here.
+[32:03.84] Okay, let me just
+[32:07.60] show you what that means so that you
+[32:09.20] don't get all like uh okay MLP blocks
+[32:13.20] two and three uh layer norm. Yeah, how
+[32:16.72] do I show it to you in the simplest way?
+[32:18.08] In fact, do you have any questions? Uh,
+[32:21.04] I think I'll take questions instead of
+[32:23.12] trying to explain each block here. That
+[32:25.68] might be easier.
+[32:32.64] Does anyone here know about multi head
+[32:34.32] attention?
+[32:36.96] If not, I have taken a video on this
+[32:38.80] earlier. The basic idea is you you must
+[32:42.16] know about attention. I have taken many
+[32:43.92] videos on attention earlier. Attention
+[32:46.00] means that the patches
+[32:48.56] in the original image are going to be
+[32:52.08] used to find context for one target
+[32:54.72] patch. So let's say you're looking at
+[32:56.80] patch number one. Uh looking at this you
+[32:59.36] know there's a tower. But now if I ask
+[33:01.20] you is it a tall tower or a short tower?
+[33:03.04] You don't know. So you look at nearby
+[33:05.44] patches. You look at all of the patches
+[33:07.60] actually. And how do they add context?
+[33:10.32] How do they attend to this image? So
+[33:12.96] looking at it maybe you can tell oh it's
+[33:14.64] a really tall tower. I see a lot of sky
+[33:16.80] nearby. So maybe the angle was for a
+[33:20.40] really tall image. Uh I see that this
+[33:24.80] has leaves really really low few leaves.
+[33:28.08] So again that's a really tall image. I'm
+[33:30.00] just imagining here but uh when it comes
+[33:32.48] to a word when it comes to Apple by
+[33:35.28] adding context of nearby words if I say
+[33:37.44] Apple phone you know that's the uh
+[33:41.04] company Apple. But if I say sweet apple
+[33:43.84] then you know that it's the fruit. So
+[33:45.28] you need to look at nearby words nearby
+[33:47.76] images in this case to get maximum
+[33:50.16] context for this particular image patch.
+[33:52.16] Okay
+[33:54.08] that is for attention. Multi head
+[33:56.48] attention basically means that you have
+[33:59.60] multiple projections of the same image.
+[34:04.48] For example, uh you might have
+[34:08.16] when you're doing attention, you might
+[34:09.92] give more weight to the ground images.
+[34:13.28] For some reason, you find that the
+[34:15.04] ground images make more sense. That's
+[34:17.36] one angle. Angle one. There's another
+[34:20.32] angle to this. Look more at the sky
+[34:23.52] images. So that's angle two. There's
+[34:27.04] another one which is look more at the
+[34:28.56] season. Look at the color grading of the
+[34:30.80] image. And so different types of
+[34:34.00] features can be given more weightage
+[34:37.04] u if you have multiple attention heads.
+[34:40.40] Okay, one type of attention focuses more
+[34:43.44] on one type of patch. Another type of
+[34:45.92] attention focuses more on other type of
+[34:47.60] patch
+[34:49.60] at a high level. This is what we are
+[34:51.04] doing. Okay.
+[34:53.52] Once you have that u this multi head
+[34:57.28] attention block will have added as much
+[34:59.04] context as it can to the original patch
+[35:02.96] that's going to be sent to the MLP.
+[35:06.48] What is this? Uh
+[35:09.28] let's just see this. Instead of a fast
+[35:11.36] forward neural network, why are we using
+[35:12.72] an MLP?
+[35:20.72] Maybe. No, I mean it was there on the
+[35:23.28] transformer paper. So they know why
+[35:25.44] they're doing this. The classification
+[35:28.08] is implemented by an NL MLP. Okay. Okay.
+[35:31.04] Okay.
+[35:32.64] This is a multi-layer perceptron
+[35:37.76] with one hidden layer.
+[35:40.88] Okay. Why are they doing this? Because
+[35:43.28] when it comes to a fast forward neural
+[35:44.80] network, it's going to push out the
+[35:48.00] probabilities of different words.
+[35:50.80] Okay, but in this case you are looking
+[35:52.56] for a single word. Why MLP though?
+[35:58.64] The transform encoder consists of attend
+[36:01.44] alternating layers of multi- headed self
+[36:04.00] attention and MLP blocks. I think it's
+[36:08.08] the same thing. Layer norm is applied.
+[36:12.80] Let me just confirm that instead of
+[36:14.72] guessing. Uh
+[36:17.84] what is m
+[36:30.16] Let's see the MLP is a feed forward
+[36:32.64] neural network. Yeah. So we were right.
+[36:35.28] It's a multi-layer perceptron
+[36:37.76] u
+[36:39.92] which is basically a neural network.
+[36:41.68] Okay. You have seen the common
+[36:44.00] architecture of a neural network. when
+[36:45.44] you pass in these patches, they're going
+[36:48.72] to be
+[36:51.84] they're going to be sending uh outputs
+[36:54.88] with different weights and then finally
+[36:57.12] you will have some sort of a classifier.
+[37:01.28] Okay, this is going to highlight let's
+[37:03.68] say is it a dog? Okay, then this part
+[37:06.00] will get highlighted. That's how you can
+[37:08.00] classify an image.
+[37:10.00] So
+[37:11.84] u yeah in it's the same it's the exact
+[37:15.28] same I don't know why they called it MLP
+[37:17.04] like this is it's unnecessary if you
+[37:19.84] look at the original transformer paper
+[37:21.68] that they're quoting they call it a FFNN
+[37:24.00] fast forward neural network
+[37:26.48] and they haven't even defined I can't
+[37:28.48] see it being defined anywhere here in
+[37:30.24] front what MLP is so people have to
+[37:34.00] guess it's a multi-layer perceptron okay
+[37:37.04] okay so that's That's it. The MLP
+[37:39.76] contains two layers. Uh this is the
+[37:42.56] activation function. GLU.
+[37:45.52] You can think of it like this. Doesn't
+[37:48.00] get activated and then boom. Okay. Uh
+[37:51.36] why does this help? Because you can plot
+[37:53.76] complex relationships
+[37:56.16] with with such an activation function,
+[37:59.76] right? Uh okay. We note that the vision
+[38:02.88] transformer has much less image specific
+[38:05.04] inductive bias. less where is the image
+[38:07.92] specific inductive bias in CNN's
+[38:09.92] locality two-dimensional neighborhood
+[38:11.44] structure and translation equarians are
+[38:14.00] baked into each layer throughout the
+[38:16.08] whole model that's how the input is
+[38:17.68] taken in vit only MLP layers are local
+[38:21.84] and translationally
+[38:24.00] equariant where the self attention
+[38:26.08] layers are global okay so when you're
+[38:29.76] running this
+[38:32.32] through the fast forward neural network
+[38:34.24] the these layers layers are local and
+[38:37.04] translation equariant. I don't know what
+[38:39.04] this means. Self attention layers are
+[38:41.68] global. This makes sense because you
+[38:43.12] basically take the patches and any patch
+[38:45.92] can attend to any other patch. So the
+[38:47.76] first patch and the last patch 256 words
+[38:51.36] they can attend to each other. So this
+[38:53.36] is global this but this part the MLP are
+[38:58.56] local and translation equariant. This is
+[39:01.20] something that we should look into. Let
+[39:03.36] me just check this out. Uh
+[39:09.76] so
+[39:20.48] let's just see I using Google MLP layers
+[39:25.68] are act independently on each other.
+[39:27.44] Okay.
+[39:31.36] Okay. Okay. So equivariant here is that
+[39:34.32] the patch position doesn't matter but we
+[39:36.48] are sending a positional embedding
+[39:38.24] right. Conversely self attention layers
+[39:40.16] are global allowing every patch to
+[39:41.76] interact. What does this mean? What does
+[39:44.48] equariant mean? These focus on
+[39:47.28] transforming features with a single
+[39:49.04] spatial location.
+[39:51.20] Ensuring that if a feature moves its
+[39:52.96] processed representation moves with it.
+[39:55.60] Okay.
+[39:58.32] Oh. Oh. Okay. Okay. Okay. Okay. Okay.
+[40:01.60] So local position agnostic feature
+[40:03.92] extraction is possible because the MLP
+[40:06.08] is not aware of which position it is
+[40:09.76] dealing with. But the um during the
+[40:13.52] attention mechanism the transformer
+[40:15.84] makes sure that it is global attention.
+[40:17.92] Okay. Here you have the position
+[40:19.44] embedding also. So
+[40:23.04] when it comes to attention it is global
+[40:24.96] attention. But when the FFNN or the the
+[40:29.04] neural network is getting this patch, it
+[40:31.28] has no idea about uh the rest of the
+[40:34.64] patches. So it is basically local.
+[40:38.72] Okay, that's what it's saying. Our local
+[40:41.12] translation equivariant. So you can take
+[40:44.48] one patch, you can take this one patch
+[40:48.16] uh and
+[40:50.08] let's I'll just take an example. You can
+[40:52.40] take this patch here and you can push it
+[40:55.68] over here. No problem. And you can you
+[40:57.92] can basically swap positions. Nothing's
+[40:59.44] going to happen. The MLP doesn't know.
+[41:01.04] The MLP doesn't care. You can take this
+[41:04.24] patch
+[41:06.08] and swap it with the last patch. It
+[41:08.72] doesn't matter to the MLP, right?
+[41:11.12] Because when it is processing, all these
+[41:13.28] patches are equal to it. That's all it's
+[41:16.80] saying. It's really complex way to say
+[41:19.04] it maybe but that's the reason why
+[41:21.60] papers are dense. Um
+[41:24.80] the two neighborhood the two dimensional
+[41:27.44] neighborhood structure is used very
+[41:29.12] sparingly. Okay. In the beginning of the
+[41:32.00] model by cutting the image into patches
+[41:33.92] and at fine-tuning time for adjusting
+[41:35.52] the positional embeddings of images of
+[41:37.28] different resolutions as described
+[41:38.88] below. Okay. Other than that the
+[41:41.04] positional embeddings at initialization
+[41:42.48] time carry new information about the 2D
+[41:44.24] positions. Okay. So basically the
+[41:47.52] position embeddings are
+[41:50.32] only useful when uh just a second
+[41:54.40] beginning of the model by cutting the
+[41:55.60] image into patches and at fine tuning
+[41:57.28] time for adjusting. Okay,
+[42:02.00] they are basically saying that the
+[42:04.24] structure of the image is not being
+[42:06.08] used.
+[42:07.60] um only in the beginning we are using it
+[42:10.00] for cutting it into patches uh and at
+[42:13.04] fine-tuning time for adjusting the
+[42:14.48] positional embeddings
+[42:16.64] other than that
+[42:18.80] positional embeddings at initialization
+[42:20.48] carry no information about the 2D
+[42:22.72] positions of the patches and all spatial
+[42:24.48] relations between the patches have to be
+[42:25.92] learned from scratch. The model has to
+[42:29.20] figure out how the patches are related
+[42:31.36] to each other. The position embeddings
+[42:33.28] are not really helping much.
+[42:36.00] Okay, the model figures out how every
+[42:39.20] patch is related to every other patch by
+[42:41.12] itself. Even if you swap these out, even
+[42:44.40] if you swap one patch with another
+[42:45.76] patch, the model knows how they're
+[42:46.96] related to each other. If you ask it to
+[42:48.72] reconstruct the image, it's not going to
+[42:50.08] say, "Oh, I'm just going to take 0 1 2
+[42:52.24] 3." No, it's going to figure out which
+[42:54.00] one will come at zero. It's going to
+[42:55.52] figure out which one will come at one if
+[42:57.20] you give it these 16 patches in any
+[42:58.72] random order. So that's what it's saying
+[43:00.88] that the learning is the spatial
+[43:03.52] relations are all learned.
+[43:06.48] Okay. Hybrid architecture as an
+[43:09.68] alternative to raw patches the input
+[43:11.20] sequence can be formed from feature maps
+[43:13.12] of a CNN. Okay. So you can run a
+[43:15.12] convolutional neural network and then
+[43:17.28] you can learn the the input sequence the
+[43:20.88] feature map but this is a special case
+[43:23.92] and they didn't go ahead with this.
+[43:25.52] Okay.
+[43:27.52] All right. Uh just a little bit more
+[43:30.08] guys. I know this is quite heavy but
+[43:32.56] it's worth it. It's worth sometimes
+[43:34.32] pushing yourself.
+[43:36.32] Typically we pre-train the vision
+[43:39.84] transformer on large data sets and
+[43:41.68] fine-tune to smaller downstream tasks.
+[43:43.60] This is standard pre-training is
+[43:46.24] self-supervised. This is fine-tuned with
+[43:49.36] a with a human labelled data set. For
+[43:51.76] this we remove the pre-trained
+[43:52.88] prediction head and attach a zero
+[43:55.36] initialized D into K feed forward layer
+[43:57.52] feed forward neural network where K is
+[43:59.28] the number of downstream classes. Okay,
+[44:01.84] D into K dimensions into the total
+[44:05.04] number of classes you have. It is often
+[44:06.88] beneficial to finetune at higher
+[44:08.32] resolution than pre-training. Okay, why
+[44:10.96] is that? Um
+[44:13.84] looks like that's just empirical. Okay,
+[44:15.92] it is often beneficial to fine-tune the
+[44:18.40] model, the supervised learning at 1,000
+[44:21.60] by 1,000, let's say, but when it comes
+[44:24.24] to pre-training, you're doing at 200 by
+[44:27.28] 200 pixel.
+[44:29.76] Okay, so the area of the or the number
+[44:31.52] of pixels in the pre-training is much
+[44:33.52] lesser. Why? Let's see. When feeding
+[44:37.52] images of higher resolution, we keep the
+[44:39.52] path size the same. Okay, so if you're
+[44:41.92] using a much bigger image also, the path
+[44:43.60] size is the same. So this is going to be
+[44:44.88] split into many more patches which
+[44:46.88] results in a larger effective sequence
+[44:48.64] length. Make sense? The vision
+[44:51.76] transformer can handle arbitrary
+[44:53.28] sequence lengths.
+[44:55.76] However, the pre-trained position
+[44:57.60] embeddings may no longer be meaningful.
+[45:00.32] Okay, positional embeddings that you
+[45:02.16] learned with 200 by 200 is going to go
+[45:04.88] up to let's say 1,000. Okay, those those
+[45:07.12] are the positional embeddings that you
+[45:08.16] learned by splitting this into patches.
+[45:11.52] Now you took the same patch size and you
+[45:13.44] split this. It turned into many more
+[45:15.20] patches. Let's say 100 P patches. So you
+[45:18.08] have only positional embeddings of
+[45:19.92] 1,000. It should be up to 10,000 because
+[45:22.16] you have 10,000 patches now. But you
+[45:24.16] didn't train for those positional
+[45:25.12] embeddings. What will happen here? Um
+[45:30.88] yeah. However, the pre-trained position
+[45:32.56] embeddings may no longer be meaningful.
+[45:34.80] We therefore perform 2D interpolation of
+[45:37.28] the pre-trained positional embeddings.
+[45:40.08] 2D interpolation means if I have 1,000
+[45:43.60] then I'm going to say
+[45:45.84] all the all the patches here are going
+[45:47.92] to be uh divided by 10. Okay. And so
+[45:51.44] from 1,000 I need to move to 10,000. If
+[45:53.52] I'm at 99 9998,
+[45:57.12] this is the position embedding I need.
+[45:58.88] Then I'm going to take 999 9.8 8. And
+[46:02.80] I'm going to do some interpolation to
+[46:04.80] find out which
+[46:06.96] position embedding I should use from my
+[46:09.12] pre-trained model.
+[46:12.96] Okay. Uh I I put too too many numbers
+[46:15.04] here. Sorry. Uh this is not it's going
+[46:17.36] to be 9998. Okay. If this is the size,
+[46:22.48] if this is the position embedding I
+[46:24.08] need. I'm not going to take position
+[46:25.60] embedding of 9998. I'm going to put a
+[46:27.76] dot in between.
+[46:31.52] 999.9.
+[46:33.36] I'm going to look at this and compare
+[46:35.36] with the thousand positional embings I
+[46:36.88] have. So that's going to be 999. Take
+[46:39.60] the positional embedding of 999. Okay,
+[46:41.76] is that making sense?
+[46:44.00] You are train fine tuning on larger
+[46:46.16] images. You have more patches which
+[46:47.76] means you need more positional
+[46:48.72] embeddings. You don't want to retrain
+[46:50.40] the model on positional embeddings. Just
+[46:52.16] interpolate. Divide by 10, divide by
+[46:54.48] 100, whatever it takes to come back to
+[46:56.40] the original number of position
+[46:57.44] embeddings that you have.
+[47:00.48] Okay. U note that this resolution
+[47:02.96] adjustment and patch extraction are the
+[47:04.64] only points at which inductive bias
+[47:06.32] about the 2D structure of images is
+[47:07.92] manually injected into the vision
+[47:09.60] transformer. Okay. Whenever we are doing
+[47:12.56] some sort of
+[47:14.80] um patch extraction that's the only time
+[47:17.44] when uh this
+[47:20.64] some structure of the image is being
+[47:22.00] passed into the model.
+[47:24.48] All right. So that's it. And then you
+[47:26.56] move to experiments. In the experiments
+[47:28.24] you'll see that this this was doing
+[47:30.00] really well. The model was doing really
+[47:31.60] well. Um and it actually beat all CNN's
+[47:35.68] uh at scale. So the the best CNN at
+[47:38.48] scale at that time. So um that was
+[47:41.92] really really impressive. This this
+[47:43.92] paper uh if you have a look at the
+[47:46.64] number of citations it has and it's
+[47:48.32] considered a foundational paper for
+[47:53.92] images and transformers.
+[47:56.56] It's got 85,000 citations, right? In
+[47:59.84] just 5 years or five six years. Yeah,
+[48:04.56] 85,000 citations. That's a that's a lot.
+[48:09.36] I don't really understand. Okay. In
+[48:10.96] October 2020, it was published first and
+[48:13.36] by then transformers were the biggest
+[48:14.80] thing revised in June 2021. Okay, makes
+[48:18.48] sense. Uh, stable diffusion came out
+[48:21.12] really really close to it. So stable
+[48:24.24] diffusion paper
+[48:26.40] um this is in 2021 but
+[48:30.32] it it came out in December 2021 just one
+[48:33.04] year later. Okay. So
+[48:36.24] yeah
+[48:40.00] this was the big thing
+[48:43.92] right? So guys we have gone through this
+[48:45.68] paper. We have understood the the core
+[48:48.48] logic of the paper which is pretty
+[48:50.24] simple. Take any image, split it into 16
+[48:54.16] + 16 patches
+[48:57.52] and then you can train the model to
+[48:59.44] understand the underlying meaning of
+[49:02.80] each of these images. What you do is you
+[49:04.88] use a transformer encoder. Uh this will
+[49:06.96] help you classify images into a ball or
+[49:08.88] a bird or a cat or a dog or whatever. Uh
+[49:13.28] that will give you a basically a class
+[49:15.44] that this image belongs to. Now the
+[49:17.92] benefit of this is that it's better than
+[49:19.92] CNN's. Where can you deploy it? Let's
+[49:22.48] say at a traffic signal you want to take
+[49:24.96] an image of a person who's crossing the
+[49:28.48] road. And so if a person is crossing the
+[49:31.20] road, maybe you show the red signal.
+[49:34.08] Uh and if there is a car which is moving
+[49:36.16] very quickly, you want to take a picture
+[49:38.56] and then you want to find out where the
+[49:40.00] car is, the name plate, and you want to
+[49:41.92] find that person. How do you do that?
+[49:44.64] That's that's another problem. U what if
+[49:47.52] there's a car coming quickly towards
+[49:48.96] you, you want to quickly press the
+[49:50.48] brakes. Again, CNN's can help.
+[49:53.28] Transformers can do even better. Okay,
+[49:55.52] at scale.
+[49:57.68] So that's the basic idea. Uh and they
+[50:00.32] proved that transformers are better than
+[50:02.56] CNN's when trained at scale. We went
+[50:06.40] through the technique. We went through
+[50:07.84] the internal workings of the transformer
+[50:09.60] vit and finally we just touched on the
+[50:13.28] conclusion to make sure that we are
+[50:14.88] covering all the points and sot is
+[50:18.00] managed.
+[50:20.16] Great. Thank you everyone. Thank you for
+[50:22.00] spending maybe 50 minutes on a research
+[50:25.60] paper. So firstly congratulations. you
+[50:28.00] should should pat yourselves in the back
+[50:29.92] that you know you were able to manage uh
+[50:33.44] this much time reading something which
+[50:35.36] is rather dry but very very
+[50:37.28] informational
+[50:39.92] okay I'll be taking questions for the
+[50:41.60] next 3 minutes after which I'll be
+[50:43.92] bidding you goodbye right and I'll meet
+[50:47.12] you in the next session on Wednesday
+[50:49.60] which is again going to be at 6 p.m. Um,
+[50:52.80] right.
+[50:55.60] In fact, uh, I'm getting quite a few
+[50:57.28] questions on the cohort, so I'll answer
+[50:59.28] them first. Is the cohort course
+[51:01.52] beginner friendly? Let me just share the
+[51:03.44] cohort page with you guys. Um, if you
+[51:06.32] don't know guys, very nice. Let me tell
+[51:08.80] you, I'm taking a AI engineering cohort
+[51:11.44] where you can learn AI engineering in 16
+[51:13.68] weeks. Uh, it will be from February 28th
+[51:17.04] to June 14th, 2026. On Saturday and
+[51:20.24] Sunday, we'll be having live classes
+[51:21.60] from 9:00 a.m. to 10 a.m. IST. And on
+[51:24.16] Wednesday, we'll be having a networking
+[51:26.88] session where we can all discuss papers
+[51:29.20] or current state of AI models or current
+[51:32.64] state of AI engineering. So this is the
+[51:36.72] website. Let me just share that with
+[51:38.16] you. I think it's also there in the
+[51:40.08] description. So this is for software
+[51:42.16] professionals with a coding background.
+[51:44.64] If you haven't done coding before,
+[51:47.60] u this cohort is not suitable. Okay. If
+[51:51.04] you have done coding before, yes, this
+[51:52.56] cohort is going to be useful. If you're
+[51:55.28] looking to build
+[51:57.44] um
+[51:59.04] AI systems with production grade coding
+[52:02.08] quality, okay, so a hands-on AI
+[52:04.48] engineering program for software
+[52:05.60] engineers who want to understand AI
+[52:06.88] systems in depth and who want to create
+[52:09.76] production grade AI systems.
+[52:12.72] I think I should just change this. Of
+[52:15.36] course, you're going to understand AI
+[52:16.56] systems in depth. That's going to be a
+[52:18.40] side effect of building production grade
+[52:20.64] AI systems. Uh this is the entire course
+[52:25.20] outline. Okay, since I got a got quite a
+[52:28.16] few questions, I'll just
+[52:30.48] go over this. U in week one, we'll be
+[52:33.44] going over AI basics and your setup. So
+[52:38.00] we'll be working with Google Collab but
+[52:40.00] also maybe PyTorch is something you can
+[52:42.08] set up and we'll be going over loss
+[52:43.92] functions, activation functions, basic
+[52:45.84] linear algebra, basic neural networks.
+[52:48.16] This is week one is just an icebreaker.
+[52:50.48] Okay, so that you know where the
+[52:52.48] recordings can be found or how the um
+[52:55.60] the reminders are going to be sent on
+[52:57.28] email and stuff like that. Just log in
+[52:59.12] with Zoom.
+[53:00.80] Okay. Uh second week is where the cohort
+[53:03.76] is really starting uh going to pick up
+[53:05.52] steam. We are going to be looking at
+[53:07.20] scaling laws, types of learning,
+[53:09.04] supervised, unsupervised,
+[53:10.64] self-supervised,
+[53:12.16] uh how to evaluate models, how to code a
+[53:13.84] basic neural network with numpy. Okay,
+[53:17.12] so this has metrics in in machine
+[53:20.56] learning, gradient descent,
+[53:23.04] neural networks. Okay, that's going to
+[53:25.44] be the coding assignment. We three is
+[53:27.76] again we are going to get quite intense
+[53:29.92] now tokenization, vectorization, and
+[53:32.08] attention.
+[53:33.68] So we will be writing a little bit of
+[53:35.76] code around tokenization
+[53:38.40] and also we will be knowing about the
+[53:41.60] internal architecture of the LM.
+[53:45.84] Here we'll go deep into the internal
+[53:47.28] architecture. We'll see what happens
+[53:49.60] with KQB matrices. What is cross
+[53:52.48] attention? What is self attention? Multi
+[53:54.56] head attention fast forward neural
+[53:56.40] networks and predictions.
+[53:59.36] Okay, this is where you learn about the
+[54:00.96] transformer in a deep way. Then there
+[54:03.60] are some other things also about the
+[54:05.04] transformer that we can't complete in
+[54:06.40] one week and we shouldn't. So we'll let
+[54:08.48] this cook for a week and then you go
+[54:11.36] through the arrow to week five. Causal
+[54:14.16] attention coding a transformer. This is
+[54:18.32] a big thing because once you code the
+[54:19.92] transformer, you're going to feel a lot
+[54:21.20] more confident. Okay. What is causal
+[54:23.52] attention? What is model training auto
+[54:25.44] reggressive models? Um and in terms of
+[54:28.72] transformers, if you're not
+[54:29.92] understanding any of this, don't worry.
+[54:32.08] During the cohort we will be going
+[54:33.52] through all the stuff okay the
+[54:34.96] prerequisites are inside the cohort
+[54:36.64] itself and I'm actually writing notes
+[54:39.76] right now okay so the first few weeks
+[54:42.56] are ready which is making me feel
+[54:44.80] confident uh
+[54:48.08] LM training at scale this is how chat
+[54:51.20] GPT works this is how Gemini works the
+[54:53.60] end to end life cycle of an LM how does
+[54:56.24] data flow from one from the the LM the
+[55:00.00] start to actually your computer. That's
+[55:02.08] what we'll be going through. What is
+[55:03.76] pre-training, post- training, model
+[55:05.20] evaluation? Uh I I think we are being
+[55:08.72] very very humble when we write such
+[55:11.12] short points. Maybe I I have to give
+[55:13.44] more description here because really
+[55:15.84] this is going to be quite detailed and
+[55:18.48] quite intense. So that'll be fun.
+[55:20.48] Quantization and fine-tuning week seven,
+[55:24.24] it has uh optimizations on the KV cache.
+[55:28.80] When it comes to quantization, how do
+[55:30.16] you make the model weights good enough
+[55:32.96] despite having only 16 bits instead of
+[55:34.96] 32 bits or 64 bits? What is LORA Q Laura
+[55:39.44] and the flow of fine-tuning? Okay, so
+[55:42.88] how do you fine-tune any model,
+[55:45.84] right? U week eight, if you're a
+[55:48.56] software engineer, this is where the fun
+[55:50.64] part starts. Retrieval augmented
+[55:52.64] generation rag, but not just basic rag.
+[55:54.96] We're going to talk about chunking
+[55:56.08] strategies. We're going to talk about
+[55:57.36] reankers, indexers,
+[55:59.84] uh how does data ingestion happen,
+[56:01.60] vector embeddings, vector databases,
+[56:03.76] search algorithms, the internals of
+[56:06.00] vector databases, okay, ANN algorithms.
+[56:10.24] Then we have hands-on rag
+[56:11.76] implementation. We are actually going to
+[56:12.96] be implementing uh
+[56:15.76] rag in front of you and you are going to
+[56:18.56] be implementing it too with me. Uh again
+[56:21.60] all of the stuff reanking strategies,
+[56:23.20] query rewriting, hide uh input and
+[56:25.76] output guard rails safety uh which is a
+[56:29.44] big deal in rag. I think most people
+[56:31.60] right now are thinking about how do we
+[56:33.12] make AI agents safe. That's what we're
+[56:35.52] going to be discussing uh prompt
+[56:37.36] injection intent classification
+[56:40.16] and building a rank chatbot using API
+[56:42.40] calls.
+[56:44.16] Okay. Now comes agents AI agents and
+[56:47.04] tool calling. LM versus agent versus
+[56:49.84] multiple agents. What's the difference?
+[56:51.44] The react pattern. Uh you can think
+[56:54.24] about critic and um the
+[56:59.12] so there's the critic comes in the end.
+[57:01.36] Initially you have the the planner and
+[57:04.08] then you have the actor and then you
+[57:05.28] have the critic. So you can think of
+[57:06.40] those models also. Prompt chaining,
+[57:08.64] orchestration, routing, uh customer
+[57:11.20] support agent is what we will be coding.
+[57:14.20] >> [snorts]
+[57:14.96] >> Then you have MCP, context engineering,
+[57:17.28] multi- aent systems.
+[57:19.84] This is going to be a really intense
+[57:21.44] week if you're an engineer, but it's
+[57:22.80] going to be fun also because we're going
+[57:24.64] to go over how we can have memory uh in
+[57:27.84] these systems.
+[57:30.32] Finally, you have evals AI application
+[57:32.72] in production. So, LM as a judge. How do
+[57:35.44] you choose the right model? How do you
+[57:37.04] avoid hallucinations with evals?
+[57:39.12] Fine-tuning versus prompting versus rag.
+[57:41.68] Okay.
+[57:43.44] Finally, you have reasoning models. U I
+[57:46.72] I'm sorry, this is not finally because
+[57:48.00] this is week 13. You have reasoning
+[57:49.44] models, RLHF, chain of thought. How do
+[57:52.40] you prompt a reasoning model? Okay, now
+[57:54.40] I'm just going over quickly because it's
+[57:56.64] really intense. Uh then you have image
+[57:59.28] and diffusion models, something we
+[58:00.96] discussed today. Multimodal models, uh
+[58:04.16] clip, which is contrastive learning,
+[58:06.32] very exciting. Diffusionbased models
+[58:08.80] also. Okay.
+[58:10.96] So I think someone was interested in
+[58:12.64] diffusion based models. This is the
+[58:14.64] week.
+[58:16.80] We week 15 is a capstone project. This
+[58:18.64] is more to do with you picking up a
+[58:21.12] industry level relevant idea and then
+[58:24.56] your learnings from the previous lessons
+[58:26.24] being applied to create this project.
+[58:28.16] Okay. We have a team uh who will be
+[58:30.08] working with you uh to help you set up
+[58:32.80] and create the project. But this is week
+[58:35.68] 15 which is June. So it's time and week
+[58:40.88] 16 is a recap AI engineering principles
+[58:43.76] the best practices when working with LMS
+[58:45.92] and how you can transition to AI
+[58:47.28] engineering. Uh so that's the
+[58:51.12] that's all 16 weeks wrapped up. Yes. Now
+[58:55.60] I hope that you have very few questions
+[58:58.40] uh around the the syllabus but you may
+[59:01.36] have many more questions which have just
+[59:03.92] come up looking at this syllabus. You
+[59:06.16] can connect with us on WhatsApp. You can
+[59:08.00] just click on this button or you can log
+[59:11.28] in and you know send us your questions.
+[59:14.64] You can also you'll have some common
+[59:16.96] questions FAQs who should join this
+[59:18.96] program. It's for software engineers who
+[59:20.96] want to build production grade AI
+[59:22.48] systems. We expect prior coding
+[59:24.64] experience and a basic understanding of
+[59:26.40] software systems.
+[59:28.64] Class timings are given here 9 to 10:30
+[59:31.76] a.m. on Saturday and Sunday. um
+[59:35.92] from Feb 28 to June 14th. If you want to
+[59:39.60] reimburse this program from your
+[59:41.20] company, you can use these resources.
+[59:43.44] You can download the cohort brochure or
+[59:45.68] you can also use this email template.
+[59:47.84] Okay? We provide invoice, GST number,
+[59:50.16] certificate, all of the things that a
+[59:52.00] company's looking for as proof of
+[59:54.08] learning. Yes, we have that. Okay? And
+[59:57.36] you have this brochure which you can
+[59:58.48] forward to the team. Yeah, we have the
+[60:00.16] email template actually describing that
+[60:01.60] really well.
+[60:03.28] What is the time commitment? We expect
+[60:04.72] you to spend at least 3 hours per week.
+[60:06.96] So if you're too busy, if you're
+[60:08.56] currently in a deployment schedule or
+[60:11.12] things are just impossible, you can't
+[60:12.72] spend any time.
+[60:15.20] 3 hours per week is not too much to ask
+[60:17.28] frankly. So find 3 hours and then you
+[60:20.24] can join this program. Okay? It's going
+[60:22.00] to help you a lot. It's going to save
+[60:23.52] you around 200 hours this year. So save
+[60:26.40] three spend 3 hours now and it's it's
+[60:28.48] going to really uh come back to you in a
+[60:30.56] very good way.
+[60:32.40] Are there any prerequisites? We expect
+[60:34.08] you to have coding experience, but all
+[60:35.84] prior ML and math prerequisites are
+[60:39.52] included in the cohort. Uh, will you
+[60:42.48] have lifetime access to all the
+[60:43.68] recordings? Yes, you will. All video
+[60:45.20] recordings and reading material for this
+[60:46.48] cohort will have lifetime access, of
+[60:48.08] course. Uh, I want to learn ML from
+[60:50.16] scratch. This is not a ML cohort. This
+[60:52.56] is a gen AI cohort. It's a AI cohort
+[60:55.76] with primary focus on LMS. So the
+[60:59.44] current industry is highly focused on
+[61:02.72] using LMS in the best way possible. That
+[61:05.28] is what this is about. It's more on the
+[61:07.12] practical side. Okay, we're not going to
+[61:09.52] be talking about machine learning,
+[61:10.80] gradient descent or uh activation
+[61:13.44] functions as much as would be in a ML uh
+[61:17.60] workshop or something. Okay, we're going
+[61:19.20] to look at them to understand what they
+[61:21.36] do instead of how they work internally.
+[61:23.68] You're going to look at the transformer
+[61:25.12] to understand how it works internally.
+[61:27.28] That will be the difference. What is
+[61:29.60] your cancellation refund policy? We
+[61:31.12] offer a 7-day money back guarantee. If
+[61:32.80] you're not satisfied with the program,
+[61:34.16] you can request a refund within 7 days
+[61:36.00] of the program start date. So, from 28th
+[61:38.56] Feb to 5th or 6th March, you can go
+[61:41.68] ahead and request a refund. We will
+[61:43.52] process it with no questions asked.
+[61:46.32] However, there's going to be u
+[61:49.52] um payment gateway and currency charges
+[61:52.00] that we can't avoid. Frankly, we are not
+[61:54.48] making that money. we are just
+[61:55.68] subtracting the money which was cut by a
+[61:58.32] payment gateway from us. Okay. So in
+[62:00.64] when it comes to USD it can be as high
+[62:03.04] as 10%. When it comes to India it is on
+[62:06.24] the much lower end of 5%. Okay.
+[62:08.72] Hopefully you'll not need to use this
+[62:10.80] but this is keeping you safe just in
+[62:12.96] case you find that the cohort is not not
+[62:15.76] what you're looking for after the first
+[62:17.68] week. U the either the the syllabus or
+[62:21.84] maybe the timings. So you try it for a
+[62:23.76] week, you try it for the first two days.
+[62:25.44] If it's not making sense, it's fine. You
+[62:27.92] know, uh it makes a lot of sense. And if
+[62:30.88] you want to sign in, you can loging in,
+[62:32.64] you can enroll. Uh you can sign in here
+[62:38.56] on Gmail. And yes, I am I am logged in.
+[62:43.12] Uh I have already signed into the
+[62:45.60] cohort, but here you'll see a button for
+[62:47.52] signing in. And you can go ahead. You
+[62:49.52] can get your invoice. Uh I am logged in
+[62:51.92] through the admin and also we are having
+[62:53.36] some invoice issues it might be that so
+[62:56.64] I'm looking to get this fixed. If you
+[62:58.32] are looking for an invoice immediately
+[63:00.24] uh just connect with us. We are making
+[63:02.00] manual invoices also and we'll send it
+[63:03.52] over. You don't need to wait. It's going
+[63:05.52] to happen at the same time. This is a
+[63:07.84] bug which is fixed. This is there for
+[63:09.20] the older users like long back a week
+[63:12.32] back. So I'll I'll get this fixed on my
+[63:15.20] portal also. Uh account settings you can
+[63:18.32] just change stuff here. you can change
+[63:20.08] your image and that's it. It's a pretty
+[63:22.08] simple website. Of course, most
+[63:23.60] important stuff is going to happen when
+[63:26.24] uh the cohort starts. All the best
+[63:29.12] folks. Thank you so much for giving me
+[63:31.20] your time and thank you for listening to
+[63:34.48] this AI engineering paper today on
+[63:37.28] transformers and um vision transformers.
+[63:41.52] So, I'll see you next time. Take care.
+[63:44.00] Bye-bye.
+[63:51.79] >> [screaming]

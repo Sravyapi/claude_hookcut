@@ -1,0 +1,618 @@
+[0:00.04] so till this point we were able to
+[0:02.08] create the token the JWT token so just
+[0:05.08] to show you how it was looking so if you
+[0:07.04] go back here and if you click on login
+[0:09.72] so we are passing the details if you can
+[0:11.52] see the body we are sending the login
+[0:13.52] details which is Navina and and at the
+[0:15.40] rate 1 to3 when you click on send the
+[0:17.68] request goes to the server and then on
+[0:19.64] the server side it verifies the username
+[0:21.32] password and if the username is password
+[0:23.44] is correct in that case it generates a
+[0:25.96] token which you can see here and of
+[0:28.12] course using this token I want to do
+[0:30.12] other activities example I've done the
+[0:31.84] login once right and I got the token and
+[0:33.84] now let's say from the application if I
+[0:36.00] want to access any resource example if I
+[0:38.56] want to fetch students and I don't want
+[0:40.96] to pass the username password now so in
+[0:42.60] the earlier scenario we were sending the
+[0:45.08] username password but now we don't want
+[0:46.64] to do that we want to send a token which
+[0:48.96] is a better token and here we should be
+[0:51.20] able to paste it and we are doing that
+[0:53.60] but when you click on send this is not
+[0:55.72] working and we want to make it work so
+[0:57.84] generating token done but we have to WR
+[1:00.16] the token and give the access to the
+[1:02.04] user that's what you have to do in this
+[1:03.60] video okay u in fact this token is also
+[1:05.64] valid we have checked that on jw. we got
+[1:08.36] the details we got the claims and we got
+[1:10.16] other details so things are working out
+[1:12.32] it's just that now we have to validate
+[1:14.36] token and we have to make this work now
+[1:16.08] how we are going to do that so of course
+[1:17.64] there are multiple steps involved the
+[1:19.04] first thing you have to do is when you
+[1:20.32] send a request to the server by default
+[1:22.56] see one there's one thing uh I wanted to
+[1:24.16] point it out if you go to security
+[1:26.04] config we have mentioned that for this
+[1:28.36] two requests the register and and for
+[1:30.28] login you don't have to check for
+[1:32.32] authentication so basically they are
+[1:33.76] permitted but for the all the other
+[1:35.36] request it will be authenticated that
+[1:36.96] means when you request for the students
+[1:38.64] it will be authenticated and by default
+[1:41.08] the authentication we follow is user
+[1:43.44] password authentication so by default
+[1:45.32] that filter comes to picture now if you
+[1:47.20] remember we have talked about filters
+[1:48.56] right so in Spring Security we have
+[1:50.68] multiple filters one of the filter is
+[1:52.76] user password authentication filter this
+[1:54.92] is a filter which gets activated and
+[1:56.48] then it checks for username password now
+[1:58.24] what we are saying is hey you know I
+[1:59.64] don't don't want this filter to be
+[2:01.36] activated first before this filter I
+[2:03.48] mean I want to make this filter which is
+[2:06.24] UF as your second filter and the first
+[2:09.40] filter should be your JWT filter now
+[2:11.84] this will check for the token right now
+[2:13.84] once you verify token as a first filter
+[2:16.36] then it will send the request to the uh
+[2:18.28] UPA filter by saying hey I have verified
+[2:21.12] and this is a user already logged in so
+[2:23.32] I'm confirming that so you can just
+[2:25.12] continue with the other work so this is
+[2:26.52] what we want to do so that means we have
+[2:27.96] to add a filter before the user password
+[2:30.96] authentication filter and the way you
+[2:32.28] can do that is very simple it's not
+[2:33.96] actually you know this this video is
+[2:35.76] also very lengthy so just be with me and
+[2:37.92] there a lot of things going on and if
+[2:39.28] you watch it with me and if you write
+[2:41.80] the code with me it will make much more
+[2:43.60] sense so the first thing you do is
+[2:45.20] before you build you know I'm in the
+[2:47.16] security config and we are working with
+[2:49.32] security filter chain basically we're
+[2:50.72] working with Filter chain and before you
+[2:52.28] say build what you do is you add a
+[2:54.60] filter before the user authentication
+[2:56.68] filter right so you will say add filter
+[2:59.24] before so you can you can add filter
+[3:00.80] anytime you can add filter uh you can
+[3:02.68] add filter at particular point you can
+[3:04.20] add filter after or before so I want to
+[3:06.32] add before the user authentication
+[3:07.88] filter so I will do that uh the first
+[3:09.32] parameter is actual filter so let's say
+[3:11.40] I want to say this is a JWT filter so
+[3:13.52] that's the object we have to pass the
+[3:14.96] second one is the class the filter class
+[3:17.60] so I will say usern name password
+[3:20.36] authentication filter now this is what
+[3:22.88] we have to specify so what I'm doing is
+[3:24.56] I'm saying that hey you know before you
+[3:26.84] hit this particular filter use this
+[3:28.92] filter but what is this filter we have
+[3:30.60] to work with this so in that case you
+[3:32.48] will go up here and create the object of
+[3:36.12] private
+[3:37.88] JWT filter J filter so this is what so
+[3:41.60] we have created the object here I mean
+[3:43.00] we are doing Auto wire and then that
+[3:45.12] object would be used here okay but the
+[3:47.08] problem is and it says that uh this jwd
+[3:50.52] filter is not able to find it so it's
+[3:52.12] very simple you can just simply say
+[3:53.76] control space let's import the package
+[3:56.32] oh it says no suggestion that means in
+[3:58.88] your library of sping security we don't
+[4:00.76] have this filter by default and that's
+[4:02.76] where you get the opportunity to create
+[4:04.68] a new filter I know I'm using some
+[4:06.48] positive words here opportunity yeah we
+[4:08.52] have to get another class to make it
+[4:10.04] work so let's do it you know anyway we
+[4:12.68] are doing this only once so I will just
+[4:13.92] click here and say hey create a class
+[4:16.28] and when I want to do that maybe in the
+[4:17.60] same package config logically it should
+[4:19.56] be in a separate package called filter
+[4:21.16] package but config works for this
+[4:22.92] example I will click on okay and we got
+[4:25.28] this new class now I want this to behave
+[4:28.08] like a filter okay how do we make make
+[4:29.88] something behave like a filter what you
+[4:32.16] do is you extend those properties right
+[4:34.08] so if I want to be rich I want to get
+[4:35.96] adopted by some Bia right so here I want
+[4:39.76] to extend I want to make this a child
+[4:41.40] class of some parent class which has a
+[4:44.32] filter capability so one of the filter
+[4:46.00] we are going to use here is I mean
+[4:47.36] that's one one of the class we're going
+[4:48.72] to extend is once per request filter I
+[4:51.80] know very nice name to give to a filter
+[4:54.36] or the class this is called once per
+[4:56.36] request filter see the reason is every
+[4:58.36] time you send a request you want want a
+[5:00.16] filter to get activated and in the
+[5:01.96] filter chain you want this filter to be
+[5:04.20] executed only once so for every request
+[5:07.44] you want this filter to be executed only
+[5:09.20] once and that's why you're saying once
+[5:10.52] per request filter now it is giving you
+[5:12.80] some error I was not expecting but let's
+[5:15.68] see this once per filter is actually an
+[5:18.12] abstract class which means there might
+[5:19.84] be some abstract methods which we have
+[5:21.68] to implement and if you scroll down down
+[5:23.80] down all the methods are defined but one
+[5:26.12] method is there yeah there's always one
+[5:28.44] so one method is there which is called
+[5:29.76] called do filter internal which is
+[5:31.80] abstract method that means if you want
+[5:33.36] this to work we need to we need to we
+[5:35.84] need to we need to implement it so let's
+[5:37.88] click on Implement and okay so this is a
+[5:40.20] filter we have to work with now if you
+[5:41.56] go back to our sessions on Spring web we
+[5:43.84] have talked about HTTP subet behind the
+[5:46.04] scene everything is sub right and it
+[5:47.96] gives you two objects to work with
+[5:49.68] request object to work with the data in
+[5:51.92] the request of the user response object
+[5:53.64] if you want to add something to the
+[5:54.76] response and here I just want to work
+[5:56.40] with a request so let's use request but
+[5:58.68] what I want to do that's a big question
+[6:00.44] see it's actually very simple see on the
+[6:02.16] client side you are sending a request
+[6:04.36] right for for the students and with that
+[6:06.36] request you are sending a token as well
+[6:08.56] now this token when you receive on the
+[6:10.00] server side you will not get to the
+[6:11.72] Token as this just the token what you
+[6:13.68] will receive is can I type here no I
+[6:15.76] can't type here uh maybe I will type in
+[6:17.52] body so what I receive from this server
+[6:19.72] not a good place to type right okay so I
+[6:21.80] will just go back here and I will write
+[6:23.12] a comment so from the client side what
+[6:24.84] you will get is better that's the first
+[6:26.80] word and then you will get the token I
+[6:28.64] think token is this yeah so this is what
+[6:30.52] you get from the client side so it
+[6:32.20] starts with better and then a space and
+[6:34.96] then it starts with the actual token
+[6:36.92] this is what you get from the client
+[6:38.64] side right now what you have to do is
+[6:40.00] you have to get this token and you have
+[6:41.24] to cut that better part you just have to
+[6:42.60] focus on this part get this token and
+[6:45.08] viate it so simple right okay not that
+[6:47.56] simple I mean breaking out is simple
+[6:49.36] viting is difficult so let's be with me
+[6:51.32] so how will I get this thing the entire
+[6:53.72] stuff and actually it's a part of
+[6:55.28] request so it sends the data this better
+[6:58.92] and the token in the request object in
+[7:01.04] the headers so what I can do is I can
+[7:02.52] get the headers so I will say security I
+[7:04.76] will say or header so header will have
+[7:06.72] lot of things I don't want everything so
+[7:09.00] from the request I just want a header
+[7:11.44] which talks about authorization this is
+[7:13.56] the only header I need it will have lot
+[7:15.28] of headers but I just want authorization
+[7:17.28] and once you got this Au header this
+[7:19.44] will have this token but I want only the
+[7:21.64] last part so I will save this token
+[7:23.84] somewhere in the token and by default I
+[7:25.44] will keep it null I want the username as
+[7:27.48] well because somewhere we have to work
+[7:28.68] with the username because because you
+[7:29.68] will generate a token you will verify
+[7:30.96] the token with the help of username and
+[7:32.44] now let's get started so first thing I
+[7:34.16] want to check is do we have any
+[7:36.04] authorization header so let's check that
+[7:37.84] so if there is a o header which is not
+[7:40.56] equal to null in that case you have to
+[7:42.12] continue so that's the first thing you
+[7:43.36] want to check you you want to make sure
+[7:44.68] that this is not null and you have to
+[7:46.92] also verify do we have a better token so
+[7:49.72] again I will check Au header so it
+[7:52.12] starts with it should start with better
+[7:54.24] so you can even say B but to be on safe
+[7:56.32] side I will say it should start with
+[7:57.60] better in case if it is starting with
+[7:59.20] that I will set the token and I want to
+[8:01.96] fetch the token now and fetching token
+[8:03.48] is very easy you will say Au header dot
+[8:06.16] uh you want you don't want the entire
+[8:07.64] string right you just want this
+[8:09.20] particular token here so I want to skip
+[8:10.92] these letters now what are this letters
+[8:12.60] so I will start with index of zero so
+[8:14.44] this is b is0 1 2 3 4 5 and then six the
+[8:20.84] space is also there right so I want to
+[8:22.44] start from seven so it should start the
+[8:25.08] substring from Seven index number seven
+[8:27.84] and I want to get the username from the
+[8:29.60] token so I will say username equal to
+[8:31.64] now how will you get the uh username
+[8:33.96] from the token because token is encoded
+[8:35.52] right so you can see this you have to
+[8:37.04] find usern from this as a human also you
+[8:38.92] can't do that so we have to do something
+[8:40.68] for the program to work but I will make
+[8:42.68] sure that I do that in the service so I
+[8:44.24] will use Service uh object and we don't
+[8:46.84] have the service auto autowired here so
+[8:49.44] I will say autowired private JWT service
+[8:53.92] service okay so I will use this and in
+[8:57.24] this I will make sure that I have an
+[8:58.72] object I have I have a method called
+[9:00.40] extract username maybe it will have
+[9:02.64] username so for where exactly it will
+[9:04.44] extract the to extract the username from
+[9:06.04] the token and you can see there's a red
+[9:07.52] here because we don't have this method
+[9:08.80] in the service yet so what I will do is
+[9:10.12] I will say okay uh create this method of
+[9:12.64] uh extract token and at this point I
+[9:14.32] will just return empty we'll code it
+[9:16.52] later so this is empty so so that we
+[9:18.48] will not get any error and you can see
+[9:19.88] there's no error here now once you got
+[9:21.36] this two now we have to verify so once
+[9:22.92] you got the details you got the token
+[9:24.32] now you got username so I will check if
+[9:26.96] so the username should not be equal to
+[9:28.52] null that's the first thing I to check
+[9:29.96] and I also want to make sure that
+[9:31.56] there's no it's not already
+[9:32.88] authenticated so if the object is
+[9:34.72] already authenticated why you have to
+[9:35.80] verify all those things so I will say
+[9:37.12] security context holder dot get
+[9:41.44] context. get authentication and this
+[9:44.04] should be null so if it is not null then
+[9:46.48] I don't want to continue because it's
+[9:47.76] already auth authenticated so I will
+[9:49.20] just continue with this so this should
+[9:50.36] be null if these two are matching see
+[9:52.48] ultimately what you have to do is we
+[9:54.12] have to validate token see we into
+[9:55.68] filter now right so see if this filter
+[9:57.48] is Success then we'll forward it to the
+[9:59.68] user pass authentication filter right
+[10:01.24] now how do you specify that is this is
+[10:02.72] Success the first thing you have to do
+[10:03.88] is you have to validate the token if the
+[10:05.88] token is valid valid in that case you
+[10:07.88] will create the authentication object
+[10:09.96] and that's what you have to do here so
+[10:11.40] to do that I want to verify right so I
+[10:13.04] will say JWT service dot in this
+[10:15.08] particular class I want a method which
+[10:17.64] will validate the token because all the
+[10:19.52] things we are doing in the JW service
+[10:21.16] right so let's do that so there should
+[10:22.76] be a method called validate token and
+[10:24.64] you have to pass the token now when
+[10:25.84] you're validating you have to check two
+[10:27.12] things one in the token the token should
+[10:29.04] be valid and second the username which
+[10:31.52] is it is mentioning it should be part of
+[10:33.52] a database right and to refer to
+[10:35.52] database I will pass the object of user
+[10:37.68] details and we have to create this
+[10:39.36] object somewhere now where should I
+[10:40.68] create the object I can do that here so
+[10:42.48] I can say user details we have to import
+[10:45.76] the package use it details and then I
+[10:49.04] can actually Auto if you keep it on top
+[10:51.04] but I think it will create a cyclic
+[10:52.72] redundancy so what you can do is you can
+[10:54.88] get the hold on the application context
+[10:56.80] object so I will say autowire and applic
+[10:59.68] context context remember when we were
+[11:02.76] running about spring framework we have
+[11:04.96] used this application context to get the
+[11:06.48] bean so here also I will say context.
+[11:09.68] get bean of type user
+[11:13.32] details. class but the problem is it
+[11:15.88] will give you a empty object I don't
+[11:17.80] want empty object what I want is I want
+[11:20.04] the object of user details which will
+[11:21.28] have the user data now if you go back to
+[11:23.64] my Detail Service in this you have this
+[11:25.80] method called load user by username and
+[11:28.16] this will give you the object of us
+[11:29.40] details that means if I ask for the
+[11:32.40] object of my user details service dot
+[11:36.32] class and from this object if I can get
+[11:38.92] load by username and if I pass the
+[11:40.68] username here it will file database and
+[11:43.08] it will get me the username right and
+[11:45.00] not just username it will give me the
+[11:46.44] entire user D object okay so that's what
+[11:48.68] we are doing here but if you can see in
+[11:50.48] JW service we don't have this method so
+[11:52.36] I will just create one so the method
+[11:54.16] name is Ved token and at this point I
+[11:55.84] will return true okay let's go back to
+[11:57.68] the filter now if the token is valid it
+[11:59.72] in that case remember we have the next
+[12:01.60] filter we have to make it work so the
+[12:03.44] next filter is next next filter will
+[12:05.52] work with the username password
+[12:06.96] authentication filter but I want to pass
+[12:08.48] a token there so I will create a token
+[12:10.88] and I will say new username password
+[12:12.60] authentication token now this token asks
+[12:14.68] you for three things one is a principal
+[12:17.08] next is a credentials and third is
+[12:19.08] authorities so user principles we
+[12:20.88] already have which is the object of user
+[12:22.40] details which will have all the details
+[12:23.60] about the user credentials I don't want
+[12:25.08] to mention so I will keep it null
+[12:26.36] authorities I have is so will get it
+[12:29.64] from user details. getet authorities
+[12:32.64] okay that is that that is what it was
+[12:34.16] asking and we are getting is it a
+[12:36.76] warning variable token is already
+[12:38.32] defined in the scope where exactly I'm
+[12:40.56] using token okay so I will use something
+[12:43.08] else okay toen token we already have it
+[12:45.32] here right so this should be Au token if
+[12:48.80] it makes it happy now o token knows
+[12:51.28] about the user but or token has no idea
+[12:53.68] about the request object right so this
+[12:55.16] request object will have lot of data and
+[12:56.76] we are just creating this object and we
+[12:58.00] are passing it so this object should
+[12:59.96] also know about the uh request object so
+[13:03.64] you will say set details and to specify
+[13:05.84] that you have to use web authentication
+[13:07.72] details Source sometime you have to just
+[13:09.92] remember the class names and stuff it
+[13:11.92] becomes very complex you just get get
+[13:13.88] into it and with this object you will
+[13:15.56] say build details and you will pass the
+[13:17.16] request object and now once you have
+[13:19.36] this OD token ready is just you have to
+[13:21.48] set this in the context so this
+[13:23.16] particular thing which is authentication
+[13:24.52] should not be there by default and
+[13:25.68] that's what we are taking for null now
+[13:27.36] once it is verified you have to set the
+[13:28.64] Authentication so you will say secur the
+[13:30.64] context holder dot now instead of saying
+[13:32.76] get authentication you will say set
+[13:34.64] authentication and you will pass the a
+[13:36.48] token object so by doing this you are
+[13:38.28] adding the token in the chain and once
+[13:40.40] it is ready you will simply pass the
+[13:42.56] request or the filter so now you will
+[13:44.68] say filter chain. do filter so continue
+[13:46.80] the filter because this is one filter go
+[13:48.20] for the next filter once it is done and
+[13:50.32] by doing this you'll pass to objects
+[13:51.88] request and response and done so filter
+[13:54.52] work is done so the JWT filter it will
+[13:57.08] valid the token it will uh create the
+[13:59.32] authentication object it will pass it
+[14:00.72] next so now it will we not we don't have
+[14:03.00] to pass the username password now if
+[14:04.60] you're thinking this is done uh not
+[14:06.88] exactly what is missing now is this if
+[14:10.12] you go back to your jbu service we do
+[14:12.80] have two methods which are empty you
+[14:14.52] need to make sure that this is completed
+[14:16.92] now of course we can type the entire
+[14:18.88] code here but then when you want when
+[14:20.48] you got a token and when you want to
+[14:22.32] extract the usern name it's not a simple
+[14:24.08] process we have to decode it we have to
+[14:25.80] fetch the claims from that we have to
+[14:27.80] fetch the username for valid token we
+[14:30.28] have to do M lot of steps you have to
+[14:31.68] check for the expiration time uh you
+[14:33.48] have to check if the account is not I
+[14:35.68] mean lot of things are involved right so
+[14:37.76] we can do that here but I what I want to
+[14:39.76] do is I just want to copy paste so that
+[14:41.08] we can save some time so basically this
+[14:43.40] is the thing we do so I will explain the
+[14:44.88] code to you don't worry okay so this is
+[14:46.64] the code which you have to work with so
+[14:48.04] if you can see if you go up this is what
+[14:50.04] we have done before but now we are
+[14:52.20] saying that you have to extract the
+[14:53.72] username now to extract the username
+[14:55.24] it's not just extracting a username
+[14:56.60] right first you have to get the claims
+[14:57.96] because username is is a part of the
+[14:59.64] claim and that's what you can see here
+[15:01.12] so we we creting a method called extract
+[15:03.00] claims in which you are passing the
+[15:05.08] claims and you're passing the token now
+[15:07.32] in this extract claim basically it will
+[15:09.80] fetch the claim it will extract all the
+[15:11.40] claim and that's what we are doing here
+[15:13.68] extracting the claim with the help of
+[15:15.00] signing key because you have to also use
+[15:16.36] the key to do that and we are fetching
+[15:20.76] it here in the claims and that's what
+[15:22.72] you are returning it here so from that
+[15:24.68] you will get the username so you can see
+[15:26.00] from the claim we getting the subject
+[15:27.44] and if you go down we are also we also
+[15:29.60] have a meod called validating but for
+[15:31.04] validity of course you have to check if
+[15:32.76] the token is expired or not and that's
+[15:34.24] what we are doing here so it's checking
+[15:35.92] if the expiration time is before this
+[15:38.56] then it will give you false otherwise it
+[15:39.96] will give you true and uh I mean of
+[15:42.00] course it will return true if it is
+[15:43.68] expired then we have to check it should
+[15:45.40] not be expired and this is how you're
+[15:47.68] extracting the expiration time so
+[15:49.36] basically what you're doing is you are
+[15:50.56] fetching the claims I pasted this code
+[15:52.32] because it's more redundant code and
+[15:54.32] you'll be doing it only once that's why
+[15:56.56] you pasted it important point to observe
+[15:58.32] there are few changes from the last time
+[16:00.16] I did this so first of all let me just
+[16:01.64] import claims that's one and import this
+[16:04.60] function type and one more change they
+[16:06.68] have done some changes in the new
+[16:07.88] version so the code is for the older
+[16:10.00] version uh for the new version they have
+[16:12.00] made some changes the first thing they
+[16:13.40] did is if you go to pass a builder
+[16:14.96] there's no passer Builder so jws has a
+[16:17.32] it's a class and it has a method called
+[16:19.88] passer and then this passer has a method
+[16:22.24] so if you can see earlier we used to use
+[16:24.04] set signin key but now we have to use
+[16:26.60] something called it's verify with so in
+[16:28.96] of signing key we have to say verify
+[16:31.12] with uh but it takes the type of secret
+[16:33.92] key not the key because get key gives
+[16:35.60] you key so what I can do is I can just
+[16:37.00] change the type of it and this should
+[16:38.52] work so I will use secret key here so
+[16:40.92] that it will not give issue here so
+[16:42.84] remember this we have to make one change
+[16:44.40] uh in the get key you have to return
+[16:45.52] secret key now depend upon which version
+[16:47.00] you're using so if you're using the uh
+[16:49.00] version which I'm using then you have to
+[16:50.36] make this changes so anything before
+[16:52.16] this works perfectly for the earlier
+[16:53.84] code but since I'm using 0.12 and
+[16:56.36] anything after that you have to make
+[16:57.56] these changes so go back here to the JW
+[17:01.68] service okay there's also change in the
+[17:03.96] past claim so I will first of all do
+[17:06.04] enter here so in of past claim they they
+[17:08.36] made some good changes so now it is
+[17:11.04] signed claims because it makes sense
+[17:13.12] because it is already signed instead of
+[17:15.00] body they now call it as a payload and
+[17:17.04] how will you know all these things if
+[17:18.16] you go to the method documentation you
+[17:19.80] will see what they have replaced it with
+[17:22.12] again that code will work it's just that
+[17:24.96] it's good to go for the new versions a
+[17:26.72] new code don't go for dicated methods
+[17:28.72] and that's it that should work and where
+[17:31.04] you will find this code you will you can
+[17:32.36] check the description uh you will find
+[17:33.84] the link for the GitHub repository if
+[17:35.32] not there let us know we'll put it there
+[17:37.20] and now after making these changes I
+[17:39.32] hope this will work and if it it works I
+[17:41.44] will tell you the entire flow what we
+[17:43.76] are doing I hope nothing is null nowhere
+[17:46.80] okay cool so this got restarted and we
+[17:49.48] got an error it says okay I
+[17:53.04] think no filter we are using Auto but
+[17:57.68] this itself is not a component
+[17:59.36] component that's what it says Okay so
+[18:02.04] let's make this component just restart
+[18:04.20] and there's no error let's go back to
+[18:05.84] postman first of all let's do the login
+[18:07.92] so I will click on this and okay we got
+[18:10.68] the token though there's no problem with
+[18:11.92] the token I will just copy this and now
+[18:14.04] when you are sending a request for the
+[18:15.64] students you don't have to pass of
+[18:17.96] course the body is not import body is
+[18:19.48] important maybe you're getting the
+[18:21.16] you're getting it right so we don't I
+[18:22.96] have to pass the data uh in the
+[18:24.88] authorization we have to pass the token
+[18:26.56] we are not passing username password now
+[18:28.40] click on send it worked you can see it
+[18:30.48] says okay so what is happening behind
+[18:33.20] the scene let's go with the flow again
+[18:34.68] the first thing you're doing is you are
+[18:36.08] generating a token now who is
+[18:37.44] responsible to generate token if you go
+[18:39.16] back to your security config we are
+[18:41.36] saying that the authentication manager
+[18:43.60] now this time we have a hold on it and
+[18:46.00] we are creating something called login
+[18:47.36] form so if you see user controller we
+[18:48.80] got something a login and inside this
+[18:50.32] login we are doing verify and in verify
+[18:52.32] we are using this filter to achieve that
+[18:54.92] so once we got this we are generating a
+[18:57.20] token so once it is verified the user
+[18:58.88] ified we are generating a token right
+[19:00.40] now in this token generation what we are
+[19:02.04] doing is we are doing all those step
+[19:03.64] building a token with the help of claims
+[19:05.60] we are signing it where it's here we are
+[19:07.40] signing it we have subject issue date
+[19:09.52] expiration after doing all those things
+[19:11.60] what you get is the token right now next
+[19:13.88] time when you send a request you are
+[19:15.48] sending a token now since we are sending
+[19:17.68] a next new request and in that request
+[19:19.96] you are not passing username password in
+[19:22.20] that case you have to mention hey you
+[19:23.72] know don't go for username password go
+[19:26.08] with the jwd filter now what we doing in
+[19:27.96] filter is in the filter basically we are
+[19:30.48] saying that uh first of all get the
+[19:32.68] token from the user or the request check
+[19:35.28] if the token is not empty or token
+[19:37.88] starts with the better if it is there
+[19:39.96] get the username get the token get the
+[19:42.00] data from the database based on what
+[19:44.20] username is you are passing and verify
+[19:46.52] if the it is matching or not if it is
+[19:48.72] matching of course you have to write a
+[19:49.92] token if it is matching you have to
+[19:51.32] create a new authentication object and
+[19:53.88] you have to set that in the context once
+[19:55.96] it is done you through because in for
+[19:58.04] the next filter you have specified that
+[19:59.72] I do have the authentication but there's
+[20:01.28] one problem in the validate token we
+[20:02.64] have to actually validate token and to
+[20:04.56] do that you have to extract the username
+[20:05.96] to extract the usern we have to extract
+[20:08.28] the claims and to extract the claims lot
+[20:10.52] of steps are involved right so yeah
+[20:12.32] that's what we have done in the entire
+[20:13.52] flow and by doing this uh all this thing
+[20:16.00] have been done now you know what is
+[20:18.24] sping security now you know how to
+[20:20.12] generate a token how do you verify the
+[20:21.88] token now you can make your application
+[20:23.92] secure so I hope uh this all these
+[20:26.28] things make sense uh we'll try to
+[20:28.32] implement this in our project which we
+[20:30.12] are building and maybe it will take some
+[20:32.28] time see you in the next video till that
+[20:34.16] point keep learning bye-bye

@@ -1,0 +1,937 @@
+[0:00.27] [Music]
+[0:05.52] so finally 7th August is here and we
+[0:08.52] launching take you forward plus now this
+[0:11.60] is a different level DS algo course
+[0:14.36] something which you haven't seen before
+[0:16.84] you might have seen a lot of people
+[0:18.04] coming across and launching their
+[0:19.80] courses but this is something which you
+[0:22.96] wouldn't have seen by the end of this
+[0:25.48] video you will understand what kind of
+[0:28.12] courses this this is this is a beast all
+[0:31.24] together so most of the people who are
+[0:34.36] offering courses what they're offering
+[0:36.84] is life classes where you have thousands
+[0:39.96] of people in it thousands of people
+[0:42.56] means a topic that could have been
+[0:44.40] taught in 30 minutes now ends up taking
+[0:47.36] 1 hour or more than it I know the pain I
+[0:51.12] know the pain trust me the last 3 months
+[0:54.04] what I've done is I've literally taken a
+[0:56.92] subscription of each person's course and
+[1:00.16] I've attended them what I figured out is
+[1:03.00] no one attends these live classes
+[1:04.84] because they're messy they're so clumsy
+[1:06.60] with so many people into it the portal
+[1:11.12] is so messed up everyone like if you
+[1:13.84] notice everyone is launching but
+[1:16.00] literally no one has guts to show their
+[1:19.24] portal no one till date has done it you
+[1:22.00] would have done it but the portal is so
+[1:24.56] clumsy you don't get codes over there
+[1:26.60] you don't get written descriptions
+[1:30.00] imagine if you're revising and you want
+[1:31.76] to learn a particular algorithm you have
+[1:34.20] to scroll through that 3our video to
+[1:36.40] figure out where that algorithm was
+[1:37.88] start because chapters are not even
+[1:40.28] added that was the condition of these
+[1:42.80] courses so when I see the end product
+[1:45.48] what we have build it is not even
+[1:48.20] comparable to what others are giving so
+[1:52.12] I still
+[1:53.12] remember 2020 is when we started and our
+[1:57.32] Channel started going up from something
+[2:00.36] known as an SD sheet we were the first
+[2:02.80] ones who started the era of the DSs
+[2:05.68] sheets and then everyone started copying
+[2:07.92] that Trend because it was something
+[2:10.56] which was very very successful the SD
+[2:13.20] sheet was there on a Google doc the
+[2:15.40] Google Doc had a notification saying
+[2:17.12] that there are too many people on the
+[2:19.36] sheet you cannot access it as of now and
+[2:24.08] that is when the idea of the website
+[2:25.88] came in and then we started in website
+[2:28.76] the website was doing well well it was
+[2:30.64] on WordPress and then people started
+[2:33.72] coming in and with more and more people
+[2:36.28] coming in and using it there were more
+[2:38.84] demands one of the demands was you know
+[2:41.08] we need a lot of customizations into it
+[2:43.72] so during the start of this year we
+[2:46.24] ended up moving from a WordPress to a
+[2:48.00] custom website and because we moved into
+[2:50.84] a custom website the traffic again went
+[2:54.24] up and you would not believe the last
+[2:57.12] month we hit 15 million 1 15 million
+[3:01.52] page visits with a 5 million unique
+[3:05.68] sessions with an average engagement time
+[3:09.08] of 20 minutes per user could can you
+[3:13.08] just imagine this this is what we are
+[3:15.60] serving as of today we have a YouTube
+[3:18.04] channel I think 600k yeah 600k is what
+[3:20.80] we have as of now and over there we are
+[3:23.44] clocking 6 million views in the last 28
+[3:28.36] days 6 million views for a long form
+[3:31.96] channel for an educational Channel which
+[3:35.00] only makes videos in one genre that is
+[3:37.60] unheard of I think probably everyone in
+[3:40.92] the country is reading data structures
+[3:42.72] from our Channel this is where the idea
+[3:45.84] of take you forward plus came in we
+[3:47.92] thought why not make something which
+[3:50.68] helps us yes which does helps us because
+[3:53.28] you know managing such a huge scale
+[3:56.12] traffic if you're an engineer you know
+[3:57.92] what are the cost so it is tough to
+[4:00.44] survive so we thought either we will
+[4:02.40] shut it down or either we'll make
+[4:04.32] something such that whatever we generate
+[4:07.00] from that that will help us make take
+[4:08.88] forward even bigger and whatever we are
+[4:11.88] launching probably it's going to set a
+[4:14.40] bar so without wasting any of your time
+[4:17.84] let's get straight into take you forward
+[4:20.40] plus the moment you land at take you
+[4:22.88] forward plus we ask you hey what is your
+[4:24.60] learning goal if you're a beginner you
+[4:26.72] could actually go ahead and you know
+[4:28.20] customize your learning goal whatever
+[4:30.08] number of days you want to give or if
+[4:31.60] you want to start with a 3 months 4
+[4:33.12] months if you're a working professional
+[4:34.40] you can do that imagine I say 18 180
+[4:36.56] days and I say begin my journey so what
+[4:39.24] happens is I basically give you a tour
+[4:42.48] and then we tell you okay 6th August
+[4:46.40] till 17th August you can do beginner
+[4:48.56] problems and then you could head over to
+[4:51.00] 18th August to 19th August where you can
+[4:53.08] do the Sorting now we have we have 100
+[4:57.16] beginner problems if you're someone who
+[5:00.88] who doesn't knows C of coding don't
+[5:03.32] worry we start from basic we literally
+[5:06.08] start from basic of C++ Java and then we
+[5:08.60] do a lot of questions 100 questions is
+[5:11.76] what we will be doing before moving on
+[5:13.96] to sorting arrays and all of these
+[5:16.08] topics as you see across right now what
+[5:19.60] if you are a working professionals we
+[5:22.20] have t it yes we have t it so there are
+[5:24.96] days assigned to it 11 days it could
+[5:27.28] straight away go and maybe I'll just
+[5:29.04] subtract 10 days from it and I'll just
+[5:31.12] give one day just to revise the beginner
+[5:33.44] problems you can remove the number of
+[5:35.80] days from here and you can customize
+[5:38.12] your road map according to your like
+[5:40.68] someone might need a lot more time in
+[5:42.56] you know graphs so you can just add
+[5:44.88] those 10 days that you have removed over
+[5:47.24] here and we back to 180 days yes we back
+[5:49.92] to 180 days perfect and the day one says
+[5:53.28] today we'll be doing big up problems we
+[5:54.88] can go to the calendar and the calendar
+[5:57.44] is going to tell you if you're missing
+[5:58.96] any day you might have a question hey
+[6:01.44] this is telling us the road map for the
+[6:04.00] next you know six months and in V2 we
+[6:08.96] will be integrating this with Google
+[6:10.60] Calendar for the people who want it to
+[6:12.56] be integrated so that they have active
+[6:15.32] notifications okay so what if uh you're
+[6:18.28] traveling what if you're on a vacation
+[6:20.84] what if you have exams we have a pause
+[6:23.44] button you can pause the road map and
+[6:26.56] whenever you come back we will restart
+[6:28.80] from that day so this is something
+[6:31.92] that's going to push you that's going to
+[6:34.16] make sure that you are on your schedule
+[6:37.00] got it perfect so you can do the
+[6:39.24] beginner problems if you don't know
+[6:41.12] anything and then you can start with
+[6:42.36] sorting also with every we have made
+[6:44.76] sure with every topic like we have 300
+[6:46.92] around questions with every topic we
+[6:50.16] starting with some fundamental question
+[6:52.36] just to brush you up then we go across
+[6:54.12] to a lot of other questions and then at
+[6:56.36] the end we make sure you have a contest
+[6:59.68] to do once you've done a bunch of
+[7:01.24] questions you can do the contest so our
+[7:04.28] road map is set we know what to do when
+[7:08.20] right what is the next step hey where
+[7:10.56] are the videos where is the course
+[7:13.04] content let's Deep dive into it so if
+[7:16.28] you're a beginner and if you have
+[7:17.64] started we have everything for you over
+[7:20.56] here right from language Basics
+[7:22.92] literally everything we have uh going to
+[7:25.12] logic building patterns time complexity
+[7:27.08] matths Aries hashing recursion strings
+[7:29.52] link list stack and this entire section
+[7:32.72] is recorded fresh it is recorded
+[7:36.20] entirely new because I've gone slow so
+[7:39.44] that you can pick up right even if you
+[7:42.08] don't know you can pick it up perfect
+[7:44.20] what if you already know DS ALG go or
+[7:46.64] rather you want to brush up or rather
+[7:48.44] you want to prepare or rather you want
+[7:49.56] to do something which is not beginner
+[7:52.20] stuff that is when you come over here so
+[7:55.08] we have all the topics covered if you
+[7:56.80] see every topic is covered over here so
+[8:00.04] if I go to array over here we have
+[8:02.28] broken down the topic into subtopics as
+[8:05.08] well we do not start with you know
+[8:07.48] straightway medium or hard questions we
+[8:10.08] start with some fundamental questions
+[8:12.64] then we go to logic building and then
+[8:14.44] maybe some frequent asked questions as
+[8:17.28] well so imagine I go to logic building
+[8:20.12] and I go to a question this is how the
+[8:22.52] interface looks like so this is the
+[8:24.52] entire course interface it just doesn't
+[8:27.52] have a single video which is of 3 hours
+[8:30.24] where you'll have to yourself figure out
+[8:33.28] which part is Tau when so this is how
+[8:35.76] the entire interface looks like so you
+[8:38.56] see the problem you see the maximum
+[8:40.88] points you can score and then there is
+[8:44.28] the problem statement well defined
+[8:46.44] example one example two we have a
+[8:48.88] feature known as guess this is the guess
+[8:52.56] feature again I'm repeatedly stressing
+[8:56.12] focus on The Learning Experience so once
+[8:58.40] you've understood the problem understood
+[8:59.96] both the examples we want to make sure
+[9:02.60] you have really understood the problem
+[9:04.72] before you type the code on the right
+[9:06.32] side so I'll go to the next question and
+[9:09.20] this is an easier one to guess because
+[9:11.12] the previous one I'll have to solve so
+[9:13.04] for this for this the answer is zero so
+[9:15.48] when you click on the submit what
+[9:16.56] happens is it gives you plus 10 so you
+[9:18.92] can accumulate points As you move across
+[9:21.52] this will be a sort of motivation for
+[9:23.12] you that you want to you know be as
+[9:25.40] correct as possible right okay so we get
+[9:28.40] some points now the next step we need to
+[9:30.40] solve this problem so again uh you could
+[9:32.64] literally solve this problem by clicking
+[9:34.96] on run we have some custom test cases
+[9:37.88] that will be running and then you can
+[9:39.24] add your own custom test case so that
+[9:41.60] you can test this code now we have kept
+[9:44.36] one thing in mind when you're appearing
+[9:46.44] for online assessments or any of the
+[9:48.32] coding interviews they do not tell you
+[9:51.76] on which test case your code is failing
+[9:54.24] so for that reason we are just giving
+[9:56.56] you two test cases we want you to think
+[9:58.56] by yourself we want you to think by
+[10:00.60] yourself this is not a competition it is
+[10:02.84] a learning experience so when you click
+[10:05.08] on the submit button what happens is the
+[10:07.08] code is submitted on our own compiler
+[10:09.88] and you uh your code will be running on
+[10:12.68] some small cases and then some on large
+[10:15.60] cases got it once that is done so you
+[10:19.40] can you know trace your submission over
+[10:21.28] here once youve submitted your code you
+[10:24.04] might be thinking hey uh have I written
+[10:26.92] good code or not so if you see over here
+[10:29.52] I have intentionally put an extra follow
+[10:31.72] Lo so what you could do is there is a
+[10:33.04] review button so you can click on the
+[10:34.92] review button what will happen is there
+[10:36.80] will be an extensive code review by our
+[10:39.52] self-trained AI bot this AI bot is
+[10:42.48] trained on our data set on all our
+[10:45.32] editorials on all of my videos it will
+[10:48.40] be telling you if you see it tells you
+[10:50.28] line number 11 remove the empty fall
+[10:52.48] Loop since it is not performing any
+[10:55.00] operation because I've written a clean
+[10:56.76] code it doesn't gives me a lot of
+[10:59.28] feedbacks but when you will be writing
+[11:00.68] codes around graphs dynamic programming
+[11:03.16] it will be very very like it will be
+[11:05.64] very very Ruth it'll be telling you this
+[11:07.72] is bad this is bad if you written a very
+[11:09.80] long code it will be telling you maybe
+[11:11.68] this could be put into a function and
+[11:13.36] you can modularize it it will be
+[11:15.28] reviewing your code as per industry
+[11:17.64] standard so that you keep on writing
+[11:20.12] very good quality of code understood
+[11:22.88] what if uh you have written a code and
+[11:25.12] you just you have analyzed uh the time
+[11:27.36] complexity but you still want to be sure
+[11:29.40] about it that's when we have an analyze
+[11:31.40] button so you can click on the analyze
+[11:33.28] button and what that will do is it will
+[11:35.48] be telling you about the time complexity
+[11:38.68] as well as the space complexity and
+[11:41.16] it'll be telling you perfectly perfect
+[11:44.04] once that is done hey what if uh you
+[11:46.68] know I'll go back to this question yeah
+[11:49.80] what if uh I was not able to solve this
+[11:52.72] how do I solve this so this is your
+[11:54.16] first step learning experience where you
+[11:56.16] try on the problem yourself I just don't
+[11:58.24] want you to watch the video directly if
+[12:00.16] you haven't done it no worries we have a
+[12:02.32] video for you as well now this is what
+[12:04.36] you usually get in most of uh the
+[12:07.20] courses a video so we have the video for
+[12:09.36] you over here as well it is just a small
+[12:12.20] offering I'll call because it is an
+[12:13.68] entire learning experience along with
+[12:15.24] the course so you got the video you have
+[12:17.60] kept one thing in mind one is once when
+[12:20.32] you start once when you start you start
+[12:23.24] with very basic approach you know the
+[12:25.56] easiest of approaches that comes to your
+[12:27.24] mind but as you move across you can
+[12:29.88] easily you know figure out the brute
+[12:31.84] approach it's very simple The Brute
+[12:33.28] approaches are very simple and it easily
+[12:34.96] comes to your mind you don't want to
+[12:36.44] watch a brute video and waste your time
+[12:38.64] that's why you can straight away go into
+[12:40.40] the optimal section and the videos are
+[12:42.64] broken the videos are not up 40 minutes
+[12:44.48] the videos are broken into 5 minutes
+[12:47.04] next to 10 minutes next to 15 minutes so
+[12:49.68] we are saving your time over here don't
+[12:51.52] have to scroll and figure out the
+[12:52.72] chapter and other things we are saving a
+[12:54.76] time saying this is an optimal approach
+[12:57.04] you can straight away watch it because
+[12:58.48] you know the problem you know the
+[13:00.00] examples don't waste time over there
+[13:01.60] straight away watch the optimal approach
+[13:04.64] and what additionally we have done is we
+[13:07.28] have written intuitions and the
+[13:09.32] intuitions are related to real life
+[13:11.80] examples we don't want to give you you
+[13:13.40] know very standard stuff you know step
+[13:15.80] one run a all Loop step two do this we
+[13:18.40] are relating every approach every
+[13:20.92] approach to a real life example and this
+[13:23.28] is how the intuition looks like and then
+[13:25.12] we go across to the approach and after
+[13:28.00] that we have have images yes we have
+[13:30.52] images that explains it so imagine
+[13:33.00] you're revising or you're doing similar
+[13:35.00] stuff where you don't want to spend time
+[13:36.36] on a video you could read it read the
+[13:39.12] entire editorial you'll understand
+[13:40.72] everything then you can literally
+[13:42.08] explore the images the images do a dryon
+[13:45.80] so that you can understand the approach
+[13:47.60] and once that is done you could head
+[13:49.44] over to the bottom and you will get the
+[13:52.04] code as well you'll get the entire
+[13:54.28] working code which works with int Main
+[13:56.68] and if you just want the functional code
+[13:58.56] you can say simply paste the function as
+[14:01.44] well and you get code support in all the
+[14:04.16] four languages you want to display the
+[14:06.00] code in an entire big model you can do
+[14:08.24] that as well okay understood what if I
+[14:11.76] want to do a complexity analysis we have
+[14:13.96] done detailed complexity analysis now
+[14:16.52] this is an array problem but if you look
+[14:18.08] at the graph problems and other problems
+[14:20.52] we've literally gone deep if if you're
+[14:22.64] using something like n sare plus n log n
+[14:24.72] plus n we've literally told you why are
+[14:27.48] we using n Square why n log and why and
+[14:30.04] we've done every bit of thing over there
+[14:32.64] and same with space complexity this is
+[14:36.28] the Ultra Premium editorial section why
+[14:39.60] do I call it because this are my videos
+[14:42.64] the videos I think everyone knows how
+[14:44.96] good our videos are taking forward I
+[14:46.56] don't have to vouch for it everyone
+[14:47.88] knows it that is why we do get 6 million
+[14:50.32] views that is for a reason so you
+[14:53.12] basically watch it and you can track
+[14:55.20] your submissions over here and then you
+[14:57.08] can head over to the doubt section what
+[14:59.40] I'll go is I'll just copy paste this one
+[15:01.28] so I'll go to the next question which is
+[15:03.48] missing number and this is where you can
+[15:05.36] track your submissions that you did and
+[15:07.68] then you go to the doubt section so we
+[15:10.32] have a different version of the doubt
+[15:13.68] section because I have a vision in my
+[15:15.44] mind this is V1 this is version one I
+[15:18.64] have a vision in mind I'll be telling
+[15:20.08] you what the vision is just give you a
+[15:21.68] glimpse of it and you'll understand how
+[15:23.60] many things are coming in V2 you'll
+[15:25.84] understand by that Vision itself so
+[15:27.56] imagine I have a issue with this code uh
+[15:31.00] maybe what I'll do is I'll remove this
+[15:32.56] because I know this will be wrong okay
+[15:34.84] and I'll just copy paste the entire code
+[15:38.56] and then I'll go over here and I'll say
+[15:40.28] okay can you just paste this code and
+[15:42.28] then what I'll do is I'll maybe I'll
+[15:44.60] start writing something yeah can you
+[15:47.84] please help me where I am going wrong
+[15:52.40] and then there is a post doubt which
+[15:54.72] allows me 20 doubts for a day so
+[15:58.20] typically you can Sol solve 20 problems
+[16:00.32] and for every doubt you can you know
+[16:02.16] counter questions on that thread so you
+[16:04.64] can have 20 problems like where you can
+[16:07.28] ask doubts the reason we have limited
+[16:09.24] this is very simple because AI is
+[16:12.08] expensive everyone knows AI is very very
+[16:15.36] expensive right the models take cost and
+[16:17.88] because we are offering at a very very
+[16:19.32] lower market price we'll have to keep
+[16:21.84] this in mind and the other reason is we
+[16:23.76] don't want you to be over dependent on
+[16:25.68] AI we don't want you to do everything
+[16:27.56] just because of AI over here you're here
+[16:29.64] to learn please focus on your learning
+[16:32.08] experience rather than you know sticking
+[16:34.12] to a so what happens is we basically ask
+[16:37.24] this question for some reason I think I
+[16:38.88] was not able to paste it properly but
+[16:40.28] anyways
+[16:41.84] it it fixes me yes it tells me so you
+[16:46.00] don't have to wait for a TA over here
+[16:47.88] again this is trained on our entire data
+[16:50.00] set so if you're asking questions
+[16:51.64] related to the question related to the
+[16:53.48] question only it will be answering again
+[16:56.12] uh you could literally continue the
+[16:58.12] thread but it will make sure that you're
+[16:59.84] asking questions on this question only I
+[17:02.80] will not recommend you to use this that
+[17:05.24] much the reason being being dependent on
+[17:07.76] AI is not good when you are learning
+[17:09.20] something try to avoid this as much as
+[17:11.04] possible got it and there is something
+[17:12.52] as post Forum as well if you have an
+[17:14.92] wonderful solution you could literally
+[17:16.52] paste it over here and you could just
+[17:18.24] tell to the audience that hey maybe my
+[17:20.72] write up is better we are welcoming that
+[17:22.64] as well the vision behind using Ai and a
+[17:26.08] public Community is to months down the
+[17:29.36] line when we will have 100 500s of
+[17:31.56] comments on every question we can
+[17:33.88] actually summarize that for you and we
+[17:36.08] can say that hey you know these are the
+[17:38.24] top 10 doubts that people have when they
+[17:40.48] solve this particular question so this
+[17:42.60] is V2 this is a sneak peek into V2 we
+[17:45.72] are developing it because we don't have
+[17:47.76] the user data as of now so a lot of
+[17:49.60] features are dependent on user data on
+[17:51.52] V2 you'll come across to the doubt
+[17:52.96] section you have a section which says
+[17:54.76] these are the common doubts that people
+[17:56.72] are facing and you can just read through
+[17:58.60] it and instead of reading through 100
+[17:59.92] comments that is what you do in other
+[18:01.60] discussion forums other providers you
+[18:04.12] can feel free to copy this idea so the
+[18:06.44] next section is the notes section so
+[18:08.76] what will happen is you could go to the
+[18:11.04] notes section we have a rich editor over
+[18:13.76] there so you can literally paste images
+[18:16.08] you could literally you know customize
+[18:17.96] your self notes and you can click on the
+[18:20.32] save button so once you have clicked on
+[18:22.28] save button you could head over to home
+[18:25.20] where you can actually track your entire
+[18:27.24] progress yes you can track your entire
+[18:29.72] progress and this is where all of your
+[18:31.76] notes will be visible so you don't have
+[18:33.80] to you know go here and there all of
+[18:36.20] your notes will be visible over here as
+[18:39.36] well again a sneak peek into V2 if you
+[18:42.56] have saved a lot of notes in V2 what
+[18:45.44] you'll get is the moment you click You
+[18:47.32] Know download all we'll be combining all
+[18:49.52] of them into a PDF and we will be giving
+[18:52.92] you that so that you can revise in a
+[18:55.20] quick manner again because we don't have
+[18:56.80] a data as of now so we're not focusing
+[18:58.64] on on this but eventually couple of
+[19:00.08] months down the line you will also get
+[19:02.16] this feature perfect so let's get back
+[19:04.08] to Aries by the way you can track your
+[19:06.36] progress on home over here you can track
+[19:08.60] what uh rank you are at you'll come to
+[19:10.64] the rank thing progress you can track
+[19:12.56] your submissions over here I've kept it
+[19:15.56] very clean and simple right okay so you
+[19:18.48] can go back to Aries so once you've
+[19:20.36] solved all the question we have
+[19:21.72] something as contest so you can click on
+[19:24.20] the contest and you can solve three
+[19:27.80] unseen problem problem s and once you
+[19:30.32] have done it you can check out the
+[19:32.12] editorial over there as well but after
+[19:34.60] the contest is completed now this is for
+[19:38.08] every topic this as of now is under
+[19:41.76] testing so this will be out in couple of
+[19:43.96] weeks and we're not rolling it out as of
+[19:46.00] now because people will be starting to
+[19:47.60] learn so we're taking couple of uh weeks
+[19:50.20] time and then we'll be rolling out all
+[19:51.72] the contest problems right perfect so
+[19:54.68] this is how the entire learning
+[19:57.08] experience is just not videos I'm
+[19:59.20] repeating it is just not videos it's a
+[20:03.40] lot more than that okay coming back to
+[20:06.12] the small small attention to details we
+[20:08.96] have something as a real life
+[20:10.00] implementation what you get is for every
+[20:12.16] DSA problem we tell you where this is
+[20:14.32] used for an example if I go to this one
+[20:16.24] I actually like this one so if you read
+[20:18.76] the point number three it says it is
+[20:21.28] relating you to a Netflix kind of a
+[20:23.32] thing so you have solved a DSL problem
+[20:25.40] now you're watching Netflix you can
+[20:26.64] actually relate it to the outside world
+[20:29.56] that okay this is where software
+[20:31.20] Engineers might be using it under the
+[20:33.16] hood also you have gone one step ahead
+[20:36.64] and we are giving some amazing customer
+[20:39.24] support if you are a TF plus member you
+[20:42.64] click the dislike button it will be
+[20:44.84] disliked if you want to give a feedback
+[20:46.52] it's fine if you don't uh want to you
+[20:48.28] can cross it over we ask you where did
+[20:50.60] you find an issue problem editorial we
+[20:52.44] have a separate team for each of them
+[20:54.68] imagine you say we have a tech issue you
+[20:56.76] select your priority please please do
+[20:59.12] not select a high priority if it's a
+[21:00.72] spelling mistake please you need to
+[21:03.08] understand you know bugs which have a
+[21:05.20] higher priority will take higher
+[21:07.08] precedence so yeah if you can select a
+[21:09.08] high priority then we take the
+[21:10.68] description the problem name and then
+[21:12.44] you could simply write whatever problem
+[21:14.40] you are facing and you can submit it and
+[21:16.52] our team responds within 24 to 72 hours
+[21:19.36] if it's a a big bug if it's a small bug
+[21:21.84] we usually resolve it within 24 hours so
+[21:25.36] again we are taking care of everything
+[21:27.72] it's not that you have an issue and you
+[21:29.84] don't know where to say you report it to
+[21:31.48] us and whenever you report a bug you'll
+[21:33.88] be able to see it under your home
+[21:35.56] section under submissions and you'll get
+[21:37.88] the status if it is resolved or if it is
+[21:39.84] not so you can test it back and if it is
+[21:41.84] not you can again raise the same bug
+[21:43.88] perfect so that is for the entire
+[21:47.00] learning experience okay did I miss out
+[21:49.36] on something let me go back and check it
+[21:51.68] across so we have real life
+[21:53.08] implementation we have completed Ed
+[21:54.72] tutorials
+[21:56.16] submissions out okay by the way four
+[21:58.28] langage support as I kept on saying this
+[22:00.92] you can go full screen you can reset you
+[22:02.76] can go to the previous next done
+[22:05.64] everything is taken care of what if
+[22:09.76] uh a day I want to you know learn about
+[22:13.48] something known as linear search so you
+[22:15.12] can literally write linear search over
+[22:16.72] here and you can straight away head over
+[22:18.52] to that problem so you don't have to
+[22:19.72] search over here any algorithm that
+[22:22.12] comes up in an online assessment and you
+[22:23.64] want to brush through it you can
+[22:25.04] straight away do it as well you kept
+[22:28.12] that in mind mind as well perfect and
+[22:30.64] going forward in future we are building
+[22:33.64] a V2 over here which is a recommendation
+[22:35.96] engine where you click and it will ask
+[22:38.16] you maybe you want problems around you
+[22:40.48] know dynamic programming on grits so you
+[22:43.04] can tell me hey can you give me
+[22:44.60] additional problems on dynamic
+[22:46.40] programming apart from what you have
+[22:48.36] over here it's going to give you it's
+[22:50.40] going to give you those problems and
+[22:52.16] eventually with V3 we'll be setting up
+[22:54.00] those problems as well that's the vision
+[22:57.04] it is we're not building a course
+[22:59.08] you're building something out of the box
+[23:00.60] over here got it so that was about the
+[23:03.76] course section what if you want to
+[23:06.00] communicate with me yes we have live
+[23:07.76] sessions on boarded as well so you could
+[23:09.80] head over to the session and you will
+[23:11.96] see sessions over there it's a demo
+[23:13.88] right because I'm just recording a video
+[23:16.28] so you can enroll for the session and
+[23:18.20] we' have kept one thing in mind we don't
+[23:20.24] want a crowd of 5,000 people for that
+[23:22.08] reason we will have an upper cap we'll
+[23:24.16] decide it on the basis of enrollments
+[23:26.24] we'll have an upper cap and I'll say
+[23:28.16] let's much so a session will be there
+[23:30.60] it'll be just let's say for 500 people
+[23:32.20] or 300 people and once that is filled we
+[23:35.32] again will put out one more session for
+[23:37.56] 500 then one more session for 500 if we
+[23:40.04] have a lot of people I will take six
+[23:41.88] sessions separately I don't want a chaos
+[23:44.52] in my meetings I want it to be very
+[23:47.88] personalized I want to take everyone's
+[23:49.92] St for that reason again attention to
+[23:52.04] detail has been provided before the
+[23:53.48] session you could post your doubt over
+[23:55.76] here and we'll be answering the most
+[23:58.16] like like doubts because most lik doubts
+[24:01.08] eventually means most people are facing
+[24:02.88] it so we'll be answering that once
+[24:04.48] you've done this you know the sessions
+[24:06.16] will be uploaded over here so you can
+[24:07.80] access it from here and the chapters
+[24:10.44] will be added on those sessions so that
+[24:12.92] you can watch your relevant doubt part
+[24:16.12] got it that was about the weekly
+[24:17.64] sessions who will be taking the weekly
+[24:19.52] sessions I will be taking it there are
+[24:21.68] industry leaders will be taking it there
+[24:23.60] are people who are working at
+[24:25.56] multinational companies that will be
+[24:27.20] taking it we'll be bring in a lot of
+[24:29.60] people on these sessions if you tell me
+[24:31.64] hey Raj can you please teach dynamic
+[24:33.56] programming once more I'll be doing that
+[24:35.44] as well over the weekends so we have an
+[24:37.60] one-on-one interaction rather like a
+[24:40.16] zoom interaction where we meet every
+[24:42.12] weekend so you can get your uh queries
+[24:45.20] answered okay we have a discussion forum
+[24:47.00] let's go back to it so this is a
+[24:48.96] discussion forum we've tried to build a
+[24:51.08] community we're trying to build a
+[24:52.16] community over here and eventually yes
+[24:55.04] eventually we would have a lot of AI
+[24:57.84] integrated
+[24:59.44] at this section where you know we have a
+[25:01.56] lot of discussions throughout the day
+[25:03.28] but you don't have time to go through a
+[25:04.76] lot of discussions in the day so what
+[25:06.12] you could do is you can click on the AI
+[25:08.64] and say hey what are the important
+[25:10.84] things so it will just rank you these
+[25:13.32] are the top most important things
+[25:15.68] according to your preference if you say
+[25:17.52] rank it according to you know fun so it
+[25:19.96] will just rank it the fun ones rank it
+[25:21.60] according to referals you'll do it
+[25:23.40] according to referals rank it according
+[25:25.28] to you know Finding study groups it will
+[25:27.52] do you you don't have to scroll and find
+[25:29.32] it again
+[25:31.08] competitors you can build a product idea
+[25:34.20] I'm just laying out the idea so you can
+[25:35.68] just take it across I don't mind uh this
+[25:38.16] is what you will be building and uh
+[25:40.60] sorry this is what you'll be copying
+[25:42.04] rather uh notification so every time
+[25:45.28] someone replies anything happens you get
+[25:47.72] a notification as well said that we have
+[25:50.56] a dark mode and we have a light mode as
+[25:53.64] well this this hurts my eyes at least
+[25:56.48] and is this
+[25:58.96] no we have a lot of other things you can
+[26:01.64] get a certificate but we want our
+[26:04.32] certificate to be valued we don't want
+[26:05.92] our certificate to be like we just pay
+[26:07.48] us and we give you no you solve 80% of
+[26:09.72] the entire section you get the
+[26:11.52] certificate otherwise you don't get as
+[26:13.72] simple as that perfect uh report a bug
+[26:17.16] uh you can literally report a bug
+[26:19.20] anything outside of course as well
+[26:21.56] become an affiliate I'll come to that
+[26:23.08] claim cash back I'll come to that
+[26:24.64] Perfect all of this how much is the cost
+[26:28.76] also we will be adding a section in uh 3
+[26:31.28] weeks time where you'll find over here
+[26:33.24] mock contest so once youve done
+[26:35.08] everything I have five mock contest
+[26:36.96] which you can give which will have
+[26:38.12] randomized questions from different
+[26:40.40] topics so this is also in pipeline a lot
+[26:43.80] of other V2 features are in pipeline
+[26:45.84] I'll just uh name some of them they're
+[26:47.76] coming up with objectoriented
+[26:49.28] programming as well inside plus where
+[26:51.76] you get uh video lectures write ups quiz
+[26:54.88] everything they're coming up with course
+[26:56.40] subjects over there we will not be
+[26:57.44] attaching videos because it's more like
+[26:58.84] a theory part which you have to read
+[27:00.32] through we'll try to give you as compact
+[27:03.16] notes as possible again followed by quiz
+[27:06.72] there's a lot of other features uh we'll
+[27:09.12] have a daily streak we'll have a AI
+[27:12.04] summarizer of the video imagine you
+[27:14.28] don't have a time to watch the entire
+[27:15.60] video I'll give you a summary of it and
+[27:17.84] whatever section you want because we can
+[27:19.76] put chapters but you might need
+[27:21.56] something else what we are thinking so
+[27:23.28] we're going to put an AI summarizer over
+[27:24.92] there so you can know at what time stamp
+[27:27.20] what I'm teaching so you can straight
+[27:28.64] away jump to it that is something we are
+[27:30.44] building in house as well and yeah
+[27:33.64] that's that's fair bit of it there's a
+[27:35.84] couple of other features which I don't
+[27:37.04] want to disclose because they're like
+[27:39.60] gold dust so I'll not be disclosing it
+[27:41.96] but most of the things will be launching
+[27:43.56] in V2 which is in October and anyone who
+[27:46.52] is enrolling now will get access to it
+[27:49.12] as well you don't have to pay anything
+[27:50.72] extra okay quick question hey so many
+[27:54.20] features literally so many what is the
+[27:57.32] price point of
+[27:58.64] first of all what's the market price
+[28:00.76] everyone is selling at around 5K 7K but
+[28:03.88] they are just offering Zoom classes
+[28:05.44] right and no one has their own product
+[28:07.76] most of them do not have their own
+[28:09.08] product they have a third party app and
+[28:11.88] if you
+[28:12.68] focus on everyone's video no one shows
+[28:15.24] their platform they say we're going to
+[28:17.04] help you crack this crack this crack
+[28:19.36] that and if you have seen this
+[28:22.24] entire video there's not a single time I
+[28:25.76] have mentioned any of the companies ter
+[28:28.64] because our entire focus is to make sure
+[28:31.00] you upskill you get so good you get so
+[28:34.20] good that you can literally clear any of
+[28:37.00] those things any of the interviews I I
+[28:39.64] don't care I'm teaching you for the best
+[28:41.92] so that you're prepared for the rest got
+[28:44.12] it so what is the price point I've
+[28:46.76] thought about it a lot of times and I've
+[28:49.40] decided that I'll be keeping it
+[28:51.04] extremely pocket friendly if you don't
+[28:53.36] trust my words you can opt in for a
+[28:55.28] course at a net Tech organization that
+[28:56.84] is offering such a platform experience
+[28:59.28] along with video courses you'll be
+[29:01.44] seeing that they're charging you around
+[29:03.08] 2 lakh rupes to 3 lakh rupees we have a
+[29:05.80] similar platform experience we have a
+[29:08.24] course with videos we have an entire
+[29:11.36] experience given to you and I can vouch
+[29:13.60] for the video qualities they are way way
+[29:16.64] better than what the other organizations
+[29:18.64] are offering a lot of times people who
+[29:21.20] are enrolling for these expensive
+[29:22.76] courses they're still ending up watching
+[29:24.92] my videos on YouTube so that is where
+[29:27.60] our quality stands upon and we are
+[29:30.00] offering couple of plans the first plan
+[29:32.08] is for a validity of one year and the
+[29:34.80] second plan is for a validity of 3 years
+[29:37.92] but if you are an early member of take
+[29:41.16] forward plus you can use the coupon code
+[29:43.48] TF plus while purchasing it the validity
+[29:46.56] will be lifetime till how long is the
+[29:49.56] coupon code valid it is valid for I'm
+[29:52.36] not sure how long we might just revoke
+[29:54.72] this coupon code tonight itself or maybe
+[29:57.64] tomorrow
+[29:58.64] the moment we see that we're getting you
+[30:00.76] know significant amount of enrollments
+[30:02.92] we will be revoking it because we want
+[30:04.60] it to be exclusive the lifetime
+[30:06.64] community I want that to be exclusive
+[30:08.40] and I want them to be our early members
+[30:11.64] right in the first one uh like in the
+[30:14.80] validity onee subscription plan you'll
+[30:16.88] not be getting AI doubt support and the
+[30:18.76] weekly sessions with me while in the
+[30:20.92] lifetime of the threee validity thing
+[30:23.20] you'll be getting everything and
+[30:25.36] whatever V2 features that are coming by
+[30:27.60] in October 1 week everything yes
+[30:30.20] everything will come under the same
+[30:32.20] subscription you don't have to pay
+[30:33.36] anything extra if you're opting for the
+[30:35.80] you know the later subscription which is
+[30:37.32] for Lifetime and this coupon code is
+[30:40.44] giving you the maximum discount that is
+[30:43.32] possible and this coupon code will be
+[30:44.68] taken back on Sunday midnight on Sunday
+[30:47.20] midnight the prices will rise slightly
+[30:50.16] slightly or somewhere around that so
+[30:52.60] this is about the price point so if you
+[30:55.12] compare this price point totech
+[30:56.52] organization it has extreme pocket
+[30:58.36] friendly if you compare this price point
+[31:00.12] to other people who are just providing
+[31:01.68] you zoom classes it is lesser than that
+[31:04.36] as well and we are offering you so much
+[31:06.24] more like I think there is literally no
+[31:08.00] comparison over there as well coming to
+[31:10.80] other thing uh can you actually get it
+[31:13.00] at a much lower price you can we have a
+[31:15.84] cashback dashboard all you need to do is
+[31:18.92] head over to LinkedIn once you've used
+[31:21.00] our platform definitely head over to
+[31:22.60] LinkedIn write a post about your
+[31:24.56] experience it can be bad it can be good
+[31:26.88] just give your pointless
+[31:28.44] if you're feeling that okay at this
+[31:30.48] price point this is amazing write about
+[31:33.04] that if you feel that no it's not good
+[31:36.76] right about that as well as long as
+[31:38.68] you're giving us a constructive feedback
+[31:40.48] because we are building something over
+[31:42.28] here we're not over here to stay for a
+[31:44.56] month we building it and this is our
+[31:46.84] long-term Vision so give us a proper
+[31:49.12] feedback can be good we like good so try
+[31:52.12] to be positive and you can add payment
+[31:54.64] details over here a 5% additional cash
+[31:57.36] back will be transacted into your
+[31:59.24] account this offer is valid for Lifetime
+[32:01.60] yes this is something whenever you
+[32:03.40] purchase you'll get this cash back stuff
+[32:06.12] and we'll be you know submitting the
+[32:09.60] cash back by the end of the month but we
+[32:12.16] have one more plan which is become an
+[32:14.04] affiliate now this is open for everyone
+[32:17.04] you have been referring take it forward
+[32:18.48] to your Juniors to your colleagues to
+[32:20.28] everyone correct till date but you're
+[32:22.40] not being paid for that you have come up
+[32:24.04] with this affiliate you're refering take
+[32:25.84] you forward why don't you add your
+[32:27.24] payment details
+[32:28.36] get a coupon code and refer the link
+[32:30.64] that you have and our systems will make
+[32:33.00] sure if the person has come to take you
+[32:35.08] forward by your link for the next 15
+[32:38.12] days for the next 15 days if he
+[32:40.36] purchases TF plus you will get your
+[32:43.52] affiliate commission and that is 15% of
+[32:46.08] whatever the user pays us it's minus GST
+[32:49.48] obviously minus GST because GST is not
+[32:51.32] our money so that is what you'll get so
+[32:53.64] if you're a member of TF plus if you
+[32:55.68] refer six people or seven people yeah I
+[32:58.04] think TF plus will be free for you yeah
+[33:01.12] that is about the affiliate plan so
+[33:04.00] considering the cash back the affiliate
+[33:05.80] plan I think this is extremely pocket
+[33:09.16] friendly okay uh before I move on to one
+[33:12.48] more very very important thing a huge
+[33:15.28] shout out to our team a huge shout out
+[33:18.04] to our team that you're seeing on the
+[33:19.28] screen everyone has given their
+[33:22.16] literally everything for the last 3
+[33:24.08] months you're seeing an entire product
+[33:26.04] right a lot of Engineers have left their
+[33:28.36] job but still they're using third party
+[33:30.72] platforms not able to build something of
+[33:33.52] this ster just just pause and think
+[33:37.08] you're given 3 months and you'll have to
+[33:39.12] literally build everything the internal
+[33:40.56] portals the videos the thumbnails the
+[33:42.96] editorials the problem setting the
+[33:44.56] problem testing the images the ux so
+[33:48.40] many things in 3 months a huge huge
+[33:50.96] shout out and thank you to our team uh
+[33:53.88] you can find them in our about section
+[33:55.36] you can connect them on lyen and drop a
+[33:57.28] thanks not to them as well they are the
+[33:59.92] backbone they are the backbone of TF
+[34:01.84] plus so yeah you might have a question
+[34:05.52] you already have a TF and then you're
+[34:07.68] coming up with TF plus who should opt in
+[34:09.80] for TF plus first of all it's extremely
+[34:12.64] pocket friendly the returns that you'll
+[34:15.08] be getting is humongous we are trying to
+[34:17.92] save time over here now with TF what we
+[34:20.36] have done is we have collected a lot of
+[34:22.00] resources and we put them on our website
+[34:24.80] people are heading over to solve a
+[34:26.00] problem that is logged on that website
+[34:28.44] you cannot access their editorial okay a
+[34:30.36] lot of problems you want the Java code
+[34:32.08] you're not finding it there are a bunch
+[34:33.76] of problems on those third party
+[34:35.52] platforms what we want is you know a
+[34:38.36] One-Stop solution we don't want you to
+[34:40.12] waste time if you're using TF and if
+[34:42.20] you're spending two hours in a day you
+[34:43.80] might end up solving two or three
+[34:45.92] problems but if you're using puf plus
+[34:48.04] because everything is so so organized so
+[34:50.16] so structured at such a pocket friendly
+[34:52.60] price you end up solving probably twice
+[34:55.24] the number of problems in the same time
+[34:57.12] so you end up saving a lot of time you
+[35:00.00] might not understand the value of time
+[35:01.52] as of now but eventually as you grow
+[35:04.24] you'll understand if you would have
+[35:05.28] saved time You' have done something else
+[35:07.32] which is productive some you might have
+[35:09.56] built something which is good so that's
+[35:12.20] why try to focus on saving time if
+[35:15.04] you're trying to save time take you for
+[35:16.68] plus is your way if you want to just
+[35:18.36] keep on just going on TF and obviously
+[35:22.44] the moment you pay you're disciplined
+[35:24.16] and this is a community and we have a
+[35:26.52] leaderboard as well we have a
+[35:28.40] leaderboard over here as well which
+[35:30.28] helps you to compete with people and you
+[35:33.00] could see where you are standing in case
+[35:34.96] you want to stay Anonymous we have an
+[35:36.52] option for that as well you can hide
+[35:38.16] your name and we say we're not going to
+[35:40.04] show your name to the entire world so
+[35:42.32] you can just cut off the competition
+[35:44.60] because on know when you realize in the
+[35:47.20] real world when you get into the real
+[35:48.92] world you realize that the competition
+[35:50.48] could be easily cut off as well so it's
+[35:53.88] a community like when I started I always
+[35:56.80] wanted my peers to be good because
+[35:58.88] people would be paying over here they
+[36:00.32] would be serious so that's why you will
+[36:02.56] be opting in for TQ forward plus so we
+[36:05.80] have a live session scheduled on
+[36:07.68] Saturday so for all the members of take
+[36:09.96] forward plus we'll be seeing you on
+[36:11.76] Saturday and the coupon TF plus is valid
+[36:14.52] in Sunday but I'm not sure about the
+[36:16.32] lifetime validity we might revoke it
+[36:18.08] tonight or tomorrow so OP 10 for TF plus
+[36:22.04] ASAP thank you so much for watching it
+[36:24.44] till here you guys have been great thank
+[36:27.36] you

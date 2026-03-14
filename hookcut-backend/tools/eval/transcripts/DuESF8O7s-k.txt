@@ -1,0 +1,289 @@
+[0:00.08] What exactly is vibe coding? Is it
+[0:02.32] another programming language like Java
+[0:04.24] or Python? Or is it a framework [music]
+[0:06.72] or is it just a vibe like I know coding?
+[0:09.68] Let's explore that. So what exactly is
+[0:12.64] vibe coding? Vibe coding lets you turn
+[0:15.04] your raw ideas into executable code with
+[0:17.60] the help of AI powered tools. Vibe
+[0:20.32] coding is not a programming language
+[0:22.08] like Java or Python. It's just a way
+[0:24.96] where you have an idea, you give it to
+[0:26.72] your AI powered tools and you get
+[0:28.80] started. You get executable code.
+[0:31.76] Basically, [music] it's a method where
+[0:33.36] you're trying to turn your raw ideas
+[0:34.80] into executable code, maybe customize it
+[0:37.44] and even [music] take it live. AI
+[0:39.28] integrations and IDs. You have different
+[0:42.08] IDs like VS Code, Jet Brains, and
+[0:45.04] Sublime [music] Text, which let you use
+[0:46.80] your plain text descriptions to generate
+[0:48.80] real-time code. Right? With the help of
+[0:51.04] these powerful [music] IDEs, you'll be
+[0:53.12] able to seamlessly integrate your
+[0:54.64] advanced AI tools like the highly
+[0:56.64] capable chat GPT, the versatile Claude,
+[0:59.60] or the incredibly useful GitHub copilot,
+[1:02.32] and effectively use them to transform
+[1:04.16] your raw ideas into real time. Fully
+[1:06.56] running code with the invaluable
+[1:08.00] assistance of AI. [music]
+[1:09.52] Vive coding is about turning natural
+[1:11.36] language into code. That is using
+[1:13.20] natural language to code. Here you're
+[1:15.84] describing your tasks in plain [music]
+[1:17.36] language just like you're talking to
+[1:19.20] someone and AI can create or suggest
+[1:22.00] code for you, right? For example, if you
+[1:24.48] want [music] to ask or write me a
+[1:25.92] JavaScript function that checks if a
+[1:27.60] number is prime or not, you're just
+[1:29.52] telling the AI tool in simple language
+[1:32.00] and then it tries to generate the code
+[1:33.92] for you. Moving on to the editors and
+[1:36.48] IDs for your vibe coding.
+[1:39.12] So, wipe coding can be integrated with
+[1:41.12] many code editors, but the choice of
+[1:43.04] which IDE to use for the task, what
+[1:45.28] you're trying to do, really comes down
+[1:46.88] to your personal preferences.
+[1:49.68] Some of the popular options include
+[1:51.28] Visual Studio Code.
+[1:53.68] Installing Visual Studio Code is very
+[1:55.84] easy. We'll see how to install it. And
+[1:59.36] Visual Studio Code is a widely used
+[2:01.36] editor. It's the choice for both
+[2:03.76] beginners [music] and experienced
+[2:05.04] programmers
+[2:06.72] who often work with VS Code.
+[2:10.32] So Versus Code is the most popular code
+[2:12.40] editor among developers.
+[2:15.84] It supports multiple extensions.
+[2:18.72] Integrating AI with VS Code is actually
+[2:21.04] very easy.
+[2:23.12] So I'll just show you how to install VS
+[2:24.76] [music] Code.
+[2:26.56] So I'm just typing VS Code. And this is
+[2:28.56] the official website.
+[2:31.60] code editing redefined and then you have
+[2:37.28] download for Windows. You can see all
+[2:40.08] the features Versus Code has and
+[2:42.48] depending on your operating system,
+[2:44.08] you'll be able to download the right
+[2:45.76] version of it. After downloading the
+[2:48.64] installer, just follow the steps and
+[2:50.72] you'll be good to go.
+[2:53.68] Install that. So, since I've already
+[2:55.20] installed it, I'm opening it now.
+[2:58.00] This is what VS Code will look like
+[2:59.68] right after you install it.
+[3:02.16] I'll try to show you how to add your
+[3:03.68] extensions for your AI tools.
+[3:06.56] You can just click on extensions or
+[3:08.16] press control + shift plus X and then
+[3:10.48] GitHub Copilot.
+[3:12.88] Since I've already installed it, I'm
+[3:14.80] just showing you. Just click on GitHub
+[3:17.12] Copilot. And since it's already
+[3:19.12] installed for me, it's showing
+[3:20.72] uninstall.
+[3:22.80] So, you just have to click on this.
+[3:25.44] I'm going to restart this extension.
+[3:28.08] After you've added your extensions,
+[3:29.60] [music] you need to sign in with your
+[3:31.04] GitHub copilot account.
+[3:34.16] I've already signed into my GitHub
+[3:35.76] account here.
+[3:38.88] And then similarly for cloud, you
+[3:40.64] already have that cloud option here.
+[3:43.84] Cloud for VS code.
+[3:47.36] I've already installed [music] that. You
+[3:49.28] just have to click on the install button
+[3:50.88] here.
+[3:52.72] Right. And then we'll look into chat
+[3:54.16] GPT.
+[3:56.48] Okay, you just add your chat GPT4.0
+[3:59.73] [music] and then you can click on the
+[4:01.04] install button to install it.
+[4:03.92] Similarly, I've added my Gemini code
+[4:05.84] assistant as well.
+[4:08.08] Since I've already installed it, you can
+[4:10.00] see it's showing me an install button.
+[4:12.72] The install button will be enabled and
+[4:14.72] you [music] can just go and click on
+[4:15.92] install.
+[4:17.76] So, this is how you integrate your AI
+[4:19.52] tools.
+[4:21.60] So, what are the different tools that
+[4:23.04] I've integrated here?
+[4:25.44] So I'll just show you that now.
+[4:28.64] So you can see that I've integrated my
+[4:30.32] Cloud Sonnet 3.5, Gemini 2 4.1 preview
+[4:33.60] and GPT 4.0 Mini
+[4:37.84] and then I also have GitHub Copilot
+[4:39.76] installed here.
+[4:42.32] So now moving on to the hands-on part of
+[4:44.32] your web coding.
+[4:46.96] Right, as I said, web coding is
+[4:48.56] basically about how you transform your
+[4:50.08] raw ideas with the help of AI tools and
+[4:51.92] just get started with it. So, we'll just
+[4:53.92] try to see how we can translate our
+[4:55.52] ideas.
+[4:57.44] So, I'm just trying to give a prompt or
+[4:59.20] share my idea with the AI tools. Create
+[5:01.44] a personal web page that greets me with
+[5:03.12] a warm welcome message like hello
+[5:04.72] followed by my name and includes a short
+[5:06.88] description of myself, my interests, and
+[5:08.80] maybe a picture.
+[5:10.96] Uh, make the page interactive by
+[5:12.64] changing the greeting when I refresh or
+[5:14.32] interact with a button. Okay, so I'm
+[5:16.16] using Cloud Sonnet here. So, I'm asking
+[5:18.64] Cloud Sonnet to generate code for this.
+[5:24.08] So you can see that it's working here
+[5:25.84] figuring out what the user wants.
+[5:28.80] It's searching for project template
+[5:30.32] indexes.
+[5:32.40] Yeah. See here it says, "Sure. Here is a
+[5:34.48] proposed directory structure for a
+[5:36.00] personal webpage project." [music] So
+[5:37.68] it's giving me a personal web page
+[5:39.20] structure where it has a src folder with
+[5:41.12] your index.html file, your CSS file, and
+[5:44.88] your JavaScript file as well.
+[5:47.60] Okay. And it's asking me whether I want
+[5:49.28] to create this workspace.
+[5:51.76] I say okay yeah create this workspace
+[5:53.60] for me. So I'm creating the workspace.
+[5:58.16] I've already made a folder called
+[5:59.44] personal web page and I want that to be
+[6:01.44] my parent folder where this workspace or
+[6:03.12] these files will be created. So it's
+[6:04.64] creating those files for me.
+[6:07.20] I'm just opening it in a new window
+[6:08.80] here. So you can see that it has
+[6:13.92] created my workspace here. So let's see
+[6:15.76] what's in index.html and in styles and
+[6:18.64] script. So now it has just created a
+[6:20.80] workspace for me.
+[6:23.20] So I can just give a prompt saying great
+[6:25.28] now
+[6:29.92] could you please provide me with the
+[6:31.44] necessary and complete code snippets
+[6:33.36] that I can seamlessly integrate into my
+[6:35.28] index.html file and also into my
+[6:37.68] main.css stylesheet file ensuring proper
+[6:41.28] functionality and filing for my project.
+[6:47.52] main.js js and then run to execute the
+[6:49.76] application
+[6:58.24] personal web page. So it's now working
+[7:00.00] again perfectly.
+[7:04.24] So it says I will provide the code for
+[7:06.32] each file to create an interactive
+[7:08.00] personal web page.
+[7:11.60] It starts with your index.html and then
+[7:13.84] here it goes. It's giving me main.css
+[7:16.08] CSS giving me different styles for my
+[7:18.08] buttons. For the greetings, it's
+[7:20.00] creating some containers as well. And
+[7:21.76] then creating a profile photo, I mean
+[7:24.24] the width and height of the photo since
+[7:25.76] I said that a photo needs to be there.
+[7:30.08] And then it's creating greetings for me.
+[7:32.40] Hello. Hi there. This is in JSON format.
+[7:37.84] And then it's also giving us comments
+[7:40.16] which will help us figure out exactly
+[7:41.84] what that section of your code is trying
+[7:43.52] to do.
+[7:45.92] It has created a function called get
+[7:47.60] random greet and then updates the
+[7:49.36] greetings and so on.
+[7:52.48] So it's also giving me steps to run the
+[7:54.40] web page.
+[7:57.04] Create the directory structure as shown.
+[8:00.32] Copy each code snippet into its
+[8:02.00] respective file.
+[8:04.64] Replace your name in the JavaScript file
+[8:06.32] with your actual name.
+[8:09.28] Replace the placeholder image URL with
+[8:11.28] your actual photo URL.
+[8:14.64] Open the index.html file in your web
+[8:17.12] browser. You can also serve this locally
+[8:20.00] using the Visual Studio Code Live Server
+[8:22.16] extension.
+[8:24.24] I've already added that extension.
+[8:27.12] Like I said, you can just go to
+[8:28.48] extension, search for liveserver, and
+[8:30.32] add your extensions there.
+[8:34.72] And then you can rightclick on your
+[8:36.08] index.html and it will open in your live
+[8:38.88] server as well.
+[8:41.36] So, let's make it simpler. We'll just
+[8:43.44] try to run the web page now.
+[8:46.48] Okay. So, I'll just copy the code here
+[8:48.24] which is provided for index.html.
+[8:52.88] You can see the copy button here. So,
+[8:55.60] I'm just opening my index.html.
+[9:00.64] This is my index.html and I'm saving it.
+[9:06.24] So, it have given me an image source and
+[9:08.00] told me to change the image source.
+[9:11.04] But since I don't have any image right
+[9:12.80] now, I'm not adding anything here.
+[9:16.08] So let's see what it gives us. All
+[9:18.16] right. So we'll copy the CSS file as
+[9:20.24] well.
+[9:21.92] Yeah, this is my CSS file. So again, I'm
+[9:24.16] going to my main.css, adding the code
+[9:26.16] here, and saving it.
+[9:28.56] Right. And then we have your main.js
+[9:30.24] file. So I'll go back to my main.js
+[9:32.16] file. And I have copy pasted it here. So
+[9:34.24] it told me to change the name here to
+[9:35.76] your name. So I'm just trying to change
+[9:37.20] my name here.
+[9:39.28] So let's see how we can run this. So I'm
+[9:41.20] just going back to my folder here.
+[9:44.32] This is the folder I created, personal
+[9:46.24] web page.
+[9:48.40] I'm clicking on personal web page.
+[9:51.68] As the instructions say, I just have to
+[9:53.52] click on my index.html.
+[9:56.64] I'm not using the live server though, so
+[9:58.32] I clicked on index.html.
+[10:00.72] Let's see what it can do.
+[10:05.84] Since I haven't added a photo here, it's
+[10:08.08] just giving me a brief introduction
+[10:09.60] about myself.
+[10:12.56] You can change that introduction as
+[10:14.16] well. And my interests, web development,
+[10:17.68] artificial intelligence, photography,
+[10:19.92] and travel.
+[10:22.00] Well, it even got my interests right.
+[10:25.12] Hey, now change the greetings. So,
+[10:27.68] greetings Aisha.
+[10:29.92] Nice to meet you and welcome Aisha.
+[10:34.56] So these are the things it's showing
+[10:36.08] here,
+[10:37.92] right? So you saw how you can integrate
+[10:39.52] your AI tools into your ID and with just
+[10:42.72] simple natural language, you're able to
+[10:44.72] create something even if you don't have
+[10:46.40] programming knowledge.
+[10:47.68] >> If you enjoyed this video, you can
+[10:49.36] enroll in Greatle Learning Academy for
+[10:51.36] free. Choose from hundreds of courses
+[10:53.28] across multiple domains and earn a
+[10:55.36] certificate of completion along the way.
+[10:57.44] And if you want to take it a step
+[10:58.72] further, you can try Greatlearning
+[11:00.25] [music] Academy Pro Plus with a free
+[11:02.24] trial. It provides access to additional
+[11:04.56] premium courses with more advanced
+[11:06.48] content from distinguished faculty along
+[11:08.64] with features like [music] guided
+[11:09.92] projects, a resume builder, and mock
+[11:12.16] interviews to make your learning journey
+[11:13.84] even richer. Link is in the description.

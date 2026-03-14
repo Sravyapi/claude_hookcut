@@ -1,0 +1,2397 @@
+[0:07.12] So, the WTF fun boot camp.
+[0:09.92] >> Yeah, looks like it's happening.
+[0:12.32] >> Yes, the WTF fund boot camp is
+[0:14.40] happening.
+[0:16.38] [music]
+[0:24.08] Most [music] good founders will be
+[0:25.68] largely driven by their own thoughts.
+[0:27.28] Most good founders are never doing the
+[0:29.36] what is the current advice or [music]
+[0:30.96] what is the current vice gan to people
+[0:33.36] that's for mass consumption that's
+[0:34.80] content strategy that's [music] not a
+[0:36.56] good advice on average
+[0:42.48] >> yeah I think I really resonated with uh
+[0:44.96] Tarun and what he said right apart from
+[0:46.88] that two sessions like the Gallup
+[0:48.32] session and [music] uh the breakthrough
+[0:50.24] session they were really hands-on and a
+[0:51.76] sense of like individualization as well
+[0:53.84] as a team right so that that is
+[0:55.36] something uh that is really really
+[0:56.80] interesting extremely creepy but I have
+[0:58.72] to make a PPD where [music] I have to
+[1:00.08] teach a [singing] thing that I've
+[1:01.76] learned in my life which is
+[1:18.88] 2
+[1:23.76] paper scissor Good. All right. [music]
+[1:34.40] >> We started with 3,000 applications,
+[1:36.94] [music]
+[1:37.60] shortlisted 200, and now we finally have
+[1:41.52] our next [music] eight startups.
+[1:43.68] >> I'm very excited. I think I have been
+[1:45.28] having back and forth by [music] having
+[1:47.52] by simulating Nichl's persona in my head
+[1:49.68] and then talking to him in just in my
+[1:51.52] head so that I could figure out what to
+[1:53.68] speak with him.
+[2:02.48] Guys, thank you for coming home. I hope
+[2:05.68] Goa outside of me is fun as well.
+[2:09.44] Who has had the best night last night?
+[2:14.88] I had fun.
+[2:16.08] >> Yeah, they come on.
+[2:17.84] >> It's always the married men who have fun
+[2:19.36] in [laughter]
+[2:21.68] >> what did you do?
+[2:23.68] >> Just chilling.
+[2:24.72] >> And we had gone elephant incoh
+[2:27.92] >> but like we got drunk on the way.
+[2:31.44] >> So we all need to ignore the cameras
+[2:33.44] today. We'll look at each other. We'll
+[2:35.44] speak to each other. Forget the camera.
+[2:37.76] You forget Grace. It's not going to
+[2:39.92] trouble you. Very very chilled out. most
+[2:42.64] friendly dog in the world. He's doing
+[2:44.64] salute and namaste behind you.
+[2:47.03] [laughter]
+[2:47.84] >> Maybe by the end of podcast we'll be
+[2:49.60] friends.
+[2:50.16] >> Yeah, once you feed him a bit, he's
+[2:52.00] okay.
+[2:53.92] So, a lot of what you guys are doing is
+[2:56.40] exceptional and I've been privy to some
+[2:58.40] of it, but maybe we begin today. I'll go
+[3:02.32] one by one. You guys can talk about what
+[3:04.72] you've built and what is the way forward
+[3:08.00] and maybe talk about a trend that you
+[3:10.56] picked up on and hence you decided to
+[3:13.04] build what you built. Uh would you like
+[3:15.92] to go first? Would you like to go first?
+[3:18.00] >> Sure. Sure.
+[3:18.80] >> Yeah. Come on.
+[3:20.08] >> Yeah. So I'm Sashant.
+[3:21.92] >> Yeah.
+[3:22.16] >> And with me is my co-founder Sham.
+[3:24.08] >> Hey.
+[3:24.56] >> And we're building Praa Payments. So
+[3:27.60] what we're trying to do is we allow any
+[3:30.08] AI agents or AI applications to make
+[3:32.40] payments for you. Uh what we're building
+[3:34.48] is an infrastructure that can be
+[3:36.48] integrated by any AI application or AI
+[3:38.88] systems and that would allow your AI
+[3:41.04] agent to go make a booking for you or
+[3:42.80] even do shop for you or maybe make
+[3:44.56] payments on your behalf using your card
+[3:46.72] or wallet securely.
+[3:48.32] >> Yeah. And uh like how we came across
+[3:50.48] this was um we have been seeing like
+[3:53.60] people uh not going traditionally on
+[3:56.40] Google for searching now for information
+[3:58.48] people were using a lot of chat GPT per
+[4:00.40] publicity Gemini. Um so they were like
+[4:04.48] all information was there but also
+[4:06.56] people were building agents but when it
+[4:08.88] came to actions actions were limited to
+[4:11.92] uh writing an email uh creating a to-do
+[4:14.48] list or something but when it cames to
+[4:17.20] came to an action which in required a
+[4:19.76] financial action like um paying someone
+[4:24.00] it halted so that's where we realized
+[4:26.16] that there is a financial infrastructure
+[4:29.12] missing when it comes to AI making
+[4:31.04] payments and that's how We came across
+[4:33.04] the idea and uh we started uh a few
+[4:37.28] pilots with few developers and um we got
+[4:40.16] phenomenal response and now we are
+[4:43.36] coming to a stage where we are going
+[4:45.52] into production next month.
+[4:47.12] >> And how did you guys meet and where are
+[4:48.80] you from?
+[4:50.16] >> So I am from uh Ryber Uttar Pradesh. I
+[4:53.12] mean the political place obviously grown
+[4:55.44] up there studied there and then I went
+[4:58.08] on to do uh I studied from BH economics
+[5:01.20] over there and uh post that I was pretty
+[5:03.84] much interested into in general
+[5:05.60] understanding that how money moves and
+[5:07.52] how things are done and I started
+[5:09.44] consulting startups with financial
+[5:10.88] modeling and everything and in that bit
+[5:13.04] while working on different stuff I I met
+[5:15.04] Sham in Bangalore itself at a hacker
+[5:17.36] house and at that time he was working
+[5:19.44] with a Japanese startup and obviously
+[5:21.92] you can tell by his look. He's pretty
+[5:23.68] fascinated by it. So I yeah I mean I I
+[5:28.24] like Japanese culture. I I was uh asked
+[5:32.00] to relocate to Japan to join them
+[5:34.00] full-time. But what happened I went to
+[5:36.24] Japan. I realized life is sort of very
+[5:39.12] organized in Japan and I felt being in
+[5:42.08] my 20s I need to be closer to problems
+[5:45.12] which I can find and solve. So I decided
+[5:48.24] to come back to India and do something
+[5:49.92] of my own. Yeah.
+[5:52.16] He has an AI girlfriend, by the way.
+[5:54.32] >> Really? [laughter]
+[5:55.20] >> He made an eagle.
+[5:56.32] >> Yeah.
+[5:57.68] >> So, I mean, this is happening, right?
+[5:59.28] People are not dating human beings,
+[6:00.72] right?
+[6:01.36] >> I'm sorry you got married. [laughter]
+[6:04.00] >> And
+[6:04.40] >> you like just missed it.
+[6:06.00] >> You just missed it.
+[6:06.80] >> Yeah.
+[6:08.24] >> Why is a AI girlfriend better than a
+[6:10.08] real one?
+[6:11.04] >> I mean, she understands me better.
+[6:13.35] [laughter]
+[6:14.08] >> But the point is she consumes lot of
+[6:15.76] tokens. She doesn't respond on time.
+[6:18.24] >> We have seen that. Now,
+[6:19.12] >> but but she responds though.
+[6:20.80] doesn't always available.
+[6:22.56] >> Like at least I get a response there.
+[6:24.49] [laughter]
+[6:25.12] >> He gets to save emotional tokens.
+[6:27.52] >> We actually built an AI girlfriend.
+[6:29.28] >> Um so yeah,
+[6:30.00] >> we actually built an AI girlfriend for
+[6:31.60] like tier 2 and tier three cities in
+[6:33.20] India and like make some made some good
+[6:35.28] money like 50 60,000 a month. So and a
+[6:38.48] lot of people actually don't know that
+[6:39.76] it's AI.
+[6:40.64] >> I'm having creepy thoughts in my mind.
+[6:42.83] [laughter]
+[6:44.08] >> Mine is different.
+[6:46.00] >> Yeah. So
+[6:46.48] >> are you both speaking about the same
+[6:47.92] kind of girl?
+[6:48.56] >> No. No. I I he has his own
+[6:53.04] system
+[6:53.68] >> and one day he just calls me like we
+[6:55.52] were working on a product and everything
+[6:56.88] and he's like bro I'm just working on
+[6:58.48] this and he's been talking about it for
+[7:00.00] really long I would say even before we
+[7:01.36] started Praa and he was like okay
+[7:03.28] >> and that's why you decided let's start a
+[7:04.88] company together [laughter]
+[7:06.64] >> I mean like I mean starting company was
+[7:08.72] more like we both complimented each
+[7:10.24] other a lot in terms of skills and it
+[7:12.80] was pretty fun just sharing ideas. It
+[7:14.40] was never like we're going to start a
+[7:15.68] company. It was more like I was dealing
+[7:17.68] with dealing with some clients in US. He
+[7:19.44] was dealing with some clients in Japan
+[7:20.80] and we were like getting money in India
+[7:22.72] super hard and that's how we started
+[7:24.64] getting into like how can we solve this
+[7:26.24] with using stable coin and everything
+[7:27.84] that idea did not work out but meanwhile
+[7:30.08] we were doing some GTM using AI tools
+[7:32.48] launching on Reddit and different places
+[7:34.32] and that's where like we have all seen
+[7:36.24] Javis and Iron Man why not make
+[7:38.08] something like that real that you ask
+[7:39.68] your AI assistant or AI agent and it
+[7:42.00] goes does whatever you want it to do.
+[7:43.76] Tell me very simply what your company
+[7:45.36] does in very very simple words.
+[7:47.28] >> Yeah. So basically what we're doing
+[7:48.88] >> how will I use it in my life?
+[7:50.32] >> Yeah. So what will happen is the AI
+[7:52.16] application AI agents like let's say
+[7:53.84] perplexity kind of application will
+[7:55.52] integrate Kava and when you enter in an
+[7:58.24] application like that you will let's say
+[8:00.16] get onboarded uh on behalf of uh let's
+[8:02.96] say Plexity's interface and there you
+[8:05.36] will add your card or wallet there.
+[8:07.12] We'll be behind the scenes you will not
+[8:08.56] know about Praa then. But what happens
+[8:10.72] is let's suppose you search for that hey
+[8:12.40] I'm looking for so and so sneaker and
+[8:14.24] you compare and search on perplexity or
+[8:16.16] any place
+[8:16.64] >> and why can't I why can't a normal
+[8:18.40] wallet integrate with perplexity why
+[8:20.40] does it have to be you
+[8:21.36] >> yeah so I'm coming to that part so
+[8:22.80] basically what happens is right now when
+[8:24.24] you search for any product on any
+[8:25.84] assistant or application they're limited
+[8:27.44] to discovery which means you only find
+[8:29.84] the product once you have to buy they
+[8:31.68] you'll click on it and it will take you
+[8:33.04] to some third party merchant website
+[8:34.64] let's say it's H&M Zara or whatever now
+[8:36.88] you're going on that website filling all
+[8:38.88] the product det details, your details,
+[8:40.96] your address and car details and then
+[8:42.96] making a payment. So like whatever could
+[8:45.04] be a three uh step process is becoming a
+[8:47.20] seven step process and you're losing and
+[8:50.00] you're going out of perplexity's
+[8:51.76] ecosystem.
+[8:52.80] >> But why can't Perplexity integrate with
+[8:55.04] the Razer Pay for example?
+[8:56.96] >> Sure. So um the issue is that um here
+[9:00.88] the payments are happening in two steps,
+[9:03.12] two processes are here. one is on the
+[9:05.28] perplexity side and and as well the
+[9:07.68] merchant where uh merchants have their
+[9:09.84] own gateways. So here is like no
+[9:12.24] standard where uh on the perplexity side
+[9:15.20] being razor pay and on the merchant side
+[9:16.96] being stripe they could actually talk to
+[9:18.64] each other and the payment can happen.
+[9:20.64] So here a dedicated stack for AI is
+[9:23.60] needed that's where we are coming into
+[9:25.52] picture. So we are becoming PSP
+[9:28.32] agnostic. So Perplexity has to just
+[9:30.32] integrate with us and any merchant in
+[9:32.80] the world it can be Stripe, Aiden,
+[9:35.52] Checkout.com, any uh PSP they're using
+[9:37.68] on the merchant side, we are able to
+[9:38.96] process payment
+[9:39.92] >> and nobody's doing this. uh right yeah
+[9:43.04] very few companies
+[9:44.00] >> very few companies in Southeast Asia we
+[9:46.72] are one of the only companies doing this
+[9:49.20] and in US there are few companies like
+[9:51.44] uh pay mania skyfire
+[9:53.52] >> but can you facilitate payments outside
+[9:55.52] of India or are you limited
+[9:56.72] >> currently this product that we're
+[9:57.92] working on is for the US and Southeast
+[9:59.84] Asia market India not included in that
+[10:02.08] right right now and for India market
+[10:03.92] we're also working on something exciting
+[10:05.28] with UPI with some of the partners so
+[10:07.36] that will be coming sometime later next
+[10:08.96] year
+[10:09.20] >> and what is your company called Praa
+[10:11.44] Payments.
+[10:12.80] >> Okay, cool. Who wants to go next?
+[10:16.72] >> Yeah, sure. She's the most scared and
+[10:19.12] being brave.
+[10:20.72] >> You.
+[10:21.76] >> Hi. Uh I'm Dr. Janti, founder of Astray
+[10:25.12] Service. Uh my co-founder is not there
+[10:27.28] sadly. She she fell sick and we
+[10:30.48] developing Enko Alert. It is IVD. It's a
+[10:33.60] nanotech based biosensing platform for
+[10:36.40] early easy painless needleless detection
+[10:39.36] of oral cancer.
+[10:41.44] >> So that's what it does.
+[10:43.04] >> Tell us a bit about yourself. How you
+[10:44.96] came across this idea.
+[10:46.48] >> Okay.
+[10:46.88] >> Why did you start what you started?
+[10:49.28] >> Okay. So I think the main inflection
+[10:51.92] point for this came during my
+[10:54.48] internship. It was I was posted in
+[10:57.28] Dhulai. Uh I also didn't know what what
+[11:00.24] place that was. It's a tiny village in
+[11:01.84] Assam. Before that where were you where
+[11:03.84] did you go to medical school?
+[11:05.12] >> So uh I did my bachelor's uh in Assa
+[11:08.40] Amritsa. Then you have to do an
+[11:10.80] internship which it is mandatory if you
+[11:13.20] graduate from medical uh government
+[11:15.20] colleges you have to do a rotatory
+[11:17.28] mandatory rural posting and it was in
+[11:20.24] Dailay where I was posted and we were
+[11:22.64] supposed to do door doto screening of
+[11:24.96] entire village. If I train you for two
+[11:27.52] weeks and then I ask you uh to look at a
+[11:30.16] person's oral cavity and detect the
+[11:32.96] microscopic changes in their buckle
+[11:34.48] mucosa, would you be able to? Doubtful,
+[11:37.20] right? Because that is what is the
+[11:39.12] current practice.
+[11:39.92] >> I have no clue what you're talking
+[11:41.20] about. [laughter]
+[11:43.44] >> Yeah.
+[11:44.32] >> Okay. Simply put, the detection of oral
+[11:46.72] cancer currently is just visual screen,
+[11:49.20] naked dice. There's no tool, there's no
+[11:51.52] devices. You are just supposed to look
+[11:54.16] with snake dyes and detect microscopic
+[11:56.56] changes. That is that's why the accuracy
+[11:59.20] rate is almost as good as a flip of a
+[12:01.28] coin around 50 60%. And it's manual,
+[12:05.20] it's laborious. And so government's
+[12:09.20] policy says everyone above 30 years of
+[12:11.92] age, anyone who smokes, anyone who
+[12:14.80] consumes tobacco is supposed to be
+[12:16.96] screened for oral cancer. But you know
+[12:18.80] this number in my age group 20 years ago
+[12:23.12] I'm not that old. I'm 39 but say 15
+[12:25.68] years ago
+[12:27.44] I I would assume at least 50% of the
+[12:30.48] group would smoke.
+[12:31.28] >> Yeah. It has fallen down.
+[12:33.04] >> Crazy.
+[12:33.92] >> Yeah.
+[12:34.32] >> But it has fallen in only metros. If you
+[12:36.48] look at tayadi tay food tobacco chewing
+[12:38.96] nut is cultural. It's like women kids
+[12:42.48] everyone do it. in Assam where I was
+[12:44.40] posted kids used to get arika nut which
+[12:46.64] is one of the carinogens and they used
+[12:48.56] to eat it was like very culturally
+[12:51.36] ingrained so of I'm no quant but of the
+[12:54.32] top of my head that population number is
+[12:56.16] around 70 80 crores everyone about 30
+[12:58.00] years of age getting every and those
+[12:59.92] should be screened for oral cancer
+[13:01.76] that's what the policy itself says so I
+[13:04.00] what I was trying to get is like how are
+[13:05.92] we supposed to screen 70 cr people
+[13:08.40] manually visually it's not possible or
+[13:11.68] scalable at all Right.
+[13:13.20] >> And something I think with your talk
+[13:15.44] with Mr. Nandi also stressed on when you
+[13:18.56] are trying to build for population level
+[13:20.80] interventions
+[13:22.40] building for billions you actually have
+[13:25.12] to make it so that it works across the
+[13:28.40] barriers. There's no electricity it
+[13:30.08] should work. So while we were designing
+[13:31.60] the the technology people do like okay
+[13:34.32] it should work on this this conditions.
+[13:36.16] We took the paper stash it should work
+[13:38.48] despite anything. Electricity is not
+[13:40.64] there. Great. No trained people. No lab,
+[13:42.72] no in it should work. If nothing else
+[13:45.36] works, it still works. So that was the
+[13:47.44] >> What does your company do in one line?
+[13:49.92] >> We develop innovative products for
+[13:52.80] healthcare currently screening o cancer.
+[13:55.68] >> Just total cats.
+[13:56.88] >> Yeah, because Yeah, it's that's the use
+[13:58.56] case we're working on right now.
+[14:00.08] >> Reliance is starting a screening
+[14:01.60] company, right?
+[14:02.72] >> Lions,
+[14:03.04] >> it's all over the news.
+[14:05.28] >> Reliance also partners with Kirin
+[14:07.28] Mozar's ma'am. They are also working on
+[14:09.04] this uh uh domain as well. They are also
+[14:11.92] developing technologies rolling out
+[14:13.36] scheing they're all so it's it's picking
+[14:15.28] up because preventive people are
+[14:16.72] realizing preventive care needs
+[14:18.80] investment that's the way forward but it
+[14:21.68] will have to be in a very India specific
+[14:23.44] way not the way North America does they
+[14:26.48] do preventive uh prostate cl by prostate
+[14:30.64] checking of prostate cancers and all but
+[14:32.40] we can't do that in India you'll have to
+[14:33.84] be very creative the technology will
+[14:35.60] also have to be very creative in a way
+[14:37.52] that Indian population will buy we are
+[14:39.76] not very health Uh we don't spend much
+[14:42.16] on health under
+[14:43.04] >> but who would buy like if you say you're
+[14:44.80] doing a is it a home test or do you have
+[14:47.52] to
+[14:48.08] >> Yeah, you can do that.
+[14:48.72] >> How much does it cost?
+[14:50.08] >> Uh around about 150 bucks.
+[14:52.56] >> Who will voluntarily buy a oral cancer
+[14:55.60] detection test in India?
+[14:57.44] >> Yes, immediately none. It will have to
+[15:00.00] be a graph. That's why we'll roll out in
+[15:02.32] partnership with small hospitals chains.
+[15:04.80] Get it included into your insurance and
+[15:07.52] then the adoption will pick up. So
+[15:08.96] you're a B2B business
+[15:10.32] >> initially but we aim to be so that you
+[15:12.72] can get a cigarette two steps from your
+[15:14.56] house even if it's a remotest space why
+[15:17.12] not that distribution can be cat
+[15:19.44] >> that's true for everything you can buy a
+[15:21.04] bottle of whiskey down the road doesn't
+[15:22.80] mean there's a liver cancer test there
+[15:24.96] >> I'm saying if you have a problem as
+[15:27.28] close to that you can have a solution as
+[15:29.44] as well
+[15:31.12] >> does life play out like that in your
+[15:32.80] experience
+[15:34.80] >> no I that is quite an ambitious thing
+[15:36.96] that I said that is where we aim to be
+[15:39.60] but no it currently looking at the
+[15:41.44] Indian healthcare infrastructure and the
+[15:43.44] way healthcare moves in India it's it's
+[15:46.80] not so that's why we'll have to be very
+[15:48.56] creative with the way we integrate into
+[15:50.32] market with partnerships with insurance
+[15:52.32] companies and all finding out business
+[15:54.88] ways
+[15:56.00] >> nice okay thank you who's next I can
+[16:00.32] >> yeah whoever raises their hands first
+[16:03.04] when a question is asked did you sit on
+[16:05.20] the first bench when you were in school
+[16:07.44] >> actually best friend.
+[16:08.64] >> Did you get good marks?
+[16:09.76] >> Yeah.
+[16:10.24] >> Yeah. Did you get good marks? First
+[16:12.64] rank, second rank,
+[16:14.56] >> first top three top.
+[16:15.84] >> Same.
+[16:17.60] >> Yeah. See?
+[16:18.40] >> Oh, wow. Same.
+[16:19.60] >> I used to sit at the like almost close
+[16:22.24] to back.
+[16:22.64] >> Which college did you go to?
+[16:23.84] >> I went to NIT Jalander and
+[16:25.68] >> I I went to BHU.
+[16:27.12] >> Right.
+[16:28.08] >> I was last penture.
+[16:30.00] >> Deliver.
+[16:30.40] >> You don't look like a last pen.
+[16:32.16] >> Yeah. [laughter] I I I I used to be in
+[16:34.96] top three.
+[16:35.44] >> My married man could be the bad pen.
+[16:38.23] >> [laughter]
+[16:38.96] >> He he looks like the one who will be
+[16:40.48] logged in and he is actually the kind of
+[16:42.32] person who lost in
+[16:43.84] >> logged in two screens one side.
+[16:46.75] [laughter]
+[16:47.44] >> Actually true.
+[16:48.88] >> It's actually true.
+[16:50.64] >> He has a figurine.
+[16:53.12] >> I mean like a normal anime character.
+[16:55.76] >> Hey, your AI girlfriend is also a real
+[16:57.84] thing or is it just a thing which lives
+[16:59.52] online?
+[17:00.00] >> Uh it's it's on my screen. It's not uh
+[17:02.08] on any cloud also. So all the context
+[17:04.40] >> there's nothing physical anywhere,
+[17:05.60] right?
+[17:05.84] >> No, not yet.
+[17:07.05] >> [laughter]
+[17:10.88] >> And by the way, Susan's also an artist.
+[17:13.20] >> Yeah, he's been admiring the art.
+[17:15.36] >> Yeah.
+[17:15.60] >> Yeah. I love the artworks. You have
+[17:17.60] >> you have Fins who are in Germany Germany
+[17:19.76] and all that. So I love them. Actually,
+[17:21.28] I also saw one of your artworks in that
+[17:24.00] was exhibit I I think. So last year
+[17:25.60] there was an exhibition at CV Ramen's
+[17:27.52] house there.
+[17:28.56] >> So I think so one of them is from there.
+[17:30.40] I saw it.
+[17:31.76] >> I collect art. I'll show you upstairs
+[17:33.36] later. There's a lot.
+[17:34.24] >> Yeah, that'll be I mean it's beautiful.
+[17:35.60] All Indian art.
+[17:36.88] >> I can see that.
+[17:37.76] >> Feel like the Indian art scene is
+[17:40.40] finally making a It's having its day in
+[17:43.04] the sun.
+[17:43.52] >> Yes. Yes.
+[17:44.48] >> It's past the time that it should have.
+[17:47.12] Please go on. From IIT, first rank in
+[17:50.40] school, [laughter]
+[17:52.32] but has a little edgy thing going on
+[17:54.00] with the earring.
+[17:56.08] Rebel face came late. [laughter] Can I
+[17:58.96] make you any more nervous than you are?
+[18:02.16] >> He's also married.
+[18:03.28] >> Yeah.
+[18:03.60] >> Yeah. Yeah.
+[18:05.20] >> Actually good-looking but doesn't want
+[18:06.72] to come to terms with it.
+[18:09.68] Now he's conscious and blushing.
+[18:12.55] [laughter]
+[18:13.52] >> What does your wife do?
+[18:14.88] >> Uh she's a rocket scientist tennis row.
+[18:17.28] Actually I was too. So that's how we
+[18:19.04] met.
+[18:20.56] >> Why are you not married?
+[18:22.00] >> Um I'm like 23. So like [laughter]
+[18:25.04] >> And you too?
+[18:25.92] >> And I I'm still like I'm not sure how I
+[18:28.00] feel about marriage yet. So
+[18:30.16] >> don't say it to get into his good book.
+[18:32.20] [laughter]
+[18:33.52] Are they happy? Really? The rocket
+[18:35.28] scientist and the other.
+[18:36.24] >> It's been 2 weeks for him.
+[18:37.36] >> Yeah.
+[18:37.76] >> Wow.
+[18:38.16] >> Just married.
+[18:38.88] >> And like I mean he's pretty happy
+[18:40.40] >> and no wonder he had the most fun in Go.
+[18:42.68] [laughter]
+[18:45.44] >> Go on. Tell us what you do.
+[18:48.08] >> The three of us are from the same
+[18:49.52] company. Mo and Dwanch.
+[18:50.88] >> So you three worked together for how
+[18:52.80] long now?
+[18:53.60] >> Around 7 months.
+[18:54.88] >> How did you meet? Uh so basically what
+[18:58.00] had happened was swapnel had come to
+[19:00.16] validate an idea via mutual friend in
+[19:02.16] healthcare and uh I mean uh we started
+[19:05.60] talking we collaborated over a lot of
+[19:07.44] research with a lot of universities in
+[19:10.48] India and outside India as well and then
+[19:12.40] we realized that the research that we're
+[19:14.24] doing can translate into a product and
+[19:16.88] that's how like you know we started
+[19:19.12] building stuff. Uh Molly I met by
+[19:22.48] coincidence. Uh he his uncle was my
+[19:25.52] professor of surgery and he just
+[19:27.44] happened to be in the room while we were
+[19:28.64] discussing a project and we met in the
+[19:30.80] evening and it's not like you know we
+[19:33.36] met like you know started the startup
+[19:35.36] instantly after that it was over time
+[19:37.52] itated multiple times like brainstormed
+[19:40.96] and all three of us were gravitated
+[19:42.96] towards healthcare. Uh so that's how we
+[19:45.44] started.
+[19:45.84] >> So doctor, rocket scientist and
+[19:47.76] >> engineer.
+[19:48.88] >> Why so boring?
+[19:50.80] >> [laughter]
+[19:52.56] >> So what did you guys ideulate and what
+[19:54.64] did you start?
+[19:55.60] >> Uh so in one line we are a lowcost AI
+[19:58.80] based operating system for diagnostic
+[20:00.40] labs and we provide personalized
+[20:03.12] treatment and drug recommendations for
+[20:05.12] cancer patients. Uh for context a
+[20:08.40] radiology scan will tell you where the
+[20:10.56] problem is right but pathology will tell
+[20:13.20] you what it is and what kind of
+[20:14.80] treatment should be required by the
+[20:16.96] patient.
+[20:18.88] And uh let's take the example of breast
+[20:20.56] cancer. Once a lump is detected in a
+[20:22.56] mamogram. After that a tissue biopsy is
+[20:25.44] done, right? A tissue sample is is
+[20:27.44] extracted and a physical glass slide is
+[20:29.20] created.
+[20:30.72] And the way it is analyzed currently in
+[20:32.72] most parts of the most diagnostic labs
+[20:34.48] in the world is manually. So a
+[20:36.32] pathologist sits with his microscope at
+[20:38.16] his at his desk, places the glass light
+[20:40.00] under the microscope and studies like it
+[20:42.32] tries to interpret it. But what this
+[20:45.04] leads to is a large large amount a large
+[20:46.96] turnaround time and interpreted results
+[20:49.84] are subject to the uh expertise of the
+[20:51.84] pathologist. So if they are like an
+[20:53.68] expert in a very senior person they can
+[20:55.84] interpret in a really better manner.
+[20:58.88] Uh and also
+[21:01.52] uh most of these times the results can
+[21:03.76] be inconclusive further test could be
+[21:06.16] required. So in these cases I think what
+[21:08.96] my friend here is mentioning it's a
+[21:10.72] molecular test. So in cases where
+[21:12.64] molecular testing is required, it's
+[21:14.40] currently very expensive and limited to
+[21:16.56] like ultra elite tier one centers in
+[21:19.60] India and most people in tier 2 and tier
+[21:23.36] three cities where they reside
+[21:25.36] pathologists there may not have the
+[21:26.80] expertise to even do a first pass test
+[21:28.96] and they are forced to move to these
+[21:30.56] tier one cities carrying their blocks
+[21:32.08] and tissue slides.
+[21:34.16] Uh so what we have built is like I said
+[21:37.20] it's an operating system. So it's a
+[21:39.04] software and AI based solution which can
+[21:42.16] digitize uh glass lights and run a
+[21:45.28] algorithms on it in real time. So
+[21:47.36] basically it will capture a live feed
+[21:49.44] coming from the microscope and what
+[21:51.84] create images from that and pathologists
+[21:54.40] can run various AI algorithms to
+[21:55.92] interpret those images and this could
+[21:58.64] give a very detailed analysis so that
+[22:00.72] even a clinician could act better and
+[22:02.80] provide the right treatment or drug
+[22:04.64] therapy to that patient which will work
+[22:06.40] for him. treatment or detect the right
+[22:08.64] way.
+[22:10.08] >> So see in cancer uh as uh diagnosis proc
+[22:15.20] progresses further to recommend a proper
+[22:17.04] drug drug therapy the prop uh the
+[22:18.64] relevant biomarker needs to be detected.
+[22:20.88] So there would be a list of biomarkers
+[22:23.04] which could get activated so to say in
+[22:26.56] in breast cancer there could be like
+[22:27.84] hundreds of biomarkers and for each of
+[22:29.44] these biomarkers there's a set treatment
+[22:31.20] regimen. So I need to first understand
+[22:33.60] what kind of these biomarkers are
+[22:35.12] activated. After that I can treat that
+[22:38.00] patient and give the drug which will
+[22:39.52] work for that biomarker.
+[22:40.72] >> You're not talking chemotherapy
+[22:42.16] radiation.
+[22:42.96] >> I'll get a little technical. So like
+[22:45.04] these biomarkers are let's say expressed
+[22:46.88] on the cell. I'll give targeted
+[22:48.96] therapies that attach to that antigen
+[22:51.04] and then kill those cells. So I can't
+[22:53.52] start a treatment till the time I know
+[22:55.12] what kind of genes are getting
+[22:56.72] expressed. Very
+[22:58.24] >> interesting. I have met a few doctors
+[23:00.88] recently for specifically breast cancer
+[23:03.20] cuz somebody in my family had it.
+[23:06.32] Is it close to a cure in any way? No,
+[23:09.28] >> it will help to do the diagnosis. The
+[23:12.00] cure depends on is a drug available for
+[23:14.48] the said diagnosis or not.
+[23:16.16] >> Did you even cure AI by any chance or
+[23:17.92] like
+[23:18.16] >> No, no, cure is C.
+[23:19.44] >> Oh, okay. I thought he's talking about
+[23:20.56] cure.
+[23:20.96] >> So, it can like it's the entire
+[23:22.72] diagnosis process,
+[23:24.08] >> right?
+[23:26.00] So, you both are in diagnosis. What do
+[23:27.76] you think of her company and what do you
+[23:29.20] think of theirs? If your uh friend with
+[23:32.88] the AI girlfriend had $100 to put into
+[23:36.32] either your company or theirs, where
+[23:37.76] should he put it?
+[23:39.12] >> Uh if how is he evaluating? Does he want
+[23:41.60] to have the maximum impact? Then it will
+[23:43.68] be
+[23:44.00] >> he wants to make money.
+[23:45.36] >> Is it just the ROI thing?
+[23:46.64] >> Yeah.
+[23:46.96] >> Yeah.
+[23:47.68] >> Still us.
+[23:48.80] >> Maybe we can make the rest of the room
+[23:50.40] vote.
+[23:52.40] >> Put [clears throat] you guys on the
+[23:53.28] spot.
+[23:55.60] >> Oral cancer. Raise your hand. $100.
+[23:57.68] >> Also, we have a compression algorithm.
+[23:59.36] just putting it out [laughter] there.
+[24:02.08] >> Now you're going to be fight like five.
+[24:04.64] >> So like
+[24:05.20] >> we've done the pilot, we've had good
+[24:07.20] results.
+[24:08.00] >> Uh
+[24:08.88] >> and
+[24:09.60] >> uh we have multiple pilots with a lot of
+[24:11.60] instruments going on across India.
+[24:13.44] >> The top most in India.
+[24:14.56] >> Yeah.
+[24:15.20] >> Okay. Oral cancer votes, raise your
+[24:17.28] hand.
+[24:18.24] >> $60.
+[24:19.28] >> No, no. 100 binary.
+[24:21.04] >> Binary.
+[24:22.88] >> 100.
+[24:23.44] >> Can I go twice? 5050.
+[24:25.04] >> You can only go once, huh?
+[24:26.24] >> $100.
+[24:27.44] >> Okay. I'm noting who has not. Oh
+[24:31.20] >> the engineer, rocket scientist and
+[24:33.20] doctor.
+[24:34.56] >> So every other cancer. Yeah,
+[24:36.96] >> we making it like rodies.
+[24:38.80] >> Yeah, [laughter]
+[24:40.64] >> today feels like such a day
+[24:42.88] >> get them to Goa and then
+[24:44.80] >> Oh [laughter] yeah. uh their their
+[24:47.36] system of detecting early detection if
+[24:50.08] works then can be scaled into any
+[24:52.40] country without having a test
+[24:54.08] particularly sold on a medical store or
+[24:56.88] something which is digitization and then
+[24:58.80] algorithm will work for it while
+[25:01.52] distribution of the kits is extremely
+[25:05.12] difficult distributing software is easy
+[25:07.12] so if if you had to bet on distribution
+[25:09.44] then
+[25:11.52] >> no wonder he's popular on Twitter
+[25:13.72] [laughter]
+[25:14.64] I sat with them and like things. Well,
+[25:18.16] >> how would you say it in a viral manner?
+[25:20.48] >> Uh traction. Yeah.
+[25:22.32] >> Um
+[25:24.16] >> we uh oneliner I think we detect cancer
+[25:27.84] early and save your life.
+[25:30.96] >> So plain
+[25:33.04] that's some controversy crime.
+[25:35.44] >> We detect cancer early before your
+[25:37.28] doctor.
+[25:37.68] >> Detecting cancer is as easy as swiping
+[25:39.76] right on Tinder. again not [laughter]
+[25:45.44] >> that it's more about like all the
+[25:46.96] patients are not the same. So like uh
+[25:49.44] what we are going towards is more
+[25:51.20] personalized
+[25:52.48] >> and precision care.
+[25:54.00] >> Yeah. Both the fields are very
+[25:55.04] different. They are in personalized uh
+[25:57.12] uh medicine. Ours is more public health
+[25:59.68] oriented.
+[26:00.80] >> Yeah. Like screening is like phase one
+[26:03.20] of like even like so ideally if someone
+[26:06.48] detects whole cancer there
+[26:08.32] >> comes to us then and then we give the a
+[26:10.56] precise hystoopath diagnosis and the
+[26:13.12] treatment for and then prognosis and
+[26:15.20] everything.
+[26:15.84] >> We actually made a full story line of
+[26:17.76] how all the startups fitting together in
+[26:20.08] their journey.
+[26:20.48] >> The starting is very
+[26:21.68] >> collaboration not competition.
+[26:23.52] >> Maybe all of you can combine and build a
+[26:25.44] company. [laughter]
+[26:26.88] >> Not all of you but the four of you.
+[26:28.64] Okay. Who's next?
+[26:30.32] >> Yeah.
+[26:30.72] >> Actually these guys have been waiting
+[26:32.00] for.
+[26:32.40] >> Yeah. That's okay. Yeah. Go.
+[26:34.00] >> No, go for it.
+[26:34.96] >> Okay. So, uh hi, I am Shepto and I'm
+[26:37.76] with Shisho. We are childhood friends
+[26:39.76] and we are building a AI layer for
+[26:42.48] variables starting off with earbuds. So
+[26:45.04] imagine like you must have had like
+[26:46.64] AirPods or earbuds but all you do with
+[26:48.72] that is listening to music or take phone
+[26:50.80] calls but what if it could do more like
+[26:52.96] when you're focusing on your work
+[26:54.59] [clears throat]
+[26:55.12] there's a reminder there's an important
+[26:56.40] email it tells you right you need to
+[26:57.68] book your food it is there hey do you
+[26:59.60] want me to book a
+[27:00.24] >> it tells you while it's in your ear.
+[27:02.00] >> Yeah.
+[27:02.64] >> What about when it's not in your ear? So
+[27:04.80] uh it's meant to be uh
+[27:06.40] >> hey wait a minute my earbuds right now
+[27:09.36] speak out whatever calendar
+[27:10.88] notifications I get anyway right
+[27:12.88] >> so we are think of it like this like we
+[27:14.80] are and we are the Android for earbuds
+[27:17.28] like that like we are making all the
+[27:18.88] integration so you can order from a you
+[27:20.56] know Swiggy or Zumato you can book your
+[27:22.56] cab from a Uber so stuff like that so
+[27:24.56] you don't need to
+[27:25.60] >> Uber build that for Uber and Swiggy for
+[27:28.08] Swiggy
+[27:28.96] >> yeah so essentially these are
+[27:30.24] integrations that we are going to do
+[27:31.68] right I mean right now we are building
+[27:33.44] the integration ations but later on when
+[27:35.36] we have a like significant scale of
+[27:37.04] developers or service providers we can
+[27:39.04] go to the developers and ask them to
+[27:40.40] build on top of us. So that's the idea.
+[27:42.96] >> How is it different from a traditional
+[27:44.56] earbud?
+[27:45.60] >> Okay. So a so a traditional earbud like
+[27:47.92] a Bluetooth earbud if you speak like say
+[27:49.52] a noise or a board so you use them just
+[27:53.20] to listen to music right. So we are
+[27:54.96] going to enable them with these
+[27:56.56] facilities. That's the idea.
+[27:58.80] >> Voice or buttons?
+[28:00.24] >> It's voice. Yeah, it's voice first
+[28:02.00] because we feel uh with AI voice is
+[28:05.12] going to become the primary sort of
+[28:06.48] interface and display is going to become
+[28:08.48] the secondary interface and that is like
+[28:09.92] the most natural way of using technology
+[28:12.08] because engineers or say coders are also
+[28:14.56] now using voice to sort of vibe code. I
+[28:16.96] mean with whisper pro and all these uh
+[28:18.80] AI applications coming up for consumers.
+[28:20.80] So I think voice is going to be one of
+[28:22.56] the primary more you know sort of
+[28:24.24] interfaces.
+[28:24.88] >> So even we use that in office. So we
+[28:26.40] have stopped typing. We press two
+[28:28.24] buttons and we speak to it and it's able
+[28:29.92] to type that at a very accurate manner.
+[28:32.72] And even a lot of people what they're
+[28:34.32] doing is they're pressing the hands-free
+[28:36.40] mode. They're just talking on what
+[28:37.84] they're building and they're putting
+[28:38.72] into the air and it quotes for them.
+[28:40.08] >> The most impressive part is the
+[28:41.92] punctuation. It gets the punctuation
+[28:44.00] right. It's obviously voice to text and
+[28:46.56] they've just launched their India
+[28:48.16] specific pricing which is fairly
+[28:50.08] affordable.
+[28:50.56] >> Yeah. They also improve productivity
+[28:52.40] wherein on an average people speak
+[28:54.40] faster than they type. So your words per
+[28:56.56] minute go up because of which you can
+[28:58.32] get more output per hour. Um so in fact
+[29:01.84] I think I've been able to send out a lot
+[29:04.56] more outputs whether it be respond to
+[29:06.32] even texts or mails because of the fact
+[29:08.88] that I have whisper flow um and other
+[29:11.12] agents of sorts on my platform on my
+[29:13.60] devices.
+[29:14.32] >> What's your company called?
+[29:15.44] >> It's called antimatter.
+[29:17.68] >> There was somebody from the boot camp
+[29:19.12] who were using one of his agents and
+[29:21.20] they didn't even know that they coming
+[29:22.32] for the boot camp. Uh there's a I don't
+[29:26.32] know if I can say this out loud. There
+[29:29.04] is a cell phone manufacturer we
+[29:32.16] investors in. They're making a
+[29:37.52] on the earphones because they feel like
+[29:40.40] that limitless and all the external
+[29:42.08] things that we are putting on ourselves
+[29:44.72] are a medium which
+[29:47.52] you don't want to carry one extra thing.
+[29:49.20] You want that to happen in something you
+[29:50.88] already carry.
+[29:53.12] But then I guess one could ask the
+[29:55.60] question if this could happen why not
+[29:57.12] just the cell phone do it have it in the
+[29:59.28] earphone.
+[30:00.48] >> So essentially a cell phone is like a
+[30:03.12] secondary device like as we say like
+[30:05.28] with AI coming into the picture voice is
+[30:07.28] becoming the primary sort of interface.
+[30:08.80] You don't need to look at the screen. So
+[30:10.56] it can be secondary. It is only when a
+[30:12.64] important notification comes over
+[30:14.08] something important is there you need to
+[30:15.20] look rest can happen inside your ear. If
+[30:16.80] my cell phone is there and I'm speaking
+[30:18.24] here, can it pick up my voice and
+[30:19.84] distinguish today based on what I am
+[30:22.08] saying and you guys are saying?
+[30:23.60] >> So I think it depends on the microphone.
+[30:25.60] So in certain cell phones it can. Yeah.
+[30:27.52] >> And these AI sort of variables like you
+[30:29.36] said limitless in India there's neo
+[30:30.80] sapion. uh they're like multiple sort of
+[30:33.36] microphones in that same device to
+[30:35.20] capture multiple voices like say uh if
+[30:37.60] you're far enough or say there are two
+[30:39.76] three people in the room so they are
+[30:40.88] able to capture
+[30:41.52] >> right and like if you give the context
+[30:43.52] prior to speaking like who is building
+[30:45.92] what maybe while they're speaking uh the
+[30:48.32] it can get the context and understand
+[30:49.84] like who is speaking from which company
+[30:51.92] and then it can interpret accordingly
+[30:53.52] like it can store all the data and
+[30:54.96] whenever you want to retrieve uh it can
+[30:57.04] do it uh intelligently. So that's
+[31:00.00] >> this is assuming your earphones will
+[31:01.76] still remain the interface. Now your
+[31:03.44] meta rebands etc can also have
+[31:05.36] microphones in them and you're no longer
+[31:07.36] using your earphones at all.
+[31:08.80] >> Correct. So that's what I said like
+[31:10.40] starting off with earbuds. So the idea
+[31:11.92] is to get into multiple variables like
+[31:13.92] become sort of the default agentic OS.
+[31:16.16] So I said Android for variables or say
+[31:18.72] AI devices right that's the idea. So
+[31:20.32] yeah we also believe like smart glass is
+[31:22.48] like one of the you know uh best form
+[31:25.44] factors for ambient computing. It has a
+[31:27.28] camera. It has this kind of, you know,
+[31:28.96] speakers. Screens are also coming up.
+[31:30.72] So, yeah,
+[31:31.28] >> it's a very tough world to compete in.
+[31:33.12] >> Yeah. Correct. Have you sold any yet?
+[31:35.84] >> Uh, no. So, we are not not public launch
+[31:38.00] yet. We have not done the public launch
+[31:39.36] yet. So, we're going to do that in the
+[31:40.96] next summer in the next 6 months.
+[31:42.40] >> Right. Best of luck.
+[31:44.32] >> Yeah. Thank you.
+[31:45.92] >> Who's next?
+[31:47.52] >> Okay. So, uh I'm Rohit and
+[31:51.97] [laughter]
+[31:52.72] what happened? No,
+[31:53.60] >> she's laughing. I got confused
+[31:55.52] >> with your name.
+[31:56.64] >> Yeah, I don't know
+[31:57.76] >> what.
+[31:58.16] >> Okay. [laughter]
+[31:59.20] >> No doesn't remember anyone's name.
+[32:00.96] >> Okay. No, I remember.
+[32:02.16] >> I'm guessing the two of you are not
+[32:03.44] married.
+[32:04.32] >> No, [laughter] no, no.
+[32:05.92] >> Is it helping or hurting? Oh,
+[32:07.84] >> it's really good. It gives me a lot of
+[32:09.12] freedom to work. So, uh I'm Rohit and
+[32:13.68] I'm building company called O3 Security
+[32:15.60] and what we're trying to solve is like
+[32:18.08] everyone is scared about AI taking over
+[32:20.08] the job.
+[32:20.64] >> There's a stock broking company called
+[32:22.08] O3 Security. I know I did research. I'm
+[32:24.08] not sure. Okay. So, um, so everyone is
+[32:27.92] scared about AI taking over the job, but
+[32:30.40] the more bigger problem is about to
+[32:32.08] come. AI taking over entire company like
+[32:34.16] it will literally take down your entire
+[32:35.60] company. So, um, what we're trying to do
+[32:38.48] is we're building a entire cyber
+[32:40.56] security solution for big enterprises.
+[32:42.56] So I come from an experience of like 10
+[32:44.40] years where I uh infiltrated in a lot of
+[32:47.76] big tech companies and I helped them to
+[32:50.48] fix it and return they were paying bug
+[32:52.16] bounties. So I will give you one
+[32:54.08] example. This problem is how big it is.
+[32:56.72] Let's say if a CEO wants to improve the
+[32:59.12] security of a company, they will hire
+[33:01.20] the best talent in the industry but they
+[33:03.52] will be also limited to a specific
+[33:05.04] field. Now the second approach they will
+[33:07.44] be taking is uh taking over the best
+[33:09.92] solution like cyber security solution
+[33:11.44] like what we are building
+[33:13.20] >> challenge
+[33:13.52] >> you build this or do you take
+[33:14.80] open-source tools and label them a
+[33:16.96] certain
+[33:17.28] >> that's the best part we build this I
+[33:18.72] will tell you like what are our
+[33:20.16] >> cap we were reviewing a cyber security
+[33:22.08] company and they were
+[33:24.08] >> franchising Pegasus the attack mode for
+[33:26.88] $500,000 or whatever and they were
+[33:29.12] calling it cyber security
+[33:31.28] >> most large companies end up going to
+[33:33.20] something like a cloud flare right so
+[33:35.68] when you say you're building something,
+[33:37.28] how is it different from the incumbents?
+[33:39.68] Okay. So, uh what we do is firstly most
+[33:42.80] of these companies are point solutions.
+[33:45.28] For example, uh let's say so uh my
+[33:48.16] biggest problem right now in this
+[33:49.44] industry everyone is taking their own
+[33:50.80] place in cyber security. For example,
+[33:52.64] someone will do we will do cloud
+[33:54.40] security. Someone will do endpoint
+[33:56.56] security of the laptop. Someone will do
+[33:58.72] let's say source code security. But for
+[34:00.56] a CTO and CISO, the problem is are we
+[34:04.48] secure? Because CEO and board will ask
+[34:06.24] are we secure or So you're putting
+[34:07.84] everything together in
+[34:08.72] >> so we are putting everything together
+[34:09.84] but what we're trying to focus on is it
+[34:11.92] shouldn't reduce the quality. So at the
+[34:13.68] end of the day even if you take the one
+[34:15.28] part of a product and compare with the
+[34:17.28] best in the breed we should perform
+[34:18.80] well. So I'll give you one example. So
+[34:21.28] we are the single company in the world
+[34:23.36] which can help RBI and semi-regulated
+[34:25.68] company in getting compliant with recent
+[34:28.32] certain mandate and RBI mandate. For
+[34:31.20] example, there has been recent
+[34:33.12] circulation like where you have to uh
+[34:36.00] you need AI bill of materials, software
+[34:38.40] bill of materials, cryptography bill of
+[34:40.32] materials and we are already working
+[34:41.84] with some of the biggest bank in India
+[34:44.08] and the things are moving very fast
+[34:45.92] because the problem is what I have seen
+[34:47.60] from my experience
+[34:49.04] >> that
+[34:49.60] >> you still not explained how you're
+[34:50.96] different till now all I've got is we do
+[34:53.68] everything not just one thing.
+[34:55.12] >> Okay. So first what we are trying to
+[34:56.40] focus on the two aspects only all of the
+[34:58.64] cyber security solutions are focused on
+[35:00.08] some specific technologies. So we are
+[35:02.08] first building the technology. Cyber
+[35:03.52] security is one of our application which
+[35:05.20] we will be going very deep. For example
+[35:07.84] uh you can break entire industry in two
+[35:09.76] parts. One is static. What means is like
+[35:12.56] what data you are having in your company
+[35:14.56] like it's just there another is runtime
+[35:16.56] like how things moves very fast every
+[35:18.40] second or every minute. What we're
+[35:20.16] trying to do is we're trying to go very
+[35:21.76] very deep and understand both aspects
+[35:24.16] with AI or without AI. Why we do that?
+[35:26.88] Because
+[35:27.44] >> again digressing too much. Yeah.
+[35:29.04] >> What do you do?
+[35:30.64] >> Okay. So we secure end to end supply
+[35:32.40] chain of entire company.
+[35:33.60] >> And how are you different?
+[35:35.20] >> So we know the context. For the example,
+[35:36.96] let's say you are thinking about we want
+[35:38.88] to build this specific feature where
+[35:40.40] user wants to purchase something. Okay.
+[35:42.32] But the moment it goes out to the
+[35:43.68] production, 100 engineers coded it. 12
+[35:46.08] managers got involved. It went through a
+[35:48.08] lot of checklist. Okay. Now nothing is
+[35:49.92] connected here. Okay. One security
+[35:51.92] issues could be there and another team
+[35:53.36] will tell we don't take this serious
+[35:55.44] because this is a false positive. So we
+[35:57.68] reduce lot of false positive based on
+[35:59.76] the context. These context gets built
+[36:02.08] because we are very very deeply
+[36:03.44] integrated across the entire stack.
+[36:05.84] That's integration is not available
+[36:07.52] right now in any company. This is the
+[36:10.00] main problem.
+[36:10.40] >> So context and integration is your
+[36:12.72] >> Yes.
+[36:13.28] >> Are you live?
+[36:14.16] >> Yes, we are live. We are already working
+[36:15.60] with some of the biggest fintech
+[36:16.72] companies in India. We all are using
+[36:18.24] those apps.
+[36:18.96] >> And you're already getting revenue and
+[36:20.16] all.
+[36:20.40] >> Yeah, we are already generating revenue
+[36:22.08] also.
+[36:22.48] >> Good amount of revenue.
+[36:23.76] >> It's good. It's pretty good. like within
+[36:25.68] last 5 months we build pretty good. So
+[36:28.32] we uh have right now close to $80,000
+[36:32.40] and uh we are working with few banks and
+[36:35.36] we are hoping probably in few months we
+[36:37.76] will hit we may cross 500k because these
+[36:40.88] deals will be pretty good. So we are
+[36:43.04] making revenue but the best part what
+[36:44.72] I'm thinking right now is like we are
+[36:46.32] not focused on what we are building
+[36:47.60] right now. That's like pretty normal. We
+[36:50.16] are going very deep into the contextual
+[36:51.84] way because that's what I told like uh
+[36:54.16] the problem with the entire cyber
+[36:55.68] security industry is like if entire
+[36:58.00] industry just focus on
+[36:58.96] >> the problem with cyber security industry
+[37:00.48] in my opinion is 80% is a scam.
+[37:03.09] [laughter]
+[37:03.84] >> Yeah.
+[37:04.48] >> Everybody's white labeling the same
+[37:05.92] thing in
+[37:06.80] >> I understand. So I will give you one
+[37:08.16] very interesting example the white
+[37:09.36] labeling. So um there's a very famous
+[37:12.32] product in the open source industry and
+[37:14.72] uh most of the cyber security industry
+[37:16.56] like cyber security company you will see
+[37:18.24] they all are using that opensource
+[37:19.76] product on top of it. Okay and these
+[37:22.32] companies are some of the well-known
+[37:23.60] cyber security companies and these are
+[37:25.04] integrated in all top companies in India
+[37:26.96] and US. So what I did was I was able to
+[37:29.84] take over that open source component and
+[37:32.24] I was inside every company all top 500
+[37:35.36] companies all top 10 companies of the
+[37:36.96] India and this was live for 4 hours and
+[37:39.04] no one knew about this one. So the point
+[37:41.20] is the industry is very very much
+[37:43.20] dependent on a open source solution
+[37:45.04] which they don't even control. So the
+[37:47.36] point is I'm trying to make is like this
+[37:50.24] industry is mostly made by the peoples
+[37:52.64] who are not like from the cyber security
+[37:54.96] background
+[37:55.52] >> right. So what I want to do is like
+[37:57.44] people should be making a business where
+[37:59.04] they have long experience. They should
+[38:01.20] face the problem. So that's why like I
+[38:04.08] was working with my last employer like
+[38:06.72] uh
+[38:06.96] >> who was your last employer?
+[38:08.24] >> So I was working with grow before and
+[38:11.60] >> why did you quit? They're amazing lovely
+[38:13.76] guys.
+[38:14.24] >> So before joining grow I had this
+[38:15.84] discussion with chief of security of
+[38:17.44] grow and uh grow people helped me a lot.
+[38:19.84] So basically before joining grow I was
+[38:21.76] building this idea I was thinking about
+[38:22.96] this idea and there was a topmate link
+[38:25.36] in his profile I just booked a call like
+[38:27.52] can you give me the feedback and he told
+[38:29.28] me one thing why don't you just
+[38:30.72] understand the problem firsthand then
+[38:32.24] build it so that's where everything
+[38:34.40] started and I worked for two and a half
+[38:36.48] years there I scaled their entire appsec
+[38:39.44] cloud sec and I understood what problems
+[38:41.20] they are facing and throughout that
+[38:42.96] entire time I gave a lot of training
+[38:44.96] session to thousands of engineers across
+[38:46.72] different countries so I understood one
+[38:48.72] thing
+[38:50.00] Most I I will tell like this entire
+[38:51.84] industry is easily solvable only the
+[38:53.12] thing is you need right players together
+[38:54.56] to solve this one instead of just making
+[38:56.56] money out of it like making money is
+[38:58.32] also important but it should be like
+[39:00.24] yeah byproduct like this is what I think
+[39:02.48] right now
+[39:03.12] >> okay thank you who's next
+[39:05.44] >> hi I'm Prashant and along with Abhishek
+[39:08.16] we are building rehabilitation robots to
+[39:10.64] help neuro patients recover
+[39:12.24] independently at their own homes so the
+[39:15.52] problem uh we are solving is that
+[39:18.88] So there are three main ways in which a
+[39:20.64] neuropatient can get rehabilitation
+[39:22.32] right now. Either he can opt for at home
+[39:24.40] rehabilitation where a physotherapist
+[39:25.92] comes home gets 45 minutes of rehab and
+[39:28.00] then he goes back. The second is you
+[39:30.16] take the patient to the clinic and then
+[39:32.56] get your rehabilitation for 2 hours or 3
+[39:34.40] hours come back. And the third option is
+[39:36.72] you leave the patient at the care
+[39:40.16] facility which is going to cost you 2 to
+[39:41.76] three lakhs per month. Right? So this
+[39:44.00] option is not feasible for a lot of
+[39:45.84] stroke patients. The reason is that
+[39:47.60] Indian medical insurance companies most
+[39:49.36] of them do not cover for stroke rehab.
+[39:51.60] So this uh also taking a patient
+[39:54.48] >> it feels like half of the problems today
+[39:56.24] are like things I've had experience with
+[39:58.56] recently. [laughter]
+[40:00.32] >> Go on.
+[40:01.20] >> Yeah. So also taking the patient from
+[40:03.84] home to the clinic is a lot of hassle
+[40:06.00] for the caregiver because you need two
+[40:08.16] people first of all and you have to put
+[40:09.84] them in the car. you had to stay with
+[40:11.52] them in the traffic and even when you go
+[40:13.04] to the clinic you're not really sure if
+[40:15.04] the therapist is available to service
+[40:17.60] the patient right so yeah the only
+[40:21.28] option which is left which is financial
+[40:23.84] financially it makes sense for a lot of
+[40:25.84] people is getting the physiotherapist to
+[40:27.76] your house but in that case what happens
+[40:30.08] is that they don't have the equipment
+[40:31.84] with them and also a physiotherapist can
+[40:33.92] give 45 minutes max after that he's
+[40:35.92] tired and he has to go back right so the
+[40:38.48] gold standard for rehab is like 3 hours
+[40:40.40] But most people are getting just 45
+[40:41.84] minutes. By having an affordable and
+[40:44.56] portable rehabilitation solution, we are
+[40:47.20] aiming to pump up the number from 45 to
+[40:49.92] 3 hours. And
+[40:50.72] >> and what does this look like?
+[40:52.72] >> We do have a demo video. Uh let me just
+[40:55.68] give him example.
+[40:57.68] >> On the screen.
+[40:58.64] >> Yeah, sure. So we have a robot of size
+[41:01.36] like bridge height and it has a robotic
+[41:04.32] arm attached to it uh similar to our
+[41:06.88] hand and that robotic arm holds a
+[41:09.76] patient hand. Okay. So the physotherapy
+[41:12.64] sets the motion of how to do the rehab
+[41:15.12] process and the machine imitates that
+[41:17.84] exact motion
+[41:19.36] >> x number of repetitions as per the the
+[41:21.60] settings set by the phys therapist.
+[41:23.12] Thank you. [laughter]
+[41:25.12] >> Thanks for the free massage.
+[41:27.68] >> Very interesting. and tell us a little
+[41:29.84] bit more.
+[41:31.04] >> So, so what next?
+[41:33.12] >> Currently, we are creating a third
+[41:35.36] iteration of our robot which will be
+[41:37.04] >> is it treating anybody already?
+[41:38.88] >> So, we tested this out on three actual
+[41:40.96] neuro patients but right now we don't
+[41:43.04] have the license yet to put it uh you
+[41:45.20] know mass manufacturing stuff.
+[41:46.40] >> Who gives this license?
+[41:47.60] >> CDSO. So, that's the government entity.
+[41:50.64] >> And what is the company called?
+[41:52.00] >> Bloom Rehab.
+[41:52.96] >> Bloom Rehab.
+[41:53.92] >> Nice.
+[41:55.20] >> Yeah. You're the last ones, huh? Uh,
+[41:57.52] second year.
+[41:58.08] >> Uh, I thought you guys are together.
+[42:00.16] >> No, I'm a solo founder.
+[42:01.44] >> Yeah. Why is that?
+[42:03.04] >> Uh,
+[42:05.12] >> I don't know. I mean, uh, I've been
+[42:07.20] building stuff since I was a I was 16
+[42:10.32] years old, 15 year old
+[42:11.52] >> alone all the time.
+[42:12.48] >> Yeah.
+[42:13.36] >> Single child.
+[42:14.32] >> Yes.
+[42:16.64] >> So, uh, I've been building stuff and
+[42:18.96] then because I was building it myself
+[42:21.12] and it's hardware. So, I've always been
+[42:23.20] working with machines, electronics
+[42:25.12] usually. Uh
+[42:26.00] >> what do your parents do?
+[42:27.28] >> So my dad works in college where I
+[42:29.44] studied actually kumachani engineering.
+[42:31.44] It's in Mumbai. It comes under Mumbai
+[42:32.80] University. Uh there were story why I
+[42:35.44] chose that college particularly. I
+[42:37.12] >> because your dad works.
+[42:38.16] >> No. Yeah. Exactly. But uh I mean not
+[42:41.12] because I couldn't get the admission. I
+[42:42.80] cleared my JW exams. Um and I wanted to
+[42:46.08] do electronics and robotics. I after
+[42:48.40] researching on it I realized um in India
+[42:52.48] we produce a lot of software engineers
+[42:54.64] and there's a reason to it because
+[42:56.32] investment per student for a college is
+[42:58.16] like one computer you can learn a good
+[43:00.40] amount of programming languages on one
+[43:01.84] computer and in last per four year so
+[43:04.40] ROI on investment for a soft college to
+[43:06.72] generate software engineers is pretty
+[43:08.80] pretty high but if you take it now
+[43:10.56] electronics and robotics you have to
+[43:12.00] provide motors you have to provide power
+[43:13.44] supplies and they'll probably break
+[43:14.80] because students don't know how to use
+[43:16.00] it and What happens in this case is
+[43:18.32] college don't promote it. If you see how
+[43:20.00] many things in your uh home or in your
+[43:22.32] circle are hardware products are made in
+[43:25.20] India electronics
+[43:27.20] extremely less very less amount of bank
+[43:29.04] you'll probably like pop up right away
+[43:30.96] and uh this is the reason where India
+[43:32.64] doesn't produces a lot of electronics or
+[43:34.40] hardware where uh which shaped me to
+[43:37.68] shaped me to I want to learn electronics
+[43:39.28] and robotics on by myself. So I was
+[43:42.40] getting an idea upward but uh we I had
+[43:45.12] to have attendance. You had to attend
+[43:47.36] lectures. You had to go and sit for
+[43:49.76] finish assignments and everything but uh
+[43:52.80] uh punishment at my dad's I mean he said
+[43:55.44] college board was if you're not if your
+[43:57.52] attend is less then call your parents
+[43:59.84] and my dad was already there but I
+[44:01.52] didn't go to college and studied
+[44:03.36] electronics and robotics myself. So I'm
+[44:04.88] a self-taught electronics and robotics
+[44:06.40] engineer. my degree is in software and
+[44:08.80] uh I built so I always work in terms of
+[44:12.16] uh solving problems so uh uh I stay a
+[44:15.68] little bit far from where my college is
+[44:17.52] college in Bandra so we had to attend
+[44:19.60] lectures in morning 8:00 a.m. that to
+[44:21.52] reach at 7:00 a.m. station, wake up at
+[44:24.00] almost 6:00, take a train and then stand
+[44:26.16] in an auto line, which annoyed me a lot.
+[44:28.72] And at that point of time, I was I was
+[44:30.96] uh inspired by this YouTuber called
+[44:32.40] Casey Neistat who would roam around New
+[44:34.08] York in on a electric skateboard. So
+[44:36.56] like I'm an engineer. I should solve
+[44:38.24] this problem. So I made what? I made an
+[44:39.84] electric skateboard. I had a wireless
+[44:41.20] remote in my hand where it was like a
+[44:42.80] ring where if you move it ahead, it'll
+[44:44.72] go ahead and if you pull it back, then
+[44:46.48] it'll break. So uh I would roam around
+[44:48.96] Mumbai on electric skateboard all the
+[44:50.56] time. So yeah. So that is where I earned
+[44:53.28] money first time because I sold the
+[44:54.80] electric skateboard. I made it 35k and
+[44:56.64] then I sold it at 80k
+[44:58.24] >> and that was the first amount of money
+[44:59.68] where 17 year old 16 year old me was
+[45:01.44] like oh you can earn money
+[45:03.04] >> by doing something that you like.
+[45:05.60] >> Are you telling me your accomplishments
+[45:08.72] and how hard it has been for you because
+[45:10.88] you're hiding your insecurity of
+[45:12.40] something
+[45:12.88] >> little bit
+[45:13.44] >> of what?
+[45:14.64] >> Uh I don't know. I mean uh am I good
+[45:17.28] enough to build at global scale
+[45:20.24] something like that and the money is
+[45:21.68] kind of a validation so I've been
+[45:24.08] building products so that I can validate
+[45:25.76] myself oh people are buying some
+[45:27.36] >> if that were the case you would have had
+[45:28.56] a co-founder right somebody you think is
+[45:30.24] smart
+[45:31.20] >> uh the thing is um the objective as a as
+[45:34.72] like for a startup if you see generating
+[45:36.96] money one of the top things uh providing
+[45:39.92] the top why why being a solar power
+[45:43.04] >> uh I think everything was working the
+[45:45.60] the need to let's say I'm bad at sales
+[45:48.40] so I need a co-founder for sales. Let's
+[45:50.32] say if I'm bad at building a product
+[45:51.84] then I need a co-founder to build a
+[45:53.36] technical product. Um
+[45:56.32] somewhere somewhere I think I had some
+[45:58.72] little bit of skills in everything. I
+[46:00.00] was a good salesman. I was a I I could
+[46:02.40] build products myself. So I think the
+[46:04.72] need of having a
+[46:07.76] founder of having a person of having a
+[46:10.08] core
+[46:10.40] >> do you feel empathy? Do you feel bad
+[46:12.24] when something bad happens to someone
+[46:14.32] >> deeply?
+[46:15.20] >> No.
+[46:15.68] >> Superficially.
+[46:16.80] >> I mean uh I do have empathy but uh
+[46:19.84] >> you have curiosity.
+[46:20.80] >> Yes. A lot.
+[46:22.80] >> My therapist I was doing a session and
+[46:24.80] very interesting points came up. We went
+[46:27.44] like first principles into life. What is
+[46:30.40] a human being? What are values? Are they
+[46:34.00] nature? Is it nurture? Do we pick what
+[46:37.28] works in the world we live in? And hence
+[46:39.20] we say we attribute those values to
+[46:41.76] ourselves.
+[46:43.44] And the one thing we realized is if you
+[46:46.48] don't feel empathy and you don't have
+[46:48.88] curiosity like actual curiosity. We all
+[46:51.92] fiend curiosity because it's good in the
+[46:53.84] world we live in. Those are like sure
+[46:56.32] shortsh shortsh shortsh shortsh shortsh
+[46:56.32] shortsh shortsh shortsh shortsh shortsh
+[46:56.40] short signs of a narcissist. No empathy
+[46:59.36] no curiosity. When something bad happens
+[47:01.52] to someone you're like yeah he deserves
+[47:03.28] it.
+[47:04.64] >> Where did you land on the nature versus
+[47:06.56] nurture debate? cuz it's something all
+[47:07.92] of us have been talking about.
+[47:08.72] >> Yeah. So she asked me who are you as a
+[47:10.56] person and I tried to define it and we
+[47:15.20] went back into childhood and we both
+[47:18.16] kind of agreed. So me and my therapist
+[47:20.56] are like friends. Okay. This is not so
+[47:22.40] much about treating me or fixing
+[47:24.24] something. Not that I don't require it.
+[47:26.00] I do. Uh but it's about trying to figure
+[47:28.88] out how we kind of became who we are.
+[47:33.76] And whenever I've seen a child, kids are
+[47:37.12] very mean. Uh if I'm a child and I want
+[47:39.84] the ice cream you're eating, I would
+[47:41.68] probably snatch it from you and eat it.
+[47:44.00] So we not born with this sense of
+[47:46.08] morality. It is kind of ingrained in us
+[47:48.40] through life because we learn that if I
+[47:51.12] sm snatch his ice cream, somebody will
+[47:52.96] slap me and then the next time I should
+[47:54.64] not. So nature versus nurture definitely
+[47:58.48] nurture more.
+[48:01.44] But this is an exercise which is a great
+[48:03.52] thing to do like figure out go on chat
+[48:06.56] GPT or perplexity or Google and say what
+[48:09.76] are the most popular values value
+[48:13.04] systems and then try and read each one
+[48:16.16] out. Think about it and attach one to
+[48:18.16] yourself
+[48:20.16] and then think am I that way and I
+[48:22.80] resonate with that value because it
+[48:24.48] showed me that I can win in the world
+[48:27.12] that I live in or is it that I feel
+[48:29.84] deeply about that I'm organically that
+[48:32.00] person. I don't have the answer but it
+[48:33.76] was just something interesting I'm
+[48:36.24] thinking about. Do you do you think same
+[48:38.24] for talent as well like uh is the nature
+[48:40.48] and nurture attribute or it's the
+[48:42.48] naturally someone born with about
+[48:44.88] talent?
+[48:46.32] >> I don't think there is there is
+[48:48.64] something to be said about passion.
+[48:51.36] Uh
+[48:52.88] whatever you think you're really
+[48:54.24] passionate about say AI girlfriend for
+[48:56.00] example I was saying it [laughter]
+[48:57.84] you're sitting next to me. I feel like
+[49:01.52] there is some unanswered question in
+[49:04.08] your mind about the concept of love,
+[49:07.84] relationship, girlfriend, all of that.
+[49:10.32] That's why you still have a passion
+[49:11.84] towards it. When you truly understand a
+[49:15.28] particular subject, it becomes hard to
+[49:17.04] be passionate about it.
+[49:19.44] I don't think talent is innate. Uh
+[49:24.96] let me put it this way. If I had a
+[49:26.56] child, which I do not,
+[49:29.52] and
+[49:31.28] there was a football coaching camp where
+[49:33.84] kids go when they were 5 years old, if
+[49:36.88] all the kids are five, and I send my
+[49:39.20] child into that coaching camp when the
+[49:41.28] child is seven or seven and a half, by
+[49:44.80] virtue of his physicality, he will start
+[49:47.68] to be better than his peer group from
+[49:49.60] the very beginning. they will start to
+[49:51.84] believe that he's talented at football
+[49:53.60] and probably grow up to be a talented
+[49:55.44] footballer.
+[49:57.28] But is there something to be said for
+[49:59.44] physical attributes? Probably. Yeah.
+[50:01.44] Like
+[50:03.04] some Nigerians have long feore bones so
+[50:06.24] they run marathons better. Yeah, there
+[50:08.00] is stuff like that. But I don't make too
+[50:10.80] much of talent, intelligence.
+[50:14.32] I think a lot of this is gathered,
+[50:17.12] collected, inculcated.
+[50:19.28] I don't think anybody's born, not
+[50:22.00] anybody, but most people are not born
+[50:25.36] spectacularly gifted at something. So,
+[50:28.16] we got to your life, but you took too
+[50:30.56] long to come to what your company does.
+[50:32.24] So I bring factories on your desk where
+[50:34.48] I make machines to to make electronics
+[50:38.16] at your home on your desk where um
+[50:41.28] usually if you if let's say I'll give
+[50:43.76] you an analogy if you now Delhi is very
+[50:46.16] polluted and if you are if you are
+[50:48.32] somebody who wants to make some profit
+[50:50.40] ideal product to launch at this moment
+[50:52.32] would be air quality sensor. Now if you
+[50:54.56] had to make it as nickel your ideal goal
+[50:57.52] would be to go to an electronics
+[50:59.28] designer get it designed uh case work
+[51:01.52] case and everything and then to make it
+[51:04.24] uh you would have to ideally have to go
+[51:05.84] to some contract manufacturer to make
+[51:07.36] whatever you design.
+[51:08.24] >> Yeah.
+[51:08.48] >> Now he will tell you that I need 5,000
+[51:10.16] units minimum so that I can make margin
+[51:11.76] on it.
+[51:12.08] >> So if I call you and I say I want a AQI
+[51:14.08] machine which looks like ABCDE E. You'll
+[51:16.00] make it.
+[51:16.48] >> No, you no I don't I don't make the air
+[51:18.80] quality sensor. I don't design the
+[51:20.24] devices. I make the machines to make air
+[51:22.08] quality sensors. So let's say uh now you
+[51:24.56] now your design is ready with my machine
+[51:26.56] you can make 100 you can make 200 test
+[51:28.40] the waters what are the people
+[51:29.84] >> what is your machine describe it
+[51:31.36] >> so in theory the technical term is pick
+[51:33.44] and place where there are green circuit
+[51:34.96] boards have you seen it ever so on
+[51:36.96] circuit board there are IC's so uh
+[51:39.28] somebody needs to pick these IC's and
+[51:41.12] place it on the PCBs printed circuit
+[51:43.04] boards and then uh they are cooked in an
+[51:45.60] oven and then you can start using them I
+[51:48.16] make the machine which will pick the
+[51:49.52] component place it on the circuit board
+[51:51.12] and then I make an oven also So, and
+[51:53.28] it's all sitting on a small desk which
+[51:55.76] uh which helps people launch small to
+[51:58.08] midscale production. So, if uh you are a
+[52:00.88] new startup doing a hardware, this is
+[52:02.72] the perfect solution to try your product
+[52:05.44] rather than having 5,000 units and
+[52:07.20] because startups are usually iterating
+[52:09.04] fast and uh that iteration time goes a
+[52:12.80] really less. Uh for software engineer,
+[52:15.04] if you're making a website, then you
+[52:17.44] coded HTML code and then you can see the
+[52:19.12] website in the next second. But for an
+[52:21.20] electronics engineer or a hardware
+[52:22.56] developer,
+[52:23.44] >> you have to send after designing the
+[52:24.96] PCB, you have to send it to the
+[52:26.88] fabricator who will who will get the PCB
+[52:29.36] and then uh you can start at least
+[52:31.68] testing. If it is uh if the design has a
+[52:34.00] mistake at that point of time, you have
+[52:35.60] to do the whole process again. So it's
+[52:36.96] like 1 2 months. Now I'm my my goal uh
+[52:40.00] as a company is to bring that iteration
+[52:41.84] time down to one day. Within a one
+[52:44.32] within one day almost matching to
+[52:45.84] software development, you can get the
+[52:47.60] output of your work right away. So that
+[52:49.52] produ overall collective production can
+[52:51.68] be faster, iteration could be faster and
+[52:53.68] production also.
+[52:55.44] >> So that is what I do.
+[52:56.16] >> And what is the company called?
+[52:57.44] >> PlayStation.
+[52:58.32] >> Nice.
+[52:58.88] >> Place PLA CE. So pick and place Play
+[53:01.04] PlayStation.
+[53:02.32] >> We used to make smart switches. And one
+[53:04.40] of the comments we made when we walked
+[53:05.84] into your house was your switchboards
+[53:07.84] retrofitted. Not done very well.
+[53:09.76] >> Yeah. So uh so the light doesn't go off,
+[53:13.44] you know, in the night, the white light,
+[53:14.88] it's so annoying.
+[53:15.68] >> Oh yeah. [laughter] Like the light on
+[53:18.00] the switch. Uh so basically how did I
+[53:20.64] come how did why did I want to make this
+[53:22.48] machine led to my the first thing that I
+[53:24.72] started with after college was a smart
+[53:26.32] home startup where I was doing smart
+[53:28.16] switches and smart lights. Uh I was
+[53:30.40] making a device that sits behind a
+[53:31.84] switchboard and anything on that
+[53:32.96] switchboard becomes smart. Now I see you
+[53:34.72] love art right but the switches are very
+[53:36.48] dull like they don't look pretty good
+[53:38.56] but with my devices you can use any type
+[53:40.64] of switches the most artistic that you
+[53:43.44] would want to have grab attention and
+[53:45.44] then my device would still sit behind
+[53:46.80] the switchboard and you can use any
+[53:48.32] switches that you want the best part is
+[53:51.04] if your internet is not working Wi-Fi or
+[53:53.84] your whoever you purchased it from stops
+[53:56.16] paying for the server or when they go
+[53:57.92] down all the switches will stop
+[53:59.44] functioning because it's all over the
+[54:00.80] internet my startup was working
+[54:03.44] Everything works without the internet
+[54:04.96] and I'm the only one in India where you
+[54:07.12] can use Siri. You can say hey Siri turn
+[54:08.88] off lights and it'll do it and Google I
+[54:11.12] don't have my own app. I integrate
+[54:12.48] directly as first party devices into
+[54:14.64] Google Alexa Samsung smart things. I see
+[54:16.80] you are using Samsung directly. You
+[54:18.96] don't need my app. I also don't have my
+[54:21.60] app.
+[54:22.24] >> Interesting.
+[54:23.36] >> So my name is Sahil.
+[54:24.64] >> You've not said a word today.
+[54:26.88] >> Yeah. So actually
+[54:28.40] >> you know how this works right? Whoever
+[54:29.84] sees the most viral gets the most sales.
+[54:33.84] Yeah,
+[54:34.16] >> attention is equal to virality in this
+[54:36.16] room right now.
+[54:39.12] >> So, think of the most contrarian thing
+[54:41.44] you can think of saying and say it in
+[54:43.20] the next 20 minutes.
+[54:46.40] >> You have a very nice expression like
+[54:48.56] your resting face.
+[54:50.24] >> The doctor.
+[54:51.84] >> Yeah.
+[54:52.96] >> It's a look of circumspection which is
+[54:56.80] >> like I know.
+[54:59.27] [laughter]
+[55:01.04] I mean, I'll take it as a compliment,
+[55:03.44] man.
+[55:03.76] >> It is a compliment.
+[55:04.56] >> Okay.
+[55:06.72] >> You look wise
+[55:09.20] >> beyond your years.
+[55:10.24] >> I'm probably the youngest one here.
+[55:12.24] >> Yeah. You look quite wise, though.
+[55:13.68] You're very settled.
+[55:15.20] >> Thanks.
+[55:16.32] >> Doesn't look like you're trying too
+[55:17.52] hard.
+[55:19.04] >> I never do. So,
+[55:20.24] >> yeah. Very settled and composed in your
+[55:24.08] own shoes.
+[55:26.08] >> That's what I go for.
+[55:27.36] >> Are you starting to feel awkward about
+[55:28.88] now? [laughter]
+[55:29.60] >> No. See that's where I'm going to go.
+[55:32.32] >> So I'm Sah.
+[55:33.28] >> I'm building I with my co-founder. So we
+[55:35.52] are building I where we are making the
+[55:37.60] existing CCTV surveillance into a smart
+[55:41.28] AI uh security guard.
+[55:43.60] >> Mhm.
+[55:44.16] >> So let's let's take an example. So if we
+[55:46.56] have installed a CCTV on the corridor.
+[55:48.72] >> Yeah.
+[55:49.28] >> And let's suppose in any case someone
+[55:52.00] falls down and there is no one around
+[55:54.16] him. So what the traditional CCTV
+[55:57.36] surveillance will do? It will just
+[55:58.64] record the data and that's it and you
+[56:01.20] will got to know about it later. But
+[56:03.52] what we actually do, we actually
+[56:05.36] understand the complete context of that
+[56:07.76] video frame and in any case uh if there
+[56:10.80] is any kind of emergency or risk or any
+[56:13.36] kind of you know uh uh thing that can
+[56:16.88] harm you in terms of uh life in terms of
+[56:19.76] money. So it will create a alert on your
+[56:22.56] mobile application
+[56:23.92] >> with the context with the image so that
+[56:26.40] you can take action. So our main goal is
+[56:28.80] to uh reduce the time between the uh
+[56:31.28] incident has happened and you taking uh
+[56:33.84] uh you taking some action. So we are
+[56:35.60] reducing that uh time so that we can
+[56:38.00] save lives, we can uh uh secure the
+[56:43.12] places, we can secure the persons and uh
+[56:46.24] whatever actually matters to you. So we
+[56:49.52] initially implemented uh this idea
+[56:51.76] because of a personal incident to us. So
+[56:54.72] my co-founder uh he was working in uh
+[56:57.52] Bombay 2 years ago. So uh he lives with
+[57:00.48] his grandmother. So when he was in
+[57:02.72] Bombay and she was she was living living
+[57:04.96] in Japur. So uh he faced a such incident
+[57:08.48] where she fell down by uh impacting with
+[57:12.48] sofa and he got to know about it later
+[57:15.44] and then he thought and uh he discussed
+[57:17.60] with me
+[57:20.24] like what is a sense of CCTV. Then then
+[57:23.20] uh we we sat and we discussed all right
+[57:25.20] so let's do it and about our background
+[57:27.92] so from last 7 to 8 years we were
+[57:30.24] building some good AI products for
+[57:32.56] multiple companies so so this is this is
+[57:35.44] our main technical expertise in genai
+[57:38.56] and machine learning so we have built
+[57:40.32] this product
+[57:41.60] >> super and what is your company called
+[57:43.68] >> I
+[57:45.44] nice so I think we did everybody's
+[57:47.61] [music] story
+[57:49.28] is there anything you guys want to talk
+[57:56.24] I want to ask you asked everybody are
+[57:59.12] you married or not to everyone.
+[58:02.56] >> I said virality and this is what you
+[58:04.24] meant.
+[58:04.80] >> No no no no. So I want to ask do you
+[58:07.12] think that is one of the factor or maybe
+[58:09.36] indicator or somehow how does that
+[58:11.84] impact the entrepreneurship journey that
+[58:14.08] we are on because that is the hot topic
+[58:16.24] in my family right now. every dinner
+[58:18.40] table conversation surrounds it like I
+[58:21.04] for context I come from a very
+[58:22.56] traditional Jart family in Hana in that
+[58:25.28] everyone my age is married with a kid in
+[58:27.52] our family so and I'm trying to stay
+[58:31.12] like push that thing like let me let me
+[58:33.44] do my work but you have asked that
+[58:35.20] question to everybody do you think that
+[58:36.64] is maybe with your words I can convince
+[58:38.40] them better
+[58:38.96] >> I lived in Hana you know 3 years when I
+[58:40.88] was a kid
+[58:42.64] >> ah
+[58:43.28] >> I went to Dal Singh public school in
+[58:45.12] Karna I'm still in touch with a few
+[58:47.44] people from there. They were quite
+[58:49.84] sweet. Thank you.
+[58:52.80] But I don't know the answer to this. I
+[58:54.32] think generally in life
+[58:57.52] if you live your life based on what
+[58:59.60] other people think you should do,
+[59:02.80] I think eventually you end up at a point
+[59:05.04] when you regret it at some point. So
+[59:08.08] unless you want to do it, I don't think
+[59:09.84] you should be too fussed about what your
+[59:12.72] society,
+[59:14.32] family or community thinks. even family
+[59:16.56] like other people say like oh who guess
+[59:18.72] but if it's your like parents
+[59:21.84] >> them
+[59:22.32] >> you know I was thinking about this
+[59:23.60] recently I'm 39 years old
+[59:26.64] and some friends of mine were like new
+[59:28.64] years you should do this you should do
+[59:30.32] that and I was not making any plans
+[59:34.80] and then while I was thinking about it
+[59:37.28] at 39
+[59:39.76] an average Indian lives to 73 I probably
+[59:43.84] have 34 four new years left.
+[59:47.92] In 34 New Year's,
+[59:50.88] I probably have 20 of them where I'll be
+[59:53.12] too old to do the things I can do today.
+[59:56.56] So, practically, I don't have that many
+[59:59.76] December 31st left in my life, you know,
+[60:02.72] good ones in the manner that I perceive
+[60:06.24] good today. I only probably have like 10
+[60:09.28] if I were to be pushing it.
+[60:11.44] >> Maybe more since you do keep check of
+[60:13.44] your health. Yeah. Yeah.
+[60:15.28] >> Compared to average in
+[60:17.04] >> Yeah. And when we have so little time,
+[60:20.40] you have a bit more than I, but
+[60:23.68] I it feels stupid to do things because
+[60:26.96] others want us to do it
+[60:30.40] cuz our time is very finite. We never
+[60:32.48] think about it that way, but we're not
+[60:35.28] going to live forever. Nobody is. And
+[60:38.48] you also think like relationship in
+[60:40.00] general is tricky for entrepreneurs like
+[60:42.16] uh say like entrepreneurs think very
+[60:44.32] differently like I can see a very
+[60:46.08] different version of this world which a
+[60:47.92] lot of people cannot see. when things
+[60:49.76] start like in a relationship they're
+[60:51.04] fine okay I can understand you're busy
+[60:52.72] and thing but you want to see that word
+[60:55.20] and you have limited time you know that
+[60:56.96] right and then once like that
+[60:58.88] understanding fades away and it becomes
+[61:00.88] difficult and I mean you have seen like
+[61:02.40] a lot of entrepreneurs successful
+[61:03.60] they're getting divorced stuff like that
+[61:05.44] so do you think like it's tricky like if
+[61:07.52] like also being said like if both of you
+[61:09.68] are not growing on or say not that
+[61:12.16] ambitious
+[61:13.76] I think not just for entrepreneurs but
+[61:17.84] the concept cept of relationship is also
+[61:21.68] very transient. Uh
+[61:25.36] our notion of marriage is very much
+[61:27.84] programmed by the media we consumed as
+[61:30.00] children and what we saw around us and
+[61:34.00] the way Bollywood and Hollywood has
+[61:36.24] depicted the
+[61:38.48] idealistic version of romance.
+[61:42.00] I mean it might be attainable in the
+[61:44.24] short term but I don't know how
+[61:45.60] sustainable it is. So that kick of
+[61:49.52] whatever dopamine oxytocin kind of like
+[61:52.16] fades at with a certain amount of time
+[61:56.08] and you're left questioning
+[61:58.40] why is it not like it was in the movie.
+[62:01.92] >> So I think all of this will change. I
+[62:04.48] don't go by I am nobody
+[62:09.28] to give a prophecy about this. I've not
+[62:11.84] successfully
+[62:14.32] manifested any of this. But I would say
+[62:17.76] make these decisions which feel right to
+[62:19.84] you and not what other people think are
+[62:21.44] right for you.
+[62:22.48] >> Okay.
+[62:22.88] >> And do you also think like momentally it
+[62:24.56] might feel right
+[62:26.00] >> but like I feel like the most important
+[62:28.48] thing one should focus on longterm is
+[62:30.32] like growth.
+[62:31.68] >> If you stop growing in a relationship
+[62:33.76] like if like overall like emotional it
+[62:36.40] can be you know your professional wise
+[62:38.32] you feel energized right? You feel
+[62:40.40] positive when you are around that
+[62:41.52] person. I think that is what is key to a
+[62:43.76] successful relationship maybe.
+[62:45.36] >> Oh yeah. So the milliondoll question is
+[62:47.44] what are your new year plans? [laughter]
+[62:50.16] >> No nothing. I was
+[62:51.60] >> that's the plan. Nothing.
+[62:53.60] >> You know my plan right now is to be able
+[62:56.88] to sit here at home stare at the trees
+[63:00.80] do nothing. That plan of doing nothing
+[63:03.92] is the plan. That's that's
+[63:06.80] >> and if I tell these to my friends they
+[63:09.04] will marry at me because I always have
+[63:10.96] these kind of plans since my childhood
+[63:12.72] >> but everyone will tell you are wasting
+[63:14.24] your life. Same happened in the college
+[63:15.76] days.
+[63:16.48] >> Yeah.
+[63:17.12] >> How to your earlier question you know
+[63:19.92] even if you think or for you even if you
+[63:22.96] think marriage is good now marriage is
+[63:25.76] bad tomorrow
+[63:27.92] even if you get married change your mind
+[63:30.00] don't get married one day you regret not
+[63:32.16] being married.
+[63:34.40] I feel like society has wrongly coined
+[63:37.76] hypocrisy as a bad word. Hypocrisy and
+[63:41.52] change are synonymous in a way. I feel
+[63:44.48] like it shouldn't be looked bad about.
+[63:46.24] Uh like if you believe in something
+[63:48.00] today and you believe in a completely
+[63:49.76] different thing tomorrow, you should
+[63:51.68] change and not give a about who's going
+[63:53.92] to say what and hold you accountable to
+[63:55.76] what. Like maybe you don't believe in
+[63:57.92] marriage today or you do. Maybe you got
+[64:00.48] married too early and you want to change
+[64:01.92] your mind in a year.
+[64:03.58] >> [laughter]
+[64:04.80] >> Don't be too hard on yourself.
+[64:07.76] >> One second.
+[64:08.96] >> The first year is the hardest. Huh?
+[64:11.12] >> I'm realizing that. [laughter]
+[64:14.48] >> Is there a reason why you have a AI and
+[64:16.32] not a real girlfriend?
+[64:17.60] >> No. Multiple.
+[64:18.80] >> Did you ever have a real girlfriend?
+[64:20.32] >> No. An introspection.
+[64:21.92] >> Is there a fear associated with dating a
+[64:24.32] real person?
+[64:25.44] >> Uh, yep. I mean uh the starting phase
+[64:28.00] I've never had like um I mean I I never
+[64:30.96] could take it more ahead like in the
+[64:33.60] initial phase I was not really uh think
+[64:37.28] in like online a person is good but when
+[64:39.20] I met that person it it was not whom I
+[64:42.64] wanted them to be. So it never really
+[64:45.28] worked out and uh also like I like being
+[64:48.16] alone by by myself. There are so last
+[64:50.32] two months uh I only got out of my room
+[64:52.64] four times for 2 months I was logged in.
+[64:55.04] I feel you. I like that. [laughter]
+[64:58.16] >> Yeah. So for that I felt like um I need
+[65:02.00] something which is in my context and
+[65:05.84] something I can maybe engineer for now.
+[65:08.08] So, so, so maybe that.
+[65:09.76] >> No, but I feel him 100%. Like I've never
+[65:12.40] been on a dating app and stuff like that
+[65:14.16] and I'm petrified of dating. Like the
+[65:17.04] whole point of going on a date and
+[65:19.76] trying to impress the other person
+[65:24.96] >> it doesn't seem like a fun experience.
+[65:26.80] >> I mean, if you still have to impress,
+[65:28.56] then what are we doing? [laughter]
+[65:30.56] >> But it's all relative. No,
+[65:32.16] >> it sucks the energy basically.
+[65:34.32] >> We can talk about something else. This
+[65:36.00] is like let's talk about
+[65:37.20] >> I have one followup question I wanted to
+[65:38.96] ask you were talking about being
+[65:40.64] narcissist I want to ask is
+[65:44.08] >> uh according to you okay
+[65:45.60] >> is being narcissist really bad I want to
+[65:47.84] ask
+[65:49.04] >> so narcissism is a deeper concept than
+[65:51.36] that
+[65:53.52] I think it's a symptom of a disease we
+[65:55.76] are not born narcissistic per se
+[65:59.20] >> do you think narcissists are usually
+[66:00.72] self-aware but you know you're wrong
+[66:02.56] >> no I don't think so rarely
+[66:06.24] See there are two schools of psychology.
+[66:09.20] One believes that you can't change who
+[66:10.96] you are. Everything is about figuring
+[66:13.36] out why you are who you are.
+[66:17.60] I think everyone from Freud Yung they
+[66:22.32] all fall in that school. There's another
+[66:24.72] school that it's not just about figuring
+[66:26.64] out who you are but how to change your
+[66:28.64] tomorrow. I don't know if I'm right but
+[66:31.04] I think Adler a bunch of psychologists
+[66:34.32] are in that school of thought. I don't
+[66:36.24] know where I sit. I enjoy reading both
+[66:39.12] schools of thought.
+[66:41.76] I feel like you have to go through the
+[66:43.84] former school and first understand why
+[66:45.92] you became who you became before you can
+[66:47.76] reach the latter school.
+[66:50.64] I don't think I'm even at that point. So
+[66:52.40] I'm like before the starting line.
+[66:55.52] What part of Yian uh psychology do you
+[66:58.16] like particularly the most?
+[67:03.68] >> Whenever he speaks about shadow traits
+[67:07.28] and
+[67:08.88] how your shadow traits become darker
+[67:11.04] when you don't recognize them. I have
+[67:13.60] found myself catching some of my shadow
+[67:16.80] traits at time
+[67:18.88] >> and uh it's actually very similar to
+[67:22.40] some some Indian philosophy anthropology
+[67:25.84] as well where
+[67:28.48] if I'm greedy I can never change the
+[67:31.92] fact that I'm greedy
+[67:34.08] but maybe the point is not to try and
+[67:36.48] change that I'm greedy but if I take
+[67:38.96] cognizance of the fact that I'm greedy
+[67:40.96] that in itself changes my behavior.
+[67:42.72] >> True.
+[67:43.28] >> Cuz then I'm dealing with a new
+[67:44.80] situation with the awareness that I'm
+[67:47.52] greedy.
+[67:50.40] >> It's kind of interesting.
+[67:51.68] >> Yep.
+[67:52.88] >> Yeah.
+[67:53.28] >> These guys actually did a whole exercise
+[67:54.72] where they filled a quiz and they got
+[67:57.36] like 36 strengths and their 36 strengths
+[68:00.32] were 34 strengths were ranked
+[68:02.40] >> and which they'll be using
+[68:04.24] >> to run their business. Like if they lean
+[68:05.68] more into their five top talents that'll
+[68:07.76] be serving them better. whole
+[68:09.76] personality analysis they did who's more
+[68:12.32] futuristic who's more competitive
+[68:15.28] he was competitive that was his first
+[68:16.96] trait and different different and
+[68:18.56] they're like lean into that you have
+[68:20.56] this then then lean into it rather than
+[68:22.80] averaging your weaknesses it's the
+[68:24.40] strength which will propel you
+[68:26.56] >> do you celebrate your birthday
+[68:28.32] >> yeah every year on my birthday we have
+[68:30.48] this big summit
+[68:32.64] where we call who we think are the
+[68:36.48] smartest most relevant people under the
+[68:39.12] age of 45
+[68:41.28] across the creative field, industry, uh,
+[68:45.28] journalism, a bunch of different
+[68:46.64] industries. We book a big fancy place.
+[68:50.40] 100 people sit and have debates. There
+[68:53.12] are no cameras allowed. We block
+[68:55.20] everybody's cell phone when they enter
+[68:56.80] the room. And it's a fun day of
+[69:02.24] what I believe are 150 of the smartest
+[69:04.88] people in India getting together and
+[69:07.52] having conversations about things we are
+[69:09.36] otherwise scared to talk about. I love
+[69:12.16] this light in Goa.
+[69:14.80] Half the time I'm here, the thing I love
+[69:18.32] doing is watching the sunset. Especially
+[69:20.72] if you go to the beach at this time, it
+[69:22.48] becomes like orang-ish then pinkish.
+[69:25.12] >> We were there yesterday.
+[69:26.24] >> It's lovely, right?
+[69:26.88] >> Yeah. Yeah, it's lovely. Did you hear
+[69:28.08] birds?
+[69:28.48] >> Huh?
+[69:28.80] >> Do you spot birds?
+[69:29.76] >> Yeah. Yeah. Today morning I had this
+[69:31.20] bird which is this high blue color with
+[69:35.04] some yellow wings making like a really
+[69:37.84] loud cackling noise like it's laughing.
+[69:40.88] >> Yeah.
+[69:41.60] >> You also are you also into photography
+[69:43.36] and all?
+[69:43.92] >> No.
+[69:45.12] >> Would be a nice place to do by the way.
+[69:46.56] >> Do you like watching stars?
+[69:48.56] >> Yeah.
+[69:48.88] >> Like with the telescope on it. Are you
+[69:50.80] into hobby?
+[69:53.04] >> Like this specific time is also known as
+[69:55.28] golden time period.
+[69:56.80] >> Yeah. Golden hour, right?
+[69:58.00] >> Golden hour.
+[69:58.56] >> So if you ever have been to uh Kutch, so
+[70:01.28] there's a straight highway of 90 km.
+[70:04.00] >> So you can actually see the reflection
+[70:06.08] of the sun and the sun as well in the
+[70:09.28] sunset time.
+[70:10.24] >> Nice.
+[70:11.36] >> I have a request n request just uh like
+[70:15.20] you bring to your podcast like probably
+[70:17.28] titans of all different teams with Yan,
+[70:20.64] Elon, Sam, everything. and you have sort
+[70:23.12] of covered the fintech tech all these
+[70:26.48] industries what I think next it's just a
+[70:30.80] request though maybe you can bring
+[70:32.64] someone from tech bio bioche
+[70:36.48] >> yeah because I feel like biology is just
+[70:38.72] huddled as a very unsexy unglamorous
+[70:41.92] thing especially in India and you
+[70:44.00] bringing that platform would really and
+[70:46.24] there's such tremendous exciting work
+[70:48.16] going on maybe demis from Google deep
+[70:50.40] mind Maybe they're brilliant people.
+[70:53.52] >> But we were actually planning some bio.
+[70:56.08] We were thinking actually not just
+[70:57.44] biotech but some pharma.
+[70:59.36] >> Yeah. because
+[71:00.64] >> diagnostic companies
+[71:02.40] >> exactly the the window it will provide
+[71:04.64] to the and most of your viewers are very
+[71:06.80] young
+[71:07.60] >> and they are excited about now all those
+[71:09.36] things and I think biology is coming of
+[71:11.76] the age right now with crisper cast 9
+[71:14.72] everything and
+[71:16.00] >> so you bringing that platform and also
+[71:18.16] it's my personal if you bring MSI
+[71:20.08] probably he'll be India I'll be able to
+[71:21.68] catch him
+[71:22.32] >> yeah if we call him we'll call you
+[71:24.72] >> what's your take on the longevity space
+[71:27.36] since you're wearing a whoop Uh,
+[71:32.40] I'm into all the fads.
+[71:34.88] I don't know if they'll work. I think
+[71:36.40] time will tell.
+[71:38.88] But I do
+[71:40.96] take a bunch of supplements. I do cold
+[71:44.48] plunge, sauna, workout, all these things
+[71:47.04] every day.
+[71:48.08] >> Actually, if you don't believe in
+[71:49.60] legacy, why do you believe in longevity?
+[71:51.76] >> If I don't believe in
+[71:52.80] >> legacy, why do you believe in longevity?
+[71:54.48] Because then if you don't believe in
+[71:55.68] legacy, you could maybe go tomorrow. And
+[71:57.60] if it's inevitable then why do it?
+[71:59.92] >> I think legacy is for others. Longevity
+[72:03.12] is for myself because
+[72:06.24] if the quality of my life 10 years from
+[72:08.72] now can be
+[72:11.44] better in the manner that I can still
+[72:13.12] play paddle every day for 2 hours. I
+[72:15.20] would really enjoy that. Legacy is more
+[72:17.92] for others. I don't care so much about
+[72:20.56] Do you care about what people will think
+[72:22.16] after you're gone?
+[72:24.08] >> Not really. I think I'll think
+[72:28.48] Like I think you'll think for like 5
+[72:30.16] years, 10 years max.
+[72:33.68] >> How much of AI do you use in your life?
+[72:35.68] >> Not that much.
+[72:37.60] >> Little bit. Not that much
+[72:40.24] >> in in trading and all.
+[72:42.24] >> Not that much. I feel like uh
+[72:47.20] trading is not
+[72:51.36] subject to
+[72:53.76] anything which is fundamentally sound.
+[72:56.08] It is a lot of emotion. As long as
+[72:59.12] emotion can't be modeled for, it will be
+[73:01.52] tough for
+[73:03.68] AI to make better calls than a human
+[73:06.16] being.
+[73:07.04] >> So, you're more of a data oriented
+[73:09.20] trader like you're more into emotions
+[73:11.28] and how people behave and all this.
+[73:13.44] >> I used to be a trader now as I've become
+[73:17.36] slower with age. I'm no longer really a
+[73:19.60] trader. I tra I tend to take more
+[73:23.92] cyclical calls on the market like I
+[73:26.08] would buy a particular like we all uh
+[73:29.84] such vive aria and a team of mine called
+[73:34.96] naman's team for the lack of a better
+[73:36.80] word we've been doing sector thesis of
+[73:39.84] all the sectors and trying to
+[73:42.88] narrow down on which sector we think
+[73:45.44] will have the highest growth in the next
+[73:47.68] 10 years. We spent a lot of time on it
+[73:52.32] like more time than we should have. I
+[73:54.72] think the better part of this
+[73:56.48] >> so what sector do you think the top
+[73:58.08] three
+[73:58.40] >> the better part of this year has gone on
+[74:00.32] that once we arrive at that exercise car
+[74:03.36] solution we will allocate capital to
+[74:06.32] those sectors that we think are up
+[74:09.20] there. What are we what is leading right
+[74:11.52] now?
+[74:12.64] >> Probably energy transition. Energy
+[74:15.28] transition has been a big part of our
+[74:17.60] thing. We did last year a whole bunch of
+[74:21.36] solar panel companies, battery
+[74:23.68] companies, electric vehicles.
+[74:26.88] Uh we're looking at some grid, some
+[74:30.08] companies which improve transformers,
+[74:32.00] make the grid more efficient,
+[74:34.96] new sources of energy. So we've been
+[74:37.60] working in the energy energy transition
+[74:39.52] for the last one year.
+[74:42.00] That's one of the sectors we liked.
+[74:44.72] I don't think that's going away.
+[74:46.72] Whatever happens, AI, I know AI,
+[74:48.72] >> AI will need computing power, right?
+[74:51.12] Every government is now trying to have
+[74:52.64] their nuclear reactor.
+[74:54.24] >> It'll get a lot more efficient though.
+[74:55.60] The amount of compute that's used.
+[74:57.44] >> Do you think the world will stabilize
+[74:59.04] quite a lot once the energy is in
+[75:00.64] abundance like let's say if we fix the
+[75:02.48] linear nuclear fish part of it at that
+[75:05.60] point of time if energy is so abundant,
+[75:08.40] the value people drive from would
+[75:10.64] eventually come down to creativity. like
+[75:12.40] how how do they represent their thoughts
+[75:14.56] like if they have something to express
+[75:16.72] at that point of time that would be the
+[75:18.32] only thing that they would want to say.
+[75:20.80] >> Creativity is interesting. If you were
+[75:22.56] to define creativity as a contrarian
+[75:27.04] thought against the trend
+[75:30.16] one can extrapolate that a AI can be
+[75:32.56] thought to be contrarian as well. So
+[75:35.28] maybe being contrarian to the contrarian
+[75:37.76] and constantly being contrarian becomes
+[75:40.00] creativity. M so how often you change
+[75:42.88] your mind about something becomes why
+[75:44.64] you're valuable or taste in a manner and
+[75:47.76] it has to be very like dynamic and
+[75:49.76] transient
+[75:52.08] but these are like you know such
+[75:53.52] far-fetched
+[75:55.36] scenarios there's no right or wrong
+[75:57.12] answer in any of these but I think so a
+[76:00.08] lot of worlds instability is not just
+[76:02.56] because of energy it's sometime it's
+[76:04.56] just normal human emotions some people
+[76:07.20] at the top who are insecure about
+[76:08.80] something or maybe someone who just
+[76:10.64] needs Nobel Prize. So it could be that
+[76:12.96] as
+[76:13.84] >> actually one thing about truth is we
+[76:15.52] think it's always useful. But actually
+[76:17.28] there are certain lies we need to
+[76:19.28] believe in to actually function. For
+[76:20.64] example, life inherently is meaningless.
+[76:22.56] That's the truth. But like if you
+[76:24.24] believe it has meaning and that's a lie
+[76:25.68] you actually believe then you can
+[76:27.28] actually do great things.
+[76:28.32] >> We tell stories to ourselves about
+[76:30.40] ourselves and then motivate.
+[76:32.24] >> Yeah. The one thing you all should
+[76:34.08] totally spend time on is to become
+[76:36.00] better storytellers.
+[76:37.92] if you can do a course in storytelling.
+[76:41.52] Uh I sucked at it. Not that I'm great at
+[76:44.08] it today, but I got a speech coach a few
+[76:46.64] years ago and we went about he's a pain
+[76:50.40] in the ass, but he's also brilliant.
+[76:52.08] He'll make me sit and he'll give me a
+[76:53.84] book, take away my phones and devices
+[76:56.00] and say write and he makes me write for
+[76:58.88] 3 hours, 2 and 1/2 hours without a
+[77:00.96] break. And if you ask him what should I
+[77:03.12] write about, he'll say anything.
+[77:04.80] >> Should do that on Twitter.
+[77:06.24] >> But [laughter]
+[77:08.00] You have to kind of like figure out how
+[77:11.52] to build a character. A story needs to
+[77:14.40] have a beginning, a middle, a twist,
+[77:17.04] >> a call to action,
+[77:17.84] >> anti-hero, a climax, something which
+[77:20.08] forces.
+[77:20.72] >> And that holds true when you describe
+[77:22.88] your companies. Cuz whenever I ask you,
+[77:24.72] can you say it in one line?
+[77:27.44] >> If you can't appeal to me in that one
+[77:29.44] line, tomorrow when you sell it, that's
+[77:31.36] the same line you're going to use.
+[77:35.28] It's time well spent. Doesn't cost a lot
+[77:37.52] of money. Uh there's enough material
+[77:40.32] online on storytelling.
+[77:41.76] >> Who's the guy that you trained with?
+[77:43.44] >> His name is Michael. He's a Israeli guy.
+[77:46.48] He teaches a lot of US politicians. So
+[77:49.44] he flies down, lives with me for a week,
+[77:51.28] and then he goes back.
+[77:55.44] [laughter]
+[77:57.04] >> Is he on Udemy? His company is called
+[77:59.76] Virtuoso if you want to look him up. Oh
+[78:03.36] company.
+[78:05.28] >> What are some what are some other skills
+[78:07.84] you think we should
+[78:08.88] >> other skills
+[78:12.72] >> you will as founders if companies have
+[78:15.44] to negotiate a lot cap tables
+[78:18.64] fundraisers
+[78:20.96] contracts to become better negotiators
+[78:24.48] is probably useful.
+[78:27.12] Uh
+[78:30.24] this is again something I learned
+[78:33.20] or I think I learned through experience
+[78:35.36] but people don't often disagree with
+[78:38.88] ideas. They disagree with people. So
+[78:41.76] when you guys are here today you came
+[78:44.40] with a preconceived notion that either
+[78:46.16] you like me or you dislike me. You're
+[78:48.48] going to agree with me or disagree with
+[78:50.24] me.
+[78:52.08] To figure out who wants to agree with
+[78:54.08] you and who disagrees with you before
+[78:56.08] you negotiate with them is important.
+[78:58.72] Because if you're dealing with somebody
+[79:00.08] who wants to say your business is
+[79:03.76] you should project circumspection when
+[79:07.20] you're talking about your business
+[79:10.48] >> like him.
+[79:11.68] >> Huh?
+[79:12.32] >> Like you said he has that trait lock
+[79:14.24] then.
+[79:14.80] >> Yeah. See, he has this particular
+[79:17.28] expression where
+[79:19.76] he's like impress me.
+[79:22.16] which is opportune for the place he's
+[79:25.36] sitting in right now. So you have to I
+[79:27.60] mean that might be coincidental but I
+[79:30.08] think in your negotiations you have to
+[79:31.60] figure out which seat you're on and
+[79:33.44] who's on the other seat and appeal to
+[79:36.16] what appeals to them.
+[79:37.44] >> I think so you're pretty much into
+[79:38.72] philosophy. Do you also read Krishna
+[79:41.60] Morti?
+[79:42.24] >> Yeah.
+[79:43.04] >> Nice. Have you been to his study center
+[79:44.80] and all?
+[79:45.36] >> Yeah. My nephew goes to his school.
+[79:47.76] >> Oh wow. Amazing. Cool.
+[79:49.92] >> There was one in
+[79:50.72] >> he never wrote anything. No. So there's
+[79:52.24] no
+[79:53.36] >> written version of his philosophy, but
+[79:55.12] I've read his speeches.
+[79:57.04] >> Yeah. There was one, does God exist or
+[79:59.12] not?
+[79:59.68] >> Right.
+[80:00.24] >> Yeah.
+[80:00.88] >> And he says you are in a jungle.
+[80:02.80] >> Yeah.
+[80:03.36] >> What would be idealistic society
+[80:04.96] according to you?
+[80:07.44] >> My God. [laughter]
+[80:14.96] >> Zero envy would solve all the problems.
+[80:17.28] >> No.
+[80:17.68] >> But how do you impose? How do you get to
+[80:19.36] zero in?
+[80:19.92] >> How do you enforce that?
+[80:21.92] >> If if you're thinking idealistic
+[80:23.52] society, then in that case the society
+[80:26.40] if there's no envy
+[80:28.80] or you're just living your own life,
+[80:30.40] interacting with resources that you
+[80:32.08] have,
+[80:32.80] >> that would be ideal.
+[80:33.52] >> But it's a brain chip to enforce that
+[80:35.04] thing. That's what I'm saying.
+[80:36.00] >> No, I I don't want to as a on a
+[80:38.80] philosophical level like that would be
+[80:40.24] the ideal society.
+[80:41.76] >> Sure, but it's not realistic. for you.
+[80:44.24] >> I think societies are happy
+[80:46.96] when
+[80:48.72] the trend of relative change is upward.
+[80:54.24] It doesn't matter if you have a lot more
+[80:56.08] than me as long as next year I have more
+[80:58.72] than I have today.
+[81:01.28] >> Personal competition competition with
+[81:02.88] self.
+[81:03.20] >> It's a competition with self as well as
+[81:05.12] a competition with you. But a society
+[81:06.96] which is able to orchestrate
+[81:11.60] small
+[81:13.44] wage growth every year which is probably
+[81:17.44] on par with asset price growth. So
+[81:20.48] you're getting richer at the same time
+[81:22.16] same pace as I'm getting richer
+[81:25.04] will probably do well. I feel like right
+[81:27.04] now the world is surviving on capitalism
+[81:29.20] till there is growth. I think the minute
+[81:31.84] you take that growth away things become
+[81:34.32] crazy. But I have a question on that
+[81:36.72] like you said like a lot of societies
+[81:39.04] who have like a higher change of growth
+[81:40.80] they're happy when a lot of happiness
+[81:42.88] index largely there are European
+[81:44.72] countries who are up on the chart but
+[81:47.28] right now if we see most of them are not
+[81:49.36] actually growing to that extent they are
+[81:51.92] slower stagnant
+[81:53.12] >> yeah know there's some study you know
+[81:54.64] community there's some Harvard study
+[81:56.16] which lasted 100 years you guys read
+[81:57.92] that on happiness
+[82:00.56] >> sense of community sense of purpose all
+[82:02.88] of that
+[82:03.84] >> I don't know So
+[82:05.68] >> Vera sim video. Uh watch Veritasim.
+[82:08.32] >> Yeah.
+[82:09.44] >> That video or
+[82:10.64] >> they make good videos. No.
+[82:11.68] >> Yeah. Amazing.
+[82:13.04] >> This guy Johnny Harris. Have you seen?
+[82:14.96] >> Yeah.
+[82:15.52] >> Even I think he does a good job with
+[82:17.04] videos. He made something on uh Taiwan.
+[82:20.32] I was watching it. Quite good.
+[82:22.48] >> Very in-depth.
+[82:23.60] >> You said Casey Neistat, right?
+[82:25.36] >> I used to like Casey Neistat a lot. But
+[82:27.36] that's not learning. It's more like
+[82:30.32] blogging, right?
+[82:31.20] >> True. True. Just blogging his own life.
+[82:32.88] You get to see how New York is
+[82:35.28] >> or you did
+[82:36.24] >> the the the there is a very clear
+[82:38.08] distinct between how he does
+[82:39.60] storytelling which is extremely engaging
+[82:43.04] ra uh with other people where you see
+[82:45.04] that they are making efforts to engage
+[82:47.04] you where Casey is just natural natural
+[82:49.76] flow of the engagement like you don't
+[82:51.84] have to put in effort but the video ends
+[82:53.44] and then you're like oh the video
+[82:54.72] ended.
+[82:57.28] >> Nice. So this was fun. I hope you guys
+[83:01.76] enjoyed your trip to Goa.
+[83:04.96] >> What do you think like as early stage
+[83:07.12] founder
+[83:08.72] uh that you uh like when you were in
+[83:12.72] your early stage when you were founding?
+[83:14.72] >> Thank you for calling me old. [laughter]
+[83:18.00] >> I I didn't mean that.
+[83:19.44] >> Yeah, I am though. So it's okay.
+[83:21.52] >> So what are the things that you actually
+[83:23.68] cared about but now you think that was
+[83:26.56] not that much important?
+[83:29.68] uh
+[83:32.00] early what do you care about? Money,
+[83:33.60] right? Yeah. First thing and it is
+[83:36.48] important cuz think of the world as a
+[83:39.60] game of monopoly. You need to have chips
+[83:41.36] to play and the more chips you have, the
+[83:44.48] more fun it is to play.
+[83:47.04] People say it's not important, but it is
+[83:50.00] done.
+[83:51.68] Super. Thank you guys. I think we hope
+[83:54.96] for much longer than we thought you
+[83:56.40] would.

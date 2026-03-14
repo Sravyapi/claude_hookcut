@@ -1,0 +1,194 @@
+[0:01.36] [Music]
+[0:06.12] hello everyone welcome back in this
+[0:08.88] presentation we are going to focus on
+[0:10.88] Group by and having clause in SQL in
+[0:14.16] today's presentation we are going to
+[0:15.64] focus on two important keywords of SQL
+[0:18.36] the group by and having let's start the
+[0:21.24] session with the first keyword Group by
+[0:24.12] let's assume we are maintaining a
+[0:25.92] student table in a database and let's
+[0:28.44] also assume that all class students
+[0:30.60] entries are there in that single table
+[0:33.48] suppose we want to know class wise
+[0:35.60] student list and it's easy to retrieve
+[0:37.84] this because we have where Clause we can
+[0:40.40] give the condition where class equal to
+[0:42.32] the appropriate class so that we will
+[0:44.28] get the information about that
+[0:45.80] particular class but my question here is
+[0:49.00] we want to do some operations only with
+[0:51.20] that particular class say for example we
+[0:53.64] want to know how many students are there
+[0:55.68] in each class let's say there is a table
+[0:58.00] with 500 entries or 500 rows and these
+[1:01.08] 500 rows are the information of students
+[1:03.88] who are studying in different different
+[1:05.76] classes to filter obviously we can use
+[1:08.56] where but if I want to know how many
+[1:10.88] students are there in each class I need
+[1:13.20] to group each class isn't it so group I
+[1:16.20] is going to help us in that perspective
+[1:18.88] in simple terms suppose we want to find
+[1:20.92] the number of students in each class in
+[1:23.12] that case we can go for group bike how
+[1:25.44] it is going to do that so it is going to
+[1:27.84] arrange the data into groups for example
+[1:30.92] in a table if we have five different
+[1:32.80] departments if we use Group by then we
+[1:35.60] can retrieve the data Department by
+[1:37.64] Department because that's what the job
+[1:39.48] of group by it's going to group don't
+[1:42.16] worry about this now anyway when we see
+[1:44.40] some examples you will be able to
+[1:46.28] understand clearly from this it's clear
+[1:48.40] that we are going to arrange the data
+[1:50.08] into groups and how we are going to
+[1:52.08] group it are we going to group as per
+[1:54.24] rows or columns obviously as per rows so
+[1:57.28] Group by Clause is going to group the
+[1:59.20] rows that have same values since we are
+[2:01.88] able to group the rows that have same
+[2:04.08] values we can perform the operations
+[2:06.24] whatever we wanted to do and this group
+[2:08.52] by Clause is often used with aggregate
+[2:11.36] functions we have already seen about
+[2:13.20] aggregate functions in the previous
+[2:14.92] lecture so we are going to combine the
+[2:17.16] group by Clause with aggregate functions
+[2:19.28] to reap some other additional benefits
+[2:21.88] let's see an example then it will be
+[2:23.48] easy for you to understand let's start
+[2:25.44] with the first example the table that we
+[2:27.60] are taking is an employee table which
+[2:29.28] contains ID name Department salary and
+[2:32.56] city as the columns or attributes and I
+[2:35.48] have populated some records here firstly
+[2:38.08] let's start with applying the group by
+[2:39.96] Clause select count ID this count is an
+[2:43.44] aggregate function count ID comma City
+[2:47.80] from employee Group by city so what we
+[2:51.40] are going to do is we are going to
+[2:53.24] select two columns one is count of ID
+[2:57.00] that means we are going to count the ID
+[2:59.60] value Val so how many ID values are here
+[3:02.20] nine ID values are here so when we use
+[3:05.00] count ID without Group by it will list
+[3:08.20] nine because nine rows are there but
+[3:10.92] here what we have introduced we have
+[3:12.56] introduced Group by so see how the
+[3:14.64] operation is going to be changed so we
+[3:16.60] are going to perform select operation by
+[3:19.04] selecting count ID and city so we are
+[3:22.36] going to retrieve the city column also
+[3:24.80] from which table employee table which is
+[3:27.16] this and we have applied what group by
+[3:29.96] city so we are going to retrieve the
+[3:32.04] records by grouping by the city let's
+[3:34.72] see the output then it will be easy for
+[3:36.40] you to understand if you see here the
+[3:38.36] First Column is going to be count ID and
+[3:41.20] the second column is going to be City
+[3:43.52] and this is retrieved from employee
+[3:45.88] table and we have performed this group
+[3:47.92] by on which column the city column so
+[3:50.96] this is the city column so just see how
+[3:53.04] many entries are there in New Delhi in
+[3:55.44] New Delhi there is only one entry and
+[3:57.52] that's why we are getting this one as
+[3:59.36] new
+[4:00.24] so what we have actually performed is we
+[4:02.56] have grouped the rows as per the city
+[4:05.28] and we have performed the count of that
+[4:07.40] City there is one row with ahmadabad
+[4:09.92] there are three rows with Bangalore
+[4:12.04] Chennai 2 Hyderabad 1 New Delhi 1 and
+[4:16.16] Ranchi one so we have performed Group by
+[4:19.88] operation by counting how many entries
+[4:22.48] are there for each City this is what I
+[4:25.04] told you it is like finding the number
+[4:27.12] of students in each class here in each
+[4:29.76] each City the output what we are seeing
+[4:32.24] here is sorted according to the city I
+[4:35.20] hope things are clear to you so this is
+[4:37.16] about the group by Clause we are done
+[4:39.44] with the first keyword of the day which
+[4:41.36] is Group by we have one more keyword
+[4:43.56] left what's that the having clause or
+[4:46.16] the having keyword what is the use of
+[4:48.60] having this having Clause suppose we
+[4:51.28] want to filter groups based on a
+[4:52.96] specified list of conditions we can go
+[4:55.40] for having now you may be asking in
+[4:57.72] order to do this we already have
+[5:00.24] so where keyword is also going to filter
+[5:02.92] but that filters The Columns whereas
+[5:05.76] having is going to filter the groups
+[5:08.28] where this grouping is already done by
+[5:10.52] Group by Clause so in other words we are
+[5:13.16] going to restrict the result returned by
+[5:15.48] the group by Clause let's assume we have
+[5:17.80] retrieved the records by using Group by
+[5:19.96] Clause now after retrieving the records
+[5:22.08] if we want to apply some condition in
+[5:24.36] such case we cannot go for where the
+[5:26.52] only way to filter or apply condition is
+[5:29.04] by provide having Clause so it's clear
+[5:31.80] that where keyword cannot be used with
+[5:34.32] aggregate functions and that's why we
+[5:36.44] are going to use having Clause with
+[5:38.96] Group by and aggregate functions and
+[5:41.52] obviously Group by Clause is going to
+[5:43.40] group the rows that have same values
+[5:45.52] which we have already seen in the
+[5:46.88] previous slide and we are also sure that
+[5:49.36] this having is also having more wide
+[5:51.44] usage with aggregate functions no
+[5:54.04] worries when we see an example it will
+[5:55.92] be easy for you to understand so I'm
+[5:57.92] bringing in the same employee table here
+[6:00.56] the query is Select count ID comma City
+[6:04.60] from employee Group by City up to this
+[6:08.44] this was our last example we retrieved
+[6:11.08] the count of each City now what
+[6:13.56] condition I am enforcing I'm enforcing
+[6:15.88] the count ID is greater than or equal to
+[6:19.24] 2 so what's the output for this the
+[6:21.68] output is we are going to get only two
+[6:24.16] rows one is three Bangalore and 2
+[6:27.32] Chennai why if you see we have enforced
+[6:30.48] a condition having count ID greater than
+[6:33.36] or equal to two I'll just show you the
+[6:35.32] previous output so in the previous
+[6:37.40] output we have obtained these many
+[6:39.16] results now in the query I have used
+[6:41.96] having count ID greater than or equal to
+[6:44.28] two so only these two rows are matching
+[6:47.56] and that is why we are getting this
+[6:49.52] output so what do we mean by this it's
+[6:52.12] simple we have group the rows using
+[6:54.92] Group by and after grouping if we want
+[6:57.32] to apply some condition we can go for
+[6:59.24] having so that's the use of group by and
+[7:01.84] having clause and if you note in both
+[7:03.84] the examples we have used an aggregate
+[7:05.76] function called count you can also use
+[7:08.28] other aggregate functions like sum min
+[7:11.28] max and average before we sign out let's
+[7:13.96] see the homework question let's use the
+[7:15.96] same employee table for the homework
+[7:17.76] question but here we have two questions
+[7:20.44] I request you to try solving these two
+[7:22.64] questions and post your answers in the
+[7:24.68] comment section question number one find
+[7:27.40] the department wise count of all
+[7:29.68] employees and the second one is how many
+[7:32.36] departments have more than two employees
+[7:34.96] you will be able to answer these two
+[7:36.76] questions if you are clear with the
+[7:38.40] examples what we have seen in this
+[7:40.12] presentation and that's it guys I hope
+[7:42.48] you guys enjoyed this presentation and
+[7:44.52] thank you for watching
+[7:47.38] [Applause]
+[7:49.57] [Music]

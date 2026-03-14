@@ -1,0 +1,538 @@
+[0:00.00] Imagine
+[0:01.96] [music]
+[0:05.92] a wide space that never is out of space
+[0:08.16] and lets your entire team collaborate on
+[0:10.48] it from anywhere in the world. Whether
+[0:12.64] you are mapping out strategies,
+[0:14.24] conducting team workshops, planning
+[0:16.32] project ideas, or collaborating
+[0:18.24] remotely, keeping everything clear and
+[0:20.64] structured can sometimes feel
+[0:23.12] overwhelming. But what if there is a
+[0:25.12] single workspace where you could
+[0:27.04] brainstorm ideas, create mind maps,
+[0:29.76] collaborate with your team in real time,
+[0:31.60] and visualize complex projects all in
+[0:34.08] one place? Well, that's exactly what
+[0:36.32] Mirrorboard helps you to do. In this
+[0:38.32] mirrorboard tutorial, I'm going to walk
+[0:40.24] you through everything you need to know
+[0:42.16] to get started and become productive
+[0:44.32] with Mirroboard. From setting up your
+[0:46.24] first Mirrorboard to collaborating with
+[0:48.48] your team, you will learn how to turn
+[0:50.56] your ideas into clear visual workflow.
+[0:53.36] By the end of the tutorial, you will
+[0:55.28] understand how to create boards,
+[0:57.44] organize ideas, collaborate with your
+[0:59.84] team, and use Miro to turn your messy
+[1:02.32] thoughts into clear visual workflow. All
+[1:04.72] right, so here's what we are going to
+[1:06.56] cover in today's video. First, we are
+[1:09.20] going to start with understanding what
+[1:11.44] exactly Miro board is and why teams are
+[1:14.08] using it. Next, we will create your
+[1:16.56] first Miu account and set up very first
+[1:19.20] board so that you can start working
+[1:21.28] inside the Miu. After that, we'll
+[1:23.52] explore the entire interface where you
+[1:25.92] will learn about the main tools and the
+[1:28.40] frameworks. Then we'll dive deep into
+[1:30.56] the core design tools of Miro where
+[1:33.60] we'll learn how to add sticky notes,
+[1:36.00] shape, connectors, images, and files to
+[1:39.04] the visual idea of the board. We'll also
+[1:41.52] look at templates that allows you to
+[1:43.36] quickly start planning without creating
+[1:45.46] [clears throat] everything from the
+[1:47.04] scratch. Next, we'll explore the
+[1:49.28] collaboration features where you'll see
+[1:51.60] how teams can work together on the same
+[1:54.32] project in the real time and then you
+[1:56.32] will look at the real world use cases
+[1:58.56] and see how product teams, designers,
+[2:01.52] marketers, developers use Miro in their
+[2:04.16] everyday workflow. After that, we'll
+[2:07.20] explore shortcuts, power features, and
+[2:09.76] productivity tips that helps you to do
+[2:12.24] work faster and manage mirror more
+[2:14.96] efficiently. We will also take a quick
+[2:16.96] look at integration on export options so
+[2:20.00] you can connect your Miro with your
+[2:21.52] tools like Slack, Google Workspace and
+[2:24.16] other platforms. And finally, you can
+[2:26.64] wrap things up with the final tip so
+[2:28.48] that you can start confidently with your
+[2:30.32] Miro board for your own project. If
+[2:32.40] you're looking to build strong project
+[2:34.16] management skills and advance your
+[2:36.24] career, you might want to check it out
+[2:38.16] the PMP certification training course by
+[2:40.72] Simply Learn. This course covers key
+[2:43.12] topics like project planning, risk
+[2:45.28] management, budgeting, shoulduling,
+[2:48.00] leadership strategies used in the real
+[2:50.24] world projects. Through this training,
+[2:52.00] you will learn PMBBO framework, agile
+[2:55.12] and hybrid project management approaches
+[2:57.84] and gain practical knowledge that helps
+[3:00.48] you to manage projects more efficiently
+[3:03.12] across industries. The course is ideal
+[3:05.84] for aspiring project managers, team
+[3:08.24] leads and professionals who want to move
+[3:10.72] into the leadership roles in the project
+[3:13.04] management. If you're aiming to
+[3:14.56] strengthen your project management
+[3:16.08] expertise and earn a globally respected
+[3:19.12] certification, this course is definitely
+[3:22.32] worth exploring. So hurry up and check
+[3:24.32] it out. This course the link is in the
+[3:26.40] description below. So guys, let's get
+[3:28.40] started. But before moving forward,
+[3:30.48] here's the quick question for you all.
+[3:32.24] Which of these tools is mainly used for
+[3:34.56] the visualization, collaboration and
+[3:36.80] brainstorming? The options are Google
+[3:39.44] Docs, Microsoft Excel, PowerPoint, Mirro
+[3:43.12] Board. Take a moment to think about it
+[3:45.04] and drop your answers in the comments
+[3:47.28] below. So now let's begin with the
+[3:49.04] basics. So here we can see on the screen
+[3:51.28] that we have a mirror board. Now this
+[3:53.44] has multiple options. You can see here
+[3:55.68] product, solution, resources, pricing
+[3:58.40] and everything. You'll click on go to
+[4:00.40] the dashboard to get started. Once you
+[4:02.24] click on this, you can see here it will
+[4:04.88] take some time. It will load because I
+[4:06.96] have already signed in. This is the page
+[4:08.64] which I'm getting on my screen. If you
+[4:10.32] have not signed in, you'll be getting a
+[4:12.16] option to sign in. And you have to
+[4:14.16] simply sign in. You can use a Google
+[4:16.24] account or you can use your email ID and
+[4:19.04] password. You can set the password and
+[4:20.56] you can move ahead. Okay. Now, because
+[4:23.04] you want to start with a new page, I'll
+[4:25.28] show it to you how it looks like. I have
+[4:27.36] clicked on create new. I am on the board
+[4:30.88] section of this part. Once I have tapped
+[4:33.28] on the board, I can see two options are
+[4:35.84] here which is create team board or
+[4:38.80] upgrade. Now, Miro has two versions of
+[4:41.28] Miro board. Miro has two versions of it.
+[4:44.00] One is what we can see on the screen and
+[4:46.32] the second one is the paid one. The paid
+[4:48.56] one is for the bigger organization and
+[4:50.72] for the bigger team. Here we can move
+[4:52.64] further with the current one. So here
+[4:54.40] once we have clicked on creating new
+[4:56.64] board I can see here multiple options
+[4:58.96] are there. So first is all templates are
+[5:02.40] present there for the agile development
+[5:04.72] for project development for development
+[5:06.80] in any case all the development projects
+[5:09.04] are here. Any projects you can choose
+[5:11.04] and you can move ahead. Now you don't
+[5:13.36] have to start from the scratch to build
+[5:16.16] things. It's already built up for you.
+[5:18.48] The entire flow is already there. You
+[5:20.72] just have to point it out where you are
+[5:22.72] working on on which step you are at. Now
+[5:26.00] here we'll be getting all templates. So
+[5:28.24] you can see here project review,
+[5:30.56] workshops, activities, start, stop,
+[5:33.84] continue, all types of presentation
+[5:36.16] templates are here. After that we have
+[5:38.96] AI accelerated which means here in this
+[5:42.00] options let's say I'm clicking on AI
+[5:44.80] playground. If I click on this there are
+[5:47.12] multiple options. If I'll choose this
+[5:48.96] specific template, what will happen
+[5:50.80] here? If I tell my AI what is the
+[5:52.88] workflow of the entire process which I'm
+[5:55.20] going to give in the input, it will
+[5:56.64] create the entire visual workflow for
+[5:58.72] that. So let's say I'm clicking here and
+[6:01.68] after that I'm getting this as an
+[6:04.48] option. So you can see here it's mostly
+[6:06.96] empty. Correct? So here we'll see that
+[6:09.60] okay here some options are there to
+[6:11.28] place some pictures. Here I can make my
+[6:13.36] own slogan or anything my team needs.
+[6:16.48] Now entire workflow is here. If anything
+[6:19.20] I want to add here, I can click on this
+[6:21.12] and I can add whatever I want to add. I
+[6:23.52] can write comments, I can put pictures,
+[6:26.48] I can do multiple things here. We also
+[6:28.48] have an option here to link more of
+[6:30.96] these pages one by one next to this one.
+[6:33.60] Okay. And the same process will be there
+[6:35.76] also like I can record something, I can
+[6:38.00] paste it here and and it will move
+[6:40.32] further. it will come to the new basic
+[6:42.88] advanced iconic all the types of
+[6:44.96] templates. All types of uh text will be
+[6:48.16] coming in front of you. These are the
+[6:49.84] options which you were getting here. Now
+[6:52.08] these were the templates option that we
+[6:54.48] were having and we can modify this.
+[6:56.72] That's what we have understood. Perfect.
+[6:59.04] Now moving ahead with this particular
+[7:01.20] signs. These are the main sign which
+[7:02.80] you'll be having whenever you will open
+[7:04.32] the mirror board. So let's understand
+[7:06.08] what are these. So if you go to the
+[7:08.32] first point this one. So this basically
+[7:10.80] is your cursor. So where are you at? You
+[7:13.76] can move your entire mirrorboard. You
+[7:15.60] can slide. You can move ahead. You can
+[7:17.44] go back to the point wherever you were
+[7:19.28] writing. You can do all of these things.
+[7:21.84] After that you can click here that is
+[7:24.16] formats and flows. If you click on this
+[7:26.88] you can see multiple types of options
+[7:29.12] are given there like diagram, table,
+[7:31.76] timeline, all the other options are
+[7:34.40] here. Come to the option of format and
+[7:36.48] flows. We'll click on this. We'll be
+[7:38.48] having multiple uh options here where we
+[7:41.68] can see the prototypes, diagrams,
+[7:44.00] tables, timelines, canban, dock, slide,
+[7:47.92] activities. All of these options which I
+[7:50.64] have here can create the specific thing
+[7:52.88] which they are saying. Basically, if
+[7:54.32] I'll click on tables, I'll be having
+[7:56.00] tables where I can record all the data
+[7:58.24] whatever I want. So here we can see. So
+[8:00.96] I will give all the details like
+[8:02.64] whatever details I want. I want my table
+[8:04.64] to have five rows, three columns,
+[8:07.04] whatever information I want to store in
+[8:09.28] them, I can just write it down here and
+[8:11.60] it will create a table for me. For
+[8:13.44] example, here is a very simple examples
+[8:15.52] are given to create a table for. So
+[8:17.28] let's say I want to create a table for
+[8:18.88] project tracker. So if I click on this
+[8:21.44] now, this will create a project a table
+[8:24.08] for me which will track the entire
+[8:26.40] project. So we'll wait for this and we
+[8:29.20] can see the table here. Okay, we can see
+[8:31.84] the table here. So all the details are
+[8:34.08] here. So you can fill the details here.
+[8:35.68] Let's say I'm filling the name and
+[8:37.44] description and status of the project
+[8:39.76] and many more. You can go ahead and
+[8:42.00] customize this as much as you can. It
+[8:44.56] will be specifically customized for your
+[8:46.48] requirement for what you need. Now
+[8:48.72] moving ahead with you can see here we'll
+[8:51.20] again go to the format and flows option.
+[8:53.76] We'll click here. We can see we have
+[8:56.00] tables, we have timelines, we have doc
+[8:58.32] slides and everything. What the slide
+[9:00.40] means? It's basically creating a PPD but
+[9:02.72] all of your slides will look in front of
+[9:04.72] you all of it. For example, let's again
+[9:07.36] take example here. Let's say I want to
+[9:09.84] build my product update deck. Okay. Now
+[9:13.84] let it come. Give it a second because it
+[9:15.84] will take some time. Now when we are
+[9:18.08] here we can see what you want to create.
+[9:21.04] So add a blank slide. So what blank
+[9:24.00] slide you want. So I'll click here and
+[9:26.40] whatever I want to create I will be
+[9:28.08] creating here. Let's say I want to
+[9:29.60] create a specific agenda. So I'll be
+[9:32.32] writing all the points which will be
+[9:33.76] there for the agenda. So when we can see
+[9:35.68] here in the slides option you have a
+[9:37.68] option to add a blank slide. We have a
+[9:40.24] option to add templates. We have a
+[9:42.08] option to create with AI and we have
+[9:44.16] option to add activities. Now these four
+[9:46.88] options are something which we can do
+[9:48.80] here. If I want to create a blank page,
+[9:51.28] blank slide, I can click on the blank
+[9:53.28] slide and I can add a blank slide where
+[9:55.44] we can add our own information. We can
+[9:57.68] paste our own link or other template
+[10:00.88] link also. Now after that we have add
+[10:04.16] templates option. If I want to add a
+[10:06.24] specific template I can click on here
+[10:08.40] and we can see multiple options of
+[10:10.24] template are coming in front of me. Now
+[10:12.16] after that we have here a option to
+[10:14.32] create with AI. So I will tell the AI
+[10:16.96] that whatever we need here and AI will
+[10:19.44] generate the specific type of slides for
+[10:22.32] me. Then we can add few activities. Add
+[10:25.12] few activities means here we can have
+[10:27.12] multiple type of team activities which
+[10:29.12] we can create. Here also in this team
+[10:31.36] activities also we can add multiple
+[10:33.52] other type of templates to move forward.
+[10:36.08] Now here you can click on that on that
+[10:38.08] specific slide also we can add more
+[10:40.00] activities. Moving further now here we
+[10:43.28] can see we have other options like
+[10:45.04] templates. So here templates are the
+[10:46.88] entire templates which we have as an
+[10:48.88] option. Here we can see the use cases
+[10:51.12] here like meeting workshop, meetings and
+[10:53.92] workshop, ideation and brainstorming,
+[10:56.64] resource designing, agile workshop,
+[10:58.96] strategy and planning and many more.
+[11:01.04] Whatever is your requirement, you can
+[11:02.48] choose any one of them and you can move
+[11:04.08] ahead. Now let's say I want to have a
+[11:06.56] specific requirement of prototype. What
+[11:08.64] exactly is a prototype? Every time you
+[11:10.40] are creating a new project, you just
+[11:12.00] create a prototype to pitch to any of
+[11:14.96] the investors. So let's say I want to
+[11:17.44] create my own prototype at this point in
+[11:19.76] the mirror board. If I click on here,
+[11:21.60] you can see I have this option of how to
+[11:24.96] use it. So I'll give my use cases. I'll
+[11:27.60] give how to use prototype. I'll be
+[11:29.76] writing all of these things here like
+[11:31.28] for my own project. For example, let's
+[11:33.44] say I'm launching a restaurant. So if
+[11:35.36] I'm launching a restaurant, I'll mention
+[11:36.96] the main pointers of the restaurant. So
+[11:38.96] like what is the US of the restaurant,
+[11:41.68] what why it is so famous, what is the
+[11:43.36] placement and everything. Now moving
+[11:45.52] ahead with that if I want to go along
+[11:48.00] I'll show the login screen how my login
+[11:50.72] screen is looking like of this specific
+[11:52.64] restaurant landing page of the
+[11:55.20] restaurant after that I'll show the
+[11:58.24] search research options which are
+[11:59.92] whichever is there now you can see this
+[12:02.16] on your screen now if I want to edit
+[12:04.64] this now I'll go to the login page this
+[12:07.52] entire template is for the prototype now
+[12:10.88] whatever prototype I want to choose I
+[12:12.80] can build here I and show it here one by
+[12:15.68] one what should we click and where
+[12:17.84] should we land next now all of the link
+[12:20.56] is visible here if you want to change
+[12:22.24] any specific link you can change the
+[12:23.84] link you can move ahead now the landing
+[12:25.60] page is here then we have search result
+[12:28.00] if I'm clicking on any specific button
+[12:30.00] then what will be the next page I can
+[12:32.00] see completely from here only now every
+[12:34.96] single click what will it bring to the
+[12:37.20] next page we can create the entire
+[12:39.44] prototype here on the same page and show
+[12:42.00] and pitch to the investors so this A
+[12:44.08] very small example of how you can use
+[12:46.00] this templates. There are multiple
+[12:47.60] templates like this. You can choose any
+[12:49.20] one of these and you can move ahead. So
+[12:51.04] here in the templates option you can
+[12:52.48] check it out. More templates are there
+[12:54.16] for research also for developers also
+[12:56.40] for agile flow for every single thing we
+[12:58.96] can see a template here. Okay. And if
+[13:01.20] you even if you're doing a simple
+[13:02.72] strategy and planning for that also we
+[13:04.72] have a specific template. So you can
+[13:06.40] choose your template and you can move
+[13:07.60] ahead. After that we have a option of
+[13:09.20] sticky notes. So for example here we
+[13:12.00] have multiple places. Now let's say my
+[13:15.12] team is like collaborating with each
+[13:17.20] other. We all have the same screen open
+[13:19.12] in our laptops and everybody wants to
+[13:21.36] contribute to this specific idea. Now
+[13:23.60] they all will be writing their thoughts
+[13:25.36] on the sticky notes. Let's say I have
+[13:27.52] divided my teams into multiple parts.
+[13:29.92] Let's say my team A will be using the
+[13:31.84] yellow sticky notes. My team B will be
+[13:34.00] using the blue sticky notes. Now team A
+[13:36.88] will be the team which will be executing
+[13:38.64] and team B will be the team who can let
+[13:40.72] you know as a developer that it's
+[13:42.56] possible or not. So both can align on
+[13:45.04] the same page on the same screen. Now at
+[13:47.52] the same time if you see here if I click
+[13:49.60] on this yellow sticky note if I come
+[13:52.00] here and if I want to write something
+[13:54.32] hey so this specific hey will be already
+[13:57.44] will be visible to all the people who
+[13:59.92] have been shared with the same page. Now
+[14:02.72] here we can see that they can write
+[14:05.28] their own opinion. Now I hope you guys
+[14:07.68] have understood how we are clicking on
+[14:09.28] the sticky notes and how we are dragging
+[14:11.12] the sticky notes anywhere on the screen
+[14:13.12] and when I'm writing something even my
+[14:15.44] cursor is there on the screen someone
+[14:17.84] else who is also working on the same
+[14:19.68] page they can see my cursor there.
+[14:22.00] Basically they can see that I'm working
+[14:23.52] on the same screen. Let's move ahead. So
+[14:26.40] here we have our option of a text. Let's
+[14:28.48] say I want to update something here and
+[14:30.88] specifically in this prototype I want to
+[14:32.80] change the name of the user. Currently
+[14:35.04] we have Christine here. I want to change
+[14:37.20] the name of something else. So I can
+[14:39.12] just click on the text and I can come
+[14:40.96] here. I'll double click on this. I'll
+[14:43.20] click here and I'll remove the text the
+[14:46.08] name or anything you want to edit for
+[14:48.48] that purpose. You can edit that. You can
+[14:50.32] write the name whatever name you want to
+[14:51.76] write here. Let's say I want to write
+[14:53.44] the name as. Now moving ahead with this
+[14:56.56] part. I can fix this the placement of
+[14:58.56] the text and I'm putting it here in the
+[15:00.80] center. Okay. And now we can move ahead.
+[15:03.52] We can see here how simple it was to
+[15:05.60] edit anything in this page. Now we have
+[15:08.80] learned how to use templates. We have
+[15:10.72] learned how to put new templates in the
+[15:12.96] previous templates. We have also learned
+[15:14.56] how to add multiple activities inside
+[15:16.80] the same template. So you can play along
+[15:20.08] with more tempong right. You can choose
+[15:23.28] multiple templates according to your
+[15:25.04] requirement and you can move ahead.
+[15:26.80] After that here we have the option to
+[15:29.20] slide. Now what does this mean? If I
+[15:31.68] want to create a again any specific type
+[15:34.24] of pitch or I want to create I want to
+[15:37.36] show someone my idea or I want to show
+[15:40.16] that okay this is what we are at what we
+[15:42.40] want to create in the future. We can
+[15:44.48] create entirely all the parts of the PPD
+[15:48.00] here only after giving the command to
+[15:50.48] the AI. Here I can give the command
+[15:52.80] whatever I want to create in a PPT and
+[15:55.04] one by one each slide of the PPT will be
+[15:57.52] created in front of you. After that we
+[15:59.44] have option add tools, media or
+[16:02.00] integration. If I click on here you can
+[16:04.24] see I have multiple options. I have
+[16:06.16] options of shapes and lines. I have
+[16:08.16] option of pen. I have option of frame. I
+[16:10.64] have option of sticky notes, emojis,
+[16:12.80] gif, comments and everything. Now these
+[16:15.52] are super helpful if you are working
+[16:17.84] with a team. Now if I'll click on
+[16:20.00] comments, I can add my comments anywhere
+[16:22.32] I want. Let's say I'm not convinced with
+[16:24.80] the signup page. I want to add something
+[16:26.64] else. So I can come on the signup page
+[16:28.96] above that and I can add the comment
+[16:30.80] that what should be improve or what
+[16:32.64] should be reduce or increase or change
+[16:34.96] the segment. Now these are the options
+[16:37.52] which you'll be getting here in the plus
+[16:39.20] section. Then click here again. You can
+[16:41.28] go down. Now we have all the templates
+[16:43.76] like this plus is basically a smaller
+[16:46.56] representation of whatever we have
+[16:48.24] learned till now. Okay, hopefully you
+[16:50.80] have understood. Now if you click on the
+[16:52.88] marketplace, you can see all these
+[16:54.88] places where you can sell all of this
+[16:57.44] value. Like for example, repeat. Okay,
+[17:00.40] now we have this marketplace where you
+[17:02.40] can share your work whatever you have
+[17:04.40] created till now. You can share it here.
+[17:06.24] Now let's say I want to share my entire
+[17:08.08] page, whatever I have worked on with my
+[17:10.08] entire team. So I can click on this
+[17:12.08] share option which is here in the corner
+[17:14.40] and once I'll click on the share option
+[17:16.48] I can see here I can title the page. Now
+[17:19.20] whatever title I want to put in the page
+[17:20.96] I can write it down here. For example
+[17:22.96] this was a project management stage to
+[17:24.96] project. So I'll be writing the same
+[17:26.88] name here and I'll be sharing with my
+[17:28.72] team. Okay. So I'll save as project
+[17:31.60] management part two. I'll be moving
+[17:33.68] ahead with the other things. Let's say I
+[17:35.92] want to copy this and I want to share
+[17:37.68] with my team. I can copy from here the
+[17:39.52] link and I can share with my team. Also,
+[17:41.36] if I want to add all of them on the
+[17:43.92] basis of their Google accounts or Slack
+[17:45.92] or Microsoft, I can enter their Google
+[17:48.00] accounts and I can invite them and they
+[17:49.76] can enhance this page and they can edit
+[17:51.68] on this. They can give their comment and
+[17:53.76] do whatever they want here. They can add
+[17:56.16] their comments and give their input
+[17:58.00] after clicking on this link once I'll be
+[17:59.92] sharing it with them. Now here from this
+[18:02.16] part I can copy the link and I can share
+[18:04.40] specifically with them. That is also one
+[18:06.40] option. The second option is I can give
+[18:08.08] their Google account, Slack or Microsoft
+[18:10.88] account here. Now moving ahead with I
+[18:13.68] can give the access from here. Do they
+[18:16.24] have any access to do any changes? So I
+[18:18.24] will be giving the access of viewer,
+[18:20.08] commenter, editor, anything. Right now
+[18:22.64] it's of no access. So I'll be making it
+[18:25.20] sure to have access here. So I'll be
+[18:27.04] giving the editor access here. In the
+[18:28.96] invite section we'll give this. So once
+[18:31.28] I want to invite my entire team, I can
+[18:33.12] directly share from here the copy link
+[18:36.08] option. I'll share the copied link. This
+[18:38.32] is the first option. The second option
+[18:40.08] if I want to include them with the help
+[18:41.76] of Slack, Google account or Microsoft, I
+[18:44.88] can just write there any of these
+[18:46.56] accounts here and they'll be having the
+[18:48.48] access. Currently it's showing it's no
+[18:50.64] access. So if I want to give them editor
+[18:52.56] access, I can click on the editor and
+[18:54.72] they'll be having the editor access also
+[18:56.56] of the entire page. I hope you have
+[18:58.40] understood. Now we can see here the
+[19:00.24] felicitation tools and reactions. So if
+[19:02.32] I want to give any specific reaction to
+[19:04.16] the meeting, let's say I'm having in a
+[19:05.84] I'm talking about my entire pitch deck
+[19:08.00] in the meeting and I want to give some
+[19:09.92] appreciation or any type of reaction and
+[19:12.24] I'll be giving my reaction. So timer,
+[19:14.56] voting, private mode, notes, anything I
+[19:17.28] want, I can write it down here. We have
+[19:19.36] all of these options to show your
+[19:20.88] engagement. Now after clicking on this
+[19:22.96] once you come to the activity section,
+[19:24.64] you can see the entire comments on your
+[19:26.72] page. So by now you should have a clear
+[19:29.92] understanding of how mirror works and
+[19:31.84] you have learned how to create board use
+[19:34.56] visual tools collaborate with your team
+[19:36.64] and organize ideas efficiently. If you
+[19:39.20] want to explore more you can check it
+[19:41.04] out mirrors which is a community library
+[19:43.92] full of templates created by
+[19:45.68] professionals. You can discover new
+[19:47.52] workflow framework create board design
+[19:50.24] from teams all over the world. And the
+[19:52.72] best way to truly learn Miro is simple.
+[19:55.28] Start your first real project. Create a
+[19:57.76] board. Add your ideas. Invite your team
+[20:00.24] and start collaborating visually.
+[20:02.08] Because once you have started using
+[20:03.60] mirror regularly, you will realize how
+[20:06.00] powerful visualization collaborative
+[20:09.04] technique this is. That's it for this
+[20:10.88] master class and I'll see you all in the
+[20:13.52] next tutorial.

@@ -1,0 +1,288 @@
+[0:02.20] you see these alerts now you will be
+[0:04.48] able to create a fully automated no code
+[0:07.72] way to find stocks intraday using this
+[0:10.56] alert system that we will build from
+[0:12.56] scratch yes it's an algorithm and you
+[0:15.00] will be able to do it for intraday or
+[0:16.92] long-term alerts whether it's
+[0:18.24] fundamental analysis or technical
+[0:20.28] analysis in this video we'll talk about
+[0:22.40] what are the main rules you should look
+[0:24.20] at if you're looking for stocks intraday
+[0:26.88] two we'll actually create a live alert
+[0:29.64] system
+[0:30.48] online three we will connect that live
+[0:33.16] alert system to telegram so telegram can
+[0:36.16] give you these realtime alerts on your
+[0:38.20] phone and when I say real time I mean
+[0:40.56] real time you'll get a notification and
+[0:42.68] you'll know so what are we waiting for
+[0:45.32] let's get started but before we do hit
+[0:47.36] that like hit that subscribe let's
+[0:53.83] [Music]
+[0:58.92] begin
+[1:01.22] [Music]
+[1:02.80] now selecting stocks for intraday
+[1:04.72] actually depends on what kind of trading
+[1:06.68] system you have but regardless of
+[1:08.72] whatever kind of system you have you
+[1:10.60] will need to make sure of a few things
+[1:12.92] the first thing is your stock Universe
+[1:15.52] look at this stock over here you'll
+[1:17.40] notice that the market is going up it's
+[1:20.08] going down but you also see those
+[1:22.08] horizontal dots right that's when price
+[1:25.64] didn't move I want you to think about
+[1:28.24] this for a minute intraday price didn't
+[1:31.00] move why would that happen it's because
+[1:33.68] there were no buyers and sellers for
+[1:35.44] those minutes now if you are trading
+[1:37.60] intraday you need to have liquidity or
+[1:39.56] you need to have buyers and sellers
+[1:41.68] always there in the market
+[1:44.00] ex and a lot of us start thinking CH
+[1:47.36] stock here let me trade it so you have
+[1:49.44] to make sure you don't trade these so
+[1:51.36] the first tool is stay away from IL
+[1:53.88] liquid stocks another way to look at
+[1:56.12] this is just simply volume this is the
+[1:58.00] volume of Tata steel for example and
+[2:00.48] that turns out to be a turnover of so
+[2:02.48] many crores in a single day but this
+[2:04.56] random stock over here has very little
+[2:07.20] volume the total turnover for the day is
+[2:09.52] only this much and this basically means
+[2:12.00] there are more people trading buying
+[2:13.64] selling on Tata Steel versus this random
+[2:17.60] stock so rule number one stay true to
+[2:20.48] the top Nifty 100 Stocks by market cap
+[2:24.12] so you know that you will have liquidity
+[2:26.44] the second thing you should look out for
+[2:28.16] is huge macro economic news or specific
+[2:32.56] news for the industry now let's suppose
+[2:34.60] elections are around the corner or
+[2:36.28] there's a huge announcement from the
+[2:37.72] government or something major is
+[2:40.00] happening in that industry that can make
+[2:42.04] or break that industry for example real
+[2:44.72] money gaming recently got a 18% tax now
+[2:49.00] this is a decision that is not only
+[2:51.36] changing that industry but also affects
+[2:54.00] the industry as a make or break
+[2:56.00] situation now luckily real money gaming
+[2:58.12] is not listed and you can't really trade
+[2:59.96] it but if you could you would avoid
+[3:02.64] trading those companies during this time
+[3:04.92] now having said that there are some
+[3:06.80] traders who actually look for these
+[3:08.64] events and try to make money from that
+[3:10.72] volatility but ideally you don't want to
+[3:12.68] trade stocks where there's an external
+[3:14.44] Force coming in and you're not able to
+[3:16.64] control it and because of that your
+[3:18.36] system messes up for example when there
+[3:21.08] is a crr hike I do not trade intraday
+[3:24.92] actually the truth is I don't trade
+[3:26.40] intraday at all I'm mostly an investor
+[3:29.48] and that's just how it is with age I've
+[3:31.52] become more confident with longer term
+[3:33.56] Holdings versus doing those 5 minute
+[3:35.52] 10minute charts because it's too much
+[3:39.76] stress if I do in they'll become like
+[3:42.32] 100 now step number two is actually
+[3:44.92] finding the stocks that you're looking
+[3:46.64] for now as I said before I'm not going
+[3:48.96] to give you the criteria and if you had
+[3:51.48] to create your own scanner it would take
+[3:53.48] a lot of effort you would have to
+[3:54.88] install python connect it to a data
+[3:56.72] source manage the database find out what
+[3:59.16] you're looking for for run the scan get
+[4:01.12] the alert and push it out to you and we
+[4:03.84] are not coders at least I'm not a coder
+[4:06.88] and if you not then this video is for
+[4:09.00] you because we'll do a non-code way of
+[4:11.20] doing this we'll simply use a tool
+[4:13.28] called chart ink you've probably seen it
+[4:15.44] before head on to their website and hit
+[4:18.08] the screen section and over here you'll
+[4:20.16] see a bunch of screens there are
+[4:21.88] fundamental screens you can also run
+[4:24.16] scans on technical criteria now the good
+[4:27.04] thing is they have a decent way for you
+[4:28.72] to actually go through different
+[4:30.44] criterias and create those scans so what
+[4:33.64] I'll do is I'll randomly click on one of
+[4:36.76] these technical scanners and see what we
+[4:39.44] get so we'll click on this one and it
+[4:41.96] will open up now you'll see we get a
+[4:44.72] list of stocks that match the criteria
+[4:47.52] now notice over here it says what the
+[4:49.64] criteria is it's a technical criteria
+[4:52.64] based on this the scan runs in real time
+[4:54.72] and spits out an answer now sometimes
+[4:56.72] the scans are wrong so you should check
+[4:58.76] whether it was correct or not but mostly
+[5:01.16] it should be okay now honestly this
+[5:03.32] scanner sucks because look at these
+[5:06.08] companies over here they're unknown low
+[5:08.16] liquidity and all that nonsense simply
+[5:10.48] go up here edit and uh start with this
+[5:13.60] filter now what you have to select over
+[5:15.84] here is only Nifty 100 or nifty 50
+[5:18.48] companies as soon as you apply this the
+[5:21.08] test or the scanner will actually run
+[5:23.52] only on the top 50 or the top 100 and
+[5:26.36] this takes away our liquidity issue now
+[5:28.60] most of us think an alert system is
+[5:31.04] telling us where to buy and sell it may
+[5:32.96] not be the case it could also be a short
+[5:34.76] list maybe you want to just short list
+[5:36.88] stocks which are hitting alltime highs
+[5:38.80] maybe you want to short list stocks
+[5:40.48] which give a fantastic quarter profit
+[5:43.04] maybe companies uh have reduced their
+[5:45.28] debt from X to X and you want to keep it
+[5:47.36] as a short list this is a great way for
+[5:49.84] you to keep track of what you want to
+[5:51.88] keep track of without looking at the
+[5:54.32] screen so using this scanner you not
+[5:56.64] only get this information you can also
+[5:58.68] send it to your phone now there are
+[6:00.64] multiple ways of doing this but we are
+[6:02.44] going to use telegram now I know
+[6:04.88] telegram but this is not for tips this
+[6:07.92] is for your own personal use it's like
+[6:10.32] your Bot it will run get the information
+[6:12.92] and spit it out for you now let's
+[6:14.88] understand how to actually connect these
+[6:16.12] two things to create the scanner on the
+[6:18.24] telegram
+[6:20.40] grou you can simply go to if
+[6:23.88] D choose if.com
+[6:28.40] slre make sure you log in at
+[6:31.56] IFD now click on the ad
+[6:34.07] [Music]
+[6:35.32] part on the all services page type in
+[6:38.64] Web book and you will find web hop down
+[6:41.80] right there once the web hop page opens
+[6:44.68] click on the receive a web request page
+[6:47.48] and a new page will open on the web
+[6:49.76] request page you will have to put in the
+[6:51.84] event name let's put our event name
+[6:54.12] which is RB updated now simply click on
+[6:57.32] create a trigger now you will see then
+[7:00.24] that and an add button click on the add
+[7:03.24] button Now search for telegram and when
+[7:05.88] you find telegram just click on telegram
+[7:08.44] since we want to receive a message I'll
+[7:10.48] simply click on send message make sure
+[7:13.08] you have added your telegram account
+[7:14.84] just like in the screen capture here
+[7:16.60] make sure to select where the telegram
+[7:18.68] chart should give you the message now in
+[7:20.64] the end you will see whether to include
+[7:22.52] web page preview make sure you enable
+[7:24.52] that button now finally click on
+[7:26.56] continue to proceed make sure that you
+[7:28.72] have turned on on the receive
+[7:29.96] notification when this applet runs and
+[7:32.16] now click on the Finish button now as
+[7:34.24] you can see on the screen we have made a
+[7:35.84] telegram chat part now as you can see on
+[7:38.20] the screen we have successfully done
+[7:39.92] this now simply click on the web hook
+[7:42.04] icon that you see on the screen now to
+[7:44.12] test this feature let's click on the
+[7:45.64] documentation button make sure you're
+[7:47.84] under this tab now under this feature
+[7:51.00] make sure you type in the name that you
+[7:52.84] put before which is artb
+[7:56.52] updates for testing purposes let's put
+[7:59.76] value as R1 R2
+[8:03.48] R3 now let's simply scroll down and test
+[8:06.80] whether it's running smoothly or
+[8:09.48] not now the pop-up says that the event
+[8:11.88] has been triggered now what will happen
+[8:14.40] is on telegram you will receive a
+[8:16.24] special message from if T that the test
+[8:19.24] has been
+[8:20.96] successful so the next step is to click
+[8:23.28] on the menu button and choose connect
+[8:25.40] group now message will pop up and you
+[8:27.52] have to choose a group within the
+[8:29.28] telegram where you want the messages to
+[8:30.96] come for this example let's click on the
+[8:33.16] tweezer
+[8:35.52] [Music]
+[8:36.72] top perfect now you can see the message
+[8:39.12] that the if T is now connected to pz
+[8:43.40] top now let's go back to the if T
+[8:46.20] website and choose
+[8:51.80] settings choose my applad from the top
+[8:56.52] [Music]
+[8:57.80] bar choose areb updates the one that we
+[9:01.20] just created a new web page will open
+[9:03.28] and on the top right side you will see
+[9:08.08] settings but now instead of sending a
+[9:10.36] message I want to receive message so
+[9:12.28] let's click on this
+[9:13.64] button all right so now you will see
+[9:15.96] Target chart click on target chart and
+[9:18.36] you will see group to is a top let's
+[9:20.84] choose that and scroll down and click on
+[9:24.04] the update action button click on the
+[9:26.84] update below and you will see that the
+[9:28.76] app has been
+[9:31.92] updated all right so let's now go back
+[9:34.16] to charting and it says a time frame
+[9:36.12] from 5 minutes to 1
+[9:38.88] minute all right so now you will see a
+[9:41.28] URL button that's coming on the bottom
+[9:43.08] of the screen to find this URL you have
+[9:45.44] to go back to if copy this link and
+[9:49.08] paste it on the
+[9:51.78] [Music]
+[9:54.44] charting once you paste it on charting
+[9:56.88] click on Save alert as as you can see
+[9:59.64] the alert is now saved now let's see
+[10:02.16] live whether we receive the message on
+[10:04.32] telegram or not let's open up telegram
+[10:06.92] all right so we have the message on the
+[10:08.76] twizer toop group from if T and now we
+[10:12.00] have all the data that was supposed to
+[10:13.64] come from charting on telegram now we
+[10:16.24] can see data patterns sham metal and
+[10:19.68] sumam lot of labs that are coming up on
+[10:22.40] the screen which are forming TW off we
+[10:25.12] realized a lot of us have learned about
+[10:28.24] strategies what are options what is
+[10:30.40] trading what is investing but when it
+[10:32.76] actually comes to technically doing it
+[10:35.56] no one tells us what kind of tools to
+[10:38.04] use to make your life easier the
+[10:40.12] internet is a fantastic place now in
+[10:42.48] 2023 you can actually automate stuff if
+[10:45.36] you know exactly what you want so we
+[10:47.80] thought we'll create videos like this
+[10:49.76] where we explain different tools on the
+[10:51.52] internet hopefully the free ones so you
+[10:53.48] can connect them together and make your
+[10:55.00] life easier if you thought this was
+[10:56.96] useful tell me in the comments below the
+[10:59.36] entire crew over here will be reading
+[11:01.68] all the comments and if all of you say I
+[11:03.84] want more videos about tools and make my
+[11:06.08] life easier then we'll understand this
+[11:07.76] is something you want and we'll make
+[11:09.24] more videos around tools to make your
+[11:11.64] life easier tell me if it's good if it's
+[11:13.68] not we'll go back to just teaching other
+[11:15.32] stuff and hit that like hit that
+[11:17.20] subscribe and see you in the next
+[11:20.62] [Music]
+[11:23.08] video
+[11:25.48] interesting how why oh
+[11:32.76] wow what he
+[11:38.62] [Music]
+[11:42.12] planning

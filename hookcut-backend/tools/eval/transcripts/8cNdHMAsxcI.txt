@@ -1,0 +1,594 @@
+[0:00.08] Hey everyone, welcome to second part of
+[0:01.92] our video on data center stocks to
+[0:03.76] benefit from AI boom in India. In the
+[0:06.24] first part of the video, we discussed
+[0:07.92] what exactly is a data center and how
+[0:10.32] exactly it works. If you haven't watched
+[0:12.40] the previous video, kindly watch it
+[0:14.24] first to get a proper understanding of
+[0:16.32] data center value chain. In the first
+[0:18.56] part, we also discussed the grow drivers
+[0:20.40] for data center in India. Now, in
+[0:22.56] today's video, we'll discuss the key
+[0:24.56] listed companies in Indian data center
+[0:26.56] value chain. Also, since no theme is
+[0:29.68] completely risk-f free, we'll also cover
+[0:31.84] key risk and data center growth thesis.
+[0:34.00] So, watch the video till the end. All
+[0:35.68] right, let's get started.
+[0:39.04] Let us start with the most obvious part
+[0:41.04] of data center, the actual computers. As
+[0:43.76] discussed, there are three types of IT
+[0:45.36] equipments. Servers, storage system, and
+[0:47.76] networking gear. Unfortunately, Indian
+[0:50.56] companies have almost no major presence
+[0:52.80] in this core layer. For instance, GPUs
+[0:56.16] are the core of computation and it is
+[0:58.40] completely owned by Nvidia. However,
+[1:01.04] there are a couple of opportunities in
+[1:02.64] this segment. First is Neteb, India's
+[1:05.76] only Nvidia OEM server partner. It
+[1:08.80] manufactures server storage and AI
+[1:11.20] compute systems domestically. Plus, it
+[1:13.68] is also a beneficiary of PLI scheme. So
+[1:16.80] when a hyperscaler builds an AI data
+[1:18.80] center in India and needs India made
+[1:21.12] server there is essentially one name and
+[1:23.36] that is in net web and it is also
+[1:25.76] clearly reflected in company's
+[1:27.04] financials that has grown exponentially
+[1:29.60] that also got reflected in share price.
+[1:31.60] I remember covering net long back at
+[1:33.84] very low levels. Unfortunately the
+[1:35.92] biggest issue today is that Netweb is
+[1:37.92] trading at very high valuation. By the
+[1:40.08] way, I'm closely tracking network
+[1:41.52] quarter results in my exclusive weekly
+[1:43.28] video series where I track nearly 200
+[1:45.52] companies including few other data
+[1:47.20] center companies as well. But I also
+[1:49.20] share my own investment strategy in
+[1:51.12] terms of what I am buying or selling and
+[1:53.52] my thought process behind the decision.
+[1:55.44] Again, the idea is not to give buy or
+[1:57.36] sell call. The idea is to share my own
+[1:59.68] investment thesis. See the fact is that
+[2:02.32] majority of you would have a job or
+[2:04.64] business and would not get enough time
+[2:06.72] to do research for market and that's
+[2:08.72] where I try to add value as I spend
+[2:10.72] nearly 8 to 10 hours in market research
+[2:12.72] on a daily basis. Okay, moving on.
+[2:14.72] Second company in IT space is E2E
+[2:16.80] network. It is basically a cloud intra
+[2:19.76] company. Think of it like this. If you
+[2:21.84] are a startup or an AI company or even a
+[2:24.48] midsize enterprise and you need powerful
+[2:27.04] computer with GPUs to train AI model now
+[2:29.92] you have two choices either you buy
+[2:32.24] expensive hardware set up your own infra
+[2:34.96] manage power cooling maintenance which
+[2:37.44] is quite complicated and capital
+[2:39.28] intensive or you rent it. So E2 provides
+[2:43.28] that rental model. They offer
+[2:45.20] cloud-based GPU compute. That means you
+[2:48.16] can login, deploy your AI workload,
+[2:50.96] train your model, run inference, and pay
+[2:53.28] for usage. You don't own the machine.
+[2:55.92] You just use them. But the catch is E2E
+[2:58.64] is infrastructure heavy business. They
+[3:00.72] have to invest in hardware and hardware
+[3:02.88] depreciate. Technology evolves fast. Its
+[3:05.92] financials are also very volatile. Its
+[3:08.00] revenue has grown nearly five times
+[3:09.76] between 21 to 25 and margins expanded
+[3:12.48] significantly. that resulted in
+[3:14.24] exponential profit growth. However,
+[3:16.48] trailing 12 month has witnessed sharp
+[3:18.16] fall in margin that resulted in degrowth
+[3:20.32] in operating profit and high
+[3:22.08] depreciation resulted in negative profit
+[3:23.84] in trailing 12 month. Its stock has also
+[3:26.08] reflected the same pattern when growth
+[3:28.24] was exponential during November 24 and
+[3:30.72] then it witnessed massive correction. So
+[3:32.80] on one side there's high growth
+[3:34.56] potential for E2 network with rising
+[3:36.48] demand for cloud infra. It also comes at
+[3:39.04] the cost of high volatility.
+[3:42.56] After compute, second critical layer in
+[3:44.48] data center is power infrastructure. If
+[3:47.20] IT equipment is the brain of data
+[3:49.12] center, power infrastructure is the
+[3:51.28] heart. Without power, nothing works. Not
+[3:54.24] for a single second. Now in the first
+[3:56.32] part of the video, we discussed the
+[3:58.08] entire power value chain within data
+[3:59.92] center and how the power is stepped
+[4:02.24] down, stabilized and distributed within
+[4:04.88] the data center. Now the question is
+[4:07.28] which companies play a critical role in
+[4:09.20] this value chain. So first company is
+[4:12.00] Hitachi Energy an Indian subsidiary of
+[4:14.56] Japanese company Hitachi. It makes the
+[4:17.12] massive transformers that step down 220
+[4:20.32] KOW power to let's say 11 KOW or 33 KOW
+[4:24.40] so it can enter the facility safely.
+[4:26.96] Their specialization is in high voltage
+[4:29.20] range like 132 KOW to 400 KOW. the
+[4:32.56] largest most technically complex
+[4:34.56] transformers. Very few company in the
+[4:36.72] world can make these and that scarcity
+[4:38.80] is their mode. Financially its revenue
+[4:40.96] growth is modest but margins have
+[4:43.04] expanded that resulted in solid growth
+[4:45.04] in profits especially trailing to growth
+[4:47.60] is exponential and this is clearly
+[4:49.52] reflected in share price that has jumped
+[4:51.60] exponentially. Again, the catch is crazy
+[4:53.92] valuation. But it's amazing how market
+[4:56.24] is paying a high premium to Hitachi and
+[4:58.40] it is trading at an all-time high in
+[5:00.80] spite of this weak market environment
+[5:02.88] that shows the inherent strength in
+[5:04.56] stock and market is expecting solid
+[5:06.64] growth in coming quarters. Now once high
+[5:09.12] voltage power enters the facility via
+[5:11.52] Hitachi's transformer it needs to be
+[5:14.00] stepped down further from 11 kilovolt to
+[5:17.04] 415 volt or 230 volt at multiple points
+[5:20.56] inside the building before it reaches
+[5:22.08] the equipment. So one of the companies
+[5:24.24] Shelchar that makes these smaller
+[5:26.32] distribution and specialy transformer.
+[5:28.56] Think of them as secondary transformers
+[5:30.64] inside the facility not the big one at
+[5:32.80] the gate. Again its revenue and profit
+[5:35.04] growth is extraordinary and that got
+[5:36.96] reflected in share price. However,
+[5:38.88] there's a good correction from June 25
+[5:40.64] highs. Valuations are also reasonable.
+[5:43.04] Now once the power enters into the
+[5:44.72] facility, it needs to be distributed
+[5:46.88] into data center that is spread across
+[5:48.80] thousands of square ft and it needs to
+[5:51.20] be controlled. We need to be able to
+[5:53.12] switch sections on and off for
+[5:54.72] maintenance. If there's a fault in one
+[5:56.80] room, you need to isolate it instantly
+[5:59.20] without taking down the entire facility.
+[6:01.28] If a circuit is drawing too much
+[6:02.72] current, you need automatic protection
+[6:05.04] that trips before a fire start and that
+[6:07.60] is done with switch gears. So here you
+[6:10.08] have three companies competing
+[6:11.68] head-to-head. ABB India that is Indian
+[6:14.16] subsidiary of Switzerland based company
+[6:16.16] ABB, Seammens Limited, Indian subsidiary
+[6:18.80] of German based company Seammens AG and
+[6:21.28] Schneider Electric, Indian subsidiary of
+[6:23.36] French company Schneider Electric SE.
+[6:25.84] Now ABB operates strongly in high
+[6:28.24] voltage and medium voltage segment. It
+[6:30.96] include your transformers, substations,
+[6:33.36] grid automation and switch gear. In data
+[6:36.08] center, its role is largely at the power
+[6:38.88] backbone level where it ensure reliable
+[6:41.28] transmission, voltage control and
+[6:43.60] protected distribution from the grid to
+[6:45.52] the campus. ABBS also offer products
+[6:47.76] that act as both switch gear and UPS
+[6:50.48] that is the next in the value chain.
+[6:52.40] Financially, AB revenue growth is
+[6:54.00] decent, nothing exponential, but its
+[6:56.16] margins have expanded big time that
+[6:58.08] resulted in very high profit growth.
+[7:00.08] However, December 25 has witnessed fall
+[7:01.84] in margin that resulted in degrowth in
+[7:04.00] profit. AB share has grown exponentially
+[7:06.80] but then it corrected nearly 50% from
+[7:08.96] peak but now stock is showing recovery.
+[7:11.04] The catch is in spite of this fall
+[7:12.88] valuations are not cheap. Then semens
+[7:15.36] limited provides switch gear, building
+[7:17.44] electrification, smart infrastructure
+[7:19.44] and automation system within data
+[7:21.68] center. It plays a role in power
+[7:23.52] distribution and building level
+[7:25.44] electrical system that include
+[7:27.28] monitoring as well as control. It sits
+[7:29.92] between grid level infra and internal
+[7:32.40] facility management. Financial company
+[7:34.48] has grown at average rate but it share
+[7:36.48] price has shown solid growth. Although
+[7:38.32] there's a good correction since December
+[7:40.00] 24 high. Next, your Schneider Electric
+[7:42.24] goes deeper inside the facility. Beyond
+[7:44.72] switch gear, it is strong in UPS system,
+[7:46.96] PDUs, rack level power distribution and
+[7:49.44] precision cooling. Financially, AMIA has
+[7:51.84] grown at fantastic rate and it got
+[7:53.68] reflected in the share price. Although
+[7:55.60] there's a good consolidation in last two
+[7:57.28] years. Again, valuations are expensive.
+[7:59.52] Apart from these three Indian
+[8:00.96] subsidiaries of global players, we have
+[8:03.04] one Indian company that sits into the
+[8:04.80] intersection of distributors and switch
+[8:07.12] gears. It's CG power. When power comes
+[8:10.08] from grid at high voltage, transformers
+[8:12.40] tap it down to usable levels like 33
+[8:14.88] kilovolt or 11 kilowatt and that's where
+[8:17.36] your CG power plays a role. After that,
+[8:19.92] switch gear distributes and protect
+[8:21.52] electricity across different sections of
+[8:23.28] the facility. In simple terms, CG power
+[8:25.92] is a power distribution and voltage
+[8:27.76] management player within the data center
+[8:29.60] value chain. Now, I don't know how many
+[8:30.96] of you are aware, but CG power has been
+[8:33.04] one of the biggest turnaround stories.
+[8:34.88] At one point in time, CG Power was
+[8:36.96] struggling badly with losses. But
+[8:38.88] Murukapa Group acquired it in September
+[8:40.88] 20 and it changed its fortune. Company's
+[8:43.44] revenue more than doubled and operating
+[8:45.36] profit jumped exponentially from 2020
+[8:47.36] lows that got reflected in share price
+[8:49.92] which simply exploded. Although there's
+[8:51.92] a solid consolidation since October 24
+[8:53.92] high. Again from valuation point of
+[8:55.60] view, stock is expensive. Now once the
+[8:58.40] power reaches every part of data center,
+[9:00.56] the next step is to ensure 100% uptime.
+[9:03.52] You can't afford a few milliseconds of
+[9:05.68] downtime because that can crash the
+[9:08.16] server, corrupt the database and halt
+[9:10.48] all transactions. Hence, you need UPS.
+[9:13.60] So here again you have Schneider
+[9:15.44] Electric, EBB India and Seammens India.
+[9:18.32] Now the catch is UPS is good to provide
+[9:21.20] the uninterrupted power for few minutes.
+[9:23.76] But what if there's a major fault or a
+[9:25.76] storm or transformer failure that takes
+[9:28.08] hours to fix and that is where your
+[9:30.16] diesel generator comes into picture.
+[9:32.00] Here you have two companies Cumins India
+[9:34.16] which is Indian subsidiary of US-based
+[9:36.16] company Cumins and KO that is Kiloskar
+[9:39.60] Oil Engine Limited. Now Commence India
+[9:41.44] is the gold standard for mission
+[9:42.96] critical backup power. When a data
+[9:44.64] center engineer is specifying backup
+[9:46.48] power for a facility that cannot fail,
+[9:49.04] commence is often specified by name
+[9:51.36] before the tender is even issued. The
+[9:53.60] service level across India is deep and
+[9:56.16] in the generator business service is
+[9:58.08] almost as important as the product
+[9:59.76] itself because a generator that is not
+[10:02.16] maintained is a generator that will not
+[10:04.16] start when you need it most. Then Klocal
+[10:06.80] Oil Engine is the strong domestic
+[10:08.48] alternative. More competitive on price,
+[10:10.88] growing capacity and a trusted brand in
+[10:12.96] the mid-range genet market. Commence
+[10:15.04] revenue growth is decent but profit
+[10:16.72] growth is sharper due to margin
+[10:18.08] expansion. It share price has also grown
+[10:20.24] exponentially and still trading near
+[10:22.16] all-time high. Again, valuations are
+[10:24.24] elevated. Kiloscar oil engine has also
+[10:26.72] witnessed sharp margin expansion and
+[10:28.64] hence solid earning growth that got
+[10:30.56] reflected in share price. Valuations are
+[10:32.88] again on higher side. Now normal
+[10:34.88] enterprise data center may consume 10 to
+[10:37.36] 30 megawatt and diesel generators are
+[10:39.44] perfectly fine there. But modern AI and
+[10:42.24] hypers scale campuses are now talking
+[10:44.32] about 100 megawatt, 300 megawatt, even 1
+[10:47.28] gawatt power requirement. At that scale,
+[10:49.76] you need gas turbines. A gas turbine
+[10:52.40] allows the operator to generate power on
+[10:54.96] site instead of depending fully on the
+[10:56.96] grid. Manufacturing it requires
+[10:59.04] precision engineering, specialist
+[11:00.88] materials, and deep electrical
+[11:02.72] engineering. It is not a commodity. And
+[11:05.76] this is where your TD power system fits
+[11:07.68] into the data center value chain. They
+[11:09.84] do not make the complete generator. They
+[11:12.00] make the alternator. The electricity
+[11:14.00] generating heart that goes inside it.
+[11:16.48] The demand for TD power is clearly
+[11:18.16] visible in financials. Revenue growth
+[11:19.92] has been solid but net profits have
+[11:21.92] simply exploded due to margin expansion
+[11:24.40] and that also got reflected in share
+[11:26.16] price. Again market is already valuing
+[11:28.80] the company at higher valuation. So if I
+[11:30.72] quickly summarize the beneficiary within
+[11:32.64] power value chain you have Hit it India
+[11:34.80] Shilchart technology followed with ABB
+[11:36.96] India Seammens limited Schneider
+[11:39.04] Electric CG powered then you have Cumins
+[11:41.20] India Kiloscar oil engine and then you
+[11:43.52] have TD power.
+[11:46.40] Now every computation generates heat and
+[11:48.64] in a data center where thousands of
+[11:50.80] servers are running at full capacity
+[11:52.40] around the clock the amount of heat
+[11:54.40] generated is extraordinary. Hence you
+[11:56.96] need massive cooling systems that can
+[11:59.04] remove heat faster than it is generated.
+[12:01.60] So first company in this segment is
+[12:03.20] Blueestar. It is the most focused Indian
+[12:05.76] listed company in precision DC cooling.
+[12:08.40] Blueest star has dedicated data center
+[12:10.32] vertical not just HVAC that is heating
+[12:13.28] ventilation and air conditioning for
+[12:14.80] offices. As liquid cooling adoption
+[12:16.64] grows in India, Blueest Star is
+[12:18.16] positioned to be a key domestic
+[12:19.60] supplier. Again its growth has been
+[12:21.36] phenomenal in last 3 to 5 years. But
+[12:23.44] trading 12 month has witnessed fall in
+[12:25.04] revenue and profit growth. Share price
+[12:26.96] has seen exceptional growth but stock
+[12:28.56] has been consolidating since January 25
+[12:30.88] high but still valuations are expensive.
+[12:33.28] Then second company is Voltas. For
+[12:35.44] Voltas data center is one of the
+[12:37.28] business vertical. Company is well
+[12:38.96] placed for large campus cooling on
+[12:40.56] hypers scale projects given their
+[12:42.32] project execution capability and brand
+[12:44.08] trust. Although less specialized than
+[12:46.08] blue star and precision cooling but
+[12:47.92] benefit from scale and relationships.
+[12:49.68] Its ending growth has been average
+[12:51.36] especially sharp deg growth and trailing
+[12:52.96] 12 month due to unusually cool summer
+[12:54.64] last year. Share price is also corrected
+[12:56.64] since September 24 high. Again
+[12:58.40] valuations are expensive. Then third
+[13:00.56] company is KRN heat exchanger. KN is not
+[13:03.52] a pure data center cooling specialist
+[13:05.44] but it benefits indirectly from growth
+[13:07.76] in large cooling capacity expansion
+[13:09.76] particularly in hypers scale and AI data
+[13:11.60] center. Company recently got listed in
+[13:13.68] 24 so we don't have much historical data
+[13:16.00] but recent earning growth has been
+[13:17.44] great. Share price has already doubled
+[13:19.44] from listing and valuations are again
+[13:21.44] expensive.
+[13:24.16] Next you need to build the physical data
+[13:25.92] center and this is where the EPC players
+[13:28.16] comes in. So your first company is LNT
+[13:30.64] which is India's engineering
+[13:31.92] conglomerate and the only Indian company
+[13:34.16] building Nvidia AI factories. Although
+[13:36.08] L&T's data center contribution is very
+[13:38.08] low as a percentage of total revenue but
+[13:40.32] data center is a high growth vertical.
+[13:42.32] Also LNT is most credible EPC contractor
+[13:45.12] for any hyperscaler building in India.
+[13:47.52] Second company is Techno Electric. This
+[13:49.68] is most pure play DC EPC in India and
+[13:52.64] its revenueian profit growth is also
+[13:54.24] explosive. It share price also reflected
+[13:56.16] that growth. However, it fell down
+[13:57.76] significantly from October 24 high. Now
+[14:00.32] from valuation point of view, you won't
+[14:02.16] find it expensive. But please note that
+[14:04.16] EPC companies never command very high
+[14:06.32] valuation because they are highly
+[14:08.24] working capital intensive and margins
+[14:10.32] are sensitive. So its return ratios are
+[14:12.16] not great. In short, EPC business look
+[14:14.72] great in expansion cycle but they carry
+[14:16.72] hidden balance sheet and margin risk
+[14:18.16] when condition changes. Then you can
+[14:20.24] also consider one real estate company
+[14:21.84] Anantraj that is quickly pivoting into
+[14:24.32] DC already owns large land parcels in
+[14:26.96] Hana which is ideal geography for Delhi
+[14:29.20] NCR data centers. Having said this real
+[14:31.84] estate companies carry massive execution
+[14:33.76] risk.
+[14:36.16] Finally, you have cables and wires that
+[14:38.00] carry the data between servers, racks
+[14:40.56] and you have fiber infra that carries
+[14:42.40] the data between cities and countries.
+[14:44.88] Here cables and wires include three
+[14:46.48] company Polycap, KI wires and Apar
+[14:49.36] industries. All three of them have
+[14:51.44] immensely benefited from KEX cycle in
+[14:53.44] India in last four five years which is
+[14:55.68] clearly reflected in their financials.
+[14:57.60] Poly revenue and profit growth have
+[14:59.20] compounded at more than 20% rate that
+[15:01.68] got reflected in share price as well.
+[15:04.08] Likewise, KI has also grown at 20% rate
+[15:06.88] and share price reflected the growth.
+[15:08.88] Apar industry specializes in cables as
+[15:11.60] well as transformer oil and hence grown
+[15:13.84] at even faster rate in last three years
+[15:15.92] and share price reflected that growth.
+[15:17.76] Now data center continue to create
+[15:19.60] demand for cables and wires. Only catch
+[15:21.76] is all three of them are trading at
+[15:23.68] elevated valuations and market is
+[15:26.00] already discounting near-term positive
+[15:27.76] news. Having said this, cable and wires
+[15:30.24] can continue to show momentum. Now
+[15:32.40] within fiber optic and network infra you
+[15:34.80] have sterlite technologies and data
+[15:36.72] communication. Statite tech is one of
+[15:38.80] the world's top 10 optical fiber
+[15:40.64] manufacturer. Every data center requires
+[15:43.12] extensive internal fiber cabling and
+[15:45.28] India's data center boom is a direct
+[15:47.44] volume tailwind. Only catch is fiber
+[15:50.48] optic is a commoditized business and
+[15:52.80] this is clearly visible with volatility
+[15:54.96] in company's margin. Revenue growth has
+[15:57.28] been flat and operating profits have
+[15:59.04] fallen significantly. that was visible
+[16:01.20] in Kamishia price. However, recently
+[16:03.12] there's a massive price volume action in
+[16:04.80] last few trading session and that
+[16:06.48] suggests some big positive news coming
+[16:08.00] for Starlight tech. Now, data center
+[16:09.84] needs massive low latency highspeed
+[16:12.00] bandwidth and data communication owns
+[16:14.08] and operate a large global fiber
+[16:16.48] backbone and submarine cable network
+[16:18.88] spanning across Asia, Europe and
+[16:20.80] America. Without that backbone, the data
+[16:23.20] center cannot serve global traffic.
+[16:25.28] Although financially revenue growth in
+[16:26.80] last few year is very low and net
+[16:28.88] profits have actually fallen and share
+[16:30.88] price is also consolidating for a long
+[16:32.56] time but valuations are quite reasonable
+[16:34.64] at DVO to bit of 11. Now let's look at
+[16:36.96] key risk in data center growth thesis.
+[16:40.88] So first risk is capex cycle risk. Today
+[16:43.44] data center theme is looking very
+[16:44.88] promising because world's top
+[16:46.80] hyperscalers are projecting a capex of
+[16:49.52] $600 billion in 2026. Basically, there's
+[16:52.80] a capeex super cycle happening in AI and
+[16:55.20] cloud investment. But this capex is
+[16:57.20] happening at the cost of free cash flow.
+[16:59.60] As long as revenue growth justifies it,
+[17:01.60] market rewards it. But what if AI
+[17:04.00] monetization takes longer? What if
+[17:06.00] enterprise IT spending slows? What if
+[17:08.48] ROI on AI infra is lower than expected?
+[17:11.36] And if hyperscalers reduce capex even by
+[17:14.32] 15 20%, data center companies can see
+[17:17.12] moderation in growth and valuation
+[17:19.04] derating. Today market optimism for data
+[17:21.52] center is at its peak because of massive
+[17:23.92] capex. But the moment thing slows down
+[17:26.32] things can turn negative very fast. So
+[17:28.40] you must keep this risk in mind before
+[17:30.08] investing your money. 2026 may be great
+[17:32.56] for data center companies but remember
+[17:34.48] that it is only because of high capex.
+[17:36.88] The moment capex slowdown things can
+[17:38.72] become difficult. Then second risk is
+[17:40.40] supply demand risk. Today every major
+[17:42.72] player from hyperscalers to real estate
+[17:44.96] developer is rushing to build new data
+[17:47.04] center because the demand for cloud AI
+[17:49.60] and storage is exploding. But what if
+[17:52.40] supply grows faster than demand? We have
+[17:54.56] seen this before in Indian wheel state.
+[17:56.96] Developers built shiny new apartment and
+[17:59.20] office towers but demand could not keep
+[18:01.76] up that resulted in vacancy falling
+[18:04.40] lease rate and poor return. The same
+[18:06.40] thing can happen in data centers. If too
+[18:08.80] many racks come online at the same time,
+[18:11.12] utilization will lack. If hyperscalers
+[18:13.04] or large line delay expansion, orbiter
+[18:15.28] may be stuck with empty capacity earning
+[18:17.36] nothing. Remember, data centers are not
+[18:19.68] cheap warehouses. They are ultra capital
+[18:21.68] intensive. Then there is another angle.
+[18:23.68] There's concentration risk. India's data
+[18:25.84] center demand is driven heavily by
+[18:27.84] handful of big hyperscalers. Amazon,
+[18:30.24] Google, Microsoft. If even one of them
+[18:32.56] slows expansion, it can leave entire
+[18:35.04] facilities underutilized. Fourth risk is
+[18:37.68] valuation risk. Let's be honest, data
+[18:39.92] center related companies are already
+[18:41.52] well discovered. Majority of them have
+[18:43.68] already jumped multifold times since
+[18:45.60] 2020 COVID lows and they are all trading
+[18:48.24] at premium valuation. The reason is
+[18:50.48] because their earning growth in last 3
+[18:52.48] four years has been phenomenal and
+[18:54.88] near-term earning growth expectation is
+[18:56.72] also very good. So market is paying a
+[18:58.88] premium. However, the moment keep cycle
+[19:01.68] slows down, revenue growth can fall,
+[19:04.24] operating profit can also reduce and
+[19:06.24] earning growth can reduce. In that case,
+[19:08.32] market sentiment can change quickly and
+[19:10.48] valuation can derate sharply. And when
+[19:12.88] valuation derate, stocks can fall
+[19:14.80] sharply. So, valuation risk would always
+[19:16.80] exist. Then fifth risk is environmental
+[19:18.96] risk. Data center consume massive
+[19:20.80] electricity and many cases significant
+[19:23.04] water for cooling in water stressed
+[19:25.44] region like Chennai, Bangalore. This can
+[19:27.44] attract regulatory scrutiny, local
+[19:29.68] resistance or usage restriction. Then
+[19:32.00] rising temperature also increase cooling
+[19:34.00] cost which again impact operating
+[19:35.92] margin. On top of that AIdriven data
+[19:38.56] centers are extremely power intensive
+[19:40.72] and if energy is coal based ESG pressure
+[19:43.60] and carbon related regulation can become
+[19:45.60] a constraint. And then sixth risk is
+[19:47.76] supply chain and geopolitical risk. Data
+[19:50.00] center has a massive supply chain. For
+[19:51.84] instance, a large portion of high-end
+[19:53.84] chip manufacturing is concentrated in
+[19:55.60] Taiwan, particularly with companies like
+[19:57.68] TSMC. If geopolitical tension escalate
+[20:00.40] in Taiwan region or if there is any
+[20:02.32] major disruption whether political,
+[20:04.32] military or logistical, GPU supply can
+[20:06.96] get constrained and without GPU, all AI
+[20:09.76] data center expansion slows down
+[20:11.20] immediately. Even beyond Taiwan, the
+[20:13.60] semiconductor value chains span across
+[20:15.60] multiple countries. Any disruption in
+[20:17.76] this chain can delay deliveries and push
+[20:19.92] back deployment timelines.
+[20:23.28] So if you step back and look at the
+[20:25.12] entire picture, data center is a massive
+[20:27.28] theme in India with hyperscalers
+[20:28.96] committing 600 billion in 2026 in AI and
+[20:32.80] cloud infra and 3.5 times jump expected
+[20:35.68] in data center capacity in next five
+[20:37.36] year. It's not a single stock story.
+[20:39.76] It's a full ecosystem story from servers
+[20:42.48] to GPUs to transformers, switch gear,
+[20:45.20] cooling system, EPC companies, cables,
+[20:47.76] fibers, global connectivity. Today,
+[20:50.08] entire data center supply chain is going
+[20:52.00] through a massive TPEX super cycle.
+[20:54.08] However, let me be very honest, none of
+[20:56.24] the data center stocks are looking cheap
+[20:58.24] or even fair. Data center has already
+[21:00.64] been a well-discovered theme. Sure, the
+[21:02.80] next 3 to 5 year growth is looking
+[21:04.48] solid, but today all data center stocks
+[21:07.12] are trading at PEG ratio of more than
+[21:08.72] two. And as we have discussed there are
+[21:11.20] multiple risk including your capeex
+[21:12.96] cycle risk, geopolitical risk,
+[21:14.88] environmental risk and so on. So at the
+[21:17.28] moment in 2026 data center stocks are
+[21:19.68] certainly looking in momentum. But if
+[21:21.60] things does not go as per plan data
+[21:23.68] center stocks can derate. So if you're
+[21:25.84] willing to invest ensure that you track
+[21:27.76] the capex cycle and near-term demand for
+[21:30.16] data center stocks. So this is it from
+[21:32.16] my side. Now you tell me in the comment
+[21:33.92] which data center stock or specific part
+[21:36.24] of the data center you find most
+[21:38.08] promising. And if you find this video
+[21:39.76] useful do share within your circle. I'll
+[21:41.68] see you next video. Till then take care.

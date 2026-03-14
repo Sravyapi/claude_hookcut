@@ -21,6 +21,7 @@ export interface AnalyzeResponse {
   video_duration_seconds: number;
   minutes_charged: number;
   is_watermarked: boolean;
+  interview_mode: boolean;
 }
 
 export interface TaskStatus {
@@ -73,6 +74,7 @@ export interface Hook {
   algorithm_dynamics: AlgorithmDynamics;
   viewer_psychology: ViewerPsychology;
   improvement_suggestion: string;
+  primary_speaker?: string;
   is_composite: boolean;
   is_selected: boolean;
 }

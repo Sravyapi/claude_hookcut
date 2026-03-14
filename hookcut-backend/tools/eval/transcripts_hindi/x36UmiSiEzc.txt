@@ -1,0 +1,216 @@
+[0:00.16] P versus NP. That this is arguably the
+[0:03.12] most famous unsolved problem in computer
+[0:05.12] science. And actually, if you're cracked
+[0:07.12] enough to solve it, the Clay Mathematics
+[0:08.96] Institute will literally give you $1
+[0:10.80] million. And all you have to do is come
+[0:13.04] up with a proof for this philosophical
+[0:14.88] question. If you can verify a solution
+[0:16.80] quickly, can you also find the solution
+[0:19.04] quickly? Or in other words, is
+[0:20.64] handcrafting a beautiful meme just as
+[0:22.80] easy as admiring its beauty? To me, the
+[0:25.20] answer seems obvious. Of course, P does
+[0:27.52] not equal NP. Many others believe this,
+[0:30.08] but nobody's been able to prove it. I
+[0:31.84] arrogantly set out to prove that P
+[0:33.52] doesn't equal NP myself and couldn't do
+[0:35.68] it. But what's scary, though, is that if
+[0:37.36] everybody turns out to be wrong and
+[0:39.20] somebody proves that P does actually
+[0:41.28] equal NP, then every password,
+[0:43.20] encryption key, and crypto wallet
+[0:44.88] becomes instantly crackable, while
+[0:46.72] simultaneously curing cancer and ending
+[0:48.80] world hunger. It would be total chaos.
+[0:50.80] In today's video, we'll look at the
+[0:52.32] weird mind-bending math behind the
+[0:54.16] greatest unsolved problem in computer
+[0:56.16] science and try to win a million dollars
+[0:58.00] in the process. The P versus NP problem
+[1:00.64] was officially defined in 1971 by Steven
+[1:03.44] Cook in his famous the complexity of
+[1:06.00] theorem proving procedures paper. But we
+[1:08.24] can actually go back even further to
+[1:09.92] 1955 when mathematician John Nash warned
+[1:12.96] the National Security Agency that for
+[1:14.96] well-defined cryptography, the effort
+[1:16.80] needed to break a code doesn't scale
+[1:18.56] linear. It explodes exponentially as the
+[1:20.96] key gets longer. He was implying that P
+[1:23.20] does not equal NP. But what's crazy is
+[1:25.36] that there are thousands of papers,
+[1:26.88] decades of research, and zero proof
+[1:28.88] either way. But to understand why it's
+[1:30.80] so hard to prove, we first need to
+[1:32.40] understand the math behind it. P stands
+[1:34.40] for polomial time, which are problems a
+[1:36.80] computer can solve efficiently even as
+[1:38.56] the input gets bigger. Think about an
+[1:40.48] algorithm that sorts a list of names. As
+[1:42.72] the list gets bigger, it takes longer to
+[1:44.48] sort, but at a deterministic and
+[1:46.48] reasonable pace. When sorting a list of
+[1:48.40] names alphabetically, the amount of work
+[1:50.16] on the CPU is roughly proportional to n
+[1:52.88] or n login. So if the list gets 10 times
+[1:55.60] bigger, the computer does about 10 to 20
+[1:57.76] times more work. And problems that grow
+[1:59.60] at a reasonable pace like this are
+[2:01.52] called p. But then things start to get
+[2:03.44] weird when we talk about np, which
+[2:05.52] stands for non-deterministic polomial
+[2:07.76] time. These are problems where you might
+[2:09.44] be able to check a solution quickly, but
+[2:11.60] finding it, good luck. Some examples are
+[2:13.84] the traveling salesman problem, Sudoku
+[2:16.24] puzzles, or scheduling your dev team's
+[2:18.32] vacation days. If you already know the
+[2:20.00] answer, verifying it only takes polomial
+[2:22.32] time. But if you need to find the
+[2:23.76] solution from scratch, you might be
+[2:25.36] waiting until the heat death of the
+[2:26.72] universe. For example, imagine I give
+[2:28.80] you two prime numbers 7 and 13. Then ask
+[2:31.84] you to multiply them together. That's a
+[2:33.84] piece of cake that you could likely do
+[2:35.12] in your head right now. But now imagine
+[2:36.96] this problem reversed. I give you 91 and
+[2:39.44] ask you to find two prime numbers to
+[2:41.28] produce it. You might need to test out a
+[2:42.88] few different possibilities, but you can
+[2:44.48] still do it in your head. But now try
+[2:46.40] the same exercise on 69420. What you'll
+[2:49.60] find is that it's far more difficult
+[2:51.36] because you need to explore all kinds of
+[2:53.20] different potential options. And that
+[2:54.88] simple fact is why prime numbers are the
+[2:56.96] foundation for modern public key
+[2:58.72] cryptography like RSA encryption.
+[3:01.04] Multiplying two primes is easy, but
+[3:03.04] factoring back to the original
+[3:04.32] components is extremely hard. What's
+[3:06.24] funny is that we know it's hard, but
+[3:08.16] mathematicians can't actually prove that
+[3:10.08] it's hard and can't prove that no faster
+[3:12.24] algorithm exists. Another classic
+[3:14.32] problem like this that you might see on
+[3:15.68] a technical interview is the traveling
+[3:17.60] salesman problem. You have n cities and
+[3:20.00] you want the shortest route that visits
+[3:21.68] each one once. The brute force approach
+[3:23.76] is to try every possible path and that
+[3:25.76] gives you a lot of possibilities. N
+[3:27.60] minus one bang factorial. For just 15
+[3:30.40] cities, that gives us like 87 billion
+[3:32.72] different possibilities. That'll make
+[3:34.48] your CPU explode. But here's the twist.
+[3:36.72] If someone hands you the optimal route,
+[3:38.64] you can quickly verify it. But by
+[3:40.24] checking if it's shorter than the
+[3:41.52] alternatives you already know. The
+[3:43.04] verification is easy. Discovery is
+[3:45.04] brutal. Because of that, algorithms in
+[3:47.12] the real world have to be optimized for
+[3:49.04] different rules or horistics if you want
+[3:50.88] to sound smart, which aren't guaranteed
+[3:52.48] to get you the best answer, but they
+[3:54.00] should get you pretty close. Basically,
+[3:55.76] you have to trade the optimal solution
+[3:57.52] for a reasonable compute time. So at
+[3:59.76] this point we know that a problem is NP
+[4:01.68] if a solution can be verified in
+[4:03.36] polomial time. But there's another
+[4:05.36] special group of problems called NP
+[4:07.36] complete and these are the worst of the
+[4:09.20] worst. If you can solve any one of them
+[4:10.96] in polomial time you can solve all of
+[4:13.04] them in polomial time. The first
+[4:14.88] NPcomplete problem was SAT the boolean
+[4:18.08] satisfiability problem. Imagine you have
+[4:20.24] a giant logical expression that looks
+[4:22.00] like this. Is there some assignment of
+[4:23.84] true false values that makes the whole
+[4:25.68] thing true? Checking the answer is
+[4:27.44] trivial, but finding the answer requires
+[4:29.52] tons of different combinations. What's
+[4:31.28] interesting about this one though is
+[4:32.64] that it was the first problem to be
+[4:34.24] defined as NP complete by Steven Cook in
+[4:37.04] 1971. Since then, many other problems
+[4:39.68] have joined the club like traveling
+[4:41.44] salesman, the Sudoku, circuit design,
+[4:44.00] protein folding, and a bunch of other
+[4:45.76] problems that are really important to
+[4:47.28] humans. What's really weird though is
+[4:49.28] that they all simulate each other in
+[4:51.04] terms of complexity. And that means if
+[4:52.88] somebody finds a polomial solution to
+[4:55.04] solving one of them, then all of them
+[4:56.80] will be solved instantly.
+[4:58.00] Hypothetically, if somebody did that, P
+[5:00.40] would equal NP and the world would
+[5:02.24] completely change overnight. The things
+[5:03.84] that were once impossibly hard are now
+[5:05.68] trivial. But despite 50 years of trying,
+[5:08.08] nobody has been able to find a fast
+[5:09.68] algorithm for any NPcomplete problem. In
+[5:12.40] addition, mathematicians have tried to
+[5:14.08] end this debate with a variety of
+[5:15.76] different proof methods, but every time
+[5:17.52] they hit barriers that make it
+[5:18.88] impossible. But why is this problem so
+[5:20.88] important? And why did I even bother to
+[5:22.48] make a video about it? If you really
+[5:23.76] take a minute to think about it, the
+[5:25.20] implications are kind of mind-blowing.
+[5:26.88] If P equals NP, then every puzzle has a
+[5:29.52] shortcut and the universe is ultimately
+[5:31.52] efficient, like a machine built by an
+[5:33.52] intelligent designer who never wastes
+[5:35.28] computation. But if P does not equal NP,
+[5:38.00] then reality itself contains problems
+[5:39.84] that can't be cut short, like the
+[5:41.60] universe runs on deep computational
+[5:43.44] limits, the kind you might expect if you
+[5:45.20] were living in a simulation trying to
+[5:46.88] conserve processing power. But the
+[5:48.72] scariest possibility isn't that P equals
+[5:50.88] NP or that it doesn't. It's that God or
+[5:53.28] the universe or the simulation already
+[5:55.12] knows the answer. And the entire purpose
+[5:56.88] of our existence is to be the algorithm
+[5:58.80] that computes it.
+[6:00.16] >> Let me out.
+[6:02.08] Let me out. I WANT OUT.
+[6:04.16] >> Unfortunately though, after several
+[6:05.68] minutes of prompting, I still haven't
+[6:07.28] solved the problem. But if you figure it
+[6:08.88] out, let me know because I could really
+[6:10.40] use that million dollars. Until then,
+[6:12.32] the only thing I have actually solved
+[6:13.84] recently is my back-end infrastructure.
+[6:16.08] Thanks to MongoDB Atlas, the sponsor of
+[6:18.56] today's video, everyone's trying to ship
+[6:20.40] new AI features as fast as possible
+[6:22.16] right now, but their back-end
+[6:23.68] infrastructure is usually a mess. You've
+[6:25.60] got separate databases for your app data
+[6:27.60] and vector embeddings, a search engine
+[6:29.36] duct taped onto the side, and a bunch of
+[6:31.36] sloppy glue code holding everything
+[6:32.96] together. MongoDB Atlas eliminates all
+[6:35.52] that complexity by providing a modern
+[6:37.60] data platform built for AI applications.
+[6:40.24] You can use it to store all your source
+[6:41.84] data, vector embeddings, and metadata in
+[6:44.16] the same document. then query everything
+[6:46.08] in one place. It also supports real-time
+[6:48.48] stream processing so your agents can
+[6:50.56] react to live events as they happen
+[6:52.72] rather than relying on stable batch
+[6:54.48] updates. If you're building an AI app
+[6:56.24] and want to simplify your architecture
+[6:57.92] for good, try out MongoDB Atlas for free
+[7:00.56] at the link below. Thanks for watching
+[7:02.56] and I will see you in the next one.

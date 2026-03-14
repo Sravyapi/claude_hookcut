@@ -1,0 +1,397 @@
+[0:00.32] Hello all, my name is Krishna and
+[0:02.16] welcome to my YouTube channel. So guys,
+[0:04.88] every year I make this specific video
+[0:07.84] that is nothing but the road map to
+[0:09.60] learn AI in 2026.
+[0:12.88] I have already made this video for 2025.
+[0:15.84] I have made this video for 2024.
+[0:18.88] But as things are changing, as you see
+[0:21.60] that around you now, we are talking
+[0:23.36] about enentic AI applications. we are
+[0:25.12] talking more about building AI agents uh
+[0:28.16] automating workflows. So usually this
+[0:30.80] road maps keeps on changing right and I
+[0:33.04] always make sure that every year we also
+[0:35.28] change this road map so that it is
+[0:37.68] aligned to the industry work that we are
+[0:39.76] actually doing. Okay. So in this video
+[0:42.16] I'm going to discuss about the entire
+[0:44.24] road map of AI. Here my focus will be to
+[0:48.16] provide you each and everything. If I'm
+[0:50.32] specifically talking about the road map
+[0:52.00] I'll not just say that learn this.
+[0:54.00] Instead I will also talk about here are
+[0:56.00] the free resources here are the videos
+[0:57.84] you can go ahead and learn it. Here are
+[0:59.76] the paid resources. Here are the paid
+[1:01.44] courses. You can go ahead and learn that
+[1:03.12] too. And we also have amazing live boot
+[1:06.08] camps which you can also follow. Again,
+[1:08.64] what is the differences between free
+[1:10.08] content, Udemy courses and live contams.
+[1:13.60] It is more of a handholding. So from
+[1:16.16] free content to Udemy, some amount of
+[1:18.32] handholding is required. And if you're
+[1:20.96] going towards live boot camp, more
+[1:22.32] handholding, more support is basically
+[1:24.00] given to you. Right? So let me quickly
+[1:26.48] go ahead and share my screen. And here
+[1:28.72] is the entire road map the AI learning
+[1:32.24] path for 2026.
+[1:35.36] Now the first thing that I really want
+[1:37.44] to show you is that this amazing graph.
+[1:39.84] So if you just zoom in right this is the
+[1:42.88] graph that we have created. Zoom in
+[1:44.56] right and this graph I've been teaching
+[1:46.64] from past 5 to 6 months and we updating
+[1:48.64] this road map. Okay. So here you can see
+[1:52.24] that we start here. You have to choose
+[1:55.44] your path. Whether you want to go ahead
+[1:57.12] with traditional route, whether you want
+[1:58.64] to go ahead with modern route, whether
+[2:00.24] you want to go ahead with advanced route
+[2:02.32] okay let's say you have you don't know
+[2:05.36] anything about AI right anything about
+[2:08.48] AI and you really want to start
+[2:10.40] completely from basics then the path
+[2:14.00] should be traditional route. Now this
+[2:16.00] depends whether you are an experienced
+[2:17.60] professional, whether you are in the
+[2:19.20] architecture position. You really want
+[2:21.20] to have the foundation very strong and
+[2:25.12] you want to start from there and start
+[2:27.04] building on new techniques, new
+[2:29.20] capabilities as you go ahead. Right? So
+[2:31.12] if you go ahead and see this traditional
+[2:32.96] route here, we focus more on data
+[2:35.28] science first. We master DS, ML, CV,
+[2:37.84] NLP, then you add generative AI skill
+[2:40.64] sets on top of it. Then you add agentic
+[2:42.88] AI skill sets on top of it. So here you
+[2:45.60] can see every specific block that you're
+[2:48.24] seeing over here we have good road maps
+[2:50.32] also right so once I click this you'll
+[2:52.56] be able to see the road map so I will
+[2:54.16] just show you in some time okay then
+[2:56.56] comes the modern route let's say your
+[2:58.40] foundation is good you have knowledge
+[3:01.28] some amount of knowledge about machine
+[3:02.72] learning you know Python programming
+[3:04.00] language you know deep learning and you
+[3:06.56] want to quickly get started into
+[3:08.00] generative AI and agentic AI then this
+[3:10.16] is the path that you should follow that
+[3:12.80] is modern route where we start with
+[3:15.12] generative AI road maps we master this
+[3:17.76] skill set then we add agentic AI skill
+[3:19.84] set and let's say that you want to also
+[3:22.00] go ahead and back learn data science and
+[3:24.16] all you can go ahead and open this
+[3:25.68] specific road map okay and finally the
+[3:28.56] advanced one you have foundation
+[3:30.40] knowledge you have built some projects
+[3:31.68] you are in the leadership position you
+[3:33.44] can start all three parallelly and that
+[3:36.64] is the advanced route right so here is
+[3:39.44] the overall road maps that I have
+[3:41.44] actually uh created over here Okay. Now
+[3:45.52] next step just ask yourself a question.
+[3:49.04] Do you want to learn from basic? Then
+[3:52.48] traditional route is there. Do you have
+[3:54.96] that foundation knowledge? Modern route
+[3:56.72] is there. Are you experienced? You have
+[3:58.40] built already many projects. You want to
+[4:00.00] start all three parallel then advanced
+[4:01.84] route is there. Right? So the choice is
+[4:04.56] very simple and you can actually take
+[4:06.48] that particular choice. Okay. Now if I
+[4:10.48] go ahead and click on the data science
+[4:12.40] road map. So what you have to do you if
+[4:14.32] let's say you want to go ahead and
+[4:15.36] follow the traditional route you click
+[4:16.72] on the data science road map. Now this
+[4:19.44] is one amazing diagram which I really
+[4:21.44] wanted to show it to you all. Here we
+[4:24.00] have videos. So let's say first you
+[4:26.88] start with Python programming language.
+[4:28.64] Once you click over here you will be
+[4:30.24] able to see what all things you have to
+[4:32.24] learn over here. This is our live boot
+[4:34.48] camp and uh whenever you follow this uh
+[4:37.92] road map you know we'll be making sure
+[4:39.44] that we update all our courses right
+[4:41.36] whichever is the current live course
+[4:42.88] that is going on now you're not
+[4:45.36] interested in live boot camp so in order
+[4:47.52] to learn Python you have all the free
+[4:50.32] playlist that we have put over here
+[4:52.48] right from the YouTube so here you can
+[4:54.56] see very clearly all the free things are
+[4:57.36] available yeah so here you can actually
+[5:00.08] see Python playlist complete Python
+[5:02.16] playlist Python playlist in Hindi. Let's
+[5:04.80] say you want more handholding, you want
+[5:06.56] more support, go ahead with Udemy,
+[5:08.32] right? So, as I said, you know, in 2026,
+[5:11.36] I think this will be the best gift that
+[5:12.96] I can actually give it to you. We have
+[5:15.36] paid content, we have free content, we
+[5:17.52] have each and everything available in
+[5:18.96] just front of you in just one click of a
+[5:20.88] button. Okay. Now, in order to get
+[5:23.76] started, I would suggest please go ahead
+[5:25.52] and see these videos like what is the
+[5:27.04] difference between AI versus ML versus
+[5:28.80] DL versus generative AI. What is
+[5:30.80] generative AI versus agentic AI versus
+[5:32.64] AI agents, data science, machine
+[5:34.24] learning, researcher, what are the
+[5:35.52] differences, then you start with Python
+[5:36.96] programming language. Once you click
+[5:38.24] over here, you have all the free
+[5:39.36] playlist. Let's say you want to go ahead
+[5:41.28] and check out our live boot camp, you
+[5:43.60] can go ahead and click it over here,
+[5:45.04] right? If you want to go ahead and see
+[5:47.20] our free YouTube videos, you can go
+[5:49.28] ahead and see it over here. Right? If
+[5:51.60] you want our Udemy courses, our Udemy
+[5:53.84] courses over here. So with respect to
+[5:55.52] Python if you are able to spend 1 and a
+[5:57.92] half month properly I think you should
+[6:01.28] be able to become a good Python
+[6:03.36] developer with all the concepts that we
+[6:04.88] have discussed in this. Okay. Then SQL
+[6:08.32] and databases. Again for SQL and
+[6:10.16] databases we have designed in this way.
+[6:12.40] We have a paid course. We have free
+[6:13.84] YouTube videos. We have free Udemy
+[6:15.52] courses. Right. And not free Udemy
+[6:17.68] courses. It's almost free, right? It's
+[6:19.76] just like 3.99 to 599 rupees. So here
+[6:22.72] you can see that we have a complete data
+[6:24.24] analyst boot camp. We have complete
+[6:26.24] machine learning NLP boot camp. Right?
+[6:28.40] Then we go ahead with statistics. In the
+[6:30.48] statistics again here you have the
+[6:32.64] entire free playlist. Here you have the
+[6:35.12] Udemy courses. If you want anything with
+[6:37.12] respect to our live boot camp where we
+[6:38.56] talk about here is our live boot camp.
+[6:40.80] Okay.
+[6:42.40] So if you go over here you can also see
+[6:44.48] this is my YouTube videos that are
+[6:46.16] available with respect to statistics.
+[6:47.76] Some amazing videos. It has millions of
+[6:51.76] views accumulated and people have just
+[6:54.40] acknowledge this playlist. You'll be
+[6:55.84] able to find this playlist even in chart
+[6:57.36] GPT even in Google Gemini everywhere.
+[7:00.08] Right? Then after completing statistics
+[7:02.24] you go ahead with machine learning. In
+[7:03.52] the machine learning also I have created
+[7:05.36] all the free playlist available for you.
+[7:07.84] Yes, if you really want to support us,
+[7:09.44] you can go ahead and use this uh by our
+[7:13.04] batch, you know, live boot camps to
+[7:14.72] support us. Even you want to go ahead
+[7:16.56] and see some of the projects, you can
+[7:17.92] see it over here. Beginner projects, end
+[7:19.92] to-end projects with MLflow and
+[7:21.76] everything, right? Then you have deep
+[7:24.32] learning, right? After machine learning,
+[7:26.24] you specifically have to learn deep
+[7:27.76] learning. For deep learning also, we
+[7:29.28] have created this amazing playlist,
+[7:31.36] right? Five days deep learning, complete
+[7:32.88] deep learning playlist. Even we have
+[7:35.20] created playlist in Hindi. If you are
+[7:37.04] interested in learning in Hindi, you can
+[7:38.56] also go ahead and see it. Okay. Then
+[7:40.96] this is the Udemy course which you can
+[7:42.72] actually follow to get more hands-on,
+[7:44.64] more uh good content, more uh you know
+[7:47.52] proper structured content where you have
+[7:49.84] more projects and more examples, right?
+[7:51.60] And then here also we can see that we
+[7:53.28] have also created some of the free
+[7:54.64] projects that is available for you.
+[7:56.80] Okay, then we will go ahead and learn
+[7:58.80] about computer vision. In the computer
+[8:00.00] vision also we have this specific
+[8:01.28] playlist. Then you have NLP, right? So
+[8:03.68] NL LP also we have some good courses
+[8:06.00] available. You also have free YouTube
+[8:08.16] playlist. You also have Udemy courses.
+[8:10.32] You also have projects that we have
+[8:11.76] defined it over here. So if you just go
+[8:13.68] ahead and click it over here, you should
+[8:15.92] be able to see this. You should be able
+[8:17.52] to see this particular project also.
+[8:20.08] Right? So everything is available just
+[8:22.40] in one place and we have created this
+[8:24.32] entire animated way like this entire
+[8:26.48] diagram in our website so that you can
+[8:28.16] follow this road map. Anyway, so let's
+[8:30.08] say that tomorrow we create some more
+[8:31.60] projects. We'll be adding those links
+[8:32.96] over here. Right? Then after you get
+[8:37.04] very much good in NLP then you should
+[8:39.60] basically go ahead and see about MLOps
+[8:41.44] cloud CI/CD pipelines. So I've created
+[8:44.08] so many playlist over here just go ahead
+[8:46.56] and try it out guys so many videos. See
+[8:49.84] so many videos you can just go ahead and
+[8:51.76] see that. And I've also created a
+[8:54.32] complete MLOps course which you can also
+[8:56.24] check it out. And here are the projects.
+[8:58.08] So the segregation wise see what what is
+[9:01.36] one amazing thing about this after every
+[9:03.60] section I've included a set of projects
+[9:05.44] which you can actually go ahead and
+[9:06.80] watch it in my YouTube channel and you
+[9:08.80] can get a hands-on right that way you
+[9:12.16] have this things you complete the
+[9:14.00] theoretical things you implement the
+[9:16.00] practical things and then you also go
+[9:17.68] ahead and implement the end to end
+[9:19.04] projects so this is how the entire thing
+[9:20.64] is done then you also have big data
+[9:22.64] engineering uh based on your uh data
+[9:26.24] engineering playlist you can go ahead
+[9:27.44] and watch it based on that you have and
+[9:29.28] then finally you have this industry
+[9:30.88] ready AI project let's say that you are
+[9:32.32] very good at all these things then I'd
+[9:34.32] suggest go ahead and take our industry
+[9:36.08] ready projects which I have more than 60
+[9:38.16] plus projects that is available right
+[9:40.80] then once you complete this road map so
+[9:43.04] we are good at data science so here you
+[9:45.84] can see that data science has become
+[9:47.68] really really good then we go ahead and
+[9:50.00] explore the generative AI right so data
+[9:53.52] science to agentic AI like here you can
+[9:55.44] see if I go to the pathfinder here So
+[9:57.52] you have mastering MLCV NL and LP then
+[9:59.92] you add generative AI skill sets right.
+[10:02.32] So in the generative AI skill sets also
+[10:04.56] what we have done is that we have
+[10:05.84] created the entire play u you know the
+[10:08.24] road map. So for generative AI you start
+[10:10.80] with Python programming language again
+[10:13.20] free playlist is basically given you
+[10:14.96] also have Udemy courses then you start
+[10:17.52] with NLP foundation right now inside
+[10:20.08] this NLP we have this complete NLP
+[10:22.64] playlist. We also have course we also
+[10:25.20] have projects right that way see see the
+[10:28.40] order of covering things let's say that
+[10:30.48] you have a good foundation in machine
+[10:31.84] learning deep learning then you want to
+[10:33.84] really focus on generative AI then you
+[10:36.08] go ahead and start with Python
+[10:37.20] programming language then you start with
+[10:39.68] uh the free YouTube videos that you have
+[10:42.32] then you start with building your NLP
+[10:44.08] foundation then you have basic deep
+[10:46.40] learning concepts which we also have
+[10:48.24] created some good playlist right and
+[10:50.96] then you start with advanced NLP and
+[10:52.96] transform formers and here you'll be
+[10:55.12] able to see that I've also created a
+[10:56.72] advanced NLP playlist completely right
+[10:59.76] everything is available and NLP detail
+[11:01.44] playlist is also available then you
+[11:03.84] start with generative AI LLM so this is
+[11:06.40] the new batch that we have come up with
+[11:08.24] modern route let me just show you over
+[11:10.96] here let me click this right so this is
+[11:14.72] the new batch that we are coming up and
+[11:16.40] this is basically starting from uh you
+[11:19.52] know uh Sunday uh this Sunday that is uh
+[11:22.48] on 15th uh 8:00 p.m. to 11:00 p.m.
+[11:26.16] And here we are focusing on the entire
+[11:28.72] way of getting quickly into generative
+[11:30.64] AI and agentic AI. We'll start building
+[11:32.64] AI agents at the end of this particular
+[11:34.80] course. Okay. So here it is our modern
+[11:37.60] route. Then here you can see lang chain
+[11:39.52] open source open AI projects I've
+[11:41.20] created. Then if you want to you have to
+[11:42.96] go ahead and learn about vector
+[11:44.16] databases rag you know uh here is our
+[11:47.76] ultimate boot camp. So here you can see
+[11:50.08] free rack playlist Udemy everything is
+[11:52.88] available then you go ahead and start
+[11:54.56] exploring about agentic AI and you have
+[11:56.80] this entire things with MLOps CI/CD
+[11:58.80] pipelines and all and here you have all
+[12:01.60] these projects like with ML uh ML with
+[12:04.00] AWS SageMaker ML with dockers GitHub
+[12:06.64] actions and all right and industry ready
+[12:09.28] projects is also available okay so here
+[12:12.16] you can see quickly what we are doing is
+[12:14.56] that we have explored each and
+[12:17.44] everything. Let's say you want to go
+[12:19.36] ahead and see the agentic AI road map.
+[12:22.00] Here is the Agentic AI road map. Again,
+[12:24.00] we start with Python programming
+[12:25.28] language. We cover all the playlists
+[12:27.36] over here. Then you can see u very much
+[12:30.72] amazing uh you know basic NLP foundation
+[12:33.20] is basically over here. Then uh you go
+[12:36.24] ahead and see all the NLP videos
+[12:39.44] and this is my entire generative and LLM
+[12:41.68] applications with all the playlist over
+[12:43.68] here. I've made sure that I put all the
+[12:45.52] free projects, free uh videos
+[12:47.68] everywhere. Then you go ahead and
+[12:49.44] understand about MCP model context
+[12:51.36] protocol. You can also see my playlist
+[12:54.00] is also there. If you go ahead and open
+[12:55.76] it in the MLC, MCP is basically there,
+[12:59.52] right? So if you just go ahead and see
+[13:01.44] the structured content, if I want to go
+[13:03.60] ahead and learn about let's say agentic
+[13:06.88] AI, generative AI, I have to probably go
+[13:09.04] ahead and start with Python programming
+[13:10.64] language, right? So we start with Python
+[13:12.88] programming language. Then we go ahead
+[13:14.72] with basic NLP foundation. Then you'll
+[13:17.68] also be able to see this. Just a second.
+[13:23.60] So here you go.
+[13:26.80] Yeah. So here you can see complete deep
+[13:29.60] learning for NLP. Then you have
+[13:31.92] generative AI and LM applications. Then
+[13:34.32] you learn about agent AI core concepts
+[13:36.88] and frameworks. Then MCP. Then
+[13:39.92] deployment and cloud. everything is
+[13:41.52] basically covered and you can just go
+[13:43.44] ahead and refer it. So my main aim is
+[13:46.96] basically to provide you a road map in
+[13:49.12] this specific road map. Just go ahead
+[13:50.56] and click those things, see all the
+[13:52.24] videos, try it out from your end. Okay.
+[13:55.44] And at the end of the day, this road map
+[13:57.84] is definitely really really helpful
+[14:00.56] based on the things that is happening in
+[14:02.56] the industry. That is how this entire
+[14:04.72] road map is basically designed. Okay.
+[14:07.76] And if you're unsure about anything,
+[14:10.00] please do make sure to call our
+[14:11.60] counseling team. Uh they will guide you
+[14:13.60] with respect to each and everything.
+[14:15.20] Okay. So I hope you like this particular
+[14:18.32] video. Uh this was it from my side and
+[14:20.80] this is the AI learning path from 2026.
+[14:23.52] You just need to go ahead and follow
+[14:24.80] this particular page. Make sure to
+[14:26.56] bookmark it anytime anything that you
+[14:29.28] really want to learn. Just go ahead and
+[14:30.96] click on that specific road map and
+[14:32.88] you'll be able to get the entire videos
+[14:34.88] along with the playlist. Okay. So yeah,
+[14:38.32] this was it from my side. I'll see you
+[14:40.16] in the next video. Have a great day
+[14:41.28] ahead. Thank you one and all. Take care.

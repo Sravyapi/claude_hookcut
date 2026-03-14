@@ -1,0 +1,1405 @@
+[0:03.60] Good evening everyone. Welcome to the
+[0:06.32] fourth uh white paper reading that we
+[0:08.80] have. We're doing this every week on
+[0:11.44] Wednesday 6 p.m. I'm feeling rather
+[0:13.92] proud of myself to come every week and
+[0:17.52] I'm also very happy to see you here. So
+[0:20.88] um in this paper reading we'll be going
+[0:23.68] through a very uh interesting paper.
+[0:26.40] Personally I find it really interesting
+[0:27.76] because I find it really close to
+[0:29.20] engineering. Okay. Usually the papers
+[0:32.16] that we go through especially when it
+[0:33.84] comes to uh AI now is is more on the
+[0:38.88] science side more on the research side.
+[0:41.84] This is also like that but a lot of the
+[0:44.00] principles I see are from engineering.
+[0:46.40] So we'll be going through a paper called
+[0:48.64] outrageously large neural networks and
+[0:52.56] the rest of it is the sparsely gated
+[0:54.40] mixture of experts layer. Okay, the key
+[0:57.36] term here is mixture of experts. Uh this
+[1:00.16] is a paper again a quite old paper 2017.
+[1:03.68] Uh this is I think before attention is
+[1:06.88] all you need was published. But the best
+[1:09.36] part about this is that mixture of
+[1:10.96] experts has actually become really
+[1:12.24] popular recently. It was always popular
+[1:14.56] but it's become even more popular now.
+[1:16.48] Uh and the reason for that we'll see
+[1:18.48] when we are reading this paper is that
+[1:20.16] you can scale up the models a lot. Okay.
+[1:23.60] So uh that's the agenda for today. By
+[1:26.40] the end of this session you should be
+[1:29.12] having a good idea of what mixture of
+[1:30.80] experts is and why these models scale up
+[1:33.20] so well. Uh and if you have any
+[1:35.92] questions you can post them now. Uh if
+[1:37.92] you're watching this recording later
+[1:39.60] then please skip for the first 5
+[1:41.84] minutes. I take questions. I let people
+[1:43.76] join the live session. Uh after which
+[1:46.96] yes you know we'll be starting.
+[1:50.48] So if you have any questions please let
+[1:51.92] me know in the chat. In 5 minutes we are
+[1:53.92] starting. Okay.
+[1:59.84] Hi
+[2:13.36] Until then, let me set up the
+[2:17.76] studio properly.
+[2:19.84] Take this. Yes.
+[2:31.84] Sorry.
+[2:35.68] Okay.
+[2:38.00] I'll be on the bottom right in case you
+[2:40.24] need to see my expressions. Just reduce
+[2:43.44] my uh image and here I'll just this and
+[2:48.48] place it here. Okay. Uh at the same time
+[2:50.72] what I'll do is I'll just
+[2:54.80] um move this here and I can draw with
+[2:57.52] this. Okay. So if there's anything that
+[3:00.00] I need to explain I can just use the
+[3:02.40] stylus.
+[3:04.16] Two more minutes guys. Any good
+[3:05.52] questions? any any questions which you
+[3:08.16] think um that you should have answered
+[3:11.84] around around AI engineering around um
+[3:15.44] anything in the uh in the space
+[3:19.60] if you have no questions that's also
+[3:20.88] totally fine but just give it two more
+[3:22.80] minutes people are still joining so we
+[3:25.44] are about to start
+[3:30.16] okay let me take Yes.
+[3:35.84] Let me take red
+[3:40.16] red marks. Oh no, this is zero. You got
+[3:43.04] completely wrong. Reminds me of my
+[3:45.60] teachers. Um,
+[3:48.88] okay. Okay, one more minute.
+[3:54.40] Amit Dia has a question which is
+[3:57.28] unrelated to AI but uh he has his HLD
+[4:00.48] plus managerial round uh with 6 months
+[4:03.76] experience uh at this point. So how
+[4:05.60] should I prepare and thing to keep in
+[4:07.68] mind? So uh Amit at 6 months experience
+[4:11.20] they are mostly looking at theoretical
+[4:13.12] knowledge which means you having a good
+[4:15.60] understanding of the uh system design
+[4:18.08] terms like what is a a load balancer
+[4:20.64] what is a message queue those kind of
+[4:22.48] things are expected. uh if they ask you
+[4:24.96] to design the system that you're
+[4:27.04] currently working on like the existing
+[4:28.80] system currently if you're working in a
+[4:30.88] company or you're interning in a company
+[4:32.64] then they expect you to know that
+[4:34.80] systems design and uh apart from this
+[4:38.72] you would probably want to share what
+[4:41.52] could be some bottlenecks in that
+[4:43.36] existing system. How did you you know go
+[4:47.60] about maybe you didn't do it yourself
+[4:50.24] but uh maybe you took advice from a
+[4:52.64] staff engineer maybe you took advice
+[4:54.24] from a senior engineer how did you go
+[4:56.88] solving that problem okay in 6 months
+[4:58.72] time you must have solved one major
+[5:00.32] problem so describe that really well in
+[5:02.88] the managerial round in the round where
+[5:05.92] you have the hiring manager they are
+[5:07.20] going to be focused on that and they're
+[5:09.04] also going to be focused on okay you
+[5:11.28] know how did you interact with the team
+[5:13.04] how did you learn quickly how did you
+[5:14.48] upskill How much uh time do you take to
+[5:17.92] learn something new in the sense do you
+[5:20.00] ask teammates? Do you do things
+[5:21.84] yourself? There is no right or wrong
+[5:23.52] answer. It depends on the team. Uh but
+[5:27.84] if you if you are learning then
+[5:33.04] after some point in time you need to ask
+[5:34.64] others but at the same time you can't go
+[5:36.72] on asking everything to everybody. Okay.
+[5:38.72] So there's a balance here and you can be
+[5:41.36] honest with them. You can be frank with
+[5:42.56] them. At the same time a little bit of
+[5:45.20] selling yourself is involved. You have
+[5:47.12] to say that you know I I did all this.
+[5:49.92] Maybe you don't like showing off but
+[5:51.84] don't think of this as showing off. This
+[5:53.20] is just speaking the truth in a um in a
+[5:56.40] manner which makes you look in good
+[5:58.16] light. Okay.
+[6:02.08] So yes that's at a high level. HLD is a
+[6:04.96] technical round. The manager around you
+[6:06.80] have at 6 months experience is just
+[6:08.24] going to be around what you did that one
+[6:10.08] project that you have worked on.
+[6:14.32] Gotham Krishna is asking will cohort
+[6:16.00] cover basic maths? It will be covering
+[6:18.08] the transformer related maths. So
+[6:20.16] softmax it will be covering uh layer
+[6:22.72] norm but we will be covering the
+[6:25.68] mathematics more in terms of uh in an
+[6:28.64] intuitive manner more in terms of why is
+[6:31.60] it being applied instead of what exactly
+[6:33.68] is happening. uh we also won't be going
+[6:36.00] over the history of the mathematics that
+[6:37.68] you know initially this was being
+[6:38.88] applied then this is now being applied
+[6:41.04] later this may be being applied we may
+[6:43.28] just mention those things but we will
+[6:44.72] not go through the uh evolution of math
+[6:47.68] in AI and we'll not expect you to code
+[6:51.04] math right because as an engineer you'll
+[6:53.52] not be doing that you'll be mostly
+[6:55.28] working with AI applications
+[6:58.56] building them
+[7:03.20] manikant Okay, this is great. I'm just
+[7:05.60] about to start the session now. Uh, what
+[7:08.64] are the prerequisites before joining the
+[7:10.16] cohort? Um, not not any actually. You
+[7:13.04] need to be a working professional with
+[7:14.72] at least one year experience. I mean, I
+[7:16.88] would suggest one year experience in in
+[7:19.12] software because we are going to be
+[7:21.60] talking about terms like databases. We
+[7:23.44] are going to be talking about terms like
+[7:25.28] uh distributed systems and we expect you
+[7:27.60] to know it beforehand. If you do, great.
+[7:30.08] If you don't
+[7:32.00] it's not like you won't understand
+[7:33.12] anything because AI is a completely
+[7:34.64] different thing which has come so you
+[7:36.72] can understand despite not being a
+[7:39.44] hardcore software engineer but at least
+[7:41.20] one year experience I think would be
+[7:42.72] good it uh and there'll be some coding
+[7:44.80] assignments so if you don't know coding
+[7:46.96] or if you haven't done coding earlier
+[7:48.80] then you won't be able to pick it up so
+[7:50.80] don't join but if you know Python uh at
+[7:54.00] least
+[7:55.60] at at least one programming language if
+[7:57.04] you know one programming language yes
+[7:59.68] And if you are a software engineer, yes.
+[8:02.32] Okay. If you're a software engineer, you
+[8:03.60] know coding. If you don't know coding as
+[8:05.28] a software engineer, then there's a
+[8:06.64] separate problem that you have. But
+[8:08.88] yeah, uh so this is primarily for
+[8:11.20] software engineers. Okay guys, uh lot of
+[8:14.48] questions, lot of good questions. I'll
+[8:16.08] take them at the end. Uh
+[8:19.68] and uh one final thing which is Manikant
+[8:22.64] is saying this is the first time he's
+[8:23.76] going through a white paper and it's
+[8:26.00] happening with us. So Manikant welcome.
+[8:28.24] Um we are going to go through
+[8:30.56] outrageously large neural networks. The
+[8:32.80] sparsely gated mixture of experts layer.
+[8:35.68] Okay, don't get worried. This is not 19
+[8:37.52] pages long. If you see uh the
+[8:42.08] the um references start much before.
+[8:44.96] Okay, at page 9 itself. Also, I won't be
+[8:47.92] going through every single word in the
+[8:49.44] paper. I'll be going over the most
+[8:51.28] important parts that you should go
+[8:53.20] through if you're an engineer. Of
+[8:54.80] course, if you want to get more details,
+[8:56.08] then you can look deeper into it. But we
+[8:58.24] won't go through the experiments bit or
+[8:59.76] anything like that. Okay. This is the
+[9:01.84] fourth time we are going through it. So
+[9:03.36] we have a particular method to it.
+[9:08.88] Okay. Anytime you're reading a paper, a
+[9:11.76] good um good way to understand whether
+[9:15.44] it's going to be worth it is just by
+[9:17.36] looking at the number of citations it
+[9:18.96] has. Okay, this does not work for recent
+[9:21.12] papers.
+[9:22.64] There you have to look at credentials.
+[9:24.64] Okay, it's very similar to hiring or
+[9:26.08] buying things. like you look at
+[9:27.28] credentials, you look at how many people
+[9:28.96] are already reading it. But if you have
+[9:33.60] neither then it's a risky read. You can
+[9:36.48] probably ask chat GPT how is it and then
+[9:38.96] you know summarize it first. If you find
+[9:40.40] it very interesting then you look deeper
+[9:41.84] into it. We have the benefit of
+[9:44.00] hindsight 2017. This is an extremely
+[9:46.24] well cited paper. You can see 4,000
+[9:49.12] citations 4,700. So it's really good.
+[9:52.32] And also there's a guy named Joffrey
+[9:53.92] Hinton who's a contributor along with
+[9:56.16] Jeff Dean. These guys you might have
+[9:57.76] heard of not sure. Uh so the in fact
+[10:01.52] you'll see some of the engineering
+[10:02.56] principles come up very soon.
+[10:05.44] So the capacity of a neural network to
+[10:07.52] absorb information is limited by its
+[10:09.60] number of parameters. I'm reading the
+[10:11.52] abstract because the abstract gives you
+[10:12.88] the most important ideas and it gives
+[10:14.40] you a good idea of whether you want to
+[10:15.44] read it more or not. Conditional
+[10:17.20] computation where parts of the network
+[10:19.28] are active on a per example basis has
+[10:22.16] been proposed in theory as a way of
+[10:24.24] dramatically increasing model capacity
+[10:25.84] without a proportional increase in
+[10:27.04] computation. Okay. So let me just read
+[10:29.92] one more sentence then I'll just
+[10:30.96] summarize this. In practice however
+[10:32.80] there are significant algorithmic and
+[10:34.24] performance challenges. Okay. Uh in this
+[10:37.36] work, we address these challenges and
+[10:38.88] finally realize the promise of
+[10:40.72] conditional computation achieving
+[10:42.56] greater than 1,000x improvements in
+[10:44.32] model capacity with only minor losses in
+[10:46.16] computational efficiency on modern GPU
+[10:48.48] clusters. So look at the first
+[10:50.96] statement.
+[10:52.56] A neural network can absorb information
+[10:55.44] but that capacity is limited by the
+[10:57.44] number of parameters it has. So if I
+[10:59.44] have a neural network with
+[11:01.84] if I have a neural network with 100
+[11:04.00] parameters.
+[11:07.20] Okay.
+[11:12.32] Mhm.
+[11:15.28] I don't know why it's shaking so much,
+[11:16.56] but just give me a second.
+[11:24.00] Okay.
+[11:29.36] Let me just go on top. Yeah. If I have a
+[11:31.84] neural network with 100 parameters,
+[11:35.28] 100 is too small. So let's just say 100
+[11:37.44] million parameters and I have another
+[11:39.52] neural network with just 10 million
+[11:41.28] parameters.
+[11:46.88] Then I would expect this 100 million
+[11:48.96] parameter neural network to do better
+[11:50.80] than the 10 million parameter neural
+[11:52.32] network. Okay, it's going to be much
+[11:53.60] much better. And similarly, the 1
+[11:55.92] billion parameter neural network is
+[11:58.16] going to do even better than the 100
+[12:01.20] million one. That's what this first
+[12:03.12] sentence says. The capacity to absorb
+[12:06.48] information is limited by the number of
+[12:09.12] parameters that a neural network has.
+[12:12.96] Okay. In fact, I think Chrome is really
+[12:15.60] bad and it's going to cost us time. Uh
+[12:19.52] if we if we try to do this with
+[12:24.00] so let me just save.
+[12:28.64] Yeah.
+[12:31.04] And guys give me a second. I'm sorry.
+[12:33.52] I'm just going to switch to Adobe.
+[12:37.92] Yes. Okay.
+[12:45.52] Sorry for the hiccup, but this I think
+[12:48.48] is going to work now.
+[12:51.04] Right. Um, let me just restart. Uh,
+[12:55.36] yeah,
+[13:00.88] haven't drawn on this earlier. There
+[13:03.36] must be a way.
+[13:12.56] Guys, have you ever used Adobe? Sorry.
+[13:15.20] Uh, I should be not asking you these
+[13:18.72] kind of ridiculous questions. Ah,
+[13:20.72] there's a there's a pen here. How hard
+[13:23.44] can it get? Okay.
+[13:26.40] Okay.
+[13:28.40] Uh,
+[13:31.04] just use the red color. Okay.
+[13:33.84] Oh, there's a there's a pen here. No,
+[13:35.52] this is signing. Yeah, there's a pen
+[13:37.76] here.
+[13:39.28] Okay.
+[13:42.24] Very nice. So coming back to the
+[13:45.44] original problem, sorry it's been 15
+[13:47.36] minutes, but I'll just extend this guys
+[13:49.68] if you're watching the recording. It's
+[13:51.20] going to go from now. So the reality is
+[13:54.24] that a 100 million parameter neural
+[13:56.08] network is going to be far better than a
+[13:58.32] 1 million parameter neural network.
+[14:01.68] When I say parameters, I mean a neural
+[14:03.68] network which has weights,
+[14:06.96] adjustable weights. Uh and these adjust
+[14:10.32] these adjustments happen. U through back
+[14:14.00] propagation. Okay.
+[14:16.16] So this is one weight weight one. This
+[14:19.20] is another weight weight two. This is
+[14:20.72] another weight weight three and so on.
+[14:22.80] Like this. If you have 1 million
+[14:24.08] parameters in your neural network, you
+[14:26.08] might be performing at a level X. But if
+[14:29.04] you have a 100 million parameters in
+[14:30.48] your neural network, you are expected to
+[14:32.40] perform far better. This is the reason
+[14:34.80] why Chad GPT says that I have a 300
+[14:37.28] billion parameter neural network. I have
+[14:38.72] a 1 trillion parameter neural network
+[14:40.32] and so on. the more parameters you have,
+[14:42.64] the better your model is going to
+[14:44.16] perform. That's a fact that's been
+[14:45.92] checked through scaling laws and it's
+[14:48.16] still holding true. Uh so yes, the
+[14:52.32] challenge in 2017 was that you can make
+[14:56.56] bigger and bigger neural networks to
+[14:58.40] absorb more and more information.
+[15:00.08] However,
+[15:01.60] the computation that is required, the
+[15:03.84] amount of
+[15:06.96] cycle swaps that you have to spend is
+[15:09.68] going up and up and up. And now what do
+[15:11.68] you do? Okay, it's very expensive.
+[15:14.64] Competition is expensive. We would like
+[15:17.60] models having lots of parameters but not
+[15:20.16] spend the uh same amount of computation.
+[15:23.28] So for 1 million parameter neural
+[15:25.44] network maybe you spend
+[15:27.76] 100 flops. Okay, I'm just taking a
+[15:29.84] random example. So for 100 million
+[15:32.56] parameters, are you going to spread 100
+[15:34.88] into 100 which is 10,000 flops? That's
+[15:38.80] going to be too expensive. Is there a
+[15:40.32] way to do it cheaper? Can you do it in
+[15:42.80] just thousand flops? 100 million
+[15:44.48] parameter neural network. So can you
+[15:46.64] super scale your neural network without
+[15:49.04] overscaling your computation? That's the
+[15:52.88] challenge.
+[15:54.80] How do you do this? Conditional
+[15:57.12] computation. Conditional here means if
+[16:00.48] this happens, go and ask this neural
+[16:04.16] network what the answer is. If something
+[16:05.92] else happens, go and ask the other
+[16:07.36] neural network. So the way to imagine
+[16:09.36] this would be you have a neural network
+[16:11.60] here. You have the starting point.
+[16:17.52] Okay. And this says if if the topic is
+[16:21.84] on math then use neural network one
+[16:26.32] and if the topic is on
+[16:29.60] okay sorry just
+[16:33.68] if the topic is
+[16:38.08] how do I change color
+[16:40.48] okay and if the topic is something else
+[16:42.40] chemistry then use neural network
+[16:50.08] Okay, that's the basic idea. You have a
+[16:53.76] set of neural networks. You need a way
+[16:56.80] to
+[16:59.36] decide whenever an input query comes
+[17:01.84] which neural network should you use.
+[17:03.68] Okay, I'll just share the paper with you
+[17:05.04] guys. Uh it's there in the description.
+[17:07.04] You can check it in the description.
+[17:09.20] Okay. And I'm sorry that this uh even
+[17:14.48] Adobe is not doing really well. Maybe I
+[17:17.04] can load it onto Microsoft Whiteboard. I
+[17:20.96] think that will be good. Um instead of
+[17:23.92] struggling.
+[17:26.08] Maybe that's a good idea.
+[17:29.52] Let me just try doing that. I'm sorry
+[17:31.04] it's it's going in circles. We are
+[17:35.20] figuring out tools even now. But
+[17:37.60] previously Chrome did not misbehave so
+[17:39.68] much. I'm not sure what has happened
+[17:41.52] just yet just now today. So I'll just uh
+[17:46.96] import this.
+[17:57.84] Okay, I'll just import the first
+[18:00.88] nine. Oh, sorry. 2 3 4 5 6 7 8 nine
+[18:06.08] pages.
+[18:07.60] Um, right. Okay. And now I will just
+[18:13.68] place this here
+[18:19.28] again.
+[18:21.04] Sorry that.
+[18:23.04] Yeah, I apologize quite a few times now.
+[18:25.20] It's probably getting too much.
+[18:29.04] Okay. I hope this is visible. Yes. So,
+[18:35.20] uh, yes. Let's just quickly go over the
+[18:36.80] abstract. I think you'll you'll
+[18:38.32] understand if I just read it out. Um the
+[18:40.64] capacity of a neural network to absorb
+[18:42.80] information is limited by the number of
+[18:44.48] its parameters. Conditional computation
+[18:46.56] where parts of the neural network are
+[18:48.00] active on a per example basis. Meaning
+[18:50.96] different examples activate different
+[18:52.64] parts of the neural network has been
+[18:55.20] proposed in theory. But
+[18:58.64] um
+[19:01.12] but in practice there is significant
+[19:03.76] algorithmic and performance challenges
+[19:06.32] to scaling up a neural network in this
+[19:08.00] way. Okay. So having a bunch of
+[19:11.28] different neural networks managing
+[19:12.48] different things is really hard to do.
+[19:16.24] In this work, we address these
+[19:17.52] challenges and finally realized the
+[19:18.72] promise of conditional computation.
+[19:20.32] achieving greater than 1,000x
+[19:22.00] improvement in the model capacity with
+[19:25.04] only minor losses in computational
+[19:26.56] efficiency. Okay. So in this work we
+[19:29.76] will show you that there's a,000x
+[19:32.72] improvement in the number of parameters
+[19:35.68] that can be made in the model. This is
+[19:37.84] groundbreaking. Okay. And there is minor
+[19:41.28] loss in computational efficiency.
+[19:43.44] Meaning the cost of training these
+[19:45.36] models is almost the same. uh we
+[19:49.76] introduce a sparsely gated mixture of
+[19:51.60] experts layer. This is the keyword
+[19:54.16] mixture of experts consisting up to
+[19:56.48] thousands of feed forward sub networks.
+[20:00.56] So what that says is this if you know
+[20:03.76] this is for finance queries you have a
+[20:06.80] query to a large language model you have
+[20:08.24] a query to a neural network maybe it's
+[20:10.00] doing some sort of classification or
+[20:11.92] some other task u
+[20:14.80] one type of query goes here
+[20:18.16] another type of query
+[20:21.12] will go here so let's say this is on
+[20:23.36] math if you ask math questions then if
+[20:26.64] you ask some other types of questions
+[20:29.04] let's say tax questions then there's a
+[20:31.12] different neural network for it. Okay.
+[20:33.60] At a high level you can think of
+[20:34.72] different experts
+[20:36.96] um who are going to be called based on
+[20:38.96] the type of query. So if this is a blue
+[20:41.60] query, if it's a mathematical query,
+[20:43.36] then you're going to route it here.
+[20:45.52] Okay, very similar to load balancing or
+[20:47.44] very similar to a router. Uh this is
+[20:49.52] what's going to happen. We'll see the
+[20:50.72] exact technique in just a minute. Um
+[20:55.36] we apply the mixture of experts to the
+[20:56.96] task of language modeling and
+[21:02.24] machine translation where model capacity
+[21:04.56] is crit critical for absorbing the vast
+[21:06.72] quantities of knowledge available in the
+[21:08.80] training corpora. We present model
+[21:11.60] architectures in which up to 137 billion
+[21:15.36] parameters. This is absolutely massive.
+[21:18.32] In 2017 this was just huge. Even now 100
+[21:21.36] million parameter mod is considered very
+[21:23.20] large. Okay. Is applied convolutionally
+[21:27.28] sorry is applied convolutional
+[21:31.52] I can't pronounce things too well
+[21:33.44] between staged LSTM layers on large
+[21:36.88] language modeling and machine
+[21:38.24] translation benchmarks. These models
+[21:40.00] achieve significantly better results
+[21:41.68] than state-of-the-art at lower
+[21:43.76] computational cost. Okay, very high
+[21:47.12] level. What they're saying is we have
+[21:48.40] figured out mixture of experts. We have
+[21:50.00] finally scaled it. Earlier people used
+[21:52.00] to say that this is possible. We have
+[21:53.76] done it. And you know what? We have done
+[21:56.48] it at 1,000x efficiency. So we have
+[21:59.68] beaten the state-of-the-art. Please read
+[22:01.60] this paper. Okay, we will. Sure. Uh this
+[22:05.12] looks very interesting. So as an
+[22:06.72] engineer, we are definitely going to go
+[22:08.32] through it.
+[22:10.32] Exploiting. So this is what we do. We
+[22:12.64] first go through the abstract. Then we
+[22:13.92] go through the introduction. If you find
+[22:15.28] that useful, we look at the conclusion
+[22:17.20] and then finally we read the method.
+[22:18.80] Okay, standard stuff that you should do
+[22:20.64] if you're going through any paper.
+[22:25.84] Okay, so exploiting scale in both
+[22:28.08] training data and model size has been
+[22:29.52] central to the success of deep learning.
+[22:32.00] When data sets are sufficiently large,
+[22:34.08] increasing the capacity, the number of
+[22:35.84] parameters of a neural network can give
+[22:38.16] much better prediction accuracy. Okay,
+[22:41.04] this has been shown in domains such as
+[22:42.56] text uh images and audio. For typical
+[22:46.48] deep learning models where the entire
+[22:48.16] model is activated for every example,
+[22:50.48] this leads to a roughly quadratic blow
+[22:52.64] up in training costs as both the model
+[22:55.36] size and the number of training examples
+[22:57.76] increase. Okay. So if you take a lot of
+[23:00.96] data which is training examples and you
+[23:03.60] take uh a lot of parameters
+[23:08.72] then the amount of computation that you
+[23:11.52] need to build this model is going to be
+[23:14.96] higher and higher and higher. The more
+[23:16.48] data you have the more the cost is going
+[23:18.80] to be. The more parameters that you want
+[23:20.48] to bring in the more complex you want to
+[23:21.76] make the model the more it'll cost you
+[23:24.72] okay to build this model. So people were
+[23:27.76] having trade-offs.
+[23:30.08] What they would do is either they would
+[23:31.44] train the model on lesser data which
+[23:33.92] means they need fewer parameters or and
+[23:37.04] then in during inference time they would
+[23:38.96] actually think longer. The models would
+[23:40.40] think longer. So poorer models,
+[23:42.96] pre-trained models would end up
+[23:44.64] performing okay in production through
+[23:46.80] either external help tooling or through
+[23:49.84] just inference time um thinking
+[23:54.56] that that was the only thing right now
+[23:56.72] what is possible with their approach is
+[23:59.20] various forms of conditional computation
+[24:01.28] have been proposed as a way to increase
+[24:03.36] model capacity without a proportional
+[24:05.20] increase in computational costs. Okay.
+[24:08.16] Um this has been proposed but in these
+[24:10.96] schemes large parts of the network are
+[24:12.88] active or inactive on a per example
+[24:15.04] basis. The gating decisions may be fully
+[24:17.76] binary or sparse or continuous
+[24:20.00] stochastic or deterministic.
+[24:22.64] Various forms of reinforcement learning
+[24:24.08] and back propagation are proposed for
+[24:25.84] training the gating decisions. Okay. At
+[24:28.64] a high level they're just saying that
+[24:29.84] you know people used to talk about
+[24:33.04] um mixture of experts. Yes, people used
+[24:36.08] to talk about it. Now what's happening
+[24:38.24] is
+[24:40.96] this is the next page.
+[24:44.32] While these ideas are promising in
+[24:45.68] theory, no work to date has yet
+[24:47.84] demonstrated massive improvements in
+[24:49.20] model capacity, training time or model
+[24:51.20] quality. We blame this on a combination
+[24:53.12] of the following challenges.
+[24:56.56] GPUs uh are faster at arithmetic um than
+[25:00.32] at branching. So that's the reason why
+[25:01.76] maybe there wasn't mixture of experts.
+[25:04.24] Large batch sizes are critical for
+[25:06.00] performance. So you probably didn't have
+[25:08.48] sufficient amount of data or your model
+[25:10.40] was not large enough. Network bandwidth
+[25:12.48] can be a bottleneck but Google has um I
+[25:17.04] think what is it called?
+[25:21.12] They have this massive super fast
+[25:23.60] network layer.
+[25:26.24] I'm forgetting their file system is
+[25:27.76] Colossus.
+[25:29.36] Uh their
+[25:31.28] what is it? Jupiter. Yeah, they have
+[25:33.12] Jupiter. Let's see if they mention it
+[25:35.36] here.
+[25:36.88] uh to be computationally efficient their
+[25:38.72] relative computational cost versus
+[25:41.28] they haven't mentioned Jupiter since the
+[25:42.72] embeddings generally tend to be okay so
+[25:45.68] they haven't used it probably
+[25:48.80] not as engineering
+[25:51.36] uh or you know traditional engineering
+[25:53.36] heavy as I had hoped for but sure
+[25:56.08] depending on the scheme loss terms may
+[25:58.00] be necessary to achieve the desired
+[25:59.60] level of sparity okay okay so these are
+[26:02.40] the reasons why
+[26:04.32] um It may have been difficult. They're
+[26:07.12] blaming these reasons for not having
+[26:10.48] mixture of experts till date. Model
+[26:12.56] capacity is most critical for very large
+[26:14.40] data sets. The existing literature
+[26:17.04] uh is a relatively small recognition
+[26:19.44] data sets consisting up to six lakh
+[26:21.52] images. So they have done it on a very
+[26:24.72] large data set of images. So and they
+[26:26.64] required hundreds of billions of
+[26:28.16] parameters.
+[26:30.64] Okay. So more importantly, let the
+[26:33.28] picture speak a thousand words.
+[26:36.00] If you have
+[26:38.64] um an input, okay, it starts here. It
+[26:42.40] comes to your model. You have a gating
+[26:44.48] network which figures out which expert
+[26:48.40] should I send this query to. So it then
+[26:50.88] sends it to expert number two and expert
+[26:55.60] number
+[26:58.48] n minus one. Okay. So two experts get
+[27:01.28] the query, initial query,
+[27:06.08] they take their answers and give a
+[27:08.88] overall result. Okay? So maybe the two
+[27:12.24] experts agree on the answer, then it's a
+[27:14.24] clear answer. If they disagree on the
+[27:16.72] answer, then maybe one of the experts
+[27:18.56] who's considered better at this is
+[27:20.16] picked up. Okay? Or maybe the model
+[27:22.96] answers that I'm not sure. At a high
+[27:25.04] level, mixture of experts means that you
+[27:27.04] have one or two experts who are going to
+[27:29.04] be picked up uh based on their relevance
+[27:32.16] to the input query. Okay. Um why not 16
+[27:37.04] experts? Why not 20 experts? Because it
+[27:39.76] just takes a lot of time. A lot of the
+[27:41.52] parameters of the neural network will
+[27:43.04] fire. A lot of the neurons will fire
+[27:44.80] which is going to be quite costly. You
+[27:46.80] don't want that. And also the results
+[27:48.48] won't be very good.
+[27:50.56] Um and why not just one expert? Yeah,
+[27:55.04] recent neural networks even from Google
+[27:57.68] just use one expert. So only one is
+[28:00.32] chosen and that is fired.
+[28:03.68] Then what is the benefit of mixture of
+[28:05.20] experts? Any any thoughts any questions
+[28:09.36] on this yet? Why do we even have mixture
+[28:12.64] of experts
+[28:17.68] or conditional
+[28:22.32] neural networks.
+[28:25.20] Okay. What they have called it is comput
+[28:27.20] conditional computation.
+[28:32.16] Why do we have this routing? Can you
+[28:33.68] even answer in the chat?
+[28:37.60] Yes,
+[28:39.36] Sumit is correct. uh we are
+[28:41.92] conditionally distribution uh
+[28:43.04] distributing the workload computation
+[28:47.84] to get different views and results that
+[28:50.32] is also a good attempt
+[28:52.96] um so let's say you train the neural
+[28:56.00] network and you have these 16 experts
+[28:59.68] one of them you take queries from
+[29:03.28] finance
+[29:06.16] and you give it to let's say initially
+[29:08.88] you give it to all 16
+[29:11.52] in a neural network. No, that won't
+[29:12.96] happen. That that will defeat the
+[29:14.08] purpose. So instead, you take the query
+[29:16.08] on finance and you send it to one
+[29:17.92] expert. Okay? That expert tries to
+[29:21.04] answer the query. It does a bad job. And
+[29:24.40] when you get a response, when there's
+[29:26.88] back propagation, you say, "Oh, this
+[29:28.40] expert did a bad job. Let us update its
+[29:32.24] parameters." This is the back
+[29:33.44] propagation step, right? Update its
+[29:34.88] parameters. It gets better at finance.
+[29:38.64] The next time there's a financial query,
+[29:40.88] you say, "Oh, this expert is not so good
+[29:44.48] at finance. Let's try another one." You
+[29:47.28] go here.
+[29:49.04] This one does terribly at finance. Okay?
+[29:51.68] Even with back propagation, you realize
+[29:53.28] that this is actually better. Finally,
+[29:55.76] what's going to happen with a lot of
+[29:57.04] financial queries is that one of the
+[29:58.96] experts is going to be
+[30:01.60] pretty good. Okay? You'll find the
+[30:04.00] expert who's pretty good to start with
+[30:06.08] and then you're going to improve them
+[30:07.44] through back propagation.
+[30:09.36] So depending on the query you're going
+[30:12.16] to be finding the network which is best
+[30:14.72] and after you do back propagation you
+[30:16.88] are in fact going to be furthering
+[30:18.32] further improving that sub network.
+[30:21.28] Right? That is how you train a mixture
+[30:24.00] of experts model. Uh
+[30:27.68] another example let's say you have a lot
+[30:30.40] of finance queries though this this
+[30:31.92] model became really good at finance this
+[30:33.52] is now the finance expert okay u now you
+[30:38.80] also have another type of query which is
+[30:42.96] which is calculation queries or math
+[30:44.64] queries or let's take something else
+[30:46.48] maybe maybe generating chat queries okay
+[30:49.44] so again you do the same thing you start
+[30:51.68] sending it to different networks
+[30:52.96] eventually you'll find a network which
+[30:54.72] is pretty You start sticking to it and
+[30:57.60] since there is back propagation
+[30:58.96] constantly your router is going to get
+[31:01.04] better at finding the best neural
+[31:02.56] network. This is going to have back back
+[31:04.32] propagation. The parameters here will be
+[31:05.76] changed. It will start choosing the best
+[31:07.92] network better and better and at the
+[31:10.40] same time the network itself will get
+[31:11.92] better.
+[31:13.52] So eventually you will have let's say if
+[31:15.92] you have 32 experts those 32 experts
+[31:18.16] will be experts at different things.
+[31:20.88] Maybe there are a thousand topics. Each
+[31:23.84] expert is an expert at 10 topics, 20
+[31:27.20] topics, 30 topics. Okay, that's the
+[31:30.00] overall idea. Different topics,
+[31:32.00] different experts. The way you train
+[31:33.92] them is by training the router and also
+[31:36.64] by training the expert itself on
+[31:39.04] different queries.
+[31:41.68] Okay. Okay. So,
+[31:45.92] if you have any questions, you can let
+[31:47.28] me know in the chat. But for now, we'll
+[31:49.44] just go ahead of this. This is more
+[31:51.28] around the history of why they think
+[31:52.80] that other people could not do it yet.
+[31:55.04] They're basically talking about scale,
+[31:56.88] right? Um, our approach is conditional
+[32:01.36] comput. Our approach to conditional
+[32:02.72] computation is to introduce a new type
+[32:04.88] of general purpose neural network
+[32:06.72] component, a sparsely gated mixture of
+[32:09.36] experts layer. The MOE consists of
+[32:11.76] number of experts such as uh each a
+[32:15.04] simple feed forward neural network.
+[32:18.24] Okay, feed forward neural network is a
+[32:20.56] simple neural network. It's also used in
+[32:21.92] transformers. Uh the basic idea is that
+[32:24.00] you have
+[32:27.20] inputs. Okay, so let's say I1, I2 and so
+[32:32.00] on. Uh this goes to a neural network
+[32:38.00] which might be just two layers.
+[32:40.56] Okay, this can be any number of layers
+[32:42.00] but in in most of these there's I think
+[32:44.00] only two hidden layers. Yeah. and then
+[32:46.56] you just go for a straight output. I
+[32:48.96] think this is a one hidden layer you
+[32:51.92] know so then you get the outputs that's
+[32:54.56] it so it's a simple neural network okay
+[32:58.08] and the weights are being updated
+[32:59.60] through back propagation so you have a
+[33:03.84] simple feed forward neural network and a
+[33:06.00] trainable gating network which selects a
+[33:08.72] sparse combination of experts to process
+[33:10.40] each input sparse combination means what
+[33:13.36] uh you have let's say
+[33:16.64] a query
+[33:19.12] First you find amongst the potential
+[33:23.20] networks that you have subnets 1 2 3 4 5
+[33:25.76] which ones are the best. So three and
+[33:27.84] five are picked up. This is the sparse.
+[33:30.72] Okay, just two dense would have been
+[33:32.88] that all three would be picked up. No,
+[33:34.88] not like that. Randomly you're picking
+[33:37.12] up different ones. Okay, all parts of
+[33:39.28] the network are trained jointly by back
+[33:41.12] propagation. Okay,
+[33:44.08] that is good. This technique allows us
+[33:46.80] to increase the number of experts and
+[33:48.56] hence the number of parameters by
+[33:50.40] proportionally increasing the number of
+[33:52.00] devices in the training cluster. Okay.
+[33:54.88] So if I need to
+[33:58.88] if I need to make the uh neural network
+[34:01.92] 100 billion parameters. So from 100
+[34:04.80] million if I need to make it 100 billion
+[34:07.04] parameters then the total
+[34:10.32] sorry then the total amount of
+[34:14.00] the number of machines that I have to
+[34:15.60] scale I mean the if I if I was using 100
+[34:19.12] machines here then I have to use 100
+[34:21.20] into 1,000 now okay it won't be a
+[34:24.08] quadratic boost
+[34:26.48] okay it'll just be a linear boost in the
+[34:29.60] number of machines that I need to
+[34:33.12] Is that making sense?
+[34:37.52] Okay. Why would it be a quadratic
+[34:40.24] increase?
+[34:43.12] Why would it be a linear increase when
+[34:45.20] you were scaling neural networks
+[34:47.28] earlier? Why would it require quadratic
+[34:49.44] increase in the computation power that
+[34:51.60] you need?
+[35:01.12] because back propagation
+[35:05.76] needs you to go through
+[35:08.40] all of the parameters
+[35:10.80] right in the network.
+[35:13.12] So if you have
+[35:17.92] Yeah. Can I even answer in the chat? Uh
+[35:20.88] it's a pretty simple question. If you if
+[35:22.80] you have a 10 million parameter neural
+[35:25.60] network versus if you have a 100 million
+[35:27.20] parameter neural network, why is there a
+[35:28.96] quadratic increase in the uh in the
+[35:31.76] computation that you need?
+[35:35.28] Okay, this technique allows us to
+[35:37.28] increase the number of experts by
+[35:39.60] proportionally increasing the number of
+[35:40.72] devices in the training cluster. meaning
+[35:42.16] you can scale linearly. The total batch
+[35:44.48] size increases keeping the batch size
+[35:47.76] per expert constant. The memory and
+[35:50.32] bandwidth requirements per device also
+[35:52.00] remain constant. Okay, as do the step
+[35:54.48] times as does the amount of time
+[35:56.48] necessary to process a number of
+[35:58.00] training examples equal to the number of
+[36:00.00] parameters in the model. Okay, all of
+[36:02.32] this basically means that you are able
+[36:03.68] to linearly scale the model. It is our
+[36:05.68] goal to train a trillion parameter
+[36:07.52] network on a trillionword corpus. I
+[36:09.84] don't think this has happened yet. I'm
+[36:11.68] not very sure. A trillion parameter
+[36:14.64] model maybe maybe it is out there but I
+[36:17.04] haven't yet seen it.
+[36:19.52] I don't know if Gemini is actually a
+[36:20.80] trillion parameter neural network yet.
+[36:23.04] Okay. We have not scaled our systems
+[36:24.88] this far as of the writing of this paper
+[36:26.96] but it should be possible by adding more
+[36:28.56] hardware. Okay. Okay. So let me take
+[36:32.88] some questions. Um
+[36:36.88] there's one very interesting question
+[36:38.16] which is uh from
+[36:43.84] there's one very interesting question.
+[36:45.28] So strange username but will the lesser
+[36:47.60] experts be eventually discarded from the
+[36:49.28] network? No, we will have all of the
+[36:52.32] experts. You'll see soon that there is
+[36:54.64] some sort of load balancing also
+[36:55.92] happening here. So if one part of the
+[36:57.92] neural network is being overtrained then
+[37:00.16] the other parts are going to be forcibly
+[37:02.24] trained also. Okay. So all of the
+[37:04.72] queries maybe maybe your neural network
+[37:07.20] for some reason has a lot of data around
+[37:10.48] uh around
+[37:13.28] let's say science. Okay. And it doesn't
+[37:16.40] have that much data on art. So whenever
+[37:19.68] you're sending a science query it's
+[37:21.12] always hitting the same neural network
+[37:22.48] and it's answering quite well. Whenever
+[37:24.24] you're trying to send it to another part
+[37:26.64] the second neural network it's doing
+[37:28.00] really badly because it's not trained
+[37:29.44] yet. So what's going to end up happening
+[37:31.60] is this is going to become the
+[37:32.56] bottleneck. It's going to become better
+[37:33.92] at answering all sorts of queries. So
+[37:36.40] one part of the neural network is going
+[37:37.76] to be overtrained. The remaining parts
+[37:39.12] are going to be undertrained. To avoid
+[37:41.12] that, this router, this piece that you
+[37:44.96] have here is going to be forced to start
+[37:48.08] sending queries to different parts of
+[37:49.60] the neural network. When one part is
+[37:52.08] being overtrained, it starts losing
+[37:53.76] points and the other parts which are
+[37:56.16] undertrained are going to be sent new
+[37:58.16] queries. So they are going to have back
+[38:01.28] propagation updating their weights. So
+[38:03.44] they're also going to get better. So no
+[38:04.88] part is discarded because all parts are
+[38:06.64] necessary. All parts are useful.
+[38:09.84] Okay.
+[38:14.16] Right. Right. Uh Rashnot has a
+[38:18.80] interesting thought. N models n
+[38:20.96] backdrop. So n².
+[38:23.36] Okay. uh maybe at the end of this
+[38:27.04] session we will get to this point but
+[38:29.60] why is
+[38:32.64] scaling linearly such a big deal okay is
+[38:36.00] scaling quadraticly seriously a thing uh
+[38:39.12] when it comes to neural networks and how
+[38:41.20] is mixture of experts avoiding that okay
+[38:44.48] so taking advantage of convolutionality
+[38:47.68] in our language models we apply the same
+[38:50.72] to each time step of the previous layer
+[38:52.96] okay we apply the same mixture of expert
+[38:56.56] to each time step of the previous layer.
+[38:59.60] If we wait for the previous layer to
+[39:01.12] finish, we can apply the MOE to all time
+[39:03.52] steps together as one big batch. Doing
+[39:05.52] so increases the size of the input batch
+[39:07.36] toe layer by a factor of the number of
+[39:10.16] unrolled time steps. Okay, for now I'll
+[39:13.52] skip this part because this is a bit
+[39:17.20] uh deep little technical. Okay, we'll
+[39:21.44] just go over this. it'll make more sense
+[39:23.92] later.
+[39:25.60] Increasing batch size for recurrent MOE.
+[39:28.80] We suspect that even more powerful
+[39:30.24] methods may involve applying a MOE
+[39:32.24] recurrently. Okay. Uh for example, the
+[39:35.36] weight matrices of LSTM or other RNN
+[39:37.92] could be replaced by MOE.
+[39:40.32] Sadly, such models break the
+[39:41.60] convolutional trick from the last par
+[39:43.84] paragraph since the
+[39:46.32] input of the MOE at one time step
+[39:48.00] depends on the output of the MOE at the
+[39:49.44] previous time step. Okay. Okay.
+[39:52.24] uh describe they describe a way to
+[39:54.64] drastically reduce the number of stored
+[39:56.16] activations. So what they're talking
+[39:59.36] about is how can we do even better
+[40:02.64] but it should be possible by adding more
+[40:04.16] hardware and these two techniques are
+[40:05.92] how to do even better. We are oh I I
+[40:08.72] think yeah so I understood I actually
+[40:10.96] skipped one page. No wonder this was not
+[40:13.60] making much sense. We just suddenly
+[40:15.52] jumped to page five I guess. Sorry.
+[40:20.48] uh
+[40:22.16] while the introduced technique is
+[40:23.52] generic, in this paper we focus on
+[40:25.60] language modeling and machine
+[40:27.12] translation tasks which are known to
+[40:28.72] benefit from very large models. The
+[40:31.60] different experts tend to become highly
+[40:33.20] specialized based on syntax and
+[40:34.72] semantics on both language modeling and
+[40:37.52] machine translation. We improve the best
+[40:39.36] published results at a fraction of the
+[40:40.72] computational cost. Okay, so that is
+[40:43.04] really good. mixture of experts is
+[40:45.28] called for
+[40:47.12] uh called once for each position in the
+[40:48.80] text selecting a potentially different
+[40:51.44] combination of experts at each position.
+[40:54.72] Okay.
+[40:56.32] What we have done is we have just gone
+[40:58.96] through the introduction. Nothing
+[41:00.00] nothing major. Okay. Uh and there's
+[41:02.80] related work around this. You can check
+[41:04.24] this out. U I have checked this 1991
+[41:06.80] paper. It's pretty interesting. It's
+[41:09.04] almost like ancient history now. I was I
+[41:12.40] was born around that time. So yeah
+[41:14.56] ancient history it is the mixture of
+[41:16.72] experts uh consists of a set of n expert
+[41:20.32] networks okay and a gating network G
+[41:24.48] okay okay so let me just draw this so
+[41:26.48] that it's easy to understand there is E1
+[41:30.48] expert one expert 2 expert 3 you already
+[41:34.40] made this mental model expert N and you
+[41:37.20] have a gating network G interesting is
+[41:39.76] this is also neural network okay gating
+[41:42.48] network G The router is also a neural
+[41:43.92] network. It will get updated. It's going
+[41:46.08] to get better and better at choosing the
+[41:47.60] right expert whose output is a sparse n
+[41:50.72] dimensional vector.
+[41:53.60] This G is going to give you a vector.
+[41:56.80] What is that vector going to tell you?
+[41:58.56] That you should go and send this to this
+[42:00.56] expert or you should go and send this
+[42:03.04] query to this expert. Okay, based on
+[42:06.08] this vector, you'll be able to answer
+[42:07.52] which expert should you pick up.
+[42:10.40] The experts are themselves neural
+[42:11.68] networks each with their own parameters.
+[42:13.04] Though in principle they only require
+[42:14.32] the experts. They require that the
+[42:16.96] experts accept the same sized inputs and
+[42:18.88] produce the same sized outputs. Okay. So
+[42:21.36] they're saying that we are using neural
+[42:23.28] networks but you can use anything any
+[42:25.12] model will work. That's wonderful very
+[42:27.68] very modular. Uh
+[42:31.68] we restrict ourselves to feed forward
+[42:33.52] neural networks and identical
+[42:35.28] architectures but with separate
+[42:36.80] parameters. So this has a list of bunch
+[42:38.88] of parameters. This is a bunch of
+[42:40.00] parameters. They're all going to get
+[42:41.36] updated.
+[42:43.76] G of X is routing. EI of X is
+[42:47.68] performance. Okay. Once you get the
+[42:49.12] query, how do you answer? The output of
+[42:51.12] the gating network and the output of the
+[42:52.72] IAT expert network for a given input X.
+[42:57.12] The output Y of the MO module can be
+[42:59.76] written as follows.
+[43:01.68] Y is equal to
+[43:04.24] tell me what is the capability of
+[43:10.32] uh this expert E of I
+[43:15.76] E of I X means if if I is equal to 1
+[43:20.08] then E1 is going to give an output given
+[43:23.60] the input X so it's going to give you
+[43:27.52] some result okay let's say this is the
+[43:29.68] result R So one expert who's an expert
+[43:32.56] at finance when given a chat query is
+[43:35.60] going to be really bad. So the result is
+[43:37.76] really really bad. Let's say we are
+[43:39.20] going to give it a score of zero. Okay.
+[43:41.76] Uh
+[43:44.16] this
+[43:45.92] is one thing g of x i. So
+[43:53.04] given this um
+[43:58.80] from i to n g of x i what what is this
+[44:01.76] meaning? Why do they have i here as a
+[44:03.68] suffix?
+[44:09.28] H I think g of x i here means that how
+[44:13.60] much weight is the router giving to this
+[44:16.56] expert.
+[44:18.24] So if E1 is chosen, it's going to get a
+[44:21.44] weight of 1. If E1 is chosen, then E2 is
+[44:24.32] going to get a weight of 0. 0 and 0.
+[44:27.04] Okay. The basic idea is that everybody
+[44:28.80] else I'll multiply with zero. Only the
+[44:31.60] one network which I believe is useful,
+[44:33.28] I'll give it a weight of one. So then
+[44:35.60] this will become one for the good
+[44:37.60] network and for everybody else it will
+[44:39.12] be zero. If you want to choose two
+[44:40.96] networks, then I'll make it one here and
+[44:42.56] one here and the rest of the people will
+[44:44.32] be all zero. Okay? So that's what g of x
+[44:47.52] i is saying and e of iix is the actual
+[44:51.20] output of that expert. We are going to
+[44:54.08] take the sum of them. Okay. We save
+[44:56.96] computation based on the sparity of the
+[44:58.40] output g of x. Okay. Yeah, that clears
+[45:00.56] things up. G of x is basically saying
+[45:02.56] that
+[45:05.20] where should I send this query. So maybe
+[45:08.32] first expert yes, second one no, third
+[45:10.08] one no, fourth one no, fifth one yes,
+[45:12.16] sixth one no and so on. So this is like
+[45:15.60] a binary vector that we have binary
+[45:18.08] number that is going to tell us where
+[45:21.28] all we should send the uh query to.
+[45:25.12] Okay, in our experiments we have up to
+[45:27.12] thousands of experts but need only to
+[45:29.28] evaluate a handful of them for every
+[45:31.04] example. So only a few are going to be
+[45:34.80] set to one. If the number of experts is
+[45:37.20] very large, we can reduce the branching
+[45:38.56] factor by using a two-level hierarchical
+[45:41.60] mixture of expert. Meaning you have G
+[45:43.92] here and you have tons and tons and tons
+[45:46.32] of experts. So you create a tree here.
+[45:49.60] You in fact create the second layer
+[45:52.24] which is the second router. So finance
+[45:54.80] queries themselves are of many types.
+[45:57.36] Maybe you have accounts queries, maybe
+[45:59.12] you have uh macroeconomics queries,
+[46:01.76] maybe you have various other types of
+[46:02.96] queries. So you go to G1 and G1 decides
+[46:05.60] amongst the finance experts which expert
+[46:07.68] should I send it to at a massive scale.
+[46:10.72] However, they didn't need to do this. In
+[46:12.16] hierarchical MOE, a primary gating
+[46:14.40] network chooses the sparse weighted
+[46:16.08] combination of experts, each of which is
+[46:18.16] itself a secondary mixture of experts on
+[46:19.92] its own gating network. Okay, you don't
+[46:22.24] need to look into this. Uh in the
+[46:23.84] following, we focus only on ordinary
+[46:26.32] MOE's. We provide more details on
+[46:28.48] hierarchales in appendex B. At that
+[46:31.36] time, they thought that you know this is
+[46:33.52] going to be something which is very
+[46:34.80] interesting. You will have hierarchical
+[46:36.24] models. uh even now they are interesting
+[46:38.88] but
+[46:41.36] u yeah you don't have two-layer MOE's uh
+[46:44.88] that we are going to learn in this paper
+[46:47.60] okay our implementation is related to
+[46:50.08] other models of conditional computation
+[46:52.48] ane whose experts are simple weight
+[46:55.04] matrices is similar to the parameterized
+[46:57.68] weight metrics proposed in so and so
+[47:00.00] okay they're talking about different
+[47:00.96] papers u
+[47:04.56] okay they're just comparing now I'll
+[47:06.16] just skip this part and
+[47:09.20] because they're they're saying that you
+[47:10.88] know it's also similar to other models
+[47:13.04] which already exist. Okay.
+[47:16.56] Okay. Any questions until now guys? I
+[47:19.12] know there's this is a intense paper but
+[47:21.60] at a high level you already know what we
+[47:23.28] are talking about. We're talking about
+[47:25.44] neural networks which have something
+[47:28.16] like gates or you you're we talking
+[47:30.40] about neural networks which basically
+[47:31.84] have a router which decides where to
+[47:34.08] send
+[47:36.24] uh an input query to okay
+[47:42.48] yes
+[47:44.08] not uh that's correct way of averaging
+[47:46.48] it out is what they're doing nowadays I
+[47:50.48] think with uh recent ones they just take
+[47:52.80] one
+[47:54.00] one expert. Okay.
+[48:03.60] Is G of X essentially some weight that
+[48:06.08] decides the importance of the expert?
+[48:07.84] That's exactly correct. Yes.
+[48:13.76] So what you want to do is you either
+[48:17.04] want to use the expert completely or not
+[48:19.20] use the expert at all. So look at this.
+[48:21.44] There's there's two ways. I think this
+[48:22.80] will make it clear. There's softmax
+[48:24.16] gating which is I think useless. A
+[48:26.16] simple choice of non-sparse gating
+[48:28.24] function is to multiply the input by a
+[48:30.72] trainable weight matrix and then apply
+[48:32.64] the softmax function. Why trainable
+[48:34.32] weight matrix? Because it will get
+[48:35.60] better and better at gating at choosing
+[48:37.52] the right expert. So you can use this
+[48:40.80] based on its performance. going to you
+[48:43.28] know so if if this gets a score of 0.1
+[48:46.72] this gets a score of 6 this gets a score
+[48:48.56] of 0.1 then you hit all three experts
+[48:51.20] and then you get the results and you do
+[48:54.24] a weighted average of these results why
+[48:56.64] is this bad because you're hitting all
+[48:58.24] three experts scaling the models as hard
+[49:01.20] as ever okay this only gives you a
+[49:04.64] theoretical understanding of this
+[49:06.24] instead what you should have is
+[49:09.04] um okay let's see whether noisy top way
+[49:11.84] gating does it. We add two components to
+[49:13.84] the softmax gating network. Sparsity
+[49:15.76] which is essential and noise. Okay. Why
+[49:18.56] noise? We'll see.
+[49:21.60] We'll just see in 2 minutes. Um so
+[49:24.88] sparsity before taking the softmax
+[49:26.48] function we add a tunable gian noise.
+[49:29.12] Why?
+[49:30.72] Because you don't want one expert to be
+[49:32.32] overtrained. Okay. Uh then keep only the
+[49:35.04] top k values
+[49:37.60] setting the rest to minus infinity which
+[49:39.44] basically puts them at zero. So their
+[49:40.96] weight becomes zero which causes the
+[49:42.72] corresponding gate values to be zero.
+[49:44.00] The sparity serves to save computation
+[49:46.48] as described above. While this form of
+[49:48.48] sparsity creates some theoretically
+[49:50.24] scary discontinuities in the output of
+[49:52.96] gating function. Uh we have not yet
+[49:55.12] observed this to be a problem in
+[49:56.56] practice. The noise term helps with load
+[49:59.04] balancing. Yeah. uh as we discussed in
+[50:02.40] as will be discussed in appendix a the
+[50:05.52] amount of noise per component is
+[50:07.04] controlled by a second trainable weight
+[50:08.88] matrix W noise. So what are we doing? We
+[50:13.20] are first saying that you know what
+[50:17.52] here's here's a neural network gate
+[50:22.32] uh and
+[50:25.68] it can send it to expert one expert 2 or
+[50:30.16] expert 3.
+[50:32.80] If you start sending to all three it's a
+[50:34.88] waste of time. So choose just one or
+[50:37.04] two. That is called sparsity.
+[50:40.96] And how are they doing that? They're
+[50:42.16] taking a soft max but just take the top
+[50:45.04] K. The rest of it is set to negative
+[50:47.04] infinity. So soft max of negative
+[50:48.48] infinity is zero. Okay. So only a few
+[50:50.96] experts will be picked up.
+[50:53.76] The other thing that they're doing is
+[50:56.96] when picking up experts you want the
+[51:00.40] ones which are less trained to be
+[51:02.32] trained more. Okay. If one expert is
+[51:05.84] overtrained, one expert becomes very
+[51:07.52] good at answering almost all general
+[51:09.12] queries, then you're wasting
+[51:10.80] computation, wasting parameters here.
+[51:13.36] Okay, don't do that. If E3 is
+[51:16.08] undertrained, sometimes force the router
+[51:18.56] to send it here to E3.
+[51:20.96] How are you doing that? By adding some
+[51:22.48] random component of noise. You're not
+[51:24.40] letting all queries go here. You're
+[51:25.84] sometimes randomly sending it here.
+[51:27.92] Okay, let's see how that's happening.
+[51:29.92] Here you can see clearly that g of x is
+[51:32.88] taking the top k
+[51:35.84] um and then doing a softmax on it. H of
+[51:40.80] X is this
+[51:47.04] this is basically uh the
+[51:50.80] X into WG this okay this is a trainable
+[51:54.64] uh matrix with the input okay plus
+[51:57.76] standard normal plus soft plus where
+[52:01.28] you're taking X into noise
+[52:04.16] okay so you're taking the top K
+[52:10.08] results the result depends on
+[52:12.16] performance and noise.
+[52:15.44] Okay. So as the model is less and less
+[52:19.04] trained the noise factor will keep going
+[52:20.48] higher and higher. Eventually it will
+[52:22.80] you take a standard normal and then you
+[52:24.80] multiply that with the noise. Okay this
+[52:26.96] part is helping you do load balancing.
+[52:29.84] Okay
+[52:31.76] that's that's what's happening at a high
+[52:34.48] level.
+[52:35.92] Okay, any questions guys?
+[52:39.28] Uh five minutes for questions then we
+[52:41.04] will continue.
+[52:58.24] Right.
+[53:09.12] Okay. I I think most of this you must be
+[53:12.64] understanding now. But if you have any
+[53:16.08] problems, let me know in the chat. I'll
+[53:17.52] just pause for 2 minutes.
+[53:22.96] So, Simple Programmer, this is not a
+[53:24.40] book. This is uh something you'll see in
+[53:26.72] the description. The
+[53:29.20] the description has the white paper
+[53:31.60] link.
+[53:44.80] Okay.
+[53:51.36] Uh is it something related to leader
+[53:55.12] follower node architecture? very
+[53:56.96] similar.
+[53:59.92] No, I won't say it's very similar.
+[54:01.28] Frankly, leader follower is more of, you
+[54:03.92] know, you have a um a leader who is
+[54:07.60] deciding uh on
+[54:10.80] sending data to all the followers. U
+[54:14.08] this is more of load balancing. This is
+[54:16.64] more of you know you get a query, you
+[54:19.36] send it to the network which has the
+[54:21.36] minimum load. That's one part of it. But
+[54:24.16] you also send it to the cache which
+[54:26.96] already h or to the server which already
+[54:29.28] has the data hot in cache. So there's a
+[54:31.68] mixture of that. Okay. You can think of
+[54:34.48] a server having most of the cache data
+[54:36.80] as an expert. So you want to send it to
+[54:38.88] the best expert but at the same time you
+[54:41.12] don't want to send all the queries to
+[54:42.32] that single server. So there is a
+[54:44.40] component which wants to send data to an
+[54:46.64] expert cache. At the same time it also
+[54:49.36] wants to populate other caches. That's
+[54:51.20] what is happening in mixture of experts.
+[54:52.64] You can think of it that way. Okay.
+[54:56.56] Is G of X essentially some weight that
+[54:58.64] decides the importance of the expert?
+[55:00.16] Yes, that's correct. That's absolutely
+[55:01.60] correct. Uh Aditya,
+[55:04.40] what exactly is the noise referring to?
+[55:06.00] Like do we assign random weights to
+[55:07.36] certain experts for that query? This
+[55:08.96] noise component that you're seeing is
+[55:10.40] going to keep increasing. Okay. Uh as
+[55:13.52] you train more and more queries, the
+[55:16.08] noise component for
+[55:19.36] expert I is going to keep increasing.
+[55:22.08] You can think of it that way that the ex
+[55:25.12] an expert which is not being picked up
+[55:27.36] has more and more noise has more and
+[55:29.36] more noise output. Eventually the the
+[55:33.20] router can no longer ignore the noise
+[55:35.04] and has to then send it to that expert.
+[55:38.00] Okay.
+[55:47.28] Okay. This is what's happening. Um this
+[55:52.56] is the main you know uh algorithm for
+[55:56.64] mixture of experts. Let's just quickly
+[55:58.64] go over the performance challenges that
+[56:01.04] they went through. Uh or maybe this is
+[56:03.60] this is quite intense. So I'll go over
+[56:06.16] the conclusion guys. You can let me know
+[56:07.92] in the comments what what you think.
+[56:11.84] Highle conclusion we have already drawn.
+[56:14.24] it's that you need uh multiple experts,
+[56:18.56] multiple neural networks
+[56:21.68] um which when given an input query can
+[56:25.44] be chosen randomly. Okay. Uh and I'm
+[56:28.96] sorry for the background noise. Uh but
+[56:31.60] yes, this is this is what we are going
+[56:33.68] through.
+[56:37.76] This work is the first to demonstrate
+[56:40.08] major wins from conditional computation
+[56:41.92] in deep networks. We carefully
+[56:45.28] identified the design considerations and
+[56:47.84] challenges of conditional computation.
+[56:49.76] Okay, this is not going to actually add
+[56:51.28] any value to you. Uh I will do the
+[56:53.28] summary a little bit here. Okay, at a
+[56:55.28] higher level what's happening is they
+[56:57.52] really wanted to upscale their models.
+[56:59.68] Okay, add more and more parameters. This
+[57:02.16] was not at all easy because when you had
+[57:05.20] a neural network with more and more
+[57:06.72] parameters, um back propagation
+[57:11.28] is very expensive. Okay, training the
+[57:13.92] neural network
+[57:17.04] is very expensive. How do you make this
+[57:19.36] cheaper? There's only one way which is
+[57:24.56] break it into pieces.
+[57:27.20] Break it into different experts and
+[57:29.36] train them individually. This makes it a
+[57:32.00] sparse neural network. Okay. And how do
+[57:35.60] you choose which one to pick? Use a
+[57:38.16] gate.
+[57:39.68] Is the gate static? No, it is an
+[57:41.68] intelligent gate. It itself has
+[57:43.44] parameters. It learns to choose the best
+[57:46.08] network by
+[57:49.20] um whenever you're getting an input
+[57:51.04] query. If the network performs well,
+[57:55.04] then during back propagation they are
+[57:57.04] going to be rewarded. Okay. If the
+[58:00.08] network performs poorly, then the gate
+[58:02.32] weights are going to be updated. Okay.
+[58:04.80] So in this way the routing gets better.
+[58:08.80] This gate gets better and better at
+[58:10.32] choosing the right expert. At the same
+[58:12.00] time the expert itself has its weights
+[58:14.16] updated. So if it performed there's
+[58:16.88] going to be some loss. Okay. And that
+[58:19.84] loss is going to make the parameters get
+[58:22.80] updated.
+[58:25.44] So you're training two networks at the
+[58:27.44] same time. The gating network and the
+[58:29.36] neural network sub network. Okay.
+[58:33.68] That's the main idea of mixture of
+[58:35.04] experts. It really helped scale up the
+[58:38.00] current neural networks at that time
+[58:39.52] because earlier they had just one neural
+[58:42.64] network that they could train. Now they
+[58:44.32] could potentially add hundreds of
+[58:47.04] experts and so scale up the model 100x.
+[58:50.80] Okay, every training data point would
+[58:54.08] only update one part of the neural
+[58:55.84] network which made it much much much
+[58:57.52] much faster. So the number of parameters
+[59:00.08] in the same neural network could be
+[59:01.44] scaled up enormously
+[59:03.76] even if you kept pumping in more data.
+[59:06.88] Okay, computation required was not as
+[59:09.04] high as earlier. You don't have to
+[59:11.76] update the entire neural network. You
+[59:13.28] have to update just a part of the neural
+[59:14.64] network. That made it highly scalable.
+[59:18.64] Okay. In inference time, what happens is
+[59:21.68] the gate chooses one expert and then
+[59:24.48] picks that up.
+[59:28.48] All right, folks. Thank you so much for
+[59:30.08] coming here. Um, and what we'll do is
+[59:33.36] I'll see you next week that is on the
+[59:36.48] 18th uh with a new paper. Uh, let me
+[59:39.28] know your thoughts and suggestions in
+[59:42.00] the comments. You can also if you are
+[59:45.28] interested in AI engineering uh look at
+[59:47.68] this cohort which is there on the 28th
+[59:50.24] of February. Just share the link in the
+[59:53.44] in the chat. This is going to be a
+[59:56.24] 16week long cohort where we'll be going
+[59:58.00] through various important parts of AI
+[60:00.80] engineering including tokenization,
+[60:02.80] vectorization,
+[60:04.40] uh you know the internals of a
+[60:05.84] transformer and then we'll be moving to
+[60:08.64] how we can create agentic AI. So agents
+[60:12.80] simple things like rag how do we do well
+[60:15.44] with rag that's chunking maybe I can
+[60:17.68] just share the
+[60:19.92] I don't know yeah I can I can maybe
+[60:21.60] share the
+[60:24.80] website with you here
+[60:31.52] right that's what we are going to do at
+[60:33.44] a
+[60:35.76] at a high level yeah okay thank you
+[60:38.72] everyone for coming thank you for making
+[60:40.32] this exciting and I'm sorry for the
+[60:43.12] technical glitches uh and but at the
+[60:47.76] same time I think that's good learning
+[60:50.16] for next time. Yeah, next job experts
+[60:52.32] done. So I'll see you next time. Thank
+[60:54.64] you. Have a great evening. Bye-bye.

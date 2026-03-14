@@ -1,0 +1,758 @@
+[0:00.72] Hey there everyone, my name is Atesh and
+[0:03.04] the single goal of this video is to make
+[0:05.44] sure that you understand the agent not
+[0:08.40] just about what are AI agents but
+[0:10.24] actually you take my repository which is
+[0:12.48] totally open-source run the agents
+[0:15.04] absolutely for free and get the taste of
+[0:17.68] what it's like to run the agent which
+[0:19.92] actually does some work in your
+[0:22.00] production environment with full control
+[0:25.04] not just those random agents which goes
+[0:27.04] on the internet get some data which are
+[0:28.96] probably which can be useful in some
+[0:30.88] cases but not for majority of the people
+[0:33.28] especially the people who are developer
+[0:34.80] they want much more control of what
+[0:36.32] their agents are doing and what their
+[0:37.84] agents are actually giving them back we
+[0:40.24] want branching control we want pull
+[0:42.48] request control and so much other things
+[0:44.16] which I totally understand so this video
+[0:46.56] is designed in such a way that you
+[0:48.08] understand the agents the pros and cons
+[0:49.76] of the agents how you can run the agents
+[0:52.08] and demystify everything around the
+[0:54.48] agents let me walk you through this
+[0:56.40] video is going to be so much fun so for
+[0:58.64] running the agent I'll be using my
+[1:00.40] trusty warp again. I will show you the
+[1:02.56] detail of that. But first, we need to
+[1:04.08] understand that why agent makes sense
+[1:06.96] and why agent doesn't make sense. So,
+[1:09.36] I'm pretty sure you have heard about the
+[1:10.64] agents. Pretty sure in case you don't
+[1:12.32] know what these are, these are u nothing
+[1:15.36] much. But if you look at this
+[1:16.80] perspective, uh this is your AI and on
+[1:19.92] top of that, this is AI. This cannot do
+[1:22.24] much of the thing. AI is like thinking
+[1:24.16] brain. It can think a lot. It can allow
+[1:27.36] you to see what it is thinking as well
+[1:29.60] but it cannot do any task. So as soon as
+[1:32.16] as soon as this AI gets some kind of
+[1:34.96] overlapping with tools that becomes the
+[1:37.84] agent. Now what are these tools? These
+[1:40.08] tools can be anything like some tools
+[1:42.24] can create folders, some tools can
+[1:44.24] create files, some tools can actually
+[1:46.80] take the code which AI is thinking and
+[1:49.36] write them in the file. Some can perform
+[1:51.84] more complex operations as well. depends
+[1:54.64] on how powerful the tool is and how
+[1:57.12] powerful the AI is. The combination
+[1:59.04] actually works and these are loosely
+[2:01.76] called as agents. Now again there are a
+[2:03.76] lot of people with the different
+[2:04.80] definitions but in general these are our
+[2:07.28] agents and we can actually design the
+[2:10.48] agents in such a way that they can do
+[2:12.56] some of our task. But here is the
+[2:14.16] problem. Here is the main problem. Let's
+[2:16.08] just say this is you as a user and you
+[2:19.52] want to do this do some task. So I don't
+[2:22.64] expect you that hey this is the agent
+[2:25.76] and you just launch this agent and then
+[2:28.48] simply say that hey this agent is going
+[2:30.40] to do some task how is that even
+[2:33.28] possible like what task and the most
+[2:36.32] important hurdle in our case especially
+[2:38.72] as a developer is this task and you
+[2:41.52] might be asking why is it so let me tell
+[2:43.84] you the reason for that because as we
+[2:46.32] are developers we have variety of
+[2:48.56] environments that works with us
+[2:50.64] sometimes we have the python environment
+[2:52.88] and in some of the cases uh we might
+[2:55.52] have maybe nodejs environment and that's
+[2:59.76] the one part of it uh maybe there can be
+[3:03.20] uh ro ruby on rails environment your
+[3:06.40] agent have no idea about this ecosystem
+[3:08.64] that where should I run in the python
+[3:10.48] ecosystem or nodejs or ruby on rails and
+[3:12.88] these are just the basic some of your
+[3:15.60] work that you're doing in your
+[3:16.80] day-to-day life in your corporate are
+[3:18.48] not just plain python environment there
+[3:20.48] are so many tools, so many existing code
+[3:22.72] that is there in your repository and
+[3:24.48] then you want to take the reference from
+[3:26.32] some of the issue that is being created
+[3:28.32] on the GitHub and then actually solve
+[3:31.04] this problem. So in this case the agent
+[3:34.00] is missing one major piece which I call
+[3:37.52] is this as env or in short for
+[3:40.64] environment. As long as this agent is
+[3:43.44] not aware of the environment, it will
+[3:45.36] not be able to perform this task. So
+[3:47.60] this agent needs to be aware of the
+[3:49.12] environment. That's the 101 thing and
+[3:51.20] this is the major problem that is solved
+[3:53.60] uh by the OZ which is also a new product
+[3:57.04] by the warp but again they are giving
+[3:59.04] generously free tier and uh I have also
+[4:01.84] my open source repo so that you can run
+[4:03.68] this freely and what we'll be able to do
+[4:06.08] by the end of this yeah that's the fun
+[4:08.08] thing so by the end of this running the
+[4:10.96] entire task and agent what I want to do
+[4:12.88] is I will run an agent which is going to
+[4:15.44] go ahead and build some application in
+[4:17.12] react whatever you ask it maybe a
+[4:19.12] weather application maybe a to-do
+[4:20.64] application or much more complex than
+[4:22.48] this as well not just weather to-do the
+[4:24.72] reason why I'm mentioning these basic
+[4:26.24] application because you can run as
+[4:27.84] complex application or even you can ask
+[4:29.68] it to to monitor or to have a look on
+[4:33.20] the entire database endpoints not
+[4:35.52] database your backend endpoints and run
+[4:37.68] the entire application or build an
+[4:39.12] entire application in react but there
+[4:41.12] could be an application in react but so
+[4:43.20] does an application can be in the VueJS
+[4:45.76] as well and we have a lot more so if I
+[4:47.92] show you the codebase we have an
+[4:49.28] application in react, we can have
+[4:50.72] application in swelt, vanilla or view.
+[4:54.00] So let's just say in our case we have a
+[4:56.32] react and we have the corejs. So what we
+[4:59.84] are going to do is this is you are as a
+[5:02.80] user. You are going to ask your agent
+[5:05.20] that hey these are the three different
+[5:06.72] environment you have to go through. So
+[5:08.48] you can go into react, you can go into
+[5:10.32] view or you can go into js. It will
+[5:12.88] first go ahead and read the environment
+[5:14.80] and then it is going to go ahead and
+[5:16.88] create an application. each of these
+[5:18.80] environment and then after that we are
+[5:21.12] going to fire up a simple judge agent.
+[5:23.92] Yeah, that's complex but it is fun.
+[5:26.64] We're going to go ahead and fire up a
+[5:28.40] judge agent and this judge agent will go
+[5:31.60] into each of these folders. In our case,
+[5:34.08] it will be a separate branch for us and
+[5:36.56] it's going to rate each of the project
+[5:38.40] that how good you are based on the
+[5:40.16] parameter that you have mentioned. Maybe
+[5:41.76] UI, maybe performance, whatever is the
+[5:44.08] parameter. And then it's going to give
+[5:46.24] us and tell us that hey uh this is going
+[5:48.40] to be our winner. How cool is that? Now
+[5:51.44] I know this is a complex task but with
+[5:53.44] the agents you can do this really
+[5:55.04] simple. Let me repeat that again. What
+[5:56.64] we're about to do a user is going to
+[5:59.04] first set up an environment because in
+[6:01.92] order to run these application you need
+[6:03.44] different environment. In our case it
+[6:04.96] can be JavaScript environment but in
+[6:06.72] your case it could be Python environment
+[6:08.48] for some of the repo work. Some it can
+[6:11.44] be Ruby on Rails some Java environment.
+[6:13.28] There could be different ones. In our
+[6:15.04] case, we are taking Java uh NodeJS
+[6:16.80] environment but we are creating
+[6:18.16] different project one. Same project in
+[6:20.64] React, same project in Vue, same project
+[6:22.80] in JS. And then a judge is going to come
+[6:25.44] into the picture and is going to tell us
+[6:27.20] that hey this guy is the winner based on
+[6:29.76] the parameter that you have set. Now I
+[6:31.76] know this looks really complex that how
+[6:33.76] we are going to do this but warp and
+[6:35.52] especially the OZ agent makes it super
+[6:37.68] super easy and uh useful. Let me take
+[6:40.56] you to this. And by the way, you can
+[6:42.00] just simply go on to oz.warp.dev
+[6:44.40] and I have already created my account.
+[6:45.92] It's the same warp account and you can
+[6:47.44] just loging in with that. Let me move
+[6:48.96] this. The first thing that you have to
+[6:50.96] do is create an environment. And by the
+[6:52.96] way, you can see a lot of things are
+[6:54.24] here. So there's runs, there's agents,
+[6:56.56] there is schedules. This is like a chron
+[6:58.72] job equivalent. And then we have the
+[7:00.80] environment. And then we have
+[7:02.08] integration. They have integrations as
+[7:03.76] well with the linear, slack, github. You
+[7:06.16] can you build your own. They have SDKs.
+[7:08.16] But the most important one to get
+[7:10.16] started is the environment. I have this
+[7:11.92] wipe translator app environment. By the
+[7:14.24] way, the repo is available on my account
+[7:16.64] uh github.com/eshodri.
+[7:19.04] And you can look into this wed
+[7:21.28] translator and the whole source code is
+[7:23.04] available for you. You can go ahead
+[7:24.64] change it, take it, modify it. Feel free
+[7:27.60] to just use it to learn any kind of
+[7:29.60] thing. Now the first thing that you have
+[7:31.44] to do is create an environment. You can
+[7:32.88] go ahead and create an environment from
+[7:34.32] here as well. But this is okay. I found
+[7:37.76] that terminal is much better place to
+[7:39.60] create environment. All I have to do
+[7:41.44] here is come into this and say that I
+[7:44.00] want to create an environment. Just hit
+[7:45.28] the slash which is a command pallet for
+[7:47.12] it and simply say I want to create
+[7:48.88] environment. As soon as you select this
+[7:50.80] one which is create environment. There
+[7:52.16] are a couple of ways you can create
+[7:53.28] project environment skill but the step
+[7:54.80] one is to create environment. Then it
+[7:56.72] says hey you can use the agent to set up
+[7:58.80] the environment based on your project
+[8:00.64] locally that you have. So it will help
+[8:02.08] you to do all of the things or you can
+[8:04.00] do a quick setup in this. Now you can
+[8:06.32] see we have the environment name,
+[8:07.76] description, repos, docker image or
+[8:10.40] setup commands as well. How you're going
+[8:12.32] to get that? I know first time it can be
+[8:14.80] very difficult or a little bit scary
+[8:16.48] that how I'm going to do it. That's
+[8:17.84] where the repo comes up. In the repo I'm
+[8:20.40] going to give you this o
+[8:21.68] environment.yamel file which has all the
+[8:24.00] commands and everything written for you.
+[8:25.92] So this one is the name. We have to just
+[8:27.92] copy paste the wipe translator. Come
+[8:30.32] back here and paste this here. In the
+[8:32.56] description, you can paste anything just
+[8:34.24] like this. In the repository, this is my
+[8:37.28] repository of the VIP translator app.
+[8:39.52] You can give your repository as well.
+[8:41.92] Then the branch name. So in this case,
+[8:43.60] the branch name is main. So it's going
+[8:45.36] to automatically pick this up. So this
+[8:47.44] is going to be my repo format. And by
+[8:49.28] the way, you have to connect your GitHub
+[8:51.04] account as well. It's a simple click and
+[8:52.80] you can just hit this one here. You can
+[8:54.96] give each repo access or the whole
+[8:56.96] account. I have given just the one repo
+[8:58.72] access. And then here is uh the docker
+[9:02.24] image. So I'm using the node 20 bookwarm
+[9:04.56] image which is pretty lightweight but
+[9:06.40] actually you can refer to any of the
+[9:08.72] docker image whatever is available in
+[9:10.80] the docker. It also suggest you the
+[9:13.04] image based on whatever is there in the
+[9:15.28] repo and then you can set up the
+[9:16.96] command. So I have two setup commands
+[9:18.64] and I will just go ahead and copy paste
+[9:20.40] this. By the way once you add anything
+[9:22.32] here for example if I just go ahead and
+[9:23.76] add a test you can add multiple commands
+[9:25.84] just like that. I've already created uh
+[9:28.48] these uh environment one environment. So
+[9:30.72] I'm not going to do that again. And uh
+[9:34.00] no I don't want to do this. So I'll just
+[9:35.44] go ahead and close this. I have this
+[9:36.72] environment which is wipe translator
+[9:38.24] already available for me. And this will
+[9:40.48] help you to understand and visualize
+[9:43.12] that although it looks like a lot is
+[9:44.80] there in the environment creation but
+[9:46.16] it's not. You just connect your
+[9:47.92] repository give it a name and a docker
+[9:50.72] image. These are the three essential
+[9:52.48] components and of course startup
+[9:53.76] commands are required that how it is
+[9:55.36] going to know that it's going to do
+[9:56.56] anything. Once you have this entire
+[9:59.04] thing and your repo is connected now
+[10:01.20] locally we can run any command. So let
+[10:03.28] me go ahead and run this and these
+[10:04.88] commands can run into the warp
+[10:06.64] environment itself. So how that actually
+[10:09.76] works. So notice here I'm going to open
+[10:12.16] this uh one wipe translate.sh. I do have
+[10:15.76] a TS version which I I was trying to
+[10:18.24] build through the SDK of bar. But notice
+[10:20.64] this wiper translate.sh. All you have to
+[10:22.56] do is I have given you a few examples
+[10:24.08] here as well. Run this with the dot
+[10:26.24] /wiper translate.sh and then your app
+[10:29.44] ID. Your app id could be like build a
+[10:31.44] pomodoro app or build a kban board or
+[10:34.24] build a markdown editor or you can give
+[10:35.92] a pretty long uh prompt in itself that
+[10:38.96] hey this is my repository or this is my
+[10:41.52] codebase for the entire back end. I want
+[10:43.44] you to build the front end. And what
+[10:45.28] it's going to do, it's going to take
+[10:47.36] your prompt and is going to move into
+[10:49.52] different environment. And if you notice
+[10:52.08] here, each agent, we can spin up as many
+[10:55.44] agent as we wish. Each agent is
+[10:58.32] instructed in such a way in this file
+[11:00.16] that you go ahead and by the way, we
+[11:01.92] have this react file which has nothing.
+[11:03.52] It's just a git keep, we have swelt, we
+[11:05.92] have vanilla, we have view, there's
+[11:07.44] nothing. So they are instructed in such
+[11:09.36] a way that hey, you have to go ahead and
+[11:11.52] create a new branch for yourself. So let
+[11:13.68] me go ahead and help you to visualize
+[11:15.12] that uh so that you can also see what's
+[11:17.44] happening. So this whole thing react is
+[11:20.16] going to be a new branch.
+[11:22.80] So the agent is going to go ahead take
+[11:25.28] the react ecosystem will work only in
+[11:28.48] the react folder and we'll launch a new
+[11:30.96] branch and once it's all done then it's
+[11:32.96] going to send you a pull request so that
+[11:35.52] you can go ahead and verify that. So
+[11:37.60] this is all this is all about. Let's go
+[11:39.12] ahead and take a look on this. So this
+[11:40.40] is environment name. This is important
+[11:42.00] while running this that hey I'm passing
+[11:43.68] you explicitly that this is my
+[11:45.44] environment name and this is the one
+[11:47.60] which is very important. Each
+[11:49.20] environment gets environment ID. So if
+[11:51.04] you go ahead and look at this uh this is
+[11:53.52] where you get the environment ID. This
+[11:55.28] is most important if you're using this
+[11:56.96] through the script. If you're using it
+[11:58.32] with the terminal no need to worry at
+[11:59.92] all once you go ahead and look at this.
+[12:02.08] These are my stacks. These are my
+[12:03.84] directories that I have mentioned. And
+[12:05.20] then I have mentioned this explicit
+[12:06.96] instruction that the build this app
+[12:09.20] using react with Tailwind for styling
+[12:11.12] and all these things. And then another
+[12:13.76] instruction is for another agent. Build
+[12:15.76] this app in swelt using all of this.
+[12:18.16] Build this app in view3. Build this app
+[12:20.24] in vanilla HTML and CSS. And then what
+[12:23.52] it does it just simply goes ahead and
+[12:25.44] launch the agent. It actually launches
+[12:27.28] four agents in parallel. Once the agents
+[12:29.76] are done working with them then it goes
+[12:31.68] ahead and launch in another agent. And
+[12:33.12] these are nothing uh these are just
+[12:34.96] simple loops which actually takes the
+[12:37.12] environment name takes the prompt and
+[12:39.12] just run it. That's it. And that's why
+[12:41.04] I'm giving you this whole file so that
+[12:42.64] you can also go ahead take a look on
+[12:44.56] this that what's going on, how is it
+[12:46.24] being done. Now let me show you what's
+[12:48.96] the output. Uh by the way you can run
+[12:50.64] this pretty easy. I also previously ran
+[12:52.96] that. So you can see these are all the
+[12:54.96] session which it ran and it did all the
+[12:57.28] work. Uh I just went away to have a sip
+[13:00.72] of tea to work with that. Now the most
+[13:03.20] important thing it's going to install
+[13:04.56] the things run all the things but how
+[13:06.56] does the output looks like because
+[13:08.48] output is something which every single
+[13:11.20] creator who is using these things
+[13:12.96] professionally will be worried about. So
+[13:15.36] let me walk you through with the output
+[13:16.80] as well. So if you go ahead and look at
+[13:18.72] this there are four pull requests here.
+[13:21.12] I can just go ahead and click on this.
+[13:22.96] So it keeps me in control. It doesn't
+[13:25.68] automatically just flush all the code in
+[13:28.40] my codebase and makes a mess. I am in
+[13:30.72] full in charge that what's happening and
+[13:32.40] how is it happening. So notice here add
+[13:35.36] this is comparison report for pomodoro
+[13:37.60] and these are the timer app with view3
+[13:40.08] this is the timer pomodoro app in
+[13:42.80] vanilla and this is in the react so
+[13:44.72] these are the agents which are doing
+[13:46.08] this and once this is all doing I can
+[13:49.12] probably merge them or not merge them
+[13:51.04] that's up to me but I can just go ahead
+[13:52.48] and look at this that hey what you're
+[13:53.76] doing and what's there in your pull
+[13:55.28] request I can click on this and notice
+[13:57.44] here this is the judge by the way so
+[14:00.00] judge gives it that hey total score is
+[14:02.56] 40 out of 50 based on my parameters that
+[14:05.12] I've given it to. This is going to be
+[14:06.96] the react and tailwind which is the
+[14:08.72] winners. So it actually picks up a
+[14:10.32] winner and gives you the complete
+[14:12.64] comparison report in the markdown
+[14:14.48] format. And by the way, the whole repo
+[14:16.08] is available to you. So there's a
+[14:18.40] comparison score based on the structure
+[14:20.88] visual score is there. There is animated
+[14:22.64] trophy is there and all these things are
+[14:24.40] there. So and again this PR was
+[14:26.72] generated by warp. So you already know
+[14:28.88] this part as well. And let me walk you
+[14:31.20] through with the code part as well where
+[14:32.64] the agents have generated this code. Now
+[14:35.12] why I'm walking you through this is yeah
+[14:37.36] surely you can do this with any other
+[14:39.44] cloud or anything like that. But my
+[14:41.76] point is when you have these
+[14:43.60] integrations available from the Slack or
+[14:46.00] from the GitHub issue, it's not like
+[14:47.84] they're just merging the code. We can
+[14:50.16] automatically spin the agent at 10:00
+[14:52.24] a.m. or 12:00 a.m. wherever you like
+[14:54.00] that and it can just do all the stuff
+[14:56.56] and makes a nice and easy pull request
+[14:58.72] and then you are in full in charge to
+[15:00.56] either merge it or ask your agent to do
+[15:02.88] something else. This is what I love
+[15:04.64] absolutely about it. So we can see 13
+[15:06.72] files are changed and by the way all
+[15:09.28] these files are also into a separate
+[15:11.44] folder as well. So that's really nice.
+[15:13.36] So notice here this is all the thing
+[15:14.96] features and all these things. You can
+[15:16.48] go ahead and look at all the files that
+[15:18.16] are being changed. You can go ahead and
+[15:19.84] click on this. So these are all the
+[15:21.60] files and what you'll notice you will
+[15:24.80] notice here that notice here
+[15:26.88] view/source.
+[15:28.64] So all these are inside the view folder
+[15:30.88] not outside. Really nice. So in case you
+[15:33.44] don't use too much about the work tree
+[15:35.52] in the git this is also a workflow that
+[15:37.60] you can go ahead and utilize this. I
+[15:39.60] loved this absolutely and one of the
+[15:42.08] thing that you can also love is this uh
+[15:44.32] they are actually giving you thousand
+[15:45.84] free cloud agent credits so that at
+[15:48.08] least you can run okay so what you have
+[15:50.08] to do let me just summarize that the
+[15:52.00] step one is to go into uh this wipe
+[15:54.96] translator go ahead and download this
+[15:57.20] after that go ahead and go to the warp
+[15:59.76] this is the best way to do it as simply
+[16:02.00] run a simple command to create an
+[16:04.08] environment just go ahead and create an
+[16:05.68] environment and once you are done
+[16:07.44] creating the environment then you can
+[16:08.96] simply go ahead and open this uh project
+[16:11.84] repository. Let me open that. All right.
+[16:14.64] So, I've opened the repository and if I
+[16:16.32] do a quick ls, I know that all the clean
+[16:18.72] branches and everything here and all I
+[16:20.72] have to do is run just one command that
+[16:22.40] I just showed you which is in the wipe
+[16:24.16] translator.sh at the very top. This is
+[16:26.64] how you run it and you enter the
+[16:28.24] command. So, let's just say if I go
+[16:29.52] ahead and take this one this time, let's
+[16:31.36] do a kbun board. So, we can just go
+[16:34.24] ahead and take this here. Copy this and
+[16:37.76] run this. This is going to just spin up
+[16:39.76] the entire agent. Let's do it. We have
+[16:41.60] enough of free credits. We can have fun.
+[16:43.52] So let's go ahead and wipe translate.sh.
+[16:45.60] Bu canban board with a drag and drop.
+[16:47.52] That's all you say. Rest of the
+[16:49.04] instruction is automatically passed with
+[16:50.72] the loop. So that this loop actually can
+[16:52.72] keep on spinning the agent. And you can
+[16:54.32] directly spin the agent from here as
+[16:55.76] well. But I thought we have enough
+[16:57.60] credits. Let's go ahead and have fun
+[16:59.12] with different agents. So if I go ahead
+[17:00.88] and run this and this is going to just
+[17:03.44] open up the prompt. So it resolved the
+[17:06.16] environment. The environment is really
+[17:07.84] important. I spent a really good amount
+[17:10.08] of time in debugging this to find out
+[17:11.76] the environment ID through the code.
+[17:14.00] Notice here phase one launched four
+[17:15.52] agent builders. And by the way, I can
+[17:17.20] check them here as well in case you wish
+[17:19.76] to. Uh there are all the runs that are
+[17:22.24] going on. But you don't have to come to
+[17:23.84] this anytime. I didn't also I don't also
+[17:26.64] much come here uh because everything is
+[17:29.04] already going on. So you can actually by
+[17:31.76] the way go recurring agents as well. You
+[17:33.92] can schedule these agents from here.
+[17:37.04] Okay, you load this this one here. And
+[17:39.84] this one obviously is going to take time
+[17:41.44] because this can ban board is definitely
+[17:44.16] a task worth doing. So let me just go
+[17:47.44] ahead and open up the schedule. You can
+[17:49.60] just click on new schedule and just have
+[17:51.20] this. This is exactly same as what you
+[17:52.80] saw in the war. You can name this your
+[17:55.28] agent can be ad hoc agent. Give it a
+[17:57.44] prompt entire thing that you wanted to
+[17:59.28] do. Uh set up an environment. I just
+[18:01.28] have one environment as of now. And then
+[18:03.12] you can select the model as well or
+[18:04.72] default. and then just simply mark as
+[18:07.12] where you want to run it. Maybe you want
+[18:09.44] to have a pull request reviewed at 9:00
+[18:13.12] a.m. every day. Or maybe you want to
+[18:14.72] check somebody's Twitter or maybe want
+[18:16.48] to call some APIs every single day or
+[18:18.40] sometime. You can just mark it as every
+[18:20.48] hour, weekly, monthly, custom. These are
+[18:23.36] just your basic crons. If anybody has
+[18:25.12] worked in the cron, they know this. But
+[18:26.80] in case you haven't, this is also fun.
+[18:28.72] So this is the schedule thing. And you
+[18:30.80] have these integration as well. I find
+[18:32.88] these integration pretty interesting.
+[18:34.48] And this is my favorite. You can build
+[18:36.64] your own integration with the setup. So
+[18:38.80] they have this SDKs and all these
+[18:40.56] things. And this is going to probably
+[18:43.60] take some time and that's why I didn't
+[18:45.92] showed you initially because these
+[18:47.28] things actually do take time. We can
+[18:49.68] actually go ahead and see them. Uh as
+[18:51.92] soon as the pull request comes up, we
+[18:54.24] can just see them. I think this is going
+[18:56.72] to take some time because this is a lot
+[18:59.28] of work.
+[19:01.36] And let's check this
+[19:04.88] if we have uh some of these agents.
+[19:08.08] Let's load the agents.
+[19:11.76] Taking some time.
+[19:15.84] Oh, something happened.
+[19:18.16] Agent React Tailwind launched. So, this
+[19:20.96] agent is already going on. So, it will
+[19:24.00] keep on doing the thing. The whole point
+[19:25.44] is that we don't sit here and keep on
+[19:27.44] doing the stuff. I just had this fun
+[19:29.68] example but you can have all these other
+[19:31.76] examples where you want to do the review
+[19:33.44] request, pull request and all these fun
+[19:35.20] requests. Uh that's why before recording
+[19:37.52] this video or before setting up
+[19:38.88] recording for this I did this whole
+[19:40.64] thing and by the way I constantly have
+[19:43.68] been doing this back and forth with
+[19:45.52] different repos and all these things. So
+[19:46.88] you can check the whole details. It's
+[19:48.48] all publicly available. I don't think so
+[19:50.80] there is any point of sitting up here
+[19:52.48] and keep on watching. Uh but again have
+[19:55.44] a look onto this repo. This repo is the
+[19:57.84] main main thing. It looks like a lot but
+[19:59.68] it is not the only file that you have to
+[20:01.52] study to work with this entire ecosystem
+[20:03.76] of oz by warp is this wiper
+[20:06.24] translate.sh. I have an equivalent in
+[20:09.36] wiper translate.ts as well because I was
+[20:11.92] using this open agent SDK as well. Only
+[20:15.12] difficulty that I found was getting this
+[20:18.56] uh environment uh ID. So that's why I
+[20:21.84] have to use this exact sync and oz
+[20:24.24] environment list and get this ID from
+[20:26.16] there. U I'm pretty sure that there is
+[20:29.28] somewhere in the documentation which I
+[20:31.12] missed uh because it's easy to do in the
+[20:33.12] shell scripting. It's little difficult
+[20:34.64] to get that uh exact ID through the
+[20:38.48] TypeScript SDK but I'm pretty sure that
+[20:40.32] can be done. So this is the stack that
+[20:41.76] we have and then this is the code that
+[20:44.00] you have. So go ahead study this code. I
+[20:47.04] highly recommend to study the sh code
+[20:48.72] because that is easier to study, easier
+[20:50.72] to read. And that's all you have to do.
+[20:52.96] Nothing else. Two files ozy and vip
+[20:56.24] translate.sh. These are just there so
+[20:58.72] that we can have something inside these
+[21:00.48] folders when our agent runs and sends us
+[21:02.88] the pull request. That's it. Rest all is
+[21:05.84] empty. And there we go. We have another
+[21:08.48] agent swelt CSS running. Uh let's wait
+[21:12.64] for a few time.
+[21:14.96] By the way, I'm just sipping tea and
+[21:17.12] this is just backto-back launching
+[21:18.56] agents. Uh, swelt is built, react is
+[21:21.36] built, view is going on.
+[21:24.16] By the way, it does all the management
+[21:26.08] of the agent as well on its own. You
+[21:28.32] don't have to do so. All four agents are
+[21:30.64] agents are running monitoring the build
+[21:32.56] agents. It does it on on its own. Uh,
+[21:34.96] Ozie does it on its own. I don't have to
+[21:37.28] do anything. And it's still waiting for
+[21:40.48] the bigger the task you are going to
+[21:41.92] give, it's going to take more time. Hey,
+[21:44.08] we have enough of free credits to burn.
+[21:45.76] So, let's go ahead and have fun.
+[21:49.44] All right, so now you can see some of
+[21:51.28] them have completed. I'm pretty sure
+[21:52.88] they might have done a pull request as
+[21:55.04] well. So, uh here we go. Just hit a
+[21:57.28] quick refresh.
+[21:59.28] And again, they are not polluting any of
+[22:01.28] my code. They are fully aware of the
+[22:03.04] environment in which my codebase is. And
+[22:05.68] I can just look at this. So, this is the
+[22:07.20] Kbad board drag and drop by Swelt. And
+[22:10.08] this is old one Pomodoro. But we have
+[22:11.84] the canban board drag and drop in view
+[22:14.72] as well. So you can just go ahead and
+[22:16.24] take a look. So if I go ahead and check
+[22:17.76] this
+[22:20.00] is all going on. This is in the same
+[22:21.44] folder. We can go ahead and check the
+[22:23.68] whole pull request. What 17 files are
+[22:25.60] changes? What you have done as the
+[22:26.80] commit and all pretty nice. So all
+[22:29.36] builders are finished. Now phase two is
+[22:32.32] launching the comparison agent. We are
+[22:34.24] not going to do the comparison ourself.
+[22:36.08] Let the agent decide that which of these
+[22:39.44] application has produced the best one.
+[22:41.44] I'm not going to do it. Otherwise,
+[22:43.20] people will be offended. Hey, React is
+[22:44.88] best. Hey, Vue is best. No, agent
+[22:46.88] decides that. And this one shouldn't
+[22:50.00] take much time because there's not too
+[22:51.68] much of the workload on the comparison
+[22:53.52] agent. And again, all of this is here.
+[22:55.92] All you have to do is just go into this
+[22:57.60] instruction. This is the phase one. This
+[23:00.64] is phase one. And all these eco and
+[23:02.32] everything is coming up from here. So
+[23:04.08] all these instruction this monitoring of
+[23:06.08] the agent. So we keep on waiting for the
+[23:08.08] agents to work on with this. Now we have
+[23:10.16] the phase two of launching the agent. So
+[23:11.92] this is the four implementation and
+[23:14.08] these are it fetches all this branches
+[23:16.72] and then compare based on the code
+[23:18.64] quality completeness UIUX performance
+[23:21.36] and developer. AI already has a lot of
+[23:23.84] data about it. So it can just go ahead
+[23:25.68] and do that and hopefully very soon we
+[23:29.44] are going to see a pull request.
+[23:32.56] How long you're going to make me wait?
+[23:35.92] All right. So, we're not going to wait
+[23:37.52] too much because this agent probably is
+[23:39.76] going to take some time because it has
+[23:41.28] to go into each codebase, have to scan
+[23:43.44] it through, rate, get provide a rating,
+[23:45.68] and then have to generate a markdown
+[23:47.28] report. It's not too much of a task, but
+[23:49.20] again, have to go through with each
+[23:50.56] files and get the pull request. But
+[23:52.40] again, that's a good part. It will keep
+[23:54.32] on doing the things. You already saw
+[23:55.76] what it produces, how it produces, and
+[23:57.92] what's the best way of running the
+[23:59.52] agents through the OZ. And all we did
+[24:02.16] was just in the warp itself. We didn't
+[24:05.04] moved anywhere outside. It can keep on
+[24:07.20] doing the stuff. Now, here's the
+[24:08.64] interesting thing. Once you understand
+[24:10.40] this one file, hardly 200 lines or 300
+[24:12.56] lines of code, you can actually feed
+[24:14.40] this entire uh file to any LLM agent as
+[24:18.00] well. And it can create based on this
+[24:20.08] file, it can create you more agents. Uh
+[24:22.88] these agents can be reviewing the pull
+[24:24.48] request, reviewing the slack request, uh
+[24:26.96] maybe some chron jobs that you want to
+[24:28.56] do. Maybe you want to run an agent at
+[24:30.88] 9:00 a.m. every day which takes the
+[24:32.64] database backup and inform you on the
+[24:35.44] slack whether the database backup was
+[24:37.12] successful or not. And if there is a
+[24:39.04] crash detection probably database can do
+[24:41.52] some more stuff. You can do a so much of
+[24:44.00] the things without worrying about the
+[24:45.84] things and since these all agents can
+[24:47.84] run within the O ecosystem of the verb
+[24:51.84] you don't have to do anything at all.
+[24:53.44] You can just keep on schedule and all
+[24:55.44] these things. Oh looks like it has all
+[24:57.92] done. So let's see where we have the
+[24:59.44] pull request. Let's refresh this and
+[25:01.68] let's see who's the winner.
+[25:04.24] So we have to find the pull request. So
+[25:08.80] okay so waiting for comparison agent wbe
+[25:12.24] judges branches are all there. I can
+[25:14.88] just go ahead and look on to this more
+[25:16.88] but you can see you can just uh open the
+[25:19.36] PRs open PR.sh. It will open all the
+[25:22.00] pull requests that we have. I didn't
+[25:23.68] work much on this but yeah it's fun.
+[25:26.24] It's really fun. So what I want you to
+[25:28.16] do now with this is uh since Warp is
+[25:30.96] giving a lot of free credits. You just
+[25:33.04] have to the link is going to be in the
+[25:34.64] description. Just sign up with that and
+[25:37.04] uh all you have to do is just clone this
+[25:39.60] repository. Study this one file which is
+[25:42.00] wip translate.sh. You can study the TS1
+[25:44.72] as well in case you are comfortable more
+[25:46.24] with the TypeScript ecosystem and then
+[25:48.48] try to just run it as it is. Give it
+[25:50.96] more of these commands which is at the
+[25:52.80] top. So try to build more stuff so that
+[25:55.12] you can first get the feel of what it's
+[25:57.52] like spinning up multiple agents and
+[25:59.36] having the uh judge agent. Then try to
+[26:02.08] rewrite this file with more of your
+[26:04.32] ideas or scheduling ideas or feed this
+[26:06.56] into any LLM agent so that they can
+[26:08.48] actually output some of these crazy idea
+[26:11.60] that you want to do. But yes, this is
+[26:14.16] pretty powerful and Oz cloud is the
+[26:17.04] first one which is which I found is
+[26:18.88] really useful because of the all
+[26:21.20] ecosystem that we have. So if I just
+[26:23.28] walk you through again. So this thing
+[26:25.12] this environment is the key point that I
+[26:27.52] found most interesting because most of
+[26:29.60] the agent they just run and I don't want
+[26:32.24] agents to just run. I wanted to be aware
+[26:34.72] of my ecosystem, my environment, my
+[26:37.52] development environment, what my repo
+[26:39.76] is, what my restrictions are, what I can
+[26:41.60] do, what I can't do, what things I can
+[26:43.44] touch in the repo, what things I not
+[26:45.36] allowed to touch in the repo. So this
+[26:47.76] environment is uh the key element. I
+[26:50.56] hope you enjoyed this video and by this
+[26:53.44] video my goal was to simply give you a
+[26:56.00] code base which you can take this have
+[26:58.72] it open sourced and have it thoroughly
+[27:01.20] understood that okay this is what it
+[27:03.04] takes to build and run an agent it's not
+[27:05.76] too much and what agents can actually do
+[27:08.80] with this so go ahead give it a try to
+[27:11.04] the Ozie I enjoyed this and this was
+[27:12.96] your entire crash course open-source
+[27:15.12] crash course on building the agents
+[27:16.88] running the agents and have fun with it
+[27:19.44] that is it for this video. If you need
+[27:21.04] more such videos where we do some more
+[27:23.20] analysis on the agents and AI ecosystem,
+[27:25.36] I would love to do that. Let me know in
+[27:26.80] the comments section and I'll catch you
+[27:28.80] up in the next video.

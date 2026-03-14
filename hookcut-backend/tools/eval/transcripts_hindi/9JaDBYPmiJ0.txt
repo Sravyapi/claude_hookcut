@@ -1,0 +1,664 @@
+[0:00.00] In today's video, I will tell you about callback functions.
+[0:03.00] Callback functions are used whenever you want to call a function once a function executes.
+[0:09.80] We will see how it works in a while and then we will see promise.
+[0:14.40] Promise is a very important concept in async JavaScript
+[0:17.80] because it is a very confusing concept among JavaScript enthusiasts.
+[0:22.20] But in this video, I will make it very obvious promises coach
+[0:26.00] you guys like this video and in the comment section
+[0:28.00] do write javascript op
+[0:30.00] lets go to the computer screen
+[0:32.00] lets roll the intro
+[0:42.00] so guys i have come to my computer screen
+[0:44.00] and here i am going to make a folder of video number 75
+[0:47.28] by doing shift right click
+[0:48.48] I am going to tell you what are callbacks and promises
+[0:51.76] See, if we talk about callbacks, then callback function is simply a function that runs inside a function
+[0:59.28] Now I will tell you what this means
+[1:02.00] See, we just saw that a function runs when we give an argument to it and run it.
+[1:09.00] But here we can pass a callback function.
+[1:13.00] I will take you to the notes and give you an example of this.
+[1:16.00] And I will show you so that you can understand it very clearly.
+[1:19.00] And after that we will go to the promises and see what promises are.
+[1:23.00] Before I tell you about callback and promises
+[1:25.88] i want to tell you about asynchronous nature of javascript
+[1:28.88] now what is this asynchronous nature of javascript
+[1:31.88] see here
+[1:34.88] if i preview this website
+[1:38.06] and i hope you can see clearly
+[1:41.06] if i write here console.log
+[1:44.08] and i write here what should i write? console.log and i write here
+[1:46.00] harry is a hacker
+[1:49.00] so you can see here harry is a hacker
+[1:52.00] no surprises there
+[1:55.00] if i write here
+[1:58.00] rohan is a hacker
+[2:01.00] and here spelling will be e
+[2:04.00] so here roan is a hacker
+[2:05.00] E hacker, there are two different hackers
+[2:07.00] This guy hacks and this guy just makes noise
+[2:10.00] I am kidding
+[2:11.00] Now what I will do here is
+[2:13.00] I will just show you that this line will come first
+[2:17.00] After that this line will come because it will be up or down
+[2:19.00] If I by chance make it up or down
+[2:21.00] So Rohan will come first and Harry will come later
+[2:23.00] Yes, the one above will be executed first
+[2:26.00] Then the one below will be executed
+[2:27.00] I say no, it does not always happen
+[2:29.00] JavaScript has an asynchronous nature
+[2:31.00] Whenever JavaScript gets a function which is asynchronous in nature
+[2:35.00] So it avoids JavaScript for later
+[2:39.00] Now let's say I write here setTimeout
+[2:41.00] And I put timeout here
+[2:43.00] I told you about setTimeout
+[2:44.00] First of all, I will write console.log here I am inside set timeout I'll put timeout here, I've told you about set timeout
+[2:46.00] I'll write console.log I'm inside set timeout
+[2:49.00] and if I put timeout for 2 seconds
+[2:52.00] so you'll think that first this will run
+[2:55.00] then this will run, then this will run
+[2:58.00] and then this will run at the end
+[3:01.00] so you'll think that
+[3:04.00] this will print first, then this will think that first this will be printed
+[3:05.42] then this will be printed, then this will be printed
+[3:08.18] and then this will be printed, but no it won't be like that
+[3:11.22] first these two will be printed
+[3:14.20] then it will be stopped for 2 seconds
+[3:17.22] and script will move forward, it won't stop for 2 seconds
+[3:20.22] this setTimeout function
+[3:23.22] is simply saying to run it after 2 seconds
+[3:26.00] but because of the asynchronous nature of javascript
+[3:29.00] this will run and this will be deferred
+[3:32.00] for later, so you will see this
+[3:35.00] and it will say that it will run after 2 seconds
+[3:38.00] the end will be printed and after 2 seconds this will be printed
+[3:41.00] so this, this, this and this will be in order
+[3:44.00] as you can see, So the end is first
+[3:46.00] and set timeout is later.
+[3:48.76] If i say here that i want to run with 0 delay
+[3:51.76] If i make it 0, then also you can see
+[3:54.76] to your surprise, this is the end of the run.
+[3:57.76] So whenever we use set timeout, it says that
+[4:00.76] you want to run after 0 second, then it's fine, but let me run the whole script first.
+[4:03.76] And then it runs, okay?
+[4:06.00] So I hope you understood this.
+[4:09.00] We will study more about event loop in detail, but I want to explain this in the simplest way
+[4:13.00] so that you can start making your programs.
+[4:16.00] Now if I do I am inside set timeout 2 here,
+[4:19.00] then first this will be printed, then this will be printed, this will be avoided,
+[4:23.00] this will be avoided, it will be said that, first run the script, then let's see
+[4:26.00] the end will be print, then after this after 0 second
+[4:29.00] first this came, then this will be, then this will be, so you see
+[4:32.00] this is the exact execution order, ok, with that
+[4:35.00] said, we have just seen asynchronous programming,
+[4:38.00] so in javascript, synchronous and asynchronous both are actions,
+[4:41.00] some asynchronous actions are there, like
+[4:44.00] which log is this, first it will be print, then this will be print
+[4:48.00] this is an asynchronous function so it will be avoided for later
+[4:52.00] now we will see callback function here, callback function is a function
+[4:56.00] passed into another function as an argument which is then invoked inside
+[5:00.00] the outer function to complete an action, what is the meaning of this, a very simple example
+[5:04.00] I have given you here, let me zoom in a bit.
+[5:06.00] Here there is a function called load script which is taking
+[5:09.00] the url of the script and the callback function.
+[5:12.00] Meaning this function will be executed as soon as the script is loaded.
+[5:15.00] So you can see here that what we did is
+[5:18.00] script is equal to document.createElement, we have created an element
+[5:21.00] of the script and in it the src
+[5:24.00] that we got here in the url
+[5:26.00] we said that
+[5:28.00] as soon as script.onload
+[5:30.00] means this is an event, we said
+[5:32.00] as soon as script is loaded, you
+[5:34.00] call this callback function with this script
+[5:36.00] as an argument, so this callback function
+[5:38.00] is our own function, we can give anything
+[5:40.00] we can want to alert
+[5:42.00] the script or we can simply
+[5:44.00] lock the console or we can do both
+[5:46.72] callback function will be the function we will name
+[5:49.52] so let's do one thing, let's write this load script here again and understand this thing
+[5:55.04] so what I will do below this script.js
+[5:59.12] I will quickly make a function, I will write const load script
+[6:03.52] and I will capitalize script and capitalise it
+[6:06.36] is equal to an arrow function
+[6:09.36] and I want to tell you something very quickly
+[6:12.36] that you guys, react redux, es7
+[6:15.36] react redux, mine will be installed
+[6:18.36] in the installed extension, that is this
+[6:21.36] this is the extension that I have installed
+[6:24.36] and this one too, so one is dsznajr in the extension, this is it. This is the extension which I have installed you can see and I have installed this too.
+[6:26.00] So one is dsznajer
+[6:29.00] and one is this. This is almost the same name of the extension
+[6:32.00] but you can install this. What is the benefit of installing this?
+[6:35.00] If I want to make an arrow function then I can write like this anfn
+[6:38.00] I will hit enter and I will get an anonymous function.
+[6:41.00] So what is the load script taking? One is taking src and second
+[6:44.00] is taking callback and second is callback
+[6:45.00] and here you can see i used use callback by mistake
+[6:49.00] when i tapped it, react's use callback was used
+[6:51.00] but when you click here after writing callback
+[6:53.00] you will see here, now you can write it
+[6:55.00] so i can say document.create element
+[7:00.00] and i will say create a script
+[7:04.00] i will say let sc is equal to this
+[7:07.00] and after this I will say that
+[7:09.00] now sc.onload
+[7:12.00] sc.src is equal to
+[7:15.00] sc.onload is equal to anfn
+[7:19.00] anfn makes an arrow function
+[7:22.00] and here the way we have given an arrow function
+[7:24.00] we can do anything in this arrow function
+[7:26.00] we will set this arrow function
+[7:28.00] like this callback
+[7:30.00] that call this function
+[7:32.00] with arguments
+[7:34.00] so i have given a very simple callback
+[7:36.00] which i have not made yet, i will make it now
+[7:38.00] and i will make it
+[7:40.00] so i will say callback is equal to
+[7:42.00] a very simple and true function which
+[7:44.00] console.log the argumentback is equal to a very simple function which locks the console.log
+[7:45.76] to its argument, whatever argument is given to it, okay
+[7:48.88] and maybe it also alerts, but I will lock the console now
+[7:51.88] I did this, I did a very simple thing, I said that I make onload this
+[7:55.48] and after this I append it to head, so I will say document.head.append
+[8:02.20] what? sc, okay, very good dot head dot append SC, ok?
+[8:06.24] so I will format this document
+[8:09.24] and I will simply say
+[8:12.24] load script
+[8:15.24] with src and I will give src
+[8:18.24] which script we want to load
+[8:21.24] so I will do one thing, I will write prismjs cdn
+[8:24.24] and I will get prism.min.js and I will get prism.min.js code
+[8:28.00] suppose I want to load this script
+[8:32.00] I will copy the src
+[8:36.00] and I will paste it here and I will give a function
+[8:40.00] whose name is callback
+[8:44.00] and as I run it, you'll see here that as I reload it
+[8:48.80] and you see I'm reloading it
+[8:51.60] nothing has happened till now
+[8:54.00] so I'll see what's the problem here
+[8:56.56] whether this load script worked or not
+[8:58.88] so I'm loading the script, I said sc.slc is equal to this, sc.onload is equal to this function
+[9:04.80] callback should have been harry and harry print should have been done I have written the script here sc.src is equal to this sc.onload is equal to this
+[9:06.00] callback should have been harry
+[9:08.00] let me see what's wrong
+[9:10.00] harry print
+[9:12.00] I am inside set timeout
+[9:14.00] as soon as the script loads
+[9:16.00] harry print will be there
+[9:18.00] if I slow down my network
+[9:20.00] which I can do by clicking here
+[9:22.00] and if I slow it down to 3G
+[9:24.00] and reload it as soon as I make it slow 3G and reload it so as soon as I reload it, everything will come one by one
+[9:27.22] and here Harry also came, it was pretty fast actually
+[9:30.22] if I make it custom
+[9:33.22] and give it slow speed, then maybe I will get to see something
+[9:36.22] but now let's do no throttling and we understand that
+[9:39.22] whenever we want, we can call it, what is the benefit of doing this
+[9:42.22] what is this, why am I giving a callback?
+[9:46.00] Suppose you want to run the function on demand. I want to do it on my own will
+[9:49.00] I will say that this function
+[9:52.00] the callback function, give it to this
+[9:55.00] and it will call it according to its own. So we can pass it.
+[9:58.00] We can pass the function as a variable.
+[10:01.00] Let's say that's it in this callback. Now what happens sometimes
+[10:04.00] we need callback in callback, callback in callback that's it in callback now what happens sometimes we need callback in callback
+[10:06.00] in callback in callback in callback
+[10:09.00] now let's say I take a callback, another function here
+[10:12.00] let's say its name is fn and we made fn above
+[10:15.00] const fn is equal to, we made it like this
+[10:18.00] an fn and let's say it takes console.log
+[10:21.00] nothing, let's say it prints
+[10:24.00] like this
+[10:26.00] and the fn
+[10:28.00] we are calling it here
+[10:30.00] so here we are doing
+[10:32.00] we have written a callback
+[10:34.00] and we have given another callback
+[10:36.00] and we are making so many functions
+[10:38.00] our function is full
+[10:40.00] or if we don't write it like this
+[10:42.00] let me show you a new file
+[10:44.00] let's say I don't do it like this, if I say give callback instead of callback
+[10:48.00] now let's say I say I am not making this, I will put it here
+[10:52.00] here, ok I will put it directly, now let's say my fn is also taking some callback
+[10:56.00] and let's say there is something inside it which is taking callback
+[11:00.00] so inside callback, more callback functions will come directly
+[11:04.00] let's say fn is also running like this
+[11:06.00] that it is taking the first argument and then another callback comes
+[11:10.00] now in this also, it is like this
+[11:12.00] suppose it uses a function called ddg
+[11:14.00] and here what happens is
+[11:16.00] whatever I have written here
+[11:18.00] second arg
+[11:20.00] and after this, it takes another callback function
+[11:23.00] so what will happen is
+[11:25.30] I will keep writing code on code
+[11:27.30] so this code will become so complicated
+[11:29.30] at a time
+[11:31.30] that it will look like this
+[11:33.30] which we call callback hell
+[11:35.30] which will look like this
+[11:37.30] it is also called pyramid of doom
+[11:39.30] so it will become pyramid of doom
+[11:41.30] this inside this
+[11:43.30] and it will keep on becoming like this and it, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, this, we have passed the callback function of setTimeout we have passed one function of setTimeout and the other one is time
+[12:06.00] so we could have passed this callback function by name
+[12:08.00] we have written it directly here
+[12:10.00] but if we want
+[12:12.00] our code to be managed well then we
+[12:14.00] use promises
+[12:16.00] let me tell you what promises are
+[12:18.00] you must read the notes
+[12:20.00] and understand it, as I have told you
+[12:22.00] run the load script once
+[12:24.00] and if I have't tell you here
+[12:26.00] fn is not defined, let me see what is the problem
+[12:29.00] fn is not defined, I gave callback
+[12:32.00] src, fn
+[12:35.00] const fn is equal to this, I am not sure
+[12:38.00] why this error is coming
+[12:40.00] script.js line no. 21
+[12:43.00] this error is coming, fn is not defined ok it is fn is not defined
+[12:46.00] ok so fn is not defined because
+[12:48.00] i want to define fn inside it
+[12:51.00] i actually didn't pass fn in callback
+[12:54.00] i have to pass fn here
+[12:56.00] like this, ok
+[12:57.00] then it will go
+[12:59.00] now it will run, ok
+[13:01.00] i just want to show you that inside head
+[13:03.00] this script prismjs is working
+[13:07.00] and if i write prism here then it will work
+[13:10.00] prism is a syntax highlighter which i use on codewithani.com
+[13:16.00] it highlights the syntax but we will leave this topic for another video
+[13:20.00] now we will come back to javascript
+[13:23.00] so i told you that pyramid of doom is made and it becomes very difficult
+[13:27.40] to handle the script
+[13:29.40] so that's why we use promise
+[13:32.40] now what is promise? solution to the callback hell is promises
+[13:35.40] promise is a promise of code execution
+[13:37.40] now what is the meaning of this?
+[13:39.40] what we do is
+[13:41.40] if we want to wait for our code
+[13:44.40] now see why we are giving callback
+[13:45.80] we are saying that if this happens then do this
+[13:47.80] then if this happens then do this
+[13:49.04] that's why we are giving callback
+[13:50.32] but if our code is just waiting
+[13:52.32] then there is nothing better than this
+[13:53.32] that's why we use promise
+[13:56.12] so I do one thing here
+[13:57.48] I make a new file with the name promise.js
+[14:00.88] and I detach this script from here
+[14:02.88] I write promise.js here
+[14:05.00] So this script will not work now, this promise will work
+[14:08.00] Now I will show you one more thing
+[14:10.00] that you can make snippets in VS Code
+[14:12.00] So if you go to user snippets
+[14:14.00] and you will write the name of your language here
+[14:16.00] Many people may know this thing
+[14:18.00] but they don't do it, okay
+[14:20.00] But I want you to do it
+[14:22.00] So see what is written here
+[14:24.00] Something like this Print to console, prefix is log
+[14:28.00] so I will make it clog
+[14:30.00] console.log will come like this
+[14:32.00] and then your cursor will come here
+[14:34.00] so this is log output to console
+[14:36.00] this is your snippet
+[14:38.00] you can make many snippets like this
+[14:40.00] suppose I make a snippet with the name of alert
+[14:42.00] and suppose I want
+[14:44.00] that the prefix of this snippet
+[14:47.00] to be alt
+[14:50.00] let's say I want the prefix to be alt
+[14:53.00] alt
+[14:55.00] and let's say I want the body
+[14:58.00] I will write the lines one by one
+[15:01.00] and I will write alert and I will write
+[15:04.00] $1, ok? that means the cursor will come here I will write one entry and I will write alert and I will write dollar one here
+[15:05.28] means the cursor will come here first, I will also show you by running it
+[15:08.80] then it will be more clear to you, okay, and after this I will put a comma here
+[15:12.56] and I will also put a semicolon after alert one, now I will put a comma here
+[15:16.40] and after putting a comma, in fact I am writing it right, yes I am writing it right
+[15:22.88] and after putting a comma I will write dollar here $2 so my cursor will come here after this
+[15:26.80] and I will close it like this
+[15:28.80] I am not sure why it is coming like this
+[15:30.80] ok I didn't put colon here so it is coming like this
+[15:32.80] now it is fine, so I have made these two snippets
+[15:34.80] now if I write here alt
+[15:36.80] I am not sure why it is not coming
+[15:38.80] I wrote alt
+[15:42.80] ok so in javascript.json
+[15:44.80] I added all these things, I will also add a description I wrote alt ok so in javascript.json
+[15:46.00] I have added all these things
+[15:48.00] I will also add a description in this
+[15:50.00] and I have
+[15:52.00] made print to console
+[15:54.00] I have made an alert
+[15:56.00] ok
+[15:58.00] so I have not
+[16:00.00] put a colon here, I have done this by mistake
+[16:02.00] alert
+[16:04.00] I hope everything is fine now.
+[16:06.00] If I press ALT here and press enter,
+[16:08.00] then see here I have written
+[16:10.00] Harry and if I press tab, then my cursor
+[16:12.00] will come to the new line.
+[16:14.00] So now see I have written $2, so my cursor
+[16:16.00] will come to the new line. And if I want
+[16:18.00] I can make a lot of snippets like this.
+[16:20.00] If I write Clog, then it will lock
+[16:22.00] on the console. Now I will write
+[16:24.00] Harry is good or I will write this is promises and if I press tab, my cursor will come down because I have written my second line in it that just give the cursor here.
+[16:32.00] If I want to come there after writing something, that can also come. So wherever I write, the cursor will come in the next line. So I have made a number 1, line number 2, cursor will come on line number 1 first, then on 2.
+[16:46.00] If I put dollar 1 here and dollar 2 here, then I will show you what will happen.
+[16:49.00] Then if you write C lock, then the cursor will come down first.
+[16:52.00] Maybe I have saved it, I have done 21 by mistake.
+[16:55.00] I should have done 1 here.
+[16:58.00] If I lock it C, then the cursor will come down first.
+[17:01.00] I wrote Harry, tapped and then came up.
+[17:03.00] So I will revert this thing to $2 here and $1 here
+[17:06.00] You should know this
+[17:09.00] Making these snippets is very important, you should know this
+[17:12.00] So here I wrote this is promises and
+[17:15.00] Now what I will do is I will tell you about promise
+[17:18.00] Promise means promise of code execution
+[17:21.00] And in this I will do.then and.catch
+[17:24.00] After it is
+[17:26.00] settled, I will want it to be either resolved
+[17:29.00] or rejected, now what is the meaning of this, I will tell you after doing this
+[17:32.00] so suppose I wrote here prom1 is equal to
+[17:35.00] new promise and I will write here
+[17:38.00] now it will take two functions, one will take resolve
+[17:41.00] and one will take reject, okay, it will take two functions
+[17:44.00] I wrote new promise and I wrote resolve reject Resolve and Reject I have written two functions
+[17:46.00] Resolve and Reject
+[17:49.00] Now I can do
+[17:52.00] any work and after that I can resolve it
+[17:55.00] For example, I can say
+[17:58.00] Set timeout and I want
+[18:01.00] 3000
+[18:04.00] and I can write console.log
+[18:08.00] yes I am done and then I can write
+[18:12.00] resolve, it means my work is done, so I will write yes I am done
+[18:16.00] and resolve, I wrote harry so I will get the value of harry
+[18:20.00] now what I can do here, I can say prom1.then
+[18:24.00] and what I can do here, I can say prom1.then and I can do something like this
+[18:29.00] console.log a, I can take this, now what is the meaning of this, I will explain to you quickly
+[18:37.00] So what happens here is that you give two things to the new when will it be resolve and when will it be reject
+[18:46.00] so you will run resolve whenever you want to resolve it and you will run reject whenever you want to reject it
+[18:51.00] like I wanted that when this set timeout starts then this promise will be resolve and this promise will be cancelled
+[18:56.00] means this promise is run and the work is done
+[18:58.00] then what I will do, I will say prom1.then means as soon as my promise 1 is resolve
+[19:04.00] then what you do, to lock console.log
+[19:06.00] the value with which it is resolved.
+[19:08.00] So, if I do something like this, and I am clicking on OK,
+[19:12.00] I don't know why this alert is showing,
+[19:14.00] this is promises is shown here,
+[19:16.00] and you can see console.log is locked,
+[19:18.00] yes I am done and Harry is printed. Why is Harry printed?
+[19:20.00] Because I told you to resolve it with Harry value.
+[19:23.00] So, this function will give me Harry
+[19:25.00] so you can see here that I have done promise.then
+[19:28.00] I said when this promise is resolved then what you do
+[19:30.00] that you do this to Harry
+[19:32.00] in most of the cases what we do
+[19:34.00] when we hit network request then we wait for network request
+[19:37.00] we say that we wait for network request
+[19:39.00] as soon as our network request will be finished
+[19:42.00] what we will do
+[19:44.00] we will print it, who will we print we will print the data we will print the data in the network
+[19:49.00] so this is used for that, I have made dummy promise for you
+[19:52.00] just to tell you that you can make your own promise
+[19:56.00] whenever you want you can resolve it, whenever you want you can reject it
+[19:59.00] in most of the cases you don't need to make your own promise
+[20:02.00] you will run the promise
+[20:05.96] you will get promises, you will use.then and.catch
+[20:08.98] now suppose for some reason
+[20:11.60] for some reason
+[20:14.60] i say generate a random number
+[20:17.96] let a is equal to mat.random
+[20:21.92] and i say if a
+[20:24.92] is less than 0.5
+[20:27.72] then you reject this promise
+[20:30.82] and say no random number
+[20:33.46] was not supporting you
+[20:37.28] ok, double p is there in support
+[20:40.28] now if I show you here, this promise will be rejected
+[20:43.28] so if I refresh it so, then this promise will be rejected so if I refresh it and show you
+[20:46.00] so see this promise was rejected after 2 seconds and see
+[20:49.00] no the random number was not supporting
+[20:52.00] here this error came, ok
+[20:54.00] and after this it run yes I am done
+[20:56.00] but I want that yes I am done should not run
+[20:59.00] in this case if it is being rejected
+[21:01.00] so I will do else here and put this code in else
+[21:04.00] now many people will not understand this
+[21:06.00] and they will say this is very complicated
+[21:08.00] I will say you download notes
+[21:10.00] and one step at a time read the notes
+[21:12.00] and understand this thing
+[21:14.00] and do it together
+[21:16.00] many people just see it in the phone
+[21:18.00] and comment that font is small
+[21:20.00] zoom and make a video
+[21:22.00] and many people also say
+[21:24.00] that where the code is running zoom and make a video and many people say that where the code is running, zoom and make a video
+[21:26.00] bro, look at the laptop
+[21:28.00] look at the phone only when
+[21:30.00] you don't have a laptop
+[21:32.00] and if you are looking at the phone, there is no coding in the phone
+[21:34.00] ok, there is no
+[21:36.00] you need a computer, there is no full coding
+[21:38.00] yes, you can do a little work
+[21:40.00] but in a limit, ok
+[21:42.00] everything is not there in the phone
+[21:44.00] so if you are working on the phone then plan to buy a laptop
+[21:46.00] as soon as possible, then only you can do something
+[21:48.00] now here you can see that yes I am done
+[21:51.00] Resolved Harry, I have printed it
+[21:55.00] now how will I find out that this promise is giving an error
+[21:59.00] now see I have reloaded it here, see error is coming
+[22:02.00] 50% of the time I will get to see the error
+[22:04.00] I will show you, see here I got to see the error i will see the error let me show you
+[22:06.00] i want the error
+[22:08.00] to be like this
+[22:10.00] let's catch this error
+[22:12.00] i will say
+[22:14.00] prom1.then this
+[22:16.00] and i will say.catch
+[22:18.00] ok
+[22:20.00] and i will say
+[22:22.00] if error is there then
+[22:24.00] console.log
+[22:26.88] so here the console is locked
+[22:28.88] this time you won't see the error in your console
+[22:30.88] your try should be that you don't get an error in your console
+[22:33.88] so here no, promise was not, random number was not supporting you
+[22:37.60] I got to see this
+[22:39.60] but if I run this now
+[22:41.60] then see after 2-3 seconds, whatever delay I have put
+[22:43.60] yes I have done, Harry has come.
+[22:45.44] So here a network request can be rejected or it can be successful.
+[22:50.64] If it is successful, then what would you want?
+[22:52.64] If its data comes, then you will use this.then function.
+[22:54.64] Or you will use.catch to handle the error.
+[22:58.08] .catch, many people say that there will be no error in my code,
+[23:01.44] if I write correctly, then I don't use.catch.
+[23:03.44] No, you have to keep unexpected scenarios in mind, like if your net is gone, the user was doing something,
+[23:09.00] his net is gone, then he will get an error, he will not be able to connect to your server, or
+[23:13.00] suppose your server is down, take this possibility that my backend is down, so what will the users see,
+[23:18.00] so at least the users should see that yes, we are working on a fix, our systems are not working,
+[23:24.00] please wait after 3 minutes, so the user will say yes,
+[23:26.00] it's fine, or say that my site is under maintenance, so at least the user will be cool, yes, it's fine,
+[23:33.00] things are being checked, it will be fine, so this is the promise, what is the work of this, you will not know until
+[23:41.00] we make a project, I saying it very raw and harsh
+[23:46.58] you will understand it when we make a project
+[23:49.58] but now you understand it as a theory
+[23:52.58] because it will be very useful for you
+[23:55.58] now I have told you about consumers
+[23:58.58] what are dot then and dot catch
+[24:01.58] first you will take a function
+[24:04.58] when everything is work then what to do
+[24:06.00] and the second function is when the error comes then what to do
+[24:08.00] you can also handle the error by catching the dot
+[24:11.00] I have taught you by doing dot then
+[24:13.00] that when a promise is resolved
+[24:15.00] how will you run it by doing dot then
+[24:17.00] so you will understand this notes more clearly
+[24:20.00] promise dot finally
+[24:22.00] which is used to do some general cleanups
+[24:26.00] suppose you want to close all your files which you have opened
+[24:32.00] so you can use promise.finally
+[24:34.00] now we will talk about promise chaining
+[24:36.00] we can chain promises and can pass the resolved values to each other
+[24:41.00] for example, suppose I put a dot then in a promise of P
+[24:45.00] and I say that this function should work
+[24:48.00] which is alerting and returning 2
+[24:51.00] and if I am returning another promise of 2
+[24:54.00] then I can put a dot then and finally
+[24:57.00] when that promise is resolved then I can see
+[25:00.00] what I have to do and this kind of chaining will continue
+[25:02.00] Here I am returning a value but instead of 2
+[25:04.00] it could have been a 2 which is P2
+[25:06.00] so if P2 is a promise
+[25:08.00] then it will be resolved then here
+[25:10.00] this dot then will run and so on
+[25:12.00] you can resolve as many promises as you want
+[25:14.00] so here
+[25:16.00] the idea is to pass the result through
+[25:18.00] the chain of dot then handlers
+[25:20.00] so it is simple, very simple
+[25:22.00] so here I hope you
+[25:24.00] have understood, if I do dot then dot then and put different handlers on the same promise
+[25:28.86] then it will run independently
+[25:31.16] this handler 1 has no relation with this handler 2
+[25:33.66] so we can do this, we can attach multiple handlers with promise
+[25:37.46] now after this some methods of promise API which I want to show you
+[25:41.96] so here see promise.all will do that it will wait for all promises to be resolved
+[25:49.00] ok, and will return the array with their results
+[25:52.00] ok, I will show you an example of this
+[25:54.00] suppose I made a prompt 1
+[25:56.00] and suppose I make a prompt 2
+[25:58.00] ok, I will make a prompt 2
+[26:00.00] and I can make prompt 3 and 4 also
+[26:02.00] I will reduce the time of this
+[26:04.00] suppose I do it for 1 second and I will resolve make prom 3 and prom 4 I will reduce the time, I will do it for 1 second
+[26:06.00] and I will resolve it on Harry 2
+[26:08.00] and I will do yes I am done 2 here
+[26:10.00] no random number was not supporting you 2
+[26:12.00] I will do it here and you will see here
+[26:14.00] when I am doing promise 1.then
+[26:16.00] I will remove this and I will simply
+[26:18.00] do what I will say promise.all
+[26:20.00] and I will give an array here
+[26:22.00] prom1
+[26:24.00] and prom2, ok and this will be an array prom1 and prom2
+[26:25.50] and this will be a new promise p3
+[26:28.00] and I will put then on p3
+[26:31.00] I will say p3.then
+[26:35.00] and I will put a function here
+[26:37.00] and I will say console.loge
+[26:40.00] so the function I had put earlier
+[26:43.00] I could have used that
+[26:45.00] but no problem, I will write it again, no problem
+[26:48.00] and I can say console.log err, ok
+[26:53.00] so whatever will run first among these two, you will see here
+[26:57.00] ok, so I will show you here, if I reload it
+[27:00.00] so it is saying that err is not defined, let me see
+[27:04.00] ok, so I have to do ERR
+[27:06.00] so if I reload it, so you can see here that yes I am done 2 came, yes I am done came
+[27:11.00] and when both promises were resolved, then their values came here
+[27:15.00] because I resolved these two promises, one was done with Harry 2 value and one was done with Harry value
+[27:21.00] so when both promises will be resolved, then it will come, now suppose I reloaded it and this promise is not resolved
+[27:26.00] it will stop here and this assignment is done
+[27:29.00] but it will not return the value because one promise
+[27:32.00] is not resolved, i will reload it again
+[27:35.00] and i will try that are the values of both promises resolving
+[27:38.00] yes both are resolving, so it will give me the values of both
+[27:41.00] so here the condition is that both promises should be resolved
+[27:44.00] what is the meaning of promise to settle?
+[27:46.00] to settle means either it will be resolved or rejected
+[27:48.00] it will be one of these two
+[27:50.00] to resolve means that a value should be obtained without error
+[27:52.00] so there is a difference between resolve and settle
+[27:55.00] listen to me again what I have said
+[27:57.00] what is the difference between resolve and settle
+[27:59.00] because there is a difference in both and this is very important for you to know
+[28:02.00] so listen again if you don't understand
+[28:04.00] so promise.all settled is that whatever result comes, now it is resolved or rejected, we don't know anything
+[28:11.68] but both promises are there, then what you have to use, all settled
+[28:18.20] ok, if you use all settled then what will happen, whether it is resolved or rejected
+[28:24.20] you will get the status and reason of both, or what will happen whether it is resolved or rejected you will get both the status and reason
+[28:27.24] or you will get the status and value
+[28:29.24] so here you will get the status and value of both
+[28:32.24] so you see here, I reloaded it
+[28:35.24] and finally you will get the status and value of both the promises
+[28:38.24] if fulfilled, you will get the status and value
+[28:40.74] and if rejected, you will get the reason instead of value
+[28:43.24] so here it is rejected
+[28:46.24] no random number was supporting you to this reason
+[28:48.98] this error was thrown, it is simple
+[28:51.36] so we saw promise.all
+[28:54.36] we also saw promise.all settled, what is promise.race
+[28:57.28] we are making a race of promises, whatever value is resolved
+[29:00.28] or settled, the result or error will become the outcome
+[29:03.56] so we are making a race of promises so if i say here promise.race
+[29:09.00] so see which one will get resolved first, it's simple, promise 2 will get resolved
+[29:12.00] so here you will get promise 2, yes harry 2 and yes i am done 2
+[29:17.00] so we will make a race of these two promises, now sometimes we don't know
+[29:21.00] like if i am hitting two network calls, one is google.com and the other is another API, which one is faster?
+[29:26.00] It can be any of the two, suppose I have 5 links to download one image, and I want that whatever comes first out of the 5, whatever is running well, I get that.
+[29:35.00] So I will use promise.raise, I will show the image that was resolved first out of the 5. It is simple.
+[29:40.00] What is promise.any? Waits for the first promise to fulfill and its result becomes the ultimate
+[29:46.00] it should not be reject, it should be fulfill, means promise should be resolve
+[29:51.00] if it is resolve then you will get the value which is resolved first
+[29:57.00] if all are rejected then it will be an aggregate error, so try it yourself then promise.resolve
+[30:05.92] and try it with multiple values
+[30:08.92] I have done it with prom1,prom2,prom3,prom4,prom5
+[30:11.92] try it atleast
+[30:15.08] promise.resolve
+[30:18.08] makes a resolve promise with a given value
+[30:21.08] so it will give a value
+[30:24.28] that will make it look like it will give a value that it will give a feeling that this value is
+[30:28.00] from a resolved promise, ok?
+[30:30.00] it will return a resolved promise
+[30:32.00] that this promise was there and it got resolved
+[30:34.00] it will give a feeling like this
+[30:36.00] same for promise.reject
+[30:38.00] it will give a feeling that this promise was rejected
+[30:40.00] and with this error, the promise was rejected
+[30:42.00] ok? so if you want to directly
+[30:44.00] make a rejected promise then you can you want to make a rejected promise
+[30:46.00] then you can make it by using this.
+[30:48.00] You can try this on your
+[30:50.00] custom promises and in the next video
+[30:52.00] we are going to see the Async await
+[30:54.00] Now this promise concept
+[30:56.00] is a callback concept. If it is new for you
+[30:58.00] then I would like you to read the notes.
+[31:00.00] If you still didn't understand after watching the video
+[31:02.00] then I would say read the notes and
+[31:04.00] watch the video again and when I am saying things then don't understand after watching the video Then I will say read the notes And watch the video again
+[31:06.00] And when I am saying something, don't do it
+[31:08.00] If you are not writing the code
+[31:10.00] I am giving you a guarantee that you won't understand
+[31:12.00] If you are reading it for the first time
+[31:14.00] And you didn't write the code
+[31:16.00] Then you won't understand
+[31:18.00] I am giving you a guarantee
+[31:20.00] And if you wrote the code
+[31:22.00] And you understand
+[31:24.00] Then that is something I will believe you it without writing a code, then I will believe you.
+[31:26.00] Because you won't understand it without writing a code.
+[31:28.00] Download the notes, get the PDF, spend some money on Xerox vendor, eat less pizza and save some money.
+[31:35.00] And whatever junk food you eat, even if you don't eat pizza, get the printout of these notes and do something good.
+[31:43.00] And access the sigma web development playlist
+[31:46.18] and click here and start it
+[31:49.18] and do one thing for me also, go to first video and review this course
+[31:52.18] that how is this course, you will give 5 stars
+[31:55.18] you will feel good, for now this is it in this video guys
+[31:58.18] thank you so much guys for watching this video and I will see you next time. you

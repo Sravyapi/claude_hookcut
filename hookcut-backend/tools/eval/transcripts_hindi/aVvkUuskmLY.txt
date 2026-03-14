@@ -1,0 +1,129 @@
+[0:00.08] when Mark Zuckerberg isn't wake surfing
+[0:01.92] wearing a tuxedo and a puka shell
+[0:03.68] necklace at his Lake Taho Mansion
+[0:05.40] crushing K's yellow bellies and waving
+[0:07.12] the American flag he clocks into work
+[0:08.88] with the sunburn to battle Google and
+[0:10.52] open AI for artificial intelligence
+[0:12.64] Supremacy yesterday meta released its
+[0:14.92] biggest and baddest large language model
+[0:16.72] ever which also happens to be free and
+[0:18.92] arguably open source it took months to
+[0:21.04] train on 16,000 Nvidia h100 gpus which
+[0:24.76] likely cost hundreds of millions of
+[0:26.20] dollars and used enough electricity to
+[0:28.12] power a small country but the end result
+[0:30.20] is a massive 405 billion parameter model
+[0:33.08] with a 128,000 token contacts length
+[0:35.76] which according to benchmarks is mostly
+[0:37.60] Superior to open ai's GPT 40 and even
+[0:40.52] beats Claude 3.5 Sonet on some key
+[0:42.88] benchmarks but benchmarks lie and the
+[0:45.00] only way to find out if a new model is
+[0:46.52] any good is to Vibe with it in today's
+[0:48.64] video we'll try out llama 3.1 heavy and
+[0:51.12] find out if it actually doesn't suck
+[0:52.68] like most meta products it is July 24th
+[0:55.08] 2024 and you're watching the code report
+[0:57.44] AI hype has died down a lot recently and
+[0:59.48] it's been almost a week since I've
+[1:00.68] mentioned it in a video which I'm
+[1:02.00] extremely proud of but llama 3.1 is a
+[1:04.48] model that cannot be ignored it comes in
+[1:06.28] three sizes 8B 70b and 405b where B
+[1:10.40] refers to billions of parameters or the
+[1:12.52] variables that the model can use to make
+[1:14.16] predictions in general more parameters
+[1:16.20] can capture more complex patterns but
+[1:18.24] more parameters doesn't always mean that
+[1:20.00] the model is better GPT 4 has been
+[1:22.00] rumored to have over 1 trillion
+[1:23.44] parameters but we don't really know the
+[1:24.80] true numbers from companies like open Ai
+[1:26.64] and anthropic the cool thing about llama
+[1:28.64] is that it's open source well kind of
+[1:30.60] you can make money off of it as long as
+[1:32.16] your app doesn't have 700 million
+[1:33.76] monthly active users in which case you
+[1:35.60] need to request a license from meta
+[1:37.24] what's not open source is the training
+[1:38.68] data which might include your blog your
+[1:40.44] GitHub repos all your Facebook posts
+[1:42.32] from 2006 and maybe even your WhatsApp
+[1:44.60] messages what's interesting is that we
+[1:46.28] can take a look at the actual code used
+[1:47.80] to train this model which is only 300
+[1:49.84] lines of python and pytorch along with a
+[1:52.12] library called Fair scale to distribute
+[1:53.92] training across multiple gpus it's a
+[1:56.04] relatively simple decoder only
+[1:57.76] Transformer as opposed to the mixture of
+[1:59.92] experts approach used in a lot of other
+[2:01.44] big models like its biggest open source
+[2:03.36] rival mixol most importantly though the
+[2:05.56] model weights are open and that's a huge
+[2:07.36] win for developers building AI powered
+[2:09.36] apps and now you don't have to pay a
+[2:10.72] bunch of money to use the gbt 4 API and
+[2:13.24] instead can self-host your own model and
+[2:14.96] pay a cloud provider a bunch of money to
+[2:16.60] rent some gpus the big model would not
+[2:18.56] be cheap to self host I used olama to
+[2:20.84] download it and use it locally but the
+[2:22.64] weights weigh 230 GB and even with an
+[2:25.20] RTX 490 I wasn't able to ride this llama
+[2:28.28] the good news though is that you can try
+[2:29.56] it for free on platforms like meta or
+[2:32.36] platforms like Gro or nvidia's
+[2:34.16] Playground now the initial feedback from
+[2:36.12] random weirdos on the Internet is that
+[2:37.92] big llama is somewhat disappointing
+[2:39.64] while the smaller llamas are quite
+[2:40.96] impressive but the real power of llama
+[2:42.96] is that it can be fine-tuned with custom
+[2:44.64] data and in the near future will have
+[2:46.40] some amazing uncensored fine-tune models
+[2:48.68] like dolphin my favorite test for new
+[2:50.48] llms is to ask it to build a spelt 5 web
+[2:53.44] application with runes which is a new
+[2:55.64] yet to be released feature the only
+[2:57.36] model I've seen do this correctly in a
+[2:58.76] single shot is CL 3.5 son it and llama
+[3:01.60] 405b failed pretty miserably and seems
+[3:03.92] to have no awareness of this feature
+[3:05.72] overall though it is pretty decent en
+[3:07.32] coding but still clearly behind Claude I
+[3:09.56] also had it do some creative writing and
+[3:11.20] poetry and overall it's pretty good just
+[3:13.48] not the best I've ever seen if we take a
+[3:15.16] minute to reflect though what's crazy is
+[3:17.20] that we have multiple different
+[3:18.40] companies that have trained massive
+[3:19.96] models with massive computers and
+[3:21.76] they're all plateauing at the same level
+[3:23.44] of capability open AI was the first to
+[3:25.48] make a huge leap from gpt3 to GPT 4 but
+[3:28.68] since then it's only been small
+[3:30.12] incremental gains last year Sam ultman
+[3:32.44] practically begged the government to
+[3:33.76] regulate AI to protect Humanity but a
+[3:35.92] year later we still haven't seen the
+[3:37.64] apocalyptic Skynet human extinction
+[3:39.64] event that they promised us I mean AI
+[3:41.60] still hasn't even replaced programmers
+[3:43.36] it's like that time airplanes went from
+[3:45.04] propellers to jet engines but the
+[3:46.84] advancement to light speed engines never
+[3:48.56] happened when talking about llms
+[3:50.68] artificial super intelligence is still
+[3:52.60] nowhere in sight except in the
+[3:54.00] imagination of the Silicon Valley Mafia
+[3:56.44] it feels wrong to say this but meta is
+[3:58.52] really the only big tech company keeping
+[4:00.16] it real in the AI space I'm sure there's
+[4:02.00] an evil ulterior motive hidden in there
+[4:03.76] somewhere but llama is one small step
+[4:05.76] for man one giant leap for Zuckerberg's
+[4:08.08] Redemption Arc this has been the code
+[4:09.60] report thanks for watching and I will
+[4:11.36] see you in the next one

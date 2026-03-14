@@ -52,6 +52,7 @@ class FakeHookCandidate:
         "tension_created": "",
     })
     improvement_suggestion: Optional[str] = None
+    primary_speaker: Optional[str] = None
     is_composite: bool = False
 
 
@@ -614,6 +615,172 @@ class TestTranscriptStored:
             updated = verify_db.get(AnalysisSession, session_id)
             assert updated.transcript_text == transcript_text
             assert updated.transcript_provider == "cf_worker"
+        finally:
+            verify_db.close()
+
+
+# ─── Interview mode ──────────────────────────────────────────────────────────
+
+
+class TestInterviewModeAnalysis:
+    @patch("app.tasks.analyze_task.get_engine_mode", return_value="llm_only")
+    @patch("app.tasks.analyze_task.HookEngine")
+    @patch("app.tasks.analyze_task.get_db_session")
+    def test_interview_mode_uses_diarization(
+        self, mock_get_db, mock_he_cls, mock_engine_mode, db
+    ):
+        """When interview_mode=True, AssemblyAI diarizer is called instead of TranscriptService."""
+        user = make_user(db, user_id="at-int-1")
+        session = make_session(db, user.id, status="pending")
+        session.interview_mode = True
+        session.speaker_count = 2
+        db.commit()
+        session_id = session.id
+
+        task_db = _fresh_db()
+        mock_get_db.return_value = task_db
+        mock_he_cls.return_value.analyze.return_value = FakeAnalysisResult()
+
+        from app.services.assemblyai_diarization import DiarizationResult, SpeakerUtterance
+        fake_diarize = DiarizationResult(
+            utterances=[
+                SpeakerUtterance("Speaker A", 0, 5000, "Hello"),
+                SpeakerUtterance("Speaker B", 5000, 10000, "Hi there"),
+            ],
+            detected_speaker_count=2,
+            transcript_text="[Speaker A] [0:00] Hello\n[Speaker B] [0:05] Hi there",
+        )
+
+        with patch("app.services.assemblyai_diarization.AssemblyAIDiarizer") as mock_diarizer_cls:
+            mock_diarizer_cls.return_value.diarize.return_value = fake_diarize
+            result, _ = _run_task(session_id)
+
+        assert result["hooks_count"] == 5
+        verify_db = _fresh_db()
+        try:
+            updated = verify_db.get(AnalysisSession, session_id)
+            assert updated.transcript_provider == "assemblyai"
+            assert updated.diarization_data is not None
+            assert len(updated.diarization_data) == 2
+        finally:
+            verify_db.close()
+
+    @patch("app.tasks.analyze_task.get_engine_mode", return_value="llm_only")
+    @patch("app.tasks.analyze_task.HookEngine")
+    @patch("app.tasks.analyze_task.TranscriptService")
+    @patch("app.tasks.analyze_task.get_db_session")
+    def test_diarization_failure_falls_back_to_regular_transcript(
+        self, mock_get_db, mock_ts_cls, mock_he_cls, mock_engine_mode, db
+    ):
+        """If diarization fails, falls back to regular transcript and sets interview_mode=False."""
+        user = make_user(db, user_id="at-int-2")
+        session = make_session(db, user.id, status="pending")
+        session.interview_mode = True
+        session.speaker_count = 2
+        db.commit()
+        session_id = session.id
+
+        task_db = _fresh_db()
+        mock_get_db.return_value = task_db
+        mock_ts_cls.return_value.fetch.return_value = FakeTranscriptResult()
+        mock_he_cls.return_value.analyze.return_value = FakeAnalysisResult()
+
+        with patch("app.services.assemblyai_diarization.AssemblyAIDiarizer") as mock_diarizer_cls:
+            mock_diarizer_cls.side_effect = Exception("API key missing")
+            result, _ = _run_task(session_id)
+
+        assert result["hooks_count"] == 5
+        # Regular transcript service should have been called
+        mock_ts_cls.return_value.fetch.assert_called_once()
+        # interview_mode should be reset
+        verify_db = _fresh_db()
+        try:
+            updated = verify_db.get(AnalysisSession, session_id)
+            assert updated.interview_mode is False
+        finally:
+            verify_db.close()
+
+    @patch("app.tasks.analyze_task.get_engine_mode", return_value="llm_only")
+    @patch("app.tasks.analyze_task.HookEngine")
+    @patch("app.tasks.analyze_task.get_db_session")
+    def test_speaker_count_updated_when_mismatch(
+        self, mock_get_db, mock_he_cls, mock_engine_mode, db
+    ):
+        """If AssemblyAI detects different speaker count, session is updated."""
+        user = make_user(db, user_id="at-int-3")
+        session = make_session(db, user.id, status="pending")
+        session.interview_mode = True
+        session.speaker_count = 2
+        db.commit()
+        session_id = session.id
+
+        task_db = _fresh_db()
+        mock_get_db.return_value = task_db
+        mock_he_cls.return_value.analyze.return_value = FakeAnalysisResult()
+
+        from app.services.assemblyai_diarization import DiarizationResult, SpeakerUtterance
+        fake_diarize = DiarizationResult(
+            utterances=[
+                SpeakerUtterance("Speaker A", 0, 5000, "Hello"),
+                SpeakerUtterance("Speaker B", 5000, 10000, "Hi"),
+                SpeakerUtterance("Speaker C", 10000, 15000, "Hey"),
+            ],
+            detected_speaker_count=3,
+            transcript_text="[Speaker A] Hello\n[Speaker B] Hi\n[Speaker C] Hey",
+        )
+
+        with patch("app.services.assemblyai_diarization.AssemblyAIDiarizer") as mock_diarizer_cls:
+            mock_diarizer_cls.return_value.diarize.return_value = fake_diarize
+            _run_task(session_id)
+
+        verify_db = _fresh_db()
+        try:
+            updated = verify_db.get(AnalysisSession, session_id)
+            assert updated.speaker_count == 3
+        finally:
+            verify_db.close()
+
+    @patch("app.tasks.analyze_task.get_engine_mode", return_value="llm_only")
+    @patch("app.tasks.analyze_task.HookEngine")
+    @patch("app.tasks.analyze_task.get_db_session")
+    def test_primary_speaker_stored_on_hooks(
+        self, mock_get_db, mock_he_cls, mock_engine_mode, db
+    ):
+        """Hooks with primary_speaker set are stored correctly in DB."""
+        user = make_user(db, user_id="at-int-4")
+        session = make_session(db, user.id, status="pending")
+        session.interview_mode = True
+        session.speaker_count = 2
+        db.commit()
+        session_id = session.id
+
+        task_db = _fresh_db()
+        mock_get_db.return_value = task_db
+
+        from app.services.assemblyai_diarization import DiarizationResult, SpeakerUtterance
+        fake_diarize = DiarizationResult(
+            utterances=[SpeakerUtterance("Speaker A", 0, 5000, "Hello")],
+            detected_speaker_count=2,
+            transcript_text="[Speaker A] Hello",
+        )
+
+        candidates_with_speaker = [
+            FakeHookCandidate(rank=i + 1, primary_speaker="Speaker A" if i % 2 == 0 else "Speaker B")
+            for i in range(5)
+        ]
+        mock_he_cls.return_value.analyze.return_value = FakeAnalysisResult(hooks=candidates_with_speaker)
+
+        with patch("app.services.assemblyai_diarization.AssemblyAIDiarizer") as mock_diarizer_cls:
+            mock_diarizer_cls.return_value.diarize.return_value = fake_diarize
+            _run_task(session_id)
+
+        verify_db = _fresh_db()
+        try:
+            hooks = verify_db.execute(
+                select(Hook).where(Hook.session_id == session_id).order_by(Hook.rank)
+            ).scalars().all()
+            assert hooks[0].primary_speaker == "Speaker A"
+            assert hooks[1].primary_speaker == "Speaker B"
         finally:
             verify_db.close()
 

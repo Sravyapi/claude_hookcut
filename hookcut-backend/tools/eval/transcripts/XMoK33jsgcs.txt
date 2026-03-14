@@ -1,0 +1,241 @@
+[0:00.16] And now it's time to focus on put and
+[0:03.36] delete. So basically, if you want to
+[0:04.96] update the product or you want to delete
+[0:07.76] a product, how will you do it? So that's
+[0:09.44] what we're going to see now. Now before
+[0:11.68] I do that, I just want to remove this
+[0:13.20] extra spaces from here. And let's look
+[0:15.28] at the code. So basically, we got this
+[0:17.20] main. py where we got all the product in
+[0:20.48] the list. We are still not working with
+[0:21.92] database. And we basically have this
+[0:23.60] methods like get and post. Now in this
+[0:26.08] get we are fetching all the products and
+[0:28.40] in this get we are fetching a product by
+[0:30.80] its id and then here we are basically
+[0:34.56] adding a new product. Okay. Uh so now
+[0:37.68] let's try to update it. But before we do
+[0:39.84] that in fact there lot of things which
+[0:41.68] have to do before we do that because if
+[0:44.16] you can see my shirt color has changed.
+[0:46.24] It's a new day and I have to do that
+[0:48.24] steps once again to run this. So first
+[0:51.36] of all I will run this server. Before
+[0:53.28] that I have to change my environment. So
+[0:55.60] the virtual environment it is using now.
+[0:58.00] Oh, it is creating a new environment.
+[0:59.20] No, no, don't create a new environment.
+[1:01.52] I'm using a wrong thing. I I I have to
+[1:03.92] activate it. So activation done. And now
+[1:06.48] it's time to run this. And also I will
+[1:09.68] disable my copilot or snooze it for some
+[1:12.00] time. And let's run this. And this will
+[1:14.16] load the server. No problem with the
+[1:15.84] server loading. And we have to also run
+[1:18.48] the front end. Make sure that you don't
+[1:20.48] run this in the environment. So you have
+[1:22.16] to deactivate this so that you will come
+[1:24.56] out of the environment and now you can
+[1:26.08] run the front end and you have to switch
+[1:27.52] to front end and say npm start. Now the
+[1:30.80] front end started as well. Uh but again
+[1:33.52] we the front end is not fully configured
+[1:35.68] yet and that's why you can see it is
+[1:37.12] failed to fetch. So there's no need to
+[1:39.28] run the front end. I don't know why I
+[1:40.88] run that muscle memory maybe. Uh but let
+[1:43.84] me just go with this. So there's a
+[1:45.76] problem with the front end. That's fine.
+[1:47.60] Okay. Okay, but but the back end is
+[1:48.80] running and the way you can test it, you
+[1:50.64] can just go to local host 88 uh 8,000
+[1:53.92] and then slash here we have to say docs
+[1:56.48] which will load your uh swagger in which
+[2:00.64] you can test all the things and we need
+[2:03.20] to first test it out if it is working so
+[2:04.80] that we can continue. So it's still
+[2:06.16] working nothing is wrong yet. Okay so
+[2:09.76] let's go back here and now it's time for
+[2:11.76] the update. Now if you want to update a
+[2:14.88] product how will you do it? First of
+[2:16.24] all, you need a function and we'll name
+[2:18.40] this as a update product function. And
+[2:20.88] then this will uh also accept the
+[2:24.32] product itself. But then with product,
+[2:26.24] we have to also pass the ID. So which
+[2:28.24] particular product you want to update,
+[2:30.80] right? So you can ask for the ID. So I
+[2:32.40] will say ID of type int. And then you
+[2:35.36] will also ask for the product because
+[2:37.52] that's what you're going to update. Now
+[2:38.80] if you want to update a particular field
+[2:40.72] of a product, you can also use patch.
+[2:42.96] But we'll not be doing that here. We'll
+[2:44.88] be only using put and this is where you
+[2:46.72] will update and we also do the mapping
+[2:48.56] for this. This should be app dot instead
+[2:50.80] of using get or post we are going to use
+[2:53.52] put and here we'll say the same URL
+[2:56.56] which is product. Cool right and now I
+[2:59.60] can basically write the logic for
+[3:02.80] updating our product. So it says there's
+[3:05.04] an error on line number 36 and there is
+[3:06.64] an error.
+[3:08.56] So you can say it is expecting a block
+[3:11.92] but I'm going to write a code for
+[3:14.32] updating. Now when you want to update
+[3:16.32] you want to update the product from the
+[3:19.28] products list with this particular
+[3:21.12] product right and uh which one to
+[3:24.08] update. Now you have to basically
+[3:26.08] iterate between these products to find
+[3:29.20] which ID is matching with 1 2 or five
+[3:31.84] and six and then you can do it. So in
+[3:34.08] that case I can say use a for loop. I'm
+[3:37.76] going to start with I uh in range or
+[3:41.76] maybe I can also use product but then I
+[3:43.92] can't replace it. So let's go with the
+[3:45.68] range itself because I want the uh index
+[3:47.36] of it. So I will say uh for i in range
+[3:52.80] and I will go till the last value and
+[3:55.44] for that I have to say I mean second
+[3:57.12] last value. So length of products. Now
+[3:59.44] once you have this range it will start
+[4:01.84] from zero it will end at three because
+[4:04.24] we only got four products here right and
+[4:06.72] of course in future if you add a new
+[4:08.40] products this will go to the second
+[4:10.00] largest value. So if the value if the
+[4:11.60] length is 10 it will go till 9. Okay
+[4:13.60] then you will basically check for each
+[4:15.84] product. So you can check products of
+[4:19.12] zero or sorry products of i and then you
+[4:22.16] can check the ID if it is matching.
+[4:25.04] Okay, if it is matching that means I
+[4:26.80] have to use if it is matching with the
+[4:29.92] id whatever you have passed in that case
+[4:33.04] for that location that means products of
+[4:36.00] I for that location replace it with the
+[4:39.04] product which you got from the client
+[4:40.72] looks good and if this is successful you
+[4:43.76] will return product added successfully
+[4:47.60] again this should be a JSON data but I'm
+[4:49.60] sending a plain text but that's fine it
+[4:51.44] it works and what if you don't find any
+[4:54.24] products Of course, this will come out
+[4:55.68] from there and then you will say return
+[4:58.72] no product found or you can say product
+[5:02.00] not found whatever works. So this is the
+[5:04.32] update code and I want to verify if this
+[5:06.72] is working. So the moment I saved it
+[5:08.64] this got reloaded. I can go back to
+[5:10.80] swagger now or the docs refresh this and
+[5:15.20] first of all let's get all the products
+[5:16.88] from here and we'll update one of it. So
+[5:20.24] execute and you got all the products.
+[5:21.76] Let's say I want to update uh this table
+[5:23.92] here. So I will just copy this and the
+[5:25.68] ID is six. Remember that go back to put
+[5:28.64] because this is what you want to do
+[5:29.92] update product and you will update. So
+[5:32.24] you will say try it out type here six
+[5:34.72] and replace this schema with your
+[5:36.48] schema. In fact you can uh change the
+[5:38.32] values from here but I will just paste
+[5:40.08] it. Then I will keep the idea same. I
+[5:42.16] will change it to table
+[5:45.04] and a wooden table for your computer.
+[5:50.00] Okay. And then price since we have added
+[5:52.16] this description the price should go up.
+[5:54.00] That's what we do, right? And let's say
+[5:56.32] the quantity remains 20. Okay. So we
+[5:58.48] have changed name, price, description
+[6:01.12] but not ID and quantity. Let me execute.
+[6:03.84] Let's see what goes wrong. Nothing went
+[6:05.52] wrong here. Uh it says product added
+[6:08.24] successfully. That's great. That means
+[6:10.64] if you go back now here and if you try
+[6:14.40] to
+[6:15.92] execute this once again and look at the
+[6:19.68] product. So we got table test changed uh
+[6:22.88] description changed price change. Okay,
+[6:24.96] that's how update works. But now let's
+[6:27.68] work with delete. So let's go back here
+[6:30.00] and now you help me. It's okay. Now the
+[6:32.72] question is how will you help me when
+[6:34.32] you're watching this video? Think just
+[6:35.76] think about it. What will be the logic?
+[6:37.68] I will get it. telemetry. Uh so I will
+[6:40.88] say app dot it should be delete the
+[6:43.44] method. Okay. And then you have to also
+[6:46.40] pass the URI. We'll go with the same
+[6:48.40] URI. And as I mentioned before all these
+[6:50.64] URIs are same. What is changing is the
+[6:54.00] method here. Okay. So let's define a
+[6:55.76] method. So we'll say define delete or
+[6:59.12] def delete product. Okay. Now question
+[7:01.84] arise based on what value you want to
+[7:04.32] delete. Maybe a user will send the
+[7:06.24] entire product and then you can delete
+[7:07.84] it or uh id is enough right because
+[7:10.48] every product will be different based on
+[7:12.08] its ID. So you can simply pass an ID
+[7:14.48] here. Let's do that. So except the id.
+[7:18.64] So I'll say id colon int and based on
+[7:21.44] the id will delete it. But again you
+[7:23.60] have to iterate right because you have
+[7:25.36] to match with the id is matching with.
+[7:27.28] So we'll say for in fact the same code
+[7:29.28] which we have written before for range
+[7:31.68] and this will be length of products and
+[7:35.36] then you can check if products of I in
+[7:40.00] fact you have to match the ID if it is
+[7:41.92] matching with the ID which you mentioned
+[7:43.84] from the client side. In that case
+[7:45.92] delete
+[7:47.68] the products of I. As simple as that.
+[7:52.08] And if this works you can return product
+[7:55.12] deleted. And what if you don't find the
+[7:57.68] product? So you have to some mention
+[7:58.88] that somewhere. So we say return same
+[8:01.04] thing product not found. So once we are
+[8:03.76] writing no product product found and
+[8:05.44] once we are we're writing uh product not
+[8:08.00] found. Uh there should be some
+[8:10.72] consistency right and I'm not doing it.
+[8:12.72] Okay. So we got this products here.
+[8:15.12] Right now I want to delete let's say uh
+[8:17.60] six itself or maybe in between. Let's
+[8:19.60] say I want to delete the second one two.
+[8:21.84] So the ID is two. Let's go back to
+[8:25.76] uh okay I think we have to reload this
+[8:29.76] put and delete. Delete is here and we
+[8:32.80] are going to delete two. So I will just
+[8:34.64] type two here and execute. Nothing much.
+[8:37.52] And it says product deleted. That's
+[8:39.36] great. Let's go back to get all
+[8:42.88] products. Try it out. Execute. And here
+[8:47.44] we go. You can see we don't have to
+[8:49.04] anymore. And that's how you update and
+[8:51.76] delete. But I want to show you the code
+[8:53.68] once again and this is it. So this is
+[8:56.32] update product where you are getting the
+[8:59.20] ID getting the product the new details
+[9:01.12] which you want to add and then you are
+[9:03.28] iterating and then you are basically
+[9:05.84] checking for each ID if it is matching
+[9:08.08] or not. The moment you find the match
+[9:09.84] you will update the product from the
+[9:11.52] list and that's how you update. For
+[9:14.32] delete same code it's just that instead
+[9:16.72] of updating we are deleting it. Cool
+[9:19.20] right? uh but then remember everything
+[9:21.44] what we have done now we are doing with
+[9:24.00] in-memory list so this is a list but in
+[9:26.64] the real world we don't use list right
+[9:28.48] we use a permanent storage maybe like
+[9:31.04] posgress or MySQL or any type of
+[9:33.28] database it can be RDBMS it can be nosql
+[9:35.84] databases or somewhere maybe a file or
+[9:38.72] maybe a CSV file so let's see how do we
+[9:41.76] do that in the upcoming

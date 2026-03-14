@@ -1,0 +1,1242 @@
+[0:00.24] Hi everyone, this is GKCS.
+[0:01.92] In today's video we will see some of
+the commonly used terms in the AI space.
+[0:05.76] If you are an engineer
+who is building applications,
+[0:07.60] then you will find these terms useful.
+[0:09.12] When communicating with people
+within your team or outside.
+[0:12.40] And I think if you know these terms,
+[0:13.96] then it is also easier to learn
+the deeper subjects around AI.
+[0:18.24] So by the end of this video,
+you'll have a list of terms
+[0:20.48] whose definitions you understand
+quite well.
+[0:22.44] And I'll also be linking
+[0:23.48] some references in the description
+so that you can dig into them further.
+[0:26.64] Let's start.
+[0:28.56] The first term that you should know about
+[0:30.72] is large language model.
+[0:35.36] Also known as LM.
+[0:38.28] And the definition
+of this is a neural network.
+[0:43.72] That is trained to predict
+[0:46.80] the next term.
+[0:49.88] Of an input sequence.
+[0:54.00] For example,
+[0:54.64] if I pass in the query all that glitters
+[0:59.48] to a large language model, then
+[1:01.28] it's going to come up with the response of
+[1:05.04] is not going
+[1:08.68] okay.
+[1:09.36] At which point the complete response
+of all that glitters is
+[1:12.80] not gold is returned to the user.
+[1:15.88] What do we mean by training?
+[1:17.40] What do we mean by neural network?
+[1:19.12] As we go through this video,
+[1:20.88] you will be understanding these terms
+better one by one.
+[1:24.56] Okay.
+[1:24.84] The second term that we're looking at
+is tokenization.
+[1:29.44] This has to do with processing
+the input of a large language model.
+[1:32.40] For example, if all that glitters
+[1:35.72] is passed into a large language model,
+[1:38.16] the first thing it's going to do is break
+this into discrete tokens.
+[1:42.08] That is the process of tokenization.
+[1:44.04] The first token will be all.
+[1:46.40] Then there's a space character.
+[1:48.68] You have
+[1:49.08] then that after which you have glitched.
+[1:53.04] And finally also
+[1:55.52] you might think, well, why shouldn't
+[1:57.44] you just break this into space characters
+and get the job done?
+[2:00.52] The humans do not talk like that.
+[2:02.40] We are, after all, trying to process
+natural language.
+[2:04.76] So ours is a common term.
+[2:07.80] Shimmers. Murmurs. Flickers.
+[2:09.72] These are terms
+which have the suffix of ers
+[2:13.00] which means that the action of glitched
+[2:15.88] is being performed by that object.
+[2:18.76] Another example of this is in.
+[2:22.08] So eating, dancing, singing
+[2:25.76] all have the suffix of ING,
+[2:28.40] and a large language
+model can look at this token of ING
+[2:32.00] and know that the previous action
+is being performed.
+[2:35.04] As long as you have the suffix.
+[2:36.76] Okay, remember, the core problem
+for the large language model
+[2:39.56] is to truly understand human language
+so that it can speak it really well.
+[2:43.48] Tokenization is an essential part of that.
+[2:46.04] Whose end result is
+that the input text is broken into tokens.
+[2:53.60] Which brings us to our third term
+[2:56.24] vectors.
+[2:59.48] Tokens tell you what you should focus on.
+[3:02.28] What is the smallest term
+that you can derive meaning from?
+[3:06.48] But what meaning has to be derived
+[3:09.60] is represented by vectors.
+[3:11.48] If the large language model
+can map a two dimensional
+[3:15.96] or a n dimensional space.
+[3:21.72] Such that
+[3:22.24] all the words which are close in
+meaning are placed close to each other,
+[3:25.72] then the benefit
+[3:26.32] will be that the meaning of these words
+will be turned into a coordinate.
+[3:30.24] In this n dimensional space.
+[3:32.16] This is called a vector.
+[3:35.40] Okay.
+[3:36.24] The coordinate.
+[3:36.96] The mapping of a word
+in a n dimensional space such that.
+[3:41.32] Nearby words.
+[3:42.20] Similar
+meaning words are all clustered together
+[3:44.72] and opposite
+meaning words are somewhere far away.
+[3:47.56] Comes
+through the process of vectorization.
+[3:52.92] The end result
+of this is that large language models
+[3:55.32] know the inherent meaning of all the words
+that are in the English vocabulary,
+[4:00.00] and they also know how to break it
+into small tokens.
+[4:02.92] Any input text into tokens.
+[4:04.64] Words which are similar to each other
+are placed close to each other.
+[4:08.64] Once they know the meaning,
+they can construct sentences effectively.
+[4:15.64] Okay,
+so now you have large language models
+[4:17.76] which can tokenize input text,
+convert them into vectors.
+[4:22.36] But there is one major challenge
+which actually change
+[4:26.16] the entire industry here, which made large
+language models very popular.
+[4:29.64] And that is attention.
+[4:36.00] We just said that
+[4:36.88] all the input tokens for a large language
+model are converted into vectors.
+[4:40.32] The vectors
+encapsulate the meaning of those words.
+[4:43.52] But what about the word apple
+[4:47.36] when you say it is a tasty apple,
+[4:51.48] you mean the fruit, the edible apple?
+[4:54.40] When you say apples revenue,
+[4:57.12] you probably mean the company.
+[5:00.20] And if you say the apple of my eye,
+[5:03.60] you are probably talking about
+a young person who you have affection for.
+[5:08.16] So Apple has different meanings,
+[5:10.56] and the only way to understand the meaning
+is not by looking at the word itself,
+[5:15.52] because that spelling is the exact same,
+but by looking at nearby words
+[5:21.32] which add context to the meaning of apple.
+[5:28.44] The moment I said tasty, you know that
+[5:30.72] it's some sort of food
+that is going to talk about.
+[5:33.48] That's how humans derive
+meaning, and large
+[5:36.48] language
+models can derive meaning this way.
+[5:38.16] Now, the way they do this is
+look at nearby words in a sentence.
+[5:43.68] Generate those vectors
+[5:46.28] so nearby
+[5:48.24] contextual
+[5:50.24] vectors are picked up.
+[5:52.20] And for ambiguous terms
+[5:55.32] you end up with ambiguous vectors.
+[5:59.24] But you can derive the exact meaning
+[6:01.24] by adding
+this nearby contextual vector to it.
+[6:04.84] So take the vector of Apple.
+[6:07.68] Take the vector of revenue
+when you add these two vectors.
+[6:11.56] When you perform
+some sort of an operation, it's
+[6:13.24] not a direct addition,
+but it's the attention operation.
+[6:19.04] You effectively take the vector of Apple
+[6:21.64] and you push it
+in the direction of the company Apple.
+[6:24.56] So Google
+[6:26.52] meta,
+[6:28.08] Microsoft are all here.
+[6:30.36] The first operation of vector
+revenue is going to send it there.
+[6:33.76] If you instead add a vector of tasty,
+[6:37.24] do this.
+[6:37.96] If you perform the attention mechanism
+of these two vectors,
+[6:40.92] then it's going to push the vector
+of apple to banana, chiku and guava.
+[6:45.28] Okay, so you can tokenize input text.
+[6:48.28] You can derive the inherent
+meaning of all of those tokens.
+[6:51.24] And for ambiguous tokens, for tokens
+which are difficult to understand.
+[6:54.80] You have a mechanism
+to add context by looking at nearby words.
+[6:59.68] And this
+[7:00.08] is another breakthrough
+that large language models have made.
+[7:03.92] This was in 2017.
+[7:04.92] The paper came out then, but
+[7:06.28] in 2022 this became really, really famous
+which are gpt2 being released.
+[7:10.08] The quality of responses
+[7:11.40] of a large language model far exceed
+anything else that we have seen earlier.
+[7:15.20] Okay, because it is able to derive
+contextual meaning,
+[7:18.24] it's able to construct sentences
+in a way that humans speak.
+[7:22.76] Okay, so now we know how LMS
+[7:25.80] can process input.
+[7:30.00] But how do you train them
+[7:33.56] to predict the next token?
+[7:36.20] Okay, here's where there was
+[7:37.80] a major breakthrough in 2017.
+[7:41.80] Basically the concept of self-supervised
+[7:44.88] learning.
+[7:48.88] Became very popular.
+[7:51.72] Self-supervised learning means that
+[7:53.72] instead of telling the model
+exactly what it needs to do,
+[7:58.20] the structure of the input data is such
+that the model knows what it should do.
+[8:03.32] Okay.
+[8:03.84] For example, you're watching this video
+right now.
+[8:06.88] I'm going to make a part of this video
+blank.
+[8:09.48] So 12345.
+[8:17.84] What do you think is being hidden
+right now?
+[8:20.40] What number is coming to your mind?
+[8:23.60] Let's see if that is right.
+[8:25.44] Yes, most of you guessed one
+because we went in the sequence
+[8:30.04] five, four, three, two, one.
+[8:34.40] Okay.
+[8:34.88] But when it comes to a video,
+you can also do something else.
+[8:37.36] Let me make another part of the video
+blank right now.
+[8:42.12] Where do you think
+the other AI is looking?
+[8:46.88] Let's check.
+[8:48.76] Most of you got it right.
+[8:49.76] Both eyes are looking upwards.
+[8:52.04] So what's happening is
+[8:55.08] a section of the input can be predicted.
+[8:57.60] Even if you make that section blank,
+[9:00.52] which means that
+there is inherent structure.
+[9:05.96] In your input
+[9:07.12] which your mind is able to replace
+with the expected token
+[9:11.64] or expected
+[9:14.32] output.
+[9:17.80] Now, the standard way to train
+such a model would be called supervised
+[9:21.00] learning, where you would have a human
+being say that
+[9:24.48] if the input text is all that glitters,
+then the model should
+[9:28.56] predict is not gold.
+[9:32.68] If the input text is at two,
+[9:36.12] then the output should be Brutus instead.
+[9:40.56] Self-supervised learning has made
+[9:43.64] getting test data much cheaper here.
+[9:46.80] If you have a two Brutus,
+[9:50.80] then the model is going to be fed
+in this text
+[9:53.72] and it's going to make three
+predictions. One,
+[9:57.96] what comes after it?
+[10:01.08] Two what comes after a two
+[10:04.32] and three what comes after it?
+[10:06.72] Two Brutus okay, no, humans are involved.
+[10:11.08] You had some text in the world.
+[10:12.76] Maybe you scraped this off the internet
+and now you're taking the model.
+[10:16.08] Look, I have three questions for you.
+[10:17.76] Tell me, what are the right answers?
+[10:19.72] So the model looks at these three puzzles.
+[10:21.60] They are all running in parallel,
+[10:24.48] and they try to make predictions.
+[10:25.56] So it the model might say
+now the model might say two.
+[10:30.68] The model might say something, but
+[10:33.08] you train the model
+that two is the expected response.
+[10:36.96] So if it makes a mistake then you penalize
+the model that increases loss.
+[10:42.36] And so the neural network
+weights are updated.
+[10:45.88] In the second task you have at two,
+[10:48.28] if the model makes
+the prediction of Brutus,
+[10:51.72] then you tell the model
+that this is great.
+[10:53.60] The weights don't need to be updated.
+[10:55.44] But if it says Caesar,
+[10:58.52] then the model has to be penalized.
+[11:00.44] And so the internal weights are updated.
+[11:03.00] In the third case,
+[11:05.08] if you predict a stop
+token like add to Brutus,
+[11:09.08] that's it, then you will get it wrong.
+[11:11.68] If it is a comma, you're right.
+[11:14.16] And if it's, then
+[11:16.76] maybe you're also right.
+[11:18.12] Okay.
+[11:18.80] What you're doing is
+you are looking at text,
+[11:21.16] which already exists in the world,
+and you're creating multiple
+[11:24.48] challenges for yourself
+without human intervention.
+[11:27.76] This is what makes the model
+self-supervised.
+[11:31.28] It might seem like a small thing,
+but this architectural decision
+[11:34.20] or this benefit of the large language
+model makes it really, really scalable.
+[11:39.88] In fact, most AI models now are moving
+to self-supervised learning.
+[11:43.84] Even image models like we discussed,
+are looking for
+[11:47.52] removing some patches of the image
+and trying to predict those patches.
+[11:51.52] The benefit of this is you understand
+the underlying structure
+[11:54.40] and the inherent meaning of those patches.
+[11:57.44] In the case of text,
+it's going to be terms.
+[11:59.32] In the case of images,
+they are a bunch of pixels.
+[12:02.28] And in the case of video you might
+understand how an object even moves.
+[12:07.72] Okay.
+[12:07.92] So that explains what self-supervised
+learning is.
+[12:11.60] Next is the transformer
+[12:15.48] okay.
+[12:15.92] And most people confuse transformer
+with large language model,
+[12:19.36] which is completely
+understandable actually.
+[12:21.28] But that's not the case.
+[12:22.96] A large language
+[12:23.64] model is something which predicts
+the next token given an input sequence.
+[12:28.44] A transformer does the exact same thing,
+but it's a specific
+[12:31.92] algorithm or a specific method
+by which you predict the next token.
+[12:35.92] A transformer basically is input tokens.
+[12:41.24] Being run through an attention block,
+[12:44.76] which is then forwarded to a neural
+network, a feedforward neural network,
+[12:50.40] and then you have a bunch of outputs.
+[12:53.12] Okay,
+you can think of these as output vectors.
+[12:56.44] These vectors are then passed in
+[12:58.12] to another layer of attention.
+[13:01.92] The first layer of attention,
+like we said, disambiguate terms.
+[13:04.68] The second layer might find more complex
+relationships.
+[13:07.68] It might find sarcasm.
+It might find implications.
+[13:10.20] For example, a crane was hunting a crab.
+[13:13.32] So in the first case you understood it is
+not the metal plane, it's a bird train.
+[13:18.12] But in the second one
+you might infer that the crab is fearful.
+[13:22.68] You might understand the crane is hungry.
+[13:25.40] So this is the second layer.
+[13:27.28] And then you have another
+feedforward neural network
+[13:30.68] and so on.
+[13:31.56] Till finally you are confident enough
+to generate an output.
+[13:35.04] Okay. So you have these stacked.
+[13:36.44] Sometimes they're stacked to 12 layers,
+sometimes more.
+[13:39.44] I think recent GPT
+architectures are in hundreds.
+[13:44.52] The main idea behind this is are
+[13:46.44] getting all of the meaning
+from your input tokens
+[13:50.40] and then manipulating them again and again
+[13:53.40] to finally predict
+what the next word should be.
+[13:56.36] This attention lock is order in square.
+[13:59.64] Okay.
+[14:00.40] You could replace this transformer
+in a large language model
+[14:03.60] with something else to model.
+[14:05.04] A new architecture could come in,
+in which case the transformer
+[14:08.56] and the state space
+models are gotten rid of,
+[14:11.28] which could be a diffusion model.
+[14:14.76] That constructs essays or text.
+[14:18.36] Okay, so the large language model
+is actually the product.
+[14:20.76] You can think of it as a car.
+[14:22.36] And this is the engine.
+[14:24.36] A car, many people say is just the engine.
+[14:26.80] But no, there are some other fancy
+things around it.
+[14:29.40] The internal algorithm can be different.
+[14:32.40] This term number seven,
+[14:34.68] it's fine tuning.
+[14:38.20] We said that a large language
+[14:39.64] model is something that is trained
+to predict
+[14:43.84] the next term.
+[14:46.92] Of an input sequence.
+[14:48.96] The question is what type of next token
+are we talking about?
+[14:52.56] If you are talking about a medical large
+language model, something which helps
+[14:55.88] doctors
+explain the diagnosis of a patient,
+[14:58.92] then you're probably going
+to be thinking of medical terms.
+[15:01.48] If you have a model
+which is trained on financial operations.
+[15:05.16] Then the same model
+[15:06.72] for the same query is going to think
+in terms of financial terms.
+[15:10.44] So the next token that the model comes up
+with is not always going to be general.
+[15:15.96] You're first going to train your base
+model.
+[15:20.52] In a self-supervised fashion.
+[15:22.36] Then you're going to take that model
+[15:25.44] and make it go
+through a series of questions
+[15:29.88] and answers.
+[15:31.80] This process is called fine tuning.
+[15:36.72] And goes something like
+[15:38.36] who is the president of USA?
+[15:42.84] Donald Trump?
+[15:45.40] But the model could also say,
+[15:48.08] I would like to know that too.
+[15:53.16] Here's where things are going wrong okay.
+[15:55.20] The model should not be responding
+like this.
+[15:57.68] Give us a direct answer or confess
+that you do not know.
+[16:03.12] Or you could say no.
+[16:04.88] But then this is also very, very bad
+because the models are trained
+[16:07.80] to be helpful.
+[16:10.20] Okay, so what's happening
+is other plausible responses
+[16:14.36] which are not wrong but are not desirable,
+[16:19.20] are penalized in the fine tuning process.
+[16:22.56] You have these questions and answers.
+[16:24.96] The fine tuning process
+forces the model to take a question
+[16:29.04] and give answers.
+[16:30.24] As expected.
+[16:32.28] So when it comes to a medical diagnosis,
+the model is going to train itself.
+[16:36.52] The internal weights will be updated
+in such a way
+[16:38.76] that it will learn to speak
+in medical jargon or medical terms.
+[16:44.04] And so this step, where a base model
+[16:46.32] is trained to answer in a specific
+way, is called fine tuning.
+[16:51.24] The same base model can be run
+through different sets of questions
+[16:54.28] answers to come up with multiple
+fine tuned models.
+[16:57.52] So the base model of Lamarck
+[17:00.24] can be fine tuned by a company
+[17:02.20] to answer that customer's
+specific queries.
+[17:05.36] A few short
+[17:08.60] prompting.
+[17:11.12] So the main idea behind future
+[17:12.64] prompting is before you send a query
+to a model, before you send a plain
+[17:17.76] vanilla query to a large language model
+and ask it to come up
+[17:21.12] with a response.
+[17:25.08] You augment the query.
+[17:26.28] You add more information by saying, look,
+[17:30.32] if the query is where
+[17:33.56] is my parcel?
+[17:36.92] Then let me tell you that there are some
+examples that I want you to go through.
+[17:40.68] This is happening during inference time
+during response time in production.
+[17:44.52] Right?
+[17:44.76] Life, your system, your server sends
+the original query and sends examples
+[17:52.44] to the model so that it
+[17:54.24] takes this into context
+and then gives an appropriate response.
+[17:59.44] The quality of the response goes up.
+[18:01.48] This is called future prompting.
+[18:02.80] It's basically example prompting
+[18:06.76] example in prompt.
+[18:08.36] That's it.
+[18:13.08] It brings us to point number nine
+which is very interesting
+[18:16.64] and is completely exploded,
+which is retrieval,
+[18:21.72] augmented generation.
+[18:24.84] In fact, the AI space is moving so quickly
+that people are saying
+[18:27.88] rank or retrieval
+augmented generation is already dead.
+[18:32.68] So the basic idea
+[18:33.76] again,
+is that you have a large language model
+[18:36.96] and you pass in the input from the server.
+[18:41.88] So a customer connects to you here
+they hit your API.
+[18:45.32] The server says, you know what
+this is the customer query
+[18:48.16] that is forward
+that to the language model.
+[18:49.88] Along with that let's give some examples.
+[18:51.68] So that's for short prompting.
+[18:53.76] And along with that,
+since there are some company policies
+[18:58.24] that I want you to know of, last language
+model, I'll give you those documents.
+[19:03.64] So in real
+[19:04.20] time the server goes fetches
+the most relevant documents.
+[19:07.24] Maybe your policy document,
+[19:11.12] maybe your terms and conditions.
+[19:13.68] When placing an order,
+and maybe many more things.
+[19:16.88] Right?
+[19:17.60] You send these documents along with
+examples of how you should respond.
+[19:21.20] This gives you a good idea
+of the format of the response.
+[19:24.32] This gives you a good idea of the company
+specific context,
+[19:28.32] and this is the direct user input query.
+[19:31.16] Okay, with all of this,
+the large language model tends
+[19:34.36] to give very high quality responses.
+[19:39.36] Now the question is where
+are you getting these documents from?
+[19:41.56] How does the server know which documents
+are related to which query?
+[19:44.72] There are many ways to do this.
+[19:45.80] If you talk to Neo Forger,
+which is a graph database company,
+[19:49.20] they will tell you
+you should store things in a graph. DB.
+[19:52.68] If you talk to neon,
+[19:54.24] then they will tell you that
+you should store things in a vector DB
+[19:58.20] and some people will say
+just keep everything in memory.
+[20:00.56] Just keep everything in cache.
+[20:02.40] This doesn't matter how you fetch
+the documents, doesn't matter so much.
+[20:05.88] Usually it's a vector DB by the way,
+because.
+[20:08.64] But I mean it is easier
+[20:11.44] to find relevant documents
+because you just do a similarity search.
+[20:14.84] Once you have the documents,
+you pass that to a large language model.
+[20:18.28] The large package model converts
+it internally into vectors
+[20:21.36] and then gives you a response.
+[20:23.76] Okay, but at a high level you just want
+to add more and more context.
+[20:28.28] You retrieve the context,
+augment the query,
+[20:31.12] and then generate a response.
+[20:34.16] The 10th term, which is vector database.
+[20:39.84] We just mentioned vector database
+is something
+[20:41.60] which is used to find relevant documents
+for an incoming query.
+[20:45.64] Let's see how that happens.
+[20:48.32] You have the request.
+[20:49.80] I am upset with your
+[20:55.28] payment system.
+[20:57.36] I expect a refund.
+[21:01.00] This is a lot of terms in this query.
+[21:03.84] A human being can read this and easily
+understand what the user is feeling.
+[21:07.92] They are feeling upset.
+[21:08.76] I mean they've already mentioned it,
+but they are looking for a refund
+[21:12.00] if you give them a refund,
+maybe the upset feeling will go away.
+[21:16.32] What do you do?
+[21:17.12] Which documents do you search for?
+[21:19.40] You could search for all documents
+where the word upset exists,
+[21:24.32] but maybe you do not have it
+in your company policy.
+[21:26.40] Maybe nowhere is it
+mentioned that a user is upset,
+[21:29.96] but you have a document which mentions
+[21:32.60] if the user is giving you a low rating,
+[21:37.20] or if a user drops off.
+[21:40.88] How do you make that decision
+that upset as a word,
+[21:44.16] is close to the low rating or drop off?
+[21:48.00] We spoke about vectors.
+[21:49.68] Vectors can encapsulate semantic meaning,
+which means documents which store
+[21:53.80] similar words are going to be similar
+[21:57.04] or close in distance.
+[21:59.84] Remember,
+vectors are basically coordinates, right?
+[22:02.28] So the distance between upset
+and documents having low rating are going
+[22:06.12] to be low.
+[22:07.44] You will fetch the documents
+which mention low rating or drop offs
+[22:11.04] and use them to add
+context to your large language model.
+[22:15.72] When you have an incoming
+query from the user.
+[22:20.32] You're going to find
+which document is closest to the query
+[22:25.08] and add that to the large language
+models context.
+[22:28.68] So this document will be sent
+along with the original user query
+[22:32.72] and maybe a system prompt.
+[22:38.64] Where are you going
+to store these documents
+[22:41.36] in a vector database,
+[22:44.32] which helps you perform
+these similarity searches efficiently.
+[22:48.00] Some of these algorithms are hierarchical,
+navigable, small world.
+[22:50.88] We have spoken about this in detail
+in the interview.
+[22:53.52] Right course at the end of the day.
+[22:56.12] The vector database
+is like a black box to you.
+[22:58.76] You can store documents and you can
+quickly retrieve them when you need them.
+[23:04.24] Great.
+[23:04.64] So you can store internal company
+documents and information
+[23:07.68] in a vector database
+to get context for a large language model.
+[23:12.80] But what if the context exists
+outside your system?
+[23:17.32] So this challenge was met with
+[23:20.12] model context protocol.
+[23:24.60] Okay.
+[23:24.84] As the name suggests, it's a protocol
+or a way to communicate
+[23:29.76] the transfer context into a model.
+[23:34.08] The basic
+idea here I made a detailed video on this.
+[23:36.68] You can check it out,
+but the basic idea here is that
+[23:40.20] you have a large language model
+[23:43.36] which, before receiving an incoming
+[23:45.32] query from a user.
+[23:49.24] Has a client,
+[23:50.44] an MCP client model,
+context protocol client
+[23:54.60] which forwards the initial query
+[23:57.76] user query.
+[23:58.96] The LLM now makes a decision.
+[24:01.36] It says that there may be external
+tools or databases
+[24:04.20] that I want to connect to.
+[24:07.20] The client gets to know of this
+[24:09.12] and connects with external MCP servers.
+[24:14.48] In one case, that might be Indigo.
+[24:19.64] In another case that will be Air India,
+[24:24.36] whose MCP server
+can give you details around Air India.
+[24:27.76] So you can think of this as a wrapper
+for Air India's database.
+[24:32.24] This as a wrapper for Indigo's database.
+[24:35.64] As a response, you
+[24:36.60] are going to get flight details.
+[24:40.40] From each of these airlines.
+[24:44.04] Once you have the details,
+[24:45.08] you can forward it to the alum
+saying that hey,
+[24:48.36] along with the user query
+and along with whatever system
+[24:51.28] from the relevant context
+that I could get from my vector database,
+[24:54.28] I'm also adding flight details, real time
+information from external servers,
+[24:59.08] which you can now consume
+to come up with a decision.
+[25:02.28] Okay.
+[25:02.88] And the large language model at this point
+might say, okay, book flight number
+[25:08.16] i.e. Indigo
+[25:10.32] 1020, which then results in another
+[25:13.20] API call to book
+[25:16.20] on the MCP server of Indigo.
+[25:18.64] Okay.
+[25:19.48] The response
+final response is given to the MCP client.
+[25:22.44] The client
+then forwards it back to the user.
+[25:25.12] Result in customer satisfaction.
+[25:27.36] Okay.
+[25:28.08] You see that the user is no longer
+just able to get data up.
+[25:31.68] They do not have to do things themselves
+after being given the recipe.
+[25:35.16] The recipe can be completely
+executed by the MCP client.
+[25:40.64] Okay,
+so this makes LMS a lot more powerful.
+[25:43.64] MCP has picked up a lot of popularity now.
+[25:46.92] Okay, so all of this put together
+[25:50.04] is called context engineering.
+[25:54.24] If you are an engineer,
+you have probably heard of this term.
+[25:57.24] And basically this is
+[25:59.52] an encapsulation of many of the things
+that we have already discussed.
+[26:02.56] We discussed a few short prompting,
+[26:05.44] which is giving examples.
+[26:10.36] We discussed
+[26:11.68] retrieval, augmented generation,
+[26:14.32] which is getting relevant documents
+[26:16.84] from a vector database.
+[26:19.96] And using them to add context to a query
+[26:23.40] and using model context protocol to hit
+[26:26.12] external servers.
+[26:30.40] And perform actions as needed.
+[26:34.32] When it comes to context engineering.
+[26:35.84] This two new challenges
+that we are facing as engineers.
+[26:39.60] One is user preferences
+[26:42.60] and the second is prompt summarization.
+[26:52.20] You can call it context summarization.
+[26:57.96] For example,
+you might use a sliding window.
+[27:04.08] Where the last 100 chats
+[27:07.88] are sent directly to the large language
+model,
+[27:10.96] and all the previous chats are summarized
+into five sentences,
+[27:15.80] just.
+[27:19.44] This limits the max amount of chats
+[27:21.36] that you are sending
+to the large language model.
+[27:23.84] You could use other techniques also.
+[27:25.32] For example,
+some people just focus on keywords.
+[27:28.44] Some people focus just on the last chat.
+[27:30.88] So one chat and the previous
+entire history summary together.
+[27:35.80] The idea is to get context summarization
+this way
+[27:39.28] when you get a document, you again
+summarize it first and then send it.
+[27:42.52] So this can be done
+maybe using a cheap small language
+[27:45.40] model or a distilled model.
+[27:49.72] And once you have generated the context,
+[27:51.24] you send that to the expensive
+large language model.
+[27:54.28] You see, the main difference between
+context engineering and prompt engineering
+[27:57.40] is prompt
+engineering is for one single prompt.
+[28:00.52] It is stateless.
+[28:02.16] Anytime you ask the large language model
+to behave in a particular way,
+[28:04.96] the system prompt is going to be the same.
+[28:06.88] But context engineering evolves as per
+[28:09.32] the user's declared preferences
+and also the previous chat history
+[28:14.40] similar
+[28:14.72] to what it was earlier,
+but this is more long term.
+[28:17.76] Which brings us to the most long
+term thing you can come up with
+[28:20.28] in the air space right now.
+[28:22.32] Agents.
+[28:26.24] I've taken a detailed video on this,
+so do check that out.
+[28:28.80] But at a high level,
+you have a long running process.
+[28:35.64] Which is known as an agent.
+[28:37.20] You can think of this is a server
+which is getting an API call.
+[28:40.24] And this has many capabilities.
+[28:41.56] It can go and
+[28:43.64] query and LM.
+[28:45.40] It can also query external systems.
+[28:51.56] And other agents.
+[28:55.96] To meet the user's requirements.
+[28:59.24] Let's take an example here.
+[29:00.36] Let's say your travel agent
+can look into booking flights,
+[29:05.04] booking hotels and even manage your email
+when you're away.
+[29:09.92] When it sees a window of opportunity.
+[29:11.40] Maybe the flights then are cheap.
+[29:13.20] It goes ahead and makes the booking
+according to your preferences.
+[29:16.56] All of this stuff
+can be managed by an agent
+[29:20.16] and the most hyped
+[29:22.48] term here.
+[29:25.76] Is reinforcement learning.
+[29:27.48] It's a way in which you can train models
+to behave in a particular way.
+[29:31.84] So, for example, if you give a query
+a user query to the model,
+[29:37.64] the model can generate two responses
+[29:39.96] response one and response two.
+[29:43.80] You must have seen this in ChatGPT.
+[29:45.64] Choose the one which is better.
+[29:48.00] Okay, so the one which is chosen
+gets a plus one.
+[29:50.40] The other one gets a minus one.
+[29:53.24] What happened
+effectively is you took a user query.
+[29:57.04] This entire thing
+can be mapped to a vector.
+[30:00.12] And the vector is an n dimensional space.
+[30:03.40] So you go to that coordinate
+[30:05.60] and you tell the model that look
+after reaching here
+[30:08.32] you generated
+further tokens for the vectors.
+[30:12.08] So that's your path.
+[30:13.12] You went from here to here to here.
+[30:15.04] So this was the final point of response.
+[30:18.24] And now you got a score of plus one.
+[30:21.44] So this gets a score of plus one.
+[30:23.52] This also gets the score of plus one
+plus one plus one plus one plus one.
+[30:28.48] It's also discounting that you can do.
+[30:29.84] But for now let's just keep things simple.
+[30:31.92] This is a nice path.
+[30:33.16] You always want to follow this path.
+[30:36.84] Response two was bad there.
+[30:39.84] You followed this point to this point.
+[30:43.08] This point, and then you deviated.
+[30:45.20] The next token that you generated
+after the first three tokens, let's say,
+[30:49.68] is not going.
+[30:52.84] And then you did a comma here and went,
+[30:56.08] but it may be so token
+[31:00.28] one, two, three for token one, two,
+[31:05.88] three
+[31:07.92] four. Okay.
+[31:09.60] This was bad.
+[31:10.68] It got a score of minus one, which means
+this area gets a score of minus one.
+[31:15.72] This also gets the score of minus
+one, minus one, minus
+[31:18.88] one, minus one, plus one
+[31:21.92] takes it to zero.
+[31:23.40] Minus one plus one takes it to zero.
+[31:25.08] Minus one plus one takes it to zero.
+[31:28.16] So what you're doing is you have a space
+[31:30.92] where you have negative scores,
+positive scores and neutral scores.
+[31:36.32] If you
+[31:36.64] do this enough, then you will end up
+with a space, a vector space
+[31:41.16] where given an input
+query, given a starting point,
+[31:45.32] you will have a space of negative
+where you do not want to go.
+[31:48.84] You will have a space of positive
+where you definitely want to go.
+[31:52.16] And the more positive
+it is, the more you want to go there.
+[31:54.72] Okay, so maybe you go here.
+[31:56.88] From here you have another
+very positive space which is over here.
+[32:00.20] This is like hill climbing, right?
+[32:01.68] You're
+basically trying to optimize on the path
+[32:05.52] that you're taking as a large language
+model.
+[32:08.52] The expectation is that the final result
+will make the end user happy.
+[32:13.44] Okay.
+[32:14.12] If the end user experience is good, then
+the model is trained to make users happy.
+[32:20.12] That's
+[32:20.72] what is reinforcement learning with human
+feedback.
+[32:24.00] Human feedback is telling you
+whether it is a plus 1 or -1,
+[32:28.20] and the feedback is helping you reinforce
+[32:31.44] good outputs.
+[32:33.40] This is an extremely powerful technique.
+[32:35.12] In fact, it is seen in nature.
+[32:37.32] If you know about Pavlov's dog,
+then there was this
+[32:41.04] situation
+where Pablo would press a bell and
+[32:44.80] give food to the dog when it would come
+after pressing the bell.
+[32:47.92] Eventually he realized that if he just
+presses the bell without giving food,
+[32:51.64] the dog already comes and starts
+salivating because it's expecting food.
+[32:55.28] So its behaviors have been reinforced.
+[32:58.36] Fortunately, this is not the only
+capability that human beings have.
+[33:01.32] You cannot model human intelligence
+using just reinforcement learning.
+[33:04.72] I'll take an example.
+[33:05.56] Let's say you have a coin
+which is giving you heads.
+[33:08.36] Heads. Heads.
+[33:09.76] Heads. Heads. Heads.
+[33:12.44] If you know that this is a fair coin.
+[33:13.96] If you have a mental understanding
+of how the coin works,
+[33:17.76] then what do you think is coming next?
+[33:19.96] Heads or tails?
+[33:21.96] Okay.
+[33:22.56] With what? Probability?
+[33:25.68] Okay,
+[33:26.52] so I just looked at the camera and said,
+okay, okay.
+[33:29.80] Twice. Something's going on.
+[33:32.64] But as a human being,
+you should look at this
+[33:35.28] and say if it is a fair coin,
+if it's an unbiased coin,
+[33:38.40] then it can be heads or tails.
+[33:42.12] You can't guarantee
+that it is going to be heads next.
+[33:45.24] But reinforcement learning looks.
+[33:47.16] It observes the real world and based on
+that makes a decision.
+[33:51.32] So when it predicts heads
+it gets reinforced.
+[33:54.84] Great job.
+[33:55.76] When it predicts tails, it gets punished.
+[33:58.04] Bad job.
+[33:59.88] But the reality is this is a fair coin.
+[34:02.48] So there's a 5050 chance of either.
+[34:06.24] If you ask a human being,
+you show them the coin.
+[34:08.32] You tell them that this is a fair coin,
+and then you just keep flipping the coin.
+[34:11.36] You get a lot of heads.
+[34:12.12] They're just going to say 5050
+[34:13.64] because they have an internal
+representation of how the coin works.
+[34:16.96] They have a mental model
+of the physics of the coin.
+[34:20.44] While reinforcement learning cannot build
+mental models, they can just tell you
+[34:24.36] based on outcomes what is more likely
+and what is maybe a more beneficial path.
+[34:29.12] Okay, we are not crocodiles.
+We are humans.
+[34:31.40] We have a deeper understanding
+of how things work.
+[34:34.56] Having said that, reinforcement
+learning is a powerful technique.
+[34:36.96] It does make models get smarter.
+[34:40.64] Quite smart right?
+[34:43.28] Chain of thought.
+[34:47.88] Pretty simple concept, but very powerful.
+[34:49.92] When training the model, we
+clearly explain our thought process here.
+[34:53.52] The expectation
+is that as the model trains
+[34:56.76] to break a problem step by step, it's
+going to look at newer problems
+[35:00.88] with different parameters
+and still be able to reason through them
+[35:04.92] because it has been trained to reason
+step by step.
+[35:08.44] This is called chain of thought,
+where the model goes through
+[35:12.04] a series of deductions or inferences
+and comes up with the final response.
+[35:17.04] The quality of this response
+is usually much
+[35:20.00] higher than a direct response.
+[35:23.24] As you can see,
+this is similar to a few short prompting.
+[35:26.28] The quality of the response is higher.
+[35:28.08] It has some examples to go through,
+but here the key
+[35:30.88] difference is that there is a step
+by step breakdown, and new
+[35:34.80] steps can be added by the model
+as it sees fit.
+[35:38.04] Because it is trained on so much
+training data, it may be able to reason
+[35:41.44] to add more steps as the problem gets more
+and more difficult.
+[35:44.88] Okay.
+[35:45.20] In fact, this is something
+that has been seen by deep seek.
+[35:48.52] If you make the problem harder,
+it goes for more steps.
+[35:51.16] If you make the problem easy,
+then it goes for fewer steps.
+[35:55.72] So this is called a reasoning model.
+[36:03.08] Okay.
+[36:03.44] They do not
+necessarily need to do chain of thought.
+[36:05.52] They can also use other algorithms.
+[36:07.32] For example there is tree of thought graph
+of thought also that you can go through.
+[36:11.52] You can use tools also to come up
+with better reasoning,
+[36:14.44] but a model that can reason, a model
+that can figure out,
+[36:18.32] given a problem, how to solve that
+problem step by step is a reasoning model.
+[36:24.04] This is also known as L or M's.
+[36:27.36] Okay,
+examples of this deep seek and OpenAI.
+[36:32.52] I mean the O one and O three another.
+[36:34.92] All these models but they newer models
+[36:38.72] with new capabilities. Now
+[36:41.56] multi model
+[36:44.28] models. Okay.
+[36:45.84] So the basic idea
+[36:47.28] is that most large language models
+that we know of operate on text.
+[36:51.44] But what about models which can
+[36:55.20] accept and create images, generate images.
+[37:00.40] What about models
+[37:01.72] which can accept and create videos. Okay.
+[37:05.40] So they can analyze images.
+[37:06.80] They can tell you the number of apples
+in an image, let's say.
+[37:09.84] Or they can modify an image
+to create a new image.
+[37:13.48] Similarly for video,
+these have tremendous application
+[37:17.04] similar to how large language models
+have changed
+[37:19.68] the marketing space.
+[37:23.48] To textual content.
+[37:24.48] Now, social media is rife with large
+language model content.
+[37:28.92] Images are going to get better and better,
+and video can be a really big deal.
+[37:33.24] Because if you have celebrities.
+[37:38.08] Who can create video?
+[37:39.12] You can create
+ads through large language models.
+[37:41.72] Then the cost expectation of creating
+video is going to go down
+[37:46.28] okay.
+[37:47.08] This is already happening to some extent,
+but the quality of the models
+[37:49.76] are not very good.
+[37:50.64] Multimodal
+in general means any kind of mode
+[37:55.64] of input data.
+[37:57.48] It turns out that their performance
+is better than models
+[38:00.24] which are just trained on text. Okay.
+[38:01.96] They have a deeper understanding
+of the meaning of objects.
+[38:06.16] If you train a model on cat and feline
+[38:10.00] and so on,
+and then if you show it, images of cats,
+[38:14.04] then the performance of the model,
+the output quality is usually better.
+[38:18.16] Okay.
+[38:18.44] The training is better.
+[38:21.64] Fine.
+[38:21.92] Let's get to three major topics,
+[38:25.44] which is where the AI space is heading.
+[38:27.88] Okay.
+[38:28.32] People are looking for more company
+specific smaller models.
+[38:31.76] Foundation models.
+[38:33.40] The reason for this is companies
+want more control over what they generate.
+[38:36.80] They also want to keep the data
+close to themselves.
+[38:38.76] They don't want to expose it
+to any other third party company.
+[38:41.92] So one of the things which is happening
+is we are looking at smaller
+[38:45.48] models.
+[38:48.36] Of small language models.
+[38:51.96] As you can expect with the words
+have fewer parameters
+[38:55.80] than large language models.
+[38:57.16] For example, a small language model may
+have 3 million to 300 million parameters.
+[39:01.64] Okay, the neural network internally
+has fewer connections, fewer weights.
+[39:06.60] But if you look at large language
+models, contrast it.
+[39:09.24] You have 3 to 300 billion parameters.
+[39:12.84] So this is a very large
+[39:15.48] neural network
+with a lot of weights in a LM.
+[39:19.48] But the SLM is smaller.
+[39:22.80] But they are useful
+because they are trained on lesser data,
+[39:27.92] which can be company specific.
+[39:33.56] Or task specific.
+[39:36.40] For example, a bot which is trained on
+just customer queries, how to manage
+[39:40.36] customer queries, how to make
+sales is likely to perform decently well.
+[39:45.00] Okay, it's going to be an expert at sales,
+but it probably can't tell you
+[39:49.16] a detailed weather analysis.
+[39:52.64] For most companies, this doesn't matter.
+[39:55.52] In the case of NASA.
+This is what you need.
+[39:57.48] You are probably not
+selling anything openly, so maybe you are.
+[40:00.28] Who knows?
+[40:01.12] But NASA would be more interested
+in building a foundation model
+[40:05.24] which can predict the weather,
+but not bothered about the sales part.
+[40:10.68] So in this way, smaller
+[40:12.88] language
+models are being trained by companies
+[40:15.64] on their specific data,
+on the proprietary data
+[40:19.44] to come up with reasonably good responses
+for specific use cases.
+[40:24.64] And the process of building small language
+[40:27.00] models is usually distillation.
+[40:33.36] The basic idea is
+[40:34.08] you have a large language model,
+[40:37.20] which is a teacher,
+[40:39.80] and then you pass in some input.
+[40:43.08] You look at the output of the large
+language model,
+[40:46.44] and in parallel you also send
+it to a small language model.
+[40:51.56] Okay, with fewer parameters.
+[40:53.08] You and it also tries
+to predict the output.
+[40:57.84] So the teacher produces an output
+and the student
+[41:01.72] tries to mimic the teacher.
+[41:05.96] If these two outputs match, then
+the small language model is doing well.
+[41:09.64] No weights need to change,
+but if it is not doing well,
+[41:13.52] then the internal weights
+of the small language model are changed.
+[41:16.84] But there is a limited number of weights
+assigned to this model 3 to 300 million.
+[41:21.96] What you are basically trying to do
+is condense this information, the
+[41:25.76] the complex neural network,
+into the most reasonable representation
+[41:29.52] that you can have
+[41:30.52] such that your performance is okay,
+but the costs are significantly reduced.
+[41:34.52] So during runtime, during production
+inference time
+[41:37.44] when you get a query,
+this is going to be much faster
+[41:40.44] at responding as compared
+to this large language model.
+[41:43.92] It's also easier to host.
+[41:48.00] Okay.
+[41:48.68] Distilled models take us to the last term
+that you really should know
+[41:53.32] if you are the engineer,
+and that is quantization.
+[41:58.84] Here the idea is
+[41:59.76] that you have neural networks.
+[42:03.56] Each of these weights
+[42:06.96] is basically a number,
+[42:08.52] let's say a 32 bit number.
+[42:11.48] What if you could take these weights
+and condense
+[42:14.76] that information into eight bits.
+[42:19.92] Then 75% of your memory
+is expected to be saved.
+[42:23.64] It doesn't directly map over here
+because the weights are usually just done
+[42:27.36] on the feedforward neural network.
+[42:28.68] You still have the attention mechanism,
+and also the training cost is the same
+[42:32.48] because initially you come up with a
+really good model with zero quantization.
+[42:36.32] Once the model is completely trained,
+that's when you apply quantization.
+[42:39.64] So the training cost does not reduce.
+[42:41.52] This is mainly to reduce inference cost
+[42:45.20] or during production.
+[42:46.48] The cost of running a model.
+[42:48.76] So these are the most important
+[42:51.24] 20 terms that I want to discuss
+in the engineering space.
+[42:55.28] I think
+[42:55.80] knowing these terms
+will help you effectively communicate
+[42:58.16] with any other engineer
+or people in the team.
+[43:01.84] I couldn't go into enough detail here
+because, I mean, when you're talking
+[43:05.40] about the attention mechanism
+[43:06.76] or quick action, you cannot do this
+in a 20 30 minute video.
+[43:11.08] But the things you should know about
+are these terms.
+[43:14.72] And also most of the things
+[43:15.88] that are mentioned in the engineering
+course are going to be ready.
+[43:19.40] If you know them, then you
+truly understand how these models work.
+[43:22.32] And all of the hype and nonsense
+which is going on in this space,
+[43:25.72] they become hype
+and nonsense to you, right?
+[43:27.60] You are able to recognize it much better.
+Thank you for watching.
+[43:30.36] I hope you enjoyed the video.
+I'll see you next time. Bye bye.

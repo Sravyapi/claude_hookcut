@@ -58,6 +58,7 @@ class HookResponse(BaseModel):
     algorithm_dynamics: AlgorithmDynamics = AlgorithmDynamics()
     viewer_psychology: ViewerPsychology = ViewerPsychology()
     improvement_suggestion: str = ""
+    primary_speaker: str | None = None
     is_composite: bool
     is_selected: bool
 

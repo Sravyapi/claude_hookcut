@@ -1,0 +1,451 @@
+[0:01.36] [Music]
+[0:06.12] hello everyone welcome back in this
+[0:08.88] presentation let's focus on the
+[0:10.84] introduction to ER model part one let's
+[0:14.48] start with the topics of the day what
+[0:16.64] are the topics we are going to cover in
+[0:18.64] this presentation at first we are going
+[0:20.96] to understand the basics of the ER model
+[0:23.68] then we will focus on the basic
+[0:25.44] components of the AR model then we will
+[0:28.68] focus on entity
+[0:30.56] entity sets attributes and relationship
+[0:34.56] sets while waiting let's step into the
+[0:37.52] topic of the day the ER model what is
+[0:40.64] this ER model actually the ER model
+[0:43.64] stands for the entity relationship model
+[0:47.48] shortly we are going to talk about what
+[0:49.36] is an entity and how relationship among
+[0:52.04] entities can be formed and why do we
+[0:54.56] need this model anyway for now we are
+[0:56.92] going to understand why do we need ER
+[0:58.96] model and what are the importance of
+[1:00.72] having an ER model in this presentation
+[1:04.04] if you are aware of blueprints we have a
+[1:07.16] lot of advantages of having blueprints
+[1:09.44] in the real world say for example it
+[1:11.88] create a shared understanding of the
+[1:13.88] bigger picture it also helps us in
+[1:16.72] understanding how different parts work
+[1:18.84] or different components work it also
+[1:21.44] enables better communication and
+[1:24.00] outcomes it helps in identifying and
+[1:27.04] explaining the priorities it helps us in
+[1:29.92] in staying focused by zooming in and
+[1:32.20] zooming out for a specific component
+[1:35.24] this ER model is also like a blueprint
+[1:38.52] now let's understand why do we need ER
+[1:40.76] model because this ER model facilitates
+[1:44.12] database design by allowing
+[1:46.20] specifications of an Enterprise schema
+[1:48.96] we know very well that the organizations
+[1:51.48] or Enterprises are going to obviously
+[1:53.92] have databases before constructing the
+[1:56.36] database we obviously need to understand
+[1:59.16] the exact requirement also we need to
+[2:02.00] allow the specifications that are going
+[2:04.28] to be involved in the design so exactly
+[2:07.56] ER model helps us in facilitating the
+[2:10.16] database design how by allowing the
+[2:13.32] specifications of an Enterprise schema
+[2:16.24] this is like before constructing the
+[2:18.48] building the engineers I mean the civil
+[2:21.08] engineers will have a perfect design
+[2:23.40] plan or an approved design plan so that
+[2:26.68] the design plan will help them to
+[2:29.00] exactly implement the construction of
+[2:31.28] the building in a very perfect way as
+[2:34.08] expected if the design is good the
+[2:36.68] implementation will be good at the same
+[2:38.80] time just like that we can't go and
+[2:40.52] implement the building construction so
+[2:42.68] we will plan we will Design isn't it ER
+[2:45.64] model is like that say for example how
+[2:48.80] many relations or tables are required
+[2:51.40] what are the relationship among the
+[2:53.08] tables how many columns are there in the
+[2:55.64] tables or how many attributes are there
+[2:57.80] in the table which is a primary key
+[2:59.84] attribute all these things are actually
+[3:02.64] dealt by the ER model because this is
+[3:06.16] developed in the design phase I hope now
+[3:09.60] you can recollect why did we see the
+[3:11.80] first topic or the first lecture in this
+[3:14.00] chapter just correlate this with the
+[3:16.40] first lecture of this chapter the design
+[3:18.64] phase I hope now you will be able to
+[3:21.08] understand in the design phase only we
+[3:22.76] are going to construct this ER diagram
+[3:25.60] or we are going to deal with the ER
+[3:27.80] model so obviously the ER model
+[3:30.76] represents the overall logical structure
+[3:33.20] of a database and that's why I told you
+[3:35.92] this ER model represents the overall
+[3:38.56] logical structure so when we look at the
+[3:41.00] ER model itself we will be able to
+[3:43.48] understand the complete database design
+[3:45.84] so definitely this is not exactly going
+[3:47.68] to be understandable by the computers
+[3:50.44] but this is a highlevel data model where
+[3:53.76] this helps the database designer or the
+[3:55.96] database administrator to understand the
+[3:58.76] overall logical structure of the
+[4:00.68] database once the structure is created
+[4:03.16] it will be definitely easy for the
+[4:04.80] database administrator or the database
+[4:06.96] designer to implement that in the
+[4:09.36] database hence we can say this ER model
+[4:12.56] develops a conceptual design for the
+[4:15.00] database obviously because this is a
+[4:17.28] conceptual design only I told you this
+[4:19.52] is actually in the database design phase
+[4:21.72] isn't it so this ER model develops a
+[4:24.60] conceptual design for the databases and
+[4:27.36] obviously we know this is representing
+[4:29.32] the overall logical structure of a
+[4:31.24] database so this is portrayed as
+[4:34.00] diagrams I mean the ER model are
+[4:36.64] generally portrayed as diagrams to be
+[4:39.64] precise ER diagrams a picture is worth a
+[4:43.92] th000 Words which conveys its meaning or
+[4:47.08] Essence more effectively than a mere
+[4:50.36] verbal description ER model is portrayed
+[4:53.56] as diagrams we are going to deal
+[4:55.96] elaborately about the ER diagrams in the
+[4:58.28] coming lectures for now we have just
+[5:00.44] dealt about the ER model and the basics
+[5:03.44] of the ER model let's now step into the
+[5:06.60] basic components of the ER model this is
+[5:09.80] an example ER model but this is not
+[5:12.36] depicted to have a complete design of
+[5:14.60] the ER model this is just a part of the
+[5:17.00] ER diagram anyway my intention is just
+[5:19.84] to let you know that an ER diagram the
+[5:22.72] part of the ER diagram will look like
+[5:24.68] this now let's focus on the basic
+[5:27.20] components actually the ER model has
+[5:29.92] three basic components number one The
+[5:32.40] Entity sets number two the attributes
+[5:35.32] and number three relationship sets let's
+[5:38.32] focus on entity sets before
+[5:40.84] understanding entity sets we need to
+[5:42.84] understand what is an entity so the next
+[5:45.80] thing that we are going to understand is
+[5:47.84] what is an entity after understanding an
+[5:50.16] entity let's move on to entity sets so
+[5:52.60] we are now here in understanding what is
+[5:55.48] an entity what is an entity actually
+[5:58.64] this entity is is a thing or object in
+[6:01.44] the real world if you have some
+[6:03.24] knowledge about the objectoriented
+[6:05.36] programming an object is a real world
+[6:07.80] entity isn't it an entity is also like
+[6:10.44] that it is a real world entity or a real
+[6:13.24] world thing or a real world object so
+[6:15.84] when I say this is an object or a thing
+[6:18.04] that is in the real world obviously
+[6:20.64] entity is distinguishable from all other
+[6:23.92] objects because they are the real world
+[6:26.32] entities say for example I'm a different
+[6:28.96] guy my friend is a different guy my
+[6:30.60] brother is a different guy but if we
+[6:32.96] want to represent everyone in one word
+[6:35.44] we can say person so each one of us is a
+[6:38.96] person where each one of us is
+[6:41.32] distinguishable from all other persons
+[6:44.12] so that is what I mean to say entities
+[6:46.44] are real world thing or real world
+[6:48.68] object anyway don't worry about this now
+[6:51.24] when we see an example we will be able
+[6:52.96] to understand things elaborately let's
+[6:55.16] see an example an example is each person
+[6:58.08] in an University is an entity so if we
+[7:00.80] are taking a university as an example
+[7:03.32] database then in the University database
+[7:06.28] each person is an entity so this is a
+[7:09.84] generic way of saying what is an entity
+[7:12.72] each person in an University is an
+[7:14.96] entity so obviously each person will be
+[7:17.80] distinguishable from all other person in
+[7:20.16] the University isn't it an instructor
+[7:22.20] may be a different person a student may
+[7:24.36] be a different person staff may be a
+[7:26.60] different entity so what I mean to say
+[7:28.88] here is each person in an University is
+[7:31.88] an entity and how each person is
+[7:34.76] identified it has a set of properties
+[7:37.80] and the values for some set of
+[7:39.64] properties that may uniquely identify an
+[7:42.88] entity as I told you each person should
+[7:45.32] be uniquely identified only then each
+[7:48.00] person can be distinguishable from all
+[7:50.20] other objects isn't it so when we talk
+[7:52.44] about entity this entity has a set of
+[7:55.52] properties and the values for those set
+[7:58.36] of properties say for example if name is
+[8:01.04] a property and the value for that name
+[8:03.48] will be different for me I have my own
+[8:06.16] name for my brother he has his own name
+[8:09.28] for my friend he has his own name I hope
+[8:12.52] things are clear to you now in this
+[8:14.84] chapter we are going to demystify
+[8:16.64] everything about the ER model and the ER
+[8:18.92] diagram so I told you a generic example
+[8:21.36] isn't it each person in a university is
+[8:24.08] an entity now let's see an instance for
+[8:27.28] example a person may have a person ID
+[8:30.16] property whose value uniquely identifies
+[8:33.44] that person if you take a relation in
+[8:36.32] that relation if you take entity which
+[8:38.40] is actually person I told you each
+[8:40.80] person isn't it which is an entity now
+[8:43.24] in that case the person ID property will
+[8:46.68] uniquely Define each person from other
+[8:49.56] person I mean it uniquely identify each
+[8:53.48] person from other people and that's why
+[8:56.40] these entities are distinguishable from
+[8:58.56] all other object object because these
+[9:00.56] entities has a set of properties and
+[9:02.76] values so that we can uniquely identify
+[9:06.12] an entity I hope you understood the
+[9:08.52] insights about what is an entity now
+[9:11.00] let's see what is an entity sets this is
+[9:14.12] the first component in the basic
+[9:16.28] components of the ER model there are
+[9:18.48] three basic components The Entity sets
+[9:20.84] the relationship sets and the attributes
+[9:23.56] we are now in the entity sets let's
+[9:26.52] focus on this entity sets and entity set
+[9:30.28] is a set of entities we have already
+[9:32.68] seen about entity but what we are seeing
+[9:35.08] now is an entity set is a set of
+[9:37.56] entities of the same type so that share
+[9:41.12] the same Properties or attributes if you
+[9:44.12] take me as an example my name and age
+[9:47.44] for example if I'm taking my name and
+[9:50.00] age if I considering my brother's name
+[9:52.64] and age again you see how many columns
+[9:55.16] are here two columns I am retrieving
+[9:57.16] name age similarly my brothers name and
+[10:00.08] age but I'm considering a set where
+[10:02.92] these two values are there because they
+[10:05.56] have the same type if you see my name is
+[10:08.36] also of the same type as my brother's
+[10:10.36] name my age is also having the same type
+[10:13.04] as my brother's age remember I'm not
+[10:15.92] talking about the value my name is
+[10:17.84] different my brother's name is different
+[10:19.92] my age is different my brother's age may
+[10:22.20] be different but we are talking about
+[10:24.28] the same type or attribute name
+[10:26.96] attribute age attribute so an entity set
+[10:30.72] is a set of entities of the same type
+[10:33.72] because they share the same Properties
+[10:36.56] or attributes let's see a formal example
+[10:39.44] now the example is the set of all people
+[10:43.16] who are instructors at a given
+[10:45.44] University can be defined as the entity
+[10:48.24] set instructor say if we are saying
+[10:50.76] instructor as an entity set what does it
+[10:53.04] mean this instructor entity set means
+[10:56.24] this is the set of all people who are
+[10:59.92] instructors where at a given University
+[11:03.52] because in that university only we will
+[11:06.04] be able to exactly have the set of
+[11:08.12] people who are instructors in that
+[11:10.48] University anyway the next lecture is
+[11:12.80] part two where we are going to deal more
+[11:14.88] about entity sets relationship sets and
+[11:17.64] the basics of attributes for now just
+[11:20.20] understand an entity set is a set of
+[11:22.64] entities of the same type example the
+[11:25.96] set of all people who are instructors at
+[11:28.20] a given University
+[11:29.88] and one thing we need to note here is
+[11:32.44] this entity set does not need to be
+[11:34.84] disjoined I mean to say The Entity sets
+[11:37.76] do not need to be disjointed it means in
+[11:40.40] a university we will be obviously having
+[11:42.92] instructors and student if we take
+[11:45.52] instructors and students are different
+[11:47.76] entity sets and we can still have a
+[11:50.56] person entity where that person may be
+[11:53.52] an instructor or maybe a student isn't
+[11:56.96] it that is what it is meant here that
+[11:59.24] The Entity set does not need to be
+[12:02.00] disjoined we are done with the first
+[12:04.40] basic component which is the entity set
+[12:07.36] let's now move on to the next one
+[12:09.36] attributes if you take person as an
+[12:12.28] entity what are the attributes that
+[12:14.56] person will have or the properties that
+[12:16.68] person will have for example name age
+[12:21.40] salary these are some attributes that
+[12:24.24] defines a person isn't it because
+[12:26.76] entities a real world thing or objects
+[12:29.52] so it has to be described by a set of
+[12:32.04] properties which we call as an attribute
+[12:35.52] let's see that now each entity has a
+[12:38.36] value for each of its attribute I told
+[12:41.44] you if you take me as an example my name
+[12:44.68] is different my brother's name is
+[12:46.56] different so name is the attribute where
+[12:49.80] that has a value my name will be the
+[12:52.76] value for my name attribute for me but
+[12:56.56] that's not the same for my brother my
+[12:58.72] brother name will be there in my
+[13:00.68] brother's name attribute name and that's
+[13:04.12] why I told you each entity has a value
+[13:06.52] for each of its attribute let's see an
+[13:09.12] instance or an example for instance a
+[13:12.08] particular instructor entity may have
+[13:14.84] what I'm am talking about the instructor
+[13:17.08] entity right so instructor is belonging
+[13:20.08] to the university if you take instructor
+[13:22.44] as a relation what are the attributes or
+[13:24.92] columns that instructor entity should
+[13:26.80] have it should have multiple attributes
+[13:29.20] but mainly I'm focusing on few
+[13:30.84] attributes just to explain you what it
+[13:32.76] is it should have an attribute ID it
+[13:36.24] means the instructor ID which should be
+[13:38.68] unique for each instructors so that we
+[13:41.00] can easily identify which instructor we
+[13:43.32] are referring to it should also have
+[13:45.84] name it should also have Department name
+[13:49.08] and salary I'm focusing on these four
+[13:52.04] attributes for the entity instructor so
+[13:55.04] this instructor entity will have ID as
+[13:57.96] the attribute name Department name and
+[14:01.16] salary as the attributes and each
+[14:04.32] instructor will have some value for
+[14:06.16] example one 12121 is the value for the
+[14:09.76] ID attribute for the instructor sujit so
+[14:13.08] the value is going to be sujit for the
+[14:15.08] name attribute the department is finance
+[14:18.04] so sujit is working for finance
+[14:19.92] department and that is why this value
+[14:21.92] Finance is there in the department name
+[14:24.84] and $90,000 or 90,000 Euro or 90,000
+[14:29.24] whatever it is this is the value for the
+[14:31.92] salary attribute so these four
+[14:34.32] attributes are under the instructor
+[14:36.88] entity and each instructor will have
+[14:39.64] their own set of values so what I mean
+[14:42.60] to say each entity has a value for each
+[14:45.64] of its attributes the attributes are ID
+[14:48.60] name Department name and salary and
+[14:51.20] these are the values which are unique
+[14:53.08] for each person remember multiple
+[14:55.52] instructors may have the same name or
+[14:57.64] they may be working for the same
+[14:59.20] department or they may be drawing the
+[15:01.16] same salary but there should be at least
+[15:03.76] one attribute that uniquely defines each
+[15:06.20] instructor isn't it which is this
+[15:08.28] attribute ID I hope things are clear to
+[15:11.32] you now let's now focus on the last
+[15:14.08] component in the basic components of the
+[15:16.12] ER model which is the relationship sets
+[15:19.44] I hope now you can understand what is an
+[15:21.48] entity an entity is a real world object
+[15:24.28] or a real world thing and these entities
+[15:26.64] are described by attributes isn't it how
+[15:29.52] one entity is related to other entity
+[15:32.60] that is what relationship and
+[15:34.48] relationship sets is all about let's see
+[15:37.20] that now let's take two entities
+[15:39.32] instructor entity and student entity
+[15:42.32] what I mean to say here is for the
+[15:44.28] University database if we are taking
+[15:46.60] instructor as one entity and student as
+[15:49.08] another entity student will have certain
+[15:51.12] attributes like student name student ID
+[15:53.32] student Department etc for instructor
+[15:56.56] instructor ID instructor name instructor
+[15:59.00] Department instructor salary Etc how
+[16:01.80] instructor entity and student entities
+[16:04.20] are related that is what we are talking
+[16:07.00] about in the relationship sets it is
+[16:09.84] actually an association among several
+[16:12.76] entities how instructor and student are
+[16:15.24] related that is what relationship sets
+[16:17.60] are all about example advises instructor
+[16:21.28] and student are related with advises
+[16:24.24] relationship so instructor advises
+[16:27.16] student other examples include borrows
+[16:30.52] what does it mean let's take banking
+[16:33.12] system as an example customer Loan
+[16:36.40] account so customer borrows loan for
+[16:39.56] example so customer is one entity loan
+[16:42.60] is another entity so customer can be
+[16:45.24] related with loan using borrows
+[16:48.16] relationship teachers instructor class
+[16:51.64] or section instructor teaches that
+[16:54.48] particular class isn't it so these are
+[16:57.16] the relationship sets I hope now you can
+[17:00.12] understand what is a relationship set
+[17:02.28] this is actually an association among
+[17:04.52] several entities so what I mean to say
+[17:07.16] is a relationship set is a set of
+[17:09.84] relationships of same type because
+[17:12.96] whenever we say it is a set relationship
+[17:16.36] set or entity set it is a set of
+[17:19.36] relationship of same type this is
+[17:22.04] important let's see the next point so
+[17:24.68] this relationship set is actually a
+[17:27.44] subset of E 1 E2 up to e n such that
+[17:32.20] this E1 belongs to Capital E1 this E2
+[17:35.52] belongs to Capital E2 and en n belongs
+[17:38.76] to capital N is a relationship set what
+[17:42.60] do we mean by this if you take R is
+[17:45.80] actually a relationship set and this is
+[17:48.44] a subset where this lowercase E1 is a
+[17:51.80] relationship that is belonging to the
+[17:54.32] entity set E1 so lower case E2 is the
+[17:58.12] relationship belonging to entity set
+[18:00.44] Capital E2 so this is how a relationship
+[18:03.60] is actually established I know things
+[18:05.64] will be unclear at this stage no worries
+[18:07.88] I will elaborate about this point in the
+[18:09.84] next presentation so obviously an entity
+[18:13.32] set is the part of an entity that plays
+[18:16.76] in a relationship the entity's role for
+[18:20.40] example instructor advises student so
+[18:24.40] instructor is taking the part of the
+[18:26.80] advisor relationship right so the part
+[18:29.40] of an entity instructor plays in a
+[18:31.88] relationship is the entity's role so
+[18:34.92] instructor is playing advises
+[18:37.64] relationship or the advises role with
+[18:40.32] the student entity so that's why I
+[18:42.48] mentioned the relationship means it is
+[18:45.04] the part of an entity plays in a
+[18:48.20] relationship is actually the entity's
+[18:51.00] role the entity's role may be advises or
+[18:54.00] borrows or teachers or anything I hope
+[18:57.16] things are clear to you now we are done
+[18:59.20] with the relationship sit as well let me
+[19:01.88] now show you the basic components can
+[19:04.68] you see here so if you take this is an
+[19:07.12] entity this entity is described by
+[19:09.76] attributes such as ID name and salary I
+[19:13.28] told you each entity will be having a
+[19:15.44] unique ID isn't it each person will be
+[19:17.56] having a unique value so this is a
+[19:19.44] primary key attribute here and this is
+[19:22.12] the student entity that is described by
+[19:24.84] ID name and credits and how instructor
+[19:28.48] is related with student with the
+[19:30.72] association advises instructor advises
+[19:34.92] student and that's why I told you these
+[19:37.68] three entity sets attributes and
+[19:40.44] relationship sets are the three basic
+[19:42.96] components of er model so what we have
+[19:45.68] covered in this presentation the ER
+[19:47.88] model the basic components The Entity
+[19:51.68] entity sets attributes and relationship
+[19:55.20] sets I hope the session is informative
+[19:57.76] and thank you for watching
+[20:00.78] [Applause]
+[20:02.97] [Music]

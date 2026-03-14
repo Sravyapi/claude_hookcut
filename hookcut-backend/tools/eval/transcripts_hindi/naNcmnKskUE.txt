@@ -1,0 +1,306 @@
+[0:00.16] Whether you're just starting to code or
+[0:02.00] already have a bit of experience, one
+[0:03.92] question keeps coming up. What
+[0:05.52] programming languages should you learn
+[0:07.20] in 2026? You've probably seen headlines
+[0:10.08] saying AI is taking over, junior
+[0:12.24] developers are being replaced, and
+[0:14.16] companies only want seniors. Now, let's
+[0:16.56] break down what's actually happening
+[0:18.40] with real job market data, clear
+[0:20.96] direction, and a list of languages that
+[0:23.04] can help you land a job faster. In this
+[0:25.52] video, we're diving into the top
+[0:27.52] programming languages to learn in 2026,
+[0:30.24] especially if you're a junior developer
+[0:32.16] or someone trying to level up. We'll
+[0:34.40] look at what the job market is asking
+[0:36.16] for, how AI is changing the game, and
+[0:38.48] what languages are opening doors.
+[0:43.44] Now, one quick thing before we jump in.
+[0:45.68] Learning a single programming language
+[0:47.44] by itself won't magically get you a job.
+[0:50.08] Most roles expect you to know more than
+[0:52.32] one language, be familiar with a few
+[0:54.48] frameworks and tools, show problem
+[0:56.64] solving skills, and actually build
+[0:58.80] things. But all of that still starts
+[1:01.04] with the same question. What programming
+[1:03.20] languages should you learn first? And
+[1:05.20] that's exactly what we're going to
+[1:06.48] answer today. Let's start with the
+[1:08.56] elephant in the room. Are junior
+[1:10.24] developer jobs gone? The short answer is
+[1:12.64] no, but the bar has definitely gone up.
+[1:15.52] The last few years were rough. Between
+[1:17.68] mass layoffs in 2022 and 2023, economic
+[1:21.44] uncertainty, and companies freezing
+[1:23.60] hiring, junior developers were hit the
+[1:25.76] hardest. A lot of people looked at the
+[1:27.84] market and thought, "That's it. Entry
+[1:29.68] level is dead." But that's not what the
+[1:31.60] data shows anymore. By the second half
+[1:33.68] of 2025, we started seeing real signs of
+[1:36.56] a rebound. According to a report by
+[1:38.56] Litecast, job listings for developers
+[1:41.20] with 0 to 3 years of experience have
+[1:43.92] gone up by 47% since October 2023.
+[1:48.08] That's a big shift. In the US alone,
+[1:50.56] there are currently around 24,000 open
+[1:53.20] entry-level software engineering
+[1:54.88] positions listed on indeed.com. And that
+[1:57.60] number doesn't even include internships
+[1:59.60] or startups hiring outside the big job
+[2:02.32] boards. Globally, the picture is even
+[2:04.24] more interesting. Europe, for example,
+[2:06.48] is facing a serious tech talent
+[2:08.80] shortage. About 57% of companies report
+[2:12.08] that they cannot find enough qualified
+[2:14.24] developers, and the EU needs nearly 10
+[2:16.96] million more tech workers by 2030. So,
+[2:20.00] yes, companies are hiring, but here's a
+[2:22.08] catch. They're not hiring juniors the
+[2:24.24] way they used to. Most roles today
+[2:26.56] expect you to be productive much faster.
+[2:29.12] Companies assume developers are using AI
+[2:31.36] tools, which means they're not looking
+[2:33.04] for people who can just copy and paste
+[2:34.88] code without understanding what they are
+[2:37.04] building. They want developers who
+[2:39.04] understand code, can fix problems, and
+[2:41.20] can make good decisions even with AI in
+[2:43.52] the loop. That's why fundamentals matter
+[2:45.84] more than ever. And by fundamentals, I
+[2:48.08] don't mean just syntax. I mean actually
+[2:50.24] understanding your programming language
+[2:52.00] in depth beyond quick tutorials. I mean
+[2:54.72] knowing core data structures, things
+[2:56.64] like arrays, lists, dictionaries,
+[2:59.36] stacks, cues, not in theory, but knowing
+[3:02.32] when and why to use them. You should
+[3:04.64] also know how to debug your code. You
+[3:06.64] should know your basic design patterns,
+[3:08.64] version control, databases, and the core
+[3:11.44] concepts that software engineering
+[3:13.36] students learn at universities. You
+[3:15.52] don't need a computer science degree,
+[3:17.04] but you do need that level of
+[3:18.40] understanding. Now, with that in mind,
+[3:20.32] let's talk about the programming
+[3:21.68] languages that will matter the most in
+[3:24.08] 2026. Let's start with Python. Python
+[3:27.28] isn't just popular, it's everywhere.
+[3:29.60] It's used for AI, machine learning, data
+[3:32.16] analysis, backend development,
+[3:34.32] automation, and scripting. According to
+[3:36.48] the 2025 Stack Overflow developer
+[3:39.44] survey, about 58% of developers use
+[3:42.16] Python, and it grew by 7 percentage
+[3:44.56] points in a single year. That's the
+[3:46.56] largest increase of any major
+[3:48.32] programming language. On indeed.com,
+[3:50.56] there are currently over 100,000 open
+[3:53.12] Python related jobs in the US alone, and
+[3:55.52] that number is even higher globally. The
+[3:58.00] great thing about Python is that it's
+[3:59.76] easy to learn. You can start writing
+[4:01.68] useful real world code very quickly
+[4:03.92] without fighting the language. That
+[4:05.92] means you spend less time on syntax and
+[4:08.32] more time actually building things,
+[4:10.32] which is exactly what employers care
+[4:12.32] about. And if you're getting started,
+[4:14.00] you don't have to look far. I have a
+[4:15.84] full 6-hour Python tutorial right here
+[4:18.40] on this channel that's been watched by
+[4:20.08] over 46 million people. There's also a
+[4:22.64] shorter 1-hour version if you want to
+[4:24.56] give it a try. And if you want to go
+[4:26.08] deeper and master Python, I have a full
+[4:28.48] Python course for you on my website.
+[4:30.40] I've put all the links below this video.
+[4:32.72] If your goal is to break into tech,
+[4:34.72] especially working as an AI or machine
+[4:37.20] learning engineer, Python is one of the
+[4:39.52] smartest first moves you can make. Next
+[4:42.00] up is JavaScript and its powerful big
+[4:44.56] brother TypeScript. These are the
+[4:46.40] languages of the web. If you want to
+[4:48.16] build websites, dashboards, or full
+[4:50.48] products that people actually use, you
+[4:52.72] must learn JavaScript. According to the
+[4:54.88] 2025 Stack Overflow developer survey,
+[4:57.92] about 66% of developers use JavaScript,
+[5:01.04] making it the most widely used language
+[5:03.12] in the world. But here's the thing. Most
+[5:05.36] professional teams today don't just use
+[5:07.44] JavaScript anymore. They use TypeScript.
+[5:09.84] Typescript builds on JavaScript by
+[5:12.08] adding types which helps catch box
+[5:14.24] earlier makes large code bases easier to
+[5:16.88] maintain and improves developer
+[5:18.96] productivity. That's why it's become the
+[5:21.28] default choice for serious production
+[5:23.36] grade web applications. In fact,
+[5:25.28] TypeScript is now used by the majority
+[5:27.68] of modern web teams and it continues to
+[5:30.24] grow faster than JavaScript itself. So,
+[5:32.80] if your goal is to build and ship
+[5:34.88] complete web products, JavaScript and
+[5:37.04] TypeScript are not optional skills.
+[5:39.04] They're foundational. And just like with
+[5:41.12] Python, I've got you covered. I have
+[5:43.04] step-by-step tutorials for JavaScript
+[5:45.12] and TypeScript right here on this
+[5:46.80] channel, watched by millions of
+[5:48.48] developers. And if you want to go
+[5:49.92] deeper, I have full courses that prepare
+[5:52.40] you for real world projects. Again, all
+[5:54.64] the links are down below. Next, we have
+[5:56.88] Java and C. These languages don't get as
+[5:59.92] much hype as Python or JavaScript, but
+[6:02.16] they power a massive part of the
+[6:04.32] software industry. Java has been around
+[6:06.56] for decades and is still everywhere.
+[6:08.40] It's often used by large companies,
+[6:10.56] financial platforms, government systems,
+[6:13.12] and high-scale enterprise applications.
+[6:15.60] And because these systems don't get
+[6:17.44] rewritten every two years, companies
+[6:19.52] need developers who can maintain and
+[6:21.76] extend them long-term. That's why Java
+[6:24.48] job demand stays consistently high. In
+[6:27.20] the US alone, there are currently over
+[6:29.28] 90,000 open Java positions on indid.com.
+[6:32.88] If you're aiming for stability, backend
+[6:35.04] roles, or larger organizations, Java is
+[6:37.76] a very safe bet. C plays a very similar
+[6:40.80] role in the Microsoft ecosystem. It's
+[6:43.20] heavily used for enterprise
+[6:44.56] applications, internal tools, desktop
+[6:47.12] software, and cloud services on Azure.
+[6:49.84] It also dominates game development
+[6:51.84] through Unity, which is still one of the
+[6:53.84] most widely used game engines in the
+[6:56.00] world. Now, just like Java, C# jobs are
+[6:58.88] steady, well- paid, and less affected by
+[7:01.36] short-term trends. Now, let me be clear.
+[7:03.76] These languages do have a steeper
+[7:05.84] learning curve than Python or
+[7:07.36] JavaScript. You'll deal with stricter
+[7:09.44] typing, more structure, and more
+[7:11.76] concepts upfront. But that's also why
+[7:14.16] companies value developers who know them
+[7:16.24] well. If you're the kind of person who
+[7:18.16] enjoys structure, backend logic, and
+[7:20.56] building systems that last for years,
+[7:23.04] Java or C can be a very smart long-term
+[7:26.08] investment. Again, I have tutorials and
+[7:28.40] full courses if you're interested. Now,
+[7:30.56] let's talk about a language that almost
+[7:32.32] no one brags about, but everyone ends up
+[7:34.56] using, SQL. It's not flashy, it's not
+[7:37.36] trendy, but every serious application
+[7:39.68] runs on data, and that data lives in a
+[7:42.08] database. things like user accounts,
+[7:44.40] orders, payments, logs, analytics, and
+[7:47.04] so on. At some point, all of it touches
+[7:49.44] SQL. That's why SQL shows up in more job
+[7:52.56] postings than almost any other skill. In
+[7:55.28] the US alone, it appears in over 100,000
+[7:58.32] developer job listings, often alongside
+[8:00.72] Python, Java, JavaScript, or C#. And
+[8:03.60] here's the key point. You don't need to
+[8:05.20] be a database expert. But if you're a
+[8:07.20] developer who can read data, write
+[8:09.12] queries, and understand how databases
+[8:11.60] work, you instantly become more useful
+[8:13.92] on the job. This is especially true for
+[8:16.24] junior developers. Most beginners focus
+[8:19.04] only on their main language and ignore
+[8:21.20] data. But the moment you understand SQL,
+[8:23.76] you can go beyond dummy to-do apps. You
+[8:26.16] can build more realistic projects, debug
+[8:28.88] real problems, and actually understand
+[8:31.12] what your application is doing behind
+[8:32.88] the scenes. It's one of the highest
+[8:34.80] return on investment skills you can
+[8:36.72] learn as a developer and it pays off
+[8:38.96] immediately. Before we wrap up, let's
+[8:41.36] quickly talk about a few bonus
+[8:43.12] languages. These are languages you don't
+[8:45.20] have to learn, but in the right context,
+[8:46.96] they can be very powerful. Go or Golang
+[8:49.76] is exploding in the cloud and
+[8:51.44] infrastructure world. It's heavily used
+[8:53.44] for microservices, DevOps, and back-end
+[8:56.40] systems where performance and simplicity
+[8:58.88] matter. If you're interested in cloud
+[9:00.88] platforms, distributed systems, or
+[9:03.04] back-end infrastructure, Go is a strong
+[9:05.60] practical choice. Rust is one of the
+[9:08.08] most loved languages year after year.
+[9:10.40] It's designed for performance, safety,
+[9:12.56] and reliability, which makes it popular
+[9:14.80] in areas like systems, programming,
+[9:17.44] security, and high performance software.
+[9:20.00] It's harder to learn, but very rewarding
+[9:22.08] if that's your niche. For mobile
+[9:24.08] developers, the choices are clear. Swift
+[9:26.40] is the go-to language for iOS
+[9:28.32] development and Cotlin is the modern
+[9:30.88] standard for Android. If your goal is to
+[9:33.04] build mobile apps professionally, these
+[9:35.20] are languages that actually get you
+[9:36.88] hired. The key thing to understand here
+[9:38.88] is that these languages are goaldriven
+[9:41.44] choices. If you already know what you
+[9:43.44] want to build, like cloud systems,
+[9:45.28] low-level software, or mobile apps, they
+[9:47.68] make a lot of sense. If not, it's better
+[9:50.00] to focus on one of the core languages we
+[9:52.24] talked about earlier. So, here's the
+[9:54.08] bottom line. There's no single best
+[9:56.24] programming language, but there is a
+[9:58.00] best language for you based on the kind
+[10:00.00] of work you want to do and the jobs
+[10:01.68] you're aiming for. If you're just
+[10:03.28] starting out or trying to break into
+[10:05.20] tech in 2026, the safest path looks like
+[10:08.16] this. Start with Python or JavaScript
+[10:10.72] with TypeScript. They're versatile, in
+[10:13.12] demand, and they open the most doors
+[10:15.36] early on. Once you have got one of those
+[10:17.28] down, add SQL. That combination alone
+[10:20.16] already puts you ahead of a huge number
+[10:22.00] of junior developers. From there, you
+[10:24.24] can specialize, whether that's back end,
+[10:26.24] front end, mobile, cloud, or enterprise
+[10:28.80] development. And remember, learning a
+[10:31.12] language isn't the finish line. What
+[10:33.20] actually gets you hired is being able to
+[10:35.44] build things, solve problems, and show
+[10:37.68] that you understand how software works,
+[10:40.00] not just how to follow tutorials. And
+[10:42.16] that's exactly why I created my road
+[10:44.24] maps. I've put together road maps for
+[10:46.48] various in- demand engineering roles,
+[10:48.64] back-end developer, front-end developer,
+[10:50.56] full stack, and so on. These road maps
+[10:52.72] show you exactly what skills to learn
+[10:54.72] and in what order. Each road map comes
+[10:57.20] with a downloadable PDF so you're not
+[10:59.36] guessing or jumping between random
+[11:01.28] topics. You can find all of these in the
+[11:03.44] road maps playlist right here on this
+[11:05.36] channel. If you follow a clear road map,
+[11:07.76] learning stops feeling overwhelming and
+[11:10.24] starts to feel achievable. Now, I'm
+[11:12.48] curious which language do you want to
+[11:14.16] learn after this video? Let me know in
+[11:16.16] the comments below. I actually read the
+[11:18.16] comments and it helps me decide what
+[11:20.32] tutorials and road maps to make next.
+[11:22.72] And finally, if you found this video
+[11:24.32] helpful, give it a like and subscribe
+[11:26.40] for more helpful videos.

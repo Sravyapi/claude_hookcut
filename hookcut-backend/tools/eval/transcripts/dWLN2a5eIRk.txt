@@ -1,0 +1,129 @@
+[0:06.00] A few years ago, a fast growing
+[0:08.32] e-commerce startup had a strange
+[0:10.32] problem. Every weekly review meeting
+[0:12.88] ended the same way in arguments. Sales
+[0:16.08] team bought transaction log. Marketing
+[0:18.40] shared customer list and operation
+[0:20.40] showed inventory files. Everyone was
+[0:22.64] looking at the same data yet every team
+[0:25.20] reached a complete different
+[0:26.72] conclusions. Sales claimed demand was
+[0:29.12] exploding and pushing for more stock.
+[0:31.36] Finance warned about delayed payments
+[0:33.52] while logistic blamed suppliers. Hours
+[0:36.00] passed as spreadsheets filled the
+[0:37.92] screens, but the answer was still buried
+[0:40.40] somewhere inside thousands of rows. The
+[0:43.04] meeting wasn't long because the
+[0:44.80] questions were complicated. They were
+[0:46.80] long because no one could actually ask
+[0:49.28] the data the right question. Eventually,
+[0:52.24] the company realized something
+[0:53.68] important. The problem wasn't the data.
+[0:56.64] Spreadsheets were great for storing
+[0:58.48] numbers, but they struggled to answer
+[1:00.56] the real business questions. Leaders
+[1:02.96] wanted to know which customers spent the
+[1:04.96] most last quarter, which product
+[1:06.96] category drove the most revenue, and
+[1:09.36] exactly where the company was losing
+[1:11.20] sales. Filtering manually took hours,
+[1:13.60] patterns stayed hidden, and decisions
+[1:15.92] often relied on guesses. What they
+[1:18.16] actually needed wasn't more
+[1:19.52] spreadsheets. They needed a way to talk
+[1:21.92] directly to the data and get answers
+[1:24.40] instantly. And that's where SQL came in.
+[1:27.84] SQL, short for structured query
+[1:29.92] language, is the language used to
+[1:32.00] communicate with databases. Instead of
+[1:34.40] scrolling endlessly through
+[1:35.92] spreadsheets, SQL lets you ask precise
+[1:38.64] questions and receive clear answers in
+[1:40.88] seconds. You can identify the top
+[1:43.12] spending customers, calculate total
+[1:45.04] sales by region, or discovering which
+[1:47.28] products perform best during the
+[1:49.12] specific period. That's why SQL is
+[1:51.44] considered one of the most essential
+[1:53.12] skills in today's datadriven world. Data
+[1:55.68] analysts use it, developers rely on it,
+[1:58.16] and product managers, marketers, and
+[2:00.40] operation teams use SQL to analyze real
+[2:03.52] business data. Because in reality, most
+[2:05.76] company data doesn't live in Excel
+[2:07.76] files. It lives inside databases. If you
+[2:10.48] want to start learning this powerful
+[2:12.32] skill, there is a great beginner option.
+[2:14.88] Kill by SimplyLearn offers a course
+[2:17.20] called Introduction to SQL. It's
+[2:19.36] designed for beginners who want to
+[2:20.88] understand databases and start writing
+[2:23.12] queries without getting overwhelmed. The
+[2:25.28] course includes self-paced video
+[2:27.12] lessons, making it easy to learn
+[2:29.04] alongside college work or other
+[2:31.20] commitments. Once you have completed it,
+[2:33.36] you'll also receive a sharable
+[2:34.96] completion certificate that you can add
+[2:36.88] in your LinkedIn profile or resume. The
+[2:39.20] course begins with SQL fundamentals
+[2:41.12] helping you understand how relational
+[2:42.96] databases store and organize data using
+[2:45.92] tables, rows, and columns. From there
+[2:48.40] you will learn about database
+[2:50.00] relationships including primary keys and
+[2:52.32] foreign keys and how different tables
+[2:54.64] connect with each other. Next comes the
+[2:56.64] most important part which is writing SQL
+[2:59.12] queries. Commands like select, where and
+[3:02.32] order by allows you to retrieve, filter
+[3:04.64] and organize data efficiently. With
+[3:07.20] these commands, you can answer questions
+[3:09.04] such as which customer placed order this
+[3:11.28] month, which products generate the
+[3:13.28] highest review, or even which region has
+[3:15.60] the most sales. You'll also learn
+[3:17.84] aggregation functions like count, sum,
+[3:20.56] average, minimum, and maximum to
+[3:22.96] calculate insights such as total sales
+[3:25.44] or average order value. One of the most
+[3:28.00] powerful topics covered in SQL are joins
+[3:30.72] which allows you to combine information
+[3:32.64] from multiple table such as connecting
+[3:35.12] customer data with order data to
+[3:37.60] understand purchasing behavior. Another
+[3:40.48] great part of this course is that it's
+[3:42.56] handson instead of just learning theory.
+[3:45.20] You'll practice writing SQL queries and
+[3:47.52] gradually move from simple data lookups
+[3:49.92] to more realistic analysis. The course
+[3:52.80] is perfect for students exploring data
+[3:55.04] careers, fresh graduates entering the
+[3:57.20] tech industry, analysts and developers
+[3:59.52] working with databases, or anyone
+[4:01.68] curious about how real data system
+[4:03.84] works. You don't need any prior SQL
+[4:06.16] knowledge to start. In fact, SQL is one
+[4:08.72] of the first technical skills recruiters
+[4:11.12] test during data and analytics
+[4:13.28] interviews. So learning it early can
+[4:15.68] give you a real advantage. Today
+[4:18.24] companies generate millions of data
+[4:20.08] records every day. But raw data alone
+[4:22.40] isn't useful. The real value comes from
+[4:24.96] people who know how to extract insights
+[4:27.28] from it. SQL gives you the ability to
+[4:30.32] transform you from someone who simply
+[4:32.64] looks at the spreadsheets into someone
+[4:34.56] who can ask questions, explore data and
+[4:37.20] uncover meaningful answers. And this
+[4:40.00] free SQL course from simply learn
+[4:42.08] skillup is a great place to start
+[4:43.92] building that skill. If you're curious
+[4:46.00] about how data really works behind the
+[4:48.16] scenes, click the link in the
+[4:49.68] description. Enroll for free. Take your
+[4:51.84] first step towards becoming someone who
+[4:53.92] doesn't just look at data but truly
+[4:56.24] understand

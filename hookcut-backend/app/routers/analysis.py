@@ -55,6 +55,13 @@ async def start_analysis(
     """
     rate_limiter.check(user_id, "analyze", limit=ANALYZE_RATE_LIMIT, window_seconds=ANALYZE_RATE_WINDOW, request=request)
 
+    # Interview mode is Pro-only
+    if req.interview_mode:
+        from app.models.user import User
+        user = db.get(User, user_id)
+        if not user or user.plan_tier == "free":
+            raise HTTPException(status_code=403, detail="Interview Mode is a Pro feature")
+
     try:
         result = AnalyzeService.start_analysis(
             db=db,
@@ -62,6 +69,8 @@ async def start_analysis(
             youtube_url=req.youtube_url,
             niche=req.niche,
             language=req.language,
+            interview_mode=req.interview_mode,
+            speaker_count=req.speaker_count,
         )
     except HookCutError as e:
         raise HTTPException(status_code=e.status_code, detail=e.detail)
@@ -107,6 +116,7 @@ def get_hooks(
                 algorithm_dynamics=AlgorithmDynamics(**(h.algorithm_dynamics or {})),
                 viewer_psychology=ViewerPsychology(**(h.viewer_psychology or {})),
                 improvement_suggestion=h.improvement_suggestion or "",
+                primary_speaker=h.primary_speaker,
                 is_composite=h.is_composite,
                 is_selected=h.is_selected,
             )

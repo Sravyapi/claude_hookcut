@@ -1,0 +1,411 @@
+[0:03.24] so let's continue with the two pointer
+[0:05.00] and sliding window playlist on the ders
+[0:06.80] a toz DSC course but we was starting off
+[0:09.20] hey welcome back to the channel I hope
+[0:10.68] you guys are doing extremely well so the
+[0:12.72] problem that we will be solving today is
+[0:15.64] number of substrings containing all the
+[0:18.04] three characters so what is the problem
+[0:20.48] stating it's stating that you'll be
+[0:22.76] given a string and the string will be
+[0:25.00] containing a b c nothing apart from it
+[0:29.60] only these three characters now your
+[0:32.08] task is to figure out the number of
+[0:34.00] substrings now what is the substring any
+[0:36.28] consecutive portion of the string which
+[0:38.72] has all the three characters three
+[0:41.44] characters means a b and c for an
+[0:44.68] example if I pick up this particular
+[0:46.36] substring BBA it has two characters b
+[0:49.68] and a but it doesn't has the third which
+[0:51.96] is the character C so this cannot be
+[0:54.56] considered for an example if I pick up
+[0:56.96] this substring which is b b a c this can
+[1:00.84] be considered because it has a b c in it
+[1:04.40] so you have to figure out the total
+[1:06.52] number of substrings substring obviously
+[1:09.32] not this is the second no no yes this is
+[1:14.52] the first substring so I have one this
+[1:18.36] is also possible and this is also
+[1:20.56] possible so I have three substrings
+[1:23.04] correct okay after that I have this one
+[1:27.80] not possible this one not possible this
+[1:29.68] one
+[1:30.48] possible this one possible this one
+[1:33.64] possible so again have three 3 + 3 6
+[1:37.76] okay this one no this one no this one
+[1:41.00] yes this one yes another two 6 + 2 8
+[1:46.28] this one no this one no this one yes
+[1:49.00] because it has all the three characters
+[1:51.08] so one 8 + 1 9 so the answer will be
+[1:54.44] nine and this is what you'll have to
+[1:56.12] return so again what is the extreme name
+[1:58.96] solution that you can think go I just
+[2:00.80] did it try out all the substrings can I
+[2:04.12] do it very simple I'll be standing at
+[2:08.16] here and then I'll be expanding
+[2:09.64] expanding expanding expanding I'll keep
+[2:12.48] a count of the number of characters so
+[2:15.88] what I can do is I can straight away
+[2:18.48] start I equal to Zer and I can go ahead
+[2:21.16] till end you know how to iterate on all
+[2:23.80] the substrings we already have done it
+[2:25.60] so many times J will be from I to n
+[2:29.44] stand
+[2:30.80] and we have to keep a track of all the
+[2:33.24] seen characters maybe what I can do is I
+[2:35.92] can keep a hash array of size three
+[2:37.72] because we only have a b and c and I can
+[2:41.16] assign it initially to be zero so what
+[2:44.24] I'll do is Hash of s of J you can
+[2:49.84] subtract the smaller a from it so that a
+[2:52.48] resembles to zero B resembles to one C
+[2:55.24] resembles to two right and what you can
+[2:57.76] do is maybe you can just mark it as one
+[3:00.56] quite simple that means you have seen
+[3:02.72] that particular character once this is
+[3:05.04] done can I write he listen if hash of
+[3:10.76] 0 plus hash of
+[3:15.12] 1+ hash of two if that's equivalent to
+[3:18.88] three which means all the three
+[3:20.76] characters are there and if that is the
+[3:22.52] case this can be added to my answer
+[3:25.12] because this is definitely a substring
+[3:27.72] this is definitely a substring can I say
+[3:29.56] this and eventually I can end the PA
+[3:31.52] loop and the count will be zero can I
+[3:34.80] return this yes I can return this or you
+[3:38.20] can print it whatever you wish to what
+[3:40.40] will be the time complexity can I say
+[3:42.16] that the time complexity will be V go of
+[3:45.12] n Square because like near about n
+[3:47.60] square if not exact near about n square
+[3:50.64] and what about the space complexity I'm
+[3:52.72] using a hash map sorry hash aray but
+[3:55.80] that is a size three that's as good as
+[3:58.60] we go of one so this will be the time
+[4:01.20] complexity can I optimize The Brute
+[4:03.48] Force yes I can not by a significant
+[4:06.68] margin I'll show you a simple trick and
+[4:09.96] that trick is what we'll be using to
+[4:12.00] derive the most optimal solution okay
+[4:15.04] tell me one thing you started from here
+[4:18.72] and you said that the B substring
+[4:21.20] doesn't have three characters then you
+[4:23.16] expanded and added the next B and you
+[4:25.64] said BB is not then you expanded and
+[4:29.24] added a a and you say no then you
+[4:32.32] expanded and added C and you said yes
+[4:36.92] this is the moment you said yes this is
+[4:40.48] the moment the if will say yes now tell
+[4:43.48] me one thing if I know that this
+[4:46.76] possible substring has all the three
+[4:49.92] characters do I need to Traverse any
+[4:52.88] further no I don't need to because even
+[4:55.56] if I add B even if I add a those
+[4:58.68] substrings which will be formed in
+[5:00.40] future by adding will also be a valid
+[5:04.12] substring so can I say the moment I get
+[5:07.48] a valid substring every substring Beyond
+[5:11.44] this will also be valid I can so can I
+[5:14.60] see if I if I get this here I can
+[5:17.44] straight away add three to my answer and
+[5:19.36] I don't need to go ahead I can straight
+[5:21.36] away add three to my answer and how I
+[5:23.88] can do it it's very simple if you write
+[5:26.68] down the index number 0 1 2 3 4 5 this
+[5:29.68] string length is six you figured it out
+[5:32.52] at the third index that it is possible
+[5:35.92] so you can say 6 minus third index and
+[5:38.80] you can straight away add that to your
+[5:40.48] answer so a simple optimization will be
+[5:42.96] I can remove this count and I can write
+[5:45.88] Hey listen hey count can you straight
+[5:48.80] away add count plus whatever is the size
+[5:51.56] of the string minus J you can figure out
+[5:53.88] the size of the string and after that
+[5:56.68] please break out please break out there
+[5:59.96] is no need to add this B there's no need
+[6:01.80] to add this a you can straight away now
+[6:04.88] go ahead and start from this B this's ba
+[6:09.12] a b a c and again it will be valid over
+[6:11.88] here so you can again add some more
+[6:13.80] answers got it so this is a slight
+[6:16.60] optimization will that improve the time
+[6:18.68] complexity yes for certain test cases
+[6:21.40] but not for the worst imagine I give you
+[6:24.48] a string like a a a a it still Travers
+[6:28.24] till the end right because because you
+[6:30.12] don't have any valid combination where
+[6:32.96] the break will be executed this is a
+[6:35.48] shuttle optimization I did it because I
+[6:37.80] want to explain you the optimal solution
+[6:41.20] so I'm looking to optimize my previous
+[6:43.04] solution the previous solution was
+[6:44.76] taking n square if I'm looking to
+[6:47.52] optimize I'm definitely looking to go
+[6:50.36] towards the direction of B go of n the
+[6:53.04] problem has substrings like two pointer
+[6:56.24] right so I'll start thinking of the two
+[6:58.68] pointer algorithm but now the question
+[7:01.24] arises I need to make sure I have all
+[7:03.92] the three characters so I need to make
+[7:06.96] sure that I get a window which has all
+[7:10.32] the three characters right that's how I
+[7:13.28] have to think for sliding window okay
+[7:16.76] but I'll have to figure out number I'll
+[7:18.96] have to count it's not longest that I'll
+[7:21.32] expand or string I have to count so I'm
+[7:24.68] looking to count and there are
+[7:27.16] substrings I know one thing
+[7:30.04] with every index there are a bunch of
+[7:32.08] substrings that start with b this is a
+[7:34.60] substring bb bb a BB a c BB this this
+[7:38.52] and then with this B this one this one
+[7:40.28] this one with every character there is a
+[7:43.76] substring there are multiple substrings
+[7:45.80] that start I'll do the reverse I'll do
+[7:49.48] the reverse I'll
+[7:51.40] say with every
+[7:57.64] character there is
+[8:00.20] a substring that
+[8:01.96] ends with every character there is a
+[8:05.24] substring that ends I can do it from the
+[8:08.60] front as well but I will do for the end
+[8:11.72] for a frontward implementation you'll
+[8:15.20] understand at the end uh with every
+[8:18.40] character there is a substring that ends
+[8:20.92] what does that mean with the c I can say
+[8:24.04] that this is a substring where this is
+[8:27.28] the last character this is a substring
+[8:30.28] where C is the last character this is a
+[8:32.32] substring where C is the last character
+[8:34.40] this is a substring where C is the last
+[8:36.24] character okay so I know how to access
+[8:40.08] uh every substring that ends at any
+[8:42.84] given character okay so now I'll try to
+[8:46.68] figure out okay listen just just for the
+[8:49.76] sake of understanding if I'm standing at
+[8:52.80] this B and I'm asking you hey what is
+[8:57.72] the minimal length what is the minimal
+[9:00.84] length of the substring that has all the
+[9:03.92] three characters you will be like this
+[9:07.40] one again please keep it in mind that
+[9:11.16] you should be ending at the this B so
+[9:14.32] you cannot take anything beyond this you
+[9:16.32] have to look before it so I'm very sure
+[9:18.96] that this particular substring has all
+[9:21.28] the three characters and this is the
+[9:22.76] minimum window we can have this is the
+[9:25.20] minimum window we can have we can have
+[9:27.64] this minimum window can I say this is
+[9:30.24] one substring right how many more
+[9:33.44] substrings can I have I cannot add in
+[9:36.08] the front because I'm just looking for
+[9:38.12] substrings that end at this B that end
+[9:41.80] at this B so I cannot add it in the
+[9:44.04] front but I can add in the back I
+[9:46.96] already have one I can still expand it I
+[9:49.44] can still expand it the same logic that
+[9:52.24] we did in the Brute Force the
+[9:53.44] optimization I can do an expansion so
+[9:56.56] this is what I will try to do for every
+[9:59.84] for every character I'll try to figure
+[10:02.56] out the minimum window if I can figure
+[10:05.56] out the minimum window I know one thing
+[10:08.36] this is going to be one this is going to
+[10:09.80] be two this is going to be three that's
+[10:11.84] nothing but if I write down 0 1 2
+[10:16.28] basically index numbers this is the
+[10:18.60] second index and if this is the minimum
+[10:23.56] minimum how many substrings can you get
+[10:26.84] that has all the three characters where
+[10:29.00] basically Bally it ends with this B so
+[10:31.24] ACB is one this is another and this is
+[10:34.64] another correct ACB this one and this
+[10:38.40] one so I have three which is nothing but
+[10:42.76] index + 1 2 + 1 three correct let's try
+[10:48.04] to expand this logic and let's see how I
+[10:51.52] can figure it out I'll tell you Way as
+[10:55.36] of now just understand what's my thought
+[10:58.24] process so what I will do is I'll
+[11:01.56] straight away take a hashmap and I'll
+[11:04.08] keep a c equal to minus1 -1 = to
+[11:10.40] minus1
+[11:11.96] okay and I'll start
+[11:14.44] iterating I'll write down the indexes as
+[11:16.56] well 0 1 2 3 4 5 you'll understand don't
+[11:21.12] worry let's start it reading add the
+[11:24.16] character B first thing you'll do is
+[11:26.48] you'll update this and you'll say this
+[11:28.32] is the at the B was last seen this is
+[11:33.48] very important was last seen at the
+[11:36.92] index zero
+[11:39.12] okay tell me one thing for B if this is
+[11:44.04] the last index I have to look on the
+[11:46.24] left I'll have to look on the left right
+[11:49.64] to get a valid window and I don't see it
+[11:54.12] because I don't have a a I don't have a
+[11:57.04] c I don't see it
+[12:00.52] not an issue we will straightforward go
+[12:03.40] to the next one I again have a b i don't
+[12:08.00] I just do one thing I'll update this to
+[12:10.28] index
+[12:12.64] one but do I see a and see no it's still
+[12:16.68] minus one so thereby three characters
+[12:19.84] are not
+[12:21.16] possible let's move ahead this that's an
+[12:24.56] a update a to index 2
+[12:30.56] perfect but still there is no C so I
+[12:34.20] cannot have a window let's go to the C
+[12:37.44] now this is the moment you start
+[12:39.32] understanding you see a c and you update
+[12:41.56] it to three now tell me one thing tell
+[12:45.60] me one thing if you're standing at C and
+[12:47.68] you have a you have B you have C how do
+[12:50.80] you recognize that this is the minimal
+[12:54.52] window how do you recognize that this is
+[12:57.16] the minimal window which has all the
+[12:59.52] three characters you basically look over
+[13:03.56] all the last seen values and you see
+[13:06.36] that b is at the index one thereby if
+[13:10.56] you start from B and you know currently
+[13:12.56] you are at C you'll have everything
+[13:15.36] because the minimal value is at B A and
+[13:19.72] C are after are after it so I'm very
+[13:23.16] sure at index
+[13:25.36] one till this it's a valid one which has
+[13:28.76] all the three characters minimum
+[13:30.84] possible window this is a valid
+[13:32.96] substring and if this is a valid
+[13:34.68] substring I can add on every character
+[13:37.64] to the left I can add on every character
+[13:39.64] to the left and I can generate more and
+[13:41.40] more substrings which is ending at this
+[13:44.28] particular character C which is ending
+[13:46.28] at this particular character C okay fine
+[13:49.24] how many do I get I get two very obvious
+[13:54.48] one my bad I'll use the marker otherwise
+[13:59.24] it be messy one and two we BAC and B A
+[14:04.92] Perfect what is the next
+[14:07.12] step I'll move the C to uh move the
+[14:09.64] pointer to the B first thing you'll do
+[14:12.16] is please update
+[14:13.56] me now again you'll see that you have a
+[14:17.40] you have B you have C and if you have
+[14:19.76] them what you're looking at is what is
+[14:22.32] the minimal window you look for the
+[14:24.64] value of a b and c and you see that a is
+[14:27.28] at the left most is at the left most so
+[14:31.08] a is at two that means this is the
+[14:32.88] minimal window and if this is the
+[14:34.76] minimal window this is a possible
+[14:37.44] substring you can add everything to the
+[14:39.76] left thereby you can create this is the
+[14:43.16] individual one and you can create two
+[14:44.84] more three which is nothing but 2 +
+[14:48.20] 1 so you can just create three more
+[14:51.00] perfect next you will do is you will
+[14:54.24] take this and you'll move it to a first
+[14:57.36] thing you'll do is you will straight
+[14:59.36] away update a to5 and now you will ask
+[15:02.56] okay ending at this what is the minimal
+[15:04.92] window and you'll figure it out a b c c
+[15:08.88] has the minimal value so thereby this is
+[15:13.36] the minimal window and if this is the
+[15:16.96] minimal window can I say this that along
+[15:20.92] with this I can add this this this
+[15:24.08] typically four additions typically four
+[15:26.28] additions and it is at index three so 3
+[15:29.28] + 1 4 and after that what you can do is
+[15:32.60] you can finish it off and that is
+[15:35.08] over so if you add it up you'll get nine
+[15:39.16] so what I did was I did the same root
+[15:41.88] Force thing I tried to generate all the
+[15:44.24] substrings in a smarter way in a smarter
+[15:47.20] way standing at every index I tried to
+[15:49.64] figure out what is the minimal you could
+[15:52.08] you could have done it in the opposite
+[15:53.44] way as well standing at the first figure
+[15:56.08] out the minimal on the right for that
+[15:58.52] you'll have to to Travers on the
+[15:59.64] backward Direction that's why I took the
+[16:02.32] opposite that's why I took the opposite
+[16:04.20] you can do the opposite as
+[16:06.00] well very simple very clean figure out
+[16:09.88] every possible figure out for every
+[16:12.64] character because I have taken every
+[16:14.96] character into consideration so I'll not
+[16:16.80] be missing out on any substrings taking
+[16:19.96] every character remember that in your
+[16:21.76] head can we quickly write down the code
+[16:24.68] obviously right okay uh which color
+[16:27.84] let's use yellow yeah that's my fa
+[16:30.20] favorite
+[16:31.36] color which color should I use um orange
+[16:34.68] that's my favorite
+[16:37.16] one yeah take your forward is also in
+[16:40.20] the orange theme so it'll be given a
+[16:42.44] string right so let's take a
+[16:44.60] string what is the first thing that
+[16:46.52] you'll do I need to have a last
+[16:52.24] scene so maybe you can create a last
+[16:54.72] scene a minus one minus one and a minus
+[16:57.68] one where minus one signifies that you
+[17:00.16] haven't seen it right and uh at the same
+[17:03.56] time you can keep a count equal to zero
+[17:06.56] after that what I can do is I can start
+[17:09.04] iterating from at 0 to
+[17:13.80] and and what I will do is first thing
+[17:16.84] I'll do is last
+[17:19.68] scene and whatever is the value again
+[17:22.36] minus
+[17:23.64] a equal to the current
+[17:26.84] index and please make sure that that you
+[17:29.84] have three of them so you can just write
+[17:32.60] a simple
+[17:34.60] condition if
+[17:38.56] lasten what is it 0er is not equal to
+[17:42.68] minus one and then for all the three
+[17:46.16] that means you have three of them and if
+[17:48.76] you have three of them what you do is
+[17:50.68] you say count equal to count
+[17:55.00] plus 1 plus is whatever is the index
+[17:59.16] whatever is the index you do 1 plus to
+[18:01.12] it
+[18:02.76] right minimum
+[18:05.48] of last scene of zero last scene of one
+[18:10.48] last scene of two can just write it and
+[18:13.00] once you've done this you can straight
+[18:15.36] away return the value of count and that
+[18:19.32] will be done so you can try omitting uh
+[18:23.88] this check as well even if you do not
+[18:26.12] check if three of them are what will
+[18:29.32] happen is one of the minimums will come
+[18:32.64] up as minus one if it is not there it
+[18:36.08] will come up as minus1 and 1 + minus1
+[18:40.28] will end up to be zero so you can
+[18:42.96] actually omit the check as well I did
+[18:45.40] write it because I wanted to explain you
+[18:48.12] so what will be the time complexity can
+[18:50.36] I say that the time complexity will be I
+[18:52.84] don't have to even
+[18:54.52] explain straightforward B of n what
+[18:57.84] about the space complexity
+[18:59.52] a beo of fun because I'm just using
+[19:02.44] three variables like three space AR so
+[19:05.72] it's as good as a constant time super
+[19:09.08] simple super clean you just have to
+[19:11.32] think of it that's it think of the
+[19:12.92] windows Solutions again uh I hope you've
+[19:16.08] understood it so this will be it for
+[19:18.04] this one so if you're still now watching
+[19:20.12] and if you've understood everything
+[19:21.92] please please do consider giving us a
+[19:23.68] like and if you're new to our channel do
+[19:25.36] consider subscribing to us as well with
+[19:27.52] this I'll be wrapping of this video
+[19:28.76] let's me in some other video till then
+[19:32.32] bye-bye
+[19:33.57] [Music]
+[19:37.16] Bren I

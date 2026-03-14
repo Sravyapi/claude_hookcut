@@ -1,0 +1,175 @@
+[0:00.24] Welcome to industry ready spring boot
+[0:02.80] react genai live course. Now this is a
+[0:05.20] live course which is going to happen for
+[0:07.12] two months and this is a weekday batch
+[0:09.76] starting from Monday to Thursday. Of
+[0:11.76] course you'll be having three days to
+[0:13.20] relax, relearn and practice. The timing
+[0:17.20] for this is 900 p.m. to 10:30 p.m. IST.
+[0:20.56] So mind you this is IST. Now let's talk
+[0:22.72] about what you are going to learn in
+[0:24.24] this course and what are the
+[0:25.12] prerequisites. Now since in the title
+[0:27.68] nowhere we've talked about Java. So Java
+[0:29.68] becomes a prerequisite for you. So if
+[0:32.00] you know Java, you can directly start
+[0:33.44] with this course. But still we would
+[0:35.20] recommend once you enroll for this
+[0:36.64] course, learn Java. I mean revise Java
+[0:39.12] if you know it. Uh you can't learn Java
+[0:41.28] in 10 days or does I mean depends when
+[0:43.04] you are watching this video. Uh so
+[0:45.12] revise the concept and we will give you
+[0:48.48] videos to revise the Java concepts. The
+[0:51.04] thing is this course is a part of a
+[0:52.72] bigger course where we also have Java.
+[0:55.44] Now once you enroll for this course you
+[0:57.20] will become a part of that course where
+[0:58.96] you will you will have all the Java
+[1:00.72] recordings and you can watch them and
+[1:02.56] yeah that's how you can revise. Now in
+[1:04.24] this course we have multiple topics and
+[1:06.16] multiple things you will learn. But
+[1:07.68] before we do that let me talk about the
+[1:09.68] authors or the trainer for this course.
+[1:11.52] The lead trainer for this course Heather
+[1:13.04] Abbas who is an amazing trainer and you
+[1:14.88] will see Heather in this video and I'll
+[1:16.80] be there to guide you and uh support you
+[1:19.60] there. Okay. Now in this course we have
+[1:21.52] multiple things. So some important
+[1:23.20] things this going to start from March
+[1:25.28] 16th and uh this will be happening live
+[1:28.88] but we want to make you a complete
+[1:30.88] developer. So apart from these things
+[1:32.40] which we're going to teach live we'll
+[1:34.32] give you certain modules which you can
+[1:36.48] which you have to watch and learn which
+[1:38.64] will make you a complete Java developer.
+[1:41.44] uh what comes on after in that is
+[1:43.28] microservices, SQL, DSA, JUnit,
+[1:45.68] hibernate, JDBC, serlet, docker, maven,
+[1:48.80] uh git, github, cloud deployment, there
+[1:50.64] are multiple things and once you know
+[1:52.48] this, you will become something in the
+[1:54.96] java world. Okay, now uh let's talk
+[1:57.44] about the module and since heather will
+[2:00.32] be the lead trainer, I will welcome
+[2:02.40] Heather and he will guide you forward.
+[2:05.68] >> Hello everyone, my name is Heather
+[2:07.04] Abbas, one of the instructor for this
+[2:09.28] course. Now I would like to give you the
+[2:11.36] detailed overview about this course. To
+[2:13.76] start with as it has already been
+[2:15.60] mentioned the prerequisite for this
+[2:17.84] course is to have the knowledge of Java
+[2:20.64] and for you to fresh up the Java
+[2:22.40] knowledge. The live Java class
+[2:24.16] recordings will be added in your course
+[2:26.56] dashboard. Apart from that whatever is
+[2:28.72] required we will be uploading in your
+[2:30.56] course dashboard and we will guide you
+[2:32.64] when what to watch. To start with the
+[2:35.04] entire spring will be taught live. The
+[2:37.28] very first question is is this course we
+[2:39.44] will focus more on spring framework or
+[2:41.84] spring boot. The answer is spring boot
+[2:44.24] but spring boot is not a different
+[2:46.48] framework than spring. First we will
+[2:48.72] understand the core of spring before
+[2:50.56] even getting into the spring boot. We'll
+[2:52.88] understand what is the purpose of spring
+[2:54.80] framework. Why it is there? We will
+[2:56.56] understand all the core. We will work
+[2:58.24] with spring framework in XML approach
+[3:00.48] annotation approach. Then we will move
+[3:02.56] on to the spring boot and understand the
+[3:04.72] core of spring boot. Practically you'll
+[3:07.12] understand how spring boot is different
+[3:09.60] from spring framework and you'll have
+[3:11.68] hands-on experience on both spring
+[3:13.68] framework without spring boot and
+[3:15.68] directly with the spring boot. And once
+[3:17.92] you have a core knowledge of spring boot
+[3:19.92] then we will start with the actual
+[3:21.68] course. Now very first we'll focus on
+[3:24.32] spring data JPA where we will understand
+[3:27.12] all important uh interfaces we have
+[3:29.36] there predefined. will work with the
+[3:31.60] custom queries, custom finder methods.
+[3:34.24] We will work with multiple database. How
+[3:36.48] Spring Boot can get connected to MySQL,
+[3:38.88] Postgress SQL, in fact NoSQL database
+[3:41.92] also MongoDB. Also, we will see one
+[3:44.64] Spring Boot application at a time how it
+[3:47.04] can get connected to two different
+[3:48.80] databases. Right? We will have all this
+[3:51.36] hands-on with live demonstrations in our
+[3:54.56] live classes. Right? After which we will
+[3:56.88] get into spring web MVC where we'll
+[3:59.76] understand all the core components of it
+[4:02.48] and it will be acting like a
+[4:04.08] prerequisite before we start with one of
+[4:06.08] the most important module which is
+[4:08.64] restful services. Right. So once we
+[4:11.20] understand entirely uh core annotations
+[4:13.92] and all about spring MVC we will move on
+[4:16.72] to the spring rest and under the
+[4:19.44] umbrella of restful services. There are
+[4:21.92] many topics we are going to cover from
+[4:24.16] basic to advanced level. We will cover
+[4:26.72] postman tool swagger actuators. There
+[4:29.68] are many concepts under the umbrella of
+[4:31.84] restful services which we will be
+[4:33.76] exploring synchronous asynchronous
+[4:35.76] communication profiles actuators concept
+[4:39.20] and we will also understand how to write
+[4:41.04] unit test cases for rest APIs and once
+[4:44.24] we understand the core of entire spring
+[4:47.12] boot including restful services spring
+[4:49.68] data jpa spring aop we will start to use
+[4:53.44] AI tools to generate the code and also
+[4:56.64] to be more productive to troubleshoot
+[4:58.56] and also To develop the application, we
+[5:00.96] will use AI tools integrated with IDE to
+[5:03.76] troubleshoot and also to generate the
+[5:05.84] code. Whatever AI knowledge is required
+[5:08.24] in order to implement, we will take care
+[5:10.72] and we will give you the live
+[5:12.48] demonstration. Spring security is also
+[5:15.44] included in this course. We will see
+[5:17.20] tokenbased authentication, JWT and O as
+[5:20.96] well. Right? So all the major modules of
+[5:23.28] Spring Boot will be covered thoroughly.
+[5:25.52] And then comes the spring AI how to
+[5:28.16] enable the AI features into our spring
+[5:31.60] boot application. We will show the
+[5:33.60] demonstration and we will integrate in
+[5:36.00] the applications also. All these topics
+[5:38.64] will be thought by developing the
+[5:40.24] project. It is completely handson course
+[5:43.44] where we will demonstrate the real world
+[5:45.68] use case of all these components
+[5:47.68] practically why something is introduced
+[5:50.32] how to use that and we'll develop the
+[5:52.48] application fully and then enable AI
+[5:55.04] features in that application using the
+[5:57.12] module spring AI all these components
+[5:59.76] also will be covered and apart from that
+[6:02.08] react also will be taught prerequisite
+[6:04.80] for that will be uh JavaScript and we
+[6:06.96] will give you the recorded material of
+[6:09.12] JavaScript for you to brush before you
+[6:11.44] get into the world of React. So
+[6:13.76] basically this course covers the entire
+[6:16.16] Spring Boot, Spring AI, how to use AI
+[6:19.12] tools to develop and enhance our
+[6:21.04] productivity, React and also some of the
+[6:23.92] recorded materials such as Maven, JUnit,
+[6:27.36] Docker, Genkins Basic, Microservices,
+[6:30.48] Cloud Deployment also would be given to
+[6:32.80] you which you can watch in your own
+[6:34.48] pace. When what to watch, we will give
+[6:36.56] you the guidance in the live class
+[6:38.72] itself. So we are very excited for this
+[6:41.12] course.

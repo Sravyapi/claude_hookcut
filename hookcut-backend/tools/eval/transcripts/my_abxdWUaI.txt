@@ -1,0 +1,3167 @@
+[0:00.00] Hi here from the future. Before I begin
+[0:02.56] the intro and show you the project which
+[0:04.96] is really really fun just want to
+[0:06.72] mention a couple of things. First of all
+[0:08.64] I really need your support. So please a
+[0:10.88] comment uh just saying thanks hurt a cup
+[0:13.20] of tea whatever you want to send in the
+[0:14.88] comment section. It's really important
+[0:16.48] for me. Another thing is this is one of
+[0:19.04] a kind of unique tutorial. This is not
+[0:22.16] designed or addressed to be the absolute
+[0:24.72] freshers of coding. This is a tutorial
+[0:26.96] which is meant for midsize engineer to
+[0:29.20] the high-end engineers who has actually
+[0:31.36] seen production grade application and
+[0:33.44] want to enhance their knowledge with a
+[0:35.52] modern things like fanout architecture
+[0:38.00] uh how you can replace your Kafka
+[0:39.84] infrastructure with the ingest and whole
+[0:41.68] lot discussion about AI inferencing and
+[0:43.68] AI calls. This whole tutorial is not
+[0:46.64] writing a lot of Tailwind CSS files.
+[0:49.28] This is a tutorial where we have a lot
+[0:51.52] of chapter- wise files as well as a
+[0:53.84] final project walkthrough just like how
+[0:56.16] it is being given in the industries. You
+[0:58.72] don't walk or through from the project
+[1:00.40] with a scratch but you understand the
+[1:03.28] whole codebase just like you do in the
+[1:04.96] open-source world and open source
+[1:06.72] contribution. So just want to mention
+[1:08.80] that this is a pretty high-end tutorial
+[1:11.36] and walking through with this tutorial
+[1:13.28] will give you immense amount of
+[1:14.96] knowledge but focus more on
+[1:17.12] understanding the concept rather than
+[1:19.04] just writing along with me. You will
+[1:20.64] have all the code files and the final
+[1:22.64] project. Just make sure I just wanted to
+[1:25.36] make sure I address the correct target
+[1:27.20] audience of this entire tutorial and you
+[1:30.08] will have so much fun on this complete
+[1:32.48] course on ingest along with the mega
+[1:34.48] project and the AI part of it. So much
+[1:37.20] fun and again handing it over back to
+[1:40.48] past myself because this tutorial took
+[1:42.80] me uh weeks to record.
+[1:45.68] Hey there everyone my name is and I make
+[1:48.56] coding videos and in this video we are
+[1:50.64] going to have a very special and fun
+[1:52.72] ride. In this video, I will walk you
+[1:54.88] through how to build modern softwares
+[1:56.88] and we're going to discuss from media
+[1:59.44] medium level engineers to high level
+[2:01.28] engineers that in the age and the world
+[2:03.12] of AI how to look forward to build
+[2:05.92] modern applications and modern software.
+[2:08.24] The bigger question is what do you
+[2:10.08] really mean by building modern
+[2:11.60] softwares? The modern software is
+[2:13.92] actually equipped with AI calls and you
+[2:16.32] are calling to one or the another LLM.
+[2:18.80] And when you make a call to any kind of
+[2:20.48] LM, there are so many things that goes
+[2:22.80] wrong. Sometimes the response doesn't
+[2:24.88] comes. Sometimes the response comes
+[2:27.20] after a few minutes even. And there's so
+[2:30.00] much more that can happen with that.
+[2:31.84] Sometimes calls just fails and you need
+[2:33.84] a really strong retries on that. And you
+[2:37.20] need to build pipelines on the
+[2:39.12] softwares. This is all really new and
+[2:42.72] you need to learn about them. So I
+[2:44.64] realized that I should address this and
+[2:46.88] create a whole long series of videos or
+[2:49.36] you can just say a really long video to
+[2:51.52] address this problem and walk you
+[2:53.04] through with each and every depth of
+[2:55.36] understanding of how to build these
+[2:56.88] software. So consider this as a really
+[2:59.60] in-depth course on ingest itself which
+[3:02.16] is one of the pioneer leader in building
+[3:04.08] these kinds of software. So what will
+[3:06.08] happen what we're going to build by the
+[3:07.92] end of this video? By the end of this
+[3:10.16] video, I will walk you through with a
+[3:11.76] code base which is professionally
+[3:13.52] written and includes all the nuances
+[3:16.32] what usually you face. So we're going to
+[3:18.16] build this software and this one is
+[3:20.08] actually in the light mode. So don't get
+[3:22.08] me on that part but you can definitely
+[3:24.08] turn that into dark mode as well. So
+[3:26.32] this is a dev query forum and this is a
+[3:28.56] place where you can just simply go ahead
+[3:30.00] and ask any question that you like. Now
+[3:32.56] what interestingly what you see in this
+[3:34.48] software is these kinds of tags. Now I
+[3:37.60] haven't given these tags. These tags are
+[3:39.76] actually being taken up from a query to
+[3:42.32] LLM and LLM gave me these tags based on
+[3:45.28] the question. Not only that, you can see
+[3:47.44] we have this AI answer. So AI is
+[3:49.68] actually answering the question. The
+[3:51.28] devs can also answer the question, but
+[3:53.28] AI is going to answer this question. And
+[3:55.28] this is how it looks like. I simply
+[3:57.20] asked how to use interface in
+[3:58.88] Typescript. That is it. This is my
+[4:00.96] question title and this is what I gave
+[4:02.64] as a question. Now these all tags are
+[4:05.68] coming up from an AI response. So this
+[4:08.32] means this response is relatively faster
+[4:10.64] because this actually lives in its own
+[4:13.44] workflow and this takes my question and
+[4:16.00] give it to the LLM and LLM quickly can
+[4:18.48] give me these tags. But AI also gives me
+[4:21.76] or the LLM also give me this long answer
+[4:24.00] and look at this answer. This answer is
+[4:26.72] pretty long. So it definitely took some
+[4:28.88] time to generate this and the streaming
+[4:31.28] response that came up from the LLM call
+[4:34.32] is obviously going to take much more
+[4:35.92] time. So we need to work on how these
+[4:38.16] things actually works and how an entire
+[4:40.80] AI ecosystem works. Not only that what
+[4:43.28] you can see we have the capability to
+[4:45.68] upload images. So what actually happens
+[4:48.48] user actually can give me the photos of
+[4:51.28] their errors in this entire uh dev query
+[4:54.40] forum and AI also reads the images and
+[4:58.64] then answers or craft an answer based on
+[5:01.04] that. So you can see this is a fairly
+[5:03.28] complex project to work on with this. Of
+[5:05.20] course we have the questions whole list
+[5:06.56] and search and all those these things
+[5:07.92] working but these are just the CRUD
+[5:09.68] operation which I'm pretty sure any
+[5:11.36] medium level engineers can actually nail
+[5:13.12] it down where it goes is how these
+[5:15.76] things are actually taken up care and
+[5:17.76] especially when things goes wrong for
+[5:19.92] this what you're going to notice we
+[5:21.44] actually have tools like ingest which
+[5:23.60] gives you the entire runs and workflows
+[5:26.40] but the problem is nobody really knows
+[5:28.72] how and what to work with them. So my
+[5:31.52] goal with this entire series or the
+[5:33.84] video the long video is to take you onto
+[5:36.48] the journey of the ingest which is an
+[5:38.48] open-source project here. You can just
+[5:40.24] go ahead and start them as well and just
+[5:43.12] learn about ingest what they offer what
+[5:45.12] they all can do all these diagrams what
+[5:47.44] they do how they make sense. So consider
+[5:49.84] this series as a whole walkthrough and
+[5:52.32] even a complete course on ingest so that
+[5:54.88] you can be really friendly with the
+[5:56.48] ingest everything that they have to
+[5:58.00] offer and by the end of this whole
+[6:00.88] discussion about the each steps of
+[6:03.04] ingest that they take we will have a
+[6:05.44] discussion on a really large code base
+[6:07.76] that how to build these and how inest
+[6:09.60] can actually help this. So officially
+[6:11.68] you can call this as uh from my side a
+[6:14.96] complete course on ing injust where we
+[6:16.64] are going to see what powers injust
+[6:18.56] bring to your codebase and how you can
+[6:20.88] utilize them. That's my goal to make you
+[6:23.04] absolutely friendly with injust so that
+[6:24.88] you can make any kind of application
+[6:27.04] using the superpower of ingest. That's
+[6:29.20] all that's all I want to do. So let's
+[6:31.52] move on to the next video and from the
+[6:33.04] very next video I will walk you through
+[6:34.88] uh with from the absolute scratch how to
+[6:37.28] start with the ingest and then later on
+[6:39.60] move forward as we will slowly introduce
+[6:42.40] the complexity uh to our application and
+[6:44.88] to our codebase. That is it for this
+[6:46.88] video. Let's go ahead and catch up in
+[6:48.48] the next one.
+[6:51.36] All right. Hey there and welcome to the
+[6:53.44] chapter 1. This whole video is divided
+[6:55.76] into variety of chapters. This is
+[6:57.52] chapter one and each chapter is going to
+[6:59.60] teach you a little bit more about the
+[7:01.68] ingest and towards the very end we are
+[7:03.28] going to discuss about the major project
+[7:05.04] that I just showed you. So without the
+[7:07.76] further ado let me take you onto the
+[7:09.20] screen and how we are going to walk
+[7:10.96] through with this is uh I'll be going
+[7:13.28] through with these code bases and I'll
+[7:15.60] be dividing each one of them with some
+[7:17.28] chapters. So I'll call this one as
+[7:18.72] chapter 01 and so on we'll be going with
+[7:22.00] the more chapters. I'll right click and
+[7:24.96] open an integrated terminal here. And
+[7:27.12] the first obvious thing that I'll do is
+[7:29.36] npm init-y.
+[7:34.48] Uh that is going to initialize a basic
+[7:36.72] project inside the chapter one. I'll
+[7:38.64] still keep it as it is. Uh this is the
+[7:40.80] basic. We don't have anything. We have
+[7:44.00] this type as it should be module.
+[7:47.84] If you are giving me by default type,
+[7:50.00] why can't you give me module anyways? Uh
+[7:52.56] so we'll be hanging around a little bit
+[7:54.24] with our package JSON and this whole
+[7:56.24] chapter as well as I'll be walking you
+[7:58.08] through with some of the this is my
+[8:01.44] drawing board. This is where I explain
+[8:03.52] the stuff I walk through with the stuff.
+[8:06.00] Consider this as my digital notebook or
+[8:09.04] a diagram place. All right. So we are
+[8:11.44] here to discuss about ingest and the
+[8:14.08] first thing that we should all know
+[8:15.44] about apart from the documentation
+[8:18.16] is injust is pretty nice and there's lot
+[8:20.80] in their documentation that they go
+[8:22.56] through by the way they have a full
+[8:24.16] compatibility with nexjs nodejs and
+[8:26.32] python the three major ones that people
+[8:28.80] usually use but what's the problem that
+[8:31.92] injust is trying to solve let me walk
+[8:33.52] you through so when you create any
+[8:35.52] complex application there are a couple
+[8:37.12] of things that you do for example you
+[8:38.88] might want to send email after
+[8:42.88] after user sign up and sometimes sign up
+[8:46.32] is even a complex you're using some
+[8:48.08] third party services for sign up maybe
+[8:50.48] an SSO maybe an clerk which is totally
+[8:52.72] independent of your database itself so
+[8:55.28] maybe you want to sign up with that and
+[8:58.24] maybe there's a case where you process
+[9:00.24] the payments and once you process the
+[9:02.88] payment you obviously want to update the
+[9:04.88] inventory
+[9:06.48] very common scenario happens quite often
+[9:09.28] Maybe you want to generate
+[9:11.84] uh some reports on a regular basis. That
+[9:14.16] can be every Monday, every 1st of the
+[9:17.60] month or maybe something else as well.
+[9:19.92] Another thing that you usually do in
+[9:21.52] your application is handle a web hooks.
+[9:24.88] There are so many web hooks like payment
+[9:27.12] services uh sometimes from Stripe or
+[9:30.08] maybe any kind of third party
+[9:31.84] application.
+[9:34.08] Any kind of third party. So any web hook
+[9:37.04] that you are handling which is giving
+[9:38.24] you more information maybe you want to
+[9:39.92] react on that and most importantly you
+[9:42.48] want to retry some of the stuff. Now
+[9:44.48] what stuff? There are lots of failed
+[9:47.68] operations
+[9:49.44] in our application that we come to know
+[9:51.60] eventually by the logs or through some
+[9:54.32] other ways but we really want to retry
+[9:56.40] them and this is the common scenario or
+[9:59.60] the common set of operation that every
+[10:01.76] developer needs to do in any decent kind
+[10:04.00] of complex application. Now what you do
+[10:06.64] with that? What's the solution of
+[10:08.32] handling all of this? Of course writing
+[10:10.48] just controller is never the solution.
+[10:12.48] you want to do some kind of uh message Q
+[10:15.36] system. Now for this message Q system
+[10:17.68] you use a variety of things. Maybe use a
+[10:19.60] Rabbit MQ. Uh maybe in the complex one
+[10:22.56] you want to use u SQS a service from the
+[10:26.08] Amazon itself or maybe you want to use
+[10:28.24] something like Kafka. That's the first
+[10:30.32] thing that comes to the mind. You also
+[10:32.08] want to manage your uh worker processes.
+[10:34.72] So sometimes there are special dedicated
+[10:36.80] service servers which are being uh up
+[10:39.28] and running just to manage these workers
+[10:41.84] and also sometimes people manage the
+[10:43.92] state of the each process. So sometimes
+[10:46.40] there is a state uh management uh
+[10:49.68] databases as well which keeps the log of
+[10:52.16] what processes failed, what processes
+[10:54.08] executed successfully and all of that.
+[10:56.32] You also want to work on retry logic
+[10:58.56] into each of the task that is being
+[11:01.04] designed. And how can we forget a chron
+[11:03.60] job or even sometimes there are
+[11:05.44] dedicated servers which just handles the
+[11:08.48] chron jobs that is it and also how can I
+[11:12.56] forget the monitoring and logging as
+[11:15.60] well. So these are the things which are
+[11:18.00] there to make sure that all the
+[11:20.48] applications that we are doing are
+[11:22.08] actually performing nicely and easily.
+[11:25.60] And where does the ingest come into this
+[11:27.68] picture? Injust actually directly
+[11:29.92] provides you all of this and you don't
+[11:31.68] have to manage any dedicated server for
+[11:33.92] your cron jobs for your monitoring uh
+[11:36.32] for your messaging queue for your worker
+[11:38.24] processes and that's why ingest actually
+[11:40.16] works. If you look at the homepage of
+[11:41.68] the ingest that's exactly they say that
+[11:44.32] it can scale and all these things but if
+[11:46.24] you go a little bit here uh just just uh
+[11:50.00] somewhere here so if I can find that so
+[11:53.36] this is what they actually mention the
+[11:54.96] steps and run and don't worry we'll go
+[11:56.32] through with each one of them. Now first
+[11:58.32] what I want to walk you through is the
+[11:59.84] docs. So notice what they say is injust
+[12:02.56] is a eventdriven durable execution
+[12:05.28] platform that allows you to run fast
+[12:08.32] reliable code on any platform without
+[12:10.40] managing Q infra or the state. Just like
+[12:13.20] we discussed we don't want to manage our
+[12:15.12] Q infrastructure or the state management
+[12:17.44] thing or the monitoring thing. This all
+[12:19.28] is provided by the ingest. But how does
+[12:21.68] ingest actually provides you that?
+[12:23.44] That's a big question. So the first
+[12:25.92] thing that uh comes into the picture for
+[12:28.24] the ingest is the events. What are the
+[12:30.96] events? Events are JSON payloads that
+[12:33.92] trigger functions. So how does the event
+[12:36.08] actually looks like? Let me walk you
+[12:37.36] through. The event looks like something
+[12:39.20] like this. We have these curly braces.
+[12:41.52] It's an object. So the first thing that
+[12:43.68] goes around is the name in each object.
+[12:46.08] And there's a way how you define the
+[12:47.92] name of each object. For example, we
+[12:49.52] call this one as user. Then we simply go
+[12:51.76] ahead and say sign up. and then say
+[12:54.00] complete. So I will walk you through
+[12:55.92] later on that how they actually name
+[12:57.92] them. There's a special way mentioned in
+[12:59.60] the documentation how you name each one
+[13:01.92] of your event. Once you have named your
+[13:04.00] event, then you go ahead and provide the
+[13:05.76] data for the event. Now data can be
+[13:07.44] anything. It's a big complex object.
+[13:09.44] Feel free to add whatever you like to
+[13:11.76] add in your data segment. For example,
+[13:14.96] you can just provide a user ID. Maybe
+[13:16.80] that's 1 2 3 or any string. In this
+[13:19.68] case, uh it would be better to call this
+[13:22.24] one as state. I can write better in the
+[13:24.48] code editor, but I'll try my best. And
+[13:27.20] apart from user ID, maybe you want to
+[13:28.88] provide an email. Let's just say that
+[13:30.32] sesh at the rate uh example.com
+[13:37.04] and maybe one more uh there's a plan
+[13:40.88] also included. So you are buying a plan
+[13:43.04] maybe pro plan on your application or
+[13:45.28] anything like that. So this is the most
+[13:47.52] basic event that are available in the
+[13:50.08] ninjest. Don't worry we'll write each
+[13:51.60] one of them in the code file as well.
+[13:53.52] But just want to make sure that you're
+[13:54.96] aware of these things. So event is one
+[13:57.12] of the thing event usually just has a
+[13:59.84] unique name so that it can be
+[14:01.12] identified. This is a user signup
+[14:02.64] completed signup aborted a purchase plan
+[14:05.44] aborted or the purchase that's being
+[14:07.20] made. Next big thing that comes up in
+[14:10.08] the ingest are functions.
+[14:13.28] And functions are just uh TypeScript or
+[14:16.24] JavaScript functions that runs in
+[14:18.48] response to this event. So whatever this
+[14:20.40] event happens, these are the functions
+[14:22.32] that are going to run in response to the
+[14:24.72] event. And there's third most important
+[14:27.44] thing in the entire ingest family which
+[14:30.16] is steps. Steps are the most basic thing
+[14:33.12] and steps are the building blocks or the
+[14:35.44] of the durable workflows. Each step can
+[14:38.24] automatically retry on failure. It can
+[14:41.04] also save the output so that it doesn't
+[14:43.60] rerun automatically and it enables the
+[14:45.76] workflow so that the workflow can run uh
+[14:48.40] in days in weeks uh any chron job any
+[14:52.16] chron job that's what I want to say so
+[14:54.08] these are the basic and this is the
+[14:56.32] foundation of how an event-driven
+[14:58.00] architecture and one most important
+[15:00.16] thing about the ingest is they can
+[15:02.32] behave in a very different manner like
+[15:04.96] if you want to have a fan out
+[15:06.64] architecture or a fan architecture they
+[15:09.52] can support everything. It's all about
+[15:11.44] how you write your code. That's what
+[15:13.04] they all say. So these are the basics.
+[15:15.20] Now that you know about the ingest, we
+[15:17.28] are going to go ahead and work on with
+[15:18.72] the ingest. For that we'll be referring
+[15:20.80] the documentation again again because
+[15:22.48] that's the best part. And uh uh there's
+[15:26.40] so much things that they mention that
+[15:28.08] hey go ahead and watch this. I think
+[15:31.12] starting your project is okay. We will
+[15:32.80] start the project. We don't need to
+[15:34.16] worry. Let me zoom this a little bit. I
+[15:36.64] know this is too little. So in installed
+[15:39.52] ingest is same uh npm install ingest. So
+[15:42.08] let's go ahead and copy this. I will
+[15:43.76] walk through a little bit more. I'll
+[15:45.20] change this uh package json file in a
+[15:47.52] minute. But right now let's just go
+[15:49.84] ahead and install this. So paste this
+[15:52.32] npm install inest. That's all it takes.
+[15:56.08] All right. And after that they also
+[15:58.16] mentioned that you can install the
+[16:00.00] ingest CLI either globally or you can
+[16:02.40] use npx to run the inest cliest at the
+[16:06.40] dev. And that's going to just run this.
+[16:08.96] You can also pass on the option of -ash
+[16:10.72] u to run it on some APIs, endpoints and
+[16:12.88] all of that. Uh we will do that but not
+[16:15.84] right now. We right now just want to
+[16:17.68] work with absolute basics of how these
+[16:20.08] things are done. So let me walk you
+[16:21.68] through how to properly configure our
+[16:23.60] package JSON file. Uh we will not do
+[16:25.92] that in each chapter but I just want to
+[16:27.52] make sure that how I will keep it in the
+[16:29.44] entirety of chapter and later on we're
+[16:31.44] going to just copy paste them. So for
+[16:33.20] the name I'll keep the name of each of
+[16:35.28] the chapter as like this. So this is
+[16:37.44] going to be chapter-01. For the
+[16:39.28] following chapters, I'll keep it as 02
+[16:41.12] and something like that. I'll keep the
+[16:42.96] one uh description. I I will add the
+[16:45.92] chapter description as well. So this is
+[16:48.08] going to be chapter 1 and that's going
+[16:50.48] to be introduction
+[16:52.88] introduction to ingest and setup.
+[16:58.88] This is not really compulsory but we'll
+[17:00.64] do it. And all of our project are going
+[17:02.72] to be kept inside the source. and then
+[17:05.04] index and I'll keep it as as TS we'll
+[17:07.44] not go with the JS we'll by the way
+[17:09.44] these are all the same now in the script
+[17:12.08] we will have some of the different
+[17:13.28] script the first one is going to be dev
+[17:14.96] script and for the dev script we just
+[17:16.88] want to run this so we'll run everything
+[17:18.80] by tsx and we'll say watch in the botch
+[17:23.36] mode we'll say source index ts cool
+[17:27.12] that's good enough and we'll have two
+[17:30.00] more script after that the next one is
+[17:32.64] going to be start to run the production
+[17:34.48] server or anything like that. And this
+[17:36.00] will just remove the watch mode. And the
+[17:38.24] last one is going to be ingest. And
+[17:40.56] here's the important thing. Whenever you
+[17:42.56] run your web application server, you
+[17:44.32] also need to run your ingest server as
+[17:46.32] well. How do we run the ingest server?
+[17:48.56] The same command that we saw just right
+[17:50.48] now. npx inest-
+[17:53.44] cli at the rate latest. So we'll go with
+[17:56.00] the latest one. And then run the dev
+[17:57.84] server. So this is how we just run that.
+[18:01.60] and uh pretty basic nothing uh big deal
+[18:04.64] of in this case. Now in the dependencies
+[18:07.60] we are using the ingest with the
+[18:10.32] anything above 3.46 that's fine but
+[18:13.28] we'll need couple of dev dependencies as
+[18:15.20] well. So let's go ahead and install them
+[18:17.36] uh here but again feel free to just you
+[18:20.48] need to install that actually. So, npm
+[18:22.56] install -d d for the dev dependency.
+[18:25.36] First of all, tsx is required and
+[18:28.96] typescript is required. And then since
+[18:30.96] we'll be using ts, we'll be getting the
+[18:33.20] types as well. So, let's get the types
+[18:34.88] for a node.
+[18:37.28] And that's all it is required. I think
+[18:40.72] it's going to install the latest cutting
+[18:42.48] edge one. I usually not sure about the
+[18:45.04] 24 version of it. This is fine. This is
+[18:47.84] fine. So, we'll keep it. Usually, when I
+[18:49.84] prepared the exercise file, it was 5.4.
+[18:51.68] 4 when I prepared the exercise file this
+[18:53.76] was 4.15
+[18:55.76] but I think it's not major breaking
+[18:57.52] changes so I'll just keep it fine all
+[18:59.44] right so that's the part one how you
+[19:01.44] arrange your basic note file now let's
+[19:05.36] go ahead and follow this so inside the
+[19:07.04] chapter one we'll create a new folder
+[19:09.12] src and for each of the chapter we're
+[19:11.84] going to create the fresh one but I'll
+[19:13.20] just walk you through with how we have
+[19:14.40] done this I'll do that only one but for
+[19:16.32] the next one you can just copy paste
+[19:17.76] that so index.ts TS. So how does the
+[19:20.88] ingest work in this particular first
+[19:23.52] chapter? We'll not run it. We'll just
+[19:25.12] learn how to write the first ingest. So
+[19:27.92] if you just scroll this, this is where
+[19:29.76] they mention that create a file in the
+[19:31.28] directory and all of that. And this is
+[19:32.64] what they mention. I will walk you
+[19:34.00] through how this is being done. All
+[19:35.68] right. So go ahead and follow along. The
+[19:38.24] first thing that we are going to do is
+[19:39.68] we are going to bring in ingest.
+[19:42.88] Ingest looks okay. And that's going to
+[19:45.44] be coming up from ingest. And this is
+[19:47.20] exactly same as they mention up here.
+[19:49.28] All right, good enough. Now once you
+[19:51.20] have imported the ingest, the first step
+[19:52.96] is to create a client. And you can
+[19:54.64] create as many client as you wish. And
+[19:56.40] each of the setup of the workflow can
+[19:58.64] have uh one ids in itself. What does
+[20:00.96] that mean? Let me show you. I'll create
+[20:02.96] an ingest cl object from this class.
+[20:08.16] Ingest.
+[20:10.00] Oh, my bad. Ingest.
+[20:12.96] There we go. And whenever you are
+[20:15.28] creating an object, the only thing that
+[20:17.36] is required is to pass on an ID. This ID
+[20:20.08] is used in the interface of injust to
+[20:22.08] mark it as unique. So make sure you get
+[20:23.68] this unique. But you don't need to keep
+[20:25.04] it too unique. So that you want to use
+[20:26.64] UU ID or something. Just name it
+[20:28.64] something better. In this case, I'll
+[20:29.92] just go ahead and say hello
+[20:33.60] world app. That's good enough. All
+[20:36.16] right. I don't think this is too much of
+[20:38.32] a thing. So this is the step one. Create
+[20:39.92] a unique identity. unique identity so
+[20:42.72] that we can uniquely identify your
+[20:44.72] application. I will walk you through
+[20:46.08] more than that. Don't you worry. After
+[20:47.84] that you create a function. So for
+[20:49.36] example, I'll just go ahead and create a
+[20:51.28] simple hello
+[20:53.44] function. The very first function and in
+[20:55.76] fact everything in the ingest is created
+[20:57.52] by this object. If you put up a dot, you
+[20:59.68] can see all the things mentioned up
+[21:01.12] here. API base URL version and so many
+[21:04.56] things. The one that we are interested
+[21:06.56] in is this create function. This create
+[21:09.04] function takes couple of parameters and
+[21:11.04] you can see this uh there's an id in
+[21:13.76] justest middleware
+[21:15.52] doesn't do a good job in this small
+[21:17.76] window in suggestion but I'll do a
+[21:19.68] better one so what I'll do is there are
+[21:22.08] set of objects just like this first
+[21:24.16] object second object and all of that
+[21:26.24] this is how the configuration is written
+[21:28.16] the first one is ID each function gets a
+[21:31.20] unique ID in itself and it should make
+[21:32.96] sense in this case hello world makes
+[21:34.56] sense so I'll just go ahead and say
+[21:35.92] hello world that's my unique ID to
+[21:38.80] identify this function. Once I'm done
+[21:40.88] this, then is the event. This means what
+[21:44.00] event should trigger this function. I
+[21:46.56] repeat, what event should trigger this
+[21:48.72] function. So I'll go ahead and say event
+[21:51.20] and there is a way how you name the
+[21:52.88] event like in this case it's just a test
+[21:54.88] and hello. But there is a mechanism I
+[21:57.60] will walk you through in the later on
+[21:58.88] chapters that this is how it's being
+[22:00.24] done. Now once this is done the two main
+[22:02.88] properties after that you write your
+[22:05.04] execution part of it and this is also
+[22:07.20] known as handler. So I'll go ahead and
+[22:09.76] say this is my async and this is the
+[22:12.88] handler that is going to handle this a
+[22:15.28] simple arrow function just like that.
+[22:17.20] Okay. Uh why are you having an issue?
+[22:20.32] Async is method requires promise
+[22:22.56] constructor. I'll I'll walk you through
+[22:24.08] with that. No worries on that. So in the
+[22:27.44] async one you usually take two objects
+[22:29.92] or two variables in account. The first
+[22:32.48] one is event which event is there and
+[22:35.68] then there is a step. These are two
+[22:37.44] things which are always kind of required
+[22:39.28] to pass on in any of this one. Now once
+[22:42.16] I'm inside here what I'll do is I'll do
+[22:44.00] a couple of console log only. The first
+[22:46.16] one is simply hello from ingest
+[22:50.80] and then I'll go ahead and say event
+[22:54.32] received.
+[22:56.88] So we can work on in the future and
+[22:58.96] that's one is event dot and I'll just
+[23:02.32] use the name of it. There's more
+[23:04.08] properties in this event but I'll just
+[23:06.32] go with event name and data because
+[23:08.08] these are the two important one for us.
+[23:10.48] So in this case I'll say event data.
+[23:14.72] All right seems
+[23:17.60] okay as of now. Okay. What else do we
+[23:21.44] want? We want to return. You can return
+[23:23.36] any JSON serializable value. So what I
+[23:26.24] can do is I can just go ahead and say
+[23:28.40] return
+[23:29.92] return and I want to return an object in
+[23:32.80] which there is a message. that message
+[23:35.28] can say in the back text hello
+[23:39.04] and I can say event
+[23:41.84] do data dot name if that's the one
+[23:45.12] otherwise what I can say is I can say
+[23:47.44] simply
+[23:48.96] hello world world I guess there is no
+[23:53.20] problem so far it seems very basic and
+[23:55.92] on top of that I'll add one more data
+[23:57.76] which is
+[24:01.36] received at just a property
+[24:04.80] This one is going to be new date. Nope,
+[24:08.16] not like that. Date
+[24:10.64] and that will be two
+[24:13.20] ISO string. There we go. I hope there is
+[24:17.44] no problem so far that how this is being
+[24:19.52] done and all the values are being
+[24:21.20] created. So this is the most basic hello
+[24:24.48] world function that you are going to
+[24:25.84] create. How you use that? Don't worry
+[24:27.12] that's in the chapter two. Uh but this
+[24:29.28] is all what I want to do in this one.
+[24:30.88] I'll walk you through how to run this
+[24:32.24] one as well so that we can work on this
+[24:34.08] one. Now once this is all done, what I
+[24:36.80] want to show you is there's also a
+[24:38.32] console log outside of this in which
+[24:40.80] I'll just go ahead and say
+[24:43.36] let's use this one and I'll use a tick
+[24:48.16] so that it's easy to find. I'll say
+[24:51.04] function created and how the function
+[24:54.72] created uh for that we can actually
+[24:56.64] find. So what ingest actually does in
+[24:58.96] justest take all of your function and
+[25:00.64] create them in the ingest itself and
+[25:03.04] those function don't yet run there is a
+[25:05.20] event which triggers those function and
+[25:07.12] then they run got it pretty easy okay so
+[25:10.72] I'll just go ahead and say hey ingest
+[25:13.36] and uh not inest actually this hello
+[25:16.64] world by the time it reaches here all
+[25:19.60] the functions actually gets an ID and
+[25:22.00] you can go ahead and print that ID as
+[25:23.60] well so pretty interesting isn't it that
+[25:26.16] you can create a file in a standalone
+[25:27.84] function and there is a this whole
+[25:29.84] manager just like in justest and it
+[25:32.32] actually takes all the function and work
+[25:33.76] with that now there is another way of
+[25:36.16] creating a function I still want to walk
+[25:38.08] you through with that these are known as
+[25:39.52] multi-step function and in the very
+[25:41.84] first class you really want to know how
+[25:43.84] all the ways to create the function all
+[25:45.84] right so let me just walk you through
+[25:47.52] with that I hope this is all okay there
+[25:49.60] is no problem in this one if you have
+[25:51.52] just write in the comment section I'll
+[25:53.28] definitely try to fix them okay the next
+[25:56.48] one is multi-step
+[25:59.04] function. So how do you create a
+[26:00.64] multi-step function? It's actually same.
+[26:02.96] You call the ingest and call the create
+[26:05.12] function for that also. And there you
+[26:06.88] provide the object ids or the in the
+[26:09.76] function you create you provide the
+[26:11.44] objects. So first one is ID. It should
+[26:14.96] be unique. So this one is multi-step
+[26:20.32] demo.
+[26:23.12] Multi-step demo. Okay, cool enough. The
+[26:25.84] next thing that you provide is the
+[26:27.04] event. Event is required in each one of
+[26:29.28] them. In this one, it's a demo of
+[26:32.32] multi-step
+[26:34.56] and then you create your handler. So you
+[26:36.56] can see there is a synchronization and
+[26:38.48] there is a familiarity that okay I have
+[26:40.24] to do this every single time. Yes, you
+[26:41.76] have to do this every single time. So
+[26:43.52] I'll call this one as a async. Same like
+[26:45.60] that. There we go. And in here you take
+[26:48.80] two of the values. The first one is
+[26:50.96] event and then the second one is step.
+[26:53.44] Notice here how we created the hello
+[26:55.04] world function. We did the same event
+[26:56.72] and step. We didn't talk about the step
+[26:58.40] there. We just talk about event in this
+[27:00.56] one. Let's talk about how the steps are
+[27:02.32] being done. Okay. So what you do is this
+[27:05.44] is my step one where you can mention uh
+[27:08.48] the first task. It can be any task. You
+[27:10.80] can connect with database whatever you
+[27:12.40] want to do. It can be any task at all.
+[27:15.20] And let's hold this result one. Okay.
+[27:20.80] First of all, I'll use an await syntax.
+[27:23.20] And now step actually provides you this
+[27:26.16] step. Whichever you have taken up here,
+[27:28.08] it provides you so many of the things
+[27:29.60] that you can do with that. Notice here
+[27:31.44] there's a default AI. There's a fetch,
+[27:33.84] there's invoke, there's a run, send. So
+[27:37.12] many things that you can work with this.
+[27:38.64] Here I'll say I just want to run
+[27:40.80] something. That means I want to do
+[27:42.16] something. Now whenever you want to run,
+[27:44.48] there's a ID of that sub function or the
+[27:48.64] step to run. I'll call this one as step
+[27:51.76] one. Feel free to call it as user
+[27:54.16] created, email send, notification send,
+[27:56.72] whatever you want to do. And the second
+[27:58.48] one is your classic uh call back.
+[28:02.40] I'll call this one as a sync just like
+[28:04.48] this. And there we go. Now in here I
+[28:08.40] will just say console log very basic.
+[28:10.80] That will say
+[28:13.12] executing step one with a dot dot of
+[28:16.48] course makes sense. And once I'm done
+[28:18.88] with this, I have to return something.
+[28:20.72] And what most importantly you return is
+[28:22.80] in this format data. Now in the data,
+[28:25.60] you can return whatever you like. I'll
+[28:27.36] just return a string. But feel free to
+[28:29.28] return an array or an object, whatever
+[28:31.52] you wish to have. I'll call this one as
+[28:34.24] result
+[28:36.00] from step one. Make sense? All right. So
+[28:39.04] this is the part one where you go and
+[28:41.76] work with the result. And probably at
+[28:44.16] this step, this is where our step one is
+[28:46.88] complete. So I'll log a simple data that
+[28:48.96] says step one completed and we will
+[28:53.68] display the result one. Result one. All
+[28:57.68] right. I hope this part is all clear.
+[28:59.76] The step one there is no problem there.
+[29:02.40] Now our step two at this point let's
+[29:05.28] just say this is my step two which is
+[29:09.76] wait for some time task. Maybe you want
+[29:11.92] to give some break to the user whatever
+[29:14.00] you want to do. So our step two is
+[29:17.44] sleep for 5 seconds. This is optional
+[29:20.64] but we'll have that again. Can we borrow
+[29:23.76] this exact same syntax? Yes, we can.
+[29:26.56] This will save us some time. This one is
+[29:28.96] going to be uh result two. And result
+[29:32.32] two instead of running this whole step
+[29:34.24] and all of that. What we can do is we
+[29:36.96] can say
+[29:39.44] step dot
+[29:41.92] sleep. Yep, that's the one. And again,
+[29:45.84] same things. You have to provide what it
+[29:47.44] does. So, wait uh bit and then the
+[29:52.24] second is how much you want to wait. And
+[29:54.08] by the way, you can write a 5 day here
+[29:55.84] just like this and it will wait. Or you
+[29:57.44] can write 24hour just like this. So,
+[29:59.28] this is 24hour. Uh this is mentioned in
+[30:01.52] their docs by the way. I'll say 5
+[30:03.60] seconds. So, this one will wait for the
+[30:05.12] 5-second.
+[30:07.36] And we will copy this and paste it up
+[30:10.80] here.
+[30:12.64] And I will say step two completed. And
+[30:16.32] we'll just get this. Although we are not
+[30:18.80] getting anything in in this one. So I
+[30:21.68] think doesn't make sense to have this
+[30:23.76] one. So this is our step two by the way.
+[30:26.16] And we don't have anything. I'll just
+[30:28.32] mention that the step two is complete.
+[30:30.16] All right.
+[30:31.84] Now we have the step three here.
+[30:35.60] So this is my step three. And I'll say
+[30:38.48] in the step three there is another task
+[30:40.32] that we want to do.
+[30:42.40] another task. Cool enough. And what we
+[30:45.84] can do is we can just borrow this. Copy
+[30:48.80] this.
+[30:50.80] And paste this. This time this is this
+[30:53.92] should be technically result two now
+[30:55.52] because we didn't store anything in
+[30:56.88] here. So that's okay. And we'll say this
+[30:59.68] one is result two. Step three is
+[31:02.64] complete. What do we want to do in this
+[31:04.64] third step? Let's say we want to call
+[31:07.04] this one as technically this is step
+[31:09.76] two. So all right so console.log
+[31:12.96] executing step two whatever you want to
+[31:14.88] do in this one and we are saying result
+[31:18.08] from step two is here but also
+[31:23.04] you also have the access to previous
+[31:27.44] and I want to take the result one here.
+[31:31.52] So here's a very interesting thing that
+[31:33.36] yes you can actually do this the data is
+[31:35.60] from the result two but you also still
+[31:37.44] have access to the previous one in this
+[31:39.44] step as well. In fact all the step has
+[31:41.60] the access to previous steps so that you
+[31:43.92] can extract some data out of this. So
+[31:46.24] this is the step all we have and once we
+[31:49.36] are done with all of this so this whole
+[31:52.56] thing the whole async and everything uh
+[31:54.64] got executed now I will say that I want
+[31:58.00] to return something from it. So what
+[32:01.20] I'll do
+[32:03.76] is within this async. So this is my
+[32:07.28] async.
+[32:09.12] I would love to return some data.
+[32:12.16] Okay. Now it's up to you. What do you
+[32:14.48] want to return? The moment you write the
+[32:15.84] return, it's all happy. No, it's not yet
+[32:18.16] happy. It should be happy. It should be
+[32:20.32] happy now. Yeah, it's happy now. So it's
+[32:23.36] up to you. What do you want to return?
+[32:24.96] I'll return a couple of thing. The first
+[32:26.64] one is the message that says multi-step
+[32:31.76] workflow
+[32:35.68] completed
+[32:39.04] and once we are here I would love to
+[32:41.60] respond back with the result
+[32:44.48] in fact results would be and I will send
+[32:47.28] result
+[32:49.52] one as well as result two. So these are
+[32:52.96] the two things I'm getting back. And
+[32:54.80] once I'm all done, I'll just go ahead
+[32:57.12] and do a console log which says
+[33:03.36] multi-step
+[33:06.08] function created. These are not executed
+[33:08.72] yet. These are just created. And just
+[33:10.80] like the previous one we had, we
+[33:12.24] actually have an ID of this one as well.
+[33:15.52] So we'll call this one as multi-step
+[33:18.00] function dot ID. Each function that you
+[33:21.04] design gets an ID just like this. Now,
+[33:23.68] interestingly, how do we actually
+[33:25.60] actually run them? And by the way, by
+[33:27.84] the run, I don't mean to execute them.
+[33:30.00] The very first of your introduction of
+[33:32.16] how to execute this one. Uh, we have
+[33:34.32] added everything in here. And this is
+[33:36.16] how everything is going to run. So, you
+[33:38.32] need actually two terminals. And in the
+[33:41.20] chapter one, I'll open up the integrated
+[33:43.28] terminal. And the first script to run is
+[33:46.40] npm rundev.
+[33:48.80] So this is our dev script.
+[33:52.08] This runs. So notice here multi-step
+[33:54.16] function created and multi-step function
+[33:56.24] created uh multi-step demo and all of
+[33:58.72] that. But there is one more thing. We
+[34:00.80] are not yet done. So right click on this
+[34:03.60] and create a new integrated terminal.
+[34:06.80] And here you want to run npm run
+[34:11.20] npm run ingest. My bad.
+[34:16.16] Ingest.
+[34:18.16] Why is it creating an issue? npm run
+[34:21.44] ingest.
+[34:23.92] npx inest cli should be running up.
+[34:29.12] Ingest package script. Oh, my bad.
+[34:35.28] Looks like I was doing some typo or
+[34:37.28] something. npm run inest should be the
+[34:39.20] one. All right. So, you can see uh we
+[34:42.48] have two servers up and running. One is
+[34:45.12] just the basic server server how you run
+[34:47.20] for your application and there's another
+[34:49.28] server that you have to run which is npm
+[34:51.12] run inest. This is the ingest server
+[34:53.04] that runs and the most important part
+[34:55.44] here is to just copy this go back up
+[34:57.84] here and open up this. This gives you a
+[35:00.64] nice and beautiful dashboard where you
+[35:02.48] have all the things available. Now right
+[35:04.40] now there is no run. We will definitely
+[35:06.32] run in this one. I can send the test
+[35:08.72] events from here as well that what do
+[35:10.32] you want to do but we'll do that from
+[35:11.92] the command line itself. You can see all
+[35:14.40] the events which are run actually gets
+[35:17.04] fetched up here and you have all the
+[35:18.80] functions up here as well. Now right now
+[35:20.80] this is empty this is deliberate because
+[35:22.88] we haven't done anything that's for the
+[35:24.32] chapter 2 but this is your dev server.
+[35:26.40] This is where you see all the things
+[35:27.92] happening and in the chapter 2 we'll see
+[35:29.52] that how we f uh fetch some events or
+[35:32.32] send some events through the terminal.
+[35:33.92] We'll use the basic curl and all the
+[35:36.16] things are showed up here. So just
+[35:38.48] remember this is all it takes to do the
+[35:40.48] setup. And as we move forward, you will
+[35:42.64] learn how to write these ingest steps or
+[35:45.12] the ingest functions. This is the hello
+[35:47.92] world. This is the very basic function.
+[35:49.68] It requires three parameters to be
+[35:51.44] passed on or three major part. The ID,
+[35:53.84] then the event and then this handler.
+[35:56.72] This handler can do anything whatever
+[35:58.16] you like. And then this is multi-step
+[36:00.24] function in which you provide the same
+[36:02.00] ID and the event. And after that this
+[36:04.48] handler actually can actually work with
+[36:07.04] multiple of the things. This is our step
+[36:09.20] one. Then this is basically our step two
+[36:12.40] or some weight event. And this is our
+[36:14.64] step three. And there is nothing which
+[36:16.16] is stopping us from having a step four,
+[36:18.24] step five and step six. But this is your
+[36:20.72] chapter one. I hope you have enjoyed
+[36:22.56] that and you got some basic idea of how
+[36:24.80] the injust work. In the step two or in
+[36:27.76] the chapter two, we are going to fire
+[36:30.00] some of the events and we'll do we'll
+[36:32.24] write more of these code and you will
+[36:34.32] understand more about it. So see you in
+[36:35.92] the chapter two.
+[36:38.80] All right, welcome to another chapter in
+[36:41.12] the ingest course. Hope the last chapter
+[36:43.12] was good. It was bit more of a writing
+[36:45.28] but that we can't do much. We have to
+[36:47.52] write the code. In this one, I will walk
+[36:49.76] you through with one major step that we
+[36:51.76] haven't yet done that so far we have
+[36:53.92] seen that how the events actually are
+[36:55.68] there and we know pretty much well about
+[36:57.36] them. But who is going to be responsible
+[37:00.16] for triggering those events? We haven't
+[37:02.40] seen them. We haven't walked through
+[37:03.84] anything in action. In this section, we
+[37:06.32] will walk through with the action and
+[37:07.52] again we will write those steps and
+[37:09.28] workflow again because what I've noticed
+[37:11.52] is when you write them again and again
+[37:13.12] you get more friendly with them. That's
+[37:14.56] the whole reason we'll be writing them.
+[37:16.24] Don't worry, it's a whole basic and easy
+[37:18.40] thing. Also, in the last chapter, I have
+[37:20.80] added this TS config file because I
+[37:22.64] noticed in the node modules, it was
+[37:24.24] giving me some errors and not the errors
+[37:26.16] but red marking there. So, excluding
+[37:28.24] this uh makes sense. Now, let's go into
+[37:30.72] the chapter 2. Uh yes, we'll be doing
+[37:32.64] them. A lot of chapters we need to
+[37:34.16] create. Let's call this one as chapter
+[37:36.08] 02. And few of the files will be exactly
+[37:39.44] same inside this. The one is
+[37:41.60] tsconfig.json.
+[37:45.28] And all I have to do is copy I have to
+[37:47.76] copy paste a lot. So copy the tsconfig
+[37:50.72] file all up here. And then we'll be
+[37:54.08] creating these package JSON file as
+[37:56.24] well. Uh rather it would be better if I
+[37:59.68] go ahead and open an integrated terminal
+[38:02.32] and say npm
+[38:04.80] init-y
+[38:07.52] so that it creates all the files and we
+[38:09.44] can just close all of them.
+[38:13.04] And now from this package JSON I can
+[38:15.60] just copy all the data inside this
+[38:18.32] package JSON and just
+[38:21.60] uh paste this up here. So this is the
+[38:23.44] chapter 2 and paste this up here.
+[38:27.68] Let's rename this as chapter 2.
+[38:30.96] Chapter 2 introduction to ingest and
+[38:33.20] this time we'll be going through with
+[38:34.56] express. Uh this one makes sense. All
+[38:37.68] this remains exactly same.
+[38:40.64] And uh now I can just go ahead. Oops, I
+[38:43.52] should be open up this one. Integrator
+[38:45.44] terminal. And now I can say npm install.
+[38:48.88] So that it installs everything. And what
+[38:52.24] extra do we need here
+[38:55.12] for this one? We'll be needing express
+[38:57.60] as well as express types. I think that's
+[39:00.32] it.
+[39:02.00] Taking a bit time to install. Should
+[39:04.56] have used bun, but I want to make the
+[39:07.36] tutorial to be more accessible to more
+[39:09.52] people.
+[39:10.64] I think here we can just use bun.
+[39:13.76] All right, good enough. And then I'll
+[39:16.08] say npm install express.
+[39:19.44] And we need to install the express types
+[39:21.36] as well. So npm install
+[39:24.72] at the rate
+[39:26.88] types for express.
+[39:31.44] And there we go. Let's see how our
+[39:33.28] package JSON looks like. So the package
+[39:35.92] JSON says express types seems all good.
+[39:40.48] Now let's go one by one how the folder
+[39:42.72] structure of this chapter is going to
+[39:44.40] look like. First and foremost we are
+[39:46.08] going to have an src and inside this src
+[39:50.08] we will have a new file index.ts sounds
+[39:53.52] okay and most of the time you're going
+[39:55.76] to see a new folder where all the ingest
+[39:58.32] related code is there. Feel free to keep
+[40:00.16] them in any other folder that is also
+[40:02.08] fine. Now in the ingest if I open up an
+[40:05.36] integrated terminal uh usually you are
+[40:07.68] going to see two files mostly one is
+[40:10.16] client.ts or js and then a separate file
+[40:13.68] for functions.ts. We'll be needing both
+[40:16.24] of them.
+[40:18.08] So why two separate file? In the first
+[40:20.80] of the video I actually showed you to do
+[40:23.20] everything in one go. Usually that is
+[40:25.36] not the case. You create separate
+[40:27.52] clients for each of the folder. Like in
+[40:29.92] this case uh let's just say you have
+[40:32.08] multi directory doing so many things one
+[40:34.08] application is e-commerce one
+[40:35.76] application is LMS so in each of them
+[40:38.48] you create different ingest anyways so
+[40:40.80] in this one you simply go ahead and say
+[40:43.20] I want to import
+[40:45.28] inest
+[40:47.52] and after that you simply go ahead and
+[40:49.92] export
+[40:52.88] constingest
+[40:54.88] which is created by new inest test just
+[40:59.52] like this and you provide only one thing
+[41:01.20] here which is your object ID and I call
+[41:05.04] mine one as my express app fairly decent
+[41:10.40] enough so we break down them into two
+[41:12.72] different things now let's go ahead and
+[41:15.92] open up our indexjs we'll come back onto
+[41:18.08] the functions right now it's empty don't
+[41:19.84] you worry only we have written is in the
+[41:21.84] client let's come back into index ts and
+[41:26.08] what basically we have to do is start
+[41:28.64] basic express. So we'll go ahead and
+[41:31.04] call this one as express
+[41:33.52] not like oh what express version did we
+[41:36.00] installed?
+[41:39.04] Oh this is express version five. We
+[41:41.44] should be having an express version 4.
+[41:43.92] Uh I'm still not yet comfortable with
+[41:46.24] the version five uh to be have in this
+[41:48.88] tutorial at least. So open an integrated
+[41:50.80] terminal and I'll say npm install
+[41:54.48] express at the rate 4. So install any
+[41:57.52] version on the four. That's good enough.
+[42:01.12] All right, let's go up here.
+[42:04.16] Express from Express. That's the
+[42:06.80] standard. And
+[42:09.44] we'll be bringing the client here as
+[42:11.36] well. So let's bring the ingest.
+[42:17.52] And this one is coming up from the
+[42:19.28] ingest client.
+[42:24.48] Okay, we'll be creating and importing
+[42:26.40] some of the functions as well. But
+[42:28.00] first, let's create the very basic
+[42:30.16] express app. const app that is going to
+[42:34.48] be express
+[42:37.20] basic con
+[42:40.16] is going to be 30,000 in this case. And
+[42:43.44] then we'll be saying uh let's create a
+[42:47.04] middleware as well because we'll be
+[42:49.04] passing on some JSON data. So I can just
+[42:51.28] go ahead and say express dojson
+[42:55.04] and let's also limit the payload as
+[42:57.20] well. Pretty generous one 4 MB.
+[43:02.24] And let's also log a middleware so that
+[43:05.52] we know we know actually what's coming
+[43:07.12] in. We'll we'll not be using any third
+[43:08.72] party for this. We'll write our own
+[43:10.56] logger. We can simply say request
+[43:14.64] and response. Uh we'll need next also
+[43:17.76] because it's a middleware.
+[43:20.00] And then I can simply say console.log
+[43:25.52] and
+[43:27.92] request dot method. The more data that
+[43:32.24] we have for the logging, the better it
+[43:34.08] is. And then we'll say
+[43:37.76] request dot path I guess. Yep, that's
+[43:40.96] the one. So this will give me the whole
+[43:43.20] from where what path and everything is
+[43:44.96] coming up. And after that I can just say
+[43:46.72] next this is our basic logger which will
+[43:49.28] give me the data of what all is coming
+[43:51.20] up. Okay. Now how do we actually start
+[43:55.12] our ingest server for that also you have
+[43:57.76] to write a middleware. So app dot use
+[44:00.48] and where the ingest middleware lives is
+[44:03.92] usually what's recommended in the
+[44:05.76] documentation is /appi/ingest.
+[44:09.52] This is the standard. And what you do
+[44:12.00] after that is you actually import a
+[44:15.04] serve method.
+[44:18.56] They they don't actually suggest it
+[44:21.12] directly but let me go ahead and grab
+[44:24.00] that
+[44:25.60] import serve and that comes from ingest
+[44:31.52] /express. So ingest has closed IP and
+[44:34.96] relation with express and this is where
+[44:37.60] the serve method actually comes. That's
+[44:39.92] the one and what this is this is a basic
+[44:42.08] method. Now what you write inside that
+[44:43.84] method this is uh mentioned with the
+[44:46.24] documentation of injust basically two
+[44:48.08] things where the client is and where the
+[44:49.92] functions are. So what I'll do is this
+[44:52.40] is the object.
+[44:54.96] So let me add the client and function.
+[44:56.88] The first one is yep that's the one
+[44:58.48] client and this is ingest. Remember the
+[45:01.60] ingest that we created uh I guess that's
+[45:04.56] the one. Did we imported it correctly?
+[45:06.80] Yep. That's the one in justest and
+[45:08.16] that's why we another one is going to
+[45:10.48] remain empty as of now but that is
+[45:12.56] required. This is the functions.
+[45:15.04] Remember it's an s functions and this is
+[45:17.28] an array. All the functions that you're
+[45:19.52] going to create in that functions file
+[45:21.28] actually comes up here. So that's the
+[45:22.80] basic. Now let's go ahead and create
+[45:24.72] some of the health checkpoint so that we
+[45:26.88] can test the things. So app.get get this
+[45:29.28] is really classic express
+[45:32.56] and I'll simply write a simple call back
+[45:35.04] standard request response
+[45:37.60] just like that and I'll send a JSON
+[45:41.28] response with some data just like that
+[45:44.08] and I'll say status
+[45:47.44] state status and of course that's
+[45:50.48] healthy
+[45:52.16] uh but also I want to send some message
+[45:56.24] and the message is going to say express
+[45:59.36] plus
+[46:00.96] ingest
+[46:03.20] server running and some endpoints as
+[46:06.56] well.
+[46:08.96] End points that's going to be an object
+[46:12.40] and where we are serving the ingest
+[46:15.04] that's actually on / ai/ingest
+[46:18.88] that's where we are serving the ingest.
+[46:21.04] Uh the test is going to be served at
+[46:23.68] slash test and we'll also serve a test
+[46:28.80] multi
+[46:30.40] and that's going to be served on slash
+[46:32.72] test dash multi.
+[46:36.64] There we go. And these are basically the
+[46:38.88] test and multi-est are going to be post
+[46:40.80] but that's the standard approach. So uh
+[46:44.08] we will come back onto this one because
+[46:45.68] we haven't defined these test and
+[46:47.68] multi-est because they are dependent on
+[46:50.64] the ingest function. We are technically
+[46:53.28] doing everything with the ingest itself.
+[46:55.28] So we will come back and we'll define
+[46:57.28] those routes in a minute. But as of now
+[47:00.56] let's just say app dot listen
+[47:05.36] and I want to listen onto the port
+[47:09.12] with a simple call back just goes like
+[47:12.16] this. And I want to actually manufacture
+[47:15.12] these uh console log in a little bit.
+[47:16.96] Let me go ahead and write that. So there
+[47:19.44] we go. I have written some fancy stuff
+[47:21.36] here. So console log uh which repeats 60
+[47:24.40] times this equal signs and the ingest
+[47:26.72] service is running and our server is
+[47:29.04] running on port 3000 and inest server
+[47:31.28] runs on the ingest port itself. Uh inest
+[47:33.84] endpoint and uh 3000 API injust this is
+[47:37.68] how it runs and basic stuff. All right,
+[47:40.00] we cannot run this as of now. Now we
+[47:41.84] will definitely run this but before
+[47:43.68] actually running this we need to create
+[47:45.36] injust functions and this is where the
+[47:47.36] functions file come into the picture.
+[47:49.92] Step one you do not import the ingest
+[47:52.40] with this one. This is already being
+[47:54.32] done. So you import the ingest the
+[47:56.16] smaller one inest.
+[48:01.20] This is the client. This is the one that
+[48:02.72] we are looking up for. And then we
+[48:04.88] designed two methods. One for the basic
+[48:07.12] one uh basic test and one for the
+[48:09.84] multi-est. You can go ahead and import
+[48:11.84] the previous function as well. No
+[48:13.44] problem there. I'll call this one as
+[48:16.16] const Hello world basic method which is
+[48:20.88] going to be ingest dot create function.
+[48:24.24] And as I mentioned these functions are
+[48:26.72] like this comma two commas and there we
+[48:29.68] go a sync.
+[48:34.64] This one gets event and data event and
+[48:37.84] data. So this time you see this is uh
+[48:40.08] much much sorry event and step this time
+[48:43.36] it is much much easier for us to work
+[48:45.44] with that because we have already seen
+[48:46.88] that you know this part this is going to
+[48:49.76] get an id of hello world
+[48:54.08] this one gets an event which event will
+[48:56.64] be responsible for triggering this uh
+[48:58.64] we'll say this one will be a test then a
+[49:01.68] /hello
+[49:03.20] dot world basic
+[49:06.64] now once we are done with is let's go
+[49:09.28] ahead and console log this one. We'll
+[49:11.84] say event
+[49:14.72] or we'll say function
+[49:17.20] triggered
+[49:19.60] function triggered with event which
+[49:21.92] event triggered this. So we can just
+[49:24.16] display the event name and similar to
+[49:27.60] this we can just go ahead and say event
+[49:29.68] data
+[49:33.68] event data.
+[49:36.24] All right, good enough. And once we are
+[49:39.44] done with this, let's create a simple
+[49:41.28] step.
+[49:43.28] Step one which is greeting. What I have
+[49:46.48] to do in this one const greeting and I
+[49:50.08] can say await step.r run. This is all I
+[49:53.12] have to do and two parts which is create
+[49:56.88] create
+[49:59.04] greeting
+[50:02.00] and then the second one is simple
+[50:05.76] a sync.
+[50:09.68] There we go. All right. Hope there is no
+[50:12.16] problem right now. We have seen this
+[50:14.08] many time. What I'll do is I'll grab the
+[50:17.36] name and the name will come to me from
+[50:19.84] event dodata name.
+[50:24.40] If it is not there I'll just call this
+[50:26.24] one as world. After that I'll grab the
+[50:30.32] message whatever is the message. So I
+[50:33.04] can just go ahead and say hello
+[50:36.88] and
+[50:38.88] name
+[50:43.68] welcome to inest. Cool. And once I'm
+[50:48.40] done I'll do a console log and I'll say
+[50:56.48] this one.
+[50:58.48] Yep, that one. and I'll say created
+[51:02.96] greeting
+[51:06.88] message
+[51:08.88] and at the end of it we can just return
+[51:10.96] the message just fine. So this is uh the
+[51:14.40] basic that we have created a simple
+[51:16.08] hello world. We can go ahead and create
+[51:18.80] uh wait for a few seconds and do more
+[51:20.64] stuff. Let's actually do that. What's
+[51:22.64] the harm in that? Okay. So, we'll do a
+[51:26.16] console log here and we'll say waiting
+[51:30.96] for two
+[51:33.36] seconds. If I can write that. Come on. 2
+[51:38.24] seconds.
+[51:40.08] After that, I'll say await
+[51:42.72] step dot sleep. And this is going to
+[51:45.04] sleep for how much? Uh,
+[51:48.80] let's call this one as short delay.
+[51:53.84] And we're going to sleep. Not for much.
+[51:55.92] Just for 2 seconds is fair enough.
+[51:59.12] And then we can do this thing again.
+[52:01.92] Copy this.
+[52:03.84] Paste that. And this time what we'll do
+[52:06.72] is
+[52:09.36] or
+[52:12.72] we'll say step.run. This time this will
+[52:15.04] say in fact we always don't need to have
+[52:18.24] this variable just like this. This is
+[52:20.16] doing some function which doesn't return
+[52:21.84] anything. Maybe there is a log that you
+[52:25.04] do.
+[52:26.56] So log completed or completion.
+[52:31.84] This is where you log all of your
+[52:33.20] activities of the user. So in this case
+[52:35.84] we can simply go ahead and say return
+[52:41.12] completed as true. And we don't need to
+[52:45.20] do all of this. We have done this once.
+[52:47.92] And here I will say function
+[52:51.68] completed
+[52:54.16] successfully
+[52:59.12] and we don't need this message. All
+[53:01.20] right. Whatever the fun you want to have
+[53:02.88] this or here you can just go ahead and
+[53:05.28] work with that. And once everything is
+[53:07.92] all done what we can do is we can just
+[53:11.20] return. So return an object and in this
+[53:14.72] we'll just return a message that will be
+[53:17.68] greeting which is generated by our
+[53:19.76] function. We can return time stamp if we
+[53:24.56] wish to
+[53:26.48] stamp
+[53:28.40] that's going to be new date dot ISO to
+[53:33.28] ISO string just like that and we'll also
+[53:37.68] give you an event id which is event dot
+[53:41.20] ID
+[53:43.12] all right so I hope this is all okay no
+[53:46.08] big deal there
+[53:48.56] so we have created a very basic
+[53:50.56] function. It just says hello world. But
+[53:52.88] there could be a function with the
+[53:54.24] multi-step demo as well. So let's write
+[53:56.88] a multistep and then we'll bring it in
+[53:59.12] the express and we'll work on that. So
+[54:01.60] const
+[54:03.52] export const
+[54:05.84] multi-step
+[54:07.44] demo. Same stuff. Ingest dot create
+[54:12.56] function.
+[54:14.72] the first one. The second one
+[54:20.72] and then
+[54:24.96] a sync
+[54:27.36] a basic function
+[54:30.08] and the async one takes an event and a
+[54:33.68] step.
+[54:35.36] This one needs an ID. I'll give you an
+[54:37.92] ID which is going to be
+[54:41.04] multi-step
+[54:44.24] demo. Good enough.
+[54:46.72] And an event. Which event is going to
+[54:48.88] trigger this? This one will be demo/
+[54:53.20] multistep.
+[54:56.08] Okay. Now comes the interesting part is
+[54:58.08] what do we want to do inside this? Now
+[55:00.16] as you can see uh each of the step
+[55:02.64] inside this is independent is retribable
+[55:05.44] and you can even cache the data as well.
+[55:08.80] So uh I'll do something interesting in
+[55:11.20] here. So let's call this one as const
+[55:15.28] step one
+[55:17.92] result
+[55:20.32] await
+[55:22.88] and we'll say step dot run
+[55:26.08] step dot run. Okay. So the first one is
+[55:29.52] let's just say we are fetching some data
+[55:31.68] from the internet. Cool.
+[55:35.36] And in the async you go like that.
+[55:39.76] So in this you probably add some data
+[55:42.48] something like that.
+[55:44.80] Let's say we console log and we call
+[55:48.08] this one as fetching data with dot dot
+[55:51.12] dot. So this one is taking some time.
+[55:53.60] Let's await in here with new promise.
+[55:56.72] Whenever I have to wait, I use new
+[55:58.24] promise.
+[56:00.48] New promise.
+[56:02.88] Yep, that one. And this one can resolve
+[56:08.80] with set time out.
+[56:12.48] And we'll pass on resolve and 1,000.
+[56:17.52] What happened to this one?
+[56:21.04] Autocomplete. probably
+[56:24.48] set time out
+[56:27.36] resolve and 1,000. There we go.
+[56:31.60] And once we are done with this, we can
+[56:33.60] simply go ahead and say return
+[56:37.76] data
+[56:39.44] which is
+[56:41.20] important
+[56:43.44] data
+[56:45.84] user ID
+[56:48.88] and we can have event
+[56:51.52] data and optionally we might have user
+[56:54.24] ID in this one. So let's just say we'll
+[56:55.76] pass on the user ID. And once we are
+[56:58.24] done with this,
+[57:00.16] we can simply do a console log of step
+[57:03.84] one completed. And this is my step one
+[57:08.96] result. All right. As you can see, we
+[57:11.52] can definitely go as complex as you wish
+[57:13.92] into this one. But this is obviously
+[57:16.24] independent from step two. You can have
+[57:18.80] a step two in here. And what I can do is
+[57:21.76] I can just copy paste this to show you
+[57:24.00] the step two.
+[57:28.48] I'll call this one as step two result.
+[57:30.96] In this we will not fetch the data.
+[57:33.60] Rather we want to process the data. This
+[57:35.68] is a step for processing this. And this
+[57:38.32] time instead of fetching data we'll say
+[57:41.28] processing data with a dot dot dot. And
+[57:45.84] let's just say this one works much
+[57:47.44] faster. So we don't need to wait. You
+[57:49.52] can wait technically there's no problem
+[57:51.36] in that but I'll say that this is what
+[57:53.12] we have and what the data we send out
+[57:57.36] here is this one
+[58:00.16] we return a processed as true okay data
+[58:04.48] has been processed and I'll say
+[58:08.08] original null
+[58:11.68] data is step one result we still have an
+[58:15.68] access of that and we can grab data out
+[58:17.92] of it And we can say
+[58:21.36] processed
+[58:22.96] at we can say date dot now. There we go.
+[58:27.76] You can convert it into ISO string as
+[58:29.52] well. And I'll say step two completed.
+[58:33.68] And this one will be step two result.
+[58:36.72] All right. Now you can wait for a little
+[58:38.80] bit. And then maybe there's a process of
+[58:41.12] waiting a little bit because for some
+[58:44.72] reason there's a wait a wait uh step dot
+[58:49.76] uh sleep
+[58:52.80] and this is database connection so wait
+[58:58.88] before
+[59:00.48] final and we'll wait for maybe 3 seconds
+[59:04.40] and once I'm done this then there is
+[59:07.44] another step.
+[59:10.08] Copy that and paste that. This is step
+[59:14.40] three result. And what we do in this is
+[59:17.44] run and we save the result.
+[59:21.12] Maybe there's some data that comes up
+[59:22.96] from online. You process that and you
+[59:25.12] save that in the database. A whole lot
+[59:26.88] of step is going on. So we'll say step
+[59:30.16] three
+[59:33.12] saving data. And then we simply go ahead
+[59:37.12] and return saved as true. Uh maybe for
+[59:41.84] some reason location is database or
+[59:45.92] probably a string.
+[59:49.44] You have saved it to location or
+[59:50.88] database. If you wish you can grab the
+[59:52.64] time as well. But these are good enough
+[59:54.56] for me. I'm happy with this. Now once
+[59:57.28] this is all done then what we can do is
+[60:00.32] we can return.
+[60:03.04] So what we are returning is by the way
+[60:05.28] where do we return always? So let me
+[60:07.76] also walk you through because this
+[60:08.96] sometimes confuses people. So this is
+[60:10.64] our step one. This is our step two and
+[60:13.60] this is our step three. So I'm returning
+[60:15.92] uh from this a sync event and step. So
+[60:18.96] what do we return from here? Totally up
+[60:20.88] to you. We want to return a message that
+[60:23.60] says multi-step
+[60:28.08] workflow
+[60:30.00] completed
+[60:32.40] and
+[60:34.56] all the results can be thrown or you can
+[60:37.12] throw just one result. So I'll say step
+[60:39.36] one gets step one result
+[60:44.56] and this one is step two
+[60:49.44] which gets the step two result. This one
+[60:51.68] gets the three.
+[60:54.00] So step three result ah quite a lot
+[60:56.96] quite a lot but this is what we have. So
+[60:59.84] just imagine that whatever the steps you
+[61:01.92] wanted to make and whatever the
+[61:03.44] complexity you want to have. By the way
+[61:04.96] you can import your database connection
+[61:06.64] here. uh maybe anything else just feel
+[61:09.20] free to do this. Now how all of these
+[61:11.84] actually gets combined up here that's
+[61:13.76] very interesting. So there should be
+[61:15.92] some event which is responsible for
+[61:18.40] triggering these events and in order to
+[61:20.24] do that first and foremost since we have
+[61:22.80] exported these function remember this is
+[61:24.80] export con hello hello world this is
+[61:26.24] export const multi-step demo. So the
+[61:28.56] step one is to import all this. So we'll
+[61:30.88] just say hello world. We'll import that.
+[61:34.32] And there is one more
+[61:36.88] which is multi-step demo. Now your inest
+[61:41.36] should be aware of these functions. So
+[61:43.44] here we go. We get
+[61:46.56] awareness. There we go. This is the step
+[61:48.40] where your inest get the awareness that
+[61:50.80] all these are aware. And by the way,
+[61:53.60] this is how I usually keep them easier
+[61:56.48] to see.
+[61:57.84] But my autos save doesn't like it. Okay,
+[62:00.80] now this is all done. Now we need to
+[62:02.96] provide some end point where which will
+[62:05.28] be responsible for triggering these
+[62:06.80] event. But the here is an interesting
+[62:08.32] part. How do we actually make our end
+[62:10.88] points to invoke these functions? It's
+[62:14.64] actually easy than you think for so
+[62:18.48] app.post. Let's just say we send some
+[62:20.80] post on / test which will be responsible
+[62:24.40] for this one. And I'll go ahead and say
+[62:27.36] a sync request.
+[62:30.72] Why are you doing this? Request
+[62:32.56] response.
+[62:36.64] Okay. So I'll do a try catch. So in the
+[62:40.08] try part first of all console log and
+[62:42.96] I'll say
+[62:44.80] sending test event
+[62:48.24] and after that I can use this await
+[62:52.96] use ingest and there is a method in the
+[62:55.52] ingest as you can see so many of them
+[62:57.36] the one that we are interested in is the
+[62:59.20] send yes this one will send the event
+[63:01.44] and all of your workflow all of your
+[63:03.12] pipeline will execute after that but you
+[63:04.96] have to provide some data in in this one
+[63:06.40] as well the first one is name the name
+[63:09.36] for my event is uh test /hello.world.
+[63:16.16] And this might look very familiar to
+[63:18.16] you. Test /hello.world. That's the event
+[63:22.08] I'm calling up. Yep, that's the exactly
+[63:24.08] the event. That's the name of the event.
+[63:26.24] Not only that, I can also pass on some
+[63:28.48] data here. What data am I sending in
+[63:30.96] here? I'll send the name as request
+[63:34.64] dotbody
+[63:36.32] dot name. So whatever has come to you or
+[63:39.28] I'll just say the world cool enough and
+[63:43.68] then I'll also say time stamp
+[63:48.48] and time stamp will be new
+[63:52.88] date
+[63:54.80] to ISO string. There we go.
+[63:59.20] All right. And what it will return you
+[64:01.92] back is the ids.
+[64:05.76] So you can have the ids here and later
+[64:08.96] on we can actually uh display the all
+[64:12.08] the ids. You can do that on your own but
+[64:14.56] I'll just display one event sent with id
+[64:19.44] and I'll grab just the only one ID
+[64:23.52] the first one. All right you can go
+[64:26.40] ahead and do a try catch as well.
+[64:29.92] And what I can do is apart from this
+[64:32.48] console log I can send a response
+[64:35.12] whereas dojson since it's a web server I
+[64:37.76] have to send a web response as a ser I
+[64:40.64] have to send the JSON as a response
+[64:43.68] message is going to be
+[64:46.96] event sent
+[64:49.68] successfully
+[64:53.12] and event ID is going to be ids the
+[64:58.16] first one and I can send a tip as well.
+[65:02.88] The tip is going to say check
+[65:05.68] http/
+[65:09.52] localhost and your inest server runs on
+[65:13.12] uh very strange 8288. That's the one and
+[65:16.40] you can just look for it
+[65:19.28] to see
+[65:22.72] function
+[65:24.24] execution.
+[65:28.00] All right, that's enough. And I can also
+[65:30.96] work on the catch part. Uh, let me just
+[65:33.60] go ahead and dump the catch part. I have
+[65:36.08] it already.
+[65:38.08] There we go. It's just nothing much.
+[65:39.84] Console log error sent failed and then
+[65:41.76] some basics of errors, error handling.
+[65:43.84] We'll do the multi uh serving as well.
+[65:46.56] But first, let's run this because we
+[65:48.56] might do some mistake in this one. Okay,
+[65:50.88] so we have to run these two servers. And
+[65:53.76] chapter 2, please open an integrated
+[65:56.16] terminal.
+[65:57.76] And the first one is npm rundev.
+[66:02.48] And there we go. Nice and beautifully
+[66:04.40] looking. We need one more.
+[66:09.36] npm run
+[66:11.92] inest please run this time.
+[66:15.60] There we go. All of them are running
+[66:17.92] hopefully and we will be able to throw
+[66:20.64] some uh response on that. So
+[66:24.72] what's happening?
+[66:26.88] Let's see. Are we running this? Yep, we
+[66:30.88] have some of the runs. We have two
+[66:32.80] functions being registered here. This
+[66:34.56] time I can invoke any one of them, but I
+[66:37.28] don't want to do that. I want to invoke
+[66:38.64] them through a web request. Uh do I have
+[66:41.92] apps? Yes, I have my express app. This
+[66:44.40] is the way. And there are two functions
+[66:46.08] being found. And you can click on view
+[66:48.16] on the functions. And there we go. Right
+[66:49.84] now there is no run. There is no event.
+[66:51.68] and that is totally okay. Now I would
+[66:53.52] like to invoke them through a web
+[66:55.60] request.
+[66:57.44] All right. So you can send a web request
+[66:59.28] through any of the web client. Use
+[67:01.04] Postman, Requestly, whatever is your
+[67:02.80] favorite one. I'll choose something
+[67:04.48] interesting. I'll choose warp. It is
+[67:06.72] also one of my favorite. So you can
+[67:08.96] actually make a curl request on any
+[67:10.72] platform and I'll say -x to make a post
+[67:13.60] request. And as you can see this is
+[67:15.12] giving me the suggestions as well. And
+[67:17.68] this time the suggestion is not totally
+[67:19.76] correct. uh on the port 3000 it's
+[67:22.16] running that's okay but it's actually
+[67:24.00] running on just the test as of now and
+[67:26.64] then I can send the headers as well so I
+[67:28.88] can just say dash header and then I can
+[67:32.48] just simply say all this so you can see
+[67:34.96] dash h stands for header can I zoom this
+[67:37.68] yes dash h stands for the headers and I
+[67:41.20] can send the headers of content type as
+[67:43.04] application JSON then I can send some
+[67:44.80] data with dash cap smaller d and this is
+[67:47.76] my data and by the way always wrap your
+[67:49.60] data in the singular quotes that's how
+[67:51.44] it takes it. Uh then we have this name
+[67:53.76] Alice all of that once I send this you
+[67:56.72] will notice that at the behind it says
+[67:58.88] running and it says now completed. Let
+[68:01.04] me do that one more time so that you can
+[68:02.48] pay more attention. Notice here behind
+[68:04.32] the scene where it says completed. So if
+[68:06.32] I run this again here notice it says
+[68:08.40] running and then it says completed
+[68:10.56] because we are doing so much of the data
+[68:12.72] and what we get from this data is event
+[68:15.28] sent successfully. We get the event ID
+[68:17.36] which is 0 something this whole big
+[68:19.84] thing and then we simply say tip check
+[68:22.32] all of this one. So what happened onto
+[68:25.12] this one? Let's analyze that. So when
+[68:27.84] you send this event and all of these
+[68:29.60] things first of all the event is caught
+[68:33.44] by this request which is on the / test.
+[68:36.24] Remember this is where we are sending
+[68:38.08] the request. Where is my warp? Here it
+[68:40.08] is. So we are sending this web request
+[68:42.00] to the / test. This is where it goes.
+[68:44.64] After that this catches up my web
+[68:46.48] request and invokes the ingests a
+[68:50.08] function or an uh yes this is a function
+[68:52.72] which is named as test/h hello world and
+[68:55.84] it sends the this much of the data along
+[68:57.84] with this. So remember we are sending
+[68:59.12] the name in the request body. So this
+[69:00.88] name is being captured and is being
+[69:02.56] transferred as the data to this one.
+[69:04.80] After that the whole acquisition is
+[69:06.72] taken up by this hello world function
+[69:08.96] and everything and anything that you
+[69:10.64] mention in this one this actually is
+[69:12.72] being taken here. So this is the event
+[69:14.64] name which can be responsible for
+[69:16.64] triggering this whole hook or this whole
+[69:18.56] event. Hook is not a right word here.
+[69:20.96] Okay. So what it did in the step one, it
+[69:23.68] actually returns a greeting message
+[69:25.44] here. We'll see that what it returns
+[69:27.04] back to us. Don't you worry. And then it
+[69:29.76] goes through all of this. It waits for 2
+[69:31.60] seconds and this logs the completion and
+[69:33.20] everything. And we can actually see all
+[69:34.64] of this here here in this case as well.
+[69:37.04] So notice here this whole greeting event
+[69:38.80] sent successfully.
+[69:40.96] Uh function completed successfully and
+[69:44.00] no this is not the one here it is. So
+[69:46.96] this whole event and created greeting
+[69:49.44] and welcome all of this is being sent to
+[69:51.68] us. And by the way we can actually check
+[69:53.60] them. Click on any one of them and you
+[69:55.28] get more data. The app my express was
+[69:57.84] responsible for this. This is my running
+[69:59.60] ID. So I can verify that again. This is
+[70:01.60] the starting. This is the ending. This
+[70:03.68] is the function. This is the duration.
+[70:05.20] This is the cued at. And you can copy
+[70:06.80] that Q ID. So the whole infrastructure
+[70:08.96] is managed here. This is where you can
+[70:10.88] see the function payload as well. The ID
+[70:12.72] is this, the name is this, the data that
+[70:14.56] is being sent, the time stamp that we
+[70:16.40] have given. All of this we can send it
+[70:17.92] to dev server. Copy this. There's a
+[70:19.84] whole bunch of things and these are all
+[70:22.16] the further substep in the function that
+[70:24.16] you have created. So notice this, this
+[70:25.68] is create greeting. So this has created
+[70:27.76] the greeting. Then there's a short delay
+[70:29.84] which does nothing of course. And then
+[70:31.76] there is attempt zero. There is attemp
+[70:33.84] one. And then there's a uh log
+[70:36.24] completion. So completed true. And then
+[70:38.08] there is a finalization where you
+[70:39.52] receive event ID, message and the time
+[70:41.36] stamp. So everything is given to you.
+[70:43.60] And this is so much of a high valuable
+[70:46.40] data and highly complex application that
+[70:48.56] a lot of people and in fact I've seen so
+[70:50.64] many people they can't do it. And the
+[70:52.00] best part there's a rerun button. So in
+[70:54.40] case for some reason this fails you can
+[70:56.32] actually rerun and analyze the whole
+[70:58.08] thing. Now let me go ahead and quickly
+[71:00.08] add uh one more uh function here to walk
+[71:03.84] you through that how the multi-step test
+[71:05.60] is going to be written. So bear with me.
+[71:07.28] This is a little bit of the code that we
+[71:08.88] have to write. So in the index this is
+[71:12.88] all done.
+[71:15.20] So we'll do app.post post
+[71:18.64] and we'll say slash test dash multi
+[71:24.32] same
+[71:26.08] a sync request.
+[71:29.36] Come on this request response
+[71:34.16] goes like this and again holding up our
+[71:37.12] try catch the catch part the same.
+[71:41.28] Copy that and paste that.
+[71:44.64] Good enough. And what happens in the try
+[71:47.12] part? We do a first log which says
+[71:51.04] sending multi-part
+[71:54.08] demo event. After that the same stuff we
+[71:58.48] extract the ids from that and await
+[72:03.44] inest
+[72:04.96] dot send. We send this like this and
+[72:08.64] this time the name. How do we grab the
+[72:10.88] name? I'm pretty sure now that you know
+[72:12.96] about it. You know exactly
+[72:18.08] don't worry this is just a chapter two
+[72:19.84] we have so much to study about this all
+[72:22.48] right so this is the multistep that we
+[72:25.52] have got the next step is data you get
+[72:27.92] that
+[72:30.00] and the data we are sending is user id
+[72:33.12] again the user ID will be extracted by
+[72:35.04] request dot uh body dot user id user
+[72:39.20] needs to send this otherwise we'll just
+[72:41.76] for the safety reason we'll say user one
+[72:43.68] two
+[72:44.96] And we'll also send an action as demo.
+[72:48.96] It can be anything. Uh this is what we
+[72:51.36] have. And by the way, you can copy paste
+[72:53.04] some of this thing.
+[72:57.60] Okay. Come on. Get away.
+[73:01.28] Copy this
+[73:04.32] and paste it up here. Extra comma. Don't
+[73:07.92] need that. And we have this console log.
+[73:11.36] We can save this.
+[73:13.60] We need to fix it a little bit. This is
+[73:16.72] okay. Instead of sending event send
+[73:19.44] successfully, this one should say multi-
+[73:22.40] step
+[73:24.00] event
+[73:26.64] send successfully. Not send
+[73:30.00] successfully. And this will exe this one
+[73:32.64] is okay. Not worried much on that part.
+[73:35.44] And there we go. All right. Seems okay.
+[73:39.28] Let's see if we do need to restart
+[73:41.04] anything.
+[73:42.64] No, I don't think we have a watch mode.
+[73:45.44] If I save this, it auto reloads. All
+[73:48.96] right. So, now can we go ahead and send
+[73:51.20] this multi-step data or multiart data
+[73:53.60] and we should be able to run this. Uh,
+[73:55.84] this would be nice. And
+[74:00.56] there we go. I can refresh the all the
+[74:03.20] runs, which I definitely don't want to
+[74:04.96] do. But here's my uh trusty curl. So I'm
+[74:09.12] going to go ahead and say curl we want
+[74:11.36] to send a post request to HTTP localhost
+[74:15.84] this time slash this one will be test
+[74:18.80] dash multi
+[74:20.96] uh the data is same content type
+[74:22.88] application JSON the data is there and
+[74:26.48] user ID
+[74:29.36] user 456 is good enough we can
+[74:32.72] definitely go more for that but I think
+[74:34.48] that's that's good enough if I enter
+[74:36.56] this there we go behind the scene You
+[74:38.40] can see it is still running and we can
+[74:39.92] see this all happening live in front of
+[74:42.56] us. Takes a little bit time but I think
+[74:44.96] if I do a little bit faster this we can
+[74:47.76] actually see all of this. So let's run
+[74:49.92] this
+[74:51.52] and there we go. And there we go all
+[74:54.00] happening live in front of us. So this
+[74:56.16] is the way or this is the mechanism how
+[74:58.40] you can see all the requests being sent
+[75:00.32] to LLM. What streaming of the data is
+[75:02.80] coming up? What the response is coming
+[75:04.40] in. You can watch and witness everything
+[75:06.88] live. So notice this is love live this
+[75:09.36] is the fetch data that we are trying to
+[75:11.28] do important data and the user 456 then
+[75:14.32] we are trying to do a process data then
+[75:16.16] we have some weight before final so at
+[75:18.24] m1 attemp zero so these are just waiting
+[75:20.40] and then we save the result to database
+[75:22.24] and then we finalize this and send all
+[75:24.48] the data back and this is one of the
+[75:27.04] beautiful thing that you can have and
+[75:28.88] notice here you also get some data back
+[75:30.64] so message multi-step event successfully
+[75:32.88] event ID and all the tip that we want to
+[75:36.08] send And you can definitely do more
+[75:38.56] processing on that. Maybe send an email
+[75:40.80] to the user because for the web request,
+[75:42.80] it's just one data went up and it just
+[75:44.72] closed the data. That's it. But I hope
+[75:46.64] you got the idea that why I say that
+[75:49.04] this is one of the most powerful thing
+[75:51.52] uh that you can have in your
+[75:52.56] application. So we haven't written much.
+[75:54.40] It's just a different way of writing the
+[75:56.64] whole code. But uh you got more idea in
+[75:59.20] the chapter 2 as compared to the chapter
+[76:00.88] one that how these things actually make
+[76:02.72] sense. So yes, my strategy is definitely
+[76:04.88] a little bit uh odd from the others. I
+[76:07.12] like to go in the step-by-step manner in
+[76:09.04] the easiest bit and chunks, but
+[76:11.20] eventually you get more confidence with
+[76:12.80] this strategy. So that is it. That's the
+[76:14.64] chapter two of ingest. I hope you have
+[76:16.48] now much much more confidence uh so that
+[76:19.04] how you can inject ingest in your
+[76:21.60] application. That's it for this one.
+[76:23.36] Let's catch up in next one.
+[76:26.72] All right. Welcome to the chapter 3 of
+[76:29.28] our ingest course. Now in the past two
+[76:31.84] chapter I have walked you through with
+[76:33.28] each and every line of code so that we
+[76:35.28] can truly understand and take a moment
+[76:37.36] in writing the code itself which gives a
+[76:39.60] pause in the whole flow of the ecosystem
+[76:42.48] and gives you enough of the time to
+[76:43.92] absorb things in your brain. But from
+[76:46.00] this point onward, I would rather go on
+[76:48.08] to the explanation part more than just
+[76:50.40] writing the code. Because you already
+[76:51.84] have seen how the index file is being
+[76:53.84] created, how an object is created from
+[76:55.76] the ingest, how the create function is
+[76:57.76] used, how the three objects are key
+[76:59.92] important aspect of the ingest. So the
+[77:02.32] foundation is all clear. Now we need to
+[77:04.24] understand the different types of
+[77:05.68] concept that we have. So don't expect me
+[77:07.76] to uh simply just follow and along write
+[77:10.24] all the code from this point onward. I
+[77:12.08] would rather go onto the explanation
+[77:13.76] purpose but I'll not dump the entire
+[77:15.52] code in front of you. We will walk
+[77:16.80] through with entirety of each line of
+[77:18.72] code. Why this is here? What it's doing?
+[77:21.12] Why is it important in all aspect don't
+[77:22.88] worry you will have a complete good time
+[77:24.88] in understanding the ingest and
+[77:26.72] especially the fan out architecture of
+[77:28.80] this. Now usually for a fan out
+[77:31.04] architecture a event comes and this
+[77:33.44] single event is distributed to multiple
+[77:35.84] of the services and hence the name a
+[77:38.48] fanout architecture. One of the common
+[77:40.80] thing or common architecture that you're
+[77:42.72] going to see for the fanout architecture
+[77:44.48] is Kafka ecosystem. But you don't need
+[77:46.96] Kafka if you have inest. So let me walk
+[77:49.12] you through with the entirety of detail
+[77:50.88] how to set up a fan out architecture.
+[77:54.00] All right. So let me take you onto the
+[77:55.44] screen and together we are going to have
+[77:57.12] a discussion on this. So this is so far
+[77:59.76] our ecosystem that we have been playing
+[78:01.68] around. Let's go ahead and create a new
+[78:03.84] folder inside this. We are going to call
+[78:05.68] this one as chapter 03. This is our fan
+[78:08.00] out architecture where we're going to
+[78:09.44] have the things. Now a couple of things
+[78:11.20] will still remain same like package
+[78:13.12] JSON, package lock JSON file, even the
+[78:15.60] TS config. Uh these are going to just
+[78:18.16] remain exactly same. So let me go ahead
+[78:20.96] and grab copy them and paste them inside
+[78:23.68] this. They are going to remain exactly
+[78:25.36] same. In fact, we will have the source
+[78:27.28] in other folders as well. So I would
+[78:30.32] just rather have this here. So let's
+[78:33.60] have a src folder. And just to speed up
+[78:37.12] the things I will this time use bun
+[78:39.44] because bun is relatively much faster in
+[78:42.72] my case and probably your case as well.
+[78:45.84] So let's just stop this and simply have
+[78:48.16] bun install in oh I'm actually in the
+[78:52.16] wrong folder. So remove all of them and
+[78:55.76] now open up a new integrated terminal in
+[78:58.72] chapter 3 and let's call this one as bun
+[79:01.52] install. And yes, this is ridiculously
+[79:04.80] fast as compared to the previous one.
+[79:06.72] Now the steps are going to remain
+[79:08.48] exactly same. The first step is to
+[79:11.20] create a new folder inside the source
+[79:13.28] and we're going to keep everything
+[79:14.64] related to ingest in inside this. But
+[79:17.44] also the source needs one more file
+[79:19.52] which is going to be index.ts
+[79:22.08] or js whatever makes sense to you. And
+[79:24.56] this is where our first interaction
+[79:26.72] through the express will remain. Now we
+[79:30.08] have already seen that whenever we
+[79:31.68] create this ingest, we try to keep the
+[79:33.84] object a bit separate. So we'll do the
+[79:36.16] same in this one as well. I'll call this
+[79:37.92] one as simply index or most likely you
+[79:41.60] like to call this as client in this
+[79:43.36] case. So client.ts.
+[79:45.28] And what's going to be the code inside
+[79:47.76] the client.ts and this is where we are
+[79:49.68] not going to spend much of the code in
+[79:51.20] writing. Uh surely you can go ahead and
+[79:52.96] write this. There is no issue in that.
+[79:54.96] But here we simply create an injust as
+[79:57.20] we extract the ingest class itself. We
+[79:59.20] create an object to create an uh new
+[80:01.92] object of ingest and we simply export
+[80:03.68] that. That's the standard way of doing
+[80:05.28] the things. Now once we do this this
+[80:07.68] time we are kind of simulating an
+[80:09.76] environment of user ed registration or
+[80:12.32] user enrollment on our application. It
+[80:14.96] is recommended that you create all of
+[80:16.80] your functions inside a functions
+[80:19.12] directory but not compulsory. It's up to
+[80:21.04] you how you architecture your
+[80:22.40] application. and I'll create a new file
+[80:24.40] into this since all of the user signup
+[80:26.80] related uh stuff will live here. So I'll
+[80:28.80] call this one as user signup.ts. The
+[80:31.36] step one is pretty simple. You go ahead
+[80:33.04] and simply say I want to have an ingest
+[80:35.36] with a smaller ingest that we have
+[80:37.84] exported.
+[80:39.44] So no suggestions
+[80:42.96] and this one will come from the current
+[80:45.28] directory.
+[80:47.60] Current directory and client feel free
+[80:49.84] to add a ts that's up to you. So this is
+[80:52.80] the basic part of it and why is it
+[80:55.44] giving me it's declared but not used
+[80:57.28] that's okay. Now how does the whole
+[80:59.92] thing and ecosystem work is we create a
+[81:02.24] whole lot of different functions in this
+[81:04.24] one. So first one is going to be
+[81:07.92] export const and this is send welcome
+[81:11.84] email. any application or any service
+[81:14.24] that takes much of the time that's a
+[81:16.72] usual clue to go ahead and create a
+[81:18.80] separate function or separate injust
+[81:20.88] function for that. Now what goes inside
+[81:23.44] this is pretty simple. Uh there are two
+[81:25.84] major thing that we have already seen.
+[81:27.28] The first one is the name. You can
+[81:29.36] define an ID which can be unique to each
+[81:31.60] function and then an optional name send
+[81:33.84] a welcome email that makes sense. Now
+[81:35.92] event as we have discussed this needs to
+[81:37.76] be like this format. uh they actually
+[81:39.92] mention this format in their
+[81:41.20] documentation as well like uh sometimes
+[81:43.76] verbs and actions and all those
+[81:45.36] combination but what makes sense to me
+[81:47.04] that what model am I touching with this
+[81:49.20] so user is the model or user is the
+[81:51.12] object that I'm touching up what action
+[81:53.20] I'm taking uh sign up is the action and
+[81:55.36] what verb is going to be there so is it
+[81:57.20] completed in a step in verification or
+[82:00.00] something like that so that's the basic
+[82:01.60] event now after that you simply go ahead
+[82:03.76] and write your call back call back
+[82:05.68] doesn't bother in this case because
+[82:07.36] anyways we are just simulating the
+[82:09.04] stuff. So, uh I'm just going to throw
+[82:11.44] this function here which actually sends
+[82:12.96] an email. It doesn't sends actual email.
+[82:14.80] It just simulates that we are sending
+[82:16.32] the email. So, we simply extract email
+[82:18.72] name and plan from the event data. We
+[82:20.64] have already seen that. Couple of
+[82:22.96] console logs to make us happy. And then
+[82:24.96] we simply say that we are preparing the
+[82:26.64] content based on the plan. So based on
+[82:29.20] what plan user is subscribed to us while
+[82:31.76] signing up. Is it a free plan? Is it a
+[82:34.16] pro plan? Is it an enterprise plan?
+[82:35.92] Based on that we're extracting the
+[82:37.84] benefits and then finally we are just
+[82:39.36] returning this email and that's all what
+[82:41.76] we are doing once we are done with the
+[82:43.76] email which is email content being
+[82:45.60] progressed we are simply sending the
+[82:47.60] email so this is a step run of sending
+[82:49.52] the email assume that this is contacting
+[82:51.68] your email API server delivering all of
+[82:54.40] the data and all of that and this one
+[82:56.32] here simply simulates an API service
+[82:59.28] which simply sends an email and for that
+[83:01.28] you might have to wait for a few seconds
+[83:02.96] or few minutes depends on the service
+[83:04.96] and finally We simply send that all
+[83:06.56] right email is being done. Not only that
+[83:09.04] we also log this information that all
+[83:11.20] right the email is being sent. So we
+[83:13.04] want to log this into your uh post hog
+[83:16.08] or whatever the logging services you're
+[83:17.52] using and that's it. The whole part is
+[83:19.28] all done. So as you can see and the most
+[83:21.84] important part to catch up here is this
+[83:24.00] event. We will use this again. So the
+[83:27.28] event the single event which is
+[83:28.88] triggering all of this is user then
+[83:30.96] signup.completed.
+[83:32.96] I hope this is making sense now and all
+[83:35.60] of the things are good. So far we have
+[83:37.76] already seen this. There is nothing much
+[83:39.52] new that we are actually exploring in
+[83:41.36] this case. What's interesting that we
+[83:44.00] can do here is that we haven't discussed
+[83:46.40] much is something like this. Setup user
+[83:53.52] preferences.
+[83:59.68] User preferences. And for this also we
+[84:02.48] can just use inest.create function just
+[84:04.96] like this which has an object uh just
+[84:07.52] goes like this or we can just simply hit
+[84:09.76] an enter in this case. All right. What
+[84:13.20] you will notice in this case what we are
+[84:15.28] doing is kind of exactly same but little
+[84:18.08] bit different. Notice here closely this
+[84:20.56] was send welcome email. This is setup
+[84:22.72] user preferences and the name can be
+[84:25.36] anything that you like. And then notice
+[84:27.52] the event here. The event is still the
+[84:29.36] same. User signup completed. And here
+[84:31.84] also user signup completed. Now the
+[84:34.16] obvious question is which one is going
+[84:36.16] to act first? Uh is going to be the line
+[84:38.80] number four function which will act
+[84:40.40] first or the line number 89. Here's the
+[84:43.04] interesting thing about the ingest. All
+[84:44.96] of these are independent yet invoked by
+[84:47.68] the same action call which is user
+[84:50.64] signup.comp completed and they are
+[84:52.96] completely independent of each other. If
+[84:54.96] one fails it doesn't bother the other
+[84:56.88] one. Both can be completed, both can be
+[84:59.20] failed or one can be succeeded, one can
+[85:01.28] be failed in this case. Now again what
+[85:04.08] we are doing in the async function
+[85:06.24] that's not that should not bother us in
+[85:09.04] this case because it anyways we have
+[85:11.04] seen this already uh in last two
+[85:13.12] chapters that how this is all being
+[85:14.48] done. So it's just a simulation. It's
+[85:16.72] just a [clears throat] simulation where
+[85:17.68] we are simply console logging a few
+[85:19.12] stuff that hey we are working on user
+[85:20.72] preferences. Maybe we connect to some
+[85:23.28] database some use some default
+[85:25.04] preferences here based on the plan. It's
+[85:26.96] just more simulation so that we get real
+[85:29.12] world idea of how these things are done.
+[85:30.96] When we write to the database, we want
+[85:32.56] to await for a few seconds, few
+[85:35.44] definitely not minutes but definitely
+[85:37.20] few seconds and then we simply set up
+[85:39.20] the preferences and send the preferences
+[85:42.32] confirmation email also. Sometimes maybe
+[85:44.72] user is changing the paid plan to some
+[85:46.72] else plan, maybe some more
+[85:47.92] configurations are being changed, maybe
+[85:50.00] there's some uh revenue share pricing
+[85:52.64] that's being changed that should send or
+[85:54.32] trigger an email as well. So there could
+[85:55.84] be an email in that case based on that.
+[85:58.08] And finally we are returning. So
+[85:59.20] whatever is your business logic go ahead
+[86:00.96] and work on business logic in this case.
+[86:03.28] Import your database, import your
+[86:04.64] models, whatever you want to do. But
+[86:06.64] here's the interesting thing that all of
+[86:08.24] this can be done uh exclusive to each
+[86:11.68] other. And just to prove the theory and
+[86:14.56] to not to prove that to really solidify
+[86:17.44] the learning here, I'll go ahead and
+[86:19.52] simply say that I want to track the
+[86:21.52] signup as well. So maybe and usually
+[86:23.44] there's a tracking service involved in
+[86:25.52] big large scale application. So track
+[86:28.32] signup analytics there is another
+[86:31.60] function and you can write as many
+[86:33.28] function as you like. There is no
+[86:35.12] shortage of these function. So in this
+[86:37.28] case also I can go ahead and work on
+[86:39.60] with that and that is why I say that
+[86:41.92] anything and everything that's related
+[86:43.76] to user signup because in future you
+[86:45.76] might have more services available. The
+[86:48.16] only thing you have to worry about is
+[86:49.84] that the trigger element is exactly same
+[86:52.16] because when users sign up into our
+[86:54.32] express application, we will be
+[86:56.24] triggering this uh event. We'll be
+[86:57.92] sending this event and once we send this
+[87:00.08] event, these three will become an
+[87:02.24] independent workflow of each other.
+[87:04.24] That's the whole thing. Now let's also
+[87:06.16] go ahead and grab another simulation of
+[87:08.56] this function that we have already seen.
+[87:10.64] And there we go. So again, not much is
+[87:13.84] happening in this. We are just tracking
+[87:15.44] the analytics. So we extract the user
+[87:17.20] ID, plan and signup data. Uh do a step
+[87:19.84] run to send the analytics to any
+[87:21.60] services that you are working on. And
+[87:23.20] again I have tried to make it look as
+[87:25.52] close as possible. But these are again
+[87:27.28] simulation. We simply try to simulate uh
+[87:30.08] for 700 milliseconds here that maybe you
+[87:33.04] are returning it to post hog sentry
+[87:35.84] depends on what you want to do. All
+[87:37.44] right. So as you can see pretty simple
+[87:40.24] stuff not much to worry about and I hope
+[87:43.04] now you can appreciate that how much
+[87:44.56] time we are saving by just having a walk
+[87:46.96] through because this is anyways a
+[87:48.48] simulation environment so once this is
+[87:51.20] all done that means all of our part is
+[87:53.44] done we don't have to worry anything
+[87:55.20] about it and just work on that now
+[87:58.48] another thing that sometimes you might
+[88:01.12] be doing is using these analytics event
+[88:03.68] you might want to set up uh type safety
+[88:06.24] or events
+[88:08.08] might want to define the types of user
+[88:10.16] signup event or analytics. That's
+[88:11.60] totally up to you. Again, this is
+[88:13.52] nothing much to do with the regular
+[88:16.00] stuff. Anyways, let's go into index.js.
+[88:20.16] Oh, this client should ingest. That's
+[88:23.84] good. Okay. I thought we are having it
+[88:26.00] outside. So, we will go ahead and work
+[88:28.16] with the index. And now what we'll do is
+[88:31.12] we'll simply go ahead and first import
+[88:33.20] all these stuff. So we're importing
+[88:35.60] express, we're importing serve from
+[88:37.60] ingest express to serve them on some
+[88:39.36] endpoint. Then we simply grab the ingest
+[88:41.84] client and we simply ingest uh or take
+[88:44.24] up all the functions that we have
+[88:45.92] defined. Uh that's the basic stuff and
+[88:48.56] after that uh we simply go ahead and
+[88:51.12] define them as port and express. We have
+[88:53.92] seen them many time shouldn't bother you
+[88:55.76] much. We have also seen that how we can
+[88:57.92] write our own custom middleware uh which
+[89:00.48] actually gives us the whole idea of what
+[89:02.72] method is coming up and what method is
+[89:04.48] going out. Also we have to set up the
+[89:06.56] express JSON so that we can accept the
+[89:09.04] JSON data. We've already seen that how
+[89:11.76] to set up the server functions or use
+[89:13.84] the serve which is given to us by the
+[89:16.48] ingest express combination and in that
+[89:19.52] we have two things always client is in
+[89:21.60] just again exactly same as chapter 2
+[89:24.24] functions bring up all the functions
+[89:26.08] that you have used so that you can see
+[89:27.44] them and have a visualization in here
+[89:30.00] and sometimes uh since we are doing a
+[89:32.48] simulation of in-memory environment
+[89:34.48] we'll not connect any database so this
+[89:36.32] is my interface for the user again
+[89:38.48] typescript stuff shouldn't bother you
+[89:40.24] much and we're keeping all the users in
+[89:43.36] memory not in the database itself. So
+[89:46.08] feel free to just go ahead and grab this
+[89:47.76] one all up here. Now I have a couple of
+[89:50.32] health check endpoints as well. So these
+[89:52.32] are just the basic ones so that when you
+[89:54.08] run these application it should actually
+[89:55.92] give you something. So we will have
+[89:57.92] couple of endpoints. First of all status
+[89:59.60] is healthy message is all there and
+[90:01.60] endpoint we should have a post endpoint
+[90:03.92] which says / ai/signup.
+[90:06.48] We might have optionally this is not
+[90:08.64] compulsory get API call to get all the
+[90:11.28] users and for the ingest automatically/
+[90:13.60] API/gest and this uh middleware is
+[90:16.88] responsible for that it automatically
+[90:18.48] handles the stuff we don't have to worry
+[90:20.24] anything about it now coming back on to
+[90:23.28] the post request that we have which is
+[90:25.52] going to trigger all of this you'll be
+[90:27.04] surprised to see that how easy it is so
+[90:29.76] if I go back up at the very top of this
+[90:31.76] it looks a lot but it is not it's just a
+[90:33.60] simulation so first of all we open up a
+[90:36.48] simple try catch block. Pretty simple.
+[90:38.48] In the catch part, we simply go ahead
+[90:40.24] and throw the error instances. Pretty
+[90:42.48] simple, very standard one. And in the
+[90:44.64] try part, we first extract all the data
+[90:46.96] just like you extract in the real
+[90:48.32] application. Add some validation.
+[90:51.28] Totally depends on you. Maybe you have a
+[90:52.96] zod validation, maybe you have use
+[90:55.04] something else. Totally up to you. But
+[90:56.88] the whole point is to simulate as
+[90:58.40] closely as a real world environment.
+[91:00.24] Then we simply check what plan user is
+[91:02.80] opting for. free plan, enterprise plan
+[91:04.88] or a pro plan. And then we optionally
+[91:07.36] check whether the user exists in our
+[91:09.12] database or in this case inmemory array.
+[91:11.68] But feel free to go ahead and fire up
+[91:13.20] your request to the database to see
+[91:14.56] whether the user already exists or not.
+[91:16.48] If user doesn't exist, we simply go
+[91:18.32] ahead and create that user. Uh we simply
+[91:20.88] take the ids or we sometimes don't take
+[91:23.28] database creates ids for us. name,
+[91:25.44] email, go ahead and run your encrypt
+[91:27.36] password mechanism or your methods for
+[91:30.32] that and simply go ahead and push the
+[91:32.56] user into your database. MongoDB,
+[91:34.56] Drizzle, MySQL, Postgress, whatever you
+[91:36.96] take. Once you are done with that, this
+[91:39.28] is how the usual workflow should look
+[91:41.04] like. Ingest functions are just optional
+[91:44.16] things like not optional but they should
+[91:46.72] happen after saving the user in your
+[91:48.72] database. Email, analytics, all these
+[91:51.36] things are secondary for us. The first
+[91:53.60] important thing is to save the user
+[91:55.44] information in the database. So we do
+[91:57.68] that first. After that this is the part
+[92:01.04] where simply uh trigger this. This is
+[92:03.12] the key moment. Send the event to the
+[92:05.12] ingest. And this one event will trigger
+[92:07.76] three functions in parallel. The three
+[92:09.60] functions that we have created. Now this
+[92:11.52] three here is optional and there could
+[92:15.36] be much more and I have seen that there
+[92:18.48] could be many more. Three is just an
+[92:20.72] arbitrary number here. It could be 30 as
+[92:23.44] well. No problem at all. Ingest can
+[92:25.84] totally handle that. And what we do is
+[92:28.16] we simply say that ingest.end. And this
+[92:30.40] is where we put the name of the event.
+[92:32.64] Again, notice here user/signup.created.
+[92:35.68] There could be more events on login.
+[92:37.76] User/lo.completed
+[92:40.48] or login.
+[92:42.32] Whatever is the case. There could be
+[92:44.32] same events that can happen on your
+[92:46.08] orders created, wish list created or
+[92:48.64] maybe order completed as well, processed
+[92:50.72] as well. Even you can wire up the web
+[92:53.04] hooks as well. So many stuff can happen
+[92:54.88] in this one. And this is the data that
+[92:57.04] we are sending up. And by the way, if
+[92:58.56] you remember, if you notice here, the
+[93:00.32] data is all coming up from the database
+[93:02.40] itself in this case. And that is all you
+[93:05.12] have to do. That's it. that is is
+[93:07.60] triggering three independent workflow
+[93:10.32] that can be managed that can be
+[93:11.92] monitored from the ingest workflow
+[93:13.68] itself. And this whole thing is known as
+[93:16.16] the fan out architecture. And the fan
+[93:18.88] doesn't need to be fanned out only
+[93:20.32] through the three events. It could be 30
+[93:22.00] as well. Rest of the stuff is pretty
+[93:23.76] simple. This is where we simply send the
+[93:25.52] response back to the user. No extra work
+[93:27.84] is being done here. Now surely in the
+[93:30.00] notes or these code files, I'll give you
+[93:31.76] more of the details as well. But I hope
+[93:34.24] now this is giving you more idea of how
+[93:36.24] the things are actually being done. It's
+[93:38.16] not that easy. Why are you having an
+[93:40.56] issue?
+[93:43.44] Okay, this is happy now in this way. I
+[93:45.84] am okay with that. Anyways, I shouldn't
+[93:47.76] be bothering up much and this is okay.
+[93:50.32] So I hope you got the idea in this
+[93:52.08] chapter that how the fan out
+[93:53.44] architecture can be used in the ingest.
+[93:55.60] It's relatively simple and we are saving
+[93:58.08] so much of the time by walking through
+[93:59.68] with the code because there is no point
+[94:01.28] there is no sense of writing the same
+[94:02.88] code again even in the upcoming chapters
+[94:05.28] also the code is kind of exactly same
+[94:07.60] but I'll give you these code files
+[94:09.04] anyways uh applications like inest are
+[94:11.60] not something that uh if it is your
+[94:13.92] first day of creating the API you
+[94:15.44] usually don't see them this is usually
+[94:17.20] meant for somebody who has already done
+[94:18.96] kind of decent level of cred application
+[94:20.88] through the backend architecture I hope
+[94:23.12] you have enjoyed this and you're getting
+[94:24.40] some value out of these videos. If yes,
+[94:26.64] please drop a like, a heart, a comment,
+[94:28.96] anything. Just a thank note in the
+[94:30.48] comment section. I would be super happy
+[94:32.16] with that. That is it. Let's catch up in
+[94:34.32] the next video.
+[94:37.84] Welcome to the chapter 4. Yes, that's
+[94:40.96] chapter four for this one. So, in the
+[94:43.12] chapter 4, we are going to study about
+[94:44.88] another important aspect of building
+[94:46.80] scalable application which is chron
+[94:48.72] jobs. Chron jobs in case you have never
+[94:50.96] done with uh or worked with them these
+[94:53.04] are scheduled job that happens no matter
+[94:55.36] what is there some of the key examples
+[94:58.08] of the chron jobs and in fact any
+[95:00.16] application which is just above the
+[95:01.76] medium scale requires 100% of the cron
+[95:04.88] jobs and there are dedicated servers
+[95:08.16] which are kept just to run these chron
+[95:10.00] jobs not anymore you can just hand over
+[95:12.00] all of these tasks to ingest as well so
+[95:14.64] how can we do that and what could be the
+[95:16.24] example of these chron jobs maybe every
+[95:19.20] day at 9:00 a.m. you want to collect
+[95:21.28] some reports or want to extract some key
+[95:24.56] information from the database, craft
+[95:26.64] this as an email and want to send it to
+[95:28.80] the sto uh stakeholders so that they can
+[95:31.36] take some actions maybe CEOs, CTO's or
+[95:34.24] some somebody else who manages this
+[95:36.08] infrastructure. Now this is a activity
+[95:39.20] that needs to happen every day at 9:00
+[95:41.44] a.m. and you have no control. There is
+[95:43.12] no event being sent. It just needs to
+[95:44.96] happen. Another example is maybe every 2
+[95:48.16] hour you collect the detailed report of
+[95:51.04] abandoned cart information. Now for this
+[95:53.04] you might have to connect with database
+[95:54.80] and grab the information but this needs
+[95:56.64] to happen every 2 hour so that you can
+[95:58.96] collect the information of all these
+[96:00.48] people send it to your sales team and
+[96:02.56] they can actually do a follow-up with
+[96:05.12] entirety of the abandoned cart user that
+[96:07.84] can heavily impact the sales operation.
+[96:10.48] Another thing that can be done is a
+[96:12.24] database cleanup. Maybe every day at
+[96:14.72] 2:00 a.m. you do the database cleanup.
+[96:17.12] Stuff like uh all the spam emails that
+[96:19.84] happen to register or all the temporary
+[96:21.84] inbox email users that have showed up
+[96:24.08] and you have a database where you can
+[96:25.60] match them up. You want to just discard
+[96:27.44] them or maybe all those people who
+[96:29.36] haven't who have just signed up but
+[96:31.36] haven't confirmed their email. You want
+[96:33.44] to shoot them an email again. Maybe some
+[96:35.92] kind of another uh database cleanup that
+[96:37.84] you usually do. Maybe add things into
+[96:40.16] read replicas or whatever you do. there
+[96:41.84] is some uh activities that happens at 2
+[96:44.00] a.m. every day. You get the idea that
+[96:46.00] cron jobs are really important that
+[96:47.84] needs to happen. So how we can utilize
+[96:50.40] ingest in having the chron jobs and what
+[96:53.04] does it mean by to have a chron job?
+[96:55.04] What's the format? What's the structure?
+[96:57.04] That's exactly what we are going to
+[96:58.24] study in this one. Let me go ahead and
+[97:00.16] walk you through with the entire detail
+[97:01.60] of how the chron jobs are being done.
+[97:03.28] Again, it's really simple. And for this
+[97:05.76] also we will bring up a few of the
+[97:10.72] common files. I think this is enough. So
+[97:13.20] I'll just copy this and let's create
+[97:15.84] another chapter. So we'll create
+[97:20.08] a chapter04.
+[97:22.80] That's good enough. And inside the
+[97:25.04] chapter we'll just paste these files. So
+[97:27.28] we can just remove this. And we can do
+[97:30.24] the bun install here as well. No
+[97:32.32] problem. I'm just trying to keep them
+[97:34.08] separate. So that you get all these
+[97:36.08] details separately. So bun install
+[97:39.12] should be good should be fast enough and
+[97:41.84] rest of the stuff will remain exactly
+[97:43.92] same for this one. So let me just go
+[97:46.56] ahead and create a new folder which will
+[97:49.44] be src.
+[97:51.20] We will work on our index file but index
+[97:54.00] file in this case doesn't matter much
+[97:56.32] because any express application basic
+[97:58.64] express application should be good good
+[98:00.48] enough. it doesn't really interact with
+[98:02.80] what we are about to design. Now a
+[98:05.04] couple of thing that we always go ahead
+[98:06.72] and design in this case is
+[98:09.44] first of all a new folder which is
+[98:13.60] inest to keep all the ingest activities
+[98:16.16] up and separate and what we're going to
+[98:18.64] do is create a new folder inside it.
+[98:20.64] We'll keep all of our functions inside
+[98:23.12] this and inside the function we'll keep
+[98:27.04] this one. So inside the ingest I'll
+[98:28.96] create a new file and we are going to
+[98:30.64] call this one as simply client.ts.
+[98:33.68] Client gets the same data just like what
+[98:35.60] we have. We just changed the ID to
+[98:37.44] schedule job and nothing much. So no
+[98:39.92] excitement here. We have already seen
+[98:41.44] that in the past three chapter.
+[98:43.04] Shouldn't be explaining this any
+[98:44.48] further. All right.
+[98:47.20] So now inside the functions we will
+[98:49.76] create a new file and this will be our
+[98:53.20] scheduled uh.ts.
+[98:55.84] Okay. Okay. So how do we design these
+[98:57.68] schedules? Again uh there is no
+[99:00.32] extraordinary special stuff with that.
+[99:02.08] So first of all is you import the ingest
+[99:07.28] from the client. That's basic. And after
+[99:10.48] that let's just say we design the
+[99:12.16] functions just like this. So export
+[99:14.08] const this is my daily sales report. Now
+[99:18.80] again the logic totally depends on you
+[99:20.72] what you really want to do. I just want
+[99:22.40] to show you how these functions are
+[99:24.24] invoked. uh on the basis. So step one is
+[99:28.16] same you design the ID and id should be
+[99:31.68] unique but it doesn't needs to be uyu ID
+[99:34.72] unique. If you name them uniquely that
+[99:37.36] should be enough. If you name them
+[99:38.96] descriptive descriptively that should be
+[99:41.36] enough.
+[99:43.44] So ID and the name remains same. So
+[99:45.60] daily sales report also in the ID it is
+[99:50.32] recommended that you don't use any
+[99:51.84] spaces. That's going to be good for you.
+[99:54.16] Now here you have seen that inside this
+[99:56.56] we usually mark our event. Uh if you
+[99:59.60] have noticed this is the event that's
+[100:01.12] the one but there is also one more which
+[100:03.12] is known as chron. And what is chron how
+[100:06.24] it works? So chron is not something
+[100:09.12] special to ingest. It's something which
+[100:10.96] is special to the Linux system itself.
+[100:13.44] And there are many chron jobs which runs
+[100:15.52] without even ingest or just with that.
+[100:17.28] But here we can reliably see them in the
+[100:19.84] workflows. We can actually check their
+[100:21.60] failures because chron can run actually
+[100:23.84] in the Linux as well but there is no
+[100:26.40] monitoration on those Linux ecosystem.
+[100:28.56] There is no observability layer. What
+[100:30.64] happens if the chron has failed? I have
+[100:32.24] no information on that. So either I have
+[100:33.92] to install some observability layer on
+[100:35.68] the entire ecosystem or I can just use
+[100:38.00] the ingest which automatically monitors
+[100:40.00] it, retries it and all the charms that
+[100:42.80] comes with that. Now for any of the
+[100:45.04] chron job that you are working on, you
+[100:46.72] will see a syntax just like this. So
+[100:48.72] there are lots of star that goes on. The
+[100:51.52] first star in this one actually means
+[100:53.60] that this is the minute uh minute zero
+[100:56.80] or it just denotes the minute. Then
+[100:58.96] there's a second star which denotes that
+[101:01.76] u what's the hour here. So first one is
+[101:05.20] minute. The second one is hour. Then the
+[101:07.60] third one is actually the day of the
+[101:10.32] month. Uh I will walk you through with
+[101:12.08] some of the examples as well. By the way
+[101:13.52] you can easily find the examples. No big
+[101:15.28] deal there. Once we have the day of the
+[101:17.28] month then we have simply month define
+[101:19.92] from 1 to 12 all you can mark and then
+[101:22.40] there's interesting one which is uh the
+[101:25.12] every day of the week. So this is how
+[101:27.84] usually it is being defined and with
+[101:30.08] these filling up of these values you can
+[101:32.40] define the chron jobs as you will work
+[101:34.16] more with them you will get to
+[101:35.60] understand with them practice is the
+[101:37.84] only key and these days chat GPT helps
+[101:40.16] quite insanely lot. So how do we define
+[101:42.88] crons in the injust ecosystem? The step
+[101:45.52] one is to put everything inside the
+[101:48.00] string and then you define the TZ which
+[101:50.72] is time zone. It is very important and
+[101:53.12] time zone is not at all easy to handle.
+[101:55.68] So let's just say we define the most
+[101:57.20] common America/ uh New York in case you
+[102:00.00] are anywhere else uh in justest
+[102:02.08] documentation will help you to define
+[102:03.68] that time zone. So in this case I'll
+[102:05.12] just say America/ New York but feel free
+[102:07.44] to use any time zone. And then I want
+[102:09.76] this sales report to come every day at
+[102:12.72] 9:00 a.m. So how will I define it? So I
+[102:15.20] will say that uh 9:00 a.m. So it is not
+[102:18.08] 9:30, it is 9. So I'll just say zero for
+[102:21.20] this. And then 9 because it's 900 a.m.
+[102:24.88] So it's 9. Otherwise, it moves on to the
+[102:26.80] 24-hour clock. And then rest of the
+[102:29.04] stuff will go uh no mention of this, no
+[102:31.76] mention of this, no mention of this. So
+[102:33.92] our minute is there, hour is there, day
+[102:36.56] of month don't care of it, month don't
+[102:38.48] care of it. Uh daily day of the week
+[102:40.64] don't care for it. So this is the most
+[102:42.32] basic aspect. Again as you will see more
+[102:45.04] of these examples you will be able to
+[102:47.12] understand more on that. That's it.
+[102:49.36] That's your chron job. And after that
+[102:51.36] what comes up is a sync functions. In
+[102:54.08] these functions we just have the step
+[102:56.00] because there is no data that comes up.
+[102:57.84] It's just a step if you want to go
+[102:59.36] further on that. And then we simply go
+[103:01.28] ahead and work like that. That is it.
+[103:03.12] Now in this case, let's just say uh I
+[103:05.60] will say
+[103:07.68] daily report sent. And this is where you
+[103:10.88] design your entirety of the logic
+[103:13.60] whatever you want to do all these stuff.
+[103:16.00] Let's also handle one handle one more of
+[103:19.04] this
+[103:20.56] uh this chron job so that you get some
+[103:23.44] idea of it. Again these are all
+[103:24.96] independent of each other. You can run
+[103:27.12] multiple of these jobs exactly at 9:00
+[103:29.92] a.m. No problem there. But let me walk
+[103:31.76] you through with one more so that you
+[103:33.12] get an idea of that. So we'll just say
+[103:35.28] that this is the one for
+[103:38.08] abandoned
+[103:40.88] cart recovery.
+[103:44.80] Good enough. And again same goes like
+[103:47.12] that. So inest dot create function just
+[103:50.24] like that. The first step remains
+[103:52.08] exactly same. So I would rather copy
+[103:54.24] paste it. Why to waste any time?
+[103:57.52] And we can just paste this. So this is
+[103:59.60] the first one where we simply instead of
+[104:01.36] this we'll just go ahead and say this is
+[104:03.36] our
+[104:04.88] abandoned
+[104:06.64] cart report. Abandoned card report.
+[104:10.32] There we go. And let me move this here.
+[104:14.24] Here
+[104:16.08] just arranging them a little bit.
+[104:20.08] All right. So once we have this uh then
+[104:22.56] the next step is obviously to run the
+[104:24.40] cron job. Now I highly recommend you to
+[104:27.44] have the time zone. But if you want to
+[104:29.12] run with the server time zone then all
+[104:31.36] you can do is just start writing the
+[104:33.20] cron itself the cron ecosystem. So let's
+[104:35.20] just say we want to run this every 2
+[104:38.08] hour there are a couple of ways how you
+[104:39.52] can do this. So no minutes no mention of
+[104:42.00] that. And what you can do is is
+[104:44.72] interesting syntax. You can say astric
+[104:47.04] by two. So that means every uh 2 hours.
+[104:50.56] Yes there's a whole lot of syntax that
+[104:52.48] can go around with that. And yes again
+[104:55.20] chat GPT simply helps in that nobody
+[104:57.84] remembers the chrome so don't worry on
+[104:59.52] that. So strike strike strike for that
+[105:02.16] and that will run every 2 hour and again
+[105:04.48] what's remaining is your async function
+[105:07.04] and again what goes inside the async
+[105:08.64] function is just the step told you I
+[105:11.76] will make this the entire uh in just as
+[105:14.48] your second nature and here you can just
+[105:16.48] simply go ahead and say report send
+[105:20.48] and that's all it takes. Now here's the
+[105:23.04] interesting thing. Surely I can go ahead
+[105:25.52] and work on the index that just like we
+[105:27.52] have worked in this one. But luckily in
+[105:29.84] this case it doesn't really matter. You
+[105:32.08] might have a trigger for the daily
+[105:33.60] report. You might not have that. Doesn't
+[105:35.92] really care because to be honest this is
+[105:38.80] just a chron job which no matter what
+[105:41.52] happens it's always going to keep on
+[105:43.20] working. Now surely we can have an
+[105:45.04] endpoint for that but that doesn't make
+[105:46.80] sense. So I'll keep this file as empty
+[105:48.80] so that you get an idea. And by the way,
+[105:50.32] if you want, you can just copy it from
+[105:51.68] the previous chapters. No big deal
+[105:53.20] there. So these are all the data and
+[105:55.52] that uh whatever we wanted to have in
+[105:57.60] this one. Let me just show you one more
+[105:59.20] thing. I just want to take a few minutes
+[106:02.64] to go through with the docs because now
+[106:04.64] you will be able to understand these
+[106:06.16] dogs in a much much better syntax and
+[106:08.72] ultimately this is the single point of
+[106:10.40] truth where everybody learns and
+[106:12.08] everybody just make these videos or
+[106:13.76] anything like that. So we have gone
+[106:15.44] through with the NodeJS ecosystem but
+[106:17.20] now these trigger functions events and
+[106:19.20] trigger everything will make sense to
+[106:20.64] you. So events and trigger you can say
+[106:22.56] that uh we can send the events event
+[106:24.40] payload format cron the delayed function
+[106:26.72] is also there the direct invocation and
+[106:28.88] web hook where I want to bring your
+[106:30.56] attention is the web hook which is
+[106:32.16] hiding behind me. So this is the web
+[106:33.60] hook and if you look at closely the web
+[106:35.76] hook events are also exactly same just
+[106:37.76] like we have some events web hook has
+[106:39.52] nothing. These are just open endpoints
+[106:41.68] where some of your third party service
+[106:43.68] gets a request a web request. Now in
+[106:47.20] those web request also you can trigger
+[106:49.36] an ingest endpoint or ingest web hook.
+[106:52.00] So here they mention that how these
+[106:53.52] endpoints can be created and all these
+[106:55.52] stuffs the whole ecosystem and all that.
+[106:58.24] It's not really that tough. It's exactly
+[107:00.08] same. So you can work with that. One of
+[107:02.24] the key point where a lot of people
+[107:04.16] happen to use these in justest web hook
+[107:06.32] these days is when you have any
+[107:09.36] authentication being handled by third
+[107:11.44] party like for example there are so many
+[107:13.68] third party applications available like
+[107:15.52] clerk better and these are standalone
+[107:18.40] application that has nothing to do with
+[107:20.00] your database so these services have the
+[107:23.28] capacity to trigger an endpoint when
+[107:25.28] they trigger the endpoint you just
+[107:26.56] receive them in your server and can
+[107:28.72] trigger an ingest workflow so just take
+[107:31.04] the data and makes an entry into your
+[107:33.92] database. Again, simple workflow
+[107:35.68] shouldn't be bothered you much anyways.
+[107:38.32] And we have all gone through with these
+[107:40.24] fan out architecture. This is something
+[107:42.08] that we have studied. We have multiple
+[107:43.68] triggers, wild cards and all these
+[107:45.76] things. Whatever is there to explore, we
+[107:48.00] have gone through with that. Batching
+[107:50.00] events, we have also studied them. These
+[107:52.24] are just batch events and you can work
+[107:54.08] with them. API lock calls and all these.
+[107:56.40] Again, documentation is the best way.
+[107:58.48] And again uh no book or no tutorial can
+[108:01.12] walk you through with the entirety of
+[108:02.40] that. As you will learn with them, as
+[108:04.32] you will work with them, you will
+[108:05.52] understand more. It's a super powerful
+[108:07.20] tool uh which is being used by a lot of
+[108:09.36] people these days. So I happen to just
+[108:11.36] make a entire workflow on that or entire
+[108:13.76] tutorial on that. So this is our uh
+[108:16.88] basic walkthrough and the tutorial. Now
+[108:20.00] it's time that we dive deep into a
+[108:22.32] really complex codebase. And don't you
+[108:24.08] worry I'll give you the entirety of code
+[108:25.60] bases and these files as well so that
+[108:27.76] you can go through with them. So in the
+[108:29.60] next and final chapter of this entire
+[108:31.68] course I will walk you through the
+[108:33.28] entire detail of uh the complex project
+[108:36.56] that we have built up so that you can
+[108:38.00] understand each and everything that's
+[108:39.52] there in the ingest which can go in the
+[108:41.28] production itself. Let's go ahead and
+[108:43.04] catch up in the next section of this
+[108:44.80] video.
+[108:47.20] All right. So now that you know a whole
+[108:49.36] lot about injust let me walk you through
+[108:51.68] with a professionally built project and
+[108:53.92] we're going to go through with the
+[108:54.96] codebase of it. I'll give you whole code
+[108:56.64] files as well. Uh you can easily go
+[108:58.56] ahead and change them host them whatever
+[109:00.72] you like to work and these are ready to
+[109:02.56] deploy. So let me take you onto the
+[109:04.56] codebase and we'll have a discussion on
+[109:06.56] this one here. So the first thing that
+[109:09.12] you're going to see is let me just move
+[109:11.28] this here. And by the way I can just
+[109:13.44] minimize this.
+[109:16.08] So the first thing that you're going to
+[109:17.68] see here
+[109:19.52] is a lot of code files. This is a
+[109:22.64] project built in Nex.js. So the first
+[109:25.04] step is obviously to look into package
+[109:26.80] JSON. And don't you worry about the
+[109:28.64] package JSON. There's a lot in here. But
+[109:30.96] that's okay. That's totally fine. Uh
+[109:33.12] since it's a professional grade project,
+[109:34.80] it has to have so many of the
+[109:36.32] components. And what you can see this is
+[109:38.40] a dev. So next dev pretty awesome. We
+[109:41.44] don't have the ingest being written in
+[109:43.60] the script itself. Surely you can write
+[109:45.84] just like we have written in all these
+[109:47.68] chapter that's why I give you this file
+[109:49.52] you can write that or you can run this
+[109:51.36] this is exactly what you have to run npx
+[109:53.36] injest cli latest dev uh feel free to
+[109:56.00] add it as a script or just use it
+[109:57.84] however you like after that since this
+[110:00.08] is a production grade application we are
+[110:01.68] using neon as the database but we are
+[110:03.68] connecting it through the drizzle itself
+[110:05.92] in case you don't know about drizzle
+[110:07.36] just let me know in the comment I'll
+[110:08.72] create a whole dedicated video or a
+[110:10.40] series on the drizzle itself I would
+[110:12.00] love to do that and this project use AWS
+[110:15.12] uh client as well. Then on top of that
+[110:17.52] we have optional upstach. We are not
+[110:19.20] using it at least in this version or
+[110:20.80] this branch of the code and we have all
+[110:23.52] these lucid react next theme and most
+[110:26.24] importantly open AAI react obviously
+[110:29.12] it's a nextJS project and we have the
+[110:31.52] zod as well for working with that. So
+[110:33.44] it's not too much as you can see it
+[110:36.00] looks a lot but it's not much uh just
+[110:38.16] some elements like react markdown and
+[110:40.00] hook forms just are visual elements not
+[110:42.16] much to be bothered about now after that
+[110:44.48] the first step that you can see here is
+[110:46.24] that the whole application back end
+[110:48.48] lives inside the app and what you see
+[110:50.56] outside the things like lib the all APIs
+[110:53.04] and everything these are all front-end
+[110:54.64] related uh work that we have once we
+[110:57.36] open up the app the first thing that I
+[110:59.12] would love to walk you through is
+[111:00.24] directly inside the API as you can see
+[111:02.80] we We have all these APIs that are
+[111:04.56] handling users, upload files, the
+[111:06.96] searching mechanism, the questions, some
+[111:09.20] injust work which we are here for and
+[111:11.60] the O and the answers here. Now where
+[111:14.08] the things actually are interesting for
+[111:16.16] us is the ingest. Let's open this that
+[111:18.16] how closely we have studied this. If I
+[111:20.16] open this up, we have the first route.ts
+[111:23.52] and in this route uh if you just ignore
+[111:26.24] all these import statement, this is
+[111:28.56] something that we have already seen. So
+[111:30.24] we just simply handle the get post and
+[111:32.08] put on the serve and notice here this
+[111:34.80] serve is given to us by the ingest next
+[111:37.36] just like there is a serve available
+[111:38.88] from expressing in justest express we
+[111:41.36] have a serve available for explicitly
+[111:43.44] designed nextjs as well and the format
+[111:46.24] is exactly same we simply bring the
+[111:48.00] client and notice here the client
+[111:49.92] actually comes from here so this is the
+[111:51.92] ingest we have defined it into the lib
+[111:54.72] again define it anywhere just bring that
+[111:56.56] up it's the same client and whatever the
+[111:59.04] functions we have defined these
+[112:00.40] functions live in here. We have the
+[112:02.56] functions which generate the AI answer.
+[112:04.80] We have the function which sends the
+[112:06.56] welcome email, sends an answer
+[112:08.48] notification and sends the answer accept
+[112:11.04] notification as well. There could be
+[112:12.56] more as well but we have defined just
+[112:14.08] this one. Let's start with the welcome
+[112:16.08] email so that we can see what's going on
+[112:18.00] in this welcome email. If I just go
+[112:19.84] ahead and bring this up here. So notice
+[112:22.00] here uh these are basic resend
+[112:24.80] configuration. Shouldn't be bothered you
+[112:26.96] much. Then we have this send welcome
+[112:29.68] email. Notice the syntax here.
+[112:31.20] Injust.create function. Exactly what we
+[112:33.28] have studied. This is the ID and the
+[112:35.28] name of the function. So that it shows
+[112:37.12] up in the workbench of ingest. Then we
+[112:40.24] have the event which is user created. So
+[112:42.08] whenever we have a user being created
+[112:44.64] once it goes through our database and
+[112:46.16] all these things we invoke an event
+[112:48.48] which is named as user created. And this
+[112:51.04] is where all of our logic lives. As you
+[112:53.20] can see exactly same. Now whatever goes
+[112:55.60] in your logic it's totally up to you. We
+[112:57.28] have the event and step just like that
+[112:59.84] we extract the data from the event. Then
+[113:02.64] we get the resend client and if there's
+[113:05.04] no client we throw the error otherwise
+[113:07.04] we simply run the step to send the
+[113:08.96] email. In this one we simply say that
+[113:11.12] this is the dev email and all the
+[113:12.80] content of the email shouldn't bother
+[113:14.72] you much. If it gets me an error I show
+[113:17.76] an error message otherwise I return the
+[113:19.76] data. As you can see it is as close as
+[113:22.64] what we simulated. So again there's no
+[113:25.20] much difference in that in sending the
+[113:26.72] email. So this is the part one of how we
+[113:29.68] simply grab and send the email. Now
+[113:32.96] there are a couple of other things which
+[113:34.40] is generate AI answer and I know a lot
+[113:36.40] of you might be wondering how that's
+[113:38.00] being done. Don't worry I will walk you
+[113:39.84] through with that. So again if you look
+[113:41.76] at closely here and if I just shrink
+[113:44.16] this working functionality part again
+[113:46.96] the same ID name and one interesting
+[113:49.44] thing that we are adding up is more
+[113:51.04] property which is concurrency. So injust
+[113:53.68] give you this ability of running the
+[113:55.92] concurrent calls of any function or this
+[113:58.48] exact copy of this function if multiple
+[114:01.28] events happen to invoke it. In our case
+[114:03.84] we are putting up a limit of 10. But if
+[114:05.68] you have a high-end application uh
+[114:07.76] there's nothing which is stopping you to
+[114:09.36] increase the number. But again as you
+[114:10.96] increase the number your workload will
+[114:12.56] increase your you need higherend servers
+[114:14.88] or if you are on the injust paid plan
+[114:16.48] you need a higher paid plan in that
+[114:17.92] case. But it's again depends on the
+[114:19.44] traffic. Now the event that is throwing
+[114:21.84] up or invoking this workflow is
+[114:23.84] question.created
+[114:25.36] and if I open this up notice here we
+[114:27.44] first extract the data simple as it is.
+[114:30.40] We also go ahead and grab these
+[114:32.32] pre-signed URL of the image if they
+[114:34.40] exist. So again your image might live on
+[114:38.40] uh cloudary may live on AWS may live on
+[114:42.56] image kit any place where your image can
+[114:44.96] live it can live up there. So this is
+[114:47.04] just grabbing the URL of the image so
+[114:48.96] that we can submit these images on the
+[114:51.60] AI API calls. That's it. Now the step
+[114:55.52] here, notice here this is multi-step
+[114:57.76] workflow. We are doing a lot of steps
+[114:59.92] and lot of work in just one call. The
+[115:02.40] step one is just up here. So notice here
+[115:04.32] this is the await step.run which is
+[115:06.16] generate the image URL. So this is what
+[115:08.08] we are doing. Once this image is being
+[115:10.32] generated, we have the access of this.
+[115:12.08] The step two is the AI tag generation.
+[115:15.44] So if you remember our application we
+[115:18.08] have couple of steps that are going
+[115:19.36] through in it. The first step is to just
+[115:21.28] generate the tags of the question and
+[115:23.20] then we generate the answer of this. So
+[115:24.96] this step is a workflow which generates
+[115:27.60] this one. Notice here we are using AI uh
+[115:30.24] stepi and these are something which are
+[115:32.80] explicitly given to us. So here we
+[115:35.28] simply go ahead and infer this and again
+[115:38.32] so far we have just used the step.run
+[115:40.00] run. But this is something that you have
+[115:41.60] to use when you're using the AI part of
+[115:44.56] the ingest.
+[115:46.64] Now for this AI part, uh let me go ahead
+[115:49.12] and take you onto the documentation of
+[115:50.96] this. So if you notice closely here, I
+[115:53.68] have to move this a little bit. You can
+[115:56.24] see the step and workflow gives you so
+[115:58.08] many of this function steps. We have
+[115:59.76] talked sleep, wait for event, fetch some
+[116:02.32] data, and there is a AI inference as
+[116:04.00] well. And if you notice closely here,
+[116:06.64] using step.AI.infer
+[116:08.80] Infer allows you to call any inference
+[116:10.88] provider endpoints by offloading it to
+[116:13.28] ingest infrastructure. So what basically
+[116:16.00] we are doing we are calling an inference
+[116:17.92] provider which in this case is open AI
+[116:19.76] but it could be Gemini as well. All
+[116:21.92] request and response are automatically
+[116:24.24] tracked within your workflow. So what
+[116:26.64] happens in this uh when we make an AI
+[116:29.44] call it's not a regular API call.
+[116:32.32] Sometimes these AI gives you data
+[116:34.72] response after a certain time and that
+[116:37.52] could be from milliseconds to even
+[116:39.20] minutes and sometimes the whole response
+[116:42.32] that comes to you is actually in the
+[116:44.40] streaming format and we don't have to
+[116:46.40] worry about that at all. We simply just
+[116:48.40] use step.ai.infer
+[116:50.32] and we call our inference provider
+[116:52.24] through the ingest. We don't call it
+[116:54.16] directly in the fetch calls. We are
+[116:56.56] actually making the calls directly AI.
+[116:59.28] This whole ingest is uh tracking our
+[117:02.00] whole flow of the functions but we are
+[117:03.92] not actually handing over the work to
+[117:05.68] the ingest. But in the case of AI we are
+[117:08.08] handing the entire workflow to the
+[117:10.08] ingest and ingest is responsible for
+[117:11.84] this. This is known as request
+[117:13.44] offloading. Our serverless environment
+[117:15.84] your function your function is not
+[117:17.68] executing while the request is in
+[117:19.28] progress which means uh you don't pay
+[117:21.92] for function execution while waiting for
+[117:23.68] the provider response. Once the request
+[117:26.16] finishes, your function restarts the
+[117:28.96] inference data result. It in just never
+[117:30.88] logs or stores your API key of course.
+[117:33.04] So this is the whole point and you can
+[117:36.08] see this is what we have. We actually
+[117:37.68] have more stuff now as the things are
+[117:39.68] getting we have more updated stuff. So
+[117:42.00] step.ai.infer we call the open AI and
+[117:44.80] then we provide the whole data as well.
+[117:46.80] Whatever the format they accept in that
+[117:48.64] case. So this is exactly what we have
+[117:51.20] AI.step.infer.
+[117:52.80] We simply generate the tags for this
+[117:54.40] one. The model that we are calling is
+[117:55.76] JPT5 mini to save some money. Uh but
+[117:58.64] again feel free to call anything and
+[118:00.24] then we provide the system data and all
+[118:01.84] of this. This is AI call and whatever
+[118:03.84] the data we get it is just the response
+[118:06.80] that we get back and again these are
+[118:08.96] just some minor filteration of the data.
+[118:11.76] Nothing much there. We also have another
+[118:14.56] step and this is very interesting where
+[118:16.64] we actually use another API to actually
+[118:20.00] read our images. So if you go up here,
+[118:22.48] we actually use GPT5 which is perfectly
+[118:24.56] capable of inferring uh the images as
+[118:27.20] well. We actually use that as well. So
+[118:29.12] image lens and all of that and again we
+[118:30.64] don't do anything in that AI
+[118:31.92] automatically read those images. So as
+[118:34.16] you can see multiple steps are going
+[118:36.24] into this one and this is pretty nice
+[118:38.56] that we have. Let me go ahead and shrink
+[118:40.80] this up. And once we have this generate
+[118:43.20] tags these are all regular work that we
+[118:45.36] do parse these events and take all of
+[118:47.68] this data. So as you can see uh we're
+[118:50.08] not doing much of the heavy lifting. Now
+[118:51.84] all of the data that comes up uh needs
+[118:53.84] to go in our database as well and that's
+[118:55.68] what this is. This is all the batch
+[118:57.20] insert of all the junction tables,
+[118:59.20] records and all of that. Again this is
+[119:01.28] all the drizzle part. We don't have to
+[119:03.52] worry about it as an ingest part. But it
+[119:06.80] doesn't really matter how complex your
+[119:08.56] logic for your application is which
+[119:10.24] surely is going to be decently complex.
+[119:12.16] You can just go ahead and work with
+[119:13.44] that. So what we have seen in this case
+[119:15.84] is a classic example and a use case of
+[119:19.76] AI inferencing. And again even if
+[119:23.04] tomorrow the model comes up or some new
+[119:25.12] models and stuff comes up I don't have
+[119:27.28] to do much I can just still call the
+[119:29.04] model with the different model name I
+[119:30.96] can store that in the constant file as
+[119:33.04] well. Now here comes an interesting
+[119:35.84] question which usually people ask is why
+[119:38.56] can't I just directly call the AI? Now
+[119:41.36] surely you can call the AI. This is just
+[119:43.60] exactly the moment if you happen to ever
+[119:46.24] use the 10stack query you can directly
+[119:48.72] make the queries but by using the
+[119:50.40] 10stack query what you do is you get the
+[119:52.88] uh stuff like there's an error there's a
+[119:54.96] loading state there's a data there's
+[119:57.28] retries and all these mechanism that
+[119:59.44] comes with the react query and that's
+[120:00.96] why it is one of the standard these days
+[120:02.96] of making the web request can I make the
+[120:05.04] web request directly with the fetch or
+[120:06.56] exios surely you can but having the re
+[120:10.64] 10stack query makes life
+[120:12.88] The same happens here as well. Surely I
+[120:14.88] can make the AI call directly as well.
+[120:17.12] But this eventually in the production
+[120:19.04] makes my life a lot lot easier and that
+[120:21.84] is the whole main uh point. If you just
+[120:25.12] ask me what's the meat of this entire
+[120:27.20] application, this just one file. This
+[120:29.68] one file makes this application as AI
+[120:31.84] friendly and we are able to generate the
+[120:33.60] AI data not instantaneously but whenever
+[120:36.00] the AI gives me the result and based on
+[120:38.56] the event whenever the data comes up I
+[120:40.40] can just add this to my database and
+[120:42.24] change the states on that and that is it
+[120:44.88] now rest of the stuff like send answer
+[120:47.12] notification these are just emails it
+[120:49.44] this doesn't excite me much because
+[120:51.04] these are just emails surely email is
+[120:53.04] absolutely complex I'm not disregarding
+[120:55.04] that uh but these are comparatively
+[120:57.36] easier and as you can see the code file
+[120:59.04] is also just barely less than 100 lines.
+[121:01.76] Answer accept notification. This is
+[121:03.28] again just an email. We are just trying
+[121:05.12] to utilize ingest as much as possible
+[121:07.44] for these production grade application.
+[121:09.60] But if you just ask me if you understand
+[121:11.20] this just one file that is it and
+[121:14.32] especially not just the whole file if
+[121:15.84] you understand these uh this one part
+[121:19.12] and this another part that is it. You
+[121:21.68] can make insane level of applications
+[121:24.32] with this.
+[121:26.24] All right. So this is all good. Now
+[121:28.00] coming back onto the application. So now
+[121:30.08] that you understand the application, let
+[121:31.68] me just give you a quick tour of the
+[121:33.52] application so that in case you want to
+[121:35.92] work with this application, you are
+[121:37.28] fully aware of what's going on. So
+[121:42.88] in any of the nextJS application, the
+[121:45.04] API is usually the back end. In fact,
+[121:47.68] almost all the time, this is where you
+[121:49.68] keep all of the things that should
+[121:50.96] happen on the server itself and not on
+[121:53.04] the front end.
+[121:54.96] So let's first continue and have a
+[121:57.12] discussion on the back end part itself
+[121:59.04] because that's what I usually like to
+[122:00.48] do. We do have more actions and stuff.
+[122:03.28] These are just helpers which are helping
+[122:05.44] to execute some of the tasks but let's
+[122:07.36] go in the back end first. So in this
+[122:09.84] part we have all done but this is where
+[122:11.84] you define your endpoints and the most
+[122:13.92] important part is o endpoint. We're
+[122:16.24] using better oath in this case and the
+[122:18.16] better oth has actually nextjs handler
+[122:20.72] which automatically gives me all the
+[122:22.56] login uh from emails from google and all
+[122:25.36] these I just have to add the
+[122:26.56] configuration for that that's the first
+[122:28.16] part then on the other hand we have this
+[122:30.88] users as well which has all the user
+[122:32.80] routes so get user profile we don't have
+[122:35.92] much in the data of the profile but
+[122:38.08] whatever we have we can just go ahead
+[122:39.60] and make the db query to find the first
+[122:42.08] user and just send that as a response
+[122:44.32] that's all what we are doing in these
+[122:46.00] files user related stuff then we have
+[122:49.60] this upload as well where we have the
+[122:51.76] pre-signed URL and the image URL we are
+[122:53.92] storing all the images in the AWS and
+[122:57.28] one of the good exercise that you can do
+[122:58.88] is try to have multiple uh scenarios
+[123:01.76] here maybe your AWS is down and you got
+[123:04.40] a ticket to change this onto image kit
+[123:07.12] or any other service provider try to
+[123:09.52] write these method this will give you a
+[123:11.20] realistic idea of how to work in the
+[123:13.12] production grade codebased applications
+[123:14.96] S we have the search whenever user enter
+[123:18.64] anything and hits the search route. This
+[123:20.40] is for that. This is the question where
+[123:22.88] you can get an individual question or
+[123:25.60] user can submit the new question as
+[123:27.84] well.
+[123:29.52] And then we have the answers where user
+[123:32.08] can submit the answer or the answer can
+[123:34.24] be AI generated as well. Ingest handles
+[123:36.80] the AI part but that's the whole
+[123:38.88] endpoints.
+[123:40.40] I got a really bad throat. It looks like
+[123:42.48] that. Anyways, so as you can see now
+[123:45.36] with the walk through, you can see
+[123:47.04] there's not much complexity in the
+[123:49.04] application. We have authentication and
+[123:51.12] then user can search a question, ask a
+[123:53.76] question and user can answer a question.
+[123:56.24] It is a very standard cred oper
+[123:58.08] operation. What additional we have are
+[124:00.40] the RTE
+[124:02.40] as well as realtime editors and that's
+[124:05.20] the front end part.
+[124:07.36] Now if you look at this one thing that
+[124:09.60] can catch you a little bit off in the
+[124:11.92] offguard here if I just go ahead and
+[124:14.08] work with that uh let me go ahead and
+[124:16.32] close the app is if you open the library
+[124:19.44] you will again see the APIs. These are
+[124:22.24] the fronted APIs. What do I mean by
+[124:24.24] fronted APIs? These are API calls that
+[124:27.28] you have. So these are all the data that
+[124:29.36] we have all the answer keys. And if you
+[124:31.52] look at closely here and go a little bit
+[124:34.48] uh what we are doing in this is just
+[124:36.64] making the API calls from the front end.
+[124:38.48] These are that API the server APIs
+[124:41.44] always lives in the in the app folder
+[124:43.36] itself. And then we have the O DB the
+[124:46.32] mutation the queries the services these
+[124:49.04] are all front- end related part and
+[124:50.80] again this requires more of the
+[124:52.56] knowledge of a bit on the drizzle side
+[124:54.96] bit on the database side a bit on
+[124:57.44] authentication as well but overall it's
+[125:00.16] not really the most complex application
+[125:02.64] that you're going to build but if you
+[125:04.80] can understand this application
+[125:07.36] you will be completely ready to
+[125:08.80] contribute in a lot of opensource code
+[125:10.72] bases and this is your sign of moving
+[125:13.36] from a fresh level developer to a
+[125:15.92] midsize or an experienced developer and
+[125:18.64] again I truly enjoyed this is one of its
+[125:20.88] kind of tutorial that we have built up
+[125:23.60] here. Now usually such tutorials are
+[125:27.20] just writing the each line of code and
+[125:29.44] writing so many Tailwind files but I
+[125:31.92] realized that these those tutorials are
+[125:33.76] for fresher friendly. I wanted to create
+[125:35.52] a tutorial which is midsize engineer
+[125:38.88] mid-level engineers to the high-end
+[125:40.48] engineers so that they can also start
+[125:42.08] working with that. And by the way, yes,
+[125:43.92] I'll be giving you the whole code base
+[125:45.60] and whole code files as well so that you
+[125:47.76] can start working with that. I would
+[125:49.76] highly highly encourage you to share
+[125:51.52] this video with your colleagues in your
+[125:53.20] corporate environment. Uh mostly maybe
+[125:56.00] some college student as well but I
+[125:57.68] highly doubt that. Uh but yes, this was
+[126:00.08] a really fun activity. I hope after
+[126:02.24] watching this entire long video, you
+[126:03.92] have complete control and complete
+[126:06.08] knowledge about the ingest, how to use
+[126:08.72] that and one production grade project as
+[126:11.12] well where the use case is being
+[126:12.80] implemented along with the AI calls as
+[126:15.04] well. That is it for this video. Uh
+[126:17.28] pretty uh fun journey to have you a walk
+[126:20.16] through on this. Felt really good to
+[126:22.32] have this kind of senior level tutorial
+[126:23.92] as well. That is it for this one. Let's
+[126:26.00] catch up in the next one.

@@ -1,0 +1,923 @@
+[0:00.21] [Music]
+[0:01.25] so what is automated testing is it a
+[0:04.62] replacement for manual testing do I
+[0:06.81] really need it how should I do it should
+[0:08.97] I write my tests first which we call
+[0:11.49] test-driven development or TDD or should
+[0:14.94] I write the application code first
+[0:16.56] maash I don't know what to test these
+[0:19.62] are frequently asked questions about
+[0:21.69] automated testing and in this course I'm
+[0:24.51] gonna answer all these questions one by
+[0:27.24] one so let's start with the first
+[0:29.43] question what is automated testing
+[0:31.97] automated testing is the practice of
+[0:34.56] writing code to test our code and then
+[0:37.77] run those tests in an automated fashion
+[0:40.19] so with automated testing our source
+[0:43.38] code consists of application code which
+[0:46.35] we also call production code and test
+[0:49.44] code here's an example imagine you have
+[0:52.62] this function somewhere in your code
+[0:54.30] it's a basic calculate function that
+[0:57.24] takes an input and depending on some
+[1:00.00] conditions
+[1:00.75] it returns different values if you want
+[1:04.11] to test this function manually you have
+[1:06.24] to launch your application in the
+[1:07.56] browser perhaps you have to login or
+[1:10.02] maybe you have to do a few clicks here
+[1:12.54] and there to get to a page where this
+[1:15.09] function is used then you'll have to
+[1:17.52] fill out a form submit it and see the
+[1:20.43] result of this function on the screen
+[1:22.08] and then you have to repeat all these
+[1:24.54] steps each time using different values
+[1:27.42] in your form as you can see this is very
+[1:30.03] time consuming this workflow to test
+[1:32.97] this function may take several minutes
+[1:35.16] every time now to make matters worse
+[1:37.98] this is not the only function in your
+[1:40.47] application in a real application you
+[1:42.99] have tens or hundreds of functions like
+[1:45.51] this as your application grows in size
+[1:48.39] and complexity the time required to
+[1:51.09] manually test all the different bits and
+[1:53.52] pieces increases exponentially so that's
+[1:57.27] why we use automated testing with
+[1:59.94] automated testing you write code and
+[2:02.13] directly call this function with
+[2:04.26] different inputs and verify that this
+[2:06.99] function returns the right output now
+[2:10.26] you can rerun these tests every time you
+[2:12.72] change your
+[2:13.36] every time you commit your code to a
+[2:15.28] repository and before deploying your
+[2:17.95] application with this approach you can
+[2:20.53] test all the execution paths in this
+[2:22.75] function in less than a second you can
+[2:25.33] write several hundreds or thousands of
+[2:27.37] automated tests for various parts of
+[2:29.80] your application and run them all in
+[2:31.87] just a few seconds but there are more
+[2:34.42] benefits to automated testing and that's
+[2:36.79] the topic for the next lecture
+[2:43.92] recently a student of mine asked me
+[2:46.99] maash why on earth should be write code
+[2:50.08] to test our code when we can just run
+[2:52.69] the application and see the result well
+[2:55.57] in the last lecture you'll learn that
+[2:57.43] with automated tests you can test your
+[2:59.89] application code on a frequent basis and
+[3:02.50] in less time but this is not the only
+[3:05.14] benefit of automated testing the most
+[3:07.93] important benefit is that you can catch
+[3:10.33] the bugs before deploying your
+[3:12.94] application and this is extremely
+[3:15.19] important because it allows you to
+[3:17.17] deploy your application with more
+[3:18.73] confidence have you been in a situation
+[3:21.43] where you finish all the work deploy
+[3:24.22] your application left the office
+[3:26.26] thinking everything is working and then
+[3:28.51] got a call from your boss or an end user
+[3:31.21] telling you that one of the major
+[3:33.07] functions of the application is not
+[3:35.05] working then you had to go back to the
+[3:37.30] office and you thought that was a quick
+[3:39.37] fix but you ended up staying there until
+[3:41.55] midnight that's why you should write
+[3:44.41] tests to reduce the number of bugs that
+[3:47.44] will go into production now note that
+[3:50.32] I'm not saying that with automated tests
+[3:52.87] you're gonna release bug free software
+[3:55.30] that's not true but you can certainly
+[3:57.55] reduce the number of bugs and improve
+[4:00.31] the quality of your software another
+[4:03.16] benefit of automated tests is that they
+[4:05.68] allow you to refactor your code with
+[4:07.90] confidence
+[4:08.65] refactoring means changing the structure
+[4:11.41] of your code without changing its
+[4:13.63] behavior if you extract a few lines of a
+[4:16.63] method into a separate private method
+[4:19.39] that's refactoring if you rename a
+[4:21.55] method that's refactoring too you're
+[4:23.86] changing the structure of your code to
+[4:26.05] make it cleaner and more maintainable
+[4:27.94] but you're not changing the
+[4:29.53] functionality when you don't have
+[4:31.84] automated tests every time you refactor
+[4:34.48] your code you have to manually test
+[4:36.58] every part of the application that could
+[4:38.74] be affected by your refactoring and this
+[4:41.44] is very painful because first of all
+[4:43.75] it's time consuming and second as your
+[4:46.51] application grows you may forget about
+[4:48.55] the parts that need to be tested with
+[4:51.49] automated tests
+[4:53.03] you refactor your code you run your
+[4:55.31] tests and make sure you didn't break
+[4:57.17] anything that used to previously work
+[4:59.42] and finally another benefit of writing
+[5:02.33] tests is that it helps you focus more on
+[5:05.30] the quality of the methods you're
+[5:07.16] writing you make sure that every method
+[5:09.62] works with different inputs under
+[5:12.20] varying circumstances next I'm going to
+[5:15.11] talk about different types of tests in
+[5:23.03] automated testing we have three types of
+[5:26.00] tests unit tests integration tests and
+[5:29.48] end-to-end tests a unit test is what I
+[5:32.84] showed you earlier in this section you
+[5:35.15] test a unit of the application without
+[5:37.91] its external dependencies such as files
+[5:41.00] databases message queues web services
+[5:44.48] and so on now note this key word here
+[5:47.41] external dependencies this is really
+[5:50.18] important as you will find out shortly
+[5:52.40] so these unit tests exercise your code
+[5:56.21] without any external dependencies they
+[5:59.57] are cheap to write and they execute fast
+[6:02.02] so you can run hundreds of them in just
+[6:04.94] a few seconds and this way you can
+[6:07.10] verify that each building block in your
+[6:09.59] application is working as expected
+[6:11.83] however since you are not testing these
+[6:14.78] classes or components with their
+[6:16.49] external dependencies you can't get a
+[6:19.16] lot of confidence in the reliability of
+[6:21.86] your application so that's when
+[6:24.47] integration tests come to the rescue an
+[6:27.34] integration test tests a class or a
+[6:30.26] component with its external dependencies
+[6:33.70] so it tests the integration of your
+[6:36.80] application code with these concrete
+[6:39.05] dependencies like files databases and so
+[6:41.99] on again note that I'm emphasizing the
+[6:44.75] word external here these tests take
+[6:48.41] longer to execute because they often
+[6:50.69] involve reading or writing to a database
+[6:53.33] but they give you more confidence in the
+[6:56.03] health of your application now
+[6:58.66] traditionally an integration test is
+[7:01.52] defined as a test that takes a few units
+[7:04.61] or classes
+[7:06.23] and test their behavior as a whole so
+[7:09.41] based on this definition if you test two
+[7:12.05] classes together
+[7:13.19] some people believe you're writing an
+[7:15.38] integration test and not a unit test
+[7:17.66] even if none of these classes talk to an
+[7:20.54] external resource like a database
+[7:23.02] chances are you've heard this definition
+[7:25.07] before now I tell you what this
+[7:27.23] definition is a great recipe for writing
+[7:29.93] fragile tests that are coupled to your
+[7:32.84] implementation detail so as you change
+[7:36.08] the implementation of your classes these
+[7:38.57] tests are gonna break and you will end
+[7:41.03] up wasting a lot of time fixing them not
+[7:44.06] only won't they give you any values but
+[7:46.49] they actually slow you down I'm going to
+[7:48.92] show you an example of this later in the
+[7:50.69] course when I talk about fakes and mocks
+[7:53.96] if you have done unit testing before and
+[7:56.33] failed chances are you follow this
+[7:58.58] definition so once again a unit test
+[8:01.75] tests a class or multiple classes
+[8:04.70] without their external dependencies they
+[8:08.36] test a unit of work an integration test
+[8:11.44] tests a class or multiple classes with
+[8:14.72] their external dependencies we also have
+[8:18.05] another type of test called end to end
+[8:20.57] test that drives an application through
+[8:23.06] its user interface there are specific
+[8:26.48] tools built for creating end-to-end
+[8:28.70] tests one popular tool that you might
+[8:31.31] have heard of is selenium which allows
+[8:34.04] us to record the interaction of a user
+[8:36.56] with our application and then play back
+[8:38.75] and check if the application is
+[8:40.85] returning the right result or not these
+[8:43.73] tests give you the greatest amount of
+[8:45.89] confidence about the health of your
+[8:47.63] application but they have two big
+[8:49.94] problems the first problem is that
+[8:52.58] they're very slow because they require
+[8:54.38] launching the application and testing it
+[8:56.84] through the UI so every test is going to
+[8:59.51] launch the application potentially log
+[9:01.58] in navigate to an internal page submit a
+[9:04.73] form and inspect the results very slow
+[9:07.15] the second problem is that there are
+[9:09.86] very brittle because a small enhancement
+[9:12.71] to the application or a small change in
+[9:15.11] the user interface can easily break
+[9:17.42] these tests
+[9:18.35] [Music]
+[9:24.02] so now you know about the different
+[9:26.40] kinds of automated tasks unit tests
+[9:28.89] integration tests and end-to-end tests
+[9:31.62] but what kind of tests should you write
+[9:33.90] in your application for hell all of them
+[9:36.60] this is what we call the test pyramid
+[9:39.66] this pyramid argues that most of your
+[9:42.72] tests should be in the category of unit
+[9:45.09] tests because these tests are easy to
+[9:47.40] write and they execute quickly but since
+[9:50.52] they don't give you much confidence
+[9:52.05] about the health of your application you
+[9:54.36] should have a bunch of integration tests
+[9:56.61] that test the integration of your
+[9:58.65] application code with its external
+[10:00.96] dependencies these tests provide many
+[10:04.26] advantages of end-to-end tests but
+[10:06.75] without the complexities of dealing with
+[10:09.12] the user interface and finally you
+[10:11.64] should write very few end-to-end tests
+[10:13.98] for the key functions of the application
+[10:16.41] but you should not test the edge cases
+[10:18.24] with these end-to-end tests you only
+[10:21.12] test the happy path and leave the edge
+[10:23.28] cases your unit tests now
+[10:26.13] this pyramid is just a guideline it's
+[10:27.90] not a hard and fast rule that you need
+[10:29.73] to follow in every application the
+[10:32.13] actual ratio between your unit
+[10:34.04] integration and end-to-end tests really
+[10:36.99] depends on your project unit tests are
+[10:39.84] great for quickly testing the logic like
+[10:42.66] conditional statements and loops if you
+[10:45.45] have methods with complex logic and
+[10:47.43] calculation you should test them with
+[10:49.89] your unit tests earlier in the section I
+[10:52.56] showed you an example of a calculate
+[10:54.84] function unit tests are ideal for
+[10:57.45] testing these functions because you can
+[11:00.15] quickly test all the execution paths of
+[11:02.70] these functions in less than a second
+[11:04.91] manually testing this functions through
+[11:06.99] the user interface takes significant
+[11:09.51] amount of time and is prone to errors
+[11:11.61] however not every application has
+[11:14.49] complex logic and functions like our
+[11:17.04] calculate function you might have an
+[11:19.47] application that simply reads some data
+[11:21.39] from or writes it to a database in that
+[11:24.60] case you may need more integration tests
+[11:27.21] than unit tests so in summary this test
+[11:30.60] pyramid gives you three recommendations
+[11:33.47] first is to favour unit tests over a Qi
+[11:37.56] or end-to-end tests because these unit
+[11:40.77] tests are the fastest to run and
+[11:42.72] cheapest to write and they're very
+[11:44.91] precise so they can pinpoint exactly
+[11:47.42] where something fails they give you
+[11:50.40] rapid feedback second is to cover unit
+[11:54.66] test gaps with integration tests and
+[11:57.03] finally use end-to-end tests sparingly
+[12:00.42] only for the key functions of your
+[12:02.76] application the right balance is
+[12:05.07] different for each project on each team
+[12:07.23] at the end of the day you need to use
+[12:09.15] your own judgment to determine what kind
+[12:11.46] of test you need to write for different
+[12:13.20] parts of your application
+[12:20.23] - right unit and integration tests you
+[12:23.42] need a testing framework there are
+[12:25.85] several testing frameworks out there but
+[12:28.22] the most popular ones are an unit which
+[12:30.98] is one of the earliest frameworks out
+[12:32.63] there we've got m/s test which is
+[12:35.54] Microsoft's testing framework built into
+[12:38.87] Visual Studio and X unit which has
+[12:41.90] gained more popularity over the past
+[12:44.06] couple of years
+[12:45.26] all these frameworks give you a utility
+[12:48.14] library to write your tests and a test
+[12:51.02] runner which runs your tests and gives
+[12:53.60] you a report of passing and failing
+[12:55.67] tests which framework is better it
+[12:58.55] depends who you ask and what their
+[13:00.38] definition of better is different people
+[13:02.78] love different tools so here's my
+[13:04.58] suggestion don't get hung up on the
+[13:06.71] tooling in this course our focus is on
+[13:09.74] the fundamentals of writing quality
+[13:11.93] tests that give you value that's what
+[13:15.02] matters you can always use a different
+[13:16.97] framework as you move from one project
+[13:19.04] or team to another in this course we're
+[13:22.37] gonna start with MS test because that's
+[13:24.89] built into Visual Studio and doesn't
+[13:27.38] require any additional steps but shortly
+[13:30.17] after I'm gonna show you how to install
+[13:32.39] and unit and run annually tests in
+[13:35.30] Visual Studio you may use either of
+[13:37.64] these frameworks as purely your personal
+[13:39.71] decision
+[13:40.31] but for the majority of this course I'll
+[13:42.17] be using an unit because it has a longer
+[13:44.81] history than MS tests and I personally
+[13:47.63] find it a more elegant testing framework
+[13:50.41] now an optional tool that I highly
+[13:53.21] recommend is resharper because it has a
+[13:56.06] faster and more powerful test runner
+[13:58.46] than the one built into Visual Studio
+[14:01.09] just to let you know
+[14:02.75] resharper is a commercial product and
+[14:04.82] I'm not their affiliate you may decide
+[14:07.01] to buy a license or not that's entirely
+[14:09.02] your choice what I want to emphasize is
+[14:11.48] that you do not need resharper to write
+[14:14.51] or run tests but I use resharper because
+[14:18.59] it's a huge productivity booster another
+[14:22.07] optional tool is writer if you like
+[14:25.01] Visual Studio plus resharper but you
+[14:27.59] think Visual Studio is too slow for you
+[14:29.36] then
+[14:30.16] highly recommend you to try writer
+[14:32.43] writer is basically a cross-platform IDE
+[14:35.82] built by JetBrains the same company that
+[14:39.64] has made resharper so you have a super
+[14:42.67] fast IDE plus resharper with the exact
+[14:45.19] same shortcuts that you use in Visual
+[14:47.38] Studio in this course I'm gonna record
+[14:49.75] the first few videos with Visual Studio
+[14:51.78] because that's the default IDE for
+[14:54.40] maturity of you but later I'm gonna
+[14:56.98] switch to writer because that's a lot
+[14:58.84] faster you can use Visual Studio with or
+[15:01.84] without resharper that's perfectly fine
+[15:03.94] your focus should be on the fundamentals
+[15:06.43] of writing good tests and not the Thule
+[15:14.51] in the next lecture you're going to
+[15:16.68] write your first unit test so download
+[15:19.44] the zip file I have attached to this
+[15:20.91] lecture this is a visual studio solution
+[15:22.95] that includes some code you're going to
+[15:25.38] test throughout this course
+[15:31.74] hi guys maash here I hope you're having
+[15:34.99] a fantastic day or night wherever you
+[15:37.51] are in the world this tutorial you've
+[15:39.58] been watching is actually part of my
+[15:41.50] complete unit testing course for c-sharp
+[15:44.50] developers and what you see here on
+[15:46.69] YouTube is actually only the first
+[15:48.88] section of this course the complete
+[15:51.13] course includes more than five hours of
+[15:53.74] high quality content with plenty of
+[15:55.96] exercises and challenges that will help
+[15:58.63] you really master unit testing in case
+[16:01.54] you're interested to enroll in the full
+[16:03.28] course I've put the link for you in the
+[16:05.32] video description and if not that's
+[16:07.21] perfectly fine continue watching as the
+[16:09.76] next section is coming up
+[16:16.12] all right in the slingshot you're gonna
+[16:17.86] write your first unit test so here we
+[16:21.31] have this project called test ninja that
+[16:23.77] I'm gonna use throughout this course I
+[16:25.81] give you the link to this project in the
+[16:28.12] last lecture but if you miss that you
+[16:30.31] can see it attached to this lecture so
+[16:33.13] here we have this folder fundamentals
+[16:35.88] let's take a look at this reservation
+[16:38.08] class so imagine you're building an
+[16:40.54] application for reserving a table at a
+[16:43.96] restaurant our reservation class has
+[16:46.81] currently one property which specifies
+[16:50.08] the user who made this reservation now
+[16:52.99] in a real-world application this class
+[16:54.52] can have many other properties but we
+[16:56.98] don't want to get distracted with too
+[16:58.33] much detail this is the method we want
+[17:00.88] to test can be cancelled by a given user
+[17:04.48] so here I have implemented a simple
+[17:07.00] business rule if the user is admin or
+[17:10.74] the user who made this reservation they
+[17:14.02] can cancel this reservation otherwise
+[17:16.90] they can't cancel this reservation ok
+[17:19.90] and if you scroll down you can see our
+[17:23.53] user class very simple with one property
+[17:26.35] is admin so let's go ahead and write the
+[17:30.31] first unit test for this method here in
+[17:34.72] the solution Explorer I'm gonna add a
+[17:37.30] new project to the solution so add new
+[17:42.97] project under installed visual c-sharp
+[17:47.41] test you should see this template unit
+[17:51.01] test project if you don't see it here
+[17:53.32] chances are you have not installed
+[17:55.18] Visual Studio property so go ahead and
+[17:58.03] download the latest version of Visual
+[18:00.07] Studio currently I'm using Visual Studio
+[18:02.31] 2017 Community Edition so here we select
+[18:06.25] unit test project and we give it a name
+[18:10.12] so the name of our main project is test
+[18:12.94] ninja and I'm gonna call this project
+[18:15.52] test ninja dot unit tests this is the
+[18:20.62] convention we follow to organize our
+[18:23.35] test projects we want to separate the
+[18:25.87] unit tests and integration tests because
+[18:28.51] unit tests run
+[18:30.13] quickly whereas integration tests take
+[18:32.62] more time we want to separate them so we
+[18:35.59] can run unit tests more frequently and
+[18:38.28] integration tests before committing our
+[18:41.47] code to a repository okay let's go ahead
+[18:47.25] so Visual Studio creates this new
+[18:50.11] project and you can see here we have a
+[18:52.38] file unit test one is a simple C sharp
+[18:57.16] class that has the test class attribute
+[18:59.95] and it has one method called test method
+[19:02.80] one with this attribute test method
+[19:05.16] these two attributes you see here belong
+[19:08.08] to m/s test framework so the test Runner
+[19:10.96] we have in Visual Studio looks at all
+[19:13.99] the classes decorated with the test
+[19:16.72] class attribute then it looks at all the
+[19:19.63] methods in this class decorated with the
+[19:22.66] test method attribute and it will run
+[19:24.73] them so the first thing I want to do
+[19:27.49] here is change the name of this class so
+[19:31.42] press ctrl R and then R again now you
+[19:35.41] can rename these I'm gonna call this
+[19:37.48] reservation tests because we are testing
+[19:41.80] the reservation class so the convention
+[19:44.80] we follow is the name of the class +
+[19:47.62] tests enter now similarly I'm gonna
+[19:54.01] rename this method once again ctrl R & R
+[19:56.94] the method I wanna test is can be
+[20:01.02] canceled by now here we add an underline
+[20:07.38] we specify a scenario on the line again
+[20:11.71] and expected behavior what is this let's
+[20:17.89] go back to our reservation class when
+[20:21.28] write two unit tests for this method we
+[20:23.83] want to test all the scenarios what
+[20:26.56] scenarios do we have here we have three
+[20:28.57] scenarios one scenario is when the user
+[20:31.42] is an admin the other scenario is when
+[20:35.65] the user is the same person who made
+[20:38.17] this reservation and the third scenario
+[20:40.42] is when someone else tries to cancel
+[20:44.02] this reservation so here we have three
+[20:46.54] scenarios or three execution paths so
+[20:50.35] there are three ways to get out of this
+[20:52.72] method that's why we call this three
+[20:55.11] execution paths okay so back to our unit
+[21:01.15] test class the first scenario we want to
+[21:03.43] test is user is admin now what is the
+[21:10.15] expected behavior if the user is admin
+[21:12.85] this method should return true
+[21:15.01] so returns true this is the convention
+[21:20.74] we use to name and organize our test
+[21:23.44] methods every test method has three
+[21:26.41] parts the first part specifies the name
+[21:29.29] of the method under test the second part
+[21:32.17] is the scenario we're testing and the
+[21:34.39] third part is the expected behavior now
+[21:38.23] inside every test method we have three
+[21:41.05] parts
+[21:42.74] a range act and assert this convention
+[21:49.58] is called triple-a or arranged act and
+[21:53.12] assert the arranged part is where we
+[21:55.94] initialize our objects we prepared the
+[21:59.09] object we want to test in this case we
+[22:01.64] want to create an instance of the
+[22:03.56] reservation class so we create a
+[22:07.30] reservation object new reservation now
+[22:14.60] here the reservation class is not
+[22:16.07] recognized so you need to press ctrl +
+[22:19.76] period and in this context menu select
+[22:24.34] add reference to test ninja okay so we
+[22:30.95] have a reservation object the act part
+[22:34.04] is where we act on this object and that
+[22:37.46] basically means we're gonna call a
+[22:39.11] method that's the method we're going to
+[22:41.09] test in this case reservation dot can be
+[22:46.07] cancelled by now I want to give it an
+[22:49.22] argument in this case we want to give it
+[22:51.47] a user that is an admin user so here I
+[22:55.04] create a user object and set is admin to
+[23:00.59] true so this is the act part now we want
+[23:06.20] to get the result and verify that it's
+[23:08.81] correct so I'm gonna store the result in
+[23:11.18] a variable called result and in the
+[23:16.07] assert part we verify that result is
+[23:19.04] correct in this case result should be
+[23:21.89] true so here I'm gonna use one of the
+[23:24.62] helper classes in Emma's test framework
+[23:26.93] that is called assert this class has a
+[23:31.91] bunch of static methods that we use to
+[23:33.74] make an assertion for example if you
+[23:36.32] want to compare two objects we can use
+[23:37.94] are equal we also have other methods
+[23:42.08] here like is false is instance of type
+[23:45.32] is not instance of type and so on so
+[23:48.92] here we want to assert that this result
+[23:51.44] is true so we call assert dot is true
+[23:56.27] and pass result so this is how we write
+[24:01.49] a unit test now to run this test we go
+[24:05.66] on the top from the test menu go to run
+[24:09.29] and select all tests this is what I
+[24:13.76] don't like about Visual Studio because
+[24:16.13] here we don't have the ability to run
+[24:18.32] only a particular test method like this
+[24:21.53] test method we wrote in this lecture we
+[24:24.77] can only run all the tests in this
+[24:27.20] project and that's why I like resharper
+[24:29.75] because with resharper I can run only
+[24:32.24] this test or I can run all the tests in
+[24:35.51] this class so it's more flexible I'm
+[24:38.21] going to show you that later in this
+[24:39.53] section so let's go on the top from the
+[24:43.97] test menu run all tests and note this
+[24:47.33] shortcut remember this so you can
+[24:49.16] quickly run all your tests
+[24:52.36] they should open this text explorer
+[24:55.39] window if you don't see that you can
+[24:58.18] find it on the top under test windows
+[25:03.15] test explorer okay
+[25:05.56] so you can see we have a passing test we
+[25:10.03] have a green mark you can see the name
+[25:12.19] of our test method and the time it took
+[25:14.47] to run this test in a real world
+[25:17.05] application you're gonna have hundreds
+[25:19.36] or thousands of unit tests so when you
+[25:21.97] run your tests
+[25:22.84] this window is going to be populated
+[25:25.15] with all the tests in your application
+[25:27.25] now let me show you an example of a
+[25:29.14] failing test so I'm going to go back to
+[25:31.54] the reservation class and create a bug
+[25:34.09] in our code so here I'm going to return
+[25:36.16] false let's say the developer who wrote
+[25:40.51] this code made this mistake
+[25:41.97] as I told you before with unit tests we
+[25:45.43] can catch bugs before deploying our
+[25:48.13] application so when we create a unit
+[25:50.41] test class and verify the expected
+[25:55.06] behavior of a method in this case you're
+[25:58.18] verifying that this method is returning
+[26:00.34] true with this unit test we can catch
+[26:04.00] bugs earlier and the software
+[26:06.19] development lifecycle
+[26:07.45] so back to our test Explorer window I'm
+[26:10.54] going to run all the tests again
+[26:15.42] this time our test failed so you can see
+[26:18.18] the benefit of unit tests in action now
+[26:21.81] here is an exercise for you as I told
+[26:24.21] you before this method has three
+[26:28.47] execution paths or three scenarios I
+[26:31.35] want you to use what you learn in this
+[26:33.69] lecture and write the other 2 unit tests
+[26:36.72] for this method in the next lecturer
+[26:38.82] you're going to see my solution
+[26:45.50] in the last lecture we renamed this
+[26:47.63] class to reservation tests but
+[26:49.88] apparently the rename refactoring
+[26:51.02] feature in Visual Studio didn't work
+[26:53.45] properly because the name of the file is
+[26:56.21] still unit test 1 so I'm gonna rename
+[26:59.39] this to reservation tests dot CS with
+[27:05.09] this convention you can easily find all
+[27:07.31] the tests for a given class ok
+[27:12.92] beautiful now that's right the second
+[27:16.04] unit test so I'm gonna write a public
+[27:23.00] void method and by the way all your test
+[27:26.48] methods should be public void so here
+[27:30.38] we're gonna use our convention to call
+[27:31.97] this method the first part is the method
+[27:34.76] on the test that is can be canceled by
+[27:38.75] the second part is the scenario so let's
+[27:43.25] say we want to test the scenario where
+[27:45.14] the same user who made the reservation
+[27:47.18] wants to cancel this reservation so same
+[27:51.98] user canceling the reservation now the
+[27:58.55] third part is the expected behavior what
+[28:01.94] do we expect this method to return you
+[28:04.79] should return true ok now inside this
+[28:13.52] method we should have three parts
+[28:15.32] arrange act and assert in the last
+[28:18.62] lecture I added comments to separate the
+[28:21.56] arranged act and assert parts but in a
+[28:24.56] real world scenario you don't
+[28:25.52] necessarily have to do this if your test
+[28:27.56] method is short and clean so in the
+[28:30.74] arrange part I'm going to create a new
+[28:32.87] reservation object so reservation it's a
+[28:38.57] new reservation in the act
+[28:42.68] I'm gonna call reservation can be
+[28:46.22] canceled by now here I want to simulate
+[28:48.86] a scenario where the same user is
+[28:51.89] canceling this reservation so I'm gonna
+[28:55.13] create a user object here
+[28:59.40] you
+[29:01.37] and first of all set the made by
+[29:06.71] property to this user so this user
+[29:09.86] created this reservation before now I
+[29:12.77] want to pass the same user object as an
+[29:15.35] argument to this method user now we get
+[29:20.45] the result and store it I finally make
+[29:24.95] an assertion so we assert that result is
+[29:29.42] true so now with these vertical spaces I
+[29:35.42] have added in the code you can see the
+[29:37.43] arrange the act and assert parts back in
+[29:41.42] our test Explorer window
+[29:43.13] let's run all the tests so we have one
+[29:48.38] failing test and this is because in the
+[29:50.78] last lecture I created a bug in our code
+[29:53.51] so let me change this here we return
+[29:57.17] true now back to our test class this new
+[30:02.12] method I created here is not picked up
+[30:04.46] by test Explorer we don't see that here
+[30:06.91] why because we forgot to decorate it
+[30:12.08] with the test method attribute so that's
+[30:15.11] why you should decorate every test
+[30:17.00] method with this attribute so it can be
+[30:19.73] picked up by the test runner now save
+[30:22.63] back in test Explorer run all now we
+[30:28.64] have to passing tests beautiful now
+[30:31.97] let's write the last test so I'm gonna
+[30:37.40] start with test method and public void
+[30:42.79] can be canceled by the third scenario is
+[30:49.16] a user trying to cancel someone else's
+[30:52.28] reservation so another user canceling
+[30:58.24] reservation what is the expected
+[31:01.73] behavior this method should return false
+[31:05.05] so return false
+[31:13.19] once again in the orange part I'm going
+[31:15.54] to create a reservation object new your
+[31:19.41] reservation and the act part we call can
+[31:24.84] be cancelled by now here we want to deal
+[31:27.33] with two different user objects so here
+[31:30.21] I can pass a user object and when
+[31:35.07] initializing the reservation I can set
+[31:37.71] made by two different user object and
+[31:42.44] finally we need to store the result here
+[31:46.77] and assert that result is false so is
+[31:52.17] false result now let's run all the tests
+[32:00.86] so we have three passing tests beautiful
+[32:09.79] so I have renamed this test method to
+[32:12.52] make them more consistent and easier to
+[32:14.62] read so we have three scenarios admin
+[32:18.73] canceling same user canceling and
+[32:21.43] another user canceling one thing you can
+[32:24.91] see about these tests is that they act
+[32:27.01] as some kind of documentation about our
+[32:30.22] source code this is another benefit of
+[32:33.13] writing tests imagine you join a new
+[32:35.95] team they give you a new project and
+[32:37.96] your task is to make some modifications
+[32:39.34] to a class if that class is properly
+[32:42.79] supported by a bunch of JUnit tests you
+[32:45.34] can easily figure out what the
+[32:47.11] responsibility of that class is now let
+[32:50.05] me show you another benefit of writing
+[32:51.79] tests earlier in this section I told you
+[32:54.79] that once you have tests you can
+[32:56.50] refactor your code with confidence so
+[32:59.95] back in our reservation class I don't
+[33:03.40] like the way this method is implemented
+[33:04.99] it looks very amateurish so I'm gonna
+[33:08.20] refactor it and then run all my tests
+[33:10.66] and see if I've broken anything or not
+[33:13.09] so the first change I wanna make here is
+[33:15.43] instead of having two if statements I'm
+[33:18.88] gonna have one if statement and use the
+[33:22.93] logical or operator so if user is admin
+[33:26.65] or made by equals user we're gonna
+[33:31.30] return true otherwise we're gonna return
+[33:33.94] false now back in test Explorer run all
+[33:39.61] the tests so my tests are verifying that
+[33:44.32] our application is still working I have
+[33:46.66] not broken anything I can take this to
+[33:49.42] the next level so instead of having this
+[33:53.59] if statement here and then return false
+[33:56.29] I'm simply gonna return the result of
+[34:01.18] this expression now we have only one
+[34:04.72] line of code here once again we run all
+[34:08.62] the tests all the tests are passing
+[34:15.72] our code is much cleaner and you can see
+[34:18.63] another benefit of writing tests
+[34:25.89] so far you have seen Emma's test in
+[34:28.35] action in this lecture I'm going to show
+[34:30.54] you how to use an unit which is my
+[34:32.73] preferred testing framework so an unit
+[34:36.03] is not part of Visual Studio and if you
+[34:38.19] want to use it you need to install a
+[34:40.14] couple of NuGet packages so open a
+[34:43.74] package manager console make sure to
+[34:47.04] select test ninja that unit tests and
+[34:50.46] the project drop down list now we need
+[34:53.79] to install a couple of packages so
+[34:56.58] install - package
+[34:59.03] the first one is any unit and make sure
+[35:02.88] to set the version to the same version
+[35:04.50] that I'm gonna use in this video so you
+[35:06.87] will have the same experience so -
+[35:09.63] version three point eight point one
+[35:15.77] beautiful now the second package install
+[35:21.24] package and unit three test adapter we
+[35:28.29] need this package to run and unit tests
+[35:30.69] inside visual studio because by default
+[35:33.99] the test runner that is built into
+[35:35.94] Visual Studio only recognizes MS tests
+[35:39.65] so set the version here as well this one
+[35:43.47] is three point eight point zero so it's
+[35:46.50] not exactly the same version as any unit
+[35:48.66] because these two packages are developed
+[35:50.97] independently but these two versions are
+[35:53.52] compatible okay beautiful now with n
+[35:59.73] unit we have different attributes so
+[36:02.70] instead of test class we use test
+[36:06.50] fixture now we need to import this type
+[36:10.68] so press ctrl + period and select the
+[36:14.40] first item using n unit dot framework
+[36:18.59] okay and instead of test method we have
+[36:23.30] test
+[36:27.68] like this and finally we need to modify
+[36:33.15] how we make assertions so here we have a
+[36:36.78] compilation error because Visual Studio
+[36:39.30] doesn't know whether we're referring to
+[36:41.76] the assert class in any unit framework
+[36:44.16] or MS test so I'm going to go on the top
+[36:47.25] and remove this using statement for
+[36:52.17] importing Microsoft unit testing
+[36:54.27] framework so delete the compilation is
+[36:58.92] gone so you can see this assert class
+[37:00.93] has the same API as the assert class in
+[37:03.99] MS test but here we have a different way
+[37:06.75] of writing assertions which is more
+[37:09.03] readable so another way to write the
+[37:13.56] same assertion is like this assert that
+[37:18.17] result is true it reads like plain
+[37:23.79] English also another way is to write
+[37:26.82] assert that result equals true so we can
+[37:33.42] add a boolean expression here which I
+[37:36.30] approach you choose is purely your
+[37:37.62] personal preference there is no
+[37:39.30] technical differences between these
+[37:41.61] three ways of making assertions so in
+[37:44.64] this lecture I'm gonna use the second
+[37:46.05] for delete and delete all right now
+[37:50.73] let's run these tests so once again on
+[37:52.92] the top test run all tests
+[38:01.10] so all tests are passing beautiful so
+[38:04.85] this is how you use any unit inside
+[38:07.19] Visual Studio now if you use resharper
+[38:10.16] you don't need to install and unit test
+[38:12.77] adapter because the test runner that
+[38:15.26] comes with resharper automatically picks
+[38:17.57] and unit tests the same is true if you
+[38:20.63] use the writer ID
+[38:26.99] when you get started with automatic
+[38:29.13] testing a word that you hear often is
+[38:31.83] test-driven development or TDD
+[38:34.40] test-driven development or TDD also
+[38:37.44] called test first is an approach to
+[38:39.93] build software with TDD you write your
+[38:42.96] tests before writing the application or
+[38:46.08] production code the first time I heard
+[38:48.63] this I asked how on earth is that even
+[38:51.21] possible how can we test the code that
+[38:53.64] we haven't written chances are have the
+[38:56.04] same question so let's see how you start
+[39:00.57] by writing a failing test this test
+[39:03.72] should fail because you don't have any
+[39:05.91] application code that would make it pass
+[39:08.16] right then you'll write the simplest
+[39:10.95] application code that will make this
+[39:13.05] test pass the absolute simplest you
+[39:16.17] don't want to over engineer here you
+[39:18.21] don't want to design a class diagram
+[39:19.59] with a zillion classes and methods use
+[39:22.71] the simplest implementation that would
+[39:24.84] make the test pass then refactor your
+[39:28.17] code if necessary these three steps are
+[39:31.74] the foundation of TDD you repeat these
+[39:35.22] three steps over and over until you
+[39:38.19] build a complete feature now what is so
+[39:41.70] special about TDD well first is that
+[39:45.51] your source code will be testable right
+[39:47.82] from the get-go you don't have to make
+[39:49.80] any changes your code to make it
+[39:51.69] testable second is that every line of
+[39:55.32] your production code is fully covered by
+[39:57.87] tests which means you can refactor and
+[40:00.81] deploy with confidence and third is that
+[40:04.83] it often results in a simpler
+[40:06.99] implementation when you start with a big
+[40:10.08] class diagram chances are you're
+[40:12.39] over-engineering and making the solution
+[40:14.64] more complex if you write enough code to
+[40:17.61] make all the tests pass and that
+[40:19.74] solution works there is no reason to
+[40:21.78] write more code the fact that all your
+[40:24.48] tests pass means you've fulfilled all
+[40:27.09] the business requirements so unless
+[40:30.03] there is a new requirement you don't
+[40:31.71] need to write more code and if there is
+[40:33.69] a new requirement you start by failing
+[40:35.97] tests so this is TDT in TDD we write our
+[40:39.84] tests
+[40:40.35] first and that's why we call this
+[40:42.03] approach test-driven development so our
+[40:45.09] development is driven by our tests in
+[40:47.72] contrast to TDD or tests first we have
+[40:51.36] code first which is what you have been
+[40:53.25] doing so far you start with your
+[40:55.38] application code and then you write
+[40:57.15] tests which approach is better it
+[41:00.45] depends who you ask
+[41:01.68] in theory TDD is more promising because
+[41:05.31] of the benefits I told you but in
+[41:07.65] practice sometimes it can get really
+[41:09.84] complex and it may slow you down if
+[41:12.15] that's the case it's better to switch to
+[41:14.61] the code first approach and write your
+[41:16.68] tests after in this course our focus
+[41:20.10] will be on the code first approach so we
+[41:22.62] can master the fundamentals of testing
+[41:25.14] once you master the fundamentals then
+[41:28.05] you'll be ready to start your tests
+[41:30.42] first journey TDD really requires a
+[41:33.09] separate course and I'm not going to
+[41:35.10] talk about it throughout this course but
+[41:37.29] if you're interested potentially in the
+[41:39.33] future I can create a course on
+[41:40.98] test-driven development
+[41:47.92] all right now let me give you an
+[41:50.00] overview of how I have structured this
+[41:52.28] course real quick in the next section
+[41:54.80] you're going to learn the fundamentals
+[41:56.87] of unit testing in this section we'll be
+[41:59.06] looking at characteristics of good and
+[42:01.43] trustworthy unit tests we'll be looking
+[42:03.83] at naming and organizing tests writing
+[42:07.04] some basic unit tests as well as
+[42:08.90] creating parameterised tests once you
+[42:12.44] master the fundamentals then we'll be
+[42:14.84] looking at the core unit testing
+[42:16.79] techniques in this section in each
+[42:19.10] lecture I'm going to show you an example
+[42:21.44] of a function to test each function
+[42:23.81] shows you a scenario that you see in a
+[42:25.76] lot of real-world applications the
+[42:27.95] following section is all about exercises
+[42:30.17] so in that section I will give you three
+[42:32.75] unit testing exercises and you will have
+[42:35.33] a chance to put what you learn in the
+[42:37.34] first two sections in practice for each
+[42:40.10] exercise you can see my solution as well
+[42:42.74] now up to this point all our unit tests
+[42:45.80] are four simple classes that don't have
+[42:48.17] any external dependencies but in the
+[42:51.32] real world our code often talks to a
+[42:53.51] database and web servers and so on so
+[42:56.39] section 5 is all about dealing with
+[42:58.73] these external dependencies in this
+[43:01.37] section you will learn about concepts
+[43:03.02] such as dependency injection and marking
+[43:05.78] the following section again is all about
+[43:08.99] exercises so we'll look at three
+[43:11.54] examples of code that touches an
+[43:13.70] external resource and finally the last
+[43:16.49] two sections include more challenging
+[43:18.98] exercises I will show you a snippet of
+[43:21.62] source code taken from a real project
+[43:24.29] and your job is to write all the
+[43:26.51] necessary unit tests for that code and
+[43:28.97] of course you're going to see my
+[43:30.77] solution as well
+[43:36.31] so in this section you learned about
+[43:39.02] automated testing and its benefits
+[43:41.48] Maurice pacifically you learned that it
+[43:43.70] helps you prefactor your code with
+[43:45.56] confidence and release software of
+[43:48.02] better quality and with less bugs you
+[43:51.50] learn about three types of tests unit
+[43:53.86] integration and end-to-end tests and you
+[43:56.99] also saw a glimpse of unit testing in
+[43:59.60] action you learn how to write a basic
+[44:01.88] unit test in Visual Studio and finally
+[44:04.73] you learned how to run and debug your
+[44:06.86] unit tests in the next section we're
+[44:09.41] going to look at the core techniques for
+[44:11.48] writing unit tests so I will see you in
+[44:13.67] the next section
+[44:18.78] bye guys maash here so if you made it
+[44:22.00] this far you seem to be really
+[44:23.91] enthusiastic about learning unit testing
+[44:26.59] so I highly recommend you to enroll in
+[44:29.11] my unit testing course and don't waste
+[44:31.48] your time jumping from one tutorial to
+[44:33.52] another when you enroll you will learn
+[44:35.89] everything about unit testing from A to
+[44:37.99] Z and by the end of watching the course
+[44:40.69] you'll also get a certificate of
+[44:43.00] completion which you can present your
+[44:45.13] current or future employers so the link
+[44:48.55] to the full course is in the video
+[44:50.29] description I hope to see in the course

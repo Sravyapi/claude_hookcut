@@ -1,0 +1,311 @@
+[0:00.24] So while the entire internet was busy
+[0:02.16] roasting Delgotia's university for
+[0:04.16] passing of this Chinese robot dog as
+[0:06.24] their own creation, the biggest AI
+[0:08.24] announcements in India's history were
+[0:10.24] happening just a few feet away. But most
+[0:12.80] people did not even notice. Welcome to
+[0:15.04] our weekly Indian startup news show. I'm
+[0:17.12] Panka, your host, and you're watching
+[0:19.04] Backstage with Millionaires, a channel
+[0:20.96] that's also a part of Zerodha's 01
+[0:22.96] network.
+[0:28.80] And today I want to tell you about the
+[0:30.24] actual innovations at the India AI
+[0:32.40] impact summit because trust me the whole
+[0:34.48] Galotia's drama were just maybe 5% of
+[0:37.36] the entire story. The other 95% was pure
+[0:40.32] innovation. And let's start with the
+[0:41.92] irony that perfectly captures this whole
+[0:44.32] situation. So on one side you had
+[0:46.08] Galgotia's university displaying a
+[0:48.16] Chinese unitary go to robot dog which
+[0:50.56] retails at about $1,600 a piece which
+[0:53.28] they claimed as their own indigenous
+[0:55.52] innovation. But people found out they
+[0:57.92] got evicted from the summit the entire
+[1:00.00] internet lost its mind and soon every
+[1:02.48] media outlet in India was reposting the
+[1:04.80] same clip. But right there at the same
+[1:06.96] summit, Exttera Robotics and IT Kpur
+[1:09.52] startup was quietly showcasing Swan M2,
+[1:12.56] India's first actual commercial
+[1:14.32] quadrupid rocket designed in India,
+[1:16.72] built in India and being demonstrated by
+[1:19.20] L&T for real industrial applications.
+[1:21.76] But almost nobody talked about it. And
+[1:23.92] here's the thing, [music] what Extter
+[1:25.28] Robotics has built is not a toy. This is
+[1:27.52] an industrial-grade robot that can
+[1:29.52] navigate construction sites, climb
+[1:31.36] stairs, handle rough terrain, and has a
+[1:34.16] payload capacity of 5 kg. [music] And
+[1:36.72] LNT, which is India's largest
+[1:38.64] engineering company, is seriously
+[1:40.64] evaluating this product for deployment
+[1:42.72] across their construction sites. And so,
+[1:45.68] it's not just a proof of concept. It's
+[1:47.68] actually a real product. But because
+[1:49.92] everyone was busy dunking on a
+[1:51.52] university for faking it, the startup
+[1:53.36] that actually made it got buried.
+[1:55.20] Outrage went viral. But the true
+[1:56.96] innovation got ignored. And honestly,
+[1:58.88] that's the story of this entire summit.
+[2:00.96] Which brings me to the most important
+[2:02.48] thing. While all of this drama was
+[2:04.16] unfolding, Serameai quietly dropped
+[2:06.48] three announcements that could position
+[2:08.56] India as a serious global AI player. And
+[2:11.52] let's start with Seram case, the
+[2:13.20] company's first AI smart glasses. And I
+[2:15.92] want to be clear, this is not some
+[2:17.28] prototype which people can't use
+[2:19.12] already. In fact, here is a clip of
+[2:20.88] someone trying this out for the first
+[2:22.56] time. And I think you might recognize
+[2:24.48] this guy. He is Caleb, the previous host
+[2:27.04] of these weekly news videos, and Seram
+[2:29.60] is launching them in May 2026. And the
+[2:32.48] thing about these glasses is that
+[2:33.84] they're not just camera glasses that
+[2:35.68] stream everything to the cloud. They
+[2:37.52] have built-in AI that works in 10 Indian
+[2:39.84] languages and can also function offline
+[2:42.08] using edge AI models. Serv is also
+[2:44.80] opening up the platform so developers
+[2:46.72] can build custom applications on top of
+[2:48.96] it. Think about what that means in
+[2:50.64] practice. A farmer sitting in Tamil Nadu
+[2:52.72] can point at a crop and immediately get
+[2:54.56] disease detection advice [music] in
+[2:56.00] Tamil. A small shopkeeper can manage his
+[2:58.16] inventory through voice commands in
+[2:59.84] Hindi. And healthcare workers in rural
+[3:01.84] areas can get realtime language
+[3:03.76] translation for patients who speak
+[3:05.68] something different. These are all
+[3:07.20] realworld use cases and compare that to
+[3:09.36] Meta's Raben smart glasses which cost
+[3:11.44] around 30,000 rupees and honestly works
+[3:13.92] best only if you speak English. So in a
+[3:16.48] way serving
+[3:18.32] for India first applications. Next, the
+[3:20.88] company also launched two LLMs on the
+[3:22.96] same day. The first is Serv 30B, a 30
+[3:25.84] billion parameter model using something
+[3:27.84] called mixture of experts architecture.
+[3:29.92] This model basically has 30 billion
+[3:31.84] pieces of knowledge baked into it, but
+[3:33.84] it only activates about 1 billion of
+[3:35.92] them at any given time depending on what
+[3:38.16] you are asking. The result is that it
+[3:39.92] runs four to six times faster than a
+[3:42.00] traditional model of the same size. And
+[3:44.24] during the demo, they even showcased
+[3:45.76] their AI chatbot called Vicram turning
+[3:47.68] on a basic feature phone. And HMD and
+[3:49.92] Nokia even announced that they're
+[3:51.44] bringing Serum's AI chatbot directly to
+[3:53.92] these feature phones. Then there is
+[3:55.68] Servam 105B, 105 billion parameter model
+[3:59.20] that can handle 128,000 tokens of
+[4:01.84] context in a single session. And they
+[4:03.92] even did these live demos at the summit,
+[4:05.84] analyzing company balance sheets,
+[4:07.76] answering complex financial queries, and
+[4:09.92] generating business insights on the fly.
+[4:12.00] And they are claiming that it performs
+[4:13.52] on par with Frontier models, but at a
+[4:16.00] fraction of the cost, making it cheaper
+[4:18.00] than Google's Gemini Flash. And this is
+[4:20.24] where I want to zoom out for a second
+[4:21.92] because there's a strategic angle to all
+[4:23.68] of this that I think most people are
+[4:25.60] completely missing. See, the US and
+[4:27.44] China are in this race to build the
+[4:29.12] biggest possible AI model. GBT4 was
+[4:31.68] estimated to have 1.76 trillion
+[4:34.08] parameters. Gemini is estimated to have
+[4:36.41] [music] 2 trillion. It's basically a
+[4:38.08] size competition at this point. But
+[4:39.84] India is doing something completely
+[4:41.84] different. Servam is not trying to win
+[4:43.44] the size race. They're trying to build
+[4:45.28] the most useful AI for India. Models
+[4:48.08] that can run on feature phones, models
+[4:50.08] that genuinely speak 22 Indian
+[4:52.40] languages, models that can work offline
+[4:54.72] in areas with poor connectivity and also
+[4:57.12] models that are priced at 1 rupee per
+[4:59.36] minute because the economics has to work
+[5:01.20] for the Indian people. India could
+[5:02.96] become the world's biggest and the most
+[5:04.88] important AI laboratory. A place where
+[5:07.04] 1.4 4 billion people will have access to
+[5:09.44] cheap useful AI in their local
+[5:11.60] languages. And we have seen this
+[5:13.12] playbook before. In 2016, people said
+[5:15.28] that India can't compete with Visa and
+[5:17.04] Mastercard. But today, UPI processes
+[5:19.28] more transaction than Visa every single
+[5:21.60] day. And I believe the same thing would
+[5:23.28] happen with AI. The way we built
+[5:24.80] financials and identity rails with
+[5:26.64] things like UPI and Aadhaar, same can
+[5:28.64] now happen in the case of AI too. All
+[5:30.80] right, next up, Skyroot Aerospace is
+[5:32.64] planning to launch India's first
+[5:34.24] commercial rocket Vikram 1. And
+[5:36.24] according to the company, Vikram [music]
+[5:37.60] 1's stage 2 and stage 3 engines have
+[5:40.08] already arrived at the Shrih Harikota
+[5:41.84] spaceport for their pre-flight checks
+[5:44.08] and integrations. The countdown in every
+[5:46.48] sense of the word has begun. But this is
+[5:49.20] not Skyroot's first time on the
+[5:50.80] launchpad. Back in January 2022, the
+[5:53.04] Hyderabad based startup created history
+[5:55.12] when it launched Vikram S, their single
+[5:57.60] stage suborbital rocket. And that
+[5:59.60] mission, which was named Praam, made
+[6:01.52] Skyroot the first private Indian company
+[6:03.60] to send a rocket to space. Vikram has
+[6:05.92] reached an altitude of 89 km, hit a top
+[6:08.72] speed of Mac 5 and carried payloads for
+[6:11.20] three customers before splashing down in
+[6:13.28] the Bay of Bengal. It was a proof of
+[6:15.12] concept, a bold statement that India's
+[6:17.44] private space sector had arrived. But
+[6:19.36] Vikram S was never the destination. It
+[6:21.84] was always the dress rehearsal. Vikram 1
+[6:24.48] is the real act. Standing 20 m tall and
+[6:26.96] built almost entirely from carbon
+[6:28.80] composites, the three-stage rocket is
+[6:30.96] capable of carrying up to 350 kgs to low
+[6:33.84] Earth orbit and can be launch ready
+[6:35.92] within 24 hours of reaching the pad. Its
+[6:38.56] stage 2 engine Kalam 250 can reach a
+[6:40.72] peak thrust of 235 kilotons in vacuum
+[6:44.16] and its stage 3 gives the satellite
+[6:46.00] precise final push needed to reach their
+[6:48.72] target orbits. And when it launches, it
+[6:51.12] will mark India's first private orbital
+[6:53.36] rocket launch. A milestone that no
+[6:55.52] Indian company has achieved before.
+[6:57.44] Also, if this succeed, it will validate
+[6:59.52] India as a genuine competitor in the
+[7:01.76] global small satellite launch market.
+[7:04.00] The one that is currently dominated by
+[7:05.68] SpaceX and a bunch of well-funded
+[7:07.52] American and European players. And
+[7:09.36] Skyroot knows this. Even as Vikram 1's
+[7:11.60] engine settle into the pre-launch checks
+[7:13.44] of Sri Harikota, the company is already
+[7:15.52] trying to raise funds to make sure that
+[7:17.44] it stays competitive. The company's in
+[7:19.60] advance talks to raise $1,800 cr rupes
+[7:22.16] or roughly $200 million in what would be
+[7:24.80] its largest funding round yet. And this
+[7:27.12] round is expected to push skyroot
+[7:28.80] valuation close to $1 billion making it
+[7:31.60] India's first space tech unicorn.
+[7:33.92] [music]
+[7:36.24] All right, moving on to some quick news
+[7:37.76] updates. Continuing to talk about Space
+[7:39.76] Tech, [music] Pixel Space has partnered
+[7:41.76] with French electrical propulsion
+[7:43.44] company Exotrail to power and steer its
+[7:45.68] upcoming satellites in orbit. And under
+[7:47.68] this agreement, Pixel will integrate
+[7:49.20] Exotrail spacefare electric propulsion
+[7:51.12] system across its next satellite
+[7:52.88] deployments with deliveries planned
+[7:54.40] through 2027. In simple terms, Exotrails
+[7:57.12] thruster will help Pixel satellites
+[7:59.04] maneuver in space more efficiently,
+[8:01.12] extend its mission life and manage endof
+[8:03.52] life disposal better. All right, next
+[8:05.44] up, Anthropic, the US-based AI company
+[8:07.84] behind Claude, has opened its first
+[8:09.92] Indian office in Bengaluru, doubling
+[8:11.84] down on what is now its second largest
+[8:14.00] market globally for Claude. Their India
+[8:16.40] operations will be led by Arena Go, a
+[8:18.64] former MD of Microsoft India. The
+[8:20.80] company is also rolling out deeper
+[8:22.32] enterprise partnerships and plans to
+[8:24.32] offer applied AI expertise to Indian
+[8:26.80] businesses and hence positioning Claude
+[8:28.96] as a serious B2B AI tool in a market
+[8:31.36] that is projected to hit $126 billion by
+[8:34.64] 2030. [music]
+[8:35.36] All right, next up, AI startup Corover
+[8:37.44] has launched an offline AI device called
+[8:39.44] the Bharat GPD desk appliance, bringing
+[8:42.00] its Bharat GPT platform directly to
+[8:44.16] desktops without needing an internet
+[8:46.16] connection. This device is powered by
+[8:47.92] Nvidia's Grace Blackville architecture
+[8:50.16] and bundled with Korover's foundational
+[8:52.00] Bharat GPT mini model, enabling users to
+[8:54.32] run AI locally and securely, which is a
+[8:56.80] big plus for enterprise, defense, BFSI,
+[8:59.52] and public sector use cases where data
+[9:01.60] privacy is of primary importance.
+[9:06.72] All right, now let's move into the
+[9:07.92] funding news segment for today's video.
+[9:09.60] This week, Indian startups raised a
+[9:11.12] total of $1.26 billion, which is
+[9:14.24] significantly higher than last week's
+[9:16.08] 259 million. And now, let's take a look
+[9:18.24] at some of the companies that have
+[9:19.28] raised funds this week. The first one I
+[9:21.36] want to talk about is Mumbai based NASA
+[9:23.52] which runs an AI cloud platform called
+[9:25.60] Velocus which lets companies rent
+[9:27.60] powerful GPUs and tools to build, train
+[9:30.32] and run their own AI models like renting
+[9:32.72] a supercomput for AI without buying the
+[9:35.28] hardware and they have just raised $1.2
+[9:37.28] billion making them a unicorn. Following
+[9:39.52] that we have Bengaluru based C2I
+[9:41.36] semiconductors, a company that designs
+[9:43.44] smart power management chips which make
+[9:45.44] AI data centers way more efficient by
+[9:47.84] fixing how electricity flows from the
+[9:49.84] grid all the way to the GPU cores. And
+[9:52.32] this way they cut energy waste and boost
+[9:54.48] the performance and they raised $15
+[9:56.24] million. After that we have a Bengalur
+[9:58.32] based biotech startup called Petris
+[10:00.16] which uses AI to speed up drug
+[10:02.08] discovery. basically scanning millions
+[10:04.00] of potential molecules in days to find
+[10:06.32] new candidates for disease like cancer,
+[10:08.64] inflammation or other rare conditions.
+[10:11.04] And they've raised 70 cr rupees or $7.7
+[10:13.60] million in their series A round. Next,
+[10:15.76] we have a Bangalore based startup called
+[10:17.20] Home Run, which is a quick commerce
+[10:18.80] platform that delivers construction and
+[10:20.80] home improvement materials like cement,
+[10:22.96] plywood, electrical fittings, plumbing
+[10:25.20] supplies, and the decor supplies that
+[10:27.20] give you finishing touches right to your
+[10:29.20] site or doorstep in 60 minutes. Right
+[10:31.68] now they're only serving in Bengaluru
+[10:33.28] and they have raised 60 cr rupes or $6.6
+[10:35.92] million in their series AOM. And finally
+[10:38.40] we have an EV startup called Pluto
+[10:40.24] Mobility which builds electric vehicles
+[10:42.40] designed specifically for last mile
+[10:44.48] delivery like this super compact scooter
+[10:46.88] sized four-wheeler EV that's fully
+[10:48.72] enclosed to shield riders and packages
+[10:50.88] from rain, dust, or heat. And they have
+[10:53.20] raised $2 million in their seed round.
+[10:54.96] All right, that's all the startup news I
+[10:56.32] have for you this week. Thank you so
+[10:57.76] much for watching and I'll see you in
+[10:59.60] the next

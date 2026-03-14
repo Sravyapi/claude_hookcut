@@ -1,7 +1,6 @@
 """Tests for billing router — plans, checkout, PAYG, v0-grant, user sync."""
 from unittest.mock import patch, MagicMock
 from tests.conftest import TEST_USER_ID, make_user
-from app.models.user import CreditBalance
 
 
 class TestGetPlans:

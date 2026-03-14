@@ -1,0 +1,2147 @@
+[0:00.00] Uh this is a very real market that is
+[0:02.40] here to say
+[0:05.28] we were one of the first people to build
+[0:07.92] a real time text to speech that ran
+[0:09.84] under 200 millconds. This is definitely
+[0:12.48] not winner takes all and we don't even
+[0:14.88] know what winning means at this point of
+[0:17.04] time. Why this is a massive multi-
+[0:19.60] trillion dollar market is because you
+[0:21.76] are basically going to have every human
+[0:24.00] as a consumer. took two weeks to go from
+[0:26.48] two kids writing code in a bedroom to uh
+[0:28.96] raising a PC from and then the product
+[0:31.20] was just a HTML page with a model with
+[0:33.28] one GPU running behind it and I had
+[0:35.20] enterprises coming saying we want this.
+[0:36.96] We are literally creating list of top 50
+[0:39.76] dream customers that we have and going
+[0:41.92] aggressively through a very targeted
+[0:43.60] motion of how could we get them through
+[0:45.44] a palenteer style approach. That was the
+[0:48.16] one of the best decisions we have ever
+[0:50.08] taken.
+[0:54.24] Uh hi this is Sadhhatwara your host at
+[0:56.08] neon show and managing partner at neon
+[0:58.24] fund a fund that to invest in the best
+[1:00.00] of enterprise AI companies between the
+[1:01.44] US and India corridor like atomic works
+[1:03.36] spot draft clouds. Today I have with me
+[1:05.20] Sudashan founder of smallest. Sudashan
+[1:06.88] welcome to the podcast. Thanks for
+[1:08.08] having me.
+[1:08.32] >> This is one of my biggest regrets you
+[1:09.92] know I can tell you that not being able
+[1:11.36] to be part of small because as you know
+[1:12.96] right we were raising our own neon fund
+[1:14.40] three at that point of time we got
+[1:16.32] connected right but but glad to see your
+[1:18.32] journey really inspired and you know you
+[1:21.04] have like set sky as the limit in your
+[1:23.36] journey at smallest and what you have
+[1:24.72] been able to create out of India is
+[1:26.16] transformational so kudos to you on
+[1:27.76] doing that
+[1:28.24] >> thank you
+[1:28.80] >> and I know uh because I've been a
+[1:30.32] founder from India and still like
+[1:31.44] running our own funds almost like a
+[1:33.20] founder u uh the ceiling on India
+[1:35.92] sometimes hit you and you have to
+[1:38.00] of that then in your case you know
+[1:39.68] before we dive into smallest tell tell
+[1:41.44] me about your journey and how did you
+[1:42.72] break that ceiling?
+[1:44.08] >> Yeah um I have grown up in India I was
+[1:47.52] born in Mumbai brought up in Pune um I
+[1:50.32] was uh lucky enough to choose science
+[1:52.48] when I was young and I really liked
+[1:53.76] physics um so I've always been uh
+[1:56.24] scientific in my younger days and uh um
+[1:59.36] I when someone would ask me what I
+[2:01.44] wanted to be I would say I want to be a
+[2:02.88] quantum physicist or like I want to go
+[2:04.72] study large large bodies and things like
+[2:06.32] that. uh I got into college um in India
+[2:09.36] in IIT um and at that point of time um
+[2:12.08] you realize that there is very little
+[2:13.68] opportunity to pursue these sort of deep
+[2:15.44] research projects. No one is doing that.
+[2:16.72] Everyone is doing um competitive coding,
+[2:18.88] right? And so um I used to write code
+[2:21.68] since I was very young because my father
+[2:23.12] was in Infosys and he got me a computer
+[2:24.80] when I was young. So I I could write
+[2:26.24] code and I wrote like database and like
+[2:28.08] bunch of other things.
+[2:29.28] >> So I was like okay uh let's enjoy code
+[2:31.92] but uh what do we uh what do we do about
+[2:34.72] it? like why are we doing why are we
+[2:36.24] competing um and I did not want to do
+[2:38.32] coding competitively I wanted to build
+[2:39.92] something and luckily I came across
+[2:42.48] computer vision as a topic so computer
+[2:44.64] vision is preai days today you call it
+[2:47.04] vision language models but uh at that
+[2:49.12] time it was just a very like basic
+[2:51.04] approach to understanding images and
+[2:52.40] videos got the opportunity to work at
+[2:54.16] like uh Samsung's one of startups that
+[2:56.32] was funded by Samsung in Korea worked in
+[2:58.16] self-driving cars like this is like when
+[2:59.68] open was just coming up or like pre-open
+[3:01.44] AI days and so that got me like really
+[3:03.76] interested like you AI seems to have
+[3:05.44] like a broad set of applications that
+[3:07.44] you know we can have and so no one was
+[3:09.52] giving a job in AI at that point of time
+[3:11.44] except some of these foreign companies
+[3:12.88] and I'm like okay I want to do this I'm
+[3:14.24] going to do this and so
+[3:15.44] >> which year
+[3:16.08] >> this was in 2017 16 2017 basically so
+[3:19.68] >> and you were in in first year of college
+[3:21.60] >> I was in second year first first to
+[3:22.96] second year yeah basically so uh so so
+[3:25.60] yeah so I was like I want to really go
+[3:27.12] into AI and figure out AI but no jobs in
+[3:29.12] AI in India right so I got a job in
+[3:31.68] Korea u I was like super excited about
+[3:34.56] going there. Um I uh like I I was
+[3:37.52] studying doubling down into A etc. and
+[3:39.28] then I was not able to get a visa for
+[3:40.88] some reason. They were like you know if
+[3:43.04] you are below the age of this Korean
+[3:45.04] government changed the rule that you
+[3:46.16] have to hire Koreans basically. So I was
+[3:48.72] like okay what do you do now? So I got
+[3:50.64] the opportunity to work in um a startup
+[3:53.36] in India that was building something in
+[3:54.88] edtech plus AI. So you must have heard
+[3:56.64] of toppeler.com right? So so that was
+[3:59.28] like completely different from my
+[4:01.12] studies on computer vision pure research
+[4:02.80] etc. Um but we built something which was
+[4:05.92] like the largest repository of like um
+[4:08.80] edtech material in the world where we
+[4:10.80] indexed all textbooks from various
+[4:13.20] syllabuses CBC IC across India and we
+[4:16.24] overtook by juice in traffic and we got
+[4:18.16] acquired by Baiju for like $150 million
+[4:20.96] back then and so we were also building
+[4:22.96] this pre-adg this AI bot which could
+[4:25.28] basically you can ask any J question and
+[4:26.72] then it can come up with answers and
+[4:28.16] then you can also connect with a human
+[4:29.68] to answer those questions. So I I
+[4:32.16] enjoyed that. Um and and that got me uh
+[4:36.24] like really curious about startups.
+[4:37.92] Basically of that Topper team there are
+[4:39.76] 10 startups that have come out. Uh
+[4:41.20] largest is Cuckoo FM. So Cuckoo is going
+[4:43.28] to do an IPO very soon. Uh but yeah
+[4:46.08] everything I know about how a startup
+[4:47.84] should operate came from topper. Um one
+[4:50.48] thing was very clear though is if I want
+[4:52.32] to build something I want it to be in
+[4:54.24] deep tech. Um and so I started again
+[4:56.40] looking for opportunities in AI and
+[4:58.64] luckily there was this professor called
+[5:00.96] Arjun Jen. So Arjun was uh working with
+[5:03.28] Yan Leon. Yan is one of the founding
+[5:04.80] fathers of AI. Um he was one of the
+[5:07.52] first people in the world to do um deep
+[5:09.76] learning. So back when Alex net came out
+[5:12.32] he you know he was in the heat of things
+[5:14.56] and he built this company Arjun which he
+[5:18.24] sold to Mercedes and and then he used to
+[5:20.16] act as a consultant for all of these
+[5:21.36] automobile companies for self-driving
+[5:22.80] vehicles. So I was like this is my
+[5:24.16] opportunity. I'm going to like work with
+[5:25.52] Arjun. And so I kind of uh got there. I
+[5:28.40] started working with him. We started
+[5:30.08] building the Hydra model for
+[5:31.68] self-driving cars. Um over the next two
+[5:34.32] to three years, we built like a a model
+[5:36.16] that can uh you know run in real time on
+[5:38.56] the vehicle hardware uh for level 3
+[5:40.72] self-driving across multiple countries,
+[5:42.72] Germany, US, Japan, etc. And that was
+[5:45.36] where I learned how to productionize AI
+[5:47.76] at scale. And also how at that was the
+[5:50.56] point where I started realizing how
+[5:52.64] powerful small models are because what
+[5:55.04] we used to do is we used to train these
+[5:56.64] cloud-based models that were pretty big
+[5:58.80] and then we used to make them smaller
+[6:00.56] through this process called distillation
+[6:02.16] and make them run on the vehicle
+[6:03.92] hardware in real time. And what that
+[6:05.92] taught us was that most of the
+[6:07.68] pre-training data for these large models
+[6:09.44] was junk and garbage. But when you use
+[6:12.08] that pre-training model as a teacher for
+[6:14.48] this small model and we could go into
+[6:16.08] what teacher means but it would
+[6:18.08] basically uh act at similar accuracies
+[6:21.28] as the larger model at 100th or 110th of
+[6:24.00] the size. So what so so that kind of got
+[6:26.56] me thinking around why is that behavior
+[6:29.28] there and do LLMs also have similar
+[6:31.60] properties right and so that's when I
+[6:33.12] started doing some more research around
+[6:35.20] small models and I bought the domain
+[6:37.12] smallest AI around then this is like I
+[6:39.60] got it for like $100 um and and the idea
+[6:41.92] was basically how to make
+[6:43.20] >> which year
+[6:44.00] >> this was 2021
+[6:47.28] 2022 2022 right so uh this is like even
+[6:51.84] one one or two years before I started
+[6:53.76] the actually right and so then uh that
+[6:56.80] idea was always there I was doing like a
+[6:58.24] lot of research um and and eventually I
+[7:01.20] decided to basically quit my quit my
+[7:03.52] full-time role and actually go
+[7:04.80] >> where were you doing full-time role
+[7:06.00] >> I was I got into this legal tech plus AI
+[7:08.80] so you were trying to build like a
+[7:09.68] Harvey AI competitor uh basically um
+[7:12.16] called Zolvit Vakil search so one in 10
+[7:14.56] businesses in India uses um vakil search
+[7:17.36] for illegal tech compliance etc so this
+[7:19.52] was like a place where you know you
+[7:21.12] could um get like accountant in like 10
+[7:23.84] And basically also um for lawyers we
+[7:26.24] have a product where you can automate
+[7:27.60] your case management and things like
+[7:28.96] that. So we were one of the first people
+[7:31.04] who had actually adopted uh vector
+[7:33.52] databases in in India because we were
+[7:35.44] one of pine cone's first customers. Um
+[7:37.20] and and we were building out rag and we
+[7:39.52] were building out all these systems. Um
+[7:41.60] but I think that was not a very
+[7:43.12] successful outcome. realized that if you
+[7:45.44] have to build for the legal market, you
+[7:46.80] have to build from the US basically or
+[7:48.48] for the US at least, right? Every
+[7:49.84] everywhere else is
+[7:51.12] >> the market is just too tiny for you to
+[7:52.96] get any uh money out of that sadly. But
+[7:54.88] but learned a lot there about uh the
+[7:57.44] whole how do you separate memory from
+[8:00.24] model layers. So that was a place where
+[8:02.00] I got to experiment that because you
+[8:03.52] have a large amount of legal judgments
+[8:05.36] and uh all of that has to be indexed and
+[8:07.68] it can't be stored in the model context,
+[8:09.28] right? you have to the idea of context
+[8:11.04] engineering which is becoming popular
+[8:12.40] right now was being you know worked upon
+[8:14.40] by us back then to manage these uh you
+[8:16.96] know legal searches and answers on on
+[8:19.12] that basically. So yeah um after that I
+[8:22.16] was pretty clear like I' i've seen like
+[8:23.84] a startup going to an acquisition. I've
+[8:25.92] seen like a deep tech product going from
+[8:27.36] zero to production. I have seen another
+[8:29.52] startup go to like a series B. And so u
+[8:32.64] I wanted to start something of my own.
+[8:34.48] I'm not talking about like the other uh
+[8:36.24] small attempts I have tried on my own
+[8:38.08] because they were very in my opinion
+[8:40.40] juvenile. Uh but but one thing was very
+[8:43.04] clear that if I wanted to start you have
+[8:44.88] to have to just go at it. You have to
+[8:47.12] you can't do uh you can't half as a
+[8:49.28] startup. You have to do it full-time.
+[8:50.88] You have to put your money behind it. I
+[8:52.48] put the first 100 150k into smallest of
+[8:55.20] my own and we basically got like some
+[8:57.12] GPUs and we started like training
+[8:58.80] models.
+[8:59.28] >> This is which year?
+[9:00.16] >> This is 2024.
+[9:01.68] >> You quit your job in 2024 and then
+[9:03.04] >> I quit my job 2023. I was like figuring
+[9:04.96] out what to do for like uh 6 years and
+[9:07.92] then 2024 um second half is when sort of
+[9:12.00] we were training some models. 2024
+[9:13.60] second half is when we were like okay um
+[9:15.68] something is working uh and our training
+[9:17.28] was working. So 2024 second half we
+[9:20.48] basically we were experimenting with
+[9:22.00] small models and we realized that one of
+[9:24.08] the applications of this small models
+[9:25.60] was to uh to build realtime systems uh
+[9:29.84] because they have very low latency like
+[9:31.28] 100 200 millconds of latency and so we
+[9:34.88] uh started looking at okay which which
+[9:37.04] applications have low latency one was
+[9:38.56] your finance and I I really don't like
+[9:40.40] finance so I was like I'm not going to
+[9:41.84] be good at this but yai seemed very
+[9:43.92] exciting because yci was just coming up
+[9:45.76] 2024
+[9:46.48] >> 11 labs started became popular.
+[9:48.32] >> Yes, 11 Labs was started I think last
+[9:50.32] year, maybe 2023 or I'm not exactly sure
+[9:52.48] of the timelines but so YC was coming up
+[9:55.12] but 11 Labs was completely into offline
+[9:57.28] dubbing and things like that. They did
+[9:58.72] not have a real time model, right? So we
+[10:01.44] were one of the first people to build um
+[10:04.00] a realtime text to speech that ran under
+[10:06.32] 200 milliseconds. So we uh we put a demo
+[10:09.68] on LinkedIn. Um that went viral. Um and
+[10:12.80] that's how we like it took two weeks to
+[10:14.48] basically go from two kids writing code
+[10:16.88] in a bedroom to you know raising a
+[10:18.96] preceded round basically. Um
+[10:20.48] >> and how many VCs uh had you spoken to
+[10:22.64] back then for your preede?
+[10:24.72] >> Yeah, that's a very good question. So um
+[10:27.68] we did not we did not know how to do
+[10:29.92] this VC startup. We thought like I mean
+[10:32.24] you know you just like go and ask for it
+[10:33.92] and like you'll get money. uh I had no
+[10:36.56] clue um what it takes what does a VC
+[10:39.04] look for nothing like that um so we
+[10:41.60] would get random analysts coming and
+[10:43.52] messaging us saying hey you're building
+[10:45.12] something because we would put like
+[10:46.16] stealth startup in our LinkedIn right so
+[10:48.56] someone would come message we must have
+[10:50.16] spoken to every single VC at that point
+[10:52.40] of time um and then they would randomly
+[10:55.60] come and reject us I'm like I'm not even
+[10:57.36] like raising like what do you mean uh
+[11:00.08] but but like someone would come say oh
+[11:01.76] you are too early you should do this you
+[11:02.88] should do like dude I'm not asking you
+[11:04.88] like I'm I'm we are working on it.
+[11:06.56] Right. So so so that would happen and
+[11:09.04] then we knew we had something when this
+[11:11.44] textto speech model went out basically
+[11:13.12] because that like we were getting like
+[11:15.20] literally like with there was a twoe
+[11:16.80] window where like my LinkedIn following
+[11:19.44] like 2x 3x or something like that. My tw
+[11:23.28] like like the LinkedIn DMs were
+[11:24.48] completely filled. XDMs were completely
+[11:26.48] filled. Emails were coming in. I was in
+[11:28.48] customer calls back to back. What do you
+[11:29.68] want? What do you want? What do you
+[11:30.40] want? And then the product was just a
+[11:32.48] HTML page with the model with one GPU
+[11:34.40] running behind it, right? And I had like
+[11:36.56] two three enterprises coming saying we
+[11:38.32] want this. I was like what do we do? Um
+[11:40.32] that's when I was able to get some
+[11:42.56] formal interest and uh I I remember I I
+[11:46.72] had gone to uh Bangalore. I was uh I was
+[11:49.44] uh in
+[11:49.76] >> you were you were in Mumbai back then.
+[11:51.36] >> Uh I so so a little bit of history
+[11:53.76] before this. So I had dropped out of
+[11:55.28] UCSD as well. So after Bosch I had
+[11:58.08] thought like should I do my education
+[11:59.84] because like I told you I was like a
+[12:00.88] slightly scientific person right so I
+[12:02.08] was like should I go back to studies but
+[12:03.92] when I got into UCSD co was again I
+[12:07.04] think the third wave or something like
+[12:08.08] that was happening and I was like I
+[12:09.28] don't want to do remote plus I got this
+[12:11.04] other legal tech offer in India so so I
+[12:12.72] was like I'm going to drop out but so I
+[12:14.72] was planning to come to the US and and
+[12:17.36] race again because I had some network
+[12:19.20] connects etc here but I decided let's
+[12:21.92] like uh let's try to see what the
+[12:23.60] Bangalore ecosystem has and I was at
+[12:25.04] that point not aware the stark
+[12:27.04] difference in Bangalore and US, right?
+[12:28.48] So, so yes. So, so, so I was in um I was
+[12:31.12] in Pune. I went to Bangalore. Pune is my
+[12:32.80] hometown. So, I went to Bangalore to
+[12:34.40] basically uh talk to VCs. Uh right. And
+[12:37.52] uh I remember the first meeting we had
+[12:40.24] that was the I think a really good
+[12:42.00] meeting we had luckily with uh this uh
+[12:44.48] uh VC called Upspark. So, Upspark
+[12:47.36] basically met us in office. They're like
+[12:49.52] we want to talk and we were like okay
+[12:51.20] who are these guys like let's talk and
+[12:53.28] uh we gave a pitch. it they probed us a
+[12:55.36] lot on the tech. They wanted to see
+[12:56.48] whether we were like just bullshitting
+[12:57.68] or did we actually understand what we
+[12:59.12] had trained and obviously we knew our
+[13:00.64] So we gave them a uh AI 101
+[13:03.04] lesson, right? And after the pitch I was
+[13:05.44] like okay like where's the check? So uh
+[13:08.56] I I was expecting like okay like I
+[13:10.56] pitched myself now we have other VCs to
+[13:12.48] go to so can you just tell me a yes or
+[13:13.92] no right now?
+[13:14.72] >> He's like no that's not how it works. We
+[13:16.56] need like a day or two to decide. Okay.
+[13:18.24] So I like can I come like tomorrow? like
+[13:19.76] what's the so but I remember they were
+[13:23.84] the first to give us like a term sheet
+[13:25.60] basically and the moment upspark's term
+[13:27.68] sheet came like the next day um we had
+[13:30.48] web from beta capital uh who came on a
+[13:32.72] call his was the smoothest process he
+[13:34.88] came on a call in the morning by evening
+[13:36.64] we had a term sheet right um and then
+[13:38.64] >> how much did you raise from each upspark
+[13:40.08] and better
+[13:40.64] >> upsparks was like not much like 100 100k
+[13:43.04] if I I'm not wrong and better was
+[13:44.56] another 250 uh or so right
+[13:46.32] >> total round was 350k
+[13:47.60] >> uh 350k and then couple of angels 400 or
+[13:49.92] something like that. This is at like a 3
+[13:51.84] million post money sort of around,
+[13:53.44] right? Like you have no idea what the
+[13:55.84] valuations are. Is three good, bad? I'm
+[13:58.08] like, "Oh, you're giving me money."
+[13:59.12] Like, "Oh, this is like too good," you
+[14:01.12] know? Um but then um I remember I was
+[14:05.36] running around Bangalore. I had meetings
+[14:07.04] with like every single VC in this two
+[14:08.80] weeks when we had like gone viral and um
+[14:11.76] 314 Capital I had never heard of them.
+[14:14.40] Okay. I ended up at their office uh late
+[14:16.96] for the IC meeting. So I came like 15
+[14:18.80] minutes late. My bag was toned. So it
+[14:20.48] was like I I had an open bag. I I had a
+[14:22.64] tone shirt for some reason because it
+[14:24.32] got like stuck in the auto. So the bag
+[14:25.84] and the shirt both were 15 minutes late
+[14:27.60] coming in between the IC meeting
+[14:29.20] pitching. And then I remember there was
+[14:31.92] this one person sitting who I've never
+[14:33.68] met before. Uh and and after all of this
+[14:36.48] we came out they were like we are very
+[14:37.76] interested and and like the right the
+[14:39.60] next day we got a term sheet from
+[14:40.72] >> and that was like 186 or
+[14:42.08] >> that was uh they had offered something
+[14:43.44] like that. We asked them to reduce the
+[14:45.52] uh check size. We said we can't take one
+[14:47.44] at six. It's like too much dilution for
+[14:48.80] us. So we I think we ended up at like
+[14:50.40] some 500 at six or something.
+[14:51.68] >> And this is one within one week of Oxar.
+[14:53.44] >> Yeah. Yeah. Everything is happening in
+[14:54.72] like one or two weeks of uh this thing.
+[14:56.56] So So finally we ended up saying we
+[15:00.16] don't want to raise more. We just closed
+[15:01.76] like a 900ish
+[15:03.60] >> 600k from 314 and remaining.
+[15:05.92] >> Exactly. Exactly. Right. That was the
+[15:07.52] plan. Now what happened is we got to
+[15:09.76] work work. We got like a small house in
+[15:12.08] Bangalore. uh and
+[15:13.12] >> this was India HQ company then or you
+[15:14.96] were US company
+[15:16.00] >> so that's a very good point now the next
+[15:17.92] question that came to us like during
+[15:20.00] this time was where do we incorporate
+[15:21.60] right because I had a India company
+[15:23.76] there was like no revenue nothing in
+[15:25.36] that uh which was a good thing because
+[15:27.44] um we had two options either continue
+[15:29.52] getting revenue there get invoices there
+[15:31.60] or flip flipping was going to take 2
+[15:33.60] months two to 3 months uh but for us it
+[15:36.64] was very very clear that was a bet I
+[15:38.48] took that it's okay like even if we
+[15:40.64] don't trace these term sheets go away
+[15:42.24] it's okay but let's flip. So I uh
+[15:45.20] decided to set up a cop and then um we
+[15:48.48] went through the whole ODI process etc
+[15:50.32] and then we set up the India as a
+[15:51.84] subsidiary.
+[15:52.80] >> Um and the core logic was we wanted to
+[15:54.56] build a global company. I had like no
+[15:56.48] interest to build a local company. The
+[15:58.48] reason Silicon Valley is big is because
+[16:00.80] um all over the world people use
+[16:02.64] services from here and we wanted access
+[16:04.32] to global capital. We wanted access to
+[16:05.84] global talent. Um there was no way we
+[16:08.48] could do that unfortunately by by being
+[16:10.32] there. We obviously want to help India.
+[16:12.00] I am like I I mean I have benefited so
+[16:14.08] much from great people from India,
+[16:15.76] right? Like but but I think there is an
+[16:18.40] indirect way to do that even with having
+[16:19.76] a subsidiary there like you can you can
+[16:21.36] literally hire the best talent, pay them
+[16:23.20] a lot more than everyone else and and
+[16:25.52] help India that way as well, right? So
+[16:28.00] but my thesis was very clear like I want
+[16:29.60] to work on something more ambitious like
+[16:31.20] it is not
+[16:32.40] >> just Indian languages. Indian languages
+[16:35.04] for me was like just an operational
+[16:36.88] problem to solve getting data sets etc.
+[16:38.88] But it was not a scientific enough
+[16:40.80] problem to that helps us answer what's
+[16:42.72] like the next level of AI and that how
+[16:45.04] can small models be the future etc. So
+[16:48.08] so those kind of problem statements my
+[16:50.96] hunch was only US would answer and I
+[16:53.52] think that was the one of the best
+[16:54.64] decisions we have ever taken in the
+[16:56.72] company.
+[16:56.96] >> So you got all the money wired to the US
+[16:58.48] entity.
+[16:59.04] >> Yeah. So the money that was coming to
+[17:00.48] the US came in like the moment the
+[17:02.72] entity was set up came in like 3 days.
+[17:04.48] Basically you just sent a safe note they
+[17:06.16] signed it got the money in the bank
+[17:07.36] account. the money that was to be wired
+[17:08.96] in India went through like a whole bunch
+[17:11.04] of processes. We had like physical
+[17:12.64] paperwork signing like I I don't know
+[17:14.72] what all like we had to do but yeah like
+[17:17.68] that is that was like a mess basically
+[17:20.08] for us.
+[17:20.80] >> This is late of 2024.
+[17:22.48] >> Late 2024
+[17:23.20] >> and then what what what's the next that
+[17:24.88] happened after that?
+[17:25.84] >> We kept building uh we got a small house
+[17:27.60] in Bangalore. It was in Indagar by the
+[17:29.84] metro station. um we got our first
+[17:33.12] couple of employees from random sources
+[17:36.56] like these were not friends. I one
+[17:38.80] strong hypothesis I have is sometimes
+[17:41.12] not hiring from your comfort zone is
+[17:42.88] better because otherwise you end up
+[17:44.32] having like the same learnings
+[17:45.52] basically. So I generally look for like
+[17:47.28] people who I don't know but are also
+[17:48.80] ambitious and can teach me something. So
+[17:50.48] we ended up hiring based on like Twitter
+[17:52.88] and like LinkedIn uh folks ex-founders
+[17:56.00] basically who had tried to build their
+[17:57.36] company shut down very unique profiles
+[17:59.20] like the second employee I had hired
+[18:01.44] never went to college he was training
+[18:03.36] model since he was like 16 years old uh
+[18:05.60] learned everything on his own right
+[18:07.36] another guy had built a services company
+[18:09.12] scaled it to like a million or so and
+[18:10.88] then shut it down um very unique
+[18:13.28] profiles we hired for and and we were
+[18:15.04] able to build like a good team initially
+[18:17.76] I think till this point of time The VCs
+[18:20.32] did not even know that we would be able
+[18:22.32] to build a team, a product, nothing.
+[18:23.84] They just took a bet on like this two
+[18:25.36] hungry people and let's see what
+[18:26.56] happens, right? But I think as this
+[18:28.00] started happening and we started getting
+[18:29.36] interest and they saw us working um we
+[18:32.08] got offers to do you want to raise
+[18:33.68] another round? Do you want to like
+[18:35.04] extend etc. Um for us uh it was very
+[18:38.80] clear that we don't want to race from
+[18:40.24] India more right. So we actually had
+[18:42.24] great offers at like pretty good
+[18:43.60] valuations in India. Yeah.
+[18:45.04] >> But we were like no we want to come to
+[18:46.72] the US and we want to race from here. So
+[18:49.44] um I had my O1 process etc ongoing.
+[18:51.60] >> But will you raise any more amount after
+[18:53.12] that 900?
+[18:53.84] >> So so what happened was we started the
+[18:55.68] O1 process and then u parallelly luckily
+[18:59.20] I I was thinking what to do because we
+[19:01.52] had like 900k and come to the US it like
+[19:04.00] slightly more capital.
+[19:05.04] >> So I don't know if you know her but Arti
+[19:07.52] Ramorti just DM'd me on X. I'm like wow
+[19:10.72] like I I was just watching her podcast
+[19:12.32] like last year and like why is Arti
+[19:14.24] messaging me? And uh she just turned out
+[19:17.20] to be very polite, very smart, very down
+[19:20.80] to earth. She was just like curious
+[19:22.16] about what I am building. She was uh
+[19:24.64] building her own fund and like she was
+[19:26.48] also investing from her capital.
+[19:28.80] >> She basically got on a call and she's
+[19:31.12] like I love you guys. I want to invest
+[19:33.92] right
+[19:34.64] >> and uh I told her look we have this
+[19:37.04] offer from Indian VCs etc. Um what do we
+[19:39.84] do about it? So I want to raise from the
+[19:41.84] US. Um so she said I mean that's the
+[19:44.08] that's the right decision. Um let me get
+[19:46.56] some angels together for you. You'll get
+[19:47.76] some more runway and why don't you come
+[19:48.88] to the US and and invest. So I did that.
+[19:51.84] I RT connected me to a bunch of angels.
+[19:53.68] Weber connected me to bunch of angels.
+[19:55.04] We raised another 900k extension that
+[19:57.76] was at a higher valuation and uh we had
+[20:00.48] like 1.8 of which most of it was in the
+[20:02.48] bank. So I was like let's go to the US
+[20:04.16] now. So that's how I first landed in the
+[20:07.04] US. Now I've lived in multiple countries
+[20:09.52] right? So for me, US was not like a
+[20:11.44] foreign land or anything. It is another
+[20:13.28] developed country. Um but what's
+[20:15.12] different is like the tech density. I
+[20:16.88] feel like that is the biggest u
+[20:18.64] differentiator that I saw here. And
+[20:20.88] anyone could be an American, right? So
+[20:22.64] that I really like like you I've lived
+[20:24.80] in Korea but I could never be like
+[20:26.16] Korean. I I've lived in like um you know
+[20:28.24] Germany, Singapore, but like you would
+[20:29.60] not be natives there. You can't be a
+[20:31.92] native in China. I've lived in all of
+[20:33.20] these places. But US you can be
+[20:35.92] American, right? like uh uh there is
+[20:38.48] this area has been built by smart people
+[20:40.96] from all over the world coming and like
+[20:42.88] building amazing company and the other
+[20:44.48] thing I've seen here is talent is
+[20:47.20] appreciated from anywhere it's not like
+[20:49.44] you have to have IIT or a Stanford
+[20:50.80] degree this is full of people who had
+[20:53.04] nothing uh no background no credentials
+[20:55.36] but just raw dogged themselves and like
+[20:57.84] built an amazing company and then you
+[20:59.76] know now they're very well respected
+[21:01.28] right so I I thought like this was the
+[21:03.76] place to be and we wanted to then sort
+[21:06.88] of raise a seed round because we started
+[21:08.40] getting some traction. We had some
+[21:09.52] revenue
+[21:10.00] >> and what was the use case that you were
+[21:11.28] solving for which you were getting
+[21:12.48] traction?
+[21:13.20] >> So everyone was building voice agents at
+[21:15.52] that point of time and we had a uh we
+[21:18.40] had a model that could power the voice
+[21:20.64] agent. So we had a texttospech model uh
+[21:23.28] which basically you could use to give
+[21:25.28] natural realistic voice to the voice
+[21:26.64] agent in under 100 millconds. So
+[21:28.80] initially it was at 200 millconds it
+[21:30.64] came down to 100 millconds by the time
+[21:31.92] our seed round was there. uh and then we
+[21:33.76] had some customers using us for that
+[21:35.76] basically right um we also had started
+[21:39.52] uh other series of model trainings
+[21:41.12] because to train a textto-spech model
+[21:42.96] you actually need a speechtoext model to
+[21:45.28] annotate the data you need another model
+[21:47.76] to generate synthetic data um you need
+[21:50.00] accent conversion to diversify the data
+[21:51.76] so that for one data set you could
+[21:53.52] convert it into multiple accents and uh
+[21:55.36] diversified so we had like a portfolio
+[21:57.04] of models that we had developed and then
+[21:59.04] we had a place where you could
+[22:00.56] orchestrate these models to build the
+[22:02.16] backend infra of our voice agent. So
+[22:03.76] let's say anyone is building like a AI
+[22:05.44] receptionist company in in healthcare.
+[22:07.36] They could use smallest AI to basically
+[22:08.96] build on top of it and like build those
+[22:11.20] voice agents. Um and uh the f in the
+[22:14.88] future now what we are building is
+[22:16.08] basically making these agents even more
+[22:17.68] smarter so that the model layer can
+[22:20.40] basically always stay up to date in real
+[22:22.40] time and all the like user information
+[22:24.64] that it gets from multiple interaction
+[22:25.84] that gets stored in like infinite
+[22:27.12] memory. So we are trying to now separate
+[22:28.96] the compute intelligence layer from the
+[22:30.88] memory layer so that these voice agents
+[22:32.40] can become smarter and smarter as it has
+[22:33.92] more interactions. Um but uh but that is
+[22:37.76] so at that point we just had these
+[22:39.76] models we were doing well. We did not
+[22:41.12] have a lot of revenue etc. We had like
+[22:42.80] some small accounts here and there and
+[22:45.52] we went out to pitch raise a seed round
+[22:47.76] with like
+[22:48.24] >> zero revenue.
+[22:49.20] >> Yeah. Almost zero revenue right. Um but
+[22:51.92] the difference I saw like here while
+[22:54.08] raising was they're not looking for
+[22:56.48] obviously people need revenue at the end
+[22:58.00] revenue
+[22:58.32] >> this is validation it
+[22:59.12] >> it's validation it gives you the power
+[23:00.48] to negotiate it gives you the power to
+[23:02.24] say we are real but people are looking
+[23:04.48] for why you what's different like what
+[23:06.32] are you building what's your vision of
+[23:08.08] the world how can you execute the vision
+[23:10.64] um and so I met with uh Tim Geri from
+[23:14.56] Sierra Ventures um
+[23:15.76] >> how how did you get to know them
+[23:17.44] >> so uh there was a partner at Sierra
+[23:20.08] Ventures Um Ashish um so Ashish is my
+[23:22.88] college senior um and in our like
+[23:25.44] WhatsApp chats my co-founder was asking
+[23:27.76] about oh has anyone trained this model
+[23:30.08] and like this issue we are facing some
+[23:31.60] cuda errors etc. So Ashi saw who is this
+[23:34.32] guy who's like constantly asking on our
+[23:35.92] college group
+[23:36.32] >> on our college group like IIT Gojhati
+[23:38.96] the college I'm from uh it's not like
+[23:41.52] that entrepreneurial in nature
+[23:43.04] >> yeah mostly I Delhi and I bombar
+[23:44.56] >> it Delhi IT Bombay even IT Madras has
+[23:46.56] >> even Karakur
+[23:47.20] >> Karakur these guys have but Gojhati is
+[23:49.36] still like slightly like newer and also
+[23:52.72] um I mean although it is 30 years old
+[23:54.24] but it's still considered new and uh
+[23:56.32] it's also remote right so not a lot of
+[23:58.32] like startup opportunities etc so
+[24:01.12] >> very few founders to sort of look at but
+[24:03.76] we were one of the few folks who were
+[24:05.04] like asking around how to build oh
+[24:06.56] they've raised around so I think that
+[24:09.04] led to a lot of interest from our alumni
+[24:11.36] plus our juniors because oh there is
+[24:13.12] someone we can like look up to and like
+[24:14.72] we can also actually build something
+[24:15.84] crazy right so um Ashish had reached out
+[24:18.80] to us he had expressed interest you know
+[24:20.40] that
+[24:21.12] >> we want to invest
+[24:22.64] >> um
+[24:23.60] >> I was I mean I was completely clueless
+[24:26.24] about what does it take to raise a US
+[24:28.96] round what are they looking for but then
+[24:31.44] I met I met Tim and uh Tim and I had
+[24:34.24] like a great conversation like Tim was
+[24:35.76] very technical you know he as a partner
+[24:37.68] he has been a founder himself multiple
+[24:39.28] times he's sold his companies he he
+[24:40.72] knows a lot of people in the contact
+[24:42.08] center space so he felt like a perfect
+[24:44.48] partner for someone like us he has also
+[24:46.88] invested in like companies that were
+[24:49.04] previously out of India like make my
+[24:50.72] trip etc so so he had that India angle
+[24:53.68] as well to it so he seemed like the
+[24:55.20] perfect partner to build like a very big
+[24:57.28] company with right and so um I I think
+[25:00.64] the conversation ation basically became
+[25:02.64] fair fairly technical and then we were
+[25:05.28] uh we had a IC meeting and at that point
+[25:08.08] of time I had two options either I I
+[25:10.16] raised from Sierra or I just raised from
+[25:11.76] an Indian fund and get done with it. I
+[25:13.36] told Sierra look I really want to go
+[25:15.36] with you guys. I I think I would love
+[25:17.68] working with Tim. I love working with
+[25:19.36] you Ashish. I would uh I think we can
+[25:21.52] build a big company here. I told him the
+[25:23.36] same thing but you need to tell me like
+[25:24.96] today, right? So uh so I remember after
+[25:28.32] the after the IC discussion they wanted
+[25:30.32] to have like a dinner that same day. Um
+[25:33.52] we had a dinner uh we spoke about
+[25:35.20] >> I think one company where we invested
+[25:36.72] recently uh Sierra offered them and then
+[25:39.84] they choose engineering capital as the
+[25:42.16] lead. Okay.
+[25:42.80] >> So what I heard is is Sierra's usual
+[25:45.04] style is over a dinner close over a
+[25:46.48] dinner.
+[25:46.80] >> Yes. Yes. Yes. I think that's a good
+[25:48.64] style like honestly like it uh
+[25:50.80] >> because at the end of the day I feel if
+[25:52.24] you're not able to have a dinner
+[25:53.20] together
+[25:54.00] >> there's no point in building it for 10
+[25:55.04] years.
+[25:55.28] >> Yeah. Exactly right. So, so um he they
+[25:59.04] we met we spoke about this um then
+[26:02.08] Ashish offered me a term sheet um and
+[26:04.16] yeah basically we negotiated and closed.
+[26:06.08] Nice. So that gave us a lot of relief
+[26:09.12] because now
+[26:10.56] >> serious money in the bank
+[26:11.28] >> serious money and serious US money
+[26:12.72] because suddenly the biggest difference
+[26:14.96] I saw was we got introduced left, right
+[26:17.68] and center to very serious buy buyers of
+[26:20.48] our product in the
+[26:21.28] >> for example
+[26:22.16] >> um service now for example right um
+[26:24.40] >> you have service now the client today
+[26:25.52] >> yeah we we're working with them we we
+[26:27.36] are hopefully going to make some big
+[26:30.00] progress soon but but like this is just
+[26:32.00] one example and there are 10 other
+[26:33.20] examples
+[26:33.84] >> you got introduced to like service now
+[26:35.44] >> yes Yes. Yes. Some of them we uh we will
+[26:37.84] publicly announce like in March, April,
+[26:39.52] but like these are like large enterprise
+[26:41.84] accounts. I can tell you like if uh you
+[26:45.20] know if we do our job well just from the
+[26:47.36] introductions we got we could get to our
+[26:48.72] AR targets for this year right
+[26:50.80] >> completely different than how I was
+[26:53.20] operating in India where we did get
+[26:55.28] introduced but the introductions were
+[26:57.36] not like that strong that uh I still had
+[27:00.00] to do a lot of work to actually do the
+[27:02.80] stakeholder management and all of those
+[27:04.48] things right. Um and also I just feel
+[27:06.96] the companies here are very very clear
+[27:09.36] of what they want to buy, what they want
+[27:10.80] to build. Um and what is the evaluation
+[27:12.88] process for buying uh right so people
+[27:14.96] would generally not waste time because
+[27:16.40] they don't they don't have time to
+[27:17.84] waste.
+[27:18.16] >> So for example one of the telephon
+[27:20.00] companies that you mentioned was it also
+[27:21.68] an introduction from Sierra?
+[27:22.80] >> Yes very very strong introduction. Um I
+[27:26.08] obviously like introduction by the way
+[27:28.96] does not mean they would buy. So the
+[27:31.04] first call I got on with this telephony
+[27:32.64] company, the CTO grilled me, you know,
+[27:34.72] he he grilled me. Um he was like, "Do
+[27:37.52] you know this? Do you know that?" He's a
+[27:38.48] very deeply technical person. Um and
+[27:40.64] then I was able to answer those
+[27:42.32] questions because I am also deeply
+[27:43.52] technical. I enjoy what I'm building. I
+[27:45.04] know my products, right? So so that
+[27:46.80] impressed them and then we kept at it.
+[27:48.64] Obviously, we had to do our work. Sierra
+[27:50.72] helped us sort of uh make sure we
+[27:53.20] understand their buying cycles have
+[27:54.72] looked like, what do they care about,
+[27:56.32] etc. And then eventually uh they like
+[27:59.52] okay we want to we want to do a deal
+[28:00.72] with you we want to we like the product
+[28:02.16] we're going to and then we went into
+[28:03.52] negotiation and that that's where you
+[28:05.20] know then I could handle it basically
+[28:07.04] now but I know what the sales cycle
+[28:09.12] looks like for an enterprise and like
+[28:10.96] this was my first enterprise sale in my
+[28:14.16] life because in topper I built like it's
+[28:15.92] more B2C B2 student whatever you call it
+[28:18.64] um search was again B2B but like small
+[28:21.68] accounts etc. This was like first
+[28:23.36] enterprise sale of of like my life,
+[28:25.36] right? Um I have worked with other
+[28:27.04] enterprises in India before but they
+[28:29.20] always like spend like a lot of time
+[28:32.08] evaluating something seemingly simple
+[28:33.68] and like for example let's say they have
+[28:35.20] to spend um 20 lakh rupees 30 lakh
+[28:37.92] rupees the amount of time and people
+[28:40.24] that would be involved in that process
+[28:41.84] would easily surpass that 20 lakh or 30
+[28:44.16] lakh they have to spend but they would
+[28:46.00] still wait than actually buy and just be
+[28:48.40] like done with it you know so the so I
+[28:50.24] felt like here it's very different it's
+[28:52.00] very expensive to just drag things along
+[28:54.40] because the salaries you paid to people
+[28:55.84] all of that is so much and 20 30k is not
+[28:58.24] a big deal you know like it's it's like
+[28:59.84] it's fine. So here you could easily make
+[29:02.56] a 20 30 40k 50k sale. So the that
+[29:04.96] telephone enterprise got
+[29:06.00] >> that is that's a much bigger deal by the
+[29:07.36] way
+[29:07.60] >> but when it started it was
+[29:08.88] >> yeah it was when it started it was like
+[29:10.48] 10k a month or something like that which
+[29:12.08] is a big deal I mean it's a
+[29:13.20] >> 100k but today did it get converted to a
+[29:15.76] seven figure deal or
+[29:16.80] >> it is uh it is converted to a a seven
+[29:19.20] figure multi-year multi-million deal uh
+[29:22.08] but we we will announce it formally
+[29:24.80] sometime like in April or so once we
+[29:26.80] sort of clear a few things but yeah it
+[29:28.48] is it is that like all of those things
+[29:30.08] are in paper right now
+[29:31.60] >> so Sierra happened in April last year
+[29:33.44] >> Sierra happened in June July uh right so
+[29:36.24] July July spent Sierra happened um and
+[29:38.88] yeah all this happened between
+[29:40.00] >> how much time end to end evaluation to
+[29:41.68] viring of money in that case
+[29:43.76] >> um like 3 4 weeks uh and and the only
+[29:46.72] reason it took it would have been done
+[29:48.00] in a week but the only reason it took 3
+[29:49.92] 4 weeks or more was because we had money
+[29:52.32] in India and then the whole like the
+[29:54.40] process with uh like India valuation etc
+[29:56.48] took time right but um if it was US
+[29:58.88] funds it's just like extremely extremely
+[30:00.96] quick like I I know people who buy in a
+[30:02.88] week basically Right. So, so yeah. Um,
+[30:06.08] Sierra happened in July. Um, I think the
+[30:08.80] money came by September. This deal be
+[30:11.44] closed by December. Right. Like that's
+[30:13.04] and and so imagine like introduction to
+[30:15.44] seven figure deal happened this quickly
+[30:17.68] >> and by December it was a seven figure
+[30:19.60] deal.
+[30:20.00] >> Uh yeah by by December so I just closed
+[30:22.48] like last month basically. So so now it
+[30:24.56] is uh now there is a scale up period
+[30:26.80] etc. So it's a it's a like a multi-year
+[30:28.32] deal with a scaleup period. So the book
+[30:30.16] they are like the booked amount is seven
+[30:31.92] figures but yes the payments etc will
+[30:33.60] come over the payments are six figure.
+[30:35.12] >> Yeah yeah yeah but this year I will make
+[30:37.12] uh six figures from them and yeah over
+[30:39.04] like next year over the next 5 years I
+[30:41.12] will be making multiples of these
+[30:42.88] basically so now going from like nothing
+[30:47.04] to having a serious like conversation
+[30:49.36] with an enterprise where you're talking
+[30:50.72] about these things is a very different
+[30:52.64] place to be and now we have multiple
+[30:54.24] such deals that are happening at this
+[30:56.00] point of time and we know what it takes.
+[30:57.84] We went from A we want to sell to
+[30:59.92] everyone to like we have a specific type
+[31:01.92] of buyer like we should our API should
+[31:04.32] be integrated they should have used this
+[31:05.76] much they would these are the valuation
+[31:07.28] metrics to send to them um this is how
+[31:09.60] we price this is how we competitively
+[31:11.68] win the price deal all of that sort of
+[31:13.84] playbook we figured out because of that
+[31:15.84] first deal that happened right and for
+[31:18.24] us that set the bar to uh how deals
+[31:21.84] should work and and and you know u now
+[31:24.64] we are setting up a repeatable process
+[31:26.32] sort of to make that happen I If we were
+[31:29.28] in India, this would never happen. Never
+[31:32.40] happen. There are probably 20 companies
+[31:34.16] in India who can give us that kind of a
+[31:36.96] deal size and uh they would spend an
+[31:39.44] incredible amount of time and effort.
+[31:40.72] >> They would waste so much time, you know.
+[31:42.64] >> Yeah.
+[31:43.68] >> Uh and and then did you raise any round
+[31:45.28] after that?
+[31:46.08] >> Yes. So we have we just uh closed a
+[31:48.00] series A we could call it a pre-ere
+[31:49.92] series A but like uh we closed with
+[31:52.64] Celigman Ventures. So, Seligman is um
+[31:55.84] their ex partners at Tom West. They have
+[31:58.48] invested in Cohair um harness is and
+[32:01.12] some of these companies um and they're
+[32:03.04] very seasoned. It's a very large fund.
+[32:04.64] They can support us in next rounds as
+[32:06.00] well. It it was a preemptive round for
+[32:08.24] us because we were growing quickly. So,
+[32:10.00] we thought let's let's do it.
+[32:11.36] >> How did the conversation happen with? So
+[32:14.16] uh the deal started uh you know the I
+[32:17.20] think the deal started happening and
+[32:18.56] then also we got in between like an
+[32:20.48] acquisition offer for like $150 plus
+[32:23.20] million.
+[32:23.76] >> So September 2025 you closed Sierra.
+[32:26.48] >> Yeah.
+[32:26.96] >> Right. When did the acquisition offer
+[32:28.56] happen?
+[32:28.80] >> Uh a month after that probably like
+[32:30.56] October. Yeah. September. October. Yeah.
+[32:32.08] >> And then when did Feligman
+[32:33.28] >> uh December very quick
+[32:35.28] >> very quick cycles, right? So so this
+[32:36.56] there's we got a acquisition offer. We
+[32:39.04] got um we got this deal. Um and then not
+[32:42.16] just this deal. Now we have multiple
+[32:43.60] other deals that are parallelly sort of
+[32:46.00] already at six figures scaling to seven
+[32:47.52] figures. So we got an inbound saying
+[32:50.56] that look you guys are obviously growing
+[32:52.00] fastman
+[32:52.80] >> from selement we want to do we want to
+[32:54.96] sort of you know prem this let's let's
+[32:57.20] work together and so we basically ended
+[32:58.80] up having a conversation we at that
+[33:01.36] point we did not even have like a proper
+[33:03.52] mechanism for booking our ARR etc. So we
+[33:06.16] cleaned all that up quickly I remember I
+[33:08.32] was in the middle of AWS reinvent uh AWS
+[33:10.56] is an active reseller of smallest by the
+[33:12.08] way. So as had invited us there and we
+[33:15.04] were like doing a lot of one-on- ones
+[33:16.56] with customers and then we ended up uh
+[33:18.88] in between that creating the deck the
+[33:21.36] the whatever the financials etc required
+[33:24.08] um they are like why is your AR like so
+[33:26.24] messy but we like okay we are like
+[33:27.68] cleaning it up because uh you have India
+[33:29.52] sales you have US sales you have
+[33:31.12] partnership driven sales uh you have
+[33:33.84] taxation is different US India all of
+[33:36.00] that now getting cleaned up now we are
+[33:38.24] sort of going to like a formal CFO
+[33:40.56] driven process so we are getting a CFO
+[33:42.08] Um but all of this happened in the last
+[33:44.56] like 3 to four months.
+[33:45.68] >> Must have been crazy, right? Okay. You
+[33:46.88] just close around an acquisition which
+[33:48.64] you passed on and then you you got a
+[33:51.20] term sheet and then the term sheet
+[33:52.80] closed in a month or how much time?
+[33:54.00] >> Term sheet closed like literally like we
+[33:56.32] just took a week to sort of negotiate on
+[33:58.48] something
+[33:58.80] >> from from the first conversation to
+[34:00.32] >> Yeah. The first I mean when we got the
+[34:01.60] term sheet from Seligman, it took us a
+[34:03.04] week. I mean they obviously wanted to us
+[34:04.72] to sign them. I think we were kind of
+[34:06.48] completely okay with most of the terms.
+[34:07.84] We just had to make sure we are on the
+[34:09.44] same page regarding a few things.
+[34:10.72] nothing major we closed it in a week and
+[34:13.12] uh yeah like uh that's that's basically
+[34:14.88] how quickly things move right so I went
+[34:16.88] back to India after that because we had
+[34:18.48] to tell it to the team u there are a lot
+[34:20.40] of people who have been there with us
+[34:22.08] early on we want to make sure that with
+[34:24.48] this fund raise they are also rewarded
+[34:26.16] their goals are understood etc so we did
+[34:28.32] that
+[34:29.12] >> did you take secondary in this round the
+[34:30.72] team
+[34:31.04] >> no we um I do I will take a secondary at
+[34:34.64] some point of time but uh I feel
+[34:37.04] comfortable once our like process is
+[34:39.44] like set and scaled. Uh right now this I
+[34:43.20] want to see how repeatable this process
+[34:45.04] is as I'm going from a founder to a more
+[34:47.92] let's say GTMLE sales motion and if I'm
+[34:50.80] able to sort of slightly take a step
+[34:53.04] back and say hey this is a machine
+[34:54.24] that's just working without me then I
+[34:55.76] will definitely take a big secondary but
+[34:57.44] right now I feel there is some work
+[34:59.12] which I have to do to sort of make that
+[35:01.52] happen. Uh plus there is some yeah it's
+[35:03.60] it's just a personal thing I guess like
+[35:04.96] a lot of people do take secondary on
+[35:06.32] series A. I felt maybe maybe it's too
+[35:09.52] early for us like yes we got a series A
+[35:11.84] but um but it was preemptive. We were
+[35:15.36] going to do it in Q1. So and also I feel
+[35:18.24] the company needs the money right now.
+[35:19.52] So
+[35:19.84] >> and you mentioned you're also getting
+[35:21.44] now offer for preempting on top of that.
+[35:23.36] And
+[35:23.68] >> so we are getting offers to do the next
+[35:24.88] round. uh but but this time when we
+[35:28.64] raised the round we wanted it to be a
+[35:30.16] very well thoughtout big round with
+[35:31.60] strategic investments and things like
+[35:32.88] that. So we are speaking to some of the
+[35:34.08] strategics etc so that we um can not
+[35:37.68] just get the capital but also accelerate
+[35:39.04] the go to market with the next round and
+[35:40.56] build like a strong partnership driven
+[35:42.00] thing. Our model uh business model can
+[35:44.24] scale extremely quickly with
+[35:45.36] partnerships basically. So you know like
+[35:47.28] uh AWS for example all these clouds can
+[35:49.28] be great partners uh you have uh ISVS
+[35:52.00] you have um all your VCGS McKenzies of
+[35:54.24] the world who can basically crossell us.
+[35:56.16] So we want to get all of that going and
+[35:58.08] some of these guys to also invest in us
+[36:00.96] um and maybe some of the large voice
+[36:02.96] players uh in the world
+[36:04.32] >> like 11
+[36:05.28] >> 11 would not be a investor I would say I
+[36:07.68] guess they are they're growing quickly
+[36:09.20] but they are still not um that big
+[36:11.92] >> but there are 300 mill 6 billion or 11
+[36:14.16] billion in valuation
+[36:15.04] >> 11 billion in valuation um I think they
+[36:17.60] would they would definitely
+[36:20.24] see us as competitors if not anything uh
+[36:22.56] because
+[36:22.80] >> but who is your competition do companies
+[36:24.72] like Bola are your competition
+[36:26.40] would be a customer to us.
+[36:27.84] >> So it's people who are building the
+[36:29.52] voice models in real time. Um
+[36:31.76] >> but voice applications are not your
+[36:33.04] customer.
+[36:33.44] >> Voice applications are not your
+[36:34.64] competition.
+[36:35.52] >> So we help people building voice
+[36:37.68] applications basically, right? So um so
+[36:40.40] companies like Bolavi, retail brand, all
+[36:43.12] >> is retail a customer?
+[36:44.00] >> Yeah, we just we just getting into so
+[36:45.68] far our GTM motion was very enterprise
+[36:47.36] first. We're just selling to like two
+[36:49.12] customers, three customers to get like
+[36:51.04] our now we are opening it up to everyone
+[36:53.52] and as part of this strategy in this
+[36:55.12] quarter we will be listed on all of
+[36:56.72] these.
+[36:57.04] >> And how big is the team right now?
+[36:58.48] >> The team is close to 40 people right
+[37:00.00] now.
+[37:00.24] >> That's just 40.
+[37:01.04] >> Oh yeah, that's 40. I mean also this was
+[37:03.04] not this much. So for example when we
+[37:04.40] raised a seed it was 12 people 10 or 12.
+[37:07.04] So these
+[37:07.28] >> we're selling with
+[37:08.48] >> Sierra. So these 25 people have been
+[37:10.96] added in the last 3 months basically.
+[37:12.72] >> And how many India, how many US?
+[37:14.72] >> 10 in the US. Uh
+[37:15.84] >> and this is all all on the sales side.
+[37:17.68] >> No, we have research leads as well here.
+[37:19.68] Um we because uh you know in India you
+[37:22.96] get young talent who is smart but in US
+[37:25.68] you get seasoned talent who have spent 5
+[37:28.64] 10 years studying about a particular
+[37:30.32] subject and so we generally hire lead
+[37:32.40] researchers um in the US basically.
+[37:35.52] >> Yeah. So yeah but the team is fairly
+[37:37.76] young. Um it's a it's theoretically
+[37:40.72] speaking um most companies would not I
+[37:44.16] think need a 40 member team at our stage
+[37:47.12] like at least in the US I've seen lean
+[37:48.64] teams but training models is is a and
+[37:51.36] just doing research is like an
+[37:53.04] >> so so you you get compared on your model
+[37:55.20] efficacy against 11 labs who else
+[37:57.76] >> uh Cartisia is one who we get compared
+[38:00.16] against but there is some nuance to it
+[38:02.32] like for example 11 has a lot of focus
+[38:04.64] on content creation and like dubing and
+[38:07.44] Um if you want to build like an
+[38:08.72] Instagram video or like a AI movie uh 11
+[38:11.20] would be a great player. We don't focus
+[38:12.72] on content at all. We are focused on the
+[38:14.32] realtime space. So um very low latency.
+[38:17.12] >> Who is a real time competitor then?
+[38:18.72] >> Right now the only other player who's
+[38:20.80] focused on real time is Cartisia. Uh but
+[38:23.68] they are heavily dependent on state
+[38:25.28] space models and we don't train state
+[38:26.88] space models.
+[38:27.52] >> Can you explain in layman what is that?
+[38:29.04] >> Uh layman terms. So state space models
+[38:32.00] uh the computation required to basically
+[38:35.12] calculate the outputs uh is something
+[38:37.76] called sub quadratic. What it means is
+[38:39.68] let's say you have input sentence which
+[38:41.84] has like 10 words in it. Um so a
+[38:44.16] transformer would take 10 into 10 um so
+[38:46.88] a square of it. So 100 that's quadratic
+[38:48.96] complexity but a state space model would
+[38:51.28] take like less than 100 basically. Um
+[38:54.24] that's like the simplicity of it. It
+[38:56.24] makes a very big difference uh when it
+[38:58.00] comes to larger uh values of input text.
+[39:01.20] So for example, imagine you have 10,000.
+[39:03.04] So if it is square, so it is 10,000 into
+[39:05.68] 10,000 which will be like 100 million
+[39:07.76] basically versus if it is like less than
+[39:09.84] that. So it could be 100,000 or 1
+[39:11.84] million, right? So
+[39:12.96] >> and how do you let's say this is one but
+[39:14.80] let's say a customer has to consider how
+[39:18.16] versus smaller. So that's our biggest uh
+[39:20.16] problem with state space models like we
+[39:22.24] have we believe like uh because of this
+[39:25.36] subquadratic computation it actually
+[39:27.92] does not compare um all the tokens with
+[39:31.12] each other by by definition and also
+[39:33.60] does not have a great way to um model
+[39:36.24] long-term dependencies really well and
+[39:38.08] and we've seen that happen like in our
+[39:40.64] evaluations right so um our strong
+[39:43.60] belief is like state space models are
+[39:45.44] not like that big a leap over
+[39:46.88] transformers and there Yes, transformers
+[39:49.60] do have a great u base and and we see
+[39:52.32] transformers itself scaling but the the
+[39:54.32] the way the transformers today used to
+[39:57.20] sort of just put a lot lot of
+[39:58.88] pre-training data in it and scale it up
+[40:00.48] that's not how they are supposed to be
+[40:01.76] used. Um a very interesting uh way uh to
+[40:05.28] think about how you know attention and
+[40:07.20] these things can be used is like um
+[40:08.88] these uh prediction based models that
+[40:11.20] Yan Leon talks about Japa etc. um in our
+[40:14.40] opinion like those models are actually
+[40:16.80] closer to how we can build AGI than um
+[40:20.40] like state space models which is just a
+[40:22.32] play on compute uh capacity. How do I
+[40:25.36] say this? Very simply uh the the models
+[40:28.16] that YAN proposes the Japa based models
+[40:30.40] they basically have a predictive view of
+[40:32.88] the world which means let's say if I
+[40:35.20] throw a ball at you you're going to
+[40:36.48] probably move your hand here to like
+[40:38.72] defend yourself right because you're
+[40:40.40] predicting that the ball is going to
+[40:41.52] come right but let's say if you're not
+[40:43.68] able to catch it it still hits your face
+[40:45.28] you realize oh I was wrong and like
+[40:46.64] you'll correct yourself basically so you
+[40:48.88] are inherently predicting the next state
+[40:51.28] of the world given all the time frames
+[40:53.52] till now and then if those states are
+[40:55.92] incorrect, you do a correction of the
+[40:58.16] model weights and and learn from, right?
+[41:00.16] So that predictive view of the world is
+[41:02.24] what we are missing in LLMs that that we
+[41:05.04] want to want to learn about. And so we
+[41:06.96] are trying to build like a predictive
+[41:09.20] view of um voice and like conversations
+[41:12.08] that we can have so that you can guess
+[41:14.96] what the answer should be rather than
+[41:17.60] how LLMs typically operate. Like that's
+[41:19.28] a very simple way to say it, but I hope
+[41:20.88] that it's a good idea.
+[41:22.16] >> But there's a X enterprise, a telephone
+[41:23.76] enterprise. Why are they choosing
+[41:24.88] smallest again in layman terms
+[41:26.16] particular in in uh in in like very
+[41:28.40] simple terms for them what it means is
+[41:30.64] faster latencies uh more parallelism so
+[41:33.44] on a single GPU you can fit in a lot
+[41:35.36] more of our models and uh and better
+[41:37.92] quality of
+[41:38.56] >> companies have to use their own GPUs or
+[41:40.00] you also provide GPU services
+[41:41.28] >> we provide uh our own like cloud
+[41:43.20] services as well but um a lot of
+[41:45.20] enterprises prefer uh deploying on their
+[41:46.96] own GPUs because it allows them uh the
+[41:48.96] capacity to scale up scale down
+[41:50.16] infinitely
+[41:50.72] >> let's say the teleony company that you
+[41:52.00] are working
+[41:52.32] >> yes we are doing on-prem deployment for
+[41:53.68] them Most of your customers today are on
+[41:55.12] prem.
+[41:55.60] >> We recommend it because for us it's 100%
+[41:57.84] margins, right? If that happens. So we
+[41:59.36] really like folks deploying it on their
+[42:01.04] devices.
+[42:01.44] >> But then it's so much uh bespoke support
+[42:03.44] that you have to provide.
+[42:04.40] >> No. So the good thing is uh when we say
+[42:06.00] on-prem, this is actually virtual
+[42:07.52] private cloud. So it's uh it's just they
+[42:10.56] have a uh like a docker which they just
+[42:12.56] download into their servers and run it.
+[42:14.48] It's not us going to their place and
+[42:15.92] like with a CD or a pen drive and like
+[42:17.76] uh doing that. We can do that. We don't
+[42:19.36] prefer doing that. uh but we maybe we
+[42:21.60] that of course that will require some
+[42:23.12] bespoke support etc. Um but uh but for
+[42:26.08] the virtual private cloud it's very
+[42:27.36] simple they as long as they have
+[42:28.56] internet they can download it and run it
+[42:30.08] and we can support just like we support
+[42:31.92] our cloud basically so and for us we
+[42:34.32] don't have to manage GPU capacity um the
+[42:36.40] biggest problem is GPU capacity for
+[42:38.56] customers scales at random times based
+[42:40.32] on their usage right so you as a vendor
+[42:43.36] can't keep predicting when they're going
+[42:45.12] to scale up scale down but they can so
+[42:47.12] they let their team manage how they want
+[42:48.96] to scale up scale down right and and the
+[42:50.48] biggest issue is today people end up
+[42:52.96] pricing u the model extremely
+[42:54.88] expensively because they have to manage
+[42:56.32] the scale up of GPU capacity. Let's say
+[42:58.00] someone says I want 100 concurrency. So
+[43:00.72] what that means is you will keep let's
+[43:02.56] say the number of GPUs always on that
+[43:05.20] can manage 100 concurrency but you don't
+[43:07.12] want to do that. You you only want it on
+[43:08.64] when they're actually at peak capacity
+[43:10.00] and then reduce it otherwise which is a
+[43:11.68] very difficult problem to solve. Um so
+[43:13.36] it's just easier to give it to the
+[43:15.36] customer and get get them to run it
+[43:17.12] basically. Um so so that works for us
+[43:19.84] and and it's also better for infosc
+[43:21.36] compliance. So when you go to banks,
+[43:22.48] when you go to like financial
+[43:23.28] institutions, you generally just want to
+[43:26.08] make sure no data is flowing out of
+[43:27.60] their system, right? So so we can we can
+[43:29.28] provide that as well.
+[43:30.24] >> Got it. And so you're saying that today
+[43:32.88] you are at X revenue. Can you share some
+[43:34.96] ballpark numbers on that?
+[43:35.92] >> Yeah, it's uh between 1 to 2 million AR.
+[43:38.32] Um Yeah. And and we've grown like like
+[43:40.64] 10x in the last 3 4 months basically. So
+[43:42.96] >> we basically assume you were at 100K
+[43:44.48] when you 150.
+[43:45.68] >> Yeah. And you got Sierra in and after
+[43:47.44] Sierra.
+[43:47.92] >> Yeah.
+[43:48.32] >> Because you could deliver with the
+[43:49.36] introductions that they could provide.
+[43:50.64] We just scaled it.
+[43:51.68] >> Exactly. Yeah. Yeah.
+[43:52.80] >> Do is process wise are you enterprise
+[43:54.48] ready today?
+[43:55.20] >> Yeah. Yes, we are. So we uh with that
+[43:58.16] introduction we kind of learned a lot.
+[44:00.08] We got tons of feedback from like a
+[44:02.40] single enterprise. And what our team did
+[44:03.92] is basically instead of like going to
+[44:05.44] every customer and like doing requests,
+[44:07.20] we said give us all of your requests and
+[44:08.56] we want to make sure our model like just
+[44:10.08] works in all of those aspects of it. So
+[44:11.92] are enterprise building custom voice
+[44:13.44] application or do you go yourself and
+[44:15.60] build those applications?
+[44:16.72] >> They build custom voice applications. We
+[44:18.32] don't uh help them build custom voice.
+[44:20.08] >> You just provide the model.
+[44:20.88] >> We just provide the models. We have an
+[44:22.08] infra layer where they can orchestrate
+[44:23.44] the model but they do the prompting.
+[44:25.12] They do the engineering. We do have a
+[44:27.28] forward deployed team that does
+[44:28.96] sometimes guide people but uh as we go
+[44:32.24] higher and higher in enterprises we
+[44:34.24] don't see this function scaling
+[44:35.52] internally. We see someone like a
+[44:36.96] capgeemini um or an Accenture building
+[44:39.20] like a practice around a product. Are
+[44:40.56] you are you enabling those companies
+[44:42.56] with capabilities on smallest like
+[44:44.64] >> Yes, we are we are in talks with some of
+[44:46.56] these. So they are uh the the goal is to
+[44:48.88] build a center of excellence where they
+[44:50.48] can use these this agentic platform with
+[44:52.96] the models and let's say they have a
+[44:54.80] business process in some big insurance
+[44:56.40] company that they have really good
+[44:58.00] domain knowledge about they understand
+[44:59.28] the KPIs the stakeholders they take the
+[45:01.36] platform white label it use it as an
+[45:02.88] infra layer add maybe some of their own
+[45:05.04] things and then automate the whole
+[45:06.96] process with us right so we can never do
+[45:09.28] that because in my opinion that requires
+[45:11.76] deep verticalization and today we are
+[45:13.28] not a deep verticalized company we are a
+[45:14.80] very horizontal infra provider company
+[45:16.48] And for for that uh you can't be doing
+[45:18.64] too many things right. So we need
+[45:20.00] partners. Uh 2025 2026 is also going to
+[45:22.80] be a very partnerled go to market
+[45:25.12] strategy trying to build distribution
+[45:27.20] through other people reselling our
+[45:28.72] products basically.
+[45:29.44] >> Understood. So so this year is basically
+[45:32.40] you know are you going to invest more in
+[45:33.76] product or just in the scaling?
+[45:35.12] >> We we are doubling our research team. So
+[45:37.92] we are going from like right now we are
+[45:40.08] 15 researchers we are going to 30
+[45:41.84] researchers. Um and uh purely because
+[45:44.88] research gives you ROI in like 6 months.
+[45:47.28] So you can't like hire someone right now
+[45:49.04] and then expect if you have goals for
+[45:50.24] 2026 like in September, you have to get
+[45:52.16] those people right now.
+[45:52.96] >> And what are those folks researching on?
+[45:55.12] >> Um a lot of different topics. We have a
+[45:57.12] thesis as well on our website on how we
+[45:58.96] feel like AGI will be achieved. Uh but
+[46:01.44] basically trying to do some more like
+[46:03.92] ambitious projects and some more applied
+[46:05.28] AI projects around small models. Um
+[46:07.20] applied AI projects include like for
+[46:08.88] example um things like how could you
+[46:11.92] build a u a texttospech model with even
+[46:15.20] higher concurrency than what it what it
+[46:17.12] is before. So on a single GPU running
+[46:18.56] more instances. Um it could be how do
+[46:20.64] you get make these voices laugh, cry,
+[46:23.68] like become more human in multiple
+[46:25.12] languages. Those are like applied
+[46:26.32] projects. Uh more ambitious sort of
+[46:28.80] research projects are basically um for
+[46:31.36] example one topic we work on is uh
+[46:33.60] asynchronous thinking. So humans
+[46:35.52] actually uh you are not waiting for me
+[46:38.24] to finish my thought to start thinking
+[46:40.40] right. So you actually start thinking
+[46:42.16] the moment I say my the first word uh
+[46:43.92] but LLM today wait for the whole context
+[46:45.84] you know like you give the entire chunk
+[46:47.20] and then they start thinking. So to
+[46:50.08] enable this humanlike behavior in AI uh
+[46:52.72] you need to work upon asynchronous
+[46:54.88] thinking. So the AI also starts thinking
+[46:56.56] given the first voice that comes in. And
+[46:58.96] so that is one topic of research that we
+[47:00.64] are working on. Continual learning is
+[47:02.16] one topic which is basically how can you
+[47:04.24] get the model to keep improving as it
+[47:06.32] has more conversations with the
+[47:07.44] customer. So these are like few topic
+[47:08.88] and then um one I think the topic I love
+[47:11.68] the most is separation of compute from
+[47:14.48] memory. So uh today LLMs are storing
+[47:18.32] more and more information as they become
+[47:19.76] larger in size and it's very difficult
+[47:21.84] for LM to learn something new because
+[47:23.44] the moment you train it on some extra
+[47:25.04] data there is forgetting of the older um
+[47:27.92] you know data that it has trained on and
+[47:29.28] it's just super expensive inefficient
+[47:30.96] etc to run. The way we see the future is
+[47:33.76] you will separate memory from
+[47:35.52] intelligence. So the memory will be
+[47:37.12] captured by infinite layers and the
+[47:38.80] intelligence will be captured by finite
+[47:40.24] layers of you know intelligence and that
+[47:42.96] small model that has those finite layers
+[47:44.88] that can basically be quickly trained
+[47:46.96] through continuous learning basically.
+[47:48.16] So so that separation of memory and
+[47:49.68] intelligence is one thing we are working
+[47:51.36] on. You must have seen a lot of
+[47:52.40] companies that are coming up in the
+[47:53.52] context engineering memory space.
+[47:55.12] They're basically building the infinite
+[47:56.64] memory. Uh and we are focusing on the
+[47:58.72] small models that power the compute. Um
+[48:01.28] >> so so is it a winner takes all market or
+[48:04.16] can smallest be a 300 million hour
+[48:06.56] company 11 by the time you reach 300
+[48:08.56] they'll be at a few billion and cartia
+[48:10.48] will be at a few billion
+[48:11.68] >> I think I think the markets will diverge
+[48:13.68] at some point of time like um so for
+[48:15.76] example 11 is sort of doubling down on
+[48:18.08] the content space uh but the real time
+[48:19.84] space like mimicking how humans do
+[48:21.60] conversations um is it's like a very
+[48:23.52] different problem than mimicking how
+[48:26.00] movies are made right and so I think the
+[48:27.84] markets like and both are massive
+[48:29.36] markets right So I think this is
+[48:31.76] definitely not a winner takes all and we
+[48:34.72] don't even know what winning means at
+[48:36.56] this point of time. I mean winning at
+[48:37.68] the highest point is basically building
+[48:39.36] like a her uh you must have seen the
+[48:41.04] movie right like there's like a very
+[48:42.32] empathetic voice which basically powers
+[48:44.00] every single conversation of yours. So
+[48:45.68] that could be winning. Um but um but
+[48:48.64] yeah it's it's a huge market. Imagine
+[48:50.40] like every single human in the world has
+[48:53.44] an AI that can talk to it every single
+[48:55.20] day. like we are not exting this podcast
+[48:56.88] right like we are talking to each other
+[48:58.16] and and imagine like now you have an AI
+[49:00.08] who you feel like having such a long
+[49:01.92] conversation with u today that does not
+[49:03.68] exist or
+[49:04.40] >> I think but people have made AI enabled
+[49:07.04] podcast where you can talk to Steve Jobs
+[49:09.20] >> yeah that uh so that's a good uh good I
+[49:11.92] think market that has come up in like
+[49:13.52] the last one or two years uh but it is
+[49:15.36] still a one-way uh sort of street and
+[49:17.52] you would still rely on that for very
+[49:19.52] specific information getting sort of
+[49:21.84] things but it is not a very generalized
+[49:24.48] uh AI that can basically like talk to
+[49:26.08] you about uh like it doesn't have a
+[49:28.08] personality basically at this point of
+[49:29.68] time
+[49:29.92] >> and because you said it doesn't have a
+[49:31.12] infinite memory like as soon as the
+[49:32.72] compute goes up the memory goes down.
+[49:34.24] >> Yeah, exactly. It doesn't have infinite
+[49:35.44] memory. I mean that is basically
+[49:36.96] constrained to the information you've
+[49:38.56] given that AI around the podcast uh you
+[49:41.36] know like about Steve Jobs if you read
+[49:42.88] the book of Steve Jobs it'll probably
+[49:44.08] just talk about that. But what did it
+[49:46.00] learn from that? Um can it apply it to
+[49:48.48] its like own
+[49:50.80] uh goals? Does it have a long-term goal?
+[49:52.80] Like it it does not right. So, so that's
+[49:55.04] a very specific great use case for voice
+[49:57.20] AI and we will see many such use cases
+[49:59.04] for voice AI pop-up. So, voice as a
+[50:00.48] market itself is going to be pretty big.
+[50:01.92] But like I'm talking about like the gold
+[50:03.20] standard of why this is like a massive
+[50:06.00] like a multi- trillion dollar market is
+[50:08.64] because you are basically going to have
+[50:11.12] every human as a consumer as this.
+[50:13.84] >> But then if it's such an attractive
+[50:15.20] market, why why not anthropic and open
+[50:16.96] AAI playing in this market actively as
+[50:18.72] 11 Labs?
+[50:19.52] >> Um I think there is a different focus.
+[50:22.24] So some of our investors uh in like our
+[50:24.72] preced from OpenAI um as I spoke to them
+[50:28.00] they are building a different kind of
+[50:29.84] intelligence and I think that's an
+[50:31.20] important form of intelligence as well
+[50:33.04] which is the uh which is the large
+[50:35.52] models that can basically take in huge
+[50:37.12] amounts of context process it and then
+[50:38.72] come up with something meaningful out of
+[50:39.92] it. Um think of it this way like um when
+[50:42.40] humans made aeroplanes we tried to learn
+[50:45.12] from birds and we are doing much much
+[50:46.96] better there. We are actually flying
+[50:48.24] long distances much longer than how much
+[50:50.40] faster than what a bird can fly but we
+[50:52.64] are still not like as agile or light as
+[50:54.56] like a bird right so we have mimicked
+[50:56.80] flying but through a different form of
+[50:58.48] instrument very similarly right now in
+[51:00.48] AI we are doing LLMs which is a
+[51:02.24] different form of intelligence than
+[51:03.36] human intelligence so uh they have
+[51:06.32] something and they are playing the sort
+[51:08.16] of let's make LLMs bigger and bigger and
+[51:10.64] smarter and that is a market as well but
+[51:13.68] to build humanlike AI I think it has
+[51:15.60] slightly diverged from that goal. Can
+[51:18.32] they do it? Yes. I mean at any point
+[51:19.92] like big companies can do anything,
+[51:21.92] right? But I think it's just about focus
+[51:23.76] at this point of time.
+[51:24.88] >> So, so today the scale that you are at
+[51:27.12] like 1 to2, what does it require you to
+[51:28.96] build like a 100 million hour company?
+[51:31.76] >> Uh
+[51:32.16] >> time and money both.
+[51:34.56] >> Well, very frankly my predictions about
+[51:37.84] how much money I need have always
+[51:39.12] changed with time. Um I think that's the
+[51:42.48] issue with most first- time founders,
+[51:43.92] right? when I had raised like the first
+[51:45.52] 900 I thought this was enough to build a
+[51:47.28] 100 million company um over time I
+[51:49.60] realized of course not right like you
+[51:51.28] need more if you're doing pure research
+[51:53.28] uh because uh one is actually having the
+[51:55.92] product but then the others is a
+[51:57.04] enterprise trusting you that oh yeah
+[51:58.64] this is a serious company that can
+[51:59.68] handle like any number of requests from
+[52:00.96] us to sort of make sure it works
+[52:03.28] >> um having said that I still think the
+[52:05.04] capital we have right now is enough to
+[52:06.72] build a 100 million company so I'll not
+[52:08.48] comment on capital purely because we
+[52:10.56] already have a great technology uh which
+[52:12.08] is selling at scale and now it's about
+[52:14.00] go to market and like building that
+[52:15.84] playbook so that other people can sell
+[52:18.32] this product and distribute this
+[52:19.36] product. Now very mathematically
+[52:21.12] speaking let's say you want to do sales
+[52:24.48] right so to reach 10 million R you need
+[52:26.96] 10 people doing 1 million R each this
+[52:28.88] year right so it's it's a very
+[52:30.16] calculated if to do 100 you need maybe
+[52:32.64] 30 people like this who are doing 30
+[52:34.88] million AR R one maybe partnership model
+[52:37.68] where they have 10 partners doing 5
+[52:39.60] million each and then like some pay as
+[52:41.36] you go revenue etc right so um I feel
+[52:45.04] like having calculated all of that and
+[52:46.48] and this AR that will come from growing
+[52:49.36] from 1 to 10 to 15 this year that will
+[52:52.48] fuel back into the company and basically
+[52:54.40] act as the labor to sort of go to the
+[52:56.96] next milestone. Having said that, one
+[52:59.76] important um you know uh one important
+[53:03.12] milestone for us could be a strategic
+[53:05.36] coming in who can accelerate our
+[53:07.20] distribution. Example,
+[53:08.16] >> example Amazon for example like if you
+[53:10.08] are uh default on the marketplace uh
+[53:12.72] Google if if you are default on the
+[53:14.40] Google cloud and and Google starts
+[53:16.08] selling you example Accenture let's say
+[53:17.92] they take your models to all of their
+[53:19.52] clients and build agents that can
+[53:21.36] accelerate our ARR by quite a lot right
+[53:23.44] and so we want to build that we want to
+[53:24.72] make that happen
+[53:25.12] >> and are you trying to make that happen
+[53:26.24] right
+[53:26.48] >> yes we are already in touch with like
+[53:27.76] some of these folks and um we want to
+[53:30.08] make sure that we do that but those
+[53:31.44] things take time because uh Accenture
+[53:33.44] wouldn't like pick like any random
+[53:34.80] product they want to make sure the
+[53:35.68] product works it's aligned with their
+[53:37.20] internal goals. They have an internal
+[53:38.24] team that understands the product. They
+[53:39.52] have a roadmap of investment for the
+[53:40.80] product. They have identified the
+[53:41.76] clients for the and then they sort of
+[53:43.12] start.
+[53:43.44] >> So it's like at least a 24 month cycle.
+[53:45.28] >> Yeah. Yeah.
+[53:46.24] >> Because they have to themselves build a
+[53:47.52] 40 member 50 member team inside
+[53:48.88] Asenture.
+[53:49.44] >> Exactly. I mean if they do a uh
+[53:51.76] generally if they are able to do one
+[53:53.20] sale quickly um then they accelerate
+[53:56.00] that and they invest more and so
+[53:57.76] generally it's about that first win
+[53:59.12] together uh in my experience and and we
+[54:01.28] are already working with some folks to
+[54:03.04] get that first win which are in advanced
+[54:05.76] stages right now. So hopefully we'll get
+[54:06.96] that first win very soon and uh that
+[54:08.88] should accelerate some of these
+[54:09.92] partnerships.
+[54:11.04] >> Got it. So so right now uh what's your
+[54:14.40] biggest focus for this year 2026? We
+[54:17.36] need to get the research right like yes
+[54:20.00] we have the AR targets etc and I think
+[54:22.16] we can achieve that but the biggest miss
+[54:25.04] can be if let's say the models that we
+[54:27.84] have in mind we are not able to ship
+[54:30.08] them on time right and so we are
+[54:32.08] focusing heavily on research to an
+[54:33.68] extent where I personally know what
+[54:35.68] everyone in the company is working on
+[54:37.28] and like I have my own thoughts around
+[54:39.52] what the focus should be etc right so
+[54:42.08] sales in this AI first world happens
+[54:44.00] naturally if the model works like
+[54:45.52] >> why do you say that because uh today
+[54:47.84] enterprises are getting bogged down from
+[54:50.00] top down motions by Microsoft Salesforce
+[54:52.80] on AI adoption. I think uh it's uh it's
+[54:55.28] coming down to niches like for example
+[54:56.96] if you look at uh image models there are
+[54:58.72] like few companies that people know are
+[55:00.64] great at image like for example when
+[55:02.32] stability I was there or like um some of
+[55:04.80] this I think if I'm not wrong clinging
+[55:06.40] is doing pretty well in image and video
+[55:07.76] recently these companies have a large
+[55:09.92] like word of mouth and just self-s serve
+[55:12.72] distribution angle and then that self-s
+[55:14.48] serve leads to a lot of bottomup usage
+[55:16.32] in the company and like imagine like 100
+[55:18.16] people in a company are already using
+[55:19.60] your product then you can easily do top
+[55:21.60] down after that right so that going to
+[55:23.28] be strategy as well to make sure like
+[55:24.80] the product is popularized and the model
+[55:26.48] just works because if you have good word
+[55:28.24] of mouth amongst developers if people
+[55:29.84] can just easily use your APIs um you can
+[55:32.16] see cursor for example scaled through
+[55:33.68] self-s serve you can see a lot of like
+[55:35.20] new age companies are going from zero to
+[55:37.12] double digit ARR in like 3 months by
+[55:40.40] self-s serve growth right so I think the
+[55:41.92] world of self-s serve is coming up
+[55:43.92] enterprise will always be there but it's
+[55:46.48] easier to do if you have a great self-s
+[55:48.32] serve product in my opinion
+[55:49.28] >> and what are the the popular
+[55:50.32] applications that are getting made using
+[55:51.52] your models
+[55:52.48] >> uh people are building um like
+[55:54.24] open-source whisper flow alternatives,
+[55:56.32] people are building customer support
+[55:57.84] voice agents, people are doing debt
+[55:59.28] collection, uh people are doing uh AI
+[56:01.52] note takers um so very horizontal.
+[56:04.24] >> Can you take example of few companies
+[56:05.92] that have built these applications like
+[56:07.52] what company has built what
+[56:08.48] applications? So there is a like without
+[56:10.00] taking specific names but like there is
+[56:11.52] a financial services company based in
+[56:13.52] India which is doing large scale debt
+[56:14.96] collections using us like you know every
+[56:17.12] day we are like at 100,000 calls plus
+[56:19.36] using that
+[56:19.92] >> and you build the application for them
+[56:21.20] or they build the application
+[56:22.00] >> they have built the application they are
+[56:23.20] using the platform to do those calls
+[56:24.80] there is a telephone company that has
+[56:26.48] all of their like meetings uh internal
+[56:29.12] meetings getting like recorded in US uh
+[56:32.24] using our uh our voice models um there
+[56:35.20] is a large customer support company that
+[56:37.36] is uh very recently started using our
+[56:39.20] voice models to cover customer support
+[56:40.72] agents. uh right so
+[56:42.32] >> something like kind of Sierra kind of
+[56:43.68] >> yes exactly something like Sierra um so
+[56:46.08] we are in talks with them as well so so
+[56:49.44] market is very horizontal all of CX all
+[56:51.76] of telefony all of financial
+[56:53.68] institutions um and more and also B2C is
+[56:56.56] like a strong thing as well for our
+[56:58.24] market when you're selling models and
+[56:59.84] hence all you have to do is make sure
+[57:01.20] the model is really good uh as long as
+[57:03.36] it's really good it matches user
+[57:04.72] expectations it can handle multiple
+[57:06.08] languages accents it it can do pretty
+[57:08.08] well in the platform
+[57:08.96] >> understood and and what are risk that
+[57:11.60] you have today that can stop you from
+[57:12.96] growing both market risk and internal
+[57:15.04] risk.
+[57:16.80] >> Uh well, if there is a AI bubble and
+[57:19.52] something uh breaks, uh first of all, I
+[57:21.52] don't think there's a bubble.
+[57:22.48] >> Why do you say so?
+[57:23.84] >> Because there might be micro bubbles.
+[57:26.48] For example, I feel like some AI
+[57:28.16] products which are like being sold are
+[57:30.80] just sold in a very temporary period of
+[57:32.88] time. Um
+[57:34.00] >> example
+[57:34.64] >> example could be like um there are like
+[57:37.52] code a coding agents like the top top uh
+[57:41.12] you know why coding platforms are
+[57:42.24] amazing but then there are a lot of
+[57:43.28] companies that are just trying to build
+[57:44.24] these like very specific coding agents
+[57:45.76] which apparently will be like better
+[57:47.52] than cursor relable that's not going to
+[57:48.96] happen right so I feel like there are
+[57:50.32] like few winners in that space and like
+[57:52.48] the others are just going to add on but
+[57:53.76] they have been funded and they will
+[57:55.04] probably go through some acquisition or
+[57:56.24] something to continue right um but u but
+[57:59.28] the voice space is very real because the
+[58:00.88] voice space is a existing market that is
+[58:02.64] getting disrupted You're not inventing a
+[58:04.24] market. You already have uh dictation in
+[58:07.28] mobile apps which sucks. You already
+[58:09.20] have that desktop noteaker which was
+[58:10.48] really bad. Now with generative AI you
+[58:11.92] have much better dictation. Uh you
+[58:13.68] already have IVR based voice agents
+[58:15.12] which are really bad. Now with
+[58:16.24] generative AI it's becoming very
+[58:17.44] natural. Right? So you're not uh
+[58:19.84] inventing a new market. You are taking
+[58:21.44] an existing market uh making it much
+[58:23.44] better and by that you're also making it
+[58:25.76] larger. Um and so uh this is a very real
+[58:28.64] market that is here to stay. Coming back
+[58:30.64] to your question, um can like a large
+[58:33.36] major global event take off funding from
+[58:35.76] AI? Um I think that's a reality like uh
+[58:38.56] >> yeah for example one of the large
+[58:40.24] companies like Open AI, you don't know
+[58:41.68] the internal risk because they're not
+[58:42.80] public companies yet.
+[58:44.00] >> One of these companies burst.
+[58:45.76] >> Yeah, exactly.
+[58:46.32] >> And then the next day it's a it's a
+[58:48.40] bubble that that's burst and all the
+[58:50.32] funding that is happening in AI will
+[58:51.60] stop.
+[58:52.16] >> Yeah. I mean u a lot of the buying let's
+[58:54.64] say would also happen through when you
+[58:56.40] do like pay as you go uh happens through
+[58:58.24] other startups or other developers who
+[58:59.68] got money because of VC funding into
+[59:01.68] other startups and then imagine all of
+[59:02.96] them kind of go go you know bankrupt
+[59:05.36] then suddenly your customers are not but
+[59:07.04] that will take a massive major event and
+[59:08.64] today at least it looks like folks are
+[59:10.72] doubling down open is making progress
+[59:12.48] enterprises are adopting AI revenue is
+[59:14.56] growing so does seem real I'm not a
+[59:17.20] financial expert of global meltdowns but
+[59:20.00] >> the thing is we don't know the internal
+[59:21.68] gross margins For example, if open air
+[59:23.84] is doing 2%
+[59:25.44] >> GM.
+[59:26.00] >> Yeah. Yeah.
+[59:26.56] >> And still need more 100 billions of more
+[59:28.32] to fund it.
+[59:29.12] >> Yeah. Yeah.
+[59:30.32] >> Yeah. Um I'm I'm not an expert. I think
+[59:33.60] uh the collaboration between Nvidia and
+[59:36.08] OpenAI is interesting. Um I think with
+[59:38.40] the latest model they were talking about
+[59:40.00] even providing feedback to Nvidia on how
+[59:41.92] the the chips should be designed to to
+[59:44.64] provide better inference capabilities.
+[59:46.32] To give you an example, um Nvidia chips
+[59:48.88] are generally very bad for voice
+[59:50.48] inference. uh like if you have 40 GB of
+[59:53.04] RAM in a Nvidia GPU, you can generally
+[59:55.36] if you want to do real time like 100
+[59:56.72] millconds, you can use maybe 2 or 4 GB
+[59:59.76] of it for our models and beyond that if
+[60:01.68] you start scing the latency starts
+[60:02.88] increasing and that is because in Nvidia
+[60:05.04] the um the literally the physical
+[60:07.76] distance between memory and uh the uh
+[60:10.48] the cores of the GPU is so high that the
+[60:12.88] computation happens very quickly but the
+[60:14.88] time it takes for the next data to load
+[60:16.80] from memory is more than the computation
+[60:19.12] time and so that becomes a bottleneck.
+[60:20.32] is memory bottleneck. Um now there are
+[60:22.72] other chip architectures that are coming
+[60:24.08] up that are basically having the compute
+[60:26.16] and memory like literally in the same
+[60:27.52] physical space so that you don't have to
+[60:29.28] go through these cycles of compute
+[60:30.80] memory there and and obviously these are
+[60:32.64] not at the scale of Nvidia but they are
+[60:34.40] taking up um some you know they have
+[60:36.80] some traction and we are also using some
+[60:38.88] of these to uh reduce the cost of voice
+[60:41.04] today. The cost of voice is like
+[60:42.48] thousand times more than the cost of
+[60:43.84] text. We want to like bring it at par
+[60:45.92] basically.
+[60:46.80] >> Got it.
+[60:48.40] And what's your the one is research that
+[60:50.40] you said but what's your biggest
+[60:51.52] ambitious thing that you are doing right
+[60:53.36] now?
+[60:55.28] So I think um obviously I'll not give
+[60:58.72] you the research answer because every
+[61:00.24] time you someone asks me this I go back
+[61:02.08] to another research idea that I have um
+[61:04.96] but but we are literally creating the
+[61:08.00] like list of top 50 dream customers that
+[61:10.40] we have and going aggressively through
+[61:12.32] like a top down motion a very targeted
+[61:14.16] motion of how could we you know get them
+[61:16.56] through a palenteer sty approach like we
+[61:18.72] know every single thing about the
+[61:20.16] customer it's not just who is the buyer
+[61:22.32] what do they do what have they purchased
+[61:23.84] for what they like, are they planning to
+[61:25.52] buy, what is the problem we'll be
+[61:26.64] solving for them if we if if they
+[61:28.16] purchase from us, uh what are their
+[61:29.84] incentives, all of those things in a
+[61:31.76] very like like a PhD kind of manner.
+[61:33.60] You're not doing like sprayed outbound
+[61:35.36] sales where you like messaging like a
+[61:36.72] lot of people on LinkedIn and figuring
+[61:37.92] out some of them will work. You decide
+[61:39.44] these 50 accounts I want to sell to this
+[61:40.88] year and somehow I need to get in,
+[61:43.28] right? And and I can get in because the
+[61:45.76] technology is good, but what are the
+[61:47.68] other things they worry about and I I
+[61:49.12] just have to make sure I know them. This
+[61:50.48] is something like coming from a nerdy
+[61:52.16] background that I have is very alien to
+[61:54.40] me but I have learned it I think over
+[61:56.08] the last one year or so and um hopefully
+[61:58.56] we'll do a good job.
+[61:59.20] >> Yeah. Can you share listen it might be
+[62:00.64] helpful for the founders listening?
+[62:01.84] Yeah.
+[62:02.16] >> So some of the largest enterprise
+[62:03.28] accounts that you crack today.
+[62:04.56] >> Yeah.
+[62:04.80] >> How did you crack them apart from
+[62:05.92] introductions? What what did you do
+[62:07.36] specifically to make sure
+[62:09.36] >> you know you land and win in those
+[62:10.64] accounts?
+[62:11.04] >> So I'll talk about this US-based
+[62:12.32] telefony company right. Um so um and and
+[62:15.68] I'll name it later after this podcast as
+[62:17.76] well but uh just um so so we got an
+[62:20.96] introduction through our investors um
+[62:23.12] and I was like I had just raised the
+[62:25.52] like seed the money was not yet in the
+[62:27.28] bank. I was kind of getting on a call. I
+[62:29.20] was like oh if this person does not like
+[62:31.60] me maybe the term sheet gets pulled I
+[62:33.68] don't know right. Um so I'm kind of like
+[62:35.92] uh a little uh a little nervous but at
+[62:38.08] the same time I know my things like I
+[62:40.08] know what I am building. I know the
+[62:42.08] problems I can solve. So we have this
+[62:44.24] amazing voice model that converts voice
+[62:46.08] to text called pulse. It's a speechto
+[62:47.68] text model runs in real time. Um 64
+[62:50.00] millconds latency. Um a lot of other
+[62:52.16] features like emotion detection, gender
+[62:53.52] detection, bunch of other things, right?
+[62:54.64] So it's like 100 different parameters
+[62:55.92] that you should know really well when
+[62:57.92] you're going to do the sale, right? Get
+[62:59.60] on a call with the CTO. The CTO is a
+[63:02.16] engineer himself. You know, he is like a
+[63:03.92] public market CTO, but he is still an
+[63:05.84] engineer. He knows, you know, his
+[63:08.00] technology, his teams in and out. So he
+[63:10.00] grills me on like every single aspect of
+[63:12.16] the product in the first call and and
+[63:14.00] the VC who is like investing in me is
+[63:15.84] actually on the call with me at this
+[63:17.28] point of time and both of us are getting
+[63:19.04] grilled together basically. But I don't
+[63:22.24] take these things personally like you're
+[63:23.84] asking me a technical question. If I
+[63:25.20] know the answer I'm going to I'm going
+[63:26.24] to give it to you. I'm going to explain
+[63:27.36] to you where we are strong. I'm going to
+[63:28.56] tell you where we are not. So I'm very
+[63:29.92] like honest when I'm selling to just be
+[63:31.76] sure that your expectations and my
+[63:33.84] reality is matching. So that call
+[63:36.56] happened 1 hour call. We both were
+[63:38.08] sweating after the call and uh I felt it
+[63:40.56] went uh okay but uh once you're grilled
+[63:44.16] you're not really sure right because
+[63:45.44] someone is not being like polite to you
+[63:46.96] etc. Um but I just kept pushing that hey
+[63:50.08] let's create like a channel together let
+[63:51.76] me give you the models okay nothing
+[63:53.52] happened two weeks three weeks and
+[63:54.64] suddenly after week four they're like
+[63:56.00] okay we're evaluating the models just
+[63:57.20] give us the model so we gave the model
+[63:59.04] um they evaluated the the benchmarks
+[64:00.80] came really really well we were
+[64:02.16] outperforming their existing provider
+[64:03.44] and we were like cheaper faster
+[64:05.28] everything so they're like okay we are
+[64:06.72] interested in doing the deal right and
+[64:08.56] then from that point onwards we went
+[64:10.88] into pricing they uh pricing negotiation
+[64:14.08] was interesting because I did not know
+[64:16.24] what's the benchmark Mark how to
+[64:17.76] negotiate do I have I mean they are a
+[64:19.28] startup I'm a startup they know that if
+[64:21.68] I get this contract the the you know I
+[64:24.40] my startup would be
+[64:26.00] >> valued 3x 3x higher so they know the
+[64:27.76] leverage they have on me but what I
+[64:29.52] valued is they never pulled that trigger
+[64:31.44] on me like here they were like they know
+[64:33.44] that they're like okay if you deliver
+[64:35.36] this um whatever your series happens etc
+[64:37.92] that's great plus we'll invest as well
+[64:39.84] >> they invest in series
+[64:40.80] >> they are uh yeah we are in talks for
+[64:43.28] that so so um so yeah so So, so it went
+[64:47.28] from them like grilling us to the next
+[64:50.00] conversation having they were like
+[64:51.60] chatting with us. The CTO was really
+[64:53.20] happy. Just yesterday I met him in his
+[64:55.20] office. We spoke for 2 hours about how
+[64:57.44] the company grew and like what are the
+[64:59.84] problems they were facing with speech?
+[65:01.44] Who who is working in the team? How are
+[65:02.96] they working? Um what is their road map,
+[65:05.76] what how else can we help like just
+[65:07.44] generally being friends at this point of
+[65:08.72] time. I think this is a not a typical
+[65:11.68] thing that people might face with every
+[65:13.20] company you go to but this is a like his
+[65:15.20] personality right and uh I respect that
+[65:17.60] right first you check whether someone is
+[65:19.36] capable and then you end up spending
+[65:20.80] >> first they grilled you for one hour uh
+[65:22.72] tested your capability
+[65:24.16] >> yeah and and now between that time till
+[65:27.12] now they had a list of requests that we
+[65:29.36] had to make sure we are fulfilling for
+[65:32.08] them and we were shipping those updates
+[65:34.00] every 2 days for them the entire team
+[65:36.16] was working like including my co-founder
+[65:37.92] on it like literally hands-on reviewing
+[65:39.84] the code and and again this enterprise
+[65:41.68] so you can't like ship half as stuff you
+[65:43.68] have to make sure tests are running. So
+[65:45.20] we made sure we understand their whole
+[65:46.64] org who understands what how are they
+[65:48.32] testing what are their priorities
+[65:50.16] delivered all of that and more in this
+[65:52.24] two to three month process which led
+[65:54.00] them to sign the contract basically and
+[65:56.24] then the contract negotiation was just
+[65:57.84] about I really like this because they
+[66:01.20] were very honest about it. I told them
+[66:02.96] look I want you to be at least a million
+[66:04.88] dollar account for me right like it it
+[66:07.52] has to be you guys are obviously getting
+[66:09.04] a great deal but I want this to be a
+[66:10.72] million dollar account for me
+[66:11.44] >> a million dollar multiple year or a
+[66:12.56] million dollar single year
+[66:13.36] >> single year. So he said okay so we can't
+[66:15.68] do uh like this year because XYZ reason
+[66:18.32] and he was very transparent about it. He
+[66:19.68] was showing me the reasons why I can't
+[66:21.20] do it this year but he said yes your
+[66:22.64] technology is important and we think
+[66:24.16] this year your technology will scale in
+[66:25.52] the company so let's do like a little
+[66:27.60] north of half a million or so this year
+[66:29.60] from next year onwards um and and like
+[66:31.84] we'll also do like a five six year
+[66:33.52] contract where we'll start giving you
+[66:34.80] more and more money
+[66:35.44] >> and what made them confident because in
+[66:37.60] fact like they were an enterprise right
+[66:38.96] so they could have easily given you one
+[66:40.32] year contract and walk away with it. So
+[66:41.84] what I think of signing a 5year deal.
+[66:44.56] >> So I think it's not easy for them to
+[66:48.00] switch technologies very quickly at
+[66:51.28] their scale. Right? Imagine like uh a
+[66:54.08] very large set of products are getting
+[66:56.88] powered by this. Now it's a generative
+[66:58.48] AI model. So it has non-deterministic
+[67:00.88] behavior. All right? You want to make
+[67:02.40] sure that nondeterministic behavior is
+[67:04.00] handled and taken care of across all the
+[67:06.40] downstream products that they are
+[67:07.60] building. Now if uh you know if
+[67:10.08] something happens and if uh you know you
+[67:11.92] are um changing the model and some other
+[67:14.16] downstream product breaks uh which is
+[67:15.84] which let's say gets into the news
+[67:17.04] because it's a public market company uh
+[67:18.56] that could affect their stock price
+[67:19.92] right so that was uh one of the reasons
+[67:22.64] why they are like okay if you are in
+[67:24.64] then I want to make sure you are in for
+[67:26.48] long-term but it's not like they didn't
+[67:29.20] put in their conditions in front of us
+[67:31.28] to before giving us this deal right they
+[67:33.20] do have an initial scaleup period with
+[67:34.56] an exit clause then they have a non-exit
+[67:36.96] clause after that for next one year then
+[67:39.28] then you're like it's like in between
+[67:40.88] they have some exit but that's fine
+[67:42.40] again you're dealing with a first
+[67:44.24] multi-year multi-million deal
+[67:45.92] >> and you're also learning it
+[67:46.80] >> you're also learning so you would do
+[67:48.40] anything to to do that and the biggest
+[67:50.24] the biggest thing more than the ARR more
+[67:52.72] than whatever is now you know your model
+[67:54.64] works works at scale for a very
+[67:56.96] important enterprise
+[67:57.76] >> so maybe a fortune thousand or fortune
+[67:59.12] 500
+[67:59.52] >> yeah exactly right now now you can go to
+[68:02.32] two others and very confidently say this
+[68:04.32] works right very similarly we are
+[68:05.92] working with a similar account in India
+[68:07.28] again at similar stage etc. Um same
+[68:10.00] thing right it just like obviously
+[68:11.92] initially there was some storytelling
+[68:13.92] there was some feedback etc but what I
+[68:16.00] love about my team is they're so quick
+[68:18.40] to respond take ownership and just
+[68:20.48] deliver and think of things as problems
+[68:23.04] and solve it you know like uh other
+[68:26.48] other people like generally what would
+[68:27.92] happen is you would start worrying oh
+[68:30.32] this is a problem how do I solve it like
+[68:32.48] but here you are you're basically
+[68:34.72] thinking of everything from first
+[68:35.84] principles and you're saying okay this
+[68:37.28] is what they need let's figure a way to
+[68:39.04] solve it and we go right to the level of
+[68:41.92] the Nvidia architecture to even write
+[68:43.92] our own kernels. So we are not scared of
+[68:45.92] touching any part of the stack versus
+[68:47.52] let's say you know you don't have the
+[68:49.28] models then you're like oh this is the
+[68:51.04] model limitation there's nothing we can
+[68:52.24] do we not we train the models we can
+[68:54.00] evaluate differently we can optimize the
+[68:55.68] models for various hardwares every
+[68:57.52] single thing is built in house and
+[68:59.04] that's I think our superpower
+[69:00.56] >> solution I would love to do a part two
+[69:01.92] sometimes this we are limited by time
+[69:04.00] >> but it's so amazing to see
+[69:06.96] cutting edge innovation coming from
+[69:08.40] India and with such a high ambition
+[69:11.68] I think what you are building if things
+[69:13.76] fall right in place then post we today
+[69:16.48] from India we give example of companies
+[69:17.76] like postman
+[69:19.04] >> I think we might give example of
+[69:20.24] smallest in a couple of years
+[69:21.68] >> hopefully soon yeah
+[69:23.04] >> thank you so much again for doing this
+[69:24.08] podcast
+[69:24.56] >> thank you so much for having

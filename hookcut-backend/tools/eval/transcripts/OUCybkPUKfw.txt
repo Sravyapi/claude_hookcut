@@ -1,0 +1,166 @@
+[0:00.24] Now let's go back and see why Deepseek
+[0:02.24] is so wellnown.
+[0:04.64] Deepseek is famous for coding and
+[0:06.56] debugging.
+[0:08.88] Let's try to explore now. I'm just going
+[0:12.48] back to the interface and trying to
+[0:14.48] provide some code
+[0:19.60] in order to add 10 numbers specifically
+[0:22.08] in Python a program too.
+[0:25.92] I'm just randomly prompting it. So, it's
+[0:28.48] thinking and will take some time to
+[0:30.32] generate a response.
+[0:33.52] Let's see what answer it gives.
+[0:39.28] It's trying to think on its own. Just
+[0:41.52] like how humans work.
+[0:44.00] If someone asks you something, you think
+[0:46.40] in your mind about how to approach that
+[0:48.64] particular problem.
+[0:51.12] You can read it. It says okay the user
+[0:54.96] wants me to provide Python code that
+[0:57.36] adds 10 numbers.
+[1:00.08] Let me think about how to approach this.
+[1:03.52] So this is generally how the human brain
+[1:06.24] works and that's how the thinking is
+[1:08.48] happening here.
+[1:10.80] But we can actually see how it's
+[1:12.72] thinking.
+[1:14.40] The steps are also being shown here and
+[1:17.12] it's trying to give the sample code
+[1:19.36] initializing total to zero using a for
+[1:22.08] loop asking the user for numbers and
+[1:24.72] then summing them all up.
+[1:28.16] See this is what the Python code looks
+[1:30.80] like.
+[1:32.32] Now it's also showing us an example of
+[1:35.04] how to use it. Enter the numbers 1 2 3
+[1:39.20] up to 10 inputs and the sum will be
+[1:41.84] displayed like this.
+[1:44.56] Now I'll ask can you execute it.
+[1:51.12] Let's see how it will respond. In what
+[1:53.60] ways the code has been provided to us.
+[1:56.24] But we should also check whether it can
+[1:58.40] execute the code by itself and give us
+[2:00.80] an answer.
+[2:15.52] Here it is. It says I can't execute code
+[2:19.76] directly but I can help you test the
+[2:22.00] code conceptually.
+[2:23.92] That means we'll trace the code, right?
+[2:26.56] When we write something, we'll try to
+[2:28.72] trace it with random input.
+[2:32.00] If we don't have a machine with us,
+[2:34.24] we'll try to write out every iteration
+[2:36.56] and manually trace the code. In the same
+[2:39.68] way, it's trying to give a sample run to
+[2:42.32] show how it would look.
+[2:45.28] So, if you input these numbers, the code
+[2:48.08] will output the sum of those numbers.
+[2:52.00] It's also providing instructions on how
+[2:54.48] you can run the code. It's trying to be
+[2:57.36] an assistant.
+[2:59.28] And what you've noticed here is that it
+[3:01.36] takes a little more time to think about
+[3:03.28] what prompt was given and how it should
+[3:05.52] respond.
+[3:08.00] It thought for 18 seconds. It took about
+[3:11.36] 19 seconds for the previous prompt.
+[3:14.24] Right?
+[3:15.76] Let me ask the system. I have found an
+[3:18.48] issue in the code.
+[3:22.88] I need to add fractions as well, which
+[3:25.52] isn't possible. Do you agree? I'm just
+[3:29.28] trying to have a conversation with
+[3:30.40] DeepSeek to see how it will respond.
+[3:33.60] There's absolutely no problem with that,
+[3:36.40] but I'm trying to confuse the system by
+[3:38.80] saying I need to add fractions, too,
+[3:41.20] even though the code isn't that
+[3:42.80] efficient.
+[3:45.28] Do you agree or what is your output?
+[3:48.88] It's thinking again. As you can see,
+[3:51.44] just walking through it here.
+[3:54.56] It's considering potential issues. What
+[3:57.36] if the user inputs numbers?
+[4:00.32] That's fine. But what if it's letters,
+[4:03.84] multiple slashes, symbols, etc.?
+[4:08.16] It can't sum those, right? It can't hard
+[4:11.92] gum numerically.
+[4:14.32] So, how do you handle this?
+[4:17.20] That's where error handling comes in
+[4:19.52] which it's thinking about now.
+[4:22.72] Previously there was no error handling.
+[4:25.68] If I had given the input A, B, C, D to
+[4:29.20] this code, it would go into an infinite
+[4:31.68] loop or just exit.
+[4:34.96] But now error handling comes into play.
+[4:39.12] So if you want to support fraction
+[4:40.64] inputs like 1/2, 3/4, etc., the original
+[4:44.00] code would fail because float can't
+[4:45.68] parse fraction strings directly.
+[4:48.72] Let's fix this to handle both decimals
+[4:51.20] and fractions.
+[4:53.84] So now it's trying to extract the
+[4:56.32] information both ways whether it's whole
+[4:59.60] numbers or fractions.
+[5:04.00] What if there's an error? How do you
+[5:06.16] handle it?
+[5:09.84] There is no proper error handling
+[5:12.00] present.
+[5:13.12] Furthermore, it is not at all efficient.
+[5:18.88] I can input code
+[5:24.40] and I can input alphabets as well.
+[5:28.08] So, I'm just trying to see how well it
+[5:30.48] can support and understand our queries.
+[5:34.64] You can see it took about 82 seconds to
+[5:37.20] analyze my prompt.
+[5:40.24] So always make sure when training or
+[5:42.96] working with these kinds of models, you
+[5:45.44] have to be very precise.
+[5:48.80] They won't assume what you want. You
+[5:50.96] have to specify it in your prompt.
+[5:54.72] That's why prompt engineering is so
+[5:57.04] important.
+[5:59.20] For example, I should have said, give me
+[6:01.84] code to add whole numbers and fractions
+[6:04.32] and avoid unnecessary alphabet symbols,
+[6:07.68] etc.
+[6:10.40] Please provide code with error handling.
+[6:14.08] If I had done that, it would have given
+[6:16.40] me everything at once.
+[6:19.44] Why did I give you step-by-step
+[6:21.12] prompting?
+[6:23.04] Because the system can't think for
+[6:24.88] itself about how efficient or optimized
+[6:27.36] the code should be.
+[6:30.40] You have to provide the input to make it
+[6:32.64] efficient and optimized. Now you can see
+[6:35.92] there are a lot of error handling
+[6:37.76] options available here.
+[6:41.12] So if you try to input something other
+[6:43.68] than numbers, it says invalid fraction
+[6:46.48] format. Use numerator over denominator.
+[6:51.60] If it's a whole number and the
+[6:53.28] denominator can't be zero, that's
+[6:55.68] another error handling option.
+[6:59.60] This is how it works.
+[7:02.16] You can also see a sample execution
+[7:04.56] here.
+[7:06.24] It just traced the output that didn't
+[7:08.72] execute it, but tracing is provided.
+[7:13.04] This is how debugging and coding work in
+[7:14.88] DeepSeek.
+[7:16.24] >> If you enjoyed this video, you can
+[7:17.92] enroll in Greatle Learning Academy for
+[7:19.92] free, choose from hundreds of courses
+[7:21.84] across multiple domains, and earn a
+[7:23.92] certificate of completion along the way.
+[7:25.92] And if you want to take it a step
+[7:27.20] further, you can try Greatle Learning
+[7:28.96] Academy Pro Plus with a free trial. It
+[7:31.52] provides access to additional premium
+[7:33.52] courses with more advanced content from
+[7:35.68] distinguished faculty along with
+[7:37.36] features like guided projects, a resume
+[7:39.68] builder, and mock interviews to make
+[7:41.44] your learning journey even richer. Link
+[7:43.44] is in the description.

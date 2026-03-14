@@ -71,6 +71,8 @@ class AnalyzeService:
         youtube_url: str,
         niche: str,
         language: str,
+        interview_mode: bool = False,
+        speaker_count: int = 2,
     ) -> dict:
         """
         Full analysis pipeline: validate URL, fetch metadata, check credits,
@@ -131,6 +133,8 @@ class AnalyzeService:
             language=language,
             status="pending",
             minutes_charged=minutes_needed,
+            interview_mode=interview_mode,
+            speaker_count=speaker_count if interview_mode else None,
         )
         db.add(session)
         db.flush()
@@ -168,6 +172,7 @@ class AnalyzeService:
             "video_duration_seconds": metadata.duration_seconds,
             "minutes_charged": minutes_needed,
             "is_watermarked": deduction.is_watermarked,
+            "interview_mode": session.interview_mode,
         }
 
     @staticmethod

@@ -1,0 +1,2023 @@
+[0:03.42] hey everyone welcome back to the channel
+[0:04.92] I hope you guys are doing extremely well
+[0:06.48] just in case you're for the first time
+[0:08.16] over here welcome to the channel and if
+[0:09.84] you don't know me I go by the name
+[0:11.40] striver in the programming Community if
+[0:13.02] you want to uh check me out you can
+[0:14.76] definitely check me out on LinkedIn I'll
+[0:16.86] be leaving my LinkedIn Twitter Instagram
+[0:19.02] telegram all the social media Handles in
+[0:22.80] the description below so without wasting
+[0:25.02] any time let's get started so uh take
+[0:27.72] you forward is a full-fledged interview
+[0:30.30] preparation website that I run on my end
+[0:33.24] so if you're someone who has three
+[0:35.10] months to like six months of time left
+[0:37.56] for interviews I will definitely ask you
+[0:40.32] how to check this Strivers SD sheet
+[0:43.26] trust me this is one of the most
+[0:46.02] followed resources in the country as of
+[0:48.84] now what does this resource gives you it
+[0:51.54] gives you
+[0:52.46] 119 uh 191 well curated problems such
+[0:56.88] that all your DS algo Concepts will be
+[1:00.24] covered but only prerequisite is you
+[1:02.70] should be well versed with the basics of
+[1:04.68] DS algo in order to start with
+[1:07.38] now if you're someone who's a beginner
+[1:09.66] you can definitely check out our
+[1:11.58] Strivers A to Z DSA course or sheet now
+[1:15.66] over here what I've done is I've created
+[1:17.90] 455 steps every step has been curated
+[1:21.84] properly and you will get all the
+[1:25.38] problem links everything imagine you
+[1:28.14] open dynamic programming you want video
+[1:30.24] you get videos for everything so all the
+[1:33.54] hard topics have been covered you'll
+[1:35.16] find videos for all the hot topics now
+[1:37.68] we will be starting off to cover all the
+[1:40.32] basic topics so this is the video where
+[1:42.54] we will be starting to cover from the
+[1:44.52] step 1.1 in case you have doubt about
+[1:47.34] The credibility you can go to our
+[1:48.84] LinkedIn page and you can check out all
+[1:51.12] the success stories or you can follow me
+[1:52.98] on LinkedIn and you can see how many
+[1:54.24] people do tag me and also you can check
+[1:56.28] out our Instagram story highlights so if
+[1:58.62] you go to Instagram there is a highlight
+[2:00.36] as success stories over there you can
+[2:02.22] check out all our success stories like
+[2:04.14] there are thousands and thousands of
+[2:05.70] success stories of the striversity SD
+[2:07.86] sheet and now we are starting off with
+[2:09.66] Strivers A to Z DSA core sheet which is
+[2:12.66] for beginners or intermediate level
+[2:14.52] people today we will be covering the
+[2:16.68] step 1.1 that is things to know in C
+[2:19.38] plus plus Java python or any language
+[2:21.66] now in order to start off with data
+[2:23.88] structures and algorithms you have to
+[2:25.38] pick up any one language it can be C
+[2:27.06] plus plus a Java python or JavaScript
+[2:29.88] and you have to code in that language
+[2:32.04] make sure you master one language now in
+[2:35.34] the previous video I've already talked
+[2:36.78] about C plus plus versus Java so you can
+[2:39.36] definitely check out that video so in
+[2:40.92] this video I'll be telling you about C
+[2:42.96] plus plus and I'll be covering all these
+[2:45.60] basic stuffs related to C plus plus and
+[2:48.30] in the next video we will be covering
+[2:49.74] the Java 1.
+[3:01.94] I think you should definitely check out
+[3:04.08] coding ninjas because web development
+[3:06.06] okay data Stitch algorithm foreign
+[4:07.14] County there's a link in the description
+[4:08.94] make sure you check them out I'll be
+[4:11.58] using vs code in order to code I'll be
+[4:13.56] writing my C plus plus code over here
+[4:15.06] I'll be giving the input over here and
+[4:16.80] whatever the code generates as an output
+[4:18.66] will be produced over here so before
+[4:20.58] starting this C plus plus video I love
+[4:22.86] to mention two points first is please
+[4:25.08] make sure you watch the video till the
+[4:26.82] end you might be knowing C plus plus but
+[4:29.04] there are a lot of things that I'll be
+[4:30.54] covering in this video which you might
+[4:32.46] know or you might like find it very
+[4:34.92] interesting so make sure you watch the
+[4:36.42] video till the end the second point is
+[4:38.34] again very important when you're
+[4:40.08] learning something on for the first time
+[4:42.12] do not dig deep too much into uh certain
+[4:46.14] things because what happens is when we
+[4:48.18] start off we start to think that okay
+[4:50.34] every certain thing will learn in depth
+[4:52.80] and eventually we are stuck in the
+[4:55.86] beginning process and we do not move
+[4:57.54] ahead so what I'll recommend you is
+[4:59.46] first learn the basics and do not dig
+[5:02.22] much and eventually when you'll uh go
+[5:04.44] from beginner to intermediate to medium
+[5:06.60] and then to high but you will on this
+[5:08.82] flow you will be learning everything in
+[5:11.46] depth but during your start do not dig
+[5:14.28] deep so much why why why do not do a lot
+[5:17.64] of why it is good to do but there are
+[5:19.80] certain things where you should not do a
+[5:21.84] lot of wise because that will be not
+[5:23.58] required in the longer run so the first
+[5:26.94] thing in order to write a C plus plus
+[5:28.32] code is the skeleton of C plus plus code
+[5:30.84] that's a skeleton of C plus plus code
+[5:32.76] stays constant across all the programs
+[5:35.64] that you'll be writing in C plus plus
+[5:37.02] something like hash include so we write
+[5:39.78] hash include now imagine the first
+[5:41.70] program that we will be writing is to
+[5:43.44] print our name so the skeleton States
+[5:45.54] okay you have to print you have to
+[5:47.52] private print something which is you
+[5:49.56] have to give an output or let's say you
+[5:51.60] have to take an input so in order to
+[5:53.58] take an input or take an output we have
+[5:56.16] to use this particular library now as I
+[5:58.62] said do not dig deep you don't have to
+[6:00.48] know what is inside this Library yes if
+[6:02.70] you want to know it is okay but you
+[6:04.26] don't have to remember this so if you
+[6:06.24] use this Library this allows you to take
+[6:08.10] input and produce an output and in order
+[6:10.80] to use this library in C plus plus we
+[6:13.14] can use the hash include so hash include
+[6:15.42] i o stream imagine if you want to use
+[6:17.52] something like a mathematical function
+[6:19.26] which exists in the C plus plus library
+[6:21.60] then you have to use something like a
+[6:23.70] math dot h I'll be talking about radical
+[6:26.70] functions afterwards in case you want to
+[6:28.56] use something like a string then you use
+[6:30.36] hash include string so whatever Library
+[6:33.18] you want to use you have to Hash include
+[6:34.92] it you don't need to know what is inside
+[6:37.26] the Library as I said do not dig much
+[6:39.24] deep and then you say int Main
+[6:42.84] and then you say return 0. so this is
+[6:45.36] the generic skeleton of the code I'll
+[6:47.40] remove this couple of hash includes
+[6:49.08] because as of now we are just going to
+[6:51.30] print so this is the generic skeleton of
+[6:54.48] a C plus plus code after this I said I'm
+[6:57.72] going to print my name so I'll be like
+[6:59.64] see out so when I write C out it means
+[7:02.52] you have to that allows you to give an
+[7:04.56] output okay now in order to use C out
+[7:07.32] you have to write STD and double colon
+[7:10.20] so C out is a function which exists
+[7:12.90] under the STD okay so you have to say
+[7:15.96] STD can you give me c out and then two
+[7:18.66] lower than signs and then double quotes
+[7:21.36] if you're printing a string and you can
+[7:23.22] say hey striver
+[7:25.38] and then you can give this so what I'll
+[7:27.18] do is I'll go and run this the moment I
+[7:29.10] run this you see in the output screen we
+[7:30.96] have a striver so in case you want to
+[7:34.62] again print this so go across and copy
+[7:36.90] paste the same line and again run this
+[7:38.76] so what happens is case driver is
+[7:41.34] printed two times but they are printed
+[7:43.44] on the same line in case you want to
+[7:45.24] print them in different lines you can go
+[7:47.22] ahead and give a backslash n and you can
+[7:50.52] just
+[7:52.20] so the moment you compile this what
+[7:55.02] happens is the backslash n goes across
+[7:58.56] and prints it in the new line so very
+[8:02.52] simple can can we use something else yes
+[8:05.88] instead of a backslash n we can take STD
+[8:10.68] and L and we can again compile so if we
+[8:14.04] compile endl is similar to backslash n
+[8:16.80] handle or backslash n takes you to the
+[8:20.10] next line but usually people use
+[8:22.14] backslash n because it is faster okay
+[8:24.96] but you will find people using both so
+[8:27.48] it is your choice if you want to print
+[8:29.82] something on the same line you can again
+[8:32.10] print
+[8:33.06] something like hey Raj you can again
+[8:35.22] print and again you can give something
+[8:36.72] like endle there is no limitations on
+[8:39.54] the thing that you want to print on the
+[8:41.76] same line you can print as many things
+[8:44.16] over here on the C out and that will be
+[8:46.26] printed according to the functions that
+[8:49.14] you give like over here given handle so
+[8:51.84] that is why haste driver hiraj and his
+[8:53.82] driver are printed on new lines so this
+[8:56.64] is how you give now something must be
+[8:58.50] very annoying which is this STD now for
+[9:01.68] any functions for most of the functions
+[9:03.36] you have to write STD double colon
+[9:05.10] double Corner this is very annoying
+[9:06.84] right this is where something like using
+[9:09.24] namespace comes in so we say hey can you
+[9:12.30] use the namespace STD
+[9:16.32] so basically what this means is if
+[9:18.90] you're not giving anything if you're not
+[9:21.12] stating anything it eventually says
+[9:23.88] since you have written using namespace
+[9:25.80] STD again you don't have to dig deep the
+[9:28.44] moment you say this the program always
+[9:30.90] uses STD for all the functions yes
+[9:33.36] always uses STD for all the functions
+[9:35.88] now if you compile it prints everything
+[9:37.92] now it looks a easier task isn't it so
+[9:41.58] this is how you can easily write okay
+[9:43.32] now let's quickly have an input imagine
+[9:45.90] you want to take an input so imagine I
+[9:49.08] want to take an integer as an input in
+[9:50.64] DX so this is how you take an input it's
+[9:53.82] a scene of X scene means input into this
+[9:57.36] variable input into this variable now
+[9:59.70] imagine in the input I go across and I
+[10:01.80] say 10 and I'll be like let's print this
+[10:04.26] x guy cell billi value of x and then I
+[10:09.06] can go ahead and write X so if I go and
+[10:11.34] print this you will see value of x is
+[10:13.44] printed as 10 what happened you printed
+[10:16.08] this particular string and then you said
+[10:18.42] space and then you printed X so this x
+[10:21.48] was taken from here got it imagine if
+[10:24.78] you want to take two variables as input
+[10:28.02] so if you want to take two variables as
+[10:29.58] input you can give it like this and over
+[10:31.80] here you can give them in the same line
+[10:33.36] the value of x and then you can go ahead
+[10:37.20] and say and Y and you can probably write
+[10:41.04] this as bat this one and this so what
+[10:45.00] happens is value of X and Y now do you
+[10:48.84] need to give them in the same line you
+[10:50.70] can give them in different lines as well
+[10:52.26] and it will still run in the similar
+[10:55.08] fashion so this is how you can take any
+[10:57.36] inputs so what happens is the first
+[10:59.70] thing gets into the first scene the next
+[11:02.52] thing gets into the next CN so depending
+[11:05.10] on how you are writing C in line by line
+[11:07.74] line by line everything gets into
+[11:09.48] variables that you're initializing it
+[11:11.34] with now you might be thinking what is
+[11:13.68] this in now there are certain things as
+[11:16.20] data types which I'll be talking about
+[11:18.24] but before moving into data types now as
+[11:20.70] I said there are a bunch of libraries
+[11:22.56] imagine you are taking strain integer
+[11:25.62] let's say a lot of other data types all
+[11:28.50] a lot of other libraries will you be
+[11:30.48] writing hash include hash include hash
+[11:32.16] include hash include every time no it's
+[11:34.38] going to take you a lot of time this is
+[11:36.24] where C plus plus C is a I've got
+[11:38.22] something better for you I say can I
+[11:40.50] write bits STD C plus plus dot h now
+[11:44.40] what it does is it includes all the
+[11:47.58] libraries everything
+[11:49.14] whatever libraries are there in C plus
+[11:51.36] plus everything is included under this
+[11:54.00] bits slash stdcplus plus dot h I might
+[11:57.60] think but striver in order to include so
+[12:00.00] many libraries we will be taking a lot
+[12:01.92] of time yes we do take a lot of time but
+[12:04.86] that is very negligible compared to the
+[12:06.96] time that your program takes to run so
+[12:08.88] that is why it is okay to include bits
+[12:11.46] slash stdc plus plus dotage yeah it
+[12:14.16] takes a bit more time but that is okay
+[12:15.84] again if you want to check out what are
+[12:17.94] the libraries inside this you can
+[12:19.50] definitely Google this and you'll get
+[12:21.18] all the list of libraries that are
+[12:22.86] inside this particular directory so this
+[12:25.74] is what is
+[12:27.84] the common skeleton of the code that we
+[12:30.78] will be using to write any C plus plus
+[12:33.00] program on the planet so you have
+[12:34.98] discussed the first thing that is the
+[12:36.24] skeleton of the code and the user input
+[12:38.82] and output to a certain extent we will
+[12:40.44] be digging deep into this as we move
+[12:42.54] forward what is the next type that is
+[12:44.82] the data types now we're talking about
+[12:47.28] input and output now if we are taking a
+[12:50.64] number in you have to store it somewhere
+[12:52.62] in your program that is
+[12:55.08] the place where you store that can be a
+[12:57.42] data type okay now imagine you are
+[12:59.58] taking a number like 10 12 minus 5. what
+[13:04.44] will you use to store it so there is a
+[13:06.72] data type known as int integer now this
+[13:09.90] is how you can write comments in C plus
+[13:11.40] plus if you give double backslash you
+[13:13.32] can write any comment so integer what
+[13:15.30] does comment means those lines of uh
+[13:17.70] code will not be executed so this line
+[13:20.34] will not be executed when the program is
+[13:22.20] executed
+[13:23.28] so int is the data type in order to
+[13:25.98] assign anything to integer data type you
+[13:28.38] have to write the data type and then a
+[13:30.42] variable name variable name can be
+[13:32.28] anything it can be Raj it can be X it
+[13:34.62] cannot be a number it cannot be a number
+[13:36.42] okay so it can be Raj one that is okay
+[13:39.00] but it has to be something which has a
+[13:42.30] character so something like let's say I
+[13:44.28] say x equal to 10. so this is how you
+[13:46.80] assign something into an integer data
+[13:49.62] type but integer has certain
+[13:51.06] restrictions it can only store numbers
+[13:53.10] from this range to this range Beyond
+[13:56.34] this it cannot stop
+[13:58.56] Beyond this what will help you something
+[14:00.78] like a long data type will help you if
+[14:03.00] you try to use long it has a wider range
+[14:05.76] same concept you can use the same
+[14:08.40] concept to store uh variables in long if
+[14:11.82] you want to take an input this is how
+[14:13.56] you take an input if you write C enough
+[14:14.94] X the first number 10 will go into X
+[14:18.06] okay now what if you want to store
+[14:20.34] bigger numbers than this this is where
+[14:22.38] something like long long will come in so
+[14:24.30] if you are saying long long it will give
+[14:25.92] you a wider range again the same way you
+[14:28.80] can store it like this or maybe you can
+[14:31.02] go ahead and store a very large number
+[14:33.54] as well so usually we will be using
+[14:36.72] these three things to store any type of
+[14:40.02] integers between a certain ranges okay
+[14:42.30] now what are the next data types that we
+[14:44.34] will be using we were talking about
+[14:46.08] integers what if we have something like
+[14:48.96] let's say 5.6 something like this so it
+[14:52.74] is having something after the decimal
+[14:55.56] point this is where something like
+[14:58.20] we will be specifically using two data
+[15:00.60] types float and double again they have
+[15:03.42] ranges depending on the Range that you
+[15:05.82] use you'll be using float or double the
+[15:08.28] ranges are visible on the screen so we
+[15:11.46] can use something like float again same
+[15:14.82] way
+[15:15.66] float x equal to 5.6 again you can
+[15:19.74] always store float y equal to 5 as well
+[15:23.64] it doesn't mean that like if I'm saying
+[15:26.12] that it has to store decimal it doesn't
+[15:28.92] means you can store an integer if you go
+[15:31.20] and say C out of Y like value of y and
+[15:36.30] then you say okay let's print this one
+[15:38.40] let's see what it prints okay
+[15:40.50] so if you see the value of okay it does
+[15:42.96] give you an error okay by the way let's
+[15:44.88] erase this because we have defined X
+[15:46.92] twice okay let's now compile this you
+[15:49.86] see it is getting printed similarly if
+[15:52.44] you want to Define this as double
+[15:55.26] it's it's still okay
+[15:56.94] if we Define this double and integer can
+[15:59.28] also be stored in a double okay so in
+[16:01.50] data types you have learned how to store
+[16:03.00] numbers and numbers with decimal points
+[16:05.76] now what if you have a string or a
+[16:09.30] character how do you store that so for
+[16:11.58] that what we will be using is something
+[16:13.32] like a string and get line so you have
+[16:16.68] to learn these couple of things okay now
+[16:19.38] imagine I write a string so this is an
+[16:22.68] entire string and the same way I'll say
+[16:25.62] string s and I'll say CN of s I'll say C
+[16:29.22] out of s okay ideally what should happen
+[16:32.52] is this entire Haze driver should go
+[16:35.04] inside this string and this should be
+[16:36.96] printed but let's see what will happen
+[16:38.52] if I run this
+[16:39.90] you will see just a being picked up and
+[16:42.42] if you want to pick up striver what you
+[16:44.34] have to do is you have to Define two
+[16:46.98] strings if you want to Define two
+[16:48.84] strings in a same line comma will be the
+[16:51.84] thing or you can go ahead and say string
+[16:53.70] as
+[16:54.48] and over here S1 and then you can say S2
+[16:57.30] and over here S1 and then you can give a
+[16:59.64] space and then S2 so what will happen
+[17:01.98] now if you do first S1 is picked up as a
+[17:05.58] then S2 is picked up as travel then both
+[17:08.58] of them are printed with a space right
+[17:10.80] so
+[17:12.24] if you're saying string then what
+[17:14.34] happens is it only picks up anything
+[17:16.68] before the space
+[17:18.12] and after the space it's a new string so
+[17:19.98] you have to again give a c in now in
+[17:23.04] case you want to take everything
+[17:24.36] together in a string how do you do that
+[17:27.24] in order to do that you have to probably
+[17:29.10] Define a string and then if we use
+[17:31.44] something like get line inside the get
+[17:33.54] line you have to write CN what is get
+[17:35.52] line again do not need to dig deep it's
+[17:37.80] an internal function you have to write
+[17:39.36] CN and then you have to give this
+[17:41.52] variable over here and then you go ahead
+[17:44.04] and say C out of Str so what will happen
+[17:46.56] is this get line will take the entire
+[17:48.84] line and put it into the Str now if you
+[17:51.96] print you will see this Haze driver is
+[17:55.14] printed or maybe hey Striker I am cool
+[18:00.30] and if you print this you'll see the
+[18:01.98] entire line is getting printed but if
+[18:03.78] you go to the next line hey Raj will the
+[18:06.72] entire line be picked up let's run this
+[18:08.64] no the next line is not picked up only
+[18:11.58] this particular line is picked up so the
+[18:14.34] moment you click enter the next line
+[18:16.38] will not be picked up so it just picks
+[18:19.20] up till the line break so string and get
+[18:22.62] line is used to take any of the string
+[18:27.06] so you've talked about string and get
+[18:29.52] line now it's time to talk about
+[18:30.90] character now there are 256 characters
+[18:33.72] in English dictionary so character can
+[18:37.20] store all of them yes character can
+[18:39.78] store all of them so imagine if you have
+[18:42.36] something like an H so you can just go
+[18:44.46] ahead and declare cash and you can take
+[18:47.10] c n of CH okay and then you can say C
+[18:50.34] out of CH so what will happen is this H
+[18:53.28] will go inside this and it will be
+[18:55.38] printed over here if you want to declare
+[18:57.18] a character you can go ahead and declare
+[18:59.04] this as G so single quotes is what will
+[19:02.76] be used to declare a character you can
+[19:06.12] also declare it as string but usually
+[19:08.22] string will be within double quotes that
+[19:10.38] is also okay but string ends up taking
+[19:12.48] uh much more space that is why if it's a
+[19:15.18] single character we tend to use
+[19:16.80] something like a cat so okay do we have
+[19:20.34] okay so these are the data types that I
+[19:22.92] have used till now to solve all the
+[19:25.62] problems in DS algo did I require
+[19:27.54] anything else no in case I've required
+[19:30.12] for a single problem like one problem
+[19:31.74] here or there I have done a Google
+[19:33.42] Search and I've used that but I can
+[19:35.10] assure you that if you know this that is
+[19:36.96] more than enough now you must be having
+[19:38.76] a lot of questions sure if we have
+[19:40.92] something like a 10 and that 10 can be
+[19:42.96] stored in all the three or all the five
+[19:44.94] why can't we use simply long long or
+[19:47.46] maybe double now the thing is everything
+[19:50.16] takes up a certain space in your
+[19:52.32] computer now you can't be like you can
+[19:54.60] you can't use long long to store 10 that
+[19:57.24] will not make sense because it will end
+[19:58.80] up eating up a lot more memory space so
+[20:01.08] integer takes a certain memory long
+[20:03.42] does take a certain memory so everything
+[20:05.64] will take a certain memory so depending
+[20:07.62] on that we decide what to use now
+[20:10.86] integer has a range now those numbers
+[20:12.96] you can't uh remember so what I usually
+[20:15.90] do is I keep a rounding of number like I
+[20:18.60] know integer will be from minus 10 to
+[20:21.00] the power 9 to 10 to the power 9 like
+[20:22.80] rounding off long will be minus 10 to
+[20:25.14] the power 12 to 10 to the power 12. long
+[20:27.54] long will be minus 10 to the power 18 to
+[20:30.18] 10 to the power 18. so whenever there is
+[20:31.92] something as 10 to the power 13 I switch
+[20:33.84] to long long you don't have to remember
+[20:35.28] exact exact numbers because you will not
+[20:38.40] remember that much when you go on the
+[20:39.84] longer Run Okay so that is how I usually
+[20:42.18] do it and you can also follow the same
+[20:44.10] plus so you have completed data types
+[20:45.90] now the data types that I've covered
+[20:47.82] that are more than enough again very
+[20:50.16] crucial point do not do not dig deep
+[20:52.98] because eventually when you keep on
+[20:55.62] coding you'll learn everything okay
+[20:57.20] first third thing if else statements
+[21:00.60] let's go so till now we know this
+[21:03.42] skeleton of the code we know the data
+[21:05.46] types now let's write some program so
+[21:07.56] the first program is write a program
+[21:08.94] that takes an input of a age and prints
+[21:12.12] if you are an adult or not so the
+[21:15.06] skeleton is something which I've written
+[21:16.74] and this is the program so let's break
+[21:18.60] down the problem it states write a
+[21:21.36] program maybe I've written the skeleton
+[21:23.10] that takes an input of age now you know
+[21:25.80] one thing age will be what an integer 18
+[21:29.46] or maybe double imagine the age we are
+[21:32.40] talking in terms of integer and we know
+[21:34.92] you're called an adult when you're
+[21:37.26] greater than 80 correct so imagine I
+[21:40.68] enter something like 19. in that case
+[21:42.90] you have to print adult imagine I enter
+[21:45.36] something like 17 you have to say not an
+[21:47.76] adult we print 18 uh adult right if I
+[21:51.42] print 10 not an adult so I need an age
+[21:54.60] so maybe I can go ahead and say okay int
+[21:57.36] age
+[21:58.80] so you need the H from the user so CN
+[22:02.64] hey give me the H so maybe if I give the
+[22:04.86] age over here or something like this
+[22:06.90] this should be picked up into this age
+[22:09.06] now this is where something like if else
+[22:12.42] statement comes in what is it saying
+[22:15.66] print if you are adult or not can I say
+[22:18.20] if you are greater than equal to 18 then
+[22:22.26] I can say you are an adult you are an
+[22:24.96] adult yes or if you are lesser than
+[22:28.92] 18 E1 not an adult can I see this this
+[22:32.64] is something which you are speaking in
+[22:34.92] very layman terms if you want to convert
+[22:37.38] this into programming language this is
+[22:39.84] where something like if else comes in
+[22:41.58] there is something as if this is the
+[22:43.86] block and there is something like else
+[22:45.96] this is the block so inside this you
+[22:49.92] perform skating okay
+[22:52.14] if something happens perform these lines
+[22:54.66] of code if that thing doesn't happens go
+[22:57.06] and perform these lines okay so I'm
+[22:59.70] saying if the age is greater than equal
+[23:02.64] to 18 then go and perform this and if it
+[23:05.28] is not go and perform this cells very
+[23:07.62] simple and if I'm saying if the age is
+[23:09.72] greater than 18 what am I doing I am
+[23:11.64] saying print you are an adult so the
+[23:14.16] print line is very simple
+[23:16.52] you are an adult simple
+[23:20.04] like you can just capitalize this and if
+[23:22.80] you are not then go and go ahead and
+[23:24.72] print this
+[23:25.80] you are not an adult so basically first
+[23:29.58] line says 20 will go on to each then it
+[23:32.58] will say 20 greater than equal to 18 yes
+[23:34.86] it will go inside this and print this so
+[23:38.28] let's run this and see what happens so
+[23:40.32] I'm taking 20 yes you are an adult if I
+[23:43.50] take 15 what will happen it will see
+[23:46.98] you are not another simple now this is
+[23:50.58] the basic if else statement now you can
+[23:54.54] modify this as well now imagine you are
+[23:56.88] saying for an example you are saying
+[23:59.64] 18 yes 18 no
+[24:02.10] I can also write this as as this this is
+[24:06.48] okay this is saying age is greater than
+[24:09.18] equal to 80 if not go to the else but
+[24:13.02] only get into the else if the condition
+[24:15.18] satisfied over here it will but
+[24:17.58] eventually you will learn is it
+[24:19.56] mandatory to write an else statement
+[24:21.42] always you can omit the else statement
+[24:23.70] as well so if you omit the else
+[24:25.56] statement what will happen is the 15
+[24:27.60] will be taken as the input and the if
+[24:29.64] will not be executed and will not find
+[24:32.22] an else so nothing to be executed
+[24:34.02] completed so it is not mandatory to have
+[24:37.32] an else statement if you are having if
+[24:39.78] it is not mandatory to have a else
+[24:42.90] statement so coming back to the else if
+[24:45.24] what happens if you're giving 50 the if
+[24:47.70] is false it states no not greater than
+[24:51.18] equal to 18. so goes to the else but L
+[24:53.70] says wait before going into me you have
+[24:56.46] to pass my condition in my condition
+[24:58.50] states are you lesser than 18 and it
+[25:01.44] says yes some lesser than 18 so I will
+[25:04.50] go if this was less than 10 see what
+[25:07.38] will happen you're giving 15 I am taking
+[25:09.84] 15 balls goes to else
+[25:12.84] and else condition say is less than 10.
+[25:14.88] when I run it doesn't runs wire false
+[25:18.96] again false no execution but the moment
+[25:22.38] you give something as nine see what will
+[25:24.48] happen
+[25:25.68] when you give it 9 it prints y goes here
+[25:28.98] Falls goes to Wells and he says 9 lesser
+[25:32.58] than that yes goes ahead and prints this
+[25:35.76] this is how something like a if and an
+[25:39.00] else if block Works got it so let's now
+[25:42.06] move on to a complex problem so that you
+[25:44.04] can understand the conditional
+[25:45.36] statements in depth so this is how you
+[25:48.06] can write the multi-line comments since
+[25:50.22] I had an entire problem statement I put
+[25:53.16] them under multi-line comment so
+[25:55.76] backslash asterisk is how you can do it
+[25:58.80] a single line it is very simple doubles
+[26:01.52] backslash but front slash your backslash
+[26:04.74] whatever you called it call it so this
+[26:06.60] is how you can write the multi-line
+[26:07.68] comment so the problem is very simple
+[26:09.72] school has following rules for grading
+[26:11.64] system below 25 grade f 25 to 44 grade e
+[26:14.94] 45 to 40 49 ready and so on so your task
+[26:18.24] is to ask user to enter marks and print
+[26:20.52] the corresponding grade okay so what is
+[26:23.76] the first reading get the marks so
+[26:26.46] imagine I have to take the marks so this
+[26:28.50] is how I'll take the marks this is
+[26:30.24] something which we know what is the next
+[26:32.40] line below 25 very very importantly
+[26:35.16] below 25 so I'm saying if the marks are
+[26:38.04] below 25 can I say the grade is for sure
+[26:41.40] that is something which I definitely
+[26:43.26] know if the marks are below 25 I know
+[26:47.04] the grid is f if the Mark is between
+[26:49.32] this
+[26:50.64] can I write if the marks now over here
+[26:53.40] there are two conditions should be from
+[26:55.68] 25 and should be till 44 so can I say
+[26:59.28] should be greater than 25 and and if you
+[27:03.24] have multiple conditions if you want to
+[27:05.76] satisfy multiple conditions you say and
+[27:08.40] and marks lesser than equal to 44. this
+[27:11.76] is how you satisfy multiple first
+[27:13.98] condition and and second condition
+[27:17.88] and then you say C out e similarly you
+[27:21.60] can go ahead and write all the if
+[27:23.22] conditions so what I've done is I've
+[27:25.26] written all the condition you see all
+[27:27.84] the conditions are let's say uh the
+[27:29.88] marks is 85 and see which condition is
+[27:31.98] getting executed so if you take the
+[27:33.54] marks as 85 this is executed if you take
+[27:36.00] something like 24 let's see what is
+[27:37.74] executed you see everything is running
+[27:39.78] fine but is this the correct way to
+[27:41.94] write no but why what happens is the
+[27:45.48] marks is going and checking this set
+[27:47.82] imagine the marks are something like 86
+[27:50.60] this if is false again goes and checks
+[27:53.70] this false again goes and checks this
+[27:56.34] false again goes and checks it false
+[27:59.64] again goes and checks this false a game
+[28:02.40] goes and checks this false so at the end
+[28:05.28] this is executed and a is printed over
+[28:08.58] here okay now imagine if I give 24.
+[28:12.72] what will happen
+[28:15.30] F will be printed right
+[28:18.18] so this is executed true principle but
+[28:21.30] then go ahead this is executed false
+[28:23.52] this is executed false executed false
+[28:26.22] executed false executed False only this
+[28:28.68] was true but all the ifs got executed
+[28:31.86] hence you ended up taking a lot of time
+[28:34.26] this is where yes this is where
+[28:36.60] something like an else if comes in so if
+[28:38.58] you write else if see what happens else
+[28:40.80] if
+[28:42.48] you can write else if you can write else
+[28:45.60] if you can write else if so if you write
+[28:48.24] else if what will happen is if 24 is
+[28:51.48] true over here none of these lines will
+[28:54.42] be executed because it states else it
+[28:57.24] will never go there and it will not be
+[28:59.10] executed so you'll be saving a lot of
+[29:00.84] time
+[29:01.86] previously in every F was executed so
+[29:04.80] this is why else if will be written now
+[29:07.20] another thing you're having 24. imagine
+[29:10.32] if you have something like uh let's say
+[29:12.54] 30.
+[29:14.22] so we are saying if
+[29:16.80] not lesser than 25 so this is false this
+[29:20.40] is definitely false do you need to check
+[29:23.10] again or greater than equal to 25
+[29:25.38] because we are sure that it is not
+[29:28.14] lesser than 25 years sure because this
+[29:30.90] is false you are sure it will definitely
+[29:33.30] go here so you don't need to write this
+[29:35.28] anymore
+[29:36.06] you don't need to write this anymore
+[29:37.38] because if it is lesser than 25
+[29:39.78] and if it is less than equal to 44 that
+[29:41.76] means it is between 25 to 44. it means
+[29:45.90] that and if this is also false it means
+[29:48.66] it is not less than equal to 44 you can
+[29:51.30] also omit this
+[29:52.86] T you can also omit this
+[29:55.20] same way because 49 is checked 59 is
+[29:58.50] checked so you can omit checking greater
+[30:00.12] than 60 and eventually you can do this
+[30:01.92] so you saw how easily I trimmed it down
+[30:06.12] this is how you will be trimming it down
+[30:08.16] so for now deal you see 30 is printing e
+[30:11.22] if you give something like 40
+[30:13.44] that will be printing D every line is
+[30:16.62] executed properly because if all these
+[30:19.56] are false which means the number is
+[30:21.60] never lesser than 49 and if it is true
+[30:24.36] it means 50 to 59 super simple what if
+[30:27.48] this is how you trim down multiple
+[30:30.00] conditional statements and multiple if
+[30:32.70] statements so this is the last question
+[30:34.68] for conditional statements and over here
+[30:36.54] we will be learning something about
+[30:37.86] nested if else so the problem is pretty
+[30:41.22] simple uh take the H from the user and
+[30:43.86] then decide accordingly so if the age is
+[30:46.44] smaller than 18 you can print this and
+[30:49.44] all the conditions are given to you so
+[30:51.66] something we know uh for sure is we need
+[30:54.18] age right so we can take the scene of H
+[30:56.88] now we know something if H is uh smaller
+[31:00.96] than 18 then we gotta print something
+[31:04.44] like not eligible
+[31:08.22] per job okay this is what we will be
+[31:11.58] printing correct then it states else if
+[31:15.60] the age is greater than equal to 18 you
+[31:19.20] will be printing eligible for job if it
+[31:21.54] is greater than equal to 18 you will be
+[31:22.80] printing eligible for job okay but if it
+[31:25.50] is somewhere between this which means
+[31:27.50] anywhere between
+[31:31.20] this
+[31:33.36] it's eligible for job but anywhere
+[31:35.82] between 55 and 57 eligible for the job
+[31:38.40] but retirement soon that is what you
+[31:42.18] have to print got it so what I will go
+[31:45.54] ahead and do is I'll say Okay else if
+[31:48.00] age is greater than 18 and and ages
+[31:51.68] lesser than equal to 54 and you can say
+[31:55.86] C out eligible for the job so I'll just
+[31:59.04] copy paste this and print
+[32:01.56] okay again do you need to write greater
+[32:04.38] than 18 no because if this is false it
+[32:07.56] is definitely greater than equal to 18
+[32:09.72] so let's remove
+[32:11.22] simple
+[32:12.78] or else
+[32:14.46] if if this true or false that means it's
+[32:18.18] not less than equal to 54. so you just
+[32:21.06] need to check if it is lesser than 57 if
+[32:24.00] it is lesser than 57 you go ahead and
+[32:26.70] print C out off the statement very
+[32:31.86] simple you go ahead and print this
+[32:34.14] statement super simple and if it is not
+[32:37.32] less than equal to 57 it's greater and
+[32:39.96] if it is greater it will always go to
+[32:41.94] else it will always go to else and if it
+[32:44.58] is going always to else you can always
+[32:46.92] say C out
+[32:49.02] retirement time very simple this is how
+[32:52.08] you can easily write it so if else if
+[32:54.96] else if and the last can be written you
+[32:56.94] can write the conditional of greater
+[32:58.38] than 57 or you can just leave it as it
+[33:01.44] is so imagine I give you something like
+[33:03.66] 55 let's see if it is working fine 55c
+[33:06.84] is eligible for job but retirement so
+[33:09.24] now if I want to convert this into an
+[33:11.70] SNF just to explain you an extra diff
+[33:13.98] something to uh figure out so over here
+[33:17.64] it states
+[33:19.20] 18 to 54 is eligible for job even 55 to
+[33:24.00] 57 is eligible for the job but
+[33:26.88] retirement is soon that's the extra
+[33:29.64] addition that I have to tell the user
+[33:31.80] just retirement as soon as what I have
+[33:34.20] to tell the user so can I write
+[33:35.64] something like this hey wait
+[33:37.74] can I write 57
+[33:39.84] and can I omit so if I omit this what
+[33:42.48] will happen for everything less than
+[33:44.70] equal to 57
+[33:46.14] and greater than 18. I'll always
+[33:48.54] eligible for job inside this can I see
+[33:52.14] if
+[33:53.34] if the ages greater than 55 because I
+[33:58.02] know if it is coming inside it's greater
+[34:00.30] than 80 there is something I surely know
+[34:02.34] it's greater than 18 and less than 57 if
+[34:04.56] it is going inside these blocks and it
+[34:07.14] will definitely print eligible because I
+[34:09.24] know for everyone from 18 to 57 they are
+[34:12.18] eligible but if the age by chance
+[34:14.46] exceeds 55 and I know it will always be
+[34:17.22] lesser than 57. then only I go ahead and
+[34:19.74] say hey if it is exceeding then can you
+[34:22.56] go ahead and say
+[34:24.48] the time and soon but retirement soon
+[34:27.96] that is the extra thing that you need to
+[34:29.58] print right so this is how you can also
+[34:33.12] write it so this is what you call as
+[34:34.92] nested if so what happened was you just
+[34:38.16] took out the F from here and you put it
+[34:39.90] over here does it save time no I just
+[34:42.42] wanted to tell you that inside if inside
+[34:45.12] else if you can also write conditional
+[34:47.70] inside this if you can go ahead and
+[34:49.74] write another conditional so it can go
+[34:52.08] nested these are called nested FL
+[34:53.88] statements inside f1f so nestatives got
+[34:57.48] it so you can write conditions according
+[34:59.88] to your choice and eventually when you
+[35:01.44] go across time and you solve tougher
+[35:03.72] problems you'll see that you will be
+[35:05.34] writing multiple such conditions okay so
+[35:07.86] we have completed the if else statements
+[35:10.14] now what's the next thing we will be
+[35:11.58] completing the switch statement we are
+[35:14.64] talking about switch statement so we
+[35:16.32] will be taking this problem in order to
+[35:18.12] understand the switch it is similar to
+[35:20.28] if else we generally don't use switch
+[35:22.56] that much but it is Handy to know the
+[35:24.96] switch statements as well so what is the
+[35:27.36] problem stating take the day number and
+[35:29.52] print the corresponding day for one if
+[35:31.86] they're giving the D number as one you
+[35:33.24] have to print Monday for two you have to
+[35:34.86] print Tuesday and so on for seven you
+[35:36.66] have to print Sunday so they'll be
+[35:38.04] giving you a number between one and
+[35:39.84] seven so the syntax of switches super
+[35:42.48] simple so you take the let's say the
+[35:45.30] number the day number
+[35:47.34] same day so whatever variable you're
+[35:49.62] taking
+[35:50.70] on that you have to write the switch so
+[35:52.50] it's kind of a switch so you say switch
+[35:54.30] d
+[35:55.62] okay and then you open the braces so on
+[35:58.50] the basis of the day you the switch will
+[36:01.02] be triggered okay so you know the switch
+[36:03.00] will be between one two seven because
+[36:05.16] they're saying the input will always be
+[36:07.32] between one to seven so you write case
+[36:08.94] one
+[36:09.90] okay so case and then if this is an
+[36:12.78] integer you write the integer if this
+[36:14.46] was a character then you could have
+[36:15.66] write a written a character like this
+[36:17.76] whatever is your switch you write the
+[36:20.64] same switch over here so case one is the
+[36:23.22] switch
+[36:24.30] and then you go ahead to write Keys two
+[36:26.04] is the switch and then you go ahead to
+[36:27.66] right case three is a switch and so on
+[36:31.14] so what I've done is
+[36:32.76] so what I've done is I've written down
+[36:34.20] all the cases because those are the
+[36:36.06] cases now I know one thing for case one
+[36:38.34] I have to print what I have to print C
+[36:41.34] out of nothing but Monday so go ahead
+[36:44.22] and print Monday similarly Tuesday
+[36:46.50] Wednesday please print out everything
+[36:49.02] so this is how you'll write down all the
+[36:51.06] cases in order to understand switch
+[36:52.74] better let me give you an example
+[36:54.00] imagine you enter five so what will
+[36:56.04] happen is it will take the input as file
+[36:58.02] switch say is fine it will directly go
+[37:00.48] to case File and print Friday but
+[37:03.90] see what
+[37:05.52] Prince Friday Saturday
+[37:07.92] so it went to the case five and it
+[37:10.86] executed all the corresponding keys
+[37:14.22] but it started from case five imagine
+[37:16.32] you give two
+[37:17.94] it will start from case 2 and it will
+[37:20.40] execute everything so how do you prevent
+[37:23.40] this something for sure is when you
+[37:25.44] trigger two it reaches you it doesn't
+[37:27.84] execute this so once it reaches here
+[37:30.06] there is something as break statement in
+[37:32.34] C plus plus what break does is it breaks
+[37:35.46] out of all the conditional statements
+[37:38.82] that you have written so over here the
+[37:41.64] cases are conditional States it will
+[37:43.68] break out the switch is a conditional
+[37:45.42] statement so it will break out see what
+[37:47.28] will happen if you give a break
+[37:48.80] everywhere so make sure you give a break
+[37:51.18] everywhere after every condition
+[37:55.53] [Music]
+[37:57.84] if we give a break after every condition
+[37:59.70] and after all the cases are executed and
+[38:02.10] if I just give a CO to check see what
+[38:05.04] will happen and I'll also give a c out
+[38:06.54] to check after all the cases have been
+[38:08.40] executed okay check inside switch so
+[38:12.42] ideally what should happen is 2 means
+[38:14.58] Tuesday should be executed break means
+[38:17.46] all the cases and as I said all the
+[38:20.34] condition this will also be broken out
+[38:22.68] and it will reach the line number 36 see
+[38:25.20] so if I give it it reaches the line
+[38:28.14] number 36 check and not over here very
+[38:31.56] important to understand this okay now
+[38:33.90] there is something as a default imagine
+[38:36.78] I give you something like 90 then what
+[38:40.08] happens so if I execute if I give 19
+[38:42.90] none of the cases gets executed because
+[38:45.06] there is no case as 90. so you you can
+[38:47.58] probably give something as default Keys
+[38:50.46] imagine none of the cases is executed
+[38:53.70] then it falls back on the default so if
+[38:56.10] you give something like as 19 it falls
+[38:58.56] back on the default and you can say as
+[39:00.84] invalid so this is the last executed
+[39:03.72] step they don't need to give a break
+[39:05.40] because after this it automatically
+[39:07.98] breaks out so imagine you give you an if
+[39:09.96] you give 19 what will happen is we'll go
+[39:12.72] ahead and say invalid and then go over
+[39:15.60] here if you don't give a break here and
+[39:18.06] if you give something like C out invalid
+[39:20.76] check can you guess what will happen
+[39:23.94] because you're not giving a break see
+[39:26.04] what happens invalid and then the last
+[39:29.40] line of the switch is also executed but
+[39:31.14] the moment you write break it breaks out
+[39:34.14] it doesn't execute this so whenever you
+[39:36.84] write break it will take you out
+[39:39.54] from all the conditional Loops or all
+[39:42.42] the conditional traces that it has above
+[39:45.66] it got it by the way we will be using
+[39:48.60] break a lot of times in the upcoming
+[39:51.00] problems so your concept about break
+[39:52.86] will get more and more clear as we will
+[39:55.32] be solving problems in the upcoming
+[39:56.76] lectures so this was about the switch
+[39:58.92] statement it is kind of similar to if
+[40:01.20] else that is why people tend to use if
+[40:03.78] else because that is more readable but
+[40:05.76] yeah it is Handy to know switch so just
+[40:08.10] uh just in order to know just know it so
+[40:10.92] we are done with the switch statement
+[40:12.42] now we will be knowing the basics of
+[40:14.52] arrays and strings now arrays will be
+[40:17.40] covered in depth over here we'll be
+[40:19.74] covering 41 problems and strings will be
+[40:23.04] covered uh on the upcoming lectures but
+[40:25.68] as of now we just need to know the
+[40:28.02] basics of arrays and strings so let's uh
+[40:30.60] start with arrays and strings
+[40:32.64] so when do we use arrays is a very big
+[40:35.28] question when you have a similar data
+[40:37.98] type being stored multiple times for an
+[40:40.80] example over here I'm giving you poor
+[40:43.82] data so you can see that those are these
+[40:47.22] are integer data types right three four
+[40:49.44] five seven these are integers so one of
+[40:51.66] the ways you can store them is by the
+[40:54.00] way template yeah one of the ways you
+[40:56.40] can store them as a b c d and you can
+[40:59.88] say scene of a a will take three then
+[41:02.04] you can say b b will take four C will
+[41:04.26] take five and then B so apparently all
+[41:06.36] these four integers one by one will go
+[41:09.06] into these four variables but imagine if
+[41:11.82] you have 50 50 data you can't have 50
+[41:15.90] variable names because to name 50
+[41:18.48] variables it's gonna take a lot of
+[41:20.40] effort that is where something like an
+[41:22.86] array is used so what I say is I know
+[41:25.56] the entire data is of similar type which
+[41:28.14] is integer why can't I Define an array
+[41:31.38] so what I do is I say IND array of let's
+[41:34.32] for an example say five numbers are
+[41:36.54] there and the array of five so what this
+[41:39.60] does is I'll give you a diagrammatic
+[41:41.70] representation this creates an array of
+[41:44.16] size
+[41:45.14] 5. now this size 5 array looks something
+[41:48.60] like boxes every box can store an
+[41:52.26] integer the zeroth index can store an
+[41:54.18] integer the first index can store an
+[41:56.04] integer the second index can store an
+[41:57.90] integer and all the index can store an
+[42:00.18] integer what is an index this first guy
+[42:02.76] is referenced by zeroth index the second
+[42:06.72] guy is referenced by burst index one
+[42:10.08] less so if the size is five the last
+[42:12.72] index will be fourth this is how an
+[42:16.14] array will look and depending on the
+[42:18.18] data type that you have given every box
+[42:20.82] or every location of that array of the
+[42:24.60] index is gonna store an integer if you
+[42:27.48] would have defined it as it's a long
+[42:29.76] long it would have stored long long in
+[42:32.10] that index it would have defined it as
+[42:33.78] character it would have stored character
+[42:36.12] in that index so over here our use cases
+[42:38.94] defining it as an integer so I will
+[42:41.82] Define it as an integer now I'll say C
+[42:45.06] enough array of zero CN of array of 1.
+[42:49.74] scene of oh my bad I'm taking the other
+[42:52.20] one array of 2 then I'm saying array of
+[42:55.32] 3 then I say array of four so what
+[42:58.74] happens is the zeroth index takes three
+[43:01.14] and everything is stored now imagine I
+[43:03.78] want to print seven I wanna print seven
+[43:05.76] so what you can say is C out of array of
+[43:09.90] where is Seven Stone seven will be
+[43:12.18] stored at the zeroth in zeroth index
+[43:14.04] first index second index third index
+[43:16.80] second is a three
+[43:18.54] yes and if you print this let's see if
+[43:20.82] seven was stored you saw so what
+[43:22.98] happened was these five numbers went in
+[43:25.26] and were stored in these places
+[43:28.34] consecutively so when you access the
+[43:31.32] third index it means the fourth element
+[43:33.30] got access and you got the fourth
+[43:35.58] element can you modify these yes you can
+[43:38.10] if you want to do operations on them you
+[43:40.80] can imagine I say array of three can you
+[43:43.50] go ahead and add yourself ten so if it
+[43:47.94] adds 10 to itself 7 should become 70
+[43:50.82] let's see if it becomes
+[43:52.74] it does so you can modify so it is
+[43:56.16] exactly as a data type you like whatever
+[43:59.04] you wish to do you can do it if you want
+[44:01.32] to do something like hey array of three
+[44:03.42] replace yourself with 16. change your
+[44:06.66] value to 16 it can as well you can do
+[44:09.42] whatever you wish to with this
+[44:12.42] particular
+[44:14.04] array you can treat it similarly to an
+[44:17.22] integer data type got it so this is how
+[44:19.44] you can store similar data like together
+[44:22.14] and the container used is array there
+[44:25.74] are multiple other containers as well I
+[44:27.72] have talked about that in the C plus
+[44:29.28] plus STL video you can definitely check
+[44:31.50] it out as well so we got to know what is
+[44:34.32] an array and the most important thing is
+[44:36.90] everything has to be of a similar data
+[44:40.32] type you can't be saying 7.7 if you say
+[44:44.70] 7.7 what will happen is since you
+[44:47.88] declared this to be an integer data type
+[44:50.58] this 7.7 will trim itself to an integer
+[44:54.36] and hence it will be stored as seven got
+[44:57.30] it if there is a double data type maybe
+[45:00.72] you can store double and if you say
+[45:02.70] double then 7.7 is stored whatever data
+[45:06.24] type you give that has to be constant
+[45:08.10] for all the elements that is the key
+[45:10.02] Point okay so that was about the array
+[45:12.48] now where is the array stored we know it
+[45:15.24] is zero the next first index but the
+[45:17.64] entire thing is taken and stored in a
+[45:20.88] memory location yes the entire thing is
+[45:23.10] taken and stored in a memory location so
+[45:25.74] this guys zeroth index is stored at a
+[45:29.04] particular memory and that memory at can
+[45:32.58] be of any address that address is very
+[45:34.74] randomized I cannot say that it is
+[45:36.96] stored in let's say India like there is
+[45:39.30] nothing like at this memory address a
+[45:41.34] desktop
+[45:42.30] throughout the CPU it can be stored
+[45:44.46] anywhere now the second the first index
+[45:47.76] now that one I can definitely say will
+[45:51.18] be stored right after the zeroth right
+[45:54.42] after the zeroth guys memory address
+[45:55.86] write the consecutive one then the first
+[45:57.90] the second guy will be so right after
+[45:59.94] that so the zeroth guy we're not sure
+[46:02.40] but we are sure about the next guys
+[46:04.26] because they will always be in
+[46:07.10] consecutive so remember array elements
+[46:10.98] are stored in consecutive memory address
+[46:15.06] but I am not sure where the first one is
+[46:17.82] it can be at any randomized location
+[46:20.94] very very important point to remember
+[46:22.86] but will it be required in DSL go I
+[46:25.80] don't think so but it is a point which
+[46:27.90] is important and you should keep in your
+[46:29.94] mind so till now we did learn about the
+[46:32.10] 1D array now we will be learning about
+[46:34.26] the 2D array what is a 2d array again
+[46:38.28] I'll be giving you very basic idea about
+[46:40.32] uh 2D array over here eventually when we
+[46:42.84] move across the playlist We will be
+[46:44.40] learning about 2D array in depth
+[46:47.04] if this was declared this was something
+[46:49.62] like
+[46:50.64] Five Guys or five boxes indexing from
+[46:55.20] zero one two three four correct now the
+[46:58.50] moment I say
+[46:59.64] I need five boxes but I need them three
+[47:02.40] times
+[47:03.30] I'll add three
+[47:04.98] what it means is I'll have three five
+[47:08.70] boxes if I show you diagrammatically
+[47:10.92] this is what I'll have three one two
+[47:13.74] three five boxes one two three four
+[47:16.62] three five boxes as what I'll have this
+[47:19.68] is what it means this is the row number
+[47:22.02] we generally call this as row and this
+[47:25.02] is called and if I talk about the
+[47:27.06] indexing over here again the indexing
+[47:29.22] starts from zero and this is how the
+[47:31.44] indexing goes you see Zero 1 2 and this
+[47:34.98] is 0. so this guy this guy is known as
+[47:38.78] zero zero this guy is known as zero one
+[47:42.60] this guy is known as zero two this guy
+[47:45.42] is known as zero three so this is how
+[47:47.70] the naming or the row and column goes if
+[47:51.18] I say one comma 3 so here is one and
+[47:54.66] here is 3 76 the value will be 76 if I
+[47:58.62] say give me the value act 1 comma 3 the
+[48:02.04] value will be 76. again if you want to
+[48:04.26] assign like it'll be like a 1 3 equal to
+[48:07.56] you can say 78 and then you can go ahead
+[48:09.78] and say C out of a one three we will be
+[48:13.26] seeing the use of 2D Matrix a lot we
+[48:16.20] will be solving a bunch of problems
+[48:17.94] don't worry about that so this will be
+[48:19.56] array and this will be array so if you
+[48:21.72] go ahead and print this you'll be seeing
+[48:23.58] that we actually getting 78 at this
+[48:25.68] location and for the locations that you
+[48:27.78] have not defined they'll be assigning
+[48:29.70] themselves some garbage value it can be
+[48:32.46] any value like if try to Define try to
+[48:35.22] print print one two you'll see it is
+[48:37.50] having a garbage value like if you try
+[48:39.30] to print it again it will have different
+[48:40.92] different values every time you print it
+[48:43.08] has some Garb wedge value that comes in
+[48:45.48] from the system because you did not
+[48:47.40] initialize the only guy that you
+[48:49.68] initialized one was the first row and
+[48:52.92] the third column in terms of zero Beast
+[48:56.94] indexing very important in arrays we
+[48:59.58] have zero based indexing okay where is
+[49:02.16] 2D array used it is used to solve a lot
+[49:04.26] of Matrix problems a lot of graph
+[49:06.24] problems which you'll be dealing with in
+[49:08.58] the future okay as of now just know this
+[49:11.04] is what we know as 2D array this is the
+[49:13.62] row this is the column and it goes as
+[49:16.08] row and call that's it that is what you
+[49:18.78] have to keep in your head as of now so
+[49:21.36] in the STL video I've talked about a lot
+[49:23.22] of functions related to arrays vectors
+[49:25.38] list and a lot of other things so you
+[49:27.66] can definitely check the check that
+[49:29.22] video after this one so we have known
+[49:32.04] about arrays in Basics now let's talk
+[49:34.38] about string so imagine this is the
+[49:36.48] string that I am having string s equal
+[49:38.52] to strip and now I want to access I so
+[49:42.60] the string also stores every character
+[49:45.18] in terms of indexes
+[49:47.22] so s will be at the zeroth index so if
+[49:50.28] you try to print something like C out of
+[49:52.14] s of 0 what will happen C s will be
+[49:55.62] printed if you say s of one see what
+[49:57.72] happens T will be printed if you use S
+[50:00.18] of 2
+[50:01.38] you know what will be print R so every
+[50:05.76] character is stored at an index and the
+[50:08.52] first index is the zeroth index and what
+[50:11.40] will be the last index whatever is the
+[50:13.56] length so can I say the length is this
+[50:16.20] is how you find the length length equal
+[50:18.54] to s dot size other is another function
+[50:21.00] as length which you can use so if I say
+[50:23.82] length minus 1 because I know last index
+[50:26.52] because everything works in zero base
+[50:28.50] indexing the last index will be n minus
+[50:30.72] I know it if I print this what will be
+[50:33.36] printed driver R because this is what
+[50:36.42] happens at the last index that's how you
+[50:39.72] can easily access the string if you want
+[50:42.60] to change any value imagine you want to
+[50:44.94] say hey I'm not interested at this
+[50:47.16] please make it Z stripes and I do it it
+[50:52.26] gets changed to Z so you can also change
+[50:54.72] it remember these are characters
+[50:56.96] characters at every index
+[50:59.58] and characters when gets added makes up
+[51:03.42] a string so all of these are characters
+[51:05.16] you can't do something like this and
+[51:07.44] expect this to work if you do this it
+[51:09.72] will not work and it will give you
+[51:11.84] errors you see errors so since it is a
+[51:15.66] character you have to assign it with a
+[51:17.34] character so string is storing
+[51:19.80] characters within itself so if you know
+[51:22.50] about this and the length function
+[51:24.00] eventually we will be solving a lot of
+[51:26.58] string problems and there you can easily
+[51:29.28] get on with strings so we are done with
+[51:32.10] arrays and strings now it's time to do
+[51:33.90] for loops and while loops and as of now
+[51:36.48] I'll be talking about Basics eventually
+[51:39.00] we'll be solving a bunch of patterns a
+[51:42.00] bunch of patterns and once you end up
+[51:44.22] solving all these patterns using for
+[51:46.26] Loops trust me your logical thinking
+[51:49.56] your concept of all Loops will be super
+[51:51.78] strong and then we'll move on to solving
+[51:53.94] maths and everything using the for loops
+[51:55.74] and while loops and eventually in the
+[51:57.78] entire DSA all loops
+[52:00.54] if you don't know for Loops you can't do
+[52:02.22] anything so please stay focused so what
+[52:05.28] is for Loops why is it used imagine I
+[52:08.04] say you hey print your name I'll be like
+[52:10.80] uh see out okay what's my name my name
+[52:13.80] is Fredo and I'll print it
+[52:16.62] printed five tips
+[52:21.72] done five times print 2500 times 500
+[52:26.29] [Music]
+[52:27.84] that's a lot this is where fall look
+[52:30.12] comes for Loop says same line of code
+[52:33.66] why do you want to write it again and
+[52:35.52] again I'll do it
+[52:37.14] so what for Loop says is okay same line
+[52:40.32] of code right write it once and then
+[52:42.74] enclose it inside me inside me enclosure
+[52:46.86] and the follow-up says okay my syntax is
+[52:49.44] very simple say for
+[52:51.60] what is the variable that you wanna go
+[52:54.00] across how many times you want to run
+[52:55.32] put up a variable for that I'll link
+[52:57.48] I'll run it for five days or 500 takes
+[53:01.80] what is the initial plus I equal to 1
+[53:05.16] variable declaration I equal to 1
+[53:07.86] variable declaration this only gets
+[53:10.68] executed for the first iteration only
+[53:13.98] gets executed for the first iteration
+[53:15.72] then
+[53:17.22] condition at which I'll stop the for
+[53:20.52] Loop will stop the looping will stop so
+[53:23.04] I'll be like the condition is 10. I'm
+[53:25.32] saying till I don't reach 10 I'll not
+[53:27.66] stop and at every step I have to do
+[53:30.54] something if I don't do
+[53:32.64] I will forever stay one and if I stays
+[53:35.82] forever 1 this condition will always be
+[53:38.70] true and if it is always true that line
+[53:41.64] of code will run run run run run at 11
+[53:44.82] this is where something like increment
+[53:48.72] or decrement your wish comes and I say
+[53:52.26] this is the line that I use I want to
+[53:55.26] execute and I go ahead and write this
+[53:57.96] line now what happens is see what will
+[54:00.66] happen I'll tell you how it happens oh
+[54:02.76] 10 times exactly 10 times Drive got
+[54:05.64] printed what happened was
+[54:07.80] first initialization I equal to one
+[54:10.80] first time
+[54:12.44] is one I lesser than 10 yes goes
+[54:17.46] Prince printed comes back to this line
+[54:21.48] I gets
+[54:23.58] two next gosia 2 less than equal to 10
+[54:27.54] yes goes here Prince goes again here
+[54:32.04] I equal to 3 after yeah goes here 3 less
+[54:35.34] than equal to 10 yes Prince
+[54:38.04] then goes here I equal to equal to 4.
+[54:41.40] imagine this is 5 for an example so that
+[54:43.44] I can explain I equal to 4 Prince goes
+[54:46.92] again here
+[54:48.00] I becomes five
+[54:50.76] Prince
+[54:52.26] goes here I becomes five checks prints
+[54:55.56] goes again here
+[54:58.08] I become six
+[54:59.70] don't I become six six less than equal
+[55:02.22] to five
+[55:03.30] no no
+[55:04.56] stop
+[55:05.58] so it'll get executed five times but if
+[55:09.12] you try to print the value of I imagine
+[55:11.16] you want to print the value of I
+[55:12.42] something very important to notice if
+[55:14.70] you print it like this
+[55:16.38] it will not be able to find I why
+[55:18.60] because the scope of the I the I was
+[55:21.36] declared inside this so the school
+[55:24.90] wherever you declare right the scope is
+[55:27.42] limited to that so the other way you can
+[55:30.00] do is
+[55:31.08] you can say I and you can write
+[55:33.06] something like this say degrade the I
+[55:34.92] here and then you have initialized it
+[55:36.36] here so if you print I over here see
+[55:38.46] what happens so I print I the last value
+[55:41.28] of I is 6 where it got truncated you can
+[55:45.60] run the for Loop in the reverse order as
+[55:47.52] well something like hey maybe start from
+[55:51.00] five
+[55:51.78] maybe go on till
+[55:55.02] and maybe decrease it so if you do this
+[55:57.96] and if you print the value of I you can
+[56:00.00] see the value of I
+[56:01.86] oh sorry my bad
+[56:04.02] you want to print the value of I maybe
+[56:06.54] go like this oh sorry maybe like this
+[56:08.88] and yeah
+[56:09.98] see the value of 5 5 for the first and
+[56:13.44] four then three then two then one and
+[56:14.94] see you got it so you can write the
+[56:18.18] follow as you wish to is it mandatory
+[56:20.82] that you reduce by two no I want to run
+[56:23.58] this for five times how I run it for
+[56:25.98] five times is my choice I can be like
+[56:28.44] one I can be like I need for five times
+[56:31.68] I will go till 25 I will do I into or
+[56:37.56] maybe I plus 5
+[56:39.66] my choice I can go like one six eleven
+[56:43.14] sixteen Twenty One my choice that's my
+[56:46.02] choice no one is here to stay how I run
+[56:48.84] doesn't matter how many times I run is
+[56:51.78] what matters this condition depends on
+[56:53.82] you
+[56:54.84] what you need to make sure is if you
+[56:56.34] want it for five if you want it for ten
+[56:57.66] if you want it for 20 make sure the
+[57:00.00] condition is written in such a way that
+[57:01.44] it runs for that many number of times
+[57:04.02] that is the core concept of power Loops
+[57:07.62] do we have nested for Loops similar to F
+[57:11.16] yes we do have and the rested for Loops
+[57:13.98] is something which I'll be teaching you
+[57:15.24] while printing patterns as of now this
+[57:18.72] is what you need to know can we write if
+[57:21.18] conditions inside the for Loop yes you
+[57:24.30] can go ahead and write if any line of
+[57:26.40] code can be written inside any for or
+[57:29.28] any while loop so this is how you write
+[57:32.52] a for Loop now I want to convert this
+[57:36.12] exact similar for Loop I'll just comment
+[57:38.88] it up I want to convert this exact
+[57:40.92] similar for Loop into a while loop so
+[57:44.22] the while loop does the same thing
+[57:46.62] the task is same whenever I attach
+[57:48.96] something like Loop the task remains
+[57:51.18] same executing some lines of code for
+[57:54.96] some number of times we do the same
+[57:57.00] thing and here the only difference is
+[57:59.54] the syntax changes while executes like
+[58:03.00] this whatever is the condition whatever
+[58:05.34] is the condition will go here
+[58:07.40] and whatever is the increment goes at
+[58:10.02] the end goes at the last line
+[58:12.54] whatever is the increment goes at the
+[58:14.88] last line okay and the initialization
+[58:17.46] goes over here first time initialization
+[58:20.28] happens while says one is less than
+[58:22.92] equal to 5 fine go ahead and do c out of
+[58:27.54] favor
+[58:30.06] and if you want to print ice value you
+[58:32.52] can also check it out so if I go ahead
+[58:34.38] and do handle you will see the value see
+[58:37.56] perfect so what happens check print
+[58:40.44] increase check print increase
+[58:43.80] first check goes inside increases comes
+[58:46.74] back checks prints increases very simple
+[58:49.98] this is how a while loop executes so
+[58:53.52] this is about while loop now while As
+[58:56.52] One More Concept and that concept is do
+[59:00.24] while loop okay now what does do while
+[59:02.28] mean so can I say if I keep I equal to 2
+[59:05.52] and I keep something like this will it
+[59:08.34] execute the answer to that is
+[59:10.68] no because I is 2 the condition is false
+[59:14.16] never executes goes to this ends the
+[59:18.06] program so do while says
+[59:20.52] you don't know the condition because
+[59:22.08] when you are writing code in industry or
+[59:25.44] maybe you're solving a problem you a lot
+[59:28.32] of times the condition might be user
+[59:30.06] dependent or you might have such use
+[59:31.92] cases
+[59:32.94] so
+[59:33.96] you always want one thing to happen that
+[59:35.94] is you want your line of code to be
+[59:37.80] executed minimum or one type minimum for
+[59:41.34] one time that is one that is when you
+[59:43.98] say okay you want it to be executed for
+[59:46.20] minimum of one time I will write it
+[59:48.42] something like do and I'll put this
+[59:50.52] condition for oh I have at the end and
+[59:54.66] then I'll be doing the same thing
+[59:57.24] I'll be doing the same thing so what
+[59:59.28] will happen is even if the while even if
+[60:02.16] the Indi is defined as 2 and the
+[60:04.02] condition doesn't execute because it
+[60:06.00] doesn't allows me and then you end it
+[60:07.74] with a semicolon even if the condition
+[60:09.90] doesn't allows B do says do it for the
+[60:12.36] first go ahead do it for the first then
+[60:15.48] increment then check then do so if you
+[60:17.58] say I equal to two see what
+[60:20.64] Driver 2 gets printed and then if you
+[60:23.34] see the value of I at the end of the
+[60:25.44] while loop let's print
+[60:27.36] what will happen
+[60:28.98] the value of I was 2 you printed scriber
+[60:32.28] I increase to 3 and 3 was less than
+[60:35.76] equal to 1 and it got X
+[60:38.28] edit but do will make sure the first
+[60:40.68] time it gets executed irrespective of
+[60:44.34] what condition you are given so this is
+[60:47.82] the basic like you can Define it here
+[60:49.92] you can Define it before this that is
+[60:51.48] your choice but this is the basic of for
+[60:54.72] and while Loops so I can say uh this is
+[60:57.36] the basic of foreign while Loops
+[60:59.04] eventually when we solve these amazing
+[61:02.82] set of patterns the concept of the four
+[61:05.28] and while Loops will get more and more
+[61:07.50] into your head and you'll be very strong
+[61:09.48] in uh logical thinking and eventually
+[61:11.64] you can apply for Loops in maths or
+[61:14.40] recursion and all the other problems
+[61:16.86] okay what's the next thing functions
+[61:19.26] pass by reference and pass by value
+[61:21.72] functions is very very important because
+[61:23.82] we'll be using functions throughout yes
+[61:26.40] throughout to solve any problems we will
+[61:28.80] be writing functions so please make sure
+[61:30.66] you understand functions in a proper
+[61:33.06] depth so let's start with functions what
+[61:35.34] are functions functions are a set of
+[61:38.10] Port which performs something for you
+[61:40.50] now if I want someone to do something
+[61:44.10] for me like for an example if I want to
+[61:46.68] order food I can say I can deliver food
+[61:49.56] from a food delivery app and that will
+[61:52.92] bring me in food so you can say
+[61:54.96] functions are similar you want it to do
+[61:57.36] something you will give it or maybe
+[61:58.80] something and you will do that for you
+[62:00.78] that is the role of a function wire
+[62:03.06] functions used functions are used to
+[62:05.40] modularize code now a lot of times
+[62:08.10] you'll be having hundreds and hundreds
+[62:10.20] of lines of code and it's it becomes
+[62:12.60] very clumsy so in order to modularize
+[62:14.94] because every portion of the code will
+[62:17.22] be doing something so that something
+[62:19.38] will be put into a function okay
+[62:22.40] functions are used to increase
+[62:24.50] readability now imagine you are writing
+[62:27.36] code and you have like 1000 lines of
+[62:30.12] code you know you know what every line
+[62:32.82] is doing but if someone from outside is
+[62:34.86] reading your code you might not
+[62:36.24] understand so what you do is every step
+[62:39.00] you put it into a function name the
+[62:41.22] function in such a way that it is
+[62:43.08] understandable what it is doing got it
+[62:45.72] and functions are used to same I used to
+[62:49.26] use the same code multiple times so if
+[62:52.38] you are performing same like if you are
+[62:54.78] using the same set of code again and
+[62:57.66] again it's not good to write the same
+[62:59.88] code again and again you can put them
+[63:01.74] into functions and use the function okay
+[63:04.20] so I'll be uh showing you all these
+[63:06.42] things
+[63:07.14] so there are basically uh so there are a
+[63:09.66] lot of kind of functions but usually we
+[63:12.36] do use like four kind of functions one
+[63:14.28] is the void function the other one is
+[63:16.38] the return function the other one is
+[63:18.18] where we carry a lot of parameters the
+[63:20.88] other one is where we do not carry any
+[63:23.22] parameter
+[63:24.60] okay so non-parameterized functions so
+[63:28.02] let's talk about the first one void
+[63:30.90] function the void function is something
+[63:33.00] which does not returns anything very
+[63:36.60] important it doesn't returns anything so
+[63:40.14] imagine imagine
+[63:41.46] I'm saying print your name
+[63:43.98] you know that is easy you'll come across
+[63:46.38] and say hey see how
+[63:48.12] history
+[63:49.68] printed
+[63:51.18] so you know one thing if I'm saying hey
+[63:53.88] is fragile
+[63:55.20] that is something which I know but if
+[63:57.06] someone is coming from outside and is
+[63:58.68] reading this like what does c out mean I
+[64:01.26] don't know I don't know what CR means
+[64:03.42] this is where readability comes in if I
+[64:06.78] do not know C plus plus I will not be
+[64:08.70] knowing what C Out means that is where
+[64:10.80] we say okay let me write a function so
+[64:13.68] what function I'll write us I'll say
+[64:15.66] okay why
+[64:17.28] that is the keyword it means it will do
+[64:20.40] something but it will not give me some
+[64:22.86] it will not give me some and then I'll
+[64:24.84] write the function name I have to print
+[64:26.76] the names so I'll just write printing
+[64:29.34] and in that I'll put this
+[64:32.94] so it did not return me anything it's a
+[64:35.70] void it will never return you anything
+[64:37.68] and this is the function name and this
+[64:40.74] is a non parameter it will not carry any
+[64:43.38] parameter whenever you enclose it within
+[64:45.96] parenthesis and there is nothing inside
+[64:47.88] it it doesn't carries a parameter so it
+[64:51.96] does this now over here if you just run
+[64:54.12] this this will not be executing this
+[64:56.76] function because this is outside the
+[64:59.16] main you know the skeleton of the code
+[65:01.20] is executing anything that is inside the
+[65:03.72] int Main and the function is outside
+[65:05.94] what do you do is is a printer name and
+[65:09.36] you execute this now what will happen is
+[65:11.58] in domain will come print the name will
+[65:13.80] happen and then it will go across and
+[65:16.14] execute the line of code
+[65:18.00] see Ace driver executed the imagine I
+[65:21.00] see take a input
+[65:24.12] so you'll be like okay this is the
+[65:25.86] lineup maybe I'll take ID name
+[65:28.56] and as a scene name and now I want to
+[65:31.50] print this name I want to say hey this
+[65:33.30] name and this name might be Raj
+[65:36.00] so if I say just print name what will
+[65:38.70] happen see it will still print his
+[65:40.80] driver I want you to print a Raj this is
+[65:44.10] where something like a parameterized
+[65:46.56] void function comes in I know I have to
+[65:49.14] take this name maybe I'll pass this name
+[65:51.72] so I'm saying print name take this name
+[65:55.50] print name will say okay please give me
+[65:57.54] this what a by the way string what is
+[66:01.02] the data type of this name this is
+[66:02.88] string I'm passing the name but it gives
+[66:05.10] you Red why because this guy is not
+[66:08.52] taking any parameters but I'm giving it
+[66:11.16] name I'll say okay what are you giving
+[66:12.96] me you're giving me a string I'll take
+[66:14.70] the string I'll take the string when
+[66:16.80] I've taken the string now I'll say hey
+[66:19.10] can I see your name
+[66:22.26] see what will happen this function took
+[66:25.32] this name and printed now this moment
+[66:27.30] when you say Raj
+[66:30.26] if you say struggle
+[66:35.58] it will say a struggle if you say Amun
+[66:38.94] it will say hey Aman simple this
+[66:43.14] function what is the function of this
+[66:45.18] function takes a name and prints a name
+[66:48.36] very simple it can take any name so you
+[66:51.48] can maybe use it again C string name two
+[66:54.60] and you can maybe take name two and you
+[66:57.54] can say print name see reusability of
+[66:59.94] codes
+[67:01.02] I'm using the code again and again and I
+[67:04.14] can say Okay Amun and then Raj and then
+[67:06.66] maybe over here let's give an angel so
+[67:08.46] that every time it says hey you like see
+[67:10.56] what happens
+[67:12.74] now had you written this line you'd have
+[67:15.24] written it again and again and again
+[67:16.80] this is where reusability of code comes
+[67:20.16] in now this is not under like you can
+[67:22.44] maybe put it under for Loop that is okay
+[67:24.48] but if there there will be cases where
+[67:27.72] you cannot use for Loops but you have to
+[67:30.06] use shuttle lines of code again again at
+[67:32.88] different different places that is where
+[67:34.92] something like a function comes so I can
+[67:37.14] call this as a void function and as well
+[67:39.24] as a parameterized structure so you have
+[67:41.16] understood void you have understood
+[67:42.54] parameters you have understood
+[67:44.18] non-parameters okay now the next
+[67:46.38] question that we will do is take two
+[67:48.36] numbers and print its sum so what I'll
+[67:51.84] do is I'll take two numbers the two
+[67:53.52] numbers are on the input so let's do
+[67:55.74] this ID number
+[67:57.54] number two let's take the two numbers
+[67:59.60] number and number two
+[68:02.52] now I'll say Co of num1 Plus num2 or
+[68:07.32] maybe you can do it something like IND
+[68:08.82] num3 equal to num1 Plus num2
+[68:12.36] I can say let's print num three perfect
+[68:15.38] model up 5 plus x 11 will be printed
+[68:18.90] imagine this addition operation you have
+[68:22.14] to do it multiple times imagine you're
+[68:24.18] writing a program for calculator
+[68:26.28] a lot of times addition operator will be
+[68:28.56] done can you always just keep on writing
+[68:30.78] plus plus plus plus no that's when you
+[68:33.60] have to modularize the code to make it
+[68:35.58] readable so one thing you can do is
+[68:38.16] blank
+[68:40.86] you can say okay what is this doing I'm
+[68:45.18] giving two numbers and I'm saying sum it
+[68:47.94] will always have two numbers to take so
+[68:50.34] if you're trying to write a return
+[68:51.72] function it will always be like integer
+[68:54.96] sum again the name of the function can
+[68:57.24] be anything it always takes two number
+[68:58.92] so there can be two parameters there can
+[69:00.84] be any number of parameters multiple
+[69:03.42] data types you can have something like
+[69:05.64] car c as well that is okay
+[69:07.86] number two
+[69:09.30] this is number three
+[69:11.40] equal to num1 Plus num2
+[69:14.76] and you can say return
+[69:16.92] num3 and over here what you can say is
+[69:20.22] I've taken the inputs
+[69:22.38] and I can say the result will be I'll
+[69:25.14] say the sum guy to take num1
+[69:28.26] and to take num2 so the sum guy is
+[69:31.50] called so what happens let's understand
+[69:33.54] the line of executions so what happens
+[69:36.72] let's understand the execution so the
+[69:39.12] means is okay num1 number
+[69:41.58] take it as input five and six five goes
+[69:45.18] to num1 6 goes to number two and then I
+[69:48.12] call sum this is where the program stops
+[69:50.70] the program stops at the line 21.
+[69:52.86] program stops at line 21 and now it goes
+[69:55.26] to line 13 at 13 it is taking num1 which
+[69:59.88] is five it is taking num2 which is six
+[70:02.94] so five and six are passed over here and
+[70:06.24] it states five plus six
+[70:09.20] and then num3 takes five plus six which
+[70:12.60] is 11 and it says return return the
+[70:16.08] value so it returns eleven and this
+[70:19.08] function now this function
+[70:21.12] gives you 11 because this function was
+[70:24.00] for this function gave you 11 that 11
+[70:26.58] goes and gets stored into rest and then
+[70:30.60] the line 21 which was stopped will be
+[70:33.00] executed and then this line 22 will be
+[70:36.00] performed what is the value of rest now
+[70:37.68] it is 11 so it gets printed so whenever
+[70:40.68] you're calling a function first the
+[70:42.66] function will be executed whatever value
+[70:45.12] the function gives if it is a return
+[70:46.86] that will be stored here then the
+[70:49.50] remaining lines will be executed on a
+[70:52.02] function called the flow will go to the
+[70:53.76] function the flow will go to the
+[70:55.02] function got it
+[70:56.94] this is what you call as a return
+[70:58.68] function this will return something you
+[71:01.50] could have done it as a void function
+[71:02.94] void parameters and you could have done
+[71:04.98] C out now that is also okay in that case
+[71:07.44] you don't have to do this and you don't
+[71:09.54] have to do this now
+[71:11.10] different ways of writing code a lot of
+[71:13.32] people write code in different ways you
+[71:15.96] can try it as you wish my main idea is
+[71:19.08] to teach you what are functions what
+[71:21.36] different kind of functions you can have
+[71:23.22] now remember one thing if you are
+[71:25.62] writing as this and this
+[71:29.10] this can be anything this can be an
+[71:31.44] integer can be a double can be a long
+[71:33.24] long can be a string can be an array can
+[71:35.10] be a vector can be a list can be
+[71:36.72] anything can be anything and you will
+[71:39.00] see eventually in the DSA playlist We
+[71:42.24] will be writing functions so I will be
+[71:43.86] returning vectors arrays 2D arrays
+[71:46.62] there'll be a lot of things returned
+[71:48.18] from here and we will learn throughout
+[71:50.76] the course so please make sure you watch
+[71:52.14] all the videos of this playlist because
+[71:54.06] I'm going to go in super depth since we
+[71:56.94] are talking about functions let's take
+[71:59.34] these couple of numbers again and there
+[72:01.44] are a lot of internal functions remember
+[72:03.00] at the start I said there is something
+[72:04.68] as math dot h so there is an inbuilt
+[72:07.44] function which says give me minimum and
+[72:10.20] if you write Main and you give the num1
+[72:12.54] num2 and then you uh print minimum see
+[72:16.02] whatever
+[72:17.76] the five is the minimum similarly there
+[72:19.80] is Max as well there are a lot of
+[72:22.08] inbuilt functions as well these
+[72:24.90] functions are similarly written so if
+[72:27.00] you have to write a Max function how
+[72:28.74] will you write it'll be very simple it
+[72:30.66] will be like num1
+[72:32.34] num2 and I know if I'm looking for max
+[72:35.12] if number additional statement greater
+[72:39.00] than num2 I can say that my Max is num
+[72:43.80] one so right or else I can say is my Max
+[72:48.36] is num2 now there is something you
+[72:51.66] cannot name the function uh with the
+[72:53.52] same name so make it Max Max okay
+[72:56.58] so because of inbuilt Max function
+[72:59.34] exists so you have to give the function
+[73:01.50] such a name that the inbuilt there is no
+[73:04.50] such inbuilt functions there cannot be
+[73:05.94] repetition of function names okay so max
+[73:08.70] now will it work
+[73:11.04] it should because data type returns
+[73:14.34] returns returns let's see
+[73:17.16] it does return okay now for an example
+[73:22.26] let's omit this slide for example just
+[73:25.92] for an instance let's omit the slide
+[73:28.08] this is an integer this has a return
+[73:30.36] state will it work
+[73:32.64] no it did it did throw some random value
+[73:36.60] why I did this up can you please tell me
+[73:39.30] why did this happen the reason this
+[73:41.52] happened was let's understand one thing
+[73:44.70] over here what did I say I said number
+[73:46.92] one greater than equal to number two so
+[73:49.80] five was greater than equal to 6 no so
+[73:54.12] there was no if
+[73:55.68] since this if did not execute Itself by
+[73:58.62] the way since there is one line you can
+[74:01.14] always write it without presence since
+[74:03.48] this if was not executed because I was
+[74:06.12] stating is 5 greater than equal to 6 and
+[74:08.58] that is false so the if never got
+[74:11.22] executed and since the if did not get
+[74:13.62] executed the return line was not
+[74:15.72] executed and since the return line was
+[74:17.70] not executed this function was looking
+[74:19.86] for a written line it was looking for a
+[74:23.46] return line and he did not find one
+[74:26.18] thereby
+[74:27.74] did give you like garbage Stuffs the
+[74:31.50] program did not compile properly it's
+[74:34.08] very important that if you are writing
+[74:36.00] an end data type stating that it will
+[74:38.28] always have a return you make sure you
+[74:40.20] write a return you make sure you write a
+[74:42.42] return
+[74:43.44] has very very important every function
+[74:46.50] which with a return data type must have
+[74:49.02] a return one right make sure you do that
+[74:51.48] so we did learn about functions but in
+[74:54.00] the bracket it is written pass by
+[74:55.50] reference and value let's understand
+[74:57.54] what that means so let's just take a
+[75:01.38] number just in order to understand and
+[75:04.02] do something and we write a function do
+[75:06.18] something and pass the number
+[75:08.40] okay and we go over here and write void
+[75:12.12] you know this is a function so right do
+[75:14.34] something and
+[75:16.62] to take this number
+[75:19.44] and maybe print it
+[75:24.12] and go ahead change this number let's
+[75:27.30] say add 5 to it again printed
+[75:31.68] and maybe again uh add a 5 to it and
+[75:35.28] again print it
+[75:37.50] so what will be the expected value I'm
+[75:40.14] sending 10 so 10 will be printed and
+[75:42.78] plus 5 15 then 20 so ideally it should
+[75:45.54] be 10 15 20 it is but
+[75:49.32] what did I say about the execution how
+[75:51.72] does the execution works so it is like
+[75:53.76] the first line is executed then it calls
+[75:56.22] it so it goes here this is executed this
+[75:58.92] is executed this is then this then this
+[76:01.38] and then the line 21 then the 22 then
+[76:04.34] ends at 23. so ideally if I printed here
+[76:09.90] what should happen
+[76:12.18] ideally according to your number was 10
+[76:14.52] it went here 10 15 20
+[76:18.72] finished 21
+[76:21.00] at 21 it should be again 20 because the
+[76:24.66] last value was 20 so it should be 20
+[76:26.28] right that's true we run this
+[76:29.16] 10 15 20 20 till here at the moment it
+[76:32.94] came to the line 21 the value was 10
+[76:35.88] again why
+[76:37.68] this is what we call as pass by value
+[76:42.44] what happens is when you call functions
+[76:46.20] and you pass number
+[76:48.96] it goes by value a copy goes
+[76:53.40] then the original number did not go the
+[76:56.28] original number did not go this original
+[76:58.20] number must be somewhere must be
+[77:01.38] somewhere in the memory that original
+[77:03.96] memory did not go what it created was it
+[77:07.92] said you are 10 let me create a copy
+[77:10.44] send that copy I'm not sending original
+[77:12.90] I'm not sending origin
+[77:14.88] this guy
+[77:16.32] took the original took the origin he
+[77:18.48] said you're 10 copy copy take the copy
+[77:22.02] and give it to the function and the
+[77:24.12] function took the copy did everything
+[77:25.92] with the copy did everything with the
+[77:27.90] copy so I changed he modified the copy
+[77:30.84] so hence he modified the copy the
+[77:33.24] original value still State the same this
+[77:36.48] is what we call as pass by value okay
+[77:40.74] this does work with everything like
+[77:42.66] let's assign string
+[77:44.76] string s equal to Raj and imagine you
+[77:48.48] pass the string s and let's omit this
+[77:51.12] and let's say string s again
+[77:54.78] and over here assume you say s 0 equal
+[77:58.50] to instead of Raj is it touch T and I
+[78:01.80] print the string s and away also I print
+[78:04.44] the string s sidely over here if I'm
+[78:07.26] changing S 0 to T Raj will become touch
+[78:12.06] right and then when it comes back s is
+[78:15.84] again printed so what should happen
+[78:18.54] yes first it got changed but since I did
+[78:23.64] not pass the original I passed the copy
+[78:26.04] since I passed the copy what happened
+[78:29.34] was only the copy got changed and the
+[78:31.86] original still stayed the same this is
+[78:33.84] what we call as pass by value now
+[78:36.78] there's something else passed by
+[78:38.94] reference what is this pass by reference
+[78:41.94] I don't want to pass a cup I want my
+[78:44.70] function to make changes on the original
+[78:47.16] one that's when you just attach and to
+[78:51.66] it if you attach an and to it it takes
+[78:55.20] the address it takes the address so
+[78:58.38] whatever you are sending over here it
+[79:00.24] takes the original and sends it so this
+[79:03.00] string whenever you say s it actually is
+[79:06.36] dealing with the original let's now
+[79:09.00] compile and see so if your compile and
+[79:10.86] see you see
+[79:12.18] it changed here and the same prevailed
+[79:14.46] over here this is what you call as pass
+[79:17.58] by reference understood if you are
+[79:22.08] passing like this and sign will say that
+[79:24.42] okay get it from the address get it from
+[79:27.12] the address get the original value okay
+[79:29.30] others pass by reference can be written
+[79:31.62] in a lot of other ways but I personally
+[79:34.26] feel the other ways are very very
+[79:35.88] confusing the easiest way is just attach
+[79:40.14] ah and sign and that will make sure that
+[79:43.26] it is passed by reference the original
+[79:45.24] value is pass so if you want to pass the
+[79:48.78] integer similarly you can do integer num
+[79:51.18] equal to 10 and you can pass a num here
+[79:54.48] and let's print the num here and again
+[79:57.12] take int again just pause the num here
+[80:00.12] and you can go ahead and say let's do
+[80:02.88] the same thing C out of
+[80:10.46] again you can say C out of num and L
+[80:15.24] again you can say num plus equal to 5
+[80:17.40] and again you can say out num and L okay
+[80:21.36] so let's see so if I run this what
+[80:23.58] should happen see
+[80:25.68] value got updated in the function three
+[80:27.48] times and then still the same value
+[80:29.10] prevailed very simple now
+[80:32.40] uh thing that you have to keep in the
+[80:34.68] mind imagine you are declaring the array
+[80:36.66] so do you remember declaring the array
+[80:39.12] till now you were declaring the array
+[80:40.98] like five and imagine there are like
+[80:43.62] five values 10 7 12 13.
+[80:48.24] till now all these values you were kind
+[80:52.02] of taking like C and array of 0 t hen
+[80:56.70] had a of one c n array of two c n array
+[81:01.38] of 3 CN array of four this is how you
+[81:05.34] took and eventually you were printing it
+[81:07.58] array of 0 array of one and going on
+[81:12.48] array of
+[81:13.80] to
+[81:15.48] 2 and so on you've just printed it like
+[81:18.00] this right so if you run this you saw
+[81:20.64] all the values were getting printed like
+[81:22.20] you can put up and in order to get a
+[81:25.02] Clarity T over here also you can protect
+[81:28.02] and so if you just put an NL and run so
+[81:30.78] yeah the first three values are printed
+[81:32.28] but is this a good way because there
+[81:34.68] might be 500 numbers
+[81:36.84] what did you learn looping array it's
+[81:39.72] combine yes how many what are you doing
+[81:42.48] 0 1 2 3 4. can I write something like
+[81:46.56] this
+[81:48.24] zero I I know I have to go till 4 okay I
+[81:52.62] have to do this
+[81:54.84] and if I know this can I see in
+[81:57.78] array of a
+[81:59.58] can I do this
+[82:01.75] [Music]
+[82:02.94] can I do this
+[82:04.92] what will happen what's the first value
+[82:06.54] of I zero so zero array of 0 will get so
+[82:10.20] 5 will get then what's the value of I 1
+[82:13.26] to 10 will get in Array of one right and
+[82:16.20] then what's the value of I so if you try
+[82:17.70] to print the value of I if you remember
+[82:19.32] for loops
+[82:20.88] foreign
+[82:27.30] the value of I is zero so array of 0 is
+[82:30.06] taken next the value of I is 1 array of
+[82:33.00] 1st x value of I is 2 so add F2 is taken
+[82:36.00] and similarly it takes everything
+[82:38.10] perfect
+[82:40.32] if you are printed quite simple same way
+[82:43.62] run a for Loop
+[82:45.24] you can print everything array 0 array1
+[82:49.02] why do you want to write everything
+[82:50.16] again and again just write C out give
+[82:53.22] like this and maybe put up space
+[82:56.22] and just see everything got printed so I
+[82:59.58] combined array loops and everything now
+[83:02.58] a question comes pass by ref I said
+[83:05.58] include and do everything but this
+[83:08.46] doesn't work for arrays arrays are
+[83:10.56] generically passed by reference so if
+[83:12.84] you write this
+[83:13.92] this is I how you pass an array so
+[83:16.38] imagine this is the array I took as an
+[83:18.30] input and I said do something and I said
+[83:20.88] can you please take this array and maybe
+[83:22.32] the size of the array and the size of
+[83:24.66] the array is
+[83:26.04] five so you can go ahead and maybe
+[83:28.74] declare it in a better way this
+[83:30.95] [Music]
+[83:32.28] is the better way and maybe you can Loop
+[83:34.26] till n minus 1 or you can Loop till n
+[83:37.20] that is your choice you can do whatever
+[83:39.54] you wish to you can Loop till n minus 1
+[83:42.24] because last index is n minus 1 or you
+[83:45.12] can write less than both the conditions
+[83:47.04] are meaning the exact same thing so over
+[83:49.98] here I'll Take Everything
+[83:51.54] now what I'll do is I will go across to
+[83:54.06] every value of or maybe to just
+[83:56.34] understand area of 0 I will go ahead and
+[84:00.06] add plus equal to maybe 100 and over
+[84:03.72] here I'll print array of uh value inside
+[84:08.40] function okay
+[84:10.08] and I'll say array of 0 please get
+[84:13.38] printed okay and I'll say value inside
+[84:16.56] into me
+[84:17.82] after the function
+[84:19.74] okay
+[84:20.70] value inside into main let's see if that
+[84:24.60] got added do you see this
+[84:26.94] stays 105. I didn't pass it with
+[84:28.98] reference but array
+[84:31.14] always goes with ref so please keep this
+[84:33.78] in mind if you're passing an array it
+[84:35.94] will always always go with reference but
+[84:39.54] apart from that Vector Maps list
+[84:41.52] everything you have to pass that and
+[84:43.38] sign to make sure that it has passed by
+[84:45.38] reference got this
+[84:47.94] so whatever you do over here with the
+[84:50.04] arrays that will be uh definitely
+[84:52.50] modified throughout
+[84:54.12] so with this we learn functions passed
+[84:56.94] by reference and value time complexity
+[84:59.40] is the next one which I'll be covering
+[85:00.78] in the next video because time
+[85:02.58] complexity in itself is a very very vast
+[85:05.10] topic and I want you to understand this
+[85:07.08] in proper depth with a lot of examples
+[85:09.36] why because this is going to be the most
+[85:12.06] important topics if you go for
+[85:13.32] interviews they'll be like do it in the
+[85:15.12] least time complexity so we'll be doing
+[85:17.10] that in the next one and if you want to
+[85:18.84] know uh more about C plus plus you can
+[85:20.70] definitely watch out the C plus plus STL
+[85:22.98] video so if you have seen the video till
+[85:25.08] here I think you should definitely hit
+[85:27.18] that like button and if you've
+[85:28.56] understood everything uh please do
+[85:30.54] consider subscribing to us because I was
+[85:32.28] going through our Channel statistics
+[85:33.54] nearly 50 of the users who watch these
+[85:36.18] kind of videos do not hit that subscribe
+[85:38.58] button I know these are educational
+[85:40.38] videos but uh if if you just click that
+[85:43.08] subscribe button that does motivate me
+[85:45.24] to make such kind of videos and yes this
+[85:48.72] is going to be a full-fledged playlist
+[85:51.06] on data structures and algorithms so do
+[85:54.06] stay tuned follow me on Twitter
+[85:55.68] Instagram LinkedIn so that you stay
+[85:57.96] updated about this particular playlist
+[86:00.18] and make sure you watch all the videos
+[86:02.64] in this playlist in case you haven't
+[86:04.44] checked out uh other resources you can
+[86:06.72] definitely check out by diving deep into
+[86:08.88] the playlist section of this particular
+[86:10.32] Channel and you can also go through our
+[86:12.36] take you forward website with this I'll
+[86:14.64] be wrapping up this video let's read in
+[86:16.02] some of the video till then
+[86:19.94] spoken don't ever forget your golden I

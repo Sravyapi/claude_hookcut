@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProgressStep UI Tuner</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --border: rgba(255,255,255,0.08);
+    --violet: rgb(139,92,246);
+    --violet-dim: rgba(139,92,246,0.25);
+    --emerald: rgb(16,185,129);
+    --text: rgba(255,255,255,0.85);
+    --text-dim: rgba(255,255,255,0.4);
+    --text-muted: rgba(255,255,255,0.2);
+  }
+  body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; }
+
+  /* Layout */
+  .controls { width: 340px; min-width: 340px; background: var(--surface); border-right: 1px solid var(--border); padding: 24px; overflow-y: auto; height: 100vh; position: sticky; top: 0; }
+  .preview { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px 24px; min-height: 100vh; }
+  .prompt-area { position: fixed; bottom: 0; left: 340px; right: 0; background: #0d0d14; border-top: 1px solid var(--border); padding: 16px 24px; }
+
+  /* Controls */
+  h2 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 16px; letter-spacing: 0.02em; }
+  .group { margin-bottom: 20px; }
+  .group-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); margin-bottom: 10px; }
+  label { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--text-dim); margin-bottom: 6px; }
+  label span.val { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; color: var(--violet); min-width: 40px; text-align: right; }
+  input[type="range"] { width: 100%; accent-color: var(--violet); margin-bottom: 2px; height: 6px; }
+  select { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text); padding: 6px 8px; border-radius: 6px; font-size: 13px; }
+
+  /* Presets */
+  .presets { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+  .preset-btn { padding: 5px 10px; border-radius: 6px; border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text-dim); font-size: 11px; cursor: pointer; transition: all 0.15s; }
+  .preset-btn:hover { background: rgba(139,92,246,0.1); border-color: rgba(139,92,246,0.3); color: var(--text); }
+  .preset-btn.active { background: rgba(139,92,246,0.15); border-color: rgba(139,92,246,0.4); color: white; }
+
+  /* Prompt */
+  .prompt-text { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; color: var(--text-dim); line-height: 1.6; white-space: pre-wrap; max-height: 100px; overflow-y: auto; }
+  .copy-btn { position: absolute; top: 12px; right: 16px; padding: 5px 12px; border-radius: 6px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: var(--text-dim); font-size: 11px; cursor: pointer; transition: all 0.15s; }
+  .copy-btn:hover { background: rgba(139,92,246,0.15); color: white; }
+
+  /* Preview component */
+  .progress-container { width: 100%; display: flex; flex-direction: column; align-items: center; }
+
+  .orb-wrapper { position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: var(--orb-mb); }
+  .orb-ring { position: absolute; border-radius: 50%; border: 1px solid rgba(139,92,246,0.2); }
+  .orb-core { position: relative; border-radius: 50%; background: linear-gradient(135deg, rgba(139,92,246,0.4), rgba(126,34,206,0.4)); border: 1px solid rgba(139,92,246,0.3); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 32px var(--violet-dim); }
+  .orb-core svg { color: rgba(196,181,253,1); }
+  .orb-core .arc { position: absolute; inset: 0; transform: rotate(-90deg); }
+
+  .stage-label { font-weight: 600; color: var(--text); text-align: center; margin-bottom: 4px; }
+  .stage-detail { color: var(--text-muted); text-align: center; line-height: 1.5; margin-bottom: var(--detail-mb); }
+
+  .video-pill { display: flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); margin-bottom: var(--pill-mb); }
+  .video-pill svg { color: rgba(248,113,113,0.7); flex-shrink: 0; }
+  .video-pill span { color: var(--text-dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .stage-cards { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; margin-bottom: 20px; }
+  .stage-card { display: flex; flex-direction: column; align-items: center; border-radius: 16px; border: 1px solid; transition: all 0.3s; }
+  .stage-card.active { border-color: rgba(139,92,246,0.3); background: rgba(139,92,246,0.08); }
+  .stage-card.done { border-color: rgba(16,185,129,0.2); background: rgba(16,185,129,0.05); }
+  .stage-card.pending { border-color: rgba(255,255,255,0.05); background: rgba(255,255,255,0.02); }
+  .card-icon { border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+  .card-icon.active { background: rgba(139,92,246,0.2); color: rgba(196,181,253,1); }
+  .card-icon.done { background: rgba(16,185,129,0.15); color: rgba(52,211,153,1); }
+  .card-icon.pending { background: rgba(255,255,255,0.05); color: var(--text-muted); }
+  .card-label { font-weight: 500; text-align: center; line-height: 1.3; }
+  .card-label.active { color: rgba(255,255,255,0.8); }
+  .card-label.done { color: var(--text-dim); }
+  .card-label.pending { color: var(--text-muted); }
+  .card-bar { width: 100%; border-radius: 999px; background: rgba(255,255,255,0.05); overflow: hidden; }
+  .card-bar-fill { height: 100%; border-radius: 999px; }
+  .card-bar-fill.active { background: var(--violet); }
+  .card-bar-fill.done { background: var(--emerald); }
+
+  .footer-info { display: flex; align-items: center; font-family: 'SF Mono', 'Fira Code', monospace; color: var(--text-muted); }
+  .footer-info .pct { color: rgba(139,92,246,0.5); font-weight: 500; }
+
+  .sep { display: inline-block; width: 1px; background: rgba(255,255,255,0.1); margin: 0 10px; }
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <h2>ProgressStep Tuner</h2>
+
+  <div class="presets">
+    <button class="preset-btn" onclick="applyPreset('current')">Current</button>
+    <button class="preset-btn" onclick="applyPreset('comfortable')">Comfortable</button>
+    <button class="preset-btn" onclick="applyPreset('spacious')">Spacious</button>
+    <button class="preset-btn" onclick="applyPreset('compact')">Compact</button>
+  </div>
+
+  <div class="group">
+    <div class="group-title">Container</div>
+    <label>Max width <span class="val" id="v-maxW"></span></label>
+    <input type="range" id="maxW" min="280" max="600" step="10">
+  </div>
+
+  <div class="group">
+    <div class="group-title">Orb</div>
+    <label>Orb size <span class="val" id="v-orbSize"></span></label>
+    <input type="range" id="orbSize" min="40" max="200" step="4">
+    <label>Core size <span class="val" id="v-coreSize"></span></label>
+    <input type="range" id="coreSize" min="32" max="120" step="4">
+    <label>Orb margin-bottom <span class="val" id="v-orbMb"></span></label>
+    <input type="range" id="orbMb" min="8" max="48" step="2">
+  </div>
+
+  <div class="group">
+    <div class="group-title">Typography</div>
+    <label>Stage label <span class="val" id="v-labelSize"></span></label>
+    <input type="range" id="labelSize" min="14" max="28" step="1">
+    <label>Stage detail <span class="val" id="v-detailSize"></span></label>
+    <input type="range" id="detailSize" min="12" max="20" step="1">
+    <label>Detail margin-bottom <span class="val" id="v-detailMb"></span></label>
+    <input type="range" id="detailMb" min="8" max="48" step="2">
+  </div>
+
+  <div class="group">
+    <div class="group-title">Video Pill</div>
+    <label>Pill text size <span class="val" id="v-pillText"></span></label>
+    <input type="range" id="pillText" min="10" max="16" step="1">
+    <label>Pill max width <span class="val" id="v-pillMaxW"></span></label>
+    <input type="range" id="pillMaxW" min="180" max="400" step="10">
+    <label>Pill margin-bottom <span class="val" id="v-pillMb"></span></label>
+    <input type="range" id="pillMb" min="12" max="48" step="2">
+  </div>
+
+  <div class="group">
+    <div class="group-title">Stage Cards</div>
+    <label>Card padding <span class="val" id="v-cardPad"></span></label>
+    <input type="range" id="cardPad" min="8" max="28" step="2">
+    <label>Card gap <span class="val" id="v-cardGap"></span></label>
+    <input type="range" id="cardGap" min="4" max="20" step="2">
+    <label>Card icon size <span class="val" id="v-cardIconSize"></span></label>
+    <input type="range" id="cardIconSize" min="24" max="48" step="2">
+    <label>Card label size <span class="val" id="v-cardLabelSize"></span></label>
+    <input type="range" id="cardLabelSize" min="10" max="18" step="1">
+    <label>Card bar height <span class="val" id="v-cardBarH"></span></label>
+    <input type="range" id="cardBarH" min="2" max="6" step="1">
+  </div>
+
+  <div class="group">
+    <div class="group-title">Footer</div>
+    <label>Footer text size <span class="val" id="v-footerSize"></span></label>
+    <input type="range" id="footerSize" min="10" max="16" step="1">
+  </div>
+
+  <div class="group">
+    <div class="group-title">Simulation</div>
+    <label>Progress <span class="val" id="v-progress"></span></label>
+    <input type="range" id="progress" min="0" max="100" step="1">
+  </div>
+</div>
+
+<div class="preview" id="preview-area">
+  <div class="progress-container" id="component"></div>
+</div>
+
+<div class="prompt-area">
+  <div class="prompt-text" id="prompt"></div>
+  <button class="copy-btn" id="copyBtn" onclick="copyPrompt()">Copy</button>
+</div>
+
+<script>
+const DEFAULTS = { maxW: 384, orbSize: 128, coreSize: 56, orbMb: 32, labelSize: 16, detailSize: 13, detailMb: 24, pillText: 11, pillMaxW: 220, pillMb: 32, cardPad: 16, cardGap: 10, cardIconSize: 36, cardLabelSize: 11, cardBarH: 3, footerSize: 11, progress: 20 };
+
+const state = { ...DEFAULTS };
+
+const PRESETS = {
+  current: { ...DEFAULTS },
+  comfortable: { maxW: 480, orbSize: 140, coreSize: 64, orbMb: 36, labelSize: 20, detailSize: 15, detailMb: 28, pillText: 13, pillMaxW: 300, pillMb: 36, cardPad: 20, cardGap: 12, cardIconSize: 40, cardLabelSize: 13, cardBarH: 4, footerSize: 13, progress: 20 },
+  spacious: { maxW: 540, orbSize: 160, coreSize: 72, orbMb: 40, labelSize: 24, detailSize: 16, detailMb: 32, pillText: 14, pillMaxW: 340, pillMb: 40, cardPad: 24, cardGap: 14, cardIconSize: 44, cardLabelSize: 14, cardBarH: 4, footerSize: 14, progress: 20 },
+  compact: { maxW: 360, orbSize: 100, coreSize: 48, orbMb: 24, labelSize: 18, detailSize: 14, detailMb: 20, pillText: 12, pillMaxW: 260, pillMb: 24, cardPad: 14, cardGap: 8, cardIconSize: 32, cardLabelSize: 12, cardBarH: 3, footerSize: 12, progress: 20 },
+};
+
+const STAGES = [
+  { id: 'transcript', label: 'Reading transcript', detail: 'Parsing the full transcript to map out what was said and when.' },
+  { id: 'hooks', label: 'Detecting hooks', detail: 'Finding moments that stop scrollers — curiosity gaps, stakes, pattern interrupts.' },
+  { id: 'ranking', label: 'Scoring & ranking', detail: 'Rating each hook across 7 dimensions to surface your top performers.' },
+];
+
+function getStageIndex(p) { return p >= 66 ? 2 : p >= 33 ? 1 : 0; }
+
+function applyPreset(name) {
+  Object.assign(state, PRESETS[name]);
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.toggle('active', b.textContent.toLowerCase() === name));
+  syncControls();
+  render();
+}
+
+function syncControls() {
+  for (const key of Object.keys(DEFAULTS)) {
+    const el = document.getElementById(key);
+    if (el) { el.value = state[key]; document.getElementById('v-' + key).textContent = state[key] + (key === 'progress' ? '%' : 'px'); }
+  }
+}
+
+function setupControls() {
+  for (const key of Object.keys(DEFAULTS)) {
+    const el = document.getElementById(key);
+    if (!el) continue;
+    el.addEventListener('input', () => {
+      state[key] = parseInt(el.value);
+      document.getElementById('v-' + key).textContent = state[key] + (key === 'progress' ? '%' : 'px');
+      document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+      render();
+    });
+  }
+}
+
+function render() {
+  const s = state;
+  const p = s.progress;
+  const idx = getStageIndex(p);
+  const stage = STAGES[idx];
+
+  const iconSvgSize = Math.round(s.coreSize * 0.42);
+  const ringCount = 3;
+  const rings = Array.from({length: ringCount}, (_, i) => {
+    const size = s.coreSize + (i + 1) * Math.round((s.orbSize - s.coreSize) / ringCount);
+    return `<div class="orb-ring" style="width:${size}px;height:${size}px;animation:pulse${i} 2.4s ease-in-out infinite ${i*0.5}s"></div>`;
+  }).join('');
+
+  const r = Math.round(s.coreSize * 0.44);
+  const circ = 2 * Math.PI * r;
+  const offset = circ * (1 - p / 100);
+
+  const cards = STAGES.map((st, i) => {
+    const isDone = p >= (i === 0 ? 33 : i === 1 ? 66 : 100);
+    const isActive = !isDone && p >= (i === 0 ? 0 : i === 1 ? 33 : 66);
+    const min = i * 33.33; const max = (i + 1) * 33.33;
+    const fill = Math.max(0, Math.min(1, (p - min) / (max - min)));
+    const cls = isDone ? 'done' : isActive ? 'active' : 'pending';
+    const iconInner = isDone
+      ? `<svg width="${Math.round(s.cardIconSize*0.55)}" height="${Math.round(s.cardIconSize*0.55)}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>`
+      : `<svg width="${Math.round(s.cardIconSize*0.55)}" height="${Math.round(s.cardIconSize*0.55)}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="${i===0?'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z':i===1?'M13 10V3L4 14h7v7l9-11h-7z':'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'}"/></svg>`;
+    return `<div class="stage-card ${cls}" style="padding:${s.cardPad}px;gap:${Math.round(s.cardPad*0.5)}px">
+      <div class="card-icon ${cls}" style="width:${s.cardIconSize}px;height:${s.cardIconSize}px">${iconInner}</div>
+      <span class="card-label ${cls}" style="font-size:${s.cardLabelSize}px">${st.label}</span>
+      <div class="card-bar" style="height:${s.cardBarH}px"><div class="card-bar-fill ${cls}" style="width:${fill*100}%"></div></div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('component').innerHTML = `
+    <div style="max-width:${s.maxW}px;width:100%;display:flex;flex-direction:column;align-items:center">
+      <div class="orb-wrapper" style="width:${s.orbSize}px;height:${s.orbSize}px;--orb-mb:${s.orbMb}px">
+        ${rings}
+        <div class="orb-core" style="width:${s.coreSize}px;height:${s.coreSize}px">
+          <svg width="${iconSvgSize}" height="${iconSvgSize}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+          <svg class="arc" width="${s.coreSize}" height="${s.coreSize}" viewBox="0 0 ${s.coreSize} ${s.coreSize}">
+            <circle cx="${s.coreSize/2}" cy="${s.coreSize/2}" r="${r}" fill="none" stroke="rgba(139,92,246,0.12)" stroke-width="2"/>
+            <circle cx="${s.coreSize/2}" cy="${s.coreSize/2}" r="${r}" fill="none" stroke="rgb(139,92,246)" stroke-width="2" stroke-linecap="round" stroke-dasharray="${circ}" stroke-dashoffset="${offset}" style="transition:stroke-dashoffset 0.5s ease-out"/>
+          </svg>
+        </div>
+      </div>
+
+      <p class="stage-label" style="font-size:${s.labelSize}px">${stage.label}</p>
+      <p class="stage-detail" style="font-size:${s.detailSize}px;--detail-mb:${s.detailMb}px;margin-bottom:${s.detailMb}px">${stage.detail}</p>
+
+      <div class="video-pill" style="--pill-mb:${s.pillMb}px;margin-bottom:${s.pillMb}px">
+        <svg width="${Math.round(s.pillText*1.2)}" height="${Math.round(s.pillText*1.2)}" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+        <span style="font-size:${s.pillText}px;max-width:${s.pillMaxW}px">How I Built a $10M Business in 6 Months</span>
+      </div>
+
+      <div class="stage-cards" style="gap:${s.cardGap}px;margin-bottom:${Math.round(s.cardPad*1.2)}px">${cards}</div>
+
+      <div class="footer-info" style="font-size:${s.footerSize}px;gap:12px">
+        <span class="pct">${p}%</span>
+        <span class="sep" style="height:${Math.round(s.footerSize*1.1)}px"></span>
+        <svg width="${s.footerSize}" height="${s.footerSize}" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>0:42</span>
+      </div>
+    </div>`;
+
+  updatePrompt();
+}
+
+function updatePrompt() {
+  const s = state; const d = DEFAULTS; const parts = [];
+
+  if (s.maxW !== d.maxW) parts.push(`max-w from max-w-sm (384px) to max-w-[${s.maxW}px]`);
+  if (s.orbSize !== d.orbSize) parts.push(`orb wrapper from w-32 h-32 to w-[${s.orbSize/4}rem] h-[${s.orbSize/4}rem]`);
+  if (s.coreSize !== d.coreSize) parts.push(`orb core from w-14 h-14 to w-[${s.coreSize/4}rem] h-[${s.coreSize/4}rem]`);
+  if (s.orbMb !== d.orbMb) parts.push(`orb margin-bottom from mb-8 to mb-[${s.orbMb}px]`);
+  if (s.labelSize !== d.labelSize) parts.push(`stage label from text-base to text-[${s.labelSize}px]`);
+  if (s.detailSize !== d.detailSize) parts.push(`stage detail from text-[13px] to text-[${s.detailSize}px]`);
+  if (s.detailMb !== d.detailMb) parts.push(`detail margin-bottom from mb-6 to mb-[${s.detailMb}px]`);
+  if (s.pillText !== d.pillText) parts.push(`video pill text from text-[11px] to text-[${s.pillText}px]`);
+  if (s.pillMaxW !== d.pillMaxW) parts.push(`video title max-width from max-w-[220px] to max-w-[${s.pillMaxW}px]`);
+  if (s.pillMb !== d.pillMb) parts.push(`pill margin-bottom from mb-8 to mb-[${s.pillMb}px]`);
+  if (s.cardPad !== d.cardPad) parts.push(`stage card padding from p-4 to p-[${s.cardPad}px]`);
+  if (s.cardGap !== d.cardGap) parts.push(`stage cards gap from gap-2.5 to gap-[${s.cardGap}px]`);
+  if (s.cardIconSize !== d.cardIconSize) parts.push(`card icon from w-9 h-9 to w-[${s.cardIconSize}px] h-[${s.cardIconSize}px]`);
+  if (s.cardLabelSize !== d.cardLabelSize) parts.push(`card label from text-[11px] to text-[${s.cardLabelSize}px]`);
+  if (s.cardBarH !== d.cardBarH) parts.push(`progress bar height from h-[3px] to h-[${s.cardBarH}px]`);
+  if (s.footerSize !== d.footerSize) parts.push(`footer text from text-[11px] to text-[${s.footerSize}px]`);
+
+  const el = document.getElementById('prompt');
+  if (parts.length === 0) {
+    el.textContent = 'Adjust the controls to see what changes to make to progress-step.tsx. All values match the current code.';
+  } else {
+    el.textContent = `In progress-step.tsx, update the ProgressStep component:\n\n${parts.map(p => '• Change ' + p).join('\n')}`;
+  }
+}
+
+function copyPrompt() {
+  navigator.clipboard.writeText(document.getElementById('prompt').textContent);
+  const btn = document.getElementById('copyBtn');
+  btn.textContent = 'Copied!';
+  setTimeout(() => btn.textContent = 'Copy', 1500);
+}
+
+// Add pulse animation
+const style = document.createElement('style');
+style.textContent = [0,1,2].map(i => `@keyframes pulse${i} { 0%,100% { transform:scale(1);opacity:0.4 } 50% { transform:scale(1.12);opacity:0.15 } }`).join('\n');
+document.head.appendChild(style);
+
+setupControls();
+applyPreset('current');
+</script>
+</body>
+</html>

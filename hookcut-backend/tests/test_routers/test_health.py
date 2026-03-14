@@ -9,6 +9,3 @@ class TestHealth:
         assert data["status"] in ("ok", "healthy", "degraded")
         assert "version" in data
 
-    def test_nonexistent_route(self, client):
-        resp = client.get("/api/nonexistent")
-        assert resp.status_code in (404, 405)

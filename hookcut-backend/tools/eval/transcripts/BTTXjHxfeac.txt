@@ -1,0 +1,335 @@
+[0:00.16] Okay, I'm shooting this video urgently
+[0:01.84] because something insane just happened
+[0:03.76] and we need to talk about it. Recently,
+[0:06.16] 5th of Feb 2026, OpenAI and Anthropic
+[0:09.52] both released their latest
+[0:10.88] state-of-the-art coding models. OpenAI
+[0:13.92] launched Codeex 5.3 on Chad GPT and
+[0:17.44] Anthropic released Opus 4.6. Something
+[0:21.04] insane happened then because these
+[0:23.68] models were not just coding assistants
+[0:26.72] but for the very first time you can give
+[0:28.88] it a single prompt and watch it build an
+[0:31.44] entire application with testing and
+[0:34.56] debugging included on its own. This has
+[0:38.32] never happened before. And I want to
+[0:40.48] talk about the advancement of AI in the
+[0:42.88] past 2 to 3 years. I'll talk about how
+[0:44.88] much AI has progressed. I'll then talk
+[0:46.80] about what is it replacing now. and then
+[0:49.44] I'll talk about what can you do today.
+[0:51.60] At the very end, I'll also share an
+[0:53.04] amazing Chad GPT prompt that you can
+[0:54.88] apply and make the best of AI today.
+[0:57.28] Watch this till the very end. Hit the
+[0:58.56] like button and subscribe. You might
+[1:00.24] have seen the test of Will Smith having
+[1:02.72] spaghetti in 2021, 2022, 2023. And you
+[1:07.28] can already see how amazing it is today
+[1:10.00] with the latest models that we have at
+[1:12.08] Clling and Google V3. And it's only
+[1:14.56] going to get better from there. Video
+[1:16.64] generation is getting better. creating
+[1:18.48] images is getting better. I recently
+[1:20.32] uploaded a video in which I mobbed my
+[1:22.88] face into the biggest celebrities and
+[1:25.36] you know political faces and that 22nd
+[1:28.08] video has over 25 million views. People
+[1:30.40] are genuinely scared because they can't
+[1:32.24] tell the difference between what's fake
+[1:34.16] and what's real anymore. Bottom line is
+[1:36.56] AI progress is getting faster than ever
+[1:39.44] before. The rate of advancement is going
+[1:41.92] through the roof. These latest models
+[1:44.00] charge GPD 5.3 CEX and Opus 4.6 six for
+[1:47.12] the very first time have showcased
+[1:49.60] judgment. They are able to figure things
+[1:52.24] out on their own as if they have taste
+[1:55.12] in them like they just understand what
+[1:57.52] makes sense and make decisions
+[1:59.52] accordingly. Like you can just tell what
+[2:01.68] you want the app to do and it will take
+[2:03.76] all the decisions on its own. This has
+[2:05.92] never happened before. You would always
+[2:07.92] have to do a back and forth with AI. Go
+[2:10.56] on Replet and ask it to fix things here
+[2:12.64] and there and then after maybe one to
+[2:15.20] two hours of chatting with AI, you will
+[2:17.12] create a great app that works. But now
+[2:19.36] we have AI that has almost solved
+[2:21.36] software engineering and creating apps.
+[2:23.60] The researchers at the top AI companies
+[2:25.68] Google, Anthropic, and OpenAI did
+[2:27.60] something very intelligent. They built
+[2:30.08] AI that solves for coding first because
+[2:33.04] now that AI can write great code, it can
+[2:35.60] start writing better versions of itself.
+[2:38.08] And this is not something which will
+[2:39.36] happen in the future. It has already
+[2:40.88] happened. OpenAI shared that Chad GPT
+[2:43.12] 5.3 Codeex is the first model to build
+[2:46.48] itself on its own. So AI that can create
+[2:49.92] better versions of AI. Open Claw is here
+[2:52.56] which means you can now give access of
+[2:54.40] your computer to Claude and let it
+[2:56.88] handle things on its own. So you can
+[2:58.64] give it a task, go outside for 2 to
+[3:00.40] three hours, come back and it will
+[3:02.00] complete all of it on its own, all
+[3:04.64] agentic. And that is the world that we
+[3:07.12] are living in today. And now that AI can
+[3:08.96] write code, they are now coming for the
+[3:10.96] other jobs. Law, finance, accounting,
+[3:13.44] consulting, medicine, and so many more.
+[3:16.08] Design, customer support, it's all going
+[3:18.32] to be replaced. And if you think that AI
+[3:20.48] isn't progressing, let me tell you why.
+[3:22.48] First of all, maybe you're on the free
+[3:23.84] plan of Chad GBT. And that is the
+[3:25.92] biggest problem. The paid version of
+[3:27.60] Chad GPT or any AI tool is significantly
+[3:30.48] better, much higher context windows,
+[3:33.12] much better logic and reasoning, much
+[3:35.28] better outputs, and you are still stuck
+[3:37.52] with the free version which was actually
+[3:39.60] a year older from now. The second reason
+[3:41.76] is you've not used the latest models.
+[3:43.68] You have to try these out and you'll be
+[3:45.76] blown away by the stuff that you can
+[3:47.28] create, by the reasoning that it can
+[3:48.88] have, by the various multimodel
+[3:51.04] capabilities that it now has, the
+[3:52.64] agentic ability that it now unlocks.
+[3:54.72] You've seen child GBT and AI make basic
+[3:56.72] mistakes with mathematics with reasoning
+[3:58.88] in 2023 and you are judging AI
+[4:01.36] capability from that lens. That is the
+[4:04.16] biggest problem. But ever since 01 was
+[4:06.48] launched which was the first thinking
+[4:08.08] model which had chain of thought
+[4:10.16] ability. The whole model shifted. Now
+[4:13.92] Chad GPT and all other models could
+[4:16.96] actually have real logical thinking and
+[4:19.84] reasoning on any problem that you give
+[4:21.92] it. That was the end of 2024. But today
+[4:24.40] in 2026, you literally have PhD level
+[4:26.88] intelligence in the palm of your hands.
+[4:28.96] How do you think that will not replace
+[4:30.56] jobs? What you get wrong is that AI
+[4:33.28] isn't replacing one specific skill. It
+[4:35.84] is a substitute for thinking and
+[4:38.56] cognitive work. So it's getting better
+[4:40.32] at everything at the same time. In the
+[4:42.88] past when the cars were invented, the
+[4:44.88] horse riders learned to drive the car.
+[4:47.20] When machines came in the factories,
+[4:48.88] people learned to work in offices. When
+[4:50.80] Amazon came with the advent of the
+[4:52.48] internet, people started getting into
+[4:54.88] logistics and services. But AI doesn't
+[4:57.36] leave a gap for you to get into.
+[4:59.52] Whatever it is that you will retrain
+[5:01.12] for, it is improving and getting better
+[5:02.96] at that as well. There is no job that
+[5:05.76] you are doing on the computer that is
+[5:07.76] safe right now. And this is not
+[5:09.68] something in the future. It's already
+[5:11.36] happening and starting right now. All
+[5:13.44] right, enough of me fearing you out. How
+[5:15.68] can you get ahead? What can you do about
+[5:17.92] it? Let's talk about that. First of all,
+[5:20.24] get a paid version of Chad GPT or any
+[5:22.64] other AI tool that you're using. Do
+[5:24.88] yourself a service. Buy it. It is going
+[5:27.28] to be absolutely worth it. It has paid
+[5:29.92] back 10, 100, 200 times for me in my
+[5:33.68] particular career. Get the paid version
+[5:35.52] and then switch to the best model
+[5:37.36] possible. Don't go for the fastest
+[5:39.52] model. It will end up choosing a subpar
+[5:41.92] model for that. Go for the best model
+[5:44.40] out there and see how great that is.
+[5:47.12] Number two, don't just ask quick
+[5:48.64] questions. Don't use it as a Google
+[5:50.40] search engine. Ask it as a collaborator.
+[5:53.36] So, what I do is I literally pull in all
+[5:56.16] of my data of my YouTube channel, put it
+[5:58.32] into the chat, ask it questions about
+[6:00.56] it. I put different scripts, ask it to
+[6:03.04] rewrite those scripts, ask it to
+[6:04.80] generate entire new scripts for me to
+[6:06.80] use. I do all of that. I think of it as
+[6:10.00] my partner that I'm working with to
+[6:11.76] collaborate and brainstorm and throw
+[6:13.44] ideas on. And that, I think, is the best
+[6:15.52] thing you can do. you're missing out on
+[6:17.04] 99% of the potential of Chad GPT if
+[6:19.60] you're using it like Google and asking
+[6:21.84] simple one short questions. Number
+[6:24.48] three, understand that the people who
+[6:27.12] get into a meeting and say that hey I've
+[6:29.60] used AI to do this research analysis in
+[6:32.88] 1 hour instead of 5 days are the ones
+[6:35.60] who are going to get ahead. Everyone
+[6:38.00] wants efficiency without compromising on
+[6:40.40] the quality. And if your AI model can do
+[6:44.00] that, you will go much much ahead than
+[6:46.48] people who are too egoistic to use AI
+[6:48.88] tools. And that's actually my next
+[6:50.24] point. Start using AI without having any
+[6:53.04] ego about it. Yes, I know you've
+[6:55.52] prepared for your skill for years.
+[6:58.16] You've done your masters. You've done
+[6:59.92] your PhDs and you want to do things
+[7:03.12] yourself. But stop having that ego that
+[7:06.24] you know AI can't do it better than me.
+[7:08.24] I'll do it better than everything else.
+[7:10.16] Just start using it and see how it can
+[7:12.32] help you do particular tasks. Maybe you
+[7:14.96] are in design. How can it help you to
+[7:16.64] brainstorm better? Maybe you are writing
+[7:18.64] efficiently. See how it can help you
+[7:20.56] with writing tasks. Maybe you are into
+[7:22.56] law or consulting or accounting or
+[7:25.04] finance roles. See how it can help you
+[7:26.72] make a simple financial research model.
+[7:29.52] Evaluate AI by actually using it and
+[7:32.32] stop being egoistic about it. That is
+[7:34.48] really important. Next up, find skills
+[7:36.40] that are harder to replace. Yes, I get
+[7:38.96] it. A lot of things will be replaced,
+[7:40.96] but there are some things which AI just
+[7:43.20] can't simulate. For example, the
+[7:45.44] relationships and the trust you build by
+[7:47.44] being with people in the long term. AI
+[7:49.84] can't, you know, formulate that or work
+[7:52.32] that requires physical presence or work
+[7:54.32] that requires licensed accountability.
+[7:56.64] you need to have a license to be doing
+[7:58.24] this thing and so an AI will not readily
+[8:00.96] be trusted for that role and any
+[8:02.64] industry which will have a lot of
+[8:03.92] regulatory hurdles is a great place to
+[8:06.40] be in because it will always be slow for
+[8:08.96] compliance regulatory issues and other
+[8:11.92] things and because of that they'll be
+[8:13.44] slower to adapt to AI this is not a
+[8:15.68] foolproof way this will only delay AI
+[8:18.40] taking over what you already do the best
+[8:20.32] thing that AI has unlocked is the
+[8:21.92] builder mentality for the very first
+[8:24.16] time in the history of mankind It is
+[8:26.80] possible for you to have an idea for
+[8:28.80] something you want to build, communicate
+[8:31.04] it in English, and get a ready prototype
+[8:33.36] in 1 hour. I'm not even exaggerating. I
+[8:36.00] have built so many apps just because I
+[8:38.48] had an idea for building something, went
+[8:40.64] on to replet, opened up Claude Code,
+[8:43.20] went on to lovable and just built a
+[8:45.28] simple prototype and it was ready for
+[8:47.60] people to try it out in an hour. You
+[8:50.72] will be amazed by how much you can build
+[8:52.96] without even having the skills of
+[8:54.48] building. If you were scared that you
+[8:56.40] would need to learn to code or learn
+[8:58.56] some, you know, very technical skill,
+[9:01.92] all of that is taken away. All that
+[9:04.16] matters is your idea and your ability to
+[9:06.88] articulate that idea effectively. If you
+[9:08.96] want to learn a skill, want to learn
+[9:10.64] something new, you have the best tutor
+[9:13.28] in the world, in the palm of your hands
+[9:15.76] for $20 a month. That is the best thing
+[9:18.40] AI has unlocked. And I think most people
+[9:20.32] take it for granted. The amount of
+[9:22.96] knowledge that you have available to you
+[9:24.72] for absolutely free to be taught to you
+[9:28.48] at the level that you understand
+[9:30.48] available 24/7
+[9:32.72] with the most patience that it can ever
+[9:35.28] have is incredible and I want you to try
+[9:38.88] it out for yourself. Next up, you need
+[9:40.80] to have the adaptability to learn new
+[9:43.20] things. It's not about mastering the
+[9:45.36] latest AI tool. It is learning how to
+[9:48.88] learn things fast. So if you are someone
+[9:51.28] who can learn things fast, adapt
+[9:53.12] quickly, learn new workflows and
+[9:55.36] automations and the new technology and
+[9:57.28] adapt to it, that will give you a
+[9:58.96] leverage that most people will never
+[10:00.40] have because you are not stuck with one
+[10:03.28] tool. You know how to try out new tools
+[10:05.36] and use it in your workflow and get
+[10:07.52] things done faster. And that skill is
+[10:10.00] the most important skill that you can
+[10:11.60] learn in the next 10 years. And lastly,
+[10:14.08] spend at least 1 hour every day with AI.
+[10:16.64] I really think that if you can look at
+[10:18.88] the best things coming out in AI and
+[10:21.04] start implementing them, not just
+[10:23.76] reading the latest features or
+[10:25.84] improvements, but actually getting your
+[10:28.32] hands dirty, opening up the software,
+[10:31.28] trying out something on it, thinking of
+[10:33.84] the things that you do every day and how
+[10:35.92] can AI help you do that faster. If this
+[10:38.96] tool can help you with a particular task
+[10:41.36] using it in real time and seeing the
+[10:43.68] actual difference and noting down the
+[10:45.76] observations this is really important
+[10:48.24] and that is what you need to do. All
+[10:50.32] right. So this is the prompt that you
+[10:53.12] need to enter in child GPT to understand
+[10:55.60] exactly what AI is going to replace that
+[10:58.48] you already do and how can you stand out
+[11:02.08] in the next 5 to 10 years. What skills
+[11:04.56] can you use? What are the next things
+[11:06.40] you can learn and how can you use AI to
+[11:08.72] do things faster? It starts with the
+[11:10.64] context. Then you set the role that you
+[11:13.84] are a pragmatic AI adoption strategist
+[11:16.40] who has helped hundreds of professionals
+[11:18.16] integrate AI into daily workflows. Then
+[11:20.48] you give it the task. Personalize a
+[11:22.88] 30-day AI integration plan that takes me
+[11:25.68] from my current skill level to actually
+[11:27.44] using AI for real work output. Then is
+[11:30.16] the methodology. So audit my exposure
+[11:33.20] based on my role. Identify which parts
+[11:35.60] of job AI can already do at above human
+[11:38.72] level right now. Then find my highest
+[11:42.24] value task. Build my daily practice.
+[11:45.12] Select the tools to use. Map my risk.
+[11:47.68] Write my first five power prompts. And
+[11:50.16] then is the guidelines. So this is an
+[11:53.68] amazing prompt you should try out. I'll
+[11:55.44] put it in the description of this video.
+[11:57.60] What to avoid. I have written that here
+[11:59.60] as well. Information about me. So this
+[12:01.68] is really important. You give it
+[12:02.80] everything that you can about yourself.
+[12:05.52] So what is your job role? What is the
+[12:07.76] industry that you are in? What are your
+[12:09.60] top daily tasks? What is your current AI
+[12:12.08] usage? The biggest time sync at work.
+[12:15.20] Write that down over there. My comfort
+[12:16.96] with technology. And the output is an
+[12:19.04] amazing 30-day actionable plan that will
+[12:22.48] help you to use the best AI tools out
+[12:24.48] there to save a lot of time and get
+[12:26.72] ready for the AI future that is ahead of
+[12:29.28] you. Look at this. This is what it tells
+[12:31.04] me to do. Week 1 to4 plan. Every single
+[12:34.72] day what I need to do is planned out for
+[12:36.56] me and I can become future ready by
+[12:39.68] doing so. That was the video. I hope
+[12:41.92] this helped. Let me know in the comment
+[12:43.28] section if you have any questions. This
+[12:45.52] entire video was inspired from this
+[12:48.32] amazing Twitter article that I found. It
+[12:50.64] has over a 100 million views. I'll also
+[12:53.12] link that in the description of this
+[12:54.24] video. Go watch that. I'll see you in
+[12:55.84] the next video. Goodbye.

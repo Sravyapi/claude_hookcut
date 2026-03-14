@@ -96,44 +96,29 @@ class TranscriptService:
     """
 
     def fetch(self, video_id: str, language: str = "English", video_duration_seconds: Optional[float] = None) -> Optional[TranscriptResult]:
-        result = self._try_youtube_transcript_api(video_id, language)
-        if result:
-            logger.info(f"Transcript via youtube-transcript-api for {video_id}")
-            return result
-
-        result = self._try_innertube_android(video_id, language)
-        if result:
-            logger.info(f"Transcript via innertube ANDROID API for {video_id}")
-            return result
-
-        result = self._try_ytdlp_subtitles(video_id, language)
-        if result:
-            logger.info(f"Transcript via yt-dlp subtitles for {video_id}")
-            return result
-
-        result = self._try_cf_worker(video_id, language)
-        if result:
-            logger.info(f"Transcript via CF Worker for {video_id}")
-            return result
-
-        result = self._try_invidious_captions(video_id, language)
-        if result:
-            logger.info(f"Transcript via Invidious captions for {video_id}")
-            return result
-
-        result = self._try_piped_api(video_id, language)
-        if result:
-            logger.info(f"Transcript via Piped API for {video_id}")
-            return result
+        providers = [
+            ("youtube-transcript-api", lambda: self._try_youtube_transcript_api(video_id, language)),
+            ("innertube-android", lambda: self._try_innertube_android(video_id, language)),
+            ("yt-dlp-subtitles", lambda: self._try_ytdlp_subtitles(video_id, language)),
+            ("cf-worker", lambda: self._try_cf_worker(video_id, language)),
+            ("invidious", lambda: self._try_invidious_captions(video_id, language)),
+            ("piped", lambda: self._try_piped_api(video_id, language)),
+        ]
 
         from app.config import get_settings
         if get_settings().FEATURE_WHISPER_FALLBACK:
-            result = self._try_whisper_api(video_id, language, video_duration_seconds)
-            if result:
-                logger.info(f"Transcript via Whisper API for {video_id}")
-                return result
+            providers.append(
+                ("whisper-api", lambda: self._try_whisper_api(video_id, language, video_duration_seconds)),
+            )
 
-        logger.warning(f"All transcript providers failed for {video_id}")
+        for name, fetch_fn in providers:
+            result = fetch_fn()
+            if result:
+                logger.info("Transcript via %s for %s", name, video_id)
+                return result
+            logger.info("Provider %s returned None for %s", name, video_id)
+
+        logger.warning("All %d transcript providers failed for %s", len(providers), video_id)
         return None
 
     def _try_youtube_transcript_api(

@@ -1,0 +1,655 @@
+[0:02.24] Quit this. Quit this. Hello. Hello.
+[0:04.48] How's everyone doing?
+[0:07.04] Can you guys see me? Um, fairly ad
+[0:09.76] hocish live. Um, there's a live contest
+[0:13.36] happening right now in case you want to
+[0:15.04] participate. U, this is for the Solana
+[0:17.12] India boot camp. So, top 200 people will
+[0:19.12] make it to the boot camp. The top 25
+[0:20.64] amongst them will get a $2,500 grant.
+[0:22.88] It'll be an 8week u immersive SA boot
+[0:25.36] campa. Why not go live and, you know,
+[0:27.60] show you what I'm seeing. I'm basically
+[0:28.88] trying to see a bunch of stats and make
+[0:30.24] sure the platform is up and working. Um,
+[0:32.88] show what I'm seeing. Um, 500 people
+[0:35.28] live right now. Uh, five or three
+[0:37.44] concurrent sandboxes, which is good
+[0:39.04] because we have a limit of 100. We're
+[0:40.96] only on that plan. And this is the
+[0:43.44] platform if you guys want. Uh, there we
+[0:46.56] go. You know, there's this thing called
+[0:49.44] Murphy's law.
+[0:52.00] There we go. We do some live debugging.
+[0:53.76] Uh,
+[0:55.60] that is not good at all. Uh,
+[0:59.12] everything broke. Not a perfect time. I
+[1:01.92] mean, it's sort of breaking and working
+[1:03.04] and breaking and working. Um,
+[1:05.84] see, uh, all right. What is the log?
+[1:09.44] Uh,
+[1:12.00] and you guys can see those. Um, hm, I
+[1:14.56] don't see anything wrong here in the
+[1:16.40] logs. I can just show you. Uh,
+[1:21.04] yeah, as you can tell, um,
+[1:24.32] bunch of errors. server restarting again
+[1:27.04] and again. Probably some solutions that
+[1:29.68] you guys have posted. Uh
+[1:33.44] I [clears throat] just had to have too
+[1:34.56] many logs that I should probably get rid
+[1:37.20] of. Uh but other than that, is it up? It
+[1:41.12] seems up right now, but it's crashing a
+[1:42.88] lot. So, I'm going to try and, you know,
+[1:44.88] see what might be happening and get rid
+[1:46.96] of a few logs that I had. Uh what I'm
+[1:50.08] going to do is uh
+[1:53.44] variables which if I show on stream
+[1:54.96] it'll be a problem. I showed the same
+[1:56.56] variables yesterday on uh in the cohort
+[1:59.52] class. I remember uh too much logging
+[2:02.24] happening on submission. Please remove
+[2:05.76] all those logs. I think that should do
+[2:08.24] it for now. Feels stableish. Um even
+[2:10.80] though you know made me a little anxious
+[2:13.12] a while back. Um for now it looks good.
+[2:16.00] Let me try making a submission.
+[2:18.96] Yeah, I'm I've not added monitoring uh
+[2:22.00] at all. Uh so if it goes I just have to,
+[2:24.56] you know, humanly monitor this. Uh but
+[2:27.28] I'm probably should add after this
+[2:29.28] specific uh video or live. Um there's
+[2:33.12] just a high, but I'm pretty sure there's
+[2:34.48] more. Um there's something that's
+[2:36.32] logging that's cluttering the server. So
+[2:37.76] I can't actually see what the error is.
+[2:39.20] Um I think it's these things, the user
+[2:42.00] files and the test files. I think that's
+[2:43.28] what's breaking. Uh so let me remove
+[2:45.76] these logs and I think the back end
+[2:47.20] would be cleaner after that. Uh all
+[2:49.52] right the contest link for those of you
+[2:51.20] who don't know is here in case you want
+[2:53.84] to give the contest feel free to there
+[2:56.88] is a live contest happening right now.
+[2:59.28] It is for the super devs or no sorry
+[3:01.12] it's now called the Solana India boot
+[3:02.64] camp it which is an 8week sort of a
+[3:04.71] [sighs]
+[3:05.52] a boot camp that I'll be taking. It'll
+[3:07.36] be free but it'll only be open to the
+[3:09.12] top 200 people from this contest. So if
+[3:11.28] you feel like you're up for a challenge,
+[3:13.12] if you feel like, you know, uh
+[3:15.20] participating in a contest and seeing
+[3:16.88] where you stand, which by the way, you
+[3:18.88] know, you can use AI here. Um so there's
+[3:20.96] it's like an open book sort of a
+[3:22.24] contest. Um that should make things very
+[3:24.80] easy. Um compared to, you know, um and
+[3:27.28] see if you're able to get somewhere on
+[3:29.76] the leaderboard. Um
+[3:32.16] stream seems a little weird, but I think
+[3:33.84] mostly fine. [clears throat]
+[3:37.04] You should be able to give the contest
+[3:39.12] even if you haven't filled the form. you
+[3:40.40] should be fine.
+[3:45.04] The contest is up for another 2 hours.
+[3:46.96] As long as you're in the you're in the
+[3:48.24] top 200 um you should be able to uh you
+[3:51.52] know join super devs or whatever India
+[3:53.84] boot camp. All right. Meanwhile, I'm
+[3:56.32] going to see um what might have been
+[3:59.04] happening. Things were a little crazy um
+[4:03.36] when I started the stream. Right now,
+[4:05.52] everything looks okay to me. Um, so I
+[4:08.08] think we're in a okay spot.
+[4:13.36] This worries me a little because we have
+[4:15.20] a limit of only 100 sandboxes. Um, but
+[4:18.48] also you should know you also only have
+[4:20.00] a limit of five submissions per
+[4:21.84] question. So only make a submission, you
+[4:23.84] know, if you feel like uh you're
+[4:26.48] somewhere there. If you can't submit
+[4:27.76] more than five times or probably three
+[4:29.36] times, something like that um per
+[4:31.04] question [clears throat]
+[4:32.48] that you don't have infinite submissions
+[4:33.92] to make.
+[4:37.52] uh [clears throat] contest some related
+[4:39.52] to React Native boot camp. Not really.
+[4:41.92] Uh not the React Native boot camp. No
+[4:44.24] questions here related to React Native.
+[4:46.08] It isn't for the React Native boot camp.
+[4:47.52] It's for the Solana India fellowship
+[4:48.88] which is less React Native, more Solana.
+[4:55.41] [snorts]
+[4:56.00] Um you have to use TypeScript. Um I
+[4:58.64] think if you use JavaScript it might
+[5:00.56] break. Um there is a basic boiler plate
+[5:02.56] here for you. Try to build on top of it.
+[5:04.64] I wouldn't fiddle too much with
+[5:05.84] package.json um or you know the file
+[5:08.72] structure. Feel free to add more files
+[5:10.24] but I wouldn't change this fromts to JS.
+[5:12.72] Um a lot of things can go wrong in the
+[5:14.72] final sandbox over here build on top of
+[5:16.40] it.
+[5:18.99] [clears throat]
+[5:24.24] All right. I think the stream is a
+[5:25.44] little weird but that's fine.
+[5:29.28] All right. We have 661 people right now.
+[5:31.84] 19 concurrent sandboxes, which is fine.
+[5:35.84] And seems like I'm dropping a lot of
+[5:38.16] frames, am I?
+[5:43.28] Still people are getting 502s. There we
+[5:45.60] go.
+[5:48.32] Uh yeah, keep refreshing. You should be
+[5:50.72] able to give it like 5 minutes. Uh I'm
+[5:53.44] trying to debug things on my side as
+[5:55.04] well. Um but yes, the website going is
+[5:58.00] going up and down. Um,
+[6:01.36] it will be the website used for the web
+[6:02.96] three contest that we to do in the code
+[6:04.32] as well. Same website, correct?
+[6:07.60] All right.
+[6:09.42] [sighs]
+[6:10.96] Yeah, it would have been easier for me
+[6:12.08] to just delete these myself. Wait for a
+[6:15.36] bit.
+[6:16.88] Uh, Kubernetes is our friend. Should be
+[6:20.00] able to restart things in a bit.
+[6:24.88] There we go. Not great.
+[6:31.28] Uh
+[6:34.08] [ __ ]
+[6:37.20] I know get rid of leader board and uh
+[6:41.36] radius logic getting rate limited in a
+[6:45.04] live my server. All righty we live debug
+[6:49.04] and hopefully yeah give it like 5
+[6:51.68] minutes. um assume it'll not work for
+[6:54.08] the next five to 8 minutes and thread is
+[6:57.12] in here that I introduced for some
+[6:58.32] reasons. Um but I also know I can't
+[7:01.20] really do much uh like I can't uh didn't
+[7:05.20] write that code. It was mostly web
+[7:06.32] coded. The other thing I can do probably
+[7:07.84] is get a dummy radius URL for now and
+[7:12.00] just make it work. U that seems like the
+[7:13.76] most obvious. It should not do that. Um
+[7:17.12] let's just get rid of you know uh all
+[7:19.60] the radius
+[7:22.32] uh whatever invocations users for now.
+[7:25.44] Um in the only now
+[7:32.16] this was not really needed by say uh but
+[7:34.48] okay
+[7:40.96] I totally forgot I was using a paid I
+[7:43.04] mean I could do one more thing. I could
+[7:44.96] quickly start radius in my cluster. That
+[7:46.56] probably seems like a better faster
+[7:48.16] option. Um
+[7:52.26] [sighs]
+[7:53.84] service for it and use that.
+[7:58.24] So change the secret
+[8:01.60] there as well. All right,
+[8:04.56] let me move this on the side. Uh because
+[8:06.48] it might just, you know, spew the secret
+[8:08.80] in front of everyone. Give it 5 minutes.
+[8:10.96] It will be down for a bit. Uh but should
+[8:13.28] be up soon enough. I totally forgot the
+[8:14.80] Reddis that I was using um was a paid
+[8:17.28] service that I haven't paid for uh as
+[8:19.20] soon as the it hit scale. U it is asking
+[8:22.32] me to pay. I could also go there and pay
+[8:23.84] but I think it's just easier and faster.
+[8:25.20] I don't have a credit card. I have to
+[8:26.40] call homes so on and so forth. Um all
+[8:28.40] right. So wait for a few minutes and
+[8:30.00] then it okay to cla code tab. You can
+[8:33.04] use that. Um I hope
+[8:37.84] uh I'm able to do that quickly. There we
+[8:40.24] go.
+[8:46.24] There you go. That's good. That's good.
+[8:53.76] Deploy. Deploy. Deploy.
+[9:02.56] We'll extend the contest a bit. Um like
+[9:04.72] a few more minutes.
+[9:11.52] >> [sighs and gasps]
+[9:15.28] >> Updating the secret.
+[9:26.00] Done. Apply the changes.
+[9:33.20] There we go. Okay. I think that should
+[9:35.84] be fine. I guess mostly um yeah, I think
+[9:39.36] that should be fine. Uh radius radius
+[9:41.20] URL
+[9:47.28] radius part is creating pod released.
+[9:50.16] You guys can't see the secrets can you?
+[9:51.92] Um
+[9:53.52] no not anymore. So what I did was I
+[9:55.12] quickly deployed radius locally in my
+[9:57.60] cluster. Um updated the secrets to use
+[9:59.92] my local Reddus. Can you check now if
+[10:02.56] everything is working? Um it did deploy
+[10:06.56] Reddus. Uh it was in the process of you
+[10:08.56] know deploying it. Now we're trying to
+[10:10.08] see um
+[10:12.24] is everything working correctly or not.
+[10:13.92] Seems like it for the last 25 seconds.
+[10:15.68] Back end seems up, front end seems up
+[10:17.20] and the radius has started which was you
+[10:18.72] know what we had to quickly migrate the
+[10:21.12] radius. We continue
+[10:26.64] tabation is broken. Feel free to ideally
+[10:29.60] write these things locally. So go to
+[10:31.20] index.ts you know sorry do it locally
+[10:33.60] and then copy and then paste it over
+[10:34.72] here. Um if the you know thing is broken
+[10:37.12] over here. So if I do a let's see let's
+[10:38.96] try to implement a few of these here. So
+[10:44.32] I do know tab in addition was sort of
+[10:46.48] broken if you press bad pad. So um
+[10:50.42] [clears throat]
+[10:51.12] I think something is up with my key
+[10:53.28] frame settings here. That's what YouTube
+[10:54.96] tells me. Um now it is fixed. I will
+[10:58.40] continue to write the code API/
+[11:03.28] Oh yeah a lot of dropped frames here.
+[11:05.76] Hello. Hello.
+[11:07.92] Let's see if it's any better.
+[11:11.68] Hello. Hello. Hopefully I am back.
+[11:15.52] Either way, let me continue to code. Uh,
+[11:19.52] it seems like the question was sign up
+[11:23.28] equal to empty array and uh
+[11:26.64] username equal to rec dot.
+[11:29.84] Actually, a better thing might be to
+[11:31.20] just use zod, but I don't have zod
+[11:33.04] anywhere here, so I think it's fine. um
+[11:35.76] says email. Yeah, this is like really
+[11:37.36] hard to write by hand in 2 hours. Um all
+[11:39.52] the best if you are doing that. I think
+[11:40.88] you'll barely be able to go somewhere.
+[11:42.00] So like definitely use AI to you know
+[11:44.56] sprint through a little bit of this. So
+[11:46.40] it is an open book contest. You're
+[11:47.60] allowed to use AI. Um feel free to do
+[11:49.60] that. Preferably do that otherwise this
+[11:51.20] is not like a 2-hour assignment. Um two
+[11:53.52] of these questions first one and second
+[11:54.88] one are not doable without AI in 2
+[11:57.04] hours. Just keep that in mind. Uh uh
+[12:00.32] man, don't forget to save your files.
+[12:04.16] It seems like
+[12:08.16] the we removed autos save it seems. Um
+[12:10.88] so if you move from one page to another
+[12:12.32] and come back
+[12:14.64] uh yeah unless you manually saved things
+[12:16.80] will break. I wrote a bunch of code that
+[12:18.64] code is gone because I forgot to save.
+[12:20.24] There is no autosave here. So keep that
+[12:22.16] in mind. Uh and you know preferably
+[12:23.60] write all of your code locally. Use
+[12:25.28] cursor, use cloud code, whatever you
+[12:27.04] want. Um, and then eventually copy paste
+[12:28.56] your code over here. That should be
+[12:29.52] fine. Let's see if people have more
+[12:31.44] questions. Anyone have more questions?
+[12:34.08] Let's see. Website seems up. Everything
+[12:36.00] seems stable. I think we're good to go
+[12:38.16] right now.
+[12:41.60] No issues with AI. You can use AI. U,
+[12:44.00] yeah, it's it's about being smart with
+[12:45.44] AI. Yeah, the first question should be
+[12:47.36] very solvable with AI. Um, I would
+[12:48.96] assume a lot of people are able to solve
+[12:50.16] it. The second one, not as much. Um,
+[12:56.00] all right. Um we have a total of 684
+[13:00.40] participants until now. You have to be
+[13:01.76] in the top 200 um India fellowship. I
+[13:04.40] keep forgetting it's called that now. I
+[13:05.84] keep saying super devs.
+[13:08.08] Um
+[13:10.56] this is the I mean let me just add the
+[13:12.72] link somewhere in the description of
+[13:14.40] this video.
+[13:18.72] How do I change that? Uh is a beautiful
+[13:21.52] question. Uh edit title and description
+[13:24.80] and then contest link. There we go.
+[13:27.76] Contest link has also been added u in
+[13:29.60] the video description. I'm curious to
+[13:31.44] see you know if this breaks again and
+[13:33.04] you know what all bottlenecks exist now
+[13:35.20] um in the platform. So feel free to
+[13:38.08] participate
+[13:40.80] and you know try the problems out. The
+[13:42.56] second problem is interesting. Um
+[13:44.65] [snorts]
+[13:45.36] why does it keep stopping? Uh hello
+[13:48.88] hello hello.
+[13:51.12] Yeah I think my internet is really bad.
+[14:09.44] people had a few questions, answered
+[14:11.76] those.
+[14:14.32] I think it's working now. Is the
+[14:16.08] platform working?
+[14:21.20] Is it working now?
+[14:24.56] Please remember to save your files if
+[14:26.40] you're writing code here. Preferably
+[14:27.84] don't write code over here. Write code
+[14:29.52] locally. Copy paste it over here. You
+[14:31.04] have a file where you're supposed to
+[14:32.80] write you know whatever 20 endpoints.
+[14:34.64] The same is true for the the other one.
+[14:36.40] Um so preferably you know I don't I
+[14:40.48] wouldn't trust the editor here too much
+[14:42.16] u and you know write the code locally
+[14:43.44] copy paste it so on and so forth. Anyone
+[14:45.44] have any questions? Um can't import
+[14:47.28] folder big dog. Oh why is your folder
+[14:50.32] too big? It shouldn't have more than
+[14:51.84] five 10 files, right? You are probably
+[14:54.40] importing a folder with the node
+[14:55.60] modules, which is something that's not
+[14:56.80] needed here. Um, so you know, remove the
+[14:59.52] node modules from your folder. Only
+[15:00.80] import the folder minus the node modules
+[15:02.88] and things like these
+[15:09.04] code is the same. Go to code three if
+[15:11.12] you want to do full sign development
+[15:12.32] syllabus also very similar. I don't
+[15:13.68] think much has changed um since code 2
+[15:16.56] three uh quote one I don't know um to
+[15:19.52] show one like not enough syllabus in
+[15:22.24] there that's really you know other thing
+[15:23.92] about it
+[15:27.04] um how to write locally and create a
+[15:29.28] react app [sighs]
+[15:31.68] well there is no expectation of a react
+[15:33.60] app here u it's all you know whatever u
+[15:37.52] nodejs type typescript code that you
+[15:38.80] have to write um if you're asking
+[15:40.96] generally I would google that question
+[15:42.72] um don't need to have some sort of
+[15:44.32] knowledge of web 3. Yeah, sort of. Uh I
+[15:47.04] mean you can also just you know use AI
+[15:49.20] and get to a point but if you really
+[15:51.04] want to learn from this probably need a
+[15:54.32] bunch of you know um you do need
+[15:56.88] knowledge around web 3. That's the
+[15:58.24] assignment is very heavily focused on
+[15:59.68] that. All right let me see if everything
+[16:02.00] is up.
+[16:05.36] Everything looks good to me.
+[16:12.48] Can I use MongoDB in place of Postgress?
+[16:15.20] Uh, you can't. The sandbox doesn't have
+[16:17.68] MongoDB. So, no, you can't. Um, it
+[16:20.24] whatever. I mean, this one doesn't
+[16:21.44] require a database. And this one
+[16:23.04] specifically, sorry, this one doesn't
+[16:24.32] require a database. For example, here
+[16:26.40] I've submitted it thrice. If I submit it
+[16:28.16] two more times, I'm sort of done. That's
+[16:29.68] my last submission. Um, what if I test
+[16:32.24] in both the cases? I don't know. It
+[16:34.48] depends on, you know, how AI codable
+[16:36.40] these problems are, which I think the
+[16:37.44] second one isn't too much. Um so if you
+[16:40.64] get 90 you everyone should be able to
+[16:42.80] get 100% in the first one. The question
+[16:44.56] really is how many people are able to
+[16:45.76] solve the second one and you know get
+[16:47.12] 50% 60% 70%. Um there are language
+[16:50.80] requirements in the sense uh the boiler
+[16:54.24] plate code is in Typescript. So you have
+[16:55.60] to write your code in Typescript. Um
+[16:58.48] try changing the code in one of the
+[17:00.16] files on the UI. Uh
+[17:04.56] should be able to do it. Should be able
+[17:06.08] to save. Should be able to delete.
+[17:08.00] should be able to save. Seems to work.
+[17:09.68] Um the leaderboard is not visible
+[17:11.76] unfortunately. Um yeah, so it it'll be
+[17:15.04] available after the contest, a few hours
+[17:16.64] after the contest. Um you don't need
+[17:18.32] rust knowledge. It's a pure TypeScript
+[17:20.88] uh sort of a you know assignment. Uh
+[17:24.24] although some web three knowledge is
+[17:25.60] super helpful.
+[17:27.60] All right. Seems like a lot of people
+[17:28.64] dropped. Uh I don't know why that is.
+[17:31.28] Are you guys done with the contest?
+[17:34.32] Maybe you are. I don't know. I I I can
+[17:36.08] see the leaderboard locally probably. Um
+[17:39.04] and then any other questions here?
+[17:41.04] Contextual isn't opening. Uh
+[17:44.40] can you try a hard refine
+[17:50.16] platform? So it goes down in between.
+[17:51.84] All right. Um seems like the platform up
+[17:54.64] pausing it. Um
+[17:58.32] yeah,
+[17:59.92] I should definitely push that one fix
+[18:01.68] that I was doing which was removing all
+[18:03.20] the logs.
+[18:05.20] just commit and push. Um,
+[18:16.32] this I was debugging a few days ago.
+[18:18.00] That's why I see a bunch of highs.
+[18:24.64] Someone said you can,
+[18:27.20] even though it seems like
+[18:30.08] the back end isn't responding to it, uh,
+[18:32.48] to hide it. Uh
+[18:35.76] Kira Turk Nilles Palhari is the first
+[18:38.56] you know person. Uh 88 and 98
+[18:45.84] and 98. Okay.
+[18:51.12] What does that even mean? 88% 98%. Um
+[18:56.24] 88 98
+[19:00.40] 60 98 I think everyone has 98
+[19:04.64] I would assume
+[19:07.44] but there only 83 test cases. I'm a
+[19:09.44] little confused. Uh
+[19:12.48] best score 82. I don't know what best
+[19:15.28] score means. It doesn't seem a little
+[19:16.80] too heavily of leaderboard from the
+[19:19.76] contest page. It's just spamming the
+[19:21.76] back end a little too much when we're
+[19:23.12] just not showing the leaderboard right
+[19:25.92] now. Uh doesn't make sense for us to,
+[19:28.00] you know, pull it so heavily. So, I'm
+[19:29.92] going to remove that.
+[19:32.48] Import folder isn't working. Uh
+[19:36.24] let's see.
+[19:38.80] The only thing you need to be sure of
+[19:40.32] when you're importing the folder, make
+[19:41.44] sure it doesn't have node modules. Um if
+[19:43.60] it has no modules, it'll be a problem.
+[19:45.20] Um because it can't import too many
+[19:47.44] files. Other than that, it should
+[19:48.64] probably work. If not, just copy paste.
+[19:50.64] Copy the file, paste the file, save,
+[19:51.92] copy file, paste the file, save, so on
+[19:53.60] and so forth. Um,
+[19:56.16] cool. Um, great. Hopefully, this got rid
+[19:58.96] of the right things.
+[20:04.08] I'm doing a lot of things locally, but I
+[20:05.68] think they're all useless right now. As
+[20:06.96] long as the platform is up, I probably
+[20:08.16] I'm not going to push anything to it.
+[20:10.64] Um, and you know, it's fine if the
+[20:12.00] leaderboard is public. There's no
+[20:13.28] downside to it.
+[20:15.76] All right. Everything seems fine. Uh
+[20:21.28] yeah,
+[20:23.20] great. People have been dropping off.
+[20:24.88] Either it's very difficult or they have
+[20:26.48] just submitted and they've left. Um
+[20:28.16] which I think is fairly easy to do. Like
+[20:30.72] if you use AI, it's fairly easy to just
+[20:32.32] copy paste the problem statement and you
+[20:33.84] reach a certain point. Um you can still
+[20:36.96] answer the questions. Uh
+[20:40.08] yeah, it's fine. I mean it's an open
+[20:41.28] contest. Uh it's not only for super devs
+[20:43.20] people. It's for anyone. Um anyone can
+[20:45.20] come and you know um
+[20:48.96] solve the questions over here. It's not
+[20:50.80] a closed contest. All right. I think
+[20:53.04] website is not responding.
+[20:57.12] Uh seems to work is uh
+[21:03.12] do I push to prod directly? No. I run it
+[21:06.64] locally and make sure everything is up
+[21:08.48] before I push to prod. Um
+[21:12.64] uh
+[21:15.28] first time saw this express backend in
+[21:18.88] Typescript
+[21:21.36] that's probably one of the most popular
+[21:23.20] or common stacks in Typescript for HTTP
+[21:26.00] servers. No. Uh
+[21:31.28] all right.
+[21:34.56] Is it running things locally?
+[21:39.20] It is. Has my change broken anything.
+[21:47.28] Uh,
+[21:50.80] no, seems fine. And am I pulling the
+[21:53.28] leaderboard now?
+[21:55.84] I am not. Uh, I should be fine. I think
+[22:00.56] I am good to commit it and push to prod.
+[22:04.08] Um,
+[22:05.92] the only thing it'll help with is um
+[22:07.76] slightly lesser noisy logs and uh the
+[22:11.36] leaderboard not getting pulled um ever
+[22:13.92] so often. I can probably also hide the
+[22:16.32] leaderboard at endpoint. Uh
+[22:20.00] yeah, I'm probably going to do that. Uh
+[22:31.12] I hope it's committing the right things.
+[22:32.88] Uh,
+[22:35.36] red is removed from leaderboard.
+[22:38.16] Yeah. So, we don't want that. Uh, can
+[22:41.60] you revert the redest change? Okay. Uh,
+[22:46.00] it is fine to keep it. Yeah, my bad. Um,
+[22:50.96] how much time does it take to run all
+[22:52.08] the tests? Probably five. No, not 5
+[22:55.52] seconds. At least like 30 seconds to a
+[22:57.28] minute. uh for every question.
+[23:04.32] Yeah, this is going to be a problem very
+[23:06.08] soon. Um because we have a limit of 100
+[23:09.36] here. Um
+[23:12.48] so yeah, be very careful with the
+[23:14.00] submissions that you're making. Don't
+[23:15.36] make too many of them. Um
+[23:18.96] don't pulling the back end much. Will
+[23:21.28] will it be unnecessary? Not really. Um,
+[23:26.08] uh,
+[23:27.84] I'll probably have to get rid of
+[23:28.96] everything here. Uh, what was the
+[23:30.56] changes I never mind? You know what? Get
+[23:32.64] log.
+[23:34.40] Uh, yeah, let's just hard reset back.
+[23:42.72] And then now remove all logs from submit
+[23:48.64] end point. Stop polling leader
+[23:53.36] board from contest page for now since
+[23:57.12] we're not showing leaderboard
+[24:00.64] currently. All right, that should be
+[24:02.56] good enough. Um, and my question is one
+[24:05.20] is running it's not running if it's
+[24:06.88] running for 1 hour 90 minutes. Uh, it
+[24:08.80] was probably running and then the server
+[24:10.24] crashed and hence you should resubmit.
+[24:11.84] Um if you see running for an for if you
+[24:16.40] see running for more than 5 minutes that
+[24:18.00] means there that specific problem has
+[24:19.60] been skipped um to just resubmit. Um you
+[24:22.64] don't have to push the envir
+[24:26.32] uh you will only have access to you know
+[24:28.24] these environment variables. Um so there
+[24:30.08] will be a database running you will have
+[24:31.20] access to where it's running using this
+[24:32.72] variable and there will be JD secret. U
+[24:34.64] if you have any other env to introduce
+[24:36.40] you will have you can just write them
+[24:37.68] directly in your codebase.
+[24:39.76] Don't put them as env files. Um there
+[24:43.12] are some issues with importing stuff.
+[24:44.72] What issues do you see? Um if you do see
+[24:47.04] issues like these you have a single file
+[24:48.88] just dump everything over here. Um
+[24:52.00] and that should do it. Um
+[24:56.80] right.
+[25:02.88] Uh there's no DSA in here. U it's all
+[25:06.08] like two dev contests that too specific.
+[25:08.24] If it's again it's still running then
+[25:10.72] that submission is dead. Um try making
+[25:12.64] another submission. Let me try if
+[25:14.96] submissions are generally broken or
+[25:16.56] something. Um bro this is a very big
+[25:19.12] problem. We're about to reach 100 here.
+[25:22.48] Uh-huh. Uh
+[25:25.52] okay. Let me just go to production
+[25:27.68] submissions.
+[25:29.68] Try to make a submission.
+[25:32.24] ceued
+[25:35.12] running.
+[25:41.84] Let's see if this works.
+[25:46.00] A lot of people are saying it's running.
+[25:47.44] Shouldn't be a problem. As long as we
+[25:48.88] receive your submission, we can rerun
+[25:50.64] them locally after the contest. Um, just
+[25:53.20] make sure submission goes in. And as for
+[25:56.96] this, returns the right thing.
+[26:00.80] Now either E2B is a problem or
+[26:04.80] there is some bug in the code.
+[26:09.12] Oh no, it it is working for me. It's
+[26:10.56] taking slightly longer. Um but seems to
+[26:12.80] work for me. Um either way if it is
+[26:15.04] stuck on uh to the contest. Is there any
+[26:18.56] um but mostly no. There is no priority
+[26:21.52] to
+[26:23.36] time of submission yet in the
+[26:24.88] leaderboard. Um
+[26:27.52] this 83 to 83 should be very doable. I
+[26:29.84] say um because as I've said it's like an
+[26:32.32] open book contest. You can use AI. This
+[26:34.00] one might be trickier. Um getting 65 out
+[26:36.56] of 65 here might be a little tricky. Um
+[26:39.36] all right. [snorts]
+[26:40.56] Everything looks good.
+[26:44.00] I'm able to make submissions. Let me try
+[26:46.16] it for the second one. Again if it's
+[26:48.80] stuck for running on running for you uh
+[26:51.04] that means the back end crash at some
+[26:52.48] point. So just so you're going to fail
+[26:54.48] again and again there's probably a
+[26:56.80] syntax error or something if it is
+[26:58.40] getting failed and again try reverting
+[26:59.76] the code. Try starting from scratch
+[27:01.76] submitting this. If this works then you
+[27:03.36] know try to build on top of this. U if
+[27:05.68] you're writing some code uh that is not
+[27:08.72] and that has a compilation error then
+[27:10.24] you'll see execution error or something
+[27:11.60] like that here. Um
+[27:14.00] that is a problem in your code. U but if
+[27:16.72] it's like stuck on running then it's a
+[27:18.00] problem on us. Uh but the good thing is
+[27:19.28] we'll reprocess the running um
+[27:21.44] transactions again or you know whatever
+[27:22.80] transactions. Um submissions again. This
+[27:24.64] looks good. Um currently seems to be
+[27:27.12] working as expected. I'm able to make
+[27:28.80] submissions. Um only thing is you know
+[27:31.28] my code of course is incorrect. If
+[27:33.28] you're getting failed uh try to look at
+[27:35.28] your code restart like make sure you
+[27:37.44] copy your code locally then start from
+[27:38.80] scratch try to submit it. Then if it
+[27:40.72] works then u then you know try to build
+[27:44.32] on top of the basic boiler plate code.
+[27:46.08] Um
+[27:48.56] will we get invalid if we build app
+[27:50.80] using AI? No, you should be fine. You
+[27:52.72] can use AI. There is no plagiarism or AI
+[27:55.12] checks. Um you can use AI to submit.
+[28:00.48] All right. Seems good. Seems okay. 1
+[28:04.88] hour goes as well. I'm assuming towards
+[28:06.64] the end too many people will submit and
+[28:07.92] then we'll hit the limit here. Um but
+[28:10.64] hopefully that doesn't happen. Um I
+[28:12.16] think we're good to monitoring for the
+[28:13.60] next 1 hour. The contest is still up,
+[28:16.00] still available for the next 1 hour. If
+[28:17.20] you want to give it, feel free to give
+[28:18.32] it. There are 823 participants. The top
+[28:20.08] 200 will make it to the next or to to
+[28:22.64] the current uh superv contest. I will
+[28:24.80] see a few of you there. The top 200 that

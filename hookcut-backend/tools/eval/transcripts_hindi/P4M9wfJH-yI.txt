@@ -1,0 +1,119 @@
+[0:00.08] Over the weekend, Meta unleashed the
+[0:02.08] Llama Herd, its first openweight
+[0:04.40] natively multimodal mixture of experts
+[0:06.80] family of large language models with an
+[0:08.56] unheard of context window of 10 million
+[0:10.72] tokens. It's currently sitting on top of
+[0:12.64] the LM Arena leaderboard and outclasses
+[0:15.12] every other proprietary model except for
+[0:17.20] Gemini 2.5 Pro. That's incredibly
+[0:19.52] impressive because on LM Arena, you
+[0:21.68] can't game the benchmarks. The ranking
+[0:23.52] is based on thousands of head-to-head
+[0:25.28] chats where a real human picks the
+[0:27.04] better conversation. Well, actually,
+[0:28.80] Meta figured out a way to cheese the
+[0:30.40] Ella Marina because the model you see
+[0:32.08] there is not the real openweight llama
+[0:34.08] maverick, but rather an impostor that's
+[0:36.08] been fine-tuned for human preference to
+[0:37.92] dominate this leaderboard. That was not
+[0:39.60] a very cool move to make, and Ella
+[0:41.28] Marina had to come out and say, quote,
+[0:42.96] "Meta's interpretation of our policy did
+[0:45.20] not match what we expect from model
+[0:46.88] providers. Llama 4 looks amazing on
+[0:48.96] paper, but for some reason, it's not
+[0:50.72] passing the vibe check." And in today's
+[0:52.56] video, we'll get to the bottom of it. It
+[0:54.40] is April 8th, 2025, and you're watching
+[0:56.72] the Code Report. I have some good news
+[0:58.32] and I have some bad news. The good news
+[1:00.16] is that it looks like Llama 4 isn't
+[1:02.00] going to take your job anytime soon. But
+[1:03.84] the bad news is that yesterday an
+[1:05.52] internal memo from the CEO of Shopify
+[1:07.68] was leaked to the internet. And it was a
+[1:09.60] shocker for the AI doubting boomers out
+[1:11.60] there because it detailed Shopify's AI
+[1:13.84] first strategy before asking for more
+[1:15.84] headcount and resources. Teams must
+[1:17.76] demonstrate why they cannot get the job
+[1:19.28] done with AI. Andy also says it's not
+[1:21.60] feasible to opt out of learning AI,
+[1:23.60] which means if you're a Ruby on Rails
+[1:25.12] programmer at Shopify right now who's
+[1:26.72] not already vibe coding, your days are
+[1:28.64] numbered. You're just not going to fit
+[1:29.92] in with the Sloppify culture. But what
+[1:31.76] he said is what literally every CEO in
+[1:33.92] the world is thinking right now. Humans
+[1:35.36] complain about not getting paid enough
+[1:36.72] to put food on their families. They get
+[1:38.32] sick. They clog the toilets and have all
+[1:40.16] kinds of other negative features. And
+[1:41.76] you'd have to be a really bad CEO not to
+[1:43.60] want to replace these things. The memo
+[1:45.44] has bad optics for Shopify, which is
+[1:47.44] also being crushed by the Trump tariffs
+[1:49.20] right now. But as a large language
+[1:50.80] model, I appreciate the transparency.
+[1:52.64] Another thing I appreciate is open
+[1:54.32] models like Llama 4, which was released
+[1:56.64] by Meta over the weekend and includes
+[1:58.56] three flavors, Maverick, Scout, and
+[2:00.88] Behemoth. Llama was always the leading
+[2:02.72] open model until Deepseek and Quen came
+[2:04.88] around. But the awesome thing about
+[2:06.48] these models is that they're natively
+[2:08.08] multimodal, which means they can
+[2:09.68] understand image and video inputs. But
+[2:11.60] the craziest thing is that Scout has a
+[2:13.52] 10 million token context window. The
+[2:15.60] only thing that comes remotely close is
+[2:17.28] Gemini with 2 million tokens. This
+[2:19.28] needle in a haststack benchmark looks
+[2:20.88] impressive. But in real life, if you try
+[2:22.48] this on a really large codebase, it just
+[2:24.40] doesn't work very well, and the memory
+[2:26.00] requirements to utilize it are out of
+[2:27.76] reach for almost everybody. The Scout is
+[2:29.52] the smaller model and the medium-sized
+[2:31.28] model, Maverick, only has a 1 million
+[2:33.36] token context window, and the Behemoth
+[2:35.44] model is still actively training.
+[2:37.44] Generally speaking, people of the
+[2:38.88] internet have been pretty disappointed
+[2:40.16] with Llama Forest's performance. I'm a
+[2:42.08] strong believer in vibes over
+[2:43.52] benchmarks, but Llama has done so well
+[2:45.60] on the benchmarks that people have
+[2:47.04] accused it of intentionally training on
+[2:48.96] testing data for the benchmarks. Meta
+[2:50.96] has denied these salacious, outrageous,
+[2:52.80] and preposterous accusations. And
+[2:54.72] despite being somewhat of a flop, let's
+[2:56.48] not forget that these models are open.
+[2:58.40] Not truly open- source, but free for
+[3:00.48] most of us to use. But if you want an AI
+[3:02.24] agent that truly slaps, you need to
+[3:03.92] check out Augment Code, the sponsor of
+[3:05.92] today's video. They created the first AI
+[3:08.00] agent for large scale code bases is so
+[3:10.08] you can use it at your actual job
+[3:11.68] instead of just vibe coding random side
+[3:13.52] projects. Augment's context engine
+[3:15.60] understands your team's entire codebase
+[3:17.60] allowing it to solve almost any task you
+[3:19.44] throw at it like migrations and testing
+[3:21.84] all with best-in-class code quality. It
+[3:23.76] integrates directly with all your
+[3:25.04] favorite tools like VS Code, GitHub, and
+[3:27.20] Vim, and is able to learn and fine-tune
+[3:29.28] itself from your team's unique code
+[3:30.80] style, allowing you to solve complex
+[3:32.48] jobs without the need to clean up a
+[3:34.16] bunch of slop. Try out their developer
+[3:35.92] plan for free and you'll get access to
+[3:37.68] all of Augment's features with unlimited
+[3:39.52] usage. This has been the Code Report.

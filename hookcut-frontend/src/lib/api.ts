@@ -107,10 +107,10 @@ export const api = {
       body: JSON.stringify({ youtube_url }),
     }),
 
-  analyze: (youtube_url: string, niche: string, language: string) =>
+  analyze: (youtube_url: string, niche: string, language: string, interview_mode: boolean = false, speaker_count: number = 2) =>
     request<AnalyzeResponse>("/analyze", {
       method: "POST",
-      body: JSON.stringify({ youtube_url, niche, language }),
+      body: JSON.stringify({ youtube_url, niche, language, interview_mode, speaker_count }),
     }),
 
   getTaskStatus: (taskId: string, signal?: AbortSignal) =>

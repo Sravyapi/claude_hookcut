@@ -1,0 +1,783 @@
+[0:00.24] Ladies and gentlemen, welcome to another
+[0:02.00] video where, you know, a lot of you have
+[0:03.60] been DMing me saying, "Why don't you
+[0:05.44] make a video on Claudebot, which is now
+[0:07.44] called Open CL?" And, you know, I've
+[0:09.04] just been super busy over the last 3 or
+[0:10.80] 4 days, you know, game stuff, work
+[0:12.88] stuff, business stuff. It's been so
+[0:14.48] crammed. So, I called my friend Sid from
+[0:16.64] 100x engineers and I said, "Sid, I know
+[0:18.56] you've been playing with OpenClaw for
+[0:19.84] the last week. Can you come do a
+[0:21.84] tutorial with us and we'll just show
+[0:24.00] people use cases and how to get set up
+[0:25.68] very quickly?" And he said, "Cool. I'm
+[0:27.68] in." So today we're going to talk about
+[0:30.00] OpenClaw Sid. We're going to talk about
+[0:31.76] how to set it up. Before that Sid, how
+[0:34.00] long have you been using this? What's
+[0:35.04] the coolest thing you've done?
+[0:36.00] >> The coolest thing which I've done so far
+[0:37.36] is automating my grocery ordering so
+[0:39.60] that my cook doesn't bug me every
+[0:41.28] morning.
+[0:42.00] >> Very cool.
+[0:42.32] >> I order this and
+[0:43.28] >> can you cook talk directly to OpenClaw
+[0:44.88] now? Can can you text openclaw?
+[0:46.24] >> So I sent this number to her but uh I'm
+[0:48.64] not very sure.
+[0:50.56] >> Awesome. So let's find out. Let's set up
+[0:52.48] OpenClaw. How do we begin?
+[0:54.16] >> So we have multiple ways to set up the
+[0:55.76] open claw. One is on cloud that is a
+[0:57.36] more secure way. So we have options like
+[0:58.96] digital ocean where you can like get a
+[1:00.72] droplet which is your cloud server and
+[1:02.32] deploy it there and another way is like
+[1:05.04] you can do it on your local machine.
+[1:06.48] However, this is a very early stage
+[1:09.04] project. So I would not recommend anyone
+[1:10.64] to install it on your personal machine
+[1:12.40] go because of security risk.
+[1:13.84] >> Exactly. Can you tell us what all can
+[1:15.20] happen? So by default this has the
+[1:18.00] tendency to connect with any remote
+[1:19.68] server and it also like opens your
+[1:22.00] desktop or the the app machine which
+[1:24.40] you're using to the entire public
+[1:25.84] internet so anyone can access it like
+[1:27.68] they can do malicious things and plus it
+[1:29.84] takes some time to set up. I have a
+[1:31.60] question is there any brainless way to
+[1:33.04] use it any platforms?
+[1:34.96] >> Uh recently emergent actually launched
+[1:36.88] something cool which is a onceclick
+[1:38.88] setup. So we can actually show that.
+[1:40.88] >> Okay so you go to emergent website. This
+[1:42.72] is emergent.sh SH and now they have
+[1:44.56] added like one click setup. So earlier
+[1:46.72] it used to take like couple of steps to
+[1:48.40] like install it, get a server. Now it's
+[1:50.80] just like one step process. So you click
+[1:52.24] on this
+[1:52.64] >> one click. Yeah, just one click. Just
+[1:55.28] one click and you press enter. So it
+[1:58.00] automatically runs all the script. It
+[2:00.64] gets a new server on the emergence uh
+[2:03.68] back end and then initializing right now
+[2:05.84] the cloud environment. It gets all the
+[2:07.76] resources and it's starting. It's
+[2:10.48] already set up.
+[2:11.28] >> Yeah. So it's it'll take like a couple
+[2:12.96] of minutes to set up everything up and
+[2:14.56] then you can access everything on a link
+[2:16.72] which it'll give you.
+[2:17.60] >> Cool.
+[2:17.92] >> So let's not do this uh emergence school
+[2:20.24] for people who don't want to go through
+[2:21.12] the setup process. So let's actually go
+[2:22.96] through the local setup process. Let's
+[2:24.88] see what it's actually like to do on
+[2:26.72] your local machine. How do we start? You
+[2:28.48] go to opencloud.ai. So yeah, first go to
+[2:30.64] opencloud.ai and based on your operating
+[2:32.96] system. Right now we're using a Windows
+[2:34.48] machine. So make sure you have WSL and
+[2:36.80] NodeJS. These are the two prerequisites.
+[2:38.48] Uh, and for those of you that are
+[2:39.84] listening, it's pretty easy to get WSL
+[2:41.84] started. Make sure you choose the Ubuntu
+[2:43.20] dro using Ubuntu, I assume. Just go to
+[2:44.96] Google, search for how do I get WSL on
+[2:47.28] my Windows machine. And the second thing
+[2:48.80] you need is NodeJS.
+[2:49.92] >> NodeJS. Yes.
+[2:50.72] >> Awesome. So Google how to get NodeJS on
+[2:52.80] WSL. It's fairly simple simple steps. We
+[2:55.52] don't want to make this a very very
+[2:56.80] lengthy tutorial. So just pick those two
+[2:58.24] up. So next step just write this command
+[3:00.48] in WSL. In WSL npm openclaw. This will
+[3:04.72] install OpenClaw on your machine. And
+[3:07.20] after this you can write this last
+[3:09.04] command which is openclaw onboard. So
+[3:10.72] two commands openclaw uh install npm ig
+[3:14.16] and then openclaw onboard.
+[3:15.76] >> Awesome.
+[3:16.40] >> So let's uh run this openclaw on board.
+[3:20.40] So this is like a wizard but
+[3:21.92] >> yes
+[3:22.24] >> in the terminal.
+[3:22.88] >> So it'll like set up everything for you.
+[3:24.40] A very cool thing about open claw is it
+[3:26.56] asks you to define the identity and give
+[3:28.72] a soul to it. So you actually like uh
+[3:30.88] need to give it the identity. What do
+[3:32.56] you think? Like what can you tell it to
+[3:34.56] be? Let's make it the most rude agent
+[3:37.84] possible. First, it gives you a security
+[3:40.56] warning. Let's make this full screen. It
+[3:42.56] gives you a security warning, and this
+[3:44.16] is important. Open Claw is a hobby
+[3:45.60] project and still in beta. Expect sharp
+[3:47.44] edges. This bot can read files and run
+[3:49.60] actions. remember that every text you
+[3:51.52] send the bot or anything you do on
+[3:53.04] WhatsApp with the bot uh there's a lot
+[3:55.44] of possibility of you you know kind of
+[3:58.08] giving out your personal details which
+[3:59.52] is why actually we recommended emergent
+[4:01.28] or any of these cloud solutions where
+[4:03.60] it's easier for you to use this without
+[4:06.08] giving away details right I know Sid
+[4:08.16] you've set this up on a separate machine
+[4:10.32] and even the WhatsApp number you have is
+[4:12.00] a separate number that you've created
+[4:13.76] >> we have bought like a different number
+[4:15.12] and a different email also for this
+[4:17.12] >> super so I understand this is powerful
+[4:18.56] and inherently risky I said yes. So
+[4:21.04] let's start the onboarding mode. We'll
+[4:22.88] do a quick start. U so it'll ask me
+[4:25.04] first which model I need to use.
+[4:27.12] >> Let's use OpenAI.
+[4:28.16] >> Let's go with OpenAI. So we need to copy
+[4:30.80] the OpenAI key which will not show our
+[4:33.04] key here.
+[4:34.08] >> So I'll use the existing one.
+[4:36.24] >> Okay, just copy paste the OpenAI key. If
+[4:38.00] you don't know how to get an OpenI key,
+[4:39.20] just go to Google and type how do I get
+[4:40.56] an OpenAI key.
+[4:41.68] >> And uh I'll be using OpenAI GPD 5.2
+[4:44.16] model. uh for this particular agent I
+[4:46.64] would recommend using a model which has
+[4:48.32] a reasoning engine or which has
+[4:49.60] reasoning on by default. So GP2 5.2 2
+[4:52.40] works uh cloud 4.5 opus works great
+[4:55.20] >> and this is mostly because you wanted to
+[4:57.12] execute tasks exactly as you are as you
+[4:59.52] want but also for security reasons it
+[5:01.52] won't let you like you know do stupid
+[5:03.52] things
+[5:04.00] >> exactly and the next thing is now we
+[5:05.76] need to select a channel so by default
+[5:07.68] it gives you options you can choose
+[5:09.68] telegrams discord what do you want to
+[5:11.92] select
+[5:12.24] >> let's choose
+[5:14.56] so let's use this and we'll start
+[5:18.16] linking ours so we'll add your personal
+[5:20.24] WhatsApp number so we'll use your phone
+[5:22.08] and your number. We've selected
+[5:24.00] WhatsApp. Configure skills. Now Sid, so
+[5:27.04] what are skills?
+[5:28.08] >> So this is how you can extend the
+[5:29.68] capabilities of this agent. Suppose
+[5:31.60] tomorrow you wanted to teach how you
+[5:33.20] write. So you can like transfer all the
+[5:34.96] learning and you can create a new skill
+[5:36.80] which this cla bot can learn.
+[5:38.16] >> And are these the same cloud skills that
+[5:40.08] we can use or these are specifically for
+[5:42.00] open claw?
+[5:42.56] >> So skills are portable by nature and
+[5:44.32] they have actually use the same concept
+[5:45.84] of what claude is using. So you can
+[5:47.68] actually convert the existing claude
+[5:49.28] skills and you can repurpose here.
+[5:50.64] >> Lovely. We'll skip that for now. We'll
+[5:52.40] also skip hooks. Let's start the
+[5:54.08] gateway. So now the OpenClaw has
+[5:55.84] started.
+[5:56.48] >> How do you want to hatch your OpenClaw
+[5:58.00] bot and it says it's on the browser. So
+[6:00.88] now it's set up on the browser, I
+[6:02.56] assume.
+[6:02.88] >> Yes. So this is the link and this is a
+[6:04.96] local host link.
+[6:06.08] >> Okay.
+[6:06.40] >> Again, I'm very skeptical about its
+[6:08.64] abilities. Uh so I'm only running it on
+[6:11.20] my local machine.
+[6:12.16] >> So let's click on that. Cool. So Open
+[6:14.48] Cloud Control has opened. So this is the
+[6:16.08] chat. We'll come back to the chat in a
+[6:17.44] bit. There's overview of everything
+[6:19.44] that's going on. just a at a glance.
+[6:22.00] Then there are channels. We have
+[6:23.60] WhatsApp as a channel.
+[6:24.72] >> The communication channels
+[6:26.32] >> but as you said we can you know install
+[6:28.16] discord telegram whatever way you want
+[6:30.56] to chat with openclaw you can set that
+[6:31.92] up but WhatsApp is best. Then there are
+[6:33.84] instances. Yeah. So what are instances
+[6:35.68] sid?
+[6:36.00] >> So open cloud by default can be run on
+[6:38.16] multiple devices on CLI on UI. So these
+[6:41.04] are all the instances which is running.
+[6:42.80] >> Awesome. Sessions which is how we're
+[6:44.64] connected. Your phone is connected as I
+[6:46.32] can see here. Then there are chron jobs
+[6:47.76] I assumed are timed things that open
+[6:49.36] clock can run for you. Can you explain
+[6:50.56] what a chron job is?
+[6:51.52] >> Chron job is a process which can run
+[6:53.28] automatically in background. So you can
+[6:54.96] give it a time so that for example every
+[6:56.88] morning if you want to receive the top
+[6:58.16] five trending things which is happening
+[6:59.52] in AI so you can set up chron job for
+[7:01.44] that it can go and check your favorite.
+[7:03.68] >> This is when it hits you right like you
+[7:05.44] can have 8 a.m. something pop up 5:00
+[7:07.44] p.m. something pop up. And I think you
+[7:08.80] know this just this UI on open claw is
+[7:11.36] so dense. There's so many things and
+[7:13.28] there's so much to learn. I feel like a
+[7:14.96] lot of companies will hire like an open
+[7:16.56] cloud expert to come set it up for them.
+[7:18.24] >> In fact, there's a company right right
+[7:19.68] now which are actually doing the same
+[7:21.04] service. You can like ask them and
+[7:22.32] they'll come to your doorstep and set up
+[7:24.40] everything for you.
+[7:24.96] >> I'm very confident enterprise in India
+[7:26.48] will need something like this and
+[7:27.52] they'll ask well what are the things we
+[7:28.88] can automate. So if you're watching this
+[7:30.48] video and this entire tutorial is going
+[7:32.16] to be free uh you probably have you know
+[7:35.92] something you can freelance with. You
+[7:37.20] probably have a new skill that you can
+[7:38.24] pick up and of course you can go even
+[7:39.68] deeper after you watch this video. But
+[7:41.68] then again agents have skills and there
+[7:44.72] are lots of skills I can see here which
+[7:46.16] we've not installed like one password
+[7:47.84] Apple notes Apple reminders bird blog
+[7:51.28] watcher so these are skills you can add
+[7:53.04] that can do specific stuff for you so
+[7:54.64] they've coded or rather prompted you
+[7:57.12] know set of things that can do at the
+[7:58.72] end of the day it's just like set of
+[7:59.84] prompts and written SOPs and you can
+[8:01.52] also build your own skills for your use
+[8:03.60] case. It's very interesting in Ruby on
+[8:05.28] Rails we had this idea of gems. Yeah.
+[8:07.20] Right. Which you can use to extend but
+[8:08.64] all those gems were written with code
+[8:10.80] here. All these skills are written with
+[8:12.16] English which is cool. So anyone as long
+[8:14.24] as you have good ideas and you can write
+[8:16.00] it down you can now add any skill and
+[8:18.48] open cloud will do it for you which is a
+[8:20.64] crazy world that we live in. In fact
+[8:22.40] this is the future of software.
+[8:23.60] >> Yeah exactly.
+[8:24.40] >> Then there are nodes uh which we don't
+[8:26.16] need to get into right now. Then there's
+[8:27.36] config which is how we've configured in
+[8:29.36] that initial onboarding
+[8:30.56] >> control panel where you can like change
+[8:32.32] the model name. You can change the
+[8:34.48] setups, the commands, anything which you
+[8:36.24] want to add and remove from the
+[8:37.76] settings.
+[8:38.48] >> Lovely. Then there's debugging which we
+[8:40.08] don't need to get into and logs which is
+[8:41.52] what have you done so far. And then
+[8:43.20] finally there's documentation which if
+[8:44.96] you want to read more about OpenClaw you
+[8:46.48] can. Let's go all the way back to chat.
+[8:49.28] Sid we're going to chat with this bot
+[8:51.28] through your phone through messages. Uh
+[8:53.60] so let's start. Can I send a message?
+[8:55.52] Yeah.
+[8:55.68] >> Can you show me the number that you
+[8:56.80] have? Awesome. So, this is the chat with
+[8:59.68] OpenClaw. Hey, OpenClaw,
+[9:02.40] from now on.
+[9:04.80] Your name is
+[9:07.12] Raju and you will only respond to Raju.
+[9:10.72] I assume OpenClaw is special because it
+[9:12.72] has memory.
+[9:13.44] >> Yes.
+[9:13.84] >> So, this would this should work.
+[9:16.24] >> So, it's chatting. You can see it's
+[9:18.08] typing which is very cool. And it says I
+[9:21.04] can't follow only respond to Raju
+[9:22.56] because you still need to be able to
+[9:23.84] reach me normally and system gateway
+[9:25.52] will still come through. I can do this
+[9:26.80] instead. My name is Raju. I'll prefer
+[9:29.20] responding when you address me as Raju,
+[9:30.64] but I'll still respond when you ask me
+[9:31.84] normally so you're not locked out. Okay,
+[9:33.84] that's fine. And it says, you know, if
+[9:35.36] you want to stricter rule, tell me.
+[9:36.48] Should I ignore messages that don't
+[9:37.68] include the word Raju? Let's not do
+[9:39.36] that. But let's start with, "Hey Raju,
+[9:43.20] uh, from now on, I want you to respond
+[9:47.20] to me like a Gen Z kid with Gen Z
+[9:52.00] slang." Okay, this is very cool. I'm
+[9:55.28] communicating with the AI in the PC and
+[9:56.96] I can see it in the chat on the PC as
+[9:58.40] well, but communicate with my AI on
+[10:00.16] WhatsApp and I can control my PC from my
+[10:02.32] phone. Okay, from now I'll respond with
+[10:04.48] Jenzie Vibes plus slang and I'll keep it
+[10:06.96] readable and non-cring spam, please.
+[10:09.12] Quick preps. I don't need all of this.
+[10:11.84] Now I'm going to ask it to access the
+[10:13.60] browser, but I want to do it in the
+[10:14.88] safest way possible. How do you set that
+[10:16.40] up first?
+[10:16.96] >> So one of the safest way to do this is
+[10:18.72] to actually install the browser
+[10:20.24] extension. So this browser extension is
+[10:22.00] called openclaw browser relay because
+[10:24.00] it's a special extension. It only access
+[10:26.40] the browser tab and the websites which
+[10:29.04] you give permission
+[10:29.92] >> which you've already opened.
+[10:30.96] >> Yes. So otherwise if this bot gets
+[10:33.68] access or or if this number uh someone
+[10:36.40] else tries to like send the messages to
+[10:38.72] they can like
+[10:39.52] >> open any website
+[10:40.72] >> open any website and control the entire
+[10:42.24] PC. So just to make sure that we have
+[10:44.08] the security um measures in place we're
+[10:47.04] going to give the access to only one tab
+[10:48.88] and one website. So let me just say um
+[10:52.96] hey Raju find me the top three posts by
+[10:58.16] up votes on the topic of cooking on
+[11:03.52] Reddit today. Okay, now I can see it
+[11:06.32] typing back. Okay, it's controlling my
+[11:08.64] browser. It's gone to the search bar and
+[11:11.20] I can see it doing it automatically
+[11:13.36] which is very interesting to watch. So
+[11:15.60] it's clicked the relevance tab. It's
+[11:18.56] magical. I'm using WhatsApp controlling
+[11:20.32] the browser. Just typed it in. The
+[11:22.96] browser is like doing its thing. Now
+[11:25.60] it's clicked on the drop down all time.
+[11:28.32] This is fantastic. I mean I've used this
+[11:30.72] on you know your open uh that tool. What
+[11:33.92] is it called?
+[11:34.56] >> Computer use.
+[11:35.28] >> Computer use.
+[11:36.40] >> Yeah. I can imagine a lot of automation
+[11:38.40] startups who was actually doing this as
+[11:40.16] a service like this can now do all all
+[11:43.52] those kind of automations. See, this is
+[11:45.68] very cool because the top three posts as
+[11:47.36] I was seeing even if you type the word
+[11:48.88] cooking are some about
+[11:50.48] billionaires and billionaires are bad
+[11:52.08] and this and that like which is Reddit
+[11:53.52] mostly, right? But Claude realized that
+[11:57.20] hey that's not what we're looking for.
+[11:58.64] So it went to Reddit r/cooking which is
+[12:01.76] a very smart decision it took cuz
+[12:03.92] otherwise it would have given me three
+[12:05.04] political pieces of content maybe which
+[12:07.68] had mentioned the word cooking or
+[12:09.12] something like that. This is a clever
+[12:11.36] decision that it made.
+[12:12.32] >> Exactly. The only thing is this is kind
+[12:13.76] of slow.
+[12:14.56] >> Yeah, right now it's slow. I think
+[12:16.24] because it's a very early stage project.
+[12:18.24] Uh do you remember like you built
+[12:19.52] something similar to this the autocode
+[12:21.52] pro
+[12:22.08] >> 3 years ago? Yeah, we built auto code
+[12:24.00] pro.
+[12:24.40] >> I could see like so when I was going
+[12:25.84] through a GitHub repository like I could
+[12:27.76] see the same uh vibe is like uh the guy
+[12:30.24] has vioded it and like added like all
+[12:32.32] these things together.
+[12:34.00] >> Yeah. Now Autocode Pro is the first time
+[12:36.88] that we realized because for me I only
+[12:38.80] learned from experimentation. This is
+[12:40.16] the first time we realized oh it it
+[12:42.80] wasn't very accurate like it would make
+[12:44.24] mistakes. Now I can see it's doing
+[12:45.52] reasoning and it's giving back
+[12:46.88] interesting stuff but back then it
+[12:48.80] wasn't. So anyway it went to our cooking
+[12:50.96] went to top and gave me you know the
+[12:52.96] entire list of things. It says I'm
+[12:54.48] cursed chicken stock. That's the top
+[12:56.32] post. Stew is missing something but we
+[12:58.48] can't figure it out. That's the second
+[12:59.68] post. And third one is name the
+[13:01.44] ingredients that you currently have in
+[13:02.48] your pantry fridge freezer that you will
+[13:04.08] never buy again after finishing what
+[13:05.68] you've got. That's pretty interesting.
+[13:08.24] So it went to our cooking went to top
+[13:10.16] even though when it searched for cooking
+[13:12.08] it got bad results. So it made a clever
+[13:14.80] decision on going here because it knew
+[13:16.16] the results were not right which is very
+[13:18.24] cool. AI 3 years ago wouldn't do this.
+[13:20.00] It would just search for cooking
+[13:21.12] whatever it got it give you. But this is
+[13:22.32] like a human being who's like well the
+[13:24.00] top three posts you got when you search
+[13:25.60] for the word cooking were some
+[13:26.80] billionaire stuff and not related to
+[13:28.24] cooking. So let me make a better
+[13:29.36] decision and go to our cooking. This is
+[13:31.28] awesome. Sid reading about cooking. I'm
+[13:34.32] feeling hungry. Can I order from
+[13:35.76] Blinket?
+[13:36.56] >> Sure let's do that.
+[13:37.52] >> Okay. Okay. So, let's open a tab. Let's
+[13:38.80] keep a tab open on Blinket.
+[13:39.84] >> Yeah. I'll give access to this tab
+[13:41.84] permission.
+[13:42.80] >> You have to go to every tab and click on
+[13:44.48] open claw browser relay and click on
+[13:46.32] >> Yes.
+[13:46.96] >> Awesome. This is cool. So, you know, it
+[13:48.48] only works with like the bunch of tabs
+[13:49.92] that you open and keep.
+[13:51.04] >> Exactly.
+[13:51.92] >> Cool. Hey, I've opened a blinket tab.
+[13:56.80] Can you order
+[13:58.80] two sugarfree chewing gums?
+[14:04.08] This is very cool. Cool. Leave your
+[14:05.12] computer on at home with whatever tabs
+[14:06.48] you want and then you just hang out
+[14:08.08] wherever you want and you have your
+[14:09.36] phone and then you have this AI doing
+[14:10.96] cool stuff for you. That is awesome.
+[14:14.08] It's awesome. I think everyone should
+[14:15.36] have like a cloud clawbot uh sitting at
+[14:18.24] home. Open claw sitting at home doing
+[14:20.08] this stuff for you. Uh okay, it says,
+[14:23.20] "Yep, but I I can help, but I need two
+[14:25.36] things. First, I need the blinket tab
+[14:26.80] attached to the browser relay." So, I
+[14:29.20] think you should refresh this once.
+[14:31.36] Okay. And turn on the browser relay.
+[14:33.92] Just go to that extension and click on
+[14:35.60] on try now. And here's the cool part. It
+[14:38.88] says also I can add two free sugar
+[14:40.88] chewing gums to cart and go all the way
+[14:43.12] to checkout. But I won't hit the final
+[14:44.80] place order/pay
+[14:46.80] without a clear send it. And in bracket
+[14:49.12] it says money stuff, which is which is
+[14:52.40] cool. It's thinking about my security
+[14:53.68] even though I'm not. I know this is, you
+[14:55.20] know, it's part of the custom
+[14:56.24] instructions from OpenCloud to tell
+[14:58.00] OpenAI uh the the uh AI model not to go
+[15:02.24] and make purchases on your behalf, but
+[15:04.64] honestly, you can kind of change that
+[15:06.80] and say, "Hey, go make purchases on my
+[15:08.40] behalf and then you'll probably be able
+[15:09.68] to make purchases wherever you are."
+[15:11.28] It's all about security. It's like I
+[15:13.76] wish before the final purchase just a QR
+[15:16.16] code was here so I could pay. And I'm
+[15:17.92] pretty sure that's possible. It's very
+[15:19.04] easy to do it. Also, someone just has to
+[15:21.68] do it. I'm sure it'll be a skill for
+[15:23.12] openclaw at some point.
+[15:24.64] >> Uh, which is awesome. And you can see
+[15:26.16] it's gone to blink it. It's searched for
+[15:28.08] sugarree chewing gum and we can see
+[15:30.24] orbit and trident and happy dent and
+[15:32.48] whatnot. Let's see what it what it adds.
+[15:35.60] So add the orbit spearmint.
+[15:38.16] >> I can see it. So the orbit spearmint has
+[15:40.16] gone from 0 to one. And you can tell it
+[15:42.48] all your preferences. I prefer cheaper
+[15:43.84] things. I prefer, you know, more
+[15:45.36] expensive things. Whatever. You can like
+[15:46.64] just set all your preferences. It has
+[15:48.00] memory. It'll remember. You have an
+[15:49.84] assistant like
+[15:50.96] >> this is like a real life Jarvis.
+[15:52.88] >> I mean I spend money I have an executive
+[15:54.56] assistant. I spend money on an assistant
+[15:56.00] but this is like just as good.
+[15:58.72] >> Yeah. One more by the way. So exactly
+[16:00.56] like what you mentioned two packs.
+[16:02.32] >> Two packs. Maybe I should have told it I
+[16:04.08] want diverse two different packs. But it
+[16:06.16] it listens to everyone like you know
+[16:08.00] your thinking now and your clarity
+[16:10.64] really matter because it really like
+[16:13.28] it'll do exactly what you tell it and if
+[16:14.80] you don't know exactly what you want
+[16:15.84] it's going to give you the wrong thing.
+[16:17.12] So, I can see that it's added this stuff
+[16:18.80] to the cart, but is not paid. It's
+[16:21.04] saying now proceed to pay. It's just
+[16:22.72] left a proceed to pay at the bottom.
+[16:25.04] Let's see if it makes that decision or
+[16:26.48] do I need to come press proceed to pay?
+[16:28.48] Will it click on that?
+[16:29.60] >> In this case, actually, I'm not sure.
+[16:32.40] >> Let's see. Let's find out. My only
+[16:34.24] irritation with this is slow.
+[16:35.76] >> Yeah, this one is. But if you're
+[16:37.28] somewhere else and you're using
+[16:38.16] WhatsApp, I mean
+[16:39.52] >> like one hack if you really want to
+[16:40.88] speed things up, you just like give a
+[16:42.80] headless browser extension to this
+[16:44.56] because right now everything is like a
+[16:45.92] actual browser. So actual browser takes
+[16:47.92] time to load everything but headless is
+[16:49.28] much more faster.
+[16:50.48] >> And I assume in your you have a cohort,
+[16:52.80] right? I assume you teach all this you
+[16:54.24] teach how to do openclaw skills and
+[16:55.84] stuff.
+[16:56.24] >> Exactly.
+[16:56.64] >> Because it's the same cloud skills
+[16:57.84] that's going on.
+[16:58.64] >> Yeah. So that's why I love learning from
+[17:00.56] first principles that because everything
+[17:02.00] what you have learned building an agent
+[17:03.76] it's essentially the same thing like
+[17:05.04] LLM's memory tools with some skills and
+[17:07.60] now I can like build and because you've
+[17:09.12] done it in the previous generation of
+[17:11.28] LLMs you're doing it now
+[17:13.28] >> like this.
+[17:14.56] >> Awesome. So it says yep done. I found
+[17:16.56] orbit spearmint sugar-free chewing gum
+[17:18.48] 19.8 g and set it to quantity 2. It's
+[17:20.64] even summarizing what's happened. Uh I'm
+[17:23.36] I'm on the cart screen with proceed to
+[17:24.88] pay. Ready to click. Say go ahead and
+[17:26.48] I'll tap proceed to pay. Go ahead.
+[17:30.48] I love it. I love that it's asking me
+[17:33.68] for everything. It's just such a nice
+[17:35.76] executive assistant. Wow. You know, one
+[17:39.12] cool thing which I have recently started
+[17:41.20] exploring, you can export all your
+[17:43.12] charts from all the LMS if you're okay
+[17:45.36] with that and then you can ask cloudbot
+[17:47.68] to convert this into a knowledge graph.
+[17:49.76] So it can understand the concepts and
+[17:51.92] topics which you are interested about
+[17:54.00] and then maybe it can start storing this
+[17:55.76] in the superbase SQLbased database.
+[17:58.24] >> So the more it knows about me the better
+[17:59.68] it's able to map what I want.
+[18:01.36] >> I can see we're on the blinket payment
+[18:02.72] page and it's asking me for either a
+[18:04.24] credit card or UPI or whatever which I
+[18:06.40] can now do on my browser. But by the way
+[18:08.48] we can skip all of this. Uh we could
+[18:10.64] have just done cash on delivery. So
+[18:12.64] anyway that's pretty cool. Um I think
+[18:16.72] there's definitely you know some kind of
+[18:18.64] executive assistance would be possible
+[18:20.08] at some point. I know blinket will do
+[18:21.52] blinket skills and you can probably do
+[18:23.52] it on open claw without having to go
+[18:25.52] through the platform. You know we need a
+[18:27.12] good service in between that can hold
+[18:28.40] your card details and make smart
+[18:29.68] decisions on where your card should be
+[18:30.88] used and always give you the UPI code or
+[18:32.96] whatever the CVB through this directly.
+[18:36.00] But it's coming like someone's going to
+[18:37.52] make this like this is all stuff. If
+[18:38.88] you're watching this you're already
+[18:40.00] ahead of like 99% of the population.
+[18:41.76] Most of them are not watching this
+[18:42.80] stuff. Uh but someone who takes this
+[18:44.88] stuff and makes it possible for the
+[18:46.56] normies, the normal population to use is
+[18:48.96] really going to be ahead of everybody
+[18:50.24] else. This is very cool. WhatsApp to
+[18:52.40] browser use is excellent. Now let's go
+[18:54.72] one step further. Sid technically you
+[18:57.52] could make my content process on this,
+[18:59.44] right? You could open two tabs, one for
+[19:01.04] HAN, one for 11 Labs, and then tell it
+[19:03.28] specifically, hey, you know, find the
+[19:05.20] top three posts on Reddit about cooking,
+[19:07.36] make scripts about them, go to 11 Labs,
+[19:10.40] generate the audio, then go to uh, you
+[19:12.40] know, hey, Jen, generate the video and
+[19:14.16] put it all together and send it to me.
+[19:16.24] >> Technically, it can do that. So, the
+[19:18.08] only thing here is somebody needs to
+[19:19.92] like understand where it breaks and
+[19:21.76] exactly those are the integrations you
+[19:23.84] need to build and because it's open
+[19:25.20] source, so as you mentioned, you can
+[19:27.20] build skills for it. And once you
+[19:29.36] identify what are the things which are
+[19:30.48] breaking just like fix those parts.
+[19:32.64] >> Sid what do you think of like digital
+[19:34.00] jobs after all of this.
+[19:35.44] >> Yeah I think uh
+[19:36.24] >> I saw cloud scale for excel recently
+[19:37.92] which is awesome.
+[19:38.96] >> Cloud skill for excel. I use it by the
+[19:40.80] way like I use it a lot. I use cloud
+[19:42.24] skill for excel. I use cloud skill for
+[19:43.76] even ppts. I've designed my own. Uh by
+[19:46.16] the way I don't take help of any
+[19:47.76] designer or
+[19:48.80] >> by the way guys these guys teach all of
+[19:50.48] this at 100x. It's called AI fluency.
+[19:53.60] Now it's like you need to know what
+[19:55.52] where AI what AI can do, what it cannot
+[19:57.44] do, where it breaks because you could
+[19:58.64] just save like half your day, right? So
+[20:01.36] Sid, I have a question here. How much
+[20:02.80] roughly how much how many tokens are we
+[20:05.20] using? How much are we spending on
+[20:06.48] making all this happen?
+[20:07.60] >> I've been working with OpenClaw from the
+[20:09.36] last 2 weeks and I've spent about like
+[20:11.36] $60 to $70 and I'm not using it every
+[20:13.76] single day, but you can think of 5 to 6
+[20:16.88] hours of daily usage for like a week or
+[20:19.76] so. So that's the math. So roughly about
+[20:23.04] $510 a day.
+[20:23.84] >> $510 a day. Yeah.
+[20:24.88] >> That is expensive. Technically I can use
+[20:26.88] an open source model on my computer.
+[20:28.24] Right.
+[20:28.56] >> Exactly.
+[20:29.68] >> By the way, like if you want to try this
+[20:31.44] out there there's a website called Open
+[20:33.68] Router. You can go to Open Router and
+[20:35.60] there are a lot of free models are out
+[20:37.04] there. So you can connect those models
+[20:39.04] to this agent
+[20:40.40] >> and you can run it on your computer if
+[20:41.92] you have a beefy computer.
+[20:42.88] >> Exactly. So we can use this tool called
+[20:44.72] Olama. And with Olama you can install
+[20:47.12] all these local models on your machine
+[20:49.28] and then you can connect this with this
+[20:50.72] agent. So you don't need to pay anything
+[20:52.64] while you are say burning your tokens.
+[20:56.00] What do you think about giving access to
+[20:57.68] your bank account?
+[20:59.76] >> I think someone will make this happen. I
+[21:01.60] think within the next few months you're
+[21:03.44] going to have someone make a wrapper
+[21:05.36] around open claw on open claw to make it
+[21:08.24] nor friendly and that's include that
+[21:10.80] includes giving your card details or
+[21:12.40] your UPI details. Like it's going to
+[21:14.08] happen. It's like inevitable and I think
+[21:16.40] whoever does it is going to do
+[21:17.68] financially very well. uh because a lot
+[21:19.92] of people are going to use this and I
+[21:21.76] think more than anything now for most
+[21:23.28] people it needs to be clarity of what
+[21:24.96] you want where you're going to use your
+[21:26.08] card etc. I think banks are also going
+[21:27.52] to enable this
+[21:28.72] >> right they're going to be like agent
+[21:29.68] made this transaction versus human made
+[21:31.20] this transaction like banking system has
+[21:32.72] to change after this like you want
+[21:34.16] agents to make transactions on your
+[21:35.60] behalf it just saves so much time
+[21:36.88] >> I think just like what we have virtual
+[21:38.24] cards maybe we might have agent cards in
+[21:40.24] future
+[21:41.04] >> yeah we're showing you a small glimpse
+[21:42.48] of what can be done and I think um I
+[21:45.36] know you're doing an entire series on
+[21:46.72] cloud skills and stuff for your cohort
+[21:48.32] which I'm very excited to see how that
+[21:50.40] goes um wow what a world we live in and
+[21:54.56] yes to answer your question I think at
+[21:56.56] some point I will give it my bank
+[21:57.68] account because it's like a long time
+[21:59.44] ago we're like oh UPI you know one click
+[22:02.16] what if someone scams this that but we
+[22:03.92] move past that and I think they will
+[22:05.60] find security measures and this is not
+[22:07.36] like 5 years away this is like 6 months
+[22:09.28] away a year away right like everything
+[22:10.80] happens much quicker now because this is
+[22:12.88] so much financial opportunity for
+[22:14.16] someone to do this secondly I think
+[22:15.68] there's a huge business opportunity on
+[22:17.28] openclaw implementation
+[22:19.28] >> right
+[22:19.68] >> to go into a business find the 15 things
+[22:21.60] that people do and set up openclaw on
+[22:23.04] everybody's computer and just set it up
+[22:24.40] to do the
+[22:26.72] big opportunity and I'm sure some of you
+[22:29.20] are going to go take advantage of that
+[22:31.04] opportunity and build cool stuff. This
+[22:33.36] is a great intro video. Definitely check
+[22:35.36] it out. Uh if you want to try it online,
+[22:37.36] check out Emergent or use one of the I
+[22:39.68] mean but you still have to do the same
+[22:40.88] offline process online if you use a
+[22:42.64] droplet but better to use Emergent. It's
+[22:44.72] quicker. Um you know they're partners on
+[22:47.28] today's video as well and I know the
+[22:49.20] team personally and I can vouch for the
+[22:50.80] fact that you know they actually care
+[22:52.08] about their customers. I just can't wait
+[22:54.08] to see some of the use cases, right?
+[22:56.16] It's very hard to tell what use cases
+[22:57.68] become popular. Content use case, I can
+[22:59.60] think of 100.
+[23:00.72] >> I can think of like a a personalized
+[23:03.36] content curator for yourself because I
+[23:05.36] think you can use that.
+[23:06.56] >> Yeah. Finding the absolute best stuff
+[23:08.64] from the internet.
+[23:09.44] >> Exactly. Exactly.
+[23:10.56] >> Which is awesome. Like maybe you could
+[23:12.80] ask OpenClaw, hey, go summarize all the
+[23:16.32] most underrated AI hacks from the last
+[23:19.44] 30 days. find me all the most underrated
+[23:22.24] cooking hacks. Like there's just so much
+[23:24.64] you can do and then just go, you know,
+[23:26.48] find the best recipes for something and
+[23:27.76] go order the groceries. Like you can do
+[23:29.28] that, right? Because it can figure out
+[23:31.12] what are those groceries required, then
+[23:32.48] go to Blinket, find exactly those
+[23:33.84] groceries, make sure it comes home.
+[23:35.52] >> I love it.
+[23:36.40] >> Awesome.
+[23:36.88] >> I'm just excited to see what people
+[23:38.24] create. Thank you so much, Sid, for
+[23:39.60] doing this. And you know, typically I
+[23:40.80] would have done this myself, but like I
+[23:42.08] just didn't have the time this week, and
+[23:43.20] I know you'd spend time on it, so I was
+[23:44.88] like, why don't you come on? Let's do
+[23:46.08] this. Let's try the YouTube collab tool.
+[23:48.40] Um, thank you guys for watching and make
+[23:50.08] sure to subscribe to me. Make sure to
+[23:51.20] subscribe to 100X Engineers and uh,
+[23:54.24] yeah, please tell me in the comments
+[23:55.28] what you're building. Good ideas. Now,
+[23:56.80] the ideas actually started to matter a
+[23:58.64] lot.
+[23:59.52] >> Bye. See you. Bye-bye.

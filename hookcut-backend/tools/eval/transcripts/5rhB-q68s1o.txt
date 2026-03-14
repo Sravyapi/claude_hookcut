@@ -1,0 +1,611 @@
+[0:00.08] What's it like working with Mark? What
+[0:01.44] are some things that you've had a
+[0:02.56] completely different experience with? I
+[0:04.00] think one of the things that's really
+[0:05.04] struck me in working with him is how
+[0:07.12] quickly he sees the future.
+[0:08.64] >> Ladies and gentlemen, Mr. Alexander
+[0:10.32] Wong.
+[0:10.72] >> Back in 2022, he became the youngest
+[0:12.96] self-made billionaire in the world.
+[0:14.72] >> Chief AI officer at Meta.
+[0:16.96] >> Started a company when he was still a
+[0:18.40] teenager, went through Y Combinator, and
+[0:20.08] then built scale AI. Alex Wang is the
+[0:22.32] most expensive aqua hire yet, $4.3
+[0:25.20] billion. He's a fascinating character
+[0:27.52] within the valley
+[0:28.72] >> and he now leads Meta's super
+[0:30.32] intelligence labs division.
+[0:31.84] >> You work very closely with Mark. You're
+[0:33.28] building a meta super intelligence. What
+[0:35.04] is meta super intelligence? You know,
+[0:36.72] the discoveries that we make over the
+[0:38.32] course of the next 5 years in terms of
+[0:40.16] AI are going to be some of the most
+[0:42.32] monumental discoveries of human
+[0:43.92] civilization has ever made. You know, I
+[0:45.36] have the Meta Gen 2 Raybands, right? And
+[0:47.12] I just feel like maybe you guys are
+[0:48.48] running a very old version of Llama
+[0:50.16] there. It just doesn't feel like modern
+[0:51.60] AI yet. Do you have an estimate for when
+[0:53.28] we'd have modern AI on the glass? uh
+[0:55.68] very soon.
+[0:57.84] Ladies and gentlemen, I'm with somebody
+[1:00.88] um who I think is very special, who I
+[1:03.20] think um you know is somebody who
+[1:06.88] spearheads the AI race but is slightly
+[1:08.80] invisible to the public. Like you're
+[1:10.88] much less public these days compared to
+[1:12.72] everybody else in AI. So, thank you so
+[1:14.72] much for doing this. My last interaction
+[1:16.64] with you was I think at breakfast. We
+[1:18.16] did breakfast at MEA uh at the campus.
+[1:20.80] And you know, one of the questions I had
+[1:22.16] for you at that time was you had this
+[1:23.76] fidget spinner
+[1:25.44] >> and it was a very very different fidget
+[1:27.20] spinner. I I don't know. I've never seen
+[1:28.96] anything like it. What was it called?
+[1:31.20] There's a there's this great I think
+[1:32.56] it's a British company called Metmo that
+[1:35.20] makes these uh very uh uh high-end
+[1:38.08] fidgets. Uh it's a it's a good company.
+[1:40.08] It's
+[1:40.32] >> very cool. We're sending Metmo some
+[1:41.76] sales. Uh but but you know, Alex, I want
+[1:45.20] I want to start with this question,
+[1:46.64] right? Like what is it that you do now?
+[1:48.32] I know you from the scale AI days,
+[1:50.24] right? Uh but today I know that you work
+[1:52.96] very closely with Mark. You're building
+[1:54.40] a meta super intelligence. What is meta
+[1:56.48] super intelligence? Uh for everybody,
+[1:58.72] you know, watching. I mean first uh Mark
+[2:01.76] and and myself we very strongly believe
+[2:04.08] that this is a very special time in
+[2:06.72] human history and you know the
+[2:08.56] discoveries that we make over the course
+[2:10.16] of the next 5 years in terms of AI are
+[2:12.48] going to be some of the most monumental
+[2:15.12] discoveries of you know frankly the
+[2:17.68] human civilization has ever made. And so
+[2:19.76] MSL metsumer intelligence labs was
+[2:22.16] entirely dedicated towards how do we
+[2:25.28] build and develop the most optimal
+[2:28.88] organization to be able to both deliver
+[2:31.04] the breakthroughs and the scientific
+[2:33.36] advancements necessary to deliver super
+[2:35.44] intelligence and then also build the
+[2:37.84] products that will enable this
+[2:39.12] technology to be deployed to billions
+[2:41.28] and millions of people worldwide. And
+[2:43.52] one of the things that makes Meta such a
+[2:45.44] special place for all of this is the
+[2:47.68] fact that we have such incredible scale
+[2:49.92] and reach through our products. You
+[2:51.12] know, three and a half billion people
+[2:52.72] utilize our platforms every single day.
+[2:54.56] That puts us in an incredible position
+[2:56.40] to actually bring this technology to the
+[2:58.64] world in a way that's really different,
+[3:00.72] we think, from many of the other AI labs
+[3:02.88] out there. And then we also you know um
+[3:05.68] we had the opportunity to seven months
+[3:08.32] ago when I joined really kind of design
+[3:10.64] the org um and design the team from a
+[3:14.00] blank slate on what is the optimal team
+[3:16.56] look like for the future of super
+[3:18.56] intelligence. So you know we really
+[3:20.24] embraced how do we build the best
+[3:22.00] possible scientific foundations for this
+[3:23.68] organization? How do we have the highest
+[3:25.36] talent density? How do we bring the very
+[3:27.28] best people together and build the best
+[3:28.80] possible environment for breakthrough
+[3:30.48] research to occur?
+[3:31.36] >> Interesting. um how do you balance
+[3:33.84] commercializing some of these products
+[3:35.36] along with research because from my
+[3:37.52] understanding um and what is available
+[3:40.40] publicly it seems that you come more
+[3:42.64] from a products perspective like you've
+[3:44.64] done scale AI you've helped some of
+[3:46.00] these product companies really grow uh
+[3:48.40] how does it feel like going to research
+[3:49.92] and how do you balance both at the core
+[3:52.00] we need to be researchled because
+[3:54.16] fundamentally um we are in such a
+[3:57.20] special time and and moment when it
+[3:59.68] comes to frontier AI I technologies and
+[4:02.56] breakthroughs that um I really think
+[4:05.28] that that uh you need to be very focused
+[4:08.08] on the research um and the opportunity
+[4:10.88] to actually push the frontier to have
+[4:13.20] very real breakthroughs uh in super
+[4:15.20] intelligence is just is just magical.
+[4:17.60] And so we're frontier or we're uh
+[4:19.76] research driven to be able to push the
+[4:21.36] frontier, but we actually view it as
+[4:22.96] like a flywheel internally for all of
+[4:25.12] meta. So um by building frontier models
+[4:28.56] and building models that um are uh are
+[4:31.68] pushing the boundaries of super
+[4:32.80] intelligence that enables to build
+[4:34.64] incredible products um and it's kind of
+[4:36.80] a base material that allows us to build
+[4:39.28] some of the most interesting and
+[4:40.64] innovative consumer products in the
+[4:41.92] world. Those products as they gain scale
+[4:44.24] then give us the ability to grow our
+[4:46.96] infrastructure footprint and to build um
+[4:49.36] you know large scale infrastructure some
+[4:51.20] of the largest scale infrastructure in
+[4:52.32] the entire world and then that will
+[4:53.76] enable us to build even greater models
+[4:55.68] and continue scaling our research
+[4:56.96] efforts. So, um, it actually is like one
+[4:59.52] virtuous flywheel within Meta. And I
+[5:02.48] think that's a lot of what excites me as
+[5:04.48] well is that we're not, um, uh, I think
+[5:07.60] we view this as a very evolving, uh,
+[5:10.08] and, um, and continuous discipline to
+[5:12.96] continue advancing the models, products,
+[5:15.52] and infrastructure all in tandem with
+[5:16.96] one another.
+[5:17.84] >> So, what's the team like? Like how do
+[5:19.36] you structure the research team and
+[5:20.72] where where is handoff to to products?
+[5:22.88] like how does it like if you can give me
+[5:24.48] like for example an example of something
+[5:27.52] you're working on what's the team
+[5:28.80] structure for that like and then when is
+[5:30.56] handoff to product that would be very
+[5:31.76] useful yeah so so actually one of the
+[5:34.24] things that has really struck me has
+[5:36.48] been um if you look at a lot of the most
+[5:40.08] successful AI products and a lot of the
+[5:42.64] most successful AI developments that
+[5:44.32] have happened they come from a um a
+[5:47.76] tandem effort between research and
+[5:49.36] product so um we're we're I think past
+[5:51.84] the phase where it's just about research
+[5:54.24] in you know a corner and then that hands
+[5:57.04] off to product people and then they
+[5:58.40] deploy that. I think if you look at a
+[6:00.48] lot of the biggest breakthroughs like
+[6:02.16] chatbt or cloud code or a lot of the
+[6:04.56] things that we're working on it comes
+[6:06.32] from um you know researchers who are
+[6:08.88] thinking about the product and product
+[6:10.24] people are thinking about research and
+[6:11.76] then working handinhand with one another
+[6:13.44] to sort of co-develop the best possible
+[6:15.60] products. Some of the things that we're
+[6:16.96] really excited about are personal
+[6:18.88] agents. you know, recently, um, Manis
+[6:21.76] released, uh, agents that are working
+[6:24.24] 247 on behalf of our users, um, and are
+[6:27.12] constantly working to, uh, you know,
+[6:29.60] accomplish your goals or make your life
+[6:31.04] better. And we really see that as, um,
+[6:33.52] this is the first of, uh, a a whole
+[6:37.76] series of of, um, products that we're
+[6:40.00] excited to release around personal
+[6:42.00] agents. It's one of the areas where we
+[6:43.68] think there's some of the greatest
+[6:45.04] opportunity to actually give a more
+[6:48.08] powerful version of AI to every single
+[6:51.36] person in the world and I think will be
+[6:53.04] one of the things that we'll we'll look
+[6:54.64] back on a decade from now and view as
+[6:56.72] one of the big breakthroughs in AI
+[6:58.40] productization. Yeah, I I really like
+[7:00.24] Manis. I remember using it, you know, a
+[7:01.92] few months ago. I keep going back to it
+[7:03.52] again and again. It's a cool product.
+[7:05.12] Um, do you have a sense of what Meta's
+[7:08.80] identity is in the AI battle? I feel
+[7:10.88] like, you know, Anthropic has one. It
+[7:13.44] feels a very It feels like it feels very
+[7:16.88] um, you know, machines of love and grace
+[7:18.32] style. Open AI has one. It's very
+[7:19.92] consumer pop friendly one. But like
+[7:22.56] Meta's identity is still very much on
+[7:25.60] device. It at least to me as a consumer,
+[7:27.44] it feels like ondevice. It's there, but
+[7:29.92] the device is like up front and center.
+[7:32.00] But is there an identity you're building
+[7:34.08] for for Meta Super Intelligence Play?
+[7:36.08] Yeah, I think um I think what we really
+[7:38.48] believe in are personal agents deployed
+[7:41.68] globally. So, one of the things that
+[7:43.44] makes us unique is that we are a global
+[7:46.00] company and uh we have half of the world
+[7:49.60] using our products every single day. I
+[7:51.36] mean that is just um an incredible
+[7:53.28] amount of reach and it means that as we
+[7:56.16] deploy powerful personal agents to
+[7:58.80] everybody in the world. It creates
+[8:00.48] totally new opportunities I think um are
+[8:03.44] very hard for any other lab to actually
+[8:05.12] fully accomplish in terms of what does
+[8:07.04] that mean for entire communities? What
+[8:08.72] does that mean for countries? What does
+[8:10.32] that mean for um you know the whole
+[8:12.24] world as we all on board onto this
+[8:14.00] technology together. Um the other thing
+[8:15.60] that we're really excited about uh is
+[8:18.08] the sort of continued um what does the
+[8:21.44] hardware vision look like, right? And uh
+[8:23.76] this is an area that we've been
+[8:24.80] investing in for many many years are
+[8:27.04] wearables and sort of the the next form
+[8:30.00] factors for consumer hardware. And we
+[8:32.08] think that with personal agents um that
+[8:36.08] vision has never been more real where I
+[8:38.80] think you're going to want your personal
+[8:40.08] agent to be on a constellation of
+[8:43.04] peripherals uh in the future and you're
+[8:45.28] going to um we're going to expand beyond
+[8:48.64] the phone into a world where you're
+[8:51.12] going to want your personal agent to be
+[8:53.20] with you in a bunch of different ways.
+[8:55.68] uh that that um that will always be on
+[8:59.12] be, you know, see what you see, hear
+[9:00.88] what you hear, uh and will be able to
+[9:02.64] just help you in a way that's much
+[9:04.08] deeper than and then than even the
+[9:05.84] devices today are able to help them.
+[9:07.20] >> Cool. Like a like an always on friend
+[9:08.96] who's with you on all your devices.
+[9:10.72] That's why cool. I think there's a lot
+[9:12.00] of other companies trying to do that,
+[9:13.28] but I think you have the step ahead
+[9:15.12] because I've already worn the meta
+[9:17.52] hardware products and I'm already
+[9:19.36] comfortable with it. So it's very easy
+[9:20.88] to to say well here's an update which
+[9:22.64] which allows you to to have you know
+[9:24.64] this god tier intelligence on which
+[9:26.32] actually brings me to a an aside point
+[9:28.16] which is you know I have the meta gen 2
+[9:30.48] ray bands right um and I just feel like
+[9:33.44] maybe you guys are running a very old
+[9:35.04] version of llama there um it just
+[9:37.28] doesn't feel like modern AI yet.
+[9:38.96] >> Yeah. Yeah.
+[9:39.52] >> Do you have an estimate for when we'd
+[9:40.96] have modern AI on the glass?
+[9:42.64] >> Uh very soon. Um you know I think I
+[9:45.36] think uh we've been you know when I got
+[9:48.16] when I got to Meta something like 7
+[9:50.00] months ago um the entire focus was let's
+[9:52.80] set up this organization
+[9:54.80] uh in the right way for the long term so
+[9:56.72] that we're not we're not just setting us
+[9:58.80] setting ourselves up to cut a corner
+[10:00.88] here or to optimize for some short-term
+[10:03.28] outcome but but mortgage the long-term
+[10:05.60] opportunity. We're going to set up it
+[10:07.20] with the right set it up with the right
+[10:08.64] scientific foundations. We're going to
+[10:10.08] set up with the incredible talent
+[10:12.32] density and the focus on long-term
+[10:14.32] science. We're going to remove
+[10:15.36] artificial deadlines so that we're
+[10:17.04] actually building the technology at the
+[10:19.28] best pace. And what we've seen from that
+[10:21.76] is actually over the past 7 months,
+[10:23.68] we've built the foundations incredibly
+[10:25.76] quickly. And now we're at a moment where
+[10:28.40] I think over the coming months, you're
+[10:29.92] going to see incredible velocity coming
+[10:31.84] from us. And that'll continue throughout
+[10:33.60] the course of the year. We think that um
+[10:35.60] over the course of the full year, we
+[10:36.96] will really be pushing the frontier in a
+[10:38.80] very exciting way across many dimensions
+[10:40.88] of the technology. Um so uh so stay
+[10:44.32] tuned. I know it's been a long wait for
+[10:46.48] many people, but uh we're really excited
+[10:47.92] about what's coming.
+[10:48.64] >> Yeah, because I I just feel like that's
+[10:49.92] a very easy, you know, sort of upgrade
+[10:52.32] for me, right? Or everybody else, which
+[10:54.08] is just have those glasses be super
+[10:55.76] because I I just feel like they're being
+[10:57.20] artificially restrained by a very old AI
+[11:00.16] on it. And I just know what modern AI
+[11:02.00] can do. and you already have access to
+[11:03.36] the camera, you already have access to
+[11:04.64] audio, uh you can do wonders, right? Uh
+[11:07.12] but
+[11:07.36] >> to your point, we've already sold
+[11:08.88] millions of of units and it's already a
+[11:12.56] ubiquitous technology and and so I I
+[11:14.88] think the opportunity is just immense.
+[11:16.56] >> Yeah, I think it's one software update
+[11:18.16] away from superpowers. So, I'm very very
+[11:20.56] excited about that. But I think it's
+[11:22.08] incredibly mature of you to come in and
+[11:24.40] first build out the AUG. And it's
+[11:25.92] something that I've learned like this
+[11:27.44] year uh compared to you know five or 10
+[11:30.16] years ago to build out the AG for
+[11:32.00] velocity a year later. Um how do you
+[11:34.56] learn all this? Like what's the
+[11:35.68] difference between you as an 18-year-old
+[11:37.12] entrepreneur you know starting scale AI
+[11:39.76] versus today building you know what
+[11:42.88] you're building today? Like what's the
+[11:44.32] difference between you as an as as an
+[11:45.84] entrepreneur?
+[11:46.40] >> Yeah. I mean I' I feel like I've learned
+[11:47.84] just so many different things. Um I
+[11:50.40] think I think one thing when you're when
+[11:52.32] you're young you're very impatient,
+[11:53.84] right? And uh and I think you know this
+[11:55.76] as as well as I do. Um you know I
+[11:58.00] started my company uh right out of
+[11:59.84] college, dropped out of college and um
+[12:02.48] you know you you're so impatient to make
+[12:05.20] things happen that and that's both a
+[12:07.76] great strength and a great weakness.
+[12:09.04] Like I think on the one hand you do you
+[12:11.68] can make things happen faster than than
+[12:14.08] other people would expect but you're
+[12:15.68] also um uh not necessarily setting
+[12:18.80] things up to be long-term sustainable
+[12:20.56] and to be um to create long-term
+[12:22.72] advantages. And one of the things that
+[12:25.84] um I've thought a lot about, you know,
+[12:27.84] if you sort of study the history of uh
+[12:31.20] of great businesses in Silicon Valley or
+[12:34.24] even just broadly in the in the sort of
+[12:35.76] like history of business, the ones with
+[12:37.92] true staying power have built some sort
+[12:40.16] of foundation that is actually very
+[12:43.12] difficult to replicate. And it's
+[12:45.36] something that is it's almost like a
+[12:46.64] seed that is planted and grows over the
+[12:49.12] course of of of you know, in many cases
+[12:51.68] decades. And so I think a lot of um a
+[12:54.80] lot of how we think about how we thought
+[12:57.12] about building MSL and how we think
+[12:58.80] about building teams and um you know
+[13:01.04] accomplishing big things going forward
+[13:02.80] is how do you set something up such that
+[13:06.24] uh it has durability and it has a um it
+[13:10.00] has a differential point of view all the
+[13:11.52] way down to the organization and that
+[13:13.44] enables it to grow and expand and
+[13:15.52] develop in a way that is um that will be
+[13:18.96] continue to be differentiated long into
+[13:20.56] the future. So I I think this sort of
+[13:22.56] mix of you know I think I think you know
+[13:24.96] to put it pithily I think you can't let
+[13:27.28] your impatience drive you um too far and
+[13:31.28] you need to um it's important to always
+[13:34.00] be thinking about what foundations are
+[13:35.92] you building and what does the long-term
+[13:37.44] story look like.
+[13:38.40] >> Yeah. You know if I had to summarize the
+[13:40.80] last 10 years of my you know
+[13:42.40] entrepreneurial career I would come up
+[13:43.84] with the same insights. slow
+[13:45.44] intentionally slow down build build for
+[13:47.76] the long term and then eventually and
+[13:50.08] also put the right people together right
+[13:51.52] because you know and and they need like
+[13:53.20] three or four years to bloom so I I
+[13:54.96] totally get you hey what was the scale
+[13:57.52] exit like like I mean I don't even know
+[14:00.48] if you can call it an exit right so
+[14:02.16] >> they're still going
+[14:03.28] >> yeah they're still going right like I
+[14:04.80] would say what is the what was the
+[14:06.88] relationship why do you go decide to
+[14:08.48] work at you know Meta super intelligence
+[14:10.64] like how did that conversation with Mark
+[14:12.16] happen give us some some insider your
+[14:14.64] information.
+[14:15.60] >> Yeah. Yeah. Well, um I mean it was
+[14:18.32] incredibly non-standard. Um and I think
+[14:21.52] the way it happened was even um was very
+[14:25.68] surprising because it took you know Mark
+[14:27.68] is obviously quite a bold and visionary
+[14:29.84] leader and I think it really took um you
+[14:32.80] know uh that level of vision for for the
+[14:36.08] whole thing to come together. Um, and I
+[14:39.28] mean it was an incredible I think
+[14:40.80] milestone for scale and everything that
+[14:43.12] we've done. Um, and scale continues on
+[14:46.00] and I think that that team is continuing
+[14:48.32] to execute and deliver uh on really
+[14:51.44] incredible um outcomes for enterprises
+[14:54.56] and governments and um continues to uh
+[14:57.92] crush it. But you know the the
+[15:00.00] opportunity that we saw really was um
+[15:03.04] you know there's it was an incredible
+[15:04.40] milestone for scale and it was a way to
+[15:06.24] kind of give back to all the people who
+[15:09.28] have uh supported scales um you know
+[15:12.64] success to date including the investors
+[15:14.48] and the employees and and everybody
+[15:16.16] involved while also um setting scale up
+[15:19.84] for the future and and frankly the
+[15:22.00] opportunity that I saw with with Meta
+[15:24.40] was was just astronomical. I think that
+[15:27.12] um you know sometimes in the middle of
+[15:29.92] these AI races everything just feels so
+[15:34.00] um pressurized so you can sort of lose
+[15:36.16] sight of things and and um I think at
+[15:39.20] that time
+[15:41.12] you know a lot of people were weren't
+[15:43.12] giving meta the credit it deserved in
+[15:45.44] terms of I mean it has all the
+[15:48.32] ingredients for incredible success in
+[15:50.48] AI. It has the distribution. It has the
+[15:53.20] billions and billions of users. It has
+[15:55.12] the scale, it has the business model, it
+[15:57.84] has um the incredible talent, has the
+[15:59.68] infrastructure. And so all the pieces
+[16:02.72] were were really there. And I think the
+[16:04.80] opportunity to really um kind of lock
+[16:07.28] everything in in a way that allows us to
+[16:09.44] allows Meta to to really um succeed and
+[16:12.08] thrive in the long term was very
+[16:13.36] exciting.
+[16:13.84] >> Very cool. You know, I have I have this
+[16:16.24] question that I ask almost everybody,
+[16:18.16] you know, in the AI race, right? which
+[16:19.76] is uh you know I'm sure you have some
+[16:21.92] ideas and thoughts about AI that your
+[16:24.08] peers don't agree with right some way
+[16:26.16] it's going to go in the future or some
+[16:27.84] you know method of training or whatever
+[16:29.20] it could be right uh do you have an
+[16:32.72] insight that you feel your peers might
+[16:34.64] not agree with I'm talking about your
+[16:36.16] peers in AI I think some some people in
+[16:39.68] the industry agree with me on this but
+[16:41.60] um one of the things I think is is of
+[16:43.84] paramount importance is developing the
+[16:47.12] technology with extreme responsibility
+[16:49.68] And I think a lot of the concerns around
+[16:52.80] safety um you know both the traditional
+[16:55.12] concerns around AI safety as well as new
+[16:56.88] concerns around how do you ensure that
+[16:58.56] this technology is is used safely by the
+[17:01.20] billions and billions of people who are
+[17:02.56] going to use it every day. I think those
+[17:04.32] are incredibly incredibly important and
+[17:06.96] I think we're seeing this with as with
+[17:08.72] any new technology as it gets deployed
+[17:11.36] um you know they raise novel safety
+[17:14.24] concerns and the responsibility really
+[17:16.32] is on us to develop to develop the
+[17:19.12] technology um in in in a responsible
+[17:23.28] way. You know, the the other piece
+[17:24.88] that's very important for this is the
+[17:26.80] vision of the future that we see where
+[17:28.40] where it is a personal agent, something
+[17:30.88] that is sort of with you all the time
+[17:32.80] that you really trust with your goals
+[17:34.40] and your hopes and your fears and sort
+[17:36.56] of everything in your life. To build
+[17:38.80] that technology effectively requires
+[17:40.40] just a huge amount of trust from our
+[17:43.04] users, from the public, from
+[17:44.40] governments, from um from every
+[17:46.48] stakeholder that you could possibly
+[17:47.92] imagine. And so um we really take the
+[17:50.96] sort of the need to build safely and and
+[17:55.04] thoughtfully extremely highly and I
+[17:58.32] think this is shared by some in the the
+[18:01.68] um AI community. I think some people are
+[18:04.32] have you know moved away from some of
+[18:06.88] these commitments but it's something
+[18:07.92] that we're we're uh I at least take
+[18:10.48] extremely seriously. Would you have like
+[18:12.00] a chief philosopher to to set the tone
+[18:14.24] for your AI? I think Anthropic has
+[18:15.84] somebody like this now. Um, Gemini is
+[18:18.72] very like, you know, rate of refusals is
+[18:20.72] very high. It's very bland. Uh, would
+[18:22.96] you have as meta have a chief
+[18:24.88] philosopher to to set the tone for how
+[18:26.96] that AI behaves? Yeah, we we actually we
+[18:29.84] collaborate with uh a number of both
+[18:32.48] philosophers and psychologists to help
+[18:35.20] us develop and build the behavior of the
+[18:38.32] model in a way that we think will be
+[18:40.56] most conducive for um being helpful and
+[18:44.40] and empowering our users to accomplish
+[18:46.88] their goals. And and you know, it's
+[18:48.48] funny. One of the things that we've
+[18:50.16] spent a lot of time thinking about is
+[18:52.24] how do you develop kind of like a um uh
+[18:56.40] a mutual
+[18:58.24] uh you know, in some ways like a um uh
+[19:02.96] like a mutual relationship between the
+[19:05.44] between the humans and the agents where
+[19:08.16] the humans obviously um want the agents
+[19:10.64] to be successful and the agents want the
+[19:12.00] humans to be successful. um and and
+[19:14.64] figuring out how to engineer then
+[19:16.00] design. That is something that's I think
+[19:17.68] very important for all of this to work
+[19:19.04] out effectively. Very cool. I have one
+[19:21.44] last question for you because I've I've
+[19:23.04] taken a lot of your time. What's it like
+[19:25.44] working with Mark? What's his working
+[19:26.72] style like? Uh what are some of the
+[19:29.52] things that the public says that are
+[19:31.04] true in terms of working style? What are
+[19:33.12] some things that you've had a completely
+[19:34.48] different experience with? What's it
+[19:35.60] like working with Mark? Well, I think
+[19:37.04] first Mark is um I mean Mark is one of
+[19:40.24] the most you know notable individuals in
+[19:42.16] technology for you know the past few
+[19:44.48] decades and I think he um I think
+[19:47.04] there's a lot out there about him that
+[19:49.04] that is not fair from having worked with
+[19:51.44] him very closely. I mean first he is
+[19:53.84] just like in many ways a very regular
+[19:56.48] guy. He's a total family man. Um he uh
+[20:01.20] is very devoted to his children and his
+[20:04.00] family and his wife and um I think uh
+[20:06.72] he's his personal values I think are are
+[20:09.44] quite commendable. But what's more than
+[20:11.28] that, I think as a leader, he is um
+[20:15.28] incredibly bold and ambitious and um and
+[20:20.88] I think one of the things that's really
+[20:22.24] struck me in working with him is how um
+[20:26.96] uh how quickly he sees the future is
+[20:29.04] maybe one of the one of the terms I
+[20:30.88] would use. I think he is able to take a
+[20:35.12] technological advancement or something
+[20:37.28] that's happening um all the way at the
+[20:39.36] technology level and then really play
+[20:41.12] that forward in terms of what does that
+[20:42.96] mean for our users, what does that mean
+[20:44.08] for consumers, what does it mean for
+[20:45.28] businesses, what does that mean for our
+[20:46.96] entire ecosystem and then um work with
+[20:50.40] everybody on the team to make that
+[20:51.84] happen as quickly as possible through
+[20:53.20] Meta. So um I think he's been a very uh
+[20:57.44] uh I've I've feel very lucky to be able
+[20:59.84] to work with him. one of the sort of
+[21:01.28] like great entrepreneurs of our time.
+[21:03.68] Um, and uh, yeah, I think it's a real
+[21:06.80] it's a real pleasure. He enables me and
+[21:09.12] I think the whole team to dream bigger
+[21:10.80] than uh, than we would otherwise.
+[21:12.48] >> Very cool. Thank you so much, Alex. This
+[21:14.40] was very enlightening. I learned so much
+[21:16.48] about, you know, Meta Super
+[21:17.84] Intelligence. I can't wait for, you
+[21:21.28] know, superpowers to be on my glasses. I
+[21:23.36] also can't wait for the new ones, right?
+[21:24.96] Um, I saw the displays at at Meta
+[21:26.80] Connect, but uh, you know, I I don't
+[21:28.72] think they're available in India yet.
+[21:30.08] So, at some point I want to get my hands
+[21:31.60] on one and just, you know, use all of
+[21:34.08] the AI you put in there. I can't I can't
+[21:36.24] wait to see all the cool stuff you do
+[21:37.36] with the neural band as well. Um, so
+[21:39.92] good luck and uh yeah, I'm I'm I'm going
+[21:42.64] to continue buying and using your
+[21:43.84] products.
+[21:44.48] >> Yeah, it's going to be the um the future
+[21:47.60] will be here faster than we think.
+[21:49.52] >> Yeah, this year.
+[21:51.04] >> Yeah,
+[21:51.84] >> this year. Awesome. Thank you so much
+[21:53.84] and make sure you subscribe. Bye.

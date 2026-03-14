@@ -1,0 +1,3678 @@
+[0:00.16] Oh,
+[0:10.48] >> GM GM. Can you guys hear me?
+[0:33.44] Okay.
+[0:41.52] Hello. Hello. How's everyone doing?
+[0:44.40] Strike me at Thankfully for music.
+[0:46.40] Hopefully you guys are doing good. Um
+[0:50.40] 11:05. We're a little late. Uh but
+[0:52.72] someone asked for a I mean coding live
+[0:54.40] stream. The problem with coding live
+[0:56.40] streams now is like most products are
+[0:58.00] very easy to build. Um so you know most
+[1:00.96] foresight goes into thinking about what
+[1:02.64] to build. Um maybe a little bit of
+[1:04.48] architecting and then just building it
+[1:05.60] and a lot of data aggregation. Um for
+[1:07.52] example if you want to build something
+[1:09.60] like let's say Zeppto today um then you
+[1:11.68] know your bigger challenge is you know
+[1:13.76] sourcing the inventory and putting in
+[1:15.68] the data in the database than creating
+[1:17.60] Zepto. Um Zeppto is probably you know
+[1:19.52] one shortable some parts of it um in
+[1:22.24] like a few hours. Um so what do you want
+[1:24.24] to do? Uh do you guys actually want to
+[1:25.52] code something? Uh we can also just
+[1:26.72] talk. I'm I'm okay, you know, with
+[1:28.00] everything. Let me write down the
+[1:29.36] options we have for the day. Um by the
+[1:31.60] way, did you guys see the Bombay Karan
+[1:33.44] concert? Apparently was really bad. Um I
+[1:34.96] went to the Delhi one which is really
+[1:36.08] good um quality and production wise and
+[1:38.40] Bombay Wala is apparently like really
+[1:39.76] bad. Uh
+[1:41.76] people here, are we good to go? Yeah, I
+[1:44.88] know. I have a Claudebot thingy running
+[1:47.44] um that retweets everything.
+[1:50.32] The name of the Claudebot thing bot
+[1:51.84] thingy is myself. Um, mostly I'm the one
+[1:53.84] who's, you know, randomly tweeting. Um,
+[1:56.00] I've not put put on a script yet. Uh,
+[1:58.24] because God knows what people tweet,
+[1:59.52] right? Um, would be nice though. Um, if
+[2:01.84] you know, every time I get a tag, I
+[2:03.28] immediately uh, you know, whatever. I'm
+[2:05.76] not sharing my screen, am I? Um, it
+[2:07.92] immediately retweets. Uh, but that's not
+[2:09.76] what we're able to, you know, want. Uh,
+[2:11.36] that's not what we're here to discuss
+[2:12.56] today. What are we here to discuss? What
+[2:13.84] do you guys want to do? Build something.
+[2:15.92] Um, that means, you know, code something
+[2:17.84] from scratch. Um, and, you know, I can
+[2:20.32] put two options here. 1A which is going
+[2:22.32] to be use uh AI heavily. So you know
+[2:25.84] basically claude code I just bought the
+[2:28.56] $100 plan this month. Um so I do have a
+[2:31.04] few credits in there. Um and the second
+[2:32.88] option is you know no AI, no internet um
+[2:37.04] no docs the other extreme. Um or we
+[2:40.16] could just talk um / AMA um and you know
+[2:43.52] if the final selected option is one u
+[2:46.40] amongst the A and B um then we can
+[2:48.32] decide what idea we want to build on. Um
+[2:51.36] generally I think most things we can
+[2:52.56] build in like 4 hours now um unless it's
+[2:54.56] like a very complex project. So I'm open
+[2:56.64] to everything. Um with that I will
+[2:58.08] create a poll for everyone. What do you
+[2:59.84] want to do? Um 1 A, 1 B and then two.
+[3:04.32] There are three options. Start the poll.
+[3:06.32] What would you guys like to do today? um
+[3:09.20] we like to build something um using AI,
+[3:12.16] you know, which would honestly make our
+[3:13.68] lives much easier. Then we'll probably
+[3:15.44] spend time speculating on product. Okay,
+[3:17.04] you know what is the thing to build that
+[3:19.84] could make a lot of money. For example,
+[3:21.84] um recently I saw a very nice product
+[3:23.52] which grew also very quickly to you know
+[3:25.60] some I don't know XY Z MLR um I can show
+[3:27.84] you the product um that we can probably
+[3:29.28] clone that um easily enough um some
+[3:32.40] parts of it um using 1A and 1B may
+[3:35.28] actually just be very boring to do it
+[3:36.40] but we can still do it um cloud code or
+[3:38.80] a terminal UI might be a nice thing to
+[3:40.40] build um I can also show you u you know
+[3:42.88] reverse engineering
+[3:46.72] claude code u which is a weird
+[3:49.04] experiment I was doing recently
+[3:50.96] clawed code source code is written in
+[3:52.64] bun and the final bundle that you run
+[3:54.64] locally um is actually a JavaScript
+[3:56.64] bundle um it's heavily uglified but it's
+[3:59.76] still something you you and I can't read
+[4:02.00] but any can probably read it's not a lot
+[4:04.24] of lines of code also so we can actually
+[4:06.40] you know even though cloud code is
+[4:07.84] closed source um we can try to reverse
+[4:10.40] engineer what they're doing and you know
+[4:12.08] I probably not open source but you get
+[4:13.60] the idea understand their folder
+[4:16.40] structure the file structure try to
+[4:18.64] replicate it again locally something
+[4:19.92] like that. This was a weird experiment I
+[4:21.44] was trying recently. Um this is where
+[4:24.00] clawed code is hosted. Uh
+[4:30.64] and surprisingly enough um what they've
+[4:33.28] posted is not u you know a binary which
+[4:35.52] is what I would expect because binaries
+[4:37.04] are hard to reverse engineer. It's
+[4:39.12] basically a very big JavaScript bundle.
+[4:41.12] Um but the bigger parts here are you
+[4:43.20] know external dependencies. Um the real
+[4:45.68] clawed code code base is like less than
+[4:47.92] 20% of what you see over here. Um even
+[4:50.64] though it's heavily uglified um you know
+[4:52.80] you can basically reverse engineer their
+[4:54.08] prompts and things like these. Um but
+[4:55.60] more than that you can actually just ask
+[4:57.36] an AI to go through parts of this. Um
+[4:59.52] and reverse engineer how cloud code
+[5:02.16] actually is coded. Um the other good
+[5:04.48] thing about their packages they again I
+[5:06.32] don't know if this has happened by
+[5:07.20] accident or this was intentional.
+[5:08.64] They've also open sourced their you know
+[5:11.36] declaration file which has a bunch of
+[5:12.80] types. So you can actually figure out
+[5:14.32] their folder structure the types that
+[5:16.08] they use throughout the throughout the
+[5:17.44] clawed code closed source project u and
+[5:20.40] uh you know try to reverse engineer it.
+[5:22.96] No it is not open source one as I shared
+[5:25.12] with this this with friends a bunch of
+[5:26.72] my friends sent me this link but this
+[5:28.08] isn't the the codebase of claude code.
+[5:30.56] This is just a you know standalone repo
+[5:32.24] that does nothing. The the real repo is
+[5:34.32] something like this claude code closed.
+[5:36.08] I' I've found the exact link also um in
+[5:38.64] some PR of theirs. um but it is private
+[5:41.36] but we can reverse engineer it and
+[5:43.36] figure out how it's done. Let's see what
+[5:44.72] one um amongst the three options
+[5:48.24] you guys chose the worst um and
+[5:50.24] eventually it's almost honestly almost a
+[5:53.12] tie. Um
+[5:55.28] between 1 A 1 B and 1 C I'm okay with
+[5:57.76] either I am okay with I'm I'm mostly
+[6:00.24] inclined towards 1 A. Um the question
+[6:02.56] really is uh what do we build and you
+[6:04.24] know the best thing to build would be uh
+[6:06.32] building claude code using claude code
+[6:10.40] something like this um I already tried
+[6:12.64] you know experimented this with this a
+[6:14.16] little bit um but basically if you do do
+[6:17.60] this um then we'll copy this you know
+[6:20.80] JavaScript bundle locally u and we'll
+[6:23.92] ask AI to sort of you know understand
+[6:26.96] this JavaScript bundle reverse generate
+[6:28.88] the original bund type TypeScript files
+[6:30.56] from it and try to you know basically
+[6:32.96] copy the code base of cloud code
+[6:34.40] locally. Um again this is probably not
+[6:36.24] legal and you know something not you
+[6:37.92] should publicly distribute. This is like
+[6:39.28] a fun experiment. Um to build something
+[6:41.36] like it and not exactly uh you know
+[6:43.60] build a commercial product anyways
+[6:44.88] there's no point building a commercial
+[6:45.84] product like this because they they're
+[6:46.88] heavily dependent on their own model. So
+[6:48.88] you can't really compete with them by
+[6:50.56] building something on the on the app
+[6:52.00] layer. Um so the goal is just to you
+[6:53.68] know understand is that actually
+[6:55.04] possible. Should they have not u you
+[6:57.28] know um open sourced this JavaScript
+[7:00.80] bundle and should they have open source
+[7:02.24] some sort of a binary so that it would
+[7:03.60] have been harder to you know replicate
+[7:05.12] things like these. Um so that can be one
+[7:06.80] project idea building cloud code using
+[7:08.96] cloud code. Um what else can we build?
+[7:11.92] Um
+[7:14.48] um
+[7:16.08] and this would probably you know
+[7:17.84] basically be a bunch of projects in the
+[7:19.60] TUI category. So you know think open
+[7:22.08] code uh codeex vagera u basically some
+[7:25.44] sort of a coding assistant um fairly hot
+[7:27.76] market 20 30% of revenues of bigger AI
+[7:30.64] labs now is are these products um other
+[7:33.60] than that also there are a lot of non
+[7:35.28] you know labs that are also working on
+[7:36.48] this cursor being a good example um
+[7:38.56] there are a bunch of others I'm
+[7:39.52] forgetting the names but the one that is
+[7:41.20] number one on terminal UI benchmarks is
+[7:43.20] not actually codeex and cursor there
+[7:44.48] something else which I'm forgetting the
+[7:45.52] name now um what else um
+[7:49.60] what else is a good project idea. I
+[7:51.04] don't know you guys tell me. Um I will
+[7:52.48] look at chat but it should be something
+[7:53.92] fairly ambitious. Um because uh wait
+[7:57.76] unless we I either we code by hand and
+[7:59.44] then it can be a simple project. Um but
+[8:02.24] something on top of open claw on one
+[8:03.68] side. So like something in the open claw
+[8:05.04] category u or you know realm of
+[8:07.20] categories is something I'm very open
+[8:08.56] to. Um I have gone through their
+[8:10.72] codebase. It's very bloated. I think
+[8:12.40] it's very you know heavily written by AI
+[8:15.12] if not you know officially wipe coded.
+[8:16.96] um they have too many PRs coming in
+[8:19.76] every day. They rarely get time to
+[8:21.12] review it. Something building something
+[8:22.32] on top of it makes some sense. Um
+[8:24.24] building it from scratch makes some
+[8:25.76] sense. Contributing to it makes no sense
+[8:27.44] because u you know I I think the
+[8:29.76] maintainers can't really keep up with
+[8:30.88] the kind of PRs that are coming here. Um
+[8:35.04] what else? Um so someone said cursor
+[8:37.44] again it'll probably in the first
+[8:38.48] category. The problem there is there's a
+[8:39.76] lot of VS code bloat we need to u
+[8:43.20] understand u to be able to build it. um
+[8:45.68] which uh is a whole different you know
+[8:47.60] learning curve of and very less data on
+[8:50.24] on you know probably most probably uh
+[8:52.56] these models are not great at u VS code
+[8:54.96] specific you know whatever plugins that
+[8:56.40] we might need so on and so forth u
+[8:58.40] probably not super open to it probably
+[9:00.32] by the end of today if if we do go down
+[9:02.16] the cursor route we'll just be able to
+[9:03.36] set up VS code locally what we can do is
+[9:05.68] u yeah I'm very open to this one so you
+[9:08.24] know I'll break the first category into
+[9:10.24] two categories coding assistants where
+[9:13.20] one can be building cloud code using
+[9:14.56] cloud code which I like. Um, good idea.
+[9:16.80] Um, second one would be uh building a
+[9:20.80] web based cursor. So more like if you've
+[9:22.96] seen GitHub code spaces um
+[9:26.88] because uh here we'll probably not use
+[9:29.84] VS code. We don't need that big of a
+[9:31.52] blowout. Um it'll be like a smaller you
+[9:33.52] know simpler uh what do you call it like
+[9:36.16] the Monaco editor web- based editors. Um
+[9:38.96] it'll have less features compared to
+[9:40.24] cursor. Um it'll be hard to you know
+[9:41.68] have an LSP in there. uh extensions
+[9:45.76] code things like these it'll just be a a
+[9:48.64] place where you come uh you clone a repo
+[9:51.04] over there just like GitHub code spaces
+[9:52.32] and you know build a few things on top
+[9:53.84] even though um GitHub code spaces
+[9:56.24] actually uses you know VS code web
+[9:58.16] version under the hood so probably not
+[9:59.76] the best example um but you know
+[10:02.00] anything in the category of this /devon
+[10:04.24] uh would be the second option um so 1 a1
+[10:07.76] b um and then open claw any other ideas
+[10:11.36] again this is where we have to spend the
+[10:12.72] most time because unfortunately I can
+[10:14.32] just you know spit out whatever you want
+[10:16.24] um from here. Um holy offer is is up or
+[10:18.88] should be up by tomorrow morning I
+[10:20.24] think. Um
+[10:22.08] Tinder for dev sound like sounds like a
+[10:23.52] really bad idea. Um
+[10:29.68] offer should be there. Um I just don't
+[10:31.68] remember the coupon codes but you'll
+[10:32.96] probably find it tomorrow morning. Um
+[10:34.40] Higsfield is the thing is we could do
+[10:37.84] Higsfield. Uh, it's like it'll be very
+[10:40.32] AI API or you know API dependent. Um, I
+[10:44.32] don't mind it. Um, yeah, I don't mind.
+[10:46.96] Um, web- based AI video editor,
+[10:50.00] something like that. Open to it. Not
+[10:52.16] super excited about it.
+[10:55.52] Um,
+[10:57.68] what else do we have here?
+[11:00.08] Super contest details. I have the
+[11:01.92] problem statements. I would love to
+[11:03.44] share it, but I can't. Um, it's very
+[11:05.36] wable though that too. Like the only
+[11:07.20] thing I'm struggling with the in the
+[11:08.72] superdevs contest right now is making
+[11:11.68] sure you guys can't use AI to do it.
+[11:13.20] Right now there are four problems each
+[11:15.60] with around 60 70 test cases and most of
+[11:18.56] them if you copy the problem statement
+[11:20.48] paste it in cloud copy the solution
+[11:21.92] paste it in the platform you'll be able
+[11:23.44] to do most of them. Um that's what I'm
+[11:25.28] trying right now. Um that's been a
+[11:27.12] challenge. Uh so most probably you know
+[11:29.36] we'll make you type things by hand or
+[11:31.36] something like that. Um I haven't been
+[11:33.20] able to CTC solve what I originally
+[11:36.32] wanted to solve which was u you know can
+[11:39.28] we create a nonviodable contest answer
+[11:42.88] I'm arriving at is no it'll otherwise be
+[11:44.88] such a big research problem statement
+[11:46.48] that it doesn't make sense to you know
+[11:48.72] create an openbook contest where people
+[11:50.88] are doing something so ambitious in 3
+[11:52.88] hours using AI. Um I'd rather do a
+[11:55.28] simpler contest and somehow try to
+[11:56.64] enforce you know AI uh whatever
+[12:00.16] limitations um
+[12:05.12] AIM trading what is not the best idea
+[12:07.20] again a lot of people are writing this
+[12:08.64] what we can do though which I I'm really
+[12:10.72] interested in this now um not exactly AI
+[12:13.76] so maybe no AI but polyarket copy
+[12:17.68] trading/ you know simple trading
+[12:20.16] strategies for example um if you look at
+[12:22.88] poly market. They now have a 5minut
+[12:26.00] Bitcoin candle which is this thing right
+[12:28.00] here. Um so every 5 minutes you can
+[12:30.08] predict whether or not the Bitcoin price
+[12:32.40] will go up or down. Um so if I refresh
+[12:34.80] this page again hopefully I see the
+[12:36.16] graph. Um
+[12:38.56] I don't u something's up with the UI but
+[12:40.56] basically this is the target. Will it be
+[12:42.00] above this price or below this price in
+[12:43.60] the next 2 minutes?
+[12:45.20] And the source of truth for this comes
+[12:47.44] from chain not chain analysis chain link
+[12:50.00] um which you know is probably an oracle
+[12:53.20] that aggregates this data from a lot of
+[12:54.88] places. So this is the current price of
+[12:57.68] um BTC um 68051 and the market is on
+[13:02.32] will the price be above or below this
+[13:03.92] thing. So very high probability it'll be
+[13:05.20] below uh sorry above sorry below 68041
+[13:09.12] and the threshold is 6148.
+[13:11.44] ideally you'd want to bet um it will be
+[13:15.68] down right and as you can see down is
+[13:17.84] more expensive. If I put in like $10 on
+[13:20.48] down um and now it's 50/50 because the
+[13:23.20] price is climbing up. So again, you
+[13:24.32] know, it's very hard to tell. Now up is
+[13:25.84] more expensive because as you can see it
+[13:27.84] climbed above the threshold price up. So
+[13:29.84] now if I buy up very high probability
+[13:31.84] that the price remains up. I have to buy
+[13:33.20] it for 86 cents and the final outcome I
+[13:35.20] have will be a dollar. So I was thinking
+[13:37.60] there's probably some strategy. Okay, in
+[13:39.52] the last 20 seconds, bet on the winner.
+[13:42.48] So, for example, right now there's 1
+[13:45.12] minute, so a lot can change. Um, but
+[13:47.12] when you know uh you know the the time
+[13:50.32] that's left is whatever 30 seconds and
+[13:53.12] the price difference is, you know, some
+[13:54.64] delta u then you can always bet even
+[13:57.36] though you'll not make much money like
+[13:58.56] right now you'll get $1 if you win and
+[14:00.96] you have to pay 98 cents. So that's like
+[14:02.56] 2% increase. Um but it's it's also not
+[14:06.64] an almost sure short increase. it might
+[14:08.80] you know at the last 10 seconds also um
+[14:11.44] flip to the other side. Um so the
+[14:14.24] question really is is this probability
+[14:15.44] the right probability or not? If it is
+[14:16.64] the right probability the probability
+[14:18.00] that's been put over here most probably
+[14:19.28] by a bunch of HFTs you know or trading
+[14:20.80] really heavily and deciding this up and
+[14:23.04] down price if that is actually the real
+[14:25.44] probability there's no ARB over here or
+[14:27.44] you know no unoptimality over here
+[14:31.76] an optimality over here then we will we
+[14:33.60] might make money in the long run. Um but
+[14:35.12] if this probability is actually correct
+[14:36.80] um then we will not make money in the
+[14:38.00] long run. We'll not make money not lose
+[14:39.68] money. The good thing about poly market
+[14:40.80] is um they don't charge any fees. So we
+[14:42.80] can keep doing this for days and months.
+[14:44.72] Uh and we're not losing money in trading
+[14:46.72] fees. What we're losing money is in is
+[14:48.80] you know if the market isn't optimal
+[14:50.40] which hopefully it won't be. Um so
+[14:51.92] that'll be the third fifth one maybe.
+[14:54.32] Poly market trading strategies uh
+[14:56.96] probably no AI here. I think AI is
+[14:58.72] really slow and um historically hasn't
+[15:02.08] at least from my uh perspective hasn't
+[15:04.40] been great at modeling shorter markets
+[15:06.64] like these which are like 5 minute
+[15:07.76] candles. Um so I doubt u it'll perform
+[15:10.80] really well in a market like this. Um
+[15:12.56] but that would be idea number five. So
+[15:14.08] we have 1 2 3 4 5. Um I would just put
+[15:17.44] you know I would just remove open claw
+[15:18.72] right now. I don't think we'll have
+[15:19.84] enough time to do this in the next few
+[15:21.84] hours. So I'll just do 1 2 3 and four.
+[15:23.92] Um so there are four ideas that we have.
+[15:26.00] If you select one, we'll figure out
+[15:27.04] which other two to build. I am mostly
+[15:28.48] excited about uh this and
+[15:32.96] most probably this. Um these two are
+[15:34.80] great sort of things to build. We might
+[15:37.36] actually make or lose some money in the
+[15:39.52] fourth one as well. Uh I just worry K
+[15:42.08] you know um I might by mistake show my
+[15:44.24] poly market API keys and you guys will
+[15:45.68] trade with my money which is also fine
+[15:46.80] by me. Um so what do you guys want to
+[15:48.88] do? Um we have four options A, B, C and
+[15:51.44] D. Um,
+[15:53.36] let me uh quickly create the poll. Start
+[15:57.36] a poll.
+[15:59.20] What do you want to do?
+[16:02.24] So, that's option one, that's like
+[16:03.84] something in the coding assistant
+[16:05.36] category. Um, option number two, that's
+[16:08.88] in the video AI ads category. Um, option
+[16:13.68] number three, that's in the I actually
+[16:17.04] hate this idea because there's no way
+[16:19.20] this production is at all ever. right
+[16:21.12] there. The government is not going to
+[16:23.04] come to me to rebuild the IRCT website.
+[16:25.04] They have a probably a great consult
+[16:27.36] doing it for them already. Um and then
+[16:29.36] option number four, something on poly
+[16:30.48] market. What do you guys want to do?
+[16:31.20] What do you guys want to do? Poll is
+[16:33.60] active. All right. Manusar is here.
+[16:35.04] Thank you for the money. Tuesday it is
+[16:37.36] indeed. Um Friday came early I must say.
+[16:40.80] Tomorrow is a holiday anyways. So feels
+[16:42.96] like Friday already.
+[16:45.44] All right. Port poll is active. Um and
+[16:49.36] we have two big contenders which you
+[16:51.36] know are closer to the ones that I
+[16:53.04] wanted to build as well. U building
+[16:55.12] claude code using cloud code. That's
+[16:57.04] one. Um we'll probably use a lot of AI
+[16:58.80] to do this. It's not humanly possible to
+[17:00.40] do this. U at least for me um to reverse
+[17:03.84] engineer bundle JavaScript. Um and you
+[17:06.32] know whatever. Um even though I'm very
+[17:08.64] excited to do this. In fact, I've you
+[17:09.92] know done some parts of this already. Um
+[17:11.36] even though my my final terminal UI
+[17:12.72] looks really bad. Um but uh I'm actually
+[17:15.52] very curious to you know understand all
+[17:16.80] of this. what exactly are they doing? Um
+[17:18.80] and what hap what exactly happens in
+[17:20.40] here? My guess right now is like nothing
+[17:23.12] crazy. Um their model is really strong
+[17:25.28] which is why you know the agent lay
+[17:27.04] around it doesn't need to be very
+[17:28.32] complicated. It's the standard
+[17:30.24] techniques you would use on a manus or
+[17:32.64] you know in the cloud UI or uh in a
+[17:35.28] cursor for you know context engineering.
+[17:37.68] Um and that's how most probably most of
+[17:40.24] these terminal UIs work. Um that's one
+[17:43.12] thing I'm excited about. We'll build it
+[17:44.24] with AI. The fourth one honestly doesn't
+[17:46.32] matter if you build it with or without
+[17:47.60] AI but mostly we'll build it without AI
+[17:50.40] should be like a simple enough script.
+[17:52.64] The challenge in point number four is
+[17:55.20] being close to chain analysis servers
+[17:58.00] and these servers. Um, as you can tell
+[18:00.72] the market, you know, could you see it
+[18:02.72] uh burp really bad here? Why? U because
+[18:05.84] probably a lot of people are placing
+[18:06.80] these orders like five minute markets
+[18:08.08] are very um there's a lot of money here
+[18:10.00] also like there's someone who's bet
+[18:12.48] $15,000 on 99 or 98, right? Um so even
+[18:16.32] these shorter 5minute candles, people
+[18:17.92] are trading very heavily. uh you need to
+[18:19.76] get in there which is always an infra
+[18:22.00] challenge and not a coding challenge. So
+[18:23.44] writing the code for this should be
+[18:24.48] easy. Um deploying it in the right spot,
+[18:27.36] deploying probably multiple versions of
+[18:29.20] this on multiple clouds in multiple
+[18:30.96] regions and figuring out which is the
+[18:32.40] best one. Um it's probably the harder
+[18:34.16] bit over here. Um you know I don't think
+[18:36.00] I can compete with HFTs when it comes to
+[18:38.00] u the machines that I have access to the
+[18:40.80] data centers that I have access to so on
+[18:42.48] and so forth. Uh so very high
+[18:44.00] probability I don't um you know I don't
+[18:45.84] end up winning. Uh but again we're not
+[18:47.36] really marketing here. uh we don't
+[18:48.72] really care when our order comes in our
+[18:50.96] we'll have some weird strategy if
+[18:53.28] there's less than you know not 58 but
+[18:56.08] less than 30 seconds remaining um and
+[18:57.68] the market is clearly leaning in one
+[18:59.12] direction let's say 70% in one direction
+[19:01.20] in this case you know 80% um I would
+[19:02.96] most probably just place an order and
+[19:04.16] you know hope for the best um and see if
+[19:05.52] it's a profitable strategy or not um
+[19:07.12] believe it or not there are some
+[19:08.56] extremely profitable u you know wallets
+[19:11.52] on poly market sometimes because of
+[19:13.20] insider trading you know Trump wallets
+[19:15.36] uh if there's some news coming out for
+[19:17.68] example recently Axium got hacked. I
+[19:19.44] don't know if you you guys you guys saw
+[19:20.88] that. Um but whoever was the
+[19:26.32] what was that? Uh Zack BHD.
+[19:32.32] Yeah. So if you guys know this guy um he
+[19:35.68] exposes a bunch of crypto people and he
+[19:37.36] tweeted okay I'm going to expose a very
+[19:38.64] big company and then this poly market
+[19:40.08] started and most as you can tell from
+[19:43.12] the beginning Axium was at the top
+[19:44.56] because there was someone who's heavily
+[19:45.76] buying it because they knew they were
+[19:46.88] going to get exposed. So the hacker who
+[19:48.80] actually they exposed had this
+[19:50.40] information that he's about to be
+[19:51.36] exposed and ended up making money here
+[19:52.64] around 400k from what I know. Um so if
+[19:54.72] you already know you know a specific
+[19:56.88] wallet um has some insider information
+[19:59.44] you know for example government wallets
+[20:00.96] or government closed people wallets if
+[20:03.44] you can follow them um high probability
+[20:05.68] you make some money. Um so that'll be
+[20:07.12] like another sort of variation we can
+[20:09.76] explore. All right. Um who is the
+[20:11.52] winner? The winner is a tieish between
+[20:14.96] uh not a tie really. We have a winner.
+[20:18.00] Claude Code by a not a great margin, a
+[20:21.44] little bit of a margin. Um,
+[20:23.92] there we go. Um, the winner is Claude
+[20:26.08] Code. Um, or coding assistants. Uh,
+[20:29.36] okay, let's do it. Um, I was excited
+[20:30.80] about Poly Market, but I don't mind
+[20:32.64] doing this as well. Um, creating claude
+[20:35.92] code using claude code. All right. Um
+[20:39.92] the reason I'm not super excited about
+[20:41.60] this um is because
+[20:45.36] what we'll be doing is um heavily
+[20:47.20] depending on cloud code to help us
+[20:48.72] reverse incident cloud code. It's an
+[20:50.48] interesting experiment. It might I mean
+[20:53.52] actually I'm actually very curious to
+[20:54.64] know how you create terminal UIs in um
+[20:57.68] in bun. I don't know how many of you
+[20:59.12] have tried you know cloud code or codeex
+[21:01.44] but they're all clean. Um, for example,
+[21:03.84] if I show you the three popular ones.
+[21:07.04] This is CL. Oh,
+[21:10.08] uh,
+[21:12.00] there's Claude, there is, um,
+[21:15.68] Codeex
+[21:18.32] there is, uh,
+[21:20.88] Open Code, which is the three that I've
+[21:22.88] sort of dabbled with from time to time.
+[21:25.28] Um, there was never a standard to create
+[21:27.60] terminal UIs. There are standards to
+[21:29.68] create websites. React plus Tailwind
+[21:31.52] plus HTC you know or nextjs plus
+[21:33.04] tailwind plus stats is the standard
+[21:34.40] right now um and you know react query
+[21:37.20] redux toolkit things like these um
+[21:39.36] that's your stack that you would use um
+[21:40.88] and is famous is a famous stack for
+[21:43.52] building a scalable web app um there is
+[21:46.32] no clear answer to this question right
+[21:48.72] now for terminal UIs they're also UIs
+[21:50.64] right there's basically like a website
+[21:53.04] um and what we've learned over time is
+[21:56.96] okay you know websites are easier to
+[21:58.40] create if there's a framework like react
+[21:59.92] which has the reconciler renderer that
+[22:01.68] makes things easier. None of that
+[22:03.36] existed for these. Um, now there are
+[22:05.60] some frameworks that do it. Um, for
+[22:07.44] example,
+[22:10.40] the guys at Open Code, Open Code is open
+[22:12.00] source. These guys created another
+[22:13.60] project called Open Twe. Um,
+[22:16.72] um,
+[22:18.64] this one right here, um, which probably
+[22:20.40] is the one that they use, um, to create
+[22:22.48] open code. Um, and this does have, you
+[22:24.32] know, React like uh, constructs for
+[22:26.96] state management. Um but most of them
+[22:30.00] you know there was no real real standard
+[22:32.00] for creating a terminal UI in a react
+[22:33.92] like u declarative way. So that's what I
+[22:36.48] was just curious to understand has
+[22:37.60] someone made that if not you know if you
+[22:39.12] want to it's very obvious these three
+[22:40.72] are money makers at the moment um
+[22:43.04] aggressive hiring at the moment. Um so
+[22:44.72] if you if you can create a framework
+[22:46.64] that helps make terminal UIs or um like
+[22:49.04] a react like framework for terminal UI
+[22:50.48] state management for terminal UIs um UI
+[22:53.68] library for terminal UIs for that
+[22:55.12] matter. Uh if you can make things like
+[22:56.80] this, if you create a yeah a UI library
+[22:59.20] um that you know has all of these
+[23:00.48] components like a chatbox component, a
+[23:03.84] subheader component, a model component,
+[23:06.24] uh you know whatever this is, a
+[23:08.72] drop-down component. Um that's a good
+[23:10.56] project to build to you know get notice
+[23:12.56] in one of these companies. Um so that's
+[23:14.16] one direction I was thinking of taking
+[23:16.08] um to understand how they're built. So
+[23:18.08] if now that you guys have decided that's
+[23:19.60] what we're going to do u that is exactly
+[23:21.52] what we're going to do. What we're going
+[23:22.80] to do today is creating cloud code using
+[23:25.12] cloud code and trying to reverse
+[23:26.16] engineer what they're doing specifically
+[23:28.00] things like you know the frame works
+[23:29.68] that they're using um how are they doing
+[23:32.72] context engineering um trying to reverse
+[23:35.76] maybe engineer their prompts um and what
+[23:38.88] else um what else is like important I
+[23:42.08] mean there now have a bunch of tools for
+[23:43.44] example remote control um the day this
+[23:45.92] came out I tried to you know see if
+[23:47.20] there's some vulnerability I spent like
+[23:48.48] good 2 hours because whenever a new
+[23:50.32] company um releases a new feature
+[23:51.92] feature um is when you there's some
+[23:53.84] probability of you know um some other
+[23:55.60] ability that you can report and make
+[23:56.72] some money through bug bounties so I
+[23:58.24] couldn't find anything um what other are
+[24:00.72] you know the UI for I personally like
+[24:03.36] the cloud code UI more than others um so
+[24:05.84] I'd just be curious to see you know how
+[24:07.20] they've built what they've built uh what
+[24:09.36] else um another interesting thing would
+[24:11.36] be like a very cool thing might be um
+[24:13.12] basically remote control only um how can
+[24:16.40] a a website talk to your local computer
+[24:20.80] this is like you an interesting full
+[24:22.40] stack challenge um or networking
+[24:24.24] challenge call it um if you have you
+[24:26.40] seen remote control um it's basically uh
+[24:29.84] you know I can if I'm talking to this
+[24:32.72] project hi um
+[24:35.60] I can press or send a command called
+[24:38.64] remote remote control which I won't uh
+[24:41.20] actually that's fine um
+[24:44.08] continue um and I'll get a UIish
+[24:48.08] uh that I can open in my phone or you
+[24:50.72] know on the website like this um and
+[24:53.12] basically talked to my Mac machine from
+[24:55.12] a website. So if I'm ever going out for
+[24:56.64] a dinner which has actually happened um
+[24:58.88] I've talked to you know my my machine's
+[25:02.32] clawed code instance running locally on
+[25:04.16] my machine from here. Um and whatever
+[25:06.48] commands I send from here for example hi
+[25:08.72] are sort of relayed over here. Um can
+[25:12.80] you tell me what this repo is? Um so
+[25:15.20] this will be like an interesting
+[25:16.16] fullstack challenge. This this is not a
+[25:18.24] standard server client model, right?
+[25:20.72] This is client which is one client my
+[25:23.68] browser on my phone client on the other
+[25:25.60] side which is you know my Mac machine.
+[25:28.40] So it's a way for me to talk to my Mac
+[25:29.76] machine through the internet and you
+[25:30.80] know direct cloud code to do a bunch of
+[25:32.24] commands. Um whatever I asked it over
+[25:34.00] here is what it's doing over here and
+[25:35.60] you know whatever response comes from my
+[25:37.12] Mac machine is getting uh spit out over
+[25:40.08] here. Um so that's one interesting sort
+[25:42.64] of challenge I would love to see. Um
+[25:44.08] when I was trying to reverse engineer
+[25:45.44] cloud code I saw okay you know um in the
+[25:47.68] previous version which is the new
+[25:49.04] version there's a new folder called
+[25:50.80] remote control which probably you know
+[25:52.64] they have all the code for this remote
+[25:54.24] control logic. Um but we'll get there
+[25:55.76] when we get there. I'll start slow and
+[25:57.12] you know make our way up. Do we
+[25:58.24] understand what we're doing today
+[25:59.68] building cloud code using cloud code. Um
+[26:03.12] the approach that we're taking is we
+[26:05.92] have the cloud code bundle which is so
+[26:07.84] big that my browser just crashed. Um I'm
+[26:09.60] going to refresh this again. Open this.
+[26:11.92] Um, and I'm given this one CLI.js. I'm
+[26:15.44] going to use AI to reverse engineer
+[26:17.04] what's happening here. Um, what
+[26:18.64] dependencies they're using, and then
+[26:19.84] we'll try to build something similar
+[26:20.96] ourselves from scratch. Are we good to
+[26:22.32] go? Can we start? Um, any questions
+[26:24.16] before we start building claw code using
+[26:26.24] claw code.
+[26:30.72] We have a clear winner after 915 votes.
+[26:33.28] Um, we're building a clawed code using
+[26:37.28] AI tools, which is
+[26:40.32] someone said hair routine. Well, I will
+[26:42.56] tell you if I ever meet you. Um, I do
+[26:46.00] live in India. Um,
+[26:48.88] we're not being lovable today, but what
+[26:50.48] we're making is, you know, probably some
+[26:52.80] level of context is you can copy from
+[26:54.32] here and put it inside lovable. Um,
+[26:57.52] what is ladyl? Ladal is a it's a French
+[27:00.64] slang. Uh, Google it.
+[27:03.20] All right, here we go. Um,
+[27:06.08] let me quickly
+[27:08.88] open
+[27:11.60] item. Exit this. Exit this.
+[27:15.52] I just close this um CD projects. And
+[27:19.52] I'm going to create something a new
+[27:21.12] folder called um
+[27:24.00] YouTube CC.
+[27:27.76] And the first thing I'm going to do is u
+[27:30.24] basically download this bundle here. So
+[27:33.92] that'll basically be npm install at
+[27:36.56] enthropic/cloudcode.
+[27:39.20] This should get me all the claude code
+[27:41.20] you know bundle over here. Um and
+[27:46.00] what I'm interested in is um node
+[27:49.04] modules and anthropic cloud code.
+[27:52.96] So let me just cp-r node modules
+[27:56.00] atanthropic cloud code here. Let me
+[27:59.68] delete node modules. Let me delete uh
+[28:02.16] package and let me go to the claude code
+[28:05.04] folder. But let me just rename it to
+[28:07.44] original claude code. Um that's the
+[28:11.60] original claude code, you know, source
+[28:13.76] code. Um and they have a bunch of
+[28:15.92] things. They have uh the final, you
+[28:18.48] know, CLI.js. So if I run bun cli.js,
+[28:21.76] it's basically, you know, equivalent to
+[28:23.20] starting cloud code locally. Um so it's
+[28:25.76] known for a fact this CLI.js is what
+[28:28.40] actually runs cloud code in my machine.
+[28:30.08] Um, and it said it
+[28:33.76] moved from npm to native installer. So,
+[28:36.16] they they do now publish a binary. I'm
+[28:38.16] sure at some point they're going to get
+[28:39.36] rid of, you know, um, this and not
+[28:42.32] update code here. Even though right now,
+[28:44.40] um, I think they're updating the final
+[28:46.96] production build is pushing here. Um,
+[28:48.72] when was the last update over here? If I
+[28:51.28] go to releases or versions, um, it was
+[28:54.00] 14 hours ago. Um, so or 4 days ago.
+[28:58.00] Yeah, basically. Sounds right. Right now
+[29:00.08] all the changes that they're making um
+[29:02.48] are sort of publishing. So one very cool
+[29:04.08] thing we can do is we can got get this
+[29:06.56] source code get this source code and
+[29:07.92] just ask AI what is the diff between the
+[29:09.76] two um what feature have they released
+[29:11.44] from you know 62 to 63 or we can
+[29:13.84] probably read their blog which they've
+[29:15.68] explained the same thing. Um but what
+[29:17.28] I'm going to start off with is um
+[29:21.44] I'm going to in this folder which has
+[29:22.96] original cloud code run my local cloud
+[29:25.04] code and ask um hey can you explain what
+[29:30.40] exists in the original claude code uh
+[29:34.24] folder and you know wait for it to do
+[29:37.04] its thing. This is the most
+[29:38.40] anxietyinducing weird part where you
+[29:39.84] know what do you do at this point?
+[29:40.80] probably watch a probably vibe or you
+[29:42.72] know watch a Netflix series uh which is
+[29:44.96] why I don't love u vip coding u but you
+[29:47.44] know what will you do this is like
+[29:49.20] slightly undoable humanly if I open
+[29:51.36] cursor and open this folder over there
+[29:54.48] um
+[29:56.88] so if I go to uh YouTube CC and open it
+[30:00.80] here
+[30:02.72] it's almost close to impossible for me
+[30:05.44] to um you know understand what's
+[30:08.24] happening here even So I do feel uh okay
+[30:11.92] you know why some prompts you can read
+[30:13.68] for example
+[30:15.28] let's see um
+[30:20.24] examples below use
+[30:22.80] this looks like a lot of you know
+[30:24.24] context for an AI um a lot of you know
+[30:28.16] from time to time they might be reading
+[30:30.08] these examples um hooks on or this just
+[30:34.32] might be documentation um or this might
+[30:37.28] be just be the system prompt actually
+[30:38.80] Um,
+[30:40.40] let's see.
+[30:42.72] Let's keep going.
+[30:51.52] Um,
+[30:54.96] skillify user description block. Um, you
+[30:58.24] are capturing the sessions repeatable
+[30:59.76] process and usable skill. Uh, okay. This
+[31:01.44] is like the prompt for skill generation.
+[31:03.92] Um if the user ever you know does
+[31:06.48] something specific that Claude can learn
+[31:08.56] something from and dump into a
+[31:09.76] skills.mmd file. Um this is probably
+[31:12.00] what does that u number one it tells clm
+[31:14.80] to analyze the session before asking any
+[31:16.48] questions analyze a session with you
+[31:17.68] know a bunch of things interview the
+[31:19.68] user you will ask use the ask user tool
+[31:22.32] which probably you know prompts me
+[31:23.84] something um to understand what the user
+[31:25.68] wants to automate. Yeah, whenever you
+[31:26.96] create a skill, for example, I created
+[31:28.32] like a deploy skill. Um, whenever you
+[31:30.16] create skills like these, um, you know,
+[31:32.40] um, it asks you a few questions,
+[31:33.76] actually dumps everything in a in a
+[31:35.20] skills.mmd file. So, this is the prompt
+[31:37.92] that lets you sort of do that. Um,
+[31:39.52] that's, you know, one thing we can
+[31:40.48] understand from here. Um,
+[31:45.92] what else? Um,
+[31:50.08] this looks like another prompt. Um,
+[31:54.16] update config skill. This is like
+[31:56.24] another skill that they have for modify
+[31:59.20] claude codes configuration by updating
+[32:00.80] set JSON file. Um if the user wants
+[32:03.52] something to happen automatically in
+[32:04.64] response to an event, they need to
+[32:06.24] create a hook configured in
+[32:07.36] settings.json. Um these require hook
+[32:11.44] before compacting asks me to preserve uh
+[32:14.08] after writing files run prettier so on
+[32:16.56] and so forth. Uh I'm assuming these are
+[32:18.56] examples of hooks. Um so on and so
+[32:21.28] forth. This is another you know prompt
+[32:22.64] that will let you create hooks in a
+[32:24.64] skills.json. JSON file um environment
+[32:27.84] variables uh bunch of other you know
+[32:33.04] context um
+[32:35.52] and then what is this I'm very curious
+[32:37.44] to understand what this is uh
+[32:42.88] but again as you can tell very hard for
+[32:44.40] me to reverse engineer this um using my
+[32:47.60] eyes so I'm not going to um this is what
+[32:50.40] cloud code returned it returned me this
+[32:52.16] is a production code of cloud code a
+[32:53.60] single bundlejs um install running this.
+[32:55.84] Now is when um we need to be very
+[32:58.16] meticulous with our prompt here. Um I
+[33:00.64] want to learn how to build this
+[33:05.12] not for commercial purposes. Um just
+[33:10.40] generally um can you uh go through
+[33:14.88] CLI.ts TS
+[33:17.60] or JS whatever and uh you know whatever
+[33:21.76] uh
+[33:30.88] original cloud code/ you know um SDK
+[33:34.24] tools.ts PS which is the declaration
+[33:36.16] file. Um I had to write more actually um
+[33:40.24] to understand what it's doing where um
+[33:42.72] to understand the folder structure of
+[33:46.08] claude and help me recreate it. Now it's
+[33:49.60] probably going to I mean I know this
+[33:50.88] because I've tried this once. Um it'll
+[33:52.64] probably say this not allowed and you
+[33:53.92] know this against the policy of cloud
+[33:55.20] codes. You have to find your way around
+[33:56.40] it. Um well not which is great. Uh
+[34:00.72] hopefully that uh use that's fine.
+[34:06.56] Do you guys get what we're doing? Um
+[34:08.40] we're trying to build uh claude code
+[34:10.40] using cloud code. Maybe some version of
+[34:13.68] it. Uh and uh I think the full code base
+[34:18.24] is reverse engineerable using AI, but I
+[34:20.56] could be wrong. Um so we'll see. Um
+[34:23.52] hopefully you guys can see me. I see a
+[34:24.96] bunch of warnings here, but I think
+[34:25.92] they're just futile warnings. um
+[34:28.96] tell me more about what's happening in
+[34:30.40] your life.
+[34:32.64] That's the part that I hate around uh
+[34:35.36] wipe coding which is like there's not
+[34:36.64] much you can do um when it's doing its
+[34:39.28] thing which in this case is you know
+[34:40.80] something um finding the shebang initial
+[34:44.08] structure first lines of code
+[34:46.96] that will probably not tell it much. Um
+[34:50.88] but let it do its thing. Um
+[34:55.92] how to reverse engineer like you. Um I'm
+[34:57.92] not doing much here am I? Um I just have
+[34:59.60] cloud code that's doing a bunch of
+[35:00.88] things for me. Um but I'm just sitting
+[35:03.20] here um and pressing enter. Um I'll
+[35:05.52] probably try to understand what it
+[35:07.12] figures out. Um but you know um honestly
+[35:11.04] in this case I'm not reverse engineering
+[35:12.24] anything like not none of my experience
+[35:13.92] is very uh applicable here because I've
+[35:17.28] not I have zero experience in reverse
+[35:18.64] engineering agriified JavaScript files.
+[35:20.24] Um
+[35:22.40] but you know you just should just have a
+[35:24.24] little bit of intent and this is like
+[35:25.52] this should be the first thought that
+[35:26.64] you get um if you ever see a claude
+[35:28.64] codes you know code bases available in a
+[35:30.56] nlified JavaScript file the full code
+[35:32.24] base um
+[35:35.84] so 30 benchmarks um I don't know I took
+[35:38.08] eight interviews today u I think a few
+[35:40.48] got accepted today what was the
+[35:42.00] benchmark honestly I mean the honest
+[35:43.68] answer here is um they have some project
+[35:46.24] in there um nothing crazy and they can
+[35:48.48] explain it well is he a lot of people
+[35:50.40] with a lot of intent um and you know
+[35:52.00] paying the whatever 2,000 views about
+[35:54.88] they don't end up doing well um because
+[35:57.36] they can't just explain you know um some
+[35:59.28] code that they have themselves written
+[36:01.28] um just one project that you can explain
+[36:02.80] well if there are no you know red flags
+[36:04.48] in your process of explaining um
+[36:08.24] your own code u that's usually a good
+[36:10.08] sign um because I don't know it's just
+[36:12.64] been easier for us to find some
+[36:15.04] entry-level offers as long as these
+[36:17.44] people meet a fair minimum you know bare
+[36:19.68] minimumish benchmark. Um so I'm just
+[36:22.08] looking at are they close to that bare
+[36:23.44] minimum benchmark or you know um can
+[36:25.52] they reach that bare minimum benchmark
+[36:26.96] because I'll tell you what a bad
+[36:28.16] interview in super 30 is. Um it's you
+[36:29.92] know either you don't know anything
+[36:30.80] which is like most people don't apply
+[36:32.48] for super 30 with that kind of a
+[36:33.84] background. The other one is they have
+[36:35.20] decent projects but they're very
+[36:36.40] obviously vioded. So using the front end
+[36:38.64] you can tell or using the back end you
+[36:39.60] can tell using some comments but the
+[36:41.04] clearest tell is okay as they're trying
+[36:43.44] to explain their own code they're not
+[36:44.64] able to um they have to look at the
+[36:46.24] comments that the AI wrote and you know
+[36:47.60] you ask them some fundamental question
+[36:49.04] that they should know the answer for for
+[36:50.24] example if they created a back end and
+[36:51.44] you know I can clearly see they've used
+[36:53.04] course over there um just knowing what
+[36:54.72] the definition of course is why is it
+[36:56.24] used why was it introduced back in the
+[36:57.52] day u and you know why should you add it
+[37:00.40] to your project things like this if you
+[37:01.92] can answer that uh that is a you know
+[37:04.48] good sign um what is a bad sign if
+[37:06.88] you're not able to you know um man there
+[37:09.04] are too many enters I have to press um
+[37:10.40] okay let me just do this
+[37:15.44] how's your day I had an interesting day
+[37:16.80] I woke up very late so at two um I don't
+[37:19.92] have any class I did not have any
+[37:21.12] classes today uh so I went out with a
+[37:24.32] friend until 5 um came back at 5:30 had
+[37:27.84] super interviews until 8 did some
+[37:30.16] twittering today surprisingly after a
+[37:31.68] long time um basically pressing a bunch
+[37:33.52] of retweet buttons from time to time um
+[37:35.28] and then I'm here um I I have to record
+[37:37.04] a video for the cohort after this and
+[37:38.32] then I'll call it tonight.
+[37:40.80] Um wheel recreate crazy open. Isn't that
+[37:45.76] recreating the wheel as well? If you're
+[37:47.04] building openclaw um the same thing,
+[37:49.12] right? Both of these are application
+[37:51.12] level you know um application level even
+[37:54.32] open claw I'd say is a tonal UI even
+[37:56.08] though it does sort of you know connect
+[37:57.12] to telegram. Um I think the learnings
+[37:59.04] that you have in both are going to be
+[38:00.16] similar. Um I would think this is a more
+[38:02.96] complex project to build because of the
+[38:04.56] context engineering required in building
+[38:06.08] something like this. Um and hence you
+[38:07.60] know I'm excited about this server AI
+[38:09.92] someone said um yeah a few problems
+[38:11.84] there in me trying to reverse engineer
+[38:13.20] it or you know build it. There's nothing
+[38:14.48] to reverse engineer I guess you know
+[38:16.00] data transformer a bunch of computers
+[38:18.00] what you need which I don't have access
+[38:19.76] to probably all three right now. Um so
+[38:21.52] you know I probably would want to
+[38:25.20] spend some time understanding the
+[38:27.12] transformer architecture the better
+[38:28.64] transformer architecture fine tuning
+[38:30.00] models before I um even think of doing
+[38:31.92] something like that. Um move the camera
+[38:34.16] screen to the top. Um
+[38:37.84] oh yeah uh that makes some sense to me.
+[38:40.32] Um
+[38:42.56] there you go.
+[38:45.76] What else? Um
+[38:49.04] what will be asked in superdev
+[38:51.04] fellowship and will there will be a
+[38:52.64] coding contest? Yes, you will get
+[38:54.40] maximum three submissions per question.
+[38:56.32] There will be four to five questions.
+[38:58.24] There will be test cases and points
+[38:59.76] associated to every question. The top
+[39:01.20] 200 people in the leaderboard will make
+[39:02.48] it in. As simple as that. Um what will
+[39:06.16] be asked? Okay, answer that one. Um
+[39:10.00] staying like too long. Um and too many
+[39:11.84] tokens.
+[39:14.24] Um
+[39:16.64] thoughts on what should a senior
+[39:17.60] engineer with experience? Um
+[39:20.32] should make in projects. Thoughts on
+[39:22.56] what should a senior engineer with four
+[39:23.92] years of experience should make in
+[39:26.00] projects. I don't know what that means.
+[39:27.12] Um as in what projects you should build
+[39:28.80] anything that interests you at 4 years
+[39:31.28] of you know experience. You probably
+[39:32.64] have you know some interest that you can
+[39:33.76] pursue now with some knowledge that
+[39:34.80] you've gained over the years. Um so I
+[39:36.56] would just build what I like. Uh coding
+[39:39.28] voting. Yeah. I'm trying to by the way
+[39:41.60] depends actually. Um I don't know
+[39:43.76] probably I would assume so. Um
+[39:48.24] how can I scale up my budget in terms of
+[39:49.68] revenue? I'm the not the best person to
+[39:51.28] answer that. Uh I think you need to talk
+[39:53.12] to some you know BD guy. Um would depend
+[39:55.52] on the market a bunch of other factors
+[39:56.96] which you know not the best guy to
+[39:58.72] answer. Any web three projects? Um I
+[40:01.12] think the poly market one was pretty
+[40:02.32] good that I was just sharing before um
+[40:04.48] we started working on this. Um
+[40:08.00] your promise are still pending. Yeah,
+[40:09.44] exactly what I'm supposed to build. not
+[40:11.76] promise um it's the HTTP class that I'm
+[40:14.64] supposed to um record today. Promise
+[40:16.56] class is done. Um
+[40:19.04] should we predict future jobs in market
+[40:21.28] in how should we predict the future and
+[40:23.76] job market in this AI era? You cannot um
+[40:27.04] I think it's not the best idea to do
+[40:28.56] predictions. Um generally um uh I think
+[40:31.84] I mean which is like comes from a fairly
+[40:33.28] elitist sort of a opinion. Okay, you
+[40:35.04] know follow your interest but I'm sure
+[40:36.80] you know you have u your reasons to do
+[40:38.96] predictions but generally they don't
+[40:40.08] land very well. um if you could predict
+[40:42.08] things which just make money you know
+[40:43.12] trading on top of those opinions
+[40:44.32] unfortunately you and I are really bad
+[40:46.00] at that um and hence I would just you
+[40:48.00] know do what interests me um exactly
+[40:50.96] poly market poly poly there a lot of
+[40:52.64] poly markets there we'll see let's first
+[40:54.48] understand this then I'm happy to build
+[40:55.60] the poly market u I got laid congrats oh
+[40:58.24] laid off my bad um it's okay it happens
+[41:00.80] um and you know always find another job
+[41:06.64] is me is being jack of all trades a good
+[41:09.44] thing probably not in CS. Um unless you
+[41:12.64] know you want to be a one one team
+[41:14.24] founder then probably us. Um but mostly
+[41:15.84] no. Um
+[41:18.32] we can uh
+[41:21.20] sorry some good web 3 to contribute to.
+[41:24.16] Um h third web has a bunch of open
+[41:27.44] source repos that are usually good. Um I
+[41:29.20] would say you can probably look at that.
+[41:30.32] Um should I join NIT3 form? Maybe. Uh
+[41:33.76] probably. I don't know. Um I don't know
+[41:35.52] if
+[41:37.44] I don't know but you have great skill.
+[41:39.20] You sound intelligent. Oh yeah, I just
+[41:41.12] sound intelligent. I'm not intelligent
+[41:42.88] uh by any sir. Um
+[41:46.16] use this to avoid Oh, I don't know if I
+[41:50.00] want to do that. Dangerously skip
+[41:51.60] permissions. Um probably not. Yeah,
+[41:54.48] probably not. Um
+[41:57.52] is Mac M4 good for coding in AI uh M5
+[42:01.68] base?
+[42:03.20] I would not think so. I think you need I
+[42:05.68] mean probably for smaller models. Yes.
+[42:07.68] for OPI models of course. No. Um I think
+[42:10.56] for hobby projects I should be fine. Um
+[42:12.08] probably you know is top end. Um
+[42:16.32] yeah taking too long. Um
+[42:20.88] hello from tier 69 college. Hello um
+[42:23.84] from tier one college. Haha. Is it worth
+[42:26.48] going to core modules of no node node
+[42:29.76] just understanding top level syntax and
+[42:32.16] build uh
+[42:34.24] core modules of node? Um
+[42:37.84] probably not early in your career. Um at
+[42:40.64] some point maybe um or you want I mean
+[42:42.96] third web does have some Solana repos
+[42:44.48] I'm sure. Um they did a big third web
+[42:47.92] Solana GitHub.
+[42:50.32] Um yeah there you go. There's a Solana
+[42:52.08] SDK to begin with. U
+[42:54.48] again there like it's fairly inactive
+[42:56.32] right now. I don't think u they're you
+[42:57.84] know super bullish on on web 3 right
+[42:59.44] now. A lot of these three companies or
+[43:01.04] founders pivoted to AI. I would assume
+[43:03.04] the same happened with these guys. Um
+[43:05.60] transaction production blockchain
+[43:07.76] transaction infrastructure I don't know
+[43:09.76] what that means. Um
+[43:12.24] third web engine core a production
+[43:13.92] blockchain transactions engine core is a
+[43:16.00] high performance horizontally scalable.
+[43:17.68] So therefore builders building ser
+[43:19.92] require reliable smart contract
+[43:21.76] interactions
+[43:23.28] account abstraction support and enter
+[43:25.12] level transaction processing. Um
+[43:29.04] sports horizontal scaling I get it but
+[43:30.88] what is it? Um
+[43:34.40] is it for transaction landing is uh
+[43:36.48] landing is what I could tell. Um
+[43:39.20] third web messaging Q
+[43:45.28] single worker per EOA architecture that
+[43:47.44] ensures transaction consistency while
+[43:48.80] maximizing throughput. U
+[43:56.88] yeah I think this is for transaction
+[43:58.56] landing. Um
+[44:01.36] it is in rust might be one good good
+[44:03.12] one. It's also not Solana. It is
+[44:04.64] Ethereum. Um let me find one in Solana
+[44:06.96] for you. Uh they have a JS SDK which
+[44:11.36] probably has you know
+[44:14.32] some Solana specific
+[44:17.92] uh this maybe this is Ethereum as well.
+[44:20.72] Um, yeah, I do see something in here.
+[44:23.84] Some Solana address UI block, which
+[44:26.64] probably is not the best place for you
+[44:28.00] to look at, but um
+[44:30.56] uh
+[44:33.44] yeah, this is this front end code base?
+[44:36.96] Oh, maybe. Uh what repo is that?
+[44:40.72] No, it still says JS. This doesn't look
+[44:42.40] like their JS SDK. This might just be
+[44:43.76] their website codebase. Um or oh, I
+[44:46.48] guess it's a bunch of components that
+[44:47.92] they export that you can put in your
+[44:49.12] application. This might be one. um which
+[44:50.56] has some Savannah code. Anyways, coming
+[44:52.08] back to the Oh, there we go. Uh
+[44:54.56] something it did u
+[44:57.68] all right uh that's a lot of things. Um
+[45:01.12] reconstructed folder structure. It has a
+[45:04.08] package.json tsconfig.json
+[45:06.48] source/index.js
+[45:08.08] main.ts Yes. Um,
+[45:15.12] commanderjs cli and oh oh no.
+[45:20.56] Where is it? Where is it? There we go.
+[45:22.24] Subcomands and launches the ink app. Ink
+[45:24.64] I think is you know some UI framework
+[45:27.76] internals. I would assume ink as in you
+[45:29.52] know red colors or green colors. Um cli
+[45:32.72] commands mcbp.ts o.ts doctor.ts. So I'm
+[45:37.20] assuming these are all you know clawed
+[45:38.48] code. Uh I open another terminal here
+[45:43.36] top level commands that you can run. Uh
+[45:45.68] if I run o or
+[45:49.44] claude o yeah claude o whatever options
+[45:53.20] or cloud mcp
+[45:56.72] whatever options. Um so all of these
+[45:59.52] subcomands are in this folder. uh
+[46:03.04] the flags that you can pass.
+[46:07.04] We'll have to see what this file is. I'm
+[46:08.56] curious to see what it is. Uh the UI
+[46:12.24] which looks very close to you know React
+[46:14.40] codebase like like a React declarative
+[46:16.64] syntax which we love. U
+[46:20.32] core agent loop. Uh this probably is all
+[46:23.20] the AI bits. Uh,
+[46:25.60] wow. It has actually, you know, uh,
+[46:28.24] probably copied the uglified function
+[46:30.00] names and and just put them in here,
+[46:31.28] which is very interesting. I'm I'm
+[46:32.56] curious to see this file. Um, or, you
+[46:34.64] know, whatever this file and and see
+[46:37.36] what what function names exist inside.
+[46:39.20] Um, context compaction. Beautiful. I'm
+[46:42.72] interested to see these two files as
+[46:44.08] well. The prompt that is used for to
+[46:45.44] compact your um, you know, prompt um, as
+[46:47.84] the context increases a lot. and the
+[46:49.52] system prompt. Um all the tools that you
+[46:51.76] have access to which you know um there's
+[46:53.52] probably a batch tool that does most of
+[46:54.80] the things. Um there's file read file
+[46:57.04] write file edit um pattern matching um
+[47:01.12] GP agent tool for probably okay spawning
+[47:04.32] sub aents fetching from the web I don't
+[47:07.04] know what difference exists amongst
+[47:09.36] these two but a lot of them um
+[47:11.44] permission.ts ts you know dangerously
+[47:13.12] start permissions things like these um
+[47:14.88] hooks now this like something specific
+[47:16.08] to cloud code we have to understand how
+[47:17.28] it is um talking to the actual anthropic
+[47:19.60] API this is where you know we can do a
+[47:21.28] bunch of things we can actually change
+[47:22.80] the anthropic calls to which you as you
+[47:25.04] can tell here the it's only talks to
+[47:27.28] enthropic via bedrock or vertex or
+[47:30.32] anthropics official API but we can
+[47:31.68] actually replace this with openi call so
+[47:33.60] we can build cloud code at the
+[47:34.96] application layer and use whatever gpd
+[47:37.76] or you know openi at the model layer mcp
+[47:40.64] code we can just get into this I've
+[47:41.60] never used MCPS. Um I think at least for
+[47:43.76] me have been fairly useless. Um state
+[47:45.92] management probably on the front end but
+[47:47.68] I could be wrong. Um yeah probably the
+[47:49.28] you know front end but when I say front
+[47:50.48] end I just mean the CLI telemetry which
+[47:52.64] useless for me right now and a bunch of
+[47:54.40] shoot functions. Um RIP Grep which is
+[47:57.28] you know a better version of GP that
+[47:58.72] everyone uses um tree sitter and a bunch
+[48:01.36] of other vasom files. Beautiful core
+[48:03.44] loop how all everything fits. It seems
+[48:05.60] like it understood most of the things.
+[48:07.20] um when you clear early inputs um so
+[48:11.04] capture the input. So if I write claude
+[48:12.88] and press enter and type a bunch of
+[48:14.16] things u so something like you know
+[48:18.56] uh if I press enter and write a few
+[48:20.56] things and raise my key you still see
+[48:22.32] them because it just you know captures
+[48:24.16] all the old inputs that's the first
+[48:25.28] function that runs then you call main um
+[48:27.60] inside main you call ink.create create
+[48:29.60] route which probably renders the app um
+[48:31.76] where there's a text input a message
+[48:33.36] list and an onsubmit function which when
+[48:35.20] you click on it starts an agent loop um
+[48:37.60] which does a bunch of things sends the
+[48:39.60] call to anthropic and you know it is a
+[48:41.12] loop so it'll keep running again and
+[48:42.24] again um processes the response renders
+[48:44.72] the response on the UI and a tool
+[48:46.32] extract ts that that extracts a specific
+[48:48.24] tool um the tool interface what every
+[48:50.72] tool looks like okay every tool has a
+[48:52.88] very specific interface looks like this
+[48:54.48] the description of the tool the prompt
+[48:56.72] that will be attached whenever you know
+[48:58.64] where do Do you need a prompt for a
+[48:59.92] tool? Um
+[49:01.92] I'll have to see detailed instructions
+[49:03.44] for the LM. Okay. How the LM is supposed
+[49:05.12] to you know use this tool. I guess input
+[49:07.28] schema of that specific tool. Um if it
+[49:09.84] is enabled, if it is read only, is
+[49:11.60] concurrency safe.
+[49:14.72] Bun uses um what runs sing on a single
+[49:17.92] thread I would assume. So I'm not sure
+[49:19.28] what this means but we'll see. U check
+[49:21.28] permissions call um render tool use
+[49:23.84] message which is a react returns a react
+[49:25.60] element. Render tell to message element.
+[49:27.92] Beautiful. Um
+[49:29.92] tools are plain objects and not classes.
+[49:32.64] 396 lazy modules. Everything is lazy
+[49:34.56] loaded via thanks via thanks for fast
+[49:37.44] startup. Um concurrent tool execution.
+[49:40.56] Um tools that are concurrently Oh, now I
+[49:42.64] get it. Um when they say
+[49:45.60] concurrently
+[49:47.20] safe u they basically mean um what tools
+[49:50.08] can run parallel and what tools can't.
+[49:51.76] For example, bash and write should not
+[49:53.68] run par parallelly should run
+[49:55.20] sequentially because you might be
+[49:56.24] reading a file, another one might be
+[49:57.68] writing to a file. Um but things like gp
+[49:59.68] can run you know parallelly because you
+[50:01.20] might you're just searching you're just
+[50:02.16] reading you're not writing. Um that
+[50:03.44] makes sense. Um hooks are shell commands
+[50:05.68] not JS functions actually hooks I know
+[50:08.64] cloud code has something called hooks
+[50:09.84] but you'll have to understand what it
+[50:10.64] is. And you know permissions for a bunch
+[50:12.72] of things is good. Um
+[50:15.20] beautiful. Uh
+[50:17.60] it wrote all of that. Um, and here is
+[50:20.48] what is in the original folder. It's a
+[50:21.76] copy of the published npm package. This
+[50:23.84] is the original distribution artifact.
+[50:26.00] Oh,
+[50:27.68] copy. Um, anyway, uh, this is good. We
+[50:31.20] have everything we need. Um, did it
+[50:32.64] write all of it though? So, if I go back
+[50:35.44] to YouTube CC, um, and original cloud
+[50:38.56] code. Uh,
+[50:41.36] uh, oh, sorry. Oh,
+[50:45.84] YouTube CC.
+[50:48.24] Uh, did it create a copy claude code or
+[50:51.28] something? It didn't. All righty. Uh,
+[50:54.24] all righty.
+[50:56.64] Let's initialize all these files
+[51:00.80] and start with a simple agent loop,
+[51:04.24] simple set of tools and uh a simple UI
+[51:08.88] using ink.
+[51:11.12] I don't think it can oneshot the whole
+[51:12.72] cloud code, you know, u every feature um
+[51:15.92] as expected. So, we'll go step by step.
+[51:17.52] We'll start off with a very simple
+[51:18.64] version of cloud code. U I probably
+[51:20.64] should tell it. Um assume I will give
+[51:24.08] you an uh uh you know Gemini API key you
+[51:28.24] know open router API key. Uh because I
+[51:30.40] already have credits in open router. Um
+[51:32.48] you are supposed to talk to the model
+[51:36.56] using it. Um
+[51:39.36] yeah that's the only other detail I'd
+[51:41.28] like to add. So we can actually test it
+[51:42.64] with some good models. Um and you know
+[51:44.08] not with free Gemini API keys. Um do we
+[51:46.72] understand what was done until this
+[51:48.16] point? Um we try to reverse inj which
+[51:51.68] open router model do you want to use by
+[51:53.36] default? Um
+[51:55.36] yeah I think this is fine. Uh
+[51:58.16] it'll be an environment variable that is
+[52:01.28] good. I'm a face reader and I can tell
+[52:04.64] your face and tell you you've been
+[52:07.12] getting a lot of sleep generally. I have
+[52:10.08] been sleeping a lot. I do agree and now
+[52:12.56] you can read my face but yeah been
+[52:15.12] reading and sleeping very well. Thank
+[52:17.28] you. Um what is super chat? Super chat
+[52:20.88] is a feature that YouTube has. Trying my
+[52:23.84] best to evade the question. Not able to.
+[52:25.84] Um
+[52:28.88] your English your English fluency has
+[52:30.88] gone down. Yeah few people have told me
+[52:33.60] that. I think it's because I'm
+[52:34.72] interacting less with US clients. I'm
+[52:37.28] living in Noa now. So I have like a lot
+[52:38.80] of you know the NOA accent sort of kicks
+[52:40.80] in. Um I will try to fix it. Good
+[52:42.88] feedback.
+[52:44.40] Uh I need to start Yeah, see there's
+[52:46.32] another arm over there. Um I need to
+[52:48.08] start uh you know working for a US based
+[52:50.40] company and you know 3 months there and
+[52:52.96] I'll be back.
+[52:55.20] You're trying to take a job. I probably
+[52:56.64] should um start building build streaming
+[52:58.80] apps like YouTube. That's like I don't
+[53:01.12] know pretty bare minimum at this point
+[53:02.88] you know. Um but when I say bare minimum
+[53:04.48] I mean something very simple slash why O
+[53:07.12] is here. um slash you know um something
+[53:09.92] that's very easy to build. I don't know
+[53:11.12] if I want to build that um right now. Uh
+[53:15.28] all right. Uh we continue.
+[53:18.08] Where are you code? Please review yu yu
+[53:23.68] in would love feedback.
+[53:26.80] That's a weird domain name. Yu comma in.
+[53:29.36] Um I'm a front-end dev whose experience.
+[53:32.64] What is the future? U so I have good
+[53:35.12] news and bad news for you. Um
+[53:37.76] bad news is you it's gotten really good
+[53:39.92] at UI. um clot code is like it gets you
+[53:43.20] 99% there which the thing is before a
+[53:46.40] company launches you don't really care
+[53:47.52] too much about you know the last set of
+[53:49.44] a finesse so it does do things really
+[53:52.16] well um
+[53:55.36] so does that mean you don't have a job
+[53:57.28] anytime soon I don't think that's true
+[53:59.20] um but it has gotten incredibly good
+[54:01.28] like there there would be a bunch of
+[54:02.48] tasks I would offload to people in the
+[54:03.92] past that I wouldn't need to anymore um
+[54:05.84] that probably means I don't need to hire
+[54:07.12] you know junior engineers anymore or
+[54:08.48] whatever that's been a common, you know,
+[54:11.36] thought for a while now. Um, hey,
+[54:17.52] you guys should Hey, this
+[54:21.60] is Ollie. He just turned 6 months old.
+[54:25.44] It's time to neuter him. Um, and I think
+[54:27.60] he's ready to get neuter.
+[54:30.72] Good boy. Good go. Good.
+[54:34.16] Even he can wipe code really well. I've
+[54:36.32] seen him sit on top of my keyboard. Um
+[54:38.88] and all I can say is okay you know he's
+[54:40.24] not half bad. Uh why don't you build a
+[54:42.88] product and make a business out of it.
+[54:44.32] Um thing is I can build most products.
+[54:46.88] Building a business out of it requires
+[54:48.56] you to put your energy in a lot of
+[54:50.56] things that I don't like putting my
+[54:51.68] energy into right now. Um which is why
+[54:54.32] uh I would just focus on building the
+[54:56.00] product. Um could you share some good
+[54:58.40] alternatives to web containers? Um there
+[55:01.12] aren't there's like some web assembly
+[55:04.16] you can do. There is a bunch of uh
+[55:06.80] open-source projects that let you
+[55:08.24] compile Python in the browser. Um but if
+[55:11.44] you want to you know compile React
+[55:13.76] projects, that's really hard to do. U
+[55:16.00] web containers are a good alternate for
+[55:17.44] that or just you know do everything on
+[55:19.36] the back end. You don't necessarily need
+[55:20.32] to do everything on the front end. You
+[55:21.28] will always set limitations. Um so yeah
+[55:24.96] uh don't neuter your cats please. Is
+[55:27.36] there a reason for it? Like everyone
+[55:28.40] told us to like I'm open to not doing
+[55:30.08] that. Um but everyone and espec
+[55:32.32] especially the doctors say it's
+[55:33.60] something you need to do. Um
+[55:36.40] is any person AI which you follow
+[55:38.00] heavily um I mean we all the lab
+[55:40.56] founders no technical person per se um
+[55:43.60] Andre Karpati which everyone does but
+[55:45.28] like not as aggressively as I probably
+[55:46.80] should um but mostly you know um I'm too
+[55:49.92] old to you know start research right now
+[55:51.28] so I probably am not going into it. I
+[55:53.44] think uh I've consumed my uh what's the
+[55:56.56] right word for it? My uh mental capacity
+[55:59.92] u has you know gone down over the years.
+[56:01.52] Usually happens as you grow old. Um it
+[56:03.36] might be a little late. The name of the
+[56:04.56] cat is Ollie. Um Ollie say hi.
+[56:10.64] Audio levels keep changing. Speak closer
+[56:12.64] to the mic. Oh my bad. Hello. Hello.
+[56:14.32] Hello. Hello. Hopefully it's better. Um
+[56:17.12] is there good money in SAS? I think
+[56:18.56] there is. Right. Depends depends on the
+[56:19.84] SAS. Uh if you guys have seen um Cali u
+[56:25.52] which I'm thinking of doing a video on
+[56:27.28] um they reached 50 million AR RR and
+[56:29.60] then eventually sold to my therap what
+[56:32.64] is that company like a big big uh health
+[56:35.52] tech company um so that would have been
+[56:38.48] a nice outcome for anyone it was a very
+[56:40.40] simple SAS also nothing too complicated
+[56:42.80] so there is definitely money you just
+[56:44.40] need to hit the right
+[56:53.04] You just need to hit the right market.
+[56:54.72] Uh is you know which is usually driven a
+[56:58.16] lot by your past experiences. My fitness
+[57:00.40] fitness pal. Thank you Rakshit. My
+[57:02.40] fitness pal acquired cali for I would
+[57:05.36] assume a lot of money. Um yeah there is
+[57:07.68] oh wu the domain name is wu within. Okay
+[57:11.36] now that you've paid me 40 rupees makes
+[57:13.52] sense for me to try it. Right. I hope
+[57:14.64] there's nothing weird in here.
+[57:17.12] Very heavily white coded um is my first
+[57:19.68] thought. Um learning with contributions
+[57:22.32] a platform. Okay. Very hard to tell what
+[57:23.92] it does where you can contribute to your
+[57:26.24] projects in a closed environment. H
+[57:34.40] I couldn't get what it does. Uh
+[57:37.20] is it like linear? Is it linear
+[57:40.56] or closer to linear? I would assume it
+[57:41.92] is. um seems like a decent idea to
+[57:44.80] pursue um is all I'll say. Uh I sorry
+[57:48.24] not get the time to you know look deeply
+[57:49.76] into it. Um well it's taking a lot of
+[57:51.84] time to do this so I'm I'm very curious
+[57:53.04] to see what it spits out. Hello I have
+[57:56.00] an offer for 5 LPF from a subsidiary of
+[57:57.68] build two-year bond. Should I take it?
+[57:59.44] Again very personal choice. You should
+[58:00.56] decide yourself. Um
+[58:05.68] what is that ideal plan to become crati
+[58:08.64] while working in a company paying 8 lpa
+[58:11.20] at the moment? Uh I wish I was a finance
+[58:13.44] creator. I'm not. Um but I would assume
+[58:15.44] there's some math you can do and you
+[58:16.64] know beat inflation and and and reach
+[58:18.56] that number. Think about that number is
+[58:20.32] it's a very vicious number always when
+[58:21.84] once you reach 1 CR you chase more. Um I
+[58:24.24] would not chase any numbers. I just
+[58:25.28] chase better salaries.
+[58:28.80] what people use AI in the super dev
+[58:31.28] contests. The thing is they can um which
+[58:33.68] is why the which is why I'm trying my
+[58:35.52] best to you know find a way around it
+[58:37.36] but unfortunately in an online format
+[58:39.68] there's no easy way to um you know fix
+[58:42.32] that. Uh why is this taking so long? Um
+[58:44.96] it's just writing the plan right now. Uh
+[58:47.04] so it it'll take some more time and
+[58:48.64] implementation. Um but we wait web 3
+[58:50.96] career after recent AI storm. Um I think
+[58:53.28] that it's like become nicher and nicher.
+[58:55.36] Still fairly high paid but the number of
+[58:57.60] jobs will be down. The comp will
+[58:59.12] probably remain the same. Um you'd have
+[59:00.72] to wait for that uptick to come. I think
+[59:02.48] we've we're closer to the bottom. And
+[59:04.40] I've I've been saying that for a while.
+[59:05.60] Even when soul was at 130, I thought
+[59:07.20] we're at the bottom. So we weren't
+[59:08.56] though. So I would say uh don't take my
+[59:11.92] uh advice on you know what category to
+[59:14.16] focus on when it comes to a job. Even I
+[59:15.52] don't know anything and you know um I
+[59:17.68] might be able to find my way around, you
+[59:19.52] know, specific niche but you might not.
+[59:21.12] Um so so you know think yourself and
+[59:23.20] obviously it makes more sense to you
+[59:24.32] know I mean look at look at super 30
+[59:26.96] stats also like probably less than 20%
+[59:28.80] of the people have gone into web three
+[59:30.08] this time and AI has been probably more
+[59:32.40] than 50% you know some variation of AI
+[59:33.84] which you know ZI company a company
+[59:35.20] that's using AI in some form or fashion
+[59:38.56] um you talking about junior I was just
+[59:41.12] saying it's I don't probably wouldn't
+[59:43.36] hire junior engineers um anytime soon um
+[59:47.04] for my UI tasks which is something I
+[59:48.80] used to do before which is just a random
+[59:50.64] thought that came one now that you know
+[59:52.72] floor code is so good um at doing this
+[59:55.44] writing UI specifically I need water
+[59:57.52] I'll be back in 2 minutes I will start
+[59:58.96] some background music indeed um
+[60:04.80] sorry I need to drink water I'll be back
+[60:06.80] in 5 minutes until then
+[60:10.80] that's what Claude is Mhm.
+[60:27.84] >> Oh man.
+[60:43.84] I'm not
+[60:56.32] something.
+[61:24.64] Do you
+[61:30.80] think
+[61:33.92] something
+[61:52.48] Come on.
+[62:08.72] I got
+[62:11.44] something.
+[62:38.16] Fore
+[63:08.16] because they are leaving
+[63:35.68] your money. Under there
+[63:48.08] again.
+[64:04.80] Put your babies
+[64:09.84] on me.
+[64:44.72] I'm about
+[65:02.80] Give that
+[65:04.56] meat.
+[65:51.68] I get it.
+[66:01.76] really.
+[66:19.04] >> All right.
+[66:20.72] So uh what we're going to do now is
+[66:26.96] it probably created the right things for
+[66:28.88] us. Uh
+[66:31.12] there is a package.json where I can
+[66:33.52] first export my open router API key
+[66:36.40] which I probably want to do off the
+[66:38.40] record here. So let me quickly do that
+[66:40.64] for the people who were interested in
+[66:41.92] seeing my hairline. There is here's your
+[66:43.36] time. It's not too bad. But a trip to
+[66:48.24] Turkey is long due. Um, API keys. Create
+[66:52.56] a new API key. Call it YouTube.
+[66:56.08] Delete later. Enter.
+[67:00.00] Copy it. Oh, seems like I'm almost out
+[67:02.08] of credits as well. How much credits do
+[67:03.44] I have? O, I don't have enough credits.
+[67:06.16] I have like $1 left, but I think it
+[67:07.76] should be fine. Uh, coming back here.
+[67:12.08] Going back here. Oh, sorry.
+[67:16.72] Back here. Done this. And now back here.
+[67:20.40] All right, let's do it. Uh,
+[67:25.20] bun, sorry, cat package.json
+[67:31.36] npm rundev.
+[67:35.68] All right. Uh, looks like something. Um,
+[67:39.20] type a message to chat. Exit to quit.
+[67:41.20] Hi.
+[67:45.04] Doesn't look as good as cloud code. Um
+[67:48.40] I can hear okay great um it also already
+[67:50.56] knows I'm in a specific folder and you
+[67:52.32] know it can help me with you know
+[67:54.88] content for the folder things for the
+[67:56.00] folder so I probably you know go down
+[67:57.76] the route of uh I don't know uh can you
+[68:02.08] tell me what feature is missing in the
+[68:05.20] current implementation
+[68:08.00] of this terminal UI by the way do you
+[68:12.48] know you are creating yourself Here the
+[68:17.60] project
+[68:19.92] that
+[68:21.60] you are help creating is you. Isn't that
+[68:25.28] great?
+[68:27.76] I think you can be really bad at the
+[68:29.44] application layer for this. Um,
+[68:32.24] but oh illegal operation read.
+[68:35.76] What was it doing again? I don't know.
+[68:36.96] But somehow it was able to read. Um,
+[68:38.96] read read more read
+[68:42.00] more read. Okay, it's just trying to
+[68:43.76] figure things out. We're not counting
+[68:45.76] tokens right now, which is something I
+[68:47.36] like to see from time to time. Uh, but
+[68:49.36] it's probably just using the batch tool
+[68:50.64] very heavily trying to understand what's
+[68:51.84] happening. Um,
+[68:58.96] the ls command fails from time to time.
+[69:00.80] I don't know why. Uh,
+[69:04.48] we need to figure out what's up here.
+[69:05.92] Um, now as of the current
+[69:08.32] implementation, I can see there's a Oh,
+[69:11.28] ish.
+[69:13.76] Yeah, there's definitely a very weird
+[69:15.60] scrolling issue right now. Uh, okay. But
+[69:18.40] we're back. Uh, all right. What does it
+[69:20.96] say? I can see that terminal, but that
+[69:23.76] recality, but there are key missing
+[69:25.52] features I've identified. Conversation
+[69:27.60] history persistence. That might be one.
+[69:29.04] Um file management n
+[69:32.88] file tree/d directory browser no quick
+[69:35.04] file navigation shortcuts no recently
+[69:36.96] open file tracking uh
+[69:40.40] okay no syntax highlighting for code
+[69:43.04] blocks no command history yeah fairly
+[69:45.68] basic features uh okay
+[69:49.76] 2 3 4 project context awareness no
+[69:52.24] automatic project detection uh
+[69:54.56] configuration no getting node for file
+[69:56.80] operations Uh, no system help, error
+[70:00.64] handling and recovery. Uh, advanced AI
+[70:03.68] features, multi-turn conversation
+[70:05.84] optimization, I don't know what that
+[70:07.20] means. Um, context and imagine for long
+[70:09.28] conversation. This I'm very curious
+[70:10.64] about. How exactly do we do u context
+[70:13.20] engineering? I hope um the prompt for
+[70:16.40] summarization I I think it was we saw
+[70:18.16] that a while back was already in in you
+[70:20.64] know the code base of cloud code. So I'm
+[70:22.40] hoping you know we can just reuse that.
+[70:23.52] Um token tracking is something I'd like
+[70:25.44] to see. no stream interruption
+[70:26.88] capabilities which is another thing we'd
+[70:28.24] like to see um the indeed fascinating
+[70:30.96] you're building an AI system using an AI
+[70:32.24] assistant there's so uh the current
+[70:34.96] implementation is quite solid as a
+[70:36.24] foundation with a good tool integration
+[70:37.92] let's just try this out for a project um
+[70:39.92] you know uh not for a simple project
+[70:42.56] maybe for you know a better production
+[70:44.00] project um but uh yeah what do you guys
+[70:46.88] want to do from here um we can also
+[70:48.32] explore the code base which I'm curious
+[70:49.68] to see um
+[70:52.40] this is the original code cloud code let
+[70:54.08] me just close that Um and right now this
+[70:56.00] is what our folder structure looks like.
+[70:57.28] There's an index.ts which calls create
+[70:59.76] cli.parse which comes from here where we
+[71:03.60] use commander and ink. So a combination
+[71:06.64] of ink for writing the front end and
+[71:08.56] commander for you know creating the
+[71:10.40] specific CLI um project name CC um okay
+[71:14.80] I'd probably call it something else you
+[71:16.08] know um something like whatever u claw
+[71:20.16] codeex uh
+[71:23.28] I don't know uh what's a good name for a
+[71:25.76] terminal UI open code is really good u
+[71:28.64] coder let's call it coder u a simplified
+[71:32.88] coding assistant who said it's a clone
+[71:37.28] uh with one flag right now. We probably
+[71:39.60] need to add much more um API key. If the
+[71:42.24] API doesn't exist, then that's a
+[71:43.76] problem. If not, it renders app which
+[71:46.64] looks very close to React. Um in fact
+[71:48.48] uses React um and you know a bunch of
+[71:50.80] components from ink to render things
+[71:53.12] like whatever uh
+[71:56.40] colors do header of YouTube CC.
+[71:59.92] Interesting. Um I like how they do theme
+[72:02.56] management.
+[72:04.24] colors are muted type a chat exit
+[72:06.08] perfect and then the ripple which I'm
+[72:07.52] assuming you know has everything um the
+[72:10.40] infinite ripple of messages so on and so
+[72:12.40] forth message list there you go um
+[72:14.32] beautiful what would be the next feature
+[72:16.32] to add um I think the biggest biggest
+[72:18.16] thing to do right now would be to you
+[72:19.28] know see how well it performs at some
+[72:20.96] terminal bench um and you know is is a
+[72:23.36] oneshotted version of a terminal UI
+[72:25.28] clone using cloud code um as good as
+[72:28.16] cloud code probably isn't but how far is
+[72:30.16] it from you know competing with a codeex
+[72:31.84] or cloud code so on and so forth even So
+[72:33.60] it's probably not a fair rest comparison
+[72:35.60] considering we've just reverse
+[72:36.80] engineered the code base of cloud code.
+[72:38.24] So even if it's as good as cloud code um
+[72:40.72] doesn't mean much. Um so what do you
+[72:42.56] guys want to do next? We have a basic
+[72:43.84] version. Let me push it in case you guys
+[72:45.12] are curious to see what's up. U so let
+[72:47.36] me create a new
+[72:50.96] repo called coder
+[72:57.04] and push this code over there.
+[73:13.92] original dashclaw dash code.
+[73:25.12] Beautiful. Did you guys just see my
+[73:28.16] open router key? You did. Does it
+[73:29.92] matter? No, it only has $1 in it. So, go
+[73:32.80] crazy.
+[73:42.64] All right. If you guys are curious, the
+[73:44.48] code exists over here.
+[73:48.48] Let me paste it in chat.
+[73:51.36] You can see what's happening inside. Uh,
+[73:54.48] cool. That's version one. um any
+[73:57.28] specific feature you want to build next
+[73:59.28] or then I can just you know keep doing
+[74:01.44] what I'm doing and continue down the
+[74:03.20] same route. Manupi said we need songs.
+[74:05.92] So songs are what we're going to get. Uh
+[74:08.32] let me see what I can play.
+[74:16.72] What is that song? I'm very uh what was
+[74:18.96] it?
+[74:22.24] Uh it's in my head. Oh yeah. Have you
+[74:24.72] guys heard I mean I don't know old
+[74:25.68] Anindergill songs. Amindar Gill songs.
+[74:29.68] So you know uh
+[74:33.92] this one sounds really good. Um one of
+[74:36.40] my recent favorites but I know you guys
+[74:38.32] probably won't like it.
+[74:40.40] All right. Anything specific
+[74:43.76] that you guys want me to build? Okay.
+[74:45.60] You gota
+[74:48.72] kla.
+[74:53.84] There's a playlist. We just let it play
+[74:55.04] in the background. Um any specific
+[74:56.72] feature you guys want next? Um or should
+[74:59.76] I just do my thing? Um what are b
+[75:02.48] minimum skills and knowledge anyone
+[75:05.76] should have to get entry level jobs? Um
+[75:10.16] depends stack specific. you know most of
+[75:12.88] RFLs have been um months stack you know
+[75:16.64] interviews probably 80% if not more so
+[75:18.96] if you're good at Typescript you're
+[75:20.40] usually you know able to make your way
+[75:21.68] in when I say TypeScript I also mean you
+[75:23.28] know NodeJS uh bun react nextJS
+[75:27.60] differences interview questions things
+[75:29.12] like these um that usually is enough um
+[75:31.68] this post has been colonized what's that
+[75:33.84] about what's what about I don't know
+[75:36.40] what that means
+[75:38.24] do the poly market project now we can do
+[75:40.08] that I don't mind um we We've created
+[75:42.00] one version of this. We can do the poly
+[75:43.52] market project next. What do you guys
+[75:44.64] want to do next?
+[75:47.20] What to do next? U build the poly
+[75:52.80] market project or continue on the coding
+[75:56.88] CLI.
+[76:04.40] >> Uh don't come to school unless you've
+[76:06.48] been invited. The gig the guy won't let
+[76:08.00] you in. Um but if you have been invited
+[76:10.40] at 25th I
+[76:12.80] don't know if I'll be there actually
+[76:14.48] it's like really far along
+[76:21.92] >> monkey type project again like very
+[76:23.52] simple make a simple backend project in
+[76:25.76] rust live again very simple like nothing
+[76:28.32] that can be you know white coded like
+[76:38.32] Um, I don't know if there'll be more
+[76:39.76] Super 30s. Probably there'll be one
+[76:40.96] more. There'll probably be three and
+[76:42.00] four. Um, like Super 33, Super 34.
+[76:43.76] That'll probably be the last one.
+[76:47.52] Uh,
+[76:50.32] what's the winner? Poly Market Project
+[76:51.92] is the winner.
+[76:57.04] So, here is a random thought for
+[76:58.32] everyone. Um the winner is the build the
+[77:00.24] polymarket project. But again there's
+[77:02.00] nothing I did in the last you know 30
+[77:03.84] minutes that's not doable by anyone else
+[77:05.52] you know um or like a monkey if if they
+[77:07.36] know what they're supposed to do or what
+[77:08.56] prompts they're supposed to write. Um
+[77:10.00] and usually jumping from one fancy
+[77:12.16] project to another is not the best
+[77:13.20] thing. Um the thing that we have built
+[77:14.80] is not close to you know how you would
+[77:16.96] want u a coding CLI to be. Ideally you
+[77:20.32] should just build on top of this uh make
+[77:22.08] it better and you know make it feature
+[77:24.16] compatible with cloud code. How
+[77:25.28] beautiful would that be if you can take
+[77:26.88] claud codes you know uh bundle reverse
+[77:29.12] engineer it and you know build something
+[77:30.80] similar that no one can tell the
+[77:32.56] difference so one as I'm trying to
+[77:34.72] reverse engineer this um if I just open
+[77:37.68] one randomly like open mine or versus
+[77:39.52] theirs and I can immediately cannot tell
+[77:41.60] the difference that's when you've built
+[77:43.28] a good product um there are a lot of
+[77:45.44] better challenges to tackle now compared
+[77:47.28] to just moving to the next fancy project
+[77:48.56] versus the poly market project I can do
+[77:49.76] it um we'll probably do it because
+[77:50.80] that's what the poll says um but general
+[77:52.56] good advice is u not switching from one
+[77:54.72] project to another. With that, we move
+[77:56.08] on to the second part of today. Before I
+[77:58.32] do that, let me quickly get rid of my
+[78:00.08] open router key. Um,
+[78:06.64] so that uh you guys can't or won't
+[78:09.84] hopefully u run me out of credits here.
+[78:12.72] API keys. Um,
+[78:15.20] YouTube delete later. Delete. Okay. So
+[78:18.96] to give a quick update on what we're
+[78:20.88] doing um what we've done until now
+[78:25.36] is this coding CLI. Um what we're doing
+[78:29.36] next is
+[78:35.12] poly market trading um app basically uh
+[78:40.00] something like this um an app where I
+[78:42.00] can come u or not not come um an app
+[78:44.96] that is deployed on the internet that is
+[78:46.40] constantly betting on this very small
+[78:48.24] five minute market um when I say small I
+[78:51.12] mean small by time um and you know
+[78:53.20] selecting the majority in the last let's
+[78:55.52] say one minute so in the last one minute
+[78:56.80] we can
+[78:57.68] Okay, know this is the favorable u you
+[79:01.28] know outcome which is it'll most
+[79:02.96] probably stay down. That's what I just
+[79:04.40] bought for 78 cents but now I'm slowly
+[79:07.52] going towards one. So I'll just make
+[79:08.56] whatever 13% every 5 minutes. 13% every
+[79:10.96] 5 minutes is one of the best you know
+[79:13.36] return strategies. U but of course it
+[79:16.48] might blow up in my face and you know um
+[79:19.28] that's what we'll sort of understand
+[79:20.48] through the project. Okay, are these
+[79:21.84] probabilities optimal or not? Because
+[79:23.20] for example, as you can now clearly see,
+[79:25.04] I'm starting to lose money because it
+[79:26.56] might just go up that threshold that
+[79:28.08] we're hoping for it to not go. Um, and
+[79:29.92] it just did. So, you know, is this good
+[79:32.16] or not? We'll only know if we keep doing
+[79:33.68] this with, you know, $5, $10 for 3 days
+[79:36.32] and then after 3 days, we'll probably
+[79:37.44] realize, you know, it was good or not.
+[79:39.04] Probably should only do this at the last
+[79:40.64] 10 seconds or something like that. Um,
+[79:42.32] and not wait for 30 seconds. Um, or, you
+[79:44.48] know, one minute, which is what I did.
+[79:45.60] Um, though very curious to see what this
+[79:47.52] I also think this is like heavily
+[79:48.56] manipulated. could be wrong, but I've
+[79:50.48] seen it take a swift turn towards the
+[79:52.88] end. Um, seems like it did not. Oh, it
+[79:54.56] did. See, I did lose $10 immediately.
+[79:57.52] Um, because at the very end, it took
+[79:58.64] like a wrong turn. So, most probably
+[79:59.92] this is like not the best strategy. Um,
+[80:01.84] I could totally be wrong. So, you know,
+[80:03.04] we'll figure it out by running it for a
+[80:04.32] day with like $55 every 5 minutes and
+[80:07.04] then at the end of the day, we'll see
+[80:08.08] how well it performs. I'll create a
+[80:09.12] graph out of it. Um, and we can follow
+[80:10.64] that graph to see if we're eventually up
+[80:12.08] or we're eventually down, something like
+[80:13.20] that. Yeah. Um, if you have better
+[80:14.56] strategies, let me know. we can code
+[80:15.84] anything but we need to you know have
+[80:17.20] some sort of a strategy at the back of
+[80:18.64] our head this is what we're going to do
+[80:20.16] um only if the probability has reached
+[80:22.00] 95% should we actually buy it something
+[80:24.48] like that um cool I'm going to take a
+[80:27.60] small break and then we begin with the
+[80:29.12] second project for the day um which is
+[80:31.60] going to be um oh let me play a better
+[80:34.08] song um
+[80:37.20] h I don't love any of these songs um
+[80:42.72] this one's good u I will be back in 5
+[80:45.52] minutes and then we will start the
+[80:46.72] second project. Um, this is what we've
+[80:48.08] done. This is what we're going to do
+[80:48.96] next. I'll see you guys in 5 minutes.
+[81:16.48] Everybody's
+[81:56.64] Keep going.
+[82:26.64] The name of the
+[82:41.76] Lemon
+[83:03.52] lock.
+[83:19.28] la.
+[83:37.68] Foreign
+[83:52.40] speech. Foreign speech. Foreign speech.
+[85:10.08] Family.
+[85:36.72] Baby,
+[86:22.80] to
+[86:25.04] bo.
+[86:30.00] toy.
+[86:44.32] family.
+[87:04.88] All right, we're back. Ollie, say hi.
+[87:08.24] >> Say hi.
+[87:11.68] >> All right,
+[87:13.44] we're back.
+[87:15.52] I've never made a Poly Market app
+[87:17.20] before.
+[87:20.24] Do you guys know this guy's coming to a
+[87:21.84] holy party tomorrow? You might find me
+[87:23.44] there if you want to do a mini meetup.
+[87:26.16] Okay, next up,
+[87:29.20] super chat. missed. All right. Uh let's
+[87:32.08] see.
+[87:34.16] Right. We're back. Uh sixth semester
+[87:36.80] tier 2 college bits DSA kakarun DSA dev
+[87:40.56] call. I I mean no opinions on it. Both
+[87:42.64] are very important and you know various
+[87:44.24] types of companies. Uh is that the only
+[87:45.84] question? Um you can make contribute
+[87:48.72] now. Um all right we begin. The second
+[87:50.72] project is going to be a poly market
+[87:51.92] clone. I've never done polyarket
+[87:53.44] anything. Um I'm actually very curious
+[87:55.20] to try it. APIs.
+[87:59.12] All right. Uh, programmatic access to
+[88:00.64] the world's largest prediction market.
+[88:01.68] Beautiful. That's exactly what we need.
+[88:02.96] Um,
+[88:04.56] comma API markets event logs. H
+[88:09.20] to
+[88:11.44] I would want to read the, you know,
+[88:13.60] stream of um messages, not from these
+[88:17.52] guys, but from here from chain link
+[88:21.60] basically. Um, let's see. We're going to
+[88:24.80] receive the data stream from chain link
+[88:26.48] and based on that make the final
+[88:27.52] decision on you up or down. Um but we do
+[88:29.76] want to read the price of that specific
+[88:31.60] market right so the
+[88:34.16] threshold price the price to beat this
+[88:35.76] thing right here the target so we need
+[88:37.04] to read from here as well that's poly
+[88:38.88] market we need to read from here as well
+[88:40.24] because this is the final source of
+[88:41.36] truth irrespective of what the current
+[88:43.36] price says here um which could be laggy
+[88:46.00] uh the price here is what would matter
+[88:47.68] at that specific time stamp what was the
+[88:49.20] time over here is what decides what the
+[88:51.20] market resolves to um and hence uh we
+[88:53.68] probably need to connect to both of them
+[88:54.88] so I start off by exploring chain link
+[88:56.88] um chain link think
+[89:00.32] has a TypeScript SDK
+[89:06.16] high frequency update partitions u act
+[89:08.08] on the time markets that's exactly what
+[89:09.36] we need u and
+[89:12.72] there we go sounds simple enough um let
+[89:15.60] me create a new project called
+[89:21.68] let's call it uh poly market bot
+[89:26.40] let's do a one in um a blank project.
+[89:28.88] Let's open it in cursor because we did
+[89:30.48] decide we're not going to wipe code this
+[89:32.56] one. We'll code this one from scratch.
+[89:34.16] Um
+[89:36.48] and you know do it slowly but do it
+[89:38.00] right. Um let me copy
+[89:46.24] uh this thing right here. Copy paste it
+[89:48.32] right here. create client comes from uh
+[89:52.48] what is the dependency
+[90:00.08] at chainlink/ data stream SDK exactly
+[90:02.48] what we need
+[90:12.08] from here and we see a very big type
+[90:14.96] error I don't know why
+[90:17.84] oh doconfig which is something we
+[90:20.24] probably need. Um, oh boy. So, we need a
+[90:23.28] API key for chain link as well, which I
+[90:25.04] hope is not paid. Um, because I don't
+[90:28.00] have a credit card right now. Um,
+[90:31.60] API key and user secret is two things
+[90:33.36] that we need. Um,
+[90:39.20] which isn't enough for some reason, but
+[90:40.72] take care. We'll see what's up there.
+[90:42.32] Um, let's call it uh chain link API key.
+[90:48.64] and chain link user secret. And let's
+[90:52.88] try to see where we can get these from.
+[90:55.12] Um,
+[91:04.08] is there no easy way to get uh
+[91:08.00] chain link API keys? Uh,
+[91:18.00] how do I log in? Uh, chain link
+[91:22.16] API keys,
+[91:36.48] man. chain link API keys.
+[91:41.84] How to get
+[91:47.04] uh I hope it's not a gated service. Um
+[92:02.32] actual data provider whose data you want
+[92:04.16] on your smart contract to access. Uh
+[92:17.52] what you'll need
+[92:21.28] it's an account here. I hope this is not
+[92:24.24] uh paid by default and doesn't require a
+[92:30.24] you know business email. Uh
+[92:34.16] I don't see India here.
+[92:37.52] A B CDE E F G H I said accept. Continue.
+[92:44.24] All right. Time to see the code.
+[93:03.68] and let's create an API key for
+[93:05.84] ourselves.
+[93:10.32] All right,
+[93:12.80] getting started.
+[93:19.68] Data
+[93:22.48] data streams is probably what we need.
+[93:32.08] This is what we need. But
+[93:35.60] how do I create an API key for it? Uh
+[93:58.96] That is not great. Uh
+[94:05.52] let's see if we can just reverse
+[94:06.64] engineer things from here.
+[94:09.76] Uh
+[94:12.48] might be the last option. Um, again, you
+[94:15.36] probably want this, you know, in a paid
+[94:17.52] fashion from from Chain Link because
+[94:20.80] this really decides uh
+[94:25.04] if your order is good or not. Um, but
+[94:27.20] since we can't do that just yet, we'll
+[94:29.36] try to reverse engineer where are they
+[94:30.48] sending me the data from. Um,
+[94:46.24] Am I tripping or I don't see a websocket
+[94:48.48] stream here. Uh
+[94:59.92] live stream reports. Oh, query time
+[95:02.32] scale.
+[95:05.04] Is it sending requests one side after
+[95:07.60] the other? Not really. It seems to be
+[95:09.76] updating very quickly. Um,
+[95:12.48] I don't see any new requests. So, I'm
+[95:14.88] probably missing something obvious here.
+[95:17.60] They most probably are pushing data
+[95:20.16] through websockets. I'm just not able to
+[95:22.48] find how. That looks like the wrong one.
+[95:27.60] Front end. Front end. Uh,
+[95:35.04] might just be front end as well.
+[95:51.60] query time scale.
+[95:54.72] So it's like the graph data like this
+[95:56.80] thing over here. Um where is it getting
+[95:59.76] this real time current bid and ask price
+[96:03.44] or the current price from or the mid
+[96:05.28] price? Uh,
+[96:14.24] all icons. Nothing here. Nothing here.
+[96:17.04] Nothing here.
+[96:25.20] H.
+[96:33.76] It has to be here, right? Am I tripping?
+[96:36.96] Uh, how do they get the current price
+[96:42.40] feed?
+[96:54.40] This returns you the bids and the asks
+[96:57.84] and the price of a specific time, but
+[97:00.16] not in real time. It's like 1 minute
+[97:01.60] charts. level 46, level 47, level 11 48,
+[97:03.68] level 49. What we really need is the
+[97:06.32] current time, which I'm sure someone in
+[97:09.20] chat has figured out by now. Um,
+[97:14.32] some web extension r someone said Oxy
+[97:17.12] Chrome. Um, which I'll get to, but
+[97:19.60] anyone knows what I'm missing here? Uh,
+[97:21.76] what might be the place where this
+[97:23.52] stream is coming from? Maybe service in
+[97:26.80] the background. Um, you should still see
+[97:29.36] uh everything coming in the network. Uh
+[97:34.24] h
+[97:39.36] nothing good here. Uh
+[98:12.64] Okay, there's another page,
+[98:15.84] the one that we just saw. This one right
+[98:17.68] here
+[98:19.84] where we see something similar.
+[99:06.16] Let's see.
+[99:15.36] Uh,
+[99:17.52] is it like the GraphQL,
+[99:22.00] you know, what do you call it?
+[99:23.28] Subscription thingy. It probably is. Uh,
+[99:26.48] I think there is a way to do that here.
+[99:29.12] Uh, new
+[99:31.52] GraphQL.
+[99:33.04] Uh,
+[99:34.88] enter the URL. It's probably, uh,
+[99:40.96] this.
+[99:42.72] and enter the query. Okay, let's query
+[99:45.68] this.
+[99:59.68] This is returns the current data I would
+[100:01.68] assume. BTC, market cap. Oh, it also met
+[100:05.36] returns you the meta data which is
+[100:07.12] useless for us. Um,
+[100:09.84] I do feel like it returns me, uh,
+[100:14.16] it uses GraphQL streams or
+[100:16.08] subscriptions, whatever they're called,
+[100:17.92] um, to subscribe the data from the back
+[100:21.12] end. Uh,
+[100:23.44] I could of course be wrong.
+[100:46.56] start stream data.
+[100:52.64] I'm out of options here.
+[100:55.52] Do you guys think Have has anyone else
+[100:58.24] figured this out?
+[101:00.48] How would they be returning um
+[101:07.04] sorry the stream? Where does the
+[101:11.44] data stream come from? Um what are we
+[101:14.24] missing? What do you guys think? Anyone
+[101:15.92] have any ideas or should I just go
+[101:18.72] deeper?
+[101:25.28] Going to spend another five minutes on
+[101:26.80] this. Uh
+[101:29.60] and if not we just go to poly market and
+[101:31.20] get the data from there. Um
+[101:34.40] what could it be? Uh
+[101:39.44] okay what is this?
+[101:43.76] This is like a
+[101:46.64] component. Uh
+[101:58.24] no,
+[102:02.64] not this
+[102:08.64] ETH BTC. See?
+[102:25.60] Should we just get a sex price? We
+[102:27.60] couldn't for BTC is like very volatile.
+[102:29.36] We probably can't get a centralized
+[102:30.64] exchange stream. Uh we probably need
+[102:33.52] these guys only. Um their mid price is
+[102:36.48] what decides the poly market price. So,
+[102:39.04] we do need to subscribe from them. It
+[102:40.88] just seems like there's no easy way to
+[102:42.16] do it. Um, chain link subscribe to BTC
+[102:47.04] feed websockets.
+[102:50.08] Uh, actually, uh,
+[102:54.24] there is a watenine.
+[102:57.44] Uh,
+[103:00.24] data
+[103:03.36] engine. Nothing at all.
+[103:06.80] Nope. Not what I was looking for.
+[103:11.04] So, what we need, what I'm pretty sure,
+[103:12.56] you need a API key over here. Um,
+[103:20.32] to be able to do this uh
+[103:24.64] yeah, API key and API secret. And we
+[103:26.80] haven't yet been able to figure out
+[103:29.28] where do you get them from? Um other
+[103:31.28] than you know this request data button
+[103:33.28] which is unfortunately not useful at all
+[103:36.72] today. Um
+[103:42.96] what could it be?
+[103:49.76] Okay, I'm going to start from the top
+[103:50.96] one more time and try to see what's up.
+[103:53.12] Uh
+[103:54.64] HTML. This isn't Oh,
+[103:59.04] not this. Not this. Not this. Not this.
+[104:00.48] Not this. None of these icons.
+[104:04.96] Bunch of others. JSON.
+[104:08.80] None of these. We've hit a wall, it
+[104:10.56] seems. Uh,
+[104:18.48] okay. This is what I'm going to do next.
+[104:20.88] I'm going to see how far their price is
+[104:22.72] from backpack price because I know it's
+[104:24.32] easy to reverse backpack um you know
+[104:27.76] prices uh exchange or Binance. I would
+[104:30.64] assume Binance is the best one. Um yeah,
+[104:32.72] let's just do that. Binance uh BTCUSD. I
+[104:36.32] would assume they're the most liquid and
+[104:37.52] you know they dictate most of the price.
+[104:38.88] So let's see what the price is here. How
+[104:40.16] different is it from the price here?
+[104:43.44] Yeah, it's pretty far, isn't it? 4105
+[104:46.64] 41 599 boy.
+[104:50.48] Um
+[104:57.36] yeah, there's like a very big delta in
+[104:59.36] the price here and here. This is the
+[105:01.92] price that Poly Market uses. So, we
+[105:03.60] can't really depend on these guys. Um we
+[105:06.00] have to depend on these guys. The reason
+[105:08.00] there's a big price delta is because
+[105:10.48] these guys depend on all exchanges um
+[105:13.92] and you know, not just one. So, they're
+[105:15.52] aggregating data across and the delta is
+[105:17.20] like of 100. Um, does this mean this
+[105:20.16] will catch up to that or this will catch
+[105:21.92] up to this or the AR will just remain
+[105:25.84] okay what's the other thing we're going
+[105:27.20] to do is now going to coin market cap
+[105:28.96] and see the BTC prices here on various
+[105:30.96] markets um
+[105:33.52] 502
+[105:35.84] this is not real time which is a problem
+[105:37.52] okay
+[105:39.92] exchange
+[105:42.24] 634 789 very big delta uh is this a per
+[105:47.68] BTC USDT
+[105:51.12] and no this isn't um and what about here
+[105:55.20] 784 it is um and very liquid and 743
+[105:59.76] here sorry 643 here yeah that's not good
+[106:03.92] um we can't use the prices of exchanges
+[106:08.08] because they're far off from the chain
+[106:10.32] link price at least for BTC I'm sure
+[106:12.16] that's not the case for others um
+[106:16.72] it is catching up the slip pretty far.
+[106:18.40] Um in 5 minutes we'll get screwed really
+[106:21.36] bad if we use these prices over these
+[106:24.40] prices. Uh yeah, there's a very big
+[106:27.36] delta. Uh I'm just curious to see if the
+[106:30.88] same is true for a slightly, you know,
+[106:33.28] tighter market like soul.
+[106:39.92] I would assume the answer is no. 85.3
+[106:42.32] 85.4
+[106:44.32] or 44. Yeah, that's not uh 44, 45, 41.
+[106:52.00] I would still say this is really far.
+[106:53.28] Unfortunately, this is the source of
+[106:54.56] truth. So, we do need to I mean, this
+[106:57.04] just seems like a way for Poly Market to
+[106:59.04] sell chain link API keys. Uh because
+[107:02.96] irrespective of what the prices are
+[107:04.48] here, this is considered to be the
+[107:05.92] source of truth. Um yeah, there's like a
+[107:08.16] very big delta. Um all right, so we
+[107:10.80] still have to continue doing what we
+[107:12.16] were doing. Anyone have any ideas on you
+[107:15.36] know how can we without talking to chain
+[107:17.92] link and getting the data stream from
+[107:19.44] them um
+[107:21.60] how can we get it for free um
+[107:31.60] they don't make it easy do they uh
+[107:38.64] data.com data streams exactly what we
+[107:42.16] need,
+[107:43.68] but not easy to reverse engineer. Not
+[107:45.84] easy to get. Uh
+[107:48.40] H. Okay, here's what I'm going to try.
+[107:51.52] Network tab, the smaller.
+[107:55.60] Next,
+[107:59.28] they get a bunch of these stream.json
+[108:01.92] files. Um,
+[108:04.96] okay.
+[108:09.20] with a bunch of configs. Um
+[108:13.20] h
+[108:32.08] just configs configs
+[108:35.52] public RPC URL
+[108:48.40] nothing that's any useful I would think.
+[108:51.44] Uh
+[108:54.80] I look at that in a bit.
+[109:06.56] Is this like old data that they show
+[109:09.36] over here um
+[109:11.76] being pulled via HTTP and slowly being
+[109:14.00] you know shown on the UI? That's my next
+[109:17.44] guess. That might just be true. Um
+[109:22.56] after this time stamp there should be
+[109:23.76] the price. After this time stamp there
+[109:25.20] should be the price. I could be wrong,
+[109:27.36] but as you can tell after every few
+[109:30.00] seconds, um, they send an HTTP request
+[109:32.80] and then based on that, that's why it
+[109:35.04] might be lagging so much from Binance.
+[109:36.48] Um, because it's just replaying a bunch
+[109:38.40] of these prices and it's actually not
+[109:40.16] the real price. Um,
+[109:42.64] I don't know, it could be wrong. Keep
+[109:45.52] these open. Yeah, there you go. Um,
+[109:49.76] that's very weird if that is the case.
+[109:51.28] Uh
+[109:55.36] 100.2. Is there something here at 100?
+[110:00.64] Feed ID, but I don't see anything else.
+[110:02.40] 100. 100.
+[110:05.28] Nothing is at 100.
+[110:12.00] Okay, there's
+[110:14.00] data./ link/ API/life data engine
+[110:17.12] stream/ data feed id is equal to
+[110:18.96] something bunch of other things
+[110:22.72] which returns you um
+[110:26.64] okay 82 at some time stamp 82.82.15
+[110:29.44] 82.15. Yeah, I think they're just uh
+[110:33.12] getting historical data. You don't get
+[110:34.48] the real-time data for free from here.
+[110:37.52] Um you have to talk to the chain link
+[110:41.68] folks to get their, you know, API keys,
+[110:44.96] pay them certain amount. Um only then
+[110:47.52] will your application be right. Uh
+[110:50.40] h what I'd like to do next is see how
+[110:53.60] far this BTC final price is from the
+[110:57.68] price on Binance. So let's open Binance
+[111:01.36] BTCUSD on one side.
+[111:04.16] Let's open Poly Market on the other. And
+[111:06.16] this is like a fairly lagging metric. Um
+[111:08.32] I wouldn't consider this to be the right
+[111:10.00] metric. Um
+[111:12.08] where is the live market here? Um
+[111:15.44] go to live market. All right. This
+[111:17.92] market will be alive for another 3
+[111:19.28] minutes. Um at soon as this ends, um I
+[111:23.60] would like to see the price over here
+[111:26.24] and see how far it is from the price
+[111:27.68] over here. Um, and if they're close
+[111:29.20] enough, that means it's a good sign. Um,
+[111:32.00] if they're not close enough, that means
+[111:33.36] it's a bad sign. Um,
+[111:35.76] actually, we might just
+[111:39.28] Yeah, this looks much closer to Binance.
+[111:42.00] Um, 54 here, 54 here soon enough. 67.
+[111:44.96] There we go. Uh, 37 here, 45 here.
+[111:47.92] Beautiful. Um,
+[111:50.08] all right. I get it now. Um what we can
+[111:52.56] do now is we can subscribe to this price
+[111:54.40] probably not from um chain link but
+[111:57.04] directly from these guys. Um
+[112:00.64] like at this point it's pretty obvious
+[112:01.76] this market will resolve to a no which
+[112:03.52] is why um you know it's at 84 cents
+[112:06.00] right now. Um
+[112:08.32] now it's at 79 720 to 0. Yeah, sounds
+[112:11.20] good enough. Um
+[112:13.68] I just want to see when it ends what is
+[112:15.60] the final price over here. Um and was it
+[112:18.40] close to the price over here? I think
+[112:19.60] that would be the case. Um but this
+[112:22.64] their public facing page is really bad.
+[112:24.72] It is not the current price. The chain
+[112:26.64] link public facing BTCUSD page is not
+[112:30.16] something you should trust this page
+[112:31.84] right here because this is like a very
+[112:34.24] lagging. It's at 531 but was this is at
+[112:36.88] 607. Um so I'm pretty sure this is like
+[112:39.52] a lagging metric and not the right price
+[112:42.64] or the current price. So this does look
+[112:45.84] like closer to the current price.
+[112:48.24] This hopefully is the source of truth.
+[112:50.08] Um,
+[112:51.60] and I think subscribing and right now it
+[112:53.76] just seems stuck. Um, so I would assume
+[112:55.44] the current price is you know 616 and
+[112:57.60] these odds are defined based on that.
+[112:59.36] Um,
+[113:00.88] but we'll wait for how long was it? Uh,
+[113:03.04] it's about to end, right? Oh, the market
+[113:05.52] already ended. Um,
+[113:08.00] sheesh. Okay, this is the live market.
+[113:10.40] Let's see where it lands at the zero
+[113:13.04] second. Um, and is it close to the price
+[113:15.28] here on Binance? then we can just
+[113:16.64] subscribe to the Binance stream or
+[113:17.84] directly to Poly Market and we'll be
+[113:19.12] fine. Seems like Poly Market is a way
+[113:20.88] for you to proxy chain link data if it
+[113:23.92] is available over here. I'm pretty sure
+[113:25.20] it is. Um I think here we'll finally
+[113:27.60] find a websocket stream. Um which is not
+[113:30.64] as fast as chain link but you know
+[113:32.56] somewhere there. Um yeah these look very
+[113:34.16] close now. 56 57
+[113:36.88] exactly what we need. Um,
+[113:42.16] hey
+[113:47.60] about to end in a minute.
+[113:53.92] 49 68 52 68.
+[113:58.32] These look fine to me.
+[114:02.72] I think when things are very volatile,
+[114:04.24] it might be real crazy. I'm actually
+[114:05.52] very curious to see are people actually
+[114:06.96] trading this market or manipulating
+[114:09.12] market at the last second um just to
+[114:10.80] make some money here. Might be the case.
+[114:12.56] I don't know like at the end if someone
+[114:14.48] comes and places a huge order here just
+[114:16.00] to manipulate the price and you know
+[114:17.12] make a lot of money here but lose some
+[114:18.48] money here.
+[114:24.64] Oh boy, it's going up
+[114:28.32] 81 76 74 76. Yeah, that's pretty good.
+[114:31.84] We can just subscribe to Binance. I
+[114:33.36] think we'll be fine. Uh
+[114:37.20] 56 62
+[114:45.20] 54
+[114:51.76] 54 should be around 54. Let's go to the
+[114:54.48] live market.
+[114:56.32] 654 668. Yeah, sounds simple enough. Um
+[115:00.56] all right. Um well, it's time to code
+[115:02.80] this now. Um, we're going to let's see
+[115:04.80] if we can depend on Poly Market for the
+[115:06.32] stream. Um, and if not, then we will uh
+[115:10.48] probably depend on someone else. Uh,
+[115:12.56] hold on. Oh, you guys can't see me at
+[115:15.20] all. Hello. Hello.
+[115:18.40] Hopefully that is Oh,
+[115:24.08] one second.
+[115:26.48] There we go.
+[115:28.56] That is
+[115:31.04] There we go. Perfect. Beautiful.
+[115:33.76] Huh? What I was saying was um
+[115:37.36] we can depend on poly markets. What we
+[115:39.12] can do is probably API here. API dot
+[115:44.40] or zip soocket or stream.
+[115:48.24] Come on. I cannot
+[115:52.32] Are they also pulling
+[115:55.68] orders? Orders
+[115:59.68] you. Oh, there you go.
+[116:00.88] WSLive.data.polymarket.com
+[116:04.08] messages
+[116:05.76] and it is returning me
+[116:09.20] asset this thing ID something event slug
+[116:11.68] BTC this thing
+[116:13.84] icon
+[116:16.48] um proxy wallet wallet is probably my
+[116:19.52] wallet public key hopefully. Um
+[116:23.12] oh that just looks like a bunch of
+[116:24.48] orders. Um how do I get the price?
+[116:32.80] WS-live. Okay, there's another one here
+[116:36.56] where I'm probably receiving the data
+[116:38.32] from. Um,
+[116:41.36] full accuracy value. Um,
+[116:45.44] this one might be the
+[116:48.24] current price of BTCUSD.
+[116:51.04] At this time stamp, the value was this.
+[116:52.88] Beautiful. Um so we can subscribe to
+[116:55.04] just
+[116:57.52] this specific feed. Uh
+[117:01.36] if I go back here. Oh yeah. Holy market.
+[117:05.12] That's one. Copy as curl.
+[117:10.96] There we go. Postman
+[117:13.92] import paste and enter. And if I try to
+[117:16.72] connect to it, it wouldn't let me. Um
+[117:19.60] because it is not a uh this is going to
+[117:22.96] be really tough, isn't it? Um
+[117:26.08] yeah, this thing
+[117:29.68] with a bunch of, you know, connect.
+[117:32.00] It'll probably not connect. Oh, it is
+[117:33.28] connected. Okay, I probably need to send
+[117:35.52] it a message first asking it for, you
+[117:37.92] know, subscription to the BTC market.
+[117:40.48] Something like this. Um subscriptions,
+[117:43.20] topic, activity, order match, I don't
+[117:44.96] need any of that. Comments, I don't need
+[117:46.96] any of that. Crypto price chain link
+[117:49.20] filters BTC beautiful that's the only
+[117:51.12] topic I am worried about so delete that
+[117:56.64] send and hopefully I start to receive
+[117:58.88] all the data for the current price of
+[118:01.68] BTC beautiful
+[118:04.40] yeah as you can see over time I'm
+[118:06.32] receiving that the current price of BTC
+[118:08.48] is you know whatever 68 whatever is the
+[118:11.28] value over here uh
+[118:13.92] hard to read
+[118:16.40] LG. So I am getting every few seconds
+[118:19.20] the current price that exists on poly
+[118:20.96] market by subscribing to this live
+[118:22.24] stream. It's an open end point. Anyone
+[118:23.36] can hit it. Um the life becomes pretty
+[118:25.68] simple from here. U we have this um and
+[118:30.72] what we need next is
+[118:33.76] you know the specific market and then if
+[118:36.24] we like the marketplace an order on
+[118:38.08] either side. So let me keep this handy.
+[118:40.24] Now let me look at poly market APIs. U
+[118:43.36] we couldn't care less about anything
+[118:44.72] else. We are already receiving the price
+[118:46.40] of the current price of BTC proxied via
+[118:48.96] chain link to us which is beautiful. We
+[118:50.48] were able to use chain link um without
+[118:52.24] paying chain link which is like cool. Uh
+[118:54.48] what we want to do now is use the gamma
+[118:56.00] API. Um data API
+[119:00.08] we're already using the data API. Um the
+[119:02.48] club API uh probably the club API
+[119:06.56] discovering markets. We don't need that.
+[119:08.00] We just need this um trading point
+[119:10.40] require authentication which is fine. So
+[119:11.76] this is the end. Let me just you know
+[119:13.36] fire something up here. um any of that.
+[119:16.00] This is one. The second one is this one
+[119:18.88] right here along with a subscribe
+[119:20.64] message that looks something like this.
+[119:22.64] Um beautiful.
+[119:28.72] Good boy.
+[119:30.96] Uh authentication.
+[119:33.84] All right. For club endpoints, how do I
+[119:36.72] do authentication? Um wallet private key
+[119:39.36] to sign this thing is used for creating
+[119:41.44] API credentials.
+[119:44.48] This thing these are used solely for
+[119:46.56] taking requests from club API requests
+[119:48.08] are signed through this thing.
+[119:48.80] Beautiful. Uh
+[119:51.20] allowances cancel or get users open
+[119:53.12] orders post user sign. Beautiful.
+[119:55.20] Exactly what we need. Um new club client
+[119:58.56] polygon mainet wallet private key. Um
+[120:01.68] credentials await create or derive API
+[120:04.16] key. Um and then credentials. The thing
+[120:06.40] is this is a little scary now. I don't
+[120:08.64] want to paste my private key. It it has
+[120:10.32] like some $23 $100 in it. Um,
+[120:14.00] while we recommend using a provided
+[120:16.08] clients to handle sign authentication,
+[120:17.60] the following is for developers who
+[120:19.84] choose to not use Python or TypeScript.
+[120:22.16] Okay, that's fine. Um,
+[120:24.56] either way, the problem remains. I don't
+[120:26.56] want to do this. Um,
+[120:29.52] is there no API key restricted way to do
+[120:32.48] what I want to do? Um,
+[120:35.28] poly address, poly signature. No, I
+[120:37.12] don't need a poly coin signature. So,
+[120:39.20] you don't need this. Um,
+[120:42.16] yeah, that's not great. Uh,
+[120:47.28] all right. I guess we will roll. The
+[120:49.92] thing is there's no easy way for me to
+[120:51.12] even disable the private key if you guys
+[120:53.60] see it. Um, like if GI say you guys see
+[120:56.80] the private key, there's nothing I can
+[120:58.24] do. That money is, you know, as good as
+[121:01.04] gone. Um, and there's like some money in
+[121:03.60] there, but it's okay. We we'll reach
+[121:05.28] that point. When you reach that point, I
+[121:06.48] can probably at the end add I'll just
+[121:08.16] create a new Poly Market account. um
+[121:10.00] which and just put like $30 on it. Um
+[121:12.00] that's probably an easy solution. Um and
+[121:15.60] bun add ethers.
+[121:18.96] All right. Assume the private key
+[121:20.80] exists. And for those of you who might
+[121:24.24] already know not know poly market was
+[121:26.64] actually built on top of polygon. So it
+[121:27.92] actually uses you know bunch of polygon
+[121:29.20] constructs. Um
+[121:40.08] h I still see a bunch of
+[121:44.00] fun explained below. Uh
+[121:47.60] o
+[121:58.88] boy.
+[122:02.24] Uh
+[122:05.60] I'm sure there's a nonprivate key way to
+[122:08.24] do this. Uh let's go to poly market.
+[122:10.96] Let's go
+[122:15.84] to my wallet. Um,
+[122:22.56] that's my public key. Um,
+[122:26.24] and I don't want to show you guys the
+[122:28.32] private key. Um,
+[122:31.04] what I can do is I can go to Brave.
+[122:33.76] Exactly. What I'm going to do, um, I am
+[122:36.96] going to log into Poly Market here.
+[122:41.60] and put like $30 in here. Um, that way
+[122:44.48] even if my private key gets leaked, $30
+[122:46.64] is all I use. U sign up, continue with
+[122:50.00] Google is fine.
+[122:55.36] H,
+[122:58.96] there should be a way to figure this
+[123:01.12] out. Uh
+[123:17.76] oh, there we go. Finally.
+[123:20.88] Beautiful.
+[123:24.00] Oh,
+[123:25.60] Kat
+[123:29.36] building on poly market. Okay. Okay. I
+[123:30.88] don't know how many how much of this I
+[123:32.48] should show on screen. Probably not a
+[123:34.80] lot. Um, so let me do this. Oh,
+[123:41.44] let me do move myself off screen. Um,
+[123:45.84] create a new API key. Okay, I have an
+[123:47.68] API key. I have a secret. I have a
+[123:48.80] passphrase. Um, never sure. So, if it
+[123:51.92] leaks, Poly Market may disable it. Uh,
+[123:54.00] okay. I've created a weird
+[123:56.88] builder profile. I'm very anxious as I
+[124:00.56] but I think this should be easier to
+[124:01.76] disable it, right? Can I disable it? Uh
+[124:07.04] oh, I don't see any button here that
+[124:08.96] lets me disable these keys that I'm
+[124:10.64] creating. Um,
+[124:15.12] and then there's the private key that
+[124:16.40] I'm definitely not exporting on screen.
+[124:18.24] Um,
+[124:20.32] h
+[124:22.80] active. How do I make a key inactive?
+[124:26.32] It gives me no way to do it. Uh
+[124:30.96] yeah, I'm I am out of luck here. Uh let
+[124:34.24] me close this.
+[124:36.56] Let me reexlain what we were doing.
+[124:40.24] All right, here's a quick cap of what
+[124:42.16] happened. Um we have figured out a way
+[124:45.12] to get the current BTC price by
+[124:48.16] subscribing to you know this specific
+[124:50.48] websocket market. U it gets you data
+[124:53.12] directly from chain link proxied via
+[124:55.12] poly market. So you can get the current
+[124:57.12] you know price of BTC which you know
+[124:59.20] right now is what um
+[125:02.00] whatever this like 68,618
+[125:04.24] 60,634
+[125:05.76] 43 85 so on and so forth by reading
+[125:07.92] through this stream. That's the easy
+[125:09.20] part. Um
+[125:11.04] the problem here is again you're going
+[125:12.64] through two steps. You've not paid so
+[125:14.48] you know you don't get the most accurate
+[125:15.76] price but that's fine for us because we
+[125:17.20] have like a 1 minute window to predict
+[125:18.80] um at the end do you want to place a
+[125:20.08] trade or not. The other thing we want to
+[125:21.76] do is actually place an order. Um now
+[125:24.56] looking at their docs um over
+[125:28.24] here
+[125:31.44] uh all these clo APIs central level
+[125:35.60] limit order book APIs which means an an
+[125:38.24] API that lets me touch this order book
+[125:41.28] talk to this order book and eat orders
+[125:44.24] from here or you know place orders over
+[125:45.84] here um requires me to put my
+[125:50.16] poly market private key u which you I
+[125:53.20] know for a fact if I do put it in the
+[125:54.72] codebase right now um this thing right
+[125:56.56] here at some point I'm going to show it
+[125:59.20] um and then there's no easy way for me
+[126:00.96] to change it. I'll just have to pull the
+[126:02.00] money out of Poly Market which you know
+[126:03.20] you guys can beat me too. Um I'll take a
+[126:05.12] pause here. Um do you guys understand
+[126:08.40] just write the code though? Um this is
+[126:10.08] like not very difficult. Um
+[126:13.36] actually this is like a one time thing.
+[126:14.64] I think that's
+[126:16.56] I might be wrong but I think you only
+[126:18.00] need it one yet. One dev or one index.ts
+[126:20.72] Yes,
+[126:22.64] invalid private key which should be very
+[126:24.00] easy for us to replace. Um even though
+[126:25.76] I'm not going to replace one actually.
+[126:28.24] Let me just you know create a random ETH
+[126:30.88] private key.
+[126:37.92] Why Ethereum you might ask? Um the
+[126:40.24] answer is
+[126:42.72] that Ethereum Poly Market is built on
+[126:45.44] top of Polygon which was you know EVM
+[126:46.96] based. Um wallet client is missing
+[126:49.52] account address. Uh
+[127:00.08] Ethereum address private key hex. I
+[127:03.20] would assume it needs the private key in
+[127:05.20] hex only. I could be wrong. Um,
+[127:10.88] missing account address.
+[127:18.56] Uh,
+[127:20.64] does it expect it in a different format?
+[127:24.56] Key, string, or signing key. If it is a
+[127:27.60] string and doesn't start with ox, it
+[127:29.44] already adds ox to the beginning of it.
+[127:32.16] Um,
+[127:36.32] It's not even able to initialize it.
+[127:37.60] That means the base wallet um
+[127:40.40] constructor somewhere
+[127:44.56] is reaching beyond this function.
+[127:47.28] Console.log
+[127:50.24] high. Run it again. Do I see a high? I
+[127:53.60] don't see a high. Um okay, let's try
+[127:57.04] this constructor. console.log. Hello.
+[128:04.08] Oh, never mind. Seems like the error is
+[128:05.68] much before any of this. Um
+[128:14.32] wallet
+[128:16.80] con wallet equal new wallet.
+[128:20.96] And now actually this much is cool. Oh,
+[128:25.12] I guess
+[128:27.12] that might make some sense. Yeah, this
+[128:29.44] is fine. This is fine.
+[128:33.20] This is what creates an issue. Create or
+[128:35.52] derive API key. Um,
+[128:42.00] wallet client is missing account
+[128:43.76] address. Uh,
+[128:49.60] hm. I don't know if this is fixable by
+[128:51.28] putting my real private key here. U
+[128:54.16] probably is. I'm not going to though.
+[128:55.92] Um, but I don't think it's talking to
+[128:57.28] the internet. field um
+[129:01.92] polymer glob.js
+[129:09.12] if wallet client do request access is
+[129:10.88] equal to function and something get
+[129:12.32] addresses function. Okay, basically
+[129:16.80] from what I can tell in fact it is
+[129:18.56] telling you what version it is. So let
+[129:19.76] me just go to package.json ethers and
+[129:22.56] replace this version with this version.
+[129:24.24] Um
+[129:25.76] yeah, most probably poly market API is
+[129:27.60] not compatible with that specific
+[129:28.96] version of uh ethers but is with a
+[129:31.92] different ts seems to work. Um this is a
+[129:35.60] random private key so it doesn't matter.
+[129:36.88] I can just log the credentials over
+[129:38.96] here.
+[129:40.80] There you go. Now it says
+[129:43.52] um there is you know oh no never mind uh
+[129:46.80] still it gave me an API key secret and
+[129:48.40] passphrase that's step one. Um what is
+[129:50.96] the step that comes after that? Um I was
+[129:53.68] able to get these three things. Um
+[129:56.32] what comes next? Um put these as
+[129:58.72] environment variables.
+[130:01.52] What comes next? Tears. I don't care
+[130:04.24] about that. How do I place an order? Um
+[130:06.40] given I have these three things. So let
+[130:08.00] me just you know open.v V
+[130:13.04] polyarket_key
+[130:16.16] equal to something and then poly market
+[130:19.20] secret
+[130:22.56] equal to some secret and then
+[130:25.60] polyarket
+[130:27.44] passphrase
+[130:29.28] equal to some passphrase given we have
+[130:32.00] these three eventually here somewhere um
+[130:35.28] how do you place an order uh so I need
+[130:36.80] the glob Bob
+[130:40.40] API uh
+[130:44.08] new club client wallet credentials
+[130:47.12] signature type funer. What are these
+[130:48.64] things though?
+[130:54.48] Bid ask
+[130:57.36] create order.
+[131:01.04] Everything looks fine to me. Um the only
+[131:03.04] question is what are these three
+[131:04.64] arguments? Um
+[131:09.36] client dot
+[131:12.40] create order
+[131:20.64] token ID. What would the token ID be?
+[131:22.48] Whatever the BTC market token ID is, I
+[131:24.88] would assume. Um
+[131:27.44] side would be you know again buy or
+[131:29.76] sell. uh
+[131:32.56] based on you know which side do you want
+[131:34.00] to buy the price which you know in our
+[131:35.84] case can be a market order so wouldn't
+[131:37.52] matter but let's say we decide the price
+[131:38.96] to be 088 and then the size which you
+[131:41.36] know let's keep it small to
+[131:44.56] $10 or under in every order um I don't
+[131:48.56] know if this is enough it might just be
+[131:50.00] enough if I put my wallet private key
+[131:51.52] here I think this is enough to create
+[131:52.96] you know um whatever uh an order so
+[131:55.12] let's just replace token ID with a BTC
+[131:58.00] token ID um which is the current live
+[132:01.20] market.
+[132:03.28] I would assume it is this. I could be
+[132:05.52] wrong. Um token ID side price size. Um
+[132:09.60] let me now move off screen. I again
+[132:11.52] don't want to copy a private key. But
+[132:12.80] let me try copying my private key
+[132:14.00] pasting it over here. U probably need
+[132:16.80] don't need this. Um and then let's just
+[132:19.12] let me just try to run this code. This
+[132:20.72] code should ideally u place an order for
+[132:23.60] me in the BTC up down 5 minute market
+[132:27.12] which is this one right here. Um the
+[132:29.36] only worry I have is gi say if I show my
+[132:32.96] uh you know whatever private key I am
+[132:35.28] doomed. Um
+[132:39.28] this thing right here um let me just not
+[132:41.52] do that. Let me assume this works. Um
+[132:43.04] let me assume this works. Um and
+[132:45.44] assuming this works um basically what is
+[132:49.76] happening is function uh this is fine.
+[132:52.48] Um what is going to happen now is I want
+[132:55.12] to run an I want to subscribe to the
+[132:57.76] current price of PTC here. So I will do
+[133:00.64] a con ws equal to
+[133:03.68] new websocket. Um what is my websocket
+[133:08.16] URL? It is this one right here. or you
+[133:12.24] know create a config variable at the top
+[133:16.00] con poly market data
+[133:21.20] stream equal URL um equal to this thing.
+[133:25.76] Am I sharing my screen? I think I am
+[133:27.36] right here. Uh that is fine. Uh and then
+[133:32.80] this is what I'll subscribe to.
+[133:35.36] And then WS do on open equal to There we
+[133:39.84] go. I want to do a WS send um
+[133:45.76] basically this thing um for the
+[133:49.92] current market which in our case we are
+[133:54.00] interested in the BTC market. So let me
+[133:56.24] just replace this with a variable called
+[133:59.52] market which I'm going to define here
+[134:07.28] BTC USD.
+[134:13.12] There we go. Um
+[134:15.92] yeah that's good enough. Uh and ws.on
+[134:19.76] message equal to console.log data
+[134:23.76] whatever that data might be. So let's
+[134:25.20] just start here. Let's see if we're able
+[134:26.48] to receive the data or not. Um,
+[134:31.84] oh yeah, of course this will not work.
+[134:33.28] So let me let me put this inside a
+[134:36.00] function you know function create order
+[134:39.28] for market market ID uh side
+[134:44.64] price and then size
+[134:48.56] uh I guess it's fine.
+[134:51.92] Oh, stop.
+[134:55.04] Uh and then
+[135:08.24] all right. Uh
+[135:10.40] now that that is done uh
+[135:14.40] send it's inside a function somewhere
+[135:16.08] here we need to call create order when
+[135:17.52] whenever we think that the price is fine
+[135:19.12] the time is fine. Um now let me do a bun
+[135:22.80] index.ts PS and hopefully I start to
+[135:25.20] receive data now. I am not.
+[135:28.00] Why would that be
+[135:30.88] console log connected?
+[135:37.04] I am connected. I do send this but seems
+[135:39.44] like this is the wrong input. So let me
+[135:41.36] do a console.log of this as well.
+[135:44.56] All right, I send this. I don't see
+[135:46.24] anything wrong here. Is there something
+[135:47.68] wrong here? I don't know. Um, let me
+[135:50.08] copy this. Let me just paste
+[135:53.84] this here for now.
+[135:56.32] Oh, I think I might know what's up. Um,
+[136:05.12] I think that should do it. Uh,
+[136:08.72] connected. Send the thing. Never
+[136:11.04] received a message. Not good. Uh,
+[136:13.44] disconnect. Connect.
+[136:16.56] Send the message. And immediately start
+[136:18.16] to receive messages. What is happening?
+[136:19.68] Uh, okay. Now I'm just going to copy the
+[136:22.16] message um
+[136:24.32] and paste it here inside double quotes.
+[136:30.00] Something like
+[136:35.04] um
+[136:38.56] filters
+[136:40.80] double quote open. Okay. Okay. Okay. I
+[136:43.68] get it. I get it. I get it. I get it.
+[136:47.12] to the uh
+[136:49.28] hair.
+[136:56.32] Oh, there we go.
+[136:59.20] Uh
+[137:06.00] I think
+[137:08.24] Okay, that should have done it, right?
+[137:09.60] Um that should have done it. console.log
+[137:24.88] slash
+[137:26.80] slash and slash.
+[137:36.56] I'm going to copy the log and then paste
+[137:39.28] it here.
+[137:41.04] And now, there we go. we're receiving
+[137:44.32] the data. Um
+[137:47.36] but then if we do a
+[137:51.20] JSON
+[137:52.88] message event dot data
+[137:55.76] so you know data dot
+[138:06.56] if not this thing return if there is
+[138:10.08] something con JSON equal to JSON.pass
+[138:14.96] data dot data
+[138:18.64] price. So that will be data data dot
+[138:22.40] payload
+[138:24.16] um
+[138:26.72] dot payload dot value. So
+[138:34.48] const value equal to JSON dot payload
+[138:38.64] dot value and then console.log value.
+[138:42.80] Now if I run it undefined okie dokie and
+[138:47.28] then the right prices right so we're
+[138:49.04] receiving the right prices of
+[138:52.00] BTC um what
+[138:55.12] we need is this market
+[138:59.68] how much price time is left in this
+[139:01.44] market so let me just you know create a
+[139:04.48] con poly market current market id equal
+[139:10.56] to jobby URL, which is this thing right
+[139:14.96] here.
+[139:19.04] Um,
+[139:25.20] I need to check
+[139:27.36] current market.
+[139:29.60] Um,
+[139:31.44] how do we do this? Uh, what is the right
+[139:34.00] way to do it? I don't know. I don't know
+[139:36.16] what's the right way to do this.
+[139:37.44] Basically, should we maintain a clock on
+[139:39.76] our side? Should we fetch it from here
+[139:42.64] once? Go to live market 449.
+[139:46.80] We need the market metadata. Market
+[139:50.32] um so something like you know uh
+[139:57.04] all right that's a lot of data metadata.
+[139:58.80] Okay. So, I'm sure the APIs provide this
+[140:02.00] uh
+[140:08.48] uh
+[140:12.16] order creation. Um
+[140:20.00] for depositing
+[140:22.88] which one of these end points act Oh,
+[140:24.80] there you go. Um
+[140:28.24] H
+[140:32.40] I'm sure there's a this is like a
+[140:34.48] special market just timer. So I don't
+[140:36.24] know if they they expose this by the
+[140:37.68] API. What is this embed share now? Uh,
+[140:49.04] get markets. Uh, but get market
+[140:57.36] get a market for a specific ID. Um,
+[141:01.76] get price, get prices, get midpoint, get
+[141:03.52] mid points, get spreads, get price
+[141:05.44] history,
+[141:07.04] last traded price. Um,
+[141:13.28] none. Uh, get the current server time.
+[141:16.40] No, none of these are. Well, if you do
+[141:18.40] get the current server time, we can
+[141:20.16] probably predict market from it, right?
+[141:22.96] Um, yeah, we probably could. Uh,
+[141:33.28] oh, yeah, it did. Um, so they're
+[141:34.80] basically running it every 5 minutes,
+[141:35.92] right? So we can basically do a bunch of
+[141:38.16] things ourselves also here. Uh most
+[141:40.40] probably my machine time will be very
+[141:41.60] closer to that time. Um so I can assume
+[141:44.08] um you know console.log log um
+[141:48.56] time left in this market is uh
+[141:53.60] date now
+[141:55.84] math
+[142:00.40] math uh date now
+[142:06.88] questionn
+[142:14.24] what I can do is Um h yeah minus date
+[142:18.24] now or date now minus exact Unix time
+[142:22.64] stamp
+[142:24.72] uh
+[142:27.44] Unix
+[142:29.04] time stamp
+[142:33.36] of
+[142:35.28] a purchase or I guess you know anything
+[142:39.04] 0 0
+[142:43.60] Yeah this Um,
+[142:45.76] new date of this thing.
+[142:50.64] New date of this thing. Uh,
+[142:55.28] new Oh, new date of this thing.
+[143:02.88] 3 0
+[143:06.40] thing. There you go.
+[143:09.84] March 3rd. Exactly. 70. March 3rd.
+[143:14.24] So this
+[143:19.76] oh get Unix get time.
+[143:24.56] All right, there we go. Um
+[143:42.00] this is the time that is left. So team
+[143:43.44] so minus this thing right um
+[143:46.88] this is the time left in seconds um
+[143:51.60] for this market to end I think so let's
+[143:54.64] see um let's copy the current
+[143:58.88] best market price uh which is
+[144:03.60] like the current live market ID which is
+[144:05.36] this one right here
+[144:08.64] but let's remain up to date let's do bar
+[144:11.60] index and Now,
+[144:14.96] yeah, time lap 52 seconds. Um, uh, 80
+[144:17.84] seconds, 192 seconds, 291 seconds, 110
+[144:20.96] seconds, 90 seconds, 124 seconds. I
+[144:23.76] don't know if you guys see this as well
+[144:25.36] as I do, but the math is not mapping,
+[144:28.16] guys. Um, moving too quickly. Uh,
+[144:31.76] date now minus this thing.get Get time
+[144:36.24] modulo 300
+[144:42.40] mod 300 date dot now
+[144:47.04] minus
+[144:50.96] would be you know
+[144:57.04] let's try it one more time uh let's
+[144:59.52] simply log this
+[145:02.40] let's log
+[145:03.36] Yeah, let's log this thing
+[145:07.36] model 300
+[145:10.24] and then let's also log
+[145:13.04] datus
+[145:17.20] a constant.
+[145:20.32] Why is that not happening? One index.ts
+[145:24.56] one. Uh, okay. Oh, oh, oh, I know. I
+[145:29.36] don't know if you you guys figure it out
+[145:30.96] but yours truly did math dot floor of y
+[145:37.28] cheese divided by actually better thing
+[145:39.68] might be this 300 0000 divided by 1,000
+[145:46.48] uh yura
+[145:49.12] math.f floor.
+[145:51.68] That's how AI also writes code for you.
+[145:53.28] Very unreadable. 221 seconds, 219
+[145:55.44] seconds, 217 seconds. Um to excite
+[146:01.28] it is right. It is it is it is the math
+[146:03.12] is mapping.
+[146:04.88] Current price
+[146:07.12] somewhere around the time when the you
+[146:09.36] know when it's less than 60 seconds left
+[146:10.88] is when we need to create the order. If
+[146:12.32] we are feeling like the target price,
+[146:15.04] the price to beat is you know far off
+[146:16.56] from the current price. Um so that
+[146:20.72] basically means we do need to get the
+[146:22.72] market metadata. We do need to get the
+[146:24.40] target price from here. Um or the price
+[146:26.72] to beat. Basically
+[146:29.68] we can do the math of you know if the
+[146:31.44] price to beat it minus the current price
+[146:33.36] is above a certain threshold and the
+[146:35.68] time is less than 30 seconds um is when
+[146:38.00] you place a buy order or something
+[146:39.04] right? Um hopefully that's clear enough.
+[146:40.72] Um
+[146:42.48] question is how do you get the price to
+[146:44.16] beat in your terminal here? Everyone
+[146:47.12] else I mean everything else is clear the
+[146:50.40] market's timer we're able to get here
+[146:52.56] 155 seconds here 155 seconds here 51
+[146:55.76] seconds here 151 seconds here um this
+[146:58.40] time is right the current price of BTC
+[147:00.24] we have over here um the last thing we
+[147:02.16] need is price to beat which currently is
+[147:03.52] 483 438 and you know price is 428 it's
+[147:07.44] like very hard to tell 50/50 market
+[147:09.28] almost 6040 market right very hard to
+[147:11.52] tell what happens in the next 2 minutes
+[147:12.96] um but if it was an obvious market you
+[147:14.72] would want to place an order right so So
+[147:16.56] the next thing we're going to do is
+[147:19.36] get this markets metadata over here to
+[147:22.24] difficult um for this
+[147:26.80] h
+[147:28.88] get market by ID. Well maybe I spoke too
+[147:31.84] soon. This seems easy enough. Um,
+[147:35.36] gammaappi.quolyarket.com/markets/
+[147:42.88] I would hope it is simply this
+[147:48.56] ID is invalid. ID um
+[148:10.64] Market BTC up down 5 minute market ID
+[148:19.44] ID is invalid. Okay, that doesn't seem
+[148:21.28] like the ID then. Um,
+[148:23.84] created someone.
+[148:27.28] Hm.
+[148:32.72] Let me open a another market. Uh this
+[148:35.36] one right here is key ID.
+[148:40.00] Is it this? It's probably not this. Then
+[148:41.52] this is probably the slug and the ID is
+[148:43.04] something else. Yeah. Okay. We need to
+[148:45.68] figure out the ID given a BTC market
+[148:48.16] slug. Um obviously ID.
+[148:53.60] Uh
+[148:57.36] h
+[149:00.00] network tab. Oh, market equal to
+[149:05.28] it's like a Ethereum address.
+[149:09.68] I forget this is like an onchain
+[149:11.44] program.
+[149:12.96] Uh, pretty to me.
+[149:22.56] Uh
+[149:24.56] hop.
+[149:27.92] Oh, invalid API. That's fine. Uh
+[149:31.68] actually markets slash call markets
+[149:39.60] slug markets slash
+[149:43.92] slug slash
+[149:48.24] you know whatever. Uh let's go to the
+[149:50.96] live market. Let's copy this.
+[149:54.64] Let's paste this. And we get everything.
+[149:56.72] Hopefully we get price to beat here. Um
+[150:00.08] or you know whatever. What is that
+[150:01.36] called? Price to beat. Beat.
+[150:06.00] What is the price to beat? It is this
+[150:08.80] thing right here. Copy paste. and
+[150:12.72] 68
+[150:16.40] 472
+[150:20.96] price to be
+[150:24.88] ticker title slug description
+[150:28.16] start date end date created at liquidity
+[150:32.40] amongst the many things I see here
+[150:35.76] I don't see the price to beat
+[150:40.80] Or am I tripping? Um,
+[150:50.00] ID, but it doesn't matter. What really
+[150:53.36] matters is how do
+[150:56.80] how do I
+[151:03.84] get the price to beat here?
+[151:07.76] It's definitely not here.
+[151:14.72] Has a lot of things. Doesn't have the
+[151:15.92] price to beat. Uh, okay.
+[151:19.60] Actually, ID is this. So, what is that?
+[151:20.88] That's the event.
+[151:22.96] Oh,
+[151:27.28] doesn't matter either way. Price to beat
+[151:30.48] guys. price to
+[151:34.88] search.
+[151:39.12] Yeah, nowhere here. Uh, okay.
+[151:47.20] Let's try it one more time. SL markets.
+[152:24.16] Interesting.
+[152:29.76] Okay, maybe, just maybe.
+[152:34.00] No, this isn't it. Um, okay. What we're
+[152:36.56] going to do now is
+[152:40.80] what we're going to do now is
+[152:43.60] market. Um, we need that market's uh
+[152:48.64] price to be dumped somewhere.
+[152:51.44] Um it is not showing me that
+[152:54.56] which is something it should show me. Um
+[152:57.44] but um the only thing this thing shows
+[153:03.60] yeah it doesn't show the price to beat.
+[153:05.04] Uh that's not great. Uh but it is fine
+[153:08.32] but the I guess predictable um I'm
+[153:11.44] assuming this is predictable.
+[153:14.56] This should be predictable. uh
+[153:17.68] aglawala would be this plus
+[153:22.48] 6 five are 30 so it will be 8,000 plus
+[153:28.72] 8300 will become 9300 will become 69
+[153:35.68] 70
+[153:37.52] 1 30 market
+[153:40.80] 50 minutes
+[153:44.32] 68
+[153:54.56] logic.
+[153:56.56] Let's just predict that price uh that
+[153:58.88] you know time stamp uh
+[154:03.20] this is good. This is good.
+[154:06.32] This is good. uh market uh const
+[154:14.00] active market ID equal to
+[154:18.56] this thing
+[154:23.76] plus uh
+[154:26.96] interesting s um
+[154:55.44] mod
+[154:59.68] x. So it'll basically be
+[155:02.88] date dot now uh
+[155:07.04] minus uh so minus time left.
+[155:11.28] Okay, wait. Const time passed equal to
+[155:14.32] this thing.
+[155:21.20] Many seconds have passed in this market.
+[155:23.76] const time left equal to the so minus
+[155:26.56] this
+[155:28.72] and then current market ID would be um
+[155:33.44] this thing plus uh minus
+[155:38.24] time past uh
+[155:44.72] minus 5
+[155:47.28] um
+[155:49.04] so it'll be date now
+[155:53.28] 1,000 uh car
+[155:56.72] floor minus - 5. Uh
+[156:05.52] date dot now
+[156:17.52] minus this thing
+[156:20.40] thing car. Okay.
+[156:34.16] Thinking, guys. Thinking.
+[156:36.40] Thinking.
+[156:37.92] Uh,
+[156:40.40] it'll basically be active market. This
+[156:43.28] one right here. H.
+[156:51.84] Um
+[156:54.88] this thing
+[156:56.88] plus very nice very nice um
+[157:01.68] it'll be this thing
+[157:04.16] time plus
+[157:08.40] some multiple of
+[157:10.56] 300 uh some multiple of 300. So it'll be
+[157:14.40] basically 300
+[157:16.96] into
+[157:20.16] start time
+[157:23.12] con random start
+[157:26.72] time equal to this thing in seconds to
+[157:30.80] underscore seconds
+[157:33.04] this thing plus so into the current time
+[157:36.72] here minus
+[157:41.36] random start
+[157:42.72] V
+[157:44.96] divided by floor into
+[157:55.12] plus
+[157:57.44] and then console.log current active
+[158:00.16] market ID. Okay. So what this will do is
+[158:02.72] this will print the current market ID
+[158:05.36] and time is current market ID. Then all
+[158:09.36] that we have to do is if time left is
+[158:12.00] less than equal to 60 or you know 30 the
+[158:16.08] seconds
+[158:17.84] and if
+[158:20.56] last market price
+[158:23.52] last market end price
+[158:28.16] is less than or minus
+[158:31.84] to be current price which is you know
+[158:33.52] value
+[158:36.40] is greater than
+[158:40.08] is less than 100.
+[158:45.36] Marketable
+[158:54.88] with zero
+[158:59.76] and this thing. Um
+[159:06.56] if not
+[159:08.64] last any
+[159:11.68] current active mic ID.
+[159:24.56] Okay. Um
+[159:28.32] last active ID uh is saying if current
+[159:33.04] active market ID is not equal to last
+[159:35.60] active market ID
+[159:47.44] last price
+[159:53.28] which would
+[159:55.92] Let oh
+[160:01.28] is equal to value. There we go.
+[160:05.76] We have moved on to the new market.
+[160:09.84] Not
+[160:13.04] which basically means you know um
+[160:16.88] let me not complicate but there is scope
+[160:18.32] of improvement here. movement here
+[160:23.44] and and now we'll do this thing this
+[160:24.96] thing and
+[160:27.52] console.log price to beat is
+[160:32.40] yeah this will be off by a bit all right
+[160:35.60] let's see what's what happens um and
+[160:37.28] also console.log log place job buy
+[160:40.56] order, sell order or the opposite. I
+[160:42.32] don't know. We'll see which one of these
+[160:44.40] it should place but something like this.
+[160:47.04] Uh every time a message comes from poly
+[160:49.92] market telling us that the price has
+[160:51.20] changed. What we're going to do is oh
+[160:54.24] also um once this is done for one market
+[160:56.08] we shouldn't do it again and again. Um
+[160:58.56] check orers place to
+[161:02.80] uh let order placed for market equal to
+[161:06.80] this thing
+[161:08.96] and you know
+[161:12.56] of
+[161:16.72] current active market ID equal to true
+[161:19.04] and then
+[161:27.52] and uh
+[161:31.20] and
+[161:32.72] not
+[161:34.24] already placed the order for a current
+[161:36.00] market ID bar
+[161:39.92] only have to do it once. Um all right uh
+[161:42.40] let's run one index.ts and see what we
+[161:45.76] see. Um
+[161:48.48] okay the current live market is you know
+[161:52.56] this one which is 900
+[161:56.96] 30
+[161:59.20] price to beat is
+[162:02.88] 30 current active market is 9
+[162:15.60] probably actually this might be right
+[162:20.16] now. Um
+[162:24.48] the current market is no.
+[162:29.04] Okay.
+[162:30.32] Um
+[162:32.96] random start time
+[162:35.12] uh
+[162:36.96] current market would be
+[162:39.76] plus into math.
+[162:44.56] Math dot floor of current time minus
+[162:48.00] random time.
+[163:08.80] Random start time plus second
+[163:13.20] 65 30
+[163:17.28] math dot floor of math dot floor of date
+[163:22.56] by,000 minus random start time. Okay. Uh
+[163:29.76] number of seconds
+[163:35.76] would be like one floor would be like
+[163:37.52] one into would be plus 300.
+[163:45.84] Um
+[163:52.64] something is up.
+[164:02.80] But uh of course it goes crazy. Time
+[164:06.08] left is n. So that again is you know
+[164:07.76] pointing to something.
+[164:09.76] How time passed is this thing.
+[164:17.44] Oh.
+[164:22.08] What I
+[164:26.80] time left console.log
+[164:29.76] time past. All right, let's try that one
+[164:32.08] more time.
+[164:35.68] Um,
+[164:38.80] time left, time passed is beautiful.
+[164:42.16] What is the problem in this?
+[164:47.20] So
+[164:51.20] 17725 17725
+[164:54.72] 69 2 0 0
+[164:58.56] 1 17725
+[165:00.40] 68
+[165:03.44] extra
+[165:14.16] no that looks fine to me. Oh,
+[165:23.12] 10,000.
+[165:25.84] Um, okay. I know what to log. Uh, I will
+[165:28.88] log.
+[165:30.72] Hi. Console.log.
+[165:33.92] Random start time. console.log. Uh,
+[165:39.68] cheese
+[165:43.60] missing. Okay.
+[165:46.96] Math dot floor of
+[165:57.04] the number.
+[166:08.00] So it should be
+[166:11.68] 600 600 0.
+[166:19.60] It thinks
+[166:25.76] okay
+[166:28.80] 320.
+[166:31.20] It should think I have gone ahead by
+[166:33.44] one.
+[166:37.04] A minute. 68 9 0 0
+[166:42.72] 5 6 8 9 0 0
+[166:48.08] 5 9
+[166:51.84] Okay, let's try it again. It should
+[166:53.28] think I've gone ahead by one market and
+[166:55.36] it thinks I have gone. Perfect.
+[166:57.92] The current live is 2 0
+[167:02.72] 1 7
+[167:08.24] 725 725
+[167:10.88] 69
+[167:12.40] 2
+[167:24.40] guys. Uh
+[167:28.96] I see my bad should be fine now. Yeah,
+[167:33.12] there we go. 9200 string plus number
+[167:36.24] addition most common in JavaScript
+[167:37.92] question. I missed.
+[167:40.72] All right, so that should do it. Um
+[167:46.56] price to beat is
+[167:50.56] last price market price.
+[167:55.36] the price.
+[167:57.04] It's the first time we're running it. So
+[167:58.16] I ideally it shouldn't place any orders
+[168:00.16] um because we have just started it. But
+[168:01.92] now the second time the next market
+[168:03.84] starts is about it. It will have the
+[168:05.60] last price with it and it should be able
+[168:07.84] to figure out okay price one second.
+[168:09.44] Beautiful. Beautiful. We'll wait for it
+[168:10.64] to do it. So doing its thing. We'll wait
+[168:14.00] for this market to end. When this market
+[168:15.44] ends, we'll ensure or hope it is able to
+[168:17.92] track the right price to beat. And if it
+[168:19.68] is able to try track the right price to
+[168:21.12] beat it, we'll ensure it moves on to the
+[168:22.48] next market, which basically means this
+[168:24.16] ID moves after another 39 seconds. And
+[168:27.28] then in the next market's last 30
+[168:28.72] seconds, we'll see if it actually
+[168:29.68] figures out there's a big delta and
+[168:31.04] actually places an order. I've not
+[168:32.88] written the logic to place an order, but
+[168:34.40] I have a log over here. I just need to
+[168:35.92] replace this log with calling this
+[168:38.08] create order for market function. And
+[168:39.44] that should do it. Um, all right,
+[168:41.76] looking at the logs.
+[168:45.12] 20 more seconds and we will know if we
+[168:47.04] have missed a bug or not. Meanwhile, let
+[168:49.60] me see if someone has something in chat.
+[169:03.36] 20 more seconds and we will know if
+[169:10.88] All right. Uh
+[169:13.68] looking at chat.
+[169:17.76] Okay. Okay, how much time is left? I
+[169:19.04] think beautiful. So, it thinks that the
+[169:22.56] price to beat is in the next market
+[169:26.48] 302, but the actual price to beat is
+[169:28.64] 333. So, there is a delta over here.
+[169:30.40] There's a small bug um that we need to
+[169:32.00] fix that
+[169:34.40] price to bit change.
+[169:46.64] If not
+[169:53.68] okay
+[169:56.80] the price change. Mhm. That is a
+[170:00.00] problem.
+[170:01.84] Very big problem. We have another bug.
+[170:03.52] Uh
+[170:05.28] ah current market ID is something. If
+[170:08.32] not last active market ID
+[170:12.40] that is not going to happen. If current
+[170:14.80] market ID is not the last market ID.
+[170:27.92] Oh,
+[170:43.92] see
+[170:48.32] last.
+[170:52.24] Sorry, my bad, guys. Um we have to do it
+[170:54.48] one more time. Um
+[170:56.96] I will think things like the price to
+[170:58.32] beat is zero but after 3 minutes it
+[170:59.92] should have the right price and then
+[171:00.88] hopefully you know the right things from
+[171:02.72] there. Until then any questions? Um
+[171:11.12] speaker and heck I don't know what that
+[171:12.56] is. Super chats missed. All right. Time
+[171:14.24] to look at uh super chats
+[171:18.72] which uh
+[171:22.72] find funding. There we go. Um I'm
+[171:25.04] joining an early age startup as a CV
+[171:27.20] intern, computer vision intern. Um in a
+[171:29.68] Bangalore with a ST is it good for BC
+[171:31.60] freshers? I mean I don't know. I have no
+[171:33.12] idea around uh
+[171:36.16] computer vision. I generally feel 20k I
+[171:38.32] mean if you're in college probably fine
+[171:39.52] your second or your third year it's
+[171:40.64] probably fine. Um
+[171:42.72] uh I cannot come to hackabyte whatever
+[171:44.72] that is. Um
+[171:48.08] no other questions. All righty. Cool.
+[171:49.76] Cool.
+[171:52.16] Another 2 minutes and then hopefully
+[171:55.60] this time I'm very hopeful it works. Um
+[171:58.00] actually I'm not very hopeful. Still
+[172:00.08] might have some bugs in there but Abidak
+[172:02.32] seems good to me.
+[172:07.76] While this is happening let me also
+[172:09.20] create a repo for it. uh where I'm going
+[172:11.28] to post
+[172:13.68] the code for it.
+[172:18.64] new uh this is going to be called Poly
+[172:22.16] Market live market bot something like
+[172:25.28] that
+[172:27.76] and
+[172:30.24] still 95 seconds left so we have a lot
+[172:31.92] of time while it's doing its thing let
+[172:33.44] me quickly push the code here
+[172:36.00] init dot get com
+[172:41.84] in it get
+[172:47.68] there we So
+[172:52.16] that should be the code in case anyone
+[172:53.76] is curious. Um
+[172:57.28] about the code,
+[173:01.60] it's right here.
+[173:04.72] How do I move this back?
+[173:08.64] Uh live chat.
+[173:11.76] There we go. Um end poll.
+[173:15.04] That's good if you're curious. Uh, let's
+[173:16.96] see if it still is doing its thing or
+[173:19.28] not. Um,
+[173:21.76] let's go to this one right here. 40
+[173:25.20] seconds left. 40 second is what I see
+[173:27.04] over here. Price should be to zero right
+[173:29.04] now because it's mucky. Um, or you know
+[173:31.60] the first market it always misses after
+[173:33.68] starting the code. But after the first
+[173:35.28] market goes away from the second market,
+[173:36.72] it'll start to do its thing. Um, let's
+[173:38.80] see if it does it or not.
+[173:42.40] This market very obviously tipped to one
+[173:44.48] side which is why you know um there's no
+[173:47.60] real liquidity left on this market now
+[173:49.76] to buy yes or no. Um it's only until a
+[173:52.00] subtle point that you'll find liquidity
+[173:53.20] to buy. Um oh boy but it is moving. Oh
+[173:56.40] boy. Uh
+[173:58.88] I guess the target is really far so
+[174:00.32] wouldn't change much. Um
+[174:03.12] all right
+[174:05.84] done. Now let's go to the live market
+[174:08.24] and hopefully Yeah, there you go. The
+[174:09.68] price to beat is 406 over here. 404 over
+[174:12.24] here. Slight problem over here. Um that
+[174:14.32] we should try to fix um because we skip
+[174:17.36] one heartbeat. So in that one heartbeat
+[174:19.28] the price might change. Um but still
+[174:20.96] pretty close. We feel like that the
+[174:22.48] price to beat is this. Um we feel like
+[174:24.96] the current price is this. So you know
+[174:26.48] there's a delta between both of them. Um
+[174:28.32] eventually hopefully after a while this
+[174:31.20] if condition should hit if time left is
+[174:33.04] less than 30 then and you know a certain
+[174:35.60] condition is met. We place a buy order
+[174:37.52] or a sell order. So this market is
+[174:39.44] divergent enough. It seems like it. It's
+[174:40.80] really far from the target. Um 100 is
+[174:43.28] fairly aggressive though I think. Um
+[174:44.88] it'll never reach a delta of 100. Um 360
+[174:47.52] and 404 the delta isn't 100. So the if
+[174:49.52] condition shouldn't meet. Um but we'll
+[174:52.56] see if it that happens or not. Uh yeah
+[174:55.36] it's probably not going to happen. Delta
+[174:57.04] needs to be lesser like you know I don't
+[174:58.64] know 30 or 40 something like that. Um
+[175:01.04] but either way seems to do its thing.
+[175:02.72] Seems to work. It'll work perpetually
+[175:04.00] for every 5 minute 5 minute 5minut
+[175:05.36] candle. Um it only works for one market
+[175:07.12] right now. Um, and I have not put my
+[175:09.20] private key. So, I haven't actually
+[175:10.16] tested it here. Um, I don't want to put
+[175:12.16] my private key actually. I probably
+[175:13.76] could. Um, but if I share it by by
+[175:15.92] mistake, it'll be a problem, which is
+[175:17.20] why I'm not going to. But all you have
+[175:18.56] to do is export your private key from
+[175:21.52] here. Um, and paste it here. This is
+[175:23.20] like a dummy private key. Replace it.
+[175:24.48] You know, you don't need any of these.
+[175:25.52] Um, just put your Polymarket private key
+[175:27.84] here and you should be good to go. Also,
+[175:29.68] I've just logged you actually have to
+[175:31.36] place an order. That means you actually
+[175:32.72] have to call create order for market
+[175:34.72] with the right inputs. Um if you
+[175:36.16] actually want this to run um I probably
+[175:38.32] wouldn't do that today though. Um what
+[175:40.48] is the price now? Um it's again the
+[175:42.72] delta is less than 100 so wouldn't
+[175:44.72] matter matter. Um the delta is like 50
+[175:46.88] 60 80 now. Um so hopefully it does
+[175:49.28] exceed from 100 and then we have like oh
+[175:52.32] there we go. It's slowly approaching
+[175:54.08] above 100. There we go. That's good.
+[175:55.60] That's good. If it goes above 504 is
+[175:58.96] when we'll see u you know our logic kick
+[176:02.24] in.
+[176:05.12] Doesn't seem like it'll happen though. I
+[176:06.96] don't know. We'll try for this one
+[176:08.08] market and then we'll call it. Um
+[176:11.12] I have pushed the code. If there are
+[176:12.32] bugs, do let me know. Crazy.
+[176:20.32] I can see 20 right here.
+[176:23.12] Uh all right. It fell. It fell. Oh, it
+[176:25.52] fell below.
+[176:28.56] All right.
+[176:34.24] Yeah, we're probably not going to hit
+[176:35.52] the condition. Um, the condition would
+[176:37.76] get hit if the price reaches either 504
+[176:40.08] or 304. Um, I don't think it either
+[176:43.44] would happen, but I could be wrong.
+[176:47.52] We're going to have some silence for the
+[176:49.20] next few minutes. um before we know if
+[176:52.32] we hit an order or not.
+[176:58.72] Yeah, I should have kept like a smaller
+[177:00.08] threshold. We were anyways testing it.
+[177:01.52] So, I should have kept a threshold of
+[177:03.04] like 10 or something um to see if it
+[177:05.12] works or not. Um but anyways, um what is
+[177:08.00] done is done.
+[177:10.80] The good thing is I'm getting I mean I
+[177:12.96] don't know if these are like real time
+[177:14.16] prices or not. Um if it's 410 here, it's
+[177:17.84] sort of stuck here. That's just a UI
+[177:19.20] problem. This is the real price. Um 420,
+[177:21.44] 424,
+[177:23.20] 24, 23. Um yeah, the delta is like
+[177:27.28] really small now. 20. Um so anyways, I
+[177:30.00] wouldn't place an order at less than 30
+[177:31.44] seconds because it can trip to the other
+[177:32.96] side very quickly. Um but the problem is
+[177:35.36] if you keep the delta very big, then
+[177:36.88] you'll get really bad prices here or you
+[177:38.48] might not even get any orders to pick up
+[177:40.80] because the market might not be, you
+[177:42.00] know, liquid enough at that point. The
+[177:43.36] results are almost decided if in the
+[177:45.44] last 30 seconds the delta is of 100. So
+[177:47.60] you need to tweak these parameters. um
+[177:49.36] specifically, you know, the time at
+[177:51.20] which we're you're going to start
+[177:52.24] placing the orders and the delta that
+[177:54.56] you're trying to find uh between the
+[177:56.72] price to beat and the current price. Um
+[177:58.88] either way, um I just want to make sure
+[178:00.88] in this case it shouldn't place any
+[178:02.16] orders because the delta is really
+[178:03.76] small. The delta between the price to
+[178:05.52] beat and the current price is not this
+[178:08.16] this this price is incorrect. But this
+[178:10.80] price is correct. This is like a delta
+[178:12.56] of less than four after 300 seconds. um
+[178:16.48] at which point, you know, it's very hard
+[178:17.76] to tell if it'll be on this side or that
+[178:18.96] side. So, ideally, it should stay away
+[178:20.08] from placing any orders. Let's see what
+[178:21.92] happens when the 30 secondond mark hits.
+[178:23.60] Let's see if it actually places an order
+[178:24.80] or not. Hopefully, it doesn't. And it
+[178:26.80] shouldn't because it's really close to
+[178:29.28] the target price right now. And that's a
+[178:30.64] very risky bet.
+[178:35.76] Hey, it places a it placed a buy order.
+[178:39.44] Probably not cool. Uh placed buy order.
+[178:43.04] There's another bug here. It placed a
+[178:45.04] buy order when the price to beat was
+[178:50.00] this thing 68406 and the current price
+[178:53.12] was 68
+[178:55.36] 409. The delta was three. Why would it
+[178:58.32] do that
+[179:04.72] price to beat
+[179:07.20] and where am I logging the current
+[179:08.88] price?
+[179:13.04] price to beat is this thing
+[179:16.40] and the current price is
+[179:20.16] logged here. Um
+[179:23.52] if it placed a buy order that means it
+[179:25.84] felt that the last market price minus
+[179:28.72] value.
+[179:33.28] Oh
+[179:36.80] yeah. Uh can you see these conditions?
+[179:40.64] You think anything is bad here? it'll
+[179:42.88] either be less than 100 or greater than
+[179:44.00] 100 right it'll not equal to 100 anyways
+[179:45.44] so what I really was was supposed to do
+[179:48.88] was this if math do apps of this thing
+[179:50.40] is less than 100 if uh or you know if
+[179:54.56] last market end price is greater than
+[179:56.64] value and this thing and then if
+[180:02.80] it's less than value
+[180:08.48] and value minus this thing is greater
+[180:10.88] than 100 um that's My bad. I placed a
+[180:14.56] wrong order or you know the logic was
+[180:16.32] incorrect. My bad. Um
+[180:19.44] ID price. Uh this thing,
+[180:23.36] this thing, and this thing. All right.
+[180:25.36] Uh if last market end price is greater
+[180:29.60] than value, um value it's below. I
+[180:33.84] probably want to buy the up token.
+[180:37.28] We need to figure out what the inputs
+[180:39.92] are. side and then size.
+[180:43.28] Yeah, it's probably a buy order. So side
+[180:44.88] needs to be basically, you know,
+[180:47.92] uh
+[180:52.24] H.
+[180:54.88] So if I had to
+[180:58.00] call this function, I would want to buy.
+[181:01.68] So it'll be um buy upright. No, this
+[181:06.56] will be a sell order here. So market ID
+[181:08.64] would be
+[181:10.16] current market. I think this is
+[181:11.20] incorrect. You need to find the you know
+[181:12.40] right market ID. This is the slug. So
+[181:14.88] todo replace this with the slug and then
+[181:18.96] uh side is going to be side dot sell
+[181:21.04] here and price is going to be honestly
+[181:24.56] it doesn't matter but anywhere above 0.9
+[181:26.72] I should be able to buy because that's
+[181:28.72] closer to where the price would be and
+[181:30.16] size would be whatever 100. So I'm
+[181:32.32] placing like whatever at max $9 worth of
+[181:34.96] order. Um, and here I would buy u, so I
+[181:38.24] think this might be right. I can do some
+[181:40.00] back testing checking. I'm sure that I
+[181:41.60] miss something obvious again. Um, but
+[181:43.76] one thing that I know for for sure is a
+[181:45.68] to-do is you know this thing over here.
+[181:47.20] Let me push that as well
+[181:53.60] fixed bug and we call it here. It's 2
+[181:58.00] p.m. I have a video to record now. Um,
+[182:00.48] so I will call it. Hope you guys have a
+[182:02.72] happy Diwali tomorrow. Um, the code is
+[182:05.84] pushed. You will find it on GitHub. I'm
+[182:07.28] sure there's like a bug or two in there.
+[182:08.48] U try it with your Poly Market private
+[182:11.12] key if you want. I wouldn't do it
+[182:12.32] though. I don't consider myself to be
+[182:13.68] the best trader, so I don't know. Uh,
+[182:17.12] let me know what you'd like to see in
+[182:18.32] the next video. If there's anything any
+[182:20.72] other project ideas you guys have. I
+[182:22.08] don't have I I think as I said, you can
+[182:24.64] build anything on the internet now
+[182:26.16] thanks to cloud code other things. Um,
+[182:27.92] so happy to, you know, code anything
+[182:30.24] specific that you might like. Uh, super
+[182:33.04] chats missed. Let me see if I've missed
+[182:35.52] something and then I'll call it. Uh,
+[182:37.92] React to get hired. Um, H.
+[182:42.24] So, Saga got hired based on XNES or SAD
+[182:45.52] got hired based on a contest
+[182:47.68] application. As for the project matters,
+[182:50.48] most projects are again easy to build in
+[182:51.84] React Native now thanks to AI. The
+[182:53.68] harder part is, you know, how does React
+[182:54.96] Native work under the hood? Answering
+[182:56.40] these interview questions. Have you
+[182:57.84] published an app in the past? How many
+[182:58.96] installs does the app have? How do you
+[183:01.04] monitor the app crashes? Things like
+[183:03.20] these like more deeper questions on you
+[183:04.56] know when you productionize the
+[183:05.44] application. So like think of yourself
+[183:06.88] as a front end devops engineer more and
+[183:09.68] uh less of a you know application
+[183:11.20] engineer if you're applying to these
+[183:12.24] companies. That's the only advice I can
+[183:13.36] give. With that we end it. Thank

@@ -1,0 +1,985 @@
+[0:00.32] Hello everyone. In this series of
+[0:02.88] videos, we are going to understand about
+[0:05.12] a very important topic which is called
+[0:07.36] as guardrails.
+[0:09.60] Now as we go ahead, we'll first of all
+[0:12.72] understand what exactly guardrails are.
+[0:16.32] You know why it is important whenever we
+[0:18.48] are specifically building an AI agent
+[0:21.52] and then we will also try to understand
+[0:23.52] the practical implementation. What are
+[0:25.44] the approaches to implement guardrails
+[0:27.68] in your AI agents workflows and why do
+[0:30.88] we specifically use guardrails itself?
+[0:32.96] Right? So um first of all we will just
+[0:36.24] go ahead with a definition with a basic
+[0:38.48] definition. Here I have just copied and
+[0:40.56] pasted the definition itself. Guardrails
+[0:43.60] are safety mechanism that controls what
+[0:46.48] goes into and comes out of an AI agent.
+[0:49.68] They sit around your agent pipeline and
+[0:51.84] ensure the agent only processes safe
+[0:55.36] appropriate inputs only performs
+[0:58.00] approved actions only returns validated
+[1:02.48] compliant outputs. Okay, so these are
+[1:05.60] really important. Okay, so again let me
+[1:08.96] repeat it. They're making sure that they
+[1:12.16] sit around your agent pipeline and
+[1:14.16] ensures the agent only processes safe
+[1:17.60] appropriate inputs only performs
+[1:19.68] approved actions only returns validated
+[1:22.32] compliant outputs. Now here you can see
+[1:25.04] that I have designed I have I've just
+[1:27.20] created this simple AI agent. Okay, this
+[1:30.24] is a basic AI agent and what this AI
+[1:33.04] agent is actually doing it is taking an
+[1:34.72] input. The input goes to the LLM. Then
+[1:37.36] LLM makes a call either to the tools or
+[1:40.80] it can also directly give the output.
+[1:43.04] Now whenever I talk about these tools,
+[1:44.80] these tools can be rag application, rag
+[1:47.28] database, vector database, it can be
+[1:49.44] APIs, it can be different kind of
+[1:52.80] packages, it can be MCP server, anything
+[1:55.04] as such. But if it is making a call to
+[1:57.84] the tool here we get a specific context
+[2:01.60] and then LLM combines this context along
+[2:04.32] with the prompt and then the output is
+[2:06.48] generated. Now in this scenario whatever
+[2:09.28] question you ask to the LLM right the
+[2:11.84] LLM based on the request will generate
+[2:15.20] output either taking from taking the
+[2:17.28] context from the tools or either it will
+[2:19.36] generate its own output. So here uh
+[2:22.08] after generating the output you get the
+[2:23.76] entire output itself. Okay. But whenever
+[2:26.96] we talk about guardrail, don't you
+[2:28.64] think, okay, let's say that if in the
+[2:30.08] input if I go ahead and ask, hey, how to
+[2:32.48] hack a server? Okay. How to hack a
+[2:36.08] server?
+[2:37.76] How to hack a server? Do you think this
+[2:42.40] question is appropriate? How to hack a
+[2:45.28] server? Right? So here obviously
+[2:47.84] whenever we say that okay, whenever we
+[2:50.16] ask this kind of messages, it is an
+[2:52.16] unsafe message. Right? Because why would
+[2:54.72] you like to hack a server some like
+[2:56.80] obviously to do something bad for
+[2:58.48] someone right? So what my LLM should
+[3:02.32] basically do is that either it should
+[3:04.24] flag this content saying that hey this
+[3:06.72] is not good so we'll not give you the
+[3:09.12] output right or before the input going
+[3:12.24] to the LLM some checks should happen
+[3:14.96] here only saying that hey this input has
+[3:18.40] been flagged and this is not an
+[3:20.40] appropriate input we are going to make
+[3:22.48] sure that we don't give you the output
+[3:24.32] right so by this way the output that is
+[3:27.36] generated from this application or from
+[3:29.20] this AI agent is always validated compli
+[3:33.44] compliant comp compliant you know based
+[3:35.52] on the uh rules and regulations that we
+[3:38.24] have defined right and this is really
+[3:40.40] important otherwise whatever questions
+[3:42.16] you specifically ask to the LLMs it may
+[3:44.32] give you whatever things that you really
+[3:46.48] wanted to let's say that hey if I go
+[3:48.16] ahead and give an image right I'll tell
+[3:50.32] hey please generate an image and make
+[3:52.56] all these things or swap the face from
+[3:54.56] this particular person's face right so
+[3:57.20] that does not look good right So that's
+[3:59.52] the reason you know we implement
+[4:01.76] guardrails. Now I've just given you a
+[4:04.08] basic example but just by the definition
+[4:06.88] here you can see that it is a nothing
+[4:08.64] but they are safety mechanism you know
+[4:11.20] that controls what goes into and comes
+[4:13.28] out of an AI agent and this specific
+[4:15.92] things that we do it only processes safe
+[4:18.40] appropriate inputs only perform approved
+[4:20.64] actions only returns validated compliant
+[4:22.96] outputs. So at every stage you know in
+[4:25.92] this entire workflow we can implement
+[4:28.32] different types of guardrails. Okay. Now
+[4:31.36] coming to the next step how do we go
+[4:33.28] ahead and implement a guardrail. Right.
+[4:36.48] So in an AI agent okay whenever we talk
+[4:41.68] about guardrails there are two
+[4:43.60] definitive approach. Okay. One approach
+[4:48.40] is
+[4:50.56] called as deterministic approach.
+[4:54.72] deterministic
+[4:57.04] approach
+[4:59.52] deterministic approach and the second
+[5:01.92] approach is basically called as
+[5:04.32] modelbased approach
+[5:07.76] okay just from the term deterministic
+[5:10.24] and model based if I probably talk about
+[5:12.40] model based obviously you know that here
+[5:14.48] we are going to use LLMs right so we'll
+[5:18.16] give the input to the LLM and then we'll
+[5:19.92] decide whether this message is safe or
+[5:21.84] not and then probably proceed. Okay. Now
+[5:24.72] here the major advantage is that since
+[5:26.64] we are giving it to the LLM obviously
+[5:29.12] semantic meaning will be clearly
+[5:30.88] understood by the LLM right so it is
+[5:33.92] quite easy if I'm saying that hey if I'm
+[5:36.32] giving this input I'm telling you to I'm
+[5:38.16] telling the LLM to flag or not flag
+[5:40.00] right based on a specific prompt right
+[5:42.48] so LLM will definitely be able to
+[5:44.32] understand they'll be able to understand
+[5:46.24] the semantics right then here you'll be
+[5:49.76] able to see that easily any kind of
+[5:52.40] violations can mentioned
+[5:55.20] to the LLM right so that it catches
+[5:57.28] those kind of violation and stops the
+[5:59.12] request then and there itself right
+[6:02.72] if I talk of the major advantages over
+[6:05.12] here there's also some disadvantages the
+[6:07.12] disadvantage is that since we are using
+[6:08.88] the LLM over here right LLM cost LLM
+[6:12.00] calls are costly right for every input
+[6:15.76] if we are going to go ahead and give it
+[6:17.20] to the LLMs and based on the cost right
+[6:19.60] there will be cost for every call right
+[6:21.52] so because of that uh that cost will be
+[6:24.16] definitely higher right so that is one
+[6:26.56] of the disadvantages if I talk about the
+[6:28.56] deterministic approach in the
+[6:30.00] deterministic approach it is very simple
+[6:32.40] what we do over here is that we define
+[6:35.20] some some kind of rule-based algorithms
+[6:38.24] right rule-based algorithms it can be
+[6:40.48] rejects right it can be keyword matching
+[6:43.60] it can be different kind of stuff right
+[6:45.44] so for doing all the things obviously
+[6:47.92] the major disadvantage is that it is
+[6:50.00] major advantage is that it is zero lm
+[6:52.48] cost right here you you're not using any
+[6:54.96] LLMs but again in the deterministative
+[6:58.16] approach the main disadvantage will be
+[7:00.80] that obviously by this approach it will
+[7:03.36] not be able to understand the semantics
+[7:05.84] right so usually whenever we implement
+[7:08.56] guardrails based on the problem
+[7:10.32] statement we usually appro use these two
+[7:12.96] approach one is the deterministic and
+[7:14.88] one is the model based approach now
+[7:19.28] in this series of videos I'm going to
+[7:21.36] show use Langchain
+[7:24.08] as my open-source framework and with the
+[7:27.36] help of this we are going to implement
+[7:28.96] the guardrails right now. Why lang?
+[7:32.48] Because see lang has some very important
+[7:35.36] ways of handling this you know in the
+[7:38.08] form of a middleware.
+[7:40.48] In the form of a middleware
+[7:43.04] middleware Now what exactly is a
+[7:45.12] middleware? Now within a agent workflow
+[7:47.60] right we can add different kinds of
+[7:49.76] hooks within the workflow okay before
+[7:52.40] the agent after the agent and all. So
+[7:54.72] considering this middleware there are
+[7:57.04] three six important steps that we are
+[7:59.28] going to discuss about one is PII
+[8:02.16] middleware. Now what is this PII
+[8:04.80] middleware? Okay, in this PII middleware
+[8:09.68] here we will be able to
+[8:13.12] detect.
+[8:15.04] So they have some inbuilt techniques
+[8:17.12] that are available in langen which will
+[8:19.20] be able to detect email ids, credit
+[8:22.48] cards, right? Credit card numbers,
+[8:25.52] right? Along with this you will be also
+[8:27.52] able to detect IPs, URLs, right? So all
+[8:31.60] these things like it is a kind of an
+[8:33.44] inbuilt middleware that is available
+[8:35.04] with lang chain which will be able to
+[8:37.28] detect these all and within the agents
+[8:39.76] you can integrate this kind of
+[8:41.44] properties so that it it it makes sure
+[8:44.00] that uh it tells the agent to probably
+[8:46.24] restrict the output or try to apply some
+[8:48.96] other kind of validations. Okay. Now in
+[8:51.36] this what happens is that whenever we
+[8:53.44] are using PII middleware let's say if it
+[8:55.36] sees the email id credit card ips it
+[8:57.84] applies some kind of techniques like
+[8:59.60] masking
+[9:01.12] right it provides an hash hash is a kind
+[9:04.32] of algorithm which you know changes the
+[9:06.80] entire uh numbers that is given or the
+[9:09.20] email ids that is given over there.
+[9:10.88] Okay. And then uh the best part is that
+[9:13.20] it applies to input it applies to output
+[9:15.76] and it also applies to the tool call.
+[9:18.40] Right? Tool calls. So this is what a PIM
+[9:21.52] middleware is all about you know this is
+[9:24.08] one of the important middleware
+[9:26.00] techniques that we can apply in order to
+[9:27.68] implement guardrails right second
+[9:29.76] important technique is something called
+[9:31.44] as human in the loop
+[9:34.16] human in the loop middleware okay now in
+[9:39.36] the if you're implementing this
+[9:41.04] middleware here you'll be able to see
+[9:43.20] that
+[9:44.80] it pauses
+[9:46.96] it pauses agents
+[9:50.80] before
+[9:53.04] sensitive tools,
+[9:55.44] right? Before any sensitive tools, it'll
+[9:57.68] pause over there and it will wait from
+[10:01.12] the human to either approve or reject,
+[10:05.44] right? So, I will show you everything
+[10:07.20] with the help of practical
+[10:08.80] implementation and examples. Don't worry
+[10:10.72] about that. Okay? Uh everything we I
+[10:13.28] will be teaching you with respect to
+[10:14.64] this. Okay? And here obviously you have
+[10:17.68] to implement with threads and checkpo
+[10:19.76] pointers so that it understands for
+[10:22.40] which user we are trying to talk to.
+[10:25.12] Okay. So here uh if you know about
+[10:27.60] memory management uh here threads and
+[10:29.92] check monitors is definitely used after.
+[10:31.92] Okay. Now these is one one of the
+[10:34.96] another approach where we can
+[10:36.24] specifically use guardrail. We will
+[10:37.92] implement one by one. Okay. But first of
+[10:39.92] all let's understand uh every u
+[10:42.72] different types of guard rules that we
+[10:44.16] can apply. Now third is before
+[10:47.76] agent agent hook. Now before my agent is
+[10:52.40] basically called you know I can also go
+[10:54.56] ahead and apply this specific guardrail.
+[10:56.56] Now when do this before agent hook
+[10:58.80] basically run? It runs
+[11:01.60] before any LLM call. Okay it runs before
+[11:06.40] L LM call. Um here uh you'll be able to
+[11:10.32] see that before the LLM call is made and
+[11:12.56] let's say that this guardrail has got
+[11:14.16] validated right here there will be a
+[11:17.20] zero cost zero cost for blocked
+[11:22.56] blocked requests right because obviously
+[11:25.20] we are not going and hitting the LLMs.
+[11:27.12] So what we are doing is that we are
+[11:29.20] blocking them over there and there is no
+[11:30.80] cost basically involved with respect to
+[11:32.64] LLM and then if it is getting blocked we
+[11:35.44] can directly move this into the end
+[11:37.60] state. Okay that is so amazing about
+[11:40.80] this right it it probably goes and sees
+[11:43.60] that mechanism before the LLM call and
+[11:45.68] it sees that okay if it is getting
+[11:46.96] flagged it is just directly going to
+[11:48.48] send to the end of the workflow or end
+[11:50.40] of the AI agent. Okay now coming to the
+[11:53.52] fourth one. The fourth one where we can
+[11:56.24] specifically apply the guardrail is
+[11:58.80] after agent hook. Let's say the agent
+[12:01.68] has executed it has generated an output
+[12:04.40] and after that also you will be able to
+[12:08.16] validate. Okay. So here you'll be able
+[12:10.32] to see that we specifically
+[12:13.36] validates
+[12:15.36] final response.
+[12:18.72] Okay. Final response before user sees
+[12:21.76] it.
+[12:23.52] So let's say before user sees it if
+[12:26.40] there is some kind of flag it wish to do
+[12:28.48] it'll be able to do okay and the best
+[12:30.56] part is that what it does you know it
+[12:32.40] can also replace
+[12:34.56] or mutate
+[12:38.64] unsafe
+[12:41.12] content that's the most amazing thing
+[12:43.36] about this right and here uh you know
+[12:46.48] you can also use a cheap model or a
+[12:48.64] small language model in order to
+[12:50.24] implement this okay and similarly Um
+[12:53.28] there are also something called as the
+[12:54.96] fifth one is basically called as layered
+[12:58.72] layered guardrails. Now in the layered
+[13:01.20] guardrails you can combine everything
+[13:03.52] right whatever I've actually mentioned
+[13:05.04] over here you can combine you can
+[13:07.20] combine it in the form of a stacks and
+[13:08.80] you can go ahead and implement it. Okay
+[13:11.52] now this was about guardrails. I hope
+[13:13.84] you got a very clear idea about it. Uh
+[13:16.08] how do we specifically use guardrails
+[13:18.08] and why it is used. But now it's time
+[13:19.76] that we go ahead and see some kind of
+[13:22.08] code. A very good uh documentation that
+[13:24.96] we have created over here. Okay. And
+[13:27.44] step by step we'll try to see it. Um the
+[13:30.24] prerequisite is that you need to know
+[13:31.92] this uh you know lang chain uh whatever
+[13:35.20] we have discussed earlier right with
+[13:36.56] respect to lang chain like middleware
+[13:38.16] memory structured um if you have seen my
+[13:41.60] previous modules right uh I've already
+[13:43.84] uploaded that and uh you know we are
+[13:46.32] making sure to update each and
+[13:47.60] everything as we go ahead. whatever new
+[13:49.20] things are basically coming up. Okay. So
+[13:51.12] here you will be able to see that in
+[13:52.80] this uh notebook we will talk about what
+[13:54.56] are guardrails, why do they matter, two
+[13:56.32] approaches, built-in PI detection
+[13:58.16] middleware, built-in human in the loop,
+[14:00.48] custom before agent. So this is like a
+[14:02.40] custom uh guardrail techniques and then
+[14:05.28] we will also be seeing some kind of uh
+[14:07.52] chat bots also. Okay. So first of all we
+[14:10.08] go ahead and initialize this. We load
+[14:11.84] our environment variable and this is
+[14:13.68] very simple from env import load_env.
+[14:17.20] I'm going to use my OpenAI API key.
+[14:19.20] Okay, OpenAI API key is good uh in order
+[14:22.00] to implement guardrails itself. Right?
+[14:23.92] And here you can see what are
+[14:25.12] guardrails. They build um guardrails
+[14:28.00] help you build safe compliant AI
+[14:29.52] application by validating filtering
+[14:30.88] contents and key points in your agent
+[14:32.48] execution. They implemented as
+[14:34.24] middleware that intercepts execution
+[14:36.16] before the agent starts input guardrail
+[14:38.64] after it completes output guardrail
+[14:40.24] around models and tool calls also you
+[14:41.92] can implement it. Okay. Common use cases
+[14:44.40] here you can see in PII leakage
+[14:46.24] prevention. It redacts email credit
+[14:48.64] cards before logging. Prompt injection
+[14:50.48] blocking. See you cannot even inject new
+[14:53.12] prompts while the execution is
+[14:54.72] happening. It detects adversarial
+[14:56.40] inputs. Block dangerous requests.
+[14:58.16] Require approval for financial ops.
+[15:00.16] Ensures every uh response meets safety
+[15:02.40] standard. And this is something really
+[15:03.76] important nowadays. uh if you see the
+[15:06.16] kind of LLMs that has been designed you
+[15:08.08] know uh it is very much compulsory for
+[15:10.72] every applications to probably go ahead
+[15:12.56] and implement guardrails on top of it.
+[15:14.88] Section two uh two approaches to
+[15:16.56] guardrail we have discussed about this.
+[15:18.24] Now let's see one example. Okay. So here
+[15:20.40] you'll be able to see that we have
+[15:21.84] created a function. Let me just zoom in
+[15:24.32] a little bit so that you see it clearly.
+[15:30.64] Okay.
+[15:32.80] Yeah. So here you'll be able to see that
+[15:35.76] we have created a function which is
+[15:37.28] called as deterministic guardrail. Here
+[15:39.20] we give the text and the output of this
+[15:41.36] function is boolean. Right. It'll be
+[15:43.12] either true or false. It returns true if
+[15:45.68] the content is blocked. Let's say in any
+[15:48.96] of the inputs, right, I create some kind
+[15:50.88] of banned messages for my application
+[15:52.64] like hack, exploit, malware, bomb,
+[15:56.08] right? All these are like banned
+[15:58.08] keywords. And here I'm basically saying
+[16:00.24] that we can like this function whenever
+[16:03.60] we are calling we give any text it will
+[16:06.08] go and match with all this text. And if
+[16:09.12] there is a match with respect to that
+[16:10.88] particular text, we get a boolean value
+[16:13.44] which says that whether it is true or
+[16:15.28] false. If it is true, if it is
+[16:16.72] committing as true, that basically means
+[16:18.08] it has matched this band keywords. So as
+[16:20.32] I said in the deterministic approach, we
+[16:22.88] are not going to use LLMs. Here we'll be
+[16:25.20] having some kind of reax operation. We
+[16:27.12] can have some kind of fixed set of
+[16:29.12] keywords, fixed set of band keywords for
+[16:31.60] which we can actually use it. Then I'm
+[16:33.92] having test inputs. Here I have
+[16:35.60] questions like how do I hack into a
+[16:37.12] database? What is the capital of France?
+[16:39.36] Explain how malware spreads. Now this
+[16:41.76] kind of questions from this question you
+[16:43.76] know that this is a dangerous message.
+[16:45.92] Right? And because of this deterministic
+[16:48.00] guardrail I need to apply all this test
+[16:50.24] inputs before going to the before going
+[16:52.56] to the AI agents. I need to go ahead and
+[16:54.40] apply it over here. Right? So here
+[16:56.32] you'll be able to see that I'm using a
+[16:58.56] uh uh input in test inputs. I'm saying
+[17:01.04] I'm calling this function and I'm saying
+[17:02.96] that status blocked if blocked else
+[17:04.88] allowed. Right? And then you'll be able
+[17:07.20] to see that I will just go ahead and
+[17:08.64] execute it. Here it says that blocked.
+[17:10.64] How do I hack into a database allowed?
+[17:12.96] What is the capital of France? Blocked.
+[17:15.68] Explain how malware spreads. Right? So
+[17:18.64] this way you'll be able to see that is
+[17:20.88] basically getting blocked just by using
+[17:23.36] some rule-based approach over here. And
+[17:25.76] uh this we can apply it before our AI
+[17:28.08] agents. Okay. Now similarly with respect
+[17:30.56] to the model based approach. Okay. In
+[17:32.32] the model based approach you know that
+[17:33.92] we are going to use any specific model.
+[17:36.64] So from langchain openai I have imported
+[17:39.12] chat openai. Here we have defined a
+[17:41.12] function. It is taking a string and it
+[17:42.72] is returning a string. I'm haveve I've
+[17:45.04] put some kind of dock string. Use an lm
+[17:46.96] to evaluate content safety. Return safe
+[17:48.80] or unsafe. So here is my model chat gp
+[17:51.28] 40 mini temperature is equal to zero.
+[17:53.20] I've given a prompt. Is the following
+[17:54.56] user input safe to process? Reply with
+[17:56.88] only safe or unsafe. And here is my
+[17:59.20] input text. And then I'm giving my
+[18:01.60] result. I'm getting my result with the
+[18:03.60] help of model.invoke and whatever prompt
+[18:06.16] I have I'm putting inside this. And
+[18:08.16] finally I'm just writing
+[18:09.76] result.content.st strip. Okay. Now we
+[18:12.64] are going to test it for every inputs
+[18:14.56] and I'm going to apply this function.
+[18:16.16] And here you'll be able to see I'm
+[18:17.52] writing unsafe if unsafe in vertx else
+[18:20.24] self. Okay. So here you'll be able to
+[18:22.40] see that model based. How do I hack into
+[18:24.40] a database? It is unsafe. What is the
+[18:27.04] capital of France? Here you can see
+[18:29.20] explain how malware spreads. Now here
+[18:31.12] you can see right based on the context
+[18:33.68] it is understanding. This is a generic
+[18:35.52] information explain how malware spreads
+[18:38.16] right it is a generic information and
+[18:40.08] based on that you know LLM is able to
+[18:41.92] understand the semant semant semantics
+[18:45.04] and then it is able to give you the
+[18:46.48] output but in this particular scenario
+[18:48.16] here you'll be able to see that it is
+[18:49.44] shown blocked because here obviously the
+[18:51.76] context was not understood and based on
+[18:53.60] the keyword matching we are implementing
+[18:55.20] it. Okay. So these are the two
+[18:57.36] approaches but uh again uh in lang chain
+[19:00.96] you have lot of inbuilt defined
+[19:03.20] guardrail techniques which we are going
+[19:04.88] to see. Okay. Now if you remember guys
+[19:07.92] uh in lang chain we use create agent in
+[19:10.64] order to create a basic AI agent. We can
+[19:13.36] also integrate different types of AI
+[19:14.96] tool uh different types of tools which
+[19:16.80] can be used to execute the workflow. Now
+[19:19.44] let's go ahead and discuss about the
+[19:20.96] built-in guardrail. Okay. And in this
+[19:24.32] built-in guardrail, we are going to see
+[19:26.16] about PII detection middleware. Now,
+[19:29.04] Langchain provides built-in PII
+[19:31.12] middleware for detecting and handling
+[19:33.20] personal identifiable information.
+[19:35.60] Right. When I talk about PII, the full
+[19:38.40] form is personal personally identifiable
+[19:41.84] uh information. Okay. So here you can
+[19:44.08] see supported PII types are let's say
+[19:46.48] email, credit card, IP, MAC address and
+[19:49.04] URL. So these are some fixed types that
+[19:51.28] has been supported by personally
+[19:53.52] identifiable information. It is being
+[19:55.44] person has been treated as such. Okay.
+[19:58.32] You have email, credit card, IP and MAC
+[20:00.48] address. Strategies what it does is that
+[20:02.64] it's redact. Redact basically means
+[20:04.80] redacted email, right? It will try to
+[20:07.20] expand it and keep it in this format.
+[20:09.28] Mask basically means it is just going to
+[20:11.20] put stars. Hash it is going to apply
+[20:13.60] hash algorithm and it is going to
+[20:15.12] change. And there is also something
+[20:16.80] called as block. it raises anec
+[20:19.04] exception. If you use this block
+[20:20.88] strategy, it raises an exception. So
+[20:23.28] let's go ahead and see step by step how
+[20:25.12] to do it. Now first of all, in order to
+[20:28.40] understand how do we go ahead and create
+[20:30.32] an agent, right? So from langin.tag
+[20:32.48] agents, we import this create agent
+[20:34.40] method. And since we need to apply a
+[20:36.80] middleware, right, we go ahead and write
+[20:38.64] from lang.agents.m middleware import
+[20:40.88] middleware pi middleware. Then from
+[20:43.44] langchen openai import chat openai from
+[20:46.64] langchen core tools import tools and
+[20:50.64] then here you'll be able to see define a
+[20:52.96] simple dummy tool here is my tool I've
+[20:55.36] created a tool right this pi middleware
+[20:58.16] I need to integrate inside my create
+[21:00.64] agent okay this is this is basically
+[21:03.68] integrated over here and this will get
+[21:06.08] applied before the AI agent is basically
+[21:08.48] called right that is where PII
+[21:10.48] middleware is so if I go ahead and show
+[21:12.56] you let's say if this is my AI agent
+[21:16.40] okay if this is my AI agent okay so
+[21:21.04] before the input goes here
+[21:24.32] before the input goes here my PII
+[21:28.00] middleware
+[21:29.68] is applied over here right so here my PI
+[21:33.76] middleware will apply and based on this
+[21:35.84] input it is basically going to check the
+[21:38.64] personal information right whether it is
+[21:40.80] an email id and And this is basically
+[21:43.52] inbuilt in lanch chain. Okay. So it is
+[21:46.16] basically going to get applied over here
+[21:47.60] before the AI agent is already called.
+[21:49.68] Okay. So let's go over here and here
+[21:52.08] you'll be able to see that I have
+[21:53.36] defined a tool. This is a dummy tool
+[21:56.00] which says that customer lookup and
+[21:58.64] whatever query we are giving we we are
+[22:00.64] just saying that customer record found
+[22:02.08] with respect to this particular query.
+[22:03.84] Now I'll show you in an AI agent how do
+[22:06.24] you integrate this tool along with that
+[22:08.40] how do you go ahead and add this PII
+[22:10.32] middleware. So first of all we go ahead
+[22:12.16] and create an agent with PI middleware.
+[22:14.16] So we use create agent. We use the model
+[22:16.88] right we use the tools that is used and
+[22:19.44] here we are using middleware. Inside the
+[22:21.84] middleware we give a list of middlewares
+[22:24.32] right like how many types of middlewares
+[22:26.48] we want right. So one is the PII
+[22:28.88] middleware. Here the strategy is redact.
+[22:32.00] Okay we are using the keyword email.
+[22:34.72] That basically means for email I'm going
+[22:36.64] to apply this strategy because this is
+[22:38.80] an inbuilt keyword and apply to input
+[22:42.24] true right so we are going to basically
+[22:44.16] get apply to whatever inputs that we're
+[22:46.64] going to give right so these are the
+[22:48.16] three defined keywords that is applied
+[22:49.76] over here the next middleware is
+[22:51.84] basically applied for credit cards in
+[22:53.84] user input this is for email this is for
+[22:56.72] credit card so here we are going to
+[22:58.16] apply PII middleware credit card
+[23:00.48] strategy is equal to mask apply to input
+[23:02.64] is equal to true okay so for credit card
+[23:04.96] we are going to do the masking and then
+[23:07.68] for the API keys we are going to raise
+[23:10.16] an error. So PII middleware we are using
+[23:12.80] the inbuilt keyword API key. There is a
+[23:15.92] term which is called as there is a
+[23:17.28] parameter which is called as detector
+[23:18.88] where we can apply regular expression.
+[23:21.44] So here you can see 32 characters
+[23:23.12] regular expression is basically applied
+[23:25.12] and the strategy that we are going to
+[23:27.04] use is block. If you know what is block
+[23:29.04] used for it raises an exception right
+[23:31.44] and then you're going to apply it to the
+[23:33.04] input is equal to true. Now with all
+[23:35.76] these middle wares we are creating we
+[23:37.84] are attaching to the AI agent right this
+[23:41.04] AI agent has a tool right so you can see
+[23:44.24] that this AI agent has a tool let's say
+[23:46.40] this AI agent has a tool this tool is
+[23:48.64] basically searching for the user and
+[23:51.20] giving the context right whether the
+[23:53.44] user has been found or not and before
+[23:55.52] that we are applying this PI middleware
+[23:57.52] and we have applied it for credit card
+[23:59.44] we have applied it for emails we have
+[24:02.08] applied it for API keys Right everything
+[24:05.52] we have applied it and before going to
+[24:07.28] the AI agent we are going to do this.
+[24:08.96] Right? So here you'll be able to see
+[24:10.64] that we have created this. Right? Now I
+[24:13.20] will just go ahead and execute it. Now
+[24:15.20] let's see that I have used this
+[24:16.80] agent.invoke.
+[24:18.48] I've used messages ro is equal to user.
+[24:20.56] My content is my email is john.d do at
+[24:23.20] the rate example.com
+[24:25.28] and my card number is can you help me
+[24:27.68] right? So this is the question that we
+[24:29.04] have given. Right now agent should
+[24:31.20] definitely block them. It should do
+[24:32.88] something over here, right? So now you
+[24:35.28] should be able to see the response. I
+[24:37.52] found the customer record associated
+[24:39.20] with the card ending in 51 0. See it is
+[24:42.08] not even giving the whole answers. How
+[24:44.08] can I assist you further today? Right
+[24:46.00] now if I go ahead and see the entire
+[24:47.92] result. See what is happening. My email
+[24:50.48] is redacted email. Right? This email has
+[24:53.92] got changed to redacted email and my
+[24:56.48] card is this. See star star star is
+[24:59.04] basically coming up. So what has
+[25:00.72] basically happened over here right we
+[25:02.80] have applied we have applied this mask
+[25:06.64] the the the middleware has applied the
+[25:09.12] mask over here right the middleware has
+[25:12.16] applied the mask okay can you help me
+[25:14.32] and here you'll be able to see customer
+[25:15.76] record found on query this this this and
+[25:18.48] I found the customer associated with
+[25:20.00] card ending with 5100 how my father
+[25:22.08] assist you so here you can see based on
+[25:24.96] the input the uh middleware PII
+[25:27.68] middleware has executed some of the
+[25:29.84] important things based on this um
+[25:32.72] strategies that we have applied for
+[25:34.40] email, credit card and API key.
+[25:39.20] So guys, now let's proceed forward in
+[25:41.92] order to test the API. Right? So here I
+[25:44.16] have written agent.invoke messages ro is
+[25:46.32] equal to this. Here is my key and I've
+[25:48.40] given some random key which looks like
+[25:50.32] an open API key. And here you can see
+[25:52.88] that I've used exception
+[25:55.84] as e. If you remember over here when we
+[25:59.28] have this block strategy it raises an
+[26:01.44] exception right so that's the reason we
+[26:03.76] have in written the entire code inside a
+[26:06.00] try block. So try is equal to
+[26:07.76] agent.invoke messages role is equal to
+[26:10.00] user content here is my key exception as
+[26:12.56] this. So let me just go ahead and
+[26:14.00] execute it. And here you can see blocked
+[26:16.16] as accepted detected one instance of API
+[26:18.64] key in text documents. So based on the
+[26:21.76] specific keywords in the PII middleware
+[26:24.56] that we have applied inside our agent
+[26:26.64] and based on that that specific
+[26:28.24] exception has been raised. Okay. Now
+[26:31.28] this was about PII middleware. Now let's
+[26:34.32] go ahead and see about the next built-in
+[26:36.48] guardrail which is called as human in
+[26:38.16] the loop. Okay. Now human in the loop is
+[26:41.20] something really important. It pauses
+[26:43.92] agent execution before sensitive
+[26:46.48] operation and wait for human approval.
+[26:49.20] At the end of the day, any kind of AI
+[26:51.36] agents that you develop, it is necessary
+[26:53.36] that we have some kind of human in the
+[26:55.52] loop middleware. That basically means it
+[26:57.28] will wait for the human feedback. And
+[26:59.68] this kind of middleware is best for
+[27:01.44] financial transaction, sending emails to
+[27:03.76] external parties, deleting production
+[27:06.32] data, any operation with significant
+[27:08.40] business impact. Okay. A requirement is
+[27:11.04] that a checkpointer is required so that
+[27:13.12] we understand for which user this
+[27:15.52] specific uh you know workflow is
+[27:17.60] basically running for. So again what we
+[27:19.68] do we go ahead and import create agent
+[27:22.88] from lang.tagent. Then we import the
+[27:24.88] middleware which is called as human in
+[27:26.32] the loop. Then we have inmemory saver.
+[27:29.12] Then we are also using this command.
+[27:31.04] This command is basically for the
+[27:32.48] approval for the human type like human
+[27:34.72] in the human feedback. And then we are
+[27:37.04] also defining tools. So first of all we
+[27:38.88] have defined a tool which is called as
+[27:40.24] search web. Here it is searching results
+[27:42.72] for specific query. Then we have send
+[27:45.36] email. These all are like dummy tools.
+[27:47.28] Okay. Here we are hard coding the
+[27:49.12] output. It return results for this
+[27:51.12] particular query. Email sent to this
+[27:53.28] with this subject. Then you also have
+[27:55.52] delete records you know delete records
+[27:57.84] from table where conditions are this
+[27:59.68] three tools. Let's say I have I want to
+[28:01.60] integrate it with my agent. So here I
+[28:04.08] have created a hit agent that basically
+[28:06.72] means human in the loop agent. We are
+[28:08.56] using create agent. We have used the
+[28:10.48] model GPT40. We used tools search web
+[28:13.44] send email and delete records. And in
+[28:15.84] the middle where we have used human in
+[28:17.44] the loop and we are interrupting on some
+[28:20.32] specific tool right when we are
+[28:22.40] interrupting on send email is equal to
+[28:24.24] true. So that basically means we are
+[28:26.24] requiring approval before we send the
+[28:28.16] email. Before deleting the records we
+[28:30.32] require approval before searching web.
+[28:32.64] We don't require approval, right? So
+[28:34.16] this is auto approved. So we have kept
+[28:35.84] it as false because searching web is a
+[28:38.08] normal job. It is just like a get
+[28:39.60] request uh trying to come up over here.
+[28:42.16] But over here send email and delete
+[28:44.40] requerinter
+[28:49.36] in memory saver and finally we print
+[28:51.52] human in the loop agent created and uh
+[28:54.40] based on this you'll be able to see
+[28:55.76] this. Okay very simple right over here
+[28:58.24] human in the loop middleware is
+[28:59.68] basically applied. So I'll go ahead and
+[29:01.12] execute it. Now let's go ahead and
+[29:03.20] create my config with thread is equal to
+[29:05.36] with a session ID. Uh all these things
+[29:07.92] has been taught already in lang chain
+[29:09.68] guys. Uh so that's the reason I'm trying
+[29:11.68] to show you in this way. Okay. Again to
+[29:14.24] write all these codes it will take
+[29:15.52] unnecessary time. I want to keep the
+[29:17.12] video short as possible for you all.
+[29:18.96] Okay. Then uh result is equal to Hitler
+[29:22.80] hitl
+[29:24.32] aent.invoke. And here you'll be able to
+[29:26.64] see that role is equal to user content
+[29:28.56] send an email to team company about the
+[29:30.80] Q4 results. Okay. So this is an email.
+[29:33.36] We need to probably send this as an
+[29:34.96] email. And before this we want to pause
+[29:37.76] right. So once we execute this here
+[29:39.68] you'll be able to see that since we have
+[29:41.76] already applied the human in the loop
+[29:44.24] middleware in the hit agent here the
+[29:48.00] agent will definitely pause. Right? So
+[29:50.56] you can see this is the message. Now in
+[29:52.32] order to approve it what we'll do we
+[29:54.24] will say command resume decision is
+[29:56.08] equal to type is equal to approve. Once
+[29:57.76] we do that with the same config it will
+[29:59.76] go ahead and here you'll be able to see
+[30:01.60] that I've sent the email to this company
+[30:04.16] about the Q4 results. Right? So that I
+[30:06.64] know this is a hard-coded message. We
+[30:08.00] are not sending any email but I hope
+[30:09.68] you're understanding how with the help
+[30:11.60] of human approval we have actually
+[30:13.20] forwarded the uh workflow. Right?
+[30:15.92] Similarly if human rejects it there is
+[30:18.64] also method of rejecting. Let's say
+[30:20.80] after invoking delete all the records
+[30:22.64] from the user table here I'm saying that
+[30:24.80] okay decision type is equal to reject
+[30:27.04] decision too risky needs dba review and
+[30:30.08] here once we execute it it is not going
+[30:32.16] to directly uh you know directly uh you
+[30:37.52] know successfully pass this particular
+[30:39.28] result instead it will say that hey we
+[30:41.20] are not going to go ahead with it
+[30:42.64] because we need further questions
+[30:44.08] further uh you know db review we really
+[30:46.56] need to do it seems that you have
+[30:47.92] decided not to proceed with the deletion
+[30:49.76] Right. So this was about the human in
+[30:51.92] the loop. Now you can create based on
+[30:54.00] your requirements wherever you want.
+[30:55.76] Okay. Then coming to the most important
+[30:58.88] thing uh which is called as custom
+[31:02.08] guardrail before agent hook. Okay. So if
+[31:05.68] I go back over here here you'll be able
+[31:07.68] to see that before we are calling the
+[31:09.36] tools right in some of the tools we are
+[31:11.28] using human in the loop. All right.
+[31:14.80] Human in the loop middleware and we have
+[31:17.20] applied it over here, right? Human in
+[31:20.08] the loop middleware.
+[31:23.76] Perfect. Okay. Now let's go ahead and
+[31:26.48] show you how to probably go ahead and
+[31:28.08] create custom guardrails and that also
+[31:30.40] you can do it before agent and after
+[31:32.32] agent. Whenever we say before agent hook
+[31:35.12] that is just like an input filter,
+[31:37.20] right? As soon as you get the input you
+[31:39.28] can apply the custom guardrail.
+[31:41.84] when it is used for keyword or content
+[31:44.08] filteration, authentic checks, rate
+[31:45.84] limiting, blocks, blocking specific
+[31:47.68] categories of request. Okay. So here in
+[31:51.04] order to create a custom guardrail, we
+[31:53.68] first of all let's say import something
+[31:56.00] called as agent middleware, agent tech,
+[31:58.56] state and hook config. So these three
+[32:01.44] will be specifically used and we also
+[32:03.44] going to use runtime. We are going to
+[32:05.04] use create agent and tool. Right? Now
+[32:07.20] whatever we do, we first of all create a
+[32:09.20] class. If you want to create a custom
+[32:11.60] middleware, let's say here I've written
+[32:13.52] content middle filter uh filter
+[32:15.44] middleware. This needs to inherit agent
+[32:19.04] middleware. Okay, this will be
+[32:21.20] inheriting agent middleware. And here
+[32:23.60] this is my doc doc string. I'm saying
+[32:25.44] that it is a deterministic guardrail
+[32:27.20] block request containing band keywords.
+[32:29.28] Okay, if I really want to define my own
+[32:31.20] custom uh guardrail itself, then we
+[32:33.84] define a init method. Here we are using
+[32:36.64] introducing a new keyword that is called
+[32:38.72] as band keywords. When we say
+[32:40.88] super.init,
+[32:42.40] it is basically inheriting all the
+[32:44.08] characteristics from the agent
+[32:45.60] middleware. And then we are initializing
+[32:47.84] the band keywords with respect to all
+[32:49.60] the bands keywords that we have defined
+[32:51.28] in the top. Right? Then we are going to
+[32:55.20] go ahead and add this hook hook config
+[32:57.60] before the agent. Right? If you really
+[32:59.36] want to add this entire content filter
+[33:02.80] metadata, what we are basically going to
+[33:04.64] do, we'll define this before agent which
+[33:06.96] is a inbuilt method. Okay, here we are
+[33:09.84] going to use the agent state. This agent
+[33:11.76] state will be having the reference of
+[33:13.36] the entire agent along with the runtime.
+[33:16.16] Okay, I'll say if not state of message
+[33:18.64] return none otherwise just take the
+[33:20.24] first message and display it. If the
+[33:22.00] first message is not equal to human,
+[33:23.92] then it is a none. Okay, then let's say
+[33:27.44] if it is a human, we'll just going to
+[33:29.12] make that message to lower and we are
+[33:31.36] going to check whether it is matching
+[33:33.12] the uh band keywords or not. Okay, for
+[33:36.16] keywords in self.band keywords if
+[33:37.84] keyword in content here we'll be able to
+[33:39.84] see that I cannot process this request
+[33:42.00] containing impropriate content and then
+[33:43.76] we finally jump to the end. We just
+[33:46.48] returning this entire message uh
+[33:48.56] whenever there is a band keyword that is
+[33:50.24] available. Okay. And similarly we can go
+[33:52.40] ahead and create a tools. And now we go
+[33:54.88] ahead and create an agent. We write GPT4
+[33:58.08] model. We have integrated a tool. Now
+[34:00.40] you can see in the middleware we using
+[34:02.32] this content filter metadata. Sorry
+[34:05.28] content filter u middleware and the band
+[34:08.64] keywords we have passed it over here.
+[34:10.64] Right? And then this entire agent will
+[34:12.96] get created. It's very simple. You go
+[34:15.12] ahead and create your uh middleware over
+[34:18.00] here. you define whatever things it
+[34:19.76] really wants to do before by using this
+[34:21.76] hook_config and here we are saying that
+[34:24.48] whenever this is triggered you just need
+[34:26.00] to jump to the end okay and here you'll
+[34:28.64] be able to see content filter agent
+[34:30.08] created now let's go ahead and try this
+[34:33.12] okay here I'm saying what is machine
+[34:35.04] learning so whether this needs to be
+[34:36.88] blocked or this needs to be it's it is a
+[34:39.68] safe request right uh this is not a bad
+[34:42.08] request because here you can see that it
+[34:43.84] is not matching any of this keywords and
+[34:46.32] then you are able to get the entire and
+[34:48.00] information. Let's say for an unsafe
+[34:50.24] request, how should we basically go
+[34:52.16] ahead and do it? Right? How do I hack
+[34:54.24] into a server, right? And this is an
+[34:56.88] unsafe request response. See, block
+[34:58.72] keyword detected hack, unsafe request
+[35:01.44] response, and I cannot process requests
+[35:03.44] containing this. Please rephrase your
+[35:04.96] request. Right? So, I hope you have got
+[35:07.60] an idea right how before agent we can
+[35:09.92] basically apply by using this
+[35:11.28] hook_config and here we have defined
+[35:13.68] before agent. Similarly the same thing
+[35:15.92] you can also do it for after underscore
+[35:17.60] agent after an agent hook. Uh this is
+[35:20.24] basically used for model based safety
+[35:22.00] evaluation compliance scanning like
+[35:24.08] legal medical financial disclaimer
+[35:26.08] quality validation removing sensitive
+[35:27.92] info that slipped through. So this
+[35:29.76] basically can be applied after your AI
+[35:32.80] agent is basically giving the output and
+[35:34.72] just go ahead and see this. We have
+[35:36.16] created safety guardrails again. We are
+[35:38.16] inheriting agent middleware here. We are
+[35:40.32] inheriting this right. We have used a
+[35:42.24] safety model called as chat open AI hook
+[35:44.64] config again we have used right here we
+[35:47.12] are saying this okay we are just
+[35:48.96] evaluating with the help of prompt
+[35:50.40] evaluate if this AI response is safe
+[35:52.48] appropriate for users and then finally
+[35:55.04] we get it if it is unsafe then we
+[35:57.44] finally get as none right otherwise
+[35:59.68] it'll just go ahead and flag it again
+[36:01.76] you can go ahead and check it guys it's
+[36:03.12] almost similar I will keep that to you
+[36:05.44] so afterward safety can agent created
+[36:08.24] now if I go ahead and see what is the
+[36:09.76] weather like today. Okay. Then it is
+[36:12.80] just going to directly give you the
+[36:14.00] output. Okay.
+[36:16.40] Please let me know if there is any
+[36:17.76] specific information you'd like to know.
+[36:19.76] Here nothing is happening. But if I go
+[36:21.76] ahead and check the output safety check
+[36:23.20] what is the weather like today or you
+[36:25.12] try to put some other messages over here
+[36:27.12] then you should be also able to check
+[36:28.88] the output safety. Okay. I'll delete
+[36:31.20] this. This is repeated one. So I hope
+[36:33.52] you have understood this. uh if I talk
+[36:36.96] about this one custom guardrail custom
+[36:39.28] guardrail can be applied before the AI
+[36:43.84] agent execution here or after here right
+[36:47.20] so before agent after agent right and we
+[36:51.04] have used something called as hook right
+[36:53.76] so with respect to that we'll be able to
+[36:55.68] see it now finally guys we'll go to the
+[36:57.68] section seventh layered or combined
+[36:59.60] guardrails okay here you can stack all
+[37:02.08] the middle wares one by one let's Okay,
+[37:04.72] for the layer 1 I use content filter
+[37:06.72] middleware then PIM middleware for the
+[37:09.36] layer 2 in the human in the loop
+[37:10.88] middleware layer three four. So here you
+[37:13.52] can see right I have three tools search
+[37:15.04] tool send email and here one by one we
+[37:17.84] have added it content filter metadata
+[37:20.24] middleware and then PII middleware two
+[37:23.20] okay then human in the loop middleware
+[37:25.52] this you can go ahead and check it out
+[37:26.88] and finally for the model based output
+[37:29.28] safety you can use safety guard
+[37:30.88] middleware
+[37:32.56] and finally one more bonus that I've
+[37:34.32] actually given uh it is in the section 8
+[37:37.12] real world use cases healthcare chatbot
+[37:39.04] we have created this okay you just go
+[37:41.04] ahead and explore it Okay, I want you
+[37:43.44] all to explore it. Um, this is a very
+[37:45.92] good project uh that has been created
+[37:48.08] and here you can also see the output how
+[37:50.08] it has basically come up, right? Just
+[37:52.00] try to understand it how we have
+[37:53.44] combined all the middle wares properly.
+[37:55.60] Right? Then I'll make a separate video
+[37:58.56] where I discuss about this healthcare
+[38:00.24] chatbot. Okay? But that will be in the
+[38:02.24] later stages. First of all, you try to
+[38:03.76] understand it then I'll try to create
+[38:05.36] it. Okay? Uh but I hope you have
+[38:07.68] understood about this particular video.
+[38:09.84] Uh this was it from my side. I'll see
+[38:11.84] you in the next video. Have a great day.
+[38:13.28] Thank you and all. Take care.

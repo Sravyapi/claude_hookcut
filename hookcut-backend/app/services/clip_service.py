@@ -8,7 +8,6 @@ from sqlalchemy.orm import Session
 from app.exceptions import (
     InvalidStateError,
     InvalidURLError,
-    SessionNotFoundError,
     UserNotFoundError,
 )
 from app.models.session import AnalysisSession, Short
@@ -95,6 +94,19 @@ class ClipService:
             is_watermarked = True
             credits_source = "free"
 
+        # Copy interview mode data from linked AI session if available
+        interview_mode = False
+        speaker_count = None
+        diarization_data = None
+        transcript_text = None
+        if request.ai_session_id:
+            ai_session = db.get(AnalysisSession, request.ai_session_id)
+            if ai_session and ai_session.interview_mode:
+                interview_mode = True
+                speaker_count = ai_session.speaker_count
+                diarization_data = ai_session.diarization_data
+                transcript_text = ai_session.transcript_text
+
         session = AnalysisSession(
             user_id=user_id,
             youtube_url=request.youtube_url,
@@ -108,6 +120,10 @@ class ClipService:
             minutes_charged=0.0,
             credits_source=credits_source,
             is_watermarked=is_watermarked,
+            interview_mode=interview_mode,
+            speaker_count=speaker_count,
+            diarization_data=diarization_data,
+            transcript_text=transcript_text,
         )
         db.add(session)
         db.flush()  # Get session.id

@@ -1,0 +1,235 @@
+[0:00.24] I have just opened my Gemini code assist
+[0:03.12] and it is giving you the features that
+[0:04.80] Gemini code assist can do that is
+[0:08.08] generate code and test your project
+[0:10.80] provide guidance on what you're trying
+[0:12.32] to do with your code
+[0:15.12] use context from your local codebase
+[0:17.36] explain the code to you show code
+[0:19.44] suggestions and completions find bugs
+[0:21.68] and suggest fixes.
+[0:24.40] So these are the things that your Gemini
+[0:26.16] code assist can do.
+[0:29.20] So now I'm just trying to put my idea in
+[0:31.28] here.
+[0:32.96] I've refined my idea a little bit here
+[0:35.20] because I want to get better input.
+[0:39.12] Now you can also give your ideas in raw
+[0:41.36] natural language. By the way, there's
+[0:43.36] something called prompt engineering
+[0:44.80] where you give better prompts. You try
+[0:46.80] to give the AI tool a clearer idea of
+[0:48.72] what you want to do. It will give you
+[0:50.72] better results.
+[0:53.04] So I have another idea here where I'm
+[0:54.80] saying, "Hey, I was thinking about
+[0:56.00] creating a water reminder app.
+[0:59.28] That's really essential these days. It's
+[1:02.16] summer now.
+[1:04.40] The idea is pretty simple. It will
+[1:07.20] remind you to drink water throughout the
+[1:08.96] day, kind of like an alarm.
+[1:12.16] Here's how I picture it. You should be
+[1:14.96] able to set reminders to go off every
+[1:16.96] hour or however often you need them.
+[1:21.36] And when it's time to drink water, the
+[1:23.12] app will. I'll just customize this as a
+[1:25.84] web app since we're not making a mobile
+[1:27.68] app.
+[1:30.00] I'm just helping the AI understand what
+[1:31.92] I'm trying to do. If I just say app, I'm
+[1:34.56] giving an ambiguous statement. So, the
+[1:37.04] AI might wonder whether it's a web app
+[1:38.88] or a mobile app and will respond based
+[1:41.04] on its own understanding.
+[1:44.16] The web app will send a notification or
+[1:46.32] play a little alarm to remind you.
+[1:49.44] You can even choose the sound or make it
+[1:51.20] vibrate, whatever works best for you.
+[1:54.72] Users can log their water intake as they
+[1:56.80] go. They can enter how much they've
+[1:59.12] drunk manually or just pick from the
+[2:01.04] preset values,
+[2:03.44] and it would be nice if the reminders
+[2:05.12] could be customized. You can pick
+[2:07.52] different sounds or even have different
+[2:09.28] notifications for each reminder.
+[2:12.48] The app could also track your progress
+[2:14.24] throughout the day, showing how much
+[2:16.16] water you've drunk compared to your
+[2:17.68] goals.
+[2:19.92] I'm saying that it's a super simple
+[2:21.44] idea, but I've given my AI a lot of
+[2:23.20] functionalities to create it, but I
+[2:25.12] think it would be really helpful to keep
+[2:26.64] people hydrated and it wouldn't be too
+[2:28.56] annoying.
+[2:30.64] Just a gentle reminder here and there.
+[2:33.60] Okay, this is what I'm trying to get at.
+[2:36.88] So, let me see what Gemini Code Assist
+[2:38.80] will give me.
+[2:41.28] It's working on my prompt.
+[2:44.96] It says, "This sounds like a fantastic
+[2:46.80] and genuinely useful idea.
+[2:50.00] Keeping track of hydration is important,
+[2:52.32] and a simple, gentle reminder app could
+[2:54.48] definitely help people stay on top of
+[2:56.16] it."
+[2:58.08] Okay, so now it's trying to break down
+[3:00.16] my idea. So, it's trying to create a
+[3:02.40] front end for me. And the front end will
+[3:04.48] have my HTML,
+[3:06.72] CSS, and JavaScript.
+[3:09.68] My HTML is just going to have the
+[3:11.44] structure of the content where it tells
+[3:13.12] me that it will have buttons for
+[3:14.40] logging, input for settings, and then a
+[3:16.48] display for progress and then CSS to
+[3:18.48] style the app and make it look nice and
+[3:20.08] then it says that you have your
+[3:21.12] JavaScript.
+[3:23.36] This will be the engine of your app. It
+[3:25.60] will handle setting and managing timers,
+[3:28.24] triggering notifications, handling user
+[3:30.64] inputs, logging water and changing
+[3:32.72] settings, calculating and displaying
+[3:34.72] progress, saving users data, etc.
+[3:40.40] And then we have timer scheduling where
+[3:42.32] it's also giving me the functions that
+[3:43.92] it's using
+[3:46.24] like it's using the set interval
+[3:48.00] function in your JavaScript to
+[3:49.36] periodically check if the reminder is
+[3:51.28] due based on the user settings
+[3:54.56] and then it's also checking for
+[3:55.92] notifications.
+[3:59.04] So logging water intake progress
+[4:00.96] tracking data storage.
+[4:04.08] So based on the prompt or the idea I
+[4:06.16] gave, it has properly understood what
+[4:08.08] needs to be done. It's creating a web
+[4:10.08] app for me that has the front-end HTML
+[4:12.32] CSS and also JavaScript which will make
+[4:14.80] the app a bit interactive for us for
+[4:16.88] setting alarms, logging water intake and
+[4:18.88] getting reminders as well.
+[4:22.48] So here is the example structure.
+[4:26.40] You have your HTML file and then you
+[4:28.40] have your script.js.
+[4:30.40] So the current intake goal intake
+[4:32.56] progress bar it has included so many
+[4:35.04] things and you're setting the variables
+[4:37.36] and the functions are given to load
+[4:39.20] state
+[4:41.04] even if you are new to JavaScript or any
+[4:43.12] programming language you can just type
+[4:44.88] here
+[4:46.88] okay say for example I haven't
+[4:49.36] understood what load state does so I'm
+[4:51.52] just saying that
+[5:08.56] What does the function load state do? So
+[5:10.96] let me see what it gives me.
+[5:17.12] So it understood that I meant load
+[5:18.80] state, not load date.
+[5:22.48] Okay, so let's break down the load state
+[5:24.80] function for the water app, right? So
+[5:28.32] it's giving me comments.
+[5:31.04] In the comments, it's telling me what
+[5:32.64] each line is doing.
+[5:36.08] So the first thing we're doing is trying
+[5:37.68] to retrieve save data from the browser's
+[5:39.44] local storage. And if there's anything
+[5:41.44] saved, then you're parsing that into a
+[5:43.36] JSON string and making sure the key
+[5:45.04] values are correct.
+[5:47.44] Then you're checking if it's a new day
+[5:49.04] to reset the water intake count. If the
+[5:51.84] last saved date isn't today, reset the
+[5:54.24] current water.
+[5:56.64] So basically, it's trying to check if
+[5:58.48] the save data is in local storage or
+[6:00.32] not. If it's a new day, then it has to
+[6:02.88] reset the value. So that's what it's
+[6:04.64] trying to do. And it's giving me an
+[6:07.04] explanation of exactly what it's trying
+[6:08.88] to do.
+[6:11.60] So essentially it's responsible for
+[6:13.68] initializing the app state either from
+[6:15.60] previously saved data or by starting
+[6:17.92] fresh for a new day.
+[6:21.76] So let me just see how it works.
+[6:27.20] So I'll just copy and paste the files
+[6:29.12] that are there.
+[6:31.36] I'll create a file here called
+[6:32.80] index.html.
+[6:39.04] So, it's creating a file for me.
+[6:43.52] So, I'm pasting it here.
+[6:46.64] I've saved it. Now, I'll go to CSS file.
+[6:52.08] No, it doesn't have any CSS file.
+[6:55.60] I'll go to the JavaScript file here.
+[6:58.72] Okay. And it is important to save it as
+[7:00.96] script.js. So, the file name is
+[7:03.28] script.js specifically.
+[7:13.60] So, it's created. So, I'm pasting that
+[7:15.44] here, saving it, analyzing script.js and
+[7:18.32] its dependencies. It'll take a while.
+[7:23.36] So, in no time, it created almost 177
+[7:26.48] lines of code for me.
+[7:29.60] If you try to create it manually, it's
+[7:31.52] going to be a bit difficult.
+[7:34.32] Maybe it'll take two or three hours even
+[7:36.24] for pro programmers.
+[7:40.96] Since we didn't have any CSS file, you
+[7:43.44] can just see a plain web page here.
+[7:47.60] So today's progress 0 millilit to 2,000
+[7:50.48] ml.
+[7:56.64] I'm just adding this setting a reminder
+[7:58.48] for myself at let me check for one
+[8:00.40] minute. Let me see what it gives me.
+[8:04.40] Okay, the daily goal is just 2,000.
+[8:06.40] Let's keep it as default gentle tone.
+[8:08.40] Okay, and save settings.
+[8:12.48] Okay, so I've set it to remind me every
+[8:14.40] 10 minutes and then a gentle tone. And
+[8:17.12] this app will remind me every 10 minutes
+[8:19.04] that I have to drink water.
+[8:22.08] Right now, I can just say the app is
+[8:27.84] dairy plane. provide me a CSS that will
+[8:30.24] help me beautify the look of my water
+[8:32.16] reminder.
+[8:33.92] Let's see what it gives.
+[8:36.40] So, it gave me a CSS file for
+[8:38.32] everything.
+[8:40.24] And it's asking me to add this line in
+[8:42.16] my HTML file. So, let me just go ahead
+[8:45.12] and add this line in my HTML file.
+[8:48.72] It already has style.css, but it didn't
+[8:51.52] generate my style.css.
+[8:54.88] Okay. So, I'm just removing this. No
+[8:56.72] change here.
+[8:58.88] So I will just add one stack CSS
+[9:06.56] and then let me just copy and paste
+[9:08.64] style.css
+[9:15.84] so you can see exactly how it has
+[9:17.76] customized the styles it provided.
+[9:21.36] So you can explore more of the
+[9:22.88] functionality with the help of your
+[9:24.32] script.js file. You can try to
+[9:27.44] understand tell your AI tool to try to
+[9:29.44] explain each and every functionality and
+[9:31.60] you can customize it based on exactly
+[9:33.36] what you're trying to achieve. If you
+[9:35.68] enjoyed this video, you can enroll in
+[9:37.60] Greatle Learning Academy for free.
+[9:39.44] Choose from hundreds of courses across
+[9:41.36] multiple domains and earn a certificate
+[9:43.44] of completion along the way. And if you
+[9:45.52] want to take it a step further, you can
+[9:47.12] try Greatlearning Academy Pro Plus with
+[9:49.44] a free trial. It provides access to
+[9:51.68] additional premium courses with more
+[9:53.60] advanced content from distinguished
+[9:55.36] faculty along with features like guided
+[9:57.60] projects, a resume builder, and mock
+[9:59.76] interviews to make your learning journey
+[10:01.44] even richer. Link is in the description.

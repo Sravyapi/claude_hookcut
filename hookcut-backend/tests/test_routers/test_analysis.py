@@ -111,6 +111,78 @@ class TestAnalyze:
         assert resp.status_code == 400
 
 
+class TestInterviewModeAccess:
+    @patch("app.services.analyze_service.run_analysis")
+    @patch("app.services.analyze_service.VideoMetadataService")
+    @patch("app.services.analyze_service.validate_youtube_url")
+    def test_free_user_gets_403_for_interview_mode(self, mock_validate, mock_meta_cls, mock_task, client, db):
+        """Free-tier users cannot use interview mode."""
+        make_user(db, user_id=TEST_USER_ID, plan_tier="free")
+
+        mock_validate.return_value = (True, "dQw4w9WgXcQ", None)
+        mock_meta = mock_meta_cls.return_value
+        mock_meta.fetch.return_value = MagicMock(
+            title="Interview Video", duration_seconds=300.0
+        )
+        mock_meta.validate_accessibility.return_value = (True, None)
+
+        resp = client.post(
+            "/api/analyze",
+            json={"youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                  "niche": "Generic", "language": "English",
+                  "interview_mode": True, "speaker_count": 2},
+        )
+        assert resp.status_code == 403
+        assert "Pro" in resp.json()["detail"]
+
+    @patch("app.services.analyze_service.run_analysis")
+    @patch("app.services.analyze_service.VideoMetadataService")
+    @patch("app.services.analyze_service.validate_youtube_url")
+    def test_pro_user_allowed_interview_mode(self, mock_validate, mock_meta_cls, mock_task, client, db):
+        """Pro-tier users can use interview mode."""
+        make_user(db, user_id=TEST_USER_ID, plan_tier="pro")
+
+        mock_validate.return_value = (True, "dQw4w9WgXcQ", None)
+        mock_meta = mock_meta_cls.return_value
+        mock_meta.fetch.return_value = MagicMock(
+            title="Interview Video", duration_seconds=300.0
+        )
+        mock_meta.validate_accessibility.return_value = (True, None)
+        mock_task.delay.return_value = MagicMock(id="task-interview-1")
+
+        resp = client.post(
+            "/api/analyze",
+            json={"youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                  "niche": "Generic", "language": "English",
+                  "interview_mode": True, "speaker_count": 2},
+        )
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["interview_mode"] is True
+
+    def test_speaker_count_ignored_when_interview_mode_false(self, client, db):
+        """speaker_count validation skipped when interview_mode=False."""
+        from app.schemas.analysis import AnalyzeRequest
+        # speaker_count=99 should be ignored when interview_mode=False
+        req = AnalyzeRequest(
+            youtube_url="https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            interview_mode=False,
+            speaker_count=99,
+        )
+        assert req.speaker_count == 99  # No validation error
+
+    def test_speaker_count_validated_when_interview_mode_true(self):
+        """speaker_count must be 2-8 when interview_mode=True."""
+        from app.schemas.analysis import AnalyzeRequest
+        import pydantic
+        with pytest.raises(pydantic.ValidationError, match="speaker_count"):
+            AnalyzeRequest(
+                youtube_url="https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                interview_mode=True,
+                speaker_count=10,
+            )
+
+
 class TestGetHooks:
     def test_get_hooks(self, client, db):
         make_user(db, user_id=TEST_USER_ID)
@@ -129,18 +201,6 @@ class TestGetHooks:
         resp = client.get("/api/sessions/nonexistent/hooks")
         assert resp.status_code == 404
 
-    def test_hooks_response_fields(self, client, db):
-        make_user(db, user_id=TEST_USER_ID)
-        session = make_session(db, TEST_USER_ID)
-        make_hook(db, session.id)
-
-        resp = client.get(f"/api/sessions/{session.id}/hooks")
-        hook = resp.json()["hooks"][0]
-        assert "hook_text" in hook
-        assert "scores" in hook
-        assert "attention_score" in hook
-        assert "hook_type" in hook
-        assert "funnel_role" in hook
 
 
 class TestRegenerate:

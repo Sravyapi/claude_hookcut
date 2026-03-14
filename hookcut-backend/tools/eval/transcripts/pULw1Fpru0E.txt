@@ -1,0 +1,475 @@
+[0:01.36] [Music]
+[0:06.16] we are done with the chapter of
+[0:08.44] asymptotic notations where we discussed
+[0:11.44] different types of asymptotic notations
+[0:14.32] and the problems based on it now from
+[0:18.24] this lecture onwards we are starting a
+[0:20.88] new chapter where we will discuss how to
+[0:24.12] find the time complexity and the space
+[0:27.24] complexity of algorithms involving
+[0:30.92] Loops in this lecture we will first
+[0:34.12] understand the time complexity in great
+[0:37.40] details and then through an example we
+[0:40.44] will understand how to analyze the time
+[0:43.80] complexity of an algorithm in involving
+[0:46.76] Loops so let's get started with this
+[0:49.16] lecture and let's see what are the
+[0:52.96] topics the first topic of this lecture
+[0:55.48] is priori versus posterior analysis
+[0:59.28] recap we will first get the quick recap
+[1:02.32] of priori and posterior
+[1:05.28] analysis and then we will understand CPU
+[1:08.88] computations and Main memory space we
+[1:11.92] will understand these two terms in great
+[1:14.64] depth and then we will understand the
+[1:17.44] time complexity and finally through an
+[1:20.44] example we will understand how to
+[1:23.24] analyze an algorithm and that to an
+[1:26.28] algorithm which involves Loops so let's
+[1:29.68] get started and let's get the quick
+[1:31.72] recap of the priori versus posteriori
+[1:36.28] analysis we know the difference between
+[1:38.80] priori and posterior analysis from our
+[1:42.20] previous
+[1:43.36] chapters let's get the quick recap of
+[1:46.12] priori and posterior
+[1:48.92] analysis in case of priori analysis we
+[1:52.72] estimate time and memory space required
+[1:56.36] by an algorithm before executing it on
+[2:00.04] the system but in case of posterior
+[2:03.40] analysis we calculate time and memory
+[2:07.32] space required by an algorithm after
+[2:11.40] executing it on the
+[2:13.68] system here in case of priori analysis
+[2:17.04] we estimate time and memory space this
+[2:19.84] means we do not calculate the actual
+[2:22.48] time and memory space required by an
+[2:25.32] algorithm and we estimate time and
+[2:27.84] memory space before exit executing our
+[2:30.92] algorithm on the
+[2:32.68] system so before executing the algorithm
+[2:36.64] we estimate time and memory space it
+[2:39.96] takes in case of posterior analysis we
+[2:43.68] calculate the actual time and memory
+[2:46.00] space required by an algorithm after
+[2:48.96] executing it on the system so
+[2:51.68] posteriority analysis depends upon the
+[2:54.92] system priori analysis does not depend
+[2:57.80] upon the system because we are analyzing
+[3:00.96] the time and memory space required by an
+[3:03.84] algorithm before executing it on the
+[3:06.84] system in case of priori analysis our
+[3:10.40] focus is on priori analysis because
+[3:13.20] priori analysis is the easiest and it is
+[3:16.68] the most practical
+[3:18.60] analysis so keeping this in mind we will
+[3:21.36] use priori analysis to analyze our
+[3:24.44] algorithms now how do we estimate time
+[3:27.56] and memory space is the main question
+[3:31.00] the estimation of time is same as the
+[3:34.72] estimation of total number of CPU
+[3:38.08] computations an algorithm takes and
+[3:41.72] estimation of memory space means
+[3:45.00] estimation of main memory
+[3:47.52] space we will understand how do we
+[3:50.24] estimate main memory space later but in
+[3:53.80] this lecture we will understand how to
+[3:56.56] estimate time or in other words how to
+[3:59.28] estimate
+[4:00.40] the total number of CPU computations an
+[4:03.56] algorithm needs to
+[4:06.08] execute now what is the meaning of CPU
+[4:10.08] computations let's understand the
+[4:12.16] meaning of CPU computations and Main
+[4:15.24] memory space first after this we will
+[4:18.24] learn how to analyze an algorithm or in
+[4:21.88] other words how to estimate time and
+[4:24.96] memory space required by an algorithm so
+[4:28.88] now we will understand the meaning of
+[4:32.00] CPU computations and Main memory
+[4:36.84] space so what is the meaning of CPU
+[4:40.40] computation a CPU computation refers to
+[4:43.96] a task performed by the CPU or
+[4:47.44] instruction executed by the CPU so CPU
+[4:51.96] computation refers to a task which is
+[4:55.52] performed by the CPU at any point of
+[4:58.60] time or it refers to an instruction
+[5:01.60] executed by the CPU in simpler terms so
+[5:05.80] the meaning of CPU computation is an
+[5:08.72] instruction executed by the CPU now what
+[5:12.56] is the meaning of main memory space main
+[5:16.04] memory space is used to temporarily
+[5:19.00] store data and instructions that CPU
+[5:22.76] needs for quick access during program
+[5:27.56] execution one thing is clear that our
+[5:30.04] focus is on CPU or Central Processing
+[5:33.92] Unit whenever a CPU performs a task we
+[5:37.48] call it a CPU computation or we can say
+[5:40.88] whenever an instruction is executed by
+[5:43.52] the CPU we call it a CPU
+[5:46.64] computation and we are focusing on the
+[5:49.04] main memory space because main memory or
+[5:52.56] random access memory which we also call
+[5:54.92] RAM is required by the CPU for quick
+[5:59.16] access of the data and instructions
+[6:02.64] stored in it main memory space is of
+[6:06.60] concern to us and we are also concerned
+[6:09.92] with the total number of CPU
+[6:12.20] computations required by an algorithm so
+[6:15.96] these are the two terms which I hope are
+[6:18.72] completely clear to you the meaning of
+[6:21.24] CPU computation is an instruction
+[6:23.88] executed by the CPU and Main memory
+[6:26.84] space is the memory space required by
+[6:29.96] the CPU for quick access of data and
+[6:33.68] instructions during program
+[6:36.88] execution now as we have understood the
+[6:39.56] meaning of CPU computations and Main
+[6:41.96] memory space we are in the state to
+[6:45.36] understand the time
+[6:47.44] complexity so what is time
+[6:50.88] complexity time complexity refers to the
+[6:55.12] estimation of total CPU
+[6:58.12] computations record IR ired to execute
+[7:01.16] an algorithm we just understood the
+[7:04.12] meaning of CPU
+[7:05.84] computations we are not bothering about
+[7:08.32] main memory space at this moment later
+[7:11.60] we will understand how to estimate main
+[7:14.48] memory space but right now our focus is
+[7:17.56] to understand the time complexity and
+[7:20.92] time complexity is the estimation of
+[7:24.20] total CPU computations required to
+[7:27.92] execute an algorithm now the main
+[7:30.56] question is how do we estimate total CPU
+[7:35.00] computations we now know time complexity
+[7:38.36] of an algorithm is equal to total number
+[7:42.00] of CPU computations but the question is
+[7:45.48] how do we know the total number of CPU
+[7:47.96] computations of an
+[7:50.24] algorithm we can calculate the total
+[7:53.12] number of CPU computations by using the
+[7:56.56] method which we call the frequ quency
+[8:00.24] count
+[8:01.52] method according to this method we
+[8:04.72] calculate the sum of frequency count of
+[8:08.80] each instruction of an
+[8:11.04] algorithm so frequency count method is
+[8:14.56] the method in which we calculate the sum
+[8:17.32] of frequency count of each instruction
+[8:20.84] of an
+[8:21.92] algorithm so total number of CPU
+[8:24.72] computations is equal to the sum of
+[8:27.80] frequency count of each instruction of
+[8:31.40] an algorithm now what is the meaning of
+[8:33.88] frequency count frequency count refers
+[8:37.48] to the number of times an instruction is
+[8:41.36] executed so in order to calculate the
+[8:44.44] time complexity of an algorithm we
+[8:47.76] calculate the sum of frequency count of
+[8:50.52] each instruction of an algorithm and
+[8:53.60] frequency count refers to the number of
+[8:56.24] times an instruction is executed so by
+[9:00.12] seeing an algorithm you can calculate
+[9:02.88] its time
+[9:04.52] complexity and now we will understand
+[9:07.64] how to do this so now we're going to
+[9:10.68] take a simple example algorithm and
+[9:14.24] through that algorithm we will
+[9:16.48] understand how to calculate the time
+[9:20.04] complexity and that to using the
+[9:22.44] frequency count method so now let's move
+[9:26.20] to the next topic where we will consider
+[9:28.68] a simple example algorithm to understand
+[9:32.08] the time complexity
+[9:34.92] properly here is the example algorithm
+[9:38.28] here I have written the algorithm in C
+[9:41.04] like syntax because C like syntax is
+[9:44.96] simpler to understand and many students
+[9:47.80] might already know C programming
+[9:50.20] language so it is my assumption that you
+[9:52.64] are familiar with at least one
+[9:54.64] programming language if not C if you
+[9:57.60] know C programming language AG then it
+[10:00.24] is great but if you don't know C
+[10:02.72] programming language you can still
+[10:04.56] follow along there is no
+[10:07.48] issue this algorithm is written in C
+[10:10.52] like syntax and I've mentioned algo here
+[10:14.28] to indicate that this is not a c program
+[10:18.44] this is an algorithm this algorithm is
+[10:23.12] non-executable this algorithm is written
+[10:25.52] for us to understand how to analyze the
+[10:28.88] time
+[10:30.16] complexity so now we are going to
+[10:32.36] analyze the time complexity of this
+[10:35.00] algorithm using the formula which we
+[10:37.12] just saw we are going to use the
+[10:40.08] frequency count method to calculate the
+[10:43.08] time complexity of this algorithm so we
+[10:46.68] will do the priori analysis of this
+[10:49.40] algorithm this means we will estimate
+[10:52.04] the time complexity of this algorithm
+[10:55.00] through the frequency count method now
+[10:57.52] let's proceed and let's do this the job
+[11:00.16] of this algorithm is to calculate the
+[11:02.60] sum of N elements of the list
+[11:06.60] a so n represents number of elements and
+[11:11.52] a represents list of n
+[11:14.84] elements here in this algorithm the
+[11:17.68] first instruction is sum equal to0 this
+[11:22.20] instruction tells CPU to assign zero to
+[11:25.24] variable sum here only one operation is
+[11:29.00] per formed hence this is just a single
+[11:31.80] instruction and this instruction is
+[11:34.16] executed only once so the frequency
+[11:38.04] count of this instruction is
+[11:40.80] one now why is that the case we know the
+[11:44.08] meaning of frequency count frequency
+[11:46.96] count refers to the number of times an
+[11:50.72] instruction is
+[11:52.72] executed this instruction is executed
+[11:56.16] once here we have just one assignment
+[11:59.88] that's it only one operation and it is
+[12:03.16] executed only once therefore the
+[12:05.76] frequency count of this instruction is
+[12:08.40] one and let's assume that one
+[12:11.56] instruction takes one unit of time
+[12:14.64] therefore this instruction takes one
+[12:17.44] unit of time now if you want to know the
+[12:20.56] time complexity of this algorithm we
+[12:23.28] need to calculate the sum of frequency
+[12:25.84] count of each instruction in this
+[12:28.48] algorithm
+[12:29.76] so let's put one here here we will
+[12:32.36] calculate the sum of frequency count of
+[12:35.52] each instruction the frequency count of
+[12:38.72] this instruction is one and this is the
+[12:41.12] reason why I have written one here now
+[12:44.24] what is the next
+[12:45.68] instruction this is the for Loop and I
+[12:49.40] hope you already know the meaning of for
+[12:51.52] Loop for Loop allows us to execute
+[12:55.40] instructions a certain number of times
+[12:59.72] this Loop will allow us to execute this
+[13:03.40] instruction which is part of the for
+[13:05.92] Loop a certain number of
+[13:08.44] times in this for Loop we have this
+[13:11.40] instruction I equal to
+[13:13.88] 1 this is an assignment instruction and
+[13:18.24] this instruction will be executed only
+[13:21.40] once because this represents the
+[13:24.28] initialization of I so clearly the
+[13:28.60] frequency count of I = 1 is 1 and
+[13:33.96] therefore the time it takes is 1 unit
+[13:38.28] and hence one can be added in this sum
+[13:42.40] now what's the next instruction the next
+[13:44.44] instruction is I less than or equal to
+[13:48.04] n what can we say about this instruction
+[13:51.80] what is the frequency count of this
+[13:55.08] instruction I want you to pause this
+[13:57.44] video and I want you think about this
+[14:00.96] what is the frequency count of this
+[14:04.12] instruction so pause the video
+[14:08.56] now I hope you're done okay so what's
+[14:12.48] the Frequency count of this instruction
+[14:15.24] the frequency count of this instruction
+[14:18.28] is n + 1 and hence it will take n+ 1
+[14:23.80] units of time now why is this the case
+[14:27.64] you might have given the answer as n and
+[14:31.32] you are quite close but n is not the
+[14:34.96] correct
+[14:36.08] answer n + 1 is the correct answer why
+[14:41.20] let's find out we know here we are
+[14:44.48] checking a condition we are checking is
+[14:47.48] I less than or equal to n if it is the
+[14:50.80] case that I is less than or equal to n
+[14:54.60] then this statement sum equal to sum +
+[14:57.60] AI will be exec Ute
+[14:59.96] it then I is incremented and the
+[15:03.32] condition is checked once again so we
+[15:05.80] know the initial value of I I is 1 one
+[15:09.20] is compared with n this is the first
+[15:12.56] condition checking first we are checking
+[15:15.28] is 1 less than or equal to n if true we
+[15:18.80] will get inside and execute the
+[15:21.00] statement then I is incremented I
+[15:23.92] becomes 2 then we will check this
+[15:26.84] condition once again is 2 less than or
+[15:29.20] equal to n this is the second condition
+[15:32.04] check then we will go inside execute the
+[15:35.52] statement I is again incremented it
+[15:38.44] becomes three then three is compared
+[15:41.64] with n this is the third time the
+[15:44.76] condition is
+[15:46.08] checked and this will continue and then
+[15:49.44] we will compare n with n eventually I
+[15:52.76] becomes n and we will compare n with n
+[15:56.84] but we know n is equal to it is not less
+[16:00.16] than n still the condition is true and
+[16:04.08] hence the statement inside the for Loop
+[16:07.16] that is Su equal to Su plus a I will be
+[16:10.24] executed and I is incremented by one we
+[16:14.12] know I is n and n ++ is equal to n + 1
+[16:19.84] so the next condition check is n + 1
+[16:23.24] less than or equal to
+[16:24.84] n can we say n + 1 is less than or equal
+[16:28.44] to n
+[16:29.88] no right n + 1 is not less than or equal
+[16:34.40] to n it is greater than n therefore at
+[16:38.64] this point this condition becomes false
+[16:41.56] hence we will go outside this
+[16:44.52] Loop we are done with this loop at this
+[16:48.44] point how many times this instruction is
+[16:51.64] executed a total of n + 1
+[16:55.72] times therefore there are n + 1
+[16:59.36] comparisons and hence we can say the
+[17:02.04] frequency count of this instruction is n
+[17:05.24] + 1 and this is the reason why this
+[17:09.04] instruction will take n + 1 units of
+[17:13.12] time so now we can add n + one here I
+[17:17.88] hope this point is clear now what can we
+[17:21.00] say about this instruction
+[17:23.68] i++ how many times do you think this
+[17:26.80] instruction will execute
+[17:29.56] let's try to understand this now this
+[17:32.68] instruction will execute based on this
+[17:36.48] condition if this condition is satisfied
+[17:39.68] this means if this condition is true
+[17:42.16] then this instruction will execute if
+[17:45.20] this condition is false then this
+[17:47.36] instruction will not execute why am I
+[17:50.20] saying this let's now try to understand
+[17:53.12] this the initial value of I is 1 let's
+[17:56.92] say 1 is less than n this condition is
+[17:59.80] true if this condition is true we will
+[18:02.88] go inside the for Loop and execute the
+[18:05.64] statement after execution of the
+[18:08.36] statement I ++ will execute so it is
+[18:12.60] clear when this condition is satisfied
+[18:16.04] i++ will
+[18:17.68] execute but what when this condition
+[18:20.68] becomes false if this condition is false
+[18:24.64] then this statement sum equal to sum
+[18:26.72] plus AI will not execute and hence this
+[18:30.56] instruction will also not execute
+[18:33.04] because i++ can only execute after
+[18:37.12] execution of the
+[18:39.00] statement so one thing is clear that
+[18:42.16] when this condition is true I ++ will
+[18:45.48] execute if this condition is false then
+[18:48.52] i++ will not
+[18:50.84] execute now let's use this idea to
+[18:54.24] understand how many times this
+[18:56.36] instruction will execute the initial
+[18:59.32] value of I is 1 and I'm assuming 1 is
+[19:02.16] less than n therefore the condition is
+[19:05.04] true after execution of the statement I
+[19:08.68] is incremented by 1 this means I ++ is
+[19:13.24] executed for I =
+[19:16.44] 1 after execution of this instruction I
+[19:20.08] becomes 2 after I becomes 2 this
+[19:24.28] condition will again
+[19:25.92] checked let's say 2 is also less than n
+[19:29.28] the condition is once again satisfied as
+[19:32.12] this condition is satisfied I ++ will
+[19:35.76] definitely execute so for I equal to 2
+[19:40.24] also this instruction will
+[19:43.16] execute what about I = to 3 let's say
+[19:46.60] for I equal to 3 also this condition is
+[19:48.76] true then it is surely the case that I
+[19:52.08] ++ will execute and hence for I = 3 also
+[19:56.88] I ++ will execute
+[19:59.80] similarly for i = 4 also this
+[20:02.68] instruction will execute again assuming
+[20:05.24] the same thing that 4 is less than n now
+[20:08.84] let's say this process continues up to I
+[20:11.84] = to n when I becomes n then n is
+[20:17.20] compared with n as this condition is
+[20:20.68] satisfied I ++ will again execute
+[20:24.44] therefore for I = 1 to n this in
+[20:28.68] instruction will definitely execute
+[20:31.76] after I equal to n this instruction will
+[20:34.08] execute and hence I becomes n + 1 we
+[20:37.88] know that this condition will be checked
+[20:40.48] once again for I = to n + 1 but this
+[20:44.32] time this condition is not satisfied
+[20:46.84] because n + 1 is neither less than n nor
+[20:49.76] it is equal to n as we know the
+[20:53.20] condition is not satisfied therefore I
+[20:56.36] ++ will not execute this time so for i =
+[21:00.60] n + 1 this instruction will not execute
+[21:04.56] only for i = 1 up to n this instruction
+[21:10.00] will
+[21:10.84] execute and this clearly shows that i++
+[21:14.88] will execute n times not n + 1 times
+[21:20.20] hence the frequency count of this
+[21:22.80] instruction is n and the amount of time
+[21:25.88] this instruction will take is n n
+[21:29.96] units so now we got to know that this
+[21:33.88] instruction will take n units of time so
+[21:37.88] now we can add in here for this
+[21:41.08] instruction now what about this
+[21:43.08] statement sum equal to sum plus
+[21:46.44] AI this is one statement but in this
+[21:50.12] statement we have a total of two
+[21:53.28] instructions here we are performing the
+[21:55.44] addition operation and we are also
+[21:58.72] assigning the result of sum plus AI to
+[22:02.52] sum so there are a total of two
+[22:05.68] instructions now how many times do you
+[22:08.32] think this statement will
+[22:10.32] execute this entire statement will
+[22:12.88] execute n times because of the same
+[22:15.96] reason which we saw in case of I
+[22:19.48] ++ the execution of this statement also
+[22:22.96] depends upon this
+[22:24.76] condition hence when this condition is
+[22:28.20] true then this statement will execute
+[22:30.80] when this condition is false then this
+[22:32.80] statement will not execute so it is
+[22:35.12] clear the number of times this statement
+[22:37.44] will execute is also
+[22:40.92] n but here we have a total of two
+[22:43.68] instructions therefore the total time
+[22:46.12] required to execute the statement is 2N
+[22:51.20] units the frequency count of the
+[22:53.88] statement is 2
+[22:55.64] N so now we can add 2 N here here as
+[22:59.32] well now what can we say about this
+[23:01.76] statement return sum this is just one
+[23:05.24] instruction and hence it will take one
+[23:07.96] unit of time so we can add one here for
+[23:11.28] this
+[23:12.56] instruction now here we can calculate
+[23:15.24] the total frequency count of this
+[23:19.20] algorithm this is equal to 4n + 4
+[23:23.76] because 2 n + n + n is equal to 4N
+[23:28.68] 1 + 1 + 1 + 1 is equal to 4 so we got 4
+[23:33.52] n + 4 as 4 n is the dominating term
+[23:38.60] therefore big of n is the time
+[23:42.60] complexity of this
+[23:45.12] algorithm we can use different notations
+[23:47.96] here to represent the time complexity
+[23:51.08] but I'm using the biger notation which
+[23:53.24] is also correct so the time required to
+[23:56.88] solve this algorithm is Big of n which
+[24:00.36] is the linear time as the size of the
+[24:04.28] input grows the time required to solve
+[24:07.68] this algorithm grows
+[24:10.00] linearly it is Big go of
+[24:13.32] n now we know what is the time
+[24:15.96] complexity of this algorithm and we got
+[24:18.56] to know this by knowing the frequency
+[24:21.20] count of each instruction of the
+[24:23.88] algorithm in this way we can calculate
+[24:26.56] the time complexity of any algorithm so
+[24:30.08] I hope the idea is completely clear with
+[24:33.68] this we are done with all the topics of
+[24:36.40] this lecture and hence we are done with
+[24:38.68] this
+[24:39.40] lecture okay friends this is it for now
+[24:42.76] thank you for watching this presentation
+[24:44.88] I will see you in the next one
+[24:47.92] [Applause]
+[24:50.11] [Music]

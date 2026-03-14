@@ -1,0 +1,201 @@
+[0:00.48] In this presentation, we will understand
+[0:03.44] hybrid inheritance in C++. So without
+[0:07.28] any further delay, let's get started
+[0:08.96] with this lecture and let's see what are
+[0:11.12] the topics.
+[0:12.88] The first topic is introduction to
+[0:14.96] hybrid inheritance. First I will
+[0:17.52] introduce you to hybrid inheritance.
+[0:20.72] Then we will move to the next topic
+[0:22.56] where with the help of an example
+[0:24.64] program we will understand how to
+[0:27.20] implement hybrid inheritance in C++. So
+[0:31.60] these are the topics of this lecture.
+[0:34.08] Let's start with the first one.
+[0:35.68] Introduction to hybrid inheritance.
+[0:39.04] As the name itself suggests hybrid
+[0:42.00] inheritance is the combination of two or
+[0:45.04] more types of inheritance in a single
+[0:48.48] program.
+[0:50.24] So with the help of hybrid inheritance,
+[0:53.20] it is possible to combine two or more
+[0:56.16] types of inheritance
+[0:58.96] and this allows modeling complex real
+[1:02.72] world relationships properly.
+[1:05.60] So this is what hybrid inheritance is.
+[1:08.88] Now to properly understand these points,
+[1:11.84] let's consider one scenario.
+[1:15.12] Let's say we have this hierarchical
+[1:17.76] inheritance where classes B and C are
+[1:21.28] inheriting from the class A.
+[1:24.48] Now let's imagine that we want to
+[1:26.56] combine this specific inheritance with
+[1:29.60] this inheritance. Here we have multiple
+[1:32.48] inheritance where class D is inheriting
+[1:35.44] from both these classes B and C.
+[1:40.08] As the result of the combination we will
+[1:42.80] get this hybrid inheritance where class
+[1:46.32] D is inheriting from classes B and C and
+[1:49.84] classes B and C are inheriting from the
+[1:52.64] class A. Indirectly class D is also
+[1:57.20] inheriting from class A. This is
+[2:00.48] possible with the help of hybrid
+[2:03.12] inheritance.
+[2:04.64] So one thing is clear with the help of
+[2:07.44] hybrid inheritance we can combine two or
+[2:10.88] more types of inheritance in a single
+[2:13.60] program and this allows us to model
+[2:16.56] complex relationships like this. Now
+[2:20.24] let's consider one more scenario to make
+[2:22.32] this more clear. Here we have single
+[2:25.20] inheritance where class B is inheriting
+[2:27.84] from class A. Also let's say we want to
+[2:31.68] combine the single inheritance with this
+[2:34.64] multiple inheritance where class D is
+[2:38.08] inheriting from classes B and C. As the
+[2:42.08] result of combination we will get this
+[2:44.48] output which is this hybrid inheritance.
+[2:47.92] Here we have class D inheriting from
+[2:50.48] classes B and C and class B is
+[2:53.44] inheriting from class A. So indirectly
+[2:56.72] class D is inheriting from class A.
+[3:00.80] This is hybrid inheritance.
+[3:03.52] Now I hope these points are completely
+[3:05.76] clear to you. With the help of hybrid
+[3:08.16] inheritance we can model complex real
+[3:11.60] world relationships.
+[3:13.76] With this we have understood the basics
+[3:16.00] of hybrid inheritance. This means we are
+[3:19.28] done with the first topic. Now let's
+[3:21.60] move to the second topic where with the
+[3:23.52] help of an example program we will
+[3:26.16] understand how to implement hybrid
+[3:28.72] inheritance in C++.
+[3:33.04] Let's say we want to write program for
+[3:35.60] this specific relationship. Here we can
+[3:38.48] observe we have the combination of two
+[3:41.20] types of inheritance.
+[3:43.76] We have single inheritance where class
+[3:46.40] student is inheriting from the class
+[3:48.64] person. So student is a person
+[3:52.88] and we also have multiple inheritance
+[3:55.84] where class student leader is inheriting
+[3:58.88] from the classes student and sports. So
+[4:02.48] we can say student leader is both a
+[4:06.08] student and a sports person.
+[4:09.92] Now we want to write the program for
+[4:12.08] this specific hybrid inheritance.
+[4:15.60] This can be done like this. Here I have
+[4:18.88] written the program for this specific
+[4:21.28] hybrid inheritance.
+[4:23.68] Here in the diagram we can observe that
+[4:26.24] the class person is not inheriting from
+[4:29.68] any class. So we need to define it as
+[4:33.44] the normal class. Here I have defined
+[4:36.00] the class person with the public member
+[4:38.08] function get info that allows us to
+[4:41.12] display I am a person.
+[4:44.88] Then we need to define the class student
+[4:46.96] which is inheriting from the class
+[4:48.88] person. Here I have defined this class
+[4:51.52] student which is inheriting from the
+[4:54.32] class person. And here we have the
+[4:56.88] public inheritance. This means this
+[4:59.84] public member function is also treated
+[5:02.64] public in this class.
+[5:05.12] Also this class has its own public
+[5:07.20] member function study that allows us to
+[5:09.52] display I am studying. I hope up to this
+[5:13.84] point the program is clear to you.
+[5:17.20] After this we have the class ports which
+[5:20.32] is not inheriting from any other class.
+[5:23.20] So we define it as the normal class like
+[5:26.00] this. Here I have defined the class
+[5:28.80] ports with public member function play
+[5:31.52] that allows us to display I play in the
+[5:34.64] college sports team.
+[5:37.20] Then after this at the end we have the
+[5:40.08] class student leader which is inheriting
+[5:43.12] from both these classes student and
+[5:46.16] sports. Exactly this is what I have
+[5:48.72] mentioned here. This is the program I
+[5:51.52] have written for the purpose of student
+[5:53.60] leader. Here is the class student leader
+[5:56.56] which is inheriting from both these
+[5:58.72] classes student and sports.
+[6:03.20] And here also we have public inheritance
+[6:05.84] for both these classes. This means this
+[6:10.08] class has access to all these public
+[6:13.68] member functions and they are still
+[6:16.24] public in this class. Now why am I
+[6:19.52] saying this?
+[6:21.44] Let's understand this properly. We know
+[6:23.92] that class student is inheriting from
+[6:26.40] the class person. Therefore, this class
+[6:29.20] student has access to this public member
+[6:31.52] function get info. It also has its own
+[6:35.04] public member function study. So, it has
+[6:38.00] access to both these public member
+[6:40.08] functions.
+[6:41.84] Now here we can observe this class
+[6:44.64] student leader is directly inheriting
+[6:48.16] from the class student
+[6:51.04] and therefore it is also indirectly
+[6:54.08] inheriting from the class person and
+[6:56.96] this is the reason why it has the access
+[6:59.84] to both these functions. I hope this is
+[7:02.88] clear to you. These functions are still
+[7:06.16] public in this class because of this
+[7:09.04] public access specifier.
+[7:11.52] Also, this class is inheriting from the
+[7:14.32] class sports. Therefore, this class has
+[7:17.44] the access to this public member
+[7:19.28] function. And this is the reason I have
+[7:22.24] mentioned before that this class has
+[7:25.12] access to all these public member
+[7:27.68] functions. Therefore, it is possible to
+[7:30.96] call these member functions through the
+[7:33.36] object of this class.
+[7:36.00] This class also has its own public
+[7:38.00] member function lead that allows us to
+[7:40.32] display I am a student leader.
+[7:44.64] So with the help of this program, we
+[7:46.96] have modeled this specific relationship.
+[7:51.04] Now let's write the main function to
+[7:53.76] implement this program.
+[7:56.40] Inside the main function, we will define
+[7:58.48] the object of this class student leader.
+[8:01.60] And through that object, we will call
+[8:03.92] all these functions.
+[8:06.56] As I have mentioned this already, it is
+[8:08.72] possible to call all these functions
+[8:11.44] with the help of the object of this
+[8:13.76] class because these are public member
+[8:15.92] functions and they are all available in
+[8:18.88] this class.
+[8:20.72] Now here is the definition of the main
+[8:23.52] function.
+[8:25.04] Inside this function I have defined the
+[8:27.04] object leader of the class student
+[8:29.84] leader. And through this object I am
+[8:33.12] calling all these functions.
+[8:37.76] Now when we execute this program we will
+[8:40.24] get the output as expected. I am a
+[8:42.96] person. I am studying. I play in the
+[8:45.60] college sports team. I am a student
+[8:48.24] leader.
+[8:49.84] This output clearly shows that our
+[8:52.24] program is working correctly and
+[8:54.72] therefore we have successfully
+[8:56.48] implemented this specific relationship.
+[9:00.08] So we have implemented the hybrid
+[9:02.64] inheritance with the help of a C++
+[9:05.60] program. And now I hope it is clear to
+[9:08.40] you how to do this. With this we are
+[9:11.60] done with the second topic also. And
+[9:14.40] this means we are done with this
+[9:16.32] lecture.
+[9:17.84] Okay friends, this is it for now. Thank
+[9:20.00] you for watching this lecture. I will
+[9:22.24] see you in the next one.
+[9:28.55] [music]

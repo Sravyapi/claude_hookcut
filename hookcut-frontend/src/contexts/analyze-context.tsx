@@ -7,7 +7,9 @@ export type AnalyzeHandler = (
   url: string,
   niche: string,
   language: string,
-  meta: VideoMeta
+  meta: VideoMeta,
+  interviewMode?: boolean,
+  speakerCount?: number
 ) => void;
 
 export const AnalyzeContext = createContext<AnalyzeHandler | null>(null);

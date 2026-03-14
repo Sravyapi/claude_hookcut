@@ -6,7 +6,7 @@ from sqlalchemy import func, select, desc, and_
 from sqlalchemy.orm import Session
 
 from app.models.user import User
-from app.models.admin import AdminAuditLog, PromptRule
+from app.models.admin import PromptRule
 from app.exceptions import ResourceNotFoundError, HookCutError
 from app.llm.prompts.constants import BASE_HOOK_RULES as BASE_RULES
 

@@ -1,0 +1,281 @@
+[0:00.16] The goal of this project is to create an
+[0:02.08] intelligent system that reads a PDF
+[0:04.16] document, cleans and understands its
+[0:06.24] content, summarizes the key ideas, and
+[0:08.72] answers user questions directly from the
+[0:10.64] document text. This project focuses on
+[0:12.88] clarity, reliability, and real world
+[0:15.04] usability. Instead of complex
+[0:16.96] frameworks, we rely on simple,
+[0:18.88] transparent steps so learners can
+[0:20.88] clearly understand how document
+[0:22.72] intelligence systems work from start to
+[0:24.56] finish. Let's look at the problem
+[0:26.24] statement. Professionals often work with
+[0:28.32] large numbers of PDF documents such as
+[0:30.72] reports, policies, research papers, and
+[0:33.20] manuals. Manually reading these
+[0:35.20] documents to extract insights or answer
+[0:38.08] questions is timeconuming and
+[0:40.48] inefficient. The challenge is to build a
+[0:43.04] system that reads PDF documents
+[0:45.20] automatically, understands their
+[0:47.28] content, summarizes important
+[0:49.28] information, and answers user questions
+[0:52.00] accurately using only the document text.
+[0:54.96] This mini project solves the problem by
+[0:57.28] turning a static PDF into an interactive
+[1:00.08] knowledge source. So we are building a
+[1:02.64] system that answers questions like what
+[1:05.12] is this document about? [music] What are
+[1:06.64] the key ideas? How does the document
+[1:09.04] define a specific concept? All answers
+[1:11.60] are grounded in the PDF content. No
+[1:14.00] external knowledge is injected. The key
+[1:16.32] objective includes first PDF text
+[1:19.68] extraction. This ensures the system
+[1:21.60] works on real business and academic
+[1:23.36] PDFs. Next, text cleaning and
+[1:26.00] normalization. Clean input improves
+[1:28.24] summarization and question answering
+[1:30.00] quality. Then, semantic representation
+[1:32.96] using embeddings. This step allows
+[1:35.12] semantic understanding beyond keyword
+[1:37.28] matching. Then, document summarization.
+[1:40.48] This enables quick understanding of long
+[1:42.88] documents, then question answering over
+[1:44.96] PDF content. This transforms static
+[1:47.36] documents into interactive knowledge
+[1:49.12] systems. Finally, evaluation and logging
+[1:52.32] captures answers, confidence scores, and
+[1:55.04] quality labels. Let's begin with the
+[1:57.20] coding part. First, we have installed
+[1:59.36] the required libraries for our project.
+[2:01.60] These libraries will help us with PDF
+[2:03.44] parsing, text processing, semantic
+[2:05.84] search, summarization, and question
+[2:07.76] answering. Let's discuss one by one. Hi,
+[2:10.48] PDF for reading PDFs. Then, sends
+[2:12.96] transformers is for generating
+[2:14.32] embeddings. Then, transformers is for
+[2:16.48] summarization and question answering
+[2:18.32] models. and fiscp
+[2:20.96] is for performing fast similarity
+[2:22.72] searches. Next is importing required
+[2:25.04] libraries. Now that the dependencies are
+[2:27.12] installed, we need to import the
+[2:28.72] required libraries to work with PDFs,
+[2:31.04] embeddings and models for summarization
+[2:33.36] and question answering. Here red is the
+[2:36.48] regular expression module used for
+[2:38.64] cleaning the text. Then fiss is used for
+[2:41.68] creating the similarity search index for
+[2:43.44] embeddings. Numpy is used for handling
+[2:46.08] array operations. Then sentence
+[2:48.32] transformers for creating sentence
+[2:49.92] embeddings. The pipeline from
+[2:51.60] transformers is used for performing
+[2:53.76] summarization and question answering
+[2:55.76] with pre-trained models. With these
+[2:57.60] libraries in place, we'll move on to
+[2:59.68] loading and extracting the content from
+[3:01.84] our PDF file. Next, we'll load the PDF
+[3:04.96] file containing our content on
+[3:06.88] sustainable development and extract its
+[3:09.36] text. Here, we first set the path to the
+[3:12.08] PDF document. Next is the load PDF
+[3:14.72] function which opens the PDF file and
+[3:17.20] reads the text content from each page.
+[3:19.36] It uses Fitz's open pdf_path to load the
+[3:22.64] PDF. Then for each page, the page.get
+[3:26.24] text function is used to extract the
+[3:28.00] text. The function returns the extracted
+[3:30.24] text from all pages as a single string.
+[3:32.72] For this demonstration, I used a small
+[3:34.72] PDF with limited text. The goal of using
+[3:37.20] this small PDF is to show how the
+[3:38.96] extraction and cleaning process works.
+[3:40.96] When you're working on your own project,
+[3:42.88] it's important to use larger PDFs with
+[3:45.28] more content like reports, manuals, or
+[3:48.32] academic papers. Larger PDFs provide
+[3:51.12] richer content, which leads to better
+[3:53.36] model accuracy and more insightful
+[3:55.68] responses during summarization and
+[3:57.84] question answering. Now that we've
+[3:59.68] extracted the text, it's time to clean
+[4:01.92] and normalize it. Next, we cleaned the
+[4:04.48] extracted text by removing unnecessary
+[4:07.12] white space and formatting issues. So
+[4:09.76] here the clean text function removes
+[4:11.84] extra spaces and formats the text. Here
+[4:14.64] this resub function is used to
+[4:17.04] substitute parts of a string. We're
+[4:19.12] using this pattern which matches one or
+[4:21.60] more whites space characters. These
+[4:23.68] matched white spaces are then replaced
+[4:25.76] with a single space in the text string.
+[4:27.84] Then the strip method removes any
+[4:30.00] leading and trailing spaces from the
+[4:31.68] text, making sure there aren't any
+[4:33.36] unnecessary spaces at the beginning or
+[4:35.52] end of the string. We print the first
+[4:37.76] 300 characters of the cleaned text to
+[4:40.72] verify the cleaning process and its
+[4:42.88] total length. After applying the resub
+[4:45.20] and strip methods, we clean the raw
+[4:47.36] text, removing extra spaces and making
+[4:50.00] sure the text is properly formatted. We
+[4:52.32] print the first 300 characters of the
+[4:54.24] cleaned text to verify that the cleaning
+[4:56.64] process has worked correctly. We also
+[4:58.80] print the total length of the clean text
+[5:01.20] to confirm that it has been processed as
+[5:03.36] expected. So in the output you can see
+[5:06.08] that we print a preview of the cleaned
+[5:08.32] text along with its total length. The
+[5:10.80] text is now ready for semantic
+[5:12.40] representation. Next before proceeding
+[5:15.44] with generating embeddings we checked if
+[5:17.84] a specific keyword like sustainable
+[5:20.48] development exists in the text. Here the
+[5:23.44] search in text function searches for the
+[5:25.60] keyword in a case-sensitive manner and
+[5:27.92] prints whether it's present. Here we got
+[5:30.00] the output as keyword present equals
+[5:32.72] true which means that the word is
+[5:34.72] present in the document. In the next
+[5:36.48] step we created the embeddings for the
+[5:38.72] document. [music] In this step we will
+[5:40.80] generate embeddings for the cleaned
+[5:42.72] document text. Embeddings are numerical
+[5:45.20] representations of the text which will
+[5:47.04] be useful for search and summarization.
+[5:49.20] We use sentence transformer to encode
+[5:51.36] the clean text into embeddings. The
+[5:53.76] shape of the generated embeddings is
+[5:55.76] printed to confirm its dimensionality.
+[5:58.08] Next, we created a face index to perform
+[6:01.28] similarity searches over the document
+[6:03.44] embeddings. Here, we set up a face index
+[6:07.36] which will allow us to efficiently
+[6:09.36] perform similarity searches on the
+[6:11.36] document embeddings. FIS basically
+[6:14.16] stands for Facebook AI similarity
+[6:16.40] search. It is used for fast similarity
+[6:18.96] searches over embeddings. Here we
+[6:21.28] created an FIS index with the same
+[6:24.16] dimension as the generated embeddings.
+[6:26.16] Here phase.indexflat
+[6:28.64] ip creates an index using the inner
+[6:31.20] product similarity method and the fuz
+[6:34.00] index.add function adds the document
+[6:37.28] embeddings to the f index. Now that the
+[6:40.88] f ais index is ready, we'll move on to
+[6:44.24] summarizing the document. So for
+[6:46.24] document summarization, we used a
+[6:47.92] pre-trained model to generate a summary
+[6:49.68] of the document. We loaded a pre-trained
+[6:52.00] summarization model which is Bart using
+[6:54.80] the hugging face pipeline. Here the
+[6:57.12] summarize document function uses the
+[6:59.76] BART model to generate a summary of the
+[7:01.84] cleaned text. Then max length and min
+[7:04.72] length define the length constraints for
+[7:06.64] the summary. The summary of the document
+[7:08.48] is printed below. So with the summarized
+[7:10.88] document, we're now ready to implement
+[7:12.88] question answering. Here we've used a
+[7:15.28] pre-trained model for question
+[7:16.96] answering. The model will answer
+[7:18.40] questions based on the content of the
+[7:20.00] document. We load a pre-trained question
+[7:22.80] answering model using the hugging face
+[7:24.80] pipeline.
+[7:26.32] Here the answer question function takes
+[7:28.96] a question in the context of the
+[7:30.64] document text and uses the model to find
+[7:32.80] the answer. As you can see here, the QA
+[7:35.60] pipeline is used to generate answers to
+[7:38.00] questions. Here result answer provides
+[7:40.64] the answer and result score gives the
+[7:43.12] confidence score. We test this function
+[7:45.20] with the question what is sustainable
+[7:47.68] development and print the result. So
+[7:49.84] here we've tested it with a sample
+[7:51.44] question which is what is sustainable
+[7:53.68] development. Now that we've implemented
+[7:55.76] the question answering the next step is
+[7:58.24] to evaluate the confidence of these
+[8:00.24] answers. Now comes the evaluation and
+[8:02.48] logging part of the code. We need to
+[8:04.48] evaluate the confidence level of the
+[8:06.48] answers and log the results. Here the
+[8:09.68] evaluate answer function checks the
+[8:11.92] confidence score and classifies the
+[8:14.00] answer quality. Here you can see
+[8:16.24] confidence float. This parameter
+[8:18.48] represents the confidence score of the
+[8:20.32] answer generated by the model. The
+[8:22.08] confidence score typically ranges from 0
+[8:24.64] to one. Zero means low confidence and
+[8:27.36] one means high confidence indicating how
+[8:29.76] certain the model is about the
+[8:31.12] correctness of its answers. Here the log
+[8:33.36] result function shows that the result is
+[8:35.04] logged including the quality
+[8:36.48] classification based on confidence. The
+[8:38.72] result is logged in the evaluation log
+[8:40.88] for further review. Next we need to
+[8:43.52] answer multiple questions and log the
+[8:46.48] results. So now we answer multiple
+[8:48.96] questions from the document and log each
+[8:51.20] answer with its confidence score and
+[8:52.96] quality. We loop through a list of
+[8:55.12] questions, get answers and log them. A
+[8:57.92] list of questions is provided and the
+[9:00.08] agent answers each question using the
+[9:02.48] answer question function. Each
+[9:04.16] question's answer, confidence, and
+[9:06.48] quality are printed and logged for
+[9:08.72] further review. The confidence score
+[9:11.04] shows how strongly the model supports
+[9:13.36] the extracted answers. [music] This
+[9:15.36] output shows the model extracted a
+[9:17.68] concise definition of sustainable
+[9:19.60] development from the document while the
+[9:21.76] log confidence score indicates the
+[9:23.92] answer may be partial and should be
+[9:26.24] reviewed for expansion using additional
+[9:28.40] context. [music] Finally, we save all
+[9:31.04] our results to a JSON file. Then we'll
+[9:33.28] export the evaluation result to a JSON
+[9:35.44] file for future reference. We write the
+[9:37.60] evaluation log to a JSON file named PDF
+[9:40.80] insights results.json. A message is
+[9:43.52] printed confirming that the results have
+[9:45.52] been successfully exported. And that's
+[9:47.52] it. You've now built a system that can
+[9:49.60] read, clean, summarize, and answer
+[9:51.68] questions about a PDF document using
+[9:53.68] lang chain and pre-trained models. In
+[9:55.92] this hands-on, we successfully built a
+[9:58.24] PDF insights extractor that can read a
+[10:01.04] PDF, clean and understand its content,
+[10:03.92] generate a summary, and answer user
+[10:06.08] questions.
+[10:06.88] >> If you enjoyed this video, you can
+[10:08.56] enroll in Greatle Learning Academy for
+[10:10.56] free. Choose from hundreds of courses
+[10:12.48] across multiple domains and earn a
+[10:14.56] certificate of completion along the way.
+[10:16.56] And if you want to take it a step
+[10:17.84] further, you can try Great Learning
+[10:19.60] Academy Pro Plus with a free trial. It
+[10:22.16] provides access to additional premium
+[10:24.16] courses with more advanced content from
+[10:26.32] distinguished faculty along with
+[10:28.00] features like guided projects, a resume
+[10:30.32] builder, and mock interviews to make
+[10:32.08] your learning journey even richer.
+[10:33.39] [music] Link is in the description.

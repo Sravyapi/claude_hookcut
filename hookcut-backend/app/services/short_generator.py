@@ -10,7 +10,8 @@ from app.llm.prompts.caption_cleanup import build_caption_cleanup_prompt, build_
 from app.utils.time_format import parse_composite_timestamps
 from app.utils.ffmpeg_commands import (
     extract_segment, concat_segments, generate_ass_subtitles,
-    render_short, extract_thumbnail, probe_duration,
+    render_short, render_interview_short, extract_thumbnail, probe_duration,
+    INTERVIEW_LAYOUT_SPLIT_2, INTERVIEW_LAYOUT_SPLIT_3PLUS, INTERVIEW_LAYOUT_NORMAL,
 )
 from app.config import get_settings
 from app.exceptions import ShortGenerationError
@@ -27,6 +28,7 @@ class ShortResult:
     cleaned_captions: str
     duration_seconds: Optional[float]
     file_size_bytes: Optional[int]
+    interview_layout: Optional[str] = None
 
 
 class ShortGenerator:
@@ -56,6 +58,9 @@ class ShortGenerator:
         start_seconds: Optional[float] = None,
         end_seconds: Optional[float] = None,
         video_title: Optional[str] = None,
+        interview_mode: bool = False,
+        speaker_count: int = 2,
+        diarization_data: Optional[list[dict]] = None,
         on_progress: Optional[Callable[[str, int, str], None]] = None,
     ) -> ShortResult:
         def _progress(status: str, pct: int, label: str):
@@ -69,11 +74,11 @@ class ShortGenerator:
             # to avoid hitting Gemini concurrently with other in-flight shorts)
             _progress("downloading", 35, "Downloading segment...")
             if hook is not None:
-                segment_path = self._extract_segments(youtube_url, hook, work_dir)
+                segment_path = self._extract_segments(youtube_url, hook, work_dir, prefer_high_res=interview_mode)
             else:
                 # Manual clip: use start_seconds/end_seconds directly
                 seg_path = os.path.join(work_dir, "segment.mp4")
-                result = extract_segment(youtube_url, start_seconds or 0, end_seconds or 30, seg_path)
+                result = extract_segment(youtube_url, start_seconds or 0, end_seconds or 30, seg_path, prefer_high_res=interview_mode)
                 if not result.success:
                     raise ShortGenerationError(f"Segment extraction failed: {result.error}")
                 segment_path = seg_path
@@ -99,12 +104,18 @@ class ShortGenerator:
                         hook_text, niche, language,
                         hook.get("hook_type", "") if hook else "",
                         hook.get("attention_score", 0.0) if hook else 0.0,
+                        video_title=video_title or "",
                     )
                     cleaned_captions = caption_future.result()
                     title = title_future.result()
             else:
                 cleaned_captions = ""
-                title = f"{video_title} - Clip" if video_title else "Manual Clip"
+                # Always attempt LLM title generation — even without captions,
+                # the video title provides enough context for a good title.
+                title = self._generate_title(
+                    hook_text or "", niche, language,
+                    video_title=video_title or "",
+                )
 
             # Step 3: Signal render start
             _progress("processing", 65, "Rendering video...")
@@ -133,15 +144,68 @@ class ShortGenerator:
 
             # Step 5: Single-pass FFmpeg render
             output_path = os.path.join(work_dir, "output.mp4")
-            render_result = render_short(
-                input_path=segment_path,
-                subtitle_path=subtitle_path or "",
-                output_path=output_path,
-                watermark=is_watermarked,
-                caption_style=caption_style,
-                aspect_ratio=aspect_ratio,
-                audio_normalization=audio_normalization,
-            )
+            interview_layout = None
+
+            if interview_mode and diarization_data:
+                from app.utils.face_mapping import detect_speaker_faces
+                speaker_faces = detect_speaker_faces(segment_path, speaker_count)
+
+                # Filter diarization to only utterances within this segment's time range
+                # and adjust timestamps to be relative to segment start
+                seg_start_ms = int((start_seconds or (hook.get("start_seconds", 0) if hook else 0)) * 1000)
+                seg_end_ms = int((end_seconds or (hook.get("end_seconds", 30) if hook else 30)) * 1000)
+                segment_diarization = []
+                for u in diarization_data:
+                    u_start = u.get("start_ms", 0)
+                    u_end = u.get("end_ms", 0)
+                    # Keep if overlaps with segment
+                    if u_end > seg_start_ms and u_start < seg_end_ms:
+                        segment_diarization.append({
+                            "speaker": u["speaker"],
+                            "start_ms": max(0, u_start - seg_start_ms),
+                            "end_ms": min(seg_end_ms - seg_start_ms, u_end - seg_start_ms),
+                            "text": u.get("text", ""),
+                        })
+                logger.info(
+                    "Filtered diarization: %d/%d utterances for segment %d-%dms",
+                    len(segment_diarization), len(diarization_data), seg_start_ms, seg_end_ms,
+                )
+
+                if speaker_faces:
+                    interview_layout = INTERVIEW_LAYOUT_SPLIT_2 if len(speaker_faces) == 2 else INTERVIEW_LAYOUT_SPLIT_3PLUS
+                    render_result = render_interview_short(
+                        input_path=segment_path,
+                        subtitle_path=subtitle_path or "",
+                        output_path=output_path,
+                        speaker_faces=speaker_faces,
+                        diarization_data=segment_diarization,
+                        watermark=is_watermarked,
+                        caption_style=caption_style,
+                        aspect_ratio=aspect_ratio,
+                        audio_normalization=audio_normalization,
+                    )
+                else:
+                    interview_layout = INTERVIEW_LAYOUT_NORMAL
+                    logger.info("Face detection found no speakers — using normal render for short %s", short_id)
+                    render_result = render_short(
+                        input_path=segment_path,
+                        subtitle_path=subtitle_path or "",
+                        output_path=output_path,
+                        watermark=is_watermarked,
+                        caption_style=caption_style,
+                        aspect_ratio=aspect_ratio,
+                        audio_normalization=audio_normalization,
+                    )
+            else:
+                render_result = render_short(
+                    input_path=segment_path,
+                    subtitle_path=subtitle_path or "",
+                    output_path=output_path,
+                    watermark=is_watermarked,
+                    caption_style=caption_style,
+                    aspect_ratio=aspect_ratio,
+                    audio_normalization=audio_normalization,
+                )
             if not render_result.success:
                 logger.error(
                     "FFmpeg render failed for short %s: %s (input=%s, size=%d)",
@@ -163,6 +227,7 @@ class ShortGenerator:
                 cleaned_captions=cleaned_captions,
                 duration_seconds=render_result.duration_seconds,
                 file_size_bytes=render_result.file_size_bytes,
+                interview_layout=interview_layout,
             )
 
         except ShortGenerationError:
@@ -170,7 +235,7 @@ class ShortGenerator:
         except Exception as e:
             raise ShortGenerationError(f"Short generation failed: {e}")
 
-    def _extract_segments(self, youtube_url: str, hook: dict, work_dir: str) -> str:
+    def _extract_segments(self, youtube_url: str, hook: dict, work_dir: str, prefer_high_res: bool = False) -> str:
         """Extract segment(s) using yt-dlp. Handles composite hooks."""
         is_composite = hook.get("is_composite", False)
 
@@ -179,7 +244,7 @@ class ShortGenerator:
             segment_paths = []
             for i, (start, end) in enumerate(segments):
                 seg_path = os.path.join(work_dir, f"seg_{i}.mp4")
-                result = extract_segment(youtube_url, start, end, seg_path)
+                result = extract_segment(youtube_url, start, end, seg_path, prefer_high_res=prefer_high_res)
                 if not result.success:
                     raise ShortGenerationError(
                         f"Segment extraction failed for part {i}: {result.error}"
@@ -197,7 +262,7 @@ class ShortGenerator:
             start = hook.get("start_seconds", 0)
             end = hook.get("end_seconds", 30)
             seg_path = os.path.join(work_dir, "segment.mp4")
-            result = extract_segment(youtube_url, start, end, seg_path)
+            result = extract_segment(youtube_url, start, end, seg_path, prefer_high_res=prefer_high_res)
             if not result.success:
                 raise ShortGenerationError(f"Segment extraction failed: {result.error}")
             return seg_path
@@ -222,6 +287,7 @@ class ShortGenerator:
         language: str,
         hook_type: str = "",
         attention_score: float = 0.0,
+        video_title: str = "",
     ) -> str:
         """Use LLM to generate a catchy Short-optimized title."""
         try:
@@ -231,12 +297,24 @@ class ShortGenerator:
                 hook_text, niche, language,
                 hook_type=hook_type,
                 attention_score=attention_score,
+                video_title=video_title,
             )
             response = provider.generate(prompt, max_tokens=100)
             title = response.text.strip().strip('"').strip("'")
-            return title[:60] if title else title_from_hook_text(hook_text)
+            if title:
+                return title[:60]
+            # Fallback: use hook text or video title
+            if hook_text:
+                return title_from_hook_text(hook_text)
+            if video_title:
+                return title_from_hook_text(video_title)
+            return "Short"
         except Exception as e:
             logger.warning(f"Title generation failed: {e}")
-            return title_from_hook_text(hook_text)
+            if hook_text:
+                return title_from_hook_text(hook_text)
+            if video_title:
+                return title_from_hook_text(video_title)
+            return "Short"
 
 

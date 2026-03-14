@@ -1,0 +1,362 @@
+[0:01.36] [Music]
+[0:06.08] hello everyone welcome back in this
+[0:09.12] presentation let's see domain relational
+[0:11.60] calculus example queries in the last
+[0:15.24] presentation we have understood about
+[0:17.12] the basics of the domain relational
+[0:19.48] calculus in this presentation let's
+[0:21.96] focus on solving some queries if you are
+[0:25.32] directly watching this lecture I would
+[0:27.44] request you to watch my previous lecture
+[0:29.44] to gain better insights about the topic
+[0:32.36] anyway I will just provide a brief
+[0:34.24] introduction about this here this domain
+[0:36.72] relational calculus is a second form of
+[0:39.64] relational calculus the first form of
+[0:42.20] relational calculus is the tle
+[0:44.24] relational Calculus if we want to
+[0:46.48] compare relational calculus and
+[0:48.04] relational algebra we are sure that
+[0:50.08] relational algebra is a procedural query
+[0:52.52] language where we need to instruct what
+[0:55.20] to do also we need to instruct how to do
+[0:58.72] but relational calculus is a
+[1:00.64] nonprocedural one meaning we need to
+[1:04.00] specify what to do we need not specify
+[1:06.80] how to do when we talk about tle
+[1:08.84] relational calculus the output is taken
+[1:10.88] from the entire Tuple whereas in domain
+[1:13.64] relational calculus this operates on
+[1:16.08] domain variables I mean to say the
+[1:18.72] output of the query that we are going to
+[1:20.76] supply will be taken from the domain
+[1:24.00] attributes not from the tles I will
+[1:26.48] explain more when we solve some queries
+[1:28.76] but for now we will understand
+[1:30.00] understand the basics talking about the
+[1:32.00] domain relational calculus this is the
+[1:33.76] theoretical basis for QBE the query by
+[1:36.88] example query by example is the first
+[1:39.56] graphical query language that uses
+[1:41.68] visual tables also many graphical
+[1:44.72] front-end tools that we use today uses
+[1:47.56] the idea of QB and one more thing I
+[1:50.48] wanted to emphasize here when we say
+[1:52.88] domain relational calculus is a
+[1:54.56] non-procedural query language because
+[1:57.08] it's using the abstract approach where
+[1:58.96] we are just going to specify what to do
+[2:01.00] without specifying how to do there are
+[2:03.68] some conventions that refer
+[2:05.32] non-procedural query language as
+[2:07.48] declarative language I also would
+[2:10.12] request you to go through the rules
+[2:11.72] which we have already discussed in the
+[2:13.52] previous lecture in order to solve the
+[2:16.48] queries this is the University database
+[2:19.16] example we have already seen about this
+[2:21.40] in the schema diagrams lecture of this
+[2:23.64] chapter we need this University database
+[2:26.32] schema in order to solve the queries I
+[2:28.96] would request you to make a note of this
+[2:31.04] so that we will be able to solve the
+[2:33.00] queries accordingly at first let's dive
+[2:35.76] into example query number one the first
+[2:39.04] example is find ID name Department name
+[2:43.88] salary for instructors whose salary is
+[2:47.00] greater than
+[2:49.08] $80,000 I request you to pause this
+[2:51.44] video for a while navigate to the
+[2:53.92] University database example and find out
+[2:56.88] which table or relation has all these
+[2:59.96] four
+[3:03.40] attributes I hope you are done obviously
+[3:06.72] all these four attributes are available
+[3:09.00] in the instructor relation itself so let
+[3:11.64] me bring in the instructor relation
+[3:13.72] schema here for easy
+[3:17.56] understanding here is the schema this
+[3:20.04] instructor relation contains four
+[3:21.84] attributes ID name Department name and
+[3:24.72] salary and the query is we want to
+[3:27.16] retrieve or find all the four attributes
+[3:30.32] so this is going to be a straightforward
+[3:32.40] query the answer for this is we are
+[3:34.96] going to create four domain variables
+[3:37.16] can you see domain relational calculus
+[3:39.44] uses domain variables instead of tles so
+[3:42.36] I'm going to create domain variable I
+[3:44.52] for ID n for name d for Department name
+[3:49.44] s for salary as we are going to retrieve
+[3:52.28] all the attributes from the relation
+[3:54.68] instructor it's just going to be a
+[3:56.72] straightforward one all four variables I
+[3:59.44] mean the domain variables are created
+[4:02.00] I'm going to check if all these domain
+[4:04.04] variables are belonging to the
+[4:05.56] instructor relation if I'm going to
+[4:07.56] retrieve the information about all the
+[4:09.40] instructor we can stop up to this but
+[4:12.00] the query is we want to retrieve ID name
+[4:14.84] Department name and salary of
+[4:16.96] instructors whose drawing salary greater
+[4:19.76] than
+[4:20.48] $80,000 now see what is the domain
+[4:22.72] variable that we have created for salary
+[4:26.20] s so the condition is s greater than 8
+[4:29.72] 80,000 which is the question so all the
+[4:33.64] domain variables that are belonging to
+[4:36.04] this instructor also there is an and
+[4:39.04] condition the condition is this domain
+[4:41.44] variable salary should be greater than
+[4:44.12] 80,000 I hope the first example is clear
+[4:47.00] for you let's navigate to example number
+[4:50.44] two the question is find the instructor
+[4:53.48] ID for each instructor with a salary
+[4:56.44] greater than 80,000 in the previous
+[4:59.28] example we retriev all four attributes
+[5:02.24] so we created all four domain variables
+[5:05.04] and we displayed all four domain
+[5:06.72] variables but now we want to retrieve or
+[5:09.56] find the instructor ID for each
+[5:12.04] instructor with a salary greater than
+[5:14.96] $80,000 for this also we need the same
+[5:17.84] instructor relation that has all four
+[5:20.16] attributes ID name Department name and
+[5:23.64] salary however we are just going to
+[5:26.12] retrieve only instructor ID if we are
+[5:28.64] going to retrieve all the attributes
+[5:30.84] then we are not going to use their exist
+[5:33.08] notation since in this example we are
+[5:35.68] going to retrieve only one column or one
+[5:38.60] variable so we are going to retrieve
+[5:40.64] only one domain variable to be precise
+[5:43.16] so we need to use their exist notation
+[5:46.72] so there exist with the condition the
+[5:49.44] condition is the domain variable that we
+[5:51.24] create for salary should be greater than
+[5:54.48] $80,000 because that is what mentioned
+[5:56.80] in the question so what we are going to
+[5:58.88] retrieve here is is the instructor ID so
+[6:01.48] I'm just going to create variable domain
+[6:03.96] variable for instructor ID which is I I
+[6:07.08] means instructor ID and I'm going to use
+[6:09.76] their exist the reason is we are going
+[6:11.72] to retrieve one column or some columns
+[6:14.32] from the relation so the other columns
+[6:17.00] I'm just mentioning or other domain
+[6:18.92] variables I'm mentioning with there
+[6:20.84] exist so I'm going to retrieve
+[6:22.48] instructor ID for which I have created a
+[6:24.60] domain variable I such that there exist
+[6:28.28] n for name D for Department name s for
+[6:32.32] salary remember all these four domain
+[6:35.48] variables must belong to the instructor
+[6:37.60] relation if the question is to find the
+[6:39.84] instructor ID of all the instructors
+[6:42.00] this is enough but here we have a
+[6:44.16] condition so all these domain variables
+[6:46.72] should be belonging to the instructor
+[6:48.28] relation also the domain variable s that
+[6:51.64] we have created for salary should be
+[6:53.72] greater than 880,000 and here is the
+[6:56.56] answer for example number two if you
+[7:00.16] compare example number one and example
+[7:02.32] number two it seems similar to tle
+[7:05.08] relational calculus isn't it but what's
+[7:07.88] the difference when we write there exist
+[7:10.28] X or there exist n belong to some
+[7:13.16] relation in tle relational calculus we
+[7:15.72] actually bind it to a relation but in
+[7:17.92] domain relational calculus this is not a
+[7:19.88] tuple these are domain variables so here
+[7:23.04] domain variables are created and these
+[7:25.68] domain variables are unconstrained until
+[7:28.56] the sub formula that we create here I N
+[7:32.08] DS belongs to instructor this is the sub
+[7:34.88] formula it means this output constrains
+[7:37.80] to domain variables I hope the things
+[7:40.64] are clear to you let's move on to
+[7:42.84] example number three the question is
+[7:45.96] find the names of all instructors in the
+[7:48.56] physics department together with the
+[7:51.04] course ID of all courses the teach I
+[7:54.68] request you to pause this video for a
+[7:56.44] while and think about how many relations
+[7:59.04] are requ wi here because at times we may
+[8:02.12] see that our output may not be available
+[8:04.64] in a single relation we need to deploy
+[8:06.96] two or more relations to get an output
+[8:09.88] in this case just pause this video for a
+[8:12.00] while take this question and compare
+[8:14.52] this with the university database schema
+[8:17.00] and find out how many relations are
+[8:19.20] required here in order to solve this
+[8:21.16] question I will now display the
+[8:23.08] university database
+[8:24.88] schema here it is
+[8:29.56] I hope you are done so it is very clear
+[8:32.32] that we need to retrieve the output for
+[8:34.32] that particular query from the
+[8:36.08] instructor relation and from teachers
+[8:39.76] relation because the domain variables
+[8:42.16] whatever we need we can retrieve it from
+[8:44.80] these two relations let me go back to
+[8:47.08] the question here is the question now
+[8:49.96] let me bring in the two schemas that are
+[8:51.80] required instructor schema and the
+[8:54.32] teacher schema instructor obviously it
+[8:56.80] contains ID name Department name and
+[8:58.92] salary teachers relation actually this
+[9:01.52] is a relationship and the relationship
+[9:03.68] also is basically a relation a table so
+[9:06.16] it contains ID the ID of the instructor
+[9:09.16] the course ID the instructor has taught
+[9:11.64] section ID semester and year how to
+[9:15.04] retrieve this here is the
+[9:17.20] answer what we are going to retrieve
+[9:19.84] find the names of all instructors so
+[9:22.40] instructor names we need also we need
+[9:25.68] the course ID of all the courses that
+[9:28.20] particular instructor has dot isn't it
+[9:30.72] so we are going to retrieve two domain
+[9:32.36] variables output number one the names of
+[9:34.56] all instructor number two the course ID
+[9:37.16] so we need N N means the name of the
+[9:40.04] instructor and C which is the course ID
+[9:43.28] so I'm just using n the domain variable
+[9:45.96] for name of the instructor and C for the
+[9:49.20] course ID now when we are going to
+[9:51.88] retrieve only selected columns or
+[9:53.60] selected domain or selected domain
+[9:55.88] variables then we need to use their
+[9:58.44] exist and there exist I and a I'm going
+[10:02.08] to retrieve instructor ID and the
+[10:04.48] section ID I is for the instructor ID a
+[10:09.08] is the section ID you may be thinking
+[10:11.64] why I'm using a for Section ID instead
+[10:14.88] of
+[10:15.64] s the problem is if we are using S I'm
+[10:19.52] going to reserve s for semester in order
+[10:22.28] to avoid ambiguity I'm just using a
+[10:25.24] different variable name which is a in
+[10:28.00] this case so we we want to ensure
+[10:30.16] uniqueness in the domain variables and
+[10:32.48] that is why I'm not preferring s for
+[10:34.68] Section ID I'm preferring a for Section
+[10:37.40] ID domain so there exist I and a we are
+[10:41.44] going to retrieve only partial
+[10:43.00] information where I instructor ID C
+[10:46.76] course ID a section ID s
+[10:51.44] semester y here these five attributes
+[10:55.36] are belonging to teachers relation and
+[10:59.00] we have going on to retrieve D and S
+[11:02.28] where D is the department name s is the
+[11:05.08] salary you can omit s here however we
+[11:08.24] want only Department mainly the reason
+[11:10.40] is we are going to retrieve the names of
+[11:12.76] all instructors in the physics
+[11:14.20] department so definitely we need there
+[11:16.44] exist D such that I N DS in ID name
+[11:21.64] Department name and salary all these
+[11:23.64] four attributes are belonging to
+[11:25.20] instructor relation and the main
+[11:28.12] condition Department name this domain
+[11:31.40] variable D should be having the value
+[11:34.00] physics so if you use this query we will
+[11:36.92] be getting the names of all instructors
+[11:39.52] along with the course ID where we
+[11:41.72] retrieved it from both the relation
+[11:43.96] instructor and teachers as I mentioned
+[11:46.72] you may ignore this s because there is
+[11:49.20] no role for S however even if you add it
+[11:52.44] it's not going to cause any problem to
+[11:54.52] this output as you are aware domain
+[11:57.04] relational calculus is a not
+[11:59.24] nonprocedural query language we can even
+[12:01.92] create queries as per our own
+[12:04.52] convenience I hope example number three
+[12:06.88] is clear to you let me now move on to
+[12:09.64] example number
+[12:11.04] four the question is find the set of all
+[12:14.60] courses taught in the fall 2009 semester
+[12:17.92] the spring 2010 semester or both I hope
+[12:22.04] the question is clear we are going to
+[12:23.68] retrieve the set of all courses taught
+[12:26.52] in Fall 2009 semester all spring 2010
+[12:30.92] semester or both I request you to pause
+[12:34.56] this video for a while let me bring in
+[12:36.80] the University database and find out
+[12:39.16] which relation contains all the required
+[12:43.40] information I hope you are done so all
+[12:46.84] the required information are available
+[12:48.56] in section teachers takes however I'm
+[12:53.52] going to use section relation for a
+[12:55.44] specific reason why because this has Max
+[12:59.16] maimum information so I'm just
+[13:00.88] preferring section let me bring in the
+[13:03.32] section relation here which contains
+[13:05.52] course ID section ID semester year
+[13:08.28] building room number and time slot now
+[13:10.76] one thing what we need to note here is
+[13:13.00] we are not going to retrieve anything
+[13:14.68] related to the instructor who taught the
+[13:16.76] course rather we are going to find the
+[13:19.20] set of all courses that were taught in
+[13:21.40] Fall 2009 semester spring 2010 semester
+[13:25.12] or both so section relation is
+[13:28.24] sufficient in this case and the answer
+[13:30.40] for this query is this so we are going
+[13:33.04] to retrieve the set of all courses so we
+[13:35.52] are going to focus on one column or one
+[13:38.16] domain variable let me create the domain
+[13:40.68] variable C here where C is the course ID
+[13:44.44] so I'm assuming the question is finding
+[13:47.24] the set of all course IDs all courses or
+[13:49.80] course IDs should be sufficient so I'm
+[13:52.04] just having a domain variable C such
+[13:54.68] that this C is a part of section
+[13:56.96] relation so we are going to retrieve
+[13:58.84] only only one column or one domain
+[14:01.04] variable so obviously we are going to
+[14:02.88] use their exist s what is this s this is
+[14:06.88] the semester right so C is for course ID
+[14:10.92] A is for Section ID s is for semester Y
+[14:14.96] is for year B is for building R is for
+[14:18.36] room number T is for time slot ID all
+[14:21.84] these domain variables are belonging to
+[14:24.00] the section relation but the condition
+[14:26.52] is this S I mean this semester should be
+[14:30.60] fall 2009 right so whatever we retrieve
+[14:33.84] for S should be fall at the same time we
+[14:37.28] are taking the year y should be 2009 so
+[14:41.76] fall 2009 this condition is satisfied
+[14:45.16] and remember we also should retrieve for
+[14:47.56] spring 2010 or both if it is and we
+[14:51.00] would have used and here since it is or
+[14:53.76] both we are using
+[14:55.72] R now let's deal with the second
+[14:58.12] condition spring 20
+[14:59.76] so here we have used s let me use U
+[15:02.92] which is another domain variable where c
+[15:05.76] a s y b RT all these things like the
+[15:09.40] previous case that belongs to the
+[15:11.00] section relation and here whatever we
+[15:13.92] retrieved it for s or U it should be for
+[15:17.16] spring 2010 so s should be spring or U
+[15:21.00] should be spring so s should be spring
+[15:24.12] at the same time why should be
+[15:26.80] 2010 because whatever ever you get it
+[15:29.60] for U it will be having the output that
+[15:32.40] contains spring 2010 whatever we get for
+[15:35.56] S will be fall 2009 whatever we get for
+[15:39.32] you it will be spring 2010 and we are
+[15:42.52] using R it means output will contain
+[15:46.12] this output this output or
+[15:49.72] both and those output are actually
+[15:52.44] referred by this domain variable C so
+[15:55.56] here is the answer for example number
+[15:57.80] four I hope the session is informative
+[16:00.64] and thank you for watching
+[16:03.78] [Applause]
+[16:05.97] [Music]

@@ -1,0 +1,1734 @@
+[0:03.24] hey everyone welcome back to the channel
+[0:04.60] I hope you guys are doing extremely well
+[0:06.48] so this is another video from the
+[0:08.00] Strivers A2Z DSA course just in case
+[0:10.60] you're for the first time here this is
+[0:12.52] world's most in-depth course on DS algo
+[0:15.80] why do I say that you can go across
+[0:17.96] internet you can buy any of the paid
+[0:19.96] courses none of them will be covering DS
+[0:22.36] algo in such depth we will be covering
+[0:25.64] 456 modules and we will be solving 400
+[0:29.72] plus problems in this DS algo course so
+[0:32.72] when you end this course you can
+[0:34.84] actually clear any of the DS algo rounds
+[0:37.36] in any of the interviews in any part of
+[0:39.60] the world so till now we have covered
+[0:41.80] till step 3.1 fourth problem and in this
+[0:45.20] video we will be covering these five
+[0:48.00] problems just in case you want to
+[0:50.24] directly jump to any of the particular
+[0:51.80] problem the time Stamps will be there
+[0:53.88] you can directly jump over but let's get
+[0:56.20] started with the first problem which is
+[0:58.36] left rotate an array by one place so if
+[1:01.48] you have seen our previous video you
+[1:02.80] know that we always start from brute
+[1:05.56] then we go to better and then we go to
+[1:07.64] Optimal given that the brute and better
+[1:10.12] exists for that problem and this is the
+[1:12.72] way you should always tell in an
+[1:14.32] interview why because in an interview
+[1:16.52] your thought process should be visible
+[1:18.48] to the interviewer because it's you who
+[1:20.44] will be driving the interview so make
+[1:22.20] sure you follow this particular
+[1:24.32] stepbystep optimization of approaches
+[1:27.08] because it does leave a very positive
+[1:29.44] impact on the interview now coming back
+[1:31.44] to the problem left rotate the array by
+[1:33.72] one place what does it mean so given an
+[1:35.84] array you have to left rotate it yes you
+[1:38.04] have to left rotate it by one place so
+[1:40.24] if I have this array and you have to
+[1:41.68] left rotate it by one place so one place
+[1:44.24] so one element will go and rotate it so
+[1:47.84] basically this one will go to the end
+[1:50.32] because you rotate it and everyone will
+[1:52.96] move a bit because you're rotating it so
+[1:54.96] it'll be like 2 3 4 5 so this is what
+[1:58.16] rotation means if I'm talking about left
+[2:01.68] rotation so I have rotated the array and
+[2:05.24] this will be my final array now for this
+[2:08.44] problem this is a very easy problem so
+[2:10.60] you can directly jump to the optimal
+[2:12.28] solution instead of going like to the
+[2:14.76] proo where you take another array and
+[2:17.56] store the answer in another array it's
+[2:19.52] not required for this problem you have
+[2:22.08] to solve the problem in the given array
+[2:24.96] itself like you cannot use any new array
+[2:27.92] make sure you solve the problem in the
+[2:30.00] given array itself now since it has been
+[2:32.96] clearly stated that you have to just
+[2:34.64] rotate it by one place hence the problem
+[2:37.20] is very simple after that we will be
+[2:39.36] increasing the difficulty of the problem
+[2:41.24] but as of now let's understand how do
+[2:43.32] you left rotate by one place now I know
+[2:45.72] one thing if I have to talk about left
+[2:47.92] rotation let's visualize what happened
+[2:51.36] in the final array in the final array
+[2:54.28] this is the only guy that went to the
+[2:55.92] last the first guy is the only guy that
+[2:58.32] went to the last and apart from that
+[3:00.32] what happened the two moved here the
+[3:02.68] three moved here the four moved here the
+[3:05.04] five moved here it's like they moved one
+[3:07.92] place they moved one place ahead so
+[3:11.36] moving them one place ahead should not
+[3:13.28] be a big deal but we need to store this
+[3:15.96] one so assume I say temporary equal to
+[3:19.20] array of zero and over here temporary
+[3:21.56] will be stored as one because array of Z
+[3:24.16] is one now what I say is okay I'm
+[3:26.96] standing here this two ideally
+[3:30.28] since it is left rotated by one should
+[3:32.56] go at the zeroth index so I'll place it
+[3:34.68] here so it's like saying okay if I'm at
+[3:37.60] I index I'll place it at one index
+[3:41.32] before and then again I'll move the a
+[3:43.40] index and I'll see place it at one index
+[3:46.52] before which is again the IUS one and
+[3:49.08] then again I'll move the I index and
+[3:51.20] I'll say place it at one index before so
+[3:54.20] this will be placed here then I'll move
+[3:56.12] here and I'll say place this five at one
+[3:59.00] index before so this will be placed once
+[4:01.52] I've done this the iteration will be
+[4:03.72] over once the iteration is over the last
+[4:06.92] place is having five as of now we need
+[4:09.92] to take this one and place it at the
+[4:12.44] last place and the one is stored in
+[4:14.60] temporary variable so you take this
+[4:16.56] temporary and put it into the last index
+[4:20.16] so this will take one hence the array
+[4:22.48] will get modified to this after left
+[4:25.68] rotating it by one place now let's talk
+[4:28.32] about the implementation how how will
+[4:29.88] you implement it can I say this is
+[4:31.48] nothing but the first index and this is
+[4:33.48] nothing but the N minus one index so
+[4:36.44] thereby what you can do is you can say
+[4:38.56] for I like At first what you can do is
+[4:41.36] you can always do temporary of array of
+[4:43.84] zero and then you can start from one and
+[4:46.28] you can go on till I N minus one so you
+[4:48.48] can run a loop till n minus one and then
+[4:51.24] you can say this ayat guy will go to i -
+[4:54.20] one so array of IUS one will store array
+[4:58.96] of I
+[5:00.48] once this Loop is completed that means
+[5:05.00] this will be completed and at the end of
+[5:08.00] the day at this position which is
+[5:10.96] nothing but array of n minus one
+[5:14.04] whatever we stored in temporary we take
+[5:16.88] it and we will place it over here as
+[5:19.28] simple as that if I have to discuss the
+[5:21.40] time complexity what will the time
+[5:24.00] complexity yes a simple beo of n pass
+[5:27.92] because we are running this Loop for n
+[5:29.92] times thereby the time complexity is p
+[5:32.64] of n are we using any extra space no
+[5:35.68] thereby the space complexity is p of one
+[5:38.40] why because we are doing everything in
+[5:40.64] the given array itself so we can see
+[5:43.08] that we are not using any extra space
+[5:45.44] but yes we are modifying the array so
+[5:48.44] the space used to solve the problem is B
+[5:51.12] of n because we're using an array to
+[5:53.08] solve the problem yeah that array is
+[5:54.84] already there but we using it so if
+[5:57.60] someone says what is the space used in
+[6:00.80] your algorithm then it becomes B offen
+[6:03.16] because you definitely are using this
+[6:05.12] array but it is already created but
+[6:07.12] you're using it in your algorithm but if
+[6:09.32] someone says what is the space that you
+[6:12.32] like what is the extra space that you're
+[6:13.96] using and the extra space is be of one
+[6:16.80] but in for the algorithm we definitely
+[6:18.92] are using this so understand the shuttle
+[6:22.04] difference if someone says in the
+[6:24.16] algorithm you should always take the
+[6:27.16] space that you are being used like
+[6:28.96] that's being used and if someone says
+[6:31.12] what's the extra space then you can say
+[6:33.56] B go fun so there's a shuttle difference
+[6:35.68] whenever you go to an interview always
+[6:38.12] clarified tell them that sir the extra
+[6:41.00] space is so whenever you go to an
+[6:42.92] interview always clarify this tell them
+[6:45.08] sir or ma'am the extra space that I'm
+[6:47.64] using is we fun but in order to solve
+[6:50.08] this problem I'm using this array so if
+[6:52.24] you have to take space into
+[6:53.80] consideration for the algorithm
+[6:55.52] particularly I will say I'm using this
+[6:57.76] are so thereby a b go of n space is
+[6:59.84] being used yes it's already given to me
+[7:02.40] but I'm using it in order to solve it so
+[7:05.48] this way you tell to the interview so
+[7:07.20] that every concept of yours is Crystal
+[7:11.32] clearly presented to the interview and
+[7:13.32] he is impressed this is how you should
+[7:16.12] drive the interviews got it so if you
+[7:18.08] want to solve this problem the problem
+[7:19.60] link will be in the description so I've
+[7:21.04] written the exact same code and I'm
+[7:22.56] submitting this problem and it is
+[7:24.40] running absolutely fine so you have
+[7:25.96] solved this problem now if this problem
+[7:28.04] comes up in an interview the followup
+[7:30.16] question very likely will be the next
+[7:32.12] one which is left rotating an array by D
+[7:35.44] places till now you have solved a
+[7:37.36] problem where you did left rotate the
+[7:38.96] array by one place now I am telling you
+[7:42.24] okay one is easy what if I give you two
+[7:44.52] what if I give you three what if I give
+[7:45.80] you four can you left rotate an array by
+[7:49.12] certain number of places so that certain
+[7:51.44] number is d d can be anything in a
+[7:53.96] problem so you have to design an
+[7:55.56] algorithm so that the algorithm works
+[7:58.32] for any given number of places that is
+[8:01.72] what the followup question will be so
+[8:03.36] let's try to solve this followup problem
+[8:05.20] so let's understand the problem
+[8:06.52] statement it states you to left rotate
+[8:08.76] the array but this time by D places
+[8:11.44] assume for this given example array we
+[8:13.84] have D equal to 2 so it stating that
+[8:16.36] left rotated by two places so this two
+[8:20.00] elements should be left rotated and
+[8:22.84] these elements should be moved by two
+[8:25.80] places this is what you mean by left
+[8:27.88] rotation so if I do that
+[8:29.96] the resultant array will be 3 4 5 6 7
+[8:35.76] and then 1 and 2 so this one and two
+[8:39.16] kind of moves here and then moves here
+[8:41.52] and these will move two places ahead so
+[8:44.92] this is what the resultant array will be
+[8:47.24] after you have left rotated the array by
+[8:49.52] D places D over here is two D could have
+[8:53.04] been three yes D could have been three
+[8:55.00] as well in case of three what would have
+[8:57.28] been the answer yes obviously in that
+[8:59.96] case 1 2 3 would have been left rotated
+[9:02.72] and they would have been moving by three
+[9:04.56] places ahead so in that case the answer
+[9:07.08] would have been 4 5 6 7 and then 1 2 3
+[9:12.00] so that's the answer for D equal to 3
+[9:15.08] now what if yes what if like let's count
+[9:18.20] the size of the array it's like one
+[9:20.08] sorry my bad 1 2 3 4 5 6 7 s is the size
+[9:25.28] of the AR imagine I asked you can you
+[9:28.08] rotate this yes you rotate this by seven
+[9:31.36] places so if you actually rotate this by
+[9:34.16] seven places it will again come back to
+[9:37.40] the same place it will again come back
+[9:39.52] to the same place so rotating it by
+[9:42.00] seven places will bring it back to the
+[9:44.20] same place so if I ask you can I rotate
+[9:47.40] it by eight places if you do a rotation
+[9:50.84] by eight places can I break eight down
+[9:53.84] to seven rotations plus one rotation can
+[9:57.92] I I can so can I see that Hey listen on
+[10:02.04] seven rotation it comes back to the
+[10:04.12] original array and then you just have to
+[10:06.12] do one rotation on it Mak sense so if it
+[10:09.60] is nine rotation can I break it down to
+[10:12.80] 7 + 2 and say okay on seven rotation it
+[10:16.04] will be the original array again and
+[10:17.72] then you just have to do a mega two
+[10:19.48] rotation on the array does make sense if
+[10:22.16] I tell you D equal to 15 can I write 15
+[10:25.52] as 7 + 7 + 1 stating that on two seven
+[10:30.40] rotations on two seven rotations the
+[10:32.84] array will be back to its original and
+[10:35.48] then you just have to do one rotation
+[10:37.20] and that will sum up to 15 rotations so
+[10:41.08] can I see multiple of seven rotations
+[10:44.12] can be done and it will always bring you
+[10:47.52] back to the original array I repeat
+[10:49.96] multiple of seven rotations will always
+[10:52.72] bring you to the original array the
+[10:55.04] remaining is what you need to do so can
+[10:57.68] I see whatever AR is given to you sorry
+[11:00.44] whatever D is given to you doesn't
+[11:02.48] matter the number of rotations you have
+[11:05.24] to do will always be D modular whatever
+[11:09.72] is the size of the AR can I say this if
+[11:11.84] it's given like 20 doesn't matter I'll
+[11:14.44] just have to do six rotations because 20
+[11:17.48] module of 7 will be six which means you
+[11:20.44] have to do seven two times and the
+[11:23.00] remaining six so you actually have to
+[11:25.28] just do six rotations and if you have
+[11:29.64] any number of rotations which is lesser
+[11:32.16] than the size of the array it's very
+[11:34.04] simple if I say six it means this will
+[11:37.04] go here it's like 1 2 3 4 5 6 and this
+[11:40.84] will go here that is the meaning of six
+[11:43.68] rotations so anything lesser than seven
+[11:47.08] is very easy to solve that's why we will
+[11:50.40] always do a modular of n because end
+[11:54.52] rotations like on multiple of end
+[11:56.72] rotation means coming back to the
+[11:58.68] original
+[11:59.92] which we do not care we care about doing
+[12:02.40] the next set of steps got it so that's
+[12:05.68] the first thing we have to be careful
+[12:07.36] about whatever D is given to you just do
+[12:10.12] a module with n and that will be solving
+[12:13.00] your problem and that will be solving
+[12:14.44] your problem if D is very very l so if
+[12:18.28] in an interview this question comes up
+[12:20.20] the first approach that you'll be
+[12:21.56] telling will be the Brute Force approach
+[12:24.24] now what will be the Brute Force
+[12:25.96] approach over here let's go back to the
+[12:27.48] previous problem in the previous problem
+[12:29.76] D was one
+[12:31.00] element you were being asked to rotate
+[12:34.08] the array by one place so you initially
+[12:38.44] took a temporary and you stored one
+[12:40.80] element this one element was stored and
+[12:43.24] then you yes then you did this and then
+[12:46.36] you replace that one element to the last
+[12:49.04] we'll do the exact same thing D was one
+[12:51.96] over here so you stored one element if D
+[12:54.60] is two you will be storing two elements
+[12:57.68] into this temporary and then you will
+[13:00.64] rotate and then you'll take the Two
+[13:02.64] element and you'll put it on the back
+[13:06.00] that's what we'll do let me explain so
+[13:08.96] what I'll say is okay D is three so I'll
+[13:11.28] take a temporary array or a temporary
+[13:14.20] list whatever you can and I'll say okay
+[13:17.68] let's take the first three elements very
+[13:20.84] simple done so I've taken the first
+[13:23.60] three I've taken the first three and
+[13:26.24] I've put that into the temporary array
+[13:28.36] similar to Out we uh similar to what we
+[13:30.28] did in the first problem now what was
+[13:33.20] the next step shifting so let's do the
+[13:36.36] next job of
+[13:38.56] Shifting now when I say shifting how
+[13:42.20] will you shift let's write down the
+[13:44.76] indexes and let's try to observe how do
+[13:47.36] we shift so if I write down the indexes
+[13:49.72] it's like 0 1 2 3 4 5 six and if D is
+[13:55.52] three we start shifting from third index
+[13:59.44] we start shifting from the third index
+[14:01.08] which is the dth index so we we start
+[14:04.32] from here and where do we put three
+[14:07.08] let's analyze three is put to the zeroth
+[14:10.24] index obviously four will come here and
+[14:12.92] the fourth index is put to the first
+[14:14.56] Index this one will come here and then
+[14:17.32] the fifth index which is this which is
+[14:20.16] six is put here so fifth index comes to
+[14:23.68] Second do you see where it is coming up
+[14:26.56] if this is your I index if this is your
+[14:29.36] index it's always coming to I minus D
+[14:33.00] place this is where it is coming to the
+[14:35.08] shifting is happening in this way so
+[14:36.92] what I can say is okay for shifting I
+[14:40.28] can probably start from this
+[14:45.36] one sorry this one which is the third
+[14:48.72] index which is nothing but D and I can
+[14:51.60] go until the last i++ and I can say
+[14:54.96] array of because the third index guy
+[14:58.04] will go to the zero IND next guy please
+[15:00.20] observe this guy goes here and this will
+[15:03.72] become four so it goes three places back
+[15:06.56] it goes D places back so I minus D
+[15:11.56] places is where the array of I will go
+[15:15.08] so once you have performed this shifting
+[15:19.12] how will the AR look like let's write
+[15:20.92] once you performed this shifting how
+[15:22.28] will the AR look like it will look like
+[15:23.80] four is here five is here six is here
+[15:26.52] seven is here now you still have three
+[15:29.08] places where 5 6 7 is there and what do
+[15:32.52] you need to put it like what do you need
+[15:34.04] to put there very simple you have to
+[15:37.36] take this temporary and you have to put
+[15:39.44] the temporary one by one here which is
+[15:41.28] like 1 2 3 quite simple so put back
+[15:44.84] temporary is the last step put back temp
+[15:48.68] is your last step so let's put back the
+[15:50.88] temp so I can see how do I put back the
+[15:54.96] temp now we need to analyze where are we
+[15:58.40] putting it let's try to analyze so can I
+[16:01.28] say if we shifting by three places it
+[16:05.40] means if the size of the array is seven
+[16:09.36] three places before it because the last
+[16:11.92] three places will only be occupied if we
+[16:15.76] are shifting the array by three places
+[16:18.28] only the last three places will be
+[16:19.96] occupied so it be like okay 7 - 3 which
+[16:24.64] is basically n minus D which is
+[16:27.44] basically 7 - three which is basically
+[16:30.28] four so we're starting at four can I say
+[16:32.80] we will start putting at the fourth
+[16:34.84] index can I I can so I'll start from
+[16:37.88] I'll start putting it from the fourth
+[16:40.84] like n minus K and I'll go on to the
+[16:43.32] last quite simple and what will we put
+[16:46.68] in the array of five what will we put
+[16:48.64] we'll put first
+[16:49.88] one so we'll put something from the
+[16:52.08] temporary we will put something from the
+[16:54.20] temporary for sure now we need to figure
+[16:57.16] out what's the index the easy e EST way
+[16:59.32] to do this is like without any
+[17:01.16] mathematical calculations or anything
+[17:03.24] the easiest way is say J equal to Z and
+[17:06.36] put J and then do a j++ so what will
+[17:09.20] happen at first J is here because that's
+[17:11.36] the zero index takes up one puts it here
+[17:14.96] then J goes here takes up two puts up
+[17:17.64] here then J goes here takes up three and
+[17:19.84] puts in here so you put J and you
+[17:21.88] increment J you put J you increment J
+[17:24.40] and this will easily fill up the last
+[17:27.24] three places that's one of the ways to
+[17:29.40] do it but if you're going to an
+[17:31.48] interview you have to show all your
+[17:32.96] skills so this is the first thing you'll
+[17:34.72] tell in an interview then you can say
+[17:36.88] maybe we can get rid of this possible J
+[17:39.60] yes let's get rid of this possible J can
+[17:42.84] I deduce something which is
+[17:45.56] mathematically correct I can maybe so
+[17:48.44] something which I know is this element
+[17:51.44] which is at the zeroth index will always
+[17:54.44] go to the N minus D Index can I say this
+[17:59.32] I can now can I say someone who is at
+[18:01.72] the first index will always go to n
+[18:04.96] minus D + 1 which is basically the next
+[18:07.92] index I can now can I say someone who is
+[18:11.32] here will always go to here which is
+[18:14.12] apparently two places ahead which is n
+[18:16.40] minus D +
+[18:18.52] 2 can I say this and this is the second
+[18:20.76] index so n minus D + 2 so can I say if
+[18:24.92] your base index is n minus d n minus D
+[18:29.72] is your base index can I say this
+[18:32.20] temporary will say okay if you're
+[18:34.24] standing here if you're standing at
+[18:36.84] I then you just need sorry n minus D to
+[18:40.72] get your base index can I say this you
+[18:43.08] just need i - n- D because again I'll
+[18:46.76] repeat this is n minus D + 2 and this is
+[18:50.76] n minus D so if you are trying to put
+[18:53.96] some something here then if you just
+[18:57.00] subtract this you'll get two and you get
+[18:59.04] the second guy from here quite simple
+[19:01.48] maths very very simple take a pen and
+[19:03.88] paper and try to do it yourself I'll
+[19:05.92] repeat again the base index here is n
+[19:08.88] minus D then the next index will
+[19:10.68] definitely n minus D + 1 the next will
+[19:12.64] be n minus D + 2 right and we're taking
+[19:15.84] from 0 one2 so this is like zero this is
+[19:19.20] like one and this is like two that's why
+[19:23.08] wherever you are currently at just
+[19:25.16] subtract the base index if you subtract
+[19:27.56] first you'll get zero then you get one
+[19:29.20] then you'll get two which apparently
+[19:30.88] means this so you'll automatically take
+[19:33.32] the temporary this is how you can easily
+[19:36.16] put it back got it so quite simple first
+[19:38.88] I stored everything from the temporary
+[19:40.68] again to store everything from the
+[19:42.24] temporary you just need to loop from 0
+[19:45.28] to D so it's like looping
+[19:47.68] from I = to 0 I lesser than D and I +
+[19:52.68] plus and in the list you can probably
+[19:55.52] take a vector or a list in uh Java push
+[19:59.44] back in V uh in Java it will be list.
+[20:01.88] add array fine that's it so this is the
+[20:05.28] putting into the temporary this is the
+[20:06.56] step one so this is how you can put
+[20:08.68] everything over there then you can
+[20:11.08] easily shift and then you can easily put
+[20:14.80] back the temporary array this is how you
+[20:17.52] can easily do it so for the for this
+[20:19.92] brute approach I have written the pseudo
+[20:21.52] code so that you can code in C++ or Java
+[20:24.20] but coming to a cleaner code we just
+[20:26.12] take the array as the input then we take
+[20:28.04] the d and then we call the left rotate
+[20:30.40] function which rotates it and then we
+[20:32.56] just kind like print it so let's look at
+[20:34.88] the function so it takes an array it
+[20:36.76] takes the size of the array takes D and
+[20:39.28] the first step we make sure is we just
+[20:42.48] reduce the D to something lesser than n
+[20:46.00] because we know on all the multiples of
+[20:48.52] n it will come back to its origal array
+[20:51.32] and then we store everything into
+[20:54.08] temporary then we shift it and after
+[20:57.64] that we place back temporary into array
+[21:01.04] quite simple so that was the cleaner
+[21:02.68] code and the problem link will be in the
+[21:04.80] description so what will be the time
+[21:06.96] complexity so can I say the time
+[21:08.88] complexity will be in order to do the
+[21:11.32] step one this is taking a beo of
+[21:15.56] D because we are looping through the
+[21:18.88] first D elements next can I say in order
+[21:22.32] to transfer like shift everything that's
+[21:25.92] going to take B go of n minus d because
+[21:29.72] those many elements are what you will be
+[21:32.88] transferring or shifting to the front so
+[21:35.88] n minus the next one putting back
+[21:38.20] temporary so that's like again B go of D
+[21:41.52] because you're putting back D elements
+[21:43.64] so that's like B go of D and if I have
+[21:46.12] to add it up it will become beo of n + D
+[21:52.60] this will be the time complexity and if
+[21:55.08] I ask you what is the very important one
+[21:57.60] what is the extra space used extra the
+[22:00.56] extra space used will be B go of B why
+[22:03.76] because you're using a temporary area to
+[22:06.24] store the extra elements now this is
+[22:08.20] where the interview will tell you okay
+[22:10.48] fine enough but I want to get rid of
+[22:12.68] this extra space can you just do it and
+[22:14.68] be off one extra space that's when
+[22:16.84] you'll say okay maybe I'll try maybe
+[22:18.84] I'll try to optimize this into an
+[22:20.76] optimal solution for this a better might
+[22:23.16] not exist so I'll not discuss it but
+[22:25.48] this is where I'll try but this is where
+[22:27.40] I'll try to optimize this into an
+[22:29.12] optimal one so let's look at the optimal
+[22:31.56] solution so let's talk about the most
+[22:33.76] optimal solution the most optimal
+[22:35.52] solution will be based on observation
+[22:38.16] now this will be the resultant array
+[22:40.28] after you have rotated this array by
+[22:43.36] three places now something to observe
+[22:46.24] this 1 2 3 yes this 1 2 3 is over here
+[22:51.04] okay and this 4567 is over here so what
+[22:55.64] we can do is we will say okay let's
+[22:59.28] let's take the first three elements and
+[23:02.16] try to rotate it sorry try to reverse it
+[23:05.12] so if I reverse it it'll be 3 2 1 I've
+[23:08.16] reversed it and then I'll say let's take
+[23:10.72] the last four elements let's try to
+[23:13.52] reverse it as well so if I reverse it
+[23:15.92] it'll be 7 6 5 4 now what I'll say is
+[23:21.32] okay this is the Reversed array post two
+[23:25.40] reversal one is the first D the next is
+[23:28.04] the n minus D elements after this if you
+[23:31.56] have to get this final array what do you
+[23:34.24] need to do reverse it again so if you
+[23:36.88] reverse it what will happen this four
+[23:39.12] will come first this five will come here
+[23:41.12] this six will come here this seven will
+[23:42.64] come here this one will come here this
+[23:44.32] two will come here and this three will
+[23:45.96] come here done and dusted yes this is
+[23:49.28] super easy so I will say
+[23:53.36] reverse first array to array plus d then
+[23:56.96] I'll say reverse
+[23:58.92] from array plus d to array plus n which
+[24:01.80] is the last one and then I'll say
+[24:03.80] reverse the entire array which is array
+[24:06.00] to AR plus n so if I perform this three
+[24:08.92] reversals if I perform this three
+[24:11.80] reversals I will actually get the
+[24:13.76] resultant AR I don't have to do like I
+[24:16.60] don't have to take a temporary do
+[24:18.12] shiftings and then copy pasting back
+[24:20.04] again just three reversals first for the
+[24:22.60] D elements then from D to n and then the
+[24:25.72] entire and if I do this I should done
+[24:29.20] and this will take me a b go of n sorry
+[24:32.44] B go of D complexity because we are
+[24:34.92] reversing D elements this will take me a
+[24:37.16] b go of n minus D because we reversing n
+[24:39.64] minus D elements this will take me a b
+[24:41.68] go of n because we reversing the entire
+[24:43.96] array so overall the complexity will be
+[24:46.28] this plus this so D and D will strike
+[24:48.88] out and the complexity will be 2 N so
+[24:51.52] the time complexity slightly increased
+[24:54.28] from the previous one but but the space
+[24:56.96] complexity we are not using any extra
+[24:59.84] space very important we're not using any
+[25:01.88] extra space yes we are using the array
+[25:04.92] that you can tell to the interview but
+[25:06.20] we are not using anything extra we're
+[25:09.00] using the given array okay that's why
+[25:11.04] the space complexity over here will be
+[25:12.68] vco of one got it so let's quickly code
+[25:16.12] this up again the problem link will be
+[25:17.76] in the description so there is a reverse
+[25:19.72] function a and C++ so if you just give
+[25:22.40] this it will reverse from array plus 0
+[25:25.20] like zero index to D minus one to D
+[25:27.96] minus one and then you can say again
+[25:29.92] reverse array plus d to array + one this
+[25:34.16] means from D Index to n minus one at
+[25:37.00] index then I can say again
+[25:39.52] reverse array plus sorry plus Z that's
+[25:44.08] means from zero index to the last index
+[25:46.48] if you do this three steps it will be
+[25:48.88] done and I now I can quickly run this
+[25:51.60] and see if it is running yes and now you
+[25:53.24] submit this it should be submitted so in
+[25:55.12] case your programming language does not
+[25:57.20] have a reverse function
+[25:59.00] you can always write something like this
+[26:01.44] which is a manual function where you
+[26:03.52] take the starting index and the ending
+[26:05.40] index which means you want to reverse
+[26:06.96] from this index to this index and this
+[26:09.28] is quite simple you can go through this
+[26:11.16] it's very very simple and this will also
+[26:13.76] work like if you write a manual function
+[26:15.52] just because in C++ there is an STL
+[26:17.68] that's why I did not write an extra
+[26:19.84] function but in an interview the
+[26:21.52] interview might ask you to write an
+[26:23.20] additional function without using the
+[26:24.72] STL so in that case you can go ahead and
+[26:26.76] write a similar function which will
+[26:29.20] reverse you a particular array from
+[26:31.44] start to end so with this we are done
+[26:33.80] with this problem as well which is left
+[26:35.76] rotate an array by D places now remember
+[26:38.24] there might be a follow-up question to
+[26:39.68] this in an interview which is what if
+[26:42.40] instead of left rotation I'll see you WR
+[26:44.76] rotate the array by D places you have to
+[26:46.72] come up with a solution and this will be
+[26:48.20] an assignment try to think how will you
+[26:51.24] WR rotate an array by D places and once
+[26:53.84] you have written the code you can put
+[26:55.04] that into the comment section also
+[26:56.92] remember in an interview do not jump to
+[26:59.08] the optimal solution directly go from
+[27:01.04] brute to Optimal that will show your
+[27:02.96] thought process and that does leave a
+[27:05.00] very very good impact in the interview
+[27:07.08] head about you okay uh let's now move on
+[27:09.80] to the next problem which is moving
+[27:11.76] zeros to the end so what is the problem
+[27:14.36] State move all zeros to the end of the
+[27:17.32] array so you will be given an array
+[27:19.64] which will be consisting of some
+[27:21.32] integers and it will also be consisting
+[27:24.00] of some zeros now your task is to move
+[27:27.04] all the zeros to the end of the array so
+[27:29.40] first there will be one then there will
+[27:31.16] be two then there will be three then
+[27:33.12] there will be two then there will be
+[27:34.76] four then there'll be five then there
+[27:36.80] will be one so basically what you do is
+[27:38.64] you take 1 2 3 2 4 5 1 so I took all the
+[27:44.80] nonzero numbers and I put them into the
+[27:47.56] front of the array once I've done that
+[27:50.08] what are the remaining elements they are
+[27:52.16] zeros and there are three zeros so you
+[27:54.00] take all the three zeros and you put it
+[27:56.16] to the end of the array right so once
+[27:58.48] you've done this the modified array will
+[28:00.48] look something like this and this is
+[28:02.12] what the problem is asking you to do
+[28:04.48] question is asked to you in an interview
+[28:06.84] you should definitely start with the
+[28:08.12] brute for solution and then maybe come
+[28:09.88] up with a better solution if there is
+[28:11.40] one and then go to the optimal one so
+[28:13.88] what is the Brute Force solution if you
+[28:15.80] look at the problem it states all the
+[28:17.80] non-zero numbers at the front like all
+[28:20.32] the nonzero numbers at the front so my
+[28:23.84] mind kind of says that okay let's pick
+[28:25.96] up all the non-zero numbers and store it
+[28:28.24] somewhere so what I'll do is I'll start
+[28:30.24] iterating in the array so I'll start
+[28:31.92] from the first index and I'll say it's a
+[28:33.48] non zero let's pick it up then I'll go
+[28:35.76] to the next it's zero then I'll go to
+[28:37.88] the next it's a non zero then I go to
+[28:40.24] the next it's a non zero it's a non zero
+[28:43.24] it's a zero it's a zero it's a non zero
+[28:47.12] it's a non zero it's a non zero and the
+[28:49.88] iteration is over once the iteration is
+[28:52.68] over I can say that I have all the
+[28:55.24] nonzero numbers and again you can store
+[28:57.40] them in a list in an array wherever you
+[29:00.04] wish to so I have all the nonzero
+[29:02.72] numbers stored with me once I've done
+[29:05.68] this what is my next job I know one
+[29:09.20] thing for sure I have all the non-zero
+[29:11.40] numbers that will go at the front so
+[29:13.76] let's do it let's take let's assume this
+[29:16.72] is the temporary array let's take
+[29:19.64] everything let's first take one and put
+[29:22.32] it here let's then take two put it here
+[29:24.88] let's then take three put it here let's
+[29:27.04] then take two put it here here let's
+[29:28.76] then take four put it here then take
+[29:30.96] five put it here then take one put it
+[29:33.40] here so I have taken everything from the
+[29:35.68] temporary array and put them into the
+[29:39.40] front of the array once I have done that
+[29:42.96] I know all the nonzero numbers are at
+[29:45.76] the front if I've done that what is the
+[29:48.04] next job all the remaining positions
+[29:50.44] will definitely be zeros so I'll just
+[29:52.52] assign them zeros done and this is how
+[29:56.44] my Brute Force approach will look like
+[29:59.16] first iterate store all the nonzero
+[30:02.24] numbers then put all the nonzero numbers
+[30:04.68] to the front and then fill the remaining
+[30:07.08] places with zero so if I have to code
+[30:09.48] this what I'll do is I'll probably
+[30:11.24] Define a temporary which is an empty
+[30:15.00] list and then I'll start iterating from
+[30:17.40] the zeroth index until the nth index and
+[30:20.52] I will say Hey listen if you are a non
+[30:22.76] zero number which means not equal to
+[30:25.00] zero then can you go and get added to
+[30:27.28] the temporary and you'll add it to the
+[30:29.20] temporary simple this will create your
+[30:33.00] temporary array with all the non-zero
+[30:34.92] numbers so I can say the step one The
+[30:36.88] Brute Force approach is done what is the
+[30:39.04] step two step two is very simple pick up
+[30:42.16] everything from the temporary and put it
+[30:44.32] into the front of the array so you will
+[30:46.08] just move in the temporary array so I
+[30:48.48] equal to Z and then you can go to
+[30:49.92] Temporary do size because that will tell
+[30:52.56] you how many nonzero numbers are there
+[30:54.72] and then you can move and you can say
+[30:57.44] array of I let's put it into the front
+[31:00.16] array of I equal to Temporary of I so
+[31:03.48] this is step two once you have done the
+[31:05.48] step two all the non zero numbers will
+[31:07.68] go to the front now the step three is
+[31:10.20] filling up of zeros at the back so I
+[31:13.64] know if temporary dot size like is the
+[31:16.60] number of nonzero
+[31:21.12] numbers like over here it is like 1 2 3
+[31:24.76] 4 5 6 7 so it took
+[31:28.60] the first seven places so the last index
+[31:32.56] it took was the sixth index so you'll
+[31:35.20] start filling from the seventh index go
+[31:37.56] to the eth and go to the last which is
+[31:39.76] the n minus one index so you start
+[31:42.00] filling from the seventh index which is
+[31:44.40] nothing but number of nonzero elements
+[31:48.28] so you'll just start from the
+[31:51.00] non-zero elements like whatever it is
+[31:53.60] the number of non-zero elements and
+[31:55.24] you'll go till the last and you will see
+[31:57.92] in all of these places I'll just fill up
+[32:00.48] zero and this is how my brute force will
+[32:02.60] look like and if I have to analyze the
+[32:04.24] time complexity can I say this is taking
+[32:07.04] a big of n because I'm running an entire
+[32:09.36] Loop can I say this will be taking
+[32:12.28] imagine there is
+[32:14.16] X imagine there are X nonzero numbers so
+[32:17.12] this will take X and this will be the
+[32:20.00] remaining portions so the remaining
+[32:21.72] portions will be n minus X because if x
+[32:24.48] is the number of nonzero the remaining
+[32:26.32] will be n minus X so can I say the total
+[32:28.64] time complexity to be B go of n plus b
+[32:32.52] go of X plus b go of n minus X so - X
+[32:36.64] Plus X will cancel and that will be B of
+[32:39.12] 2 N will be the time complexity of this
+[32:41.68] particular one and can I say the extra
+[32:43.92] space again very important the extra
+[32:46.16] space that I'm using will be weo of X
+[32:48.92] where X is the number of nonzero numbers
+[32:52.84] and that at Max can be we go off and
+[32:55.96] imagine the entire array to not have a
+[32:58.40] single zero then you'll end up
+[33:01.12] transferring the entire array into the
+[33:03.72] temporary array so thereby the this is
+[33:05.84] the worst case there this is the worst
+[33:08.16] case where there is no zero in an array
+[33:10.72] then you will transfer the entire array
+[33:13.40] into the temporary so that in that case
+[33:15.40] you'll be using V go of n space so this
+[33:19.32] will be the time complexity and space
+[33:21.92] complexity for The Brute Force solution
+[33:24.72] so in case you want to Cote The Brute
+[33:26.08] Force solution and submit it the problem
+[33:27.92] link will be in the description there is
+[33:29.72] a reason why I'm writing the pseudo code
+[33:31.32] so that you can code it in any of the
+[33:32.92] languages but still if you want the Java
+[33:34.84] and the python codes the link will be in
+[33:36.80] the description you can go to the notes
+[33:38.52] and you can check them out so the Brute
+[33:40.24] Force solution is done now it's time to
+[33:42.08] move to the better solution but there is
+[33:43.76] no better solution so we'll be moving to
+[33:45.64] the optimal solution now this is what
+[33:47.76] you have to tell to the interviewer what
+[33:49.84] will be an optimal solution let's
+[33:51.52] analyze the thought process till now
+[33:53.52] what we did was very basic we just
+[33:55.88] picked up the elements and put them into
+[33:57.36] the front but now we'll try to do it on
+[34:00.12] like while iterating how can we do that
+[34:03.24] if somehow I can take this two and put
+[34:05.88] it
+[34:06.96] here and somehow I can take this three
+[34:09.24] and put it here somehow I can take this
+[34:11.24] two and put it here and maybe somehow I
+[34:13.24] can take this four and can of put it
+[34:15.12] here my job should be done so we'll be
+[34:17.56] trying to move the elements we will be
+[34:20.20] trying to move the elements and in order
+[34:22.72] to do that we are already iterating in
+[34:25.04] the are remember this we are already
+[34:27.76] treating in the array so what we will do
+[34:30.08] is we'll try to use a two-pointer
+[34:32.60] approach to move it something similar to
+[34:36.16] what we did uh in this particular
+[34:38.00] problem where we did remove the
+[34:40.32] duplicates from the sorted array
+[34:42.84] something similar now what I will say is
+[34:45.24] okay Hey where's the first zero and I'll
+[34:47.56] say here is my first zero and this will
+[34:50.36] be pointed by J which is the right next
+[34:54.76] index after zero which is this I'll
+[34:58.08] point it over here now what I say is Hey
+[35:01.52] listen I start from here and I check are
+[35:04.88] you a nonzero number he says yes I am a
+[35:07.32] non- zero number okay we have a zero
+[35:09.88] here let's let's swap it so I'll do a
+[35:12.88] swap so the two will go here and the
+[35:16.04] zero will come here the moment you have
+[35:17.80] done a swap you will say okay done now I
+[35:21.00] will move to here and I'll also move the
+[35:24.08] G to here so once I've moved I'll just
+[35:27.20] quickly erase this so that it's clearly
+[35:29.56] like it's clean done this next I'll say
+[35:33.96] hey are you a non zero number he says
+[35:36.00] yes I'm a non zero number I'll say Okay
+[35:38.04] swap to the zero so I'll go across and
+[35:41.12] again swap so three goes here zero comes
+[35:43.60] here and the moment you do that I will
+[35:45.44] move ahead and J will move to the next
+[35:49.08] place and if you've done this let's
+[35:50.92] remove this so that it's again clean
+[35:53.68] next are you a nonzero number he says
+[35:56.76] yes I'm a nonzero number number I'm like
+[35:58.96] okay so so two goes here Zer goes here
+[36:02.72] perfect and now I'll move I here and
+[36:05.40] I'll move j here so J will be always at
+[36:09.32] a zero J will be always at a zero and I
+[36:12.96] will be simply iterating okay next I ask
+[36:18.20] is this a nonzero number he says no so
+[36:20.52] no swapping I moves is this a nonzero
+[36:23.68] number no no slapping I moves is this a
+[36:26.76] non-zero number he says yes I am a
+[36:30.00] nonzero number so I'm saying you're a
+[36:31.88] nonzero number okay you need to go to
+[36:34.04] the zero g so he says okay I'll go so
+[36:37.08] I'll go to here which is four and this
+[36:39.56] will be zero perfect and the J will be
+[36:42.56] moving here and the I will be moving
+[36:45.12] here once I've done this I'll just clean
+[36:48.68] this next five are you a non zero number
+[36:51.72] he says
+[36:53.08] yes and zero comes in here and then I
+[36:55.56] move I here and then I move J here next
+[37:00.08] one are you a non zero number he says
+[37:01.76] yes so one comes here Zer goes here and
+[37:04.80] I crosses the boundary the moment I
+[37:07.04] crosses the boundary you stop and do you
+[37:08.88] notice something all of these positive
+[37:11.76] like all of these nonzero elements are
+[37:13.88] in the front and all the Zer went to the
+[37:16.84] last very simple and it's done and what
+[37:20.88] we did was a single iteration if you
+[37:23.52] carefully observe what it did was we
+[37:25.60] started the iteration like we first
+[37:27.96] figured out the zero and then we started
+[37:30.24] the iteration and we went till the end
+[37:32.00] so it's like a one iteration we did
+[37:34.48] which is much better than what we were
+[37:36.08] doing previously right see in the
+[37:38.24] optimal solution what is my step one if
+[37:40.88] I have to ask you what is my step one
+[37:43.40] it's finding the first zero element so
+[37:45.84] what you can do is you can probably say
+[37:47.88] J is initially minus one okay and then
+[37:50.40] you can start from zero and you can go
+[37:52.40] on till I ++ and you say hey array of I
+[37:57.08] are you zero if you're zero okay fine J
+[38:01.56] store this index because this is zero
+[38:03.56] and just go out no need to go ahead go
+[38:05.64] out and this will make sure J is stored
+[38:12.08] as the first like wherever the first
+[38:14.12] zero is if J is still minus one it means
+[38:17.00] there is nothing and you can just stop
+[38:18.56] you can just stop if J is still minus
+[38:20.32] one there is no zero and all are non
+[38:22.72] zero elements so you can stop the moment
+[38:24.48] you have G what's the next step we did
+[38:26.80] we took a i
+[38:28.72] right at the next of J and this is where
+[38:31.32] we start out so I said okay I'll start
+[38:34.00] from J + 1 and I'll go until here and
+[38:36.88] what did we do we said hey are you a non
+[38:39.80] Zer are you a non zero he said yes I am
+[38:42.48] so I'll check hey if array of I are you
+[38:46.52] a nonzero number if you are a nonzero
+[38:49.08] number can you please swap yourself with
+[38:53.16] array of I and array of J and if you
+[38:57.20] have swapped if you have swapped can you
+[38:59.80] just move your j++ pointer because I
+[39:02.48] will always be moving no matter what you
+[39:04.40] do but the moment you get a non zero
+[39:06.44] number you just swap it and then you
+[39:09.44] move j as well but whenever I was here
+[39:13.72] and it was a zero you did not do
+[39:15.44] anything it say the I always moved I
+[39:18.36] always moved because J will still stay
+[39:21.08] where it is so J swaps and then moves
+[39:24.52] ahead quite simple step two so the step
+[39:27.52] is also done so if I have to figure out
+[39:29.84] the time complexity can I do it now I
+[39:32.24] think I can first we moved till here
+[39:36.28] assuming this to be
+[39:37.88] X assuming this to be X length where the
+[39:41.16] first zero was found so the step one
+[39:44.40] takes you beo of X because you're doing
+[39:46.76] a break where X is the first index where
+[39:50.68] the zero was form then you move from
+[39:53.48] here to here which is the remaining n
+[39:55.36] minus x n- x l so this is like the
+[39:58.64] remaining nus X where you moved so the
+[40:01.20] overall complexity is this plus this
+[40:03.76] where X and X goes off so the time
+[40:06.20] complexity overall is V go of one sorry
+[40:09.16] V go of n are we using any extra space
+[40:12.52] no we using the given array yeah we we
+[40:14.88] have to tell that to the interview that
+[40:16.28] Hey listen I'm modifying the array
+[40:17.56] because that's required but we're not
+[40:19.64] using anything extra we're not using
+[40:21.20] anything out of the box so this will be
+[40:23.76] the time complexity and space complexity
+[40:26.36] of the most optimal approach that you
+[40:28.16] have to tell to the interviewer so if
+[40:29.60] you want to submit the optimal solution
+[40:31.04] the problem link will be in the
+[40:32.32] description what I've done is I've
+[40:33.56] converted the same pseudo code into a
+[40:35.68] C++ code just in case you want the Java
+[40:37.60] and python codes the link will be in the
+[40:39.48] description for notes you can go over
+[40:40.92] there and check it out and you can try
+[40:42.64] submitting it as well I'm focusing on
+[40:44.96] the pseudo code so that you can write it
+[40:46.80] in any programming language remember
+[40:48.52] this so coming back to the sheet I can
+[40:50.56] say that this problem is done the next
+[40:53.04] problem that we will be solving is
+[40:54.68] linear search linear search is one of
+[40:56.92] the e easier problems while it comes to
+[40:59.24] arrays it just involves iteration if you
+[41:02.28] understand iteration in an array you
+[41:04.08] should be able to solve linear search
+[41:05.92] now what does linear search say it says
+[41:07.96] that you'll be given an array array of
+[41:10.40] numbers and you will also be given a
+[41:13.40] separate number now to tell me which is
+[41:16.28] the first occurrence very important
+[41:18.32] which is the first occurrence of this
+[41:20.60] number in an array so if I have to check
+[41:24.08] this is where the number occurs what is
+[41:26.52] the zero based indexing again very
+[41:28.24] important what is the zerob based
+[41:30.20] indexing so the zero based indexing is
+[41:32.80] three so you have to return three yes
+[41:35.20] you have to return three which means it
+[41:37.72] like the number does exist in the third
+[41:40.16] index if I give you something like 10
+[41:42.64] what if the number is 10 if I scroll
+[41:44.68] through the entire array like if I look
+[41:46.72] at the entire array the number 10
+[41:48.36] doesn't exist that's when you return
+[41:52.56] minus1 simple right very simple how will
+[41:55.96] you solve this yes
+[41:57.80] quick iteration on the array and check
+[42:00.60] that's like I'll just go across the
+[42:02.64] array you know how to wrer in the array
+[42:04.36] now you just go across and you say Hey
+[42:07.16] listen if at any moment array of I is
+[42:10.88] equal to equal to the number I will try
+[42:14.32] returning the I index because that's
+[42:17.12] where the first occurrence is if they
+[42:19.76] want last occurrence you start wring
+[42:22.40] from the last if they want all occurence
+[42:24.92] then you can always store this I in some
+[42:27.44] temporary array or some list and at the
+[42:30.40] end of the day you can say return minus
+[42:31.84] one which means I did not find it if
+[42:34.08] there is a complete iteration done and
+[42:36.36] the return statement was never ever
+[42:38.72] executed then you will go across and
+[42:41.08] return minus one now going to the
+[42:43.72] compiler again the problem link will be
+[42:45.48] in the description in case you want to
+[42:47.08] try it out and this is how the code will
+[42:49.00] look like and again the Java and the
+[42:50.88] python code will be given in the notes
+[42:52.84] so you can check them out as well so
+[42:54.28] with this the most easiest problem in
+[42:55.80] the AR playlist is done as well and now
+[42:58.68] let's go to the next problem which is
+[43:00.84] finding the union and the intersection
+[43:02.92] of two given sorted arrays so what is
+[43:05.48] the problem statement Union of two
+[43:08.12] sorted again very very important word
+[43:10.28] because this will be helping us to
+[43:12.52] determine the most optimal solution so
+[43:15.28] Union of two sorted arrays so this is
+[43:18.52] array one which is sorted in itself
+[43:20.68] might have duplicates array two sorted
+[43:22.96] in itself again might have duplicates so
+[43:25.08] what you have to do is you have to give
+[43:26.68] me an Union array what is the meaning of
+[43:29.16] union so what do you mean by Union it's
+[43:31.56] basically you're given two guys and you
+[43:33.40] just add them up but you do not repeat
+[43:35.80] anyone you do not repeat anyone it's
+[43:38.12] like if you have one okay one goes you
+[43:40.80] have two two goes you have three three
+[43:43.44] goes you have four four goes you have
+[43:45.72] five five goes then you start from here
+[43:47.64] you have two but wait two is already
+[43:50.20] here doesn't goes three is already here
+[43:52.20] doesn't goes four is already here
+[43:54.00] doesn't goes four is already here
+[43:55.20] doesn't goes five is already here
+[43:56.80] doesn't not goes so this is how you can
+[43:59.60] easily do an Union so the union of the
+[44:03.12] both arrays will be 1 2 3 4 5 imagine I
+[44:06.68] just go ahead and say Hey listen I also
+[44:09.44] have a six in that case the union will
+[44:11.52] be 1 2 3 4 five and six quite simple
+[44:15.92] because six is over here it's not here
+[44:18.12] but it's okay you have to add both of
+[44:20.12] them you have to add both of them and
+[44:21.60] make sure there is no duplicates so this
+[44:23.76] will be the answer for Union of two sort
+[44:27.28] AR and this is what you have to return
+[44:29.76] so so this problem comes up in an
+[44:32.04] interview the first solution that you'll
+[44:33.60] be telling the interviewers should be
+[44:34.76] the Brute Force approach what will be
+[44:37.08] the Brute Force approach what are we
+[44:39.36] doing we're combining both of them but
+[44:41.20] we making sure the unique elements are
+[44:44.96] just there in the union array so
+[44:46.88] whenever we hear something like unique
+[44:49.40] something like a map or like a set comes
+[44:52.36] to our head because if we just keep on
+[44:55.16] throwing everyone to the set at the end
+[44:57.40] of the day the set will only contain
+[44:59.88] unique elements in a sorted order in a
+[45:02.08] sorted order very important because you
+[45:03.76] have to return the Union in sorted order
+[45:06.16] as well so can I say let's take a set
+[45:10.28] data structure I like why not let's take
+[45:12.64] a set data structure so assume this is
+[45:14.60] my set data structure which is as of now
+[45:17.44] empty I'll start iterating in the first
+[45:19.84] array one put that into the set one
+[45:23.04] again no two goes into the set
+[45:27.52] three goes into the set
+[45:30.24] four goes into the set five goes into
+[45:33.76] the set perfect I it in the second array
+[45:36.96] two already in the set if you try to put
+[45:39.60] it into the set the set will say I
+[45:41.04] already have it three already in the set
+[45:44.28] set will say I already have it four
+[45:46.68] already in the set four already in the
+[45:48.12] set five already in the set six not in
+[45:50.08] the set so after iterating in both the
+[45:53.28] Ares the set data structure will have 1
+[45:55.64] 2 3 4 5 6 and now what you can do is you
+[45:58.52] can probably take a union array and in
+[46:01.44] that array the size of that array will
+[46:03.48] be nothing but the size of the set which
+[46:05.92] is six and you can just pick up one
+[46:07.92] element pick up one pick up two and put
+[46:10.96] them into the array and put them into
+[46:12.76] the array that's what it will be that's
+[46:16.08] how it will look like once you have done
+[46:18.16] this this Union array will be the union
+[46:20.72] array of two sorted arrays and this will
+[46:22.52] also be in sorted order why because
+[46:24.96] you're using something like set if
+[46:27.28] you're using something like like if
+[46:28.80] you're using C++ do not use unordered
+[46:32.80] set because if you use unordered set the
+[46:35.64] ordering will get distorted and if the
+[46:38.12] ordering gets distorted you will not be
+[46:40.64] able to maintain the sorted order got it
+[46:43.20] that's why you have to use something
+[46:44.48] like a set data structure got it so if I
+[46:47.44] have to write the Brute Force approach
+[46:48.80] it's going to be very simple we we kind
+[46:50.64] of Define the set data structure and
+[46:52.64] then what we do is we go across the
+[46:55.24] first array as you that to have a size
+[46:58.24] N1 we can go across the first array and
+[47:00.60] we can say set do
+[47:02.32] insert and we can say array of I
+[47:05.28] assuming the first array A1 of I and
+[47:07.64] then we can go across the next one which
+[47:09.92] is from 0 to N2 and we can say
+[47:13.08] set do
+[47:14.96] insert a2. I
+[47:18.60] a2i so what this will do is this will
+[47:20.96] put everything into the set once you've
+[47:22.80] done this you can declare the union to
+[47:24.80] be of set do size quite simp again and
+[47:28.12] in this what you can do is just iterate
+[47:30.72] again you can use an auto iterator you
+[47:33.04] can iterate in the set once you
+[47:35.44] iterating in the set you can say Hey
+[47:37.24] listen maybe you can keep a pointer like
+[47:39.00] I equal to Z and you can say Union
+[47:43.08] i++ equal to it so first time goes to
+[47:46.80] the zeroth index then to the second
+[47:48.36] index if you're using something like a
+[47:50.00] list or a vector you can simply write
+[47:52.56] Union do add or push back in that case
+[47:56.04] ID and this will add it directly you
+[47:58.20] don't have to maintain an index so this
+[48:00.36] is how the step two looks like now if I
+[48:03.72] have to discuss the time complexity of
+[48:05.32] this particular Brute Force approach
+[48:07.12] what will it be can I say the stes be go
+[48:09.48] of N1 log
+[48:11.28] N1 not N1 log n where n is the size of
+[48:16.04] the set so N1 log n and over here can I
+[48:21.20] say that the complexity will be n to log
+[48:23.84] n again n log n where n is the size of
+[48:27.12] the set which will be varying at every
+[48:29.36] step so you cannot precisely say that
+[48:32.28] logarithmic of something you cannot
+[48:34.56] precisely determine the complexity for a
+[48:36.88] set correct and now for this it's a v go
+[48:40.72] of N1 + N2 at the worst case imagine the
+[48:44.92] array one contains all different
+[48:47.40] elements than array two then it will be
+[48:49.64] everything different and all different
+[48:51.56] will go into the set and if all
+[48:53.16] different go into the set it will be N1
+[48:55.52] over here N2 over here so the total
+[48:57.96] elements in the set will be N1 + N2 if
+[49:01.04] every element is unique if every element
+[49:02.92] is unique so can I say the time
+[49:04.76] complexity stands at for the first
+[49:07.24] insertion n log n for the second N2 log
+[49:10.80] n and then a beo of N1 plus N2 at the
+[49:14.64] worst case and the space complexity is
+[49:17.36] we're using an external set which might
+[49:19.88] end up taking N1 plus n at the worst
+[49:21.64] case if all of them are unique and then
+[49:24.28] we using an Union array in order to
+[49:26.52] return the answer again this this is not
+[49:29.16] used to solve the problem this is used
+[49:31.00] to return the answer please uh
+[49:33.92] specifically mention that to the
+[49:35.12] interview that this N1 plus N2 space is
+[49:38.12] used to return the answer I'm not using
+[49:40.08] in order to solve the problem I'm just
+[49:41.96] using it in order to return the answer
+[49:44.04] got it this will be the time complexity
+[49:47.08] and space complexity of the Brute Force
+[49:48.60] approach so if you want to submit the
+[49:50.20] Brute Force solution again the problem
+[49:51.72] link will be in the description make
+[49:53.52] sure to add hash include b/ STD because
+[49:56.28] in this function snippet it was not
+[49:58.12] there and this is how the code will look
+[50:00.12] like in case you want the Java and
+[50:01.68] python code there will be links in the
+[50:04.04] description for the notes you can go
+[50:05.24] over there and check it out so we done
+[50:07.24] with the Brute Force approach now I will
+[50:09.08] be moving to the optimal approach and we
+[50:12.32] will be taking advantage of the fact
+[50:14.80] that both the arrays are sorted and we
+[50:17.00] will be using something like a
+[50:18.24] two-pointer approach it's a very easy
+[50:20.96] approach so what I will do is I will
+[50:23.76] keep an eye pointer over here I will
+[50:26.24] keep J pointer over here so I'll just
+[50:28.36] erase these couple of lines perfect so
+[50:31.28] I'll keep an ey pointer on the first
+[50:34.12] element of the first array and I'll keep
+[50:35.88] a JP pointer on the first element of the
+[50:37.76] second array and now I will declare a
+[50:40.40] union list and initially remember the
+[50:44.16] list will be empty it will have a size
+[50:47.08] zero it doesn't have any elements
+[50:48.72] initially and now I will be like okay
+[50:52.44] I'm over here and I'm over here if you
+[50:55.12] have to look at the union array the
+[50:58.28] first element of the Union array will be
+[50:59.92] the smallest one will be the smallest
+[51:01.64] one so if I have to take the smallest
+[51:03.44] one who among it is a smaller one
+[51:06.04] obviously one so what I'll do is I'll
+[51:08.16] take the one into the Union array and
+[51:10.40] I'll move the I pointer to the next
+[51:12.40] index I'll move the I point to the next
+[51:14.48] index now if I have to again take
+[51:17.32] something into the Union array I'll
+[51:19.24] definitely take one because it's still
+[51:21.56] smaller than two but I say wait the last
+[51:25.88] element I took into the Union array was
+[51:27.72] one and Union means no repetion just
+[51:31.92] unique elements like fine the last one
+[51:35.12] was one so I would not take it I'm like
+[51:37.40] okay I have a two I have a two so the
+[51:39.52] next element I have to take it'll be two
+[51:42.08] so I can take two from either so I'll
+[51:43.72] take just two from the first and this
+[51:46.32] two was not equivalent to this so I took
+[51:48.48] it and now I'll move the I I'll move the
+[51:52.36] now if I have to again take between
+[51:54.36] three and between two I'll actually take
+[51:56.32] two because Union always takes smaller
+[51:59.96] which is at the front but this two is
+[52:02.16] already here so the last element is
+[52:04.36] equalent so I'll not take it I'll not
+[52:06.80] take it but I will move the pointer I
+[52:08.96] will move the pointer because it won't
+[52:11.76] be taken because it's already there so
+[52:13.36] I'll just move the pointer correct next
+[52:16.00] I'll compare three and three I can take
+[52:17.96] any so I'll just take the three I'll
+[52:20.16] move the pointer next four and three but
+[52:23.72] wait this three is already here do not
+[52:26.00] take it
+[52:27.08] move the pointer four and four again
+[52:29.64] take one and four and move the pointer
+[52:32.36] this time five and four four is already
+[52:35.24] there because the last one is there so
+[52:37.36] move it four is already there so move
+[52:41.32] it this time compare five and five same
+[52:45.36] take any one of them and move the
+[52:47.40] pointer next it's over please please
+[52:52.00] Focus the iteration on one of the arrays
+[52:54.84] is over the iteration
+[52:57.00] on one of the arrays is over if the
+[52:59.56] iteration on one of the arrays is over
+[53:01.48] what you will do is you will just say
+[53:04.00] okay five you're already there six
+[53:07.40] you're not there go so if iteration on
+[53:10.76] one of the arrays is over you will
+[53:13.20] you'll not compare anymore but you will
+[53:14.84] iterate in the remaining portion of the
+[53:17.08] other array you will iterate in the
+[53:18.96] remaining portion of the other array and
+[53:21.04] you will check if it's equivalent to
+[53:22.52] back or not and then you'll keep on
+[53:24.56] inserting into the Union so once it's
+[53:27.72] done you will have your union array
+[53:29.64] ready and this will be your answer got
+[53:32.60] it let's code the optimal solution again
+[53:34.48] the problem link will be in the
+[53:35.68] description so we given this uh function
+[53:38.20] sorted array where we have to return a
+[53:40.28] list and we given a couple of arrays
+[53:42.92] right so at first I'll do one thing I'll
+[53:45.32] just figure out the size of the first
+[53:47.24] array which is something like this and
+[53:49.32] I'll also figure out the size of the
+[53:50.64] second aray which is something like this
+[53:52.36] and now I know I'll have two pointers I
+[53:54.52] which will be pointing to the first
+[53:55.56] index of the first array and J which
+[53:57.48] will be pointing and then we will also
+[53:59.08] have a list which will be the answer
+[54:02.40] okay which is Union array and then at
+[54:04.88] the end of the day we will be returning
+[54:06.24] this particular list this is something
+[54:08.56] we do now let's say we are comparing
+[54:12.04] both we'll be comparing till both
+[54:15.16] pointers are pointing somewhere which
+[54:17.20] means we'll be comparing it till either
+[54:19.88] I is lesser than N1 in the first array
+[54:22.68] and J is lesser than N2 which means both
+[54:26.48] of them are still somewhere in both the
+[54:28.52] arrays and we say Hey listen on the
+[54:31.36] first array if that's smaller than the
+[54:34.12] second AR both the pointers are pointing
+[54:36.84] if the first element is smaller than the
+[54:39.64] other element in the other then I say
+[54:41.60] okay I'll take this I'll take this but
+[54:43.88] before taking I need to have a
+[54:45.72] comparison if you remember when we are
+[54:47.76] taking this one the union ARR already
+[54:50.04] had a one so you did not take it right
+[54:53.16] so I'll be like I need to compare so
+[54:54.80] I'll be like okay let's take Union array
+[54:57.20] what's your last El it's like back is
+[55:00.32] this not
+[55:01.80] equivalent to the current array I if
+[55:04.88] this is not okay cool let's take
+[55:08.20] it like fine I'll take it no problem and
+[55:12.72] irrespective of whether you take it or
+[55:14.96] you do not take it you'll move because
+[55:17.16] if you take it it's fine if you do not
+[55:19.28] take it that means that element is
+[55:21.12] equivalent to something which is inside
+[55:23.00] Union array so you will not be
+[55:25.00] considering that element anymore so move
+[55:27.12] but but if you're doing a DOT back the
+[55:30.36] union ARR has to have something what if
+[55:33.28] what if I come to a case where this is
+[55:35.12] for the first time and the union array
+[55:37.60] is empty then you always take the one if
+[55:40.08] the union array is empty because it's
+[55:41.36] the first time if it's the first time
+[55:44.40] which means Union array do
+[55:48.36] size is equal to zero then you sorry or
+[55:52.96] you always take it so if the size is
+[55:55.12] zero it means it's for the first time
+[55:57.64] just take it and similarly you go to the
+[55:59.76] else which means the other element is
+[56:01.84] the smaller the other element in the B
+[56:04.12] array is smaller if that's the case cool
+[56:07.12] I'll just copy paste the same thing
+[56:08.44] maybe I'll just copy paste the same
+[56:09.76] thing I'll copy paste the same thing and
+[56:12.28] I'll say should not be equal to B of J
+[56:14.60] should not be and if it is not then I'll
+[56:17.28] just push in B of J I'll just push in B
+[56:19.20] of J once this is done I I'll just move
+[56:22.24] the J Point quite same quite same and
+[56:25.60] after this is completed I will return
+[56:28.28] but wait what if while iterating this
+[56:32.12] got exhausted the first array got
+[56:34.60] exhausted so there must be someone left
+[56:36.84] if you remember our case we completed
+[56:39.56] the iteration and there were still two
+[56:41.28] elements left there were still two
+[56:42.92] elements left what do you that means J
+[56:44.88] would be somewhere here so you need to
+[56:46.44] iterate for this these remaining
+[56:48.08] elements so WR it so you say okay listen
+[56:51.64] if the first was exhausted J will still
+[56:53.92] be there and if J is still there let's
+[56:56.28] let's do the same thing I'll say Hey
+[56:59.04] listen I'll do the same thing which
+[57:01.08] means okay fine if you're not equivalent
+[57:03.76] go in and just keep on moving and what
+[57:06.24] if the second got exhausted so I will
+[57:08.44] still be there there is someone still in
+[57:09.88] the first and if there is someone still
+[57:11.80] in the first you simply take take it
+[57:14.08] without any thinking yes without any
+[57:16.80] thinking you simply take it and once
+[57:18.84] you've done this once you've done this
+[57:20.32] you can return it so this is the
+[57:22.32] remaining array that you just iterate
+[57:24.84] through once you've done this you can go
+[57:26.96] ahead and really let's submit I'm I'm
+[57:29.52] sure that I write error free code oh
+[57:32.64] yeah I do so at one go I've submitted
+[57:36.28] this code and this is exactly how it
+[57:38.84] will look like now if I have to ask you
+[57:41.64] the time complexity of this particular
+[57:43.72] code what will be the time complexity of
+[57:47.72] this particular code can I see I'm
+[57:52.00] iterating in some way throughout this
+[57:55.20] entire somewhere iting throughout this
+[57:57.04] entire and some I'm also hting
+[57:59.56] throughout this entire because no matter
+[58:03.24] what we do we will itate through every
+[58:04.96] element no matter what we do we will
+[58:06.92] beating through every element do we do
+[58:09.72] anything apart from this yeah we
+[58:11.64] definitely enter that into the Union
+[58:13.80] array but do we iterate or do we do any
+[58:16.36] fall Loops or any Loops apart from this
+[58:18.88] no steps will always be like this you'll
+[58:21.72] be either here either here either here
+[58:23.24] either here either here either here
+[58:24.52] either here so that that means it'll be
+[58:28.00] of N1 plus N2 yeah there there are lot
+[58:30.56] of Loops lot of these but at the end of
+[58:32.48] the day if you think carefully you'll
+[58:34.24] actually be visiting every element once
+[58:36.56] so N1 plus N2 is the time complexity and
+[58:39.40] space you can say I'm just using N1 plus
+[58:41.72] N2 at the worst case if all the elements
+[58:43.96] are unique and that is for returning the
+[58:46.08] answer not for solving not in my
+[58:48.20] algorithm using that to return tell that
+[58:51.20] specifically to the interviewer and
+[58:52.92] that's how your optimal solution will
+[58:54.68] look like in order to Union to sorted
+[58:57.76] arrays so what I can say is I'll go back
+[59:00.40] to the sheet the union is done now it's
+[59:02.92] time to understand the intersection of
+[59:05.12] two sorted arrays so what is the problem
+[59:07.20] statement State intersection of two
+[59:09.76] sorted arrays again the term sorted is
+[59:13.40] very important if you want to go for the
+[59:16.40] optimal solution so keep that in mind
+[59:18.60] okay what do you mean by intersection
+[59:20.92] the element that is present in both are
+[59:22.96] remember this present in both present in
+[59:27.16] both so if I have to write the
+[59:28.96] intersection of A and B sorted arrays so
+[59:32.80] if I see one I don't see a one here so I
+[59:35.60] will not take it if I see two I actually
+[59:38.36] see a two over here so there has to be a
+[59:40.64] corresponding match so I see a two over
+[59:43.12] here so I'll take it if I see again two
+[59:45.88] there is no cor like there is a two but
+[59:48.08] there is this two has already been
+[59:49.48] occupied like is already been matched
+[59:51.84] with this so there is no corresponding
+[59:53.24] two for this so I I do not take it if I
+[59:55.88] see three for this three I can say I
+[59:58.08] have a corresponding three so I'll take
+[59:59.84] it now for this three I have another
+[60:02.60] corresponding three so I'll again take
+[60:04.68] it remember over here repetion of
+[60:06.76] elements is allowed because you are
+[60:08.80] seeing present in both next four no one
+[60:12.76] five yes there is a corresponding five
+[60:14.96] six there is a corresponding six as well
+[60:17.36] so this will be your intersection array
+[60:21.64] right so if this question comes up in an
+[60:23.64] interview the first solution will
+[60:25.56] definitely be a brute for solution and
+[60:27.76] what will be the brute for solution we
+[60:29.56] are saying that for every element there
+[60:31.84] should be a corresponding element for a
+[60:34.04] two there should be another two for this
+[60:35.92] two there is no another two so we do not
+[60:37.76] take it so we just take one two so for
+[60:39.92] every element there has to be a
+[60:41.72] coresponding element in the other R
+[60:44.44] we'll just follow the same process we
+[60:46.32] will say okay fine we'll pick up one and
+[60:48.92] we will check if there's a one if there
+[60:51.28] is we will take it we will pick up two
+[60:53.68] and we will check if there is a two and
+[60:55.56] we say we have a two so we take this two
+[60:57.96] then we will say we will pick up this
+[60:59.92] two and we will see if there's a two
+[61:02.00] there is but this has been taken by this
+[61:05.04] so he won't take it so it's like picking
+[61:08.16] up one element and checking but at the
+[61:10.44] same time keeping a track if someone has
+[61:13.24] been used previously or not so what I
+[61:16.72] know is I have to keep a track if
+[61:18.60] someone has been used previously or not
+[61:20.76] so what I'll do is I'll probably create
+[61:23.08] a visited array I'll probably create a
+[61:25.40] visited AR AR which will be marked as 0
+[61:28.48] 0 0 0 0 which means they haven't been
+[61:32.32] used they haven't been used as of now
+[61:34.40] and now what I'll do is I'll start with
+[61:36.44] the first element in the first array you
+[61:39.04] can also start with the first element in
+[61:41.12] the second array as well but I'll start
+[61:43.52] with the first element in the first
+[61:44.92] array and I'll say one are you here are
+[61:48.12] you here are you here I'll just go
+[61:49.96] through the entire B and I will not find
+[61:52.52] a one so if I do not find a one I will
+[61:55.04] end up not taking this into my
+[61:58.36] intersection array and I will move
+[62:00.32] forward next two are you here yes I here
+[62:05.20] so I'll take this
+[62:06.64] two the moment I take this two I will
+[62:09.40] mark it as visitor I'll say this two has
+[62:11.80] been taken by someone this two has been
+[62:13.48] taken by someone fine we have one two
+[62:16.20] who found its corresponding two in the
+[62:18.04] other array now I'll move ahead when I
+[62:20.96] move ahead I have a two and I'll see for
+[62:22.96] a two I see a two but it's taken now I
+[62:26.00] see a three so since it's a sorted array
+[62:30.68] I'm sure that Beyond this there will be
+[62:32.72] no two so I stop I sto I'll be like I
+[62:35.20] did not find next three let's check two
+[62:39.52] no three yes yes let's take three and at
+[62:44.40] the same time see you are taken you are
+[62:46.84] taken let's go ahead three again
+[62:52.52] two again two no not equal to three
+[62:55.08] three yes equal
+[62:56.52] but but but taken this guy is already
+[62:59.12] committed so I'll not take him next oh
+[63:02.04] he's not committed and that's three so
+[63:04.44] let's take this three and Mark it as one
+[63:07.68] next four now when we have four do we
+[63:10.96] have a four four four four no do we need
+[63:13.96] to check for the next no it's a sorted
+[63:16.00] array so if five like till five you did
+[63:18.60] not get it beyond that everything will
+[63:20.68] be greater than five so no need to check
+[63:22.28] it next five five will'll get it here so
+[63:25.88] take five and you'll mark it six six
+[63:28.32] you'll get it here so you'll take it and
+[63:29.84] Mark it and the iteration is over once
+[63:32.60] the iteration is over you will have your
+[63:34.72] answer array yes you will have your
+[63:36.36] answer array and once you have your
+[63:37.92] answer array that will be the brute
+[63:39.84] force method got it so if I have to
+[63:42.56] write the pseudo code what I'll do is
+[63:44.72] I'll say N1 is the size of the a array
+[63:47.32] N2 is the size of the B aray and I'll
+[63:49.36] probably keep a visited of size N2 and
+[63:52.44] I'll mark every one of them as zero once
+[63:56.00] I've done this I will try picking up one
+[63:59.28] element from the first array always and
+[64:02.84] for that one element remember we have an
+[64:05.40] answer intersection which we have to
+[64:07.48] fill for that one element I will go
+[64:10.40] through J and I'll go through the second
+[64:12.80] array now what am I doing I'm saying
+[64:15.08] okay I is zero which means I standing
+[64:17.12] here and I'm moving across the entire
+[64:18.92] array that's that is that is what I'm
+[64:21.44] doing right so I will be like okay if
+[64:24.08] array of I is is equal to equal
+[64:28.16] to array of BJ if it is if it is that
+[64:31.64] means for this a ofi we find a
+[64:34.92] corresponding in the B AR and if you
+[64:37.56] find it we can take it but wait has it
+[64:39.64] been taken previously and this is where
+[64:42.48] the visited array will tell me the
+[64:44.80] visited of the jth index so this is the
+[64:47.88] indexing of the jth index are you not
+[64:50.60] taken oh you're not taken perfect please
+[64:54.16] come to our answer so this will be the
+[64:56.92] corresponding added so I'll say visited
+[64:59.96] of J has been taken so please mark it
+[65:02.16] and you can break out there's no need to
+[65:03.92] do any further you can break out once
+[65:05.92] you have done this perfect and what's
+[65:07.92] the other thing if this is this
+[65:10.00] condition is false we just move ahead
+[65:12.40] but be sure if at any moment a of J
+[65:17.40] sorry uh if at any
+[65:19.40] moment the array of B and J is greater
+[65:24.16] than array of
+[65:26.28] a of I we say okay we've exceeded you
+[65:29.28] will never find even if you go ahead so
+[65:32.24] this will kind of truncate this Loop
+[65:34.92] just in case you are getting someone
+[65:36.40] greater there's no point in going
+[65:37.88] forward there's no point in looping so
+[65:39.40] you stop and you can just stop it here
+[65:42.36] so for every I is for every I you will
+[65:45.40] Loop through the entire array B and
+[65:48.72] you'll try to find someone same and
+[65:51.52] which is not taken if it is not then you
+[65:53.80] kind of add it to your answer and mark
+[65:55.48] it it has taken and you break out so you
+[65:57.28] keep on doing for every eye and at the
+[65:59.28] end of the day you will have your answer
+[66:00.80] AR so if I have to determine the time
+[66:04.04] complexity of this Brute Force approach
+[66:06.44] what will it be obviously two Loops
+[66:08.48] running so that's an N1 cross N2 are the
+[66:11.44] worst case if the break and all these
+[66:13.92] things never happen at the worst case N1
+[66:16.84] cross N2 and what is the space
+[66:18.92] complexity obviously the space
+[66:20.64] complexity is B go of N2 in this case
+[66:23.96] imagine you apply a visitor array for
+[66:26.20] this you can do the reverse as well
+[66:28.80] where you have a visited for this and
+[66:31.12] you iterate for this and you check for
+[66:32.92] the corresponding in the other array you
+[66:34.80] can do how you wish to that is okay so
+[66:38.12] we can say that that so we can say that
+[66:40.88] in the order in which we apply the
+[66:42.88] algorithm the space complexity might
+[66:44.84] change so logically it will make sense
+[66:48.64] to have the algorithm in such a way that
+[66:51.40] for the smaller array is for the smaller
+[66:53.84] array we have the visited array so that
+[66:56.20] the space complexity is minimum but it's
+[66:59.84] okay this is what you have to tell to
+[67:01.32] the interviewer that this is my Brute
+[67:02.88] Force approach so in case you want to
+[67:05.20] try out the problem the link will be in
+[67:06.80] the description and this is how the root
+[67:09.52] Force solution code will look like but
+[67:11.60] this is something which is taking a lot
+[67:13.40] of time yes this is taking N1 into N2
+[67:16.68] and that's a lot of time so we'll be
+[67:19.76] trying to optimize this and let's
+[67:21.80] understand how the optimal solution will
+[67:23.16] look like so the optimal solution
+[67:24.76] depends on on both the arrays being
+[67:26.76] sorted since they are sorted we will be
+[67:29.48] applying something as a two-pointer
+[67:31.08] approach and it's going to be very
+[67:32.80] simple what we do is we basically keep
+[67:35.76] two poters one at this one and the other
+[67:39.04] one at this and now we will be taking
+[67:42.88] like we will be taking the intersection
+[67:44.32] of both so tell me something if this one
+[67:48.20] like this is the first case is not
+[67:50.16] equivalent to this two can I definitely
+[67:53.56] say that we do not have any occurence of
+[67:55.96] one can I definitely say that I can so
+[67:58.32] I'll be like there's no occurrence of
+[67:59.76] one please move please and then I'm like
+[68:02.64] at two and at two like they equal oh
+[68:05.20] there is an occence there is an Ence so
+[68:07.52] be like let's take two and if there is
+[68:09.48] an Ence can I say this two is for this
+[68:11.88] two right so I'll move both I'll move
+[68:14.92] both because they matched they matched
+[68:18.52] let them put into a relationship and
+[68:20.60] let's move okay now we have two I'm like
+[68:23.96] three okay for this two it's lesser than
+[68:26.36] three so I definitely cannot have a
+[68:28.52] partner for two so I'll be like not an
+[68:31.36] issue let's move now this three is a
+[68:34.44] partner of this three so let's take
+[68:36.48] three let's try to move both we have
+[68:40.04] tried to move both now and now this
+[68:41.92] three says okay fine I can still have a
+[68:44.36] partner so again take three and move now
+[68:48.60] this four says I'm lesser than five so I
+[68:50.88] definitely cannot have a partner now the
+[68:53.28] five says I'm equivalent to you so five
+[68:56.32] will be a partner let's move now both so
+[68:58.56] whenever they match move both if they do
+[69:00.96] not match then just
+[69:03.88] move next six equivalent to six so I
+[69:07.56] take six and it moves I run out of
+[69:10.04] Partners I run out of Partners remember
+[69:12.32] this I've taken six and the moment I
+[69:14.80] move both this I exceeds so there's no
+[69:18.00] one else to be compared with there's no
+[69:20.36] one else so there there's no one else
+[69:22.76] who will be partner with so it's over so
+[69:25.52] once you have done both the pointers
+[69:27.32] this is how it will look like and this
+[69:29.24] will be your answer quite simple so if I
+[69:31.52] have to code this uh the problem link
+[69:33.20] will again be in the description it's
+[69:35.40] going to be very simple I is going to be
+[69:37.16] zero J is going to be zero and I'll be
+[69:39.76] keeping a vector int and so and at the
+[69:42.12] end of the day I will definitely be
+[69:44.64] returning
+[69:45.80] it and I know one thing for sure I'll be
+[69:48.84] iterating in both of them so I lesser
+[69:51.32] than n and J less than n quite and now I
+[69:55.00] know one thing
+[69:56.12] if this particular a of I is lesser than
+[69:58.64] b of J for an example obviously if a is
+[70:02.92] smaller it doesn't have a partner please
+[70:04.48] move you don't have a partner please
+[70:05.88] move and I'm like what if it's the other
+[70:08.52] way the other way means what if B is
+[70:11.56] smaller then definitely the B Guy cannot
+[70:15.08] have a
+[70:16.04] partner sorry please move but if it's
+[70:18.96] not the case they equal you guys can go
+[70:22.72] into a relationship isn't it so I'll be
+[70:25.00] like okay okay please go and both of
+[70:28.04] them are SE so doesn't matter which one
+[70:30.00] you insert and both of them can go ahead
+[70:32.32] because you guys are committed now you
+[70:34.32] cannot have dual relationship go ahead
+[70:36.20] and let the other ones find theirs fine
+[70:39.44] I'll go ahead once this is done the
+[70:42.04] answer will be stored here and that's it
+[70:44.20] so if I I'll just go go ahead and submit
+[70:46.64] it so if I submit it I will see that
+[70:48.84] this is running running running running
+[70:51.64] I'm absolutely fine yeah so what will be
+[70:54.76] the time C lexity can I say the moment I
+[70:57.88] run out of partners for someone that's
+[70:59.84] when I end but what can be the worst
+[71:02.92] case when you like keep on going keep on
+[71:05.44] going since I'm moving I I'm moving J so
+[71:08.40] the worst case can be once this executes
+[71:12.28] the other time this executes the other
+[71:14.16] time this the other time this so if
+[71:16.32] you're like i j i j i j i j i IG so we
+[71:20.72] moving like one by one so it's like it's
+[71:23.84] more like one here you're here this
+[71:27.88] Moves In The Next Step this Moves In The
+[71:30.64] Next Step this Moves In The Next Step
+[71:33.16] this Moves In The Next Step this Moves
+[71:35.52] In The Next Step this Moves In The Next
+[71:37.68] Step this Moves In The Next Step this
+[71:39.56] moves so moving one by one by one and
+[71:42.76] this one has an N1 length this one has
+[71:44.40] an N2 length can I say the time
+[71:46.24] complexity will be N1 plus N2 that is in
+[71:50.48] the worst case that is in the worst case
+[71:53.28] can I say the space complexity are we
+[71:55.32] using any extra space the answer to that
+[71:57.08] is I don't think so we're not using any
+[71:59.64] extra space so the optimal solution has
+[72:02.28] a Time complexity and space complexity
+[72:05.04] of this that that is seen on the screen
+[72:09.12] so I can say that have successfully
+[72:11.88] solved the optimal solution of
+[72:14.00] intersection of two sorted arrays so I
+[72:16.76] can go back into the sheet and I can say
+[72:19.36] this is done as well so with this we
+[72:21.48] cover up nine problems from the easy
+[72:24.08] section of the array I know this was a
+[72:26.20] long video and I hope you enjoyed every
+[72:28.52] bit of it so please please do consider
+[72:31.28] giving us a like because I put have
+[72:33.36] enough effort for this video and you can
+[72:35.80] you can understand by the voice so to
+[72:38.08] continue our tradition if you have
+[72:39.72] understood everything do comment
+[72:41.04] understood and also make sure you do the
+[72:43.16] assignment there was an assignment that
+[72:45.04] you have to WR rotate the aray by D
+[72:46.92] places so make sure you do the
+[72:48.36] assignment and drop the code in the
+[72:50.36] comments and if you are new to our
+[72:52.16] Channel please please do consider
+[72:54.16] subscribing to us and if you have
+[72:55.72] haven't followed me on all my social
+[72:57.40] media handles uh LinkedIn Instagram
+[72:59.92] Twitter all the links will be in the
+[73:01.84] description do join our telegram group
+[73:03.92] with this I will be wrapping up this
+[73:05.36] video Let's SP in some other video till
+[73:06.76] then bye-bye take
+[73:08.88] care
+[73:10.40] Bren don't forget your
+[73:13.68] golden I will

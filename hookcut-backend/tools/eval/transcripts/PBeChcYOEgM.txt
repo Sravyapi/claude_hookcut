@@ -1,0 +1,2679 @@
+[0:00.16] people are able to prevent failure modes
+[0:03.52] from happening. Just knowing your
+[0:05.20] customer is so important. But as you
+[0:07.04] start to grow, you need people to take
+[0:09.36] your broad vision and convert it into
+[0:11.28] product. And therefore, you need people
+[0:13.28] who understand these problems very
+[0:15.28] deeply and probably even better than me.
+[0:16.96] So I traded money for opportunity and it
+[0:19.76] was such a fantastic decision. How are
+[0:22.24] you looking at AI from where Indian
+[0:25.04] founders can build?
+[0:30.48] This is definitely like a very
+[0:32.00] meaningful shift. Indian founders should
+[0:34.40] trying to probably build an
+[0:36.56] infrastructure layer company. What is
+[0:38.80] the systemic problem? Why innovation is
+[0:40.72] lacking?
+[0:41.36] >> Most of software innovation like really
+[0:43.76] happened in the world after internet
+[0:45.20] existed. We are living in a pre-
+[0:47.44] internet era in healthcare. uh like no
+[0:50.48] information is actually getting
+[0:51.92] exchanged.
+[0:52.48] >> What's your thought on AI in healthcare?
+[0:54.48] >> Bet that we have sort of really taken is
+[0:56.16] that u
+[1:01.84] hello before we get started with this
+[1:03.76] episode I quickly wanted to share that
+[1:05.68] we are now a part of the Zerodha media
+[1:07.76] network. Thank you so much for watching.
+[1:10.08] >> Welcome to the Indian Silicon Valley
+[1:11.60] podcast. I'm your hoji with a founder
+[1:14.24] who has done things which are usually
+[1:16.40] very challenging and considered almost
+[1:18.08] improbable from the outside. This
+[1:20.00] founder has built perhaps the largest
+[1:21.76] and the fastest growing vertical
+[1:23.28] software company from India in US
+[1:25.60] healthcare which seems like a blackbox
+[1:27.20] from outside and having started
+[1:28.88] initially in India and then moving to
+[1:30.88] the Bay Area. Join me in welcoming Amin
+[1:33.36] Shashank who's the co-founder and CEO of
+[1:35.60] innovative. Thank you so much Abina for
+[1:37.44] joining me today.
+[1:38.32] >> Thank you so much for having us. I'm
+[1:40.00] super delighted to be hosting you
+[1:41.28] because I think uh like I was mentioning
+[1:43.04] right um think of building a vertical
+[1:45.52] software company that's challenging
+[1:47.04] building it from India that's more
+[1:48.96] challenging and then in healthcare in
+[1:50.72] the US even more challenging and you've
+[1:52.64] ticked off all of those boxes and how uh
+[1:54.96] I think you spoke on one of the podcasts
+[1:56.72] mentioning that you're on 250 million uh
+[1:59.04] in AR perhaps the fastest moving sort of
+[2:01.92] vertical software company in the world
+[2:03.76] today um I want to dive deep into all of
+[2:06.80] those things uh but I do want to
+[2:08.64] understand initially actually to uh to
+[2:10.88] get a sense of how you got started
+[2:12.40] because you also started super young
+[2:13.84] from what I understand. Uh so how did
+[2:16.24] the bug of entrepreneurship sort of bite
+[2:18.24] you? What was it that got you started on
+[2:20.88] this journey? If you can lead with that
+[2:22.72] that we give context and we go further.
+[2:25.36] >> Yeah. No habit is sort of like shared
+[2:27.52] that like
+[2:29.68] so I feel like I think
+[2:32.80] Karapur like we went to like undergrad
+[2:35.20] at Karapur KGP basically played like
+[2:37.76] such a pivotal role in shaping us like
+[2:40.24] as individuals like uh two of us
+[2:42.48] basically as founders kind of and myself
+[2:44.72] like I think from Karapur Sandy like is
+[2:47.04] our third co-founder he's from Akan but
+[2:50.40] right when we were at KGP like in the
+[2:53.04] fourth year we started something part
+[2:55.04] like the Karapur Consulting Group like
+[2:57.12] uh uh now this the thesis was basically
+[2:59.52] that Indian academic institutions and
+[3:02.24] industry collaboration is not really
+[3:03.84] like I think uh strong and therefore if
+[3:06.40] you could basically figure out a way for
+[3:09.12] these uh entities to collaborate like
+[3:11.68] deeply you could really like I think
+[3:13.36] like set up like the innovation uh
+[3:15.28] engine like uh both at like IIIT as well
+[3:18.08] as uh uh these companies getting like
+[3:20.40] incredible research going out of there
+[3:23.60] that was an incred incredible hit like
+[3:26.32] right when we sort of really started but
+[3:28.16] we didn't know like how to make money
+[3:29.68] doing that uh because all of the money
+[3:31.60] that was really coming from these
+[3:33.28] institutions was going to like karat we
+[3:35.68] didn't make like any money in the middle
+[3:37.68] right uh um
+[3:39.84] >> uh but that gave us like I think like a
+[3:41.92] pretty shaping experience uh early in
+[3:44.40] life where uh we could go to companies
+[3:47.44] we could go to uh and pitch them like
+[3:49.52] and if you had like a strong product and
+[3:51.36] like I karapur or like I network was a
+[3:54.32] strong product to sell. Uh uh and if you
+[3:57.04] could have like a strong product, you
+[3:58.80] you very quickly sort of realized uh
+[4:01.20] that people are willing to pay money and
+[4:03.20] what does it take to get get converted
+[4:05.28] into a contract? What does it sort of
+[4:07.04] really take to build out a company? what
+[4:09.12] does it take to build out a team and
+[4:11.04] what does ex working with exceptional
+[4:13.12] people like who were around you sort of
+[4:14.88] really meant uh and and I think like
+[4:18.16] that was an incredible lesson for us
+[4:21.36] like uh so so we really knew like I
+[4:23.68] think like coming out of KGP that we are
+[4:25.44] going to go start something like at some
+[4:27.12] point like this
+[4:28.96] >> uh this was 2010 like uh uh so we knew
+[4:32.48] like we going to go start something at
+[4:34.40] some point like we just didn't know what
+[4:36.80] uh right uh so kind went to do his um
+[4:40.56] masters in the US like he came to Boston
+[4:42.40] he basically studied intellectual
+[4:43.68] property innovation monetization a bunch
+[4:45.60] of things like that I went to this
+[4:47.52] company called in the solvent which was
+[4:49.36] like a fairly large fortune 500 company
+[4:51.36] did manufacturing uh uh across the world
+[4:54.16] I got to work on such incredible
+[4:58.08] problems they were they had 210 or
+[5:01.28] something companies at that point uh and
+[5:03.68] were doing manufacturing across
+[5:05.20] basically a bunch of them and IoT was
+[5:07.84] new data was new, cloud was new, all of
+[5:10.48] these things were like like getting
+[5:12.08] innovated out there. So I got to work on
+[5:14.72] creating what could be the intelligent
+[5:16.32] cloud layer on top of this entire thing
+[5:19.04] like how do you connect all of these
+[5:20.32] sort of like things together? How can
+[5:22.00] you get a mobile phone to sort of really
+[5:23.60] like control all of these things? Uh in
+[5:26.00] general I went to visit China like I saw
+[5:30.40] the scale of what China was sort of
+[5:32.32] really doing. It was like mindboggling
+[5:34.40] like uh they had
+[5:37.28] factories of the sizes of cities like uh
+[5:40.00] you could go into Bangza like I think
+[5:42.00] like like at that point and uh start
+[5:44.56] walking and like keep walking for days
+[5:46.24] and like the factories won't like uh it
+[5:49.36] was like mindboggling for me like
+[5:50.72] especially like as a 21 22 year old
+[5:53.44] person like what what is happening here
+[5:56.08] right like uh and so so I sort of like I
+[5:59.84] think like spent a ton of time between
+[6:01.76] China Bangalore Dallas um like these
+[6:05.04] were the three centers in which
+[6:06.48] manufacturing was happening in China,
+[6:08.16] engineering design was happening in
+[6:09.52] Bangalore and then like I think like
+[6:11.28] product specifications were sort of
+[6:13.04] really happening like uh in Texas. So uh
+[6:15.84] so I got to sort of really learn from
+[6:19.20] best in the world in uh some way like
+[6:21.84] how do you sort of really build like a
+[6:23.28] scalable product? How do you deploy it?
+[6:25.60] And I was sort of really working as the
+[6:27.44] chief of staff to the person like who
+[6:28.96] was running this business. So um so I
+[6:32.08] got to see basically what business
+[6:33.92] building at scale looks like. We got
+[6:35.76] like a bunch of money like I think uh as
+[6:38.00] an entrepreneurship like project and uh
+[6:41.28] when I joined I wrote the first document
+[6:45.12] on what does this product look like?
+[6:47.76] And when I left three and a half years
+[6:49.36] later, it was $70 million in debit. All
+[6:52.16] right. Like uh so it was just like such
+[6:54.80] an exhilarating experience for someone
+[6:58.16] coming right out of undergradu
+[7:00.96] that holy like this is so amazing,
+[7:04.40] right? Like uh so I got to sort of learn
+[7:06.72] a ton like also learned a bunch about
+[7:09.04] like what does building a product mean?
+[7:10.88] Like how do you sort of really take it
+[7:12.32] to market? What does marketing mean?
+[7:14.48] What does P&Ls basically mean? like uh
+[7:16.88] how do you think about finance that all
+[7:18.64] of this is not like I think like some
+[7:20.16] engineering project that you do it and
+[7:21.76] like it's great like I think this has to
+[7:23.68] produce money because like when you work
+[7:25.20] in a fortune 500 company like they're
+[7:27.44] very very stringent on like I think how
+[7:29.44] much bottom line how much top line and
+[7:31.20] all of those sort of like things it was
+[7:32.72] just an incredible experience and the
+[7:35.12] thing is like I think like when I
+[7:36.32] graduated out of like KGP like I had an
+[7:38.32] offer like to join someone at twice the
+[7:40.80] salary that was like paying me and so I
+[7:44.08] made a conscious choice to basically go
+[7:45.68] do this job like I think like at half
+[7:47.28] the salary like uh uh but it was because
+[7:50.08] the experience here wouldn't have
+[7:52.16] basically been anywhere close to the
+[7:53.76] experience that like I think twice the
+[7:55.12] money would have sort of given me like
+[7:56.96] uh uh so that was like a bet that I had
+[8:00.40] sort of really taken I don't think like
+[8:01.92] it was a big bet like but uh personally
+[8:04.96] uh I bet like this was the right thing
+[8:06.72] for me to do like no one really went in
+[8:08.88] manufacturing from IIT so like everyone
+[8:11.28] is like I want to go to Mckenzie and I
+[8:13.44] want to basically go to like a bunch of
+[8:16.32] supply chain companies or like
+[8:17.84] e-commerce companies. I was like dude I
+[8:20.32] study mechanical engineering and I want
+[8:22.00] to go uh do like something that I uh
+[8:24.48] studied and um and this is like best in
+[8:27.20] breed like opportunity that I can sort
+[8:28.96] of get. I negotiated really hard for my
+[8:32.08] role like uh I really said that I want
+[8:34.88] to do something that is meaningful for
+[8:36.48] the company that would give me
+[8:37.84] visibility. I don't want to basically do
+[8:39.76] something. So I traded money for
+[8:42.16] opportunity and it was such an f
+[8:44.16] fantastic decision like to make as I
+[8:46.08] want. Uh um I got to work with like the
+[8:48.64] India CEO of in the solar brand like at
+[8:50.56] that point I got to basically uh work
+[8:53.04] with the global CEO of in the solac at
+[8:55.68] that point and as a 22 23 year old like
+[8:58.08] what more do you want? Yeah right like
+[9:00.56] uh um so we did that and uh and the
+[9:04.56] three years were incredible. I actually
+[9:06.00] met Sandy like who's my co-founder like
+[9:08.48] um uh there as well like uh uh he was
+[9:11.28] like in a uh separate program like he
+[9:14.08] had just graduated out of Ahmedab and
+[9:16.00] joined uh a company uh and uh and and
+[9:20.08] then Kaf had basically finished his
+[9:22.08] masters and was just coming back uh this
+[9:24.24] was 2013 like uh uh and at that point I
+[9:28.16] think like uh three of us like in Delhi
+[9:29.92] sort of we thought okay like I think
+[9:31.12] like now that we uh like back here like
+[9:33.44] what do we sort of do like
+[9:35.60] Sandi was wanting to do a startup. He
+[9:37.84] had worked at Microsoft before he joined
+[9:39.68] like English for similar motivations
+[9:42.32] that he wanted to do a startup at some
+[9:44.24] point. And so we like um but the one
+[9:47.04] thing that I had already learned at
+[9:48.64] Ingress or brand was like data is going
+[9:50.96] to explode because even though that this
+[9:53.36] was a manufacturing company, most of
+[9:55.84] what we were building was intelligent
+[9:57.60] systems and which all basically meant
+[9:59.28] that data is basically like I think uh
+[10:01.52] uh at the center of everything. So I
+[10:03.36] think like the core learning that we had
+[10:04.96] was that all of these like I think
+[10:07.04] devices that are around us like all of
+[10:08.88] us as people are going to create so much
+[10:11.12] data that the infrastructure that is
+[10:13.92] needed to manage a lot of these things
+[10:16.16] just does not exist and we had to spend
+[10:18.32] millions of dollars to basically build
+[10:20.00] out that infrastructure and even of like
+[10:22.40] someone of the size and scale up and
+[10:24.48] startup right like so so that meant that
+[10:27.04] there was no easy product for people to
+[10:29.68] productionalize their intelligence
+[10:31.28] systems uh And that was sort of really
+[10:33.52] like I think like the thing that we said
+[10:34.72] that like okay like we've sort of seen
+[10:36.80] how to sort of really do this like it's
+[10:39.12] hard it's complicated how do we sort of
+[10:41.12] do this like I think like at scale. So I
+[10:42.72] I I went to like uh like a bunch of like
+[10:45.28] I think like people Krishna was um and
+[10:48.24] Anish was uh doing capillary
+[10:50.08] technologies at that point like that was
+[10:52.32] like the hottest like startup like in
+[10:54.56] SAS like at that point like I still feel
+[10:56.40] like it was amongst the best startups to
+[10:58.80] really like like come out of uh India
+[11:01.28] and we went to like I think like them
+[11:02.96] for some advice like they said like okay
+[11:04.64] like I think if you want to build this
+[11:05.84] like is it going to be hard like um do
+[11:07.92] do you really like want to do this like
+[11:09.60] because you remember like I think 2013
+[11:11.76] 2014 14 everyone was trying to do
+[11:15.36] e-commerce like and because
+[11:18.40] >> and Flipkart became a unicorn
+[11:20.88] saying e-commerce companies and like
+[11:22.56] everyone said that why would you do
+[11:24.00] e-commerce right like uh but our general
+[11:27.12] thinking was like
+[11:29.92] you don't know anything about e-commerce
+[11:31.84] like uh uh I know how to basically build
+[11:34.16] a data platform I know how to basically
+[11:36.16] create like uh something that scales
+[11:38.56] something that can truly be world class
+[11:40.64] why would I go do e-com commerce like uh
+[11:43.20] um I think until the second or third
+[11:45.12] years of the startup like everyone still
+[11:47.44] kept saying like do you guys really want
+[11:49.04] to like not pivot it into like a
+[11:51.44] e-commerce startup or something like uh
+[11:54.08] uh so we went like I think like even
+[11:57.28] though we did not have like I think like
+[11:58.72] too much of a business plan we had
+[11:59.92] created like a demo like which really
+[12:01.68] worked we actually um for testing we had
+[12:05.44] sent it out to like I think like a bunch
+[12:07.04] of universities like Harvard MIT
+[12:08.80] Stanford 65 top 100 research
+[12:10.56] institutions actually used the platform.
+[12:12.72] Everyone said it's great like right. So
+[12:14.96] we had like productive market fit like
+[12:17.36] this was not the audience that would
+[12:19.36] eventually like like pay us and we could
+[12:21.60] become a billion dollar business in but
+[12:23.36] it gave us such incredible validation
+[12:25.20] that like the best in the world feel
+[12:26.96] that this is a great product. Um uh it
+[12:29.44] uh um and this was easy like all of
+[12:31.60] their emails were basically available
+[12:33.12] like I think like on their websites. We
+[12:34.72] basically went uh and wrote like a
+[12:36.40] crawling like infrastructure. We got
+[12:38.40] like I think all of those things and
+[12:40.40] sent it out as an email blast like use
+[12:42.32] our platform like uh people said great
+[12:44.72] like how much does it cost 50 bucks like
+[12:47.04] uh uh like go basically use the
+[12:49.28] platform. So we did that we you uh like
+[12:51.36] I like levered um like used basically a
+[12:54.32] lot of like I think like our uh
+[12:56.08] technical capability that we had built
+[12:57.76] out uh and got to a million in AR like
+[13:02.64] just doing this uh right like in a
+[13:05.84] market that had no money. Uh right. So
+[13:08.72] at that point I think like we I went to
+[13:11.28] India CEO like I went to like Rajan like
+[13:14.88] who was then like Google India CEO. I
+[13:17.76] went to like Vine who was head of like
+[13:19.92] JP Morgan India equities at that point.
+[13:22.40] Uh uh and like Anish and Krishna and
+[13:25.60] these guys basically like I think this
+[13:27.36] road to everyone and we got like $3
+[13:29.04] million in sheet money. Uh right like uh
+[13:32.24] uh so and this is 2014 15 like uh right
+[13:35.84] like uh so year to build it out like
+[13:38.40] year to like I think like so some some
+[13:40.64] of that sort of like I think like had
+[13:42.08] happened. Uh
+[13:44.48] the strange part was at a million of we
+[13:47.36] were making so much money like bottom
+[13:49.52] line right like uh uh because we were
+[13:52.40] what like 24 25 year olds like I think
+[13:55.76] all of our hires were 18 19 years old
+[13:58.88] kids. We knew the architecture they
+[14:01.12] would quote and um uh and it was just
+[14:06.16] like I think like incredible to build it
+[14:08.56] out to a degree where everyone felt it
+[14:10.96] was world class like uh our thesis was
+[14:14.56] that if Sulpai can basically go become
+[14:16.48] like the CEO of um uh like Google and if
+[14:19.28] Satya can go become like the CEO of
+[14:21.76] Microsoft like I think like why can't we
+[14:23.36] build software from India like uh and uh
+[14:27.36] and every time basically someone said
+[14:28.96] know most of the VCs that we went to
+[14:30.88] like I think uh the biggest thing that
+[14:33.60] everyone said was that this can't be
+[14:35.20] done out of India like uh we've never
+[14:37.44] seen the SDA company sort of do this
+[14:39.36] like why would you guys be successful we
+[14:41.12] came to the US like I think like pitch
+[14:42.64] to investors here they were like I think
+[14:44.80] um hey like this can't be done out of
+[14:46.64] India we went to pitch to Indian
+[14:48.88] investor they were like oh it can't be
+[14:50.56] done out of India so it is like I mean a
+[14:52.64] strange place like the only people who
+[14:54.40] sort of really believed it could be done
+[14:56.00] were people like Anishh Krishna or
+[14:57.60] people who had seen like I think New
+[14:59.28] York like uh uh so so I think we got
+[15:02.56] together $3 million like we basically
+[15:04.56] started like I think coming to the US we
+[15:06.72] got uh a large number of Fortune 500
+[15:10.16] companies like as customers like we got
+[15:11.76] Disney Waters tours NASA like a bunch of
+[15:13.84] these basically like I think like as
+[15:15.36] customers
+[15:16.16] >> how were you converting them all of it
+[15:18.24] on the back of a world-class product
+[15:20.48] >> mostly that and it was strange like
+[15:22.88] because you you would go into these like
+[15:24.96] I think like wardro meetings like I
+[15:26.48] think like and people would still be
+[15:27.68] looking at like where is your boss right
+[15:29.76] like uh because you're young please from
+[15:32.40] India like uh like where is adult
+[15:35.76] supervision like uh so it is like I
+[15:38.64] think uh like fun to go into these
+[15:40.80] meetings uh we would just go and
+[15:42.72] basically like I think demo the product
+[15:44.32] people would basically look at it and
+[15:45.76] say like this that's great like is it
+[15:47.52] real like gosh uh and like we would give
+[15:50.08] it like a bit like to people for testing
+[15:52.16] and like they would sort of be like look
+[15:54.72] at it and say that seems to work like
+[15:57.68] right? Like uh uh and and so we
+[16:00.40] converted a bunch. It was not easy,
+[16:02.48] right? Like like like because you're
+[16:03.92] going against the grain in most of this
+[16:06.88] uh um no one really felt that worldass
+[16:10.88] software can be delivered out of India
+[16:12.88] like uh and and I think like the bigger
+[16:15.68] fight was perception
+[16:17.52] >> than reality than the reality right like
+[16:20.40] if we would have started this company
+[16:22.40] like in San Francisco
+[16:24.56] >> Yeah. everyone would have bought like I
+[16:26.40] think like this like um from in the
+[16:30.48] every capital right that went all um and
+[16:33.44] and that was sort of like I think like
+[16:35.12] my big learning on the starting point uh
+[16:40.08] that when Warren Buffet or these people
+[16:42.24] sort of say that like like you have to
+[16:44.56] be willing to be contrarian like to be
+[16:46.96] successful
+[16:48.16] >> it really like I think like means
+[16:50.08] something like it's not like I think
+[16:51.84] like just things that you read in a book
+[16:54.32] uh uh if you stick by what you sort of
+[16:57.52] really feel is a large opportunity and
+[17:00.32] with the intent that you can go
+[17:02.40] basically deliver it it's doable man
+[17:05.44] like like nothing in the world is
+[17:07.12] basically being done by AI yet like I
+[17:09.84] think like like it was someone some
+[17:11.68] human that was sort of really like like
+[17:13.60] building it like and if they can do it
+[17:15.84] you can do it too like uh uh so that was
+[17:18.56] like I think like a little bit of naive
+[17:22.32] optimism that we sort of really had as
+[17:24.72] 24 25 year olds. So, which led to the
+[17:27.68] fact that like I think like we continued
+[17:29.44] to persist and even in the face of like
+[17:32.56] most people sort of looking at us and
+[17:34.56] saying that it it would not be possible,
+[17:36.72] we would still basically go ahead and
+[17:38.40] like do it. Uh right. Uh so I think it
+[17:41.20] was like a fun time to basically like
+[17:43.28] like start up the business and this was
+[17:44.88] sort of like how we got started to your
+[17:46.48] question. Very long way of telling you
+[17:47.92] that but this is amazing. I think so
+[17:49.68] many crucial learnings of Kat
+[17:52.16] opportunity, growth, prioritization over
+[17:54.80] money, believing in yourself, building a
+[17:56.88] world-class product. I think this is
+[17:58.96] amazing. I'm I'm so glad you shared this
+[18:01.44] and it's a great starting point. And I
+[18:03.60] want to now I want to get to the
+[18:04.88] innovation journey and the pivot that
+[18:06.56] you were to healthcare. But before that,
+[18:08.72] I want to maybe up front also address.
+[18:11.04] So you spent the last sort of eight nine
+[18:13.04] years in the valley now, right? Have you
+[18:14.64] been in the Bay Area um and you sort of
+[18:16.72] do this as a company as a dual thing
+[18:18.56] right like you have some team in India
+[18:20.32] you have a team here um how has that
+[18:22.88] sort of shaped your thinking right like
+[18:24.48] can you maybe just like uh heads up also
+[18:27.36] address what is the difference that it
+[18:29.60] makes if you're here how does that shape
+[18:31.68] your thinking what is the differential
+[18:34.40] that you have seen in founders that sort
+[18:36.72] of sell here build here uh grow up here
+[18:40.56] um and how does that uh make a
+[18:42.56] difference in company trajectory
+[18:44.24] um because I think that's one of the
+[18:45.44] objectives that I'm trying to uh achieve
+[18:47.84] with this sort of Bay Area series. So I
+[18:50.56] think if we can address that head on and
+[18:52.48] then we'll go to the 2016 onward journey
+[18:55.60] within OSA.
+[18:56.64] >> Yeah. So I I think like for us being in
+[19:01.04] the US markets early uh was incredibly
+[19:05.12] helpful like uh there are few things
+[19:07.68] like one the need of automation
+[19:12.16] in global markets is far more than
+[19:14.56] Indian markets just generally like cost
+[19:16.72] of labor is higher like and therefore
+[19:18.40] the like everyone is looking to automate
+[19:20.24] everything acceptance for the product is
+[19:22.24] just becoming higher. So if you're going
+[19:23.76] to build software like I like if the
+[19:26.08] cost of labor is effectively like I like
+[19:28.40] higher uh it would basically tend to
+[19:31.44] work better than those markets right so
+[19:34.40] therefore like software is generally
+[19:35.92] like I think like more adaptability like
+[19:37.92] in US and Europe like any of these
+[19:40.48] markets where like cost of labor is high
+[19:42.32] right so that is like I think like one
+[19:44.24] right like we tried selling this like I
+[19:46.48] think like in India like we got RBI to
+[19:48.24] sort of read we got like I think like a
+[19:49.92] couple of like I think like like other
+[19:51.28] large institutions to to sort of adopt
+[19:53.76] but uh frankly like selling software in
+[19:57.92] India like everyone was generally like I
+[20:00.56] will put 10 engineers and basically like
+[20:02.24] I think that not that they'll be 10 not
+[20:05.84] going to be built at building this uh
+[20:08.40] but like I think everyone thinks so uh
+[20:10.96] because you could hire basically like I
+[20:12.40] think like 10 people and the cost of
+[20:13.92] basically like engineering talent was
+[20:15.28] low uh so so then basically like when we
+[20:18.56] came to the US like people really wanted
+[20:21.04] to think through
+[20:24.40] how to apply this rather than like
+[20:26.24] debating the question that like whether
+[20:27.92] this is needed or not right so your
+[20:30.48] discovery of the use cases on top of
+[20:32.56] what you're building right uh became
+[20:35.44] like I think far more faster u
+[20:38.16] >> so the friction to sell is lesser and
+[20:40.08] you have a competing basis product yeah
+[20:42.56] innovation alpha and if you've been able
+[20:44.32] to deliver that then people
+[20:46.40] >> yeah so so it just um wherever we went
+[20:50.00] to like I think most of the
+[20:51.52] conversations like where New York in the
+[20:53.92] Bay Area where like I think like in
+[20:55.52] Dallas, Chicago like most of the
+[20:58.24] conversations were use case like how do
+[21:01.52] we apply this like what is the problem
+[21:03.44] to sort of solve it was not like
+[21:05.92] conversations around do we need a data
+[21:08.08] infrastructure do we need like um like a
+[21:10.80] platform to sort of do these things uh
+[21:13.44] so that way basically like our initial
+[21:15.60] discovery of like I think like where
+[21:17.36] product market fit would sort of really
+[21:19.20] exist just became like I think like so
+[21:21.52] shorter right because like now I'm going
+[21:23.60] to customers I'm talking to them like on
+[21:25.20] a day on day basis like I'm getting
+[21:27.12] feedback I know basically 10 things that
+[21:28.88] will not work like far more quickly like
+[21:31.20] then if I was sitting in India trying to
+[21:33.20] explain like why a data infrastructure
+[21:34.72] is sort of needed right
+[21:36.56] >> soation is also better product is
+[21:38.72] getting better so that fly field is
+[21:40.24] working in your favor
+[21:41.12] >> that was like I think like the biggest
+[21:42.56] advantage that uh early stage it's we
+[21:45.36] sort of really like I think like got
+[21:47.28] that if we would not have been close to
+[21:49.36] the customer if we would not like tried
+[21:51.84] to understand these things and gotten
+[21:54.00] these things like as uh features and
+[21:55.92] functionalities into our product like we
+[21:58.16] would have been stuck and which is like
+[21:59.84] where like I feel felt like a lot of our
+[22:02.64] peers like who were still basically like
+[22:04.48] a like in India got stuck that the
+[22:06.72] iteration cycle uh that they basically
+[22:09.20] got into was a year long while we would
+[22:12.08] have basically released 12 versions of
+[22:13.52] the product like that right like uh so
+[22:16.08] so and in startups like there's no right
+[22:19.28] answer like there's just like I think
+[22:21.76] the speed of hydration, right? Like and
+[22:24.48] whoever is cycling through it like
+[22:26.40] faster eventually ends up sort of
+[22:28.24] winning like and and therefore like
+[22:31.68] being closer to the market I feel like I
+[22:33.52] think like allows you that like alpha
+[22:35.20] for sure. No,
+[22:36.24] >> that's amazing and I think we're seeing
+[22:37.76] the same thing in this posti world where
+[22:39.76] pace of innovations even more and so if
+[22:42.00] you're not here you potentially miss out
+[22:43.92] on so much customer production.
+[22:45.84] >> Oh that's amazing. I think that
+[22:47.12] foundationally clarifies it. um any any
+[22:50.56] talent differential like I think in my
+[22:52.64] opinion like there's deeply technical
+[22:54.72] talent here and the market is also deep
+[22:56.72] so that makes for a great combination
+[22:58.64] what has your observation be uh in my
+[23:00.96] opinion otherwise talent like to like is
+[23:02.72] pretty much similar I don't think
+[23:04.00] there's a major differential uh but what
+[23:06.24] is your ground reality and as somebody
+[23:08.48] who's built successfully here uh what
+[23:10.64] are the other factors that enable you to
+[23:12.80] build I
+[23:14.08] >> I think like talent has to be in two
+[23:17.76] different
+[23:19.92] themes I would say right like there is
+[23:22.08] just like the raw talent like uh right
+[23:24.72] which is like I think ability to code
+[23:26.72] ability to understand like the
+[23:28.00] theoretical constructs ability to like I
+[23:30.24] think um uh like really do do stuff
+[23:33.44] right I think that talent is pretty much
+[23:36.16] like equalent here and there like you
+[23:38.16] can hire like someone from Stanford here
+[23:39.76] or you can hire like I think like
+[23:41.20] someone from IIT there like it's the
+[23:43.20] exact same
+[23:43.92] >> talent like
+[23:45.68] >> the thing that we've sort of we found
+[23:47.52] like I think here is that people have
+[23:49.36] failed a lot more here like they know
+[23:51.44] hundreds of way like this will fail like
+[23:54.08] uh uh right like I think like where you
+[23:56.32] deploy a system at this scale like this
+[23:58.24] is these are all the failure modes right
+[24:00.80] like uh uh so as a startup like I think
+[24:03.68] what you get like from talent here is
+[24:07.44] that people are able to prevent failure
+[24:10.40] modes from happen like uh right uh uh
+[24:13.84] and that degree of just be just because
+[24:16.64] of the nature of like they've scaled
+[24:19.28] basically pabytes and billions of like I
+[24:21.44] think like people or basically like I
+[24:23.44] think um uh like enterprises fortune
+[24:26.40] 500s uh what is sock 2 basically look
+[24:28.88] like what does security look like how do
+[24:30.48] you sort of really architect these
+[24:31.76] things like how does uh uh like scale uh
+[24:34.64] like happen how do you authenticate
+[24:36.32] basically like a particular thing how do
+[24:37.92] you sort of rebuild systems that would
+[24:39.52] not break uh what are production grade
+[24:41.76] sort of like an some of this I feel
+[24:45.84] what you get as an advantage here is
+[24:47.92] that people have already failed doing it
+[24:49.68] like because the first time I'm sure
+[24:51.60] basically people here doing it like I
+[24:53.20] think like they failed as well like but
+[24:55.68] then like I think it got embedded that
+[24:58.48] you don't want to commit this mistake
+[25:00.24] like uh and if you only think about like
+[25:02.56] first principles you would go through
+[25:04.72] like a series of your mistakes uh right
+[25:06.96] like uh so so so that train experienced
+[25:10.00] talent which can avoid failure very
+[25:12.08] interesting nuance thank you for sharing
+[25:13.92] yeah
+[25:14.40] >> um anything else
+[25:15.68] >> so so That's I think like one. Um and
+[25:17.84] second I think like uh in product
+[25:20.56] management uh like uh
+[25:24.96] just knowing your customer is so
+[25:26.80] important right like I think early stage
+[25:28.80] basically like you are the product
+[25:30.32] manager like uh the CEO maybe like the
+[25:33.84] like uh like founders like you are the
+[25:36.96] product person right like uh but as you
+[25:40.00] start to grow you need people to
+[25:42.48] basically like I think like take your
+[25:44.00] broad vision and convert it into product
+[25:45.84] features and functionalities And what
+[25:47.20] does it sort of retake? Uh and and
+[25:49.68] therefore you need
+[25:52.40] people who understand these problems
+[25:54.40] very deeply and probably even better
+[25:56.00] than you. Uh like uh uh and that will
+[26:00.16] only come from your market. Now if
+[26:02.72] you're building a product like I think
+[26:04.24] for the Indian consumer
+[26:06.56] you will find that talent in India. like
+[26:08.64] if you're building that product like I
+[26:10.32] think like for uh Middle East or Dubai
+[26:13.60] like you will find that talent in Dubai
+[26:15.52] like uh but if you're building for the
+[26:18.16] American enterprise like you will only
+[26:20.96] find that talent here right uh so I
+[26:23.76] think one of the things that people sort
+[26:25.28] of really don't like do like uh is to
+[26:28.96] get enough product talent into the
+[26:32.00] company and this is something that I
+[26:33.12] learned like I think this is not like
+[26:34.96] how I thought about things but as I
+[26:37.04] basically iterated through it like I
+[26:38.72] realized that uh having people who have
+[26:41.04] a deep understanding of the problem
+[26:43.84] statement that you're trying to solve uh
+[26:46.00] on your team so that they can extend the
+[26:48.48] vision rather than basically just be
+[26:50.40] executors of vision like uh uh is an
+[26:53.28] incredible incredibly important thing
+[26:55.44] like uh and uh and at the size and scale
+[26:59.12] that we've sort of really got into like
+[27:01.04] if you don't if you we didn't have like
+[27:03.12] I think like that degree of talent like
+[27:04.64] docesses like I think like we hired as
+[27:06.64] our chief medical officer like 6 years
+[27:08.40] ago like um and if there wasn't
+[27:11.28] basically like I think n or like Dr. Jan
+[27:14.48] like who was like chief chief medical
+[27:16.08] information officer at Cleveland Clinic
+[27:17.76] like these people just have like I think
+[27:19.60] so much depth in understanding that they
+[27:22.64] act as teachers and coaches for you by
+[27:24.80] Kim right like uh and your ability as a
+[27:27.92] founder to have people like this around
+[27:31.12] you like who you can just go to and feel
+[27:34.00] like that this is an incredible coach
+[27:37.20] just like helps
+[27:39.60] like so so when you have the
+[27:43.84] get really good coaches, bro. Like, uh,
+[27:46.24] so that's sort of like at least been
+[27:48.08] like my thought process for sure.
+[27:50.00] >> That's amazing. Thank you so much for
+[27:51.84] sharing. I think that's super nuanced.
+[27:53.52] And I think my takeaway is like to life
+[27:56.00] talent is the same, but uh experienced
+[27:59.36] field uh depth of market really enhances
+[28:03.04] their iteration loop which helps you
+[28:04.72] build like better products and sell
+[28:06.72] better. Um, so that's an interesting
+[28:08.72] nuance. The final leg on this is just I
+[28:10.96] think I mean people talk about the air
+[28:12.80] of the market here then I also believe
+[28:15.20] that in the two weeks that I spent here
+[28:16.72] also briefly I've seen that the a
+[28:19.28] person's ability to dream with
+[28:20.88] conviction is just way higher here which
+[28:22.80] is why their ability to take risk is
+[28:24.40] also higher because somebody they know
+[28:26.32] in their immediate vicinity is bit like
+[28:28.32] a billion dollar $10 billion company
+[28:30.08] right which is far lesser sort of in
+[28:32.00] India and of course growing at rapid
+[28:34.16] pace and has uh sort of grown
+[28:36.08] significantly now uh but what have you
+[28:38.72] noticed just from the qualitative side
+[28:40.56] that has impacted your mindset know and
+[28:43.28] maybe by extension your ambition
+[28:45.12] confidence and any thoughts on that. My
+[28:48.64] general sense is that cost of failure
+[28:50.40] here is nothing like uh right like uh
+[28:53.76] you try something you basically like it
+[28:56.72] doesn't sort of like like work out like
+[28:58.40] it's like badge of honor like uh I tried
+[29:01.44] like uh and the more complicated thing
+[29:03.68] you tried like uh it's actually like
+[29:07.04] treated well uh right like I come from
+[29:10.56] like a family of civil services like I
+[29:12.24] think like folks back in India for the
+[29:15.28] longest time like fourth year into the
+[29:17.12] startup my mom was uh generally like uh
+[29:20.64] beta civil civil service like right like
+[29:24.16] uh and and what is civil service like
+[29:27.36] it's it's great like I think like there
+[29:29.20] is everyone in my family is basically
+[29:30.88] like civil service right like but it's
+[29:33.12] the most secure like job in the world
+[29:36.72] right like you
+[29:37.52] >> I work so hard to get to be the most
+[29:39.84] secure
+[29:40.32] >> yeah right like I think so so Indian
+[29:42.72] thought process at least now it's like I
+[29:45.76] think like evolved quite dramatically
+[29:47.20] like 10 years ago basically like I think
+[29:48.88] it was still early stages like maybe
+[29:50.72] Sachin and Bini were like I think like
+[29:52.32] the shining bright like I think for all
+[29:55.60] of us but uh it was still basically very
+[29:57.92] early like and if you told anyone that
+[30:01.52] like you're doing a startup like I think
+[30:03.12] like good luck getting married right
+[30:06.56] like uh uh so so I think like that that
+[30:09.44] was sort of like I think that has
+[30:10.96] evolved quite a bit um uh these days
+[30:13.12] when I go to I think like um uh I like
+[30:16.48] uh at this point like everyone who was
+[30:18.32] wanting to do a startup right so I think
+[30:19.92] that's evolved like the risk-taking
+[30:21.52] appetite like I think like in India has
+[30:23.12] sort of really gotten like much much
+[30:24.96] stronger uh at this point than it was 10
+[30:27.52] years ago it doesn't feel like that like
+[30:29.76] at any particular moment but it like
+[30:32.64] believe me like I think like for someone
+[30:34.24] who's basically been doing this 10 years
+[30:35.84] seen it's night and day
+[30:38.08] >> it's night and day I find it hard to
+[30:40.32] relate by the way like I have I've been
+[30:42.00] active in the professional world in the
+[30:43.76] last 2020 to now and I think it's fairly
+[30:46.96] comfortable to take risk now. uh not to
+[30:49.28] the extent that it is here like I know
+[30:50.80] that a Stanford or a Berkeley undergrad
+[30:52.96] kid here feels like okay it's easy to
+[30:54.88] start up it's not the same uh but it's
+[30:57.28] definitely become
+[30:58.80] >> the same it is
+[30:59.92] >> it is exact like I just feel like it's
+[31:02.56] even lower risk in India like
+[31:04.88] >> in theory yes I'm saying it's not
+[31:07.44] penetrated as much I Shark Tank
+[31:09.52] successes or 110 unicorns now we can see
+[31:12.64] like we can see people like you right
+[31:14.00] like somebody looking at this podcast
+[31:15.36] will be like you're from KGB you did it
+[31:17.92] why can't he and I think that's the
+[31:19.60] purpose of this right like so can you
+[31:21.28] like you know make entrepreneurship
+[31:23.36] through builders like you seem
+[31:25.36] realisticly possible but are there any
+[31:28.16] stories of like how you met somebody
+[31:30.24] here or like you know the air like is
+[31:32.72] that real like does it really push your
+[31:35.12] level of emission or is that a bit
+[31:37.28] romanticized or
+[31:38.40] >> you know it's very real like I think
+[31:40.16] like uh I'm so I'll tell you like I
+[31:42.32] think like uh we came here through 500
+[31:45.28] startups like I think like 500 startups
+[31:46.96] was the accelerator that we sort of we
+[31:48.48] came here with. Uh um and Pulkit like
+[31:51.84] was my batchmate like he was our VP of
+[31:54.00] product I think like um at that point we
+[31:56.32] were Paulo Alto like I think like one of
+[31:58.00] these uh uh days like uh uh going from
+[32:01.68] like I think like one point to the other
+[32:03.60] three things happened basically like
+[32:05.04] that day one was uh we met this guy like
+[32:07.68] I think like he was sitting at Starbucks
+[32:09.12] we basically like started talking to him
+[32:10.80] like uh and then basically realized that
+[32:12.64] this is a noble laureate
+[32:14.16] >> like Dr. prop was already like okay.
+[32:18.48] >> Wow.
+[32:18.80] >> So like I think for a little bit we were
+[32:22.24] like
+[32:23.84] dude like what just happened?
+[32:25.28] >> Yeah. and and um and then we like he
+[32:28.96] sort of like said like I think like
+[32:30.40] Stanford it's like I think like still
+[32:31.68] okay like Bley if you go like I think
+[32:33.60] you get a special parking like if you're
+[32:35.36] a Nobel laureate like so like it it's
+[32:38.24] insane right like I think uh so that
+[32:41.20] sort of happened then like I think I had
+[32:43.12] a pitch with one of these venture
+[32:45.60] capitalists like I think like it was
+[32:46.72] either Axel or someone like I don't
+[32:48.40] remember but um where I went to pitch
+[32:51.76] like I think like the same day like he
+[32:53.20] was like I think like this is the seat
+[32:54.48] on Lucker basically had thought uh that
+[32:56.64] pitched uh had bitched right like so
+[32:59.44] that was like
+[33:00.80] >> that's crazy
+[33:01.60] >> should I even take it like uh like uh so
+[33:05.52] that was sort of like I think like the
+[33:06.88] second thing and the third thing like
+[33:08.32] was like when we came back after the
+[33:10.80] pitch like I think we went to like um
+[33:14.08] Starbucks on University Avenue like uh
+[33:16.32] and every
+[33:18.56] table had a pitch going on. Every table
+[33:21.68] had a pitch going on like uh and it was
+[33:24.40] insane like I think like what is
+[33:26.08] happening like and where are you? uh wow
+[33:28.72] uh so so I think like that degree of
+[33:31.76] entrepreneurial energy that is here in
+[33:34.64] this place concentrated like is just
+[33:37.36] like very very different uh and I don't
+[33:40.32] know like if it's like the same in
+[33:41.68] Bangalore like these days or not like uh
+[33:44.08] but I would find it like I think hard to
+[33:46.32] sort of believe like it's a conjunction
+[33:48.08] of like a multitude of thing there's
+[33:50.16] like bley there's Stanford there's like
+[33:52.88] uh Google there's Microsoft like
+[33:55.04] everyone sort of we here plus there's a
+[33:56.96] bunch of startups You can go from one
+[33:58.64] end to the 101 and like the other the
+[34:00.88] 101 and any achievement that you've done
+[34:03.36] like let's say you've built a $10
+[34:04.56] billion business you can go on 101 and
+[34:06.96] basically feel by the end of it feel
+[34:08.96] like what have I done in my life right
+[34:11.84] uh so I think that continuous push for
+[34:15.04] people uh uh and strive for people that
+[34:18.16] there is so much more to sort of achieve
+[34:20.32] and do like uh uh is just I don't think
+[34:24.40] there is a place like this on the planet
+[34:26.24] anywhere like I would not say like I
+[34:27.92] think it it's
+[34:30.08] even in the US there is not a place like
+[34:31.92] this like it's not like US versus India
+[34:33.92] it's like even in the US there isn't a
+[34:35.92] place like this uh um so so I think like
+[34:38.96] that definitely gives you a little bit
+[34:41.20] of
+[34:43.04] dude there's so much more to do at all
+[34:45.52] points in life like whatever you sort of
+[34:47.44] done like uh uh I I think the continuous
+[34:50.56] push towards doing more is much easily
+[34:54.08] found here than any other place on the
+[34:56.00] planet That's amazing. That's so well
+[34:58.80] explained. Thank you so much for
+[34:59.92] sharing. Uh I love it. Um how do you
+[35:02.80] clarify this? Let's come back to the
+[35:04.80] innovator journey. Right. So you now
+[35:06.64] built a great product. It's selling.
+[35:09.04] You've raised some funding, but you've
+[35:10.88] now made this pivot. You realize that
+[35:12.48] there's a deeper use case in healthcare
+[35:14.32] which I'd love for you to share. Even
+[35:16.32] before you sort of get to that if you
+[35:17.76] can in a minute explain everything that
+[35:19.60] innovator does to the extent that I do
+[35:21.84] understand it's a unified layer sort of
+[35:23.76] data layer for healthcare and on top of
+[35:26.24] that you build multitude sort of
+[35:28.16] applications uh some on the doctor side
+[35:31.04] some on the I don't think there's a
+[35:32.96] patient side yet is there uh but if you
+[35:35.12] can explain that bit and then maybe tell
+[35:36.88] us how the pivot happened and what was
+[35:38.80] the progression there on I think that'll
+[35:40.72] be amazing
+[35:42.16] >> yeah so I think at the highest level I
+[35:45.04] would say like I like we were building
+[35:46.32] the AI orchestration layer for like
+[35:48.08] healthcare.
+[35:48.80] >> Okay.
+[35:49.04] >> Right. like uh uh that's why we
+[35:51.28] basically called the entire thing like
+[35:52.64] the data activation platform before like
+[35:54.40] I think that AI orchestration was not a
+[35:56.24] term that people sort of understood that
+[35:58.16] if we would have said that like people
+[35:59.52] would have been
+[36:00.88] >> get out like uh uh but at all points we
+[36:04.80] did not call it a data platform but a
+[36:06.56] data activation platform like I think
+[36:08.16] like for that reason that this is not
+[36:10.72] just for you to basically like collate
+[36:12.48] or collect data but this is to activate
+[36:14.72] data like I think like downstream for uh
+[36:17.04] you to make like I think healthcare
+[36:18.64] workflow goes back. Uh so what is the
+[36:21.60] problem in uh US healthcare? Like uh
+[36:25.36] the US spends $4.5 trillion on
+[36:28.24] healthcare. Uh like maybe five by the
+[36:30.48] time we finish this interview like uh uh
+[36:33.12] which is larger than India's GDP. Yeah.
+[36:36.00] Right. Like uh if US healthcare was a
+[36:38.72] country, it would have been the third
+[36:40.32] largest like GDP on the planet. like uh
+[36:43.84] um and even after that like I think like
+[36:47.04] outcomes are not that great. Yeah. Uh
+[36:49.28] right. Uh so what what what is sort of
+[36:51.36] really happening like we're spending all
+[36:52.64] of this money like but like I think the
+[36:54.24] outcomes are not that great like what is
+[36:55.84] sort of really happening now what has
+[36:58.32] ended up sort of happening is that
+[37:00.16] because of a lot of the last generation
+[37:03.76] like technological shifts that happened
+[37:06.08] like data security that sort of really
+[37:07.92] happened we are living in a pre-in era
+[37:11.44] in healthcare uh like no information is
+[37:14.48] actually getting exchanged people are
+[37:16.80] still faxing stuff uh Right? Like uh so
+[37:20.08] we are living like I think a little bit
+[37:21.36] in the pre- internet era like in
+[37:22.88] healthcare and if you think like
+[37:24.48] anything in the world that would
+[37:25.92] basically live in that era like uh if
+[37:28.16] you had to book a taxi and you had to
+[37:32.00] send a fax for that it would be very
+[37:34.00] inefficient. uh and so is US healthcare,
+[37:37.28] right? like uh so the first thing that
+[37:39.20] we did was to create like I think like
+[37:41.04] an infrastructure that allows for people
+[37:44.48] to sort of really get this data upon a
+[37:46.40] unified cloud platform and open it up
+[37:48.64] right like uh how do you basically like
+[37:50.64] I think create so so you basically now
+[37:53.84] created an internet of healthcare on top
+[37:56.48] of the internet of healthcare like now
+[37:58.40] let's basically start building apps we
+[38:00.56] built few like that got a lot of like I
+[38:02.88] think like traction so we had focused on
+[38:04.48] that like now we sort of expanding it we
+[38:06.88] open
+[38:07.68] the ecosystem up like we get startups to
+[38:09.76] sort of really build on top of it. the
+[38:11.60] long-term thesis for us is to basically
+[38:13.44] be the intelligent uh internet for
+[38:15.20] healthcare right like uh uh so that's
+[38:18.08] what we are trying to do over a longer
+[38:19.60] term period it's like I think like uh
+[38:22.24] don't care like I think where it is like
+[38:23.76] I think like today like it's like
+[38:25.76] incredibly more better than where it was
+[38:28.96] uh let's say like a few years ago but uh
+[38:32.08] I think like we're still in very early
+[38:33.68] stages of like I think like that to sort
+[38:35.44] of re uh like happen
+[38:37.36] >> that's amazing uh but how did the pivot
+[38:39.76] happen how did you discover this and
+[38:41.76] outside in again penetrating US
+[38:43.68] healthcare feels like a very insider
+[38:46.88] sort of problem to solve but you were an
+[38:49.12] outsider uh you didn't come from the
+[38:51.04] ecosystem um and also Indian healthcare
+[38:53.36] US healthcare is starkly different right
+[38:54.80] so to understand that would have also
+[38:57.04] been a challenge uh how did many of
+[38:59.52] these things come together for you to
+[39:01.68] actually come to the problem and then
+[39:04.00] also solve for it uh and also uh like
+[39:06.80] what was selling motion like because I'm
+[39:08.56] guessing converting some of these
+[39:10.16] hospitals
+[39:11.12] you got an early customer which was sort
+[39:12.96] of pivotal right so if you can maybe
+[39:15.44] turn back time and talk to us about some
+[39:17.20] of these things uh that would be really
+[39:19.20] helpful
+[39:20.72] so
+[39:22.80] I think we like after um
+[39:27.52] like the initial phase like I think like
+[39:29.12] we raised $3 million we were already
+[39:30.64] selling to enterprises we were like we
+[39:32.40] had Disney versus tours NASA bunch of
+[39:34.24] these like I think like as customers we
+[39:36.00] had rammed up to $4.5 million or so like
+[39:38.24] I think like of a one uh like first year
+[39:41.44] basically like I think we got to maybe
+[39:42.96] like 0.3 0.4 four we went from 0.3 to
+[39:46.00] like 4 and a half like uh uh it is
+[39:48.80] growing really really rapidly. Uh now
+[39:51.60] one of the things that like I think like
+[39:52.96] we and at that point like we met Samir
+[39:55.36] like I think like from Westbridgeidge um
+[39:57.28] uh uh he basically wrote like I think
+[39:59.52] like the first like we raised $15
+[40:01.68] million or something like I think like
+[40:03.04] in a series A he sort of led it like uh
+[40:06.08] um uh he he was like actually very
+[40:08.80] counter like to most investors at that
+[40:10.88] point like he was like I think like you
+[40:12.48] guys are trying to do something like
+[40:13.84] which seems pretty improbable that this
+[40:15.76] is going to happen like let me put in
+[40:17.36] the money uh uh so uh So I think it is
+[40:21.04] fantastic like so sort of like I think
+[40:22.88] like has been such an incredible
+[40:24.40] believer in mentors like I think like
+[40:25.92] for us like uh as a company like uh uh
+[40:29.68] so they put in like I think the initial
+[40:31.28] seat check like a series A sort of like
+[40:33.44] I think like check into the business at
+[40:35.28] that point like uh we had let's say like
+[40:38.56] $15 million in the bank
+[40:40.80] >> like to $15 million for a software
+[40:43.68] company being built out of India is a
+[40:45.68] lot of money.
+[40:46.48] >> Yeah. Right. like uh uh and in the first
+[40:49.52] board meeting like I think like we went
+[40:50.96] and like presented like oh this is like
+[40:52.56] incredible growth like all of these sort
+[40:54.16] of like things are happening he said you
+[40:55.92] guys are sort of really doing too much
+[40:57.36] like I think like you need to focus like
+[40:59.28] we went back and like I think I actually
+[41:01.04] thought about it because we were
+[41:02.16] struggling with the fact that in one day
+[41:04.24] like we were also trying to understand
+[41:06.08] like Disney's business model and the
+[41:08.08] other day we were trying to understand
+[41:09.52] like what is the first business model
+[41:11.12] because data problems are not
+[41:13.20] >> like you you can't like solve them
+[41:14.88] unless you understand like the business
+[41:16.80] construct, right? Like uh uh so so it
+[41:20.00] was just like we were spread too thin uh
+[41:22.32] frankly uh and we had one healthcare
+[41:24.88] customer like uh which was uh in demo in
+[41:27.44] Iowa like this uh system called Mercy
+[41:29.68] one like uh um uh this was like one of
+[41:32.64] the largest like health systems in the
+[41:34.40] nonprofit like health systems in the
+[41:36.00] country like uh uh and and we said like
+[41:40.16] I think like okay like this problem in
+[41:41.76] like Miy like seems like such a large
+[41:44.08] problem that doctors are using
+[41:46.56] technology that was built before we were
+[41:48.88] born like uh uh and an Uber driver to
+[41:54.24] everyone seems to have like better
+[41:56.48] technology than the most important thing
+[41:58.00] in our life which is like our doctors
+[41:59.84] like uh uh so this seems like a good
+[42:02.88] enough and big enough problem to
+[42:04.56] basically solve like uh and the extent
+[42:07.52] of our aspiration at that point was can
+[42:10.24] we get to $10 million of AR doing this
+[42:12.56] because that is like the biggest we
+[42:13.92] could think like at that point like uh
+[42:16.56] um and it seemed like I think like yes
+[42:18.08] we will get to that like uh so we said
+[42:20.00] like then there is no risk like u uh
+[42:22.64] like uh if our aspiration is like I
+[42:25.04] think like how do we get to $10 million
+[42:26.56] of error we know this can sort of happen
+[42:29.28] let's do it like uh no one's going to
+[42:31.84] lose money like if we sort of did that
+[42:33.60] like $10 million where probably $100
+[42:35.76] million business people sort of
+[42:37.92] reinvested at lower valuations that
+[42:39.60] they'll sort of really make our money
+[42:40.88] we'll sort of like I think like be happy
+[42:42.48] like if we did that uh so that the sort
+[42:44.48] of like I think the extent of
+[42:46.08] conversation that we had the two the
+[42:50.16] core thesis of our business has been
+[42:53.44] naivity like uh just basically like I
+[42:56.96] think figure out how to get to the next
+[42:59.04] step like uh uh and like everything else
+[43:01.76] we'll sort of figure out later right
+[43:04.16] like uh so we said like I think like
+[43:06.16] okay this seems like a bet that we can
+[43:07.68] take sumir had already said like I think
+[43:09.92] I don't think like he was meaning this
+[43:11.52] but he has already said focus so we shut
+[43:14.16] down 90% of our business like uh it gone
+[43:16.64] to $5 million of AR it shut down 90% of
+[43:18.96] our business came down to half a million
+[43:20.64] dollars of AR. So like now in 2017
+[43:23.20] basically we are half a million dollar
+[43:24.64] error business like uh and
+[43:31.12] was it scary a little bit like u uh but
+[43:35.28] like probably more for Sum than us like
+[43:38.00] uh uh and uh uh and and so we went to
+[43:41.60] into the next board meeting. We said
+[43:42.88] like we shut it down like uh and he was
+[43:44.72] like we're focusing there worth my money
+[43:47.76] like
+[43:49.36] uh so so it was like I think like a
+[43:50.96] little bit of fun but like I think they
+[43:53.44] were panicked probably like but what
+[43:56.08] they said was like listen to like I
+[43:58.16] think like we have 100 companies that
+[43:59.44] we've sort of reinvested in this is your
+[44:01.52] one uh and if founders if you guys
+[44:04.00] basically believe this is the right
+[44:05.28] thing to sort of redo like then this is
+[44:06.96] the right thing to do like uh uh and
+[44:09.68] which is what I sort of feel like has
+[44:11.52] been such a differentiated relationship
+[44:13.52] like with like our investors that we've
+[44:15.76] sort of got like this deep believing
+[44:18.32] like investors in the business like uh
+[44:21.20] uh at any point we've not really felt
+[44:23.44] that
+[44:25.36] >> there is a investor
+[44:28.08] founder conversation that is happening.
+[44:30.08] It has always felt like that everyone
+[44:32.32] around the table is a co-founder like um
+[44:35.76] and and that sort of been like really
+[44:37.68] helpful. So we we we then narrowed it
+[44:39.36] down. We said like we're going to build
+[44:40.80] like I think whatever looks like the
+[44:42.80] system of intelligence for healthcare.
+[44:44.32] This seems like I think like a fairly
+[44:45.76] broken industry. We'll build this layer
+[44:47.84] that sort of like I think resides on top
+[44:49.76] of current systems and then uh really
+[44:52.32] create like what could be like I think
+[44:53.92] like a bunch of applications on top of
+[44:55.52] it. And in two years we got to $10
+[44:58.48] million a bar like um like and uh and it
+[45:03.60] was great like I think like u like how
+[45:07.04] did we get to to $10 million we
+[45:09.84] delivered like uh uh and we sat down we
+[45:14.16] lived in de mo like kavit
+[45:16.88] like who's our CTO like um I like Sandy
+[45:20.88] like all of us lived in de mo like de mo
+[45:23.36] I I don't even know like you know like
+[45:25.20] It's it's in Iowa, right? Like uh uh so
+[45:28.08] >> that's good to us.
+[45:28.96] >> Yeah. So it's like we lived there like
+[45:30.88] it was freezing winters. We would just
+[45:32.72] live there like we would sleep there
+[45:34.80] like in the hospital. Uh and our
+[45:37.12] customers were like I think like like
+[45:38.40] great to us as well like that was the
+[45:40.32] other thing that happened like that
+[45:42.16] obviously we knew nothing about
+[45:43.92] healthcare like uh and our customers
+[45:46.16] were ready to teach us. They were
+[45:48.08] basically telling us these are the
+[45:49.52] things like this is how diabetes is
+[45:51.52] measured. This is how basically heart
+[45:53.12] failure is measured. uh and like
+[45:55.28] obviously we were good students. We
+[45:56.72] learned like I think pretty quickly like
+[45:58.56] uh um and we hired like people like who
+[46:01.12] uh gave us basically like context and
+[46:02.80] all of those sort of like things very
+[46:04.16] quickly as well. Uh but uh it was so
+[46:07.36] great to live there live the problem
+[46:10.88] build and
+[46:12.96] like the last vendor that they were
+[46:15.04] using was not able to do it in 36
+[46:17.36] monthsh and we got it done like in 6
+[46:19.84] months like uh like a data
+[46:21.60] infrastructure that like I think they
+[46:23.44] could sort of like use. It was not
+[46:25.52] perfect, but it was usable. Uh, right.
+[46:28.00] Like uh um uh and so so that gave them
+[46:31.36] like a bunch of like I think confidence
+[46:33.76] and that contract basically like I think
+[46:36.16] moved from being half a million dollars
+[46:37.60] to $2 million one contract, right? Like
+[46:40.40] uh and then they called up everyone.
+[46:43.84] >> So good. Why don't you use it?
+[46:44.96] >> Yeah. And like we had zero salespeople
+[46:48.96] >> and we got to $10 million of error. Like
+[46:51.12] only founders fell of course. Yeah.
+[46:52.64] Right. like uh uh so like uh
+[46:55.52] >> amazing
+[46:56.72] >> it was great like I think like it was
+[46:57.92] all word of mouth like uh and that's the
+[46:59.84] thing that works in vertical software
+[47:01.28] that people don't realize is that you
+[47:05.04] if you have a good product
+[47:07.68] like cost of sales is very low
+[47:10.08] >> like is high word of mouth like uh Viva
+[47:14.32] basically became like I think like this
+[47:16.48] massive company $40 billion sort of $50
+[47:19.12] billion I don't even know like today
+[47:20.64] like where they have like 40 $50 billion
+[47:23.12] basically business like uh they've never
+[47:25.44] had like I think like too many sales
+[47:26.72] people. Epic which is like I think the
+[47:28.96] largest rate like maybe six billion or
+[47:32.00] five six billion dollars like I think
+[47:33.52] like in revenue they had eight sales
+[47:35.68] people eight sales people like uh and
+[47:39.84] and that is I think like the beauty of
+[47:41.84] vertical software in general that if you
+[47:44.32] get it right like uh the flywheel there
+[47:47.68] is basically like very very good and uh
+[47:50.48] but you have to basically invest in
+[47:51.92] customer success like pretty deeply you
+[47:53.68] have to make sure like I think your
+[47:54.96] product innovation sort of really
+[47:56.16] happens
+[47:57.20] Most of go to market spend in healthcare
+[48:00.48] is R&D and customer success like build
+[48:03.36] great product serve customers well right
+[48:06.80] like uh if you keep doing that like it's
+[48:09.04] just like a hopefully like it it's
+[48:11.52] worked till now like hopefully it keeps
+[48:13.04] working like I think in the future that
+[48:14.72] we deliver for our customers and that
+[48:16.56] sort of results into like more sales
+[48:18.40] happening uh and it's amazing so yeah
+[48:22.32] >> wow what a story I think this is
+[48:24.16] commendable like true true story of I
+[48:26.64] think you've you've really simplified
+[48:28.64] the riskability and like ability to
+[48:30.72] focus and I think those are very
+[48:32.88] important elements but true true story
+[48:36.00] of building a great product being
+[48:38.72] handson really selling well and if you
+[48:41.84] get the basics right like you did I
+[48:44.00] think you have a great tragedy that's
+[48:46.00] amazing to hear um I'd love to
+[48:48.40] understand I mean maybe a final bit on
+[48:50.88] scale and then I want to get to AI and a
+[48:52.80] couple of other things which are super
+[48:54.16] crucial for the conversation as Well,
+[48:56.32] but you get to 10 million and that was
+[48:58.88] the extent to the ambition right but
+[49:00.64] then now you are at 250. Uh talk to us
+[49:03.04] about where you know scale size
+[49:06.72] learnings that are different that may
+[49:09.04] not be applicable necessary for 0 to 1
+[49:11.28] but are applicable for 1 to 10. Also
+[49:13.84] curious to understand that if the
+[49:15.84] industry is so big, market is so large
+[49:17.84] and is broken. Is there a systemic issue
+[49:20.80] why innovation does not happen in
+[49:22.32] healthcare that you had to deal with or
+[49:24.56] is it more that it's not the most
+[49:27.04] obvious opportunity like what is the
+[49:28.96] systemic problem why innovation is
+[49:30.72] lacking? So I yeah like firstly like I
+[49:34.16] think like we are closer to 200 than 250
+[49:36.32] like today like but um uh like uh
+[49:42.64] the general reason like I think like to
+[49:44.56] your question like what is broken in
+[49:46.64] healthcare is that most of software
+[49:49.28] innovation like really happened in the
+[49:51.04] world upper internet existed like uh so
+[49:53.68] if the information is basically like not
+[49:56.00] unlocked you can't basically have like a
+[49:58.88] lot of like I think like software
+[50:00.00] innovation sort of really happening now
+[50:01.92] and the only place that like I think
+[50:05.28] information is still lobbed is healthare
+[50:07.36] like
+[50:08.00] >> so the infrastructure that enables
+[50:10.48] internet and digital like innovation is
+[50:13.04] not enabled
+[50:13.68] >> it's not enabled and that's what you're
+[50:14.96] building and so that's basically like
+[50:16.72] our entire thesis like that the biggest
+[50:18.88] thing that is broken is the
+[50:20.88] infrastructure layer it is not really
+[50:23.52] like I think like the apps on top the
+[50:25.20] apps on top of the is the easy part like
+[50:27.92] uh uh once the information
+[50:29.68] infrastructure really gets opened up
+[50:31.44] like you will see like so many billion
+[50:34.00] dollar businesses basically being built
+[50:35.68] in healthcare but go ask any healthcare
+[50:40.40] software
+[50:42.00] founder like why did you die like uh it
+[50:44.96] was infrastructure you know exist it was
+[50:47.12] so expensive like I think uh I had to go
+[50:49.60] do this like at every place uh uh and
+[50:52.40] like every place implementation cost was
+[50:54.64] basically like a million dollars to
+[50:56.00] connect to all of the systems and all of
+[50:57.68] these sort of like things and Imagine
+[51:01.12] like I think like if we didn't have like
+[51:02.40] I think like internet today like
+[51:03.92] everything would be so hard any
+[51:05.84] everything that we take for granted
+[51:07.68] today
+[51:08.96] >> uh like Google maps like location like I
+[51:12.24] think like services uh or like web
+[51:15.12] search and scraping or like any one of
+[51:17.52] these sort of things if that did not
+[51:20.24] exist if Google did not exist in this
+[51:22.64] world our innovation would have been
+[51:24.88] slower. Oh yeah,
+[51:26.32] >> just that like Google does not exist in
+[51:28.56] healthcare and hopefully we are that
+[51:30.40] company like over a period of time.
+[51:32.00] >> Is Shopify and e-commerce also a good
+[51:33.68] example is that if Shopify did not exist
+[51:36.32] independent sort of business owners
+[51:37.84] wouldn't be able to sort of search
+[51:39.28] websites and start e-commerce very
+[51:41.84] interesting. sharing that heads uh also
+[51:43.92] anecdotally like what are the different
+[51:46.08] data points that you eventually align
+[51:47.76] like can you give us a I don't know
+[51:49.60] customer journey for just like layman
+[51:51.36] understanding like if I'm in hospital
+[51:53.28] what are the different types of data
+[51:54.72] that today in the in a world where innov
+[51:57.60] is absent uh is segregated and in a
+[51:59.92] world where innovation is present is
+[52:01.92] unified.
+[52:02.96] >> Yeah. So I think like LK data is like
+[52:04.88] stored in like multiple places. You go
+[52:06.40] to like firstly you go to different kind
+[52:08.72] of doctors right like so you go to
+[52:11.52] primary care
+[52:13.44] >> but if you have to get a surgery done
+[52:15.76] like you would go to a specialist like
+[52:17.52] if you have like cardio like heart
+[52:19.68] problem you would go to a cardiologist
+[52:21.20] like specialist
+[52:22.24] >> oncology like and so on and so forth
+[52:24.16] right so your data is basically firstly
+[52:26.24] very very fragmented like there's no
+[52:28.00] like unified health record for like that
+[52:30.64] exists not even basically at large
+[52:32.56] systems right like it sits in like 10
+[52:35.04] different cases but if you want to know
+[52:37.20] like I think like what is your total
+[52:38.72] health condition there's no way you can
+[52:40.48] get that uh right so firstly like I
+[52:43.12] think just like the storage of your
+[52:45.20] clinical information is happening at
+[52:46.72] different like I think like places it's
+[52:48.64] all segregated
+[52:49.28] >> it's all segregated that's one then like
+[52:51.76] I think on top of it there is additional
+[52:53.92] layers of complexity that where you get
+[52:56.08] your labs done are different companies
+[52:58.64] like uh and therefore like your lab data
+[53:01.04] is basically sitting like on a different
+[53:02.48] place where you get your imaging done is
+[53:04.64] basically like a different company like
+[53:06.48] uh so that's basically like I think uh
+[53:08.56] sitting in a different place uh your
+[53:10.80] socioeconomic data is sitting basically
+[53:13.28] in a different place uh so now if you
+[53:16.08] really wanted to create a 360° view of
+[53:18.64] like who you are as a person from a
+[53:20.48] health perspective there is no easy way
+[53:22.72] to do that like uh so someone has to do
+[53:25.44] like I think like uh the work of
+[53:27.68] connecting these systems like together
+[53:30.32] right like uh and creating what could
+[53:32.72] basically be the 360° patient you like
+[53:35.20] for you like uh once you have that
+[53:38.16] everything changes.
+[53:39.04] >> Yeah, I can so much on
+[53:40.48] >> so much like you could do risk
+[53:41.76] predictions, you could do disease uh
+[53:43.76] predictions, you could like I think like
+[53:45.52] do decentralized clinical trials, you
+[53:47.44] could like I think like think about
+[53:49.12] >> diagnosis but everything everything gets
+[53:51.52] enabled. uh uh so so I think like my
+[53:55.52] general view is I don't know like I
+[53:58.08] think like if we going to be like I
+[53:59.44] think like success successful or not
+[54:01.04] like I think like in becoming like the
+[54:02.24] national standard for like I think like
+[54:04.40] uh healthcare information infrastructure
+[54:06.32] but if we are if we are it's not going
+[54:10.32] to reshape the technology you could do
+[54:12.88] everything fundamentally differently on
+[54:14.72] top of it like the revenue cycle
+[54:16.16] processes the
+[54:18.64] last year the US spent like 300 billion
+[54:21.92] ion dollar to basically get
+[54:25.76] like your patient record from one side
+[54:29.68] to the other like uh that's it like that
+[54:32.40] is all that sort of happened $300
+[54:34.16] billion basically got spent like uh uh
+[54:37.36] and it is insane like what what are we
+[54:40.48] talking about uh right like that's crazy
+[54:43.76] and that's India's healthcare spend
+[54:47.36] >> yeah overall
+[54:49.20] >> a billion and a half people basically
+[54:51.20] remain and healthy in the same amount of
+[54:54.16] money
+[54:55.84] >> that we spent like here like I think
+[54:58.40] like on transferring
+[55:00.24] >> patient information from this site and
+[55:02.32] to that side that's it like it it's just
+[55:05.44] like mindboggling like some of these
+[55:07.28] numbers that are sort of really there
+[55:08.72] like uh and our hope is that like I
+[55:11.20] think if uh internet like infrastructure
+[55:13.36] sort of really existed like I think like
+[55:14.80] in healthcare you you could just
+[55:17.28] basically like get rid of a trillion of
+[55:19.28] waste like pretty easy. Yeah. So, so
+[55:22.40] that's a long-term like I think like uh
+[55:24.56] like ambition now like uh now we have
+[55:27.68] some ambition like uh you you've
+[55:30.72] accomplished all of it. So I think it's
+[55:32.40] incredible. I have a very naive question
+[55:34.32] but do you as a platform connect
+[55:37.52] existing plat existing data layers or do
+[55:40.56] you build uh one from fresh so that you
+[55:44.16] have more control over it. So we sit on
+[55:46.88] top of existing systems. Uh but like I
+[55:48.96] think like you also have a layer of
+[55:50.24] yourself. Okay. Got it. Got it. Um but
+[55:53.60] yeah on the scale side what are what are
+[55:55.44] your learnings uh from like a 10 million
+[55:57.76] to the current stage that you are what
+[56:00.08] has changed like how have what have you
+[56:02.64] discovered about yourself that you
+[56:04.32] didn't previously know? I I think like
+[56:07.44] the
+[56:09.12] there have been multiple parts of
+[56:11.04] learnings that I've sort of really had
+[56:13.04] right like uh one of the things that I
+[56:16.08] sort of really learned was uh don't let
+[56:19.60] markets dictate like I think like what
+[56:21.28] you'll do like u uh
+[56:23.60] >> can I double click
+[56:24.80] >> yeah like
+[56:27.52] I think till let's say 2021 like uh
+[56:32.08] everyone like growth is basically
+[56:33.52] everything like let's go grow grow grow
+[56:36.00] grow grow like uh uh
+[56:39.68] and I was like let's grow grow grow uh
+[56:42.16] right like uh uh and I think what I sort
+[56:46.56] of like what ended up sort of really
+[56:48.48] happening is that the market sort of
+[56:49.76] really changed um and uh and suddenly
+[56:53.12] like everyone was like where is
+[56:54.56] profitability it's like
+[56:56.08] >> what are you guys talking about like
+[56:58.24] just say
+[57:00.08] uh and and we had raised like I think
+[57:02.16] like a lot of money like I think like
+[57:03.44] till that point like and and obviously
+[57:06.08] you're responsible as the CEO to
+[57:07.60] basically not like you've raised money
+[57:09.28] like it's your like fiduciary
+[57:10.64] responsibility to sort of be responsible
+[57:12.80] towards like I think like others money
+[57:14.56] like uh um and and what I sort of felt
+[57:19.92] in that sort of like I think like moment
+[57:21.76] was that I had let this
+[57:25.68] that investors would know better about
+[57:28.40] your business than you like uh and so I
+[57:32.80] like in a private context like your
+[57:35.28] existing investor base and the investors
+[57:36.96] that you're wanting to sort of raise
+[57:38.56] money from are basically markets.
+[57:40.88] >> Uh right like um uh
+[57:42.80] >> they are the ones governing macro
+[57:44.32] thinking for you.
+[57:44.96] >> Yeah. like uh and like I think um and if
+[57:48.88] you're a public company like it's all of
+[57:50.40] like I think like the investors but if
+[57:51.76] you're not like I think like it's just
+[57:53.60] uh it's that right like so I think like
+[57:56.72] I had sort of really started thinking
+[57:59.92] about what do investors want more than
+[58:02.96] what customers want like at that point
+[58:05.36] uh uh and it was such a disaster like I
+[58:08.72] think like uh u for me the hardest time
+[58:12.56] was basically where we had to do like I
+[58:14.48] think like playoffs like um uh in that
+[58:16.96] sort of way time frame now like I I
+[58:20.16] don't want to basically like I think
+[58:21.28] like cry like pity like or like it was
+[58:24.00] my decision like I think frankly like uh
+[58:26.32] but but the thing is basically like um I
+[58:29.20] got sucked up into like hype uh right
+[58:32.16] like uh that hey like everything like
+[58:35.28] this 2 billion 3 billion valuation means
+[58:37.84] something like it doesn't like uh what
+[58:40.80] really means something is like are you
+[58:43.12] delivering like I like value to your
+[58:45.28] customers and are you able to capture
+[58:46.88] basically some part of it as revenue and
+[58:49.04] create some level of like I think like
+[58:50.88] bottom line uh that is like what
+[58:53.28] building businesses are all about right
+[58:55.92] like uh and all of this basically
+[58:58.40] unicorn and like blah blah blah like
+[59:01.76] means jack squad like uh uh right uh so
+[59:05.04] I think that was a realization that sort
+[59:06.80] of came a little bit like I think late
+[59:08.64] and it was like a hard learning frankly
+[59:10.40] like I think like for me like I was
+[59:12.32] doing like frankly for the first time So
+[59:14.24] everything has been learning like but uh
+[59:16.16] that was like I think a learning that
+[59:18.24] was like a hard one for me like over
+[59:20.72] like at $70 million of AR we were
+[59:23.20] basically like I think like burning $84
+[59:25.20] million so spending 154 uh right uh uh
+[59:28.96] at
+[59:30.80] 200 we would be generating 20 like uh
+[59:33.36] right like uh
+[59:35.52] >> so uh so I think like that sort of
+[59:37.68] really like I think been like a hard
+[59:41.04] learning like I feel like I had to go
+[59:42.80] back to school like in some way like uh
+[59:45.28] uh and learn what building businesses
+[59:47.60] all about because whatever I had learned
+[59:49.44] till 2021 was like
+[59:51.76] >> grow grow.
+[59:52.72] >> Yeah. Like and and like um uh so I think
+[59:55.36] it was just such a deep amount of
+[59:58.32] introspection element like for me who
+[60:02.96] everything in my life was like up to the
+[60:04.72] right uh till that point like you went
+[60:07.76] to IIT you started like I think like you
+[60:09.84] got a great job like I think like you
+[60:12.00] got a great job
+[60:13.60] progress funding unico are like oh great
+[60:18.40] like I think like life is so great like
+[60:20.16] and and then like I think like something
+[60:22.32] like that sort of really hits you
+[60:24.24] actually don't know what to do because
+[60:26.00] you're encountering failure for the
+[60:27.84] first time like um right uh and and this
+[60:32.24] is where like I'm coming back to like I
+[60:33.68] think like your question like how do you
+[60:35.44] sort of manage scale get people around
+[60:37.92] you who basically seen scale
+[60:40.72] >> like uh Because one of the things that
+[60:43.84] was great was to basically have people
+[60:45.36] like Jonathan Bush like who's basically
+[60:47.12] built Athena like to a billion dollars
+[60:48.80] of revenue scale to just say like this
+[60:51.04] is normal dude like like uh like this
+[60:54.32] happens like and Dh basically like um
+[60:57.52] like I think like being like dude why
+[60:59.36] are you so worried like I think like
+[61:00.64] this is just like everyone's going
+[61:02.16] through this like uh because what ends
+[61:05.04] up happening is like when you were
+[61:06.88] building a company it's to a certain
+[61:09.12] degree isolating like uh you sort of
+[61:11.76] like get stuck in some bubble and you
+[61:13.76] have to be like I think like you have to
+[61:15.20] believe something which anyone else or
+[61:17.76] no one else basically believes in and so
+[61:19.60] you you sort of really create a bubble
+[61:21.92] around you like um uh and having people
+[61:25.76] who recite like I think like within that
+[61:27.84] bubble like who are smarter than you who
+[61:30.88] had more experience than you like is so
+[61:33.68] so critical like uh uh and and so I
+[61:36.72] think like what I have sort of felt is
+[61:38.40] that at all points I will just sort to
+[61:41.12] really have people around when we were
+[61:43.36] starting up like it was people like
+[61:45.20] Krishna and like Anish and um Rajan and
+[61:50.24] a bunch of like these people then Sumir
+[61:52.80] and then like uh but I've just basically
+[61:55.20] like constantly kept getting people
+[61:58.00] around me like who I know know more than
+[62:00.80] me like uh and
+[62:04.32] and it will get very very isolating for
+[62:07.20] like especially like I think like the
+[62:08.88] CEO like um uh uh it it's for all of my
+[62:12.72] co-founders as well like I think like uh
+[62:15.12] um
+[62:16.64] I think like um as someone who is in the
+[62:20.48] founding like um space if you don't have
+[62:25.04] people around you who've gone through
+[62:27.04] that journey and I've seen basically the
+[62:29.28] next few phases of what is basically
+[62:31.20] going to happen
+[62:34.08] like you can't really talk to anyone
+[62:36.08] else like because um like you go talk to
+[62:39.20] basically like like your load I I don't
+[62:41.28] get anything like uh uh which is like
+[62:43.92] actually like I think like like the case
+[62:45.20] like you are figuring it out yourself
+[62:47.68] right like uh um you can't do that like
+[62:50.88] all the time maybe a little bit but like
+[62:52.64] not too much so having people around you
+[62:55.20] where you could be vulnerable to a
+[62:56.88] certain extent like actually say that
+[62:58.48] like I don't get it like how do I sort
+[63:00.00] of rebuild like the next stage what is
+[63:02.48] the kind of team that I need like how do
+[63:04.48] I take hard decisions like layoffs etc
+[63:06.88] like uh if you don't have people like
+[63:09.76] that you will fall like uh uh and and I
+[63:14.56] think we've been incredibly lucky
+[63:18.88] also like because of the fact that we
+[63:20.72] were like so young when we started up so
+[63:23.60] everyone looks at us and says like
+[63:25.12] Bachalog is doing something right like
+[63:27.20] uh uh so so I think like we've had like
+[63:29.76] incredible mentorship like all across
+[63:31.76] the board um and finding the right
+[63:34.96] mentors for startups and founders
+[63:37.84] especially is critical ical like if you
+[63:41.04] don't have that
+[63:43.20] no investor no one is basically like I
+[63:46.32] say I treat him more as a like mentor
+[63:50.88] than an investor like uh uh and it is
+[63:54.72] that kind of relationship like I think
+[63:56.16] like with like West in particular I
+[63:58.16] would say like uh uh like when we had
+[64:00.88] nothing they believed in us uh so it's
+[64:04.16] like a little bit of like I think like
+[64:05.44] that relationship like for from
+[64:06.80] Westbidge for sure like uh um But
+[64:11.28] like you will only get this and Sumir
+[64:13.44] also has been like a for like he formed
+[64:15.76] right like I think like like having
+[64:16.72] basically like I think like like
+[64:18.08] founders of that sort of like I think
+[64:19.76] like stature like being around you
+[64:22.88] talking to them and actually don't
+[64:25.92] pretend not pretending in front of them
+[64:28.56] like uh is incredibly important like uh
+[64:31.12] get the feedback
+[64:33.52] know where you sort of stand and if
+[64:36.32] you're not feeling like I think like you
+[64:37.76] know the answer would try to pretend at
+[64:39.44] least in front of them like uh so that's
+[64:42.08] been scaling I would say that has been
+[64:44.96] like I think one of the biggest
+[64:46.16] learnings have people around you that
+[64:48.88] sort of have seen the next uh stage of
+[64:51.28] scale
+[64:52.80] because the rest of the problems are
+[64:54.56] like actually too many like uh do you
+[64:56.56] build the right team like do when do you
+[64:58.40] go multi-product like how do you sort of
+[65:00.24] rescale like what time do you think
+[65:01.84] about profitability like there is so
+[65:04.16] many of these problems that will sort of
+[65:06.00] really keep happening and every month,
+[65:08.40] every quarter, every year the problem
+[65:10.64] set is basically going to evolve. What
+[65:13.04] you have to basically create around you
+[65:14.88] is the set of people that you can go to
+[65:17.52] advice for because at all points you are
+[65:20.24] going to be like clues clueless about
+[65:22.56] like a lot of things. Uh uh so so I
+[65:25.76] think like that's been like at least
+[65:28.24] something that I live by. I don't know
+[65:29.60] like if it like will work forever like
+[65:31.68] but like I think today it works.
+[65:33.84] >> That's amazing. I really appreciate you
+[65:36.16] being so candid about uh some of the
+[65:38.96] challenging things and absolutely in
+[65:41.12] like the royest manner. Thank you so
+[65:43.20] much. I think this is very very helpful.
+[65:46.16] Uh I love it and I I think super honest
+[65:48.80] and candid on your end. Um let's get to
+[65:52.08] the other things, right? So let's say
+[65:53.68] maybe AI, right? We're in the midst of
+[65:56.96] the most important technological shifts
+[65:59.36] of our life perhaps and you are in the
+[66:02.08] thicken thing of things here. um how are
+[66:04.88] you looking at AI and from where Indian
+[66:07.68] farmland get how are you looking at it
+[66:09.84] from a healthcare lens and also as a you
+[66:12.88] know builder of a significantly large
+[66:14.72] company how are you leveraging it
+[66:16.72] internally uh I think it's multifaceted
+[66:19.52] uh but I'd love your thoughts on all of
+[66:21.44] these like different bits and maybe uh
+[66:24.32] you can go deeper into wherever you feel
+[66:26.48] is helpful
+[66:27.52] >> yeah so so I have like a and we could
+[66:31.36] sit here like for the full day here
+[66:33.52] cover right like I I would just say
+[66:36.08] basically like uh this is definitely
+[66:38.64] like a very meaningful shift right like
+[66:40.40] I think uh um one of the things that I
+[66:44.96] sort of really feel that Indian founders
+[66:47.84] should be thinking about is where is the
+[66:52.40] mode that they can sort of like create
+[66:54.08] there are few like success modes I think
+[66:57.04] like you could take like a thing like
+[66:59.60] which is being done as services
+[67:02.24] completely you can convert that into AI
+[67:04.24] today, right?
+[67:06.16] >> That is shrink and own the market,
+[67:08.80] right? So that is basically like I think
+[67:11.12] like one of the things that you could
+[67:12.24] sort of redo like there is
+[67:15.36] >> trillions of dollars of like I think
+[67:18.08] services spend that sort of happen pick
+[67:20.16] up your niche convert that into AI
+[67:22.24] that's basically like huge market
+[67:24.16] opportunity. So earlier what was human
+[67:25.84] intensive you can automate that with AI
+[67:27.84] leverage that as an
+[67:28.56] >> auto and that's one and that's basically
+[67:30.72] like going to happen like at very very
+[67:32.64] large scale. Right. Every private equity
+[67:35.12] is basically like I think like like
+[67:36.16] wanting to do this like but I I feel
+[67:38.80] like converting something
+[67:41.84] existing
+[67:42.48] >> existing is like I think like going to
+[67:43.92] be so much harder. Building it on your
+[67:45.92] own like and then basically scaling it
+[67:47.76] is basically like the companies that are
+[67:49.44] going to sort of like succeed right. So
+[67:51.44] that is a definite opportunity.
+[67:55.04] There are so many massive like like
+[67:56.96] services companies in India like the
+[67:58.64] talent is there. people understand
+[68:00.24] what's to be done like uh you can really
+[68:02.72] build this right now. So pick up
+[68:04.96] basically like I think like what niche
+[68:06.72] like don't just try to be like a
+[68:08.72] horizontal layer right like uh it's
+[68:11.44] probably hard for me to imagine that
+[68:13.52] someone is basically going to build like
+[68:15.20] an open AI competitor today like not
+[68:17.92] just in India like any anywhere right
+[68:20.08] like there are probably three or four
+[68:21.84] five companies that sort of really like
+[68:24.00] exist today there probably going to be
+[68:25.52] two or three like the way it went in
+[68:28.24] cloud it's basically going to be like
+[68:30.16] the same story like all over again right
+[68:32.80] uh uh so I think that's basically going
+[68:34.88] to happen. So trying to probably build
+[68:37.52] an infrastructure layer company unless
+[68:40.96] there is something meaningful that
+[68:43.68] specialization that you could sort of
+[68:45.04] rerive like building like a medical LLM
+[68:47.28] like building like an automotive LLM
+[68:50.48] like legal LLM like I think like if you
+[68:54.00] sort of doing that a smaller smaller
+[68:56.40] language model but more specialized I
+[68:59.04] think that is sort of an opportunity but
+[69:01.12] other than that I don't feel like at the
+[69:02.88] infrastructure layer there is too much
+[69:04.80] opportunity for someone to sort of renew
+[69:06.64] like not too much. Uh so one basically
+[69:09.76] like like pick up like a services
+[69:11.68] >> services piece. Uh there was a bunch of
+[69:14.96] money basically being spent there.
+[69:16.48] People already have budgets. If you will
+[69:18.16] go to them and say that I can cut your
+[69:19.76] budget by 50%, like I think like there
+[69:21.92] is going to be uh adoption of that. So
+[69:24.16] that's one. The second is basically like
+[69:26.48] I think like software user interfaces
+[69:28.08] are going to be like becoming useless.
+[69:30.24] So uh right like uh all all of our lives
+[69:33.76] we've basically been filling forms like
+[69:36.24] uh uh right like uh any software that
+[69:39.20] you go to like um on this channel
+[69:42.96] whatever
+[69:43.52] >> anything right like spilling pots
+[69:46.00] >> all of that is going to vanish
+[69:47.20] >> yeah agent
+[69:48.64] >> like uh I don't know like I think like
+[69:50.40] it it it's going to become
+[69:52.72] conversational right like uh the natural
+[69:55.60] mode of us to communicate is
+[69:57.52] conversations right and I like software
+[70:00.56] now or like uh has the ability to
+[70:04.48] basically become conversational, right?
+[70:06.16] Uh so think about like I think like
+[70:08.40] something that is being done like I
+[70:10.00] think in work today and just collapse it
+[70:13.52] into a like conversational framework,
+[70:16.24] right? Uh that all of these like
+[70:18.80] hundreds of forms that someone created
+[70:20.80] and said that like we created a mo
+[70:22.80] because we have 10,000 forms in our
+[70:24.88] product.
+[70:26.00] >> Do you really need it? like uh like so
+[70:29.28] so I think like that is sort of like I
+[70:30.72] think like a SAS opportunity that uh
+[70:32.96] like exist like how do you sort of
+[70:35.20] really collapse like some bit of
+[70:37.60] software that sort of existed like in
+[70:39.84] the past and now you sort of really like
+[70:41.60] I think like get that to be working like
+[70:43.20] as a conversation right so that is like
+[70:45.84] like the second opportunity that sort of
+[70:47.20] really exists I think the third like I
+[70:49.04] think like massive opportunity that
+[70:50.32] exists like I think like for uh like
+[70:52.64] Indian founders um in general
+[70:56.64] is delivering like I mean like like
+[71:00.00] services at scale like not like I mean
+[71:02.64] like B2B services like only but think
+[71:05.04] about it like um
+[71:08.24] as like if you if you go to as your
+[71:10.96] diagnostic done
+[71:13.12] there is some knowledge base that we are
+[71:15.04] working with right like uh can we now
+[71:18.32] create like I think like uh something
+[71:21.36] that enables like an asha worker to be
+[71:24.08] like as incredibly ly competent on
+[71:28.00] diagnostics
+[71:29.60] as basically like a as doctor sort of is
+[71:32.24] because like they sort of have a
+[71:34.24] knowledge base right like uh so you can
+[71:36.96] now democratize like I think like a lot
+[71:39.20] of specialized knowledge like at scale
+[71:42.08] uh and do it like I think like in a
+[71:44.16] conversational like I think like form
+[71:45.84] that could sort ofly be like assistive
+[71:47.76] like from a co-pilot perspective to a
+[71:50.08] bunch of people right uh so so we've
+[71:52.88] always struggled like I think like as as
+[71:55.28] a society it like I think like in
+[71:56.96] delivering like care to 8 billion people
+[71:59.92] like right like uh how can you sort of
+[72:03.12] do that like I think like thinking about
+[72:04.88] new business models that it could sort
+[72:06.72] of enable right like can I have like
+[72:09.36] 10,000 asha workers like I think like
+[72:12.32] working like I think like for us like in
+[72:14.00] every village and like the cost of
+[72:15.92] delivering this service like of high
+[72:18.24] quality care and diagnostic like service
+[72:22.24] which used to cost let's say like two
+[72:24.80] lakh rupees or five lakh rupees
+[72:28.08] can I now basically do that like at
+[72:29.76] 20,000 bucks right like uh so the cost
+[72:32.80] of delivering like services and goods
+[72:34.72] like I think like is going to reduce
+[72:36.08] like it can reduce like I think like
+[72:37.60] today and that's a huge business model
+[72:39.36] opportunity like uh because of AI so so
+[72:42.40] I think those are the three areas that I
+[72:44.48] feel like have big impact like areas
+[72:47.60] that someone could create like I think
+[72:49.36] like a large business out of and these
+[72:51.20] are the things that would sort of really
+[72:52.40] exist what I would caution against is
+[72:55.04] basically like I think like building
+[72:56.40] like I think like rappers like uh now
+[73:00.40] the thing is like some of these rappers
+[73:02.00] are going to get to 10 2050 million
+[73:03.68] dollars of revenue very very quickly
+[73:05.12] like uh but then open AI basically comes
+[73:07.04] up for like anthropic sort of comes up
+[73:08.96] like like the next upgrade like I think
+[73:10.80] like you are done right like uh so so
+[73:13.92] thinking about these things like
+[73:16.24] businesses still have to be built and
+[73:18.24] it's going to be hard like uh if it
+[73:20.80] seems too
+[73:22.64] easy and um like that business is
+[73:26.56] probably like I like going to see
+[73:27.92] initial scale because of novelty. It's
+[73:30.24] like I think like everyone was a com
+[73:32.00] company at some point. Everyone is a
+[73:33.36] doai company uh today. But I don't think
+[73:36.00] basically that any of those businesses
+[73:38.00] will have like any sustainable
+[73:39.28] advantages over the long term. even if
+[73:41.12] they're doing tens and hundreds of
+[73:42.32] millions of dollars of revenue today
+[73:43.92] like uh there's going to be a lot of
+[73:45.36] like I think like hype cycle
+[73:47.68] recession that sort of really like I
+[73:49.20] think like happens people are going to
+[73:50.96] sort of really like realize that like I
+[73:52.88] think like just building like a funny
+[73:54.40] like I think like chat thing like or um
+[73:56.96] an agent that sits on top of open AI
+[73:59.04] with like like a new rapper like I think
+[74:00.80] like is not really a sustainable
+[74:02.40] business model like uh and so so that so
+[74:06.32] so don't get sucked up like into the
+[74:08.08] hype of it understand like what is your
+[74:10.88] differentiated mode over the the longer
+[74:13.12] term period? At least that's how I sort
+[74:14.96] of think about it. Like maybe it's
+[74:16.88] right, maybe it's wrong, but like I
+[74:18.24] think like that is sort of like my like
+[74:20.64] general viewpoint for sure.
+[74:22.08] >> Yeah, that's amazing. Very very
+[74:23.92] interesting ideas or would be of
+[74:25.84] exploration. I love that thinking. Um
+[74:28.56] what's your thought on AI in healthcare?
+[74:30.56] How are you saying that evolved and
+[74:33.28] because a bunch of companies are now
+[74:34.88] doing very specialized sort of
+[74:36.56] healthcare right like think labeling of
+[74:39.36] healthcare data pre-diagnosis post
+[74:42.00] diagnosis post treatment people are
+[74:44.40] talking about genetics and you know like
+[74:46.08] how that can shape like personalized
+[74:47.84] medicine yeah uh so much is happening
+[74:49.92] like I mean I'm sure the world is your
+[74:52.40] oyster I think there's a VC company
+[74:54.24] doing just call recordings for humans
+[74:57.60] and like patient and doctor interactions
+[74:59.68] that again part become part of this data
+[75:01.84] and so that next time visits can be um
+[75:04.88] more enhanced and you know you can uh
+[75:06.96] record some of this. How have um sort of
+[75:09.20] you seen what's the use case that you
+[75:11.04] are most excited about if you had to
+[75:13.12] take a punt on like how healthcare uh or
+[75:15.92] anything more like specific to what your
+[75:18.08] areas of interest are.
+[75:20.40] >> So the bet that we've sort of really
+[75:22.32] taken is that uh there's going to be an
+[75:25.52] explosion of like I think like point
+[75:26.88] solutions in this sort of like space. So
+[75:29.12] right uh and most large systems will
+[75:33.60] need like I think like an orchestration
+[75:35.12] sort of like
+[75:36.96] >> so you will build that out. uh so
+[75:38.96] gravity which is like I think like the
+[75:40.40] platform that we've sort of relaunched
+[75:42.00] uh is effectively how do you think about
+[75:44.32] like agentification of like your
+[75:46.32] enterprise like uh how do you get like
+[75:48.48] an think about this let's say someone is
+[75:51.84] building a scribe someone is building a
+[75:53.68] coding agent someone is building an o
+[75:55.76] agent someone is building a diagnostic
+[75:57.92] uh like thing how do these people these
+[76:00.24] agents communicate with each other like
+[76:02.80] data
+[76:03.28] >> yeah like uh so so the thing that will
+[76:06.40] even if they are really really good and
+[76:08.24] they don't basically like have like a
+[76:09.92] way to sort of communicate like and get
+[76:11.84] with each other. you are like looking at
+[76:14.00] so much trouble like we are spending
+[76:15.60] $4.5 trillion we will spend $20 trillion
+[76:18.64] like very quickly right because everyone
+[76:20.56] is basically doing something and then
+[76:22.16] they don't have a way to communicate
+[76:23.68] like everyone has
+[76:24.80] >> it's not efficient I'm guessing efficacy
+[76:26.24] will take a toll on all of that right
+[76:27.84] because you're just working off like
+[76:29.04] biased stuff right if you're working in
+[76:30.88] isolation
+[76:31.76] >> and and so like I think what what we've
+[76:34.56] sort of really like taken a bet on is
+[76:36.88] the fact that there is a need for this
+[76:40.08] orchestration layer like I think like in
+[76:41.92] the And we are basically going to be
+[76:43.76] like the orchestration uh layer. We're
+[76:45.76] going to have like I think like few of
+[76:47.12] these things like of our own which are
+[76:49.20] first party. There are going to be
+[76:51.04] things that are third parties. We
+[76:52.80] working with multiple startups right now
+[76:54.48] come build basically like on top of our
+[76:56.16] platform. So we sort of we like I think
+[76:58.08] like be the orchestration layer for a
+[77:00.24] lot of these things and because a lot of
+[77:02.24] existing systems have been so closed
+[77:04.56] like having like an open ecosystem like
+[77:06.80] I think players like us sort of come and
+[77:09.12] open this up is probably what the
+[77:10.88] industry needs and that's the layer that
+[77:12.56] we are sort of really betting on.
+[77:14.08] >> That's amazing. And is this layer so is
+[77:16.32] this like uh can like customers build on
+[77:19.68] top of this or can developers build on
+[77:21.36] top of this like how does this work? So
+[77:23.60] right now it's first party like I think
+[77:25.44] like uh offerings that we sort of rehab
+[77:28.08] it is also opened up to customers to
+[77:29.84] basically build like like their own
+[77:31.44] agents on top of it. Uh by October or
+[77:34.48] November we'll also open it up to like
+[77:36.56] uh startup startups like to sort of
+[77:39.12] build on top of it.
+[77:40.08] >> Amazing. Got it. Got it. That's super
+[77:42.24] helpful. Um yeah these are the two
+[77:45.20] things. Uh on the third aspect uh how
+[77:47.44] are you using data like AI internally
+[77:50.40] like is there like because people are
+[77:52.08] talking and again this has become
+[77:53.36] mainstream conversation that X amount of
+[77:55.60] code is now you know generated by AI
+[77:58.48] this amount of code review is happening
+[78:00.00] by AI but like have you seen something
+[78:02.72] like what is the significant delta that
+[78:05.60] you are seeing because of AI in internal
+[78:07.92] processes is like the incremental hiring
+[78:11.12] that you would have to do has that gone
+[78:12.80] down uh what are what are some of your
+[78:15.12] obser observations in that front. So I
+[78:17.20] think like uh the metric that we sort of
+[78:19.36] measure is effectively layering what is
+[78:20.96] the size of a scrum team like uh uh
+[78:23.68] right like I think uh it used to sort of
+[78:26.16] really be eight people it's now uh like
+[78:29.12] um 4.5 people like uh uh
+[78:32.32] >> what a scrum team is basically like a
+[78:34.80] okay like a product manager uh like a
+[78:37.20] design person like a number of engineers
+[78:39.12] right like to deliver like a certain set
+[78:41.52] of product right like uh so so that's
+[78:45.84] Huh? It's almost like a 40%
+[78:47.52] >> 40% light reduction like uh so so our
+[78:51.04] general view is that like there is like
+[78:52.96] a
+[78:53.68] >> we are able to do a lot more
+[78:56.80] >> right like so the number of products
+[78:58.40] that we are sort of working on in
+[79:00.16] parallel uh has like increased quite a
+[79:02.72] bit uh right uh so we we we like we have
+[79:06.40] so much to build that like I can use
+[79:08.64] like any number of people uh right now
+[79:10.88] like uh but um like I think the way
+[79:14.32] >> so foot per person has increased
+[79:16.00] significantly
+[79:16.56] >> significantly like and uh and that's
+[79:18.88] basically like on the dev side like uh
+[79:20.80] even on basically things like data
+[79:22.32] integration and like like the like um uh
+[79:24.64] teams of that nature like more data
+[79:26.40] engineering themes that number is
+[79:28.40] basically gone from like 4.2 to 2.1
+[79:31.36] right 50% like uh the team says that it
+[79:35.20] could basically go down to like I think
+[79:36.48] like 80%.
+[79:38.24] uh it like with gravity and like all of
+[79:40.32] these things that we sort of redeplying
+[79:41.92] like the identification that they're
+[79:43.28] sort of redoing it can go down like like
+[79:45.52] by 80% like so like as so what it means
+[79:48.56] is that like even if we had like 4x 5x
+[79:51.28] of like the customers we don't sort of
+[79:53.52] like need to increase like cap I'll give
+[79:55.76] you a number right like
+[79:59.76] we've not added a single net person like
+[80:03.84] uh on headcom going from 70 million to
+[80:06.80] 210 million
+[80:08.72] Wow.
+[80:09.60] >> Three times the revenue, same number of
+[80:11.20] people.
+[80:12.08] >> That is crazy.
+[80:13.60] >> My god. So,
+[80:15.60] >> wow. You should write something about
+[80:17.12] this. This is a benchmark for a lot of
+[80:19.12] other companies. I'm sure
+[80:21.12] >> it also could mean like we were bloated
+[80:22.88] earlier.
+[80:25.84] >> But like I think um I think like our
+[80:28.08] sense is like we will probably go from
+[80:30.08] where we were to like four four and a
+[80:32.56] half times. So correct me without adding
+[80:33.92] a network person.
+[80:35.76] >> That's easy. That is amazing. And there
+[80:38.16] you were being 70 or 200 70 to 280.
+[80:41.52] >> Okay, that's amazing. That is uh
+[80:44.24] incredible. Um, wow. This is really
+[80:47.44] really helpful. I think we've covered a
+[80:49.04] bunch of ground. I think towards the end
+[80:51.12] I just want to cover maybe a series of
+[80:53.12] like final questions that I usually ask
+[80:55.52] uh most others. Um, in your journey
+[80:57.60] you've now started Z uh 21 which is your
+[81:00.88] investing arm that you all have put
+[81:03.12] together and it's doing some great work.
+[81:05.20] You also mentioned that you're
+[81:06.40] passionate about like just deep
+[81:08.24] sciences, deep innovation, technically
+[81:10.80] strong founders. Talk to us about what
+[81:12.80] that means to you like where does that
+[81:14.56] fascination come from? Apart from of
+[81:16.24] course you are extremely like you come
+[81:18.32] from a technical background having
+[81:19.76] worked in technical phases but um what
+[81:22.72] are experiences that have shaped such
+[81:24.48] thinking? Uh what are signs of technical
+[81:27.12] founders and you were telling me some
+[81:28.56] really interesting spaces that you've
+[81:29.92] looked at VR Z21 maybe you could talk
+[81:32.56] about its inception as well. Uh I'd love
+[81:35.20] to understand like where does that part
+[81:37.36] of you come from because I'm sure like
+[81:39.76] the founder side is just so heavy that
+[81:42.32] you have very limited time. So how do
+[81:44.32] you sort of spend time beyond that is a
+[81:46.24] interesting thing to understand.
+[81:48.96] My general view like I think like
+[81:52.16] very early like there is so much
+[81:55.68] incredible stuff to build.
+[81:57.52] >> Yeah. I think like God is so harsh.
+[82:00.16] >> No. So, so if you've gotten the
+[82:03.68] privilege of studying engineering
+[82:07.36] like build stuff like uh so that's like
+[82:11.28] I think like been at least my thinking
+[82:13.04] like from the get go like so like we
+[82:15.20] we've sort of like I think like gotten
+[82:17.28] like as I told you like like we
+[82:20.56] >> like all of us basically could have gone
+[82:22.32] into management consulting all of us
+[82:24.00] basically like I think they could have
+[82:25.20] sort of gotten to like uh um go do like
+[82:30.00] bunch of like other stuff that like a
+[82:31.92] lot of people sort of end up doing. Uh
+[82:34.32] and nothing against that. It's just like
+[82:36.00] I think like I I just feel like I think
+[82:37.92] like that if we got the privilege of
+[82:39.76] studying basically like I think like
+[82:41.36] engineering at such incredible places uh
+[82:45.12] we should use that uh right uh so so
+[82:48.72] I've always sort of really been like a
+[82:50.56] big fan of building like uh I we used to
+[82:54.24] basically watch like I think like what
+[82:55.84] Steve Jobs was saying like I think like
+[82:57.36] at undergrad like we just like I think
+[83:00.16] like fairly inspiring uh to like uh uh a
+[83:04.72] deep degree like I think like for for me
+[83:06.88] for sure and like I think like Kov is
+[83:09.04] the same and Mkit is the same like and
+[83:10.56] Sandi is the same like all of us
+[83:12.16] basically like felt like we going to go
+[83:14.16] build stuff like um that was the job
+[83:16.56] that I did that was like I think like
+[83:18.24] the uh company that we are sort of
+[83:20.24] rebuilding uh and and so
+[83:24.96] when it became like a little bit like I
+[83:26.72] think like sizable one of the things
+[83:28.40] that I wanted to sort of redo was to
+[83:31.12] promote more technical entrepreneurship
+[83:33.20] coming out of like at least like India's
+[83:34.96] top engineering schools. uh um and uh
+[83:39.20] and whatever we've had like the good
+[83:41.28] fortune of learning uh uh we got a bunch
+[83:45.68] of like opportunities and experiences uh
+[83:48.00] right like a lot of it
+[83:51.68] is also serendipity like right like I
+[83:53.92] think stuff happens uh and we got this
+[83:56.40] opportunity like I think uh so if we've
+[83:58.64] got that opportunity like uh to sort of
+[84:01.20] get to u so a lot of people like I think
+[84:04.16] like founders sort of reached out to us
+[84:06.72] um uh like okay like will you invest
+[84:09.68] like uh and like I ended up sort of like
+[84:12.24] investing in that everything like that
+[84:14.64] to be like and what it sort of really
+[84:16.88] like I think like ended up becoming is
+[84:18.48] that when they came to me for like
+[84:20.24] actual help like I wasn't able to do
+[84:22.16] that dumb right uh so the way Z21 sort
+[84:25.04] of really started was that there is a
+[84:26.64] group of us like like maybe hundred of
+[84:29.44] us like here which are Silicon Valley
+[84:31.12] executives like company builders etc all
+[84:34.24] of us were basically like wanting to do
+[84:35.84] the same like so we got a bunch of them
+[84:37.76] together said let's put in like I think
+[84:39.44] like money we got like I think like Raj
+[84:42.24] um and Jotica basically like I think and
+[84:44.64] sashan sort of like I think like were
+[84:46.88] three people who were wanting to do this
+[84:48.48] full-time we got a bunch of these 100
+[84:50.32] people together and said that let's
+[84:52.08] basically create like a community plus
+[84:55.12] fund so it's not just a fund like uh uh
+[84:58.40] so there is like a community of like I
+[85:00.96] think like 200 like Silicon Valley
+[85:02.40] executives like uh that are all LPs like
+[85:05.60] so they're truly invested in like um
+[85:09.04] getting like I think like success to
+[85:10.40] these founders and they're people at
+[85:14.08] senior levels at Uber and Google and
+[85:16.80] Microsoft and like SpaceX and uh Tesla
+[85:20.96] and all of these sort of places right
+[85:22.88] like so so if um you really wanted to
+[85:26.08] sort of learn from them we have a
+[85:27.60] community of these people who are able
+[85:28.88] to sort of tell you like how to build a
+[85:30.64] chip like how do you sort of think about
+[85:32.48] like building a rocket uh SpaceX like I
+[85:35.84] think like type company if uh if you
+[85:38.08] really wanted to sort of figure out like
+[85:39.92] uh um how to build like a racing car or
+[85:42.80] like how do you build like EV toll like
+[85:45.44] uh like all of those sort of like things
+[85:47.68] there are people that
+[85:50.08] have tried it here. Uh so all of the
+[85:52.40] things that we talked about earlier that
+[85:54.00] like like uh what are failure mods like
+[85:56.96] uh uh like uh there are people who've
+[85:59.84] experienced a bunch of that both
+[86:01.44] successes and failures right like uh so
+[86:03.68] how do you get like that community
+[86:05.52] engaged
+[86:06.64] >> you know in a meaningful way and we call
+[86:09.04] this like purposeful capitalism right
+[86:11.12] like uh that it's not like not per not
+[86:14.16] for profit like to a certain extent it
+[86:16.24] is basically like I think like
+[86:17.36] capitalism to its core where like
+[86:19.28] purpose-driven founders if you want to
+[86:21.12] sort of really do this. There is the
+[86:22.40] community of like people that we'll help
+[86:24.00] with. So it's not we've not just raised
+[86:26.08] money from like I think like large
+[86:27.36] institutions. It's mostly a collection
+[86:29.04] of uh uh founders, execs and those type
+[86:32.16] of people like coming together and
+[86:33.68] really helping these communities. We
+[86:35.52] like the uh so that was sort of the
+[86:38.32] intent that how do we put structure to
+[86:40.56] it because like I think like just
+[86:42.56] spraying like money uh like uh dumb ad
+[86:46.88] hoc it doesn't help. it really like
+[86:48.88] didn't help the founder like uh like my
+[86:51.44] money was gone. I don't even know where
+[86:53.12] I've invested in like uh um and uh and
+[86:56.48] so like putting some structure to it
+[86:58.40] like and um really making it an
+[87:01.04] institution was sort of really the
+[87:02.48] intent there for sure.
+[87:03.76] >> That's amazing. um what are some of the
+[87:05.68] spaces that you are you know investing
+[87:07.44] in because I found it very interesting
+[87:09.44] when you were mentioning when you were
+[87:11.12] grabbing coffee before the recording so
+[87:13.36] I'd love to understand what are areas
+[87:15.68] that we have like I think certain degree
+[87:17.84] of competency in that we could be
+[87:19.44] helpful at enterprise software always
+[87:22.96] obviously like I think like I've gone
+[87:25.36] through so much like we I've done two
+[87:27.20] PhDs like I feel like one year stint is
+[87:29.68] a PhD I've now done two like u so
+[87:32.96] enterprise software I I think like I
+[87:34.72] have like a certain degree of
+[87:36.80] understanding on how to sort of rebuild
+[87:38.64] like enterprise software and Raj
+[87:40.80] basically like was like VP of product
+[87:42.64] like I think uh for us like before that
+[87:45.36] right he was uh like uh he was at
+[87:48.64] Berkeley like a PhD from there like
+[87:51.68] worked at glass doors like Sudan sort of
+[87:53.84] like built a company of his own so so I
+[87:56.24] think like software we sort of have like
+[87:58.80] I think like administr the other thing
+[88:00.64] like which I don't think like a lot of
+[88:02.32] people sort of
+[88:03.84] would think is traditionally right for
+[88:06.24] um VCs but we think like is going to be
+[88:09.04] like really large is IP based hardware
+[88:12.48] uh right like um uh that uh one of the
+[88:15.92] companies that we sort of reinvested in
+[88:17.92] for example is this company called hand
+[88:19.60] nozzles uh they basically
+[88:22.56] use fluid dynamics for fire suppression
+[88:24.80] systems uh like uh uh so so the logic
+[88:29.12] effectively is that if you basically
+[88:31.60] hold this um
+[88:34.32] uh like the pipe that basically like is
+[88:37.04] used for uh shutting down fires. There's
+[88:40.24] so much pressure that sort of recover
+[88:42.00] right but if you change the flow of that
+[88:45.36] water like the pressure basically
+[88:46.80] reduces and one person can sort of
+[88:48.48] manage that right
+[88:49.60] >> you're right manic
+[88:52.48] you could change the flow again and it
+[88:54.96] could basically like same amount of
+[88:56.96] water could basically like I think
+[88:58.72] really save
+[88:59.84] >> like many
+[89:01.04] >> yeah right will differ so so they've
+[89:03.68] been incredible like this is like I
+[89:05.36] think like Kpur guy like I think like
+[89:07.36] PhD from like um
+[89:10.56] some of the universities here like
+[89:12.56] incredibly bright um and uh this is what
+[89:15.60] he's sort of working on like we saw that
+[89:17.52] like I think we said like okay great
+[89:19.44] like this seems like I think like
+[89:20.56] incredible area to sort of reinvest in
+[89:22.64] similarly like I think like uh we we
+[89:24.96] invested in companies that are building
+[89:26.48] like propulsion system for like I think
+[89:28.80] like uh uh rockets we basically like
+[89:31.52] also investing in companies uh um uh
+[89:34.72] that are building AWS for satellite and
+[89:38.72] launching satellites. Uh we are
+[89:41.92] investing in uh companies that are
+[89:43.92] building like an autonomous version of
+[89:45.92] like the next Goldman Sachs. Uh like
+[89:48.56] automated like I think like investing
+[89:50.32] and like figuring out like um uh systems
+[89:53.36] like that. So I think like a lot of like
+[89:55.60] the investments that we've done like are
+[89:58.08] traditionally companies which may not
+[90:01.28] receive as much capital but you think
+[90:03.60] >> but these are massive problem areas. It
+[90:05.44] was like like us right like uh
+[90:08.08] healthcare
+[90:09.92] data infrastructure who cares about it
+[90:12.16] no one before you sort of really create
+[90:14.96] a large company like someone is building
+[90:16.48] like the next AI version of Autodesk
+[90:19.12] just think about it after AutoCAD there
+[90:22.16] is no business that has sort ofly built
+[90:25.68] in that space uh and that is the biggest
+[90:30.08] application of generative AI like if you
+[90:32.88] could create like I think like uh uh
+[90:35.12] these like design systems and like stuff
+[90:37.28] of that nature. It's incredible. Uh so
+[90:40.24] so I think like these are areas that are
+[90:42.80] fascinating areas that I feel uh and
+[90:47.04] that there should be companies in like
+[90:48.96] uh uh and um and so a lot of like I
+[90:51.76] think like Rajika and Solash done like
+[90:54.32] such an incredible job like I think like
+[90:56.00] doing this like I'm just basically there
+[90:57.68] like like there's so much to do in I'm
+[91:00.96] just basically like I think like there
+[91:02.56] to sort of if any founder basically
+[91:04.80] needs any help like I'm there to sort of
+[91:06.72] really like like be helpful with my
+[91:08.40] experience. are like uh it's not that I
+[91:10.56] know everything but I can tell you
+[91:11.92] basically like pale modes uh like uh uh
+[91:14.88] so that's sort of what I'm generally
+[91:16.96] there for like uh and like I've been
+[91:19.60] like super impressed by like uh uh these
+[91:23.20] founders like most of them have
+[91:24.64] basically raised like I think like the
+[91:26.00] next rounds like I think like average
+[91:27.68] growth of these companies has been like
+[91:29.28] 450% like a year incredible
+[91:32.00] >> uh so like I feel like it's doing well
+[91:36.00] like but like um uh I I I think like for
+[91:39.52] me the biggest advantage is that I learn
+[91:41.68] so much. Uh the feel like I think they
+[91:44.64] are learning
+[91:46.72] like I get to learn so much about like
+[91:48.96] application of new technology and how
+[91:50.88] they are sort of rethinking about like I
+[91:52.48] think the new world for sure.
+[91:54.32] >> That's incredible. That is lovely to
+[91:56.56] hear. such exciting times and I love how
+[91:58.88] you've extended your passion with not
+[92:00.80] just building your own company but by
+[92:02.96] you know paying it forward learning from
+[92:04.64] them and the humility the want to learn
+[92:07.44] is also evident and the passion with
+[92:09.28] which you just spoke about it is just
+[92:10.80] like it shows um for the second last
+[92:14.16] question and this is beyond the
+[92:15.92] entrepreneurship but if I had to ask a
+[92:17.60] group of your friends to describe you
+[92:19.44] what would they say
+[92:21.12] >> I think I love watching movies like I'm
+[92:23.76] generally like fairly optimistic person
+[92:26.96] like I I really think good things happen
+[92:31.04] to good people like uh uh and um and and
+[92:36.00] I'm almost always like I think like
+[92:38.48] highly optimistic about like the outcome
+[92:41.28] in most cases it doesn't work out but
+[92:43.28] like I think like in the two cases out
+[92:44.80] of 10 that it works out like it works
+[92:46.40] out logically like like uh uh and I
+[92:48.48] think like anyone that you'd sort of
+[92:49.92] speak to like across I think everyone
+[92:52.40] would sort of retell you like uh that I
+[92:54.32] am that I also love to like read it up
+[92:58.16] like I I feel
+[93:00.80] amongst the people around me like I am
+[93:04.88] like I don't read books as much as
+[93:06.80] basically like I think like being on uh
+[93:09.12] like uh just snippets and like blogs and
+[93:13.28] all of those sort of like things but I
+[93:15.04] would probably think that I read 10
+[93:16.80] hours a day
+[93:17.92] >> uh like uh
+[93:19.92] >> so me like uh anything everything from
+[93:23.52] like what's happening in Iran and Israel
+[93:24.96] to basically what's happening in India
+[93:26.24] to what's happening here to like what's
+[93:28.32] happening in tech like what is I'm
+[93:29.84] always been thinking about what is
+[93:32.80] it I I feel like I think like it is
+[93:35.84] really really helpful for me to sort of
+[93:37.52] like do my job like
+[93:40.00] >> so I read a ton I love Shah Ruk Khan and
+[93:43.20] Rashi Kant movies
+[93:44.88] >> wow I was not expecting that on the list
+[93:48.88] >> I I can't tell you like I think like
+[93:50.32] Raji Khan far more than Shah Rukh Khan
+[93:52.08] but like uh like I I would not like I
+[93:54.24] think listed it sh Because
+[93:58.32] and then like I think like to like I'm
+[94:00.08] from Laknau I eati.
+[94:02.08] >> Yeah.
+[94:03.76] >> Food kebab. So basically chur like I
+[94:07.04] think like that is sort of like the
+[94:08.24] other thing that I really really enjoy.
+[94:10.56] And um and the most important thing that
+[94:13.44] has sort of really become sort of like I
+[94:15.76] think like my primary job at this point
+[94:17.52] is
+[94:19.20] like that to my three-year-old daughter
+[94:21.68] of like um and uh
+[94:25.84] and if you said like what was one
+[94:28.00] meaningful change in my life that
+[94:29.44] happened like I think like over the last
+[94:30.80] 10 15 years I don't think like I think
+[94:32.48] the founder thing like has been a ch
+[94:34.32] like being a dad to a three-year-old and
+[94:37.04] really learning the world view from her
+[94:39.60] eyes has been such a privilege like uh
+[94:43.84] it is incredible. I don't think like uh
+[94:46.16] people talk a lot about that uh um but
+[94:50.80] the ways kids shape you like uh when you
+[94:55.44] feel like a sense of responsibility
+[94:57.28] towards them when you see basically like
+[94:59.04] I think like like how do they look at uh
+[95:00.88] the world and first principles questions
+[95:03.52] that they sort of end up asking it is
+[95:06.40] magic like uh and like even if you go to
+[95:09.52] my LinkedIn I think like it says dad
+[95:11.52] first and then it basically says like
+[95:13.28] everything else so like I I just feel
+[95:14.96] like I think uh uh in all of this race
+[95:18.24] of like find like creating companies
+[95:22.16] doing what we are doing like we
+[95:23.52] shouldn't sort of really forget like I
+[95:24.80] think that the most important things in
+[95:26.64] our lives uh is the people around us uh
+[95:30.32] and
+[95:31.84] anything can go wrong and these are the
+[95:33.52] people that would sort of I think like
+[95:35.04] care for you. or your friends and like
+[95:37.04] your family like uh my wife, my parents
+[95:39.52] like um like I I just feel like I think
+[95:42.64] that is like a very very important thing
+[95:44.56] for me for sure.
+[95:46.16] >> I love that. I love how well you have
+[95:48.80] mentoring that. That is amazing to sort
+[95:50.96] of witness. In fact uh so much of what I
+[95:53.92] learn on the podcast beyond these
+[95:55.44] conversations on the record is actually
+[95:57.20] the softer aspects of life and
+[95:59.20] appreciating it and almost most people
+[96:01.68] end up mentioning a version of this. So
+[96:04.00] thank you so much for sharing. Um for
+[96:06.24] the last question um we usually go back
+[96:08.40] to a point in time that is pivoted. So
+[96:10.00] maybe if you could do go back to your
+[96:12.00] IIT Karpur graduation day and if you
+[96:14.40] were telling yourself something uh and
+[96:16.40] the benefit of you know condensing
+[96:18.00] learnings 15 years uh since what would
+[96:21.04] you tell yourself?
+[96:22.24] >> I biggest scenario which sort of like
+[96:24.32] say to myself is like I think uh
+[96:27.76] you see
+[96:29.84] like this life is a race like do it
+[96:33.04] right. It's not uh it's really long like
+[96:37.12] u what you have to understand is that
+[96:39.20] like a lot of time like I think like
+[96:41.20] society forces you to be like I think
+[96:42.88] like in a race like uh and that you have
+[96:45.68] to basically by 30 do this like by 40 do
+[96:48.16] this like and I'm telling you basically
+[96:50.40] dude like I've been on all lists like I
+[96:53.84] was like 25 under 25 I was 30 under 30 I
+[96:57.04] was 40 under 40 like I I've been on all
+[96:59.20] lists like dude it's not a race like uh
+[97:03.28] and frankly like um the one thing that
+[97:07.04] um like Warren Lefay sort of like I
+[97:09.84] think like said really well when someone
+[97:12.80] asked was the fact that why do you think
+[97:15.04] like most people how would you invest
+[97:17.60] like is was the question right like uh
+[97:20.16] and what he said was I would pick great
+[97:22.24] companies and hold them for a really
+[97:23.68] long period of time like uh and uh and
+[97:26.72] so the person in front effectively said
+[97:28.56] that hey like that's like so s that
+[97:31.28] can't just be it right? Like uh and um
+[97:34.56] uh and what he sort of ended up saying
+[97:36.48] is uh in that way like everyone should
+[97:38.48] be rich. Yeah. And so what he ended up
+[97:40.24] sort of saying after that is most people
+[97:42.96] are not rich
+[97:45.44] because
+[97:47.76] they don't want to get rich slowly
+[97:50.88] like uh and if like most people end up
+[97:54.56] losing everything because they wanted to
+[97:56.88] get rich quickly like uh and if you have
+[98:00.16] the patience and if you let compounding
+[98:02.32] sort of really work in your favor
+[98:03.84] whether that's uh like compounding of
+[98:06.64] like I think like knowledge whether
+[98:08.00] that's compounding of like I think like
+[98:09.60] your uh like people around you like of
+[98:12.24] what you're sort of be learning you are
+[98:14.32] going to end up like I think like being
+[98:15.84] rich but in this race of like I think
+[98:18.00] like let me switch like I think like two
+[98:19.60] more jobs like because like I want to
+[98:21.36] get to like I think like the next uh uh
+[98:24.16] like um higher thing you don't let
+[98:26.32] compounding work into your uh into your
+[98:28.32] favor and and so like all of the
+[98:30.80] continuity that you sort of built in uh
+[98:33.12] like compounding then needs to restart
+[98:35.04] like running like somewhere else uh and
+[98:37.28] and and so That's what I sort of really
+[98:39.44] felt that frankly if I was doing a job
+[98:42.24] like um I would have still been at
+[98:44.32] Ingresol like uh I loved it. I love
+[98:47.84] working with the people. The only reason
+[98:49.68] that I would ever switch
+[98:52.72] like from one thing to the other is that
+[98:54.56] if it I don't like the people like uh
+[98:56.72] it's really important for me like uh who
+[98:59.04] are the people that I sort of really
+[99:00.40] work with and as long as that sort of
+[99:02.48] there and they care for me I care for
+[99:04.08] them like and all of those sort of
+[99:05.68] things let compounding work uh and like
+[99:09.76] uh and like I think Charlie Mer said
+[99:12.32] that and not Warren Buffet but like I I
+[99:14.24] feel one of those two basically like I
+[99:15.68] think like did and that has stuck with
+[99:17.84] me forever. like uh don't be in a race
+[99:21.28] like anyone who's basically telling you
+[99:23.52] all of these things like rule of 40 like
+[99:26.96] rule of this like rule of like dude like
+[99:29.60] none of that means like we've been like
+[99:31.60] great at like I think like all of these
+[99:33.04] things and I'm telling you like the only
+[99:34.80] fundamental thing that sort of really
+[99:36.88] has mattered for me is can I trust the
+[99:40.00] people that I'm sort of like around like
+[99:41.92] are we basically like with common values
+[99:44.24] like do we want the same things in life
+[99:46.56] and if I go to sleep like sleeping well
+[99:50.08] at night. That is what I'm solving for
+[99:52.96] like uh because it's like every other
+[99:54.72] rules
+[99:56.40] like someone made up like and you just
+[99:58.16] basically are sort of like believing it.
+[99:59.92] Uh uh so the only natural basically like
+[100:03.44] I think like growth curve is like the
+[100:05.04] exponential growth curve if you let
+[100:06.96] compounding happen. Everything else is
+[100:09.36] basically like someone telling you
+[100:10.72] something that doesn't matter.
+[100:12.96] >> That's brilliant. That is incredible.
+[100:15.28] Thank you so much for sharing. I I love
+[100:17.68] every bit of it. I think not just the
+[100:20.16] learnings that you have tactically
+[100:21.44] shared on company building which are
+[100:23.20] enormous because what you're doing is
+[100:25.04] absolutely phenomenal from a revenue
+[100:27.44] stage cycle sector type of company lens
+[100:30.40] but also the software learnings are
+[100:33.04] amazing. Your intellectual curiosity is
+[100:35.76] so commendable and the authenticity with
+[100:38.32] which you have shared all your learnings
+[100:39.92] means the world. Thank you so much. I'm
+[100:42.08] so glad we did this and I'm confident
+[100:43.76] that everybody who's watching will
+[100:45.92] benefit from it.
+[100:47.04] >> This has been great. Thank you so much.
+[100:48.40] >> Cheers. Thank you.
+[100:51.92] >> Hello. If you made it this far, you've
+[100:53.92] probably watched the entire episode and
+[100:55.60] if you've done that, I'm really
+[100:57.04] grateful. I and my team try to put in a
+[100:59.92] lot of effort to ensure that we can
+[101:01.84] bring the best quality content to you.
+[101:03.84] So, if you like the episode, if you
+[101:05.44] watched it thus far, my request to you
+[101:07.44] is to share it with people, to subscribe
+[101:09.52] to the channel, and to ensure that we
+[101:11.76] can keep growing. We are everything and
+[101:14.40] anything only because of you, our
+[101:16.64] listeners. Thank you so much for tuning
+[101:18.64] in. We'll keep bringing to you amazing
+[101:20.96] content.

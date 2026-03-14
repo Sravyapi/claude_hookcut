@@ -1,0 +1,1477 @@
+[0:00.32] Why have agents struggled to realize the
+[0:02.80] potential?
+[0:06.56] While we are seeing improvements in
+[0:08.08] single player mode, what you really want
+[0:09.68] is a multiplayer mode with state and
+[0:12.00] memory across time. What we saw was that
+[0:15.36] there was a common thread to the answer.
+[0:18.48] And that common thread is the context
+[0:20.56] graph.
+[0:22.40] The most successful AI startups will be
+[0:25.60] those that are able to build a mode by
+[0:28.24] building a unique context graph. That's
+[0:29.84] a very powerful statement. So enterprise
+[0:32.48] are now aware of context class. Where do
+[0:34.56] they start?
+[0:35.28] >> Well,
+[0:40.48] hi, this is Sadhhatalwalia, your host at
+[0:42.40] Neon show and managing partner at Neon
+[0:44.56] Fund. Today I'm glad to host Ash,
+[0:47.68] general partner at Foundation Capital.
+[0:49.28] Third time on Neon show. Ash, so glad to
+[0:51.04] have you back again.
+[0:51.92] >> Thank you for having me again. Uh this
+[0:53.28] is this has definitely become a habit.
+[0:55.36] uh you and J the article that you wrote
+[0:57.44] on context graph has you know cornered I
+[1:00.00] think all the VC deals so in the last
+[1:02.72] one quarter and it's just keeping on
+[1:04.96] compounding right so today what we want
+[1:07.92] to discuss is about the three things
+[1:09.60] what every everyone agrees on what
+[1:11.68] questions are still unanswered and what
+[1:13.52] comes next right just to start with you
+[1:15.84] know uh so to our audience who you know
+[1:18.24] who don't know or who haven't read the
+[1:19.76] article can you explain context graph
+[1:21.92] and lament
+[1:22.96] >> absolutely you know Think of a context
+[1:25.44] graph as the institutional memory for an
+[1:28.00] organization. At it at its simplest
+[1:30.48] level, it is an it is an aggregation of
+[1:33.60] the knowledge of why decisions were
+[1:35.52] made, how they were made, who made them.
+[1:39.60] And the why often has to be inferred
+[1:42.00] from the how and the who. And so but
+[1:44.24] that institutional memory of all that
+[1:45.68] information that exists within an
+[1:46.72] organization uh which is partly in human
+[1:49.68] beings heads and is partly in a variety
+[1:52.08] of digital traces
+[1:54.40] uh is the context graph in in layman
+[1:57.12] terms and I can give you a little bit
+[1:58.40] more of a technical definition in a
+[1:59.52] minute if you'd like.
+[2:00.16] >> Sure would love to learn the
+[2:01.28] >> so at the root of a context graph is
+[2:03.52] this notion of a decision trace. So, as
+[2:06.80] humans and agents collaborate to execute
+[2:10.16] business processes, as you go through
+[2:12.32] the 10 or 15 steps, often across
+[2:14.88] multiple systems of record, across
+[2:17.44] multiple communication systems, you
+[2:19.36] know, if you're making a decision, you
+[2:20.48] might have a Zoom call, you might have
+[2:21.36] an email trail, you might have a Slack
+[2:23.28] message, you may have a phone call, and
+[2:25.36] you might make a bunch of system calls
+[2:26.64] to a bunch of, you know, systems of
+[2:28.40] record. When you stitch all of that
+[2:30.40] together with a time and state
+[2:32.96] component, you get a decision trace. And
+[2:36.24] historically, organizations do not have
+[2:39.20] these decision traces in a form that can
+[2:41.60] be processed. They have the outcome. So
+[2:44.08] systems of record uh capture the output
+[2:47.12] of these decision traces. So what
+[2:48.48] happened at the end? If you signed a
+[2:50.48] deal with XYZ company at ABC price and
+[2:53.12] gave you know so and so discount, that
+[2:55.12] information is captured. But that's the
+[2:56.48] outcome of a set set of decisions that
+[2:58.64] you made and that set of decisions you
+[3:00.40] made is a decision trace. When you
+[3:02.16] aggregate decision traces together for
+[3:03.92] an organization
+[3:05.60] uh in in you know in in the context of a
+[3:08.40] specific business process or sphere
+[3:10.32] depending on the abstraction that
+[3:11.76] becomes the context graph
+[3:13.44] >> and when you wrote this article why did
+[3:17.04] it hit such and such a nerve? Why did it
+[3:18.96] go viral? So Jay and I and and you know
+[3:21.84] Jay has been my sort of co-conspirator
+[3:23.44] on this for for the last year. uh for
+[3:25.52] the last year we've really been asking
+[3:27.04] ourselves this question of uh why why
+[3:31.04] have agents struggled to realize the
+[3:33.20] potential the promise of agents you know
+[3:36.24] which we were all making 12 18 months
+[3:38.16] ago uh has struggled and while we're
+[3:41.84] seeing improvements we're seeing
+[3:43.04] improvements in single player mode we're
+[3:44.80] seeing improvements in single chat mode
+[3:47.28] uh what you really want is a multiplayer
+[3:49.68] mode with state and memory across time
+[3:52.56] and more automation
+[3:54.80] uh we have seen our portfolio companies
+[3:56.88] work through these issues and as J and I
+[4:00.00] worked through this with companies like
+[4:01.52] Maximore in finance automation, Player
+[4:03.60] Zero in production engineering
+[4:05.12] automation uh and many others what we
+[4:08.72] saw was that there was a common thread
+[4:11.36] to the answer and that common thread is
+[4:14.56] the context graph and so our belief is
+[4:17.44] that the most successful AI startups of
+[4:21.44] the future will be those that are able
+[4:23.36] to build a mode by building a unique
+[4:25.60] context graph
+[4:27.60] >> and today is there a technology that can
+[4:30.08] build this context graph
+[4:32.08] >> absolutely the technology is not the
+[4:33.68] barrier here there are uh many companies
+[4:36.88] I mean I talked about Maximore I talked
+[4:38.88] about player zero there is Tera who's
+[4:40.72] doing it for ERP migrations and
+[4:42.32] automations uh there is Olive that is
+[4:44.96] doing that for sales and Reggie for
+[4:46.88] demand generation so we have many
+[4:48.16] examples of these this in our portfolio
+[4:49.84] and there are many examples outside our
+[4:51.12] portfolio to be fair uh I think the It
+[4:54.00] is very hard technically. I don't want
+[4:55.20] to minimize the technical challenge. It
+[4:57.28] requires a combination of building an
+[4:58.96] organizational.
+[5:00.56] So you know the good old world of
+[5:01.84] knowledge management and knowledge
+[5:03.20] graphs. It requires very often the use
+[5:05.52] of uh uh some sort of graph-based
+[5:09.36] approach. Hence the context graph. Now
+[5:11.60] you could have a graph in the form of a
+[5:12.88] graph database. You could have a
+[5:13.92] relational database with a graph layer.
+[5:15.44] There are many implementation uh
+[5:17.04] approaches and it requires actually
+[5:18.56] capturing state. Uh so I have a
+[5:20.48] portfolio company that is really working
+[5:22.56] on data infrastructure where state
+[5:24.96] becomes a first class citizen because
+[5:27.28] the sequence of events matters and the
+[5:29.28] time stamp of those events matters and
+[5:31.52] historically that's not been true. Most
+[5:32.80] databases have not really factored that.
+[5:34.24] So event streams matter. So all of this
+[5:36.88] is hard but the best-in-class companies
+[5:39.60] today have built context graphs and they
+[5:42.16] will be the winners of the future. So
+[5:43.92] what uh delta value are these kind of
+[5:47.04] companies and the context graph is
+[5:48.40] adding because what you are talking
+[5:49.76] about is institutional memory that gets
+[5:51.84] passed on or across the institution like
+[5:53.84] Amazon for leaders right for example in
+[5:55.76] Amazon the context is you should follow
+[5:57.60] the leadership principles right and if
+[5:59.44] you're deviating from it you get
+[6:00.72] chhatted by the leaders on on coming
+[6:02.56] back
+[6:03.52] >> so you know the for human beings uh you
+[6:06.56] can articulate principles at the level
+[6:08.48] of decision you know Amazon's leadership
+[6:10.08] so it's a great example and then human
+[6:12.16] beings are expected to interpret the
+[6:14.80] eight or 10 Amazon leadership principles
+[6:16.72] in a variety of situations.
+[6:18.48] >> How they interpret them, what decisions
+[6:20.88] they make in real world situations,
+[6:22.24] that's a decision trace.
+[6:24.32] >> Agents need that context. That's the
+[6:26.64] context graph. The sum total of
+[6:28.40] decisions that human beings made in real
+[6:30.72] world situations in interpreting those
+[6:33.28] decision principles. That's a set of
+[6:35.52] decision traces and therefore a context
+[6:36.72] graph. The the reason this matters is
+[6:39.60] that in the absence of a context graph,
+[6:42.24] we are struggling to get into a virtuous
+[6:44.40] cycle of automation.
+[6:47.68] You know, you can do zero shot question
+[6:50.80] and answers with RGB and Gemini. That's
+[6:52.48] the models and the models have gotten
+[6:53.76] 100x better.
+[6:54.56] >> Yeah.
+[6:54.96] >> As the models are getting better, the
+[6:56.80] quality of those responses is getting
+[6:58.64] better. But human beings are not, you
+[7:01.20] know, don't function that way. If if
+[7:03.52] you're going through the process of
+[7:04.64] selling, let's say you're selling some
+[7:06.88] product uh to to Disney.
+[7:09.60] >> Yeah.
+[7:10.08] >> You're trying to sell Disney. Let's say
+[7:11.60] you're you're trying to sell your
+[7:12.72] podcast rights to Disney. Think about
+[7:14.64] the steps in the process. You are going
+[7:15.92] to be talking to dozens of different
+[7:17.84] people at Disney. That processes takes
+[7:20.80] 12 18 months very often.
+[7:23.36] >> You might eventually decide you wanted
+[7:25.04] to get a 40% revenue cut. They were
+[7:27.84] pushing for 20. Think of the back and
+[7:30.32] forth that happens and all the all the
+[7:32.32] different situations in which those
+[7:34.40] interactions happen. If you now want an
+[7:37.52] agent to automate that decision-making,
+[7:38.96] so on your side, you're like, "Oh, I'm
+[7:39.92] only going to deal with Disney once. Why
+[7:40.88] the hell would I want to automate it?"
+[7:42.08] But think about it from Disney's
+[7:43.12] perspective. They're talking to podcast
+[7:45.76] owners like yourself, very successful
+[7:47.20] podcast, but they're talking to
+[7:48.16] thousands of them.
+[7:48.72] >> Yeah.
+[7:49.12] >> So, they're looking for an agent that's
+[7:50.72] going to automate a series of those
+[7:52.08] decisions. That automation requires some
+[7:56.32] memory of what other human beings did.
+[7:58.48] And it's a staircase approach. Today you
+[8:01.04] the interface might be human being ask
+[8:02.72] the agent okay tell me what was done in
+[8:04.00] the past
+[8:05.04] >> and human beings make all the actions.
+[8:06.88] Step two might be the agent starts to
+[8:09.36] make recommendations. So you're not
+[8:11.36] primarily data. The human you know the
+[8:13.12] the agent is the manager and and the
+[8:15.60] human being is is the employee.
+[8:17.84] Conceptually we can imagine a world
+[8:19.52] where that's where the dynamics are
+[8:20.96] changing but the conversation is human
+[8:22.88] because you don't want to talk to an
+[8:23.84] agent. want to talk to a human but the
+[8:26.80] decision is being made by an agent. The
+[8:28.16] agent is the manager. So that's the
+[8:30.00] continuum. We could also imagine a world
+[8:32.08] where there's no human being involved.
+[8:33.36] The Disney agent talks to your agent and
+[8:35.20] they strike a deal. To get to that and
+[8:37.28] that might not make sense for
+[8:38.24] everything, but there are many
+[8:39.20] situations where that makes sense. To
+[8:40.80] get to that nirvana, we need context
+[8:42.72] graphs.
+[8:43.68] >> And how would these agents store the
+[8:45.68] context graph? Because let's say if like
+[8:47.92] I'm talking to Ashu right now, right? So
+[8:50.64] my agent is only talking over my either
+[8:52.40] WhatsApp, email or slack with your
+[8:54.64] agent, right? But the context that we
+[8:56.48] have right now or the relationship we
+[8:57.84] have without a agent, right? The agent
+[8:59.52] is not able to capture. So that's what
+[9:01.68] makes this hard and the question is what
+[9:04.08] abstraction do you store this
+[9:05.20] information? Uh we believe that the the
+[9:09.20] best the companies that win in the era
+[9:11.20] of context graphs will find a way to
+[9:14.56] deliver enough value that they earn the
+[9:17.36] right to build the context graph. If you
+[9:20.32] go if if Maximore were to go to a
+[9:21.92] finance team and say I'm going to sell
+[9:22.88] you a context graph.
+[9:25.52] >> Why? Like I don't I didn't wake up today
+[9:27.44] by looking to buy a context graph. No
+[9:29.68] customer is you know I I love my idea
+[9:31.52] but you know that's not what customers
+[9:32.88] want to buy. So Maximore has to go to
+[9:34.88] finance teams and convince them that I
+[9:37.92] will help you solve the business
+[9:39.84] problems you care about. That could be
+[9:41.52] cash reconciliation. It could be I I
+[9:43.84] want to have audit ready automation. I
+[9:45.36] want to have a certain level of
+[9:46.16] verifiability. So the business value
+[9:48.16] proposition doesn't change as as as a
+[9:49.76] founder. You have to identify that by
+[9:52.72] delivering a certain level of
+[9:53.68] automation. You might say, "Look, I'm
+[9:54.72] not going to close the books for you.
+[9:56.32] I'm going to identify maybe just even
+[9:59.44] something as simple as analytics. I'm
+[10:00.56] going to help you automate the analytics
+[10:01.92] of closing the books." And if that value
+[10:03.60] proposition is sufficient for a
+[10:05.20] customer, they will give you access to
+[10:06.48] the data. You then as the as the as the
+[10:08.88] provider, Maximode in this example has
+[10:10.56] to stitch that data together. Now, it's
+[10:12.48] entirely possible that I that I've been
+[10:14.16] given access to email trails. I've been
+[10:15.52] given access to the ERP system,
+[10:17.52] Netswuite, most likely. I've been given
+[10:18.96] access to the billing system, Stripe.
+[10:20.72] I've been given access to Zora because
+[10:22.24] that's where I'm doing my subscription
+[10:23.60] billing and so on. I may not have access
+[10:25.12] to your WhatsApp.
+[10:25.84] >> Yeah.
+[10:26.64] >> So, I'll have incomplete decision basis,
+[10:28.88] >> but if I do a certain level of
+[10:29.92] automation, the next step will be for
+[10:31.04] you to say, okay, you know what? I'm
+[10:32.16] getting value out of this. Let me
+[10:33.28] integrate my WhatsApp into this as well.
+[10:34.88] So, that's the ladder. And there's a
+[10:37.12] virtuous cycle of as agents deliver more
+[10:39.12] value, organizations and human beings
+[10:41.12] will be more comfortable sharing more
+[10:42.40] data. So let's take example of Maximo
+[10:44.40] since you mentioned them a couple of
+[10:45.36] times. What delta they are able to
+[10:47.04] deliver to their customers in reconation
+[10:49.36] as compared to any XYZ tool because
+[10:51.28] they're using context graph.
+[10:53.20] >> So look obviously this varies from
+[10:55.20] customer to customer but the the common
+[10:57.36] pattern we're seeing is we're seeing a
+[10:59.92] 30 to 80% reductions in exceptions.
+[11:04.72] So you see pretty dramatic because
+[11:06.32] eventually finance reconciliation is all
+[11:08.00] a function of handling exceptions.
+[11:09.36] >> Yeah.
+[11:10.16] >> The book should close automatically.
+[11:11.68] this this invoice should tie to this
+[11:13.36] purchase order should tie to this you
+[11:14.64] know payment and whenever it doesn't
+[11:16.96] that's an exception
+[11:18.72] >> nirvana would have zero exceptions it's
+[11:20.40] all automated away we're not there yet
+[11:22.56] and there will be a time but we are
+[11:23.68] seeing dramatic changes but I'll give
+[11:25.68] you another example of of a context in
+[11:27.68] this ladder uh I have a company called
+[11:29.84] vivven started by another ash guard uh
+[11:33.12] and varun kolia so varun and ashu who
+[11:36.32] are also the founders of eightfold had
+[11:38.00] this idea that we need to capture the
+[11:41.36] institutional memory of a human as a
+[11:43.36] digital twin.
+[11:45.28] So you know same thing human beings have
+[11:47.44] state let's imagine there was a digital
+[11:48.80] twin of you and a digital twin of your
+[11:51.36] wife and so when you're sitting here in
+[11:52.40] the US your wife can query your digital
+[11:53.68] twin to say hey have we paid this bill
+[11:55.84] have we done this have we done that or I
+[11:58.24] need to do xyz uh so a digital twin of
+[12:01.12] human in a business context I took a
+[12:02.64] personal example there that's what
+[12:03.84] vivven is building and so what is where
+[12:05.76] is the context graph coming from well it
+[12:07.12] starts off by you give it access
+[12:10.32] uh to certain data sets you might say
+[12:12.00] most people are give it access to they
+[12:14.48] give it access to their Google Docs or
+[12:15.76] SharePoint or Box Dropbox folders. Most
+[12:18.32] people don't want to start off by giving
+[12:19.52] access to all Zoom calls
+[12:20.72] >> or phones. But with with the set of data
+[12:22.96] it has, it starts to build you know uh a
+[12:27.76] context graph of you. And so when you
+[12:29.12] ask the model questions about yourself,
+[12:31.76] hey, you know, did I pay the bill or I
+[12:34.80] talked to Ash two years ago? Can can you
+[12:36.64] remind me what I talked to him about? It
+[12:39.04] starts to deliver value to you. If
+[12:41.92] employees in your organization, let's
+[12:43.36] say you had a context, you had a vivven
+[12:44.96] twin for every single employee, you have
+[12:47.04] a finance, you have a CFO, you're
+[12:48.32] sitting in the US, it's at the middle of
+[12:49.20] the night in India, you're trying to
+[12:50.24] figure out, well, we were trying to
+[12:51.68] close this term sheet. What happened?
+[12:54.96] I mean, it's sitting in someone's email,
+[12:56.24] it's sitting in some uh you know, the
+[12:59.20] term sheet is sitting in some uh
+[13:00.56] SharePoint or the Google Docs. If it's
+[13:02.16] signed, the signed version is sitting.
+[13:03.68] Well, the digital twin can answer that
+[13:05.60] question. So depending on the role
+[13:08.48] depending on the person maybe it's 20%
+[13:10.08] maybe it's 80%. But somewhere between 20
+[13:12.48] and 80% of the questions you have are
+[13:15.44] answerable by a digital twin in that
+[13:16.96] case because a twin has built an
+[13:18.72] institutional memory of you the
+[13:20.32] individual your role your organization
+[13:21.60] and that's the contact effectively. Now
+[13:23.68] over time you could imagine that twin is
+[13:26.40] willing to do more more than just answer
+[13:27.84] questions because this is such a broader
+[13:30.00] product like a digital twin has such
+[13:33.68] broad ramifications. The current
+[13:36.08] approach is not to automate decisioning
+[13:38.72] is to make information available but as
+[13:40.40] I said that's a staircase
+[13:42.40] tomorrow you can imagine that the CFO
+[13:43.92] starts to say hey uh it's configured
+[13:46.80] that if you if you were to ask for
+[13:49.44] something instead of giving you a
+[13:51.28] response it can actually make a decision
+[13:52.40] on the CFO's behalf and let's say an
+[13:54.56] employee would ask for approval for an
+[13:55.84] expense the system would approve that
+[13:58.32] expense because it has a decision traces
+[14:00.48] of what would the CFO have done in the
+[14:01.84] past and if it's within those parameters
+[14:03.36] it will approve it
+[14:04.24] >> so in in many cases is uh this context
+[14:07.20] is a moat of an organization
+[14:09.60] right so why would an organization you
+[14:12.08] know typically try to share it with a
+[14:14.08] startup that they are working on because
+[14:15.76] then you know the moat is is out there
+[14:18.72] look the most valuable asset
+[14:21.76] of a company is its context graph and
+[14:23.68] the reason context have not been stolen
+[14:25.36] was it's very hard to build as you said
+[14:26.80] in companies organizations are rightly
+[14:29.92] nervous about hey if I let everyone
+[14:31.84] build a context graph of me as a
+[14:33.12] customer what is my organizational
+[14:35.12] value. So first and foremost, you know,
+[14:38.88] context evolves, content graphs will
+[14:40.48] evolve and so my first response to that
+[14:42.80] is relax. Human beings are not that
+[14:44.56] easily replaceable. Uh that said, on a
+[14:47.44] more serious note, uh I do think data
+[14:50.80] security, data governance,
+[14:53.44] uh access controls, which agents can
+[14:56.40] access what parts of a graph. See the
+[14:58.64] downside of stitching everything
+[14:59.68] together is now it's all available.
+[15:01.60] >> Yeah.
+[15:02.08] >> In one place. And so uh I mean just take
+[15:04.88] you know the the you know the the
+[15:07.52] interaction we talked about in case of
+[15:08.64] living vision spends a lot of time
+[15:09.92] thinking about this issue because as
+[15:12.40] they stitch together your emails and all
+[15:14.00] of your data into a digital twin of you
+[15:15.44] and a digital of your CFO and you can
+[15:17.44] query your CFO when they when he or she
+[15:18.96] is asleep. Well the dig the CFO's email
+[15:21.44] has and data might have all of their
+[15:24.16] professional information but it may also
+[15:25.76] have their personal social security
+[15:26.88] number. It may have their credit card
+[15:28.08] number. They had a fight with their
+[15:29.68] spouse. it it may have all of that you
+[15:32.16] know in the same email because the lines
+[15:34.08] between our personal and professional
+[15:35.12] lives are blurred and so a large part of
+[15:37.60] the access control technology for Vivven
+[15:40.08] is stripping that out and many startups
+[15:43.84] like Vivven will build that within their
+[15:46.00] infrastructure and it's a core part of
+[15:47.68] their their own IP but for most
+[15:50.24] companies you will want to buy a third
+[15:52.32] party stack and I have a company called
+[15:54.48] Skyflow
+[15:55.52] >> and Skyflow and it you know definitely
+[15:56.96] someone you should you should talk to in
+[15:57.84] your podcast Skyflow is one of those uh
+[16:00.32] data security technologies uh which
+[16:03.52] while it has existed prior to the
+[16:05.04] context of context graphs is you know
+[16:07.44] purpose-built so skylow is purpose-built
+[16:09.92] for securing context graphs it it will
+[16:12.64] allow you to sort of control the data
+[16:14.64] that goes in so as emails for example
+[16:16.08] are flowing into the context graph in
+[16:18.32] real time in line it can strip out PI
+[16:21.36] personally identifiable you know
+[16:22.96] information so you don't want people's
+[16:24.56] social security number in a context wrap
+[16:26.00] perhaps and perhaps you do perhaps you
+[16:27.44] want the last four digits so it can
+[16:29.04] strip out in a Hey, that makes sense.
+[16:30.80] And by the way, it can it can it can
+[16:32.56] mask and anonymize the data. So, it can
+[16:33.92] strip it out, put something else, and
+[16:35.84] it's a key value pair that you have sort
+[16:37.04] of, you know, you can you can go back to
+[16:38.08] it uh in a more secure va. Uh second,
+[16:42.40] you you actually have to have identity
+[16:43.84] controls.
+[16:45.52] You know, your agent is allowed to you
+[16:47.60] may have a shared context graph between
+[16:48.88] you and your CFO. When your CFO wants to
+[16:50.72] access the context graph, it's okay for
+[16:52.00] her agent or his agent to access
+[16:54.80] personal information. When you're
+[16:55.76] accessing that context graph, it's not
+[16:56.80] okay for you to access personal
+[16:57.68] information. what you can access versus
+[16:59.36] an employee in the organization can
+[17:00.64] access because context is a function of
+[17:04.24] pair-wise relationships. When I ask you
+[17:06.80] a question how things are going, your
+[17:07.92] wife asks you the question how things
+[17:08.96] are going and your CFO asks you the
+[17:10.16] question how things are going, you have
+[17:11.92] very different answers to the same
+[17:13.60] question. That's context. There's pair
+[17:16.16] wise context there and that has to be
+[17:17.68] captured in a context graph. But then
+[17:19.20] when the agent is answering on your
+[17:20.48] behalf, access controls become pretty
+[17:22.40] important.
+[17:23.28] >> So have you created a new market on
+[17:24.88] context graph through the work that you
+[17:26.48] and J have done? We believe context
+[17:28.80] graphs will be the basis for the next
+[17:30.40] trillion dollar AI opportunity. Like all
+[17:33.28] markets, it's a combination of things
+[17:35.20] old and new.
+[17:37.20] Uh you know, in the last 6 weeks since
+[17:39.12] we talked about context graphs, uh SAS
+[17:42.08] talks have collapsed 30 to 40%.
+[17:44.64] I I don't I don't think I would take any
+[17:46.32] credit for that. Uh I've definitely lost
+[17:48.00] some money, a lot of money actually.
+[17:50.16] >> But I think it's a sign of that the era
+[17:52.08] of systems of record is coming to an
+[17:53.68] end.
+[17:54.00] >> Yeah.
+[17:54.40] >> That doesn't mean they'll go away. You
+[17:56.32] know databases still exist, databases
+[17:58.56] will exist forever new types of database
+[18:00.08] created. I think systems of record will
+[18:01.28] exist but the value they capture
+[18:04.32] relative to the total pi will decline.
+[18:06.88] So in absolute terms they might still do
+[18:08.48] well and so this the correction might be
+[18:10.40] over an overreaction but their relative
+[18:12.48] value is is clearly the market is
+[18:13.76] signaling and we agree that uh existing
+[18:17.12] systems of record are not the natural
+[18:18.88] owners of the context graph and so they
+[18:20.96] will capture a declining share of the
+[18:23.04] value that's created by technology. Uh
+[18:25.12] and I think entirely new categories will
+[18:26.48] get created. Uh I have a portfolio
+[18:28.56] company, Tacera. They're automating ERP
+[18:31.44] maintenance and migration. They want a
+[18:33.52] very large contract contract. Uh Tera
+[18:35.84] won a $25 million contract from a
+[18:37.60] Fortune50 corporation and they went from
+[18:40.64] 0 to $25 million in bookings.
+[18:42.32] >> Yeah.
+[18:42.72] >> Uh when does that happen for a startup?
+[18:44.88] >> But the more interesting question is
+[18:46.08] why?
+[18:47.76] And I wish I was sitting in the
+[18:48.88] boardrooms in that in that Fortune50
+[18:50.40] company when this decision was being
+[18:51.44] made. That decision would have been fun.
+[18:53.52] But my understanding of it is that they
+[18:55.52] were willing to give to Senate 25
+[18:57.20] because they cut $75 million out of
+[18:59.04] their SI bill. Not an Indian SI in this
+[19:01.52] case, but an SI. So that's $75 million
+[19:04.96] that was going to Think at Deoid and Eny
+[19:07.12] and Accenture or one of these players uh
+[19:10.48] instead was shared as $50 million of
+[19:12.56] saving by the Fortune50 company and $25
+[19:14.24] million by Desa.
+[19:16.56] Is that a new market? Not really. In
+[19:18.40] this case, it's a cannibalization of an
+[19:19.68] existing market.
+[19:21.92] The other thing that will happen is that
+[19:23.68] uh you know in the case of a maximore
+[19:25.44] you might actually choose to you know
+[19:28.00] instead of scaling your finance team
+[19:29.52] from five people to eight people you may
+[19:31.52] do the same work with five or more work
+[19:33.28] with five
+[19:34.88] >> you're you know you're capturing a
+[19:36.40] larger share of the opex of a company
+[19:38.72] that's a completely new market.
+[19:41.68] If uh a women allows people to be twice
+[19:45.20] as productive,
+[19:47.36] you know, maybe they will spend half as
+[19:49.44] much time at work or maybe they'll spend
+[19:50.64] 80% as much time at work, a little more
+[19:52.08] leisure and companies will do much more.
+[19:54.88] So I think of this as really it is
+[19:56.56] expanding the pie for everyone. I think
+[19:59.12] first and foremost I'm excited about the
+[20:01.04] fact that it will allow us to automate
+[20:04.24] the mundane in our lives. It will allow
+[20:06.96] it will both incur enable and force. So
+[20:11.04] there are two sides of the coin. Human
+[20:12.32] beings to step up our game. And as long
+[20:14.72] as human beings step up our game, we
+[20:16.32] will become managers of agents. So I
+[20:18.88] think humans have a choice. We can be
+[20:20.56] managed by agents or we can be managers
+[20:22.24] of agents. And my hope is that we will
+[20:24.24] all become managers of agents.
+[20:26.24] >> I I'll give another example from our
+[20:27.92] portfolio. You know Sam Kohli from
+[20:29.44] buddy.
+[20:29.92] >> Yes. Great guy.
+[20:31.20] >> Yeah. So in buddy they have created AI
+[20:33.68] teammates uh for senior care living
+[20:35.76] homes. So these AI teammates are not
+[20:37.76] EAS. So they they tell task they create
+[20:40.48] task for the sales team that hey you
+[20:42.40] didn't talk to this senior for this
+[20:43.68] amount of time or this is the right time
+[20:45.20] to talk or this is the time to give them
+[20:46.40] a wine this is the time to visit their
+[20:48.56] house right so the the the AI teammate
+[20:51.68] it doesn't have a UI first of all and it
+[20:53.84] create task for the entire sales team
+[20:55.92] >> so managing those those sales people are
+[20:57.20] being managed by agents
+[20:58.96] >> absolutely look that's the future
+[21:00.96] >> managed by agents manager of agents we
+[21:03.44] all get to pick
+[21:04.16] >> yes
+[21:05.92] but you knowh have you thought about
+[21:08.40] enough. What is the complete infra
+[21:10.32] required? What these uh context graph
+[21:12.40] reside on data bricks, snowflake or the
+[21:15.44] complete new infra required? One is to
+[21:17.20] store them or other is to access them
+[21:19.04] and what are the opportunities these are
+[21:20.48] creating right in terms for new new
+[21:22.08] companies.
+[21:23.36] Look, both data bricks and snowflake are
+[21:25.36] are remarkable companies and I was very
+[21:26.80] lucky to be a seed investor in data
+[21:27.92] bricks specifically and both companies
+[21:30.72] have leaned in to the infrastructure
+[21:34.96] opportunity for systems of agents and
+[21:37.44] therefore for context graphs. You know
+[21:39.28] data bricks has agent bricks and data
+[21:41.28] bricks agent infrastructure uh including
+[21:43.92] all the backend data processing and data
+[21:45.60] you know they they acquired neon uh the
+[21:47.76] database company and so on. Uh so you
+[21:50.00] can build context graphs on data bricks
+[21:52.08] and they can be the enabling
+[21:53.12] infrastructure. You can also use you
+[21:55.60] know other databases. There are people
+[21:56.88] using Neo4j. I spoke to the CEO of
+[21:58.88] Neoforj a few days ago and uh they have
+[22:01.60] customers building context apps on top
+[22:02.88] of them. Uh in the case of Vivven
+[22:04.64] they're building on top of good old
+[22:05.68] fashioned posgress you know with a lot
+[22:08.00] of sophisticated you know code and
+[22:09.20] programming there. In the case of olive
+[22:11.36] uh they have built 80 plus SLM small
+[22:13.68] language models uh because the way they
+[22:15.76] capture the context is by fine tuning
+[22:18.80] SLMs on particular parameters in that
+[22:20.80] business process. So I think the
+[22:22.00] implementations are manifold. The common
+[22:24.64] theme is that this is hard today and our
+[22:28.64] focus is on finding exceptionally strong
+[22:30.72] technical founders
+[22:32.80] who deeply understand the enabling
+[22:35.76] infrastructure
+[22:37.36] required to build a context graph.
+[22:39.36] Deeply understand the middleware and
+[22:44.16] application layer infrastructure to
+[22:46.40] build agents on top of existing models.
+[22:49.36] in many cases, not all cases, deeply
+[22:51.52] understand model training and model
+[22:53.12] fine-tuning because they're they are
+[22:54.40] doing fine-tuning and training of their
+[22:55.68] own models on top of the the foundation
+[22:57.68] models. Those three things we think are
+[22:59.52] the bare minimum from a technology
+[23:00.80] standpoint. And then on top of that, you
+[23:02.56] have to understand the business problem
+[23:03.52] because ultimately you have to solve a
+[23:04.72] business problem versus a technical
+[23:06.40] problem if you're building an
+[23:07.20] application.
+[23:08.00] >> So we talked about some of the vertical
+[23:10.24] like maximar in finance, right? So do
+[23:12.88] you think the first large application
+[23:15.20] would be vertical or horizontal and
+[23:16.72] which would eventually win? Ultimately,
+[23:19.68] I think it's not an either or. So, I
+[23:22.00] think there will be the trillion dollar
+[23:24.08] plus opportunity will get captured by
+[23:26.24] 100 plus winners in context graphs. So,
+[23:29.12] I think there are many many ways to win
+[23:31.76] and some of those paths to success will
+[23:34.16] be horizontal and some will be vertical.
+[23:36.24] Uh, and we're investing in both. You
+[23:37.76] know, for example, my partner Joanne has
+[23:39.84] a very successful context graph company
+[23:41.92] in tenor which is going after
+[23:43.92] healthcare.
+[23:44.48] >> Yeah.
+[23:46.40] So what I'm learning from you is you
+[23:48.32] were already working on it but it's just
+[23:49.76] that nobody named the nomature in the
+[23:51.76] last year. Uh
+[23:53.12] >> yeah you know I think look new
+[23:55.12] technology it is not a new technology
+[23:56.80] you know it's not like spark which at
+[23:59.12] its core was it didn't exist and then
+[24:01.04] one day it existed. So
+[24:02.72] >> uh and and the basis of data bricks was
+[24:04.88] spark but today when you think data
+[24:06.32] bricks most people don't even know about
+[24:07.36] spark.
+[24:08.24] >> Uh so very often ideas start with a
+[24:11.04] single technical breakthrough and
+[24:12.80] compound from there. uh in the case of
+[24:15.12] context graph that's not it uh it is an
+[24:17.76] approach that has been emerging I would
+[24:20.56] say for the last couple of years because
+[24:23.20] you know if you go back in time it was
+[24:25.20] only two years ago that people started
+[24:26.48] talking about agents and and we had
+[24:28.64] coined the term systems of agents and
+[24:30.32] you know there was conversations around
+[24:32.00] agent harnesses and this and that all of
+[24:34.08] which were an attempt to figure out how
+[24:36.64] do we you know how do we have large
+[24:39.84] agent swarms I mean so that human beings
+[24:41.76] can be managed by agents and become
+[24:42.96] managers of Yeah.
+[24:44.00] >> Uh as we have all done that uh I think
+[24:47.20] we started to realize that there was a
+[24:48.88] gap and that gap and the solution to
+[24:51.04] that problem that that there's a problem
+[24:52.24] solution that problem is context graphs.
+[24:54.08] Uh and so it's emerged over time. Uh for
+[24:56.72] for for Jan and I who've really been in
+[24:59.52] the trenches at foundation working on
+[25:00.88] this uh it has come from the interaction
+[25:02.56] with our portfolio companies first and
+[25:03.84] foremost they have tried to articulate
+[25:05.92] what are they doing? What is their
+[25:06.88] source of defensibility? How are they
+[25:08.16] driving increasing automation of task?
+[25:10.16] How are they capturing institutional
+[25:11.52] memory? And we we've had a dozen
+[25:14.96] conversations with a dozen different
+[25:16.08] companies. I've only given you three or
+[25:17.36] four examples.
+[25:17.92] >> Yeah.
+[25:18.96] >> And then somehow at some point it
+[25:20.40] clicked that there's a common pattern.
+[25:22.16] They're all building a context graph and
+[25:24.00] many more are outside our portfolio.
+[25:25.68] >> No, I would definitely like to have a
+[25:26.72] digital twin of Ashu where rather than
+[25:28.40] forwarding you an email, would this
+[25:29.68] company be interesting? I'll just
+[25:30.96] forward it to the digital twin and no,
+[25:32.64] >> I have one. I have one. It's still in
+[25:34.32] it's still in beta testing. But I have
+[25:35.84] Viven has helped me build a digital twin
+[25:37.20] of Ash. Okay.
+[25:38.00] >> And I can query it. my assistant can
+[25:39.36] query it and my assistant's happy
+[25:40.80] because you know I'm sometimes hard to
+[25:42.24] find
+[25:42.88] >> because because sometimes when email are
+[25:44.24] not answered I think that oh is ashu
+[25:46.16] busy or is the company not interesting
+[25:47.36] enough
+[25:47.84] >> I I I I I apologize for that but but the
+[25:50.24] twin will solve that
+[25:51.60] >> so yeah we have to ask the other ash guy
+[25:53.76] who's a CEO
+[25:55.12] >> yeah but would love to see it in
+[25:56.48] production
+[25:56.96] >> absolutely
+[25:57.52] >> you mentioned about system of uh this
+[25:59.76] agents right to solve this problems uh
+[26:02.32] can you dive deeper into this
+[26:04.96] >> so I think what we are all realizing is
+[26:08.80] that
+[26:10.48] the future is is is agent swaps.
+[26:13.20] >> What does it mean?
+[26:13.92] >> So that you'll have multiple agents.
+[26:15.52] >> Yeah.
+[26:16.32] >> Uh and the way a complex business
+[26:18.56] process will get automated is agents
+[26:21.52] will be task specific in some for the
+[26:24.24] task can be sliced and dice in a variety
+[26:25.68] of ways. And so why do you need multiple
+[26:27.76] agents and why do you want to have agent
+[26:28.88] specific task specific agents? Because
+[26:30.48] you need guardress. You need to be able
+[26:31.84] to bound. Agents do hallucinate because
+[26:33.76] models are hallucinate.
+[26:35.20] >> Now human beings also make mistakes. We
+[26:36.64] all forget, you know, if we didn't
+[26:38.16] forget, we would have no driving
+[26:39.20] accidents. And we know that the agents
+[26:40.88] driving the Whimos are actually much
+[26:42.56] safer than human beings. So, I think you
+[26:44.16] can have superhuman performance for
+[26:45.76] specific classes of tasks. But it
+[26:48.00] requires us to break down the aggregate
+[26:51.04] task into smaller tasks have agents that
+[26:53.04] do smaller tasks. And the the systems
+[26:57.04] that build agents, you know, is what we
+[26:59.60] call the systems of agents. And that's
+[27:00.80] the, you know, I think of this
+[27:02.08] technology as, as I said, in three
+[27:03.44] buckets. I think of it as the context
+[27:05.20] graph which is the enabling
+[27:06.56] infrastructure. I think of it as the the
+[27:09.04] model layer and I think of it as the
+[27:11.12] agent harness. Uh and when you build put
+[27:13.76] this together you get an you get a
+[27:15.52] collection of agents a system of agents
+[27:16.96] an agent swap. Pick your favorite word.
+[27:18.64] >> So I assume each of the companies the 11
+[27:20.40] companies that you have mentioned about
+[27:22.56] they have built system of agents.
+[27:23.84] >> Yes we are so we are either investing in
+[27:25.84] two things. We're either investing in
+[27:27.28] systems of agents or we're investing in
+[27:29.60] enabling infrastructure. The common
+[27:31.60] theme across these is the context graph.
+[27:33.84] And so companies like Skyflow that I
+[27:35.36] mentioned or Foranix
+[27:37.44] uh are enabling technologies for context
+[27:40.16] graphs whereas companies like Maximore,
+[27:42.24] Vivven, Desera, layer zero are actually
+[27:46.00] you know building those context graphs
+[27:48.00] in the in the context no pun intended of
+[27:50.48] of a particular business process or a
+[27:52.00] particular vertical or function. I I
+[27:54.08] find one of your companies Arise very
+[27:56.24] interesting because it it sits in the
+[27:58.48] infra layer for this context.
+[28:00.64] >> Absolutely. Yes. So Arise is another
+[28:02.16] great example where uh you know for for
+[28:04.48] your audience Arise is really the
+[28:07.36] monitoring layer. You know if you have
+[28:11.04] AI agents and you have models making
+[28:13.92] decisions you need some way to monitor
+[28:16.88] what they're doing. They they are the
+[28:18.80] the police force. So and the CIA all put
+[28:21.68] together for the for the agent work they
+[28:24.64] they they monitor eval what's called
+[28:26.88] eval they they see what the agents did
+[28:28.88] they see what prompts you provided as a
+[28:30.40] human being what was the response and uh
+[28:33.20] it's very meta they use models to
+[28:34.64] monitor models because the model output
+[28:36.48] is so large human beings cannot monitor
+[28:38.24] models so it it's it's a it's it's a
+[28:40.64] it's a very technical team uh that is
+[28:43.28] building one of the core components of
+[28:45.12] the enabling infrastructure for context
+[28:46.48] graphs
+[28:49.44] in in previous era or in the SAS era the
+[28:51.92] teams were you know now you have
+[28:53.44] mentioned technical teams a few times
+[28:54.72] right I'm going to to hop on that uh it
+[28:57.52] required a very strong GTMC or a GTM
+[28:59.84] co-founder has it changed in the recent
+[29:02.24] agentic era where you are mentioning
+[29:04.08] like very strong technical teams
+[29:05.84] >> so what remains true is that technology
+[29:10.88] always struggles to find product market
+[29:12.72] fiction and ultimately the companies
+[29:16.56] succeed find product market fit. I mean
+[29:19.04] data bricks started in 2013 but it took
+[29:21.12] 3 4 years and a lot of going around in
+[29:24.24] circles for them to get to the point
+[29:26.40] where they had product market fit. So
+[29:29.12] companies need to find product market
+[29:30.24] fit and ultimately it is the job of the
+[29:32.32] CEO to find product market fit. You can
+[29:34.48] hire sales people, you can hire
+[29:35.60] marketing people, you can hire product
+[29:36.64] people but the difference between a
+[29:39.28] great and an average CEO is their
+[29:41.76] ability at at the 0 to1 to find product
+[29:43.60] market fit. Now the job of a CEO changes
+[29:46.16] every year. So once you have product
+[29:47.44] market fit there are other challenges
+[29:48.56] but that's the first step.
+[29:51.04] Sometimes deeply technical founders have
+[29:54.00] a natural passion for product have a
+[29:55.92] natural passion for go to market and
+[29:59.20] have the learning ability to become go
+[30:01.28] to market first founders. That's my
+[30:03.76] favorite kind of founder like like huge
+[30:06.40] success for me when I look at the Ashu
+[30:08.80] Ashoto at 8fold and women Kabir at
+[30:11.52] Desera
+[30:13.04] and many other CEOs that I've worked
+[30:14.64] with over the years you know Moyer and
+[30:16.16] at Cohicid they are brilliant
+[30:18.32] technologists like you do not want to go
+[30:20.72] you very few people can go toe-to-toe
+[30:22.24] with Mo at Cohesidity and and
+[30:25.20] build a better storage layer you know
+[30:26.72] he's one of the top maybe two or three
+[30:28.64] people in the world who can do that and
+[30:31.20] at the same time when JP Morgan or
+[30:33.60] Morgan Stanley calls and says I want to
+[30:35.76] talk to somebody they want to talk to.
+[30:38.56] So that's rare but that's the founder we
+[30:40.32] look for a technical founder that has a
+[30:43.12] passion and has acquired the skills in
+[30:44.96] go to market.
+[30:46.00] >> So necessarily storytelling has taken a
+[30:48.80] backseat then because naturally the CEOs
+[30:50.56] had the flare for
+[30:52.08] >> absolutely not I disagree. I think
+[30:53.36] storytelling is see at the heart of
+[30:55.28] humanity is storytelling.
+[30:57.76] Religion is a story.
+[30:58.80] >> Yeah.
+[31:00.00] >> Money is a story. Ultimately
+[31:03.84] the very human existence beyond the
+[31:05.36] difference between humans and animals is
+[31:06.80] stories. So at the very heart of
+[31:09.52] humanity is storytelling.
+[31:12.08] The question for us is how do we find as
+[31:15.60] investors we need to find founders who
+[31:18.48] have enough technical depth and really
+[31:20.96] you know this is we are pushing the
+[31:22.32] limits of technology and the limits are
+[31:23.60] changing by the month by the week. So
+[31:26.56] you could if you were technical 5 years
+[31:28.00] ago and are no longer technical that's a
+[31:29.68] challenge. So how do you find the
+[31:31.60] balance between deeply technical
+[31:34.16] founders who are exceptional
+[31:35.76] storytellers, storytellers with with
+[31:38.24] investors, exceptional storytellers with
+[31:39.76] their employees and most importantly
+[31:42.08] with customers.
+[31:43.28] >> So enterprise are now aware of context
+[31:45.12] graph where do they start?
+[31:47.36] >> You know ultimately
+[31:50.24] the most successful enterprises
+[31:52.88] of 2030. So let's zoom out.
+[31:55.12] >> Yeah,
+[31:56.16] >> we're early in this trend. I believe
+[31:58.48] that four years from now the winners and
+[32:01.28] losers on the S&P or the Nifty in India,
+[32:04.32] the winners and losers will be separated
+[32:06.48] by their ability to embrace context
+[32:09.12] graphs.
+[32:10.00] >> That's a very powerful statement.
+[32:11.28] >> I I think I think that will be true
+[32:12.40] because because the companies that
+[32:13.52] embrace these context graphs will will
+[32:16.24] we have a very different productivity
+[32:17.36] curve. Context graphs will drive
+[32:20.72] organizational productivity and when you
+[32:23.20] sum that up, it drives societal
+[32:24.56] productivity. So where do you start?
+[32:26.88] Well, that depends on the organization.
+[32:28.96] If you are the CIO organization in a
+[32:31.84] Fortune 100 company and you are thinking
+[32:33.60] about an SAP or an Oracle uh migration,
+[32:37.52] well, call 1800 TERA because if you are
+[32:40.80] looking to drive a major, you know,
+[32:44.24] system of record migration without
+[32:45.84] exploring what you know, the context
+[32:48.80] first companies have to offer. I think
+[32:50.40] you're being remiss in your job. know
+[32:52.00] whether it's the right company for you
+[32:52.96] right like every company has to make its
+[32:54.40] own decision but I think every CIO has
+[32:56.40] an obligation to their organization to
+[32:58.32] explore that if you are the CFO of an
+[33:00.80] organization and you have 3 4 500 people
+[33:03.68] whether they're in India or in
+[33:05.04] Philippines or in the US doing accounts
+[33:07.28] reconciliation you have an obligation to
+[33:09.28] explore context right you have to ask
+[33:10.32] yourself why do I have 500 people doing
+[33:11.84] this can I have a 100 people doing
+[33:14.16] accounts reconciliation and 400 people
+[33:15.60] adding some other value to the
+[33:16.56] organization
+[33:18.24] if you are a VP of sales at a large
+[33:20.64] company you have to ask yourself I have
+[33:23.28] you know typically in a large
+[33:24.40] organization half the companies in in in
+[33:26.08] go to market I mean even even in the
+[33:28.72] most sophisticated technology dynamics
+[33:30.08] we have many thousands of people in go
+[33:31.36] to market I think we have to ask
+[33:32.24] ourselves the question that which of
+[33:34.96] these individuals will be managed by
+[33:36.48] agents and which of them will step up to
+[33:37.84] manage agents and both will happen but
+[33:40.24] we don't have agents in the mix you know
+[33:43.60] the we will be left behind in the in in
+[33:45.68] in the productivity uh race and I think
+[33:47.84] that's the future
+[33:49.44] >> so essentially
+[33:50.56] What you are saying is and maybe and you
+[33:52.08] can correct me you are betting the firm
+[33:53.60] on context graph
+[33:56.08] >> we are betting foundation on two mega
+[33:58.40] trends AI and blockchain
+[34:00.64] >> okay
+[34:01.44] >> we believe that AI is going to reinvent
+[34:04.64] how humans live work and play and we've
+[34:07.44] talked a lot about that context rafts is
+[34:09.36] an enabler of that uh we also believe
+[34:13.12] that blockchain is going to reinvent
+[34:14.88] money as we know it and the very nature
+[34:17.36] of money is going to change because
+[34:19.76] blockchains and we're betting the firm
+[34:21.84] on those two things and and you know
+[34:23.52] we've had tremendous success with
+[34:24.56] blockchain. We were the first investors
+[34:26.24] in Salana. We've been very successful in
+[34:29.28] many other uh blockchain technologies.
+[34:31.28] blockchain is a is is is a more nation
+[34:33.20] and therefore we are seeing more ups and
+[34:34.64] downs in that technology but it's just
+[34:36.72] as powerful as AI is a technology within
+[34:39.44] AI you know there are many bets you can
+[34:40.80] make and and it's not an either or uh I
+[34:44.24] mean we believe that there will be you
+[34:45.36] know there is a postlm world and in a
+[34:47.36] postlm world you will see new model
+[34:50.08] architectures so we're already betting
+[34:51.84] on new model architectures we believe
+[34:53.84] that in a postlm world we will see uh
+[34:57.12] completely new approaches to agent
+[34:58.48] harnesses and agent frameworks and so
+[35:00.16] we're looking long and hard and at the
+[35:02.16] same time we believe that a critical
+[35:05.20] piece of the AI stack is a context graph
+[35:08.64] and so we are making a very large
+[35:10.16] investment in context graphs whether it
+[35:11.92] is in application companies the systems
+[35:13.68] of agents or the enabling technologies
+[35:16.08] uh like sky flow and formics uh and
+[35:19.28] arise and many others
+[35:20.88] >> what I'm observing is the narrative in
+[35:22.72] AI is shifting towards winner takes all
+[35:24.88] is that true then
+[35:26.32] >> I don't believe that at all I don't
+[35:27.60] believe that I don't see the evidence if
+[35:28.88] anything I think the evidence is the
+[35:30.00] opposite
+[35:31.20] If we were having this conversation a
+[35:32.72] year ago, people would have and many
+[35:35.36] people including myself in in varying
+[35:36.96] degrees were saying, "Hey, we think
+[35:39.20] OpenAI is going to win."
+[35:40.32] >> Yeah.
+[35:41.12] >> A year ago, many people were saying,
+[35:42.32] "Hey, we see Lama really, you know, meta
+[35:44.24] was back in the game."
+[35:44.96] >> Yeah.
+[35:45.36] >> And we were all counting out Gemini
+[35:47.52] >> and anthropic was sort of a niche.
+[35:49.92] >> Fast forward a year, I mean, Gemini is
+[35:51.68] back in business, baby. you know, so
+[35:53.28] they started around and so Gemini is a
+[35:56.16] legitimate alternative
+[35:58.88] >> to chat GPT. The Gemini model stack is a
+[36:01.28] legitimate alternative to the Open AI
+[36:03.36] stack.
+[36:04.32] >> Anthropic has really, you know, exploded
+[36:05.84] in the enterprise and has carved out a
+[36:07.20] very legitimate and defensible market
+[36:09.36] segment for itself. And we don't talk
+[36:11.36] much about Llama today, but I would rule
+[36:13.12] out Facebook. I mean, they're down the
+[36:14.24] road and I would not rule them out. I
+[36:16.00] think a year from now, we could be
+[36:18.40] having a very different conversation. So
+[36:20.16] this is by no means even the model layer
+[36:22.32] is not a winner takes all market. In
+[36:24.56] fact, the question we have to ask
+[36:25.68] ourselves is given how competitive
+[36:28.16] intensity is increasing in the model
+[36:29.60] layer, will the model providers be able
+[36:32.32] to capture returns proportionate to the
+[36:34.40] investments they're making? And I think
+[36:35.60] the answer is unknown. It is unclear how
+[36:38.08] how much value the model providers will
+[36:39.76] capture in the long term. I mean, even
+[36:41.60] open AI has shifted from purely
+[36:43.84] releasing the best model
+[36:46.72] trying to win at the application layer,
+[36:48.24] which is JP.
+[36:50.16] >> So, I don't believe that it takes all at
+[36:51.68] all. I do think that enduring companies
+[36:55.68] have to build modes
+[36:58.40] like ultimately if you get commoditized
+[37:00.72] you become one of a thousand people in
+[37:02.08] any one category.
+[37:04.80] I the old adage that in any category
+[37:09.76] there are three winners and then a long
+[37:11.36] tale of may or have nots and there's
+[37:14.56] almost sort of a 6030 10 split between
+[37:16.72] 1, two and three I think continues to
+[37:18.88] hold and so we you know our our goal as
+[37:21.76] investors is to find the one two or
+[37:23.68] three in every category. I think context
+[37:26.96] will create 100 plus winners and my goal
+[37:29.04] is to be in as many of them as possible.
+[37:30.48] >> Yeah. So you're saying because you are
+[37:32.56] cy telling this is a trillion dollar
+[37:35.04] category of context graphs. So 100 plus
+[37:37.12] winners are going to emerge
+[37:38.24] >> trillion dollars in revenues by the way
+[37:39.60] hopefully many more trillions in in
+[37:40.88] market cap.
+[37:43.28] >> But coming back to the infra like LLM
+[37:45.68] have short-term memory context graph
+[37:47.44] require long-term persistent memory. So
+[37:49.20] do we need to solve memory first before
+[37:50.64] we talk about context class?
+[37:53.04] >> Look memory is inherent in context
+[37:54.88] graphs but and memory is inherent in
+[37:56.32] technology. So when you say do we have
+[37:57.68] to solve memory? I think we have
+[38:00.16] solutions. A database is memory. You
+[38:02.64] have relational databases which capture
+[38:04.08] a point in time. You have event stream
+[38:06.08] databases. There are databases which
+[38:07.84] capture you know the time dimension of
+[38:09.92] memory. You have structured and
+[38:11.44] unstructured databases. So I think many
+[38:13.20] of the components exist. There is also a
+[38:16.40] ton of innovation that is being done and
+[38:18.40] has been done around model memory around
+[38:20.96] memory between you know how do you have
+[38:22.64] short-term state versus long-term state
+[38:25.28] and yes there are many many fundamental
+[38:28.08] questions about memory that are unsold.
+[38:30.16] So what makes this opportunity exciting
+[38:32.64] and challenging both at the same time is
+[38:35.20] the context graph of today may not be
+[38:36.64] the context graph of tomorrow because
+[38:38.56] the stack is changing and innovations in
+[38:40.96] memory whether it's model memory or
+[38:42.88] agent memory or system memory whether
+[38:45.20] it's short-term or long-term memory
+[38:47.60] innovations in memory will change the
+[38:49.04] nature of the context graph.
+[38:50.72] >> Have you thought about as as the
+[38:52.56] technology emerges what will context
+[38:54.80] graph be replaced by?
+[38:57.28] you know it's it's 6 weeks old so
+[38:59.76] hopefully hopefully context is the idea
+[39:01.68] of 2026 and and we'll see what happens
+[39:03.68] in 27
+[39:04.48] >> and you know we we discussed about but
+[39:06.08] just for for our audience I want to hop
+[39:08.24] on again for any organization for
+[39:10.40] foundation capital for neon or or Disney
+[39:12.80] where will the context graph reside
+[39:15.92] >> you know where the context graph resides
+[39:18.16] will depend on the business function and
+[39:21.52] the organization but let me step back
+[39:23.28] first and foremost every organization
+[39:25.44] will have multiple context graphs
+[39:27.92] There is no one world model or one world
+[39:30.08] context graph in any organization.
+[39:31.28] That's not bad. An organization like
+[39:34.08] Disney may have 30, 40, 50, 100 context
+[39:37.20] graphs.
+[39:39.60] You know, just like there's no one data
+[39:42.08] lake to rule them all in any
+[39:43.52] organization. Now, you may choose to
+[39:45.76] have one context graph for all your
+[39:47.12] customer data. You may choose to have a
+[39:49.28] context graph for all your legal data.
+[39:51.84] And by the way, two context graphs, your
+[39:53.60] customer context graph and your legal
+[39:55.12] context graph
+[39:57.12] may have intersecting data, may query
+[39:58.72] each other and agents may query both
+[40:00.72] context graphs to arrive at an answer.
+[40:03.44] Some of these context graphs, many of
+[40:05.60] these context graphs I would say will be
+[40:08.56] embedded in startup companies, hopefully
+[40:11.28] not startups at that point, public
+[40:12.32] companies, but are today companies like
+[40:13.76] Maximore and Cassera and Olive and
+[40:16.00] Vivven uh that are you know built by by
+[40:20.40] these companies by technology providers
+[40:22.88] but are owned you know the data rights
+[40:25.52] to those graphs will be owned by their
+[40:26.72] customers. So many of those context
+[40:28.88] graphs will be built that way and
+[40:31.68] every global 2000 company will build
+[40:33.84] many context graphs in house and when
+[40:36.08] they build it in house that's when they
+[40:37.52] need the uh the data control layer or
+[40:39.76] the data access data security layer from
+[40:41.12] a sky flow that's when they need the you
+[40:44.24] know decision trace eval layer from
+[40:46.32] arise and so on and so forth uh and many
+[40:49.20] of those companies will build it on top
+[40:50.24] of data bricks or snowflake
+[40:52.80] so both will be true
+[40:54.08] >> so clearly what you believe in and the
+[40:56.40] world that we are going towards is
+[40:58.00] startups have an advantage over
+[41:00.00] incumbents because context cloud doesn't
+[41:02.16] come natural to incumbents like for
+[41:04.00] example for Salesforce they have to re
+[41:05.84] rewrite themselves for service now they
+[41:07.76] would have to rewrite themselves right
+[41:09.60] >> so over a long period of time then 10
+[41:12.08] years the system of record should be
+[41:13.52] replaced the current system of record
+[41:16.40] >> you know systems of record companies
+[41:20.48] have a choice they will either choose to
+[41:25.84] embrace context craft s or many of them
+[41:28.88] will you know sort of bury their head in
+[41:30.08] the sand the way an ostrich does and and
+[41:33.04] the rest will be history for them for
+[41:34.72] the companies that choose to embrace
+[41:35.76] context graphs and I think you know
+[41:37.36] whether it's service now or Salesforce
+[41:39.68] uh at least those companies I think have
+[41:41.68] been very very proactive about embracing
+[41:43.44] to their credit they still have a set of
+[41:45.52] very hard decisions to make they have
+[41:47.04] build versus buy do I build or do I buy
+[41:49.52] to what extent do I want to be backward
+[41:51.12] compatible
+[41:52.48] >> with the existing Salesforce
+[41:54.16] architecture which is their strength
+[41:55.28] that is their moat but that is also to
+[41:56.80] their constraint.
+[41:57.44] >> Yeah.
+[41:58.08] >> Uh to what extent do they want to be
+[41:59.52] interoperable with other systems?
+[42:02.48] Context graphs are not bound by system
+[42:04.88] constraints. You're not going to build a
+[42:06.88] context graph on top of your Salesforce
+[42:08.16] data. You're going to build a context
+[42:09.04] graph on top of your sales process. And
+[42:11.76] every business process touches dozens of
+[42:13.68] systems in a large company. And so
+[42:17.12] incumbents will have to figure out how
+[42:18.48] do I become interoperable with other
+[42:20.48] systems of record, other technology
+[42:21.84] providers.
+[42:23.52] And some will build and some will buy
+[42:25.60] and some will perish
+[42:27.68] and some will build and buy and then
+[42:29.12] perish. So I think it's a huge
+[42:31.20] opportunity for startups but I also
+[42:33.12] think that the incumbents you know have
+[42:35.04] strategic advantages and so uh I am
+[42:38.00] bullish that they will also capture some
+[42:39.84] share of this value and so I'm a buyer
+[42:42.00] of Salesforce and and uh I'm a buyer of
+[42:44.32] Salesforce stock. I'm a buyer of
+[42:45.36] snowflake stock and I'm a buyer of
+[42:46.72] service now stock.
+[42:47.52] >> So there is you know debate on the
+[42:49.20] biggest value capture in context graph.
+[42:51.28] So human in the loop versus handoff
+[42:52.96] execution. What are your views? You know
+[42:55.28] how in the building of these context
+[42:56.96] graph?
+[42:58.00] >> Look, ultimately
+[43:00.24] both will be true.
+[43:03.36] Humans have to be in the loop. And so I
+[43:04.88] think human in the loop is very
+[43:06.00] important and in some cases humans will
+[43:08.72] be in the loop to make the final call.
+[43:11.04] In other cases, humans will be in the
+[43:12.56] loop as an FYI.
+[43:14.96] And in yet more cases humans will you
+[43:17.44] know just have eval to evaluate to the
+[43:20.48] decision traces because so many
+[43:21.52] decisions are being made by agents that
+[43:22.96] even the FYI is an over you know is is
+[43:25.12] an overload of information. So all
+[43:26.72] things will be true and you know I think
+[43:30.32] it's it's it's I personally don't spend
+[43:32.88] too much time thinking about the details
+[43:35.60] of that mix 5 years from now. I think
+[43:37.44] it's going to change. It's going to
+[43:38.24] change what it will look like in 2030 is
+[43:40.00] different from what it look like in
+[43:40.88] 2026.
+[43:42.40] There are only three things I know for
+[43:43.76] sure.
+[43:45.04] I know for sure that over the last 10
+[43:48.16] 20,000 years, human beings have
+[43:50.48] continued to flourish despite
+[43:53.12] or human beings have continued to
+[43:54.56] flourish and built upon technical
+[43:56.88] innovation and so that will be true over
+[43:59.60] the coming decades. So I'm I'm very
+[44:01.04] bullish on the human race. Second, I
+[44:04.00] believe it to be true that the rate of
+[44:07.36] change of automation as a result of AI
+[44:10.32] will continue to accelerate and
+[44:13.68] the winners and losers on the S&P and
+[44:16.16] the Nifty will be decided by their
+[44:18.48] willingness to embrace automation and
+[44:21.04] their willingness to invest behind I
+[44:24.24] think the third most important thing
+[44:25.28] context graphs. You build organizational
+[44:27.36] context graphs. Whether you build it in
+[44:28.64] house or you build in partnership with
+[44:29.92] startups whether you build some in-house
+[44:32.16] and some in partnerships. But every
+[44:34.48] organization needs to embrace context
+[44:35.84] graphs. Every organization needs to
+[44:37.76] embrace automation. And every
+[44:38.96] organization you know needs to have the
+[44:40.80] confidence that like every generation
+[44:43.04] before it. You know we will benefit from
+[44:45.20] this innovation and and and not cow or
+[44:47.68] bow bow down to it.
+[44:49.36] >> So till now has any enterprise called
+[44:51.12] you that we are hiring a chief context
+[44:52.80] graph officer?
+[44:53.92] >> I hope not. I hope not. Uh I'm still
+[44:56.40] gainfully employed at foundation. Uh not
+[44:58.72] looking for that job.
+[44:59.36] >> No, no, but but but are are they
+[45:00.48] creating such kind of roles?
+[45:01.44] >> Look, I think we're definitely seeing a
+[45:02.72] lot of interest from chief data
+[45:03.76] officers, chief a lot of companies have
+[45:05.52] hired chief AI officers and who knows
+[45:08.16] tomorrow chief content officers
+[45:09.68] >> and what like there have been various
+[45:11.44] debates you know uh like from Dh from
+[45:13.92] Arvind from Glean that you know people
+[45:16.32] are believing it's just this thing that
+[45:17.76] we are very far away because till now
+[45:19.44] even semi-autonomous agents are not
+[45:20.96] delivering. Look, I think if you go back
+[45:23.12] to the debate around context graphs, uh
+[45:26.80] both Hermes and Armen I think have been
+[45:28.40] have been great collaborators on this
+[45:30.32] discussion as has Erin Levy at box or
+[45:32.88] jam uh from ultimeter or you know uh
+[45:37.60] animation from player zero and many
+[45:39.04] others. uh I think it's very consistent
+[45:42.80] that
+[45:44.48] the idea of a context graph is shared by
+[45:49.04] most pioneers of application or AI
+[45:51.68] technologies. It is also very clear that
+[45:55.12] it is a word that means different things
+[45:56.80] to different people
+[45:59.04] and it is also very clear that
+[46:02.40] the very nature of context graphs will
+[46:04.24] evolve and so the timeline you know is a
+[46:07.52] little bit like a mirage it's around the
+[46:08.80] corner and so we can build context
+[46:10.96] graphs today and the companies that I
+[46:12.88] have mentioned have built context graphs
+[46:14.48] today and I think we will look back in 3
+[46:17.28] years and say oh my god that stuff was
+[46:19.68] so primitive the context graphs of 3
+[46:21.60] years of you know from now will be 10 to
+[46:24.56] 100x better than today's context graphs
+[46:26.00] because the enabling technology will
+[46:27.20] make them better and the decision traces
+[46:28.96] you capture will make them better. See
+[46:30.56] key to the context graph idea is the
+[46:32.80] notion that decision traces
+[46:35.92] you know compound as you capture
+[46:38.24] decision traces you earn the right to
+[46:39.76] capture more decision traces and that
+[46:41.52] compounding of decision of capturing
+[46:43.60] decision traces is what makes for a
+[46:45.12] richer context graph and as context
+[46:46.48] graph gets richer you need more enabling
+[46:48.16] technology. You also talk about the
+[46:50.00] orchestration layer, right? Can you dive
+[46:52.16] deep into it like where startups would
+[46:54.40] win an orchestration layer, right? And
+[46:56.32] do you believe is this the right layer
+[46:57.60] where you know value will be captured?
+[47:00.16] >> So ultimately, you know, as we talked if
+[47:02.32] I go back to the beginning,
+[47:03.20] >> yeah,
+[47:03.68] >> the a context graph is the aggregation
+[47:06.32] of decision traces. Decision traces can
+[47:09.12] only be captured if you're in the
+[47:12.72] orchestration or you're in the flow of
+[47:14.32] those decisions. If you ask a human
+[47:16.72] being to sit down and write down a
+[47:19.04] decision trace, you know, they're going
+[47:20.56] to you're going to get, you know, a
+[47:21.60] bunch of, you know, swear words from
+[47:22.56] them. Yeah.
+[47:23.12] >> Uh, and even if they're willing to do
+[47:24.96] it, they can't because most human beings
+[47:26.96] don't are not a template. When we make
+[47:29.44] the same decision 20 20 times, 30 times,
+[47:31.44] we make it slightly differently. We may
+[47:32.96] end up with the same outcome or we end
+[47:34.72] up with different outcomes.
+[47:36.16] So capturing decision traces requires
+[47:38.32] capturing
+[47:39.84] the decisions as human beings interact
+[47:42.40] with agents
+[47:44.16] over time across hundreds thousands
+[47:46.56] hundreds of thousands of decisions. The
+[47:49.20] s the only systems that can capture that
+[47:52.24] are systems that are orchestrating those
+[47:54.00] decisions whether that is a startup like
+[47:56.48] Maximo or Tessera or Vivven or it could
+[47:59.44] be an incumbent that builds an
+[48:00.64] application. But if you're not in the
+[48:02.48] flow of the decision, that's if you're
+[48:03.68] not orchestrating those decisions, you
+[48:05.52] have no ability to capture them. A
+[48:07.60] database vendor can't capture them
+[48:08.72] because no, they're not in any one
+[48:09.84] database. An analytics vendor cannot
+[48:12.08] capture them because it's they capture
+[48:13.60] the outcome,
+[48:15.36] not the the why and the how. Uh and the
+[48:19.60] only people who capture the how
+[48:20.80] decisions are made are the orchestrators
+[48:22.80] of those decisions. And you can infer
+[48:24.56] the why from the how.
+[48:25.76] >> So one of our companies called Pit Crew
+[48:27.36] is by third time founders Rishi and
+[48:29.04] Samir. They sold their first company to
+[48:30.32] Freshworks, second to Legal Zoom. The
+[48:32.08] third
+[48:32.64] >> the third company that they're building
+[48:33.76] is the orchestration layer for wealth
+[48:35.60] advisers in the US.
+[48:36.56] >> Look, you take wealth advisors, it is a
+[48:39.68] >> it's a highly automatable opportunity.
+[48:41.60] Most wealth advisers have a lot of back
+[48:43.84] office compliance processes, a lot of
+[48:46.80] processes to sort of automate the
+[48:48.88] execution of what their you know high
+[48:50.48] network clients ask them to do whether
+[48:51.60] it is a money management or it is
+[48:52.88] helping them buy their planes or helping
+[48:54.08] them manage their real estate. Uh so I
+[48:56.08] think it's a big opportunity. So
+[48:57.12] congratulations to them. Thank you so
+[48:58.88] much Ashu. Love the discussion.
+[49:00.48] >> Thank you so much for having me on the
+[49:01.68] show and thank you for making context
+[49:03.60] graphs the idea of 2026.
+[49:04.96] >> Yeah. Thank you so much for for building
+[49:06.88] this idea.
+[49:07.76] >> Thank you for having me.

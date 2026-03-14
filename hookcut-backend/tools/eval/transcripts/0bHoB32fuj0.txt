@@ -1,0 +1,204 @@
+[0:00.00] so if you're looking out for a
+[0:01.52] structured DS algo course I must say
+[0:04.08] you're on the correct channel so in this
+[0:06.08] video I'll be telling you how to learn
+[0:08.28] DS algo from a to zed in depth yes so
+[0:13.08] first of all where to learn not on the
+[0:16.60] YouTube channel because it is not
+[0:18.08] structured you'll have to head over to
+[0:19.88] the website AQ
+[0:22.20] forward.org you might be seeing it on
+[0:24.24] the screen the UI might be different uh
+[0:27.12] some months down the line but doesn't
+[0:28.68] matter which course is it there's
+[0:31.44] something as a to z DSA course open it
+[0:35.04] up it has 4 55 modules covering 18 or 19
+[0:39.68] topics every topic has sub modules like
+[0:43.24] sub parts as well so there are a bunch
+[0:46.40] of problems that you will be solving in
+[0:48.40] this particular course is it paid no it
+[0:51.16] is absolutely free and it covers a lot
+[0:54.96] more problems than what the paid courses
+[0:57.84] will do you can buy any of the paid
+[0:59.40] courses and you can have a comparison
+[1:01.48] done as well so the next question how do
+[1:04.88] you get the best output of this
+[1:07.36] particular course first of all the
+[1:09.84] course has like every topic has some
+[1:12.76] Theory and every topic has some problems
+[1:15.56] rather a lot of problems for the theory
+[1:17.96] part what I will say is watch out the
+[1:20.08] videos just watch out the videos and do
+[1:23.16] not dive deep just know the topic and
+[1:27.60] then start solving problems because in
+[1:30.08] DS
+[1:31.08] algo like theory is not that important
+[1:33.92] solving problems is important because
+[1:36.20] that will help you to develop the
+[1:38.20] problem solving ability got it so watch
+[1:41.04] out the videos do not di much and then
+[1:43.80] start solving problems step F pick up a
+[1:48.00] problem according to the step pry out
+[1:50.44] that problem now when I'm saying pry out
+[1:52.04] that problem means if you have a extreme
+[1:54.00] na solution extreme brute solution hit
+[1:56.36] it convert your thought process into the
+[1:59.04] code write it and submit it doesn't work
+[2:01.92] doesn't matter read the blocks there are
+[2:05.12] blocks attached to every problem and
+[2:07.88] solutions are categorized if a problem
+[2:10.72] has multiple solution you'll find
+[2:12.36] categorized so you can read out all of
+[2:14.56] them if you're not able to understand
+[2:16.80] watch out the videos and for every
+[2:19.08] problem that you're not able to
+[2:20.92] understand or there is something new
+[2:23.12] create nodes so that you can revise
+[2:25.32] afterwards right and then again retry
+[2:29.00] whatever solution you have learned retry
+[2:31.28] it without watching the video without
+[2:32.76] watching the blog retry it this should
+[2:35.44] be your method of learning got it and
+[2:38.88] this is how you can get the best output
+[2:40.88] but in order to get a accelerated output
+[2:43.60] what I will recommend you is to get a
+[2:45.88] mentor from pre-placed now pre-placed is
+[2:49.64] a website which offers amazing mentors
+[2:51.96] the mentors who are working at Fan
+[2:53.40] companies or India's top product based
+[2:56.40] companies so if you get a mentor what
+[2:58.56] will happen is they they will have a
+[3:00.16] personalized road map along with DSS
+[3:02.12] system design low level design whatever
+[3:03.84] you require they'll give you a
+[3:05.28] personalized road map and they'll have a
+[3:07.00] deadline check one week for arrays after
+[3:09.60] one week hey did you complete arrays
+[3:11.72] let's have a small test after that
+[3:14.04] they'll be giving you a lot of resources
+[3:15.56] on system design lowlevel design DSL go
+[3:18.12] and other things project ideas since
+[3:21.56] this people work in the industry they
+[3:23.40] know how everything works so they'll be
+[3:24.96] giving you project ideas as well after
+[3:27.92] that once you're prepared you will be
+[3:29.80] able to have mock interviews with them
+[3:31.76] before the real interview resume reviews
+[3:35.16] according to the jobs that you're
+[3:36.76] applying you can ask them to review your
+[3:38.20] resumés you can have referals from them
+[3:40.56] as well and from their friends as well
+[3:43.24] and right at the end you can have a
+[3:45.16] personalized discount code from them so
+[3:47.72] if you are liking a mentor ask them for
+[3:49.64] a discount coupon code they will be
+[3:51.36] giving you if they do not you can use
+[3:53.72] stri th000 for an extra th000 credits so
+[3:56.36] I'll be leaving out the link in the
+[3:57.44] description you can book a free trial
+[3:59.12] session with any of dementor it's
+[4:01.32] absolutely free go and check it out so
+[4:03.72] let's head over to the next part covered
+[4:06.36] to right scam so there is a lot of
+[4:09.68] misinformation in the market because
+[4:12.32] it's not paid it's it's actually taking
+[4:14.76] down a lot of businesses as I said we
+[4:16.84] have 90 lakh visits on this course in
+[4:19.64] the last 1.5 years so first of all the
+[4:22.12] first thing that everyone is saying is
+[4:24.12] this course is in
+[4:25.52] C++ absolute garbage absolute nonsense
+[4:29.00] so I have one video the initial video
+[4:31.64] that that says C++ in one shot that's
+[4:36.20] it that's it I haven't made the video
+[4:39.04] Java in one shot but apart from this
+[4:41.48] video you pick up any topic I'm throwing
+[4:44.12] an open challenge pick up any topic
+[4:45.72] arrays trees DP graphs any of the topics
+[4:49.20] you'll find that I write pseudo code I
+[4:51.12] don't write code in C++ Java and in my
+[4:53.96] blogs we are attaching blogs notes to
+[4:57.60] every problem you find C+ plus Java
+[5:00.12] python JavaScript codes so we are not
+[5:02.32] teaching C++ Java the entire course is
+[5:05.60] in pseudo code Pudo code you're focusing
+[5:08.92] on problem solving right a second thing
+[5:12.56] is it's not beginner friendly this is
+[5:15.72] something which everyone like the
+[5:17.56] influencers are spreading to because
+[5:20.68] it's a free course so what I'll ask you
+[5:23.04] to do is and not say anything reach out
+[5:25.96] to any of your seniors who are who got
+[5:28.48] recently placed ask hey there's this guy
+[5:30.68] striver should we follow him should we
+[5:32.72] follow the stver a toz DSA course you
+[5:35.44] can find reviews on Google you can find
+[5:37.12] reviews on Twitter LinkedIn anywhere you
+[5:39.08] wish to post a tweet people will tell
+[5:41.32] you the reviews of this course do not
+[5:43.44] ask an influencer or anyone who is
+[5:45.64] running a business around this one got
+[5:48.20] it it is absolutely beginner friendly
+[5:51.20] that is why it has 455 modules but I
+[5:53.72] start from easy then go to medium and
+[5:55.92] then I cover a lot of advanced problems
+[5:58.44] with a lot of paid Cod coures in the
+[5:59.88] market or lot of free courses in the
+[6:01.20] market what they do is they cover a
+[6:03.16] basic easy in depth and when it comes to
+[6:06.40] Med and hard they tend to skip you can
+[6:09.32] pick up any of the free DSA courses they
+[6:11.36] will end up at 170 180 200 at Max and
+[6:16.04] they'll be skipping the advanced
+[6:17.60] problems or they'll be doing three or
+[6:18.88] four of them but over here in our course
+[6:20.92] we do a bunch of advanced problems so it
+[6:24.32] is tough but in order to exceed you need
+[6:26.88] to do tougher things got it we need to
+[6:30.00] solve all 455 the answer to that is no
+[6:36.08] technically the scor has around 250 to
+[6:39.64] 300 concepts of problems for every
+[6:43.00] concept I have multiple problem so if
+[6:45.32] you're understanding a concept this
+[6:48.36] might have a four follow like four
+[6:50.12] followup problems so you can solve two
+[6:52.08] and you can skip the rest two that is
+[6:53.64] your wish it's not necessary to solve
+[6:56.16] 455 I've given them for practice for
+[6:58.48] your betterment got it the next thing
+[7:01.36] along with the course what else should
+[7:04.00] you do one thing is an absolute must
+[7:08.36] contest head over to lead code so
+[7:11.20] basically lead code there's a website as
+[7:12.92] lead code head over to code
+[7:14.92] forces give every contest so there is
+[7:19.04] something in the market that like a lot
+[7:21.56] of beginners think that I should learn
+[7:23.92] everything and then I should start
+[7:25.60] appearing for contest do not do that you
+[7:28.48] know BAS B programming start appearing
+[7:31.60] on the contest even if you're able to
+[7:33.16] solve one problem that is absolutely
+[7:34.96] fine give every contest for the next 2
+[7:37.84] years give every contest along with
+[7:40.40] learning DS algo two years down the line
+[7:42.92] you'll come back and say me you were
+[7:44.60] correct giving contest actually helped
+[7:47.60] me to learn because you'll face a lot of
+[7:49.40] new Concepts a lot of new unseen
+[7:52.08] problems so you'll learn a lot lot more
+[7:55.00] got it so I'll be leaving out the link
+[7:58.08] of this particular A to Z DSA course in
+[8:01.20] the description I'll be leaving out the
+[8:02.60] link of pre-placed you can book a free
+[8:05.32] trial with any of the mentors you wish
+[8:06.96] to and get onboarded with them if you
+[8:09.12] haven't followed me on social media I'll
+[8:10.76] be leaving out all the social media
+[8:12.16] Handles in the description as well with
+[8:14.80] this I'll be wrapping up this video make
+[8:16.68] sure to follow the website not the
+[8:19.08] YouTube channel with this I'll be
+[8:20.44] wrapping up this video let's meet in
+[8:21.64] some other video till then bye-bye take
+[8:23.00] care

@@ -147,7 +147,29 @@ class TestAnalyzeSuccess:
             result = engine.analyze(
                 "Transcript", "Generic", "English", rules=custom_rules
             )
-            mock_build.assert_called_once_with(custom_rules, "Generic", "Transcript", "English")
+            mock_build.assert_called_once_with(custom_rules, "Generic", "Transcript", "English", interview_mode=False)
+
+        assert len(result.hooks) == 5
+
+    @patch("app.services.hook_engine.time")
+    @patch("app.services.hook_engine.get_settings")
+    @patch("app.services.hook_engine.get_provider")
+    def test_interview_mode_calls_prompt_with_flag(
+        self, mock_get_provider, mock_settings, mock_time
+    ):
+        """interview_mode=True is forwarded to prompt builder."""
+        mock_settings.return_value = MagicMock(LLM_PRIMARY_PROVIDER="gemini")
+        mock_provider = MagicMock(name="gemini")
+        mock_provider.generate.return_value = _make_llm_response(_make_valid_hook_json())
+        mock_get_provider.return_value = mock_provider
+
+        engine = HookEngine()
+        with patch("app.services.hook_engine.build_hook_prompt") as mock_build:
+            mock_build.return_value = "interview prompt"
+            result = engine.analyze(
+                "Transcript", "Generic", "English", interview_mode=True
+            )
+            mock_build.assert_called_once_with("Generic", "Transcript", "English", interview_mode=True)
 
         assert len(result.hooks) == 5
 

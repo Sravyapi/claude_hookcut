@@ -107,12 +107,16 @@ def _detect_face_crop_x(video_path: str, sample_interval: float = 0.5) -> Option
 
     # If positions are consistent (range < 15% of frame), use static crop
     if x_range < frame_width * 0.15:
-        median_x = sorted(xs)[len(xs) // 2]
-        if abs(median_x - center) < frame_width * 0.10:
-            logger.info("Face near center (median=%d, center=%d) — center crop", median_x, center)
+        # Use area-weighted average for more accurate centering on the speaker
+        total_area = sum(area for _, _, area in detections)
+        weighted_x = int(sum(cx * area for _, cx, area in detections) / total_area)
+        # Only skip face crop if face is very close to center (within 3% of frame)
+        # — even small offsets are noticeable in portrait crop
+        if abs(weighted_x - center) < frame_width * 0.03:
+            logger.info("Face at center (weighted=%d, center=%d) — center crop", weighted_x, center)
             return None
-        x_offset = max(0, min(median_x - crop_w // 2, frame_width - crop_w))
-        logger.info("Static face crop: median_x=%d x_offset=%d", median_x, x_offset)
+        x_offset = max(0, min(weighted_x - crop_w // 2, frame_width - crop_w))
+        logger.info("Static face crop: weighted_x=%d x_offset=%d", weighted_x, x_offset)
         return str(x_offset)
 
     # Face moves significantly — build per-segment adaptive crop expression.
@@ -269,20 +273,24 @@ SUBTITLE_DURATION_DIVISOR = 3
 # BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle,
 # BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 CAPTION_STYLES = {
+    # Clean — crisp white, readable outline, subtle shadow for depth
     "clean": (
-        "Style: Default,Arial,64,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,"
-        "-1,0,0,0,100,100,0,0,1,4,0,2,60,60,180,1"
+        "Style: Default,Arial,68,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,"
+        "-1,0,0,0,100,100,1,0,1,3.5,1.5,2,60,60,180,1"
     ),
+    # Bold — high-impact, thick outline, strong shadow
     "bold": (
-        "Style: Default,Impact,72,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,"
-        "-1,0,0,0,100,100,0,0,1,5,0,2,50,50,160,1"
+        "Style: Default,Impact,76,&H00FFFFFF,&H000000FF,&H00000000,&HA0000000,"
+        "-1,0,0,0,100,100,2,0,1,5,2,2,50,50,160,1"
     ),
+    # Neon — bright cyan text, dark outline glow
     "neon": (
-        "Style: Default,Arial Black,64,&H00FFFF00,&H000000FF,&H00800000,&H00000000,"
-        "-1,0,0,0,100,100,0,0,1,3,2,2,60,60,180,1"
+        "Style: Default,Arial Black,68,&H00FFFF00,&H000000FF,&H00502000,&H00000000,"
+        "-1,0,0,0,100,100,1,0,1,4,2,2,60,60,180,1"
     ),
+    # Minimal — elegant, lighter weight, understated
     "minimal": (
-        "Style: Default,Helvetica,52,&H19FFFFFF,&H000000FF,&H00333333,&H00000000,"
+        "Style: Default,Helvetica,56,&H00FFFFFF,&H000000FF,&H00222222,&H00000000,"
         "0,0,0,0,100,100,0,0,1,2,1,2,80,80,200,1"
     ),
 }
@@ -366,8 +374,13 @@ def extract_segment(
     start_seconds: float,
     end_seconds: float,
     output_path: str,
+    prefer_high_res: bool = False,
 ) -> FFmpegResult:
-    """Extract a video segment. Tries Cobalt API first (cloud-friendly), falls back to yt-dlp."""
+    """Extract a video segment. Tries Cobalt API first (cloud-friendly), falls back to yt-dlp.
+
+    Args:
+        prefer_high_res: When True (interview mode), prefer 1080p for split-screen quality.
+    """
     settings = get_settings()
 
     # Method 1: Cobalt API — works from cloud IPs (Railway, AWS, etc.)
@@ -382,7 +395,7 @@ def extract_segment(
         )
 
     # Method 2: yt-dlp — works locally, often blocked from cloud IPs
-    return _extract_segment_ytdlp(youtube_url, start_seconds, end_seconds, output_path)
+    return _extract_segment_ytdlp(youtube_url, start_seconds, end_seconds, output_path, prefer_high_res=prefer_high_res)
 
 
 def _try_cobalt_segment(
@@ -537,8 +550,15 @@ def _extract_segment_ytdlp(
     start_seconds: float,
     end_seconds: float,
     output_path: str,
+    prefer_high_res: bool = False,
 ) -> FFmpegResult:
     """Extract a video segment using yt-dlp --download-sections. Never downloads full video."""
+    # Interview mode: prefer 1080p for split-screen quality.
+    # --download-sections often downgrades to muxed low-res formats when using
+    # separate video+audio streams. For high-res, download full then trim with FFmpeg.
+    if prefer_high_res:
+        return _extract_segment_ytdlp_highres(youtube_url, start_seconds, end_seconds, output_path)
+
     cmd = [
         "yt-dlp",
         *_ytdlp_base_args(),
@@ -589,6 +609,91 @@ def _extract_segment_ytdlp(
         )
     except Exception as e:
         return FFmpegResult(success=False, output_path=output_path, error=str(e))
+
+
+def _extract_segment_ytdlp_highres(
+    youtube_url: str,
+    start_seconds: float,
+    end_seconds: float,
+    output_path: str,
+) -> FFmpegResult:
+    """Download high-res segment for interview split-screen.
+
+    yt-dlp's --download-sections with separate video+audio streams often falls
+    back to low-res muxed formats. This method downloads the full video at 720p
+    (separate streams, properly merged), then trims with FFmpeg.
+    """
+    work_dir = os.path.dirname(output_path)
+    full_path = os.path.join(work_dir, "full_highres.mp4")
+
+    try:
+        # Download full video — 720p h264 preferred, any codec as fallback
+        cmd = [
+            "yt-dlp",
+            *_ytdlp_base_args(),
+            "-f", "136+140/bestvideo[height>=720][height<=1080]+bestaudio/best[height>=720]",
+            "--merge-output-format", "mp4",
+            "-o", full_path,
+            youtube_url,
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+        if result.returncode != 0:
+            logger.warning("High-res full download failed: %s — falling back to standard",
+                           _extract_error_from_stderr(result.stderr)[:200])
+            return _extract_segment_ytdlp(youtube_url, start_seconds, end_seconds, output_path, prefer_high_res=False)
+        if not os.path.exists(full_path):
+            return FFmpegResult(success=False, output_path=output_path, error="High-res download no file")
+
+        full_probe = _probe_video_stream(full_path)
+        logger.info(
+            "High-res full: %sx%s codec=%s (%d bytes)",
+            full_probe.get("width") if full_probe else "?",
+            full_probe.get("height") if full_probe else "?",
+            full_probe.get("codec_name") if full_probe else "?",
+            os.path.getsize(full_path),
+        )
+
+        # Trim segment — copy mode for h264, re-encode for VP9/AV1
+        codec = full_probe.get("codec_name", "") if full_probe else ""
+        if codec == "h264":
+            trim_cmd = [
+                "ffmpeg", "-y", "-ss", str(start_seconds), "-to", str(end_seconds),
+                "-i", full_path, "-c", "copy", "-movflags", "+faststart", output_path,
+            ]
+        else:
+            trim_cmd = [
+                "ffmpeg", "-y", "-ss", str(start_seconds), "-to", str(end_seconds),
+                "-i", full_path,
+                "-c:v", VIDEO_CODEC, "-preset", "fast", "-crf", CRF_QUALITY,
+                "-c:a", AUDIO_CODEC, "-b:a", AUDIO_BITRATE,
+                "-movflags", "+faststart", output_path,
+            ]
+
+        trim_result = subprocess.run(trim_cmd, capture_output=True, text=True, timeout=60)
+        if trim_result.returncode != 0:
+            return FFmpegResult(success=False, output_path=output_path,
+                                error=f"Trim failed: {trim_result.stderr[:200]}")
+
+        if not os.path.exists(output_path):
+            return FFmpegResult(success=False, output_path=output_path, error="Trim no output")
+
+        file_size = os.path.getsize(output_path)
+        seg_probe = _probe_video_stream(output_path)
+        logger.info(
+            "High-res segment: %sx%s codec=%s (%d bytes)",
+            seg_probe.get("width") if seg_probe else "?",
+            seg_probe.get("height") if seg_probe else "?",
+            seg_probe.get("codec_name") if seg_probe else "?", file_size,
+        )
+        return FFmpegResult(success=True, output_path=output_path, file_size_bytes=file_size)
+
+    except subprocess.TimeoutExpired:
+        return FFmpegResult(success=False, output_path=output_path, error="High-res timed out")
+    except Exception as e:
+        return FFmpegResult(success=False, output_path=output_path, error=str(e))
+    finally:
+        if os.path.exists(full_path):
+            os.remove(full_path)
 
 
 def concat_segments(segment_paths: list[str], output_path: str) -> FFmpegResult:
@@ -979,35 +1084,20 @@ def _build_render_cmd(
     aspect_ratio: str = "9:16",
     audio_normalization: bool = True,
 ) -> list[str]:
-    """Build the FFmpeg render command. Separated for retry logic."""
-    # crop_x_expr: FFmpeg expression for the crop X offset. None = center crop.
+    """Build the FFmpeg render command with blur-fill background.
+
+    Instead of black bars, creates a blurred+scaled version of the source as
+    background, then overlays the face-cropped sharp foreground on top.
+    This produces native-looking vertical shorts from landscape source video.
+    """
     width, height = ASPECT_RESOLUTIONS.get(aspect_ratio, (1080, 1920))
     ar_ffmpeg = ASPECT_RATIOS_FFMPEG.get(aspect_ratio, "9/16")
 
-    crop_w_expr = f"max(min(ih*{ar_ffmpeg},iw),2)"
-    if crop_x_expr is None:
-        crop_x_expr = f"(iw-{crop_w_expr})/2"
-    vf_parts = [
-        f"crop='{crop_w_expr}':ih:'{crop_x_expr}':0",
-        f"scale={width}:{height}:force_original_aspect_ratio=decrease",
-        f"pad={width}:{height}:(ow-iw)/2:(oh-ih)/2:black",
-    ]
-
-    # Burn in captions
-    if use_subtitles and subtitle_path and os.path.exists(subtitle_path):
-        if _has_subtitles_filter():
-            # Preferred: ASS subtitles via libass (full styling support)
-            sub_escaped = subtitle_path.replace("\\", "/").replace(":", "\\:")
-            vf_parts.append(f"subtitles='{sub_escaped}'")
-
-    # Watermark (free tier only)
-    if watermark:
-        vf_parts.append(
-            f"drawtext=text='{WATERMARK_TEXT}':fontsize={WATERMARK_FONT_SIZE}"
-            f":fontcolor=white@{WATERMARK_OPACITY}:x=w-tw-20:y=h-th-20:font=Arial"
-        )
-
-    vf = ",".join(vf_parts)
+    # Probe input to decide layout strategy
+    video_info = _probe_video_stream(input_path)
+    in_w = int(video_info.get("width", 1920)) if video_info else 1920
+    in_h = int(video_info.get("height", 1080)) if video_info else 1080
+    is_landscape = in_w > in_h
 
     # Audio filter: loudnorm can fail on short clips (<3s), so it's skippable
     if not audio_normalization or skip_loudnorm:
@@ -1015,10 +1105,97 @@ def _build_render_cmd(
     else:
         af = "loudnorm=I=-14:TP=-1:LRA=11,apad=pad_dur=0.3"
 
+    if not is_landscape:
+        # Source is already portrait — just scale to fit, no crop needed
+        vf_parts = [
+            f"scale={width}:{height}:force_original_aspect_ratio=decrease",
+            f"pad={width}:{height}:(ow-iw)/2:(oh-ih)/2:black",
+        ]
+        if use_subtitles and subtitle_path and os.path.exists(subtitle_path):
+            if _has_subtitles_filter():
+                sub_escaped = subtitle_path.replace("\\", "/").replace(":", "\\:")
+                vf_parts.append(f"subtitles='{sub_escaped}'")
+        if watermark:
+            vf_parts.append(
+                f"drawtext=text='{WATERMARK_TEXT}':fontsize={WATERMARK_FONT_SIZE}"
+                f":fontcolor=white@{WATERMARK_OPACITY}:x=w-tw-20:y=h-th-20:font=Arial"
+            )
+        return [
+            "ffmpeg", "-y",
+            "-i", input_path,
+            "-vf", ",".join(vf_parts),
+            "-af", af,
+            "-c:v", VIDEO_CODEC, "-preset", ENCODER_PRESET, "-crf", CRF_QUALITY,
+            "-c:a", AUDIO_CODEC, "-b:a", AUDIO_BITRATE,
+            "-movflags", "+faststart",
+            "-t", str(MAX_SHORT_DURATION_SECONDS),
+            output_path,
+        ]
+
+    # ── Landscape → Portrait with blur-fill background ──
+    # Background: scale source to fill the output frame (crop overflow), then blur
+    # Foreground: face-aware crop to 9:16 aspect, scale to fit within output
+
+    crop_w_expr = f"max(min(ih*{ar_ffmpeg},iw),2)"
+    if crop_x_expr is None:
+        crop_x_expr = f"(iw-{crop_w_expr})/2"
+
+    # Build filter_complex graph:
+    # [0:v] → split into bg + fg
+    # bg: scale to fill output (may crop edges), apply heavy gaussian blur
+    # fg: face-aware crop, scale to fit
+    # overlay fg centered on bg
+    filter_parts = []
+
+    # Split input into two streams
+    filter_parts.append("[0:v]split=2[bg_in][fg_in]")
+
+    # Background: scale to fill (cover) the output dimensions, then blur heavily
+    # scale2ref isn't needed — we just scale to fill and crop overflow
+    filter_parts.append(
+        f"[bg_in]scale={width}:{height}:force_original_aspect_ratio=increase,"
+        f"crop={width}:{height}:(iw-{width})/2:(ih-{height})/2,"
+        f"gblur=sigma=40[bg]"
+    )
+
+    # Foreground: face-aware crop to portrait aspect ratio, then scale to fit
+    filter_parts.append(
+        f"[fg_in]crop='{crop_w_expr}':ih:'{crop_x_expr}':0,"
+        f"scale={width}:{height}:force_original_aspect_ratio=decrease[fg]"
+    )
+
+    # Overlay foreground centered on blurred background
+    filter_parts.append(
+        "[bg][fg]overlay=(W-w)/2:(H-h)/2[composed]"
+    )
+
+    # Add subtitles and watermark on the composed output
+    post_filters = []
+    if use_subtitles and subtitle_path and os.path.exists(subtitle_path):
+        if _has_subtitles_filter():
+            sub_escaped = subtitle_path.replace("\\", "/").replace(":", "\\:")
+            post_filters.append(f"subtitles='{sub_escaped}'")
+
+    if watermark:
+        post_filters.append(
+            f"drawtext=text='{WATERMARK_TEXT}':fontsize={WATERMARK_FONT_SIZE}"
+            f":fontcolor=white@{WATERMARK_OPACITY}:x=w-tw-20:y=h-th-20:font=Arial"
+        )
+
+    if post_filters:
+        filter_parts.append(f"[composed]{','.join(post_filters)}[vout]")
+        map_label = "[vout]"
+    else:
+        map_label = "[composed]"
+
+    filter_complex = ";".join(filter_parts)
+
     return [
         "ffmpeg", "-y",
         "-i", input_path,
-        "-vf", vf,
+        "-filter_complex", filter_complex,
+        "-map", map_label,
+        "-map", "0:a",
         "-af", af,
         "-c:v", VIDEO_CODEC, "-preset", ENCODER_PRESET, "-crf", CRF_QUALITY,
         "-c:a", AUDIO_CODEC, "-b:a", AUDIO_BITRATE,
@@ -1147,17 +1324,24 @@ def render_short(
             result = _apply_pillow_captions(output_path, subtitle_path, caption_style)
         return result
 
-    # Attempt 4: minimal pipeline (just scale + pad, no crop, no loudnorm)
+    # Attempt 4: minimal pipeline with blur-fill (no crop, no loudnorm)
     logger.warning("All retries failed, trying minimal pipeline")
     width, height = ASPECT_RESOLUTIONS.get(aspect_ratio, (1080, 1920))
-    vf_minimal = (
-        f"scale={width}:{height}:force_original_aspect_ratio=decrease,"
-        f"pad={width}:{height}:(ow-iw)/2:(oh-ih)/2:black"
+    # Still use blur-fill background even in fallback — avoids black bars
+    minimal_filter = (
+        f"[0:v]split=2[mbg][mfg];"
+        f"[mbg]scale={width}:{height}:force_original_aspect_ratio=increase,"
+        f"crop={width}:{height}:(iw-{width})/2:(ih-{height})/2,"
+        f"gblur=sigma=40[mbg2];"
+        f"[mfg]scale={width}:{height}:force_original_aspect_ratio=decrease[mfg2];"
+        f"[mbg2][mfg2]overlay=(W-w)/2:(H-h)/2[mvout]"
     )
     cmd_minimal = [
         "ffmpeg", "-y",
         "-i", input_path,
-        "-vf", vf_minimal,
+        "-filter_complex", minimal_filter,
+        "-map", "[mvout]",
+        "-map", "0:a",
         "-c:v", VIDEO_CODEC, "-preset", ENCODER_PRESET, "-crf", CRF_QUALITY,
         "-c:a", AUDIO_CODEC, "-b:a", AUDIO_BITRATE,
         "-movflags", "+faststart",
@@ -1322,3 +1506,196 @@ def _seconds_to_ass_time(sec: float) -> str:
     s = sec % 60
     centiseconds = int((s % 1) * 100)
     return f"{h}:{m:02d}:{int(s):02d}.{centiseconds:02d}"
+
+
+# ── Interview mode: split-screen rendering ──────────────────────────────────
+
+# Interview layout values stored on Short.interview_layout
+INTERVIEW_LAYOUT_SPLIT_2 = "split_2"
+INTERVIEW_LAYOUT_SPLIT_3PLUS = "split_3plus"
+INTERVIEW_LAYOUT_NORMAL = "normal"
+
+
+def _build_active_speaker_expr(utterances: list[dict], speaker_label: str) -> str:
+    """Build FFmpeg if(between(t,...)) expression for when a speaker is active."""
+    segments = [u for u in utterances if u.get("speaker") == speaker_label]
+    if not segments:
+        logger.warning("No diarization segments found for '%s' — speaker border will be inactive", speaker_label)
+        return "0"
+    parts = [f"between(t,{u['start_ms']/1000:.2f},{u['end_ms']/1000:.2f})" for u in segments]
+    # Chain with + (acts as OR in FFmpeg expressions)
+    return "+".join(parts)
+
+
+def render_interview_short(
+    input_path: str,
+    subtitle_path: str,
+    output_path: str,
+    speaker_faces: list,  # list[FaceRegion] — avoid circular import
+    diarization_data: list[dict],
+    watermark: bool = False,
+    caption_style: str = "clean",
+    aspect_ratio: str = "9:16",
+    audio_normalization: bool = True,
+) -> FFmpegResult:
+    """Render a split-screen interview Short with active speaker emphasis.
+
+    2-speaker: top/bottom vertical stack, each showing one speaker's face region.
+    3+ speaker: top = active speaker (switches), bottom = full wide shot.
+    Fallback: if filter graph fails, falls back to normal render_short.
+    """
+    width, height = ASPECT_RESOLUTIONS.get(aspect_ratio, (1080, 1920))
+    panel_height = (height - 60) // 2  # 60px gap between panels
+
+    # Probe input dimensions
+    video_info = _probe_video_stream(input_path)
+    if not video_info:
+        return render_short(input_path, subtitle_path, output_path, watermark, caption_style, aspect_ratio, audio_normalization)
+
+    in_w = int(video_info.get("width", 1920))
+    in_h = int(video_info.get("height", 1080))
+
+    # Split-screen needs landscape source
+    if in_w <= in_h:
+        logger.info("Source is portrait (%dx%d) — using normal render", in_w, in_h)
+        return render_short(input_path, subtitle_path, output_path, watermark, caption_style, aspect_ratio, audio_normalization)
+
+    if len(speaker_faces) == 2:
+        vf = _build_2speaker_filter(
+            speaker_faces, diarization_data, in_w, in_h,
+            width, panel_height, subtitle_path,
+        )
+    else:
+        vf = _build_3plus_filter(
+            speaker_faces, diarization_data, in_w, in_h,
+            width, panel_height, subtitle_path,
+        )
+
+    # Attempt 1: full split-screen + loudnorm
+    af = "loudnorm=I=-16:TP=-1.5:LRA=11,apad=pad_dur=0.3" if audio_normalization else "apad=pad_dur=0.3"
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", input_path,
+        "-vf", vf,
+        "-af", af,
+        "-c:v", VIDEO_CODEC, "-preset", ENCODER_PRESET, "-crf", CRF_QUALITY,
+        "-c:a", AUDIO_CODEC, "-b:a", AUDIO_BITRATE,
+        "-movflags", "+faststart",
+        "-t", str(MAX_SHORT_DURATION_SECONDS),
+        output_path,
+    ]
+    result = _run_ffmpeg_render(cmd, output_path)
+    if result.success:
+        return result
+
+    # Attempt 2: split-screen without loudnorm
+    logger.warning("Interview render attempt 1 failed, retrying without loudnorm")
+    af_simple = "apad=pad_dur=0.3"
+    cmd[cmd.index("-af") + 1] = af_simple
+    result = _run_ffmpeg_render(cmd, output_path)
+    if result.success:
+        return result
+
+    # Attempt 3: split-screen without captions
+    logger.warning("Interview render attempt 2 failed, retrying without captions")
+    # Subtitles are appended as ";[stacked]subtitles=..." — remove that segment
+    if ";[stacked]subtitles=" in vf:
+        vf_no_subs = vf.split(";[stacked]subtitles=")[0]
+    elif ",subtitles=" in vf:
+        vf_no_subs = vf.split(",subtitles=")[0]
+    else:
+        vf_no_subs = vf
+    cmd[cmd.index("-vf") + 1] = vf_no_subs
+    result = _run_ffmpeg_render(cmd, output_path)
+    if result.success:
+        return result
+
+    # Attempt 4: fall back to normal render
+    logger.warning("All interview render attempts failed, falling back to normal render")
+    return render_short(input_path, subtitle_path, output_path, watermark, caption_style, aspect_ratio, audio_normalization)
+
+
+def _build_2speaker_filter(
+    faces: list, utterances: list[dict],
+    in_w: int, in_h: int,
+    out_w: int, panel_h: int,
+    subtitle_path: str,
+) -> str:
+    """Build FFmpeg filter graph for 2-speaker interview split-screen.
+
+    Layout: Top panel = zoomed close-up (face crop), Bottom panel = full frame.
+    Works for both multi-camera interviews (camera cuts between speakers) and
+    single-camera wide shots. The face crop follows whoever is on screen,
+    creating a zoom + context effect.
+
+    Active speaker gets a cyan border based on diarization timestamps.
+    """
+    fa, fb = faces[0], faces[1]
+    gap = 30
+
+    # Top panel: crop ~60% of frame centered on detected face — creates zoom effect
+    crop_h = in_h
+    crop_w = min(max(int(in_w * 0.6), 2), in_w)
+    face_center_x = fa.x + fa.w // 2
+    crop_x = max(0, min(face_center_x - crop_w // 2, in_w - crop_w))
+
+    expr_a = _build_active_speaker_expr(utterances, fa.speaker_label)
+    expr_b = _build_active_speaker_expr(utterances, fb.speaker_label)
+
+    parts = [
+        f"[0:v]split=2[src1][src2]",
+        # Top: zoomed crop centered on detected face
+        f"[src1]crop={crop_w}:{crop_h}:{crop_x}:0,scale={out_w}:{panel_h}[top]",
+        # Bottom: full frame scaled to fit
+        f"[src2]scale={out_w}:{panel_h}:force_original_aspect_ratio=decrease,"
+        f"pad={out_w}:{panel_h}:(ow-iw)/2:(oh-ih)/2:black[bot]",
+        # Active speaker borders
+        f"[top]drawbox=x=0:y=0:w={out_w}:h={panel_h}:color=cyan@0.8:t=4:"
+        f"enable='{expr_a}'[top_e]",
+        f"[bot]drawbox=x=0:y=0:w={out_w}:h={panel_h}:color=cyan@0.8:t=4:"
+        f"enable='{expr_b}'[bot_e]",
+        f"[top_e]pad={out_w}:{panel_h + gap}:0:0:black[top_pad]",
+        f"[bot_e]pad={out_w}:{panel_h + gap}:0:{gap}:black[bot_pad]",
+        f"[top_pad][bot_pad]vstack=inputs=2[stacked]",
+        ]
+
+    # Add subtitles if available (FFmpeg auto-maps the last output pad)
+    if subtitle_path and os.path.exists(subtitle_path):
+        escaped_path = subtitle_path.replace("\\", "\\\\").replace(":", "\\:").replace("'", "'\\''")
+        parts.append(f"[stacked]subtitles='{escaped_path}'[out]")
+
+    return ";".join(parts)
+
+
+def _build_3plus_filter(
+    faces: list, utterances: list[dict],
+    in_w: int, in_h: int,
+    out_w: int, panel_h: int,
+    subtitle_path: str,
+) -> str:
+    """Build FFmpeg filter for 3+ speakers: close-up of first speaker on top, wide shot on bottom."""
+    fa = faces[0]
+    gap = 30
+
+    # Top panel: portrait crop centered on first speaker
+    crop_h = in_h
+    panel_aspect = out_w / panel_h
+    crop_w = min(int(crop_h * panel_aspect), in_w)
+    face_center_x = fa.x + fa.w // 2
+    crop_x = max(0, min(face_center_x - crop_w // 2, in_w - crop_w))
+
+    parts = [
+        f"[0:v]split=2[src1][src2]",
+        f"[src1]crop={crop_w}:{crop_h}:{crop_x}:0,scale={out_w}:{panel_h}[top]",
+        # Bottom: full wide shot scaled to fit
+        f"[src2]scale={out_w}:{panel_h}:force_original_aspect_ratio=decrease,pad={out_w}:{panel_h}:(ow-iw)/2:(oh-ih)/2:black[bot]",
+        f"[top]pad={out_w}:{panel_h + gap}:0:0:black[top_pad]",
+        f"[bot]pad={out_w}:{panel_h + gap}:0:{gap}:black[bot_pad]",
+        f"[top_pad][bot_pad]vstack=inputs=2[stacked]",
+    ]
+
+    if subtitle_path and os.path.exists(subtitle_path):
+        escaped_path = subtitle_path.replace("\\", "\\\\").replace(":", "\\:").replace("'", "'\\''")
+        parts.append(f"[stacked]subtitles='{escaped_path}'[out]")
+
+    return ";".join(parts)

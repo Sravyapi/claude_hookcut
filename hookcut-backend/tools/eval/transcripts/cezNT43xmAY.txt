@@ -1,0 +1,306 @@
+[0:00.12] hey everyone I hope you all are safe and
+[0:02.28] doing good so in the series of learning
+[0:03.84] Python programming language in the
+[0:05.22] previous video we have seen how to add
+[0:07.22] methods to your class right so now till
+[0:10.92] now we have discussed how to create your
+[0:12.84] class how to create object of that class
+[0:14.76] how to add attributes and how to add
+[0:17.46] methods to the class right now based on
+[0:20.88] that whatever you have learned till now
+[0:23.10] based on that we'll be doing one
+[0:24.42] exercise in this video right and after
+[0:26.40] that in further videos we will continue
+[0:28.20] with the advanced concepts right of
+[0:30.84] object-oriented programming right right
+[0:33.60] so the question is that is very simple
+[0:36.60] one you have to calculate area of circle
+[0:40.38] and circumference of circle area and
+[0:43.44] circumference of circle
+[0:45.24] right and that you will use
+[0:48.32] which approach you'll use object
+[0:50.82] oriented programming approach means you
+[0:52.56] have to create class objects and then
+[0:55.26] you have to find out the area and
+[0:56.94] circumference of circle yeah although
+[0:59.52] you can do this
+[1:01.04] without using this classes and object
+[1:03.54] concept but that is different one VR
+[1:05.82] now we are focusing on OB concept so
+[1:08.16] given a simple example we will do with
+[1:10.20] the help of classes and object concept
+[1:12.30] right then only you will you know you'll
+[1:15.96] be it will be easy for you to understand
+[1:17.64] the concept and it will be easy for you
+[1:19.74] to apply these Concepts to a larger
+[1:21.66] project
+[1:22.44] right okay now just pause the video and
+[1:25.80] try to find out the area and circle
+[1:28.02] circumference of a circle
+[1:30.72] right
+[1:32.04] okay so I hope you have done this
+[1:34.68] uh this project sorry this exercise
+[1:38.04] so let's create a new file like Circle
+[1:41.28] exercise dot p y and we are creating a
+[1:46.26] class first
+[1:48.12] and the name of the class is circle with
+[1:50.70] C Capital right
+[1:53.04] so let's take this init function and
+[1:55.98] what you need for area and circumference
+[1:58.62] one we need pi and one we need is like
+[2:01.38] radius
+[2:03.00] right
+[2:04.20] so Pi is we know
+[2:06.42] for all the circles pi value is same
+[2:08.94] 3.14 so I have told you one concept that
+[2:12.84] is class object attribute right
+[2:15.48] outside of this init function we Define
+[2:17.88] that attribute so Pi is equal to 3.14 so
+[2:21.78] here Pi is our
+[2:23.82] class object attributes so for all the
+[2:26.52] objects you created for every instance
+[2:29.10] you create from this class the pi value
+[2:31.32] would be same 3.14 that is why I am
+[2:34.26] taking this as a class object attribute
+[2:36.12] and what we you need is radius so let's
+[2:39.42] take a parameter
+[2:41.76] radius
+[2:45.84] so self Dot
+[2:49.08] attribute name I'm taking same as
+[2:51.30] parameter name you can take different
+[2:52.56] name also self dot radius equal to and
+[2:55.98] whatever the value of this parameter
+[2:58.50] whatever whatever value pass as an
+[3:00.90] argument that would be assigned to
+[3:04.74] the self dot radius this attribute right
+[3:07.02] so see as you can see here we have
+[3:08.52] radius because we have a parameter named
+[3:11.28] radius from there we will get the value
+[3:13.46] radius right or you can simply here put
+[3:16.68] R if you put here r
+[3:19.68] then yes you should put R so this and
+[3:24.12] this
+[3:25.26] the name should be save this name cell
+[3:28.38] node after you know self load after this
+[3:31.32] you take any attribute name right so I'm
+[3:34.62] just taking
+[3:36.60] now let's define a function
+[3:39.30] circumference
+[3:45.18] right and what is the formula
+[3:48.90] of circumference 2 pi r so the formula
+[3:52.14] is 2
+[3:53.16] into pi value so pi value means
+[3:57.48] you cannot directly write down here Pi
+[3:59.46] if you write down here Pi directly Pi
+[4:01.34] into radius so radius is obviously the
+[4:06.18] attribute of the circle
+[4:08.16] so how to access self Dot
+[4:11.34] radius right maybe you think Pi is class
+[4:14.22] object attribute so no need to write
+[4:16.02] down cell so whatever the circumference
+[4:18.72] we will
+[4:20.70] let's store this in a circum variable
+[4:23.76] and let's return
+[4:27.24] this variable return
+[4:31.62] whatever the value or rather than two
+[4:33.54] lines in single line also we can write
+[4:35.16] down this thing rather than this line
+[4:36.90] just remove this and here only just
+[4:39.66] write down
+[4:42.66] that is also fine return 2 into Pi into
+[4:44.64] self root radius right maybe you think
+[4:47.10] it's right let's see
+[4:49.20] now let's create obviously an object
+[4:51.84] suppose Circle one I am creating is
+[4:54.30] equal to the name of the classes Circle
+[4:58.14] this is the way you create and you need
+[5:00.72] to pass what one parameter radius so I
+[5:03.78] am passing here 4.
+[5:06.54] and I'm just printing because this
+[5:09.00] function is returning the value
+[5:12.06] so if
+[5:13.56] how you will call this function
+[5:15.44] circumference or better to
+[5:18.84] name this get circumference
+[5:21.54] right
+[5:22.80] how we will call this on this on this
+[5:25.14] instance of this class the name of the
+[5:27.48] instance the name of the object Circle
+[5:28.98] one dot
+[5:31.26] get circumference right so whatever it
+[5:34.20] will return either you can store that in
+[5:36.18] a variable and then you can print that
+[5:37.80] variable
+[5:38.88] otherwise in one line only you can do
+[5:41.04] that task and simply write down here
+[5:42.96] print print whatever it will return that
+[5:46.02] would be printed
+[5:48.42] I hope it's right but it's not let's run
+[5:50.88] this and I will show you what error you
+[5:52.32] will get here see
+[5:55.02] in line number eight here we are calling
+[5:57.06] this
+[5:58.02] method and
+[6:00.60] see not function we'll call these
+[6:02.82] methods right now this method is in line
+[6:05.88] number six in line number
+[6:07.98] eight we are calling and in line number
+[6:09.84] six
+[6:10.68] we are defining this function this
+[6:13.02] method so name Pi is not defined
+[6:16.80] although Pi is a class object attribute
+[6:19.86] it would be same the value of pi would
+[6:22.02] be same for each you can say object
+[6:26.16] but
+[6:27.60] when you call this get circumference
+[6:31.62] using this
+[6:33.24] object Circle one don't get
+[6:35.70] circumference dot this
+[6:38.10] so I need Pi for this circle
+[6:41.88] and Pi for this circle how you can get
+[6:44.34] using
+[6:45.42] self load pi
+[6:48.72] right self toad Pi now let's run this
+[6:52.74] see 25.12
+[6:56.40] right
+[6:58.44] if I say if I write something like this
+[7:00.54] if you provide default value like radius
+[7:02.40] is equal to maybe 5.
+[7:05.70] or maybe like six
+[7:08.64] so here if you do not provide
+[7:11.70] any argument then also it's fine because
+[7:14.28] by default radius is equal to 6 so it
+[7:16.68] will take radius 6 and it will give you
+[7:19.02] the result
+[7:20.46] right and if you provide any value like
+[7:23.58] 4 I am providing then it will override
+[7:25.62] this value 6 now this time I am
+[7:27.54] providing the value 4 so radius would be
+[7:29.58] equivalent to 4 now so see the answer is
+[7:32.54] 25.12 right so this is also fine
+[7:36.66] right this I hope you got why I'm
+[7:39.60] writing yourself dot PI right if I
+[7:42.12] create another Circle
+[7:44.58] and for this the value of uh what we can
+[7:48.42] say
+[7:49.50] this radius is 14.
+[7:52.20] so now on Circle 2
+[7:55.26] let's
+[7:56.94] call this function get circumference
+[8:00.18] and whatever
+[8:02.04] it will return we are going to print
+[8:04.68] that thing
+[8:06.66] right so let's run this now we will get
+[8:09.66] two circumference
+[8:11.12] 87.92 25.12
+[8:14.04] right
+[8:15.36] so when you are calling this function on
+[8:17.34] Circle 2 then it will it will it is you
+[8:20.46] know
+[8:21.44] pointing to self growth pi means pi
+[8:24.06] value for the circle and at this point
+[8:26.10] of time pi value for Circle one that is
+[8:27.96] why we are writing cell dot Pi cell dot
+[8:29.64] Pi not just Pi one more thing rather
+[8:31.68] than cell group Pi if Pi is a class
+[8:33.66] object attribute right then somewhere it
+[8:36.78] is also written rather than self we can
+[8:38.70] write down the name of the class Circle
+[8:41.16] dot pi
+[8:43.20] that is also fine let's run this
+[8:45.54] and see we will get the result
+[8:48.72] so like why we are writing this one
+[8:51.24] Circle dot Pi because it will
+[8:53.28] differentiate
+[8:54.48] if anybody will see like I have I'm
+[8:57.06] having 50
+[8:58.50] maybe methods
+[9:00.42] in my class
+[9:02.10] so wherever you will write the class
+[9:03.78] name dot any variable name then yeah he
+[9:07.74] or she will have an idea like this is in
+[9:09.48] class object attribute and the value of
+[9:11.52] this object is same for every instance
+[9:13.92] thanks
+[9:15.24] so that is why we it's better to write
+[9:17.76] if you are using a class object
+[9:19.50] attribute better to access that
+[9:21.42] attribute with the help of name of the
+[9:22.80] class or self node Pi which we can write
+[9:25.02] that is also fine
+[9:26.70] and one more thing for area also same
+[9:29.52] you can create another method right
+[9:32.94] so like def get area and all so this
+[9:36.36] thing is your assignment you need to do
+[9:39.00] right you have to define a function get
+[9:41.70] area and you include that thing another
+[9:43.44] way is just I want to show you like I am
+[9:47.28] passing here only one parameter radius
+[9:49.32] all right it's not like that if you are
+[9:51.72] passing only one parameter then that
+[9:53.52] reviewed for the object or the attribute
+[9:55.80] in this class would be only one and if I
+[9:58.14] pass here two parameter then two
+[10:00.60] attribute no I am passing only one
+[10:02.82] parameter but still
+[10:04.80] attribute of the object can be more like
+[10:07.92] area so self load area
+[10:11.76] I'm creating another attribute self note
+[10:14.10] area equal to now area is pi R square
+[10:16.92] right so pi
+[10:20.04] not Pi we will write like
+[10:23.10] Circle dot Pi because it's class object
+[10:25.38] attribute pi
+[10:27.00] R square so no no need to write cell
+[10:29.58] plot radius self load radius because
+[10:33.06] we are simply taking the value from this
+[10:35.58] parameter radius so simply here write
+[10:37.68] down radius
+[10:45.06] Pi R square radius into radius right so
+[10:48.42] if you here want to print the area as
+[10:51.72] well see
+[10:53.52] Circle one
+[10:55.68] two now as you can see
+[10:57.96] we can access this radius pi and area as
+[11:01.38] well as and obviously here see can you
+[11:04.26] see this pink round pink circle and here
+[11:07.80] we have it an m means this is what
+[11:09.54] method and it is what method and this F
+[11:13.38] f is like maybe you said these are
+[11:15.12] attributes so it should be a here but f
+[11:17.22] means like it is in yellow then these
+[11:19.74] are fields
+[11:21.06] okay
+[11:22.14] so these are radius Pi area these are
+[11:24.60] Fields okay
+[11:26.10] now I can access this area
+[11:29.82] Circle one root areas element let's run
+[11:32.58] this
+[11:33.96] so this is what this is the area of the
+[11:36.60] circle 50. right
+[11:38.94] or if you want to print like this like
+[11:41.70] this using a string we can write down
+[11:43.44] this thing so let's run this and now see
+[11:45.60] it's a comparison of circle one is this
+[11:47.16] circle two is this and the area of
+[11:48.60] circle one is 50 like this right
+[11:51.96] so now one assignment for you is you
+[11:54.12] need to find out area of a rectangle
+[11:56.82] right that is your assignment like this
+[11:59.46] you can you know do some exercises like
+[12:02.16] area of square rectangle or triangle or
+[12:04.92] any other things
+[12:06.30] right these things you can try but from
+[12:08.82] my side your assignment is you have to
+[12:10.14] find out area of rectangle you can write
+[12:11.58] down that logic in comment section
+[12:14.28] fine so now I think that's it about like
+[12:17.70] the basics of methods and all I hope you
+[12:20.16] got the idea of attribute methods class
+[12:23.04] object self keyword class object
+[12:25.86] attribute init function and all how to
+[12:28.26] define a method and all right how to
+[12:30.78] access the methods and attributes of a
+[12:33.36] class with the help of object right so
+[12:36.24] now I'll see you in the next video bye
+[12:37.92] take care

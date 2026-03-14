@@ -6,6 +6,7 @@ from tests.conftest import make_user, make_session, TEST_USER_ID
 from app.exceptions import ResourceNotFoundError
 from app.models.admin import AdminAuditLog, PromptRule
 from app.services.admin_service import AdminService
+from app.services.admin_rule_service import AdminRuleService
 
 
 def make_admin(db, user_id="admin-svc-1", email="admin@svc.test"):
@@ -106,7 +107,7 @@ class TestUpdateUserRole:
 class TestCreateRule:
     def test_creates_rule_with_explicit_key(self, db):
         admin = make_admin(db)
-        rule = AdminService.create_rule(db, title="Test Rule", content="Do X", rule_key="T1", admin_user=admin)
+        rule = AdminRuleService.create_rule(db, title="Test Rule", content="Do X", rule_key="T1", admin_user=admin)
         assert rule.rule_key == "T1"
         assert rule.title == "Test Rule"
         assert rule.is_active is True
@@ -114,13 +115,13 @@ class TestCreateRule:
 
     def test_creates_rule_auto_assigns_key(self, db):
         admin = make_admin(db)
-        rule = AdminService.create_rule(db, title="Auto Key", content="Some content", rule_key=None, admin_user=admin)
+        rule = AdminRuleService.create_rule(db, title="Auto Key", content="Some content", rule_key=None, admin_user=admin)
         assert rule.rule_key is not None
         assert len(rule.rule_key) >= 1
 
     def test_creates_audit_log(self, db):
         admin = make_admin(db)
-        rule = AdminService.create_rule(db, title="Audit Rule", content="...", rule_key="X9", admin_user=admin)
+        rule = AdminRuleService.create_rule(db, title="Audit Rule", content="...", rule_key="X9", admin_user=admin)
         log = db.execute(select(AdminAuditLog).where(AdminAuditLog.resource_id == rule.id)).scalar_one_or_none()
         assert log is not None
         assert log.action == "prompt_rule_created"
@@ -128,23 +129,23 @@ class TestCreateRule:
 
 class TestListRules:
     def test_returns_list(self, db):
-        rules = AdminService.list_rules(db)
+        rules = AdminRuleService.list_rules(db)
         assert isinstance(rules, list)
 
     def test_only_active_rules(self, db):
         admin = make_admin(db)
-        r = AdminService.create_rule(db, title="Active", content="x", rule_key="AA", admin_user=admin)
+        r = AdminRuleService.create_rule(db, title="Active", content="x", rule_key="AA", admin_user=admin)
         # Deactivate it directly
         r.is_active = False
         db.commit()
-        rules = AdminService.list_rules(db)
+        rules = AdminRuleService.list_rules(db)
         ids = [rule.id for rule in rules]
         assert r.id not in ids
 
     def test_get_active_rules_as_dicts(self, db):
         admin = make_admin(db)
-        AdminService.create_rule(db, title="Dict Rule", content="rule content", rule_key="BB", admin_user=admin)
-        dicts = AdminService.get_active_rules_as_dicts(db)
+        AdminRuleService.create_rule(db, title="Dict Rule", content="rule content", rule_key="BB", admin_user=admin)
+        dicts = AdminRuleService.get_active_rules_as_dicts(db)
         assert all("rule_key" in d and "content" in d for d in dicts)
 
 

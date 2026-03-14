@@ -1,0 +1,493 @@
+[0:08.40] Hello everyone and welcome to this video
+[0:11.20] on top 30 LLM interview questions and
+[0:14.16] answers. So if you're preparing for LLM
+[0:17.04] or generative AI interviews, this video
+[0:19.60] is for you. Large language models are
+[0:22.32] one of the most commonly asked topics in
+[0:24.64] AI interviews today. But many candidates
+[0:27.84] try to memorize answers without truly
+[0:30.08] understanding how LLMs work in practice.
+[0:33.20] So before we jump into the interview
+[0:35.04] questions, let's first understand how
+[0:37.28] large language models are used in real
+[0:39.76] world. We will start with a simple and
+[0:42.16] practical use case. How LLM's power
+[0:44.80] Google search. So the concepts are clear
+[0:47.04] and easy to relate to. So once that
+[0:49.60] foundation is in place, we will move
+[0:51.84] step by step through the top LLM
+[0:53.84] interview questions starting from the
+[0:55.60] basics and gradually moving to advanced
+[0:58.08] concepts exactly the way interviewers
+[1:00.48] expect. So before we begin, please like,
+[1:03.20] share and subscribe to Edureka's YouTube
+[1:05.12] channel and hit the bell icon to stay
+[1:07.28] updated on the latest tech content from
+[1:09.52] Edureka. Also check out Edurea's prompt
+[1:13.28] engineering certification course with
+[1:15.20] LLM. Helps you learn how to design,
+[1:17.92] refine, and optimize prompts for modern
+[1:21.12] LLMs and generative AI systems. The
+[1:24.08] course focuses on hands-on practice
+[1:26.24] through real world use cases, projects,
+[1:28.88] and industry relevant tools. You will
+[1:31.36] build practical skills in prompt
+[1:33.44] patterns, chatbot prompting, AI workflow
+[1:36.72] automation, NLP fundamentals and LLM
+[1:40.40] evaluation equipping you with the job
+[1:42.56] ready expertise for AI and generative AI
+[1:45.36] roles. So check out the course link
+[1:47.20] given in the description box below. So
+[1:49.84] as I said, let's first understand how
+[1:52.32] large language models are used in the
+[1:54.40] real world. A very good example is
+[1:57.12] Google search. Earlier, Google search
+[1:59.68] mainly worked by matching keywords. If
+[2:02.24] you search something, it showed pages
+[2:04.16] that contain those exact words, often
+[2:06.72] ranked using techniques like page rank
+[2:09.36] and knowledge graphs. But today, Google
+[2:12.24] search is much smarter. When you type a
+[2:15.12] question like best way to prepare for
+[2:17.20] LLM interviews as a beginner, Google
+[2:20.08] doesn't just match keywords anymore.
+[2:22.80] This is important because people no
+[2:24.80] longer search using single words. They
+[2:27.60] use long- form queries, direct
+[2:29.84] questions, and conversational language,
+[2:32.80] almost like talking to a human. Behind
+[2:35.36] the scenes, LLM help Google understand
+[2:38.08] the intent of your question, what you
+[2:40.88] actually mean, and not just what you
+[2:43.04] typed. So, here's how LLM's power modern
+[2:46.08] search. First, the LLM understand the
+[2:49.28] context of your query. It knows you're
+[2:52.16] looking for a learning guidance, not
+[2:54.00] dictionary definitions. Next, it
+[2:56.72] analyzes and summarizes information from
+[2:59.76] multiple highquality sources instead of
+[3:02.48] showing random links. Then, it generates
+[3:05.44] a clear and structured response often
+[3:08.40] shown as AI powered answers or overviews
+[3:11.44] at the top of the search results. And
+[3:13.84] this is why search results today feel
+[3:16.00] more conversational, accurate, and
+[3:17.84] helpful. And this intelligence doesn't
+[3:20.16] stop at the search box. The same LLM
+[3:23.04] powered search capabilities also enable
+[3:25.44] smart recommendations, conversational
+[3:27.68] AI, content classification, enterprise
+[3:30.48] knowledge search inside apps and
+[3:32.48] websites. So when we talk about LLM in
+[3:35.36] interviews, we are not talking about
+[3:37.28] theory. We are talking about the same
+[3:39.52] technology that powers Google search,
+[3:41.92] chat, GPT, GitHub copilot and enterprise
+[3:45.20] AI systems used by companies today. So
+[3:48.08] now that you understand where LLMs are
+[3:50.40] used in the real world, let's move on to
+[3:52.88] the top LLM interview questions starting
+[3:55.20] from the basics. So the first question
+[3:57.76] on our list of top 30 LLM interview
+[4:00.40] questions is what is a large language
+[4:03.76] model? A large language model is a type
+[4:06.72] of artificial intelligence model trained
+[4:08.80] on massive amounts of text data to
+[4:11.28] understand, generate, and reason with
+[4:13.52] human language. LLMs are built using
+[4:16.40] deep learning, specifically transformer
+[4:19.04] based neural networks. They learn
+[4:21.44] language patterns such as grammar,
+[4:23.84] semantics, context, and even reasoning
+[4:26.64] by predicting the next word in a
+[4:28.72] sequence. Key characteristics are
+[4:31.04] trained on billions or trillions of
+[4:33.20] tokens. Users self attention to
+[4:35.92] understand context and can perform
+[4:38.16] multiple task without retraining. And
+[4:40.80] the examples include GPT4, GPT40, Llama,
+[4:45.44] Cloud, Mistral, and Gemini. And the next
+[4:49.44] question is, how is an LLM different
+[4:52.16] from a traditional NLP model? So,
+[4:55.12] traditional NLP models use task specific
+[4:57.92] architectures, requires feature
+[5:00.16] engineering, and are trained for one
+[5:03.20] task at a time, for example, sentiment
+[5:06.24] analysis. Whereas LLMs are
+[5:08.80] generalpurpose models use a single
+[5:11.44] architecture for many tasks and rely on
+[5:14.24] pre-training plus fine-tuning. And your
+[5:17.12] follow-up question could be why did LLN
+[5:19.84] replace classical NLP pipelines? And the
+[5:23.04] answer is because they scale better,
+[5:25.92] generalize across task and reduce manual
+[5:28.80] feature engineering. Now moving on to
+[5:31.44] our next question. What is a token in
+[5:34.40] LLM? A token is the smallest unit of
+[5:37.68] text processed by an LLM. So it can be a
+[5:40.72] word, a subword, a character. So here is
+[5:43.92] an example. So the example is
+[5:46.24] unbelievable. So it can be divided into
+[5:49.04] un, believe, able. So as a set, it can
+[5:54.16] be a word, a subword or a character. So
+[5:57.84] llns do not read text like humans. They
+[6:00.80] operate on tokens, convert them into
+[6:03.28] numbers, which is also called embeddings
+[6:05.52] and process them mathematically. So let
+[6:08.16] me tell you why interviewers ask this.
+[6:10.64] They will ask you to test your
+[6:12.24] understanding of cost, context, length
+[6:14.72] and performance limitations. Next, let
+[6:17.84] us understand what is an embedding. An
+[6:20.88] embedding is a numerical vector
+[6:23.04] representation of text that captures its
+[6:26.00] semantic meaning. So here is an example.
+[6:29.20] King and queen have similar embedded
+[6:31.76] whereas car and banana are far apart. So
+[6:35.12] embeddings are used for semantic search
+[6:37.60] clustering recommendation systems
+[6:40.08] retrieval augmented generation.
+[6:42.24] Embeddings convert language into the
+[6:44.40] format machines can compare
+[6:46.08] mathematically. Next, what is the
+[6:49.12] transformer architecture? The
+[6:51.36] transformer is the core architecture
+[6:53.44] behind modern LLMs. It consists of
+[6:56.32] encoder and or a decoder blocks, self
+[6:59.44] attention mechanism, feed forward neural
+[7:02.24] networks. And why transformers are
+[7:04.88] powerful? Because it process text in
+[7:08.08] parallel, capture long range
+[7:10.08] dependencies and scale efficiently with
+[7:12.64] data and compute. Most LLMs like GPT use
+[7:16.48] decoder only transformers. Now I hope
+[7:19.20] the basics are clear. Let's move to
+[7:21.28] intermediate level questions that
+[7:23.20] interviewers commonly ask. So the
+[7:25.44] question is what is self attention and
+[7:28.24] why is it important? Self attention
+[7:30.64] allows the model to focus on relevant
+[7:32.80] words in a sentence and understand
+[7:35.20] context and relationships. For example,
+[7:38.32] the animal didn't cross the street
+[7:40.24] because it was too tired. Self attention
+[7:43.36] helps the model understand what it
+[7:45.92] refers to. So the technical insight is
+[7:48.80] self attention computes query key and
+[7:51.92] value matrices to determine importance
+[7:54.24] weights. And the next question is what
+[7:56.80] is pre-training and fine-tuning? In
+[7:59.52] pre-training model learns general
+[8:01.68] language patterns trained on large
+[8:04.08] unlabelled data sets and the objectives
+[8:06.64] is next token prediction. Whereas in
+[8:09.12] fine-tuning model is adapted for a
+[8:11.76] specific task and it uses labeled or
+[8:14.56] curated data. For example, pre-trained
+[8:17.76] GPT fine-tuned for chat or coding. Next,
+[8:22.16] what is RLHF,
+[8:24.64] which stands for reinforcement learning
+[8:27.12] with human feedback? RLHF improves LLM
+[8:31.12] behavior using human preferences. The
+[8:33.84] steps include train base LLM, collect
+[8:36.72] human feedback, train reward model
+[8:39.44] optimized using reinforcement learning.
+[8:41.92] And let me tell you why it matters. It
+[8:44.40] makes responses safer and aligns model
+[8:47.44] with human expectations.
+[8:49.68] Now moving on to our next question. What
+[8:52.08] is prompt engineering? Prompt
+[8:54.24] engineering is the practice of designing
+[8:56.24] inputs to guide LLM outputs. And the
+[8:59.20] techniques include zeros short
+[9:00.96] prompting, few short prompting, chain of
+[9:03.76] thought prompting and role based
+[9:05.68] prompting. Moving on to next. What is
+[9:08.88] context window limitation? The context
+[9:11.92] window is the maximum number of tokens
+[9:14.40] an LLM can process at once. So the
+[9:17.44] limitations include an older models can
+[9:20.00] process 4K to 8K tokens whereas newer
+[9:23.20] models can process 128K plus tokens. It
+[9:26.96] also comes with the challenges where
+[9:28.96] long documents get truncated and memory
+[9:31.52] is not persistent and the solutions are
+[9:34.96] drag chunking and memory systems. Next,
+[9:39.12] what is hallucination in LLMs?
+[9:41.84] Halucination occurs when an LLM
+[9:44.24] generates incorrect fabricated and
+[9:46.80] nonverifiable information. And why it
+[9:49.84] happens because of probabilistic nature
+[9:52.64] and lack of real world grounding and the
+[9:55.68] mitigation strategies are rag prompt
+[9:58.48] constraints and verification layers.
+[10:01.68] Next, explain retrieval augmented
+[10:04.24] generation.
+[10:05.76] RA combines information retrieval with
+[10:08.40] text generation and the flow is simple.
+[10:11.44] RAG which stands for retrieval augmented
+[10:13.76] generation is a technique that improves
+[10:16.16] LLM responses by combining information
+[10:18.96] retrieval with text generation. So
+[10:21.76] instead of relying only on what the
+[10:23.60] model already knows, rack first fetches
+[10:26.32] relevant information from external
+[10:28.24] sources like documents, databases or
+[10:31.20] knowledge bases and then uses that
+[10:33.60] information to generate a more accurate
+[10:35.76] and upto-date answer. And here's how rag
+[10:38.80] works step by step. First a user ask a
+[10:42.24] question. Then the system retrieves
+[10:44.64] relevant documents related to the query.
+[10:47.04] And then the retrieved information is
+[10:49.04] added as a context to the prompt. And
+[10:51.60] finally the LLM generates a response
+[10:53.92] based on both the query and the
+[10:55.76] retrieved data. So this approach helps
+[10:58.56] reduce hallucinations, improves factual
+[11:01.44] accuracy and allows models to work with
+[11:04.32] private or realtime data. Because of
+[11:07.44] these benefits, RAG is widely used in
+[11:10.24] enterprise LLM applications such as
+[11:12.88] customer support chatbots, internal
+[11:15.12] knowledge assistance, document question
+[11:17.28] and answer systems, and AI search tools.
+[11:20.88] Next, what is fine-tuning versus low
+[11:24.00] rank adaption versus parameter efficient
+[11:27.12] fine-tuning? So, when adapting a large
+[11:29.92] language model for a specific task,
+[11:32.16] there are different training approaches.
+[11:34.40] The key differences is how many models
+[11:36.56] parameters are updated. In full
+[11:39.20] fine-tuning, all the models weights are
+[11:41.52] updated during training. What this means
+[11:44.00] is the entire model learns new patterns,
+[11:47.20] requires large data sets and very high
+[11:49.84] compute and memory usage. Limitations
+[11:52.48] include it is expensive, slow to train,
+[11:55.60] risk of overfitting and not practical
+[11:58.32] for very large LLMs. Next, L which
+[12:02.64] stands for low rank adaption is a
+[12:05.12] lightweight tuning method where the
+[12:07.28] original model weights are frozen and
+[12:10.00] only small low rank adapter layers are
+[12:12.64] trained and what happens internally is
+[12:15.20] instead of updating full weight
+[12:17.04] matrices, low rank adaption learns low
+[12:20.32] rank updates. This adapters are injected
+[12:23.36] into specific layers like attention
+[12:25.84] layers and the base model remains
+[12:28.08] unchanged. And next, parameter efficient
+[12:31.28] fine-tuning is an umbrella term for
+[12:34.08] techniques that fine-tune models by
+[12:36.08] training only a small number of
+[12:37.68] parameters. Examples of parameter
+[12:40.40] efficient fine-tuning methods are low
+[12:43.52] rank adaption, prefix tuning, adapter
+[12:46.72] tuning and prompt tuning. And the next
+[12:49.44] question is explain temperature, top K
+[12:52.32] and top P. These parameters control
+[12:55.28] randomness in LLM outputs. Here,
+[12:58.16] temperature controls how creative or
+[13:00.72] predictable the model's output is. The
+[13:03.36] low temperature means the model picks
+[13:05.36] the most likely words, giving
+[13:07.36] deterministic and factual answers,
+[13:10.32] whereas high temperature allows more
+[13:12.16] randomness, making responses creative
+[13:14.80] and diverse, but sometimes less
+[13:16.80] accurate. Next, top K limits the number
+[13:19.84] of word choices the model can pick from.
+[13:22.72] The model only considers the top K most
+[13:25.52] probable tokens at each step preventing
+[13:28.64] very unlikely or random words from being
+[13:31.36] selected. Top P selects words based on
+[13:34.72] probability mass. Instead of a fixed
+[13:37.52] number, the model chooses from the
+[13:39.76] smallest set of the tokens whose
+[13:41.76] combined probability is at least P,
+[13:44.32] making the output more natural and
+[13:46.32] adaptive. In short, I can say that
+[13:48.64] temperature controls creativity. Top
+[13:51.44] restricts choices and topy ensures
+[13:54.24] fluent high probability outputs. Next,
+[13:58.64] what are LLM agents? LLM agents are
+[14:02.40] systems where LLMs plan, reason, use
+[14:05.92] tools, and take actions. Examples
+[14:08.56] include AutoGPT, Crew AI, Langraph
+[14:12.48] agents, and agents go beyond text
+[14:14.88] generation. Now let's quickly cover some
+[14:17.44] of the frequently asked questions
+[14:19.12] interviewers like to ask. So the
+[14:21.52] question is can LLM think or reason?
+[14:24.80] LLMs do not truly think. They predict
+[14:27.36] tokens and simulate reasoning patterns.
+[14:30.24] However, techniques like chain of
+[14:32.24] thought improve reasoning quality.
+[14:34.96] Moving on to next question. Are LLM
+[14:37.76] trained on private data? Generally no.
+[14:40.88] Public LLMs are trained on a mix of
+[14:43.28] publicly available data, licensed data,
+[14:46.08] human created data, and they are not
+[14:48.40] trained on users private or confidential
+[14:50.88] data by default. In enterprise
+[14:53.28] environments, companies can fine-tune
+[14:55.68] models on private data or use rag to
+[14:58.88] securely connect private documents
+[15:00.80] without retraining the model. And
+[15:03.20] remember, the public models don't
+[15:05.28] automatically learn from private data.
+[15:07.68] Private data is used only in the
+[15:09.92] controlled enterprise setups. Next, what
+[15:13.28] are the limitations of LLMs? So, the
+[15:15.92] limitations include hallucinations,
+[15:18.40] bias, high compute cost and lack of real
+[15:21.76] understanding. Next, how do you evaluate
+[15:24.88] an LLM? So, it includes some of the
+[15:27.52] methods and the methods are human
+[15:29.36] evaluation,
+[15:30.88] blue or rouch task specific benchmarks
+[15:34.24] and LLM as a judge. Next, where are LLMs
+[15:38.24] used in real world applications? So,
+[15:40.88] LLMs are used in chat bots, search
+[15:43.76] engines, coding assistance, document
+[15:46.80] analysis, and customer support. Now, let
+[15:50.48] us move on to advanced and
+[15:52.24] scenario-based LLM interview questions.
+[15:55.04] And the question is, what is instruction
+[15:57.60] tuning and why is it important?
+[15:59.92] Instruction tuning is a fine-tuning
+[16:02.00] process when an LLM is trained on
+[16:04.32] instruction response pairs instead of
+[16:07.04] raw text. And why is it matter? Because
+[16:09.60] it helps the model follow user
+[16:12.08] instructions accurately and improves
+[16:14.56] usability in chatbased systems and
+[16:17.12] reduces irrelevant or generic outputs.
+[16:20.16] And the example is instead of just
+[16:22.40] predicting text, the model learns
+[16:24.80] summarize this document correct
+[16:27.20] structured summary. Instruction tuning
+[16:29.76] is a key reason modern chat models feel
+[16:32.80] more helpful and aligned. Next, what is
+[16:36.24] chain of thought prompting? Chain of
+[16:38.72] thought prompting encourages the model
+[16:40.64] to show intermediate reasoning steps
+[16:43.20] before producing a final answer. For
+[16:46.00] example, the prompt is a laptop cost
+[16:49.52] $1,000. It has a 10% discount and then a
+[16:53.12] 5% task is added. Explain step by step
+[16:56.48] and calculate the final price. So the
+[16:58.72] model response with chain of thought
+[17:00.80] would be original price equal to $1,000
+[17:04.24] 10% discount equal to $100 discounted
+[17:08.24] price is equal to $900
+[17:11.52] 5% task on $900 which is equal to $45
+[17:15.28] and the final price is $900 plus $45
+[17:19.44] which is equal to $945. So the model
+[17:22.64] breaks the problem into steps and the
+[17:25.20] benefits include it improves reasoning
+[17:27.60] accuracy, helps with math and logical
+[17:30.00] problems and makes output more
+[17:32.00] explainable. So the important note here
+[17:34.48] is LLN don't truly reason but 10 of
+[17:38.08] thought helps them simulate structured
+[17:40.08] reasoning patterns. Next, what is the
+[17:43.04] difference between base LLM and chat
+[17:45.36] models? So the base LLMs is trained on
+[17:48.32] only next token prediction not optimized
+[17:51.20] for conversations whereas chat models
+[17:53.92] are instruction tuned RHF aligned and
+[17:57.36] safer and more userfriendly for example
+[18:00.80] GPD based model versus charg so the
+[18:04.08] interviewers asked this to check if you
+[18:06.00] understand model alignment layers.
+[18:08.56] Moving on to next question. How do LLM
+[18:11.20] handle multilingual task? Elellins learn
+[18:14.32] multilingual capabilities by training on
+[18:16.64] diverse language data set and shared
+[18:19.04] semantic representations. And the
+[18:21.36] challenges include low resource
+[18:23.52] languages and translation ambiguity and
+[18:26.64] why it works because language shared
+[18:28.56] common structures allowing transfer
+[18:30.64] learning. Next, what is grounding in LLM
+[18:34.16] systems? Grounding means connecting LLM
+[18:37.20] responses to verifiable external data
+[18:39.84] sources. for example, databases, APIs
+[18:43.60] and search engines. And why grounding is
+[18:46.56] important? Because it reduces
+[18:48.32] hallucinations, increases trust and
+[18:51.28] essential for enterprise AI. RAM is the
+[18:54.72] most common grounding approach. So next
+[18:57.92] question is explain LLM latency and
+[19:00.48] optimization techniques. LLM latency is
+[19:03.68] the time taken to generate a response.
+[19:06.48] Optimization techniques include model
+[19:08.64] quantization, caching responses, using
+[19:12.08] smaller modules, and streaming outputs.
+[19:15.28] This question is common in production
+[19:17.28] focused interviews. Next, what is model
+[19:21.04] quantization?
+[19:22.64] Model quantization is a technique used
+[19:25.12] to reduce the size and computational
+[19:27.84] cost of an LLM by lowering the precision
+[19:31.04] of its weights. Instead of using high
+[19:33.84] precision numbers like FP32 which is
+[19:36.80] 32bit floating point the model weights
+[19:39.60] are converted to lower precision format
+[19:41.84] such as int8 or int4.
+[19:46.24] Why quantization is used. So the
+[19:48.88] benefits include faster inference less
+[19:52.08] computation and lower memory usage and
+[19:55.28] enables models to run on CPUs edge
+[19:58.72] devices and lowc cost GPUs. So the
+[20:02.16] simple example is think of it like
+[20:04.56] compressing a higher resolution image.
+[20:07.20] File size becomes smaller and loads
+[20:09.84] faster. Quality is slightly reduced but
+[20:12.88] still usable. And the next question is
+[20:15.60] how do you secure LLM based applications
+[20:18.88] security concerns include prompt
+[20:21.28] injection, data leakage and jailbreaks.
+[20:24.72] And the mitigation strategies are input
+[20:26.96] validation, rulebased prompts, output
+[20:29.68] filtering, and guardrails.
+[20:32.48] Next, what are guardrails in LLM
+[20:35.28] systems? Guardrails are rules and
+[20:38.40] constraints that control LLM behavior.
+[20:41.44] And the examples include content
+[20:43.76] moderation, output validation, and tool
+[20:46.48] use restrictions. Guard rails ensures
+[20:49.20] safety, compliance, and reliability.
+[20:52.56] Next, how would you design a enterprise
+[20:55.68] ready LLM application? So to design an
+[20:58.72] enterprise ready LLM application, the
+[21:00.88] key components include LLM API or
+[21:03.92] self-hosted model, rag layer, vector
+[21:07.52] database, prompt templates, monitoring
+[21:10.24] and evaluation, security, and
+[21:12.80] guardrails.
+[21:14.48] In LLM interviews, clarity matters more
+[21:17.04] than jargon. always explain why it is,
+[21:19.76] why it matters and how it's used in real
+[21:22.32] system. So master these 30 questions and
+[21:25.04] you will be prepared for LLM, generative
+[21:27.44] AI and AI engineer interviews across
+[21:30.08] startups and large enterprises. So that
+[21:32.96] was top 30 LLM interview questions with
+[21:35.60] detailed answers covering everything
+[21:37.76] from basics to advanced system design.
+[21:40.80] So if you found this video helpful,
+[21:43.12] please like, share and subscribe for
+[21:44.88] more content on generative AI LLM and AI
+[21:48.40] engineer interview preparations. So if
+[21:51.12] you enjoyed listening to this video,
+[21:53.04] please be kind enough to like it and you
+[21:55.36] can comment on any of your thoughts and
+[21:57.20] queries. We will reply to them at the
+[21:58.96] earliest. And do look out for more
+[22:01.04] videos and playlist and subscribe to
+[22:03.52] Edureka's YouTube channel to learn more.
+[22:06.08] Thank you for watching and happy
+[22:07.60] learning.

@@ -1,12 +1,10 @@
 """
 AdminService — core admin business logic (dashboard, users, sessions, audit).
 
-Rule CRUD, provider management, and NARM analytics have been extracted to:
+Rule CRUD, provider management, and NARM analytics live in:
 - admin_rule_service.py (AdminRuleService)
 - admin_provider_service.py (AdminProviderService)
 - narm_service.py (NarmService)
-
-This module re-exports those classes for backwards compatibility.
 """
 
 import logging
@@ -406,8 +404,9 @@ class AdminService:
                 )
                 stmt = stmt.where(AdminAuditLog.created_at <= end_dt)
 
-            # Cap at 10,000 to prevent OOM on large date ranges.
-            stmt = stmt.order_by(desc(AdminAuditLog.created_at)).limit(10_000)
+            # Cap at 1,000 to prevent OOM on large date ranges.
+            # Admin UI paginates, so this is a safety net, not the page size.
+            stmt = stmt.order_by(desc(AdminAuditLog.created_at)).limit(1_000)
             rows = db.execute(stmt).all()
 
             return [
@@ -457,30 +456,3 @@ class AdminService:
         db.flush()
         return log
 
-
-# Re-exports for backwards compatibility
-from app.services.admin_rule_service import AdminRuleService  # noqa: F401, E402
-from app.services.admin_provider_service import AdminProviderService  # noqa: F401, E402
-from app.services.narm_service import NarmService  # noqa: F401, E402
-
-# Proxy methods on AdminService for backwards compatibility with existing callers
-# (tests and other code that call AdminService.list_rules, etc.)
-AdminService.list_rules = staticmethod(AdminRuleService.list_rules)  # type: ignore[attr-defined]
-AdminService.get_active_rules_as_dicts = staticmethod(AdminRuleService.get_active_rules_as_dicts)  # type: ignore[attr-defined]
-AdminService.create_rule = staticmethod(AdminRuleService.create_rule)  # type: ignore[attr-defined]
-AdminService.update_rule = staticmethod(AdminRuleService.update_rule)  # type: ignore[attr-defined]
-AdminService.revert_rule = staticmethod(AdminRuleService.revert_rule)  # type: ignore[attr-defined]
-AdminService.delete_rule = staticmethod(AdminRuleService.delete_rule)  # type: ignore[attr-defined]
-AdminService.seed_rules = staticmethod(AdminRuleService.seed_rules)  # type: ignore[attr-defined]
-AdminService.preview_prompt = staticmethod(AdminRuleService.preview_prompt)  # type: ignore[attr-defined]
-AdminService.get_rule_history = staticmethod(AdminRuleService.get_rule_history)  # type: ignore[attr-defined]
-AdminService.list_providers = staticmethod(AdminProviderService.list_providers)  # type: ignore[attr-defined]
-AdminService.update_provider = staticmethod(AdminProviderService.update_provider)  # type: ignore[attr-defined]
-AdminService.set_primary_provider = staticmethod(AdminProviderService.set_primary_provider)  # type: ignore[attr-defined]
-AdminService.set_api_key = staticmethod(AdminProviderService.set_api_key)  # type: ignore[attr-defined]
-AdminService.trigger_narm_analysis = staticmethod(NarmService.trigger_narm_analysis)  # type: ignore[attr-defined]
-AdminService.get_narm_insights = staticmethod(NarmService.get_narm_insights)  # type: ignore[attr-defined]
-AdminService._aggregate_hook_selection_data = staticmethod(NarmService._aggregate_hook_selection_data)  # type: ignore[attr-defined]
-AdminService._aggregate_niche_data = staticmethod(NarmService._aggregate_niche_data)  # type: ignore[attr-defined]
-AdminService._aggregate_attention_scores = staticmethod(NarmService._aggregate_attention_scores)  # type: ignore[attr-defined]
-AdminService._build_narm_summary = staticmethod(NarmService._build_narm_summary)  # type: ignore[attr-defined]

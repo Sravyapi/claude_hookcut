@@ -1,0 +1,1483 @@
+[0:02.94] so let's continue with our binary search
+[0:04.74] failures but before that hey everyone
+[0:06.18] welcome back to the channel I hope you
+[0:07.44] guys are doing extremely well so the
+[0:09.00] problem that we're going to solve today
+[0:10.20] is minimizing the maximum distance to
+[0:13.80] gas stations now what does the problems
+[0:15.72] take the problem states that it will be
+[0:18.06] given an array which will be containing
+[0:20.10] n integers now these n integers will be
+[0:23.40] representing the coordinates of n gas
+[0:26.76] stations now over here n is 5 so the
+[0:30.78] first gas station is at the coordinate
+[0:32.88] one the second gas station is at the
+[0:35.16] coordinate two the third one is at three
+[0:36.84] the fourth one is at four and the fifth
+[0:38.40] one is at five now it is not necessary
+[0:41.04] that they will be in a consecutive order
+[0:44.40] like one two three four five they can be
+[0:46.62] something like 1 13 17 23 as well it is
+[0:50.22] not necessary like one two three four
+[0:52.20] five six seven eight it can be in
+[0:54.18] anything like one thirteen hundred
+[0:56.04] thousand it can be anything but the only
+[0:58.56] thing that is uh given to us is they
+[1:01.44] will be in
+[1:02.76] sorted order like all the coordinates
+[1:05.40] will be in sorted order so you're given
+[1:07.56] the coordinates of n different gas
+[1:09.72] stations now what is your task your task
+[1:11.88] is to place K new gas stations so in
+[1:14.82] this example you have to place four new
+[1:16.98] gas stations and in placing them what
+[1:19.32] you have to do is you have to minimize
+[1:21.42] the maximum distance between any two gas
+[1:24.66] stations now I can give you examples
+[1:26.34] imagine I say that I'll place four new
+[1:30.00] gas stations in this manner one two
+[1:32.82] three four five they'll stay as it is
+[1:35.58] and I'll end up placing them at six
+[1:37.74] seven eight nine now this is a way in
+[1:40.92] which I can place the gas stations like
+[1:43.68] the new four gas stations if I do that
+[1:45.96] what will be the difference between any
+[1:48.18] two consecutive gas stations it's one
+[1:50.40] it's one it's one one one one one one
+[1:53.40] one one one any two consecutive gas
+[1:56.58] stations has a maximum distance of one
+[1:58.92] can I say has a maximum distance of one
+[2:01.20] so if I go ahead and play sit like this
+[2:03.54] the answer will be one can I do
+[2:05.28] something different probably yes what if
+[2:07.50] I do something like this
+[2:08.94] I placed one like the one will be at one
+[2:12.06] and imagine I place it at 1.25 you can
+[2:15.12] place it at uh decimal coordinates as
+[2:18.18] well imagine I place one more at 1.5 one
+[2:21.54] more at 1.75 and then at 2 3 4 and then
+[2:26.22] another at 4.5 and another at five so
+[2:29.10] I've placed four new coordinates four
+[2:31.26] new gas stations one over here one over
+[2:33.12] here one over here and one over here and
+[2:35.40] the existing five you cannot change them
+[2:37.80] you can only determine the coordinates
+[2:40.02] of the four gas stations that you have
+[2:42.30] to place so if I place them the
+[2:45.00] difference is point to five point two
+[2:46.98] five point two five
+[2:51.98] 0.2511.5
+[2:53.78] what is the maximum among all the
+[2:57.18] maximum is one so the maximum is one the
+[3:01.32] answer will be one so you have to find
+[3:02.88] out the maximum distance so that will be
+[3:04.98] one okay so for this also the answer is
+[3:06.96] one can I do something different
+[3:08.28] probably yes what if I go ahead and say
+[3:10.62] one one point five to two point five
+[3:15.00] three three point five four four point
+[3:19.02] five and five now if I try to figure out
+[3:21.66] the difference between two consecutives
+[3:23.22] it's point five point five point five
+[3:26.40] point five point five point five point
+[3:29.76] five point five
+[3:31.14] each of the consecutives have a
+[3:33.60] difference of 0.5 so what is the maximum
+[3:35.82] the maximum is 0.5 can you do better you
+[3:40.08] can try out but you cannot do better
+[3:42.12] like I tried out over here by making
+[3:44.52] sure that the difference is 0.25 but
+[3:47.46] eventually the previous ones had a
+[3:50.16] difference of one so I have to make sure
+[3:51.78] that I have to place it in such a way
+[3:53.88] that any two if I pick up any two the
+[3:56.76] max distance has to be minimized has to
+[4:00.18] be minimized in this case it is 0.5 if I
+[4:03.42] place them in between of everyone the
+[4:06.12] max distance will be 0.5 and that's the
+[4:08.82] minimum I can do I cannot go anything
+[4:11.24] beneath 0.5 so what you have to return
+[4:13.86] is 0.5 yes that is what you have to
+[4:16.26] return so in questions where you have to
+[4:18.18] return answers which are in the decimal
+[4:20.04] formats they might be asking you to
+[4:21.72] return in a long double data type or a
+[4:25.68] double data type so these are the couple
+[4:27.54] of data types that they will be asking
+[4:29.46] you to return within like in the first
+[4:31.62] example you saw that the answer was 0.5
+[4:33.48] so you definitely cannot store it in an
+[4:35.88] integer you have to either store it in a
+[4:37.56] long double or a double in order to
+[4:39.54] return it or maybe a float as well so
+[4:42.30] 0.5 was very simple what if the answer
+[4:45.06] was something like
+[4:47.72] 0.67891256 7 such a big number now in
+[4:51.54] such cases what they do is they tell you
+[4:53.64] note answers within 10 to the power
+[4:57.30] minus 6. of the actual answer will be
+[5:01.08] accepted what does that mean let me
+[5:03.12] explain you so what happens in the
+[5:05.64] background whenever you submit a two so
+[5:07.56] what happens is there is a server right
+[5:09.66] most of us know that there's a server
+[5:14.04] some kind of talking in terms of design
+[5:17.16] now there's something as test cases
+[5:19.92] and there's something as your code
+[5:22.50] so there's something as your code and
+[5:24.72] then there's something as the problem
+[5:26.28] Setter score or the testers code can be
+[5:29.16] anything
+[5:30.78] so what happens is the Setters code is
+[5:34.62] already run against this particular test
+[5:37.26] case it is already run against this
+[5:39.72] particular test case and it already has
+[5:41.88] a output 2. imagine it is called as
+[5:44.52] output two so what
+[5:47.46] happens when you click the Run Button as
+[5:49.44] your code is sent to the server the test
+[5:52.92] cases are sent to the server and your
+[5:55.92] your code runs on the given test cases
+[5:58.26] and an output one is generated and an
+[6:01.38] output one is generated now this output
+[6:03.78] 2 and the output one is compared in the
+[6:08.04] output 1 and output 2 is equal they call
+[6:11.64] it as an accepted answer if
+[6:14.52] the code while running against the test
+[6:17.34] cases on the server ends up taking a lot
+[6:20.70] of time in that case they will be
+[6:23.10] returning something as time limit
+[6:24.84] exceeded like if on the server they
+[6:27.18] would have sent the server that one
+[6:28.98] second is your time limit and your code
+[6:31.14] is probably taking more than one second
+[6:32.82] while running those test cases it might
+[6:35.52] end up returning a time limit exceeded
+[6:38.76] and if it doesn't matches like if it is
+[6:41.88] not matching in that case it says as a
+[6:43.92] wrong answer now this is what happens on
+[6:45.54] the background and this one looks very
+[6:48.36] simple like okay you just need to
+[6:49.80] compare so whatever this is generating
+[6:51.42] whatever this is generating go ahead and
+[6:53.76] compare but imagine
+[6:55.92] in cases where you have to return
+[6:57.42] something like long double or a double
+[6:59.76] or a float and my program is probably
+[7:03.54] printing an answer something like point
+[7:05.10] six five four two one six sevens eight
+[7:08.46] one two four it's like a huge like a
+[7:11.52] long decimal extremely long decimal and
+[7:15.00] the settings code probably that I've
+[7:17.34] done some optimization probably and
+[7:19.86] they're also getting something like this
+[7:21.84] but maybe
+[7:23.76] something like this
+[7:25.32] and you're getting something Beyond this
+[7:27.54] again it can be an extremely long one
+[7:30.00] what will happen is if you end up
+[7:32.10] generating an extremely long one the
+[7:33.84] time taken will be huge and you'll end
+[7:36.30] up getting a tle because if you're going
+[7:38.34] to generate the exact answer in terms of
+[7:41.46] long double that might end up taking a
+[7:43.80] lot of time and you might get a time
+[7:45.90] limit exceeded so that is why the status
+[7:49.08] code will always do some optimizations
+[7:51.36] and what they will do is they'll
+[7:53.22] probably store answers let's say till
+[7:55.14] seven decimal places like seven decimal
+[7:58.56] places is what they will probably store
+[8:00.30] so this is what they would have stored
+[8:02.16] like four and four this is like eight
+[8:03.78] decimal places for an example now
+[8:06.12] imagine
+[8:07.38] you are returning something like this
+[8:09.54] like a huge long decimal then you will
+[8:11.82] get a tle this is the reason they
+[8:14.04] clearly tell you please just return up
+[8:17.64] till six decimal places do not go beyond
+[8:20.10] that do not spend more time in
+[8:22.02] calculating so what happens is
+[8:24.42] you will kind of stop till here because
+[8:28.02] that is six decimal places you will stop
+[8:30.42] till there and then what happens on the
+[8:33.48] background is they just check equal
+[8:36.60] equal equal equal
+[8:39.08] L6 decimal places is what they will
+[8:42.00] check they don't care what is after it
+[8:44.16] they don't care what is after it you can
+[8:46.14] send whatever you wish to after six
+[8:48.54] decimal places then do not care if the
+[8:50.70] first six decimal places are matching
+[8:52.74] that is it they will call it as an
+[8:55.08] accepted answer and that is the reason
+[8:57.20] why you'll always find this line
+[8:59.70] whenever the answer has to be returned
+[9:01.44] in a long double or a double or a float
+[9:03.60] format because they do not want your
+[9:05.52] code to run on the test cases forever
+[9:07.68] because when we talk about double the
+[9:10.02] answer can be extremely long and they
+[9:12.60] just don't want that much of time that
+[9:14.22] is the reason you will find this in most
+[9:15.90] of the problems so we need to think of a
+[9:18.30] solution but if I start thinking of a
+[9:20.22] solution by taking such a big example at
+[9:22.68] the first I think that will be an issue
+[9:24.42] so what I will do is I'll try to trim
+[9:26.58] down the example and if I trim down the
+[9:28.68] example and I take let's say two gas
+[9:31.08] stations one at one while the other one
+[9:34.08] at seven and I'm asking you to place two
+[9:36.36] more so what would be the optimal
+[9:38.46] strategy that you will use to place
+[9:40.02] these two gas stations into uh the
+[9:43.44] existing two such that you minimize the
+[9:47.04] maximum distance so probably one of the
+[9:50.28] strategies can be I'll say one and seven
+[9:52.50] are there and I will place them at eight
+[9:54.72] and nine so if I do that the distance
+[9:56.82] will be six it'll be one it will be one
+[9:59.16] and the consecutive and the maximum is
+[10:01.56] six so am I somehow reducing the maximum
+[10:04.62] distance between the existing gas
+[10:06.96] stations the answer is no so will it
+[10:09.72] make sense to place the new gas stations
+[10:13.32] outside the extremes like the left
+[10:17.04] extreme and the right extreme of the
+[10:19.14] given end gas stations it doesn't make
+[10:20.94] sense because if I place them outside
+[10:22.94] the distance between them will still be
+[10:26.40] the same so ideally placing anywhere to
+[10:31.08] the right or to the left doesn't make
+[10:33.60] sense where is the ideal scenario it's
+[10:36.48] pleasing in between because the distance
+[10:39.30] is 6 and I will reduce this 6 and reduce
+[10:41.94] the maximum so the optimal strategy will
+[10:44.94] be to place in between the given and gas
+[10:47.58] stations so that is something we have
+[10:49.26] figured out so you have one and we have
+[10:51.60] seven if I have to place it
+[10:53.88] and I say let's place it at 2 and 4.
+[10:56.40] because I have to place two new gas
+[10:58.14] stations and this is the distance this
+[11:00.66] is the distance and this is the distance
+[11:02.60] does it make sense we still have three
+[11:05.52] I'll be like no it doesn't make sense
+[11:07.20] because you still have three so what is
+[11:09.66] the ideal scenario if I give you like
+[11:11.76] two gas stations and you have something
+[11:13.80] like this I'll be like hey striver
+[11:16.86] I have one seven and I know I have to
+[11:19.38] place
+[11:20.28] two gas stations if I place two gas
+[11:22.74] stations this will be one consecutive
+[11:25.08] distance this will be another and this
+[11:27.30] will be another so there will be three
+[11:28.98] consecutive distance that I have to make
+[11:30.96] sure is minimized because if I just let
+[11:34.56] go one that will be like three is very
+[11:36.96] high three is very high I cannot let go
+[11:39.00] one because that one mine will be very
+[11:41.52] maximum and I want to minimize everyone
+[11:43.44] so
+[11:45.42] I'll have to minimize three consecutive
+[11:47.22] distances and how much is the three
+[11:49.56] distance it's six and I have to split it
+[11:52.86] into kind of three equal three equals so
+[11:56.40] that's like two two so if I just split
+[11:58.68] it into uh three equals of two and place
+[12:01.92] it at three and place it at five then
+[12:04.80] the distance will be two then the
+[12:06.54] distance will be due and then the
+[12:07.92] distance will be two does make sense so
+[12:10.74] what I have to do is if I've been given
+[12:12.30] two gas stations I will try to
+[12:15.60] place them
+[12:17.70] between them in equal sectors in equal
+[12:21.96] sectors of length two so that the max
+[12:26.10] distance is minimized and the answer is
+[12:28.68] two got this so this is the thought
+[12:31.68] process under which we will be solving
+[12:33.72] the entire problem
+[12:35.04] so let's now take this particular
+[12:36.36] example where we are given four gas
+[12:38.28] stations and we have to place five new
+[12:40.68] gas stations in between them we know one
+[12:42.90] thing for sure we cannot Place anything
+[12:44.34] to the right or anything to the left so
+[12:46.80] what we will do is we'll Place five
+[12:48.36] probably somewhere between this and this
+[12:50.76] so there are like three sectors three
+[12:53.52] sections where I have to place
+[12:55.98] can I say if I start thinking by taking
+[12:58.44] like all the five at at a time that will
+[13:01.14] be an issue so what I will do is let's
+[13:03.36] quickly start off with one so if I take
+[13:05.58] one where will you place I'll be like
+[13:08.28] hey stravo over here the distance is 12
+[13:12.00] over here the distance is 4 over here
+[13:14.94] the distance is 6 which is the maximum
+[13:17.46] 12 is the maximum so if I have to place
+[13:20.58] one I'll try to place somewhere in
+[13:23.40] between 1 and 13 so that this 12 is
+[13:26.64] reduced because ultimately I am trying
+[13:28.50] to minimize got it so what I'll do is
+[13:31.44] I'll try to place one between 1 and 30.
+[13:34.50] maybe I can store it where I'm placing
+[13:36.36] so what I'll do is I know there are
+[13:38.16] three sections one section two section
+[13:40.44] three section
+[13:41.58] so I'll see how many are placed in each
+[13:43.86] of this so this is the zeroth section
+[13:45.42] first section one sec second section
+[13:47.34] zeroth first and second so I'm saying
+[13:50.22] one is placed here perfect one is placed
+[13:54.36] over here
+[13:56.34] amazing
+[13:57.54] next
+[13:58.86] is the second one when the second gas
+[14:01.56] station is in picture so ideally ideally
+[14:04.68] if you have placed one where would where
+[14:07.38] would have you placed it you would have
+[14:09.06] placed it at 1 7 and 13 and then 1723
+[14:12.90] this is where you would have placed it
+[14:14.76] because the ultimate distance was 12 so
+[14:17.22] you'll keep a distance of 6 and keep a
+[14:18.90] distance of six this is where you'll
+[14:20.34] place it right so after placing one
+[14:23.22] let's look at the distance six six four
+[14:27.78] and six so apparently as of now after
+[14:30.96] placing one the maximum distance is six
+[14:33.90] so you're gonna kind of get rid of this
+[14:35.82] six you want to reduce it you know
+[14:37.68] reduce the six so maybe
+[14:40.08] I can place in either of these sectors
+[14:42.72] because I already have one at seven
+[14:44.64] second place either of this or either of
+[14:47.76] this so maybe let's go ahead and place
+[14:49.38] in between so go ahead and say one is
+[14:52.20] there placed now let's come up with the
+[14:55.08] third gas station so when these two are
+[14:57.66] placed hypothetically if you only have
+[15:00.42] to place two hypothetically you have to
+[15:02.46] only place two there will be like 1 7 13
+[15:06.18] 17 20 and 23 where 20 and 7 is the new
+[15:11.16] one and now the distance is six six four
+[15:14.10] three and three right and how did you
+[15:16.98] know that the distance is 3 is very easy
+[15:19.44] if you're placing one over here that
+[15:23.16] means it is broken down into two sectors
+[15:25.32] it is broken down into two sectors and
+[15:28.14] if it is broken down into two sectors
+[15:30.12] how much is the distance over here
+[15:32.46] because each of the sectors will be of
+[15:34.68] equal distance the it will be 23 minus
+[15:38.28] 17 by the number of sectors which is the
+[15:41.16] number of placed plus one this is X six
+[15:44.10] by two that's three the difference is
+[15:46.26] three very simple over here the same
+[15:48.48] thing 13 minus one by the number of
+[15:51.06] Place Plus One will be the sector 12 by
+[15:53.40] 2 is 6 6 and 6. so you know one thing
+[15:56.94] this is six this is six this is four
+[15:59.16] this is three and this is three so where
+[16:01.26] will you place the three you'll try to
+[16:02.94] reduce this six because the six is
+[16:04.68] creating an issue now let's think
+[16:08.04] if I say 113 and 7 is here this is 6 and
+[16:11.34] this is 6.
+[16:13.08] what will you do will you take this
+[16:15.60] third gas station and place it maybe
+[16:17.64] somewhere in between
+[16:19.98] will you do this will you do this will
+[16:22.86] you place it somewhere like poor or will
+[16:25.20] you place it somewhere like 10 doesn't
+[16:27.24] make sense because even if you place it
+[16:29.28] at four this will still be six and
+[16:32.46] realize the initial configuration had
+[16:35.10] 113 you are at Liberty to place the
+[16:38.46] first and the third gas station you can
+[16:40.20] do it do move you can move them anywhere
+[16:42.54] so ideally what I'll do is instead of
+[16:45.90] placing the first one at seven which I
+[16:48.30] did I'll try to take the entire distance
+[16:50.76] 12 and I know there was already one one
+[16:55.56] in between them I'll have one more in
+[16:57.84] between then so I'll have two more in
+[16:59.34] between them which means I'll have to
+[17:00.78] place two which divides it into three
+[17:02.88] equal sectors so 12 by 3 will be four so
+[17:06.24] now I'll place them at a distance of
+[17:08.10] four four got it so what I'll do is I'll
+[17:11.22] place them probably at one five nine so
+[17:13.98] this will be like four four and four so
+[17:17.16] what I've done is I placed one mole in
+[17:20.64] between 1 and 13 so the number increases
+[17:23.46] to two so the number increases to two so
+[17:25.98] tell me one thing if there are two
+[17:27.66] players in between one and thirteen what
+[17:29.82] will be every individual sector's length
+[17:32.22] it's one in thirteen the total is twelve
+[17:35.10] and if there are two placed that means
+[17:37.20] there are three sectors so it'll be like
+[17:39.18] four the individual length will be four
+[17:41.04] the individual consecutive differences
+[17:42.78] will be four got it
+[17:45.36] so the third one is also placed let's
+[17:47.70] talk about the fourth one so I know one
+[17:50.10] thing this has an individual length of
+[17:52.14] four this has an individual length of
+[17:54.66] four this has an individual length of 3
+[17:56.88] because 6 by 2 right so where will you
+[18:00.12] what will you try to minimize you try to
+[18:02.22] minimize four and four so maybe let's
+[18:04.50] take this four and place it here so what
+[18:06.72] I've done is I've placed it here so
+[18:08.58] there will be like two sectors of two
+[18:09.96] and two each and go at fifteen quite
+[18:12.36] obvious so the fourth one is placed time
+[18:14.88] for the fifth one time for the fifth one
+[18:16.74] so when I try to place fifth one what
+[18:18.54] happens is
+[18:19.80] I have 130
+[18:21.60] I won 13 there is already two there so
+[18:24.30] between 113 there's already two which is
+[18:26.82] at um five and nine
+[18:29.58] but I need to place one more so the
+[18:31.74] distance is four four how did you figure
+[18:34.26] it out difference twelve how many placed
+[18:37.50] two how many sections three so that's
+[18:40.80] like four over here so for this
+[18:44.64] the difference is 4 for this the
+[18:46.98] difference is 4
+[18:49.32] by
+[18:51.18] two sectors so two
+[18:54.30] over here the difference is three so
+[18:56.70] which is the highest the highest is here
+[18:58.68] so where will you place here because you
+[19:01.14] wanna reduce that highest length so
+[19:03.18] let's reduce
+[19:06.30] so can I see I'll place it here
+[19:10.02] done what I've done is I made sure I've
+[19:12.72] placed five of the new gas stations and
+[19:15.06] made sure that I've placed five of the
+[19:16.92] new gas stations once I've done that can
+[19:19.44] I figure out the
+[19:21.18] equal section length between this
+[19:23.34] between this between this yes let's do
+[19:26.16] it how many are there between this I'm
+[19:29.10] saying there are three placed between
+[19:31.08] this so it's like 1 and 13 there are
+[19:33.48] three placed so if there are three
+[19:35.52] placed
+[19:37.14] there'll be four sectors of equal length
+[19:39.66] the total this uh difference is twelve
+[19:43.08] four sectors means three so first one
+[19:45.66] will be placed at four then seven then
+[19:48.00] ten the distance will be three three
+[19:51.24] three perfect now you have 17 I'm saying
+[19:55.44] one is placed so one is place means two
+[19:58.14] sectors and it will be at fifteen so the
+[20:01.50] difference will be 2 2 how did you find
+[20:03.90] out 17 minus 13 by one place means two
+[20:08.52] sectors that means a difference of two
+[20:10.50] whereas the next 23 how many placed one
+[20:14.46] so if one you're placing that means two
+[20:16.32] sectors 23 minus Seventeen by two is
+[20:19.38] three so three three placed at twenty
+[20:22.26] what I've done is I made sure to figure
+[20:24.36] out what is the distance between each
+[20:26.70] consecutive and what is the max the max
+[20:29.46] that I can see is three how did you find
+[20:32.04] out the max you don't need to place them
+[20:33.96] you don't need to please them 13 minus 1
+[20:37.20] by 2 3 each sector is of 3 each sector
+[20:40.02] is of two each sector is of three so
+[20:42.24] three two three which is the max 3
+[20:44.34] that's your answer this is the Brute
+[20:46.20] Force might look tough but when I try to
+[20:48.90] write the code it's going to be super
+[20:50.16] simple don't worry about that so we need
+[20:52.08] to write the code you might think it's
+[20:53.64] going to be complex no it's not that
+[20:55.80] complex what are we keeping track of a
+[20:58.80] kind of keeping track of how many were
+[21:00.42] placed between them and we were trying
+[21:03.06] to place one by one so the first thing I
+[21:05.52] will do is I'll try to go one by one so
+[21:07.62] gas stations will start from 1 and will
+[21:09.78] go till K that's the first thing I'll do
+[21:12.24] quite simple what I've done is I've
+[21:14.04] basically gone from one to K now I have
+[21:16.20] to keep a track of how many have been
+[21:18.00] placed maybe again
+[21:19.80] take something in like a how many array
+[21:22.08] so tell me what would be the length of
+[21:23.88] this how many array so initially uh it's
+[21:26.76] like one two three the three sections
+[21:29.34] where you can put in the gas station so
+[21:30.96] they're like three and you know the
+[21:32.88] indexing will go by
+[21:34.38] zero beasts initially there are zero gas
+[21:37.14] stations at every consecutive existing
+[21:40.26] gas stations so what we need to do is we
+[21:42.54] need to figure out where will this first
+[21:44.04] gas station go where will it go I'll
+[21:46.62] figure out the distance figure out the
+[21:48.66] distance of every section if there are
+[21:51.24] any place you will divide it I'll try to
+[21:53.28] place it at the place wherever there is
+[21:55.92] maximum so maybe I'll have to keep a
+[21:58.26] track of which is the maximum value
+[22:01.32] and at the same time I'll also have to
+[22:03.90] keep a track of where is the maximum
+[22:06.54] value occurring like in this case it was
+[22:08.58] 12 and it was occurring at the zeroth it
+[22:11.64] is occurring at the zeroth section so
+[22:13.98] what I need to do is this is the first
+[22:15.96] section this is second is the third so
+[22:17.82] there are like three sections and
+[22:19.68] annuals four so I'll have to run a loop
+[22:22.62] from I equal to 0 till n minus 1 right
+[22:28.02] what is the difference what is the
+[22:30.48] initial difference if I have to ask you
+[22:32.40] the difference is very simple array of I
+[22:34.80] plus 1 minus array of I again the array
+[22:37.44] is sorted so it will be fine so
+[22:39.78] initially what happens is 13 minus 1 so
+[22:42.48] this will be 12 this will be 12 but
+[22:45.18] remember one thing if there was one gas
+[22:47.58] station already placed this is actually
+[22:49.74] six this is actually six so how do you
+[22:52.50] figure out you figure out how many are
+[22:54.24] there so basically
+[22:56.40] the sexual length will be
+[23:00.30] Difference by how many are placed
+[23:05.46] plus one because if there is one if
+[23:09.00] there is one placed it will be broken
+[23:11.10] down into two sections it will be broken
+[23:12.84] down into two sections so Difference by
+[23:15.00] how many plus one place that is the
+[23:17.70] section length of that that's the
+[23:19.26] section length of that currently I need
+[23:21.72] to figure out the maximum section length
+[23:24.06] if maximum is smaller than section
+[23:26.94] length what I'll do is I will say
+[23:30.18] maximum equal to
+[23:33.78] section length and I'll say Max index
+[23:37.94] equal to I quite simple once this for
+[23:42.30] Loop overs here NC rather once this for
+[23:45.72] Loop ends here what will happen is I
+[23:47.52] would have figured out where is the
+[23:49.50] maximum line and I will go ahead and
+[23:52.14] place that gas station at that Max index
+[23:55.98] I'll just do a plus plus so what will
+[23:58.14] happen is I'll go across and place it
+[24:00.36] there once I have done all the
+[24:02.64] placements once I've done all the
+[24:04.74] placements I have to go through everyone
+[24:06.54] and figure out what was the sections
+[24:09.42] individual length so that's the maximum
+[24:12.54] answer so the max answer will be -1 and
+[24:16.14] I can go across every section
+[24:17.52] individually so that's again n minus 1 I
+[24:20.46] plus plus 1 and I'll again do the same
+[24:22.98] process where I'll say the sectional
+[24:25.14] length is going to be
+[24:29.52] array of I plus 1 minus array of I
+[24:34.70] divided by how many were placed
+[24:38.88] plus one because that is going to be the
+[24:40.74] section length and if that exceeds my
+[24:44.34] answer so I can do a Max of Max answer
+[24:47.30] dot section length and at the end of the
+[24:50.22] day I can return this Max answer I can
+[24:52.14] return this Max answer quite simple and
+[24:55.44] if you do this you'll figure out each of
+[24:57.54] the individual sexual lengths and you
+[24:59.64] can easily return them
+[25:01.74] I know the presentation was not that
+[25:03.36] great on the iPad but no issues let's
+[25:05.10] quickly go back into the code editor
+[25:06.60] what I've done is I've written the exact
+[25:08.22] same code so that it's much more
+[25:09.78] readable initially go through all the
+[25:11.82] gas stations and I know initially
+[25:13.50] everything will be -1 make sure that you
+[25:15.90] define long double and then you find out
+[25:18.06] the initial differentiation like initial
+[25:19.98] difference and then you figure out what
+[25:21.48] is the length by dividing it by how many
+[25:24.06] were placed plus one and if it exceeds
+[25:26.52] you do this and right in the end of the
+[25:28.62] going through all these sections
+[25:30.60] basically you figure out wherever was
+[25:32.64] the max you just increase the counter
+[25:34.56] once this is done you go through every
+[25:36.96] section and you figure out what's the
+[25:38.52] individual section length and if you
+[25:40.62] figure out the max of it because that is
+[25:42.12] what you have to return make sure that
+[25:43.98] you do the typecasting properly
+[25:45.36] otherwise you'll be getting a wrong
+[25:46.80] answer so if I go ahead and submit this
+[25:48.60] this will be giving me a time limit
+[25:50.04] exceeded they will be giving you a time
+[25:51.66] limit exceeded why because you're
+[25:53.34] running a loop for K so that's like K
+[25:55.56] and then internally you're running a n
+[25:57.42] and then another end to figure out the
+[25:59.40] maximum so this K into n is kind of
+[26:02.28] quadratic in nature and this is the
+[26:04.38] reason why it will be giving you a time
+[26:06.48] limit exceeded so what we need to do is
+[26:08.40] we need to kind of optimize this K into
+[26:10.32] n so let's quickly come back to the
+[26:12.18] Brute Force solution so we did see that
+[26:14.34] this Loop is taking K and this Loop is
+[26:16.68] taking n and that is making it as a k
+[26:19.14] into n something that I cannot avoid as
+[26:22.20] of now is this one because my entire
+[26:24.66] logic depends on placing individual gas
+[26:26.76] stations now what is this Loop trying to
+[26:28.98] do
+[26:29.64] the slope is trying to figure out the
+[26:31.86] max length that is what it is trying to
+[26:34.32] do now can I probably try to optimize
+[26:37.26] this one and if I can optimize this one
+[26:40.08] my complexity can be reduced so this is
+[26:43.14] what I'll try to think of I'll try to
+[26:45.06] optimize the maximum finding mechanism
+[26:47.76] so let's quickly check if we can do that
+[26:49.68] or not so before we move on to improving
+[26:51.72] the time complexity let me quickly tell
+[26:53.76] you about a data structure priority
+[26:55.38] queue in case you have seen my C plus
+[26:57.00] plus still lecture you already know
+[26:58.56] about it and in case you haven't seen it
+[27:00.24] I'll just quickly give a recap so this
+[27:02.76] data structure is there on C plus plus
+[27:05.94] STL as well as on the Java Collections
+[27:08.28] so it's not a linear data structure
+[27:10.80] internally it is implemented using hem
+[27:13.20] data structure but I'm just writing it
+[27:14.88] on a linear fashion to explain you in a
+[27:17.64] much easier way so imagine this is a
+[27:19.68] priority queue and I ask you okay prior
+[27:21.90] to you dot push to prodigive dot push
+[27:26.28] three Prodigy dot push one
+[27:30.00] and if you do this and after that you
+[27:32.46] say pratigue.top so if you say dot Top
+[27:35.24] This push takes log the rhythmic of end
+[27:37.92] time complexity this takes logarithmic
+[27:39.72] of n this takes logarithmic effect so if
+[27:42.48] we say p q dot top what happens is you
+[27:45.18] have inserted three elements now the
+[27:47.34] priority queue always stores the maximum
+[27:50.40] and the stop maximum at the top it
+[27:52.98] stores in a tree fashion but that's a
+[27:54.78] completely different thing but as of now
+[27:56.40] remember if you say p q dot top it will
+[27:59.58] always give you three because three will
+[28:01.56] be at the Top If I have to explain it in
+[28:03.90] a linear fashion it'll be something like
+[28:05.58] three two one so if you say dot top it
+[28:08.40] will give you three and after that if
+[28:09.96] you say p q dot top again it will again
+[28:12.30] give you three because it will not be
+[28:13.98] removing it and if you after that say p
+[28:16.38] q dot pop what will happen is this three
+[28:18.60] will be gone this three will be gone
+[28:20.46] after that if you say p q dot top it'll
+[28:22.74] give you two so this is what the data
+[28:24.78] structure is
+[28:25.80] what do we need to do we're taking big
+[28:28.38] of n in order to find out the maximum we
+[28:31.50] need to optimize it obviously we don't
+[28:34.02] need to optimize it to n by two because
+[28:35.58] that's not a significant Improvement if
+[28:37.68] I have to talk about Improvement because
+[28:39.78] it is taking K into n and it was going
+[28:42.36] towards quadratic I need to be somewhere
+[28:44.76] in the range of K so that's going to be
+[28:47.04] like I have to reduce it to logarithmic
+[28:50.10] of n or B go of one obviously I cannot
+[28:53.22] find constant in like I cannot find
+[28:55.14] maximum in bigger fund so that's out of
+[28:57.12] question
+[28:58.32] can I do it in a logarithmic event
+[29:00.00] probably yes because I know a data
+[29:02.40] structure which always gives me the
+[29:04.44] maximum in like this PQ dot top takes a
+[29:08.52] big of one but the speaker dot push
+[29:10.50] takes a logarithmic event so kind of in
+[29:12.60] a logarithmic time it gives me the
+[29:15.54] maximum so I know a data structure which
+[29:18.66] gives me maximum logarithmic of it so
+[29:20.70] maybe I can try implementing it so we
+[29:23.52] know that we have a data structure which
+[29:24.84] gives us the maximum so we need to start
+[29:26.52] so what I will do is I will keep how
+[29:29.40] many
+[29:30.24] as we did in the first one and we know
+[29:33.00] that there are three sections 0 1 2 and
+[29:35.22] I'll keep zero zero zero because
+[29:36.86] initially I haven't placed any gas
+[29:39.54] stations
+[29:40.50] if I ask you what is the length of the
+[29:42.18] initial sections 12 for the zeroth
+[29:45.18] four for the first and six for the
+[29:47.94] second that's something which I know and
+[29:50.64] whenever I play is the first I always
+[29:52.50] think the 12th because that's the
+[29:54.06] maximum so what I'll do is I will take a
+[29:57.18] priority queue yes I will take up right
+[29:59.04] EQ and I'll say first section what is
+[30:01.74] your length he says 12 12 comma 0 go
+[30:03.78] into the Britain next section what is
+[30:05.88] your length 4 4 comma 1 go into the
+[30:08.58] priority one is the index of that
+[30:11.40] section
+[30:12.36] what is the next six comma 2 so what
+[30:15.06] I've done is in the priority view I'm
+[30:16.80] storing it in pairs and the pairs is
+[30:19.02] storing the length of the section and
+[30:21.30] the index of the section
+[30:22.86] done let's quickly now start our
+[30:25.26] algorithm
+[30:27.00] I say first
+[30:29.34] gas station where will you place it
+[30:30.96] you're like I have 12 F6 F4
+[30:33.78] I have to place it such that this 12
+[30:36.24] goes down I need to minimize so I'm like
+[30:38.82] okay every place there go ahead and
+[30:40.98] place it say like 12 comma 0 I have to
+[30:44.22] place it at 12 how many are there at 12
+[30:46.74] it's like 0
+[30:48.84] at zeroth index there's like zero placed
+[30:51.60] what is the difference 12 so what will
+[30:54.24] be the sexual length 12 by 1 12 by 1 and
+[30:58.26] that's 12.
+[30:59.46] so
+[31:00.66] I can place it
+[31:03.18] so I've got 12 comma 0 I can place it
+[31:05.58] there I'll go ahead and place it there
+[31:07.62] so placed it there so if I place it
+[31:09.96] there what is the length 12 a place to 1
+[31:13.26] which means it will be broken down into
+[31:15.18] two sections that means
+[31:17.94] now this 12 comma 0 will become 6 comma
+[31:20.76] zero the length of this one is now six
+[31:22.86] six six so what I'll do is I'll go ahead
+[31:25.74] and say 6 comma 0 I'll go ahead and say
+[31:28.86] six comma 0. remember one thing the
+[31:32.52] priority queue will store it like six
+[31:34.92] comma 2 will be at the first y because
+[31:37.26] if the first one is matching if the
+[31:39.48] first one is matching it differentiates
+[31:41.58] it on the second Factor so 6 comma 2
+[31:43.86] will be at the front the first gas
+[31:45.60] station is placed I'll go for the second
+[31:47.76] for the second I say six comma 2 is a
+[31:51.42] perfect choice and like 6 comma 2 is a
+[31:54.48] perfect choice what that means is on the
+[31:57.42] second section is where I'll Place go
+[31:59.46] ahead and place it on the second section
+[32:00.78] one incremented and if you increment one
+[32:04.08] previously the length was six you have
+[32:06.42] placed one so broken down into two it
+[32:08.94] will be of a length three so three comma
+[32:11.82] section 2.
+[32:13.80] perfect
+[32:14.82] let's do for the next which is the third
+[32:16.68] gas station for the third it's
+[32:19.14] six comma zero for short no doubt in
+[32:21.18] that
+[32:22.68] so I'm saying the zeroth section I'm
+[32:24.72] saying the zero section what is the
+[32:26.58] length of the zero section 12 how many
+[32:29.04] are placed how many are placed now
+[32:31.08] you're placing one more how many are
+[32:32.94] placed
+[32:34.02] twelve by three four
+[32:37.02] isn't it because you got this section
+[32:39.84] which is previously length six because
+[32:42.24] there was one now you are saying I am
+[32:44.34] placing one more so 12 by 3 that's 4 so
+[32:48.00] the new length will be four comma zero
+[32:50.88] perfect the new length will be four
+[32:53.10] comma zero so you are storing the
+[32:56.10] current length and the section and over
+[32:57.96] here it stores how many so which one
+[32:59.88] will be at the top obviously 4 comma 1
+[33:01.56] will be at the top because practical
+[33:02.94] stores that sales take 4 comma 1 and out
+[33:05.94] for the fourth we'll take four comma one
+[33:08.82] out and what will you do you will say
+[33:11.04] this will go here
+[33:13.38] and if it goes your house what's the
+[33:15.90] length four by two so it's two so please
+[33:18.12] like
+[33:18.96] two comma one the section is one so
+[33:21.00] that's placed perfect what's the next
+[33:23.22] the fifth for the fifth four comma zero
+[33:26.22] comes in so you say three and this
+[33:28.68] timeout happens this time what happens
+[33:30.18] yes the initial length is 12 how many
+[33:33.42] have you placed three four sections so
+[33:35.28] three so now you say three comma zero is
+[33:38.76] what goes inside the priority queue
+[33:41.22] by the way three comma two will be at
+[33:42.78] the top
+[33:44.70] done placed five you have placed five
+[33:48.18] and you know the zeroth section is of
+[33:49.86] three the first section is of two and
+[33:51.90] the second section is of three and you
+[33:53.94] need the maximum in the maximum value
+[33:56.28] because that's your answer you again
+[33:57.72] just call A P Q dot top you just call A
+[33:59.88] P Q dot top and you get three comma two
+[34:02.28] you get three comma two so the second
+[34:04.56] section so the second section has a
+[34:06.60] value three and that's the answer the
+[34:09.12] first section also has a value three but
+[34:10.62] you just see the one value so 3 is the
+[34:13.14] answer and that is what you will return
+[34:14.76] quite simple so I hope you have
+[34:16.50] understood the optimized solution now
+[34:18.12] the point to note over here is whenever
+[34:20.52] you take something out so initially you
+[34:22.02] took 12 comma 0 this is the main one x0
+[34:26.52] the section index is the main one
+[34:28.44] because this is where you place and on
+[34:31.38] the placement the new section length is
+[34:34.38] defined and that is what you insert
+[34:36.00] anyways I'll quickly show you in the
+[34:37.68] code editor because I don't want to
+[34:38.88] write on the iPad it's going to be super
+[34:40.44] messy so let's quickly go back into the
+[34:42.78] code editor what I'll do is I'll quickly
+[34:44.34] have the practical
+[34:45.66] and that will be pair of long double and
+[34:49.92] end make sure it's a long double
+[34:51.60] otherwise you'll be having an issue and
+[34:53.76] I'll quickly remove this
+[34:55.80] I'll remove this as well and I will be
+[34:58.50] returning PQ dot top because the top DOT
+[35:01.86] first is what will be
+[35:04.98] my maximum but before that what do we
+[35:07.62] need to do initially in the project you
+[35:09.48] I'll have to insert all the sections so
+[35:12.78] let's quickly insert all the sections
+[35:14.22] it's going to be PQ dot push
+[35:16.92] and uh it'll be like array of I plus 1
+[35:21.14] minus array of I comma I done so what
+[35:25.74] I've done is I've made sure that the
+[35:27.36] priority queue already contains the
+[35:28.92] sexual length and the index and how many
+[35:31.38] is already assigned as zero over here
+[35:33.54] what I will do is I know one thing
+[35:36.48] and I can write as Auto and the top
+[35:39.84] element that I will get is PQ dot top so
+[35:42.24] once I've got the top element make sure
+[35:43.92] you pop it out as well otherwise it will
+[35:45.60] stain the product queue after that you
+[35:47.94] just need the section index so maybe you
+[35:50.04] can write section index TP dot second
+[35:53.22] do you need the length the length is of
+[35:55.26] no use I go to how many and I say at
+[35:58.44] this section index we have the maximum
+[36:00.48] so please go ahead and increase it so
+[36:02.58] what I've done is I've taken this
+[36:03.66] particular gas station and I've made
+[36:05.40] sure that it is under this section index
+[36:08.04] now what I can say is what is the
+[36:10.32] initial yes what is the initial
+[36:12.00] difference
+[36:13.02] the initial difference is nothing but
+[36:15.66] array of wherever the section index is
+[36:19.50] right that is what
+[36:22.86] this will be the initial difference what
+[36:25.32] will be the new
+[36:27.36] new section lens maybe again again take
+[36:29.94] long double and I can say news section
+[36:32.54] length and that will be initial
+[36:35.58] Difference by long double again please
+[36:38.64] make sure you don't do any type casting
+[36:40.92] errors otherwise it will be an issue
+[36:42.36] long double of how many of section index
+[36:47.18] plus one that is what will be the new
+[36:50.22] section length once you've done this you
+[36:52.80] can go to uh priority key and say this
+[36:55.74] is your new section length comma your
+[36:59.76] section index because that's what will
+[37:01.80] be the section index once you have done
+[37:03.96] this you can simply go ahead and return
+[37:05.78] pq.first and that will be running so if
+[37:08.04] I quickly go ahead and run this off I
+[37:10.08] think this will be running fine
+[37:11.82] it does I'll quickly go ahead and submit
+[37:14.64] this as well what is the time complexity
+[37:17.16] it's a big O of n login because strategy
+[37:20.04] dot push text login it's a k
+[37:22.92] Plus
+[37:24.36] uh a push login so it's an N login plus
+[37:28.26] K login solution and thereby it is
+[37:30.66] accepted because you have omitted the
+[37:33.18] quadratic stuff so if I go into depth
+[37:35.40] now and if I write down the time
+[37:36.72] complexity
+[37:38.22] that's an N log n
+[37:42.00] Plus
+[37:43.44] K login again it's it's like n minus 1
+[37:46.68] but I've written it as n login
+[37:48.54] what is the space complexity how many am
+[37:51.60] I keeping in the project you every time
+[37:52.98] n minus 1 because if I have like uh for
+[37:57.54] gas stations I'm keeping always three
+[37:59.94] sections that's like an N minus one so
+[38:02.64] this is the time complexity and the
+[38:04.14] space complexity of the better solution
+[38:06.84] not the most optimal solution now in an
+[38:09.60] interview if I was the interviewer I'll
+[38:11.34] be happy with it I am done with this if
+[38:13.86] you are giving me the solution but a lot
+[38:15.36] of interviews might not be happy and
+[38:17.70] they might be asking you to reduce the
+[38:20.46] space complexity and this is where the
+[38:23.16] optimal solution comes in so time for
+[38:25.44] the optimal solution the question is
+[38:27.24] asking you to minimize the max distance
+[38:29.88] between any two consecutive gas stations
+[38:32.82] Whenever there is something like minimum
+[38:35.10] and maximum I think we have done a lot
+[38:36.66] of problems for you to understand that
+[38:38.70] this is something which can be solved
+[38:41.52] using binary search because we're trying
+[38:43.68] to minimize something which is the
+[38:46.38] maximum so we can apply binary search
+[38:48.42] and we have done similar problems
+[38:50.04] previously but in this problem the
+[38:52.14] catches the answer is in Long double so
+[38:55.62] we definitely can not do something ah
+[38:59.40] the generic binary search has something
+[39:01.50] like while low lesser than equal to high
+[39:04.44] and this is okay if it is an integer
+[39:07.74] and we also have something like low
+[39:10.08] equal to Mid plus 1
+[39:12.54] plus 1 and high equal to Mid minus 1.
+[39:17.64] now the generic binary search operates
+[39:20.40] in this pattern where we have done all
+[39:22.80] the problems yes we have done all the
+[39:24.42] problems till now where we had just
+[39:26.22] taken low lesser than equal to I nothing
+[39:28.02] like lesser high or equal to equal to no
+[39:30.18] all the problems you have done with this
+[39:32.22] and every problem we have taken mid plus
+[39:34.44] 1 and mid minus one none of the problems
+[39:37.08] have taken made or made minus one
+[39:38.76] nothing
+[39:39.78] all of the problems have solved using
+[39:41.64] this particular pattern but over here
+[39:43.62] the answer is in Long double so all of
+[39:47.70] the pattern will like each of the
+[39:49.74] statements will not work this will not
+[39:51.12] work this will not work this will not
+[39:52.56] work why plus one is definitely not
+[39:54.90] going to work because you're kind of
+[39:56.58] missing out on a lot of things so what
+[39:59.34] will you do will you do like plus 0.1
+[40:01.62] will you do like plus 0.0001 will you do
+[40:04.68] like plus 0.0 something like this no you
+[40:07.50] can't do something like that because you
+[40:09.00] have to find a proper answer
+[40:11.10] even if you do this you also might have
+[40:13.68] end up missing a lot of things because
+[40:15.48] if you do this
+[40:17.22] that might end up taking a lot of time
+[40:19.50] as I explained in the initial part of
+[40:21.48] the videos because your answer might be
+[40:23.16] five six seven one two a long long
+[40:26.16] double and it might end up rotate like
+[40:28.86] running for millions and millions of
+[40:31.26] times because it might be meeting at
+[40:33.42] some like 89th decimal place to do that
+[40:36.66] it will look for millions of operations
+[40:39.18] so you cannot write something like this
+[40:41.28] so the pattern slightly changes yes the
+[40:44.34] pattern slightly changes all the double
+[40:47.40] or long double binary search problems
+[40:49.56] will always have a pattern like what
+[40:51.54] happens is instead of comparing High
+[40:53.82] lesser than like low less than equal to
+[40:56.16] high or doing something like this you
+[40:58.32] look at the problem statement the
+[40:59.64] problem statement was asking you to make
+[41:02.10] sure that the answer is matching
+[41:03.80] somewhere around 10 to the power like it
+[41:06.48] should match till six decimal places so
+[41:09.12] what you will do is you will say high
+[41:12.18] minus slope
+[41:14.16] if the differentiation like between them
+[41:17.94] is exceeding this 10 to the power minus
+[41:21.30] six
+[41:22.08] if they are differentiated add somewhere
+[41:26.16] beyond six decimal places I'm okay I'm
+[41:28.98] okay if my low and high are standing
+[41:31.76] with first six decimal places matching
+[41:34.56] I'm done understood so this is what will
+[41:37.68] happen to the condition and instead of
+[41:40.80] doing low equal to Mid plus 1 you will
+[41:43.14] always do low equal to Mid and you'll
+[41:45.36] always do high equal to Mid
+[41:47.94] you will not be reducing it and this
+[41:50.70] will make sure that if you start like in
+[41:53.34] this example you had one and five if
+[41:55.38] your low is standing at one and your
+[41:58.32] high is standing at five it will make
+[42:01.86] sure right at the end the low and high
+[42:03.96] are standing in the correct place like I
+[42:05.64] just took an example so in all the like
+[42:09.06] usually you will not find them in
+[42:10.56] interviews I'm just teaching you just in
+[42:12.90] case uh they ask you this is a very rare
+[42:16.26] problem in an interview you might not
+[42:17.46] find it remember the pattern high minus
+[42:19.56] low
+[42:20.34] greater than 10 to the power minus 6 if
+[42:22.92] they are asking you seven decimal it
+[42:24.36] will be minus seven and the low will be
+[42:26.04] mid and high will limit now let's come
+[42:27.78] back to solving the problem we know how
+[42:29.82] to solve many such double problems as of
+[42:31.98] now
+[42:32.88] what was I doing in all the other binary
+[42:35.10] search problems I was kind of writing a
+[42:37.92] while loop
+[42:39.54] and then as doing some check using some
+[42:42.60] check functions and using the check
+[42:45.48] function I was determining whether low
+[42:48.18] will go to Mid plus one or maybe our
+[42:50.58] high will go to Mid minus one this is
+[42:53.46] what I was doing right
+[42:55.62] this is what most of the binary search
+[42:58.50] problems I did I tried to figure out
+[43:00.72] this check function and on the basis of
+[43:03.54] that I either eliminated the left half
+[43:05.70] or I either eliminated the right that is
+[43:08.10] what I did now the difference
+[43:10.38] the different thing that I'm doing over
+[43:12.36] here is mid plus 1 goes and minus one
+[43:14.28] goes but I have to figure out on what
+[43:16.98] will I check on what will I check so
+[43:19.56] throughout the binary search we always
+[43:21.66] checked on answers we always checked on
+[43:24.12] answers the same thing we'll do over
+[43:25.86] here
+[43:26.88] so we need to apply binary search so if
+[43:28.98] you remember in all our existing binary
+[43:30.60] search problems the first thing we
+[43:31.92] figured out is the range in which the
+[43:34.26] answer can lie so can I say
+[43:36.96] the answer can lie
+[43:39.12] between 0 to somewhere why am I saying
+[43:42.54] zero imagine I'm giving you a test case
+[43:44.64] where all the N gas stations are at the
+[43:47.82] coordinate one there are four gas
+[43:49.56] stations on there at the coordinate one
+[43:51.30] and I'm asking you to place four more
+[43:53.04] you'll again go and place it at one
+[43:55.50] I haven't said that you cannot place it
+[43:57.30] at the same coordinates you can so
+[43:59.52] ideally the distance between any two
+[44:01.74] will be zero right so the answer can be
+[44:07.14] somewhere from one okay
+[44:09.42] and where can the answer be tell the
+[44:12.72] answer can be till
+[44:14.04] I can place it outside but will it make
+[44:16.50] sense no what am I looking to optimize
+[44:18.54] I'm looking to optimize the max distance
+[44:22.98] already being there I need to reduce it
+[44:25.38] it cannot be beyond that it cannot be
+[44:27.48] beyond that so if you remember with this
+[44:29.16] example as well where is the example but
+[44:31.50] this example as well there's 12 4 6 the
+[44:34.86] answer cannot be Beyond 12 right it
+[44:37.08] cannot be 13. like if you if you decide
+[44:39.66] to place it at 100 it can be but why
+[44:41.64] will you you're looking to minimize so
+[44:44.04] it can be somewhere under 12 if you try
+[44:47.10] doing it properly so what I can say is
+[44:49.56] I'd rather look for all the maximums and
+[44:52.56] the maximum that I find is like all the
+[44:54.36] consecutive difference and the maximum
+[44:55.68] that I find is one so it'll be like from
+[44:57.90] zero to one I know one thing for sure is
+[44:59.82] the answer is going to be between 0 and
+[45:01.98] 1. now my question comes how do I check
+[45:05.06] and and all the problems what I did was
+[45:07.86] I started from 0
+[45:09.48] that I went to one then I went to two I
+[45:11.94] did a linear search and over here it's
+[45:14.64] like 10 to the power -6 so if I have to
+[45:16.68] do a linear search I'll have to do it
+[45:18.54] something like this
+[45:20.34] fall
+[45:22.20] like maybe the distances zero
+[45:26.46] that is again everything will be in Long
+[45:28.20] double one and the distance plus equal
+[45:31.20] to 10 to the power minus six every time
+[45:33.60] I just increase it by 10 to the power
+[45:35.22] minus 6 minus 6 minus 6 minus 6 I keep
+[45:37.56] on checking got it so I know that the
+[45:40.08] answer lies between 0 and 1 but over
+[45:42.30] here if I have to do a linear search
+[45:43.86] I'll have to write it something like 4
+[45:45.66] distance equal to 0 I go until 1 and
+[45:49.38] every time I cannot do plus plus I have
+[45:51.90] to increase it by plus 10 to the power
+[45:53.22] minus 6 because it's a long decimal
+[45:55.68] thing so for the Dual linear says that
+[45:57.12] will go like zero next one will be 0.000
+[46:00.42] something and it'll be x 0.0002 black
+[46:04.16] 0.0003 it'll be like 0.0004 and so on
+[46:08.10] and I'll have to go by increasing it at
+[46:10.44] the sixth decimal place got it we cannot
+[46:12.96] go like zero and then one and then two
+[46:14.94] because it's a matter of double so first
+[46:17.64] I have to check for 0 and then I have to
+[46:19.50] check for 0.0001 but in order to
+[46:22.08] understand what I'll do is I'll I'll
+[46:23.88] just check for 0.1 0.20 0.3 0.4 0.5 0.6
+[46:29.52] 0.7 and so on till one just to
+[46:32.40] understand so tell me one thing
+[46:34.80] if I keep a distance of 0 how many gas
+[46:38.58] stations will I be able to place
+[46:41.28] let's see so if I try to keep a distance
+[46:43.50] of 0
+[46:44.76] I'll have to place infinite gas stations
+[46:47.34] in order to make sure the distance
+[46:49.80] doesn't exceed zero why because I'll
+[46:53.64] have to play some something at 1 1 1 1 1
+[46:56.70] and I cannot go beyond this it's not
+[46:59.04] possible it's not possible because
+[47:02.04] if I just do 1.1 as well the distance
+[47:04.20] becomes 0.1 the difference like if I try
+[47:07.44] to place one gas station at one and
+[47:09.06] another at 1.1 the distance still
+[47:11.46] becomes a difference of 0.1 and I want
+[47:13.92] to keep my answer as zero I want to keep
+[47:15.54] my answer as zero so what I see is it's
+[47:17.88] not possible it's not possible by just
+[47:19.98] placing four gas station I mean
+[47:22.68] I cannot actually I cannot so not
+[47:24.72] possible okay
+[47:26.58] so I'm like it's not possible
+[47:29.94] to place
+[47:31.62] four gas stations or to keep a distance
+[47:34.56] of zero simple as that so this is not
+[47:36.72] possible let's see if 0.1 is possible if
+[47:39.54] I try to keep a distance of 0.1
+[47:42.36] can I place it at 0.5 I cannot place it
+[47:44.94] at 0.55 because if I place it at Point
+[47:47.22] 1.5 the distance will be 0.5 already and
+[47:50.40] I want to keep a distance of 0.1 I wanna
+[47:52.50] keep a distance of 0.1 so I'm like
+[47:55.32] knowledge we we can't do that we can't
+[47:57.90] do that so I'm like okay where can I
+[48:00.66] please I'm like I can straight away
+[48:03.60] place at 1.1 nothing beyond that because
+[48:06.12] the moment I place it at 1.2 as well the
+[48:08.58] difference will be 0.2 and that will be
+[48:10.20] my answer because I'm looking for Max
+[48:11.88] but I want to make sure that the answer
+[48:13.80] doesn't Cross Point over so 1.2 is not
+[48:16.74] possible 1.2 then 1.3 I have to place
+[48:19.62] then I have to place 1.4 then I have to
+[48:21.24] place 1.5 so I'm taking a lot of gas
+[48:23.22] stations I don't have that many I don't
+[48:24.78] have that many
+[48:25.80] so I cannot keep an answer of 0.1
+[48:27.72] because in order to keep an answer 0.1 I
+[48:29.70] need a lot more gas stations and I all I
+[48:32.70] only have four gas stations so not
+[48:34.38] possible point two for the same reason
+[48:37.08] not possible 0.3 for the same reason not
+[48:40.20] possible 0.4 for the same reason not
+[48:42.54] possible because you have to keep like
+[48:43.68] 1.4 and then maybe at 1.8 you'll Place
+[48:46.68] one and then you have to go maybe the
+[48:49.80] next will be 2.4 and then two point you
+[48:51.48] have to go so at the end it's like 2.8
+[48:54.24] and then 3.4 3.8 so you're already
+[48:57.18] Crossing because the difference you see
+[48:59.34] point four point four point two
+[49:01.68] you in order to keep a 0.4 distance you
+[49:03.96] need way more than four gas stations so
+[49:06.60] 0.4 is also not possible I hope you're
+[49:08.76] understanding why 0.4 is not possible
+[49:10.50] because I cannot go and place it at 0.5
+[49:12.90] the distance will be 0.5 I want to keep
+[49:15.12] our distance of 0.4 at maximum not more
+[49:19.08] than that so 1.4 1.8 I need two here two
+[49:22.86] here two here so it'll be more than four
+[49:24.78] gas stations so not possible
+[49:27.48] 0.5 if I keep a distance of 0.5 it's
+[49:30.96] going to be point point point
+[49:33.86] and I'm seeing if I keep a distance of
+[49:36.48] 0.5 I'm exactly requiring four gas
+[49:39.48] stations I'm exactly requiring four gas
+[49:41.94] stations so it's possible it's possible
+[49:44.70] and if it is possible
+[49:46.86] what am I looking for I'm looking for a
+[49:49.20] minimal manager I'm looking for a
+[49:51.06] minimum answer so what you can do is you
+[49:54.72] can eliminate the right half and
+[49:57.06] probably look on the left side point
+[50:00.00] four is eliminated but there will be
+[50:03.86] 0.4444.45 something got it now and what
+[50:06.60] I'm meaning to say so since it is long
+[50:08.52] distillable look in the left portion so
+[50:10.62] I'll probably go at the left hand look
+[50:12.48] so again if you take 0.6 also it's still
+[50:16.50] going to be possible if you point six
+[50:18.42] point six point six is also possible
+[50:20.22] you're keeping a distance of 0.6.4 like
+[50:23.70] this is still 0.6 it's not Beyond point
+[50:26.70] six
+[50:27.66] if even if you take 0.6 you can still do
+[50:30.30] it in a four even if you take anything
+[50:32.34] more than 0.6 you can still do it in
+[50:34.02] four or lesser so that is why anything
+[50:35.94] on the right anything on the right if
+[50:39.48] the distance is large I am able to do it
+[50:42.06] in lesser number of gas stations that is
+[50:44.22] okay
+[50:45.06] but if I'm requiring a lot of gas
+[50:47.40] stations remember carrying a lot of gas
+[50:49.02] stations that's not I don't have that
+[50:51.12] Liberty so something I know for sure is
+[50:54.84] if I'm requiring
+[50:56.52] the number of gas stations
+[50:59.28] required is greater than K that's not
+[51:01.74] possible I need to increase the distance
+[51:03.72] I need to increase the distance so what
+[51:06.18] I'll do is I'll eliminate the laptop and
+[51:07.98] I'll go there
+[51:09.18] and if it is the other way if it is
+[51:11.22] lesser that means that answer is I'll
+[51:13.80] have to just go to the left because even
+[51:16.38] with 0.7.8 it's possible I need to go on
+[51:19.50] this one so you go high equal to Mid
+[51:21.36] that's what you do in Bank research got
+[51:23.34] it so how do you figure out how many gas
+[51:25.80] stations you actually need so let me
+[51:27.84] take an example if I had something like
+[51:30.26] 0.4 if I had 0.4
+[51:33.30] it was like as placing one and then 1.4
+[51:36.12] and then 1.8 and then two so I was able
+[51:38.94] to play this two gas stations and then
+[51:41.52] it was like 2.4 2.8 how did I figure out
+[51:44.58] that I was able to place two gas
+[51:46.44] stations between this between this
+[51:47.94] between this between this it's very
+[51:49.80] simple you say 2 minus 1 that's 2 minus
+[51:52.98] 1 by 0.4 you get something like two
+[51:56.04] point something but you don't take the
+[51:57.66] decimal party just six two just say two
+[51:59.88] because I can take two got it so now you
+[52:03.06] might have a question striver it was
+[52:05.04] easy for 0.5 because you did like two
+[52:07.56] minus one the difference is one and he
+[52:10.02] said there can be two placed as like
+[52:11.88] point four point four and for one I'll
+[52:14.34] kind of reduce it because I want to
+[52:15.84] maintain an answer of point four which
+[52:17.40] is okay but for point five swivel like
+[52:20.16] this was like two elements placed 0.5
+[52:23.34] and another distance is one and I say
+[52:26.28] one by point five so saying we can place
+[52:29.28] two that is strong because if I go one I
+[52:32.28] can only place like one by a distance of
+[52:35.10] 0.5 and it will go to two I cannot place
+[52:38.04] two that is wrong the absolute division
+[52:40.32] will be wrong this is where you will do
+[52:42.60] if one like the the difference of the
+[52:45.42] section is properly divisible by the
+[52:49.74] number that you're looking for that
+[52:51.18] means you can place one lesser that
+[52:53.16] means you can place one lesser in this
+[52:54.90] case it is okay because
+[52:56.88] 2 minus 1 was 1 1 by 0.4 was something
+[53:00.84] like two point something so that point
+[53:02.82] went 10 over here so that was okay but
+[53:04.80] this is like properly divisible so it's
+[53:06.54] not possible got it so this is where you
+[53:08.88] have to be careful so I hope you have
+[53:10.80] understood everything I did not do a lot
+[53:12.42] of dragons because it contains long
+[53:14.58] double and to do a dry run on double
+[53:16.68] values it's it's very very tough trust
+[53:19.50] me on that so I'm assuming that you have
+[53:22.02] been watching the entire penis so you
+[53:23.82] can easily catch up with it so let's
+[53:25.98] quickly write down the binary search
+[53:28.08] code so the low will be zero and the
+[53:30.30] high will be the maximum of consecutive
+[53:32.82] differences so you can easily find it
+[53:34.32] out and what you can do is high minus
+[53:37.86] slope will be greater than the six
+[53:40.92] decimal places that is what you write
+[53:42.50] and make sure everything is in Long
+[53:44.88] double otherwise
+[53:46.50] you will be having an issue
+[53:48.54] perfect done what is the next thing
+[53:51.00] figure out the count of gas stations
+[53:54.36] required to maintain this mid distance
+[53:57.12] to maintain this mid distance just
+[53:59.22] figure that out
+[54:00.96] and that can be called as count and
+[54:03.78] remember if this count is greater than
+[54:06.98] the number given to you what does that
+[54:10.14] mean that means it's not possible if it
+[54:12.48] exceeds that it's not possible and if
+[54:15.12] it's not possible you've got to increase
+[54:17.40] the distance because this distance is
+[54:19.38] not possible it's just too low for that
+[54:22.68] you need a bunch of gas stations
+[54:24.30] otherwise it's possible and maybe we
+[54:27.00] need to
+[54:29.70] eliminate the write half and look for a
+[54:31.68] smaller value so you eliminate because
+[54:33.30] you have to minimize eliminate the right
+[54:34.98] half
+[54:35.82] remember one thing the last possible one
+[54:39.66] was when high was mid
+[54:41.94] when I was this so maybe you can store
+[54:44.58] answer equal to high
+[54:46.50] something like this and at the end you
+[54:48.18] can return the answer or hi answer or
+[54:50.46] high
+[54:52.38] over here the concept of opposite
+[54:54.48] polarity will not work that I've been
+[54:56.10] teaching you because this is not mid
+[54:58.20] minus 1 or mid plus one last one was
+[55:01.02] high equal to Mid
+[55:02.40] when it was possible so high is probably
+[55:05.04] storing the last answer so that's why
+[55:07.44] you return higher you can also return
+[55:09.12] answer that is your chest this is how it
+[55:11.76] will look like what about count of gas
+[55:13.44] stations I don't want to write it here
+[55:15.36] because it doesn't matter the C plus
+[55:17.04] plus or Java the code is going to be
+[55:18.60] pretty much similar because we just
+[55:19.98] iterate over the array so what I'll do
+[55:21.78] is I'll quickly jump into the code
+[55:22.86] editor now so let's quickly jump into
+[55:24.84] the code editor as you can see we are
+[55:26.64] given the array and the K initially what
+[55:28.80] am I doing I'm taking the low and higher
+[55:30.48] 0 long double please make sure and then
+[55:33.30] I figured out the high by figuring out
+[55:34.92] the difference of consecutives so you
+[55:37.56] just have n minus one section so you can
+[55:39.54] do that and then what I do is I do the
+[55:41.70] normal binary search for dumbbells that
+[55:44.40] is according to the question if you see
+[55:46.14] in the question I think yeah this is
+[55:48.30] where they're stating it so I do it
+[55:49.62] accordingly and after that I find out
+[55:51.84] the mint and I call a function which
+[55:53.64] tells me how many gas stations are
+[55:55.38] required in order to maintain this
+[55:56.82] particular distance mint and then if it
+[55:59.22] is a lot more I need to increase the
+[56:01.50] distance this is not possible people and
+[56:03.60] else I decrease it and that is what I
+[56:05.82] return now this is what we have to focus
+[56:07.86] let's go to the function number of gas
+[56:09.84] stations required I have to keep a
+[56:11.52] distance and this is the array initially
+[56:13.74] I say that number of gas stations
+[56:15.66] required count as zero and I have n
+[56:18.36] minus one section so we start from 1 and
+[56:21.30] in order to find out the difference of
+[56:22.80] the section it's array of I minus array
+[56:25.20] of I minus 1 by distance what is
+[56:27.72] distance that has been given to you
+[56:28.98] 0.4.5 can be anything and this is the
+[56:31.92] number that I require in between so if
+[56:34.08] it is 0.4 if you remember
+[56:36.66] let's clearly go back into the iPad if
+[56:39.00] it was like one to two and the distance
+[56:40.44] was one one by point four is two point
+[56:44.58] something right this is what I'm
+[56:47.16] checking if
+[56:49.26] it is exact division pure mathematics
+[56:52.86] you can do it on pen and paper then it's
+[56:54.96] I have to reduce one y because if it is
+[56:57.78] 1 by 0.5 that will be 2 and I cannot
+[57:00.72] take to have to reduce minus one from it
+[57:02.40] I have to reduce one for point four
+[57:05.40] it is 2.5 I'll take the integer which is
+[57:07.62] 2 that's okay so I'm taking an integer
+[57:09.78] if the exact division matches in the
+[57:11.70] exact division matches I decrease the
+[57:13.44] number in between and depending on that
+[57:15.30] I add it and eventually I'll have the
+[57:17.04] total numbers if I add up all the
+[57:19.50] sections and that is what I returned
+[57:21.06] let's really go ahead and run this off
+[57:23.16] and see if it is running fine
+[57:24.96] should be
+[57:26.22] yeah it does and now let's quickly
+[57:28.32] submit the surf
+[57:30.24] same pattern of wine research
+[57:32.58] writing the binary search and having a
+[57:34.92] check and according to the check
+[57:36.66] eliminating the right or left just
+[57:39.00] because it is uh in terms of double or
+[57:43.14] long double we cannot do minus one
+[57:44.76] because that will eliminate a lot of
+[57:46.68] numbers so this is the standard
+[57:48.36] procedure of doing my research on
+[57:50.34] anything which has long double
+[57:52.32] I don't expect this question to be asked
+[57:54.24] but just in case it is that is why I'm
+[57:56.82] teaching you and I know it was tough
+[57:59.04] because all the three solutions are
+[58:01.08] tough It's not that one of the solutions
+[58:02.82] is easy all of them are tough and this
+[58:04.92] is probably one of the hardest questions
+[58:06.42] uh if you ask me to rank in terms of
+[58:09.18] interview questions when it comes to
+[58:10.62] Binary research so do not worry about
+[58:12.30] that let's talk about the time
+[58:13.68] complexity so let's talk about the time
+[58:15.18] complexity we go of n logarithmic of the
+[58:19.14] range length is the time taken for
+[58:21.78] binary search and an N so n logarithmic
+[58:24.36] of n plus n
+[58:26.22] I'll be using any extra space no this is
+[58:28.68] where we optimize from the prioritical
+[58:30.30] solution and if the interviewer doesn't
+[58:32.52] agrees on that tell him don't anyways I
+[58:35.88] hope you have understood this I know it
+[58:38.34] has been a long video and it took me
+[58:40.50] nearly three hours to record because I
+[58:42.12] was really taking most of the times
+[58:43.68] because I wanted it to be precise and to
+[58:46.32] the point and I hope you have understood
+[58:48.00] everything and if you are still watching
+[58:49.68] uh you can be like you can hear my voice
+[58:53.10] it's almost done so please please do
+[58:55.56] consider giving us a like and if you're
+[58:57.24] new to our channel do consider
+[58:58.44] subscribing to us and with this I'll be
+[59:00.12] wrapping up this video let's read in
+[59:01.26] some of the video till then bye take
+[59:02.58] care whenever your heart is broken don't
+[59:07.14] ever forget you're golden I I will find
+[59:10.80] the light

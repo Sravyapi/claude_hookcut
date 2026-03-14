@@ -1,0 +1,415 @@
+[0:03.20] In this video, we'll talk about
+[0:04.88] abstraction. So, we'll divide this into
+[0:07.28] two sections. The first section will
+[0:09.20] talk about what is abstraction and how
+[0:11.84] do we implement it. And the second
+[0:14.32] section will be why do we even need it.
+[0:16.64] Okay. Uh because it's easy to understand
+[0:18.96] abstraction. It is easy to understand
+[0:21.28] the way to implement it maybe in
+[0:23.20] different languages, but we'll stick to
+[0:24.72] Python here. But it's difficult to
+[0:26.24] understand why do we need it. So, we'll
+[0:28.00] need a separate section on that. So
+[0:29.44] let's start with what is abstraction. So
+[0:31.60] abstraction basically means hiding the
+[0:34.08] complex implementation from the user.
+[0:37.92] Okay, that's what abstraction is all
+[0:39.76] about. So just to give an example, let's
+[0:41.52] say if you drive a car, of course car
+[0:44.08] has multiple components, right? So we
+[0:45.76] got a engine, we got we know how the
+[0:48.24] braking system works. So we we got
+[0:50.32] brakes, clutch, uh escalator, then we
+[0:52.80] got gear. So we have all these
+[0:54.64] components, right? And because of this
+[0:56.80] your car moves. Now the most important
+[0:59.52] part here is the engine but when you
+[1:02.40] learn to drive you don't have to know
+[1:04.72] how engine works. Of course it's good
+[1:06.64] it's it's a good knowledge and a lot of
+[1:08.48] people love uh understanding how engine
+[1:10.56] works and I got to know that bit later
+[1:13.36] but the point is when you are learning
+[1:15.12] to drive you don't have to understand
+[1:16.56] how engine works. What is important for
+[1:18.48] you is that steering that those three
+[1:21.12] things ABC and the gear. So important is
+[1:25.36] here what we are doing is we are doing
+[1:27.04] abstraction. So we are hiding the
+[1:29.36] complex implementation from the user.
+[1:31.84] Okay. Uh the advantage is let's say in
+[1:34.08] future you are learning to drive one car
+[1:36.88] which is let's say ecosport the Ford EOS
+[1:38.80] sport. I love that car and now you know
+[1:41.84] how to drive that car. Maybe you also
+[1:43.36] understand how the engine works of that
+[1:44.80] particular car and then you are going
+[1:47.28] for a different car and different car
+[1:48.80] will have a different engine. Maybe this
+[1:50.64] time you are driving a V8 engine and
+[1:52.96] that's my dream to drive that once. Uh
+[1:55.36] but let's say if you have that V8 engine
+[1:56.96] there and you got a car you can still
+[1:58.96] drive it right at least basically you
+[2:01.20] can start it and you can drive it you
+[2:02.80] don't have to understand how engine
+[2:03.92] works right so you are basically hiding
+[2:06.40] that structure so for you what is
+[2:08.32] important is the interface which you see
+[2:09.92] in front of you so that is abstraction
+[2:11.92] now the way you can implement that is we
+[2:14.32] have a concept of interfaces and
+[2:16.24] implementation so what you do in the
+[2:17.76] interface is you define or you declare
+[2:20.64] what are the thing needed to to build a
+[2:22.80] car maybe you need a steering you need a
+[2:24.40] engine. So you can declare those things
+[2:26.48] as a user you are only focused on the
+[2:28.72] interface. Mind you in the interface we
+[2:31.44] are not implementing anything. We are
+[2:32.88] just saying this is what it should do
+[2:35.52] and then you implement it. Now you can
+[2:38.40] do that in a class right? So and we have
+[2:40.56] seen that right on a class you uh create
+[2:42.72] variables you create methods or you can
+[2:44.72] call it functions. So you create
+[2:46.40] everything in a class but in the
+[2:47.68] interface you just declare them and you
+[2:49.68] implement that in the class and you are
+[2:52.48] basically hiding this class from a user.
+[2:55.44] So as a user I'm just going to focus on
+[2:57.60] the interface but yes at the runtime you
+[3:00.40] are going to use the implementation. Now
+[3:03.92] just to give an example and let's go
+[3:06.08] back to the overall example which which
+[3:07.68] we have done. Even if you're creating
+[3:10.16] the object of B here as you can see we
+[3:12.72] can still refer that as an object of A
+[3:15.04] because A is inherited by B right uh
+[3:19.92] what if you declare this what if you
+[3:21.76] don't define the function here so let's
+[3:24.56] say you have a function show but you're
+[3:26.32] not defining anything there but still
+[3:27.84] you are implementing it so this can be
+[3:30.24] our interface where you're not defining
+[3:31.92] anything you're just declaring it and
+[3:33.36] this is your implementation in this
+[3:35.44] example we have implemented both but
+[3:37.12] let's say I'm just giving your situation
+[3:38.64] this is what you can do but how will you
+[3:40.08] do it that's a question so let's
+[3:41.52] understand how do we do it and then next
+[3:44.64] part we'll talk about why do we need it
+[3:46.32] so it's actually simple what you what
+[3:47.92] I'm going to do is I'm going to create a
+[3:49.68] new file here inside the oop which is
+[3:53.12] abstract demo py and in this I'm going
+[3:56.64] to create a very simple class maybe
+[3:58.00] we'll try to implement this only a and b
+[4:00.40] so let me create a class called a and in
+[4:04.08] this class let's say have a function
+[4:05.36] called show and we'll pass self here and
+[4:08.16] I'm not doing much here. So I'm just
+[4:09.44] saying print a show. Okay, in a show
+[4:12.56] simple. Now what I want to do is of
+[4:14.80] course for this particular class a I can
+[4:16.88] create the object and that's the main
+[4:18.32] use right. So if I say obj 1 and a I can
+[4:21.84] of course create the object of it and I
+[4:23.68] can call that particular function.
+[4:26.16] There's no problem in that. I will just
+[4:27.84] try to run this. So it's
+[4:30.96] python abstract demo. py and you can see
+[4:35.84] it says in Asio. Now I want to achieve
+[4:38.96] abstraction. Okay. So to do that we have
+[4:41.52] to basically build the interface first
+[4:43.76] and the way you can do that in Python is
+[4:45.92] with the help of abstract classes. Okay.
+[4:48.88] And to write an abstract class we need
+[4:51.68] to use we have to we need to have
+[4:53.60] abstract methods. So this class need to
+[4:55.84] be an abstract method and this class
+[4:57.44] need to be an abstract class. Now how
+[4:58.96] will you do that? See there are
+[5:01.36] different ways in to do that in
+[5:03.12] different languages. In Python
+[5:04.48] specifically, it was not built for oops.
+[5:06.64] Python was built for functional
+[5:07.84] programming and oops came later. To do
+[5:10.48] that, they had to build a particular
+[5:12.48] module using which you can do that. And
+[5:14.16] that module is called ABC. Okay? I know
+[5:17.52] weird name. It's not escalator break and
+[5:19.92] clutch. It's abstract base classes.
+[5:22.72] Okay? Why abstract is because you want
+[5:25.04] to make it abstract. You don't want
+[5:26.56] anyone to create object of it. Why base
+[5:29.20] is because someone else is going to
+[5:31.20] inherit it. uh and classes because they
+[5:33.84] are classes. We don't have the interface
+[5:35.52] keyword in Python. So, we'll say from
+[5:37.28] ABC and what you have to import is ABC
+[5:40.96] class. Yeah, that's right. So, package
+[5:42.88] name is ABC. The class name is also ABC.
+[5:45.28] This time ABC stands for abstract base
+[5:47.52] class. And apart from this, you need one
+[5:49.76] more thing which is the abstract method.
+[5:53.92] Okay. So, you need these two things uh
+[5:55.84] the ABC class and the abstract method.
+[5:57.92] Now once you have that how will you make
+[6:00.40] the object and how will you make an
+[6:02.16] abstract class now just by importing
+[6:04.80] them of course it's still going to work
+[6:07.12] now I don't want it to work is because
+[6:09.44] there are certain properties the first
+[6:10.88] property is you cannot create object of
+[6:12.96] the abstract class here we are able to
+[6:15.20] do that second abstract method should be
+[6:17.04] a part of the abstract class and this
+[6:18.80] class is not an abstract class yet and
+[6:21.28] if you want to create abstract method
+[6:22.96] you cannot define it there should not be
+[6:25.04] any statements so these three things you
+[6:27.28] have to number. So I want to stop the
+[6:30.64] object creation. Now the way you can do
+[6:32.80] that is by inheriting
+[6:35.60] the ABC class and that's it. This is how
+[6:38.72] you make an abstract class. I know you
+[6:40.48] don't trust me and you should not be
+[6:42.24] trusting me. So there's one more thing
+[6:44.24] left is in this class we need abstract
+[6:46.48] methods and we don't have that. The way
+[6:48.32] you can create an abstract method is
+[6:50.16] just on the top of the function just
+[6:51.92] write a decorator abstract method and we
+[6:55.12] need to do one more thing. Since
+[6:56.88] abstract method don't have the
+[6:58.08] implementation we can write pass. We
+[6:59.52] can't keep it empty unfortunately. So
+[7:01.20] you have to say pass. And now if you run
+[7:03.04] this you will get an error. It says
+[7:05.28] cannot instantiate the abstract class a
+[7:07.60] without an implementation for abstract
+[7:09.44] method show. Okay. So uh since you don't
+[7:11.60] have the implementation for this you
+[7:13.12] can't create object of abstract class.
+[7:15.12] So this is how you can achieve
+[7:17.20] abstraction. But I know still doesn't
+[7:19.68] make any sense. It's because we are not
+[7:22.56] I mean why do we use it right? If you
+[7:24.56] can't get the object of it, why in this
+[7:26.16] world we are creating a class and then
+[7:28.16] doing all this stuff when you can't
+[7:30.00] create the object when you can't call
+[7:31.28] it. To make it more sensible let's use
+[7:34.80] another example in the next section. Now
+[7:36.80] what we're going to do is let's remove
+[7:38.64] everything. Now we know how abstract
+[7:40.32] class works. I mean how to create
+[7:41.92] abstract class, how to create abstract
+[7:43.12] method. Let's take another example and
+[7:45.04] this time let's take example of a
+[7:47.04] payment gateway. See whenever you build
+[7:48.96] a e-commerce application this can be for
+[7:50.88] courses this can be for a product buy
+[7:53.68] let's say Amazon flipkart or maybe
+[7:56.24] courses like the listiscoco so what you
+[7:58.72] can do is you can basically have a
+[8:00.64] payment gateway so if I want to sell my
+[8:02.16] courses I need to integrate the payment
+[8:03.44] gateway but then which payment gateway I
+[8:05.28] should use. So let's say if I'm building
+[8:07.52] a e-commerce application of course I can
+[8:09.44] choose one payment gateway and for that
+[8:11.60] particular payment gateway I can write a
+[8:12.96] code. So there's my application, there's
+[8:14.08] my payment gateway connected, I know. So
+[8:15.52] they are tightly coupled. Now in future
+[8:17.52] if that payment gateway is not agreeing
+[8:19.44] to my terms or maybe they have changed
+[8:21.28] something which I'm not happy with. What
+[8:22.80] should I do? Of course I have to change
+[8:24.24] my payment gateway. But then should I
+[8:26.48] write a separate codebase for that since
+[8:28.88] I'm changing my payment gateway? Of
+[8:30.40] course I can. But then does it make
+[8:32.56] sense to change the code base just if
+[8:34.72] you're changing a pay payment gateway?
+[8:36.64] So if you are tightly coupled with your
+[8:38.80] payment gateway then that's a issue.
+[8:41.04] What if you can say let's do plug and
+[8:43.36] play. So now I'm using let's say Razer
+[8:45.60] Pay. In future if I if Razer Pay has
+[8:47.36] some issues I can use Stripe. I can use
+[8:49.20] PayPal. That switching should be easy.
+[8:52.32] How will I do that? So let's say I have
+[8:54.24] a class called purchase. This is where
+[8:56.64] or you can say a page where you can do
+[8:59.12] checkout. So we got this purchase class.
+[9:01.36] In this I have a particular function
+[9:03.36] called checkout. And of course in check
+[9:05.20] out there should be multiple information
+[9:06.56] about the products or maybe I can pass a
+[9:08.80] cart. In this card you can have
+[9:10.16] different products and different
+[9:11.12] pricings but let's keep it empty and the
+[9:13.84] only thing I'm going to pass here is
+[9:15.20] self. Now in this checkout I'm going to
+[9:17.68] print checking out. We are not here to
+[9:20.08] learn about payment gateways. We are
+[9:21.28] here to learn about abstraction. So
+[9:22.88] let's keep it simple. So checking out
+[9:24.56] and of course there should be a payment
+[9:26.08] gateway. So what I want is I want a
+[9:28.24] object of a payment gateway. So I will
+[9:29.76] say gateway dot pay. Okay. This is what
+[9:32.64] I want to achieve. So when when someone
+[9:34.56] says check out there should be a payment
+[9:36.24] gateway and I should be able to pay pay
+[9:38.24] for it. But if you observe we don't have
+[9:40.24] the object of gateway. So what you can
+[9:42.64] do is you can use in it to initialize
+[9:45.04] the object and unfortunately this is not
+[9:47.52] an inbuil object the payment or the
+[9:49.52] gateway here. So what I can do is I can
+[9:51.92] accept gateway and self dot gateway is
+[9:56.32] equal to
+[9:58.24] gateway. Okay. So the thing is I need to
+[10:01.36] pass the gateway object then only I can
+[10:03.28] do pay. Now one thing you can do is you
+[10:05.76] can be very strict here. You can do a
+[10:07.28] tight coupling. So let's say I have a
+[10:08.64] class called Razer Pay and let's say
+[10:10.48] that's my payment gateway which I'm
+[10:12.96] using
+[10:14.48] and Razer Pay says I have this method
+[10:16.80] called pay and in this I can print
+[10:21.04] paying using Razer Pay and of course
+[10:23.20] this video is not sponsored by Razer Pay
+[10:24.88] and they should sponsor me. So let's say
+[10:26.56] I got this class I got this method or
+[10:29.52] function pay and then I'm saying paying
+[10:31.12] using Razer Pay and of course to
+[10:32.96] actually make it work you need to create
+[10:34.72] object of payment gateway. So I will say
+[10:36.80] gateway one and this will be from laser
+[10:39.76] pay. Then I will create object of
+[10:41.28] purchase. So let's say purchase and this
+[10:43.52] will be object of purchase. And now with
+[10:46.32] the help of purchase I should be able to
+[10:48.48] check out and then check out says pass
+[10:50.40] me the object of payment gateway. And
+[10:52.56] I'm doing that now. So simple right?
+[10:54.48] Nothing fancy normal classes normal
+[10:56.48] implementation. It's just that the
+[10:58.32] gateway or the purchase is dependent on
+[11:00.72] the gateway. And if you're making it
+[11:02.24] very strict you're basically saying this
+[11:04.16] is tightly coupled. So let me run this.
+[11:06.00] And it says, okay, there is an error. It
+[11:09.20] says one positional argument missing is
+[11:11.60] because I should have been passing
+[11:13.76] gateway here and check out. Okay, why
+[11:15.68] I'm passing gateway and checkout. My
+[11:17.52] bad. So let's run this and checking out
+[11:19.84] paying using payment gateway. Everything
+[11:21.36] works. Okay, so I've built a e-commerce
+[11:22.88] website and I'm able to pay for it.
+[11:24.80] Okay, the problem is in future if they
+[11:26.88] decided, hey, you know, I want to go
+[11:28.48] with some other name. So or I want to go
+[11:31.12] with different implementation, I'm
+[11:32.24] stuck. So what you can do is you can
+[11:34.64] define certain properties right. So
+[11:36.64] every payment gateway should have this
+[11:38.16] particular function called pay otherwise
+[11:39.92] this will not work. Example let's say if
+[11:42.00] they decided to go and rename it to pay
+[11:44.96] and I will get an error now because then
+[11:47.44] I have to change my codebase based on
+[11:49.36] their codebase. So example let's say we
+[11:51.36] got one more payment gateway here which
+[11:52.96] is let's say telescope pay. We should
+[11:54.80] build our own payment gateways and they
+[11:57.20] are good you know they are using pay as
+[11:59.44] a name. They're good because that's my
+[12:01.60] company
+[12:03.12] and I'm going to say now of course pay
+[12:05.68] Razer Pay will not going to sponsor me
+[12:07.84] for this. Okay. So I'm using pay. I'm
+[12:10.48] using pay here. Now when you pass the
+[12:12.64] object of Razer Pay now Razer Pay don't
+[12:15.12] have this P A Y they got PE.
+[12:18.48] So it should give an issue. But the
+[12:21.44] moment I am passing an object of
+[12:23.68] Tiscoco. So let's say I'm saying gateway
+[12:25.76] 2 and this will be the pay. I'm going to
+[12:29.68] different gateway now and I'm going to
+[12:31.12] pass two here. Let's run this and you
+[12:33.36] can say paying using telescope. So it
+[12:36.96] works with this. Now there are two
+[12:38.56] things. One, I want to maintain the
+[12:40.24] standards. When I say payment gateway,
+[12:41.68] it should have this function called P A
+[12:43.60] not PE. Second, why a purchase or the
+[12:47.60] pay the e-commerce website should stick
+[12:50.32] to the object of Razer Pay or Telescope?
+[12:53.52] there should be some standard some
+[12:55.44] default interface and I should be using
+[12:58.08] that interface. So the way you can do
+[13:00.72] that is because see when you specify the
+[13:02.96] type here and if you are very specific
+[13:04.48] hey I'm going to accept a pay object and
+[13:07.36] I'm passing telescope
+[13:09.76] let's see it still works is because
+[13:12.08] that's how your duct typing works uh or
+[13:15.28] polymorphism works but I don't want to
+[13:17.68] be very specific here that I'm going to
+[13:19.28] pass a razor pay so what you can do is
+[13:22.40] you can use a standard class and that
+[13:25.28] class would be payment gateway and This
+[13:29.44] payment gateway should have a function
+[13:31.52] called pay. And the beautiful thing is
+[13:33.68] I'm not going to pass anything here. I'm
+[13:35.68] not going to have any statements there.
+[13:36.96] Just pass. And this class I'll make it
+[13:38.96] as ABC abstract class. Why is because I
+[13:42.08] don't want anyone to create object of a
+[13:43.44] payment gateway because it's just a
+[13:45.28] concept. The actual implementation is
+[13:47.20] telescope a and razor pay. And this
+[13:49.20] particular function will be a abstract
+[13:52.48] method. Now you can make it compulsory
+[13:55.92] for all the classes to inherit a uh the
+[13:58.72] payment gateway where you can check
+[14:00.16] that. So let's say when you accept this
+[14:01.68] object you can actually check what I
+[14:04.08] mean which type of instance this gateway
+[14:05.76] is. If that instance is of type payment
+[14:07.68] gateway then only accept it otherwise
+[14:09.60] don't accept. So how will you know
+[14:11.44] that's a type of payment gateway just by
+[14:14.16] initating it. So it becomes compulsory
+[14:16.00] now for them to have this method which
+[14:17.84] is pay. So now let's say if I'm passing
+[14:20.48] gateway 2. So you can see we got an
+[14:23.12] error. It says abstract class is opaque.
+[14:25.28] We can't instantiate it is because it's
+[14:27.60] a there's abstract method called pay. So
+[14:30.00] now we know there's a problem. So we can
+[14:32.16] for the standards and we can say pay.
+[14:34.16] There can be another function here which
+[14:35.60] is pay your choice but pay need to be
+[14:38.56] there and that's how you can maintain a
+[14:40.48] standard. So every payment gateway
+[14:42.32] should have this particular function. So
+[14:43.76] you can have a interface by saying if I
+[14:47.04] have a steering there should be some
+[14:48.48] implementation. If I have a gear here,
+[14:50.48] there should be some implementation. So
+[14:52.16] that's abstraction. And how do you
+[14:54.08] implement abstraction is with the help
+[14:55.52] of abstract method and the abstract
+[14:58.00] class. So that's it from this video. See
+[15:00.08] you in the next part.

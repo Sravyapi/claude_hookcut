@@ -1,0 +1,872 @@
+[0:00.24] hey there everyone hes here back again
+[0:02.36] with another video and welcome back to
+[0:04.24] the series on AWS Cloud we're trying to
+[0:06.92] prepare for our very first exam
+[0:08.56] certified Cloud practitioner and yes I
+[0:10.60] took a little bit break it was really
+[0:13.04] really cold uh outside and in my home as
+[0:16.12] well uh so I decided that hey you know
+[0:18.48] it's it's really cold let's take some
+[0:20.12] break enjoy some tea enjoy some warm sun
+[0:22.76] if it is there which was rare case but
+[0:25.44] anyways uh this was all I was having
+[0:27.60] some fun but now I'm back with the
+[0:29.60] recording the videos and there's so much
+[0:31.92] that we have to put on this channel the
+[0:33.76] preparation is being done it was not
+[0:35.52] like I was all the time sipping up the
+[0:37.04] tea it was also that I Was preparing a
+[0:38.60] lot of notes content material and all of
+[0:40.52] that that you are going to see on this
+[0:42.52] channel uh from now onwards so if the
+[0:45.24] temperature remains on the bearable
+[0:47.16] level so in this video we'll start with
+[0:49.36] the very first video of our uh
+[0:51.12] practitioner exam preparation there's a
+[0:53.04] lot of discussion that we need to do so
+[0:54.68] that you can answer all these questions
+[0:56.80] in the exam properly and with the proper
+[0:59.20] mindset this video is all about that and
+[1:01.28] by the way I'll also refer you some of
+[1:02.92] the direct notes which are there from
+[1:04.60] the AWS website and which one you should
+[1:07.24] focus more by the way I have included
+[1:08.88] all of them in this video so don't worry
+[1:10.84] by the way we are also setting up some
+[1:12.32] Target for the comment section uh
+[1:14.24] because I need some motivation so I
+[1:16.16] think let's get started with just 100
+[1:18.20] comments can we do that in 24 hours that
+[1:20.16] would be my motivation if you can give
+[1:21.80] me that motivation that would be awesome
+[1:23.92] anyways let's get started hope you'll be
+[1:25.60] able to finish that up so first of all
+[1:28.36] let me share the screen uh so that we
+[1:30.52] can have a discussion and oops looks
+[1:33.20] like I don't have my iPad up and running
+[1:36.72] uh so just give me a second and I'll
+[1:38.44] make sure my iPad is running so just
+[1:41.00] give me a moment and it's been while
+[1:43.76] that we haven't connected this all right
+[1:46.24] looks great let me share the screen
+[1:48.48] again one more time and there we go
+[1:50.56] finally this time we are having the
+[1:52.12] screen so what we're going to see in
+[1:54.48] this video is let's talk about the cloud
+[1:57.16] because this video is all about that and
+[1:59.20] we'll be talking about the traditional
+[2:01.04] infrastructure versus the cloud you need
+[2:03.28] to First understand the mindset Behind
+[2:05.56] these exams these exams really really
+[2:08.44] Advocate about that everybody should be
+[2:10.72] moving into the cloud now I totally
+[2:13.28] understand that you might be having a
+[2:14.56] different perspective that for some
+[2:16.08] needs maybe the cloud is not the right
+[2:18.16] choice but this is exam preparation it
+[2:20.44] doesn't give a damn about what you think
+[2:22.16] it's about how what they want you to
+[2:24.16] think about so no matter whenever the
+[2:26.32] debate comes about a traditional
+[2:28.04] infrastructure versus the cloud in all
+[2:30.48] the exams you should prefer the cloud
+[2:33.00] that is the whole idea I know it sounds
+[2:34.68] a little bit controversial but that's
+[2:36.44] the whole idea and even if you think
+[2:38.28] from the perspective that these days you
+[2:40.64] can just build anything and deploy that
+[2:43.36] and maybe a thousand users or a million
+[2:45.80] users can access your application that
+[2:48.16] is all because we should be thanking to
+[2:50.52] the cloud itself it was not at all
+[2:52.72] possible when you hear about the stories
+[2:54.68] that this company was started in the
+[2:56.12] garage that whole garage was not just
+[2:59.16] somebody was writing the code there it
+[3:01.36] was all about that somebody was there
+[3:03.28] who had the infrastructure there all
+[3:05.76] those servers and racks were there so
+[3:08.00] that they can connect to the internet
+[3:09.52] and serve their website this was a
+[3:12.04] challenging thing these days startups
+[3:14.20] just think about building their
+[3:15.56] application and doesn't really focus on
+[3:18.32] how should they scale up the things how
+[3:20.04] should things are be there this is all
+[3:22.32] all because of the cloud infrastructure
+[3:24.56] what we have so first of all uh you'll
+[3:27.00] be facing a lot of questions in this
+[3:28.80] exam which are all about having the
+[3:30.84] objective is to move into the cloud from
+[3:33.24] the on Prem on Prem is another term
+[3:35.96] known as on premises when you have your
+[3:38.12] racks and servers and Rams and storage
+[3:40.72] everything inh housee yes this used to
+[3:42.72] be a days and I have worked with one
+[3:44.20] such company in my college days where
+[3:46.84] there was this guy who was having all
+[3:48.52] these infrastructure at his home yep had
+[3:51.44] all these air conditioners and
+[3:52.88] everything so this was the case with the
+[3:55.08] on Prem on premises but now we are
+[3:57.32] moving on to the cloud era so the
+[3:58.96] objective is to move into that let's
+[4:01.76] talk about a little bit about how the
+[4:03.60] traditional infrastructure looks like
+[4:05.60] versus how does the cloud infrastructure
+[4:07.44] looks like so that you can answer some
+[4:08.80] of the question that are being asked to
+[4:10.32] you in the exams so in the traditional
+[4:12.80] infrastructure we used to have something
+[4:14.36] known as server now a lot of people
+[4:16.20] believe that server is a big gigantic
+[4:18.88] computer it is not it is just a piece of
+[4:20.92] software which is running on a really
+[4:23.04] really powerful Hardware so we have our
+[4:26.16] servers which are softwares we have some
+[4:28.28] of the our storage uh maybe a hard disk
+[4:31.32] or maybe a solid state drive ssds and on
+[4:34.80] top of that we also need some ways to
+[4:36.40] connect to the Internet so we have our
+[4:38.76] routers we have our switches and we have
+[4:41.56] our firewalls uh to protect some of the
+[4:43.64] attacks and all these stuffs so this is
+[4:45.80] this used to look like a traditional
+[4:47.68] Hardware infrastructure and this is this
+[4:49.48] was really really real now this is not
+[4:51.96] your ordinary laptop because the
+[4:53.68] infrastructure that you buy for the
+[4:55.28] server usage is little bit more
+[4:57.20] expensive than your ordinary INF
+[4:59.68] structure for your laptops or your
+[5:01.04] personal usage in the server components
+[5:03.64] we usually focus more on the redundancy
+[5:06.16] so that if one component goes down
+[5:08.16] doesn't means it just takes down the
+[5:09.64] entire website so redundancy is the key
+[5:12.08] uh but on top of that these machines
+[5:13.92] need to be active throughout the day
+[5:16.48] 24x7 for 365 days so they need to be
+[5:19.88] really of high quality that's why you
+[5:21.44] see the on Prem infrastructure when you
+[5:23.28] try to buy them uh they are bit of
+[5:26.24] expensive on the other hand oh by the
+[5:28.52] way one more thing uh you own everything
+[5:30.56] or rent it out now there is a concept in
+[5:33.52] the on Prem devices or managing your own
+[5:36.76] infrastructure is either you have to own
+[5:39.08] everything so if you want to put up a
+[5:40.56] website you have to think about how can
+[5:42.12] I buy the hard disk how can I buy the
+[5:44.48] Rams how much RAM should I buy 2 GB or
+[5:47.24] 200 GB what should I plug it in and all
+[5:49.68] of that but there are some companies of
+[5:51.84] course there are available in India as
+[5:53.40] well and outside of course there are
+[5:55.04] thousands of them who allows you to rent
+[5:57.56] them also they have their infrastructure
+[5:59.20] already which have all these backup
+[6:00.84] powers and generators and whatnot and
+[6:03.12] they allows you to put your own racks
+[6:05.44] and in that you can put up your
+[6:06.96] Hardwares but again that's a mix of
+[6:08.56] cloud and on-prem we'll talk about them
+[6:10.84] on the other hand if we move on to the
+[6:12.48] cloud infrastructure which is mostly on
+[6:14.84] demand this is the keyword which you'll
+[6:17.04] see in throughout the exams no matter
+[6:19.20] what exam you'll be preparing because
+[6:20.68] the whole idea behind the cloud is on
+[6:22.76] demand you just have a button and with
+[6:25.44] the Press of a button you can increase
+[6:27.16] your RAM from 2 GB to 200 GB to back to
+[6:30.12] 2GB this is a crazy power you don't have
+[6:33.32] to think about buying the infrastructure
+[6:35.72] now imagine for a moment that you have
+[6:37.84] to do this when your company is managing
+[6:39.84] your own on Prem Services it is crazy
+[6:43.24] because let's just say you are a devops
+[6:45.60] guy or Ops guy purely and you think that
+[6:48.08] we need more storage you cannot just go
+[6:50.00] ahead and add the plug-in the storage
+[6:52.04] you have to first justify your statement
+[6:54.32] by writing a report for that then that
+[6:56.76] report needs to be submitted to your
+[6:58.36] manager and the manager is going to
+[7:00.12] submit to no matter what I don't know
+[7:02.12] how many levels of the managers these
+[7:03.80] days people have and on top of that then
+[7:05.84] the final Boards of directors and
+[7:07.60] whoever CTO whoever is taking the
+[7:09.12] decision that this pricing or this
+[7:10.88] purchase is Justified and we need to do
+[7:13.16] that then they will place the order that
+[7:15.44] order will come back and then that order
+[7:17.80] after checking into the inventory and
+[7:19.48] whatnot will be hand over to you now
+[7:21.60] it's your responsibility to plug that in
+[7:23.76] and manage all the software on top of
+[7:25.84] that so that somebody can make one more
+[7:28.80] image or one more video on that server
+[7:31.52] it's it's crazy gigantic but on the
+[7:34.08] other hand if we talk about the cloud we
+[7:36.08] never think about it we just have so
+[7:38.04] many clouds these days AWS Azure vsel uh
+[7:41.48] Hoku whatnot we have just to think about
+[7:43.88] putting the things on the demand of
+[7:45.72] course there are variety of cases in
+[7:47.72] that that sometimes we share our
+[7:49.24] resources sometimes we not in most of
+[7:51.36] the cloud you will be sharing the
+[7:52.80] resources this is how the infrastructure
+[7:54.36] is designed but not to be taken there
+[7:57.00] are special government clouds even on
+[7:59.28] AWS as well which are kept totally
+[8:01.88] separate totally segmented from the
+[8:04.08] other public usage nobody used that no
+[8:06.20] sharing is done on that it is possible
+[8:08.48] and it is being done so remember that
+[8:10.16] shared resource is the majority usage
+[8:12.20] but there are government clouds in AWS
+[8:14.48] as well and it is for anyone anybody can
+[8:17.76] just make an account and if you have
+[8:19.20] money that's it you can just host your
+[8:21.36] application there there is no such thing
+[8:23.32] that from where to buy who will ship it
+[8:25.52] there's no such thing the most important
+[8:27.84] thing about the cloud is the elasticity
+[8:30.20] and the most key important feature
+[8:32.16] always remember this example whenever
+[8:34.48] there is a streaming especially when
+[8:36.24] there's a cricket in India the
+[8:38.04] elasticity is one of the thing which
+[8:39.84] makes it possible for having whole of
+[8:42.24] this circus otherwise it would not be
+[8:43.92] possible it is comparatively easy not
+[8:47.32] I'm not saying a whole easy but it is
+[8:48.92] comparatively easy to scale the
+[8:50.64] infrastructure up but it is extremely
+[8:53.48] difficult to scale it down when there
+[8:55.12] are million people watching it uh you
+[8:57.20] can raise up your compute machines but
+[8:59.64] when people suddenly drops down of half
+[9:02.52] of the people scaling it down is really
+[9:04.76] difficult but not comparatively that
+[9:06.64] difficult in the cloud world so that
+[9:08.44] elasticity is one of the key feature you
+[9:10.64] should write them down in the notes it
+[9:12.32] will be asked like left and right
+[9:14.84] another thing which you'll be asked in
+[9:16.48] quite a number of questions at least one
+[9:18.52] or two is pay as you go model Cloud
+[9:21.72] focuses a lot on pay as you go model you
+[9:24.96] don't pay for what you don't use if you
+[9:26.88] use something then only you pay for it a
+[9:29.24] lot of time this is being mistaken that
+[9:30.72] hey I just spined up this ec2 machine
+[9:32.92] but I was not using it it accidentally
+[9:34.88] remains spin up so should I pay for it
+[9:37.04] yes you will be paying it because from
+[9:38.92] the cloud perspective you have spined up
+[9:41.16] a machine so you have taken some of the
+[9:42.92] resources from us you'll be charged for
+[9:45.04] that not all the machines are payable
+[9:47.16] but definitely you should uh make make
+[9:49.60] sure that it is in your mind that pay as
+[9:51.48] you go is the model for the cloud all
+[9:54.44] right so quite a lot of uh theoretical
+[9:56.52] stuff but yeah I know it is important
+[9:58.76] for the the exam perspective you'll be
+[10:00.52] getting a lot of idea about what the
+[10:02.00] cloud is how should I expect it and once
+[10:03.96] you learn it from here you don't need to
+[10:05.72] learn it in all the other clouds like
+[10:07.52] asure or whatever you're
+[10:09.00] preparing moving on this is a fun
+[10:11.32] example I think we should all do it
+[10:13.28] together now imagine that you are
+[10:15.32] building Dropbox from scratch why I
+[10:17.60] picked up Dropbox because it handles a
+[10:19.92] lot of lot of data you need a lot of
+[10:22.00] storage for that now imagine the same
+[10:24.16] exercise that you have to do the first
+[10:26.04] step is already a lot of uh hindrance in
+[10:30.12] just joining the game which is buying
+[10:33.04] the hardware what Hardware to buy how
+[10:35.36] much Hardware to buy do we need the
+[10:37.48] backup of the hardware do we need the
+[10:39.24] backup of power supply and how we will
+[10:43.08] be doing all of this who will be giving
+[10:45.08] us the best price this is the first
+[10:47.32] entry point barrier in just building a
+[10:49.84] Dropbox these days on the YouTube you
+[10:52.28] find so many of the Dropbox clone never
+[10:54.68] worrying about the hardware
+[10:56.08] infrastructure that's the best part not
+[10:58.40] only just the Hardware is the problem
+[11:00.00] installation of that Hardware is also
+[11:01.92] one of the challenge the challenge is if
+[11:04.48] let's just say the hardware is there do
+[11:06.40] you need racks from where to get racks
+[11:08.52] where to place these racks should they
+[11:10.52] be nearby to each other or we should
+[11:12.20] have some gaps and once we start the
+[11:14.72] installation what softwares will be
+[11:16.88] compatible is this Hardware compatible
+[11:19.12] to my existing Hardware is there is a
+[11:21.24] version difference is there an upgrade
+[11:23.04] in the hardware which I'm not supporting
+[11:24.44] so should I upgrade my previous Hardware
+[11:26.88] you get the idea it's really really
+[11:28.64] powerful
+[11:29.68] and then expansion now you decided that
+[11:32.48] hey you know what uh one petabyte would
+[11:34.36] be good enough to start my company but
+[11:36.40] you realize that hey it's filled now I
+[11:38.36] need to expand it how much should you
+[11:40.48] expand 5 petabytes or 10 petabytes or
+[11:43.16] how much should you invest in that it's
+[11:44.80] a big question expansion is not easy and
+[11:47.32] once you done sorting all the hardware
+[11:49.36] then there is a operation cost on the
+[11:51.48] softwares what software you'll be
+[11:53.44] interacting it's not like you just plug
+[11:55.16] and play the hard disk you need to have
+[11:57.32] some software to find to give you you
+[11:59.20] all the spaces all the information which
+[12:01.36] sectors are corrupted so much more so
+[12:03.60] this is your operation cost while on the
+[12:06.00] other hand if you want to build
+[12:07.44] something like a drawbox maybe a smaller
+[12:09.84] service for your own friends and some
+[12:12.48] things like that you can just log in
+[12:14.28] into ads and they will offer you that
+[12:16.88] hey this is what we cost this is our
+[12:18.84] base initial price you just pick your
+[12:21.16] services I want this service I want that
+[12:23.52] service I need upload service I need
+[12:25.28] processing service there's a whole lot
+[12:26.84] of services available and you scale on
+[12:29.00] the click if you see that hey you know
+[12:30.64] what a lot of traffic is coming up you
+[12:32.20] can do load balancing if you think your
+[12:34.12] storage is almost full you can just plug
+[12:35.72] in more storage and the software cost
+[12:38.20] Still Remains here there's a cost to
+[12:39.76] develop such softwares as well that will
+[12:41.48] remain constant whether you buy your own
+[12:42.92] Hardware or not but these days the more
+[12:44.92] focus is on let's build the software
+[12:46.88] Hardware is already taken care of by the
+[12:48.56] cloud so that's the advantage of the
+[12:50.04] cloud now this is another question that
+[12:52.24] comes up in the exam as well as well as
+[12:54.68] it is mentioned in the AWS documentation
+[12:56.88] as well that you should have the mindset
+[12:58.24] and the types of the cloud that is being
+[13:00.20] provided now you'll see most of them in
+[13:02.68] almost all books and even in the college
+[13:04.56] exams and all of that the first one is
+[13:06.80] infrastructure as a service IAS uh
+[13:10.48] pretty mouthful but this is the first
+[13:13.04] type of the cloud in which uh the whole
+[13:15.44] idea is how much responsibility comes on
+[13:18.04] to your end that's the whole idea of the
+[13:20.52] difference between the types of the
+[13:21.84] cloud when you say something as a
+[13:23.60] infrastructure as a cloud I want to
+[13:25.28] manage uh almost the infrastructure uh
+[13:28.40] but not really the infrastructure that
+[13:29.88] means you will not be managing the RAM
+[13:31.80] and uh the hard disk and all of that uh
+[13:33.84] your responsibility comes onto the OS
+[13:35.76] level that's that's the our goal what we
+[13:37.92] have so what you'll be doing is you'll
+[13:39.72] be managing something like ec2 instance
+[13:41.92] what is ec2 it's just a computer we will
+[13:44.00] definitely have fun in the ec2 section
+[13:46.16] but ec2 is just a elastic compute Cloud
+[13:49.08] that's a fancy name of saying virtual
+[13:50.60] machine it's a computer uh we also have
+[13:52.88] Azure virtual machine so in almost
+[13:54.88] everywhere wherever you are preparing
+[13:56.32] for the cloud you will see this
+[13:57.76] infrastructure as a cloud
+[13:59.40] another thing is a platform as a service
+[14:01.40] in the platform as a service uh you
+[14:03.52] don't manage your operating system you
+[14:05.40] just manage your code itself so you
+[14:07.88] focus majorly on the on the code part
+[14:10.08] and you you just mention that what is
+[14:12.52] the platform going to be required to run
+[14:14.40] this code whether that's a node platform
+[14:16.24] or a Java platform you just tell that
+[14:18.80] and code is only your responsibility not
+[14:22.12] the platform underlying it so this is
+[14:24.48] known as a platform as a service they
+[14:26.32] provide you the platform and it can be
+[14:28.08] by elastic bean stock one of the service
+[14:30.96] in the AWS which actually gives you and
+[14:33.44] then we have Azure web apps and whole
+[14:35.64] everybody has their own flavor in that
+[14:38.24] now this is one of the most popular one
+[14:40.48] which is software as a service where you
+[14:42.32] are just a consumer you don't care about
+[14:44.28] anything at all uh you have seen a lot
+[14:46.40] of them like YouTube it is also a
+[14:48.88] software as a service where I just
+[14:50.24] upload the videos and I don't care about
+[14:52.28] how much traffic is coming in how
+[14:54.52] somebody's going to make a comment which
+[14:56.72] you probably should be doing uh but it
+[14:59.16] is just there uh not just YouTube there
+[15:01.20] are other services like there's a vimeu
+[15:02.92] there's a Twitter there's a Salesforce
+[15:04.56] all of them are just SAS almost sass yes
+[15:07.44] you can argue with me that Twitter is
+[15:09.08] not a SAS uh I also agree to some extent
+[15:12.16] but it could be converted maybe in a in
+[15:14.68] a SAS uh YouTube definitely is getting
+[15:17.76] used as one of the services underlying
+[15:19.80] in the SAS and Salesforce is a pure SAS
+[15:22.76] so around that now on top of that uh
+[15:26.40] let's also summarize this that uh the
+[15:28.68] control over the cloud so apart from
+[15:31.56] types of the cloud there is also a
+[15:33.44] control uh level on the cloud like who
+[15:35.48] is controlling what and based on that
+[15:37.16] cloud are also named like that you might
+[15:40.00] have seen them as the private Cloud a
+[15:42.44] public Cloud hybrid cloud multic cloud
+[15:45.04] it's really simple when there's a
+[15:46.36] private Cloud uh that means you own the
+[15:49.08] hardware so how is it different from the
+[15:51.24] AWS is AWS a private Cloud no AWS is a
+[15:54.04] cloud provider not a cloud itself and
+[15:57.92] the whole idea behind saying the private
+[15:59.60] cloud is you have your infrastructure uh
+[16:02.32] at some place but you are accessing them
+[16:04.08] via the Internet so they almost call
+[16:05.80] this as a private Cloud you definitely
+[16:07.88] own your own Hardware you definitely
+[16:09.84] install and own your own software and
+[16:12.88] only you use it so you manage your own
+[16:15.28] security and the compliance and
+[16:16.96] everything that's there so let's just
+[16:18.76] say if tomorrow you are serving some of
+[16:20.48] the people in the European region they
+[16:22.64] want the data to be in the Europe uh
+[16:25.32] it's your headache not mine headache
+[16:27.36] because it's a private Cloud you manage
+[16:28.88] that so whether you deploy a service or
+[16:31.12] a a hardware there it's your job India
+[16:34.00] also restrict that the data of the
+[16:36.16] Indian user should be in India so hey uh
+[16:38.92] you manage it on your own you buy more
+[16:40.96] hardware and deploy them in India on the
+[16:43.16] other hand there are public Cloud which
+[16:45.16] are basically they work on economy of a
+[16:47.72] scale and elasticity so AWS actually
+[16:49.96] comes into that particular uh Zone and
+[16:52.72] region so if tomorrow Indian government
+[16:54.96] says that hey you need to keep all the
+[16:56.48] Indian users data in India uh we do have
+[16:58.72] data centers in India for the AWS in
+[17:00.56] Mumbai region and couple of other
+[17:01.84] regions uh you can just say that hey all
+[17:04.36] the database and everything will be
+[17:05.88] actually from this region will be stored
+[17:07.64] in this one and that's it all done and
+[17:10.16] elasticity is also there uh in the
+[17:12.12] private Cloud you buy your own Hardware
+[17:13.72] in the public Cloud you just click the
+[17:15.00] buttons and things are done there's also
+[17:17.28] a way of hybrid cloud in which you get
+[17:19.84] the best of both were a lot of companies
+[17:22.56] especially the security companies like
+[17:24.60] firey is one such company which has
+[17:26.88] their own Prem servers as well and they
+[17:29.08] actually rely a lot on the cloud
+[17:30.60] services as well which one that's that's
+[17:32.20] a debate uh sometimes they use Azure
+[17:34.84] sometimes they use gcp sometimes they
+[17:36.28] use AWS as well uh so depends on that
+[17:39.64] they actually manage some of their
+[17:41.28] proprietary softwares that they offer
+[17:43.68] and they want to keep them in the on
+[17:45.92] Prem as well so they do that they use
+[17:47.76] that there's a lot of Hardware in their
+[17:50.36] uh infrastructure in their offices and a
+[17:52.44] lot of Hardware is on the cloud as well
+[17:54.00] so they use both of the worlds and how
+[17:56.20] do we connect them that's a big case uh
+[17:58.68] you might be thinking a lot of
+[17:59.68] connection is done bya the Internet only
+[18:02.12] but that's not the case there is also a
+[18:03.88] lot of private links which which are
+[18:05.76] being done and in the later on videos
+[18:07.96] we'll see that there are so many
+[18:09.16] services offered by the AWS for this
+[18:11.32] they even send you briefcase and the
+[18:13.16] trucks at your uh infr at your uh
+[18:15.96] premises so that you can connect the
+[18:17.68] wires and transfer the data it's it's a
+[18:19.76] funny world I was very surprised for the
+[18:21.72] first time and I saw that they send
+[18:23.56] suitcases that you can connect to your
+[18:25.48] servers and transfer the data and
+[18:27.16] they'll offload it and you'll be able to
+[18:29.00] see them like that's the crazy one then
+[18:31.20] I saw the truck and I said ah nothing is
+[18:33.16] crazy so there are a lot of ways to
+[18:35.20] connect with them there are private
+[18:36.64] links there are vpns there's so much
+[18:38.84] more and then there is a multicloud
+[18:40.80] which is also a type of cloud in which
+[18:42.16] you don't rely on one infrastructure AWS
+[18:44.24] as your open stack you use whatever is
+[18:46.60] there and you try to keep the things as
+[18:48.80] redundant as possible that means if one
+[18:51.40] thing goes down there is always another
+[18:53.16] one which is up and in around Co we have
+[18:56.88] seen a lot of downtime cases in the AWS
+[18:59.44] as well it was like a every week's drama
+[19:02.56] that hey some services or entire AWS
+[19:04.64] region is down so it was so much fun in
+[19:07.16] that time but yes again okay uh moving
+[19:10.08] further on to the next topic which is
+[19:11.88] Amazon web services this is the topic
+[19:13.96] that we'll be studying so far we have
+[19:15.80] been studying just the cloud like what's
+[19:18.44] the cloud mindset types of the cloud
+[19:20.92] what variant it comes in and all of that
+[19:23.04] now we'll focus our attention purely on
+[19:25.48] AWS in this case so first of all it's an
+[19:28.88] Amazon company yeah D everybody knows
+[19:31.32] that and it's an OnDemand Cloud pay what
+[19:34.20] you go or you reserve there's a
+[19:36.28] difference between them if you reserve
+[19:37.96] you are charged like less than 50% of
+[19:40.92] the actual prices sometime even less
+[19:42.52] than 25% and it's a pay what you use
+[19:45.84] model if you you if you are if you have
+[19:48.56] commissioned yourself uh to use 50 GB of
+[19:51.40] RAM you'll be charged for 50 GB of RAM
+[19:53.08] if you have commissioned that I'll be
+[19:54.32] using 5 GB of RAM you'll be charged for
+[19:56.16] that so it's a pay what you use model
+[19:58.68] and Reserve is always less priced
+[20:01.56] because you are paying for the future
+[20:03.08] you are guaranteeing that okay AWS has a
+[20:06.00] lot of services and this particular
+[20:08.56] course actually touches about a lot of
+[20:10.84] them we will not go into Deep dive of
+[20:12.72] them but definitely you'll be knowing
+[20:14.04] about breadth of services that are
+[20:15.52] available there so there are compute and
+[20:17.44] storage Services which are the popular
+[20:19.12] most Services I think if I'm not wrong
+[20:21.88] storage was the very first service which
+[20:23.88] was offered to the public that hey now
+[20:25.44] you can store everything compute was the
+[20:27.28] second and after that lot more services
+[20:28.84] keep on coming so there's a compute
+[20:30.64] Services means you can use compute like
+[20:32.96] Ram CPUs graphic cards uh which one you
+[20:36.40] want you can choose and pick storage
+[20:38.64] Services we have database Services we
+[20:40.48] have Media Services to store your images
+[20:42.48] videos whatnot dedicated Services all
+[20:45.60] set up uh just ready to be used for
+[20:47.64] machine learning analytics even
+[20:49.92] satellite data yeah it's crazy world
+[20:52.36] even for iot and so much more uh they
+[20:55.12] are always and always every year they're
+[20:57.28] adding one or two Services uh but this
+[21:00.12] exam focuses morly about around 250 or
+[21:02.48] so services so yeah there's a lot one uh
+[21:05.44] the most important thing that you should
+[21:07.00] know about the AWS is the compute
+[21:09.28] storage and access and data transfer
+[21:11.68] this is where majority of the charges
+[21:14.96] are there but not the only one uh AWS
+[21:18.64] charges you for the compute like how
+[21:20.60] much Computing devices you are
+[21:22.12] commissioning for yourself storage and
+[21:24.40] access how much storage and how much
+[21:26.12] access you want or how much how quickly
+[21:27.76] you want the access let's just say you
+[21:29.40] have placed a data you want all the time
+[21:31.64] immediate access to that data uh you
+[21:33.60] will be charged higher if you have
+[21:35.28] placed some data and you say that hey
+[21:37.32] I'll be intimating you that hey I need
+[21:39.56] that data uh 7 days from now and you can
+[21:43.16] just ping me back so in that case the
+[21:45.56] the pricing of the access will be down
+[21:46.96] so there are lots of variant in the AWS
+[21:49.68] like the glaciers and whatnot and then
+[21:52.52] we have the data transfer AWS in fact
+[21:55.08] most of the cloud doesn't charge you
+[21:56.32] when you put the data into the cloud out
+[21:58.24] they most of the time charges you when
+[21:59.60] you take the data out or you're using
+[22:02.12] their bandwidth so funny funny world but
+[22:05.32] uh don't think these are the only ones
+[22:07.12] but majority of the time and even the
+[22:08.52] AWS uh uh the original documentation
+[22:11.12] will say only these ones but the reality
+[22:13.44] is different if you have worked in the
+[22:15.00] cloud really you will know that you are
+[22:17.44] charged for a lot more things even for
+[22:19.88] IPs sometimes you are charged uh so yes
+[22:22.64] there's a lot more charging happens but
+[22:24.16] these are the major ones where you
+[22:25.68] actually get buil then we have the a s
+[22:28.40] Global infrastructure so AWS is present
+[22:31.72] I'll show you in the in the in the
+[22:33.76] console of AWS as well in the next video
+[22:35.92] but AWS is actually a global
+[22:38.00] infrastructure it is present in almost
+[22:40.36] yeah definitely all continents uh all
+[22:42.56] livable continents where people actually
+[22:44.20] live and there's so much more available
+[22:46.88] so in the AWS you'll find a lot of
+[22:49.32] regions these are physical location I'll
+[22:51.44] walk you through with that as well so
+[22:52.96] let's just say this is my AWS region
+[22:55.24] which is available let's just say this
+[22:57.00] is a Mumbai region or AWS East one East
+[22:59.72] 2 they are named with different
+[23:01.12] locations and all of that you can find
+[23:02.68] the map on the AWS website as well and
+[23:05.40] then each one of this location you'll
+[23:07.88] find that this is physical location
+[23:09.44] let's assume Mumbai is the location
+[23:11.64] there are availability Zone az's as we
+[23:14.20] call them for the short for the short
+[23:16.44] these are the data centers so this is my
+[23:19.00] AZ uh C this is my a b and this is my AZ
+[23:24.32] uh one uh so avability Zone definitely
+[23:27.00] are everything needs to be redundant so
+[23:29.04] you cannot just be on one region you
+[23:30.96] have to be in multiple region you have
+[23:32.92] to have multiple zones so in the Mumbai
+[23:34.60] also I guess there are many zones uh
+[23:36.76] we'll verify them directly on when we'll
+[23:38.92] be uh spinning up some of the ec2
+[23:41.24] machines let's assume as of now that we
+[23:43.60] have three zones so they are very nearby
+[23:46.40] but uh you can assume that if one zone
+[23:48.80] goes down other zone is not affected
+[23:50.64] with that although that's a very rare
+[23:52.08] case that even one zone will go down but
+[23:54.40] just for the case if that goes down due
+[23:56.32] to some issues May maybe water is there
+[23:58.68] too much water or something happened
+[24:00.20] there earthquake happened there uh there
+[24:02.80] are backups of that so you can have
+[24:04.68] multiple zones that actually protects
+[24:06.60] you from pretty much like 90% 95% of the
+[24:10.52] such cases but you can also make your
+[24:12.84] application multi- region so one is
+[24:14.56] hosted in Mumbai another one is Canada
+[24:16.64] so there are very less chances that the
+[24:18.20] same Calamity is happening uh in Mumbai
+[24:20.68] and Canada as well so even AWS actually
+[24:24.72] recommends you that at least have uh
+[24:27.16] availabilities zones multi avability
+[24:28.88] Zone deployment should be there but they
+[24:30.80] highly recommend that it should be
+[24:32.08] multi- region as well so that your
+[24:34.00] application is full Pro always remember
+[24:36.44] they are not concerned about your toy
+[24:38.68] app that you are building in your
+[24:40.28] computer they are concerned about the
+[24:41.96] real companies so imagine uh the bank
+[24:44.44] data you don't want your bank data to go
+[24:46.32] away for that so always keep in mind
+[24:48.00] some sensitive uh company or something
+[24:50.60] so that it will give you bigger picture
+[24:52.80] if you'll just always think about your
+[24:54.60] toy application in your uh computer you
+[24:57.04] will never be able to answer correctly
+[24:59.16] in the exam always keep your mind with a
+[25:01.20] bigger intention maybe loan applications
+[25:03.32] maybe uh Bank data or maybe a stock
+[25:06.28] market data so this needs to be
+[25:07.88] protected so you cannot afford them to
+[25:09.76] just be in one Z imagine you're working
+[25:12.20] in the stock market data all of your
+[25:14.12] data now you are in a panic situation
+[25:16.00] you don't want it to be in the
+[25:17.20] availability Zone only C I want it in
+[25:19.80] zone C Zone B and Zone A plus I want to
+[25:22.36] behave at least in three regions as well
+[25:25.16] in other continents uh if it is legally
+[25:27.84] allowed again compliances so uh regions
+[25:31.00] are interconnected with AWS Network AWS
+[25:33.68] Network so this Zone C and Zone B
+[25:35.72] definitely they are connected with
+[25:36.96] internally with the AWS Network AWS
+[25:39.36] Network always think from the hardware
+[25:41.16] first perspective they are big uh actual
+[25:45.12] wires which actually connects them
+[25:47.32] high-speed wires so always keep that in
+[25:49.48] mind and then on top of that there can
+[25:51.48] be a private or public so it depends uh
+[25:55.16] what do you mean by public and private
+[25:56.68] here uh the term public and private you
+[25:59.52] can assume that that public is something
+[26:01.40] which you can access from the internet
+[26:03.92] private is something which is not for
+[26:06.08] your access so what happens in let's
+[26:07.56] just say these are two machines that we
+[26:09.20] have uh let's just say this is the
+[26:11.48] database so database has no way to get
+[26:14.52] connected with the internet outside
+[26:16.28] internet but since these two machine can
+[26:18.44] talk to each other only this machine IP
+[26:22.24] address is allowed to get connected with
+[26:24.60] this database no other machines only one
+[26:26.92] machine so this machine can access
+[26:28.88] internet and can be outside so this is a
+[26:30.72] public facing one but this one there is
+[26:33.08] no way that you can directly connect or
+[26:34.72] talk to that the only way to connect
+[26:36.52] with it or talk to it is via our
+[26:38.40] application in this one this is what it
+[26:40.36] means by the private and public in terms
+[26:42.76] of AWS Global
+[26:44.76] infrastructure of course redundant power
+[26:47.08] networking doesn't need to be say after
+[26:49.40] so much of the time yes everything needs
+[26:51.24] to be redundant nothing can go down okay
+[26:54.56] uh there's so much more in the AWS to
+[26:56.72] discuss about it and these days
+[26:58.20] especially uh you need to be knowing but
+[26:59.96] we'll not discuss about it right now
+[27:01.48] there is a cloudfront Origins there is
+[27:04.36] Edge Edge case these days Computing
+[27:06.64] happens on the edge as well especially
+[27:08.24] like next year warsal a lot of them but
+[27:10.48] don't worry we'll talk about that now
+[27:12.40] this is one of the common question that
+[27:13.72] is being asked from uh in a lot of exams
+[27:17.44] and always remember that uh this is
+[27:20.32] directly taken by the way from the AWS
+[27:22.16] website I haven't built this digram this
+[27:23.84] is directly from the those guys
+[27:26.52] so AWS in fact all the clouds right now
+[27:29.92] we'll focus on just AWS uh they have
+[27:32.36] this shared responsibility model and
+[27:34.60] there's always one or two questions
+[27:36.88] about shared responsibility model AWS
+[27:39.84] wants you to understand that who is
+[27:42.16] responsible for what security uh so
+[27:45.16] always remember this yellow part is the
+[27:47.76] AWS responsibility and this is the
+[27:50.08] customers responsibility so just
+[27:52.40] understand what is the AWS
+[27:53.44] responsibility and after that anything
+[27:55.08] that comes around is your responsibility
+[27:57.92] all right so AWS since they are
+[28:00.44] providing you the cloud they are
+[28:01.92] providing you the hardware they are only
+[28:04.36] responsible for the hardware and the
+[28:06.24] security of the hardware okay giving
+[28:08.56] that so they are responsible for uh the
+[28:11.16] regions so and the avability zone and
+[28:13.32] the edge location so wherever that is
+[28:15.12] it's their responsibility they also
+[28:17.56] provide you hardware and Global
+[28:19.08] infrastructure that means they are
+[28:21.00] making sure that nobody is walking into
+[28:23.12] these regions or A's and are plugging in
+[28:25.60] pen drives in the hardware that's their
+[28:28.48] responsibility they also give you uh the
+[28:31.24] responsibility for the compute storage
+[28:33.64] database and the networking that means
+[28:36.32] that they are saying that hey we are
+[28:38.28] responsibility of the security of the
+[28:40.32] computer so if you spin up the machine
+[28:42.64] that machine by default when that spins
+[28:44.72] up is not malicious if you're using
+[28:46.84] coist not the third party packages they
+[28:49.36] are responsible for that but what you
+[28:51.28] install in them how you use that that's
+[28:53.68] your responsibility how you are making
+[28:55.24] it public accessible not accessible that
+[28:57.12] is your responsibility uh the software
+[28:59.56] that AWS provide like for example almost
+[29:01.96] everything is a software in the world of
+[29:03.48] cloud even when you spin machines when
+[29:05.72] you spin up the Rams that software that
+[29:08.16] when you say a ram you click your slider
+[29:10.96] from 2GB to 12gb uh that works and as
+[29:14.32] well as that's not malicious that's the
+[29:16.56] responsibility of the AWS apart from
+[29:18.44] that everything is your responsibility I
+[29:21.08] always keep this in mind that hey AWS
+[29:23.52] will not allow anybody to walk into
+[29:25.40] their facility and plug in the pend
+[29:27.12] Drive apart from that everything else is
+[29:29.36] my responsibility that's the best way to
+[29:31.28] always remember that and serve well so
+[29:34.12] far so what's your client data are you
+[29:37.12] responsible for encryption
+[29:38.48] authentication how you're managing your
+[29:40.52] IM your users who is logging in who has
+[29:43.00] the email access uh serers side
+[29:45.12] encryption networking traffic are you
+[29:47.20] having low traffic high traffic
+[29:49.52] everything is there there are solutions
+[29:51.52] uh but everything is your responsibility
+[29:53.20] firewall OS when you are actually
+[29:55.88] deploying your own OS uh that's your
+[29:58.40] responsibility platform application
+[30:00.40] customer data it's all your
+[30:02.76] responsibility a lot of tricky question
+[30:04.88] comes around with that once we finish up
+[30:06.64] this series we'll definitely have some
+[30:08.76] practice questions and definitely
+[30:10.16] without practice questions you cannot
+[30:11.64] actually clear the exam uh that is a
+[30:13.44] straight of fact in the AWS you do not
+[30:16.16] clear any exams without the mock exams
+[30:19.24] and the mock questions if you don't have
+[30:21.20] there is a rare case that you will be
+[30:22.84] clearing the exam all right so uh just
+[30:25.80] remember uh user data data encryption
+[30:28.60] ec2 scaling uh lot more is your
+[30:31.20] responsibility usually the question is
+[30:32.80] framed around similar syntax uh there is
+[30:35.32] a user data there's a data encryption so
+[30:37.16] whose responsibility it is ours ours not
+[30:40.08] the cloud provider so uh this is the
+[30:43.08] first uh that we have gone through with
+[30:45.60] that I know this is a really long video
+[30:48.16] almost 30 minutes uh but this is how you
+[30:50.28] study the cloud I don't want to give
+[30:52.04] like 100 videos in the series I just
+[30:53.88] want to give you five or 10 videos and
+[30:55.68] that's it you have cleared the first
+[30:56.88] exam that's why the videos are going to
+[30:58.76] be a little bit longer and that's it
+[31:01.12] this is the first step into that now in
+[31:03.20] the next one we'll move into that let me
+[31:05.48] uh in my notes the next one is for the
+[31:07.96] am so we'll be studying about the am uh
+[31:10.52] we'll have a smaller videos in between
+[31:12.44] as well which walk you through with the
+[31:13.72] cloud and how does it look like the
+[31:15.24] regions and all these things they will
+[31:17.08] be shorter ones but they are just here
+[31:19.16] to give you actual practical
+[31:20.80] implementation of that so that is it uh
+[31:23.40] let's catch up in the next video and
+[31:25.00] don't forget uh to boost my motivation
+[31:27.28] as well in the comment section as well
+[31:28.96] we are targeting for 100 comments let's
+[31:30.92] go ahead and get
+[31:37.64] started

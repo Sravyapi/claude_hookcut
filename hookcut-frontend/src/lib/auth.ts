@@ -98,11 +98,15 @@ export const authOptions: NextAuthOptions = {
           const apiBase =
             process.env.NEXT_PUBLIC_API_URL || `${backendUrl}/api`;
           try {
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 5000);
             const res = await fetch(`${apiBase}/auth/role`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email: user.email }),
+              signal: controller.signal,
             });
+            clearTimeout(timeout);
             if (res.ok) {
               const data = await res.json();
               token.role = data.role ?? "user";

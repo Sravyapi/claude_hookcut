@@ -1,0 +1,994 @@
+[0:03.20] hey everyone welcome back to the channel
+[0:04.48] I hope you guys are doing extremely well
+[0:06.32] so this is another lecture from the
+[0:07.72] sters A2Z DSA course so just in case
+[0:11.08] you're for the first time here this is
+[0:12.40] world's most in-depth DS algo course why
+[0:15.88] do I say that because you can go over
+[0:18.08] the entire internet buy any of the paid
+[0:19.84] courses none of them will have 456
+[0:23.28] modules in this course alone we will be
+[0:25.52] solving 400 plus problems on DS algo so
+[0:29.32] at the end of the course you will be so
+[0:31.04] well vered with Ds algo that you can
+[0:32.84] clear any of the DS algo rounds in any
+[0:35.56] of the interviews in any of the
+[0:36.80] companies in any part of the world so
+[0:39.04] till now we have completed till step two
+[0:41.52] today we will be starting with step
+[0:43.44] three which is nothing but arrays so in
+[0:45.40] order to understand arrays what we will
+[0:47.32] be doing is we will be solving 41
+[0:50.00] different problems so before moving into
+[0:52.56] the problems let's understand some basic
+[0:56.00] stuffs about array so when I say array
+[0:58.76] what is an array so array is nothing but
+[1:01.32] a data structure which contains similar
+[1:05.44] elements now what do I mean by similar
+[1:08.24] elements it can be integers but remember
+[1:12.48] one thing if it's a data structure it
+[1:15.60] has to contain integers only it cannot
+[1:18.44] contain integers string it has to
+[1:21.24] contain one particular type of data so
+[1:25.08] imagine I integers so the array can
+[1:27.52] contain all of them as integers or maybe
+[1:30.92] as character or maybe as string or maybe
+[1:35.52] as pair so array is a data structure
+[1:38.88] which can contain any kind of data type
+[1:42.40] but one thing has to be clear that all
+[1:45.00] of those elements has to be of the same
+[1:48.00] data type so now moving to the next
+[1:49.92] Point how does an array look generically
+[1:52.56] if I have to draw an array array is
+[1:54.68] represented like this now what is the
+[1:57.16] size of this array 1 2 3 4 5 5 six so
+[2:00.84] the size of this array is six in order
+[2:03.36] to declare an array of size six what
+[2:05.64] what you can do is you can write int
+[2:07.52] array six that will do if you're
+[2:10.28] following Java it should be int array
+[2:13.04] something like this new int and size six
+[2:17.20] this is how you can Define in Java now
+[2:19.76] if you're defining an array of size six
+[2:22.20] whenever you define something like this
+[2:24.36] what happens is an array of some garbage
+[2:27.84] values is defined if you're defining it
+[2:30.96] inside the main function like if you're
+[2:34.28] writing something like int array and six
+[2:37.36] so all of these six positions like this
+[2:39.68] position this position this position all
+[2:41.96] of them will be stored with some garbage
+[2:44.20] values you cannot predict those garbage
+[2:46.36] values but in case instead of declaring
+[2:49.76] it inside the int main if you decide
+[2:52.52] that Hey listen I'm not going to declare
+[2:54.76] it inside the inter main I will be
+[2:56.68] declaring it before the in main this is
+[2:59.44] what we call call AS Global this is what
+[3:02.16] we call AS Global so if you're going to
+[3:04.40] define the array globally then all of
+[3:07.04] them will be filled with zeros this is
+[3:10.04] what happens in C++ Java okay I am not
+[3:13.16] sure about python but should be
+[3:14.64] something similar now you might be
+[3:16.24] thinking then stver you have defined an
+[3:19.04] array of size six what is the maximum
+[3:22.96] size of array that we can Define so the
+[3:26.04] maximum size of array that you can
+[3:28.12] Define is 10 to the power 6 you can go
+[3:32.04] ahead and say int array of 10 the^ 6
+[3:35.96] this is the maximum length of array that
+[3:38.72] you can Define but there's a catch over
+[3:40.56] here this is the maximum size when you
+[3:43.40] declare it inside yes inside inter main
+[3:48.32] this is the maximum size imagine you say
+[3:51.80] that okay listen I'm going to declare
+[3:53.76] the array globally so if I go ahead and
+[3:56.16] say okay over here is where I'll declare
+[3:59.28] the array so if I declare the array
+[4:01.32] globally then it will be 10 to the^ 7 it
+[4:04.64] will be 10 to the^ 7 so the max size is
+[4:08.40] 10 ^ 7 if you go ahead and declare it
+[4:12.36] globally remember this now the next
+[4:15.20] thing how do you access an array so
+[4:17.92] there is something known as index so in
+[4:20.44] an array the first index is zero
+[4:23.76] followed by one then two then three then
+[4:26.00] four so the last index is nothing but
+[4:28.68] size minus one 1 and the first index is
+[4:31.16] nothing but zero so the array indexing
+[4:34.00] is from 0 to N - 1 in order to access
+[4:39.08] any of the elements of the array what
+[4:40.80] you can do is you can just loop from I
+[4:43.40] equal to 0 because 0 is the first index
+[4:45.84] you can go ahead till n minus one
+[4:48.48] because n minus one is the last index
+[4:50.48] and you can run the loop as I ++ so if
+[4:52.80] you go ahead and do a print of array of
+[4:55.68] I what will happen is this will one by
+[4:58.80] one first the value of this will be
+[5:00.92] array of zero so whatever you have
+[5:02.88] stored at array of zero imagine this is
+[5:05.04] an array of integers and I'm storing
+[5:06.92] like 2 3 1 4 7 six so what will happen
+[5:10.80] is first two will get printed then three
+[5:13.16] will get printed then one then four then
+[5:15.12] 7 six this is how you can easily access
+[5:18.88] an array so before moving on to the
+[5:20.88] problem solving let's understand where
+[5:22.80] is array stored in the computer memory
+[5:26.04] so can you predict it no can I predict
+[5:29.04] it no so whenever you declare an array
+[5:31.40] something like this it basically goes
+[5:34.16] into the computer's memory creates a
+[5:36.88] block of like size six block and the
+[5:40.28] first block is stored in some random X
+[5:44.60] address location so this address
+[5:46.88] location no one can predict random X
+[5:50.12] address location and this x is where it
+[5:53.16] stores the zeroth index element but
+[5:56.56] something we can predict is if this is X
+[5:59.92] the next first index will be stored at x
+[6:03.16] + one memory address the next as x+2 the
+[6:07.40] next at x + 3 the next at X+ 4 and the
+[6:11.20] next at x + 5 so contigous memory
+[6:14.04] locations is where all the corresponding
+[6:17.36] indexes will be stored but we cannot
+[6:19.64] predict X thereby accessing an array by
+[6:22.60] address is not possible hence we address
+[6:25.84] it by an index so this was about the
+[6:29.60] basics of the array now let's move on to
+[6:31.32] the problem solving so coming to step
+[6:33.24] 3.1 the first problem is largest element
+[6:36.72] in an array so before moving on to the
+[6:38.88] problem I want you to tell something now
+[6:41.04] whenever you go to an interview the
+[6:43.04] interviewer will give you a question but
+[6:45.20] if you know the solution should you say
+[6:47.68] the solution directly the answer to that
+[6:49.60] is no there is a reason why you're
+[6:52.08] preparing you might know the solution
+[6:54.00] but you should not tell it you should
+[6:56.04] build the interview it's you who should
+[6:58.20] drive the interview when when I say
+[6:59.88] Drive the interview now this is a very
+[7:01.84] easy question but when I say Drive the
+[7:04.12] interview imagine you have been asked a
+[7:05.96] hard question and you know the optimized
+[7:08.40] like the most optimized solution in
+[7:10.68] terms of time complexity and space
+[7:12.36] complexity should you say it directly
+[7:15.56] whenever you have given the question no
+[7:17.92] you should drive the interviewer at
+[7:19.84] first you should ask him about test
+[7:21.56] cases then once you've understood the
+[7:24.12] question properly you should give him
+[7:26.00] the brute for solution which is the like
+[7:28.32] the most normal solution that comes to
+[7:31.20] your brain at first that is what you
+[7:33.24] call as a Brute Force solution then you
+[7:35.52] go ahead and maybe optimize it and maybe
+[7:38.16] get something as a better solution now
+[7:40.40] for every problem better might exist
+[7:42.96] might not exist but a brute usually does
+[7:45.52] exist you get a better one by optimizing
+[7:48.52] The Brute then you optimize the better
+[7:51.24] to get the most optimal solution so
+[7:55.40] again there can be several other flows
+[7:57.76] as well like brood better more better
+[8:00.32] optimal it's you who will drive the
+[8:02.80] interview it's you who will decide how
+[8:05.44] that 30 minutes or how that 1 hour is
+[8:07.36] driven so if you know the solution and
+[8:09.92] you're just saying it in the first two
+[8:11.16] minutes it might be an issue so please
+[8:13.84] drive the interview show that you can
+[8:16.44] think right from the scratch you can
+[8:18.04] build it sometimes you have to fake it
+[8:20.24] but that is how the interviews go in DS
+[8:23.00] algorithms so in harder problems you
+[8:25.12] have to follow this for easier problems
+[8:27.04] do not follow it but in all the easier
+[8:29.00] problems I'll also be following this
+[8:31.28] pattern why so that you get used to this
+[8:33.52] pattern and this gets into your blood so
+[8:35.92] that when you get into an interview you
+[8:37.80] actually are kind of always speaking
+[8:40.08] brute better optimal okay so coming to
+[8:42.68] coming back to the problem finding the
+[8:44.60] largest element in an array what does
+[8:46.68] the problem mean obviously given an
+[8:49.56] array of integers give me the largest
+[8:52.80] integer in it so over here the largest
+[8:54.96] integer is five so I want you to give me
+[8:57.76] five how can you do this very simple if
+[9:01.52] I have to ask you what is the Brute
+[9:03.20] Force solution that comes to your mind
+[9:05.40] you'll be like St The Brute Force
+[9:07.24] solution is I will be sorting it and if
+[9:10.08] I sort it what will happen is it will be
+[9:12.12] looking like 1 2 2 3 5 the moment I
+[9:15.40] sorted the last element did I tell you
+[9:19.24] what is the index of the last element I
+[9:21.84] did so if the size over here is five the
+[9:24.96] last will be array of n minus one can I
+[9:28.84] say if I print this after sorting this
+[9:32.20] will be my largest element obviously
+[9:35.56] because once you have sorted it it is
+[9:37.80] sorted in an ascending order so the
+[9:40.32] smallest will be at first and the
+[9:42.28] largest will be at last so if you sort
+[9:44.92] it and you print it you'll be getting
+[9:47.36] the largest element now what will be the
+[9:49.76] time complexity of this solution you
+[9:52.20] know in order to sort if you apply M
+[9:54.64] short quick sort anyone any one of them
+[9:57.56] the time complexity will take and
+[10:00.04] login and the space complexity if you
+[10:03.04] apply quick sort will be be go of one
+[10:05.88] and I'm I'm ignoring the recursive stack
+[10:08.52] space but I'm still taking a Time
+[10:11.12] complexity of n login to sort it so this
+[10:14.08] is why this is a Brute Force solution
+[10:16.16] because this is the most like normal
+[10:19.00] solution that comes to your hand this is
+[10:21.04] why this is the Brute Force solution
+[10:22.40] because this is the most like generic
+[10:25.08] solution that will come to your head
+[10:26.36] when you hear this problem so once
+[10:28.36] you've given uh the the brw to the
+[10:29.76] interview you can have a better solution
+[10:31.92] or you might not so in this case we do
+[10:33.72] not have a better solution so we'll move
+[10:35.44] to the optimal solution now what is the
+[10:37.48] most optimal solution for this one
+[10:40.12] obviously we have to optimize n login so
+[10:42.60] what we will do is we will say okay
+[10:44.36] let's let's keep a largest variable and
+[10:47.48] I'll say largest to be the first element
+[10:49.48] because I know one of the elements of
+[10:51.68] the ARR will always be largest so I will
+[10:54.28] say first element you are the largest
+[10:57.28] assume you are the largest and then I
+[10:59.00] start traversing I say okay three you
+[11:02.68] can travel from three or you can travel
+[11:04.32] from two as well that is okay I said
+[11:06.28] three are you greater than the largest
+[11:08.88] so largest is currently stored as three
+[11:10.76] three are you greater than three it says
+[11:12.80] no so I say okay move ahead two are you
+[11:15.80] greater than three he says no move one
+[11:19.40] are you greater than three no he says
+[11:21.56] move five are you greater than three yes
+[11:25.04] this will be five next two are you
+[11:28.36] greater than five no so after this the
+[11:31.60] iteration is over once the iteration is
+[11:34.00] over the largest is storing the largest
+[11:36.76] element and it's very simple if I have
+[11:39.60] to code it it'll be like largest is a of
+[11:42.44] Z and then you start the for loop from I
+[11:45.12] equal to zero you go something like I n
+[11:48.72] i ++ and you say if array of I again I
+[11:53.08] am writing the pseudo code can be
+[11:55.04] written in any of the
+[11:57.36] languages array of I
+[11:59.96] that's it and at the end of the day you
+[12:01.48] can say
+[12:02.44] print array of sorry print largest is
+[12:07.28] what you'll print simple as that now you
+[12:10.48] can also run the loop from one because
+[12:13.80] you have stored the largest of a of zero
+[12:15.60] doesn't matter not not a big
+[12:17.88] optimization what is the time complexity
+[12:20.24] we're just running a loop for B go of n
+[12:22.64] so can I say the time complexity over
+[12:24.92] here is B go of n now this is much much
+[12:27.80] better than the Brute Force solution
+[12:29.52] this is why this will be categorized as
+[12:31.40] an optimal solution because you kind of
+[12:34.20] optimize the time complexity somewhere
+[12:36.76] because B of n is definitely better than
+[12:39.32] b go of n login so this is how you can
+[12:42.40] easily solve this problem in case you
+[12:44.20] want to submit this problem the problem
+[12:45.72] link will be in the description so
+[12:47.52] remember one thing we're talking about
+[12:49.28] arrays but in a lot of places you might
+[12:51.56] find something like a vector and in Java
+[12:53.88] you might find array list or list so as
+[12:56.40] long as it's a data structure it's
+[12:59.20] stores similar elements like vector is
+[13:01.28] also a data structure which stores
+[13:03.60] similar elements it is okay like it will
+[13:06.44] be considered like it's not an array but
+[13:08.96] the problems can be solved using arrays
+[13:11.72] using list using vectors because it's a
+[13:14.36] data structure which is storing similar
+[13:16.20] integers you might find something like a
+[13:18.08] vector got it but the problem link is in
+[13:20.28] the description so when you go to online
+[13:22.24] compilers you don't have to print it
+[13:24.20] usually they will be asking you to
+[13:25.80] return it so you can easily go ahead and
+[13:28.04] return it like this so going to the next
+[13:30.56] problem it states second largest element
+[13:33.48] in an array without sorting this
+[13:35.56] question might look very very simple but
+[13:37.64] this question is very very commonly
+[13:39.32] asked in an interview because a lot of
+[13:40.88] people do not know how to solve it so
+[13:43.28] they might ask you second largest or
+[13:45.12] they might ask you second smallest so
+[13:47.00] the pattern that you have to answer in
+[13:48.92] an interview is you start from grot then
+[13:51.48] you go to better then you go to Optimal
+[13:53.80] that's how you will be solving it when I
+[13:55.84] talk about Groot and you have to find
+[13:58.00] second largest ele
+[13:59.84] what will be the Brute Force The Brute
+[14:01.88] Force is going to be very simple I will
+[14:03.88] say hey I'll be sorting the array and if
+[14:06.72] I sort the array it will looks something
+[14:08.24] like 1 2 4 5 7 and I know one thing for
+[14:12.12] sure my largest element will be array of
+[14:17.12] n minus one that is something which I'm
+[14:20.44] very very sure about but can I say that
+[14:23.24] the second largest element will be array
+[14:25.20] of n minus 2 can I say this I cannot
+[14:28.64] because the largest is seven and yeah
+[14:31.92] there is another seven but that's not
+[14:33.60] second largest that is largest the
+[14:35.68] second largest is five so what you have
+[14:39.52] to do is you have to start from the N
+[14:43.00] minus 2 index and you have to kind of go
+[14:46.88] like okay seven are you equivalent to
+[14:50.88] largest because as of now largest is
+[14:52.40] seven that is what you have stored
+[14:54.12] because you've got this and youve stored
+[14:55.80] it in largest now you go at seven and
+[14:58.16] you say are are you same as seven he
+[15:00.92] says yes so definitely you're not second
+[15:03.56] largest he then goes back five are you
+[15:06.12] same as largest no so you are my second
+[15:08.80] largest so you are my second largest
+[15:11.84] that's how you can do it so it's it's
+[15:14.36] more like you have to start from the
+[15:15.88] back since I know that the largest is
+[15:18.76] area of n minus one I can probably start
+[15:21.76] from n minus to because that is the
+[15:24.00] second last index and I can go like
+[15:26.80] greater than equal to Z iusus and what I
+[15:29.52] can say is if array of I is not equal to
+[15:34.72] largest can I say this will be my second
+[15:37.20] largest second largest equal to array of
+[15:40.04] I and then probably I can break out
+[15:42.68] because there's no need to go any
+[15:44.00] further can I said this will be my code
+[15:47.40] so at first what did I do at first I did
+[15:51.08] something like a sorting so sorting
+[15:53.32] ended up taking a n logarithmic of n
+[15:56.60] correct because sorting is sorting
+[15:58.40] definitely Tak that much of time and
+[16:00.36] then this at the worst case what is the
+[16:03.52] worst case if I think properly if I give
+[16:07.04] you an array something like this 1 7
+[16:11.36] 7777 then what will happen you will
+[16:13.88] start from here no this is equivalent to
+[16:17.20] largest this is also equivalent to
+[16:19.44] largest this is also equivalent to
+[16:21.52] largest this is also equivalent to
+[16:23.40] larest and this is also equivalent sorry
+[16:26.08] this is not so you Traverse the end Tire
+[16:30.12] right from the end like n minus 2 until
+[16:33.40] the beginning so this at the worst case
+[16:36.20] can go for a beo of n there might be a
+[16:39.32] case where your second
+[16:41.60] largest might not exist might not exist
+[16:45.60] in that case you can keep it as minus
+[16:47.04] one might not like if this is seven
+[16:49.48] there is no second largest element in an
+[16:52.20] but that is that might not happen you
+[16:54.68] you should tell the interviewer by
+[16:56.36] yourself these cases so I can say the
+[16:58.92] the total overall complexity of the
+[17:01.00] Brute Force solution is first I sought
+[17:03.56] and the worst case I might travel the
+[17:05.40] entire way in order just in case all of
+[17:08.48] them are largest elements so that's how
+[17:12.16] you'll be telling the Brute Force
+[17:13.60] approach so what will be a better
+[17:15.56] solution a better solution will be like
+[17:17.92] we will do a first yes first pass and
+[17:22.44] we'll find out the largest element if
+[17:25.16] you remember we did find out the largest
+[17:26.84] element before this problem so what I
+[17:29.12] will do is I'll at first keep largest as
+[17:32.44] one which is this guy then I'll start
+[17:36.12] from two I'll be like two are you
+[17:38.76] greater than one he says yes then I'll
+[17:41.24] go to four four are you greater than two
+[17:43.52] he says yes then I go to seven seven are
+[17:46.52] you greater than four he says yes then I
+[17:48.92] again go to seven seven are you greater
+[17:50.72] than seven he says no Then I go to five
+[17:53.20] five are you greater than seven no so
+[17:55.08] the largest on the first pass is stored
+[17:58.64] as seven and the code will be similar to
+[18:01.32] the first one so you have figured out
+[18:03.36] the largest over here by doing a first
+[18:06.44] pass now what you will do is you'll say
+[18:08.64] okay let's keep second
+[18:11.28] largest as minus one and let's again try
+[18:15.36] the same thing
+[18:17.64] one hey one are you greater than minus
+[18:20.76] one he says yes and are you not largest
+[18:23.68] he says yes so I'll take one and that
+[18:26.64] will be my second largest okay let's go
+[18:29.12] ahead he says two are you greater than
+[18:32.12] one he says yes but are you not largest
+[18:35.12] he says yes so thereby I take two then I
+[18:38.92] go to four and I ask four are you
+[18:41.44] greater than two he says yes but four
+[18:44.36] you are not largest now he says no so
+[18:47.96] four next seven seven are you greater
+[18:51.28] than four yes but are you largest yes I
+[18:54.36] am largest so do not take me do not take
+[18:57.08] me so he'll not take him next X go seven
+[18:59.96] seven are you greater yes but I am
+[19:01.84] largest five are you greater than four
+[19:05.40] yes are you largest no so five comes up
+[19:10.08] in the second pass you got the second
+[19:12.64] largest as five so if I have to write
+[19:15.64] the code can I say the code is very
+[19:17.60] simple I start from zero I go until the
+[19:20.52] end i++ and I say listen if array of I
+[19:25.56] maybe you can store second largest as
+[19:27.88] minus one
+[19:29.40] just in case there is none and you can
+[19:31.84] say second
+[19:32.84] largest if it's greater and if array of
+[19:36.88] I is not equal to
+[19:41.52] largest then you can say second
+[19:44.44] largest equal to array of I quite simple
+[19:48.44] this will be a second pass first you
+[19:50.68] write this this piece of code then you
+[19:53.80] can write this piece of code and at the
+[19:55.84] end of the day you can easily go ahead
+[19:57.76] and print
+[19:59.88] second largest if I have to ask you the
+[20:02.72] time complexity of this now you can say
+[20:05.80] that it's a b off n but you should not
+[20:07.56] in an interview you should say okay the
+[20:09.80] first pass takes beo of n the second
+[20:13.24] pass takes beo of n so the algorithm is
+[20:18.00] taking two passes and it's like n + n
+[20:22.00] it's actually running for two passes so
+[20:24.52] it's a bigo of 2 N approach so we have
+[20:28.84] got a better approach of big go of 2 N
+[20:31.96] where we have to run twice through the
+[20:33.92] array and we can get the largest in the
+[20:35.80] first pass and we can get the second
+[20:37.60] largest in the second pass now it's time
+[20:39.64] to understand the optimal approach so in
+[20:42.52] the optimal approach what you will do is
+[20:45.28] you will say hey my largest will be the
+[20:48.48] first guy which is aray of zero and my
+[20:51.64] second largest will be nothing but
+[20:55.04] minus1 so I'm saying okay the first guy
+[20:58.24] is my largest for sure so I'm kind of
+[21:01.48] taking one as my largest and I'm saying
+[21:04.36] second largest is minus one assuming
+[21:07.04] that this array does not contains any
+[21:10.04] negative numbers that is an assumption
+[21:12.24] I'm working at in case the array
+[21:13.96] contains negative numbers you can
+[21:15.96] probably take this as integer minimum
+[21:18.64] integer minimum in all the cases that I
+[21:20.96] have told in case the array contains
+[21:22.92] negative numbers you can take it as some
+[21:26.04] very small number like integer minimum
+[21:28.60] or a very very negative number got it so
+[21:31.60] have largest is assigned as one and
+[21:34.32] second largest is assigned as minus one
+[21:37.24] now what you do is you simply go ahead
+[21:40.32] and say okay fine let's Traverse so we
+[21:44.12] know the first guy we should not do
+[21:46.48] anything why because that's the largest
+[21:48.20] as of now so we will not do anything to
+[21:49.84] it we'll go to the two we have two so
+[21:53.72] two is like hey two are you greater than
+[21:57.32] largest he says I I am dude I am greater
+[22:00.00] than largest for sure I'm like okay you
+[22:02.68] greater than largest so
+[22:05.04] definitely you should be the largest but
+[22:07.84] can I say if someone becomes the largest
+[22:11.52] hear me out properly If someone becomes
+[22:14.16] the largest then the previous largest
+[22:17.24] will go second isn't it if you are in a
+[22:20.64] class and you are always first and if
+[22:23.92] someone comes up and says gets better
+[22:27.04] marks than you then he'll be the first
+[22:28.88] guy and you'll be the second right the
+[22:31.84] same logic if two is greater than
+[22:34.04] largest what will happen is this will go
+[22:36.92] to the second largest right because
+[22:39.32] there is someone who is now the largest
+[22:41.40] and we will replace the largest by two
+[22:43.60] perfect now we go to four four says am I
+[22:47.36] greater than largest yes you are so now
+[22:50.28] the largest goes to second largest it
+[22:53.08] goes to second largest and this one
+[22:54.92] becomes four now I have seven seven says
+[22:58.80] I'm the largest so this will take the
+[23:01.24] largest and this will become the largest
+[23:03.84] again seven nothing to do because we
+[23:07.36] need to be very careful we have a seven
+[23:10.00] which is equivalent to largest so do not
+[23:12.44] do anything if it's equivalent to larges
+[23:15.12] do not do anything next we have five
+[23:19.12] this is why you have to understand one
+[23:20.52] thing we got five now this five is not
+[23:24.28] greater than largest but we need to
+[23:26.56] check is it greater than second he says
+[23:29.32] yes I am just replace the second largest
+[23:33.08] so apparently you got the largest as
+[23:34.60] seven and the second largest as five
+[23:37.80] very simple make sure do not do anything
+[23:41.32] in terms of equivalent do not if it's
+[23:44.08] lesser then only compare with second
+[23:46.20] largest otherwise do not so let's now
+[23:48.40] Cote this up by the way you can find the
+[23:50.04] problem Link in the description so over
+[23:52.36] here what they're asking is you have to
+[23:54.40] return the second largest and the second
+[23:56.84] smallest so you have to find both both
+[23:58.64] of them so something like you have to
+[24:00.08] find second
+[24:01.72] largest right and then you have to find
+[24:04.20] second
+[24:06.96] smallest and then you have to return the
+[24:09.80] array of this and in what order yeah
+[24:12.12] first the largest and then the smallest
+[24:15.84] this is what you have to do so maybe we
+[24:17.64] can write a function which Finds Me
+[24:19.84] second largest where I pass in the array
+[24:23.24] and the n and similarly I can write a
+[24:25.32] function which finds me the second
+[24:27.40] smallest remember in your coding
+[24:30.68] interviews or rounds you have to code
+[24:35.00] using these kind of variable namings you
+[24:36.92] cannot give X Y AB BC you have to have
+[24:40.00] proper variable namings you have to have
+[24:42.08] proper function namings so that you
+[24:44.04] stand out in an interview so let's
+[24:45.84] quickly write the second largest second
+[24:48.76] largest is taking the array and the end
+[24:52.84] so what did I say at first what do you
+[24:54.52] need to do you have to kind of say
+[24:56.00] someone as the largest and maybe we can
+[24:58.00] call it as a of0 and we can say second
+[25:02.88] largest and we can say second largest as
+[25:05.92] minus one now let's quickly see if
+[25:09.28] they're stating anything about uh like
+[25:13.04] okay they have clearly stated the array
+[25:15.20] will be of minimum of length two so we
+[25:17.80] are sure that every array will have two
+[25:19.72] numbers that is something which we are
+[25:22.04] sure about and the other thing if we
+[25:24.72] read properly it states that it has
+[25:27.36] unique unique non- negative integers so
+[25:30.16] it's kind of saying that it doesn't have
+[25:32.40] duplicates so if the array size is two
+[25:35.36] and it doesn't have duplicates so every
+[25:37.68] array will have a second largest element
+[25:40.56] every array will have a second largest
+[25:41.96] element got it so we can just go across
+[25:45.52] from 1 till n and we can say Hey listen
+[25:50.16] if a of I is greater than largest then
+[25:54.28] the second largest guy will clearly yes
+[25:57.68] there's no doubt in this we'll we'll
+[25:59.88] take the largest guy and the largest
+[26:02.16] will be replaced by aray of I make sure
+[26:04.60] you first take the largest and then
+[26:07.48] replace the largest otherwise there will
+[26:08.96] be a problem and then we can say Hey
+[26:10.88] listen if a ofi is greater than largest
+[26:14.60] and an a ofi because it has to be it has
+[26:17.64] to be lesser than largest by the way and
+[26:20.76] a ofi is greater than very important is
+[26:24.00] greater than second largest in that case
+[26:26.28] you a second largest can you please take
+[26:28.44] care of this is that's it and you can
+[26:31.56] return second largest similarly let's
+[26:34.08] write the second smallest as well the
+[26:36.64] second smallest will again take the same
+[26:39.32] vector and the n and you can say
+[26:42.84] smallest equal to array of zero and
+[26:47.16] against the second
+[26:49.64] smallest the name is kind of weird not
+[26:52.44] an issue over here please make sure you
+[26:54.36] give int Max why int Max the reason
+[26:57.24] being you're finding smallest so it has
+[26:59.20] to be a very big number as the array
+[27:01.44] will be from zero so minus one will work
+[27:03.28] for minimals like for largest it will
+[27:05.48] work but for this you have to give int
+[27:07.20] Max because it's 10 to the^ 9 had this
+[27:09.48] been greater than you have to take a
+[27:10.72] bigger number than this got it and now
+[27:13.20] now let's start with one and let's go
+[27:16.04] till here that's something which we know
+[27:18.28] and now we know one thing we need the
+[27:20.48] smallest if a ofi is smaller than the
+[27:24.00] smallest then the second smallest takes
+[27:26.96] the smallest
+[27:28.84] quite obvious and and the smallest takes
+[27:33.04] the array of I and what
+[27:35.96] if array of I is not equal to smallest
+[27:40.68] that means it's not but it is smaller
+[27:44.92] than the second smallest I'm like okay
+[27:47.40] if you're are smaller than the second
+[27:48.52] smallest then that's
+[27:52.68] perfect the second smallest will just
+[27:56.32] take array of I and once have done
+[27:59.20] this
+[28:01.52] return smallest once you have done
+[28:04.32] everything you can just go ahead and run
+[28:05.68] it and it should be running absolutely
+[28:07.16] fine does and let's quickly submit this
+[28:09.52] and see if it is submitted or not but
+[28:12.12] the problem link is in the description
+[28:14.08] make sure you try it out by the way what
+[28:15.64] is the time complexity of
+[28:17.32] this B go of n because you're just doing
+[28:20.52] one pass for finding second largest it
+[28:23.36] is beo of n the optimal solution to find
+[28:27.24] second largest has just takes one pass
+[28:30.48] and the time complexity is B go of n
+[28:33.00] that is why it is better than the better
+[28:35.04] solution and hence it's called the
+[28:37.28] optimal solution so we done with the
+[28:39.12] second problem as well let's go on to
+[28:41.24] the next problem which says check if the
+[28:43.48] array is sorted so coming to the problem
+[28:46.52] check if the array is sorted very simple
+[28:49.48] problem given an array you have to see
+[28:52.12] if it's sorted in a non-descending order
+[28:56.52] what does it mean 1 okay two two is kind
+[29:01.24] of greater than equal to 1 two is
+[29:03.36] greater than equal to two 3 is greater
+[29:05.64] than equal to 2 3 is greater than equal
+[29:07.64] to 3 and four is greater than equal to
+[29:10.16] so it's okay let's check out the next
+[29:12.28] array one okay two okay because greater
+[29:17.00] than equal to 1 1 not greater than equal
+[29:20.20] to two not this is not sorted this is
+[29:23.96] sorted how will you do it very simple
+[29:27.56] just Trav
+[29:28.80] in the array from the first element do
+[29:31.28] we have a brw better optimal for this I
+[29:33.40] don't think we need a bro better optimal
+[29:35.20] for this it's a very straightforward
+[29:36.80] problem so what you'll do is you'll
+[29:38.08] start from the first index and you'll be
+[29:40.44] like let's check with the previous is
+[29:42.80] the previous smaller than equal to it is
+[29:46.20] then you'll go to the next and again
+[29:47.64] you'll check with the previous is it
+[29:49.36] smaller than equal to then you'll go to
+[29:51.12] the next then you'll go to the next and
+[29:53.52] similarly you can check for everyone
+[29:56.00] very obvious isn't it so it's like
+[29:58.56] if I have to write the pseudo code it'll
+[30:00.52] go from one it'll go to n you don't need
+[30:03.72] to check for the first element no need
+[30:05.12] to check for the first element you say
+[30:07.16] Hey listen if array of I is actually
+[30:12.12] greater
+[30:13.16] than equal to array of IUS one that
+[30:15.80] should be the case but non descending
+[30:18.04] nones
+[30:19.00] descending it's okay but if it is not
+[30:23.28] then there is a problem you say return
+[30:25.56] false stating
+[30:28.08] that is not sorted and if the entire
+[30:31.80] iteration is over if the entire
+[30:34.00] iteration is over and I completes the
+[30:37.32] entire iteration and reaches the step
+[30:40.24] which means the end of the follow Loop
+[30:42.32] then you can say return true in the
+[30:44.40] function stating this this array is
+[30:48.56] sorted so if I try the same code in the
+[30:52.36] online compiler by the way again the
+[30:53.96] problem link will be in the description
+[30:55.60] you can see you can simply write like
+[30:57.16] this and we can leave the if as blank
+[31:00.24] and we can in the else just return the
+[31:03.00] moment you find someone who has a
+[31:04.76] problem that means that is not sorted
+[31:06.60] just return a false if it completes the
+[31:08.76] fall Loop which is the step then you
+[31:10.24] return a true this is how easy it is in
+[31:13.04] order to write if an array is sorted or
+[31:16.00] not what is the time complexity again
+[31:18.12] takes a single pass so B go of n is the
+[31:21.44] time complexity in order to check if the
+[31:23.92] array is sorted let's move to the next
+[31:26.48] problem which is remove remove
+[31:28.36] duplicates from a sorted array so coming
+[31:31.28] to the problem remove duplicates in
+[31:33.88] place from the sorted array what does
+[31:36.56] the problem tell you about so you'll be
+[31:39.28] given an array which is definitely a
+[31:41.84] sorted one and it will be containing
+[31:44.52] integers if you see there are duplicates
+[31:47.64] over here and you need to remove it so
+[31:50.32] if I ask you what are the unique
+[31:51.92] elements in this array it be like 1 2
+[31:55.24] and three that's what you have to write
+[31:57.56] the first three places if there are
+[32:00.40] three unique elements then you take up
+[32:02.56] the first three places and put those
+[32:05.44] unique elements over there like 1 comma
+[32:07.72] 2 comma 3 and the remaining places they
+[32:10.92] do not care what you're putting they do
+[32:13.48] not care you can put whatever you wish
+[32:15.84] to you cannot put that as your choice
+[32:18.92] but what they care is if there are three
+[32:21.52] unique elements sorry if there are if
+[32:23.60] there are three unique elements then the
+[32:25.48] first three places should be filled up
+[32:28.40] with those three unique elements once
+[32:30.60] you fill up like once you modify the
+[32:32.60] given array again you cannot create any
+[32:35.36] new array you have to modify the given
+[32:38.12] array itself once you have modified the
+[32:40.56] given array you just tell them how many
+[32:43.24] unique elements are there so you have to
+[32:45.68] return so over here there are three so
+[32:47.72] you have to return three modify and
+[32:50.36] return the number of unique elements
+[32:52.36] that is what the problem us is asking
+[32:55.24] you to do so whenever this question now
+[32:58.00] this question has been asked in a lot of
+[32:59.76] interviews if this question comes up to
+[33:02.04] you should you be saying the optimal
+[33:04.80] approach directly the answer to that is
+[33:07.68] no drive the interview and the first
+[33:10.80] approach that you should always say is
+[33:13.92] the Brute Force what is the brute force
+[33:16.52] that comes in into your head it's like I
+[33:19.40] need unique elements whenever I hear the
+[33:21.96] term unique what comes into my head set
+[33:25.64] kind of a set data structure I'm like
+[33:27.56] yes
+[33:28.28] so let's define a set data structure so
+[33:31.80] I'll be defining a set data structure
+[33:34.68] let's iterate in the
+[33:36.52] are one put it into the set again one if
+[33:41.64] you take this one and you put it into
+[33:43.64] the set will the set except one no it
+[33:47.48] already has a one there will be no new
+[33:49.80] addition in the set next go to two if
+[33:52.72] you take this two and you put it into
+[33:54.36] the set there will be a new addition
+[33:56.72] perfect next go to two if you take this
+[33:58.88] two and you put it into the set will
+[34:00.64] there be a new addition no take this two
+[34:04.08] no new addition take this three and put
+[34:06.80] it into the set there will be a new
+[34:08.76] addition take this three and put it into
+[34:11.64] the set no new addition so at the end of
+[34:14.76] the day the set after one iteration very
+[34:18.60] very important after one iteration the
+[34:21.16] set will be containing three elements so
+[34:23.64] this is how the code will look like
+[34:25.84] after one iteration like very simple
+[34:27.84] declare a set and then pass on and
+[34:30.04] insert everything the set will be
+[34:32.92] something like this after one iteration
+[34:35.80] now what you will do is you will say
+[34:37.68] okay I need to put everything into the
+[34:41.48] like the unique elements in the starting
+[34:43.48] of the array fine let's go to the set
+[34:47.12] let's keep a pointer here which is the
+[34:49.40] zero index like if I have to write the
+[34:51.20] index it's like 0 1 2 3 4 5 6 let's keep
+[34:56.36] an index
+[34:58.40] at the zeroth index and let's go to the
+[35:01.72] first element of the set and that's one
+[35:04.76] let's take that one and place it into
+[35:07.24] the zeroth index done once I've done
+[35:10.04] this let's move index one step ahead
+[35:13.12] because my first place is occupied let's
+[35:16.40] take the next element of the set and put
+[35:18.84] it into the first index once I've done
+[35:21.08] that let's move
+[35:22.32] it next three put it done that let's
+[35:26.96] move
+[35:28.48] does the set have any more elements no
+[35:32.20] the set doesn't have any more elements
+[35:34.76] if the set doesn't have any more
+[35:36.20] elements what will happen obviously
+[35:39.48] there'll be no further insertion into
+[35:42.16] the array if there is no further
+[35:43.68] insertion thereby you can say wherever
+[35:46.24] the index stops because it's a zero
+[35:48.60] based indexing array this will be the
+[35:50.80] size of this particular array and you
+[35:53.08] can return this particular index and
+[35:55.16] this is what the brute force will be so
+[35:57.12] if I have to write the code I'll quickly
+[35:58.68] just show you the code code is very
+[36:00.80] simple decare index as zero this is how
+[36:04.20] you iterate in the set just an iterator
+[36:07.08] auto is something which is automatically
+[36:09.80] assigning it to integer because the set
+[36:11.64] is containing integers by the way the
+[36:13.76] set stores everything in ascending order
+[36:16.36] the first it will be storing one then
+[36:17.96] two then three okay so iterator so every
+[36:21.12] time you get one gets into the index
+[36:23.36] then index Plus+ very simple code if I
+[36:25.92] have to analyze the time complexity what
+[36:27.96] will it be so the set in order to insert
+[36:31.76] takes logarithmic of n the set okay so
+[36:35.64] it will be like n logarithmic of n for
+[36:39.72] this particular first pass again this
+[36:43.24] one is n so the overall time complexity
+[36:46.64] for The Brute Force approach is n login
+[36:49.80] to insert into the set and a b go of N
+[36:53.08] and what space are you using using a b
+[36:56.00] go of n space
+[36:58.08] Y in space imagine all of those were
+[37:01.20] unique elements all of those were unique
+[37:03.32] elements so the set would have taken
+[37:06.08] everything into it that's why that's why
+[37:08.72] the extra space is there there's an
+[37:10.48] extra space of B of n being used as well
+[37:13.72] so this is the TC this is the space
+[37:16.36] complexity so definitely this is a brute
+[37:18.96] for solution let's try to improve on it
+[37:21.24] in order to optimize this Brute Force
+[37:23.24] solution you have to apply something as
+[37:25.80] a two-pointer approach
+[37:28.28] very simple and then you will get the
+[37:31.32] optimal approach why did I say very
+[37:33.84] simple let's think so the array is
+[37:38.44] sorted right and we know one thing for
+[37:41.48] sure first element is
+[37:44.32] this and the next El like the first
+[37:46.92] element will always be at its first
+[37:49.32] place because that's unique in itself
+[37:52.04] the next place will be taken by someone
+[37:55.20] who is not equivalent to one because we
+[37:57.60] are talking about unique right so the
+[37:59.84] next element will be someone who will be
+[38:02.36] not equivalent to this one so can I say
+[38:06.00] I will go go and check which element is
+[38:09.56] not equivalent to this first and I'll
+[38:11.88] get this the moment I get this I'll just
+[38:14.16] put it into the next index and then
+[38:16.36] again I'll go and find who is the next
+[38:19.04] who is not equivalent to this guy and
+[38:22.52] then I'll put it into the next and then
+[38:24.28] again I'll try but I'll not find so this
+[38:26.32] is how you can easily enter everything
+[38:30.12] got the thought process it's about you
+[38:32.40] know one thing for sure this guy will
+[38:35.84] always be at its first place so you
+[38:38.08] don't need to change it you don't need
+[38:39.76] to change it you just keep a pointer
+[38:42.80] here stating I and now you go right and
+[38:46.52] say who's the guy who's different than
+[38:49.68] one that's it so you probably can keep a
+[38:52.32] point A J and you say one are you
+[38:55.32] different than one he says no
+[38:58.32] so I'll go ahead I said J are you
+[39:02.44] different than one he says yes yes I am
+[39:04.96] so I
+[39:06.48] says you can take the place in front of
+[39:09.72] me so he will take the place here and
+[39:13.24] since he has taken the place here the ey
+[39:15.68] pointer will move here I'll just erase
+[39:18.28] this so that you have better Clarity ey
+[39:20.00] pointer will move here now this is done
+[39:24.40] so what you'll do is you'll move
+[39:26.12] j and you'll say two are you equivalent
+[39:29.12] he says yes H not no use you'll say
+[39:33.72] again two are equivalent he says yes ah
+[39:37.96] no
+[39:39.84] use three are equivalent no another
+[39:44.28] unique if you get another unique where
+[39:46.56] will it go in front of two if it goes in
+[39:50.20] front of two this three will uh no need
+[39:52.72] to Omit this three will come here
+[39:54.52] perfect and if this three comes here
+[39:56.56] what will happen to I
+[39:57.84] the ey will also move from here to here
+[40:01.44] now again you'll find the next guy who
+[40:03.40] is not equivalent to
+[40:04.92] three that's
+[40:07.04] equivalent and then over the iteration
+[40:10.40] is over once the iteration is over do
+[40:13.40] you notice the first three places are
+[40:16.32] filled with the three unique elements
+[40:18.48] and your I is standing at which index if
+[40:21.48] I write the indexing 012 is standing at
+[40:24.24] the second index so what will be the
+[40:26.40] size of the
+[40:27.84] unique like what will be the number of
+[40:29.56] the unique elements definitely I + 1
+[40:33.20] quite simple so if I have to write the
+[40:35.52] code how will the pseudo code look like
+[40:38.08] can I say I know one thing the first
+[40:40.84] unique element is I equal to C and then
+[40:44.12] I know I'll start from one and I'll go
+[40:47.00] until end that's for sure and I need to
+[40:49.48] figure out someone who is not equivalent
+[40:53.08] to my current
+[40:54.40] one if array of J
+[40:58.16] is not equivalent to Ari oh not
+[41:02.36] equivalent take my take my front
+[41:04.80] position take my front position so I'll
+[41:07.00] be like okay let's give him the front
+[41:09.08] position front position I + one please
+[41:13.28] take your front position once you have
+[41:15.72] taken your front position what will you
+[41:17.44] do okay let me go to that front position
+[41:20.44] because now if I go to the front
+[41:22.24] position if I go here then only I can
+[41:24.24] now do the future I can get the next
+[41:27.36] future element which is not equivalent
+[41:29.24] got it so this is how it will work so
+[41:31.48] I'll go to the front position done very
+[41:33.52] simple two point once this follow Loop
+[41:35.48] is complete I know the size will be I +
+[41:37.92] 1 because I at the end of the day will
+[41:40.32] be here which is two but the size will
+[41:42.40] be one more thereby we will be returning
+[41:45.08] I + 1 this is how the two- pointer
+[41:47.56] approach will look like and if I have to
+[41:49.84] ask you the optimals time complexity
+[41:52.80] simple one pass we go in space
+[41:55.48] complexity B go one why because one pass
+[41:59.20] and you're doing everything in that
+[42:01.04] particular array as it was being asked
+[42:04.84] in the like if you remember the problem
+[42:06.24] statement it's stated in place and that
+[42:08.64] is been done this is the optimal
+[42:11.08] solution for this problem just in case
+[42:12.76] you want to submit the problem the
+[42:13.96] problem link will be in the description
+[42:16.12] and I've written the same code now let's
+[42:17.80] quickly submit this and see if it is
+[42:19.84] running fine or not yeah it does run so
+[42:22.72] with this I can say that I've have
+[42:24.68] completed the fourth problem as well so
+[42:27.56] for this video we will be keeping it
+[42:30.24] till here because I don't want to solve
+[42:32.36] a lot of problems and make the video
+[42:33.88] long because that might scare you in the
+[42:36.08] next uh video again we'll be solving
+[42:38.44] probably the next five problems that is
+[42:41.64] what we will be targeting in the next
+[42:43.72] video so with this uh I will be wrapping
+[42:46.28] up this video but if you have understood
+[42:48.68] everything that I've taught in this
+[42:50.04] particular video to follow our tradition
+[42:52.56] do comment understood if you are new to
+[42:54.84] our Channel what are you waiting for
+[42:56.88] please please please consider
+[42:58.32] subscribing to us because that is the
+[42:59.80] only thing that keeps you motivated to
+[43:01.88] make these kind of content and yeah hit
+[43:04.40] that like button and and yeah if you
+[43:06.24] haven't followed me on Instagram the IDE
+[43:08.72] is over here do follow me on Instagram
+[43:10.68] LinkedIn and whatever social media links
+[43:13.16] you'll find in the description with this
+[43:15.08] I'll be wrapping up this video Let's be
+[43:16.40] in some other video till then bye-bye
+[43:17.64] take
+[43:20.72] careen forget your
+[43:23.36] golden I will

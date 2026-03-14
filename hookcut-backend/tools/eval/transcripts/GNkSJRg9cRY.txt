@@ -1,0 +1,3993 @@
+[0:00.60] it almost felt like we had the
+[0:02.34] responsibility of the world to do
+[0:04.56] something serious about it in a world
+[0:06.66] that seemed highly uncertain that seemed
+[0:09.90] extremely uh where you couldn't drive
+[0:12.30] control we felt that we were the ones
+[0:13.92] who could help people get fitter and
+[0:15.84] drive control on what they could so we
+[0:18.30] launched various initiatives in this
+[0:19.86] time the first was healthify Studio
+[0:21.90] where you could actually where as many
+[0:23.82] of you have coached our customers where
+[0:25.26] you could
+[0:26.46] where you could actually train remotely
+[0:29.16] through tools and solutions that you
+[0:30.48] were already familiar with like Zoom Etc
+[0:32.52] and get to work out at home with some of
+[0:34.86] the best coaches around the world
+[0:37.20] we actually in the second wave when
+[0:39.18] things got even more concerning we took
+[0:41.88] it on upon ourselves to launch vaccinate
+[0:43.98] me we built it over a weekend with apis
+[0:46.50] from the government and we helped people
+[0:48.72] get access to vaccine in a real-time
+[0:51.06] notification environment by WhatsApp and
+[0:53.58] Telegram and I know many of you have
+[0:55.20] received vaccines through that we helped
+[0:57.42] 25 million people find vaccines during
+[1:01.02] this time and particularly people of the
+[1:03.78] elderly Community we were grateful to do
+[1:05.28] a bit
+[1:07.08] not just that gym shut down offline
+[1:09.42] nutritionists shut down and we hired
+[1:11.10] those who had lost their jobs in the
+[1:13.20] last two years we hired 2 000
+[1:14.94] nutritionists and trainers in a time
+[1:16.50] when most companies were shutting down
+[1:18.00] and were otherwise unfortunately having
+[1:20.88] to let go of of resources and we
+[1:23.94] launched healthify plus there's
+[1:25.74] something we had alluded to At Last
+[1:27.24] ignite if you may remember specialized
+[1:29.28] programs for people with medical
+[1:30.54] condition predispositions cholesterol
+[1:32.88] PCOS thyroid hypertension diabetes are
+[1:36.54] specialist programs that we actually
+[1:37.92] modified are our obesity management
+[1:40.08] solution towards where we added
+[1:41.58] specialists in those fields and doctors
+[1:43.20] in those fields and and we were able to
+[1:46.02] deliver impact
+[1:47.64] in fact in these two years we help
+[1:49.56] people track 2 billion foods and
+[1:51.18] workouts we help people lose 10 million
+[1:53.40] kgs of weight and we help people reduce
+[1:55.44] their risk significantly for covert link
+[1:57.90] complications by reducing their
+[2:00.36] metabolic syndrome parameters for
+[2:02.28] diabetes hypertension cholesterol PCS
+[2:04.38] thyroids by more than 15 this is the
+[2:06.90] impact that we have done in the last two
+[2:08.46] years
+[2:11.82] more than that 30 percent of our of our
+[2:14.70] subscriptions started to come from plus
+[2:16.44] and studio in these times so what we
+[2:18.36] were working on actually had some real
+[2:19.98] impact on business as well and of course
+[2:22.32] we have to fight Millions to tell you
+[2:24.36] the story of how our customers engage
+[2:26.58] with us in this time there's no better
+[2:28.38] way than to actually hear them
+[2:33.12] foreign
+[2:36.63] [Music]
+[2:38.00] 19 brought the world to a screeching
+[2:41.22] halt that was the first time when I saw
+[2:43.56] myself actually getting unhealthy and my
+[2:46.68] life came to a standstill I decided that
+[2:49.26] I had to concentrate more about my
+[2:51.12] health and that's when I came across
+[2:53.04] healthify me and it was truly a failure
+[3:00.48] it's changed my life completely elephant
+[3:03.54] has been the only thing that has helped
+[3:05.52] me be consistent during the entire
+[3:07.02] lockdown I've managed to introduce 40
+[3:09.66] kilograms I'm much more fitter now I
+[3:12.60] feel much happier and healthier from
+[3:14.28] within I've completely reversed diabetes
+[3:16.80] I am off medicines for last five months
+[3:18.84] my sleep has improved my work-life
+[3:21.54] balance has got improved I just loved
+[3:24.30] the healthy Piney Journey LD primary has
+[3:27.00] been a savior for me this lockdown it's
+[3:29.16] not an app anymore for me it's more like
+[3:32.64] a friend to me
+[3:36.14] [Music]
+[3:40.10] many many of the people you saw in the
+[3:42.72] video and 50 other of our top customers
+[3:44.70] and users are in the audience so please
+[3:46.26] give it up to all of them who
+[3:47.70] healthified themselves in these times
+[3:49.80] thank you very much for trusting us as
+[3:52.08] your partners in uncertain times
+[3:56.88] now
+[3:58.08] plastic night
+[3:59.58] people 10 million users
+[4:01.86] and this ignite we've actually hit 31
+[4:04.32] million
+[4:06.24] um
+[4:07.62] to tell you how this pans out and help
+[4:10.56] you visualize it a little bit I'd love
+[4:12.78] to Showcase how this growth Journey
+[4:14.10] actually went about
+[4:39.78] I've been told that we're going to walk
+[4:41.28] you through this in a minute so I'm
+[4:42.96] going to come back to this
+[4:45.06] um
+[4:45.78] you know every ignite lots of things
+[4:47.94] change
+[4:49.56] some don't so
+[4:52.68] um the last ignite if you may remember
+[4:56.52] we were so proud to have been in the
+[4:58.38] double digit of annual annualized
+[5:00.54] revenue run rate basically we had
+[5:02.94] finally hit a hundred crore a year mark
+[5:04.62] in terms of Top Line and we were
+[5:06.30] absolutely mind blown by that ourselves
+[5:08.22] excited I remember the time when we
+[5:10.14] saluted and celebrated that
+[5:12.48] well thanks to all the hard work that we
+[5:14.28] did thanks to all the effort that we put
+[5:15.84] in in trying to do the best for our
+[5:17.34] customers we actually scale that through
+[5:20.16] ignite
+[5:21.24] with an increasing growth to 23 million
+[5:24.30] dollars last year
+[5:26.70] and this year I'm excited to say that
+[5:30.00] we've crossed 50 million dollars in run
+[5:31.68] rate Revenue
+[5:34.38] our company is now doing
+[5:36.42] north of 300 crores a year and is
+[5:38.64] growing fast and strong thanks to the
+[5:40.08] belief of customers like you and coaches
+[5:41.70] like you and teams like you then
+[5:43.50] Partners like you that are present in
+[5:44.88] this room today
+[5:47.34] also we crossed 200 000 paying
+[5:49.74] subscribers and interestingly forty
+[5:52.26] percent continue to remain the AI only
+[5:54.50] subscribers staying healthify true to
+[5:57.36] its core Tech DNA
+[6:00.24] of course we raised 75 million CDC last
+[6:04.26] year so thank you LeapFrog who co-led
+[6:07.26] that round I believe Bijou and your team
+[6:08.76] are in the audience as well and uh and
+[6:10.92] thanks to coleslaw Ventures as well
+[6:12.30] we'll hear from vinod uh later on today
+[6:15.66] and uh we turned 10 years young in
+[6:19.32] February of this year just a month ago
+[6:24.42] but
+[6:25.56] I think what uh
+[6:27.66] in fact it was Bala an old Mentor a
+[6:30.06] friend partner in crime who reminded us
+[6:32.10] just a few days ago in the board meeting
+[6:34.32] that sometimes good to take a step back
+[6:36.78] and actually realize and recognize that
+[6:39.30] with all of this ladies and gentlemen
+[6:41.82] we are the largest digital Health
+[6:43.32] company in this country
+[6:54.54] so what does it take to help the fire
+[6:56.94] billion
+[7:00.24] I think overarchingly and more than
+[7:02.46] anything else
+[7:04.80] I believe it takes cuts
+[7:07.20] and I think that our team has had a lot
+[7:10.32] of in these 10 years
+[7:14.52] but we're also equally cognizant that
+[7:16.38] what got us here won't get us there
+[7:20.28] in fact
+[7:21.66] kobit gave us a lot of time to reflect
+[7:23.64] and also think about who we are and what
+[7:26.10] our purpose is and how do we go about
+[7:28.20] delivering on our success here forward
+[7:30.36] here forth we also recognize that
+[7:32.76] technology and consumer Behavior had
+[7:34.74] fundamentally shifted in these last few
+[7:36.18] years
+[7:36.90] we've all become very familiar and
+[7:40.50] comfortable with technology Technologies
+[7:42.30] become affordable adaptive it's
+[7:44.58] something that we expect to work around
+[7:46.08] our needs and constraints we've become
+[7:48.96] techno friendly we become also
+[7:50.46] comfortable being at home we expect
+[7:51.66] things to be delivered at home including
+[7:53.52] tests groceries and other things we are
+[7:55.80] no longer the people we were five years
+[7:57.60] ago
+[7:58.56] and so healthify solution also had to
+[8:01.56] evolve of what we had evolved into 2018
+[8:04.02] when we had launched healthify smart
+[8:07.62] and as we looked at all of this
+[8:10.80] as as a friend of mine puts in on his
+[8:13.38] WhatsApp status a famous Shakespeare
+[8:15.12] quote of it came to us that what's
+[8:17.52] passed is actually prologue to who we
+[8:19.62] stand today
+[8:20.70] and it's a prologue to a book that
+[8:22.56] should begin here fourth here and now as
+[8:25.08] we look to the next 10 years
+[8:27.06] and today ignite is actually about that
+[8:30.12] so
+[8:31.26] let me tell you how we are thinking
+[8:33.60] about it
+[8:34.56] by
+[8:35.88] sort of
+[8:37.26] immersing you in our experience of of
+[8:39.84] inner probing of inner thinking about
+[8:41.46] what is healthify me
+[8:43.56] after some thought we recognize that of
+[8:45.84] course we are a behavior change company
+[8:47.16] fundamentally then how do we deliver
+[8:48.84] weight loss Fitness we're a behavior
+[8:50.58] change company that actually improves
+[8:53.22] metabolic Health fundamentally that's
+[8:54.96] what in essence we do
+[8:57.84] but then again it begs the question of
+[8:59.58] what is metabolism to begin with seems
+[9:02.04] like a very nebulous word some say Oscar
+[9:04.74] metabolism loses weight really fast
+[9:06.96] metabolism or sometimes it's good it's
+[9:09.78] bad what is metabolism right
+[9:11.88] if you have to break it down at a very
+[9:14.10] basic level metabolism is the balance of
+[9:17.16] energy being stored and energy being
+[9:18.90] utilized
+[9:19.98] now think of us as sort of batteries uh
+[9:22.74] things of think of us as energy devices
+[9:24.90] that are able to if we have excess of
+[9:26.52] energy in we store it as fat and if
+[9:28.62] there is less energy and we use that fat
+[9:30.30] to actually burn for working out now
+[9:33.12] from thousands millions and thousands of
+[9:35.10] years our bodies have evolved to quickly
+[9:38.22] take the fat as early as we can because
+[9:40.26] we used to live as cavemen in hunger
+[9:42.12] onient times right we didn't know if
+[9:43.56] we're going to get the next meal or not
+[9:44.88] so every time we saw food we absorbed it
+[9:47.34] in fact the higher in sugar and fat it
+[9:50.04] is ice cream gulab jamun Etc the tastier
+[9:52.68] it feels to us because we want to
+[9:54.48] quickly absorb that fat because we don't
+[9:56.10] know you know next two three days if we
+[9:58.20] can hunt and kill an animal or not
+[9:59.64] except we don't hunt and kill we order
+[10:01.86] on swiggy or the matter right so
+[10:04.02] Evolution however doesn't change in five
+[10:07.26] ten hundred years but our metabolism
+[10:10.26] systems and fundamentals have remained
+[10:12.36] largely the same but it's a concept of
+[10:14.58] energy conservation within our body
+[10:17.04] that's what metabolism is so to take a
+[10:19.14] first attempt at it we designed
+[10:21.18] healthify to to actually quantify this
+[10:24.72] Behavior what what is the energy coming
+[10:26.28] in what is the energy going out can we
+[10:28.14] figure out a balance behind it will this
+[10:29.88] relationship help us get people to be
+[10:32.28] fitter and we started with of course as
+[10:34.62] you know calorie counting we added you
+[10:36.78] know steps tracking Fitness tracking
+[10:38.52] nutrition tracking came in as an
+[10:40.20] important variable in there we of course
+[10:42.66] layered in water tracking Etc these were
+[10:44.64] the early input variables and
+[10:46.02] constraints that we were utilizing
+[10:48.00] all of these input signals would go on
+[10:50.22] to actually train our engine
+[10:53.46] our app that would actually give back to
+[10:57.36] our consumers nudges
+[10:59.58] insights of this is good this is bad
+[11:02.04] this is what you can have better this
+[11:04.08] this you should stay away from you know
+[11:06.12] a classic Health if I seen is you know
+[11:08.46] can you suggest me something healthy to
+[11:10.68] eat and you get to understand what that
+[11:12.36] is and hopefully make better behavioral
+[11:14.88] choices as a result of all of that you
+[11:17.88] know and we started to see that of
+[11:19.68] course in many of our consumers and we
+[11:21.84] as we saw their patterns and their
+[11:23.40] habits transform from you know just
+[11:25.32] making little nudges and choices that
+[11:27.18] were different than maybe when they had
+[11:28.50] at Health in fact any of you viewers
+[11:30.78] have used altify no that when you open
+[11:32.88] the app the first thing you realize is
+[11:34.50] my God gulab jamun is 300 calories and
+[11:36.24] it takes me like eight kilometers to
+[11:37.44] burn it right that concept relationship
+[11:39.90] is what we explained to our customers to
+[11:42.54] begin with
+[11:43.56] now this could only take us so far so we
+[11:46.14] added coaching into that design
+[11:47.88] fundamentally our trained group of
+[11:49.98] professionals who could navigate our
+[11:51.84] customers towards better Behavior change
+[11:53.76] outcomes and learning from a lot of
+[11:56.28] their interactions with our clients over
+[11:57.96] many many years we finally evolved Riya
+[12:01.20] and our AI systems and together with AI
+[12:05.00] Riya coaches our engine became smarter
+[12:08.22] and this design of getting
+[12:12.26] consumer written input criteria making
+[12:15.90] sense of them and driving them towards
+[12:17.82] Behavior change by AI Tech and coaching
+[12:20.82] what's healthify me 1.0
+[12:23.46] fundamentally in its essence
+[12:28.32] but you can only improve what you can
+[12:30.42] measure
+[12:31.38] right and what were we trying to improve
+[12:33.84] weight metabolic Health right and we
+[12:36.96] realize we couldn't measure it right
+[12:38.28] consumers have to just report it to us
+[12:39.84] but we couldn't quite quantify it
+[12:41.46] actually so we had to adapt a lot of
+[12:43.92] guesswork behind it
+[12:45.66] and that is the first problem we try to
+[12:48.00] solve and to explain to you this journey
+[12:50.10] further of how we are navigating from
+[12:51.78] 1.0 to 2.0 especially in the last few
+[12:54.54] months how that has gone I want to
+[12:56.58] invite on stage our chief business
+[12:59.10] officer also our chief product officer
+[13:01.50] and is like a co-founder to me
+[13:04.02] Uma maheshwaran bhoj Rajan anjan take it
+[13:06.90] away
+[13:09.00] to play with my name
+[13:16.26] I hope the clicker works this time
+[13:19.68] and you guys can hear me right
+[13:25.32] so when we started off on this journey
+[13:27.42] from healthify 1.2 to the Future
+[13:31.20] um we had to answer one very important
+[13:33.90] question
+[13:35.88] why do users use Health farming
+[13:38.94] now we are India's largest health and
+[13:41.58] wellness app
+[13:43.14] but we are also India's largest weight
+[13:45.30] loss solution
+[13:47.22] 70 of our users come into help the
+[13:50.34] family to lose weight
+[13:52.68] but to understand why they used healthy
+[13:55.56] farming it was also important to
+[13:57.36] understand the reason behind their
+[13:59.46] weight loss Journey
+[14:01.56] we did some research and what came out
+[14:04.50] of it was interesting
+[14:06.06] about 28 of our users wanted to just
+[14:08.76] look better 25 percent want to just be
+[14:11.46] more athletic 15 of them wanted to be
+[14:14.58] fitter parents for their children
+[14:18.66] now this also made a step back and
+[14:20.46] realized that
+[14:22.62] every weight loss goal is associated
+[14:24.48] with a different motivation behind it
+[14:27.42] and that also meant that each one each
+[14:29.76] one of us is unique and we need to
+[14:32.46] recognize that as we build out the next
+[14:34.20] version of healthify me
+[14:36.54] for example until now on the healthify
+[14:38.58] me app your transformation goal was
+[14:41.16] nothing but your weight goal you could
+[14:43.74] set your goal
+[14:45.18] you could use the trackers the food
+[14:48.72] tracker the workout tracker the water
+[14:50.52] tracker
+[14:52.08] um stick to your habits lose some weight
+[14:54.32] get contextual advice from our coaches
+[14:56.82] Andrea
+[14:57.90] and possibly even hit your goal
+[15:00.54] when you do we of course celebrate with
+[15:02.52] you sometimes you come home shoot a
+[15:04.14] testimonial because that's the way our
+[15:06.90] company has always worked
+[15:09.72] but over the last few years we also came
+[15:13.02] to realize that maybe weight is not the
+[15:16.08] only indicator of your transformation
+[15:18.18] goal and your progress towards the
+[15:20.16] transformation goal
+[15:22.02] we have had numerous examples of users
+[15:25.44] transforming themselves becoming fitter
+[15:28.40] looking better
+[15:30.72] by not necessarily moving the number on
+[15:32.94] the weighing scale
+[15:34.32] it could have been body fat they could
+[15:36.66] have lost body fat build some muscle or
+[15:39.48] the loss body fat and just did not lose
+[15:41.64] any muscle now that also makes you look
+[15:44.64] better
+[15:47.04] so as the first step of reimagining
+[15:49.92] healthify me it was important to
+[15:51.66] understand how we can measure progress
+[15:54.12] better
+[15:56.22] and this started with reimagining the
+[15:58.86] way how a weighing scale works
+[16:02.22] some of you might know that we have
+[16:04.38] already tried this over the last few
+[16:06.30] months but tonight officially
+[16:08.28] Introducing healthify Me Smart scale
+[16:16.20] as the tagline says your transformation
+[16:17.94] is no longer a function of your weight
+[16:20.40] loss Journey
+[16:22.38] now with the healthy family smart scale
+[16:24.30] healthify me allows you to track over 12
+[16:27.12] body metrics these could be body fat
+[16:29.94] muscle mass visceral Mass a lot of these
+[16:32.94] mean different things and
+[16:35.04] measuring them is a very important part
+[16:37.08] of your journey
+[16:39.84] but
+[16:41.34] any other smart scale in the market
+[16:42.84] would do that
+[16:44.88] we had a thesis behind launching our
+[16:48.30] smart scale
+[16:49.68] that's because habit formation has
+[16:51.42] always been at the core of healthifying
+[16:54.30] be it the food tracker or the water
+[16:56.70] tracker kept you on track
+[16:58.74] now with the Weight Tracker research
+[17:00.60] showed us that the more you weigh
+[17:02.10] yourself the more likely you are to
+[17:04.86] stick to your journey no matter how hard
+[17:07.20] it is
+[17:08.70] so we went out and we tested it and true
+[17:10.86] healthy farming style
+[17:12.96] for the coaches in the audience you
+[17:14.82] would remember March 22 we introduced
+[17:17.34] the smart scale we did a beta launch
+[17:20.22] over 5000 users tried us
+[17:24.18] now obviously when when we delivered
+[17:26.22] smart scale to users we expected them to
+[17:29.04] weigh themselves a lot more
+[17:30.96] so only two percent of our paying users
+[17:33.60] used to weigh themselves on a weekly
+[17:35.22] basis
+[17:36.54] um before this smart scale came in
+[17:39.18] and once we delivered the smart scale
+[17:41.22] and we saw how those users behaved we
+[17:43.92] saw 19 of them track their weight
+[17:48.06] now this was expected
+[17:50.58] but the real thesis was if they were
+[17:52.92] weighing themselves a lot more then were
+[17:55.50] they also being healthy
+[17:57.54] earlier 24 of our users used to track
+[18:02.10] their food on our app among these live
+[18:04.92] paying users used to track their food on
+[18:07.20] their app on a weekly basis
+[18:09.36] now today guys with the smart scale we
+[18:11.64] have proven that it has impact 60 of
+[18:14.64] them track food on the app
+[18:19.92] so now the smart scale is has obviously
+[18:22.20] a product that has had impact
+[18:24.48] so tonight we officially are making
+[18:26.82] smart scale free for all users on our
+[18:29.76] coaching Services across India
+[18:37.86] but over the last few weeks what what we
+[18:39.84] what we forget is the amount of effort
+[18:41.70] that goes from our technology teams and
+[18:43.74] our product managers to get little
+[18:46.56] things out so just before ignite the
+[18:49.98] teams were working all night last night
+[18:51.66] to launch something that is true to us
+[18:54.18] when you stand on the smart scale if you
+[18:56.82] are a free user or if you are a smart
+[19:00.06] plan user we are would step in and give
+[19:02.40] you contextual feedback real time
+[19:04.80] and if you are a coach user our coaches
+[19:07.32] can contextually talk to you about your
+[19:09.36] weight loss Journey at the point at
+[19:11.34] which you step on the scale
+[19:14.88] now this is where we started this is
+[19:16.74] healthify 1.0
+[19:18.60] now we have added
+[19:20.64] the whole concept of smart scale not
+[19:23.04] only for habit formation but also for
+[19:24.78] measuring yourself better
+[19:26.88] but we went one step ahead
+[19:30.00] the next Innovation that we have lined
+[19:32.64] up
+[19:33.36] was heavily inspired by our coaching
+[19:36.06] Services over the last five years
+[19:38.88] a lot of the users who come into
+[19:41.10] healthify me to lose weight also have a
+[19:43.20] medical condition that number is kind of
+[19:46.14] outstanding I would say 40 percent of a
+[19:49.20] paying customers have a medical
+[19:50.34] condition
+[19:51.60] users will have diabetes thyroid PCOS
+[19:54.78] cholesterol or hypertension
+[19:57.72] and when these users step into the
+[20:00.24] coaching Services side of healthify me
+[20:03.12] we take care of making sure that our
+[20:05.10] advice is personalized
+[20:07.32] now over the last few years we have had
+[20:09.42] tremendous impact on these users
+[20:12.14] 88 percent of users who are diabetic so
+[20:15.48] on Improvement in the hpa1c levels 50 of
+[20:18.72] users who have cholesterol saw
+[20:20.76] Improvement in the cholesterol levels
+[20:22.80] people who had hypothyroid eighty
+[20:24.60] percent of them saw an improvement in
+[20:26.16] the TSH levels
+[20:28.20] now a lot of you in the audience might
+[20:29.82] be thinking okay fine you're talking
+[20:31.68] about medical conditions what if I don't
+[20:33.24] have one how does it matter to me right
+[20:37.68] so the best way to explain this is with
+[20:40.26] an example and then statistics of our
+[20:42.60] users
+[20:43.98] uh
+[20:45.24] over the last few months Buddha and I
+[20:48.66] have gone through the same Journey we
+[20:49.86] went through a weight loss journey and
+[20:51.72] we plateaued off for a bit
+[20:54.18] um I had lost about 10 kgs and then I
+[20:56.34] wasn't moving anymore and both the
+[20:58.80] coaches and our doctors asked us to take
+[21:00.54] up a metabolic test uh we gave a blood
+[21:03.06] sample we got our results and we
+[21:05.10] realized that the Shah had a vitamin D
+[21:08.04] deficiency I had a B12 deficiency and
+[21:10.38] then we started working towards
+[21:12.06] correcting that
+[21:14.04] of course we saw results after that but
+[21:16.98] this shouldn't be a one-off case so we
+[21:19.26] went ahead and we checked with our users
+[21:21.12] what's happening with them found out
+[21:22.86] that 80 of our users had a vitamin D
+[21:25.98] deficiency 20 of our users had a vitamin
+[21:28.68] B12 deficiency and across all the
+[21:31.56] metabolic indicators that we have
+[21:33.00] available in India as part of our
+[21:35.34] diagnostic tests we realized that people
+[21:37.80] had multiple combinations of these
+[21:39.78] problems
+[21:41.94] also over the last
+[21:45.06] few years in the last two years
+[21:46.92] especially we noticed that a lot of us
+[21:49.62] have become comfortable with home tests
+[21:52.80] such as rtpcrs a lot of you would have
+[21:54.72] done it at home most of you wouldn't
+[21:56.34] have gone to a diagnostic center to
+[21:58.92] um to get your blood reports it's become
+[22:02.28] something that we are used to and also
+[22:04.98] in India we're lucky enough
+[22:07.08] to have a very low cost solution
+[22:09.36] available to us
+[22:11.16] so it was good to put two and two
+[22:12.66] together
+[22:14.16] so tonight we want to tell you that we
+[22:16.86] have brought a metabolic panel into the
+[22:18.96] healthify me ecosystem
+[22:26.94] the metabolic panel is a home screening
+[22:29.94] where a sample of your blood will be
+[22:32.22] collected from your home over 80 plus
+[22:34.56] parameters are tested and you would get
+[22:37.02] a report now those of you if you've had
+[22:39.72] a Diagnostic lab report would remember
+[22:43.68] that it would be a kind of a booklet
+[22:46.86] with a lot of parameters you don't know
+[22:49.02] what makes sense and what doesn't and so
+[22:51.36] we decided to simplify that in the
+[22:52.80] process of doing this
+[22:54.24] we have a report that will tell you what
+[22:57.00] parameters are critical what parameters
+[22:58.86] are on a borderline what are normal so
+[23:01.80] we focus on the right things
+[23:03.54] now Beyond this
+[23:05.10] we have designed our entire ecosystem
+[23:07.68] around it our coaches would now
+[23:11.10] remove foods that are bad for you for a
+[23:13.20] particular medical condition good for
+[23:15.24] you give you guidelines and check your
+[23:17.34] progress against those guidelines
+[23:21.06] so it's also important if we find that
+[23:24.96] there is a metabolic parameter that is
+[23:27.98] anomalous in your body we want to take
+[23:31.08] up the challenge of moving it in the
+[23:33.30] right direction and that's why quarterly
+[23:35.52] metabolic panels are now live on
+[23:37.74] healthify me medical plans across India
+[23:46.02] this wouldn't have been possible
+[23:47.52] whenever we do these Innovations it it's
+[23:49.92] never possible to do this when you have
+[23:52.20] players in the space who are really good
+[23:54.42] at doing it we don't have to reinvent
+[23:56.10] the wheel
+[23:57.18] uh the four players that are put up over
+[23:59.46] here healthy ends Red Cliff M fine and
+[24:03.30] farm easy have supported us throughout
+[24:05.76] our journey we also have Ashish from Red
+[24:08.28] Cliff in the audience so give it up to
+[24:09.90] them guys without them this wouldn't
+[24:10.92] have been possible
+[24:17.58] so now measuring progress coming back to
+[24:20.04] why I'm on stage so measuring progress
+[24:23.16] uh was only a function of your weight
+[24:25.32] before and now it is a function of body
+[24:28.44] Matrix from the healthify smart scale
+[24:31.28] also we are metabolic panel reports
+[24:36.00] so we've added a very essential part of
+[24:39.18] our entire ecosystem as we go from
+[24:41.40] Health Phi 1.0 to the Future now you
+[24:43.86] must be wondering what does that empty
+[24:45.84] box mean
+[24:47.76] everything that you see on that screen
+[24:49.56] right from food tracker to workout to
+[24:51.96] water to weight to your metabolic panel
+[24:55.02] all of these are snapshots of your
+[24:58.56] health at that point in time
+[25:01.26] is there a way to actually find out
+[25:04.02] how your body is doing how your
+[25:05.52] metabolic health is doing real time
+[25:09.66] to explain that right I would like to
+[25:12.06] invite Tushar back on stage please
+[25:15.44] [Applause]
+[25:16.01] [Music]
+[25:18.68] awesome thank you anjan guys give it up
+[25:21.06] to Anjin he's been pioneering not just
+[25:24.78] our
+[25:26.28] anjan has not only been pioneering with
+[25:28.20] the product and Tech teams for an entire
+[25:29.94] 1.0 to 2.0 migration including smart
+[25:32.28] scales metabolic panel was also was
+[25:34.20] extremely instrumental at being at the
+[25:35.88] helm of us delivering our 50 million run
+[25:37.68] rate so big shout out for that
+[25:40.38] um so yeah you know I want to take a
+[25:43.02] quick
+[25:44.10] um quick fun detour before we get back
+[25:46.68] into the real-time insights piece
+[25:48.18] traditionally what do people typically
+[25:50.94] advise in sort of health and fitness
+[25:52.74] right because what I've gone to
+[25:53.94] nutritionist trainers or other advisors
+[25:56.04] not healthify maybe but others
+[25:58.62] you kind of feel very generic advice
+[26:00.60] fundamentally right fundamentally you
+[26:03.60] hear Hey listen have fruits
+[26:06.48] you know kind of have healthy stuff
+[26:08.52] drink more water
+[26:10.38] work out maybe try it running a little
+[26:12.54] bit don't
+[26:13.92] have fatty food fried food don't have
+[26:16.74] sugary drinks
+[26:18.30] and just generic stuff
+[26:21.00] and that used to really perturb us I
+[26:23.22] mean if metabolism is unique and
+[26:24.84] different is influenced by so many other
+[26:26.76] parameters why should advice be genetic
+[26:29.94] in all of that right and at least
+[26:33.78] I used to always get one like can we
+[26:35.58] please get more specific those of you
+[26:37.08] know who know me know me to be extremely
+[26:39.48] annoying when it comes to you know
+[26:41.82] getting to the bottom of things right
+[26:43.86] and and there were usually no great
+[26:45.90] answers they were always answers valid
+[26:47.94] at macro scales but not at immediate
+[26:50.28] micro scales
+[26:51.96] so I one thing that we wondered is why
+[26:53.70] can't advice be specific and if
+[26:56.04] metabolism different differs for
+[26:57.60] everyone then why not and I think the
+[27:00.00] answer we came out with is that it's
+[27:01.62] like driving blindfold if you're driving
+[27:03.78] blindfold fundamentally or sort of semi
+[27:06.06] eyes open What's the advice you can give
+[27:08.04] to the driver about driving
+[27:09.90] right just drive slow
+[27:12.24] right that's all that you can do
+[27:15.36] um you can't actually tell them that hey
+[27:17.22] the road might be completely empty and
+[27:18.66] accelerate or that there's a heavy
+[27:21.00] traffic in front right it'll generally
+[27:22.20] say listen just approach caution right
+[27:24.36] but that's not how it should be what if
+[27:26.58] there was a way to get real time
+[27:27.90] metabolism right what if we didn't have
+[27:30.00] to wait for days or weeks or months but
+[27:31.98] really we could figure out here enough
+[27:33.90] have I done what I've done is that right
+[27:36.30] or is that wrong
+[27:37.92] well I think that's what had motivated
+[27:40.74] us to build calorie counting right you
+[27:42.72] track on the food and you're like oh
+[27:43.92] I've had too much maybe I should take it
+[27:45.60] easy right but it is still empirical
+[27:47.58] it's still sort of user reported it's
+[27:49.32] what you type in it's not evidence based
+[27:52.08] it's not a real measure like metabolic
+[27:54.66] panel layers or like smart scalers it
+[27:57.18] would have been awesome if there was a
+[27:58.32] way to evidence-based nutrition track
+[28:00.00] stuff right can you measure food
+[28:01.32] fundamentally maybe you don't have to
+[28:03.12] track or even if you're tracking you're
+[28:05.10] getting some serious hardcore insights
+[28:06.72] on it
+[28:07.56] well it turns out that there is
+[28:10.02] you know that there is a way to try and
+[28:12.60] identify how your body might be doing at
+[28:15.18] that instant
+[28:16.44] and and the answer to that lies
+[28:19.02] in your glucose values
+[28:21.84] now this was very interesting when we
+[28:24.12] first came across that model you know we
+[28:26.16] have later on you'll be uh you know
+[28:27.96] we're going to have a quick talk by our
+[28:29.70] chief medical officer Dr Shabani the
+[28:31.68] lion or most you know she otherwise
+[28:34.20] teaches at Stanford and but for about 18
+[28:36.72] 24 months we've been talking about this
+[28:38.28] and you know the model of glucose can
+[28:40.38] actually help you understand what your
+[28:42.60] metabolism is how it works is very
+[28:44.40] interesting what you eat gets translated
+[28:47.58] down into blood sugar fundamentally
+[28:49.62] broken down and then your thanks to
+[28:52.92] insulin your cells get to have it absorb
+[28:55.98] it and then get to decide if you're
+[28:57.96] moving around walking around doing
+[28:59.40] things like I'm doing right now it'll
+[29:01.14] burn off just like energy does right
+[29:02.76] when it comes at home but if you don't
+[29:04.74] then it unfortunately has to store it
+[29:07.26] somewhere and it stores it as glycogen
+[29:09.24] or stores it as fats and so glucose and
+[29:12.30] how glucose levels are are fairly
+[29:14.10] real-time indicator of Are You Gonna
+[29:16.56] gaining fat or are you gonna not be
+[29:19.26] gaining fat at that time here and now
+[29:22.14] right it's like it should remind me of
+[29:24.12] remember our good old days in India when
+[29:25.74] electricity would come for a short while
+[29:27.12] and the moment in electricity would come
+[29:28.80] everybody would turn on their pumps fill
+[29:30.42] up their tanks switch on the
+[29:32.10] refrigerators all the ACs all that stuff
+[29:33.84] right this thing used to be this thing
+[29:36.24] so the thing is our body is kind of like
+[29:38.10] that electricity comes we're like oh my
+[29:40.20] God there's food in the system let's if
+[29:42.00] there is some machine to be run you're
+[29:43.32] working it'll burn it off it'll store it
+[29:45.00] as fat
+[29:46.68] so let's look at this as to how exactly
+[29:49.14] what happens when you eat we tried
+[29:51.66] experiments you know well
+[29:54.78] in the name of Science of course you
+[29:57.00] know uh many of them we tried having a
+[30:00.06] chicken biryani of 155 calories and uh
+[30:03.54] and here's what actually happened to my
+[30:05.82] metabolic to my glucose levels guys
+[30:09.18] incidentally that hundred 110 marker is
+[30:12.18] kind of where you know 100 120 marker is
+[30:14.88] kind of where it starts to become high
+[30:16.50] if it is in layman terms it's sort of
+[30:18.18] it's higher up there it stays for a long
+[30:19.98] time your body is unfortunately not
+[30:21.96] being able to use it and wants to
+[30:23.10] convert it into fat well in this case it
+[30:25.44] actually did because well you know I was
+[30:27.54] sitting for a
+[30:28.64] sorry board members board meeting you
+[30:31.44] know so uh and and obviously all that
+[30:33.78] glucose was converting into fat real
+[30:35.88] time at that time right and and then and
+[30:39.00] then thank God I could come home and I
+[30:40.62] took two feet for a walk it's my lovely
+[30:42.54] dog This Is Us trying to look like each
+[30:44.28] other we do that sometimes no judgments
+[30:46.26] here and we walked and you know
+[30:48.24] obviously I saw glucose levels fall down
+[30:50.52] right this is just how this is like a
+[30:52.74] real-time picture of how body operates
+[30:54.12] but this is not how you can it's not
+[30:56.04] easy to do this right to look at glucose
+[30:58.38] values and see whether it's adding fat
+[31:00.00] activity sort of what is it doing
+[31:02.16] it's because today it requires blood
+[31:03.60] Pricks it requires you to pierce things
+[31:05.28] around and look for inspiration you know
+[31:06.96] around the world there were phenomenal
+[31:08.22] companies also who were utilizing CGM
+[31:09.90] Technologies available today to try and
+[31:12.24] drive and get a sense around glucose you
+[31:14.46] know super sapiens levels Ultra humans
+[31:16.20] are human co-founders are here guys
+[31:17.52] shout out to those guys and and we saw
+[31:19.86] that you can actually interpret glucose
+[31:21.84] in a nice way we had a Labs team that
+[31:24.66] always keeps working on what's next and
+[31:26.76] for the last one year plus they were
+[31:29.94] also tinkering around with different
+[31:31.26] kind of cgms Abhijit will talk about how
+[31:33.66] when he came in and joined he saw that
+[31:35.28] there were I don't know glucose and all
+[31:36.96] kinds of fruits cgms and all kinds of
+[31:38.94] fruits and you're like what's that doing
+[31:40.80] for like you know more than a year and
+[31:42.72] we could and and because this is how it
+[31:45.48] really works I mean this is
+[31:49.22] clearly he's not South Indian this is
+[31:51.54] roshni after masala dosa you know which
+[31:53.88] really works and you can see like the
+[31:55.56] same human being same food but different
+[31:57.84] responses maybe because of their uh
+[32:00.18] status at that time or their
+[32:02.28] predispositions or their microbiome
+[32:04.14] engines like what it's true though I
+[32:08.04] know your secret not Indian person and
+[32:09.96] this is me after mango this is me after
+[32:11.76] mango and almonds uh interestingly right
+[32:14.22] so food combinations tend to affect what
+[32:17.10] and how my body is adapting and reacting
+[32:19.32] to all these things
+[32:20.70] incidentally this is me after a glass of
+[32:22.44] wine and that's me after a glass of beer
+[32:24.12] you can imagine
+[32:25.86] what is giving and generating fat in my
+[32:28.50] body and what is not
+[32:31.14] right
+[32:32.76] so
+[32:34.02] what this gave us an assessment of that
+[32:35.70] hey nutrition and fitness strategies can
+[32:39.36] and should be personalized right I mean
+[32:41.94] what works for me may not work for you
+[32:43.26] what works for me at a certain time of
+[32:44.64] the day given what I'm doing how I'm
+[32:46.14] sleeping and feeling may not work for
+[32:47.58] you
+[32:48.54] Etc
+[32:50.46] but it was
+[32:52.92] gated on one thing how can we measure
+[32:55.08] glucose accurately and in real time is
+[32:58.26] it possible to do so so we worked around
+[33:00.60] looked around with various companies who
+[33:02.64] are providing CGM Solutions we partnered
+[33:05.22] discussed talked and after a lot of
+[33:07.80] experimentation and a lot of engineering
+[33:10.14] and some some bit of luck and a lot of
+[33:13.08] hacking
+[33:15.60] today I'm proud to introduce ladies and
+[33:17.64] gentlemen our bios solution to you
+[33:27.24] bios
+[33:28.74] is a continuous glucose monitoring
+[33:30.90] tracking system that actually you can
+[33:33.84] zap that getting put on your arm and
+[33:36.18] then you can zap your glucose levels at
+[33:37.86] any time you want with any phone that
+[33:39.84] has NFC just tap it and uh and you can
+[33:42.60] get a sensor on where your glucose
+[33:43.80] levels are right then and there and make
+[33:45.90] real-time navigational decisions on what
+[33:48.36] to do where to go it's just suddenly
+[33:49.74] like that somebody had lifted the
+[33:51.18] blindfold and now you can actually drive
+[33:52.62] the road is empty go the road's not slow
+[33:55.26] down
+[33:56.10] it's a it's a real-time glucose
+[33:58.62] management for metabolic Health Solution
+[34:01.74] that we are finally very proud to
+[34:04.92] actually release out and you can all
+[34:07.32] catch yourself a goodie bag when you
+[34:09.30] step out or purchase yourself one as you
+[34:11.64] do so
+[34:13.86] now let me walk you through how bios
+[34:15.42] actually works today
+[34:18.00] this is actually uh this is a real curve
+[34:20.28] of mine from a you know few weeks ago
+[34:22.14] you can see that I kind of was probably
+[34:24.24] there's a blip there our app recognizes
+[34:26.10] that asks as to what might have created
+[34:28.68] that and well healthify is the World's
+[34:31.62] Finest Nutrition tracking system so you
+[34:34.44] can easily tap in what food or activity
+[34:37.38] you might have had and it tries to make
+[34:39.60] sense of it in this case it was a
+[34:41.04] chicken Subway
+[34:42.12] that you know what what how how bad or
+[34:45.36] good the glycemic impact the sugar
+[34:46.98] impact the glucose impact of that food
+[34:48.72] is and your coach reacts in real time or
+[34:51.30] as close to possible as real time that
+[34:53.16] hey I'm seeing a pattern here it's the
+[34:54.66] third time you're experiencing a spike
+[34:55.92] with bread maybe let's skip bread when
+[34:58.56] you can and go for a 15 minute walk past
+[35:00.36] your meal what's interesting is she's
+[35:01.92] saying when you can not that you must
+[35:03.42] all that is being paired up with this
+[35:05.70] let me go for a walk past your meal
+[35:07.38] that's what you can help with and you
+[35:10.08] know this is sort of my glucose curve
+[35:11.58] from much more recent
+[35:13.68] chicken and hummus obviously that's much
+[35:15.96] tastier as well let's be honest than a
+[35:17.58] Subway sandwich and and with some
+[35:19.56] walking usually uh and you can see those
+[35:21.96] those bar charts those are your steps
+[35:24.06] bios not only combines your glucose
+[35:26.16] curves it also tracks in heart rate
+[35:27.96] steps and other monitoring uh instances
+[35:31.14] that give you good insights right then
+[35:33.00] and there and and you can see that you
+[35:35.52] know I had a good score and that my
+[35:36.84] coach actually talked about the fact
+[35:38.76] that I've been following my diet advice
+[35:40.80] and going for a 20 minute step count
+[35:42.72] after that which is a burning that
+[35:44.22] glucose live off and therefore not
+[35:45.66] converting to fat
+[35:47.94] um
+[35:49.02] and it's not just me that is changing
+[35:51.18] their habits 87 of the people feel that
+[35:53.64] they have modified their food choices
+[35:55.02] with CGM
+[35:56.40] uh with bios 47 people actually feel
+[35:59.46] more likely to go take a walk who have
+[36:01.38] adopted bios so far
+[36:03.24] and and obviously I mentioned how it
+[36:05.22] tracks in nutrition activity steps and
+[36:06.90] heart rate onto a single platform
+[36:10.02] um and and in the journey to 1.2 from
+[36:13.02] 1.0 to 2.0 bios is that one key puzzle
+[36:17.64] that we have to land to get there
+[36:20.82] but almost
+[36:22.50] so what was missing what was missing is
+[36:25.80] our coaching philosophy
+[36:28.02] you know healthify
+[36:29.88] Services which roshni you heard from a
+[36:32.22] long time ago who joined us as a
+[36:33.54] part-time trainer mom of three at 2014.
+[36:37.50] today we have a 2000 strong force and
+[36:39.72] roshni's led it in all these years and
+[36:41.94] uh was based on several philosophies but
+[36:44.64] in the again in the absence of real-time
+[36:46.50] navigational data was perhaps
+[36:50.16] used to giving that plans and routines
+[36:52.38] which we with experience started to know
+[36:54.48] that work better than the others today
+[36:56.58] with Pro we're actually moving to
+[36:58.68] flexible diet strategies
+[37:00.54] so in fact the same roshni gave me an
+[37:02.76] advice the other day I said hey I have a
+[37:04.38] I have a champagne and wine party to go
+[37:06.66] to at my neighbor's building and you
+[37:09.30] know what should I do and she's like you
+[37:10.50] should have chicken salad right before
+[37:12.18] make sure and and and make sure that you
+[37:15.18] don't sit
+[37:16.98] dance if you want walk around don't sit
+[37:19.14] right and then work like a charms flat
+[37:21.36] glucose response is as a result you know
+[37:23.46] fiber protein had before and then the
+[37:26.46] fact that I was moving and you know and
+[37:28.08] then it's been working so this is
+[37:29.58] flexible that strategy right this is not
+[37:30.90] a plan that you get laid out this is
+[37:32.40] here and now what should I do you can
+[37:33.78] you can kind of
+[37:35.40] basically you can have your cake and eat
+[37:37.20] it too
+[37:39.96] we're starting to migrate from a
+[37:41.76] calling-led philosophy to our customers
+[37:43.44] which is which predates 2018 to Now
+[37:46.08] using messages and nudges that are
+[37:48.06] non-intrusive in nature and this is our
+[37:50.10] Pro coaching philosophy we're moving
+[37:51.72] from prescriptions to real-time nudges
+[37:54.30] as we start to get more aware of what's
+[37:56.40] Happening
+[37:58.14] so this
+[38:00.42] ladies and gentlemen is the healthify me
+[38:02.46] 2.0 Ensemble which has evidence-linked
+[38:06.48] user inputs on one side not just user
+[38:09.00] reported patterns which has Ai and
+[38:11.82] coaches that drive real-time nudges not
+[38:14.58] blanket advices that work for people and
+[38:17.46] that that do not drive weight loss but
+[38:19.86] actually provide Transformations on fat
+[38:22.26] on weight on on fat on muscle and and
+[38:25.20] improve overall metabolic health and
+[38:27.00] fitness keeping Behavior change as
+[38:29.40] constant and
+[38:31.38] healthify me 2.0 while is getting
+[38:33.84] translated down as anjan said on all the
+[38:36.18] transform plans with our smart scale and
+[38:38.04] all the Plus plans with the metabolic
+[38:39.66] panel
+[38:40.74] but with bios now nothing completes our
+[38:43.80] healthify
+[38:44.94] 2.0 plan better
+[38:47.94] than healthify Pro
+[38:50.58] and this is the solution that I'm
+[38:53.22] excited to launch today
+[38:58.26] this healthify Pro is now as of today
+[39:01.44] evening is our Flagship product
+[39:04.20] that will combine the best of what we
+[39:06.42] have to offer to our customers and will
+[39:08.46] drive empirically known evidence-based
+[39:10.68] results on our clients continuously
+[39:13.20] and uh just to Showcase this I'd like to
+[39:16.14] introduce healthify Pro by a short video
+[39:18.66] at healthify Pro a connected fitness
+[39:21.00] system which helps you lose weight
+[39:22.74] faster more consistently more
+[39:25.20] holistically than you ever have before
+[39:27.06] pro has the power of five meets bios
+[39:30.54] it's small powerful and helps you track
+[39:33.24] your glucose every single minute what
+[39:36.54] why because when you eat your glucose
+[39:39.24] levels rise and your body tries to use
+[39:41.46] it up and if you can't you gain weight
+[39:43.62] so with bios you know what to eat and
+[39:46.56] how to burn it nice go on step on it
+[39:50.78] your shiny new smart scale when we say
+[39:53.94] smart it's really smart it doesn't just
+[39:56.52] tell you what your weight is but it
+[39:58.32] breaks it down into body fat muscle mass
+[40:00.66] bone mass and more making sure you're
+[40:03.60] losing the right kind of weight well
+[40:06.42] done Rohan meet our metabolic panel it
+[40:09.90] checks you out from the inside a slick
+[40:12.54] dashboard with 84 data points about your
+[40:15.18] health but just a drop of blood hey your
+[40:18.30] vitamin levels are low no wonder you've
+[40:20.94] been tired maybe add some apricots to
+[40:23.52] your diet I love apricot oh our calorie
+[40:27.00] tracker just got way smarter take a
+[40:29.22] photo of your food or track from your
+[40:30.84] favorites and then Maps it back to your
+[40:32.58] bios chart with calories and
+[40:34.64] macronutrients now don't just count your
+[40:36.84] calories see how food impacts your body
+[40:39.12] so that you can make smarter choices
+[40:42.18] and whose profile that's us the
+[40:44.88] healthify app and me your coach we bring
+[40:47.94] all the pros together to craft a plant
+[40:49.74] tailored just for you
+[40:51.60] the future of Fitness is here some call
+[40:54.48] it magic we call it healthify pro
+[41:00.53] [Music]
+[41:03.84] thank you everyone many of you've been
+[41:06.12] wondering uh certainly my wife or what
+[41:08.40] I've why I have not been coming home of
+[41:10.26] of late very easily and this is the
+[41:12.06] reason this is what been keeping me up
+[41:13.38] and the entire team late at night as
+[41:15.48] we've been working on healthify Pro and
+[41:17.40] creating this integrated solution
+[41:18.60] together and we're so excited that as of
+[41:20.82] this moment it's actually live on beta
+[41:23.04] you can go to healthify me.com and you
+[41:25.26] can join the wait list and we'll we'll
+[41:27.18] suit you up as soon as we can
+[41:29.58] um we're also excited that this is going
+[41:31.14] to be a global product so while this is
+[41:33.12] going to be an India launch right now we
+[41:35.10] are expecting that in the next few
+[41:36.30] months itself we should be able to roll
+[41:37.62] it out in several other markets
+[41:39.12] including many developed countries
+[41:40.64] healthify Pro today is at The Cutting
+[41:42.84] Edge of metabolic Health there is no
+[41:44.94] other solution that we are aware of that
+[41:46.62] combines those various Technologies and
+[41:49.02] the way we do with the specialization of
+[41:51.18] coaching and technology that we have and
+[41:53.64] and we're quite excited to be pioneering
+[41:55.80] for the world in our field sitting out
+[41:57.96] here in India with some of the best
+[41:59.52] engineers in the world and designers
+[42:01.56] sitting right next to you so thank you
+[42:03.72] for supporting and believing in us we're
+[42:05.76] very excited to have put it out there
+[42:07.14] and uh
+[42:09.00] and you know it's been showing results
+[42:10.50] our coaches are obviously uh we are
+[42:13.68] creating a new separate team on
+[42:15.18] healthify Pro coaching that philosophy
+[42:16.92] is getting down and
+[42:19.38] um and
+[42:21.48] yeah it's now launched in beta I guess
+[42:23.70] one question that I have been asked a
+[42:25.68] lot is a bit of a shocker everything is
+[42:28.08] super seamless
+[42:31.50] awesome I guess people went ahead of me
+[42:33.72] one question I've been asked is do I
+[42:35.40] need to wear bios all the time and my
+[42:37.38] answer has been no you don't bios
+[42:39.60] actually is a program that you can wear
+[42:41.94] intermittently and I want to tell you a
+[42:43.86] little bit about that for sure but since
+[42:45.72] we have this video up that was but not
+[42:48.36] is there anymore can we have that video
+[42:49.68] back up again I wanted to tell you early
+[42:51.30] responses from our customers and what
+[42:54.00] they have been thinking and feeling
+[42:55.02] about healthify Pro so these are all of
+[42:57.42] our beta users these are all people who
+[42:59.16] have been using it in the early days
+[43:00.30] some of you are in the room and and
+[43:02.46] let's hear it from them
+[43:06.98] smart scale is a bit of a shocker
+[43:09.30] everything is super seamless it is so
+[43:11.28] addictive it's connected weighing scales
+[43:13.14] which you can get up every day morning
+[43:14.46] into and now it's become an obsession we
+[43:16.20] can Now understand more aspects to our
+[43:18.60] own fitness goals BMI metabolic age body
+[43:21.48] fat visceral fat it sinks really quickly
+[43:23.64] with your app
+[43:26.64] a lot of parameters that I thought would
+[43:28.68] be off turned out to be actually fine
+[43:30.78] across various metrics which this
+[43:33.60] program tracks there has been
+[43:35.34] significant Improvement in just a
+[43:36.72] two-week period the metabolic panel
+[43:38.46] actually told my coach as to what are
+[43:40.68] the things which are lacking in my diet
+[43:44.94] I think the BIOS was a real eye-opener
+[43:47.10] for me I would see why glucose the
+[43:49.02] levels are going up and down and up and
+[43:51.30] down I would check at least 10 times a
+[43:53.58] day it was a little obsessive
+[43:57.60] one of a really good quality of this
+[44:00.30] plan is we start with something called
+[44:01.86] as a diagnostic test my weight has come
+[44:05.28] down by about three kilograms I think it
+[44:07.56] just helped me just be a little bit more
+[44:09.36] mindful about what I'm eating and most
+[44:12.66] valuable are to coaches one on the diet
+[44:17.28] front and the other on the fitness front
+[44:19.86] the coach started looking at my body fat
+[44:21.90] percentage and started telling me that
+[44:23.46] you know what you're moving in the right
+[44:24.48] direction you're building muscle which
+[44:25.98] means that
+[44:27.00] you're making a sustainable change
+[44:28.62] happen really change the entire Fitness
+[44:30.72] game I think we are already living in
+[44:32.58] the future
+[44:33.15] [Music]
+[44:34.68] and of course me
+[44:37.98] um
+[44:38.88] this is me with my Pro experience in the
+[44:41.22] last nine months so appreciate all the
+[44:43.38] all the nudging and the egging I've been
+[44:45.30] get I'm looking forward to dropping a
+[44:47.40] lot of my fat percentage and improving
+[44:48.90] my muscle mass in the next next nine
+[44:51.18] months
+[44:52.08] um
+[44:52.92] so I was trying to tell everybody that
+[44:55.32] you need to wear bios all the time
+[44:56.82] because that's what makes the program
+[44:58.32] today inaccessible that's what make it
+[45:00.18] unaffordable bios is an expensive
+[45:01.92] product and at healthify we've been
+[45:03.60] working hard to solve the answer to that
+[45:05.34] problem and we're excited to say that
+[45:07.50] the answer is no a patch you put on it
+[45:10.26] expires in 14 days and we're trying to
+[45:12.36] ex we're trying to figure out
+[45:13.68] technological ways of making that as
+[45:16.08] extended as it's possible
+[45:18.78] um what we believe is that bio should be
+[45:20.64] worn once a quarter or once a month and
+[45:23.58] our technology should get enough
+[45:25.50] insights into the data patterns at that
+[45:27.42] time about what foods and workouts work
+[45:29.04] for you how your patterns are at any
+[45:30.78] time of the day to actually make sense
+[45:32.70] of the time in the middle and give you
+[45:34.50] predicted projected glucose curves so
+[45:37.32] abhijeet will tell you a lot more about
+[45:38.82] that but coming up very soon we'll be
+[45:40.92] able to intermittently in between your
+[45:42.72] bias charts as well Britain project
+[45:44.22] glucose curves so so hopefully you know
+[45:47.40] just like my dad-in-law gave up after
+[45:49.44] the first first bios curve and said that
+[45:51.78] I'm going to wait a quarter he'll at
+[45:53.34] least be able to see the Curves in the
+[45:54.60] middle now with our technology
+[45:55.62] regardless of having a bios curve or not
+[45:59.52] um and look I think healthify just to
+[46:01.92] wrap here healthify 2 isn't just a
+[46:04.26] product in our minds it is really a
+[46:06.66] philosophy
+[46:07.74] it and it transcends across our app
+[46:09.66] coaching AI systems transform smart and
+[46:12.42] of course Pro it is one with
+[46:15.18] evidence-based solutions that Empower
+[46:16.80] you to make the change where you get in
+[46:19.38] control and you move from diet plans to
+[46:21.90] diet flexibility and you move from
+[46:24.00] fitness regimen to Fitness freedom
+[46:26.94] to walk you through a little bit of how
+[46:28.80] this magic is translating in across our
+[46:31.20] product spaces
+[46:33.54] I'd like to invite anjan back again and
+[46:35.94] we'd love to quickly walk you through
+[46:37.14] with the rest of the members of our team
+[46:38.40] and how they're translating it down into
+[46:40.08] their various portfolios thank you
+[46:41.94] everybody I'll be seeing you shortly
+[46:43.08] again
+[46:43.53] [Applause]
+[47:05.96] so before we get started um
+[47:08.88] just want to check
+[47:10.38] are there coaches in the audience today
+[47:12.54] couldn't hear any of you guys okay Make
+[47:14.88] Some Noise please
+[47:15.92] [Applause]
+[47:19.08] no uh the reason why I asked for this
+[47:21.30] was the fact that a lot of things that
+[47:24.12] are going to be presented over the next
+[47:25.26] 15-20 minutes
+[47:26.90] they've been under the radar most of you
+[47:30.36] wouldn't know about it so it's not just
+[47:32.82] for the users I think it's going to be
+[47:35.82] nice to present what the team has done
+[47:37.92] over the last few days
+[47:39.84] are we ready guys
+[47:46.62] all right
+[47:47.88] so
+[47:50.34] we what we what what we've presented the
+[47:53.64] whole evening until now has been this
+[47:55.86] entire ecosystem that starts with
+[47:57.36] tracking
+[47:58.74] um there is an advice layer and of
+[48:01.08] course finally the transformation on the
+[48:03.12] user end a lot of technology has gone
+[48:05.88] into building The Habit tracking as well
+[48:08.94] as the brain of the company as we call
+[48:11.40] it our coaches as well as iei
+[48:14.22] so focusing down on what are we
+[48:17.40] reimagining over here we reimagine
+[48:19.20] progress uh the way we can track a body
+[48:21.96] real time but what are we doing on this
+[48:24.00] front
+[48:26.22] until now our coaches had to consume a
+[48:28.68] lot of data points to give you
+[48:30.06] contextual advice
+[48:31.86] it could be water steps nutrition your
+[48:34.92] sleep patterns your workouts how your
+[48:37.80] weight is moving now that's
+[48:40.32] not an easy job but we've obviously
+[48:42.84] scaled really well over the last few
+[48:44.40] years with our services and we've had
+[48:46.92] great impact
+[48:48.90] these services are provided over
+[48:51.80] typically calls as tashar mentioned we
+[48:55.02] would be moving more towards the
+[48:56.40] messaging end of our servicing going
+[48:58.62] forward and of course there are multiple
+[49:00.84] other ways in which coaches Andrea
+[49:02.88] interact with our users
+[49:06.00] but the real name of the game is impact
+[49:09.78] to just sum up how our coaching services
+[49:12.48] in 1.2 helped our users out
+[49:17.10] anybody who interacted with Riya on a
+[49:20.16] regular basis saw 1.5 x better results
+[49:22.68] on healthy farming anybody who
+[49:24.72] interacted with coaches saw a minimum of
+[49:26.34] 2x better results on healthy farming
+[49:31.20] but can we do better
+[49:35.10] over the last few months we've again
+[49:38.34] looked at what
+[49:40.74] our primary habit formation module does
+[49:45.96] it kind of tells you that it is your
+[49:47.94] transformation journey is just diet and
+[49:49.56] workout
+[49:50.60] there are different things that you can
+[49:52.32] do on a diet side eat healthy at the
+[49:54.30] right time and you can work out you can
+[49:56.06] walk after a meal Etc
+[49:59.34] so that's why we provide you two coaches
+[50:01.26] we have nutritionist and a fitness
+[50:02.46] trainer generally working with you on
+[50:04.68] all our coaching Services a nutritionist
+[50:07.26] would call you at the schedule time send
+[50:10.14] you messages a fitness trainer would do
+[50:12.18] the same both of them giving you
+[50:14.10] different types of advice diet and
+[50:16.02] workout
+[50:18.54] but as we started building out Health
+[50:21.36] the five Pro and healthify 2.0 we
+[50:23.76] noticed that there was a problem with
+[50:25.86] our coaching services that was getting a
+[50:27.42] little more Amplified with a new vision
+[50:29.34] for example if there was a glucose spike
+[50:32.94] a coach a nutritionist would would
+[50:36.48] probably ping you and tell you that you
+[50:38.52] know what you can replace this food by
+[50:40.14] this food or tomorrow why don't you try
+[50:41.94] a different recipe for this food the our
+[50:45.30] fitness coach would probably tell you
+[50:47.22] you know what go for a walk or work out
+[50:49.50] in the morning to keep your variability
+[50:51.48] stable Etc so this advice historically
+[50:55.08] at healthify me has come from two
+[50:56.52] different channels two different coaches
+[50:58.26] interacting separately with the client
+[51:00.78] so we challenged our engineering team
+[51:03.00] last week because we saw that this
+[51:04.80] problem was really growing when we were
+[51:06.78] testing pro at the beta level and our
+[51:09.60] engineering team took up the challenge
+[51:11.46] to build
+[51:12.60] what we call
+[51:14.52] One Connect
+[51:15.72] today on one connect we we have allowed
+[51:19.08] our users to work with both their
+[51:21.54] coaches together
+[51:23.22] now it's a connected messaging system
+[51:26.06] that allows you to interact with your
+[51:28.98] coaches on both diet and workout the
+[51:31.26] context is going to stay in one
+[51:33.06] interface
+[51:35.78] but this is just problem solving what
+[51:39.78] else can we do is the question
+[51:41.46] where is the power of AI we keep talking
+[51:43.38] about where is the power of AF
+[51:45.84] the teams have also been secretly
+[51:47.52] working on this bringing Riya into one
+[51:50.58] connect
+[51:52.02] now Riya has always been a user's
+[51:55.14] assistant
+[51:56.76] um but in this case within one connect
+[51:58.80] when you are chatting with your coaches
+[52:01.02] if Ria notices something that you say
+[52:03.06] that he understands Riya would step in
+[52:05.46] for example if you were to tell your
+[52:07.14] coach that I had oats for lunch or
+[52:10.86] breakfast Ria would step in and just ask
+[52:12.90] you if I should I track your food
+[52:15.86] with healthify me and you could just say
+[52:18.54] yes and it would get tracked now this is
+[52:21.06] a functionality that Riya would do
+[52:22.56] otherwise but we brought it into a
+[52:24.72] conversation so you don't have to
+[52:26.28] necessarily leave the conversation
+[52:28.62] with your coaches to do other things on
+[52:30.90] the app is what our vision is
+[52:33.36] similarly
+[52:35.70] Riya is also packed to be a coach's
+[52:38.46] assistant a lot of this work is being
+[52:40.62] done behind the scenes we will be
+[52:42.18] talking about it today
+[52:43.68] but as part of one connect we believe
+[52:46.26] that all the information that's
+[52:48.30] available to our coaches should also be
+[52:50.88] available to our users about the user
+[52:54.48] for example if you are having a
+[52:56.10] conversation with your coach and you
+[52:58.92] tell your coach that you had a great day
+[53:00.24] the coach can invoke Riya at any point
+[53:03.36] in time to look at your stats
+[53:06.90] and give you real-time feedback
+[53:09.60] now this has been envisioned but also it
+[53:13.44] has been launched one connect is now
+[53:16.38] available on All Pro plans starting this
+[53:20.94] weekend
+[53:21.96] very soon all our coaching services are
+[53:25.20] gonna get one connect
+[53:27.30] now this is just one small element as I
+[53:30.54] said you saw this huge vision of
+[53:34.14] um of healthify pro and how everything
+[53:36.48] fits in right
+[53:38.10] now we have reimagined the way messaging
+[53:40.38] works now there is of course calling
+[53:42.30] there is Diet there is a lot of things
+[53:44.52] that we do within healthy farming
+[53:47.70] so we are also reimagining the weight of
+[53:50.58] philosophy works
+[53:52.38] as Tisha said
+[53:54.12] we're thinking about diet and work out
+[53:55.92] differently
+[53:58.14] but the one part of healthy family that
+[54:01.08] still stays on over the coming years is
+[54:04.02] the fact that a very large part of your
+[54:05.88] transformation journey is going to be
+[54:07.86] diet and a smaller part is going to be
+[54:09.84] your workouts to talk about the future
+[54:11.94] of diet on healthify me I would like to
+[54:14.64] call on stage pragya a director of AI
+[54:17.64] Services thank you
+[54:20.94] foreign
+[54:23.11] [Music]
+[54:42.96] you know diet guidance is one of the
+[54:46.32] core philosophies behind how we enable
+[54:49.20] our users to transform
+[54:52.32] um
+[54:54.96] okay sorry about that okay
+[54:58.80] um
+[54:59.40] now the biggest challenge that we've
+[55:01.38] seen uh with diet guidance and you know
+[55:03.96] enabling positive eating behavior is the
+[55:06.66] fact that most people are not able to
+[55:09.24] stay consistent with it
+[55:11.10] now you wanted to find out how we can
+[55:13.32] help our users be more consistent we
+[55:16.14] went back and asked them this question
+[55:18.96] these are some of the answers that came
+[55:21.24] out
+[55:22.14] but what really screamed at
+[55:25.26] screamed out of this is flexibility
+[55:28.80] so what is flexibility mean to different
+[55:32.22] people right
+[55:34.08] for some of us it means that we want to
+[55:36.60] eat three meals a day
+[55:38.28] for some of us it means that I want to
+[55:40.56] eat a very heavy lunch but a very light
+[55:42.48] dinner
+[55:43.62] some want to experiment with
+[55:45.84] intermittent fasting low carb diets Etc
+[55:49.26] some of us don't want a diet plan at all
+[55:52.56] and just want to go with the flow
+[55:55.26] some of us
+[55:56.82] scroll through swiggy every day for 15
+[55:59.16] minutes
+[56:00.54] every lunch time and dinner time just to
+[56:02.82] say
+[56:03.86] what should I eat right
+[56:06.96] so
+[56:08.76] knowing that
+[56:10.92] knowing that all of our users are
+[56:12.54] different
+[56:13.80] how do we enable them
+[56:15.72] on the app to be flexible
+[56:18.42] with all of their nutrition needs how do
+[56:21.12] we solve that problem
+[56:23.04] so far we've allowed users to track a
+[56:25.92] fixed number of calories that we
+[56:27.36] calculate for them
+[56:28.92] five meals a day a fixed
+[56:32.16] protein carbohydrate fiber fat
+[56:35.22] composition only to today say that hey
+[56:38.70] this doesn't work for everybody
+[56:41.12] is different
+[56:43.62] so
+[56:44.76] as the first step in the direction of
+[56:46.62] diet flexibility what we are doing is
+[56:49.44] reimagining the way our food trackers
+[56:51.24] work
+[56:52.68] our food trackers will now be
+[56:54.84] personalized to what you want to do
+[56:57.66] flexibility to change your calories and
+[57:00.48] macronutrients
+[57:02.06] flexibility to add and remove the number
+[57:05.28] of meals that you eat every day
+[57:07.32] I'm sure some of you have skipped lunch
+[57:09.36] today so you can track that right there
+[57:11.40] on healthify me
+[57:13.26] flexibility to adjust the calories in
+[57:16.08] each meal
+[57:17.16] flexibility to tell us exactly what time
+[57:20.40] are you going to eat something so that
+[57:21.96] we can remind you
+[57:24.12] now that we have
+[57:25.86] given you the flexibility
+[57:28.26] with that also comes great
+[57:30.36] responsibility
+[57:31.98] it's our responsibility to ensure that
+[57:34.92] you get the right guidance at the right
+[57:36.90] time
+[57:37.68] to make sure that you reach your goal
+[57:40.98] so
+[57:42.18] you know today our AI systems provide
+[57:45.06] certain level of flexibility in terms of
+[57:47.70] hey I don't like this can you give me
+[57:49.74] some other suggestions uh this food
+[57:52.20] doesn't really fit into what I really do
+[57:54.60] every day right
+[57:56.34] but what can diet flexibility truly look
+[57:58.62] like for our AI systems
+[58:01.26] true flexibility allows you to do the
+[58:04.20] diet that you want to a diet that works
+[58:07.08] for you whether it's intermittent
+[58:08.88] fasting low carb diets keto diets even
+[58:12.24] navratri fasting or a simple weekend
+[58:14.28] detox
+[58:15.54] anything that you want to do our AI
+[58:17.70] systems can adapt to let you switch
+[58:19.74] between these types of diets
+[58:22.08] knowing your metabolic markers knowing
+[58:24.84] your myos data it can even suggest to
+[58:27.42] you what type of diet will work for you
+[58:30.00] to reach your goals in a sustainable way
+[58:33.30] now there are some of us who don't want
+[58:35.64] to follow a diet plan right for those of
+[58:38.76] you
+[58:39.60] we give you the flexibility to pick up
+[58:42.00] guidelines
+[58:42.96] what should your healthy plate of food
+[58:45.90] look like it's different for all of us
+[58:48.84] right what kind of foods you should eat
+[58:51.54] you know for example how do you consume
+[58:54.66] more protein as a vegetarian
+[58:56.52] should you eat beetroot for hypertension
+[58:58.74] Etc
+[58:59.70] also what types of food you should avoid
+[59:02.88] I'm sure you know all of us are looking
+[59:05.34] forward to the food and drinks later but
+[59:07.44] in our minds we're also thinking hey can
+[59:09.96] we do something to make our ignite event
+[59:12.24] slightly more healthy than what it would
+[59:14.70] otherwise be
+[59:16.62] right so the future of diet is flexible
+[59:22.14] now
+[59:23.46] as our healthify me 2.0 Vision provides
+[59:26.88] for more flexibility to our users in the
+[59:29.94] app using our AI there's one very
+[59:32.94] important part of this vision
+[59:34.92] that we've not spoken about yet
+[59:36.96] and that's our coaches a lot of you are
+[59:39.42] in this room you guys play a very
+[59:42.30] crucial role in guiding and Advising our
+[59:44.64] users right but
+[59:47.52] how do we enable our AI systems to help
+[59:52.14] you continue doing that
+[59:53.94] to talk more about this I'd like to
+[59:55.92] invite Swati Bajaj our director of
+[59:57.72] Premium services on stage please
+[60:07.06] [Applause]
+[60:11.42] good evening everyone hope everyone's
+[60:14.46] having a great time and of course our
+[60:16.74] coaches who are most excited about this
+[60:19.02] segment so we've all heard about
+[60:21.12] healthify 2.0 and what it means to us
+[60:25.26] right now imagine a coach's Journey
+[60:27.90] looking at already
+[60:31.50] you know 10 000 data points in a week
+[60:34.44] for the 200 clients now that's gonna
+[60:37.74] change to almost 1 million data points
+[60:40.50] right how does a coach now give the most
+[60:43.02] personalized advice to their users
+[60:48.12] let's look at an example so this is
+[60:50.22] anjan's bios curve uh from last Saturday
+[60:53.36] and the coach was notified about uh
+[60:57.30] Pike at 6 pm
+[60:59.28] the coach was also notified about
+[61:01.50] glucose variability in the night which
+[61:04.08] happened
+[61:04.92] and now the coach needs to decide why
+[61:07.92] did this happen so in a non-ai world
+[61:10.76] idly a coach would look at what were the
+[61:14.10] foods consumed by anjan what time did he
+[61:16.68] eat what were the quantities of the food
+[61:18.54] did he work out did he record any
+[61:22.32] medical condition prior did his latest
+[61:25.02] metabolic panel detect certain
+[61:27.66] parameters being off or did he have a
+[61:30.30] good sleep and 100 such parameters right
+[61:34.38] now imagine they have to do this with
+[61:36.66] 200 such clients is that even humanly
+[61:39.36] possible
+[61:40.62] that's where power of AI comes in
+[61:43.62] suria in the back end is crunching all
+[61:46.80] this data not just for anjan but
+[61:49.26] users like anjan right and giving our
+[61:53.28] coaches
+[61:54.36] the Consolidated insights
+[61:56.82] so Riya is saying anjan has just binge
+[61:59.88] eaten
+[62:00.84] around 5 30 without any workouts that
+[62:03.72] evening
+[62:04.92] Riya also says that black coffee is what
+[62:08.28] caused irregular sleep pattern
+[62:11.10] and finally Riya has also recognized
+[62:13.32] that similar Trends were seen on
+[62:15.54] previous few weekends as well probably
+[62:17.70] it is anjan's weekend lifestyle
+[62:19.98] so with all this information a coach
+[62:22.98] all has to do is send a good advice to
+[62:26.46] the user right most personalized advice
+[62:29.04] without really looking into various
+[62:31.26] different data points but the user at
+[62:33.78] the end of it gets the right advice from
+[62:36.42] the coach
+[62:37.74] not only this I think as a coach your
+[62:41.28] duty is also to give the right diet plan
+[62:43.32] to users right and Riya is becoming
+[62:47.34] smarter even here
+[62:49.08] so in the same example Riya has
+[62:51.60] identified black coffee which had a poor
+[62:54.36] glycemic response and suggests to
+[62:56.64] replace that with lemon tea
+[63:00.66] Riya also realizes that chips is
+[63:02.94] something which anjan binges on over the
+[63:04.92] weekend and gives a healthier
+[63:06.72] alternative
+[63:08.22] not just that Riya has also recognized
+[63:10.98] that vitamin D B12 is where anjan has
+[63:14.64] slightly lower marks and includes
+[63:17.16] pumpkin chia seed pudding in his snack
+[63:20.22] all that a coach has to do now is review
+[63:22.92] and send the diet plan to anjan
+[63:26.28] so this is where the power of AI comes
+[63:28.44] in and this is where our coaches are
+[63:30.54] going to be able to deliver the most
+[63:32.88] personalized advice on healthify 2.0
+[63:39.87] [Applause]
+[63:42.84] so until 2017 it was mostly coaches who
+[63:46.92] was driving the entire ship
+[63:48.72] 2018
+[63:51.44] AI came in and helped coaches deliver
+[63:55.44] right contextual messages to the users
+[63:58.70] 2019 we introduced smart plans
+[64:02.42] 2021 and until now both coach and AI are
+[64:06.60] working hand in hand
+[64:08.46] so what's next in the World of tech and
+[64:10.98] AI let me call upon abhijeet our VP
+[64:13.80] engineering to talk about more on this
+[64:23.60] thank you
+[64:26.04] foreign
+[64:34.08] that's me
+[64:35.76] I'm going to take you a little bit
+[64:37.20] behind the scenes and we've seen all the
+[64:39.30] fancy
+[64:40.34] slides the screens I'm going to talk a
+[64:43.80] little bit about the blood and sweat
+[64:45.24] that went behind making all of this so
+[64:48.00] let's hear the pro story
+[64:50.94] if you've been to our office in the last
+[64:52.98] few weeks this is what you will see most
+[64:55.62] of the people doing right the waiting at
+[64:58.38] the staircase
+[65:00.00] at the restroom
+[65:01.86] on the zoom call you know they just
+[65:04.44] that's all that's that's what some
+[65:06.66] people talked about the obsession of
+[65:08.58] looking at your glucose level so that's
+[65:10.08] kind of gets into you you want to you
+[65:12.30] want to see you want to know what is
+[65:14.28] going on with your glucose I call it the
+[65:16.20] biosity right like the Namaste it's the
+[65:18.30] body of stay anytime you see anyone
+[65:20.28] right
+[65:21.78] I joined back in December in December
+[65:24.06] and Jan are like one of the busiest
+[65:25.86] months for uh for healthify me I jumped
+[65:29.64] straight in you don't see too sharp
+[65:31.74] pushing me back from there lots of
+[65:34.14] issues you know traffic is picking up
+[65:36.24] we're trying to figure out kind of
+[65:37.92] what's going on
+[65:39.36] in the middle of all this
+[65:41.58] we find this Labs team that's been
+[65:43.86] tinkering with stuff
+[65:45.48] over the last year right right from the
+[65:48.18] previous summer and you say okay what is
+[65:49.62] this
+[65:50.76] mysterious lab project something that's
+[65:53.46] going on uh the couple of people you
+[65:56.64] know figuring out NFC figuring out
+[65:59.10] bluetooth and trying to get some some
+[66:01.80] data from one of these markers we say
+[66:04.38] okay
+[66:05.76] let's dig deep let's try to mainstream
+[66:08.16] this that's not as simple right now we
+[66:10.50] are going to use NFC we're going to use
+[66:12.78] Bluetooth we're going to use our
+[66:14.72] activity trackers data that is coming in
+[66:18.54] lots of data stuff that we're not used
+[66:21.00] to so far right we've just seen people
+[66:22.98] entering their diet plans telling us
+[66:25.56] when they did their workout but now this
+[66:28.14] is like a huge flow of data coming into
+[66:30.96] our systems all of this data needs to be
+[66:33.48] crunched in real time and that's not all
+[66:36.06] we need to get our coaches in their
+[66:38.94] human intelligence their understanding
+[66:40.74] of a user mix that and create a single
+[66:45.06] line of insights and nudges for our
+[66:48.30] users that's the tech
+[66:50.34] that's the complexity of the problem and
+[66:53.04] that's what the team has been working on
+[66:59.76] this is my experience with bio so I
+[67:02.76] started wearing the bias patch back in
+[67:05.46] January
+[67:06.60] I've lost I think more than a kilo every
+[67:09.36] month since I started that so three
+[67:11.94] kilos lesser
+[67:13.56] but this is what we started to realize
+[67:16.08] that it's not just a line that now you
+[67:19.08] need to add the markers on what you're
+[67:21.42] eating what you're drinking what you
+[67:24.42] were doing this is a combined picture
+[67:27.60] this is not just your glucose string
+[67:29.82] this is a combined picture of everything
+[67:31.68] that you're doing now I know you're look
+[67:34.02] you're blaming the boondi laddu there
+[67:36.00] but yeah that's where it was it's been
+[67:39.42] fun it's been a lot of fun building all
+[67:41.70] of this I like the save in life throws
+[67:44.16] Lemons at you you put a past Parts on it
+[67:46.62] this is a story you know it is it is a
+[67:49.86] device that kind of stays on you right
+[67:52.08] and people wear concerned including our
+[67:54.30] developers about how how this is going
+[67:55.98] to happen uh so some of the ingenious
+[67:59.10] Engineers took it put on a lemon and
+[68:01.86] made it work like I don't have to wear
+[68:03.48] it all the time I can just put it on
+[68:04.98] Lemon and make it work start getting the
+[68:07.02] readings that was amazing
+[68:10.86] it has not been simple
+[68:12.78] right and Tushar talked about this a
+[68:14.76] little bit we've done iterations over
+[68:16.86] iterations you saw the graph that I
+[68:18.42] showed you uh we looked at steps at some
+[68:20.82] point we looked at food at some time we
+[68:22.50] looked at activity details at some time
+[68:24.30] heart rate sleep all of this so multiple
+[68:27.90] iterations of the same thing again and
+[68:29.88] again over and over till we are very
+[68:31.32] happy about it uh you know crazy
+[68:33.78] deadlines every deadline is
+[68:35.94] slightly shorter than the previous one
+[68:38.70] uh you know late night calls I think we
+[68:41.04] kicked off the whole thing with 11
+[68:42.12] o'clock in the night meeting right so
+[68:44.22] it's been it's been a phenomenal Journey
+[68:47.70] we've had some crazy things happen so
+[68:50.34] any people have been using their sensors
+[68:52.92] and patches and then going around and
+[68:55.02] then okay let me check your glucose let
+[68:56.52] me secure glucose this is what you get
+[68:58.38] this is what we call as a zombie glucose
+[69:00.06] graph right this is when you mix up your
+[69:01.56] senses this is when you mix up your
+[69:03.18] device and this is what you get we call
+[69:05.40] the zombie graphs uh we have some of the
+[69:08.10] team members here who got so tired
+[69:09.84] testing the smart scale engine that they
+[69:12.00] literally have to sit down on a chair
+[69:13.20] and then just press their legs to see if
+[69:15.00] the smart skill is working correctly
+[69:16.44] right so we've had fun times doing that
+[69:19.38] and this is the team right this is a
+[69:21.18] team that has put their blood and sweat
+[69:25.08] to make all of this happen for a moment
+[69:27.06] please in the audience I want all the
+[69:30.84] thank you
+[69:38.40] I want all the tech team members design
+[69:41.52] team members and product team members if
+[69:43.62] you can please stand up and people can
+[69:45.60] see you
+[69:46.80] and a big round of applause
+[69:48.89] [Music]
+[69:58.02] [Music]
+[69:59.52] thank you guys it wouldn't have been
+[70:01.62] possible without you
+[70:04.08] but that's not all this is not where we
+[70:06.30] stopped right we need to keep going
+[70:07.50] let's think about what next
+[70:10.68] there are three streams of data that we
+[70:12.78] are dealing with there is a stream of
+[70:14.40] information that's coming from the BIOS
+[70:15.90] patch there is a stream of data that's
+[70:17.94] coming from the variables that you're
+[70:19.32] having
+[70:20.64] the third one which is the the one that
+[70:23.40] is actually about calorie in
+[70:25.80] food
+[70:27.24] nine of ten people tell us that it is
+[70:30.36] very hard to track food you remember you
+[70:33.18] have to type you have to select the
+[70:34.44] quantity you have to get them when you
+[70:35.88] type Roti you get three routines and you
+[70:37.44] pick which one all of that extremely
+[70:39.96] complicated we're going to solve that
+[70:41.70] and we're going to use another lab
+[70:43.20] project to solve that what we call Snap
+[70:46.02] 2.0 as you can see no typing no entering
+[70:51.06] no food names no food quantities take a
+[70:54.96] picture our AI image processing system
+[70:57.96] we'll figure out what food it is what
+[70:59.76] quantity it is type it in snap it to
+[71:02.52] your glucose graph that's it
+[71:05.04] that's what's coming up next
+[71:12.00] what will we do with all of this right
+[71:14.10] we have all this data with us
+[71:16.80] we're going to create what we call as
+[71:18.36] the ambulatory glucose profile
+[71:20.90] this is a graphical and quantitative
+[71:23.34] characterization of how your glucose has
+[71:25.92] been over the 14 days now we have a
+[71:29.04] sense what is your glucose trend
+[71:31.56] snap on food and activity we know why
+[71:35.28] that glucose trend is the way it looks
+[71:37.62] like we have a full picture of who you
+[71:40.74] are what you do at what point of time
+[71:43.50] and how that impacts your glucose level
+[71:46.68] so this can be Foods this can be
+[71:48.06] activities and this is about you
+[71:52.02] that we don't stop there right we are
+[71:54.12] healthy for me we have huge scale so
+[71:57.06] this data about each food is available
+[72:00.18] from all of our users activities from
+[72:03.06] all of our users slowly we start
+[72:05.28] creating these Fingerprints of glucose
+[72:07.68] responses and then start mapping cohorts
+[72:10.44] of similar people so without having to
+[72:13.08] have a particular food based on your
+[72:15.06] cohort we can actually start figuring
+[72:17.28] out how your body's glucose response is
+[72:19.68] going to be for that particular food
+[72:22.74] where are we getting to we're getting to
+[72:24.96] glucose prediction
+[72:26.82] and what do we do with glucose
+[72:28.20] prediction
+[72:29.34] we give you early warnings we know 11 30
+[72:32.52] in the morning is your glucose crash 11
+[72:35.76] o'clock we make you eat a fruit avoid
+[72:38.40] the crash we know where the spikes are
+[72:40.38] happening we know where the crashes are
+[72:41.70] happening we are going to nudge you in
+[72:43.68] time before time so that you can change
+[72:46.32] your behavior we'll have a corrective
+[72:48.72] feedback engine we went to a movie ate a
+[72:51.42] tub of popcorn gave into the temptation
+[72:55.26] Step In healthify Me intelligence it'll
+[72:57.24] tell you okay you are at Phoenix Market
+[72:58.98] City please take a 37 minute walk around
+[73:01.50] the mall the wash off the sins of your
+[73:04.32] you know tub of popcorn right so we will
+[73:06.84] be able to give you real time
+[73:08.60] personalized corrective feedback that
+[73:10.74] can help you fix your glucose
+[73:14.34] Beyond meal guidance right so we will be
+[73:17.64] able to tell you you tell us what you're
+[73:19.56] planning to eat and then we will tell
+[73:21.60] you how that will be for you and then
+[73:23.52] you can pick the right meals the right
+[73:25.14] combinations the right choices so that's
+[73:27.48] how we're going to render the future
+[73:30.96] and it's going to be on a tight deadline
+[73:33.90] the other person
+[73:35.82] the other person who knows about tight
+[73:37.50] deadlines please welcome Rohan Gupta on
+[73:40.26] stage
+[73:43.44] [Music]
+[73:51.50] talking about tight deadlines guys all
+[73:54.36] of these Decks that you see up here they
+[73:56.70] were done today
+[73:58.98] 4 30 pm
+[74:02.04] anyway
+[74:03.54] um
+[74:04.20] so yeah I'm here to talk about
+[74:06.96] the future of what we've been talking
+[74:09.18] about for so long right we've been
+[74:10.50] talking about uh healthify 2.0 we've
+[74:13.86] been talking about what that holds for
+[74:16.68] us
+[74:17.52] but how does it change in terms of what
+[74:19.50] it looks like
+[74:20.64] how do we make sure that healthify 2.0
+[74:24.48] does look like the future of healthify
+[74:26.52] me
+[74:28.08] so we
+[74:30.18] yeah let's talk design let's talk
+[74:32.94] healthify 2.0
+[74:35.34] so what we've always been focused on at
+[74:38.40] healthify me is
+[74:41.28] function
+[74:42.42] we've always been focused on getting the
+[74:45.24] ux of our product right we've always
+[74:47.16] been focused on getting people to be
+[74:49.26] able to track their food as fast as they
+[74:51.54] can to be able to you know track water
+[74:53.76] as quickly as they can but it's come at
+[74:56.58] a slight compromise it's come at the
+[74:58.26] cost of being a very good looking or a
+[75:01.14] pretty app and that's something that
+[75:03.66] we've been well aware of and I think we
+[75:05.34] took healthify 2.0 as the opportunity to
+[75:07.32] go and go ahead and change that
+[75:09.90] today we want to talk about form
+[75:12.60] not form over function
+[75:15.48] but form that follows function form that
+[75:18.42] actually makes the user experience much
+[75:20.46] better than it is
+[75:23.16] so we did a couple of things right we
+[75:25.14] decolorize the UI
+[75:27.18] now what does that mean we basically
+[75:28.92] took our what we know is a very colorful
+[75:32.16] app
+[75:33.06] and we started taking out the color why
+[75:35.64] so that we could use color more
+[75:37.14] intelligently so that we could get
+[75:38.76] people to click on what's important and
+[75:41.28] to sort of skim over what's not
+[75:43.32] important at that moment for them
+[75:46.26] we also moved to a card style approach
+[75:48.54] why are we doing that we're doing that
+[75:51.24] to allow modularity to we've spoken
+[75:53.16] about flexibility modularity is a big
+[75:55.68] part of flexibility we can give the user
+[75:58.50] the right kind of information at the
+[76:00.24] right time that they need
+[76:02.82] and we've decided to Hero the icon
+[76:04.80] generally the app is littered with icons
+[76:07.14] and they get lost so this time we're
+[76:09.12] going to make sure that people are able
+[76:10.92] to find exactly what they need when they
+[76:13.14] need
+[76:15.06] so we decolorize the UI we brought in
+[76:17.28] cards and we decided to Hero the icons
+[76:19.14] right we decided to create a design
+[76:21.84] system that's fresh that's fluid and
+[76:25.80] that's always evolving that's something
+[76:27.90] that we know at healthify me that we
+[76:29.88] cannot stop evolving
+[76:32.58] so we created the design system we call
+[76:35.16] it Brew
+[76:38.46] so the new Brew design system is going
+[76:40.26] to be everywhere across the app in the
+[76:42.78] next couple of months
+[76:44.16] and you're going to see it
+[76:47.04] this is what the system looks like and
+[76:49.56] hopefully you guys will see it in the
+[76:51.06] app very soon
+[76:53.52] this is what the new app uis look like
+[76:56.00] and some of them are live already some
+[76:58.80] of them are coming in the next couple of
+[77:00.06] weeks itself
+[77:03.60] we also launched a new website guys
+[77:05.52] we've had healthfyme.com as uh the old
+[77:09.06] website for quite some time we decided
+[77:11.16] to give that an upgrade for healthify
+[77:12.84] 2.0 so we've got the new website up and
+[77:15.30] running
+[77:17.53] [Applause]
+[77:22.62] so yeah that's the new app the new
+[77:24.72] website all of that
+[77:26.52] but what's next for brew what do we do
+[77:28.44] with the future of Brew
+[77:31.32] oh what does this button do
+[77:38.76] the next is dark blue
+[77:43.98] we're introducing the dark UI finally
+[77:46.20] for healthify me it's been a while but
+[77:48.06] we're going to see healthify me in dark
+[77:49.56] mode very soon
+[77:54.00] that's it from my side guys thank you so
+[77:56.16] much and uh
+[77:58.38] we're gonna take a small 15-minute break
+[78:00.54] after this and we would request you to
+[78:03.30] be back in by 7 10 to 7 12 so that we
+[78:07.26] can get a panel done with vinod khosla
+[78:09.78] and Bala so looking forward to that
+[78:12.24] thank you so much guys
+[78:13.97] [Music]
+[78:15.36] foreign
+[78:16.27] [Music]
+[92:46.70] uh today we have something special we
+[92:49.38] have vinod khosla who's going to be
+[92:50.64] joining us remotely
+[92:52.74] um and he's going to be uh in a panel
+[92:55.44] with Bala Bala is a Serial entrepreneur
+[92:58.08] and a successful in Silicon Valley and
+[93:00.96] in India and a successful VC he's an
+[93:03.66] early investor at healthify me and a
+[93:05.58] board member moreover he's a friend and
+[93:08.04] a mentor to the leadership at healthify
+[93:09.60] me please welcome Bala
+[93:15.64] [Music]
+[93:19.80] all right everybody how's everybody
+[93:21.30] doing
+[93:23.64] I can't hear you
+[93:27.66] awesome
+[93:28.86] well
+[93:30.12] um it's my pleasure to introduce vinod
+[93:34.80] uh we know needs no introduction is an
+[93:37.62] entrepreneur one of the one of the
+[93:39.84] greatest Tech investors in the world and
+[93:42.84] let's please not keep him waiting so
+[93:46.26] um welcome vinod can we uh can we bring
+[93:49.62] vinod on stage there he is
+[93:52.02] we know it's our pleasure to have you on
+[93:53.70] board
+[93:55.44] great to be here great to be talking to
+[93:57.90] the health fight team and everybody else
+[94:00.42] yeah yeah we're all very excited and uh
+[94:03.00] thank you once more for uh waking up in
+[94:05.46] the morning to make this call all the
+[94:07.26] way from Silicon Valley
+[94:10.22] oh always happy to do it
+[94:12.98] so we know I think the first question
+[94:15.18] all of us have here is
+[94:17.40] um what did you see in Tushar and what
+[94:19.56] got you to invest in healthify me how
+[94:22.02] did you guys meet and uh
+[94:25.14] you know I have a strong interest in
+[94:28.50] technology driven Innovation where
+[94:32.22] technology can have a huge impact on
+[94:34.86] people
+[94:37.38] in this particular case uh the funny
+[94:40.02] story is when I first met Tushar and
+[94:43.32] first meant
+[94:44.72] a healthify me team I actually uh didn't
+[94:50.64] make an investment
+[94:52.26] I passed on the opportunity is my light
+[94:55.74] too bright uh
+[95:01.74] let me
+[95:03.36] uh
+[95:04.64] in any case
+[95:07.74] it would later we met again in 2019 or
+[95:12.66] so that I got deeply interested because
+[95:15.78] healthify me was seriously using AI to
+[95:19.68] enhance nutritionists
+[95:21.90] and to uh provide nutrition advice to
+[95:26.16] people who couldn't afford the higher
+[95:27.90] price points nutritionists enabled
+[95:31.04] in general there's always going to be a
+[95:34.44] shortage of real expertise
+[95:36.90] in every country in the world
+[95:39.98] whether it's a nutritionist or a primary
+[95:43.14] care doctor or a cardiologist or an
+[95:46.26] oncologist
+[95:47.46] and I love the fact
+[95:49.62] that companies can develop AI to
+[95:53.58] leverage it significantly and make these
+[95:56.52] Services much more accessible and
+[95:58.56] affordable for everybody
+[96:00.66] and I think healthify me is one of the
+[96:03.48] Pioneers in that
+[96:05.28] and that they start to add more than
+[96:08.10] just nutrition and the health part me
+[96:10.50] Pro product
+[96:12.00] is adding cgms and more
+[96:15.44] detailed Diabetes Care
+[96:18.24] uh I find it very very exciting because
+[96:22.08] that level of
+[96:24.54] caring for individuals is not possible
+[96:27.84] without the kinds of Technology Health
+[96:30.66] by me has created
+[96:33.84] it's also exciting that we see a very
+[96:36.66] very large company starting to emerge
+[96:39.18] out of India that to me is really
+[96:42.00] exciting
+[96:43.62] thanks we know then uh the team I hope
+[96:45.90] you all heard this this is all directly
+[96:47.52] a reflection of what you've created so
+[96:49.98] you got to give yourself a big round of
+[96:51.30] applause for this
+[96:54.72] ah
+[96:55.86] yes let's do that
+[96:59.04] so vinod what do you see is the future
+[97:00.66] of metabolic Health uh and the use of
+[97:04.20] technology I mean sitting in the Vantage
+[97:05.64] Point you're singing seeing you must be
+[97:07.44] seeing you know all kinds of
+[97:08.52] Technologies all kinds of innovation
+[97:12.06] well we've always known what to do to
+[97:15.30] avoid to improve metabolic health
+[97:18.32] most visibly metabolic health is about
+[97:21.48] diabetes
+[97:23.10] uh but cardiac health is also related to
+[97:26.70] metabolic Health recently it's been
+[97:29.16] speculated it may be once a larger
+[97:31.38] factors in Alzheimer's disease
+[97:33.96] so metabolic health is broadly
+[97:36.24] applicable
+[97:37.94] uh and and it causes a lot of Downstream
+[97:41.58] negative effects and costs and misery to
+[97:45.66] people on not just cause
+[97:48.08] so a service like Health Fund
+[97:52.14] Pro
+[97:53.40] that can really address this
+[97:56.10] would make a huge difference now there's
+[97:58.68] multiple parts to it one you have to
+[98:01.08] make it scalable which is where the
+[98:03.30] technology becomes
+[98:05.22] very very important and health for me is
+[98:08.84] unique in having developed that
+[98:11.16] technology
+[98:12.60] that's why me is one of the first to
+[98:14.88] start using cgms to actually manage it
+[98:19.08] and to make all this very affordable for
+[98:22.86] people
+[98:23.64] I think affordability and means you more
+[98:26.88] people can access it and that means more
+[98:29.82] people can benefit so that's really
+[98:31.56] what's exciting uh the last part which
+[98:34.50] helps find me does incredibly well is
+[98:36.86] engage the consumer there's a lot of
+[98:40.14] medical services that don't really
+[98:42.30] engage the consumer
+[98:44.22] and and I find it pretty exciting that
+[98:47.10] health for me does great on technology
+[98:49.50] and on consumer engagement
+[98:52.26] uh both of which are essential to a very
+[98:55.50] effective service
+[98:57.06] in a very important area like metabolic
+[98:59.76] health
+[99:01.62] and uh in terms of cgms which I know
+[99:04.62] you're a big fan of and you've been you
+[99:06.48] know following this for years uh is as a
+[99:08.58] Time come is this the time are we
+[99:10.08] hitting is healthy by Pro uh hitting the
+[99:12.36] market at the right time or we too early
+[99:13.92] too late
+[99:15.90] uh we are definitely on the early side
+[99:19.38] but that's a good thing because it helps
+[99:22.02] us build and refine the service
+[99:25.02] uh
+[99:27.20] much better over the next few years no
+[99:30.24] service is complete when it's introduced
+[99:32.82] I find it generally takes two years for
+[99:35.70] a service to get better you know
+[99:38.88] multiple versions multiple iterations
+[99:41.04] it's the nature of Technology
+[99:44.10] for us to go through these iterations uh
+[99:47.40] and so uh uh I'm glad we are on the
+[99:52.02] early side we have won the Pioneers this
+[99:54.36] area I want the first to apply cgms uh
+[99:58.68] one of us to even uh add Ai and consumer
+[100:04.50] engagement so it's uh pretty exciting
+[100:08.40] so we know the the team here has created
+[100:10.44] an amazing product for India
+[100:12.66] um and we are by far and we'll discuss
+[100:14.94] this in the last board meeting uh the
+[100:17.04] number one in India but now the we're
+[100:20.22] upping the game even more
+[100:22.20] um and as a board we decided you know
+[100:23.82] India is fine but we want to create a
+[100:25.74] global product a worldwide product and
+[100:28.14] uh we want to compete with the best of
+[100:29.58] the best in the Silicon Valley
+[100:31.38] um the team is all here the tech the
+[100:32.76] design
+[100:33.90] um and and and everybody else what
+[100:36.18] advice would you give the product design
+[100:37.56] on the tech teams uh where we take this
+[100:40.02] game from India uh to Silicon Valley and
+[100:42.54] go toe-to-toe with you know the Giants
+[100:44.40] in the valley uh what would you tell
+[100:46.14] them uh what do they need to do to up
+[100:47.88] the game
+[100:49.02] cool
+[100:50.16] well what I just said I think is the
+[100:52.20] important message the product is never
+[100:54.00] done
+[100:54.78] it can always be better I have a way of
+[100:57.84] irritating people by saying good isn't
+[101:00.18] good enough great is barely acceptable
+[101:03.00] I think it's a good philosophy to have
+[101:05.34] in life on everything
+[101:07.38] but especially on an important product
+[101:09.48] like this you keep improving it you keep
+[101:11.88] broadening it you keep making it much
+[101:14.52] more accessible
+[101:15.96] uh to improve the quality of care and
+[101:19.02] reduce the core
+[101:20.54] service costs so it can be more
+[101:23.58] affordable to everybody I think we can
+[101:26.52] have a large Global impact on this and
+[101:28.86] build a global company out of India in
+[101:31.44] health farming
+[101:33.90] um thanks vinod and I hope the team you
+[101:35.94] heard it so you thought you were
+[101:37.02] spending Sleepless hours uh that is just
+[101:39.24] the beginning so please get used to it
+[101:41.94] um we are going to take this product
+[101:43.08] worldwide and uh and we're going to win
+[101:45.30] so
+[101:46.92] um uh we know that I know it's very
+[101:48.42] early for you thanks very much for your
+[101:49.80] time any any last words anything you
+[101:51.48] want to tell the team
+[101:53.22] um that where we need to be at the next
+[101:55.08] ignite uh you know where we need to up
+[101:57.90] the game any words
+[102:00.60] well first I do want to congratulate the
+[102:03.30] team it's been incredibly exciting to
+[102:06.60] see what has happened in this company
+[102:09.62] from uh zero error to seven to so on up
+[102:15.54] to a 50 million dollar kind of AR number
+[102:18.50] and the team starting to go global
+[102:22.56] as I say as you move up in the leagues
+[102:25.56] the level of competition moves up
+[102:28.02] so we can never rest on our Laurels but
+[102:31.08] the team deserves a real hand and
+[102:33.54] congratulations for what they've
+[102:35.34] achieved so far it's been a phenomenal
+[102:37.74] journey and a real tribute to the
+[102:39.84] quality of teams helped by me and my
+[102:42.90] uncle and the whole team have put
+[102:44.34] together
+[102:45.90] thank you very much vinod for your
+[102:47.58] generous support and you know and those
+[102:49.98] great words sometimes it's very
+[102:51.60] motivational for uh for everybody here
+[102:53.40] and uh and thanks everybody this is uh
+[102:56.94] it's a great opportunity thank you very
+[102:58.20] much
+[102:59.76] thank you bye bye everybody
+[103:07.92] [Music]
+[103:12.54] so over the last few years
+[103:14.34] um
+[103:15.48] we have heavily scaled
+[103:18.18] um
+[103:18.96] not just in India but globally but in
+[103:21.06] India I think all of us in this audience
+[103:23.70] would
+[103:24.98] guess that most of our scale came on the
+[103:27.78] Android front
+[103:29.40] and that's just one small part of our
+[103:32.40] partnership with Google
+[103:34.02] and Google's always been at the center
+[103:37.08] of any support that we require from the
+[103:39.90] ecosystem
+[103:41.36] tonight we look forward to talking to
+[103:44.76] guys is it ready
+[103:46.98] tonight uh we look forward to talking to
+[103:49.44] Sanjay Gupta who is the country head of
+[103:52.44] Google some of his team members are in
+[103:54.54] the audience today guys can we give it
+[103:56.46] up
+[103:57.48] to Sanjay Gupta please
+[104:00.48] how are you
+[104:03.12] Sanjay can you see us and hear us
+[104:13.68] so this tends to happen guys I mean it's
+[104:15.96] it's a part of the ignite experience if
+[104:18.36] we don't goof up then big night is not
+[104:20.94] ignite so bear with us
+[104:24.67] [Music]
+[104:33.24] hi Sanjay hope you can see us the
+[104:35.40] thousand people in front of us uh
+[104:37.74] welcome to ignite
+[104:39.54] good evening welcome to ignite uh I just
+[104:43.08] gave a quick background I mean if you
+[104:44.76] missed that I gave a quick background
+[104:46.02] just wanted to get started right away we
+[104:49.08] have been
+[104:50.94] um talking about how large we are as
+[104:53.16] healthy family during the course of this
+[104:55.68] entire ignite function tonight
+[104:59.88] um just wanted
+[105:01.32] from your Vantage Point uh how do you
+[105:05.52] view healthify me within the health and
+[105:08.94] wellness ecosystem in India
+[105:11.82] yep so first congratulations to all of
+[105:14.70] you on a very special moment
+[105:17.10] I think uh to healthy family team which
+[105:20.04] is here to anjan to you and to Tushar uh
+[105:24.84] I think from what I just heard on what
+[105:26.88] you're launching you're launching
+[105:28.62] healthy 5 Pro which is personalizing
+[105:31.50] both diet and workout
+[105:34.14] and I think I do hope that not only do
+[105:37.56] you personalize it but potentially you
+[105:40.02] personalize it for a billion Indians so
+[105:42.00] that's my hope and wish for all of you
+[105:44.04] and just from my vantage point I would
+[105:46.20] say that uh
+[105:47.94] my belief is that
+[105:50.28] technology is really changing the world
+[105:52.32] and how problems need to get solved if
+[105:55.14] at all if I reflect back on the last two
+[105:57.18] years covet really changed the way we
+[106:00.00] look at Health as a country very deeply
+[106:03.12] and that really brought into Limelight
+[106:05.34] the opportunity and the and the power
+[106:08.40] what technology can do to save lives
+[106:11.52] and my personal belief is that
+[106:14.28] technology makes a big difference when
+[106:16.80] it is purposeful
+[106:18.66] and disruptive
+[106:20.34] and from the lens that I look at when I
+[106:22.50] meet Tushar and I hear him and I hear
+[106:24.42] all of you speak I feel there's a deep
+[106:26.58] purpose that healthy fire brings to
+[106:28.26] India
+[106:29.22] but above all that the disruption that
+[106:31.98] you think of
+[106:33.18] when you talk about that you can measure
+[106:35.76] glucose level at the top of a click
+[106:38.60] automatically that's disruption
+[106:41.58] you talked about how a coach can look at
+[106:45.72] a million data points for you anjan and
+[106:47.82] tell you in on on the fly in three
+[106:50.82] simple things that you need to do maybe
+[106:52.20] drink less coffee I think that's
+[106:53.82] disruption the fact that you went ahead
+[106:56.28] 10 years back
+[106:58.20] and thought of launching a a health app
+[107:01.92] in India or or really solving for health
+[107:04.44] in India is disruption so I see from my
+[107:07.80] vantage point
+[107:09.12] healthify me as a purposeful disruption
+[107:11.76] in India and I do think you have a huge
+[107:15.00] potential to change India and
+[107:17.82] potentially the future of India
+[107:24.90] Take a Bow guys it's it's not been an
+[107:27.30] easy easy Journey throughout the
+[107:29.10] pandemics and Jazzy pointed out uh we
+[107:32.04] have had to adapt to Changing Times
+[107:36.06] um by coming up with new Solutions but
+[107:38.46] I'm pretty sure there is also a lot
+[107:40.50] cooking within Google Labs a lot of
+[107:42.90] things that are happening on Google's
+[107:44.16] front it'll be nice to know from your
+[107:47.40] point of view is there something that
+[107:49.80] this audience needs to know it's a it's
+[107:51.66] a combination of people in from the
+[107:55.38] investment circles It's a combination of
+[107:57.54] heavy engineering teams over here
+[108:00.44] and any word from you would probably be
+[108:03.86] something that they wouldn't have heard
+[108:05.76] before possibly and perhaps we'll shed
+[108:09.36] some light on what Google is doing
+[108:11.82] yeah so I think uh thank you for asking
+[108:13.80] that question I do think I think all of
+[108:16.02] you being where you are in the in the
+[108:18.54] Indus Valley of this country not the
+[108:20.22] Silicon Valley you know a lot about what
+[108:22.32] is happening in the world of technology
+[108:23.70] and impact and I do think uh from my
+[108:27.48] point I look at India as the biggest
+[108:29.46] opportunity that all of us are looking
+[108:31.08] at together including us at Google
+[108:33.42] our belief is that we want to make the
+[108:36.24] internet
+[108:37.08] helpful and safer for a billion Indians
+[108:39.72] and that's what we work for from a very
+[108:41.82] India lens point of view not the Google
+[108:43.32] Global lens point of view and within
+[108:45.78] that I do think the areas that we deeply
+[108:48.96] care about
+[108:49.92] air from a very India lens or health
+[108:53.78] Agriculture and education I think these
+[108:56.34] are three challenges which have not been
+[108:58.56] solved well for a market like India and
+[109:00.78] for the developing world
+[109:02.28] and as Google we are actually deeply
+[109:05.10] committed not only with our own
+[109:06.54] technology teams but with our with
+[109:08.82] Partners like you and many more I think
+[109:11.84] entrepreneurs and entrepreneurial teams
+[109:14.28] which are solving for it to say let's
+[109:16.62] partner with them deeply really solve
+[109:18.84] for those challenges well uh I think
+[109:21.18] there's a lot cooking at Google from
+[109:23.40] just one of you of I think the two
+[109:25.38] things from a very India lens which
+[109:26.82] hopefully should enable what I think in
+[109:30.18] your mission as well is around we do
+[109:33.00] want to make the internet accessible to
+[109:35.28] a billion Indians and more by making the
+[109:38.94] opportunity of a device affordable to
+[109:42.00] every Indian and that means the price
+[109:43.80] points have to change very dramatically
+[109:45.12] for the next 500 million users in this
+[109:46.86] country
+[109:47.76] second we do believe that we are a
+[109:50.40] country which is very diverse our
+[109:52.38] languages change every few kilometers
+[109:54.30] and how do we ensure that when somebody
+[109:58.08] in kanyakumari wants to talk to somebody
+[110:00.66] in Kashmir they can talk to each other
+[110:03.12] without with technology not being a
+[110:05.82] barrier but an enabler for conversation
+[110:08.28] to happen in their local languages but
+[110:10.62] real time conversations so I think those
+[110:13.26] are two of the themes that we believe
+[110:14.76] from our India point of view we are
+[110:16.50] deeply committed to an in solving for
+[110:18.06] between our Global teams and India team
+[110:21.66] thank you for that Sanjay I think over
+[110:24.66] the next few years we will continue to
+[110:26.64] work very closely with your teams
+[110:28.74] they've been extremely supportive I know
+[110:30.54] some of your team members are here uh
+[110:32.58] without you probably ignite wouldn't
+[110:34.44] have been possible either so thank you
+[110:37.08] for your time but before you leave any
+[110:39.00] parting words for the team
+[110:41.10] um tonight
+[110:43.38] I think I'm inspired to hear what you
+[110:45.78] are doing today and power to all of you
+[110:49.20] and to your dreams and unreasonable
+[110:52.38] people with big dreams is what will
+[110:55.08] change India so all the best to you
+[110:57.54] thank you Sanjay Gupta everyone
+[110:59.69] [Applause]
+[111:12.60] hey everyone hope you're having fun so
+[111:14.82] far
+[111:18.12] awesome guys great well we've got a
+[111:20.58] fantastic uh evening planned out ahead
+[111:23.16] full of entertainment but before that
+[111:25.92] we've got our last three segments
+[111:28.08] remaining so for the next quick one I'm
+[111:30.72] I'm very excited to invite over the zoom
+[111:34.14] one of our earliest investors advisors
+[111:37.88] Dr amrishmithal uh Dr amrish mithil is
+[111:42.24] Padma bhushan he's one of the most
+[111:44.40] senior endocrinologists in the country
+[111:46.38] so in the top diabetologists in the
+[111:48.66] world
+[111:49.86] um he's the chairman and head of Max
+[111:51.66] right now endocrinology and has been on
+[111:54.66] our uh has been on our Advisory Board
+[111:56.82] since 2012. so Dr mithil can we have you
+[112:01.02] on please
+[112:09.13] [Music]
+[112:11.64] ah there you are sir I hope you can see
+[112:13.86] me and hear us yes of course yes can you
+[112:17.76] can you hear us and see us okay yes yes
+[112:19.74] loud and clear oh fantastic
+[112:22.68] um so I was just telling them uh Dr
+[112:24.30] mithilia one of our earliest investors
+[112:26.34] advisors
+[112:28.08] um at healthify me uh you know guys at
+[112:30.60] least almost 10 years ago almost to date
+[112:33.54] I remember in fact it was a it was a
+[112:35.70] Valentine's Day evening that also I
+[112:37.32] remember because that was the only time
+[112:38.82] Dr mithil had given me time to show up
+[112:40.62] and uh you know and of course he didn't
+[112:43.14] know that a third 26 year old that was
+[112:45.66] not his dream at that time but you know
+[112:47.16] to spend spend my evening with with Dr
+[112:49.08] mithil but but but but I did and uh you
+[112:52.92] know at that time healthify me was a
+[112:54.42] concept and I remember actually calling
+[112:56.82] Dr mithil when he was in a it was in a
+[112:59.22] car and cold called him and he
+[113:00.66] thankfully uh picked up my phone uh and
+[113:03.72] and I told him that you know this is so
+[113:05.10] and so that's what I'm starting and he
+[113:06.60] said listen I'm stuck in a traffic jam
+[113:07.98] so tell me what you're up to anyway so I
+[113:10.02] told him and he said well come see me on
+[113:11.70] Valentine's Day evening he didn't quite
+[113:12.90] phrase it like that he just said come
+[113:14.16] see me 14 February and I went to his
+[113:16.62] home and we presented a plan and it's
+[113:18.66] been 10 years of a journey that Dr
+[113:20.88] mittal you've seen us go through today
+[113:23.04] we have about a thousand of our team
+[113:24.48] members here our coaches our Tech design
+[113:26.22] free tech technology design team members
+[113:28.80] and board members daughter Methodist
+[113:30.78] having seen this journey from that first
+[113:33.12] concept plan till today I just thought
+[113:35.76] it'd be great for you to reflect on it
+[113:37.14] and and tell us from your Vantage Point
+[113:39.00] how do you see it
+[113:42.24] well uh thank you tashar for inviting me
+[113:45.06] I wish I could have been there in person
+[113:46.98] but it just wasn't feasible uh
+[113:50.82] well uh about 10 years ago actually more
+[113:54.30] than 10 years ago I had this young man
+[113:57.24] virtually chasing me stalking me if I
+[114:00.36] were to use rather in an inappropriate
+[114:03.72] world and he was chasing me all the time
+[114:07.20] for an appointment and you see that the
+[114:09.30] startup sort of industry or the startup
+[114:12.60] scene was just beginning to warm up
+[114:14.52] everyone wanted to get into the health
+[114:16.74] space and every other day someone used
+[114:19.20] to call I'm being an old man people used
+[114:21.30] to think you know maybe he'll give us
+[114:22.80] some little idea of what we should do
+[114:24.96] and probably they were you know they
+[114:26.76] weren't sure of what I would say but so
+[114:29.04] I I actually stopped meeting people
+[114:30.90] after a while uh but there was something
+[114:34.32] about Tushar and his team
+[114:38.28] and the First Quality that I noticed was
+[114:40.98] that they were incredibly persistent
+[114:44.10] so persistent space that's a good
+[114:47.10] learning for everybody in the audience
+[114:49.50] the young guys the young girls in the
+[114:51.66] audience persistence is very important
+[114:54.66] and the second thing was that after we
+[114:57.30] met and this was his right on a
+[114:59.22] Valentine's Day evening which didn't
+[115:00.60] even occur to me at that point but it
+[115:02.34] reminded me several months later that it
+[115:05.10] was Valentine's Day uh the the they were
+[115:08.40] very receptive to all ideas there's a
+[115:10.62] bunch of techies who had all the
+[115:12.84] technical know-how and willing to go on
+[115:14.58] modifying but then really at that point
+[115:16.98] what they needed was someone to tell
+[115:19.20] them what
+[115:20.66] patients need what people want and I
+[115:24.90] suppose the years of experience they saw
+[115:27.06] in me probably uh you know guided them
+[115:30.24] to me and led them to me and I think uh
+[115:33.90] the major difference I thought was that
+[115:37.50] degree of sincerity uh in their in in
+[115:40.80] their proposals and their actions in
+[115:43.08] their words
+[115:44.64] and very importantly the third Point
+[115:46.98] first is persistence second is sincerity
+[115:49.62] they weren't just they have to pass time
+[115:51.66] or just you know just another visit they
+[115:53.94] were serious about what they were doing
+[115:55.50] and the third thing was that whatever I
+[115:58.14] suggested and it was a lot in the first
+[116:00.24] one to two years because just tweaking
+[116:02.58] you know I said this won't work people
+[116:04.38] won't like this no one's going to do
+[116:06.24] this you're overestimating the market I
+[116:08.16] was actually quite critical and
+[116:10.92] every time they came back with a
+[116:13.44] solution
+[116:14.64] and that I thought I had just said that
+[116:16.80] and often forgot about it but a few
+[116:19.02] weeks sometimes months later they were
+[116:21.48] back at the door with that problem fixed
+[116:24.48] that problem modified so after several
+[116:27.66] such modifications uh the product
+[116:30.12] reached a certain level where I suddenly
+[116:33.24] thought wow this is gonna this has huge
+[116:35.70] scope now you know and and I think
+[116:38.58] that's a a real tribute to Tushar and
+[116:42.36] his team from there on there's been no
+[116:44.94] looking back of course we all
+[116:47.82] went through the process of trying to
+[116:49.86] recruit our first patients we went
+[116:52.08] through the process of trying to train
+[116:53.76] the the nutritionists or the coaches uh
+[116:57.66] but then they really took off and I'm
+[116:59.94] I'm delighted to be here on this
+[117:02.70] occasion the fact that the company has
+[117:05.52] grown so big
+[117:06.96] and for me what is much more important
+[117:09.48] and pardon my saying so in in in in a in
+[117:13.44] a meeting like this for me what is much
+[117:15.42] more important than the funds raised is
+[117:18.96] the number of people they are reaching
+[117:21.54] so at heart I'm I'm just a doctor
+[117:25.14] and I think if you reach a lot of people
+[117:28.32] and enable them to lead Better Lives it
+[117:32.40] may sound Noble but ultimately that's
+[117:35.40] what it's all about the fact that you're
+[117:37.98] facilitating their path to Good Health
+[117:40.88] by your hand holding advice solid
+[117:44.88] scientific advice I think that's your
+[117:47.64] biggest achievement is I see it and I'm
+[117:49.80] happy to have been part of this journey
+[117:51.54] I still am but in a bigger way uh in the
+[117:54.78] in the in the beginnings and and
+[117:56.58] probably more as as genuinely just an
+[117:59.70] advisor now so I the other thing is the
+[118:03.84] continuous ability and desire to evolve
+[118:07.68] and improve it's not that we have a
+[118:09.96] product now and it's doing well and you
+[118:11.52] know people are praising so we'll sort
+[118:13.20] of rest on our Laurels this is just the
+[118:16.62] this is a journey it's a never-ending
+[118:18.78] journey of of perfection of improvement
+[118:22.74] of proving yourself to be the best and
+[118:26.46] best among the best and I think that's
+[118:28.92] again where the healthify me team has
+[118:31.80] excelled in constantly evolving changing
+[118:35.46] modifying uh and which is why they are
+[118:38.16] here today and now with this Pro sort of
+[118:40.74] uh scheme being launched the device and
+[118:44.40] everything with so much monitoring so
+[118:47.04] much you know data based rather than
+[118:49.98] just generic advice I think you're going
+[118:52.86] to go higher and higher the sky's the
+[118:55.68] limit for you healthify me and Tushar
+[118:57.78] thank you doctor that was thank you so
+[118:59.88] much for those words I think it means a
+[119:01.98] lot to our team
+[119:03.78] um
+[119:04.38] uh so doctor's just double clicking on
+[119:06.30] that for a second you said you know with
+[119:07.56] with Integrations of smart scales
+[119:09.54] metabolic panels continuous glucose
+[119:12.24] monitors I mean and you're in the
+[119:13.62] medical field sort of how do you see the
+[119:15.54] Outlook now this was the last 10 years
+[119:16.92] how do you see us going for the next 10
+[119:18.48] years is this the right direction is
+[119:20.52] there is there a superior direction that
+[119:22.38] we need to evolve to any thoughts on
+[119:23.94] that would be helpful
+[119:25.92] no I think uh quite clearly the time has
+[119:28.92] come for uh more data you know more data
+[119:33.66] driven approaches rather than the
+[119:36.42] conventional data driven approaches and
+[119:38.40] I'm glad you're getting onto the into
+[119:40.44] this space I think more and more
+[119:42.60] medicine more and more health will be
+[119:45.18] personalized one side does one size does
+[119:48.90] not fit all and everyone needs a
+[119:51.30] customized personalized approach will
+[119:53.94] which this data will enable you to
+[119:56.28] provide and I think more and more in
+[119:58.92] this line you can move further on uh you
+[120:02.04] know to to genetic predictions to use of
+[120:06.00] genome Technologies and with greater
+[120:09.18] greater usage of those Technologies I
+[120:11.58] think you will have better predictive
+[120:13.38] markers and probably the cost will also
+[120:15.54] come down right now genome Technologies
+[120:17.28] are probably very expensive I'm just
+[120:19.08] floating an idea so the idea is to look
+[120:21.72] at overall health and not just on the
+[120:23.64] basis of the present parameters but all
+[120:25.86] also probably the next step would be to
+[120:28.56] add your genetic makeup to that and be
+[120:30.96] able to predict for people where exactly
+[120:33.60] they are and how aggressively they need
+[120:35.40] to sort of look after their parameters
+[120:37.56] or manage their health I think you're
+[120:39.24] going great guns it's very very
+[120:41.04] important not to lose sight of
+[120:44.70] one person and that is
+[120:46.98] the user
+[120:48.36] thank you Dr Smith Never Get trapped in
+[120:50.46] technology in a way that we lose sight
+[120:52.20] of the ultimate end user absolutely
+[120:55.04] thank you Dr mithil just as we close
+[120:57.66] this conversation any final words to
+[120:59.82] this entire uh the team and the
+[121:01.50] ecosystem and our board members over
+[121:03.00] here
+[121:05.46] I think I'm very happy to see healthify
+[121:08.52] where it is today but as I said it's a
+[121:10.98] journey and we have to keep moving ahead
+[121:14.46] till we achieve whatever we think at
+[121:17.16] that point is perfection it's a moving
+[121:19.08] goal goal post it's something that keeps
+[121:21.54] moving when you reach a particular level
+[121:23.46] you have to go to the next and I can see
+[121:25.80] that spirit and drive in this young team
+[121:28.20] and I am very happy to support them
+[121:30.42] whichever way I can in a you know I
+[121:32.88] can't support them too much but whatever
+[121:34.62] I can provide in terms of uh my thoughts
+[121:37.80] my if you can call it guidance or or my
+[121:40.92] feelings I'll be very happy to do so
+[121:43.02] good luck good luck for the future thank
+[121:44.76] you thank you thank you Dr mithil um
+[121:46.50] it's been a pleasure to usually interact
+[121:48.24] with you at you know 10 11 p.m and 7 A.M
+[121:51.90] because that's the only time slots that
+[121:53.46] you used to have free for me uh
+[121:55.44] documents have been very instrumental in
+[121:56.82] help helping us build stuff that is
+[121:59.10] build our products been building teams
+[122:01.32] building processes that are that are
+[122:03.24] clinically correct that are medically
+[122:04.74] sound and that we are always continuing
+[122:06.54] to achieve higher and goals and set
+[122:09.30] higher objectives so thank you again Dr
+[122:11.70] thanks for joining us here at ignite I
+[122:13.86] hope to see you at some point for an
+[122:16.08] early breakfast or a late evening tea
+[122:18.42] thank you sir
+[122:20.22] um that was Dr Mitchell everybody one of
+[122:22.14] our earliest supporters
+[122:24.12] um guys with this we are moving to our
+[122:26.22] last two segments are basically our last
+[122:28.32] segment this is going to be uh our uh
+[122:31.20] you know Dr mittal talked about these
+[122:32.76] next Generation markers talked about hey
+[122:34.92] can you include in some of these future
+[122:36.36] parameters and how do they interplay
+[122:38.10] with what we have well for that I'd love
+[122:41.40] to invite Manan over on the stage and uh
+[122:44.64] and and go from there and we'll wrap
+[122:46.50] with our with couple of other team
+[122:48.06] members Bijou I have not been able to
+[122:50.04] locate it on you on the stage are there
+[122:51.90] you go so I uh you know and we'll end
+[122:53.94] with the with a quick speech from Bijou
+[122:55.44] so Manon what are these biomarkers
+[122:57.60] what's going to happen from here on
+[123:00.35] [Music]
+[123:01.68] foreign
+[123:03.71] [Music]
+[123:08.90] hey guys so before we talk about the
+[123:12.30] future I thought we'll talk about what
+[123:15.00] happened during the pandemic so we were
+[123:17.28] joking while building these slides and
+[123:19.56] um everyone said that one and you have
+[123:21.12] Pandemic babies you have three pandemic
+[123:23.10] babies and then we thought hey that's a
+[123:24.90] good narrative to kind of follow in the
+[123:26.40] slide so that's what we're going to go
+[123:28.20] with
+[123:29.28] so my first pandemic baby
+[123:32.64] was lfi Studio
+[123:36.54] [Music]
+[123:38.22] spoke about that a little earlier and um
+[123:40.86] the pandemic was truly our finest hour
+[123:43.74] at that point of time we got through
+[123:45.24] with perseverance but we also innovated
+[123:48.30] we got yoga trainers from Mysore from
+[123:51.36] from Capri we got fitness trainers from
+[123:54.54] from Pune we got fitness trainers from
+[123:57.24] Kuala Lumpur all of them came on board
+[123:59.52] and they built out a system
+[124:01.74] which was built by our engineering and
+[124:03.54] our design team and all of this came
+[124:05.40] into reality in a matter of 10 days so I
+[124:09.30] think that's what happened over there
+[124:11.16] um really memorable time Sachin Road
+[124:13.20] code as well we made it live
+[124:16.56] um some people tried it out
+[124:18.48] everything broke Sachin wrote some more
+[124:20.76] code
+[124:21.54] after that suddenly it started working
+[124:23.76] people started coming in
+[124:25.98] people started joining sessions and
+[124:28.26] since then
+[124:29.88] by itself Studios is a five million AR
+[124:32.52] business and since the last year almost
+[124:35.22] 23 million minutes of workouts have
+[124:37.14] happened on Studio
+[124:41.58] it's a mind-boggling number
+[124:44.88] so that's one but
+[124:46.86] I mean like studio is stressful I mean
+[124:49.20] like we built it in 10 days but then
+[124:50.94] little did we know what was coming up in
+[124:52.98] the future
+[124:54.66] um at healthify me we always have our
+[124:56.58] users health health as the primary focus
+[125:00.12] and um the way users measure or think
+[125:03.00] about their health changes often
+[125:04.86] sometimes they think about their weight
+[125:07.02] sometimes they think about
+[125:09.60] glucose but in during the pandemic in
+[125:13.74] 2021 they were thinking about vaccines
+[125:19.26] a second pandemic baby was vaccinate me
+[125:22.86] we were in a situation where there were
+[125:25.20] no slots
+[125:26.46] at heart we are basically Builders we
+[125:28.92] are Tech innovators and when the apis
+[125:31.32] were available from the government
+[125:32.34] that's when we thought that what can we
+[125:34.44] do here to really innovate what can we
+[125:36.18] do here to really give a high quality
+[125:38.28] experience to a user who's going through
+[125:39.66] a really stressful situation
+[125:43.44] again over a weekend this time uh we
+[125:46.50] started work on this on a Thursday
+[125:48.30] evening and on Tuesday morning we made
+[125:52.44] vaccinate me live
+[125:54.24] vaccinate me was basically a
+[125:56.88] notification system wherein we notified
+[125:59.22] users when slots became available on
+[126:01.56] WhatsApp on an SMS
+[126:05.34] um
+[126:06.36] I tell if I mean we've tried several
+[126:09.12] times to go viral it's been like several
+[126:11.94] marketing campaigns we'll try to do like
+[126:13.98] some video or something over here but
+[126:16.20] internally we joke it took a virus for
+[126:18.42] us to go viral
+[126:22.74] it was two weeks of Mayhem uh this is
+[126:26.34] our server RPM at that point of time and
+[126:29.52] just as we went live boom
+[126:31.74] start going at like that's high right
+[126:34.02] Abhijit I think 150
+[126:36.42] yeah
+[126:37.56] so yeah it was crazy we put our full
+[126:39.66] engineering might at it everyone was at
+[126:41.46] it for like two weeks finally we managed
+[126:43.68] to stabilize it
+[126:45.42] but what was great was all the user love
+[126:48.78] that started pouring in over there
+[126:51.42] I mean this was really worth all the
+[126:53.16] effort when we saw this it was really
+[126:55.62] emotional for the entire team because
+[126:57.30] lots of us were like up late nights for
+[126:59.82] like a good stretch of like almost two
+[127:01.62] weeks but then when we saw a feedback
+[127:03.66] like this it made it worth it
+[127:07.80] our efforts also started getting noticed
+[127:09.90] and at that point of time we were
+[127:12.66] spending almost a tune of thousands of
+[127:14.52] dollars a day to send out these
+[127:15.72] notifications
+[127:16.98] with the help of Mr vinod khosla
+[127:18.96] obviously we were able to reach out to
+[127:20.58] the powers that be at Facebook and at
+[127:22.38] whatsapp and we were able to tell them
+[127:24.12] that hey we're trying to do this as a
+[127:25.62] proper initiative but can you help us
+[127:27.84] out
+[127:29.28] um Tushar wrote to vinod
+[127:31.14] one night and next day in the morning we
+[127:33.36] woke up
+[127:34.32] with this email
+[127:36.42] shuttle Sandberg wrote to us saying that
+[127:38.64] hey this is really cool um Facebook is
+[127:41.58] working closely with the partners on the
+[127:43.02] ground in India and they would be loved
+[127:44.52] to learn more what we're doing
+[127:46.56] one thing led to another and uh Facebook
+[127:48.66] zero rated the entire Initiative for us
+[127:50.52] all the messages that we sent on
+[127:52.26] vaccinate me was completely free
+[127:58.56] that really allowed us to continue
+[127:59.94] delivering this service
+[128:02.04] we also were able to use SMS as a backup
+[128:04.62] solution maybe the folks from exetel are
+[128:06.48] in the room thanks again for that really
+[128:08.52] helpful
+[128:10.50] in line with what I'd said earlier I had
+[128:13.14] actually said that help is always
+[128:14.64] available whenever you need it
+[128:16.92] um during this time we got to notice
+[128:19.68] um another interesting independent
+[128:22.52] vaccination slot project where they were
+[128:25.26] also notifying people on Telegram
+[128:27.78] um it was run by Bertie who's in the
+[128:30.42] audience over here as well but if we can
+[128:31.74] just stand up where you are
+[128:36.06] yeah
+[128:38.40] so obviously it was it was a meeting of
+[128:40.44] mines and we had a great time speaking
+[128:43.68] about the problem and then that's when
+[128:44.94] we realized Bertie when it is this
+[128:46.14] common word
+[128:47.28] so Bertie joined us we built out a
+[128:49.98] booking system for vaccinate me and also
+[128:53.04] that was built on the government apis
+[128:54.30] and More Than 3 million people actually
+[128:55.80] used our system to book these slots
+[129:00.00] um after that obviously then bertis now
+[129:02.52] he's on board full time and um a lot of
+[129:04.98] the cool Innovation that we've seen
+[129:06.36] around Pro was actually driven by him
+[129:08.28] and his team early on so heading our
+[129:10.80] Labs initiatives fundamentally and then
+[129:12.48] we're always going to be looking at
+[129:13.50] newer things that we can do
+[129:16.38] so then we thought that coming back to
+[129:18.42] again pandemic babies so then there was
+[129:19.98] one more baby obviously
+[129:23.64] um that's
+[129:25.26] yeah everything oops sorry long slate
+[129:27.24] that's my baby over there she's in the
+[129:28.68] audience somewhere
+[129:35.12] anyways uh just joking um obviously
+[129:37.80] another baby not in as much stress as
+[129:40.38] the pandemic obviously but this is
+[129:42.30] called healthify Pro
+[129:44.10] um I'm not gonna talk about it again a
+[129:45.78] lot is said Abhijit is already talking
+[129:47.46] of spoken about yesterday's deadline so
+[129:49.38] is Rowan but I just want to take a few
+[129:51.84] minutes talking about the future of pro
+[129:53.52] and what is it that we're going to look
+[129:55.20] to do in the future
+[129:56.46] so obviously we already have the smart
+[129:58.14] scale we have the metabolic panel we
+[130:00.06] have bios and we have team of amazing
+[130:02.10] coaches some of them are in the audience
+[130:03.66] right now
+[130:06.00] but what's the future what more can we
+[130:08.10] do
+[130:09.06] fundamentally there are many signals
+[130:11.28] that we can read of the human body and
+[130:12.66] all of this can be used to piece
+[130:13.86] together a great metabolic picture and
+[130:16.44] that's what we want to explore that's
+[130:18.06] what we want to use to be able to give
+[130:19.68] high quality advice and outcomes for our
+[130:21.60] users
+[130:23.54] bio2.0 is something we've already
+[130:25.20] started working on
+[130:26.82] bios 2.0 is going to be a completely
+[130:28.56] live experience we're going to have it
+[130:30.72] directly connected via Bluetooth to your
+[130:32.82] phone
+[130:34.98] we're considering food intolerance and
+[130:37.14] microbiome
+[130:38.64] these tie in really well to
+[130:40.20] healthifiamese Value propositions
+[130:42.30] we can use this information to connect
+[130:43.98] to our nutrition engine and really
+[130:45.72] understand what is it that users will be
+[130:48.60] able to truly react well to and what
+[130:51.90] they want use that to try to build a
+[130:54.72] truly personalized diet plan
+[130:58.86] genetic tests are interesting Dr mittal
+[131:01.14] just referenced to it right now is there
+[131:03.06] something about your predisposition that
+[131:04.68] makes it harder for you to lose weight
+[131:07.56] and lastly the most important thing we
+[131:10.20] feel that recovery and sleep is also
+[131:12.60] critical to having high quality
+[131:13.98] metabolic health and we're really
+[131:16.20] looking forward to like working with
+[131:17.40] partners and truly pushing the
+[131:19.08] boundaries over here and I look forward
+[131:21.30] to kind of telling you a lot more about
+[131:22.68] this during the next ignite thank you
+[131:26.23] [Applause]
+[131:27.72] [Music]
+[131:32.10] uh this is calling on Summit as well now
+[131:33.96] Summits recently joined us as our VP of
+[131:37.50] the NRA business but he's going to do
+[131:39.00] something a little more local this time
+[131:43.26] guys uh I hope you can hear me
+[131:46.92] I've just been told that I'm I'm maybe
+[131:48.84] one of the people between the drinks so
+[131:50.82] I'll kind of try and keep it short it's
+[131:53.52] been eight weeks for me uh in the
+[131:55.20] healthify me system and it's truly an
+[131:57.00] honor uh working with some of the best
+[131:58.86] minds and hearts to actually bring
+[132:01.32] healthify me to this current inflection
+[132:03.66] point uh a quick introduction before I
+[132:06.90] kind of go uh to what I had to present
+[132:10.02] um
+[132:10.62] well my my mother says that when you go
+[132:13.20] and look back in the past you can
+[132:14.88] connect the dots and if I was to lay my
+[132:17.64] experience I started off with dishing
+[132:20.04] out unhealthy paranoia about losing
+[132:22.32] money while I was at Consulting and
+[132:24.24] private Equity post that
+[132:26.46] um I was dishing unhealthy Foods while I
+[132:28.68] was the chief growth officer at Pizza
+[132:30.00] Hut India offline world and most
+[132:32.46] recently I've been dishing out unhealthy
+[132:35.28] media to maybe so-called couch potatoes
+[132:37.62] while I was at Disney hot star and it's
+[132:40.44] great in terms of bringing all of this
+[132:42.06] experience as we start thinking about
+[132:43.74] what we can potentially create in the
+[132:46.86] future
+[132:47.70] so I I don't need to maybe spend any
+[132:49.80] time here we are definitely a technology
+[132:51.60] first company and uh future relevant uh
+[132:55.44] our years are always constantly on
+[132:58.32] trends
+[132:59.52] and we've spoken a lot about
+[133:00.72] personalization and I think everyone in
+[133:02.82] this crowd can definitely kind of echo
+[133:05.28] that we use personalized Cosmetics
+[133:08.04] personalized food products and what data
+[133:11.16] is fueling is even more and more
+[133:12.90] personalization and health advice
+[133:14.34] standing just at the front roads of
+[133:16.86] those in terms of making it even bigger
+[133:19.38] and better
+[133:20.64] the second Trend which of course uh is
+[133:24.00] is on the screen is an offline online
+[133:25.68] lines blurring I think gone are the days
+[133:28.26] where just d2c Brands could just focus
+[133:30.54] on Facebook marketing or say cheap
+[133:32.34] Chinese Imports
+[133:34.20] um there is a need for us to
+[133:35.94] differentiate our online presence to
+[133:38.52] offline and start fueling that
+[133:40.74] intersection of consumer interfaces
+[133:43.14] exchanges and consumptions
+[133:45.42] but most importantly is Authority I
+[133:48.00] think tashar and the team has been on
+[133:50.04] this journey for 10 years I think the
+[133:52.14] number of people who have used it the
+[133:54.12] brand salience of it is awesome and
+[133:56.46] people start using products and services
+[133:58.58] uh repeat loyalty as a function of
+[134:01.56] authority our service coaches are right
+[134:04.32] up there in terms of being held in our
+[134:06.30] customer mind and for example right now
+[134:09.12] 10 000 uh actually close to that number
+[134:11.88] of restaurants take healthify nutrition
+[134:14.82] guidelines and use it as a sense so it's
+[134:17.46] a great starting point but important
+[134:19.80] Trends in terms of the consumption
+[134:21.12] landscape
+[134:22.68] but these are not just Trends
+[134:24.84] um we are driven by conviction and we
+[134:26.70] have kind of data to kind of work on
+[134:28.92] these Trends so of course we have
+[134:31.56] billion data points coming through now
+[134:33.36] various devices our platform coming
+[134:36.12] every week for us kind of gives us that
+[134:38.70] nuanced personalized custom uh input to
+[134:42.36] maybe a solution of one
+[134:46.20] we went back to our customers close to
+[134:48.42] 10 000 customers and we got a resounding
+[134:50.82] 75 percent yes saying that guys listen I
+[134:54.72] need your help beyond what you're
+[134:56.16] offering as Services
+[134:57.80] across customized meal subscription
+[135:00.24] which ties back to our diet plans
+[135:02.36] customized uh supplements which maybe
+[135:05.34] are catering to my lifestyle disorders
+[135:07.74] or deficiencies that you now know on the
+[135:10.44] platform and maybe even functional foods
+[135:13.02] for that matter
+[135:14.76] but more importantly we from a service
+[135:16.98] layer we are right up there but our
+[135:19.32] coaches still want more and there was a
+[135:22.56] thumbs up saying that if you were to
+[135:24.42] have come up with an integrated Suite of
+[135:27.12] uh products and services maybe we can
+[135:29.88] deliver much more
+[135:31.80] so what does that mean as we start
+[135:33.24] thinking about some of our next steps
+[135:35.10] and actions as a company
+[135:37.86] as we start looking at the vision of
+[135:39.96] healthify me platform 2.0
+[135:42.98] introducing healthify me experience
+[135:45.54] stores
+[135:47.10] what would this mean would be an
+[135:49.74] interplay between Services where
+[135:52.02] literally now you don't have to go to a
+[135:53.94] platform
+[135:54.84] and just get your details in but go to
+[135:58.02] your nearest store start with a
+[135:59.88] diagnostic test maybe have a health
+[136:01.98] consultation with some of our experts
+[136:03.96] and get in terms of knowing yourself
+[136:05.94] better in terms of what you need to do
+[136:08.52] you've spoken about an array of products
+[136:10.68] and we're not going to stop here with
+[136:12.18] just bios
+[136:13.50] there are smart scale bios microbiome
+[136:16.14] kits imagine like a fancy glaze class
+[136:19.80] with array of products which help us
+[136:22.62] move products to Services consumption
+[136:24.54] and likewise
+[136:25.92] and finally like I mentioned products
+[136:27.90] guys
+[136:29.16] a person who needs a thyroid protein is
+[136:31.56] very different from a person who maybe
+[136:33.24] needs a PCOS related or maybe a a person
+[136:36.54] who has a concoction of uh requirement
+[136:39.60] of vitamin and mineral deficiencies and
+[136:41.76] that's where I think this is all going
+[136:43.02] to come together not as just a product
+[136:45.26] uh for everyone but something which is
+[136:48.00] very customized for you everyone who's
+[136:50.10] sitting in the audience here
+[136:51.60] so yeah that's about it and I think uh
+[136:53.76] with that I would from a newbie to a
+[136:55.80] veteran I would like to hand it over to
+[136:57.60] rosh over to you rosh
+[137:11.36] thank you
+[137:14.26] [Music]
+[137:24.54] hi everyone
+[137:25.98] hi good evening everyone
+[137:31.50] why didn't you take over
+[137:34.08] it feels uh so good and great to be over
+[137:36.96] here and uh while everyone over here has
+[137:40.20] talked about you know what's new and
+[137:42.78] what are the new features that healthify
+[137:45.30] me is going to launch in the coming
+[137:46.62] weeks and weekends and so on forth we
+[137:48.90] are going to talk about an army that
+[137:51.78] basically takes all these features and
+[137:53.94] delivers it to our users right uh this
+[137:57.90] Army comprises of an army comprises of
+[138:00.18] soldiers but our army comprises of
+[138:02.22] coaches who are sitting right over here
+[138:04.26] and I would like to talk
+[138:05.73] [Applause]
+[138:09.60] I would like to talk about their story
+[138:11.52] today right
+[138:13.26] so last ignite when we met uh we had
+[138:16.44] around 500 of these soldiers or coaches
+[138:19.26] with us and they were spread across
+[138:21.30] different parts of India and a few weeks
+[138:24.18] after they ignite 2020 we had the
+[138:27.72] pandemic set in and every Fitness
+[138:30.36] company or every health and wellness
+[138:32.22] company around was actually uh you know
+[138:35.16] laying off different kind of link of
+[138:37.14] coaches whereas for us uh very happy and
+[138:41.22] proud to share that we were able to
+[138:43.44] quadruple our strength and we are today
+[138:46.44] at 2 000 coaches
+[138:49.86] spread across globe
+[138:52.08] and servicing from different parts of
+[138:54.36] the globe and servicing and transforming
+[138:56.52] lives of different users
+[139:00.60] but that's not all right as and how we
+[139:02.94] grew we were able to you know we were
+[139:04.86] able to uh develop more in our
+[139:07.02] capabilities uh we today as a team speak
+[139:10.68] more than 30 languages
+[139:13.38] uh our coaches are present in more than
+[139:16.38] 20 countries and are able to transform
+[139:18.48] lives every single day
+[139:21.18] and talk about specialization you name
+[139:23.70] any specialization and you'll have a
+[139:25.32] handful of coaches at healthify me who
+[139:28.08] are certified and who are ready to help
+[139:29.88] you out over here
+[139:31.38] so this part of the story
+[139:33.84] is the part where we talk about the
+[139:36.12] growth of our army
+[139:39.36] which part I'm going to talk about is
+[139:41.28] about their guts
+[139:42.84] and it's about their persistence
+[139:45.18] so let's rewind back to 2020 right when
+[139:47.94] the pandemic had hit
+[139:49.80] when the pandemic had hit a lot of
+[139:51.72] things happen a lot of uncertainties was
+[139:53.82] was there
+[139:55.28] and it was not just us
+[139:59.04] uh it was around the ecosystems so
+[140:01.98] people were concerned about their
+[140:03.48] finances a lot of people were losing
+[140:05.46] their jobs a lot of you know Mayhem was
+[140:07.26] there small big businesses were either
+[140:09.66] shutting down or laying off
+[140:11.64] uh people were concerned about their
+[140:13.68] work life because work and personal life
+[140:16.38] started merging and that gave rise to a
+[140:18.72] lot of mental uh Wellness issues
+[140:21.90] and secondly and the lastly uh the
+[140:24.30] biggest concern over here was around
+[140:26.46] health
+[140:27.36] uh it was not just you know what what
+[140:30.06] kind of nutrition that I should take
+[140:32.10] during these times but it was around
+[140:33.60] vaccines whether I'll get it if I'll get
+[140:36.06] it how I'll get it right and as
+[140:38.58] healthify me as a team
+[140:40.32] we decided that you know we are going to
+[140:42.00] have a two-way response over here one
+[140:44.58] which was
+[140:46.38] to ensure a one which was you know
+[140:48.42] directed to our coaches
+[140:50.04] and the second which was directed to our
+[140:51.96] users
+[140:53.04] so when we talk about our response for
+[140:55.20] the coaches
+[140:56.40] we decided that no matter what happens
+[140:59.04] in the industry no matter what's
+[141:00.48] happening in the ecosystem we are going
+[141:02.04] to stay together and we are going to
+[141:03.78] sail together and face the storm
+[141:05.10] together we didn't let go any coach and
+[141:08.88] we stayed together and face the storm
+[141:11.28] the second thing which we did was
+[141:14.22] uh we ensure that we are able to add an
+[141:17.22] extra layer of comfort through all kinds
+[141:18.90] of financial support right whenever a
+[141:21.06] coach needed and not just to a coach but
+[141:25.08] we also ensure that we are able to you
+[141:26.88] know support their immediate family
+[141:28.08] members as and when required
+[141:31.14] and the final thing was that we we were
+[141:34.08] not immune to you know uh while
+[141:35.76] healthify me is known for remote working
+[141:37.62] and you know work from home but this was
+[141:40.08] an extreme so and we were not immune to
+[141:42.42] it so we opened a dedicated helpline uh
+[141:45.18] which any of our team members could
+[141:47.22] speak to a mental Wellness counselor and
+[141:49.80] could you know take their help
+[141:52.68] now now you also Tushar anjan and
+[141:55.56] everybody right talking about the
+[141:57.48] smiling curves which were moving up from
+[141:59.16] registrations to revenue right and we
+[142:01.02] thought that you know this is what what
+[142:03.30] are whatever we did so far maybe was
+[142:05.22] adding to it but that was not dead uh
+[142:08.34] what really made the difference
+[142:11.34] was
+[142:12.48] that our coaches took this to a Next
+[142:14.82] Level they ran with it they literally uh
+[142:19.38] went the extra mile
+[142:21.96] the first thing uh that our coaches did
+[142:25.08] was that they provided us support to the
+[142:27.90] community uh
+[142:29.76] at this point at the point in pandemic
+[142:32.28] they were not just coaches they were
+[142:34.38] mentors they were friends they were
+[142:35.88] almost like a family member each of our
+[142:38.28] coach ensured that they were opening
+[142:40.50] themselves from extra hours of
+[142:42.24] consultations to ensure that no user was
+[142:45.90] ever left behind
+[142:48.54] even when the times were tough even when
+[142:51.66] their own family members were going
+[142:54.12] through tougher times when their own
+[142:55.74] family members were inflicted by
+[142:57.78] covid-19
+[142:59.58] they woke up the next morning
+[143:02.28] and ensured that they never left the
+[143:05.70] user unattended
+[143:08.46] and we have thousands of such stories
+[143:10.56] right we have thousands of such stories
+[143:12.42] uh wherein the coaches went the extra
+[143:15.42] mile to ensure that they give our
+[143:18.30] healthifying user the best premium
+[143:20.34] experience ever
+[143:23.40] lastly
+[143:24.60] I want to thank everyone over here all
+[143:28.20] the service coaches and all the
+[143:29.94] Associates at customer Delight team for
+[143:32.58] you know persevering and
+[143:40.38] for persevering and uh continuing to you
+[143:43.50] know believe in the mission of
+[143:44.46] healthifying A Billion Lives
+[143:46.44] there is one team that I want to call
+[143:48.42] out it is the team
+[143:50.76] that is one of the strongest pillars of
+[143:53.22] healthify me it is the team that has
+[143:56.28] driven growth for healthify me year on
+[143:58.80] year month on month quarter on quarter
+[144:01.08] nine out of 10 businesses in India have
+[144:03.24] shut down during the pandemic one didn't
+[144:05.04] it is a team that took us from 15
+[144:07.74] million to 50 million dollars right
+[144:10.92] uh guys please give a big round of
+[144:13.38] applause for the sales team and every
+[144:15.66] member of the sales team might ever find
+[144:17.34] me
+[144:23.30] [Music]
+[144:26.70] uh with this I would like to hand it
+[144:28.92] over to roshni to talk about uh the
+[144:31.56] coaching 2.0
+[144:33.36] thank you team
+[144:36.90] hey guys
+[144:38.04] um before I go to coaching 2.0 I just
+[144:40.86] want to do a little more Justice to what
+[144:42.42] swapnil has spoken about uh I want to
+[144:45.54] talk about couple of code stories and we
+[144:48.66] do have a couple of those coaches here I
+[144:50.40] want to talk about Coach murgendra who
+[144:52.98] during the pandemic time lost his family
+[144:55.50] members including his sister who was 27
+[144:58.20] years old and when his customers told
+[145:01.56] him that you need to take a break
+[145:03.42] the what what he told them was that if
+[145:05.88] you are there to stand by me why would I
+[145:07.74] not be there to stand by you he never
+[145:09.90] took a break if you can stand up here
+[145:15.06] which was phenomenal what you've done
+[145:17.04] for your customers I also want to call
+[145:19.62] upon venkat venkat if you're here please
+[145:21.78] stand up who lost his job during
+[145:25.44] pandemic
+[145:26.76] and he lost his job twice in fact he
+[145:29.64] decided that people needed help he
+[145:32.04] turned his profession around he did the
+[145:34.02] a certification to be a personal trainer
+[145:36.54] at this point of time and during the
+[145:38.46] pandemic he was there to service our
+[145:40.62] customers
+[145:42.06] and these are brilliant stories
+[145:45.18] I was touched by one of our
+[145:48.42] coaches who
+[145:50.40] lost his wife
+[145:51.96] in an accident
+[145:54.18] um he broke both his ankles he was
+[145:56.52] bedridden but during the pandemic he had
+[145:59.22] taken a decision that it doesn't matter
+[146:01.62] what happens to me but I just want to be
+[146:03.54] on calls talking to my customers of
+[146:06.66] Neath he's not here today but these are
+[146:10.08] inspirational stories that made that you
+[146:13.74] know that makes healthify me not
+[146:16.02] accompanied healthify me truly becomes
+[146:18.36] for us it's almost an emotion
+[146:21.84] coaching 2.0
+[146:29.40] what is coaching 2.0 for us it's
+[146:31.56] empowerment with technology and what
+[146:33.78] does that mean for a coach for a coach
+[146:36.18] it's real-time data real-time monitoring
+[146:39.30] and real-time feedback but what does
+[146:42.48] that mean for a client for a user it's
+[146:45.54] Freedom Fitness freedom
+[146:48.06] and it's no longer restrictive diets
+[146:50.58] it's no longer a very stringent exercise
+[146:53.70] routines it's about
+[146:56.22] figuring out what his body needs at what
+[146:58.50] time what is his lifestyle what is his
+[147:00.24] circumstance what is this metabolic
+[147:01.74] panel what is his uh body composition
+[147:03.90] and a whole lot he gets to choose
+[147:06.84] and what does that give him
+[147:08.70] make some change his behavior and
+[147:11.16] finally gives him sustainable results
+[147:15.42] now uh just a chat between Tushar and me
+[147:19.32] so I saw a huge spike in your glucose
+[147:21.48] levels last evening you can see the
+[147:23.10] spikes there and you can also see the
+[147:24.72] blue dot set where me as a coach
+[147:26.70] desperately trying to reach out to him
+[147:28.26] he says champagne at the party I said I
+[147:31.26] can see that well he lied to me there
+[147:33.24] was dessert as well which he had
+[147:35.04] slightly
+[147:36.00] logged in
+[147:37.50] and I said yes dessert as well next time
+[147:39.90] try having chicken salad 30 minutes
+[147:41.82] before champagne move around and it
+[147:43.62] helps if there's a dance floor
+[147:45.78] well a few days later that's the shower
+[147:48.30] you seem to be in better control of your
+[147:50.16] glucose level these days and then Tasha
+[147:52.02] says taking your advice coach I took a
+[147:54.06] healthy protein salad before I stepped
+[147:55.86] out and even managed to check out the
+[147:57.84] dance floor and here this is what a
+[147:59.70] coach sees you can see the orange icon
+[148:02.46] where Tushar has logged this meal and
+[148:04.62] you can see the blue icon where he's
+[148:06.42] actually that's where he was on the
+[148:08.22] Dance Floor he's locked that and then
+[148:10.26] you see that his glucose levels are
+[148:11.94] pretty much in control and he's great
+[148:14.40] changed his behavior sustainable
+[148:17.16] whoa lifestyle
+[148:19.74] okay now why I wanted to bring that up
+[148:21.84] is this is what a quote sees what really
+[148:23.70] happens behind the scenes right what
+[148:25.98] other views a coach has this is an
+[148:27.90] interesting snapshot of a coach
+[148:29.22] dashboard where the coach can see the
+[148:31.08] basic profile he can see the diagnostic
+[148:33.12] reports the metabolic panel right there
+[148:35.34] he can see the body composition he can
+[148:38.46] see the glucose levels and a whole lot
+[148:41.46] of things right he can also see what
+[148:43.08] foods you've eaten and what workouts
+[148:44.70] you've tracked and all of this is just
+[148:47.52] right in front of the coach
+[148:49.80] real time and this is the wow that the
+[148:53.22] coaches are going to experience this is
+[148:54.84] going to make a coach into a super coach
+[148:59.28] what's life for a coach going to be in
+[149:01.62] healthify 2.0 we want to focus on our
+[149:04.38] people a lot more our people are
+[149:05.64] precious for us we want to work on
+[149:07.98] compensation models that heavily reward
+[149:10.14] impact
+[149:11.40] we want our best coaches and our coaches
+[149:13.80] to earn not just the industry Benchmark
+[149:15.90] but way above that and we also want to
+[149:19.20] prioritize work-life balance I know
+[149:21.72] coaches here you've been struggling with
+[149:23.46] the old dashboard new dashboard for
+[149:25.98] quite some time and it's time consuming
+[149:27.84] and uh promise you guys posting that
+[149:30.12] we're working on moving entirely into
+[149:32.28] One dashboard for you guys that's going
+[149:34.26] to make you work a lot more easier
+[149:36.24] and yes guys we want to enable this by
+[149:40.20] the end of this quarter and that's a
+[149:41.64] promise to you guys
+[149:43.44] okay that's brings me to the end of my
+[149:46.14] presentation but before I leave you guys
+[149:49.44] um coaches there's something that's
+[149:50.76] coming soon and what is that one thing
+[149:53.04] that you've been waiting for all of your
+[149:56.22] time and health if I make any guesses
+[150:01.32] coach connect is already there guys
+[150:04.68] mobile
+[150:07.92] whoa
+[150:10.32] it's the coach connect on the mobile app
+[150:12.90] guys
+[150:15.36] thank you
+[150:21.60] um Shabbat
+[150:33.36] okay I've almost done guys I think we
+[150:35.46] have a couple more talks before we can
+[150:36.78] get back and get to drinks and dinner
+[150:40.14] um we have a very special guest also
+[150:41.88] with Azure who's kind of decided to come
+[150:43.68] on board as our chief medical officer
+[150:46.20] I'd like to welcome Dr Shivani to the
+[150:48.42] stage a quick bio about her she's a
+[150:51.90] double board certified physician in the
+[150:54.18] fields of Psychiatry and obesity
+[150:55.44] medicine from California
+[150:57.18] she is the founding director of the
+[150:58.62] world's first academic metabolic
+[151:00.00] psychiatric clinical program how is that
+[151:02.10] Stanford University
+[151:03.54] metabolic Psychiatry which is something
+[151:05.22] that she's going to cover is a term that
+[151:07.56] she coined to describe an emerging
+[151:09.06] clinical discipline that focused on the
+[151:11.04] integrative study and treatment of
+[151:13.20] metabolic abnormalities and relationship
+[151:15.12] to brain health
+[151:16.40] I think it would be best if she explains
+[151:18.90] it
+[151:19.80] so please welcome our new chief medical
+[151:22.32] officer Dr Shivani City
+[151:25.56] thank you
+[151:29.26] [Music]
+[151:37.34] good evening everyone hello Bangalore
+[151:40.56] it's been over 12 years since I last
+[151:43.80] came to Bangalore when my father started
+[151:45.84] the first call center in India
+[151:47.72] I am from Palo Alto California from
+[151:50.76] Silicon Valley
+[151:52.08] so let me tell you why I'm here and why
+[151:55.62] I decided to join Health defining
+[151:58.02] why would a professor researcher
+[152:00.06] clinician
+[152:01.92] come here and work in a different
+[152:03.54] country
+[152:05.04] so the reason
+[152:08.04] is that I was very impressed with what
+[152:10.32] healthify me is doing and on a daily
+[152:12.78] basis I see patients and I look at
+[152:16.68] thank you moment
+[152:18.30] I look at metabolic health I evaluate
+[152:20.64] metabolic health and I treat patients I
+[152:24.42] do research
+[152:26.16] what this company's leadership has shown
+[152:28.14] me after meeting vinod khosla as well as
+[152:30.18] Tushar I've been speaking with Tushar
+[152:33.00] over the last year
+[152:35.46] is that
+[152:37.62] there's an adaptation
+[152:40.44] an evolvement into improving
+[152:44.88] access to care and and quality of care
+[152:47.84] so as a doctor I care very much about
+[152:50.88] the quality of care
+[152:53.94] and that the science is respected
+[152:56.94] so the conversations I had with Tushar
+[152:59.22] were about
+[153:01.62] a lot of things related to what I do in
+[153:03.48] practice and how that's integrated into
+[153:05.70] Pro now and I'm so so pleased to see
+[153:07.98] that
+[153:10.56] so the science is very important and
+[153:13.02] we've been talking about metabolic
+[153:14.40] health
+[153:15.48] so I want to Define that for you and I
+[153:18.24] realize that I'm the last person
+[153:19.98] standing between
+[153:22.68] food and your and you know dinner so I'm
+[153:25.62] going to make this really quick okay
+[153:27.96] what is metabolic health
+[153:29.94] it is the absence of metabolic disease
+[153:33.12] which means no diabetes no high blood
+[153:36.48] sugar no cholesterol issues no other
+[153:40.62] nutritional deficiencies Etc
+[153:59.34] okay
+[154:01.08] so globally the lifetime risk of insulin
+[154:04.80] resistance and I'm going to talk about
+[154:05.94] insulin resistance is about 36 percent
+[154:08.34] that's pretty high
+[154:10.92] look at the person on the left of you
+[154:14.28] and look at the person on the right of
+[154:15.90] you
+[154:17.52] one of you
+[154:20.04] has metabolic syndrome statistically
+[154:23.28] okay
+[154:24.60] now that's important it's not just about
+[154:27.18] weight loss
+[154:29.28] it's also about the absence of metabolic
+[154:31.62] disease
+[154:33.06] so you don't have to be overweight you
+[154:36.24] don't have to have a uh you know
+[154:40.32] obese BMI and you can still have a
+[154:44.34] metabolic issue
+[154:46.32] so that's really important
+[154:50.22] the carbohydrate insulin model
+[154:53.88] of obesity is the future of metabolic
+[154:56.58] health and I'm going to tell you why
+[155:00.84] this is the conventional model
+[155:03.30] that many people learn
+[155:05.40] in medical school
+[155:08.28] Etc
+[155:09.30] and we eat too much we take in more
+[155:12.90] energy it's an equation it's a math
+[155:14.76] equation energy in energy out
+[155:17.52] you have metabolic fuels
+[155:19.68] your glucose your cholesterol we use it
+[155:22.32] we burn the energy
+[155:24.72] and if we have a lot of the energy it
+[155:26.76] stores into fat if we have less we lose
+[155:29.82] weight now if that was completely true
+[155:31.86] we wouldn't have such a big obesity
+[155:34.20] crisis
+[155:36.78] so the latest science actually tells us
+[155:39.26] that the carbohydrate insulin model is
+[155:43.14] relevant and important and what this
+[155:45.24] means is that the foods you eat will
+[155:48.66] affect your glucose levels
+[155:51.00] and Tushar was explaining the glucose
+[155:53.52] levels being measured in the probe
+[155:57.00] what is helpful to know also is that the
+[156:00.36] glucose levels are also affect hormones
+[156:04.38] so something called insulin which is a
+[156:06.66] fat storage hormone and it's also a
+[156:08.82] growth regulator
+[156:10.26] what it does is it stores fat so you can
+[156:13.14] imagine if your glucose levels are
+[156:14.82] higher your insulin is spiking then
+[156:18.24] you're actually increasing your fat
+[156:20.46] storage
+[156:22.44] and that's basically the point of this
+[156:24.84] slide okay
+[156:28.08] now what is metabolic Psychiatry very
+[156:30.12] briefly I'm going to tell you
+[156:34.68] that metabolic health is not just about
+[156:37.44] diabetes or the heart just like vinod
+[156:40.32] was saying earlier
+[156:42.18] it's broad it affects many things
+[156:45.84] so I am a psychiatrist as well as an
+[156:48.24] obesity medicine physician
+[156:50.46] and metabolic Psychiatry is looking at
+[156:52.68] improving metabolic dysfunction
+[156:57.36] or metabolic Health to improve
+[157:00.90] brain health
+[157:02.64] okay so that means improving cognition
+[157:05.22] improving aging
+[157:07.16] improving depression mood
+[157:10.16] Alzheimer's multiple sclerosis these
+[157:13.56] things are brain related
+[157:16.20] right
+[157:18.48] and I'm not just saying that there's
+[157:20.10] actually
+[157:21.24] science behind this
+[157:23.10] that when you improve
+[157:25.20] your metabolic health
+[157:27.30] we do see reduction in inflammation we
+[157:29.88] see
+[157:30.84] improvements in neuronal growth we see
+[157:33.24] energy production
+[157:35.34] also improve
+[157:37.62] so your memory your cognition
+[157:40.38] is improved will improve
+[157:44.34] so if we change our Behavior what we eat
+[157:47.64] diet is very powerful nutrition is
+[157:50.16] powerful it's almost as powerful if not
+[157:52.20] as powerful as the medication
+[157:54.36] or two
+[157:58.68] so driving positive behavior change that
+[158:02.10] also improved metabolic Health which I
+[158:04.92] was saying
+[158:06.12] and improve brain health and when you
+[158:08.22] improve brain health you can actually
+[158:10.20] also improve behavior and that is also
+[158:13.26] something we know with the science
+[158:18.24] the reason I'm saying that
+[158:20.70] is because the hormonal levels actually
+[158:23.76] affect your chemical Messengers in your
+[158:27.60] brain
+[158:29.46] so you can think better
+[158:31.38] you can feel better you can move better
+[158:36.18] so how are we going to achieve this at
+[158:38.76] Health if I mean
+[158:41.16] well we're going to achieve it as a team
+[158:44.94] we're going to advance our coaching
+[158:46.50] protocols I think a lot has been said
+[158:48.12] about that my job is to make sure the
+[158:50.64] safeties are in place that the quality
+[158:53.04] of care is there as well as medical
+[158:56.82] differentiation and I'll explain what
+[158:59.58] that means
+[159:01.86] now there are a lot of different
+[159:04.08] dietary
+[159:05.76] pieces here
+[159:08.58] and I think Tushar also has mentioned
+[159:11.22] the flex and contextual systems quite
+[159:12.78] extensively so I'm going to skip that
+[159:15.72] and we'll talk about
+[159:17.52] really quickly my goals our goals
+[159:19.98] together is evidence-based research and
+[159:22.14] clinical practice
+[159:23.76] that's what
+[159:25.80] I will ensure
+[159:29.58] looking at the data
+[159:32.04] is really important so I agree with them
+[159:34.68] in British
+[159:36.24] about things being data driven and we're
+[159:39.42] going to use that real-time feedback to
+[159:42.36] adapt and make changes and evolve like
+[159:44.94] how to find me has been doing very well
+[159:51.36] personalization Monon talked about the
+[159:53.82] microbiome and
+[159:56.28] some of the other genetic pieces that we
+[159:58.20] will also look at and we will do the due
+[160:00.30] diligence for that I can assure you it
+[160:02.28] won't be just extra tests that don't
+[160:04.02] mean anything but it'll be clinically
+[160:05.34] useful
+[160:08.66] and lastly condition specific management
+[160:12.96] so PCOS hypertension thyroid diabetes
+[160:16.86] how are we going to look at things
+[160:19.14] differently based on your medical
+[160:20.70] history so this is very individualized
+[160:24.06] and really the way that care should be
+[160:32.04] before I end and hand it off to Tushar
+[160:34.56] there's one extra quality that I wanted
+[160:36.96] to add to ambrish's list he said Tushar
+[160:40.62] is persistent
+[160:42.42] he said that Tushar also
+[160:45.90] uh
+[160:47.28] follows up
+[160:49.62] I would add
+[160:53.40] that he's extremely passionate
+[160:57.96] and his heart is in the right place
+[161:01.43] [Applause]
+[161:11.44] [Music]
+[161:18.18] um
+[161:19.14] tribani for those very kind words I
+[161:22.14] really really appreciate it guys give it
+[161:23.52] up to Dr Shabani it's her third day in
+[161:25.86] office and it's not it's very daunting
+[161:28.50] to be on stage and take on the role of
+[161:31.14] the chief medical officer of a company
+[161:32.58] uh me and I think Bijou were talking how
+[161:35.16] there's not that many companies that
+[161:36.66] have uh you know Tech startups that have
+[161:39.24] chief medical officers and we're really
+[161:40.80] happy and excited to have the one of the
+[161:42.66] best people in this very specific field
+[161:44.70] in the world now who's going to be on
+[161:46.68] board and working with us towards better
+[161:48.24] protocols now I know everybody's been
+[161:51.00] saying I'm the last person standing
+[161:52.62] between you and the drinks and food and
+[161:54.42] I think I'm just gonna keep repeating
+[161:55.68] that till like no uh that's not the case
+[161:57.96] mine's a real quick wrap guys this is a
+[162:00.18] end of our presentation and followed by
+[162:01.98] a quick uh a usual we usually have a
+[162:04.92] guest of honor that concludes our uh our
+[162:07.92] our ignite ceremony as I'd like to call
+[162:10.86] it and this time around we're bringing
+[162:12.24] on Bijou to speak uh as who is going to
+[162:15.72] be the who's the lead partner at
+[162:17.70] LeapFrog
+[162:19.20] um and who who actually was part of the
+[162:21.72] committee who invested our CDC round and
+[162:23.58] has been leading our board from the
+[162:24.78] front and before that
+[162:26.64] um you know I what I wanted to talk to
+[162:29.10] you guys about for a couple of minutes
+[162:30.24] was a little bit of why we do what we do
+[162:32.58] and uh
+[162:34.74] and and and just before we do that
+[162:37.02] thanks for having those Maps up this is
+[162:39.48] how our user base has evolved guys in
+[162:41.34] the last few years
+[162:42.60] dude uh you guys talked about the
+[162:44.82] coaching piece we spent a hundred
+[162:47.28] million messages between exchange our
+[162:49.32] clients and our coaches during the
+[162:50.70] pandemic time so thank you for that
+[162:52.92] coaches this is your hard work
+[162:54.18] represented on the map
+[162:56.28] um
+[162:57.36] and and and and and and and God
+[163:00.84] willingly that user base will continue
+[163:02.28] to expand a lot more globally in many
+[163:04.20] other countries so I'll just take two
+[163:05.82] minutes to talk about why we do what we
+[163:07.50] do as my concluding remarks so
+[163:10.86] um
+[163:11.46] it's because we at healthify always
+[163:13.50] believe passionately that obesity and
+[163:15.78] the link metabolic syndrome is the
+[163:17.94] greatest threat are races ever faced
+[163:21.12] um we've today in the last rather in the
+[163:24.78] last couple of decades what has happened
+[163:26.88] is that there are far more people who
+[163:28.62] are obese than who are mad nourished you
+[163:30.48] know you might have seen seen the you
+[163:32.04] will know what Noah harari's uh
+[163:35.10] presentation before but about 30 years
+[163:37.32] ago we had more people malnourished
+[163:39.36] about a billion malnourished and we had
+[163:41.04] you know very few people who were obese
+[163:43.56] and coming 2030 we have three billion
+[163:45.84] people who are going to be obese and
+[163:47.10] less than 200 people million people who
+[163:49.32] will be malnourished so the future of
+[163:51.00] the burden of problems that we as
+[163:53.64] Humanity are going to face is in obesity
+[163:55.50] and metabolic syndrome honestly kovid or
+[163:58.32] anything else that has happened recently
+[163:59.64] doesn't compare with the enormity of the
+[164:01.44] task we are facing with food and with
+[164:04.56] Fitness being the way it is right now
+[164:06.24] this is how obviously has evolved in the
+[164:09.30] last few decades and we were all
+[164:11.16] familiar over the consequences of it of
+[164:13.38] Shivani laid out many patterns and I
+[164:16.20] think we've all recognized today that
+[164:19.02] obesity and metabolic syndrome is as
+[164:21.42] deadly as climate change
+[164:23.96] thankfully it is reversible with
+[164:25.92] behavior change and which is exactly
+[164:28.08] what healthify does
+[164:31.08] very shortly what I want to tell you
+[164:33.66] about is how we are actually what's
+[164:35.94] what's the what's the secret Evil game
+[164:38.40] plan for the next 10 years
+[164:41.10] um
+[164:41.76] you know in the in by ignite 2018 what
+[164:45.00] we had accomplished with healthify Coach
+[164:46.92] was remarkable that we could change
+[164:49.08] behaviors and there's a business model
+[164:50.88] around it it also generated you know
+[164:53.94] with by 10 000 subscribers with 19
+[164:56.58] million messages exchanged 1 billion
+[164:58.62] inputs and our inputs I mean food
+[165:00.44] exercise fitness steps Etc and about a
+[165:03.78] thousand man years of data we were we
+[165:06.66] could educate and train our AI systems
+[165:09.60] enough to be able to build Health if I
+[165:12.00] smart and that's when we took a heavy
+[165:13.86] leap towards scale so we left towards
+[165:16.26] impact first learned from that used all
+[165:19.56] that technology to hit scale and you
+[165:21.66] know what happened from 2018 to 22
+[165:25.26] how do we not be it's several times
+[165:27.60] increase in size and scale and impact
+[165:30.42] that was 1.0
+[165:32.46] today we have taken a dramatic movement
+[165:34.56] towards pro pro is actually going to be
+[165:36.84] even more expensive than coach bios is
+[165:39.06] pricey and even though we'll probably be
+[165:41.10] one of the only companies to be able to
+[165:43.74] offer healthify Pro or something similar
+[165:46.98] at less than a hundred dollars a month
+[165:48.72] you're looking at pricings between fifty
+[165:50.76] five hundred and six thousand rupees
+[165:52.14] right now most of our peers offer the
+[165:54.66] same at 10 000 rupees and the reason we
+[165:56.94] are able to do it is because we're able
+[165:58.74] to predict glucose curves and we don't
+[166:00.66] require one to have a bios all the time
+[166:02.64] but as a intermittent player as a
+[166:04.86] rehabilitary layer so
+[166:07.08] even though we'll be doing that it is
+[166:09.12] still not a product that is at the price
+[166:11.46] point which is cheap enough as vinod was
+[166:13.20] saying it needs to get accessible it
+[166:15.06] needs to get affordable so how do you do
+[166:16.56] that
+[166:17.94] today we've taken a huge leap in that
+[166:19.56] direction but with Pro and the smart
+[166:21.24] scale and metabolic panels and bios and
+[166:24.18] and several other systems that are
+[166:25.92] coming on it we believe that today we
+[166:29.16] are 200 000 subscribers and the day we
+[166:31.02] hit a hundred thousand Pro subscribers
+[166:33.72] we would have had exchanged a billion
+[166:35.94] messages between our coaches on various
+[166:38.16] parameters we would have had a trillion
+[166:40.86] inputs of food Fitness steps biomarkers
+[166:44.64] metabolic panels smart scale and bios
+[166:48.12] linked information
+[166:49.86] and we would have invested about 10 000
+[166:52.86] manures worth of coaching of our you
+[166:55.20] know the 2000 coaches and and increasing
+[166:57.30] in size and with this as Abhijit
+[167:00.00] mentioned
+[167:01.14] the future is looking supremely exciting
+[167:03.00] our teams are already working on how can
+[167:05.58] we do to Pro what we did to coach what
+[167:08.58] we did from coach to Smart movement can
+[167:10.98] we take that and adapt that to Pro and
+[167:13.14] build predictive patterns so that people
+[167:15.06] who don't have access to things like
+[167:17.82] cgms or scales or metabolic panels can
+[167:20.46] have predicted abilities of what those
+[167:22.44] things might be like
+[167:24.24] healthify Pro scaled with AI is
+[167:27.54] something that we've already begun to
+[167:28.86] invest behind and I can't even imagine
+[167:30.54] in couple of years time how that will
+[167:33.12] pan out we have a dream that a billion
+[167:36.60] people will be healthified that a
+[167:38.34] billion people will have cgms now maybe
+[167:41.64] a few million will have the physical one
+[167:43.50] but the rest deserve to have a an AI
+[167:46.56] predicted virtual one
+[167:48.30] maybe a few million will have Smart
+[167:50.04] scale but hundreds of million needs to
+[167:51.84] get similar attributes based on the
+[167:53.58] markers that they can track based on
+[167:55.74] what food Fitness and patterns and
+[167:57.18] things that they are mentioning learning
+[167:58.80] from the few millions that can afford to
+[168:00.54] pay for metabolic panels We Believe
+[168:01.98] hundreds of millions can be provided
+[168:03.48] with predictive insights on their
+[168:04.92] thyroid patterns or their vitamin
+[168:06.36] patterns I know it sounds too futuristic
+[168:08.40] but so did smart five years ago and I
+[168:11.58] have full faith that in the coming
+[168:12.90] ignites 2.0 Vision will not be complete
+[168:15.96] till we actually make benefits of all of
+[168:18.60] these Technologies and serve it for that
+[168:20.58] billion masses that we are highly and
+[168:22.74] super focused on and we thankfully have
+[168:24.84] backings of investors you heard from
+[168:27.06] vinod you're going to hear it from uh
+[168:29.28] Bijou who also backed that Vision very
+[168:31.38] heavily
+[168:32.52] well and it's coming soon
+[168:35.52] um so today guys you've seen a new faith
+[168:39.00] in taking on a vision remember we
+[168:40.80] started with what does it take to help
+[168:42.00] the 5 billion
+[168:43.38] we've taken a new you've seen us take on
+[168:45.36] a new vision
+[168:46.68] you've seen us show impact and at scale
+[168:50.04] you've definitely seen that we have guts
+[168:52.38] and perseverance
+[168:54.36] we're seeking Believers once again
+[168:56.64] in this two-point of vision in these
+[168:58.74] possibilities in the future that seems
+[169:00.90] bright and in the next 10 years
+[169:03.06] and we're damn sure they were going to
+[169:05.40] help the 5 billion
+[169:06.66] that's all that's us that's ignite Bijou
+[169:09.54] here's to you for the conclusion speech
+[169:14.39] [Music]
+[169:22.52] so I I really am the proverbial last guy
+[169:25.80] standing between you and the drinks and
+[169:27.42] this is it I'll keep it really short
+[169:31.26] every single time I have met anyone from
+[169:36.00] the healthify me community and that that
+[169:38.88] feeling is reinforced today having met
+[169:41.16] far larger number than I had before
+[169:44.76] a Margaret Mead quote comes to my mind
+[169:49.26] never underestimate the power
+[169:51.96] of a small group of committed people to
+[169:55.62] change the world indeed it's the only
+[169:57.84] thing that ever has
+[169:59.79] [Applause]
+[170:03.96] and we have all seen this in small ways
+[170:06.60] and big whether it's that cricket team
+[170:09.06] that we are part of in in our college or
+[170:11.46] Gully Cricket which just doesn't lose
+[170:13.92] somehow in spite of fancy opponents some
+[170:19.02] have seen it in big ways Tushar Bala who
+[170:22.14] are part of aadhar the single largest
+[170:25.32] unique ID experiment in the history of
+[170:27.84] humanity
+[170:29.52] and I'm beginning more and more to
+[170:31.62] believe
+[170:32.46] after everything I have seen over the
+[170:34.44] last 18 odd months that have been part
+[170:36.54] of this community of healthify me that
+[170:39.78] we have that magic sauce
+[170:42.24] there are three components generally
+[170:44.04] that I believe that makes me reinforce
+[170:47.04] that that passion and vision one
+[170:49.62] group of people
+[170:51.24] whether it is tashar anjan Manan Sachin
+[170:55.98] till recently roshni shefali now we've
+[170:59.88] heard from Abhijit Rohan
+[171:02.64] and probably most importantly the 2000
+[171:06.12] coaches that roshni spoke about I
+[171:09.84] personally have experienced a couple of
+[171:11.34] them ritika and anushree who I'm sure
+[171:12.90] are here and have been spectacular in my
+[171:15.78] own health Journey
+[171:17.46] so you have these incredible people
+[171:21.36] coming together
+[171:22.82] with once in a lifetime tools 600 700
+[171:27.66] million Indians already have access to
+[171:30.36] some sort of smartphone or the other a
+[171:32.58] billion people with smartphones is not
+[171:35.16] too long away about a GB of data in
+[171:39.54] India costs only around nine cents
+[171:41.42] whereas say in the US I think it's two
+[171:44.04] three dollars and Kenya it is about 80
+[171:46.50] cents so there is that that con
+[171:49.02] configuration of great people with
+[171:51.90] Fantastic Tools which they can get
+[171:54.66] access to possibly once in a lifetime
+[171:56.46] and then finally there is a worthy
+[171:59.40] problem
+[172:00.66] we we heard of that in a far more eloken
+[172:03.84] fashion from Tushar but for me
+[172:06.84] personally when I look at the problems
+[172:09.30] that healthify me is trying to solve as
+[172:12.06] a former doctor
+[172:13.56] and as a human being who lost his father
+[172:17.36] much earlier than he lost his parents
+[172:21.12] because of diabetes I cannot be more
+[172:24.36] passionate about the problem you're
+[172:26.88] trying to solve Tushar and the rest of
+[172:29.34] the team so so you have this magical
+[172:32.10] combination you have great people you
+[172:35.22] have once in a lifetime technology and
+[172:37.44] that technology is only going to get
+[172:38.82] cheaper better with 5G Quantum Computing
+[172:42.06] and so on and then you have this worthy
+[172:44.34] problem not just for India but globally
+[172:47.18] that healthify me is well positioned to
+[172:49.98] solve so I'll just end it all by quoting
+[172:54.06] I think it was Gandhi who said this and
+[172:56.34] very relevant for folks who have built
+[172:59.22] things like healthify me over a 10-year
+[173:01.08] period
+[173:03.72] first
+[173:05.10] they ridicule you
+[173:06.72] first they ignore you then they ridicule
+[173:08.70] you then they fight you and then you win
+[173:11.40] I have had no doubt
+[173:13.98] in all my engagement
+[173:16.26] with healthify me
+[173:18.18] but more today than ever before that
+[173:21.06] this is your moment you're at the
+[173:22.44] Vanguard of the global fight against
+[173:24.24] chronic diseases and you are going to
+[173:27.24] win thank you for taking me on as a
+[173:30.18] partner in your journey and uh thank you
+[173:33.18] for this wonderful ignite team now
+[173:36.00] you're off to your drinks for sure thank
+[173:38.10] you
+[173:38.66] [Music]
+[173:46.32] thank you so much Bijou
+[173:48.54] and thank you all for being part of
+[173:50.34] ignite 2022
+[173:52.32] we really loved having you guys here
+[173:54.60] yeah there were some issues here and
+[173:56.64] there but then thanks for bearing with
+[173:57.96] us you are a bit Rusty after doing it
+[173:59.88] not having done it for two years but
+[174:02.28] obviously next time will be much better
+[174:03.80] however we noticed like one small issue
+[174:06.36] there was just one small issue right I
+[174:08.28] think I mean apart from the other
+[174:09.66] glaring issues that were there so yeah
+[174:12.08] throughout the decks and throughout the
+[174:14.04] presentation some people said hell they
+[174:15.48] find me someone said healthify I said
+[174:17.94] healthify 2.0 or somebody said healthify
+[174:19.98] me 1.0
+[174:28.82] like let's just have an answer
+[174:31.74] I don't know I mean we are healthify me
+[174:33.48] right but let's get there that's true
+[174:36.96] actually so what do you guys say
+[174:39.60] should we drop the me
+[174:41.34] that's a new vision yeah shouldn't it be
+[174:43.98] a new company it should with a new name
+[174:46.02] definitely the 10th year mark yep hey
+[174:48.18] guys should we drop the me show your
+[174:49.62] hands if you think we should drop them
+[174:50.88] here and move to healthify
+[174:52.92] no and yes equally faced oh man this is
+[174:56.34] like an equally cut room people love our
+[174:58.20] name I think the the purpose of a brand
+[175:01.86] has always been to healthify a billion
+[175:04.56] people guys I started it because I
+[175:06.66] wanted to healthify me but I think it's
+[175:08.76] time we moved on to a much wider
+[175:10.56] Community uh we would like to humbly
+[175:13.20] present that and then we should of
+[175:15.00] course talk to everybody here but in the
+[175:16.98] coming weeks we'd love this and please
+[175:19.50] do not tweet this this is only
+[175:20.82] confidential between the people in this
+[175:22.32] room Chatham's room apply but
+[175:26.22] we would love to change ourselves to a
+[175:28.62] new beginning to a new brand to a New
+[175:30.48] Vision we'd love to call ourselves
+[175:31.92] healthify
+[175:33.36] thank you for that thank you for ignite
+[175:35.70] thank you for being here for being the
+[175:37.92] best team in the world to support this
+[175:39.42] this mission
+[175:42.18] let's have a hell of a night ahead guys
+[175:44.34] thank you everybody the drinks are open
+[175:46.38] the food's late let's have a fun evening
+[175:48.06] ahead
+[175:49.88] [Music]
+[175:54.48] thank you

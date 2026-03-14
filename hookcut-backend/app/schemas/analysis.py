@@ -7,6 +7,8 @@ class AnalyzeRequest(BaseModel):
     youtube_url: str = Field(..., max_length=2048)
     niche: str = "Generic"
     language: str = "English"
+    interview_mode: bool = False
+    speaker_count: int = 2
 
     @field_validator("niche")
     @classmethod
@@ -22,6 +24,13 @@ class AnalyzeRequest(BaseModel):
             raise ValueError(f"Invalid language. Must be one of: {', '.join(LANGUAGES.keys())}")
         return v
 
+    @model_validator(mode="after")
+    def validate_speaker_count(self) -> "AnalyzeRequest":
+        if self.interview_mode:
+            if not 2 <= self.speaker_count <= 8:
+                raise ValueError("speaker_count must be between 2 and 8 for interview mode")
+        return self
+
 
 class AnalyzeResponse(BaseModel):
     session_id: str
@@ -30,6 +39,7 @@ class AnalyzeResponse(BaseModel):
     video_duration_seconds: float
     minutes_charged: float
     is_watermarked: bool
+    interview_mode: bool = False
 
 
 class VideoValidateRequest(BaseModel):

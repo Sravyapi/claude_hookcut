@@ -345,11 +345,11 @@ export default function HomeStateMachine({ marketingContent }: Props) {
   }, [stopPolling]);
 
   const handleAnalyze = useCallback(
-    async (url: string, niche: string, language: string, meta: VideoMeta) => {
+    async (url: string, niche: string, language: string, meta: VideoMeta, interviewMode?: boolean, speakerCount?: number) => {
       dispatch({ type: "DISMISS_ERROR" });
       analysisStartRef.current = Date.now();
       try {
-        const result = await api.analyze(url, niche, language);
+        const result = await api.analyze(url, niche, language, interviewMode ?? false, speakerCount ?? 2);
         dispatch({
           type: "ANALYZE_STARTED",
           sessionId: result.session_id,

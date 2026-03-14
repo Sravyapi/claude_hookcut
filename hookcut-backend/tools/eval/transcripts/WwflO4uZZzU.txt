@@ -1,0 +1,2598 @@
+[0:00.16] This company is a category disruptor,
+[0:02.24] category creator
+[0:04.80] and a platform that has really carried
+[0:07.04] forward the e-commerce wave in India.
+[0:08.96] I'm talking about ship rocket and we
+[0:10.64] have with us sahil who's the
+[0:12.00] co-founder and CEO
+[0:14.72] D2C
+[0:17.84] bossmemes of India have and always will
+[0:20.88] be correct they are the backbone right
+[0:22.96] 50% export 334% GDP
+[0:27.60] what are we debating right it's the
+[0:29.12] largest employer
+[0:30.00] >> on this technological shift how do you
+[0:31.92] adapt
+[0:32.32] >> and I think it's it's something that
+[0:33.76] everybody should hear and learn because
+[0:35.60] honestly communication itself as a
+[0:37.76] country is broken in India. It is a once
+[0:40.08] in a generation opportunity because it
+[0:42.08] can change how everything is done.
+[0:45.12] >> Qualitative side. What have you
+[0:46.64] discovered about yourself?
+[0:47.76] >> You have to make your job interesting
+[0:49.52] somehow. And as as a leader, the founder
+[0:51.92] of the company or the CEO of the
+[0:53.20] company, you can
+[0:54.08] >> 2012 if you were talking to yourself
+[0:55.68] again, uh what would you tell yourself?
+[0:57.84] >> Don't die.
+[1:03.92] >> Hello. Before we get started with this
+[1:05.84] episode, I quickly wanted to share that
+[1:07.84] we are now a part of 01 network by
+[1:10.00] Zerodha. Thank you so much for watching.
+[1:12.00] >> Welcome to the Indian Silicon Valley
+[1:13.44] podcast. I'm your host Jaraj and today I
+[1:15.44] have with me an extremely special guest.
+[1:17.36] This company is a category disruptor,
+[1:19.36] category creator and a platform that has
+[1:21.84] really carried forward the e-commerce
+[1:23.52] wave in India. I'm talking about
+[1:25.20] Shiprocket and we have with us Sahil
+[1:27.20] who's the co-founder and CEO and we
+[1:28.96] decode the entire business today. Thank
+[1:31.28] you so much Sah for joining me today.
+[1:32.72] >> Thank you JJ. Pleasure. A pleasure being
+[1:34.24] here.
+[1:34.64] >> I'm so excited to be hosting you because
+[1:36.08] I I really mean it. As a student of like
+[1:38.16] Indian startups, I I see that there are
+[1:40.40] very few companies which are platform
+[1:41.76] businesses, category creators, India
+[1:43.60] first businesses, right? And I think you
+[1:45.36] check mark all of these. uh I want to
+[1:47.52] understand the breadth of the business
+[1:50.16] that is today because we we've heard the
+[1:52.40] story before about how you got started
+[1:54.24] and how you pivoted into this and I'll
+[1:55.84] get there but if you can talk to us
+[1:57.44] about what beyond shipping aggregation
+[2:00.00] does ship rocket do which is the primary
+[2:01.60] thing that people might know as a you
+[2:04.00] know general consumer but I'm sure the
+[2:05.60] brands already know so if you can give
+[2:06.80] us a sense of the size of the business
+[2:09.20] that'll be great the verticals you have
+[2:10.72] checkout you have the US business
+[2:12.96] that'll be great let's start there and
+[2:14.32] then we'll go into the journey
+[2:15.76] >> no absolutely Absolutely. I think before
+[2:17.76] going into what parts of the stack we
+[2:20.16] power, I think it's important to
+[2:21.28] understand who we do it for.
+[2:22.56] >> Yes.
+[2:22.96] >> Um the kind.
+[2:24.08] >> Yeah. So basically there is a 50 million
+[2:27.12] MSMES in India out of which 10 to 15
+[2:30.40] million are digitally enabled today from
+[2:32.72] a commerce perspective.
+[2:33.84] >> Sure.
+[2:34.16] >> And thesememes are in three broad
+[2:36.24] categories. There is the digital
+[2:38.08] natives. So think everybody which is a
+[2:40.08] social seller on Instagram. There's
+[2:41.60] millions of those people. There's folks
+[2:43.28] selling exclusively on marketplaces,
+[2:45.12] exclusively on D2C or in a mix of both.
+[2:47.92] Uh there are uh micro marketplaces in
+[2:50.96] categories, right? Uh selling toys,
+[2:53.12] selling uh skincare, uh selling imported
+[2:55.60] skincare. So there's all these like
+[2:56.96] niches that have bloomed in the in the
+[2:59.04] last, you know, 10 years of e-commerce
+[3:00.72] in India. These are all your digital
+[3:02.40] natives. You've then got the offline
+[3:04.96] retailers of similar categories which
+[3:06.96] are lifestyle categories. Uh these are
+[3:09.12] folks who are you know who have a shop.
+[3:11.28] they want to retail stuff and they are
+[3:13.20] getting digital leads online already
+[3:15.76] right and then you've got the export
+[3:17.84] orientedmemes again there's digital ones
+[3:20.08] that drop ship on marketplaces and then
+[3:22.00] you've got the kind of offline uh either
+[3:24.80] you know sending through traditional
+[3:26.24] distribution um you know or through uh a
+[3:29.36] bulk buyer for a marketplace as well
+[3:31.12] right so semi-digital let me put this
+[3:32.80] way this this kind of uh base of of
+[3:36.32] merchants in India typically has been
+[3:38.80] served in the world by only platforms
+[3:41.52] right uh subscriptionbased softwarebased
+[3:44.48] businesses have not really been able to
+[3:47.04] uh cater to them right even if you you
+[3:49.68] know look at US's largest commerce
+[3:52.00] enabler e-commerce enabler Shopify they
+[3:54.64] are actually not really a subscription
+[3:56.08] business today right uh good 70% of
+[3:58.56] their revenue actually comes from
+[4:00.24] processing payments shipping stuff like
+[4:02.08] that and then obviously the rest is
+[4:03.68] through the software so and that's what
+[4:05.44] it took for them to become big and I
+[4:07.20] think the point I'm making is that we
+[4:08.72] realize that platform is the way to do
+[4:10.88] this. But that being said, there is a
+[4:14.40] platform where you become the middleman,
+[4:17.04] >> right? Which is what a lot of a lot of
+[4:18.24] the marketplace models are built on
+[4:20.00] >> which serve the consumer. I don't think
+[4:21.84] they serve the uh merchant very well.
+[4:24.32] >> And then you've got platforms like
+[4:25.84] Shopify and Shiprocket that actually put
+[4:28.08] the merchant at the center of their
+[4:30.32] universe and then they design everything
+[4:32.56] around it in terms of what the merchant
+[4:34.32] need, right? So that's kind of what we
+[4:35.92] do. So we, you know, we enable commerce,
+[4:38.08] right? We're about 200,000 merchants
+[4:41.20] strong. Um, you know, we power more than
+[4:45.28] $25,000 uh 25,000 rupees of GMV for our
+[4:48.88] merchants. So, so meaningful player in
+[4:50.64] the market, right? Hundreds of millions
+[4:52.24] of transactions every year. Uh, we've
+[4:54.72] done about north of half a billion
+[4:57.12] deliveries till date, right? So, and
+[4:59.20] we've done this without actually owning
+[5:00.56] any assets. So, we don't own fleets, we
+[5:02.80] don't own warehouses, we don't own uh
+[5:05.68] machines like sort, we own none of that
+[5:07.44] stuff, right? We've built it like an
+[5:08.88] operating system or a platform where
+[5:10.80] today ship rocket connects into um merch
+[5:14.16] cers of you know logistics companies of
+[5:16.56] all types modes size scale right so we
+[5:19.84] can do uh hyperlocal right today through
+[5:22.32] shiprocket quick we are doing um ptlftl
+[5:25.92] through shiprocket cargo we have
+[5:27.36] shiprocket fulfillment center networks
+[5:29.52] uh we obviously do the national couer
+[5:31.28] through our various partners uh we have
+[5:34.16] uh you know uh same day delivery next
+[5:36.32] delivery networks so this This is all
+[5:37.68] logistics right for for our digital
+[5:39.52] natives and for the offline merchants we
+[5:41.60] are doing crossber into the UK and US
+[5:43.76] for merchants sitting in India exporting
+[5:46.24] um we'll soon be exploring import as
+[5:49.04] well right for the same merchants or
+[5:50.64] different set of merchants so we're
+[5:51.92] trying to basically go after the
+[5:53.12] backbone for the for the backbone of the
+[5:55.04] country which is merchantsmemes to power
+[5:57.28] the logistics in a more modern way right
+[5:59.84] uh and I think India still has high cost
+[6:01.60] of logistics as a percentage of total
+[6:03.44] sales there's lots of inefficiencies
+[6:05.92] there's a lot of uh knowledge
+[6:08.00] arbitrage, you know, that people are
+[6:09.44] sort of monetizing. And we believe that
+[6:11.68] that's not the long-term way to uh, you
+[6:13.92] know, make merchants succeed or make
+[6:15.36] business succeed. Long-term way is to
+[6:17.20] basically be able to, you know, bring
+[6:19.36] intuitive experiences to merchants, make
+[6:21.36] it very very easy. Now, AI is available
+[6:23.68] that can really unlock much more value
+[6:26.00] than before. Um, and and it is to be
+[6:28.80] able to connect the right, you know,
+[6:30.64] sets of uh services, whether it's
+[6:32.56] payments or checkout or shipping and so
+[6:34.88] on, right? uh to the merchant at the
+[6:36.88] right time in a in a workflow that they
+[6:38.72] can understand. I think that's kind of
+[6:40.24] how we solve the platform.
+[6:41.92] >> I don't think it's been done anywhere
+[6:43.68] else in the world in this way. Of
+[6:45.60] course, there's, you know, inspirations
+[6:46.96] and examples, but I think it's a very
+[6:48.72] very for India kind of a problem and
+[6:51.52] India is big, you know, why not why
+[6:53.12] should not why shouldn't it be?
+[6:54.64] >> Absolutely.
+[6:55.12] >> Um so I think long story short to answer
+[6:57.76] your question, I think we basically
+[6:59.04] serve merchants on their shipping and
+[7:01.60] logistics, all things logistics. Anybody
+[7:03.60] who is as small as doing one order a day
+[7:06.24] to hundreds of thousands of orders a
+[7:08.72] day, right, can scale on the platform.
+[7:10.40] And then on the pre-order stack, we help
+[7:12.64] merchants with their growth. So we run
+[7:14.64] our checkout business which is uh, you
+[7:17.28] know, very very fast growing. It's a
+[7:19.12] single sign on network. It serves
+[7:21.12] merchants by giving them higher
+[7:23.04] conversion rates, better trust, you
+[7:24.48] know, so kind of replicating the
+[7:25.52] marketplace experience. Um we help
+[7:28.00] merchants with powering their ads with
+[7:30.00] insights that we gather through
+[7:31.44] trillions of data points that we've
+[7:32.88] acquired through our transactions. So to
+[7:34.88] better inform them so you know to reduce
+[7:36.48] their mistakes in terms of targeting and
+[7:38.00] campaign building and so on. Uh we also
+[7:40.56] help them with their marketing
+[7:41.68] automation both on-site and offsite. So
+[7:43.68] we've tried to build a stack for the
+[7:45.44] merchant to say look everything from you
+[7:47.60] know
+[7:48.80] >> getting insights on what to sell where
+[7:50.72] using shiprocket trends for example to
+[7:52.80] then using our ad stack to power you
+[7:55.04] know make decisions on what kind of ads
+[7:56.64] to run your marketing automation through
+[7:58.88] our engage platform running shiprocket
+[8:00.72] checkout to boost conversions and you
+[8:02.80] know buyer experience and then basically
+[8:04.96] our post orderer workflows take over
+[8:07.20] right where everything from if the
+[8:08.96] inventory is lying in merchant warehouse
+[8:10.96] our warehouse what's the ETA what is the
+[8:12.72] pickup time what processing needs to be
+[8:14.80] done what packaging needs to be done all
+[8:16.40] of that is digitally managed right and
+[8:18.64] it's managed in a way why it's complex
+[8:20.80] is because you know I use example of
+[8:22.56] Apple and and Android and as an Apple
+[8:26.00] user and maybe I'll regret this 5 years
+[8:28.40] down the line maybe we should be Apple I
+[8:29.92] don't know right but right now my view
+[8:31.36] is for India especially that you know as
+[8:34.00] an as an Apple user you you'll find that
+[8:36.16] the ecosystem is is just amazing right
+[8:39.04] everything works just works
+[8:40.64] >> right because they've got to support one
+[8:42.40] set of hardware that they build and
+[8:44.80] control and yes it brings a great
+[8:46.16] experience but there's a price for it
+[8:47.68] >> right
+[8:48.32] >> and then you've got Android which is
+[8:50.64] sort of hardware compatible right it'll
+[8:53.60] work across hardware it's open source in
+[8:56.08] some ways it's got extensions built in
+[8:58.48] >> uh and it is used by more people
+[9:01.12] >> far more people around the world right
+[9:02.96] but the experience will always be you
+[9:05.52] know a few percentage points less
+[9:07.04] because it's got to now support
+[9:08.56] different hardware
+[9:09.52] >> sure
+[9:10.00] >> right but what software is more valuable
+[9:12.80] Is it Android or is it so I think I
+[9:14.88] don't know my my belief is that for a
+[9:16.96] country like India
+[9:18.40] >> if we are to take the ecosystem along
+[9:20.88] which is you know various enablers
+[9:22.72] single point enablers like payments
+[9:24.32] shipping and so on um and then all sizes
+[9:27.52] and shapes of merchants we actually
+[9:29.52] think that India needs its own commerce
+[9:31.92] equivalent Android to say look it can
+[9:34.32] work with all of these guys billing is
+[9:36.56] handled credit is hand all that is built
+[9:38.16] for you right you don't come in
+[9:39.44] negotiate contracts you come in you get
+[9:41.76] everything you need. The interfaces are
+[9:43.92] designed in a way, you know, we recently
+[9:45.60] at Shir la la la la la la la la la la la
+[9:46.24] la la la la la la la la launched our
+[9:47.28] demo on using our entire dashboard with
+[9:49.36] with voice, right? So you could speak to
+[9:51.36] it. I think you missed it, but you could
+[9:53.28] speak to it and you could say, you know,
+[9:54.96] show me
+[9:59.28] and it'll say print and you can just
+[10:02.16] talk to it,
+[10:03.20] >> right?
+[10:03.84] >> So what it can do is the interface
+[10:06.08] element of our business is very
+[10:07.76] important because that's how we are able
+[10:09.60] to get all of these hardware
+[10:12.32] >> to be able to talk to the merchant. I
+[10:14.16] mean to be able to be consumed by the by
+[10:15.84] the merchant through the software,
+[10:16.88] right? I mean I use that analogy because
+[10:18.48] I sometimes feel it helps people
+[10:19.84] understand why we're different in what
+[10:21.60] we do. So we are not the hardware and
+[10:23.04] don't want to be
+[10:24.08] >> building the operating system.
+[10:24.80] >> We want to be the OS where the merchants
+[10:26.48] stick to us. Our users stick to us and
+[10:29.04] whatever they need from insurance to
+[10:30.96] returns right is offered on this
+[10:33.28] platform and it's not it's not like
+[10:34.72] resold. It's done in a way where it's
+[10:36.40] built as a solution stitched back into
+[10:38.88] the same fabric of the overall platform.
+[10:41.36] And that is how you know you'll see many
+[10:43.68] many many products constantly coming
+[10:45.76] from this house of shiprocket in a way
+[10:48.00] because that's what's needed for the
+[10:50.16] merchant to be able to be more and more
+[10:51.68] and more successful in in the coming in
+[10:53.76] the coming times for them.
+[10:55.28] >> Yeah. No, that's massive. I think that's
+[10:56.96] what I love about the ecosystem is like
+[10:58.88] if you go to a you know merchant a brand
+[11:01.04] and they want to use beyond the existing
+[11:03.84] marketplaces anything they have to come
+[11:05.68] to you and they can use any of those
+[11:07.44] solutions. In fact, I'm curious to
+[11:09.04] understand like what is your mental
+[11:10.88] model to say that this is what we launch
+[11:12.48] next, right? Like because you started
+[11:14.16] with logistics, then you built the
+[11:15.84] warehousing, then you built now you have
+[11:17.84] capital, you had the checkout, you have
+[11:19.92] multiple things, you could build
+[11:21.20] customer support, you could build
+[11:22.48] anything else, right? What is the mental
+[11:24.72] model for you to understand which is the
+[11:26.72] biggest next growth lever and in a place
+[11:28.80] which is ever evolving, right? Right.
+[11:30.16] right now there is AI, there is quick
+[11:31.92] commerce, there is XYZ how do you manage
+[11:35.52] some of these tailwinds and say that
+[11:37.04] this is where we'll actually accelerate.
+[11:39.28] So it's a great question right and this
+[11:41.36] is the one we ask ourselves every day to
+[11:43.68] some extent and I think uh two two-part
+[11:46.24] answer one is there is a little bit of
+[11:48.56] playbook where we've spent enough time
+[11:50.72] we spent over a decade in this market
+[11:52.24] now and clearly can call ourselves
+[11:54.24] experts uh to some extent right what we
+[11:57.12] found is that typically the SMBs we deal
+[11:59.76] with there's really only two main things
+[12:02.32] they care about right it's like grow my
+[12:04.08] business help me sell more
+[12:06.48] >> or help me improve my bottom line
+[12:07.92] there's nothing Anything beyond that is
+[12:10.00] a vitamin. It's not a painkiller.
+[12:11.68] >> Fair enough.
+[12:12.16] >> So I know this is very trivial and it
+[12:13.92] sounds very obvious
+[12:15.52] >> but we even now sometimes have the
+[12:17.84] tendency to make that mistake when
+[12:19.12] you're thinking product you're thinking
+[12:20.24] solution
+[12:21.36] >> and we've tried it many many times to
+[12:22.96] know that no
+[12:25.60] it's all good to have. So a lot of the
+[12:27.04] US stuff that amazing business
+[12:32.32] as a hook they want to use it you want
+[12:35.20] to make money on it.
+[12:36.08] >> Correct. Because you know the Indian
+[12:37.36] businessmen are very smart. They're
+[12:38.88] smarter than us. Correct,
+[12:40.00] >> right? As engineers, they they
+[12:41.76] entrepreneurs, boss, they are hustlers.
+[12:43.92] >> They know where to spend their pesa,
+[12:45.44] right?
+[12:46.08] >> To increase revenue, you increase bottom
+[12:47.68] line.
+[12:48.08] >> So you figure out a way to latch on to
+[12:49.44] that, right? Then you start
+[12:50.88] deconstructing. Okay, what does that
+[12:53.60] >> RTO is a big problem
+[12:54.96] >> and RTO is not a shipping problem.
+[12:56.32] Correct. People are very confused.
+[12:57.60] People think
+[12:59.28] it is a through and through problem.
+[13:02.96] You know what they
+[13:04.16] >> Yeah. I mean optimization and like
+[13:05.44] filtering almost right who did you
+[13:06.72] target
+[13:07.44] >> you target a wrong buyer they're more
+[13:08.80] bound to bounce right when you when you
+[13:11.20] >> then fraud then there's obviously supply
+[13:13.36] chain management as well so that's
+[13:14.40] through and through that's a huge
+[13:15.76] problem for the market so as you start
+[13:17.44] identifying where are their revenue
+[13:18.64] leakages where are their profit losses
+[13:20.72] and so on you start to plug them right
+[13:23.36] so I think more or less that is the
+[13:24.96] macro
+[13:26.16] >> train to say okay keep keep at it number
+[13:28.40] one number two we actually have
+[13:30.24] successful models of market places that
+[13:32.00] are doing extremely well in India
+[13:33.36] whether on the traditional side or the
+[13:35.04] quick side. Uh I like how we call them
+[13:36.88] traditional now but whatever right or on
+[13:38.48] the quick side where we know okay
+[13:40.56] merchant side consumer side expectation
+[13:42.80] yeah right when we built our warehousing
+[13:44.88] network that came from a cry from our
+[13:46.48] merchant saying boss if you guys don't
+[13:47.92] give me one day two day all my business
+[13:50.32] will go to uh the marketplace right so
+[13:52.96] how will I have my own channel
+[13:55.12] >> and that's kind of how it started uh
+[13:56.96] along with the fact that it was co
+[13:59.36] >> and a lot of people couldn't operate
+[14:00.88] >> right
+[14:01.20] >> at all so it was like a big painkiller
+[14:03.52] at that point saying look I can't get
+[14:05.36] these orange, green, red pass. I don't
+[14:07.20] know how to do this.
+[14:08.16] >> Uh why don't you take a shared warehouse
+[14:09.52] in Bangalore and just start for us.
+[14:10.88] That's how it started. And then okay, we
+[14:12.32] can actually do
+[14:13.28] >> quick deliveries from here and why don't
+[14:15.20] we pull a page out of the marketplace.
+[14:17.12] So and I think check out was the same
+[14:18.56] thing that people said when I put this
+[14:20.56] product on Amazon
+[14:22.96] when I put this product on a marketplace
+[14:25.04] >> I get, you know, out of 100 people, six
+[14:27.12] people buy it.
+[14:28.08] >> But when I put the same thing on my own
+[14:29.52] website, uh only only two people are
+[14:31.68] buying it. Why is there a gap?
+[14:33.20] >> Correct. And while part of it might be
+[14:34.96] targeting and you know who you brought,
+[14:36.48] I think the issue is trust
+[14:38.08] >> right
+[14:38.64] >> for Indian consumer when they buy on a
+[14:41.68] marketplace they get a protection
+[14:43.20] guarantee they know it's a big brand
+[14:45.04] they know they'll get their money back
+[14:46.40] but when they're buying from a brand
+[14:48.16] website that they don't know of
+[14:50.48] >> they actually have a lot of questions
+[14:51.92] will I get it
+[14:53.04] >> is the right quality and so on right
+[14:54.96] >> as we started uncovering what how to
+[14:56.80] solve this issue we realized that this
+[14:58.24] issue is not actually of payments
+[15:00.64] >> this is issue of trust and that's how
+[15:02.56] the checkout was built. So we put a
+[15:04.72] widget on the PDP that says okay powered
+[15:07.52] by shiprocket it is coming on such and
+[15:09.28] such date so that visibility of is there
+[15:12.48] from the product page itself we push
+[15:14.40] that information back to the ad feed as
+[15:16.32] well. So on your ad you can say that
+[15:18.32] it's coming tomorrow right then you take
+[15:20.16] it to checkout there we have a single
+[15:21.68] sign on you log in we pull your address
+[15:23.20] so there's a little bit of you know
+[15:25.12] security right mentally that the user
+[15:27.36] has and we have a consumer app
+[15:29.04] >> right called my shiprocket where they
+[15:30.40] can go and track the order raise
+[15:31.60] complaints so it closes the loop very
+[15:33.20] similar to a marketplace but it's not a
+[15:34.80] marketplace
+[15:35.28] >> correct
+[15:35.60] >> it is still the merchants's business we
+[15:37.44] are there to help them serve the
+[15:39.28] consumer right so that's that's the
+[15:40.72] that's the sort of philosophy with which
+[15:42.80] we will always run right it's not that
+[15:44.56] we don't prioritize a consumer We
+[15:46.56] prioritize the consumer to as a means to
+[15:48.80] an end for the merchant.
+[15:49.84] >> Absolutely.
+[15:50.16] >> And I think that difference between our
+[15:51.84] philosophy and that of a marketplace
+[15:54.32] will always stay, right? Because for a
+[15:55.68] marketplace, the consumer is the beall
+[15:57.28] end all. The merchant is a means to an
+[15:58.80] end. They'll happily replace the
+[16:00.32] merchant or the supplier or become the
+[16:02.24] merchant or the supplier, right? In many
+[16:04.08] cases,
+[16:05.12] >> uh in our case, it's it's the opposite,
+[16:07.60] right? We've got all of these users who
+[16:10.00] need tools. World has proven SAS is SAS
+[16:12.64] works. People need this, right?
+[16:14.00] >> Correct. The meaning of this in India is
+[16:16.16] is how we have made it as a platform,
+[16:18.08] right? That's kind of how we've
+[16:19.60] delivered.
+[16:20.24] >> That's amazing. I think that framework
+[16:21.60] is very strong and could be applied like
+[16:23.20] in many other sort of company building
+[16:25.44] exercises as well. I love that. Let's
+[16:27.36] maybe take a step back. I want to
+[16:28.88] understand two things from you because
+[16:30.40] you've been at the cusp of like Indian
+[16:32.24] e-commerce right if if you have to
+[16:34.88] define to us or like just share insights
+[16:37.12] as to how commerce from a brand side has
+[16:39.04] evolved and how consumption from a
+[16:41.60] consumer side has evolved. I think
+[16:43.20] that'll be super interesting to
+[16:44.56] understand from your vantage point. So
+[16:46.64] let's say how what is what was India
+[16:49.12] consuming in 2015 to what are they doing
+[16:51.76] today in 2025 and what were brands
+[16:55.04] focusing on earlier that they are
+[16:56.96] focusing on today. Uh I would love to
+[16:59.04] understand that from you
+[16:59.92] >> exact numbers but
+[17:02.88] >> I'll tell you so in 2015 so we launched
+[17:04.80] shiprocket I mean this version of our
+[17:06.32] business called shiprocket in 2017 16 17
+[17:09.92] >> I think D2C was not a thing I remember
+[17:13.28] going to journalists asking what the
+[17:16.40] hell is D2C
+[17:17.20] >> correct
+[17:19.84] me even a word right investor
+[17:22.80] us they would call it DTC correct
+[17:25.12] correct
+[17:25.44] >> direct to consumer Shopify was doing a
+[17:27.12] bunch of promotion it actually become a
+[17:28.72] market there
+[17:29.60] >> India may it was nothing like in fact
+[17:31.60] most people thought that why will a
+[17:33.68] consumer ever buy
+[17:35.60] >> outside of the marketplace and
+[17:37.60] >> like we said but they are
+[17:39.76] >> we're seeing it happen and like we don't
+[17:41.44] know how big it becomes but it's a it's
+[17:42.88] the right
+[17:43.28] >> early signs were there
+[17:44.08] >> early signs were there
+[17:46.40] overall the market was only consuming on
+[17:48.24] marketplaces
+[17:59.04] between 200 300 depending on which
+[18:00.88] regular I'm guessing is subund million
+[18:02.88] I'm guessing okay
+[18:05.76] I don't think so I think there's
+[18:08.32] see regular
+[18:10.16] I'm guessing like couple of year 300
+[18:17.20] is my I don't know for or proxying my
+[18:20.24] own data ratios
+[18:24.32] right I think buyers are there but the
+[18:26.72] AOV is where you'll
+[18:28.24] >> it's not yeah you'll
+[18:30.16] >> maybe the top 50 are contributing to 80%
+[18:33.04] over and then even per order AOV right
+[18:36.24] is is very different
+[18:39.76] so it's not just orders right but the
+[18:41.44] good thing is they were not ordering at
+[18:43.28] all
+[18:44.40] >> so in our platform we have seen every
+[18:46.48] year the consumption on tier 2 3 4
+[18:49.44] >> only grow
+[18:50.00] >> only grow right it was rapidly moving in
+[18:52.32] five five three percentage points now
+[18:53.84] it's moving in half percent but it's
+[18:55.12] moving
+[18:55.76] >> and only moving there
+[18:56.88] >> yeah which is very powerful which is
+[18:58.32] very powerful AOVs are slightly
+[18:59.92] different sometimes surprisingly some
+[19:01.92] cities are very high also because
+[19:04.16] merchants they are only dealing the high
+[19:06.96] stuffies
+[19:08.64] drugs there's all of this stuff in the
+[19:10.48] platform right uh so I think consumption
+[19:12.96] has changed very drastically the D2C
+[19:15.76] phenomena by the way has like escape
+[19:18.08] nobody right I think precoid I think co
+[19:22.00] just kind of really pushed both sides of
+[19:24.48] the equation on digital adoption on the
+[19:26.08] merch I mean consumer side first but
+[19:28.00] then the you know the push to do
+[19:30.16] something from home right or build
+[19:32.24] something productive I think that also
+[19:34.08] has contributed somewhere right is my
+[19:36.00] feeling because
+[19:37.12] >> why are suddenly people building so many
+[19:38.48] brands right I mean consumption is one
+[19:40.16] reason u but why why did it not just
+[19:42.56] flow to marketplaces I think the
+[19:44.48] personalization ability of brands you
+[19:46.88] India generally lacks supply still lacks
+[19:49.20] supply
+[19:49.84] >> so if you want to buy shampoo there's
+[19:51.28] only five variants you go to amazon.com
+[19:53.12] there's 500 there
+[19:54.24] >> correct
+[19:54.72] >> option India 50
+[19:57.04] >> correct in the last 10 years thanks to
+[19:58.88] D2C brands I'm going to put you know
+[20:01.20] caffeine makes caffeine based early days
+[20:03.28] right mahad said I'm going to do oil and
+[20:04.96] then different people started kind of
+[20:06.32] doing all kinds of things right
+[20:07.92] >> premium ultra premium luxury eco there's
+[20:11.04] so many things you can do right in the
+[20:12.32] category and it doesn't the fact that
+[20:14.08] you can distribute directly and launch
+[20:15.92] your business for like whatever very
+[20:18.08] very low amounts to try uh that spurred
+[20:20.88] innovation right in many ways and I
+[20:22.80] think it's the enablement ecosystem that
+[20:24.96] that should get the credit for this
+[20:26.16] because I'm not us I'm saying everybody
+[20:27.76] else right the actual Korea guys the you
+[20:29.84] know the the payment gateways the
+[20:31.44] Shopifies of the world
+[20:32.88] >> to be able to put this together has
+[20:35.12] actually pushed this market forward
+[20:36.96] >> in many ways I think and I think that
+[20:38.80] that will continue because there is also
+[20:40.96] a change in the consumption pattern so
+[20:43.04] we see now that a lot of people are uh
+[20:46.80] stuck to social media right mostly the
+[20:48.88] meta platforms
+[20:50.48] >> and from there the number of purchases
+[20:52.96] happening is now starting to uh really
+[20:55.20] take off because I think the trust
+[20:57.36] factor is also going up every year as
+[21:00.00] India becomes sort of more you know
+[21:02.56] developed self-reliant as we kind of
+[21:04.64] like like our kids you know and when I
+[21:08.16] don't know about you but when I was
+[21:09.60] young right
+[21:10.96] >> the trust factor is different
+[21:13.44] >> is different right
+[21:14.72] >> now I is high
+[21:16.24] >> so another 10 years out it'll further go
+[21:18.56] up
+[21:19.28] >> and I think then people start to kind of
+[21:21.52] shop more and more on other channels as
+[21:23.44] well right the second thing we are
+[21:25.04] finding is that consumers expect to be
+[21:26.96] served omni channel which means that you
+[21:29.04] know if jiraj walks into a offline shop
+[21:31.68] or interacts with the brand on Instagram
+[21:33.92] or goes to their website I think
+[21:36.08] consumers are expecting to have one
+[21:37.92] experience or at least a unified
+[21:39.44] experience to say okay I bought this
+[21:40.64] here but I'm returning it here or you
+[21:42.48] know how your website looks you'll
+[21:44.16] notice that we have moved from function
+[21:46.24] to form, right? As a as a as a consumer,
+[21:49.36] we care about how it looks. Now,
+[21:51.04] earlier,
+[21:53.12] that is the thing to buy.
+[21:56.00] >> Discretionary
+[21:57.84] as a consumer, I want to buy the
+[21:59.92] aspirational thing, right? So, that is
+[22:01.92] then spurring new sets of changes,
+[22:03.60] right? New categories getting born, uh
+[22:05.76] things like that. Co has made all of us
+[22:07.36] fear for our lives.
+[22:08.40] >> Correct? So home, wellness, yoga, all of
+[22:11.52] that stuff just became like from nothing
+[22:13.28] to something like five 10% business
+[22:16.16] suddenly, right? In a matter of couple
+[22:17.76] of years. So those changes I think so so
+[22:19.68] we'll we'll reflect what's happening in
+[22:21.36] the market. See, we are a we are the
+[22:22.88] rails of this, right?
+[22:24.08] >> We are not the we don't get the demand.
+[22:25.60] We don't we don't do any of that stuff.
+[22:27.04] >> We will reflect what is happening
+[22:29.20] >> in the market. What are consumers
+[22:30.80] buying? How is that demand being you
+[22:33.44] know fulfilled by what kind of supply?
+[22:35.44] You know, is it imported? Is it made
+[22:36.80] here? Is it traded? blah blah blah which
+[22:39.04] cat
+[22:41.04] market because we have the rails on
+[22:42.64] which everything runs and we can observe
+[22:44.56] right we're system of record we don't
+[22:46.24] actually push some of this in terms of
+[22:48.72] trends
+[22:49.60] >> that's very cool I think uh solid
+[22:51.52] insights in terms of the merchants that
+[22:53.52] you're seeing is there representation to
+[22:56.16] how where Indian entrepreneurs are
+[22:58.24] actually budding as well on an MSME
+[23:00.16] level can you like talk about like
+[23:01.84] geographical preferences
+[23:04.96] what is that like yeah point in time
+[23:07.52] answer. So I think the metro so Delhi
+[23:10.32] NCR ends up actually being one of the
+[23:13.12] largest hubs for the merchant side
+[23:15.36] >> startups also the I'm talking about the
+[23:17.68] MSM
+[23:18.48] >> MSMES D2C brands actually
+[23:21.92] but beyond I think the traders or the a
+[23:24.96] lot of the a lot of the business is
+[23:26.64] happening here right uh Maharashtra
+[23:29.04] Mumbai you know Ni Mumbai Pune Nagpur uh
+[23:34.00] Ryaur uh I know In the south there's uh
+[23:38.56] obviously Bangalore but then katur
+[23:42.88] so so so pretty much the top 30 40
+[23:45.28] cities are contribut
+[24:05.68] smaller towns in many cases, right?
+[24:07.12] There's people doing customized gifting
+[24:08.64] for example, right? Is is a is a
+[24:10.32] category that maybe we were not serving
+[24:12.32] but was not really digitized. Now
+[24:14.56] there's full workflows of saying aa you
+[24:16.96] can pick your logo like people have
+[24:18.72] built that stuff and they come to us
+[24:19.84] saying give us the plumbing for the
+[24:21.52] payments and the shipping. Right. Right.
+[24:23.28] >> Uh so so and there's a lot of religious
+[24:25.84] tech coming up right. Yeah.
+[24:27.20] >> Uh people selling
+[24:28.16] >> I'm just going to ask.
+[24:31.12] >> Yeah. We we work with people like astro
+[24:33.20] talk to ship prasad or others to ship
+[24:35.52] prasad and to do like
+[24:39.44] >> this website says rdra sourcing
+[24:42.80] certificate now this discovery now you
+[24:44.48] can't do on marketplace because it's
+[24:46.40] very need- based I want to buy cheapest
+[24:48.48] five categories
+[24:51.04] >> correct but I'm saying when you see a
+[24:52.88] video on Instagram
+[24:54.64] >> like okay I'm going to explore this your
+[24:56.56] your mindset is that of exploring
+[24:58.72] >> it's not that of I want to get in buy
+[25:00.24] and get out Right? It's window shopping,
+[25:02.40] right? You're browsing, you're actually
+[25:03.84] enjoying it. And that is when you and
+[25:05.92] there's a point in that, you know, in
+[25:08.16] that process when you when your intent
+[25:10.56] is is high, it's like, okay, I'm going
+[25:11.68] to buy it now, right? And I think that
+[25:13.68] way of shopping is very different. If
+[25:15.12] you look at Tik Tok in the US, you look
+[25:17.12] at, you know, Meta platform in the US,
+[25:19.04] you look at Southeast Asia and
+[25:20.88] conversational commerce, even in
+[25:22.40] countries like Vietnam and Thailand,
+[25:23.68] it's all very big. Correct. Right. Even
+[25:25.44] countries like Brazil is very big. So, I
+[25:27.20] think India will have that moment. China
+[25:29.04] has WeChat.
+[25:29.84] >> Yeah. Yeah,
+[25:30.16] >> for the same thing
+[25:30.72] >> they have live commerce.
+[25:31.60] >> So I don't see every every country has
+[25:33.28] their sort of you know uh enablement
+[25:35.76] commerce stack and then you've got the
+[25:37.68] marketplace commerce stack every country
+[25:39.20] has it right. So I just don't like you
+[25:41.12] know for India it's it's growing right I
+[25:43.12] think it's a meaningful number today um
+[25:45.92] you know overall right for us we see a
+[25:47.76] hundred billion dollar market if you
+[25:49.68] look at SMB commerce within that
+[25:51.44] obviously you've got digital you've got
+[25:52.80] exporters you've got offline uh but from
+[25:55.04] a e-commerce perspective alone right
+[25:57.12] there's it's a it's a double digit
+[25:58.80] percentage of the market and and growing
+[26:00.88] right it used to be nothing like I said
+[26:02.64] so clearly it's taking a a bigger role
+[26:04.48] and it is the way the future is set up
+[26:07.36] because people will become much more
+[26:10.00] hyperpersonalized for everything. AI is
+[26:12.32] going to make it even worse
+[26:13.92] >> even better
+[26:15.20] >> in that sense. Right. Even software will
+[26:16.80] get personalized.
+[26:17.60] >> Absolutely.
+[26:18.32] >> Right. Because today you can, you know,
+[26:20.56] you can build workflows like recommended
+[26:22.40] personally to me.
+[26:23.12] >> Well, or you could build it. You say I
+[26:24.32] don't need to buy off the shelf. I'm
+[26:25.92] going to buy the builder of the software
+[26:28.16] and I put five prompts and my work will
+[26:29.76] be done. It'll be customized to what I
+[26:31.12] want. But if that's where the world's
+[26:32.56] headed, why should our products be
+[26:34.32] mass-produced, right? They will also be
+[26:35.76] customized. And the only way to do sort
+[26:37.84] of hyper niche at scale is if there's
+[26:40.32] many too many right which means many
+[26:41.92] many people are picking their own
+[26:44.40] interests categories problems that they
+[26:46.32] found and building for that and there's
+[26:47.76] going to be a demand for that I think
+[26:48.96] and that's that's the philosophy that we
+[26:50.56] think uh India will head into as as
+[26:52.72] consumption grows.
+[26:53.76] >> Well that's amazing. Uh I have one last
+[26:55.76] question on this pool and then we'll go
+[26:57.12] into some specifics on the company side.
+[26:59.36] Uh but if I had to ask you like top
+[27:01.60] three unique brands like I remember you
+[27:03.44] talking about this like tail brand once
+[27:05.44] from a G
+[27:07.68] contribute to for that like sort of oil.
+[27:10.40] What would you have to say like very
+[27:11.76] unique like the the brands that we may
+[27:14.00] not hear of in the day-to-day?
+[27:16.48] >> Yeah. So Abi recently I met uh I mean I
+[27:18.80] heard I I met the founder also at this
+[27:20.80] brand called Namakwali.
+[27:22.32] >> Right. And what Namakwali is is she's a
+[27:25.84] you know she's 50 plus lady out of
+[27:28.56] Uttakhand
+[27:30.24] >> uh who had been working with the
+[27:31.60] community. It's in a in a short way it
+[27:33.44] is amul for spices.
+[27:36.00] >> So they get the household uh you know
+[27:38.72] women who are harvesting growing
+[27:40.88] whatever for spices right uh has a
+[27:44.32] collection kind of process they sanitize
+[27:46.40] it etc. And it's it's really good stuff
+[27:48.56] by the way. So I got it at Shir Hing and
+[27:52.00] they've got a couple of products. It's
+[27:52.96] and it's from the source, right?
+[27:54.64] >> It's organic, whatever. It's not
+[27:56.08] processed. There's no there's no
+[27:57.44] chemical. There's nothing, right? It's
+[27:58.48] from how it's done.
+[28:00.40] >> Yeah. She's look like she's from there
+[28:02.08] and she's giving livelihood to these
+[28:04.08] women. It's a great product.
+[28:06.96] It's a great look. Check out the website
+[28:08.16] later. Right. So I found it to be
+[28:09.52] amazing. This is true like you know
+[28:11.52] truly the use of you know what we are
+[28:13.12] built for.
+[28:13.52] >> Correct. You're an ideal user.
+[28:15.12] >> You're empowering somebody like her to
+[28:16.88] really build her business.
+[28:17.68] >> Yeah. And I think it's it's important
+[28:19.52] because many of this kind of an they're
+[28:21.92] not she's not techn like she can't think
+[28:23.76] like a VC funded uh you know a lot a lot
+[28:27.36] of times people ask us that D2C funding
+[28:31.92] boss D2C brands you know of 50 100 and
+[28:35.76] it's like suddenly grow it's going to
+[28:37.44] take an organic you know scale but
+[28:39.68] themes of India have and always will be
+[28:43.52] correct
+[28:43.84] >> they are the backbone right 50% export
+[28:45.92] MSM
+[28:47.44] 33 34% GDP
+[28:50.32] what are we debating right the largest
+[28:52.08] employer self-employment in India so
+[28:55.52] when you think about this right it is a
+[28:57.44] much sort of it is not D2C is a part of
+[29:00.32] that phenomena
+[29:02.48] but there is 20 years worth of execution
+[29:05.20] here right and you grow with the country
+[29:07.12] it is the job to embed so this is a good
+[29:09.44] example of saying look we gave you check
+[29:10.72] out we and she uses pretty much all of
+[29:12.40] our stack right
+[29:13.12] >> amazing
+[29:13.84] >> um so it was good to see her she just
+[29:15.28] won an award at Shir and I was very very
+[29:17.68] very unique story right
+[29:19.60] >> um
+[29:20.80] >> there's another one called scientific
+[29:22.96] right scientific is s i g n uh t i f i c
+[29:27.52] right so what it is is it's a it's
+[29:29.92] crystals for healing right and this guy
+[29:31.84] is from calcat actually
+[29:32.96] >> wow
+[29:33.68] >> uh his grandfather started the business
+[29:35.60] in the 30s or something
+[29:36.64] >> crystals for healing
+[29:37.76] >> but he's doing well right uh double
+[29:41.52] digit crores a year
+[29:43.28] >> oh wow
+[29:44.00] >> I don't know the exact number but I just
+[29:45.36] did a quick
+[29:46.08] >> fair rough and he's a very passionate
+[29:47.92] guy. He always makes sure he gets me
+[29:49.60] something off his I forgot his name uh
+[29:52.64] the founder's name but uh again family
+[29:55.36] business right grandfather say chalata
+[29:58.56] etc. He took it digital
+[30:00.80] >> right I'm going to make a concept around
+[30:03.20] it uh you have to make a lot lot of
+[30:05.52] awareness
+[30:06.40] >> now this product you can't sell on a
+[30:07.92] marketplace how will you explain how
+[30:10.00] will you market but here you use
+[30:12.24] testimonials you explain health benefits
+[30:14.72] etc start from Instagram or Facebook and
+[30:17.12] then land up on your D2C works like I
+[30:19.92] said double digit course a year
+[30:21.36] profitable right these are all like run
+[30:23.68] like a extension of their family
+[30:25.76] business right in many cases that's
+[30:27.20] actually a big trend also that I'm
+[30:30.00] seeing but Krishna Ayurveda basically
+[30:32.56] used to be doing contract manufacturing
+[30:34.48] for ayurvedic products for a long long
+[30:36.16] time now they're launching their own
+[30:37.84] branding you know there's Nagpur say
+[30:40.00] Dreamshub right Jira Dshi um
+[30:43.92] >> the DSI's from Dreamshub in Nagpur
+[30:48.00] they
+[30:49.68] were doing drop shipping earlier right
+[30:52.32] do you understand drop shipping Facebook
+[30:53.92] marketing and as they figure out the
+[30:56.32] craft now they're launching They have
+[30:58.32] launched and actually doing very well
+[30:59.52] their own ayurvedic uh very well
+[31:02.40] packaged product called vitney. It's a
+[31:04.16] nabi oil for health benefit. So I'm just
+[31:06.72] I'm just telling you like that the
+[31:08.40] breadth of the stories right the breadth
+[31:10.24] of the stories you will not hear on
+[31:12.40] marketplace.
+[31:13.20] >> Exactly. Because regimented process it's
+[31:16.24] very clinical to buy them typical
+[31:18.32] categories
+[31:20.48] actual market
+[31:23.52] consumers.
+[31:26.24] This is a reflection of that. We're not
+[31:28.40] we're not coming up with the ideas,
+[31:29.76] right? Correct.
+[31:30.40] >> We're not think we don't have
+[31:31.36] categories. We don't have category
+[31:32.80] managers saying we're saying people are
+[31:35.04] the category managers. They're doing
+[31:36.56] their work. We are just the
+[31:38.00] infrastructure.
+[31:38.72] >> Correct.
+[31:39.04] >> So we the mall provider shop security.
+[31:48.16] Correct.
+[31:49.68] You giving the tools infra. Yeah. With
+[31:51.60] the digital infra.
+[31:52.48] >> I love that because it's very
+[31:53.68] meritocratic like platforms. Par plays
+[31:56.40] out in a very major way
+[31:58.80] incentivization is to push top selling
+[32:01.04] brands if somebody's independent or if
+[32:03.60] they are meritocratic
+[32:05.84] we are a service provider we have to get
+[32:07.76] paid by the merchant correct incentive
+[32:10.24] merchant
+[32:18.80] I'm selling to the business right you're
+[32:21.04] selling equally to all now it's up to
+[32:22.72] them how they sort of leverage it which
+[32:24.24] I love I think that uh incentivization
+[32:26.64] and correlation is very strong
+[32:28.24] >> and you know while I think we've talked
+[32:29.76] about democratizing commerce for a long
+[32:31.52] time right uh 10 years we've been saying
+[32:34.00] that way before anybody else you know
+[32:35.92] you know
+[32:37.92] what does this even mean in the in the
+[32:40.00] early days but the thing is that it's
+[32:42.64] not something we say because it's like
+[32:44.64] makes us sound you know like buzzworthy
+[32:51.04] it is actually the need right and you
+[32:54.16] know All the founders in the company
+[32:55.52] come from smallme background. So we know
+[32:58.24] key this is important. I think we don't
+[33:01.12] need to be explained. We we know that
+[33:02.80] right from from our own experience
+[33:04.56] because we saw thatmemes we saw the
+[33:06.40] topline bottom line thing when we're
+[33:07.60] growing up.
+[33:08.32] >> Yeah.
+[33:10.08] You can sell any software to them they
+[33:12.00] will not pay.
+[33:13.76] >> So knowing that is important right in
+[33:15.68] your bones otherwise.
+[33:17.60] >> Yeah. No, I also like the fact I think
+[33:19.20] in one of your past interviews you
+[33:20.48] mentioned that
+[33:22.56] you wanted to do something that also
+[33:23.76] makes a difference and I think this
+[33:25.20] genuinely stands for it and I think the
+[33:27.12] best form of service is to actually
+[33:28.40] empower others who are anyway doing
+[33:30.24] business. Our goal is to create 1
+[33:32.64] million profitable businesses.
+[33:34.48] >> That's amazing.
+[33:35.20] >> Right. Today we have short of 2 lakh 170
+[33:37.76] 180,000. Right. And they're all
+[33:39.12] profitable. Like I said, our businesses
+[33:40.32] are not the
+[33:41.20] >> Yeah.
+[33:42.00] >> They're lifestyle businesses, right?
+[33:43.60] Which is how people learn their earn
+[33:45.28] their livelihoods, right?
+[33:47.92] >> Like less than 5% less than 10% are VC
+[33:50.16] backed easily easily.
+[33:57.12] scale but I'm saying if you if you took
+[33:59.36] the volume let's say how much of your
+[34:01.36] volume is VC backed
+[34:05.52] >> get it margin
+[34:08.88] it's opposite
+[34:10.16] >> yeah fair enough
+[34:12.88] here is on the quick commerce piece
+[34:14.24] right like so 40 billion is broadly
+[34:16.72] e-commerce GMV across like sort of 90
+[34:19.52] billionart is 40 yeah so e-commerce GMV
+[34:28.00] 80 90 billion 70
+[34:30.88] dependency depends on how you cut it
+[34:32.24] also.
+[34:32.64] >> I was just extrapolating quick to quick
+[34:34.96] commerce will now create 1020 uh billion
+[34:37.36] in UGMB platform control. How does that
+[34:41.12] that get just tell me how
+[34:43.44] >> we do the same thing. So basically look
+[34:44.96] for us very simple delivery time. No,
+[34:48.72] I'm saying the way we got 4 day delivery
+[34:50.80] to 1 day delivery or two day delivery,
+[34:52.56] we are already doing the same thing to
+[34:54.48] bring it to couple of hours and same
+[34:56.48] day, right? So, we are going heavy on
+[34:58.32] enabling brands to do same day, next day
+[35:01.12] in a big way.
+[35:02.56] >> We have launched a hyper local service
+[35:04.08] for 30 minute, 10 minute, 15 minute
+[35:05.76] depending on distance called ship pocket
+[35:07.76] quick right both sides we are making
+[35:09.84] good progress and it is for for example
+[35:12.64] brands like right or uh Sadhar meat shop
+[35:15.76] or Vijaya and Hyderabad. So there's
+[35:17.28] these guys who are saying look I don't
+[35:18.96] want to get disintimidated by the quick
+[35:22.88] commerce marketplaces
+[35:24.32] >> correct
+[35:24.72] >> right so I need to give my c it's the
+[35:27.12] same story we saw this 5 years ago
+[35:29.04] >> with the other two-day phenomena we're
+[35:31.36] seeing it again with the 4hour phenomena
+[35:33.12] let me put out that way
+[35:34.24] >> yeah right we'll do the infrastructure
+[35:36.96] we'll get the dark store network we'll
+[35:38.72] we're putting the h we're putting the
+[35:40.00] fleets as we speak and like we'll keep
+[35:42.00] doing this right and that's why I think
+[35:43.68] for the way our business is designed
+[35:45.84] right We will always be current because
+[35:48.64] we don't actually have to build the
+[35:50.48] actual service. The manufacturing of the
+[35:52.72] service logistics
+[35:54.08] >> will be done by the market for the
+[35:55.92] market.
+[35:56.72] >> My job is to bring the right guys there
+[35:59.68] all all the guys there hook them onto my
+[36:02.08] templated API, my quality standards, my
+[36:04.56] data in and out, my pricing,
+[36:06.00] commercials, stitch it up into a
+[36:07.68] service, build the interface, connect it
+[36:09.36] into where it needs to be connected and
+[36:10.64] then go back to my merchants, right? So
+[36:12.72] if new trend comes in suppose live
+[36:14.32] commerce becomes big and that needs
+[36:16.00] something okay let's orchestrate. So as
+[36:18.00] orchestrators it's a very exciting
+[36:19.60] business because you can never get bored
+[36:21.84] in you have to build the infrastructure
+[36:25.68] infra
+[36:27.92] gets the more you build the easier it
+[36:31.12] becomes
+[36:31.68] >> network effects because it becomes
+[36:34.48] easier and easier to wire on more and
+[36:36.32] more and more right natural efficiency
+[36:39.04] curve to bring more supply right I mean
+[36:42.00] the first 10 suppliers were 10x harder
+[36:45.68] than the next 10 I mean that's the way
+[36:48.16] flywheel kicks in kicks in suppliers
+[36:49.76] become more amenable
+[36:51.76] that getting business from you I'll also
+[36:53.36] come
+[36:54.00] >> right the same thing we saw play out in
+[36:55.52] our capital business as we got lenders
+[36:57.92] you know in our payments like whatever
+[36:59.44] checkout business as we got uh so I
+[37:01.28] think it's it's it's it's a playbook
+[37:03.76] >> so are you seeing your vendors so as an
+[37:05.68] aggregation platform are your logics
+[37:07.44] logistics providers already doing like a
+[37:09.76] lot of quick deliveries
+[37:11.60] >> so actually unlike the uh unlike the
+[37:14.64] playbook for couer both in crossber
+[37:18.80] and in hyperlocal and quick it is a
+[37:21.04] little different because here we found
+[37:23.04] that the problem was not being solved.
+[37:25.36] So our here's how we operate right we go
+[37:27.60] in thinking this is a problem for a
+[37:29.12] merchant how can I solve it the best
+[37:31.44] right and then we look at okay are there
+[37:33.52] ecosystem solutions available are they
+[37:35.68] willing to work with us will that solve
+[37:37.28] their problem okay six on 10 7 on 10 to
+[37:39.28] begin with good enough let's start then
+[37:41.52] we push it to 8 on 10 9 on 10 sometimes
+[37:43.76] we find that there is no solution
+[37:45.52] available right two choices either you
+[37:47.52] leave it or you solve it
+[37:48.64] >> build it yourself
+[37:49.12] >> we always build it
+[37:50.32] >> right and sometimes it looks like but
+[37:52.08] you said your platform yeah but I'm
+[37:53.52] saying look if this is not going to get
+[37:54.64] solved Like for example when we built
+[37:56.08] the warehousing network for us it was a
+[37:58.32] big step to say okay are we going to now
+[37:59.92] work like are we going to see the
+[38:01.36] packets now
+[38:02.24] >> cuz up until then it was purely just
+[38:03.76] through APIs and digital technology AI
+[38:05.76] right we using
+[38:06.64] >> catching the packets they were enabling
+[38:08.08] it
+[38:08.32] >> but we realized okay someone's going to
+[38:10.24] do it like someone needs to do it
+[38:12.08] >> because this whole elastic warehousing
+[38:14.08] community warehousing but didn't exist
+[38:16.32] >> for merchants we the first company to do
+[38:18.16] it actually to say one of the first
+[38:19.44] companies to say look you can come in
+[38:21.44] with only $100 orders a month and you
+[38:23.44] get like uh marketplace style
+[38:26.00] >> almost like fulfilled services. Yes, it
+[38:27.52] is called ship rocket fulfillment,
+[38:28.72] right? We keep your goods, import your
+[38:30.08] order from marketplace or Shopify,
+[38:31.60] wherever you get the order, we pack it,
+[38:33.44] dispatch it, track it. If you return
+[38:35.60] return, we open it up, QC it, put back
+[38:37.84] on the shelf, manage the inventory. It's
+[38:39.44] a big service, right?
+[38:40.48] >> Amazing.
+[38:41.36] >> So, I think we'll keep on kind of uh uh
+[38:44.64] you know, keep on at it. And quick
+[38:47.12] commerce is I think is a great
+[38:48.40] convenience, right? I think it's
+[38:50.48] consumers
+[38:52.24] right in many many ways.
+[38:54.64] Like I said, it'll become a it'll become
+[38:56.32] a habit. Brands will want to do it.
+[38:58.48] Brands are already waking up giving us
+[39:00.00] calls saying
+[39:03.12] this is what is needed. Our merchants
+[39:05.04] build our stack. By the way, I'm not
+[39:07.12] saying it like some some Gan statement.
+[39:09.36] We keep meeting them. Huh.
+[39:12.40] And they tell us now see they are not
+[39:13.92] technologists but they know their
+[39:15.60] business. We don't know their business.
+[39:17.52] Feature feature request and we keep
+[39:20.32] meeting our teams keep meeting them.
+[39:22.72] We are very tight. community little bit
+[39:24.56] right and
+[39:28.32] you know this company in the US has
+[39:30.00] launched I wish
+[39:32.08] a lot of the insight comes from the
+[39:34.32] ground it's not us
+[39:35.84] >> I will not take the credit for that
+[39:37.20] because they tell us
+[39:39.76] right and that's how we go back to the
+[39:41.52] whiteboard people asking for it
+[39:43.60] >> solid solid I think this is very very
+[39:45.68] helpful I think this is a great great
+[39:48.16] understanding of the business the macros
+[39:50.32] and how you think of like different
+[39:52.00] parts of it on the AI front, right? I
+[39:54.32] remember like when we were traveling and
+[39:56.32] I asked you and I was really like glad
+[39:58.88] that you had very specific insights
+[40:03.52] before coming in you told told me that
+[40:05.36] you know on your phone you're tinkering
+[40:06.72] everybody's building talk to us about
+[40:08.40] like I think what's very interesting in
+[40:09.84] your case is also across a span of time
+[40:12.08] technological shifts trend based shifts
+[40:14.80] way on this technological shift how do
+[40:17.12] you adapt like what is your role again
+[40:19.20] to percolate amongst the team how do you
+[40:21.20] use it what is what are you on the
+[40:23.28] customer side as well as internally.
+[40:25.04] >> No, no, topic very close to my heart,
+[40:27.04] very current uh and I think it's it's
+[40:29.44] something that everybody should hear and
+[40:30.96] and and learn because honestly I keep
+[40:34.24] telling people that this is an internet
+[40:35.60] moment uh internet and mobile moment
+[40:37.76] together
+[40:38.48] >> you know pre-200s
+[40:41.68] as this whole
+[40:43.60] started to you know manifest in my head.
+[40:45.84] I saw the first GP3 launch 18 month 19
+[40:47.92] months ago and I think it was clear to
+[40:50.40] me this is this is new
+[40:54.88] you know you had to train models and you
+[40:56.80] were in control of the models neural
+[40:58.32] networks but still you kind of knew the
+[41:00.40] outcomes within a range now you had a
+[41:03.12] machine that you can't predict the
+[41:04.64] outcome the builder can't predict the
+[41:06.24] outcome anymore it has its own thinking
+[41:09.20] and that to me was a big breakthrough
+[41:11.28] this can and it understands natural
+[41:12.64] language
+[41:13.60] >> basically and that can change a lot.
+[41:16.24] >> Yeah.
+[41:16.48] >> In a country like India where I struggle
+[41:18.16] with awareness. I struggle with how do I
+[41:20.24] explain to this person
+[41:21.92] >> businesses struggle with communicating
+[41:23.28] to their consumers. B2B companies
+[41:25.28] struggle with communicating to their
+[41:26.32] consumer their customers. So your
+[41:28.24] communication itself as a country is is
+[41:30.72] is broken in India. It's not digitized.
+[41:33.36] It's unstructured. It's hundreds of
+[41:34.88] languages, dialects, tones, cultural
+[41:37.92] aspects.
+[41:40.32] you'll understand
+[41:44.16] it can make it structured digitally and
+[41:46.72] smartly to actually India can really
+[41:49.12] benefit if you ask me so anyway so that
+[41:50.88] was the kind of thing and pre-2000s
+[41:54.40] US market look at the top companies
+[41:56.08] there they were all your oil
+[42:00.00] retail right tech Oracle Salesforce
+[42:02.88] right not Google Facebook
+[42:04.32] >> right
+[42:05.04] >> fast forward to 2020 it's all filled
+[42:07.28] with internet mobile most of Microsoft,
+[42:09.92] Apple.
+[42:10.88] >> Then come 2024 or five, you have Nvidia
+[42:14.72] >> as the first AI company showing up which
+[42:18.32] is a listed company. You've got open
+[42:19.76] I've got now bunch of them coming.
+[42:20.96] Right.
+[42:21.52] >> The point I'm making is it is a it is a
+[42:24.00] once in a generation opportunity because
+[42:25.92] it can change how everything is done
+[42:29.68] like internet and mobile. So it's not AI
+[42:32.32] what do you mean by that? It's like it's
+[42:34.00] a way to do things. It's not the thing
+[42:35.92] itself, right? It's a new toolkit sort
+[42:37.92] of a and the the the reason it's
+[42:39.84] challenging is because it's every hour
+[42:41.28] it's changing
+[42:42.64] >> you know it's it's happening so fast
+[42:44.56] that it's like kind of it's a dizzy it's
+[42:46.80] overwhelming okay standard what will
+[42:49.92] stay today you do this tomorrow you
+[42:51.28] could die you build a feature of launch
+[42:53.20] something it's finished right so how do
+[42:54.40] you how do you compete or what do you do
+[42:56.16] in that world so what we told ourselves
+[42:57.84] is let us learn what the hell this is
+[43:00.88] right
+[43:01.12] >> sure and we said we're going to build
+[43:02.80] we're going to learn AI for ship rocket
+[43:05.28] starting with me because if I don't
+[43:07.36] learn, there is no way I can expect my
+[43:08.80] team to learn. And if it truly is such a
+[43:10.48] big thing, uh let me check it out.
+[43:12.72] >> Yeah,
+[43:13.04] >> maybe it's not
+[43:14.08] >> and maybe I'm just being told it is.
+[43:15.68] Right. Right.
+[43:16.24] >> So,
+[43:18.96] you know, we start to kind of put effort
+[43:20.56] behind it. Um and we broke up the
+[43:23.04] strategy into saying look, we'll do AI
+[43:24.48] for shiprocket first, which is our c our
+[43:27.44] team members, our processes, blah blah
+[43:29.28] blah. Then we'll do AI for shiprocket
+[43:31.68] customers, which is launching products
+[43:33.04] for customers. And finally we want to do
+[43:34.88] AI for India because we think this
+[43:36.40] opportunity is big enough. We are a
+[43:38.40] massive distribution company. We have
+[43:40.08] massive data. Uh and in AI the winners
+[43:44.08] my prediction either you are owner of
+[43:47.12] massive data
+[43:48.40] >> or massive distribution. Absolutely
+[43:50.32] >> or ideally both
+[43:51.52] >> correct
+[43:52.00] >> because it's not the massive tech
+[43:53.60] because what that is important but I
+[43:55.92] don't think that will win right
+[43:57.12] >> that's democratized
+[43:59.12] >> correct
+[44:01.28] every time rightes
+[44:11.92] to be honest with you in the end and
+[44:13.44] they should be given prizes to open
+[44:15.04] their IP for the world but
+[44:18.56] distribution
+[44:20.32] >> and I think when I when I think about
+[44:22.88] those two things I think the whole AI
+[44:24.72] for India thing is something we should
+[44:26.88] and we are and I'll talk about it as
+[44:28.64] well. So we started with this
+[44:29.84] three-prong thinking a year ago and then
+[44:32.56] started focusing on AI for shiprocket
+[44:34.88] very heavily first all the way from
+[44:37.20] first building a team right so we've got
+[44:38.96] a mini team we call a shiprocket AI labs
+[44:41.20] right it's a team of 15 20 people which
+[44:43.52] are dedicated to the AI initiative
+[44:46.16] >> everything from figuring out what is out
+[44:48.64] there to figuring out what needs to be
+[44:52.00] fixed right where are the parts of the
+[44:54.24] company which can be uh you know which
+[44:56.08] can 10x in velocity or 10x in customer
+[44:58.88] experience or 10x in uh delivery in
+[45:01.92] terms of times or or or something like
+[45:03.92] that right and we keep going like
+[45:05.52] there's a charter to keep go keep going
+[45:07.60] after different uh functions of diff I
+[45:10.48] mean different modules of different
+[45:11.52] functions and then start to implement
+[45:13.28] this as as at a central level so there's
+[45:15.20] discovery of problem discovery of
+[45:16.80] potential solution then a different team
+[45:18.24] is doing the implementation and this is
+[45:19.52] going on like this is happening today
+[45:21.28] >> for the last 3 months uh we've gone
+[45:23.60] department by department our engineering
+[45:25.52] team is getting completely uh revamped
+[45:27.28] in terms processes in terms of how do
+[45:29.36] they deploy, how do they code, how do
+[45:30.88] they which tools the whole thing has
+[45:32.56] gotten ripped and replaced right in the
+[45:34.16] last 3 four months. So can you double
+[45:36.16] click on the team itself like are these
+[45:37.92] new hires? Are these existing hires? Is
+[45:40.00] this like a developer archetype? How
+[45:42.00] have you gone about curating the
+[45:43.28] >> Oh, you mean the central see the AI labs
+[45:45.44] team is like a model flat. I keep
+[45:47.44] explaining to my team as well.
+[45:50.88] >> Correct.
+[45:52.72] This is a temporary team for one year
+[45:54.32] because I can't do it with you know the
+[45:56.24] whole workforce. It'll get diluted. So I
+[45:58.32] need certain experiment or feroscope.
+[46:00.56] >> Like I said these are role models or
+[46:02.24] model flat.
+[46:04.48] Mhm.
+[46:04.80] >> So it's a mixture of product people,
+[46:06.32] mixture of engineers, DS and ML guys,
+[46:08.88] right? Uh
+[46:09.92] >> and existing talent.
+[46:11.04] >> Existing all existing. No, nobody knew
+[46:12.72] there is no there is no talent. Correct.
+[46:15.20] Valley
+[46:21.84] existing talent, right? And they are
+[46:23.28] like these are the guys who
+[46:24.40] >> and their learning curve is strong.
+[46:26.08] >> So the way we picked them was people who
+[46:28.16] were organically already vibe coding
+[46:31.20] something something you know we we kind
+[46:32.72] of picked up signals. Amazing
+[46:34.16] >> and mentally we kept on recruiting. So I
+[46:36.40] you know I got one prahad who is who who
+[46:39.28] leads product but also runs data science
+[46:41.36] >> for many years. So he's been sort of
+[46:43.60] actually he was our our literally our
+[46:45.04] first employee right.
+[46:46.32] >> Wow.
+[46:46.72] >> Uh literally like second week into
+[46:49.12] office or whatever and he's been you
+[46:50.56] know there and he heads data science for
+[46:51.84] us. So he had been kind of doing this
+[46:53.68] for a long time on the side you know
+[46:56.08] with me explore etc. And he then became
+[46:58.80] the recruiting pipeline to say okay you
+[47:00.24] know what we should get this guy this
+[47:01.20] guy
+[47:02.80] we screen for the people who are
+[47:04.40] enthusiast because see I cannot make you
+[47:06.16] fall in love with it. I can put a
+[47:08.08] platform to give you the way to do it
+[47:09.84] and the early uh evangelists have to be
+[47:12.64] the people who are losing sleep over it
+[47:14.40] right
+[47:17.52] whatever word is more understandable
+[47:20.56] right that is what we look for curiosity
+[47:22.16] right that's what we looked for and in
+[47:23.92] different functions so we got them
+[47:25.12] together I actually think that jobs will
+[47:27.36] also start shifting a lot
+[47:29.28] >> because like today we are experimenting
+[47:32.08] with business users vibe coding the
+[47:34.64] prototype first rather than giving a BRD
+[47:38.40] >> because a BRD goes through iteration
+[47:40.08] Chinese whispers loses quality then goes
+[47:41.92] to PRD again iteration loses quality by
+[47:44.24] the time it gets built the business
+[47:47.28] it's a very long loop
+[47:52.00] then you give it to the product guy
+[47:55.60] by that time it goes to the engineering
+[47:56.96] team already it's in good shape right he
+[47:59.12] knows what to do so hopefully the
+[48:00.80] communication cap goes so we are
+[48:02.08] experimenting right how roles evolve uh
+[48:04.80] and so on so this is all for within
+[48:06.64] internal.
+[48:07.12] >> Yeah, internal. Um, the last thing I
+[48:09.68] will say is AI literacy. This is the
+[48:11.04] easiest one, right? Which I think for
+[48:12.80] listeners,
+[48:14.96] right, which is basically task your
+[48:17.28] course of 10 things, you know, basics,
+[48:19.60] things like using uh things like relay,
+[48:22.24] make.com or NA10, which are agent
+[48:24.56] builders, very very easy, very
+[48:26.80] productive, anybody can use it. Email
+[48:28.88] automation, basic stuff like that
+[48:31.76] because again personalized software,
+[48:33.12] right? This is my reason for saying
+[48:34.32] that. uh obviously all the LLMs
+[48:37.44] or chatgbd is fine coding again I think
+[48:39.76] the engineers are smart I will not tell
+[48:41.20] people but obviously cursor or whatever
+[48:43.20] as a stack right and then overall
+[48:45.28] training of we okay we also do this
+[48:46.96] thing of how I AI uh again you know
+[48:49.44] which is a it's used to be a hashtag
+[48:51.44] that was trending at some point and it
+[48:53.36] is about showing people that look I used
+[48:55.28] this used this and I did this right so
+[48:56.96] we started this in the company where
+[48:58.32] people are posting now on our common
+[49:00.08] slack where people are saying oh you
+[49:02.00] know what I built this leaderboard for
+[49:03.60] my any uh uh uh contest that I'm doing
+[49:06.48] with my sales team. Great. Earlier, you
+[49:09.20] know what they would do? They would not
+[49:10.24] do it
+[49:10.96] >> because they couldn't
+[49:18.72] correct.
+[49:21.68] Correct.
+[49:23.28] I'm just saying all of that becomes
+[49:25.04] quite amazing, right? It becomes
+[49:26.32] decentralized in many ways. Good people
+[49:28.64] can really kill it, really, really
+[49:30.40] thrive. So I think AI literacy itself
+[49:32.72] right to do forced workshops etc. I
+[49:35.68] think it is it is very needed today
+[49:38.00] because AI if you teach somebody how to
+[49:40.64] fish
+[49:42.16] once you know what's possible
+[49:44.00] >> correct no one can tell you how to do
+[49:46.56] your job with AI well by the way only
+[49:48.40] you can tell yourself
+[49:49.44] >> but people we can expose people to say
+[49:51.44] look this is possible right
+[49:52.64] >> once you taste the magic and the
+[49:54.72] opportunity
+[49:56.40] it's crazy
+[49:56.88] >> and I really I really feel that you know
+[49:58.96] everybody I meet by the way I try and
+[50:01.28] somehow convince them pause you should
+[50:02.88] do it because this is the future right
+[50:04.96] spend the minute it doesn't take long.
+[50:06.72] something on lovable you know it's
+[50:08.72] >> you know what is possible you know
+[50:10.00] what's possible
+[50:11.20] >> u so that's a huge part and then
+[50:12.96] obviously for for our merchants we we
+[50:14.96] continuously build products you know we
+[50:16.32] are building um voice I think is a big
+[50:18.72] one for India I think it will be in the
+[50:20.72] coming years and we are a voice first
+[50:22.24] country um I think AI voice is extremely
+[50:24.72] important of course AI brain is more
+[50:26.48] important but the voice is the way the
+[50:28.64] communication can like I said
+[50:30.32] unstructured structured India massive
+[50:34.56] PNR status you know think of a farmer
+[50:36.96] calling a number
+[50:42.72] right information
+[50:45.28] right there's like people who
+[50:49.60] information right this is easy man can
+[50:51.60] be self-s serve
+[50:54.08] right but with AI you can do it now so I
+[50:56.16] think there is all that stuff happening
+[50:57.76] on the macro from a shiprocket
+[51:00.24] perspective I think the data that we
+[51:02.08] have the insights that we have we have
+[51:04.16] launched our co-pilot right? Uh in its
+[51:06.64] uh early beta over the last few months
+[51:08.96] we are making it voice enabled. We are
+[51:10.96] pulling a lot more of the data there. So
+[51:13.20] imagine the co-pilot in the coming year
+[51:15.52] few quarters as a place where you could
+[51:18.08] have your tally data, your Gmail data,
+[51:20.72] your calendar data, your razor pay data,
+[51:23.04] Google analytics data, Shopify,
+[51:24.48] shiprocket and let's say Amazon blinket
+[51:27.04] in one place and shiprocket's benchmark
+[51:30.56] data for the platform
+[51:32.16] >> now and you could talk to it in any
+[51:33.68] language as a vision. Right?
+[51:35.52] >> Correct.
+[51:36.00] >> Suppose you had this as a merchant. You
+[51:38.08] could talk to it all day long saying
+[51:47.84] there's so much you can do right and now
+[51:51.28] the data is already there but ability to
+[51:52.80] talk to each other etc has gone up
+[51:54.72] significantly intelligence rightly so we
+[51:58.64] are trying to build things like that
+[52:00.00] obviously then we are building you know
+[52:03.20] in our core shipping automation itself
+[52:05.68] whether for example when deliveries fail
+[52:07.36] at last mile right we are doing
+[52:08.96] automated calling uh through AI now
+[52:11.60] right to the consumer
+[52:12.96] >> correct
+[52:13.20] >> right and that is a smarter call than a
+[52:14.96] human sad to say but now humans are more
+[52:18.00] robots than
+[52:19.04] >> correctly
+[52:19.92] >> than than the robot
+[52:20.96] >> this is more efficient better cost and
+[52:22.72] like
+[52:23.04] >> and it's more knowledgeable so for
+[52:24.16] example if the you know if you do a a
+[52:27.60] failed delivery call and you know you
+[52:29.60] ask one of my call center agents
+[52:35.44] it's not his k to talk about delivery,
+[52:38.16] right? It come down to sell you the
+[52:39.28] product. Correct.
+[52:39.84] >> AI will.
+[52:40.64] >> Correct.
+[52:41.04] >> It can look up. It can just look up the
+[52:43.20] description.
+[52:44.24] >> If it's in its uh SOP, it will it will
+[52:46.32] do it, right?
+[52:46.80] >> Absolutely.
+[52:47.20] >> And quality goes up because you fix you
+[52:49.60] have to only do it once. You don't have
+[52:50.80] to
+[52:51.60] >> there's no aberration, right? In the
+[52:53.44] quality. So those are some very very
+[52:55.36] obvious kind of builds that have to go
+[52:56.96] out there, right? Abandoned card,
+[52:59.44] >> right?
+[53:00.24] >> Inquiries field, customer care, correct?
+[53:04.16] Or you can put a chat pot and so on
+[53:06.32] support though I think obviously obvious
+[53:08.16] we are slowly building some of these
+[53:09.44] things out
+[53:10.08] >> does that work with merchants also or is
+[53:11.84] a merchant still expecting
+[53:14.64] I want a human on the other side
+[53:15.92] >> not at all
+[53:16.48] >> not at all that adoption is high
+[53:18.64] >> yeah these products are not there but
+[53:20.16] I'm saying as they start rolling out
+[53:22.64] >> my gut is key people will take it there
+[53:24.88] like I said man our entrepreneurs they
+[53:27.44] are they tell us right
+[53:30.80] >> they give us the ideas many of the ideas
+[53:32.72] have come from the seller community you
+[53:35.44] know my other partner used to do this
+[53:37.52] they did this it worked out
+[53:39.60] >> right and that's how we come to know
+[53:42.96] things like that so I think uh my gut is
+[53:45.76] key people are already asking for it
+[53:47.92] right similarly on when we doing our
+[53:50.08] marketing stack right a lot of the video
+[53:52.00] creatives uh are being now done by uh by
+[53:54.64] AI right uh we did a full full ad
+[53:57.28] actually recently for a brand called
+[53:58.64] Noki uh at Shiver we we showed it as
+[54:01.28] well in the launch uh
+[54:02.80] >> I think I saw a Yeah.
+[54:03.92] >> Yeah. And then there is the opportunity
+[54:05.76] of doing hyperpersonalization for
+[54:07.44] consumers as well, right? So think about
+[54:08.88] it. One of the things we'll end up
+[54:10.56] launching at some point is if Jira
+[54:13.92] landed on a page selling this bottle or
+[54:16.96] Sahil landed, what if the pages were
+[54:19.20] entirely different and generated on the
+[54:20.96] fly, right?
+[54:27.36] For example, today this is not possible
+[54:28.96] to do this levelization at that scale
+[54:31.68] will be possible. you're saying where
+[54:33.04] you can even like optimize pages for us
+[54:37.52] or discovery. We we did a demo of
+[54:39.44] something called personal shopper on our
+[54:41.52] on ship and basically you could have a
+[54:44.00] 24/7 salesman sitting on your Shopify
+[54:46.40] website or your Insta WhatsApp bot who
+[54:48.96] could give a discount basis rules who
+[54:51.04] could gify a little bit you know could
+[54:52.72] answer queries who could sell the
+[54:54.40] product to you and so on and we showed
+[54:56.00] the demo as well. So I think there's
+[54:57.36] lots of use cases of commerce right
+[55:00.72] >> labs
+[55:02.24] >> right because we we don't know what
+[55:03.44] happens right but some of but some of
+[55:05.76] this is like we can see early science
+[55:07.84] key so that is the whole uh AI for ship
+[55:11.28] rocket customers uh prong and then the
+[55:13.44] third prong is AI for India on that we
+[55:16.56] have recently launched a partnership
+[55:18.64] with ultraafe which is a uh US-based
+[55:22.08] sovereign and modular uh LLM generation
+[55:26.40] company right so they work with
+[55:27.44] enterprises to build custom SLMs SEM and
+[55:31.12] LLM for them and it's agentic so it's
+[55:33.60] able to do workflow management and is
+[55:35.52] multimodal so it can do you know file
+[55:37.84] image voice text whatever um so we
+[55:40.48] recently did a partnership with them as
+[55:41.76] a JV launched shuna in India shun.ai AI
+[55:44.64] which is India's own sovereign model.
+[55:46.72] It's hosted here. It's trained on Indian
+[55:48.72] data largely um and more than that it's
+[55:52.48] got the ability to solve point use cases
+[55:55.12] because of the underlying technology
+[55:56.56] architecture. So I think formemes we'll
+[55:59.28] end up launching a bunch of agents in
+[56:01.28] the coming you know quarters and and and
+[56:03.28] months where it'll be everything from
+[56:05.52] you know GST filing to check my you know
+[56:08.88] outstanding balance for customer ABCD.
+[56:10.72] So things like that right will just come
+[56:12.16] natively into it. And for enterprises we
+[56:14.72] can do things like you know uh knowledge
+[56:16.88] management. So you'll be very like we'll
+[56:18.72] be very scared to give our G drive and
+[56:21.52] uh email to to anything outside of my my
+[56:24.80] my you know my environment right and in
+[56:27.92] those cases I think enterprises can win
+[56:29.36] because we can literally host it in your
+[56:31.60] data center. It's fully encrypted. It's
+[56:33.92] private. It's not open source, right? It
+[56:36.00] can be customized to your need and it
+[56:37.44] will cost a lot less because when you
+[56:39.68] build a layer on top of the existing
+[56:41.60] LLMs, whether paid or open source, you
+[56:43.76] are in fact firing up a larger machine
+[56:46.16] and then picking off something. So it's
+[56:48.24] not only inaccurate, it's more
+[56:49.60] expensive, doesn't scale as well. But if
+[56:51.92] you do a customuilt engine so to speak,
+[56:54.24] right?
+[56:57.68] It's like that, right? That is the
+[56:59.20] ability that comes about. So again, it's
+[57:01.68] it's very very early for a lot of
+[57:03.44] things. AI but I think it's a very
+[57:05.76] important you know it's it's already
+[57:07.76] mainstream. I don't even I don't even
+[57:09.36] think we should argue that AI is coming.
+[57:10.88] Yes. Here man it's there.
+[57:13.52] It's high time that we just
+[57:15.04] >> adopt it.
+[57:15.52] >> We need to adopt it like ASAP now.
+[57:17.76] >> Yeah. No
+[57:18.48] >> this is amazing. I remember like when we
+[57:20.48] were discussing about it in that in New
+[57:22.56] York as well. You had some great
+[57:23.92] thoughts and this is a great blueprint
+[57:25.60] because I think I don't know if enough
+[57:27.20] CEOs in India are talking about this. I
+[57:29.04] think so a lot of people are uh you know
+[57:31.04] I had met so I remember I met you in
+[57:33.76] April
+[57:34.32] >> in the US I had gone in March so one of
+[57:37.12] my investors is March capital they run
+[57:38.88] this event every year there I was
+[57:41.04] meeting a lot of the US CEOs
+[57:42.64] >> and you know people were discussing
+[57:44.56] plans on saying you know have you guys
+[57:46.56] figured out you know how you build your
+[57:48.64] central team and who are you hiring in
+[57:50.64] that and kind of questions you asking me
+[57:52.16] today right
+[57:52.88] >> and I was like I haven't I haven't
+[57:54.64] even thought of any of this right I'm
+[57:55.84] way behind I'm still learning
+[57:57.52] >> I'm still learning the tools So this is
+[57:59.44] like so I think that was like a big I
+[58:03.28] think a big big for moment light bulb.
+[58:07.84] So that that exposure was good though
+[58:09.60] cuz I realized that uh in the valley
+[58:11.84] people obviously get exposed to this a
+[58:13.52] lot more cuz this is all coming from
+[58:14.80] there.
+[58:15.12] >> Yeah.
+[58:15.76] >> It's very tactical also quantum of
+[58:18.48] production.
+[58:19.04] >> That's what I'm saying. is no longer
+[58:23.76] a lot of those things actually help to
+[58:25.60] say okay
+[58:27.84] exactly
+[58:30.24] as many CEOs are not talking about but
+[58:31.84] this is great as I'm maybe maybe
+[58:35.92] internally I think you were a great
+[58:37.92] example that
+[58:40.72] right a lot of people I'm speaking to
+[58:43.36] that's why I told you see Indians that
+[58:44.96] way we are hustlers right
+[58:47.92] natural ROI magnets opportunity
+[58:54.00] highest number of users correct correct
+[58:56.72] of course I don't paid but I think I'm
+[58:58.48] not stereotyping
+[59:02.48] you if a young founder is actually as
+[59:05.12] you were speaking I was thinking back
+[59:06.64] did I ever put something out actually I
+[59:08.40] have not put anything out there I mean
+[59:09.92] we launching stuff but so you're saying
+[59:12.64] it is important to maybe knowledge I
+[59:16.16] think that percolates the ecosystem are
+[59:18.00] you also like Is there a broad sense for
+[59:20.32] every incremental dollar of revenue I
+[59:22.32] have to hire less
+[59:27.84] cost okaycesses
+[59:36.32] but what I'm saying is you know we call
+[59:38.16] it the iron man philosophy or iron woman
+[59:39.84] philosophy to say look give them the
+[59:42.00] tools to become iron men and women so
+[59:43.68] that they can perform 10x right
+[59:45.60] >> because see we are you know we we are
+[59:47.68] not uh as a business right now trying to
+[59:51.44] trying to maximize our profit. We're
+[59:52.96] trying to maximize our growth, right? So
+[59:55.04] if our team members suddenly get triple
+[59:57.60] the bandwidth let's say
+[59:58.80] >> correct
+[59:59.12] >> 10x is let's say you know 50% more
+[60:01.28] bandwidth right
+[60:02.88] >> uh they can do a lot more they can build
+[60:04.80] a lot more they can launch a lot more
+[60:05.92] test a lot more I'm excited about that
+[60:08.00] to say okay every engineer every person
+[60:09.68] in HR finance marketing okay I'll give
+[60:12.56] an example right for our marketing team
+[60:14.24] our head of marketing Kotala has built a
+[60:17.12] something very simple and people can try
+[60:18.72] this built a custom GPD which is nothing
+[60:21.28] bad but you open chat GPD you make a new
+[60:23.12] custom GPD and you and he's trained it
+[60:25.36] with a couple of years worth of uh
+[60:27.28] LinkedIn posts, Facebook posts, emails.
+[60:29.68] So basically all our copy ads
+[60:33.12] uh the shiprocket way right which means
+[60:34.88] this the the tone how we speak and he's
+[60:37.60] built it in a way where now we don't
+[60:39.60] need people to write copy and if I'm
+[60:42.40] building a Google ad or if I'm putting a
+[60:43.92] LinkedIn post or somebody else in the
+[60:45.36] leadership team is doing something or
+[60:46.80] the marketing team the CLM team is
+[60:48.24] writing email drips they all they don't
+[60:50.32] need to they don't need to use they have
+[60:51.76] to go to the bot and say I want to make
+[60:54.48] a Google ad for launching ship rocket
+[60:57.04] quick with a discount of 5% for example
+[60:59.44] Yeah,
+[60:59.84] >> the tone you can't go wrong
+[61:03.60] there.
+[61:06.32] There was a team and there was a back
+[61:07.76] and forth.
+[61:11.04] It's like some of this is very uh
+[61:12.96] >> low hanging,
+[61:14.08] >> very easy to implement also, right? Our
+[61:16.56] HR team is using uh something called I
+[61:19.36] think skill sync or something piloting
+[61:21.28] to do a AI interview. I did I I took
+[61:23.36] mine the other day. It's pretty good. I
+[61:24.72] kind of got into it.
+[61:25.84] >> I was pitching to the machine. Yeah,
+[61:27.12] there are a couple of Indian companies
+[61:28.32] also doing this. I think
+[61:30.80] so. I think
+[61:35.84] so. I think every leader today needs to
+[61:38.16] be spending the time is my request to
+[61:40.96] the community out there because it will
+[61:42.48] help you. It will pay off in many many
+[61:44.00] ways than we can all imagine today.
+[61:46.80] >> Awesome. I think this is incredible.
+[61:48.56] Again, very very tactical. I love it. Um
+[61:50.80] I want to now get to longevity just that
+[61:53.44] you know you spent so many years
+[61:55.12] building and you have this fire and now
+[61:57.44] IPO feels like a seminal moment that
+[61:59.12] everybody celebrates and that you're
+[62:00.48] approaching. Talk to us about that
+[62:02.00] mindset right like what does it mean to
+[62:03.44] build a company across like a decade and
+[62:05.44] more uh what keeps you going still and
+[62:08.00] in your business of course thankfully
+[62:09.60] there have been waves and you know
+[62:11.04] tailwind so I'm guessing it keeps you on
+[62:13.12] your toes but just internal motivation
+[62:15.36] softer aspects of entrepreneurship that
+[62:17.44] maybe you've not spoken before or want
+[62:19.04] to share would be really interesting
+[62:20.80] because if a young founder is watching
+[62:22.24] and seeing like you know you started
+[62:23.76] 2012 inflection was 2016 and now new
+[62:26.72] waves uh IPO will come up what keeps you
+[62:29.52] going
+[62:30.24] >> see I think It's uh it begins with what
+[62:32.32] why you start
+[62:33.68] >> right I think that's the most important
+[62:36.24] u aspect that will determine where
+[62:39.36] you'll go and it can change with time
+[62:40.64] too right but I'm saying what are you in
+[62:42.48] it for right and for us like when Gotham
+[62:45.52] and I started in 12 2012 we didn't know
+[62:48.48] we were a startup we said actually our
+[62:50.96] initial goal was the business goal
+[62:52.88] because we wanted to start a business
+[62:55.52] >> it didn't matter what and this was a one
+[62:57.36] >> unicorn was not an aspiration then
+[63:01.84] I'm serious.
+[63:02.56] >> Really?
+[63:03.04] >> Yeah. I mean, but in the sense that it
+[63:06.00] was not our goal. We said we're going to
+[63:07.92] build this product and we're going to
+[63:09.20] make some money, take it home, and we're
+[63:11.76] going to be our own owners, right? We
+[63:14.56] don't want to work for somebody else.
+[63:15.68] That's how it started. A year later, we
+[63:17.92] were like, "Oh we need the help."
+[63:19.12] Because, you know, that's the be
+[63:20.88] irrelevant. you know went to events and
+[63:23.12] I started noticing that there is a
+[63:24.48] there's a
+[63:25.12] >> ecosystem ecosystem so I think but but
+[63:28.24] because we started like that we had very
+[63:30.00] scarce capital uh we came from that sort
+[63:32.56] of da mindset I think we never like
+[63:35.84] people
+[63:40.32] it's my company why will I ever exit
+[63:42.56] >> right and I think
+[63:45.92] I I really don't think that you know and
+[63:47.44] if you put a goal and think in decades
+[63:49.36] and not in years then then it's
+[63:51.28] longevity But I'm not saying it's right
+[63:52.56] or wrong. People serial entrepreneurs
+[63:54.64] build, scale, exit, do it again two
+[63:56.88] times, four times, eight times. Uh, hats
+[63:58.96] off, right? That's kudos to them. But
+[64:01.52] it's not our DNA. It's not our like it's
+[64:03.36] not how we have done it. And we have,
+[64:05.52] but we've done it inside the company.
+[64:07.60] >> We've continued to kind of stay excited
+[64:10.08] as I said and it's very exciting because
+[64:11.92] in this platform approach
+[64:13.92] >> like I said there's always something to
+[64:15.28] do. There's never going to be nothing to
+[64:17.12] do, right? there's always going to be a
+[64:19.12] new segment of theme, a new problem to
+[64:21.36] solve, right? A new issue or a new
+[64:24.32] opportunity. There always going to be
+[64:25.92] something to do. And when we started
+[64:27.52] realizing that a few years ago, we
+[64:29.68] started realizing that this is a
+[64:31.20] business that needs to be immortalized,
+[64:33.52] right? This is not something that can
+[64:35.36] run privately and so on forever because
+[64:37.36] it's a embed business. It's an infra
+[64:38.80] business because utility, right, for
+[64:40.72] everyone. But you have to take a 10-year
+[64:42.48] view for that. The only way you keep a
+[64:44.80] 10ear view and everyone aligned is to is
+[64:47.52] to be public. And that's what I told
+[64:48.72] people that ultimately the right home
+[64:50.88] for this company is to be public because
+[64:52.32] it's not a it's not a part of something.
+[64:54.48] It is it is the something right where
+[64:56.88] other people will build on top.
+[64:58.80] >> Yeah.
+[64:59.12] >> That is the vision and is to do it
+[65:00.80] withmemes. We're very clear about that.
+[65:02.40] So I think we were clear about MSME. We
+[65:04.40] were clear about building long-term and
+[65:06.24] that's what kept us going. We just
+[65:07.44] didn't die. And I'm telling people lot
+[65:09.36] of people ask me
+[65:12.80] to
+[65:15.84] yeah that was going to be my next
+[65:16.96] question one more year
+[65:23.60] I think again
+[65:26.72] I think foundational
+[65:30.24] a lot of our value system came from
+[65:31.68] there and we learned the lessons early
+[65:34.24] >> so when we raise money or we kind of
+[65:36.24] start thinking big we had a very
+[65:39.60] grounded in our heads. We know what it
+[65:42.24] means to not have money, right? Uh and
+[65:45.68] the other thing is personal motivation,
+[65:48.16] right?
+[65:49.76] What do you have to look back to if you
+[65:52.16] don't do this will define
+[65:54.32] >> whether you will make it or not? Because
+[65:56.48] if you have nothing to look forward to
+[65:58.40] outside of this, if this is your only
+[66:00.08] option, which was a case for for us,
+[66:02.56] right?
+[66:03.36] >> Then you don't have an option. Just keep
+[66:04.48] it option. You will have to make it.
+[66:08.64] >> I know sounds very like philosophical
+[66:10.32] but I'm telling you when you head
+[66:13.68] don't have an option. You will find a
+[66:14.96] way. Maybe your business will be three
+[66:16.96] degrees different like ours but but
+[66:19.20] you'll find a way.
+[66:20.16] >> Yeah.
+[66:20.40] >> You'll find a way. I think it does come
+[66:21.84] from that. It's this understated uh
+[66:24.56] fact. A lot of people don't appreciate
+[66:26.16] this founder. What is the what is the
+[66:28.80] call back?
+[66:30.16] >> How badly do you want it? That's what
+[66:31.60] how badly do you want it? M
+[66:33.36] >> because if you really want it and you
+[66:35.28] can sustain it and you're patient to I
+[66:38.48] see no reason why it can't happen.
+[66:41.12] >> That's amazing. I love that. Um but it's
+[66:44.08] very commendable how you've gone about
+[66:45.84] it and the humility is also incredible
+[66:47.92] and the drive and I've noticed that
+[66:49.76] across the board in the brief
+[66:51.04] interactions we've had otherwise as
+[66:52.40] well. So kudos to the company being
+[66:54.32] built. On the IPO more specifically S
+[66:56.72] because we don't get to hear from people
+[66:57.92] who will IPO in the near term, right? Uh
+[67:00.72] are there any thoughts like for young
+[67:02.24] founders how should they look at like
+[67:03.68] you know because it feels like this
+[67:05.44] final celebration moment or in the
+[67:07.60] middle celebration moment that makes it
+[67:09.52] feel like you it's the arrived moment
+[67:11.28] right
+[67:14.16] >> how do you prepare for it
+[67:15.44] >> I think it is
+[67:17.36] so I think it is not about celebration
+[67:18.72] it is a new chapter
+[67:20.56] >> it is like a series A you've got like a
+[67:24.40] early stage mid-stage growth stage
+[67:26.24] public to you chapter all of these are
+[67:28.32] chapters you know what got you from C to
+[67:30.56] A will not get you from A to B. The B to
+[67:33.36] D journey will be different. The D2F
+[67:35.36] will be different. Public will be
+[67:36.40] different. It's not the it's like a it's
+[67:38.40] like a baby, right? Like a like a child.
+[67:41.04] So one year is going to be different
+[67:42.88] from the other year and there's a new
+[67:44.40] set of challenges, new set of learnings
+[67:46.32] as a parent and so on. Same, right? With
+[67:49.44] my kids at home, every year I'm first
+[67:51.44] learning to become a parent again.
+[67:54.40] 12-year-old teenagers are very very hard
+[67:56.24] to manage, right? So a lot of you know
+[67:59.36] you have to learn. So I think it is like
+[68:00.96] that for the whole company. So it is
+[68:03.28] good as a testament of governance,
+[68:05.76] discipline etc. that okay you have built
+[68:08.00] a company that is now uh tradable
+[68:10.40] publicly and if that puts you in a
+[68:12.96] league to say this is a company which is
+[68:15.20] one of you know thousands or whatever
+[68:17.92] right 10,000 10,000 maybe right that's a
+[68:20.32] good feeling
+[68:23.20] but the point is you are getting into a
+[68:24.88] chapter for the next 10 years it is a
+[68:27.28] I'm actually very excited because it's a
+[68:28.80] new challenge
+[68:29.68] >> absolutely
+[68:30.24] >> keep building product scaling companies
+[68:32.08] scaling team helping merchants tick tick
+[68:34.16] tick now this thing okay how do I manage
+[68:35.68] Right. This is a new entirely new thing
+[68:38.64] for the for the company.
+[68:44.80] >> Got it. Got it. No, that's super
+[68:46.24] helpful. Um, finally on the team side,
+[68:48.72] right? I think no company building
+[68:50.40] conversation is complete without the
+[68:52.08] team. Uh, and again longevity is very
+[68:54.72] correlated to how you get team, right?
+[68:56.88] Uh, how has that changed for you?
+[68:59.60] >> Team is team is everything, dude. So,
+[69:01.20] team is everything. I think uh you know
+[69:03.44] I I think luckily as a company we
+[69:06.16] understood that pretty early on and you
+[69:08.24] know we realized that uh the real IP of
+[69:11.36] any uh any company like which is a
+[69:13.76] knowledge company and not a
+[69:14.96] manufacturing company
+[69:16.32] >> is it people is nothing else right
+[69:17.92] >> the other thing I realized is after
+[69:19.28] having worked in large corporates you
+[69:21.04] know I realized that uh efficiency
+[69:24.96] >> right motivation
+[69:27.44] I could see people in the like when I
+[69:29.20] used to work there and I actually
+[69:30.48] understood why India was so so
+[69:31.68] successful stressful there actually
+[69:34.40] right so
+[69:36.08] >> it's like there's a lot of uh free time
+[69:38.88] right there's a lot of work life balance
+[69:41.20] which is which is okay I'm not
+[69:42.24] complaining it's great right but the
+[69:43.92] point is that u it's also I don't just
+[69:47.28] don't think Indiaulture
+[69:49.60] we are not people like that we
+[69:53.84] as employees also as workers we are not
+[69:55.68] hardwired to be like I think we'll get
+[69:57.68] bored and depressed so I think when we
+[70:00.40] built the company we made they go. One
+[70:02.56] thing is and you know why why I think
+[70:04.00] this happens companies are not and we
+[70:06.00] also don't do the best job at it right
+[70:07.60] but we try to be very good at it to be
+[70:09.76] able to identify who's good at what and
+[70:12.00] let them do that because you know the
+[70:13.92] whole world is wired to say no no I want
+[70:15.52] to do this job and if you don't do it
+[70:17.12] I'll fire you
+[70:17.92] >> or I will penalize you right or if you
+[70:19.76] do it well I will incentivize you
+[70:21.52] >> have has anybody asked them what do you
+[70:23.12] want to do
+[70:24.16] >> if they want to do coding or design or
+[70:26.88] people or business or whatever they will
+[70:29.84] get good at it nobody has skills from
+[70:31.76] before right
+[70:32.64] >> so I think we hire people right not
+[70:35.28] skills not resources right and we work
+[70:38.32] on those people over longish period of
+[70:40.16] time right so I'm proud to I don't know
+[70:41.76] the metrics exactly but if we had maybe
+[70:45.12] let's say the first 3 years had 50
+[70:47.76] people from gut I can tell you 15 20 of
+[70:50.88] those are still here today right and
+[70:52.40] doing scaling not like u
+[70:54.88] >> and last 12 13 years
+[70:56.32] >> yeah yeah yeah so there are people who
+[70:58.00] are like that uh and and for from our
+[71:00.64] leadership ship team perspective. I
+[71:01.92] think you know we've been able to we've
+[71:03.76] lucky we've been able to get the people
+[71:06.08] who align on mission you always tell
+[71:07.68] people that look if you join here join
+[71:09.60] because you care about this segment and
+[71:12.24] you agree with our business model
+[71:14.88] >> otherwise don't join here don't come and
+[71:16.32] try to change it and then the first sign
+[71:18.48] of a speed bump you know you'll be like
+[71:20.32] I had thought as much so we tell people
+[71:21.92] first build conviction on this then
+[71:24.00] build conviction on us right and then
+[71:26.16] come so that way we are quite we take
+[71:28.16] our time we hire carefully right our
+[71:29.92] senior team is now four five six years
+[71:31.60] old all of our CXOs you know whether
+[71:33.60] it's our CFO Tanme or Atul who runs our
+[71:35.60] shipping business you know we've
+[71:36.96] acquired a bunch of companies in the
+[71:38.64] past you know Goravit continue working
+[71:40.32] with us from picker so there's very very
+[71:42.32] diverse team mix of founders
+[71:44.16] professionals you know and all the you
+[71:46.48] know uh mixed bag of the labs the you
+[71:49.20] know the emerging businesses and the
+[71:50.48] core business is is split between
+[71:52.08] different teams so I think it's it's the
+[71:54.48] the company is also run like a platform
+[71:56.88] is what I tell people
+[71:59.60] I'm serious And we tell people that look
+[72:01.04] it's my job to give you the best
+[72:02.24] platform so you can be an owner and
+[72:04.64] again it's it's it's it's the way the
+[72:06.80] company runs and people who don't fit
+[72:08.08] into that then then they don't have they
+[72:09.76] don't do well here and ultimately leave
+[72:11.44] or whatever right but the people who can
+[72:12.88] thrive as owners they end up staying
+[72:15.12] because for them you know and there's a
+[72:17.04] comment from one of my senior guys at
+[72:19.36] actually told me you've spoiled us where
+[72:21.28] I don't think I can go and work anywhere
+[72:23.60] else now because
+[72:25.12] >> like this is my company like this is our
+[72:27.28] baby my baby not our baby right so I
+[72:29.84] that if you can bring that into people
+[72:31.68] then you can multiply the force of the
+[72:34.00] founder and security or comfort ability
+[72:37.60] to make mistakes
+[72:39.92] >> other ways you can drive everything it's
+[72:41.92] more it's faster because it's percolates
+[72:44.64] faster but I think it's not more
+[72:46.24] sustainable because then you are always
+[72:47.92] needed in the loop so how do you you
+[72:50.32] know how do you do more stuff
+[72:51.76] >> as as as a as a leader so that's our
+[72:54.08] philosophy I mean it so far seems to be
+[72:56.08] working
+[72:56.72] >> that's amazing and what's the headcount
+[72:58.48] be about 12 1300 1350s between 13 and
+[73:02.96] 1400 something like that.
+[73:03.76] >> It's pretty good size for like a company
+[73:05.36] on this scale.
+[73:06.08] >> Yeah. Yeah. So I think we that way will
+[73:07.84] have super efficiency uh because uh see
+[73:11.04] our business you know once you once a
+[73:12.88] category is built like our shipping
+[73:14.24] business is built now every year if I
+[73:16.32] whatever I grow I'm not like my cost
+[73:19.04] isn't growing right all of that's going
+[73:20.40] to go down and we don't have any capex
+[73:22.80] or we don't have any uh facilities right
+[73:25.12] to to to pay for so it's all pure
+[73:28.00] >> pure bottom line in that sense and every
+[73:29.52] business that reaches that majority will
+[73:31.20] will reach those majority stages it'll
+[73:33.04] be the same thing and with AI I'm
+[73:34.80] excited to see now how the operating
+[73:36.48] leverage moves further, right?
+[73:38.00] >> Yeah. No, that's amazing. I think this
+[73:40.00] is uh incredible. Um awesome. We've
+[73:43.12] covered all parts of the business. As we
+[73:44.88] sort of conclude, I have a couple of
+[73:46.72] like just final questions for you on the
+[73:48.32] personal side. Um this is like mostly
+[73:51.20] fun to gauge your personality. But uh
+[73:53.60] the first one there is in a world where
+[73:55.84] ship rocket did not exist, what would
+[73:57.84] you be doing?
+[73:59.60] >> Um actually, I've never thought about
+[74:01.76] this.
+[74:02.32] >> Yeah.
+[74:03.52] >> Yeah. I would definitely be doing some
+[74:05.60] danda for sure.
+[74:07.44] >> Could be a shop I might be running
+[74:10.16] and I love tech. I was like completely
+[74:12.24] in love with internet and
+[74:15.36] it's possible.
+[74:19.60] I'm telling you that's very possible.
+[74:25.36] Yeah.
+[74:29.52] This I can tell you for writing because
+[74:30.88] see
+[74:31.92] >> when we started the business like people
+[74:33.44] ask me what problem are we solving
+[74:35.36] >> I said
+[74:37.68] which is that is the reality
+[74:39.28] >> that was that's how much Gotham and I
+[74:40.96] wanted to build
+[74:43.28] you know
+[74:43.84] >> that's amazing I love that uh one of the
+[74:46.48] things that you said and which is that
+[74:48.96] 2012 you had an opinion e-commerce 2025
+[74:53.12] what is your opinion on 2030 if you had
+[74:55.84] to
+[74:57.44] on is general like
+[74:59.20] >> India has 6 7 8% penetration of
+[75:03.04] e-commerce okay on traditional retail uh
+[75:06.80] China is like 30 40%. US is just%
+[75:12.00] in that range. India GDP
+[75:15.92] there is this $4,000 $5,000 mark right
+[75:18.32] again it's not my mark there some
+[75:19.84] reports right they talk about how in
+[75:21.60] China the inflection point because
+[75:24.00] discretionary spend
+[75:26.64] at that somehow there's a magic number
+[75:28.32] and it starts to
+[75:31.12] a lot of our digitization hasn't
+[75:32.80] happened right
+[75:34.00] >> I don't see it going down right it has
+[75:36.48] to only go up so there is the trifecta
+[75:39.12] of the overall GDP per capita growing
+[75:42.56] hence consump consumption growing,
+[75:44.48] discretionary income being available,
+[75:46.24] AOV is growing, right? There is
+[75:48.24] digitization both on the consumer side
+[75:50.88] and the merchant side. You've got the
+[75:52.80] urban centers buying more and more.
+[75:54.80] You've got the never bought before
+[75:56.32] starting to buy. You've got all those
+[75:58.00] forces happening. Um and now you've got
+[76:00.48] AI which will percolate this. I'm
+[76:02.64] telling you live commerce
+[76:05.52] not
+[76:07.36] going to happen is
+[76:09.60] countries
+[76:11.68] much higher. Because the unserved can be
+[76:14.08] served now
+[76:21.04] barrier be
+[76:23.04] right with this
+[76:24.96] >> who knows what I'm not saying e-commerce
+[76:26.48] I'm saying overall
+[76:27.76] >> bullish case I was trying to gauge
+[76:30.08] unpopular opinion that time 2012 it was
+[76:33.20] unpopular to say D2C
+[76:36.88] I will not name the partner we had
+[76:38.64] walked into wrong story we had walked
+[76:40.56] into
+[76:42.40] We had walked into a career one of the
+[76:44.24] carriers right so when we started cart
+[76:47.12] rocket which was our earlier so we did
+[76:48.72] cart rocket which was our uh
+[76:51.04] >> website building SAS business then we
+[76:52.72] built craftly right that's when a joined
+[76:54.64] us as co-founders we co four co-founders
+[76:56.32] a vish gotham and I and we kind of
+[76:58.48] obviously shiprocket
+[77:00.80] other people came at different times etc
+[77:03.04] uh and then we realized with time you
+[77:06.00] know
+[77:07.52] shipping and payments
+[77:10.80] payment gateway
+[77:16.00] really
+[77:17.60] cannot imagine that we want to enable
+[77:24.40] we started calling the payment gateways
+[77:25.92] we start
+[77:30.40] and pridefully so 5000
+[77:39.36] ultimately we found a company EBS right
+[77:41.36] which became which became something else
+[77:43.04] later on and he told us
+[77:52.24] we took the cost as a startup
+[77:56.48] and we started marketing free payment
+[77:57.76] gateway no setup no setup free payment
+[78:00.56] gateway customer then we did shipping I
+[78:03.60] remember walking to shipping office
+[78:04.96] where
+[78:06.48] prominent company told us that
+[78:08.96] e-commerce e-commerce Right.
+[78:13.20] Correct.
+[78:14.08] >> I think people didn't understand.
+[78:15.28] Merchants would tell us
+[78:19.60] I was like
+[78:22.40] right
+[78:26.88] >> in the beginning. It didn't feel like
+[78:28.40] you know like we can all feel it.
+[78:30.88] Correct. It was like going
+[78:34.08] it was happening but it was not like in
+[78:35.84] your face you know.
+[78:38.64] belief.
+[78:40.80] >> Yeah. Just generally, what's something
+[78:43.12] you believe in that
+[78:45.52] anti-belief
+[78:47.04] market?
+[78:48.80] >> I'm just trying to gauge
+[78:56.80] I do think
+[79:03.92] and that's how every evolution happens,
+[79:06.24] right?
+[79:07.60] Whether it's food delivery or even ship
+[79:09.04] rockets model that's how it works
+[79:11.84] which is not an anti kind of theory
+[79:15.60] I think quick commerce is like here to
+[79:17.36] stay
+[79:19.68] is big theme big
+[79:24.88] I think I think that's the magic I think
+[79:34.32] it's not there in one place to
+[79:37.44] feel right but if you look at the size
+[79:39.52] of even something somebody as small as
+[79:41.44] shiprocket right in the in the big
+[79:43.04] scheme I'm saying
+[79:45.36] you know 10 years
+[79:51.60] not just us I'm saying there are going
+[79:52.80] to be many companies who will you know
+[79:55.12] and there are already correct right
+[79:58.32] we are also learning from other
+[79:59.44] playbooks by the way so people are going
+[80:01.44] on trying many many many things import
+[80:03.76] export
+[80:06.32] New retail is a good one. New retail
+[80:08.80] online companies going retail
+[80:11.92] will look very different. That's a good
+[80:14.16] point. US direct commerce out of total
+[80:17.44] e-commerce let's say 40 50%
+[80:21.36] as we double clicked on it. We realiz a
+[80:24.08] lot of it is led by the offline brands.
+[80:26.56] >> So the Nikes of the world, the H&M of
+[80:28.88] the world, they are huge.
+[80:31.36] >> The e-commerce website is not a website.
+[80:33.52] It is a sales channel. It's a channel
+[80:35.20] man. Correct. They don't want to get
+[80:37.52] business only for market places
+[80:40.96] and channel because they are already
+[80:43.68] paying high street rentals. Right.
+[80:45.52] >> Right.
+[80:45.84] >> The inventory is already moved through
+[80:47.20] supply chain.
+[80:49.28] It's already there and their issue is
+[80:51.20] their customers are actually not walking
+[80:52.88] into the store.
+[80:54.16] >> India offline retailers when we try to
+[80:55.84] call
+[81:01.92] but matter of time.
+[81:04.16] the offline brands will come online and
+[81:05.84] companies like Snitch, New Okara and you
+[81:08.08] will that's what you were talking about
+[81:09.20] you have the online guys building
+[81:10.88] >> correct I think the next mall will be
+[81:14.24] like all the new old brands will be new
+[81:16.48] brands in my opinion like everywhere you
+[81:18.24] can see a parallel and that will be very
+[81:20.08] exciting
+[81:20.56] >> I think export is a is a great one right
+[81:23.28] for India
+[81:24.56] >> uh because as we continue building more
+[81:26.96] and more and more indigenous products uh
+[81:29.52] manufacturing is growing right one of
+[81:31.20] our customers is called Snoop They come
+[81:33.36] from a family business of manufacturing
+[81:35.12] toys. Um very very innovative business.
+[81:38.24] They're a marketplace. They are about to
+[81:40.40] launch certain AI things on buyback
+[81:43.12] because toys clutter is a huge one at
+[81:44.88] home. This is a e like she's built a
+[81:47.20] ecosystem. Anchel and bridge have built
+[81:49.20] a like a it's not just a retail right
+[81:55.52] now. They're getting into manufacturing.
+[81:58.80] Correct.
+[82:03.68] US sorry UK
+[82:06.64] leather weather apparel
+[82:09.84] we'll come to know how the trade lanes
+[82:11.44] move for a little of time right but I
+[82:13.92] think that export is for India is a huge
+[82:17.12] opportunity huge
+[82:18.32] >> and only rising just getting started
+[82:20.24] >> because now brand India actually means
+[82:23.04] something
+[82:23.60] >> correct
+[82:24.00] >> we may not appreciate it enough sitting
+[82:25.60] here in India but it means something
+[82:27.84] today
+[82:28.24] >> and it's getting popular as is not
+[82:30.32] considered to be low quality
+[82:32.24] India may not have the things they need
+[82:34.32] but it's never it's not really
+[82:35.52] considered keta as a hyuki right whether
+[82:37.76] it's clothes or all of our you know all
+[82:40.08] of our spirituals the spiritual tech
+[82:41.84] market if you will can can become
+[82:44.32] massive in exports right
+[82:45.60] >> this is company which also won an award
+[82:48.40] so
+[82:49.60] >> there's lots of people there's people
+[82:50.96] doing gemstones you know selling on
+[82:54.16] marketplaces there's ayurvedic stuff
+[82:56.64] there's wellness stuff
+[82:58.40] >> um clothes ethnic fashion Absolutely
+[83:02.48] >> right. So I think there are all of these
+[83:04.08] trends that you know uh people can
+[83:06.00] capitalize on and you can tell that we
+[83:08.16] are super passionate as a company about
+[83:09.84] entrepreneurship you know we want more
+[83:12.00] and more people to to become
+[83:13.28] entrepreneurs and I think it's it's a
+[83:14.88] it's a great time to be doing that in
+[83:16.32] India
+[83:16.80] >> 100%
+[83:18.32] >> India consumers are linked right
+[83:20.72] somewhere in that stack
+[83:23.76] you will make money that you can't think
+[83:25.44] of because we don't know what it means
+[83:27.36] to be living in a country where the
+[83:29.20] consumer spends or has a GDP of 7,000
+[83:31.84] 8,000 you I don't know what that means.
+[83:33.28] >> Correct.
+[83:34.08] >> Imagine difficult. I think
+[83:38.08] it
+[83:39.60] in a sense don't die.
+[83:41.68] >> Yeah. No, that's amazing. Um, in your as
+[83:44.64] a first time CEO, qualitative side, what
+[83:47.36] have you discovered about yourself? Like
+[83:48.88] what were new learnings?
+[83:51.20] >> Time availability has also gone uh up
+[83:53.60] and down depending on you know phase etc
+[83:56.40] of the of the company. But yeah, there's
+[83:59.28] been time I I you know work life balance
+[84:02.96] but I do think that what I said earlier
+[84:06.16] you have to make your job interesting
+[84:08.24] somehow and as as a leader if the
+[84:10.40] founder of the company or the CEO of the
+[84:11.92] company you can to a great degree and
+[84:14.88] you we all have to do the grunt work but
+[84:17.36] make try to make a job interesting you
+[84:18.88] know then what happens is it doesn't
+[84:20.48] feel that much right you kind of
+[84:23.12] somehow it you know it doesn't feel like
+[84:24.72] a very disjointed effect from home and
+[84:28.08] the second thing I do is I take my
+[84:29.44] family along they know what's happening
+[84:31.20] what's launching so then there's common
+[84:33.20] ground otherwise like you do complete
+[84:35.12] compartmentalization which also works
+[84:36.80] for some people but not for me right
+[84:39.52] time which is not spent talking about
+[84:41.20] work right will go into spending time
+[84:44.08] with the kids right I I love hanging out
+[84:45.84] with them lately I've been playing video
+[84:47.76] games with my with my 8-year-old son you
+[84:50.32] know I play I jam with my daughter so
+[84:52.24] she plays the guitar
+[84:53.28] >> nice uh pur all of my equipment you
+[84:57.12] Uh Gotham had given me a great guitar
+[84:59.20] last year that I was waiting to buy.
+[85:02.16] He bought it for me sit
+[85:05.28] already and she's getting pretty good at
+[85:07.04] it. So I love chatting with her now on
+[85:08.48] the weekends. We make recordings etc. So
+[85:10.56] I love doing that stuff. I am um um I
+[85:14.48] love running you know. So I I make time
+[85:16.16] every day
+[85:17.20] >> uh to get my 30 40 minutes of you know
+[85:20.48] uh nature time,
+[85:22.48] >> grounding time, thinking time and
+[85:24.08] exercise to must do. is beyond uh I like
+[85:28.80] traveling you know I like love to
+[85:30.32] explore new places uh
+[85:33.92] yeah I mean it's just family and and
+[85:35.68] whatever right I mean special
+[85:44.72] music
+[85:46.96] so we both sing and play
+[85:50.96] every weekend I'm doing a VIP code by
+[85:52.40] the way
+[85:54.72] I was pulling our AP emails, account
+[85:57.44] table emails into a common inbox
+[86:00.64] >> and then parsing them through AI to say
+[86:02.96] it can just build a view on something
+[86:05.04] like an air table and then slap a
+[86:06.96] interface on top of it with lovable and
+[86:08.40] give it to the team.
+[86:09.52] >> Now this took me four hours on the
+[86:11.44] weekend right
+[86:12.40] >> it's not so not that I can't delegate to
+[86:14.24] somebody but I end up learning five
+[86:15.60] things in the process then I can do this
+[86:16.96] five more times
+[86:19.60] because this is fun for me this not work
+[86:21.52] >> this is very cool I love it I was
+[86:23.68] talking to the founder
+[86:32.96] That's what I'm saying.
+[86:35.12] Correct. Today like post the podcast
+[86:39.28] in 10 minutes I can tell you how to do
+[86:40.80] this. Not do it for you. Tell you how to
+[86:42.64] do it and the next 10 minutes you would
+[86:44.32] have done it.
+[86:44.80] >> Yeah. Yeah. Yeah.
+[86:48.08] Absolutely.
+[86:48.32] >> You cannot stay like you can't ignore
+[86:50.24] it.
+[86:50.56] >> Yeah. No, this is awesome. I think I've
+[86:52.96] had a lovely lovely time. The last
+[86:54.64] question is a template. Uh we usually
+[86:56.32] ask the guest key. Let's go back to a
+[86:58.32] significant time to 2012. If you were
+[87:00.00] talking to yourself again, uh what would
+[87:02.32] you tell yourself? This is to learn from
+[87:04.40] everything.
+[87:05.36] >> Don't die still.
+[87:07.36] >> Yeah. Yeah. 100%.
+[87:08.72] >> See, I think uh I don't have those what
+[87:10.88] would you have done differently because
+[87:13.76] no regrets,
+[87:15.04] >> right? And regret minimization
+[87:17.52] framework, right? I think it's an Amazon
+[87:20.16] thing. I don't know where basically what
+[87:21.76] it means is that you got to think in
+[87:23.28] your head that by doing or not doing
+[87:25.60] something
+[87:26.40] >> are you going to regret it a lot? If
+[87:27.76] you're going to regret it just do it.
+[87:29.20] >> Mhm.
+[87:29.60] >> I know it sounds simpler than it's and
+[87:31.12] it is it is tougher to implement but to
+[87:33.92] >> it is also simple.
+[87:34.88] >> It is simple. I think you have to it's a
+[87:36.40] mental tough mental toughness need
+[87:38.16] mental training.
+[87:39.28] >> Correct.
+[87:39.84] >> How you approach everything right? So
+[87:40.96] when you wake up in the morning do you
+[87:42.56] feel happy or do you feel upset? I think
+[87:46.16] it's up to you because
+[87:48.88] I think unless you're like stuck to your
+[87:51.44] phone it is mindset right to a great
+[87:55.20] degree if you ask me
+[87:56.32] >> so don't die
+[87:57.20] >> huh don't die because I think that is
+[87:59.68] the only thing I know people say this
+[88:02.72] that but luck but what I found is that
+[88:07.28] luck luck is very much part of it but
+[88:14.24] and I tell people
+[88:16.16] A lot of people tell me it's been six
+[88:17.52] months.
+[88:21.04] That's why I keep asking people why did
+[88:22.56] you start it?
+[88:25.20] >> You think I'll make money.
+[88:30.80] It's not about that.
+[88:32.16] >> I wish it was. I wish it was easy, you
+[88:33.76] know, but it's not.
+[88:34.88] >> Yeah,
+[88:35.20] >> it's not easy. That's that's why you
+[88:36.56] have to want it.
+[88:37.68] >> Yeah.
+[88:40.32] >> You only know what's good.
+[88:41.84] >> No, that is so well articulated. I think
+[88:43.52] Nitan by the way said something similar
+[88:45.12] on the business.
+[88:46.24] >> Uh is there
+[88:47.68] >> oh yeah they also started like before
+[88:50.00] the like before UPI before mobile was a
+[88:52.56] thing but they kept at it so when it
+[88:54.48] inflected they were the ones to win the
+[88:56.72] game.
+[88:56.96] >> Exactly. Right.
+[88:57.92] >> They kept at it like
+[89:00.80] you have to and you'll only do it if if
+[89:03.36] you are passionate enough.
+[89:04.32] >> Correct. So don't overthink it. Don't
+[89:06.64] get
+[89:11.60] you cannot build on somebody else's
+[89:13.04] conviction. You can only do it on yours.
+[89:16.80] >> Yeah.
+[89:17.12] >> That's why I tell people don't I'm not
+[89:18.80] saying don't think big. All I'm saying
+[89:20.40] is like if you're being in despair
+[89:22.40] because of all of this then just find
+[89:24.40] your own peace where you feel
+[89:29.12] maybe it's a small business but you know
+[89:31.20] rather than building something that
+[89:33.44] nobody cares if you die wouldn't you
+[89:35.60] rather have only 100 customers who who
+[89:37.52] cry if you die like at least you know
+[89:39.04] real
+[89:40.32] >> that's what I I you know that's what I'm
+[89:41.68] trying to say
+[89:42.40] >> so try and stay alive
+[89:44.00] >> that is amazing brilliant note to end on
+[89:46.48] this was an absolute pleasure sahil I I
+[89:48.40] truly believe that ship rocket is this
+[89:50.64] unique company built for India, built a
+[89:53.20] category, scaled it so well and uh
+[89:55.68] creating so much value for so many
+[89:57.76] thousands and lacks of uh MSMES which is
+[90:01.28] incredible. So thank you so much for
+[90:02.64] spending time. The worth the wait was
+[90:04.56] worth it. So I'm glad we did this and
+[90:06.88] this was incredible.
+[90:07.84] >> No, no, awesome meeting you and thank
+[90:09.28] you so much for the kind words and for
+[90:10.88] the opportunity.
+[90:11.68] >> Awesome. Thank you so much.
+[90:12.72] >> Awesome.
+[90:13.84] >> Hello. If you made it this far, you
+[90:15.92] probably watched the entire episode. And
+[90:17.60] if you've done that, I'm really
+[90:18.96] grateful. I and my team try to put in a
+[90:21.84] lot of effort to ensure that we can
+[90:23.84] bring the best quality content to you.
+[90:25.84] So, if you like the episode, if you
+[90:27.44] watched it thus far, my request to you
+[90:29.44] is to share it with people, to subscribe
+[90:31.52] to the channel, and to ensure that we
+[90:33.68] can keep growing. We are everything and
+[90:36.40] anything only because of you, our
+[90:38.56] listeners. Thank you so much for tuning
+[90:40.56] in. We'll keep bringing to you amazing
+[90:42.96] content. Just

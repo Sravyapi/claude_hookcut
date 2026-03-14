@@ -1,0 +1,618 @@
+[0:00.37] [Music]
+[0:10.40] hi everyone this is gkcs today we are
+[0:13.14] talking about a remote code execution
+[0:14.46] engine
+[0:16.74] [Music]
+[0:20.30] the core problem the absolute core
+[0:22.98] problem is that you need a job scheduler
+[0:25.26] so that you don't overload your services
+[0:27.00] you need a container so you don't
+[0:29.04] overload your services and there is
+[0:30.66] security
+[0:31.58] and that's it
+[0:33.54] okay okay
+[0:35.07] [Music]
+[0:59.42] so I watched their video about this
+[1:02.52] system
+[1:04.02] and the question I had was you know this
+[1:06.96] system seems to work well for like an
+[1:09.60] evaluation you know competition type of
+[1:12.24] situation but I was wondering like how
+[1:15.24] you would extend it or change it to
+[1:17.04] something like an online IDE where you
+[1:20.58] know maybe thousands of people might be
+[1:22.02] using it at the same time and expect
+[1:24.36] like a really fast result
+[1:26.60] okay okay so
+[1:29.52] right I think I have been thinking in
+[1:31.50] terms of the complex programming
+[1:32.64] environment where we're thinking about
+[1:34.50] getting a accepted or a wrong solution
+[1:38.42] what we need to focus on is
+[1:41.40] is the real-time aspect of things so if
+[1:43.44] someone is running it on their desktop
+[1:46.68] they send us some code
+[1:49.14] we want a server
+[1:51.78] when we have the code in the server what
+[1:54.42] we want is a quick response to the user
+[1:57.18] and it feels like you're running this
+[1:58.92] code locally in your own compiler and in
+[2:01.74] your own local machine
+[2:03.42] so
+[2:04.68] okay you're giving me one important
+[2:08.46] thing to look into that is latency we
+[2:10.74] want low latency for this we can't
+[2:12.66] probably put it in a
+[2:14.46] batch like I said and then
+[2:18.24] we don't want to process these requests
+[2:20.22] periodically
+[2:22.68] okay
+[2:23.84] how do I make this system faster
+[2:27.08] one of the things that I could do is I
+[2:29.46] could make it a request response kind of
+[2:31.20] thing so it's no longer like something
+[2:32.76] that happens in the background and when
+[2:34.92] the results are computed we don't store
+[2:37.08] it in the database and then also send
+[2:40.08] you know every time a result comes in we
+[2:41.76] don't send a notification to the user
+[2:43.38] because that's slow ideally what we want
+[2:45.96] to do is we want to create a different
+[2:47.28] kind of architecture where a user
+[2:49.92] write some code
+[2:52.44] we get it on our server
+[2:54.96] and the server is able to quickly
+[2:56.82] respond back
+[2:58.98] with a yes or no response what what are
+[3:02.28] we looking for exactly when someone is
+[3:04.26] writing code they are not actually
+[3:05.46] sending us a file if it's an online IDE
+[3:10.20] they are sending us some text
+[3:13.28] and all the other relevant details of
+[3:15.60] the profile maybe can be taken over here
+[3:17.10] but it doesn't it doesn't matter much so
+[3:19.38] I'll just take profile ID
+[3:21.24] this is the type of request that I am
+[3:23.28] taking
+[3:26.34] and if I'm thinking about what is the
+[3:28.56] response or basically the output of the
+[3:30.78] code
+[3:31.68] along with the status
+[3:34.92] so maybe maybe the record didn't run so
+[3:37.38] maybe there's an exception
+[3:39.48] so you probably want to just take the
+[3:41.64] output of the code in a in a more
+[3:43.86] generic way so
+[3:45.54] let's take output of the code AS STD out
+[3:49.08] and
+[3:50.40] STD error
+[3:52.86] so these are the two things that we want
+[3:54.48] to send back or we want to send back a
+[3:55.74] timeout
+[3:56.76] finally the kind of system that we can
+[3:58.80] focus on especially in a system which is
+[4:01.08] looking for a lot of real-time things is
+[4:03.30] send us your code
+[4:06.30] which is basically a request
+[4:09.24] with these parameters right there is
+[4:11.94] some text and then you tell us the type
+[4:15.18] of the text also is it python is it Java
+[4:17.76] is it C plus plus
+[4:19.40] we then take it on our server
+[4:23.28] our server says okay here's an
+[4:26.22] acknowledgment that yes I have received
+[4:27.96] your request but I don't know the
+[4:29.28] response yet so on the browser one of
+[4:31.56] the things that we can do is we can show
+[4:32.82] a Reload button or a not a Reload button
+[4:35.76] but a thinking button now this is not
+[4:38.10] great user experience
+[4:40.08] but uh that's for the
+[4:42.48] product team to decide yeah I'll just
+[4:44.76] offshore this problem to them because
+[4:46.94] they can probably show an ad or they can
+[4:51.24] show another product
+[4:52.92] or they could just keep the user hanging
+[4:55.08] off the you know Edge by showing them
+[4:57.48] that we are Computing your result
+[4:59.46] um
+[5:00.36] in the back end the server can still use
+[5:03.00] a queue a task queue now why am I going
+[5:05.58] for this architecture again and again
+[5:06.90] the reason I want to do this is because
+[5:08.64] I want to isolate the the speed at which
+[5:12.36] inputs are coming in the speed at which
+[5:13.92] requests are coming in
+[5:15.36] and the local computation power that we
+[5:18.60] have so if we have a box of machines
+[5:23.46] like this will be the containers that we
+[5:25.92] talked about then we can assign this
+[5:29.04] each of these requests
+[5:31.32] to different containers depending on
+[5:33.18] which one is available so we have a
+[5:35.04] bunch of containers that are already set
+[5:36.48] up
+[5:37.38] um and then we can assign them to
+[5:38.88] basically these are workers Okay so
+[5:42.30] in case we cannot assign them in case we
+[5:44.46] are full then we keep taking these
+[5:47.16] requests in queue and the the time
+[5:49.38] required for the user to see a response
+[5:51.90] a success or a failure response
+[5:53.22] increases but that's okay we can in case
+[5:56.10] we have that many users we can always
+[5:57.36] horizontally scale which is basically
+[5:59.34] add more servers to this so
+[6:01.50] becomes a bigger and a bigger system
+[6:04.74] but you know we have more users so we
+[6:06.72] are assuming we have more money which
+[6:08.22] means that we can rent out more servers
+[6:10.44] so things are going good there
+[6:12.90] um
+[6:14.04] apart from that once we have the
+[6:16.08] computation result
+[6:18.30] calculated which is the standard
+[6:23.64] out under standard error we take this
+[6:26.88] send it back as a response to our server
+[6:30.18] an event
+[6:31.92] this event has details like
+[6:34.98] for this
+[6:36.54] request ID
+[6:39.54] this was the
+[6:41.94] this is the response so these two
+[6:44.52] details
+[6:45.96] response
+[6:48.24] or I shouldn't call it response I should
+[6:50.52] probably call it result yeah
+[6:52.38] yeah so request ID result gives us
+[6:55.08] the final final result of this request
+[6:58.26] the server looks at this request ID it
+[7:00.54] has a map let's say of
+[7:02.76] request IDs
+[7:05.40] to the request body
+[7:08.82] okay all this stuff can also be backed
+[7:10.86] up by a database I'm not getting into
+[7:12.12] that because uh it will I mean for for
+[7:15.00] the sake of clarity if I start drawing
+[7:17.64] too many databases may be confusing even
+[7:20.22] this worker system is something that is
+[7:22.08] actually in a lot more detail uh you can
+[7:24.42] use
+[7:25.80] you can use a simple architecture where
+[7:27.42] there is a or you can use open source
+[7:29.76] thing like salary
+[7:31.44] followers
+[7:36.06] yeah right so salary is a task
+[7:37.92] assignment
+[7:41.70] system and we can use this it's open
+[7:44.52] source I think it's on python we can use
+[7:47.10] this to
+[7:48.12] to get our workers Computing results
+[7:51.60] finally when the result comes in as an
+[7:53.46] event our server looks at the database
+[7:55.50] says that okay for this Eco study this
+[7:57.54] was the these are the rest of the
+[7:59.16] details
+[8:01.08] um make a response using this result for
+[8:03.84] this request ID and then we send it back
+[8:05.88] to the user
+[8:08.70] so in this way we should be able to get
+[8:11.40] a response as quickly as possible but of
+[8:14.16] course nothing is real time it still
+[8:15.84] depends on the computation power that we
+[8:17.46] have on our server side
+[8:19.02] in general I would question if I had to
+[8:21.96] guess how much time is it going to take
+[8:23.46] for a request to be computed
+[8:26.46] yes it depends on how much time it takes
+[8:28.44] for the request to be put into a queue
+[8:30.30] as an event it also depends on uh when
+[8:33.72] this event will be picked up so we
+[8:35.70] should probably have a time to live in
+[8:37.20] this queue
+[8:38.34] we can you know
+[8:40.02] in case it's taken more than 10 seconds
+[8:41.82] to compute we take this event out of the
+[8:44.34] queue and tell the user that sorry we
+[8:46.20] had a timeout maybe too much server load
+[8:48.12] similarly over here we have to take care
+[8:50.10] of that but
+[8:51.42] yeah over here yeah it should be fine uh
+[8:55.14] in case there is a timeout at any point
+[8:57.24] in time we need to just give a response
+[8:58.74] that
+[8:59.70] maybe their network was too slow uh
+[9:02.82] which is which is this point of the
+[9:05.58] request so if the timestamp that they
+[9:08.40] have sent us the request is T and we are
+[9:10.98] we get the request of t plus 10 for
+[9:13.26] whatever reason maybe our our network is
+[9:15.36] slow or
+[9:16.68] um
+[9:17.40] or maybe the request is is viewed I mean
+[9:20.28] why did it take 10 seconds whatever be
+[9:22.14] the case we can just give them a timeout
+[9:23.46] response right uh quick question
+[9:27.56] so with this kind of architecture
+[9:30.78] will it be stateless
+[9:33.72] uh stateless okay so is the server
+[9:37.74] stateless like this thing the the
+[9:40.26] reverse proxy or the Gateway which is
+[9:42.84] talking to requests I mean taking
+[9:44.88] requests and giving responses uh no
+[9:47.82] in this case because we have
+[9:50.88] to map the
+[9:53.28] the request
+[9:54.90] ID to a request body
+[9:58.74] we can do two things one is to uh to
+[10:02.10] keep it stateless but I've kept it
+[10:04.50] stateful the reason being that then the
+[10:07.02] container doesn't need to know about
+[10:09.30] what are the details for this request it
+[10:11.76] just needs a request ID it just needs a
+[10:13.68] key and it gives you as a value
+[10:16.44] but
+[10:17.76] we could make it stateless I think
+[10:19.80] making it stateless is a good idea
+[10:22.68] because then I don't need a database
+[10:24.66] here
+[10:26.22] to map
+[10:27.74] requests to the request bodies why why
+[10:30.30] do I have this request in the first
+[10:31.74] place the reason I have this is because
+[10:33.06] I need to know which user actually sent
+[10:34.62] this request I guess what I'm thinking
+[10:37.98] when I'm thinking of is two different
+[10:40.86] cases one is you have an editor open you
+[10:44.40] have a file and then you need to execute
+[10:46.08] it the other case is
+[10:48.84] if you have say a python interpreter
+[10:52.44] running in the IDE
+[10:54.96] a you need to remember like what you
+[10:56.94] have
+[10:57.96] in that state right when you open up an
+[11:00.54] IDE you you would expect to see like an
+[11:03.30] editor and maybe the shell and maybe
+[11:06.78] right let's say a python interpreter
+[11:08.70] right okay so yeah we write this stuff
+[11:12.00] down oh okay okay if it's an interpreter
+[11:14.64] then on every line do you want the code
+[11:16.32] to execute or do you want the entire
+[11:18.54] code to be uh oh I get your point here
+[11:21.66] it's not a compiler it's an interpreter
+[11:23.52] yeah
+[11:24.78] right yeah
+[11:27.06] okay this is interesting
+[11:31.02] yeah okay so this is uh
+[11:34.10] this is interesting and a little
+[11:36.30] challenging so the thing is that if we
+[11:39.06] need to keep the server in the loop in
+[11:42.48] my understanding one way to do this is
+[11:44.82] to keep the server let's say stateless
+[11:48.72] in which case our local
+[11:51.30] browser
+[11:52.86] has to remember every single command
+[11:55.98] which has been executed in this in this
+[11:58.80] browser session so command one command
+[12:01.20] two all of this is actually being
+[12:02.58] locally stored in the browser and every
+[12:04.32] time we actually execute a command it's
+[12:06.24] sending all of this text to the server
+[12:09.30] which keeps it stateless now one of the
+[12:11.52] reasons why Engineers like it stateless
+[12:13.50] is because
+[12:14.58] you don't need to store State and
+[12:17.40] whenever you I mean whenever Engineers
+[12:19.74] store scale the problem is what if the
+[12:21.42] system crashes
+[12:22.98] so we executed command 1 executed
+[12:26.64] command two command 3 did not reach the
+[12:29.22] server or the server lost some state
+[12:31.98] for some reason this this went bad and
+[12:34.44] command 4 now which depends on command
+[12:36.24] three uh is sent to us but we executed
+[12:39.30] wrongly so x equal to 3 here x equal to
+[12:42.30] 1 1 and then we say give me about
+[12:45.36] and we get the wrong answer because 3D
+[12:48.12] so this is the general use case why we
+[12:50.52] want things stateless because we get all
+[12:52.02] this info and we get it right every time
+[12:54.24] but um I I think the user experience is
+[12:56.70] not going to be great if they have been
+[12:58.56] in the ID for more than let's say 30
+[13:00.54] minutes writing out some code and every
+[13:03.24] time we send them 3000 lines to the
+[13:05.52] server to compute okay so I would
+[13:07.92] definitely want this to be
+[13:09.66] yeah I I would definitely want this to
+[13:11.58] be stateful then
+[13:13.38] where the server for a particular
+[13:16.20] browser ID so or rather a browser
+[13:18.72] session so session
+[13:21.06] ID
+[13:23.22] profile ID which is this user in this
+[13:26.10] session
+[13:27.12] has had this code no but what if
+[13:29.28] multiple people want to actually code so
+[13:31.56] we can have a simple session ID and then
+[13:33.30] we can have
+[13:34.56] uh code till now so
+[13:37.20] let's say code
+[13:39.24] this is a simple key value pair I'm not
+[13:41.58] sure if we'll need to add more stuff
+[13:42.78] here but at the moment every time a
+[13:45.48] person adds code
+[13:48.06] in this session we go to the session ID
+[13:50.70] let's say this is session ID one two
+[13:52.56] three
+[13:54.48] and we have a block of code if you enter
+[13:57.54] a new line let's say line number five
+[13:59.46] over here we just add that to this
+[14:04.08] yeah yeah now interestingly
+[14:08.16] how do you execute it and in real time
+[14:10.38] and as quickly as possible like how do
+[14:12.30] you
+[14:13.64] yeah that's that's another interesting
+[14:16.32] part of it okay so firstly let's we have
+[14:19.74] kept we have taken the choice of using a
+[14:21.72] stateful server
+[14:24.90] the other thing is that do we keep this
+[14:27.24] session alive
+[14:28.68] in the sense that do we actually have a
+[14:30.84] container which is running this code
+[14:34.14] so every time we add a new line we don't
+[14:36.36] need to
+[14:37.58] recompute the entire thing we we just uh
+[14:41.34] literally run it on this container
+[14:45.78] yeah yeah actually that's that's sort of
+[14:48.36] what I was thinking
+[14:49.62] I was thinking why not for each browser
+[14:51.90] session
+[14:52.98] start a new Linux container and then
+[14:55.86] keep your alive as long as the user is
+[14:58.32] there
+[14:59.88] you can add anything to The Container
+[15:02.64] right like if it's a Linux container you
+[15:05.22] can run you know any Linux commands and
+[15:07.26] if you just install python it's going to
+[15:10.56] be able to run python
+[15:12.48] whether it's The Interpreter or actually
+[15:15.00] the whole file absolutely yeah yeah
+[15:17.52] that's a really good idea because this
+[15:20.22] is like a tiny little operating system
+[15:22.38] in itself
+[15:23.64] so it's got its own it's got its own
+[15:26.52] like
+[15:28.02] space so uh hard disk space it has
+[15:31.32] it has Network it has files
+[15:34.68] that's an interesting idea I didn't
+[15:36.72] think about this because usually servers
+[15:39.06] are not so stateful but this is I think
+[15:41.40] really useful in this particular case it
+[15:43.86] makes it really unique you can have a
+[15:47.10] yeah 256 here and every time code is
+[15:50.10] being added you actually have a
+[15:52.34] mirrored container
+[15:55.62] wow yeah yeah okay so every time we
+[15:59.04] actually get a new line to this we add
+[16:01.50] it here and we run it on this container
+[16:03.60] the container gives us a response I mean
+[16:05.52] it gives us an output which we take as a
+[16:07.14] response
+[16:08.82] sent back to the user
+[16:13.14] okay
+[16:14.64] yeah this makes a lot of sense my only
+[16:16.56] concern is that what if the system
+[16:18.30] crashes in which case all of this state
+[16:20.58] which was in the server is lost
+[16:23.64] but we can spare these containers Again
+[16:26.04] by looking at our persistent
+[16:28.62] storage at our in our database and then
+[16:32.28] see that okay
+[16:34.08] we we had code up to this point
+[16:37.80] we need to build a container run all of
+[16:40.14] these lines sequentially and then
+[16:42.30] finally we'll have that same state yeah
+[16:45.60] okay
+[16:47.28] anything else that would happen uh I
+[16:50.16] think ykb an interesting problem is what
+[16:52.44] if a person has in their code timestamp
+[16:54.18] and timestamp initially was 100 and the
+[16:56.52] server crashed and when it re-executed
+[16:58.50] it it was timestamp equal to 50 or 500
+[17:01.44] rather
+[17:02.34] uh
+[17:04.86] yeah this is interesting do we store the
+[17:06.96] results also
+[17:08.82] no I I don't know uh storing the results
+[17:12.30] is a bit weird because you can't
+[17:13.68] actually store them onto variables
+[17:16.74] mm-hmm
+[17:18.24] okay this is an interesting use case I
+[17:19.74] think uh this is the biggest problem
+[17:22.14] with distributed systems Martin clepman
+[17:24.12] has an interesting solution to this I
+[17:26.16] think it is it is that uh whatever is
+[17:29.52] depend on the real world if you can then
+[17:32.28] store it at the start of the code
+[17:34.50] execution so over here we should be
+[17:38.40] storing uh all the all the things that
+[17:40.50] can change the state later on like
+[17:41.88] timestamp could be one of the things it
+[17:43.74] could be the
+[17:45.42] um
+[17:46.20] yeah time is one factor which is which
+[17:48.00] is a big deal apart from that if there
+[17:49.80] is some state in the server that you
+[17:51.36] want to store right now uh you can store
+[17:53.70] it over here in the top and then then
+[17:55.74] you're spinning up a new container you
+[17:57.12] have this info which you can replicate
+[17:59.10] here and that way the timestamps are
+[18:00.96] also fine
+[18:04.74] right
+[18:06.00] so like with with a system like this
+[18:09.78] how often do you think these containers
+[18:12.90] will crash
+[18:14.88] uh yeah before I get to that I think I
+[18:17.16] was totally wrong in the timestamp thing
+[18:18.48] uh so I'll just remove that and we can
+[18:20.64] discuss that in the comments guys if you
+[18:22.20] if you have a better solution this won't
+[18:24.18] work uh but yeah how often will this
+[18:27.30] system crash okay if an engineer like me
+[18:30.12] has written the system then quite often
+[18:32.10] but otherwise uh this should
+[18:37.20] this should be scalable as you add more
+[18:40.26] users you add more containers and so
+[18:43.86] the container side of things
+[18:46.08] we could have so there's quite a few
+[18:48.36] things here we could have power loss we
+[18:50.58] could have data corruption we could have
+[18:53.64] we could have a network partition
+[18:56.40] as a user if I'm you know if I'm running
+[18:58.86] my code
+[18:59.88] on an interpreter
+[19:01.56] if it crashes you know I might need to
+[19:03.36] like redo my work
+[19:05.10] so yes yes that's true so to mitigate
+[19:09.72] that to some extent we have the database
+[19:11.52] storing our code but in case there's a
+[19:14.28] crash and we tell the user please wait
+[19:15.78] for 10 seconds that's not a great user
+[19:17.40] experience especially when they're in
+[19:19.02] the middle of coding so what we would
+[19:21.72] like to do then is whenever a container
+[19:26.04] crashes we need to know about it as
+[19:28.02] quickly as possible maybe not when the
+[19:29.76] user is writing code so one of the
+[19:31.56] things that we can do is all of the
+[19:32.88] containers
+[19:34.14] actually send us their health status
+[19:37.32] every now and then so there's a
+[19:39.66] Health Service
+[19:42.54] which checks whether a container is
+[19:43.98] alive or not so it keeps pinging it on
+[19:46.44] slash health
+[19:48.06] this is an API that we can Expose and
+[19:51.00] every time it says yes I am alive this
+[19:53.28] is good in case it doesn't say it's
+[19:55.38] alive then we can either recreate it
+[19:57.66] because spinning up a new content is
+[19:59.22] actually quite cheap or we can wait for
+[20:01.62] two health checks to fail before we
+[20:04.26] uh spin it up again
+[20:07.38] um when we when we're spinning it up
+[20:08.76] that time we have to actually tell
+[20:10.50] the session ID that hey your new
+[20:12.78] container I mean this is the data but
+[20:14.82] also there's a corresponding container
+[20:16.92] so there has to be some sort of a
+[20:18.42] pointer here uh to this container
+[20:20.94] address
+[20:21.90] so that has to change here
+[20:24.36] um yeah
+[20:26.52] yeah it makes sense
+[20:30.36] so the the service which is taking care
+[20:33.42] of this thing here
+[20:36.60] foreign
+[20:40.22] by the Health Service that hey one of
+[20:42.42] the containers just died so and that
+[20:44.40] container ID was this so then it can
+[20:46.62] spin up a new container
+[20:48.24] for itself
+[20:51.30] yeah right okay
+[20:53.94] um and the moment the containers spend I
+[20:56.04] mean then we are good I don't uh think
+[20:58.14] that we should have multiple containers
+[20:59.76] running the same code because that'll be
+[21:01.02] very expensive
+[21:02.58] yeah that'll be pretty expensive
+[21:05.16] um
+[21:06.30] in case I mean in case let's say the
+[21:09.18] users in India have a server crash we
+[21:12.72] don't want people in the US to suffer
+[21:14.76] the same thing or or maybe it's not
+[21:16.68] country dependent at all it's more like
+[21:18.48] user dependent so one of the things that
+[21:20.94] we can do is we can have
+[21:24.78] users
+[21:27.12] um coming in here like different types
+[21:28.92] of users let's say user ID one two three
+[21:30.78] four five six seven eight nine so users
+[21:34.62] from
+[21:35.64] one to two hundred
+[21:37.92] I served by servers in this region
+[21:42.12] users from 200 to 400 are served in this
+[21:46.38] region and users from 400 to Greater are
+[21:50.10] served in this region so 400 to greater
+[21:52.74] Is this and we have the blue guy over
+[21:55.56] here one two three coming here so
+[21:57.60] different servers exist in every region
+[21:59.64] and if one of the server crashes then at
+[22:03.48] least some of the users are still being
+[22:05.40] served
+[22:06.72] that is that is uh something that we can
+[22:08.94] do it's horizontal
+[22:11.42] partitioning
+[22:13.08] yeah yeah I think kind of related to
+[22:15.24] that I have sort of a general question
+[22:17.04] for you
+[22:19.62] so let's say we have 5 000 concurrent
+[22:22.62] users at maximum
+[22:25.38] then we we need at least 5 000
+[22:28.50] containers right
+[22:29.88] yes
+[22:31.26] that's so that's a bit of a problem like
+[22:33.18] how do we scale
+[22:35.82] well
+[22:38.64] can we possibly run the same code on
+[22:43.98] I mean different types of code on the
+[22:46.02] same container
+[22:47.22] yeah it should be possible yeah yeah
+[22:51.24] yeah why not actually we could uh
+[22:55.74] we could create a virtual machine or a
+[22:57.42] container like we don't need to create a
+[22:59.28] container for every user
+[23:01.02] we could uh if there is okay so that
+[23:03.30] changes our architecture a bit let's
+[23:04.86] let's look into that
+[23:07.08] um that's okay do you think
+[23:09.06] do you think making a container for
+[23:10.86] every user is too expensive I'm not sure
+[23:14.34] honestly I I haven't actually
+[23:17.28] um I would like to see some data around
+[23:19.80] what is the how many users are there and
+[23:23.40] then based on that making a decision but
+[23:25.44] uh yeah if let's say we have too many
+[23:27.96] users which is eventually going to
+[23:29.28] happen as rapid scales uh what's going
+[23:31.80] to happen is spinning up containers is
+[23:33.84] going to become a bit of a bottleneck
+[23:35.16] and the Health Service checking all of
+[23:37.50] these containers for the health is again
+[23:38.88] a very expensive proposition because if
+[23:41.22] we have 5000 requests going every five
+[23:43.32] seconds this Health Service can become
+[23:45.84] distributed yes but it's not yeah it's
+[23:49.08] not ideal so what we can do then is each
+[23:51.78] container so multiple multiple sessions
+[23:55.02] let's say four five six
+[23:57.54] unmapped to the same container
+[24:01.56] what ends up happening here is that this
+[24:03.96] container is responsible for running
+[24:05.58] code from 256 and 456
+[24:08.54] and so it has it has a different
+[24:12.00] processes running
+[24:14.52] different pieces of code so we might
+[24:17.10] have Java running here and python
+[24:19.32] running here
+[24:21.06] yeah yeah
+[24:22.76] right we could also say that okay fine
+[24:25.98] because uh maybe all of the Java code or
+[24:28.86] we have 100 containers for Java 100
+[24:30.90] containers for Python and so on and then
+[24:32.82] we can split the users based on that
+[24:34.26] which actually helps again here
+[24:36.64] [Music]
+[24:39.72] foreign

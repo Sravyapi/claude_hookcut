@@ -1,0 +1,3231 @@
+[0:00.56] Hello all, my name is Krishna and I am
+[0:03.04] super excited to announce this amazing
+[0:05.12] crash course on rag that is retrieval
+[0:07.76] augmented generation. Uh in this
+[0:10.40] specific crash course it'll be somewhere
+[0:12.00] around 2.5 to 3 hours but we are going
+[0:14.80] to discuss everything that is related to
+[0:17.36] rack completely from scratch. Uh we'll
+[0:20.08] be talking about the entire pipeline
+[0:22.16] from data injection to retrieval
+[0:24.32] pipeline to output generation. how to
+[0:26.88] use LLM models, how to use embedding
+[0:29.04] models in this uh along with this uh
+[0:31.36] what should be the right strategy of
+[0:32.96] using chunkings and many more things
+[0:35.52] right so we will be deep diving into
+[0:38.08] both the theoretical understanding along
+[0:40.00] with the practical implementation and we
+[0:42.40] will initially go ahead step by step
+[0:44.24] we'll start with the basic
+[0:45.28] implementation and then as we go ahead
+[0:47.52] in the advanced section we'll also
+[0:48.96] implement the modular coding right the
+[0:51.84] main aim of the modular coding is to
+[0:53.52] link the entire pipeline in a way so
+[0:55.36] that you should be able to understand
+[0:56.96] how rag actually works and also
+[0:58.72] implement it in your company use cases.
+[1:01.76] Let me tell you one very important
+[1:03.20] thing. 90%age of the use cases that are
+[1:05.84] currently been worked in all the
+[1:07.36] companies are specifically related to
+[1:09.36] rag. So this crash course will be an
+[1:11.84] amazing one for you all of you. We'll
+[1:14.16] keep a simple like target of thousand uh
+[1:16.80] try to complete it as soon as possible
+[1:18.72] and we'll also keep a like target to
+[1:20.72] some uh comments target of 500. So
+[1:23.28] please try to complete it and yes go
+[1:25.52] ahead and enjoy this particular crash
+[1:26.96] course. Thank you. So this is a simple
+[1:29.92] definition that uh I have put up over
+[1:32.64] here and uh in this definition first of
+[1:35.44] all we'll try to understand rag. Okay.
+[1:38.24] So first of all let's go through the
+[1:39.76] definition and then I will give you a
+[1:41.60] brief idea what exactly rag is all about
+[1:44.32] you know. So here you can clearly see
+[1:46.56] that
+[1:48.08] rag is the process of optimizing the
+[1:51.04] output of a large language model. Okay.
+[1:55.60] So it references an authorative
+[1:58.96] knowledge base outside of his training
+[2:01.60] data set source before get generating a
+[2:04.72] response. LLMs are trained on vast
+[2:08.64] volume of data as we all know and use
+[2:10.72] billions of parameters to generally
+[2:12.96] original output for task like question
+[2:15.36] answering, translating and completing
+[2:17.20] sentences. Rag extends the already
+[2:20.00] powerful capabilities of LLM to specific
+[2:22.40] domain or an organizational internal
+[2:25.20] knowledge base all without the need to
+[2:28.32] retrain the model. Okay, it is cost
+[2:30.88] effective approach to improve LLM
+[2:32.88] output. So it's relevant, accurate and
+[2:35.12] useful in various context. So this is
+[2:36.88] just a basic definition. You can refer
+[2:38.80] to this particular definition. So guys,
+[2:40.96] now let's go ahead and understand about
+[2:42.64] rag. So let's consider that I have a
+[2:46.32] generative AI application. And as you
+[2:48.08] all know in a generative AI application,
+[2:50.24] usually let's say that I have an LLM. So
+[2:52.88] this is my LLM. Now usually whenever we
+[2:55.92] have a LLM what happens is that let's
+[2:58.16] consider that I have a user
+[3:01.60] a user is asking a query. So this is a
+[3:05.44] my query from the user and before it is
+[3:09.28] sent to the LLM we do add a prompt right
+[3:13.84] we do add a prompt and this prompt is
+[3:16.72] just like an instruction to the LLM like
+[3:18.72] how the LLM should work okay and then
+[3:22.00] based on this we actually get an output
+[3:25.84] now this is a simple generative AI
+[3:27.68] application wherein the LLM is used to
+[3:30.80] generate the content
+[3:34.32] Okay, generate the content. So obviously
+[3:38.32] by using this specific technique we give
+[3:40.88] a query and this LLM you know that it
+[3:43.52] has been trained with billions of data
+[3:47.36] okay different kind of data that is
+[3:49.04] available in the internet and based on
+[3:52.00] this it will be able to generate the
+[3:53.84] output. One of the disadvantage of this,
+[3:58.24] let me talk about the disadvantage of
+[3:59.84] this particular approach. As you know
+[4:02.48] that every LLM that is trained, you
+[4:04.64] know, it will be trained for a specific
+[4:07.76] set of data. So let's say right now it
+[4:09.76] is 31st August. Okay, 31st August.
+[4:15.12] Let's say this is my LLM model and this
+[4:17.20] is basically GPT5
+[4:19.68] which is the recent model from OpenAI.
+[4:22.24] Now as you know that when this model was
+[4:24.08] launched this model may be trained
+[4:27.76] by may be trained with data till 1st
+[4:31.36] August. Okay. So this LLM will not have
+[4:35.12] any idea what has basically happened in
+[4:38.00] the current world between 1st to 31st
+[4:40.64] August. Right? And let's say if I go
+[4:43.20] ahead and ask a specific question to the
+[4:45.92] LLM which is between this specific dates
+[4:49.52] for any kind of events the LLM will
+[4:52.48] start hallucinating. So one of the major
+[4:55.44] disadvantages of only using the LLM is
+[4:59.60] that it will hallucinate. Okay. When we
+[5:02.64] say hallucinating what does this
+[5:04.16] basically mean? It means that even
+[5:07.28] though it does not have the knowledge
+[5:08.80] what has happened between 1st August to
+[5:10.96] 31st August any events even though we
+[5:13.60] ask any question the LLM will try to
+[5:16.56] generate it own answer because it does
+[5:19.12] not want to look like a fool. Okay, that
+[5:22.24] is the best example. It does not want to
+[5:24.48] look like a fool. So it will try to
+[5:26.24] generate some answers and it will make
+[5:28.00] sure that it'll it'll show you answer
+[5:31.12] that you may also have to believe it.
+[5:33.68] that is how it will be written you know
+[5:35.60] in terms of the output that we get so
+[5:38.00] usually this condition is basically
+[5:39.84] called as hallucinating okay so this is
+[5:42.64] one of the major disadvantage the second
+[5:45.52] disadvantage that you have so let's say
+[5:47.44] that I'm using this LLM and you know
+[5:50.00] this LLM has been trained with huge
+[5:51.68] amount of data now what happens is that
+[5:55.36] I'm running a startup
+[5:57.68] let's say now in my startup I'm solving
+[6:00.24] a specific use case and I have some data
+[6:05.36] which again I need to use this
+[6:07.52] particular data along with my LLM. Okay.
+[6:10.48] So let's say that I have some other data
+[6:12.80] like you know um policies policies of my
+[6:17.76] company I have HR policies of my company
+[6:20.96] I have finance policies you know and
+[6:24.16] this policies all will not be available
+[6:26.96] in the it will not be available publicly
+[6:29.60] because it is my startup so these all
+[6:32.00] data has been protected now I also want
+[6:34.80] to use this specific data and probably
+[6:36.72] create a chatbot okay now how do I do
+[6:39.76] this Now one way is that many people
+[6:41.84] will say hey kish we can take this
+[6:43.36] particular data and we can fine-tune the
+[6:46.88] model
+[6:48.40] right we can simply fine-tune the model
+[6:51.84] yes this is a very good solution but
+[6:54.48] understand fine-tuning a model is a very
+[6:57.20] expensive process very tedious process
+[7:00.24] because this LLM whichever LLM we are
+[7:02.48] using it has billions of parameter and
+[7:04.80] tweaking this billions of parameter
+[7:06.72] usually takes a lot of time Right? So
+[7:10.24] obviously this is a solution but this is
+[7:12.88] a very expensive solution. Okay. Now do
+[7:16.64] we have any other way? Any other way and
+[7:19.60] remember these all policies and these
+[7:21.36] all data will also keep on getting
+[7:23.44] updated as we run the startup. Right? So
+[7:28.00] every time we cannot just go ahead and
+[7:29.44] finetune it like every day we not
+[7:31.04] fine-tune it. Right? So we should try to
+[7:33.04] find out a solution like how do we
+[7:35.76] prevent this? So this can again be
+[7:38.80] prevented with the help of rag
+[7:43.20] right now how it will be prevented with
+[7:45.20] the help of rag I will talk about it
+[7:46.96] okay so here instead of fine-tuning I'm
+[7:50.32] saying that hey I will go ahead and
+[7:51.76] implement the rag now you'll understand
+[7:54.32] only when we understand the pipeline of
+[7:56.16] the rag which I will discuss in this
+[7:57.68] specific video okay now these are the
+[8:01.28] major two disadvantages that you see
+[8:04.56] right over here and yes they are some
+[8:07.44] more disadvantages which we'll just deep
+[8:09.52] dive more as we go ahead. Okay. Now what
+[8:12.72] happens in
+[8:14.96] uh if we use rag and how we are
+[8:16.72] preventing it. See rag is nothing but it
+[8:18.88] is it is saying that is a process of
+[8:20.64] optimizing the output of a large
+[8:22.48] language model. So it references an
+[8:24.40] authorative knowledge base outside of
+[8:27.04] his training data. Now how do we solve
+[8:30.80] this hallucinating and this problem that
+[8:33.12] we have. Okay. So let me just go ahead
+[8:35.36] and draw the diagram again. Okay. So
+[8:37.20] here is my LLM. Okay. And here is my
+[8:40.88] query. So let's say that uh I am coming
+[8:44.08] up with an user query. So let's consider
+[8:46.64] it over here. Okay. And here I'm drawing
+[8:50.72] a user I'm user. Okay. And this user
+[8:55.92] will first of all give a query.
+[9:00.64] Okay. Now what happens is that there
+[9:03.68] will be two important pipelines that
+[9:05.60] will be created. As I said over here we
+[9:09.84] are trying to optimize the output of a
+[9:12.16] large language model. So it references
+[9:15.60] an authorative knowledge base outside of
+[9:18.64] it training data source. So as you all
+[9:20.72] know this is my LLM right? This LLM is
+[9:23.60] already trained with huge amount of
+[9:24.80] data. Now along with this I will be
+[9:27.44] having an external
+[9:30.48] database and this database we basically
+[9:33.20] say it as vector database okay external
+[9:37.04] vector database now you you know that
+[9:39.92] this LLM is already trained with some
+[9:42.00] amount of data and any additional data
+[9:44.64] let's say my startup data my policies HR
+[9:47.36] finance whatever data is there we will
+[9:50.24] try to create a data injection pipeline
+[9:54.24] over here
+[9:56.80] data injection pipeline over here. Now
+[10:00.80] what will be this data injection
+[10:02.48] pipeline? So let's say I have my data
+[10:05.44] from this data we will do some kind of
+[10:09.28] parsing
+[10:11.44] and from this parsing we will do
+[10:14.64] embeddings
+[10:17.20] embeddings and then we finally store it
+[10:20.32] into the vector store. Okay. Now
+[10:22.64] whenever we talk about the specific data
+[10:24.80] this data can be in any format. It can
+[10:27.68] be in PDF format. It can be in HTML
+[10:30.32] format. It can be in Excel format. It
+[10:33.76] can be even in SQL database format or
+[10:36.64] unstructured format. Any format. So what
+[10:39.60] we do initially we take this data and we
+[10:42.24] do data parsing. Now here data parsing
+[10:44.72] is a very important step. I think if you
+[10:49.04] crack this step then developing a rag
+[10:52.24] application becomes very easy. Data
+[10:54.48] parsing is all about how do you read the
+[10:57.36] unstructured data or the structured data
+[10:59.84] that is present inside this and how do
+[11:03.52] you chunk this data right? How do you
+[11:07.04] chunk? How do you divide the specific
+[11:09.12] data into chunks? Chunking is very
+[11:11.76] important because you need to save this
+[11:13.28] data inside some kind of vector store.
+[11:16.88] This is nothing but vector store or
+[11:18.32] vector DB. Okay. Now vector store and
+[11:21.04] vector DB is nothing but it will
+[11:23.36] actually help you to save vectors inside
+[11:26.24] this. Okay. So once you do the chunking
+[11:29.68] after doing the chunking you pass it to
+[11:31.68] the embedding models. Now here in the
+[11:33.76] embedding models you basically convert
+[11:36.72] text to vectors.
+[11:39.60] Okay, vectors is just like a numerical
+[11:42.56] representation for text so that you will
+[11:46.40] be able to apply algorithms like
+[11:49.68] similarity search, cosine similarity
+[11:51.92] techniques that are already available,
+[11:54.40] right? Wherein similar kind of results
+[11:57.04] based on a specific query can be
+[11:58.88] retrieved from this particular
+[12:00.32] databases. Okay, so here whenever I talk
+[12:03.52] about vector DB, this is my vector DB or
+[12:06.00] vector store. Here we are storing
+[12:08.32] embeddings. Okay. And this embeddings
+[12:10.96] will get applied to every chunks.
+[12:13.52] Embeddings is nothing but we basically
+[12:15.76] use we convert text into vectors. Here
+[12:19.20] we can use different different
+[12:20.24] embeddings like Google gemin models. We
+[12:23.28] can use openi embedding models. We can
+[12:25.04] use hugging phase embedding models and
+[12:26.88] each and every embedding models exist
+[12:29.68] with different different cost and there
+[12:32.00] are also open source embedding models
+[12:33.52] which will actually help you to convert
+[12:34.88] the text into vectors. Now this is one
+[12:37.52] specific pipeline which we call it as
+[12:39.44] data injection pipeline. At the end of
+[12:41.76] the data injection pipeline, you are
+[12:43.44] able to store the text into vectors
+[12:46.08] inside your vector DB. Now how rag is
+[12:51.28] different from the previous one, right?
+[12:53.12] So initially you had this data injection
+[12:54.72] pipeline where you are converting all
+[12:56.56] your data into vectors, right? And this
+[13:00.40] data is specifically for this particular
+[13:02.64] startup. And now I have created a
+[13:05.28] knowledge base. So this is my knowledge
+[13:08.48] base. External knowledge base or
+[13:11.12] internal knowledge base whatever
+[13:12.72] knowledge base I have. And this
+[13:14.64] knowledge base does not exist with this
+[13:16.64] LLM. Right? Yes, some amount of
+[13:18.48] information may be available but not the
+[13:20.88] entire part. Now
+[13:24.00] see the definition. It is a process of
+[13:25.92] optimizing the output of a large
+[13:27.44] language so that it references an
+[13:29.92] authorative knowledge base outside of
+[13:32.08] this training data. Now what will happen
+[13:34.48] when user gives a query? Now this query
+[13:37.44] instead of directly going to the LLM
+[13:39.68] will go to this vector database right
+[13:43.12] and before going here also we need to go
+[13:45.60] ahead and apply embedding right because
+[13:48.48] this query will be converted into
+[13:52.56] vectors right why we need to convert
+[13:55.20] into vectors so that when we are hitting
+[13:58.00] this query to the vector DB this
+[14:00.00] similarity search is basically applied
+[14:03.28] and based on this we get
+[14:07.44] some kind of
+[14:09.76] context
+[14:11.36] we get some information from the vector
+[14:13.44] DB and now whatever query I'm asking
+[14:16.48] okay if I ask hey what is the leave
+[14:19.04] policy of my company
+[14:22.88] right now what will happen first of all
+[14:24.96] it will go to the vector store it will
+[14:27.52] gather all the related information that
+[14:29.36] is available over here and that
+[14:31.12] information when it is sending it to the
+[14:32.96] lm it is called as context
+[14:35.20] Now we use this context along with we go
+[14:38.96] ahead and write a specific prompt.
+[14:42.24] Now this prompt is an instruction to the
+[14:44.64] LLM and it says that you can use this
+[14:47.28] context to answer the question and
+[14:49.84] finally you get a output.
+[14:53.76] This is the entire pipeline. This
+[14:56.08] pipeline is basically called as
+[14:58.16] retrieval pipeline.
+[15:01.28] Retrieval pipeline. And this is a very
+[15:03.84] good example of a traditional rag.
+[15:08.64] Now you may be thinking kish what about
+[15:10.16] other types of rag. Don't worry thumb
+[15:12.48] don't worry I will explain it completely
+[15:14.64] from basic to advanc with implementation
+[15:16.80] each and everything because later on
+[15:18.56] we'll be discussing about agentic rags.
+[15:20.40] We'll be discussing how agentic rags
+[15:22.08] actually work each and everything. But I
+[15:24.64] hope you got an idea with respect to
+[15:26.64] this. Now here you will even not be
+[15:29.76] seeing this particular problem like
+[15:31.44] you'll not completely remove
+[15:32.88] hallucination but some amount of
+[15:34.64] hallucination if any queries that is
+[15:36.48] asked related to the data that is
+[15:38.56] present in the vector DB I will
+[15:40.72] definitely get some kind of context and
+[15:43.68] my LLM will give me the output as let's
+[15:47.12] say that if that data is not present
+[15:48.64] over here then LLM can hallucinate right
+[15:51.76] but here we are doing this see one best
+[15:54.32] example that you can do is that you can
+[15:56.00] use perfectly Perplexity.
+[15:58.56] Perplexity is nothing but it is based on
+[16:00.88] rag. It is completely developed based on
+[16:05.28] rag applications. Okay. Rag it is it is
+[16:09.28] a kind of a rag application. In
+[16:10.72] perplexity you have connected to various
+[16:13.84] retrievers. You are connected to tools.
+[16:17.60] You are connected to web search
+[16:20.56] right and then it is summarizing the
+[16:22.72] output and giving by the LLM. Right? and
+[16:25.12] it also uses various LLMs itself. I'm
+[16:27.76] also planning to mostly start a startup
+[16:30.88] soon enough within couple of weeks I
+[16:33.20] guess and the kind of application that
+[16:35.36] I'm developing is a rag application only
+[16:38.24] and it solves a very good problem for a
+[16:40.56] developer. Okay. So that is the reason
+[16:42.72] I'm not even able to upload a lot of
+[16:45.12] videos because I'm pretty much involved
+[16:47.12] in those startups and working and
+[16:49.36] developing a product that India can
+[16:51.44] definitely remember. Okay. And this is
+[16:54.40] how
+[16:56.16] you know this is this is this is how
+[16:58.08] things are and you can basically see how
+[17:00.64] good uh you know the pipeline actually
+[17:04.56] works and this is basically a
+[17:05.68] traditional rack. Now you may be
+[17:07.28] thinking what all things we'll be
+[17:08.56] discussing. Okay fine we have discussed
+[17:09.84] about a traditional rack in the future
+[17:11.92] classes what coding we'll be doing. Okay
+[17:13.84] so let's go ahead and talk about it. As
+[17:16.08] I said two important pipelines we'll go
+[17:18.40] ahead and create one is a data injection
+[17:20.72] pipeline and one is a retrieval
+[17:22.24] pipeline. Okay. Now in the data
+[17:25.60] injection pipeline you'll be seeing that
+[17:28.72] we will be performing data injection.
+[17:30.64] Along with the data injection we will go
+[17:32.88] ahead and do data parsing. Then we'll
+[17:34.88] perform embeddings. Then uh we will
+[17:38.16] store everything into the vector store.
+[17:40.40] Then we will create a ve retriever for
+[17:42.64] this. And whenever a user ask any
+[17:45.28] queries, it will be able to give the
+[17:47.36] context to the LLM. And then finally we
+[17:49.92] will be generating the output. So here
+[17:52.72] this is retrieval. This is auggmentation
+[17:56.40] right? This is augumentation over here.
+[17:58.24] Augmentation basically means what?
+[18:00.00] You're giving a context to the LLM along
+[18:02.00] with the prompt to generate the output.
+[18:04.24] Right? So this is basically called as
+[18:05.84] augumentation and finally you're
+[18:07.52] generating the output right which is
+[18:09.36] nothing but generation. So here you are
+[18:11.76] basically generating. Now
+[18:16.24] in the next session how we are going to
+[18:18.16] implement it. First of all I will show
+[18:20.48] you how to perform this two steps in a
+[18:24.32] very efficient way. Okay sorry not these
+[18:27.28] two steps. I will show you how we can
+[18:29.04] perform these all steps right data in
+[18:32.08] data parsing and embedding. Here we are
+[18:34.64] going to consider different different
+[18:35.92] files like PDF, HTML.
+[18:39.04] Okay. Um PDF, HTML, you can consider
+[18:42.40] Excel, you can consider SQL database,
+[18:44.56] you can consider any kind of files. Then
+[18:46.80] we'll do document parsing and we will
+[18:49.12] try to convert this into document. So
+[18:50.96] document is an amazing data structure
+[18:53.44] which you can basically use it and you
+[18:56.40] can even parse this do the chunking and
+[18:58.72] store it in the vector embeddings sorry
+[19:00.48] vector store then we'll perform
+[19:02.32] embeddings here we will use both open
+[19:04.64] source
+[19:06.16] and we are going to use paid embeddings
+[19:08.32] for the same okay and then finally we go
+[19:10.96] to the vector store then based on a user
+[19:13.68] query how do we go ahead and apply the
+[19:15.44] same embeddings we are going to see that
+[19:17.44] okay and then finally we'll be
+[19:19.44] developing this So mostly I really want
+[19:22.08] I'm I'm focusing more on making bigger
+[19:24.24] videos so that you don't just follow a
+[19:26.16] playlist. Okay, I want to basically
+[19:28.40] cover a lot of stuff in one video so
+[19:31.20] that uh you should also be able to
+[19:34.08] efficiently cover it instead of covering
+[19:35.84] 50 different videos. Right now when we
+[19:38.32] are doing data injection and data
+[19:39.60] parsing right there are various
+[19:41.52] techniques. See we are going to see
+[19:43.28] about optimization.
+[19:45.28] We are going to see about various
+[19:46.72] chunking strategies, context
+[19:48.64] engineering, these all kind of topics
+[19:50.80] will be coming up when we talk about
+[19:52.48] data parsing you know u what is semantic
+[19:55.04] chunker you know how do we go ahead and
+[19:57.20] do the chunking in those strategies and
+[19:59.12] all everything we'll try to discuss as
+[20:01.20] we go ahead but I hope you got a very
+[20:03.12] super cool idea about what exactly is
+[20:04.88] rag hello guys so we are going to
+[20:07.28] continue the discussion with respect to
+[20:08.80] rag already till now we have understood
+[20:12.32] what is rag then what are the main
+[20:15.12] drawbacks we are fixing with rag and
+[20:17.68] along with that we have also understood
+[20:19.60] how the rag pipeline is right it usually
+[20:22.08] consists of two important pipeline one
+[20:23.92] is the data injection pipeline and one
+[20:26.08] is the retrieval pipeline which includes
+[20:27.84] this two box okay now we are going to go
+[20:30.88] ahead with some kind of practical
+[20:32.80] implementation
+[20:34.96] now the major thing that usually comes
+[20:37.36] in my mind right whenever we go ahead
+[20:39.36] and start any new series that is how
+[20:42.96] should we cover a specific topic you
+[20:45.28] know so that we can understand the
+[20:46.88] coding from basics and we move towards
+[20:49.36] modular coding so that is how I'm going
+[20:52.32] to implement this entire pipeline
+[20:54.40] initially we will go ahead with some
+[20:56.32] basic code we'll try to understand the
+[20:58.08] fundamentals and then we will start
+[21:01.20] writing more complex code we'll be using
+[21:03.68] modular coding also so initially we will
+[21:06.64] write all the code in Jupyter notebook
+[21:08.40] then we'll increase the complexity we'll
+[21:10.32] write uh code in terms of class reus
+[21:13.52] reus usability and then we'll try to see
+[21:15.84] that how we can actually create the
+[21:17.44] pipeline. So that is how the agenda will
+[21:20.40] probably go ahead as we go ahead right.
+[21:22.88] So two important things that we'll think
+[21:24.72] about. The first important thing is to
+[21:26.64] understand about the document structure.
+[21:29.92] Now whenever we work with any external
+[21:32.80] knowledge database any data that needs
+[21:35.60] to be feeded into the vector DB you
+[21:38.24] definitely need to know about this
+[21:39.92] document structure. Why? Because inside
+[21:43.04] this data injection pipeline the first
+[21:44.88] step is data injection. Now whenever we
+[21:47.28] talk about data injection here we can
+[21:48.96] have any kind of files right we can have
+[21:50.72] PDF files, HTML file, DB file, Excel
+[21:53.76] file. Our main aim is to read all this
+[21:56.72] particular file content and probably
+[21:59.04] convert into a structure wherein we can
+[22:02.40] additionally do uh we can apply
+[22:04.56] strategies like chunking embedding and
+[22:06.56] store it into the vector DB. That is
+[22:08.48] what this entire pipeline is all about.
+[22:10.80] So for that you really need to
+[22:12.48] understand this document structure. So
+[22:14.48] if you see this diagram right so since
+[22:17.68] uh these two are the main topics that we
+[22:19.84] are going to cover in this particular
+[22:20.96] video initially we will go ahead with
+[22:22.48] document structure understanding this
+[22:24.64] and then we'll try to build our complete
+[22:26.56] rag pipeline in our complete rag
+[22:28.48] pipeline we have two important step one
+[22:31.04] is the data injection pipeline and the
+[22:33.68] other one is the query retrieval
+[22:35.12] pipeline now whenever we talk about the
+[22:38.00] data injection pipeline let's let's talk
+[22:40.16] about this in complete depth right so
+[22:42.08] initially you have this data injection
+[22:43.76] pipeline Right? In the data injection
+[22:45.84] pipeline, the first step is data
+[22:47.36] injection. That basically means let's
+[22:49.20] say that you have you may have different
+[22:51.28] kind of files like PDF, HTML, right?
+[22:55.84] Excel, you may have uh DB file, you may
+[22:59.52] have unstructured file, any kind of file
+[23:01.36] format. So in data injection what is our
+[23:04.40] main strategy is that how to proceed
+[23:06.88] with reading this particular file. How
+[23:09.44] to perform data parsing.
+[23:12.64] How to perform data parsing
+[23:15.84] and then finally how to convert this
+[23:18.16] into a document structure.
+[23:23.12] Document structure. So that is the
+[23:24.80] reason in this video right as I said
+[23:28.56] we're going to first of all understand
+[23:29.84] about document structure. how to build
+[23:31.68] this document structure, what is
+[23:33.44] metadata? Now, inside this document
+[23:35.20] structure, uh you will be learning about
+[23:37.68] important components like metadata.
+[23:40.24] You'll be learning about content. You'll
+[23:42.80] be learning about how the structure of
+[23:45.04] the metadata exist each and everything,
+[23:47.92] right? So, we will be covering
+[23:50.16] completely in depth like how these
+[23:52.56] things actually work. Okay? Once you
+[23:55.52] understand this that and this data
+[23:58.88] parsing is really really important step
+[24:00.64] because of this you know later in the
+[24:03.04] retrieval pipeline that is the query
+[24:05.12] retrieval pipeline based on this parsing
+[24:07.68] it can become much more efficient right
+[24:10.24] you'll be able to get the results much
+[24:12.00] more accuracy much more accurate so that
+[24:14.56] is the reason you need to really focus
+[24:16.00] on the data parsing now after doing the
+[24:18.64] data parsing the next step usually is
+[24:21.12] something called as chunking right so
+[24:24.00] Here in the chunking we we convert this
+[24:28.00] entire data into chunks multiple chunks.
+[24:32.48] So this chunks is like let's say this is
+[24:35.12] my chunk one this is my chunk two this
+[24:39.36] is my chunk three this is my chunk four
+[24:44.40] okay then as we go ahead after applying
+[24:48.72] chunking. So chunking basically means
+[24:50.24] and why do we apply chunking? Chunking
+[24:52.48] strategy is very simple. Whatever
+[24:54.40] documents we have, we are just dividing
+[24:56.32] this into smaller parts or smaller
+[24:58.40] chunks. The reason we do this because
+[25:02.32] whenever we consider with respect to any
+[25:05.20] LLM model or any L embedding models,
+[25:08.88] let's say here the next step is all
+[25:11.04] about embeddings. Okay. In embedding
+[25:14.96] with respect to every LMA model, there
+[25:17.28] is a fixed context size. Okay.
+[25:21.76] Let's say if I take the complete 100
+[25:23.76] pages PDF and I directly try to give it
+[25:26.24] to a L model for performing the
+[25:28.00] embeddings like uh if I give it directly
+[25:30.16] to an embedding model for performing the
+[25:32.24] embeddings and embedding basically means
+[25:33.92] you convert text to vectors. It will not
+[25:38.08] be possible. It will say that hey you
+[25:39.84] have you you are providing data more
+[25:42.48] than the context size and that will not
+[25:44.88] be possible in order to convert the text
+[25:46.56] into vectors. So within the limit of the
+[25:49.12] context size you really need to give the
+[25:51.20] data and this is for both embedding
+[25:53.12] models and even in the later stages
+[25:55.36] whenever we use any kind of LLM model
+[25:57.68] because for every LLM model there is a
+[25:59.76] fixed context size. Yeah different LLM
+[26:02.64] model may have different different
+[26:03.84] context size. So that is the reason and
+[26:05.68] it is always a good strategy that we try
+[26:07.60] to divide our data into chunks so that
+[26:10.08] we fit them in a way that we uh in the
+[26:12.72] later stages we'll be able to
+[26:13.84] efficiently put them into the vector
+[26:15.44] database which is this. So after
+[26:17.76] chunking for every chunk we go ahead and
+[26:20.40] apply embeddings. Okay. So we go ahead
+[26:23.20] and apply embeddings and from the
+[26:25.12] embeddings we finally store that into
+[26:27.36] our vector DB. Now inside this vector DB
+[26:30.48] all this will be stored in the form of
+[26:32.56] vectors. Like let's say this is my
+[26:34.08] record one record two record three
+[26:37.60] record four like that right so this is
+[26:40.48] one record two record this is my third
+[26:42.24] record then fourth record fifth record
+[26:44.24] this you have right now from this
+[26:46.80] particular vector DB you will definitely
+[26:50.08] be able to apply any kind of similarity
+[26:52.88] search similarity search now in this
+[26:57.04] specific video what we are going to do
+[26:58.80] is that I will be using any of this file
+[27:02.88] and I'll create this entire pipeline.
+[27:05.52] Okay, I will I'll just create this
+[27:07.92] entire pipeline and you also need to
+[27:11.04] probably work along with me later on.
+[27:14.16] For any other files, I will give you an
+[27:16.64] assignment. Okay, I will show you with
+[27:18.64] couple of files. Let's say I'll take PDF
+[27:20.80] file and I'll show you this entire data
+[27:22.40] injection. Then what you do is that as
+[27:24.64] an assignment you use any of the other
+[27:27.04] file format let's say Excel, CSV
+[27:29.36] whatever file format you want and you
+[27:31.44] try to complete the same pipeline. Okay.
+[27:34.24] So that is what is my strategy and
+[27:36.72] please make sure to complete the
+[27:38.00] assignment also and we will go step by
+[27:40.08] step completely from scratch so that
+[27:41.76] everybody will be able to follow. So
+[27:44.32] first of all I will go ahead and open my
+[27:46.80] empty folder and in this remember I will
+[27:49.20] be using lang chain uh and this is just
+[27:51.68] a traditional rag right now in the later
+[27:54.48] stages we will move towards aentic rag.
+[27:56.64] So from this particular command I will
+[27:58.32] just go ahead and open my command
+[27:59.68] prompt. I will open my VS code. So let
+[28:03.60] me quickly go ahead and open the VS
+[28:05.36] code. Now from the VS code the next step
+[28:08.16] will be that I will
+[28:11.44] quickly open my terminal
+[28:15.52] terminal and let me just go ahead and
+[28:17.44] write uv uh I'll just go ahead and
+[28:20.40] initialize this particular workspace as
+[28:22.40] my repository. So yt rag is my
+[28:24.80] workspace. Now I will just go ahead and
+[28:28.40] also go ahead and create my environment.
+[28:31.20] So if you're using uv package so you can
+[28:33.52] just write uv env. So my Python 3.13.2
+[28:37.84] will be the recent uh Python version
+[28:39.84] that I'm specifically using for this
+[28:41.68] particular project. And then I will go
+[28:44.24] ahead and create activate this
+[28:45.92] particular environment. Okay, perfect.
+[28:48.48] Till here we are good enough. Now I will
+[28:50.72] go ahead and create my requirement.txt.
+[28:54.24] Now from this requirement.txt txt. Let
+[28:56.24] me quickly go ahead and install some of
+[28:58.48] the packages like lang chain lang chain
+[29:01.60] core
+[29:03.20] uh core lang chain dash community
+[29:08.72] uh the all things are there. Let's me
+[29:11.28] quickly go ahead and install these
+[29:13.76] packages. So uv add minus r requirement
+[29:18.96] txt. Okay, txt.
+[29:23.60] So this is done and along with this I
+[29:26.32] will also go ahead and install some of
+[29:27.76] the libraries like pi pdf pi mu
+[29:32.88] m new pdf. Okay so these are all
+[29:34.80] libraries I'll be using. I'll talk about
+[29:36.24] why I'm using pi pdfd pi mu pdf right.
+[29:39.20] This is specifically to read my pdf
+[29:42.00] documents. So one example that I'm
+[29:43.76] actually going to show you is with
+[29:45.36] respect to PDF and then you should also
+[29:48.48] try to create the same pipeline with the
+[29:50.32] help of any other uh data types. Okay,
+[29:53.76] data formats types like let's say it
+[29:55.60] will be it can be JSON, it can be
+[29:57.28] anything as such. So uh my requirement
+[30:00.48] txt is filled. Now what I will do is
+[30:02.24] that I'll quickly go ahead and create my
+[30:03.92] data folder and here I will also go
+[30:06.80] ahead and create my notebook folder
+[30:09.52] quickly so that I can start working on
+[30:11.52] it and then along with this I will also
+[30:14.00] go ahead and add UV add ipi kernel. Okay
+[30:17.76] so that I will be able to work along
+[30:19.52] with my Jupyter notebook. So ipi kernel
+[30:22.00] has got executed. Now quickly I will
+[30:25.84] first of all start with my Jupyter
+[30:27.68] notebook and at the first thing that I
+[30:29.20] told you it's related to document data
+[30:31.44] structure right document what is
+[30:32.96] document and what is how document can be
+[30:36.24] very very helpful if you are using in
+[30:38.00] the document data uh in the data
+[30:40.24] injection pipeline okay so I'll quickly
+[30:42.56] select my kernel
+[30:45.44] and these all things you really need to
+[30:47.52] be a good at Python programming language
+[30:49.20] see there cannot be anything that you uh
+[30:52.16] you can skip Python programming
+[30:53.36] programming language. So my suggestion
+[30:54.72] would be never do that. Okay. So Python
+[30:57.44] is must and this time I'm just going to
+[30:59.60] use some more advanced coding and it
+[31:01.84] will not be possible for me to write
+[31:03.36] line by line. So definitely I'll go a
+[31:05.12] little bit fast to in order to explain
+[31:07.12] you. Okay.
+[31:08.96] Now as I told you if I go back over here
+[31:12.16] in the data injection our main aim is to
+[31:14.56] load some data apply some chunking then
+[31:17.84] convert into embeddings and finally
+[31:19.84] store it into the vector DB. That is
+[31:21.92] what my entire data injection pipeline
+[31:23.60] is all about. Right? For understanding
+[31:25.76] this, we need to understand a document
+[31:27.36] structure because all this chunking that
+[31:29.52] is done, you know, the final output will
+[31:31.92] be documents. Now, what exactly is a
+[31:34.80] document data structure? So here I will
+[31:37.28] go ahead and write what exactly is a
+[31:39.76] document data structure. So for this I
+[31:42.80] will go ahead and import from lang chain
+[31:46.32] or to probably show you this. I will be
+[31:50.32] showing you some kind of uh file so that
+[31:54.40] you'll be able to understand it. Okay,
+[31:56.64] let me put this file over here.
+[32:00.24] Okay, I have some file over here and
+[32:02.32] then we'll try to understand. Okay, what
+[32:04.80] exactly is a document structure? See
+[32:06.80] lang chin document structure. So
+[32:08.64] langchen uh document is a kind of a data
+[32:12.16] structure which will be able to save
+[32:15.52] some data in some format where we have
+[32:18.48] two important things. One is the page
+[32:20.40] content and one is the metadata.
+[32:23.76] The page content will basically have the
+[32:27.36] content that is present inside that
+[32:29.12] particular file. Okay. So if you are
+[32:30.96] reading the file inside my page content
+[32:34.80] all those detail all those content that
+[32:37.12] is present inside the file will be
+[32:38.64] available over here and metadata will be
+[32:41.68] some more additional information of the
+[32:43.68] file like it can be the file name it can
+[32:46.32] be how many number of pages are there
+[32:47.92] how what is the time stamp of the file
+[32:49.60] each and everything. So this way
+[32:52.08] whenever you read any kind of data and
+[32:54.08] you convert them right in a document
+[32:55.92] data structure this format will be very
+[32:58.88] very important because at the end of the
+[33:00.80] day we will be doing the embedding on
+[33:03.12] this particular data and pushing it into
+[33:05.04] the vector DB and when we do that
+[33:07.68] specific task pushing it to the vector
+[33:10.00] DB we will be able to apply different
+[33:12.56] different uh algorithms like similarity
+[33:15.52] search cosine similarity and we'll be
+[33:17.92] able to retrieve the results. So here
+[33:20.00] you can see that all the information
+[33:21.84] regarding this is given over here. So
+[33:24.00] usually langchen document structure it
+[33:26.48] has two important core components. One
+[33:28.32] is page underscore content and one is
+[33:30.00] metadata. And here page content will be
+[33:32.64] the actual text uh content where all it
+[33:36.00] will be very very handy in research
+[33:37.68] papers if you want to probably create a
+[33:39.36] rag application or research papers
+[33:41.36] product manual. So you can specifically
+[33:43.68] use this in lang chain you definitely
+[33:46.64] have different different loaders. Okay,
+[33:49.28] loaders like you have something like PDF
+[33:51.20] loader, you have CSV loader, you have
+[33:53.28] web- based loader, you have directory
+[33:54.72] loader. Now see all these loaders what
+[33:56.96] it does is that for PDF loader will be
+[33:59.04] used to load the PDF files and once it
+[34:02.40] loads the PDF file right it will be
+[34:04.72] giving you the output of the documents
+[34:06.88] in the form of a document structure.
+[34:09.36] Okay, I will show you practically also
+[34:11.04] why I'm specifically saying and
+[34:12.56] stressing on this. Okay, it will
+[34:14.72] definitely give you all the output in
+[34:16.80] the form of a document structure.
+[34:18.72] Similarly, in the case of CSV loader,
+[34:20.64] here we are giving the CSV file, but it
+[34:22.32] will try to convert the entire content
+[34:24.64] that is present inside that CSV into a
+[34:26.96] document data structure. Similarly, with
+[34:28.48] respect to web brace loader, clarity
+[34:30.16] loader. Similarly, there are so many
+[34:32.40] different different loaders over here,
+[34:34.48] right? You can use any of this
+[34:36.48] particular loader to load the data and
+[34:38.88] at the end of the day uh this loader
+[34:41.28] will finally give you the output in the
+[34:43.12] form of document structure. Okay. So I
+[34:47.04] hope you got an idea about what exactly
+[34:48.96] is document structure itself. Okay. So
+[34:51.12] now quickly what I will do I will go
+[34:53.28] ahead and uh start explaining you about
+[34:56.48] like how we can start with the document
+[34:58.16] structure. So for the document we need
+[35:00.88] to import from langin.
+[35:03.60] langchen
+[35:05.12] dot there's something called as text
+[35:07.76] splitter and uh sorry langchen core it
+[35:11.76] is present inside core dot documents
+[35:15.36] import document okay now this document
+[35:19.60] you will be able to see that if you just
+[35:21.84] hover over here you'll be able to the
+[35:23.76] class for storing a piece of text and
+[35:25.52] associated metadata okay now if you
+[35:30.08] really want to understand a document
+[35:31.60] structure so first of all I will go
+[35:33.04] ahead create one document let's say
+[35:35.36] manually I'll go ahead and create so I
+[35:37.04] will use this document and inside this
+[35:39.36] we will be using two parameters one is
+[35:41.20] the page content let's say this page
+[35:43.36] content I'm writing this is the main
+[35:46.24] text content
+[35:48.48] uh content
+[35:50.48] uh I'm using to create rag okay so I
+[35:55.60] I've just basically written some some
+[35:58.40] basic content over here let's consider
+[36:00.80] that this particular content is coming
+[36:02.16] from a txt file Okay, but along with
+[36:05.36] this content, if you really want to
+[36:07.28] improve the search query retrieval from
+[36:09.92] the vector DB, you need to also go ahead
+[36:11.84] and write metadata. So the second
+[36:13.36] parameter that you'll be able to see is
+[36:15.36] something called as metadata. Now inside
+[36:18.32] this metadata, you can write different
+[36:20.32] different information because at the end
+[36:21.84] of the day this is text. You can write
+[36:23.68] like okay fine this is my source. The
+[36:25.84] source is basically coming from
+[36:27.28] example.txt file. Okay. Then let's say
+[36:30.88] the number of pages are uh equal to one.
+[36:34.96] Okay. Total number of pages are like
+[36:36.64] one. Uh I can also go ahead and write
+[36:38.88] some more information like okay who is
+[36:40.40] the author for this? Author is nothing
+[36:42.16] but crush nayak. So this is the
+[36:44.80] additional details that you'll be able
+[36:46.24] to see it. Okay fine. Let's go ahead and
+[36:48.48] write date created. So date created.
+[36:52.32] Right. Date created. And here I can go
+[36:54.64] ahead and write 24 -01 - 0 like it's
+[36:58.80] like first 2024 or first 2025. Now why
+[37:02.40] these all metadata will be really really
+[37:04.64] important because once we consider this
+[37:06.88] document right once we do the chunking
+[37:09.28] once we do the embedding and once we
+[37:11.04] store into the vector DB when you're
+[37:12.80] doing the similarity search you can also
+[37:15.28] apply filters that is the most important
+[37:18.40] thing of this and when you apply filters
+[37:20.48] let's say that I am applying a filter uh
+[37:22.64] I'm searching what is the main text
+[37:24.72] content for building the rag some
+[37:26.48] information is there let's say there's
+[37:28.00] some information related to the rag if I
+[37:30.24] ask that particular question and I say
+[37:32.16] by author Krishnaak I just had that
+[37:34.80] particular filter then it knows from
+[37:36.88] which document to probably pick up
+[37:39.12] because it is going to apply a filter by
+[37:41.12] using the name of author right and that
+[37:44.08] is why this metadata will definitely
+[37:46.56] play a very important role now if I just
+[37:48.80] go ahead and execute this doc you'll be
+[37:51.52] able to see that fine I'm getting this
+[37:53.12] particular document here you can see
+[37:54.96] metadata is there and as you go ahead
+[37:56.96] you'll also be able to see page_content
+[37:59.68] right so these are the two main
+[38:01.60] important parameters with respect to
+[38:03.28] this which everybody can probably go
+[38:05.28] ahead and use it. Okay. Now I hope you
+[38:08.56] got a very clear idea about it. Uh now
+[38:11.20] what I'll do I will just go ahead and
+[38:12.72] create a simple simple create a simple
+[38:17.92] txt file. Okay. Now for creating a
+[38:21.28] simple txt file what I will do I will
+[38:23.20] just go ahead and import OS. Okay. And
+[38:26.48] I'm saying OS domake directory data /
+[38:29.20] text file. So I'm trying to create this
+[38:31.60] particular inside this f folder I'm
+[38:33.20] creating this particular folder name
+[38:35.12] okay and if it already exist I'll say
+[38:37.44] that don't do anything right so as soon
+[38:39.20] as I go ahead and execute it you'll be
+[38:40.96] able to see that okay it is going inside
+[38:43.84] the notebook file I'll remove this and
+[38:46.32] let me go ahead and write double dot
+[38:48.24] slash let's see now you can see over
+[38:50.88] here text file is present okay so text
+[38:53.28] file I'm I've just done that inside this
+[38:56.00] now let me go ahead and manually create
+[38:58.16] a text file with the help of Python
+[38:59.92] code. Okay. So I will just go ahead and
+[39:02.40] use a Python code. See guys, these are
+[39:04.32] all our basic Python code. I don't want
+[39:06.48] to write each and every line of code and
+[39:08.48] make it very very big. Our main aim
+[39:10.24] should be that understand concepts
+[39:12.40] quickly show you multiple use cases and
+[39:14.96] then try to implement this. Okay. So now
+[39:18.16] you will be able to see I have created
+[39:19.92] this simple text. I've given the file
+[39:21.92] name something like this. So let me go
+[39:23.92] ahead and write this to it. Data text
+[39:25.76] files python intro.txt. And this is some
+[39:29.20] content that is present inside that
+[39:31.04] particular key name. Okay.
+[39:33.52] So this is my file name. You can see
+[39:35.52] this is key is my file name. And then
+[39:38.00] here I have specifically my Python
+[39:40.08] content. Okay. Here I'm saying for file
+[39:43.20] content in sample text do items. I'm
+[39:46.40] telling to open the file name. I'm
+[39:48.40] saying that write the content. Okay. So
+[39:50.40] this file path is nothing but my file
+[39:53.20] name. Okay. So if file is not there, it
+[39:55.76] will try to create python intro.txt.
+[39:59.60] So now if I go ahead and execute this.
+[40:01.60] So it is saying me no directory. Okay,
+[40:04.32] let me just go ahead and create one
+[40:05.92] file. Okay, python intro
+[40:09.44] um text file. Okay, I have to give the
+[40:11.92] path because there are two files that is
+[40:13.76] over here. One is okay, one file is also
+[40:16.80] over here. Okay, so I'll just go ahead
+[40:18.72] and write dot. Okay. So now here you can
+[40:21.12] see my sample files has got created
+[40:23.12] machine_arning.txt
+[40:25.12] and python intro.txt.
+[40:28.00] Now what I will do see I've created some
+[40:31.28] sample file. I could have also manually
+[40:32.96] created it instead of doing the code.
+[40:35.04] Okay. But I really wanted to show you
+[40:36.80] all the things. Now what I will do I
+[40:38.72] will show you how to read this
+[40:40.88] particular text using text loader. So
+[40:43.68] one of the loader that is present inside
+[40:45.84] langin is something called as text
+[40:47.36] loader. So here I will go ahead and
+[40:49.36] write from langchain dot
+[40:52.96] document loaders import text loader.
+[40:56.72] Okay text loader. So here we have
+[40:59.84] imported text loader and uh along with
+[41:02.72] this uh see if you don't want to also
+[41:04.64] use this if I execute this this is also
+[41:07.36] there before if I talk about it right
+[41:10.24] when langchain keeps on changing its
+[41:12.96] library here and there. So there we used
+[41:15.36] to use langun community.d document
+[41:18.24] loaders. This also we used to use import
+[41:20.72] text loader.
+[41:22.96] So any of them you can actually use
+[41:24.56] unless and until you get a deprecated
+[41:26.24] warning. Okay. Now the question is that
+[41:28.96] how do we go ahead and read the text. So
+[41:31.60] I'll write loader
+[41:33.68] is equal to I will initialize text
+[41:35.28] loader. Give let's give the path. The
+[41:37.76] path is nothing but parent folder. We go
+[41:40.80] to the parent folder data /ext files
+[41:44.96] /ython
+[41:46.72] intro.txt. So here I have actually given
+[41:50.08] my file name whatever file name we have
+[41:51.92] actually created and we can also go
+[41:53.60] ahead and use encoding UTF8. Okay,
+[41:56.96] encoding
+[41:58.48] UTF8.
+[42:01.04] So once I do this okay and now once I go
+[42:04.48] ahead and read this loader now what it
+[42:06.40] is giving it is giving me an object of
+[42:10.08] um text loader right now in order to get
+[42:12.80] the content inside this I will be using
+[42:14.88] loader.load load. Okay. And here you'll
+[42:18.48] be able to see that I will be getting
+[42:19.84] the document.
+[42:22.88] Okay.
+[42:24.56] Now let's go ahead and print the
+[42:26.16] document. So I will write print
+[42:28.32] document. So let's say this is my
+[42:30.56] document. I'm going to print it. So here
+[42:32.32] you can see in the document you are
+[42:33.76] getting metadata. You're getting the
+[42:35.68] entire information and this is your page
+[42:37.60] content. Now this is what it is doing,
+[42:39.68] right? This text loader is by default
+[42:42.32] giving you the data in the document
+[42:44.32] structure. as soon as it is reading. And
+[42:46.72] here the best part is that you can also
+[42:48.72] see some of the metadata information has
+[42:50.56] also got updated like what is the source
+[42:53.60] right you can still go ahead and and
+[42:55.68] manually change more information inside
+[42:57.68] the metadata but by default the best
+[43:00.16] part is that whenever you're using this
+[43:02.32] all libraries then also it will be able
+[43:05.04] to give you the content in the document
+[43:07.28] structure which is really really good
+[43:09.04] because in the document structure you
+[43:10.72] have two important things. one is the
+[43:13.76] metadata and one is the page content. So
+[43:16.08] this is with respect to text loader
+[43:17.76] right I have just read the text loader
+[43:19.60] and I'm able to get this in this way.
+[43:22.08] Okay. Now one more way what I will do I
+[43:25.20] will show you with the help of directory
+[43:26.96] loader like if I have all the important
+[43:31.60] files in my directory. Can I read it
+[43:34.08] like that also or not? Okay. So for
+[43:36.32] doing this let's use uh one more library
+[43:39.76] which is called as directory loader.
+[43:42.00] Right. So here you can see lang
+[43:44.08] community.document document loader
+[43:45.76] import directory loader now inside my
+[43:48.16] directory loader you can see that I'm
+[43:49.84] giving this particular file again this
+[43:51.60] file should be uh parent folder does
+[43:54.24] this and here I given the pattern to
+[43:56.96] match see this function basically you
+[43:59.60] can give a pattern to match all the
+[44:01.52] files then you can use loaderclass
+[44:03.68] loaderclass basically means which file
+[44:06.08] you are planning to load if it is a PDF
+[44:08.08] one you can directly go ahead and use
+[44:09.76] PDF okay so what I can actually do is
+[44:12.48] that I can also go ahead and insert PDF
+[44:14.88] files over here. I can also provide this
+[44:17.52] in the form of list so that it will be
+[44:19.92] able to read both the content. Okay. So
+[44:22.16] once I go ahead and execute this, you
+[44:23.92] can see here also I'm using the encoding
+[44:26.00] and all these things. And here you can
+[44:27.84] see uh once I go ahead and write
+[44:29.60] directory
+[44:32.56] loader
+[44:34.40] dot load okay and here you will be able
+[44:38.16] to see documents.
+[44:41.44] Okay. And then now if you just go ahead
+[44:43.84] and print the documents you should be
+[44:45.20] able to see this. Okay. I'm getting an
+[44:47.20] error to log the progress please install
+[44:49.92] pip install tdk. Okay. So here we have
+[44:52.88] enabled the parameter show progress is
+[44:54.72] equal to true. Let me make it as false.
+[44:56.40] So that I don't need to probably go
+[44:57.68] ahead and install this. Now here clearly
+[44:59.92] you can see that there were two text txt
+[45:01.92] file. I got two documents. Yes. Now
+[45:04.80] further you can do chunking and all
+[45:06.80] right based on the number of documents
+[45:08.80] over there I was able to get it. Right.
+[45:11.52] So this is the most amazing part uh
+[45:14.16] about this. Now what I will uh quickly
+[45:16.56] do is that let me go ahead and create uh
+[45:19.84] a PDF file also. Okay. So here I have
+[45:22.32] some examples of the PDF file. Okay. So
+[45:25.44] let me quickly go ahead and copy this
+[45:28.80] and paste it over here. Reveal explorer
+[45:32.72] data. I have text files. I have PDF
+[45:35.20] files. Now inside this PDF file now my
+[45:37.20] main aim is to read both the text and
+[45:39.28] PDF files. Let's see. So here I have
+[45:42.48] attention PDF, this PDF, this PDF. Okay,
+[45:44.72] so this is my one document. Okay, let me
+[45:47.36] go ahead and write the same code. Copy
+[45:49.36] and paste it over here. And this will
+[45:51.60] basically be for the PDFs. So for PDF I
+[45:54.80] will be having from langchain
+[45:57.68] lang core dot document loaders import
+[46:03.04] pipdf.
+[46:06.56] I think pi pdf is not available over
+[46:08.40] here. Let's see where is this specific
+[46:10.72] library. I'm just checking out the
+[46:12.08] documentation. Uh PI PDF. Oh yeah, it
+[46:15.68] should be there. So it should be here in
+[46:18.80] the inside my community dod document
+[46:20.48] loaders. I have two different types of
+[46:22.64] library. PI PDF and PIMU PDF. PIMU PDF
+[46:25.92] is better when compared to PIP PDF. You
+[46:28.64] can see uh PI PDF shows load and parse a
+[46:30.96] PDF file using PI PDF library. And
+[46:33.60] similarly if you go ahead and see py mu
+[46:35.52] pdf it loads and parse pdf file using
+[46:38.00] this provides method to load this this
+[46:40.08] this is there all the information you
+[46:41.68] can see the differences
+[46:43.68] which one is better which one is not
+[46:45.20] better in the later stages. Okay now
+[46:47.68] what I'm doing is that I will give the
+[46:49.52] path over here. So from data / data and
+[46:53.36] here you can see the path is nothing but
+[46:55.76] PDF
+[46:57.76] here I will go ahead and write PDF
+[47:00.16] instead of writing text loader I will go
+[47:02.48] ahead and write pi mu PDF let's go ahead
+[47:04.40] and use pi mu PDF I can also include
+[47:07.68] encoding in this and here what I will do
+[47:11.12] I will quickly write PDF documents is
+[47:16.64] equal to directory loader dot load
+[47:20.64] Okay. And then if I just go ahead and
+[47:23.12] see PDF documents, you should be able to
+[47:25.60] see there are so many different PDFs.
+[47:27.44] Okay. I'm getting an error. Uh get text
+[47:30.64] got an unexpected argument. Okay. Let's
+[47:33.12] remove this. I will not be requiring
+[47:35.28] anything. We don't need to apply any
+[47:36.72] encoding by default. Okay. So here you
+[47:39.52] can see I have got all my documents.
+[47:41.60] Yes. So how many different files were
+[47:44.24] there inside PDF folder? One is
+[47:45.68] attention. PDF, embedding, PDF, object
+[47:48.00] detection. These are some of the
+[47:49.28] research paper and with respect to this
+[47:51.36] all we are able to see this and now the
+[47:53.76] best part is that when you're using Pymo
+[47:55.92] PDF here the metadata information is
+[47:57.84] completely different seeation date
+[48:00.56] source file path total pages
+[48:04.48] right format see total pages is 15 for
+[48:07.44] the first one then 27 then 21 see you
+[48:10.80] can see it so beautifully it is there
+[48:13.52] see I have also created some of the PDFs
+[48:16.08] there also you'll be able to see some
+[48:17.44] kind of author's name also right
+[48:21.04] it tries to bring up all the entire
+[48:23.20] source information and this is your page
+[48:24.80] content right so beautifully you are
+[48:27.52] able to see the entire content quickly
+[48:29.92] right so that is what this all PDF is
+[48:33.20] all about and here at the end of the day
+[48:35.28] even though we use this specific
+[48:36.64] libraries we are getting this in the
+[48:39.44] form of a document structure it is a
+[48:41.36] list of documents so if I go ahead and
+[48:43.84] say what is type of PDF document of zero
+[48:47.84] You'll be able to see okay it is of a
+[48:49.92] document type right now that is the most
+[48:53.52] important thing if you now see that we
+[48:55.76] have understood about document structure
+[48:58.64] we know how to read PDF and txt now
+[49:01.12] don't you think you can actually easily
+[49:03.28] find out how to probably go ahead and
+[49:05.28] read the Excel DB any kind of files and
+[49:08.00] this is the task that you really need to
+[49:09.60] do how you'll do it just go to lang
+[49:11.84] chain document loaders right and you
+[49:15.60] will be able to find out everything over
+[49:17.76] here. Just go ahead and try it out. Try
+[49:20.24] it out. Try it out. Try to see if the
+[49:22.64] document structure that you're getting
+[49:23.92] is good or not. So here there are so
+[49:25.92] many different things you can go just go
+[49:27.52] ahead and try it out. If you want from a
+[49:29.60] AWS S3 you you want from AWS S3
+[49:32.40] directory go ahead and just install this
+[49:34.32] particular library give this but before
+[49:36.08] that you have to do the authentication
+[49:37.76] and all right. Once you do this and uh
+[49:40.88] once you're able to do it, you can use
+[49:42.64] any kind of document loaders as you add
+[49:45.20] but at the end of the day what is what
+[49:47.92] is the best thing about this at the end
+[49:50.16] of the day you are able to convert
+[49:52.00] everything into a document data
+[49:53.44] structure right now if you see with
+[49:56.16] respect to data injection here you have
+[49:58.00] actually completed now the next step is
+[49:59.84] that I will move towards chunking okay
+[50:02.32] I'll move and show you how the chunking
+[50:04.32] can be specifically done what are the
+[50:06.08] different ways of chunking um that you
+[50:08.40] can actually do you know and then
+[50:10.40] finally we'll see that how we can even
+[50:12.00] convert into embeddings we'll try to use
+[50:14.00] an open source embeddings for this and
+[50:15.92] then finally a vector DB so yes I hope
+[50:18.48] you have understood about the data
+[50:20.08] injection part now let's move towards
+[50:21.84] the chunking part where we will
+[50:23.68] understand uh how we can actually
+[50:25.52] performing chunking and I have also told
+[50:27.36] you what is the importance of chunking
+[50:30.00] so guys till now we have already
+[50:31.92] discussed about the entire document
+[50:33.76] structure and uh I've also shown you how
+[50:36.64] with the help of PI PDF loader PI MUD MU
+[50:39.44] PDF loader and how with the help of text
+[50:42.00] loader you will be able to read the txt
+[50:44.24] file and PDF file. All the other files
+[50:46.96] again you can go ahead and see the
+[50:48.24] langun documentation you have different
+[50:50.08] different document loaders which I have
+[50:51.84] already discussed right and these are
+[50:53.92] some of the document loaders that you
+[50:55.44] can specifically use uh which I have
+[50:57.76] already shown you um from the
+[51:00.00] documentation page now we going to go
+[51:02.64] ahead one step ahead you know um because
+[51:05.04] we have just started with this we
+[51:07.68] understood about data parsing and we
+[51:09.52] were able to create the document
+[51:10.80] structure itself now I really want to
+[51:13.28] probably go ahead and do the chunking
+[51:15.76] uh then after the chunking I also want
+[51:18.96] to probably go ahead and do the
+[51:20.16] embedding and finally whatever text to
+[51:23.44] vectors is basically converted this
+[51:26.00] vectors will be stored in some kind of
+[51:28.32] vector store DB okay so let's go ahead
+[51:30.80] and start building this entire pipeline
+[51:32.88] okay so uh and this pipeline will
+[51:35.44] initially build it we'll start from
+[51:36.88] complete basics since this entire rack
+[51:38.88] series we are learning from basic stuff
+[51:41.68] right so definitely you'll love it
+[51:43.92] you'll love to expl explanation that
+[51:45.20] what I'm doing you know so here uh what
+[51:47.20] I will do I will go ahead and create one
+[51:48.96] more file quickly and I'll say hey this
+[51:51.84] is nothing but PDF loader ipnb okay and
+[51:56.40] uh here I will go ahead and select my
+[51:57.84] kernel this is my kernel and let's go
+[52:00.48] ahead and start the entire rag pipeline
+[52:04.80] and this pipeline is nothing but data
+[52:07.52] injection to vector DB pipeline okay
+[52:11.68] vector DB pipeline we are going to go
+[52:13.52] ahead and build this quickly.
+[52:16.72] So, uh first step as you know that I
+[52:20.08] already have one data folder over here.
+[52:23.84] So, this is what is my data folder and I
+[52:26.24] definitely have a lot of PDF files
+[52:27.76] inside this PDF folder itself.
+[52:30.40] So first thing first uh what I will do I
+[52:32.56] will go ahead and create a function you
+[52:35.92] know uh saying that uh where in I will
+[52:39.28] try to read all the documents from this
+[52:42.08] and I will try to uh read the data
+[52:44.80] inside this particular document that is
+[52:46.24] PDF file and then uh we may use pi PDF
+[52:49.60] folder PI PDF loader and then finally
+[52:52.40] convert that into a document. Okay. So
+[52:54.16] for this what I will do I will quickly
+[52:56.32] go ahead and create a function and this
+[52:58.72] function will be nothing but uh this is
+[53:01.12] a markdown. Let me just go ahead and
+[53:02.80] make a code cell. So uh before I go
+[53:05.92] ahead I go I want to import all the
+[53:08.72] important libraries that are available.
+[53:11.68] Uh some of the libraries that I will be
+[53:13.36] noting down over here is nothing but
+[53:15.52] import OS. Then you have something
+[53:17.52] called langin document langen community
+[53:20.96] langun community document loaders. I'm
+[53:23.04] using pi pdfd loader and all then you
+[53:25.20] also have this langchen textsplitter and
+[53:28.32] recursive character textplitter. Okay so
+[53:30.96] u otherwise instead of writing in a new
+[53:33.04] file I will let's go ahead and use okay
+[53:35.76] this file is fine so I will just go
+[53:37.12] ahead and execute this I will I don't
+[53:38.88] require the path library. So once I
+[53:41.68] execute this these all libraries will
+[53:44.72] get executed now we will be able to use
+[53:47.12] this. Now since my first step is related
+[53:50.88] to data injection. Now whenever I really
+[53:53.12] want to specifically do data injection,
+[53:55.36] what I will do is that I will try to
+[53:56.96] read all the PDFs. So we will read all
+[54:00.40] the PDFs
+[54:02.16] inside the directory. Okay, directory.
+[54:06.32] Now guys, uh you need to have some
+[54:08.64] knowledge with respect to coding. So
+[54:11.60] otherwise if I keep on writing line by
+[54:13.28] line, it'll definitely take a lot of
+[54:14.88] time. So here we are going to create a
+[54:17.04] function which is called as process all
+[54:19.04] PDFs. Here we need to give the PDF
+[54:21.92] directory. Once you give the PDF
+[54:24.32] directory uh we will probably go ahead
+[54:27.12] and take the path. So for this also I
+[54:29.60] will be requiring the path library over
+[54:31.52] here. So once we get the path based on
+[54:34.08] the workspace location here we are going
+[54:36.24] to get the PDF directory path. Then
+[54:38.16] we'll list of all we'll go ahead and
+[54:40.96] apply this regular expression to get all
+[54:42.80] the PDF files. Then here I'm printing
+[54:45.60] what is the length of the PDF file and
+[54:47.60] we are processing every PDF files. So
+[54:49.68] here you can see that I'm using pi pdf
+[54:51.44] loader str of pdf file name whatever
+[54:54.32] file name then I'm doing documents is
+[54:55.92] equal to loader.load load here I get the
+[54:58.08] document okay here what I'm doing I'm
+[55:00.72] adding some more information related to
+[55:02.64] metadata so here you can see doc
+[55:04.24] metadata of source file I'm giving the
+[55:06.48] pdf file name I'm also saying that hey
+[55:09.36] what is the metadata file type so this
+[55:11.52] is my new keys inside my metadata to
+[55:13.52] some put some more additional
+[55:14.88] information and finally you get a PDF
+[55:17.28] I'm just mentioning some more metadata
+[55:19.44] information so along with this I've put
+[55:21.36] up this metadata information like file
+[55:23.20] type source file now you can add keep on
+[55:25.84] adding any number of metadata
+[55:27.28] information like you want right and once
+[55:29.60] we read this entire documents we are
+[55:31.68] going to go ahead and store in this
+[55:33.28] particular variable that is called as
+[55:34.80] all documents which is nothing but it is
+[55:36.72] a list of it is a list it is an empty
+[55:39.04] list okay so once we do this here we'll
+[55:41.76] be able to see it is returning this all
+[55:43.60] documents so this function what it does
+[55:45.28] is that from inside a folder it reads
+[55:48.80] all the all the uh PDF files it reads
+[55:52.24] the content inside this it adds this
+[55:54.32] kind of metadata information and finally
+[55:56.80] it is basically storing in this
+[55:58.24] particular variable. Okay. Now we call
+[56:00.88] this particular function process all
+[56:02.80] PDFs. I'm giving the data folder over
+[56:04.64] here. So once I execute this you'll be
+[56:06.48] able to see that it has found out four
+[56:08.24] PDF files and attention. PDF had 15
+[56:11.60] pages. My embedding PDF had 27 pages and
+[56:15.28] object detection PDF had 21 pages. And
+[56:18.40] this is proposal one page. Okay. So all
+[56:21.28] the information I have it over here. Now
+[56:23.52] if I go ahead and check my all
+[56:27.04] documents.
+[56:28.80] So if I go ahead and check just this
+[56:30.56] particular v variable all PDF documents
+[56:33.44] you should be able to see that this is
+[56:36.32] my list of documents right and the best
+[56:38.56] part is that for every PDF you'll be
+[56:40.40] able to see by default some of the
+[56:41.76] metadata information along with this you
+[56:43.92] can see there is an author metadata
+[56:45.92] keywords mode date all this modified
+[56:48.48] date right all these information are
+[56:50.48] basically present in the metadata
+[56:52.00] information now here what we have added
+[56:54.40] we have added source along with the
+[56:56.48] source you can see we have also uh total
+[56:58.72] pages is also added at source file is
+[57:00.88] also added and these are my text which
+[57:03.44] is present inside my page content right
+[57:06.00] so for every PDF whatever is the
+[57:08.32] possibility size of the document we have
+[57:10.64] we are able to read it now this is a
+[57:12.96] step that we have done right now we have
+[57:15.20] to go to the next step and perform the
+[57:17.12] chunking now how do I go ahead and
+[57:19.04] perform the chunking now I have my all
+[57:21.20] my list of documents so what I will do I
+[57:23.44] will just go ahead and quickly create a
+[57:25.20] function
+[57:26.80] and this will be specifically text
+[57:29.60] splitting
+[57:32.16] get into chunks. Okay, chunks I have
+[57:35.12] over here. Right. So, first of all, I
+[57:37.20] will go ahead and create a function
+[57:38.40] which is called as split documents.
+[57:40.88] Split documents. And inside this
+[57:43.28] documents, I will be giving my
+[57:45.84] parameters. The first parameter is
+[57:47.60] nothing but documents. Then I have my
+[57:50.16] chunk size is equal to,000. then I have
+[57:55.04] chunk underscore
+[57:56.96] overlap is equal to 200. Okay. So I have
+[58:01.52] given all these things. Now you know how
+[58:02.96] to do the chunking. It is very simple.
+[58:05.36] You go ahead and directly use the
+[58:07.12] recursive character text.
+[58:09.44] And for this we we definitely require
+[58:12.16] recursive character text which we have
+[58:13.92] already imported I think right. So on
+[58:16.08] the top you'll be able to see that we
+[58:17.44] have imported this which is present in
+[58:19.04] langin.extplitter.
+[58:20.80] So inside we are taking this text
+[58:22.56] splitter which is nothing but recursive
+[58:23.92] character text splitter. Now this is
+[58:25.76] recursively split all the document size
+[58:28.64] based on the chunk size that is 1,000
+[58:30.64] chunk overlap 200. Chunk overlap
+[58:32.48] basically means some number of text will
+[58:35.04] be able to get overlapped between two
+[58:37.12] different documents right when we are
+[58:38.48] doing the splitting. And uh here you can
+[58:41.20] see we are also using separators right
+[58:43.36] this is just like an empty space like a
+[58:45.52] blank uh sorry this is an empty space
+[58:48.00] this is one more separator this is a new
+[58:50.00] line separator now you tell me in the
+[58:51.60] comment section what separator is this
+[58:53.44] okay so we can use different different
+[58:55.52] separators you can also use comma um
+[58:58.24] we'll be seeing different types of
+[58:59.52] chunking strategies in the later stages
+[59:01.36] but let's let's start creating this one
+[59:04.24] pipeline then you'll be getting a clear
+[59:06.48] idea about it like how this entire
+[59:08.32] pipeline works Okay, then you have this
+[59:10.48] text splitter. Uh once you uh
+[59:13.20] specifically have this text splitter,
+[59:14.80] you can actually use this to do the
+[59:16.56] splitting. Right. So now what I will do,
+[59:18.96] I will create a variable inside this and
+[59:22.00] I will write textplitter.split
+[59:23.92] documents. So we are using the split
+[59:25.44] documents and we are giving the
+[59:26.48] documents and these all are the default
+[59:28.16] parameters that we are giving over here.
+[59:29.92] Now once we do the split, you'll also be
+[59:31.92] able to see what is the page content.
+[59:33.92] I'll just try to display 200 characters
+[59:35.84] from the page content and you can also
+[59:37.28] see the metadata right so once we go
+[59:39.84] ahead and execute this this is going to
+[59:41.52] return the entire split documents now
+[59:44.16] let's go ahead and use this split let's
+[59:47.68] say here I'm just going to go ahead and
+[59:49.52] get all my chunks I will be using this
+[59:51.84] function split documents and let's give
+[59:55.04] the documents here we are going to give
+[59:56.88] the list of documents right uh like uh
+[60:00.64] what are the list of documents so list
+[60:02.24] of documents is nothing but all PDF
+[60:03.92] document. So I will give it over here
+[60:06.88] and let's see the chunks. Okay. So now
+[60:09.68] if I go ahead and just go ahead and
+[60:11.04] print the chunks, you should be able to
+[60:13.04] see that my all my data is basically
+[60:15.04] chunked, right? And uh you can see that
+[60:18.48] we have splitted 64 documents into 359
+[60:21.12] chunks. So these are all my chunks that
+[60:23.84] we have done it, right? That basically
+[60:25.84] means we have converted all our text
+[60:27.60] into smaller chunks, right? Based on the
+[60:30.56] uh chunk size and the overlap. So like
+[60:33.36] this kind of chunks we have how much 359
+[60:35.76] I guess how much it is 359. Initially we
+[60:38.48] had only 64 documents right for every
+[60:40.64] page there will be a separate document
+[60:42.72] structure. Perfect. So we have done this
+[60:46.72] and uh we have done the splitting part.
+[60:48.80] Now let's go to the next step. The next
+[60:50.96] step will be quite interesting because
+[60:53.20] now if you see from this particular
+[60:56.08] pipeline right what are we doing right?
+[60:58.88] So here we have done the chunking but
+[61:00.48] these two are the most important steps.
+[61:02.88] One is the embedding right we need to
+[61:05.20] perform some kind of embeddings over
+[61:06.72] here right embedding uh generation
+[61:09.76] embedding generation and vector store DB
+[61:11.84] right embedding you can use any kind of
+[61:14.08] models but I will try to focus on using
+[61:16.24] open source model so that everybody will
+[61:18.16] be able to just try it out you know uh
+[61:21.60] for this what I will do I will just try
+[61:23.44] to use some kind of modular coding so I
+[61:25.44] will try to create some classes you know
+[61:27.44] for embedding I will create a separate
+[61:28.96] class and inside this we will try to
+[61:31.04] define different different function
+[61:32.80] Because in embedding uh you know that
+[61:34.80] you are converting text into vectors
+[61:36.64] right so for converting text into
+[61:38.88] vectors I may define different functions
+[61:40.48] like loading the model generating
+[61:42.48] embeddings you know that kind of and in
+[61:44.72] vector DB like again we'll try to create
+[61:46.96] this as a separate class. So let's go
+[61:49.04] ahead and probably go ahead and discuss
+[61:51.28] about this uh wherein we work on the
+[61:54.80] embedding part
+[61:57.28] quickly let's go ahead and see the
+[61:59.44] embedding part. So for the embedding I
+[62:01.36] will just go ahead and write a markdown.
+[62:04.32] So let me quickly write embedding and
+[62:07.20] vector store DB right. So we are going
+[62:10.00] to specifically go ahead and implement
+[62:11.60] these two important modules. Now first
+[62:13.92] of all what I do do is that I I
+[62:16.32] definitely require some kind of
+[62:17.52] libraries over here right for
+[62:19.04] embeddings. So for embedding uh we are
+[62:21.68] going to use sentence transformer. uh we
+[62:23.68] are going to use a model that is
+[62:25.12] available in hugging face and for that I
+[62:27.36] will be using the sentence transformers
+[62:29.20] library along with this uh I also want
+[62:32.64] to use some kind of uh you know vector
+[62:36.72] store so this is the vector store I may
+[62:39.44] use that is fire CPU you can use fires
+[62:42.72] or you can also go ahead and use chromb
+[62:44.56] so these are some very good open-source
+[62:46.72] vector store that is available um now
+[62:50.24] these all libraries will be more than
+[62:51.68] sufficient to get started with. So
+[62:53.12] quickly let me go ahead and install it.
+[62:55.36] So I will write uvad minus r
+[62:57.44] requirement.txt.
+[63:00.00] So once I do the installation you'll be
+[63:02.40] able to see that.
+[63:04.96] Okay the installation will get
+[63:06.64] completed.
+[63:09.04] So once the installation gets completed
+[63:10.80] it'll take some amount of time because
+[63:12.32] we are loading the entire transformers.
+[63:14.72] So here you can see that quickly it has
+[63:16.16] got installed. Now I'll go again back to
+[63:18.24] over here. Now once I go over here what
+[63:21.12] is the first step that I'm actually
+[63:22.40] going to do is that I will quickly go
+[63:24.48] ahead and import some of the libraries
+[63:26.32] that I require like this right so I'm
+[63:28.96] importing numpy from sentence
+[63:30.96] transformer I'm importing sentence
+[63:32.48] transformer my embedding model right
+[63:35.12] will be available inside this then I'm
+[63:37.84] importing chromadb then uh we also
+[63:40.64] importing the settings from this we are
+[63:42.48] importing uyu ID the reason of creating
+[63:44.88] this uyu ID is that because every record
+[63:47.20] that we specifically insert into the
+[63:49.52] vector dv we'll have some kind of id
+[63:51.84] over there we'll generate that then
+[63:54.08] along with this we will also be
+[63:55.44] importing list dictionary ne and t pupil
+[63:57.92] and uh since we are going to apply
+[63:59.36] cosign similarity while doing the
+[64:00.80] retrieval from the vector db I also will
+[64:02.88] be importing this and this is available
+[64:04.40] in skyitler so let's quickly execute
+[64:06.96] this okay and till then I will go ahead
+[64:10.40] and create more number of cells now as I
+[64:13.68] said for embedding I will go ahead and
+[64:16.16] write one different class So I will say
+[64:19.44] embedding manager. So this will be
+[64:22.48] responsible in doing the embedding part.
+[64:24.56] So first first thing is that once I am
+[64:27.36] creating this uh for every class that we
+[64:30.00] specifically create, we need to write an
+[64:31.92] init function. Okay. So init. So this is
+[64:35.12] my constructor you'll be seeing that it
+[64:37.28] handles document embedding generation
+[64:38.72] using transformer. Here we are
+[64:40.88] initializing the embedding manager and
+[64:43.20] the model name that we are giving is all
+[64:44.96] mini LM L6 V2. So this is available uh
+[64:49.84] in uh hugging face this specific model
+[64:52.64] all mini L6 V2 and this is responsible
+[64:55.60] in specifically converting a text into
+[64:57.84] vectors and you get somewhere around 384
+[65:00.16] dimensions. Okay. Then uh we initialize
+[65:02.80] the embedding manager. Then model name
+[65:05.92] is nothing but hugging fist model name
+[65:07.52] for sentence embeddings. We are going to
+[65:08.96] use this. Okay. So here we are
+[65:10.72] initializing the model name. Uh we are
+[65:13.28] saying self domodel is equal to none.
+[65:15.28] Okay. Because here uh later on we'll
+[65:17.12] initialize this value. This function is
+[65:19.76] very important load model. So that
+[65:21.84] basically means my next function will be
+[65:23.20] load model. And this model work is very
+[65:25.52] simple. This function work is very
+[65:27.04] simple. It is going to load this model
+[65:29.44] that is all mini L6 V2. Okay. So I will
+[65:32.40] create another function which is nothing
+[65:33.68] but underscore load model. Why we write
+[65:35.76] underscore? Uh this is just like a
+[65:37.68] protected function. Uh if you know about
+[65:39.84] classes, we use something called as a
+[65:42.32] protected function. And within this
+[65:44.00] protected function within this class
+[65:45.44] only it'll be accessible. So here uh
+[65:47.92] what we are doing we using the sentence
+[65:49.52] transformer and whatever model name we
+[65:51.92] have we are loading it. Okay we are
+[65:54.40] loading it. So selfro model of sentence
+[65:56.56] transformer model self model name then
+[65:58.32] this will be modeled uh loaded and here
+[66:00.80] you'll also be able to get the
+[66:01.92] dimension. For that we use a function
+[66:03.44] called as get sentence embedding
+[66:05.12] dimension and by default it will be uh
+[66:08.00] somewhere around 384 dimensions. Okay,
+[66:10.96] that basically means every text will be
+[66:12.72] converted into 384 dimensions. So once
+[66:15.36] we have this init function, we have the
+[66:16.96] load model. Now one more function that
+[66:18.80] we require is generate embeddings,
+[66:20.40] right? So here uh you'll be able to see
+[66:23.28] that I will be seeing this generate
+[66:26.24] embeddings function. Okay. So generate
+[66:29.84] embedding is nothing but it takes the
+[66:32.00] text that is nothing but list of string
+[66:34.40] and it returns a numpy array. Okay. So
+[66:37.12] here it generates the embedding for list
+[66:38.80] of text very simple. So here what we are
+[66:41.20] doing we are basically using this self
+[66:42.80] domodel dot encode is the function that
+[66:45.28] we have to use on text whatever text
+[66:47.20] list of text we give and we also giving
+[66:49.60] show progress bar is equal to true so
+[66:51.44] that we should be able to see the
+[66:52.72] progress bar and we return the
+[66:53.84] embeddings. Okay. Now generate embedding
+[66:56.80] is one function. Load model is one
+[66:58.32] function. We have al also used get
+[67:00.32] sentence embedding dimension just to get
+[67:02.24] the dimension. Okay. Now for this you
+[67:05.60] can either get I can you can either
+[67:07.44] create this particular function or you
+[67:08.96] can also remove this it is not necessary
+[67:10.88] but what I did is that to show you much
+[67:13.20] more in a better way we will create this
+[67:15.12] function get sentence embedding
+[67:16.88] dimension. So here is my get embedding
+[67:19.84] dimension self. So here what we are
+[67:21.76] doing we just written model get sentence
+[67:23.76] embedding dimension. See instead of
+[67:25.44] doing like this also I can write like
+[67:26.80] this only over here. Okay I can just
+[67:29.36] quickly write this particular function
+[67:32.08] over here. Okay. So sometime it is not
+[67:34.56] required you can also. So I will just go
+[67:36.72] ahead and remove it if you want. Okay I
+[67:38.64] will just remove it. Perfect. So I have
+[67:42.32] these two three important function. Now
+[67:44.64] we can initialize the embeddings. Okay.
+[67:49.84] Uh sorry we can initialize the embedding
+[67:51.84] manager. So here I will write embedding
+[67:55.68] manager is equal to embedding
+[68:00.72] manager.
+[68:03.20] So I hope this is the class name
+[68:06.88] should not be underscore it should be
+[68:08.32] like this. Okay now once I go ahead and
+[68:10.56] write this and once I execute it this
+[68:12.56] will just go ahead and initialize the
+[68:15.12] constructor. Right. So here you can see
+[68:17.12] it is loading the embedding model. All
+[68:18.80] mini LM V62 model loaded successfully
+[68:22.48] and here you can see the dimension is
+[68:24.08] 384 right so it has been loaded so when
+[68:27.44] we calling this particular function this
+[68:28.80] is basically getting loaded right so my
+[68:31.04] embedding manager now has the model
+[68:32.88] information over here great so I have my
+[68:36.80] model ready so if you see from this
+[68:38.88] particular graph this entire class has
+[68:41.60] been created now we go to the next step
+[68:43.44] and create this specific class that
+[68:44.96] basically means over here we have our
+[68:46.80] model embedding ready we just need to
+[68:48.48] use it. Now, similarly, we'll go ahead
+[68:50.64] and create it for the vector store also.
+[68:52.56] Okay, vector store is just like a vector
+[68:54.16] DB database where you can store all the
+[68:56.48] vectors that has been converted by the
+[68:58.64] embedding layer inside it so that you
+[69:00.88] can apply any kind of similarity search
+[69:02.72] into it. Right? So, first of all, let me
+[69:05.92] quickly go ahead and define a class for
+[69:08.88] this also. So, here I will go ahead and
+[69:12.24] write vector store. Okay, vector store.
+[69:17.36] Uh remember guys the code that I'm
+[69:20.16] showing you is very simple if you just
+[69:21.84] see you need to have some coding
+[69:24.16] knowledge if you really want to become
+[69:26.00] better in rag. Okay now we'll go to the
+[69:29.04] next step with respect to the vector
+[69:30.88] store. Now in the vector store we are
+[69:32.56] creating a class vector store. Again
+[69:34.40] here we are using a init method. We are
+[69:37.28] giving a collection name. What should be
+[69:38.80] the collection name for the vector store
+[69:40.32] itself. And uh here the collection name
+[69:43.92] we giving it as PDF documents. We are
+[69:45.84] also giving the persistent directory
+[69:47.36] which will be this particular directory
+[69:49.36] that is inside my data folder.
+[69:51.12] Persistent directory means whatever
+[69:52.72] vector store is basically created we are
+[69:54.32] going to save it that in the hard disk.
+[69:56.40] So here uh first of all I'm giving the
+[69:58.32] collection name I'm giving the person
+[69:59.92] directory collection is none. Self
+[70:01.84] docolction is equal to none. Okay. And
+[70:03.76] then we are initializing the store. Now
+[70:05.92] whenever we initialize the store that
+[70:07.60] basically means this function will be
+[70:09.36] initializing the vector store itself.
+[70:11.68] Right. So for this we need to create
+[70:13.68] another function again and see the code.
+[70:16.08] Okay, just observe the code. Here we are
+[70:17.84] initializing chromab client and
+[70:19.36] collection. So here we have written
+[70:20.72] osmake directory of self.persistent
+[70:22.88] directory whatever directory path is
+[70:24.32] there. If it already exist we are just
+[70:26.64] going to keep it like that otherwise it
+[70:28.08] is going to create a new directory. Then
+[70:30.72] we create a client self.client wherein
+[70:33.20] we are using chromadv.persistentclient
+[70:35.36] function and we are given the persistent
+[70:37.36] directory over here. So what it is going
+[70:38.80] to do? It is basically going to create a
+[70:40.72] client which will be having a reference
+[70:43.04] to the chrom vector store. Okay. Then we
+[70:46.24] go ahead and create a collection. So
+[70:48.48] here we write self.colction. Then
+[70:50.16] self.client dot get or create
+[70:52.00] collections. We're giving the collection
+[70:53.68] name and we're giving some metadata
+[70:55.12] information like what is the collection
+[70:56.96] information. And here we basically
+[70:59.44] create a collection uh collection
+[71:01.84] basically means it's just like uh where
+[71:03.92] we are going to store the uh vector uh
+[71:05.92] where we are going to store the uh
+[71:07.84] vectors inside my vector store. So it'll
+[71:10.56] be stored inside this particular
+[71:11.68] collection name. Then we are
+[71:13.68] initializing this with the collection
+[71:15.04] name dot collection count. Okay. So as
+[71:18.24] soon as we execute this that basically
+[71:20.00] means my chromb client will be ready and
+[71:22.32] my collection will be created. Okay. Now
+[71:24.96] the next function is that usually
+[71:26.40] whenever we create a collection we need
+[71:28.80] to add the documents right. So for
+[71:30.64] documents we will be creating another
+[71:32.56] function. So quickly let's go ahead and
+[71:35.76] create this because whenever I have a
+[71:37.44] document I will go ahead and create this
+[71:39.12] particular connection. Okay. So here you
+[71:42.00] can see I've created another function
+[71:43.84] which is called as add document. Here we
+[71:45.68] give the list of document. We apply the
+[71:47.28] embeddings.
+[71:48.80] Very simple add documents and the
+[71:50.16] embeddings to the vector store. And here
+[71:52.40] you can see if length of documents is
+[71:53.84] not equal to length of embeddings. Here
+[71:55.92] you can actually see this. Now we are
+[71:57.68] preparing the data for chromb. We
+[71:59.52] require ids, metadata, document text and
+[72:01.84] embedding list. So now whatever
+[72:04.72] documents I have over here. Whatever
+[72:06.64] documents I'm getting, I will be zipping
+[72:09.60] it means I I'm creating a pupil with
+[72:11.52] embeddings and then I am creating a UYU
+[72:14.96] ID. Why I require UU ID? because it's
+[72:17.84] just like a id for a specific record,
+[72:21.20] right? And that will be my doc id. Okay,
+[72:24.08] doc id variable and I'm appending it
+[72:25.84] over there. Then we are preparing the
+[72:28.00] metadata. Whatever doc metadata we get.
+[72:31.20] Remember we are iterating through this
+[72:32.96] documents. So we have all the
+[72:34.64] information. So that all metadata we are
+[72:36.80] putting it over here. Doc index content
+[72:39.44] length. We are just adding some more
+[72:40.64] metadata information to put it inside my
+[72:43.44] vector db. Then we get the document
+[72:46.32] content from doc.page_content.
+[72:49.04] And we also get the embedding where we
+[72:51.28] are converting this embedding to list.
+[72:53.20] Okay. See two information is basically
+[72:55.36] required right over here. If you see uh
+[72:58.40] from this particular function one is
+[73:00.08] embedding which is my MP. ND array right
+[73:02.88] and this embedding is coming from where
+[73:04.64] from the previous function right
+[73:06.24] generate embeddings where we have done
+[73:07.68] it. So it's all linkage. See the reason
+[73:10.80] of creating this particular in the form
+[73:12.32] of class because I want to link each and
+[73:14.64] every pipeline right. So here we are
+[73:16.40] writing embedding list.append
+[73:17.68] embedding.2 two list. So we have the
+[73:19.60] page content, we have this list. So what
+[73:21.92] I'm doing I'm adding that entirely in
+[73:24.64] the collection. So for this we require
+[73:26.40] ids, we required emitting list, we
+[73:28.24] require metadata, we require document
+[73:30.40] text. So whatever we have prepared,
+[73:33.36] we're just adding it over here based on
+[73:35.12] the parameters, right? And finally
+[73:37.04] you'll be able to see the how many
+[73:38.24] number of documents has been inserted.
+[73:40.24] Now quickly let's go ahead and
+[73:43.12] initialize.
+[73:47.76] Let's go ahead and initialize my vector
+[73:49.60] store. So I'll write vector store is
+[73:51.60] equal to
+[73:55.28] uh vector
+[73:57.92] store and I'll initialize this. Okay. So
+[74:01.52] quickly I will go ahead and write vector
+[74:03.60] store. So now this is basically going to
+[74:06.48] initialize the entire vector store
+[74:08.08] itself. Right. So here you can see this
+[74:10.80] is my collection name and existing
+[74:12.72] document in collection is zero since we
+[74:14.88] did not add any number of records. Okay.
+[74:17.92] Now, if we want to add any number of
+[74:19.60] records, we have to call this function
+[74:22.08] add documents, right? So, let's uh go
+[74:25.12] ahead and do that and let's call it.
+[74:26.88] Okay. Now, first of all, uh you know
+[74:29.28] that I have already done the splitting
+[74:30.88] of the chunks, right? So, here if you go
+[74:33.20] ahead and see this, this is my split
+[74:36.08] chunks, right? Uh sorry, that was the
+[74:38.88] variable. Let's see which variable it
+[74:40.56] has got saved. Okay, it should be
+[74:42.16] chunks,
+[74:44.96] right? So these are my chunks right
+[74:47.92] now chunks what I am actually going to
+[74:49.84] do is that I will extract all the text
+[74:52.64] from that particular chunk and we'll
+[74:54.40] generate an embedding. Okay. So for that
+[74:56.96] what I will do I will say I will put a
+[74:59.04] list comprehension. So here now let's
+[75:03.36] convert
+[75:05.68] the
+[75:08.32] text to embeddings. Okay we're going to
+[75:11.20] go ahead and do this. And here we are
+[75:13.52] basically going to write
+[75:16.80] chunks.
+[75:18.40] First of all, I'll iterate. Okay, I will
+[75:21.04] say that hey for doc in chunks.
+[75:25.60] Okay, and we are just going to take this
+[75:28.16] doc dot page content. Okay, so we are
+[75:31.92] going to take all this page content and
+[75:34.24] basically go ahead and create my text
+[75:37.12] text variable. Okay. So once I go ahead
+[75:39.68] and do this, you should be able to see
+[75:41.60] this is my text, right? All the text
+[75:44.08] that I have and this text I will pass it
+[75:46.56] to my embedding manager, right?
+[75:49.84] Embedding manager which I have actually
+[75:51.36] created. So what I will do quickly, I
+[75:53.76] will just go ahead and execute this once
+[75:55.60] again. I have all my text.
+[75:58.40] Okay, I have all my text. Now from this
+[76:01.28] we will go ahead and generate the
+[76:04.40] embeddings. Now once we generate the
+[76:06.64] embedding how do we generate the
+[76:07.76] embeddings very simple we use this
+[76:11.12] embedding manager which object we have
+[76:13.92] actually created what object we have
+[76:15.44] created earlier if you see over here
+[76:18.56] this is my embedding manager right so we
+[76:20.40] are using this embedding manager dot
+[76:22.24] generate embedding and here I have to
+[76:23.76] give the text in the form of a list list
+[76:26.24] of strings right so here quickly I will
+[76:29.52] call this particular function dot uh dot
+[76:34.64] generate generate
+[76:38.24] generate
+[76:40.32] underscore
+[76:42.16] embeddings. Okay.
+[76:44.72] And here you will be able to see that
+[76:46.40] I'll be giving my text. Then let's store
+[76:51.68] store in the vector database. So after
+[76:55.12] we convert that into an embedding, we
+[76:57.04] store everything in the vector database.
+[76:58.72] Right? So here I will use vector store.
+[77:02.96] vector store the variable that we have
+[77:05.36] created dot add
+[77:08.72] documents and this is a small letter add
+[77:13.52] documents this is a function that we
+[77:15.44] have used and inside this if you
+[77:16.96] remember we have to give our
+[77:19.92] we have to give our entire
+[77:23.60] chunks
+[77:25.36] okay whatever embeddings we are
+[77:28.00] specifically applying okay so once we do
+[77:31.84] this
+[77:33.12] You can see this embeddings whatever we
+[77:34.88] have got and the chunks the documents
+[77:37.12] the entire documents we're going to do
+[77:38.72] this okay so let's quickly execute this
+[77:41.36] and I think now my embedding will happen
+[77:43.44] now you can see that for 359 text this
+[77:46.08] is happening and it has got converted
+[77:48.24] into so many number of batches
+[77:51.12] uh vector store is not defined why it is
+[77:53.28] not defined let's see what I have
+[77:55.12] defined over there okay it should be
+[77:56.64] vector store
+[77:58.96] so this should be the spelling of my
+[78:00.72] vector store instead of that. Okay. So
+[78:03.28] now let me quickly go ahead and execute
+[78:05.12] this. Now inside that same vector store
+[78:08.40] it'll get it'll get executed. Okay
+[78:13.52] perfect. Now you can see that the total
+[78:15.44] document in the collection is 359. So if
+[78:17.76] you see over here uh inside my u
+[78:22.08] notebook file inside my data file here
+[78:24.08] there is something called as vector
+[78:25.20] store and we have done the persistent
+[78:27.36] over here right. So persistent basically
+[78:29.84] means the now now f the it is saved in
+[78:32.80] this particular hard disk. We can just
+[78:34.16] load this hard disk and we can probably
+[78:36.40] go ahead and execute anything as such.
+[78:38.40] Okay. Now perfect. Now you can see that
+[78:41.76] we have completed this entire pipeline.
+[78:43.68] Now we have all the data available over
+[78:46.72] here in the vector store DB right in the
+[78:48.72] form of vectors.
+[78:51.12] But now the main thing is that how do we
+[78:53.52] perform the retrieval? Because retrieval
+[78:55.60] see in retrieval what happens is that
+[78:58.64] whenever we have a user query we have to
+[79:02.00] take this query we have to convert that
+[79:04.64] into embeddings again okay and then we
+[79:09.20] basically go ahead and hit the vector
+[79:10.80] store in the form of a retriever and
+[79:12.40] then only we get the context. So in our
+[79:15.36] example first of all we'll try to get
+[79:17.12] till here. Okay, we have a user query.
+[79:20.96] We convert that query into embeddings.
+[79:23.36] Then we hit this particular vector store
+[79:25.04] and we get the context. So let's go
+[79:26.80] ahead and create this specific pipeline
+[79:28.72] now. Okay. And for this pipeline, we
+[79:31.28] will try to create a rag retriever.
+[79:33.44] Okay. So we will try to create a rag
+[79:35.44] retriever. So let's quickly go ahead and
+[79:38.00] do that particular thing. Till now we
+[79:40.72] have created all the amazing pipelines.
+[79:42.88] We have created this embedding manager.
+[79:45.12] Now we also have this vector store. Now
+[79:47.20] what I will do is that I'll create
+[79:48.64] another pipeline which will be a rag
+[79:50.32] retriever. Okay, just to get the
+[79:52.48] specific context. So let's go ahead and
+[79:54.40] discuss about that. So guys, now let's
+[79:56.40] go ahead and create the rag retriever
+[79:59.28] pipeline. So first of all, what we are
+[80:00.80] going to do is that I will go ahead and
+[80:02.24] create a class which is called as rag
+[80:04.72] retriever. Now this rag retriever class
+[80:07.68] you will be able to see that it handles
+[80:09.44] query based retrieval from the vector
+[80:11.36] store. So inside the constructor we will
+[80:14.08] be giving two important parameters.
+[80:16.72] One is the vector store and one is the
+[80:19.92] embedding manager. And if you remember
+[80:21.76] we have created both this. We have
+[80:23.60] created the embedding manager. We have
+[80:24.96] created the vector store manager. Right
+[80:27.52] now after giving this we will be
+[80:29.20] initializing two class variables that is
+[80:32.16] vector store and embedding manager and
+[80:33.84] we'll be assigning with this. Now
+[80:37.12] whenever we create a retriever one thing
+[80:39.20] you really need to understand this
+[80:40.64] retriever is actually built on the top
+[80:42.64] of a vector store and retriever is
+[80:45.04] nothing but it is a simple interface
+[80:47.04] based on whatever query we get this
+[80:49.04] retriever is just going to give you the
+[80:50.80] response back. Okay and this retriever
+[80:53.68] is basically a kind of interface which
+[80:55.36] is connected to the vector store and
+[80:56.88] chart. Okay. Now uh the next step that
+[81:00.48] we are going to create is another
+[81:02.08] function which will be called as
+[81:03.44] retrieve function. Now this is really
+[81:05.04] important because this retrieve function
+[81:07.52] main work is to retrieve based on a
+[81:11.60] specific query. So let me go ahead and
+[81:13.36] define the specific function.
+[81:16.08] Now this function again see to write it
+[81:18.40] will definitely take a lot of time. So
+[81:20.08] we will try to understand this
+[81:21.68] particular function. Okay. So here a
+[81:24.16] retrie function you can see we are
+[81:25.76] giving query we are giving top key
+[81:27.84] results. How many top key results we
+[81:29.52] want and there is also a threshold
+[81:31.28] value. By default it is 0.0. zero and
+[81:34.32] this function is basically going to
+[81:35.76] return a list of results. Okay, so here
+[81:38.88] you can see retrieve relevant document
+[81:40.88] for a query arguments are the search
+[81:43.36] query, top K documents and score
+[81:45.36] threshold and it returns a list of
+[81:47.28] dictionaries contain the retriever
+[81:48.88] documents and metadata. At the end of
+[81:51.20] the day this function is actually help
+[81:53.36] us to get this specific context.
+[81:56.88] So you'll be able to see over here we
+[81:59.28] are using that same self embedding
+[82:01.52] manager and we are calling this generate
+[82:03.52] embedding function. Now if you remember
+[82:05.68] this generate embedding function is
+[82:07.20] already defined in my embedding manager
+[82:09.44] right. So if I go on the top so here is
+[82:13.20] my generate embedding function and this
+[82:15.52] is nothing but this is basically uh
+[82:17.92] you're just using model.enccode and
+[82:19.68] you're giving the text and it is
+[82:20.96] converting into embeddings. Yeah. So
+[82:23.76] that is the reason we are basically
+[82:25.20] using this because at the end of the day
+[82:27.68] first of all whenever we get a query
+[82:31.04] right so let me go down over here inside
+[82:34.32] this retrieve whenever we give this
+[82:35.84] query first the query needs to be
+[82:38.40] converted into an embeddings right so
+[82:40.64] this query that is given we need to
+[82:42.88] apply embedding for this also so that we
+[82:44.80] can do a um similarity search in the
+[82:47.36] retriever itself right so the first the
+[82:49.36] query is basically converted into a
+[82:51.36] vector by the help of embedding manager
+[82:54.32] dot generate fun embedding functions.
+[82:57.20] Then we are going to use the vector
+[82:59.04] store dot collection and we are going to
+[83:01.28] use this dot query and here we are going
+[83:04.08] to give our query embedding which is
+[83:06.32] nothing but this embedding in the form
+[83:07.76] of a list and then we are also going to
+[83:10.32] give the top results. So by using this
+[83:12.40] this is basically going to hit the
+[83:14.32] vector DB whichever vector vb we have
+[83:16.80] initialized and it is going to give you
+[83:19.20] the results. Once you get the results,
+[83:22.08] the results internally there will be a
+[83:23.84] key which is called as documents. Okay,
+[83:26.08] you can get document information, the
+[83:28.08] mech metadata information, the distance
+[83:31.28] information and some of the ids
+[83:32.64] information. So all the specific
+[83:34.96] information we are using it and here you
+[83:38.32] can see very similarly what we are doing
+[83:40.80] we are using all these parameters like
+[83:42.72] ID, documents, metadata and distance. We
+[83:45.12] are zipping it. Zipping it basically
+[83:47.36] means we are just trying to create a
+[83:48.64] pupil over here and then for every
+[83:52.00] values we are just trying to calculate
+[83:54.40] the distance right one minus distance 1
+[83:57.20] minus distance will basically give you
+[83:58.80] the similarity score like how similar
+[84:01.68] those text data is basically coming up
+[84:04.08] outside this vector store. So we are
+[84:06.88] creating the similarity score and if the
+[84:08.56] similarity score is greater than the
+[84:10.08] threshold then what we do we basically
+[84:12.56] add this inside my text context
+[84:14.64] documents and context documents is
+[84:16.80] basically created in this particular
+[84:18.24] variable which is nothing but retrieve
+[84:20.64] docs which we have kept it empty over
+[84:22.32] here. Okay. So all the information we
+[84:25.52] are just trying to add it over here so
+[84:27.04] that we'll be able to see it. Okay. And
+[84:28.72] finally we return that retrieve docs. So
+[84:31.28] if you say step by step we're not doing
+[84:33.44] anything we like not very complex thing
+[84:36.24] we are getting the user query we're
+[84:37.84] converting this into embeddings we are
+[84:40.00] hitting the vector store right then we
+[84:42.64] are getting the response okay once we
+[84:44.56] get the specific response that context
+[84:46.96] we are putting it in the form of a list
+[84:49.20] if you just go ahead and see the code
+[84:50.72] that is how things are happening okay so
+[84:53.52] this is one of the very important
+[84:55.60] function uh that you'll be able to see
+[84:58.24] now here what I can do is that I can
+[85:00.72] quickly go ahead and create a variable
+[85:02.96] called as rag retriever and I can call
+[85:06.24] this same class.
+[85:09.04] So if you see over here I will use this
+[85:10.72] same rag retriever over here
+[85:14.40] and let's give our vector store vector
+[85:18.48] store which I've defined it earlier
+[85:20.56] which is my vector store manager and
+[85:22.80] then my embedding manager.
+[85:25.84] Once I do this I should be able to see
+[85:28.24] this. Okay. uh it should be vector store
+[85:30.72] file right so now you'll be able to see
+[85:34.24] this is my rag retriever
+[85:37.04] rag retriever it is an object of this
+[85:38.96] now if I call this particular function
+[85:41.04] with a query right I can call dot
+[85:43.76] retrieve with a query so let's go ahead
+[85:45.68] and do this okay so here I will write
+[85:48.88] rag
+[85:50.88] retriever dot query sorry dot
+[85:56.24] retrieve is my function
+[85:59.84] Okay. So here you can see quickly this
+[86:02.56] is my function retrieve right and I need
+[86:04.56] to give a query. Now let's test for a
+[86:07.52] specific query. I'll say hey what is
+[86:11.60] attention is all you need because I know
+[86:15.92] inside my data there is a PDF file which
+[86:19.36] is called as attention or I have also
+[86:22.56] created some kind of proposal over here
+[86:24.48] embedding some files are there. So we'll
+[86:26.96] try to execute this. So here you can see
+[86:30.24] as soon as I asked what is attention is
+[86:32.32] all you need. Now it is giving me the
+[86:34.40] top K for all it is printing all the
+[86:36.80] information and it is generated
+[86:38.08] embedding for one text. Right? And the
+[86:40.64] text shape is 1, 384 because I have used
+[86:43.68] the embedding that is called as all mini
+[86:45.68] LMV6 that creates a 384 dimension. Now
+[86:49.60] once we go ahead and apply this
+[86:51.20] particular function right this function
+[86:53.92] it is basically getting the results over
+[86:55.76] here and we are printing that same thing
+[86:57.84] right and at the end of the day we we we
+[87:00.08] can also go ahead and return this
+[87:01.44] retrieve docs okay so in short this is
+[87:05.20] basically this function is going to give
+[87:06.40] me all the retrieve docs so this is the
+[87:07.92] retrieve docs you can see content
+[87:09.44] metadata author so these are my context
+[87:12.56] information so here you can see
+[87:14.00] attention function can be described as a
+[87:16.00] mapping a query as a set of this one and
+[87:18.24] this entire entire thing is basically
+[87:19.68] the context. So from this particular
+[87:22.24] diagram here you can see easily we are
+[87:24.32] able to get the context right and this
+[87:26.96] is nothing but this is your context. Now
+[87:28.72] let's try some more things. Okay I will
+[87:31.44] just go ahead and open some PDF. Okay.
+[87:34.72] Um
+[87:36.40] this is some very new research paper
+[87:39.04] embedding technical report. Okay. Uh
+[87:41.68] we'll search for any topic over here. Uh
+[87:44.72] embedding model training. I'll just go
+[87:46.64] ahead and search for unified multitask
+[87:48.80] learning framework. Okay, because this
+[87:50.40] information also we have put it over
+[87:51.92] there. So here I'll go ahead and create
+[87:55.36] one more this one and I will copy this
+[87:58.08] entire code. Okay, quickly
+[88:02.08] and this is the query that I'm actually
+[88:04.00] going to give that is nothing but
+[88:06.56] unified
+[88:10.16] multi multitask learning framework. So
+[88:12.64] if I go ahead and execute this you can
+[88:14.56] see that I'm able to get this and then
+[88:16.48] you can see content benchmark ranking
+[88:19.12] over on both the leaders effective of
+[88:21.84] our approach. So we are able to get the
+[88:23.60] response very very much quickly right
+[88:25.44] and this response is basically coming
+[88:26.96] from the vector store right in a very
+[88:30.72] similar way very easy way uh we are able
+[88:33.12] to get the specific response over here
+[88:35.76] right and let me tell you right this is
+[88:39.20] the most easiest way like how things are
+[88:41.28] basically happening over here right now
+[88:44.24] uh what we can do is that see if you
+[88:46.96] know if you have created all these
+[88:48.40] things right till here you have created
+[88:50.64] now the further step is that you have to
+[88:52.40] just integrate LLM with the uh with this
+[88:55.20] specific context. Okay. Now for this LLM
+[88:58.72] with this specific context, what you can
+[89:00.24] do is that you can directly take this
+[89:02.16] particular context and give it to the
+[89:03.44] LLM and that is what we are going to see
+[89:05.44] in the next video. But in this
+[89:07.20] particular video, we saw the entire
+[89:09.52] thing the complete rack pipeline from
+[89:11.76] data injection to the vector DB
+[89:13.28] pipeline. Right now you can go ahead and
+[89:15.28] write any kind of queries and definitely
+[89:18.16] with all these information here you can
+[89:19.76] see similarity score is also coming up
+[89:22.00] right distance is also basically coming
+[89:23.76] up all the information you're putting it
+[89:25.52] over here and we have also used modular
+[89:27.84] coding right now in the next step what
+[89:29.84] I'll do I will take this vector store
+[89:32.24] and uh we will go ahead with the next
+[89:34.08] integration that is llm and output which
+[89:36.64] I will say it as a retrieval pipeline
+[89:39.12] but this entire data injection pipeline
+[89:40.96] with this uh query retrieval we have
+[89:44.00] actually created. Now the next two steps
+[89:46.08] will this one and after doing this we
+[89:48.32] will try to convert the same code
+[89:50.48] whatever same whatever code we have
+[89:52.24] basically written over here in the form
+[89:54.08] of modular coding right we'll try to see
+[89:56.32] that how we can put this inside our
+[89:59.04] source folder so here what I will do
+[90:01.20] we'll quickly create a source folder and
+[90:04.96] inside the source folder I will show you
+[90:07.04] that how we can take this entire
+[90:09.60] pipeline and how we can actually create
+[90:11.84] it in such a way that we have a kind of
+[90:15.04] pipeline over here right pipeline
+[90:17.12] basically means from data injection to
+[90:19.36] vector embedding how in a sequential way
+[90:21.60] we can actually go ahead and call it.
+[90:23.68] Hello guys so we are going to continue
+[90:25.52] the discussion with respect to rag. Uh
+[90:27.84] till now we have already discussed about
+[90:29.76] the entire data injection pipeline and
+[90:32.24] with the help of user query you know we
+[90:34.64] are also able to retrieve the context.
+[90:37.44] uh we have completely implemented this
+[90:39.60] first pipeline that is called as data
+[90:41.36] injection pipeline where we did the data
+[90:43.28] injection. We did the chunking uh then
+[90:46.40] we converted the text into vectors and
+[90:48.88] after that you know uh we were able to
+[90:51.52] probably store everything inside a
+[90:53.28] vector DB and we also persisted in the
+[90:56.24] local directory so that we can always
+[90:58.16] read whenever we definitely want okay
+[91:00.40] based on a specific query. Now we are
+[91:02.80] going to go towards the second pipeline
+[91:04.88] that is the query retrieval pipeline
+[91:07.04] wherein we are also going to use LLM
+[91:09.60] with it. Okay. So here we are going to
+[91:11.76] specifically use LLM models and this LLM
+[91:14.96] models will actually help us to generate
+[91:17.52] a summarized output. Okay. In the rag.
+[91:21.04] So the entire pipeline will look
+[91:22.72] something like this. And uh when we talk
+[91:25.52] about this query retrieval pipeline, we
+[91:28.08] are specifically talking about something
+[91:30.56] called as augmented generation. Okay.
+[91:34.40] See in retrieval uh rack basically means
+[91:36.96] retrieval augmented generation. And this
+[91:39.52] augmented generation how does it
+[91:41.36] specifically work? Okay. So let's
+[91:43.52] consider that this vector DB is already
+[91:46.56] ready and you know that how did I create
+[91:49.28] this particular vector DB? By following
+[91:51.52] this particular pipeline, right?
+[91:54.40] Now once we follow this pipeline the
+[91:57.28] data is stored inside the vector DB. Now
+[92:00.56] whenever a user gives a new query okay
+[92:04.32] it has a new query related to the
+[92:06.24] documents that are already ingested
+[92:08.80] inside the vector DB then what we do we
+[92:11.44] take up this query we apply the same
+[92:13.68] embedding and in this particular
+[92:16.00] embedding what we do we convert the
+[92:18.32] query to vectors
+[92:21.52] right and then from this particular
+[92:23.52] embedding we hit the vector DB we get
+[92:26.24] the context and then whatever context we
+[92:30.48] get along with the prompt engineering
+[92:32.80] like basically with a simple prompt we
+[92:36.00] give that instruction to the LLM right
+[92:38.08] so prompt is just like an instruction to
+[92:39.92] the LLM like how the LLM should
+[92:41.76] basically work now once we are doing
+[92:44.48] this right this this step is basically
+[92:47.04] called as augmentation
+[92:50.72] okay this step is basically called as
+[92:52.88] augmentation wherein we are giving we
+[92:55.04] are taking the context and along with
+[92:56.48] that we are also combining it with a
+[92:58.16] specific prompt
+[92:59.60] And finally you'll be able to see that
+[93:01.04] we'll generate the output from the LLM.
+[93:03.20] And this step is nothing but generation
+[93:07.36] right this is the retrieval step. So
+[93:10.72] here I have my retrieval step wherein we
+[93:13.92] are giving a query we're converting that
+[93:15.28] into vectors and we hitting the vector
+[93:16.88] DB. So you really need to understand the
+[93:19.28] entire concepts with respect to rack.
+[93:21.36] Okay. So let's go ahead and implement
+[93:24.24] this entire retrieval uh query retrieval
+[93:26.72] pipeline along with the LLMs. Okay. Now
+[93:28.64] here we also going to go ahead and set
+[93:30.00] up the LLM. So guys, now let's go ahead
+[93:32.56] and implement this uh with the help of
+[93:35.12] practical implementation. So here we are
+[93:36.96] going to integrate vector DB context
+[93:38.72] pipeline with LLM output. U as suggested
+[93:42.08] we are going to implement the augmented
+[93:44.00] and generation. Now first first of all
+[93:46.56] what we going to do is that I'm going to
+[93:48.08] use the my Gro API key. Okay. Okay, so I
+[93:50.56] have updated the gro API key over here
+[93:52.48] in the ENB file and uh you know here we
+[93:56.40] are going to probably go ahead and
+[93:58.08] create a simple rag pipeline. Okay, uh
+[94:03.52] with the gro lm okay so first of all
+[94:06.64] what we are going to do is that uh again
+[94:09.28] uh if you remember in our
+[94:11.68] requirement.txt we will go ahead and
+[94:13.60] import this two libraries that is called
+[94:15.68] as langin-g
+[94:17.52] gro and then you have python.nv PNB okay
+[94:20.88] and then after this uh we will go ahead
+[94:23.20] and uh you know quickly initialize from
+[94:25.68] langchain
+[94:27.52] grock import chat gro okay along with
+[94:30.48] this I'm also going to go ahead and
+[94:31.68] import os then from env I'm going to use
+[94:35.52] load env so that we import or we load
+[94:39.28] the entire environment variables then
+[94:42.00] the next thing is that we will go ahead
+[94:43.52] and initialize the gro lm and set your
+[94:47.20] environment gro API key inside this.
+[94:49.84] Okay. And in order to do this again here
+[94:52.88] you'll be able to see that I'm using gro
+[94:54.40] API key OS.get env something like this.
+[94:57.12] Okay. If you just go ahead and call this
+[94:59.52] sometime uh my suggestion would be that
+[95:01.44] directly don't call from get env.
+[95:04.16] Initially you can directly test it by
+[95:06.24] pasting the environment keys directly
+[95:09.36] over here. Okay. So here I will go ahead
+[95:11.84] and paste it. Otherwise you go ahead and
+[95:14.56] replace it. Just for testing purpose I'm
+[95:16.16] actually doing this. Now we'll go ahead
+[95:17.52] and initialize our LLM model chat gro
+[95:20.80] and here I will use my gro API key is
+[95:23.52] equal to API sorry gro API key okay and
+[95:29.44] then model name is gamma 2 temperature I
+[95:31.76] will select it as 0.1 and maximum number
+[95:34.00] of tokens it will generate is 1024 okay
+[95:36.88] so this is my lm we have initialized the
+[95:38.80] gro lm now the second thing is that we
+[95:41.44] will quickly go ahead and create a
+[95:44.96] simple rag tag function and this is
+[95:49.12] going to integrate everything from
+[95:51.60] retrieve context plus generate response
+[95:54.40] and if you remember guys here is my
+[95:56.24] retriever before class like the previous
+[95:59.44] u session we have already seen that how
+[96:01.44] this rag retriever was actually created
+[96:02.96] we created a class for that okay so here
+[96:05.92] uh we are going to probably take two
+[96:07.76] different parameters inside this we'll
+[96:09.68] first of all define a function called as
+[96:11.20] rag simple and then here we are going to
+[96:14.72] go ahead and give our query
+[96:16.88] Then we are going to go ahead and give
+[96:18.72] our retriever
+[96:20.64] llm
+[96:24.08] top k is equal to three. Okay.
+[96:28.88] And then uh over here quickly let's go
+[96:31.92] ahead and first of all retrieve the
+[96:34.80] context. Yeah. So we'll going to
+[96:37.20] retrieve the context. So here I'm going
+[96:38.64] to write results is equal to retrie dot
+[96:42.48] retrieve query. So here you have this
+[96:44.80] query and top k is equal to k. Okay. And
+[96:48.00] then uh we are just going to get the
+[96:50.48] context or I'll go ahead and define my
+[96:52.48] context. Inside this context I will say
+[96:54.88] that hey whatever information I'm
+[96:56.72] getting from my results right just go
+[96:59.92] ahead and combine everything and put it
+[97:02.56] inside this. Right? So here I'm saying
+[97:05.04] that hey for doc in results whatever
+[97:07.76] content I'm getting I'm going to join it
+[97:09.36] with a uh double new line over here. If
+[97:12.64] results are this empty, we are just
+[97:14.72] going to keep it as empty. So this is my
+[97:16.24] context over here, right? then uh I can
+[97:19.76] still go ahead and write one more
+[97:21.04] condition saying that hey if not context
+[97:25.76] okay we just going to go ahead and
+[97:27.60] return saying that no relevant context
+[97:32.24] form okay to the answer question and
+[97:36.72] then we are going to generate the answer
+[97:41.84] using grock lm okay and now I'm just
+[97:46.64] going to go ahead and define prompt
+[97:48.96] obviously I required a prompt. If you
+[97:50.96] remember here I can again use a prompt
+[97:55.20] template also I can directly use a
+[97:56.72] prompt over here. So here with respect
+[97:58.80] to the prompt I will give a query saying
+[98:01.12] that hey this is what you really need to
+[98:03.76] do. You need to go ahead and answer this
+[98:05.68] specific question and you should
+[98:07.60] probably get a response for that. Right?
+[98:10.08] So here what I will do I will quickly go
+[98:11.92] ahead and paste it. Use the following
+[98:13.92] context. So here you can see use the
+[98:15.76] following context to answer the question
+[98:17.84] uh uh question concisely. Okay. And here
+[98:21.60] what we can basically do is that we can
+[98:23.44] just go ahead and um do one thing on
+[98:26.96] over here quickly. I'll say just put
+[98:30.72] tab. Okay. So use the following context
+[98:32.88] to answer the question uh precisely or
+[98:35.04] concisely. So here I have given the
+[98:36.48] context. Here I've given the query.
+[98:38.24] Okay. Now the next thing after this is
+[98:40.16] that we will go ahead and create a
+[98:42.32] response. So response is equal to this
+[98:44.56] time we going to use llm dot invoke.
+[98:47.84] Okay. And here uh let's go ahead and put
+[98:52.08] something like prompt dot format.
+[98:56.16] And here we are going to write context
+[98:59.68] is equal to context
+[99:02.08] and here you have query is equal to
+[99:05.52] query whatever query I have. Okay. And
+[99:08.64] then we go ahead and return the response
+[99:12.24] dot content.
+[99:15.20] So once we do this uh then we can
+[99:18.00] specifically call this particular
+[99:19.36] function. Okay. So now what we are going
+[99:21.68] to do is that I will just go ahead and
+[99:23.68] write answer is equal to rag simple and
+[99:28.72] let's say I go ahead and ask a question.
+[99:32.00] What is attention mechanism?
+[99:36.00] Okay. And here I need to give my rag
+[99:38.64] retriever along with the llm and then we
+[99:41.20] can go ahead and print the answer.
+[99:45.44] Okay. So here you can see attention
+[99:47.52] mechanism is a function that maps a
+[99:49.28] query in this right and we are able to
+[99:51.20] get the answer over here. This is really
+[99:53.20] good. See a very simple pipeline where I
+[99:56.08] have initialized my lm model. I've
+[99:58.32] defined a function and then this
+[100:00.32] function what it is doing first of all
+[100:01.76] it is hitting the rag retriever retrieve
+[100:04.00] function. It is getting the context. it
+[100:06.08] is combining the context and along with
+[100:07.76] the prompt we are hitting the llm. So if
+[100:09.84] you remember we are we are just
+[100:11.04] following this entire process and
+[100:12.72] generating a proper output right if that
+[100:15.36] particular output is available inside
+[100:17.20] the uh vector DB right now guys uh what
+[100:21.52] we are going to do is that we are going
+[100:22.96] to enhance the rack pipeline the simple
+[100:25.28] rack pipeline that we have created over
+[100:26.96] here okay we'll enhance in such a way
+[100:28.88] that it will have more amazing features
+[100:31.12] in it okay so now we're going to go
+[100:33.68] ahead and create an amazing enhanced
+[100:36.00] track pipeline and this is the code so
+[100:38.16] now you can see over Here we have a
+[100:39.76] function called as rag advanced. I'm
+[100:41.92] giving a query retriever lm topk
+[100:44.16] elements like how many we want minimum
+[100:46.08] scores return context is equal to false.
+[100:48.08] So here you can see that um before we
+[100:51.52] were simply like we were just combining
+[100:53.36] the context we are putting the
+[100:55.04] information in the prompt and we were
+[100:56.64] probably generating the response. In
+[100:58.64] this what we will do is that here we are
+[101:01.44] going to generate this entire pipeline
+[101:03.76] with some more additional features like
+[101:05.92] what all additional features we'll be
+[101:07.44] requiring. See here we are directly
+[101:09.68] getting the answers right but we do not
+[101:12.24] have much information about the source
+[101:14.00] about the context over here right. So
+[101:16.16] here what we are doing we will return
+[101:17.84] answers sources confidence score
+[101:20.48] optionally fully context full context
+[101:22.64] okay so first of all again the code will
+[101:24.64] be similar where we are retrieving the
+[101:26.16] context so this becomes my context when
+[101:28.16] we are retrieving it from retriever
+[101:29.76] retrieve and then uh I have written if
+[101:32.48] not results if results are empty we are
+[101:34.40] saying that no relevant context found
+[101:36.40] and here we are giving sources is blank
+[101:38.64] confidence is 0.0 zero and context is
+[101:40.48] blank. This context is basically coming
+[101:42.48] from the vector DB. Let's say that if we
+[101:44.56] are getting some kind of results over
+[101:46.00] here, we are combining all those results
+[101:47.92] and we are preparing the context over
+[101:49.52] here and then we are adding sources. See
+[101:52.00] this sources which is the list here we
+[101:53.76] are adding metadata information source
+[101:56.00] file right and along with that you can
+[101:58.72] see metadata page number from which page
+[102:00.80] number you are able to get then what is
+[102:02.32] the similarity score and here what I
+[102:04.48] will do is that I'll just try to go
+[102:06.32] ahead and you know display at least 300
+[102:10.24] um length of the content right so up to
+[102:12.80] 300 characters we'll try to display and
+[102:15.12] then we are going through each and every
+[102:16.72] docs that is available inside this
+[102:18.24] results then we are going to calculate
+[102:19.92] the confidence uh we are actually
+[102:22.48] getting that information in this doc
+[102:23.84] similarity score. Here is my prompt. In
+[102:27.36] this prompt we are giving context query
+[102:29.28] each and everything and we are invoking
+[102:31.20] it and the output will be in this
+[102:32.64] format. So let's now go ahead and
+[102:34.88] execute this rag advanced function. Here
+[102:37.84] I've given all the information like I've
+[102:39.60] asked what is the attention mechanism?
+[102:41.76] What is rag retrieval like rag retrievy
+[102:44.32] I'm given over here llm return context
+[102:46.88] is equal to true minimum score all these
+[102:48.88] things is given right. So now I'll go
+[102:50.24] ahead and execute this. Now as soon as I
+[102:52.56] ask what is attention mechanism here
+[102:54.48] you'll be able to see that I'm getting
+[102:55.84] this particular information right and it
+[102:57.60] is also giving me the source information
+[102:59.36] which number page number what is the
+[103:00.88] score and what is the preview
+[103:02.80] information along with that here is my
+[103:04.80] final information that you can see right
+[103:07.28] where we are displaying the first 300
+[103:09.36] characters let's say that I go ahead and
+[103:12.32] change my question okay I I ask
+[103:15.84] something else I'll say hey u attention
+[103:18.80] mechanism was one of the thing but if I
+[103:20.96] go ahead see my data, my PDFs. Okay, I
+[103:25.60] will go ahead and ask something else.
+[103:27.04] Okay, let's see what I can ask. So, I'll
+[103:29.76] go to embeddings PDF. I'll say okay. And
+[103:33.52] then let me search something else,
+[103:35.12] right? I will say hard negative. I'll
+[103:38.88] ask this question hard negative mining
+[103:41.36] techniques. Okay, so I will go to my
+[103:46.00] question over here.
+[103:50.16] hard
+[103:51.68] negative
+[103:53.68] mining techniques.
+[103:56.48] Okay.
+[104:00.00] And I'll go ahead and search this thing
+[104:03.20] from my vector retriever. So here you
+[104:05.36] can see that I'm able to get this entire
+[104:06.88] information. The test is several
+[104:08.32] hardcand
+[104:10.72] embeddings NV retriever all these
+[104:13.28] information and again you can see that
+[104:14.56] embedding.pdf PDF page 4 I'm able to see
+[104:17.60] all the information along with the
+[104:18.80] context right so this is uh really
+[104:21.20] amazing and here we have just created an
+[104:23.12] Nstrack pipeline why we say this as an
+[104:24.88] NS rack pipeline because here we are
+[104:27.20] providing information related to answers
+[104:30.32] we are providing information related to
+[104:32.08] confidence score and each and everything
+[104:34.16] now let me just show you one more
+[104:36.24] amazing way and this is also an advanced
+[104:39.12] rack pipeline but this time I will tell
+[104:41.12] you to probably go through this
+[104:42.64] particular code and tell me so here what
+[104:44.56] What we doing? We're doing streaming,
+[104:45.84] citation, history and summarization. So
+[104:48.08] all these things we have included over
+[104:49.52] here and uh you can just go and search
+[104:52.16] for this and you can see the answer.
+[104:53.84] Okay, final answer roment context found
+[104:56.00] because that question may not be there.
+[104:58.24] Okay, I will just or let me just change
+[105:01.28] this minimum score to 0.1. I think we
+[105:03.20] should be able to get something. Still
+[105:05.28] nothing. Uh let me change the
+[105:09.04] question. Let's say hard negative mining
+[105:11.52] techniques. And here we are just going
+[105:14.72] to go ahead and display this particular
+[105:16.64] output. Okay. So now you just go ahead
+[105:19.52] and explore this. Okay. I'll keep this
+[105:21.36] for you at least see some kind of
+[105:23.20] coding. Okay. So here uh we are not able
+[105:25.68] to get anything as such. Uh let's see
+[105:28.08] advanced rack query hard query to top
+[105:30.56] querying summarize equal to true. Uh no
+[105:34.16] relevant this one. Let's see that I go
+[105:36.96] ahead and ask what is
+[105:39.36] what is
+[105:41.92] attention
+[105:43.68] is all you need. Okay, I'll go ahead and
+[105:47.68] execute it. So here you can see that I'm
+[105:50.00] able to see all these particular answers
+[105:51.60] over here. Right. Yeah, for some of the
+[105:54.32] queries this will not it is not giving
+[105:57.84] there may be some problem with respect
+[105:59.44] to the context size but it's okay. You
+[106:01.44] can try out with different different
+[106:02.64] things. If it if something is not coming
+[106:04.32] then we'll try to optimize that also as
+[106:06.32] we go ahead we'll try to see this. So
+[106:08.32] here we have seen three amazing rack
+[106:10.48] pipelines. One was a simple rack
+[106:11.84] pipeline. Here was an enhanced rack
+[106:13.52] pipeline. And here uh in the last one we
+[106:16.48] have made sure to put streaming citation
+[106:18.40] and history and summarization with all
+[106:19.92] this kind of information over here. You
+[106:21.92] just go ahead and check it out all the
+[106:23.60] information and just see the code. I
+[106:25.36] think you should be able to understand
+[106:26.56] it. So overall uh if you see I hope you
+[106:30.40] were able to understand this particular
+[106:32.08] video
+[106:34.00] and uh yeah this was about rack
+[106:36.56] pipeline. Now in the upcoming videos
+[106:37.84] what we will do is that we will try to
+[106:40.24] create some modular coding because see
+[106:42.40] here the entire everything is basically
+[106:45.52] created in one IP file. So guys now it's
+[106:48.96] time that we implement the entire rack
+[106:51.20] pipeline in the form of a modular
+[106:53.20] structure. Already in our notebook we
+[106:55.44] have seen about PDF loader.pipinb IP and
+[106:57.76] B you know wherein we discussed how to
+[107:00.32] probably go ahead and create the entire
+[107:01.84] data injection and how to probably store
+[107:04.72] all the information into the vector DB
+[107:06.40] and finally you're also able to make the
+[107:08.00] query right along with that uh I have
+[107:10.32] also shown you how to work with
+[107:11.60] typesense uh which was an open-source uh
+[107:13.92] vector store itself which was also again
+[107:16.96] amazing for searching anything in a
+[107:19.60] quicker way right now all the kind of
+[107:22.08] implementation that we have done what we
+[107:23.92] are going to do is that I'll try to show
+[107:25.28] you how in a modular way you can go
+[107:27.12] ahead and integrate this in a form of a
+[107:28.88] pipeline. Okay. So already we have this
+[107:31.12] source folder. Now inside this source
+[107:32.96] folder, what I am actually going to do
+[107:34.40] is that I'll go ahead and create
+[107:35.76] my_init_.py
+[107:39.36] file. And after creating this particular
+[107:42.08] file, what is the next step is that I
+[107:44.56] will go ahead and create all my
+[107:46.24] components important components that
+[107:48.00] will be required in order to create your
+[107:51.20] uh rack pipeline. The first important
+[107:53.52] component is nothing but data
+[107:56.88] loader. Right? Data loader. py file.
+[108:00.72] Right? So this will be my first
+[108:02.48] component because initially we need to
+[108:04.24] load the document. We need to do the
+[108:05.84] chunking and then we need to probably go
+[108:07.60] ahead and store it into the vector
+[108:09.04] store. Right? So inside my data loader
+[108:11.76] you know I I will just try to go ahead
+[108:13.52] and read all the documents uh that is
+[108:16.00] actually required. Okay. Then uh after
+[108:19.20] this uh the next step should be your
+[108:21.20] vector store. Right? Now the vector
+[108:23.44] store what vector store we are basically
+[108:25.36] going to use. Uh so for that I will be
+[108:27.52] creating my another file. So here inside
+[108:29.84] my source I will go ahead and create one
+[108:32.08] more file which is called as vector
+[108:34.64] store. py. Okay. So this is my next file
+[108:38.08] that is basically created. Okay. uh
+[108:40.64] along with this uh while while actually
+[108:43.20] inserting anything into the vector store
+[108:45.12] I also need to probably go ahead and do
+[108:46.88] some kind of embeddings right and uh I
+[108:49.52] will try to show you some open source
+[108:51.20] embeddings that we are going to use. So
+[108:52.96] for that I'll be creating my embedding
+[108:55.60] py file and finally uh the last file
+[108:58.08] that I really want to create is
+[108:59.28] something called a search py. Now my
+[109:01.76] entire rack pipeline needs to be
+[109:03.76] integrated in such a way that there
+[109:05.68] should be a linkage between all the
+[109:07.44] specific files. Now the first case is
+[109:10.16] that I will go ahead and start working
+[109:12.00] on data loader. Now you know data loader
+[109:14.40] work is nothing but it should be reading
+[109:16.56] this particular data. Okay, it can be
+[109:18.72] from any source itself. Um we will try
+[109:21.36] to read this specific data itself.
+[109:23.04] Right? So for this what I'm actually
+[109:24.96] going to do is that I'll go ahead and
+[109:26.48] import some of the libraries. So quickly
+[109:29.84] I will go ahead and import these all
+[109:31.84] libraries like uh pi PDF loader, text
+[109:34.16] loader and all. Okay. So I'll start
+[109:36.40] working on this because I need to form a
+[109:38.96] pipeline itself right. So inside this
+[109:40.96] particular file my main code should be
+[109:42.80] in such a way that I will go ahead and
+[109:45.36] read all the documents let it be of a
+[109:47.68] PDF text loader or CSV. Okay here I'm
+[109:50.72] also going to give you some of the
+[109:51.76] assignments because uh in this entire
+[109:53.60] series of videos we have discussed about
+[109:55.20] this. Okay. So quickly what I'm actually
+[109:58.16] going to do is that I will go ahead and
+[109:59.92] create one function which is basically
+[110:02.32] called as load all documents. Now see
+[110:05.60] this. Okay. So here I'm just going to go
+[110:07.84] ahead and write this function. Now
+[110:09.76] please have a look onto this particular
+[110:11.68] function. This function function
+[110:13.92] definition is load_all
+[110:17.04] documents. I'm given the data directory.
+[110:19.28] This should be in the form of string
+[110:20.48] format and it is returning list right
+[110:23.52] list of anything right of any kind of
+[110:25.60] data type. Now the main important thing
+[110:28.08] about this function is that it loads all
+[110:29.84] supported files from the data dictionary
+[110:31.36] and convert to langen document data
+[110:33.12] structure because as soon as we read any
+[110:36.00] kind of data like PDF, CSV, TXT, right?
+[110:39.20] We need to probably go ahead and convert
+[110:40.80] that into a langen document structure
+[110:43.04] then only we'll be able to apply the
+[110:44.48] chunking. Okay. So here you can actually
+[110:47.84] see that I have used data path uh of the
+[110:51.92] data directory itself. the data
+[110:53.52] directory I will be giving in the
+[110:54.88] runtime and obviously by just seeing
+[110:56.96] this the data directory is nothing but
+[110:58.40] data itself. Okay. Now this is the code
+[111:01.60] specifically to read all the PDF files.
+[111:04.64] Okay. So here I have created a list
+[111:06.80] documents which will be storing all the
+[111:08.48] documents itself. Uh here we have used
+[111:11.84] data path globe globe function and here
+[111:15.12] I have used this pattern this kind of
+[111:17.44] regular expression to match all the PDF
+[111:19.44] files. So what it will do is that inside
+[111:22.00] this data directory it will start
+[111:24.08] looking for all the PDF files. So inside
+[111:26.40] this you know that in the inside my PDF
+[111:28.16] folder there are some PDF files. So it
+[111:30.16] is going to go ahead and read all these
+[111:31.76] particular PDF files. Okay. So once it
+[111:34.24] reads the PDF files uh we will be having
+[111:36.64] those PDF files over here in the form of
+[111:38.32] a list. Okay. Then what we are doing we
+[111:41.36] are writing for PDF and PDF files. We
+[111:43.44] are going through every PDF and then we
+[111:45.68] are using pi PDF loader to read the
+[111:48.96] content inside this and we are using
+[111:50.56] loader.load and finally I get all the
+[111:52.88] information over here and we are going
+[111:54.32] to extend that documents. Now this is
+[111:57.12] just an example of PDF files right now.
+[111:59.20] Same thing you can also do over here for
+[112:02.56] text files. Okay, text files. You can
+[112:05.92] also do it for CSV files. Right? See
+[112:08.72] similar kind of code is basically
+[112:10.24] suggested by GitHub copilot. But I
+[112:12.08] really want to give you an assignment.
+[112:14.24] Okay. So this will be for CSV file. This
+[112:16.96] can be for SQL files. Any kind of files
+[112:19.92] that you really want to work with. you
+[112:21.92] can go ahead and write that particular
+[112:23.28] code and keep on appending inside this
+[112:26.00] particular documents. Okay. So as soon
+[112:28.32] as you do that automatically you'll be
+[112:30.32] able to do this specific stuff and
+[112:32.00] you'll be able to get all the documents.
+[112:34.32] Okay. Now what I will do just to test it
+[112:37.60] out whether my PDF files is working fine
+[112:39.76] or not. I will just go ahead and create
+[112:41.36] one app. py file over here. Okay. Now
+[112:44.72] inside this app py file let me go ahead
+[112:47.92] and import some of the libraries. So
+[112:49.92] first of all I need to read everything
+[112:51.92] over here right. So I have written from
+[112:54.24] source dot data loader import load all
+[112:56.40] documents. So this load all documents is
+[112:58.16] nothing but this is the same function
+[112:59.52] that is present inside my data loader.
+[113:01.52] py. Okay. And then from source dove
+[113:04.08] vector store files vector store and rack
+[113:07.04] search I will create in the later
+[113:08.40] stages. So right now I'll remove this.
+[113:10.24] Okay. Now let's try to test the example.
+[113:13.92] So example usage I will write if
+[113:17.84] name
+[113:19.52] main okay and then here I will go ahead
+[113:22.40] and write documents is equal to load all
+[113:25.12] documents and I'll give my data folder
+[113:28.00] okay data folder then what I can
+[113:31.92] actually do is that I can just go ahead
+[113:33.36] and print my docs okay
+[113:37.20] if you see inside this data loader what
+[113:39.36] this is returning right now it is not
+[113:41.36] returning anything so what you can
+[113:43.12] actually do do is that from here so here
+[113:45.92] what we are going to do is that we are
+[113:47.20] going to return the specific documents
+[113:48.80] over here so that we should be able to
+[113:50.40] print that particular documents over
+[113:51.92] here right now what I am quickly going
+[113:54.80] to do is that I will just go ahead and
+[113:56.72] write open command prompt okay and here
+[114:00.64] I'm going to go ahead and write python
+[114:03.36] app py now let's see whether it'll be
+[114:06.64] able to read the uh pdf files or not now
+[114:09.76] here you can see it has found four pdf
+[114:11.60] files all the pdf file URL is over here
+[114:14.64] and you are able to see that it is also
+[114:16.56] able to see all the content that is
+[114:18.32] available inside that particular
+[114:19.68] documents which is good right and this
+[114:22.72] is basically in the form of a document
+[114:24.32] data structure I guess yeah so all the
+[114:26.96] information is basically happening so
+[114:28.72] that basically means so clearly I can
+[114:31.44] see something really amazing over here
+[114:33.04] is that my entire data the PDF code that
+[114:37.68] we have written is working absolutely
+[114:39.52] fine okay now uh comes the next step.
+[114:42.88] Now the next step you should probably
+[114:44.56] start thinking whether we should
+[114:46.16] basically go ahead and work with
+[114:47.84] embedding so that to do the chunking and
+[114:50.24] all right so here uh I will go ahead and
+[114:52.72] start working on embedding now inside my
+[114:55.20] embedding what we are going to do is
+[114:57.20] that I'll be importing these libraries
+[114:59.20] now these all are same thing repeated
+[115:01.84] but here I'm using classes and function
+[115:04.40] definition so here you can see that
+[115:06.88] after reading all the documents after
+[115:08.56] loading all the documents I'm going to
+[115:10.24] use sentence transformer recursive
+[115:11.84] character text splitter and here you can
+[115:14.08] see I've defined a function uh class
+[115:16.00] called as embedding pipeline right the
+[115:18.40] model that I'm going to use is all mini
+[115:20.48] v6 uh lm l6 v2 chunk size is nothing but
+[115:24.48] 1,000 and chunk overlap is nothing but
+[115:26.80] 2,00 200 then here we are writing self
+[115:30.32] dot chunk size chunk self overlap and
+[115:32.88] then we are also initializing the
+[115:34.16] sentence transformer now in the next
+[115:36.56] function that we are going to go ahead
+[115:38.40] and do is nothing but uh we are going to
+[115:41.04] go ahead and create a function which is
+[115:42.56] called as chunk documents. Now inside
+[115:45.28] this chunk documents we are giving the
+[115:48.00] documents which can be a list of any
+[115:49.84] documents. Here we are applying
+[115:51.76] recursive character text splitter based
+[115:53.52] on all these values that we have
+[115:54.96] initialized. Along with this we have
+[115:57.36] also used different different separators
+[115:59.04] if you're interested or you can directly
+[116:00.80] use this blank separator. Okay. Then you
+[116:04.40] can see that I am also using the
+[116:06.48] splitter.split split documents over here
+[116:09.04] and then you will be able to see the
+[116:10.64] remaining chunks over here itself. Okay.
+[116:13.12] Now this is for uh any document that I
+[116:15.84] pass inside this particular function
+[116:17.60] right but one thing is very important is
+[116:20.88] that because after the chunking is done
+[116:23.04] right you need to also convert that
+[116:24.96] chunking into vectors with the help of
+[116:26.80] this particular model. So for that I
+[116:29.12] will be creating one more function which
+[116:30.64] is called as embedding chunks right. So
+[116:33.44] here what I will be doing is that I'll
+[116:36.00] create this particular function called
+[116:37.28] as embed chunks. Here we will take this
+[116:39.76] chunks. So what happens is that first
+[116:42.08] the load all documents will be called
+[116:43.92] right after that the chunk documents
+[116:45.68] will be called wherein all these
+[116:47.36] documents will be chunked. Then all the
+[116:49.60] chunks will be passed through our model
+[116:52.32] to probably convert that into a vector
+[116:55.20] embeddings. Right? So here you'll be
+[116:57.20] able to see self domodel.enccode.
+[116:59.36] So show progress bar is equal to true.
+[117:01.68] Right? So here what we are doing we are
+[117:03.52] reading all the page content and we are
+[117:05.60] performing the embeddings and finally we
+[117:07.36] return the embeddings over here right so
+[117:09.92] this is what we are actually doing right
+[117:11.92] so two important function one is chunk
+[117:13.92] documents and one is embed chunks inside
+[117:15.76] a class called as embedding pipeline now
+[117:18.08] the same thing you can go ahead and test
+[117:19.52] it in your app py right so in the app py
+[117:23.12] what you are going to do is that here um
+[117:25.92] I will just go ahead and
+[117:28.64] go ahead and
+[117:30.96] just a Okay, let me go ahead and
+[117:33.28] initialize just a second uh the
+[117:36.64] embedding pipeline. Okay, so here what I
+[117:39.68] will do, I will go ahead and write from
+[117:42.16] from src
+[117:44.40] dot
+[117:46.16] embedding import embedding pipeline.
+[117:48.16] Right? And once you do this, I will go
+[117:50.96] ahead and initialize the embedding
+[117:52.56] pipeline. Okay? And then I will just go
+[117:56.00] ahead and give this right. So this
+[117:58.56] basically becomes my vectors
+[118:03.12] sorry embed chunks it is there right so
+[118:05.84] embed chunks before that I need to chunk
+[118:08.64] the documents I also did not call the
+[118:10.24] chunk documents so let's first of all
+[118:11.84] call the chunk documents over here
+[118:16.32] okay and then this will basically be my
+[118:19.60] chunks
+[118:21.44] and finally you can also go ahead and
+[118:24.00] write over here as my chunk vectors ve
+[118:30.40] chunk vectors is equal to and here uh
+[118:34.88] you can go ahead and use the same
+[118:37.12] embedding pipeline dot embed chunks
+[118:40.32] right and finally you can go ahead and
+[118:42.56] print
+[118:44.56] the chunk vectors. So once you do this
+[118:47.60] that basically means you'll be able to
+[118:49.20] understand whether the chunking is
+[118:50.64] happening or not. So let's quickly run
+[118:52.80] this particular file again. And now you
+[118:55.52] should be able to see the chunking that
+[118:57.28] may be happening over here. Okay. So
+[119:00.32] it'll take some amount of time because
+[119:02.00] it is going to load all the documents
+[119:04.08] again. Okay. And then the chunk document
+[119:06.80] function is going to get applied over
+[119:08.32] here. The chunk documents what it does
+[119:10.00] is that it is just going to apply
+[119:12.32] recursive character text splitter on
+[119:14.40] every documents that we specifically
+[119:16.16] give. Right? And once we do that you'll
+[119:18.96] be able to see that it is loading. You
+[119:20.96] can see all the things are happening
+[119:22.32] over here. 21 PDFs, one PDF like 21
+[119:25.76] pages PDFs is over here with respect to
+[119:28.00] this proposal load embedding all models
+[119:31.28] splitted 64 documents I got into uh 359
+[119:35.20] chunks you know and then we basically go
+[119:38.40] ahead and store this. Now the next step
+[119:40.88] is that after this uh I will try to
+[119:42.80] create a vector store and uh we will try
+[119:45.12] to save those embeddings also. Okay. So
+[119:49.04] here you can see all the chunks is uh
+[119:51.12] vectors are visible over here right. So
+[119:53.68] this is really really good. So just just
+[119:56.32] imagine right in a pipeline it is
+[119:58.24] specifically working one by one right it
+[120:00.96] is it is working over here and that's
+[120:02.80] that's the best part out here right now
+[120:05.84] the next step is that what I will do is
+[120:07.76] that I will try to create some more
+[120:10.00] functions uh which can be for save and
+[120:14.00] load uh like if I want to save this
+[120:16.72] entire chunks how do I go ahead and save
+[120:18.48] it you know u what do I save it each and
+[120:22.08] every information that you'll be able to
+[120:23.52] see over here Okay. Now,
+[120:26.88] uh this was about uh the two important
+[120:30.32] pipeline which is basically load all
+[120:32.48] documents and uh embedding pipelines
+[120:35.04] with uh two important function. One is
+[120:37.04] chunk documents and one is embed chunk.
+[120:39.52] So guys, now the next step is that what
+[120:41.44] we are going to do is that now already
+[120:42.88] we have created this embedding pipeline,
+[120:44.72] right? Now let me do one thing because
+[120:46.56] after performing the embedding, we also
+[120:48.16] need to store it in some kind of vector
+[120:49.76] store and it should be persistent in any
+[120:51.36] kind of directory or in cloud. Right? So
+[120:53.68] for this I will start working on this
+[120:55.52] vector store. py file and here I'm going
+[120:58.40] to use some code. Now you can see what
+[121:00.16] all things I'm actually using. So I'm
+[121:02.72] using the sentence transformer and
+[121:04.16] embedding pipeline over here. Fiest
+[121:06.72] vector store is the class name that we
+[121:09.44] going to use. Uh I'm going to
+[121:10.72] specifically use fis. Uh here we are
+[121:13.20] going to use the same model. All mini l6
+[121:15.12] v2 chunk size everything is over here.
+[121:17.60] And uh we are also making some kind of
+[121:20.32] directories. the persistent directories
+[121:22.08] like fire store should be the name and
+[121:24.40] then here you'll be able to see I'm
+[121:25.76] initializing the embedding model
+[121:26.96] sentence transformer and all now the
+[121:28.96] first step is that build from the
+[121:30.32] documents now see here uh the same code
+[121:32.72] we will go ahead and write what we had
+[121:34.08] written in embedding pipeline right so
+[121:36.00] here we are initializing embedding
+[121:37.36] pipeline model dot self embedding model
+[121:39.60] chunk size and I've given the chunk
+[121:41.84] documents embed document embed chunks
+[121:44.24] I've got the metadata and I'm adding all
+[121:46.32] these embeddings inside my vector store
+[121:48.64] and once I use selfsave Save. What is
+[121:51.04] this self dots save? Save is a function
+[121:53.04] which is going to save all the vector
+[121:55.52] inside this index dotpickle files.
+[121:57.68] Right? So metadata is basically getting
+[121:59.84] saved in pickle file and files.index
+[122:02.00] will basically be my vector store which
+[122:03.84] will be in the persistent directory. So
+[122:05.92] that is the reason I have written
+[122:06.96] files.right index self.index files path
+[122:10.56] right with open metame this and all
+[122:13.12] information is there right. So this same
+[122:15.36] method is basically there add embedding
+[122:17.28] method is over here. Add embedding is
+[122:18.88] nothing but it is basically taking it it
+[122:20.64] is adding as a index flat tail two. So
+[122:23.04] these are some basic stuffs when you
+[122:25.36] actually work on this. Along with that
+[122:27.60] I've also created two more function load
+[122:29.68] and search. Load and search what it does
+[122:32.56] is that it will actually allow you to
+[122:34.88] load the files index the vector store.
+[122:37.28] Okay. And will uh load it in the read
+[122:40.16] byte mode and then with the help of
+[122:42.08] search and query you should be able to
+[122:44.16] ask any kind of queries that you have.
+[122:46.32] Right. You can also use this query
+[122:48.08] method. Uh here you can see we have
+[122:49.84] written self domodel.enccode with
+[122:51.68] respect to the query test as type float
+[122:54.00] 32 and with the help of query search
+[122:56.72] you'll be able to get the output. Okay.
+[122:59.44] So this was about my vector store. Now
+[123:01.60] in the app py what I am actually going
+[123:03.68] to do I will just go ahead and make some
+[123:05.28] changes. Okay. Now what what are the
+[123:07.04] changes that I will be making? Okay.
+[123:09.12] Instead of calling this two, okay, I
+[123:11.76] will just go ahead and write store is
+[123:14.40] equal to
+[123:16.72] first of all let me go ahead and
+[123:17.92] initialize this files vector store. So
+[123:20.88] source dot embeddings files vector store
+[123:23.76] here okay and here I will go ahead and
+[123:26.64] initialize this
+[123:28.80] and let me go ahead and give the path
+[123:30.80] name. The path name is fires h o r e.
+[123:34.32] Okay. Now initially if this p path is
+[123:37.04] there then it is fine. Otherwise it'll
+[123:39.12] go ahead and I'll just go ahead and
+[123:41.04] write store.build from documents of all
+[123:43.92] the docs. That's it. Now if I do this it
+[123:47.44] is just going to go ahead and for the
+[123:49.84] first time it is going to build it. Okay
+[123:52.08] it is going to build it. So let's see
+[123:53.44] whether it'll be able to build it or
+[123:55.60] not. So here I'm going to clear the
+[123:58.48] screen. Python app.p py
+[124:03.04] let's quickly see this
+[124:07.36] now it is going to read first of all it
+[124:09.20] is going to read it then this is fine
+[124:11.52] loading perfect load all the PDF files
+[124:14.80] perfect now the chunking will happen
+[124:16.32] automatically and it'll save it in the
+[124:18.16] vector store inside that particular
+[124:20.08] folder that is files let's see
+[124:23.36] now it is generating 359 chunks
+[124:26.72] all the steps are almost same what we
+[124:28.64] have discussed from starting but this is
+[124:30.16] A very super cool way of building
+[124:32.16] something. Right? Now you can see save
+[124:34.00] files index metadata to fire store
+[124:36.00] vector store also. So here you can see
+[124:38.48] fire store is there fires.index and
+[124:40.40] metadata.pickle right now we need not
+[124:43.76] run it each and every time right uh
+[124:45.60] because uh once we have this right from
+[124:47.92] the next time what we can do instead of
+[124:49.76] always building unless and until you
+[124:51.84] have a new documents I can also go ahead
+[124:53.52] and write store.load
+[124:55.84] okay if I go ahead and write store.load.
+[124:58.48] Okay, I should be able to print anything
+[125:02.00] that I want, right? Let's say I will go
+[125:04.32] ahead and print something like this. I
+[125:06.64] can use the same query method that we
+[125:09.12] had. What is attention mechanism? Top K
+[125:11.60] is equal to three. Right? So once I do
+[125:13.36] this, you should be and this time I
+[125:16.24] don't think so we need to also read any
+[125:18.64] kind of documents also over here. Right?
+[125:20.88] So I'll comment it down over here. This
+[125:22.88] also you can uncomment it if you really
+[125:24.72] want to or you can also give another
+[125:26.32] conditions. Now what it'll do, it'll
+[125:28.32] directly go ahead and read from the
+[125:29.76] vector store. It'll pick it from the
+[125:31.84] persistent directory and it'll give you
+[125:33.52] the output. Let's see.
+[125:36.08] So from the fire store, it'll go ahead
+[125:38.24] and pick it up. And here you go. Here
+[125:40.88] you get the answer clearly, right? See
+[125:43.84] loading embedding models. This is there
+[125:45.84] loading fire index and metadata. What is
+[125:47.92] attention mechanism? All the information
+[125:49.76] is over here. And this is the output
+[125:52.48] that you are able to get. Right.
+[125:54.80] Perfect. This this is what exactly uh I
+[125:58.40] was actually talking about. But the best
+[126:00.00] part is that we have created this in the
+[126:02.08] form of a pipeline. You have data
+[126:03.44] loader, you have embedding, you have
+[126:04.64] vector store. Now for search what you
+[126:06.88] can do is that you can integrate any
+[126:08.32] LLMs over here. Right? So for this also
+[126:11.04] I have written the code. Again I don't
+[126:12.72] want to discuss it step by step line by
+[126:14.64] line. So that it'll be again taking a
+[126:18.24] lot amount of time to complete this.
+[126:20.08] Right? So here I have my load_.env.
+[126:23.04] You can just go ahead and load all these
+[126:24.80] things. Groc API key is given over here.
+[126:27.20] You can use it or you can use your own
+[126:29.44] Gro API key. It's fine. Okay. And then
+[126:32.64] we are doing the search, right? Wherein
+[126:34.48] we are using this vector store do.query
+[126:36.48] getting all the documents getting all
+[126:37.92] the metadata and then we're giving some
+[126:40.32] prompt and we are invoking it along with
+[126:42.16] the LLM. So once we do this, it is
+[126:44.48] superbly easy to execute this. Anyhow,
+[126:47.84] you can do the research because I have
+[126:49.44] discussed all these things in my Jupyter
+[126:51.04] notebook, right? Uh now what I will do
+[126:53.84] in my app.py py I'll see what changes
+[126:56.08] needed to be added and uh what I will do
+[126:59.68] is that I will first of all import rack
+[127:02.24] search again from search dot search
+[127:04.64] import rack search and then I will go
+[127:07.60] ahead and initialize like this right and
+[127:10.72] now I don't even require this okay now
+[127:14.64] let's see whether it'll be able to give
+[127:17.60] the summary or not it is loading from
+[127:20.72] the vector store now I'm asking the
+[127:22.80] question search and summarize This is
+[127:24.40] the function here. What we do? We first
+[127:26.64] of all do the query from the vector
+[127:28.64] store that we were usually doing before.
+[127:30.96] Then we give a prompt and then finally
+[127:32.96] LLM will be able to give the output. So,
+[127:35.52] so here you can see if my LLM is fine
+[127:38.32] then I think I should be able to get an
+[127:39.92] answer. So here you can see all the
+[127:41.76] output is basically over here.
+[127:44.64] So this was a complete idea or a kind of
+[127:47.44] crash course that I really wanted to
+[127:49.12] give on the entire uh rag. Rag is one of
+[127:53.44] the most important use cases. That is
+[127:55.68] what I always believe. Most of the
+[127:58.16] companies are specifically building rag
+[127:59.84] applications. So I think this is really
+[128:01.44] really important and super cool topic. I
+[128:04.16] hope you like this particular video.
+[128:05.52] This was it from my side. I'll see you
+[128:06.88] on the next video. Thank you. Take care.

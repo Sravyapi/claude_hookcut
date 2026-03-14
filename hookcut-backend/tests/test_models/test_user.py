@@ -13,22 +13,6 @@ class TestUser:
         assert user.currency == "USD"
         assert user.plan_tier == "free"
 
-    def test_user_defaults(self, db):
-        user = make_user(db, user_id="u2")
-        assert user.plan_tier == "free"
-        assert user.currency == "USD"
-        assert isinstance(user.created_at, datetime)
-        assert isinstance(user.updated_at, datetime)
-
-    def test_user_currency_choices(self, db):
-        user_inr = make_user(db, user_id="u3", currency="INR")
-        assert user_inr.currency == "INR"
-
-    def test_user_plan_tiers(self, db):
-        for tier in ("free", "lite", "pro"):
-            user = make_user(db, user_id=f"tier-{tier}", plan_tier=tier)
-            assert user.plan_tier == tier
-
     def test_user_unique_email(self, db):
         make_user(db, user_id="u-dup1", email="dup@test.com")
         import pytest

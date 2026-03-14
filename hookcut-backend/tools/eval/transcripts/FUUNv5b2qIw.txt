@@ -1,0 +1,135 @@
+[0:00.72] In the world of AI, we've just witnessed
+[0:03.28] a monumental leap. Forget incremental
+[0:05.92] updates. We're talking about a complete
+[0:08.08] shift in capability. Welcome to
+[0:10.32] unleashing the power of Gemini 3. We are
+[0:13.04] not just chatting with AI anymore. We
+[0:15.52] are giving it a plan, a vision, and
+[0:17.92] watching it execute. To access this
+[0:20.48] power, it's simple. You'll start by
+[0:23.28] searching for Gemini 3. Try Gemini 3 Pro
+[0:26.32] for free. Now, look right down here near
+[0:29.28] the bottom of your screen. Next to the
+[0:31.52] microphone icon, you'll see a small
+[0:33.52] model selector. When you click on it,
+[0:35.76] you'll see two main options as shown
+[0:37.44] right here. First, this is your
+[0:40.08] workhorse model designed for speed. It
+[0:42.72] answers quickly and is perfect for
+[0:44.32] everyday toss like summarizing emails or
+[0:46.64] simple brainstorming. Think with three
+[0:48.96] pro. This is the model we'll be using
+[0:50.96] for this course. As the description
+[0:52.96] says, it thinks through complex topics.
+[0:55.68] This means it uses a deeper multi-step
+[0:58.72] internal reasoning process, which is
+[1:01.28] essential for the coding, video
+[1:03.28] analysis, and complex logic apps we're
+[1:06.00] about to build. We need that level of
+[1:08.16] thinking. With 3Pro, you get the power
+[1:10.64] to unlock the multimodal and advanced
+[1:12.72] features we'll be demoing. So, select
+[1:15.04] that model. That's the key. Choosing the
+[1:18.08] right engine is crucial for all the
+[1:19.60] powerful demos we're about to dive into.
+[1:21.76] Take a quick look around the interface.
+[1:24.00] We've got these great prompt shortcuts
+[1:25.84] like create image, create video, write
+[1:28.40] anything, help me learn, and boost my
+[1:30.40] day. These options hint at its
+[1:32.72] multimodal power. We also have a tools
+[1:35.44] menu.
+[1:37.60] So, first up, we have deep research.
+[1:40.08] This is like having an expert analyst.
+[1:42.56] It can sift through hundreds of web
+[1:44.40] sources in minutes to create a
+[1:46.24] comprehensive report, saving you hours
+[1:48.72] of searching.
+[1:51.04] Then there's create videos. This is
+[1:53.20] Google's state-of-the-art video
+[1:54.56] generation model. We'll be using its
+[1:56.80] incredible capability to bring creative
+[1:58.80] concepts to life. Just a prompt. Then we
+[2:02.16] have create images. This uses the latest
+[2:04.96] image models to turn your text into
+[2:07.20] studio quality visuals. Then there's
+[2:09.60] canvas. This gives you a collaborative
+[2:12.24] interactive workspace right inside the
+[2:14.40] app for longer form tasks, code, and
+[2:16.96] reports. Then there's guided learning.
+[2:19.76] This feature turns research into an
+[2:21.60] interactive lesson, asking you follow-up
+[2:23.92] questions to help you truly master a new
+[2:26.00] topic. So, the interface, it's clean,
+[2:28.64] it's intuitive, and it's where all the
+[2:30.24] magic starts. Since this new level of
+[2:33.44] intelligence is at the core, watch for
+[2:35.84] the first monumental difference you'll
+[2:38.00] notice in the output. It's the
+[2:40.00] generative user interface or generative
+[2:42.08] UI.
+[2:43.60] Other models generate code, but what's
+[2:46.24] new here is the seamless integrated
+[2:48.72] ecosystem powered by three pros way of
+[2:51.44] thinking. Gemini 3 can plan, design, and
+[2:55.04] deliver a fully functional UI without
+[2:57.28] any complicated external setups. To
+[2:59.92] prove it, we'll use the canvas tool. I'm
+[3:02.48] going to give it a detailed prompt. Now,
+[3:05.60] here is the prompt I'm using. I'm asking
+[3:08.40] Gemini 3 to build a complete Paris
+[3:11.12] travel planner as a single file react
+[3:13.60] app with an interactive Paris map, a
+[3:16.24] mock flight search panel, and a device
+[3:18.64] itinerary builder that includes
+[3:20.48] restaurant rating sliders and rating
+[3:22.32] summaries. The layout uses a blue and
+[3:25.52] silver theme, cardbased sections, smooth
+[3:28.40] hover effects, and responsive design.
+[3:31.36] Now I'll copy and paste this into Gemini
+[3:33.84] 3. Select Thinking with Three Pro and
+[3:37.04] from tools, choose canvas.
+[3:45.36] And just like that, the AI executes its
+[3:47.60] plan. Check this out. I literally just
+[3:50.48] pasted a single prompt into Gemini 3
+[3:53.68] asking for a complete Paris travel
+[3:56.00] planner. And look at what it generated
+[3:58.64] instantly. I asked for a specific blue
+[4:01.52] and silver theme in a single React file
+[4:03.92] and it totally nailed the aesthetic.
+[4:06.08] Look at the features we have. The map
+[4:07.92] feature. This is super cool. It's an
+[4:10.56] interactive abstract map. I can click on
+[4:13.20] the location and it adds right into my
+[4:15.36] itinerary. So for top attractions, we
+[4:18.56] have the places here and I'm clicking
+[4:21.04] add to itinerary. Now flight search.
+[4:23.60] I've got this fully functional mock
+[4:25.52] search panel here.
+[4:28.80] So I'm selecting New York. I can enter
+[4:31.52] dates here.
+[4:39.04] So this is our interface and we can see
+[4:41.52] the code here. It did all of this code
+[4:43.68] in one go. Gemini 3 is honestly on
+[4:46.80] another level. This is the shift. Gemini
+[4:50.48] 3 has moved from being just an assistant
+[4:52.80] to becoming an autonomous software
+[4:54.64] developer. It takes complex intent and
+[4:58.00] delivers a functional, professional
+[5:00.08] prototype. That's generative UI, taking
+[5:03.36] context and producing a complete
+[5:05.60] interactive component. If you enjoyed
+[5:07.68] this video, you can enroll in Greatle
+[5:09.60] Learning Academy for free, choose from
+[5:11.60] hundreds of courses across multiple
+[5:13.52] domains, and earn a certificate of
+[5:15.36] completion along the way. And if you
+[5:17.12] want to take it a step further, you can
+[5:18.80] try Greatlearning Academy Pro Plus with
+[5:21.12] a free trial. It provides access to
+[5:23.36] additional premium courses with more
+[5:25.28] advanced content from distinguished
+[5:27.04] faculty along with features like guided
+[5:29.20] projects, a resume builder, and mock
+[5:31.44] interviews to make your learning journey
+[5:33.12] even richer. Link is in the description.

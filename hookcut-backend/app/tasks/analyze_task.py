@@ -6,11 +6,12 @@ from app.dependencies import get_db_session
 from app.services.credit_manager import CreditManager
 from app.models.session import AnalysisSession, Hook
 from app.models.learning import LearningLog
-from app.services.transcript import TranscriptService
+from app.services.transcript import TranscriptService, TranscriptResult
 from app.services.hook_engine import HookEngine
 from app.services.deterministic_engine import DeterministicEngine
 from app.services.engine_mode import get_engine_mode
 from app.exceptions import HookEngineError
+from app.utils import report_to_sentry
 
 logger = logging.getLogger(__name__)
 
@@ -20,6 +21,7 @@ def _analyze_with_fallback(
     transcript: str,
     niche: str,
     language: str,
+    interview_mode: bool = False,
 ):
     """Run hook analysis with engine mode branching and fallback logic.
 
@@ -35,6 +37,7 @@ def _analyze_with_fallback(
         try:
             return HookEngine().analyze(
                 transcript=transcript, niche=niche, language=language,
+                interview_mode=interview_mode,
             )
         except HookEngineError:
             logger.warning("LLM hook engine failed, falling back to deterministic")
@@ -45,6 +48,7 @@ def _analyze_with_fallback(
     # Default: llm_only
     return HookEngine().analyze(
         transcript=transcript, niche=niche, language=language,
+        interview_mode=interview_mode,
     )
 
 
@@ -67,12 +71,44 @@ def run_analysis(self, session_id: str):
         db.commit()
         self.update_state(state="PROGRESS", meta={"stage": "Fetching transcript...", "progress": 10})
 
-        transcript_service = TranscriptService()
-        transcript_result = transcript_service.fetch(
-            session.video_id,
-            session.language,
-            video_duration_seconds=session.video_duration_seconds,
-        )
+        if session.interview_mode:
+            # Interview mode: use AssemblyAI diarization
+            try:
+                from dataclasses import asdict
+                from app.services.assemblyai_diarization import AssemblyAIDiarizer
+                self.update_state(state="PROGRESS", meta={"stage": "Diarizing speakers...", "progress": 15})
+                diarizer = AssemblyAIDiarizer()
+                diarize_result = diarizer.diarize(
+                    session.video_id, session.language, session.speaker_count or 2,
+                )
+                transcript_result = TranscriptResult(
+                    text=diarize_result.transcript_text,
+                    provider="assemblyai",
+                )
+                session.diarization_data = [asdict(u) for u in diarize_result.utterances]
+                expected_count = session.speaker_count or 2
+                if diarize_result.detected_speaker_count != expected_count:
+                    logger.info(
+                        "Diarization detected %d speakers (expected %d)",
+                        diarize_result.detected_speaker_count, expected_count,
+                    )
+                    session.speaker_count = diarize_result.detected_speaker_count
+            except Exception as e:
+                logger.warning("Diarization failed, falling back to regular transcript: %s", e)
+                session.interview_mode = False
+                db.commit()
+                # Fall through to regular transcript fetch
+                transcript_result = None
+        else:
+            transcript_result = None
+
+        if transcript_result is None:
+            transcript_service = TranscriptService()
+            transcript_result = transcript_service.fetch(
+                session.video_id,
+                session.language,
+                video_duration_seconds=session.video_duration_seconds,
+            )
 
         if not transcript_result:
             # All providers failed — refund credits
@@ -99,6 +135,7 @@ def run_analysis(self, session_id: str):
                 transcript=transcript_result.text,
                 niche=session.niche,
                 language=session.language,
+                interview_mode=session.interview_mode,
             )
         except HookEngineError as e:
             CreditManager(db).refund_and_fail(
@@ -134,6 +171,7 @@ def run_analysis(self, session_id: str):
                     algorithm_dynamics=candidate.algorithm_dynamics,
                     viewer_psychology=candidate.viewer_psychology,
                     improvement_suggestion=candidate.improvement_suggestion,
+                    primary_speaker=candidate.primary_speaker,
                     is_composite=candidate.is_composite,
                 )
                 db.add(hook)
@@ -183,11 +221,7 @@ def run_analysis(self, session_id: str):
 
     except Exception as e:
         logger.exception(f"Analysis task failed for session {session_id}: {e}")
-        try:
-            import sentry_sdk
-            sentry_sdk.capture_exception(e)
-        except Exception as e2:
-            logger.warning("Failed to report exception to Sentry: %s", e2)
+        report_to_sentry(e)
         user_msg = _friendly_error(e)
         try:
             CreditManager(db).refund_and_fail(

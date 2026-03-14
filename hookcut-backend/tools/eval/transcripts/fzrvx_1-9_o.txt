@@ -1,0 +1,2833 @@
+[0:00.48] Hello all, my name is Krishna and
+[0:02.32] welcome to my YouTube channel. So guys,
+[0:05.04] uh specifically in this AI era, it is
+[0:07.52] necessary that you start using AI a lot
+[0:10.16] with respect to any kind of task you do
+[0:12.32] in your company from project
+[0:14.24] development, from learning new things,
+[0:16.16] from asking questions to AI like how you
+[0:18.72] can improve anything that you are
+[0:20.64] currently doing and that is specifically
+[0:23.92] required. Many people when I used to
+[0:26.80] teach from last two 3 years right many
+[0:29.04] people used to say AI is just a hype
+[0:31.36] right and for all those people who still
+[0:34.00] think AI is a hype god bless you okay so
+[0:37.36] in this specific video we are going to
+[0:40.08] show you how you can go ahead and
+[0:41.68] develop some amazing projects right and
+[0:44.32] we'll consider a specific use case and
+[0:47.12] we will be using cloud code and we will
+[0:50.00] do some amount of wipe coding in order
+[0:52.16] to complete this specific project Okay.
+[0:54.88] Uh this project has been recorded by uh
+[0:57.12] Sunonni Savvita who is an amazing mentor
+[0:59.04] who's working in a uh company uh called
+[1:01.44] as PWC and uh right now he will also
+[1:04.80] talk about like what are the industry
+[1:06.48] trends that is currently being followed
+[1:08.72] and how you can also go ahead and use
+[1:10.32] cloud code for doing most of the task
+[1:12.96] that we specifically do in development.
+[1:15.36] Now before I go ahead and start this
+[1:17.04] specific video, I really want to make a
+[1:19.84] quick announcement [clears throat] about
+[1:21.92] our new boot camp that is called as
+[1:23.92] modern route full stack generative and
+[1:25.60] agenti boot camp. And this is basically
+[1:28.40] starting from March 15th, 2026. And the
+[1:31.68] classes will be on every Saturday and
+[1:33.52] Sunday from 8:00 p.m. to 11:00 p.m. IST.
+[1:36.32] Now this particular course is suitable
+[1:38.80] for anyone who really wants to get into
+[1:40.72] generative AI, agentic AI, who wants to
+[1:42.96] quickly get started, how to probably go
+[1:45.12] ahead and learn things, how to make sure
+[1:47.76] that you're industry ready to work in
+[1:49.52] any kind of generative AI and agentic AI
+[1:51.44] projects. Okay. So here you can see it's
+[1:53.68] a very detailed syllabus. Here we'll be
+[1:55.84] talking about LLM foundation, LLM
+[1:57.76] ecosystem model selection, LLM's
+[1:59.84] finetuning, production rag, advanced
+[2:02.16] rag, agentic AI, uh, langraph
+[2:04.80] orchestration. Along with that, we'll
+[2:06.32] also be using evaluations and guardrail
+[2:08.16] techniques along with cloud deployments.
+[2:10.08] All this information will be given in
+[2:11.60] this particular description of this
+[2:12.88] particular video. Uh, please make sure
+[2:14.72] that you watch this entire video. This
+[2:16.56] is an amazing project to get started
+[2:18.16] with. So let's go ahead and enjoy this
+[2:19.76] video. What if guys if you could build a
+[2:23.12] entire system or entire project just by
+[2:27.44] giving some instruction to AI? Uh so
+[2:31.52] yeah this thing is possible and inside
+[2:35.20] this video I'm going to show you how you
+[2:38.32] can build a realtime project using cloud
+[2:42.48] code in a faster and in a smarter way.
+[2:46.08] So hello everyone, my name is Sunonni
+[2:48.56] Savvita and I am back with another
+[2:51.44] exciting and important video. So inside
+[2:55.52] this video guys, I will show you how you
+[2:58.24] can use the cloud code for building any
+[3:01.28] application. Uh I will give you the step
+[3:04.08] step-by-step guide how you can set up uh
+[3:06.64] this cloud code inside your local
+[3:09.12] system. how you can utilize that and
+[3:12.24] even I will show you how you can
+[3:14.16] configure it inside your VS code. You
+[3:17.12] can configure it in any uh ID whether
+[3:20.16] it's a cursor, anti-gravity or pycharm
+[3:24.80] but uh I will show you with the VS code.
+[3:27.84] Okay. So uh guys uh this is a this is
+[3:31.20] the website of the cloud cloud.com where
+[3:34.80] you can find out a different different
+[3:36.40] services uh related to the cloud. If you
+[3:39.28] don't know guys, so this cloud is a uh
+[3:42.08] product of the anthropic. So once you
+[3:44.64] will search this anthropic.com, you will
+[3:47.28] lend to this homepage of the anthropic.
+[3:49.92] Uh this is the name of the company and
+[3:52.32] the cloud is a product of this company
+[3:55.04] only. So just uh read out this entire
+[3:57.28] page and understand uh about their
+[3:59.44] vision and all everything. Now how you
+[4:01.76] will uh come to the cloud A. So here you
+[4:04.72] can see they are giving the option to
+[4:06.64] try out the cloud a and once you will
+[4:08.88] click on click on this drop-down once
+[4:10.72] you will hover your mouse over here you
+[4:12.64] will get a different different product
+[4:14.40] uh related to the anthropic okay and
+[4:16.64] apart from that you can explore the
+[4:18.40] various model so let's uh check out the
+[4:20.96] cloud a guys so once you will click on
+[4:22.56] this cloud a so uh it will redirect you
+[4:25.44] to this particular page where you can
+[4:27.76] click on this try cloud a so once you
+[4:30.32] will click on this try cloud A you will
+[4:32.40] get the similar page page uh like you
+[4:34.56] you were uh seeing over the chat GPT uh
+[4:37.68] now uh they are giving the similar kind
+[4:39.52] of interface where you can do the
+[4:41.44] chatting and all everything uh and it is
+[4:43.68] a journal purpose chatbot. So they are
+[4:46.16] offering a different different model. So
+[4:47.76] if you will drop down over here if you
+[4:50.08] will click over here.
+[4:53.36] So you will get a different different
+[4:54.96] models over here like opus, sonet, haiku
+[4:58.16] right uh uh and uh guys these model this
+[5:01.76] opus model is a advanced model this
+[5:03.68] sonet model is a mediocre model and this
+[5:05.76] haiku model is a uh basically it's a
+[5:08.32] cheapest model right so they are also
+[5:10.64] offering a different different category
+[5:12.48] of the model similar to the openi only
+[5:15.60] and apart from uh that guys they are
+[5:18.48] offering a various surveys so you can
+[5:20.16] navigate to each and every service from
+[5:22.08] this uh homepage page itself. Now let me
+[5:24.80] show you couple of more product. So
+[5:26.48] cloud a as I shown you this cloud a
+[5:28.64] right now apart from this one they are
+[5:30.64] offering two main product. One is a
+[5:32.56] cloud a code which we are going to learn
+[5:34.40] in today's uh video and the second is
+[5:36.88] the cloud a cowwork. So what is a cloud
+[5:39.44] code guys? So the cloud code is a
+[5:41.52] product with that actually we can
+[5:43.28] develop a application. uh this code uh
+[5:46.08] basically is mainly created for the
+[5:48.16] developers who can uh directly configure
+[5:50.64] this cloud code inside their system and
+[5:53.44] they can do their development work.
+[5:55.28] Okay. And today I will show you how you
+[5:57.12] can configure it and how you can develop
+[5:59.36] a project using this cloud code. The
+[6:02.08] second uh product and the very important
+[6:04.64] and the like the recent product is a
+[6:07.52] cloud co-work. Now this cloud co-work
+[6:10.48] basically it's a AI collaborator. So
+[6:12.96] whether you are a developer or you are a
+[6:14.96] non-developer anyone can collaborate
+[6:17.52] with this uh AI with this cloud co-work
+[6:20.80] uh you can configure this cloud co-work
+[6:22.72] in your system you can give a access of
+[6:24.80] your file and folder and uh it will work
+[6:27.44] in a similar way like any human is
+[6:29.68] working and in a more efficient way
+[6:31.36] basically so this is a way where you can
+[6:33.76] collaborate with the AI and you can work
+[6:36.00] along with the AI so uh cloud co-work I
+[6:39.28] will show you in some other video today
+[6:41.12] we'll discuss about the cloud a code.
+[6:43.20] Now they are offering you different
+[6:44.72] different other feature. You can
+[6:46.32] configure this cloud a in a different
+[6:48.32] browser in a different services and they
+[6:50.88] are offering you the different model as
+[6:52.56] I told you the advanced model is a cloud
+[6:55.04] opus the mediocre model is a cloud sonet
+[6:57.76] and the cheapest model is a kaiku okay
+[7:00.56] so you can explore the different
+[7:01.92] different model and you can understand
+[7:03.84] their capability now uh platform wise
+[7:06.48] guys so they are giving you the
+[7:07.76] different different platform where you
+[7:09.36] can check out the pricing you can check
+[7:10.88] out the documentation and all everything
+[7:12.80] so if I will click on this developer
+[7:14.48] docs guys so you to get a documentation.
+[7:17.28] Now this is the complete documentation
+[7:18.88] of the cloud API. Uh it is similar to
+[7:21.68] the openi API uh like we are using uh
+[7:25.60] open API right uh and the different uh
+[7:28.40] services around to that. So in the same
+[7:30.56] way they have given you the cloud API
+[7:32.64] and you can configure it in a various
+[7:34.88] way. Okay. And you can use the different
+[7:37.12] different services uh just by reading
+[7:39.12] this particular documentation. Now apart
+[7:42.00] from this one guys you can check out the
+[7:44.24] pricing and all everything. So they are
+[7:46.16] mentioning the pricing of their model
+[7:47.68] and all. Now solution wise you can check
+[7:50.08] out the different different use cases.
+[7:51.84] They are giving you the several use
+[7:53.68] cases which is belonging to the
+[7:55.36] different different industry means they
+[7:57.44] are saying how they are helping to a
+[8:00.00] different industry and uh just uh by
+[8:02.40] navigating to this use case you can
+[8:04.32] understand about their work. Now pricing
+[8:07.20] wise again they have given you one like
+[8:08.88] one more page you can check out over
+[8:10.40] here. Resources wise they are providing
+[8:12.40] you the various uh platform from there
+[8:15.36] you can learn about the cloud a you can
+[8:17.28] understand about the cloud a you can
+[8:18.96] explore about the cloud they are
+[8:20.96] providing their own blog website they
+[8:22.80] are providing some uh uh like recorded
+[8:25.28] courses okay some tools connect uh
+[8:28.00] plugins and all everything they are
+[8:29.76] providing you over here even the
+[8:31.28] community is also there you can directly
+[8:33.36] connect with their community. So this is
+[8:35.44] the homepage guys of the cloud a if you
+[8:37.52] want to really understand this cloud a
+[8:39.36] product then please [clears throat] uh
+[8:40.56] go and check out with this homepage now
+[8:42.88] guys one more thing we are talking about
+[8:44.80] the anthropic if we talking about the
+[8:46.48] cloud a right so they are mainly
+[8:48.88] focusing to the developer community so
+[8:51.52] they are coming up with a product where
+[8:53.76] they can help as much as to the
+[8:55.60] developer community and cloud code is
+[8:58.00] one of the product which a developer can
+[9:00.16] directly use. If you will look into this
+[9:02.56] cloud a chatbot also uh there also if
+[9:05.76] you are going to be asked a general
+[9:07.12] purpose question maybe it is not not
+[9:09.76] very good in terms of reasoning like
+[9:12.16] chat GPT chat GPT actually it's a
+[9:14.08] general purpose uh platform but guys it
+[9:17.60] is very good uh in terms of coding and
+[9:19.76] the development if you will ask uh this
+[9:22.32] to develop anything right uh to create
+[9:24.80] any application it will create in a very
+[9:27.44] professional way it will uh give you the
+[9:29.36] very uh like a good code right and uh
+[9:32.88] even basically you can do a certain
+[9:35.12] level modification. So their model are
+[9:38.24] the uh developer focus and it is like
+[9:40.56] very good in terms of development and
+[9:42.32] all. Uh maybe it is not good uh in terms
+[9:45.04] of the general knowledge but yeah they
+[9:46.56] are helping a lot to the developer
+[9:48.16] community. Uh now guys I hope you got
+[9:51.28] the clearcut understanding of this
+[9:53.12] entire platform. Now if I will uh show
+[9:55.44] you this cloud a code. So just click on
+[9:57.04] this cloud a code and uh after clicking
+[9:59.36] on this cloud code guys you will get the
+[10:01.60] complete detail about them. So who is
+[10:04.00] using the cloud code what is the purpose
+[10:05.84] of it how you can configure that right
+[10:08.64] and uh you will get everything over this
+[10:10.80] page itself. Now uh if you want to go
+[10:14.32] step by step one by one right if you
+[10:16.40] want to explore everything about this
+[10:17.92] cloud a code then just click out on this
+[10:20.32] documentation. Now once you will open
+[10:22.32] this documentation guys. Now over here
+[10:24.64] uh itself you will get the complete
+[10:26.24] detail about the cloud code. So this
+[10:28.48] specific documentation they have created
+[10:30.40] for the cloud code only. Now how to
+[10:33.60] configure the cloud code, how to run
+[10:35.36] this cloud code and how to use this
+[10:37.76] cloud code. Everything they are uh
+[10:40.00] telling you over here right. So just
+[10:42.00] navigate to this documentation and you
+[10:43.92] will understand everything about the
+[10:45.36] cloud code. uh even uh they are talking
+[10:48.40] about the uh different ID right where at
+[10:51.20] what all places you can configure this
+[10:52.96] cloud code. Uh even they are talking
+[10:55.60] about the GitHub action right how you
+[10:57.52] can utilize it in a CI/CD pipeline. Uh
+[11:00.32] apart from that they are helping us in
+[11:02.56] uh in a GitLab also. So various uh
+[11:05.68] integration they have provided to us.
+[11:07.84] Okay. So, GitLab is there, GitHub is
+[11:10.24] there, uh, and the integration with the
+[11:12.08] various ID is there, you can directly
+[11:14.48] configure it over any uh, uh, over any
+[11:17.52] like operating system, whether it's a
+[11:19.44] Windows or Mac operating system, Linux
+[11:22.00] operating system, anywhere you can
+[11:24.08] configure it. Now, I hope guys you
+[11:26.32] understood everything about the cloud A
+[11:28.16] and the cloud A code. Now, guys, uh, to
+[11:30.48] read out this documentation, it's like a
+[11:32.64] bit challenging in a starting if someone
+[11:34.48] is a fresher or developer, right? So uh
+[11:37.20] maybe uh they might confuse by after
+[11:40.32] reading this documentation and all. So
+[11:42.32] for the beginner guys what I have done I
+[11:44.16] have created a summary of this entire
+[11:45.76] documentation. So this is the entire
+[11:47.84] summary guys uh which I will show you
+[11:49.84] which I will uh uh like which which I
+[11:53.20] will use to configure this cloud a code
+[11:55.36] inside my system. Okay. So I written at
+[11:57.84] least five to 10 steps over here and
+[12:00.08] each and every step we are going to
+[12:01.76] follow one by one in the step by step.
+[12:04.16] So first let me show you in uh how many
+[12:06.40] ways actually you can configure this
+[12:08.08] cloud code inside your system. So now
+[12:11.28] now once guys you will go ahead with
+[12:12.72] this cloud code documentation and here
+[12:15.52] uh if you will uh click on this overview
+[12:17.84] right uh so after that guys you will get
+[12:19.92] you will get this page. Now just uh
+[12:22.24] check out with this page uh here only
+[12:24.24] you will get the complete uh detail
+[12:25.92] about the configuration. So you can
+[12:28.16] configure it via terminal, you can
+[12:30.56] configure it via VS code,
+[12:33.36] you can uh configure it via desktop
+[12:35.20] application, uh you can configure it as
+[12:37.52] a web web, right? And the Jet Brands
+[12:39.76] also JetBrans actually it's a company
+[12:42.08] which is providing us a PyCharm ID,
+[12:44.56] right? Uh it is a owner of the PyCharm
+[12:46.64] ID. Uh now guys uh inside this video I
+[12:49.60] will show you how you can configure it
+[12:51.28] via terminal uh via CLI and I will show
+[12:54.24] you how you can uh configure it even
+[12:56.24] inside the VS code. Okay. So I will show
+[12:58.56] you this both way uh even you can
+[13:00.56] install the desktop application. So they
+[13:02.48] are providing you for all the operating
+[13:04.32] system like Mac OS, Windows, Windows ARM
+[13:07.36] 64 for various uh for various operating
+[13:10.56] system for the different operating
+[13:11.84] system they are providing their ready to
+[13:13.92] go installation. So directly you can
+[13:16.40] utilize this as well and you can
+[13:18.00] configure the cloud a inside your
+[13:20.24] system. Okay just for the development.
+[13:23.04] Now uh here guys I will show you the
+[13:24.88] easiest way where you can uh use this uh
+[13:27.60] uh simple command and using the simple
+[13:29.44] command you can configure the uh you can
+[13:32.00] configure the uh cloud inside your
+[13:34.40] system. Okay. Uh now apart from this one
+[13:37.28] guys if you are using any other system
+[13:39.12] like I am using Windows system so I'm
+[13:41.28] going to use the Windows command. If you
+[13:43.36] are using other system like Mac OS,
+[13:45.36] Linux, so for that also they have given
+[13:47.20] the specific command right. So whatever
+[13:49.76] system you are using, whatever operating
+[13:51.44] system you are using, uh doesn't matter
+[13:54.08] throughout the operating system,
+[13:55.36] throughout the different operating
+[13:56.48] system, they are supporting to us. Got
+[13:59.12] it? Now let's do one thing guys. Let's
+[14:01.68] try to read out this uh do let's try to
+[14:04.56] read out this step one by one and uh
+[14:07.04] let's try to set up this cloudy code
+[14:08.80] inside our uh inside our system.
+[14:13.04] So guys uh first and the foremost thing
+[14:15.60] you should have a g inside your windows
+[14:18.72] system. Uh if you are running this thing
+[14:21.28] inside your windows system then g is
+[14:24.08] mandatory. Now why it is mandatory?
+[14:26.88] Because in a back end it is using git
+[14:29.60] bash to execute a command. So uh if you
+[14:33.28] will ask to generate anything to cloud a
+[14:35.92] code it will generate but where it will
+[14:38.64] execute that it's not going to be used
+[14:40.56] the terminal directly instead of that in
+[14:42.64] a background process it's going to be
+[14:45.20] use your g bash so g is a important one
+[14:49.52] even in the documentation also they have
+[14:51.44] mentioned the same thing if you are
+[14:53.60] working with the windows system then
+[14:55.92] install the git the second is the cloud
+[14:58.72] code install the cloud code after that
+[15:01.60] uh you just have to run this command run
+[15:03.60] cloud A then uh choose the login method
+[15:06.56] there is a various login method uh
+[15:09.12] mainly they are providing you three
+[15:10.88] login method so I will show you all the
+[15:13.28] three login method and then we are
+[15:14.80] selecting any one method uh then uh
+[15:17.44] setup billing so pro API whatever right
+[15:20.48] so pro with the pro plan you can go with
+[15:22.40] the API you can go so I will go with the
+[15:24.80] API uh right now okay and even I will
+[15:28.24] show you the pro plan if you are willing
+[15:30.00] to go with the Pro plan you can go with
+[15:31.76] that. Uh open a project folder ask cloud
+[15:35.52] to inspect the project work module by
+[15:38.00] module verify the verify and generate
+[15:40.24] the code. Okay. And then run it and test
+[15:42.40] it. So this is all the command this is
+[15:44.80] all the steps we are going to follow
+[15:47.44] throughout this video. So uh in step one
+[15:50.96] guys we'll install the git and we'll
+[15:53.04] verify whether we have git or not. So
+[15:55.84] how you can install the git? So for
+[15:58.56] installing a git guys you just need to
+[16:00.96] go through with this git scmm.com. Now
+[16:03.68] once you will go through with this git
+[16:05.20] scmm.com here they have given you the
+[16:07.36] various uh option to install the git.
+[16:10.08] You can install the git for uh window
+[16:12.48] for the Mac, Linux and for any platform.
+[16:16.16] So every sort of a way you will get over
+[16:18.32] here to install the git and yes uh you
+[16:21.20] just need to search this gitcm.com over
+[16:23.44] the browser you will get this page. uh
+[16:25.84] even if you're working with the Mac OS
+[16:27.60] and Linux but guys uh please keep out
+[16:30.00] keep this git inside your system
+[16:31.84] configure this git inside your system it
+[16:34.16] is very easy uh now what is the next one
+[16:37.36] so after that guys uh here you can see
+[16:40.24] so the next is going to be install cloud
+[16:42.80] code so we'll install the cloud code
+[16:44.48] here is a command for installing the
+[16:45.92] cloud code so we are going to be install
+[16:48.08] this cloud code using what using the cmd
+[16:51.12] or powershell I'm working in a windows I
+[16:53.60] can download it from here or else what I
+[16:55.92] can do I can directly install the
+[16:57.92] desktop version of the cloud a code and
+[16:59.84] with that also I can configure it inside
+[17:01.92] my system. Uh now after the installation
+[17:04.48] guys you will have to start the cloud
+[17:06.16] code then just write the cloud a okay or
+[17:08.64] after the installation itself they will
+[17:10.16] give you the couple of command to set up
+[17:11.76] the uh set up the subscription and all
+[17:14.32] you just need to follow those specific
+[17:16.00] command. Uh now after writing a cloud
+[17:18.24] guys uh you will your cloud will be
+[17:20.48] started. Now you have to choose the
+[17:22.32] login method. So after writing a cloud
+[17:24.72] you will get this login method option or
+[17:27.20] else while you are installing at that
+[17:29.44] time only after the installation you
+[17:30.96] will get this login method okay I'm
+[17:33.52] telling about the first time if you are
+[17:35.36] running it inside the first time you
+[17:36.88] will get in a two uh you will get uh
+[17:39.12] alongside this installation okay uh or
+[17:42.08] else what you can do if the installation
+[17:43.84] is completed if you're not getting the
+[17:45.12] login method then once you will write
+[17:46.48] the cloud it will give you the login
+[17:48.08] method uh then guys what you have to do
+[17:50.40] you have to decide the uh method uh with
+[17:52.96] which method you are going whether you
+[17:54.32] are going with the API one or you are
+[17:56.40] going with the subscription okay then uh
+[17:59.12] you can choose out the different
+[18:00.32] different method they are giving you
+[18:01.52] this two method okay cloud subscription
+[18:03.76] and the second is what uh the second is
+[18:05.92] the API key now apart from that they are
+[18:07.92] giving you the third method also you can
+[18:10.32] uh set up the cloud code using the uh
+[18:13.12] AWS or the Azure credential so if you
+[18:16.00] have access of the Azure bedrock if you
+[18:18.08] have access of the Azure openai in that
+[18:20.24] way also you can uh configure this cloud
+[18:22.80] A because uh anyways you are going to be
+[18:25.52] read a model right uh whether it's a pro
+[18:27.36] plan or API key you are just going to be
+[18:29.20] read a model so uh you can read a model
+[18:31.52] from the Azure from the Azure co-oundary
+[18:33.92] uh cloud foundry and from the AWS
+[18:36.00] bedrock okay so that option also they
+[18:38.08] are providing you over here uh then
+[18:40.48] after configuration guys you just need
+[18:42.16] to check out from the terminal itself
+[18:43.68] you can write a prompt you can uh check
+[18:45.52] out uh you you can write a prompt guys
+[18:48.08] you can check whether it is working or
+[18:49.60] not and uh here you can use it in a
+[18:52.64] various way. So you can understand the
+[18:54.64] codebase, you can generate a new
+[18:56.08] project, you can fixes the work, you can
+[18:57.84] refactor the code, you can write the
+[18:59.28] test cases, anything regarding the
+[19:01.44] development you can do using this cloudy
+[19:03.68] code. It's going to be a very good tool.
+[19:05.84] Okay. Now uh guys uh here is a way right
+[19:09.28] to set up inside the window. Either you
+[19:11.12] can open the PowerShell or the cmd. So
+[19:13.36] let me show you the step-by-step
+[19:14.64] process. Uh actually I already installed
+[19:16.64] it inside my system. So what I can do I
+[19:19.20] can uh simply open the cmd and after
+[19:21.84] that guys I can uh write over here this
+[19:25.20] cloud A. Okay. So once I'll write a
+[19:27.44] cloud A. So this is my cmd either you
+[19:30.56] can open the power cell. Now guys
+[19:32.48] spelling should be correct otherwise it
+[19:34.16] will give you the error. So once you
+[19:35.52] will write cloud A guys see my cloud A
+[19:37.60] is already in uh my cloud A is already
+[19:41.36] installed. Okay. So uh here it is asking
+[19:44.00] to me uh do you trust to this folder
+[19:46.72] means uh can I uh take access of this
+[19:49.44] folder if I will say yes then it will
+[19:52.00] take. If I will say no it will not take.
+[19:54.24] So I'm just hitting the enter. Okay
+[19:56.00] after keeping the arrow over here. So if
+[19:58.40] I will hit enter see the cloud code is
+[20:00.72] activate over here. Now uh here what I
+[20:02.88] can do guys I can log out first. Right.
+[20:04.72] So let me log out first and let me show
+[20:06.80] you how it's going to be work. How you
+[20:08.96] are going to be logged in. Okay. So for
+[20:11.04] log out guys what I will do? So I will
+[20:12.48] simply write slash and then here I will
+[20:14.56] write log out. So once I'll write this
+[20:17.52] log out see I will be logging out from
+[20:20.32] the system. So my cloud a is going to be
+[20:24.48] log out right. So let it log out. Yeah.
+[20:27.68] So it is log out now. So if I'm going to
+[20:29.92] be routed now so it will ask me sign in
+[20:33.28] again. Sign in again. So here I written
+[20:35.68] a cloud. Now see it is asking to me on
+[20:37.92] which mode you want to to keep. So dark
+[20:40.16] mode, light mode, right? It is asking
+[20:42.00] for this particular terminal. So if I
+[20:43.60] will click on the dark mode, it will
+[20:44.88] keep on the dark mode. Now this is very
+[20:46.88] important thing and this is what I was
+[20:48.32] talking about. So it is giving you three
+[20:50.48] way to access the cloud a guys to cloud
+[20:52.88] a model. The one is the subscription
+[20:54.96] waste. Uh you are uh you can access the
+[20:57.36] pro subscription, Mac subscription,
+[20:59.04] teams or enterprise. You can uh keep the
+[21:01.68] money inside your API account or else
+[21:04.08] you can use the third party uh platform
+[21:06.56] also. Okay,
+[21:08.72] you can use the third party platform
+[21:10.56] also. Now, let me uh show you guys uh if
+[21:13.36] uh we are talking about this pro
+[21:14.96] subscription. So, how you will get that?
+[21:16.96] So, once you will open this cloud,
+[21:19.04] right? Where is a cloud? Here's a cloud
+[21:21.12] guide. Now, here you can see right now
+[21:22.72] I'm I am over the free plan. So, if I
+[21:25.68] will upgrade my plan, right, it it is
+[21:27.76] similar to the chat GPT. You can access
+[21:30.48] the pro of the chat GPT with some $20,
+[21:34.00] right? With some $100. So in a similar
+[21:36.64] way they are also offering you the pro
+[21:38.64] version. So you can uh uh you can access
+[21:42.16] it with this $70 of amount you can uh
+[21:45.36] use this $100 dollar of account as well
+[21:47.68] right uh you $100 of plan as well you
+[21:50.00] can where you can uh like use the
+[21:52.08] maximum capacity of the cloud. So this
+[21:54.40] is the one way if you have a pro access
+[21:56.32] or the or the max access you can uh
+[21:59.20] utilize this cloud code. Now the another
+[22:01.60] way via the API. Okay. So let me show
+[22:04.08] you the way of uh how basically we can
+[22:06.08] access it via API. So for that what you
+[22:09.52] have to do this is cloud code document.
+[22:12.40] Now let me go through the API. So guys
+[22:14.40] see uh how I can navigate to the API.
+[22:18.64] Just a second they are giving you the
+[22:20.96] option over here itself or simply I can
+[22:25.20] write over here cloud a API. Okay cloud
+[22:29.12] api key.
+[22:32.16] So once I'll write this cloud API see
+[22:34.72] they are giving you the uh
+[22:37.92] platform where I can generate the API
+[22:39.92] key. So it is similar to the open API
+[22:42.16] key right. So see they are giving the uh
+[22:44.80] cloud console. Yeah. So I think once you
+[22:47.04] will click on the cloud console now
+[22:48.64] console login this one. Uh yeah so once
+[22:52.08] you will click on this cloud console
+[22:53.76] correctly. So from there also we can
+[22:55.36] navigate. So once you will click on the
+[22:57.04] cloud console you will be able to get a
+[22:58.96] option to this API key. So you can
+[23:01.20] generate this API key. But again guys,
+[23:03.44] here the free uh means uh you will have
+[23:05.76] to put some money inside your API
+[23:07.36] account. So let me show you the my let
+[23:09.84] me show you my account. So if you will
+[23:11.76] check my account, I already I already
+[23:14.72] kept at least $5. Okay, at least you
+[23:16.88] need to keep $5. See uh on 6th of March,
+[23:19.68] I kept $5. It completely gone. Okay, I
+[23:22.64] build a pro project. It completely took
+[23:25.20] my money. Uh then again uh today I kept
+[23:28.48] $7 and maybe after this video this money
+[23:31.44] is going to be vanish. So it takes money
+[23:35.20] guys it is money oriented. Uh don't
+[23:37.84] think you can uh use it freely. No it is
+[23:40.96] not like that. Uh crowded code will take
+[23:44.48] your money and uh even in an enterprise
+[23:46.80] also it will it will it will be taking a
+[23:49.52] very huge amount of money. If the entire
+[23:52.08] team team is using then uh maybe5 to 10
+[23:54.72] lakh of budget just for the cloud code
+[23:57.04] you will have to keep. So uh cloud here
+[24:00.24] I just kept5 to $6 guys just to
+[24:02.72] demonstrate you the thing. uh you can
+[24:04.96] void some credit at least $5 500 to 600
+[24:07.76] rupees only and then you can practice
+[24:09.84] with the cloud code if you just want to
+[24:12.00] practice otherwise you can ask to your
+[24:14.72] uh project manager or your uh like the
+[24:18.00] this manager right director to give me
+[24:20.40] the cloud code access I can try out the
+[24:22.80] project with the cloud code so they will
+[24:24.96] provide you the enterprise account okay
+[24:27.76] I hope this thing is clear now guys why
+[24:30.24] this cloud code is important the cloud
+[24:32.64] code is important because it is being
+[24:34.56] used inside the enterprises. Even in my
+[24:37.28] company also we are using it. So
+[24:39.68] recently we have configured this cloud
+[24:41.68] code and the result of the cloud code
+[24:43.36] was very amazing. Uh definitely it's
+[24:46.40] going to be take your money but again uh
+[24:48.40] the result of it the result out of this
+[24:50.40] cloud code is going to be very amazing.
+[24:52.40] So we have uh we already have
+[24:55.84] GitHub copilot we have ID like cursor
+[24:58.16] and the integraity where also we can
+[25:00.80] utilize this co-pilot. Okay. instead of
+[25:02.72] this cloud code but again if you're
+[25:04.64] going to be use this cloud e code or
+[25:06.72] openai GP codeex guys right open also
+[25:10.00] release the same similar kind of
+[25:11.36] platform which is a codeex so yeah the
+[25:13.52] result is going to be little different
+[25:15.28] but uh I did a coding with a github
+[25:17.12] copilot also that is also pretty amazing
+[25:19.52] and uh even I tried the cloud codeex it
+[25:21.84] is a money oriented but it is also
+[25:23.60] amazing right is still I'm exploring a
+[25:26.00] depth of it right now uh uh I hope this
+[25:29.60] thing is clear now coming to the next
+[25:31.76] card. So, uh I hope guys you understood
+[25:34.72] how to set up the cloud accord and all.
+[25:36.40] Let me again give you the walk through.
+[25:37.84] So, which cloud I am, which uh account
+[25:40.88] I'm going to be choose over here. So,
+[25:42.40] I'm going to be choose this Anthropic
+[25:44.32] console account. So, I will uh go down
+[25:48.32] and then I will hit enter. Now, once I
+[25:51.12] will hit enter, so it will redirecting
+[25:52.96] to me to the different uh page. Okay,
+[25:55.28] this is the page. Now, once I'll click
+[25:56.88] over here authorize, so yeah, I am
+[25:59.44] authorized to use. If you don't have
+[26:01.36] money over here then it won't allow to
+[26:03.60] you. So please keep some money inside
+[26:05.60] your account otherwise you will not be
+[26:07.20] able to access that. Now see login is
+[26:09.52] successful. Now if I will hit enter now
+[26:11.84] see uh I can access the I can access the
+[26:14.80] cloud. Okay. So see guys I'm able to
+[26:17.68] access the cloud A and it is configured
+[26:20.24] inside my system. It is very easy right?
+[26:23.44] Nothing is there. Now it is having
+[26:24.96] several command many commands even you
+[26:26.88] can give the simple prompt also. So
+[26:28.88] let's try out inside any folder. Okay.
+[26:31.44] Then I'll show you how you can configure
+[26:33.12] it inside the VS code and then we'll
+[26:35.36] talk about the project. So uh first let
+[26:38.24] me exit from here and let me go inside
+[26:41.36] any project. So once I'll write the
+[26:43.20] diir. See I have a various project over
+[26:45.44] here inside this uh directory. So I'm uh
+[26:48.40] going inside one of the project. Let's
+[26:50.32] say this is my project. I'm just going
+[26:52.32] inside this project. I'll write cd and
+[26:54.24] then I'll give the project name. So what
+[26:57.20] I can do guys? I can copy the project
+[26:59.36] folder name or I can simply write that I
+[27:01.60] think fishing website. So this is the
+[27:04.00] project which I created uh using the uh
+[27:06.96] AI only and u today I'm not going to
+[27:10.24] show you this project. I will show you
+[27:11.52] something else. So for that also guys I
+[27:14.16] kept the entire node. See this is the
+[27:16.48] entire nodes and definitely we are going
+[27:18.80] to discuss this entire thing. Okay. Now
+[27:21.92] uh here what I'm doing so uh I'm uh just
+[27:25.60] initializing the cloud now. So once I'll
+[27:28.00] write cloud a now see uh it is asking me
+[27:31.28] uh access right of this folder I am
+[27:34.40] saying yes you can uh I trust this
+[27:36.64] folder so yeah now it is having access
+[27:39.36] of this folder now here I can ask
+[27:41.76] anything uh hi can you explain
+[27:46.96] explain this project can you explain
+[27:50.48] this project now see it is uh initialize
+[27:53.52] so it is it is trying to read the entire
+[27:55.36] file and all everything So yeah after
+[27:57.44] that I it will give me the complete
+[27:58.88] explanation of this entire code uh just
+[28:01.44] by giving some prompt and guys see it is
+[28:03.76] reading the entire code. It is reading
+[28:05.60] the entire code, right? And uh see what
+[28:09.44] it does. A machine learning system that
+[28:11.04] detects what whether a URL is a fishing
+[28:13.68] website or is a legitimate.
+[28:16.64] This is the architecture here is a key
+[28:18.88] component. Right? Uh this is a tech ST.
+[28:22.72] Very good. Then flow summary. Uh okay,
+[28:26.08] it did not uh tell me the flow summary.
+[28:28.56] Maybe it told or not. No. Yeah, here is
+[28:31.92] a flow summary. Right. If I will like
+[28:35.04] press the down arrow then I'll get that.
+[28:37.36] So guys it is able to explain me the
+[28:39.20] entire project and even I can ask
+[28:41.04] anything to this and it is going to be
+[28:43.20] work in the next level. Uh definitely I
+[28:45.68] can show you that but not here I will
+[28:47.76] configure it in properly in a VS code
+[28:49.92] and there only we'll discuss about the
+[28:51.68] project. Now which project we are going
+[28:54.64] to develop. Uh that is very important
+[28:56.56] thing. So project wise guys I kept the
+[28:59.04] entire uh uh I kept this entire use case
+[29:02.16] over the blackboard itself. Uh now uh
+[29:04.64] step by step uh one by one let's uh
+[29:07.20] discuss this entire use case and let's
+[29:10.00] try to develop that. So guys uh here I
+[29:13.20] return a very important line. Now before
+[29:16.32] starting the project uh let's uh read it
+[29:19.20] out. So I written over here anyone can
+[29:21.60] generate a code with AI today but a real
+[29:24.56] engineer understand the architecture
+[29:26.88] behind the system. So uh the meaning of
+[29:30.16] this line is uh don't become a bio coder
+[29:33.52] become a real engineer guys. uh what I
+[29:36.72] have seen nowadays everyone is
+[29:38.88] generating a code everyone is uh
+[29:40.88] creating a project or everyone is uh
+[29:43.92] developing their product but most of the
+[29:46.56] people they don't even know the
+[29:48.80] architecture or the fundamental behind
+[29:52.40] that code. So guys until and unless you
+[29:55.44] don't know the real fundamental right
+[29:57.84] until and unless you don't know the
+[29:59.60] exact meaning of that application where
+[30:02.24] it's going to be used what should be the
+[30:04.72] correct architecture of it it's not
+[30:07.04] going to work in a production at all so
+[30:10.08] what I would suggest you I would suggest
+[30:11.92] you generate a code but before that uh
+[30:16.16] clear your fundamentals until and unless
+[30:18.64] you don't know the real meaning of the
+[30:20.16] programming you don't understand the
+[30:22.08] python you don't understand the
+[30:23.68] fundamental of AI that application may
+[30:27.44] be it might be a disaster. Okay, because
+[30:30.08] see as a individual learner right as a
+[30:33.20] individual learner or as a individual
+[30:35.52] builder you can develop anything right
+[30:38.80] but whenever you are working for any
+[30:41.20] company whenever you are working for a
+[30:43.12] real enterprises there the product the
+[30:47.04] application which you are going to build
+[30:49.44] it is having some meaning. Now before
+[30:52.24] starting of any project you will have to
+[30:54.80] understand the problem statement of it.
+[30:57.20] Okay. So the second line is same you
+[31:00.00] will have to understand the real world
+[31:02.08] problem statement before starting any
+[31:04.24] use case and that is a requirement of
+[31:06.56] the industry. Then you will have to
+[31:08.72] understand the user flow right. So how
+[31:11.20] the data is flowing in how the input and
+[31:13.36] output is flowing what will be the input
+[31:15.84] what will be the output how the user is
+[31:17.76] going to be use that then uh you will
+[31:20.64] have to understand the complete backend
+[31:22.72] flow then you will design the UI right
+[31:25.68] then you will design the DB and the
+[31:28.08] knowledgebased flow right so if you are
+[31:30.08] going in this specific order if you're
+[31:32.48] going in this specific order then only
+[31:34.72] your application is going to be
+[31:36.16] successful if you are randomly doing any
+[31:38.80] W coding or anything guys In that case
+[31:41.52] your application might be a disaster or
+[31:45.04] it might fail okay in a real time in the
+[31:47.60] production. So please be careful. First
+[31:50.32] clear your fundamental then only start
+[31:52.96] writing a code. Uh now uh guys uh here I
+[31:56.48] mentioned some of the more point. Let's
+[31:58.40] understand uh what I have written over
+[32:00.24] here. So these lines also very
+[32:02.56] important. So do not do this mistake
+[32:04.72] while using copilots. The first uh let's
+[32:07.68] say we are going to create a project.
+[32:09.60] Okay. Okay. So in today's video guys, I
+[32:11.36] will show you how you can create this
+[32:13.12] customer support email system and this
+[32:16.56] we are doing with the help of AI agent.
+[32:19.04] So guys, if you're going to be create
+[32:20.88] any system, if you're going to be create
+[32:22.64] any application using the copilots, then
+[32:25.20] don't directly give this kind of a
+[32:26.72] statement, create an AI agent that can
+[32:29.84] handle customer support email
+[32:31.20] automatically or build a full production
+[32:33.36] grade multi-agent customer support uh
+[32:35.36] system or build an AI email assistant,
+[32:38.16] right? That reads incoming mail,
+[32:39.76] understand intent and generate
+[32:41.28] appropriate response, right? So if
+[32:43.28] you're giving these kind of a statement
+[32:44.96] to any co-pilot okay so it might fail
+[32:49.12] right where it it might fail. So these
+[32:51.84] are the point which I highlighted. Now
+[32:53.76] let's try to read it out. So if you're
+[32:55.76] directly asking to the cloud echo to
+[32:57.76] build everything right in that case what
+[33:00.00] will happen you know uh the design of
+[33:02.64] the system is going to be inconsistent.
+[33:05.28] Okay, files may be generated randomly.
+[33:08.48] Whatever files you wanted to generate,
+[33:10.64] it might generate here and there and
+[33:12.64] because of that the imports may break.
+[33:15.12] Okay, the architecture may become weak
+[33:18.24] and the production readiness may be
+[33:20.32] slow. Yeah. So guys, if you are giving a
+[33:23.52] single prompt, right, if you are giving
+[33:25.28] these kind of prompt or direct prompt to
+[33:27.60] the co-pilot system, in that case your
+[33:29.68] co-pilot system might be a pro might it
+[33:33.20] might create a problem. Okay. And these
+[33:35.68] all are the problem which I have
+[33:37.12] highlighted over here. Now how to use a
+[33:39.28] co-pilot? So here I written couple of
+[33:41.36] points. Let's try to read it out this
+[33:43.04] point. So if you are using a co-pilot
+[33:45.44] then use it in a smart way. Now what
+[33:47.36] could be that smart way? Do not generate
+[33:49.60] the entire project at once. Use work
+[33:52.48] module by module. Okay. Use an exact
+[33:55.28] prompt for each module. Verify the
+[33:57.60] generated code. Perform testing and then
+[34:00.16] only do the integration. Understood
+[34:02.80] guys? So we have to go step by step. If
+[34:05.60] you are not going step by step, if
+[34:08.16] you're not deciding what will be your
+[34:10.00] backend flow, what will be your UI, what
+[34:12.48] is going to be a data flow, in that case
+[34:14.72] your system might fail. So that's why
+[34:17.36] I'm that's what I'm saying guys. Uh
+[34:19.12] whoever don't know the programming that
+[34:21.68] person also is going to be generate the
+[34:24.32] application that is fine. This is good
+[34:27.12] for the individual learning. But guys if
+[34:29.76] you are working on an enterprise level
+[34:31.60] then guys your fundamentals should be
+[34:33.84] clear right and in future you will see
+[34:37.76] people companies are hiring those people
+[34:40.24] only who knows the fundamental okay the
+[34:43.68] system uh their uh system architecture
+[34:46.16] concept is very much clear. If your
+[34:49.84] architectural concept is clear, if you
+[34:52.24] know the fundamental, if you have worked
+[34:54.24] on some project, right? If you worked on
+[34:56.72] some project, then you can easily do the
+[34:59.44] W coding. And then in that case, W
+[35:01.92] coding is going to be your uh then in
+[35:04.24] that case guys, W coding is going to be
+[35:06.00] a very uh efficient productive tool.
+[35:09.92] Okay, you can achieve a highest
+[35:11.92] productivity using the co-pilots and
+[35:13.84] all. And even I felt the same when I was
+[35:16.16] working on some projects. So I hope guys
+[35:18.80] this fundamental thing is clear. Now
+[35:20.72] coming to the next part. So what we are
+[35:23.12] going to develop inside this video. So
+[35:25.52] guys inside this video we are going to
+[35:27.12] develop AI powered customer support
+[35:29.52] email agent. Okay. Now you know guys
+[35:32.00] email communication is a very important
+[35:34.08] part of almost all the industry right.
+[35:37.20] Uh this agentic application can be used
+[35:40.24] across many industry. In every industry
+[35:42.80] we are going to be use the email
+[35:44.72] communication right. Uh without email
+[35:47.52] communication none of the industry is
+[35:49.28] going to be work right. So we can use
+[35:52.16] this particular system across the
+[35:54.16] industry and how how it will look like
+[35:56.48] we'll see at the end. But first of all
+[35:58.16] let me tell you the complete flow of it.
+[36:00.16] Okay. How this entire thing is going to
+[36:02.00] be work. Now what is the goal of it?
+[36:04.64] What is the goal of this uh system? So
+[36:06.80] goal basically it will generate a faster
+[36:08.80] response than human. Right? Human is
+[36:10.96] thinking then he's typing. Now here uh
+[36:14.72] it is going to be generate a bit faster
+[36:17.04] than human then lower support cost. Yes.
+[36:19.76] Uh like if you're going to be hire 10 to
+[36:21.68] 15 people right for this customer
+[36:24.80] support there the single system is going
+[36:27.28] to fulfill your requirement. So here it
+[36:29.60] will lower your support support cost.
+[36:32.08] Okay. Scalable support operation. Let's
+[36:35.28] say guys you wanted to reply for uh you
+[36:38.88] wanted to reply for uh thousand mails
+[36:41.92] right 1,000 to 2,000 mail. Now in that
+[36:44.16] case uh how many more people will hire
+[36:46.72] or let's say your mail flow is very uh
+[36:51.04] very huge in your organization in your
+[36:52.96] company you you are going to be uh you
+[36:56.32] are going to be generate like let's say
+[36:58.00] lakhs to two lakhs mail okay per uh
+[37:00.80] months or maybe per quarter and you have
+[37:03.20] to handle that by a customer support.
+[37:05.04] how you will do that? Okay. So, how many
+[37:07.52] people how many like teams you are going
+[37:09.60] to be build for that? So, it's going to
+[37:11.60] be a difficult for you. And now here
+[37:13.20] this system basically it is for the
+[37:15.44] scalable support which can help you even
+[37:18.64] for the uh lacks of lacks of email. Uh
+[37:22.40] now I hope guys the goal and the uh idea
+[37:25.44] of the project is pretty much clear over
+[37:27.44] here. Now coming to the next part. So uh
+[37:30.24] what is going to be a input and what is
+[37:32.24] going to be output of this application.
+[37:34.40] So input wise uh you will get any sort
+[37:36.88] of a input. Let's say here is the
+[37:38.32] example of the input. Uh in my email I'm
+[37:40.96] getting I am I was not I was charged
+[37:43.04] twice for my subscription. Okay. Now
+[37:45.36] here customer uh support will help this
+[37:48.16] people this like person. Okay. Uh they
+[37:51.76] will tell to this guy how much you
+[37:54.32] charge. Okay. when you paid and all this
+[37:57.04] thing they are going to be asked right
+[37:59.36] now but instead of the uh the real human
+[38:02.32] now this uh thing we are going to do
+[38:04.08] with the help of AI agent okay so we
+[38:06.96] have a so we are getting a mail once
+[38:09.28] we'll get a mail okay my agentic flow is
+[38:11.76] going to be triggered so first it will
+[38:13.76] understand the uh incoming mail it will
+[38:16.32] read the incoming mail it will classify
+[38:18.64] that so uh I might get a mail regarding
+[38:21.20] the different different like uh query so
+[38:24.80] The query with respect to the product,
+[38:26.56] the query with respect to the bug
+[38:28.00] report, right? The query with respect to
+[38:29.84] the billing issue. So this particular
+[38:31.52] query, the example query basically it's
+[38:33.28] going to be a blinking related query.
+[38:35.36] Then feature related request complex
+[38:37.28] issue. Okay, we have a complex issue.
+[38:39.52] Then we are going to redirect that to
+[38:41.20] the human. Okay, then what we are doing
+[38:43.44] guys, we are going to be search or we
+[38:44.96] are going to be search over the
+[38:47.04] knowledge base. If any sort of a
+[38:48.64] information is going to be over the
+[38:50.16] knowledge base over the uh documentation
+[38:53.12] or uh in any sort of a SOP right so we
+[38:56.08] can pick that information from there
+[38:58.16] okay we can pick the information from
+[39:00.00] that specific documentation now
+[39:02.24] according to that we can draft the
+[39:03.68] responses okay for the customer if any
+[39:06.64] complex issue is there if any urgent
+[39:09.12] case is there right if it is not going
+[39:11.36] to be solved by the AI then human can
+[39:13.60] intervention over there okay and then it
+[39:16.16] can send the final reply to the customer
+[39:18.80] and even it can maintain the foundation
+[39:21.52] for scheduling the follow-ups. Getting
+[39:24.00] my point? So this is the work this is
+[39:26.16] going to be a complete flow of this
+[39:28.00] entire application which we are going to
+[39:30.16] build using the cloud code. Okay. And
+[39:32.48] I'm not going to be write a single line
+[39:34.16] of code. Uh the all the thing will be
+[39:36.48] done by the cloud code itself. I hope
+[39:38.96] guys this thing is clear. Now the com
+[39:41.36] next thing is the design flow. So uh
+[39:43.44] this is going to be a complete
+[39:44.80] technology ST guys. So here we are going
+[39:47.76] to use Python, Langraph, Langchain,
+[39:50.08] Langchain, OpenAI, fast API, pyic or
+[39:53.68] vector database. So this is going to be
+[39:55.60] a complete technology stack okay for
+[39:58.00] this entire workflow and uh the same
+[40:00.80] thing will provide to the cloud A and
+[40:02.80] behalf on this technology stack my cloud
+[40:04.80] A is going to be generate the code.
+[40:06.96] Okay. Uh then guys uh here you can see
+[40:10.08] this is my folder structure. Now again
+[40:12.16] guys uh this is just a normal folder
+[40:14.40] structure which I kept whenever we are
+[40:16.56] working in the industry right so there
+[40:18.32] is no predefined folder structure okay
+[40:21.28] uh if we are going to build a micros
+[40:23.44] service right if we are going to be
+[40:24.96] deploy our application in the form of
+[40:26.96] microservices then the uh folder
+[40:29.92] structure could be different uh if we
+[40:31.84] are going to be like deploy our
+[40:34.40] application in the monolithic right so
+[40:36.08] the folder structure could be different
+[40:38.08] uh there could be server worker service
+[40:40.24] right then API then UI layer right so
+[40:42.56] the multiple layer could be so here I
+[40:44.88] created one uh generic folder structure
+[40:47.04] but guys more and less the folder
+[40:48.96] structure will be like this whether you
+[40:50.64] are using the microservices or whether
+[40:52.72] you are creating a monolithic
+[40:54.08] application right in all the situation
+[40:56.96] uh the core technical files and folder
+[41:00.80] right it will be arranged like this now
+[41:02.80] apart from this you can create as many
+[41:05.28] as file and folder according to your
+[41:07.04] requirement now what whatever you wanted
+[41:09.04] to keep whatever uh middleware, whatever
+[41:12.08] workflow or whatever like configuration,
+[41:14.72] notification you wanted to keep, you can
+[41:16.64] create a files and folder accordingly.
+[41:18.64] But guys, more or less the core
+[41:20.16] architecture, okay, the core code uh you
+[41:22.96] can keep it inside this file and folder.
+[41:25.04] So this file uh and folder this
+[41:27.12] basically complete folder structure I
+[41:29.20] just created just to show you how my
+[41:31.60] application may look like. Okay. And
+[41:33.92] even the same kind of instruction we can
+[41:35.68] provide to the cloud A also because as I
+[41:38.08] told you if you are going to generate
+[41:39.60] anything using the cloud A right uh in
+[41:42.00] that case cloud A may generate anything
+[41:44.80] any uh uncertain thing right so if you
+[41:47.60] wanted to certain if you want to take a
+[41:50.24] uh like the complete control of the
+[41:52.16] project in your hand in that case you
+[41:54.56] have to define everything guys and
+[41:56.24] that's what I'm saying from the starting
+[41:58.16] of this video okay even if you're a B
+[42:00.72] coder but guys if your fundamental
+[42:02.56] system architecture knowledge is clear
+[42:04.80] then your application is going to be
+[42:07.12] very robust and it's not going to be
+[42:08.80] break inside the production. Okay. So I
+[42:11.68] hope this is also clear. So same kind of
+[42:14.08] architecture maybe we can utilize for
+[42:16.16] this application also and more or less
+[42:18.56] it might be different. Okay. Now over
+[42:20.80] here guys uh one more thing I have
+[42:22.64] written over here. See whenever we
+[42:24.64] talking about the back end right. So in
+[42:26.08] back end what we design. So in back end
+[42:28.40] guys we uh will be having the detail of
+[42:31.68] all the module we are going to be decide
+[42:34.08] the connectivity between the module okay
+[42:36.88] connectivity between the module then
+[42:38.96] guys we are going to be discuss the API
+[42:40.72] design then we'll be having the API
+[42:42.96] layer then in the back end only we'll be
+[42:44.88] having the data database architects
+[42:46.80] knowledge based architect uh knowledge
+[42:48.96] based architecture then a logging design
+[42:51.60] exception design okay and the low-level
+[42:53.84] class design which class pattern you are
+[42:55.68] going to be use okay So according to
+[42:57.76] that only we are going to be decide the
+[42:59.84] class design. So these all the things
+[43:02.24] actually comes under the backend design.
+[43:04.80] Okay. The low-level code where we are
+[43:06.64] going to be write for the main
+[43:07.76] functionality for the main business
+[43:10.40] logic. So this entire thing actually is
+[43:12.80] going to be recite over here. Module is
+[43:15.04] nothing uh so the python file we we are
+[43:17.76] talking about the module. So python file
+[43:19.92] itself is called the module. So if I'm
+[43:22.16] saying P module in a Python code in a
+[43:24.32] Python project that doesn't mean it is a
+[43:26.00] Python file only. Right? Now over here
+[43:28.64] guys we're talking about the UI. So
+[43:30.48] again UI is a very subjective thing. It
+[43:32.80] might vary according to the requirement.
+[43:34.72] So here also we'll build one UI and here
+[43:37.28] I return one uh uh basically uh
+[43:40.32] statement. Okay for that and yes
+[43:42.88] according to this only we are going to
+[43:44.32] build a UI. Now if we're talking about
+[43:46.64] the deployment guys so yes I will come
+[43:48.80] to the deployment that how we can handle
+[43:50.88] the deployment using this kind of
+[43:52.88] project means if we are going to build a
+[43:54.72] project using the cloud code right so
+[43:56.88] how we can handle the deployment now see
+[43:58.80] guys a deployment side means cloud a
+[44:01.44] cannot log my AWS console it cannot
+[44:05.12] create a service like EC2 ECS lambda
+[44:08.32] okay from the console itself but it can
+[44:10.64] do via cloud formation it can do using
+[44:13.60] the terraform it can do using the CDK.
+[44:17.36] Okay. So guys, uh cloud A cannot
+[44:20.56] directly log to my AWS console but it
+[44:24.32] can handle thing at certain level using
+[44:27.68] the script. Getting my point? So the
+[44:30.08] same kind of thing basically I have
+[44:31.28] written over here. Just try to read it
+[44:33.36] out your uh all the doubts related to
+[44:35.28] the deployment is going to be clarified.
+[44:37.36] So uh here you can see cloud does not
+[44:40.08] automatically create or configure AWS
+[44:43.12] services by itself. Means uh it can not
+[44:46.16] open your browser okay over the browser
+[44:49.04] it's not going to be search over the AWS
+[44:52.08] then it's not going to be uh write your
+[44:54.32] email id over there or it's not going to
+[44:56.72] be write your password there okay then
+[44:59.20] uh it's not going to be configure the
+[45:00.64] service like EC2 ECS okay so all this
+[45:04.80] thing all this thing matters a lot while
+[45:06.64] we are doing a deployment but manually
+[45:08.64] this thing is not going to be happen and
+[45:10.16] even in the industry we don't do such
+[45:12.08] thing manually right So how this thing
+[45:14.48] is going to be done? So cloud a code
+[45:16.64] cannot directly configure AWS services
+[45:18.96] by itself but it can generate the
+[45:20.64] infrastructure as a code and this is
+[45:22.72] what we are following in the industry.
+[45:24.48] But again guys it needs to be followed
+[45:26.72] under the supervision of the DevOps
+[45:29.44] engineer. If it is not going to be
+[45:31.20] followed under the supervision of the
+[45:32.48] DevOps engineer in that case it might be
+[45:35.36] a very big disaster for the company
+[45:37.44] because it might generate anything.
+[45:40.16] Okay. And we even don't know like what's
+[45:42.32] going to be generate and what kind of
+[45:44.00] service is going to be create in a back
+[45:45.76] end right means whatever services we are
+[45:48.08] going to be write maybe it might
+[45:49.28] multiply that because just like AI right
+[45:51.28] so it's not a guarantee that it's going
+[45:53.36] to be follow a similar kind of
+[45:54.56] instruction which we are giving there's
+[45:56.24] 90.9999% chance it's going to be follow
+[45:58.48] the same but there could be mistake 0.1%
+[46:01.36] could be a mistake so we have to do this
+[46:03.68] thing under the supervision of the
+[46:05.04] DevOps engineer right so cloud basically
+[46:07.84] it is capable to write a config
+[46:09.68] configuration it can perform
+[46:10.96] infrastructure as a code when the code
+[46:13.44] runs through the CI/CD pipeline that
+[46:15.76] requires AWS are automatically created
+[46:17.84] and configured. So we just need to
+[46:19.68] configure the AWS credential inside the
+[46:23.20] uh uh GitHub if we are using GitHub
+[46:25.36] action genkins uh if we are using a
+[46:27.44] genkins pipeline. Okay. And how we can
+[46:29.60] do that? So uh we we can do that
+[46:31.52] manually configuration of the credential
+[46:33.92] and all and then we can write a script
+[46:35.60] in the terraform cloud formation AWS CDK
+[46:38.72] right this is all going to be a
+[46:40.16] deployment script right uh
+[46:41.60] infrastructure as a code means we are
+[46:43.52] going to be build a infrastructure using
+[46:45.20] the code now we can create these many
+[46:47.68] services even any services using that
+[46:50.08] configuration okay so here I I have
+[46:52.48] written one very important line just try
+[46:53.84] to read it out it does not directly log
+[46:55.84] into the AWS console but it generate
+[46:57.92] infrastructure as a code that instruct
+[46:59.84] AWS to create them. I hope guys you
+[47:02.56] understood. Now let me tell you the
+[47:04.16] final capability of the cloud A. So with
+[47:06.80] that guys your understanding is going to
+[47:08.40] be very clear. So cloud A can write
+[47:13.60] a code. Okay. Cloud A can push it to the
+[47:20.56] GitHub. Okay. Cloud A can trigger the
+[47:26.56] GitHub action
+[47:30.00] pipeline.
+[47:32.16] Okay. Cloud A can help us to write
+[47:35.44] infrastructure
+[47:37.12] as a code and using this infrastructure
+[47:40.48] as a code using this configuration
+[47:43.60] right infrastructure infrastructure as a
+[47:45.84] code configuration right we can create a
+[47:50.80] infrastructure we can configure the
+[47:52.96] services over the AWS
+[47:58.00] right I hope you are getting my point so
+[48:00.96] using the configuration ally using the
+[48:03.68] infrastructure the service only right
+[48:06.40] which we can do using the terraform or
+[48:08.96] using the GitHub action configuration
+[48:11.44] right uh we can uh basically create a
+[48:14.88] infrastructure over the cloud and there
+[48:16.64] this cloud code can help us I hope you
+[48:19.68] understood it now inside this project
+[48:21.84] how much we are going to do so guys we
+[48:23.76] are doing a development level of work
+[48:26.00] right inside this particular project and
+[48:29.36] in uh rest other video maybe in some
+[48:32.88] other video we're going to see the
+[48:35.04] deployment as well. Okay, because as of
+[48:37.20] now it might be little advanced and it
+[48:38.72] might be the expensive as we are already
+[48:41.20] paying to the cloud code. So the
+[48:42.88] deployment side we can look uh in the
+[48:45.52] another video. Okay so yeah I hope guys
+[48:48.32] you understood the entire thing. Now
+[48:50.96] let's uh start with the cloud code.
+[48:52.96] Let's start with the uh building of this
+[48:55.84] project. Now first guys uh open your cmd
+[48:59.68] and create a directory at any location.
+[49:02.56] You can directly create a directory or
+[49:05.36] folder from the file of explorer also.
+[49:08.88] Okay just go inside any drive and create
+[49:11.44] a folder there. Now here I'm going to
+[49:13.76] create a folder at this location c user
+[49:15.84] sunny. It could be anywhere inside your
+[49:18.00] system. So what is a command for
+[49:20.80] creating our directory? The command is
+[49:23.28] mkdir.
+[49:25.28] And then I'll write a folder name. My
+[49:27.04] folder name is customer
+[49:33.20] support
+[49:35.20] email
+[49:36.72] agent. Then I what I'll do guys I will
+[49:39.84] uh write a cd then I will provide a name
+[49:44.80] of my folder customer support email
+[49:48.80] agent. And now here at those location I
+[49:51.84] will open the uh VS code. So how to open
+[49:56.00] the VS code guys? At this location so I
+[49:58.88] will simply write code
+[50:02.32] dot
+[50:04.40] Got it. Now see I open the VS code and
+[50:07.92] uh I open the VS code at at the same
+[50:11.52] location. You can verify it. You can
+[50:13.68] open the terminal. See here is my
+[50:15.44] terminal and you can clearly see I am at
+[50:18.48] this location. Okay. And this is the
+[50:20.56] this is my workspace and now here only
+[50:22.96] I'm going to code my entire project. Now
+[50:25.52] guys how I will code my entire project.
+[50:27.52] I'll code my entire project with the
+[50:29.20] help of cloud A. So first of all what
+[50:31.52] you have to do you have to configure the
+[50:33.28] cloud A inside your VS code. So you can
+[50:35.68] do one thing you can uh initi initialize
+[50:38.00] the cloud A over here. Once you will
+[50:39.84] write the cloud A now see the cloud A is
+[50:42.16] here. Okay, you can uh give any sort of
+[50:44.72] a command to the cloud here. Let's say
+[50:46.64] you can write you can say uh create a
+[50:49.92] requirement txt file.
+[50:52.72] requirement
+[50:55.20] dot txt file
+[50:58.08] with all the necessary
+[51:02.64] requirement
+[51:04.40] okay for the agentic
+[51:08.32] project.
+[51:11.52] So once you will give this uh command to
+[51:13.76] the uh cloud a then see what it will do
+[51:17.04] guys it will create the require.txt with
+[51:19.52] all the requirements. So it will take
+[51:22.16] some time it is thinking and uh the file
+[51:24.96] will be created over here.
+[51:30.64] Okay. Now see guys it has created a
+[51:33.36] file. It is asking to me whether you
+[51:35.36] would like to proceed with that or you
+[51:38.08] would like to uh see here it is giving
+[51:40.40] three option. One is yes. Second yes
+[51:43.04] allow all the edits during this session
+[51:45.04] and then no. So what is the meaning of
+[51:47.60] it? It is asking to me to confirm this
+[51:50.80] file. Okay. The meaning of yes is the
+[51:53.44] same. So it has generated a file. I just
+[51:56.16] need to confirm that. The second
+[51:58.24] basically I need to confirm it. But
+[52:00.48] yeah, I am giving access to edit the
+[52:03.52] other file also and even add it to this
+[52:06.00] file also during this entire session.
+[52:08.48] Right? Not only for this command for the
+[52:10.96] upcoming command also it will
+[52:12.64] automatically edit the file. Third is
+[52:15.12] no. Okay. Simply I'm denying this thing.
+[52:17.28] So if I will say yes. Now see my file is
+[52:20.96] created over here.
+[52:24.32] That much easy guys. That much easy.
+[52:26.72] See.
+[52:28.80] Okay. Now if you if you want to install
+[52:31.76] this fi file recon txt uh let me
+[52:35.76] increase the size just a second size of
+[52:38.16] my uh I think now it is visible
+[52:40.96] perfectly so guys how easy and how
+[52:43.92] simple it is just just think about it
+[52:47.04] right now see I'm working through the
+[52:49.68] terminal now if I want to work with the
+[52:51.76] cloud copilot how I can do that so for
+[52:55.52] that guys uh see I I configure the cloud
+[52:58.08] over the terminal right now and I'm able
+[53:00.08] to work. Okay, but for the cloud a uh
+[53:03.12] copilot I will have to install the
+[53:05.52] extension. So just go and search the
+[53:08.56] cloud a over here.
+[53:11.20] Cloud A. Okay. Now once you will search
+[53:13.76] the cloud A. Now here guys see this is
+[53:16.16] the cloud A. Open this cloud A and
+[53:18.32] install this cloud A. It is already
+[53:21.04] there in my system. I already installed
+[53:23.28] this uh particular plug-in inside this
+[53:25.84] VS code. Now how you will confirm that
+[53:29.20] you have this uh cloud extension or not.
+[53:31.92] Now right hand side guys just open any
+[53:34.72] file. Okay let's say this file. Now
+[53:36.56] right hand side you will get this this
+[53:38.48] symbol. Okay. I hope it is visible. It's
+[53:41.44] not going to be hide. Uh I think so but
+[53:44.00] yeah it is visible right. So you will
+[53:46.24] find out this icon. Okay. Now just click
+[53:48.40] on this icon. Now once you will click on
+[53:50.32] this icon see here is a cloud a code.
+[53:52.96] You can chat with the cloud A. You can
+[53:55.12] do anything whatever you want to do.
+[53:57.04] Right? So I'm uh pressing Ctrl C. I'm
+[54:00.08] not going to handle this cloud a code
+[54:01.92] using the terminal right now. Instead of
+[54:04.24] that what I'll do guys I will use
+[54:06.56] instead of that guys what I'll do I'll
+[54:08.72] use this particular chat window. Okay.
+[54:10.72] From here itself I'm going to write any
+[54:12.80] sort of a command and I'm going to build
+[54:14.72] a application. So uh let me delete this
+[54:18.32] kind of txt. I will I will uh create it
+[54:21.04] later on. So I I'm going to be delete
+[54:25.20] that. Okay. Now what I will do guys?
+[54:28.00] Just a second. Where is a cloud code?
+[54:30.08] This is the code right
+[54:32.64] and here is a cloud code. This is the
+[54:35.92] GitHub copilot. The by default GitHub
+[54:37.76] copilot. If you will click over here now
+[54:40.32] you will get the by default GitHub
+[54:41.76] copilot. Here is a cloud code. Okay. Now
+[54:44.72] over the cloud code also
+[54:47.68] uh
+[54:49.36] over the cloud code also guys what you
+[54:51.28] will see you will see a different
+[54:52.40] different option okay over this chat
+[54:54.08] window I hope it is visible let me keep
+[54:56.56] my webcam left hand side for just for
+[55:00.96] right now sorry just for a couple of
+[55:03.44] second uh yeah so now see guys this is
+[55:06.16] the entire screen of the cloud record so
+[55:08.16] here you can see the past uh here you
+[55:10.24] can see what here you can see the past
+[55:12.08] basically
+[55:14.24] uh conversation right so this is the
+[55:16.88] past chat which I initiated now apart
+[55:19.52] from this one you can see uh the
+[55:21.20] different option ask before edit then
+[55:23.44] edit automatically then here plan mode
+[55:25.84] okay now here guys you will select your
+[55:28.16] file in whichever file you want it to
+[55:30.48] work right you will select that file so
+[55:33.04] that cloud code can take a context of it
+[55:35.84] then uh here is one of the option you
+[55:37.84] can select a file and folder means you
+[55:39.60] can add that file and folder as a
+[55:41.76] context so here uh guys That file and
+[55:44.32] folder will be visible and cloud will be
+[55:46.64] using as a context. Then uh here guys
+[55:49.20] you can see so the different uh option
+[55:51.60] you can attach a file same one file and
+[55:53.84] folder then mention file from this
+[55:55.84] project you can mention the direct file
+[55:57.52] from this project you can clear the
+[55:58.88] conversation you can switch the model
+[56:01.20] you can think okay account and uses you
+[56:04.16] can check everything from here itself
+[56:06.00] toggle fast out mode opus 4.6 six only
+[56:09.52] then output a style agent hopes memory
+[56:12.08] permission everything you can control
+[56:13.60] from here and then here you can see some
+[56:15.76] commands as well. So using this uh
+[56:18.08] commands guys you can check out the loop
+[56:21.52] inside init headup debug cost right
+[56:24.32] everything you can check out from these
+[56:26.40] particular command. So they are giving
+[56:29.28] you every sort of a option to this chat
+[56:31.60] window. So instead of uh like uh instead
+[56:35.28] of managing everything from the terminal
+[56:37.36] you can take a help of this cloud code
+[56:39.36] window okay in a VS code the same is
+[56:42.48] available in the cursor and in a other
+[56:44.88] ID also and it is a much more easier
+[56:47.68] right it is similar to the GitHub
+[56:49.52] copilot now what I will do guys so I
+[56:52.24] will develop my application so I have
+[56:54.40] selected the haiku model it is a cheaper
+[56:56.64] compared to the other model I don't want
+[56:58.24] to waste much money right now just to
+[57:00.64] showcase you this uh example. Okay. Uh
+[57:04.64] otherwise I could have used the other
+[57:06.40] model also. Let me show you the other
+[57:07.92] model. If I want to switch then you can
+[57:09.68] check over here. Sonet is there. Opus is
+[57:11.76] there. Oppus 1 million context is there.
+[57:14.16] Hiko is there. Okay. So these all are
+[57:16.48] model we have. If I'm going to select
+[57:18.16] the sonet or opus. So I'm going to like
+[57:21.28] spend my token in a much faster way and
+[57:23.44] it will charge me very high cost. Okay.
+[57:26.32] The uh cred credits is going to be
+[57:29.76] reduced very fast. the five or $10 of
+[57:32.00] credit right so for the practice guys
+[57:34.16] you can uh use this ha only uh now
+[57:37.60] everything is set so I will provide some
+[57:40.00] prompt to this cloud a and let's see
+[57:42.00] what's going to be generate so I return
+[57:44.16] uh couple of prompt already uh let me
+[57:47.04] keep it over here so this is going to be
+[57:50.88] a prompt guys this is going to be a
+[57:53.12] prompt this my first prompt okay so I
+[57:55.92] return it before the session itself and
+[57:57.76] I'm just going to be paste it over here
+[57:59.84] so what is my prompt guys. So I want to
+[58:01.60] build a langraph based customer support
+[58:04.16] email agent in Python. Okay. Create only
+[58:07.44] an initial project uh create only the
+[58:09.92] initial project is scaffold. Uh what is
+[58:12.64] the meaning of this is scaffold? Is
+[58:13.92] scaffold means the project architecture
+[58:16.48] not the full implementation yet. Okay. I
+[58:18.88] don't want to create a full
+[58:19.84] implementation right now. I just wanted
+[58:22.16] to create a uh folder structure.
+[58:26.48] Okay. Then this is the requirement guys.
+[58:30.08] So Python 3.11 plus fast API lang graph
+[58:33.92] lang chain and lang chain openi. Now
+[58:36.08] here guys I will give the specific
+[58:37.92] requirement. Uh I don't want to use uh
+[58:41.12] python 3.11. Okay or uh the latest
+[58:44.88] version 3.14. I want I just wanted to
+[58:47.52] use python 3.12 for this project. So I
+[58:49.84] will write over here python 3.12. Okay.
+[58:53.60] Use specifically
+[58:56.24] use
+[58:57.84] specifically
+[58:59.84] specifically
+[59:02.08] Python 3.12 past API langraph lang lang
+[59:05.44] openi pyntic okay also generate
+[59:07.68] require.txt txt.nb
+[59:09.76] readme. Now this is going to be a folder
+[59:11.60] structure. So I can uh say over here uh
+[59:15.68] you can take a reference
+[59:20.48] of the above
+[59:22.96] folder structure
+[59:25.36] but feel free
+[59:27.92] feel free
+[59:29.76] to add any other
+[59:33.68] files and folder according to the
+[59:36.88] requirement.
+[59:38.48] Okay, according to the requirement. So
+[59:41.92] this is what guy this is my prompt. Now
+[59:43.92] here see uh I given the clearcut
+[59:46.00] instruction. So I return do not heavy
+[59:48.48] code yet. First show me the plan then
+[59:50.48] create the file. Okay I can remove this
+[59:52.32] one. This is fine. Now after that guys
+[59:54.40] what I will do? I will install the
+[59:55.84] require.txt. First let this thing is let
+[59:58.56] this thing be create. Now guys just see
+[60:00.88] the magic of the cloud. Okay. Now here
+[60:04.64] uh basically I have selected a option
+[60:07.36] where uh cloud is asking me about every
+[60:11.76] step. Okay, it will not do anything
+[60:13.84] without my permission. Why? Why it will
+[60:16.48] not do anything without my permission?
+[60:18.64] Because I selected that option. Okay, if
+[60:20.72] you will I don't know you have seen or
+[60:23.12] not but uh below there was a option ask
+[60:26.08] before edit right or automatically edit
+[60:30.00] or plan the thing right. So I kept the I
+[60:33.76] I I opt the first option. So it is
+[60:36.56] asking me for every sort of a it is
+[60:38.88] asking me for every sort of what every
+[60:41.12] sort of a action. Now here guys you will
+[60:43.44] see that it is going to be used the
+[60:45.20] batch terminal in a background process.
+[60:47.44] Okay. So here it's in the inside this
+[60:50.48] workspace it's going to be create all
+[60:51.92] the file folder and all everything. But
+[60:53.92] guys how it is going to be create that
+[60:55.60] how it is interacting with my system for
+[60:57.76] creating this file and folder. So guys
+[61:00.24] here it is going to be interact with my
+[61:02.32] system for every file and folder using
+[61:05.28] the bash terminal. Uh you will not see
+[61:07.92] anything over here over this terminal.
+[61:10.08] Okay it's going to be use the best
+[61:12.00] terminal in a back end. So yes it is
+[61:14.08] asking to me do I need to create all
+[61:15.60] this file and fold or something. I will
+[61:17.36] say yes create that. So I said yes. Uh
+[61:20.16] now guys see data is there. Now src is
+[61:22.96] there. Now here is a test. Okay. Now it
+[61:25.76] is again asking to me sunny uh can we
+[61:28.16] write a requ.t txt can we create that uh
+[61:31.28] according to this 3.2 two. So I would
+[61:33.52] say yes. Okay. Now see it is going to be
+[61:38.00] create. Okay. So this is all the
+[61:40.08] require.txt
+[61:42.00] uh which I can see over here. Even it
+[61:44.16] will show you right what is being
+[61:46.16] generated. You can simply check that
+[61:48.80] what is being generated. See this is the
+[61:50.80] file. Uh this is the file guys. Uh just
+[61:54.08] a second what it is.
+[61:57.52] Okay. It's av file right? It is av file
+[62:00.64] and open AI key, open AI model
+[62:02.96] everything I can keep over here right.
+[62:04.48] So yes uh we can generate as of now it
+[62:07.12] has created the environment.xt is
+[62:09.44] already there. So it is asking to me
+[62:11.36] should I generate that? I would say yes
+[62:12.88] it will create that. I will say yes
+[62:15.04] allow all this session allow edit all
+[62:17.44] the session. So it will not ask me again
+[62:19.44] and again until this chat is going on
+[62:21.20] now. It will not ask me again and again.
+[62:23.52] It will be creating all the file. So
+[62:26.00] here I will I would say yes. So see this
+[62:28.24] file is created. Env is also created.
+[62:30.72] Okay. Then it is thinking and it is uh
+[62:33.52] creating some other file. Let's see what
+[62:35.44] is going to be create next. Now guys I'm
+[62:37.36] not doing anything. I'm just sitting.
+[62:39.12] Okay. My AI is working for me. Now see
+[62:41.68] it has created the readme file also. So
+[62:43.68] if I'm going to push this entire thing
+[62:45.28] over the the GitHub then uh it is going
+[62:47.68] to be a very good representation of the
+[62:50.24] project via this readme file. So if I
+[62:52.64] will say yes now see the readmi file is
+[62:54.64] also there. Redmi file is also created.
+[62:56.80] Okay. And uh after that guys see what is
+[63:00.56] going to be happen. Let's see. So here
+[63:03.52] it is creating a toml file also. Okay.
+[63:05.92] Create the toml file. This is also
+[63:08.08] perfect. And now what it is doing guys?
+[63:11.12] It's going to be create the main py.
+[63:13.04] Okay. Let's uh let it be create. Ben py
+[63:16.48] is also going to be create. Okay. Now
+[63:19.60] after that guys here it's going to be
+[63:21.44] create the config. py. Okay. So this is
+[63:24.72] also fine guys. It's going to be create
+[63:26.64] a config. py great and it will create
+[63:30.88] guys it will create every sort of file.
+[63:32.40] I'm not doing anything. See it has
+[63:34.00] created a logger for me. Okay go ahead
+[63:36.32] for that. So I can see I can uh verify
+[63:40.00] that means it it is giving me option to
+[63:42.32] verify all the file and all first then
+[63:44.08] only it will proceed further otherwise
+[63:46.40] it will not proceed. Okay. If I have to
+[63:49.12] do any any man manual changes inside
+[63:51.20] this particular file I can do that.
+[63:52.80] Right? But here guys I'm not putting my
+[63:54.72] mind right now. I am just sitting okay
+[63:56.80] holding with my coffee or with my iced
+[64:00.00] tea or with my beer whatever right so
+[64:03.04] yeah I am going to be create a file so
+[64:05.44] here is app py is also created now let's
+[64:08.88] see what all other file is being created
+[64:11.12] so email py so it is saying sunny we can
+[64:14.16] create this also email py as of now just
+[64:16.80] it it is just creating a folder
+[64:18.24] structure and it's just doing some
+[64:19.60] highle coding and all not the complete
+[64:21.76] in-depth okay so it is creating the
+[64:24.16] graph py Y also. So yes, this is also
+[64:27.36] created. Later on we'll give the proper
+[64:29.44] use case to it and then it will go
+[64:31.52] accordingly. Okay, it will make a
+[64:32.80] changes accordingly. So init. py is also
+[64:35.60] created. This is there. Now after that
+[64:38.40] guys, what is going to happen? So it is
+[64:41.84] checking everything. Allow this command.
+[64:44.48] Okay, this is fine. So this is also
+[64:47.76] perfect.
+[64:49.92] Okay, perfect. I think it is uh just
+[64:53.68] cross-checking right that all the file
+[64:56.00] is created correctly or not. It is
+[64:57.60] running everything in a bash terminal in
+[64:59.28] back end. See the bash terminal is going
+[65:01.28] on. Sorry the all the command is being
+[65:03.68] executed over the bash terminal. Okay.
+[65:05.76] So allow this command. What is this
+[65:07.52] command guys? Okay is checking this uh
+[65:11.04] pent classes.
+[65:13.28] Okay. So this is in it. Perfect. Now
+[65:17.68] here is my complete folder structure. So
+[65:21.76] it is created a template py also this is
+[65:25.44] great prompt is created I don't know
+[65:28.88] guys what kind of okay so guys it has
+[65:31.20] detected the flow also how it is doing
+[65:34.16] that with the simple like uh prompt only
+[65:38.64] I think it is taking uh because I built
+[65:42.40] uh earlier actually uh two days back
+[65:44.88] just to practice so maybe it's taking
+[65:47.76] context from there but yeah we'll we'll
+[65:49.92] modify that Okay, it's not stopping
+[65:52.48] guys. It's not stopping. Uh let it
+[65:54.96] create. We'll do the changes later on.
+[65:57.20] Okay, so for the health also it has
+[65:59.76] created a file and folder guys.
+[66:01.68] literally this much of coding basically
+[66:03.36] I would have taken around uh maybe one
+[66:05.92] or two week just to write this much of
+[66:07.60] code and project but uh it has created I
+[66:11.60] think within a 5 to 10 minute only and
+[66:13.52] that's the power of the AI right now and
+[66:16.48] I have used the simplest model actually
+[66:19.20] see this is uh so customer support
+[66:21.52] development MD okay one more MD file it
+[66:23.92] has created that's great now what will
+[66:27.52] happen okay this is what guys envam
+[66:31.20] example. Great guys. So one more file is
+[66:33.12] there. This is the example which I can
+[66:34.80] share with anyone so that someone can
+[66:36.96] refer that. Great. Helper py inside the
+[66:39.92] util there is a helper. py. Okay. Then
+[66:44.08] envamp example. Okay. This is fine. Now
+[66:48.40] it is testing that display directory
+[66:51.28] structure. Great. Output customer. Okay.
+[66:54.32] It is checking whether everything is
+[66:56.16] fine or not. The complete structure and
+[66:58.32] all. This is the project directory
+[67:00.40] structure. Great. Oh, wow. Uh key file
+[67:04.16] generated file config txt. Oh, now it is
+[67:08.30] [laughter]
+[67:09.52] guys. Uh it's really amazing. Really
+[67:12.00] really amazing guys. So it has done I
+[67:14.96] think most of the thing and uh yeah this
+[67:17.44] is like really awesome. Great. So what I
+[67:21.20] can do guys now I can create one UV
+[67:23.52] environment over here. Even though I can
+[67:25.20] give a command to this to create a UV
+[67:26.88] environment but I think it's not going
+[67:28.16] to be interact with this terminal. Uh
+[67:30.24] GitHub copilot can do the interaction
+[67:32.24] with this terminal but uh cloud code I
+[67:34.32] don't know I tested but it was not able
+[67:36.40] to do uh instead of that in a back end
+[67:38.48] it was using the batch terminal. Okay.
+[67:40.88] So let's do one thing guys. Let's create
+[67:43.12] one environment over here. It is giving
+[67:45.20] me a command for creating an
+[67:46.32] environment. I can create a UV
+[67:47.60] environment or normal Python
+[67:48.64] environment. Both is fine. Then I can uh
+[67:51.92] activate this environment. Okay. So the
+[67:55.12] environment is created. I can activate
+[67:56.88] this environment.
+[67:58.80] Source is not applicable for this. Okay.
+[68:02.24] So live
+[68:04.72] script
+[68:06.64] and this is my environment. So copy the
+[68:08.88] path
+[68:11.28] and paste it over here. Okay. Now it is
+[68:13.28] done. Now pip install.txt.
+[68:16.40] So this is the file which I have to
+[68:18.40] install. Great guys. So it has
+[68:21.12] installed. It is saying Python imp is
+[68:24.96] not there. So if I will give this error
+[68:28.96] to this cloud only it will
+[68:33.04] fix that.
+[68:35.20] Uh let me check the Python version. Oh
+[68:38.88] guys it is 3.14.
+[68:41.20] So it's taking a latest Python version.
+[68:43.84] Because of that only it is giving me
+[68:45.28] this particular issue. So what I'll do
+[68:47.76] guys? Uh I will create a virtual
+[68:49.92] environment. Let me delete this virtual
+[68:52.08] environment. So here I will delete it
+[68:55.60] first. Okay. Now here I will give ask to
+[68:58.08] the cloud only. Uh give me a command.
+[69:03.44] Give me a command
+[69:06.00] to create
+[69:09.92] using
+[69:11.52] UV. Okay.
+[69:14.48] and give me a command to create a
+[69:16.72] virtual environment
+[69:20.24] virtual
+[69:21.84] environment using UV and
+[69:26.96] with Python 3.12 only.
+[69:32.16] So let's see what it is going to be
+[69:33.92] generate. Maybe it will give me a
+[69:35.36] command so that I can run it over here.
+[69:38.16] Otherwise I can ask to this only uh to
+[69:41.20] create a basically environment in a back
+[69:43.44] end. it will run the back end process.
+[69:45.28] It it will create it through the batch
+[69:46.88] only. So, ubnv python dot okay this is
+[69:50.80] the command I don't think so it is
+[69:53.04] correct
+[69:54.96] uh you know python let me check it out
+[69:58.40] so first guys maybe
+[70:02.64] okay so this is the command let me check
+[70:04.40] it out that it has created great now I
+[70:08.16] can
+[70:09.68] use that okay great so guys my
+[70:13.52] environment has activated now this is
+[70:15.44] the environment customer support agent
+[70:18.08] Now what I'll do I'll clear it and then
+[70:21.68] here I will write the command ub pip
+[70:25.36] install
+[70:27.28] - r requirement dot txt. Okay. So it is
+[70:32.88] saying langra depend the langent core.
+[70:36.48] So just a second I can again ask to it.
+[70:40.64] Ah now it is correct. The python
+[70:42.32] environment is correct. Okay. Now I can
+[70:45.12] give this error to this cloud only.
+[70:47.12] Let's see what's going to be generate.
+[70:51.36] Uh okay. So it has detected it. Let's
+[70:55.04] see. H it has ver verified.
+[70:58.88] And uh yeah it's doing that guys. It's
+[71:01.28] doing that. Pi projectl. It has updated
+[71:04.00] this file also. Great. Even we can
+[71:06.64] verify. Okay. So don't like do it uh uh
+[71:10.08] right after the uh generation. Okay.
+[71:12.80] false verify properly and then only do
+[71:14.64] it. Now let's run this command. UB
+[71:20.08] uh okay this is again saying something.
+[71:22.56] Let's see what it is saying.
+[71:34.72] This dependency issue comes uh with a
+[71:37.84] specific Python environment.
+[71:40.32] So let it be how it's going to resolve
+[71:42.80] that. I'm not searching anything guys. I
+[71:45.52] left everything over the AI itself.
+[71:48.56] Great. Now let's see what is going to
+[71:50.88] happen.
+[71:52.64] Uh again guys, it is not going to be
+[71:54.80] solved
+[71:57.52] here. Maybe the AI is going to be fail
+[71:59.44] or let's see.
+[72:02.48] Okay, this is perfect.
+[72:06.64] Uh uh this is fine. First, let me clear
+[72:10.56] the screen and let's see.
+[72:14.56] Okay,
+[72:18.32] guys. We're stuck. It's stuck. It's
+[72:20.96] stuck.
+[72:28.08] It's trying very hard [snorts]
+[72:34.88] otherwise I will have to change the
+[72:36.40] model basically.
+[72:38.56] Uh let's see now first of all let me
+[72:43.44] delete this one. I'm going to open a new
+[72:46.56] terminal
+[72:48.16] and then I'm writing uvp pip install
+[72:53.84] - r requirement txt.
+[72:57.36] Okay guys, so now it has done. Uh, okay.
+[73:00.32] It is up install.
+[73:03.04] No sh resolve dependency because only
+[73:05.60] version of pyic are available.
+[73:08.40] I think some issue with the pyic. Now
+[73:11.12] let me check it out what they are giving
+[73:13.36] to me. Pyic setting. Okay, no worries
+[73:18.00] guys. I'll copy and paste this.
+[73:20.08] Otherwise I will ask to cloud only to
+[73:21.92] resolve it in a back end. Okay, means it
+[73:24.48] will create an environment in a back
+[73:25.68] end. It will do that. So let it be
+[73:29.52] uh okay take this is fine now.
+[73:40.00] Okay now it is saying do it.
+[73:44.88] No sorry founder of python imp.
+[73:48.48] Oh very blunder guys. I think uh this
+[73:51.20] model haiku is not uh like up to the
+[73:54.72] mark.
+[73:55.71] >> [laughter]
+[73:56.48] >> It's taking many iterations.
+[73:58.96] I think my entire token is going to be
+[74:00.72] empty over here itself. I think the best
+[74:02.88] way is to ask uh this cloud only to
+[74:05.20] check in a back end. See guys, I'm not
+[74:06.48] cutting the video and all. Uh I will
+[74:08.64] show you everything whatever challenges
+[74:10.48] and all I'm facing. Okay. Uh maybe now
+[74:14.24] it is done. So it has solved that issue
+[74:17.33] [laughter]
+[74:18.16] how does so many iterations. So even I
+[74:21.20] see guys if you're getting stuck now at
+[74:23.12] this kind of situation and all. So one
+[74:24.64] thing is keep trying right AI will give
+[74:26.48] you the answer at the end or else the
+[74:29.04] second thing what you can do you can ask
+[74:30.64] the this cloud copilot itself to create
+[74:33.84] the environment first to install the
+[74:36.00] requirement if it's going to be suffice
+[74:38.08] right if it's going to be fulfilled if
+[74:39.52] it's not generating any sort of error
+[74:41.44] then give me the yes and go ahead with
+[74:44.88] the final version of the with the final
+[74:48.00] version of the requiretxt. So this is
+[74:50.16] the idle way of doing it. So yeah fine I
+[74:53.20] think my environment is ready. My
+[74:54.56] environment is set up. Now it's time to
+[74:56.24] give the uh another instruction to my
+[74:59.20] co-pilot. Now how I can do that guys. So
+[75:01.52] here I return the complete flow of my
+[75:03.68] application. So this is the complete
+[75:06.08] flow guys. Uh see uh first uh let me
+[75:10.00] give the instruction. So this is a
+[75:13.92] complete flow
+[75:17.36] of my
+[75:20.72] application.
+[75:22.24] Okay,
+[75:24.80] read it
+[75:27.12] carefully
+[75:28.80] and build accordingly.
+[75:34.40] Okay,
+[75:35.92] build accordingly. Right now here uh see
+[75:38.88] what is the flow. So read the incoming
+[75:40.48] customer email. Classify the intent.
+[75:42.96] Search into from required document if it
+[75:45.44] is required. Draft an appropriate
+[75:46.96] response. Human review is required if
+[75:49.44] needed. Then send reply. Okay. So let's
+[75:53.44] see how it's going to be code. You can
+[75:55.12] write much more uh like effective
+[75:57.36] prompt. Okay. You can give like so many
+[75:59.20] with so many condition. It will be able
+[76:01.36] to take a very huge prompt as well. But
+[76:03.28] as of now I'm just uh uh I'm just giving
+[76:06.64] a basic prompt and the stepbystep uh
+[76:09.20] prompt right but you can give a very
+[76:11.52] huge and the uh very technical prompt as
+[76:14.08] well it will be able to understand right
+[76:16.08] it is just a dummy project and how to
+[76:17.92] use the cloud code how to build a
+[76:19.36] product project it is just about that so
+[76:21.68] I'm like just showing you on that level
+[76:24.08] right now so yeah I given this prompt
+[76:26.56] let's see how it is going to be deal now
+[76:28.64] I am just sitting okay [laughter]
+[76:32.24] let's see guys how it's going to be
+[76:33.68] built now. So yeah,
+[76:38.16] how much time? I think it is uh it will
+[76:41.92] take some time guys. Let it be.
+[76:47.36] Okay,
+[76:50.48] it has added more packages something in
+[76:52.96] a readme file.
+[76:55.92] I hope so guys it will be able to do
+[76:57.76] that. I'm not pausing a video. I'm not
+[77:00.00] doing anything guys. Uh, let it be.
+[77:05.84] I'm just sitting in front of you
+[77:10.00] checking my phone in between. Let my AI
+[77:13.36] work.
+[77:26.64] Yeah, my AI is working. So, what they
+[77:29.20] are doing right now? Let me check that.
+[77:31.28] So here guys, it's going to be added.
+[77:36.00] See guys, it will give you the uh see
+[77:39.04] here it is giving you the option where
+[77:41.60] you can accept that you can revert that.
+[77:44.56] Okay. And here you can eval that in a uh
+[77:48.88] with the current uh workflow and all so
+[77:51.36] many options they're giving you over
+[77:52.72] here. And even you can run it you can
+[77:54.72] run that you can run it run it in a
+[77:56.48] debug mode. Many more thing you can do.
+[77:58.40] Okay. So if I'll say yes so it's going
+[78:00.00] to be proceed.
+[78:01.92] Got it. So now I think it came in a
+[78:04.88] different file. So it is working with
+[78:07.28] this database py. Okay. So see if I'll
+[78:09.92] click on yes. So yeah this is accepted.
+[78:12.48] Okay. So here also you can click this
+[78:14.96] one. This this bar you are getting now
+[78:17.12] right. This bar you are getting. So just
+[78:19.28] uh work with this also or else uh here
+[78:22.00] also it will provide the option. Now see
+[78:23.68] ask before edit. So it is asking me
+[78:25.92] before editing anything. It is asking me
+[78:28.24] to before editing sorry it is asking me
+[78:31.68] editing uh before anything. Now see
+[78:34.00] again yes and uh model py is there but
+[78:37.92] guys see for uh like uh the enterprise
+[78:41.84] code for the realtime project you will
+[78:43.84] have to understand this entire code by
+[78:45.92] yourself what is happening inside. Okay.
+[78:48.64] Now again, yes, as of now, I'm not doing
+[78:50.72] it. As of now, I'm just building. If I'm
+[78:52.56] going to be verified line by line, it
+[78:54.16] will be challenging. But again, guys,
+[78:55.76] you have to do it, right? You no need to
+[78:58.24] approve it without verifying the code.
+[79:00.24] You should have the highlevel
+[79:02.00] understanding of this entire code. Okay.
+[79:10.48] So, you can do the come to the previous
+[79:12.40] changes, next changes. Great. I think so
+[79:15.20] many things. uh ser LM service py. Now
+[79:19.04] one more thing I required the openi key.
+[79:23.12] So I kept in one of the file let me take
+[79:25.84] from there and I will paste it guys
+[79:27.68] before running before running now before
+[79:30.00] running this application I'll keep my
+[79:31.36] open a key and the open a model name
+[79:33.68] which model I'm going to use. So DB
+[79:36.00] service is also created
+[79:38.40] and with whatever architecture you are
+[79:40.32] going to be work guys just give that
+[79:42.24] exact flow exact name exact file name
+[79:45.92] exact class architecture whatever you
+[79:48.72] will give according to that is going to
+[79:50.16] be build that okay if you don't know
+[79:52.08] anything if you just know the
+[79:53.20] fundamental still you want to do still
+[79:55.04] you wanted to build the application then
+[79:58.08] give anything [laughter] okay let it be
+[80:00.48] on AI itself see this is the complete
+[80:03.28] code it has created this review service
+[80:05.12] and something like that. Okay, great.
+[80:07.44] Now, let me click on yes.
+[80:10.56] It's going to be create a complete
+[80:11.76] workflow guys. Don't worry. As of now, I
+[80:13.68] think it is working on the service side.
+[80:16.08] So, it is following this architecture,
+[80:18.16] this uh worker server and the service
+[80:20.48] one. So, schedule service is fine.
+[80:24.88] Great. And guys, as of now, I'm not
+[80:27.60] going to be integrate my Gmail. What I
+[80:29.52] will do, I will test it with a dummy
+[80:30.88] email. Okay? I'll show you how you can
+[80:32.56] test that. So I'll keep some dummy email
+[80:34.96] over the UI itself. We'll keep it and
+[80:36.64] from there only we are going to test it.
+[80:41.36] So llm template py is going to be added.
+[80:45.92] Okay,
+[80:48.40] it failed now. Yes. Okay, this template
+[80:51.68] is also changed.
+[80:56.80] I hope guys everything is visible on my
+[80:58.96] screen. Let me
+[81:02.56] keep me in a small one.
+[81:05.28] Yeah, this is fine, I think.
+[81:10.00] Yes,
+[81:19.20] even you can uh like uh allow to this uh
+[81:22.96] cloud a to edit everything in a single
+[81:25.36] go, right? Just click on this edit allow
+[81:27.44] all edits in this session. Right? So if
+[81:29.44] I'm going to click on this now see it
+[81:30.80] won't ask me again and again
+[81:34.32] it's going to do every sort of edit by
+[81:36.16] itself. But this might be harmful.
+[81:39.52] Right?
+[81:42.72] See here is a uses 55% uses of my credit
+[81:46.64] limit. [laughter]
+[81:48.16] I hope so guys within like this 50% uh I
+[81:51.76] think two to two to like uh $2.5 maybe
+[81:55.76] within that I'm going to be complete
+[81:57.68] this application [laughter]
+[82:00.96] otherwise I will have to add more money
+[82:04.40] oh it is using log guru great log guru
+[82:06.64] is a good package for generating a logs
+[82:09.36] structure log even struct log is a good
+[82:11.52] one 57%
+[82:15.28] okay I hope so guys it won't be reach up
+[82:18.00] to 100%.
+[82:20.08] Uh, too much code. Too much code.
+[82:25.28] Followup scheduuling. Great.
+[82:30.00] Yeah. See guys how it has created the
+[82:32.24] state the completed state. This is
+[82:34.24] workflow. py. See this is my langra
+[82:37.20] workflow. Great guys. Great. Very good.
+[82:39.44] Email retrieval classification context
+[82:41.36] analysis review check and all
+[82:42.72] everything. Everything is being done. Oh
+[82:44.88] that's great guys.
+[82:47.76] 60% users limit. See here you can see
+[82:50.08] this one
+[82:52.16] 40 remaining until auto compact. Okay.
+[82:58.00] Click to compact now.
+[83:01.36] Okay. It is using the autoco compact
+[83:03.28] feature I think. So yeah we'll have to
+[83:06.24] deep dive more to optimize this one
+[83:09.36] actually.
+[83:13.84] Now it is not asking me to edit
+[83:15.52] anything. I kept it on a auto auto
+[83:17.44] copilot mode and it's doing that. It's
+[83:19.92] every if anything is going to be like uh
+[83:22.00] break it will like uh check by itself.
+[83:25.57] [laughter]
+[83:29.28] Okay.
+[83:34.56] Memory is also created memory MD. Why it
+[83:38.08] has created a memory MD? You can check
+[83:41.04] with this thinking. Perfect. Now I've
+[83:42.64] created a complete mean memory. Oh, it
+[83:46.24] has created by itself guys for for
+[83:49.28] himself right see here see file document
+[83:51.92] all the you you can check like what it
+[83:53.84] is thinking let me read and file get
+[83:56.40] thinking completed implementary summary
+[83:59.04] DB layer I think guys service layer is
+[84:01.44] done database layer is done langra
+[84:03.52] workflow is done email will come
+[84:05.68] response generation review routing human
+[84:08.32] review response great guys it has
+[84:10.96] created it has created okay great great
+[84:14.00] see this is a complete folder structure
+[84:15.68] it has generated in a very amazing way
+[84:18.16] that's really good guys now what I'm
+[84:19.76] doing database model service okay API
+[84:22.64] routes is not completed it needs to be
+[84:24.96] done it needs to be done okay great guys
+[84:28.48] so what I'll do I'll give the next
+[84:29.84] prompt to it so what is going to be a
+[84:31.76] next prompt
+[84:33.76] uh can you implement files right so I
+[84:37.44] will keep every data and all everything
+[84:38.88] in a file itself and yeah I'm giving you
+[84:42.16] that I'm giving the same prompt now Can
+[84:44.88] you implement files as a knowledge base?
+[84:49.52] create
+[84:51.84] some dummy
+[84:54.32] document
+[85:00.08] store it in a file
+[85:04.00] so that I can retrieve
+[85:07.28] the information
+[85:09.76] info from there and can utilize it
+[85:17.92] in my workflow. Okay. So guys uh see
+[85:22.72] this document this data could be
+[85:24.24] anything in a real time as of now I'm
+[85:26.72] asking to cloud a only to create some
+[85:28.64] document to keep some information over
+[85:30.80] there and out of that document create a
+[85:33.68] file index but in a real time this
+[85:36.00] document could be anything getting my
+[85:38.48] point this document basically it could
+[85:40.40] be a real data real data right from the
+[85:43.60] variety of the uh task. Okay. So I'm
+[85:47.12] giving this prompt. Let's see how it's
+[85:48.56] going to be deal with this particular
+[85:49.84] prompt and whether it's going to be keep
+[85:51.84] the data or not. And it's going to be
+[85:54.48] get a files on top of it or not. Let's
+[85:56.32] see. So first it's going to be addit uh
+[85:59.68] the
+[86:02.00] require.txt.
+[86:04.80] So edit automatically. I I selected this
+[86:07.44] now. See it is taking workflow. This let
+[86:10.16] me hide this one. See here you can
+[86:12.64] select this file as a context or you can
+[86:15.36] not select okay just uh deselect this
+[86:17.76] file as a context means uh if if you're
+[86:20.16] going to be select this file now cloud a
+[86:22.16] code is taking a context out of this
+[86:23.84] file as of now now we as of now we are
+[86:26.08] not giving a context from any specific
+[86:27.76] file so I just deselect it over here see
+[86:30.56] this is the deselect one if I will click
+[86:32.48] on it again it will be selected as a
+[86:34.40] context okay
+[86:37.20] so recxe let me check uh it has added
+[86:40.32] the files is uh related.
+[86:43.04] Yeah, it has added. Okay, great. This is
+[86:46.00] great, guys. Now, what it is doing, it's
+[86:49.28] like very good. See, even though I'm
+[86:52.00] using the Haiku model, if I'm going to
+[86:53.44] use Opus now, guys, it's going to be a
+[86:55.60] blaster.
+[87:00.08] But guys, it will uh suck your money for
+[87:03.12] sure. Uh I spend uh just like 1,200
+[87:07.92] rupees to show you this de
+[87:09.44] demonstration. Okay. [laughter]
+[87:12.48] Buth if you are going to be like uh do
+[87:14.72] it in a real time then it's going to be
+[87:16.88] suck your money that's for sure.
+[87:20.40] So AI is not affordable right now. The
+[87:23.84] premium AI I'm saying
+[87:47.84] 74% used.
+[87:50.80] I believe guys I'm not going to be lose
+[87:53.36] my all the money
+[87:59.60] and before that only I will be able to
+[88:01.44] build this application.
+[88:03.92] 76% used.
+[88:07.84] Okay. HighQ is there.
+[88:11.60] Thinking mode is there. Target. I think
+[88:14.32] if I'm going to be like stop this
+[88:16.80] thinking mode, maybe it might not be
+[88:19.84] used this much of tokens.
+[88:23.68] 77%.
+[88:25.20] Great.
+[88:35.84] Okay guys, so it is creating five minute
+[88:39.68] step. Okay, this is fine. Let me check
+[88:42.64] where it kept the data. DB is here.
+[88:45.20] Database.py
+[88:49.04] uh
+[88:50.56] src script is there.
+[88:57.60] service service API
+[89:00.72] graph schema
+[89:03.36] service. Okay, I think still it is doing
+[89:06.72] that.
+[89:10.96] Oh. Oh, this is a like
+[89:18.48] this is a command it is asking to me run
+[89:21.20] that.
+[89:22.72] Okay,
+[89:25.52] what where is the data? App. py is
+[89:27.68] there. Compu db is there. Database.py
+[89:30.08] graph
+[89:31.84] nodes template and it has created the
+[89:35.20] complete one in a blank graph itself.
+[89:39.20] Okay, this is fine. And every time guys,
+[89:42.08] it will not create a same code. Okay,
+[89:44.32] see guys, this is the uh okay, F
+[89:47.44] implementation, F knowledge base. Great.
+[89:50.40] This 2 MD it has created. But I don't
+[89:52.56] know which data we are going to be
+[89:54.00] retrieve the information.
+[89:56.08] Uh maybe I will have to give some
+[89:58.08] specific prompt for that.
+[90:01.52] It's going to be keep the data
+[90:07.52] DB models schema nodes.
+[90:11.04] Yeah, this is fine. Let let's wait guys.
+[90:14.64] Okay, let it be complete.
+[90:22.24] Perfect. Now let me create a final
+[90:23.76] summary showing you everything was
+[90:24.96] implemented.
+[90:26.80] Great.
+[90:28.48] Now guys after that we'll create a UI as
+[90:30.56] well. Okay. So API and UI is the next uh
+[90:34.16] target. It has used 85% of my limit.
+[90:38.40] Let's see how much is going to be expand
+[90:40.16] now.
+[90:43.92] Okay. Five is not completed. Customers
+[90:46.56] of final vector similarity. What you
+[90:48.64] have now five similarity search semantic
+[90:50.96] uh 20 sample support document product
+[90:53.92] information
+[90:55.60] uh where it has created this product
+[90:57.44] information
+[91:00.32] uh setup helper is there this is fine
+[91:03.52] compressive document of five minute
+[91:04.96] guide this is fine
+[91:08.88] create file index of 20 document I think
+[91:12.16] it has created inside only maybe let me
+[91:14.48] check a script
+[91:16.80] so where is a script script.
+[91:20.24] This is the API API DB
+[91:23.92] uh schema. Here is a script. Inside the
+[91:27.84] script, what we have guys? Just a
+[91:29.84] second. Inside the script, populate
+[91:33.52] knowledgebase. py. Yeah. So, see guys,
+[91:36.80] this is a sample document. I think uh
+[91:40.72] see it it it haven't created any MD file
+[91:43.84] or something to create the uh index.
+[91:46.08] Okay. So it has created this dummy data
+[91:48.08] and it is using that
+[91:50.48] fine. So this is clear. Now let's do one
+[91:53.60] thing. So let's say yes and I think this
+[91:56.96] is done. But guys I can give the
+[91:59.12] specific instruction where it can keep
+[92:00.72] the data right where it can keep the
+[92:03.52] data inside the uh data folder
+[92:06.08] specifically and then on top of it it
+[92:07.76] can build a index. Okay. So your
+[92:09.20] fundamental of the rag the agent should
+[92:10.72] be clear here. Now I'm giving the final
+[92:13.44] uh command. So and final prompt uh I
+[92:16.08] kept over here.
+[92:19.68] So here is my final prompt guys. This
+[92:22.40] one. So can you also create a UI API
+[92:29.60] and UI where we can test the system
+[92:32.16] using the mock mail and also please
+[92:34.24] create another page where we can view
+[92:35.92] all the email inbox email along with
+[92:38.88] their email details and the
+[92:40.24] corresponding agent output. Okay, let's
+[92:42.16] see guys how it's going to be behave on
+[92:43.68] this particular uh basically prompt. Now
+[92:47.92] compact now what is this? Uh okay so
+[92:50.80] compacting let's see I think it will
+[92:53.68] optimize it maybe
+[92:59.92] uh great so let me ask now what it is
+[93:03.68] going to be generated let's see
+[93:09.83] [snorts]
+[93:11.60] but guys it's like really uh amazing see
+[93:14.40] how much line of code it just created
+[93:16.24] within like 10 to 20 minutes
+[93:20.96] and even we are able to do the same
+[93:22.64] thing using the copilot as well but yeah
+[93:24.80] cloud aim it might be much more
+[93:26.56] efficient as I told you their models are
+[93:29.52] more focused towards the coding and the
+[93:31.68] development so if you are doing an
+[93:32.88] enterprise level of coding then this
+[93:35.52] would be useful right
+[93:40.96] okay guys so it is going to be generate
+[93:50.08] Compact compact chat manual uh token
+[93:54.32] freed
+[93:57.52] okay compact thinking the user is asking
+[93:59.68] the API info there great this is done
+[94:02.24] this is being done okay guys it is
+[94:04.88] working on that main py then models py
+[94:08.16] it's working on the workflow py
+[94:11.20] okay as of now it is reading that
+[94:12.64] according to that maybe it's going to be
+[94:14.08] create the API and all everything.
+[94:17.68] So yes, it is working
+[94:33.04] models workflow email. Guys, don't leave
+[94:35.68] this video, okay? Just to check what is
+[94:38.80] going to be generated by the end. Wait,
+[94:41.53] [laughter]
+[94:43.20] we'll test the entire application with
+[94:44.64] the UI itself.
+[94:47.84] Now after this one, what I'll do, I'll
+[94:49.28] keep my open AI key and all everything.
+[94:50.88] Then only we are we going to test that.
+[94:52.40] Okay, APA route is created. Now it is
+[94:57.04] thinking about that first. It has read
+[94:58.96] all the files and folder. Great.
+[95:11.52] SRC
+[95:18.32] in the SRC static it has created static
+[95:21.52] or not so far.
+[95:26.48] Okay, here you are full content. Can I
+[95:29.04] read the specific file
+[95:31.52] existing schemas and models? Great.
+[95:37.68] As of now, it has not created a stat
+[95:39.92] static and the other one. You can create
+[95:41.76] UI in any other services also in
+[95:43.68] whatever services you want.
+[95:52.56] Guys, I'm not going to be stop it. I'm
+[95:54.16] not going to be cut this part. Let it be
+[95:55.92] generated. Okay. See how AI is working.
+[96:07.20] Okay. Summary of what to build. Great.
+[96:10.56] It is thinking that
+[96:21.60] I think it is working in a compact mode
+[96:23.52] that's why it is taking this much of
+[96:24.88] time to think and the process.
+[96:27.60] Oh, it is in a plan mode. Oh,
+[96:36.00] okay. It is showing me a complete plan
+[96:37.92] right now. Maybe when I switch to the
+[96:39.52] compact now first it is planning with
+[96:42.56] the best and possible summary then only
+[96:44.32] it will do the editing.
+[96:46.64] Oh now it is saying it I have
+[96:48.16] everything. Now let me write the
+[96:49.76] implementation plan. Right
+[97:05.84] thinking mastering I don't know where
+[97:08.64] when it is going to be generated next
+[97:10.08] one
+[97:16.96] okay maybe
+[97:19.36] except this cloud Oh yes and auto
+[97:22.32] accept. Yes and manually approve edits.
+[97:24.40] No keep planning. Yes and auto accept.
+[97:27.76] Great. So I accepted all the thing. Now
+[97:31.52] maybe
+[97:33.04] it is starting the implementation.
+[97:36.96] Okay guys. Great. So it has created a
+[97:38.96] complete checklist and it's going to be
+[97:40.48] build that one by one.
+[97:45.44] Mhm.
+[97:47.44] So this is a complete checklist. I think
+[97:50.16] by end of this uh session it's going to
+[97:51.92] be complete all this one. So guys be
+[97:54.32] careful read everything whatever is
+[97:56.48] going to be generate and according to
+[97:58.56] that you need to take your decision.
+[98:00.16] Okay.
+[98:12.16] Great. So I got my first file. This is
+[98:14.48] base.html.
+[98:16.56] Yeah, it is having a code. Alloy open
+[98:19.28] JDK.
+[98:20.80] Okay, it is asking me some permission.
+[98:29.04] Okay, test email. HTML is also there.
+[98:44.56] Okay, I think it will take time.
+[99:21.36] Allow this command. Fine. App loaded
+[99:24.00] successfully.
+[99:25.52] Great guys. I think it is about to done
+[99:29.60] you. Okay. It is checking in a back end
+[99:31.68] whether everything is working fine or
+[99:33.20] not.
+[99:35.04] Okay.
+[99:36.96] So I am just giving a access. Okay.
+[99:39.36] Okay. So guys, see it is creating an
+[99:40.64] environment just for checking the entire
+[99:42.16] application in a back end. Read it. I
+[99:45.36] need to think. Oh, files was not
+[99:47.60] working. It is updating that. Now it
+[99:51.36] went to the edit automatically. So fine
+[99:54.72] guys, click to compact now. 45. Great.
+[99:58.00] Great. Great.
+[100:06.48] So when I did the compact now guys in
+[100:09.04] that case it was optimizing everything
+[100:11.68] means it was generate a planning in a
+[100:13.28] summarized form. Okay. So I think you
+[100:15.84] should try over here when you have a
+[100:18.16] like lower limit then
+[100:20.96] uh compact right your generation and all
+[100:24.00] everything and then uh basically see how
+[100:26.48] this copilot is behaving right
+[100:29.84] so it is asking for one more command
+[100:31.76] maybe it is checking in a back end
+[100:33.04] everything is working fine or not
+[100:37.20] okay but guys I will test it manually
+[100:39.60] over here otherwise it will uh
+[100:43.76] okay this is fine print successfully
+[100:48.56] from src import loaded successfully. It
+[100:51.28] is checking everything. If uh something
+[100:53.12] is going to be like a break then maybe
+[100:55.76] it will uh look into that code that
+[100:58.96] part.
+[101:00.88] So
+[101:03.20] test app loading and build UV run
+[101:21.68] import uploaded successfully.
+[101:30.16] Okay, I think it is trying to check in a
+[101:33.36] back end what is happening. Everything
+[101:35.52] is working fine or not. Maybe UV and
+[101:37.84] Python main. py. Now it is checking with
+[101:41.12] all the routes in main. py I think we
+[101:43.20] have all the routes. Oh, it has created
+[101:44.96] the customer support DB also.
+[101:48.40] Main. py. This is my all the routes
+[101:52.08] inside the route only. Yeah, this is the
+[101:54.56] routes guys. See email routes, UI
+[101:56.88] routes, everything is there. You see it
+[101:58.08] has created different different uh
+[102:00.24] routes over here. We can verify the
+[102:03.20] entire code at the end but yeah let it
+[102:05.36] be complete right now.
+[102:08.32] So customer support DB equal database
+[102:11.04] file deleted.
+[102:13.68] Okay.
+[102:17.36] GRP test
+[102:21.84] the code has become very huge now guys
+[102:24.08] and uh
+[102:27.52] to check manually everything over here.
+[102:29.28] It will take a lot of effort.
+[102:33.84] Okay great human review is there. This
+[102:36.40] is fine
+[102:39.84] after fixing indexes.
+[102:48.64] It's running everything over the
+[102:49.84] terminal and it's checking each and
+[102:51.44] every module. See, you can read over
+[102:52.88] here what it is doing.
+[102:55.68] Dabase initialize. It has created
+[102:57.44] everything. Okay, this is done, done,
+[102:59.20] done, done, done. Uh, then open. Great.
+[103:02.08] It has given me the command also, guys.
+[103:03.60] See even I can test that now but for
+[103:07.12] that I required the open AI key maybe
+[103:09.52] let's read what the what it is saying it
+[103:11.92] is saying quick start install this all
+[103:14.08] the dependency then this run this one u
+[103:18.40] run python main py then open local host
+[103:22.88] in your browser great test with the UI
+[103:25.92] okay fine guys so it has it has done
+[103:28.00] everything okay now let me do one thing
+[103:30.96] let me basically add the open a key
+[103:35.36] inside my env. So just a second I'm
+[103:38.80] doing that
+[103:40.80] so that I can generate the response okay
+[103:42.88] if it is required.
+[103:45.04] So this would be my openi key and I will
+[103:48.88] have to keep my openi model also over
+[103:51.28] here. So I kept the key in my notepad.
+[103:54.00] I'm just going to be copy from there. So
+[103:57.04] let me copy that. Just a second guys. So
+[104:01.36] here is the model name as well as the
+[104:07.04] open AI key. Okay guys, so I kept the
+[104:09.84] both. Now
+[104:12.00] I can execute the command to check
+[104:13.92] whether everything is working fine or
+[104:15.52] not. So I already installed all the
+[104:18.32] thing. Now if I'm going to be run this
+[104:20.00] main py
+[104:22.08] uh it is saying validation error. Okay,
+[104:24.64] let me provide this error to this
+[104:28.56] cloud only. Let's see what it is saying.
+[104:32.72] So here I am providing. Now see guys, I
+[104:35.76] kept this edit automatically. That's why
+[104:37.52] I'm editing. That's why it is editing
+[104:39.52] automatically everything. Okay.
+[104:42.48] Open a model. Uh great. Open a model.
+[104:47.60] Open a API key.
+[104:54.16] Why it is changing that? Uh
+[104:59.44] model name line number nine. Uh but the
+[105:02.32] config open model. Okay. Model. Great.
+[105:06.00] Got it. Got it guys. I think the name
+[105:08.32] was different basically.
+[105:10.64] Uh oh great. I think I just have to
+[105:13.20] write the model. I just have to keep the
+[105:15.20] value of that maybe. So that is a issue.
+[105:26.72] Let it complete then I will keep that.
+[105:28.64] Okay.
+[105:32.88] Excellent. The config fix the file app
+[105:35.04] is running. What I can correct? Uh okay.
+[105:40.16] Now it has done that. So what I can do
+[105:42.48] guys I can keep the model only the model
+[105:44.88] name. I'm not going to be remove
+[105:49.84] now. I will keep my open API key. I'm
+[105:51.92] not going to be write the different uh
+[105:54.16] key name. Okay, I'm just uh editing the
+[105:56.56] value. Now here I will keep my key.
+[105:59.20] That's it. Uh let's see whether it's
+[106:01.92] going to be work or not. So here guys,
+[106:04.96] what I'll do? I will run this command
+[106:08.56] again. Okay, now it is running. My
+[106:11.76] application is running. Let's see
+[106:15.76] how it is looking like. Okay. So, let me
+[106:18.40] run it over the local host 127.
+[106:22.64] Yeah, guys. So, this is the application.
+[106:24.72] Great. [laughter]
+[106:27.36] Uh test email inbox is here. Total
+[106:30.48] pending processing respond failed. Great
+[106:32.48] guys. It has like really created a great
+[106:34.80] application. Oh, this is my all the API.
+[106:37.44] I can test over here. I can check my all
+[106:39.12] the routes and all everything. That's
+[106:41.04] really amazing. That's that's really
+[106:42.48] amazing guys. This is a test email. Even
+[106:44.40] I can tell the different category
+[106:45.84] regarding the testing and all. So this
+[106:48.72] is really amazing. If I'm going to be
+[106:50.40] test this now submit test email. Let's
+[106:53.28] see what is happening over the oh so
+[106:55.92] this is generating now.
+[106:59.04] Ah great. So what is happening? Oh it is
+[107:02.00] loading a model.
+[107:04.08] Which model it is loading? I think it
+[107:06.32] has done something else in a back end.
+[107:09.52] uh embedding
+[107:13.20] H let me check what is the status file
+[107:18.16] category low confidence zero great guys
+[107:20.72] so it is giving me a thing now now let
+[107:22.88] me fix that I think I have to generate
+[107:24.48] everything from the open itself so
+[107:29.12] okay let me give the command can you
+[107:32.32] config the open AI model and open AI
+[107:38.24] embedding ing OpenAI embedding only I
+[107:41.60] think it has configured something else
+[107:42.96] some different model
+[107:48.24] please correct that in the code okay so
+[107:52.64] let it be let it create let's see what
+[107:55.04] is happening now
+[108:01.28] okay it's doing that maybe
+[108:05.60] ah it has it was using sentence
+[108:07.28] transformer that's what I'm thing now
+[108:08.56] see what is happening I don't know in
+[108:09.92] the back end I think something was
+[108:11.52] fishing it was using a different model
+[108:17.20] now it is doing something config py is
+[108:19.84] getting changed
+[108:21.76] great let's see now what will happen
+[108:34.24] guys uh I hope you like this video if
+[108:36.64] you liked it then Please hit the like
+[108:38.48] button and even you can check my YouTube
+[108:40.96] channel also there I am uploading this
+[108:42.88] kind of videos and all everything. So
+[108:45.60] yeah this is going to be run again. Auto
+[108:48.88] startup completed. This is fixed I
+[108:51.44] think. So it should be
+[108:53.84] let it be guys completely. I think much
+[108:56.64] more enhancement are there. Reading
+[108:58.96] reading reading sentence transformer is
+[109:01.12] going to be removed. That's great.
+[109:02.56] Thinking
+[109:04.08] perfect. Now clean all the files.
+[109:07.28] Oh, the file index is going to be
+[109:08.96] delete.
+[109:10.56] It is having access of your terminal now
+[109:12.64] because of that it is able to do like
+[109:14.32] everything right it has configured the
+[109:16.48] best terminal in the back end that's why
+[109:19.60] see this much of code guys within hour
+[109:21.60] within hour this much of code and the
+[109:23.76] complete working application test email
+[109:27.84] this is just a mock email this is an
+[109:29.12] inbox and here is the API docs now guys
+[109:32.40] see what we can do we can connect it
+[109:34.64] with a real email okay with the real
+[109:36.80] system and yeah I can check like How
+[109:39.84] many email is being replied? How many is
+[109:41.36] not being replied? Everything we can do
+[109:43.12] over here. Everything we can check. So
+[109:45.76] let it complete. Maybe it is done.
+[109:47.84] Everything is configured. Again I'm
+[109:49.52] going to be check my email. So this is
+[109:52.24] the sender email. The subject and submit
+[109:54.72] test. Let's see guys what is going to
+[109:56.80] happen.
+[109:58.32] Uh it is saying something.
+[110:04.72] Let me give this error to this cloud A.
+[110:08.16] Cloud do something now.
+[110:11.04] Maybe it's going to be break somewhere.
+[110:18.32] Okay. I think it the key is not going to
+[110:20.24] be load.
+[110:22.08] Uh in ENB they have uh just a second
+[110:26.24] open AI key. Again they have edited this
+[110:28.88] again they have edited this. Uh that's a
+[110:32.56] problem. Now guys if we are giving a
+[110:33.92] full autonomy to the system this is the
+[110:36.16] issue.
+[110:37.68] This is the issue guys. This is the
+[110:39.76] issue.
+[110:42.16] Here is my key. Now what I'll do guys,
+[110:45.76] this is my
+[110:47.76] model. I wanted to use GPT4 model. So
+[110:50.64] I'm giving a model over here. Oh guys,
+[110:54.08] I'm just crossing my finger and let's
+[110:56.24] see whether it's going to be work or
+[110:59.52] not. Now okay, again I will run it.
+[111:07.36] Okay, great. So, my host is running. If
+[111:11.04] I can reload it or I just have to turn
+[111:15.60] 27.
+[111:17.52] Okay, now guys, I'm just crossing my
+[111:19.68] finger and running it. Let's see.
+[111:23.68] It has failed. Now, why it is failed?
+[111:25.36] Let's see.
+[111:30.16] No, no response. This time I think I
+[111:33.60] given the key.
+[111:35.68] What is the issue?
+[111:38.16] Email classification failed.
+[111:45.20] Okay, let's see guys. Again I'm giving
+[111:47.12] this particular thing to the cloud A.
+[111:49.60] Let's see now
+[111:57.20] the config accept turbo and not
+[112:02.08] I noticed.
+[112:10.64] Okay. GP4 Turbo preview the it is saying
+[112:14.88] the model name should be this.
+[112:18.32] Okay
+[112:20.32] guys, it is editing this key again and
+[112:22.16] again. Uh
+[112:33.84] okay, you should render it immediately.
+[112:36.08] Formatted the quit around value might
+[112:38.24] cause parsing issue.
+[112:41.20] Okay, it has fixed the thing. Now guys,
+[112:43.12] this time I'm not going to be change
+[112:44.32] anything except the open key. Okay, I
+[112:46.72] think we'll have to give the specific uh
+[112:49.20] like the uh instruction to use the GPD4
+[112:52.64] model. I think they are using a
+[112:53.84] different model GP4 turbo preview. Let's
+[112:56.00] see. Let's execute now. And guys, again
+[112:58.96] I'm crossing my finger. Let's see.
+[113:01.28] Everything is going to work. I think the
+[113:02.64] application is fine. Maybe the key and
+[113:04.72] all everything is giving giving a issue.
+[113:07.12] So this time it should work. Failed or
+[113:10.40] what? So failed. Why? Oh loop tight it's
+[113:14.32] not able to classify
+[113:19.36] uh
+[113:24.88] cloud why what you are doing uh
+[113:29.20] again let's see
+[113:37.36] I think the system the NV file is still
+[113:39.20] the API the export Same one from there's
+[113:42.16] a major security issue that needs to be
+[113:44.88] okay. It is saying there needs to be
+[113:47.52] addition looking at the logs. The app is
+[113:49.76] running fine. Open a embedding is
+[113:51.28] successfully but the classification
+[113:52.96] failing because objective the API key
+[113:54.48] seems to be causing issue even though it
+[113:57.04] is in the env. The problem with the is
+[114:00.64] the old expose key. I need to redirect
+[114:03.44] it immediately before the user see. But
+[114:06.16] more importantly notice the log show the
+[114:07.76] API key is still not working properly.
+[114:10.72] Uh key is not working properly. I don't
+[114:13.12] think so. Critical security issue APK
+[114:15.20] expert again. Okay, let me run it
+[114:18.16] without this API key. I think so. It has
+[114:20.16] kept some mock replies and all. We'll
+[114:23.36] have to check that part guys. Okay, key
+[114:26.16] part. Maybe my key got exposed and
+[114:29.28] because of that it is not allowing or
+[114:31.28] maybe I will have to keep the key again.
+[114:32.88] So, submit email. Uh it has failed guys.
+[114:36.24] Why it is failed?
+[114:39.44] because key is not there. Okay.
+[114:45.04] Uh
+[114:46.64] let me ask to it.
+[115:03.44] You
+[115:29.44] Okay. So guys, I written this prompt.
+[115:31.60] Let's see how it is going to be deal
+[115:32.88] with it. The user is asking a very valid
+[115:36.08] question. They're confused because I
+[115:37.52] keep saying APK and redirect
+[115:39.28] redirecting. But the need real AP is the
+[115:41.76] system that you have under APK use AP
+[115:43.84] service. Sorry, they need a get a real
+[115:46.24] API from the open AI. The need to keep
+[115:48.32] it safely not in a g report, not shared,
+[115:50.56] not in a lock. They should a file for
+[115:52.48] the local developer. There should never
+[115:54.16] be committed to the version control. You
+[115:56.72] need the API key, open APK without it.
+[115:59.28] Open a call. This is normal.
+[116:02.40] Keep in normal. Okay, your key is here.
+[116:06.96] This correct perfect. Okay. Get env
+[116:11.92] commit it don't push it when I keep
+[116:13.84] warning about exposure then issue is in
+[116:15.68] a chat history or accidentally past the
+[116:17.44] actual key this is expo for testing only
+[116:20.24] just a new one if public github you are
+[116:22.16] safe it was user production
+[116:25.28] okay great
+[116:27.28] I'm writing over here I am using it for
+[116:31.52] the testing only and it is in my local
+[116:38.08] so Please accept
+[116:41.52] my key
+[116:43.68] and I will not keep it on a edit mode
+[116:47.04] and I'll keep it in this
+[116:49.84] uh
+[116:52.08] I will keep it over the ask before edit
+[116:56.40] mode. So open a API key. Now let me keep
+[116:58.88] this thing over here. system is ready
+[117:02.16] and let's see now guys if I am going to
+[117:05.04] be run it
+[117:09.68] okay my workflow is initialized
+[117:13.04] my application should be ready and if
+[117:16.32] I'm going to submit
+[117:22.88] it has failed again
+[117:27.60] no response spend for 6 No response
+[117:31.04] available.
+[117:36.24] Oh, something is happening in between.
+[117:38.72] Maybe it is a issue of the LLM only.
+[117:46.32] Uh
+[117:47.92] looking like the logs I can see. So
+[117:50.08] clearly email is successful.
+[117:51.36] Classification attempt what fail because
+[117:54.56] the email defaults to category other
+[117:56.32] category. this together. Review checks
+[117:57.76] uncertain category. No response was
+[118:00.00] generated. Edit. Uh,
+[118:04.40] okay.
+[118:05.92] It is saying use this one.
+[118:09.44] Uh, yes.
+[118:12.08] I think I am using it with a double
+[118:14.48] code. That could be the issue. Oh my
+[118:17.28] god. Uh,
+[118:19.63] [laughter]
+[118:21.68] okay. Key taken away. Now, let's see.
+[118:24.48] Okay, guys. Finger cross again I'm going
+[118:27.68] to run it and submit the email
+[118:35.20] it again failed. Okay,
+[118:40.96] 97% used
+[118:44.00] and guys this is the issue. So this is
+[118:46.96] the priority low low status fair means
+[118:49.92] AI is not able to generate it is
+[118:51.36] capturing each and every log over here
+[118:53.36] but the system is not running. Let me
+[118:56.64] check again guys even I will not leave
+[118:59.04] to cloud A until my limit is not going
+[119:01.20] to be exposed.
+[119:04.24] Uh
+[119:05.76] I can see from the log the email has not
+[119:07.92] been classified
+[119:11.36] email prompt but I don't see okay
+[119:14.24] something else some issue some different
+[119:16.00] issue guys prompt format format email
+[119:19.28] classific prompt
+[119:25.60] okay great so this is now subject
+[119:30.56] is this
+[119:33.44] let's See guys, let's go ahead one more
+[119:35.60] time. And yes, my startup is there.
+[119:40.40] My application, sorry, my again I'm
+[119:43.12] going to restart my application. Oh,
+[119:45.60] let's see what is going to happen. So
+[119:47.92] let me test it again
+[119:50.56] until it's not going to be generated via
+[119:52.64] AI. I will keep trying. Okay,
+[119:57.84] again failed and my limit has also got
+[120:00.08] completed. I think guys you understood
+[120:01.84] the complete class. Maybe it is a issue
+[120:04.16] of the code and it is trying to
+[120:08.08] handle that. Let's take one more try
+[120:10.64] here.
+[120:12.40] Looking at the log, I can see dedicated
+[120:16.08] response send. Okay, response is a
+[120:17.68] issue. Response is having issue now
+[120:20.08] again it's going to be check that guys.
+[120:22.88] I even like didn't stop this video for a
+[120:25.92] single minute. Okay, it's running
+[120:27.28] continuously.
+[120:28.80] So
+[120:30.72] let's see what's going to be happen. And
+[120:32.40] it has completed again. 100% used
+[120:37.76] this time. Okay. Now let's see. Uh
+[120:43.68] I hope so guys this time it's going to
+[120:45.84] be run.
+[120:48.24] AI is going to be generate the response.
+[120:51.44] Oh failed.
+[120:53.44] Okay. Means uh
+[120:56.64] failed to create a review task. Net not
+[120:58.64] subscribe. I think code issue. Code
+[121:00.08] issue guys. Code issue. It might fix
+[121:02.00] that code issue. Use a different model
+[121:03.92] if IQ model is not going to work up to
+[121:05.92] the mark. Okay. So now see let it
+[121:10.64] complete what it is doing. Let's see now
+[121:17.76] subject. Okay this is fine.
+[121:23.20] But guys like this the wipe coding is
+[121:24.96] going to be disaster. Okay. So it has
+[121:27.20] done. It is done guys. Now let's see
+[121:29.92] again get submit test
+[121:38.08] this time. I hope so my AI is going to
+[121:41.52] be generate a reply.
+[121:47.92] Oh my god it is f. Why it is f even I
+[121:52.64] don't know this time [laughter]
+[121:56.24] again. Cloudy, please go ahead
+[121:59.05] [laughter]
+[122:01.60] guys. It's like really fun and uh even I
+[122:04.80] hope you are also enjoying the same.
+[122:07.57] [laughter]
+[122:08.96] This is a wipe coding
+[122:11.84] error details. I think even we'll have
+[122:13.84] to check it manually
+[122:17.36] for fail to send email.
+[122:24.16] Oh, it's trying to call. EO
+[122:28.24] when to say it is asking me uh email and
+[122:30.40] password I think so that's why uh I it
+[122:34.88] is able to do all oh guys it is gen it
+[122:38.88] has generated a response see this is the
+[122:40.40] response I think it is failed why it is
+[122:43.20] showing failed because is not able to
+[122:45.44] send the email because of my API key and
+[122:48.88] all something like that it is asking
+[122:50.72] maybe the API key so let's see email is
+[122:54.72] saying there is I am interval in Cloud
+[122:56.48] service I was charged last month twice
+[122:58.40] and AI is generated a response. Thank
+[123:00.40] you for the cloud A without a specific I
+[123:02.56] can't okay refer to move forward can you
+[123:05.36] please great great great guys so I am
+[123:07.68] able to get my response from the AI this
+[123:10.24] is the testing mail and why I'm getting
+[123:12.24] error maybe my Google cloud API is not
+[123:15.44] connected if I will check with the inbox
+[123:18.08] so here it is logging the entire mail
+[123:20.72] and all everything that that's really
+[123:22.40] awesome guys that's really awesome and
+[123:24.88] it is saying what it is saying now it is
+[123:27.84] saying looking at the contact the usern
+[123:29.92] NV file that is a plan to cooperate in
+[123:32.08] future. Uh so guys this is a feature
+[123:34.72] this is the feature means in future
+[123:36.24] basically what I can do I can uh connect
+[123:39.04] with my real system. Okay let's try out
+[123:41.36] with the different mail. So here what
+[123:42.88] I'm doing guys I'm going to be test
+[123:44.56] email. So right now I'm going to be
+[123:46.32] write my email sunonny.thegmail.com.
+[123:51.84] Okay. Now here I'm writing sub help with
+[123:55.12] the
+[123:58.16] help with the
+[124:01.36] subscription. Okay, subscription
+[124:05.12] now. Hi there I am Sunny just just I'm
+[124:08.56] editing a little bit. Let's see what's
+[124:10.16] going to be generate. Okay, now what I'm
+[124:12.56] doing guys I'm going to be submit the
+[124:15.12] test mail. Let's see what's response is
+[124:17.20] going to be generated. See it is going
+[124:18.32] to be fail. My system is working. The
+[124:20.24] system is working. AI system is working
+[124:22.16] but it's going to be failed where it's
+[124:23.92] going to be means at at at point where
+[124:27.12] it's going to be send a mail to someone
+[124:29.04] it's required the Google credential okay
+[124:32.88] it has failed but yeah it is able to
+[124:34.96] generate the response hi sunny this this
+[124:37.12] that that's awesome guys that's awesome
+[124:39.60] and if I'm checking with the inbox now
+[124:42.00] so yeah it is able to capture all the
+[124:44.00] log and all everything and see guys how
+[124:47.36] like how it has created the uh this UI
+[124:50.48] and All from Sunny Savvita subject is
+[124:52.64] this one classifying this one. Email
+[124:54.32] body is this. Review is this critical
+[124:56.80] keywords approved. Okay. And fine failed
+[125:00.72] to send email to sunisitagmail.com.
+[125:03.60] Failed to send email to sunny
+[125:05.52] savvitagmail.com. Why? Because it is not
+[125:07.92] connected with my Gmail API. That's
+[125:10.08] great guys. So I created this end to end
+[125:12.00] system and now I can deploy it. So guys
+[125:14.00] within a within 1 hour itself with all
+[125:17.44] the grinding and all we have created
+[125:19.92] this system.
+[125:22.08] Okay fine. So yeah this is it for this
+[125:24.64] particular video. I hope you enjoyed
+[125:26.08] this uh end to end development right uh
+[125:29.60] of this customer support email agent.
+[125:31.52] You can try out something else here. I
+[125:34.00] have spent my entire limit. I hope so
+[125:36.00] guys you are also going to be at some
+[125:37.44] credit and you are going to make a fun
+[125:39.68] with this cloud code. So yeah this is it
+[125:41.52] for this particular video. In the next
+[125:42.96] video guys or maybe in the upcoming
+[125:44.72] video I will discuss about the
+[125:46.16] deployment. Okay, I'll write a complete
+[125:48.40] infrastructure as a code. I will put it
+[125:50.32] over the GitHub. Then we'll run GitHub
+[125:52.32] CI/CD, GitHub action CI/CD and we are
+[125:55.04] going to deploy our application over the
+[125:57.20] AWS. So until Thank you. Bye-bye. Take
+[125:59.68] care guys. Have a great day ahead. Thank
+[126:01.68] you.

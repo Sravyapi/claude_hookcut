@@ -34,17 +34,21 @@ def build_title_generation_prompt(
     language: str = "English",
     hook_type: str = "",
     attention_score: float = 0.0,
+    video_title: str = "",
 ) -> str:
     """Build prompt for generating a catchy, Short-optimized title."""
-    safe_hook_text = sanitize_for_prompt(hook_text)
+    safe_hook_text = sanitize_for_prompt(hook_text) if hook_text else ""
     hook_type_line = f"Hook type: {hook_type}\n" if hook_type else ""
     score_line = f"Hook score: {attention_score:.1f}/10\n" if attention_score else ""
+    video_title_line = f"Video title: {sanitize_for_prompt(video_title, max_len=200)}\n" if video_title else ""
+
+    transcript_block = f"\nHook transcript:\n{safe_hook_text}" if safe_hook_text else ""
 
     return f"""You are a viral YouTube Shorts title writer. Generate ONE punchy, scroll-stopping title for this Short.
 
 Niche: {niche}
 Language: {language}
-{hook_type_line}{score_line}
+{video_title_line}{hook_type_line}{score_line}
 What makes a great Shorts title:
 - Creates instant curiosity or promises a clear, specific payoff
 - Uses concrete numbers or specifics where possible ("3 seconds", "$10k", "5 years")
@@ -56,6 +60,4 @@ What makes a great Shorts title:
 - No generic phrases ("You won't believe...", "This is crazy...", "Must watch")
 - No emojis
 - Output ONLY the title text — no quotes, no explanation
-
-Hook transcript:
-{safe_hook_text}"""
+{transcript_block}"""

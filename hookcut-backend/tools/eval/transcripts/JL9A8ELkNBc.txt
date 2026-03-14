@@ -1,0 +1,308 @@
+[0:01.04] Let's start the very first from the
+[0:03.68] question that are you bothered about the
+[0:06.00] AI? Do you really think that AI is going
+[0:08.96] to take the software development job? If
+[0:12.16] that is your concern, just let me know
+[0:14.08] in the comment section because I really
+[0:15.84] want to know that. And this video will
+[0:18.08] also give you an honest opinion uh
+[0:20.56] without getting biased about the
+[0:22.48] software industry because I have never
+[0:24.16] been biased about the software industry.
+[0:25.92] Yes, I know given the fact that I make
+[0:28.32] uh coding videos and I do run software
+[0:30.88] companies. But this doesn't means I am
+[0:33.28] biased toward that. I am biased more
+[0:35.28] towards the business side of it. Uh so
+[0:37.68] this video will give you an honest and
+[0:39.68] clear picture that how much you need to
+[0:42.24] be worried about and how you need to
+[0:43.84] plan the things for that. But first let
+[0:46.08] me know in the comment section uh is
+[0:48.00] this bothering you that hey AI is going
+[0:50.32] to take away the job uh what the fresher
+[0:52.56] needs to do what the people who are
+[0:54.40] already in the in the industry needs to
+[0:56.08] do so I will answer that and you can
+[0:58.16] learn all of this through the history of
+[1:00.00] the software development if you
+[1:01.68] understand the history part of it you
+[1:03.44] will be all clear for that. So let me
+[1:05.36] take you on to the screen and walk you
+[1:06.96] through that how this is all happening
+[1:08.64] and how you actually need to understand
+[1:10.96] this and see this from the business
+[1:13.36] perspective because if you understand
+[1:15.52] the business you will understand how
+[1:17.04] much job is going to be taken away or
+[1:19.12] how much job is it going to increase the
+[1:21.76] whole software industry one thing that
+[1:23.20] you need to understand that a lot of
+[1:24.80] people think and especially in the case
+[1:26.64] of software industry they think that
+[1:29.12] this is going to be the software and
+[1:31.20] this whole runs the picture but that is
+[1:33.92] not accurate. not even remotely
+[1:35.52] accurate. Software is just a small part
+[1:39.20] of the things. The bigger picture has
+[1:41.76] always and always uh been the business.
+[1:45.84] And if you look closely, we don't do
+[1:48.16] much. The whole people who are in the
+[1:50.56] software, we don't do much. We just
+[1:54.08] enable people to do things. And software
+[1:57.12] is just a small part of the all the
+[1:59.04] things. Like for example, if you look at
+[2:00.80] closely, do you do you think that we
+[2:03.52] really bring out the cabs at your home?
+[2:06.64] In a sense, yes. But in a sense, no. We
+[2:09.12] just enable people to order the cabs.
+[2:12.72] And some people who get the order of
+[2:15.60] getting the cabs, they just send the
+[2:17.28] cabs to your home. So neither we drive
+[2:19.52] the cabs, neither we do the things.
+[2:21.76] We're just enablers. So I call that hey,
+[2:24.56] whatever we are, we are nobody apart
+[2:26.96] from just enablers. So I don't call this
+[2:29.28] as softwares, we are enablers.
+[2:32.64] If you look at from the Uber
+[2:34.48] perspective, we just enable the people
+[2:36.56] to order a cab at home. If you look from
+[2:38.56] the Zumato perspective or Door Dash or
+[2:42.40] Uber Eats, we just enable the people to
+[2:44.80] order the order the food. Nothing more
+[2:47.04] than that. So the whole thing always and
+[2:49.44] always centers around the business. If
+[2:51.20] you understand the business perspective
+[2:52.80] of the thing, you will truly understand
+[2:54.56] that whether the AI is taking the job or
+[2:56.80] not given the fact. Now that you
+[2:58.56] understand that okay uh software is just
+[3:00.72] enabling the business let me give you a
+[3:02.96] small kind of a history lesson that how
+[3:05.04] the software has evolved and this is
+[3:06.96] definitely the evolution part right now
+[3:09.28] that is happening in front of us. So
+[3:11.60] software actually if you look at from
+[3:13.28] the very early era of the software it
+[3:15.92] was not software these were just big
+[3:18.16] hardware machines which were enabling
+[3:20.40] the humans to do complex calculation
+[3:22.88] that was it. Can guys like you and me do
+[3:26.40] the calculation at that time? Absolutely
+[3:28.64] not. Only a few centered organization
+[3:31.28] who has this computing power were able
+[3:34.00] to do these calculation. So in the early
+[3:36.56] era it was just probably one to two orgs
+[3:40.00] that were able to do these kinds of
+[3:42.32] calculation nothing more than that. Then
+[3:44.48] came up the era uh long long after that
+[3:47.44] which was more of the era of I would say
+[3:50.00] Facebook or maybe Google or similar kind
+[3:53.04] of companies uh like Amazon these kinds
+[3:56.08] of companies uh were thriving in that
+[3:58.64] era. They were backtoback shipping the
+[4:01.36] things doing the social media and all of
+[4:03.20] that. But this was a shift from one to
+[4:05.36] two organization to a few more
+[4:08.40] companies. What was the problem in those
+[4:10.80] companies? The major problem in those
+[4:13.36] companies was the infra.
+[4:16.96] What was stopping you and me to build
+[4:19.36] the Google or the Amazon if we were
+[4:21.28] present in that era. This was the case.
+[4:23.92] The infra was stopping us from building
+[4:26.08] this. People need to literally buy the
+[4:28.72] compute power, the RAM, the hard disk,
+[4:30.72] the network storage and everything and
+[4:33.04] have to put this into their own garage.
+[4:35.20] So not everybody can actually build this
+[4:38.00] uh applications like Facebook, Google or
+[4:40.24] Amazon or companies not the application
+[4:42.24] the companies like Google, Amazon and
+[4:44.08] Facebook because of this infra and this
+[4:46.80] problem was solved by the cloud provider
+[4:50.96] uh cloud providers like uh AWS
+[4:53.60] definitely Oracle uh maybe GCP or
+[4:56.24] whatever the cloud provider you need
+[4:58.00] they enabled that this infra should not
+[5:00.96] be a problem and this should be solved
+[5:02.88] by uh the cloud and anybody can buy and
+[5:05.68] host these clouds. This actually truly
+[5:08.48] started the revolution of SAS software
+[5:11.84] as a service.
+[5:13.76] Now uh you definitely cannot directly
+[5:16.08] build a SAS. Not anybody can build a
+[5:18.00] SAS. It takes a lot of things. If you
+[5:19.52] can if you think that I can build a SAS
+[5:21.36] overnight or over a weekend, you truly
+[5:23.84] don't understand what SAS actually
+[5:25.36] means. Probably I'll do a separate video
+[5:26.88] on that. But definitely SAS was not the
+[5:29.44] easy thing and still is not the easy
+[5:30.96] thing. So what it required is manpower.
+[5:34.64] Uh probably somewhere in the range of
+[5:36.64] 200 to 500. Uh that's the range of
+[5:40.72] people. Yeah, you need this much of the
+[5:43.60] people to build the SAS. And true SAS
+[5:45.68] like SAP, Salesforce, these are kind of
+[5:48.56] the SAS I'm talking about. They can
+[5:50.80] actually have this kind of a manpower
+[5:52.80] and they can actually build the SAS.
+[5:55.20] What this SAS allowed that instead of
+[5:57.52] having the power in the hand of just few
+[6:00.64] organization or few big powerful people
+[6:03.12] this SAS actually allowed people to do
+[6:05.36] magical things like imagine if you want
+[6:07.68] to teach uh you can just have a SAS it's
+[6:11.12] you cannot build a SAS but you can teach
+[6:13.20] individually uh by having this SAS or
+[6:16.32] maybe if you don't want to teach maybe
+[6:17.92] you want to uh sell food online uh sell
+[6:20.64] food or maybe sell uh clothes so
+[6:24.00] whatever you want to do uh all of this
+[6:26.24] thing can be managed easily uh by having
+[6:29.28] a SAS but still you cannot own your own
+[6:32.40] SAS it requires a team of 200 500 people
+[6:35.60] what if I don't want to build a SAS but
+[6:37.84] I want to build a customized product
+[6:40.72] something that helps me to do so because
+[6:42.64] remember we are enablers we just enable
+[6:45.04] the things so what's the next step
+[6:47.36] what's the next evolution the next
+[6:49.12] evolution is that hey now can I get a
+[6:52.40] team of maybe four to five or let's just
+[6:55.28] say let's be a little bit more on that
+[6:57.04] let's just say we have a team of five to
+[6:58.96] 10 great engineers and can I build
+[7:02.24] something which helps me to do my job
+[7:04.16] better can I run my gym better can I run
+[7:07.28] my factory better and can I have a
+[7:09.60] software that is customized to me
+[7:12.24] personal to me
+[7:14.32] previously this software was SAS and SAS
+[7:17.84] are not cheap they definitely offer
+[7:20.08] cheap to people because uh anybody can
+[7:22.72] just rent out the softwares but if you
+[7:25.76] want a customization that's a heavy cost
+[7:28.72] even these SAS people when they offer uh
+[7:31.44] the customization on the SAS they charge
+[7:34.16] lacks and lacks of rupees but now my
+[7:36.96] goal is that I want to run my gym I want
+[7:39.28] to run my consulting service I want to
+[7:41.28] teach yoga but in my customized app in
+[7:44.48] my customized version now what I can do
+[7:46.88] is the next step is now I can just have
+[7:49.84] five to 10 extraordinary engineers and
+[7:52.96] can simply go ahead and have my own
+[7:55.92] software. Yeah. And through that you can
+[7:59.12] enable again a really specific and
+[8:02.64] really targeted set of people to run
+[8:06.08] their business. Now you don't need to
+[8:08.24] get SAP or the Salesforce or something
+[8:10.64] like that. uh does this means that
+[8:12.88] nobody wants this the Salesforce or the
+[8:15.52] SAP or no there are still large
+[8:17.52] companies uh which cannot actually be uh
+[8:21.36] cannot fulfill their requirements with 5
+[8:23.12] to 10 people but definitely now there's
+[8:25.28] a new era so why am I telling you all of
+[8:28.48] this and hold this journey because this
+[8:30.48] is where your answer lies this is the
+[8:33.84] evolution so this first thing that I
+[8:36.48] call about this was the cloud era yeah
+[8:41.04] This is where everything works. This is
+[8:43.68] where the cloud happened. This was the
+[8:45.68] first change in the whole ecosystem and
+[8:48.88] the mindset. And a lot of people thought
+[8:50.16] that the networking job will go away.
+[8:52.32] You don't need networking people. But
+[8:53.92] all these networking people migrated to
+[8:55.68] infra. And after that, this is the era
+[8:59.84] where the SAS begins. This was the whole
+[9:02.48] era of the SAS. this the cloud era the
+[9:05.28] networking era will is still here will
+[9:07.36] always be there but it just has deviated
+[9:10.08] a little and similar to this this SAS
+[9:12.80] era that I can have a software to teach
+[9:15.04] and all of that is there and now that we
+[9:17.52] are here now the era of customization
+[9:21.28] you need and you can have extreme amount
+[9:23.76] of customization and this customization
+[9:26.32] and this ability to deliver a software
+[9:28.72] with five to 10 really good engineer is
+[9:31.36] the AI era so this is What actually
+[9:34.48] helps you to understand that businesses
+[9:36.48] are now transforming the things.
+[9:38.56] Previously they allowed people to have
+[9:39.92] cloud. Now the business is around the
+[9:42.16] SAS and now the business is going more
+[9:44.48] on the customization.
+[9:46.80] Engineers have more power to democratize
+[9:49.92] the software. That is where the magic
+[9:52.24] is. And I think all those people who
+[9:54.08] understand this business side of it that
+[9:56.00] now having a small team, having a small
+[9:58.48] agency, you can just offer customized
+[10:00.56] solution because people think right now
+[10:02.80] the whole industry is allowing you to
+[10:05.52] believe or or forcing you to believe
+[10:07.76] that anybody can code, anybody can build
+[10:09.84] a software. Yeah, they can build a
+[10:12.32] prototype. I don't disagree with that.
+[10:14.80] But running and maintaining a software
+[10:17.12] constantly is still a job of software
+[10:19.44] engineer, not the ordinary people.
+[10:21.36] Ordinary people are still busy in
+[10:23.52] figuring out a a way to do business or
+[10:26.32] scale their business and they don't have
+[10:29.60] the time to keep on prompting into
+[10:32.32] replet or any other software and surely
+[10:34.40] they can have it all fun and by all
+[10:36.16] means I want more people to get into
+[10:37.68] software industry but this is what you
+[10:39.68] need to understand that the business
+[10:41.04] side is now allowing you to focus on
+[10:44.48] this five to 10 people really good
+[10:46.24] engineers you cannot just have any
+[10:48.00] ordinary engineer who doesn't even know
+[10:49.52] what an event loop is or what the git
+[10:51.60] workflows are git branches are you can't
+[10:54.08] work with that but with the help of
+[10:56.16] instead of having 200 to 250 people or
+[10:58.72] 500 people to build a SAS now just
+[11:01.44] gather a team of 5 to 10 people and you
+[11:03.92] can offer a really good customized
+[11:06.72] software what the people need and target
+[11:08.80] is so that's why I say in order to
+[11:11.60] understand all these myths and hypes
+[11:13.84] around the software the AI and all of
+[11:16.56] that always look for the business side
+[11:19.04] of the things business side of The
+[11:20.72] things never lie. If the business makes
+[11:22.96] sense, AI makes sense. If the business
+[11:24.72] doesn't make sense, AI doesn't make
+[11:26.32] sense. So always look from the
+[11:28.24] perspective I know as an engineer it is
+[11:30.16] very hard for you to get into the
+[11:31.68] business side of the things. But you
+[11:33.60] need to one day or the other. You need
+[11:35.92] to get that. So stop this fear mongering
+[11:38.16] for once that AI will do everything. AI
+[11:40.56] is not going to do everything. It's
+[11:41.84] going to enable people to do more
+[11:43.60] things. Customization, ship software
+[11:45.60] faster. It's definitely helping me out a
+[11:47.76] lot. I will definitely name out a few
+[11:49.84] tools that I use regularly and all of
+[11:51.68] that. But I hope this video gives you an
+[11:53.76] enough idea that whether the AI is going
+[11:55.68] to take your job or is it going to
+[11:57.36] transform your job into something more
+[11:59.20] independent, something more
+[12:00.48] democratized. So this is uh your time to
+[12:03.36] actually use your power to ship
+[12:05.76] products. This is the best time to be a
+[12:07.44] shipper, ship your product. All right, I
+[12:09.92] hope you have enjoyed that. Do hit that
+[12:11.44] subscribe and I'll definitely catch you
+[12:12.72] up in the next video.

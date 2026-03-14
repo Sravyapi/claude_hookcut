@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, memo } from "react";
+import { useSession } from "next-auth/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "@/lib/api";
 import type { VideoMeta } from "@/lib/types";
@@ -19,10 +20,14 @@ interface HeroUrlInputProps {
   light?: boolean;
 }
 
+const SPEAKER_COUNT_OPTIONS = [2, 3, 4] as const;
+
 const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputProps) {
   const onAnalyze = useAnalyze();
   const { role } = useUser();
+  const { status: authStatus } = useSession();
   const isAdmin = role === "admin";
+  const isAuthenticated = authStatus === "authenticated";
   const [url, setUrl] = useState("");
   const [validating, setValidating] = useState(false);
   const [videoMeta, setVideoMeta] = useState<VideoMeta | null>(null);
@@ -30,6 +35,8 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
   const [niche, setNiche] = useState("Generic");
   const [language, setLanguage] = useState("English");
   const [engineMode, setEngineMode] = useState("llm_only");
+  const [interviewMode, setInterviewMode] = useState(false);
+  const [speakerCount, setSpeakerCount] = useState(2);
 
   // Fetch current engine mode for admins
   useEffect(() => {
@@ -82,8 +89,8 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
     if (isAdmin) {
       try { await api.adminSetHookEngineMode(engineMode); } catch {}
     }
-    onAnalyze(url.trim(), niche, language, videoMeta);
-  }, [url, niche, videoMeta, onAnalyze, isAdmin, engineMode]);
+    onAnalyze(url.trim(), niche, language, videoMeta, interviewMode, speakerCount);
+  }, [url, niche, videoMeta, onAnalyze, isAdmin, engineMode, interviewMode, speakerCount]);
 
   const borderBase = light
     ? "border-[#E4E4E7] bg-white focus-within:border-[#E84A2F]/50"
@@ -224,6 +231,61 @@ const HeroUrlInput = memo(function HeroUrlInput({ light = false }: HeroUrlInputP
                 ))}
               </select>
             </div>
+
+            {/* Interview Mode toggle — authenticated users only (Pro enforced by backend) */}
+            {isAuthenticated && (
+              <div className="mb-4">
+                <div className="flex items-center justify-between">
+                  <label className={`block text-xs font-medium ${light ? "text-[#71717A]" : "text-white/40"}`}>
+                    Interview Mode <span className="text-[#E84A2F] text-[10px]">(Pro)</span>
+                  </label>
+                  <button
+                    type="button"
+                    role="switch"
+                    aria-checked={interviewMode}
+                    onClick={() => setInterviewMode((v) => !v)}
+                    className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full transition-colors duration-200 ${
+                      interviewMode ? "bg-[#E84A2F]" : light ? "bg-[#D4D4D8]" : "bg-white/10"
+                    }`}
+                  >
+                    <span
+                      className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow-sm transition-transform duration-200 ${
+                        interviewMode ? "translate-x-[18px]" : "translate-x-[2px]"
+                      } mt-[2px]`}
+                    />
+                  </button>
+                </div>
+                <p className={`text-[10px] mt-1 ${light ? "text-[#A1A1AA]" : "text-white/25"}`}>
+                  Multi-speaker diarization &amp; split-screen Shorts
+                </p>
+                {interviewMode && (
+                  <div className="mt-2">
+                    <label className={`block text-[10px] font-medium mb-1 ${light ? "text-[#71717A]" : "text-white/30"}`}>
+                      Speakers
+                    </label>
+                    <div className="flex gap-1.5">
+                      {SPEAKER_COUNT_OPTIONS.map((n) => (
+                        <button
+                          type="button"
+                          key={n}
+                          onClick={() => setSpeakerCount(n)}
+                          className={`text-xs px-3 py-1 rounded-full border font-medium transition-colors ${
+                            speakerCount === n
+                              ? "bg-[#E84A2F] text-white border-[#E84A2F]"
+                              : light
+                                ? "text-[#71717A] border-[#E4E4E7] hover:border-[#D4D4D8]"
+                                : "text-white/40 border-white/[0.1] hover:border-white/20"
+                          }`}
+                          aria-pressed={speakerCount === n}
+                        >
+                          {n === 4 ? "4+" : n}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Engine mode selector — admin only */}
             {isAdmin && (

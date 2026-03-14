@@ -1,0 +1,1596 @@
+[0:02.16] in this python tutorial you're going to
+[0:03.84] learn everything you need to know to
+[0:05.36] start programming in python if you want
+[0:07.36] to learn python programming for data
+[0:08.96] science machine learning or web
+[0:10.64] development this python tutorial is the
+[0:12.88] perfect place to learn python you don't
+[0:14.72] need any prior knowledge in python or
+[0:16.72] programming in general i'm going to
+[0:18.08] teach you everything from scratch i'm
+[0:19.92] mosh hamadani and i've taught millions
+[0:21.92] of people how to code through this
+[0:23.20] channel if you're new here make sure to
+[0:25.12] subscribe as i upload new videos every
+[0:27.04] week now let's jump in and get started
+[0:30.08] all right before we get started let me
+[0:31.44] give you some ideas about what you can
+[0:32.80] do with python that's a very common
+[0:34.64] question python is a multi-purpose
+[0:36.88] programming language so you can use it
+[0:38.48] for a variety of different tasks you can
+[0:40.64] use python for machine learning and ai
+[0:42.72] in fact python is the number one
+[0:44.16] language for machine learning and data
+[0:45.76] science projects python is also very
+[0:47.68] popular in web development using python
+[0:50.32] and a framework called django you can
+[0:51.92] build amazing websites here are five
+[0:54.00] websites powered with python and django
+[0:56.40] youtube instagram spotify dropbox and
+[1:00.08] pinterest you can also use python in
+[1:02.16] automation with python you can save your
+[1:04.16] time and increase your productivity by
+[1:06.56] automating repetitive tasks so why are
+[1:09.36] you learning python are you learning it
+[1:10.72] for automation for data science or web
+[1:12.80] development let me know in the comment
+[1:14.56] section below
+[1:19.76] all right the first thing i want you to
+[1:20.96] do is to head over to python.org to
+[1:23.84] download the latest version of python so
+[1:26.32] you go to downloads and select the
+[1:28.40] latest version of python
+[1:33.12] here in your downloads folder you should
+[1:34.72] see this package simply double click it
+[1:37.84] you're going to see this python
+[1:38.96] installer if you're on windows you will
+[1:41.52] see this checkbox over here add python
+[1:44.16] to path make sure to check it it's
+[1:46.48] really important otherwise you're not
+[1:48.32] going to be able to follow this tutorial
+[1:50.96] simply click on continue
+[1:52.88] again
+[1:53.76] one more time
+[1:55.12] i agree with the terms
+[1:57.12] and install the latest version of python
+[2:00.24] now here you need to enter the username
+[2:02.00] password of your computer
+[2:03.84] so
+[2:04.88] let's do that real quick
+[2:08.88] next you need to install a code editor
+[2:11.20] we use a code editor to write our code
+[2:13.04] and execute it the most popular code
+[2:15.28] editor for python is pycharm you can get
+[2:18.00] it from jetbrains.com
+[2:20.08] pycharm
+[2:21.20] so on this page
+[2:23.28] click on download
+[2:25.92] you should see two different editions
+[2:27.28] one is the professional edition which is
+[2:29.28] commercial and we also have this
+[2:31.28] community edition which is free and open
+[2:33.28] source so we're going to download the
+[2:35.12] community edition
+[2:39.68] now in your downloads folder you should
+[2:41.36] have this package let's double click it
+[2:45.44] if you're on windows you're going to see
+[2:47.12] an installation wizard so simply click
+[2:49.20] on the next button until you install
+[2:51.12] pycharm if you're on a mac you need to
+[2:53.52] drag this pycharm and drop it onto the
+[2:56.00] applications folder
+[3:00.16] now
+[3:01.04] let's open it
+[3:02.88] the first time you open pycharm you have
+[3:04.72] to configure a few settings we don't
+[3:06.64] want to spend time on this so over here
+[3:09.76] we're going to click on skip remaining
+[3:11.36] and set defaults
+[3:14.16] now let's create a new project
+[3:16.40] over here we can specify the location
+[3:18.72] and the name of our python project so
+[3:22.00] let's append hello world to this path
+[3:25.04] this is where our python project is
+[3:26.96] going to be saved so let's click on
+[3:29.36] create
+[3:32.40] in this window you can see the content
+[3:34.00] of our project so here's our hello world
+[3:36.48] project currently we have only one
+[3:38.40] folder inside this project that is vn
+[3:40.80] which is short for virtual environment
+[3:42.88] we'll talk about virtual environments in
+[3:44.40] the future so currently we don't have
+[3:46.40] any python files inside this project a
+[3:49.12] real application can consist of tens or
+[3:51.76] hundreds or even thousands of python
+[3:53.44] files so let's right click on the
+[3:55.84] project name
+[3:57.60] and go to new python file we're going to
+[4:00.56] call this file up
+[4:04.00] now we can collapse this project window
+[4:05.68] by clicking on this icon so now we have
+[4:08.00] more space let's write our first python
+[4:10.40] code we're going to write print all in
+[4:12.84] lowercase then add parentheses
+[4:15.76] then add quotes either single quotes or
+[4:18.80] double quotes
+[4:20.16] and inside this code we're going to
+[4:21.44] write hello world
+[4:23.52] so this is what we call a string a
+[4:25.92] string means a string or sequence of
+[4:28.32] characters in simple words that means
+[4:30.64] textual data so in python and in many
+[4:33.60] other programming languages whenever
+[4:35.52] we're dealing with textual data we
+[4:37.52] should always surround our text with
+[4:39.52] quotes
+[4:40.72] in python we can use single or double
+[4:42.88] quotes
+[4:43.92] now this print you see here is a
+[4:45.68] function built into python and we can
+[4:48.08] use it to print a message on our
+[4:49.76] application window so let me show you
+[4:52.08] how to run this code
+[4:54.16] on the top we go to the run menu and
+[4:56.72] then select run
+[4:58.32] note that there is a shortcut associated
+[5:00.24] with this command i always use shortcuts
+[5:02.48] because they increase my productivity so
+[5:05.76] let's click on this
+[5:07.12] now select app
+[5:09.12] and over here
+[5:10.48] you can see this little window this is
+[5:12.16] what we call the terminal window and it
+[5:14.48] shows the output of our program
+[5:16.72] so here's the hello world message
+[5:18.32] printed in the terminal window now as
+[5:20.40] you learn more python you will learn how
+[5:22.24] to build applications that have a
+[5:23.76] graphical user interface that's an
+[5:25.68] advanced topic so for now let's not
+[5:27.52] worry about it
+[5:34.64] alright now let's talk about variables
+[5:36.64] we use variables to temporarily store
+[5:38.96] data in a computer's memory for example
+[5:41.44] we can store the price of a product or
+[5:43.84] someone's name their email their age and
+[5:46.24] so on let me show you so
+[5:48.56] to declare a variable we start by typing
+[5:50.88] a name for that variable let's say age
+[5:54.00] then we add an equal sign
+[5:56.32] and then we type a value let's say 20.
+[5:59.20] so with this we're storing the number 20
+[6:01.36] somewhere in our computer's memory and
+[6:03.52] we're attaching this age as a label for
+[6:05.84] that memory location so now we can read
+[6:08.24] the value at this memory location and
+[6:10.48] print it on the terminal so instead of
+[6:13.12] printing hello world we want to print
+[6:15.04] the value of the age variable
+[6:17.52] so i'm going to delete what we have
+[6:19.68] inside parenthesis
+[6:21.84] and type age note that i'm not adding
+[6:25.04] quotes because if i run this program
+[6:27.28] we'll see the text h on the terminal we
+[6:29.76] don't want that we want the value of the
+[6:31.84] age variable so let's remove the quote
+[6:35.76] and
+[6:36.64] print the value of the age variable
+[6:38.72] now here on the toolbar you can click on
+[6:41.04] this play icon to run your program or
+[6:43.44] you can use the shortcut that i showed
+[6:44.96] you in the last video so the shortcut is
+[6:47.76] over here on a mac that's ctrl shift and
+[6:51.28] r
+[6:52.16] so
+[6:53.84] there you go
+[6:54.96] now you can see the value of the age
+[6:56.80] variable
+[6:58.16] now we can also change the value of a
+[6:59.92] variable for example on line 2
+[7:02.80] we can set 8 to 30.
+[7:05.36] now when we run our program
+[7:07.20] we see 30. so as you can see our program
+[7:10.08] gets executed from top to bottom
+[7:12.88] so this is how we can declare and use a
+[7:14.96] variable now let's look at a few more
+[7:16.88] examples
+[7:17.92] so i'm going to declare
+[7:19.52] another variable called price
+[7:21.60] and set it to 19.95
+[7:24.96] so in python we can use numbers with a
+[7:26.80] decimal point or
+[7:28.64] whole numbers we can also declare a
+[7:31.20] variable and assign it a string value so
+[7:35.12] let's say first underline name so if you
+[7:38.56] want to use multiple words in the name
+[7:40.48] of a variable we should separate them
+[7:42.64] using an underscore this makes our code
+[7:45.20] more readable see what would happen if i
+[7:47.76] didn't use this underline
+[7:49.84] this is not easily readable so we always
+[7:53.12] separate multiple words by an underscore
+[7:56.08] now we set this to a string so we can
+[7:58.40] use single quotes or
+[8:00.16] double quotes let's say march
+[8:02.72] we also have a special type of value
+[8:04.56] called a boolean value which can be true
+[8:07.12] or false that is like yes or no in
+[8:09.60] english let me show you so i'm going to
+[8:12.56] declare another variable called is
+[8:15.52] online and set it to true
+[8:18.48] we could also set it to false what we
+[8:21.04] have here is called a boolean value
+[8:23.84] now note that python is a case sensitive
+[8:26.00] language so it's sensitive to lowercase
+[8:28.32] and uppercase letters in this case if i
+[8:31.28] use a lowercase f
+[8:34.00] we can see an error over here because
+[8:35.76] this is not recognized in python
+[8:38.08] so false with a capital f is a special
+[8:40.96] keyword in python that represents the
+[8:43.36] boolean false value
+[8:45.20] so this is how we can declare and use
+[8:47.04] variables in python
+[8:48.80] all right now here's a little exercise
+[8:50.32] for you
+[8:51.12] imagine we want to write a program for a
+[8:52.88] hospital so we're going to check in a
+[8:54.64] patient named john smith he's 20 years
+[8:57.52] old and is a new patient i want you to
+[8:59.84] declare a few variables to store these
+[9:02.08] values use the comment box below to
+[9:04.40] share your code with others
+[9:12.48] in this tutorial i'm going to show you
+[9:13.84] how to receive input from the user so in
+[9:16.40] python we have another built-in function
+[9:18.72] called input we use this to read a value
+[9:21.60] from the terminal window let me show you
+[9:23.76] so we add parenthesis
+[9:26.08] then we type in a string here we can
+[9:27.92] type a message like what is your name we
+[9:31.68] had a question mark followed by a space
+[9:34.16] you will see why we need this space in a
+[9:35.76] second so let's run this program
+[9:39.20] we get this message now we have to enter
+[9:41.36] a value so we click over here
+[9:44.16] now you can see that the carrot is
+[9:45.60] separated from the question mark this is
+[9:47.68] because of the white space that we added
+[9:49.76] over here
+[9:50.88] so now we have to type a value let's say
+[9:53.20] john when we press enter
+[9:56.56] this function will return the value that
+[9:58.80] we entered in the terminal window so we
+[10:01.12] can get that value and store it in a
+[10:02.88] variable so let's declare a variable
+[10:05.52] called name and set it to the return
+[10:08.40] value of the input function
+[10:10.64] now we can print a greeting message for
+[10:12.48] this user so we use the print function
+[10:16.56] we say hello
+[10:18.48] we had a space
+[10:19.92] now after the string we want to add the
+[10:22.40] value of the name variable so we use a
+[10:25.12] plus sign
+[10:26.24] and then type name
+[10:27.76] what we are doing here is called string
+[10:30.08] concatenation so we're combining this
+[10:32.40] string with another string
+[10:35.28] now let's run our program and see what
+[10:36.72] happens so what is your name
+[10:39.04] mosh
+[10:40.08] now
+[10:41.04] we get this message hello mosh
+[10:43.04] so this is how we can use the input
+[10:44.72] function in python
+[10:52.08] you'll learn about the three types of
+[10:53.60] data in python we have numbers
+[10:56.40] strings and booleans now there are times
+[10:59.52] you want to convert the value of a
+[11:01.20] variable from one type to another let me
+[11:03.52] show you so we're going to use our input
+[11:05.92] function
+[11:06.88] to read the user's birth year so enter
+[11:10.96] your birth here
+[11:13.60] now this input function is going to
+[11:15.04] return a value so we can store it in a
+[11:17.52] variable called
+[11:19.04] birth underline year
+[11:21.76] okay
+[11:22.80] now let's write code to calculate the
+[11:24.48] age of this user so we write an
+[11:26.80] expression like this currently we are in
+[11:28.72] the year 2020 so 2020 minus
+[11:32.80] birth year
+[11:34.00] this expression or piece of code is
+[11:35.68] going to produce a value so once again
+[11:37.84] we can store that value in a variable
+[11:40.00] let's call that variable age
+[11:43.12] now let's print age
+[11:44.88] on the terminal
+[11:46.56] let's run our program and see what
+[11:47.76] happens
+[11:49.44] so
+[11:50.16] my birth year is 1982.
+[11:52.72] enter oops our program crashed so
+[11:55.60] whenever you see this red message that
+[11:57.52] indicates an error so this error
+[11:59.60] occurred in this file
+[12:01.84] that is our app.pi on line two
+[12:05.36] right below that you can see the piece
+[12:07.20] of code that generated this error
+[12:09.76] so that is this expression 2020 minus
+[12:12.32] birth year now below that you can see
+[12:14.80] the type of error so here we have
+[12:17.04] unsupported types for subtraction
+[12:21.44] we have int
+[12:22.80] and stir what are these well this end is
+[12:26.16] short for integer and that represents a
+[12:28.56] whole number in programming so
+[12:31.84] 2020 is an example of an integer
+[12:34.64] now birth year is an example of a string
+[12:37.60] because whenever we call the input
+[12:39.76] function this function would return a
+[12:41.92] value as a string even if we enter a
+[12:44.32] number in other words when i entered
+[12:46.88] 1982 this input function returned a
+[12:50.00] string with these characters 1982 so
+[12:53.28] this string is different from the number
+[12:56.16] 1982 they're completely different types
+[12:59.20] so in this case
+[13:00.56] let me delete these lines
+[13:02.64] the reason we got this error is that we
+[13:04.64] try to subtract a string from an integer
+[13:07.92] so our code looks like this
+[13:10.48] 1982
+[13:12.08] now python doesn't know how to subtract
+[13:14.24] a string from an integer
+[13:16.24] so to solve this problem we need to
+[13:18.40] convert this string to an integer
+[13:20.96] now in python we have a bunch of
+[13:22.56] built-in functions for converting the
+[13:24.24] types of our variables so
+[13:26.56] we have this end function
+[13:29.04] we can pass our burst here to it
+[13:31.68] and this will return the new numeric
+[13:33.28] representation of the birth year
+[13:35.60] so to solve this problem
+[13:38.40] we need to replace
+[13:39.92] the string
+[13:42.08] with the end function
+[13:43.68] so let's see what's going on here on the
+[13:45.68] first line we call the input function
+[13:47.92] this returns a string
+[13:49.68] on the second line we pass the string to
+[13:52.32] our end function the in function will
+[13:54.56] return the numeric representation of the
+[13:56.88] burst year
+[13:58.00] then
+[13:59.04] we subtract it from 2020 we get the age
+[14:02.00] and store it in the age variable now
+[14:04.08] let's run our program
+[14:06.48] so
+[14:07.28] 1982
+[14:08.80] and there you go i'm 38 years old
+[14:11.44] so this is how the in function works now
+[14:14.32] we also have another built-in function
+[14:16.64] called float that is for converting a
+[14:19.12] value to a floating point number a
+[14:21.52] floating point number in python and
+[14:23.68] other programming languages is a number
+[14:25.84] with a decimal point so
+[14:28.08] 10 is an integer and 10.1 is a float
+[14:31.92] so we have int we have float and we also
+[14:35.44] have bool for converting a value to a
+[14:38.24] boolean
+[14:39.28] and finally we have stir for converting
+[14:42.00] a value to a string so these are the
+[14:44.80] built-in functions for converting the
+[14:46.80] type of our variables
+[14:48.80] now here's a little exercise for you i
+[14:50.64] want you to write a basic calculator
+[14:52.72] program so here we have to enter two
+[14:54.80] numbers we can type a whole number or a
+[14:57.20] number with a decimal point
+[15:00.08] and then our program will print the sum
+[15:02.08] of these two numbers
+[15:03.60] so pause the video spend two minutes on
+[15:05.52] this exercise and then see my solution
+[15:10.96] all right first we're going to call our
+[15:12.40] input function to read the first number
+[15:14.96] we get the result and store it in a
+[15:16.72] variable called first
+[15:18.96] now let's declare
+[15:21.04] another variable called second and read
+[15:24.24] the second number
+[15:26.40] now
+[15:27.52] we calculate the sum
+[15:29.12] so that is first plus second
+[15:32.24] now let's see what happens when we print
+[15:34.24] sum on the terminal
+[15:36.72] so i enter 10 and 20
+[15:39.44] but instead of 30 we get 10 20. this is
+[15:42.24] because we're combining or concatenating
+[15:44.88] two strings so
+[15:47.44] as i told you before the input function
+[15:49.52] returns a string so
+[15:52.24] this line will be equivalent to first
+[15:55.04] equals 10. we're dealing with a string
+[15:57.92] not an integer
+[15:59.52] similarly
+[16:00.88] second is going to be
+[16:02.48] 20 as a string so when we combine two
+[16:05.44] strings 10 plus 20 will get
+[16:09.28] 10 20 because we're dealing with textual
+[16:11.92] data okay so to solve this problem
+[16:16.00] we need to convert the values we read to
+[16:18.00] their numeric representation so over
+[16:20.88] here
+[16:22.88] we're going to pass
+[16:24.16] first to our int function
+[16:26.88] and here as well
+[16:28.48] now let's run our program
+[16:30.32] so we enter 10 and 20 we get 30. what if
+[16:34.40] we enter a floating point number so 10.1
+[16:38.00] and 20.
+[16:40.32] we got an error
+[16:41.84] so to solve this problem
+[16:44.48] we need to treat both these values as
+[16:46.80] floats so instead of the in function
+[16:49.28] we're going to use the float function
+[16:52.72] now let's run our program one more time
+[16:55.36] we enter a whole number and a floating
+[16:58.08] point number so the result is correct
+[17:00.96] now let's add a label over here so sum
+[17:05.52] is
+[17:06.88] plus sum
+[17:08.32] let's run our program
+[17:09.92] one more time 10 and 20.
+[17:12.24] once again we got an error the error is
+[17:14.48] saying that python can only concatenate
+[17:17.36] strings not floats to strings
+[17:21.04] so on line four we have a string we're
+[17:23.92] concatenating this with a float because
+[17:26.48] the result of this expression is a
+[17:28.56] floating point number we're adding two
+[17:30.56] floats so the result is a float as well
+[17:33.44] so python doesn't know how to evaluate
+[17:36.32] code like this
+[17:38.48] it doesn't know how to concatenate a
+[17:40.96] float
+[17:42.40] to a string to solve this problem
+[17:45.20] we need to convert sum to your string so
+[17:47.52] this is where
+[17:48.64] we use the stir function
+[17:51.04] now let's run the program again so
+[17:54.16] 10 plus 20.1 and here's the result
+[17:58.08] and one last thing
+[17:59.52] in this example i'm calling the float
+[18:01.76] function at the time we want to
+[18:03.28] calculate the sum of these two numbers
+[18:05.36] but this is not a requirement we can
+[18:07.28] call the float function
+[18:09.12] over here so this input function returns
+[18:12.32] a string we can pass that string to our
+[18:14.96] float function take a look so float
+[18:17.68] parenthesis like this
+[18:20.00] so the value that we're passing to the
+[18:22.24] float function is the value that is
+[18:24.24] returned from the input function
+[18:26.96] similarly
+[18:29.20] we call the float function over here
+[18:32.08] now
+[18:33.44] we can change this expression to first
+[18:35.76] plus second that is another way to write
+[18:38.64] this piece of code
+[18:40.16] so type conversion is important in
+[18:41.76] python and other programming languages
+[18:44.08] there are times you need to convert the
+[18:45.60] type of variable to a different type
+[18:53.84] in this tutorial i'm going to show you a
+[18:55.20] bunch of cool things you can do with
+[18:56.72] strings in python so let's start by
+[18:59.44] declaring a variable called course
+[19:01.76] and set it to python for
+[19:04.40] beginners
+[19:06.00] now this string that we have over here
+[19:07.76] is technically an object an object in
+[19:10.48] python is like an object in the real
+[19:12.24] world as a metaphor think of the remote
+[19:14.48] control of your tv this remote control
+[19:16.80] is an object and it has a bunch of
+[19:18.48] capabilities it has a bunch of buttons
+[19:20.56] for turning your tv on turning it off
+[19:23.12] changing the volume and so on now in
+[19:25.12] this program this course variable is
+[19:27.04] storing a string object this string
+[19:29.52] object has a bunch of capabilities so if
+[19:31.84] we type
+[19:32.88] course dot you can see all the
+[19:35.36] capabilities available in a string
+[19:37.36] object these are basically functions
+[19:39.28] that you can call just like the print or
+[19:41.44] input functions the difference is that
+[19:43.44] the print and input functions are
+[19:45.60] general purpose functions they don't
+[19:47.44] belong to a particular object but the
+[19:49.60] functions you see over here are specific
+[19:51.60] to strings now more accurately we refer
+[19:54.48] to these as methods so when a function
+[19:56.96] is part of an object we refer to that
+[19:59.04] function as a method
+[20:00.88] so let's look at a few examples here we
+[20:03.36] have a function or a method called upper
+[20:06.00] and we use that to convert a string to
+[20:07.84] uppercase so if we print
+[20:10.64] course.upper
+[20:12.40] and run this program they can see our
+[20:14.40] course in uppercase
+[20:16.32] pretty useful
+[20:17.52] now what you need to understand here is
+[20:19.36] that this upper method does not change
+[20:21.60] our original string it will return a new
+[20:24.24] string so right after this if we print
+[20:27.52] course
+[20:29.60] you can see that our course variable is
+[20:31.52] not affected so the upper method returns
+[20:34.40] a new string
+[20:36.00] now similarly we have another method
+[20:38.16] called lower for converting a string to
+[20:40.72] lowercase we have a method called find
+[20:43.68] to see if our string contains a
+[20:45.28] character or a sequence of characters
+[20:47.60] for example here we can pass
+[20:50.16] y
+[20:50.96] and this will return the index of the
+[20:53.36] first occurrence of y in our string so
+[20:57.28] in python the index of the first
+[20:59.52] character in a string is 0. so here we
+[21:01.52] have 0 1 2 3 4 and so on so when we run
+[21:04.40] this program you're going to see one on
+[21:06.48] the terminal because the index of y is
+[21:09.52] 1. take a look first i'm going to delete
+[21:11.68] this line we don't need it anymore also
+[21:14.48] let's do this line let's run the program
+[21:17.52] there you go
+[21:20.08] now as i told you before python is
+[21:21.84] sensitive to lowercase and uppercase
+[21:24.00] letters so if i pass an uppercase y here
+[21:28.72] this find method returns negative 1
+[21:31.04] because we don't have an uppercase y in
+[21:32.88] this string we can also pass a sequence
+[21:35.44] of characters for example 4. so this
+[21:38.16] will return the index of the word 4.
+[21:41.20] take a look
+[21:43.12] so it's 7.
+[21:44.88] now there are times we want to replace
+[21:46.24] something in a string with something
+[21:47.76] else
+[21:48.48] to do that we use the replace method
+[21:51.36] replace
+[21:52.80] so we can replace 4
+[21:54.72] with
+[21:55.68] a string containing the number 4. take a
+[21:58.08] look
+[21:59.68] so python for beginners
+[22:02.16] obviously
+[22:03.44] if you look for a character or a
+[22:04.80] sequence of characters that don't exist
+[22:06.72] in our string nothing is going to happen
+[22:08.80] for example if we try to replace x with
+[22:11.36] 4 obviously we don't have x here so
+[22:14.72] nothing is going to happen
+[22:16.56] also just like the upper method the
+[22:18.96] replace method is not going to modify
+[22:21.20] our original string so it's going to
+[22:22.96] return a new string this is because
+[22:25.12] strings in python and many other
+[22:27.36] programming languages are immutable we
+[22:29.76] cannot change them once we create them
+[22:31.92] whenever we want to change your string
+[22:33.52] we'll end up with a new string object in
+[22:35.44] memory
+[22:36.40] now one last thing i want to cover in
+[22:37.68] this tutorial there are times you want
+[22:39.44] to see if your string contains a
+[22:41.44] character or a sequence of characters
+[22:43.76] one way to do that is using the find
+[22:45.84] method that we talked about so let's see
+[22:48.80] if our string
+[22:50.08] contains python
+[22:52.32] now when we run this program
+[22:54.56] that is the index of the first
+[22:56.40] occurrence of the word python in our
+[22:58.56] string now in python we can also use the
+[23:01.28] in operator so we can write an
+[23:03.36] expression like this
+[23:05.52] we type a string
+[23:07.12] python then we type in this is a special
+[23:10.88] keyword in python this is what we call
+[23:13.28] the in operator
+[23:15.04] so after that we type the name of our
+[23:17.52] variable
+[23:18.64] so with this expression we're checking
+[23:20.80] to see if we have python in course as
+[23:23.76] you can see python code is very readable
+[23:25.92] it's like plain english so when we run
+[23:28.24] this program
+[23:29.68] instead of seeing the index of the first
+[23:31.76] occurrence of python we see a boolean
+[23:34.08] value this is more desirable in a lot of
+[23:36.24] cases
+[23:37.28] next we're going to look at arithmetic
+[23:38.88] operations
+[23:45.92] in this tutorial i'm going to show you
+[23:47.20] the arithmetic operators that we have in
+[23:49.20] python these are the same arithmetic
+[23:51.44] operators that we have in math for
+[23:53.20] example we can add numbers we can
+[23:55.04] subtract them multiply them and so on so
+[23:57.68] let's print
+[23:58.80] 10 plus 3. let me run this program we
+[24:02.16] have 13.
+[24:03.36] so this is the addition operator we also
+[24:06.16] have subtraction
+[24:07.60] we have multiplication
+[24:09.52] and division now technically we have two
+[24:12.32] different types of division operators we
+[24:14.48] have a division with one slash and
+[24:16.64] another with two slashes let's look at
+[24:18.96] the differences if you use a single
+[24:20.80] slash
+[24:22.40] we get a floating point number that is a
+[24:24.64] number with a decimal point but if we
+[24:26.80] use double slashes
+[24:28.48] we get
+[24:29.60] an integer a whole number we also have
+[24:33.28] the modulus operator that is indicated
+[24:35.44] by a percent sign and this returns the
+[24:38.08] remainder of the division of ten by
+[24:40.16] three so
+[24:41.76] that is one and finally we have the
+[24:44.16] exponent operator that is indicated by
+[24:46.64] two asterisks so this is 10 to the power
+[24:49.92] of three so when we run this we get a
+[24:52.56] thousand
+[24:54.00] now for all these operators that you saw
+[24:56.48] we have an augmented assignment operator
+[24:59.04] let me explain what it means so let's
+[25:01.36] say we have a variable called x
+[25:03.68] and we set it to 10.
+[25:05.52] now we want to increment the value of x
+[25:07.52] by 3. so we have to write code like this
+[25:10.08] x
+[25:10.96] equals x plus 3. when python executes
+[25:14.08] this code it's going to evaluate this
+[25:16.08] expression or this piece of code the
+[25:18.24] result of this expression is 10 plus 3
+[25:20.32] which is 13. then it will store 13 in
+[25:23.68] the x
+[25:24.80] now there is another way to achieve the
+[25:26.56] same result using less code we can type
+[25:29.44] x plus equal three
+[25:32.40] what we have on line three is exactly
+[25:34.32] identical to what we have on line two so
+[25:36.96] what we have here is called the
+[25:38.64] augmented assignment operator so we have
+[25:41.68] this assignment operator but we have
+[25:43.68] augmented or enhanced it
+[25:46.24] now here we can also use
+[25:48.24] subtraction to decrease the value of x
+[25:50.72] by 3 we can use multiplication and so on
+[25:54.24] so these are the arithmetic operators in
+[25:56.32] python
+[26:03.20] all right let me ask you a question i'm
+[26:04.96] going to declare a variable called x and
+[26:07.04] set it to 10 plus 3 times 2. what do you
+[26:10.48] think is the result of this expression
+[26:12.48] this is a basic math question that
+[26:14.24] unfortunately a lot of people fail to
+[26:16.32] answer
+[26:17.20] the answer is 16. here's the reason in
+[26:20.48] math we have this concept called
+[26:22.16] operator precedence and that determines
+[26:24.72] the order in which these operators are
+[26:26.88] applied so multiplication and division
+[26:30.08] have a higher order so this part of the
+[26:32.16] expression gets evaluated first so 2
+[26:34.64] times 3 is 6
+[26:36.24] and then the result is added to 10. that
+[26:39.12] is why the result of this expression is
+[26:40.96] 16. now in python operator precedence is
+[26:44.24] exactly like math but we can always
+[26:46.16] change it using parenthesis for example
+[26:48.72] in this expression if you want 10 plus 3
+[26:51.12] to be evaluated first we can wrap it in
+[26:53.68] parenthesis
+[26:55.04] so
+[26:56.80] like this now when we execute this code
+[26:59.20] we're going to see 26 because 10 plus 3
+[27:02.16] is 13 and that divided by 2 is 26. let's
+[27:05.36] verify this so print x
+[27:08.16] and we get 26.
+[27:15.60] so you learn about the arithmetic
+[27:17.04] operators in python now in python we
+[27:19.44] have another set of operators called
+[27:21.76] comparison operators we use these
+[27:24.00] operators to compare values let me show
+[27:26.24] you so i'm going to declare a variable
+[27:28.08] called x
+[27:29.28] and set it to an expression like this 3
+[27:32.32] is greater than 2. so what we have here
+[27:35.20] this piece of code this expression is
+[27:37.60] called a boolean expression because it
+[27:39.68] produces a boolean value so in this case
+[27:42.56] because 3 is greater than 2 the result
+[27:44.96] of this expression is the boolean true
+[27:47.36] so if we print x
+[27:51.04] we get true on the terminal
+[27:53.12] so here is the greater than operator we
+[27:55.36] also have greater than or equal to we
+[27:58.64] have less than we have less than or
+[28:01.28] equal to
+[28:02.40] here is the equality operator which is
+[28:04.32] indicated by two equal signs do not
+[28:06.96] confuse this with the assignment
+[28:08.96] operator so here we're comparing three
+[28:11.20] and two for equality so if we run our
+[28:13.44] program
+[28:15.12] we see false because 3
+[28:17.28] does not equal to 2.
+[28:19.12] so here's the equality operator we also
+[28:21.20] have
+[28:22.32] the not equality operator that is
+[28:24.48] indicated by an exclamation mark
+[28:26.72] followed by an equal sign
+[28:28.88] so let's quickly recap
+[28:30.88] here are the comparison operators we
+[28:32.56] have in python greater than greater than
+[28:35.60] or equal to less than less than or equal
+[28:38.24] to
+[28:39.12] equal and not equal
+[28:41.52] these operators are extremely important
+[28:43.28] in real python programs because quite
+[28:45.52] often we have to compare values to
+[28:47.36] evaluate certain conditions you're going
+[28:49.20] to see that soon
+[28:56.24] in python we have another set of
+[28:58.00] operators called logical operators we
+[29:00.96] use these operators to build complex
+[29:02.88] rules and conditions let me show you so
+[29:05.20] i'm going to declare a variable called
+[29:06.64] price and set it to 25.
+[29:09.28] now let's print
+[29:10.72] a boolean expression like this
+[29:12.64] price is greater than 10.
+[29:15.68] now let's say we want to check to see if
+[29:17.04] the price is between 10 and 30. this is
+[29:20.48] where we use the logical and operator so
+[29:23.68] we type and and right after that we type
+[29:26.56] another boolean expression surprise less
+[29:29.60] than 30. so with this and operator if
+[29:33.20] both these boolean expressions return
+[29:35.20] true the result of this entire
+[29:37.12] expression will be true take a look so
+[29:41.12] in this case we get true
+[29:43.04] because the price is between 10 and 30
+[29:45.60] dollars
+[29:46.64] we also have
+[29:48.00] the or operator
+[29:49.68] with the or operator if at least one of
+[29:52.16] these boolean expressions returns true
+[29:54.56] then the result of this entire
+[29:56.16] expression will be true
+[29:57.68] to demonstrate this i'm going to change
+[29:59.84] price to 5. let's see how python is
+[30:02.72] going to execute this code so first it's
+[30:04.64] going to look at this boolean expression
+[30:06.72] is price greater than 10 no it's not so
+[30:10.00] it will keep going
+[30:11.60] then it will look at the second boolean
+[30:13.44] expression is price less than 30 it sure
+[30:16.64] is so the result of this entire
+[30:18.32] expression will be true take a look
+[30:22.08] there you go
+[30:23.20] we also have the not operator which
+[30:25.44] basically inverses any values that you
+[30:27.44] give it let me show you so
+[30:30.72] we're going to have one boolean
+[30:32.16] expression price greater than 10. the
+[30:34.96] result of this expression is false
+[30:37.20] now if you apply the not operator
+[30:40.00] this will inverse false to true so when
+[30:43.28] we run the program we get true
+[30:46.08] so let's quickly recap in python we have
+[30:48.56] three logical operators we have logical
+[30:51.04] and which returns true if both
+[30:53.12] expressions return true
+[30:55.04] we have logical or which returns true if
+[30:57.92] at least one expression returns true and
+[31:00.80] we have not which inverses any value
+[31:03.28] that we give it
+[31:10.08] in this tutorial we're going to talk
+[31:11.36] about if statements in python we use if
+[31:14.16] statements to make decisions in our
+[31:15.84] programs for example we can declare a
+[31:18.08] variable called temperature and
+[31:19.92] depending on the value of this variable
+[31:21.68] we can print different messages on the
+[31:23.52] terminal let me show you
+[31:25.20] so here's our temperature variable
+[31:27.60] we set it to 35.
+[31:29.76] now let's say if temperature is greater
+[31:32.00] than 30 we want to print a message
+[31:34.16] saying it's a hot day so we type if
+[31:37.52] then we type a condition and this is
+[31:39.76] where we use our comparison operators so
+[31:42.24] we type temperature
+[31:44.08] greater than 30.
+[31:46.48] then so we add a colon and see what
+[31:48.96] happens when i press enter now
+[31:51.52] the character is indented and this
+[31:53.36] represents a block of code so the code
+[31:56.08] that we write over here will be executed
+[31:58.40] if this condition is true otherwise it's
+[32:00.72] not going to be executed let me show you
+[32:03.04] so
+[32:04.08] we're going to print
+[32:06.64] it's a hot day
+[32:08.56] and by the way note that here i've
+[32:09.92] surrounded the string with double quotes
+[32:12.56] because here we have a single quote as
+[32:15.20] an apostrophe so i couldn't declare a
+[32:17.44] string like this with single quotes if i
+[32:20.24] typed it's a hot day
+[32:22.80] look python gets confused because it
+[32:25.36] thinks this single code represents the
+[32:27.76] end of our string so it doesn't
+[32:29.20] recognize the subsequent characters okay
+[32:32.32] so that's why we use
+[32:34.48] double quotes here
+[32:36.48] so we can have an apostrophe in our
+[32:38.16] string
+[32:39.04] so it's a hot day
+[32:41.36] now if i press enter again
+[32:43.52] the carrot is indented so the code that
+[32:46.16] right here will be part of our if block
+[32:48.64] and it will get executed if this
+[32:50.32] condition is true so here we can print
+[32:53.36] a second message drink plenty of water
+[32:57.60] now to terminate this block we press
+[32:59.68] enter and then press shift and tab
+[33:02.88] the carrot is no longer indented so the
+[33:05.44] code that we write here will always get
+[33:07.60] executed no matter what whether this
+[33:09.76] condition is true or not
+[33:11.76] now in c based programming languages
+[33:13.76] like c plus c sharp java and javascript
+[33:17.36] we present a block of code using curly
+[33:19.44] braces so
+[33:21.76] you start a block of code using a left
+[33:23.68] brace
+[33:24.56] and then end it using a right brace in
+[33:27.28] python we don't have curly braces so we
+[33:29.52] use indentation to represent a block of
+[33:31.84] code okay
+[33:33.68] so
+[33:34.48] in this case
+[33:35.68] these two lines are indented and that
+[33:37.44] means they are part of this block of
+[33:40.08] code
+[33:40.96] now let's run the program and see what
+[33:42.72] happens
+[33:44.32] so we see these two messages because the
+[33:46.16] temperature is greater than 30.
+[33:48.64] now
+[33:49.60] if i change the temperature to 25
+[33:52.56] and run the program again we don't see
+[33:54.80] anything okay
+[33:57.04] now
+[33:57.84] after this block let's print
+[34:00.48] done
+[34:01.36] because this code is not indented it
+[34:03.36] will always get executed it's not part
+[34:05.68] of our if block okay so take a look
+[34:09.28] here's the down message
+[34:11.04] now
+[34:11.76] let's add a second condition so if
+[34:14.32] temperature is not greater than 30 that
+[34:17.12] means it's less than or equal to 30. so
+[34:20.96] i'm gonna add a second condition so if
+[34:23.52] the temperature is between 20 and 30 i
+[34:25.92] want to print it's a nice day
+[34:28.48] so here we type l if
+[34:30.96] that is short for else if
+[34:32.96] and here we type a second condition
+[34:35.52] so temperature greater than 20.
+[34:39.44] we add a colon press enter now we have a
+[34:42.24] new block
+[34:43.52] so here we can print
+[34:45.68] it's a nice day
+[34:48.16] so if this condition is true that means
+[34:50.48] the temperature
+[34:52.24] is greater than 20 and less than or
+[34:54.80] equal to 30. now what we have here is
+[34:57.20] called a comment that is why it's grayed
+[34:59.84] out it's not real code it's just some
+[35:01.84] note that we add to our program python
+[35:03.92] is not going to execute this so whenever
+[35:06.08] we type a pound sign what we have after
+[35:08.80] is treated as a comment okay
+[35:11.36] so
+[35:12.08] if this condition is true then we're
+[35:14.00] going to see this message on the
+[35:15.36] terminal let's run our program and
+[35:17.28] verify this
+[35:19.44] there you go the temperature is 25
+[35:21.68] that's why we see this message
+[35:23.68] now we can have as many conditions as we
+[35:25.60] want there are no limitations okay
+[35:28.64] so let's add another condition
+[35:30.88] l if
+[35:31.92] temperature is greater than 10
+[35:34.56] then
+[35:35.68] we're going to print
+[35:37.28] it's a bit cold
+[35:39.36] now in this case if this condition is
+[35:41.36] true that means the temperature is
+[35:44.00] greater than 10
+[35:45.68] and less than or equal to 20.
+[35:48.00] now finally if the temperature is less
+[35:49.76] than 10 let's print a message saying
+[35:51.76] it's a cold day
+[35:53.20] so
+[35:54.32] here we type else then we add a colon
+[35:57.36] and now we have a new block
+[35:59.12] so this code will get executed if none
+[36:02.24] of the above conditions are true
+[36:04.40] so here we can print
+[36:07.92] it's called
+[36:10.16] so this is how we use if statements to
+[36:12.00] make decisions in our programs
+[36:20.00] here's a great exercise for you to
+[36:21.68] practice what you have learned so far i
+[36:23.76] want you to write a weight converter
+[36:25.60] program like this
+[36:27.04] so this program is asking me my weight i
+[36:29.52] enter 170.
+[36:31.84] next it's asking me if the weight is in
+[36:34.00] kilograms or pounds so i can type k for
+[36:37.04] kilograms or l for pounds i can type a
+[36:40.24] lowercase l or an uppercase l it doesn't
+[36:42.88] matter so let's go with a lowercase l
+[36:46.64] now it tells me weight in kilogram is
+[36:49.28] 76.5
+[36:51.20] so go ahead and spend 5 minutes on this
+[36:52.96] exercise you can use the comment box
+[36:54.88] below to share your code with others and
+[36:57.04] then when you're done come back see my
+[36:58.48] solution
+[37:02.88] so first we call our input function to
+[37:05.28] ask the first question
+[37:06.96] wait we get the result and store it in a
+[37:09.68] variable called weight
+[37:12.16] next we call the input function one more
+[37:14.00] time to ask the second question
+[37:16.32] is this in kilogram
+[37:18.24] or
+[37:20.84] pounds we get the result and store it in
+[37:23.92] a variable called unit
+[37:25.84] this is where we're going to use an if
+[37:27.28] statement
+[37:28.48] so
+[37:29.28] we want to check to see if unit
+[37:31.28] equals
+[37:32.56] k
+[37:34.24] then we should convert the weight to
+[37:36.24] pounds and print it on a terminal
+[37:38.00] however
+[37:39.04] with this code if i type a lowercase k
+[37:41.76] this condition is not going to be true
+[37:43.76] because earlier i told you that python
+[37:45.60] is a case sensitive language
+[37:47.68] so
+[37:48.48] we need to convert this string to
+[37:50.16] uppercase earlier we talked about string
+[37:52.72] methods so if we type dot we can see all
+[37:55.44] the functions or methods available in a
+[37:57.84] string object so we use the upper method
+[38:01.12] and this returns a new string in case
+[38:04.16] now if this condition is true first we
+[38:06.64] need to convert the weight to pounds so
+[38:08.88] we declare a new variable called
+[38:10.56] converted
+[38:12.08] get the weight and divide it by 0.45
+[38:17.44] and then we can print this on a terminal
+[38:19.68] so
+[38:21.20] we say weight
+[38:22.64] in pounds is
+[38:24.72] then we append converted
+[38:27.76] now to terminate this block we press
+[38:29.84] shift and tab
+[38:31.52] else colon
+[38:33.28] so if this condition is not true that
+[38:35.52] means the weight was entered in pounds
+[38:37.60] so we need to convert it to kilograms
+[38:39.68] once again we declare a variable
+[38:41.68] converted and set it to weight times
+[38:45.04] 0.45
+[38:47.76] and then we print
+[38:49.20] weight in kilograms
+[38:52.24] and here we concatenate
+[38:54.72] this string with converter all right now
+[38:57.36] we need to terminate this block so we
+[38:59.04] press enter then shift and tab good
+[39:02.64] now if we run this program we're going
+[39:04.08] to see an error let me show you so let's
+[39:06.48] run it
+[39:07.52] here i'm going to enter 170
+[39:10.48] then i type a lowercase l
+[39:13.04] okay here's an error
+[39:15.04] can't multiply sequence by non-end of
+[39:17.84] type float so this is where we got this
+[39:21.04] error when we try to multiply the weight
+[39:23.92] by 0.45
+[39:26.00] so
+[39:27.28] that is line seven in our code now the
+[39:29.60] reason this is happening is because the
+[39:31.68] wait variable is storing a string object
+[39:34.72] because earlier i told you the input
+[39:36.56] function always returns a string so here
+[39:39.28] we need to convert the weight
+[39:41.60] to a number we can either use the end or
+[39:44.80] the float function
+[39:46.24] let's run the program one more time
+[39:48.56] so
+[39:49.60] 170
+[39:52.00] in pounds
+[39:53.52] here's the second error can only
+[39:55.44] concatenate string not float to string
+[39:59.04] and that error occurred
+[40:01.20] over here
+[40:02.48] when we try to print the weight in
+[40:04.24] kilograms so
+[40:06.48] look at line seven
+[40:07.92] in this case weight as an integer we are
+[40:10.40] multiplying an integer by a float and
+[40:12.80] the result of this operation is going to
+[40:14.48] be a float
+[40:16.56] now on line eight we are trying to
+[40:18.16] concatenate or combine a string with a
+[40:21.12] float and python doesn't know how to
+[40:23.20] execute this code
+[40:24.48] to solve this problem we need to convert
+[40:26.48] this flow to a string so here we use the
+[40:29.76] built-in stir function
+[40:32.40] let's run the program and see what
+[40:33.76] happens
+[40:34.80] so
+[40:36.84] 170 in pounds and here's my weight in
+[40:40.00] kilograms now let's try entering a
+[40:42.16] weight in kilograms so run it one more
+[40:44.72] time
+[40:45.68] let's say 76
+[40:47.84] kilos
+[40:49.76] here we get a familiar error can only
+[40:52.00] concatenate string to string not float
+[40:55.04] so this error occurred on line five
+[40:57.84] where we try to concatenate a string
+[41:01.44] to a float so once again we need to
+[41:03.44] convert this to a string object now
+[41:06.88] let's run the program one more time
+[41:09.36] 76
+[41:10.80] kilos
+[41:11.84] is equal to 168 pounds
+[41:16.00] hey guys i just wanted to let you know
+[41:17.52] that i have an online coding school at
+[41:19.48] codewoodmosh.com where you can find
+[41:21.20] plenty of courses on web and mobile
+[41:22.96] development in fact i have a
+[41:24.40] comprehensive python course that teaches
+[41:26.56] you everything about python from the
+[41:28.16] basics to more advanced concepts so
+[41:30.32] after you watch this tutorial if you
+[41:32.00] want to learn more you may want to look
+[41:33.44] at my python course it comes with a 30
+[41:35.36] day money back guarantee and a
+[41:36.80] certificate of completion you can add to
+[41:38.48] your resume in case you're interested
+[41:40.40] the link is below this video
+[41:46.48] in this tutorial we're going to talk
+[41:47.68] about while loops in python we use while
+[41:50.32] loops to repeat a block of code multiple
+[41:52.64] times for example let's say we want to
+[41:54.40] print the numbers one to five a poor way
+[41:57.12] of doing this is writing code like this
+[41:59.52] print one then print two print 3
+[42:02.64] print 4 and print 5.
+[42:05.20] now why is this a bad approach well what
+[42:07.52] if we wanted to print the numbers 1 to 1
+[42:09.84] million we don't want to write 1 million
+[42:12.08] lines of code each line printing a
+[42:14.00] number this is where we use while loops
+[42:16.72] so
+[42:17.60] we'll start off by declaring a variable
+[42:19.28] like i and set it to our initial number
+[42:21.84] let's say one
+[42:23.04] then we type while and here we type a
+[42:25.60] condition so once again we can use our
+[42:27.52] comparison operators
+[42:29.36] let's say i less than 5 less than or
+[42:32.72] equal to 5.
+[42:34.00] as long as this condition is true then
+[42:36.32] the code that we write inside of the
+[42:38.08] while block will get executed so here we
+[42:40.64] type a colon then press enter now we
+[42:43.68] have a block of code
+[42:45.28] in this block we can print i
+[42:48.08] and then we need to increment i y one so
+[42:50.72] we set i to i plus one if you don't do
+[42:53.76] this i will always be one and this block
+[42:56.40] of code
+[42:57.52] will get executed indefinitely it will
+[43:00.08] never terminate basically our program
+[43:02.00] will continue running until it runs out
+[43:04.24] of memory
+[43:05.44] so
+[43:06.16] in the first iteration i is 1 is less
+[43:08.96] than 5 so python is going to execute
+[43:11.36] this block of code it will print 1 on
+[43:13.60] the terminal and then i becomes 2.
+[43:16.48] then the control moves back over here so
+[43:18.88] python evaluates this condition
+[43:21.04] 2 is less than or equal to 5 so the
+[43:23.76] condition is true and once again python
+[43:26.24] is going to execute this block one more
+[43:27.76] time in the second iteration we're going
+[43:30.08] to see two on the terminal and then i
+[43:32.24] will become three so this will continue
+[43:34.96] until this condition is no longer true
+[43:37.12] let me show you so
+[43:39.04] let's run this program
+[43:40.96] now we see the numbers one to five so
+[43:43.36] this is the beauty of while loops
+[43:45.60] i can easily change five
+[43:47.92] to one
+[43:49.36] thousand and by the way i'm separating
+[43:51.44] these three digits using an underscore
+[43:53.60] this makes my number more readable we
+[43:55.36] don't have to add this but it just makes
+[43:56.88] our code more readable
+[43:58.72] so let's run the program
+[44:00.88] now we see the numbers 1 to 1000. it's
+[44:03.76] much easier than 1000 lines of code each
+[44:06.56] printing a number okay now let me show
+[44:08.80] you something really cool
+[44:10.72] so i'm going to change this
+[44:12.88] to 10.
+[44:14.80] now instead of printing i i want to
+[44:17.20] print an expression so i'm going to
+[44:19.04] multiply i
+[44:20.80] by a string an asterisk
+[44:23.60] now you might be confused here because
+[44:25.52] earlier i told you that in python we
+[44:27.44] cannot concatenate a number to a string
+[44:30.48] but here i'm using the multiplication
+[44:32.48] operator well this is different we can
+[44:34.96] multiply a number by a string and this
+[44:37.36] will repeat that string based on the
+[44:39.60] value of that number so if i is one
+[44:42.72] we're gonna see one asterisk if i is
+[44:45.36] five we're going to see five asterisks
+[44:47.44] let me show you so when we run this
+[44:49.60] program
+[44:51.44] we see this triangle shape because in
+[44:53.60] the first iteration i is one so we see
+[44:56.72] one asterisk in every iteration i is
+[44:59.60] incremented by one so we see one extra
+[45:02.00] asterisk and finally in the last
+[45:04.08] iteration i is 10 and we see 10
+[45:07.20] asterisks on the terminal
+[45:15.04] so you have learned about three types of
+[45:16.64] data in python we have numbers which can
+[45:19.36] be integers or floats
+[45:21.52] we have booleans and strings
+[45:24.48] these are what we refer to as primitive
+[45:26.80] or basic types in python now in python
+[45:29.52] we have a bunch of complex types as well
+[45:31.84] these complex types are very useful in
+[45:34.00] building real applications
+[45:35.84] in this tutorial we're going to talk
+[45:37.12] about lists we use lists whenever we
+[45:40.00] want to represent a list of objects like
+[45:42.40] a list of numbers or a list of names let
+[45:44.56] me show you
+[45:45.60] so i'm going to declare a variable
+[45:47.76] called names
+[45:49.04] and set it to a list of names
+[45:51.12] so here we add square brackets to
+[45:53.04] represent a list and now we can add one
+[45:55.76] or more objects inside this list in this
+[45:58.32] list we add a bunch of names like john
+[46:01.84] bob
+[46:02.96] marsh
+[46:04.24] sam
+[46:05.20] and mary so we separate this element
+[46:07.76] these items using a comma okay
+[46:10.48] now
+[46:11.44] let's print our list so print names
+[46:15.04] take a look
+[46:16.24] it comes out exactly like how we wrote
+[46:18.72] it
+[46:19.60] now we can also get individual elements
+[46:21.60] in this list for example if we want to
+[46:23.68] get the first element in this list here
+[46:26.16] we type a pair of square brackets and
+[46:29.04] inside the square brackets we type an
+[46:31.04] index the index of the first element in
+[46:33.60] this list is zero so now when we run
+[46:36.24] this program we're going to see john on
+[46:38.00] the terminal
+[46:39.44] there you go
+[46:40.88] now
+[46:41.68] in python we can also use a negative
+[46:43.68] index this is a feature that i
+[46:45.52] personally have not seen in other
+[46:47.20] programming languages
+[46:48.88] so if 0 represents the first element in
+[46:52.08] this list what do you think
+[46:54.32] negative 1 represents it represents the
+[46:57.52] last element in this list let's verify
+[46:59.92] it so let's run the program and here's
+[47:02.72] mary
+[47:03.68] what about
+[47:06.00] negative 2 well that represents the
+[47:09.20] second element
+[47:10.80] from the end of the list
+[47:12.40] so let's run the program and here's some
+[47:15.76] then we can also change an object at a
+[47:17.84] given index for example let's say here
+[47:20.40] we made a mistake and this john should
+[47:22.64] not be spelled with an h
+[47:24.64] so we need to reset it we type names of
+[47:28.16] zero
+[47:29.12] now we treat this like a regular
+[47:30.56] variable so we set it to a new value
+[47:33.76] we set it to john without an h now let's
+[47:36.56] print our list
+[47:38.64] and here's our updated list beautiful
+[47:41.68] we can also select a range of values for
+[47:44.16] example let's say we're only interested
+[47:46.56] in the first three names
+[47:48.96] so over here we type square brackets
+[47:51.60] and here we need to type two indexes a
+[47:54.00] start index and an end index
+[47:56.56] our start index is a zero because we
+[47:58.56] want to start from here
+[48:00.32] and our end index is going to be zero
+[48:03.68] one two plus one that's going to be
+[48:06.64] three so we add a colon three so python
+[48:10.80] is going to return all the elements from
+[48:12.72] the start index up to the end index but
+[48:15.60] excluding the end index so it's going to
+[48:17.92] return the elements at index 0 1 and 2.
+[48:22.16] take a look
+[48:24.64] here are the first three names
+[48:27.04] and by the way
+[48:29.04] this expression does not modify our
+[48:31.36] original list it returns a new list so
+[48:35.12] right after this print statement if we
+[48:37.60] print our original list
+[48:40.56] you can see that it's not changed
+[48:42.64] so this is how we use lists in python
+[48:51.44] earlier i told you that strengths in
+[48:52.96] python are objects objects in
+[48:55.52] programming are kind of like objects in
+[48:57.20] the real world like your mobile phone
+[48:59.04] your bicycle the remote control of your
+[49:01.12] tv and so on they have certain
+[49:02.88] capabilities so if we type a string here
+[49:06.16] and then press dot we can see all the
+[49:08.56] functions or methods available in a
+[49:10.72] string object in python
+[49:12.64] now lists are also objects so they have
+[49:15.04] a bunch of methods for adding items or
+[49:17.20] removing them and so on let me show you
+[49:19.28] so i'm going to declare
+[49:20.88] a list of numbers
+[49:22.56] let's say 1 2 3 4 and 5.
+[49:25.76] now to add a new element at the end of
+[49:27.68] this list we can use the append method
+[49:30.24] so we type numbers
+[49:31.76] that append
+[49:33.04] and here we type 6.
+[49:35.52] now let's print our list
+[49:39.12] so here's our updated list beautiful
+[49:41.84] now what if you want to insert a number
+[49:43.76] somewhere in the middle or at the
+[49:45.28] beginning
+[49:46.40] for that we use the insert method
+[49:49.20] so we're going to call the insert method
+[49:52.64] now on the top
+[49:53.92] go to the view menu
+[49:55.60] and
+[49:56.40] look at parameter info look at the
+[49:58.64] shortcut on a mac computer it's command
+[50:01.68] and p
+[50:02.56] on windows it's probably control and p
+[50:05.20] if we use this shortcut we can see the
+[50:07.68] values that this method expects
+[50:10.24] so the first value that this method
+[50:12.08] expects is an index value and the type
+[50:14.96] of this value is an integer
+[50:16.80] so if i want to insert a value at the
+[50:18.48] beginning of this list i should pass 0
+[50:21.36] as the index of the first element right
+[50:23.92] so let's pass 0.
+[50:25.68] now
+[50:26.96] the second value is highlighted so the
+[50:29.04] second value is an object and the type
+[50:31.44] of this is t that basically means this
+[50:34.16] can be any type we can pass a number we
+[50:36.48] can pass a boolean we can pass a string
+[50:38.56] we can pass a list or any type of
+[50:40.72] objects in python
+[50:42.24] so i'm going to pass negative 1. now
+[50:45.12] let's run our program
+[50:47.36] you can see negative 1 appeared at the
+[50:49.36] beginning of our list
+[50:50.96] we also have a method for removing items
+[50:52.96] so let's call
+[50:55.20] remove
+[50:56.64] three
+[50:57.84] let's run the program
+[50:59.44] three is gone we only have one two four
+[51:01.68] and five
+[51:02.80] now if you wanna remove all the items in
+[51:04.40] the list we call the clear method so
+[51:07.12] clear
+[51:08.96] this method doesn't expect any values
+[51:11.52] so let's run our program our list is
+[51:13.60] empty
+[51:14.56] now sometimes you want to know if a
+[51:16.00] given item exists in our list or not to
+[51:18.72] do that we use the in operator so
+[51:21.68] let's remove this line
+[51:23.92] instead of printing our numbers list i'm
+[51:26.00] going to print an expression
+[51:28.16] one
+[51:29.20] in
+[51:30.00] numbers
+[51:31.12] so here we're using the in operator
+[51:33.04] we're checking to see if one is in the
+[51:35.52] numbers list so this is a boolean
+[51:37.52] expression it returns a boolean value
+[51:40.40] take a look
+[51:41.76] so we get true
+[51:43.36] obviously if we search for a value that
+[51:45.68] doesn't exist in this list
+[51:47.36] like 10
+[51:48.56] we get false okay
+[51:50.88] now finally there are times you want to
+[51:52.40] know how many items you have in the list
+[51:54.48] to do that you can use the built-in lend
+[51:57.04] function
+[51:58.00] so let's print
+[52:00.32] len of numbers so len
+[52:03.52] is a built-in function just like the
+[52:05.28] print function that is why it's
+[52:07.04] highlighted as purple it returns the
+[52:09.36] number of elements in a list take a look
+[52:12.96] so we have five elements in this list
+[52:20.80] when writing python programs there are
+[52:22.96] times you want to iterate over a list
+[52:25.04] and access each item individually let me
+[52:27.52] show you so i'm going to declare
+[52:29.68] a list of numbers
+[52:31.44] one two three four five
+[52:33.84] now if we print this list
+[52:36.64] it comes out exactly like how we wrote
+[52:38.48] it using the square bracket notation but
+[52:41.04] what if we wanted to print each item on
+[52:42.80] a separate line that is where we use the
+[52:45.36] for loop let me show you so we're not
+[52:48.16] going to print the entire list
+[52:50.00] instead we're going to type 4
+[52:52.08] now we declare a variable which is
+[52:53.84] called a loop variable
+[52:55.92] let's call it item
+[52:57.44] then we type in
+[52:59.44] numbers
+[53:00.56] next we add a colon to start a block of
+[53:03.28] code so this is what we call a for loop
+[53:06.32] with this for loop we can iterate over
+[53:08.88] all the items in this list
+[53:10.56] in each iteration this item variable is
+[53:13.44] going to hold one value so in the first
+[53:15.68] iteration item is going to be equal to 1
+[53:18.16] and the second iteration is going to be
+[53:19.60] equal to 2 and so on so
+[53:22.24] now if we print item
+[53:25.12] and run our program
+[53:26.56] we see each item on a new line
+[53:28.56] so this is how we use a for loop now we
+[53:31.12] could also achieve the same thing using
+[53:33.12] a while loop but our code would be a
+[53:34.96] little bit longer let me show you so
+[53:37.76] we would have to start by declaring a
+[53:39.68] loop variable outside of our while loop
+[53:42.08] let's say i we set it to zero
+[53:44.88] now we say while i is less than
+[53:47.92] here we need to find out how many items
+[53:49.68] we have in this list
+[53:51.12] so we use the len function
+[53:53.12] len of
+[53:54.84] numbers as long as i is less than the
+[53:58.00] length of the list
+[53:59.68] print
+[54:00.80] now we can use the square bracket
+[54:02.24] notation to get the element at this
+[54:04.88] index so
+[54:06.88] numbers of
+[54:08.84] i now we need to increment i by one so i
+[54:13.28] equals i plus one
+[54:15.52] let's run the program and see what we
+[54:16.88] get
+[54:19.36] so we get the numbers one to five these
+[54:21.76] are coming out from our for loop and
+[54:23.76] then we get the numbers one to five one
+[54:25.60] more time these are coming out from our
+[54:27.44] while loop now if you compare these two
+[54:29.44] approaches you can definitely see that
+[54:31.60] the implementation using the for loop is
+[54:33.68] shorter and easier to understand we
+[54:35.84] don't have to use the square bracket
+[54:37.52] notation we don't have to call the len
+[54:39.68] function we don't have to declare a
+[54:41.60] variable a loop variable and then
+[54:43.68] increment it explicitly
+[54:45.76] so with the for loop in each iteration
+[54:48.40] the item variable will automatically
+[54:50.08] hold one value in this list
+[54:58.80] in this tutorial we're going to talk
+[55:00.16] about the range function in python we
+[55:02.56] use the range function to generate a
+[55:04.72] sequence of numbers let me show you so
+[55:07.12] you type range
+[55:08.72] this is a built-in function just like
+[55:10.48] the print and input functions here we
+[55:12.72] can pass a value like 5 and this will
+[55:15.04] return a range object
+[55:17.36] a range object is an object that can
+[55:19.36] store a sequence of numbers let me show
+[55:21.60] you so
+[55:23.12] let's call that numbers
+[55:25.12] so this is a range object
+[55:27.04] in this object we're going to have the
+[55:28.40] numbers 0 to 5 but excluding 5.
+[55:32.32] now if we print
+[55:34.88] numbers
+[55:37.36] we're going to see this message range of
+[55:39.44] zero to five not the actual numbers
+[55:41.68] because this is the default
+[55:42.80] representation of a range object to see
+[55:45.52] the actual numbers we need to iterate
+[55:47.12] over this range object using a for loop
+[55:49.92] in the last video you learned how to
+[55:51.60] iterate over a list using a for loop but
+[55:53.92] we can also iterate over a range object
+[55:56.16] using a for loop basically we can use
+[55:58.08] the for loop with any object that
+[56:00.16] represents a sequence of objects
+[56:02.88] so instead of printing numbers
+[56:05.36] we're going to use a for loop
+[56:07.04] for number
+[56:08.72] in numbers colon
+[56:11.60] we're going to print
+[56:13.20] number
+[56:15.04] take a look
+[56:17.04] now we see the numbers zero to four
+[56:20.00] so
+[56:21.52] range of five
+[56:22.88] generates a sequence of numbers starting
+[56:24.88] from zero up to the number we specify
+[56:27.44] here
+[56:28.24] now if we supply two values
+[56:30.80] the first value is going to be
+[56:31.92] considered the starting value
+[56:34.32] and the second value is going to be
+[56:36.00] considered the ending value and it's
+[56:37.84] going to be excluded so range of 5 to 10
+[56:40.80] is going to generate the numbers 5 to 9.
+[56:43.12] take a look
+[56:45.20] there you go
+[56:46.72] now we can also supply a third value and
+[56:49.36] that will be used as a step so let's say
+[56:52.24] instead of having a sequence of numbers
+[56:53.84] like five six seven eight nine we wanna
+[56:56.16] jump two numbers at a time so 5 7 9 and
+[56:59.60] so on so here we pass 2 as the step take
+[57:03.36] a look
+[57:05.04] so we get these odd numbers 5 7 and 9.
+[57:10.08] so this is the range function in python
+[57:12.08] like quite often you see the range
+[57:13.84] function used as part of a for loop
+[57:16.32] because we don't really need to store
+[57:17.60] the result in a separate variable we can
+[57:20.16] call the range function right here where
+[57:22.72] we are using the numbers variable so we
+[57:24.80] can type range of five and this will
+[57:27.68] return a range object holding the
+[57:29.76] numbers zero to four take a look
+[57:32.80] there you go
+[57:33.92] so we don't really need to store the
+[57:35.44] result in a separate variable like
+[57:37.20] numbers
+[57:39.52] there you go
+[57:47.44] in this tutorial we're going to talk
+[57:48.72] about tuples in python tuples are kind
+[57:51.20] of like lists we use them to store a
+[57:53.20] sequence of objects but tuples are
+[57:55.52] immutable which means we cannot change
+[57:57.68] them once we create them let me show you
+[58:00.16] so i'm going to start by defining a list
+[58:02.32] of numbers 1 2 3.
+[58:04.80] now we use square brackets to define a
+[58:06.64] list
+[58:07.60] and parenthesis to define a tuple so now
+[58:10.64] this numbers variable is storing a tuple
+[58:13.44] if we try
+[58:14.96] to reassign let's say the first element
+[58:18.40] we're going to get an error
+[58:20.24] topple object does not support item
+[58:22.56] assignment so this is what i meant by
+[58:24.96] tuples are immutable they're
+[58:26.80] unchangeable
+[58:28.24] also
+[58:29.84] if you type numbers dot
+[58:32.64] you don't see any methods like append
+[58:34.80] insert remove and so on we only have
+[58:37.36] count and index
+[58:39.20] count returns the number of occurrences
+[58:41.04] of an element for example
+[58:43.36] if we have
+[58:44.56] let's say
+[58:45.68] two threes in this tuple
+[58:47.52] and call count of three this will return
+[58:50.08] 2.
+[58:51.12] the other method we have here is index
+[58:53.76] and this returns the index of the first
+[58:56.16] occurrence of the given element
+[58:58.64] now
+[58:59.36] these other methods you see here that
+[59:00.80] start with an underscore they're called
+[59:03.04] magic methods it's an advanced topic and
+[59:05.52] i've covered it in detail in my complete
+[59:07.60] python programming course if you're
+[59:09.52] interested the link is down below this
+[59:11.44] video
+[59:12.40] so tuples are immutable we cannot change
+[59:14.88] them once we create them
+[59:16.48] now practically speaking most of the
+[59:18.48] time you would be using lists but there
+[59:20.24] are times that once you create a list of
+[59:21.92] objects you want to make sure that
+[59:23.44] somewhere in your program you or someone
+[59:25.68] else is not going to accidentally modify
+[59:28.16] that list if that's the case then you
+[59:30.16] should use a tuple
+[59:33.44] hey guys i just wanted to let you know
+[59:34.88] that i have an online coding school at
+[59:36.84] codewoodmarch.com where you can find
+[59:38.56] plenty of courses on web and mobile
+[59:40.32] development in fact i have a
+[59:41.84] comprehensive python course that teaches
+[59:44.00] you everything about python from the
+[59:45.52] basics to more advanced concepts so
+[59:47.76] after you watch this tutorial if you
+[59:49.44] want to learn more you may want to look
+[59:50.80] at my python course it comes with a 30
+[59:52.72] day money back guarantee and a
+[59:54.24] certificate of completion you can add to
+[59:55.92] your resume in case you're interested
+[59:57.84] the link is below this video
+[60:01.44] hey

@@ -1,0 +1,436 @@
+[0:00.48] Hello all, my name is Krishna and
+[0:02.56] welcome to my YouTube channel. So guys,
+[0:04.48] today in this particular video we are
+[0:06.16] going to discuss about the basic
+[0:07.84] differences between generative AI versus
+[0:10.32] AI agents versus agentic AI. Now this is
+[0:13.68] one of the most trending topics that is
+[0:15.84] currently going on and it is necessary
+[0:17.60] that you need to have your understanding
+[0:20.24] very much clear when you are
+[0:22.08] specifically working in all the specific
+[0:24.00] topics. Okay. So one by one we will try
+[0:27.20] to understand about each and every
+[0:29.04] topics that I have actually mentioned
+[0:30.32] over here. We'll go step by step. Okay.
+[0:32.80] So first thing is that I hope you may be
+[0:35.12] knowing large language models. Okay. You
+[0:37.84] may be knowing about large image models
+[0:40.72] also. Right? So let's say that I'll also
+[0:43.28] go ahead and write large image models.
+[0:45.76] When we talk about large language models
+[0:47.52] or large image model, these models are
+[0:51.44] actually very huge models, right? These
+[0:54.64] are like huge models, bigger models,
+[0:56.88] right? It can be of billions of
+[0:58.80] parameters and they have trained with
+[1:01.20] huge amount of data, right? This data
+[1:03.92] that it is specifically used to train
+[1:05.76] this model is huge. So you may have seen
+[1:08.32] various models like llama 3. You may
+[1:11.36] have been seeing OpenAI models right
+[1:13.44] from GPT4 to GPT4 mini. Many many
+[1:17.44] different models are there. And these
+[1:18.72] models are specifically trained with
+[1:20.24] huge amount of data. And at the end of
+[1:22.72] the day, all these particular models are
+[1:26.04] generating what are they basically
+[1:28.16] doing? They're generating new content,
+[1:30.36] right? Generating new
+[1:33.24] content. Now, when we talk about
+[1:35.36] generating new content, the models can
+[1:37.92] probably generate new
+[1:39.96] images, it can generate new text, it can
+[1:43.32] generate video frames, it can generate
+[1:46.24] anything as such, right?
+[1:48.48] audio it can also generate audio right
+[1:51.68] and it can also generate videos so I've
+[1:53.84] written each and everything about over
+[1:55.44] here right so here what this LLM is
+[1:58.40] basically doing since it is trained with
+[1:59.92] huge amount of data in short it is
+[2:02.32] basically generating new content
+[2:03.76] whenever we try to give any kind of
+[2:05.76] input right if I say hey please generate
+[2:08.16] a new image related to aentic AI so this
+[2:11.12] LLA model it if it has that multimodel
+[2:14.00] capabilities it will be able to generate
+[2:16.00] that particular image or video whatever
+[2:18.24] specific things we require whenever we
+[2:20.56] talk in this specific way this is
+[2:22.56] something related to generative AI okay
+[2:25.28] so this is something related to
+[2:26.88] generative AI right now when we say hey
+[2:30.08] uh let's go ahead and build a generative
+[2:31.68] AI application wherein we create a
+[2:35.08] chatbot okay and that chatbot should be
+[2:38.48] able to do this specific ch uh task
+[2:41.60] wherein the main aim is generating new
+[2:43.84] content you can definitely do it right
+[2:46.40] so There we specifically say hey we are
+[2:48.72] specifically working in generative AI
+[2:50.56] applications right here the most
+[2:53.76] important thing is that there's some few
+[2:56.00] properties that everybody should keep in
+[2:57.92] mind right whenever we talk about
+[2:59.68] generative AI application these are
+[3:02.32] specifically
+[3:03.64] reactive okay reactive there is this
+[3:06.48] word that we use which we basically say
+[3:08.80] it as reactive now what does this
+[3:11.04] basically reactive mean right see in
+[3:15.12] order to work with this LLM models right
+[3:17.60] we definitely have to write some kind of
+[3:20.36] prompts okay prompts and based on this
+[3:24.32] particular prompt this LLM model will
+[3:26.56] generate new content this is really
+[3:28.56] important to understand now what does
+[3:30.64] this prompt basically means this prompt
+[3:33.44] is just like some sentence where we
+[3:36.64] specify something and we tell the LLM to
+[3:38.80] behave in that way I may say hey that uh
+[3:41.28] hey please try to uh act as a data
+[3:44.64] scientist and take an interview for me
+[3:46.88] right so I that is a kind of prompt that
+[3:49.60] is a kind of instruction that I'm
+[3:51.44] actually giving to the LLM model right
+[3:54.16] so here the most important thing with
+[3:56.48] respect to the generative AI content uh
+[3:58.40] generative AI application is that
+[4:00.16] obviously you will be having some kind
+[4:02.24] of models LLM models LM models
+[4:04.52] multimodel right along with these models
+[4:07.28] we specifically write prompts right like
+[4:09.84] how this particular LML model should be
+[4:12.56] behaving and that is how it'll go ahead
+[4:14.80] and generate the new content. Okay. So
+[4:17.04] this is with respect to the generative
+[4:18.56] AI applications. Right? Here uh there
+[4:21.68] are lot of different different kind of
+[4:23.20] libraries. There are libraries like
+[4:25.24] langraph right. There are libraries like
+[4:28.16] lang chain which you can specifically
+[4:30.16] use and you can get started with right
+[4:33.20] lang chain. There are different
+[4:34.72] different libraries like let's say llama
+[4:36.92] index. Llama index right? If you don't
+[4:40.64] want to go ahead and use this you can
+[4:42.00] also go ahead and use grock. Grock also
+[4:45.04] has a specific set of code or you can
+[4:48.08] also go ahead and use OpenAI code in
+[4:50.32] order to probably go ahead and start
+[4:51.92] working and developing geni
+[4:53.44] applications. Okay. Now this is one of
+[4:55.68] the thing. Okay. Now the next two topics
+[4:58.72] that we are specifically going to
+[5:00.08] discuss about is something called as AI
+[5:02.16] agents and agentic AI. And this is super
+[5:04.60] important right now because the thing
+[5:07.12] that we work on right agentic AI
+[5:09.12] application it is trending in every
+[5:11.20] field. people are thinking that how they
+[5:13.44] can automate the entire complex task the
+[5:16.32] entire workflow with the help of agent
+[5:18.48] application and obviously bring human
+[5:20.48] feedback in between them. Okay. Now
+[5:22.88] let's go ahead and discuss about this
+[5:24.40] and I hope I have already made a video
+[5:26.40] related to generative way. I have
+[5:27.76] developed so many different videos from
+[5:29.68] lang chain to lang graph you can
+[5:31.20] definitely go ahead and watch.
+[5:33.16] Okay. Now let's go ahead and discuss
+[5:35.44] about the second thing which is nothing
+[5:37.08] but the second category that we're going
+[5:39.84] to focus on is AI
+[5:42.68] agents versus agentic
+[5:45.96] AI versus agentic
+[5:49.64] AI. Now people do think that AI agents
+[5:54.32] and agentic AI one and the same but it
+[5:56.96] is not like that. Okay. So here just
+[6:00.64] please focus on for the next 10 minutes
+[6:02.96] because I'm going to explain each and
+[6:04.56] everything that you really need to
+[6:06.32] understand and that is how you'll be
+[6:08.00] able to understand between what is the
+[6:09.52] basic difference between AI agents and
+[6:11.36] agent AI. Okay. Now let's say that I
+[6:14.96] have some kind of LLMs. Okay. So let's
+[6:17.36] say and at all these places LLM is the
+[6:20.56] most important thing right because LLM
+[6:22.64] is something that will be acting like an
+[6:25.36] AI agent. It can act like an AI agent.
+[6:27.28] it can also work in an agentic AI
+[6:29.36] application. Okay. And it will it will
+[6:31.28] be very important how this AI agents is
+[6:34.16] different when compared to the LLM also.
+[6:36.48] Okay. So let's say that I have a
+[6:39.12] specific LLM. Okay. And now this LLM can
+[6:41.52] be any model. Okay. Let's let's consider
+[6:43.52] that it is it is some model that we are
+[6:46.16] going to use from graph. It can be lama
+[6:48.08] 3. We are using this specific model.
+[6:50.40] Okay. Now you know that all these LLM or
+[6:53.44] LM models they're trained with some
+[6:55.52] specific past data okay they don't have
+[6:59.12] like let's say if I ask this particular
+[7:00.84] LLM hey what is the news for today or
+[7:04.32] hey or who won this particular IPL match
+[7:07.52] between this and this like let's say
+[7:09.60] Bangalore is going to happen have some
+[7:11.64] matches tomorrow or today if it has
+[7:14.40] right and LLM will not know the result
+[7:16.96] because it's not connected to the
+[7:18.40] internet okay so in that kind of
+[7:20.40] scenario Whenever I ask this particular
+[7:22.24] question, the LLM will not be able to
+[7:24.00] give an output to us. Okay, obviously it
+[7:27.20] will not be able to give because it does
+[7:28.72] not have that specific information. Now,
+[7:31.44] this is one major disadvantage of LLM,
+[7:34.24] right? Yes, LLM will be able to generate
+[7:36.72] new content. These models will be able
+[7:38.32] to generate the new content. But what
+[7:40.00] about the current information? Okay, it
+[7:41.84] will not be able to give you, right?
+[7:44.16] Let's say that I'm going to ask some
+[7:46.16] specific information of a company.
+[7:48.48] Obviously this LLM will not be trained
+[7:50.40] with that company data because the
+[7:52.16] company data will be private to that
+[7:53.76] company itself. Right? So that way also
+[7:56.16] that LLM will not be able to give you
+[7:57.84] that unless and until it is connected to
+[7:59.76] some kind of external database or
+[8:01.52] external data source. This is just one
+[8:03.88] example now what is basically happening
+[8:06.16] is that as soon as I asked a question
+[8:07.76] hey who won this particular match within
+[8:09.68] RCB or any other place any other um any
+[8:13.20] other team that happened today it will
+[8:15.52] not be able to give you the output. So
+[8:17.76] what it will be dependent on it will be
+[8:19.36] dependent on the third party source.
+[8:22.16] Let's say there is one third party
+[8:23.52] source I will consider in this
+[8:25.12] particular scenario. I will just go
+[8:27.12] ahead and connect it to some kind of
+[8:29.36] database. Okay. Let's say one of the
+[8:31.84] data source is something called as taby.
+[8:34.64] I will go ahead and write tabi. So if
+[8:36.72] you don't know about tabi it provides
+[8:38.56] you some kind of internet search. Okay.
+[8:40.88] It you can use that particular API. You
+[8:42.96] can write this specific wrapper and you
+[8:44.80] can probably go ahead and write this.
+[8:46.64] Now the question arises how this llm is
+[8:49.84] basically going to call this tavly API.
+[8:52.48] Now there is one very important property
+[8:54.48] if you're learning lang chain or lang
+[8:56.16] graph any of the specific libraries
+[8:58.48] there is a concept of something called
+[9:00.00] as tool call. Tool
+[9:03.00] call. Okay tool call. Now what is this
+[9:06.64] tool call? Let's say that if the LLM is
+[9:08.72] not able to provide the response for
+[9:10.88] this particular input, it will keep on
+[9:13.36] looking for external things that will be
+[9:15.84] able to handle this particular input.
+[9:18.00] Now in this particular case when I ask
+[9:20.16] the input saying that hey what is the
+[9:22.08] current news? What is the current news
+[9:24.72] for this specific date that is today's
+[9:26.80] date? The LLM will not be able to give
+[9:28.80] the answer. So the LLM will look for
+[9:31.44] whether it is connected to any
+[9:33.16] third-party APIs, third party APIs or
+[9:37.04] data source from which I will be able to
+[9:39.04] get this kind of information. So that is
+[9:41.68] where it will be making the specific
+[9:44.32] tool call. Okay, it will be making the
+[9:47.28] specific tool call. Now this tool call
+[9:48.96] will be something like this. The tool
+[9:50.40] call will be made and based on this I
+[9:52.40] will be getting a response. Okay, I'll
+[9:55.68] be getting a response. Now the as soon
+[9:58.08] as the LLM made this tool call the it
+[10:01.52] got this specific response. So this is
+[10:03.36] my request and this is my response.
+[10:06.04] Okay, this is my response and as soon as
+[10:09.28] I got the response the LLM is smart
+[10:11.60] enough to finally summarize that
+[10:13.68] particular output uh that response and
+[10:16.00] give you the output and this is what I'm
+[10:17.92] actually looking for. Okay.
+[10:20.56] Now you need to really understand over
+[10:22.84] here the kind of task that is happening
+[10:26.32] right a request is going I'm getting the
+[10:28.56] information I'm getting giving back the
+[10:30.44] response this is basically happening by
+[10:33.20] an AI agent just a single AI agent I can
+[10:36.80] consider this as an AI agent okay here
+[10:40.00] my main aim is that I have asked an
+[10:42.56] input saying that hey give me the some
+[10:44.40] current information about today AI news
+[10:47.84] I really want to see for this particular
+[10:50.16] date AI news which my LLM was not able
+[10:52.24] to do it. So what it has done is that
+[10:54.24] the LLM is smart enough to understand
+[10:56.32] which tool to probably call and based on
+[10:58.72] this tool call functional it is calling
+[11:00.24] this and it is getting the response. So
+[11:02.32] this is a specific task okay and this
+[11:05.36] task is basically solved by this tavly
+[11:07.76] okay tavly which is responsible for the
+[11:09.68] internet search. So this task can be
+[11:12.88] considered as an AI agent. Okay, for a
+[11:15.20] specific task we have defined this.
+[11:17.28] Okay, very simple definition. Okay, so
+[11:19.92] for a specific task we are able to
+[11:21.60] probably go ahead and call this and we
+[11:22.96] are getting the response. Now the
+[11:24.56] question rises, now the question
+[11:27.48] rises then what is agentic AI? AI agents
+[11:31.04] have understood okay fine for a specific
+[11:33.12] task I'm calling something from the LLM,
+[11:35.44] right? The LM is responsible for making
+[11:37.52] that tool call and getting the output
+[11:39.12] and summarizing the output and giving it
+[11:40.80] over here. Here also we can add the
+[11:42.48] prompt. Here also once I get the
+[11:44.96] response I can add the prompt and based
+[11:47.28] on that I can summarize the output. I
+[11:49.12] can do that. Okay. But this is only for
+[11:51.20] one kind of task. Now if I talk about
+[11:53.84] agentic AI okay and for discussing about
+[11:56.40] the agentic AI application let's
+[11:58.00] consider that let's consider that I have
+[12:00.64] a task and this task is nothing but
+[12:03.84] let's consider I want to probably
+[12:05.92] convert a YT video that I really want to
+[12:08.48] upload to a
+[12:10.44] blog
+[12:12.12] okay to a blog and now to convert a YT
+[12:16.96] video YouTube video into a blog let's
+[12:20.08] say that I have been uploading so many
+[12:22.16] videos. Just imagine if I just create an
+[12:24.32] agenti system which takes my YouTube
+[12:26.72] video and convert that into a blog and
+[12:28.80] publish it in my website. Would it will
+[12:31.04] that not be good? It will definitely be
+[12:33.04] good. Right now here if I probably see I
+[12:35.76] can divide this into multiple subtask.
+[12:37.68] First of all I will take this YT video.
+[12:40.40] I will convert I will take the
+[12:42.48] transcript from the YT video. Transcript
+[12:45.76] from the YT video. Okay. After
+[12:48.64] considering the transcript from this my
+[12:51.04] second task will be creating
+[12:53.80] title. Creating title. Okay. Third it
+[12:58.00] can be creating
+[13:00.84] description. Okay. So this will be my
+[13:02.96] third task creating
+[13:05.24] description and my fourth task will be
+[13:07.84] writing the
+[13:09.16] conclusion. Let's say so I've defined
+[13:11.60] this task into four different task right
+[13:14.96] four different tasks. Now for the same
+[13:16.88] task, don't you think converting a
+[13:21.16] YT YT video into transcript, I can
+[13:25.44] create one AI agent. Then similarly for
+[13:29.12] my second AI agent, I can basically take
+[13:31.84] this transcript
+[13:33.40] and this AI agent should be able to give
+[13:36.64] me the title. Yeah. Yeah. And just to
+[13:40.24] show you how these things will happen,
+[13:42.64] don't you think I can just go ahead see
+[13:45.84] this? Okay, see this magic. Okay. So, so
+[13:47.92] what what I will be doing is that my
+[13:49.76] first task will be that this AI agent
+[13:52.24] will be responsible in getting me the
+[13:54.56] transcript from my YouTube video. Okay.
+[13:56.48] This AI agent will be responsible for
+[13:59.04] creating the title from the transcript
+[14:01.12] that I get. Okay. Then my next agent
+[14:04.48] over here which will be parallelly will
+[14:06.80] be
+[14:07.56] responsible to probably create the
+[14:09.84] description from this particular
+[14:11.40] transcript. Yeah. And finally, don't you
+[14:14.56] think I can have one more one
+[14:18.04] more AI agent which will be responsible
+[14:22.72] in creating the conclusion. Right? Now
+[14:26.44] here this is my AI agent one. Let's
+[14:30.48] consider this. Okay. So this is my AI
+[14:33.68] agent
+[14:35.56] one. This is my AI agent
+[14:39.72] 2. This is my AI agent three. And this
+[14:44.88] is my AI agent
+[14:47.00] 4. Each and every agent can use LLM. It
+[14:52.56] can use
+[14:55.00] prompt to perform its task. Each each
+[15:00.00] here it can or it cannot it is not
+[15:02.96] composite it needs to use all the LLM
+[15:05.20] but since we are working with respect to
+[15:07.12] text related things then obviously we
+[15:09.84] can use LLM okay for now this is just
+[15:12.80] like a one kind of workflow so this
+[15:15.20] workflow goes on like this right so
+[15:16.88] first of all I give my YT video
+[15:20.20] URL YT video URL then this agent is
+[15:23.84] responsible in taking from this and
+[15:26.24] giving the output a
+[15:28.44] transcript. Now this transcript is sent
+[15:32.64] to all the agents and finally we can
+[15:37.04] combine all these
+[15:39.80] outputs and give my final
+[15:43.32] blog. Right? So what does this basically
+[15:46.48] mean? Before an AI agent only used to do
+[15:49.84] one task in an agentic AI system. So
+[15:53.04] this is my entire complex workflow with
+[15:56.72] respect to my agentic AI system and this
+[16:00.56] is performing this entire task together.
+[16:04.68] Here every agent is communicating with
+[16:07.60] each other. Right? I can add one more
+[16:10.64] thing over here. I can add human
+[16:13.40] feedback. Human feedback also over
+[16:16.36] here. So here what is basically
+[16:18.72] happening? AI agents are communicating
+[16:21.12] with each other.
+[16:22.72] Right. I can also make sure to probably
+[16:25.84] before this AI agent, let's say this
+[16:27.76] agent is responsible in probably
+[16:29.36] creating a description. For creating a
+[16:31.68] description, it also wants the title. So
+[16:33.60] it will just go ahead this AI agent 2
+[16:36.16] whatever output it is creating for the
+[16:38.00] title, it will give it to the agent 3.
+[16:40.24] And this will take that information and
+[16:42.08] do this. So internally you'll be able to
+[16:44.40] see we can also make this agent
+[16:46.64] communicate with each other to solve a
+[16:50.16] complex workflow and finally achieve a
+[16:53.44] goal. Right? So just to understand what
+[16:56.56] is the difference between AI agents
+[16:57.84] versus agentic AI here AI agent is doing
+[17:00.24] only one task. In an agentic AI system
+[17:03.36] this AI agents will be collaborating
+[17:05.60] with each other. This is really
+[17:06.96] important.
+[17:09.56] Collaborating
+[17:11.40] collaborating with each
+[17:14.60] other to solve a
+[17:17.96] goal. This is really really important to
+[17:21.64] understand. So I hope you understood
+[17:24.16] this particular video. I hope you liked
+[17:26.00] this particular video. This was the
+[17:27.68] basic differences between generative AI
+[17:29.52] versus AI agent versus agentic AI. And I
+[17:32.32] hope you are able to understand this.
+[17:34.16] Okay. Similar kind of videos I'm also
+[17:36.40] going to come up in this specific series
+[17:38.24] so that you get your fundamental rights.
+[17:40.72] I hope you like this particular video.
+[17:42.24] This was it from my side. I'll see you
+[17:43.60] in the next video. Have a great day.
+[17:44.96] Thank you and all. Take care. Bye-bye.

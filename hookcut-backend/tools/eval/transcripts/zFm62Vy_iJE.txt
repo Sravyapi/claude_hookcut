@@ -1,0 +1,1885 @@
+[0:00.08] The biggest challenge for founders today
+[0:01.52] are model companies. They're eating
+[0:02.96] forward revenue. They are eating
+[0:04.08] backward revenue.
+[0:04.96] >> Building software products is really
+[0:06.48] hard. It is just so that software
+[0:08.16] engineering is so profoundly affected by
+[0:10.16] geni. But the taste of a product, the
+[0:12.16] design aspect of a product, how do you
+[0:13.68] land it? These are non-trivial thing
+[0:15.04] which I don't think can be automated
+[0:16.40] away.
+[0:16.72] >> In last 25 years, what worked for India
+[0:19.04] was highly qualified labor that could do
+[0:21.28] it services. Now we are seeing like a
+[0:23.20] third era. How big companies can we see
+[0:25.20] in this era? I am very excited about the
+[0:27.28] technical talent and leadership I saw in
+[0:29.52] India native companies like Razer Pay,
+[0:32.24] Phone Pay, Swiggy, Flipkart. These are
+[0:34.72] the engineers and leaders who are
+[0:36.56] thinking about much deeper systems
+[0:38.40] problems. I am still optimistic that
+[0:40.64] will keep on happening in India. So if I
+[0:42.40] look at my portfolio
+[0:46.48] whether it's in Rocket Lane or Usher or
+[0:48.80] Yugabyte, the best engineering teams is
+[0:51.04] all sitting in Bangalore and Madras.
+[0:53.04] This daring and technical depth that
+[0:55.04] these teams bring in is really important
+[0:56.88] for the future of the India US corridor.
+[0:58.80] >> How will the new age AI services company
+[1:01.20] get the business?
+[1:02.80] >> That's a great question. Um,
+[1:09.76] >> hi this is Sadhhat Alwalia. Welcome to
+[1:12.16] the Neon Show. I'm your host and
+[1:14.24] managing partner at Neon Fund, a fund
+[1:17.12] that invests in the best of enterprise
+[1:19.20] AI companies like Atomic Works,
+[1:21.04] Spotdraft, Cloudsack between the US
+[1:23.52] India corridor. Today I have with me a
+[1:25.92] very very dear friend, a person who I
+[1:27.92] consider a mentor, friend, a
+[1:29.76] well-wisher, Basar Gosh. Basar, welcome
+[1:32.80] again to the Neon Show. Thank you so
+[1:34.48] much for coming again.
+[1:36.24] >> It's a pleasure. And you are my mentor.
+[1:40.32] >> I don't know anything. I love uh just
+[1:43.20] want to say thank you.
+[1:44.88] >> Uh just for everybody this the same
+[1:47.20] shirt I I had to wear last time and I
+[1:49.36] was sick last time and I'm partly sick
+[1:51.20] but big fan of Sedhart. Full disclosure
+[1:53.92] I'm an LP in his fund also. I love
+[1:56.56] Sedhhat. I love your curiosity about
+[1:58.48] Indian history but also the energy you
+[2:00.48] bring and how you work with
+[2:02.40] entrepreneurs and the level of detail
+[2:04.32] that you have at your grasp. Um and the
+[2:07.84] fact that
+[2:09.52] you know what I feel uh differentiates
+[2:11.84] people and I I I I hope you know I try
+[2:14.64] to hold myself to that standard is uh
+[2:17.36] people who other people follow.
+[2:20.08] So you know it looks it's obvious that
+[2:22.00] you did companies in your past life and
+[2:24.48] all your co-founders people who worked
+[2:26.16] with you are in on great terms with you
+[2:28.96] they follow you and I think that is the
+[2:31.44] true index if somebody is a leader but
+[2:35.04] more importantly a good person. So very
+[2:37.20] happy
+[2:38.48] >> I want to start with something that you
+[2:40.16] believe very cly in which is you know
+[2:43.04] the the new set of services that are
+[2:45.12] getting developed. people are talking
+[2:47.20] about AI enabled services uh reimagining
+[2:50.64] of IT services industry like TCS
+[2:52.72] Infosys. So if you have to explain to a
+[2:57.04] lay man first principles wise what are
+[2:59.76] the various opportunities available in
+[3:02.56] the services ecosystem today for
+[3:04.96] entrepreneurs who come from software era
+[3:08.16] SAS era. Yeah, that's an amazing
+[3:10.88] question and as you and I talked about,
+[3:12.64] I'm deep into it and trying to struggle
+[3:15.28] my way through creating thesis and
+[3:17.04] actually investing in companies, maybe
+[3:19.20] even building companies uh services and
+[3:21.84] I think uh the reason it's very very
+[3:23.92] relevant to this conversation is is such
+[3:25.68] an important part of the Indian economy
+[3:27.68] if you think about it some numbers would
+[3:29.44] be helpful. I think if I if I don't get
+[3:32.80] this wrong the amount the revenue coming
+[3:35.84] into India from services bo IT nonIT is
+[3:39.44] about 400 billion the total economy
+[3:42.88] around the services economy if you add
+[3:45.52] the families and the schools and the
+[3:47.20] hospitals and the everything else is 1.2
+[3:49.76] 2 trillion and if I'm not getting it
+[3:52.08] right, Indian economy is approximately
+[3:54.56] 3.7 trillion. I think I'm getting the
+[3:57.04] ballpark. So think about the magnitude
+[3:59.52] of uh uh uh of impact this industry and
+[4:02.32] its secondary economy has uh at ADVC and
+[4:05.92] at a personal level uh when we do builds
+[4:09.12] when I think about a new thesis we ask
+[4:11.36] the question why now
+[4:13.76] in the services industry the reason
+[4:16.08] people are excited about it or they
+[4:18.32] think there will be massive dramatic
+[4:20.08] transformational changes happening is
+[4:22.32] because of the new wave of Gen AI right
+[4:24.72] because not because of old machine
+[4:26.16] learning not because of old neural nets
+[4:28.40] but because of this whole uh uh uh you
+[4:30.88] know foundation models which are based
+[4:32.32] on transformers which can do very very
+[4:34.80] powerful things. So from a very Silicon
+[4:37.36] Valley techcentric point of view the the
+[4:40.16] why now question leads to a few simple
+[4:43.36] answers. One is in many of these
+[4:45.68] services industries now just a brief
+[4:48.32] aside the services can be in the context
+[4:51.04] of software as a business or
+[4:53.04] non-software as a business. Software as
+[4:55.20] a business can mean you're doing IT
+[4:56.96] services consulting, BO in the context
+[4:59.68] of SAP consulting, Salesforce
+[5:02.16] consulting, service now consulting,
+[5:03.92] mulesoft consulting, database
+[5:06.08] consulting, so on and so forth, testing,
+[5:08.88] everything,
+[5:10.96] data migration, everything
+[5:13.44] and then it can be the other vast space
+[5:15.60] of everything which is not related to
+[5:17.84] software. It can be for call centers. It
+[5:20.48] can be for accounting. It can be for HR.
+[5:23.36] It can be for CFO's office. It can be
+[5:25.44] for legal. It can be for travel. It can
+[5:28.00] be for clinical trials. That's massive.
+[5:30.16] It can be for banking. It is massive.
+[5:32.80] >> And and uh Silicon Valley is obviously
+[5:36.48] technical people like us whether we are
+[5:38.24] builders or investors. We've started the
+[5:40.40] reason we have suddenly started looking
+[5:42.16] at this very closely is the why now
+[5:43.92] question around tech. the the LLMs and
+[5:47.60] the models coming in along with the
+[5:49.76] tooling around it are helping us do a
+[5:52.16] few things really well suddenly one is
+[5:54.24] about unstructured data extraction and
+[5:56.00] handling and management if you look
+[5:58.08] closely at a lot of these services if
+[6:00.08] you look at the human centric workflows
+[6:02.00] in these services it's about doing stuff
+[6:04.24] with unstructured data could be spread
+[6:06.08] >> for our audience can you explain as the
+[6:08.24] terms
+[6:08.80] >> oh boy unstructured data could be a
+[6:11.52] spreadsheet could be uh a handwritten
+[6:14.96] note could be a PDF, could be a word
+[6:17.52] document. Uh, and the I mean the
+[6:19.68] handwritten note part is extremely
+[6:21.20] important actually. Um, and you do stuff
+[6:24.08] with data. You look at it, you extract
+[6:25.84] something, you write it into something,
+[6:27.76] you read it from something, then you do
+[6:29.36] something with it. And so human in the
+[6:32.48] loop data uh uh management and doing
+[6:35.52] stuff with data which is unstructured is
+[6:37.44] a massively important and significant
+[6:39.92] part of this of these companies.
+[6:43.44] Number two is
+[6:45.52] there's a lot of human beings involved
+[6:47.36] in what we call workflows which is you
+[6:49.20] know you do something you write
+[6:50.40] something you decide something and you
+[6:52.56] require domain knowledge to do it and
+[6:54.88] you have lots of hops in these
+[6:56.48] workflows. So humans you know remember
+[6:59.20] back in a past life industries like RPA
+[7:01.52] tried to do this automation well but for
+[7:03.20] various reason they could not leaving
+[7:05.28] that aside. So unstructured data
+[7:07.44] handling the multihop workflow
+[7:10.00] automation stuff and then there are
+[7:12.16] other areas like you can handle domain
+[7:14.56] specific languages which is a more
+[7:16.08] software aspect in the context of
+[7:17.92] Salesforce and others that we talked
+[7:19.28] about.
+[7:20.24] >> All of this can be automated with a very
+[7:22.48] high degree of robustness,
+[7:26.24] correctness and speed with these new
+[7:28.88] models. That is the central reason that
+[7:31.36] you can now get a lot of this multihop
+[7:34.96] workflow functionality done
+[7:37.60] automatically with some right set of
+[7:40.56] tooling around it which we can discuss
+[7:42.00] separately.
+[7:42.88] >> Some examples
+[7:44.32] >> I mean you can think of uh you can think
+[7:47.28] of uh if you take a software example you
+[7:49.76] can take a managed service IT provider.
+[7:52.08] What does a managed service IT provider
+[7:53.84] do? It sets up it and solves IT problems
+[7:56.16] for say small to medium businesses and
+[7:58.80] you get tickets. Somebody's password has
+[8:01.04] to be changed. Somebody's uh uh Google
+[8:03.20] Drive has to be set up. Somebody has to
+[8:04.72] be added to an email group. So there are
+[8:06.88] various levels of difficulties of these
+[8:08.88] tasks. If you look at just creating a
+[8:12.08] new account and changing somebody's
+[8:13.52] password, it's actually a very simple
+[8:15.68] workflow. You can do that actually
+[8:17.36] automatically and meaning with some
+[8:20.72] human supervision. So you can do it in
+[8:22.64] what we call a copilot form or an
+[8:24.32] autonomous agent form but it can be done
+[8:26.88] with a very high degree of precision
+[8:28.64] correctness and speed with an LLM today
+[8:31.20] on the if you now go and look at uh
+[8:35.12] >> before you dive why why can LLM do this
+[8:38.24] and how can LLM do this
+[8:39.60] >> this I'm not a statistician
+[8:42.32] uh there's a you know LLM's the new
+[8:45.04] models are all about something called
+[8:46.56] next token prediction if you ask me the
+[8:48.80] statistical reason why they can do it I
+[8:51.12] will not be able to answer you. We
+[8:52.96] should just keep in mind that this class
+[8:55.28] of models based on transformers can do
+[8:57.92] very clever reasoning based and pattern
+[9:00.64] matching based stuff for multimodal
+[9:03.52] data, you know. So they can do better
+[9:06.08] stuff for images. They can do better
+[9:07.68] stuff for text. Lot of these models do
+[9:10.00] amazing stuff with text. even though the
+[9:11.92] core logic is around next token
+[9:13.44] prediction they can like figure things
+[9:15.60] out in a much more
+[9:18.96] you know realistic correct way. So that
+[9:21.60] was a partial answer. So anyway so I
+[9:23.76] gave an answer about a software project
+[9:26.16] product software business MSP you can go
+[9:29.04] look at and think about you want to do
+[9:31.04] invoice processing for supply chain.
+[9:33.28] Well, it so happens that a lot of these
+[9:34.96] invoices are written by hand and they go
+[9:37.20] and you know it is written by somebody
+[9:39.12] then it goes to somebody who's in charge
+[9:41.52] of accounts payable, accounts
+[9:42.64] receivable. They have to look at it,
+[9:44.16] copy it into a spreadsheet, put it into
+[9:46.32] some into some financial software. A lot
+[9:48.96] of this done including the logic of the
+[9:51.60] step by step. So that is the workflow
+[9:53.84] and this extraction of data can now be
+[9:55.92] done automatically. So I'm giving very
+[9:59.12] simple examples. Then there are much
+[10:01.36] more sophisticated things called agents
+[10:03.60] which actually with the right set of
+[10:05.44] inputs and watching inputs and outputs
+[10:08.64] can also reason about what's the right
+[10:10.56] thing to do. That's that even deeper
+[10:13.44] level of sophistication. Anyway, coming
+[10:15.68] back to the services industry, a lot of
+[10:18.24] these basic workflows can now be
+[10:20.16] automated. Now the question is what does
+[10:22.08] that do? Well, at the minimum all the
+[10:23.84] human beings who are assigned to the
+[10:25.28] services industry in those workflows
+[10:27.60] they can become much more productive. So
+[10:29.52] they can do the easier things happen
+[10:31.60] much faster. Maybe some harder things
+[10:33.60] have to be done with more human in the
+[10:35.20] loop involvement. So in the context of
+[10:38.00] the services industry first and foremost
+[10:40.40] AI can help increase productivity.
+[10:43.12] >> So you can do more with the same set of
+[10:44.72] people.
+[10:46.24] Maybe you don't even need need that many
+[10:48.64] people. That's a very uh contentious
+[10:50.40] point that that you know there is the
+[10:52.64] there's the there's the numerator
+[10:54.48] question of more business being done.
+[10:56.16] the denominator question of how much
+[10:58.08] resources do you need?
+[10:59.68] >> So to make things very simple if you sit
+[11:02.32] down and think about it with the
+[11:04.16] judicious use of generative AI you can
+[11:06.56] increase margins in these industries.
+[11:09.28] >> So that that is the the so there's the
+[11:12.08] technical why now and then there's the
+[11:13.76] outcome
+[11:14.64] >> of a what we are calling AI enabled
+[11:17.36] services. I'll just stop now for a
+[11:19.12] second.
+[11:19.52] >> Okay. So you are saying human dependent
+[11:23.36] work services is what human dependent
+[11:25.44] here
+[11:26.00] >> human in the loop
+[11:26.80] >> human in the loop human dependent work
+[11:28.88] where a human had to execute certain
+[11:30.72] task maybe across the same workflow
+[11:33.28] let's doing only on spreadsheet or on
+[11:35.36] multiple things a spreadsheet a word do
+[11:37.76] calling people you know this all can be
+[11:41.28] now done you know with with a new set of
+[11:44.48] agents that are getting built and that's
+[11:47.20] why the services economy is very
+[11:48.80] important you as we step into building
+[11:52.16] new companies with with the AI agent
+[11:55.28] framework. Is that right?
+[11:56.72] >> Indeed. Indeed. Uh it is about
+[11:59.60] redefining what the services economy and
+[12:01.92] these companies will do. It's also
+[12:05.60] rethinking how will this massive
+[12:07.36] existing economy work. So if you look at
+[12:09.84] any services business, you will have a
+[12:12.08] front office aspect, you will have a
+[12:13.44] mid- office aspect, a back office
+[12:14.88] aspect, you'll have an IT aspect. It so
+[12:17.76] happens that a lot of the headcount in
+[12:20.08] these services businesses is in the
+[12:22.08] front and and the mid office where they
+[12:24.40] are actually dealing with customers.
+[12:26.16] Anyway, I'm overgeneralizing.
+[12:28.80] It is likely that a lot of these offices
+[12:31.28] within these businesses can be made much
+[12:33.60] more productive and can probably even be
+[12:36.16] made much more lean. So that's kind of
+[12:38.32] the central thesis.
+[12:39.92] >> So front office mean a doctor's front
+[12:42.16] office. It can be dealing with front
+[12:44.16] office.
+[12:44.56] >> Yes. doctor's front office, dentist
+[12:46.80] front office where in offline you are
+[12:50.80] sending reminders to patients, you're
+[12:52.72] sending an email to patient that's all
+[12:55.20] happening automatically. You're
+[12:57.36] interacting with them through text. You
+[12:59.12] can interact with them through WhatsApp,
+[13:01.04] any any channel and you are getting
+[13:03.52] right answers. You're being able to
+[13:05.20] reschedu stuff. You're being able to ask
+[13:07.92] PII related questions maybe as long as
+[13:09.92] you have the right security and stuff.
+[13:11.68] all of that. Now the now and and think
+[13:14.64] of the people in the mid office sitting
+[13:16.40] in a doctors or medicine's office who
+[13:18.32] are having to get data after a visit and
+[13:20.72] deal with deal with insurance deal with
+[13:23.52] follow-ups. All of that in if you think
+[13:26.40] of it as a in a co-pilot setting can be
+[13:28.88] done automatically now to a large extent
+[13:32.08] which is why we are seeing so many
+[13:34.88] companies getting started in each of
+[13:36.80] these areas in a very very you know high
+[13:40.24] demand-driven way because you know
+[13:42.64] applied AI founders when they go into a
+[13:44.72] domain are finding many of these
+[13:46.48] workflows are ready to be mechanized
+[13:49.36] maybe even disrupted so that is kind of
+[13:51.52] the software aspect of services. I think
+[13:54.96] you and I have spent some time today
+[13:56.56] talking about and where we have uh
+[13:59.76] constructively disagreed on some things
+[14:01.36] sis where what happens next in these
+[14:04.56] services industries. If you bring this
+[14:06.72] Silicon Valley and Bangalore view of SAS
+[14:09.04] you bring in you write good software you
+[14:11.36] start a seed company you start selling
+[14:13.20] software to say these dentist offices
+[14:16.80] as an example or these uh these uh
+[14:20.32] invoice processing offices for supply
+[14:22.48] chains. Second answer, what happens
+[14:25.12] next? Do you build this out as a
+[14:28.16] software business? One of the key thesis
+[14:30.56] that we are all thinking about is we
+[14:32.88] going a little bit out of the box when
+[14:34.72] it comes to software.
+[14:36.88] It's reasonable to start re
+[14:38.64] reconsidering whether a pure software
+[14:40.64] business will scale here. It is
+[14:43.52] reasonable to start asking if you sell
+[14:45.68] pure software into these industries, how
+[14:48.08] much of the economic pie will you get?
+[14:50.72] It so happens if you look at most of
+[14:52.40] these industries they don't spend most
+[14:54.56] of their money on software. So the
+[14:56.48] question to ask is are we envisioning
+[14:58.88] that these services uh companies
+[15:00.96] themselves will be mostly software and
+[15:02.72] AI
+[15:04.48] that so that's where things get murky
+[15:06.88] that's where things get exciting it is
+[15:09.44] reasonable to assume at some point in
+[15:11.44] time in the 5 7 10 years that might
+[15:13.68] happen question is how does this
+[15:16.48] industry start innovating and kind of
+[15:19.84] transforming itself one of the bets a
+[15:22.16] lot of us are making a lot of them from
+[15:24.32] Silicon Valley some funds from New York
+[15:26.00] are making is you're saying I will now
+[15:29.28] take over these legacy services
+[15:31.04] businesses and I'll own the business.
+[15:33.52] I'll run it also. It so happens I'll
+[15:36.00] also bring in my software to run it in
+[15:37.68] an AI first way software first way. This
+[15:40.32] is the whole concept of rollups that is
+[15:42.24] being played out in the in the context
+[15:44.32] of AI services thesis and I am
+[15:47.12] personally looking at it in a big way.
+[15:48.96] we have done some investments whether
+[15:50.96] it's in let's assume uh I think uh in
+[15:54.24] the area of cloud data migration or in
+[15:56.72] the area of MSP IT services in the area
+[15:59.52] of legal in the area of clinical trials
+[16:03.12] you can you uh we have gone and started
+[16:05.36] thinking about maybe the company which
+[16:08.72] has been building software till now
+[16:10.32] should be owning the services companies
+[16:13.44] and a lot of the large funds are making
+[16:15.52] progress there if you think about it
+[16:17.76] then we come to to the point where the
+[16:19.28] Silicon Valley founders, these technical
+[16:20.96] founders now start buying these
+[16:22.48] companies. Something you and I talked
+[16:24.16] about is what next? What happens now?
+[16:26.16] Well, the simple narrative is you buy
+[16:28.00] enough revenue base, enough scale and
+[16:31.12] then you insert AI into it in a
+[16:33.20] judicious way making certain assumptions
+[16:35.44] around digital transformation of the
+[16:37.20] business itself that there is enough
+[16:38.48] software that you can replace
+[16:40.56] >> and then you basically expand margins
+[16:42.64] >> or you expand topline also mean because
+[16:44.64] you can do things better.
+[16:47.12] Let's assume you want to buy one, two,
+[16:49.44] three of these companies. I think the
+[16:50.88] part where our discussion got really
+[16:52.48] interesting is what is the nature of
+[16:54.48] this business you're getting into. It so
+[16:56.48] happens if you sit down and think about
+[16:58.08] it, this is not a pure software business
+[17:00.16] anymore. You have written great
+[17:01.28] software. You have this great tech team.
+[17:03.52] You've sold a bit of software say into
+[17:05.44] design partners. Then you went and
+[17:07.12] bought two of these design partners.
+[17:08.80] Assume that.
+[17:09.92] >> And you bring in like $100 million of
+[17:11.92] revenue, but you also inherit 700
+[17:14.72] people. random number. I think the new
+[17:17.44] thing for us Silicon Valley folks for
+[17:19.20] VCs
+[17:20.72] uh uh you know who are also builders
+[17:22.64] like us at ABC we both build companies
+[17:24.64] we incubate but we also invest massively
+[17:27.68] >> is I think the nature of the firm of the
+[17:31.60] company which will do this will
+[17:32.80] fundamentally change because you know
+[17:34.72] this you need this deep operating chops
+[17:37.60] >> to go run these companies. Now do you
+[17:39.76] keep the old founder of that company?
+[17:43.04] Does she or he stay on with incentives?
+[17:46.96] Are they excited to increase margins?
+[17:49.60] Would do they want their company, their
+[17:51.12] services government to become tech
+[17:52.56] first? These are the deeper questions
+[17:54.88] that I don't think Silicon Valley
+[17:56.56] venture has grappled with. Our Silicon
+[17:59.36] Valley founders have grappled with
+[18:01.12] private equity has grappled with it.
+[18:02.80] There's always been this concept of
+[18:04.24] operating partners. But what we are
+[18:06.32] trying to do is something new that
+[18:07.84] private equity has not done before
+[18:10.08] >> which is private equity generally is
+[18:12.56] more about the cost structure. After you
+[18:14.32] buy companies you take a you take a very
+[18:17.04] strong look at that at that data at the
+[18:19.44] analytics you cut costs so on and so
+[18:21.68] forth. It's not like you build new
+[18:24.00] products. What we are trying to do here
+[18:26.24] is we are trying to fundamentally change
+[18:28.40] the way in that business operates. You
+[18:30.72] can think of that new techn business is
+[18:32.64] almost like a new product you're
+[18:33.92] building which is not all software.
+[18:36.40] >> So what is a product now if not
+[18:37.92] software? Well, the well in that case
+[18:40.80] the product still remains that you are
+[18:43.04] doing an MSPIT play, you're doing a
+[18:44.96] dental services play, you're doing but
+[18:47.68] with a lot of AI thrown in, right? So
+[18:51.20] the it is still about dental services
+[18:53.68] >> but the nature of how you're delivering
+[18:55.44] those services is changing which is AI
+[18:57.44] first
+[18:59.60] but I feel Silicon Valley leaders
+[19:03.20] technical leaders going and running
+[19:05.60] >> and invas processing business a soft uh
+[19:08.24] clinical trials business uh uh you know
+[19:11.44] all these examples I give
+[19:12.56] >> not in a foundation
+[19:13.36] >> that is that is a hard one you have to
+[19:15.84] bring in domain experts there that's why
+[19:18.16] I'm pointing out that that operating
+[19:20.08] principles around building businesses
+[19:21.84] like this is quite different. It's new
+[19:24.64] because we don't want to be also pure
+[19:26.64] private equity. We want to insert tech
+[19:29.60] into it. We want to keep on building.
+[19:32.16] That's why I'm saying that is where I
+[19:33.84] think a lot of the known unknowns are.
+[19:36.00] Building software, doing AI, buying
+[19:37.92] businesses is known. People are doing
+[19:39.52] this already last one year. How do you
+[19:41.76] actually operate them at scale? What
+[19:43.44] culture do you need is a known unknown.
+[19:46.08] After that you start thinking what is
+[19:48.08] the outcome.
+[19:50.32] Are you going to get to SAS multiples if
+[19:52.08] you go IPO? Is it going to be closer to
+[19:54.08] VC, closer to PE? That is also unknown.
+[19:56.88] So that that's what that's what you and
+[19:59.28] I were discussing.
+[20:00.32] >> So let's dissect first of all. Why do
+[20:03.04] SAS companies get high multiple? What's
+[20:05.20] what's why is
+[20:06.32] >> that's a deeper question that you're
+[20:07.76] putting me on the spot. I think SAS has
+[20:10.16] also gone through a reboot. Ultimately
+[20:12.72] to me the reason a lot of forward-
+[20:15.52] facing high multiples have been given.
+[20:18.16] There are a few drivers below it. One is
+[20:21.20] that usage based pricing will keep on
+[20:23.20] growing without too much input. You
+[20:26.32] don't have to throw bodies at it. That
+[20:28.24] installed base will keep growing. That
+[20:30.48] there's a lot of software in the act of
+[20:32.16] doing that business. That's number one.
+[20:34.00] Number two is in SAS, if you look at
+[20:36.48] just pure departmental SAS or vertical
+[20:38.32] SAS, there are two or three winners and
+[20:41.60] the ones who will get network effects
+[20:43.60] will actually end up winning big. Right?
+[20:45.68] If you go into this department sales or
+[20:48.16] what marketing that once you start
+[20:50.32] winning most people buying sales
+[20:52.16] software will actually buy from to me
+[20:54.00] those are key like those are key parts
+[20:56.96] you have to come back and think about
+[20:58.64] whether that's going to be possible in
+[21:00.72] uh in AI enabled services businesses in
+[21:04.48] terms of how how will you buy the next
+[21:08.00] five companies and scale them is there a
+[21:10.48] network effect there I would posit
+[21:12.64] that's going to be a tough one
+[21:15.20] that that that once you have grown to
+[21:17.28] hund00 million in revenue by buying
+[21:18.96] three companies, growing to $400 million
+[21:21.52] by buying 10 more companies, that's not
+[21:24.16] a network-based act that you will
+[21:26.32] probably have to do some special stuff
+[21:27.68] to do those things in parallel. That's
+[21:29.76] kind of that's kind of the limit of my
+[21:31.68] thinking. I can't go further than that.
+[21:33.44] >> So then I have two schools of thought
+[21:35.04] here. One is you're saying uh uh the SAS
+[21:38.72] principles don't apply here of scaling.
+[21:40.72] That's that's the reason you're saying
+[21:42.72] >> partly. Y
+[21:43.44] >> yeah. But the other thing is once the
+[21:46.24] infra AI infra is ready and let's say I
+[21:49.92] go ahead and buy a BPO at 1x revenue
+[21:52.00] multiple let's say $20 million of BPU
+[21:55.28] revenue I I raise VC money as a founder
+[21:57.84] I buy them at $20 million or or lesser
+[22:01.20] uh right then at least I have the $20
+[22:03.12] million revenue with and I build I get
+[22:05.12] the new infra uh the AI infra for you
+[22:09.12] know reducing headcounts in the BBO
+[22:11.36] getting more efficiency
+[22:12.96] >> AI enabled software which has infra
+[22:14.72] which has applications everything. Yeah,
+[22:16.24] fair enough.
+[22:16.72] >> But the second thing which we are also
+[22:18.00] not counting is how the increase of this
+[22:21.60] BPO capacity to get more revenue
+[22:24.48] >> that is the topline part that I was
+[22:26.00] mentioning. Yes.
+[22:27.12] >> So do I have to buy a new business to
+[22:29.12] increase the topline business or can
+[22:31.36] this existing setup with AI
+[22:34.16] uh eat like get out get more business
+[22:36.64] outside?
+[22:37.92] >> That's a great question. So the question
+[22:39.76] we have to ask is the following.
+[22:42.64] How does top of the funnel sales
+[22:44.32] marketing work there? Are you have you
+[22:47.04] brought in some amazing domain experts
+[22:49.04] who are known in the domain so that new
+[22:51.60] customers will come automatically that
+[22:53.12] there's a network effect which is domain
+[22:54.72] specific could be
+[22:56.64] >> you could also use genai specific tools
+[22:58.88] in sales and marketing which is a
+[23:00.64] smaller flywheel question I think I
+[23:03.36] think it also has to do with the
+[23:04.72] specificity of that domain like we have
+[23:07.20] looked at travel a lot we've looked at
+[23:09.20] uh corporate travel we've looked at
+[23:11.36] >> consumer travel highly fragmented space
+[23:14.72] >> huge space And one of the top five
+[23:16.56] domains you can think of, right?
+[23:18.48] >> Uh by running a good business in the
+[23:20.96] corporate travel case with 200 million
+[23:23.36] ARR, are you able to have all the new
+[23:26.16] customers join you?
+[23:28.88] Unclear. Unclear about how people make
+[23:31.84] corporate travel decisions. That's why
+[23:33.92] I'm saying it's also domain specific act
+[23:36.32] around fragmentation around how
+[23:38.24] customers, you know, buy these services
+[23:41.12] and if there's a network effect there.
+[23:43.04] That's why I'm saying it's a bit of an
+[23:44.48] unknown unknown. So then but it's true
+[23:47.28] for software also because in software al
+[23:49.84] the case also you are also replacing
+[23:52.16] something
+[23:53.92] harder are the green field like I don't
+[23:56.16] know how much green field is left
+[23:57.68] >> I think replacing software and replacing
+[24:01.28] services the fundamental acts are
+[24:03.36] probably a little bit different
+[24:04.56] >> can you tell more about it or how
+[24:05.76] they're
+[24:07.36] >> it's about saying uh so think of a
+[24:09.84] customer of the services BO industry
+[24:12.64] it's about the nature of the business
+[24:14.56] you're running suppose you in the
+[24:16.40] category called PEO which is I think
+[24:18.08] professional and employees or something
+[24:19.68] like that. You can think of that as all
+[24:21.52] things HR and payroll and benefits for
+[24:24.24] small to medium businesses. Yeah,
+[24:26.40] >> think about a company which is small to
+[24:29.12] medium which is growing
+[24:30.88] >> which decides to go with a new HR and
+[24:34.32] payroll payroll provider and how do you
+[24:38.00] make the decision when you are at 10 to
+[24:41.04] 20 employees
+[24:42.40] >> versus
+[24:44.08] 100 employees versus 500 employees
+[24:46.88] because when you bring in a services
+[24:48.48] business like that it so happens most of
+[24:51.60] the services being supplied by that
+[24:54.24] supplier is through human beings.
+[24:57.60] So the customer is not only dealing with
+[24:59.84] software where you suddenly say oh I had
+[25:02.56] this UI
+[25:04.32] >> where my the the the decision of buying
+[25:07.12] the service is just like changing my UI
+[25:09.60] and migrating a database. So that I
+[25:12.72] think those are the fundamental reasons
+[25:14.32] where when the handover is just about
+[25:16.72] software it's much more streamlined
+[25:19.04] structured people know there are
+[25:21.12] consultants who will migrate your HR
+[25:23.12] system from then this to this
+[25:26.32] but the act of going from one services
+[25:30.40] outsourcing to another is much more
+[25:32.56] human-driven. That is one reason I think
+[25:35.36] network effects are harder to adopt.
+[25:37.60] again, we'll come back in 2 years and
+[25:39.76] I'm sure I'm going to be proven wrong,
+[25:41.28] but that's where my head's at today.
+[25:43.36] >> Okay. And that's why you think these
+[25:45.44] businesses don't have inherently don't
+[25:47.92] have network effects yet.
+[25:49.44] >> Yeah.
+[25:50.32] >> So, they'll not never get SAS kind of
+[25:52.48] multiples.
+[25:53.52] >> Uh, look, the final valuation stuff is
+[25:56.48] anybody's guess. It depends on the on
+[25:58.48] the market. But make no mistake, these
+[26:01.52] are going to be massive dividend earning
+[26:04.16] businesses, cash flow businesses, and
+[26:06.48] the margins might expand dramatically.
+[26:09.44] Uh what multiple people will pay for
+[26:11.76] what the formula will be, I don't know.
+[26:14.00] But can these be incredibly lucrative
+[26:16.08] businesses? 100%.
+[26:18.72] But do you think uh uh the the kind of
+[26:22.08] TAM available to grab
+[26:25.28] right now is is at the highest
+[26:29.20] because that's TAM creates companies,
+[26:30.96] right?
+[26:32.00] >> That's why the services side is really
+[26:33.84] exciting. I mean the TAM is uh scales
+[26:36.00] with world population.
+[26:37.68] >> It is insane. So the answer is what will
+[26:40.72] it grow to? I don't know. What is it
+[26:42.24] today? It's already uncountable.
+[26:44.08] >> What is it today?
+[26:45.36] >> I actually don't know the answer. Don't
+[26:47.20] put the uh multiple trillions of dollars
+[26:50.00] for sure whether it's tens or 20s I
+[26:52.24] don't know the answer
+[26:53.36] >> but it is vastly larger than the
+[26:55.52] enterprise software space okay
+[26:57.12] >> that much I can tell you
+[26:59.36] >> so then it leads to the
+[27:01.76] >> both times are very large services time
+[27:03.68] is much larger today than software time
+[27:05.84] but both are massive
+[27:07.36] >> so it it leads to the question then you
+[27:10.56] know companies like snowflake uh then
+[27:14.56] you know service now sales This force
+[27:17.12] got created in the last 15 years in
+[27:19.92] enterprise software enterprise infra. So
+[27:23.68] the coming TAM because of what AI is
+[27:26.24] unlocking is much larger than that.
+[27:29.28] >> Um on the enterprise software and the
+[27:32.00] examples you gave I uh I'm not sure that
+[27:37.12] is a that that I will support that
+[27:39.60] statement strongly. I think companies
+[27:42.48] buying software are still buying
+[27:45.28] software from the same vendors for the
+[27:47.04] same departments.
+[27:48.88] >> So will they pay more is that part I
+[27:51.84] don't know but I think that's unlikely.
+[27:54.08] It has to do with the customers domain.
+[27:57.28] Are they going to grow a lot more? That
+[27:59.36] is an unlikely uh observation to me. So
+[28:02.48] I don't know if the rate of growth of
+[28:05.44] pure enterprise software horizontal
+[28:08.24] software that you you know all the stuff
+[28:09.92] you mentioned snowflake uh datab bricks
+[28:13.44] service now um Salesforce SAP right
+[28:18.56] Oracle on the enterprise software side I
+[28:20.88] don't know if the rate of growth of the
+[28:23.20] time has grown don't know the answer the
+[28:25.84] question is can they now sell this
+[28:28.56] software to new industries that has
+[28:30.48] never bought
+[28:32.64] Maybe that is going to be true because
+[28:34.88] models will be used because
+[28:36.32] orchestration software will be used and
+[28:38.32] you'll be selling into new domains that
+[28:40.00] have not been touched. If that is true,
+[28:42.32] if this that bridge is created where s
+[28:45.76] software of the new sort can be sold
+[28:48.00] into new domains, then the answer is
+[28:49.92] true. So that's a great question uh
+[28:53.36] worth visiting again.
+[28:56.56] Now uh I the the same is true for the
+[28:59.44] services side. I think services side
+[29:01.60] will become more efficient for sure as
+[29:04.72] it ingests more AI enabled software.
+[29:07.68] Will it enable it to create new markets?
+[29:11.28] Might be true. It might be able to do
+[29:13.52] new things that has not been done
+[29:15.44] before. Uh we haven't even mentioned
+[29:17.92] things like manufacturing. We haven't
+[29:19.60] mentioned things like defense. We
+[29:21.36] haven't mentioned you know all the
+[29:23.12] applications robotics. We haven't even
+[29:24.72] gone there. We haven't talked about the
+[29:26.80] chemical industry. We haven't talked
+[29:28.24] about the mechanical industry. There are
+[29:30.64] massive massive We haven't talked about
+[29:33.04] supply chain changing. There is going to
+[29:35.04] be massive impact in those industries
+[29:36.80] also. How will the fundamental TAM of
+[29:39.36] this industry change? I do not know that
+[29:41.44] answer.
+[29:42.88] >> And do you think in the last 20 years if
+[29:45.20] you think fundamentally
+[29:47.28] TAM decided the course of how new
+[29:49.76] companies got produced in enterprise
+[29:51.52] software?
+[29:53.28] >> I think there was growth all around.
+[29:56.00] there was prosperity and growth all over
+[29:58.96] all over the world. I think a few things
+[30:01.60] happened. I think internet and mobile
+[30:04.08] phones changed everything. So people
+[30:07.36] were much more connected not just social
+[30:09.44] media but through commerce. If you look
+[30:11.04] at India, India basically hopscotched
+[30:14.08] and went from one generation to fifth
+[30:16.16] generation through mobile phone
+[30:17.92] infrastructure and the use of mobile
+[30:19.28] phone. Number one. Secondly, India and
+[30:21.12] Brazil did very foundational work and
+[30:23.92] went from a first generation to seventh
+[30:26.40] generation for its payment
+[30:27.84] infrastructure. All the stuff you know
+[30:30.56] really really well
+[30:31.84] >> and that has caused feedback loops and
+[30:34.64] network effects in not only bringing
+[30:36.88] people out of poverty but in expanding
+[30:38.88] the middle class. So if worldwide there
+[30:41.60] is more growth and more prosperity
+[30:43.44] getting created then the answer is yes.
+[30:45.92] It so happens that the enterprise
+[30:48.96] software market has grown
+[30:51.76] remarkably in the last 20 years during a
+[30:54.40] time of mostly peace and of uh the
+[30:58.32] middle class rising in many companies
+[31:00.72] rise of China rise of India rise of the
+[31:04.16] far east of of southeastern Asia I don't
+[31:08.08] know I can't predict the future well
+[31:09.68] enough to tell you that in the in the
+[31:12.24] you know in the presence of climate
+[31:13.60] change and in the presence of the
+[31:14.80] current geopolitical legal situations
+[31:17.12] how global prosperity will grow but I
+[31:20.72] think TAM is also tied to that which is
+[31:23.44] probably something that you're also
+[31:24.64] bringing up yeah don't know the answer
+[31:26.32] but that's the how the question should
+[31:28.00] be posed
+[31:28.96] >> and and then the next thought is you
+[31:31.12] know the India US corridor it saw in
+[31:34.00] last 25 years the emergence of IT
+[31:36.64] services companies I think that's why
+[31:39.28] you know India had a what worked for
+[31:42.40] India was highly qualified
+[31:45.92] labor that could do IT services and
+[31:49.04] various kind of services available in
+[31:51.04] the US and that was a tailwind behind
+[31:53.36] TCS, Infosys and all the services
+[31:56.16] companies that got created in the
+[31:58.08] initial part of 2010. Zoho Freshworks
+[32:01.60] captured you know a bunch of use cases
+[32:05.52] starting with ticketing you know between
+[32:07.60] the India US corridor because you know
+[32:10.48] as the new economy was was growing new
+[32:13.44] companies were getting built up they
+[32:14.72] needed software like ticketing and and
+[32:17.36] much other software right now we are
+[32:20.96] seeing like the third era if you had to
+[32:22.56] say the first era was IT services second
+[32:25.12] era was some uh products
+[32:29.44] so So what is this third era and how
+[32:31.44] much uh companies can we see how big
+[32:35.28] companies can we see in this era and
+[32:37.12] what needs to happen for that to happen
+[32:39.60] >> that's a great question um just to like
+[32:43.12] frame the conversation well remember and
+[32:46.00] you and I talked about it in my past
+[32:48.00] life some of my best teams during my
+[32:50.72] LinkedIn days and my Yahoo days sat in
+[32:52.56] Bangalore and and Hyderabad um uh
+[32:57.44] American companies whether it's Oracle
+[32:59.68] Whether it's LinkedIn, whether it's
+[33:00.96] Yahoo, whether it's Google, whe it's
+[33:02.40] Facebook have had phenomenal and you
+[33:04.56] know before that Cisco analog devices
+[33:06.40] has had amazing core product teams
+[33:08.96] sitting there not QA not support not
+[33:12.00] like what we call wink wink you know
+[33:14.64] secondass functionality but core
+[33:16.24] functionality
+[33:17.36] >> secondly if you look at amazing uh deep
+[33:21.44] tech companies whether it's Newanx
+[33:23.20] whether it's rubric whether it's hotspot
+[33:25.20] whether it is cub bowl whether it is
+[33:28.16] today data bricks
+[33:30.24] have had amazing
+[33:32.32] engineering teams there. I just want to
+[33:33.76] call out these are all core deeply
+[33:36.24] difficult software pieces that were
+[33:37.76] sitting there. The other thing I'm very
+[33:39.68] excited about India. So you know I I
+[33:41.52] gave a very engineeringcentric view of
+[33:43.04] the world. So it's a bottomup view. So
+[33:44.64] let me finish that first. I am very
+[33:46.64] excited about the technical talent and
+[33:48.48] leadership I saw in quote unquote India
+[33:51.84] native companies like Razer Pay uh like
+[33:55.84] um Phone Pay like Swiggy like Flipkart.
+[34:00.24] I think those are very important things
+[34:01.92] to call out. The reason being these are
+[34:04.72] the kind of cader of engineers and
+[34:06.96] leaders who are thinking about much
+[34:09.20] deeper systems problems AI problems data
+[34:12.56] problems and I feel that's where a lot
+[34:15.84] of the heart of Silicon Valley lies here
+[34:18.08] that those level of problems people have
+[34:20.08] to know how to solve them want to solve
+[34:21.60] them and want to do deeper things which
+[34:23.52] lead to like technical modes and network
+[34:25.36] effects I am still optimistic that will
+[34:28.80] keep on happening in India not just SAS
+[34:31.52] so if I look at my portfolio some our
+[34:34.48] best engineers of my portfolio whether
+[34:36.32] it's in rocket lane or usher or
+[34:38.40] yogabetite or pankil's company John
+[34:41.12] chambers's company Nile and I can keep
+[34:43.36] going on and on the best engineering
+[34:45.28] teams and the major part is all sitting
+[34:48.16] in Bangalore and Madras so to me the
+[34:51.76] core daring and technical depth that
+[34:54.80] these teams bring in is really important
+[34:57.36] for the future of the India US corridor
+[34:59.52] SAS indeed departmental SAS I see more
+[35:03.52] of that happening vertical SAS I've seen
+[35:05.68] a bit less happen out of India because
+[35:07.76] when you're building in India selling in
+[35:09.28] the US and you're not selling generic
+[35:11.36] enterprise software you need much deeper
+[35:14.00] domain expertise of the vertical you
+[35:15.76] sell into that's probably needs to scale
+[35:18.24] in India more to me I think India should
+[35:21.76] continue to accelerate SAS companies
+[35:25.12] because of the companies you pointed out
+[35:27.36] and the companies I pointed out and you
+[35:29.28] gave an example of of of atom comic
+[35:31.76] works which is which is a fantastic
+[35:33.52] company and there are several such
+[35:35.12] examples. I would like to see more
+[35:37.60] examples like that of core enterprise
+[35:40.96] SAS functionality being developed in
+[35:42.88] India. The question then becomes what
+[35:46.00] sits where? What you and I both talked
+[35:48.88] about is you see a secular movement of
+[35:51.68] those founders coming to the Bay Area
+[35:53.84] for multiple reasons. One is they want
+[35:55.60] to be closer to the AI wave which surely
+[35:58.16] is the deepest here and the highest here
+[36:00.96] right now and there is the no sign of
+[36:04.08] that changing anytime soon. Second and
+[36:06.72] equally important is the is the go to
+[36:08.72] market part. So I think uh starting with
+[36:12.88] Freshworks and Zoho I think now I think
+[36:16.64] the field is just getting formed. I
+[36:18.40] think all these amazing founders who
+[36:20.72] have probably never been in India
+[36:22.16] before. I mean our amazing founder Sri
+[36:24.56] Rocket Lane moved from India was in Utah
+[36:27.28] and then we had like hey you got to move
+[36:29.76] you got to move to the Bay Area. He's
+[36:31.20] finally moved to the Bay Area and we are
+[36:32.80] very proud of Rocket Lane of the
+[36:34.64] technical team sitting in Chennai. It's
+[36:36.32] amazing and street is an amazing but
+[36:38.08] he's having to build his goto market
+[36:39.76] team out here. I think these are the
+[36:42.16] specificities of the India US corridor
+[36:44.24] in our area which is software that I
+[36:46.96] think is still being worked out. What is
+[36:50.08] amazing is you know we have a small
+[36:51.76] investment in a company called thesis
+[36:53.76] which is in the software around design
+[36:55.92] cycles workflow software a lot of the AI
+[36:59.76] infused enterprise software ideas around
+[37:02.24] tooling around workflows for every
+[37:04.32] department every persona we are seeing
+[37:06.88] more and more come from India that's
+[37:08.32] very very very very positive what would
+[37:11.28] I like to see happen I would like to see
+[37:14.48] much more applied AI AI infused work
+[37:17.60] happening sitting in Bangalore
+[37:20.00] It's starting. We were just there a
+[37:21.60] month ago. We did a bunch of events with
+[37:23.20] my friend who's the CTO of Cloudflare.
+[37:25.84] It was amazing, exciting, phenomenal
+[37:27.84] talent. Just want to see more companies
+[37:30.32] coming from there. Want to see more
+[37:31.84] funding from our Indian VC friends. I'm
+[37:34.40] friends with everybody there or these
+[37:35.68] great funds. So the question then
+[37:37.84] remains, it's pretty clear the tech part
+[37:40.88] will continue to be built really well
+[37:42.56] from these uh from these ecosystems. The
+[37:45.36] question is product mindedness. the
+[37:48.64] design aspect of product, the geometry
+[37:50.80] of the product and then network effects
+[37:53.04] around developer uptake or you know
+[37:56.00] customer uptake and and go to market to
+[37:58.88] me those are the areas that are still
+[38:00.80] being proven out because when these
+[38:02.64] founders for example three and so many
+[38:05.28] of your founders are moving here what
+[38:07.36] will the go to market team scale as
+[38:09.28] where will the heads of sales sit where
+[38:11.44] will marketing be done in terms of
+[38:13.12] actual branding to me I'd love to see
+[38:16.40] like faster and deeper execution there.
+[38:18.72] So that's on the enterprise software
+[38:20.16] side. Is it okay if we talk about
+[38:21.76] services side also?
+[38:23.12] >> Your and my passion is this future
+[38:25.04] facing thing which is about AI enabled
+[38:27.28] services that you and I feel very
+[38:29.60] strongly about and we're debating a lot
+[38:31.28] of questions about structure and the
+[38:33.68] nature of the returns and stuff which is
+[38:35.52] exactly the topic to think about. I
+[38:37.92] would love to see
+[38:40.08] deeply disruptive AI enabled services
+[38:42.48] companies coming from India and based in
+[38:44.32] India. Why? because so much of
+[38:46.32] >> serving India serving us.
+[38:48.32] >> So think about uh I not serving India. I
+[38:51.76] would like it to serve India also. Um we
+[38:54.80] have the India market part that we
+[38:56.24] haven't talked about which I don't
+[38:57.44] invest in which is I think a very
+[38:58.96] fertile area but in the context of our
+[39:01.44] discussion everything is about serving
+[39:03.68] the multinational market. So I would say
+[39:06.40] massively Europe
+[39:08.56] increasingly Middle East and surely
+[39:10.72] massively USA. It is about building in
+[39:14.00] India and selling into the whole world.
+[39:15.60] Right. And you just mentioned people
+[39:17.12] selling into Australia at the beginning
+[39:18.40] of this conversation. I really have this
+[39:21.28] dream and ambition and I want to do my
+[39:23.20] bit to help out and invest and even
+[39:25.68] incubate companies out of India which is
+[39:28.16] in the AI enabled services area. AI
+[39:30.48] enabled software services, AI enabled
+[39:32.72] non-software services.
+[39:33.60] >> Can you give some examples in the
+[39:34.64] portfolio? We in the portfolio we have
+[39:38.16] uh we have a small investment in a
+[39:39.92] company called Titan which is in the MSP
+[39:42.24] IT rollup phase area. We are very proud
+[39:45.20] of our clinical trials company called
+[39:46.88] Tilda which is now in the uh which is
+[39:49.84] about automation of clinical trials
+[39:51.84] which is now in the CRO space which is
+[39:53.76] in the research space which is doing
+[39:55.68] extremely well. We have a company called
+[39:58.48] Loop which is not based out of India
+[40:00.40] which is based out of here. uh uh tilda
+[40:02.56] has its engineering team largely sitting
+[40:04.16] in India which so there's a strong India
+[40:06.00] but loop is an amazing company in the in
+[40:08.40] the entire payment cycle space for you
+[40:10.48] know supply chain and invoicing it's a
+[40:12.48] very promising company has built amazing
+[40:14.40] software and we have a bunch more I mean
+[40:16.72] maybe we have something in legal we
+[40:18.32] can't talk about maybe uh uh we will
+[40:21.52] someday have something in the the
+[40:23.04] services aspect of travel that we can't
+[40:24.88] talk about but uh in the context of the
+[40:28.16] US market from USA we have a lot of
+[40:30.96] companies Coming back to the India
+[40:32.64] corridor, I would love to see I mean the
+[40:35.28] expertise that is sitting in India at
+[40:37.04] all levels, business level, exec level,
+[40:40.08] product level around all things services
+[40:42.80] is phenomenal, probably number one in
+[40:44.48] the world.
+[40:46.24] Why shouldn't the AI enabled revolution
+[40:49.04] in those services industries not be
+[40:51.04] happening from Bangalore and Pune and
+[40:52.80] Chennai and Hyderabad? Would love to see
+[40:55.12] that happen more. That will create a
+[40:57.68] much larger talent pool going after
+[40:59.76] this. We are very excited to see those
+[41:02.16] in those bottom up seed investments a
+[41:04.72] investments happen from Silicon Valley
+[41:06.32] some from New York. But that is a big uh
+[41:08.88] uh area of you know ambition that I have
+[41:11.44] and helping make that happen from out of
+[41:14.96] India. So that in a weird way the AI
+[41:18.56] enabled services tech the thoughtfulness
+[41:21.76] the nucleus of disruption is coming from
+[41:25.60] Bangalore itself. That would create a
+[41:28.08] very interesting world that where where
+[41:30.88] the where the Indian leaders, the Indian
+[41:32.88] investors, the Indian engineers are not
+[41:35.60] just thinking about it in a defensive
+[41:37.44] way that our industries will be affected
+[41:39.52] by something from outside but rather
+[41:41.68] they are charting their own course of
+[41:44.80] revolution and evolution sitting in
+[41:46.72] India. Would love to see that happen and
+[41:48.96] help make that happen even more. So, so
+[41:51.76] let's imagine a a new age AI services
+[41:54.88] company sitting out of India uh maybe
+[41:58.64] targeting BO industry right and serving
+[42:02.24] the US market for example like how could
+[42:05.12] that kind of company you know if you
+[42:07.44] have to to think first principle grow
+[42:10.40] their business in the US and what would
+[42:13.04] they replace
+[42:14.32] >> so if you look at the BPO companies I
+[42:16.96] don't know about the really small ones
+[42:18.72] but I have taken a look at the
+[42:20.40] mid-market a lot. You know this state
+[42:22.64] called Texas,
+[42:23.92] >> you go to the two cities called Houston
+[42:25.84] and uh Dallas,
+[42:28.24] >> huge number of the mid-market Indian BP
+[42:30.80] BP company CEOs are sitting in these two
+[42:32.96] cities.
+[42:33.28] >> Okay,
+[42:33.84] >> so think about it. 90% of the employees
+[42:37.12] 95% of the employees are sitting in
+[42:39.04] India but the CEOs are often sitting in
+[42:41.52] these two cities and some in New Jersey.
+[42:43.60] Those are the uh places where I found
+[42:45.44] it. That is not going to change. I think
+[42:48.40] the same way they are hustling and
+[42:50.40] growing BO output about getting same
+[42:55.20] analogy as what you you and I just
+[42:57.04] talked about in the context of SAS same
+[42:59.12] thing has to be true that the go to
+[43:01.20] market the expansion factor of so the
+[43:04.56] sales and marketing discipline and
+[43:06.40] landing mode has to happen uh sitting in
+[43:09.60] USA more and more as it's already been
+[43:12.56] happening but the actual AI enabled BO
+[43:15.76] and the services large part of that
+[43:18.00] headcount and the and kind of the
+[43:20.48] disrupted model of delivering more with
+[43:23.36] less and growing faster with less could
+[43:26.00] happen sitting in India and
+[43:27.68] >> and let's think from first principle
+[43:29.44] wise right so they are not building a
+[43:31.76] new new industry or they're not getting
+[43:34.00] contracts from a new industry they're
+[43:36.16] getting contracts from existing
+[43:37.68] industries let's say banking in the US
+[43:40.24] like where a like a bank of America or
+[43:43.76] JP Morgan is outsourcing
+[43:46.32] uh the BPO
+[43:47.60] >> y
+[43:47.92] >> right
+[43:48.48] >> and to be fair the BFSI sector is a
+[43:51.36] massive sector.
+[43:52.24] >> Yeah.
+[43:52.56] >> Yep.
+[43:53.36] >> So so how would they would have to
+[43:55.92] replace the existing
+[43:58.08] BPOS there?
+[44:00.80] >> Yes and no. That's a great question. Um
+[44:03.84] so I I some people will probably
+[44:05.84] disagree with me. I think these
+[44:07.92] transformations are going to happen in
+[44:09.44] phases.
+[44:11.04] I think the existing BPOS many a
+[44:14.80] majority of them are Indian owned
+[44:16.72] companies in the say the India US
+[44:19.28] corridor companies they what I'm
+[44:21.76] pointing out is that they shouldn't wait
+[44:23.36] to be disrupted
+[44:25.20] they should there will be two kinds of
+[44:27.04] companies coming one is new age BPOS
+[44:29.12] that hey I'm bringing this new uh BO
+[44:33.28] which only has 10 employees instead of
+[44:34.88] 100 we can which can do the same thing
+[44:36.32] as you aspirationally that's where the
+[44:38.48] market is going
+[44:39.68] >> I I am betting on that that is not going
+[44:41.68] to happen in one or two years. There's a
+[44:43.92] phase-wise refinement of that that's
+[44:45.68] going to happen. So I feel the current
+[44:49.84] BPOS who own these contracts have an
+[44:52.00] unfair advantage in making themselves
+[44:54.16] better. That's like crossing the chasm.
+[44:56.72] That's like the whole problem of u
+[45:00.80] I'm forgetting the phrase. It's like the
+[45:03.68] whole innovator's dilemma problem,
+[45:05.84] right?
+[45:07.12] they have an opportunity to make their
+[45:09.12] own processes much more efficient. And
+[45:11.04] I'll give you one anecdotal example. Uh
+[45:14.40] we have spoken to at least five or six
+[45:17.12] India US corridor CEOs sitting in Dallas
+[45:19.36] in Houston who are in the playing in the
+[45:21.36] mid market.
+[45:23.36] Very often younger founders
+[45:26.72] 40 50 60 million in annual revenue not
+[45:29.84] hundreds of millions not in billions.
+[45:32.80] tremendous eagerness in changing their
+[45:35.36] how you know how their business model
+[45:37.36] they want to be design partners of these
+[45:39.76] startups. So to me that group that
+[45:43.84] ecosystem of mid-market founders who are
+[45:46.80] forward- facing have a massive
+[45:48.40] opportunity partly is can you disrupt
+[45:51.36] yourself other is will others come in
+[45:53.84] and cannibalize. Third question is
+[45:56.64] people who are buying from them is that
+[45:58.88] growing or not are those the three parts
+[46:00.72] let's get back to your question one more
+[46:02.56] time. So, so my question is right how
+[46:04.96] how will the new age AI services company
+[46:08.32] get the business and I don't think that
+[46:11.04] the older BO businesses will be able to
+[46:13.92] cannibalize themselves like
+[46:16.80] >> they will not be able to cross the can
+[46:18.16] >> they will not be and they will not be
+[46:19.60] able to realize the importance of AI in
+[46:21.84] their business
+[46:23.60] because the leaders have to re-educate
+[46:26.16] they have to replace themselves right
+[46:27.52] and it's not possible so but then
+[46:30.08] there's a business setting and a new new
+[46:32.80] company which has built AI enabled
+[46:34.64] services they have to eat the business
+[46:36.96] which is for example in banking u so
+[46:40.40] they either offer less cost or they
+[46:43.20] offer uh more efficiency to these banks
+[46:48.48] so so my question is on along these
+[46:50.40] lines
+[46:51.04] >> I think uh the way I would phrase it
+[46:52.96] that's a great question is how do you
+[46:54.48] sell these new services so I think and
+[46:58.24] you are hinting at that so I'll take the
+[47:00.00] bit I think Today a lot of the economic
+[47:02.72] model is time and materials. it is going
+[47:05.68] to go towards out outcome based pricing
+[47:08.24] that is we are already seeing that in
+[47:10.48] one of our companies uh very very
+[47:13.52] well-known company young company named
+[47:15.28] bespoke labs uh founder is from Google
+[47:17.36] deepmind mah co-founder is a professor
+[47:20.08] of uh CS from Berkeley Alex demarcus
+[47:22.88] which are doing something very deep in
+[47:24.48] the post-raining phase of models both in
+[47:26.80] the data data curation side and in RL
+[47:30.08] environments you you sent me a bunch of
+[47:32.64] questions they're doing some very deep
+[47:34.40] work in these areas they are already
+[47:37.44] working with one data science consulting
+[47:40.08] company very well-known mid-market
+[47:41.76] company which are which are then the
+[47:44.88] partnership is bespoke labs is helping
+[47:47.12] them deliver software
+[47:49.68] for say analytics use cases data science
+[47:52.56] use cases which is deeply AI enabled
+[47:56.72] building new models where th that
+[48:00.16] consulting company is changing its
+[48:01.84] business model so inevitably ly uh this
+[48:06.40] you you mentioned banks
+[48:08.88] the acquiring uh the person uh buying a
+[48:12.80] service uh provider service will be is
+[48:16.32] beginning to ask questions around
+[48:17.84] outcomes versus time and material. I
+[48:20.40] feel
+[48:23.04] I feel it's going to go through phases.
+[48:25.92] I think this outcome based pricing is
+[48:28.72] just beginning to hit the market. It is
+[48:31.20] being proven out and
+[48:34.56] a lot of this will be dependent on the
+[48:37.04] customer's taste and how do they manage
+[48:39.36] their own hierarchy and incentives
+[48:41.28] inside because
+[48:44.16] uh it depends on the complexity of the
+[48:45.92] it depends on a lot of multi-dimensional
+[48:47.68] problems where uh Siddhart has now is a
+[48:51.44] big exec on the BFSI side
+[48:53.60] >> comes to BG and BG is this new AI
+[48:56.08] enabled entrepreneur and he's has he
+[48:59.12] knows that the old uh money that Sedhar
+[49:01.60] spent was in the context of time and
+[49:03.60] material and says no no no you have to
+[49:06.08] get this outcome done. It has to do with
+[49:08.72] the nature of the project. It has to do
+[49:10.88] with is that outcome measurable? Is
+[49:13.12] there a customer support and success
+[49:15.20] phase?
+[49:16.00] >> You begin to ask SAS like questions also
+[49:18.08] there. I'm not going to oversimplify it.
+[49:20.16] I think you were anticipating that. That
+[49:22.40] is very interesting. Outcome based
+[49:24.48] pricing in services has traditionally
+[49:26.56] not happened. Yeah.
+[49:27.52] >> So when you change business models, I
+[49:29.84] think some of it is going to stick given
+[49:31.76] what we see with AI with the new AI
+[49:34.96] coming
+[49:37.60] assuming this other stuff that we'll
+[49:39.12] talk about around around observability
+[49:41.84] around monitoring around security
+[49:43.84] compliance assuming those things work.
+[49:46.88] It is highly likely that uh some
+[49:49.44] significant parts of time and material
+[49:51.44] will be migrating to outcome based
+[49:53.76] pricing. But we're going to see that
+[49:55.36] over the next x number of years. So, so
+[49:57.68] what I learned from you from this sum uh
+[49:59.68] you know and I have to summarize for our
+[50:01.04] listeners that you know once a a great
+[50:05.68] team comes out of India and the they
+[50:08.56] build their mo and outcome based pricing
+[50:10.96] they'll be able to replace the old
+[50:12.96] businesses in
+[50:14.40] >> or or even a mix that for certain things
+[50:16.64] they're still offering time and
+[50:17.84] materials because it it is in their
+[50:19.84] advantage because they can charge for
+[50:21.36] bodies but they have the confidence to
+[50:23.68] give outcome based pricing is going to
+[50:25.36] be profoundly impactful.
+[50:26.88] that there will be large degrees of
+[50:28.88] amounts of success coming out of those
+[50:30.72] sub ecosystems. But do you think like us
+[50:33.12] have been sensitive for cost ever
+[50:34.88] because what I hear from at least the
+[50:37.28] Indian founders that have made big right
+[50:38.80] and they have quoted on the podcast so I
+[50:40.48] can quote like founder of what fix kajim
+[50:42.88] so when he sold the first version of
+[50:45.28] what fix to a Indian enterprise he said
+[50:48.00] the the Indian enterprise was asking for
+[50:50.64] equity in return for the sale and when
+[50:53.12] he sold when he went with a price like
+[50:55.92] $75,000 annually the US enterprise
+[50:58.56] rejected him because saying that hey if
+[51:01.12] If you are only charging 75K, I don't
+[51:03.36] know whether you will able to survive or
+[51:04.96] not. So that was a great insight from
+[51:06.80] the founder to to price more. So the
+[51:09.04] question here is are US enterprises
+[51:11.04] sensitive to costing for to migrate to
+[51:14.00] an outcome based.
+[51:16.08] >> It has to do with a lot of other
+[51:17.84] extraneous factors. It has to do with
+[51:19.76] macroeconomic forces. It has to do with
+[51:22.40] that industry growing or not. I'll give
+[51:25.20] you an example. There are two pieces of
+[51:27.52] software that people always complain
+[51:30.16] about from the IT side and the op and
+[51:33.12] the IT ops side and the data op side
+[51:35.36] site ops side S sur side but they still
+[51:37.52] pay but they will absolutely switch if
+[51:40.40] something cheaper comes one is called
+[51:42.24] Splunk one is called data dog on the
+[51:44.56] site observability side people actually
+[51:46.88] don't want to pay that much they they
+[51:49.60] have been able to pay for it because
+[51:51.84] their companies have been doing well so
+[51:54.56] I think how much capital you put into of
+[51:57.92] the of the budget you put into IT ops is
+[52:02.00] is the question is your top line growing
+[52:04.16] or not so I think it it has to do with
+[52:07.04] that if you're in BFSI you're in
+[52:09.28] healthcare services and your top line is
+[52:11.84] growing yes you'll be willing to pay
+[52:13.60] more if your growth stabilizes does not
+[52:16.16] grow these questions will come that's
+[52:18.24] one the other part is the other part is
+[52:21.68] quality
+[52:23.36] there is a quality aspect to AI
+[52:25.60] If AI inlined AI shows much higher
+[52:29.68] quality for the same
+[52:31.60] >> or slightly more so let's said numerator
+[52:36.00] and denominator people making people
+[52:37.92] more accurate more productive there is a
+[52:40.64] chance that it is not just about volume
+[52:43.04] of budget it's also the quality of the
+[52:45.20] outcome people are willing to switch and
+[52:49.28] and maybe pay a little bit less but that
+[52:52.08] will be much more sticky coming back to
+[52:54.32] it I Your question relates much more to
+[52:57.12] macroeconomic
+[52:58.64] uh uh uh changes about the industry
+[53:01.36] buying.
+[53:02.00] >> Yeah.
+[53:02.80] >> And if you are going into defense,
+[53:04.40] you're going into government controlled
+[53:06.24] areas or regulated industry like
+[53:08.32] insurance, healthcare, banking,
+[53:11.36] you government uh uh policies have a lot
+[53:13.60] to do with what sort of growth is
+[53:16.08] happening there. Those are going to be
+[53:17.76] effects that are going to those are
+[53:19.20] going to be levers that are going to
+[53:21.20] profoundly impact how you sell what you
+[53:24.08] sell whether you're selling SAS are you
+[53:26.32] selling outcome based services
+[53:29.12] >> and you know
+[53:31.76] outcome based pricing
+[53:33.68] >> can I say one thing about your what fix
+[53:35.84] example
+[53:36.64] >> so if I remember correctly what was
+[53:38.48] playing this in the CRM space which has
+[53:41.68] traditionally been a very important
+[53:43.36] space because it's a topline play
+[53:46.40] >> sales Sales is a investment in the top
+[53:48.72] line of that company and sales ops
+[53:51.52] leaders are willing to spend an arm and
+[53:54.16] a leg to hit that numbers and go top
+[53:56.24] line. Moment you go into HR, moment you
+[53:58.80] go into marketing which are probably
+[54:00.80] cost centers more answer is not true.
+[54:03.44] >> Yeah.
+[54:05.92] >> So, so it leads to very interesting
+[54:07.44] point. If the if the industry has to
+[54:09.28] change
+[54:10.96] for pricing outcome based pricing what
+[54:13.44] kind of tailwinds are already there and
+[54:15.20] need to be there in the future to
+[54:16.72] support a complete change migration
+[54:20.88] you should be able to migrate your
+[54:22.64] software or your service very easily
+[54:24.96] number one that is not true yet so when
+[54:27.28] an outcome based AI services provider
+[54:29.92] comes in they can't just say I'm the
+[54:32.08] best
+[54:32.72] >> you have to show how you going to
+[54:34.32] migrate that number one so that is a
+[54:36.24] requirement Second is you have to have
+[54:38.24] very measurable proof points around
+[54:39.92] quality. It has to perform things at
+[54:43.04] least at that quality that has to
+[54:44.72] happen. Third is and this is something
+[54:46.80] that we have not thought about very
+[54:48.16] deeply is the buyers have to have the
+[54:50.48] right tools to judge things
+[54:52.40] >> which today on the software side they do
+[54:55.20] have as I pointed out remember you were
+[54:57.36] asking me the network question about
+[54:58.80] services on the services side there are
+[55:01.44] no automated tools where you can decide
+[55:03.20] a certain BP soft services outcome is as
+[55:05.92] good. So I think those are some of the
+[55:09.44] those are the requirements. I won't call
+[55:11.68] them headwinds. Tailwind is proof point
+[55:14.96] is happening much faster today. I mean
+[55:17.04] the innovation happening with jai from
+[55:19.52] the services side of how we were just
+[55:22.08] talking to u young company which is
+[55:24.72] doing insurance workflow automation for
+[55:27.76] um business insurance of certain subset
+[55:32.40] and we saw the work the workflows
+[55:34.48] they're automating. This is not uh in
+[55:36.72] the guide where in this not in the
+[55:38.72] source of truth area. These are these
+[55:40.56] are not in the uh these are in the
+[55:43.52] workflows for say parsing documents and
+[55:46.00] giving answers and stuff. Let's assume
+[55:47.52] that and we have seen that in our
+[55:48.88] company Asher also. I mean the speed at
+[55:52.16] which they this company has done correct
+[55:54.64] workflows so quickly is insane. So I'm
+[55:57.92] saying when they are going and selling
+[56:00.40] to fairly slowmoving insurance
+[56:02.56] industries and the insurance industries
+[56:04.88] are suddenly waking up and saying whoa I
+[56:08.08] can do it this faster the adoption curve
+[56:10.56] is changing so that's something for you
+[56:12.80] to consider that the buyer side is
+[56:16.16] beginning to ask questions cuz there is
+[56:17.76] secular pressure coming from their board
+[56:20.48] their investors their CEO they are also
+[56:23.92] becoming more aware so I think we're at
+[56:25.76] a slight bit of a honeymoon phase But
+[56:27.60] from what little I saw from some of
+[56:29.36] these uh seed level companies, the
+[56:32.40] quality of the outcomes is insane. It is
+[56:35.28] quite insane. Right? That's one. The
+[56:37.92] other thing that is uh slight bit of a
+[56:40.08] detail but it's interesting for you to
+[56:41.76] note is
+[56:43.52] many of these new AI enabled businesses
+[56:46.00] that you're building whether it's pure
+[56:47.44] software whether it's services has a
+[56:49.28] talent uh uh flavor to it that that in
+[56:54.00] delivering this service and in
+[56:55.44] delivering this software uh AI enabled
+[56:58.24] software you will need this you know the
+[57:00.88] way Palenteer built it what they call
+[57:02.24] forward deployed engineering we are
+[57:04.56] finding that that is a whole new tier
+[57:07.68] of talent that these new services
+[57:10.32] companies and these new software
+[57:13.04] companies have which is also enabling
+[57:15.84] adoption much more rapidly. I'll just
+[57:18.32] leave it at that. Uh the there's some
+[57:20.64] fundamental new uh talent movements
+[57:24.48] happening which is making adoption
+[57:26.80] faster.
+[57:27.76] >> So Bascar we are coming towards
+[57:29.52] conclusion of a podcast you know uh
+[57:31.84] amazing discussion lot of food for
+[57:33.92] thought. I might need to listen to this
+[57:35.60] conversation twice to prepare for a
+[57:38.32] third one,
+[57:40.24] right? But very important,
+[57:41.60] >> we should we should pick a vertical.
+[57:43.68] >> Yeah,
+[57:44.16] >> hopefully by November
+[57:45.68] >> I'll be thinking of some new stuff and
+[57:47.68] we can add to this thing because as I
+[57:50.88] said in AI enabled services, the domains
+[57:53.52] matter. It's okay to construct
+[57:55.84] horizontal thesis but domains matter.
+[57:58.32] Yes. Back to you.
+[57:59.36] >> Yes. And I would love you to for you to
+[58:01.60] meet some of our founders who are
+[58:03.28] building hardcore uh you know let's say
+[58:06.08] for for they're building compliance.
+[58:09.36] >> Would love to
+[58:10.00] >> for banking for example
+[58:12.56] uh enterprise infrastructure domain
+[58:15.92] right that's your specialty.
+[58:18.00] >> That's how it used to be. True.
+[58:20.16] >> Right. So so how is that shaping up
+[58:23.36] right now? What are the areas left for
+[58:25.76] founders still to conquer where you
+[58:28.48] think are tailwinds? Because a lot of
+[58:30.32] this model companies as we were
+[58:31.76] discussing I think the biggest challenge
+[58:34.00] for founders today are model companies
+[58:36.72] because they're eating forward revenue
+[58:38.32] they are eating backward revenue.
+[58:39.44] Forward revenue means they're eating
+[58:40.80] application revenue uh and they are
+[58:43.68] eating backward revenue which is cloud
+[58:45.12] revenue and because these model
+[58:46.88] companies are extremely hungry. I have
+[58:48.48] never seen hungry company that has these
+[58:51.76] right. Their aim is to become 10
+[58:53.92] trillion dollar companies. They're not
+[58:55.68] they'll not be satisfied at the pace of
+[58:57.84] growth to become a trillion dollar
+[58:59.04] company. At least my observation is that
+[59:01.84] people might disagree with it. I don't
+[59:03.68] know what what your views are.
+[59:05.28] >> No, I agree with you.
+[59:06.48] >> Yeah. So, so enterprise infra what are
+[59:09.60] the areas for founders to tap in? What
+[59:11.60] are your learnings from your existing
+[59:13.04] company? You are invested in some of the
+[59:14.96] fantastic companies like Nile.
+[59:16.96] >> Yeah. Nile, Yogabyte, Acril which is now
+[59:19.60] called data hub. Um so I would say in
+[59:22.80] enterprise infrastructure which is a
+[59:24.32] vast stack includes data includes
+[59:26.72] security includes orchestration includes
+[59:29.28] site ops s you know many departments
+[59:31.76] many personas uh one particular sub area
+[59:34.96] which is a legacy area that I'm super
+[59:37.20] excited about to see how LLMs will
+[59:40.08] impact them is in all things
+[59:41.84] observability.
+[59:43.36] So the areas say that today data dog,
+[59:47.60] splunk, elastic search all of them the
+[59:51.20] old new relic and the all of massive
+[59:54.08] budget you have to op their software
+[59:56.80] that you pay for to operate your
+[59:58.48] business and to know if your site is
+[60:00.48] working okay right and then debug
+[60:02.40] problems I feel and the underlying
+[60:05.68] infrastructure is using in some
+[60:08.16] cases it's using click house in some
+[60:10.40] cases but a lot of it is based on the
+[60:12.40] back end of data dog. It's based on
+[60:14.64] elastic search on the stack.
+[60:18.32] I think this area
+[60:20.72] requires a couple of new companies with
+[60:23.36] LLMs as their backbone. Um so throwing a
+[60:27.44] challenge out and the interesting thing
+[60:29.60] about this area is what kind of founders
+[60:31.76] do you want to find there? I think this
+[60:34.56] area is both hard with massive upside is
+[60:38.40] because the DNA of founders needs to
+[60:41.04] there has to be a co-founder who knows
+[60:43.04] applied AI really well. There has to
+[60:45.52] know be a co-founder who knows the
+[60:48.24] observability and the whole thing about
+[60:50.64] what we call melt the nature of data.
+[60:52.40] It's like metrics and events and logs
+[60:54.72] and traces and how data dog and Splunk
+[60:57.52] are used today. So you need a product
+[60:59.84] expert a domain expert in product. Third
+[61:02.64] is you need a founder with systems and
+[61:05.84] data background. Traditionally it's hard
+[61:08.16] to bring founders like that together.
+[61:10.16] But I feel if you find a founding team
+[61:12.08] like that in these areas where now with
+[61:15.60] say if you see open-source time series
+[61:17.52] foundation models like times FM coming
+[61:19.92] out of Google I think there's a massive
+[61:22.48] opportunity. So in the observability
+[61:24.00] area of the site observability similarly
+[61:27.04] for security observability I think
+[61:29.68] there's a massive area at SIM I would
+[61:33.36] say these are backward facing categories
+[61:36.32] which are massive TAM which will be
+[61:38.40] impacted by LLMs and by using chai
+[61:44.88] certain I'm interested in the forward
+[61:46.80] facing categories that are opening up I
+[61:49.12] think
+[61:50.72] LLMs will be data hungry
+[61:52.88] I think unstructured data now coming
+[61:55.92] into uh uh a blob stores into the
+[61:59.04] unstructured data warehouses into what
+[62:01.68] is below a data bricks into what we call
+[62:04.80] data laks. I think data laks will see
+[62:08.08] more and more semi and unstructured data
+[62:10.00] because you can squeeze more enterprise
+[62:12.72] value out of them which has not been
+[62:14.56] true. So infrastructure around semi and
+[62:17.68] unstructured data links one of our
+[62:19.84] companies Aaron is working in that
+[62:21.76] domain I think that's going to be a
+[62:23.84] massive area
+[62:26.48] the ingestion tier for that data is
+[62:29.12] going to be a massive area because now
+[62:31.36] you're not just bringing in site data
+[62:33.28] and sales data you're bringing in all
+[62:35.92] kinds of other data handwritten document
+[62:38.72] data PDFs Google docs you can do a lot
+[62:41.60] more with them so all things data observ
+[62:44.88] observability uh around data
+[62:47.20] infrastructure around storage in the
+[62:49.36] area below LLM is going to be important.
+[62:51.76] So I can give another example. Our
+[62:54.08] company Acril which is based on the
+[62:56.48] LinkedIn opensource project called data
+[62:58.16] hub has now rebranded its as data hub is
+[63:01.52] seeing secular tailwinds in AI metadata
+[63:05.52] coming into the into the metadata tier.
+[63:08.56] So I feel there's a lot of opportunity
+[63:10.32] in all things data all things
+[63:12.24] extraction. Now coming to LLMs per se
+[63:15.68] and something you asked me in the prep
+[63:17.60] questions is observability monitoring
+[63:21.20] feedback loops compliance governance
+[63:24.24] around deploying agents and co-pilots in
+[63:26.48] the enterprise is going to be a very
+[63:27.84] important area. So there are at least
+[63:29.52] two parts to it. One is companies which
+[63:32.40] are doing orchestration of these tiers
+[63:35.28] itself
+[63:36.32] >> in old school you now old school
+[63:38.00] companies like Langchain, Langfuse,
+[63:39.68] Langraph,
+[63:40.56] >> nextgen companies of that sort which
+[63:42.64] helps you orchestrate uh uh uh agents
+[63:46.72] >> companies like interchange uh gateways
+[63:49.04] which are called MCP. I think of it as
+[63:51.20] an interoperability play. How will MCPs
+[63:54.56] scale, grow, be compliant, be uh fault
+[63:57.76] tolerant? So these are all backbones of
+[64:01.76] agentic deployments inside the
+[64:04.08] enterprise and all things monitoring,
+[64:07.20] governance, feedback loop and
+[64:08.72] observability. I feel these are all
+[64:10.88] going to be significant time areas
+[64:13.12] within the enterprise and the second
+[64:15.60] category that I just pointed out is
+[64:17.28] partly forward facing.
+[64:18.48] >> Okay.
+[64:19.20] >> And I would say the extraction layer,
+[64:22.24] the observability layer that I pointed
+[64:23.92] out for for sidebar are partly backward
+[64:26.16] facing but will get revolutionized. So
+[64:28.48] very exciting times.
+[64:31.04] Two comments. One is a repeat comment
+[64:33.04] which is the type of founding teams you
+[64:35.52] need for each of these areas are
+[64:37.84] special. Should be a combination of AI
+[64:40.56] infra of applied AI of product specific
+[64:44.88] expertise as well as databases and
+[64:48.16] systems.
+[64:49.68] That's that's kind of exciting. Well,
+[64:52.24] but how do these founders without a GTM
+[64:56.40] founder or a business founder land their
+[64:59.12] first enterprise contract?
+[65:00.24] >> Okay, that brings me to the second
+[65:01.68] point. The type of founders you need and
+[65:04.48] that's something I have learned in my
+[65:06.00] life as a VC for now 7 and a half years
+[65:08.40] and at 8 VC is I think go to market will
+[65:11.92] remain a very important area for these
+[65:14.80] founding teams. What I have done
+[65:16.72] personally is invested in a lot of open
+[65:18.72] source companies. I still believe in
+[65:20.96] open source in some of these areas
+[65:23.12] because many of these areas are are
+[65:25.44] developer focused.
+[65:27.04] >> The actual adopters of the new software
+[65:28.96] will be developers themselves. So I
+[65:31.12] think an open source partially
+[65:33.84] opensource mentality and knowing how to
+[65:36.16] build community. I mean if you look at a
+[65:38.16] company like Rocket Lane or atomic works
+[65:40.56] something they have done without being
+[65:42.00] open source is that they have built
+[65:43.92] community around their software right
+[65:46.24] and I think community building around
+[65:48.40] open source is a very critical uh uh uh
+[65:50.80] tech is a critical uh power superpower
+[65:53.60] you need in the founding team and then
+[65:55.28] mentality of being community first
+[65:58.72] >> that's one part but I think increasingly
+[66:01.12] given the speed of adoption of this
+[66:02.72] software in enterprises top- down
+[66:05.04] motions are al also going to be really
+[66:06.96] important. So knowing much uh thinking
+[66:10.48] much more about say conversion from open
+[66:12.48] source to paid but even clean top-down
+[66:15.76] motions
+[66:17.36] there has to be much more expertise
+[66:19.44] early on in founding teams and one
+[66:21.60] interesting comment there remember that
+[66:24.16] the act of doing sales and marketing
+[66:26.24] itself is changing because of the advent
+[66:28.80] of genai so founding teams in these
+[66:31.84] areas also have to be forward- facing in
+[66:34.64] adopting
+[66:35.92] >> sales software marketing software ware
+[66:37.68] which is genai infused buying from other
+[66:40.16] startups. I think combination of
+[66:42.80] open-source growth hacking and
+[66:44.64] combination of using new tools is going
+[66:48.24] to be kind of something that the DNA of
+[66:50.64] the founding team has to bring to the
+[66:52.16] table. Those are some some things to
+[66:55.12] think about
+[66:56.16] >> and the last thing you know I think this
+[66:57.92] is another topic for another podcast
+[66:59.52] because
+[66:59.84] >> a whole podcast
+[67:02.24] >> because we we can't give justice to it
+[67:04.88] in such a short span of time and how the
+[67:07.04] the rate which market is evolving uh
+[67:09.68] right uh what is the how is the founder
+[67:14.08] type changing on the on the founder
+[67:15.92] required on the GTM side is of keen
+[67:18.16] interest to me uh right but I I'll leave
+[67:21.60] it open-ended for here
+[67:22.88] >> meaning uh the founders the way they
+[67:26.24] think about go to market itself
+[67:27.92] >> yeah the founders they think about go to
+[67:29.44] market itself right how do they land
+[67:31.36] their first 10 enterprise contract right
+[67:34.16] is the old way of SAS bank still
+[67:36.32] applicable so should you get a
+[67:38.08] co-founder who has sold SAS or should
+[67:40.32] you like possibly try to find a a
+[67:42.96] different kind of a founder I don't have
+[67:44.40] an answer because the market is changing
+[67:46.24] >> look so that the only thing I'll say is
+[67:48.96] even now product building is hard if you
+[67:52.24] build software product let's not ignore
+[67:54.16] that building software products is
+[67:56.32] really hard it is just so that software
+[67:58.40] engineering is so profoundly affected by
+[68:00.64] genai you can do that iteration fast but
+[68:03.76] the taste of a product the design aspect
+[68:06.00] of a product increasingly
+[68:08.96] AIcentric
+[68:10.48] design where you are building an AI
+[68:12.32] infused product how do you land it these
+[68:14.56] are non-trivial things which I don't
+[68:16.24] think can be automated away so I think
+[68:18.80] that part is hard and is requires as
+[68:21.20] founders to have superpowers. The second
+[68:22.80] thing is very mundane. I still think the
+[68:25.20] first five design partnerships are
+[68:26.80] really important.
+[68:27.92] >> I think design partnerships when you
+[68:30.16] land the right design partnerships maybe
+[68:32.00] the speed of it will be much faster
+[68:33.76] because people want AI infused software.
+[68:36.08] I still think those mundane things will
+[68:37.76] remain important but a topic for another
+[68:40.00] day.
+[68:40.48] >> Yeah, maybe this requires another
+[68:43.20] podcast as well on how to find the right
+[68:44.88] design partners in in a AI first era.
+[68:47.92] >> Profound profound question.
+[68:50.16] >> Yeah. So la last thing is you know what
+[68:52.16] are you doing beyond work in the India
+[68:54.40] US corridor? What is what are your
+[68:56.24] passions?
+[68:57.28] >> Yeah right I would say I've always been
+[69:00.88] fairly involved in the nonprofit sector
+[69:03.36] you know we have been backing projects
+[69:05.76] whether they're in the south whether
+[69:07.20] they're east in Odrisa Bengal. So in
+[69:09.52] terms of uh you know I have a nonprofit
+[69:12.24] called SAXA and we have always been big
+[69:15.12] into women's and children's education
+[69:17.28] and healthcare related initiatives in
+[69:19.60] India that is always true. Education
+[69:21.76] remains a huge passion of mine and I
+[69:24.40] think education for a changing India and
+[69:26.72] for a changing US for that matter is
+[69:28.56] very important to me and new modes of
+[69:31.04] education course work how do you teach
+[69:33.20] differently what are the skills that you
+[69:35.44] want more from a trade side versus
+[69:37.44] fundamental learning remain very
+[69:39.28] important to me so backing nonprofits
+[69:41.52] and you know groups like Pratam in India
+[69:43.28] which works with the government these
+[69:45.12] are very important to me a second is you
+[69:47.60] know big into arts especially music try
+[69:50.32] to support a lot of the India US
+[69:52.32] corridor around music. Uh also very
+[69:55.84] passionate about the sacred music
+[69:58.00] traditions of all over the world
+[69:59.36] especially India. Uh music traditions
+[70:01.92] which bring people together you know
+[70:03.92] bring people together at a spiritual
+[70:05.52] level. Uh want to call out there's a
+[70:08.48] beautiful music festival that we uh
+[70:11.60] we've been supporting from for six seven
+[70:14.08] years now in New York City called Raa's
+[70:16.00] life. I'd be proud to say it's the only
+[70:18.96] 24-hour Indian theme music festival in
+[70:21.52] US I've heard of. We have it in Brooklyn
+[70:24.16] every October. We have artists coming
+[70:26.40] from India, from all over the world. uh
+[70:29.20] sacred music coming from Middle East,
+[70:31.12] from East Europe, from South Africa,
+[70:33.44] from South America, very proud and with
+[70:36.48] a strong Indian classical theme and I
+[70:38.88] think I would love to support that for
+[70:40.56] the rest of my life and I want to
+[70:42.96] support more and more performance art
+[70:45.84] and music in India. I think India is
+[70:48.00] just like it's just an ocean that you
+[70:50.88] know remains to be explored and that's a
+[70:52.88] huge passion of mine. So so glad that
+[70:55.28] your we also discussed in a previous
+[70:57.36] podcast that your interests are so
+[70:58.80] diversified and Kolkata remains at
+[71:01.28] heart.
+[71:02.32] >> Kolkata is important. I think Kolkata
+[71:04.88] has given me personally a culture of
+[71:08.00] being curious and open to all
+[71:09.60] possibilities
+[71:10.32] >> also lot of taste
+[71:12.80] between food. I think food scene in
+[71:15.36] India I mean I'm a huge follower of all
+[71:17.28] the food podcasts of India. I think um
+[71:20.24] remain very excited you know also of of
+[71:23.52] I think the multi-layer of India with
+[71:25.92] the with with I think meditation quiet
+[71:29.44] belongingness in nature something you
+[71:31.44] and I have talked about about this
+[71:32.72] >> yeah given to the world right and India
+[71:35.36] if would have been commercial about it
+[71:37.76] would have added one trillion to it GDP
+[71:40.24] >> I know trademarking yoga I mean I think
+[71:43.44] uh there are depths multiple layers to
+[71:46.64] you know I have discovered so much more
+[71:48.24] of India After coming here, I think I'm
+[71:50.48] very comfortable as an American uh as
+[71:53.04] this is my my my homeland. But you know
+[71:56.08] my past has remained a very deep uh uh
+[71:58.64] you know motivation inside me and and uh
+[72:01.76] we want to support India US corridor
+[72:04.80] massively in the arts also in the
+[72:06.56] nonprofit but my ultimate passion
+[72:08.88] remains in entrepreneurship and kind of
+[72:11.84] backing companies which do great things
+[72:14.00] in this corridor and I'll just repeat
+[72:16.32] myself AI enabled services should be
+[72:19.28] massively happening from India for the
+[72:21.20] world. So all of this remains important
+[72:23.28] to me and thank you for asking me that
+[72:25.04] question Sat. It's an honor
+[72:27.20] >> and I'm grateful for your friendship.
+[72:28.40] That's
+[72:29.12] >> I am grateful for your mentorship. I
+[72:31.44] think very highly of you and you're
+[72:33.52] doing the hard yards raising a fund and
+[72:36.08] I see you in the Bay Area more and more.
+[72:38.24] That makes me very happy.
+[72:39.36] >> Thank you. Thank you so much.

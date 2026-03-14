@@ -1,0 +1,115 @@
+[0:00.16] Lang chain is a Python framework used to
+[0:02.40] work with large language models or LLMs
+[0:04.96] in a structured way. This makes
+[0:06.72] connecting to models, creating chains,
+[0:08.48] and building applications easier and
+[0:10.24] more modular. Google Collab is a free
+[0:13.04] cloud-based Python notebook environment
+[0:15.44] that runs in your browser. You don't
+[0:17.28] need to install Python, set up a
+[0:19.68] development environment, or configure
+[0:21.84] hardware on your local machine. Collab
+[0:24.40] provides a Jupiter style notebook
+[0:26.40] interface where you can write code, see
+[0:28.88] results immediately, and save your work
+[0:31.12] to Google Drive. There are two main ways
+[0:33.68] to run LLMs. The first is hosted API
+[0:37.04] models like Azure OpenAI, OpenAI,
+[0:40.24] Anthropic, and the second is local or
+[0:43.52] self-hosted models like Alama, LM
+[0:46.32] Studio, or your own interface server.
+[0:48.64] Cloud-based models are easier for
+[0:50.24] beginners because you don't need special
+[0:51.76] hardware or model downloads. They work
+[0:53.92] on any machine with internet access and
+[0:56.80] reflect the realworld API based
+[0:58.96] workflows used in production systems.
+[1:01.44] Cloud providers handle most
+[1:03.12] infrastructure scaling, but you'll still
+[1:05.36] be constrained by quotas and rate
+[1:07.36] limits. You may need to manage retries
+[1:09.68] and back off, especially if your usage
+[1:11.92] exceeds the provider set limits. Local
+[1:14.40] tools give you more control and privacy
+[1:16.88] as everything runs on your device, but
+[1:19.12] they often require strong hardware and
+[1:21.20] can involve complex setup which may be
+[1:23.44] challenging for beginners. So let's
+[1:25.52] begin with the code. The first step is
+[1:27.60] to install lang chain and the required
+[1:29.60] extension. Here in first elm, this
+[1:31.76] installs the core lang chain framework
+[1:33.68] you build on. Next is langchain openai.
+[1:36.64] This adds the integration package that
+[1:38.64] lets lang chain work with open AAI and
+[1:40.96] Azure open AAI models. Next is langchain
+[1:43.84] open AAI. This adds the integration
+[1:46.16] package that lets langchain work with
+[1:48.32] open AAI and Azure OpenAI models. Here
+[1:51.36] we install community extensions and
+[1:53.60] helper modules often used in lang chain
+[1:56.16] projects which is lang chain community.
+[1:58.72] Now after installing this we need to
+[2:01.20] verify the installation. So in the next
+[2:03.76] cell we check that everything is
+[2:05.68] installed correctly. This confirms lang
+[2:07.92] chain is available and prints the
+[2:09.68] installed version. If this raises no
+[2:12.16] error, installation is successful. In
+[2:14.56] the next step, we need to set Azure
+[2:16.64] credentials. We provide credentials so
+[2:19.20] your code can talk to Azure OpenAI. We
+[2:21.84] need the OS module so we can set
+[2:23.84] environment variables from Python. Next,
+[2:26.32] we need to set the Azure OpenAI API key.
+[2:29.84] So, you have to give the key that comes
+[2:31.84] from the Azure portal after you create
+[2:33.92] an Azure OpenAI resource and deployment.
+[2:36.80] This is the endpoint URL for your OpenAI
+[2:39.36] service on Azure. You can copy this from
+[2:41.44] the Azure portal. We need to provide the
+[2:43.60] deployment name that you chose when
+[2:45.52] creating a model deployment in Azure.
+[2:47.84] Next, Azure Open AI requires an API
+[2:51.20] version string to work with the REST
+[2:53.04] API. After these are set, your collab
+[2:55.76] environment knows how to authenticate
+[2:57.60] and where to send requests. Next, as a
+[3:00.40] final step, we have to load the Azure
+[3:02.32] model class. Now import a class you will
+[3:05.12] use to call the model. Here in this
+[3:07.12] cell, this imports a class that lets
+[3:08.96] lang chain make calls to the Azure
+[3:10.72] OpenAI chat API. The Azure deployment
+[3:13.52] parameter you set earlier will be used
+[3:15.60] when creating a model instance. If this
+[3:17.84] import runs without any errors, your
+[3:19.84] setup is correct. So now you have
+[3:22.16] installed lang chain and its extensions.
+[3:24.88] We have confirmed the installation. Then
+[3:27.44] we set the Azure OpenAI credentials and
+[3:29.76] endpoint. [music] Then we loaded the
+[3:31.36] correct Azure chat openai class. Now you
+[3:34.40] have successfully set up langchain in
+[3:36.48] Google Collab and connected it with
+[3:38.88] Azure OpenAI using the correct
+[3:41.04] configuration and model class. Now your
+[3:43.84] environment is ready to make real API
+[3:46.08] calls and build AI applications like
+[3:48.32] chat bots, text generation, embeddings,
+[3:50.72] and retrieval systems.
+[3:52.56] >> If you enjoyed this video, you can
+[3:54.24] enroll in Greatle Learning Academy for
+[3:56.24] free. Choose from hundreds of courses
+[3:58.16] across multiple domains and earn a
+[4:00.24] certificate of completion along the way.
+[4:02.32] And if you want to take it a step
+[4:03.60] further, you can try Great Learning
+[4:04.98] [music] Academy Pro Plus with a free
+[4:07.12] trial. It provides access to additional
+[4:09.44] premium courses with more advanced
+[4:11.36] content from distinguished faculty along
+[4:13.52] with features like guided projects, a
+[4:15.60] resume builder, and mock interviews to
+[4:17.68] make your learning journey even richer.
+[4:19.52] Link is in the description.

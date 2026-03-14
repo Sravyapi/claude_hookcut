@@ -1,0 +1,2954 @@
+[0:00.16] Healthcare is broken everywhere because
+[0:02.40] fundamental cost of delivery is high. If
+[0:04.56] you look at around the world, nobody's
+[0:06.08] happy with the healthare
+[0:06.88] >> and he collapsed. He fainted and the
+[0:09.36] nurse was heard saying that I do not
+[0:12.24] feel the pulse have basically killed my
+[0:15.68] husband Prashant Shikuma.
+[0:17.84] >> We have put care back in healthcare and
+[0:20.08] we have made it honest.
+[0:21.84] >> That's it. The only certainty about a
+[0:24.00] price estimate you get in a hospital is
+[0:25.52] that we don't do estimates.
+[0:27.28] >> We give you a fixed price. It's the only
+[0:29.44] price. It includes everything.
+[0:32.56] >> What have you done so differently in
+[0:34.32] healthcare in India that people are
+[0:36.16] going crazy about it?
+[0:37.28] >> If the doctor prescribes three more
+[0:39.44] tests or five more tests or you have to
+[0:41.52] stay 2, three extra days or whatever
+[0:44.16] number of days a doctor deems necessary.
+[0:45.84] We don't charge you for those also. It's
+[0:47.68] still the same price. It does not
+[0:49.04] change. We have doctors on zero
+[0:51.60] commission, zero sales targets. They
+[0:54.00] have the freedom to do what is right for
+[0:55.44] the customers. That's the only thing
+[0:56.72] they have to care about.
+[0:58.80] We have super OS which is a system we
+[1:00.56] have built from the ground up very
+[1:01.76] likely in the world the first agentic
+[1:04.00] operating system that is designed for a
+[1:06.00] hospital and that is actually running
+[1:08.00] this live hospital for the last 5 months
+[1:09.68] it runs the hospital
+[1:10.80] >> how can like doctors become more like
+[1:12.32] productive maybe it's a better question
+[1:13.60] to ask with AI
+[1:14.88] >> that AI is going to solve the supply
+[1:17.36] demand constraint problem for clinicians
+[1:19.52] by giving clinicians leverage
+[1:21.92] >> so what does that look like uh give me
+[1:24.40] like a sense on the different things
+[1:26.32] that you have and how will Can you
+[1:27.84] expand further?
+[1:28.72] >> Sure. So I we we have
+[1:36.32] >> Hello. Before we get started with this
+[1:38.24] episode, I quickly wanted to share that
+[1:40.16] we are now a part of 01 network by
+[1:42.40] Zerodha.
+[1:43.12] >> Thank you so much for watching. Welcome
+[1:44.56] to the Indian Silicon Valley podcast.
+[1:46.16] I'm your host Jiraj and today I have
+[1:48.00] with me an extremely special guest. This
+[1:50.88] man here is trying to revolutionize
+[1:52.88] Indian healthcare as we look at it. For
+[1:54.80] years, what has happened is that there
+[1:56.56] are these large hospitals which haven't
+[1:58.32] had any incentive or competition to
+[2:00.16] really change how care is delivered and
+[2:02.00] everybody's been really fed up of the
+[2:04.00] hospital experience. They don't want to
+[2:05.76] go to a hospital and that's the last
+[2:07.28] resort that people have. However, this
+[2:09.28] company and this man is changing how we
+[2:11.12] look at it. Join me in welcoming Mr.
+[2:12.96] Varun Dubet who's the founder and CEO of
+[2:14.96] Super Health. Thank you so much, Vun for
+[2:16.64] joining me today.
+[2:17.36] >> Great to be here, man. Thank you for
+[2:18.56] having me. I'm super excited to be doing
+[2:20.16] this because uh I think um just by
+[2:22.64] talking to so many people around me I've
+[2:24.96] noticed as well as a layman consumer
+[2:27.20] that people don't like going to
+[2:28.64] hospitals right and that's literally the
+[2:30.24] last resort and even when it is the
+[2:32.00] experience is absolutely terrible and
+[2:33.84] since the time I've heard of you folks I
+[2:35.60] think you you're making so much change
+[2:38.32] and today I've gotten a chance to
+[2:39.44] witness it which is to say that hey you
+[2:41.36] can fundamentally look at healthcare
+[2:43.12] differently you can establish a new
+[2:44.80] model now there's like months of proof
+[2:46.88] of point that you have and today you've
+[2:48.24] launched this thing which is super OS
+[2:50.24] which I want to talk more about where
+[2:51.68] you've also introduced incredible
+[2:53.36] amounts of technology which people don't
+[2:54.88] look at right um so lots to discuss uh
+[2:57.28] but we'll try to make the most out of
+[2:58.48] the art that we have where we might
+[3:00.24] start is just uh uh briefly when we were
+[3:02.56] talking and you were showing me the
+[3:03.84] hospital you were talking to me about
+[3:05.36] how overwhelmingly well the response has
+[3:07.76] been to the new model maybe let's focus
+[3:09.60] on that right like what have you done so
+[3:11.84] differently in healthcare in India that
+[3:13.84] people are going crazy about it and not
+[3:15.60] just like I'm not talking investors I'm
+[3:17.20] not talking PR I'm just talking like
+[3:18.80] core consumers, right? People that
+[3:20.56] consume healthare
+[3:25.68] simple
+[3:28.56] but it's very simple. We have put care
+[3:31.20] back in healthare and we have made it
+[3:33.28] honest.
+[3:34.40] >> That's it. Now to do those two words you
+[3:37.28] have to do a lot of work which and we
+[3:38.96] have a very fortunate to have an
+[3:40.56] insanely amazing team who've joined the
+[3:42.56] mission to do this. But I think that is
+[3:44.80] what people are responding to. If you
+[3:46.24] think of a consumer's ask of healthare
+[3:50.16] rocket science,
+[3:52.96] don't make me wait.
+[3:58.24] >> Correct.
+[3:59.52] >> Tell me what it'll cost to fix it
+[4:01.60] >> and then please charge me what you said
+[4:03.04] it would cost.
+[4:04.64] >> Correct.
+[4:04.96] >> Right. Not some insane ask. M
+[4:08.96] >> we have fundamentally changed the
+[4:11.68] delivery model of healthcare in how we
+[4:13.76] build and design hospitals. How we build
+[4:16.32] them, how we operate them and all the
+[4:18.00] technology that we build allows us to
+[4:20.40] deliver what we call the honest
+[4:21.76] healthcare model
+[4:23.28] >> where uh you know patients get zero
+[4:25.44] weight time. So the actually 99.5%
+[4:28.56] patients who come to super health today
+[4:30.48] see the doctor at or before time. 55% of
+[4:35.20] our customers today have their
+[4:36.48] appointment start before time which is
+[4:38.48] insane like on time itself is insane
+[4:40.32] before time was like
+[4:41.92] >> and I'm very thankful to customers
+[4:43.12] because they actually take the pains to
+[4:44.32] come before time
+[4:45.28] >> that's only
+[4:49.44] >> um and then zero wait time we have
+[4:53.52] doctors on zero commission zero sales
+[4:55.84] targets they have the freedom to do what
+[4:58.00] is right for the customer that's the
+[4:59.44] only thing they have to care about
+[5:01.20] >> they're not the sales guys they don't
+[5:02.72] have any targets they have no
+[5:03.92] commissions. We do full-time salary. We
+[5:05.68] give them equity in the company because
+[5:07.20] we believe that doctors are very
+[5:09.36] mistreated in the healthare system.
+[5:10.64] They're not compensated fairly for the
+[5:12.08] work they do. We would like to do that.
+[5:14.08] >> Um we deliver fixed prices to customers.
+[5:17.52] Uh which is sounds very simple but is
+[5:19.60] insanely hard because the only certainty
+[5:23.04] about a price estimate you get in a
+[5:24.56] hospital is that yoga,
+[5:26.80] >> right? This is the only certainty about
+[5:28.24] the price. This is not what happens at
+[5:29.36] super health.
+[5:30.24] >> We don't do estimates. M
+[5:31.84] >> we give you a fixed price. It's the only
+[5:34.00] price. It includes everything. It
+[5:36.48] includes your consumables. It includes
+[5:37.84] your medicines. It includes your tests.
+[5:39.44] It includes whatever during your care
+[5:42.00] episode at Super Health. If the doctor
+[5:43.52] prescribes three more tests or five more
+[5:46.48] tests or you have to stay two, three
+[5:48.24] extra days or whatever number of days a
+[5:50.40] doctor deems necessary, we don't charge
+[5:52.00] you for those also. It's still the same
+[5:53.92] price. It does not change.
+[5:55.68] >> You know why?
+[5:57.44] Because patient surgery.
+[6:01.60] Correct.
+[6:02.00] >> So we should know this, right?
+[6:04.48] >> We should know this, right? We are
+[6:05.60] supposed to be the experts, but today if
+[6:07.36] I don't get it right, you pay for it.
+[6:09.68] >> How is that fair? It's not fair. So we
+[6:12.08] do that. Then we do some really cool
+[6:13.52] things with you know magic discharge. So
+[6:15.76] what is magic discharge is that we
+[6:18.72] pre-commit the discharge time at the
+[6:20.56] time we book the surgery. So if you book
+[6:21.68] a surgery one month out, we'll tell you
+[6:22.96] exactly when you will be discharged,
+[6:24.32] when the surgery is done. It's on time
+[6:26.64] and it's instant. Okay? And then because
+[6:29.36] we because we feel it's not cool
+[6:33.28] >> that people take cabs to the surgery. We
+[6:35.76] pick the patient up.
+[6:37.04] >> We don't think our work is done till we
+[6:38.64] drop you back. So we drop you back after
+[6:40.24] the surgery. We make sure that you're
+[6:41.28] home safe. Uh depending on the type of
+[6:43.76] surgery, our care continues. Uh for
+[6:45.68] example, if you do a knee replacement at
+[6:46.96] super health uh you know or a shoulder
+[6:49.04] surgery or or whatever and you require
+[6:50.88] physapy, then we send the
+[6:52.16] physiotherapist to make sure that you
+[6:53.52] get that done because you are not paying
+[6:55.36] me for replacing the knee. You're paying
+[6:56.56] me to walk again. Right. So I think this
+[6:59.36] philosophy that we bring to healthcare
+[7:00.88] and how we put these things together for
+[7:02.40] the customer is what is I guess in some
+[7:05.84] ways what they are calling as magical
+[7:07.92] which is not a word people often use
+[7:09.28] with hospitals.
+[7:10.16] >> Yeah.
+[7:10.64] >> Um and I think that's what they're
+[7:12.00] really responding to and you know to
+[7:13.36] your earlier question of you know and I
+[7:15.36] guess that just shows how bad we are at
+[7:17.04] projecting things.
+[7:19.84] >> So so uh you know uh
+[7:21.76] >> projecting the best case for sure. Yeah
+[7:23.68] 100% like you know we when we started
+[7:25.68] when we started super health we had
+[7:27.12] given a bunch of projections to our
+[7:28.40] investors or people at least we wanted
+[7:30.80] as investors most of these are amazing
+[7:32.56] people who are I mean all of them are
+[7:33.76] amazing people the most of them are
+[7:36.00] angels couple of VCs
+[7:38.72] and there was just deep trust and
+[7:40.56] frustration in them also saying keep fix
+[7:42.80] it
+[7:43.36] >> so we told them that we're going to do
+[7:44.64] all these things and they were like yeah
+[7:45.76] every founder is very optimistic we were
+[7:48.08] also wrong as according to them like
+[7:49.84] every founder and they were joking
+[7:50.88] saying but at least you were wrong in
+[7:52.00] the right
+[7:53.04] So we have already done what we
+[7:55.20] projected for the fourth year.
+[7:57.20] >> That's crazy.
+[7:57.76] >> Uh so that just tells you how much
+[7:59.60] frustration there is in the system.
+[8:01.68] >> And again we don't pay any referrals. We
+[8:03.84] don't tell any pay anyone to get us
+[8:05.28] patients. Our doctors don't have to get
+[8:06.72] patients.
+[8:07.92] >> We only get patients if we do a good job
+[8:10.64] with the patients who came to us today.
+[8:12.16] This is our model.
+[8:12.96] >> Yeah. You're not doing a crazy marketing
+[8:14.56] campaign except no billboard.
+[8:16.80] >> No. It's like I mean we probably huh
+[8:19.60] actually I mean you know my team was
+[8:21.44] telling me that we you know
+[8:25.92] such such bull patients patients
+[8:28.08] understand that you're telling the truth
+[8:29.68] and that has been our whole thing we
+[8:31.04] just made an honest
+[8:32.40] >> absolutely
+[8:32.80] >> and I think people have been craving for
+[8:34.00] that and that's what people are getting
+[8:35.36] and I think also because we understand
+[8:36.80] it very deeply
+[8:38.16] >> we're able to explain it to them very
+[8:40.16] simply as to why some things happen the
+[8:41.68] way they happen which also people
+[8:43.04] appreciate because no one has explained
+[8:44.48] this to them so far
+[8:45.84] >> which blows my mind. So I think that's
+[8:48.00] what has been really working for us. Uh
+[8:49.60] you know we've been recipients of
+[8:52.56] tremendous generosity from uh I would
+[8:55.60] say of course our investors uh but
+[8:58.48] equally our customers and definitely our
+[9:00.48] clinical teams who have left some very
+[9:02.64] large institutions and have joined us
+[9:04.16] because I think even the clinical
+[9:05.44] clinicians are frustrated.
+[9:06.56] >> Yeah.
+[9:06.96] >> They don't want to do all the sales
+[9:08.16] stuff. They want to take care of the
+[9:09.28] patients but they're not they're not
+[9:10.32] getting to do it right. they're stuck in
+[9:12.64] this very commercially model and it's
+[9:14.72] just not great and yeah so that's what
+[9:17.20] we're trying to change.
+[9:18.24] >> That's amazing. I think uh it's
+[9:20.16] phenomenal what you've been able to
+[9:21.44] accomplish in one place and to know that
+[9:23.92] it has been so successful and to see
+[9:26.08] that you know this is going to expand
+[9:27.60] across different centers cities is going
+[9:31.28] to be magical for so many people because
+[9:32.96] I think a lot of people are just craving
+[9:34.96] for true care uh which is something that
+[9:36.96] I want to talk to you about. It's a
+[9:38.48] thing that you mentioned when we were
+[9:40.56] again discussing before the episode. Um
+[9:42.96] I want to quickly maybe diverge and
+[9:45.36] understand from you as to uh recognizing
+[9:48.08] some of these pain points and then
+[9:49.28] solving for all of them together right
+[9:50.80] like because outside in it can feel like
+[9:52.40] hey uh how do you a understand all of
+[9:54.64] this and you have a combination of
+[9:56.40] different things not just healthcare. Uh
+[9:58.16] some may imagine that okay maybe you
+[9:59.76] need somebody who's not in healthcare
+[10:01.52] before to understand all of this and
+[10:03.20] have a new approach. Some may think that
+[10:04.88] you need to be from healthcare to
+[10:06.24] actually understand it. you have a mix
+[10:07.60] of both. Um and also then understanding
+[10:10.08] that can you shock the system with as
+[10:12.48] many good things that may not feel
+[10:14.48] achievable to begin with or do you
+[10:16.32] approach it like okay we'll get the
+[10:17.84] model right which is physical
+[10:19.04] infrastructure to begin with then we'll
+[10:20.80] get the clinicians right what was the
+[10:22.64] stepby-step sort of like 0ero to one in
+[10:24.56] your head and how did you make it happen
+[10:26.64] >> so can I be very honest with you
+[10:28.56] everything that you have experienced so
+[10:30.16] far
+[10:31.20] >> uh and and a lot of stuff that you're
+[10:33.36] currently still building
+[10:35.04] >> all of is there in the deck first first
+[10:36.72] deck we made really.
+[10:38.00] >> Yeah. It's like I was, you know, I was
+[10:39.44] going through some of those decks uh a
+[10:41.60] couple of weeks ago because we kind of
+[10:43.52] hit a pretty major milestone
+[10:45.84] >> uh in January and uh I was like
+[10:54.24] I think see the but the reason we we
+[10:56.24] kind of started from there, right, is
+[10:58.48] because we see at least our belief is
+[11:02.48] that if you really want to solve
+[11:03.44] healthcare, you have to own the entire
+[11:04.88] stack.
+[11:05.60] >> Okay? And you have to unless you
+[11:07.36] understand the entire stack and control
+[11:08.88] the entire stack
+[11:10.32] >> you can't do it right healthare still so
+[11:13.28] far if you see
+[11:15.44] uh the incumbents kind of have no real
+[11:17.68] reason to fix anything correct right
+[11:19.20] because it's a great business for them
+[11:20.80] it's working you know they're interest
+[11:25.68] >> correct
+[11:26.72] >> uh the outsiders who've tried to fix it
+[11:29.36] I think you know have and I have been
+[11:32.72] certainly part of that thought process
+[11:35.28] in in a past life.
+[11:36.40] >> Correct?
+[11:37.52] >> It is not just a technology problem like
+[11:39.84] we've tried to solve this with
+[11:40.88] technology.
+[11:41.84] >> Correct.
+[11:42.16] >> We've tried to solve this with saying
+[11:43.28] it's an operational efficiency problem.
+[11:45.68] Yes, all of those things can be improved
+[11:47.44] but first and foremost it's a model
+[11:49.36] problem.
+[11:50.56] >> Right? It just costs too much to deliver
+[11:52.64] care and I think if you look at around
+[11:54.96] the world all healthcare is broken in
+[11:57.92] every every country healthcare is
+[11:59.60] nobody's happy with the healthare
+[12:00.88] correct
+[12:07.92] so if you look at the US if you put on
+[12:09.76] the lens first of all saying that
+[12:11.12] healthcare is broken everywhere because
+[12:13.36] fundamental cost of delivery is high
+[12:15.60] >> and then the unique problems in every
+[12:17.36] system emanate from who pays for that
+[12:20.08] everything Makes sense. So in the US
+[12:21.60] it's paid by private insurance. So you
+[12:23.76] have high premiums. Uh you have
+[12:26.08] exclusions, you have deny, deny, deny,
+[12:28.16] all those issues and bad things are
+[12:29.60] happening.
+[12:30.32] >> If you look at the UK, it is paid for by
+[12:32.32] the government. The government can only
+[12:33.76] spend so much of the GDP. Uh and so you
+[12:36.80] have long wait times in NHS and not
+[12:38.32] enough infrastructure, right? So people
+[12:39.68] are not happy. Uh India, we are I would
+[12:42.64] say on balance very fortunate. Uh and
+[12:44.88] part of the reason is because uh you
+[12:47.28] know institutions like Apollo and Ariana
+[12:49.44] etc. have done a tremendous job over the
+[12:51.28] last 30 40 50 years to build a very high
+[12:54.16] quality healthcare system in India. This
+[12:55.76] is true. We deliver in those centers the
+[12:58.40] highest care quality of care in the
+[13:00.00] world. We deliver at 10% of global
+[13:01.84] price. These are objectively true
+[13:03.52] things. I would even go so far as to say
+[13:05.92] that had they not been there India would
+[13:08.08] have seen considerable brain drain of
+[13:09.44] great doctors and we already short of
+[13:10.72] doctors. So that I think that's been
+[13:12.00] good as well. So all of this is true but
+[13:14.64] like healthcare in India as a study in
+[13:16.24] contradictions. It is also true that
+[13:18.48] there are a lot of model problems that
+[13:19.84] exist today. Consumer trust is low,
+[13:21.60] people don't doctors are frustrated,
+[13:23.12] clinicians are not going to do what they
+[13:24.32] want to do. So the next evolution of
+[13:26.08] these things needs to happen.
+[13:28.80] So India is a very unique market where
+[13:31.60] you know it's a very consumer-driven
+[13:33.12] market. It isn't a payer or a provider
+[13:35.12] or kind of a market. So customers can
+[13:37.36] decide where they want to go and they do
+[13:39.28] decide and therein lies the opportunity
+[13:40.88] for someone to come and center it around
+[13:42.32] the customer. Right? And I think for us
+[13:45.04] that's what our whole whole idea is that
+[13:47.12] how do we make this great for customers
+[13:49.04] and doctors. If uh to do that you have
+[13:51.68] to reduce cost of care which is what we
+[13:53.52] are trying to do. To do that you have to
+[13:55.84] basically
+[13:57.60] build hospitals differently. You have to
+[13:59.36] design hospitals differently. So we do
+[14:02.16] hyperlocal hospitals. These are fully
+[14:04.40] speced out multispety hospitals as
+[14:06.08] you've seen. I would put these against
+[14:08.48] the best hospitals in the world and I
+[14:10.00] think they would compare extremely
+[14:11.20] favorably.
+[14:12.56] uh we have very high-end operating rooms
+[14:14.40] you know we have a full suite of
+[14:15.60] diagnostics including MRI CTS X-rays all
+[14:18.32] of that on site um and we deliver care
+[14:22.24] to a community of people in a 3 to 5 km
+[14:24.48] radius area we take care of 99% of
+[14:26.32] whatever care they need
+[14:29.04] uh and because we're hyper local we are
+[14:30.80] very connected to these people uh we we
+[14:32.96] can respond very quickly to these people
+[14:35.36] um and therefore we are able to offer an
+[14:37.68] extremely extreme level of
+[14:39.12] personalization that is not possible
+[14:40.48] with large centers The large center
+[14:42.56] itself actually is a western influence
+[14:44.72] model that we have taken over
+[14:46.96] >> right because we have kind of looked at
+[14:48.88] the payer centric markets and built for
+[14:51.68] that but they have built a model of real
+[14:54.64] estate that makes sense in their cities
+[14:58.00] right because their cities are like
+[14:59.60] spread out and thinly populated outside
+[15:01.44] of say New York San Francisco like you
+[15:02.88] look at Dallas it's like a spread out
+[15:04.48] city highway
+[15:09.28] or you look at Europe visa centers Our
+[15:11.28] cities are light and and I I was telling
+[15:13.04] you Copenhagen my sister lives there
+[15:14.56] 600,000 people live there
+[15:16.72] >> like in the whole city right where we
+[15:19.12] are sitting in Kangala center in a 3 km
+[15:21.44] radius area 1.1 million people live
+[15:23.84] >> right so we have very big cities very
+[15:26.32] dense cities in India we have to design
+[15:28.48] differently for those cities because
+[15:29.84] anyway people don't want to go for long
+[15:31.12] distances
+[15:31.68] >> correct
+[15:32.08] >> so instead of building these giant
+[15:34.16] 500,000 bed centers or even 300 400 bed
+[15:37.20] centers we want to build these very
+[15:39.52] hyperlocal high-end centers without
+[15:41.36] compromising on any quality and then we
+[15:43.60] want to create a density of this network
+[15:45.92] right this allows us to reduce the cost
+[15:48.16] of delivery of healthcare by about 70%.
+[15:51.36] So we build hospitals of this spec which
+[15:53.60] is as you've seen incredible at about 70
+[15:56.16] lakh rupees a bed.
+[15:57.76] >> Uh typical peak hospitals who are
+[15:59.84] building this in uh big cities tier one
+[16:02.16] cities are doing this at about 2 to
+[16:04.00] three cr almost 3 crores now in some
+[16:05.44] cases per bed right. So why is that? The
+[16:08.72] reason for that is because the capex is
+[16:11.60] designed around an entire large buy by
+[16:14.24] buy large land kind of model. So when
+[16:16.24] you buy the large amount of land the 3
+[16:18.00] acres of land is what you require the
+[16:19.36] two to three acres you require the two
+[16:21.28] to three acres takes a takes is
+[16:23.60] available why
+[16:27.84] land and everybody wants it so even if
+[16:29.84] it's not disputed everybody wants it
+[16:31.04] every hotel wants it five other
+[16:32.24] hospitals want it hospitals want it
+[16:34.08] malls want price seller market correct
+[16:37.76] so because of all these problems you're
+[16:40.24] you're now going to buy this land
+[16:42.24] litigate it for 3 to 6 years that all of
+[16:43.92] that is cost so you will find that 66%
+[16:47.12] of the capex is just this which has by
+[16:50.24] the way nothing to do with your
+[16:51.36] healthcare quality.
+[16:52.40] >> Yeah.
+[16:52.88] >> Right. So we just don't do this like
+[16:55.84] sounds pretty basic right.
+[16:56.96] >> Correct.
+[16:57.44] >> So land construction device medicine
+[16:59.20] people are the five things
+[17:00.72] >> that make up 100 rupee healthcare cost.
+[17:02.48] With this alone we are able to reduce
+[17:03.92] 66% of capex and therefore we are able
+[17:06.64] to make like 75 80 lakh rupees bed
+[17:08.96] hospitals. Uh typically 2 to three
+[17:10.56] crores is what people are taking today.
+[17:12.48] Then we have super OS which is a system
+[17:14.32] we have built from the ground up which
+[17:16.00] is I to the best of my knowledge
+[17:18.88] certainly in India but very likely in
+[17:20.56] the world the first agentic operating
+[17:22.80] system that is designed for a hospital
+[17:25.04] and that is actually running this live
+[17:26.88] hospital for the last 5 months it runs
+[17:28.40] the hospital it's not a chatbot it's not
+[17:30.96] something that is patient interaction
+[17:32.24] none of those things it is fundamentally
+[17:34.16] running the hospital
+[17:35.84] >> right and it runs the hospital across
+[17:37.60] multiple things right
+[17:38.88] >> you break it down for us
+[17:39.84] >> yeah so as an example uh super OS
+[17:43.20] uh ma so a lot of people have asked us
+[17:45.52] this question saying that uh how do you
+[17:48.24] do this magical thing like zero weight
+[17:49.68] time actually it is done entirely by
+[17:52.48] systems so we open up we open up these
+[17:55.36] uh the slots so super OS basically
+[17:59.84] runs the OPD it runs the diagnostics it
+[18:02.80] runs the inventory it runs the IPD it
+[18:04.72] runs the operating the it runs all of
+[18:06.24] that
+[18:07.04] >> so let me give an example of what that
+[18:08.32] means right so a lot of people have
+[18:10.16] asked us
+[18:11.76] How do we do the zero weight time right?
+[18:13.44] 99.5% people getting on time
+[18:15.60] appointments 55% people starting before
+[18:17.68] time crazy. So the way we do it is that
+[18:20.40] actually super OOS monitors this entire
+[18:22.16] appointment system real time
+[18:23.92] >> and it has deep context about every
+[18:25.76] patient who's coming right because we
+[18:27.52] know
+[18:38.08] the diagnostics. It knows doctor
+[18:41.68] >> and it has looked at supervis looked at
+[18:43.36] the x-ray and said actually doctor's
+[18:44.80] going to tell him
+[18:46.32] >> right so we think this is
+[18:48.00] >> so while the patient books a 15 minutes
+[18:49.92] supervis
+[18:55.28] so it is super tailored to that doctor
+[18:58.08] >> right then it auto adjusts these slots
+[19:00.32] across which allows us to then make sure
+[19:02.40] that two very important things these are
+[19:03.76] the principles we design around first
+[19:05.04] and foremost the patient should never
+[19:06.64] feel like they were rushed
+[19:08.40] >> patient Patient should get suff
+[19:09.92] sufficient wait time accord sufficient
+[19:11.52] for them according to them facetime with
+[19:14.00] the doctor at the same time we must make
+[19:16.32] sure that no patient appointments
+[19:17.52] cascade delay
+[19:18.80] >> right so super manages this this this is
+[19:21.20] in itself a massively hard problem but
+[19:23.92] already because it is plugged into the
+[19:25.44] whole stack
+[19:26.40] >> right it is able to do it really really
+[19:27.84] well right as customers will tell you
+[19:30.40] then if you enter the room we have built
+[19:32.32] this as an ambient AI system so it is in
+[19:35.28] the room it is listening to the patient
+[19:37.12] and the doctor and then it is writing
+[19:38.72] this on behalf of the doctor the
+[19:40.32] prescription it understands 15 Indian
+[19:42.40] languages you can speak in those
+[19:43.60] languages interchangeably
+[19:45.60] Hindi English
+[19:50.08] it'll understand on the fly then it will
+[19:52.72] write the prescription basis what it
+[19:54.64] knows this doctor likes to do in
+[19:56.32] situations like this because it is
+[19:57.44] trained on this specific doctor's
+[19:59.20] treatment style within the SOP guidel
+[20:02.32] clinical SOPs that we have and then it
+[20:05.52] knows that this doctor has now
+[20:07.28] prescribed this Medicine. Subaru also
+[20:08.96] runs inventory.
+[20:10.40] >> So it will pre-order the medicine and
+[20:12.72] assign an action to a agent in the
+[20:14.88] system which is a human agent saying
+[20:16.96] yeah medicine room number 14
+[20:19.12] consultation room 14. So super super
+[20:22.08] health every doctor has a consultation
+[20:23.92] room and a post consultation room post
+[20:25.36] consultation
+[20:27.60] postation
+[20:29.36] generally before the patient reaches. So
+[20:32.16] instead of the traditional set
+[20:44.48] will do the same thing with the flebo
+[20:47.12] is an agent in the system in super agent
+[20:49.20] system. So it is a human agent. It will
+[20:51.04] assign the 14
+[21:03.60] that is also supervised. So super will
+[21:06.00] pull this report show it to the doctor
+[21:07.44] and tell him and give an
+[21:09.84] okay then doctor can add whatever they
+[21:11.12] want then they'll call the patient back.
+[21:12.48] So now super knows
+[21:14.80] so it knows
+[21:18.08] right correct I'm slightly
+[21:19.68] oversimplifying but broadly that's what
+[21:21.12] it is doing right so this is now OPD
+[21:24.40] >> then it does the same thing in IPD as
+[21:26.00] well so as an example let's say a doctor
+[21:27.76] prescribes you a surgery and you decide
+[21:29.44] to do the surgery at super health
+[21:31.36] >> so super health will ask you saying as a
+[21:33.68] patient
+[21:36.16] this is by the way not that common
+[21:37.84] shockingly
+[21:47.52] So anyway we tell them
+[21:50.08] super has deep context about clinical
+[21:52.08] care. So what it does is that it will
+[21:54.08] look at what your surgery is for that
+[21:56.40] surgery it knows that when this doctor
+[21:58.24] does this surgery he this doctor is
+[21:59.84] required for this much duration because
+[22:00.96] the senior surgeon doesn't do the full
+[22:02.08] surgery opening closing some teams do
+[22:04.24] and all that. So it
+[22:14.48] knows septic surgery sterile surgery
+[22:17.68] because there's a sequence with which
+[22:18.96] you have to do the surgery. So for
+[22:20.72] example certain bottom cases you can't
+[22:22.24] do if you're doing the offtheile case
+[22:23.44] because there's a lot of infection risk.
+[22:25.12] You have to clean the for 4 hours
+[22:26.48] between those two type of cases. So when
+[22:28.80] that happens right it will sequence it
+[22:30.80] like that. Then it knows what is the
+[22:32.08] anesthesia required for this case. M
+[22:34.40] >> it because a different type of
+[22:35.76] anesthesia has different recovery time
+[22:37.28] like a spinal anesthesia has a 12-hour
+[22:38.88] wait time to see if you know there is
+[22:40.48] any spinal fluid leakage or not so that
+[22:42.16] you get migra for you general anesthesia
+[22:46.48] local
+[22:53.84] not only is it an internal metric we
+[22:55.52] committed to the customer up front
+[22:56.72] saying 6 p.m. you will be discharged.
+[22:58.88] >> Wow.
+[22:59.36] >> Okay. Now when the patient and it tells
+[23:01.20] you when we'll pick you up and all that
+[23:02.48] for the car also, right? So then at that
+[23:04.56] time the car goes picks you up, you come
+[23:06.00] here, there is no admission required
+[23:07.12] room assigned, you go straight into the
+[23:09.12] room, your process starts because
+[23:10.80] superus will tell you when you have to
+[23:12.16] admit basis for that surgery, what is
+[23:14.80] the uh what is the you know fasting time
+[23:17.52] required before the surgery and so on.
+[23:18.88] It already knows all this.
+[23:19.92] >> Correct.
+[23:20.56] >> This is what enables us to run this so
+[23:22.64] efficiently and that allows us to run
+[23:24.32] this hospital today at an a loss of 1.2
+[23:26.16] 1.3. That's
+[23:27.68] >> which is a typical hospital is doing
+[23:29.44] four 3 to five five four days 5 days of
+[23:32.00] a loss length of stays length average
+[23:34.08] length of stay
+[23:34.80] >> okay
+[23:35.52] >> okay some of this is case mix because
+[23:37.12] like let's say transplant type long stay
+[23:38.64] cases we don't do
+[23:39.44] >> of course
+[23:40.08] >> but even like to like we shave off at
+[23:43.28] least 7 to8 days which is incredible
+[23:47.28] right because that directly goes into
+[23:48.88] savings for my customers
+[23:50.32] >> because my turnover so think of it like
+[23:51.92] this
+[23:52.72] >> that by the time a typical hospital uh
+[23:55.68] you know has a through has discharges
+[23:57.60] one patient
+[23:58.80] >> in 4 days. I have done four m
+[24:01.76] >> right so my throughput is 4x
+[24:03.52] >> yeah as much as like four times capacity
+[24:05.52] >> four times capacity right so this
+[24:06.88] operates like a 200 bed hospital
+[24:08.40] >> correct
+[24:08.72] >> right which means what which means my
+[24:10.16] utilization is great which means that
+[24:11.68] first of all my capex is lower correct
+[24:13.36] >> secondly superus is doing a lot of the
+[24:14.64] nonclinical work right so the the opex
+[24:17.20] is lower
+[24:18.00] >> then my throughput is 3 to 4x
+[24:19.52] >> which means revenue
+[24:20.32] >> which means revenue is better which
+[24:21.36] means utilization is better which means
+[24:22.48] margin is better which means I can give
+[24:23.76] the 50% discount to the customer
+[24:25.20] >> correct
+[24:25.68] >> while being a very profitable company
+[24:27.76] >> you can pass on the benefits of or
+[24:29.44] everything being low and revenue being
+[24:31.04] high to the customer as opposed to
+[24:32.80] >> but but you can do this only and only if
+[24:35.84] you do the entire stack.
+[24:38.00] >> Yeah.
+[24:38.40] >> And that's how we started saying
+[24:43.84] of course and pricing fixed pricing
+[24:46.56] right predictable. Then now think of the
+[24:48.64] impact of this this entire thing you
+[24:50.48] build. It gives you the ability to do
+[24:52.88] magic discharge
+[24:54.08] >> because now the pricing is not changing.
+[24:55.44] So insurance
+[25:00.32] >> the reason you have to go for re is
+[25:01.92] because you never bill what you say.
+[25:03.76] Correct.
+[25:04.32] >> Correct. If you bill what you say
+[25:05.84] insurance
+[25:07.44] problem
+[25:08.72] >> finally for discharge right because
+[25:10.96] super health runs the whole hospital. It
+[25:12.80] has all the data from the first
+[25:13.92] consultation till the last thing that
+[25:15.44] has happened to you correct
+[25:16.48] >> including your monitoring systems. Super
+[25:19.12] just writes a discharge summary when
+[25:20.40] doctor says discharge the patient. So it
+[25:22.00] tries and shows a draft to the doctor.
+[25:23.44] Doctor reviews it. He signs it
+[25:25.52] >> send submit and in that moment you can
+[25:27.44] get up and go. There is no waiting.
+[25:28.88] There's no department clearance. There's
+[25:30.88] no like p of paper you will get to go
+[25:34.32] sign
+[25:36.00] WhatsApp and you can
+[25:39.44] easy. So but to your question right like
+[25:42.24] what came sequentially we knew that we
+[25:43.92] have to do this entire stack because
+[25:45.36] this is the experience you want to do
+[25:47.04] >> and see we designed um I would argue
+[25:49.84] that today this is not possible for
+[25:52.32] others to do only we can do this because
+[25:55.20] the company that is deeply invested in
+[25:58.40] designing the hospital building the
+[26:00.00] hospital and operating the hospital
+[26:01.68] >> can do it
+[26:02.16] >> is the same company that is building all
+[26:03.84] the tech
+[26:04.56] >> yeah it's not like outsource it's not
+[26:06.88] like
+[26:08.64] correct Actually,
+[26:11.76] it's not a record system.
+[26:13.04] >> It's not actually it's an operating
+[26:14.24] system. You're 100% correct. That's why
+[26:16.00] super OOS is called OS because it
+[26:17.52] operates the hospital. It's not a record
+[26:18.88] system.
+[26:19.92] >> So, we see this more as like think of it
+[26:22.00] like little bit like Tesla for
+[26:23.36] healthcare kind of an approach where you
+[26:24.88] know the whole system is it's a full
+[26:26.80] stack approach. uh and I think that's
+[26:28.96] why we see these huge benefits and
+[26:31.04] >> as an example we run this hospital today
+[26:33.76] including central teams and everything
+[26:35.20] amortized on one hospital
+[26:37.20] >> at less than four people a bed or about
+[26:39.68] four people a bed competing hospital if
+[26:41.60] you look at large public listed
+[26:42.80] hospitals you' look at the data look at
+[26:44.40] add the doctor numbers and all on the
+[26:46.00] operating bed are doing about 7 to eight
+[26:49.20] per bed
+[26:50.00] >> wow
+[26:50.40] >> of which by the way four pe four out of
+[26:52.40] those eight people are not clinical
+[26:53.92] teams
+[26:56.00] >> they're not doctors nurses technicians
+[26:59.44] They're just like admin stuff
+[27:02.00] >> and still you feel like they they have
+[27:05.04] their together.
+[27:05.92] >> Correct.
+[27:11.20] Enhanced experience 2x
+[27:13.92] >> and care quality is lower.
+[27:15.92] >> So I'll give you an example just say you
+[27:17.36] know there is this very big thing in
+[27:18.56] hospitals which is drug drug interaction
+[27:20.16] right? A slightly complicated cases
+[27:22.16] generally one do two doctors will treat
+[27:24.88] specialist
+[27:31.04] those doctors are writing their own
+[27:32.16] prescription.
+[27:33.36] >> What if some of those devices are not
+[27:34.80] supposed to be given each other
+[27:36.24] >> who is monitoring that? Nobody's
+[27:37.52] monitoring that. So
+[27:39.68] >> centralized.
+[27:41.92] So then they hire entire armies of
+[27:44.08] people in these hospitals because
+[27:45.12] corporate hospitals do this do the
+[27:46.40] quality of care very well who go
+[27:48.40] manually check these prescriptions and
+[27:49.92] then try to convince the doctors to
+[27:51.52] change their prescription. Crazy super
+[27:56.80] flags it saying and it'll do a clinical
+[27:59.20] alert to the medic head of medicine
+[28:00.80] saying well according to your own
+[28:03.12] protocol these should not be prescribed
+[28:04.40] together but
+[28:05.36] >> do you want to recheck it
+[28:06.24] >> do you want to check it or do you want
+[28:07.36] to you can always override it as a
+[28:08.96] doctor of course you can but you do so
+[28:10.64] knowingly without you having to take any
+[28:12.40] extra steps
+[28:13.04] >> correct correct without like mental
+[28:14.64] bandwidth
+[28:16.40] system
+[28:17.92] incremental benefit same patient will
+[28:20.00] come will be massive
+[28:22.96] actually drug interaction
+[28:26.64] >> because reaction will happen there.
+[28:28.08] >> Correct. Correct.
+[28:28.64] >> Right. I'll give you another one. Let's
+[28:29.52] say for example we do patient monitoring
+[28:31.52] in super health is entirely done by
+[28:33.04] super OS
+[28:34.00] >> because when you want patient to recover
+[28:36.08] recovery is what? Rest and sleep
+[28:38.08] >> beyond the medicine.
+[28:39.12] >> Correct. If somebody's entering your
+[28:41.12] room every hour to do some charting
+[28:48.96] correct shift exactly
+[28:52.64] superos monitors it now look at the cool
+[28:54.64] stuff we are able to do with this
+[28:55.92] because we are only the hospital and we
+[28:58.08] are only doing the monitoring systems.
+[29:00.00] So now when you get admitted to super
+[29:01.68] health we do the cardiac check for you
+[29:03.68] before you go to do a proper cardiac
+[29:05.44] check. This gives me a cardiovascular
+[29:07.36] health roughly. So my my systems get
+[29:10.16] trained on that. So if you're let's say
+[29:11.76] if you're a marathon runner with an ACL
+[29:14.00] tire then your resting heart rate is 48
+[29:16.96] in every hospital in the world at 48
+[29:18.64] alarm will keep beeping they'll come and
+[29:19.76] switch it off
+[29:21.12] >> because of the 50
+[29:22.88] >> correct
+[29:23.68] >> then if your heart rate is uh for this
+[29:26.24] person if 75 is elevated
+[29:28.64] >> but 75 normal which is bad for you
+[29:31.68] because you're tachi cardc for like 2
+[29:32.96] hours in fact even if a nurse walks in
+[29:34.48] and sees 75 on the monitor she will not
+[29:36.08] do anything. So now you as a patient
+[29:38.08] have to diagnose yourself
+[29:41.84] then you'll do the nurse buzzer they'll
+[29:43.12] come you'll tell them then they'll try
+[29:44.00] and figure it out. So I think you know
+[29:45.84] if you do this entire stack approach not
+[29:47.84] only can you make things as an amazingly
+[29:49.92] better experience and more efficient
+[29:51.52] sure but you can actually deliver better
+[29:54.00] quality of care.
+[29:55.84] >> Um and I think that's what the whole
+[29:57.84] thing people are responding to because
+[29:59.52] it's not like we are doing cut price
+[30:01.84] healthcare. It is a very premium
+[30:03.44] experience. It's a very premium center
+[30:05.84] but the price is not there not because
+[30:07.68] we cut a took a margin hit but because
+[30:09.60] we fundamentally reduced the fat in the
+[30:11.52] system
+[30:12.56] >> and I think that is what the magic is
+[30:14.16] which you which I think you can we
+[30:15.76] figured out we could only do if you did
+[30:16.88] the whole stack
+[30:17.92] >> so or you know as my wife keeps saying
+[30:19.52] me I think you have trust issues
+[30:21.68] >> so I don't know but uh but that's the
+[30:24.16] only way we knew how to do it so we just
+[30:25.44] built the whole thing ourselves
+[30:26.48] >> so I'm curious to know that considering
+[30:28.08] like some of this vision you had and you
+[30:30.08] know using this technology are people at
+[30:31.92] the end of the day how long was the
+[30:33.92] learning curve for people who are
+[30:35.68] executing it take a I don't know nurse a
+[30:38.40] fellow a pharmacy person how how did
+[30:42.00] that come about the team as well
+[30:43.76] >> actually for us um it's been very
+[30:45.60] interesting because what we've tried to
+[30:47.04] do
+[30:48.08] >> is to build this around learned behavior
+[30:52.00] in some ways so as an example
+[30:55.36] all care coordination in super health
+[30:57.44] runs on Slack
+[30:58.96] >> okay
+[30:59.28] >> okay and then we've built this thing
+[31:00.72] that we call a staff dashboard which is
+[31:02.32] like a web interface It's very basic
+[31:03.84] thing which has your task list. So a
+[31:06.80] doctor provides the instructions on
+[31:09.12] slack into a group of which is designed
+[31:11.76] autocreated by super OS and supervised
+[31:13.84] by super OS for that patient's care.
+[31:16.64] >> In that the doctor can write I want you
+[31:19.84] know I want a blood panel for this
+[31:21.28] patient.
+[31:22.08] >> They don't actually don't have to say
+[31:23.20] blood panel for this patient because
+[31:24.24] super knows which is the patient which
+[31:25.44] >> patient.
+[31:26.56] >> So super when super sees this they'll
+[31:28.32] read it. It'll create a order for from
+[31:30.24] the doctor's standard automatically. It
+[31:32.72] will then assign a flow an action which
+[31:34.80] the Fleb can see in his dashboard saying
+[31:36.24] hello to room 203 and collect blood.
+[31:38.32] Okay.
+[31:42.16] >> Right. And for the doctor it's fantastic
+[31:44.08] because try typing in Slack is like
+[31:45.92] WhatsApp but better.
+[31:47.20] >> Correct.
+[31:47.60] >> Right. So they like phenomenal. And then
+[31:49.68] once the report is done right supervis
+[31:51.92] pulls it from the lab because our lab
+[31:53.68] supervis is running the lab and it'll
+[31:55.84] put it back in the slack group saying
+[31:57.04] hey you asked for the blood panel here
+[31:58.32] is the report and it'll tag the doctor.
+[31:59.84] Doctor like fantastic doctor can see
+[32:01.28] that anywhere crazy
+[32:07.12] next.
+[32:09.68] >> So what I think there has been some
+[32:11.28] learning of curve of course but it's not
+[32:13.68] been as steep as you know you would
+[32:15.36] imagine outside as you would imagine
+[32:17.44] because a lot of this has been designed
+[32:20.32] as the current for a current behavior at
+[32:22.64] least
+[32:23.28] >> and then one of our very core design
+[32:24.64] principles is delete before you
+[32:25.92] simplify.
+[32:27.36] >> Okay.
+[32:27.76] >> Okay. So anything that we can so let's
+[32:30.32] say there's a human input required for
+[32:31.84] something. So let's take patient
+[32:33.20] charting as an example. So what a lot of
+[32:35.84] people focus on is how do we make
+[32:37.76] charting simple
+[32:41.12] >> how do we make entry simple let's give a
+[32:43.12] tablet nurse can quickly tap it type
+[32:45.12] versus tap all this we are like no how
+[32:47.52] can we automate it so that nurse doesn't
+[32:49.20] have to enter only
+[32:50.56] >> right and so what we did was we looked
+[32:52.40] at the neon cordon monitors and stuff
+[32:54.40] right and then we found a service port
+[32:55.92] in there and then we put a raspberry pi
+[32:57.44] in there and then we just beam the data
+[32:59.04] to us every 2 seconds
+[33:00.48] >> so you know it's not like some deep
+[33:03.28] >> inside you just need to really
+[33:04.64] understand how the flow works.
+[33:06.16] >> Yeah.
+[33:06.56] >> So this then didn't require anything. So
+[33:08.08] now the charting has become cool. The
+[33:09.36] charting happens. The supervis every
+[33:10.96] hour if the doctor wants supervis every
+[33:12.72] hour puts it in the same/ channel saying
+[33:14.16] is doctor vital is patient vital? Yeah.
+[33:16.96] >> Not like nurse has to take it every
+[33:18.32] hour. So nurses also become free to
+[33:19.68] focus on actual things not like this
+[33:21.76] kind of manual tasks. Right.
+[33:23.20] >> Correct.
+[33:23.68] >> So I think those are some things that we
+[33:25.44] have very consciously done in a way. Now
+[33:27.12] this is all good stuff. Then of course
+[33:29.04] there are certain things like our
+[33:30.16] ambient AI for the consultation that had
+[33:32.24] some learning curve but generally we had
+[33:34.88] a fairly decent accuracy. So you know it
+[33:37.04] the improvement of adoption on that is
+[33:38.88] very high.
+[33:39.52] >> Yeah.
+[33:39.84] >> I think the very important part for us
+[33:41.44] that I find um again I feel very
+[33:45.44] mischaracterization of doctors is that
+[33:47.92] people feel that doctors don't like
+[33:49.36] technology. Okay.
+[33:51.44] >> This is if you objectively assess this
+[33:54.08] it's a pretty silly thing to say.
+[33:56.08] >> Yeah.
+[33:56.48] >> Right. Because first in school when we
+[33:58.16] were studying only the smartest most
+[33:59.36] hardworking people became doctors. They
+[34:00.80] could even clear forget becoming clear.
+[34:04.64] >> Secondly
+[34:06.32] they have figured out all the
+[34:07.52] technologies in the world. Now
+[34:08.80] >> the guy is the the doctor he or she is
+[34:11.36] literally using the most advanced
+[34:13.12] sophisticated robotic systems to do
+[34:15.04] surgery.
+[34:15.84] >> Yeah.
+[34:19.36] Maybe it's your right. So I think you
+[34:22.08] know what has been happening is that
+[34:23.20] healthcare has been dissed with very
+[34:25.20] like poor quality software. It's
+[34:26.80] basically glorified form fills correct.
+[34:28.64] >> So it's kind of like the baby software
+[34:30.32] you know web browser kind of software
+[34:32.08] type software
+[34:32.96] >> correct
+[34:33.44] >> they haven't really seen sophisticated
+[34:34.88] software
+[34:35.76] >> also in general I think in hospitals
+[34:38.64] they're not they do not
+[34:40.88] >> have access or exposure to the 10x
+[34:43.36] engineering teams that we find very
+[34:45.04] commonly in startups.
+[34:46.64] >> So what is happening at super health is
+[34:48.24] that our doctors love Slack because the
+[34:49.92] tech team is on Slack. All of us are on
+[34:51.44] Slack. So when the doctors have a
+[34:52.64] problem with the software, they go to
+[34:53.76] the tech and design channel and they
+[34:55.12] just put a comment there. D is the guy
+[34:57.84] who heads tech this is not working
+[34:59.60] screenshot
+[35:00.96] >> and they see a resolution deployed on
+[35:03.44] production in three month 3 hours.
+[35:04.96] >> Correct. Same
+[35:08.32] like so obviously the issues getting
+[35:10.88] fixed then they're happy with it right
+[35:12.80] and we have done a lot of evolution like
+[35:14.16] this right so they are co-creators of
+[35:15.60] the tech. So for example when we started
+[35:17.52] building it like the learning curve like
+[35:18.64] you were asking is also on the tech side
+[35:21.04] >> right. So when we build prescriptions,
+[35:23.12] we build prescriptions like normal
+[35:24.48] prescriptions. Then we realized that of
+[35:26.72] themology dilation
+[35:29.44] measurement.
+[35:33.28] >> Sounds pretty basic now, right? But this
+[35:34.80] is like early days. I mean still early
+[35:36.08] days but like even earlier. So we worked
+[35:38.48] with the doctor and we created something
+[35:39.68] which made sure that there were two
+[35:40.80] because the challenge with that is that
+[35:42.08] you can't do draft prescriptions. You
+[35:43.44] can't edit a prescription. That's not
+[35:44.72] right
+[35:45.36] >> cuz then people can go back and there
+[35:46.96] are some security things. So we just
+[35:48.88] designed it better for f for foral. So
+[35:51.36] like this now for each specialy as
+[35:52.96] doctors are teaching us we are building
+[35:54.48] prescription systems for them like
+[35:55.68] pediatrician we knew that there has to
+[35:58.16] be growth chart. So we've designed a
+[35:59.44] special kind of growth chart system for
+[36:00.64] them. Gynecology period tracking cycle
+[36:02.72] tracking those capac
+[36:05.20] deeper and deeper into this right we are
+[36:06.64] able to do it tailor made for that
+[36:08.16] specialty as we are learning more the
+[36:09.68] system is evolving doctors are teaching
+[36:11.20] us
+[36:11.92] >> so instead of you know in super health
+[36:13.76] outside in the world I think technology
+[36:15.76] is something that just happens to
+[36:17.36] doctors
+[36:18.48] >> right and then everybody blames them for
+[36:20.00] it
+[36:20.32] >> correct they don't get a chance to
+[36:21.76] participate
+[36:22.56] >> they don't need to direct it they are
+[36:23.76] the experts now
+[36:25.44] >> right how to treat the patient expert
+[36:27.28] >> correct
+[36:27.60] >> so maybe you should listen to the guy
+[36:29.20] and build what is he or she's is saying
+[36:31.20] so that's how we do it and I think that
+[36:32.72] very deep partnership that we have
+[36:34.24] between the medical team and the and the
+[36:36.00] and the clinical team is what is at the
+[36:37.76] heart of our ability to have confidence
+[36:39.44] that super OS can run the hospital and
+[36:41.20] again the reason we have not talked
+[36:42.40] about it in the past for 5 months is
+[36:44.48] because we wanted to be sure that it
+[36:45.92] works
+[36:46.72] >> right so now it's been working on
+[36:48.40] thousands of thousands of patients every
+[36:50.00] day it's taking care of them uh and I
+[36:53.28] think now we felt like okay
+[36:55.84] >> it works we should just let people know
+[36:57.36] a lot of people have called and asked
+[37:01.92] And I think that is what has been able
+[37:03.36] to see it's very interesting that you
+[37:06.48] know this AI narrative in the country
+[37:08.24] and I think around the world is always
+[37:10.64] framed as zero sum for some reason right
+[37:12.48] that AI will exist and replace doctors
+[37:14.32] or AI will exist and repeat X replace X
+[37:18.24] why
+[37:19.92] >> right I think AI should be at least what
+[37:22.32] we believe that AI is going to solve the
+[37:25.04] supply demand constraint problem for
+[37:26.96] clinicians by giving clinicians leverage
+[37:30.32] >> correct
+[37:30.72] >> so that they are able to do better care
+[37:33.28] with more efficiency
+[37:34.56] >> correct
+[37:34.96] >> and increasingly focus on more and more
+[37:37.20] complicated things
+[37:38.40] >> correct
+[37:38.96] >> and I think that is the role of AI and
+[37:40.80] healthcare at least when we are you
+[37:42.56] seeing it with that lens we are seeing
+[37:43.84] incredible outcomes
+[37:45.36] >> super OS is a is I think probably the
+[37:47.92] first ever full manifestation or fully
+[37:50.72] formed manifestation of that
+[37:53.12] >> where the AI is running the whole
+[37:55.12] hospital man like and serious stuff not
+[37:57.12] like you know chatbot kind of stuff.
+[37:59.20] Yeah, I love that articulation. I think
+[38:01.04] that is so well done in a country where
+[38:03.12] I mean people don't get care. I think if
+[38:04.88] clinicians are empowered to sort of uh
+[38:07.36] manage or provide care to more people, I
+[38:09.52] think that's the best leverage of AI and
+[38:11.52] uh you're doing it really well. Maybe we
+[38:13.28] can take like a sidebar and understand
+[38:15.04] uh how you think um there are more use
+[38:17.44] cases of AI within healthcare and if
+[38:19.04] you've given it more thought because I
+[38:20.64] think GPD launched GPD health which is
+[38:23.36] sort of a major vertical that they are
+[38:25.20] entering showcasing that one of the
+[38:26.88] primary use cases of a horizontal
+[38:28.32] chatbot is actually also health and uh
+[38:30.88] so much is happening across
+[38:32.00] >> I'll tell you my perspective on it uh
+[38:33.60] you know obviously I am not some deep
+[38:35.36] expert on foundational models and I
+[38:36.96] rarely like to predict the future but
+[38:39.68] see lot of people today confuse
+[38:41.76] information with
+[38:43.04] Okay, tell me more.
+[38:44.32] >> What charge GB is doing today for the
+[38:46.48] most part is that it is making access to
+[38:49.60] information more consumable and easy.
+[38:51.92] >> Right.
+[38:52.32] >> But had you done enough Google search
+[38:54.32] before JB would have gotten the exact
+[38:55.84] same thing, right?
+[38:56.48] >> Correct.
+[38:57.12] >> But that's not care.
+[38:59.04] >> Absolutely.
+[38:59.60] >> Right. That is in some ways a
+[39:01.36] manifestation of you having an outlet as
+[39:04.72] a consumer because you have low trust in
+[39:07.36] your existing setup.
+[39:08.88] >> For the most part, that's what it is,
+[39:10.16] right? People are trying to validate.
+[39:12.16] But information is not care. You still
+[39:14.00] need a care provider to actually tell
+[39:15.60] you what to do and then do it.
+[39:17.04] >> Correct?
+[39:17.60] >> So in that sense, it's very unclear to
+[39:20.24] me what is the end goal here.
+[39:22.64] >> Right? So let's say let's say I put my
+[39:24.48] report and it's not like I have not done
+[39:25.76] it. Of course I have done it. Sometimes
+[39:27.28] to be very honest when doctors are
+[39:28.64] trying to tell me something I try.
+[39:31.28] So because you know obviously doctors
+[39:32.48] are experts and you know I am not really
+[39:34.08] the clinical expert. Dr. Alex my
+[39:36.16] co-founder is the clinical expert. So
+[39:38.24] when he's educating us I need the
+[39:39.76] research notes.
+[39:40.56] >> Yeah. But finally when my stomach hurts
+[39:43.68] or my shoulder is not well I will go to
+[39:45.76] the gastro the ortho here and my doctor
+[39:47.44] will tell me what to do.
+[39:48.64] >> Absolutely.
+[39:49.92] >> Uh so I don't think that replacement is
+[39:51.68] going to happen although that is how the
+[39:53.52] healthcare thing has been placed. See
+[39:56.16] why a lot of these companies are getting
+[39:58.24] into health is because it's the last big
+[40:00.24] undisrupted industry
+[40:02.48] >> right and if you are a I don't know like
+[40:04.48] a $3 trillion technology company and you
+[40:07.28] have to become a $5 trillion technology
+[40:08.88] company then you have to attack sectors
+[40:10.72] which are very big right and healthcare
+[40:12.24] as a in the US is a massive setup of you
+[40:14.48] know trillion
+[40:15.52] >> yeah it's 20% of their GDP 18 20%
+[40:18.00] trillion indry
+[40:20.96] >> so how do you add1200 billion of revenue
+[40:24.72] >> unless you attack an industry that is at
+[40:27.12] least 5 to 6 trillion right that's the
+[40:29.28] simple thing
+[40:30.16] >> so obviously people are going to try and
+[40:31.44] I hope more people try I'm not saying
+[40:32.80] I'm against it
+[40:34.24] >> but I think lot of these conversations
+[40:36.24] become very reductive right
+[40:47.52] secondly they are not replacements of
+[40:48.88] each other like preventive and curative
+[40:50.32] is another such example people have a
+[40:52.00] lot of you know preventive the curative
+[40:54.64] nature
+[40:56.64] framing which I think is incorrect.
+[40:59.44] >> So healthare is I think I think a lot of
+[41:01.60] this what I take away from this is that
+[41:03.28] a lot of this a sign of frustration that
+[41:05.28] customers have with the current system
+[41:07.04] >> and therefore they're seeking
+[41:08.24] alternatives.
+[41:09.36] >> Correct.
+[41:10.08] >> Right. And I think whatever looks like a
+[41:12.40] conven because the consumer is
+[41:14.00] convenience driven but anxiety.
+[41:16.96] Right.
+[41:19.60] with high convenience people try it out
+[41:21.52] >> and I think a lot of the technology bots
+[41:24.16] etc that people are building are in that
+[41:25.68] direction um I think also like think of
+[41:28.16] it from a standpoint saying that AI
+[41:30.00] fundamentally today does not create new
+[41:31.84] information correct
+[41:33.52] >> right so actually step back like a
+[41:35.20] little bit meta but like think about it
+[41:36.56] key why don't we have perfect diagnosis
+[41:40.00] every time as healthcare providers right
+[41:42.00] why is it a little bit more of a
+[41:44.32] experience and research based things and
+[41:46.48] you know you go to two different doctors
+[41:47.68] sometimes you can get two different
+[41:48.64] devices and I'm I'm I'm removing the
+[41:51.12] chaos of commercials and all outside but
+[41:52.72] like let's say genuinely got two
+[41:53.68] different devices the reason is because
+[41:55.84] >> humanity does not have 100% information
+[41:57.68] about the human body we don't know
+[41:59.12] enough
+[41:59.60] >> correct
+[42:00.32] >> so it's kind of like a semi-transucent
+[42:02.72] box
+[42:03.92] >> right and we know that if you press here
+[42:05.76] in the box this happens mostly but
+[42:08.56] sometimes it doesn't so then we guess
+[42:10.16] what happens right and effectively so as
+[42:12.48] an example if you look at the car and
+[42:13.92] you send your car to a workshop you do
+[42:16.16] not have this greatness in your
+[42:17.84] Because humanity has 100% knowledge
+[42:19.52] about the car because we build the
+[42:20.40] carchan
+[42:32.40] right. So I think the the the the I
+[42:35.68] think it's a very optimistic framing to
+[42:37.44] say that they will figure it out. I
+[42:39.12] think it still remains to be proven
+[42:40.72] deeply that they can fundamentally
+[42:42.88] create new knowledge.
+[42:44.72] I don't think AI systems inherently do
+[42:46.64] that yet. At least not any technology
+[42:48.40] that I know of or I have seen it. Uh
+[42:51.04] maybe it'll happen. I don't know.
+[42:52.88] >> But so far it has not happened. And I
+[42:54.32] think till that happens we will continue
+[42:56.64] to rely and we will have to rely um and
+[43:00.08] maybe even after that we'll have to rely
+[43:01.44] on the heristics of doctors and their
+[43:03.20] experience.
+[43:03.68] >> Correct.
+[43:04.08] >> Uh and and therefore I I I reject the
+[43:06.80] whole construct of the zero sum.
+[43:09.28] >> Yeah.
+[43:09.76] >> Between AI and
+[43:10.56] >> how can like doctors become more like
+[43:12.08] productive? Maybe it's a better question
+[43:13.28] to ask with AI, right? I mean, I think
+[43:15.52] >> I mean I'll give I'll give you a very
+[43:16.64] like little far out thing, right? So, so
+[43:18.08] think of it like this that what is the
+[43:20.24] autopilot equivalent of surgical AI.
+[43:22.72] >> Think of it like that,
+[43:24.24] >> right? So, imagine that you're a great
+[43:25.60] surgeon. Okay? And India, let's say, and
+[43:27.84] I don't know, I don't know the exact
+[43:28.96] numbers, but let's say it's a thousand
+[43:30.00] great surgeons in India, right? And they
+[43:31.36] are mostly in let's say the top 10
+[43:33.44] cities, but lot of population is not in
+[43:36.00] the top 10 cities and great surgeons
+[43:37.44] don't want to go to the smaller cities
+[43:38.40] because earning potential, their life is
+[43:39.76] here, whatever the case may be. So that
+[43:41.76] person is getting denied care. Other
+[43:43.52] than the overall shortage, it's also a
+[43:45.20] quality question.
+[43:47.52] But what if you could train neural nets
+[43:49.68] to run robotic surgery that is
+[43:51.36] supervised by a doctor and then the
+[43:53.12] robot lets the doctor intervene remotely
+[43:55.20] when it's stuck
+[43:56.40] >> in something, right?
+[43:57.60] >> Kind of like how autopilot works today,
+[43:58.88] right? Like mostly drives okay and then
+[44:00.32] it gets confused and it gives it to the
+[44:01.60] human.
+[44:02.00] >> Correct?
+[44:02.56] >> So now if you think of it like that,
+[44:04.24] then a doctor could potentially
+[44:05.68] supervise a 100 surgeries,
+[44:08.08] >> right?
+[44:08.40] >> Instead of doing one instead of just
+[44:09.60] doing one sequentially, right? So now
+[44:11.12] suddenly you have time leverage to the
+[44:12.24] doctor right
+[44:12.80] >> supply demand value equation
+[44:14.56] >> and obviously each time the robot at
+[44:17.28] scale the the neural net at scale learns
+[44:20.48] has an exception event let's say that it
+[44:22.24] gives to the doctor control and doctor
+[44:23.84] remotely goes in and does it the entire
+[44:25.76] network learns and network learns at
+[44:28.16] scale and so it gets very very good very
+[44:30.24] very fast and so the interruptions
+[44:31.60] become lower and lower and therefore the
+[44:33.28] doctor continues to be the teacher and
+[44:35.04] the supervisor and less and less the
+[44:38.72] doer of sequential surgery. M
+[44:40.88] >> right and I think that is a massive
+[44:42.64] leverage for the country and I think
+[44:44.40] that is the right way to think about how
+[44:46.16] AS by the way all the things I'm saying
+[44:48.16] today in pieces has already been
+[44:50.48] achieved
+[44:51.36] >> right there are there are doctors who
+[44:52.88] have already done remote surgery using
+[44:54.48] robotic systems today over five low
+[44:56.24] latency 5G networks UK to France heart
+[44:58.48] surgery all that has happened I think
+[45:00.40] some of this has been shown by SSI
+[45:01.84] robotics and good this a good basis
+[45:03.76] robotics have done it uh automated
+[45:06.08] neural surgery neural link already does
+[45:08.32] it
+[45:08.96] >> right they do the blend implant fully
+[45:10.80] autonomously.
+[45:15.44] So I think it's just a training data
+[45:16.72] question and I think some people should
+[45:18.08] build this right. Exactly. So that's
+[45:19.76] kind of like on our on our moonshot
+[45:21.52] horizon we have some of these things
+[45:22.88] that we we aim to build and that's the
+[45:24.88] minute you remove the zero sum you can
+[45:26.24] imagine all these possibilities.
+[45:27.44] >> Yeah. Yeah. and things like adding like
+[45:29.52] drug discovery etc is already being
+[45:31.04] solved for which is like okay even if
+[45:32.40] you don't intervene with the patient yet
+[45:34.16] you can make the sort of like you can
+[45:35.92] figure out care solutions which are um
+[45:38.24] non-intrusive right like I think that
+[45:40.96] becomes interesting but no coming back
+[45:42.64] to this right like I think um it is very
+[45:44.88] fascinating what you've done with super
+[45:46.08] OS but I also know some other things are
+[45:47.76] brewing um maybe we can figure out like
+[45:49.68] what the comparable looks like for
+[45:51.36] something like a super birth something
+[45:52.96] like a super surgery and what's on the
+[45:54.96] horizon right like it feels like not
+[45:57.04] only are you going expand this model
+[45:58.48] from a physical lens and operational
+[46:00.16] lens uh which is very very efficient but
+[46:02.24] also you're going to have multiple other
+[46:04.08] offerings that will empower the same
+[46:06.56] sort of patient that's going to come to
+[46:07.84] you or customer in your case as you call
+[46:09.60] it. Um so what does that look like? Uh
+[46:12.72] give me like a sense on the different
+[46:14.96] things that you have and how will you
+[46:16.56] expand further?
+[46:17.52] >> Sure. So we we have obviously our AB OBD
+[46:20.80] subscription product called VIP pass.
+[46:22.40] >> Yes, that's a 4,000 rupee VIP pass $399
+[46:26.08] 39.99 now. Okay,
+[46:27.44] >> we started at $9.99. Then we made
+[46:29.28] $19.99. Now it's $39.99.
+[46:31.92] >> So it's basically,000 bucks a person per
+[46:33.92] year because 39.99 covers a family of
+[46:36.72] four.
+[46:37.20] >> Okay.
+[46:37.52] >> Uh for the whole year, it gives you
+[46:39.28] unlimited access to our doctors.
+[46:41.28] >> And any test prescribed by our doctors
+[46:43.44] is covered. So if my doctor prescribes
+[46:44.96] you an MRI,
+[46:46.24] >> you don't have to pay for the MRI.
+[46:47.84] >> Okay.
+[46:48.32] >> Okay. So it takes all this complexity of
+[46:50.56] why are they prescribing, why aren't
+[46:51.68] they saying all this completely out of
+[46:53.04] the window? The customer doesn't have to
+[46:54.32] worry about it. That's is my problem. If
+[46:55.68] I can't diagnose you without a test,
+[46:56.80] it's my problem. Why are you paying for
+[46:57.92] it?
+[46:58.24] >> Correct.
+[46:58.80] >> So, it really simplifies the experience
+[47:00.88] for customers and whatever it is, right?
+[47:03.04] If it's an MRI or a mammo or an extend,
+[47:04.88] we have all the radiology, if it's a
+[47:06.16] blood test, if it's whatever it is,
+[47:07.52] right? Path lab test, whatever.
+[47:10.08] >> Do you cap the demand for this at any
+[47:11.68] point considering that you have finite
+[47:13.68] supply?
+[47:14.32] >> No, I mean because that's a function of
+[47:16.08] our ability to build new hospitals which
+[47:17.44] we're already trying to build and it
+[47:19.12] takes us about four four and a half
+[47:20.16] months to build a hospital. So, it's not
+[47:21.68] that long also. So, hopefully we can
+[47:23.44] scale quickly. Um so that's one really
+[47:26.16] cool thing that I I think customers
+[47:27.68] really love.
+[47:28.88] >> Uh the second thing is obviously all of
+[47:30.80] the IPD stuff that we do which is very
+[47:32.88] advanced surgical care with fixed prices
+[47:34.72] instant discharge you know pick up drop
+[47:36.88] all that
+[47:37.44] >> so customers love those kind of things.
+[47:39.52] >> Um then recently we've launched this uh
+[47:42.24] you know so so this second part of IPD
+[47:45.92] is essentially what is super surgery. M
+[47:48.16] >> so the super surgery philosophy is this
+[47:50.08] that first and foremost the best surgery
+[47:53.52] is the surgery you don't do right so in
+[47:58.08] general right because uh in overall our
+[48:00.96] doctors are uh you know very focused on
+[48:03.12] patient care and making sure that
+[48:04.96] they're doing the best possible thing
+[48:06.16] for the customers we actually prescribe
+[48:08.88] less than half the surgeries of the
+[48:11.28] industry
+[48:12.00] >> can can you take a step back like I
+[48:13.68] understand because I've like done some
+[48:15.12] more research for but for those who may
+[48:16.88] not be sort of aware right like what is
+[48:18.80] this misaligned incentive structure in
+[48:21.52] the industry doctor is incentivized to
+[48:24.08] sort of prescribe more surgeries
+[48:26.56] actually not incentivized alone it's
+[48:28.00] pressurized I would say right so
+[48:29.44] basically what happens is that
+[48:32.08] >> uh the relationship unfortunately that
+[48:34.32] exists between a hospital and a doctor
+[48:35.92] is a very commercial relationship not
+[48:37.76] that the doctor wants it of course not
+[48:40.32] but this is the only way he can exist
+[48:41.84] and remain a doctor so typically what
+[48:44.08] will happen is that uh you know uh a new
+[48:47.52] hospital is getting started. It'll try
+[48:49.52] to find all the doctors nearby who have
+[48:51.76] some revenue generation or patient base
+[48:53.76] for the existing hospital. They they'll
+[48:55.28] try to convince them to join their
+[48:56.48] hospital. When they join the hospital,
+[48:58.72] they will be on two kinds of uh pay
+[49:02.24] types. Let's say right there only two
+[49:04.08] available
+[49:05.76] for nobody does full salary. We do it
+[49:07.36] but industry doesn't do it. One is
+[49:09.84] called an MG which is minimum guarantee.
+[49:11.60] Minimum guarantee is upfront commission
+[49:13.44] they pay to the doctor
+[49:15.12] >> because the hospital has confidence that
+[49:17.92] whatever is the MG into five that much
+[49:20.64] demand the doctor will be able to
+[49:21.92] generate over a 9 month 9 to 12 month
+[49:23.52] period grace
+[49:26.08] fee for service is usually in many cases
+[49:28.72] a scenario where the hospital does not
+[49:30.48] have trust that you will bring demand so
+[49:31.92] they say per case we'll pay you
+[49:33.76] >> and sometimes a doctor side you know
+[49:35.76] they don't want to work in one hospital
+[49:36.96] so that's a but mostly it is because the
+[49:38.80] hospital has low confidence but in both
+[49:40.80] scenarios its commission. So what ends
+[49:43.28] up happening is that now the doctor has
+[49:45.68] joined.
+[49:47.20] Now if the doctor has joined, doctor has
+[49:49.60] this MG, there is a typically a guy in
+[49:51.36] this operations team of the unit whose
+[49:52.96] only job is to calculate what is called
+[49:55.68] MG recovery. Which means that if I give
+[49:57.92] 100 rupees to this person, am I getting
+[50:00.16] 500 rupees of revenue?
+[50:02.08] >> Okay. Now 80% of revenue in a hospital
+[50:04.40] typically is IPD. So that requires
+[50:06.32] admission. So obviously there is now
+[50:09.36] explicitly or implicitly an admission
+[50:11.36] target
+[50:12.48] >> right
+[50:13.44] >> and this admission target then is
+[50:15.60] fulfilled by overfilling the OPD or
+[50:17.84] sometimes overcharging the patient cuz
+[50:19.68] it's a revenue goal
+[50:21.20] >> right and that's how the incentives get
+[50:22.48] misaligned but see the thing the problem
+[50:24.64] in this now the the the genius of this
+[50:27.92] is that somehow this has become a
+[50:29.76] doctor-led narrative which it is not
+[50:32.48] >> actually the doctor has no power in this
+[50:34.16] no matter what is portrayed because at
+[50:36.48] the end of those 9 to 12 months if the
+[50:38.32] doctor is not doing MG recovery. They
+[50:40.00] will change the guy.
+[50:41.60] >> He'll be out of a job.
+[50:42.48] >> Right. Exactly. Right. And then what
+[50:43.68] will he do? Right. Because all the
+[50:44.88] doctors that I know of and I know
+[50:46.16] thousands of thousands that I've worked
+[50:47.28] with, they all hate it. They all try to
+[50:49.68] fight against it. But how much can you
+[50:51.12] fight the whole system like this? We see
+[50:52.96] what happens to a doctor. So when the
+[50:54.08] when the doctor goes against this so
+[50:56.24] it's very polite everybody's very nice
+[50:58.08] and kind and then they'll tell the
+[50:59.36] doctor that sorry types right doctors
+[51:02.64] like no I will not do the wrong thing
+[51:03.76] which all doctors push against. Then
+[51:05.68] this doctor they will find another
+[51:07.20] doctor who's maybe you know more
+[51:09.04] compliant or more desperate or whatever
+[51:11.28] the case may be in his life situation.
+[51:13.36] So this doctor wants to leave we'll have
+[51:14.88] to leave and so what he'll do he'll
+[51:16.24] apply to other hospitals
+[51:18.00] >> but all hospital are the same model. So
+[51:19.84] they will they will that sales the
+[51:21.36] gatekeeper is the sales team it's not
+[51:22.72] the clinical team right so the sales
+[51:24.40] team will call of hospital B will call
+[51:25.84] hospital A and they will say why did you
+[51:28.00] get this doctor why is he leaving right
+[51:30.08] so they will say they will say something
+[51:31.68] nicely saying no he takes the patient
+[51:33.20] outside so it's a safety risk that
+[51:34.56] nobody takes the patient outside okay
+[51:36.32] why will you do that what's in it for
+[51:38.08] him
+[51:38.32] >> correct
+[51:38.72] >> right so but the other hospitals got the
+[51:40.80] message that why
+[51:46.96] >> so what that what does that mean what
+[51:48.48] that means is that this doctor has only
+[51:51.20] two options, right? either you just
+[51:53.92] start your own hospital or you you know
+[51:57.04] just stop being a doctor which by the
+[51:58.48] way if you talk to many people many
+[51:59.68] doctors have exited healthcare because
+[52:01.20] of this
+[52:02.08] >> really
+[52:02.32] >> I know I know I know doctors of Indian
+[52:04.32] origin who were in the US who came here
+[52:06.88] and then spent 6 months here and they
+[52:08.56] said I can't deal with the system and
+[52:09.84] left
+[52:11.68] okay so so this is the problem in which
+[52:14.48] the doctor community is stuck
+[52:16.48] >> so doctor is as stuck in the healthare
+[52:18.80] system as the patient in fact I would
+[52:20.56] argue the doctor is has is a worse deal
+[52:23.44] because the patients as patients we have
+[52:25.12] to deal with it once in 5 years right
+[52:27.28] but the doctor has to do it every day
+[52:28.80] has to deal with it every day it's a
+[52:29.92] daily thing this is the only way he or
+[52:31.28] she can exist in the system
+[52:33.28] >> so the reason why so many doctors are
+[52:35.68] supporting us and so many doctors are
+[52:38.24] you know reaching out to us saying hey
+[52:40.72] when is the next center opening up how
+[52:42.08] can we partner with you guys etc is
+[52:44.40] because we have a genuine honest system
+[52:46.64] which says that you are not required to
+[52:48.56] bring demand
+[52:49.36] >> correct
+[52:49.76] >> you are here only and only for your
+[52:51.20] clinical skills and because you want to
+[52:52.64] do the right thing. I'll tell you I'll
+[52:53.60] tell you another thing right dig this
+[52:54.80] relation there's lot of this narrative
+[52:56.80] in the industry that I find oh we
+[52:59.36] incentivize doctors for great clinical
+[53:01.20] outcomes you know I'm not a doctor but
+[53:03.92] on behalf of the doctors I take offense
+[53:06.16] because what is implied in that what is
+[53:07.84] implied in that is if you don't give
+[53:09.20] incentive the doctor will not do his
+[53:10.72] best
+[53:11.68] >> which is not true
+[53:12.32] >> this is absolutely false
+[53:13.52] >> correct
+[53:14.16] >> see the doctors are like you know
+[53:16.00] they're like a unique blend I feel of
+[53:18.32] technical engineering type people and
+[53:20.48] artists
+[53:21.60] >> okay so you If you talk to an artist and
+[53:24.24] you say, "Hey, can you do a make some
+[53:26.08] art for me?" Like, let's say they paint
+[53:27.28] and you're like, "Hey, can you paint a
+[53:28.56] paint something for me?" They will they
+[53:31.04] could decide to say no to you or you
+[53:32.80] could decide you can't afford them. But
+[53:34.64] if they decide to do it, whether you pay
+[53:36.80] them or you don't pay them, they will do
+[53:38.24] the best job because they have integrity
+[53:39.92] of their art form.
+[53:40.96] >> Correct.
+[53:41.44] >> Doctors are exactly like that.
+[53:42.80] >> They also have purpose. They have
+[53:44.32] >> Yes. Absolutely.
+[53:45.20] >> They really want to do great work.
+[53:47.12] >> Doctor, let's go back to school. At the
+[53:49.76] time of applying for medical, this
+[53:51.36] person who wants to be a doctor could
+[53:52.80] have been an investment banker, could
+[53:54.08] have been a software engineer, could
+[53:55.20] have been a doctor. Objectively of this
+[53:57.44] three, doctor makes the least money and
+[53:59.04] much least, much less, not a little bit
+[54:00.48] less, right? A engineer next level.
+[54:12.48] Correct.
+[54:13.04] >> So I feel overall doctors get such a raw
+[54:15.28] deal. They are so stuck in that system
+[54:17.44] and it's a cartiliz system.
+[54:20.24] Right. And so super health is in
+[54:22.08] honestly fighting the system on behalf
+[54:24.24] of the patient, the doctor and I would
+[54:26.00] say even the insurance provider.
+[54:30.00] >> Right. And I think and I think the this
+[54:32.00] is what and I have a lot of you see I
+[54:33.92] have a lot of empathy for the hospital
+[54:35.52] system because it's not like they're bad
+[54:37.12] people.
+[54:38.24] >> They are also stuck in their created
+[54:40.00] model
+[54:40.72] >> because now they're riding the tiger.
+[54:41.84] What are they going to do?
+[54:42.96] >> Correct.
+[54:43.60] >> Right. So this is what skews this
+[54:45.20] incentive structure. This is why you
+[54:46.64] have all these problems. uh this is why
+[54:48.88] you know your bill changes randomly you
+[54:51.36] know say I'll give an example so
+[54:52.96] hospitals very often when you see the
+[54:54.56] bill they will say my OT charge is 100%
+[54:57.04] of the surgeon charge
+[54:59.20] >> okay so let's say you as a patient have
+[55:01.92] a surgeon who has 20 years of experience
+[55:03.44] and he charges one lakh pe experience of
+[55:06.08] course he deserves it it's talent all
+[55:07.52] that
+[55:09.20] charge will become one lakh okay why
+[55:12.08] nobody knows let's say you have a
+[55:13.28] surgeon who charges 50,000 charge will
+[55:15.28] become 50,000
+[55:17.60] What has changed in the OT because of
+[55:18.88] the senior doctor? Nothing.
+[55:21.28] >> So same OT, same patient, same
+[55:22.56] everything. In fact, I would argue the
+[55:24.40] more senior the doctor, the less he uses
+[55:25.76] your because he does the surgery faster.
+[55:27.12] So you should charge less.
+[55:28.24] >> Correct.
+[55:28.72] >> Isn't it better? Huh?
+[55:31.92] Correct.
+[55:38.08] How is this how is this fair? Correct.
+[55:40.48] Right. And
+[55:44.16] problem
+[55:49.44] doctor is charging correctly because he
+[55:51.20] has so much more experience.
+[55:53.36] >> Completely makes sense. That is not the
+[55:55.68] debate. Why is that changing the OT
+[55:57.04] price? I don't know.
+[55:57.92] >> And why is it that customers have to
+[55:59.60] find out at a later point during a
+[56:01.12] surgery that the price has suddenly
+[56:03.36] quadrupled?
+[56:04.88] uh
+[56:08.24] um complex
+[56:11.28] >> see part of it is part of it is this
+[56:13.28] whole incentive thing right so it's a
+[56:15.52] revenue goal control
+[56:20.08] right because it is it is unthinkable to
+[56:23.12] imagine hospital doesn't know actually
+[56:34.08] absolutely And see okay I accept
+[56:41.84] I will accept
+[56:44.00] that is not an estimate guys that if you
+[56:45.76] go to the websites also they will write
+[56:47.60] this surgery is between 1.5 to three
+[56:49.60] lakhs I'm like that's not an estimate
+[56:51.76] that's a guess
+[56:52.80] >> correct
+[56:53.76] >> so you know it is I think it is
+[56:55.44] fundamentally
+[56:57.60] um see okay if think about little little
+[57:00.00] meta right what is a hospital a hospital
+[57:02.16] is fundamentally a rapper M
+[57:04.16] >> right. They don't treat the patient. The
+[57:06.00] doctor treats the patient. They don't
+[57:07.12] care for the patient. The nurse does
+[57:08.32] that.
+[57:08.96] >> They don't make the devices. They don't
+[57:10.48] do the medicines. Obviously, they're not
+[57:11.76] the insurer.
+[57:22.64] No m
+[57:24.80] >> so whatever and every actor in this
+[57:26.96] system whether it's the device guy
+[57:28.32] whether it's the medicine guy or whoever
+[57:29.52] it is is trying to maximize for their
+[57:30.96] shareholder value which is also correct
+[57:32.88] so what we have to do is fundamentally
+[57:34.96] lower the cost
+[57:36.40] >> of delivery by reimagining the hospital
+[57:39.04] distribution network
+[57:40.16] >> correct
+[57:40.56] >> right and that's basically what we're
+[57:41.84] trying to do super OS is a very big
+[57:44.40] >> root problem target
+[57:45.68] >> root problem see think of it like this
+[57:47.28] what is happening in healthcare today is
+[57:48.72] that dal has become thousand rupees a
+[57:50.24] kilo okay and We are all trying to
+[57:52.72] figure out 0% DMI on,000 rupees of dal.
+[57:55.60] >> That's what everybody's solving. What we
+[57:56.80] are saying is
+[57:58.80] >> why is it,000 kilo?
+[58:00.40] >> So that's what and that requires you to
+[58:01.76] reimagine the whole system. If you
+[58:03.84] reimagine the core model, then you can
+[58:05.76] do some amazing improvements on care,
+[58:08.08] quality, efficiency, experience with
+[58:09.76] tech. And that is why it is possible for
+[58:12.08] someone like super s to super health to
+[58:14.08] even build something like super OS
+[58:16.56] >> uh you know which is like I was saying
+[58:18.72] that the reason it cannot get built
+[58:20.88] somewhere else are very difficult to
+[58:22.16] build somewhere else is because the
+[58:23.44] people who know how to build software
+[58:25.28] have zero context about hospitals don't
+[58:27.52] understand it deeply and people who
+[58:29.36] understand hospice deeply who run
+[58:30.48] hospitals deeply have zero understanding
+[58:31.68] of software
+[58:32.40] >> and the twain shall never meet because
+[58:36.88] >> so you need to be a fullstack player
+[58:38.32] like us to build something like super OS
+[58:40.40] Right. And so we will keep building
+[58:41.84] this. Our at least our
+[58:44.56] hope is that you know at some point
+[58:46.24] we're able to make this widely available
+[58:47.76] to people outside as well. And I don't
+[58:50.00] mean this like a commercial thing or
+[58:51.28] anything like I feel it's just a great
+[58:53.20] system for people to use.
+[58:54.72] >> So people should just use it. Uh you
+[58:56.72] know and once we are more confident and
+[58:58.48] everything works a lot better. We would
+[59:00.08] we would certainly certainly love to
+[59:01.36] make it more widely available to people.
+[59:02.72] That was going to be my question in fact
+[59:04.08] like if this is so such a force
+[59:06.32] multiplier would you ever think of
+[59:07.60] licensing it having franchises like is
+[59:10.48] that the aspiration or is it to sort of
+[59:12.96] like Tesla for instance does not do that
+[59:14.64] yet because they feel that the control
+[59:16.24] system gives them the most amount of
+[59:17.84] leverage how do you think about it
+[59:19.12] >> actually actually that so we actually
+[59:21.60] Tesla has open sourced a lot of their
+[59:23.60] patents
+[59:24.72] >> battery and systems
+[59:25.60] >> the technology itself
+[59:27.12] >> so we would we would love to do
+[59:28.32] something like that uh right because see
+[59:30.08] we are not a uh it's very it's probably
+[59:33.12] not useful for us to start becoming a
+[59:36.00] SAS sales company.
+[59:37.28] >> Yeah.
+[59:37.52] >> Right. We are deeply a healthare that's
+[59:40.24] not the mission we are on. Right. We are
+[59:41.44] here to fix healthcare. Right.
+[59:43.28] >> Um and that's not a SAS problem.
+[59:45.76] >> But along the way we are going to make
+[59:47.04] some insanely great technology. We are
+[59:49.52] >> probably the most legit AI healthcare
+[59:52.16] company in the country because we are
+[59:53.92] the only one who has built the hospital
+[59:55.36] and the AI and is running the hospital.
+[59:57.44] >> Um in
+[59:57.92] >> fact different parts of AI you've
+[59:59.20] brought together like people are
+[60:00.16] building in silos. one product each of
+[60:03.36] the ones that you've gotten together.
+[60:04.72] >> Correct. And it's not doing anything
+[60:06.64] like it's not actually deployed in any
+[60:08.64] active scenario real time treating
+[60:10.32] actual patients. Correct.
+[60:11.36] >> Right. We are the only ones who have
+[60:12.40] that at least to the best of my
+[60:13.44] knowledge at this scale.
+[60:14.16] >> It is operational in practice
+[60:15.68] >> and has been over tens of thousands of
+[60:17.52] patients. Right. So it's pretty pretty
+[60:19.52] >> incredible.
+[60:20.08] >> So I I mean as we get better at this
+[60:22.16] obviously we would love more and more
+[60:23.44] people to use it. We will try our best
+[60:24.96] to you know maybe provide whatever is
+[60:27.04] the equivalent of patents and open
+[60:28.40] sourcing it.
+[60:29.28] >> Sure. uh we don't want we don't intend
+[60:31.20] to become a software sales company
+[60:32.64] because it's a very different company
+[60:34.32] but I want if you build great tech which
+[60:36.48] helps healthcare as a whole
+[60:38.16] >> uh I think that would be amazing and see
+[60:40.64] why right like the question always comes
+[60:42.64] back to why what is what is the why
+[60:44.40] right um
+[60:47.36] see for us u
+[60:50.48] this for and I don't just mean for me
+[60:52.32] like I mean for everybody who's at super
+[60:54.08] health we have a very deep belief that
+[60:57.36] um if you study the history of the
+[60:59.92] You know uh every country has this one
+[61:03.12] generation that has to do a lot of hard
+[61:04.56] work to take the country from developing
+[61:06.08] to developed
+[61:09.36] correct
+[61:16.32] right so we it is our karm to do this
+[61:21.04] right and if India is all of us in India
+[61:23.92] are focusing on becoming a developed
+[61:25.76] country in 2047 let's say 22 years from
+[61:28.48] Then we have no hope to be a developed
+[61:30.48] country unless we fix our fix our
+[61:32.16] healthcare and make it widely
+[61:33.68] accessible, widely affordable,
+[61:35.60] exceptionally high quality, even better
+[61:37.60] than what we have now widely.
+[61:41.04] >> That is our contribution to the 2047
+[61:43.60] developed India. That's why we are all
+[61:45.28] here.
+[61:45.68] >> That's amazing.
+[61:46.24] >> We are not here because and that's why
+[61:48.40] we say some of these things which are
+[61:49.44] very counterintuitive to people saying
+[61:52.56] goal this is not a project of saying hey
+[61:55.36] let's chase valuations.
+[61:56.80] >> Yeah.
+[61:57.12] >> Right. Right. I mean the whole company
+[61:58.16] has been built fundamentally on the back
+[61:59.76] of mostly angels.
+[62:00.96] >> Yeah.
+[62:01.36] >> Right. Which is not normal. I mean it's
+[62:03.36] not normal for angels to show up and say
+[62:04.64] hi to correct.
+[62:06.96] >> Correct. So
+[62:09.68] it is like meaningful money. Meaningful
+[62:11.20] money. So for us this is genuinely a
+[62:14.88] mission which is our contribution to
+[62:16.88] what we want to build for our country.
+[62:28.40] And we try to do the best job we can to
+[62:30.56] build a really honest healthcare
+[62:32.48] solution for customers whether it's the
+[62:34.08] building whether it's the operational
+[62:35.20] protocol whether how we work with
+[62:36.48] doctors whether it's the AIOS with super
+[62:38.96] OOS whatever it is and as much as we
+[62:41.76] learn uh and you know we will so share
+[62:44.88] it with the world as much as we can as
+[62:46.88] soon as we can uh I spend a lot of my
+[62:49.76] own time on Sundays talking to people
+[62:51.76] who are trying to build hospitals to
+[62:53.12] tell them
+[62:56.64] Because see we not going to make 3
+[62:58.16] million beds
+[62:59.20] >> right I mean even with my founder
+[63:00.88] optimism I think that's probably a
+[63:02.56] stretch correct
+[63:03.60] >> so everyone should make it right and
+[63:05.76] give great healthare to India because
+[63:11.52] right
+[63:19.60] >> to get this right and that's what we're
+[63:21.92] trying to do now you If that means that
+[63:24.80] you know we will be a very large very
+[63:26.24] successful company sure.
+[63:28.00] >> If that means that we will not be that I
+[63:30.16] personally don't really care. For me the
+[63:32.56] metric is did we solve the problem we
+[63:34.40] set to solve which is to make healthcare
+[63:36.48] honest.
+[63:37.36] >> Yeah.
+[63:37.84] >> Right. And that's what all of us work
+[63:39.68] towards. That's what we are about.
+[63:41.12] That's what we think about every day.
+[63:43.36] >> Uh it's also why uh you know we are so
+[63:47.12] focused on building a very strong unit
+[63:48.96] economics business because
+[63:52.16] >> right so that the So that tthos is true.
+[63:55.28] >> Yeah.
+[63:55.68] >> Right. And like we can see the results
+[63:57.52] you know we in a very strong economic
+[64:00.16] position as of January. Uh right. So we
+[64:02.80] can basically build the rest of the
+[64:03.92] centers ourselves now.
+[64:06.00] >> Which is insane like no hospital
+[64:07.28] achieves that in 5 months right? So it's
+[64:09.44] pretty cool. So this is a lot of trust
+[64:11.12] that customers have shown in us, doctors
+[64:12.56] have shown in us. So
+[64:15.76] you know it sounds I know sometimes
+[64:17.12] people tell me that it sounds very
+[64:18.32] idealistic.
+[64:21.28] I don't know what else to tell you. No,
+[64:22.96] it's amazing. I think um again before we
+[64:24.96] started we were talking about something
+[64:26.16] and you mentioned care and I want to go
+[64:28.00] deeper onto that. Uh um but it it really
+[64:31.60] looks like and I can feel that you are
+[64:34.00] not doing this sort of like just
+[64:35.28] commercial gains and that's not P1 for
+[64:37.36] you. It is truly the the care you want
+[64:39.76] to provide the difference you want to
+[64:40.80] make the vision that you have. In fact
+[64:42.32] in one of your previous interviews I
+[64:43.84] think you mentioned that you were
+[64:44.80] thoughtful about thinking
+[64:48.16] health education etc. And then you
+[64:50.48] realize health and you gave it two stabs
+[64:52.96] before you sort of like started doing it
+[64:54.48] yourself, right? You were early team at
+[64:56.32] practo
+[64:57.84] and now you're doing it. So it's not
+[64:59.28] like suddenly opportunity
+[65:02.16] um which is phenomenal. Uh I have so
+[65:04.48] many questions but we're also I want to
+[65:05.92] be mindful of time. I do want to
+[65:07.44] understand the super birth aspect as
+[65:09.20] well which is like if you look at like
+[65:10.96] maternity specialty hospitals as well,
+[65:13.44] right? I mean there's so much in the
+[65:15.20] market where in fact this is absolutely
+[65:17.52] berserk and isolated but I was at a
+[65:19.20] comedy show and the comic is basically
+[65:21.44] making fun of how ironic these maternity
+[65:24.88] hospitals have become right because you
+[65:26.40] charge incrementally more for every
+[65:29.12] specific thing which may not be related
+[65:30.80] to the birth itself and he was actually
+[65:32.96] doing a set on specifically this and we
+[65:35.76] were like I was with my sister and we
+[65:37.20] were like this is actually true like you
+[65:39.04] hear from parents increasingly that you
+[65:41.28] have to line up 12 months in advance you
+[65:43.52] have to pay obnoxious amounts of money
+[65:47.12] for specific things, VIP rooms, luxury
+[65:50.56] rooms, pre post, etc. Tell us the
+[65:53.84] problem and again the solution and how
+[65:56.40] did you go about it and why is it even
+[65:58.32] like why is a specialty even needed? How
+[66:00.72] do you incorporate it amongst your mix?
+[66:02.32] I'd love to know.
+[66:03.28] >> See uh you know we are trying to fix all
+[66:05.76] healthcare
+[66:06.72] >> as much as we can, right? And uh one of
+[66:09.36] our important areas really is uh we feel
+[66:13.60] that
+[66:15.68] uh you know and see a lot of our
+[66:17.84] insights come from our own experiences
+[66:19.44] of people in super health because
+[66:20.96] everybody here has you know one or two
+[66:23.28] or maybe more experiences in healthcare
+[66:25.04] that they were not very fond of.
+[66:27.36] >> Uh so superb birth really happened to us
+[66:30.16] when um my co-founder was going through
+[66:32.96] his own birth journey last year in
+[66:34.40] April. This is before our hospital's
+[66:35.76] lives unfortunately. I tried to convince
+[66:37.92] him
+[66:41.60] so Mano was going through that and
+[66:44.72] you know so the journey he went through
+[66:46.48] and all the things you're saying right
+[66:47.92] like VIP
+[66:52.08] random so what we realized is that you
+[66:55.36] know first of all if you look at the
+[66:57.12] data and you know when we launched super
+[66:58.72] birth you know a lot of people got very
+[67:00.32] upset about with us which happens when
+[67:02.24] we tell the truth I guess so so but You
+[67:06.72] know now I'm I'm hearing that you know
+[67:08.16] the the Karnataka government is taking
+[67:09.76] that up as an issue in the parliament
+[67:11.20] and they're trying to which is the right
+[67:12.32] thing absolutely the right thing.
+[67:13.84] >> So the WHO guidelines says 15% of births
+[67:16.88] should ideally be uh you know C-section
+[67:19.12] beyond that they don't see any
+[67:20.08] incremental mortality benefits or
+[67:21.76] anything. Uh India private healthcare is
+[67:26.16] at about 49 to 60%. There is a Lancet
+[67:29.12] study about 7 lakh women they have done
+[67:30.56] a study in India on in 202122 which has
+[67:33.36] all of this data. So, and as by the way,
+[67:36.80] as your economic status increases, the
+[67:39.44] percentage of C-section increases. So,
+[67:42.88] either money is causing some
+[67:44.32] physiological change,
+[67:46.08] >> which it probably isn't.
+[67:49.20] >> This does not make much sense. I can
+[67:51.04] understand 5 10%, right? Like people
+[67:52.64] have preference, they want convenience.
+[67:54.08] Can't be 15 and 65.
+[67:56.08] >> Yeah,
+[67:56.48] >> it's as high as 65.
+[67:58.08] >> Wow.
+[67:58.56] >> Right. 49 to 65%. Something like that
+[68:00.64] was in the land, but I'm sure someone
+[68:01.84] will link it and fact check me on this.
+[68:04.16] Um
+[68:05.84] so what we are saying is not that we are
+[68:08.08] against or for C-section. That's not
+[68:09.92] what our position is.
+[68:11.36] >> Our position is that
+[68:14.32] this has to be not just a um spoken or a
+[68:18.48] lip service kind of choice, but it has
+[68:20.56] to be a real choice for the woman,
+[68:22.88] right? And it is a scary construct,
+[68:24.88] right? Because for the first time
+[68:26.00] mother, they don't know what's going to
+[68:26.96] happen. And often times they're they may
+[68:29.28] make decisions that they may not they
+[68:31.28] may regret later or they may want to
+[68:32.72] change later or whatever it is right
+[68:34.00] because they were very afraid because
+[68:35.12] everything is high anxiety for the first
+[68:36.48] time. So what we are saying is very
+[68:38.80] simple saying that look whether you do
+[68:40.24] C-section or natural there is no
+[68:43.12] difference in price there is the same
+[68:44.72] price.
+[68:46.40] We will give you the best shot at
+[68:48.24] C-section irrespective right with the
+[68:50.72] birth coach with the physio with the
+[68:52.40] nutrition with the training with the
+[68:54.00] classes that we do with everything. So
+[68:55.76] that till the last day you can decide
+[68:59.12] whether you want C-section or natural.
+[69:01.12] Okay. Now as the mother it should be
+[69:04.08] your choice. You can anytime decide to
+[69:05.44] do C-section anyway. There is no nothing
+[69:07.12] stops you from doing that. We not
+[69:09.04] against it. But it has to be an informed
+[69:11.04] and meaningful choice.
+[69:13.20] >> Of course if your doctor and you sit
+[69:15.52] together and doctor clinically advises
+[69:17.04] you something that is that is different.
+[69:18.64] We are not saying the doctors are at
+[69:19.92] fault here. But 15 versus 60% something
+[69:24.24] is off there. Correct. Right. So we are
+[69:26.72] just trying to make this a real real
+[69:28.64] option by preparing them as much as
+[69:30.64] possible and taking away all of this
+[69:33.04] anxiety of pay for this, pay for that by
+[69:35.04] saying there's a single price.
+[69:37.04] >> You can meet the doctor five times, 50
+[69:39.04] times, 500 times. You can doesn't
+[69:41.20] matter. You decide. There's no charge
+[69:42.88] for any of this. The doctor could give
+[69:45.04] five ultrasounds 50. This also happen.
+[69:47.04] They will give you a package. It'll have
+[69:48.08] six ultrasounds. Then suddenly you'll
+[69:49.44] see nine is required.
+[69:52.88] I'm like ultround ultround doesn't
+[69:55.60] matter everything everything is covered
+[69:57.92] from the time you come to us till the
+[70:00.24] birth until one year after birth we
+[70:02.96] cover gynecological care for the woman
+[70:04.80] for one year after birth you can meet
+[70:06.08] the gynecol as many times as you want
+[70:07.28] there's no issue we also cover the
+[70:10.00] pediatrician for one year for the pat
+[70:11.36] for the for the child because you came
+[70:13.20] for safe birth now baby has to be
+[70:14.56] healthy first we cover first year of
+[70:16.40] vaccination also because that also is
+[70:18.64] important
+[70:19.92] >> during the birth if you need niku we
+[70:21.52] cover that you don't have pay for it.
+[70:22.96] They otherwise people charge you per day
+[70:24.56] 15 20,000 bucks per day per niku
+[70:27.60] standard charge it's included in the
+[70:30.48] price. So it's kind of like you know
+[70:32.64] we're trying to make this as hassle-free
+[70:34.16] as possible and so that you can just
+[70:35.60] focus on really making these real
+[70:36.72] choices and see again you know it's kind
+[70:39.44] of like let's say I want to be David
+[70:41.84] Beckham
+[70:43.68] suppose
+[70:47.92] on the other hand I want to be David
+[70:49.28] Beckham I hire David Beckham's coach
+[70:51.76] >> right and he trains me to be David
+[70:53.04] Beckham I may still not become David
+[70:54.72] Beckham true but with the second option
+[70:56.88] I probably have a very real shot at
+[70:58.64] trying at my chance of success is much
+[71:00.32] better right
+[71:00.72] >> correct So that's what superb is about
+[71:02.64] saying that let's make this a real
+[71:03.92] choice. Let's prepare you for it and we
+[71:06.08] will prepare you for it irrespective of
+[71:07.60] what you decide
+[71:08.80] >> so that till the last day you can decide
+[71:11.76] >> and whatever you decide it's not like
+[71:13.44] last day
+[71:17.44] suddenly like
+[71:21.84] so that's what our attempt is. We think
+[71:23.76] that if we can remove a lot of these
+[71:25.44] unnecessary incentives in the system, we
+[71:28.00] can improve it.
+[71:30.08] Remains to be seen. Uh it's early days
+[71:32.16] for us as well. But the intention is
+[71:34.64] that you know how do we make this more
+[71:37.12] real choice for the women.
+[71:38.96] >> And again see this is a very hard thing
+[71:40.80] for sort of us to
+[71:43.36] uh
+[71:45.12] I guess try and articulate because like
+[71:47.60] >> it's sensitive
+[71:48.56] >> as sensitive but like I'm a guy like
+[71:50.24] what do I know about birthing right?
+[71:51.52] That's the real thing. So we spend a lot
+[71:53.60] of time talking to women in our in our
+[71:55.76] in our research and talking to them and
+[71:57.84] really trying to understand and a lot of
+[71:59.04] these things that I'm saying they have
+[72:00.48] taught me. I don't know all this.
+[72:02.24] >> How would I know like I am not the one
+[72:04.08] giving birth right? Like I'm not a big
+[72:05.92] fan of this we are a pregnant thing. We
+[72:07.36] are the one woman is pregnant. You are
+[72:09.28] just giving moral support. Nothing else
+[72:10.72] the guy is doing. Sorry to all the men
+[72:12.48] here. Uh so and again I'm not presuming
+[72:14.88] that I know what's going on in the
+[72:16.08] woman's mind when she's going through
+[72:17.44] pregnancy. Obviously there's a lot going
+[72:19.12] on. There's a lot of changes that are
+[72:20.64] happening. But we have tried to learn as
+[72:23.04] much as we can from the women we spoke
+[72:24.56] to which are many many hundreds of them
+[72:26.64] and they have taught us a lot of the
+[72:28.48] things that really happen uh in the
+[72:30.24] journey. Uh and we're trying to also
+[72:32.00] build a community so that you know new
+[72:34.00] women new pregnant women can also come
+[72:36.00] in and you know be part of that and
+[72:37.36] understand women who have gone through
+[72:39.60] natural birth or C-section or have
+[72:41.36] switched over or whatever what were the
+[72:43.60] things they went through because I think
+[72:45.68] a lot of this is just anxiety reduction
+[72:47.60] and just knowing that other people went
+[72:49.52] through the same thing. M
+[72:50.88] >> um so those are some things we're trying
+[72:53.12] that's really what superb is about. It
+[72:54.72] is at least to the best of our ability
+[72:56.80] we have tried it to be the be the most
+[72:59.12] hassle-free and safest birth experience
+[73:01.20] possible. M
+[73:02.24] >> see another very interesting thing I
+[73:03.36] want to tell you that you know a lot of
+[73:04.88] people don't realize this but you know
+[73:07.12] multispety hospital operating rooms and
+[73:09.76] and surgical teams and surgical care and
+[73:11.92] equipment is vastly superior to single
+[73:14.48] specialty hospitals
+[73:15.52] >> really
+[73:15.92] >> vast it's not even com there is no
+[73:17.76] comparison
+[73:18.40] >> why is it that
+[73:19.60] >> because for multi-p specialy you just
+[73:20.96] handle more complex cases so you're just
+[73:22.40] better prepared for everything right the
+[73:23.68] OT's are very much better designed the
+[73:25.60] equipment is there the teams care teams
+[73:27.12] IC teams and everybody's just better
+[73:29.92] >> so actually on balance It is much safer
+[73:32.96] for you to have a birth in a multispety
+[73:34.96] hospital in my opinion because the
+[73:37.68] backup options available should
+[73:39.28] something go wrong are or something get
+[73:41.20] complicated. It's just many much more.
+[73:42.88] >> Correct. A large number of uh maternity
+[73:45.84] hospitals or you know care centers like
+[73:48.32] the the brands that we all know do not
+[73:51.28] have this spec to the same center
+[73:53.68] >> right and we've had cases where people
+[73:55.52] have come against discharged against
+[73:57.20] medical device in many of those centers
+[73:58.56] and moved here because they just found
+[74:00.08] that
+[74:00.96] >> the infra the equipment the team was
+[74:02.72] just superior
+[74:03.44] >> well prepared right because I mean not
+[74:05.12] not and there's nothing against them
+[74:06.48] this is not the business they're in
+[74:07.60] >> correct correct
+[74:08.08] >> so they're not required to staff this up
+[74:09.60] I'm not but I'm saying
+[74:11.28] >> even if the chance is one in 500 100.
+[74:13.76] >> Yeah.
+[74:15.04] >> Why would you take the chance, right?
+[74:16.40] Like just
+[74:17.28] >> do it in a multispety center because
+[74:18.80] they're just better prepared for
+[74:19.84] everything.
+[74:20.72] >> So this is why we designed it to be the
+[74:22.32] safest and the most hassle-free birth
+[74:23.92] experience with superb birth. And every
+[74:25.36] product we will launch from here on,
+[74:26.48] we're working on something with
+[74:27.36] emergency. We working on something with
+[74:29.36] skinincare. We're trying to do something
+[74:30.72] around uh you know fitness and
+[74:32.64] orthopedics. Uh funnily enough um we are
+[74:36.64] now
+[74:38.16] getting requests from customers who have
+[74:40.40] come here and have stayed here uh to
+[74:42.64] start a food subscription to our kitchen
+[74:44.72] >> which has been a very strange thing for
+[74:46.16] us because people want to subscribe to
+[74:47.68] hospital food which is kind of like
+[74:49.20] unique
+[74:50.24] >> but I tried the food today it's amazing
+[74:52.08] like I love the tonic shots the clean
+[74:54.88] food everything
+[74:55.68] >> see you know philosophy food
+[74:58.96] see food is basically if you fix your
+[75:01.04] food
+[75:02.16] >> 70 80% of your health is sorted
+[75:04.08] And you know our whole mission is to fix
+[75:06.96] healthcare. So we prefer if you don't
+[75:09.52] need super health. This is our ideal
+[75:11.36] outcome. We are probably the only
+[75:12.48] hospital probably the only founder who
+[75:13.60] keeps telling well I hope you never need
+[75:14.88] us right. And so we try everything
+[75:17.12] possible within our you know limited
+[75:19.68] means and limited circles of influence
+[75:21.92] to do whatever we can to help people
+[75:25.12] live healthier. So they need hospital
+[75:29.20] but I hope you don't need it. So we will
+[75:30.88] try everything. We will we do these
+[75:32.64] things called Sunday brunch at super
+[75:33.92] health where we invite the community to
+[75:35.28] super health on Sundays. Um you know we
+[75:38.24] actually help them taste the food like
+[75:40.48] you've tasted uh today and then over
+[75:43.60] time we want to actually start doing
+[75:45.20] cooking classes here. So we can teach
+[75:46.72] them how to make the food at home. It's
+[75:48.08] not like some private science I want to
+[75:50.08] keep like to myself.
+[75:52.16] >> Uh and then as we went through that
+[75:53.68] process right people started saying oh
+[75:55.52] I've learned but uh I just rather order
+[75:57.36] from you guys. So can you just send it?
+[75:58.72] So now we we have a few people who
+[76:00.40] subscribing to this. So we're trying to
+[76:01.52] see if we can just send them the food.
+[76:02.96] >> It's amazing.
+[76:03.52] >> So we will do everything within our
+[76:05.36] power to see how to keep you healthy.
+[76:07.84] >> Should you should that not succeed or
+[76:09.52] for other reasons you need healthcare.
+[76:10.88] Of course we are there.
+[76:12.24] >> But needing hospitals more and more is
+[76:14.48] not what we are about.
+[76:16.48] >> I love that.
+[76:16.96] >> So that's what that's really what that's
+[76:18.56] what super about super health.
+[76:20.00] >> Yeah. I was going to ask you almost like
+[76:22.16] trademarked the word super now at this
+[76:24.16] point. Everything alongside super you
+[76:26.96] can do which is amazing. Um maybe let's
+[76:30.16] talk about the super team. Uh uh how do
+[76:32.48] you think about team? I was I mean I
+[76:34.80] think I was walking to this place and I
+[76:36.96] interacted with your chief of staff and
+[76:38.48] I was asking her what she was doing
+[76:39.76] before this and turns out she was doing
+[76:41.28] nothing remotely close to healthcare to
+[76:43.84] begin with. The friend who helped
+[76:45.44] organize this he was at a consumer brand
+[76:47.52] before this right. Talk to us about how
+[76:49.20] you think about team and like how is
+[76:50.96] that special? Do you have a framework?
+[76:52.96] Uh what is it? what are the ingredients
+[76:55.44] to succeed in a business where you
+[76:57.52] actually look at like impact happening
+[76:58.88] right like these are like real people
+[77:00.40] getting treated every day what does it
+[77:02.56] mean to run
+[77:03.04] >> I think you know I think for us um and
+[77:05.28] this is not not just at superhel this
+[77:07.20] has kind of been my philosophy always
+[77:09.84] that um you know a lot of people have
+[77:13.04] said a lot of things about work life
+[77:15.20] balance and all that okay I think that's
+[77:19.12] not correct okay if you want
+[77:21.44] extraordinary outcomes they come from
+[77:23.84] unreasonable efforts because if there
+[77:26.32] were not unreasonable efforts, there
+[77:27.60] would not be extraordinary outcomes.
+[77:28.80] They would be everyday outcomes
+[77:30.16] >> by design.
+[77:31.36] >> Correct?
+[77:32.48] >> So why doesn't everyone do this, right?
+[77:34.64] I think it's because most people do not
+[77:37.28] end up finding what they love to do.
+[77:39.76] They're afraid to find it. And if you
+[77:44.24] find what you love and you do, you don't
+[77:46.32] want a break from that. Like who wants
+[77:47.92] break from video games,
+[77:49.44] >> right? Nobody, right? because you love
+[77:51.20] playing I mean who for whoever loves
+[77:52.56] playing video games so people like love
+[77:53.76] reading books who wants break from
+[77:54.96] reading books right they just want to
+[77:56.00] read books all the time
+[77:57.28] >> so when you enjoy doing it it doesn't
+[77:59.12] feel like work and you do a lot more of
+[78:00.88] it and let's say that you know pretty
+[78:02.56] much everything you pick up if you were
+[78:03.76] going to be a seven on 10 uh at it right
+[78:06.64] like let's say if you decided to be a
+[78:07.84] CFO tomorrow you'd probably be a seven
+[78:09.28] or eight on 10 CFO if you worked hard
+[78:10.80] enough but you have to figure out things
+[78:12.80] you love because when you love doing
+[78:14.24] them you do them anyway you it makes it
+[78:16.16] look easy to you but it is not easy for
+[78:18.40] others and so you keep doing that you do
+[78:20.72] extra effort in that you put extra hours
+[78:22.24] on it start pretty soon you're 12 on 10
+[78:23.68] on it and that kind of becomes a
+[78:24.64] self-fulfilling prophecy right so you
+[78:26.64] you have to love what you do because it
+[78:29.28] will be unreasonable efforts will be
+[78:30.80] required for insanely great outcomes so
+[78:34.08] that is the exact opposite of work life
+[78:36.16] balance right uh I I and therefore I
+[78:39.68] don't I don't really believe in that too
+[78:41.76] much um
+[78:44.64] and therefore I guess in some ways a lot
+[78:46.56] and all of us are health super health
+[78:47.92] are sort of like that
+[78:49.44] >> how do test for it when you're hiring.
+[78:50.64] >> See, I we actually put it up straight up
+[78:52.00] on our website, okay? That this is a
+[78:54.32] mission. uh we please join if you really
+[78:58.40] care about this and if you are this is
+[79:01.44] something see you know it's kind of like
+[79:03.68] um you know there is work and there is
+[79:05.92] life's work
+[79:07.36] >> right uh you know there is work and
+[79:09.60] there is something that feels like a
+[79:10.88] calling right and this for us is that if
+[79:14.24] you don't feel like that uh then you you
+[79:16.80] will keep counting the weekends you had
+[79:18.48] to give up and you will have to give up
+[79:19.68] weekends we are we don't make any you
+[79:21.92] know we don't hide that um and I'll tell
+[79:24.56] you what it is right it is like it's a
+[79:26.88] fitment thing okay
+[79:29.20] >> so it's not right or wrong it's kind of
+[79:31.28] like see you can be Tiger Woods or you
+[79:32.80] can be Michael Schumacher
+[79:34.32] >> okay they're both phenomenal athletes
+[79:36.48] greatly successful all of that
+[79:39.36] >> formula
+[79:41.44] golf
+[79:42.56] >> so this is not a place for you it's not
+[79:43.92] wrong to play golf you can be a
+[79:45.04] phenomenal person successful at that but
+[79:46.64] this is not the place for you
+[79:48.00] >> so super health is really for people who
+[79:51.28] are obsessive about fixing this problem
+[79:54.96] uh you know who cannot go to sleep till
+[79:57.36] they fix the problem and
+[80:00.32] deeply deeply irrationally
+[80:03.60] want to solve it that is the only way it
+[80:06.80] happens uh you know we have I was
+[80:08.72] telling you earlier that our companies
+[80:10.08] have a lot of values we have only one
+[80:11.44] value which is care obsessively about
+[80:13.84] everything all the time that's it and it
+[80:16.24] comes from a very deep philosophy we
+[80:17.68] have which is that um you know whatever
+[80:19.68] you build you build it for someone right
+[80:22.88] whether you build make food or you write
+[80:24.56] an email or you make a brochure or you
+[80:26.64] make a hospital whatever it is you make
+[80:28.56] it for someone else to use generally
+[80:31.04] right so the amount of care and effort
+[80:33.60] you put into making it is a reflection
+[80:35.68] of how much you respect that person
+[80:37.84] >> right and so or how much you appreciate
+[80:39.60] that person right um and so what you
+[80:44.32] make and how much love and effort love
+[80:46.72] you put in or care you put in is
+[80:48.00] basically effort right like that care is
+[80:50.96] effort right
+[80:51.76] >> correct So the amount of effort you put
+[80:55.12] in is directly proportional to how much
+[80:56.48] you respect the person,
+[80:58.32] >> right? So why do you disrespect your
+[81:00.32] fellow human?
+[81:01.84] >> So why shouldn't you put care in
+[81:03.20] everything?
+[81:04.32] >> Why shouldn't you put high effort in
+[81:05.44] everything? Why should you bring bring
+[81:07.92] things carelessly? Right? So we don't do
+[81:11.68] that and therefore we obsess about
+[81:13.76] everything. Like the reason why
+[81:15.44] something like a coffee is so good here
+[81:17.60] is because we have obsessed over it over
+[81:19.60] 3 months for how the machine will be
+[81:21.28] built, how the machine will be
+[81:22.32] installed, what the water supply is
+[81:23.68] going to be. We're not a coffee shop.
+[81:26.16] All right? How the beans are going to
+[81:27.44] come, where it's going to be roasted,
+[81:28.64] what's the roast level, what's the
+[81:29.84] acidity level, we have obsessed over it
+[81:32.32] as much as we have obsessed over the
+[81:34.00] operating rooms and the sterilization
+[81:35.68] department and the lighting and the
+[81:37.04] ceiling and the flooring. Right? So how
+[81:39.20] we do something is how we do everything.
+[81:40.48] Which is why we have a value saying care
+[81:41.76] obsessively about everything all the
+[81:43.20] time. So we are not an easy place to be
+[81:45.04] without a question. We are a hard place
+[81:46.72] to be.
+[81:47.60] >> Everybody here makes unreasonable
+[81:49.20] efforts. Everyone here cares
+[81:51.04] irrationally about this problem.
+[81:53.12] >> Uh and so if you are not that you will
+[81:55.60] not fit right and then it'll not work
+[81:59.68] out for you.
+[82:00.64] >> So we just look for people who are
+[82:02.24] deeply passionate about this. Uh who are
+[82:05.44] really really really good at what they
+[82:07.76] do who have a very very high sadu ratio.
+[82:11.28] All right. who are not afraid to take
+[82:12.64] chances, who want to bet things, who can
+[82:14.48] come to uh in some ways um
+[82:19.12] whether someone is watching them or not,
+[82:21.60] they care about the outcomes, right? Uh
+[82:24.40] and that is what the whole culture here
+[82:26.00] is about. Uh we have extreme
+[82:27.84] transparency. See our brand, our
+[82:30.00] company's mission is what? Right? To fix
+[82:31.76] healthcare means what? To deliver the
+[82:33.84] highest quality of care with radical
+[82:36.72] honesty and extreme simplicity. Not
+[82:38.80] simplicity. Extreme simplicity. which
+[82:41.60] takes a lot of work to do. We obsess
+[82:43.60] over everything. So as an example,
+[82:46.96] there is no logo, board or poster in
+[82:48.96] this hospital about the hospital,
+[82:51.28] >> right? That comes from deep thought and
+[82:53.60] care that why should I want to remind
+[82:55.28] someone that you're in a hospital? That
+[82:56.72] doesn't seem like a thing you want to be
+[82:58.00] remembering,
+[82:59.36] >> right? Um the fact that we have
+[83:03.20] re-engineered entire floor materials in
+[83:05.44] this hospital, right? We don't have a
+[83:06.72] standard flooring here. This flooring is
+[83:08.00] an 11 layer process. It takes 18 days to
+[83:10.32] do. It's a new kind of compound that we
+[83:12.96] have created with our suppliers. The
+[83:14.80] reason we have done that is because this
+[83:16.48] is the only thing we could do at scale
+[83:18.16] that had a pore size of less than.1
+[83:20.00] micrometer because that's the smallest
+[83:22.00] bacteria. Tiles and marbles that people
+[83:24.40] use in other hospitals are 10 to 200
+[83:26.00] micron. So what happens because of that
+[83:28.24] is the bacteria hides inside it and
+[83:29.92] that's how you get drug resistant beria.
+[83:31.28] This is my theory. Okay, that doesn't
+[83:33.84] happen here. So this is the reason why
+[83:35.12] when you enter super health it feels
+[83:36.48] brighter, cleaner, fresher than anything
+[83:37.92] because it is like by laws of physics
+[83:39.84] cleaner right uh similarly we have
+[83:42.48] obsessed over the air systems uh right
+[83:44.72] you go to a typical nice big hospital
+[83:46.72] centralized air conditioning right the
+[83:49.04] worst thing because you're taking all
+[83:50.16] the infected air of every room and
+[83:51.36] mixing it and then giving to everybody
+[83:52.56] else who thought of this genius idea
+[83:54.72] right so we put a lot of pain into how
+[83:57.04] and it's not easy to do individual air
+[83:58.56] systems for every room it's more
+[83:59.76] expensive it's harder to maintain you
+[84:01.12] have to figure out all the ceiling space
+[84:02.24] you have to figure out all the lines
+[84:03.92] But we do it because fundamentally it is
+[84:05.92] better for you. So these are what I call
+[84:09.60] irrational things. When I asked by the
+[84:11.04] way I called some people in the hospital
+[84:12.40] industry uh and I said why do we do
+[84:14.88] this? Like why do you guys do this? He's
+[84:16.88] like I just put a heper filter 99%
+[84:18.80] problem is sol. I like but what about
+[84:19.84] the 1%. The original was zero. We have
+[84:23.68] created this 1% drop. Why have we
+[84:25.20] created this 1%. This doesn't what if
+[84:26.80] you don't clean the heper filter. What
+[84:27.76] if he filter breaks?
+[84:29.60] >> So why are we creating this problem? So
+[84:31.20] I'll tell you I'll do another one which
+[84:32.40] is an insane thing. Okay. Obsession for
+[84:34.80] detail is a big thing at super health.
+[84:36.56] Okay. So one day I walked into a
+[84:39.28] construction meeting and you know we're
+[84:40.48] having this review and uh we were
+[84:42.16] discussing a placement of a exhaust pipe
+[84:46.48] from the sterilization department. Okay.
+[84:49.28] So I was like why do we need an exhaust?
+[84:52.00] We have all this ceiling exhaust and
+[84:53.52] everything. Every other room doesn't
+[84:54.56] need it. Why does the sterilization?
+[84:57.20] So turns out that that is the law that
+[84:59.76] if you use uh so I was told by the
+[85:01.92] experts that the the construction team
+[85:03.60] that you know eto gas requires an
+[85:06.00] exhaust. I was like what is eto gas? So
+[85:07.68] they explained to me that ethile oxide
+[85:09.12] is what is taken for sterilization and
+[85:11.20] all of those things. So we were like
+[85:13.28] okay but why does it need an exhaust? So
+[85:15.52] they said no no you need. So I I was
+[85:17.12] like okay bring me the rule book. So
+[85:18.32] whenever people tell me this is the law
+[85:19.36] I'm like show the law because I want to
+[85:20.72] see what the actual law is right. I
+[85:22.40] think there's a 1979 Bureau of Indian
+[85:24.08] Standards rule which basically says that
+[85:26.08] ETO gas has to be released safe distance
+[85:28.24] from your building.
+[85:30.88] Um
+[85:33.04] not clarified what is safe distance at
+[85:35.12] some point later in many years NABH has
+[85:36.96] come and I think specified 14 ft or
+[85:38.64] something from the highest point of your
+[85:40.00] building you have to release it. So I
+[85:41.60] was like why are we doing so much nicer
+[85:42.80] for a gas like what is the problem? I
+[85:44.32] thought maybe it's smelly very or
+[85:45.44] something. Turns out it's a known
+[85:46.80] carinogenic. So the if you get exposed
+[85:49.12] to this gas you are likely to be very
+[85:51.12] very very high chances that you will get
+[85:52.72] cancer and this is the gas that they use
+[85:55.12] in the cleaning sterilizing system for
+[85:56.64] your surgical equipment. Okay, this is
+[85:59.04] the standard.
+[86:00.96] So I was like how can I like guys sorry
+[86:03.84] let me and maybe I'm being dumb about
+[86:05.12] this but let's say I am walking on the
+[86:07.68] roof and you have released this eto gas
+[86:09.92] and the wind is blowing like this. Yeah,
+[86:12.64] >> I will get chances I will get cancer.
+[86:14.16] They're like yes I what about the
+[86:15.12] building next door? What if you have
+[86:16.24] here we don't have it but what if we
+[86:17.28] have a building next door we are not
+[86:19.28] putting a hospital in a community and
+[86:20.80] then releasing these kind of things in
+[86:21.84] here we're not going to do it find a
+[86:22.88] different system so we had to redo the
+[86:24.88] whole CSSD with plasma okay because
+[86:28.00] which is which doesn't have any of these
+[86:29.20] problems it's much more expensive to do
+[86:30.64] it's much more expensive to run
+[86:31.84] >> this is better cleaning
+[86:33.28] >> better clean way better cleaning way
+[86:34.80] more expensive and there are the reason
+[86:36.48] people don't do plasma is because there
+[86:37.76] are certain rubber things that plasma
+[86:39.04] can't do can't clean okay so we just
+[86:41.20] throw them
+[86:42.72] >> we just discard them Because if the
+[86:45.84] choice is between discarding a few
+[86:47.12] rubber components and taking extra cost
+[86:48.72] versus releasing some bad gas in the air
+[86:51.04] then by the way if I did this I would be
+[86:53.04] fully compliant. It's not like this is
+[86:54.96] against this is the this is the rule
+[86:57.68] >> right now
+[87:00.24] I didn't have to we didn't have to do
+[87:01.68] this
+[87:02.16] >> correct
+[87:02.80] >> right but we obsess over these kinds of
+[87:05.04] details now the customer is never going
+[87:06.40] to know this
+[87:07.60] >> but we will know that we cared enough to
+[87:10.40] do this
+[87:11.12] >> correct
+[87:11.60] >> right yes it cost us more yes it delayed
+[87:13.76] things by a couple of weeks I don't care
+[87:16.16] but now we know how to do this this is
+[87:18.08] how it's going to be in every center as
+[87:19.44] well I hope other people do it also but
+[87:21.60] I don't think they will But people who
+[87:24.64] are able to do this at super health I
+[87:27.28] think are the kind of people we attract
+[87:28.96] and that's why you know for example the
+[87:30.48] person you were talking about uh you
+[87:32.40] know she came and she first actually was
+[87:34.96] the person who built this building uh
+[87:37.28] she today runs our OPD I'm trying to
+[87:39.60] find what is the next problem to give
+[87:40.72] her so then she will solve that so we
+[87:43.68] have some amazing amazing great people
+[87:45.28] like this uh the tech team for example
+[87:47.04] you know the whole tech super OS that I
+[87:48.64] was talking about it's a 10 member tech
+[87:50.32] team
+[87:51.28] >> they have built all of this in 5 months
+[87:53.52] or maybe 6 months, something like that,
+[87:55.52] >> right? It's incredible. So, so if you
+[87:57.60] find a bunch of incredibly talented
+[87:59.76] people and you put them together and you
+[88:01.20] just like don't give them bureaucracy
+[88:04.00] and just let them do the right thing,
+[88:06.00] >> you will see insane outcomes. And I
+[88:07.52] think that's kind of like our team
+[88:08.48] principle. Just find insanely great
+[88:09.92] people, put them together, and it's
+[88:11.84] going to be great.
+[88:13.20] >> Amazing. I love it. I love it. I think
+[88:15.52] uh the level of detail in your sort of
+[88:18.08] answers the care that you display the uh
+[88:21.20] the different aspects with which you've
+[88:22.96] sort of explained as well goes to show
+[88:24.56] the ethos of the company and then in
+[88:26.40] practicality how it's uh showcasing it's
+[88:28.96] amazing I think uh
+[88:30.40] >> it's kind of you say
+[88:31.44] >> I've I've heard such level of great
+[88:33.84] articulation in such a long time it's
+[88:36.48] amazing now thank you so much for
+[88:37.84] sharing um this has been amazing I mean
+[88:40.64] for the last question we actually sort
+[88:42.40] of have a standard template on the show
+[88:44.00] we go back to a significant time in the
+[88:46.16] person's life and usually considering
+[88:48.08] I'm also hosting people who've built
+[88:49.44] companies for like five seven years we
+[88:51.28] go back to the starting day but in your
+[88:53.12] case I would in fact love to go back to
+[88:55.20] maybe when you were join joining practto
+[88:57.92] right um the benefit of this question is
+[88:59.92] to benefit from your hindsight right
+[89:02.56] like so if you were going back to that
+[89:04.40] day and if you could tell yourself
+[89:06.16] something and by extension to all of us
+[89:08.48] you know uh share your learnings in the
+[89:10.40] last maybe what 10 years since then
+[89:13.04] >> um
+[89:13.60] >> what does that look Like
+[89:15.28] >> see to be very honest I think the number
+[89:17.04] one advice I can give you is marry the
+[89:19.20] some great person. Okay because I tell
+[89:21.92] you I'll tell you what happened. So um
+[89:23.92] you know towards my end of stint at
+[89:25.44] Qualcomm you know there was not a lot of
+[89:27.44] work because the company was focused on
+[89:29.36] China and China was like really scaling
+[89:31.52] smartphones like crazy. So we had like
+[89:32.88] one year off basically saying but we'll
+[89:35.12] focus on India one year later. So 6
+[89:37.60] months great. Then I was like but too
+[89:39.04] young to chill in life. So so I made
+[89:41.28] that list that you were talking about.
+[89:42.40] So it healthare, financial inclusion,
+[89:44.40] education and clean energy.
+[89:49.44] So as luck would have it, I was very
+[89:51.20] fortunate to get connected to Shashank.
+[89:53.60] >> Met Shashank, I was like
+[89:56.88] till then I had basically only worked
+[89:58.24] for big companies. So uh I had just
+[90:01.68] gotten married like couple of years ago
+[90:03.44] to my high school sweetheart. She has
+[90:05.52] and I have been together since class
+[90:06.72] 11th.
+[90:07.44] >> I see.
+[90:07.92] >> Uh I try not to ask her why she
+[90:10.80] realizes. So, so uh so I I you know I I
+[90:15.44] went to I went to Bangalore and you know
+[90:17.60] till when you work for these big
+[90:18.88] companies like Nvidia call you you know
+[90:20.72] you're like you're not used to like bad
+[90:22.24] hotels and all and I'm joining this
+[90:23.28] super early stage startup $4 million
+[90:25.28] just 50 people so I show up at 11:00 in
+[90:27.68] the night first of all from airport to
+[90:29.04] JP Nagar which like forever it took
+[90:31.68] >> uh and then we go to this hotel the
+[90:32.96] hotel is not let's say it was not a
+[90:34.88] great great stay so Nick I called my
+[90:37.60] wife at 11:30 and and I still remember
+[90:40.00] this very clearly and I told Sandy, you
+[90:42.56] had this great life, okay? And I had
+[90:45.28] this stupid idea to leave everything,
+[90:48.00] you know, and like move away to a whole
+[90:50.40] other city, okay? And uh instead of
+[90:54.64] talking me out of it, you said go for
+[90:56.88] it. Like what? Who what kind of wife
+[90:58.48] does that? What's wrong with you? So of
+[91:01.12] course, she knows me forever, right? So
+[91:02.72] she's like uh see why don't you do one
+[91:04.24] thing? You're already there now. Go to
+[91:06.00] sleep. Okay. Tomorrow morning, why don't
+[91:09.28] you change the hotel? you pay for it,
+[91:11.44] it's fine and see how it goes. Now
+[91:14.16] you're already there and I was very
+[91:16.00] fortunate because my India CEO told me
+[91:17.28] that there will always be a role for you
+[91:18.40] at Qualcomm. We love you. We whatever.
+[91:20.08] So it was very kind. So next day I kid
+[91:22.40] you not, I reached the hospital the the
+[91:24.00] practice with my bags saying that I
+[91:26.56] can't live there.
+[91:27.60] >> Can you please you know shift me to
+[91:29.52] another hotel just booked I will pay for
+[91:30.64] the hotel just book into the hotel
+[91:31.60] because and then obviously the team at
+[91:33.20] Practor was very kind to me because they
+[91:34.96] said look we never had someone from
+[91:36.56] outside. So we are all Bangalore people.
+[91:38.48] We don't live in hotels in Bangalore. So
+[91:39.76] we didn't know. So whatever hotel you
+[91:40.96] want we'll book it's fine. And then I
+[91:43.92] spent one week there and that was the
+[91:45.76] best thing ever because I had so much
+[91:47.52] fun with people there. I was like I was
+[91:48.96] like this is exactly the right decision.
+[91:50.16] I just never left and that was 5 years
+[91:53.04] right. Similarly you know when um I was
+[91:57.04] leaving Praau right uh my wife was like
+[92:00.00] you seem
+[92:01.76] very bored.
+[92:03.84] >> Uh you know it doesn't look like you're
+[92:05.20] very happy. Why don't you change
+[92:06.64] something that you want? And I that kind
+[92:08.72] of led to me thinking about what I want
+[92:10.08] to do in life. So
+[92:11.76] >> that's when Ola happened.
+[92:12.64] >> That's when Ola happened. Uh and then uh
+[92:16.72] I was leaving Ola you know um my wife
+[92:19.92] was undergoing some small medical
+[92:21.60] nothing some big thing some medical
+[92:23.12] procedure and uh I was studying outside
+[92:26.32] the OT
+[92:28.16] and uh uh you know I had this moment you
+[92:32.16] know like when you're in a hospital your
+[92:33.44] mind goes to dark places and mind turns
+[92:35.20] to me. Okay. So, so I was like, you
+[92:38.00] know, at this point in time, if somebody
+[92:40.40] if I if I died,
+[92:42.32] >> right, how would the ecosystem remember
+[92:45.04] me, right? And uh right and I was like
+[92:47.44] because you're in a hospital,
+[92:48.40] everybody's around like having a
+[92:49.36] difficult time. You don't know what's
+[92:50.16] going to happen to so I mean I know a
+[92:52.80] little bit self-absorbed. I shouldn't
+[92:53.92] think about so sorry about that. But so
+[92:57.12] the the line that came to my mind was
+[92:58.80] that people would say that he sold
+[93:00.24] scooters really well, right? Right. And
+[93:02.00] I was like,
+[93:05.04] so I took my list out. I was like
+[93:07.28] healthare. So let's go back and fix
+[93:09.36] healthare.
+[93:10.56] >> And uh you know that's kind of how I
+[93:12.64] ended up back at healthcare. Uh went to
+[93:15.04] Apollo.
+[93:16.72] >> Uh
+[93:18.40] realized very quickly that I actually
+[93:19.76] had no idea how healthcare works. I
+[93:21.28] learned all of that at Apollo. It's an
+[93:22.88] institution. Uh you know I was very
+[93:25.12] fortunate to spend time with some
+[93:26.56] incredible people there. Um and it
+[93:29.04] really taught me that you know in Apollo
+[93:30.64] at the highest levels the there is so
+[93:34.48] much love to do the right thing for the
+[93:36.16] customer. It's not even funny. Um and
+[93:39.92] yet somehow when it percolates to the
+[93:41.92] last mile there is a big gap right and
+[93:44.24] that's the model problem. It's not like
+[93:45.68] they're bad people. They're all great
+[93:46.88] people but this is what happen and this
+[93:48.16] happens at every hospital.
+[93:49.44] >> But I think if I had not gone there I
+[93:50.96] would not have learned this
+[93:52.80] >> right because all of us as outsiders
+[93:54.24] think it's an intent issue. It's not an
+[93:55.44] intent issue.
+[93:56.40] >> It's structuring. structurally messed up
+[93:58.88] >> your education maybe.
+[93:59.92] >> Yes. Exactly right. And so so we start
+[94:02.24] super health first day of super health.
+[94:05.20] My wife sits me down and uh she's like
+[94:08.16] see you have decided to change global
+[94:09.84] healthcare.
+[94:13.92] I think you should first focus on your
+[94:15.36] health. Okay. So like a dutiful husband
+[94:18.16] it took me one week to accept this. Of
+[94:20.00] course, right? So uh so one week later I
+[94:23.28] joined the gym and then you know I have
+[94:24.56] been on my own fitness journey uh for
+[94:26.96] about a year and a half. Uh so the
+[94:30.00] number one good thing I have done in my
+[94:31.44] actually probably the only great thing I
+[94:32.80] have done in my life the best decision
+[94:34.08] was to marry this amazing person. Uh and
+[94:36.64] that has changed my whole course of my
+[94:38.16] life I would say uh you know the right
+[94:40.08] advice at the right time. So if
+[94:41.20] anybody's watching and you want to what
+[94:42.24] is the success of my secret to marry the
+[94:43.84] right person this is the single biggest
+[94:45.84] best decision you will make in your
+[94:47.20] life.
+[94:47.68] >> I love it. So yeah, so I mean
+[94:49.76] >> not the answer I would have expected at
+[94:51.28] the start of articulating this question
+[94:53.36] but I love how you framed it and uh no
+[94:56.16] that's amazing. Thank you so much. I
+[94:57.92] think it's been great talking to you
+[94:58.88] man. Yeah, I mean it's been so
+[95:00.56] insightful to understand the overall
+[95:02.32] sort of healthcare system from you, the
+[95:05.60] problems, the solutions, the innovation
+[95:08.64] uh and to look at the care, detail, love
+[95:12.72] uh vision with which you're building is
+[95:14.32] absolutely amazing and I think uh I mean
+[95:16.88] some things are just for the service of
+[95:18.32] people and health is one of them right
+[95:19.68] like when you build in health and not
+[95:21.36] only is there sort of value creation for
+[95:23.28] doctors uh physicians nurses team but
+[95:27.28] like literally the customer right? Like
+[95:28.96] there is no better form of care. So
+[95:30.80] yeah, thank you for doing what you do
+[95:32.16] and thank you for being on the show.
+[95:33.12] This has been such a pleasure.
+[95:34.16] >> It was amazing to be here, man. Thanks
+[95:35.52] for having me. Thanks. Really great
+[95:36.72] interacting with you, man.
+[95:37.44] >> Cheers. All right.
+[95:38.48] >> Bye.
+[95:39.44] >> All right.
+[95:41.04] >> Hello. If you made it this far, you've
+[95:43.04] probably watched the entire episode. And
+[95:44.72] if you've done that, I'm really
+[95:46.16] grateful. I and my team try to put in a
+[95:49.04] lot of effort to ensure that we can
+[95:50.96] bring the best quality content to you.
+[95:52.96] So, if you like the episode, if you
+[95:54.56] watched it thus far, my request to you
+[95:56.56] is to share it with people, to subscribe
+[95:58.64] to the channel, and to ensure that we
+[96:00.88] can keep growing. We are everything and
+[96:03.52] anything only because of you, our
+[96:05.76] listeners. Thank you so much for tuning
+[96:07.76] in. We'll keep bringing to you amazing
+[96:10.08] content.

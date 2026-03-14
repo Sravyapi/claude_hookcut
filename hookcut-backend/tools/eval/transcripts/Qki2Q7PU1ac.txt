@@ -1,0 +1,420 @@
+[0:00.16] When we speak of AI uh usually it comes
+[0:02.88] to language right but think about it uh
+[0:05.44] apart from language uh the biggest
+[0:07.60] amount of uh data consumption that we do
+[0:09.92] is vision all the information around us
+[0:12.00] that is what images are doing for us um
+[0:14.56] we are already executing our vision of
+[0:17.92] being a full stack uh earth observation
+[0:20.16] company in the next couple of years uh
+[0:22.24] we'll have our assets up and all that AI
+[0:25.04] um we like it's it's not a good to use
+[0:28.88] for us it's a use for us because the
+[0:30.88] volume of uh data that we deal with is
+[0:33.44] tremendous.
+[0:37.20] [Music]
+[0:44.52] [Applause]
+[0:46.99] [Music]
+[0:50.16] Hello everyone, I'm Ipsita Basu from
+[0:52.32] Your Story and welcome to Uplo Close, a
+[0:54.88] special series where we bring you candid
+[0:57.52] conversations with some of the most
+[1:00.16] exciting founders and change makers
+[1:03.04] shaping India's future. This is part of
+[1:06.24] our road to tech spark series where we
+[1:08.96] spotlight the stories, ideas and
+[1:11.44] innovations leading up to your story's
+[1:14.32] flagship startup tech conference. Now
+[1:17.44] Satore is one of the most exciting
+[1:19.60] companies in India today at the
+[1:21.52] intersection of space AI and decision
+[1:24.24] intelligence. It's using satellite data
+[1:27.52] and deep tech to help industries make
+[1:30.56] smarter, faster decisions which range
+[1:33.60] from agriculture and banking to
+[1:35.84] infrastructure and sustainability. Today
+[1:38.72] we are thrilled to have with us Pratib
+[1:40.32] Basu, founder and CEO of SAT Shaw to
+[1:43.20] take us behind the journey, the
+[1:44.80] technology and the vision that's driving
+[1:47.20] this transformation. Welcome Pratip.
+[1:49.52] Thank you for being at your story and
+[1:51.52] thank you for giving us this interview
+[1:53.20] with Uplo. Thanks for having me here.
+[1:56.16] >> Praep uh tell us about the journey of
+[1:59.04] satur you know what inspired you to
+[2:01.36] start a company which is at the
+[2:02.80] intersection of space uh AI and decision
+[2:05.44] intelligence.
+[2:06.16] >> For me it was uh primarily how do we use
+[2:10.32] uh data from space uh for solving real
+[2:12.64] world problems. Uh if you look at the
+[2:15.84] other kind of spacebased services
+[2:17.44] communication navigation already uh
+[2:19.52] day-to-day uh life it impacts us. For
+[2:22.80] example, you go from point A to point B,
+[2:24.72] uh you put it on a Google maps, no one
+[2:26.56] thinks about uh it that there are four
+[2:29.28] satellites uh you know signals that are
+[2:31.28] being triangulated to help you navigate,
+[2:33.04] right? Uh that same thing hasn't uh
+[2:35.52] hadn't happened with imagery. And uh
+[2:38.00] here we are constantly speaking about uh
+[2:41.12] how do we adapt to climate change? How
+[2:43.52] do we move to more sustainable
+[2:44.88] practices? And for all of uh uh such
+[2:47.20] initiatives to succeed, you need data uh
+[2:49.28] and you need uh data to make decisions.
+[2:51.36] the right decisions, the right kind of
+[2:53.12] policies. This is where uh satellite
+[2:55.52] imagery stand out stands out because it
+[2:59.04] is data collection at planetary scale uh
+[3:01.36] with the information at the sharpest
+[3:03.60] level of any point on earth and uh yet
+[3:06.48] there were not enough amount of uh uh
+[3:08.88] commercial and civilian applications
+[3:10.32] being built out of it. uh that's what uh
+[3:12.88] kind of led us to look at how can we uh
+[3:16.64] take some of this large uh you know
+[3:19.44] problems that that affect us as as
+[3:22.00] humanity and uh uh build solutions uh
+[3:25.12] that that tomorrow 10 years from now
+[3:27.60] maybe no one will think about it just
+[3:29.12] like in the case of your Google map that
+[3:30.64] there is satellite image and AI powering
+[3:32.96] uh such such uh decision making
+[3:35.20] >> when you look back what were some of
+[3:37.20] your early challenges uh while you were
+[3:39.44] building a space tech company and what
+[3:42.08] were the measures you took to sort of
+[3:43.52] overcome them?
+[3:44.80] >> We started our company in 2017 and at
+[3:47.28] that time uh there was not even a uh
+[3:50.88] space policy or regulation uh uh in
+[3:53.76] place uh and no body to do that. Today
+[3:56.40] there is uh in space uh under department
+[3:58.64] of space which does it. So uh the
+[4:01.20] absence of uh such such uh regulatory
+[4:04.56] environment uh was obviously not
+[4:07.60] conducive for uh fundraising capitalism
+[4:10.08] because venture capitalists want to uh
+[4:12.00] have that assurance right uh second was
+[4:15.12] user awareness uh for the first I would
+[4:17.92] say 3 to four years uh we we spent our
+[4:21.76] own money in uh educating uh different
+[4:24.16] kind of customers as to what can be done
+[4:26.00] and what can't be done. I think more
+[4:27.60] important was what can't be done. Uh and
+[4:29.84] last but not the least uh at that time
+[4:32.24] when we started which was quite early
+[4:33.92] from the Indian private eosh space
+[4:35.76] ecosystem journey. Uh the the
+[4:38.88] availability of talent to build uh your
+[4:42.16] products uh to to build this company was
+[4:44.96] also uh pretty scarce because uh
+[4:47.76] everyone uh you know only could relate
+[4:50.40] to ISRO when you spoke of space.
+[4:52.48] Commercial space did not exist. Today we
+[4:54.32] have an ecosystem that's built up.
+[4:55.92] people are excited by it. There is
+[4:57.60] funding coming in. So it's a very
+[4:58.96] different world. Uh that has changed I
+[5:01.04] would say in a span of less than a
+[5:02.88] decade. So yeah we start we were one of
+[5:04.88] the early movers uh who had to encounter
+[5:06.80] such challenges
+[5:07.76] >> right now. You know Satcha combines
+[5:10.16] earth observation data AI and deep tech
+[5:12.80] to sort of create an actionable insights
+[5:15.52] for your customers and uh for other
+[5:17.84] sectors as well. Can you simplify this
+[5:20.08] you know uh how do earth intelligence
+[5:22.80] platforms work? That's a great question
+[5:25.04] because platform that uh word can be
+[5:27.28] sometimes confusing. So many different
+[5:29.68] uh companies will use that in very
+[5:31.36] different context. Uh in our context uh
+[5:33.92] a platform is is nothing but the backend
+[5:36.80] engine where different kinds of
+[5:38.40] satellite data uh which which have their
+[5:40.72] own unique uh data analysis processes
+[5:44.16] their own set of rules uh how to
+[5:46.80] interpret the images uh have they can
+[5:49.36] come together have a good parking base.
+[5:52.24] You can uh have uh data scientists with
+[5:54.96] no background in this remote sensing and
+[5:56.80] physics uh to be able to simply uh run
+[6:00.24] their models in production environment
+[6:02.40] uh analyze have a feedback loop uh do
+[6:04.96] the have the observability on it uh the
+[6:07.20] quality checks at each point. So this is
+[6:09.36] what in our context a platform means.
+[6:11.60] Now uh since we are analyzing images we
+[6:14.08] are not just analyzing one type of
+[6:15.68] feature. A feature could be vegetation,
+[6:17.20] it could be all these uh built-up areas,
+[6:19.36] right? So uh how do you then translate
+[6:22.64] the the analysis of all of these image
+[6:25.84] uh features into real insights? That's
+[6:28.24] where the orchestration engine comes in.
+[6:31.20] that for example uh I keep giving this
+[6:34.56] uh case study of how we work with banks
+[6:37.12] where uh there was uh about 30 to 45
+[6:41.76] days of time period required to do a new
+[6:43.44] loan for a farmer which seemed very
+[6:45.12] ridiculous because we would keep getting
+[6:47.28] uh you know mobile like WhatsApp offers
+[6:49.84] on our uh loan eligibility. So the the
+[6:53.44] prime reason for that was the risk
+[6:54.96] perception and the digital journeys were
+[6:56.96] lacking. So simply by using uh the same
+[7:00.72] engine the platform we were able to
+[7:02.96] combine uh our analysis of cropping
+[7:05.60] patterns, climatic patterns, water uh
+[7:07.60] risk etc into a single scoring mechanism
+[7:09.76] like a civil or a cry score uh which
+[7:12.32] then we worked with banks uh who can now
+[7:15.04] do like condense that process into a 10
+[7:17.36] to 30 minutes of uh you know journey
+[7:19.84] which used to be like almost a month.
+[7:21.92] Now you know Satur is contributing to
+[7:24.00] India's first fully indigenous fully
+[7:26.56] commercial satellite network. What does
+[7:29.12] this milestone mean for the company and
+[7:31.44] for the country's private space
+[7:33.36] ecosystem? Yeah, we are uh quite excited
+[7:36.48] by this opportunity because uh uh all
+[7:39.60] the companies uh who are part of the
+[7:41.28] winning consortium pixel as robust space
+[7:43.92] PS side uh we were anyway executing our
+[7:47.44] individual company's vision uh by having
+[7:50.80] this opportunity uh that inspace created
+[7:53.28] through this public private partnership
+[7:55.28] uh it helps us to come together and
+[7:58.32] build a vision for India in this sense
+[8:00.88] uh I would say the the sovereignty of
+[8:03.84] data uh coming from like imagery coming
+[8:06.16] from space is a very important aspect.
+[8:08.48] Uh ISRO has been uh feeding that for the
+[8:12.16] nation for a while. Uh we are only
+[8:14.56] adding more capacity to what ISRO
+[8:17.04] already does. uh and uh making sure that
+[8:21.04] uh you know if if we are uh looking at
+[8:25.20] Vixit Bharat uh here this becomes a key
+[8:28.24] pillar of Vix Bharat of how we do not
+[8:31.20] have to depend on uh western countries
+[8:33.84] uh for for our data needs.
+[8:36.40] >> Now you know uh AI is the buzz word in
+[8:38.64] fact uh even at tech sparks this year uh
+[8:41.36] we are going to talk about AI India
+[8:43.76] powered by AI in 2030. Tell us how does
+[8:46.48] satur leverage AI to turn uh raw
+[8:49.28] satellite data into insights for uh you
+[8:52.00] know the allied industries like
+[8:53.36] agriculture, banking, aviation and
+[8:55.36] infrastructure and what is the real play
+[8:58.56] of AI uh has been in the last couple of
+[9:01.12] years and where do you see it in moving
+[9:02.72] in the next couple of years? AI um we
+[9:06.80] like it's it's not a good to use for us.
+[9:09.52] It's a must use for us because the
+[9:11.12] volume of uh data that we deal with is
+[9:13.76] tremendous which means that it is very
+[9:15.68] difficult for any human analyst to keep
+[9:18.32] identifying patterns and you know
+[9:20.16] relationship uh between different
+[9:22.56] regions and different features. Uh hence
+[9:25.12] for us uh all the modeling that we do uh
+[9:29.20] it it is different variants of AI. It
+[9:32.00] can be uh if it's a small data set it
+[9:34.16] can machine learning if it's slightly
+[9:35.44] larger data sets deep learning. Today we
+[9:37.44] are building foundation models for
+[9:38.80] example in in u at satshore. So that uh
+[9:42.00] the the combination of different sensors
+[9:44.96] data which when put into a mixer uh of
+[9:47.92] of different ensemble of models helps us
+[9:50.56] to uh arrive at those insights for
+[9:54.00] industries that we serve like uh
+[9:55.92] agriculture, aviation, utilities etc. at
+[9:59.52] a much faster time with higher
+[10:01.28] generalization with uh you know with
+[10:04.08] with higher uh precision uh of the of
+[10:08.00] the insights. Usually it would take
+[10:10.32] otherwise
+[10:11.84] uh a much longer time to keep doing the
+[10:13.92] retraining uh here. So we have gone
+[10:16.88] through the different waves of uh AI.
+[10:19.04] Today what we are speaking of is AGI
+[10:21.28] artificial general intelligence. from a
+[10:23.36] remote sensing perspective it's not yet
+[10:25.12] reached I would say uh but uh it's maybe
+[10:28.32] a matter of a couple of years at max
+[10:30.48] because when we speak of AI uh usually
+[10:33.44] it comes to language right but think
+[10:35.60] about it uh apart from language uh the
+[10:38.08] biggest amount of uh data consumption
+[10:40.24] that we do is vision all the information
+[10:42.40] around us that is what images are doing
+[10:44.40] so yes uh uh AI is an integral part of
+[10:47.68] how we make our data interpretation uh
+[10:51.84] uh is simp simpler and more reliable.
+[10:55.04] >> How are you ensuring uh at Satur that
+[10:57.92] the whole earth intelligence is not just
+[11:00.64] for large enterprises and you know large
+[11:02.88] businesses but you're actually able to
+[11:04.80] give outcome to smaller farmers, rural
+[11:07.28] banks and other emerging sectors,
+[11:09.92] >> right? I think that's where the business
+[11:11.36] model part comes in. uh for example
+[11:14.32] doing a direct to farmer uh you know
+[11:17.20] advisory uh was was very difficult for a
+[11:20.40] company that is already having much
+[11:21.92] higher cost on the technology
+[11:23.20] development here and to go and acquire a
+[11:25.36] large set of farmers for example would
+[11:26.88] have been even more uh expensive. Uh I
+[11:29.84] would say that uh the more the use cases
+[11:32.08] develop around uh the the earth imaging
+[11:35.36] and AI uh the more uh bolder we can be
+[11:40.80] uh in terms of our business model to
+[11:42.80] directly uh reach such customers and
+[11:46.24] maybe someone like us who's uh getting
+[11:49.44] alerts on our encroachment for example
+[11:51.52] on a phone that if you have a land that
+[11:53.44] we have bought farmland we're going to
+[11:54.80] settle we know that someone is not going
+[11:56.72] and encroaching typical problems in
+[11:58.16] India So there are many other such
+[12:00.72] consumercentric use cases uh which are
+[12:02.96] today not served just because the
+[12:04.80] business model is not uh uh suitable but
+[12:08.08] it will be reaching uh that point very
+[12:11.20] soon.
+[12:11.76] >> You said that how AI for you is a must
+[12:14.32] have not a nice to have. Now how do you
+[12:16.56] see AI and satellite technology
+[12:19.12] converging to create solutions that sort
+[12:21.44] of address this whole uh gamut of
+[12:24.00] problems like climate change,
+[12:25.84] sustainability and urban planning
+[12:28.32] challenges uh in India and also
+[12:30.48] globally. So this is already uh
+[12:33.92] something uh which has picked up uh in
+[12:37.04] the recent years uh because uh the sheer
+[12:40.96] volume of data that satellites uh are
+[12:43.44] producing and have produced is
+[12:44.96] tremendous. uh and uh just a few
+[12:48.72] examples like uh Google uh has uh
+[12:52.24] launched recently something called Alpha
+[12:54.56] Foundations which are embeddings uh uh
+[12:57.92] embeddings of of seven years of
+[12:59.84] open-source satellite data uh at a
+[13:02.08] global scale. Uh now what it does is uh
+[13:05.20] for any you know data scientist with no
+[13:08.56] uh background in report sensing they can
+[13:10.88] go and uh query a certain feature in a
+[13:13.84] certain parcel of land anywhere in the
+[13:15.60] world and know the trends of what has
+[13:17.76] changed in in there which is very
+[13:20.80] powerful. Uh I think that's the uh
+[13:23.60] that's the excitement of the convergence
+[13:25.44] of EU and AI. uh that uh AI enables you
+[13:29.52] to uh to mine how your planet is
+[13:33.60] changing uh and uh then the wrapper of
+[13:37.44] the context comes in whether you put
+[13:39.60] that contest in of urban planning of uh
+[13:43.04] climate resiliency etc. uh and and it it
+[13:47.28] essentially builds the base
+[13:48.96] infrastructure for a developer ecosystem
+[13:51.04] who build apps that can you know
+[13:54.24] actually address some of the pressing
+[13:56.16] problems that we speak about
+[13:58.24] >> right looking ahead you know what's your
+[14:01.04] vision for satur uh in the next 5 years
+[14:04.16] when if we sit to do this interview
+[14:06.00] again in 2030 uh where will we see satur
+[14:09.76] having moved from here
+[14:11.12] >> for us um we are already executing Our
+[14:14.72] vision of being a full stack uh earth
+[14:17.20] observation company. Full stack for us
+[14:19.12] means that u while we started from the
+[14:22.08] solutions and data platforms right we
+[14:23.76] back we we initiated a backward
+[14:26.32] integration which is where the optical
+[14:28.00] multi spectral uh satellites come into
+[14:30.48] play. uh in the next couple of years uh
+[14:33.36] we'll have our assets up in orbit and
+[14:35.28] we'll be uh uniquely placed as a company
+[14:38.24] that owns the data that owns the uh the
+[14:41.92] models which are proprietary uh and it
+[14:45.04] uh essentially has uh uh a touch point
+[14:48.56] in different kinds of uh user industries
+[14:52.08] solving uh problems that are big enough
+[14:55.76] uh and impactful enough for for us to
+[14:58.32] say that we have moved the needle on
+[14:59.60] something whether it's financial
+[15:00.48] inclusion vision the sustainability
+[15:01.60] transition our building climate
+[15:02.96] resiliency in our infrastructure. So
+[15:05.12] yeah uh vision doesn't change I think
+[15:07.20] the uh 2030 would be probably you know
+[15:11.04] uh satore would be still doing the same
+[15:12.88] thing uh will be slightly larger uh we
+[15:15.76] we uh might have more I would say
+[15:18.96] expanded global footprint than what we
+[15:20.80] have today. So you know Pritik you've
+[15:23.04] built a business in a tough sector. Uh
+[15:26.48] for young founders and technologists who
+[15:29.04] are aspiring to work at the intersection
+[15:31.12] of AI space and impact what's your
+[15:34.00] advice to them?
+[15:34.80] >> Just don't be afraid uh to dream big and
+[15:37.92] uh uh there is uh uh there's going to be
+[15:42.32] a lot of resiliency required to build in
+[15:44.72] tough sectors. uh uh I think uh when we
+[15:48.32] started uh we had embraced that because
+[15:50.80] there was no support ecosystem uh around
+[15:52.80] us. Today there is quite a lot of
+[15:54.56] ecosystem but I I don't think it's still
+[15:56.72] enough to uh legitimately say that we
+[15:59.28] can build uh you know 100 great
+[16:01.28] companies out of India. Uh but that
+[16:03.68] shouldn't stop people to you know uh
+[16:06.24] come and uh execute their their passion.
+[16:09.52] uh and uh uh I would I think one one bit
+[16:14.64] that is easier for uh anyone starting
+[16:17.12] now is that they'll be leveraging the
+[16:19.36] foundations that some of us who started
+[16:21.20] early uh have built and we are uh happy
+[16:24.24] uh about it uh and we will always be
+[16:26.80] there to uh like some of us who started
+[16:29.44] early like DHA space pixel skyroot we
+[16:33.36] folks will always be there to uh support
+[16:36.00] if if there are people looking to start
+[16:38.80] interpret the space sector.
+[16:40.40] >> You know, thank you for your uh
+[16:42.08] fantastic insights and more power to you
+[16:44.88] and the whole ecosystem and here's
+[16:46.96] hoping that India really leads the way
+[16:49.84] uh in space tech.
+[16:50.96] >> Thank you so much.
+[16:52.64] >> Satar isn't just building an earth
+[16:55.12] intelligence company. It's building a
+[16:57.36] blueprint for how space AI and decision
+[17:00.72] intelligence can come together to solve
+[17:03.52] real world challenges at scale. From
+[17:06.48] enabling farmers with agri lending
+[17:08.40] insights to strengthening climate
+[17:10.24] resilience and urban planning, it shows
+[17:13.04] us what's possible when technology meets
+[17:15.92] purpose. As we countdown to tech sparks,
+[17:19.28] stories like Satawure remind us why the
+[17:22.00] future of India's growth will be shaped
+[17:24.64] by entrepreneurs who dare to harness
+[17:27.52] deep tech to reimagine, reinvent, and
+[17:30.80] rebuild industries with impact. For more
+[17:33.76] such stories on startups and technology,
+[17:36.40] stay tuned to your story. Thank you for
+[17:38.72] watching.
+[17:41.67] [Music]

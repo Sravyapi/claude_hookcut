@@ -1,0 +1,1914 @@
+[0:03.18] hey everyone welcome back to the channel
+[0:04.92] I hope you guys are doing extremely well
+[0:06.48] so this is another lecture of the
+[0:08.88] scribers A to Z DSA course and the
+[0:11.76] previous lectures we have completed step
+[0:13.08] 1.1 so we'll be starting off with step
+[0:15.06] 1.2 and this is nothing but do all these
+[0:17.94] patterns so you can see that this page
+[0:19.80] contains all the patterns that you have
+[0:21.60] to do before starting off data
+[0:23.52] structures and algorithms now when I
+[0:25.50] talk about patterns why are they
+[0:27.78] important in order to start off with DSA
+[0:30.96] whenever I talk about DSA whatever topic
+[0:33.66] be dynamic programming graphs phrase
+[0:36.48] arrays binary search one thing is common
+[0:39.72] in them that is the loops if you do not
+[0:42.48] understand Loops in depth if you cannot
+[0:44.70] improvise with loops then there will be
+[0:47.40] a problem in order to do like there will
+[0:50.16] be a problem when you do DSA that is why
+[0:53.12] patterns are so important because if you
+[0:55.80] want to master something like Loops you
+[0:57.84] want to understand how loops work if you
+[0:59.88] know how to play around it then you can
+[1:02.46] get very very good at data structures
+[1:04.32] and algorithms and for Loops you have to
+[1:06.72] do patterns this is the reason we will
+[1:08.94] be solving a bunch of patterns are they
+[1:11.94] asked in interviews the answer to that
+[1:14.22] is no I have never seen an interview ask
+[1:16.92] a pattern based question until I said
+[1:19.92] it's a TCS interview or something like a
+[1:21.78] service based company so patterns are
+[1:24.06] not asked in interviews of the top tier
+[1:26.64] companies but patents do play a
+[1:28.80] significant role when you are starting
+[1:30.18] off with data structures and algorithms
+[1:32.88] so let's look at the first battle the
+[1:35.22] first pattern is something like this so
+[1:37.86] if I draw that in our iPad it is
+[1:39.54] something like this now before moving on
+[1:42.18] to pattern I'm going to teach you four
+[1:43.68] steps I'm going to teach you four steps
+[1:45.60] that will help you to print any pattern
+[1:47.34] in the world yes and the first point is
+[1:51.42] so generically all the patterns that you
+[1:54.06] will be printing will have nested Loops
+[1:56.94] again very important to remember will
+[1:58.92] have nested loops and most of the
+[2:02.10] pattern most of the pattern will have
+[2:03.84] two Loops whereas the outer loop and
+[2:06.78] there is the inner loop okay now the
+[2:08.88] outer loop is specifically for the lines
+[2:12.36] the outer loop is specifically for the
+[2:14.76] lines and the inner loop is specifically
+[2:17.52] for the columns if I can say these are
+[2:20.34] the rows and these are the columns so
+[2:22.92] the four rules are based on it so the
+[2:25.08] first rule states for the outer loop yes
+[2:27.84] for the outer loop count the number of
+[2:30.12] lines
+[2:32.34] found the rows found the number of lines
+[2:34.50] whatever you can write count the number
+[2:37.08] of lines and this will determine what
+[2:40.62] your outer loop is going to be the point
+[2:42.78] number two what did I say pattern means
+[2:45.78] nested Loops nested means outer and
+[2:48.84] inner so for the inner loop
+[2:51.78] for the inner loop
+[2:54.42] what you have to do is you have to focus
+[2:56.64] on the columns
+[2:58.32] focus on the columns
+[3:01.38] and connect them
+[3:04.08] and connect them
+[3:06.00] somehow
+[3:07.80] to the Rose
+[3:09.48] that's the rule number two you have to
+[3:11.82] focus on the columns and connect them
+[3:14.10] somehow to the rows I'll understand
+[3:15.54] others afterwards now whatever you're
+[3:18.78] printing print them inside the inner
+[3:21.06] loop whatever you're printing
+[3:24.06] print the let's say over here it's a
+[3:25.62] star
+[3:26.76] the other places can be one two can be a
+[3:28.56] b c d whatever you're printing print
+[3:30.90] them
+[3:32.40] inside the inner for Loop
+[3:37.44] and I'll show you an example everything
+[3:39.06] will get clarified the fourth one is
+[3:41.60] observe symmetry in case of some
+[3:44.10] patterns observe
+[3:46.56] symmetry so this is an optional one this
+[3:50.28] step is an optional step why because
+[3:53.52] this step will be only applicable to
+[3:56.22] certain patterns not to all the patterns
+[3:58.14] so this is an optional step but the
+[4:00.84] first three steps are mandatory the
+[4:02.94] fourth step is an optional one we will
+[4:05.46] solve patterns which will be requiring
+[4:07.80] uh observing symmetry so let's come to
+[4:10.20] the first pattern I'll be explaining
+[4:11.64] this in depth and then the next patterns
+[4:13.98] we will be moving faster if you look at
+[4:16.26] this pattern let's cut the first rule
+[4:19.38] for the outer loop count the number of
+[4:21.54] lines so if you see it is actually doing
+[4:25.44] some tasks for four times
+[4:28.26] right it is exactly doing the task for
+[4:30.54] two times so the outer loop will be
+[4:33.36] running for four times or you can say
+[4:35.76] it'll be like I equal to 0 I lesser than
+[4:38.52] 4 and I plus plus can I say this is what
+[4:41.34] the outer loop will be so this is going
+[4:43.26] to be your outer loop pretty simple and
+[4:46.20] straightforward this is your outer loop
+[4:48.30] so I can say I have somehow done the
+[4:51.00] step one which is
+[4:52.74] printing for the outer loop okay so we
+[4:56.16] have
+[4:57.00] we are moving for the outer Loops now
+[4:59.16] the next step comes for the inner loop
+[5:01.56] focus on the columns for the inner loop
+[5:04.50] focus on the columns and connect them
+[5:07.20] somehow to the rows Let's see we have
+[5:10.14] four rows and what is happening at every
+[5:13.32] line
+[5:14.34] at every line what is happening we are
+[5:16.50] printing four stars
+[5:17.94] at every line what is happening we are
+[5:19.68] printing four stars at every line what
+[5:21.90] is happening we are printing four stars
+[5:23.46] so can I see if I try to write it can I
+[5:26.04] see for the zeroth row I am printing
+[5:28.74] four stars for the first row I'm
+[5:30.42] printing four stars for the second round
+[5:32.28] printing four stars from the third row
+[5:33.96] I'm printing fourth star like if I take
+[5:35.94] zero based indexing
+[5:37.44] can I say I'm printing four four four
+[5:41.58] can I connect it somehow
+[5:43.92] to the rows yes the total number of rows
+[5:47.52] were four and at every line we are
+[5:50.52] printing those many stars so can I say
+[5:54.06] the inner loop will be very
+[5:56.04] straightforward and it will be running
+[5:57.96] for J
+[6:00.12] do not take a dive okay because I is the
+[6:02.70] outer loop J equal to zero J lesser than
+[6:05.88] 4 J plus plus can I see this this will
+[6:10.14] be your inner loop so can I say whenever
+[6:12.90] I is 0 J will be 0 1 2 3. whenever I is
+[6:19.02] 1 J will be 0 1 2 3 can I say whenever I
+[6:24.18] is 2 J will be 0 1 2 3 whenever I is 3
+[6:28.80] there will be 0 1 2 3 it will be so step
+[6:32.76] number two is also completed because we
+[6:35.28] have connected at every line or whatever
+[6:37.98] at every column whatever is happening to
+[6:41.16] the number of rows somehow I've
+[6:43.44] connected them now since I've connected
+[6:45.30] them what's my next step
+[6:46.74] print whatever you're printing inside
+[6:49.38] the inner for Loop you have determined
+[6:51.54] what has to be done now what are you
+[6:53.58] printing stars go ahead and just print
+[6:57.80] those Stars
+[7:00.48] that's it but there is a certain thing
+[7:03.00] that you have to keep in mind you print
+[7:04.68] them inside the inner for Loop but make
+[7:06.96] sure since everyone is an individual
+[7:09.72] line at every like once you have done
+[7:12.30] everything for the first line you have
+[7:14.28] to actually go to the new line once
+[7:16.32] you've done everything for the next line
+[7:17.34] you have to go to the new line so what
+[7:19.74] you will do is you'll just give away a
+[7:22.32] print new line over here if you're using
+[7:24.06] Java it will be system.out.printellent
+[7:26.22] if you're using uh C plus plus it'll be
+[7:29.10] C out and what this will do is
+[7:31.92] now let's do a typical dry run let's see
+[7:34.74] what happens for the first time I is 0
+[7:37.56] whenever I is 0 what happens J is 0 so J
+[7:41.52] is 0 goes and prints the star right and
+[7:45.30] then comes back J is 1 prints the star
+[7:48.90] comes back js2 prints the star comes
+[7:52.80] back J is 3 prints the start once J is 3
+[7:56.46] and it comes back J becomes 4 and this
+[7:59.34] condition is false and this for Loop is
+[8:02.16] done now what happens it goes to C out
+[8:05.22] of endel so that means it goes to the
+[8:07.32] new line when it goes to the new line I
+[8:09.84] is this time one and whenever I is 1 it
+[8:12.78] again starts J from
+[8:14.88] it again starts J from
+[8:17.28] 0 and again starts printing K becomes
+[8:20.46] one again starts printing J become 2
+[8:22.20] again starts spreading J becomes three
+[8:24.18] again starts Printing and then the end
+[8:26.04] happens and it goes to the next line
+[8:28.32] then I becomes two again the same thing
+[8:30.72] will happen then I becomes three again
+[8:33.42] the same thing will happen and
+[8:35.16] eventually I will become 4 and this
+[8:37.32] particular condition will turn out to be
+[8:38.94] false
+[8:39.78] and I can say my entire pattern is
+[8:42.72] printed on the screen quite easy so this
+[8:46.74] was step number three do we have uh do
+[8:49.26] we have to observe symmetry no in this
+[8:51.12] case no symmetrical observation has to
+[8:53.40] be done I'll show you patterns where you
+[8:54.90] have to do it
+[8:56.04] so we'll be super quickly coding this up
+[8:58.20] just a case for Loops in C plus plus and
+[9:01.44] for loops and Java are same so it
+[9:03.54] doesn't matter which language I'm coding
+[9:05.10] in you can code it in Java as well I'll
+[9:07.98] be leaving the notes Link in the
+[9:09.72] description which will also have the
+[9:11.16] Java code so if you want the Java code
+[9:13.02] or the python code you can just open it
+[9:14.88] up and you can keep it on the site just
+[9:17.28] to check out how everything works okay
+[9:19.20] so we have int Main in C plus plus in
+[9:21.96] Java it will be public static void main
+[9:24.06] so imagine imagine I I just write a
+[9:27.60] function which is going to do that task
+[9:29.22] for me which is void print pattern one
+[9:31.62] I'll probably print pattern one and I
+[9:34.38] see the pattern was something like zero
+[9:37.04] poor I plus plus and then I go like intj
+[9:40.86] equal to uh
+[9:42.72] 0 K less than 4 J plus plus and then I
+[9:46.26] go like C out and this goes like star
+[9:50.00] and this is where C out handle happens
+[9:53.88] and in order to execute this pattern I
+[9:56.76] have to call it from here correct and
+[9:58.74] what I'll do is I'll go ahead and run
+[10:01.20] this task let's see on running what
+[10:03.12] happens so when I run this you will see
+[10:05.10] this is getting printed but usually you
+[10:07.68] do not do it like four or five what they
+[10:10.26] do is they give you an input so probably
+[10:12.24] imagine I give you an input 5. so what
+[10:14.70] happens is you take n as the input and
+[10:18.00] this input is passed over here you
+[10:20.34] remember function so you give n over
+[10:22.50] here and if you write n over here
+[10:25.50] now what will happen is based on how
+[10:28.02] many rows you want this pattern will get
+[10:30.60] printed so now again I'll go and run
+[10:32.52] this task so you need five lines it's it
+[10:35.34] gets printed you need seven lines it
+[10:37.80] will get printed so depending on however
+[10:41.70] lines uh you want you can just give it
+[10:43.98] as an input and this function will make
+[10:45.72] sure this particular pattern is printed
+[10:48.96] now we need to learn about the online
+[10:51.54] compiler so when you go for interviews
+[10:53.76] or whenever you're preparing for
+[10:55.26] placements you will not be coding into
+[10:58.32] main this is something you will not be
+[11:00.48] coding up okay in compilers or in coding
+[11:04.38] rounds what you just need to do is you
+[11:06.72] just need to write this function now all
+[11:09.00] of these things will be hidden so let's
+[11:11.58] go to an online compiler so this is code
+[11:13.44] Studio by coding ninjas which I'll be
+[11:15.18] using for this particular video now this
+[11:17.28] is similar to all the other compilers
+[11:18.84] and you have to use online compilers
+[11:21.72] when you're preparing for coding
+[11:22.98] interviews you just can't code in your
+[11:25.44] local compilers so get used to this as
+[11:27.90] of now so what I'll do is I'll just take
+[11:30.42] this particular piece of code and I'll
+[11:33.00] try to copy this over here and see if it
+[11:35.22] is running fine I'll try to run it the
+[11:37.56] moment I run it I see actually wrong and
+[11:39.66] this is where you can actually check out
+[11:41.58] where it is running so they are saying
+[11:43.74] they are given two three five now you
+[11:46.26] are saying but driver we just had one
+[11:48.60] value now what they are doing is they're
+[11:50.64] probably doing it something like this
+[11:52.02] I'll explain two it's saying the program
+[11:54.54] runs for two texts then they're giving
+[11:56.52] something like uh three and five right
+[11:59.40] three and five so what they are saying
+[12:02.58] is basically Hey listen this time we'll
+[12:05.22] take test cases
+[12:06.60] our pattern function should run these
+[12:09.48] many times and what they do is they go
+[12:12.30] ahead and probably divide something like
+[12:14.82] this
+[12:16.20] T and I plus plus and inside this
+[12:20.28] inside this
+[12:21.96] they take this particular n
+[12:25.14] and they call the function so basically
+[12:27.60] two times you will have to print
+[12:29.58] patterns first time for three rows the
+[12:32.64] next time for five rows so if you run it
+[12:34.56] in the local compiler see what happens
+[12:36.60] let's run that uh in the local compiler
+[12:39.12] so the moment sorry my bad so the moment
+[12:41.76] I run that in the local compiler you
+[12:43.98] will see what happens first
+[12:46.14] just got printed next this so this is
+[12:49.08] the meaning of test cases test cases
+[12:51.72] means your program internally is run for
+[12:55.10] multiple cases that they will never run
+[12:57.96] it for one test case in in the real life
+[13:00.48] or in the coding World there will be
+[13:01.98] thousands of test cases any program that
+[13:04.56] you run will be run on any program that
+[13:07.02] you write will be run on thousands of
+[13:08.52] test cases like over here your program
+[13:10.26] is run on two test cases and this is how
+[13:13.14] the backend looks in the back end they
+[13:15.54] will write something into main they'll
+[13:17.70] take the test cases and they'll call
+[13:20.10] your functions for every other test case
+[13:22.26] and your function has to perform the
+[13:24.54] task for the first time three rows or
+[13:26.64] the next time five rows now you might be
+[13:29.10] thinking okay but I was right why was it
+[13:31.80] wrong so if you see they're clearly
+[13:33.72] showing that there has to be a space
+[13:35.34] because if you look at this they want
+[13:37.14] space what you can just give is there's
+[13:38.88] a space and once you're given the space
+[13:40.86] you can go ahead and run it again the
+[13:43.38] moment you give a space and run it again
+[13:45.00] you see that it is running fine you can
+[13:47.28] go ahead and submit this code and you
+[13:49.08] will see that this is giving you a
+[13:51.06] correct answer so from now onwards you
+[13:54.06] should always practice on online coding
+[13:56.22] platforms because when you go for
+[13:57.42] interviews this is where you will have
+[13:59.58] to give your online exams or whatever it
+[14:02.22] is so please start practice so I hope
+[14:04.32] you have understood the test cases stuff
+[14:06.24] and how the backend looks in an online
+[14:08.64] compiler what you have to write you
+[14:11.10] don't have to write the entire code you
+[14:12.42] just have to write the function snippet
+[14:14.10] because the other things they will be
+[14:15.78] taken care of let's look at the second
+[14:18.00] pattern let's try to again implement
+[14:20.16] this same number of steps so the second
+[14:22.62] pattern States okay we have one two
+[14:25.44] three four five
+[14:27.78] five rows the first Loop is going to be
+[14:31.26] uh that straightforward so let's do one
+[14:34.26] thing let's quickly uh copy paste this
+[14:37.08] stuff
+[14:38.46] and
+[14:40.02] yeah let's do it pattern number two I'm
+[14:42.30] going to do is I'll do a print pattern
+[14:43.74] number two I'll probably just yeah so
+[14:46.86] what is the first Loop first Loop is
+[14:48.72] saying again n rows that is very obvious
+[14:51.60] because we are seeing that it is for one
+[14:53.76] two three four five flows that's
+[14:55.50] something which we are definitely seeing
+[14:57.18] let's look at the step one is done
+[14:59.58] without a Looper start let's look at the
+[15:01.44] inner loop and try to connect it somehow
+[15:04.44] so if I look at for the zeroth row I'm
+[15:07.38] just printing one star right and I say
+[15:10.02] for the zero three printing one star
+[15:12.42] for the first row I'm printing two stars
+[15:15.12] for the second row I am printing P stars
+[15:18.60] for the third row I'm printing four
+[15:20.16] stars for the fourth I am printing five
+[15:22.02] star so can I say can I say I have to
+[15:25.62] run it for once for the first line and
+[15:28.08] run it for twice in the second line to
+[15:30.06] run it for Thrice in the second line
+[15:32.22] can I see
+[15:33.66] if it is line zero it runs for
+[15:37.68] or or if it is line one it runs for once
+[15:41.04] once twice price over five times very
+[15:45.78] simple isn't it so can I say if you're
+[15:48.54] at the inner loop as idj equal to 0 and
+[15:51.54] J less than equal to y
+[15:54.96] and then inside this if I give something
+[15:56.94] like C out of
+[15:58.50] star space and over here I ended will
+[16:01.80] this run
+[16:02.88] this has to run isn't it this has to run
+[16:05.10] so I've given the test cases everything
+[16:07.08] will it run let's give it a try and see
+[16:10.14] if it is running fine let's run this
+[16:12.12] task
+[16:12.96] so if you see over here this is this did
+[16:16.08] not run because why
+[16:21.36] because we are calling print one so we
+[16:23.10] will call print two my bad
+[16:25.14] it's called print two and let's see if
+[16:27.00] it is if it runs it did it's pretty
+[16:30.30] simple isn't it when I is 0 it runs from
+[16:33.36] zero to zero when I is 1 it runs from
+[16:36.30] zero to one when I is 2 it runs from 0
+[16:39.12] to 2 so we just provide yes the step
+[16:42.78] number two we just looked at the step
+[16:45.18] number two and it was pretty simple the
+[16:47.40] step number two clearly stated connect
+[16:49.56] it somehow to the rows and we were
+[16:51.84] seeing Zero row
+[16:54.24] one row
+[16:55.80] it was pretty simple just run it for
+[16:57.54] zero one time two time three time and
+[17:00.18] that was very evident to be connected to
+[17:02.10] the outer eye Loop and the third step
+[17:04.56] was print them inside the for Loop so
+[17:06.72] the three steps were done and I was
+[17:08.70] easily able to print this particular
+[17:10.56] pattern
+[17:12.06] again let's uh for the online compiler
+[17:14.22] let's take this
+[17:16.44] for the online compiler let's take this
+[17:18.36] and try to take it over here and try to
+[17:21.96] run it and see if it is running fine
+[17:24.06] it is and let's Summit this so if I
+[17:27.00] submit this uh this is running fine yes
+[17:29.76] it is so that was the pattern number two
+[17:32.58] and let's go to the next pattern that's
+[17:34.08] the pattern number three it's something
+[17:36.36] like uh one one two one two three again
+[17:40.02] step number one for the outer loop count
+[17:42.78] the number of lines one two three four
+[17:45.12] five so it has five lines so the outer
+[17:47.70] loop is going to be very very
+[17:49.68] straightforward so let's again take this
+[17:51.48] and copy this for the pattern number
+[17:52.86] three so this is going to be pattern
+[17:55.02] number three and the outer loop is going
+[17:57.78] to be pretty straightforward
+[17:59.88] 0 to n and yeah let's take this off and
+[18:03.06] this is going to be uh 3. so the outer
+[18:06.54] loop is tracing but now let's try to
+[18:09.42] connect
+[18:10.26] the
+[18:11.82] the inner loop like the columns to
+[18:15.48] somehow the rows now I know this is row
+[18:18.00] number zero
+[18:19.68] for the order of Simplicity let's take
+[18:22.32] this as row number one for the row
+[18:24.12] number one I'm actually printing from
+[18:26.70] just one for the rule number two I'm
+[18:29.64] printing one two for the rule number
+[18:31.80] three I'm printing one two three for the
+[18:34.26] row number four I'm printing one two
+[18:35.70] three four so can I say for every row
+[18:38.70] number I'm actually printing from one to
+[18:41.04] row number
+[18:42.06] can I say for every row I'm printing
+[18:44.28] from one to one second row one to two
+[18:46.02] the fourth row one two four fifth row
+[18:49.20] one to five can I say for every row
+[18:51.66] because I know the outer loop runs for
+[18:53.64] every row so can I say for every row and
+[18:56.16] we are taking Simplicity like one so we
+[18:58.02] will do one lesser than can I say for
+[19:00.78] every row
+[19:02.34] The Columns are going from one
+[19:05.58] till the row itself and then J plus and
+[19:09.48] what are we printing we are printing
+[19:11.28] nothing but
+[19:12.18] let's look at this what are we printing
+[19:13.74] one two three that's nothing but the
+[19:16.62] inner loop increment that's it let's go
+[19:19.62] ahead and print G
+[19:21.00] so if you print J will it work it
+[19:24.18] ideally should let's quickly run this
+[19:26.10] and see if it is running fine run task
+[19:28.56] and compile and run let's see so we are
+[19:31.20] seeing guy does it does run fine so what
+[19:34.50] I'll do is I'll take it to the online
+[19:35.70] compiler
+[19:37.02] paste it over here
+[19:39.06] and see if it is giving us the correct
+[19:41.82] answer
+[19:42.72] it is submit this and it will be giving
+[19:45.66] you the correct answer
+[19:47.58] so the third pattern is also done now
+[19:50.40] let's look at the fourth part
+[19:53.76] let's look at the fourth part what
+[19:55.98] difference do you find it is quite
+[19:58.08] similar to the previous part but the
+[20:00.18] thing is on every row we are printing
+[20:02.22] the row number we're not incrementing it
+[20:04.86] like one two three can I see we're just
+[20:06.78] printing the row numbers so if I go back
+[20:09.06] to our stuff and do the pattern print of
+[20:11.94] code this copy paste the same thing just
+[20:14.94] uh yeah let's copy is the same thing and
+[20:17.52] closes do this pattern fold and instead
+[20:20.40] of this can I say on every column or on
+[20:23.22] every row I'm just printing the row
+[20:25.02] number in itself and I'll try to now run
+[20:27.24] this and see if it is running fine if
+[20:28.92] you ready to run this you will see that
+[20:30.96] yes yes no it is not
+[20:33.30] because why did oh sorry printful my bad
+[20:36.90] let's do this run task and see is it
+[20:40.08] running fine it is very simple you see
+[20:43.68] one
+[20:45.42] one method and all of them are running
+[20:48.18] absolutely fine
+[20:49.68] I'll just go over here and paste it and
+[20:53.28] really try to submit it num super
+[20:55.44] confidence I'll just directly submit it
+[20:57.18] it is running fine the pattern number
+[20:58.80] four is done now let's talk about the
+[21:00.72] pattern number five so when I talk about
+[21:03.00] the pattern number five step one very
+[21:05.58] simple for the outer loop count the
+[21:07.92] number of lines it's one two three four
+[21:10.20] five that's n lines so without thinking
+[21:13.20] anything go ahead and copy this
+[21:17.10] and do the pattern number five
+[21:20.40] erasers
+[21:21.90] and let's be like okay this is running
+[21:23.58] for five tips for sure without a loop is
+[21:26.04] done let's now analyze for the inner
+[21:29.04] loop for the inner loop can I say on the
+[21:31.02] row number one there are five
+[21:33.54] it's printing five tips so let's let's
+[21:36.06] analyze one Prince five ten the first
+[21:39.60] row prints five star the second row kind
+[21:43.44] of prints
+[21:44.58] four steps the third row kind of prints
+[21:48.54] three stars the fourth row kind of
+[21:51.42] Prince two stars the fifth true kind of
+[21:53.82] Prince one star so if I have to somehow
+[21:58.44] somehow connect them to the rules
+[22:01.02] can I see can I see this the total rules
+[22:06.96] minus
+[22:09.60] the row number
+[22:11.34] plus one is what you're printing on
+[22:14.34] every row again observation very simple
+[22:16.98] observation can I say this I can why
+[22:20.88] because if it is one and the total are
+[22:24.18] five
+[22:25.02] 5 minus 1 plus 1 is 5 is what you're
+[22:28.50] printing here
+[22:29.52] if it is 2
+[22:31.20] 5 minus 2 plus 1. this is nothing but 4
+[22:34.86] is what you're printing so this is
+[22:37.86] what you are printing these are the
+[22:39.72] number of stars you're printing so can I
+[22:41.94] say the inner loop is going to be very
+[22:43.92] simple J equal to
+[22:46.44] it could be like 0 and J can go till
+[22:50.40] n minus I plus 1 J plus plus again I'm
+[22:54.78] starting from 1 so my formula is this if
+[22:57.96] you start from 0 your formula might be
+[22:59.70] something else what matters is how many
+[23:02.04] time you're running okay C out of star
+[23:06.96] and then go ahead and see out of handle
+[23:08.76] I will not be submitting this time on
+[23:11.10] the online compiler
+[23:12.96] all the problem links you will be
+[23:15.12] finding it in the description or it did
+[23:17.82] not work again print five
+[23:20.16] let's quickly compile this
+[23:22.20] I'll not be submitting this code on the
+[23:24.30] online compile anymore all the problem
+[23:26.34] links you can find it in the description
+[23:29.04] and you can go ahead and submit them by
+[23:31.26] yourself when you're practicing
+[23:32.88] so the pattern number five is also done
+[23:35.64] you see one rule solves almost all the
+[23:38.40] problems let's look at this again very
+[23:40.56] similar it's like one two three four
+[23:42.84] five one two three four so it's like
+[23:45.18] printing from one to that row number
+[23:47.04] instead of this you have to print the
+[23:49.38] numbers so it's pretty pretty easy I
+[23:53.16] just copy paste and it goes like pattern
+[23:55.56] six over here I can do a pattern six and
+[23:59.10] this time you can just go ahead from
+[24:01.20] here this is like this and you can be
+[24:03.96] like okay J and this should be fine
+[24:07.20] let's quickly run this for pattern six
+[24:10.14] again pretty simple
+[24:12.72] so we do this
+[24:14.22] yeah it does run fine right so if you
+[24:17.76] see by the way let's for easy
+[24:19.20] understanding let's do one test case at
+[24:21.48] only seven yeah that should be gig uh
+[24:24.30] should give you an easy understanding so
+[24:26.58] if I run this you see everything is
+[24:28.38] running absolutely like this so this is
+[24:32.04] also done
+[24:33.06] now this one is where you have to think
+[24:36.12] a bit so probably pause the video and
+[24:39.06] think on how you can solve this so what
+[24:41.10] is the first rule the first rule is very
+[24:42.72] simple count the number of rows
+[24:45.12] that's five first Loop is definitely
+[24:47.64] going to be something from like I equal
+[24:50.16] to let's say 0 until
+[24:53.22] uh five which is like you can run it
+[24:55.32] till four
+[24:56.34] so this is something which I know so if
+[24:58.14] I try to write down the row numbers it's
+[25:00.36] like 0 1 2 3 4. that's very obvious
+[25:04.20] what's the second rule the second rule
+[25:06.78] states for the inner loop focus on the
+[25:09.24] columns what is happening
+[25:11.28] and connect them somehow to the rows
+[25:13.74] first thing that I'll see is
+[25:16.08] how many columns are there so can I say
+[25:18.72] it's like one
+[25:21.12] two three four five six seven eight nine
+[25:27.42] so can I say in total in total there are
+[25:31.32] nine columns right and if I carefully
+[25:35.34] observe what are we printing we're going
+[25:37.98] to printing space Stars
+[25:40.74] space
+[25:42.18] space
+[25:43.58] Stars space space
+[25:48.78] and stars space space
+[25:52.08] so we are printing nothing but
+[25:54.78] space
+[25:56.34] Stars
+[25:57.90] space
+[25:59.04] so if we logically think inside it if we
+[26:02.94] can print space and if after that we can
+[26:05.46] print stars and after that if we can
+[26:07.56] print space I think our job will be done
+[26:10.44] now let's analyze for every row how many
+[26:13.86] space we have to print how many stars we
+[26:16.20] have to print and how many space you
+[26:17.64] have to print if you are able to do this
+[26:19.50] I think we will be able to write our
+[26:21.12] inner Loops very easily isn't it so can
+[26:23.76] I see
+[26:24.60] but the zero uh zero column what are we
+[26:28.68] printing printing one space two space
+[26:30.84] three space four space it's like four
+[26:33.90] space one star post piece
+[26:37.38] right okay can I say over here it's like
+[26:41.46] one two three three and three
+[26:44.76] three comma three comma three can I say
+[26:47.52] over here it's two comma
+[26:49.86] five comma two
+[26:51.72] okay can I say over here it's one comma
+[26:54.54] seven comma one can I say oh yeah it's
+[26:59.16] zero comma nine comma is it nine yeah it
+[27:02.94] is zero can I say
+[27:05.46] we're printing these many space these
+[27:07.62] many stars and these many spaces yes we
+[27:10.14] can now we need to find what's
+[27:13.98] somehow connected somehow to the rules I
+[27:16.98] think we can we know how to connect so
+[27:19.50] if you look at this this is nothing but
+[27:21.72] going in the reverse direction of the
+[27:23.88] number of rows the number of rows are
+[27:25.86] from zero to four so it's pretty
+[27:28.38] can I see the formula for the first
+[27:30.66] space is nothing but n minus I
+[27:35.28] which is just imagine for the first case
+[27:37.50] I will be zero so if n is 5 those are
+[27:41.88] the five rules five minus I
+[27:44.94] minus 1 is what this will be very
+[27:49.20] obvious so I have figured out the space
+[27:51.12] to be this
+[27:54.42] you can just do some maths and you'll be
+[27:56.46] able to figure it out assuming n is 5
+[27:58.74] over here so this is very simple 5 minus
+[28:02.64] 0 minus 1 for the first time next time 5
+[28:05.28] minus 1 minus one next time five minus 2
+[28:07.80] minus one so so on so
+[28:10.98] space has been computed but now we have
+[28:13.44] to think about the stocks how do we
+[28:15.60] compute the stars because the stars are
+[28:18.24] like one three five
+[28:20.34] it's somehow increasing because 0 is 1
+[28:24.48] for 1 it is three now four it is nine
+[28:27.24] it's something like
+[28:29.10] one more than twice can I see it's
+[28:32.16] something like 2 into I plus 1 is what
+[28:35.94] it is can I say this 2 into I Plus 1. 2
+[28:39.72] into 0 plus 1 is 1. three two into three
+[28:44.88] is six plus one is seven so can I say
+[28:49.38] the stars is 2 into I plus I can so I've
+[28:52.26] kind of figured out the relation somehow
+[28:54.36] connected to the rows just run the inner
+[28:56.70] loops the only difference is this time
+[28:59.22] the inner loop will first print the
+[29:00.60] space then the stars and then this so
+[29:03.06] there will be three different inner
+[29:04.50] Loops it refers this in a loop then this
+[29:06.66] in a loop then this in a loop this one
+[29:08.82] for space this one for star and this one
+[29:12.36] for space very simple I just broke down
+[29:15.66] the problem into simpler one once I've
+[29:18.90] done this I think my job will be done so
+[29:21.96] let's quickly write the pattern number
+[29:24.38] seven right let's write the void print
+[29:28.08] pattern number seven Let's Take N so I
+[29:31.44] know one thing I will be starting from
+[29:33.30] zero again I'm doing it in terms of zero
+[29:36.18] base indexing you can go ahead and do
+[29:38.46] with whatever B is indexing you feel
+[29:40.50] like one basis let's print the space
+[29:43.50] then the star
+[29:45.48] and then the space okay so this one will
+[29:49.38] be for J equal to you know the formula
+[29:52.56] is n minus I so J is 0 J lesser than
+[29:56.88] equal to n minus I minus 1 and then J
+[30:00.42] can go as plus plus very obvious uh K
+[30:03.78] let me just quickly check okay J lesser
+[30:06.18] than because this should be fine and the
+[30:08.88] similar thing will be at the last as
+[30:10.38] well
+[30:11.16] and for the stars is very obvious that
+[30:15.06] you go from sorry j j goes from 0
+[30:21.18] Jay goes on till 2 into I plus 1 and
+[30:25.80] then G plus plus quite easy this will be
+[30:28.74] space so you can just go ahead and print
+[30:30.78] it something like this this will also be
+[30:32.94] space
+[30:34.44] and this will be Stars so go ahead and
+[30:37.74] print the stars and once everything is
+[30:40.14] printed you right before moving to the
+[30:42.18] next row you move on to the next line so
+[30:44.70] let's go ahead and print the part number
+[30:47.22] seven my bad let's print the pattern
+[30:50.10] number seven let's go to the terminal
+[30:51.90] and run the test and see where it's
+[30:54.06] running fine so if I run this you see
+[30:56.34] that this particular pattern is indeed
+[30:59.10] getting printed so the main task is to
+[31:02.40] break down the problem into this into
+[31:07.20] parts and then follow the rules that I
+[31:09.24] have taught you okay this one
+[31:11.88] pretty similar the inverted one can you
+[31:14.82] do it in the inverted fashion I think
+[31:16.92] you can
+[31:17.88] what is the
+[31:19.74] this time you start from
+[31:21.84] this will be zero space
+[31:24.06] this will be one space this will be two
+[31:26.94] space so it goes in the opposite way
+[31:30.78] the stars are in the opposite fashion as
+[31:33.60] well so think on this pause away uh
+[31:35.82] pause the video and think on this and
+[31:37.26] let's see if you can do this so coming
+[31:38.70] back to the pattern what's the first law
+[31:40.80] the first law is very simple zero one
+[31:43.08] two three four so the first Loop is
+[31:46.08] going to be super easy to predict now we
+[31:48.36] know we are printing space then we are
+[31:50.58] printing stars and then we are again
+[31:52.62] printing space this is something we know
+[31:55.08] for sure now the question is how many
+[31:57.66] space initially if we look at this
+[31:59.96] initially for zero we're printing zero
+[32:02.64] space and you're printing like nine
+[32:04.50] stars and then zero space one it is
+[32:07.50] something like one space Seven Stars One
+[32:11.28] space for two it is like two space and
+[32:14.04] then uh five and then two or three it is
+[32:17.46] like three this is three and this is
+[32:19.62] three for four it is like four this is
+[32:22.44] one and this is nothing but four so the
+[32:25.62] space is one is pretty simple it's
+[32:29.04] pretty simple so if I just go back and
+[32:31.44] we know uh the pattern 7 is kind of
+[32:33.72] similar so we'll just copy paste and
+[32:36.12] we'll just take this off and make this
+[32:38.28] pattern
+[32:39.36] something I know for sure is
+[32:41.40] the space one is
+[32:44.76] equivalent to the row if there are is
+[32:47.82] the zero through there will be zero
+[32:49.02] spaces so this won't run
+[32:50.82] this is something which you know for
+[32:52.20] sure
+[32:52.98] the only problem is the Stars the
+[32:55.92] formula is going to be super simple uh
+[32:58.20] if n is 5 for 0 it'll be like 2N minus
+[33:01.16] 2i plus 1 you can try doing it and if
+[33:04.92] you apply this formula for the zero
+[33:06.66] through it is going to be like 25 10
+[33:08.40] minus 2 into 0 0 plus 1 it's like 10
+[33:12.00] minus 1 9 for this one it'll be like 2
+[33:14.52] into 5 10 minus 2 into 2 which is 4 plus
+[33:18.78] 1 which is 5 10 minus 5 is 5 so it's
+[33:22.56] very simple what I did was in the
+[33:24.36] previous problem I knew this was nothing
+[33:26.28] but 2i Plus 1. and I saw it as reducing
+[33:29.52] so reduce it from twice of n is quite
+[33:32.40] simple so what I'll do is I'll go over
+[33:35.22] here and I'll say 2 N minus 2 into I
+[33:38.82] plus 1 again you can do it as as you
+[33:42.42] prefer there is no hard and fast rule
+[33:44.70] that you have to do it in this way only
+[33:46.08] you can assign variables reduce them and
+[33:48.72] do uh however you wish like so I'll go
+[33:51.24] and print this print a terminal run task
+[33:54.48] okay and run
+[33:59.94] it looks like it is not getting printed
+[34:03.06] in this way
+[34:04.14] okay so it has to be 2 into n no I think
+[34:07.50] it's shipping run task clean and run
+[34:11.10] okay it does Sprint so this is how uh
+[34:13.74] easily we can do the pattern number
+[34:16.26] eight it's time to do pattern number
+[34:18.18] nine where the fourth rule will come in
+[34:20.40] so pause the video and maybe think how
+[34:22.50] you can do on this pattern number nine
+[34:24.92] looks a combination of seven
+[34:28.02] under eight isn't it so what you can
+[34:31.38] always do us
+[34:33.18] you can go ahead and combine both of
+[34:35.64] them so imagine I say let's first print
+[34:39.60] print num pattern number seven according
+[34:42.42] to this particular n and then print
+[34:44.64] pattern number eight so if I do this
+[34:46.86] will it run
+[34:48.36] I hit logically it should and you will
+[34:51.12] see it does
+[34:52.32] so sometimes you have to be smart it's
+[34:55.38] not necessary that you always write
+[34:58.56] patterns you can always combine them as
+[35:00.90] well you can combine two different
+[35:02.34] patterns to generate one as well so keep
+[35:04.92] that in mind and that's actually a good
+[35:07.74] way to write patterns combining so the
+[35:10.56] pattern number nine is completed uh time
+[35:12.30] for the pattern number ten again this
+[35:14.28] looks quite similar to one of the ones
+[35:17.46] that we did isn't it but is it a flip
+[35:20.28] pad like this one was a complete flip
+[35:23.46] pattern like
+[35:24.42] the same lines if you see this line and
+[35:26.46] if you see this line they were similar
+[35:28.44] right over here we have a we have a
+[35:32.28] right angle triangle but the bottom one
+[35:34.26] is like there are two same lines of
+[35:36.60] equal number of stars here there is no
+[35:38.76] so you cannot merge uh one like straight
+[35:43.50] like
+[35:44.46] straight triangle uh right angle
+[35:46.44] triangle and the inverted right angle
+[35:47.70] triangle you cannot do that over here so
+[35:50.40] you can do it with some fluctuations but
+[35:53.40] I'll still so let's look at this pattern
+[35:55.80] so n is given as 5.
+[35:58.38] first thing to observe is the rule
+[36:00.12] number four symmetrical now this pattern
+[36:02.88] is a symmetrical pattern observe
+[36:04.74] symmetry where does it get
+[36:07.02] s this is the this is the point where it
+[36:08.70] starts getting symmetry
+[36:10.26] so whatever logic you have to write
+[36:12.60] will be okay till here and then you have
+[36:15.12] to flip the logic so observe symmetry
+[36:17.52] you have observed symmetry that is done
+[36:19.86] what is the outer loop let's see one two
+[36:23.88] three four five six seven eight nine
+[36:27.86] nine rows is what you have to run nine
+[36:30.60] rows is what you have to run so can I
+[36:32.58] say if you're running nine rows it's
+[36:35.58] very obvious to saying you're running 2
+[36:37.50] N minus 1 times that is what your outer
+[36:40.02] loop runs so going back to the code the
+[36:42.60] outer loop is pretty similar pretty
+[36:45.36] straightforward two less than two again
+[36:49.08] you can go one base indexing as well
+[36:51.06] that is your choice
+[36:52.44] done one less than 2 N minus 1 so this
+[36:56.16] is what the outer loop will be so let's
+[36:57.84] quickly write this one two three four
+[36:59.88] five six seven eight nine so we have
+[37:03.36] written the
+[37:04.50] outer loop now let's talk about the
+[37:07.50] inner loop now when I say inner loop
+[37:11.34] what does that mean
+[37:13.32] it means this one for the first time I'm
+[37:15.96] printing one Stars second I'm printing
+[37:18.42] two stars third I'm trading three stars
+[37:20.58] both I'm printing four stars fifth time
+[37:23.04] I'm printing five star something I'm
+[37:25.02] sure is till here till the symmetrical
+[37:27.66] portion the number of stars that I am
+[37:30.48] printing is definitely equal to the row
+[37:33.36] number so let's let's say number of
+[37:35.82] stars that you're printing is equal to
+[37:37.68] the row number which is I so we can go
+[37:39.66] ahead and say ID J equal to one J less
+[37:41.70] than equal to stars is 40 printing
+[37:45.12] so we go ahead and say C out of star
+[37:48.00] it's actually correct
+[37:50.88] right and if you run this let's see what
+[37:53.10] will happen okay go ahead and try to run
+[37:55.08] this this will like print but this will
+[37:57.78] print something like this
+[37:59.10] whereas from the row number six you have
+[38:01.14] to break the symmet from the rule number
+[38:03.48] six you have to break the Symmetry let's
+[38:05.52] try to analyze a formula for rule number
+[38:08.58] six we need four stars
+[38:11.52] seven we need three so eight we need two
+[38:14.88] or nine we need one I think is pretty
+[38:18.36] evident the formula the formula is
+[38:20.70] crystal clear
+[38:22.08] 2N minus I is a Formula isn't it those
+[38:27.30] many stars is what you require if you
+[38:30.30] exceed the row if you exceed the fifth
+[38:32.58] row because this is your symmetrical
+[38:34.28] symmetrical position from six downwards
+[38:37.50] these are the number of stars is what
+[38:39.54] you will be printing so can I see
+[38:42.72] if the rule exceeds
+[38:44.82] the nth row if the road sees the
+[38:46.92] anythrow then the stars that you will be
+[38:49.68] printing will be nothing but 2 into n
+[38:51.68] minus of the row number
+[38:54.78] right can I say this ro means I over
+[38:56.94] here can I say this I think I can
+[38:59.58] go and run run the task
+[39:01.68] well let's print this yes it does very
+[39:04.80] simple if I try to write it uh in a much
+[39:08.46] simple like you can just write it in
+[39:10.38] other ways as well ternary operators
+[39:12.60] whatever you wish to but this is how you
+[39:14.70] can easily print the nested or loops
+[39:18.84] so we are done with the pattern number
+[39:21.00] 10 as well let's look at the pattern
+[39:22.98] number 11. okay
+[39:25.80] we have done a similar pattern over here
+[39:29.22] the right angle triangles
+[39:31.50] uh I hope uh I don't remember if we call
+[39:33.84] that so
+[39:35.40] the row numbers are like five
+[39:37.68] that is quite easy so going ahead void
+[39:41.16] print 11 int n and you can say I know
+[39:46.38] one thing I equal to 0 I lesser than n i
+[39:49.44] plus plus this is definitely the Outer
+[39:51.12] Loop there is no doubt with the audio
+[39:53.94] let's look at the inner loop how's the
+[39:56.10] inner loop working
+[39:57.36] can I have the zero throw starts with
+[40:00.54] for the second row it starts with one
+[40:03.36] for the third row it starts with
+[40:05.82] sorry for the fifth so it's like
+[40:08.04] so can I say for the zero through it
+[40:10.14] starts with one
+[40:11.46] for uh the second row it starts with one
+[40:14.46] now the fourth row it starts with one
+[40:16.50] can I say for all the even rows
+[40:19.38] but all the even rows it starts with one
+[40:21.90] okay
+[40:22.98] so I'll be like what's the start point
+[40:27.30] let's keep start as one
+[40:30.66] and can I say this if
+[40:34.38] I am an even row
+[40:38.10] if I'm at an even row a star is actually
+[40:40.38] one
+[40:41.64] or else
+[40:43.32] the star is actually zero can I see this
+[40:46.80] maybe you can Define this somewhere here
+[40:48.72] and assign it some dummy value if you
+[40:51.84] wish to so can I say if it's an even
+[40:54.90] though the start is one as the start is
+[40:56.76] zero that is something which we know for
+[40:58.50] every column now what happens
+[41:00.90] it prints for one time two time Three
+[41:02.82] Time by flipping flipping flipping one
+[41:05.70] zero one Flip Flip Flip so can I do this
+[41:08.70] I think I can it's very easy what I'll
+[41:11.64] do is I know how to print the right
+[41:13.26] angle triangle that's something like
+[41:15.12] this this this this this this
+[41:17.15] [Music]
+[41:18.30] and you just print the start
+[41:22.44] isn't
+[41:24.06] you just print the start
+[41:26.34] and pause this your print handle but if
+[41:28.68] the start is one it stays as one
+[41:31.02] The Next Step it has to be zero it flips
+[41:33.18] so you can say clip the flip is very
+[41:36.18] easy you can write start equal to 1
+[41:38.22] minus star this line will flip 1 to 0
+[41:40.80] and 0 to 1. you can do maths and you'll
+[41:42.84] find now let's uh print pattern 11 yeah
+[41:46.02] let's try to print it and see if it is
+[41:47.34] running fine you see
+[41:49.38] those three or four rules will actually
+[41:51.72] print everything
+[41:53.04] uh did we print it properly let's
+[41:55.14] quickly you have a check
+[41:57.42] I should have started from one looks
+[42:00.66] like the first line was not printed
+[42:03.12] okay my bad it should be this J less
+[42:05.64] than equal to Y so run task and clean
+[42:08.64] and this will be printing it one zero
+[42:11.10] one the pattern is printed pretty easy
+[42:14.04] isn't it
+[42:15.30] let's look at the pattern 12 uh you can
+[42:17.46] probably pause the video and try out the
+[42:18.78] pattern yourself this pattern looks so
+[42:21.66] this pattern uh so this pattern kind of
+[42:23.52] looks similar to the pattern that we did
+[42:25.80] uh if you remember
+[42:27.84] yeah when there was space Stars space
+[42:31.08] and over here can I say it is like
+[42:33.30] number space numbers so if I try to
+[42:36.36] write this pattern can I say that if I
+[42:38.70] can figure out
+[42:40.08] the way of numbers
+[42:43.56] space
+[42:45.48] numbers I think my job will be done
+[42:48.60] that's racing but for the outer loop
+[42:50.76] that's very easy you just figure out how
+[42:54.06] many can I say I will be just running
+[42:56.16] the outer loop for four type the outer
+[42:59.04] loop is very simple it runs for four
+[43:02.64] times the outer loop will be running for
+[43:05.22] four times right so if the outer loop is
+[43:08.34] running for four times
+[43:10.50] let's look at this for the first row can
+[43:13.44] I say I'm printing one number
+[43:16.38] right and one number but between that
+[43:19.38] I'm printing some spaces let's count the
+[43:21.48] number of spaces one two three four five
+[43:24.72] six
+[43:26.16] is the number of spaces that I'm
+[43:28.08] printing perfect let's look at the next
+[43:31.14] one repeating two numbers two numbers
+[43:33.12] and let's count the number of spaces one
+[43:35.52] two three four okay depending four
+[43:37.50] spaces let's count the next one three
+[43:40.32] three and the spaces are one two
+[43:44.58] next Port space 0 and then four
+[43:49.38] something I'm sure is
+[43:51.54] the number and this one are very easy
+[43:55.26] because it's equivalent to the row
+[43:57.42] number so what I'll do is I'll go ahead
+[43:59.88] and first uh try to write this pattern
+[44:03.54] and then we can figure out the other one
+[44:05.94] so I'll take the int n
+[44:08.04] I can do is I can just
+[44:10.38] so print 12 and I know one thing you can
+[44:13.50] just start from one again you can do
+[44:15.90] zero base indexing that is your choice
+[44:17.46] so first is numbers
+[44:21.12] then a space and there is numbers so can
+[44:24.84] I see the numbers are going to be very
+[44:26.52] simple it can go from 1 till the I and J
+[44:30.72] plus plus take it go ahead and say J and
+[44:34.14] this not this yeah perfect and similarly
+[44:38.22] you can just do it in the opposite
+[44:40.02] fashion because if you look at this
+[44:43.74] it's like three to one it goes in the
+[44:45.72] opposite fashion so
+[44:47.58] it's Sky easy you just go from I
+[44:50.70] to one and you do J minus minus so this
+[44:54.42] is what you do for the numbers
+[44:56.82] but space is what you have to exactly
+[45:00.30] determine the next thing that I need to
+[45:02.52] do is I need to figure out a formula for
+[45:04.56] space because if I can figure out a
+[45:06.12] formula for space it can be very easy so
+[45:08.70] can I see the formulas we start from 6
+[45:10.98] and then do you see a change
+[45:14.34] it reduces by two it always reduces by 2
+[45:17.52] for sure right so if you can
+[45:21.42] somehow
+[45:22.80] figure out
+[45:24.18] the first number and then you can just
+[45:27.24] reduce it by two at every step I think
+[45:29.22] the job will be done so can I say the
+[45:31.14] first number
+[45:32.40] first number is nothing but
+[45:35.22] 2 into
+[45:36.24] whatever is n minus 1.
+[45:39.84] so first
+[45:40.98] very soon because if n is 4 it's
+[45:43.74] definitely six
+[45:45.48] right if n was three it would have
+[45:48.48] definitely been
+[45:49.80] two sorry four so two into n minus 1 and
+[45:53.52] that then at every step you just reduce
+[45:55.08] it by two quite simple so what I do is I
+[45:58.44] say Hey listen
+[46:00.18] I know this the space initially that you
+[46:03.84] have to give is this sorry oh my bad
+[46:06.24] going to n minus one this is something
+[46:08.04] which we know
+[46:09.18] why don't you go ahead and say okay
+[46:10.98] please go ahead and print those many
+[46:12.84] spaces so it's like space and then you
+[46:16.14] can do J plus plus and then you're going
+[46:17.70] to see out
+[46:18.78] perfect and right after every step you
+[46:21.84] definitely are going to do an endl but
+[46:23.64] at the same time you say space minus
+[46:25.08] equal to 2 which is equivalent to space
+[46:27.06] equal to space minus two and you can go
+[46:28.86] ahead and say print pattern number 12
+[46:30.06] and okay you can go to the terminal and
+[46:32.46] say run task
+[46:33.72] clean and run
+[46:35.46] if we click and run you actually see
+[46:37.44] that this pattern is getting printed for
+[46:39.12] the fifth one as well
+[46:41.88] pretty easy isn't it so with this we
+[46:44.22] will be wrapping up the pattern number
+[46:45.78] 12 as well the next pattern is I think
+[46:48.90] very easy you can try it on yourself so
+[46:50.76] the pattern number 12 is done now time
+[46:52.80] for pattern number 13. again a right
+[46:54.84] angle triangle so should not be a big
+[46:56.76] issue uh five rows so we'll be running
+[46:59.52] it for five times for sure so let's go
+[47:02.40] ahead and do it for pattern number 13.
+[47:06.60] so void print pattern number 13 intn
+[47:09.78] everyone knows what's the outer loop
+[47:11.82] going to be it's going to be something
+[47:13.56] like uh from let's see from one yeah we
+[47:17.58] know it's going to run for end times
+[47:19.98] now let's look what's happening because
+[47:21.84] it goes like one and like two then like
+[47:24.00] three something for sure is for the
+[47:26.16] first word uh we need one
+[47:29.22] for the secondary we need two elements
+[47:30.90] for the third row we need three elements
+[47:32.52] for the fourth row we need four elements
+[47:34.50] so the Fifth Fifth group we need uh five
+[47:36.78] elements something for sure is the out
+[47:39.30] the inner loop is definitely going to
+[47:42.12] run for
+[47:43.56] the number of row times if it is first
+[47:45.90] row one time if it is the second row two
+[47:48.06] times if it is third row three times
+[47:49.32] that is something which each of us know
+[47:52.20] but coming back what am I printing it's
+[47:54.84] like one two three four
+[47:56.82] it's a number which starts from one so I
+[47:59.34] know the printing is going to happen
+[48:00.66] somewhere here
+[48:02.28] this is why we're going to print
+[48:03.42] something for sure and this is go where
+[48:05.40] so we know the number starts from one so
+[48:07.74] why don't we keep the number which
+[48:09.18] starts from one and you can print it
+[48:11.28] something like this and at every step
+[48:13.38] it's getting printed we just increase it
+[48:15.30] by one does this work first time one
+[48:18.12] will come in print it'll go to the
+[48:20.16] everyday in the printing occurs one two
+[48:21.78] three four
+[48:22.86] quite simple and this is pattern number
+[48:25.02] 13 for you so if I go ahead and say
+[48:27.18] terminal run task and compile and run
+[48:29.88] this will actually run
+[48:32.04] it does and if you want some clarity
+[48:34.32] probably we can give a space and if you
+[48:36.90] give a space this is going to have much
+[48:39.00] more clarity yeah
+[48:40.68] all right so pattern number 13 done
+[48:42.30] let's look at the pattern number 14.
+[48:44.04] again a right angle triangle so the
+[48:46.74] outer loop is pretty pretty it's going
+[48:49.56] to be till n so what print pattern
+[48:52.44] number 14 intn and this ml goes zero
+[48:56.10] based indexing again you can go one way
+[48:57.96] zero based the certain code will change
+[49:01.14] as long as you're printing it it doesn't
+[49:02.58] matter this is something which we will
+[49:04.20] write now let's look at what are they
+[49:07.68] printing it inside
+[49:09.48] at every row depending One Two element
+[49:11.64] Trail so number of rows equal to number
+[49:14.10] same as right angle triangle but we are
+[49:16.32] starting with a and we are going till
+[49:17.90] three if it's a third row starting with
+[49:21.12] the a we're going till 4 if it's the
+[49:23.04] fourth row
+[49:24.06] that is something for sure
+[49:25.86] so can I see we can start with a now
+[49:29.22] actually we can run uh something like
+[49:30.90] character CH equal to a and we can say
+[49:33.30] CH lesser than equal to a
+[49:36.12] plus of I and you can do CH plus plus
+[49:39.36] now a lot of you might not understand
+[49:42.54] so it starts with a and it says a plus I
+[49:45.96] so imagine
+[49:47.52] I is something like two it's basically
+[49:50.46] saying if I take you back to the iPad
+[49:52.08] it's basically saying start with a go
+[49:55.26] till a plus if I is 2 a plus 2 what does
+[49:58.56] a plus 2 means
+[50:00.78] in computer what happens is AC is okay
+[50:03.42] two places ahead BC so let's actually
+[50:06.96] see that Loops from a they'll see
+[50:10.44] exactly if you're saying a plus 0 it
+[50:13.74] Loops from a to a it looks from a to a
+[50:16.80] and
+[50:18.06] in ASCII or in computer it's stored like
+[50:21.30] a b c d you can probably Google search
+[50:25.68] about ascis and you'll get a better idea
+[50:28.80] it's just too basic uh so if you give
+[50:33.12] C out of character
+[50:36.90] and he said this and you go ahead and
+[50:39.12] say C out of endel
+[50:42.12] let's see what happens and I go over
+[50:44.10] here and I say terminal
+[50:45.72] run compiler well this get printed yeah
+[50:48.96] it does
+[50:49.80] because the looping is done on the
+[50:52.02] character this time so so the pattern
+[50:55.14] number 14 is completed uh time for the
+[50:57.18] pattern number 15. it's similar to an
+[51:00.48] inverted right uh angle triangle which I
+[51:03.12] think we have done in the pattern number
+[51:04.20] five yes we have so it's we just have to
+[51:08.46] print like a b c d e and then a b c d
+[51:10.98] the first time it has to be uh for the
+[51:14.10] zero throw it has to be n times then n
+[51:16.68] minus 1 times then n minus two times
+[51:18.60] then n minus three it times then n minus
+[51:21.90] uh four times so it's it's pretty simple
+[51:24.90] so what I can do is I so what I can do
+[51:28.26] is I'll go over here you know the outer
+[51:30.24] loop is definitely going to be something
+[51:31.62] like I equal to 0 and I lesser than n
+[51:33.66] and I plus plus and about the inner loop
+[51:36.72] it's something like character CH a CH
+[51:40.50] lesser than equal to for the first time
+[51:43.38] if it is 0
+[51:44.76] if you see it prints all the five it's
+[51:48.54] like a plus
+[51:50.28] five times is it no four why because
+[51:54.78] it's like if I just write it it's like a
+[51:57.72] b c d e is what you're printing so this
+[52:01.02] is a plus 4 so it has to be a plus 4 not
+[52:06.18] 5. be careful about this so it's like
+[52:10.08] this is n next time it will be a b c d
+[52:15.06] such like a plus three got it it's like
+[52:20.10] a plus whatever n is minus this is the
+[52:24.54] 0th row this is the first row N minus
+[52:27.72] rho minus 1. please
+[52:30.18] pretty simple got it
+[52:32.40] into the maths afterwards
+[52:34.56] it's like a plus
+[52:38.10] n minus this this and then you can do a
+[52:42.60] character plus plus
+[52:44.34] you can go ahead and do this and then
+[52:46.92] this
+[52:48.06] and then you can go ahead and do a c out
+[52:50.22] of endel this once you've done this go
+[52:53.40] ahead and print this and you will see
+[52:56.70] that this is giving you a character
+[52:59.22] so with this we have completed the
+[53:01.02] pattern number 15 as well again the
+[53:03.18] pattern number 16 is a right angle
+[53:06.42] triangle but this time it's like a b b c
+[53:09.06] c d d and then Pi V is pretty simple you
+[53:13.62] start with a and then you go to B and
+[53:15.96] then you go to C it's like for the zero
+[53:18.00] throw the character will be a for the
+[53:20.64] first row the character will be B now
+[53:22.50] the third row the character will be C
+[53:23.82] it's like a plus the road number right
+[53:26.52] isn't it because for the first row for
+[53:29.82] the zero throw it's a it's something
+[53:32.04] like a plus I if the first row is just P
+[53:35.34] it's something like a plus I because a
+[53:37.62] plus 1 will be B correct so again pretty
+[53:40.98] simple I'll just go ahead and
+[53:44.40] write void print 16 in the n and then
+[53:48.60] for inti equal to 0 I less than n i plus
+[53:51.84] plus and the character that you will be
+[53:54.54] printing will be
+[53:56.34] definitely a plus I and how many times
+[54:00.60] in a right angled triangle I don't need
+[54:02.22] to say it anymore now
+[54:04.02] everyone knows this now see out CH and
+[54:07.80] then you go ahead this and then you go
+[54:09.78] ahead of n l once oh my bad it's like
+[54:13.08] zero okay once you've done this you can
+[54:14.88] go ahead and say pattern print 16
+[54:17.22] and this will
+[54:19.38] get printed
+[54:22.62] oh sorry I think a did not get printed
+[54:25.26] why because this
+[54:27.42] now you're good
+[54:30.78] a b b c c triple D Triple E Done
+[54:35.16] so a second
+[54:41.16] number 16 is done let's look at the
+[54:43.08] pattern number 17. the pattern number 17
+[54:45.06] is again similar to uh if you remember I
+[54:49.32] think
+[54:50.10] yeah this one where you have space star
+[54:53.04] please
+[54:54.42] so it's like space alphabets space but
+[54:58.86] it has some cement so you have to
+[55:00.90] observe Symmetry and then you have to
+[55:02.40] print it
+[55:03.78] so the outer loop is again very
+[55:05.70] straightforward but with the outer loop
+[55:07.44] obviously 0 1 2 3 4 without a loop is
+[55:12.36] going to run for n times the outer loop
+[55:14.88] transfer n times what are these spaces
+[55:18.30] spaces spaces spaces spaces so it's like
+[55:23.64] first you have to figure out spaces then
+[55:26.28] alphabets
+[55:28.02] and then spaces again
+[55:29.94] so if you remember from the pattern
+[55:33.36] number as I said it was this one pattern
+[55:36.96] number seven let's go to pattern number
+[55:38.52] seven and look at the formula so it was
+[55:40.86] like the spaces was n minus I minus 1.
+[55:44.34] so I can say those pieces as n minus I
+[55:46.26] minus 1.
+[55:48.12] that is something which we can copy
+[55:49.50] probably let's copy this entire thing
+[55:51.96] and
+[55:53.76] paste it
+[55:57.78] and the slip pattern number 70. so
+[56:00.54] instead of this we have to somehow
+[56:02.28] figure out the characters
+[56:04.32] because as of now we have printed the
+[56:06.78] spaces we printed the rows but we have
+[56:09.48] to figure out the characters
+[56:11.40] so if you go to pattern number seven we
+[56:13.74] know the number of characters are going
+[56:15.66] to be C that's 2 I plus 1. the number of
+[56:19.02] characters are going to be 2 into I plus
+[56:22.50] 1 that's for sure because this is one
+[56:24.42] character
+[56:25.44] because this is one character this is
+[56:27.30] three characters this is five characters
+[56:29.88] which is like two into two plus one so
+[56:32.64] we know the number of characters are C
+[56:34.56] can I see can I say one thing for sure
+[56:37.08] if I am having five characters in this
+[56:40.62] room
+[56:41.46] out of which if I start with character a
+[56:44.22] what happens
+[56:45.90] if I have five
+[56:47.64] if I have five
+[56:49.28] symmetry of sub symmetry If You observe
+[56:52.86] symmetry it breaks at half
+[56:56.16] right it breaks that tree so can I see
+[57:00.90] if it does five
+[57:02.64] five by two plus one
+[57:04.86] till this
+[57:06.36] I'll have a plus plus I'll have a plus
+[57:09.66] post this I love a minus minus isn't it
+[57:13.20] if I start with character a I printed
+[57:15.96] for whenever I am at the first time
+[57:19.08] whenever I'm at the first time I print
+[57:21.18] character then I do a plus plus whenever
+[57:23.64] I'm at the second time it prints P then
+[57:25.38] I do a plus whenever at the third time
+[57:28.02] it's C and then I start doing minus fine
+[57:30.54] so that it becomes B and it gets printed
+[57:33.12] at the fourth again to a minus minus at
+[57:35.16] the fifth it prints a so can I just can
+[57:38.46] I just assign a character I think I can
+[57:41.04] so what I'll do is I will go and say hey
+[57:44.40] can you please assign a character to
+[57:47.28] yours it'll be like okay let's do it if
+[57:50.52] you're assigning a character
+[57:52.20] can you go ahead and you know how many
+[57:56.58] times you have to print
+[57:58.20] that's 2 into I plus 1 that's the number
+[58:03.48] of times you have to print so let's at
+[58:05.46] first print CH and see if it is getting
+[58:08.82] printed correctly or not it's pattern
+[58:11.46] number 17 I'll go ahead and see
+[58:14.88] as of now we have not decremented it
+[58:17.10] it's printing correctly the space and
+[58:19.80] everything is correct if I do a
+[58:21.90] character plus plus and if I try to run
+[58:24.60] it
+[58:25.74] it will be printed correctly
+[58:28.14] but it's getting increment so I need to
+[58:30.36] decrement it so I know
+[58:33.54] I know what is the breakpoint the break
+[58:36.30] point is
+[58:38.52] this
+[58:40.86] whatever is the number of points it's
+[58:43.38] like 2 into this these are the number of
+[58:46.14] characters why two till here it
+[58:48.96] increases if you carefully observe
+[58:52.14] to carefully observed it is 5 5 by 2 is
+[58:54.84] 2 till 2 8 increases positive to
+[58:58.38] decrease so that in the next step it is
+[59:00.42] decreased so can I see
+[59:02.88] break point will be this so if your
+[59:06.84] character J your character J again uh
+[59:09.96] probably just to have a better
+[59:11.64] understanding you can just do it like
+[59:12.96] this one base indexing if your character
+[59:15.42] J is lesser than equal to the breakpoint
+[59:20.52] it's fine do a character plus plus if it
+[59:23.28] is not then do a character minus minus
+[59:25.02] quite simple and now I'll go ahead and
+[59:27.18] say hey can you now run and see if it is
+[59:29.58] running fine
+[59:31.14] it is this is running absolutely fine so
+[59:35.58] very simple you just have to do a bit of
+[59:37.50] mathematics bit of observation bit of
+[59:39.48] symmetry and the four rules that works
+[59:42.42] so we are done with one more part
+[59:44.46] nice let's look at the next pattern
+[59:46.68] pattern 18 it's like e and d e c d e
+[59:50.40] that starts from e
+[59:52.74] and then it's like d and it's like c d e
+[59:55.68] then it's like b c d e and it's like a b
+[59:58.02] c d e so how do you do it probably pause
+[60:01.62] the video and think it because this is
+[60:03.12] interesting so that's right in the
+[60:05.04] Triangle again
+[60:07.76] [Music]
+[60:21.62] very easy we're actually going from E is
+[60:25.44] definitely the last one and before this
+[60:27.60] we're going from E minus I isn't it
+[60:41.06] what I'll do is this is pattern number
+[60:44.16] 18 so I'll go ahead and code void print
+[60:47.04] 18.
+[60:48.48] idn and I know the
+[60:51.18] outer loop is this
+[60:53.82] I know the inner loop will be from
+[60:59.16] character
+[61:01.14] CH will be e minus I character will
+[61:04.80] definitely go until e
+[61:07.14] character plus plus
+[61:09.02] and you can definitely print the
+[61:12.18] character
+[61:13.98] and going ahead you can definitely do an
+[61:16.14] end l so print 18 is what you have to do
+[61:20.54] and I'll go ahead and run this and see
+[61:23.16] if it's running fine
+[61:24.54] it does
+[61:25.98] so I can say one more pattern done as
+[61:28.20] well let's come to the next pattern
+[61:29.70] which is pattern number 19. now this is
+[61:33.00] again an interesting pattern
+[61:35.16] but I guess you as of now have an idea
+[61:37.98] how to do it so if you carefully look at
+[61:40.68] this we see a symmetry the Symmetry is
+[61:44.10] something uh like this this isn't
+[61:48.66] outside one and this is the downside one
+[61:51.60] so
+[61:52.74] let's first solve this one and then we
+[61:55.68] can solve the downside one okay so I'll
+[61:57.90] I'll just be drawing the symmetry line
+[62:00.84] some of the yellow line is what we will
+[62:02.76] be solving at first and then we can
+[62:04.68] solve the bottom one as well so above
+[62:07.86] the yellow line what are we printing
+[62:09.30] let's look at this we are printing Stars
+[62:12.48] right we are printing uh spaces
+[62:15.66] and again printing Stars
+[62:18.18] and the outer loop is definitely very
+[62:20.52] obvious if ns5 that's the number of
+[62:24.42] times the outer loop will run Stars
+[62:27.36] spaces Stars so that is something which
+[62:29.94] you have figured out for the pattern
+[62:31.08] number 16 sorry 19.
+[62:34.26] so you can go ahead and say IND and we
+[62:36.90] know that this is going to run for end
+[62:40.26] times for sure so we can be like first
+[62:43.44] we gotta print some Stars
+[62:46.56] then spaces then again starts that's for
+[62:50.82] us to look how many stars how many
+[62:52.50] spaces and how many stars so if I look
+[62:54.84] at this
+[62:56.04] for zero through I'm actually printing
+[62:58.92] five stars and five stars
+[63:02.22] which is
+[63:04.20] for zero I'm printing five five and zero
+[63:07.68] spaces for the first column
+[63:10.80] we're actually printing four four and
+[63:14.52] two
+[63:15.66] depending four four and two for the
+[63:18.60] second column we're actually printing
+[63:20.52] three three and four spaces isn't it for
+[63:25.44] the third we are printing two and six
+[63:29.22] spaces and two for the fourth so zero
+[63:32.76] one two three four four four we are
+[63:34.38] printing one one and one two three four
+[63:37.50] five six seven eight
+[63:40.26] that's easy that is super easy isn't it
+[63:45.42] what is this
+[63:46.98] it's like n minus I
+[63:51.42] so can I say the stars is n minus I
+[63:54.06] number of stars is what I'm printing I
+[63:56.46] am n minus I is the number of stars and
+[63:58.98] printing and can I support spaces we can
+[64:01.86] start with 0 and we can keep on
+[64:03.42] upgrading them with Plus 2.
+[64:06.66] as simple as that so I'll go back to the
+[64:09.12] code and I know for stars is something
+[64:12.06] like I and DJ equal to 1 and we just now
+[64:14.04] figured out n minus I is what we are
+[64:17.22] printing so go ahead and say start
+[64:19.98] so we can just go ahead and Ctrl C stars
+[64:23.52] is done for spaces we know uh initial
+[64:27.24] spaces is nothing but zero so you can go
+[64:30.78] with the initial spaces and there will
+[64:33.84] be no command line int J equal to
+[64:37.62] 0 and really J less than any space and G
+[64:42.06] plus plus and you can go ahead and say
+[64:44.22] for rather C out base and once
+[64:47.94] everything is done my bad once
+[64:50.22] everything is done you can just increase
+[64:51.54] the spaces y equal to 2 and you can do a
+[64:55.20] c out of end L by the way initial spaces
+[64:58.62] what you have to increase
+[65:00.18] perfect once you've done this this is
+[65:02.70] pattern number
+[65:04.04] 19. let's see if this gets printed the
+[65:07.80] terminal run task component let's see so
+[65:11.04] if you try it uh so this will be J by
+[65:13.38] the way uh that there was a type of four
+[65:15.36] if you try to run this we will actually
+[65:17.52] see that it's getting printed properly
+[65:19.80] the first thing is printed now let's
+[65:23.52] look at the second
+[65:26.46] and that's again easy that is again easy
+[65:28.68] so if I try to again write the star
+[65:30.48] spaces combo
+[65:31.98] Stars pieces Stars it's like one star
+[65:36.20] for again we can we can re start it it's
+[65:40.38] we can just start it from one two three
+[65:42.42] four five it's like one star one star
+[65:44.82] one two three four five six seven eight
+[65:47.76] spaces there'll be six spaces two stars
+[65:50.04] two stars three spaces four stars
+[65:52.32] you can just
+[65:54.00] do the second half as well second half
+[65:56.52] will
+[65:57.66] one base indexing will be a better way
+[66:00.38] and then we know the initial space we
+[66:05.34] can again just initial space equal to
+[66:07.44] eight is what we can keep and then we
+[66:10.38] can just copy paste this entire stuff
+[66:14.46] because it's symmetrical and over here
+[66:18.18] instead of n minus I this will be
+[66:19.92] exactly I
+[66:22.32] and this will be minus equal to 2
+[66:24.24] because it's reducing by 2. I'll go
+[66:27.18] ahead and try to run this and see if it
+[66:29.28] is running fine
+[66:30.78] you see
+[66:32.16] so what I can say is the pattern 19 is
+[66:34.62] also completed now it's about the next
+[66:37.50] pattern which is the pattern 20.
+[66:40.86] so can I see over here it's again the
+[66:43.26] same pattern but this time can you break
+[66:46.32] down into symmetry you cannot because
+[66:49.08] there is just if I if I carefully show
+[66:51.36] you there is this one line over here you
+[66:53.76] could because it was exactly
+[66:55.74] symmetrically opposite but this is not
+[66:58.26] symmetrically there is just a single
+[66:59.82] line had this line been twice we could
+[67:02.22] have done it accordingly but no issues
+[67:04.80] maybe we can figure out a way and we can
+[67:07.20] do it because these are nothing but
+[67:10.38] similar to right angle time isn't it
+[67:12.84] similar to writing
+[67:14.70] so we will first have a look
+[67:17.46] in over here assume it's fine it's like
+[67:20.88] one two three four five six seven eight
+[67:24.54] nine something I know for sure is 2 and
+[67:27.36] minus 1 times is what the outer loop
+[67:30.42] will run 2N minus 1 times is what the
+[67:33.48] outer loop it run this is something for
+[67:34.98] sure
+[67:35.76] so if I look at this we're actually
+[67:37.74] printing like one start
+[67:39.72] a lot of spaces how many let's count one
+[67:42.72] two three four five six seven eight
+[67:44.76] spaces to start of it one star eight
+[67:47.88] space one star
+[67:49.38] two star two star six piece three star
+[67:53.58] three star full specs four star four
+[67:56.76] star two space and then five star zero
+[68:00.84] space five star and then
+[68:03.12] post our poster so can I see
+[68:07.26] after
+[68:08.82] can I say after the fifth row
+[68:11.46] can I say after the fifth row there will
+[68:13.80] be a subtle change the moment you are at
+[68:16.80] the Rope
+[68:18.32] five or maybe n by 2. the moment you are
+[68:22.50] at the row N by 2 on The Next Step there
+[68:24.78] will be a change and the change is very
+[68:26.76] subtle
+[68:28.38] this the space will increase till here
+[68:31.50] it was decreasing the space was
+[68:33.24] decreasing but whenever we reach here
+[68:35.70] the space the space starts to increase
+[68:39.06] the space will start to increase
+[68:41.82] right and what happens to the rows
+[68:45.48] you're just printing four then three we
+[68:48.72] had done this yes we have done this if
+[68:51.78] we go ahead we have done this in the
+[68:53.64] pattern 10 so we'll go ahead and look at
+[68:57.06] the pattern 10 how are we doing it we
+[68:59.88] were saying the Stars will be 2N minus I
+[69:02.46] the moment it
+[69:04.74] crosses
+[69:06.06] the nth guy right so this is what people
+[69:09.54] do over here as well the moment it
+[69:11.88] crosses this guy it's going to be
+[69:15.72] nothing but
+[69:17.82] the number of stars
+[69:19.92] till here it was very simple whatever is
+[69:21.96] the rule number that's the start at the
+[69:23.94] moment it crosses it will be 2N minus I
+[69:26.40] again very obvious for the six two into
+[69:29.04] five minus six that's four stars
+[69:31.92] done so I have figured out all the
+[69:34.68] formulas everything now it's time to go
+[69:37.98] and quickly code this up
+[69:43.80] it's like void print 20 int n and I know
+[69:49.68] one thing for sure this is going to run
+[69:52.80] till 2 into n minus 1 and I plus plus
+[69:56.34] that's something which we know now what
+[69:58.50] are we printing stars at first
+[70:01.74] spaces and then steps let's print the
+[70:05.40] Stars either Stars the number of stars
+[70:08.46] are very simple the number of stars
+[70:10.94] depends like it will be rows but if if
+[70:14.46] the eye has crossed the N then the Stars
+[70:19.20] will be through in the sense I Stars
+[70:22.62] will be
+[70:23.88] 2 into n minus the root number
+[70:27.36] you can just print the stars now
+[70:29.52] for INT J equal to 1 we can go ahead and
+[70:33.66] print those many stars
+[70:35.58] and we can go ahead and do J plus plus
+[70:37.46] and C out of star that's it and over
+[70:41.70] here you can just copy B is the same
+[70:43.44] thing and you can see this so this will
+[70:45.42] print all the stars what about the
+[70:46.98] spaces you know those pieces how they
+[70:49.20] increase so maybe you can keep the
+[70:50.76] spaces initially as if you remember the
+[70:53.28] initial space was eight so instead of
+[70:55.92] keeping it as eight you can say 2 N
+[70:57.66] minus two I think we did a mistake here
+[71:00.24] by keeping the space as
+[71:03.36] initial space as okay it was right it
+[71:05.82] was Zero
+[71:06.96] this will not be eight instead of this
+[71:09.60] this will be 2 into n minus 2 my bad I
+[71:12.72] did a mistake there but uh nevertheless
+[71:15.12] so
+[71:17.40] okay 2N minus 2 is the initial spaces
+[71:19.98] that we start off with and then while
+[71:22.20] going we can do like J equal to 1 and we
+[71:26.10] need these many spaces so J plus plus
+[71:29.04] and you can just go ahead and say space
+[71:31.22] at the end of the day you can see out
+[71:33.90] and L and if I is lesser than equal to
+[71:39.60] like lesser than sorry lesser than n
+[71:42.66] then you say spaces will be increased by
+[71:45.00] two L spaces will be decreased by two
+[71:48.42] this is what you will do to the spaces
+[71:51.06] and this is pattern number 20 so let's
+[71:53.70] go ahead and print this and see if it is
+[71:55.38] running fine or not
+[71:59.58] okay we have an issue
+[72:02.04] looks like there was an issue while
+[72:04.56] printing it
+[72:06.00] why did it happen let's quickly have a
+[72:08.10] look
+[72:11.90] and this is where the space increases uh
+[72:15.78] okay let's run it quickly let's compile
+[72:18.06] and see
+[72:19.14] look at this time it's both so so
+[72:22.20] another pattern
+[72:24.06] done
+[72:25.92] isn't the pattern printing super easy so
+[72:27.66] we're done with the pattern number 20 we
+[72:29.22] will start with the pattern number 21.
+[72:31.26] the image is wrong I'll get it fixed the
+[72:33.84] correct image is this because you have
+[72:35.34] to print a square so if you look at the
+[72:37.74] pattern a given four so it's a four size
+[72:40.38] Square
+[72:43.14] so for a square you know the number the
+[72:44.70] outer loop is very easy
+[72:46.98] outer loop is going to print for n times
+[72:49.32] that is for sure but if I look at the
+[72:52.38] square it will Stars where does it have
+[72:55.50] stars
+[72:56.52] obviously in the boundaries that is easy
+[72:59.70] fill the stars in the boundaries only
+[73:03.48] can I say I'll run for all the time I'll
+[73:06.18] run for all the times I'll run for all
+[73:08.10] the times that means I'll run for four
+[73:09.72] times every time I'll run for four times
+[73:11.82] every time
+[73:13.08] I start from something like 0 and then
+[73:15.48] go on till one I'll run it
+[73:18.30] and then I'll have a loop which again
+[73:20.34] runs from 0 to n
+[73:22.62] I'll have a loop I transfer 0 to n so
+[73:25.38] can I see this that I'll just fill the
+[73:28.56] boundaries
+[73:29.94] and if I try to if I try to write the
+[73:32.94] index six let's write the indexings
+[73:36.78] it's very simple but did you write down
+[73:38.76] the indexing it's like 0 1 2 3 0 1 2 3.
+[73:42.66] so can I see whenever I is 0 which is
+[73:47.16] this or whenever I is equal to n minus 1
+[73:50.46] which is this or whenever
+[73:53.66] J is 0 or whenever J is n minus 1 can I
+[73:59.76] say these are the cases of the
+[74:01.20] boundaries these are the cases of the
+[74:03.18] boundaries because whenever I is 0 it
+[74:05.64] runs J runs 0 1 2 3 whenever I is 1 J
+[74:08.52] run 0 1 2 3 whenever I is 2 J run 0 1 2
+[74:11.40] 3 whenever I is 3 J runs 0 1 to 3. so
+[74:13.74] can I say these are the cases
+[74:15.96] when we know we have to fill the Stars
+[74:19.44] as simple as that so
+[74:23.88] so what are you so what are you waiting
+[74:26.40] for let's go ahead and print this
+[74:28.32] pattern
+[74:31.02] it's like void print 21 idn and then you
+[74:35.04] say okay I know I have to print these
+[74:37.50] many
+[74:40.74] I and DJ equal to 0
+[74:43.92] and then you say Hey listen
+[74:46.14] I know if you're this
+[74:47.52] or
+[74:48.78] he does
+[74:51.18] or URLs or the others
+[74:55.32] then only I'll print a star
+[74:59.04] if not
+[75:00.78] then I know
+[75:02.52] you will have a space and over here I
+[75:05.94] can say handle as simple as that and I
+[75:08.34] can say
+[75:09.42] 21.
+[75:12.36] run task
+[75:14.10] let's run
+[75:15.84] and this is
+[75:25.80] this will be space uh now let's run it
+[75:30.00] quickly run it and see if it is running
+[75:31.74] fine yeah yes it's printing a square of
+[75:34.08] the size 5. so what I can say is I'm
+[75:37.74] done with the pattern number 21 as well
+[75:40.74] the last pattern finally my my voice is
+[75:44.34] giving up now
+[75:45.96] so the first step that I will do is
+[75:48.06] again it's very observation
+[75:50.52] it will not come to you for the first
+[75:52.08] time so to not worry if it doesn't comes
+[75:54.36] to your head so what I'll do is
+[75:56.88] I know there are seven rows and I know
+[75:59.10] there are seven columns for something
+[76:00.42] like n equal to 4. so what I will do is
+[76:04.20] at first I will subtract 4 from every
+[76:08.34] value and I'll get a new Matrix the new
+[76:10.86] Matrix will be like zero zero zero zero
+[76:13.92] zero zero zero and then zero zero zero
+[76:17.82] zero zero zero zero zero zero zero zero
+[76:21.24] zero zero zero zero so once I have
+[76:24.18] subtracted 4 from everything like 4
+[76:26.04] minus 1 this gives you 3.
+[76:29.10] 4 minus 3 this gives you one so you just
+[76:33.12] subtract 4 from every value so let's
+[76:35.88] solve this and once you get the answer
+[76:38.22] you again subtract 4 to get a very
+[76:41.04] standard process so what I've done is I
+[76:43.68] have subtracted
+[76:45.36] n from it which is nothing but the four
+[76:48.60] the value to get the new Matrix
+[76:52.26] okay once you get this new Matrix you
+[76:55.08] can again subtract the new Matrix to get
+[76:57.54] the value
+[76:58.38] right it's it's nothing but like this
+[77:01.80] was the current value this is the
+[77:03.30] current value and this is the new Matrix
+[77:05.22] so again if you just take it to the
+[77:07.26] other side it'll be n minus Nu Matrix
+[77:10.56] equal to current value pretty very
+[77:13.08] obvious pretty obvious
+[77:14.82] so I need to generate this generating
+[77:17.40] this is very easy
+[77:19.44] let's understand how so I know in the
+[77:22.26] matrix it's like 0 1 2 3 4 5 6 0 1 2 3 4
+[77:27.00] 5 6. 2D Matrix back step 1.1 I've taught
+[77:30.72] you to demand this is how the indexing
+[77:32.76] goes like
+[77:34.02] seven rows seven columns so the outer
+[77:36.96] loop runs for seven times the inner loop
+[77:39.48] runs for seven times this is something
+[77:41.16] very sure because we've got a print
+[77:43.14] seven seven how is seven related to four
+[77:46.20] very very standard maths
+[77:48.36] two into n minus 1 is how it is related
+[77:51.96] so if I go back to the code I know the
+[77:54.42] inner I know the outer loop which is 200
+[77:57.00] minus one
+[77:58.74] I know sorry it'll go from 0 to 2 into n
+[78:03.42] minus 1. and I plus b and I know the
+[78:06.42] inner loop will go from 0 to
+[78:10.26] 2 into n minus 1 and G plus plus this is
+[78:13.74] something we know for sure now let's
+[78:15.54] have some observation what is this value
+[78:18.12] something to observe is if I take this
+[78:20.46] the distance is 1 the distance is 2 the
+[78:23.46] distance is 5 the distance is 4 so you
+[78:25.98] take always the always the minimal
+[78:28.02] distance which is one and you place it
+[78:30.00] here let's take one more example three
+[78:32.10] the distance is three three three three
+[78:35.10] if you take the minimal from this
+[78:38.10] portion when I say this portion
+[78:40.92] this portion is nothing but the row
+[78:43.32] number three the column number three
+[78:46.44] and in order to find it you find the top
+[78:48.30] distance left distance right distance
+[78:49.68] bottom distance and you take the minimal
+[78:51.66] of it and once you take the minimal you
+[78:53.58] actually find this value this 2 is
+[78:55.44] nothing but the distance from the bottom
+[78:56.88] this one is nothing but the distance
+[78:58.38] from the bottom the zero is nothing but
+[79:00.18] the distance from the top you have to
+[79:01.98] find the distance
+[79:03.12] and you know how to find the distance
+[79:04.80] it's very very simple so if it if I talk
+[79:07.92] uh my bad if I talk about this guy
+[79:10.38] what's this distance it's nothing but
+[79:12.66] the row number
+[79:14.10] so can I say the top distance is nothing
+[79:16.26] but the row number I
+[79:17.88] can I say the uh left is nothing but the
+[79:20.88] column number J why because if I'm
+[79:23.58] talking about this this 3 is the
+[79:25.44] distance isn't and if I talk about the
+[79:28.26] right what's right
+[79:30.42] if I'm standing here this is the
+[79:32.58] distance it's like six the last index is
+[79:35.94] definitely
+[79:38.58] 2N minus 1 minus 1 is the last like
+[79:42.12] seven minus 1 6 is the last index
+[79:45.72] and then in order to find the distance
+[79:47.52] whatever is G
+[79:50.34] and the bottom similarly the last index
+[79:53.04] is 2N minus 1 minus 1 minus I why this
+[79:56.88] distance if this is the case we take
+[79:58.92] this 6 and then you might
+[80:00.84] so once you have got this you can
+[80:02.52] actually get all the values once you've
+[80:04.68] got all the values you subtract n and
+[80:07.50] you get your answer
+[80:09.90] so we know one thing for sure uh the top
+[80:12.54] distance is I the left distance is the
+[80:17.16] column G and we know the bottom distance
+[80:20.10] or the right distance is 2 into n minus
+[80:23.82] 1 minus 1 which is minus 2 subsequently
+[80:28.46] minus of the column number okay and we
+[80:33.18] know the bottom distance or the down
+[80:34.80] distance is
+[80:36.18] 2 into n minus 2 that's the last index
+[80:39.00] minus
+[80:40.74] I and once you've got this you know what
+[80:43.44] you have to print the value the value
+[80:45.36] will be subtracted by n because
+[80:46.80] previously you also subtracted and the
+[80:49.20] Min of all of these
+[80:51.06] so Min of top down and mean of left
+[80:56.34] right
+[80:57.18] the minimum function only accepts two
+[80:59.10] variables that's why
+[81:01.08] and you can do a end l is it right okay
+[81:04.32] let's let's go ahead and see if it is
+[81:06.56] running fine
+[81:09.78] yeah it is it does very easy isn't it
+[81:13.80] so
+[81:15.06] we have completed 22 and all the patents
+[81:18.90] are finally completed so guys I hope
+[81:21.72] you've enjoyed the entire lecture it
+[81:24.72] took everything out of me so please
+[81:27.30] consider hitting that like button and to
+[81:30.24] follow our ritual do comment understood
+[81:32.22] so that I get an idea that you
+[81:33.48] understood everything if you have any
+[81:35.22] doubts put it into the comment section I
+[81:36.84] will be replying back or the community
+[81:38.40] will definitely help you if you're new
+[81:40.26] to our Channel what are you waiting for
+[81:41.66] hit that subscribe button follow
+[81:44.52] stripers A to Z DSA course share your
+[81:47.76] learnings using the hashtags drivers A
+[81:49.68] to Z DSA and yeah with this I'll be
+[81:53.34] wrapping up this video let's meet in the
+[81:55.68] next lecture till then bye-bye take care
+[81:59.81] [Music]

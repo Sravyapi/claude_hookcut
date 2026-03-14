@@ -37,6 +37,9 @@ class AnalysisSession(Base):
     payg_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
     free_minutes_used: Mapped[float] = mapped_column(Float, default=0.0)
     source_type: Mapped[str] = mapped_column(String(10), default="ai")  # "ai" or "manual"
+    interview_mode: Mapped[bool] = mapped_column(Boolean, default=False)
+    speaker_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    diarization_data: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)  # list[dict] with speaker, start_ms, end_ms, text
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
 
     hooks: Mapped[list["Hook"]] = relationship(
@@ -72,6 +75,7 @@ class Hook(Base):
     algorithm_dynamics: Mapped[dict] = mapped_column(JSON, default=dict)
     viewer_psychology: Mapped[dict] = mapped_column(JSON, default=dict)
     improvement_suggestion: Mapped[str] = mapped_column(Text, default="")
+    primary_speaker: Mapped[Optional[str]] = mapped_column(String(50), nullable=True)
     is_composite: Mapped[bool] = mapped_column(Boolean, default=False)
     is_selected: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
@@ -99,6 +103,7 @@ class Short(Base):
     source_type: Mapped[str] = mapped_column(String(10), default="ai")  # "ai" or "manual"
     aspect_ratio: Mapped[str] = mapped_column(String(5), default="9:16")
     audio_normalization: Mapped[bool] = mapped_column(Boolean, default=True)
+    interview_layout: Mapped[Optional[str]] = mapped_column(String(20), nullable=True)
     captions_failed: Mapped[bool] = mapped_column(Boolean, default=False)
     start_seconds_override: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     end_seconds_override: Mapped[Optional[float]] = mapped_column(Float, nullable=True)

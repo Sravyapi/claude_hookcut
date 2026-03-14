@@ -1,0 +1,1886 @@
+[0:04.64] welcome to the first part of the
+[0:05.92] ultimate html and css series in this
+[0:08.56] series i'm going to take you on a
+[0:10.00] journey and teach you all the skills you
+[0:11.92] need to build fast and beautiful
+[0:13.84] websites that look great on all kinds of
+[0:15.92] devices i'm assuming you know nothing
+[0:17.92] about html or css i want to learn
+[0:20.16] everything from scratch
+[0:21.68] so in the first part of this series
+[0:23.20] we're going to talk about the
+[0:24.16] fundamentals of web development with
+[0:25.84] html and css in the second part we'll
+[0:28.72] explore the advanced concepts and in the
+[0:31.04] third part we'll put everything together
+[0:33.28] and build a beautiful responsive and
+[0:35.68] blazingly fast website for an imaginary
+[0:38.24] cloud hosting company called mashify if
+[0:41.04] you want to play with this website just
+[0:42.72] head over to mashify.com and see it for
+[0:44.88] yourself this is what you're going to
+[0:46.64] build in this series i'm ash hamadani
+[0:49.04] and i've taught millions of people how
+[0:50.64] to code or how to become professional
+[0:52.80] software engineers through my coding
+[0:54.56] school and youtube channel if you're new
+[0:56.64] here be sure to subscribe as we upload
+[0:58.64] new videos all the time now let's jump
+[1:00.96] in and get started
+[1:03.27] [Music]
+[1:13.60] all right let's talk about the tools you
+[1:14.96] need to take this course for the starter
+[1:17.36] you need a code editor there's so many
+[1:19.68] code editors out there like visual
+[1:21.52] studio code or vs code sublime text adam
+[1:24.88] and so on in this course i'm going to
+[1:26.64] use vs code along with a few extensions
+[1:29.20] for starting a web server and formatting
+[1:31.76] our code you're welcome to use your
+[1:33.52] favorite code editor if you know what
+[1:35.12] you're doing but otherwise head over to
+[1:37.52] code.visualstudio.com
+[1:39.44] and download the latest version of vs
+[1:41.20] code
+[1:42.48] now here inside vs code we're going to
+[1:44.00] install a couple of extensions
+[1:46.16] so let's open the extensions panel
+[1:49.44] and search for
+[1:50.88] preview
+[1:53.12] here's the extension we're going to
+[1:54.08] install prettier code formatter with
+[1:56.80] this extension we can format our code
+[1:59.04] and make it pretty this is a very
+[2:00.88] popular extension as you can see it's
+[2:03.20] been downloaded more than 9 million
+[2:04.96] times
+[2:05.84] so over here you're going to have an
+[2:07.52] install button just click it and you're
+[2:09.60] done
+[2:10.56] next we're going to install
+[2:12.16] another extension called live server
+[2:16.00] with this we can launch our website
+[2:17.84] inside a development web server again
+[2:20.24] this is a very popular extension it's
+[2:22.32] been downloaded almost 8 million times
+[2:25.52] now in addition to these we're going to
+[2:27.28] use a browser to view and test our web
+[2:29.52] pages again you can use your favorite
+[2:31.36] browser but in this course i'm going to
+[2:33.12] use google chrome and i encourage you to
+[2:35.12] use the same browser so you can easily
+[2:37.28] follow the course
+[2:44.96] we're going to start our web development
+[2:46.48] journey here in every section you will
+[2:48.80] learn something new about web
+[2:50.08] development and by the end of this
+[2:51.68] course you will put all of this together
+[2:53.92] to build a beautiful web page
+[2:56.08] in this section we're going to talk
+[2:57.44] about the fundamentals of web
+[2:59.04] development you'll learn the languages
+[3:01.52] and tools used in web development as
+[3:03.60] well as the key concepts and vocabulary
+[3:06.16] such as url http gum and so on we're
+[3:10.00] also going to talk about how websites
+[3:11.76] work so you will understand what exactly
+[3:14.48] happens under the hood when you use your
+[3:16.40] browser to visit a website you will also
+[3:18.80] learn how to inspect network traffic
+[3:21.04] using chrome dev tools which is a very
+[3:23.36] powerful tool used by front-end
+[3:25.04] developers
+[3:26.16] we'll also talk about the basics of html
+[3:28.56] and css and validating web pages which
+[3:31.28] is something a lot of developers miss
+[3:33.52] this is going to be an awesome journey
+[3:35.20] so let's jump in and get started
+[3:38.72] [Music]
+[3:46.80] this course is your first step towards
+[3:48.64] becoming a web developer so let me give
+[3:50.80] you a simple roadmap to know where you
+[3:52.88] are and where you should go next every
+[3:55.12] website has two parts a front end and a
+[3:57.60] backhand the front end is the part that
+[3:59.60] you see in your browser and interact
+[4:01.28] with all the visual aspects the back end
+[4:04.40] is the part that powers the front end
+[4:06.32] it's behind the scenes and is mainly
+[4:08.08] about storing data in databases and
+[4:10.56] providing it to the front end
+[4:12.48] so web development jobs fall into three
+[4:14.88] main categories front-end development
+[4:17.52] back-end development and full-stack
+[4:19.52] development which involves both
+[4:21.12] front-end and back-end development
+[4:23.36] front-end developers use html css and
+[4:26.48] javascript to build front-ends back-end
+[4:28.96] developers have different sets of tools
+[4:31.04] available to them which is outside the
+[4:33.28] scope of this course so let's talk about
+[4:35.52] html css and javascript
+[4:38.40] html is short for hypertext markup
+[4:41.20] language i know it's a mouthful but
+[4:43.28] basically we use html to define the
+[4:45.76] building blocks of our web pages
+[4:48.00] css is short for cascading stylesheet
+[4:50.64] and is used for styling web pages and
+[4:52.72] making them beautiful javascript is used
+[4:55.28] for adding functionality to web pages
+[4:57.60] let me give you an analogy think of a
+[4:59.76] building a building in the real world is
+[5:02.00] like a web page on the internet it has a
+[5:04.48] skeleton or structure
+[5:06.32] it can have pretty walls windows and
+[5:08.56] tiles and it can have certain
+[5:10.32] functionality for example when we press
+[5:12.72] the elevator button it comes to pick us
+[5:15.04] up
+[5:17.44] here's a real example let's say we want
+[5:19.44] to build a website like twitter for each
+[5:21.84] tweet we want to have a layout like this
+[5:24.40] so first we use html to define all the
+[5:26.96] building blocks of this layout what are
+[5:29.04] these building blocks here
+[5:30.64] an image some text indicating the user's
+[5:33.52] twitter handle another block of text
+[5:35.76] containing the message and three icons
+[5:38.24] for commenting retweeting and liking the
+[5:40.96] tweet
+[5:41.84] we use html to add these building blocks
+[5:44.08] to our web page then we use css to give
+[5:46.64] it visual effects for example with css
+[5:49.52] we can make the font bold we can make
+[5:51.92] our image round we can add some padding
+[5:54.40] around here
+[5:55.52] we can change the color of these icons
+[5:57.60] and define their look when we hover over
+[5:59.76] them so css is all about aesthetics or
+[6:02.88] visual effects with css we can also
+[6:05.44] create beautiful animations now most web
+[6:08.00] pages these days are interactive they
+[6:10.16] respond to our actions like clicks and
+[6:12.08] scrolls this is where javascript comes
+[6:14.48] in with javascript we can add
+[6:16.88] functionality or behavior to our web
+[6:19.04] pages for example we can like your tweet
+[6:22.00] so javascript is a programming language
+[6:24.48] while html and css are not meaning we
+[6:27.52] cannot use them to tell computers what
+[6:29.28] to do we use them to define the building
+[6:31.60] blocks of our web pages and style them
+[6:34.00] every webpage you have seen on our
+[6:35.36] internet is built with these three
+[6:37.12] languages so the better you learn and
+[6:39.28] understand these languages and their
+[6:40.80] features the better you will be at
+[6:42.64] front-end development
+[6:45.68] so your front-end development journey
+[6:47.36] starts with html and css i would say if
+[6:50.64] you spend three to five hours every day
+[6:53.12] studying and coding you should be able
+[6:55.12] to have a reasonable understanding of
+[6:56.80] these two languages in about a month or
+[6:59.04] a month and a half once you learn these
+[7:01.12] languages then you need to learn
+[7:02.64] javascript i have a separate series for
+[7:04.96] learning javascript so after finishing
+[7:07.44] this series you may want to enroll in
+[7:08.96] that series i would say learning
+[7:10.88] javascript would probably take another
+[7:13.36] six weeks of your time of course you're
+[7:15.52] not going to be a javascript expert in
+[7:17.36] just six weeks but you will have a
+[7:18.88] reasonable understanding of it and you
+[7:20.80] will learn more as you work on different
+[7:22.64] projects
+[7:23.76] so the first three months is all about
+[7:25.68] the fundamentals
+[7:28.80] now building websites often include a
+[7:31.28] bunch of repetitive tasks this is where
+[7:33.76] front-end frameworks and libraries come
+[7:35.76] in a framework or a library comes with a
+[7:38.64] lot of code that we can reuse in our
+[7:40.40] websites so they help us get the job
+[7:42.88] done faster that's why a lot of
+[7:45.68] companies these days use one of these
+[7:47.60] popular frameworks like react angular or
+[7:50.64] vue
+[7:51.44] now technically react is not a framework
+[7:53.92] it's a library but subtle distinction on
+[7:56.00] site all these tools serve the same
+[7:58.24] purpose they help us build applications
+[8:00.64] faster
+[8:01.68] now you don't need to learn all of these
+[8:03.20] to get started different companies use
+[8:05.52] different tools for different projects
+[8:07.68] so as you move from one project to
+[8:09.44] another you may want to learn about the
+[8:11.12] other tools if you're starting out just
+[8:13.68] focus on react because it's the most
+[8:15.76] popular tool in this space
+[8:17.68] once you learn react you can always
+[8:19.68] learn the other tools if needed for
+[8:21.76] react you would probably need one to two
+[8:24.24] months again i have a comprehensive
+[8:26.48] course on react more than 40 000 people
+[8:28.96] have taken this course and loved it
+[8:31.92] alright what's the next step version
+[8:33.76] control systems we use a version control
+[8:36.32] system to keep track of our project
+[8:38.24] history and work collaboratively with
+[8:40.32] others there are many version control
+[8:42.16] systems out there like git subversion
+[8:45.04] mercurial and so on but git is the most
+[8:47.84] popular tool in this space and is used
+[8:50.08] in more than 70 of software companies
+[8:53.04] that's why you'll see it in almost every
+[8:54.96] job description i would say you would
+[8:57.28] probably need two weeks for learning git
+[8:59.76] and again i have a comprehensive course
+[9:01.60] for you so these are the essential
+[9:03.52] skills that every front-end developer
+[9:05.60] must have you'll see these listed on
+[9:07.60] almost every job description now
+[9:10.40] different jobs require other skills but
+[9:12.80] these skills vary from one company to
+[9:14.80] another so you can learn these
+[9:16.56] additional things in the future or on
+[9:18.56] the job for now just focus on these four
+[9:21.60] skills or four steps remember less is
+[9:24.56] more don't try to learn too many things
+[9:26.72] quickly you won't learn anything you'll
+[9:28.64] just waste your time
+[9:30.08] alright that's your roadmap next we're
+[9:31.84] going to talk about how the web works
+[9:36.96] [Music]
+[9:40.80] have you ever wondered how the web works
+[9:43.04] in this lesson i'm going to tell you
+[9:44.64] exactly what happens the moment you type
+[9:47.28] the address of a website into your
+[9:49.04] browser and hit enter
+[9:51.04] as part of this we're going to talk
+[9:52.56] about a few important concepts and terms
+[9:54.96] that you need to know as a web developer
+[9:57.12] so let's say we launch our browser and
+[9:59.12] head over to a website like
+[10:00.48] codewithmosh.com
+[10:02.00] now this address that we have in the
+[10:03.44] browser address bar is called a url
+[10:05.76] which is short for uniform resource
+[10:08.00] locator basically it's a way to locate a
+[10:10.72] resource on the internet resources can
+[10:12.80] be web pages also called html documents
+[10:16.24] they can be images video files fonts and
+[10:19.04] so on so we type the url of a website
+[10:21.68] and hit enter what happens now well
+[10:24.72] there are two pieces involved here the
+[10:26.80] browser also called the client and the
+[10:29.20] computer or computers that host our
+[10:31.84] target website we refer to these as web
+[10:34.32] servers or servers for short this is
+[10:36.64] what we call the client server model the
+[10:38.96] client requests a service the server
+[10:41.44] provides the service
+[10:43.04] so our browser sends a message to the
+[10:44.88] server and says hey give me the home
+[10:47.20] page of this website this is kind of
+[10:49.20] similar to how you send your friend a
+[10:51.28] text message you can think of your phone
+[10:53.36] as the client sending the message and
+[10:55.60] your friend's phone as the server
+[10:57.52] receiving the message now back to our
+[10:59.60] example this message is formatted based
+[11:02.08] on a protocol called http or hypertext
+[11:05.76] transfer protocol you've probably
+[11:07.92] noticed it before but never know what it
+[11:09.92] is in simple terms http is a language
+[11:12.96] that clients and servers use to talk to
+[11:15.12] each other it's not a programming
+[11:16.88] language it's just a plain textual
+[11:19.04] language for communicating over the
+[11:20.80] internet we also have https which is
+[11:23.52] http with encryption so the messages
+[11:26.32] exchange between the client and the
+[11:27.92] server are encrypted here is a
+[11:29.84] simplified example of an http message
+[11:32.16] with this message the browser tells the
+[11:34.48] server what it's looking for
+[11:36.56] so on the first line it says that it
+[11:38.48] wants to get a page or a file called
+[11:41.40] index.html using http version 1.1
+[11:45.56] index.html often represents the home
+[11:47.92] page of websites on the second line we
+[11:50.08] can see the host that is
+[11:51.44] codewithmosh.com and on the third line
+[11:53.92] we can see the language that the client
+[11:55.68] can accept in this case english
+[11:58.32] now don't worry about memorizing any of
+[12:00.08] this all i want you to understand here
+[12:02.08] is that this message is structured based
+[12:04.72] on the http protocol that clients and
+[12:07.28] servers understand so the server
+[12:09.52] receives this message it figures out
+[12:11.52] what the client is asking and then it
+[12:13.60] will send a message back to the client
+[12:15.92] the first message is called an http
+[12:18.08] request and the second message is called
+[12:20.48] an http response every data exchange
+[12:23.28] using the http protocol involves two
+[12:25.68] messages a request and a response
+[12:28.64] now what is in the response here's a
+[12:30.64] simplified example
+[12:32.16] on the first line we see the version of
+[12:34.08] http protocol used followed by a number
+[12:36.80] which is the status code
+[12:38.56] 200 means successful or okay
+[12:41.36] right below that we can see the date and
+[12:43.60] time of the response
+[12:45.12] next we can see the type of content the
+[12:47.20] server is sending back to the client in
+[12:49.12] this case text
+[12:50.88] html and after that we can see the html
+[12:54.24] code or the html document that
+[12:56.24] represents the home page of
+[12:57.96] codewithmosh.com of course the actual
+[13:00.32] html code is way longer now as the
+[13:03.12] browser reads this html document it
+[13:05.68] constructs what we call a dom or a
+[13:08.08] document object model don't let this
+[13:10.56] fancy name scare you this is a model
+[13:13.04] that represents the object or elements
+[13:15.92] in our html document what are these
+[13:18.40] elements all the building blocks of our
+[13:20.32] page like paragraphs of text images
+[13:23.28] links and other stuff you will see this
+[13:25.44] in action in the next lesson
+[13:27.60] now as the browser is reading this html
+[13:30.08] document that is returned from the
+[13:31.60] server it discovers references to other
+[13:34.32] resources in this document like images
+[13:37.12] fonts and other stuff each of these
+[13:39.36] resources has an address or a url so for
+[13:42.56] each resource the browser sends a
+[13:44.80] separate http request to the server to
+[13:47.28] fetch that resource many of these http
+[13:49.76] requests are set in parallel so we can
+[13:52.24] see the page as quickly as possible once
+[13:54.88] the browser has all the necessary
+[13:56.72] resources it will render the html
+[13:59.04] document rendering an html document
+[14:01.44] means displaying it it's a fancy
+[14:03.36] technical term we use often
+[14:05.28] so in a nutshell our browser sends an
+[14:07.76] http request to the server and receives
+[14:10.40] an http response this http response
+[14:13.44] contains an html document the browser
+[14:16.00] reads that html document to construct a
+[14:18.72] document object model and render the
+[14:20.88] page
+[14:21.76] in the next lesson i'm going to show you
+[14:23.28] all of these steps in action
+[14:27.58] [Music]
+[14:31.60] all right let's see http requests and
+[14:33.28] responses in action
+[14:35.04] so open up chrome and head over to
+[14:36.88] google.com now we need to access chrome
+[14:39.52] dev tools this is a very powerful tool
+[14:41.92] used by frontend developers so on the
+[14:44.48] top we go to view
+[14:46.56] developer
+[14:48.00] developer tools now look at the shortcut
+[14:50.48] on mac it's alt or option command and i
+[14:54.32] on windows is obviously different but
+[14:56.56] remember the shortcut because it's much
+[14:58.40] faster to access the devtools via the
+[15:00.48] keyboard
+[15:01.52] so
+[15:02.80] here's the dev tools the first time you
+[15:04.80] see it it might appear a bit
+[15:06.00] intimidating but trust me it's much
+[15:07.68] easier than you think throughout the
+[15:09.44] course you're going to learn more about
+[15:10.88] the dev tools so here we have a few
+[15:13.36] different tabs elements console sources
+[15:16.24] network and so on in this demo we're
+[15:18.88] going to go to the network tab so we can
+[15:20.88] inspect the network traffic to and from
+[15:23.68] google.com
+[15:25.12] now by default devtools is docked to the
+[15:27.84] bottom of the screen we can dock it to
+[15:29.92] the left to the right or undock it as a
+[15:32.64] separate window so over here
+[15:36.00] we can dock it to the left side
+[15:38.32] a lot of frontend developers like this
+[15:40.00] layout so they put devtools on the left
+[15:42.40] side and they have their website on the
+[15:44.48] right side now in this demo i'm going to
+[15:46.88] undock it as a separate window so we
+[15:49.04] have more space to work with
+[15:51.04] so
+[15:51.92] let's undock it
+[15:53.60] good
+[15:54.72] now we need to refresh our website as
+[15:56.80] you can see over here on match we can
+[15:58.64] press command on r on windows is
+[16:01.04] probably control and r
+[16:02.96] alternatively we can go back to this
+[16:05.04] window
+[16:06.00] and press the refresh button now
+[16:08.88] back to the dev tools look at all these
+[16:10.88] items over here these are the http
+[16:13.20] requests that are sent from our browser
+[16:15.28] to google.com
+[16:16.96] as you can see
+[16:18.24] there are totally
+[16:20.00] 45 requests and here's the amount of
+[16:22.88] data transferred over the network so in
+[16:25.68] this case just over 94 kilobytes now
+[16:28.64] look at the first item in this list this
+[16:30.88] is the first http request that chrome
+[16:33.44] sent to google.com
+[16:35.28] as you can see
+[16:36.72] with this request the browser wanted to
+[16:39.04] get a document
+[16:40.88] and the status of this request is 200
+[16:43.84] which means okay over here you can see
+[16:46.32] the amount of data transferred over the
+[16:48.24] network for this request and the time it
+[16:51.12] took to get the response now if we click
+[16:53.68] on this request
+[16:55.04] we can see more details about it so here
+[16:57.36] on the headers tab we can see all the
+[16:59.12] headers of our request and response
+[17:01.68] so here are some general headers like
+[17:03.84] request url request method which is get
+[17:07.12] status code that is 200 we talked about
+[17:09.52] it remote address this is the new make
+[17:12.40] representation of google.com
+[17:15.12] now down below we have response editors
+[17:17.76] there are so many headers here you don't
+[17:19.04] have to worry about them but as an
+[17:20.96] example look at content type we talked
+[17:23.44] about this in the previous lesson so the
+[17:25.20] type of this response is text
+[17:27.76] html below that we have the date and
+[17:30.96] time of the response
+[17:32.56] now if we click on the preview tab
+[17:34.72] we can see a preview of the html
+[17:36.72] document that is returned from the
+[17:38.16] server so this is the home page of
+[17:40.80] google
+[17:41.76] now in this html document we have
+[17:43.60] references to other resources like
+[17:46.00] images fonts and so on so all these
+[17:48.88] subsequent requests are sent to download
+[17:51.84] those resources so right below the first
+[17:54.24] request we have a request for
+[17:56.40] downloading a png or an image file
+[17:59.28] here's another request for getting
+[18:01.12] another image we have two requests for
+[18:03.44] getting two different fonts and so on
+[18:05.36] now we can easily filter this list so
+[18:08.00] let's click on the filter icon here
+[18:10.40] by default we see all requests but we
+[18:12.88] can filter by request type for example
+[18:15.44] we can select doc to see requests for
+[18:17.76] downloading html documents or font
+[18:21.12] to see the requests that were sent to
+[18:22.88] download fonts and so on next i'm going
+[18:25.04] to show you how to create your first
+[18:26.80] html document
+[18:30.71] [Music]
+[18:35.04] alright first things first here on your
+[18:36.88] desktop or anywhere on your computer
+[18:39.36] right click and create a new folder i'm
+[18:42.40] going to call this html but we could
+[18:43.92] call it anything
+[18:45.52] now let's go back to vs code
+[18:47.84] and open the explorer panel
+[18:50.32] then we go to open folder
+[18:52.80] and open the folder that we just created
+[18:57.20] good now this folder is currently empty
+[18:59.84] so let's add a new file here called
+[19:02.56] index.html
+[19:04.64] as i told you before index.html often
+[19:07.44] represents the home page of websites so
+[19:10.56] let's go with that
+[19:12.08] now we can close the explorer panel by
+[19:14.00] pressing command and b on mac or control
+[19:16.88] and b on windows
+[19:18.48] good
+[19:19.52] now the first thing we need to do here
+[19:21.60] is to tell the browser that this is an
+[19:23.68] html5 document
+[19:25.84] so we type a left angle bracket
+[19:28.72] now look at this suggestion list the
+[19:30.56] first item here is doctype or document
+[19:33.52] type let's press enter or tab
+[19:36.56] vs code generated this piece of code for
+[19:38.56] us
+[19:39.28] so with this line of code we can tell
+[19:40.96] browsers that this is an html5 document
+[19:44.24] this line of code here is called doctype
+[19:46.56] declaration in the previous versions of
+[19:48.88] html our doctype declaration was so long
+[19:52.00] it was so messy but html5 solved this
+[19:54.64] problem so all we have to type is
+[19:56.96] doctype html and by the way html is not
+[20:00.80] a case sensitive language which means
+[20:02.72] it's not sensitive to uppercase and
+[20:04.64] lowercase letters but conventionally
+[20:06.88] speaking we type everything in lowercase
+[20:09.36] except doctype this is just a convention
+[20:12.40] we could type this in lowercase and
+[20:14.24] that's perfectly fine
+[20:15.76] so let's revert it back
+[20:17.84] now right after this we need to use our
+[20:20.16] html elements to define the structure of
+[20:22.88] this web page
+[20:24.16] the first element we're going to use is
+[20:25.92] the html element so we type html and
+[20:29.36] then press tab or enter
+[20:31.60] once again vscode generated this piece
+[20:33.76] of code for us
+[20:35.12] so what we have here on the left side is
+[20:36.96] called the opening tag
+[20:38.80] and
+[20:39.68] what we have on the right side is the
+[20:41.04] closing tag so most html elements have
+[20:43.68] an opening and a closing tag but there
+[20:45.92] are exceptions as i'm going to show you
+[20:47.36] later in this video
+[20:48.88] now inside this element we're going to
+[20:50.72] add additional elements now because i
+[20:52.96] don't want to type everything in one
+[20:54.32] line i'm going to press enter
+[20:56.48] that's better now here we're going to
+[20:58.16] add two elements head and body so once
+[21:01.04] again we type head press tab good
+[21:04.24] and then body
+[21:06.32] we use the head element to give browser
+[21:08.48] information about this page for example
+[21:10.88] here we can use the title element
+[21:14.16] to specify the title of this page that
+[21:16.96] appears in the browser over here so
+[21:19.44] let's type my first web page
+[21:22.48] now let's save the changes by pressing
+[21:24.24] command and s on mac or ctrl and s on
+[21:27.28] windows
+[21:28.56] good now before going any further let's
+[21:31.20] right click somewhere
+[21:32.96] and go to open with live server so we're
+[21:36.08] going to open this page using the
+[21:37.76] development server that we just
+[21:39.28] installed
+[21:40.56] okay
+[21:42.72] all right take a look so our page is
+[21:44.96] currently empty because we haven't added
+[21:46.80] any elements inside this page and over
+[21:49.76] here we can see the title that we just
+[21:51.92] typed my first web page
+[21:54.16] now look at the url or address of this
+[21:56.56] page we have 127.0.0.1
+[22:01.12] this number or this ip address
+[22:03.12] represents the local computer it's
+[22:05.44] globally known so everybody knows
+[22:07.12] 127.0.0.1
+[22:09.76] references the current computer
+[22:11.76] after that we have a colon
+[22:13.60] and then we have
+[22:14.96] the port number on which our web server
+[22:17.68] is listening so our web server is
+[22:19.92] waiting for http requests on this port
+[22:22.96] okay
+[22:23.76] then we have a forward slash followed by
+[22:25.84] the name of our file
+[22:27.24] index.html
+[22:28.96] now back to vs code
+[22:31.28] inside the body element we're going to
+[22:33.12] add elements that would appear on our
+[22:35.12] page
+[22:36.00] so let's say we want to display a tweet
+[22:38.08] what elements do we need here an image
+[22:40.64] and some text elements so we type img
+[22:44.08] short for image and then press tab
+[22:47.04] here's our image element now this image
+[22:49.20] element is different from the other
+[22:51.12] elements we have created so far can you
+[22:53.44] tell the differences
+[22:54.96] there are two differences here the first
+[22:56.88] difference is that here we don't have a
+[22:58.80] closing tag we only have an opening tag
+[23:01.76] because the image element cannot have
+[23:03.84] any child elements that's the reason now
+[23:06.56] in the previous versions of html we used
+[23:08.80] to add a forward slash here and this
+[23:11.44] represents a self-closing tag but we
+[23:14.40] don't have to do this in html5 so i'm
+[23:16.48] going to keep the code simpler
+[23:18.96] now here we have
+[23:20.80] two attributes source and alt with these
+[23:24.88] attributes we can supply additional
+[23:26.80] information about an element
+[23:28.80] so we use the source element to specify
+[23:31.12] the path to our image
+[23:32.96] so let's open up the explorer panel one
+[23:34.80] more time by pressing command and b on
+[23:36.88] mac or control and b on windows
+[23:40.24] here i'm going to create a new folder
+[23:43.44] called images
+[23:45.68] now for this demo i'm going to use my
+[23:47.20] own image which you can also download
+[23:48.96] right below this video but you can use
+[23:50.88] any image that you want
+[23:52.80] so here's my image i'm going to drop it
+[23:56.16] onto the images folder
+[23:57.92] it's right here okay
+[23:59.68] now let's close this window
+[24:01.60] good
+[24:02.56] so where is this image
+[24:04.40] relative to our index.html file
+[24:07.76] it's inside the images folder right
+[24:10.00] so here in double quotes we type images
+[24:13.20] slash
+[24:14.32] mosh.jpg
+[24:16.08] now vs code is suggesting this name so
+[24:18.08] we can press tab to complete the code
+[24:20.72] beautiful
+[24:21.84] now alt is short for alternative text
+[24:24.80] and we use this attribute to give the
+[24:27.12] browser some text to display in case the
+[24:29.92] image cannot be displayed we'll talk
+[24:31.68] about this in more detail in the future
+[24:33.84] so for now i'm going to delete this
+[24:35.36] attribute
+[24:37.36] good
+[24:38.24] now after the image we're going to add a
+[24:40.32] text element so we type p that is short
+[24:43.20] for paragraph tab
+[24:45.28] and here we can type my twitter handle
+[24:47.60] so at marsh hammondi
+[24:50.56] after that we're going to add another
+[24:52.08] text element
+[24:54.00] and here we can type the body of our
+[24:56.00] tweet so
+[24:57.68] i love to
+[24:58.80] teach you html
+[25:00.56] perfect
+[25:01.60] save the changes
+[25:03.04] now back in the browser
+[25:04.96] our page refreshed automatically this is
+[25:07.12] one of the beauties of live server so we
+[25:09.52] don't have to manually refresh the page
+[25:11.52] every time we make changes
+[25:13.68] now look at what we have here so we have
+[25:16.00] my image and right below that we have
+[25:18.48] two text elements take a look
+[25:20.56] unfortunately they're not very visible
+[25:22.72] obviously this doesn't look like a tweet
+[25:24.88] because we haven't applied css yet as i
+[25:27.52] told you before we use html to define
+[25:30.24] the structure or the building block of
+[25:32.88] our web pages in the next lesson i'm
+[25:35.04] going to show you how to apply css so
+[25:37.28] our page looks kind of like a real tweet
+[25:41.69] [Music]
+[25:45.68] all right now let's see how we can use
+[25:46.96] css to improve the look and feel of this
+[25:49.28] page
+[25:50.16] look at our head element currently we
+[25:52.08] have a single element inside the head
+[25:54.32] element that is our title element right
+[25:57.12] now after the title we're going to add
+[25:59.60] another element called style
+[26:02.32] this is where we're going to write our
+[26:03.68] css code
+[26:05.04] so in between style tags we're going to
+[26:07.20] write a bunch of css rules first we're
+[26:09.84] going to work
+[26:10.88] on this image our image is currently too
+[26:13.28] big so let's make it a bit smaller
+[26:15.92] back to vs code
+[26:17.76] over here
+[26:18.88] we're going to type img to reference our
+[26:21.44] image element then we type a pair of
+[26:24.08] curly braces
+[26:25.68] and inside the braces we write one or
+[26:28.56] more css declarations
+[26:30.64] each declaration contains a property and
+[26:33.04] a value so here we can set the width
+[26:35.20] property to let's say 100 pixels
+[26:38.56] so we type the property colon and then
+[26:41.12] the value and then we terminate this
+[26:43.20] line using a semicolon so we can write
+[26:46.08] multiple css declarations
+[26:48.40] now let's save the changes
+[26:50.16] back in the browser our image looks
+[26:52.00] smaller that's a lot better
+[26:54.00] but look at the edges the edges are so
+[26:56.40] sharp i would like to make them a bit
+[26:58.16] round so they appear softer now back to
+[27:00.80] our rule
+[27:01.76] here we're going to set
+[27:03.12] the border dash radius property to let's
+[27:06.56] say 10 pixels
+[27:08.00] now don't worry about memorizing any of
+[27:09.60] these properties we're going to go over
+[27:11.36] them several times throughout the course
+[27:13.36] in this lesson i just want you to get a
+[27:15.20] sense of what it's like to use css okay
+[27:18.16] so save the changes
+[27:20.48] now look the edges are round and look
+[27:22.56] softer now let me show you a trick
+[27:26.00] if we set border radius to a value that
+[27:28.64] is half of the width we'll get a round
+[27:31.20] image so
+[27:32.72] i'm going to set this to 50 pixels
+[27:35.04] and here's the result that's a lot
+[27:37.20] better
+[27:38.08] now our elements are stacked vertically
+[27:40.32] i want the image to be pushed to the
+[27:42.00] left side so
+[27:44.00] let's set the float property to left
+[27:47.28] this will push the image element to the
+[27:49.20] left side of our text element take a
+[27:51.28] look
+[27:52.24] so
+[27:53.20] that's a lot better but our image is so
+[27:55.36] close to the text i want to add some
+[27:57.36] space after the image so
+[28:01.12] here we use another property called
+[28:02.96] margin dash right
+[28:05.36] we can set it to 10 pixels
+[28:07.44] save and
+[28:09.04] that's a lot better
+[28:10.72] now let's make the username bold so
+[28:13.12] we're going to repeat one more time this
+[28:14.88] time we're going to apply a rule
+[28:17.44] to our paragraph element
+[28:19.28] so here we're going to set the font dash
+[28:22.00] weight property to
+[28:23.76] bolt
+[28:25.36] take a look
+[28:27.04] see what happened both our text elements
+[28:29.28] are bold but what if you want to apply
+[28:31.28] this style only to the username
+[28:34.16] well we have to separate these two
+[28:36.16] paragraph elements so i'm going to give
+[28:38.40] the first paragraph element an attribute
+[28:40.72] called class
+[28:42.16] so class equals double quotes
+[28:45.60] class is short for classification and we
+[28:47.84] can use this attribute to put this
+[28:49.84] element inside a different class or a
+[28:52.16] different category just like the
+[28:54.00] products in a supermarket in a
+[28:55.84] supermarket we have products in
+[28:57.84] different categories right
+[28:59.92] so i'm going to put this paragraph
+[29:01.52] element inside a class or inside a
+[29:03.52] category called username
+[29:06.16] and then
+[29:07.52] i'm going to change this rule
+[29:09.60] so
+[29:10.40] this rule is currently applied to all
+[29:12.16] paragraph elements but i want it to be
+[29:14.32] applied only to paragraph elements with
+[29:16.64] the username class so right after p we
+[29:19.68] type dot username
+[29:22.32] now we can also remove p
+[29:24.96] and this rule will apply to all elements
+[29:27.76] that have the username class whether
+[29:29.92] there are paragraph elements or other
+[29:31.84] types of elements okay
+[29:33.76] now save the changes and take a look so
+[29:37.44] that's a lot better
+[29:40.00] this is css in action as you can see css
+[29:43.28] has a different syntax or a different
+[29:45.36] grammar than html throughout the rest of
+[29:47.92] the course you're going to learn both
+[29:49.44] these languages in detail next i'm going
+[29:51.76] to show you how to format your code
+[29:53.44] using prettier
+[29:56.80] hey guys mosh here i just wanted to let
+[29:58.72] you know that this video you've been
+[30:00.08] watching is the first hour of my
+[30:02.16] ultimate html and css series so after
+[30:05.04] you watch this video if you want to
+[30:06.72] learn more from me you can enroll in the
+[30:08.48] full course which is about 13 hours long
+[30:10.80] and covers everything you need to know
+[30:12.56] to build professional quality websites
+[30:14.64] with html and css it also includes
+[30:17.60] summary notes exercises a real project a
+[30:21.04] certificate of accomplish and you can
+[30:22.40] add your resume and a 30-day money-back
+[30:24.88] guarantee to get a refund if you are not
+[30:26.72] satisfied so you have nothing to lose
+[30:29.04] and a lot to learn so if you're
+[30:30.48] interested i put the link in the
+[30:31.92] description box
+[30:35.94] [Music]
+[30:40.56] one thing you need to know about
+[30:41.60] browsers is that they ignore white
+[30:43.36] spaces in html and css code for example
+[30:47.28] i can put all these elements on a single
+[30:49.44] line
+[30:50.40] and everything still works let me show
+[30:52.16] you so save the changes back in the
+[30:54.40] browser we have the same result as
+[30:56.40] before because browsers don't care how
+[30:59.12] we format our code but formatting is
+[31:01.60] very important when it comes to reading
+[31:03.60] and maintaining code we want our code to
+[31:05.60] be beautiful and perfectly formatted
+[31:07.76] just like an article this is where we
+[31:09.76] use the prettier plugin with prettier we
+[31:12.56] can format our code in a consistent
+[31:14.64] fashion this is super important when
+[31:16.56] you're part of a team because different
+[31:18.24] people have different ways of formatting
+[31:19.84] their code but if everyone on the team
+[31:21.84] uses the prettier plugin the code will
+[31:24.40] be consistently formatted so let me show
+[31:27.36] you how to use preview
+[31:28.88] on the top we go to the view menu
+[31:31.36] look at the shortcut for the command
+[31:33.36] palette on mac it's shift command and p
+[31:37.12] on windows it's probably shift control
+[31:39.28] mp
+[31:40.40] so let's bring up the command panel and
+[31:42.40] here we search for
+[31:43.84] format document now we press enter
+[31:47.84] we get this message saying there are
+[31:49.36] multiple formatters for html files
+[31:51.92] select the default formatter to continue
+[31:54.16] the reason we're getting this message is
+[31:55.92] that vs code by default comes with a
+[31:58.64] formatter for formatting html files but
+[32:01.60] we have installed prettier which is a
+[32:03.28] separate formatter
+[32:04.72] so let's go to configure
+[32:06.72] and tell vs go to use prettier to format
+[32:10.08] html and css files
+[32:12.56] okay
+[32:13.52] now prettier formatting my code so none
+[32:16.24] of those elements are on the same line
+[32:18.56] this is a lot better but let me show you
+[32:20.48] a trick we don't want to format our code
+[32:22.56] every time we make a change
+[32:24.24] so we can configure vs code to
+[32:26.48] automatically format the code the moment
+[32:28.80] we save the changes so on the top let's
+[32:31.60] go to the code menu then preferences and
+[32:35.04] settings
+[32:36.48] like here search for format and save
+[32:40.80] here's the setting let's enable this
+[32:42.64] setting
+[32:43.60] now
+[32:44.56] every time we save the changes vs code
+[32:46.80] automatically formats our code using
+[32:48.48] prettier
+[32:51.61] [Music]
+[32:56.16] we talked about the dom or document
+[32:58.48] object model i told you that when the
+[33:00.56] browser reads the html document that is
+[33:02.88] returned from the server it constructs a
+[33:05.36] document object model now let me show
+[33:07.44] you this document object model in action
+[33:10.08] so once again we're going to use chrome
+[33:11.76] dev tools the shortcut on mac is shift
+[33:14.80] command and i on windows is probably
+[33:17.44] shift control and i i'm not really sure
+[33:20.24] so let's open up dev tools
+[33:22.72] now in this lesson we're going to look
+[33:23.92] at the elements tab
+[33:26.40] now what we have here on the left side
+[33:27.92] is our document object model so we see
+[33:30.48] the same elements that we created
+[33:32.08] earlier in the course we have the html
+[33:34.00] element head body and so on but we have
+[33:36.88] some additional elements that are
+[33:38.64] injected by live server for example we
+[33:41.20] have the script element and two divs
+[33:43.76] don't worry about these these are purely
+[33:45.52] used by live server so it automatically
+[33:47.60] reloads our page now we can hover over
+[33:50.48] any of these elements and you can see
+[33:52.08] that element highlighted on the screen
+[33:54.16] now we can click an element
+[33:56.32] and on the right side we can see the
+[33:58.64] styles applied to this element so look
+[34:01.36] at the styles we defined for the image
+[34:03.04] element
+[34:04.08] with border radius and so on we can
+[34:06.48] enable or disable these styles so we can
+[34:08.88] disable the width property and now our
+[34:11.04] image is big
+[34:12.40] we can bring it back we can also change
+[34:14.56] its value so we can set it to let's say
+[34:17.36] 50 pixels
+[34:18.88] now our image is smaller
+[34:20.40] we can use the up and down arrows
+[34:23.04] to change this value this is pretty
+[34:24.88] handy so a lot of front-end developers
+[34:27.44] use devtools to play with these styles
+[34:29.76] and get the look they want once they
+[34:31.44] figure out the exact styles and their
+[34:33.36] values then they apply them in the code
+[34:36.00] now one more thing
+[34:37.28] over here we can see where these styles
+[34:39.76] have been applied so
+[34:41.68] in index.html on line six we can click
+[34:44.96] on this link and this takes us to the
+[34:47.20] exact line of code where
+[34:49.04] we wrote that style now we are currently
+[34:51.20] on the sources tab so we can go back to
+[34:53.60] elements and inspect other elements
+[34:56.96] so this is the basics of inspecting
+[34:58.88] elements using devtools we're going to
+[35:00.56] talk about this in more detail in the
+[35:02.00] future
+[35:05.21] [Music]
+[35:09.68] the last thing we're going to cover in
+[35:10.88] this section is validation
+[35:13.12] so as we write code we may run into
+[35:15.20] problems if you have a typo in our code
+[35:17.52] or don't use the right syntax or grammar
+[35:19.68] our web pages may not look as expected
+[35:22.32] in these situations we can use a
+[35:24.16] validator to identify the potential
+[35:26.48] errors in our code now currently we
+[35:28.40] don't have any problems on this web page
+[35:30.16] it looks perfectly fine to me but let's
+[35:32.00] run it by the standard html validator so
+[35:35.28] we go to validator.w3.org
+[35:39.44] this is a standard markup validation
+[35:41.68] service we have three methods for
+[35:43.76] validating our html markup we can
+[35:46.32] validate by an address if our website is
+[35:48.64] live on our internet but this doesn't
+[35:50.64] work for us because our website is
+[35:52.64] currently hosted locally in our
+[35:54.80] development server so this ip address
+[35:57.84] that we have over here
+[36:00.52] 127.0.0.1 this is a local ip address so
+[36:03.92] no one else can access our website
+[36:06.32] so here we have two other methods we can
+[36:09.04] validate by file upload or by direct
+[36:11.68] input
+[36:12.64] in this case i'm going to go with file
+[36:14.08] upload
+[36:15.52] so let's upload our
+[36:17.24] index.html file and check
+[36:20.88] so look we have one warning and two
+[36:23.44] errors the warning is saying that we
+[36:25.68] haven't added the lang or language
+[36:27.60] attribute to the html start tag this is
+[36:30.56] a common best practice because with this
+[36:32.64] we can tell search engines what is the
+[36:34.80] language of this webpage so they can do
+[36:36.96] a better job at displaying the results
+[36:39.76] this is very easy to fix so here's our
+[36:42.08] html tag we're going to add the lang
+[36:44.64] attribute and set it to en which is
+[36:47.36] short for english
+[36:49.44] now what is next
+[36:51.28] we have an error saying the character
+[36:53.28] encoding was not declared don't worry
+[36:55.52] about this we'll talk about this in the
+[36:57.04] next section so let's look at the second
+[36:59.20] error
+[37:00.00] it's saying that an image element must
+[37:02.16] have an alt attribute so earlier we had
+[37:05.12] this auth attribute i told you that we
+[37:07.12] use the alt attribute to provide a
+[37:09.36] description for our image
+[37:11.28] so if the image cannot be displayed the
+[37:13.44] alternative text will be displayed again
+[37:15.76] we're going to talk about the alt
+[37:16.96] attribute in more detail in the future
+[37:19.12] so back to our code let's fix this error
+[37:21.44] real quick here's our image tag
+[37:23.92] let's add the auto attribute
+[37:26.32] and for the description i'm going to say
+[37:28.64] an image of mosh hammer daddy
+[37:32.08] now save the changes
+[37:33.84] let's re-upload the file and validate it
+[37:37.20] one more time
+[37:39.44] okay this time we have only a single
+[37:41.68] error and that has to do with character
+[37:43.52] encoding which we're going to talk about
+[37:45.12] in the next section
+[37:46.48] so this is all about html validation
+[37:49.44] now for css we have a different
+[37:51.28] validator
+[37:52.48] so we go to jigsaw.w3.org
+[37:57.28] css
+[37:58.40] validator now you don't have to memorize
+[38:00.32] this address simply go to google and
+[38:02.64] search for css validator
+[38:05.52] here's the first link
+[38:07.12] so
+[38:08.16] we have the same interface we can
+[38:10.00] validate our css code using an address
+[38:12.64] or by file upload or direct input
+[38:15.76] now in this case we have embedded all of
+[38:17.76] our css code inside our html markup but
+[38:21.04] as our web pages get more complex we
+[38:23.20] want to separate our css code into
+[38:25.36] separate files so our code is better
+[38:27.52] organized we'll talk about this in more
+[38:29.52] detail in the future so for now i'm
+[38:32.00] going to copy
+[38:33.44] all of our css code
+[38:35.60] and then go to the third tab
+[38:38.16] paste it over here
+[38:39.60] and validate it
+[38:41.52] so we don't have any errors everything
+[38:43.60] is perfect
+[38:44.88] so this is all about validation
+[38:46.48] validation is very important if your web
+[38:48.48] pages aren't displayed as expected
+[38:50.72] always start with a quick validation
+[38:52.72] because this can often point you in the
+[38:54.40] right direction
+[38:55.76] right that brings us to the end of this
+[38:57.12] section in the next section we're going
+[38:59.12] to explore html in more detail
+[39:06.07] [Music]
+[39:09.44] we're going to continue our web
+[39:10.64] development journey and explore html in
+[39:13.12] more detail so in this section we're
+[39:15.28] going to cover the essential html
+[39:17.28] elements you need to know to build web
+[39:19.04] pages
+[39:20.08] you will learn all the elements used for
+[39:21.76] displaying text links images lists
+[39:25.36] tables as well as container and
+[39:27.60] structural or semantic elements even if
+[39:30.48] you know the basics of html i would
+[39:32.40] still encourage you to watch this
+[39:33.92] section thoroughly because a lot of
+[39:35.60] people don't use these elements the
+[39:37.28] right way so let's jump in and get
+[39:39.68] started
+[39:43.67] [Music]
+[39:50.32] earlier in the course i told you that we
+[39:52.00] use the head section to give browsers
+[39:54.08] and search engines information about the
+[39:56.16] web page so let's explore it in a bit
+[39:58.16] more detail i'm going to start with a
+[40:00.08] blank document now let me show you a
+[40:02.00] cool trick
+[40:03.12] if we type an exclamation mark and then
+[40:05.68] press tab
+[40:06.80] we get a basic html boilerplate which
+[40:09.60] means a basic html template
+[40:12.40] so on the top we have our doctype
+[40:14.40] declaration
+[40:15.68] below that we have our html element with
+[40:17.76] the lang attribute which is a common
+[40:19.60] best practice
+[40:20.96] next we have our head section with a
+[40:22.80] bunch of elements we're going to talk
+[40:24.08] about in a second
+[40:25.60] followed by the body section so this is
+[40:27.68] a very basic html boiler plate
+[40:30.72] now what do we have in the head section
+[40:32.48] well
+[40:33.28] we have a couple of metal elements for
+[40:35.04] giving information about this web page
+[40:37.52] the first meta element is for defining
+[40:39.68] the character set what is a character
+[40:41.92] set well
+[40:43.12] computers don't understand characters
+[40:44.96] like abc and so on they only understand
+[40:48.00] numbers which are represented in the
+[40:50.00] binary format zeros and ones so using a
+[40:53.20] character set we can map a character to
+[40:56.16] a numeric value
+[40:57.76] the first character set that was
+[40:59.04] designed was the ascii character set
+[41:01.20] which is short for american standard
+[41:03.04] code for information interchange ascii
+[41:05.76] can only represent the characters in the
+[41:08.00] english language so it's very limited
+[41:10.48] so over here different character sets
+[41:12.48] have been created to represent more
+[41:14.88] characters in international languages
+[41:17.52] the character said that we use most of
+[41:19.12] the time these days is utf-8 which can
+[41:21.84] represent almost all characters in the
+[41:23.92] world
+[41:24.88] so back to our code with this meta
+[41:26.96] element we're defining the character set
+[41:29.44] used in this html document okay
+[41:32.72] now below that we have
+[41:34.64] a meta element for configuring the
+[41:36.96] viewport
+[41:38.16] the viewport is the visible area of a
+[41:40.56] web page so it is this area over here
+[41:44.08] obviously on a mobile device or on a
+[41:46.16] tablet our viewport is smaller but here
+[41:48.96] on desktop we can change the size of the
+[41:51.12] viewport by resizing the browser
+[41:53.84] so now our viewport is smaller okay
+[41:56.72] now back to our code
+[41:58.64] with this element we're defining the
+[42:00.64] initial width and
+[42:02.96] zoom factor
+[42:04.48] for the viewport we'll talk about this
+[42:06.48] in more detail in the future for now all
+[42:08.96] i want you to know is that we need this
+[42:10.80] element so our web pages look good on
+[42:13.20] all devices mobiles tablets and desktop
+[42:16.08] computers so as a best practice every
+[42:18.72] web page should have at least these two
+[42:20.96] meta elements but we have additional
+[42:23.04] meta elements let me show you so if you
+[42:25.68] type meta
+[42:27.44] in this list you can see all possible
+[42:29.28] meta elements
+[42:30.40] for example we have this element for
+[42:32.32] defining keywords on a web page so let's
+[42:34.96] select this
+[42:36.08] here we can type multiple keywords like
+[42:38.32] html comma css and so on
+[42:41.44] in the past these keywords were heavily
+[42:43.36] used for search engine optimization but
+[42:46.08] these days most search engines don't put
+[42:48.16] too much weight on these keywords but we
+[42:50.24] can still use them to define the
+[42:51.92] keywords that represent this page
+[42:54.56] we have another meta element for
+[42:56.48] defining a description for this page so
+[42:58.96] if you type meta colon desk and then
+[43:01.44] press tab or enter
+[43:03.20] here we can type a description for this
+[43:05.04] page
+[43:05.84] what we type here will appear on google
+[43:08.40] or other search engines when someone
+[43:10.56] searches for a website for example if we
+[43:13.20] search for apple here's what we get now
+[43:15.68] look at this text
+[43:17.44] what you see here
+[43:19.52] comes from this element over here so
+[43:21.52] this is the purpose of metal elements
+[43:23.60] with this metal element we can give
+[43:25.44] information about the web page
+[43:27.60] alright next we're going to talk about
+[43:28.80] the elements you need to know for
+[43:30.32] working with text
+[43:33.88] [Music]
+[43:38.16] all right now let's talk about the most
+[43:39.68] common elements for working with text
+[43:42.08] so you learn about the p or paragraph
+[43:44.32] element which we use for displaying some
+[43:46.32] text
+[43:47.12] so here i'm going to say i love to teach
+[43:49.44] you html
+[43:51.28] now sometimes we want to emphasize a
+[43:53.12] part of our text let's say the html word
+[43:56.00] here to do that we can wrap it inside an
+[43:59.36] m or emphasis element so here i type m
+[44:02.80] press tab here's the emphasis element
+[44:05.36] let's hover over it and see what the
+[44:07.20] tooltip says
+[44:08.64] it says the m element represents stress
+[44:11.44] emphasis of its content so whenever we
+[44:13.92] want to emphasize some content we can
+[44:15.92] wrap it inside the m element so in this
+[44:18.72] case i'm going to move html inside these
+[44:21.92] tags
+[44:22.96] now let's save the changes
+[44:25.60] here's what we get so by default
+[44:27.92] browsers display emphasized content in
+[44:30.72] italic but don't assume that whenever
+[44:32.88] you want to display italic content you
+[44:34.72] should use the m element because the
+[44:36.64] purpose of the m element is to emphasize
+[44:39.12] content in our html document and this
+[44:41.76] helps search engines extract important
+[44:44.16] content in our documents anything to do
+[44:46.32] with styling should be done in css for
+[44:48.72] example here we can change the default
+[44:50.80] style of emphasize element and remove
+[44:53.20] the italic let me show you so in the
+[44:55.68] head section
+[44:57.04] we add the style element
+[44:59.28] and here we define a rule for emphasized
+[45:01.52] content
+[45:02.80] we can set the color to red
+[45:04.96] and font style
+[45:06.64] to normal
+[45:07.84] now don't worry about memorizing any of
+[45:09.36] these css properties we're going to go
+[45:11.20] over them multiple times throughout the
+[45:13.04] course but let's see what happens now
+[45:15.60] that we apply these styles
+[45:17.60] so our emphasized content is displayed
+[45:20.24] in red and is no longer italic
+[45:22.80] now in the past we had an element called
+[45:25.12] i
+[45:25.92] which was short for italic
+[45:28.40] if we use this element
+[45:30.40] we get the same result as before
+[45:32.56] our content is displayed in italic
+[45:35.04] but this element is considered
+[45:36.48] deprecated because html is not meant for
+[45:39.44] styling it should only be used for
+[45:41.36] structuring content
+[45:43.04] so don't use the i element to display
+[45:45.20] content as italic okay
+[45:47.44] now we have a similar element in html
+[45:49.44] called strong
+[45:51.36] let's hover over it and see
+[45:53.28] what the tooltip says the strong element
+[45:55.60] represents strong importance seriousness
+[45:58.56] or urgency of its contents
+[46:00.72] conceptually it's kind of similar to the
+[46:02.56] emphasis element so where you should use
+[46:05.20] it really depends on your context on
+[46:07.28] your content now let's save the changes
+[46:09.44] and see what we get
+[46:11.28] so by default strong elements are
+[46:13.60] displayed as bold but once again we can
+[46:16.32] always change the styling now in the
+[46:18.48] past we had another element called b
+[46:21.20] which is short for bold so whenever we
+[46:23.36] wanted to make something bold we use
+[46:25.20] this element but once again this element
+[46:27.68] is considered deprecated because styling
+[46:30.08] should be done in css and not in html
+[46:32.80] okay
+[46:33.60] so don't use b or i elements
+[46:36.40] now i'm going to remove
+[46:38.48] this element and just add html let me
+[46:41.20] show you a cool trick
+[46:42.48] let's say we want to wrap this word with
+[46:44.32] the m element there is a shortcut for it
+[46:47.04] so on the top we go to the view menu
+[46:50.32] look at the shortcut for the command
+[46:51.92] palette on mac is shift command on p and
+[46:55.28] on windows is probably shift ctrl np
+[46:58.48] so let's select html
+[47:00.32] and then bring up the command palette
+[47:02.48] with this command palette we can execute
+[47:04.40] commands in vs code so here i'm going to
+[47:06.40] search for a command called wrap with
+[47:08.64] abbreviation that is the first command
+[47:10.72] in the list
+[47:11.84] now we press enter and here we type the
+[47:14.08] element that we want to use to wrap our
+[47:16.24] selected content in this case m
+[47:19.52] press enter done
+[47:21.20] so i didn't have to manually create an m
+[47:23.28] element and then move html inside it
+[47:25.76] it's very handy
+[47:27.12] so this is all about text now let's talk
+[47:29.52] about headings
+[47:30.80] so in html we have six heading elements
+[47:34.08] h1
+[47:36.88] we have h2
+[47:39.60] h3
+[47:41.60] h4
+[47:43.36] h5
+[47:45.04] and h6
+[47:47.84] so let's see what we get
+[47:50.64] so
+[47:51.36] heading 1 represents the most important
+[47:54.00] heading and heading 6 represents the
+[47:56.64] least important heading
+[47:58.24] now one common mistake that i see
+[47:59.76] amongst a lot of people is that they
+[48:01.76] choose these headings based on their
+[48:03.84] size so if they want to have a heading
+[48:06.64] with this size they would just use
+[48:08.40] heading 4. that is not how you're
+[48:10.48] supposed to use headings because the
+[48:12.16] size can always be changed with css it's
+[48:14.80] a matter of styling we should use these
+[48:16.88] headings to create a hierarchy so every
+[48:19.68] web page should have one and only one h1
+[48:23.12] element this heading represents what
+[48:25.44] this page is all about now nothing
+[48:27.60] happens if you have multiple h1 elements
+[48:30.16] for example
+[48:31.36] i can duplicate this line and say
+[48:33.92] heading 1 plus
+[48:35.84] now look we have two h1 elements but
+[48:38.72] this is going to confuse search engines
+[48:40.56] they're not going to figure out what
+[48:42.00] this page is really all about
+[48:44.00] so every page should have a single
+[48:46.88] h1 element so
+[48:49.12] i'm going to remove this line
+[48:51.04] now after we use h1 then we should use
+[48:53.44] h2 we should not jump to h4
+[48:56.16] so let's say on this page we're going to
+[48:57.60] have two sections one for html the other
+[49:00.40] for css so my next heading should be h2
+[49:04.00] and here we can type html
+[49:06.64] obviously below this heading we can have
+[49:08.32] some text
+[49:09.44] so i'm going to say html tutorial
+[49:13.04] our next heading should be h2 so
+[49:16.48] this is the css section
+[49:18.40] and in this section we can have some
+[49:19.76] additional text let's say css tutorial
+[49:23.44] now i'm going to delete
+[49:25.20] these four headings
+[49:27.12] so
+[49:28.00] let's take a look
+[49:29.44] so we have a hierarchy on the top we
+[49:31.52] have an h1 element below that we have
+[49:34.08] two h2 elements now let's say in this
+[49:36.72] section we're going to have two
+[49:38.48] subsections there we should use h3
+[49:41.12] elements
+[49:42.32] so
+[49:43.28] here's our html section
+[49:45.44] in this section we're going to have two
+[49:47.28] h3 elements let's say code
+[49:50.00] and exercise
+[49:52.32] now take a look
+[49:54.08] so we have a hierarchy this is how we
+[49:56.80] should use these heading elements the
+[49:58.80] better we can represent the structure of
+[50:00.64] our document using html the better
+[50:03.04] search engines can read and understand
+[50:04.96] our content
+[50:06.32] so that's all about text next we're
+[50:08.16] going to talk about displaying special
+[50:10.08] characters in html
+[50:14.06] [Music]
+[50:18.48] some characters are reserved in html and
+[50:20.80] to display them we have to use a special
+[50:22.96] notation for example let's say we want
+[50:25.52] to wrap the word html with angle
+[50:27.84] brackets see what's going to happen so i
+[50:30.24] type a left angle bracket and a right
+[50:33.84] angle bracket see what happened
+[50:36.08] vs code thought we're adding an html
+[50:37.92] element so it automatically generated
+[50:40.40] the closing tag we don't want this so
+[50:42.72] let's delete it
+[50:44.16] now back in the browser
+[50:46.00] look where is our html word it's not
+[50:48.24] here because the browser interpreted
+[50:50.96] this
+[50:51.76] as an html tag this is not what we want
+[50:54.32] we want to display this exactly as this
+[50:57.20] so to solve this problem we're going to
+[50:58.96] use html entities all these entities
+[51:01.76] start with an ampersand and end with a
+[51:04.48] semicolon in between these two
+[51:06.40] characters we type a few characters that
+[51:08.80] determine the type of the html entity so
+[51:11.84] we have an entity for displaying the
+[51:13.92] less than sign
+[51:15.28] that is l t short for less than
+[51:19.12] now let's remove this
+[51:20.96] similarly we have another html entity
+[51:23.68] for displaying the greater than sign so
+[51:25.84] we type an ampersand gt which is short
+[51:28.80] for greater than
+[51:30.16] followed by a semicolon
+[51:31.84] now back to the browser that's exactly
+[51:34.56] what we wanted perfect another common
+[51:37.04] html entity is the copyright symbol
+[51:40.00] so
+[51:41.20] at the end i'm going to type an
+[51:42.80] ampersand
+[51:44.00] copy and a semicolon
+[51:46.48] now take a look
+[51:47.92] here's our copyright symbol beautiful
+[51:50.24] now we have so many editors in html and
+[51:52.64] quite frankly you don't need to memorize
+[51:54.56] any of them in fact you're not going to
+[51:56.16] use 99 of them but in case you're
+[51:58.48] curious let me show you the complete
+[52:00.24] list
+[52:01.12] so on google search for html entities
+[52:05.20] and on this second link dev.w3.org
+[52:09.44] you can see the complete list of news
+[52:11.20] entities
+[52:12.40] so as you can see there are so many
+[52:14.56] entities and honestly i have never used
+[52:16.88] any of them the only ones i have used
+[52:19.28] are these three plus non-breaking space
+[52:22.48] let me show you what that is about so
+[52:24.56] i'm going to do this line
+[52:26.48] and generate some dummy text so we add a
+[52:29.04] paragraph element now to generate some
+[52:31.20] dummy text we type lorem
+[52:33.84] followed by the number of words we want
+[52:35.36] to generate let's say 50. tab
+[52:39.52] look this is some dummy text in latin
+[52:42.64] now let's preview it in the browser
+[52:45.04] so here's what we get
+[52:46.48] let's imagine that the last part on the
+[52:48.96] first line
+[52:50.16] and the first word on the second line
+[52:51.92] should be stick together here we have a
+[52:53.92] line break in between these two words
+[52:56.00] you want to prevent that so
+[52:58.08] i'm going to copy this word now
+[53:01.04] here in vs code let's bring up the
+[53:02.96] search panel by pressing command and f
+[53:05.20] on mac or ctrl and f on windows
+[53:08.16] now we paste this word
+[53:10.00] okay here it is we want to make sure
+[53:12.32] that these two words are always together
+[53:14.96] there is no line breaking between them
+[53:17.20] so i'm going to replace this regular
+[53:19.60] space with a non-breaking space which is
+[53:22.00] an html entity so we type an ampersand
+[53:25.68] nbsp which is short for non-breaking
+[53:28.80] space
+[53:29.68] followed by a semicolon
+[53:31.36] now take a look
+[53:33.44] so
+[53:34.16] both these words
+[53:35.68] are on the second line
+[53:37.04] so this is all about html entities next
+[53:39.36] we're going to talk about links
+[53:43.23] [Music]
+[53:47.60] almost every webpage on the internet has
+[53:49.68] links to other pages or websites to
+[53:52.08] create these links we use the anchor
+[53:53.84] element so we type a that is short for
+[53:56.56] anchor and then press tab
+[53:58.72] now every anchor element should have an
+[54:00.88] href attribute
+[54:02.56] href is short for hypertext reference i
+[54:05.20] know it's a mouthful it basically means
+[54:07.20] a url or a link so for this demo i'm
+[54:09.92] going to create a second page called
+[54:12.12] about.html and then link to it over here
+[54:15.12] so in the explorer panel
+[54:17.84] let's add a new page
+[54:19.92] called about.html
+[54:22.48] now here we're going to create a basic
+[54:24.08] html boilerplate remember how to do that
+[54:27.36] we type an exclamation mark and then
+[54:29.12] press tab
+[54:30.24] that's it beautiful
+[54:31.92] now back to index.html
+[54:34.16] here we can use a relative or an
+[54:36.32] absolute url what do you mean by that
+[54:38.64] well a relative url starts from the
+[54:41.52] current page so currently we are on
+[54:43.56] index.html and we want to go to
+[54:45.60] about.html
+[54:47.20] now currently both these pages are in
+[54:49.28] the same folder
+[54:50.64] so we can type a relative url to
+[54:53.48] about.html like this about html
+[54:57.36] that's a relative url now what if
+[54:59.44] about.html was in a different folder so
+[55:02.80] let's add a new folder to our project
+[55:05.36] called company
+[55:07.28] and then move about
+[55:09.04] to this folder
+[55:10.72] now where is about.html relative to the
+[55:13.20] current page it's inside the company
+[55:15.44] folder right so here we type company
+[55:18.80] slash about.html
+[55:21.20] this is a relative url
+[55:23.36] now let's give this link a text i'm
+[55:25.36] going to say about me so we type our
+[55:27.76] text inside the anchor element okay
+[55:30.32] save the changes
+[55:31.76] back to the browser here's our link
+[55:34.16] click
+[55:35.12] and we're currently on the about page
+[55:36.64] which is empty beautiful
+[55:38.80] now back to our homepage
+[55:40.72] instead of a text we can also use an
+[55:42.40] image so i'm going to delete about me
+[55:45.92] and add an image element so img tab once
+[55:49.52] again here we can type a relative url to
+[55:51.76] our target image so i'm going to go with
+[55:54.24] images
+[55:55.72] mosh.jpg now save
+[55:58.64] take a look
+[55:59.76] obviously this image is way too big we
+[56:02.08] can always use css to resize it but that
+[56:04.48] aside look at the mouse icon
+[56:07.84] when we hover over this image it changed
+[56:10.08] to a hand to indicate that this image is
+[56:12.32] clickable okay
+[56:14.24] now back to our code to keep things
+[56:16.32] simple i'm going to get rid of this
+[56:18.08] image and
+[56:19.60] get back
+[56:20.72] to our text about me
+[56:22.72] now let's go to the about page and add a
+[56:24.72] link back to the home page so
+[56:27.52] over here
+[56:28.88] we're going to add
+[56:30.48] an anchor element
+[56:32.08] what should we type for the href
+[56:33.68] attribute well currently we are inside
+[56:36.48] the company folder we have to go one
+[56:38.64] level up so we can access index.html
+[56:41.44] right
+[56:42.24] to do that we type double periods and a
+[56:44.72] forward slash with this we can go one
+[56:46.96] level up now at this level which is the
+[56:49.28] root of our website we have the company
+[56:51.28] folder the images folder and index.html
+[56:54.48] so we can reference index.html
+[56:57.60] and for the text we're going to say home
+[56:59.76] page again this is another example of a
+[57:02.72] relative url because it starts from the
+[57:04.80] current page and goes somewhere else now
+[57:07.44] if you're inside a deeply nested folder
+[57:09.84] structure we might have to go multiple
+[57:11.84] levels up so double period and a forward
+[57:14.48] slash then we repeat and repeat with
+[57:17.28] this we can go three levels up
+[57:19.28] now as you can see urls like this kind
+[57:21.44] of look messy they look hard to read in
+[57:24.08] those cases we can use an absolute url
+[57:26.88] so we start with a forward slash and
+[57:30.08] this represents the root of our website
+[57:32.64] at this level we have access to
+[57:34.08] index.html
+[57:36.16] so this is an absolute url okay
+[57:38.72] now back to index.html
+[57:41.68] here we are linking to an html document
+[57:43.92] but we can also link to non-html
+[57:46.00] documents like images pdfs powerpoints
+[57:49.04] and so on so let's add a link to my
+[57:51.68] image so for the href i'm going to say
+[57:54.16] images slash mosh.jpg
+[57:57.52] and for the text i'm going to say my
+[58:00.00] photo
+[58:01.52] save
+[58:02.80] take a look so here's our second link
+[58:05.44] click
+[58:06.64] my image is displayed in the browser
+[58:08.56] but what if i want to prompt the user to
+[58:10.40] download it that's very easy
+[58:12.80] we're going to add the download
+[58:14.24] attribute to our anchor element so we
+[58:16.40] type download press enter now this
+[58:19.20] attribute doesn't have a value so we can
+[58:21.52] remove the double quotes and the equal
+[58:24.32] sign
+[58:25.12] so we just add the attribute name now
+[58:27.44] save
+[58:28.64] back to the browser
+[58:30.16] we go back
+[58:31.52] here we have to manually refresh the
+[58:33.12] page because the live server only
+[58:35.28] refreshes the current page now
+[58:37.04] previously we were on my image so that
+[58:38.96] was the url that live server refreshed
+[58:41.44] so here we refresh
+[58:42.88] to get the latest changes now when i
+[58:44.88] click on this link instead of seeing my
+[58:46.88] image we're going to see my image
+[58:48.40] getting downloaded take a look click
+[58:51.04] and here's my image beautiful
+[58:53.52] now we can also link to other parts of
+[58:55.36] this page so
+[58:57.04] let's create two sections with a lot of
+[58:58.80] text so i'm going to add an h2 element
+[59:01.76] and of course i missed the h1 but let's
+[59:04.08] not worry about it for this h2 we're
+[59:05.92] going to say html
+[59:07.60] and below that we're going to add some
+[59:08.80] dummy text with 200 words so paragraph
+[59:12.16] lorem 200
+[59:14.32] good
+[59:15.12] now right after that we're going to add
+[59:16.88] another h2 for the css section
+[59:19.76] with some more text
+[59:22.48] okay
+[59:23.28] let's save the changes
+[59:24.88] take a look
+[59:26.16] as you can see the css section is below
+[59:29.12] default so we have to scroll down to see
+[59:31.68] what we can do here
+[59:33.28] is on the top we can add a link to the
+[59:35.44] css section so when the user clicks on
+[59:37.52] that they will immediately jump to the
+[59:39.28] css section that is very easy
+[59:41.92] so here's the css section first we have
+[59:44.08] to give this element a unique identifier
+[59:46.64] just like everyone in the real world can
+[59:48.16] have a unique identifier like a driver's
+[59:50.24] license or a password every element on a
+[59:53.20] page can also have a unique identifier
+[59:56.08] so here i'm going to set the id
+[59:57.84] attribute to
+[59:59.12] css
+[60:00.40] or we can use a more descriptive name
+[60:02.32] like section
+[60:04.08] dash css
+[60:06.40] the name doesn't really matter here what
+[60:08.48] matters is that we're defining what is
+[60:10.72] called a fragment or a place on this
+[60:13.04] page now we're going to add a link to
+[60:15.60] this fragment so on the top
+[60:19.84] let's add another anchor element
+[60:22.24] now for the href we're going to type
+[60:24.64] the pound sign followed by the name of
+[60:26.72] our fragment which is section
+[60:28.96] css
+[60:30.48] and for the text we're going to say css
+[60:32.88] now
+[60:33.68] back to the browser take a look i'm
+[60:35.60] going to click on this
+[60:36.88] we immediately jump to the css section
+[60:38.96] beautiful now a lot of websites like
+[60:40.96] this also have a link that helps you
+[60:43.12] jump to the top of the page let's see
+[60:45.04] how we can create that
+[60:46.96] so after the css section
+[60:50.64] i'm going to add
+[60:51.84] another anchor element
+[60:53.68] now for the href i'm going to use
+[60:56.48] an empty fragment so we just type a
+[60:58.40] pound sign without an identifier
+[61:01.20] and then we say jump to top
+[61:04.40] take a look so
+[61:06.56] here's our link click and now we're on
+[61:08.96] top of the page now let's see how we can
+[61:11.12] link to external websites
+[61:13.60] so let's add another anchor element to
+[61:15.52] link to google
+[61:17.52] now what should we type here well
+[61:19.44] google.com is a different website so
+[61:21.68] here we cannot use a relative url we
+[61:24.00] have to use an absolute url but if you
+[61:26.24] start with a forward slash we're
+[61:28.16] referencing the root of our website but
+[61:30.40] in this case we want to go to a
+[61:31.84] different website how can we do that
+[61:34.00] well we have to start with the protocol
+[61:36.48] so https colon
+[61:39.28] to forward slashes google.com
+[61:42.56] now let's type google
+[61:44.64] and test our page
+[61:46.72] click
+[61:48.00] we're on google beautiful now sometimes
+[61:50.64] when linking to external website we want
+[61:52.96] that link to open in a new browser
+[61:54.88] window or a new tab let me show you how
+[61:56.80] to do that
+[61:57.84] so
+[61:58.64] here's our anchor
+[62:00.16] we set the target attribute to underline
+[62:02.88] blank
+[62:04.08] save
+[62:05.68] now back to the homepage once again we
+[62:08.08] have to manually refresh to get the
+[62:09.76] latest changes
+[62:11.60] okay
+[62:12.48] now when i click on google
+[62:14.56] you see a new tab beautiful and one last
+[62:17.28] thing
+[62:18.24] we can also link to emails so i'm going
+[62:20.40] to add an anchor
+[62:21.84] and for href i'm going to say mailto
+[62:24.72] colon
+[62:26.00] programming
+[62:27.44] with mosh gmail.com
+[62:31.20] email me
+[62:32.64] save the changes
+[62:34.64] now back to our page when i click on
+[62:37.12] this link my mail client will open and
+[62:39.68] my email address will be pre-populated
+[62:41.84] take a look so click
+[62:44.00] and here's my mail client
+[62:46.16] so this is all about links now one last
+[62:48.24] thing before we finish this lesson what
+[62:50.24] is the difference between a link and a
+[62:51.68] hyperlink well a link is just an address
+[62:54.32] a url the location of the target page a
+[62:57.12] hyperlink is the element that the user
+[62:59.28] can click on to navigate to that target
+[63:01.36] page that is the difference between a
+[63:03.20] link and a hyperlink but quite often
+[63:05.36] these terms are used interchangeably
+[63:07.76] alright we're done with this lesson next
+[63:09.28] we're going to talk about images
+[63:13.31] [Music]
+[63:17.12] all right now let's talk about embedding
+[63:18.72] images in a bit more detail for this
+[63:20.80] lesson i'm going to grab an image from
+[63:22.64] unsplash.com which is where we can find
+[63:24.96] a lot of beautiful and freely usable
+[63:27.28] images
+[63:28.32] so let's search for coffee
+[63:31.36] there are tons of coffee pictures here
+[63:33.60] i'm going to grab
+[63:35.04] this picture
+[63:36.80] we can download it for free
+[63:38.72] now look this image comes in different
+[63:40.64] sizes small medium and large for now
+[63:43.76] we're going to grab this image in a
+[63:44.88] small size but in the future we're going
+[63:46.72] to talk about embedding images at
+[63:48.72] different sizes depending on the device
+[63:51.36] so on mobile devices we want to serve a
+[63:53.68] smaller image and on desktop computers
+[63:56.00] we want to serve a larger image for now
+[63:58.48] let's not worry about these complexities
+[64:00.56] we'll have a conflict section on this
+[64:02.08] topic later on
+[64:03.52] so let's download the small image
+[64:06.88] now it says say thank you to nathan
+[64:09.52] thanks nathan this is a beautiful
+[64:11.12] picture you have done a great job
+[64:13.12] now i'm going to drag and drop this
+[64:14.56] image onto the images folder
+[64:17.84] and then rename it to coffee
+[64:19.76] we want to give it a descriptive name
+[64:21.36] this is a small search engine
+[64:22.80] optimization tip when we provide
+[64:24.88] descriptive names for our images search
+[64:27.20] engines can better understand and index
+[64:29.36] our pages okay
+[64:31.12] so here's our image now
+[64:34.16] let's add an image element
+[64:36.08] we set the source to images
+[64:38.40] coffee.jpg
+[64:40.40] now what about the alt attribute well i
+[64:43.12] briefly mentioned that we use this
+[64:44.64] attribute to provide textual description
+[64:47.12] of the image it's not compulsory but is
+[64:49.60] highly recommended for a number of
+[64:51.12] reasons the first reason is to make our
+[64:53.28] page accessible to visually impaired
+[64:55.52] people these people use a screen reader
+[64:58.16] to read the web out to them so with this
+[65:00.72] alternative text we can tell them what
+[65:02.56] we are showing on the page and that
+[65:04.24] means we should write a good meaningful
+[65:06.24] description here like a coffee mug
+[65:09.28] on a table
+[65:10.48] don't write something like image or
+[65:12.16] image one that is pointless now the
+[65:14.56] second benefit of providing an
+[65:16.24] alternative text is that we help search
+[65:18.64] engines read this text and understand
+[65:21.20] what we're providing here and there's
+[65:23.20] one more benefit
+[65:24.64] if this image cannot be loaded for some
+[65:26.56] reason the alternative text is shown let
+[65:29.12] me show you what i mean so i'm going to
+[65:31.04] add a typo here
+[65:32.80] now
+[65:33.84] back to the browser look
+[65:35.60] the image is not loaded but we see the
+[65:37.60] alternative text this can also happen if
+[65:40.16] there is a network connectivity issue if
+[65:42.24] the user gets disconnected they can
+[65:43.92] still see the alternative text
+[65:46.24] so let's remove the typo now let's talk
+[65:48.64] about sizing images as i told you before
+[65:51.28] we can use css to resize our images so
+[65:54.24] here in the head section
+[65:55.92] let's add
+[65:56.96] a style element
+[65:58.64] and apply a rule to our image
+[66:01.60] now this rule is applied to all images
+[66:03.76] on the page this is probably not
+[66:05.52] something we want to do in the real
+[66:06.64] world scenario in a real-world scenario
+[66:09.20] we want to apply a class to this element
+[66:11.84] and then define rules for that class
+[66:14.08] we'll talk about this in more detail in
+[66:15.52] the future
+[66:16.64] so for now let's give this image a width
+[66:19.76] of 200 pixels and a height of 200 pixels
+[66:23.92] now
+[66:24.88] there's a tiny problem in our image can
+[66:26.96] you tell
+[66:28.16] our image is kind of squashed here's the
+[66:30.16] reason
+[66:31.04] we're dealing with a rectangular image
+[66:33.44] look this is a rectangular image but
+[66:35.52] we're converting it to a square image
+[66:38.00] now look at the shape of this coffee mug
+[66:40.08] it's kind of round right like compared
+[66:42.48] with
+[66:43.28] what we have over here our image is
+[66:45.20] vertically squashed let me show you
+[66:47.12] another way to verify this
+[66:48.88] we can right click on the image
+[66:50.96] and then go to inspect
+[66:53.44] this opens chrome devtools and selects
+[66:55.76] our image in the dom
+[66:57.20] now on the right side we can see the
+[66:59.20] styles that we applied to this element
+[67:01.60] now i'm going to disable the height
+[67:03.36] property
+[67:04.48] and i want you to pay close attention to
+[67:06.08] the image and see how the shape changes
+[67:08.48] so look
+[67:10.88] now the coffee mug is more round but if
+[67:13.04] i applied the height property
+[67:15.12] it becomes squashed so how can we solve
+[67:17.36] this problem well we have a new property
+[67:19.68] in css called object fit
+[67:22.40] so here we can set object fit to one of
+[67:25.20] these values most of the time we use
+[67:27.28] cover so the image covers its containing
+[67:30.56] box what is this containing box well
+[67:33.28] first let me set this to cover
+[67:35.52] here we have this image element right
+[67:38.08] conceptually there is a box around every
+[67:40.72] element in an html document we don't see
+[67:43.36] this box but the browser uses that box
+[67:46.00] to figure out how the page should be
+[67:47.68] displayed so here we have a box with
+[67:49.84] this dimension 200x200 and in this box
+[67:53.28] we're trying to insert this image right
+[67:56.24] now when we set object fit to cover
+[67:58.64] our image will get resized and
+[68:00.72] potentially cropped so it covers the
+[68:03.20] entire containing box let's verify this
+[68:06.32] so save the changes and back in the
+[68:07.92] browser look our coffee mug is round but
+[68:10.88] if i disable the object fit property
+[68:14.00] it gets squashed again
+[68:15.68] so object fit is a very useful property
+[68:18.32] now we can always play with all possible
+[68:20.72] values over here so i'm going to select
+[68:23.12] this deleted
+[68:25.20] now using the up and down arrows
+[68:27.68] we can go through this list and see the
+[68:29.92] impact of every value now i'm not going
+[68:32.08] to go over all these values and explain
+[68:33.92] what they mean this is pointless you can
+[68:36.00] always figure them out on your own just
+[68:37.92] remember that most of the time
+[68:40.16] we use cover so the image covers the
+[68:42.72] entire containing box
+[68:44.48] alright this is all about the images for
+[68:45.92] now next we're going to talk about video
+[68:47.92] and audio
+[68:51.12] hey guys mosh here i just wanted to let
+[68:53.04] you know that this video you've been
+[68:54.40] watching is the first hour of my
+[68:56.48] ultimate html and css series so after
+[68:59.36] you watch this video if you want to
+[69:01.04] learn more from me you can enroll in the
+[69:02.80] full course which is about 13 hours long
+[69:05.12] and covers everything you need to know
+[69:06.88] to build professional quality websites
+[69:08.96] with html and css it also includes
+[69:11.92] summary notes exercises a real project a
+[69:15.28] certificate of accomplish and you can
+[69:16.72] add your resume and a 30 day money back
+[69:19.12] guarantee to get a refund if you're not
+[69:21.04] satisfied so you have nothing to lose
+[69:23.36] and a lot to learn so if you're
+[69:24.80] interested i put the link in the
+[69:26.16] description box

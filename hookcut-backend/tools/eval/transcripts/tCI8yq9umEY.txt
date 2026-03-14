@@ -1,0 +1,316 @@
+[0:00.08] Today everyone is talking about the AI
+[0:02.00] revolution and how it is going to impact
+[0:04.08] every aspect of our life. But one point
+[0:06.00] that everyone is missing is AI is not
+[0:08.56] just a code. It requires massive
+[0:10.64] infrastructure to process terabytes of
+[0:13.12] data. And when it comes to India, to be
+[0:15.52] really honest, we are way behind the AI
+[0:17.92] race. In fact, if you really want to
+[0:20.08] play the AI theme, I recently discussed
+[0:22.40] seven US- based companies that are
+[0:24.32] leading the AI race in the world. Do
+[0:26.24] watch that video. However, if you still
+[0:28.48] want to play this AI theme from India,
+[0:30.80] then there's one part of AI value chain
+[0:32.88] where India can benefit and that's AI
+[0:35.68] infrastructure that is data centers.
+[0:38.08] Just to give you an idea, today India's
+[0:40.16] data center capacity is around 1260
+[0:42.16] megawatt and is expected to cross 4500
+[0:45.28] megawatt by 2030. That's a 3.5 times
+[0:48.64] jump in capacity in the next 5 years.
+[0:50.88] And companies like Reliance and Nadani
+[0:52.80] together are planning to invest around
+[0:54.72] 210 billions in AI infra. Then TCS is
+[0:58.56] planning to invest 6 to 7 billion in
+[1:00.24] data centers in India. Likewise,
+[1:02.24] hyperscalers like Microsoft, Google,
+[1:04.72] Amazon, they all have committed billions
+[1:07.04] of dollars in building AI infrastructure
+[1:09.04] in India. Just like road powered the
+[1:11.52] industrial growth, data centers are
+[1:13.76] going to power the digital growth. In
+[1:15.76] fact, in the latest union budget, Indian
+[1:18.16] government has clearly mentioned that it
+[1:20.08] wants India to become a global hub for
+[1:22.56] cloud and AI infrastructure and has
+[1:24.96] introduced major policy incentives. So,
+[1:27.36] in today's video, I want to first
+[1:29.12] discuss what exactly a data center is
+[1:31.92] and how it works. Next, why data center
+[1:34.96] can be a big beneficiary of AI boom in
+[1:37.28] India. So, what are the key growth
+[1:38.88] drivers? This is the part one of the
+[1:41.20] video. In the second part, I'll discuss
+[1:43.60] which companies can benefit from rise of
+[1:45.68] data centers in India. And finally,
+[1:48.16] there's no theme which is completely
+[1:50.00] risk-free. So, I'll cover the key risk
+[1:52.00] in the growth thesis for data centers.
+[1:54.24] All right, let's get started.
+[1:57.52] A data center is basically a highly
+[1:59.60] secured temperature controlled warehouse
+[2:02.16] where thousands of servers are stacked
+[2:04.32] inside racks continuously storing,
+[2:06.88] processing, and transmitting data. Every
+[2:09.52] time you open a WhatsApp, stream Netflix
+[2:11.92] or use UPI, run Chat GPD or access cloud
+[2:15.20] software, your request travels to a data
+[2:17.76] center somewhere. That's where the
+[2:19.76] actual computing happens. Think of it as
+[2:22.32] the factory of digital economy. Instead
+[2:24.96] of manufacturing cars or steel, it
+[2:27.52] manufactures computing power. The next
+[2:30.00] question is how does a data center work?
+[2:32.72] So a data center not only needs to
+[2:34.40] process terabytes of data but it has to
+[2:36.88] ensure that everything is running 24/7
+[2:39.68] without failure. To do that a data
+[2:42.16] center has a few critical components.
+[2:44.56] First is IT equipment that is the core.
+[2:47.20] It includes servers which is the actual
+[2:49.44] computers doing the computation. So when
+[2:51.52] you ask chat GPD a question it is a GPU
+[2:54.32] server doing the thinking. Next is
+[2:56.48] storage system where data is stored.
+[2:58.80] Then you have networking gears like
+[3:00.40] switches, routers that move data between
+[3:02.72] servers and to the outside world. This
+[3:04.88] is the brain of data center. The next
+[3:07.12] layer is power infrastructure. Data
+[3:09.28] centers cannot afford even a few seconds
+[3:11.44] of outage. In fact, power account for 40
+[3:14.00] to 50% of total capital expenditure of
+[3:16.64] building a data center. Now, first of
+[3:18.80] all, you need to understand the power
+[3:20.64] value chain within data center as there
+[3:22.88] are many entities involved and it can
+[3:24.88] get a bit complex. So power journey
+[3:27.28] begins with national grid operating at
+[3:29.44] extraordinary high voltages like 220
+[3:31.76] kilowatt. But there's no server UPS or
+[3:34.40] air conditioner on the planet designed
+[3:36.40] to handle that kind of voltage. So the
+[3:38.64] first step is to step down the voltage
+[3:41.28] and that's where your transformers comes
+[3:43.12] into picture. They step down the voltage
+[3:45.36] to usable level. So with transformer
+[3:47.92] power is stepped down inside the
+[3:49.76] facility at let's say 33 or 11 kilovolt.
+[3:52.16] But a data center is not one room. It is
+[3:54.48] a complex of server halls, cooling
+[3:56.56] plants, UPS rooms, and offices,
+[3:58.96] sometimes spread across hundreds of
+[4:01.04] thousands of square feet, and power
+[4:03.28] needs to get to all of it. Plus, it
+[4:05.92] needs to be controlled. So, you need to
+[4:07.84] be able to switch sections on and off
+[4:09.84] for maintenance. That is done by switch
+[4:12.24] gear. Think of it as the traffic
+[4:14.48] management and safety system for
+[4:16.48] electricity inside the data center. Now
+[4:19.12] let's say a transformer fault somewhere
+[4:21.04] on the grid causes a few milliseconds
+[4:23.52] power interruption. It can be
+[4:25.60] catastrophic for data centers. Servers
+[4:28.16] can crash and transaction can lost.
+[4:30.64] Databases can corrupt. This is why your
+[4:33.68] UPS that is the uninterruptible power
+[4:36.16] supply comes into picture. Its job is to
+[4:38.64] make sure that the moment grid power
+[4:40.72] disappears power continues to flow to
+[4:43.04] every server without interruption. Now
+[4:45.44] the thing is UPS is useful in case of
+[4:48.08] uninterrupted power supply for a few
+[4:50.08] minutes. But what if the grid does not
+[4:52.80] come back in minutes? What if there's a
+[4:55.28] major fault or a storm or a transformer
+[4:58.08] failure that takes hour to fix? That is
+[5:00.80] where the diesel generator or gas
+[5:03.12] turbine comes into picture. These are
+[5:05.28] not small generators. A large hypers
+[5:07.68] scale data center might have 20 to 30
+[5:10.24] diesel generator sets each producing 2
+[5:12.72] to 4 megawatt of power. They are size of
+[5:15.44] shipping containers. So the moment the
+[5:17.36] UPS signals that it is approaching its
+[5:19.44] battery limit and the grid is still not
+[5:21.44] returned, the generator control system
+[5:23.52] fire ups the engine. Then your third
+[5:25.60] layer in data center is cooling system.
+[5:28.64] Now every computation generates heat and
+[5:31.12] in a data center where thousands of
+[5:33.44] servers are running at full capacity
+[5:35.36] around the clock, the amount of heat
+[5:37.36] generated is extraordinary. If you do
+[5:39.68] not remove that heat continuously and
+[5:41.60] reliably, servers can overheat, throttle
+[5:44.72] their performance, and eventually shut
+[5:46.48] down permanently. For 20 years, data
+[5:49.20] centers used precision air conditioning
+[5:51.76] to solve this problem. Cold air in, warm
+[5:54.56] air out. It worked because traditional
+[5:57.04] servers consumed about 8 to 10 kowatt
+[5:59.52] per rack. And then came AI. An Nvidia
+[6:03.04] H00 GPU cluster consumes 40 to 80 kowatt
+[6:06.40] per rack. that is five to eight times
+[6:08.96] more heat in the same physical space.
+[6:11.44] Air simply cannot remove heat that fast.
+[6:13.92] The physics do not work. This is why
+[6:16.40] solid cooling where coolant is pumped
+[6:18.64] directly to the chip has gone from a
+[6:20.72] niche technology to an absolute
+[6:22.80] requirement for any EI grade data
+[6:25.12] center. Then fourth layer of data center
+[6:27.68] is physical infrastructure. A data
+[6:30.24] center is not just technology. It is a
+[6:32.72] physical building. And building a data
+[6:35.12] center is not like building an office or
+[6:37.44] warehouse. The civil and electrical
+[6:39.52] engineering requirements are extremely
+[6:41.44] demanding. For instance, floor must
+[6:43.28] support loads up to,000 kg per square
+[6:45.68] meter. The structural design must
+[6:47.76] prevent vibration that could damage
+[6:49.68] drives. The layout must optimize air
+[6:52.16] flow. And this is where your EPC players
+[6:54.64] comes into picture, which is your
+[6:56.48] engineering, procurement and
+[6:57.92] construction companies that actually
+[7:00.08] build these facilities. Then finally the
+[7:02.24] fifth layer is connectivity and
+[7:03.84] networking. A data center full of
+[7:05.92] servers is completely useless if it
+[7:08.32] cannot talk to the void. So connectivity
+[7:10.64] operates at two level. At physical level
+[7:13.20] you have cables. The actual copper and
+[7:15.20] fiber optic cables that carry data.
+[7:17.68] Power cables carry electricity from
+[7:19.44] substation to the racks and data cables
+[7:22.00] carry the information between servers
+[7:24.24] between racks and ultimately to the
+[7:26.00] fiber optic backbone that connects to
+[7:28.08] the rest of the world. At the network
+[7:29.52] level, you have the fiber infra itself
+[7:31.52] that include underground and submarine
+[7:33.44] cables that carry data between cities,
+[7:35.92] countries and across oceans. So overall,
+[7:38.56] this image would give you a good idea of
+[7:40.40] how a data center looks like. Please
+[7:42.64] note that a data center is not just a
+[7:44.80] building with computers. It is a
+[7:46.96] powerheavy cooling intensive always on
+[7:49.84] digital infrastructure asset. I hope you
+[7:52.16] got a good idea of what exactly a data
+[7:54.40] center is and how it works. Now let's
+[7:56.80] look at the key growth driver for data
+[7:58.40] centers.
+[8:00.96] So first grow driver is massive supply
+[8:03.12] demand gap. India generates around 20%
+[8:05.76] of world's data but houses only 3% of
+[8:08.88] global data center capacity. Today data
+[8:11.60] center vacancy rates are compressed to
+[8:13.44] 4.3%. So vacancy rate means how much
+[8:16.48] space is available and there is 48%
+[8:19.12] yearon-year growth in data center
+[8:20.80] absorption in H1 of 25. Imagine a mall
+[8:24.00] where only 4% of shops are weakened and
+[8:26.48] suddenly new brands want 50% more space
+[8:28.72] than last year. So demand is
+[8:30.64] structurally outpacing supply across
+[8:33.12] every major Indian city. Second driver
+[8:35.52] is regulatory tailwind. Today Indians
+[8:37.92] are generating massive amount of digital
+[8:39.84] data be UPI transaction, online orders,
+[8:42.96] digital banking, hospital record and so
+[8:45.36] on. And some of the data is very
+[8:47.36] sensitive and no country want critical
+[8:49.92] citizen data sitting randomly across
+[8:52.40] global servers without regulatory
+[8:54.24] control. And that's where your data
+[8:55.84] sovereignty comes in. For instance,
+[8:57.92] government introduced digital personal
+[8:59.60] data protection act that governs how
+[9:01.76] digital personal data is collected,
+[9:03.84] stored, processed and protected. Also,
+[9:06.24] Indian government has started
+[9:07.28] positioning data centers as strategic
+[9:09.76] digital infrastructure. For instance, in
+[9:12.00] latest budget, government has introduced
+[9:13.76] tax holiday until 2047 for foreign
+[9:16.88] companies providing global cloud
+[9:18.88] services using data center located in
+[9:21.20] India. So these regulatory tailwinds
+[9:23.04] would play a key role in creating
+[9:24.88] structural demand for data centers for
+[9:26.80] the next few years. Then third driver is
+[9:29.60] hyperscaler commitment. Data center
+[9:31.92] growth story is not just limited to
+[9:33.60] demand and agility tailwind. It is
+[9:35.92] clearly visible on ground level where
+[9:38.00] big hyperscalers have already committed
+[9:40.40] billions of dollars of investment. For
+[9:42.64] instance, Microsoft has committed $17.5
+[9:45.28] billion over 4 years to build data
+[9:47.76] centers. Google has committed $15
+[9:49.52] billion to build AI hub in India. Amazon
+[9:52.32] is planning 12.7 billion investment in
+[9:54.32] cloud infra by 2030. Then Reliance is
+[9:56.80] building the world's largest data center
+[9:58.64] campus in Jamagar with billions of
+[10:00.88] dollars of investment. TCS is planning
+[10:03.28] nearly 50,000 cr investment in data
+[10:05.28] center over the next 5 to 6 years. These
+[10:08.16] are multi-year deployments that clearly
+[10:10.64] gives visibility for massive growth in
+[10:12.56] data centers in India. Then fourth
+[10:14.64] growth driver is cost competitiveness.
+[10:17.44] India's capex per megawatt is much lower
+[10:20.16] than US and Europe due to cheaper land,
+[10:22.56] labor and construction. And this is
+[10:24.80] again a key reason why hyperscalers are
+[10:27.28] investing heavily in India. Also, it's
+[10:29.60] not just about capex. It's also about
+[10:31.92] OPEX that is operating cost and here
+[10:34.80] power is the biggest cost driver with 50
+[10:36.88] to 60% contribution. So renewable energy
+[10:39.68] tariff in India are already among the
+[10:42.08] lowest globally. Also India has an
+[10:44.56] aggressive renewable energy target of
+[10:46.48] 500 gawatt by 2030 which means supply is
+[10:50.40] expanding structurally that reduces the
+[10:52.64] long-term power risk. Also many states
+[10:55.04] are actively supporting data center
+[10:56.64] policies with dedicated feeders,
+[10:59.04] priority connections and open access
+[11:01.12] renewable sourcing. So all these factors
+[11:03.44] would drive the growth in Indian data
+[11:05.12] centers. So I hope you got a good
+[11:06.72] clarity in terms of what exactly is a
+[11:08.64] data center, how it works and key growth
+[11:10.88] drivers. Overall in ARAS, India may not
+[11:14.16] lead the world in building GPUs or
+[11:16.08] foundational AI models. That battle is
+[11:18.32] largely being fought in US and China.
+[11:20.72] But when it comes to building the
+[11:22.08] physical layer like powerheavy, cooling
+[11:24.72] intensive, always on digital
+[11:26.40] infrastructure, India has a real
+[11:28.48] opportunity. Capacity is expected to
+[11:30.80] jump from 1260 megawatt to 4,500 plus
+[11:33.68] megawatt by 2030. Hyperscalers have
+[11:36.64] committed billions. Domestic giants like
+[11:38.96] Reliance, Adani, TCS are investing
+[11:41.28] aggressively. Government policy is
+[11:43.20] supportive. Renewable energy is
+[11:44.88] relatively cheap. Land and construction
+[11:46.88] costs are competitive. So structurally
+[11:49.44] the direction is clear for data center.
+[11:51.92] Now the next question is which Indian
+[11:53.92] company can benefit from data center
+[11:55.68] boom? Also no theme is risk-f free. So
+[11:58.24] before investing your money you should
+[11:59.92] be very clear about the key risk. We'll
+[12:02.16] discuss it in the second part. Till then
+[12:04.08] stay tuned.

@@ -1,0 +1,2400 @@
+[0:01.70] hey folks we are live today at uh on
+[0:05.52] Wednesday 7 pm today the agenda is again
+[0:08.52] a lower design of a system which is an
+[0:11.94] inventory management system and if you
+[0:14.88] know about Amazon warehouses or if you
+[0:16.80] know about even you know uh shops what
+[0:19.92] happens is people can buy products and
+[0:22.38] you have to manage this inventory so
+[0:24.60] simply put you have to manage the state
+[0:26.76] of a product whether it's purchased or
+[0:29.04] not purchased where is it how many of
+[0:31.62] them do you have and do you need to
+[0:33.84] order more based on that maybe a
+[0:35.28] notification so this is the job of
+[0:37.44] inventory management system and the low
+[0:39.60] level design of that which means the
+[0:41.94] software design and the code will be
+[0:43.92] taken care of
+[0:45.54] by us today
+[0:47.10] okay so with us we have Arun goyal Arun
+[0:49.86] is uh SC2 at atlassian uh I don't like
+[0:54.48] to say a few more words about yourself
+[0:56.64] or are you very humble and shy or what
+[0:58.98] is it like uh of course I'm humble and
+[1:01.86] shy but let me give a few words
+[1:04.82] so hey everyone you must have seen our
+[1:07.38] previous video I gave my introduction
+[1:09.00] there also my name is aren't good uh
+[1:31.26] I'll try my best yeah okay so
+[1:36.06] um
+[1:36.96] let's let's start this way uh firstly
+[1:39.66] guys if you have any questions please
+[1:41.66] send them on slido so right now I'll
+[1:46.14] just share the link for slido
+[1:49.14] you know um give me a second
+[1:51.96] sorry I have not opened YouTube at the
+[1:54.06] same time because
+[1:56.82] the sound becomes an echo
+[1:59.10] yeah okay so let's go to it's in the
+[2:02.04] description the video description
+[2:04.02] oh in fact we don't have a slider Link
+[2:06.48] in the video description
+[2:07.92] yeah okay okay let me just create one uh
+[2:11.28] guys thank you so much for your patience
+[2:13.02] and uh
+[2:14.40] no thank you for me for
+[2:16.62] you know forgetting to do this I should
+[2:18.78] have taken a slider link and kept it out
+[2:21.42] there
+[2:22.56] just give me one minute
+[2:24.12] okay
+[2:26.34] okay
+[2:27.68] in the meantime I can take a few
+[2:30.06] questions yeah which are coming on track
+[2:32.16] because okay
+[2:34.08] so
+[2:37.26] uh there's relationship saying can you
+[2:39.06] list down a sort of rainbow to tackle
+[2:41.34] similar questions uh yes uh in the last
+[2:45.06] video if you have seen uh we came up
+[2:47.28] with the idea how do we generally
+[2:49.44] proceed uh we can go ahead with a use
+[2:52.86] case diagram uh wherein you can list on
+[2:55.32] the requirements and based on that you
+[2:56.70] can make a use case diagram using the
+[2:58.86] use case diagram you can go ahead and
+[3:00.42] create the class diagram
+[3:02.10] and probably after you make after you
+[3:04.74] make the class diagram you can go ahead
+[3:06.18] and write the code uh for reference you
+[3:08.76] can refer to the previous video which is
+[3:10.80] on make my trip uh you'll be able to
+[3:12.72] have a good idea about it
+[3:20.28] so Lakshmi is saying hi to you gaurav
+[3:23.04] please reply hello how's everything
+[3:25.50] going
+[3:28.86] I'm taking a poll also at the same time
+[3:31.14] which will launch the school and at the
+[3:33.54] same time I'll just come over here and
+[3:35.28] please use this link to send us your
+[3:38.34] questions or ask any doubts or even if
+[3:40.86] you have suggestions please let us know
+[3:42.42] here I have taken a poll uh on you know
+[3:45.24] what is your experience level so that we
+[3:47.16] have a rough understanding of who's the
+[3:49.50] uh who's viewing this video and based on
+[3:51.96] that we can tailor the experience
+[3:54.06] right so okay three of you have voted
+[3:56.82] three to eight years experiences where
+[3:59.64] we are at till now okay I just share my
+[4:02.28] screen
+[4:08.88] if that's okay with you
+[4:10.68] yeah yeah go ahead
+[4:12.42] okay I'll just share my screen uh
+[4:19.68] okay so this is the poll that we are
+[4:21.30] taking uh the slider link is
+[4:23.88] in the chat
+[4:25.98] again I'll just share this
+[4:29.04] holes
+[4:32.94] any resources for extreme beginners
+[4:35.16] Amazon for SD one level generally they
+[4:38.70] do ask relevant questions for SD ones as
+[4:41.34] well
+[4:43.08] Arun would you like to take this like if
+[4:45.18] there is a person who's just starting
+[4:46.44] off with a design
+[4:47.94] it has absolutely no idea maybe has done
+[4:50.04] only corporate programming or you know
+[4:51.90] small projects or maybe has worked only
+[4:54.96] on machine learning and is looking to
+[4:57.54] switch to software engineering how do
+[4:59.70] you how do you make them start just for
+[5:02.70] the first time they are not in an
+[5:04.08] internship also so extreme beginner I
+[5:06.00] think it would be that yeah
+[5:07.74] okay uh so my recommendation to them
+[5:10.32] would be uh first start with problem
+[5:12.36] solving basic problem solving uh then
+[5:14.94] you should go for oops concepts are very
+[5:18.18] much needed in uh deciding design
+[5:20.40] patterns and whatnot then after you are
+[5:23.22] done with uh you have few experience in
+[5:25.62] solving problems you have learned a few
+[5:28.20] algorithms and you're very much familiar
+[5:30.24] with loops then you can go ahead and
+[5:31.92] start designing systems you can uh start
+[5:34.38] with very easy systems also uh let's
+[5:36.90] take the let's take an example of car
+[5:39.12] parking let's say you take that and you
+[5:41.64] start designing that and then you can
+[5:43.68] straighten like this you can move on to
+[5:45.60] the complex systems
+[5:48.30] okay okay so and would you say they need
+[5:51.78] to learn anything beforehand any design
+[5:53.88] patterns or you know should they work on
+[5:56.16] their own project before what would you
+[5:58.86] suggest would be so
+[6:00.84] so my recommendation would be after you
+[6:02.70] learn oh uh definitely any design
+[6:05.52] pattern you will be very easily able to
+[6:07.56] understand right uh so what my
+[6:09.60] recommendation would be first start
+[6:11.28] build your own uh for example let's take
+[6:13.92] car parking only car parking is not that
+[6:15.96] easy it's it's quite difficult actually
+[6:17.88] but you first write your own then you
+[6:20.04] will be able to see what all issues are
+[6:21.84] there go see a few design patterns and
+[6:24.00] how you can improve your code this way
+[6:25.68] you'll be able to learn more design
+[6:27.00] patterns and your code would become
+[6:29.94] greater great great great as you move
+[6:32.16] ahead
+[6:33.36] and this way this is the best way to
+[6:35.16] learn design patterns also I feel
+[6:38.16] okay
+[6:39.78] that's true practice makes perfect
+[6:42.30] uh okay let's take a couple of more
+[6:46.74] questions uh there are a few you know
+[6:49.20] comments that please post the slider
+[6:51.42] link on LinkedIn also
+[6:53.04] um I have posted on LinkedIn guys do let
+[6:54.78] me know if it's working and uh please
+[6:56.94] feel free to
+[6:58.26] you know send us your questions over
+[7:00.12] here in Q a or just let us know
+[7:03.60] where you're lying at in terms of
+[7:05.40] experience level I think this is one way
+[7:07.26] in which we can judge people very
+[7:08.64] quickly uh not accurately but quickly
+[7:11.22] that you know okay you have an
+[7:12.84] experience level of eight plus years
+[7:14.04] probably you are an expert uh you're a
+[7:16.08] college undergrad means you are not you
+[7:18.72] haven't started with global design so
+[7:20.04] like I said it's not accurate but it's a
+[7:22.08] quick way
+[7:26.88] okay there's one more question Priya
+[7:28.74] bansal is asking
+[7:30.24] okay
+[7:31.40] lld round tends to be become machine
+[7:34.44] coding around
+[7:36.72] how to analyze how much depth we need to
+[7:38.76] cover during these interview times okay
+[7:41.58] uh Arun do you want to take this
+[7:44.34] yeah uh so uh first of all uh how much
+[7:48.00] depth is just decided in within the
+[7:49.86] interview if the interviewer wants you
+[7:52.32] to go into the depth of it or he just
+[7:54.72] ask you to be superficial so and how's
+[7:56.88] that decided uh when you start with
+[7:59.34] jotting down the points system
+[8:01.02] requirements that's the first thing like
+[8:03.06] we uh like you must have seen in the
+[8:05.28] last video also we jot down the system
+[8:07.20] requirements and then we started moving
+[8:09.36] into the use case diagram now what
+[8:11.40] happens in our interview is the
+[8:12.66] interview can go in any direction
+[8:13.98] whatever uh interviewer is not convinced
+[8:16.98] whether he can go into depth of it so
+[8:19.20] you just by the interview link you might
+[8:21.78] not be able to get uh how much depth you
+[8:24.42] need to cover uh but yeah most of the
+[8:27.30] things are understood uh in this when
+[8:30.66] you start writing down the requirements
+[8:32.28] if the interviewer is not convinced with
+[8:34.08] the requirements they would uh question
+[8:36.36] you there and then but once you have jot
+[8:38.76] down all the requirements once you both
+[8:40.20] have agreed you and your interviewer
+[8:41.94] that you will be designing system on the
+[8:44.04] base of these few requirements then I
+[8:46.56] don't think he'll be he'll have any
+[8:48.48] other questions going forward
+[8:52.74] okay okay so that's
+[8:55.62] that makes sense yeah
+[8:59.12] also if you're worried about the machine
+[9:01.50] coding around like Arun said as they
+[9:03.78] keep going deeper and deeper they start
+[9:05.58] asking more on the engineering side of
+[9:07.32] things
+[9:08.58] in which case maybe
+[9:10.68] depending on your experience level if
+[9:12.54] you are looking for a
+[9:14.64] sd2 or sd3 role then they will be asking
+[9:17.58] you stuff like concurrency uh you know
+[9:19.68] locks how do you how do you keep low
+[9:22.38] latency how do you so low latency for
+[9:24.90] example you know you don't want a thread
+[9:26.58] to be blocked that's that's the level
+[9:28.62] that we can go to in an interview we
+[9:30.18] can't do like uh a lot of optimizations
+[9:33.24] but yeah no latency is one thing maybe
+[9:35.46] using the right data structure okay it
+[9:37.92] won't be as difficult as
+[9:39.96] and I'll go around but they'll ask you
+[9:42.12] something simple like are you going to
+[9:43.86] use a hash map here are you going to be
+[9:45.42] using a
+[9:47.34] a list over here why would you use that
+[9:49.98] basic things
+[9:52.20] okay
+[9:53.52] this is interesting are you comfortable
+[9:55.14] with LED rounds 19 people have voted at
+[9:58.08] 20 now and we are seeing most of
+[10:01.74] most of the votes are on one so they are
+[10:04.68] not comfortable with LED
+[10:06.42] uh yeah very interesting so
+[10:09.36] what's driving that is it that you know
+[10:11.94] you haven't given an LED round or you
+[10:14.16] have given it and it didn't work out
+[10:16.14] uh that could be one thing maybe you can
+[10:17.82] let us know in the in the Q a
+[10:20.34] okay uh there's a couple of questions
+[10:21.90] that we have over here let's take
+[10:23.76] questions for four more minutes before
+[10:25.26] we start
+[10:27.84] so the highest voted question is do we
+[10:29.76] need to learn each and every design
+[10:31.32] pattern
+[10:32.34] if not what is common and
+[10:34.92] important ones that we must
+[10:37.62] that everyone must know
+[10:39.90] do we need to learn each and every
+[10:41.58] design pattern I mean if you know it
+[10:43.68] it's kind of useful only but if if not
+[10:46.92] what are common and important ones that
+[10:48.42] everyone should know so if you had to
+[10:50.58] rank order design patterns or if you had
+[10:52.26] to say the three most or five most
+[10:55.02] important design patterns which ones
+[10:56.70] would you choose
+[10:57.90] uh so uh to this let me ask the answer
+[11:02.16] the first question uh do we need to
+[11:04.14] learn each and every design pattern so
+[11:06.06] to this my answer would be uh nobody can
+[11:08.58] actually learn all the design patterns
+[11:10.14] right uh it uh you would get better and
+[11:13.86] better in deciding with practice first
+[11:15.84] of all second uh if not what are the
+[11:18.78] formulas so there are frequently used
+[11:20.76] design patterns for example facade
+[11:22.50] pattern is one uh which is most
+[11:24.48] frequently used uh Singleton pattern is
+[11:27.06] one which is very uh commonly used uh
+[11:29.88] publisher subscriber pattern is one
+[11:31.56] which is very much used for example in
+[11:34.02] social media you can use it or like
+[11:37.02] social media apps with one such example
+[11:38.88] and it covers a whole whole lot of
+[11:41.10] systems like Twitter Facebook Instagram
+[11:43.82] uh YouTube also now nowadays they also
+[11:47.10] send notifications uh to the subscribers
+[11:49.68] uh publisher subscribers fourth I would
+[11:52.26] recommend uh then decorator pattern is
+[11:54.48] one which I would recommend that you
+[11:57.00] must know it's quite watching yeah I
+[11:59.76] guess really website that you would
+[12:01.68] suggest people to go and just read the
+[12:03.60] theory like I find this one pretty
+[12:05.76] useful refactoring Guru
+[12:07.92] okay
+[12:09.60] um
+[12:10.38] like this is a lot of this is useful
+[12:14.76] um design patterns let's just go to
+[12:16.62] design pattern let's say creational
+[12:19.08] there's quite a few I think factories
+[12:20.40] like
+[12:21.18] Ultra common Builder is super common
+[12:23.70] Singleton again very common
+[12:25.86] yeah okay uh
+[12:28.68] there's another interesting uh question
+[12:30.54] which has come up which is
+[12:35.06] any idea
+[12:37.64] okay
+[12:39.42] so would you like to say no let's let's
+[12:43.14] keep it in stealth uh it's not stealth
+[12:45.60] actually we are working on lnd course
+[12:47.10] Akash thanks for the question uh and uh
+[12:49.74] it's it uses these things like design
+[12:53.46] patterns some some basic understanding
+[12:55.38] of course we explain what the design
+[12:57.06] pattern is also and how it works in this
+[13:00.24] particular question but if you just want
+[13:02.40] to use design patterns or if you want a
+[13:04.62] textual summary of what design patterns
+[13:06.78] are I would strongly suggest you try
+[13:08.52] this website I've been saying it for a
+[13:10.80] while now nobody goes when I say high
+[13:13.50] level design please go for uh Martin
+[13:15.48] klapman's book
+[13:17.04] designing data intensive applications I
+[13:19.32] don't know how many people have read it
+[13:20.64] but it's a really good book this website
+[13:22.98] is also really good it gives you a good
+[13:25.38] gist okay uh if you want to see them
+[13:27.90] happening in practice Yeah we have at
+[13:30.06] interview ready high level design
+[13:31.14] questions and for lower level design we
+[13:33.96] are creating a course so that it helps
+[13:35.22] you
+[13:36.00] primarily for an interview preparation
+[13:37.56] and upskilling
+[13:38.76] but the theory is already covered so we
+[13:40.62] don't want to cover it again and again
+[13:42.06] uh
+[13:43.50] we'll cover it only for the questions
+[13:44.88] that we are doing okay so the second
+[13:47.04] part of the question which are the
+[13:48.84] important ones Factory method or factory
+[13:51.30] pattern
+[13:52.80] um Builder Singleton in my opinion uh
+[13:56.84] structural ones I would say
+[14:02.04] I've heard a lot of adapter and all that
+[14:03.96] but I've never really used it decorator
+[14:05.52] is very common so simple that in fact I
+[14:07.32] I don't even think this is the design
+[14:08.70] pattern it's like Common Sense uh
+[14:13.56] I don't know about this one I get
+[14:14.88] composite uh flying weight I guess I
+[14:17.40] have never really used these much
+[14:19.68] facade like you said uh this is also
+[14:22.20] yeah
+[14:23.28] this is also a thing
+[14:24.98] in behavioral there is
+[14:28.08] chain of responsibility
+[14:30.60] I had seen in one project State and
+[14:32.76] strategy being used together and that
+[14:34.92] code never went to plot so oh we can
+[14:38.24] yeah people read design patterns and
+[14:41.16] they just go and they're like yeah okay
+[14:42.72] but State pattern I think is is actually
+[14:45.66] quite common uh depending on the state
+[14:48.06] of this object
+[14:49.26] treated in a different way strategy
+[14:54.42] I mean it can be used usually there's a
+[14:57.00] Code repack there's not so much this
+[14:59.22] thing has to be done in a different way
+[15:00.54] okay and visited again I had seen this
+[15:03.78] nonsense one uh in some cases it must be
+[15:07.38] useful let me tell you in the same
+[15:08.76] company in the same project that I
+[15:10.02] worked for they first tried visitor
+[15:12.90] pattern then they tried State and
+[15:14.64] strategy together none of that code
+[15:17.34] ever had any impact on anything
+[15:19.74] okay so sometimes you might be
+[15:22.92] trying something for the sake of trying
+[15:24.42] it don't do that uh important ones may
+[15:27.00] be chain of responsibility uh state
+[15:30.24] in structural facade adapter yeah and in
+[15:34.44] creational Factory Builder and Singleton
+[15:37.08] creational is more often a design
+[15:39.24] pattern problem because dependencies is
+[15:40.86] a problem
+[15:41.82] and when dependencies are complex or
+[15:45.18] creating objects is complex that time
+[15:46.80] you want to use certain patterns which
+[15:48.18] are well known in the industry this is a
+[15:49.92] place to go I haven't shared it uh is it
+[15:52.26] I haven't shared this link I'll just
+[15:53.46] share it here
+[16:00.00] refactoring Guru place you can Google
+[16:01.80] this also
+[16:03.12] and when you are Googling it uh maybe
+[16:05.04] you also want to get some
+[16:08.34] advice on where to launch system design
+[16:10.56] which is a pretty decent website
+[16:12.06] interview ready
+[16:15.06] okay yes
+[16:22.80] but man
+[16:24.54] computer researcher this is the book
+[16:26.04] that I'm talking about
+[16:27.84] you can buy it on Amazon or I think
+[16:29.76] O'Reilly also sells it
+[16:32.46] okay
+[16:35.58] okay I think we have taken a few
+[16:37.38] questions uh
+[16:43.02] this I think was the most important
+[16:44.64] question that we had
+[16:46.14] what would you recommend for Learning
+[16:47.94] System design that's taken care of
+[16:49.20] that's great uh High gaurav when we
+[16:51.12] start lld course yes we are we are
+[16:54.36] working on it I have never given
+[16:55.74] anything yes
+[16:58.74] uh I have a Amazon SD one interview soon
+[17:01.68] any advice regarding LED now to watch
+[17:03.66] this interview
+[17:05.04] uh watch this mock interview and let's
+[17:07.02] see if that helps you out how to buy
+[17:09.54] time while thinking about requirements
+[17:11.28] don't try to uh be too fast also keep
+[17:15.00] the interviewer in the loop talk to them
+[17:16.74] don't try to buy time involve them in
+[17:19.32] the discussion
+[17:20.46] okay uh can you please tell about the
+[17:22.50] time planning for the little round I
+[17:23.82] mean how much time for discussing
+[17:24.72] question requirements designed I'll go
+[17:26.22] I'll go for question there is no set
+[17:28.86] pattern the faster you complete a
+[17:30.72] question the more impressive it is
+[17:31.92] simply and so I and Arun are working on
+[17:35.16] a method to do this the fastest way
+[17:38.40] possible okay as you'll see today
+[17:42.78] is it required to write algorithmic
+[17:44.34] logic in lld for example I got a job
+[17:46.02] scheduling algorithm should I write
+[17:47.10] different types of scheduling algorithms
+[17:48.48] or do you want to take this we'll take
+[17:50.28] this
+[17:51.84] uh should need not to write a different
+[17:54.38] algorithms uh just you uh so there a
+[17:58.02] person is not looking uh at the most
+[18:00.36] optimized algorithm actually personally
+[18:02.70] is looking at the interviewer is looking
+[18:04.56] at the most optimized code
+[18:07.80] so uh so do not think uh you might not
+[18:10.98] have to write the full full uh uh
+[18:13.50] function definition also you can just
+[18:15.60] give a signature of it and that would be
+[18:17.58] great
+[18:18.30] so in interview anyways time is very
+[18:20.52] very less they just want uh to see how
+[18:22.98] the activity flow how you how you
+[18:25.32] operate the system which functions are
+[18:27.12] called when are they called how do you
+[18:29.04] exit what is the overall activity flow
+[18:31.26] uh what all classes will you make how
+[18:33.48] will you interact how the customer will
+[18:35.64] interact with the system all of that
+[18:39.92] different different types of algorithms
+[18:43.50] makes total sense in fact if you write
+[18:47.16] the algorithm in the LED round also then
+[18:49.20] I mean I don't know uh
+[18:51.12] there are libraries which take care of
+[18:52.74] some of these things uh one question
+[18:54.54] which is kind of off topic so I removed
+[18:56.52] it which is basically uh I have a
+[18:59.10] startup that I'm working on an idea and
+[19:01.14] I've been doing algorithms and should I
+[19:02.94] make everything extensible from the
+[19:04.38] start my advice will be no just first
+[19:06.96] look at what the customer wants they
+[19:08.70] don't care about your algorithm as long
+[19:10.08] as the problem is being solved
+[19:11.82] they don't even care about tech like
+[19:13.50] Arun is also a startup founder and uh is
+[19:17.70] is that okay I don't know if I put it
+[19:19.50] out yeah
+[19:20.40] yeah
+[19:21.72] Arun doesn't just like me I don't does
+[19:24.18] not uh have a fascination with
+[19:27.78] technology
+[19:29.52] for the sake of Technology we just solve
+[19:32.04] problems and if tech is necessary to use
+[19:34.92] Tech okay
+[19:37.56] so lower level design uh
+[19:40.98] offer
+[19:43.40] management system
+[19:46.74] okay Inventory management
+[19:49.68] system
+[19:50.52] so
+[19:51.78] okay I don't you want to want to design
+[19:53.76] an inventory management system I'll uh
+[19:56.28] I'll walk through some of the
+[19:57.42] requirements that you can tell me if
+[19:59.46] they are what is expected of an
+[20:01.62] inventory management system
+[20:03.30] sure
+[20:04.68] okay
+[20:05.82] so the first thing I can see is
+[20:08.40] um
+[20:10.44] add products
+[20:13.68] this would be something even in a small
+[20:15.54] shop we would need a type of product
+[20:17.94] okay this will help our onboarding you
+[20:20.10] can say Okay product on boarding
+[20:27.00] okay
+[20:29.22] um another thing would be
+[20:32.52] I mean a dating product value
+[20:35.52] yeah
+[20:37.20] so I'll make this more explicit I will
+[20:40.86] say
+[20:41.88] add product units
+[20:45.30] and remove product units
+[20:48.66] would that make sense like if I've
+[20:50.22] gotten if a customer purchases something
+[20:51.90] I remove that product from my
+[20:54.54] uh total list yeah and when I get a
+[20:57.90] truck in the morning
+[20:59.22] it fills the uh you know stop that's
+[21:02.76] when I'm adding
+[21:04.20] okay so in this way I'm able to manage
+[21:06.06] to some extent and I can add product
+[21:07.50] types also okay uh
+[21:11.88] okay
+[21:15.84] is there anything uh else that I need to
+[21:18.72] do uh I need to manage
+[21:20.82] the price of the product but is that in
+[21:22.80] product onboarding
+[21:24.84] uh so uh like you said uh in the last 10
+[21:27.54] product uh change product values so in
+[21:29.94] that you can change the quantity also in
+[21:31.62] the price also the values could be both
+[21:34.44] of them and replacement also uh shelf
+[21:38.46] actually where is that place because in
+[21:41.10] Amazon generally uh they have robots to
+[21:44.04] pick up the uh product it gets packaged
+[21:47.82] itself so they have a proper shelf Place
+[21:49.68] uh where that product is
+[21:51.90] okay so uh
+[21:54.00] so this is going to be a product
+[21:57.42] location
+[21:58.92] uh at this point we are now starting to
+[22:00.90] get complex because in a small shop I
+[22:02.94] can manually go and just put the
+[22:05.04] products in the right place in a
+[22:06.72] warehouse I need uh I need information
+[22:10.38] like in this product onboarding I need
+[22:12.54] what is the volume of that product
+[22:14.52] because if it's too big then I can't
+[22:16.74] place it in the place and also how heavy
+[22:19.26] is the product maybe based on that I
+[22:20.58] want to put it in the ground the lowest
+[22:22.56] tier and take it so the weight so this
+[22:27.30] this should actually capture that I need
+[22:29.88] weight and volume
+[22:32.34] Dimensions it will be even more accurate
+[22:35.70] so you can have three sort shells for
+[22:38.46] for to keep to simplify it let's make it
+[22:41.34] small medium big that's it three types
+[22:43.68] of shells
+[22:44.82] okay okay small
+[22:47.82] medium
+[22:52.14] okay I'll just make it s m and L
+[22:57.24] you've spoken like a true Problem Solver
+[22:59.16] yeah small medium for now let's just
+[23:01.98] start with the simple basic thing bucket
+[23:03.84] them okay we can update product prices
+[23:06.36] we can tell where it is located so a
+[23:09.06] particular shelf a particular location
+[23:10.92] we can add units
+[23:14.70] I mean adding units like even if I say
+[23:16.68] 10 units then yeah it has to be assigned
+[23:18.60] particular shelf uh slots also okay
+[23:21.84] remove from some slots
+[23:25.20] um it's almost like Hotel cooking right
+[23:27.30] like this
+[23:29.04] uh no something some things would be
+[23:31.44] there uh yeah some things might not have
+[23:33.90] anything
+[23:34.74] right right because humans come and book
+[23:37.26] one one of them uh you can't put them
+[23:39.84] anywhere you like they might be choosing
+[23:41.34] the seat also okay yes
+[23:44.16] um I can't think of any other
+[23:46.20] requirements uh
+[23:48.42] are there any other requirements like uh
+[23:51.00] is there a discount offer that I want
+[23:52.56] what about a sale should I take that
+[23:55.14] also into consideration or should I have
+[23:56.58] a that has nothing to do with inventory
+[23:58.86] uh yeah no that has nothing to do with
+[24:01.50] inventory what we can think of here is a
+[24:04.56] package a product in inventory uh some
+[24:08.82] of the products packaged are placed and
+[24:10.98] they would be out for delivery after
+[24:12.24] some time so you can take care of that
+[24:14.10] as well
+[24:15.06] okay okay okay so the the status of unit
+[24:20.70] uh so whether it is uh
+[24:24.42] uh available
+[24:27.18] packaged
+[24:29.64] already
+[24:32.16] I mean uh
+[24:34.20] in transit
+[24:40.02] in a warehouse I just care about if it
+[24:42.36] is available
+[24:43.98] or it has to be picked up
+[24:46.68] uh okay so now now if it is available
+[24:49.68] that's okay otherwise it is booked
+[24:52.14] uh then it is
+[24:53.75] [Music]
+[24:57.12] a Bad Robot let's say then it is
+[24:59.34] packaged and it is ready
+[25:01.50] for delivery yeah so maybe
+[25:04.22] yeah so what I'm what I'm seeing is
+[25:07.08] there are multiple states that
+[25:10.02] a product can have a unit can happen
+[25:12.92] if you have a practical product okay
+[25:17.88] okay okay
+[25:21.30] let me actually imagine as a customer
+[25:23.34] what happens or and then let me try to
+[25:25.26] imagine how the robot what's happening
+[25:26.40] so as a customer I walk into the shop I
+[25:28.74] look at the
+[25:30.24] product that I want to buy I just pick
+[25:32.70] it up I go to the billing counter
+[25:35.40] um yeah now at the billing counter what
+[25:37.32] should happen is when I purchase the
+[25:39.12] product I leave so for me it's actually
+[25:40.98] extremely simple for the shopkeeper they
+[25:44.10] need to know
+[25:45.30] which product was picked so maybe the
+[25:47.82] barcode when they swipe that barcode
+[25:50.10] that product is uh you know noted uh one
+[25:54.36] unit of that is subtracted
+[25:57.54] and the bill is generated the bill
+[25:59.82] generation is a separate thing we don't
+[26:01.44] care about that yeah it's just they have
+[26:03.60] to subtract it by one so that is easy
+[26:06.18] okay so there's one more thing that
+[26:08.10] happens in the warehouse uh so whatever
+[26:10.68] is finished now so every day we have to
+[26:13.26] purchase orders also right so the water
+[26:16.74] shelves are able to we have to have
+[26:19.08] those lists that okay these products are
+[26:21.00] finished we need to buy them
+[26:23.58] so our warehouse should have that list
+[26:25.80] as well
+[26:26.94] okay so how many uh were booked today is
+[26:31.08] that something that we want
+[26:33.06] or what is for example
+[26:36.42] uh you're having Mouse oh let's say
+[26:38.82] keyboard okay so so 10 keyboard are
+[26:41.46] there in your shelf let's say now today
+[26:44.46] all the 10 are finished now
+[26:46.86] so obviously you would want to buy 10
+[26:49.08] keyboards at the very next day right
+[26:52.56] yeah you should be able to know okay the
+[26:54.42] keyboards are finished now and I need to
+[26:56.34] buy them so that you can sell them ahead
+[26:58.98] so that would come to know from the
+[27:00.78] warehouse already
+[27:02.16] right so uh maybe maybe some sort of a
+[27:06.00] do you think a small report
+[27:09.48] yes end of day right yes yes so let's
+[27:13.98] put a reports of finished finished
+[27:16.08] products
+[27:17.70] like the products which are finished in
+[27:19.32] the warehouse
+[27:20.64] and
+[27:22.44] uh this is one thing and the next thing
+[27:24.48] which you can have is uh what was the
+[27:26.88] sale which you did probably that can
+[27:29.70] also be there and I think we'll be good
+[27:31.50] to go
+[27:32.58] yeah I think
+[27:35.70] correct I guess reports and analytics
+[27:38.22] can be uh we should note those events
+[27:40.50] that when a person is purchasing
+[27:41.82] something or something at the time we
+[27:44.16] take those and separately we can
+[27:45.96] generate a report out of it that 13
+[27:47.76] keyboards were sold in total we have 15
+[27:50.64] keyboards so you know
+[27:53.94] probably get 13 more keyboards tomorrow
+[27:55.68] so okay
+[27:57.72] okay so this is great this looks great
+[28:00.60] okay then then I'll just uh
+[28:03.66] go ahead with the user
+[28:12.54] also guys I'm using lucidchart you can
+[28:14.94] use any software that you like
+[28:17.34] always I mean I should have checked with
+[28:20.40] Arun first is this okay if I use the
+[28:22.44] software
+[28:23.36] right so in interview it's not but yeah
+[28:26.82] for now it is
+[28:28.74] I mean why would you not allow it in an
+[28:30.60] interview
+[28:31.68] okay so I would allow in an interview
+[28:33.54] actually but it depends uh really on the
+[28:36.24] interviewer right you're right actually
+[28:38.82] that's that's one thing like you would
+[28:40.14] allow it because I guess you are
+[28:41.88] reasonable yeah I I mean to say like uh
+[28:46.32] always ask the interviewer if possible
+[28:48.06] can I can I use this tool because it
+[28:51.66] simplifies
+[28:53.22] some of the things that you're trying to
+[28:54.72] do like drawing
+[28:56.34] writing neatly uh these are things that
+[28:58.80] I see
+[28:59.88] many candidates are not able to do and
+[29:01.68] for no fault of their own
+[29:03.90] sometimes it is their fault they haven't
+[29:05.28] even asked but sometimes yeah like if
+[29:08.88] the interviewer is adamant that's their
+[29:10.86] fault not yours if you don't ask you
+[29:13.68] will they'll never say yes
+[29:15.72] so use as many tools as you possibly can
+[29:18.06] to make your interviewing process easy
+[29:20.70] it's going to be a tough interview
+[29:22.68] anyway so it's best to have all the
+[29:25.20] tools that you possibly can we use an
+[29:26.52] IDE if you can use an ID nothing like it
+[29:28.80] if they are going to force you for
+[29:30.30] Google Docs then okay we'll handle it
+[29:32.40] when we need to
+[29:35.16] okay so these are seven requirements
+[29:37.62] that we have
+[29:39.18] um
+[29:42.18] add and remove is largely update product
+[29:44.46] unit
+[29:45.90] yeah
+[29:48.24] I would say we have roughly six
+[29:51.30] requirements only
+[29:52.92] product units the count has to be
+[29:54.72] updated
+[29:55.62] we need to onboard products the products
+[29:59.40] have a particular weight and
+[30:01.92] size uh the product price can be updated
+[30:06.72] is this part of the inventory management
+[30:08.64] system yes
+[30:10.62] okay okay I am I'm seeing this is so we
+[30:14.82] can have it for now
+[30:17.46] yeah I think these two will be strongly
+[30:19.38] coupled so maybe we'll make it a single
+[30:20.94] requirement early yeah
+[30:23.04] yeah okay and then we have product
+[30:24.90] location where is it being stored okay
+[30:27.72] that's dependent on the weight end
+[30:29.82] size
+[30:31.32] so one two three four and five yeah
+[30:33.72] report an analytics of how many sales
+[30:36.48] have been made how many products have
+[30:38.34] been sold which products have been sold
+[30:40.44] so on uh and the status of each unit is
+[30:43.50] it packaged is it
+[30:45.30] yeah is it cooked and everything okay so
+[30:48.18] this this took us some time this took us
+[30:50.34] 10 minutes uh now the proof is in the
+[30:53.46] pudding let's see if this actually
+[30:54.54] speeds up our thinking so I'll now uh
+[30:57.24] before going ahead do you really think
+[30:59.16] these are the requirements of the user
+[31:02.22] yeah for the user uh who's
+[31:05.22] using the inventory management system
+[31:09.12] they just
+[31:11.04] care about
+[31:13.32] updating Product Company
+[31:15.90] yeah yeah
+[31:17.64] so just this
+[31:19.98] product yeah they care about this also
+[31:22.44] okay this is manual let's say this is
+[31:24.60] manual
+[31:25.74] product price let's say
+[31:34.02] yeah okay let's let's put it here
+[31:36.96] these are two things that the user cares
+[31:38.94] about that they do manually yes yes
+[31:42.84] so
+[31:45.12] okay and reports analytics they view it
+[31:47.52] themselves but they don't say this is
+[31:49.80] generated by System yeah this is
+[31:51.78] generated by the system yeah yes maybe
+[31:54.24] they can get it on the email also so
+[31:55.68] whether they view it or not is like talk
+[31:58.32] to us
+[32:00.30] okay
+[32:01.50] status is handled and product location
+[32:03.54] is handled by the system yeah I think
+[32:07.32] you're right just reports and analytics
+[32:09.72] is the requirement of the system I feel
+[32:12.30] yeah
+[32:14.06] still let's see if we get a
+[32:25.74] okay
+[32:27.60] AWS is really good I concerned
+[32:36.78] okay uh so this
+[32:40.50] these are the requirements of a system
+[32:42.84] not
+[32:44.40] not the user okay yeah
+[32:48.24] okay so then we have two actors in the
+[32:50.34] system one of them can uh add products
+[32:54.60] and update product counts one of them
+[32:57.66] handles the location of the product and
+[33:01.02] the
+[33:02.16] reporting and analytics generation and
+[33:04.74] also the status of every product
+[33:06.72] okay users
+[33:09.18] yeah this this guy doesn't do it and
+[33:10.80] that's a that's some input to the system
+[33:12.36] that means purchase something so
+[33:19.58] just to clarify a user is a shopkeeper
+[33:23.10] is that or a warehouse manager
+[33:25.80] yeah user could be a shopkeeper also you
+[33:29.22] warehouse manager also or some employee
+[33:32.46] also so there could be different uh
+[33:34.68] people actually so in people also you
+[33:36.66] can have levels so you can have a worker
+[33:39.18] you can have a admin you can have a
+[33:41.40] manager
+[33:42.72] so but for this interview let's leave it
+[33:47.28] let's just talk about admin
+[33:49.92] okay then
+[33:52.86] that's good
+[33:55.94] okay
+[33:58.46] I am thinking that you know
+[34:01.62] update product count
+[34:03.86] is something that an admin sometimes
+[34:06.36] needs to do
+[34:07.68] a user sometimes needs to do but most of
+[34:10.32] the times all we need is yeah so exactly
+[34:15.66] but price is something that a user does
+[34:18.96] yeah so so updating uh could be both of
+[34:22.62] them's responsibility here
+[34:31.44] okay I I agree uh maybe both of them do
+[34:35.46] it sometimes yeah yeah
+[34:37.98] okay product onboarding is something
+[34:39.60] that a user only does product location
+[34:42.84] this is a system reports and analytics I
+[34:45.66] I guess they create it and then they are
+[34:48.24] viewed by
+[34:50.04] uh the user
+[34:52.68] yeah
+[34:55.08] okay
+[34:58.68] okay
+[35:00.30] I don't know if this is strictly uml but
+[35:02.52] uh roughly I think the requirements are
+[35:05.16] here anything else that you would like
+[35:07.14] uh me to look into
+[35:09.42] uh no I think this should be good
+[35:12.60] okay
+[35:14.04] let me uh now try to
+[35:18.18] convert this into a class diagram
+[35:20.76] sure but the idea that doing this is
+[35:23.46] going to speed up the code later on
+[35:26.10] yeah
+[35:27.78] so okay I'll take the first class which
+[35:29.82] is user
+[35:34.02] okay and uh
+[35:36.60] let me in fact
+[35:46.08] I just draw using this class diagram as
+[35:48.60] my reference
+[35:57.30] user can do product onboarding uh and
+[36:00.90] update box
+[36:02.04] unit counts okay so one thing I I'm
+[36:05.64] going to do is I'm not going to assume
+[36:08.76] registration of a user and all that I'm
+[36:11.04] just skipping for now if that's okay
+[36:12.54] yeah yeah that is okay
+[36:15.42] okay
+[36:19.50] so user okay a user uh
+[36:23.70] I'm assuming all users are admin is that
+[36:25.62] also all right but they have full access
+[36:28.08] okay yes for now
+[36:31.20] all right
+[36:35.22] so they can onboard a product means add
+[36:38.34] product
+[36:50.70] okay and the product details will be
+[36:53.58] passed in as a as a parameter here
+[36:56.76] they can update for our account so
+[36:58.92] update
+[37:01.80] account and they pass in the product ID
+[37:03.72] and the count reduces okay so in case
+[37:07.08] you are getting rid of products uh there
+[37:08.82] is one problem if I have some products
+[37:11.58] in shelves let's say a product Type A
+[37:15.24] is there on the shelf and now I say
+[37:17.46] product type a equal to zero I update
+[37:19.20] the count then that shelf also what
+[37:22.02] happens to that shelf
+[37:23.58] that becomes empty
+[37:25.56] that becomes you can imagine yeah
+[37:28.94] the problem is okay yeah that's that's a
+[37:32.82] admin is specifically saying remove this
+[37:35.10] product or remove this unit then those
+[37:37.56] shelves become empty okay so this is a
+[37:40.02] rare admin action
+[37:42.06] foreign
+[37:43.92] let's also look at what the server can
+[37:45.78] do
+[37:46.50] or the system can do it can
+[37:49.02] generate reports and analytics so
+[38:00.24] generate reports
+[38:04.62] okay it can also set
+[38:07.92] or get a product's location so manage
+[38:10.20] product location
+[38:19.50] and then set
+[38:21.42] product
+[38:24.12] location
+[38:27.60] okay uh
+[38:29.52] also it can
+[38:32.64] see the status of a unit so manage the
+[38:34.92] status of a unit as available
+[38:39.60] update
+[38:42.72] status and in this it passes product
+[38:46.92] yeah okay
+[38:53.52] yeah this is we have talked about
+[38:55.26] product a lot would you mind creating
+[38:57.84] products also yes yes uh absolutely
+[39:03.84] so there is a object called Product
+[39:07.92] it has an ID it has let's say a price
+[39:12.42] at this point I'm not assuming any
+[39:13.86] offers or coupons or discounts
+[39:16.20] um okay it has a description
+[39:20.76] it has a like we said I'll just Define
+[39:23.70] over here the product
+[39:25.92] we mentioned as a price has a weight and
+[39:29.28] a size
+[39:30.72] yeah so
+[39:34.62] wait
+[39:38.28] that's nice I guess what we are trying
+[39:40.08] to do is either Amazon warehouse or even
+[39:41.82] zepto or
+[39:43.56] um
+[39:44.36] so big basket Grocers
+[39:50.22] or not just e-commerce store a normal
+[39:52.50] Mall also as an inventory right any Hall
+[39:56.10] which you go that also has an inventory
+[39:59.22] that's true
+[40:00.54] that's true yeah okay so
+[40:03.48] we talked about product here uh product
+[40:05.70] count is being updated we have uh
+[40:08.22] reports so maybe report object can be
+[40:10.32] created but we'll first look at this
+[40:12.00] thing location which is actually the
+[40:14.64] next video
+[40:17.30] so actually this is the product It's
+[40:19.44] also two things that I have to remember
+[40:21.12] is unit
+[40:24.06] uh we are mentioning this in the
+[40:27.24] in the use case diagram products have
+[40:28.86] units so it's of a particular product ID
+[40:36.06] a unit has this so should I say a unit
+[40:38.76] has size and weight or should I have it
+[40:41.82] in product is a question I'm thinking
+[40:43.50] right now uh how do I
+[40:47.10] so uh so what you can do is like we have
+[40:50.22] discussed in the requirements that the
+[40:52.26] shelves would be of three types small
+[40:54.36] medium
+[40:55.68] right so you can define a product type
+[40:58.32] also that if it is small it can be put
+[41:00.90] in uh its location could be small medium
+[41:04.08] and big all three locations could be
+[41:05.64] there if it is medium so it could be put
+[41:08.04] in medium and large only and if it is of
+[41:10.44] type large then it would only be put
+[41:12.48] into large height last time which means
+[41:14.82] you will have to create a class shelf
+[41:16.98] also now sure okay okay so I've kept
+[41:20.40] location as that class
+[41:22.44] which says that there is a okay type
+[41:25.62] small medium and large and so shelf
+[41:28.80] actually doesn't have anything else
+[41:31.02] except an ID location
+[41:33.48] uh yeah so a unit is of a particular
+[41:37.32] product
+[41:38.40] and it is stored in a particular
+[41:39.90] location
+[41:40.86] a unit also has an ID let's say
+[41:45.48] and it it needs a status a unit needs a
+[41:48.54] status
+[41:49.98] is it sold
+[41:52.56] is it uh booked right now I mean is it
+[41:55.62] available
+[41:56.88] what is it like
+[41:58.44] so you can have two status for now uh
+[42:02.16] uh in the uh so inventory means it is
+[42:05.46] not sold
+[42:06.42] uh in the transit means it is getting
+[42:08.76] packaged and delivered means it is ready
+[42:12.36] for delivery so you can have an enum
+[42:14.52] let's check
+[42:15.60] off State okay
+[42:17.10] I mean number Status where inventory
+[42:18.92] Transit Transit
+[42:21.30] and the delivery
+[42:27.62] yeah okay so
+[42:31.14] every product has a location so if it is
+[42:33.72] in transit does it have a location uh in
+[42:36.00] the sense
+[42:37.26] it's been removed from the location I
+[42:39.00] think I mean that location will come now
+[42:42.00] yeah it's been removed
+[42:43.98] okay so it's removed from the location
+[42:46.02] and yeah
+[42:48.72] should I okay so I think this will come
+[42:51.06] a little later uh maybe when I'm writing
+[42:53.40] the code but I'm just thinking that
+[42:54.78] should a location also have a Boolean
+[42:56.82] value or a unit ID which is occupying it
+[43:00.48] so we have a one-way mapping where unit
+[43:02.70] is pointing to a location this so I'll
+[43:05.52] just mark it in a separate column this
+[43:07.08] is pointing to this
+[43:09.24] and this is pointing to this
+[43:13.14] but should a location
+[43:15.78] also say if it is occupied that you know
+[43:18.90] the unit is this one maybe I can take
+[43:20.88] care of that separately maybe I can
+[43:24.42] yeah maybe that can be taken care of
+[43:26.28] separately
+[43:29.16] one unit can only occupy one location
+[43:32.16] one location can have different units
+[43:34.32] Depending on time
+[43:36.36] yes yes
+[43:38.34] okay
+[43:39.92] so you're
+[43:42.24] so you're you're having ID right which
+[43:44.88] is a unique thing right yeah what is the
+[43:48.60] unit yes
+[43:50.70] okay so okay uh we have in a user what
+[43:56.28] about a user user has almost no State
+[43:59.28] because
+[44:01.14] we are not handling permissions or any
+[44:03.30] kind of uh
+[44:04.80] yeah everyone has the same permission so
+[44:07.14] it has no State system also does not
+[44:09.24] have any state
+[44:11.46] uh
+[44:13.50] okay
+[44:14.88] uh what about the data members
+[44:18.54] we have talked about it will have list
+[44:21.00] of products right system will have list
+[44:23.16] of products
+[44:25.50] yeah system has a list of products yes
+[44:27.48] yes yes and the system also has a
+[44:30.42] location that's the list of units
+[44:34.80] okay so yes that's true so in fact let
+[44:38.46] me pull this up again and say what are
+[44:41.28] the things that a system needs the
+[44:43.14] system has
+[44:46.98] list of products yes we need that
+[44:51.30] also location was being managed by
+[44:53.28] System
+[44:54.30] yes
+[44:55.62] so system will have list of all the
+[44:57.54] shells availability right yes
+[45:01.02] some something has to take care of this
+[45:02.76] so
+[45:03.78] uh get
+[45:06.18] list
+[45:07.86] or let me make it an even simpler uh
+[45:10.62] thing get product
+[45:14.22] if you pass in the ID you get the
+[45:15.72] product uh add product
+[45:19.26] okay
+[45:20.94] I guess that's taken care of
+[45:23.16] by this user
+[45:25.94] get product also is taken care of now
+[45:30.48] yeah Place product Maybe
+[45:36.12] so it sees some location which is free I
+[45:40.44] think right now the first location which
+[45:42.36] it finds which is and uh or adequate
+[45:45.12] size it just fills it so this is going
+[45:47.64] to use an algorithm
+[45:49.50] so
+[45:53.28] and finally uh
+[45:57.30] I mean products can have expiry also
+[45:59.22] right
+[46:00.54] for now that
+[46:02.90] issue here yes
+[46:06.24] for now let's keep it aside but it is a
+[46:08.22] thing so we will if we can then we'll
+[46:11.16] see if we can manage this there is a
+[46:13.32] place product
+[46:14.58] uh algorithm and then there is basically
+[46:17.58] uh get
+[46:19.38] list
+[46:22.74] product list okay uh so yeah get unit
+[46:26.28] Place unit I would say is the right term
+[46:29.10] in our vocabulary
+[46:35.16] or getting the whole product list you
+[46:36.72] mean give me all the list of products
+[46:38.04] that are available so that a user can
+[46:39.96] purchase
+[46:40.98] yes
+[46:42.18] product list as well as of course uh
+[46:44.64] where will a system so if for example
+[46:46.80] you want to see the status of all the
+[46:48.42] shells in an inventory it happens right
+[46:50.82] a user goes and sees all the shells so
+[46:53.46] correct
+[46:54.96] product list and get shell status so you
+[46:58.80] can so basically it will have a list of
+[47:00.72] all the shells also now
+[47:02.88] okay get shelves
+[47:05.88] status let's say
+[47:07.74] and then this is the capability of the
+[47:09.96] system that we have
+[47:11.34] yeah
+[47:14.10] okay
+[47:15.42] walking back again uh for every unit you
+[47:19.08] can get and place a unit
+[47:21.08] and if you get a unit I guess you can uh
+[47:26.52] sort of get unit it's
+[47:29.52] retrieved the unit or remove unit
+[47:35.88] okay so you can explain me three flows
+[47:37.98] here now using this class diagram one
+[47:41.16] first flow you need to extremely is
+[47:43.98] when a product comes
+[47:46.86] so suppose the warehouse have bought off
+[47:49.26] got the truck of products so how would
+[47:52.26] that be placed in the proper shell so
+[47:54.60] one is product onboarding which you need
+[47:56.70] to explain me second is
+[47:59.16] second is how even up when somebody has
+[48:02.22] purchased the product
+[48:03.78] so from Shelf till the delivery what
+[48:07.56] what would be the activity diagram for
+[48:09.30] that and the third one should be at last
+[48:12.42] at the end of the day you need to show
+[48:14.10] me the report also
+[48:15.84] so okay that means so please tell me all
+[48:18.54] the details now so in the first part
+[48:21.78] where uh a set of products come in uh
+[48:25.74] and they need to be added to the system
+[48:27.26] uh at this point we are going to be I
+[48:30.90] think as a user I also need to be able
+[48:32.52] to add unit
+[48:33.84] basically
+[48:36.90] so I can do that as well
+[48:39.36] Okay add add product uh is adding a
+[48:42.24] product type in my mind so maybe I'll
+[48:45.18] uh this this adds like a new type of
+[48:47.94] biscuit has come in so okay I'm typing
+[48:50.76] the I'm adding the type of product so
+[48:53.16] that is this
+[48:55.32] this part
+[48:56.70] this is a all the metadata for the
+[48:59.52] product a unit is one instance of that
+[49:01.98] product
+[49:02.88] okay so once a truck comes in maybe with
+[49:05.82] 200 units I uh I'm going to call this
+[49:09.48] place unit function 200 times with okay
+[49:12.86] units
+[49:14.52] okay uh then uh This Place unit is going
+[49:18.30] to use its algorithm to put them in the
+[49:20.58] right locations and now my warehouse is
+[49:23.34] full
+[49:24.30] okay let us let us now assume that
+[49:26.46] orders come in a person wants to
+[49:28.32] purchase
+[49:29.46] so they mentioned
+[49:32.34] the type of product that they want to
+[49:34.02] buy and they say give me one instance or
+[49:36.72] three instances of it so right I will uh
+[49:40.62] I think I need to have some sort of
+[49:42.48] concept of an order also
+[49:46.02] a very basic concept I don't have money
+[49:47.94] or anything involved in this or the
+[49:49.20] status of an order I just have a clear
+[49:51.54] order which says
+[49:54.42] unit
+[49:55.74] uh
+[50:00.66] stuff unit I'll call this count
+[50:07.98] okay I'll take one step back actually
+[50:12.24] an order has n number of products
+[50:15.96] with each of them having different types
+[50:18.54] of units different number of units
+[50:21.78] so three million two boxes of chocolates
+[50:25.32] One keyboard
+[50:26.76] okay
+[50:27.96] so this this is a map
+[50:30.78] of
+[50:33.38] a product
+[50:36.06] to count
+[50:40.50] that is an order for me
+[50:42.48] okay so uh
+[50:45.24] so suppose uh some order has been placed
+[50:48.66] right
+[50:49.56] a system has to check if that product is
+[50:52.86] available or not right
+[50:54.84] yeah yeah so so now in this
+[50:59.10] so can't we make it something like this
+[51:01.44] a product we have said product
+[51:04.74] how many units are there you have
+[51:06.84] already taken care of yeah so in product
+[51:10.44] only trying to uh have a list of
+[51:14.48] units where it is placed
+[51:19.14] Okay the reason I'm not keeping that
+[51:22.80] here
+[51:25.04] is because I thought I'll keep it in
+[51:27.18] some other object like over here
+[51:30.12] in system okay okay that should be great
+[51:34.38] okay so if we then go to system and we
+[51:37.98] ask
+[51:39.60] can this order be fulfilled so for this
+[51:42.30] product where are the places that it is
+[51:44.10] being stored and filter out by status
+[51:46.98] equal to inventory so then I'll get a
+[51:49.80] count and I'll see can I satisfy the
+[51:51.36] sorter otherwise
+[51:53.16] gold
+[51:54.72] okay
+[51:55.92] okay
+[51:57.18] um now at this point I know that I can
+[51:59.46] satisfy so I have to take a lock on this
+[52:01.80] because there might be a parallel order
+[52:03.24] also working on the same thing so okay
+[52:05.54] uh the products that I'm
+[52:08.82] touching somehow I need some sort of a
+[52:10.92] lock on all of them
+[52:12.86] or I can make it sequential that per
+[52:15.90] order I go through sequentially so okay
+[52:18.66] and there is no way that you know two
+[52:21.30] concurrent orders will
+[52:22.80] come together right
+[52:25.68] I would
+[52:28.68] prefer if that were the case everything
+[52:31.80] is being taken sequently in a warehouse
+[52:34.02] also I mean it's I don't know if Amazon
+[52:36.30] can handle this kind of week
+[52:39.50] just everything happening sequentially
+[52:42.84] they are going to multi-thread it
+[52:45.06] um
+[52:47.16] I could also take locks on every object
+[52:49.62] here
+[52:50.40] it could create it but now you can
+[52:51.96] imagine for now you can imagine that uh
+[52:55.32] the orders would be taken sequentially
+[52:56.88] okay okay that is great so if that
+[52:59.64] happens then I'm going to take it
+[53:00.72] sequentially I'm going to find whether
+[53:02.76] it is possible or not I will then uh
+[53:05.70] update the account I'll also change the
+[53:08.04] statuses yes
+[53:10.32] and uh based on that then finally I will
+[53:13.02] go to the location I'll mark them as
+[53:16.74] once the robot goes and picks it up some
+[53:19.38] sort of
+[53:20.28] event has to come and somebody has to
+[53:23.16] come and do this cleaning task of
+[53:24.72] putting them in in transit or delivery
+[53:28.20] status and the robot has to basically
+[53:30.72] set the location IDs to
+[53:34.10] though the map that we have here that
+[53:36.36] which unit is being stored in
+[53:39.36] which location this has to change to
+[53:42.00] null
+[53:48.60] okay so when the product be purchased
+[53:51.66] when a unit has been picked up by the
+[53:53.94] robot
+[53:54.78] yeah there is no difference
+[53:58.52] yeah it's done no no it's done
+[54:01.26] it's done there is one small difference
+[54:03.18] though if a product is
+[54:05.90] purchased
+[54:07.44] um and is no longer available that is
+[54:09.36] okay but it is in transit I cannot if a
+[54:11.94] truck comes right then and tries to add
+[54:14.28] units I shouldn't pick this location ID
+[54:16.62] so if the location ID is in
+[54:19.50] is in any unit then we should not
+[54:22.38] pick it up okay that's one Edge case
+[54:26.94] okay
+[54:28.32] this uh
+[54:29.82] so this is the overall flow of the
+[54:31.74] system you can now come and add products
+[54:33.72] you can now come and purchase uh and I
+[54:36.78] think arunia mentioned one final thing
+[54:39.42] what is the third
+[54:41.52] floor third was our reports at the night
+[54:45.12] or maybe the end of the day
+[54:47.04] yeah I guess that won't be too hard for
+[54:49.44] me to do because I'll I'll take these
+[54:51.48] events each of these events and keep
+[54:52.86] pushing them to a queue and the system
+[54:55.08] which is looking at this queue is going
+[54:56.58] to take these events and give it as a
+[54:58.38] report so cool I can create a report uh
+[55:03.72] object
+[55:07.02] but this is going to be let's say
+[55:10.56] it's going to be generated on a
+[55:12.54] particular date and that's it rest of it
+[55:15.60] I'll use it as metadata
+[55:17.58] um the reporting service can take care
+[55:18.96] of this okay okay yeah
+[55:21.48] okay so I think this should be good yeah
+[55:24.50] okay so at this point I think we can
+[55:27.36] take a couple of questions
+[55:29.28] yeah
+[55:30.36] on uh
+[55:32.70] how we are doing if it's bad then please
+[55:35.10] let us know
+[55:38.46] I can't ask Arun directly because
+[55:41.24] that way so
+[55:47.76] someone is asking will it be a report of
+[55:49.62] completely sold out product
+[55:52.32] or we decide account where we say that
+[55:54.42] we are learning loan inventory for a
+[55:56.46] particular product so is it a report or
+[55:59.40] is it an alerting system
+[56:02.16] so it depends basically on the question
+[56:04.56] actually that's why if you remember uh
+[56:07.08] in the system requirements I said it
+[56:09.00] could be a general report but I just
+[56:10.86] want to see if your system is able to
+[56:12.54] generate a report or not uh if I want
+[56:15.18] how much sale I have done in a day you
+[56:17.40] can very easily tell me right uh how
+[56:20.40] what are things are finished you can
+[56:22.50] very easily tell me because you have
+[56:23.70] product list or you can iterate over the
+[56:25.74] product list and then you can tell me
+[56:27.06] okay all of these are finished so you
+[56:29.22] can very uh it depends on system Pro
+[56:31.08] System but what I want to see as an
+[56:33.48] interviewer is if your if your system is
+[56:35.34] able to generate a report on the daily
+[56:37.20] basis or not
+[56:39.66] okay so you are mainly concerned about
+[56:42.30] can this system generate reports yeah
+[56:45.24] got it okay
+[56:47.82] okay
+[56:49.14] um
+[56:49.98] Rahul is asking how would you return a
+[56:52.14] list of products in the inventory by
+[56:53.58] given date
+[56:55.86] how would you store the products data in
+[56:58.44] the DB products data in the DP I guess
+[57:01.32] we can store it by just mapping this
+[57:03.18] class
+[57:04.14] the first question is how would you
+[57:06.12] return a list of products in the
+[57:08.22] inventory
+[57:09.18] list of products in the inventory
+[57:14.70] for that you would be having by a given
+[57:17.70] date what do you mean by buy a given
+[57:19.26] date I didn't get that I guess if he
+[57:21.78] gives you a timestamp or gives me a
+[57:23.82] timestamp I should be able to tell him
+[57:25.20] that these many products are there in
+[57:27.24] transit in uh in the inventory
+[57:30.00] being delivered but
+[57:31.68] what is it how would that help but how
+[57:34.26] would that help
+[57:36.78] yeah maybe Rahul you can you can uh you
+[57:39.90] know add some more to that question it
+[57:42.06] will really help us
+[57:47.94] where are we storing this is it no SQL
+[57:50.04] or SQL
+[57:52.20] today I was seeing this video of zeroda
+[57:54.12] where they are using postgres to
+[57:56.88] Triangle uh
+[57:59.22] I think a few trillion data records so
+[58:02.22] oh
+[58:03.42] yeah
+[58:04.62] just simple postgres here
+[58:10.22] sorry yeah so actually deciding the
+[58:14.22] databases I feel it's a high level
+[58:16.80] design question
+[58:17.94] yeah it is and in fact don't go for a
+[58:22.38] nosql database unless you really really
+[58:24.54] need to I don't see one thing in this
+[58:26.82] not one which requires a high level
+[58:30.12] like a like a write heavy database like
+[58:32.64] a new SQL or something you don't need to
+[58:34.40] inbuilt sharding and all that I don't
+[58:36.48] see it happening here so okay how do we
+[58:39.54] generate historical reports since events
+[58:41.16] are consumed okay we will look into that
+[58:42.96] where are you seeing Zero the video
+[58:44.82] where were you seeing Zero the video
+[58:46.74] just go to Twitter
+[58:48.18] I've shared the link over there can we
+[58:51.06] add product category also so unit
+[58:52.62] placing on the basis of category I think
+[58:54.18] a lot of these questions will be
+[58:55.26] handling in the
+[58:56.94] in the code so now it's eight o'clock
+[58:59.22] let's start writing some code
+[59:13.44] also uh generic question
+[59:16.44] do you how long do you think a low level
+[59:18.84] design now goes for
+[59:21.12] so it generally goes for one to one and
+[59:23.34] a half hours uh not more than that and I
+[59:26.58] would like to tell people uh
+[59:29.22] that right now we are explaining the
+[59:31.62] question also we are taking your
+[59:33.18] questions also we are explaining the
+[59:35.04] answers also and I'm asking too many
+[59:37.14] questions from gaurav just so that uh
+[59:39.24] everything is clear to our audience uh
+[59:41.70] generally these many questions are not
+[59:43.74] there most of the things are clarified
+[59:45.96] in the system when while you are noting
+[59:48.18] down the system requirements only or
+[59:49.86] when you're making the uh use case
+[59:51.72] diagram generally database choosing the
+[59:55.08] database all of these things are not
+[59:57.00] generally discussed in the low level
+[59:58.32] design and what an interviewer uh
+[60:02.34] generally sees is
+[60:04.74] he would pick broad broad things and
+[60:07.68] probably he can go in any direction in
+[60:09.60] an interview you should know this uh
+[60:11.58] interview can go in any direction so the
+[60:14.22] main thing is to convince the
+[60:16.14] interviewer that you are right first of
+[60:18.30] all this actually is the case even if
+[60:21.36] you are wrong if you are able to make
+[60:22.44] him understand he'll give you a good
+[60:23.64] baby uh second is of course you should
+[60:25.92] be right so
+[60:28.08] discuss about stuff like the gaurav had
+[60:30.36] discussed with me now he got an approval
+[60:32.76] at every instant from me right so if he
+[60:36.06] will do anything later on I cannot Point
+[60:39.00] him out
+[60:40.74] so try to involve the interviewer while
+[60:43.98] you are making stuff be it use case
+[60:46.02] diagram be it writing down the system
+[60:47.52] requirements be it making the class
+[60:49.14] diagram
+[60:50.70] yeah okay yeah that's a brilliant point
+[60:53.70] I think a lot of us have this thing that
+[60:56.22] when we are coding we don't or when we
+[60:58.98] are doing the interview we think uh the
+[61:00.96] interviewer might get Disturbed and we
+[61:02.88] say okay fine let's do it quietly uh
+[61:05.34] while important parts you should get the
+[61:08.10] integral involved if there is something
+[61:09.54] important please confirm with them and
+[61:11.28] clarify with them
+[61:12.72] okay
+[61:14.34] um so I'll be looking at the
+[61:16.86] class diagram which we have done with so
+[61:19.02] much effort to
+[61:22.50] set this up
+[61:23.88] there is a class user uh
+[61:26.94] they are they are important but okay and
+[61:29.28] there is a class order also
+[61:33.12] but let me start with the core class
+[61:34.68] which is basically the inventory system
+[61:36.12] the system over here
+[61:37.92] uh
+[61:39.84] and let me then
+[61:41.52] say what are the problems that we have
+[61:44.76] so first method is
+[61:49.74] initially a truck comes and fills up the
+[61:52.56] warehouse so add product is
+[61:56.70] the thing so add
+[61:59.64] product and I'll return void which means
+[62:01.92] if it is successful then nothing happens
+[62:03.72] otherwise it throws an exception
+[62:05.70] so yeah
+[62:07.52] another thing is exception handling if
+[62:10.44] your interviewer wants to know about
+[62:11.82] this then yeah I can get into details
+[62:14.04] but to start off with nothing for now
+[62:17.82] okay so when it comes to add product
+[62:19.62] there is a
+[62:22.44] product
+[62:23.76] that we can add
+[62:26.30] important to Define that class
+[62:34.50] okay
+[62:37.86] product ID location an ID a price
+[62:42.00] description weight and size
+[62:53.16] okay
+[62:58.22] this is a description here
+[63:05.34] wait I'll take us double and let us
+[63:08.94] assume metric units kg
+[63:16.38] size is
+[63:17.88] [Music]
+[63:28.98] okay
+[63:34.98] foreign
+[63:42.06] [Music]
+[63:44.76] okay now uh when I'm adding a product
+[63:47.46] all I need to do is I need to add it to
+[63:49.50] my list of products so
+[63:51.66] it is a I'm starting off simple and when
+[63:54.66] required I might turn it into a map of
+[63:56.10] product or something
+[63:57.24] but yeah
+[63:58.74] so let's talk
+[64:03.30] okay
+[64:09.38] I'm using an ID as you can see this is
+[64:12.78] really really helpful if I am not using
+[64:15.78] an ID I would need to remember
+[64:18.32] the syntax I would need to remember a
+[64:20.76] lot of things
+[64:22.14] but that's no longer the case here
+[64:31.68] okay and now add it to my product list
+[64:35.16] uh
+[64:36.66] now what I do is also add a bunch of
+[64:39.00] units so the truck has come I say that
+[64:41.46] tell me the different types of products
+[64:43.14] and now
+[64:45.90] also Place unit so
+[65:00.42] okay unit has to be defined so I'll take
+[65:02.82] that class
+[65:07.74] a unit has a product ID a location ID
+[65:11.70] and ID itself and the status
+[65:27.18] uh
+[65:31.32] is this is actually interesting uh
+[65:34.44] I don't would you suggest that I keep a
+[65:37.26] product ID or do you want me to keep a
+[65:39.12] reference for product
+[65:42.42] okay uh so now here could be a good
+[65:45.18] discussion actually uh keeping up a
+[65:48.90] full-fledged product will take a lot of
+[65:51.18] space actually right so yeah add value
+[65:57.86] one of the trade-offs that I can see
+[66:00.06] when keeping a product full product is
+[66:02.16] it will take more space it might have
+[66:04.74] used the speeds which are relevant only
+[66:06.18] to product uh
+[66:09.24] certain things if something is updated
+[66:12.18] in our memory and we have this unit
+[66:14.64] stored in a cache uh it's possible that
+[66:17.94] if I don't make it a Singleton if I
+[66:20.16] don't make each product class Singleton
+[66:21.78] then this will become single
+[66:24.06] um right and I'll have to manage a cash
+[66:27.12] management and that memory uh these are
+[66:29.40] the drawbacks the benefit is whenever I
+[66:32.28] want to get any details about this
+[66:33.60] product I don't need to keep a mapping
+[66:35.52] between product ID and product in the
+[66:37.80] system I can just jump to that
+[66:40.08] right so I would uh prefer to actually
+[66:43.68] have a product ID in the system
+[66:46.14] just a just a mapping of
+[66:49.08] uh per unit what is the product ID
+[66:52.14] is that is that okay or would you prefer
+[66:55.08] me to
+[66:56.64] no product ID is fine uh because I think
+[66:59.82] we can iterate on the list of products
+[67:01.50] to get the information
+[67:03.12] okay so then I'll keep on mapping off
+[67:05.70] uh actually I'll convert this to a map
+[67:08.70] say for a string
+[67:12.24] uh
+[67:15.72] I have a new hash mark
+[67:17.94] yeah
+[67:21.36] and I'm not making it a conquer and hash
+[67:23.40] my problem is keeping it simple
+[67:24.96] okay papers
+[67:27.24] location ID okay location ID something
+[67:29.70] else that I need so I need a location
+[67:31.20] but before that in status I think
+[67:34.56] you are mentioned inventory is one
+[67:36.30] Transit
+[67:37.56] is another and delivery is another
+[67:41.22] okay another class called location
+[67:47.24] has only type and ID Okay so
+[67:51.18] string ID and
+[68:05.94] naming this class location type because
+[68:08.22] type is a very common word so I don't
+[68:10.74] want to mess
+[68:16.26] okay um
+[68:23.82] I don't get it so what is Type
+[68:26.40] small large medium okay so that is
+[68:28.62] already taken care of sorry for that and
+[68:31.02] this is size is here
+[68:37.98] size of the location is being mentioned
+[68:40.68] over here
+[68:43.14] okay now
+[68:46.26] when someone asks us to place a
+[68:55.74] to place a unit I am going to be using
+[68:57.66] an algorithm to find which location is
+[69:01.14] best suited for this
+[69:04.76] okay so right now
+[69:08.04] yeah we can skip it we can skip it for
+[69:10.50] now I've understood that we'll use an
+[69:12.48] algorithm uh
+[69:14.40] okay
+[69:16.68] let us assume that uh I I don't have
+[69:18.78] that taken care of I mean let us assume
+[69:22.14] some algorithm is doing this location ID
+[69:24.36] setting okay yeah so Place unit is
+[69:27.30] something that we have
+[69:36.96] okay okay so we can place units we can
+[69:40.62] add products we can get product get
+[69:42.66] product is not different all I need to
+[69:44.82] do is just this
+[69:46.26] uh
+[69:47.82] very simple
+[69:55.17] [Music]
+[69:57.18] and let's get these methods moving
+[69:59.52] forward because it's just get a set of
+[70:01.20] methods yeah
+[70:03.24] string
+[70:08.64] okay
+[70:10.38] get product list again this is I just
+[70:12.78] need to pass in the
+[70:14.52] I have to just return product list Dot
+[70:18.42] yes
+[70:19.56] that I think
+[70:24.30] but Keys that's all I have to do all
+[70:27.24] values
+[70:29.60] get shelves status okay get me all the
+[70:34.02] uh
+[70:36.12] units basically or another get me all
+[70:38.70] the locations and their statuses okay I
+[70:41.52] can I can do that uh
+[70:43.74] get me all the locations
+[70:46.32] so I can keep a map of locations here
+[70:48.90] yes
+[70:51.66] so
+[70:53.22] if there is a screen which is location
+[70:55.08] ID uh
+[70:57.72] tell me the whether it is failed or not
+[71:00.06] or which product exists which unit
+[71:02.76] exists there okay so yes
+[71:20.40] I mean there are a set number of
+[71:21.96] locations only so I'm keeping them all
+[71:23.34] in memory uh and the unit is here
+[71:27.90] location map public
+[71:57.78] this is what I'm returning now comes
+[72:00.84] manipulating this location map can we
+[72:03.42] generate reports okay we can look at
+[72:05.28] that get product location
+[72:08.28] set a product location okay so I guess
+[72:10.74] this is set unit location
+[72:13.86] this is yes okay so get a unit's
+[72:16.98] location or set a unit location get unit
+[72:18.84] location is very simple we just need to
+[72:20.58] go to the unit and say what is your
+[72:21.96] location ID yes yes set unit location is
+[72:25.26] what we are looking at which is
+[72:27.06] basically Place unit so I think we have
+[72:29.34] uh I have done it twice
+[72:33.36] so this is more accurate update status
+[72:37.26] means of a product
+[72:39.84] what does this mean uh
+[72:42.06] great status
+[72:44.82] that is this update status again will
+[72:46.86] come for a unit so that is also another
+[72:49.08] thing that I've done incorrectly
+[72:52.26] Arsenal unit
+[72:55.08] [Music]
+[72:59.70] okay
+[73:14.48] and uh
+[73:23.96] okay this takes care of that
+[73:33.60] order has a map of
+[73:37.14] product
+[73:38.34] to increase your thumb
+[73:46.38] okay this is what we have and user can
+[73:52.56] add a product or they can remove things
+[73:54.84] but they are using the system methods
+[73:56.22] only
+[73:57.00] yes
+[73:58.14] so okay so if a user can
+[74:07.62] so a user will have a instance of system
+[74:11.16] it's like
+[74:12.90] so uh
+[74:17.28] can I make this static so that it
+[74:20.76] becomes important
+[74:21.90] yes
+[74:31.92] okay I have to make all the methods also
+[74:33.60] static so that you can access this
+[74:45.54] okay so the whole uh inventory system is
+[74:49.86] filled with static methods and so this
+[74:52.14] is a Singleton now
+[74:53.58] yes and without creating an instance I
+[74:55.74] can just use its methods so
+[75:00.38] [Music]
+[75:05.82] I need to pass in product details
+[75:18.78] you can have an empty Constructor for
+[75:20.46] now
+[75:21.72] yeah
+[75:23.46] yeah I'll just uh
+[75:27.24] it must be something here that no
+[75:30.12] shortcut nothing no
+[75:32.10] okay
+[75:34.38] generate in that Constructor yeah okay
+[75:37.32] that's perfect
+[75:38.64] yeah
+[75:41.52] okay uh
+[75:43.92] let's say ID
+[75:45.78] so this is this is of course
+[75:48.66] something that will be passed in here as
+[75:50.34] a parameter by the user yes so I can
+[75:52.92] just skip this
+[76:05.04] now this is taken care of
+[76:10.62] there is only one or two things that we
+[76:12.96] need to do one is placing units that is
+[76:16.10] algorithmically something and the other
+[76:18.96] thing that we need to do is we need to
+[76:20.52] make sure that when our order is
+[76:22.20] actually placed uh we can
+[76:25.98] uh that the unit is picked up
+[76:29.46] yes and system automatically updates the
+[76:33.42] location also status also
+[76:36.72] right
+[76:38.04] so you remove unit is not something I
+[76:39.84] have taken care of so uh
+[76:42.00] sorry for that again
+[76:47.40] okay
+[76:49.14] yeah these are two things which are
+[76:51.06] remaining everything else seems to be
+[76:52.74] smooth
+[76:54.06] uh
+[76:55.38] Place unit
+[76:57.00] okay and remove unit Okay so
+[77:09.72] how does the system know which unit
+[77:12.30] should be removed when there is an order
+[77:13.86] placed
+[77:15.00] mm-hmm
+[77:18.84] so how this will happen is
+[77:21.42] yeah in the front end let's look at the
+[77:24.30] front end part of it okay now
+[77:26.46] so now uh so just imagine our Amazon UI
+[77:30.54] okay so you click on a product you see
+[77:33.18] the product details and then you see add
+[77:35.16] to cart button when you click on add to
+[77:37.38] cart button the product moves to the
+[77:39.00] card so this Complete product is moving
+[77:40.80] to the plot now
+[77:42.24] now what will happen next when you place
+[77:45.96] an order so product name would come to
+[77:48.06] you right your product details would
+[77:50.16] come to you so what you can do is you
+[77:52.08] can from the list of products or from
+[77:54.78] the map of the products you can check if
+[77:57.72] there is product availability or not
+[78:00.48] yes yes
+[78:12.08] so users are doing one thing which is
+[78:14.52] adding products or executing orders like
+[78:16.92] you mentioned uh in the order there's
+[78:19.32] going to be some details which will
+[78:21.18] result in the status of the products or
+[78:24.54] the units changing Okay so
+[78:27.96] Execute order is going to be
+[78:30.96] order
+[78:35.16] now inventory system
+[78:37.86] Dot
+[78:39.90] remove unit
+[78:41.40] and this is going to happen for every
+[78:45.18] in order
+[78:47.58] at product count
+[78:51.42] increase set
+[79:05.16] okay
+[79:07.02] um
+[79:09.68] I'm just basically iterating over every
+[79:12.24] single entry in the product account so
+[79:15.42] to make cartons three that that will
+[79:17.94] come over here so I will now take that
+[79:22.08] each entry
+[79:23.82] and then I need to do something I need
+[79:25.50] to remove units for every everyone
+[79:34.20] on this integer item Dot
+[79:38.70] get valued I'll be removing results
+[79:44.34] move unit of this product right
+[79:49.20] item
+[79:50.54] dot get key
+[79:54.36] so when you remove it I cannot save for
+[79:57.00] a particular unit
+[80:01.46] can I explain people something you know
+[80:05.12] there was a question which was asked by
+[80:07.50] someone I don't remember who uh his name
+[80:10.20] but he asked uh will there be many
+[80:13.20] different sort of optimizations or what
+[80:15.90] not something of this WordPress question
+[80:18.12] was so if you uh can you scroll down a
+[80:21.72] little bit where you implemented that
+[80:23.04] function where you search whereas yes so
+[80:25.62] now if you see I want to explain that
+[80:27.54] Ryan to everyone in the audience that
+[80:29.82] every time if you I trade and you will
+[80:32.46] find the product
+[80:34.26] don't you think it has taken too much
+[80:36.00] time here it is taking too much time
+[80:38.04] order of end time complexity would be
+[80:39.84] there yes but but I want to explain or I
+[80:44.40] want to tell to everyone
+[80:45.72] of course uh if an interviewer wants to
+[80:48.54] ask about it he can but he generally he
+[80:51.66] wouldn't
+[80:52.44] ask about it why Point number one uh you
+[80:56.58] have already discussed with me the
+[80:58.02] requirements of everything that is why
+[81:00.00] so he knows that this is the only way to
+[81:02.82] now generate second
+[81:04.88] optimization I'm not looking at your
+[81:07.14] code like I'm not looking at your
+[81:09.24] algorithm I'm looking at how your system
+[81:11.34] interacts different data members could
+[81:13.80] be used uh different data success could
+[81:15.90] be used and that has been checked in
+[81:18.48] your DS and algorithms
+[81:20.88] that if you are able to solve the
+[81:22.50] problem or not
+[81:24.30] right now I just want to see how you are
+[81:26.94] able to build the system how will your
+[81:28.98] front end interact how will your backend
+[81:30.90] handle stuff how will your user handle
+[81:33.66] it
+[81:34.50] that's it so that is why
+[81:36.90] I just just explaining to people yeah
+[81:39.60] absolutely
+[81:40.50] um
+[81:41.46] makes total sense this
+[81:43.68] this is a simple iteration of the whole
+[81:46.26] thing when it comes to executing an
+[81:48.24] order uh our algorithm when it comes to
+[81:53.40] when it comes to uh you know placing a
+[81:56.04] product is probably not optimal also you
+[81:58.20] can probably place it better but for now
+[82:00.18] we are using a very simple algorithm if
+[82:01.92] we want to change the algorithm we can
+[82:03.54] we can see maybe here is a place for
+[82:05.34] strategy pattern so
+[82:07.80] I'll try to implement the strategy
+[82:09.36] pattern here in the simplest possible
+[82:10.80] way let's see if that works so I have
+[82:13.98] two strategies one is uh simple
+[82:17.88] scrap you see
+[82:21.24] so that's one class and another one is
+[82:26.76] smart strategy so the benefit of me
+[82:29.58] doing it this way is I can actually
+[82:30.96] write test cases with simple strategy
+[82:32.64] knowing that this is exactly how things
+[82:34.02] will work and I can write test cases for
+[82:35.88] smart strategy expecting it to behave as
+[82:38.28] good if not better than simple strategy
+[82:40.38] always
+[82:41.34] so this is this is something that we can
+[82:44.22] do
+[82:46.62] okay
+[82:48.24] now let me try to place the units using
+[82:52.02] some method so
+[82:55.80] um first thing I'll do is I will try to
+[82:57.84] get a location which is free lock that
+[83:00.00] location and then set this unit's
+[83:02.82] location ID to that and then I'll unlock
+[83:04.62] that location so okay I'll
+[83:07.62] we go for firstly I need to go to uh
+[83:10.86] location
+[83:12.72] right yeah
+[83:14.94] but now I am I can optimize this but I'm
+[83:19.56] not I'm just iterating over the
+[83:21.72] locations
+[83:22.68] yeah
+[83:25.56] uh keys
+[83:33.84] so
+[83:34.38] [Music]
+[83:53.10] okay
+[84:01.38] if this location
+[84:05.64] is free so I have to
+[84:10.68] have to see in the location map with
+[84:12.24] this location is free
+[84:25.34] but what is the location I'm storing
+[84:27.72] unit okay
+[84:33.06] if this location is empty and I have to
+[84:35.76] pass in
+[84:37.08] uh type of location
+[84:45.96] you know that is not possible that makes
+[84:47.40] no sense because if I've picked it up
+[84:48.90] from location key set then it can't be
+[84:50.82] empty so if location uh is null
+[85:04.44] okay a lot of syntax that is going on
+[85:06.12] sorry for that no worries and I think
+[85:09.06] you can skip it also
+[85:10.86] okay I'm I'm just trying to use the uh
+[85:14.28] algorithm
+[85:15.84] because that is the only thing which is
+[85:17.70] remaining entry Dot
+[85:27.54] get me the value if this is not equal to
+[85:30.54] null then I
+[85:33.24] if this is equal to none other then I
+[85:35.10] can place something here
+[85:46.80] so I'll take a lock on the location so a
+[85:50.28] location
+[86:10.44] yes
+[86:13.56] okay and then once this is done
+[86:16.68] release lock yes and that's it
+[86:21.90] okay so now I've set up the location as
+[86:25.02] this
+[86:31.92] okay
+[86:34.86] so this is this is one way one algorithm
+[86:38.54] I actually
+[86:40.86] should be checking before that only that
+[86:42.78] if the yes size is big enough yeah yeah
+[86:46.68] that I think your algorithm would do
+[86:49.80] right right so you can skip it
+[86:53.94] strategy works
+[86:57.60] yeah I think I'll just I'll just skip
+[86:59.22] this but it's something that algorithm
+[87:01.20] has to do yes okay uh
+[87:04.20] running pretty fast we have remove unit
+[87:08.58] which is for a particular product I will
+[87:10.62] just iterate over the location and units
+[87:13.98] again this is the simple I'll go the
+[87:16.08] basic one it will pick up the first unit
+[87:19.32] of that product type
+[87:22.44] yes then it will just return that as a
+[87:26.48] for that unit so if I say remove this
+[87:29.46] remove one unit of this product
+[87:31.38] iterate over all locations just like we
+[87:33.30] have done over here
+[87:34.56] uh if you get
+[87:39.12] a place where it is not null then check
+[87:41.34] if the unit
+[87:44.82] will take up the product Dot
+[87:47.28] ID matches the
+[87:50.18] product ID of the
+[87:53.88] definitely
+[87:55.98] to get value
+[87:58.08] Dot
+[87:59.76] start writing yeah
+[88:02.10] this this has to match so actually this
+[88:05.04] will be in the if statement
+[88:14.10] and
+[88:15.62] remove yourself
+[88:19.50] this is basically a map
+[88:25.08] got removed
+[88:27.84] uh this location
+[88:38.46] we removed the
+[88:40.08] entry for this location yeah great again
+[88:43.86] I'm releasing the lock
+[88:45.84] yeah only when uh you know after taking
+[88:48.00] a lock here so the next person to come
+[88:50.16] with a lock will see that this entry uh
+[88:52.68] values
+[88:53.94] is no longer none
+[89:03.72] yeah that's that's the so I have not
+[89:05.76] used any uh design pattern here but we
+[89:08.70] can use a strategy design pattern to
+[89:10.20] make this better
+[89:11.76] foreign
+[89:24.18] okay uh any
+[89:26.94] any suggestions uh from you or from the
+[89:31.08] audience
+[89:31.98] I think Robert has a future yeah
+[89:35.64] we can go on the questions uh sure
+[89:43.74] are you reading at all yeah I'll just uh
+[89:47.52] take a few from
+[89:49.74] the audience uh here also unit in
+[89:52.26] products
+[89:58.74] okay uh let me see if there's any
+[90:00.84] interesting question
+[90:06.42] how do you handle when user ad
+[90:09.66] for another one but in the meanwhile
+[90:11.28] added product got out of order
+[90:14.64] okay that's a good question it's a
+[90:18.12] so um in the start Manish we had we had
+[90:21.12] said that every order that we are going
+[90:22.74] through is going to be going uh is going
+[90:24.96] to be sequential uh
+[90:27.96] in this case I we haven't done that okay
+[90:31.86] if you make all orders go sequentially
+[90:34.02] then there is no way that you know
+[90:35.90] concurrently somebody will come and pick
+[90:37.92] it up so that takes care of it but even
+[90:40.50] then
+[90:42.00] in this uh I'm taking a lock on the on
+[90:46.32] the unit on the location
+[90:49.14] and by taking a lock I'm making sure
+[90:51.48] that nobody else can come and pick up
+[90:52.86] this order
+[90:54.24] at the same time okay uh what could
+[90:57.18] happen here
+[90:58.38] well there could be a deadlock there
+[91:01.08] could be something like
+[91:02.82] Arun says there is an order for milk
+[91:05.34] cartons too
+[91:07.02] and I say there's an order for milk
+[91:08.34] cartons too
+[91:10.26] the total number of milk cartons are two
+[91:11.94] Arun goes and while iterating picks up
+[91:14.22] one milk carton
+[91:15.66] at the same time my code also runs whose
+[91:18.00] picks up milk one milk carton and now we
+[91:19.86] are waiting on each other we are locked
+[91:21.36] forever
+[91:22.14] I'm waiting on the other uh one till you
+[91:25.20] know the lock is released that would be
+[91:26.76] a deadlock uh sometimes both orders
+[91:28.80] would fail
+[91:30.42] that would be one way of just reverting
+[91:32.46] the transaction let's say so those are
+[91:35.58] ways in which you can handle this
+[91:37.56] problem if you make everything
+[91:39.00] sequential nothing like it but if you
+[91:41.04] can't make things sequential then you
+[91:42.30] need a way in which you have to lock
+[91:45.90] the items concurrently
+[91:49.20] a set of items concurrently this is not
+[91:51.18] easy
+[91:52.32] and the probably the way you're going to
+[91:54.90] go about doing this is basically trying
+[91:56.76] to acquire all locks if you fail to
+[91:58.74] acquire all the locks within a certain
+[91:59.94] period of time you have to time up
+[92:02.34] so it will be a time lock
+[92:04.56] so on
+[92:06.72] are we allowed to use Frameworks in hld
+[92:09.68] I don't think let's take another
+[92:11.70] question uh Rahul says let's say you
+[92:15.06] have an inventory of groceries the
+[92:16.56] inventory manager is required to throw
+[92:18.18] out the expired items and update the
+[92:19.74] inventory okay this is our item expiring
+[92:21.60] so suppose an external committee wants
+[92:24.06] to show you do not have expired products
+[92:25.68] in the inventory how do you implement
+[92:27.18] this would you prefer creating a new
+[92:29.40] record for each product per day
+[92:38.60] so uh I what I can think of right now
+[92:42.84] just after looking at the question okay
+[92:44.28] this is what happens in an interview
+[92:47.10] um so what we can do is in the product
+[92:49.02] itself in the product itself uh we can
+[92:51.78] have a show in the product class which
+[92:54.00] whatever has made we can have a expiry
+[92:56.34] date also there only okay now every day
+[93:00.48] every day in the morning the system can
+[93:02.82] generate a report uh wherein they can
+[93:05.58] tell me the list of all the units who
+[93:07.38] are expired
+[93:08.58] and then probably we can clean up or
+[93:11.82] whatever so this way we can get a list
+[93:14.46] of all the expired products
+[93:17.40] yeah like when we are deducting or
+[93:19.98] something removing products like we can
+[93:21.96] manually also go and you know maybe the
+[93:23.52] machine went and crush the product by
+[93:24.96] mistake or something happened some cat
+[93:26.64] ate it or there's a snake inside I mean
+[93:29.04] anything can happen so you might want to
+[93:32.64] manually also remove that product so and
+[93:35.40] then go and update the count over there
+[93:37.08] in the system so you can do it for
+[93:39.36] expired products also your machine can
+[93:41.16] go automatically pick those products up
+[93:42.60] it's as good as making an order actually
+[93:44.64] in the morning when it goes to expiry uh
+[93:48.42] take all the products which are expired
+[93:50.94] go to those locations ask the machine to
+[93:53.04] pick and throw it and send them as set
+[93:56.88] them as available
+[93:59.58] okay folks if you have questions you can
+[94:02.04] post them here I think I haven't
+[94:03.72] mentioned it for a while it's on slido I
+[94:07.02] will also just share the question which
+[94:09.06] is already there
+[94:13.26] okay most of us feel
+[94:16.44] like uh
+[94:18.36] less confident when it comes to LED
+[94:20.16] interviews
+[94:21.54] we feel reasonably confident 30 uh and
+[94:24.36] uh four and five percent uh four and
+[94:26.46] five star is really low 14 percent is on
+[94:29.10] two star
+[94:32.10] okay q a
+[94:35.70] I think three of them we have handled
+[94:37.92] already
+[94:39.06] okay how do you handle concurrency if
+[94:40.86] you have to maybe you can just share
+[94:41.88] your thoughts at Uber level
+[94:44.70] I guess we spoke about you know ordering
+[94:47.10] and uh
+[94:48.78] taking locks we also talked about
+[94:51.42] whether there can be a deadlock or
+[94:52.92] something so this I think we have
+[94:54.54] answered to some extent
+[94:56.40] we're going to be answering more of this
+[94:58.08] in the in the course that we are coming
+[95:00.24] up with so if you want to subscribe for
+[95:03.24] that one of the things you can do is
+[95:04.38] just go to interview ready and just sign
+[95:06.42] in if you sign in then we'll at least
+[95:08.46] have a email ID through which we can
+[95:10.44] connect with you and the current course
+[95:12.24] also has machine coding and eyelid
+[95:15.24] design and you know
+[95:17.04] when it comes to system design it's a
+[95:18.96] it's a full course so you can purchase
+[95:21.06] that also the low level design problems
+[95:22.92] like this we are taking next
+[95:26.40] do we have to draw
+[95:28.62] like do we have to draw the LED
+[95:30.54] interview I mean we can just write the
+[95:32.28] class if roughly on ID for discussion
+[95:35.04] only okay
+[95:37.56] yeah uh so uh you can whatever suits you
+[95:41.34] actually whatever suits you whatever uh
+[95:43.68] makes think clear to you and to your
+[95:45.30] interviewer you can go ahead with that
+[95:49.44] make sense okay I would suggest drawing
+[95:52.56] because although you saw that it took us
+[95:55.56] one and a half hours uh to do this whole
+[95:58.68] thing
+[95:59.82] it's not just about so one is our speed
+[96:02.76] was actually higher than it would
+[96:04.08] otherwise
+[96:05.36] I I truly believe had we tried to just
+[96:07.86] go and code
+[96:09.24] the amount of discussion we would go
+[96:10.86] through we would not have been able to
+[96:12.42] do 50 of what we did right now
+[96:14.64] okay uh you can try it at home and see
+[96:17.10] which one works better
+[96:18.96] like by uh it's as good as coding
+[96:21.96] without having reviews just code and
+[96:25.02] then see oh wait requirement or
+[96:26.76] something else so you come back and so
+[96:28.32] there is back and forth there is lots of
+[96:29.64] time very objectively also this is far
+[96:32.10] better as a method second thing is
+[96:35.70] the interviews the interview is not
+[96:38.22] about
+[96:39.12] you writing as much code as possible the
+[96:41.76] interview is about your interviewer
+[96:43.32] understanding what you have done and
+[96:45.54] it's the same with Team discussions and
+[96:47.82] design discussions and everything
+[96:49.40] engineering you have to communicate your
+[96:51.72] thoughts so communicating them is
+[96:53.52] effective when you draw things
+[96:55.32] if you just write code it is okay
+[96:59.22] but it's not good
+[97:01.26] it is okay it is acceptable but it is
+[97:03.12] not good or great
+[97:05.82] so okay
+[97:09.42] detailed view of the entire system okay
+[97:11.28] does the actual LED interview go into
+[97:13.20] the detailed view of the entire system
+[97:14.64] or just a few flows are discussed Arun I
+[97:16.86] think you have mentioned that it can go
+[97:18.12] anywhere it's best to in a in a YouTube
+[97:21.30] video to talk about all of them but
+[97:23.40] in a real interview they'll be like okay
+[97:25.02] yeah let's keep going ahead uh
+[97:27.00] it will be fast
+[97:28.50] how do you scale when map becomes huge
+[97:31.20] uh this you can use a cache and it is
+[97:34.92] cache if required in the real world of
+[97:37.80] course we'll have these libraries and
+[97:39.00] tools over here we just have you know
+[97:41.22] the language we have should we not have
+[97:43.92] a sale table installer report I think
+[97:45.36] there will be more that will be more
+[97:46.68] helpful
+[97:49.50] okay
+[97:50.84] for that we can have an order stable I
+[97:53.52] think sale table orders table the one
+[97:55.56] the same thing uh
+[97:58.32] of course that can help and there could
+[98:00.42] be a number of more ways that can help
+[98:02.64] but that was not in the scope of the
+[98:05.46] interview which we
+[98:08.34] yeah I guess
+[98:11.64] okay uh finally guys we would like your
+[98:14.64] feedback for this
+[98:17.46] video how did you find it just let us
+[98:20.46] know again I'm sharing the link of slido
+[98:23.76] over here
+[98:26.52] how did you like the video did you like
+[98:28.92] it did you
+[98:30.30] did you not like it be very Frank be
+[98:32.34] very honest Arun and I basically the
+[98:34.92] reason why we are doing this is so that
+[98:36.84] you understand how local design
+[98:38.10] interviews work if it's if it needs to
+[98:40.56] be changed it's best to tell us it's
+[98:42.60] totally Anonymous also like who cares
+[98:44.46] right okay so
+[98:48.66] you can give us a rating over here okay
+[98:54.12] the ratings have started coming in I'll
+[98:56.40] I'll reveal them in five minutes till
+[98:59.34] then uh we can take a couple of
+[99:00.96] questions but please feel free to give
+[99:02.88] us your rating
+[99:05.76] if you really liked it of course you can
+[99:07.50] hit the YouTube uh you know like button
+[99:09.78] or LinkedIn like button also
+[99:18.36] why are we not using persistent storage
+[99:20.96] has this question I think to some extent
+[99:24.00] we have answered this we are doing a low
+[99:25.92] level design so high level design will
+[99:28.44] talk about persistent storage
+[99:31.08] uh do we have to show the diagram
+[99:34.62] okay this is
+[99:37.80] foreign
+[99:51.08] manager I have not upscured myself in
+[99:53.46] low level design is it required for
+[99:55.20] managers as well
+[100:03.38] generally the job of an engineering
+[100:05.88] manager is to get things done from the
+[100:08.10] Developers
+[100:09.36] beat anyhow
+[100:13.58] so I don't think but of course uh having
+[100:17.82] knowledge of LED would be great uh
+[100:20.40] engineering Managers generally don't
+[100:21.78] review the pr or they are not the one
+[100:23.94] responsible
+[100:25.44] uh but yeah having a skill is always
+[100:28.02] good
+[100:29.88] okay okay yeah I totally agree uh I
+[100:34.44] don't know whether it will be relevant
+[100:35.82] for you
+[100:36.66] as an engineering manager I don't think
+[100:38.64] it will be if you know it it's good you
+[100:41.16] can talk to them like an engineer but
+[100:43.26] the fact is you're not going to be using
+[100:45.36] it so it's okay
+[100:47.82] it's like does a product manager need to
+[100:50.10] so another question then is what about
+[100:52.56] product managers what about uh ppms
+[100:56.22] technical program managers do they need
+[100:58.50] to know about low level design they do
+[101:00.54] need to know a little bit about high
+[101:01.68] level design they do talk about it
+[101:03.06] devops also but lower design
+[101:05.94] uh so again the the job profile or the
+[101:10.50] work that a product manager has to do is
+[101:12.72] to get features and then ask the
+[101:15.90] engineering teams to work on this
+[101:18.54] right if they can help in Engineering
+[101:21.54] also that is great but
+[101:24.30] I don't think uh product manager needs
+[101:26.82] to learn or he does coding I don't think
+[101:29.58] he does coding
+[101:31.44] okay
+[101:33.48] your view on this
+[101:35.70] yeah see not at all no need to go for
+[101:40.56] Led uh you know Design Round if you want
+[101:44.10] to see then yeah otherwise not at all
+[101:46.80] you don't need
+[101:53.42] paying us money is always we are more
+[101:56.22] than happy to accept it but then
+[101:58.26] it won't help you so yeah if you want to
+[102:01.20] pay just like that then I'll send you my
+[102:03.12] uh PayPal or my paytm number like
+[102:07.14] but if you want if you if you want to
+[102:09.72] invest in a course for yourself as a PM
+[102:12.06] probably somewhere else makes more sense
+[102:14.16] uh who would it make sense for engineers
+[102:16.86] makes a lot of sense
+[102:20.40] throughout your career like from zero to
+[102:26.40] um
+[102:30.50] Architects also
+[102:32.52] Architects also they review code so
+[102:34.44] there is that yes so that's why I don't
+[102:36.90] know up till which point we want to see
+[102:38.40] but at least till 15 years I guess it
+[102:40.80] makes a lot of sense
+[102:42.18] because uh
+[102:43.80] the yeah the senior Engineers also have
+[102:46.38] seen they sometimes do write code
+[102:49.94] yeah
+[102:51.56] so actually their their task is so
+[102:54.18] suppose a new uh thing has been made or
+[102:56.64] a new product you're building which
+[102:58.32] means a completely new repository a
+[103:00.60] completely new uh description for
+[103:03.24] requirements and then you so of course
+[103:06.24] uh as in when the new Engineers come we
+[103:08.58] also want to interact or write in the
+[103:10.62] same report which becomes more and more
+[103:12.30] complex going day by day so this is how
+[103:14.64] the design pattern helps right
+[103:16.98] uh you can have different different
+[103:18.98] directories inside that repo and
+[103:21.30] directory scan up files
+[103:23.22] and later on different directories
+[103:25.50] interact so how does the code is
+[103:28.02] understandable to other Engineers how is
+[103:30.36] the code able to interact amongst
+[103:31.80] themselves or how is no it's not complex
+[103:34.20] that much yeah of course everything is
+[103:36.78] low level design everything is low level
+[103:38.82] design
+[103:40.14] right
+[103:41.22] so uh 15 years or anybody who is writing
+[103:44.82] code or who is building stuff
+[103:46.86] needs to learn needs to know about low
+[103:49.14] level design and it would be good to
+[103:50.70] have
+[103:52.20] so would you say that you know I'm not
+[103:54.54] preparing for my interviews I just want
+[103:56.94] to be a better software engineer do you
+[103:58.38] think this is kind of video will be
+[104:00.66] relevant to
+[104:02.22] somebody's
+[104:03.90] so uh right now this video was just
+[104:07.62] about an interview
+[104:09.84] okay so we would have missed a lot of
+[104:13.08] things we would have covered a few
+[104:14.88] things or we would have covered a lot of
+[104:17.10] things also okay uh
+[104:20.10] but what I am saying is lonely low level
+[104:23.64] design knowing design patterns how to
+[104:25.74] implement them
+[104:26.94] would be great so
+[104:29.58] learning that would be great this video
+[104:31.80] specifically will that help of course it
+[104:33.96] will give them a very really good idea
+[104:35.76] how uh you know our discussions how we
+[104:38.34] went ahead how architecting or making
+[104:40.80] stuff would help because in real world
+[104:43.32] also product manager would come up with
+[104:45.48] a set of requirements you would list
+[104:47.34] them all down then you would go ahead
+[104:49.14] with making the use case diagram then of
+[104:51.24] course you'll meet the class diagram all
+[104:52.86] of that flow would really help so yes it
+[104:55.86] will be valuable to you know watch it
+[104:57.96] also it would be valuable to someone who
+[105:00.06] is preparing for the interviews also
+[105:02.70] but if you want to think that it would
+[105:05.46] give you a full complete uh you know
+[105:08.34] understanding of how low level design
+[105:10.32] Works uh no this video will not fail but
+[105:13.14] yeah our course mode
+[105:16.10] nice one nice plug
+[105:18.84] I I could expect that okay uh Arun how
+[105:21.78] would you rate how much would you rate
+[105:23.04] this
+[105:24.54] uh so of course I would rate it more
+[105:28.38] than four and nothing is perfect so less
+[105:30.60] than five
+[105:32.04] okay somewhere over here let's say four
+[105:34.02] then some place some some improvement is
+[105:36.78] possible okay so that's one vote
+[105:38.88] for from outside the Skin So on average
+[105:42.62] uh the video has been rated 3.8 Stars so
+[105:46.74] there is some improvement that we can do
+[105:50.06] and 3.8 stars is like on zomato maybe
+[105:55.64] just like okay maybe there's a
+[105:57.72] particular dish that I really like so uh
+[106:00.30] thank you for giving us this feedback
+[106:02.22] guys uh there's one person who found it
+[106:05.40] to be a two star video one person who
+[106:07.68] founded to be a three star video seven
+[106:09.78] founded to be four stars including us
+[106:12.48] and one person found it to be a
+[106:14.10] five-star video so that is actually
+[106:17.28] interesting which means there is scope
+[106:19.74] for improvement uh and that is really
+[106:22.14] good I think with someone else also it
+[106:25.20] became 73
+[106:26.76] what is the average rating
+[106:30.12] do we do a weighted this is
+[106:32.28] accurate 3.4 it doesn't make sense
+[106:36.42] yeah it's less than four
+[106:38.10] it's less than four unless someone else
+[106:39.78] modes it five star then it's not gonna
+[106:41.52] go to but anyway that's
+[106:44.52] it's good it's a place that we can
+[106:46.74] improve on uh if you have any doubts or
+[106:49.38] suggestions you can let us know in the
+[106:50.76] comments below uh you can connect with
+[106:53.40] us on LinkedIn or you can you know
+[106:55.14] connect with us directly on YouTube
+[106:56.94] through the comments
+[106:58.74] um all the best thank you everyone for
+[107:00.78] coming uh someone removed their three
+[107:02.70] star right now so our rating went up yay
+[107:06.90] okay thank you so much for making this
+[107:09.24] possible I will let's catch up next time
+[107:12.24] and uh any any last words
+[107:14.76] famous or not famous
+[107:20.66] not able to think so you can grow up
+[107:23.76] with your short line which you say every
+[107:26.46] time okay yeah guys if you like the
+[107:28.68] video do uh hit the like button if you
+[107:31.38] want to get notifications for further
+[107:33.48] videos like this hit the Subscribe
+[107:35.10] button we'll see you next time take care
+[107:36.96] bye
+[107:38.70] bye guys

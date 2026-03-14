@@ -1,0 +1,199 @@
+[0:00.08] Every developer in 2026 has the same
+[0:02.48] problem. You open your editor, you write
+[0:04.40] one line of code, and suddenly a dozen
+[0:06.56] different AI agents are arguing in your
+[0:08.40] terminal about how to do it better. And
+[0:10.00] if you're one of those weirdos like me
+[0:11.60] who actually enjoys the craft of writing
+[0:13.44] code, congratulations. You're officially
+[0:15.60] living in the dark ages of slop
+[0:17.20] overflow. Instead of grinding for hours
+[0:19.12] and earning those sweet dopamine hits
+[0:20.88] line by line, you now just tell the AI
+[0:22.88] what you want and watch it hallucinate
+[0:24.64] an entire codebase. Writing code isn't
+[0:26.72] fun anymore. Layoffs are intensifying.
+[0:28.88] And even the CEO of Replet said that
+[0:30.72] nowadays knowing how to code is actually
+[0:32.48] a disadvantage.
+[0:33.60] >> Not having a coding experience is
+[0:35.60] becoming an advantage.
+[0:37.12] >> Building a product is more efficient
+[0:38.48] than ever. Unless you're a stupid
+[0:40.00] programmer who cares about stupid things
+[0:41.84] like architecture and security.
+[0:43.60] >> Coders get lost in the details.
+[0:45.28] >> But he's absolutely right. The hard
+[0:46.80] truth is that we're not going back to
+[0:48.08] the good old days of handcrafted code.
+[0:50.00] And the only way forward is to embrace
+[0:51.68] the chaos and learn how to enslave the
+[0:53.76] machines. In today's video, we'll look
+[0:55.52] at seven different open- source projects
+[0:57.36] you've never heard of that will help you
+[0:59.04] whip your AI agents into shape and build
+[1:01.12] highly effective slot pipelines. It is
+[1:03.28] March 12th, 2026 and you're watching the
+[1:05.68] code report. In the past, if you were an
+[1:07.52] indie full stack developer, it meant you
+[1:09.44] had to have skills on the front end,
+[1:11.04] backend. You had to understand DevOps,
+[1:13.36] security, UI, UX design, and a bunch of
+[1:16.08] other BS. But nowadays, you don't need
+[1:18.08] to learn all that stuff. You just need
+[1:19.52] to hire the right agent. And a tool that
+[1:21.60] can help you do that quickly is the
+[1:23.20] agency, which is a free and open- source
+[1:25.28] project that provides agent templates
+[1:27.20] for basically every job role you would
+[1:29.04] find at a startup, like a front-end
+[1:30.64] developer, back-end developer, security
+[1:32.80] engineer, a growth hacker, Twitter
+[1:34.80] engager, and many others. You can easily
+[1:37.04] combine all these agents together in
+[1:38.56] claude code, which can more efficiently
+[1:40.32] help you go from zero to an actual
+[1:42.24] product without needing to directly
+[1:44.00] implement every personality and skill.
+[1:46.08] That's cool, but when you put these
+[1:47.36] agents to work, how do you know your
+[1:48.88] prompts are any good? Well, that's where
+[1:50.56] Prompt Fu comes in. Another open- source
+[1:52.72] tool that was just recently acquired by
+[1:54.40] OpenAI that you can think of like a unit
+[1:56.72] testing framework for your prompts. If
+[1:58.64] you're using AI to build an app that
+[2:00.32] lets the end user interact with AI, also
+[2:02.56] half the battle is figuring out if
+[2:04.08] you're using the best model with the
+[2:05.44] best prompt. But prompt FU lets you test
+[2:07.60] different prompts with different models
+[2:09.52] to optimize what's going to actually
+[2:11.04] work best in your application. On top of
+[2:12.96] that, it can also do automated red team
+[2:14.96] attacks to find out if your app is
+[2:16.56] vulnerable to things like prompt
+[2:18.00] injection, which is important because if
+[2:20.00] your chatbot can be tricked into
+[2:21.36] revealing your API keys by a 14-year-old
+[2:23.52] on Discord, your app is probably going
+[2:25.52] to fail. The failing sucks, but it's a
+[2:27.68] lot easier to not fail when you can
+[2:29.36] predict the future. And Mirrorish can
+[2:31.36] help you do that. It's a multi- aent AI
+[2:33.44] prediction engine that starts by
+[2:35.20] extracting a bunch of data from the
+[2:36.80] internet, like breaking news and
+[2:38.48] financial trends. It then uses that data
+[2:40.56] to create a digital world where multiple
+[2:42.64] agents with independent personalities
+[2:44.64] then react to and discuss the data
+[2:46.64] almost like a miniature evolving
+[2:48.24] artificial social network. Yeah, it
+[2:50.16] might be in Chinese, but if you don't
+[2:51.68] know how to speak Chinese yet, all I can
+[2:53.44] say to you is low hola, you're falling
+[2:56.08] behind. Like for example, if you want an
+[2:58.16] app idea that's guaranteed to make you a
+[2:59.84] billion dollars, you can spin up Micro
+[3:01.60] Fish to analyze trends at the macro and
+[3:03.76] micro level, then predict a strategy
+[3:05.60] that's guaranteed to make you rich. It's
+[3:07.20] really that easy. But here's the
+[3:08.56] problem. You go to build that app and
+[3:10.08] the UI has these dumb purple gradients
+[3:12.08] like every single other vibe coded app.
+[3:14.08] Well, to fix that, you need Impeccable,
+[3:15.92] an open- source project optimized for
+[3:18.00] front-end design. It's a skill that
+[3:19.92] comes with 17 different commands that
+[3:21.60] can help your UI not suck so much. Like,
+[3:23.68] one thing that drives me crazy is that
+[3:25.36] many AI chatbots create UIs that are way
+[3:27.68] too complex. Well, with impeccable, we
+[3:29.84] can use the distill command to simplify
+[3:32.00] everything in one go. Then we can use
+[3:34.00] commands like colorize to add our brand
+[3:35.84] colors. Then slowly add in commands like
+[3:38.00] animate and delight to make the UI look
+[3:40.00] more unique and special. But perhaps the
+[3:42.00] single most important skill of the
+[3:43.44] modern Vibe engineer is managing
+[3:45.44] context. If the context is garbage, the
+[3:47.60] output is garbage. An open- source
+[3:49.44] project trying to make your context
+[3:50.96] better is Open Viking, a database
+[3:53.12] designed specifically for AI agents.
+[3:55.28] Instead of jamming everything into a
+[3:56.72] vector database, Open Viking organizes
+[3:58.96] an agents memory, resources, and skills
+[4:01.20] into the file system. Not only is that a
+[4:03.36] sane way to unify your context, but it
+[4:05.76] also uses a tiered loading system which
+[4:08.08] can dramatically reduce token
+[4:09.52] consumption and save you a bunch of
+[4:11.12] money. And it automatically compresses
+[4:12.88] content and refineses long-term memory,
+[4:14.80] which will make your agent smarter the
+[4:16.40] more you use it. But depending on your
+[4:18.16] project, you may not need an agent
+[4:19.68] that's more smarter. You may need an
+[4:21.20] agent that's more based. And that's
+[4:22.72] where Heretic comes in. Virtually all
+[4:24.64] models out there have guardrails that
+[4:26.56] prevent you from doing fun things like
+[4:28.40] cooking method in your shed or building
+[4:30.72] high yield thermonuclear warheads.
+[4:32.56] Heretic allows you to remove this
+[4:34.16] draconian woke censorship using a
+[4:36.24] technique called obliteration. This
+[4:38.00] approach allows the tool to be
+[4:39.36] completely automatic and doesn't require
+[4:41.36] any expensive post training. All you
+[4:43.28] have to do is take a smart yet highly
+[4:45.20] censored model like Google's Gemma, run
+[4:47.12] this tool from the command line, and now
+[4:48.64] you have a model without the bubble wrap
+[4:50.24] that will obey any command. But maybe
+[4:52.08] that's not even enough to satisfy your
+[4:53.92] unhinged ambitions. In that case, you
+[4:56.00] may want to just build your own LLM from
+[4:57.92] scratch. And believe it or not, you can
+[4:59.84] actually do that with Nano Chat, which
+[5:01.76] implements the entire LLM pipeline,
+[5:04.08] including tokenization, pre-training,
+[5:06.16] fine-tuning for chat, evaluation, and a
+[5:08.48] web UI, so you can actually talk to it.
+[5:10.40] What's crazy though is that you can use
+[5:11.92] it to train your own small language
+[5:13.60] model for about $100 in GPU time. It's
+[5:16.32] not going to be Claw, GPT5, or Gemini,
+[5:18.72] but at least it gives you a model that
+[5:20.24] you have absolute control over. But the
+[5:22.16] only thing that's a bigger waste of time
+[5:23.44] than writing code by hand is going to
+[5:25.36] meetings. And that's why you need to
+[5:26.72] know about Recall AI, the sponsor of
+[5:28.96] today's video. If you've ever tried
+[5:30.56] building AI meeting tools from scratch,
+[5:32.56] you know it's a nightmare trying to
+[5:34.08] maintain separate integrations for Zoom,
+[5:36.48] Google Meet, Microsoft Teams, and all
+[5:38.40] the others. Recall solves this problem
+[5:40.64] by giving you one unified API that works
+[5:43.20] across every meeting platform. You can
+[5:45.20] set up a meeting bot or desktop
+[5:46.96] recording with a few lines of code like
+[5:48.72] I'm doing here and it'll capture
+[5:50.48] transcripts, recordings, and metadata in
+[5:52.72] real time. The thousands of companies
+[5:54.64] like HubSpot and ClickUp use it to
+[5:56.72] handle all their meeting infrastructure.
+[5:58.56] And most teams are able to ship
+[6:00.16] recording and note-taking features to
+[6:01.92] production in a few hours instead of
+[6:03.76] months. Check out recall.ai/fireship
+[6:06.88] to get $100 in free credits to try it
+[6:09.12] out for yourself. This has been the Code
+[6:10.72] Report. Thanks for watching and I will
+[6:12.64] see you in the next one.

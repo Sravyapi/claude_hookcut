@@ -1,0 +1,531 @@
+[0:03.12] hey everyone welcome back to the channel
+[0:04.48] i hope you guys are doing extremely well
+[0:06.24] a lot of you told me that you am a
+[0:07.84] single slime so from now onwards we are
+[0:09.76] going to start every video with this
+[0:11.36] line okay so uh the problem that you're
+[0:13.68] going to solve today is uh the flood
+[0:16.48] fill algorithm again this can be solved
+[0:18.88] using bfs or dfs but you need to
+[0:21.28] understand the core concept how are we
+[0:23.60] approaching this problem because it is
+[0:25.76] again going to be a problem which is
+[0:27.44] based on matrix so it states that an
+[0:31.36] image is represented by 2d rf integers
+[0:34.64] each integer representing the pixel
+[0:37.04] value of the image
+[0:38.64] given a coordinate srsc
+[0:41.36] representing the starting pixel so
+[0:43.36] basically sr is the row and sc is the
+[0:45.44] column so this is the starting pixel of
+[0:47.44] the flat fill and a pixel value new
+[0:50.16] color flood fill the image
+[0:53.04] now to perform a flat fill consider the
+[0:54.96] starting pixel plus any pixels
+[0:57.04] connecting four directionally to the
+[0:58.48] starting pixel of the same color as the
+[1:00.16] starting pixel plus any pixels connected
+[1:03.04] four directionally to those pixels and
+[1:04.80] so on
+[1:05.92] replace the color of all of the uh
+[1:08.56] aforementioned pixels with the new color
+[1:11.20] a bit confusing right not an issue let's
+[1:14.00] come back to the ipad and understand the
+[1:15.68] question so the question states you'll
+[1:17.60] be given something like this okay and
+[1:19.92] this matrix can be filled up filled up
+[1:22.16] with anything it can be 0 1 2 3 4 any
+[1:25.52] numbers
+[1:26.40] okay
+[1:27.36] over here they will be giving you a
+[1:29.12] starting row and a starting column so
+[1:31.28] over here i can say this is the starting
+[1:33.20] row and this is the column because if i
+[1:34.80] number them it's like 0 1 2. so this is
+[1:37.44] the starting row and the column what is
+[1:39.68] the color of that starting so i can say
+[1:42.48] the initial color is
+[1:44.56] one okay now what i want is flat fill
+[1:47.84] says okay
+[1:49.36] one that's your initial color
+[1:52.00] whoever
+[1:53.28] is connected to one and has the same
+[1:56.08] color so this is connected to one and
+[1:58.16] has the same color this is
+[2:00.40] not in not in this direction they only
+[2:02.96] allow you in four direction so you can
+[2:04.72] see this guy is connected to this guy
+[2:06.88] and this guy not to this because it is
+[2:08.96] zero and this is not allowed so it is
+[2:11.60] connected to two guys
+[2:13.20] remember this this
+[2:14.80] one is connected to two guys
+[2:16.72] so what you will do is the first color
+[2:19.36] you will color that with two
+[2:22.00] because that is what they're asking you
+[2:23.76] to color then whoever is connected with
+[2:26.24] it you color them with the same color so
+[2:28.80] these couple of guys were the same
+[2:31.04] pixels pixels same one pixel so you
+[2:34.40] colored them with the new color that is
+[2:36.56] two right after that these twos
+[2:39.60] are connected to these four directions
+[2:42.00] so you can color this and this so again
+[2:44.56] make sure you color this and this
+[2:46.80] this pixel is again connected to these
+[2:49.84] so you can color this thereby color this
+[2:52.56] as of now
+[2:53.76] this is the final configuration we could
+[2:56.72] not reach this so we will keep it as it
+[2:59.36] is so this is how you flat fill the
+[3:01.76] algorithm so let me give you one more
+[3:04.48] example so assume you have something
+[3:06.00] like one
+[3:07.44] one one and you have something like two
+[3:10.40] and this was two this was zero assume
+[3:13.52] and this was two
+[3:15.04] this was two and this was two and they
+[3:16.96] said uh the new color that you have to
+[3:18.64] pick up the new color rather that you
+[3:20.64] have to do is three okay and they're
+[3:23.76] saying the starting row to be
+[3:25.84] two and the starting column to be zero
+[3:28.24] assume that this is the case so if i
+[3:30.40] draw the matrix let's draw the matrix so
+[3:32.64] this is the matrix right if i
+[3:35.76] row number then this will be zero one
+[3:37.12] two if i column number then this will be
+[3:38.48] zero one two starting root two starting
+[3:41.04] column zero which is basically this one
+[3:43.28] okay and the initial color is two the
+[3:46.80] initial color is two you need to make
+[3:49.84] sure everyone
+[3:51.68] that is connected to two and has the
+[3:53.36] same color is colored with three the
+[3:56.00] first of all you color this with three
+[3:58.56] because that is what the new color is
+[4:00.48] you go to adjacent so this is the
+[4:02.08] adjacent you collect them with three
+[4:04.72] perfect for this three this is an
+[4:07.04] adjacent this is an adjacent this is an
+[4:09.60] adjacent this is an adjacent but only
+[4:11.76] this guy is having the same initial
+[4:14.00] color so thereby you color this with
+[4:16.48] three perfect now this three is
+[4:18.96] connected to four directions but only
+[4:21.04] this guy is having the same initial
+[4:23.44] color too so you color this apparently
+[4:26.32] this will be the final configuration
+[4:28.56] because these guys are connected but
+[4:30.32] this is one one one zero so you do not
+[4:32.72] color them you only color the guy who's
+[4:34.88] collected by the same initial color that
+[4:37.84] you're coloring this particular guy this
+[4:40.40] is how
+[4:41.52] you can
+[4:42.48] blood fill any given matrix by starting
+[4:45.84] from a row and a column so how do you
+[4:48.40] solve this
+[4:49.76] so as of now we can see that this is the
+[4:51.84] starting row and this is the starting
+[4:53.52] column which is this particular guy so
+[4:56.00] what are we looking for we are looking
+[4:58.00] to basically extend this to these guys
+[5:01.04] then to these guys and then to these
+[5:02.88] guys that is what we are looking for so
+[5:05.84] which algorithm can we follow we can
+[5:08.16] follow one kind of algorithm which is
+[5:11.20] breadth first search and breadth first
+[5:13.36] search says
+[5:14.64] that we start at the given point
+[5:17.12] we go on level wise
+[5:19.92] so first we go to this
+[5:22.48] simultaneously and we color them like
+[5:24.32] first we color this then we go
+[5:26.00] simultaneously
+[5:27.68] on the same level and color them
+[5:30.08] then we go simultaneously on every level
+[5:32.96] and color them so it is level wise we
+[5:35.92] can definitely do that and you have done
+[5:38.08] that in the previous problem so we can
+[5:40.16] definitely use something like a bfs
+[5:42.80] algorithm where we go
+[5:44.40] simultaneously on all its neighbors or
+[5:47.84] what i can do is i can use something
+[5:49.92] like a
+[5:51.28] dfs algorithm because the previous
+[5:53.28] problem we solved using bfs so this
+[5:55.76] problem we will be focusing to solve
+[5:57.84] using dfs so that you understand that
+[6:00.56] why does dfs work over here so over here
+[6:03.44] it's nothing like that you have to uh
+[6:06.08] color them in a minimum time or
+[6:07.52] something like that the question says at
+[6:10.08] the end of the day i need the final
+[6:12.08] configuration so the the
+[6:15.36] so the requirement is at the end of the
+[6:17.12] day you just need to make sure
+[6:19.44] everything
+[6:20.56] that is
+[6:21.60] touched to this 2
+[6:24.08] and is 2
+[6:25.60] is colored
+[6:28.00] with 3 that is what you want at the end
+[6:31.68] everything that is dust to 2 and is 3
+[6:34.48] and is 2 rather should be colored with
+[6:36.56] the new color 3. so
+[6:38.72] it basically means if i
+[6:40.56] start with this and i try to do a dfs
+[6:43.84] so basically this guy will have two
+[6:45.44] neighbors one is this guy and one is
+[6:47.36] this guy so either it can go like this
+[6:50.40] and then come back and go like this or
+[6:52.72] either it can do the other way it's like
+[6:54.48] this
+[6:55.36] come back and go like this so you can do
+[6:58.16] it both the ways so what i'll do is i
+[7:01.04] will try to have the
+[7:02.48] tfs so
+[7:04.32] i can say the initial dfs i'll start
+[7:07.60] from the first guy that is the starting
+[7:10.16] row and the starting column and make
+[7:12.16] sure you store the initial color as to
+[7:14.56] that's the initial color remember this
+[7:16.08] that is the initial color too so you say
+[7:18.40] dfs of 2 comma 0 is where you start off
+[7:21.12] with and when you're starting off you
+[7:23.44] need the final color right you need the
+[7:25.76] final color so either you can use the
+[7:28.16] same matrix but i generally do not
+[7:30.80] prefer to alter the input matrix why
+[7:33.68] because whenever you go into the
+[7:35.68] industry whenever data is given to you
+[7:38.32] you work on that data you do not tamper
+[7:40.24] with the data because data is very very
+[7:42.32] important so we always have to treat the
+[7:44.64] data as the data and we do not tamper
+[7:47.12] with it something that is given to us we
+[7:49.28] should never tamper with it we should
+[7:51.04] always solve the problem without
+[7:53.52] doing any alteration to that particular
+[7:55.68] data that is something which we follow
+[7:57.60] in software engineering a lot
+[8:00.32] so what we will do is we will create
+[8:03.12] a copy of this data okay
+[8:05.84] we will create a copy of this data and
+[8:07.68] we will just fill up everything with the
+[8:10.08] same numbers okay
+[8:11.60] perfect
+[8:12.48] so we are starting with dfs of 2 0 which
+[8:14.88] means at this portion so what you will
+[8:17.36] do is when you go inside you say hey can
+[8:20.96] you take the new color three and like
+[8:22.56] okay i'll take the new color three has
+[8:24.48] taken the new color three now he knows
+[8:27.12] he has
+[8:28.24] two neighbors or two
+[8:30.96] people who are connected to him
+[8:33.12] one is the dfs of one comma zero the
+[8:36.88] other one is the dfs of 2 comma 1 so
+[8:42.00] basically 1 comma 0 is this 2 comma 1 is
+[8:45.20] this so either it can go here either it
+[8:47.92] can go here so if you remember what is
+[8:49.76] the dfs algorithm goes first in the
+[8:51.92] depth goes first in the depth so we'll
+[8:54.00] try to go first in this portion of depth
+[8:56.24] it could have gone the either way
+[8:58.16] depending on how you are writing the
+[9:00.32] code it can go on this or on this so we
+[9:03.28] will see that it goes on this dfs of one
+[9:06.24] zero so again you go to one zero which
+[9:08.16] is this and you color that with the new
+[9:10.48] color now this one zero is having one
+[9:14.24] children
+[9:15.20] and these children are not having the
+[9:17.52] same color it's not two and this is
+[9:20.72] invalid and this has already been
+[9:23.44] visited it is not having the initial
+[9:25.60] color too so you only go to this
+[9:28.08] direction remember this you only go to
+[9:30.64] this direction which is dfs of
+[9:33.12] one one so now we will go to dfs of 1 1
+[9:37.04] so we add
+[9:38.64] dfs of 1 1 which is this guy so this guy
+[9:42.40] will be colored with the new color 3 so
+[9:44.32] let's color that with the new color 3.
+[9:46.56] now since it is colored it will look for
+[9:48.96] its neighbor no it is one
+[9:51.68] no it is zero
+[9:53.44] this one already visited
+[9:55.52] this one
+[9:57.12] yes
+[9:58.48] it is two and it has not been visited
+[10:01.92] it will be visited but that dfs has not
+[10:05.12] been called yet it will be visited but
+[10:08.56] it was supposed to take two sides but
+[10:11.12] since it is dfs since it is dfs it will
+[10:14.80] go like this
+[10:16.16] then like this stand like this
+[10:18.48] tfs depth first search at first okay so
+[10:22.40] what will happen is this dfs of one will
+[10:25.28] now call for dfs of two comma one and it
+[10:28.80] will mark this as three now this this
+[10:32.40] guy
+[10:33.36] looks at its neighbor already visited
+[10:36.16] looks at it neighbor not visited so it
+[10:39.04] does a visit for this which is dfs off
+[10:42.32] two comma two goes there and marks it
+[10:45.20] now when we go on the dfs of two next
+[10:47.36] time
+[10:48.24] we see this is
+[10:50.40] having
+[10:51.36] no one no one no one this guy already
+[10:54.64] visited done so what he will do is he
+[10:58.16] will say i do not have neighbors please
+[11:00.72] go back
+[11:01.76] this guy did not have any other
+[11:03.36] neighbors it goes back
+[11:05.52] this guy did not have any other
+[11:06.88] neighbors
+[11:07.92] goes back now dfs of one zero says i am
+[11:11.36] done so dfs of two which started with
+[11:14.56] two guys
+[11:15.68] went into one
+[11:17.04] came back it's time that it goes to the
+[11:19.36] next but before going we will check
+[11:22.56] is it worth going no it's already
+[11:25.28] colored it is not having the initial
+[11:27.20] color too that means someone came and
+[11:30.48] colored it
+[11:31.60] there's no point in going to this guy
+[11:34.56] yes
+[11:35.52] again recursion has to be strong
+[11:37.36] recursion has to be super strong so we
+[11:39.92] apparently went something like this
+[11:43.28] and had you done
+[11:45.20] something like a dfs on this side what
+[11:47.36] would have happened you'd have gone from
+[11:49.28] here to here
+[11:51.20] then probably here
+[11:52.88] came back and then here then here if you
+[11:56.00] would have done dfs on this portion
+[11:58.80] first so depends how your code works it
+[12:02.32] will go and touch it in that manner
+[12:05.92] it does not matter how you touch it
+[12:07.84] because at the end of the day if all the
+[12:10.96] twos that are attached to these this two
+[12:13.76] are colored like threes that is what
+[12:16.32] matters to me so you can go like bfs or
+[12:18.72] dfs that is completely your choice so as
+[12:21.76] usual i'll be writing the c plus plus
+[12:23.44] code and the java code is on the left so
+[12:25.76] you can follow that as well so
+[12:28.48] we're given the image we're given the sr
+[12:30.88] we're given the starting this so the
+[12:33.20] first thing that we do is we keep the
+[12:34.96] initial color will be the initial color
+[12:37.92] definitely this there's no doubt in this
+[12:40.96] what is the next thing that we do we
+[12:42.64] copy this particular image
+[12:45.20] because we need to
+[12:46.96] flat fill it and return it so we will
+[12:49.28] copy this
+[12:51.04] into some answer okay perfect do we need
+[12:53.84] something else really we can think about
+[12:55.52] that afterwards let's call the dfs
+[12:57.60] starting from the starting row starting
+[12:59.68] column given the answer given the image
+[13:02.88] and if we require something else we'll
+[13:04.32] take that afterwards okay so we write a
+[13:06.96] private function and the private
+[13:08.72] function will have
+[13:10.16] void dx and it knows it has add a row it
+[13:13.44] has a column
+[13:14.80] and it has this particular
+[13:17.60] answer at first
+[13:19.28] okay and then it has this particular
+[13:21.68] image so that is something which it
+[13:24.24] always has initial
+[13:26.24] now what we will do is
+[13:28.64] if you remember well enough whenever we
+[13:30.80] entered
+[13:31.84] whenever we entered on this row column
+[13:34.24] we always colored it with the new color
+[13:37.12] so you need the new color as well so
+[13:38.64] please carry the new color as well
+[13:40.24] something like int new color and you can
+[13:42.88] always pass the new color over here
+[13:44.72] perfect colored right after that
+[13:47.28] it checks for its neighbor the upper
+[13:49.68] neighbor the left the right the town guy
+[13:52.16] right so how do how will you check for
+[13:54.48] the upper neighbor and all of these so
+[13:56.40] if i try to write it properly there is
+[13:58.16] like something like row column
+[13:59.92] and the upper neighbor is row minus one
+[14:03.68] column
+[14:05.36] correct and the one on the right is row
+[14:08.00] comma column plus one
+[14:10.08] the one at the bottom is
+[14:12.16] row plus one column the one at the left
+[14:15.44] is row comma column minus one so
+[14:18.72] apparently these are the
+[14:21.04] four neighbors i believe these are the
+[14:23.20] four neighbors so
+[14:25.12] either you can write four calls
+[14:28.16] separately one by one by one but to
+[14:32.32] maintain readability what you will do is
+[14:35.36] we will try to figure out a way so we
+[14:37.12] see there is
+[14:38.40] a change of minus one in the row a
+[14:40.80] change of plus zero in the row a change
+[14:42.80] of plus one in the row a change of plus
+[14:44.72] zero in the row so what i can say is
+[14:47.44] delta change in row is
+[14:49.76] minus one zero
+[14:51.84] plus one and zero
+[14:53.76] and similarly i can say delta column
+[14:55.60] changes
+[14:56.72] plus 0
+[14:58.96] plus 1
+[15:01.52] plus 0
+[15:03.44] and minus 1 for this guy so for the
+[15:06.00] first time if i add this to row and add
+[15:08.80] this to column i will get my upper
+[15:10.96] coordinates for the next time if i add
+[15:13.04] these guys i'll get the right chord but
+[15:15.44] the next time if i add these guys i'll
+[15:17.44] get these coordinates for the next time
+[15:19.20] if i add these guys i'll get these
+[15:21.04] coordinates so this is how we can easily
+[15:23.84] do it so what i'll do is i'll create
+[15:25.76] something like delta rho okay
+[15:28.32] and over here i can just do something
+[15:30.96] like
+[15:32.72] minus 1 sorry minus 1 0 plus 1 and 0
+[15:37.60] this can be done and i can also create
+[15:39.60] something like delta column and delta
+[15:41.68] column is going to be something like 0
+[15:44.24] plus 1
+[15:45.84] 0 and minus 1 perfect so this is
+[15:48.48] something which you have done so we
+[15:49.84] definitely need the delta rho
+[15:51.92] and the delta column for sure let's take
+[15:54.08] it
+[15:54.88] again carry them
+[15:56.40] delta rho and delta column
+[15:59.60] so this is going to be an array so
+[16:01.12] please carry out this as an array done
+[16:03.76] it drops on all its neighbors how many
+[16:06.08] neighbors are there there are exactly
+[16:08.40] four neighbors so please
+[16:10.08] carry them
+[16:11.36] perfect now what is the next thing that
+[16:12.96] you will do you need the neighbor row so
+[16:15.60] neighbor you know what is that
+[16:17.60] row plus del row of i correct and you
+[16:21.12] know what is the column it is
+[16:23.12] column plus
+[16:24.56] del column of i right we know that so
+[16:27.12] once you have got the neighbor rule and
+[16:28.72] the neighbor column what should be our
+[16:30.96] uh main focus the main focus should be
+[16:34.72] first of all is this a valid guy because
+[16:37.36] if it is not a valid guy there's no
+[16:38.80] point in doing but the first thing we
+[16:40.88] need this as a valid guy something you
+[16:43.12] can do is you can
+[16:44.64] always compute or you can carry it from
+[16:46.80] there that is your choice image of zero
+[16:49.20] dot size okay so over here n row should
+[16:52.24] be lesser than n and an n column should
+[16:55.12] be greater than zero and an n column
+[16:57.76] should be less than m perfect
+[16:59.60] and that
+[17:01.28] so once you've checked for validity i
+[17:03.28] need to check
+[17:04.64] is this sky yes is this guy having the
+[17:07.92] same initial color then only they will
+[17:10.16] be connected at the same time has this
+[17:13.20] has this previously been
+[17:15.04] visited and colored if it has
+[17:17.76] been previously visited then it will
+[17:19.44] definitely have the new color if it does
+[17:21.52] not have the new color yet and it is the
+[17:24.16] same color then i go and just
+[17:27.44] color it yes
+[17:29.52] simple it's a new column and then what
+[17:32.08] we can do is we can pass the answer
+[17:33.76] image again you color del row
+[17:37.36] del column and the initial color
+[17:41.04] perfect
+[17:42.24] and this should be it and we can return
+[17:43.92] the answer over here now let's super
+[17:45.60] quickly compile this and see if this is
+[17:47.44] running fine
+[17:50.32] it is having some compilation error in
+[17:53.12] he was not declared
+[17:54.96] okay initially
+[18:01.68] okay it does let's quickly submit this
+[18:04.88] okay
+[18:05.84] perfect all the test cases are running
+[18:08.56] so if i ask what is the time complexity
+[18:12.72] so you know that the time complexity is
+[18:15.84] generically
+[18:17.28] like you have end notes so for n notes
+[18:19.92] you'll be calling like imagine for the
+[18:21.92] worst case how many notes will it have
+[18:24.72] all the matrixes are connected imagine
+[18:27.52] this is 2 this is 2 this is 2 this is 2
+[18:29.36] this is 2 this is 2 this is 2. all of
+[18:31.60] them have same pixel colors
+[18:33.60] so at the worst case i can say there are
+[18:35.12] these many uh
+[18:36.96] like call it as x x number of nodes
+[18:40.40] so if there are x number of nodes
+[18:42.40] for every node you're traversing for
+[18:44.56] four neighbors right
+[18:47.76] it's into like x into four
+[18:50.56] is what you are traversing into so i can
+[18:53.60] say you're calling the code for like x
+[18:56.16] notes
+[18:57.44] and for every node you're traversing for
+[18:59.68] four guys so it's like you're calling
+[19:01.60] dfs for x times because at max there
+[19:04.48] will be these many dfs calls and for
+[19:07.52] every x guy you're calling like four
+[19:10.32] like you're running a for loop so it can
+[19:13.36] again be written as
+[19:14.88] we go of x which is somewhere b co of n
+[19:18.24] cross m
+[19:19.68] so this will be the time complexity and
+[19:22.32] if we discuss about the space complexity
+[19:24.72] we are using an external uh
+[19:28.08] matrix to store the answer again you can
+[19:30.48] say that you will store the answer in
+[19:31.84] the given matrix only that is your
+[19:34.88] choice apart from that there is
+[19:37.28] something as a stack space that you're
+[19:39.28] using so that is like in the recursive
+[19:42.16] stack space that is b go of n cross n
+[19:45.12] imagine you start the dfs from here and
+[19:47.84] the recursion will go here here here
+[19:50.16] here here here here here so it'll be the
+[19:52.88] recursion stack space will be complete
+[19:54.88] and crossing that is the another
+[19:57.68] space that you're using and apart from
+[20:00.16] that you're using this delta row and
+[20:01.52] delta column so you can compute that
+[20:03.12] easily so guys i hope i was able to
+[20:05.76] explain you the flood fill algorithm
+[20:07.52] just in case i was make sure you hit
+[20:09.60] that like button and if you're new to
+[20:10.88] our channel what are you waiting for hit
+[20:13.52] that subscribe button right away and
+[20:15.20] yeah if you haven't checked out our dp
+[20:16.80] series and the hd sheet the links are in
+[20:19.12] the description please make sure you
+[20:20.24] check them out and with this i'll be
+[20:21.60] wrapping up this video let's fit in some
+[20:23.04] other video till then bye take care
+[20:27.38] [Music]

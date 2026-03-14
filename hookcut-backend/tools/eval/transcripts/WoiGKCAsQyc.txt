@@ -1,0 +1,1216 @@
+[0:00.08] The first person I called was Jensen
+[0:02.08] saying which of the 20 LLM companies
+[0:04.72] you're optimistic and he said coher is
+[0:06.64] one of the important ones for us. The
+[0:08.40] bigger question going forward is the 500
+[0:11.12] million of ARR needs about 600 million
+[0:14.16] of investment from the LLM company
+[0:16.16] hosting cost from Amazon and the
+[0:17.76] hyperscalers of 700 million and ships
+[0:20.08] worth 800 million. Concern for me is not
+[0:22.40] the growth concerns for me is two
+[0:24.16] things. One is the cost of that growth
+[0:26.48] and the unit economics. I like founders
+[0:28.96] who never take no for an answer. People
+[0:31.44] like Steve Jobs, Elon Musk went into
+[0:33.84] market and they had a belief that
+[0:35.44] anything is possible. I tried to assess
+[0:38.16] that.
+[0:42.00] >> Hi, this is Sudhhat Alwalia. Welcome to
+[0:44.16] the Neon Show. I'm managing partner at
+[0:46.80] Neon Fund, a fund that invests in the
+[0:49.04] best of enterprise AI companies between
+[0:51.84] US, India, corridor like atomic work,
+[0:54.64] spot ddraft, cloud sec. Today I have
+[0:57.04] with me a very accomplished founder,
+[0:59.68] board member and a venture capitalist
+[1:02.08] Padwal. Welcome Omesh on the Neon Show.
+[1:04.96] You have been a former general partner
+[1:06.40] at Tom West, previously a partner at
+[1:08.80] Bessimmer. I would say such a rich
+[1:10.40] career in the last 30 years.
+[1:13.04] >> Thank you. It's entrepreneurs who make
+[1:15.44] me successful and I'm delighted to be
+[1:18.08] here with you and thanks for the
+[1:19.36] opportunity to speak with you.
+[1:21.12] >> I want to you know hear from you the
+[1:23.12] current AI landscape. uh there is wipe
+[1:26.16] coding, there's model companies and and
+[1:28.56] then it goes back like literally to
+[1:30.80] Nvidia. Can you share your views on how
+[1:33.84] big the wipe coding companies can get?
+[1:35.60] How much scope is there for new
+[1:37.52] entrance? Similarly on the LLM side and
+[1:39.36] the unit economics
+[1:41.44] >> great question. So I'll start off with
+[1:43.52] seeing I've seen so many revolutions
+[1:45.68] happening in the Silicon Valley over the
+[1:47.60] last 40 years from semiconductors to PC
+[1:50.80] to networking to social media to search
+[1:54.24] to um Janantech type of companies in the
+[1:57.52] healthcare area um so uh and so many
+[2:01.12] others. have never seen a revolution
+[2:04.48] coming at you as fast as AI is since
+[2:08.48] November 2023 when chat GPT came. It
+[2:12.80] just set the market on fire and the
+[2:15.68] money pouring in into companies and the
+[2:18.24] number of companies which are being
+[2:19.76] formed and the rate at which the
+[2:21.92] innovation is happening is absolutely
+[2:24.72] never happened again. So that presents a
+[2:28.24] significant opportunity and a challenge
+[2:30.16] to a investor like me. The opportunity
+[2:33.52] is it's massive. Challenge is there's so
+[2:36.48] many companies to choose from and how do
+[2:38.56] you choose them? So starting in AI the
+[2:42.64] first thing that is going in is the
+[2:44.40] plumbing the infrastructure. So the
+[2:46.56] first thing is Nvidia, AMD, Broadcom
+[2:51.12] building data using their chips and the
+[2:53.76] hyperscalers and meta and others
+[2:56.16] building that infrastructure hardware
+[2:58.00] infrastructure on which all the other
+[3:00.32] layers go in. The second is LLM
+[3:03.84] providers because that becomes the
+[3:05.76] second thing. So you had people like
+[3:07.44] OpenAI, you had Anthropic, Cohair and
+[3:10.64] Meta Lama models. Now the next question
+[3:14.16] is in order for AI to go into production
+[3:17.44] you need three things. The
+[3:19.20] infrastructure cost has to be
+[3:21.04] reasonable.
+[3:22.56] Luckily over the last two years the cost
+[3:25.68] per token has come down 95% which is
+[3:28.88] allowing all the startups and the large
+[3:31.28] company to start um using those to
+[3:35.04] release to production. Second is the AI
+[3:38.40] talent. You're seeing all these AI
+[3:40.48] talent, Meta and Open AI and Microsoft
+[3:44.72] and Google buying people. Why? Because
+[3:47.60] the AI talent at this time is very very
+[3:50.32] small talent pool getting the best team.
+[3:53.92] It's all about team team as you know. U
+[3:56.96] so getting the team is important and the
+[3:58.72] third one is development tools helping
+[4:01.60] customers going into production uh not
+[4:04.80] just in prototype is other thing. All
+[4:08.00] those three things are starting to now
+[4:10.56] come alive 2 years after this
+[4:12.64] revolution. And so now we see enterprise
+[4:16.16] use cases into production. Consumer has
+[4:18.80] already been regards white coding. It's
+[4:21.84] incredible how fast these wipe coding
+[4:24.72] companies like any scale with cursor or
+[4:27.28] wind surf and others are growing. Going
+[4:30.80] from zero to 500 million ARR in two
+[4:34.24] years is a with just under 200 people is
+[4:37.76] a fantastic achievement. The bigger
+[4:40.96] question for me going forward is the
+[4:44.00] unit economics for these companies
+[4:46.64] because what I heard is the 500 million
+[4:49.60] of ARR
+[4:51.92] needs about 600 million of investment
+[4:54.40] from the LLM company they have to pay
+[4:57.04] which also requires hosting costs from
+[4:59.12] Amazon and the hyperscalers of 700
+[5:01.28] million and that needs ships worth 800
+[5:04.96] million uh to do it. So the layers of
+[5:09.52] which you have to pay the concern for me
+[5:12.96] is not the growth concerns for me is two
+[5:15.76] things. One is the cost of that growth
+[5:18.00] and the unit economics and the second
+[5:20.00] thing is there's a recent trend as
+[5:22.00] you've seen u anthropic and open AI and
+[5:25.68] also Microsoft are getting into that
+[5:27.84] field. So they have an inherent
+[5:29.84] advantage because they provide the whole
+[5:31.84] LLM layer and everything and they're
+[5:33.92] much larger companies. So will there be
+[5:37.04] competition which will cause issues to
+[5:39.60] these uh wide coding is the biggest
+[5:42.24] concern for me and secondly
+[5:45.36] the differentiability.
+[5:47.52] Can a engineer who is using cursor
+[5:51.44] stick with it because it's ingrained or
+[5:55.04] they feel like okay I have another tool
+[5:57.68] which is as good I'll switch. So the two
+[6:00.72] concerns in my mind despite the growth
+[6:02.96] which is fantastic and I respect all the
+[6:05.04] companies is the quality of the revenue
+[6:07.60] and the competitive landscape and the
+[6:09.36] unit economics.
+[6:10.96] >> You're saying a company at 500 mil R in
+[6:14.08] VIP coding like cursor is spending 600
+[6:16.56] million on LLMs and much more they are
+[6:20.40] spending on the the cloud infra.
+[6:22.96] >> Yes.
+[6:23.52] >> So the combined spend for 500 million is
+[6:25.84] in billions. it is billions and hence
+[6:29.04] the unit economics are very difficult
+[6:31.68] there right now if they achieve scale
+[6:33.76] and the cost of all that comes down
+[6:36.08] there's a chance the unit economics
+[6:37.84] starts going well for them
+[6:40.80] >> and uh can you tell more about your
+[6:43.12] investments like cohair and harness
+[6:45.44] right let's specifically talk about
+[6:46.80] cohair
+[6:47.60] >> why did you make it and you know uh how
+[6:50.40] does it differentiate with the other LLM
+[6:52.48] providers
+[6:53.36] >> so I'm a very thesis driven investor
+[6:56.96] before making any investment I look at
+[6:59.04] that particular area which segments of
+[7:01.28] the market you should invest and which
+[7:03.44] are the best companies and your thesis
+[7:05.36] about investing. So Cohair there were
+[7:07.92] about three or four reasons why I
+[7:09.84] invested in Cohair. Coair was very early
+[7:12.40] just like OpenAI and Anthropic at that
+[7:14.24] time. So I could pick Cohair was from
+[7:17.04] the beginning focused on enterprise
+[7:18.72] revenue. They were not focused like
+[7:20.64] OpenAI and Enthropic on consumer which
+[7:22.80] is a large market and they've done well
+[7:24.88] but focused on um enterprise. Second is
+[7:28.32] they wanted to do only onrem secure AI
+[7:32.32] and the reason for that is as you all
+[7:35.60] know LLMs have be have to be trained on
+[7:38.32] proprietary data.
+[7:39.36] >> Yeah.
+[7:39.76] >> So when the enterprise have their
+[7:41.20] proprietary data they're very concerned
+[7:44.24] if it's not secure it's not onrem just
+[7:46.96] like onrem cloud when it first came out.
+[7:49.44] >> So we felt that was the differentiator.
+[7:51.76] Their focus on enterprise, their focus
+[7:53.44] on onrem making it secure. Also, we felt
+[7:57.76] they were the snowflake of the market.
+[8:01.04] They didn't take investment from any of
+[8:02.96] the hyperscalers. They had opportunities
+[8:05.20] to do that, but they chose not to. So,
+[8:07.60] give the user and the enterprises a
+[8:09.60] choice of any cloud rather than be tied
+[8:13.04] to one cloud. And then they had the
+[8:16.08] fourth thing which was really
+[8:17.92] exceptional they did is the strategics
+[8:20.80] who invested in them
+[8:22.40] >> like
+[8:22.96] >> like Nvidia, Salesforce,
+[8:26.56] Cisco, AMD, Deutsch Telecom,
+[8:31.28] um LG,
+[8:33.60] um Fujitsu
+[8:36.96] globally the market leaders and they
+[8:39.92] give validity to the company. Yes.
+[8:44.56] >> Plus they become the channels in their
+[8:47.04] countries and to their customers of
+[8:49.60] coair product being integrated. So
+[8:52.32] that's what excited those were the four
+[8:54.96] premises large market enterprise focus.
+[9:00.08] Third is onrem security which is
+[9:02.48] important for these models because
+[9:04.56] that's going to be a big problem. their
+[9:06.96] investors and distribution channel and
+[9:09.04] the team itself they came Aiden the CEO
+[9:12.32] and the whole team co-founders came from
+[9:15.20] they wrote the transformer paper they
+[9:17.44] came from Google and deep mind and
+[9:19.04] others so the talent was good and the
+[9:22.16] last thing I would say is even talent
+[9:25.04] where it's located in the Bay Area the
+[9:27.44] cost of that talent you know is very
+[9:29.60] expensive
+[9:30.72] >> whereas this talent is in Toronto which
+[9:32.80] has a great University of Toronto where
+[9:34.80] all the AI researchers coming the cost
+[9:37.04] in Toronto is low, the churn is less and
+[9:40.72] so we wanted we felt that that was
+[9:42.80] important piece of the puzzle is to keep
+[9:45.12] the development cost of people and
+[9:47.44] turnover very low. So those are some of
+[9:49.84] the reasons why uh we invested in 2023
+[9:55.20] very early uh in coher.
+[9:57.76] >> Yeah. So earlier in the SAS you know the
+[10:00.96] last 20 years the thesis was at least to
+[10:04.80] make a big company you need a very
+[10:06.88] strong CEO with business expertise and a
+[10:10.24] very strong tech co-founder has it
+[10:12.32] changed in AI because what I'm hearing
+[10:14.40] is you know people are focusing more on
+[10:17.36] deep technical founders and you know
+[10:19.76] their assumption is these founders will
+[10:21.92] learn the business
+[10:23.52] >> great question you know there are two
+[10:25.36] types of founders I've invested over 40
+[10:28.08] private companies now and I've seen the
+[10:30.16] trend. The repeat p founders is 75% of
+[10:34.24] my investments and the reason is they've
+[10:36.24] gone through it once and so they have
+[10:38.56] learned from it and don't make the same
+[10:40.40] mistake again. However, in AI there are
+[10:43.28] a lot of first-time founders. So the
+[10:46.48] technical founders and the technical um
+[10:49.36] differentiation is extremely important
+[10:51.44] but ultimately if you want to build a
+[10:53.60] company which wants to go to IPO the
+[10:56.00] management team around it needs to
+[10:58.32] complement these founders. A CRO who has
+[11:01.52] done it before to scale from zero to
+[11:04.32] billion dollar revenue. A CMO to get the
+[11:07.12] demand genen uh engine going. the
+[11:10.32] customer success team around it to keep
+[11:12.88] the customers and making sure they're
+[11:14.56] listening to the existing customer for
+[11:16.24] product roadmap the operations team the
+[11:18.88] finance team all those become very
+[11:21.04] important as you grow to billion dollars
+[11:23.12] and some of these companies are growing
+[11:24.80] so fast that I think they're having
+[11:28.40] trouble keeping up with hiring of the
+[11:30.88] right talent around them but the most
+[11:33.20] core factor for me to invest is always
+[11:35.60] the team it's all about team team no
+[11:39.44] matter where you go early stage seed A B
+[11:43.36] later stage it's all about the team
+[11:45.12] because you want to bet on the best team
+[11:47.68] because best team focused on a large
+[11:50.08] market will figure out ways how to get
+[11:52.40] there a team which is ahead with a not a
+[11:55.76] great strong team will lose its edge and
+[11:58.08] lose the market share to the leader
+[12:01.04] >> and can you describe like some of the
+[12:02.80] traits and the best teams that you have
+[12:04.48] backed and observed them from the
+[12:06.40] earlier stages
+[12:07.44] >> yes a lot of first important important
+[12:09.76] thing when I invest I look at is
+[12:12.00] transparency.
+[12:12.80] >> Sure.
+[12:13.28] >> If I'm an investor and I take both seats
+[12:15.84] I want the CEO to be a partner with me
+[12:18.00] for building this whole company. It's
+[12:19.68] not just about the money. It's working
+[12:21.84] with you to get the best outcome over 10
+[12:24.00] years. So I look at transparency and I
+[12:26.56] have this very clear uh conversation
+[12:29.12] saying look a lot of CEOs are afraid to
+[12:32.16] share with the board and investor
+[12:34.08] problems and they want to solve it
+[12:35.44] themselves. We are in it together once
+[12:37.52] we invest. So I like cooperative
+[12:39.76] transparent uh thing. I like founders
+[12:43.68] who never take no for an answer on any
+[12:48.08] problem. They're so engaged. People like
+[12:51.36] Steve Jobs, Elon Musk when he formed it,
+[12:53.76] he went into markets and they had a
+[12:56.00] belief that anything is possible. I
+[12:58.72] tried to assess that. I see how
+[13:01.68] passionate they are about the problem
+[13:04.24] and what how they're thinking about it.
+[13:06.96] I also like founders who know their
+[13:09.92] weaknesses because none of us are
+[13:12.08] perfect, including me after so many
+[13:14.08] years. You need to know what you're good
+[13:16.56] at and what you're not. And what you're
+[13:19.44] not good at, you try to complement by
+[13:21.76] hiring the best people and not get
+[13:24.48] scared of the best people that they are
+[13:26.56] difficult to manage. You need to build
+[13:28.24] the best team. And that confidence
+[13:31.12] level, that integrity,
+[13:34.08] that transparency and that drive in them
+[13:38.24] is very important. I also ask them very
+[13:41.60] clearly, what is it that driving you?
+[13:44.24] And a lot of times some entrepreneurs
+[13:47.04] are so driven to prove the passion as
+[13:50.80] well as they're so driven because they
+[13:52.56] want to make it. I think that part of a
+[13:56.40] drive and the fire in a person u and
+[13:59.60] manage fire is very important. Arrogant
+[14:02.96] founders I have trouble with just
+[14:05.04] because they're not team players. U I
+[14:07.76] like team players because it's
+[14:09.44] ultimately about a team on the
+[14:11.36] management side as well as on the board
+[14:13.20] side and investor side. So I think we
+[14:15.36] win together as a team is very very
+[14:18.00] important for me when I invest.
+[14:19.76] >> Yeah. And like say usually like in
+[14:22.40] companies like stack genen right such is
+[14:24.64] a common dear friend
+[14:26.16] >> how old is the relationship before you
+[14:28.16] take the call to invest. So I have
+[14:30.88] multiple levels of uh investment. If I
+[14:33.28] take stack gen and suchin I met him in
+[14:35.36] 2018 in Palo Alto and I loved the person
+[14:39.12] that company he sold quickly I didn't
+[14:41.12] get a chance and the second one he sold.
+[14:43.52] So I tracked him because I was very very
+[14:46.00] impressed with him and so when he gave
+[14:48.08] me a call saying hey I started something
+[14:51.44] um I sat with him and his co-founder uh
+[14:54.48] as we knew the space very well because
+[14:57.92] of our thesis and we made a decision in
+[15:00.96] the seed round in literally 3 hours.
+[15:04.40] >> Wow.
+[15:04.96] >> 3 hours
+[15:05.76] >> but there was no IC or anything? uh uh
+[15:07.84] there was IC but we were convinced of
+[15:10.80] that that we were able to present the
+[15:12.96] following Tuesday to our IC
+[15:15.52] >> and then make the decision go through IC
+[15:19.28] and actually fund the company in seven
+[15:21.12] days
+[15:22.08] >> because we were very excited of the pain
+[15:23.92] point they were talking and he was he
+[15:25.36] and if were known entities to me
+[15:27.52] >> so that's example of six years reliance
+[15:30.16] AI which I led the round series P along
+[15:32.96] with Microsoft and Menllo ventures and
+[15:34.88] others was a different story. We had
+[15:38.00] done a thesis on data privacy, data
+[15:40.56] security, data compliance and nine
+[15:43.44] months before and we said this is the
+[15:45.28] area we need to go after and then we
+[15:47.52] said these are the 20 companies in this
+[15:49.52] are very good and then we talked to the
+[15:52.32] top five and Reliance happened to be the
+[15:54.80] top five. We didn't know him Abby Sharma
+[15:57.52] I so I had to actually quote him for
+[16:00.40] nine months develop a relationship where
+[16:03.12] he got confident with me and then I was
+[16:05.60] able to preempt the round because he got
+[16:08.00] total confidence saying I don't need to
+[16:09.68] look anywhere and we got into the deal
+[16:11.92] so that's only nine months of
+[16:13.28] relationship with and then there is
+[16:15.60] exforce which I did last year which is
+[16:18.32] AI enabled sock uh security operations
+[16:21.20] which is fantastic company and a
+[16:22.88] platform uh where we did this series A
+[16:26.16] with Mayfield as well as Vinnow that Kla
+[16:28.96] ventures there I knew him for 13 years.
+[16:33.28] So my relationship have been repeat
+[16:35.36] third time fourth time founders from
+[16:37.04] tens of years to five six years to
+[16:40.16] recent to AI um entrepreneurs
+[16:44.48] but it's about 3 four months but
+[16:46.56] typically I like to know it's like when
+[16:49.44] you want to marry someone you want to
+[16:51.84] date someone for a period of time to
+[16:53.60] just see the compatibility I like to do
+[16:56.40] that I don't like to do it when all the
+[16:59.20] term sheets are coming and you're just
+[17:01.68] one term sheet
+[17:03.36] There's no personal relationship. I like
+[17:05.60] personal relationship 3 to 9 months
+[17:07.92] before with the founder. So that the
+[17:10.32] founder likes me, I like him. Then it's
+[17:13.28] only a question of what is the right
+[17:15.44] amount to be funded and what is the
+[17:18.88] valuation that becomes a very easy
+[17:22.40] discussion at that point because both of
+[17:24.08] us want to work with each other. So
+[17:26.00] that's my philosophy and that's how I
+[17:28.24] did sacchor.
+[17:31.76] And how did you partner with Joti at
+[17:33.52] harness?
+[17:34.32] >> Yeah, so Ji started app dynamic which
+[17:38.56] was a phenomenal company he built and
+[17:40.88] sold it for 3.7 billion. I think Ji felt
+[17:44.08] he could have built it to billion. U so
+[17:47.68] once he
+[17:50.48] was done with app dynamic I sat with him
+[17:53.36] at the same coffee shop you and me sat
+[17:55.44] at cafe Venitzia and I wanted to talk to
+[17:57.76] him. I said I want to get engaged with
+[18:00.00] you with your next venture whenever and
+[18:02.48] he said I'm going to right now do a
+[18:05.28] incubator
+[18:06.96] uh which he did called unusual ventures
+[18:09.12] and then I'm going to pick two companies
+[18:11.36] and I'm going to run those two companies
+[18:13.36] >> and he did a four three years later he
+[18:16.48] did exactly that which is phenomenal and
+[18:19.52] so he started traceable and hardness and
+[18:22.24] ran them now he merged them. So when
+[18:25.28] this was going on his vision of DevOps
+[18:29.36] CI/CD pipeline which were competitors
+[18:32.00] like GitLab and GitHub were closed
+[18:34.08] systems
+[18:35.04] >> and he articulated a vision saying
+[18:37.52] amongst all these six or seven CI/CD CV
+[18:41.28] all these modules CD is broken I want to
+[18:44.96] be the best in CD continuous development
+[18:48.56] and he came out with that product and
+[18:50.40] then I said once that happens I'm going
+[18:52.88] to go across the stack and do all seven
+[18:55.36] or eight models and he executed over the
+[18:57.44] last five years. Um so when he was doing
+[19:01.28] that he called me in 2020
+[19:06.24] and said I'm raising money you wanted to
+[19:09.44] work with me I want to work with you
+[19:12.24] this is the opportunity and that's when
+[19:14.64] I went in there was very easy decision
+[19:17.68] proven founder amazing vision um meaning
+[19:22.40] the rolodex of customers he knew the
+[19:26.00] engineering team he had put together all
+[19:27.92] that was together and so I was lucky
+[19:30.24] enough that Joti gave me the opportunity
+[19:32.32] to invest in his company harness and
+[19:34.24] since then I have zero regrets the
+[19:36.88] company has grown 10x last year
+[19:40.80] >> in 5 years and this year another 30 40%
+[19:44.32] growth which is incredible
+[19:46.96] >> you have been part of many IPO journeys
+[19:48.88] in the last 20 25 years right
+[19:51.52] >> where do you see the current IPO market
+[19:53.20] we recently saw the Figma right core
+[19:56.48] right both IPOs jumped like Figma jumped
+[19:59.36] like 300% or 250% on day zero went from
+[20:02.32] 18 billion to 67 billion right
+[20:04.96] >> yes
+[20:05.52] >> so and there are so many companies which
+[20:08.64] are between 100 to a billion and are
+[20:10.64] wondering you know where to
+[20:12.96] >> great question the markets were closed
+[20:15.68] for last 3 four years so venture capital
+[20:18.24] and private equity companies through the
+[20:20.72] 2020 boom invested so many dollars in
+[20:24.72] all kinds of infrastructure and
+[20:26.16] application companies But the market
+[20:28.96] window last two years used to open and
+[20:32.48] close open and close like ARM went
+[20:34.40] public and few other companies went
+[20:36.64] public then Astera labs went public 6
+[20:38.72] months later and market closed so it was
+[20:41.04] opening and closing because a variety of
+[20:43.36] economic is issues political issues and
+[20:46.48] everything however I feel this year is
+[20:49.76] different I feel it there's so many IPOs
+[20:52.72] which have gone I think it's about 14 or
+[20:54.48] 15 IPOs in the tech world which have
+[20:56.96] gone The M&A has accelerated in AI cyber
+[21:01.04] everywhere and I feel fundamentally all
+[21:04.80] the big companies are doing well. The
+[21:07.28] acquirers are doing well. There's
+[21:09.76] tremendous amount number of smaller
+[21:12.24] companies. Some of them are being
+[21:14.64] acquired for high prices because they're
+[21:16.64] doing well and it's strategic. Some of
+[21:19.12] them are acquires we have seen because
+[21:21.44] there's too much money and too many
+[21:22.80] companies doing the same thing. I think
+[21:25.20] it's acceleration in the second half of
+[21:27.36] the year. I was at the conference uh
+[21:29.60] last uh 10 days back and the banking
+[21:34.00] conference they said there were over 500
+[21:36.96] companies waiting to grow IPO just in
+[21:39.60] the software space which are over 300
+[21:42.64] million in ARR. So the pipeline is
+[21:45.28] there. The question is um when do they
+[21:49.04] go public and what valuation they go
+[21:51.68] going public within the going public
+[21:54.40] there's a two trends I'm seeing much
+[21:57.12] more in the last 5 years more and more
+[21:59.76] companies are staying private because
+[22:01.76] there's so much private capital
+[22:04.08] available for AI companies in particular
+[22:07.04] why not access private capital to keep
+[22:09.28] growing rather than going public because
+[22:11.92] cost of going public there's two issues
+[22:14.64] one is cost of setting up going public.
+[22:17.68] Second, once you're in a public eye,
+[22:20.08] your quartertoquarter performance starts
+[22:22.40] becoming important. And I've been on
+[22:24.08] public boards and I see that. So staying
+[22:26.48] private, which Facebook started actually
+[22:28.96] some time back. They stayed private for
+[22:30.72] a long time. More and more AI companies
+[22:33.68] are staying private and raising at
+[22:36.48] fabulous valuation. Why should they go
+[22:38.64] public? So they're waiting and at some
+[22:41.68] point when they become large enough need
+[22:43.68] public market and large market to expand
+[22:45.92] and do acquisitions I think they'll go
+[22:48.64] public like data bricks is a and stripe
+[22:51.04] are classic examples they can go public
+[22:52.72] anytime
+[22:53.52] >> but they get so much private money and
+[22:55.20] they can grow why go public and so they
+[22:58.32] will go public in the next 9 to 12
+[23:00.32] months I think
+[23:00.96] >> but this poses a ecosystem question
+[23:03.84] right because the best of companies can
+[23:06.08] choose to stay private but what about
+[23:08.08] those companies which are growing 20% at
+[23:10.08] 200 300 mil ARR because the larger ones
+[23:14.00] are not going public right and the one
+[23:16.80] few ones like Figma that go public are
+[23:19.12] going at a billion dollars revenue uh
+[23:22.56] this no precedence for the earlier stage
+[23:25.60] companies because they like the bankers
+[23:27.92] would say the best of companies are
+[23:29.44] still private so rather than direct the
+[23:31.52] public money towards the private
+[23:32.80] companies why should I support you going
+[23:35.12] a 200 million hour company going
+[23:37.28] >> great question right u There's
+[23:40.56] companies which can go public anytime
+[23:42.40] like data bricks and stripe and a figma
+[23:44.48] and others and canva there's so many and
+[23:47.04] spacex
+[23:48.56] >> but they are staying private because
+[23:50.00] they can access capital so they don't
+[23:52.24] need to there's a bunch of companies
+[23:54.00] which are not cash flow positive
+[23:56.24] >> and growing slowly as you said and so if
+[23:59.36] you're a 200 300 million going slowly
+[24:01.44] and it's competitive
+[24:03.84] two things have to happen they have to
+[24:06.96] sell to the large company or they merge
+[24:10.24] within themselves to get scale so they
+[24:13.20] can go IPO and the third thing is try to
+[24:15.92] go IPO in a at a bad price and bad
+[24:19.52] valuation because they really need the
+[24:21.12] money. Yes.
+[24:22.00] >> So those are the three categories of
+[24:23.84] companies. If you absolutely need money
+[24:27.20] either you have to sell you to go IPO at
+[24:29.76] whatever price if you can go IPO or the
+[24:32.96] third alternative is just cut cost and
+[24:35.36] just survive which is not anyone wants
+[24:38.40] to do.
+[24:39.04] >> Yeah. So if you can share right on the
+[24:40.96] recent merger between sales loft and
+[24:42.88] clarity how did it happen? How does the
+[24:45.20] GC come together and what's the ultimate
+[24:47.36] goal here?
+[24:48.16] >> Yeah. So when since I invested Clary in
+[24:53.44] 2018 they grew that was investment
+[24:57.12] >> 2018 it was a series B investment at
+[25:00.48] very early um they've grown since their
+[25:03.84] 20x on ARR however
+[25:07.44] the competitive market around them um
+[25:10.80] started becoming heavy so their growth
+[25:12.80] rate slowed down and there are five six
+[25:15.52] companies around that sales enablement
+[25:18.56] area which were all growing slowly. So
+[25:21.68] each one of them could not go public. So
+[25:25.20] getting scale and expanding the TAM was
+[25:28.96] the goal for clarity. So with this sales
+[25:31.84] loft and cali there's three things that
+[25:33.68] happen. Expand the TAM you get synergies
+[25:38.08] cost synergies and they can get to cash
+[25:40.80] flow break even faster. So now with
+[25:43.60] combined companies as they take the cost
+[25:46.00] out and start performing and growing
+[25:48.56] again uh with unit economics being good
+[25:51.92] I think the ultimate goal is someone may
+[25:54.08] buy them or they could go IPO because
+[25:56.24] they've now started to reach scale
+[25:59.36] >> and how important is profitability for
+[26:01.52] companies in Bay Area to go public. So
+[26:04.96] cash more important profitability is
+[26:07.60] important but cash flow break even um
+[26:11.28] FCF free cash flow is very important. So
+[26:14.00] cash flow break even is important
+[26:15.36] because otherwise you have to keep on
+[26:16.80] raising money um and profitability of of
+[26:20.16] course everyone loves it and rule of 40
+[26:23.28] still people look at it. So if you're
+[26:25.12] growing too fast the ibida and gross
+[26:27.92] margins start becoming important. So
+[26:30.00] yes, if you want to go public, cash
+[26:32.80] flow, break even uh cash flow generation
+[26:36.08] and also gross margins and also
+[26:38.48] profitability becomes very important for
+[26:40.96] public investors. At Neon, our mission
+[26:43.20] is you know to make the US India
+[26:44.88] corridor 10x the size of USIsrael
+[26:47.84] corridor and we have seen companies like
+[26:49.36] Viz come out of the the US Israel
+[26:52.24] corridor and you know to make it
+[26:54.72] frictionless for entrepreneurs to build
+[26:56.64] it in the this crossber ecosystem.
+[27:00.80] what's your view on you know what needs
+[27:03.12] to be done and where do you see it like
+[27:05.44] can can this corridor build companies
+[27:08.00] like viz or even like figma or even l
+[27:11.92] then
+[27:12.88] >> so great question this is top of mind
+[27:15.68] for me um not because I'm from India but
+[27:18.96] also the opportunity and being Indian
+[27:21.68] >> um I think
+[27:24.16] Israel set an example 20 25 years back
+[27:27.44] and I've been involved with them I was
+[27:29.20] um we were at Bessemer customer, early
+[27:30.72] investor in Melanox. I was on the board
+[27:32.48] of Melanox before we sold it to Nvidia.
+[27:36.08] They started very early and they started
+[27:39.44] early because they were all in the
+[27:41.04] military with tremendous technology
+[27:43.84] available to them. So they would spin
+[27:45.52] off and start companies and they were
+[27:47.60] risktakers because you know Israel
+[27:49.84] always on the alert. So the
+[27:51.52] characteristic of risk-taking technology
+[27:54.08] background and others in a small country
+[27:56.48] is incredible what they've done 20 years
+[27:59.44] back and their whole business model was
+[28:02.24] start the company there keep the R&D
+[28:05.04] there but the market was in the US their
+[28:08.08] customers were in the US so because of
+[28:10.56] that um then they would come the CEO
+[28:12.96] would relocate here and hire the
+[28:15.12] management team in sales marketing and
+[28:17.12] that business model has worked well.
+[28:19.04] Whiz is a classic example of that. I
+[28:21.92] feel the same way India is going to
+[28:24.24] evolve. Maybe Israel is 15 years ahead,
+[28:27.92] 10 years ahead. But India US corridor of
+[28:32.64] talent. Uh India has far more software
+[28:36.56] engineers and technology engineers than
+[28:38.64] Israel. So has a larger potential and
+[28:41.36] hence you said 10x. I think it could be
+[28:43.92] 100x if the right thing happens. But I'm
+[28:47.36] very optimistic about Indian
+[28:49.04] entrepreneurs in India coming here and
+[28:51.28] setting up or forming companies as you
+[28:54.48] know at Neon of one founder is in India
+[28:57.84] and one founder is in the US. That's the
+[29:00.24] best combination set up from the get-go
+[29:04.00] even better than trying to set up
+[29:05.92] something and coming here. I'm seeing a
+[29:08.16] lot more companies this year actually
+[29:10.32] who are starting that way rather than
+[29:13.04] set up a company in US and then set up
+[29:15.28] R&D company in India like Ji did at both
+[29:18.80] traceable and u harness. So I'm very
+[29:22.32] optimistic that India is following very
+[29:25.84] fast and could be 100x of the companies
+[29:29.36] over next 10 to 15 years uh just like
+[29:32.88] Israel did. So Omish like you are saying
+[29:36.56] this wave and everybody's also agreeing
+[29:38.96] to that that this wave is bigger than
+[29:41.76] the previous waves of internet mobile
+[29:44.32] right and happening at the fastest pace
+[29:46.80] that we have ever seen. So how do you
+[29:49.20] differentiate you know with your
+[29:50.72] experience between noise and signals?
+[29:53.60] >> It's a great question. It's getting
+[29:54.96] tougher and tougher compared to 20 years
+[29:57.04] back. U I think depends on where you
+[30:00.64] invest. I do the seed A B I used to do
+[30:04.16] late stage and those
+[30:07.52] um investment philosophies are
+[30:09.36] different. So early stage it's all about
+[30:11.36] team team meaning there's no substitute
+[30:14.32] for having complimentary team with the
+[30:16.88] right experience. So the first thing I
+[30:19.12] look for is the founder the co-founders
+[30:22.88] are they um have they worked together
+[30:26.32] are they complimentary and others and do
+[30:28.24] a lot of due diligence on that. So
+[30:29.84] that's important for me. The most
+[30:31.44] important thing then coming from
+[30:34.48] engineering background I do technology
+[30:36.80] stack u detailed due diligence because
+[30:40.72] ultimately if you don't have a
+[30:42.88] differentiation on your tech doesn't
+[30:45.04] matter someone's going to catch you
+[30:46.72] another 10 smart people somewhere else
+[30:49.04] are going to do it. So I look at tech
+[30:51.04] stack differentiation looks at look at
+[30:53.44] the competitive landscape with the other
+[30:57.12] competitors in that space. Then I look
+[31:00.16] at is the market large enough. There are
+[31:02.64] two types of opportunities. Existing
+[31:05.20] market which is large enough and there's
+[31:07.36] a disruption happening. So I take care
+[31:10.72] look at that inflection point or a new
+[31:13.52] market like AI coming growing rapidly.
+[31:16.64] So analyze the market to see what the
+[31:19.52] dynamics are there, what disruptions are
+[31:21.52] there and see whether these
+[31:22.64] entrepreneurs are really uh solving that
+[31:25.04] pain point. And the last one is
+[31:27.60] distribution. Do they have the right
+[31:29.76] demand genen engine? Do they have the
+[31:32.32] right CRO?
+[31:34.72] Those kind of things um are very very
+[31:37.20] important because you may have the best
+[31:38.80] tech, best team, don't have a go to
+[31:41.12] market machine and distribution
+[31:42.96] channels, you're going to stagnate. So
+[31:45.68] again it comes to additional team
+[31:47.36] members coming there to do that. Um
+[31:50.32] there are two different types of GTM and
+[31:53.68] scaling and uh things which I see in the
+[31:56.32] company. Some are open-source. I love
+[31:58.96] open source uh communities because when
+[32:01.28] it's open source software developers
+[32:03.12] adapt it very quickly because it's open
+[32:05.12] source and they like the openness of it
+[32:07.44] rather than being locked into it. Second
+[32:10.72] is they contribute to that open source
+[32:12.88] community which I love. So then if I
+[32:15.92] figure out companies and I invested in a
+[32:18.48] company called Isovalent which was a
+[32:20.96] open- source company um they had a
+[32:24.08] community manager who manage the
+[32:26.00] community to make sure innovation keeps
+[32:27.84] on going but then had a business which
+[32:30.56] says okay it's open source how do I
+[32:32.80] monetize that so it's art of managing
+[32:36.80] why do I like it unit economics because
+[32:40.08] when your open source software
+[32:41.68] developers are coming to you and you
+[32:44.24] know who's using it and that becomes
+[32:46.32] your sales funnel to start getting
+[32:48.96] customers locked in and give them
+[32:50.96] three-year contract support and others
+[32:53.60] versus heavy enterprise companies
+[32:56.72] typically in security and others where
+[32:58.88] you need enterprise sales force and the
+[33:01.60] cost of calling outbound and others of
+[33:04.72] establishing a sales force is pretty
+[33:07.12] expensive. AI companies are starting to
+[33:09.52] be like open source companies because
+[33:11.20] it's viral with the easytouse product.
+[33:14.64] So I I like that but not all open source
+[33:18.08] uh companies have done well. So you need
+[33:20.48] a CEO has done it before the team which
+[33:22.96] has done it before. So that's one of the
+[33:26.64] things I look at. So team tech
+[33:30.64] differentiation
+[33:32.32] GTM
+[33:34.16] uh competitive landscape and is the
+[33:36.16] market large enough and they're solving
+[33:37.76] a critical painoint. I also look at once
+[33:41.44] I decide on a company I have about 100
+[33:44.56] CIOS and CXOs which I know very well.
+[33:47.92] >> I go to them and selectively ask them is
+[33:51.76] this a major pain point for you and get
+[33:53.76] a validation and sometimes have my
+[33:55.84] company talk to them. Sure
+[33:58.00] >> and they kind of validate my theory or
+[34:01.20] sometimes they tell mesh this is not the
+[34:03.36] top three painoint for me I don't think
+[34:06.96] this will work and so that input at the
+[34:10.16] end becomes so important for me to
+[34:12.96] validate my thesis or dig issues with my
+[34:17.04] thesis and then I make a decision.
+[34:19.28] >> Got it. And now I want to focus on you
+[34:22.24] know your journey. You came to Silicon
+[34:24.32] Valley in the 80s.
+[34:25.84] >> Originally, where in India are you from?
+[34:27.52] How did you come to Silicon Valley?
+[34:29.12] >> And how have you observed the valley
+[34:31.20] change?
+[34:32.32] >> Oh my god, it feels like I've lived 10
+[34:34.88] lives. Um, so I grew up in Bombay and
+[34:38.40] went to IIT Bombay, which was a
+[34:40.16] phenomenal university. I was lucky
+[34:42.16] enough to be in the 80s u late 70s
+[34:46.40] actually getting into IITs when there
+[34:48.40] were only five IITs
+[34:50.32] >> and the competition was intense. After
+[34:53.12] finishing that I looked staying looked
+[34:55.92] for staying in India. However, the
+[34:58.00] opportunities for grad studies were not
+[35:00.16] there. So I decided to come to Stanford
+[35:03.28] to do my PhD. Actually uh finished my
+[35:06.88] masters and the revolution in Silicon
+[35:09.76] Valley had started with semiconductors
+[35:11.60] and personal computers and all my
+[35:13.92] friends had finished masters and started
+[35:16.40] working and enjoying their life. So I
+[35:19.04] took a leave of absence from my PhD
+[35:21.68] program at Stanford after finishing
+[35:23.36] masters and went to AMD and started
+[35:27.36] working there and then rest of it is
+[35:30.00] history. My professor tried to get me
+[35:31.84] back. I never wanted to go back because
+[35:33.60] I was enjoying. I started in engineering
+[35:36.80] at AMD but quickly realized business is
+[35:40.24] where I think I want to uh be. So I
+[35:43.20] moved into marketing uh in that area um
+[35:46.88] and loved it. absolutely loved it. Um
+[35:50.80] then my person I was reporting to him
+[35:54.24] said Umesh you should go to a startup.
+[35:56.96] I'm going and he took me there. So that
+[35:59.52] was my first experience at a company
+[36:01.28] called VLSI which did software to design
+[36:05.04] chips and also doing chips for companies
+[36:08.80] like Cisco and Sun Microsystem and uh
+[36:11.84] Silicon Graphics and others which were
+[36:13.60] leading providers and Apple
+[36:16.64] loved what I was doing in marketing then
+[36:19.52] went into sales because
+[36:22.24] >> my friend said unless you're in sales
+[36:25.36] you'll never be a good GM or a CEO in
+[36:27.76] the future. So I went into sales, came
+[36:29.84] back, started running a business unit
+[36:32.08] and then I had an idea about getting
+[36:34.00] into me compression decompression
+[36:36.32] because there was a transition in the
+[36:37.92] industry going of analog video to
+[36:40.64] digital video with Echostar, Direct TV,
+[36:43.52] Sky and everyone going. So I went to my
+[36:45.84] CEO and said, "Look, I think we should
+[36:47.60] participate in this." I complained hard
+[36:49.84] enough that he said, "It's your problem
+[36:52.08] now. I'll give you money. why don't you
+[36:55.04] set up a team and a startup within a
+[36:56.88] large company. So actually did that uh
+[37:00.72] grew it from 0 to 60 million and at that
+[37:03.76] time one of the competitors I was
+[37:06.00] competing with called CCube Micros uh
+[37:08.96] major investor in that was Don Valentine
+[37:12.24] from Sequoia um and the CEO Alex
+[37:15.44] Balcansky who was a founder called me
+[37:17.20] and said why don't you join us and run
+[37:20.00] the company.
+[37:20.56] >> Sure. So I joined CCube Microsystem. Um
+[37:24.32] became a CEO. It was a public company.
+[37:27.12] Had a great ride. Sold companies in two
+[37:30.72] parts to harmonic lightwave during the
+[37:32.96] heydays of 2000 and then to LS Logic and
+[37:37.12] finished my journey as operating
+[37:38.72] partner. At that point I had a big
+[37:40.72] choice of deciding what do I want to do
+[37:43.68] next because I was getting a lot of
+[37:45.20] public company CEO opportunities. But I
+[37:48.88] felt I wanted to be involved with
+[37:52.00] multiple trends happening in the
+[37:53.52] industry. And I said what would expose
+[37:56.32] me to working with five six industries,
+[37:59.20] five six different companies, learning,
+[38:01.52] adding value and giving back to the
+[38:04.48] entrepreneurs. So I went on the boards
+[38:06.72] of two companies as an independent board
+[38:08.96] member. One was called monolithic power
+[38:10.88] systems, other one called entropic
+[38:13.20] systems which was in the networking
+[38:14.72] area. I was lucky enough when I went
+[38:17.20] there it was 10 people no revenue
+[38:19.68] >> uh real grounds up and working with both
+[38:21.52] of them I was lucky enough that both
+[38:23.68] companies went public I was able to sit
+[38:25.52] on the public company board and stayed
+[38:27.76] with them some time one of them is the
+[38:30.24] biggest success I feel is monolithic
+[38:32.40] power systems which now is close to 38
+[38:35.20] to 40 billion uh dollar public company I
+[38:39.44] was as I was doing that I started
+[38:41.84] getting a lot of venture capital calling
+[38:43.84] me And
+[38:46.72] amongst many offers I joined Bessemer
+[38:49.28] ventures. The reason is there was a
+[38:51.04] partner Rob Chandra uh who had done
+[38:54.32] great investments at Bessemer but was
+[38:56.40] also setting up office in India. So he
+[38:59.52] was going back to Bangalore and Mumbai
+[39:01.68] to set up the office in India and he
+[39:04.32] called me and said look why don't you
+[39:05.84] come and let's work together. you work
+[39:08.40] on my current portfolio in the US and
+[39:10.88] then um I will focus on growing the
+[39:13.92] office in India. So that was great for
+[39:16.64] me and Bessemer was amazing eight years
+[39:19.76] of experience of coming going from
+[39:22.00] operator to investor which is completely
+[39:25.28] different. I was going from chip to chip
+[39:27.36] and software and from operator to
+[39:30.32] investor which are different qualities
+[39:32.88] and had a great experience there chip
+[39:35.68] all the way to enterprise software.
+[39:38.64] >> As Bessemer grew
+[39:41.04] >> I felt like it had become a big company
+[39:43.92] with large funds and it was doing really
+[39:46.08] well. No issues with that. At that time
+[39:48.32] I felt I wanted to be in a smaller firm
+[39:50.80] and we had co-invested with Tom West at
+[39:53.36] Bessemer in a company and that became
+[39:57.20] attractive to me to go to a smaller
+[39:59.44] company be be within one or two
+[40:02.08] investors doing the investment. So I
+[40:04.00] joined Thomas Ventures in 2016 after
+[40:06.88] eight years at Bessemer and then I was
+[40:09.36] thesis driven. The first one thesis was
+[40:12.08] cyber security. I was always feeling
+[40:13.92] that it will never go away because
+[40:17.44] cyber security is a asymmetric problem.
+[40:20.16] The hackers all they need is one IP
+[40:22.08] address to get into a enterprise and
+[40:24.48] then spread from there and disrupt the
+[40:27.68] company whereas the enterprises have to
+[40:30.08] be protecting it 100% and no one's going
+[40:32.72] to protect it. So I felt it it will
+[40:34.64] continue and now with AI it's even
+[40:37.12] worse. So cyber security and we did lot
+[40:40.24] of companies like skyhigh networks and
+[40:42.56] others. I've done about 10 of them. Then
+[40:44.96] three years later drew a new thesis on
+[40:48.00] cloud infrastructure and started
+[40:50.16] investing in company like harness and
+[40:52.24] clary and isoalent and stack gen and
+[40:55.36] others and then three years before even
+[40:57.60] chat GPT came we had a thesis on ML and
+[41:00.88] AI but we felt the market was not ready
+[41:03.92] till the LLM start coming out. So as
+[41:06.24] soon as that happened started investing
+[41:08.00] in companies like Cohair, Reliance AI,
+[41:10.80] Opaque Systems and others. So very
+[41:13.20] thesis driven um three areas I feel
+[41:17.12] those are the three areas I would
+[41:18.48] continue to invest in because there's a
+[41:20.32] massive opportunity.
+[41:21.36] >> Cloud yeah
+[41:22.56] >> uh cyber security infrastructure, cloud
+[41:25.12] infrastructure and AI infrastructure.
+[41:27.44] >> Um I don't do consumer. There are many
+[41:29.76] people who can do consumer better. I
+[41:31.44] like the deep technical problems to be
+[41:33.36] solved because of my background.
+[41:35.84] Also in parallel I sat on multiple
+[41:38.08] boards of public companies which were
+[41:40.48] nothing related to private companies I
+[41:42.72] was and the reason for that is public
+[41:44.72] markets and private markets are so
+[41:46.40] different and I wanted experience in
+[41:48.08] both. So this was one of the unique
+[41:50.32] things I did I was doing eight boards in
+[41:53.20] private companies or nine and I was
+[41:54.80] doing two three companies in public
+[41:56.24] which is a lot of work but I was
+[41:57.60] learning so much that it was not lurked
+[41:59.92] for me. So I've sat on companies like
+[42:02.00] Melonox which we ultimately sold to
+[42:04.56] Nvidia to Jensen and now he has really
+[42:07.68] grown it 10 times after taking it
+[42:10.64] because of his channel and his vision
+[42:12.88] IDT monolithic power you know uh right
+[42:17.52] now in a great company in a small cap
+[42:19.92] area called impenage. So I love both the
+[42:22.24] public world and the private world and
+[42:24.64] continue to work on that. U uh tell us
+[42:27.52] about your overlap at Jensen.
+[42:30.32] >> Yeah. So uh Jensen and me have run
+[42:33.60] parallel um along for a long time. We
+[42:36.64] were at AMD at the same time.
+[42:38.24] >> Did he know him?
+[42:39.12] >> Um knew him because of um we were in the
+[42:43.04] same group.
+[42:43.60] >> Got it. uh and then kept in touch
+[42:46.00] because he went to LSI logic and I went
+[42:49.20] to VSI and we were in the business same
+[42:51.76] business competing and then meeting him
+[42:54.40] continuously at CEO conferences or
+[42:56.48] something when he started Nvidia and I
+[42:58.48] was at CQ and then our biggest thing
+[43:01.92] came in continued to talk and then
+[43:05.04] Melanox so he was very interested in
+[43:08.00] Melanox so that's when we interacted
+[43:10.56] quite a bit ultimately we sold Melanox
+[43:12.88] to Jensen
+[43:14.56] uh and then kept in touch and when the
+[43:16.40] LLMs came he started in he had his fund
+[43:19.92] to enable AI he was doing investments so
+[43:22.48] when I was interested in coair the first
+[43:25.04] person I called was Jensen saying you
+[43:27.36] see everything because you have a chip
+[43:29.12] background uh sorry you provide the
+[43:31.44] infrastructure
+[43:33.44] which of the 20 LLM companies you're
+[43:36.24] optimistic and Jensen is so humble and
+[43:39.60] it's amazing what a charismatic person
+[43:41.92] he is built a great $4.5 trillion
+[43:45.12] company but yet he's humble and he took
+[43:48.40] my call which I was impressed and told
+[43:51.36] me his view but said Omesh this is my
+[43:53.76] view I'm sure I'm wrong this is Jensen
+[43:57.76] the guy who knows everything told me and
+[44:00.48] he said coher is one of the important
+[44:02.08] ones for us we are excited about it and
+[44:05.12] I would have no doubt that it will be a
+[44:08.16] successful company so a lot of touch
+[44:10.32] points from AMD to during the LSI days
+[44:14.48] to CC cube and Nvidia days to now
+[44:18.40] Melanox and then coher and hopefully
+[44:20.48] I'll do more with him investing in other
+[44:24.16] AI companies
+[44:25.20] >> and uh in your you know journey of
+[44:27.92] knowing him for 30 years now or more
+[44:30.24] what do you think makes him so unique
+[44:32.08] and so successful
+[44:33.28] >> I I'll tell you what is unique is two
+[44:36.72] things the first one is recent he has 60
+[44:39.60] reports
+[44:41.36] I don't know any CEO who can manage 60
+[44:43.84] reports but I think Jensen can. Um I
+[44:47.52] think the other trait within that he
+[44:50.32] outlines to us and um two years back at
+[44:53.36] a conference he was speaking and in a
+[44:55.60] small conference and said I never do
+[44:58.40] one-on- ons and everyone asks why he
+[45:02.80] says oneon-one means politics because I
+[45:06.72] say something in a different context to
+[45:09.28] one of person they go off and use that
+[45:12.56] context to get things done and sometimes
+[45:15.12] reality of what our conversation was and
+[45:17.20] what happens is different. So he says
+[45:18.88] when I get a request for oneonone I said
+[45:20.96] what problem are we trying to solve who
+[45:23.28] are the parties involved with it and
+[45:26.08] bring all of them here and let's solve
+[45:27.60] the problem together. So managing 60
+[45:30.88] people his one-on-one style never doing
+[45:33.68] it is a unique characteristic of the
+[45:36.48] person.
+[45:38.00] Second thing which is phenomenal is his
+[45:41.44] amazing reader. He educates all the
+[45:44.64] time. He's running a major company but
+[45:47.52] he's constantly reading about AI
+[45:50.16] evolving models evolving what are the
+[45:52.48] next problems and he can
+[45:54.40] compartmentalize into two short-term
+[45:57.28] problems and long-term vision of how to
+[46:00.40] enable market and so he was saying he
+[46:04.08] spends
+[46:05.84] one day one morning thinking about what
+[46:07.92] are the short-term problems and then
+[46:09.84] Monday morning meetings he will explain
+[46:12.80] what the problems and then go solve
+[46:15.36] And then second one is always thinking
+[46:17.04] about new application like robotics
+[46:19.12] accelerating drug discovery in the
+[46:21.04] future. How can Nvidia position partner
+[46:24.48] provide things long-term things uh and
+[46:28.00] how do you enable them? So incredible
+[46:31.44] leader
+[46:33.12] always optimistic always humble always
+[46:36.48] thinking about next problems to solve
+[46:38.80] and his classic thing is don't solve the
+[46:41.44] easy problems someone will. We need to
+[46:44.32] solve the impossible problem and that
+[46:46.48] drive of him to say what is impossible
+[46:49.52] and I'm going to solve it is a classic
+[46:51.92] entrepreneur even now after so many
+[46:54.24] years he started Nvidia incredible idol
+[46:57.12] of me
+[46:58.96] >> and what do you think made Nvidia sit at
+[47:02.80] right place at the right time when AI
+[47:04.72] happened? So his architecture so he
+[47:08.96] started off in graphics and make the
+[47:10.80] graphics experience better and better
+[47:13.28] and he succeeded but that market was so
+[47:15.60] big uh then he got into the bitcoining
+[47:18.96] because that architecture lend itself to
+[47:21.12] that but that's when he had a
+[47:24.00] architecture which was parallel
+[47:25.36] architecture and suddenly early days of
+[47:28.64] 2013 and 2014
+[47:31.60] um fee Lynn and others were looking into
+[47:34.40] this And then he saw the opportunity
+[47:37.44] that his architecture fits it. So is it
+[47:40.56] luck? No, I don't believe in luck. I
+[47:43.52] believe in people uh working hard
+[47:46.64] towards a goal and luck is just small
+[47:48.72] part of it. So he had an architecture.
+[47:50.72] He saw the light light of AI earlier
+[47:54.40] than anybody in the world and jumped on
+[47:56.88] it and created. That's why he has this
+[47:59.92] dominance in his market. Second is he
+[48:03.68] thought about how do I get developers
+[48:07.20] engaged. So he started with CUDA which
+[48:10.32] is a brilliant move because now you get
+[48:12.32] 30 40 million developers knowing CUDA.
+[48:16.00] So now a new language like Python or
+[48:18.24] some of the open source come in it takes
+[48:20.24] time because the developers are not. So
+[48:22.96] he went from chips
+[48:26.08] to pro um all the stack above a
+[48:29.36] development environment to almost
+[48:31.52] software libraries to now networking
+[48:34.16] hardware and data center in a box. So
+[48:36.80] people think he's a chip company. He's
+[48:38.96] actually a C system company. And the
+[48:41.60] brilliant strategist in him is that even
+[48:46.00] the hyperscalers are dependent on the
+[48:47.84] chips. But he's also competing with them
+[48:50.40] by enabling people um which are
+[48:54.00] competitors by doing his own cloud for
+[48:55.92] customer. So it's a brilliant strategist
+[48:59.52] execution machine and great humble
+[49:03.44] character.
+[49:04.96] >> This is amazing you know you know you
+[49:07.36] have accomplished so much in your career
+[49:09.28] you know and what I appreciate about you
+[49:11.20] is you are still working like 70 hours a
+[49:13.92] week. you sit still on board of so many
+[49:17.12] companies and are able to help like
+[49:19.52] still you know so many founders like in
+[49:21.84] my you know prepare for the podcast I
+[49:24.00] called for a few founders that I knew
+[49:25.92] and the one trait they highlighted you
+[49:27.76] is you are you are humble grounded and
+[49:30.32] always in the thick of things you're not
+[49:32.00] just giving advice you are you know uh
+[49:35.04] in the grind which is rare
+[49:37.28] >> right so I'll tell you my wife my
+[49:41.20] children my friends have always asked
+[49:43.52] why do you need to work. I don't need
+[49:45.84] to. The reason I'm working is because I
+[49:48.64] love what is happening, the revolution
+[49:51.68] that is happening in the Bay Area. I've
+[49:53.36] been here 40 years. It continues to
+[49:55.12] amaze me. Second is if you're enjoying
+[49:58.48] what you do every day, it's not work.
+[50:00.72] >> Yeah.
+[50:01.20] >> So, I keep telling it's enjoyable. 70
+[50:03.84] hours of work is far more enjoyable than
+[50:08.00] 30 hours of hard work. Yeah. So, I don't
+[50:11.28] even think about how many hours I'm
+[50:13.76] working. Whenever entrepreneur calls me,
+[50:16.48] I'm available. In fact, weekends is the
+[50:18.80] time when most of my CEOs call because
+[50:20.64] they're so busy during the weekdays and
+[50:23.76] I have no problem. I actually love
+[50:26.72] building companies with these
+[50:28.00] entrepreneurs every day.
+[50:30.88] operating experience, introduction to
+[50:33.28] customers, helping them hire their team
+[50:35.76] members, strategy, what do you think?
+[50:39.20] Um, you know, we should do here. We have
+[50:41.44] three opportunities. How do you focus on
+[50:43.28] this? I think I just love it. And my
+[50:47.36] wife asked me, "What are you going to
+[50:49.04] do? Are you retiring?" I said, "No, I
+[50:51.68] love travel. I love meeting
+[50:54.16] entrepreneurs in a coffee shop. And I
+[50:56.24] work in the bird room. So, where I'm
+[50:58.24] going to die is one of those places.
+[51:00.00] it's family vacations in the boardroom
+[51:03.04] or working with an entrepreneur solving
+[51:04.96] a problem at a coffee shop.
+[51:06.48] >> Yeah, that's that's so amazing. You
+[51:08.24] know, thank you for being who you are.
+[51:10.16] Thank you for being humble. Thank you
+[51:12.00] being for being so helpful and thank you
+[51:13.92] for doing a podcast at such a short
+[51:15.52] notice. You know, you're just coming
+[51:17.04] after a board meeting and I don't see
+[51:19.68] any amount of tire in you.
+[51:21.92] >> Yeah, I love this. Thank you for the
+[51:24.08] opportunity. Pleasure to meet you. Let's
+[51:26.48] find more ways to um cooperate with you
+[51:29.44] besides the podcast and excited about
+[51:31.84] what you're doing in your own fund at
+[51:33.36] Neon and maybe at some point we'll have
+[51:35.68] a relationship with that and work
+[51:37.52] together.
+[51:37.92] >> Yes, absolutely. Looking forward to
+[51:39.20] that.
+[51:39.60] >> Thank you very much. Appreciate it.

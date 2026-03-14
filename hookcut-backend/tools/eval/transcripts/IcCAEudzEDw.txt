@@ -1,0 +1,646 @@
+[0:00.08] When was the last time you used Chad
+[0:01.92] GPT? If you're like me, you use Chad GPT
+[0:04.88] every single day for pretty much
+[0:06.88] everything. Chad GPT has become an
+[0:08.88] integral part of our lives, helping us
+[0:11.04] not only learn new skills and habits,
+[0:13.04] but also helping us write better,
+[0:15.04] research more effectively, and just be
+[0:17.04] more productive every single day. But
+[0:19.36] while all of us are using charge GPT,
+[0:21.60] 99% people are not using charge GPT to
+[0:25.12] its full capacity. And that is what this
+[0:28.08] video will solve today. Hi everyone,
+[0:30.32] Ishan Sharma and welcome to the complete
+[0:32.72] guide to using Chad GPT in 2025. This is
+[0:36.80] the only video you need to watch to
+[0:38.88] master Chad GPT and learn everything
+[0:42.08] about the app itself. In this video,
+[0:44.40] I'll share with you exactly how to
+[0:46.32] prompt Chad GPT now that GPT5 is here.
+[0:49.84] We'll learn about how to use the
+[0:51.76] different features Chad GPT offers. for
+[0:54.08] example, connectors, the agent mode,
+[0:56.72] deep research, creating images, the
+[0:59.12] canvas feature, study and learn, voice
+[1:01.44] mode, temporary chat, and then we learn
+[1:04.00] about something really interesting and
+[1:05.92] that is building a custom GPT from
+[1:08.32] scratch. Something that you can use and
+[1:10.96] reuse and make it available for the
+[1:13.44] public to use every single day. We'll
+[1:15.92] then focus on a really interesting
+[1:17.36] feature of Char GPT and that is
+[1:19.20] personalization and memories. All of
+[1:21.36] this and a lot more. All you have to do
+[1:23.60] is to watch this video till the very
+[1:25.04] end, hit the like button and subscribe.
+[1:26.80] All right. When you log on to
+[1:27.68] chadgptt.com and make your free account.
+[1:30.40] This is the first interface that you
+[1:32.08] will see. We first of all obviously have
+[1:34.24] the place to write any query that we
+[1:36.48] have. But we also have on the top left
+[1:39.28] corner this place where we can change
+[1:41.76] the model that we will be using.
+[1:43.84] Currently it's on GPT5 auto launched
+[1:46.32] recently by OpenAI. GPT5 is a
+[1:48.64] fundamentally amazing model because it
+[1:51.04] can switch between regular modes and
+[1:52.96] thinking modes on its own. So as you can
+[1:55.52] see the auto mode decides how long to
+[1:57.60] think and then works on the answers.
+[2:00.00] Then we have the instant mode which
+[2:02.16] answers right away. And then we have the
+[2:04.16] thinking mode which is great for
+[2:06.16] long-term answers if you wanted to think
+[2:08.64] more about any question that you have.
+[2:10.96] And then we have Chad GPT 5 Pro which
+[2:13.60] does research grid intelligence. Then
+[2:15.84] you also have legacy models that you can
+[2:17.60] work on which is our old friend GPT40.
+[2:20.64] Moving to the right, you will have this
+[2:22.08] plus icon right here which will give you
+[2:24.08] access to all of these different modes
+[2:26.08] of Chad GPT. We'll talk about all of
+[2:28.08] these but I want to first talk about add
+[2:30.40] photos and files. Now chd is
+[2:32.80] fundamentally multimodal. What that
+[2:34.96] means is you can not only talk to it
+[2:37.36] with the help of text but you can also
+[2:39.84] add images, you can add Excel sheets,
+[2:43.04] you can add any type of file that you
+[2:45.20] normally have and then ask it to make
+[2:47.84] some changes in it or ask it to analyze
+[2:50.72] this particular file and then give me a
+[2:52.96] particular output. That is the power of
+[2:55.28] chart GPT. So I can literally ask it to
+[2:58.48] analyze this entire Excel spreadsheet
+[3:00.80] and give me the specific answer that I
+[3:03.04] want from this spreadsheet and it will
+[3:05.04] do exactly that. We'll cover the other
+[3:06.80] modes very soon. But then you have the
+[3:09.12] voice dictation mode which if I will
+[3:11.68] enable this will basically allow me to
+[3:15.60] speak and write any text to chat GPT
+[3:19.28] itself. So if I have written this I can
+[3:21.84] press on okay and this will basically
+[3:24.40] transcribe all of this audio and will
+[3:27.28] convert it into text for me right here
+[3:29.52] as you can see. So this is a dictation
+[3:31.84] mode of chat GPT. We also have the voice
+[3:34.32] mode of chat GPT. Now this is really
+[3:36.56] intuitive. You can have a real
+[3:38.48] conversation with chat GPT and it feels
+[3:40.72] very human. Let me give you an example.
+[3:42.96] So use voice mode. Hey Chad GPT how are
+[3:45.28] you feeling today?
+[3:46.40] >> Hey there. I'm feeling pretty good.
+[3:48.56] Thanks for asking. I'm just here and
+[3:50.32] ready to help you out with whatever you
+[3:51.76] need.
+[3:52.16] >> Amazing. I'm trying to make a video on a
+[3:54.64] full guide to chat GPT. Can you help me
+[3:56.64] out with some outlines for the video?
+[3:58.96] >> Absolutely. I'd love to help you with
+[4:00.40] that. So, for a full guide to chat GPT
+[4:02.96] video, we can break it down into a few
+[4:04.64] main sections. You might start with an
+[4:06.64] introduction, just a quick overview of
+[4:08.16] what chatbt is and what it can do, then
+[4:10.08] maybe dive into some basics like how to
+[4:11.68] get started.
+[4:12.48] >> Uh, perfect. Can you can you talk to me
+[4:14.48] in Hindi and sound a bit more humorous?
+[4:22.40] So see that's the best part about voice
+[4:24.64] mode in chat GPT. If you've never tried
+[4:26.56] it, I think this is your default mode to
+[4:29.20] communicate should be voice mode, not
+[4:31.60] typing it out because you can just have
+[4:33.44] a great conversation. It feels human and
+[4:36.32] you can get any output that you want as
+[4:38.48] well. All right, what else? Now on the
+[4:40.72] top right side, you will see this thing
+[4:42.80] called the turn on temporary chat. If I
+[4:45.28] were to enable this, we would now have a
+[4:47.36] temporary chat wherein I can ask chat
+[4:49.84] GPT anything and it would not store it
+[4:52.64] in its memory. As you can see, any
+[4:55.20] conversation that is recorded over here,
+[4:57.84] they will only keep a copy of it for 30
+[5:01.04] days after which it will be completely
+[5:03.12] erased. All right. Now, moving on, we
+[5:04.56] have the chat window itself. This is
+[5:06.56] where you write your prompts. Now, the
+[5:08.96] biggest mistake most people do is to
+[5:10.96] just write a very basic prompt. uh
+[5:13.84] create
+[5:15.36] an itinerary
+[5:18.96] for a 3-day Goa trip. That's it. That's
+[5:22.64] what you type. And the problem with this
+[5:24.64] is JPT doesn't quite know everything
+[5:28.64] about you, like are you going as a
+[5:30.56] group? Are you going solo? What are your
+[5:32.96] preferences? Are you vegetarian?
+[5:35.68] Anything like that. Have you already
+[5:37.36] visited Goa before? It doesn't know
+[5:39.52] anything. So it gives you this very
+[5:40.96] bland output as you can see day 1, day
+[5:44.08] 2, day three and that's it. This is this
+[5:48.00] is what most people do, right? This is
+[5:50.32] where the biggest problem comes with
+[5:51.84] chat GPT usage. You can create a much
+[5:54.56] in-depth prompt and the way to do that
+[5:56.32] is this RTC
+[5:58.80] R O that's it. This is the short form
+[6:04.72] for the format in which you need to
+[6:06.88] write. You first have to decide the role
+[6:09.68] for chat GPT. Then you need to work on
+[6:12.72] the task. So you explain the task that
+[6:15.12] you wanted to work on. Then you give it
+[6:17.52] the context about yourself. Then you
+[6:20.48] give it the reasoning in which you want
+[6:23.04] it to work on this problem. Then you
+[6:25.60] give it the output format. How do you
+[6:28.56] want it to look like? And then you give
+[6:30.96] it the stopping condition.
+[6:34.40] This ladies and gentlemen is the best
+[6:36.72] way to prompt chart GPT. This makes sure
+[6:39.68] that chart GPT has every information it
+[6:42.08] needs to give you a very customized
+[6:44.48] tailored output. In this case, I would
+[6:47.04] probably just say that hey,
+[6:52.88] you saw the previous output and now see
+[6:55.28] this output right here. This is what the
+[6:57.76] prompt looks like. And the output is
+[7:00.08] going to blow your mind. And as you can
+[7:01.92] see, it is already thinking longer for a
+[7:04.24] better answer. So, previously, while it
+[7:06.72] just gave you an instant answer like
+[7:08.40] that, a cookie cutter version, this time
+[7:11.12] it's looking at everything possible.
+[7:13.92] It's planning the Goa itinerary. It's
+[7:16.00] going to turn it into a PDF
+[7:18.72] and it's going to give you the exact
+[7:21.36] thing that you asked for. And this is
+[7:23.36] what most people get wrong. while
+[7:25.12] they're talking to Chad GPT, they're
+[7:27.04] always forgetting that Chad GPT isn't
+[7:30.48] your best friend yet, unless you give it
+[7:33.84] all the context that it needs in a
+[7:36.72] structured format. Like you can see
+[7:38.64] right here, it understands structure
+[7:41.36] more than anything. So, as you can see,
+[7:43.60] it's curating trending spots and
+[7:45.20] activities. You can even click on this
+[7:46.88] and see its thinking process. So it's
+[7:49.04] going on trip advisor. It's going on
+[7:51.04] different websites. Coming up with
+[7:53.04] ideas. As you can see, it already knows
+[7:55.76] that I'm going from Bangaluru because
+[7:57.84] that's the memories part of Chad GPT.
+[8:00.24] We'll come to that very soon. All right.
+[8:02.00] And we finally got the output. As you
+[8:04.48] can see, here's a fresh of the beat
+[8:06.32] wedge only 3-day Goa plan. And we can
+[8:08.96] download the itinary right here. Let's
+[8:11.76] see what it looks like. This is it. So,
+[8:15.44] it gave me the hotels, why we should go
+[8:19.04] for these hotels, the typical price for
+[8:21.04] these hotels. We have veg cafes, we have
+[8:25.12] co-working places, we have the first day
+[8:27.60] one, what all to do, where all to go,
+[8:31.36] jungles and canyons and turtle shores.
+[8:34.32] All the stuff that you never thought
+[8:35.84] existed in Goa, right? But there you go.
+[8:38.16] This is what you get when you write a
+[8:40.64] in-depth prompt on CH GPT. And this is
+[8:43.92] your output. All right. So this is
+[8:46.00] basically how you prompt chat GPT
+[8:48.08] effectively. Let's keep going ahead and
+[8:50.96] looking at another way to use chat GPT
+[8:53.44] and that is agent mode. Now agent mode
+[8:56.00] is brilliant if you want to use it for
+[8:58.56] anything involving the web. So agent
+[9:01.52] mode in chat GPT enables Chad GPT to
+[9:04.48] open a browser and search anything on
+[9:07.44] your behalf. So you can ask it for doing
+[9:10.00] in-depth research. You can ask it to
+[9:12.64] actually perform web- based actions like
+[9:15.12] adding groceries to the cart.
+[9:18.48] Bunch of other things that interacting
+[9:20.96] with different elements like writing
+[9:22.64] messages to people on LinkedIn and so on
+[9:24.96] and so forth. You can ask it to interact
+[9:27.28] with spreadsheets and presentations and
+[9:29.28] do so many different things. Well, let
+[9:31.28] me show you a very simple thing that you
+[9:32.88] can do with chat GPT agent mode and that
+[9:35.36] is to basically find me the cheapest
+[9:36.96] return economy tickets from Bengaluru to
+[9:38.88] London in the months of December to
+[9:40.64] February and the tip should not be more
+[9:43.12] than 10 days. So this is the prompt and
+[9:46.40] I'm going to press enter right here and
+[9:48.40] what you will see is charg opening up a
+[9:52.24] window and finding the best cheapest
+[9:55.52] flights for the same use case. So, it's
+[9:58.96] going to open up search for it. Let's
+[10:03.04] see what website it opens up. So, it's
+[10:05.60] going to open up Google flights. It's
+[10:08.72] going to enter Bengaluru to London.
+[10:13.76] And you can see it performing actions
+[10:15.44] right here. London Heathro.
+[10:18.32] The return and departure dates are going
+[10:21.04] to be the months. You can keep having
+[10:23.36] multiple of these tabs open up. You can
+[10:26.16] open one more tab. ask it to be
+[10:27.84] searching for the cheapest hotels in
+[10:29.60] this particular time and it will
+[10:31.04] actually do all the work for you. That's
+[10:33.04] the best thing about it. You can keep
+[10:34.48] opening multiple of these agents, let
+[10:36.32] all of them run while you can be doing
+[10:38.80] something else and that's the best way
+[10:40.80] to stay productive with charge GPT as
+[10:42.64] well. It's going to search for the
+[10:44.32] cheapest dates and will give us the
+[10:47.04] return answer in some time. You can even
+[10:49.68] ask it to actually do research on your
+[10:51.60] behalf. Research fundamentals of natural
+[10:53.60] wine versus traditional techniques. I
+[10:55.92] can ask it to do a research on the new
+[11:00.16] Geo Black Rockck fund and tell me if
+[11:06.56] it's the right fund for me to invest or
+[11:11.52] not. For example, now it's going to
+[11:13.20] search the web and look at the reviews,
+[11:15.84] look at the fundamental analysis of this
+[11:18.56] fund and tell me if it's a good way to
+[11:20.16] invest on inut or not. Well, we can keep
+[11:22.24] doing more and more, right? Let's let's
+[11:24.08] try to work more and create images. Let
+[11:26.96] me show you one more mode of chai GPT
+[11:28.64] and that is creating images. Now I can
+[11:31.28] ask it to you know create an image of
+[11:36.48] let's say Bengaluru road to airport with
+[11:40.08] an ad of iPhone on the side with clever
+[11:44.48] copyrightiting for example. Let's just
+[11:46.80] try that. It's going to make a simple
+[11:48.80] image
+[11:50.32] showcasing an ad of iPhone on the side
+[11:53.28] of the Bangalore airport road. Let's see
+[11:55.84] what this looks like. Um, but we can
+[11:58.16] also look at the other tabs. We have
+[12:01.28] these agents working on our behalf. We
+[12:04.00] have an image being made here. So, this
+[12:05.68] is the image mode of chat GPD. It's
+[12:08.32] really quick as you can see. Gives you
+[12:10.16] the result instantly. And it's great if
+[12:13.04] you want to just quickly create some
+[12:15.36] infographics, want to create some images
+[12:17.84] that you might want to use in your
+[12:19.36] LinkedIn post and elsewhere. We can even
+[12:21.84] create a actual infographic. So I can
+[12:24.08] say take the
+[12:26.88] details about the new GST reform bill
+[12:33.28] and generate an info graphic from it.
+[12:37.76] And this would be a create image that
+[12:40.48] explains it easily. For example, if this
+[12:44.16] is what we want to do, it's going to
+[12:45.60] search the web, search all the
+[12:47.84] information about the GST reform, and
+[12:50.56] it's now going to take all this
+[12:52.88] information,
+[12:54.72] and it will now create an image from all
+[12:57.20] of this, convert this into a polished
+[12:59.36] visual graphic, and send it to you. Yes,
+[13:02.24] I want to do that. Thank you.
+[13:06.00] We already have a picture right here. As
+[13:08.96] you can see, it's searched for the name
+[13:11.44] which is Keagora airport. We also have
+[13:14.64] this iPhone ad on the side, the fastest
+[13:16.80] way to the airport. And that is how to
+[13:19.76] use the image generation feature of Chad
+[13:21.76] GPT. We still have our agents working,
+[13:25.92] but uh we already have an infographic
+[13:27.92] ready for us right here. One thing you
+[13:29.44] can notice is that you also have styles.
+[13:31.44] So you can already just select the
+[13:33.92] styles from here if you don't know what
+[13:35.76] style to go for. So for example the
+[13:38.40] previous ad that you saw of the iPhone
+[13:40.64] ad. This is a very realistic ad. So uh
+[13:43.76] you will see everything looking pretty
+[13:45.60] real but I can very well turn it into a
+[13:48.72] cartoon style or I can turn it into a
+[13:50.88] photo shoot retro cartoon. Anything like
+[13:54.08] this that is available here. I can use
+[13:56.32] that. All right. And there you go. This
+[13:58.16] is our infographic picture made all
+[14:00.80] because of the image creator on chat
+[14:02.72] GPD. Everything looks pretty real. You
+[14:06.00] can pause and look at the entire
+[14:08.40] infographic itself. You It looks like a
+[14:12.40] real, you know, designer would have made
+[14:14.64] it, but it was made entirely with AI in
+[14:17.68] less than a minute right in front of
+[14:19.60] you. How cool is that? Now, you can get
+[14:22.16] this printed out, you can paste it on
+[14:24.24] your walls, you can use it for any other
+[14:26.32] use case. I think for students if you
+[14:28.80] are studying preparing for exams a great
+[14:31.04] thing to do is to turn all of your notes
+[14:32.80] into infographics like this one and make
+[14:35.60] it easier for you to revise for any
+[14:37.44] future test that you might be having. So
+[14:40.24] that's what the image creator looks
+[14:42.16] like. We made an ad. We also made an
+[14:44.64] infographic. But now let's look at
+[14:47.04] something more. Let's look at deep
+[14:49.92] research. Now deep research is the most
+[14:52.72] interesting mode of chart GPT because
+[14:54.72] this is where you get PhD level research
+[14:58.72] for you at your fingertips. Let me show
+[15:01.60] you what I mean by that. Conduct an
+[15:04.88] in-depth research about the youth of
+[15:09.68] India and their unusual spending habits.
+[15:14.08] Look at sectors like food and quick
+[15:17.04] commerce, no cost EMIs,
+[15:19.52] technology spendings spent on house and
+[15:23.36] unnecessary
+[15:25.28] purchases and also look at the long-term
+[15:28.48] effects of it on their personal finance
+[15:33.20] health. For example, um include lots of
+[15:36.24] examples of Indians who spend a lot and
+[15:40.24] end up saving nothing.
+[15:42.96] go deeper and provide reasons for the
+[15:46.64] same and at the end suggest ways to be
+[15:50.72] more frugal and save money
+[15:55.52] and then invest it to build wealth in
+[15:58.80] the long term. See this is what my
+[16:02.48] problem statement is going to be. I am
+[16:04.96] making a YouTube video. This is what the
+[16:07.44] prompt looks like. This is going to take
+[16:09.36] probably 10 15 minutes. go in depth and
+[16:13.04] do a thorough research about this and
+[16:15.20] give me a probably a 20 to 30 page
+[16:18.88] document that I can go into and look at
+[16:22.48] everything that we've just talked about,
+[16:24.96] gather all of that data and create an
+[16:27.12] amazing YouTube video from it. Now, this
+[16:29.36] is amazing. This is the type of research
+[16:31.28] that you get when you pay consulting
+[16:32.96] firms, right? You can actually enter a
+[16:35.68] real world business problem. Like for
+[16:38.00] example, I'm a influencer marketing
+[16:39.76] company not able to grow, suggest ways
+[16:42.32] to grow and it will do a thorough
+[16:44.40] research in the market, do a SWAT
+[16:46.96] analysis, identify how you can improve
+[16:49.84] and then provide the answer for you. So
+[16:53.12] this is what deep research looks like.
+[16:54.88] It's going to take some time. So let's
+[16:56.24] go back to our initial answer and we
+[16:59.52] have found out the cheapest flights from
+[17:03.04] Bangalore to London at 48,000 rupees
+[17:06.16] right here. Now I can take over and
+[17:09.20] actually interact with this page and
+[17:10.96] book my tickets right here. I can also
+[17:14.00] go and look at the research done by the
+[17:16.64] agent mode on the go black rockck flexi
+[17:18.96] cap fund right here. And I can read
+[17:21.36] through it. I can even export this as
+[17:24.08] you can see right here. I can save it. I
+[17:26.48] can download it. I can share it with
+[17:28.32] other people. And this is basically the
+[17:30.48] strength of agent mode itself. Let me
+[17:32.56] show you some more things you can try
+[17:33.84] out. So we looked at deep research,
+[17:35.60] create image, agent mode. We can also
+[17:37.84] check out sources. So we can connect
+[17:41.12] chat GPT with a bunch of apps that we
+[17:44.00] already use every day. For example, we
+[17:46.24] can connect it with Canva. So let me
+[17:48.08] just connect it. Continue to Canva. I
+[17:50.88] will log into my Canva account right
+[17:53.28] here. Like so. I now have Canva
+[17:55.36] connected. And then I can simply just
+[17:57.36] ask you to create a 10pager presentation
+[17:59.20] on the rise of Sabisachi. And I can
+[18:01.52] press enter
+[18:03.28] and it will now communicate with Canva
+[18:06.72] and create a full-blown presentation for
+[18:09.60] me to use. And there you go. This is the
+[18:12.08] presentation that it generated. This is
+[18:14.00] what it looks like as you can see right
+[18:15.76] here. And that's how you can use
+[18:17.84] connections effectively. I can also keep
+[18:20.88] adding more sources. So I can go on to
+[18:24.32] GitHub. I can connect my Gmail. I can
+[18:26.32] connect my calendar. I can ask it to
+[18:28.24] look at my calendar and look at ways in
+[18:30.00] which I can optimize it things like that
+[18:31.92] and it will be able to do that really
+[18:33.52] effectively. What else can we do? So we
+[18:35.92] can also learn effectively. There's a
+[18:39.44] thing called study and learn. Teach me
+[18:42.72] the Pythagorean theorem. Let's say
+[18:45.20] that's what you want to learn. So when
+[18:47.28] you do that, it's not going to give you
+[18:49.60] the answer right away. If you ask it to
+[18:51.52] solve any question, it will never do it
+[18:53.76] on the first go. It will ask you
+[18:55.28] questions. It will give you concepts
+[18:58.80] that you can use to create your own
+[19:01.28] answer. Perfect. This is the big
+[19:03.68] picture. A square plus B square= to C
+[19:06.16] square. A and B are the shortest sides.
+[19:09.20] C is the longest side. Before we can
+[19:11.68] dive into why this formula works, you
+[19:13.60] can tell me if a right triangle has
+[19:15.92] sides A= to 6 and B= to 8. That's going
+[19:19.20] to be 36 and 64. That's going to be 100.
+[19:22.64] So it's going to be E C C would be 10
+[19:28.08] and yes this is a triangle
+[19:33.20] and we are good to go. So this is how it
+[19:36.32] teaches you a concept right if I make a
+[19:38.96] mistake it will again teach it to me
+[19:40.72] from scratch and that's the power of
+[19:43.28] study and learn mode. It doesn't just
+[19:45.68] give you the answer. It walks you
+[19:47.28] through the steps so that you can
+[19:49.20] understand it intuitively and then use
+[19:50.96] it whenever you want to. We can even do
+[19:53.68] something else. We can go on to web
+[19:56.88] search and we can basically say um find
+[20:00.56] me the latest news
+[20:04.00] on the Indian stock market for example.
+[20:09.68] It's now going to search the web and
+[20:11.52] give me the latest updates on it. As you
+[20:14.00] can see LG Electronics IPO, we have
+[20:16.88] India set for $8 billion IPO rush and
+[20:19.84] you can keep reading the latest news
+[20:21.44] right here. Now, one more thing that you
+[20:22.88] can do with the help of child GPT is to
+[20:25.28] schedule repetitive tasks. So, for
+[20:28.16] example, I was asking it to research
+[20:30.72] about the rate of a 3BHK in Bangalore
+[20:33.44] and it searched all of this and gave me
+[20:35.52] the answer. Now, let's say I want to
+[20:38.16] schedule this task. So I want it to
+[20:40.40] search about this every morning on a
+[20:43.12] Monday. So I can keep it weekly on a
+[20:46.72] Monday at 2 p.m. And I can click on save
+[20:49.60] and then it will look up for the pricing
+[20:51.60] of a 3BHK in Bangalore every Monday and
+[20:55.20] give me the answer for it. And this is
+[20:57.36] how you can schedule task with the help
+[20:59.04] of chat GPT. It will actually give you a
+[21:01.36] message on its own without you having to
+[21:04.00] check it every single time. And that is
+[21:06.56] the best part about chat GPT and how it
+[21:08.56] lets you to create these mini agents who
+[21:11.04] keep working on your behalf. So you can
+[21:13.20] focus on the things that matter the most
+[21:15.20] to you. We can confirm, we can even go
+[21:18.40] onto our settings. We can go on to
+[21:21.60] schedules and we can manage these
+[21:23.60] schedules if we want to. We don't have a
+[21:25.76] schedule right here right now. But let
+[21:28.48] me also show you something called as
+[21:29.92] personalization. So chat GPT the best
+[21:33.20] thing about it is that whenever you talk
+[21:35.92] to chat GPT it starts storing
+[21:38.24] information about you and it keeps a
+[21:42.08] score of it and it knows everything
+[21:45.12] about you that you've told it right so
+[21:47.60] right now the personality is default I
+[21:49.52] can change it to be more cynical more
+[21:51.12] robotic more of a listener or a nerd I
+[21:54.00] can ask it to be more chatty witty I can
+[21:56.72] even give it a nickname I can give it an
+[21:58.56] occupation I can give more information
+[22:01.36] about me so that it knows about me and
+[22:04.32] gives me the answers in that context. So
+[22:07.04] if it already knows that I'm a 24 year
+[22:09.36] old creator living in Bangalore. So
+[22:12.96] every answer would be according to that
+[22:16.00] then we also have this thing called
+[22:17.60] memories. So if you manage that you can
+[22:19.84] see all the memories that it has access
+[22:21.76] to right here. Now I can delete any
+[22:23.76] memory if I want to as well. That is
+[22:26.32] basically the power of charge GPT. We
+[22:30.16] also have something called apps and
+[22:31.76] connections right here. So there's
+[22:34.56] something called using apps in chat GPT.
+[22:36.96] So I can say you know use Spotify
+[22:39.76] and find me songs similar to let's say
+[22:45.52] um whatever Lover by Taylor Swift. So in
+[22:50.96] this case it would actually use Spotify
+[22:54.56] and give me the songs. As you can see
+[22:56.32] use Spotify for this answer. So I can
+[22:58.40] click on that. It will ask me to connect
+[23:00.80] to Spotify. So I will continue. Continue
+[23:05.12] to Spotify. Now instead of going again
+[23:07.04] and again to Spotify, I can just give it
+[23:09.44] access and then chat GPT would be able
+[23:11.92] to perform actions on Spotify on my
+[23:14.48] behalf. So as you can see, it now has
+[23:17.04] access to Spotify and then it will start
+[23:19.04] working and creating a playlist for me
+[23:21.20] of all of these songs right here. That's
+[23:24.00] the best part about it. As you can see,
+[23:25.68] it now has access Spotify and it will
+[23:27.76] work like that. There's another thing on
+[23:29.12] the mobile app of charge GPT called as
+[23:30.88] pulse and based on what topics you
+[23:33.20] normally talk to charge GPT about. Pulse
+[23:35.28] is a collection of the latest news in
+[23:37.84] those genres in those industries. So
+[23:41.12] every morning you can go on that you can
+[23:43.20] access pulse and you can look at the top
+[23:45.44] news for example. So I'm on chat GPT app
+[23:49.60] itself. I'm going to go on to pulse.
+[23:52.40] Let's see what do we have here as the
+[23:55.04] most important information. turnmake.com
+[23:58.80] logs into smart feedback. five fresh
+[24:01.04] agent ideas to prototype make your post
+[24:03.76] writer actually learn things like that
+[24:06.16] right so it will teach me the latest
+[24:08.72] stuff that is happening in my field
+[24:10.40] which I am interested about and that's
+[24:12.64] how the pulse works now one more thing
+[24:16.80] about chat GPT that you should know
+[24:18.80] about is this thing called custom GPTs
+[24:21.36] so if we come over here we can go on to
+[24:24.16] GPTs and we can create our own custom
+[24:27.76] GPT so imagine you giving it all the
+[24:30.40] information about the way you write
+[24:32.08] LinkedIn posts, your past LinkedIn
+[24:34.00] posts, LinkedIn posts of people that you
+[24:35.84] are inspired by over here in the
+[24:38.08] configure section. You can upload all of
+[24:40.32] those files, doc files, and then you can
+[24:42.96] turn it into a LinkedIn content writer
+[24:45.12] for you. Then you can give it any sort
+[24:47.84] of information and it will turn it into
+[24:49.76] a ready-made LinkedIn post that you can
+[24:51.84] post right away. This is one custom
+[24:55.28] chart GPT that you can keep using over
+[24:58.16] and over again. And what's more is that
+[25:00.56] you can publish it and anyone around the
+[25:02.88] world can also get access for it. For
+[25:05.36] example, we have write for me is a
+[25:07.28] specialized writing assistant. We have
+[25:09.20] scholar GPT which is great for writing
+[25:11.44] research papers. That's basically the
+[25:14.00] power of creating these custom GPTs from
+[25:17.44] scratch. You also have this thing called
+[25:19.44] projects. Now you can create your own
+[25:21.60] project depending on what you're working
+[25:23.44] on. Let's say you have a trip coming up.
+[25:25.52] Let's say you want to create a project,
+[25:27.52] a folder where you can store everything
+[25:29.52] about your investing habits. One tab
+[25:32.32] could be about investing in the stock
+[25:33.84] market. Another could be looking at your
+[25:36.24] expenses and taking care of that. Maybe
+[25:38.96] you want to take care of your health.
+[25:40.56] So, one tab could be about your
+[25:42.32] workouts. Another could be about your
+[25:44.16] nutrition and so on and so forth. So,
+[25:46.64] that's the power that you get with
+[25:48.00] projects. It's more structured. You can
+[25:50.16] add any particular information in that
+[25:52.72] if you want to and that is what keeps it
+[25:55.36] organized and that is how chat GPT
+[25:59.20] essentially works. This is it. We
+[26:02.08] covered everything in chat GPT. We can
+[26:04.88] also look at the deep research that we
+[26:07.44] worked on. It works for 16 minutes.
+[26:10.16] looked at 132 sources and created the
+[26:12.88] most in-depth guide research report that
+[26:16.88] I can simply just share and I can
+[26:20.16] download it if I want to as a PDF
+[26:23.60] and I can create my next YouTube video
+[26:26.56] from it. As you can see it's eight
+[26:28.24] pages. It's a in-depth report on the
+[26:31.28] spending habits of the Gen Z population.
+[26:34.08] I can learn from it and I can do
+[26:35.76] anything that I want with it. That is
+[26:37.76] how charge GPT works. In this entire
+[26:39.84] video, we learned everything from how to
+[26:42.32] prompt Chad GPT, all the different modes
+[26:44.40] of Chad GPT. We also looked at the
+[26:46.56] different modes and the models of CH GPT
+[26:49.76] and we also explored personalization,
+[26:51.92] scheduuling tasks. We looked at custom
+[26:54.00] GPTs and a lot more. That is it from me
+[26:57.92] today. You just leveled up. You just
+[27:00.24] learned about everything that there is
+[27:02.16] to know in the Chad GPT app itself. Let
+[27:04.40] me know if you have any questions below.
+[27:05.92] Hit the like button and subscribe. Share
+[27:07.28] this video with a friend and I'll see
+[27:08.64] you in the next video. Bye-bye.

@@ -1,0 +1,1208 @@
+[0:00.16] A new study has come out by Microsoft
+[0:02.96] which talks about the 40 jobs that are
+[0:05.68] most likely to be taken by AI in the
+[0:07.60] near future and also 40 jobs that are
+[0:09.76] relatively safe. Now you might ask me
+[0:12.08] why don't if a big company has put out a
+[0:14.00] paper like this why would you listen to
+[0:15.44] them? They have so much incentive to
+[0:16.96] lie. But the truth is actually in this
+[0:19.44] case Microsoft has all the incentives
+[0:21.84] not to put out a paper like this simply
+[0:23.76] because of the amount of fear and panic
+[0:25.28] it'll create. And if you actually go
+[0:27.28] through the list of these jobs, you'll
+[0:28.96] see that it's very risky for Microsoft
+[0:30.72] as a company to put this out because a
+[0:32.56] lot of jobs that they say are going to
+[0:33.92] be replaced are jobs that in a way their
+[0:36.72] tool suite enables. So I wanted to
+[0:39.12] actually go through the 40 jobs that are
+[0:40.88] likely to be replaced and also the 40
+[0:42.80] jobs that are safe. Without much further
+[0:44.80] ado, let's go to the 40 jobs that are
+[0:47.12] first going to be replaced.
+[0:50.32] Before we begin, I want to tell you the
+[0:51.84] methodology used. They took about
+[0:53.52] 200,000 anonymous conversations from
+[0:55.52] copilot of people asking copilot to help
+[0:57.60] them with their work. And then they
+[0:58.88] looked at the work that copilot did and
+[1:00.96] tried to figure out did it actually do
+[1:02.96] the work end to end or not. Then
+[1:05.28] depending on the user satisfaction of
+[1:07.20] that work done by copilot they decided
+[1:09.28] whether AI was applicable there or not.
+[1:11.92] And at the end they created this AI
+[1:13.84] applicability score for each of these
+[1:15.60] jobs which is how likely is it that AI
+[1:18.00] can do it end to end in the next few
+[1:19.92] months or years. Anyway that was the
+[1:21.60] methodology. Let's get straight to the
+[1:23.60] 40 jobs that AI can replace. Number one
+[1:26.96] is interpreters and translators. Now,
+[1:30.08] this makes obvious sense, right? The
+[1:31.60] transformer as a technology was
+[1:33.28] initially created to do language
+[1:34.88] translation. So, it's really good at
+[1:36.88] language translation already. So, it can
+[1:38.88] easily convert one language to another.
+[1:40.88] And when I was at Google IO in San
+[1:42.56] Francisco this year, I got to try out
+[1:44.56] these glasses that they have that also
+[1:47.20] do instant language translation. And it
+[1:49.76] is pretty good. They even did a live
+[1:51.68] demo of this. So yeah, it makes sense
+[1:53.68] that if you're a translator or an
+[1:55.36] interpreter, um, you know, AI could
+[1:57.76] possibly do a lot of the job for you.
+[1:59.44] The next job on the hit list is
+[2:01.36] historians, which are jobs that focus
+[2:04.08] around research, analytics, synthesis,
+[2:06.88] reporting around historical events.
+[2:08.96] Because all these AIs have been trained
+[2:10.72] on pretty much all the history books out
+[2:12.72] there, they can immediately recall as
+[2:14.80] well as give analysis of these
+[2:16.32] historical events. So you don't need to
+[2:18.08] have a person around you who's sitting
+[2:19.44] and giving you an analysis of history
+[2:21.36] when the AI can do it for you. Now even
+[2:23.68] if a certain book or a piece of data
+[2:25.76] isn't in the AI corpus, you can very
+[2:27.92] easily dump the book into the AI and say
+[2:30.24] find me information from this book. Next
+[2:32.24] is actually passenger attendance, which
+[2:34.64] is roles built around helping travelers,
+[2:37.20] answering their questions, providing
+[2:38.72] directions. You know, if you go to an
+[2:40.16] airport, sometimes there'll be a person
+[2:41.44] sitting there who's helping passengers
+[2:42.88] go in different directions or telling
+[2:44.24] the person you should go here or this is
+[2:45.76] the flight timings or whatever. It is
+[2:47.36] very easy to feed those flight timings
+[2:49.20] or even the train timings into AI and
+[2:51.52] just have it answer these questions for
+[2:53.12] you. Eventually, it's just going to be a
+[2:54.64] kiosk that you talk to and it'll give
+[2:56.32] you the answers. Or you know what, it
+[2:58.24] might not even be a kiosk as long as you
+[3:00.16] have the AI glasses. And even Mark
+[3:02.32] Zuckerberg came out recently and said
+[3:03.68] that they're really going to focus on
+[3:04.88] the glasses, right? Even Google is like
+[3:06.56] like I told you. So it is going to be
+[3:08.72] obvious that it's directly going to
+[3:10.00] connect to the flight APIs and tell you
+[3:11.52] where to go. So you probably don't even
+[3:12.88] need to talk to an attendant there. Next
+[3:14.96] is sales reps, but a very different type
+[3:17.52] of sales rep. This is a sales rep whose
+[3:19.84] daily work is writing proposals,
+[3:22.16] explaining services, and persuading
+[3:24.40] clients and responding to objections or
+[3:26.32] queries. This is not the sales rep that
+[3:28.32] will meet some a client in person and
+[3:30.56] then convince them of something. This is
+[3:32.24] a person who's doing some of the back
+[3:33.68] office work for sales. So uh of course a
+[3:36.24] lot of this process is writing proposals
+[3:37.76] and emails. A lot of cold outbound
+[3:39.68] emails. Uh it seems that AI is pretty
+[3:42.40] much on path to replacing. Remember that
+[3:44.72] a physical sales rep who goes shakes a
+[3:46.56] client's hand and tries to convince them
+[3:48.08] of something is still seems to be a safe
+[3:50.64] job. Next is writers and authors. So
+[3:52.88] whether you're writing books, articles,
+[3:55.12] scripts, essays, uh it feels like AI
+[3:57.68] will sort of take this over. And I think
+[3:59.60] this is a rising tide phenomenon which
+[4:01.44] is if you're not a very good writer
+[4:04.00] which is if you're like a midwriter then
+[4:05.84] sure AI will take your job but writing
+[4:07.52] is one of those jobs with a very high
+[4:09.12] ceiling at the very top the people who
+[4:11.36] are writing it's not really writing it's
+[4:13.12] the way they're thinking and their life
+[4:14.56] experiences. So someone who can explain
+[4:16.56] something to you in a very crazy life
+[4:18.48] experience that they've had and then
+[4:19.76] connect it to you know whatever they
+[4:21.60] want to teach you or whatever they want
+[4:23.12] to communicate to you. I think AI can't
+[4:24.88] do that because it's not had those life
+[4:26.40] experiences. But if you're somebody who
+[4:28.16] runs a news blog or a news platform and
+[4:30.24] all you're doing is rephrasing news from
+[4:32.08] another website, then yeah, this is not
+[4:34.80] a very good job for you to be in. Next
+[4:36.64] is customer service representatives,
+[4:38.64] which is a role focused on answering
+[4:40.80] customer queries. You know, actually in
+[4:42.80] the early days, maybe five or 6 years
+[4:44.64] ago, there were these bots that you
+[4:46.08] could create for your websites that will
+[4:47.60] answer queries for you. Now, it can just
+[4:49.20] be an AI that retrieves data from
+[4:50.96] whatever's on your website and then
+[4:52.64] answers those queries as long as you've
+[4:54.16] written enough FAQs. So this seems like
+[4:57.12] it's very obvious that resolving
+[4:58.72] complaints, drafting a response,
+[5:00.64] providing information is something that
+[5:02.56] AI can do. But remember there's an
+[5:04.08] accountability part of this, right?
+[5:05.44] Which is when do you give a customer a
+[5:07.20] refund? Especially if it's a large
+[5:08.64] ticket product, right? Like if it's like
+[5:10.16] a you know like a Zomato or a Swiggy
+[5:11.76] where it's like 100 rupees that they're
+[5:13.12] losing and it's part of it's baked into
+[5:14.96] their costs, then fine an AI can decide
+[5:16.88] when to give a refund. But if it's a big
+[5:18.40] ticket product, let's say you bought,
+[5:20.08] you know, camera and now a customer
+[5:22.08] service representative has to decide
+[5:23.68] whether the customer who's asking for a
+[5:25.68] refund is a true customer who is who has
+[5:28.64] a genuine reason or a fake reason,
+[5:30.56] that's something that still requires
+[5:31.92] human accountability. But if it's not
+[5:33.76] those tasks, if it's just drafting
+[5:35.92] responses and then or giving small uh
+[5:38.64] refunds back, then AI can probably do
+[5:40.96] it. Next is actually CNC tool
+[5:43.12] programmers which is jobs that involve
+[5:45.84] writing precise code for machines right
+[5:49.20] so this is highly structured text so a
+[5:51.68] lot of these tools actually require a
+[5:53.20] little bit of programming which AI can
+[5:54.80] do pretty much off the bat now I want to
+[5:56.96] take a second to talk about today's
+[5:58.24] sponsor warp which is an AD an agentic
+[6:01.04] development environment and it's already
+[6:02.56] ranked number one on terminal bench
+[6:04.32] here's how it works so imagine your
+[6:06.16] terminal but designed entirely around AI
+[6:08.56] agents it can understand natural
+[6:10.16] language pair share with you on coding,
+[6:11.92] create pull requests, and even spin up
+[6:13.68] multiple agents for entire projects, all
+[6:15.84] running in parallel. For example, say
+[6:17.84] you deploy to Kubernetes and your app
+[6:19.92] keeps crashing in a crash loop back off.
+[6:22.00] Normally, in your terminal, you'd run
+[6:23.92] cubectal logs, get blasted with hundreds
+[6:26.48] of lines of text slop, and waste hours
+[6:28.48] just to figure out what's wrong. But in
+[6:29.92] WP, the entire log is organized into a
+[6:32.24] clean, collapsible block. An agent then
+[6:34.08] reads everything, your command, the
+[6:35.52] output, the session history, and tells
+[6:37.12] you instantly what's wrong. your app is
+[6:38.88] missing DB host in its environment
+[6:40.88] config. You can then go ahead and patch
+[6:42.64] it yourself or let the agent fix it for
+[6:44.56] you. Or say you're someone who manages
+[6:46.56] multiple projects manually. In you
+[6:48.48] can just assign each project its own
+[6:49.92] agent all running in parallel and
+[6:51.76] monitor them from a single panel. Plus,
+[6:53.60] you can even one-click share everything
+[6:55.52] since every session is saved as a
+[6:57.52] workflow inside drive so your whole
+[6:59.44] team can collaborate on projects.
+[7:01.28] There's a lot to talk about but we
+[7:03.12] think you'll get to know how powerful it
+[7:04.72] is only once you use it yourself. Now,
+[7:06.96] it's absolutely free to try out for a
+[7:08.56] limited time, but my friends at have
+[7:10.40] given me an exclusive deal. So, you can
+[7:12.16] get Pro for just $1 by using the
+[7:14.64] code Wun at checkout at
+[7:16.40] go.wop.dev/warun.
+[7:18.80] Now, let's get back to our video. Next
+[7:20.40] is telephone operators. Actually,
+[7:22.24] there's a role whose job is to connect
+[7:24.32] calls. It's it's like a switchboard
+[7:25.92] operator, right? Somebody calls and then
+[7:27.28] they're rerouting you somewhere else,
+[7:28.80] giving directory information, answering
+[7:30.80] standard questions. It's like routine
+[7:33.04] scripted communication tasks, right?
+[7:34.56] like you call customer support of a
+[7:36.00] company and maybe they have 10 different
+[7:37.76] places they could send you sometimes
+[7:39.12] when you call you know customer support
+[7:40.64] of a phone company uh they could be like
+[7:42.88] they'll ask you to dial a different
+[7:44.08] number depending on what you want all
+[7:45.60] that can be pretty much automated and
+[7:47.20] there are still some companies that use
+[7:48.96] humans for that task even though that's
+[7:50.40] been already automated you already
+[7:52.24] dialing a number and it's actually hard
+[7:54.08] to reach a customer supports
+[7:55.60] representative on call these days
+[7:57.44] usually the you know it's just you press
+[7:59.36] those numbers and then there's an
+[8:00.40] automated voice on the other end now it
+[8:02.16] gets even more automated now it's almost
+[8:03.84] like you're into a real human being and
+[8:05.76] the person reroutes you where you need
+[8:07.12] to be. Next is ticket agents and travel
+[8:09.36] clerks. There is an entire role of a
+[8:11.92] ticket concurge whose job is to help you
+[8:14.72] book travel, tell you where you should
+[8:16.48] stay, plan your trip for you, provide
+[8:18.64] information, handle all your common
+[8:20.40] requests. Uh, and all of this requires
+[8:22.24] structured language, right? Which is
+[8:24.00] where do you want to go? Like what kind
+[8:25.52] of do you want a summer vibe or do you
+[8:26.96] want a winter vibe? You know, is are you
+[8:28.88] traveling with family? Here's an itenary
+[8:30.64] for you. As we all know, AI can do the
+[8:32.40] itinary piece pretty well. Next is
+[8:34.40] broadcast announcers and radio DJs. So,
+[8:37.04] a lot of audio communications. If you
+[8:39.12] look at our avatars on Instagram, right,
+[8:41.68] the entire audio is synthetic. We don't
+[8:43.44] need a human being to come and, you
+[8:45.52] know, speak out loud like like I'm doing
+[8:47.04] in this video, right? We don't need
+[8:48.24] somebody to do that, especially if it's
+[8:49.68] just radio announcements. So, that's
+[8:51.60] certainly going to be automated. It's
+[8:52.88] going to be a clone of somebody else's
+[8:54.24] voice that's playing on radio all the
+[8:56.00] time. Uh they will tell you what track
+[8:57.60] is up next. They will tell you, you
+[8:59.28] know, a little bit of today's tidbits
+[9:00.88] and news. It's very obvious that that
+[9:02.80] job can be potentially automated with
+[9:04.64] AI. Next is actually brokerage clerks.
+[9:07.28] You might not be familiar with a
+[9:08.56] brokerage clerk because most of you use
+[9:10.32] platforms like Zeroda or Grow or any of
+[9:12.64] the others to actually transact stock
+[9:14.64] yourself. But in the past and even some
+[9:17.04] rich people today, sometimes they call a
+[9:19.20] person from one of these brokerages and
+[9:21.84] then they make the transaction on their
+[9:23.76] behalf. Or sometimes it's not even
+[9:25.36] making a transaction. Sometimes it's
+[9:26.72] just information and it's pretty obvious
+[9:28.88] that AI can if you tell AI what
+[9:30.72] transaction to execute it'll actually
+[9:32.32] execute it for you. It's not very far
+[9:34.32] away that from this and plus getting
+[9:36.48] information around specific companies
+[9:38.16] what should I do? AI can give you that
+[9:40.00] feedback and advice. Next is farm and
+[9:42.40] home management educators. This is a
+[9:44.32] very simple role which is in the US
+[9:45.92] there is this role where if you're
+[9:47.44] running a farm or a home you you are
+[9:49.28] managing it. You're one of the managers
+[9:50.80] responsible for it. Somebody's educating
+[9:52.40] you on what you should do and shouldn't
+[9:53.76] do. It's pretty obvious that this
+[9:55.04] information can come from AI. Next is
+[9:56.80] telemarketers. All the spam calls that
+[9:58.80] we get from all these different
+[9:59.92] platforms which anyway none of you pick
+[10:02.00] up at this point but yeah that can be
+[10:04.16] totally automated with AI. Next is
+[10:06.08] concieres. It means somebody you can
+[10:08.56] reach out to who can get stuff done for
+[10:10.16] you. Like I used to use this concier
+[10:12.08] service where I could text them and say
+[10:13.52] hey I want uh you know a VOUP from the
+[10:15.84] US delivered to India. Can you handle it
+[10:17.44] for me? And then they'll go talk to a
+[10:19.12] bunch of people or ship it and pay
+[10:20.88] customs and all on my behalf. And then I
+[10:22.64] just have to make the final transaction.
+[10:24.08] So there are services like this in India
+[10:26.32] and now I think it's getting
+[10:27.36] democratized. There are a bunch of
+[10:28.48] startups as well. I invested in one
+[10:29.92] recently. It's pretty obvious that if
+[10:31.44] you are a human being doing all of this,
+[10:33.36] it is at some point going to be replaced
+[10:35.04] by AI because it's a bunch of calls
+[10:36.40] you're making. It's a bunch of websites
+[10:37.92] you're going to and making clicks which
+[10:39.60] as we've seen chat GPD agent can do
+[10:41.28] pretty well. Next is news analysts,
+[10:42.96] reporters and journalists. If you are
+[10:44.80] somebody that is manually going out
+[10:47.44] there picking out news, adding
+[10:49.44] commentary on it, doing a deep dive,
+[10:51.20] then you'll be fine. But if you're just
+[10:52.72] paraphrasing news from one place to
+[10:54.16] another, it's pretty obvious that AI can
+[10:56.08] do this. In fact, if you look at my
+[10:57.68] short form channel, and AI does most of
+[10:59.76] the hunting for us, right? So, I don't
+[11:01.60] need as many humans there. We have 1/5
+[11:03.68] the number of humans that any other
+[11:04.88] newsroom would have. And it makes sense
+[11:06.40] because AI can do a lot of the finding
+[11:08.48] work for you. We just have to add our
+[11:10.16] insight or our viewpoint on some
+[11:12.56] existing piece of news, right? That's
+[11:14.00] where our creative modification lies.
+[11:15.60] But there are lots of other companies
+[11:16.64] that don't actually do that who just
+[11:18.40] take something that happened from
+[11:19.60] Twitter and then just you post it and
+[11:21.28] say here's what other people said about
+[11:22.56] it. They don't give their own opinion
+[11:23.84] because they're, you know, it is kind of
+[11:25.12] risky for some of these news companies
+[11:26.48] to give their own opinion on news
+[11:28.08] because they're not individual creators.
+[11:29.68] In fact, AI already does it. It doesn't
+[11:31.44] mean that the news platform is going to
+[11:32.72] die. Don't get this wrong. It means that
+[11:34.24] the job of a person who's taking news
+[11:36.16] from one place to another is gone. The
+[11:37.60] news companies will continue to do it
+[11:39.12] using a bot. And we've seen a lot of
+[11:40.72] this with even with Indian news. You
+[11:42.56] know there are lots of bots running
+[11:43.68] right now that will take interesting
+[11:44.96] information and then just you know write
+[11:46.56] an article on it immediately. Uh there's
+[11:48.32] no human involved. Next is
+[11:49.52] mathematicians which is crazy right
+[11:51.12] because if you look at three four 5
+[11:52.88] years ago we said hey I can't do math
+[11:54.80] and this year both deep mind as well as
+[11:56.40] openai have won the IMO which is the
+[11:58.80] international math olympiad. So
+[12:00.08] mathematicians actually do two things
+[12:01.52] right which is at the base level they're
+[12:03.04] probably teaching or you know reoing a
+[12:06.32] proof that somebody else has done and at
+[12:07.84] the highest levels like if you look at a
+[12:09.04] terren tower right they are formulating
+[12:10.88] new proofs they're coming up with new
+[12:12.48] ways of looking at the world and I feel
+[12:14.16] like the second part is obviously not
+[12:15.68] going to be easily automated but as AI
+[12:17.92] keeps getting better it's very likely
+[12:19.84] that at some point it starts generating
+[12:21.52] the proofs by itself so mathematician is
+[12:24.00] not a very safe job according to this
+[12:25.52] study at least although I I believe
+[12:27.04] there are two kinds of mathematicians
+[12:28.24] and the second kind are we we still need
+[12:30.40] a lot of them. Next is technical writers
+[12:32.48] which is you build something and you
+[12:33.84] want documentation around it. Today if
+[12:36.48] you write a codebase then you probably
+[12:37.84] need docs around that codebase for
+[12:39.36] people to interface with it. Somebody
+[12:40.56] using your API, somebody using your SDK.
+[12:42.56] But uh I think in the future technical
+[12:44.32] writers who do this are not needed
+[12:46.24] because the AI itself can go through
+[12:47.68] your entire codebase and then give you
+[12:49.12] docs. It will tell the end user how to
+[12:51.28] use your API or your SDK. It will tell
+[12:53.20] the user what your idiosyncrasies are.
+[12:55.44] It'll allow the user who's using your
+[12:57.28] API or SDK to actually chat with the
+[12:59.36] codebase and figure out, you know,
+[13:01.12] interesting ways to use whatever it is
+[13:03.20] you're selling. So technical writers are
+[13:05.36] not really necessary. Next is proof
+[13:06.88] readers and copy marketers. Somebody
+[13:08.64] who's going through the document to see
+[13:09.68] if there are spelling mistakes or
+[13:11.20] grammatical mistakes. AI can do a
+[13:12.96] fantastic job of this. Next is hosts and
+[13:15.28] hostesses. Now, it's not very clear here
+[13:17.04] whether it's an air hostess or somebody
+[13:18.72] hosting a party, but I feel in both
+[13:20.72] cases, right? Even with an air hostess,
+[13:22.48] I really don't think AI can do the job.
+[13:24.32] If you're taking a flight in India, you
+[13:25.84] know, you have no idea, right? Somebody
+[13:27.04] might be pissing on the plane. Like we
+[13:29.52] we've seen crazy stuff. So, it's a lot
+[13:31.04] of having to deal with crazy people uh
+[13:34.08] all the time and angry people and
+[13:35.68] frustrated people and flight delays,
+[13:37.44] which I do not think an AI would do.
+[13:39.52] Like if if there was a bot sitting and
+[13:41.28] telling them that the customer would
+[13:42.72] take the bot and throw it out of the
+[13:43.92] airplane, right? Like uh you need a
+[13:45.44] human being who's empathetic and who can
+[13:47.44] say sorry like a million times. So, so I
+[13:49.20] don't think that's going to go in India
+[13:50.16] at least. Next is editors. And this
+[13:52.00] isn't video editors. This is the type of
+[13:53.60] editor who would take a piece of writing
+[13:55.84] and then make edits on top of it. Right?
+[13:58.16] So in a lot of newspapers, you have the
+[13:59.68] editor whose job is to have this team of
+[14:01.92] journalists under them and then the
+[14:03.36] journalist will write something and then
+[14:04.64] the editor modifies it to make sure that
+[14:06.40] it fits with the newspaper's narrative.
+[14:08.16] So they think that editors are already
+[14:10.00] using AI which is improving the
+[14:11.52] grammatical issues in a piece of
+[14:13.28] writing, improving the narrative in a
+[14:14.72] piece of writing. That is something that
+[14:16.56] is susceptible to AI. Next is business
+[14:18.40] teachers because I feel like in general
+[14:20.40] with teaching AI can help you with a lot
+[14:22.32] of specific like let's say you have a
+[14:23.76] very specific problem today teachers
+[14:25.28] can't do one-on ones right so and we
+[14:26.96] made a video on this right because
+[14:28.08] teachers just don't have the time to do
+[14:29.20] enough one-on- ones in a day they have
+[14:30.56] to teach a class to 100 people but with
+[14:32.40] AI you can ask really stupid questions
+[14:34.24] and you can keep asking those questions
+[14:35.60] till the AI helps you and and tells you
+[14:37.52] hey this is exactly what you should do
+[14:39.12] for your specific situation or problem
+[14:40.96] next is public relations specialists
+[14:42.64] anyone who's doing PR now I feel like
+[14:44.32] there's two parts of being a PR person
+[14:46.56] right one writing out communication for
+[14:48.96] you on your Twitter handle or on your
+[14:50.88] Instagram or social media or whatever it
+[14:52.96] is. But the second is also knowing
+[14:54.56] journalists because sometimes when you
+[14:56.24] want that narrative out the PR
+[14:57.68] specialist has to go to a journalist and
+[14:59.12] say, "Hey, here's what I'm thinking.
+[15:00.48] Here's what I'm doing." And I feel like
+[15:02.24] that part AI can't do because it won't
+[15:04.24] know enough journalists. You need to
+[15:06.08] have built relationships with those
+[15:08.16] journalists over time. And that's why
+[15:09.68] even on the journalism front, right? If
+[15:11.12] you're a journalist who's going and
+[15:12.16] doing deep dives, doing investigative
+[15:13.76] journalism, talking to people in the
+[15:15.20] real world and getting some information,
+[15:16.88] AI just can't do that. Next is
+[15:18.80] demonstrators and product promoters,
+[15:20.72] which is somebody who's doing a demo of
+[15:22.40] a product. Now, this depends on whether
+[15:24.08] it's physical or digital. If it's
+[15:25.60] digital, makes sense that AI can do it.
+[15:27.36] If it's physical, then you know you need
+[15:29.36] a real person there, right? Next is
+[15:31.36] advertising sales agents. And I'm going
+[15:33.20] to go slightly faster here because some
+[15:34.64] of these you already know. The next is
+[15:36.48] new accounts clerk. So, if you start a
+[15:38.16] new account, how do you help you with
+[15:39.76] that new account? like where do you go,
+[15:41.36] what should you do? Next is statistical
+[15:43.44] assistants. Then is counter and rental
+[15:46.24] clerks. So if you're looking to rent
+[15:47.68] something, somebody who can give you
+[15:49.04] some information. Next is data
+[15:50.64] scientists and and there are 192,000
+[15:53.20] jobs here in the US, right? So they do
+[15:55.28] believe that data science is something
+[15:56.88] that AI is already doing pretty well.
+[15:58.48] Next is personal financial advisers. I
+[16:00.56] remember talking to an influencer 2
+[16:01.92] years ago who said he's going to build a
+[16:03.60] personal finance app. And I said, uh,
+[16:05.76] what's it going to do? Said, well, it's
+[16:07.04] going to give advice. And I said, "Dude,
+[16:08.32] AI will do a better job because it'll
+[16:09.92] know your context very well. It'll know
+[16:11.28] how much you need for retirement. It'll
+[16:12.56] know how much you need to keep aside.
+[16:13.68] It'll know everything. It'll be able to
+[16:15.44] query what the current inflation rate
+[16:17.44] is. It'll give you like a perfect
+[16:19.12] answer." And 2 years ago, he didn't
+[16:20.40] believe me. But today, AI can
+[16:22.00] practically do this, right? You can talk
+[16:23.28] about your retirement plans with AI. And
+[16:25.28] it will tell you exactly how to invest,
+[16:27.04] how to save, what are the different
+[16:28.08] options, uh how much to put in this, how
+[16:30.16] much to put in that, and it'll have
+[16:31.28] context. And the cool part is it will
+[16:32.72] not just have the memory of how you
+[16:34.00] invested. It'll also continue to give
+[16:36.08] you advice as the market changes. Next
+[16:38.16] is archivists whose job is to you know
+[16:40.80] see something happening in the world and
+[16:42.40] then you know put that data together.
+[16:44.32] Next is economics teachers which is
+[16:46.72] pretty self-explanatory. The next one is
+[16:49.92] web developers. Yeah, I've made videos
+[16:52.24] for 2 and a half years about this.
+[16:53.68] Right. I got abused in the first year
+[16:55.12] and now people are using Lovable and
+[16:57.52] Lovable's gone from 0 to $100 million in
+[16:59.60] ARR in a year. So you can imagine how
+[17:01.36] much demand there is for something like
+[17:02.88] that to be automated. It's going to
+[17:04.32] happen. There's too much money going to
+[17:05.60] it. Imagine being a web developer and
+[17:07.60] sometimes I see this in my comments and
+[17:08.96] I'm just like you maybe you don't
+[17:10.32] understand the relative scale of things,
+[17:11.76] right? But here's a company like OpenAI
+[17:14.32] going out and making a $500 billion
+[17:17.20] cluster to take on the problem of
+[17:19.36] writing code because that's very
+[17:20.72] critical, right? For you to achieve the
+[17:22.16] singularity for AI to improve by itself,
+[17:24.16] it needs to be able to write code. So
+[17:25.60] they are going to solve it. And then
+[17:26.80] there's Meta who's dropping like hundred
+[17:28.64] million dollar a billion dollar salaries
+[17:30.40] for researchers to come solve this. Like
+[17:32.32] why do you feel you as a web developer
+[17:34.32] are going to be able to compete in the
+[17:35.60] next few years. A lot of a lot of life
+[17:38.32] is knowing what battles you can't take.
+[17:40.16] So a very important way to think about
+[17:42.24] this is and there's a famous song
+[17:44.48] somewhere you know I can't recollect the
+[17:46.32] name but the idea goes something along
+[17:48.72] the lines of Lord please give me the
+[17:50.56] strength to know what I can and cannot
+[17:52.56] battle and for me to avoid the battles
+[17:54.96] that I should not be battling or that I
+[17:57.04] have no chance of winning right it's
+[17:58.48] about guiding me along the path and a
+[18:00.16] lot of people and maybe it's ego right
+[18:01.76] like at this point you know from the
+[18:03.12] comments it just feels like ego right
+[18:04.88] which is hey I've studied this for so
+[18:06.32] many years and I'm good at this how dare
+[18:08.64] AI be better no it's not better. Like
+[18:10.56] whenever somebody ignores obvious
+[18:12.24] evidence in front of their eyes, it
+[18:14.24] actually comes from a place of ego and
+[18:15.60] insecurity. But I'll tell you a truth
+[18:17.12] about life as an entrepreneur versus
+[18:18.96] having a job, right? As an entrepreneur,
+[18:20.40] you could do your best work. You could
+[18:21.68] be really good at what you want, but the
+[18:23.20] market simply might not support what it
+[18:24.72] is you're building or selling. Right?
+[18:26.08] That's the truth. Like you could be very
+[18:27.60] very good. You could have a great
+[18:28.56] product. You could have great marketing,
+[18:29.92] but you know, the market just might not
+[18:31.60] want it. or like if you built a social
+[18:33.12] media platform today, it's very very
+[18:34.80] likely no matter how much money you
+[18:36.00] raise, no matter how good your product
+[18:37.20] is, you will lose cuz they're already
+[18:38.72] winners and they already have that
+[18:39.84] critical mass. But wisdom and something
+[18:42.08] I learned in my 30s and didn't have in
+[18:43.84] my 20s is knowing what battles not to
+[18:46.08] take. On Twitter, there's a post from me
+[18:48.56] in 2012 about teaching people how to use
+[18:52.16] Heroku, Postgrace SQL, Ruby on Rails. I
+[18:54.64] was doing web dev at that time, right?
+[18:56.08] And I've literally written a tutorial
+[18:57.60] about I had to evolve beyond that in
+[18:59.76] that era. So, it's something that's very
+[19:01.76] special to me and it's something that,
+[19:03.84] you know, I've spent a lot of my years
+[19:05.12] doing. But it's okay if the market has
+[19:07.44] moved on and it's if something's being
+[19:09.68] automated, it's fine. You can always
+[19:11.20] move one level higher. You can still run
+[19:12.64] an agency or you can still run a company
+[19:14.08] and have the bots do the work for you.
+[19:15.76] Kunal Sha had this tweet recently,
+[19:17.20] right, which is AI might force everyone
+[19:18.88] to be an entrepreneur if it does all the
+[19:20.24] jobs. And you might say, well, if the
+[19:22.08] jobs are gone, how can somebody be an
+[19:23.44] entrepreneur? It's because an
+[19:24.96] entrepreneur's job is to manage
+[19:26.40] resources in some ways, right? and to
+[19:28.32] know what problem statements and what
+[19:29.84] markets to enter and what markets are
+[19:31.44] too competitive or there's no money in
+[19:33.20] it. Right? And I think there will still
+[19:35.76] be webdev companies and webdev agencies
+[19:38.56] and the lovables of the world. I don't
+[19:40.40] know if there going to be as many web
+[19:41.84] developers. So either you move one level
+[19:43.92] up and say I will manage these agents
+[19:46.08] who are web devs or I'll manage humans
+[19:48.24] who are web devs or you move a
+[19:50.16] tangential path and say this is not for
+[19:51.52] me. I still want a job but this is
+[19:53.20] probably not the path for me because
+[19:54.32] it's too competitive. I can't compete
+[19:56.16] with a meta throwing you know so much
+[19:58.32] money at this or an openi building such
+[20:00.00] huge clusters to solve this problem.
+[20:01.76] It's not it's not a good place to be.
+[20:03.36] Next is management analysts which are
+[20:05.60] people who give managers advice or
+[20:08.32] companies advice on how they should run
+[20:09.76] the company. Yeah, AI can pretty much do
+[20:11.76] this, right? If you give enough data
+[20:12.88] about the company, AI can tell you what
+[20:14.24] you should or should not do. Next is
+[20:15.92] geographers. Then it's models and this
+[20:18.56] is like you know fashion models, right?
+[20:20.32] Which is obvious. We've already seen a
+[20:21.68] lot of newspaper ads where it's like
+[20:23.52] good-looking model but you know it's not
+[20:25.04] real. Next is market research analysts.
+[20:27.52] Deep research can already do market
+[20:29.04] research very well. And this is by the
+[20:31.12] way this has 846,000 people in the US.
+[20:34.08] Next is public safety telecommunicators.
+[20:36.40] Next is switchboard operators. Then
+[20:38.48] there is library science teachers. Again
+[20:41.12] teachers. If you notice the thing that
+[20:43.44] ties all of these roles together is
+[20:46.16] they're all communication and language
+[20:48.08] or writing oriented. Even being a web
+[20:50.40] developer in a way is language. You're
+[20:53.28] still telling the browser how a page
+[20:54.96] should be rendered. So as long as you're
+[20:57.28] doing communication, especially
+[20:58.80] communication to other humans or to
+[21:00.40] computers, those jobs are most in
+[21:02.88] threat. But the nuance here is if you
+[21:05.20] run a company, let's say you run a very
+[21:06.56] big data science company or you run a
+[21:08.32] very big web development company or you
+[21:10.00] run TCS, you will still be probably fine
+[21:12.96] because all you're going to be doing is
+[21:14.16] switching out the human from the job
+[21:15.52] role with an agent. That's what you're
+[21:17.84] going to be doing. And that's why a lot
+[21:19.68] of really smart people across the
+[21:21.68] internet now, a lot of founders I know
+[21:23.60] are starting to talk about
+[21:24.96] entrepreneurship as a necessity, which
+[21:27.52] is a lot like the early days where
+[21:29.28] either you were a blacksmith or a farmer
+[21:31.28] or something, but you were an
+[21:32.24] entrepreneur. You produced your own
+[21:33.68] output. So whether you use a tool or
+[21:35.12] whether you used your hands, it didn't
+[21:36.32] matter if you were responsible for
+[21:37.92] growing oranges. As long as you produce
+[21:39.60] the oranges with a tool, with a hand, it
+[21:41.20] doesn't matter, right? You were
+[21:42.56] responsible for giving the market
+[21:44.16] oranges and people would buy oranges
+[21:45.68] from you. So the data science company
+[21:47.92] that's offering data science as a
+[21:49.76] service to their customers will continue
+[21:51.68] to exist, right? But they will probably
+[21:54.16] look more like a product company than a
+[21:55.76] services company, right? If you look at
+[21:57.44] AOS, it's kind of the same thing with
+[21:58.80] content, right? AI automates a very big
+[22:01.52] chunk of content creation. So we said we
+[22:04.80] have to play one level above and be the
+[22:06.56] content company where we'll use a
+[22:07.84] mixture of human beings and agents to do
+[22:09.92] what we're doing. And therefore, our
+[22:11.68] margins are a lot higher than
+[22:13.28] traditional agency margins. In fact, our
+[22:15.52] company looks a lot like a product
+[22:17.52] company at this point because it's
+[22:18.80] mostly tools and agents going off doing
+[22:20.88] their thing, coming back with human
+[22:22.64] supervision. And across the world, there
+[22:24.64] are a bunch of companies doing this in
+[22:26.16] different spaces. So TCS can actually
+[22:28.16] lay off 2% of their entire workforce,
+[22:29.84] which is 12,000 developers without
+[22:32.16] actually losing productivity. So it is
+[22:35.68] important for a lot of people to
+[22:37.12] understand this because if you were
+[22:38.72] running a small web development agency
+[22:40.56] and you were known well for it even if
+[22:42.08] you had three clients or four clients
+[22:43.84] and they had that trust with you, you
+[22:45.28] can now switch over to agents and I
+[22:46.88] think you'll be fine because in
+[22:48.00] entrepreneurship you kind of control
+[22:49.36] your destiny. But if you're an employee
+[22:51.60] now is probably the time where you
+[22:53.84] should start absorbing a little more
+[22:55.04] risk. Like there's a famous quote which
+[22:56.56] is that the riskiest thing you can do is
+[22:59.04] not take any risk and be completely
+[23:01.12] dependent on other people for your
+[23:02.80] sustenance and income. Right? That's not
+[23:04.32] a good place to be in. And yeah, I think
+[23:06.32] that's the nuance to understand here
+[23:07.84] which is if you can control your destiny
+[23:09.20] in some way or build good trust and
+[23:10.96] relationships with your clients or even
+[23:12.32] your employer, you might be around a lot
+[23:15.04] longer than if you think about all of
+[23:16.40] these purely transactionally because the
+[23:18.00] agents will do the transactional piece
+[23:19.84] much better. Now let's come to the 40
+[23:22.80] jobs not being replaced.
+[23:26.96] The 40 jobs that AI has the lowest
+[23:30.24] applicability score. The first one is a
+[23:32.80] phabottomist. A flabottomist is somebody
+[23:34.88] that comes to your house, puts a needle
+[23:36.56] into your arm, and draws blood. No way
+[23:38.88] AI is going to do that. And no way
+[23:40.16] you're going to trust AI to do that.
+[23:41.52] It's kind of like somebody asked me what
+[23:43.12] what job are you sure that AI won't
+[23:44.56] automate in the next one or two years.
+[23:46.24] And my answer was a person that gives me
+[23:48.32] a haircut cuz I wouldn't trust a bot to
+[23:50.32] give me a haircut, right? You're folding
+[23:51.68] a scissor very close to me. uh
+[23:53.44] instinctively I just don't trust it.
+[23:55.28] Next is nursing assistant. Somebody who
+[23:57.92] can you know you're you're sick or you
+[24:00.00] fractured a bone and some a nurse comes
+[24:01.76] to you and gives you the medication and
+[24:03.52] sits next to your bedside. Yeah, no way
+[24:05.60] AI is going to do that in the short
+[24:06.64] term. Next is hazardous materials
+[24:09.12] removal workers. I think it's such a
+[24:11.12] beautiful world we live in. A lot of
+[24:12.32] people don't like this because they've
+[24:13.60] studied digital roles. But uh I think
+[24:16.32] it's a beautiful world we live in that
+[24:17.68] somebody who goes and collects waste or
+[24:19.84] removes hazardous material that none of
+[24:21.60] us want to do is the kind of jobs that
+[24:23.92] will be protected from AI. All the
+[24:25.76] cushion cushy jobs sitting in front of a
+[24:27.76] computer like mine are going to be
+[24:29.44] automated while all the jobs that make
+[24:31.92] society run properly continue to exist.
+[24:34.32] I remember saying this on a podcast.
+[24:35.60] Tomorrow if I had to be a petrol pump
+[24:36.88] assistant, somebody sitting in a petrol
+[24:38.40] pump putting in petrol or a garbage
+[24:40.24] collector and that was the only way to
+[24:41.76] survive, I'd do it. I'm very adaptable
+[24:43.60] like that. I have very little attachment
+[24:45.68] to my current status. I will do whatever
+[24:47.76] is necessary to survive. And when you've
+[24:49.76] been an entrepreneur for 12 years of
+[24:51.12] your life, you don't have a choice. It's
+[24:52.88] almost like the market will make you do
+[24:54.48] something to survive and you got to do
+[24:55.68] it to survive. So I have less addiction
+[24:57.84] to specific titles or job roles. I care
+[25:00.48] more about uh how how can I continue to
+[25:02.64] exist and if I have to be a hazardous
+[25:04.16] materials removal worker tomorrow so be
+[25:06.24] it. Next is helpers which is painters,
+[25:09.68] plasterers, you know people who come to
+[25:11.12] your house and paint. Next is imbalmer
+[25:13.68] right somebody when you die they they
+[25:15.44] embalm you in the US. Next is plant and
+[25:18.32] systems operators. Somebody who's in a
+[25:20.24] factory plant whose operating systems of
+[25:22.56] course makes sense that AI can't replace
+[25:24.00] their job in the short term. Next is
+[25:25.76] oral and maxeloacial surgeons like
+[25:28.16] dentists. uh very likely that AI can't
+[25:30.72] take that job. I wouldn't let a bot next
+[25:32.80] to my teeth right now. Uh next is
+[25:34.56] automotive glass installers and
+[25:36.16] repairers. Next is ship engineers. Then
+[25:39.04] there's tire repairers and changers.
+[25:41.04] Then there's prostodontists. Then
+[25:43.04] there's helpers, which is production
+[25:44.56] workers. Uh then there's highway
+[25:46.88] maintenance workers. Somebody fixing a
+[25:48.80] highway or a road. Uh the people we all
+[25:50.56] complain about even though we don't know
+[25:51.76] how hard their job is, they're going to
+[25:53.52] be around. Uh next is medical equipment
+[25:56.00] repairers. Uh then there's packaging and
+[25:58.96] filling machine operations. Then there's
+[26:01.28] machine feeders. Then there's
+[26:03.12] dishwashers. The maid that comes to your
+[26:05.04] house, washes dishes. It's going to be
+[26:06.80] very ironic that they end up having a
+[26:08.48] job and many of us might not. Uh next is
+[26:11.28] cement masons and concrete finishers.
+[26:13.60] Next is supervisor of firefighters. Next
+[26:15.84] is industrial truck tractor operators.
+[26:18.48] Then there's optalmic, which is eye
+[26:20.80] medical technicians. Then there's
+[26:22.48] massage therapists. Somebody who's
+[26:23.84] giving you a massage. By the way, a very
+[26:25.52] interesting stack. Most of the top rated
+[26:28.00] massage people on an urban clap, you
+[26:30.56] know, rarely I will get a massage and
+[26:31.92] then I will ask the person how much
+[26:33.04] money. It's kind of like I ask them how
+[26:35.04] well they're doing, right? How much
+[26:36.00] money they make. Like and and I asked
+[26:37.12] this to everybody. Like in New York, I
+[26:38.80] asked a taxi driver this and he said he
+[26:40.64] was making 1.5 crores a year, which is
+[26:42.48] which actually turned out to be true
+[26:43.44] because I asked multiple taxi drivers in
+[26:44.96] New York how much they were making. They
+[26:46.16] all make way more than you know uh than
+[26:48.72] you expect them to make. But the massage
+[26:50.24] therapist and this is what surprised me
+[26:51.76] in Bangalore is making roughly one and a
+[26:54.16] half two lakhs a month which is not a
+[26:55.92] bad salary but again it is an
+[26:57.92] entrepreneurial job cuz there are some
+[26:59.52] months where you make two lakhs and some
+[27:01.44] months where you make zero right and
+[27:03.60] this is the thing right the more
+[27:04.72] discovery you have the higher up you are
+[27:06.32] on urban clap the more likely you get
+[27:07.76] visibility the more likely you get
+[27:09.20] orders so entrepreneurship has a very
+[27:11.12] strong relationship with distribution
+[27:12.64] the more distribution the more eyeballs
+[27:14.16] you have the more likely you will get
+[27:15.76] more orders and more deals right in our
+[27:17.36] business it's deals in the massage
+[27:19.04] business. It's getting clients and I
+[27:21.04] wouldn't be surprised if the top rated
+[27:22.48] massage therapist makes a lot of money,
+[27:24.80] right? The person who's most visible and
+[27:26.64] probably is booked out all the time. So,
+[27:28.32] yeah, massage therapists are going to be
+[27:29.60] around. Next is surgical assistants.
+[27:31.52] Somebody who's doing surgery, but you're
+[27:32.72] standing next to the surgeon. Then
+[27:34.16] there's tire builders. Then there's
+[27:35.60] roofers. Then there's gas compressor,
+[27:38.16] gas pumping station operator, which one
+[27:41.12] day I might be. Then there is people in
+[27:43.12] the oil and gas space. Maids and
+[27:45.60] housekeeping cleaners. Makes sense. Like
+[27:47.92] I'm really hoping they stick around
+[27:49.68] while you know a lot of the uncles and
+[27:51.52] aunties who purposely keep them below a
+[27:53.28] certain you know range I've seen that a
+[27:55.04] lot and that's very classist behavior
+[27:56.96] right which is oh a maid shouldn't make
+[27:59.04] this much money or this or that like you
+[28:00.72] know what we are all subject to supply
+[28:02.48] demand the reason software engineers
+[28:04.00] made so much money and the reason you
+[28:05.44] know content creators made some money
+[28:06.80] for a while it's all supply demand right
+[28:08.80] it's all the world needed more software
+[28:10.80] engineers the world had space on YouTube
+[28:12.72] for people to come out and do content
+[28:14.24] fine but supply of good talent in many
+[28:17.04] of spaces that have given people that
+[28:19.20] you know that class that oh I am better
+[28:20.80] than other people that goes away right
+[28:22.88] and it goes back to pure economics right
+[28:25.28] so if the demand for maids and
+[28:27.36] housekeepers continue to go up while the
+[28:29.52] demand for other roles go down
+[28:31.44] especially digital roles go down I think
+[28:33.20] it's it's a good thing and I feel it
+[28:35.44] will normalize this dignity of labor
+[28:37.44] that India has never had we need dignity
+[28:39.76] of labor if you go to the US there's
+[28:41.04] dignity of labor a petrol pump person is
+[28:43.12] seen in the same light as a restaurant
+[28:45.20] owner is seen in the same Right. As a
+[28:47.20] software engineer, I think it's
+[28:48.56] important for us to have that dignity of
+[28:49.84] labor in India and it truly makes
+[28:52.40] everyone respect each other a lot more,
+[28:54.40] right? Instead of this weird new class
+[28:56.48] system that we ended up creating. Then
+[28:58.24] there is uh paving surfacing people.
+[29:00.80] Then there's logging equipment. Then
+[29:02.64] there's motorboat operators. Then
+[29:04.40] there's floor sanders and finishers,
+[29:06.32] people who do your floor. Then there's
+[29:07.76] pile driver operators, rail track
+[29:09.84] laying, foundry mold and core makers,
+[29:12.32] water treatment plant and system
+[29:14.16] operators, a bridge and lock tenders,
+[29:16.64] and dredge operators. You know what this
+[29:18.64] signals to me? This signals to me we are
+[29:20.80] ending, we're entering the era of the
+[29:23.20] end of knowledge work. Cuz all the jobs
+[29:25.52] that look like they're going to be
+[29:26.48] automated are people who have studied
+[29:28.16] something, who have knowledge in their
+[29:29.44] brains, and who are communicating that
+[29:31.44] knowledge and connecting things on a
+[29:33.60] computer. That era is probably coming to
+[29:35.76] an end. And I said this on a podcast
+[29:37.84] with Vant Trusty like 5 years ago right
+[29:40.16] or four years ago where I said that it's
+[29:42.48] easier for people to automate YouTube
+[29:44.24] thumbnails and this was before a time
+[29:46.24] you know we had all this AI technology
+[29:48.08] out there right because I had played
+[29:49.28] with Deli 2 at that time I had an early
+[29:50.88] preview we have so much more data on
+[29:52.40] thumbnails that if you want to create a
+[29:53.60] model on creating thumbnails we can
+[29:55.20] easily do it but the minute in the real
+[29:57.12] world you want to have somebody who is
+[29:59.04] holding a camera and walking around
+[30:00.96] taking specific shots or you have
+[30:02.64] somebody who's laying rail tracks we
+[30:04.40] simply don't have enough data on that
+[30:06.24] movement on how they lay it, how they're
+[30:08.24] thinking about it. But for a long time,
+[30:10.24] I know why digital jobs have looked
+[30:12.72] cooler to everybody than physical jobs.
+[30:15.36] Like I'm pretty sure of why this
+[30:16.88] happens, okay? It's because the people
+[30:18.40] with digital jobs use social media far
+[30:20.56] more than the people with physical jobs.
+[30:22.16] And if you're doing a job, you're going
+[30:23.92] to make it sound cool, right? If you're,
+[30:26.48] you know, somebody who has access to
+[30:28.00] media, who can create their own media
+[30:29.92] and communicate well, then you can tell
+[30:31.60] stories better. And the world is driven
+[30:33.12] entirely by stories. So the better you
+[30:34.80] are a communicator, the better stories
+[30:36.08] you can tell, the better you're going to
+[30:37.12] make yourself and your job look right
+[30:39.28] that is the entire thesis of this. And
+[30:41.52] there are lots of people who are like
+[30:42.48] hey on Twitter people are thinking like
+[30:44.16] this or on Instagram people are thinking
+[30:46.16] like this or on Reddit people are
+[30:47.20] thinking like this. I'm like it's never
+[30:48.40] representative of the entire population
+[30:50.08] cuz the population that's terminally
+[30:51.76] online is a minority. You know why
+[30:53.68] software developers have one of the best
+[30:55.84] narratives and had one of the best
+[30:57.12] narratives for almost two decades is
+[30:58.88] because when the internet first came
+[31:00.24] about the first group of people who are
+[31:02.64] on the internet everywhere from hacker
+[31:04.16] news to even Reddit to old MSN to old
+[31:06.88] AOL when I was a kid when I was 7 8
+[31:08.64] years old and I first got access to a
+[31:10.00] computer it's mostly people in software
+[31:11.92] or it's people who are very native to
+[31:13.28] computers gamers. So it was that
+[31:15.68] audience and of course they're going to
+[31:17.20] say good things about their jobs. Of
+[31:18.96] course they're going to go out and say
+[31:19.92] our job is superior. What we're doing is
+[31:21.36] superior. It's a status thing, right?
+[31:22.72] And that happened for so long that we
+[31:24.48] kind of forgot that all jobs are
+[31:26.40] dictated by supply demand. Can you do
+[31:28.08] something that is fundamentally rare,
+[31:30.24] then you'll make money today? If you're
+[31:31.60] a top AI researcher, you make $100
+[31:33.12] million a year because it's a rare
+[31:35.12] skill. It doesn't have to do with the
+[31:36.64] fact that you are an AI developer or you
+[31:39.44] are in this field or you're doing this
+[31:40.88] or you're doing that. It is how rare is
+[31:42.88] the skill that you have and is it easily
+[31:45.04] available in the market. That's it. We
+[31:47.04] all are subject to the laws of economics
+[31:49.92] and I have said this for three years
+[31:52.08] people you know it's very hard sometimes
+[31:53.60] to communicate with the audience right
+[31:54.96] because for three years I've said we
+[31:56.16] have an over supply of software
+[31:57.28] engineers we're producing so much of
+[31:58.64] them that we're breaking the supply
+[31:59.84] demand curve and that's why TCS is
+[32:01.60] laying off and so many software
+[32:02.56] developers in India right now actually
+[32:04.08] not just in India but all over the world
+[32:05.36] are having a hard time finding jobs
+[32:07.04] because we made it really cool and then
+[32:09.20] everybody went out and did it and
+[32:10.80] remember I studied computer science and
+[32:12.08] engineering in college right so everyone
+[32:13.92] went out and did it and then when you
+[32:15.20] have a huge over supply you simply don't
+[32:16.64] have enough roles for those people. Now
+[32:18.32] if everyone hates the idea of software
+[32:20.32] engineering and nobody does it in 5
+[32:22.80] years even with AI the role will be
+[32:24.80] empty and then suddenly the demand will
+[32:26.56] go up again. we are in this economic
+[32:29.20] pendulum right like supply demand supply
+[32:31.60] demand and I feel that we simply don't
+[32:34.32] have at this even with the models right
+[32:36.00] we simply don't have enough of a supply
+[32:38.00] of data around how brick layers do their
+[32:40.48] job or machine operators do their job
+[32:42.40] and we don't have good models that can
+[32:43.84] simulate what they do but the day
+[32:45.28] robotics gets good and those models get
+[32:47.20] good and they are able to compete with a
+[32:49.04] human being then everything in this
+[32:50.80] document changes and one last thing I
+[32:52.56] want to tell you right even with this
+[32:53.76] document if you are top 0.1% % of your
+[32:57.28] at your job or top 1% into your job.
+[32:59.36] Most people in the top 1% of their job
+[33:01.04] do synthesis. They don't just do one
+[33:02.96] thing. Then if if if you work in a news
+[33:05.68] organization and you are top 1% of your
+[33:07.92] job, you're not just writing news.
+[33:09.36] You're communicating with stakeholders.
+[33:10.96] You are talking to your investors, you
+[33:12.64] are making a phone call to a person, a
+[33:15.04] source that you know who and you're
+[33:16.40] bringing that source, integrating that
+[33:17.60] source in whatever you do. It's a
+[33:19.04] synthesis job. You're doing multiple
+[33:20.32] things. You're not just like a monkey
+[33:22.32] sitting down and writing text. Same with
+[33:24.32] software engineering, right? If you're a
+[33:25.52] top 1% software engineer, you know, a
+[33:27.44] lot of it is is figuring out what needs
+[33:29.76] to be built in the first place. What's
+[33:31.20] the approach to build this? What are the
+[33:32.64] constraints? How much time do we have?
+[33:33.84] What kind of team can I put together?
+[33:35.04] Can I do I know a team, right? Do I know
+[33:36.80] how to use these bots? How much of it
+[33:38.32] should be bots? How much of it should be
+[33:39.44] real human beings? What database do I
+[33:41.12] use? All of these are synthesis roles.
+[33:43.28] They are not just doing one thing.
+[33:44.72] There's a reason that the top 1% of
+[33:46.40] software engineers don't actually
+[33:48.16] maintain their GitHubs because they have
+[33:50.08] so much work on their plate that they
+[33:52.32] would rather hire somebody to write code
+[33:54.64] and they would sit on top of them and
+[33:56.08] manage them. In fact, Carmarmac said
+[33:57.68] this, right, which is he said that the
+[33:59.12] highest leverage activity I can do is
+[34:00.56] actually hire people and manage them,
+[34:02.40] not write the code myself, right? So,
+[34:04.40] this is something that if that you need
+[34:06.40] to really take into heart if you want to
+[34:07.76] be in a job, you need to be top 1%, top
+[34:09.84] 5%. And it's not that hard to be top 1%,
+[34:12.32] top 5%. We're entering an era where the
+[34:14.64] top 1% doesn't mean you're the best at
+[34:16.64] what you do. Your skills are the best at
+[34:18.32] one specific narrow domain. It is
+[34:20.24] actually that you can do all of these
+[34:21.84] synthesis tasks. These five 6 10 things
+[34:23.92] that is required of an executive. And in
+[34:25.60] companies we have this role right CXO,
+[34:27.68] CEO, COO, CPO, whatever it is. The
+[34:30.88] minute you have that role or a VP of
+[34:32.88] something, your job is synthesis. The
+[34:34.72] job is to put all these things together
+[34:36.08] and handle crisis and keep the business
+[34:38.00] afloat no matter what. You are tied to
+[34:40.32] the outcome of the business. You are
+[34:42.00] tied to whether the business does well
+[34:43.28] or does badly. And people have forgotten
+[34:44.88] this. We've had the people in HSR now
+[34:46.56] who have spent 10 years in unprofitable
+[34:48.32] startups. They've never worked in a
+[34:49.60] startup that has made a profit. Yet
+[34:51.04] every year their salary keeps going up.
+[34:52.56] Nobody has stepped up and asked why. And
+[34:53.84] AOS has been profitable for 3 years now.
+[34:55.84] We've been profitable since almost the
+[34:57.60] first week we started doing this, we've
+[34:58.80] been profitable. And we're 400 employees
+[35:00.32] now. It's a very different constraint.
+[35:02.24] So my belief is the more you care about
+[35:04.72] the outcome of the company. And Steve
+[35:06.00] Jobs has a good quote on this which is
+[35:07.36] he said between the janitor between the
+[35:09.28] cleaner and the executive the person
+[35:11.60] running the company excuses go away. A
+[35:14.00] janitor can give an excuse. A cleaner
+[35:15.92] can say bro I couldn't clean the room
+[35:17.44] because the door was locked. But
+[35:18.72] somebody who's a VP level of a company
+[35:20.24] somebody who's responsible for the
+[35:21.20] outcome of the company can't say that.
+[35:22.48] That person has to pick up the phone
+[35:23.84] find out who has the keys. If the keys
+[35:25.60] are not there, ask call somebody from
+[35:27.12] outside, get the door broken down and
+[35:29.20] create new keys and then get the room
+[35:30.96] cleaned. Whether they do it themselves
+[35:32.24] or hire somebody else to do it or use a
+[35:33.76] bot doesn't matter. But the job is to
+[35:35.12] clean the room. And we are entering a
+[35:36.72] world where outcomes matter a lot more
+[35:38.56] than inputs. Everyone on YouTube
+[35:41.04] especially people who are learning today
+[35:42.40] are very input driven which is should I
+[35:44.48] study this? Should I do DSA? Should I be
+[35:46.48] good at these 10 questions? Should I
+[35:48.00] study this? Should I be this? Should I
+[35:49.52] do this? Should I learn the skill? That
+[35:51.20] era is over. Today we're in the era of
+[35:53.04] outcomes. What can you create? Like
+[35:54.72] whenever somebody puts out a really good
+[35:56.00] video, I'm like, "Oh, these this person
+[35:57.44] had to do these five different things to
+[35:58.64] put out a full video." Whenever a person
+[36:00.40] makes an app and they actually put out
+[36:01.84] an output of their app, I'm like, "Okay,
+[36:03.12] this person knows how to do this."
+[36:04.40] That's why on Twitter these days, when
+[36:06.24] somebody goes out and talks about
+[36:07.20] inputs, like, "Hey, I learned this cool
+[36:09.28] technique or, you know, I'm studying
+[36:10.88] this cool thing or, oh, this person
+[36:12.40] doesn't know this technique." Uh,
+[36:13.76] everyone looks down on them today cuz
+[36:15.36] everyone has realized the world is now
+[36:16.88] about outcomes. And this entire paper is
+[36:19.44] about doing specific jobs in terms of
+[36:22.16] inputs because the AI will do the
+[36:23.76] inputs. It'll keep skill maxing. And
+[36:25.44] there's no nothing you can do to compete
+[36:26.88] with the next GPD6. you know, everything
+[36:28.64] that all the money that's being poured,
+[36:30.08] you and I can't compete on skill, but we
+[36:32.16] can compete on outcomes. If there's one
+[36:33.92] thing you take away from this video, it
+[36:35.44] is that even if you're in one of those
+[36:37.12] high-risk jobs, the minute you're
+[36:38.48] focused on outcomes, you'll do just
+[36:40.24] fine. That's it for me. Hope you learned
+[36:43.28] something. Bye.

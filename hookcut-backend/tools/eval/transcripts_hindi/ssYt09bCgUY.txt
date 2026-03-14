@@ -1,0 +1,171 @@
+[0:00.16] One of the most exciting AI apps for
+[0:02.08] developers in 2026 is Claude. No, not
+[0:05.04] that Claude, but Claudebot, a free and
+[0:07.60] open- source project that's not just
+[0:09.28] another lame chatbot, but a tool that
+[0:11.28] takes action in the real world 24 hours
+[0:13.52] a day, 7 days per week without smoke
+[0:15.92] breaks. And it does this while
+[0:17.28] remembering everything and will hit you
+[0:18.96] up on Telegram or WhatsApp as it
+[0:20.72] automates your entire life. Over the
+[0:22.40] last few weeks, everybody's been going
+[0:23.92] crazy over it. It's racked up over
+[0:25.68] 65,000 GitHub stars in record time and
+[0:28.40] caused Mac Mini sales to go through the
+[0:30.16] roof, selling out everywhere. In today's
+[0:32.24] video, we'll take a hands-on look at
+[0:33.84] everything it can do. But its popularity
+[0:35.84] has already created some problems.
+[0:37.52] Earlier this week, Anthropic, a company
+[0:39.68] that believes open- source AI is too
+[0:41.76] dangerous for the common man, woke up
+[0:43.44] and chose violence. Claudebot sounded
+[0:45.60] too similar to their beloved Claude, so
+[0:47.68] they threatened to break the developers
+[0:49.12] knees with a lead pipe if they don't
+[0:50.64] change the name. So now Claudebot is
+[0:52.56] officially called Maltbot. Actually, no.
+[0:54.64] Wait a minute. Maltbot. That name sucks.
+[0:56.72] Today, they changed the name once again
+[0:58.16] to its final form, OpenClaw. The same
+[1:00.72] dangerous AI assistant with a new
+[1:02.48] lobster identity. It is January 30th,
+[1:05.20] 2026. And you're watching the code
+[1:07.28] report. OpenClaw was created by Peter
+[1:09.60] Steinberger, the founder of the
+[1:11.28] developer tools company PSDFKit, aka
+[1:14.08] Nutrient. But just look at this dude's
+[1:15.92] unhinged GitHub profile. It's less of a
+[1:18.08] resume and more of a heat map of pure
+[1:20.16] uninterrupted software obsession. What's
+[1:22.48] crazy is that this guy retired and then
+[1:24.40] came back for an encore by giving us
+[1:26.16] Moltbot for free, a tool written in
+[1:28.00] Typescript that wraps Claude and GPT5 to
+[1:30.72] stay alive 24/7. It can manage your
+[1:32.96] calendar, clean up your email, run
+[1:34.88] scripts, find out how much money you're
+[1:36.56] losing in the stock market and deploy
+[1:38.24] broken code with absolute confidence.
+[1:40.08] And best of all, it can do all of this
+[1:41.76] from your own tiny self-hosted VPS, a
+[1:44.40] Raspberry Pi, or even a Mac Mini if you
+[1:46.64] really want to overdo it. There's no
+[1:48.00] reason to pay another random startup $29
+[1:50.32] per month for the privilege. But to
+[1:52.16] understand its full power, let's put it
+[1:53.92] to work right now. The first step is to
+[1:56.00] install it, which can be done with a
+[1:57.44] single command on any system, although
+[1:59.28] Linux would be the preferred route. Once
+[2:01.36] installed, you'll have access to the
+[2:03.20] clawbot or moltbot command or the open
+[2:05.92] claw command if you live in the present.
+[2:07.36] And the first thing you'll want to do is
+[2:08.72] go through onboarding. It is going to
+[2:10.48] request that you read the security doc
+[2:12.08] about all the risks involved, but I like
+[2:13.92] to live dangerously. So, let's move
+[2:15.60] right on to the next step by hooking up
+[2:17.28] an AI model provider. You can use
+[2:19.20] anything you want here, but I'm going to
+[2:20.72] go ahead and drop in my Anthropic API
+[2:23.04] key. The Anthropic API does cost money,
+[2:25.36] but you could easily use a free open-
+[2:27.20] source model here as well. Now that
+[2:28.80] that's done, the second major component
+[2:30.72] is hooking up some kind of messenger app
+[2:32.72] like Telegram, Slack, WhatsApp, Discord,
+[2:35.52] etc. I'm going to go with Telegram,
+[2:36.88] which is really easy to set up. Just
+[2:38.56] open up your Telegram Messenger and
+[2:40.32] start a chat with the bot father. It'll
+[2:42.16] have you select a name for your bot and
+[2:43.76] then eventually give you an access
+[2:45.12] token, which is like a password that you
+[2:47.04] want to keep safe. Go ahead and give the
+[2:48.40] token to Moltbot. Then the next thing
+[2:49.92] it'll ask you for is to configure some
+[2:51.84] skills. It has a bunch of built-in
+[2:53.36] skills or you can bring your own. And
+[2:55.04] there's even a thing called MoltHub with
+[2:56.72] a bunch of other pre-built skills
+[2:58.24] depending on what you want this thing to
+[2:59.68] do. And then finally, it'll ask you
+[3:01.44] about hooks. Hooks allow you to tap into
+[3:03.52] different life cycle events that happen
+[3:05.12] as this tool runs, which is really
+[3:06.88] useful if you want it to keep memories
+[3:08.48] about things that happen in previous
+[3:09.92] sessions or trigger follow-up
+[3:11.44] automations when something important
+[3:13.04] happens. That takes care of the initial
+[3:14.88] setup, which then brings up this gateway
+[3:16.80] dashboard where you can manage
+[3:18.24] everything. It has an interface for
+[3:19.76] basic chat along with tons of config
+[3:21.60] settings to customize basically
+[3:23.20] everything. That's cool and all, but our
+[3:24.96] goal is to use Mulbot through Telegram.
+[3:26.80] And to do that, we need to go into
+[3:28.24] Telegram and send a message to the bot
+[3:30.40] we created with the bot father earlier.
+[3:32.24] You'll notice initially it says access
+[3:34.24] not configured. And we'll respond with
+[3:36.00] this pairing code. What we have to do is
+[3:38.00] take that pairing code, go into the
+[3:39.52] terminal, and run this command. And now
+[3:41.52] we're good to go. Now we can start
+[3:43.04] sending messages and it will respond
+[3:44.80] with Anthropics Claude as the backend AI
+[3:47.36] model. And now we can start refining its
+[3:49.28] personality by simply chatting with it.
+[3:51.12] I'll go ahead and name it assistant to
+[3:52.80] Jeff and tell it to behave like a casual
+[3:54.88] gremlin with the fire emoji. But what's
+[3:57.04] really awesome is that we can now start
+[3:58.72] building automations directly in the
+[4:00.40] chat. Like maybe I want to check and see
+[4:02.08] how my investment in Microsoft is doing.
+[4:04.00] We can ask Moltbot through Telegram and
+[4:05.84] it turns out it's not doing so well. But
+[4:07.76] it's not just going to pull this data
+[4:09.12] once. We now have an automation set up
+[4:11.04] in the background to keep track of this
+[4:12.56] stock. And when it moves significantly,
+[4:14.32] we'll get a message on Telegram. So now
+[4:16.32] there's no need in my life to go check
+[4:17.84] this stock manually. But unfortunately,
+[4:20.00] because I lost so much money in
+[4:21.28] Microsoft, I now need to get a real job.
+[4:23.36] So I might go ahead and install this
+[4:24.96] skill that will automatically generate
+[4:26.72] interview questions for software
+[4:28.16] engineers. But that's just the tip of
+[4:29.76] the iceberg of what's possible here.
+[4:31.36] It's an amazing tool you'll definitely
+[4:32.80] want to try out. Kind of like Tracer,
+[4:34.80] the sponsor of today's video. The Tracer
+[4:36.88] is an agent orchestration layer that
+[4:38.72] makes your coding agents a lot better at
+[4:40.56] building real world software. You start
+[4:42.32] by telling it what you want to build and
+[4:44.08] Tracer's new epic mode will ask you
+[4:46.08] follow-up questions to create a series
+[4:47.84] of specs and tickets. It just like real
+[4:49.84] engineering teams when they plan an
+[4:51.28] epic. Then it passes all of that context
+[4:53.60] to your favorite coding agent and tracks
+[4:55.44] the progress of each ticket in your
+[4:56.88] sidebar. The tracer uses a smart
+[4:58.88] orchestration system called Bart Simpson
+[5:01.20] that tracks what's actually happening
+[5:02.80] under the hood and corrects agents the
+[5:04.80] moment they drift. instead of just
+[5:06.40] blindly spamming more loops. If you want
+[5:08.16] to get more out of your coding agents in
+[5:09.68] 2026, try out Tracer's new epic mode for
+[5:12.56] free with the link below. This has been
+[5:14.24] the Code Report. Thanks for watching and
+[5:16.24] I will see you in the next one.

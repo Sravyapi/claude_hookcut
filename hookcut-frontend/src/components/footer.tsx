@@ -14,9 +14,11 @@ const FOOTER_SECTIONS = [
   {
     heading: "Resources",
     links: [
-      { href: "/blog", label: "Blog & Case Studies" },
+      { href: "/blog", label: "Blog" },
       { href: "/how-it-works", label: "How It Works" },
       { href: "/use-cases/youtube-creators", label: "Use Cases" },
+      { href: "/case-studies", label: "Case Studies" },
+      { href: "/blog/18-types-of-video-hooks", label: "18 Hook Types" },
     ],
   },
   {
@@ -26,6 +28,7 @@ const FOOTER_SECTIONS = [
       { href: "/klap-alternative", label: "HookCut vs Klap" },
       { href: "/vizard-alternative", label: "HookCut vs Vizard" },
       { href: "/submagic-alternative", label: "HookCut vs Submagic" },
+      { href: "/blog/best-youtube-shorts-makers-2026", label: "Best Shorts Makers 2026" },
     ],
   },
   {

@@ -1,0 +1,318 @@
+[0:00.04] all right data structures and algorithms
+[0:01.64] in 2024 I do one video every year where
+[0:04.36] I share my thoughts on DSA um how did I
+[0:07.24] learn it how much do I use it today how
+[0:09.72] much is it asked in remote software
+[0:11.44] development interviews and do you need
+[0:13.12] it really if you want to you know get a
+[0:15.56] remote job Fang otherwise we'll talk
+[0:17.28] about all of that in this video let's
+[0:18.88] get right into it the first point to
+[0:20.72] keep things off how did I learn DSA what
+[0:23.40] has been my journey with the DSA I
+[0:26.12] started doing DSA back in 2014 basically
+[0:28.92] when I joined College um the language of
+[0:30.80] choice for me was C++ and this was the
+[0:33.52] only thing I coded for around 6 months
+[0:37.04] basically did not know what Dev is/ how
+[0:39.08] to do Dev um after 6 months is when I
+[0:41.32] got into a college group and started
+[0:43.12] doing development but until then only
+[0:44.92] algorithmic problems solving back then
+[0:46.60] on spge and a little bit of I heard
+[0:49.28] about code forces I don't even remember
+[0:50.88] when I start started doing it um but a
+[0:53.40] combination of these two is what I did
+[0:55.52] for the longest time to get into data
+[0:58.40] structures and algorithms slowly my
+[1:00.64] motivation to do DSA increased a lot
+[1:02.48] when I heard about ICPC and the fact
+[1:04.60] that you can go to a foreign trip if you
+[1:07.32] are going to World Finals um never made
+[1:09.68] to World Finals but at least there was a
+[1:11.72] good goal to keep in mind um in 2015 and
+[1:14.84] 2016 pretty aggressively prepared for
+[1:16.72] ICPC one of these years I've went to the
+[1:18.68] Regionals I totally forgot which one um
+[1:20.80] and then 2016 onwards my interest pretty
+[1:22.72] much dwindled 2016 2017 whatever was my
+[1:25.00] last year preparing for ICPC or
+[1:27.40] participating in ICPC did really bad had
+[1:29.48] a really bad team no preparation at all
+[1:30.96] basically got into dep full time since
+[1:32.44] 10 so how many years did I do DSA end to
+[1:35.08] end if I had to put a number on it I
+[1:37.00] think I did it for 2 years with a decent
+[1:39.88] amount of consistency um and I did it in
+[1:42.80] my final or pre-final semester for
+[1:45.00] around 6 months this was purely
+[1:47.16] interview preparation this was purely
+[1:49.40] ICPC preparation so that has been my
+[1:52.08] high level journey of doing data
+[1:54.00] structures and algorithms never did data
+[1:55.88] structures and algorithms after this um
+[1:57.80] this created a basic foundation for me
+[1:59.92] me so that over the years whatever
+[2:01.36] interviews I've had I've been able to do
+[2:02.96] well in them without repearing or you
+[2:05.24] know going down the lead code grind
+[2:07.00] route that's Point number one point
+[2:08.92] number two is how much of it is asked in
+[2:11.36] remote software development interviews I
+[2:13.72] divide this into three parts freelancing
+[2:15.64] platforms that's platforms like toptal
+[2:18.88] ad Hawk companies basically small
+[2:22.28] companies no CTO for a small CTO 2% team
+[2:25.84] not raised a lot of funds big company
+[2:27.76] seed 2 Series a company all remote
+[2:30.12] freelancing platforms very hard um I
+[2:33.52] would say if I've had one hard interview
+[2:35.88] in data structures and algorithms it's
+[2:37.40] been my top T interview um ad hoc
+[2:39.32] companies no DSA big companies U one
+[2:43.32] very easy round so basically for this
+[2:46.52] and this you don't even worry about DSA
+[2:48.28] U if you've done very basic DSA
+[2:49.92] preparation in college if you've gone
+[2:51.44] through the standard lead code
+[2:52.40] preparation I think you're pretty much
+[2:54.04] sorted for these two you are not sorted
+[2:55.64] for freelancing platforms um
+[2:57.60] specifically topt if I'm being honest
+[2:59.04] there's no other fre Lancing platform
+[3:00.40] I've interviewed for 4 five now that
+[3:02.40] asks DSA this heavily as top tile does
+[3:05.28] but the top tile interview is pretty
+[3:07.00] aggressive all of my friends have been
+[3:08.56] rejected in the DSA round whoever I've
+[3:10.24] referred so this is the only place where
+[3:11.48] I felt my DSA preparation helped me in
+[3:13.80] getting a remote job third Point
+[3:15.32] butterfly effect of data structures and
+[3:17.12] algorithms it seems like a very small
+[3:18.96] thing but at least in my life it has
+[3:20.68] played a pretty big part this is
+[3:22.00] basically a personal story to share K I
+[3:23.80] never would have left onsite jobs or
+[3:26.00] Goldman basically if I did not have top
+[3:28.04] TI for me to you know if I did not have
+[3:30.12] a remote job or more specifically top TI
+[3:32.00] back then um and my top TI interview as
+[3:34.36] I said was extremely hard when it comes
+[3:36.20] to data structur and algorithms so if I
+[3:37.76] did not do DSA back in college I pretty
+[3:39.48] much wouldn't have gotten into a top T
+[3:41.84] which might have led to me not doing
+[3:43.84] remote jobs at all so basically if
+[3:45.20] you're off the thinking okay you know I
+[3:46.68] don't want to do DSA I only want to do
+[3:48.24] Dev a lot of times good Dev companies
+[3:50.44] also end up asking DSA and you might
+[3:52.72] miss out on that good opportunity just
+[3:54.88] because you did not prepare DSA which is
+[3:57.24] you know just a necessary evil you have
+[3:58.68] to go through to so in my life it has
+[4:01.08] played a decent part if I would have
+[4:02.64] formed my top TI interview a lot of
+[4:04.84] things in my life would have been
+[4:05.72] different um so keep that in mind there
+[4:07.84] might be that one random opportunity
+[4:09.80] that you might miss out on Purely
+[4:11.72] because you did not do DSA back in
+[4:13.52] college or you know otherwise so so keep
+[4:15.40] that in mind even though remote jobs May
+[4:17.52] DSA is not that difficult in that one
+[4:19.64] company it just might be all right next
+[4:22.08] Point how to learn DSA I've divided this
+[4:24.76] into a few parts the first point is
+[4:27.56] consistency is key don't do DS say or
+[4:30.00] anything in life uh half-heartedly and
+[4:32.52] you will be very consistent if you have
+[4:34.00] some end goal in mind so maybe have an
+[4:37.08] end goal of an ICBC in mind maybe create
+[4:39.20] teammates or a team for that um
+[4:41.16] generally learning in small groups helps
+[4:43.12] uh and if you have that one core ICBC
+[4:45.24] team there might be one really smart
+[4:46.56] person here that was one person in my
+[4:48.04] team as well who eventually did go to
+[4:49.92] World Finals that guy you know can
+[4:51.60] increase your learning curve by a lot so
+[4:53.76] find a team early and aim for ICPC um do
+[4:56.44] hard problems very easy to do the same
+[4:58.20] problems again and again don't do that
+[4:59.64] solve a lot of contests and more
+[5:01.36] specifically after a contest which could
+[5:03.20] be on code forces or otherwise uh make
+[5:04.76] sure you're UPS solving a lot so you're
+[5:06.04] learning something new and lastly World
+[5:08.04] finalists always have an edge um keep
+[5:09.76] this in mind a person who's gone to ACM
+[5:11.60] ICBC World Finals if they want they can
+[5:13.52] always you know get a f job which is
+[5:15.00] like the bare minimum that they'll get
+[5:16.32] so it does not hurt to have World Finals
+[5:18.40] uh on your resume it's actually a really
+[5:19.76] big thing so if you do really well and
+[5:21.24] if luck is on your side you might reach
+[5:23.04] ACM IPC World Finals which as I said has
+[5:25.24] a snowball effect on your career and
+[5:26.88] even if you don't reach there if you go
+[5:28.32] through this grind of you know preparing
+[5:30.48] for acpc um you will reach a stage at
+[5:33.08] which you don't have to prepare for
+[5:35.20] algorithmic interviews again which is a
+[5:36.88] great situation to be in this brings me
+[5:38.56] to my next point which is as time goes
+[5:40.84] by uh it'll be harder and harder for you
+[5:43.24] to go back to lead code and solve things
+[5:45.12] again this stands very closely with an
+[5:47.32] analogy that my friend gave me which is
+[5:49.00] if you cannot take out 30 minutes for
+[5:51.00] your body for gym in college you will
+[5:53.00] not be able to do it after college life
+[5:54.92] only gets harder you only get busier and
+[5:56.76] that is true for DSA as well if you're
+[5:58.20] in college you have a lot of free time
+[5:59.96] make sure you've built up your
+[6:01.32] fundamentals correctly so that as time
+[6:03.40] goes by you will not need DSA but you
+[6:05.88] will need it when you're switching from
+[6:07.20] one company to another and there's a
+[6:08.36] good chance that in your career of a few
+[6:10.24] years you're switching companies um so
+[6:12.36] you don't want to go back to the
+[6:13.68] notebook and you know start repearing
+[6:15.48] for DSA you should have enough knowledge
+[6:17.04] by then okay you your fundamentals are
+[6:18.56] sorted and you can solve problems by
+[6:20.60] first principles so this is the right
+[6:22.40] time as early as you can learn and you
+[6:24.52] know get away with DSA which is
+[6:26.12] unnecessary EV will do it and eventually
+[6:28.00] as life goes by you will 99.9% not ever
+[6:31.00] use DSA especially the complex
+[6:33.64] algorithms that you're learning for
+[6:35.08] soling core courses D or D but if you
+[6:38.20] have solved those problems uh you can
+[6:40.16] easily get through any data structure
+[6:41.92] algorithms interview in your Lipan which
+[6:43.72] is a great situation to be last point
+[6:46.48] I'm going to share a few questions that
+[6:48.40] have been asked to me in remote job
+[6:50.44] interviews I'm basically going to divide
+[6:52.24] it into two parts ad hoc company
+[6:53.92] interview this is actually a big company
+[6:55.92] um series a um and freelancing platform
+[6:59.04] interview this one was a 1hour interview
+[7:01.32] I solved it in 45 minutes the problem
+[7:03.76] was you've been given a bunch of files
+[7:05.52] for example SL desktop SL
+[7:09.44] desktop SL a.png SL documents SL um b/
+[7:15.40] c/d do jpeg so on and so forth and you
+[7:18.00] have to print out this in a nice file
+[7:20.92] structure basically if you run the ls
+[7:22.88] command recursively whatever you will
+[7:24.56] see as the file structure you need to
+[7:25.88] print it out for example it would
+[7:27.52] basically look something like this
+[7:28.68] desktop and then here inside a.png with
+[7:32.64] like a tab space of two and then you
+[7:34.76] know if there's another desktop here
+[7:36.04] it'll be C D and then e.png so on and so
+[7:40.20] forth you basically need to print out
+[7:41.72] all of these files in a nice directory
+[7:44.36] structure that's inundated based on
+[7:46.00] which directory you're in pretty simple
+[7:48.24] problem ad hog problem um I think you
+[7:49.88] can solve it fairly easily um there were
+[7:51.56] a few variations to it I remember this
+[7:52.80] was the easy thing that was asked and
+[7:54.16] then there was some difficult bit I
+[7:55.28] don't really remember you know you had
+[7:56.68] to put dashes here or something I
+[7:57.92] totally forgot basically an easy ad hog
+[7:59.88] problem on the other hand um the
+[8:01.44] freelancing platform they ask hard
+[8:03.12] interviews they ask hard problems um
+[8:05.04] basically the problem that I remember
+[8:06.52] which I'm if I'm being honest sort of
+[8:08.00] forgetting um because I was trying to
+[8:09.56] solve this before this recording this
+[8:11.64] video and I'm unsure if my solution will
+[8:13.12] work but it was either a 3 cross 3 or a
+[8:14.92] 4 cross4 grid most probably it was 4+ 4
+[8:16.72] but I might be missing something um and
+[8:19.44] given the grid you've been given
+[8:20.92] basically an initial configuration with
+[8:23.28] numbers from you know 1 to9 and a final
+[8:25.60] configuration uh with numbers from 1 to9
+[8:28.16] again but you know 1 2 3 4 4 5 6 7 8 9
+[8:30.84] it's pretty random basically and you
+[8:32.16] have to go from here to here in the
+[8:33.96] minimum number of operations one
+[8:35.24] operation being you either swap
+[8:36.40] horizontally or swap vertically
+[8:38.12] basically if three goes from here to
+[8:39.32] here and four goes from here to here
+[8:40.92] that's one operation or if you know
+[8:42.28] seven goes from here to here and eight
+[8:44.04] goes from here to here that's another
+[8:46.16] operation you can basically swap numbers
+[8:47.48] that are adjacent to each other um this
+[8:49.24] is considered as a single Swap or a
+[8:50.60] single operation give out the minimum
+[8:52.88] number of operations in which you can go
+[8:54.32] from here to here and if there is no
+[8:57.64] variation in which you can go from here
+[8:58.76] to here minus one I think this can be
+[9:00.64] solved via you know some either DP or
+[9:03.16] graphs
+[9:04.20] basically create every variation as a
+[9:06.28] node of a graph and then do a BFS to go
+[9:08.60] from here to here I'm unsure if that can
+[9:10.44] be solved uh if it's a four Cross Four
+[9:12.28] grid because I feel the number of nodes
+[9:14.28] in that graph will be really big so
+[9:15.72] which is I I don't really remember if
+[9:17.08] you know it was a 4 CR 4 or 3 cross 3
+[9:18.64] grid I vely remember the solution was
+[9:20.60] this but I it is skipping my head I feel
+[9:23.16] like I did not use this and you know
+[9:25.16] used DP basically do not remember what
+[9:26.88] the exact problem was more specifically
+[9:28.76] what the constraints were it was it a 3
+[9:30.40] cross 3 or 4 cross4 grid I'm sure either
+[9:32.48] one is solvable um this was a difficult
+[9:34.60] interview I was given 20 minutes to
+[9:36.72] solve it I 15 or 20 something like that
+[9:38.52] I was able to solve it and this was
+[9:39.88] pretty much an anomaly after this I've
+[9:41.92] given almost 10 15 remote DSA interviews
+[9:45.28] and most of them have been fairly simple
+[9:47.40] similar to the first problem here um so
+[9:49.44] now it's at a point where I feel pretty
+[9:51.24] chill giving you know DSA interviews in
+[9:53.24] a remote job the reason for it is I know
+[9:55.28] they're a little too easy if I'm being
+[9:57.24] honest um and mostly like a very simple
+[9:59.48] ad hoc solution if you've done like DSA
+[10:01.04] in India and you know prepared for IBC
+[10:02.76] though that's the high level of how I
+[10:05.04] would prepare for DSA how much of it is
+[10:06.76] needed tldr is you do need it especially
+[10:08.80] if you're targeting a Fang um or maybe
+[10:10.56] you know a bigger company in India um
+[10:12.44] they will ask for DSA probably
+[10:14.16] throughout your life uh preferably do it
+[10:15.96] early and do it well so that you can
+[10:17.68] solve problems via first principles and
+[10:19.40] you don't have to go through the lead
+[10:21.28] code grind again and again when you're
+[10:23.08] going through an interview process
+[10:24.44] that's all I had for this one that was
+[10:25.72] my DSA 2024 video I'll see you guys in
+[10:28.28] 2025 where we'll talk again about DSA if
+[10:31.08] it is relevant by then all right let's
+[10:33.00] end it I will see you guys in the next
+[10:34.56] one bye-bye

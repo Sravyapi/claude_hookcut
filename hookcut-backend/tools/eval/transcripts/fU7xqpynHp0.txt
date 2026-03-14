@@ -1,0 +1,1658 @@
+[0:00.72] Hey everyone, I hope you all are safe
+[0:02.80] and doing good. So in the previous
+[0:04.32] lectures we have discussed methods in
+[0:06.48] Java and this lecture we'll discuss
+[0:08.56] arrays. What are arrays in Java and
+[0:11.44] basically first we will see why we need
+[0:13.52] arrays. That thing is important to
+[0:15.76] understand why we need arrays. Then we
+[0:17.84] will see what are arrays. Then how to
+[0:19.68] declare array? How to initialize an
+[0:21.60] array? How memories are you know memory
+[0:23.76] representation of an array? how the
+[0:25.84] elements of the arrays are represented
+[0:27.68] in the memory and then how to access
+[0:30.40] those elements how to calculate the
+[0:33.44] address the formula to calculate the
+[0:34.96] address and these thing we'll see
+[0:36.24] practically also in this lecture right
+[0:39.28] now first let me just ask you one thing
+[0:42.72] if I say
+[0:45.20] I want to store marks of one student in
+[0:48.56] my class and marks are 98 how you will
+[0:52.32] store in programming kind of Okay, we
+[0:55.52] just you just say that just declare a
+[0:57.92] variable like int and maybe marks
+[1:03.44] is equal to 98. Simple.
+[1:07.20] So in memory somewhere like
+[1:10.56] there is one block of memory would be
+[1:12.80] allocated. The sizes it it is of types.
+[1:15.76] So four bytes would be there. Suppose
+[1:18.24] addresses suppose 1,000 or any address
+[1:21.84] can be there. It is in hexa decimal form
+[1:24.80] but we don't know exactly. So I'm just
+[1:26.56] for simplicity purpose I'm assuming that
+[1:28.24] address is 1,000 or 500 or any address
+[1:30.72] you can take or 2,000 any address there
+[1:33.20] we have this 98. Obviously this would be
+[1:35.44] stored in binary form converted into
+[1:38.88] 32bit binary form and then it would be
+[1:41.20] stored right actually and the name is
+[1:45.04] marks. So the name of this is marks. So
+[1:48.24] three things we have with the variable.
+[1:49.68] This is the logical name, the address
+[1:51.68] and the value. Right? Now I want to
+[1:56.00] store marks of second student. What you
+[1:58.40] will say ma'am? Just create second
+[1:59.92] variable like suppose this is marks like
+[2:02.88] mark one. This is
+[2:07.20] same like marks two and suppose 97 marks
+[2:10.56] are there like this. I want to store
+[2:13.20] marks of five students. So what you will
+[2:14.96] say just create five variables. Simple.
+[2:17.92] But now the twist is in my class I have
+[2:20.64] 60 students. I want to store marks of
+[2:23.20] all the 60 students. Then one way is to
+[2:26.80] create 60 variables and store marks. But
+[2:29.36] that is definitely not a good idea
+[2:32.08] because all okay there are 60 students
+[2:34.64] only. But suppose I want to uh store
+[2:37.76] some data of 1,000 customer or 500 or
+[2:42.40] 1,500 employees then obviously we cannot
+[2:45.68] take we cannot create 1 th00and
+[2:48.32] variables and store data something like
+[2:51.04] this right so there we use some
+[2:55.76] different kind of thing one is array we
+[2:58.64] can use there are some more ways also
+[3:00.96] like list and many things are there that
+[3:03.68] we'll see uh later in this chapter I
+[3:06.56] mean in this course when we'll move
+[3:07.84] further but the simplest one is we can
+[3:10.08] use arrays
+[3:12.16] right under a single variable name we
+[3:15.52] can store suppose in my class I have 60
+[3:18.08] students so under a single variable name
+[3:21.04] I can store marks of all the 60 students
+[3:24.64] no need to declare no need to create 60
+[3:27.28] variables
+[3:29.28] and that is how using arrays
+[3:32.40] so simply I can do What you have to tell
+[3:35.28] like the data type int any data type
+[3:38.64] primitive type you can take int float
+[3:40.88] double or you can say boolean short bite
+[3:45.44] anything right even string is also right
+[3:49.12] uh allowed that thing I'll show uh you
+[3:51.12] know later so first let's take int only
+[3:54.32] and then
+[3:56.96] these brackets square brackets okay then
+[4:01.36] name of the array Then simply name I'm
+[4:04.48] taking suppose marks.
+[4:06.88] This is how you can declare an array.
+[4:12.96] Okay. Int means the data type whatever I
+[4:17.20] will store in this array. Array name is
+[4:19.04] marks. Array name is marks. So I will
+[4:21.68] store int data type. Int data only in
+[4:24.96] this uh marks array. And this these
+[4:28.56] brackets indicate that this is an array
+[4:31.76] of type int having array name marks. So
+[4:35.60] this is just declaration of array. This
+[4:38.24] is just a declaration.
+[4:40.48] Right? No memory has been allocated
+[4:44.32] right now. If you simply write this no
+[4:46.24] memory allocation till now it is just
+[4:48.16] declaration of array. Right? This thing
+[4:50.88] I'll show you. Don't worry. Okay. Now
+[4:55.04] one thing is obviously you have to tell
+[4:57.92] like how many uh how much how many
+[5:00.88] students mark you want to store in this
+[5:03.36] array and that thing we can do and this
+[5:06.08] you can write something like this also
+[5:07.44] like int
+[5:09.52] marks and this is also valid. The square
+[5:13.20] bracket can be after marks both are
+[5:15.36] valid but this is like more of in C we
+[5:18.64] can do this thing and this is C style
+[5:21.36] and this is Java style. So this is
+[5:24.16] modern kind of thing. In Java we
+[5:25.60] generally use this syntax. You can use
+[5:27.28] this also. It's fine. It will not give
+[5:29.20] any error. But I will use this.
+[5:33.28] Okay. In Java. Now obviously you have to
+[5:36.88] tell like marks of how many students you
+[5:39.76] want to store the size, right? So this
+[5:43.68] thing we can tell something like this
+[5:45.44] like int
+[5:47.28] like this then marks is equal to is
+[5:51.76] equal to new keyword then the data type
+[5:56.40] again int then in bracket suppose 60.
+[6:02.32] So this line basically is about
+[6:06.00] instantiating an array. So here we are
+[6:08.40] simply declaring the array. Here we are
+[6:11.20] instantiating the array means we are
+[6:13.84] actually telling the compiler that to
+[6:16.32] allocate memory for this array for how
+[6:20.32] many student or for how many how much
+[6:22.16] data I want to store the size is 60 I
+[6:24.64] have told. So this thing you need to
+[6:26.64] tell at the compile time only while
+[6:29.12] creating an array the size of the array.
+[6:31.44] The size of the array is 60. So 60 int
+[6:35.68] type of value I want to store in this
+[6:38.24] array of name marks. So this line will
+[6:42.08] instantiate this array means memory
+[6:44.24] allocation would be done for like 60 uh
+[6:49.36] stu 60 students marks or 60 int data
+[6:53.28] type 60 int I mean uh numbers or 60 like
+[6:58.32] you can say uh items of int type
+[7:02.88] right. So now if I say what is an array
+[7:07.04] can you simply say and it is simply a
+[7:11.44] data structure mean data structure means
+[7:14.00] simply how the data is to be arranged in
+[7:17.20] computer memory and array comes under
+[7:19.92] data structure because simply we are
+[7:21.28] arranging the data it's simply
+[7:23.20] collection of data in this array we are
+[7:25.36] having marks of 60 students it's just
+[7:28.72] collection of marks of 60 uh you know
+[7:32.16] students right So array is just a
+[7:34.40] collection of data. We are just
+[7:35.84] arranging the data in some way and
+[7:38.64] that's what data structure do basically.
+[7:40.72] So array is a data structure we can say
+[7:43.44] right in Java or uh it is the most basic
+[7:48.16] data structure. There are so many data
+[7:50.08] structure we'll be discussing later but
+[7:51.68] it is the most basic one array
+[7:55.68] right. So array provide a way to store
+[7:59.52] and access see collections of elements
+[8:02.80] of same data type. So first we can say
+[8:08.64] and in Java arrays are treated as
+[8:11.28] objects. This thing you need to remember
+[8:13.92] arrays are objects in Java. In Java I'm
+[8:17.36] telling you this thing because array is
+[8:19.60] a basically a special class in Java. So
+[8:22.24] whenever you create this kind of thing.
+[8:24.40] So this marks is basically an object
+[8:27.20] reference.
+[8:28.80] It's not like that uh we can say that uh
+[8:32.88] actual array object but it is just a
+[8:35.52] object reference. So basically it's an
+[8:38.00] object right like in the previous case I
+[8:40.72] I have uh told you one thing when we
+[8:43.12] were having a class and when we were
+[8:45.12] creating the object of that class or
+[8:47.04] instance of that class right so in that
+[8:50.24] case that name is what object reference
+[8:55.36] we were passing we were having a demo
+[8:57.60] class so demo d so d is what object
+[9:00.00] reference having the reference the
+[9:02.80] actual object is in the heap memory and
+[9:06.40] D is just object reference which is
+[9:08.72] going to reference the actual object
+[9:10.32] means basically storing the address of
+[9:12.48] the actual object and D is stored on
+[9:15.28] stack. So same concept is applied on
+[9:18.96] array also because arrays are also
+[9:21.28] objects in Java. So this is object
+[9:23.28] reference. How these are stored in
+[9:24.72] memory I'll tell you later. Don't worry.
+[9:27.20] Right?
+[9:29.04] But for now I guess the definition is
+[9:31.36] clear to you what is an array and why we
+[9:33.68] basically need array. So we can say that
+[9:36.48] an array is a an array is a fixed size
+[9:40.08] data structure or you can say array is a
+[9:43.04] data structure having fixed number of
+[9:45.44] elements of same type same type right
+[9:49.76] that holds a collection of elements of
+[9:52.00] same data type. These points are
+[9:55.20] important to you know include the
+[9:57.28] definition of the array. It's fixed size
+[10:00.88] first and collection of elements of same
+[10:03.84] data type. These two things are very
+[10:05.52] important
+[10:07.04] right? Okay. So it's like basically a
+[10:09.92] container or it's like a container
+[10:11.76] object. You can say object also that is
+[10:14.48] also fine. If you say in the definition
+[10:16.56] array is a container object which
+[10:18.40] contains fixed number of elements of
+[10:22.24] same data type that is also fine. Or
+[10:24.64] arrow is a data structure which contains
+[10:26.48] fixed number of elements of same data
+[10:28.40] type that is also fine. Right? So as a
+[10:31.52] array is an object also it's a container
+[10:33.28] object that stores multiple values in a
+[10:36.56] basically sequential manner
+[10:40.32] right.
+[10:41.92] So sequential manner means uh all the
+[10:44.88] elements in the in the array is stored
+[10:47.04] in contiguous memory location means one
+[10:49.76] after another like suppose I have in an
+[10:53.28] array suppose I have this these elements
+[10:55.60] 1 2 5 4
+[10:58.80] elements in an array how to store I mean
+[11:01.52] how to initialize an array that I'll
+[11:03.12] show you but for now let's take in an
+[11:05.04] array I am having four elements so in
+[11:07.20] heap in memory
+[11:10.72] memory would be allocated ated and these
+[11:13.60] elements are stored in contiguous memory
+[11:15.68] locations in a sequential manner. First
+[11:18.80] one then two then five then four
+[11:21.76] something like this right and these are
+[11:24.00] of type int right so suppose suppose
+[11:27.76] this first address the base address or
+[11:30.48] the address of the first element or this
+[11:33.20] block has been allocated how many bytes
+[11:35.28] of block
+[11:37.44] how many elements are there four into
+[11:39.20] each element takes how many bytes these
+[11:41.04] are of int type so four bytes so 16
+[11:44.88] block of memory has been allocated and
+[11:46.88] the starting address of this memory
+[11:48.96] suppose 512
+[11:51.60] or suppose 500
+[11:54.08] suppose 500 500 so the next element
+[11:58.24] would start from 504 then 508 512 like
+[12:03.52] this so these are in continuous
+[12:06.32] continuous memory locations sequential
+[12:08.64] manner it's not like that at one element
+[12:11.76] of array is at the memory address
+[12:14.72] suppose 500 obviously address is in
+[12:16.64] hexadimal form I'm just taking 500. You
+[12:18.80] can take any memory address. And next
+[12:21.44] address is at another memory location
+[12:23.60] suppose 1,000. Next is at another memory
+[12:26.08] location maybe suppose 500 2. No, these
+[12:29.60] are in sequential manner.
+[12:32.32] So this is one more property of ar
+[12:34.08] characteristic of array that uh elements
+[12:37.20] are stored in contiguous memory
+[12:38.80] locations like this only.
+[12:42.64] Okay. Now I think definition is clear to
+[12:46.48] you and these are some characteristics
+[12:48.32] like first fixed size. So arrays are of
+[12:53.36] fixed size. Once you create an array its
+[12:55.92] size is fixed. You have told at the
+[12:57.92] compile time only when you're creating
+[12:59.60] an array how much element you want the
+[13:02.00] size 5 10 60 20 100 whatever you want
+[13:06.72] and that much memory would be allocated
+[13:10.24] for that array and that size is fixed
+[13:13.68] you cannot change that
+[13:16.16] right it's not like that you have
+[13:18.40] created an array of size five and now
+[13:21.04] you want to store here six elements it
+[13:24.00] will give you error or If you want to
+[13:27.04] remove one element like I need only
+[13:29.60] three element to store. So just remove
+[13:32.56] two elements. No that is not allowed at
+[13:36.48] runtime. Right? If you want to change
+[13:38.96] the size at the declaration only you can
+[13:41.84] change the size like six or 10 or
+[13:44.08] something else and then again recompile
+[13:45.76] it and then you can do this thing.
+[13:49.20] Okay. I'll show this thing. See in some
+[13:51.36] cases like if you are aware about pi
+[13:54.56] python language and there is one uh
+[13:57.04] concept vectors
+[13:59.20] if you heard about this vector. So these
+[14:01.76] are not of fixed size.
+[14:04.40] If you have declared a vector of size
+[14:06.08] five initially and you want to now store
+[14:10.64] six element then you can store sixth
+[14:13.60] element and automatically the size would
+[14:15.68] be increased automatically. You don't
+[14:18.48] need to specify that I want now size six
+[14:20.64] or 10. No,
+[14:22.88] these are of dynamic size. So autom
+[14:25.52] automatically by the compiler the size
+[14:27.68] would be increased. But in array it is
+[14:31.12] not the case. Array is of fixed size.
+[14:32.88] This is some kind of limitation in array
+[14:36.16] and rather than this we have some
+[14:37.84] dynamic concept also in array that also
+[14:40.24] we can do. We we have array list or some
+[14:42.00] other data structure also that we can
+[14:43.76] use. If you use if you want this
+[14:46.24] property like dynamic type of property
+[14:49.52] right if you want dynamic size then we
+[14:52.08] can use something else but arrays are of
+[14:53.92] fix it size. Second is what? Same data
+[14:56.24] type. Array is all the elements in an
+[14:58.64] array must be of same data type. Suppose
+[15:01.28] you have declared an array of type int.
+[15:04.88] Now you cannot store in this array float
+[15:07.12] value, double value, boolean value or
+[15:08.80] any other data type value. That will
+[15:10.24] give you error. We'll see practically
+[15:12.24] all these things. don't worry and the
+[15:14.48] elements in the array are stored in a
+[15:16.24] specific order like I have told you in a
+[15:18.80] sequential order.
+[15:21.36] So when you access these elements it
+[15:23.28] would be very easy how to access you
+[15:26.56] just have to use the index indexing of
+[15:29.28] array starts from zero. So like 0 1 2 3
+[15:34.08] if you want to access any element so you
+[15:35.92] just write down the name of the array.
+[15:37.52] Suppose name of the array is a suppose I
+[15:40.16] don't know. So a a
+[15:44.00] in this square bracket just use the
+[15:46.24] index. Suppose I I write one. So it will
+[15:48.56] give you the second element because
+[15:52.00] index is one. It will not give you the
+[15:53.68] first element. If you say one, one is
+[15:55.92] index. Index start from zero. So it will
+[15:58.40] give you second element.
+[16:00.80] A of a of two it will give you the third
+[16:04.88] element. A of three it will give you
+[16:06.72] fourth element. If you access a of four,
+[16:09.92] it will give an exception array out of
+[16:12.48] bound because that is out of range. If
+[16:15.84] you access a of four here, the range is
+[16:19.52] from 0 to 3 1 0 1 2 3 you cannot use
+[16:22.96] four. So it will give you an except
+[16:25.04] exception array out of bound exception
+[16:26.88] in Java.
+[16:28.64] Right?
+[16:30.32] So now I I guess till now it is clear to
+[16:32.96] you. Now why do we need arrays? So one
+[16:37.28] thing I have told you simply you can
+[16:40.72] like quickly access individual uh
+[16:45.52] see first let's see this point efficient
+[16:48.64] storage. So array provides you a way to
+[16:51.28] store all the related data at one place
+[16:53.76] only right because all the array
+[16:56.24] elements are stored in continuous memory
+[16:57.84] locations.
+[16:59.36] So it's like when you want to access the
+[17:01.12] elements it will give you easy access as
+[17:03.68] well as it is an efficient storage
+[17:07.12] because it provide you a compact way to
+[17:10.32] store and manage multiple related data
+[17:13.28] values together.
+[17:15.92] Okay. So they are more optimized for
+[17:18.24] memory allocation and access. So arrays
+[17:21.04] are designed in a more optimized way as
+[17:24.16] well as accessing of elements is very
+[17:26.24] easy. You can directly access any
+[17:27.84] element just you have to use index of
+[17:30.32] that index of the array and you can
+[17:33.12] directly access the array elements.
+[17:35.84] You don't need to go step by step.
+[17:37.60] Suppose like something like this uh in
+[17:40.56] linked list in data structure you have
+[17:42.08] to go step by step. Suppose in an array
+[17:44.40] I have like 1 5 0 4 and 10 these
+[17:49.52] elements. So if you want to access index
+[17:51.60] is this element. So you don't need to go
+[17:54.88] from here like first access this then
+[17:56.40] this then this then this. No you can
+[17:57.68] directly access this.
+[18:00.08] So I say direct access or random access
+[18:02.32] is possible in array. How to access this
+[18:04.56] element? Name of the array suppose a. So
+[18:07.68] a and index of this is three.
+[18:11.60] So just use this and you can directly
+[18:13.20] access how to access there is a formula
+[18:15.92] to you know calculate the address of
+[18:18.48] this element directly. that also I'll
+[18:21.28] tell you don't worry right but for now I
+[18:24.48] think it is clear to you how you can
+[18:26.08] access directly right and data
+[18:28.72] manipulation so various operations are
+[18:31.12] there we we will perform on arrays like
+[18:33.28] sorting searching these are easy to
+[18:35.76] perform on arrays so you can easily
+[18:37.92] manipulate the data you can access the
+[18:39.52] data and you can easily manipulate the
+[18:41.20] data right okay
+[18:45.12] now how to declare an array this thing
+[18:48.72] how to declare how to initialize size an
+[18:51.20] array this thing let's see practically
+[18:53.12] and then you will get it better rather
+[18:54.64] than query okay so let's create a new
+[18:58.48] Java class here and we are discussing
+[19:00.48] what array is so let's name it like
+[19:03.60] array demo and in main first we will see
+[19:08.08] declaration
+[19:10.32] declaration of an array
+[19:13.28] and simply you have to write for
+[19:15.68] declaring an array first the type data
+[19:20.24] type of the array suppose I'm taking int
+[19:23.68] so see arrays
+[19:26.08] can be of any primitive type int double
+[19:29.04] float boolean byte short and we can have
+[19:32.80] arrays of any class as well we can have
+[19:35.44] arrays of string we can have arrays of
+[19:37.20] arrays we can have arrays of any class
+[19:40.08] that thing also I'll show you arrays of
+[19:41.92] string arrays of class but for now we
+[19:45.20] will see arrays of primitive types so
+[19:48.00] let's take int or let's take double
+[19:52.32] double
+[19:53.92] and name I'm taking marks that's it. So
+[19:57.52] it is simply declaration of an array and
+[20:00.16] this is what object reference
+[20:05.52] right so this is also fine or if you
+[20:09.52] write something like this I want to use
+[20:12.08] these bracket in this here this is also
+[20:14.48] fine but this it's showing that local
+[20:16.96] variable marks has C style array type
+[20:19.12] declaration so generally in C we use
+[20:21.04] this thing right so in Java we use this
+[20:24.80] but you can use that also if you are
+[20:26.56] comfortable
+[20:27.76] with this kind of thing you can use this
+[20:29.92] also it's fine right we will use this so
+[20:34.16] here me no memory allocation is done it
+[20:37.12] is simply declaration means
+[20:40.72] here the marks is only declared and does
+[20:44.16] not point to any actual array in the
+[20:47.84] memory
+[20:49.68] see marks I have told you arrays are
+[20:52.16] objects right it is basically an object
+[20:55.20] reference we are creating So it is not
+[20:57.20] referring to any actual object in
+[20:59.36] memory. It holds by default the null
+[21:02.24] value
+[21:03.92] until it is initialized. So it is just
+[21:05.60] declaration no memory allocation till
+[21:07.20] now. Okay. Now
+[21:10.56] you want to instantiate the array. How
+[21:14.08] you will do that thing? So let me tell
+[21:16.08] you that thing also. That thing will do
+[21:18.32] with a new keyword. So here the syntax
+[21:22.56] is let's just comment out this thing.
+[21:25.36] And the syntax is same. We use the data
+[21:28.16] type. Then this then name of the array
+[21:31.20] is equals to new keyword. Then the data
+[21:33.92] type and here simply the size. Now
+[21:38.56] memory allocation has been done. Right?
+[21:42.40] So marks is simply the object reference
+[21:46.40] and an array object has been created for
+[21:50.24] five elements of type double. Right? And
+[21:53.60] right now the default value in that is
+[21:57.68] zero 0.0D with default for double is
+[22:02.00] 0.0D for float 0.0 f for int default
+[22:05.84] value is zero for boolean default value
+[22:08.08] is false for character it's/ u000000
+[22:11.52] something like this so default value for
+[22:13.28] double is like 0.0 and 0 D so zero
+[22:17.44] right now we haven't initialized the
+[22:19.84] array this line is what
+[22:23.20] instant we have instantiating an array
+[22:26.08] of name marks of type double memory has
+[22:30.88] been allocated instantiation means
+[22:32.96] memory has been allocated to this array
+[22:35.76] okay now we are going to initialize the
+[22:39.04] array now or for this you can also write
+[22:43.44] something like This just double and this
+[22:48.00] marks simply declaration. Let's just
+[22:52.80] tell me the second approach and here
+[22:55.52] marks is equal to simply we can write
+[22:57.68] down new and double and we can give the
+[23:00.72] size suppose five. This will also do the
+[23:04.08] same task. This thing we have done in
+[23:07.04] the same line but you can do the same
+[23:09.12] task in the in two lines as well. This
+[23:11.68] is what instanti instantiation of this
+[23:14.08] array. So either you can use the single
+[23:16.48] line or you can use this thing in two
+[23:19.76] lines. You can write down the this thing
+[23:22.80] instantiated this array. Now we have
+[23:25.04] done this thing in two lines. Right? So
+[23:27.36] that is also fine. Memory sorry array
+[23:29.60] has not been in initialized here yet.
+[23:32.56] Memory has been allocated. So this line
+[23:35.20] is what? Declaration of the array
+[23:38.40] reference.
+[23:39.92] Right? array references marks and this
+[23:42.40] line is what? Memory allocation with
+[23:45.20] size five.
+[23:48.24] Right? So here this marks this points to
+[23:52.64] the memory location where the array of
+[23:56.80] double
+[23:58.48] are stored. So it is just referring to
+[24:01.20] that memory location. It is not holding
+[24:03.12] the actual value. Right? Now how to
+[24:07.44] initialize an array? So suppose uh let's
+[24:11.20] let's comment out this thing also and we
+[24:13.84] will now just use arrow initializer
+[24:18.48] to initialize the array. Third thing is
+[24:21.20] we are going to now initialize the
+[24:22.96] array. So one way is how to initialize
+[24:25.60] simply we will write down the same like
+[24:27.44] double syntax is same name of the array
+[24:29.92] we are taking marks
+[24:32.08] and one way is new double
+[24:36.96] and here also we will give the list how
+[24:41.28] many element you want like 34.5
+[24:45.04] 78 99.8 8 only three elements I want of
+[24:51.36] type double so this is int but that will
+[24:54.40] not give you any error it will be like
+[24:56.48] 78.0 zero promoted. So this is one way.
+[25:00.80] This is array initializer.
+[25:03.84] Whatever you write down here like the
+[25:06.64] list within these brackets parenthesis,
+[25:10.64] this is known as array initializer.
+[25:14.80] Or if you don't want to write down this
+[25:16.48] thing, we can write down this thing.
+[25:18.40] Something like this. A more simple way
+[25:21.20] is
+[25:23.20] marks. Let's just comment out this
+[25:27.12] otherwise it will give you error is
+[25:28.64] equal to simply the list here. So the
+[25:32.00] same list I'm taking here
+[25:34.88] and that's it. So this is the most
+[25:37.60] simplest way to initialize and declare
+[25:40.80] the array and instantiate this array at
+[25:43.44] the same line.
+[25:45.68] Right?
+[25:47.36] Three ways are there. It just
+[25:49.84] declaration of the array. Then we can
+[25:51.68] use something like this. then you have
+[25:54.08] to assign the value that also I'll tell
+[25:55.44] you but here I'm initializing the array
+[25:57.04] at the same line and this is array
+[25:58.96] initializer
+[26:01.04] so array initializer is basically a
+[26:02.88] shortand a shortand way to declare
+[26:06.64] instantiate and initialize an array in a
+[26:09.92] single step in a single step by
+[26:13.52] providing the values within these curly
+[26:15.36] brackets. So now in this case what we'll
+[26:17.04] do we are not specifying any size. See
+[26:18.96] here also there's no size here also
+[26:20.96] there's no size we have given. So how
+[26:23.04] the size would be calculated? Java will
+[26:25.68] automatically determine the size of the
+[26:27.28] array based on the number of elements
+[26:29.20] you have given. So the size of this
+[26:30.72] array would be 1 2 3. Size of this array
+[26:32.96] would be suppose I write here comma 89
+[26:36.16] would be four.
+[26:38.64] Right? Based on the element the size
+[26:40.40] would be automatically determined.
+[26:43.36] Okay. Now there are some restrictions
+[26:46.56] also. If you think that
+[26:50.56] I want to use an array something like
+[26:52.16] this,
+[26:55.76] let's declare the array and let's just
+[26:58.08] initialize this something like this.
+[27:01.20] Like let's take this list only.
+[27:05.84] What do you think? It will give you
+[27:08.24] error. This is not allowed.
+[27:10.80] Array initializer is not allowed here.
+[27:12.80] This is I told you this is array
+[27:14.16] initializer. Whatever you write here in
+[27:15.76] these the array data this is known as
+[27:18.32] array initializer and this is not
+[27:20.00] allowed here. You cannot use array
+[27:21.68] initializer something like this right
+[27:25.36] because
+[27:27.12] this is what though no memory has been
+[27:29.44] allocated to this marks. It is simple
+[27:31.44] declaration
+[27:33.12] right and we are simply writing marks is
+[27:35.12] equal to this. This marks is just an
+[27:37.92] object reference array reference. it
+[27:40.80] cannot directly store this these values
+[27:43.60] of the array without actually creating
+[27:45.44] an object. Here we haven't created any
+[27:48.08] array object.
+[27:50.16] So you have to create the array object
+[27:52.08] first. How to create? If you change this
+[27:54.32] equal to new, you have to use when you
+[27:57.12] write new keyword then array object has
+[27:59.44] been created.
+[28:01.36] Okay. Now the array object has been
+[28:03.60] created. Suppose we have given here
+[28:05.60] five.
+[28:07.68] Okay. Now the thing is still you cannot
+[28:11.04] use this array initializer something
+[28:12.56] like this like marks the name of this
+[28:14.32] object reference equal to this this line
+[28:16.88] will give is invalid still.
+[28:20.08] So if you want to make changes here so
+[28:22.96] either you can use marks is equal to new
+[28:26.24] double and this you can do or rather
+[28:29.12] than writing here you can just delete
+[28:30.80] this semicolon. This is allowed now
+[28:33.76] declaration of the array and now we are
+[28:36.32] creating the object and we are
+[28:38.08] initializing using array initializer.
+[28:39.84] This is allowed.
+[28:41.68] Okay.
+[28:43.36] So if uh we are using array initializer
+[28:47.60] this kind of thing then this new double
+[28:51.44] or this this kind of thing is not
+[28:53.28] required if if
+[28:57.04] we are declaring and initializing the
+[28:59.84] array in the same line something like
+[29:01.52] this. So in this line we don't require
+[29:03.20] any new double or this kind of thing
+[29:04.96] right but if you are not declaring and
+[29:07.36] initializing in the same line like this
+[29:10.48] then you have to use this new and then
+[29:13.52] data type and this array symbol this is
+[29:15.68] required in this case. Okay. So there
+[29:18.56] are some ways to uh declare and
+[29:20.96] initialize this array. So we can use
+[29:23.52] like we can say we can only use this
+[29:25.44] array initializer at the time of
+[29:28.00] declaration
+[29:30.00] at the time of declaration something
+[29:32.24] like this. Now this is what we have
+[29:35.12] initialized the array and like this. But
+[29:37.20] if we are not having this thing and I
+[29:40.80] have just declared this array something
+[29:44.16] like this and something like this not
+[29:47.28] just declared I have just instant uh
+[29:50.40] instantiated this array something like
+[29:52.08] this.
+[29:54.32] Now I want to assign values.
+[29:57.52] So there is one way how we can assign
+[29:59.60] values. We can do something like this. I
+[30:01.84] have told you we can do one thing
+[30:05.68] uh we can access the array elements with
+[30:08.56] just the name of the array like marks
+[30:11.20] then square bracket and here the index
+[30:13.36] so index always start from zero so at
+[30:15.76] zero element I want to store 45.7
+[30:21.36] then same suppose at first element I
+[30:24.72] want to assign the value 89.9
+[30:28.56] then
+[30:30.24] at fifth Sorry at fifth not uh second
+[30:35.12] I want to store 89 or suppose 99.8 8
+[30:39.60] only three values I have stored.
+[30:42.32] So this is what we are assigning the
+[30:44.16] values here individually to in
+[30:47.36] individual arrays at the zeroth index,
+[30:50.24] one index, second index. This also you
+[30:52.88] can do
+[30:54.72] if you have like less values three, four
+[30:56.88] or five values you can do this thing
+[30:58.00] also individual elements also you can
+[30:59.60] assign something like this.
+[31:02.08] Right? And now if you want to access if
+[31:05.12] you want to print or if you want to
+[31:06.72] access the array elements then simply I
+[31:09.52] have told you how to print in
+[31:11.28] system.out.t To print ln you simply
+[31:14.56] write down the name of the array here we
+[31:16.80] have name of the array marks then in
+[31:19.52] these square brackets write down the
+[31:21.44] index suppose I write one here what it
+[31:24.80] will give you the output what do you
+[31:26.48] think pause the video and think what it
+[31:29.20] will print let's run this select here
+[31:32.40] the current file and let's run this and
+[31:34.48] it will print 89.9 I guess
+[31:37.92] so uh
+[31:40.08] see 89.9 9
+[31:42.72] because one means we are accessing
+[31:46.72] what element
+[31:48.64] the second element index of this is zero
+[31:52.56] index of second element is one. So it
+[31:54.88] will access it will give you this thing
+[31:57.12] like this you can access.
+[31:59.36] Now suppose if you want to access
+[32:03.04] the element at
+[32:05.84] fourth index. So at zero, at 1, at two
+[32:09.04] we have this. At three and at four
+[32:12.64] because the size is five.
+[32:15.28] So how many uh element we can store?
+[32:19.28] Five elements. But we have stored only
+[32:21.84] we have assigned only we have
+[32:23.28] initialized only three elements. Two are
+[32:26.72] remaining. And I want to access four
+[32:28.64] means the last element. What it will
+[32:31.20] give you? We haven't initialized
+[32:33.68] anything. So will it give you some
+[32:35.84] garbage value or what? Let's run this
+[32:38.32] and see. So first it will print 89.9 and
+[32:41.44] then it will print 0.0. I have told you
+[32:43.68] default value would be assigned that
+[32:45.36] default value for double is 0.0.
+[32:48.56] See when you go for search for primitive
+[32:50.32] data types and when you go for this
+[32:52.08] Oracle website oracle.com
+[32:55.52] then it will show the default values
+[32:59.28] by for zero for short zero int 0 long 0
+[33:02.96] l float 0.0 f double this for string
+[33:06.88] null boolean for false and character
+[33:08.96] this. So these are default values. So
+[33:11.60] that is why you are getting 0.0 that is
+[33:13.36] default value right. And one more way if
+[33:16.88] you want to find out the length of this
+[33:18.40] array then there is a field length you
+[33:22.72] can use that thing simply in
+[33:24.40] system.out.print print len if you want
+[33:26.24] to find out length. So the name of the
+[33:28.00] array dot we have length see it's not a
+[33:33.20] method it's just a field just attribute
+[33:36.88] something like this you cannot simply
+[33:38.64] use here this this will give you error
+[33:41.28] like this method call expected and it is
+[33:44.00] public final in length it's not any
+[33:48.56] method it's simply a final
+[33:51.44] field
+[33:53.20] variable kind of thing so simply you
+[33:55.04] have to use marks.length length and it
+[33:56.64] will give you five.
+[33:59.84] So it will give you here see the length
+[34:02.48] is five. Right? Now using length al also
+[34:07.36] we can access like if you want to store
+[34:09.92] this length somewhere else in some
+[34:13.60] element
+[34:15.44] array length.
+[34:18.48] So the marks do.length is now in this
+[34:21.60] variable array length and I want to
+[34:23.92] access this. So marks if you write array
+[34:27.44] length what do you think what it will
+[34:29.60] give you? Pause the video and think what
+[34:32.64] it will print. Let's just comment out
+[34:34.64] all these two lines and I'm just
+[34:36.24] printing this thing.
+[34:38.48] Let's run this and it will show you the
+[34:41.92] exception. Ive told you array index out
+[34:45.04] of bound exception index five out of
+[34:48.08] bounds for the length five because now
+[34:51.12] in array length is five total element
+[34:53.76] are five so the range is from 0 to four
+[34:57.44] so if you want to access the last
+[34:58.96] element that would be array length minus
+[35:01.28] one at this index now it will give you
+[35:03.60] the last element that is zero only
+[35:05.52] because we haven't assigned anything so
+[35:07.60] the last element is zero if you write
+[35:11.04] down here something like this like marks
+[35:12.96] and at fourth index I have assigned
+[35:15.20] something some value 98
+[35:18.56] it will give you 98.0
+[35:20.80] at this time
+[35:22.88] see 98.0 zero. Okay. So like this you
+[35:26.96] can find out length also. And what if I
+[35:29.60] write something like this? Let's suppose
+[35:31.36] I write here I have a variable int n
+[35:35.28] something is equal to six. And rather
+[35:38.56] than here I just write n.
+[35:42.00] This thing is allowed. You can just
+[35:44.40] write down any variable here. But that
+[35:45.92] variable should have some value at
+[35:47.60] first. If you simply have here
+[35:51.52] is equal to this, it will give you
+[35:53.60] error. See variable n might not have
+[35:56.64] been initialized.
+[35:59.12] So you have to tell the size at the
+[36:01.44] compile time only. You are writing n.
+[36:05.04] There is nothing here in n. So you have
+[36:07.92] to give the size. Either you write down
+[36:10.24] some size of this value of this n and
+[36:13.12] now it will work fine. Otherwise you
+[36:16.08] simply write here six that will also
+[36:18.16] work.
+[36:19.76] Okay. Okay. One more thing I want to
+[36:22.40] tell you the type of this array is
+[36:25.68] double right. Now maybe you are saying
+[36:29.36] ma'am you said that we can store same
+[36:31.12] data type. So here we are storing int
+[36:33.04] not double but the thing is int is
+[36:34.96] smaller double is larger. So it will
+[36:37.04] automatically promote this. So it
+[36:39.52] becomes 98.0 that is double. That is why
+[36:42.56] it will not giving you any error.
+[36:45.36] But if I write here, I don't know it
+[36:47.92] will work or not. Let's suppose L.
+[36:51.92] So it will also work. Let's run this and
+[36:54.48] see the output what you will get here.
+[36:56.96] So it will give you 0.0.
+[37:00.56] Why? Because obviously we have done here
+[37:02.80] six. So that is five. If you size is
+[37:06.00] five then only at fourth index we have
+[37:09.28] this value 98.
+[37:11.92] So 98.0 zero only. So it will be
+[37:14.72] automatically promoted to double
+[37:18.00] long data type is smaller double is
+[37:19.60] larger.
+[37:21.36] Okay. But if you take here if you take
+[37:26.00] here int type of array let's just
+[37:28.80] comment out this.
+[37:36.24] I'm taking an int type of array. suppose
+[37:38.88] int and numbers
+[37:42.88] okay so let me just
+[37:46.16] use this only and numbers is equal to so
+[37:50.08] I'm not uh taking this here the size
+[37:53.52] let's just take the values only 1 3 4
+[37:56.48] and 6 and 7 that's it
+[38:00.16] so it can only have int values if you
+[38:02.72] store here 7.8 Eight. See the error
+[38:07.28] provided is double required is int. So
+[38:10.48] only same type of data is allowed. That
+[38:13.44] is kind of a restriction in array. Mixed
+[38:16.88] data type is not allowed. In Python it
+[38:18.80] is allowed. Mixed data type is allowed
+[38:20.56] in the list. You can store int
+[38:23.92] uh even in the same variable name.
+[38:26.32] String int, double everything in Python
+[38:28.88] not in Java. So in Java in arrays we can
+[38:31.84] have only single data type. So this will
+[38:35.04] give you error this kind of thing. If it
+[38:37.52] is int you can have only int. You can
+[38:39.68] take like short or bite because that can
+[38:41.60] be converted to longer. So that is
+[38:44.80] allowed. This thing is not allowed.
+[38:54.64] And one more thing I want to tell you if
+[38:56.80] I if you give here minus 7 the size of
+[38:59.84] the array is minus negative array size.
+[39:02.16] Let's run this and see
+[39:04.56] whether you are getting any exception or
+[39:06.08] something like that. See negative array
+[39:08.00] size exception you will get an
+[39:09.52] exception. So negative size is not
+[39:11.52] allowed. Right? Let's take zero here.
+[39:15.60] Let's run this. You cannot leave it
+[39:17.68] blank. But yeah zero is fine. There's no
+[39:21.92] size of the array. That is fine. But you
+[39:23.76] cannot leave it blank. That will give
+[39:24.96] you error. You cannot take here
+[39:26.64] negative. If I take here 8 suppose l
+[39:30.96] this will also give you error.
+[39:33.76] Provided is long required is int. So
+[39:35.92] here you can have only int type
+[39:38.40] positive. No long double float nothing
+[39:41.68] else. 8.8 this will also give you error.
+[39:45.60] You can have only int. So 68 that is
+[39:48.96] fine. Now while accessing
+[39:53.36] suppose just initialize it here only.
+[39:57.84] Now see this will also give you error.
+[40:00.48] You have given the array initializer
+[40:02.48] three elements and you are also giving
+[40:04.48] the size. Both things are not allowed
+[40:08.72] because when you give array initializer
+[40:10.56] then Java will automatically determine
+[40:12.64] the size of this array using these
+[40:15.84] elements. So explicitly you don't have
+[40:19.36] to give the size. This will give you
+[40:20.88] error. Let's just leave it blank and
+[40:23.60] something like this. Now the size of
+[40:24.88] this is three only. And if here you
+[40:27.68] write here minus1 is equal to 7. I want
+[40:30.64] to assign this. See this also arrow
+[40:33.92] index is out of bound because obviously
+[40:36.16] array index is 0 1 2 and minus1 is out
+[40:39.44] of bound. So it will give you an
+[40:40.80] exception array index out of bound.
+[40:44.80] Right? And here you take one it will
+[40:48.80] work fine. If you take 1 L
+[40:52.08] long number sorry 1 L it will also give
+[40:57.60] you error provided is long required type
+[41:00.48] is int. Here you can always give an int
+[41:03.60] because index will always be an int type
+[41:07.28] from zero till length minus one. Right?
+[41:11.60] So you cannot write here any boolean or
+[41:13.92] float or long value. You have to provide
+[41:16.32] here in the index int value. This thing
+[41:19.76] you need to take care
+[41:22.24] one is fine. So this is what now we are
+[41:25.36] changing at one index. At first we have
+[41:30.80] five and now it has changed to seven. So
+[41:33.20] if you want to access this so how to
+[41:36.48] access numbers and one it will print you
+[41:39.20] the updated value that is seven.
+[41:42.88] Previous it was five but updated is
+[41:44.80] seven. So it will give you seven. So
+[41:46.48] like this you can update this also
+[41:48.00] directly you can update you can access
+[41:49.52] any element and you can update modify
+[41:51.28] that. One more thing you can do like
+[41:53.92] suppose you have you take a uh an
+[41:56.56] element variable short s is equal to one
+[42:00.00] and rather than one here you can simply
+[42:01.76] write s. This will also work fine. Short
+[42:05.12] bite int are allowed here and this is
+[42:07.92] one. So it will be automatically
+[42:09.36] replaced by one and the output would be
+[42:11.52] same. And that is it will give you seven
+[42:13.60] only.
+[42:15.52] Okay. So like this you can play around
+[42:18.16] with this and you can just try out
+[42:19.52] different different kind of things with
+[42:20.72] this array. You know when you will get
+[42:22.72] error when this will work fine. So this
+[42:24.64] kind of thing you have to do now. Okay.
+[42:26.72] One more thing I want to uh show you
+[42:28.72] here is let's just comment out these
+[42:31.44] things and I have an array of this and
+[42:34.32] I'm not going to initialize this right
+[42:36.00] now. I'm just giving the size to five.
+[42:39.28] Now I want to initialize this array at
+[42:41.20] runtime means from user
+[42:44.24] I want to take input from user the array
+[42:46.96] elements from user. So yeah we have we
+[42:49.60] know this thing we have a scanner class
+[42:51.84] you can just create object of this
+[42:54.88] scanner class and now but you have to
+[42:57.44] use here for loop because it's not a
+[43:02.00] single element here we are initializing
+[43:04.64] an array so you have to provide five
+[43:07.28] values. So let's simply print here
+[43:09.84] first.
+[43:11.52] Enter array elements. And now you have
+[43:13.52] to take a loop. Let's take the
+[43:16.08] traditional for loop. There is a for
+[43:18.40] each loop also that also I'll show you.
+[43:20.32] But right now let's take traditional for
+[43:22.08] loop. So int i is equal to index always
+[43:24.80] start from zero. So I'm taking here a
+[43:26.56] zero. We start from zero. Then i should
+[43:29.12] be less than till
+[43:32.56] less than five
+[43:35.28] because the length is five only. So 0 1
+[43:38.88] 2 3 4 it will run till four. Or if you
+[43:42.16] do not want to hardcode this you just
+[43:44.16] find out the length of the array. We
+[43:45.68] know there's one uh field that we can
+[43:49.52] use dot length and it will give you the
+[43:52.88] length of the array and I ++
+[43:55.68] right and here simply we can use uh what
+[43:59.92] the array name numbers have to access
+[44:03.36] here we have to use I the index is equal
+[44:05.84] to scanner dot next int simple
+[44:13.04] so like this we can populate this array
+[44:15.68] at runtime mean from user we can take
+[44:17.92] input
+[44:20.16] right
+[44:22.64] and how to access the array that also I
+[44:24.56] have told you if you want to print all
+[44:27.60] the five elements either you can print
+[44:30.40] one ways you can simply write down this
+[44:32.72] line uh multiple time like this and the
+[44:37.68] name of the array numbers and at index
+[44:40.00] zero what is there and Then
+[44:45.20] like this we can print all the four
+[44:47.04] elements. So let's just run this first.
+[44:50.64] So it will first ask you enter the array
+[44:52.80] elements. So it is asking me enter the
+[44:54.80] array elements. I'm entering here
+[44:59.60] like five elements we have entered and
+[45:02.40] it will print all the five elements like
+[45:04.48] this. But rather than writing opposite
+[45:06.64] this is not a good way. The same line
+[45:08.56] this is repetition of the code. Why to
+[45:10.64] repeat? Why to write down why to you
+[45:13.12] know uh do the duplicacy in the code
+[45:15.84] when we have the loops.
+[45:18.40] So the same line we are repeating. So
+[45:20.08] just put this line in loop just iterate
+[45:22.88] the loop from 0 to four because four uh
+[45:27.76] till now we want five numbers five lines
+[45:30.64] you want. So from 0 to four we are going
+[45:32.56] to iterate the loop. Let's just copy
+[45:35.04] paste the same loop here.
+[45:38.64] From zero to numbers.length length I ++
+[45:40.56] and rather than taking the input I'm
+[45:43.44] going to
+[45:45.44] print this
+[45:47.28] but rather than one here you have to use
+[45:48.96] I because I changing I was first zero
+[45:51.68] then I ++ means 1 then two then three
+[45:54.08] then four so let's just comment out
+[45:56.40] these lines
+[45:58.48] now see
+[46:00.32] how compact our code is we have just
+[46:03.04] done these we have replaced these five
+[46:05.36] lines with these two lines loop and one
+[46:07.76] line Okay, let's run this and see you
+[46:10.88] will get the same output or not. So we
+[46:13.44] are just entering the array elements
+[46:15.04] here.
+[46:16.64] Five elements I have entered and you get
+[46:19.04] the five elements 4 5 6 7 8.
+[46:22.96] So like this we can initialize the array
+[46:24.96] at runtime also with the help of scanner
+[46:27.92] object and like this we can print or you
+[46:30.32] can access the array elements. Now let
+[46:33.12] me show you how these memory
+[46:35.44] representation of this array.
+[46:38.16] So this thing we have covered different
+[46:39.76] ways to declare an array. This thing I
+[46:41.52] have al told you how to initialize an
+[46:43.52] array.
+[46:45.12] This is instantiation of this array like
+[46:47.20] this and initialization of the array
+[46:48.64] something like this. This thing we have
+[46:50.08] seen practically what is array
+[46:51.28] initializer? I have told you this is
+[46:53.44] what array initializer right. So like
+[46:56.88] this we are initializing this array with
+[46:59.44] this. Now memory representation of an
+[47:01.92] array this thing. Let me show you
+[47:04.08] practically. I have told you in Java
+[47:07.68] arrays are objects right means when you
+[47:12.96] are creating instance of a class like
+[47:16.00] same way we are creating arrays object
+[47:19.04] of arrays it's same kind of thing and
+[47:22.16] when you are creating object so the
+[47:25.12] objects are stored in the previous
+[47:26.72] lecture I have told you in heap area
+[47:29.52] there are two memory areas stack and
+[47:31.04] heap so same concept will be applied in
+[47:34.96] arrays. If we write something like this,
+[47:40.24] if you write this thing means whenever
+[47:42.96] you write like new keyword in this means
+[47:45.04] memory has been allocated. We have
+[47:48.56] instantiated this array means there are
+[47:52.32] two memory areas. One is like heap. So
+[47:55.20] this is like dynamic it can shrink and
+[47:57.12] expand and one is this is what like
+[47:59.84] stack something like this. So in heap
+[48:02.96] area object one object has been created
+[48:06.40] of this array somewhere
+[48:10.48] right and numbers is what just in this
+[48:14.80] array reference arrays are objects. So
+[48:18.40] in stack obviously this would be in main
+[48:21.52] in main method. So whenever you call a
+[48:24.88] method means stack memory is basically
+[48:27.28] used for method calling and for local
+[48:31.04] variables to store local variables. So
+[48:32.96] whenever any method has been called then
+[48:35.44] in stack one stack frame has been
+[48:38.48] pushed. This is for main
+[48:42.16] in the stack this is main frame
+[48:47.20] main stack frame. So here whatever the
+[48:50.72] local variables for this main those
+[48:53.04] would be stored and something extra
+[48:55.60] information also but that is not of use.
+[48:58.48] We just take care of this thing whatever
+[49:00.72] we are like we are right now using in
+[49:03.04] this case. So here in this main we are
+[49:05.44] having an array like this is the local
+[49:08.40] array reference in this main. So here we
+[49:10.40] have some like for numbers
+[49:13.36] numbers. So here we have some object
+[49:15.84] reference and that is going to refer
+[49:17.52] this object some address suppose I don't
+[49:20.80] know 1 th00and 1,000
+[49:24.08] like this there is no actual value in
+[49:26.56] this object right now because we have
+[49:29.28] just
+[49:31.04] created the object and that would be in
+[49:33.36] heap and the address of this object like
+[49:36.16] base address the starting address of
+[49:37.84] that memory block how much memory five
+[49:41.20] into like how many how many bytes 5 into
+[49:43.76] four that is 20 bytes
+[49:46.16] we say right but in deep if you say
+[49:50.24] again there is a array header also here
+[49:53.28] and the actual values also and for array
+[49:55.68] header that array header contains the
+[49:57.68] length of the array and the type of the
+[49:59.28] array okay here so two things are there
+[50:02.56] array header as well as the values so
+[50:05.76] array header is also going to take some
+[50:07.44] bytes but that is at like lowle kind of
+[50:10.64] thing we're not going to go into that
+[50:12.88] much
+[50:14.00] Because all the memory handling is done
+[50:17.04] by Java itself. We don't have to give
+[50:18.96] that much detailing to memory. There is
+[50:21.52] garbage collector. There is automatic
+[50:23.20] memory management in Java. If you're
+[50:25.68] working in C and C++ then you have to
+[50:28.32] deal like at low level because we deal
+[50:31.04] with memory ourself. Okay. In Java that
+[50:34.08] is not a case. So basically like 20
+[50:36.16] bytes has been allocated and the base
+[50:37.84] address or the uh address of the first
+[50:40.88] block is there here. So it is going to
+[50:44.32] refer to this something like this is
+[50:45.92] happening.
+[50:47.84] And now when you initialize this array
+[50:50.16] suppose I have initialized this array
+[50:53.28] here I'm not taking here five. I just
+[50:55.92] remove this
+[50:58.80] something like this. I have initialized
+[51:00.24] this array. So right now how many
+[51:02.16] limits? 1 2 3 4 5. So in this array
+[51:05.76] object there are something like this. So
+[51:08.40] let's just remove this.
+[51:11.68] It's just a visualization. It's not
+[51:13.60] actually like in memory it is happening.
+[51:15.12] Just a visualization purpose
+[51:19.12] like 3 then 4 then 5 then 6 then 7 and
+[51:22.48] suppose address is 1,000. So next
+[51:26.48] element would be stored at which
+[51:27.76] address,4
+[51:30.08] then 8 then 12 and then 16 like this.
+[51:35.20] because one element is going to take
+[51:36.96] four bytes because it is of int type
+[51:40.88] right if it's double then I guess it
+[51:42.72] will take eight bytes for character it
+[51:44.40] will take two bytes for boolean it will
+[51:46.00] take only one bite but it is int so it
+[51:48.32] is going to take four bytes like this so
+[51:51.68] now it is referring to this array object
+[51:55.28] so actually this is an object array
+[51:57.92] object actual values are stored in the
+[52:01.12] heap area this is heap area
+[52:05.28] and this is just the array reference or
+[52:07.92] the array object reference which is
+[52:09.92] stored in the stack and having some
+[52:13.12] address. Obviously this will also have
+[52:14.48] some address like 8 1 2 3 4 in hexadimal
+[52:18.08] form and it is containing this address
+[52:21.12] of this basically reference or you can
+[52:22.72] say the memory address of the that array
+[52:24.88] object.
+[52:26.96] This is how actually happening not
+[52:30.56] actually exactly we don't know but to
+[52:33.04] somewhat I can say like this is
+[52:34.48] happening behind the scene the memory
+[52:36.96] representation of an array this is the
+[52:39.52] case he keep area and stack area
+[52:42.56] okay now if you want to access any
+[52:46.72] element here so I told you simply go for
+[52:49.60] the index and index is 0 1 2 3 4 index
+[52:55.84] start from zero
+[52:57.76] Now how to access this and how that
+[53:01.20] address would be calculated. If I want
+[53:03.92] to access this one sorry this this. So
+[53:07.52] what you write here the name of this
+[53:09.28] array like numbers
+[53:11.76] and the array index that is two and it
+[53:13.84] will give you five.
+[53:17.04] Now what is the formula? How this
+[53:19.20] address? Because internally at the
+[53:21.84] runtime there is only the address and
+[53:23.68] the value. compiler will check the
+[53:25.68] address only and at that address
+[53:27.20] whatever value is there it will fetch
+[53:28.64] that value and it will give you so at
+[53:30.56] runtime basically it's only the address
+[53:33.28] and the value that's it nothing else
+[53:36.48] no name of the array or something like
+[53:38.08] this so how actually the me address is
+[53:41.36] to be calculated what is the formula how
+[53:43.84] to access these elements actually what
+[53:47.04] is happening so the formula is
+[53:50.64] if you calculate this thing so the
+[53:52.48] formula is the base address of the array
+[53:55.20] in this case the base address we have
+[53:56.88] taken 1,000 so the base address 1,000
+[54:01.12] plus
+[54:02.80] whatever the index you have given index
+[54:05.12] I have given two here so two into
+[54:08.40] whatever the size of each element it is
+[54:11.36] of type int so size of each element is
+[54:14.16] four into 4 so it will give you 10 08 so
+[54:19.28] whatever is there at 10 08 it will give
+[54:21.84] you that value at 108 we have five. So
+[54:24.40] it will give you five. This is the
+[54:26.96] formula. So in general if I write the
+[54:30.08] formula then that is like base address.
+[54:33.60] How to calculate the address? How to
+[54:36.16] find out the address of element of an
+[54:39.44] array? BA is base address. Okay. It's
+[54:42.40] not equal to plus
+[54:46.08] index
+[54:48.32] index number or index simply into
+[54:53.60] size of each element.
+[54:56.40] It's not size of like array or something
+[54:57.92] like this. Size of each element. So
+[54:59.60] element each element is of type int. So
+[55:02.08] size of int is four. This is the formula
+[55:07.60] to calculate address of any element. If
+[55:10.56] you take any element you will get the
+[55:12.96] actual address by applying this formula.
+[55:15.36] If I write here suppose
+[55:17.92] numbers and four
+[55:21.52] then base address 1,000
+[55:25.12] into I is four so the index number is
+[55:28.48] four into size is also four. So it will
+[55:31.12] give you 1016 at 1016 what is there?
+[55:35.44] 17. So it will give you sorry seven and
+[55:37.68] that is correct. At number four we have
+[55:41.44] seven. So that is correct. So the
+[55:43.60] formula is this to access the element.
+[55:46.96] Right? And because of this formula there
+[55:50.32] is one reason that why index starts from
+[55:54.16] zero. Maybe you are thinking why index
+[55:56.32] start from zero? Can't we start from
+[55:58.24] one?
+[56:00.08] So there are mainly two reason. First is
+[56:02.88] that historical reason. Next is some
+[56:05.68] technical reason also. So historical
+[56:08.48] point of view if I say then see there
+[56:11.20] are many languages in which we have
+[56:13.44] index starts from one area index starts
+[56:15.20] from one like we have Pascal sorry not
+[56:18.32] Pascal it's like forin we have small
+[56:20.88] talk we have Lua we have and then we
+[56:23.12] have R MATLAB MATLAB so these languages
+[56:26.40] in these languages arendic start from
+[56:29.12] one but like C was the one of the
+[56:33.68] earliest and the most popular popular
+[56:35.76] language C right and it started using
+[56:39.44] index of the array from zero.
+[56:42.96] The makers of C done this thing because
+[56:44.72] of some reason
+[56:46.80] right because in C we have pointer. So
+[56:48.96] in pointer arithmetic we do in pointers
+[56:51.36] when we perform some arithmetic
+[56:52.72] operation plus these kind of things then
+[56:55.28] if index is from zero then it will be
+[56:57.44] easy.
+[56:58.96] Okay. Now Java is heavily dependent or
+[57:02.48] influenced by C and C++. So that's why
+[57:04.72] makers of Java also inherited that
+[57:07.68] concept only like we will also start
+[57:09.76] this thing array index would be from
+[57:11.76] zero only. Okay. Next is when you're
+[57:16.24] going to calculate the memory address
+[57:18.16] then it will give you a clean and simple
+[57:22.40] kind of thing. See here we calculate
+[57:24.72] base address something like this. If
+[57:26.80] array index starts from one
+[57:30.00] then you write here one.
+[57:32.88] Okay, one into size of each element. So
+[57:35.76] to find out the exact address, you have
+[57:38.72] to again you have to again subtract
+[57:42.00] something from this
+[57:44.64] right suppose array index start from one
+[57:47.76] and if I write same hit num two so what
+[57:51.20] it will give 1,000 plus it's 2 into 4.
+[57:58.56] So it will give like 10 08 at 10 08 we
+[58:01.60] have this right and arex start from one
+[58:04.48] like 1 2 3 4 5
+[58:08.48] number two I want like second element
+[58:12.96] second element is this but it will give
+[58:14.80] you the third element at 108 so you have
+[58:16.96] to do some minus kind of thing also
+[58:18.56] subtraction also from this formula so
+[58:20.96] that would be like one more step added
+[58:23.52] to to this formula okay and if it start
+[58:27.52] from zero Then it's simple
+[58:30.32] index is it's not the position of that
+[58:34.24] element in this array. It's basically
+[58:36.16] the offset.
+[58:38.96] It's basically the offset
+[58:43.36] from the array header.
+[58:46.72] Offset means uh the distance from the
+[58:49.76] array header. How many steps you are
+[58:51.76] there from the array header. So for the
+[58:54.56] first element this is the first element
+[58:57.28] and this is the array header obviously
+[58:59.36] the starting of the array the offset is
+[59:02.32] what nothing you are at the same at the
+[59:06.00] array header only the first element so
+[59:08.08] there is no offset the distance is zero
+[59:11.28] so that is why basically index start
+[59:14.16] from zero it is more of offset
+[59:17.76] it's not the position kind of thing it
+[59:20.16] shows the offset means from the array
+[59:22.80] header the distance. So for the first
+[59:25.92] element the array header and between the
+[59:29.12] first element there is no distance there
+[59:30.80] is no offset. So that is why it is zero.
+[59:33.60] For the second element the offset is you
+[59:36.08] are one element apart from the array
+[59:37.60] header. So one then two then three then
+[59:40.00] four something like this
+[59:43.52] right and like in some another data
+[59:47.20] structure also list and something else
+[59:49.20] there also index start from zero. So
+[59:51.84] they want to make it consistent with
+[59:53.60] other data structure also so that Java
+[59:55.68] developers don't need to remember like
+[59:57.44] array in array the index start form one
+[60:00.64] and in other data structure index start
+[60:02.24] from zero. So though so they made it
+[60:04.32] consistent with other data structure
+[60:06.00] also
+[60:07.52] okay and while like computing I told you
+[60:10.16] this memory address these are something
+[60:13.20] like uh we are dealing with addresses
+[60:15.68] not exactly addresses but yeah it's
+[60:18.48] pointer arithmetic this is nothing but
+[60:20.64] address right so when you are dealing
+[60:22.96] with pointers when you do pointer
+[60:24.64] arithmetic operation then it would be
+[60:26.88] easy if the index start from zero if the
+[60:29.52] offset is zero of the first element
+[60:32.00] otherwise wise you have to do some extra
+[60:33.84] calculation like I have told you in this
+[60:35.52] case you have to do some extra
+[60:36.72] subtraction step to find out the exact
+[60:39.60] element
+[60:41.28] okay so that's why index starts from
+[60:45.52] zero
+[60:47.04] fine now I hope you got the memory
+[60:49.12] representation how to access elements
+[60:52.40] array elements the formula and y index
+[60:54.80] starts from zero let me show you
+[60:56.40] something practical okay one more thing
+[60:58.08] I want to show if you just declare this
+[61:00.48] array
+[61:02.00] just this and I just want to suppose
+[61:05.28] print marks
+[61:08.88] it will give you error see variable
+[61:10.64] marks might not have been initialized
+[61:12.48] but one thing I show you let's just
+[61:14.24] comment out this okay first
+[61:17.04] copy paste this thing and let's declare
+[61:20.16] this here at the class level
+[61:23.20] but that would be static if you want to
+[61:25.44] access this directly static now see
+[61:28.80] there's no error but the thing is
+[61:30.48] implicit call to do string on array
+[61:32.96] marks. Uh just leave it. Let me just
+[61:37.12] show you the output first. See null.
+[61:41.60] Null is what? It's a literal and string
+[61:46.24] value by default is null.
+[61:49.04] So that's why it is showing you that was
+[61:51.44] like two string this kind of thing like
+[61:54.16] implicit call to two string and on array
+[61:56.88] marks. Okay. Now the thing is I've told
+[62:00.64] you this is what an object reference and
+[62:04.16] if you do not initialize it if you do
+[62:06.72] not instantiate this then by default it
+[62:09.68] is having null.
+[62:11.92] The object references are having null.
+[62:14.80] So that's why it is printing here null.
+[62:17.36] But here it was local variable. It was
+[62:19.68] local variable in this main method. And
+[62:22.48] local variables do not get values impa
+[62:27.68] values.
+[62:29.52] This thing we have seen previous in
+[62:31.04] previous uh videos also. But these are
+[62:33.76] class level variables. So this will be
+[62:37.04] having
+[62:39.12] the default value. So default value for
+[62:41.20] object references are because array is
+[62:43.68] what an object only. So object reference
+[62:46.56] it contains the reference to the actual
+[62:48.08] object of the array. And this will give
+[62:50.32] you null only.
+[62:52.16] Right now here if you just take this
+[62:55.28] static array something like this and
+[62:57.12] here also you can
+[63:00.24] locate the memory something like this
+[63:01.92] marks is equal to by using this new
+[63:04.72] keyword new and marks sorry it's new
+[63:08.80] marks now it's new double and suppose
+[63:12.00] five right now again if if I run this
+[63:17.04] then it will show you some address see
+[63:20.64] now It is nothing but don't be don't get
+[63:23.04] scared. It is just address. This bracket
+[63:26.24] means it's an array. This D means it is
+[63:29.92] of double type C. It is of type double
+[63:34.64] and at the rate means at the rate means
+[63:36.88] this is the address. Now at this is some
+[63:39.52] hexa decimal form. At this address
+[63:43.44] the actual array object has been created
+[63:45.60] in the heap and that address is in this
+[63:48.32] marks that reference. So this marks is
+[63:50.40] referring to that actual array address.
+[63:53.28] Right? If you if you change this to int
+[63:59.12] what happened if I change this to int
+[64:03.04] like this printing marks now you run
+[64:05.04] this and see now
+[64:07.92] address is this but here now I I means
+[64:11.04] int. So D was double I means it's of
+[64:13.36] integer array.
+[64:15.28] Fine.
+[64:16.88] Now you can initialize this array. Same
+[64:18.88] method. You can take something like this
+[64:20.24] also or you can here only you can use
+[64:22.40] array initializer or rather than writing
+[64:24.24] new int but directly here you cannot use
+[64:26.64] array initializer because marks is equal
+[64:28.40] to initializer. This is not allowed. Uh
+[64:31.76] this thing we have already done. I have
+[64:34.56] just removed that thing I guess. So that
+[64:36.56] is not allowed. If you do something like
+[64:38.00] this here, if you comment out this thing
+[64:42.64] and if you are writing marks is equal to
+[64:45.52] let's say initialize with some marks.
+[64:48.80] This will give you error because array
+[64:50.24] initializer you cannot use something
+[64:51.84] like this.
+[64:53.76] This is not allowed.
+[64:56.88] Yeah, that is fine. You have to write
+[64:58.80] down here this and then array
+[65:00.40] initializer is allowed. So this is
+[65:02.16] simply you can use in array declaration
+[65:05.52] in array declaration statement. This
+[65:07.44] array initializer you cannot use as an
+[65:09.84] assignment reassignment statement. The
+[65:12.40] previous was an assignment statement
+[65:14.96] right? Marks is equal to this was an
+[65:17.28] assignment statement. So that is not
+[65:18.80] allowed. So I guess you got now the
+[65:21.12] memory representation all the three
+[65:23.36] steps we have discussed this with
+[65:25.36] example accessing an array that also we
+[65:28.56] have discussed how to access array
+[65:29.92] element how to calculate the element
+[65:31.68] address this is the formula we have
+[65:33.76] discussed right y index start from the
+[65:36.40] zero that also I have told you now how
+[65:38.48] to take input from user using scanner
+[65:40.40] class we can take input from user like
+[65:42.00] this like in a for loop so how actually
+[65:45.20] the thing is working here Hey.
+[65:57.60] So if this so if this is the case then
+[65:59.84] what is actually happening? This is the
+[66:01.60] array. This is array reference in ST
+[66:04.16] there's an object in heap. The size is
+[66:08.56] how many bytes has been allocated? Five
+[66:10.16] into four that is 20 bytes for that
+[66:12.08] object. And the reference of that object
+[66:14.00] is stored in this array reference number
+[66:15.68] which is in stack. Now in for loop first
+[66:19.36] I
+[66:21.28] so this is a I variable right it is in
+[66:24.64] main. So in that main frame we have this
+[66:29.52] num reference plus another variable we
+[66:31.84] have that is this is local variable I.
+[66:34.40] So I and I we have zero at first I less
+[66:37.20] than num.length num.length calculated
+[66:39.60] then it is five. It will be five. So yes
+[66:41.60] condition true then we will enter here
+[66:43.60] and num at I how this would be
+[66:47.44] calculated num is what 1,000 suppose
+[66:50.88] 1,000 base address is 1,000 so 1,000
+[66:54.16] plus i is what at zero into size is four
+[66:57.92] so only 1,000 so at 1,000 whatever would
+[67:01.12] be stored sc next in whatever you will
+[67:03.52] enter using scanner class using scanner
+[67:06.16] object that is sc suppose scanner object
+[67:08.24] is sc that will be stored at this
+[67:11.12] address suppose we have entered three so
+[67:14.16] that three would be stored in that 1,000
+[67:18.80] something like this I ++ now I becomes
+[67:21.60] one condition two again enter here so at
+[67:24.16] num I at num I means here it would be 1
+[67:26.88] 1 into 4 that is this so at 10 04
+[67:30.88] whatever next element you will enter
+[67:32.32] that would be stored suppose you have
+[67:33.84] entered user have entered 10 so that
+[67:35.76] would be stored something like this this
+[67:37.20] array would be populated till this loop
+[67:39.68] will run till 2 then 3 then four. So
+[67:44.00] suppose 11 then min -1 and then zero we
+[67:48.00] have entered
+[67:49.84] once it becomes five condition is not
+[67:52.32] true and out of the slope. Same for
+[67:55.36] printing also
+[67:57.44] same loop but rather than this line we
+[67:59.52] are simply printing like system.print
+[68:01.68] print len and whatever the array and
+[68:04.40] here I simple
+[68:09.84] so like this only the address would be
+[68:11.92] calculated at first I is zero so for num
+[68:14.72] zero here we have zero address is 1,000
+[68:18.16] so the control the compiler will check
+[68:20.40] like the JVM will check at the address
+[68:22.56] 1,000 what is there three so it will
+[68:24.24] print three
+[68:26.16] then for num one I ++ becomes I becomes
+[68:29.76] one condition is still true less than
+[68:33.36] five. Then for num one addresses 1,000 +
+[68:36.88] 1 into 4 that is 104. So it will look at
+[68:40.16] 104. What is the value? That is 10. So
+[68:43.04] 10 would be printed like this. We're
+[68:44.48] going to fetch the value one by one.
+[68:47.28] Right? Using loops we can take input and
+[68:50.24] we can also print using scanner class.
+[68:53.68] Printing array element. This thing I
+[68:55.28] have shown you how to print or you can
+[68:57.20] use enhanced for loop also. This thing
+[68:59.28] we will see in next lecture. This is
+[69:00.88] basically for each loop. Okay. Here
+[69:05.36] there is no condition or all. You simply
+[69:08.08] take
+[69:09.76] a variable like int element then colon
+[69:12.80] and then whatever the name of the array
+[69:15.12] that's it and simply print the element.
+[69:18.80] So one by one whatever the array the
+[69:21.52] first element first would be stored in
+[69:23.36] this element and that would be printed.
+[69:25.68] Then second element would be stored in
+[69:27.60] this element in this variable element
+[69:29.92] and that would be printed like this. So
+[69:32.56] till length of the array it will run
+[69:34.16] automatically. You don't need to give
+[69:35.28] any condition and something like this.
+[69:36.48] That is why it is known as enhanced loop
+[69:38.56] or for each loop.
+[69:41.28] You don't have to remember here like the
+[69:43.04] condition no I ++ nothing else.
+[69:46.96] Simply take a variable and in column
+[69:49.28] after that whatever array name just put
+[69:52.48] that thing. So one by one the array
+[69:55.04] elements would be assigned one by one to
+[69:57.12] this variable whatever the variable is
+[69:58.80] here and you simply print that variable
+[70:01.04] that is working of this for each loop.
+[70:04.88] Now the basics is clear to you. Now
+[70:06.80] there is some exercise for you. You have
+[70:08.64] to do you have to create an array of
+[70:10.32] integer and find the maximum value in
+[70:13.60] that array and you have to print the
+[70:15.28] maximum value. suppose area of five
+[70:17.44] integer or three integer or four integer
+[70:20.72] and let's find out the maximum value.
+[70:24.24] It's I think a little bit tricky but if
+[70:26.16] you can try it out we can just do some
+[70:28.40] exercises. If you don't get it, don't
+[70:30.40] worry. We'll do these kind of exercises.
+[70:33.04] Right? For now, you can just simply try
+[70:34.96] to create different different types of
+[70:36.64] arrays.
+[70:38.16] Int array, float array, double array,
+[70:40.96] boolean array, short array, bite array,
+[70:44.72] and long array. All the primitive data
+[70:46.72] types arrays you try to create not just
+[70:50.24] uh restrict yourself to int or double
+[70:53.36] array. String also you can try to
+[70:55.52] create. Okay, string string is it's not
+[70:58.56] primitive data type. It's object
+[71:01.04] reference. Okay, so array of those
+[71:04.40] objects also we can create. Fine, that
+[71:07.36] also you can do. What are advantages of
+[71:10.64] using array? Simplicity.
+[71:13.84] It provide a straightforward and easy to
+[71:16.16] understand way to store and access data.
+[71:19.12] Arrays are simple one. These are not
+[71:20.64] puff. You have seen that thing. Okay.
+[71:23.76] Then obviously these are optimized for
+[71:26.72] memory allocation and accessing like we
+[71:29.12] can faster access the data
+[71:32.80] store arrays elements are stored in
+[71:34.80] contiguous memory allocates allocation.
+[71:36.88] So you can directly access any data
+[71:38.56] randomly. So that's why it will like
+[71:41.44] faster execution or faster accessing of
+[71:43.52] that data in arrays. Okay. Arrays can be
+[71:46.88] used to store various data types whether
+[71:50.00] it's primitive data type or objects
+[71:53.04] references data type. Array can store
+[71:56.00] anything.
+[71:57.52] Fine. Now what are some limitations?
+[72:00.24] These also we have discussed. Arrays are
+[72:01.84] of fixed size. You can store only same
+[72:04.40] type of data in array and out of bound
+[72:07.92] errors are also there. If you want to
+[72:09.28] try to access array elements that is not
+[72:12.88] within the range then it will give you
+[72:14.32] an exception. And data type restriction
+[72:16.80] is also there. Same type of data you can
+[72:18.88] stay store in a single array. You cannot
+[72:21.44] mix the data types. Okay. Now when
+[72:24.72] you're using array then you need to take
+[72:26.32] care of some things. What is that array?
+[72:29.84] Always initialize an array before using
+[72:31.92] it. Try to use this thing because if you
+[72:35.28] will use uninitialized array then it
+[72:37.68] will give you some default value or some
+[72:39.68] unexpected kind of thing. So initialize
+[72:41.60] the array first then use it. Always
+[72:45.36] check the bound. Always give the index
+[72:48.56] in the range otherwise you will get out
+[72:51.52] of bound exception.
+[72:53.84] Okay. So you have to take care of the
+[72:55.76] boundaries also the range. Then data
+[72:59.84] type consistency you have to ensure that
+[73:02.48] all the elements in the array are of
+[73:04.16] same data type otherwise you will get
+[73:06.56] error. Fine. Okay. Now you want to debug
+[73:11.44] the array. If you want to debug the
+[73:13.04] array, then you can simply use debugger.
+[73:15.28] I have shown you many times. Just add
+[73:17.68] some break points and see how actually
+[73:20.24] the control is going where the program
+[73:23.52] is working. So you can use debugger or
+[73:25.68] you can use multiple print statements.
+[73:29.20] If you update something after that just
+[73:31.28] print something. Okay. So that after
+[73:34.32] printing you will get the output. Okay.
+[73:35.92] This is the output. So maybe you are not
+[73:37.60] getting the expect out uh expected
+[73:39.20] output right. So if you use multiple
+[73:42.96] print statement at some points if you
+[73:45.28] print the output rather than at the end
+[73:48.08] then you will get to know easily that
+[73:50.40] where you are you know having some error
+[73:54.16] like this you can use or uh whatever
+[73:56.32] error message you will get just read
+[73:57.92] that message properly and then according
+[74:00.00] to that resolve that error. These are
+[74:03.04] some things you can try out. Okay. Now
+[74:08.24] example storing student grade. You can
+[74:10.24] just create a program in which you are
+[74:12.40] going to store the students marks or
+[74:14.96] grades. This thing we have already seen.
+[74:16.88] So you can do this thing also just for
+[74:18.72] your practice. Fine. Marks would be
+[74:21.44] maybe in float or in a double you can
+[74:24.32] take or int also you can take. Then you
+[74:26.80] have to take the marks from user using
+[74:28.56] scanner and print the marks using for
+[74:31.04] loops. Right? So that's all about basics
+[74:34.08] of arrays. We will see something more
+[74:36.24] about arrays in the next lecture. But
+[74:38.32] till now you try out. Now try to create
+[74:41.76] different different size and different
+[74:43.28] different types of arrays and do
+[74:44.96] something. Initialize the array. Then
+[74:48.40] don't initialize that. Take input from
+[74:50.56] user using scanner. Try to use these
+[74:52.56] things. Okay. So more about arrays we'll
+[74:55.28] see in next lecture. So now I'll see you
+[74:56.80] in the next lecture. Till then bye-bye.
+[74:58.64] biggest.

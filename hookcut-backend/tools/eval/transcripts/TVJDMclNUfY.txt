@@ -1,0 +1,2567 @@
+[0:00.00] Hey, hey, hey. [music]
+[0:05.89] [music]
+[0:11.79] [music]
+[0:19.65] [music]
+[0:27.51] >> [music]
+[0:54.08] >> Yeah. Hello everyone. I'm audible.
+[0:57.76] Yeah, today Chris sir is also there.
+[1:02.80] Sunny, am I audible?
+[1:05.44] >> Uh, yes sir, you are audible. Am I
+[1:07.36] audible sir?
+[1:08.72] >> Yeah.
+[1:14.72] >> Okay, let's wait for everybody to join.
+[1:19.04] >> Yeah, sure.
+[1:33.12] Okay. Hello everyone. I hope Yeah. I
+[1:37.68] hope we are audible. We are visible.
+[1:43.92] Great.
+[1:45.76] So, how are you all? I hope the
+[1:47.60] sessions, the live sessions that we are
+[1:49.20] conducting is going on well.
+[1:53.92] So yeah, we also live in LinkedIn.
+[2:02.64] Perfect.
+[2:05.12] We'll wait for some time for so that I
+[2:07.20] think notification may be going for
+[2:08.96] everyone. So
+[2:15.28] yeah
+[2:24.96] people
+[2:31.20] okay perfect um I just wanted to know
+[2:33.92] about the production structure of any
+[2:35.68] project
+[2:37.36] yeah yeah today we'll discuss about that
+[2:39.76] uh that is the session that we are going
+[2:41.28] to conduct.
+[2:44.32] Hello uh Sunny am I audible? No problem.
+[2:48.32] >> Uh yes sir you are audible.
+[2:50.96] >> Yeah. Uh yes you are visible. Hello sir.
+[2:55.92] Okay please give the community session
+[2:58.32] more pressure sir. Yes we are planning
+[3:00.88] to do that only. Uh thank you from an AI
+[3:04.00] engineer who was a student. Thank you so
+[3:06.00] much. Yeah perfect. Great to hear about
+[3:09.76] this.
+[3:14.40] So how is the session going on everyone?
+[3:18.48] Yeah, all good. Till now how many of you
+[3:22.72] have attended both first, second, third?
+[3:25.84] This is the fourth session itself.
+[3:32.16] Uh maybe free YouTube. Yes. Yes. All the
+[3:36.80] videos are available. Guruji gi pranam.
+[3:40.16] Namaz
+[3:42.72] amazing.
+[3:46.48] when it will be advanced topic you will
+[3:48.08] cover like agent skills I think we have
+[3:49.68] already started that very informative
+[3:52.56] session excellent
+[3:54.80] perfect
+[3:56.64] I only missed last session okay
+[4:00.64] so good crush so here also we can see
+[4:03.76] good
+[4:08.88] deep agents uh playlist continue YouTube
+[4:11.28] channel yes that video is getting
+[4:12.80] recorded
+[4:14.40] what type of which type of agents Again
+[4:16.32] there are different types of agents
+[4:17.44] which we are covering. Okay. Okay. So uh
+[4:20.96] so guys before uh we go ahead like today
+[4:23.76] again we are going to focus more on
+[4:25.92] agentic
+[4:27.52] um you know how to develop agents for
+[4:29.60] production. Uh will you cover production
+[4:32.00] grade AI agents? Yes obviously we will
+[4:34.00] be covering it. Okay. All the
+[4:36.08] information um Sunonny will be sharing
+[4:39.04] like how we are going to cover all those
+[4:40.72] things. Okay. How about AI system in the
+[4:43.84] future? So it's more like things are
+[4:47.52] getting evolved now. There's a lot of
+[4:49.60] horizontal changes that is basically
+[4:51.68] happening landscape changes. So it's
+[4:54.00] necessary that you start learning
+[4:55.44] generative AI, agentic AI. U the thing
+[4:58.40] is that uh there will be a demand of
+[5:01.04] work right in different different
+[5:02.56] companies where we focus on creating
+[5:05.04] agents itself right. So yeah a lot of
+[5:08.80] demand will definitely be there. Okay.
+[5:11.36] Now before I go ahead I quickly want to
+[5:14.40] uh you know share one quick information.
+[5:18.00] You know recently we are focusing on
+[5:21.60] some very important things with respect
+[5:23.36] to teaching right. uh many people do
+[5:26.96] definitely ask that kish what should we
+[5:29.36] focus on what how should we basically
+[5:31.20] learn right now in 2026 right and for
+[5:34.72] that what we have done is that we have
+[5:36.64] designed some good paths uh which you
+[5:40.16] should definitely focus on okay so let
+[5:42.64] me quickly go ahead and share my screen
+[5:44.64] and then uh we will go ahead and talk
+[5:46.56] more about it okay so right now all
+[5:49.60] these live sessions that we are
+[5:51.36] specifically doing okay we are focusing
+[5:54.64] a complete good road map to learn AI and
+[5:57.68] here you know that we have specifically
+[6:00.88] three parts which I've discussed many
+[6:02.96] number of times in front of you one is
+[6:05.12] the traditional route let's say you are
+[6:07.92] very new to AI you don't know anything
+[6:10.72] then what should be the path that you
+[6:12.40] should basically take traditional route
+[6:14.56] where you focus initially on data
+[6:16.32] science Python programming language
+[6:18.00] statistics then you go and master DSML
+[6:21.68] CV NLP then you add jai Gently skill set
+[6:25.44] but nowadays you'll be seeing that
+[6:27.44] people
+[6:28.96] you know based on the experience right
+[6:32.80] they definitely want to get into genai
+[6:34.72] energetic AI so for them the modern
+[6:37.92] route is very much important okay in
+[6:41.68] this modern route what we should do is
+[6:43.44] that first initially focus on genai
+[6:45.60] master geni then add aentic AI skill
+[6:48.08] sets when we say agentic AI skill sets
+[6:50.64] know how to probably go ahead and
+[6:52.56] develop agents
+[6:54.08] and then you go ahead and make your DS
+[6:56.32] fundamental strong. Now many of those
+[6:58.88] people are also looking for this
+[7:00.56] specific modern route and that's the
+[7:02.24] reason we are doing this kind of live
+[7:04.56] sessions where we focus on modern route
+[7:06.96] how you can actually focus on doing
+[7:09.60] things uh with respect to you know um
+[7:13.28] understanding about genai agentic AI and
+[7:15.60] all right so this is the modern route
+[7:17.12] that you should go ahead and do it okay
+[7:20.00] and very important like if you are a
+[7:22.08] fresher definitely uh if you want to
+[7:24.24] start AI from scratch then you go ahead
+[7:26.72] with traditional route. If you're
+[7:28.00] experienced person, if you if you have
+[7:30.56] some amount of knowledge, I would
+[7:31.76] suggest go ahead with modern route. And
+[7:33.60] the third route is advanced route. This
+[7:35.36] is definitely for an architecture.
+[7:37.28] Architecture can also go over here. If
+[7:38.96] you have experience around four to five
+[7:40.48] years, you can also go over here. Right?
+[7:42.56] So considering this, these are the three
+[7:44.64] fundamental routes that we specifically
+[7:46.96] take and right now all these live
+[7:49.36] sessions that we are considering, we are
+[7:51.12] considering with respect to this modern
+[7:52.64] route, right? uh recently I'd also been
+[7:55.28] to this um AI impact summit right which
+[7:58.00] happened in uh New Delhi. So there also
+[8:00.88] you know everybody is trying to focus
+[8:03.76] more on agentic AI skill sets where they
+[8:05.76] focus more on building agents uh where
+[8:08.08] we talk about generative AI you know
+[8:10.08] understand how to fine-tune LM models do
+[8:12.40] that and all right so that is the focus
+[8:14.88] of this entire sessions that we are
+[8:17.28] conducting okay so can I get a quick yes
+[8:19.68] if you're able to understand what I'm
+[8:21.36] actually saying do hit like you know uh
+[8:24.32] I think I cannot see your chat message
+[8:26.40] also I'm I'm able to see but I don't see
+[8:29.44] much active audience. Come on. Uh give
+[8:32.16] me a quick hi. Anything? Are you
+[8:34.80] excited? Are you super excited with
+[8:36.48] today's session? Uh understand all these
+[8:38.96] sessions takes a lot of effort. Uh we
+[8:41.36] are trying to bring industry mentors out
+[8:43.36] here. They're devoting that particular
+[8:45.68] time. You know, it is important that you
+[8:47.52] also be very much proactive. All these
+[8:49.44] sessions are completely for free. You
+[8:51.44] know, we focus more on community
+[8:53.12] building over here. Uh you know, we try
+[8:55.68] to show you what is happening in the
+[8:57.20] industry and all. Right. So here you can
+[8:59.44] clearly see that uh we are focusing on
+[9:01.60] this and if you really have any kind of
+[9:03.44] queries obviously sunny is there we'll
+[9:05.44] be focusing more on making sure that you
+[9:07.52] understand each and everything as we go
+[9:09.68] ahead okay now the other thing quick
+[9:12.00] announcement that we want to do if you
+[9:14.32] go to krishnag.in in on live classes. Um
+[9:17.60] there is something called as modern
+[9:19.04] route fullstack generative AI and
+[9:20.48] agentic AI boot camp. This boot camp we
+[9:22.96] are starting from 15th March. Okay. Um
+[9:26.88] and with respect to this particular 15th
+[9:29.28] March, right? You'll be able to see that
+[9:31.68] uh you know this batch is something like
+[9:33.76] which we really wanted to focus on this
+[9:35.68] particular crowd who was focusing on
+[9:37.36] this particular road map. Okay. So if
+[9:40.56] anybody's interested go ahead uh check
+[9:42.96] out this specific page. you know this is
+[9:45.28] like a five to six months uh batch live
+[9:47.68] boot camp where Sunny will also be one
+[9:49.68] of the mentor um we will be making sure
+[9:52.56] to teach you everything from scratch how
+[9:54.64] you go ahead and build uh how you go
+[9:56.80] ahead and start with LLM generative AI
+[9:58.80] genic AI how do you build applications
+[10:01.04] so all the syllabus the course syllabus
+[10:02.96] is mentioned over here so this is the
+[10:05.12] information that I really wanted to uh
+[10:07.28] give before we continue okay so uh now I
+[10:10.88] will give it to Sunonny I hope I've
+[10:12.56] covered almost everything over here and
+[10:15.60] uh all these free sessions that you'll
+[10:17.76] be able to see I have pinned one uh link
+[10:20.40] wherein you'll be able to see the
+[10:21.92] dashboard in the chat okay you can go
+[10:23.92] ahead and use that also okay so uh
+[10:27.44] sunonny I think you can go ahead and uh
+[10:29.92] start uh the session thank you uh yeah
+[10:33.92] sure sir thank you uh for the
+[10:35.92] information so guys I think uh now we
+[10:38.64] can start with our live session and hope
+[10:41.36] you have attended my previous uh
+[10:42.96] sessions If you haven't attended then
+[10:45.12] please go and register to this link. I'm
+[10:48.32] sharing in the chat and once you got it
+[10:51.28] then give me quick thumbs up uh so that
+[10:54.72] I can understand you got a link and not
+[10:57.68] only the video guys along with the
+[10:59.68] videos you will get all the resources
+[11:01.44] over here. Okay. So if you want to get
+[11:04.32] all the previous lecture along with the
+[11:06.48] material then uh registered over here. I
+[11:09.84] hope it is clear.
+[11:13.44] Uh great. Uh so uh let's start with the
+[11:16.00] session guys. Uh I think uh in the
+[11:18.32] previous class we already set up our
+[11:20.40] project and all everything right. Uh now
+[11:22.80] in this uh class what we'll do guys
+[11:25.20] we'll understand about the project and
+[11:27.52] uh after that guys we'll start a coding.
+[11:30.24] So in the previous uh session if you
+[11:31.84] will go through with my previous session
+[11:33.28] I already taught you how to write a code
+[11:36.08] and along with the manual coding I shown
+[11:38.48] you the w coding as well. Right? So I
+[11:40.96] given you some prompt and I uh I uh
+[11:44.24] basically uh even I written couple of
+[11:47.12] more prompt for the further code and all
+[11:48.96] for the further module. So if you want
+[11:50.64] to try out from your end if you want to
+[11:52.40] generate a further code through the W
+[11:53.92] coding and all yes uh definitely I'll
+[11:55.92] share those uh specific prompt and all
+[11:58.40] everything right. So uh many people were
+[12:00.88] asking to me in the previous sessions uh
+[12:03.36] you discuss about the project you shown
+[12:05.36] the fundamental and all everything right
+[12:07.44] but you haven't discussed the problem
+[12:09.04] statement that which uh project we are
+[12:11.12] going to create here uh what will be the
+[12:13.12] agentic flow and what we are doing with
+[12:14.96] that agentic flow right so uh using the
+[12:17.68] agentic flow guys we can do so many
+[12:19.52] things we can create like as a deep as
+[12:22.40] agent right uh the agent will be capable
+[12:24.64] to do everything uh so inside uh this
+[12:27.68] project guys I will be focusing on one
+[12:30.56] agentic flow which you can use across
+[12:32.88] the domain. Okay, across the domain
+[12:35.36] means in every domain basically you can
+[12:37.20] utilize that agentic flow and uh you can
+[12:40.48] uh generate something right you can uh
+[12:42.64] generate the final output. So uh let me
+[12:45.84] share my screen and let me give you the
+[12:47.44] quick heads up. First of all let me
+[12:49.44] explain you uh what all thing I have
+[12:51.76] completed so far from where you can get
+[12:54.16] the entire material and all everything
+[12:56.32] and after that I'll start with the
+[12:57.92] problem statement. Okay. So if
+[13:00.08] everything is clear guys uh just let me
+[13:02.08] know just give me quick thumbs up and
+[13:04.32] please be active in the chat if you are
+[13:07.12] doing this along with me. Okay. So I'm
+[13:10.00] sharing my screen and then uh we'll
+[13:12.32] start just a second.
+[13:21.12] Okay. I hope my screen is visible.
+[13:23.76] Please let me know guys if you are able
+[13:25.36] to see my screen. Uh now what I'll do
+[13:28.16] first I'll open the dashboard and I'll
+[13:30.40] give you the quick walk through of the
+[13:31.84] previous videos. Okay. So just a second
+[13:35.76] uh let me uh open the dashboard.
+[13:38.88] Everyone is able to see this dashboard.
+[13:40.64] Yes or no? Uh just a second guys. Let me
+[13:43.84] do the full screen. I think it is not a
+[13:46.48] full one. Just a second.
+[13:53.36] Yeah. So guys, I hope uh this uh
+[13:55.60] dashboard is visible. Please let me know
+[13:57.84] if it is visible or not. So here you can
+[14:00.48] see we have uploaded all the previous
+[14:02.96] recording, right? So this is all the
+[14:04.56] recording and this recording basically
+[14:06.64] we have uploaded along with the
+[14:08.40] resources. So if you want to get a
+[14:09.84] resources just click on this resource
+[14:11.60] section and from there you can get all
+[14:14.24] the resources. Okay, whatever thing I'm
+[14:16.40] going to be discussing the class and all
+[14:18.32] everything you will get over here. Uh
+[14:20.32] now how you will get a access of this
+[14:22.40] dashboard. So I already shared the link
+[14:24.24] in the chat. Uh just go through with
+[14:26.16] that link register yourself and you will
+[14:30.08] get access of the of this dashboard.
+[14:32.32] Okay. So just a second let me paste over
+[14:35.28] here in my browser and let me show you
+[14:37.04] the page. So uh just write your mail id
+[14:40.72] number and all everything guys and
+[14:42.40] register now. Click on register now. You
+[14:44.48] will be able to get access of it. Okay.
+[14:46.72] I think uh this thing is clear. Now uh
+[14:48.96] let me show you my project. So I already
+[14:52.16] uh updated the code and all everything
+[14:53.92] over the GitHub itself. So what I'm
+[14:56.00] doing guys, I'm going to open my GitHub
+[14:57.84] and uh there I will uh show you the
+[15:01.60] project. Okay. So this is the project
+[15:03.52] guys uh which we have initiated in the
+[15:06.16] previous class, right? So once you will
+[15:08.48] go through with this research and
+[15:09.84] analyst folder, you will get the entire
+[15:12.48] uh code and all everything, right? So
+[15:14.72] guys, uh the course name is the crash
+[15:16.80] course, right? Agenti crash course. So
+[15:19.52] in the uh previous class guys previous
+[15:22.64] to previous class in the first class I
+[15:25.12] already shown you right in the first
+[15:27.04] class I already shown you uh what is the
+[15:29.92] agentic AI right I uh completed the
+[15:32.80] entire theory and all everything so if
+[15:34.96] your fundamental is not clear about the
+[15:37.28] agentic AI then you can watch out the
+[15:40.24] first session right just go and check
+[15:42.00] with the first session you'll get
+[15:43.68] everything there uh in the second
+[15:45.52] session we understood about the
+[15:47.04] fundamental of the AI agent Then how to
+[15:49.36] build a workflow, how to do the tool
+[15:51.12] calling and all. Now there are lots of
+[15:53.44] tool right there are lots of sorry there
+[15:55.44] are lots of framework in the market to
+[15:57.20] implement the agentric flow. Uh some
+[16:00.08] framework are the technical one right
+[16:01.92] where the heavy coding is required and
+[16:04.08] couple of framework are the non-coding
+[16:06.40] tool right where the coding is not
+[16:08.16] required we can directly build the
+[16:10.16] workflow and all everything. Okay. So
+[16:12.64] guys uh here I am going to use the uh
+[16:17.36] coding heavy framework right where you
+[16:19.84] have a authority to write a code by
+[16:22.16] yourself and you can build a agent. So
+[16:25.20] why we are doing this thing guys?
+[16:26.64] Because this is a requirement of the
+[16:28.32] industry right in whatever industry in
+[16:30.56] whatever project you are working right.
+[16:32.72] So there actually you will have to build
+[16:34.32] a application from scratch because uh
+[16:37.20] there is a lots of business problem the
+[16:39.28] different different business problem
+[16:40.72] across the domain right let's say
+[16:42.80] someone is coming with their own
+[16:44.16] business business problem so you will
+[16:46.32] have to build a solution from a scratch
+[16:48.56] and for that guys most of the time you
+[16:51.20] will have to write a code from scratch
+[16:53.20] okay and that's a real job and that's a
+[16:55.44] real work of the AI engineer so if you
+[16:58.40] are representing yourself as a AI
+[17:00.32] engineer then uh you
+[17:03.04] You should be capable, right? You should
+[17:05.04] be capable to write a code from a
+[17:07.28] scratch. Okay. Uh you no need to write a
+[17:10.56] code by yourself. Uh you can write that
+[17:13.04] code using the copilot. Okay, that is
+[17:15.52] fine. But guys, at least you should have
+[17:17.28] understanding what you're going to write
+[17:19.36] until your fundamental is not clear for
+[17:21.92] product development. Okay, for the AI
+[17:24.16] engineering
+[17:25.76] like you cannot write a code, you cannot
+[17:27.76] create a application. Right? So uh here
+[17:30.96] guys
+[17:32.56] I shown you the code and all everything
+[17:34.16] from scratch and even I shown you if you
+[17:36.96] are basically new right uh and if you
+[17:40.88] don't want to write a code then how you
+[17:42.40] can generate it through the copilot
+[17:44.08] right in both way basically we are
+[17:45.92] looking into this project okay I hope
+[17:48.80] this thing is clear uh now guys uh this
+[17:51.60] is a repository I'll share this
+[17:53.60] repository with all of you so that uh
+[17:55.68] you can get the latest code and all
+[17:57.52] everything so whenever I'm uploading a
+[17:59.52] code guys whenever I'm updating a code
+[18:01.28] you just need to pull that code okay so
+[18:03.76] once you will pull that code guys uh you
+[18:05.84] will be able to get it inside your local
+[18:08.32] system local system so I'm sharing this
+[18:11.04] link in the local sorry I'm sharing this
+[18:13.44] uh link in the chat once you got it guys
+[18:15.68] please let me know please give me quick
+[18:17.68] thumbs up so that I can understand you
+[18:19.76] got a link and you have a access of the
+[18:21.84] code and we can start okay
+[18:25.65] [clears throat]
+[18:26.80] I just want quick thumbs up Uh please go
+[18:29.68] ahead.
+[18:39.20] Yeah. And guys uh please uh be
+[18:41.44] interactive in the chat. If I'm asking
+[18:43.44] something then please write then only uh
+[18:47.04] uh guys I get a motivation to teach you
+[18:50.08] something right uh to teach you
+[18:52.24] something new and the industry specific
+[19:03.52] okay perfect so I think you got a access
+[19:05.68] of the code now first what uh we'll do
+[19:07.92] guys we'll understand uh we'll
+[19:10.24] understand about the problem statement
+[19:11.68] Right? Because in the previous class we
+[19:13.92] just have seen like how to initiate a
+[19:15.84] project and uh using this one. See uh
+[19:19.36] here you will see uh this is the code
+[19:21.44] guys which I was executing and uh we
+[19:24.48] have successfully configured like couple
+[19:26.48] of module. So if you will go and check
+[19:28.80] inside this folder research analyst. So
+[19:32.48] inside this one we have already
+[19:34.40] configured right this model loader
+[19:36.64] config loader exception logger and all.
+[19:39.36] So we have initiated the project over
+[19:41.52] here right. But now what we'll do along
+[19:44.64] with this module we'll write some core
+[19:47.28] functionality. Okay. So from where we'll
+[19:49.76] start? So we'll start with our uh
+[19:52.16] workflow. Okay. So we'll start with our
+[19:54.88] agentic workflow. So inside the workflow
+[19:57.04] folder we are going to write a complete
+[19:59.60] agentic flow. Right. So I already
+[20:01.52] created this workflow folder and there
+[20:03.12] only we are going to be write it. Uh now
+[20:05.84] guys what I'll do? So which framework we
+[20:08.72] are going to use here? So we going to
+[20:10.16] use langraph because langraph gives you
+[20:12.80] the more authority to write a code.
+[20:15.20] Okay. So uh if you learn the langraph uh
+[20:18.48] you learn how to create a agents how to
+[20:21.92] like create a workflow from a scratch.
+[20:25.12] Okay. uh if you're going to be learn any
+[20:27.36] other framework rather the lang graph uh
+[20:30.56] there basically you will get more
+[20:32.48] abstraction more abstraction means they
+[20:35.28] have given you some uh inbuilt classes
+[20:38.16] they already written a functionality in
+[20:40.00] back end you are just going to be use it
+[20:42.00] for creating the agentic flow okay and
+[20:44.64] if you are going to use nit or langfuse
+[20:47.36] kind of framework there guys uh you are
+[20:50.32] not going to write a code from scratch
+[20:52.88] even uh there what you are doing you are
+[20:55.04] you are going to be create a workflow
+[20:56.80] without uh writing a code there. Right?
+[20:59.44] So uh here we are using a lang graph. So
+[21:01.92] using a lang graph guys we can write a
+[21:03.52] code from a scratch. We can create a
+[21:05.12] workflow and we can create as deep as
+[21:08.08] agent. Right? Whatever workflow we want
+[21:09.76] to be create whatever kind of agent we
+[21:11.84] want to be create we can do that even
+[21:13.76] the multi- aentic flow. Okay. Uh I work
+[21:17.60] uh on multiple project and uh several
+[21:20.32] times I have used the langraph over
+[21:22.08] there. Now guys uh here uh inside the
+[21:25.28] workflow folder only we'll write a
+[21:26.88] complete workflow. But what kind of
+[21:28.32] workflow? What is going to be a problem
+[21:30.24] statement? So I already written a
+[21:32.08] problem statement on my blackboard. So
+[21:34.24] let me show you that problem statement.
+[21:36.16] And once it is visible just let me know.
+[21:38.72] So I'm going to be open that. I hope uh
+[21:41.52] this screen is visible guys. Can you
+[21:43.84] please tell me if it is visible? If
+[21:45.76] you're able to see this one.
+[21:48.64] Okay. So uh we are going to be build uh
+[21:51.84] we are going to be build this uh kind of
+[21:53.60] workflow. Okay. So what is a uh what is
+[21:56.48] the project name? Autonomous research
+[21:59.12] and analyst report generation system.
+[22:02.00] Right. So this agentric flow what this
+[22:04.00] agentric flow is doing uh it's uh going
+[22:06.72] to be a research right it's going to be
+[22:09.04] an analysis and behalf on that it's
+[22:10.96] giving you the final generation. Okay.
+[22:13.76] So this is a one one workflow guys.
+[22:16.08] behalf on this uh workflow you can build
+[22:18.80] a system you can build a industry
+[22:20.88] specific system okay uh let's say in
+[22:23.44] your company uh you are going to be
+[22:25.36] build a system uh which can uh generate
+[22:29.04] any kind of uh report for you right
+[22:31.52] whatever right so which can generate any
+[22:33.84] sort of information for for you so you
+[22:35.84] can take a reference of this kind of
+[22:37.60] workflow okay you can understand uh you
+[22:40.80] can understand like how agentic workflow
+[22:42.80] works what all different different
+[22:44.48] concept we have over here and then uh
+[22:47.20] you can build your own customized
+[22:49.20] workflow. So uh here if you will see so
+[22:51.76] inside this workflow we have several
+[22:53.84] section. So uh in the first section see
+[22:56.40] here uh the first node this box actually
+[22:59.04] it is called a node over here. So what
+[23:01.12] we have guys we have a node over here.
+[23:02.72] So this is a node right this one. So
+[23:04.96] this is what guys this is a node. Okay.
+[23:06.96] Now this is what this is a node. So
+[23:08.72] inside this node we have kept a
+[23:10.80] different different functionality. Then
+[23:12.96] uh here if you will see right if you
+[23:14.96] will see this one uh so this is what
+[23:17.36] guys this is a uh subgraph actually this
+[23:20.64] is a subgraph inside the langraph okay
+[23:23.44] so this is the subg graph let me write
+[23:25.92] over here subgraph now apart from this
+[23:28.72] one guys here you can see the complete
+[23:30.32] flow right and uh along with that you
+[23:34.08] will see the parallelization also so
+[23:36.64] here what we have we have a
+[23:38.72] parallelization okay parallelization
+[23:41.92] inside the workflow and uh then guys
+[23:44.96] again you will see uh some
+[23:46.48] parallelization in the workflow. This is
+[23:49.04] the final conclusion. Okay, we are going
+[23:52.32] to be write all the functionality inside
+[23:54.32] this specific nodes and then we are
+[23:56.88] going to be generate a final response. I
+[23:59.28] hope this is clear. Okay. So here what
+[24:03.04] we'll learn guys. So we'll learn so many
+[24:05.20] thing. So using this particular flow we
+[24:07.60] are going to be learn so many things.
+[24:09.20] Let me highlight all the thing. So uh
+[24:11.76] here we have one node the node is called
+[24:13.76] the create analyst. So it's going to be
+[24:16.16] create a AI analyst right? So
+[24:18.96] automatically this workflow will create
+[24:21.20] a analyst and that that analyst is going
+[24:23.76] to be perform a research. Okay. Then in
+[24:27.04] between what we have we have a human
+[24:28.64] feedback. So if human wants to give
+[24:30.88] right if human wants to give some
+[24:33.12] feedback so yes a human can also provide
+[24:36.32] uh their own feedback. Okay. So human
+[24:39.20] can also provide their own feedback and
+[24:41.20] behalf on that this uh analyst is going
+[24:43.84] to be uh rearranged right. So whatever
+[24:47.28] analyst we are going to be create if
+[24:49.04] you're not getting much context you will
+[24:50.80] get it in some time then guys what we
+[24:53.04] have so we have the subgraph right so
+[24:55.20] whatever thing you are seeing over here
+[24:56.64] in the yellow color right so this is
+[24:58.72] called the subgraph in the lang graph so
+[25:01.76] uh we have created a subgraph and this
+[25:03.92] subgraph actually it is responsible for
+[25:06.56] the research it is doing a research it
+[25:08.64] is going to be generate a multiple
+[25:10.40] questions okay every analyst is going to
+[25:12.40] be generate a multiple question it's
+[25:14.48] going to fetch a information from the
+[25:16.16] various resources and finally it's going
+[25:18.48] to be conclude a information. Okay. So
+[25:21.12] this particular subgraph basically so
+[25:23.36] the I I I kept a specific name of the
+[25:26.56] subgraph which is called the conduct
+[25:28.48] interview. So this analyst is going to
+[25:30.48] be conduct a interview. It's going to be
+[25:32.24] fetch a information from the various
+[25:34.00] resources and then what it is doing guys
+[25:36.72] it is giving to this right section to
+[25:38.72] this final node and then uh this uh uh
+[25:42.56] basically right section is giving to the
+[25:44.16] different different node to write a
+[25:45.76] conclusion to write a introduction to
+[25:47.36] write a final report and then we are
+[25:49.44] finalizing a report. Okay. So this is a
+[25:51.92] complete agentic flow we are going to be
+[25:54.24] create now inside uh this uh inside this
+[25:57.52] workflow if you will see. So we have one
+[25:59.36] loop as well. So this is the loop guys.
+[26:01.76] Let's say I have created a multiple
+[26:03.68] analyst which is going to be conduct
+[26:06.00] interview means which is going to be f
+[26:07.68] fetch a information from the various
+[26:09.44] resources. Right. Uh then guys uh here
+[26:12.00] after fetching the resource after
+[26:13.52] fetching the information it's going to
+[26:15.04] be generate a final output. Let's
+[26:17.04] suppose that final output is not meeting
+[26:18.88] to our requirement. Okay. So again it
+[26:21.12] will uh ask a question. Again it will
+[26:23.60] search to the different different tools.
+[26:25.36] Okay. Again it will generate a final
+[26:27.36] answer and then only it will give you
+[26:29.20] the concluded answer the final report.
+[26:31.76] Okay. So uh here you can see guys this
+[26:34.08] is a loop right. So this is a loop. So
+[26:36.24] we have so many thing we have so many
+[26:38.08] thing over here inside this particular
+[26:40.24] agentive flow. Again let me highlight.
+[26:42.72] So what we are doing guys so we are
+[26:44.56] going to be create a analyst where we'll
+[26:47.52] focus on the human feedback. Right?
+[26:49.28] Human will provide their own feedback.
+[26:52.16] If I have to rephrase the analysis
+[26:54.56] analyst actually so I will do that
+[26:56.64] behalf on the human feedback then guys
+[26:58.88] we'll conduct an interview. So this
+[27:00.40] entire process which I kept inside the
+[27:02.24] subgraph so subgraph basically it is
+[27:04.32] going to be fetch a information from the
+[27:06.24] various resources okay and then here
+[27:09.12] what we'll do guys we'll learn about the
+[27:10.64] paralization now how we can run execute
+[27:12.96] the uh node the different node in a
+[27:15.36] parallel and here we have kept one loop
+[27:17.92] as well. So see guys this is a loop if
+[27:20.24] something is not going to be a perfect
+[27:22.00] then again we'll come to the loop okay
+[27:24.24] again we'll generate a answer and then
+[27:26.56] we'll evaluate that one and then we are
+[27:28.72] going to be save that we are going to be
+[27:30.16] write a section okay and this right
+[27:32.48] section node will provide a content to
+[27:34.72] the different different node right so
+[27:36.16] this particular node is responsible for
+[27:38.32] writing a conclusion this node is
+[27:41.04] specifically for the writing for writing
+[27:42.96] a introduction and this node is
+[27:44.88] specifically for writing a report the
+[27:46.88] final one and then we are going to be
+[27:48.88] finalize a report and then we are
+[27:50.56] generating a output. So this is the
+[27:52.40] overall flow. Okay. Now uh let's do one
+[27:56.00] thing guys. So let's uh understand see
+[27:58.72] here I already written couple of points.
+[28:00.80] So just just let's uh just just go
+[28:03.04] through with this points. Okay. What
+[28:04.96] what this point are saying and then uh
+[28:07.52] we'll come to the uh demonstration. I
+[28:10.00] I'll show you like how this application
+[28:11.68] is going to be work and how you can
+[28:13.84] generate a final output to it. I I'll
+[28:15.60] show you the final output. Uh now uh
+[28:17.76] first of all tell me guys uh how is this
+[28:19.52] use case? Is it a useful one? We can
+[28:22.64] learn so many concept uh through this uh
+[28:25.52] workflow. Okay, through this use case.
+[28:28.08] So if you're liking it, please uh let me
+[28:30.48] know in the chat guys. I'm waiting.
+[28:41.44] If you have any uh sort of a doubt, you
+[28:43.36] can ask me. I'll answer. Okay.
+[29:02.80] I I'll take a pause for one minute.
+[29:15.76] What is the difference between the
+[29:17.04] subgraph and the multi- aent? So
+[29:19.12] subgraph basically it is a uh part of
+[29:22.16] that flow itself. It is a part of that
+[29:24.64] it is a part of that one agentic flow.
+[29:27.04] Okay multi- aent means we have two
+[29:29.76] separate agent one uh two separate two
+[29:32.56] independent agent. Right? So this is the
+[29:35.04] fundamental difference between the
+[29:36.48] subgraph and the multi- aent.
+[29:44.24] Yeah, we'll discuss that how we are
+[29:46.00] planning the session isolation for the
+[29:48.48] parallel agent. Okay. Now guys, uh you
+[29:51.12] can see I hope this uh all the three
+[29:53.52] point is visible, right? Uh just give me
+[29:55.44] quick confirmation so that I can
+[29:57.04] proceed. If all these three point are
+[29:59.04] visible, just let me know. Let me change
+[30:00.80] the color of it. So I'm just keeping in
+[30:02.72] a white color. So we have three layers
+[30:05.84] over here. The first layer what it will
+[30:08.16] do it will generate multiple analyst
+[30:10.88] persona. Okay. So this is going to be a
+[30:13.84] AI persona
+[30:16.96] model AI automatically is going to be
+[30:19.20] generate that right in autonomous way.
+[30:22.08] Uh for any topic whatever topic we are
+[30:24.32] giving now uh for that topic
+[30:26.24] automatically that persona is going to
+[30:27.76] be clear. Uh now here I kept one more
+[30:30.48] thing in bracket with optional human
+[30:32.48] feedback loop. Okay. So if a human wants
+[30:36.00] to give any feedback so I I'll keep that
+[30:38.88] feedback. I'll keep that particular
+[30:40.48] option and then we'll take a feedback
+[30:43.12] from the human and will rephrase our
+[30:46.00] analyst for finding out the information.
+[30:48.64] Right? Then guys in a workflow two for
+[30:51.84] each analyst run a interview loop. So
+[30:54.32] what this interview loop is doing
+[30:56.24] analyst is going to be asked a question.
+[30:58.48] Behalf on that question we are going to
+[31:00.16] be fetch a information from the various
+[31:02.00] resources. We are scrapping a web. We
+[31:04.32] are scrapping all the information from
+[31:06.16] the Wikipedia right. Uh it is like a
+[31:09.12] expert answer. Okay. It is like a expert
+[31:11.52] answer.
+[31:13.36] Uh then we are going to be retrieve a
+[31:15.28] context means we are going to be
+[31:16.56] retrieve a answer. Then we are going to
+[31:18.88] be save a interview and we are going to
+[31:20.88] be write a memory also. Okay. Uh that
+[31:23.84] particular response we are going to be
+[31:25.52] save into the memory. Uh now this
+[31:27.60] workflow 3 what it is doing? It is going
+[31:29.28] to be run all the interview in a
+[31:30.96] parallel. Right. uh we are going to be
+[31:33.76] run all the interview parallel let's
+[31:35.60] suppose we have three analyst okay we
+[31:38.72] have three analysts so all the three
+[31:40.24] interviews going to be run in a parallel
+[31:42.16] then we are going to be merge it for the
+[31:44.48] final report okay and uh this will
+[31:48.00] showcase the final output this workflow
+[31:50.00] basically it will showcase the final
+[31:51.44] output so this is the complete
+[31:53.36] description this is a complete
+[31:55.12] description of this entire flow okay
+[31:58.08] this is a complete description of this
+[31:59.60] entire flow now let me do one thing let
+[32:01.92] Let me show you the output. Right? So
+[32:03.92] what I am doing guys, I am uh going to
+[32:06.32] open my code. So this is the code guys.
+[32:09.84] Uh here you can see so I already
+[32:12.88] implemented uh this project. Just a sec.
+[32:15.76] Let me open it. I hope it is visible. Uh
+[32:19.68] my system is lagging. I think so. Yeah.
+[32:23.20] So I hope uh it is visible. Just a
+[32:26.24] second guys.
+[32:32.64] Yeah. So this is the file. This is the
+[32:34.40] complete system. Right? Now what I'll do
+[32:36.48] first I'll show you the demo. Okay. How
+[32:39.84] to execute it and how basically I'll be
+[32:42.72] giving the how I will be getting the
+[32:44.40] final output. So inside this code you
+[32:47.12] can see we have the uh inside this code
+[32:50.00] you can see we have this uh API folder.
+[32:52.80] Inside this API folder only I define my
+[32:55.68] uh routes. Okay. Okay, I define my
+[32:57.92] services inside the services I kept that
+[33:00.24] I inside the service. This is the route
+[33:02.16] actually all the route inside the code.
+[33:04.48] Uh this is the services okay which is
+[33:07.04] belonging to this route and then here is
+[33:10.08] my main py file which is leading to the
+[33:13.60] entire route. Okay, this is my master
+[33:15.68] file. Okay, which is including all the
+[33:18.40] route. So likewise guys I have designed
+[33:22.00] likewise guys I have designed this
+[33:23.60] entire system. Okay, because the back
+[33:26.00] end engineering uh the low-level
+[33:27.60] engineering is also very important how
+[33:29.36] you are going to be design your entire
+[33:30.80] code. I hope it is visible. If it is
+[33:32.88] not, let me uh zoom in a little bit. Uh
+[33:38.08] now it is visible. So just a second.
+[33:44.48] Okay. So now it is visible guys. So here
+[33:47.12] you can see this is the main py file
+[33:51.12] which is concluding the entire routes
+[33:53.04] and all. uh I'll come to this one. I'll
+[33:56.00] explain you uh what all routes we have.
+[33:58.32] As of now, I haven't explained you that
+[34:00.00] part. In the previous session, we just
+[34:02.32] discussed uh how to create a exception
+[34:04.56] logging and the model uh loader, right?
+[34:07.60] And the other configuration and all. So
+[34:09.44] this is my main py file. Now what I'll
+[34:11.28] do I'll execute it. So it is uh already
+[34:14.32] running. But let me do one thing. Let me
+[34:17.36] stop it. So I'm going to be stop this
+[34:19.76] application right now. uh I first I'm I
+[34:22.64] will give you the demonstration and then
+[34:24.64] uh we'll come to the final coding and
+[34:26.24] all. Now this is the command for running
+[34:28.08] this application. So the command is u
+[34:30.32] research analyst API main app reload.
+[34:32.88] Okay. So using this command we are going
+[34:35.36] to be execute our application. So what
+[34:38.32] is this research and analyst? This is a
+[34:40.96] uh this is a folder my master folder.
+[34:42.96] Okay my root folder. Then API again it
+[34:45.92] is a folder inside this research
+[34:48.16] analyst. Then main is what? main is my
+[34:50.40] file. Okay. And this what is the app?
+[34:52.24] Actually app is my object. This app guys
+[34:55.04] I created this app. Okay. Fast API app.
+[34:57.44] This one. So what we have here you can
+[35:00.16] see we have a app. Okay. Now what we are
+[35:02.24] doing? Uh we are just going to be
+[35:04.24] executed. I'm I'm just going to be
+[35:05.68] executed. See so my application is
+[35:07.60] running. By default it will be running
+[35:08.96] on this 8,000 port. Uh you can mention
+[35:10.88] any port. This is not an issue. Now what
+[35:13.68] I'll do I'll click on it. Okay. I'll
+[35:16.32] click on this link. So I already
+[35:17.68] associated one UI. So let me show you
+[35:21.52] that UI. Just a second guys.
+[35:25.20] So
+[35:27.20] here is this UI.
+[35:31.20] This one is it visible? Just give me a
+[35:34.08] quick confirmation if this UI is
+[35:35.60] visible. See you can build a UI any uh
+[35:38.40] kind of UI. It is a very subjective
+[35:40.56] thing. So this uh UI I just uh created
+[35:43.84] to demonstrate you. Okay. uh we can
+[35:46.08] create uh any kind of UI okay any type
+[35:48.80] of UI uh whatever requirement we have
+[35:51.60] and uh to create a UI nowadays it's not
+[35:53.76] a very big deal so even though we are
+[35:56.32] like AI engineers so using the copilot
+[35:59.12] chpt cloud code and all we can easily
+[36:01.52] create a required UI okay and there are
+[36:03.84] so many platform like labable and all it
+[36:06.16] will easily give you the template or it
+[36:08.16] will easily help you to create a better
+[36:10.00] UI according to your requirement right
+[36:12.24] in any language you can create that
+[36:14.00] means whatever framework we have for
+[36:15.68] creating a UI whether it's a react,
+[36:17.84] typescript or whatever angular right so
+[36:20.96] these are the some these are some
+[36:22.48] JavaScript based framework or else you
+[36:24.72] can write a UI related code in pure HTML
+[36:26.88] and CSS also right but if you want like
+[36:29.28] more dynamic uh uh content right in that
+[36:33.04] case you will use a JavaScript only for
+[36:34.88] creating a UI so UI we usually create in
+[36:37.52] a JS framework and then back end we can
+[36:39.68] write in any frame any language right so
+[36:42.88] we are using Python over here for the
+[36:44.72] back end and uh for the UI also we are
+[36:46.88] using simple HTML and CSSL but uh you
+[36:49.20] can create it using the react and the
+[36:50.96] angular also right so here what I'm
+[36:53.44] doing guys see first I'll sign up okay I
+[36:56.48] set up my complete DB and all uh so I'll
+[36:58.88] show you uh basically whenever you will
+[37:01.04] sign up okay uh so automatically your
+[37:03.52] information is going to be logged in a
+[37:04.96] back end so we have already already
+[37:07.20] configured the DB for that so I will
+[37:09.44] write a username so I can write any
+[37:11.20] username let's say my username is YT 1 2
+[37:14.32] three and what password I can write any
+[37:16.40] password let's say yt 1 2 3 okay so this
+[37:19.36] is just to give the real touch uh how
+[37:21.68] the application is being created now
+[37:23.92] here see guys uh this is the uh like
+[37:26.40] sign up information okay now what I'll
+[37:28.40] do I'll create account now here it is
+[37:30.48] saying please length or lengthen this
+[37:32.80] text to six character so I have four
+[37:36.00] character now I'll keep for the six
+[37:37.52] character so this is fine I think I'll
+[37:40.56] create account so yeah account is
+[37:42.48] created after creating account what I
+[37:44.48] can do I can uh simply log into this
+[37:46.40] portal so my password username was a y 2
+[37:49.44] 1 2 3 4 and again what I'll do I'll
+[37:51.84] write 1 2 3 4 okay so this is what this
+[37:55.36] is my uh like portal right so regarding
+[37:59.28] whatever topic I wanted to do the
+[38:01.04] research I will simply write it over
+[38:02.88] here again I'm saying guys uh UI is a
+[38:06.24] very subjective thing you can create
+[38:08.00] whatever UI you want to be create right
+[38:10.08] now now what I'll do I'll pass the uh
+[38:12.64] I'll pass what I'll pass the topic.
+[38:14.88] Okay. So I research on the different
+[38:16.64] topic already. So let's say I'm uh going
+[38:20.00] to be write one I'm going to be choose
+[38:21.76] one topic geni role in a multimodelity.
+[38:24.72] Now what I'll do guys I will uh click on
+[38:27.04] this generate report. So once I'll click
+[38:28.56] on the generate report now the report is
+[38:29.92] being generated and the back end see it
+[38:31.68] is capturing all the log. So you can
+[38:33.84] track your uh report. You can track your
+[38:36.32] report. Okay. Uh through this log right
+[38:39.20] what is happening in a back end.
+[38:40.48] Everything you can capture through this
+[38:41.92] log. So we have already already
+[38:43.84] configured our logger. If you if you
+[38:45.68] haven't seen that uh session you can go
+[38:48.48] and check. Okay. In the second I think
+[38:50.32] in the third class only we have
+[38:51.52] configured this logger. So already this
+[38:53.68] log is being captured. Now see uh it is
+[38:56.24] asking see this is a topic. Now your AI
+[38:58.88] generated report is ready. You can
+[39:00.32] refine it below. If if you are willing
+[39:02.64] to write a human feedback then uh give
+[39:05.44] the human feedback. If you don't have
+[39:06.88] any human feedback then you can simply
+[39:08.96] write none. Let's say I'm writing a
+[39:10.96] human feedback. what I'm what I'm
+[39:12.40] writing over here please
+[39:15.44] uh focus
+[39:17.36] over the
+[39:19.52] over the image modality okay so please
+[39:24.00] focus over the image modality so the
+[39:26.24] topic is what generative AI role in the
+[39:27.84] multimodelity and here I'm writing here
+[39:30.16] human is saying please focus on the
+[39:32.16] image modality so whatever research is
+[39:34.08] going to be happen in a back end so
+[39:35.76] there the human feedback will matter
+[39:37.52] more okay now what I'll do guys I'll
+[39:40.16] submit the feedback Now after submitting
+[39:42.00] a feedback what will happen guys see uh
+[39:45.20] it is it is going to be take a feedback
+[39:46.72] and according to that it's going to be
+[39:48.00] refine my persona. See the entire thing
+[39:50.48] is going in a back end. You can track it
+[39:52.80] completely over here through the logs
+[39:54.56] itself. See this is the complete uh one
+[39:58.48] each and every log uh is being captured
+[40:00.96] regarding the different different
+[40:02.00] module. So report section generated
+[40:04.32] successfully and then conclusion
+[40:06.40] introduction writing. See this is the
+[40:08.88] one. Now what I'll do guys, I'll simply
+[40:13.44] just a second. So yeah, report will be
+[40:16.08] generated. Now see the report is being
+[40:17.44] generated. Now what I'll do guys, I can
+[40:19.28] simply download it. So what I'll do,
+[40:21.12] I'll I can download in a docx, I can
+[40:22.80] download in a python, whatever way I
+[40:24.32] want to be download. I will just click
+[40:26.00] on the download docx. And here see the
+[40:28.72] report name. Okay, along with the date
+[40:30.88] and time and I will just click on the
+[40:32.80] save. Now see the report has downloaded.
+[40:35.92] Once I'll open it guys, see this is the
+[40:38.24] complete report. Okay. So here is the
+[40:40.72] introduction. Then you can see the
+[40:42.72] complete generated report, the
+[40:44.00] conclusion and the source and all from
+[40:46.32] wherever it is going to be fetch the
+[40:48.00] information. So this is a kind of
+[40:50.08] workflow basically we can create for
+[40:52.32] automation right. So let's say in your
+[40:55.36] industry in your enterprise project you
+[40:57.84] require the uh report generation
+[41:00.08] automation then you can do it you can
+[41:02.80] create a workflow. Okay you can create
+[41:05.04] that workflow using the no code and low
+[41:06.96] code tool. But if you want more
+[41:08.48] authority on top of your application in
+[41:11.12] that case you can use the uh langraph
+[41:14.00] kind of framework where you can code
+[41:15.92] everything from your scratch and uh you
+[41:18.72] can utilize that application across the
+[41:21.68] uh like organization. Right? So I hope
+[41:25.04] this entire demonstration is clear.
+[41:26.88] Please let me know in the chat if
+[41:28.40] everything is clear guys. You can give
+[41:30.48] me quick thumbs up uh if you like it.
+[41:34.00] And this is the complete backend
+[41:35.60] engineering of it.
+[41:38.00] I I'm just waiting for your reply. Uh if
+[41:41.20] you like it, please let me know so that
+[41:43.28] we can discuss the further
+[41:44.80] implementation of it.
+[42:22.48] any fine-tuning model. Yes, we can use a
+[42:24.56] finetune model also here.
+[42:28.32] Yes, we can implement it in a crewi also
+[42:30.64] that is also possible.
+[42:34.64] Langen and langra both langen and the
+[42:37.12] langra. Okay,
+[42:39.68] because alone langen will not work. Lion
+[42:42.88] is required for so many integration and
+[42:45.36] all everything. Lang graph for designing
+[42:47.92] a main aentric flow
+[42:56.16] project implementation.
+[43:07.12] Okay, great.
+[43:10.08] So what if you want to use a AI gen to
+[43:12.24] only long PDF and multiple chapters and
+[43:14.56] then yeah you can do that you can
+[43:17.52] generate a response in batches and you
+[43:19.60] can uh then you can uh assemble it in a
+[43:23.60] one PDF that is also possible okay
+[43:29.84] so it's possible to use a long lang
+[43:31.68] graph
+[43:33.76] no lang graph I told you know it is for
+[43:36.48] designing the uh flow Okay, lang chain
+[43:39.44] basically for uh multiple integrations.
+[43:42.48] So lang chain and lang graph we use all
+[43:44.32] together.
+[43:46.80] So how to connect MCP over here? So this
+[43:49.52] flow actually it is dependent on the
+[43:51.12] tool calling right. So we can
+[43:53.60] standardize the tool calling using the
+[43:55.36] MCP understood.
+[43:59.84] So are you also covering the LLM ops?
+[44:02.24] Yes. So here we are doing a development
+[44:04.24] in the LLM ops part means to
+[44:07.12] productionize it. Okay. To uh like
+[44:09.76] deploy this application. Yeah. I can
+[44:11.68] take one session on top of the
+[44:12.96] deployment and we can discuss that part.
+[44:19.20] So human can uh give the input one time
+[44:21.36] or can uh give the multiple time. Yes.
+[44:23.52] So that intermediate flow will have see
+[44:25.44] we can refine it more. If human is
+[44:27.92] giving a input then uh again we can
+[44:30.56] check the intermediate output whether it
+[44:32.40] is suffice or not. Right? If that output
+[44:34.56] is not sufficient means the persona is
+[44:38.00] not created up to the mark then again
+[44:40.08] human can give the input. So yeah that
+[44:42.16] kind of refinement we can do inside this
+[44:44.16] framework. That's a good point
+[44:47.52] D you are right. So are you also going
+[44:50.56] to can you please give tell the realtime
+[44:52.48] use of cases on this flow? Realtime use
+[44:54.96] case is what realtime use case is
+[44:56.64] basically anything which is with respect
+[44:59.36] to the generation. Okay. So let's say in
+[45:02.48] new company around to you you are seeing
+[45:05.12] uh I have to integrate uh let's say
+[45:07.68] Gmail API or outlook API to get some PDF
+[45:11.12] to data or I have to connect with some
+[45:13.28] company specific databases okay to fetch
+[45:16.08] out the information you can use this
+[45:18.72] flow you can fetch the detail and you
+[45:20.56] can accumulate it and then you can
+[45:22.56] showcase the final generated response
+[45:25.20] okay not only the uh response over the
+[45:28.48] doc x or pdf you can capture that
+[45:30.80] response anywhere you can keep it
+[45:32.48] anywhere and let's say you are going to
+[45:33.68] be keep it in a structure format and you
+[45:36.56] are going to be like a structure in a
+[45:38.16] CSV and that CSV you are using somewhere
+[45:41.20] you are keeping a gate in a database so
+[45:43.60] any kind of flow you can create
+[45:49.52] so what is the use of the MCP so the use
+[45:51.92] of the MCP is to standardize the tool
+[45:55.12] calling workflow okay so whatever
+[45:57.28] context we are going to be generate from
+[45:59.20] the tool so we have to standardize is
+[46:01.20] that uh context okay the tool calling
+[46:04.56] flow so that we can get a context how we
+[46:08.00] can do it so MCP is giving us two way
+[46:10.72] one basically we can do through the
+[46:12.64] console uh second we can do through the
+[46:15.44] network right uh through the HTTP
+[46:17.36] request so yeah uh we can understand the
+[46:20.08] MCP it's not a very big uh topic very
+[46:22.32] big uh deal if you have basic
+[46:24.16] understanding of the web development uh
+[46:25.92] then easily you can understand the
+[46:27.44] concept of the MCP
+[46:36.00] Yeah, it is
+[46:40.80] no ML algorithm concept does not come
+[46:43.28] because ML is what ML is a classical way
+[46:46.32] to develop a predictive model. Okay. Now
+[46:48.96] the same thing we are doing using the
+[46:50.64] large language model. ML means machine
+[46:53.60] learning. machine in the machine
+[46:54.88] learning what we were doing we were
+[46:56.56] using the statical uh like uh concept
+[47:00.48] okay and we are giving a capability to
+[47:03.52] to those statistical concept so that it
+[47:05.84] can perform the predictive modeling
+[47:07.60] that's a core concept and the core idea
+[47:09.76] behind the machine learning now the same
+[47:12.40] thing we are able to achieve using the
+[47:14.80] LLM okay so uh in future I'm planning to
+[47:17.84] do one project where we are we can
+[47:19.68] develop a machine learning model as well
+[47:21.84] as the same problem we can solve via the
+[47:24.16] LLMs right so that will give you the
+[47:26.32] clearcut understanding means uh uh we
+[47:29.20] can easily replace the classical ML
+[47:31.68] model machine learning or the deep
+[47:33.36] learning model with this LLM because LLM
+[47:35.52] is having a good reasoning capability it
+[47:37.68] can understand anything uh based on the
+[47:40.88] prompt okay so whatever prompt we are
+[47:42.88] going to be pass whatever context we are
+[47:44.48] giving LLM can take that context and it
+[47:46.72] can generate anything understood
+[47:54.72] Yeah, you can uh do the changes inside
+[47:56.72] this flow. You can add more guard rails.
+[47:59.12] You can do more refinement and all. Got
+[48:01.60] it?
+[48:06.40] Okay. So, let's uh begin guys. Let uh me
+[48:08.96] show you the workflow first. So, this is
+[48:12.00] the complete API. I'll I'll start from
+[48:14.24] the API only. Okay. and uh to write the
+[48:17.92] to write this kind of code uh from
+[48:19.92] scratch uh it's little difficult in live
+[48:23.12] class. So I have a code base uh again
+[48:25.28] I'll keep in my previous project
+[48:26.80] previous uh repository itself. Let me
+[48:29.28] give you the quick walkthrough of it and
+[48:30.80] then what I what I'll do I'll implement
+[48:32.80] this entire workflow in IPV file. Okay.
+[48:35.44] So you will get the granular level
+[48:37.04] understanding of this entire flow how we
+[48:39.44] can decode it in a multiple step. Right?
+[48:42.08] So what I'll do guys see uh once you
+[48:44.24] will go inside the research and analyst
+[48:45.68] folder uh and go inside the API. So
+[48:48.64] inside inside the API we have defined
+[48:50.16] the multiple routes. So this is all the
+[48:52.00] routes guys just focus over here. Focus
+[48:54.40] on all the routes. Uh let's take what we
+[48:56.80] have inside all these routes
+[48:59.36] right. So inside this route so the first
+[49:04.00] route actually it's a home route. So it
+[49:06.48] will give you the login HTML. We have
+[49:08.40] the HTML page. Okay. So it will give you
+[49:11.28] the login html. Then we have a second
+[49:14.08] route. So this is what this is a login
+[49:16.40] route. Okay. See one is a home route. It
+[49:19.60] is giving you the uh login html. Then we
+[49:22.96] have a second route that is a login
+[49:24.72] route. Right. So where what it will do
+[49:27.28] guys? It will take a user name. It will
+[49:29.76] take a password and it will check the
+[49:32.00] detail inside the database and behalf on
+[49:34.08] that only it's going to be login. The
+[49:36.24] second route third route is a signup
+[49:38.08] route. Okay. So we can sign up if we
+[49:40.40] don't if uh if you haven't like sign up
+[49:44.48] to for utilizing this application then
+[49:46.56] first you can sign up and then uh
+[49:48.32] basically you can uh login okay and then
+[49:51.52] you can utilize the system. Now see this
+[49:54.00] is the again sign up route uh how we can
+[49:56.24] sign up. So this is the entire code for
+[49:58.24] that. I'll come to that code okay I'll
+[50:00.08] give you the quick overview of the code
+[50:01.52] as well. Then guys uh we have a uh
+[50:03.84] dashboard right. So what it is doing
+[50:06.00] guys it's giving you the dashboard html
+[50:08.96] and uh there actually you can uh submit
+[50:11.68] the topic and uh the other functionality
+[50:15.76] right so I'll come to this part like why
+[50:18.32] basically uh we have kept this dashboard
+[50:21.12] right then we have the uh generate
+[50:23.92] report this is the main one actually so
+[50:26.80] this route actually is being utilizing
+[50:29.12] for calling the workflow so whatever
+[50:32.24] langra workflow we have we are calling
+[50:33.92] it using this particular route. Then we
+[50:36.32] have a submit feedback. So this
+[50:37.84] particular route is calling to the human
+[50:40.00] one, right? So uh we are going to be
+[50:42.32] call we are going to be take a human
+[50:44.08] feedback and then we are submitting that
+[50:45.84] and according to that we are going to be
+[50:47.12] generate a final report. Right? So
+[50:49.12] submit feedback and then if you want to
+[50:51.28] download the report so here we have one
+[50:53.04] more route. So we have divided each and
+[50:55.36] every functionality into the multiple
+[50:57.04] routes. Okay. And to every route guide
+[50:59.52] we have attached the services. Getting
+[51:01.84] my point guys? So how to design a
+[51:03.68] system? So that is also very important
+[51:05.36] thing. If you are going in an interview,
+[51:06.96] they can ask you the low-level
+[51:08.88] designing. How you are going to be
+[51:10.24] perform the low-level designing of any
+[51:11.92] system. So uh here we have each and
+[51:15.52] every route. I hope you got the
+[51:17.04] understanding of this route. Let me do
+[51:19.28] one thing. Uh let me minimize this one
+[51:22.40] so that you can understand it very
+[51:25.28] clearly. Okay. So this is all the route.
+[51:28.32] I hope guys it is clear. If it is clear,
+[51:31.44] you can let me know in the chat and
+[51:33.60] don't worry guys, I'll provide you this
+[51:35.04] entire code so that you can go through
+[51:38.00] with it. Okay. So, this is my all the
+[51:41.36] routes guys. Just a second. Let me
+[51:43.92] scroll down. Uh I think
+[51:50.00] yeah guys this one. So you can look uh
+[51:53.76] into each and every route. Now what are
+[51:55.92] services is connected to this route?
+[51:57.92] I'll come to that part. But first of all
+[52:00.00] tell me if these routes are clear to
+[52:02.08] you. If it's clear, let me know.
+[52:29.36] Tell me tell me tell me guys yes on a
+[52:31.76] high level on a high level did you
+[52:34.00] understand what all routes we have after
+[52:36.64] that I'll come to the services okay what
+[52:38.80] are services basically we have connected
+[52:41.04] through this route
+[52:44.16] if it is clear on a high level please
+[52:46.48] let me know
+[52:48.96] okay don't worry guys uh see what I'll
+[52:52.16] do guys I'll implement one entire
+[52:53.76] notebook so that you can understand the
+[52:56.00] core of this application. Core of this
+[52:58.00] application means you can understand the
+[52:59.60] agentic flow. Okay? Because uh this is
+[53:03.84] the entire application. Now AI is a part
+[53:07.04] of this application of this entire
+[53:08.96] design and all. So uh we'll focus on the
+[53:11.76] AI agent only. So I'll implement that
+[53:14.32] inside the complete notebook inside the
+[53:16.64] notebook only. Great. On a high level I
+[53:19.84] hope everyone got understanding. Now
+[53:21.68] let's go through with the services. So
+[53:23.84] inside this folder only inside this
+[53:25.76] route only I created one folder that is
+[53:27.52] a service. So service.py is one of the
+[53:29.92] folder sorry is one of the module and
+[53:32.64] just focus on this. So let me again
+[53:35.44] minimize the function. Let me tell you
+[53:37.76] what all services we have. So we have
+[53:40.72] one class the class name is a report
+[53:42.56] service. Inside that we have a multiple
+[53:44.48] function. Uh let me highlight all those
+[53:47.28] function. Okay. so that you can
+[53:50.48] understand easily. Uh yeah. So we have
+[53:54.00] four function over here. So the first
+[53:56.72] function is what? First function is a
+[53:58.56] start report generation. Second submit
+[54:01.44] feedback. Third get report status and
+[54:04.48] fourth is the download file. Okay. So we
+[54:07.84] have a route. This route is connected to
+[54:09.92] the service and this service basically
+[54:12.08] is going to be connected to the main
+[54:14.16] backend code. Right? So we have created
+[54:17.20] a route, right? uh route basically uh
+[54:20.48] for the API endpoints with that we can
+[54:23.44] uh interact with the web and we are uh
+[54:26.80] sending a request okay and then we are
+[54:29.76] getting a response so that request
+[54:31.60] response we are handling through that
+[54:32.80] API uh we are connecting uh that request
+[54:35.76] as response through this service now the
+[54:38.16] service is interacting to the backend
+[54:39.92] code okay so this is a system we have
+[54:42.56] defined okay likewise basically we have
+[54:44.24] designed our API or the backend code so
+[54:47.20] uh this is all the services. Now here
+[54:49.12] guys, if you will look into the main
+[54:50.96] function, this is start a report
+[54:52.56] generation. So it is calling to
+[54:54.56] something. Okay, it is calling to
+[54:56.24] something. It is calling to this graph
+[54:58.24] stream, right? Graph dot stream. Now how
+[55:01.44] it is calling that guys? So see here we
+[55:03.68] are going to be build a graph, right? So
+[55:06.32] if you will look into this particular
+[55:08.48] init method. So what we are doing? We
+[55:10.64] are going to be uh build a graph, right?
+[55:13.44] This one this this particular method
+[55:15.28] this one build a graph. So let me do one
+[55:18.00] thing. Let me click on this builder
+[55:19.84] graph and this is going to be a main
+[55:22.32] agentic flow guys. See this is the
+[55:24.32] complete agentic flow which we have
+[55:26.32] written. I hope uh it is clear to all of
+[55:28.96] you. Did you understand the flow how the
+[55:30.80] flow is working? So first it will come
+[55:32.80] to the API. Then it is going to be
+[55:35.12] interact to the service right and the
+[55:37.44] service is going to be interact. The
+[55:39.36] service is going to be interact to what?
+[55:41.76] The service is going to be interact to
+[55:43.92] the main backend code. If this flow is
+[55:46.80] clear, you can let me know. You can give
+[55:48.48] me quick thumbs up so that I can proceed
+[55:50.32] with this entire flow. So as of now, we
+[55:52.48] are understanding the code on a high
+[55:54.16] level. We'll we'll discuss that. Okay.
+[55:56.40] Again, uh I'll come to that and we'll
+[55:58.32] code that by ourself. So if it is clear
+[56:01.92] guys, you can let me know. You can give
+[56:03.20] me quick thumbs up so that we can
+[56:04.80] proceed.
+[56:11.20] I just wanted to know if uh this part is
+[56:14.40] clear.
+[56:27.76] guys. I'm looking into the chat. If you
+[56:29.28] have any doubt, you can let me know over
+[56:30.96] there.
+[56:39.12] Correct. API routes service and then
+[56:41.60] back end. Now guys for supporting to the
+[56:44.48] API we have written models also because
+[56:48.48] through the API what we are doing
+[56:50.24] through the API guys we are just
+[56:51.84] exchanging a data right through the
+[56:54.16] request and response what we are doing
+[56:55.84] we are just exchanging a data to
+[56:57.84] validate that data we have defined a
+[56:59.92] models over here. So see this is a
+[57:01.76] request model. So whatever request and
+[57:04.16] response are coming from the whatever
+[57:06.24] request and response are coming from the
+[57:08.56] uh UI side right from the browser end.
+[57:11.52] So those uh requests and response
+[57:13.76] actually we are validating through this
+[57:16.08] model. This is the pientic model. How
+[57:18.24] many of you know the pientic? Please let
+[57:20.80] me know in the chat if you know the
+[57:21.84] pyic.
+[57:24.00] Do you have any understanding of the
+[57:25.52] pyic guys and why we use pyic? Okay. So
+[57:28.32] let me know the definition of the
+[57:29.60] penting in one line. Why we use pyic
+[57:33.20] and do we have any alternative also of
+[57:34.96] the pyic?
+[57:48.26] >> [snorts]
+[57:54.32] >> Correct.
+[57:58.40] Yes. So we use a pint in for validating
+[58:01.68] the data. We have typed dict also. We
+[58:04.64] can utilize a type date but again pyntic
+[58:07.52] is a good one and uh this is the class
+[58:11.04] right the base class base model actually
+[58:13.12] it's a class which is being offering
+[58:14.96] through this pyic module every sort of a
+[58:17.44] code you will get under this base class
+[58:19.12] only. So we can simply inherit this base
+[58:21.12] class and we can create our pyntic
+[58:23.84] class. Okay. So we use the different
+[58:26.48] different classes guys. uh we use the nm
+[58:29.04] classes, we use the data classes, we use
+[58:31.28] the parentic classes, we use the typedic
+[58:34.24] classes. Okay, so many different
+[58:36.16] different classes we have which we
+[58:38.64] utilize and even we use the static
+[58:41.04] classes. Okay, I hope guys everyone is
+[58:43.68] having uh understanding between these
+[58:46.08] different different classes which we use
+[58:48.08] to validate the data right uh which we
+[58:52.64] use to configuration data classes enum
+[58:56.16] classes pentic classes or statics static
+[59:00.88] classes right
+[59:04.64] okay if you don't have then I'll record
+[59:06.64] a separate video on top of it and uh
+[59:08.48] definitely we'll discuss onto that so
+[59:10.64] this is Identic classes guys this is for
+[59:12.72] the simple validation. So let me tell
+[59:15.44] you the flow whatever we have understood
+[59:17.36] so far and I will after that I'll come
+[59:19.12] to the agentic part. So over the
+[59:21.76] blackboard itself I'm going to be
+[59:23.20] explain you. So guys we have a UI right.
+[59:27.44] So here I can write we have a UI. Now
+[59:30.08] this UI actually it is running where it
+[59:32.24] is running over the browser as we know
+[59:34.88] right. So this UI is running over the
+[59:38.56] browser. Now this UI will send a
+[59:41.28] request. This UI will send a request to
+[59:44.24] the API. Okay. So we already created a
+[59:47.44] API route.
+[59:49.60] This UI will send a request to the API.
+[59:52.40] And here guys, we have created a
+[59:54.48] different different API for the
+[59:55.84] different different services. Likewise
+[59:57.92] only we create the application. Likewise
+[59:59.84] only we design the system. Now the type
+[60:02.32] of the API. So we have get API. Okay. We
+[60:05.68] have post API. We have put API. Okay.
+[60:09.84] And we have delete API,
+[60:14.00] right? So sorry, we have delete request
+[60:16.48] API. Uh and how we can design this API?
+[60:19.20] We can design simply using the fast API.
+[60:22.88] Okay. We can simply design using what?
+[60:26.16] Using the fast API. Now this get post,
+[60:29.84] put and delete. So this is for what
+[60:32.16] guys? This is for the for sending the
+[60:34.80] request and the response. Okay. So if
+[60:36.72] you are if you are requesting something
+[60:38.24] from the server then I'll send the get
+[60:40.16] request. If I'm uh if I'm giving any
+[60:43.52] input through the UI and if I'm based on
+[60:46.08] that if I if I want any sort of a result
+[60:48.00] then what I'll do guys I will send the
+[60:49.76] post request. Put means if I want to do
+[60:52.32] any changes in a database and all right
+[60:54.80] so what I'll do I'll send the put
+[60:56.88] request and if I want to delete
+[60:58.16] something then I will send the delete
+[60:59.76] request. So this is the core of the API.
+[61:02.24] Now API wise guys again we have so many
+[61:04.56] options. So we can create a rest API.
+[61:06.88] Simply we can design the rest API. Okay.
+[61:09.52] We can design the web sockets for the
+[61:11.84] live uh data streaming. Right? We have
+[61:14.32] GraphQL. Okay. Uh we have different uh
+[61:18.00] ways to design this API. So this all
+[61:21.44] comes under the low-level designing of
+[61:24.24] the system. And this API designing is
+[61:26.40] also very important. If you're going to
+[61:28.24] be create a scalable system, let's say
+[61:30.40] you are getting so many requests at the
+[61:32.56] single time, right? uh at the single
+[61:34.88] point of time right so how you will
+[61:36.24] handle those requests so for that your
+[61:37.84] system should be scalable right so
+[61:40.24] according to that only you have to
+[61:41.60] design a system rest API is a
+[61:44.56] fundamental uh way of understanding
+[61:47.04] about the API you can go in a more
+[61:48.96] advanced way okay now what we'll do guys
+[61:52.00] this API is going to be interact to the
+[61:54.40] service so we have defined a service so
+[61:57.04] the service is nothing again it is a
+[61:58.64] function okay this service module
+[62:01.68] service module Now this service module
+[62:04.64] what it will do guys uh the service
+[62:07.44] module basically is going to be connect
+[62:09.04] with our backend code
+[62:11.76] right in a backend code what we have so
+[62:14.32] in a backend code actually we have uh
+[62:17.04] the entire flow okay the back end flow
+[62:19.28] the agentric flow utility model loading
+[62:21.28] and all everything now guys uh whenever
+[62:23.52] we are uh like uh sending request and
+[62:26.88] response okay to this API uh so what we
+[62:30.80] are doing we are just exchanging a data
+[62:32.80] Right? So this request and response
+[62:34.88] whatever request and response we are
+[62:38.08] sending between the UI between the
+[62:40.08] browser and the API. Right? So what we
+[62:41.92] are doing we are just going to be
+[62:42.96] exchanging data to validate this data.
+[62:45.60] To validate this request and response
+[62:47.20] what we are using we are using the
+[62:49.12] pentic. Okay. So what we have done we
+[62:52.08] have created one model layer also. Model
+[62:54.72] layer also. There we have we have
+[62:56.64] created one model layer also. And uh
+[62:59.84] what we have done there we have created
+[63:01.92] our parenting model. Okay. Just to
+[63:04.64] validate the data just to validate
+[63:06.40] validate this request and the response
+[63:08.24] data. This is also called the data
+[63:10.40] objects. Okay. Uh this is also called
+[63:13.04] what? This is also called the data
+[63:14.48] objects. Uh now I hope guys this highle
+[63:17.60] architecture is clear of this entire
+[63:19.28] application. If it is clear please let
+[63:21.92] me know. I'll proceed further.
+[63:24.94] [clears throat]
+[63:26.64] Yes.
+[63:28.72] Can I come to the back end code?
+[63:35.28] Just let me know so that I will proceed.
+[63:37.12] Okay,
+[63:44.40] it's possible to create. Yes, you can do
+[63:46.40] it. You can uh give sort of a
+[63:49.36] instruction automatically. It will
+[63:50.72] generate an entire code. And uh then see
+[63:54.32] uh we are going to be generate a code
+[63:56.16] through the co-pilot from anywhere still
+[63:59.44] you will have to validate that okay so
+[64:02.08] you should have the fundamental level of
+[64:04.80] understanding of everything.
+[64:18.24] So guys if I will get yes then only I
+[64:20.32] will proceed. So please let me know if
+[64:22.40] everything is clear so far. If it is
+[64:25.04] clear I can proceed. Okay.
+[64:35.68] And one more thing would be there guys.
+[64:37.28] See we will be having the we will be
+[64:39.04] having connectivity with the database.
+[64:41.36] So if you're going to be uh like if you
+[64:43.68] want to log anything then we can log to
+[64:46.24] the database. Okay,
+[64:50.72] database. Now this database could be any
+[64:53.12] database for logging the information. So
+[64:56.96] if we have like uh so many information
+[64:59.28] if I want to be collect each and every
+[65:00.96] log right regarding
+[65:04.24] each and every like functionality then I
+[65:06.16] can simply configure the postgra SQL
+[65:08.16] database. Okay. If I am going into the
+[65:11.52] NoSQL side then I can simply use the
+[65:14.00] MongoDB there. Right? MongoDB there and
+[65:18.32] inside the back end guys uh see the AI
+[65:21.20] will be part of this back end only this
+[65:23.36] backend system which we are going to be
+[65:25.12] designed right so AI will be part of
+[65:28.16] this backend system only
+[65:32.16] so system design is important along with
+[65:34.80] the AI okay
+[65:37.92] I think you understood now in a back end
+[65:40.64] what thing uh we would be having so let
+[65:43.60] let me talk about the back end now we
+[65:45.76] going to be design a back end guys here
+[65:48.32] as I told you this application actually
+[65:50.56] it is a AI enabled application right so
+[65:54.08] first of all guys in a back end we'll
+[65:55.92] define our workflow
+[65:59.36] okay so now this workflow basically it's
+[66:02.48] going to be a AI
+[66:05.52] agentic workflow
+[66:07.84] okay so we can define a multi- aent AI
+[66:10.32] agent whatever we want to be defined the
+[66:12.48] second thing guys what we'll do we'll
+[66:14.00] define our utility functions
+[66:15.84] This is very much important. Okay.
+[66:18.48] Utility function. Now in the utility
+[66:21.12] guys, we are going to be write the
+[66:23.84] entire utility uh related code. And uh
+[66:27.12] see guys in the industry guys uh
+[66:28.96] generally we are going to be write a
+[66:30.72] cloud integrated code. Okay. Because the
+[66:33.36] entire application we are going to be
+[66:34.96] deploy the cloud. So to write a cloud
+[66:37.44] integrated code that is also very much
+[66:39.52] important. Now uh then what we'll do in
+[66:41.76] a back end in a back end guys we are
+[66:43.44] going to be write a complete
+[66:44.88] configuration okay we'll define our
+[66:47.20] configuration so workflow will be there
+[66:49.60] utility will be there configuration will
+[66:51.76] be there so these are some code
+[66:53.52] functionality of the back end guys now
+[66:56.32] uh whenever we are going to be write a
+[66:58.08] code guys in a back end so this code
+[67:00.56] should be a cloud compatible code guys
+[67:05.20] okay so whatever cloud you are going to
+[67:07.36] be use let's say you are going to be use
+[67:08.80] the AWS is you're going to be use Azure
+[67:12.08] right whatever cloud you are going to be
+[67:14.40] use uh you have to write a cloud
+[67:17.68] integrated code this is also very much
+[67:20.96] important so cloud integrated code means
+[67:23.60] what let's say uh you you are using
+[67:26.80] multiple API key right so in local you
+[67:29.92] can utilize it through the environment
+[67:32.64] env file but if you wanted to like uh
+[67:36.32] use in your uh uh production system
+[67:39.04] Right? So you will not use use it
+[67:40.88] through the env. You will let's say you
+[67:43.12] have you are going to be deploy your
+[67:44.56] application over the AWS. So you will
+[67:46.00] use the AWS secret manager.
+[67:50.72] Okay. AWS secret manager. Then guys for
+[67:54.24] keeping any sort of a file and folder
+[67:57.12] you will use the AWS S3. Okay. So that
+[68:00.48] integration is also required. Let's say
+[68:03.68] you are going to be use the model. So
+[68:05.68] model AI model you are using from the
+[68:07.76] AWS bedrock right so that indication
+[68:11.60] will also be required you can load the
+[68:14.40] model from the bedrock and all uh then
+[68:17.36] uh let's say you are going to be like uh
+[68:20.00] create a CI/CD pipeline right so for
+[68:23.04] that you are using AWS ECR for keeping
+[68:27.60] your uh uh project as a image right so
+[68:31.04] for that you will have to use this uh
+[68:32.40] ECR repository right so that kind of
+[68:34.80] configuration you will also have to be
+[68:36.72] do right so everything uh can be managed
+[68:39.36] from the code itself right so whatever
+[68:41.12] code you are going to be writing a back
+[68:42.32] end you can manage everything from there
+[68:44.48] so I hope this entire uh clear uh you
+[68:47.68] have you got the entire understanding of
+[68:49.52] this project now let me come to the
+[68:51.68] backend part so let's discuss the
+[68:53.52] workflow first and don't worry guys
+[68:55.28] whatever workflow you are seeing so
+[68:57.04] we'll uh uh write that complete workflow
+[68:59.92] in the notebook itself so that you can
+[69:01.60] understand how this is working okay how
+[69:04.16] uh the agentic workflow is going to be
+[69:06.08] created. So this is the workflow guys.
+[69:08.64] Let me open that file. Uh here it is
+[69:12.16] just a second once I go on research
+[69:14.40] analyst. Now here we have a workflow and
+[69:17.28] see this is my report generation
+[69:19.76] workflow. This is the complete workflow
+[69:22.40] guys. So just uh let me know in the chat
+[69:25.28] if everything is clear so far the entire
+[69:28.00] fundamental part of this project then I
+[69:30.16] will explain you this entire workflow.
+[69:31.84] Okay.
+[69:35.12] utility file example. It could be the
+[69:38.16] model loader. Okay, it could be the uh
+[69:40.80] configuration loader, right? Or anything
+[69:44.96] uh related to the service rel to the
+[69:47.12] backend code. We can keep it in a
+[69:48.64] utility.
+[69:53.28] Can you build service using the AWS
+[69:55.04] Lambda? Yes, there is a multiple ways to
+[69:57.60] deploy the application and this
+[69:59.28] serverless AWS Lambda could be one of
+[70:01.76] the way. Okay. So we can configure the
+[70:03.68] API gateway and we can hit the request
+[70:05.60] to the as lambda we can we can deploy in
+[70:08.88] this way also.
+[70:12.56] So I also cover the tracing part. Yes,
+[70:14.64] we can uh logging everything. If you
+[70:16.72] will look into the log and all, we have
+[70:18.48] our own custom logger. But if you are
+[70:20.16] going to be track everything, right,
+[70:21.84] through some platform and platform and
+[70:23.76] all, let's say you wanted to use the
+[70:25.20] language, you can configure that. That
+[70:27.28] is not a big deal,
+[70:29.52] right? You just need to keep the languin
+[70:31.28] API key over here and automatically your
+[70:33.44] project will be tracked by the
+[70:34.88] langismith. Got it?
+[70:46.00] So let's say we have more than 10 type
+[70:47.76] of output can be those 10 type of
+[70:49.52] parendic model which can what? Yes
+[70:51.68] definitely we can create even 100 type
+[70:53.68] of model. Okay so there is no such
+[70:56.88] constraint to write to create a models
+[70:59.52] and all you can do that dish.
+[71:03.44] [clears throat]
+[71:08.96] Okay. So this is our entire workflow
+[71:10.88] guys. This build langraph build graph.
+[71:13.60] Now just focus over here. I'm just going
+[71:15.76] to be uh zoom in. Now see what we have
+[71:21.04] here. So inside this first we are going
+[71:23.52] to be define our state graph. If you
+[71:25.44] don't know about the state graph you can
+[71:27.12] go and check out with the second
+[71:28.40] session. I already discussed onto it.
+[71:30.56] What is this state graph? Then guys uh
+[71:32.88] here you can see we have this interview
+[71:35.52] uh graph builder. So again this is one
+[71:38.16] of the graph the subg graph basically
+[71:39.84] which I shown you inside the
+[71:41.12] architecture if you will check with this
+[71:43.28] architecture. So inside this
+[71:44.88] architecture this uh yellow part is a
+[71:47.52] subgraph okay so we are going to be
+[71:50.64] coded specifically see here uh we are I
+[71:53.52] have defined that this one. So I have a
+[71:56.00] interview graph. Now what I'll do guys
+[71:57.60] see this is my function. My function is
+[71:59.76] initiate all the interview. So what I'll
+[72:02.40] do I'll take a topic. Okay, I'll take a
+[72:04.64] analyst and all everything and then what
+[72:06.80] we are doing we are going to be conduct
+[72:08.32] a interview. Now this send function
+[72:10.24] basically what it is doing this send
+[72:12.32] function this one this send which we are
+[72:14.16] using this is going to be conduct every
+[72:16.72] interview in parallel. I think someone
+[72:18.56] was asking like how to perform the uh
+[72:21.12] how to how to like conduct this entire
+[72:24.48] research in parallel. So the send API
+[72:26.80] basically the send inbuilt API it's
+[72:29.20] going to be conduct this research in
+[72:31.44] parallel. Okay. So we are iterating on
+[72:33.52] top of the analyst and we are passing it
+[72:35.76] to the send. Right. So as of now I'm
+[72:37.52] just explaining you on a high level.
+[72:39.44] We'll come to that. We'll understand
+[72:40.88] that once you will have this context
+[72:42.72] easily you can understand the entire
+[72:44.24] code because this is not a easy one
+[72:45.84] right. It is a uh like the uh little
+[72:48.48] typical and you will learn so many
+[72:49.92] things over here as I'm showing. So now
+[72:52.16] after that guys what I'll do? So here
+[72:53.76] I'm going to be create a node. So just
+[72:56.32] look in the first node. The first node
+[72:57.84] is a create analyze. The second is a
+[73:00.00] human feedback. Third basically it's
+[73:02.24] going to be conduct a interview. Okay.
+[73:04.24] And what we are passing over here, we
+[73:06.40] are passing this uh interview graph over
+[73:09.52] here. Okay, this interview graph. And
+[73:12.00] what this interview graph is doing? This
+[73:14.00] interview graph basically here you can
+[73:15.92] see this interview graph. It's going to
+[73:17.84] be perform the research right from the
+[73:19.76] from where guys from the various
+[73:21.36] resources. Right now what I'll do guys
+[73:23.76] over here we are going to be write a
+[73:25.44] report. We are going to be write a
+[73:27.04] introduction. Then we are going to be
+[73:28.48] write a conclusion. And here is what
+[73:30.40] here is my final report. So this is all
+[73:32.80] the node. This is all the functionality
+[73:34.96] which we are going to be integrate
+[73:37.12] right. This is the entire functionality
+[73:39.12] which we are going to be integrate. So
+[73:41.12] whatever flow you have seen the line
+[73:42.56] diagram. So this is a complete uh code
+[73:44.96] of it. Right? Now what I'll do see node
+[73:47.20] is what? Node is nothing. It is a
+[73:49.04] function. Okay. Edges is what? Edges is
+[73:51.92] a connection between those function. So
+[73:54.08] I can explain you this node and edges
+[73:56.00] concept. It is very much important in a
+[73:57.60] pi in a lang graph. If you don't know
+[73:59.52] the langraph guys, this will help you to
+[74:01.36] understand right the fundamental of the
+[74:03.04] langraph. See uh in the second class, if
+[74:05.52] you will go and check with the second
+[74:06.72] class, right? Second class. So in the
+[74:10.00] second class, I already explained you
+[74:11.92] what is a node. Okay.
+[74:15.60] And what is the edges?
+[74:18.56] A D g S. So node is what? Node is
+[74:22.24] nothing. It is a function.
+[74:26.80] Okay. Now which function guys? This is a
+[74:29.28] custom function.
+[74:31.36] Custom function. Now inside this
+[74:34.16] function what you can do? You can write
+[74:36.40] your own custom functionality. Okay. So
+[74:39.52] whatever functionality you want to be
+[74:41.20] right here
+[74:43.20] custom functionality. So whatever
+[74:45.84] functionality you want to be write, you
+[74:47.60] can do that. You can write a custom
+[74:49.12] functionality. Let's say uh you wanted
+[74:51.12] to talk, you wanted to call the uh
+[74:53.84] Wikipedia, you can do that. You can
+[74:55.84] write that. Let's say you wanted to call
+[74:57.68] the Gmail. Okay, you can write that
+[75:00.40] functionality. Uh let's say you want to
+[75:02.48] be scrap the internet, right? You can
+[75:05.44] write that functionality. Let's say you
+[75:06.96] wanted to connect with a DB database.
+[75:09.12] Okay, you can write that functionality.
+[75:10.96] So inside this function, you can write
+[75:12.96] anything. This function could be
+[75:14.72] anything. And this uh function only
+[75:17.44] basically right this function only will
+[75:20.16] be using as a tools. Okay, this function
+[75:23.04] only will be using as a tool. I'll tell
+[75:24.80] you that. Now edges is what? Edges is
+[75:27.12] nothing it is a connectivity right it is
+[75:29.60] a connectivity between the function. So
+[75:31.92] let's say we have two function
+[75:34.40] right let's say we have two function
+[75:36.24] function one and what we have function
+[75:39.68] two
+[75:41.92] function two so what we are doing guys
+[75:44.48] we are going to make a connectivity
+[75:46.08] between these two function now uh we we
+[75:49.52] are going to be like make a connectivity
+[75:51.68] using this edges okay using this
+[75:54.48] particular method using this edges now
+[75:57.36] what we'll do so after making this
+[76:00.08] connectivity we'll pass the input right
+[76:03.04] we'll uh like uh through the input and
+[76:05.52] output right so between this function
+[76:07.68] let's say function one is passing
+[76:09.68] something to this function two we'll
+[76:11.92] collect that right function one is
+[76:14.80] passing something to this function two
+[76:16.24] will connect that then function two okay
+[76:19.20] is passing something to function three
+[76:21.84] let's say here is what here is my
+[76:23.92] function three this one so if I'm
+[76:26.88] passing something to this function three
+[76:29.52] I can do it I can create a edge right
+[76:31.84] what I can do guys I can create a edge
+[76:33.84] over here so see this is what this is my
+[76:35.60] edge let me write it one more time so
+[76:37.68] here is what here is my function here is
+[76:40.24] my function three now this is what this
+[76:42.16] is my again one more node okay this is
+[76:44.72] what this is again one more node this is
+[76:47.12] also my node okay this is also one more
+[76:50.08] node this is also what this is also one
+[76:52.64] more node okay so we are going to be
+[76:54.64] create a node guys and we are making a
+[76:56.80] connectivity between what we are going
+[76:58.56] to be make a connectivity between this
+[77:01.12] uh nodes okay we are passing the input
+[77:04.56] okay through throughout this nodes so
+[77:07.04] let's say from function one to function
+[77:09.04] two from function one to function two we
+[77:11.12] are passing something so how we'll be
+[77:12.96] passing that we are going to be pass it
+[77:14.88] using the state okay so we are going to
+[77:17.60] be passing to the state right so
+[77:19.60] function two to function three again
+[77:21.28] what we are doing we are going to be
+[77:22.40] define a state so we are passing it
+[77:23.84] through the state only so through the
+[77:26.48] state only we are passing this inputs
+[77:28.48] between the different different nodes
+[77:30.08] And how we are doing it? We are going to
+[77:31.60] be make the connectivity using this
+[77:33.36] edges. Right? Using this edges. Now we
+[77:35.84] have two kind of edges. One is the
+[77:37.44] normal edge and the second is called the
+[77:39.20] conditional edge. So we are going to be
+[77:41.12] define any sort of a condition. Right?
+[77:42.88] So we'll have to define through this
+[77:44.48] conditional edge. So either we can
+[77:46.56] define the normal edge which is running
+[77:48.32] sequentially or what we can do we can
+[77:50.48] define the conditional edge which can uh
+[77:53.76] which can be on the condition guys it
+[77:56.08] can change the route. Okay. it either it
+[77:58.24] can go into the loop or it can call the
+[78:00.72] different nodes according to the
+[78:02.32] condition whatever condition whatever
+[78:03.84] code we are going to be write. So we
+[78:05.44] have two type of edges one is the normal
+[78:07.28] edges and the second is called the
+[78:08.72] conditional edges. I think this basics
+[78:11.12] is clear. If it is not clear, you can go
+[78:13.12] and check out with my with my uh
+[78:15.12] previous session. Then I already discuss
+[78:17.28] about all this thing or over the
+[78:19.52] channel. I think Chris has already
+[78:21.12] explained this fundamental about the
+[78:22.56] graph and all in a recorded format. You
+[78:24.72] will get so many video okay you can
+[78:26.32] understand that in a better way right I
+[78:28.24] have a limited time so I'm just giving
+[78:29.68] you the overview otherwise uh we can go
+[78:32.32] in more depth. We can take a several
+[78:33.92] example and even I can explain in a more
+[78:36.32] better way but I think you understood
+[78:37.92] with this entire example. Now coming to
+[78:40.08] the next part. So here is what guys this
+[78:42.16] is a node which is nothing which my
+[78:44.08] function what I'm doing I'm going to be
+[78:45.84] create a edges. So over here see this is
+[78:47.68] a normal edge means we are going to be
+[78:49.76] start means what we are passing a input
+[78:52.24] to this create analyst. So this create
+[78:54.40] analyst will create a multiple analyst
+[78:56.40] multiple AI persona and this uh again
+[78:59.60] what I'll do I'll connect with a human
+[79:01.12] feedback. So human feedback we are going
+[79:02.72] to be take a human feedback right now
+[79:04.96] conditional. So here is a conditional
+[79:06.96] edge guys. So human uh will collect a
+[79:10.00] human feedback when initiate all the
+[79:12.08] interview right. So either we'll conduct
+[79:14.48] an interview or we'll end the process.
+[79:17.36] So what is the meaning of it? Let's say
+[79:19.60] if something is not correct right. So we
+[79:22.32] are taking a human feedback and again
+[79:23.92] the AI persona is not correct. So what
+[79:25.68] we can do again basically we can
+[79:27.76] generate that again we can take a human
+[79:29.52] feedback. If everything is fine then
+[79:31.60] we'll end the process. Now guys what
+[79:33.44] we'll do? So after conducting an
+[79:34.88] interview we'll write a report. Uh then
+[79:37.12] guys after conducting interview we'll
+[79:38.96] write a introduction. So from the uh
+[79:41.12] conducting interview okay conducting
+[79:42.96] interview means to research the topic to
+[79:44.88] research about the topic we'll write a
+[79:46.48] conclusion right. So this all the thing
+[79:48.64] is going to be in a parallel then what
+[79:50.56] it'll do guys. So here add edges write
+[79:52.80] report write introduction write
+[79:54.96] conclusion. So all this three nodes is
+[79:57.36] going to be connect to this final node
+[79:58.96] final report and this final report is
+[80:00.96] going to be connect to this end. So here
+[80:02.96] you can see the complete parallelization
+[80:04.88] guys and here you can see the normal
+[80:07.28] edge along with the conditional edge
+[80:09.28] right and then we are going to be
+[80:10.80] compile this graph and then we are going
+[80:12.16] to be return. So whatever input we are
+[80:13.92] going to be passed we are going to be
+[80:15.04] passed through this graph only the graph
+[80:16.88] basically which we are going to be
+[80:18.08] return and then we'll be able to
+[80:19.60] generate the final response. I hope guys
+[80:22.48] uh this entire thing is clear. Don't
+[80:24.00] worry I will code in I will code it in a
+[80:26.48] notebook itself. So I'll take one
+[80:28.40] specific session maybe uh next Tuesday.
+[80:30.56] So we'll code it inside the notebook
+[80:32.24] only. Now once uh if it is clear if this
+[80:36.00] uh understanding is clear right
+[80:37.60] regarding the workflow you can let me
+[80:39.20] know so that I can proceed and I'll
+[80:41.52] share this uh GitHub guys means I will
+[80:43.92] keep this entire code in the main GitHub
+[80:45.84] and I will share with all of you. So if
+[80:47.68] it is clear let me know so that I can go
+[80:49.92] through with each and every node and I
+[80:51.36] can show you the functionality the
+[80:52.88] highle overview I can provide you over
+[80:55.04] here. Okay. And then guys what I'll do
+[80:56.96] I'll provide you the score. You can go
+[80:58.24] through with it. You can check it out.
+[81:00.00] Then in the next class we are going to
+[81:01.52] be coded entirely. Okay. In the notebook
+[81:03.76] itself we'll do that. So if you have any
+[81:05.76] sort of a doubt uh anything you can let
+[81:07.84] me know. You can write in a chat
+[81:10.24] section. Uh I will look into that. I
+[81:12.56] think uh there's so much information I
+[81:14.16] provided in a single go. But if you have
+[81:16.72] any doubt you can let me know guys.
+[81:38.56] I'm just waiting for a reply. If
+[81:40.64] everything is clear,
+[81:43.04] you can write.
+[82:32.48] Okay. Okay. Okay. So, I hope this entire
+[82:35.12] workflow is clear. Just let me know so
+[82:38.24] that I can proceed further. Okay.
+[82:53.60] So what is the difference between the
+[82:55.04] send and the end? Send basically sending
+[82:58.40] the output sorry input uh from one node
+[83:01.12] to the another node. Okay. in parallel
+[83:04.72] uh means it is uh like uh passing right
+[83:09.28] input uh in parallel
+[83:12.24] uh to the different different nodes and
+[83:13.92] end basically it's going to be end the
+[83:15.44] process for the final output so whenever
+[83:18.08] we have to end the workflow we'll use
+[83:20.72] that end node that's it
+[83:24.00] so generally I kind of building back end
+[83:26.08] simple terms bro
+[83:30.88] so join created lang Langra is planet.
+[83:33.36] Lang chain is agent.
+[83:37.68] Lang chain I think you are not getting
+[83:39.92] the differences between the lang chain
+[83:41.28] and lang graph. Anyone uh can I explain
+[83:42.96] in the chat
+[83:44.80] uh what is the differences between the
+[83:46.80] langraph and the lang chain?
+[84:02.32] So when you provide any feedback it will
+[84:04.24] come through start node or will come
+[84:07.76] direct the feedback node
+[84:10.48] start the human feedback human feedback
+[84:12.96] then again it will come to the uh like
+[84:15.52] persona the analyst persona which we are
+[84:17.52] going to be create I'll show you that
+[84:19.12] okay I'm coming to that part so please
+[84:22.80] elaborate the conditional edges okay
+[84:25.36] let's uh discuss about the conditional
+[84:27.12] edges. So let me explain you over here.
+[84:30.48] So what is a conditional edge? So let's
+[84:33.52] say
+[84:35.84] I can explain with a simple example.
+[84:39.28] Uh if I if I'm saying hi, okay,
+[84:44.40] if I'm giving this particular input
+[84:48.96] to the
+[84:51.28] LLM, right? So if I'm passing this
+[84:53.84] particular input to the LLM
+[84:56.96] now lm what lm will do? LLM generate the
+[84:59.84] response right. So LLM will generate
+[85:03.60] some sort of a response.
+[85:06.32] Now see this is what guys this is a
+[85:09.20] simple AI assistant means we are passing
+[85:11.36] an input to the LLM and LLM is going to
+[85:13.20] be generate some sort of a response. Now
+[85:15.12] what I'm doing guys I'm going to be
+[85:16.40] create a agentic flow. Okay where we can
+[85:19.44] access the information. Okay, let's say
+[85:21.60] LM something don't know if I if I'm
+[85:24.48] giving any out of context question to
+[85:27.36] the LLM, let's give the question. The
+[85:31.04] question is basically uh current
+[85:36.56] temperature okay current temperature in
+[85:41.60] Delhi right so here I will write current
+[85:44.16] temperature in Delhi in New Delhi so if
+[85:47.28] I'm going to be write this question so
+[85:49.92] maybe LLM don't know about it so what it
+[85:53.04] will do LLM is going to be look into the
+[85:57.28] some realtime information right so How
+[86:00.32] basically we'll do that? So for that
+[86:02.16] only we'll create some agentic flow,
+[86:04.40] right? So how to do that? Let me explain
+[86:07.20] you. So uh first we'll be having a start
+[86:10.40] node. Let me write over here the start
+[86:12.08] node. Start node. Okay. Now uh this
+[86:16.64] start node through the start node
+[86:18.48] basically what we'll do we'll take a
+[86:19.84] input. Now it's going through the llm
+[86:23.04] right llm. Now LLM is having the
+[86:26.48] capability where it can understand
+[86:28.96] whether I have to perform the tool
+[86:32.00] calling right tool calling or or what I
+[86:37.44] have to do see this tool calling
+[86:38.64] basically to get the real time
+[86:42.88] information real time information means
+[86:45.52] what let's say we want to get the
+[86:48.24] weather information okay weather
+[86:50.96] information real stock information so
+[86:53.20] for that what we can do we can define a
+[86:54.88] tool right we can define a tool okay or
+[86:58.24] else what what we can do we can finally
+[87:00.08] generate a output so let's say the tool
+[87:01.76] calling is not required what we'll do
+[87:04.08] will finally generate the output now how
+[87:08.16] the llm is going to be discriminate
+[87:10.24] whether I have to call a tool or I have
+[87:12.08] to generate a output let's say I'm
+[87:13.84] passing a high let's say here I'm going
+[87:15.84] to be write hi how are you how are you
+[87:21.28] you so this is your normal question. So
+[87:24.48] what LLM will do? LM will take a
+[87:26.40] question. Now LLM is having that
+[87:28.24] capability means I already given the
+[87:31.12] capability to the LLM. Okay. LLM is a
+[87:34.08] capable enough to understand whether I
+[87:37.60] have to call the realtime tool. Okay. Or
+[87:40.32] I just have to generate a output. So how
+[87:42.16] how I given a capability to the LLM?
+[87:44.16] Basically I provided some prompt to the
+[87:45.92] LLM, some instruction. Prompt is
+[87:48.16] nothing. It is just called the
+[87:50.08] instruction. Okay. It is just called the
+[87:52.72] instruction and we have bind the tool
+[87:56.24] okay we have bind the tools tools to the
+[88:00.24] llm right so llm is having that context
+[88:03.04] if any question is coming related to the
+[88:05.12] real-time information or the specific
+[88:06.80] information which I cannot answer so for
+[88:08.88] that I will call a tool so let's say I
+[88:11.04] have a question my question is hi how
+[88:13.20] are you so lm will check okay uh I can
+[88:16.96] answer this question so how the route
+[88:18.96] will be follow route is going to be
+[88:20.96] followed like See the question will come
+[88:22.96] to the LLM and then LLM will think okay
+[88:26.00] how hi how are you llm will generate a
+[88:28.72] output so I will directly get the output
+[88:30.72] from the llm and my output is coming
+[88:33.84] through the end node okay so this output
+[88:36.08] is coming from the end node so let's see
+[88:38.16] if I'm going to be asked a next question
+[88:39.84] or my next question is going to be uh
+[88:42.16] what's a weather right so what is a
+[88:45.52] weather
+[88:48.00] what is a weather
+[88:50.48] here is the question what is the weather
+[88:53.76] in Delhi okay so it's a current weather
+[88:57.92] now llm will see what is the current
+[89:00.48] weather in Delhi I cannot answer so for
+[89:02.88] that I will call the tool okay so what l
+[89:06.88] will do l will take a question this this
+[89:08.88] particular question and it will identify
+[89:12.00] it will identify okay current weather
+[89:15.52] current weather so for this current
+[89:18.16] weather what I have to do I have to call
+[89:20.40] the weather API. Okay, weather API. Now
+[89:24.88] this weather API where I define this
+[89:27.36] weather API, this weather API basically
+[89:29.52] I defined as a tool. Okay, so this
+[89:31.84] weather API basically we have defined as
+[89:33.76] a tool where we have defined over here
+[89:35.60] we have defined. Let me highlight that
+[89:38.24] just a second. So this is the weather
+[89:42.00] API. Yeah. So this weather API basically
+[89:45.20] we have defined as a tool. Okay. Here is
+[89:49.20] what here is my weather API. Now see how
+[89:51.36] this flow is going to be decided. So
+[89:53.44] what I'll do guys here I will be writing
+[89:56.64] I will be creating one router actually
+[89:58.96] router. Okay this router r o u t e r.
+[90:04.88] Now this router basically this this
+[90:06.80] router is nothing. It is a function. So
+[90:08.80] it will understand okay it is a tool
+[90:10.40] call. Now I have to pass it over here.
+[90:12.88] So this is going to be a conditional
+[90:15.68] router. Okay, conditional router means
+[90:18.24] what? Conditional router means uh this
+[90:20.80] is going to be a conditional edge. Okay,
+[90:22.80] and how we are going to be uh see how we
+[90:25.28] are going to be create a conditional
+[90:26.32] edge. Langraph automatically giving
+[90:28.16] langraph is giving one method in a back
+[90:30.16] end. We can use that conditional edge
+[90:31.68] method and we can create that. Okay, we
+[90:33.52] can define the router over there and
+[90:34.80] behalf on that we can decide. So we are
+[90:37.36] going to be define a router. Again this
+[90:39.20] router is nothing. It is my function
+[90:40.96] only. Okay, it is my function only. So
+[90:43.44] just understand the entire flow. Let us
+[90:45.20] understand this entire architecture what
+[90:47.04] is happening. So if the input is coming
+[90:49.84] to the LLM lm is based on the given
+[90:52.96] prompt or means the instruction based on
+[90:55.68] the tool understanding okay whatever
+[90:57.68] tool basically you have we have bind to
+[90:59.36] the LLM right so behalf on that the LLM
+[91:02.88] is able to think whether I have to
+[91:05.28] directly generate a response or I have
+[91:07.04] to perform the tool calling right so uh
+[91:09.92] if I'm giving this particular question
+[91:11.76] so LLM is able to understand okay I have
+[91:14.16] to do the tool calling so I will follow
+[91:16.24] this path right so for The tool calling
+[91:18.16] guys what I have done I have created one
+[91:19.68] router I have introduced one router over
+[91:22.08] here. So this router inside this router
+[91:24.16] only I have written a functionality if
+[91:26.00] there is a tool calling then redirect my
+[91:28.64] flow to this tool right to redirect my
+[91:31.84] flow over the tool. Getting my point
+[91:34.56] this entire functionality in the entire
+[91:36.72] functionality this conditional edge this
+[91:38.56] router actually is playing a very
+[91:40.16] important role. LLM is able to
+[91:42.16] understand okay I have to call a tool
+[91:44.08] but how I will be ending up right with
+[91:46.96] that tool how I will end up with that
+[91:49.04] tool okay how I'm going to be land to
+[91:50.88] that tool right so for that only I'm
+[91:52.96] going to be define this router and this
+[91:54.40] router is nothing it is a function only
+[91:56.16] so just keep in mind uh this entire
+[91:58.96] diagram if the conditional edge concept
+[92:01.84] is coming easily you can understand it
+[92:04.16] if you want to know more about it in a
+[92:05.68] practical term I already define I
+[92:07.68] already explained you in my second uh
+[92:09.44] lecture you can understand it over
+[92:11.36] there. Getting my point guys, it's very
+[92:14.16] very easy to understand and see if you
+[92:16.32] want to understand this entire tool
+[92:17.76] calling and all. So simply you can
+[92:19.60] understand through the react right react
+[92:22.32] agent reasoning and action agent there
+[92:24.80] not only the one tool you can uh keep
+[92:26.64] the simple uh you can keep the multiple
+[92:28.40] tool and even you can create the loops
+[92:31.04] over here right. So after generating a
+[92:33.12] output uh after generating a output from
+[92:35.92] the tool again it is going to the LLM
+[92:37.76] and LM is deciding finally whether I
+[92:39.76] have to generate a final output or I I
+[92:41.92] required couple of more tool calling. So
+[92:45.60] you can connect it with the various tool
+[92:47.36] the multiple tools. Okay. So that entire
+[92:49.60] thing is possible uh using a react
+[92:52.00] agent. React basically it is a one kind
+[92:54.00] of agent. Okay. Where we can do the
+[92:55.76] entire planning right in a back and
+[92:57.92] forth in a loop itself.
+[93:00.16] Fine. I hope uh it is clear guys. So now
+[93:04.32] let me know if this thing is clear so
+[93:06.56] that I can proceed further. So this
+[93:09.44] architecture is clear. I just wanted to
+[93:12.32] know in the chat this one this entire
+[93:15.52] architecture.
+[93:21.92] Yes.
+[93:26.32] Tell me guys so that uh we can proceed.
+[93:31.60] Lang chin is a tool calling present in
+[93:33.12] the langraph of the orchestration.
+[93:34.48] Correct. Your understanding is now
+[93:37.36] clear.
+[93:39.96] [clears throat]
+[94:17.84] Okay, I think people are saying yes sir,
+[94:20.32] it is clear. What is the meaning of the
+[94:21.84] react? React means reasoning and action.
+[94:24.40] Okay, reasoning and the action. So guys,
+[94:28.24] if you are liking the session, please
+[94:30.32] don't forget to hit a like button. uh it
+[94:33.84] is very important so that this video can
+[94:37.04] reach out to the multiple people who
+[94:39.44] required uh this type of understanding.
+[94:42.80] Okay.
+[94:45.28] So this uh code is generated by Bish
+[94:47.52] model. So actually I have used a GPT uh
+[94:50.48] five model here for generating this one.
+[94:54.80] Uh even I have used the cloud a also. So
+[94:58.40] cloud opus and the GPD 5. Okay. Right.
+[95:08.80] So let's do one thing guys. Let's uh go
+[95:10.64] through with each and every method here.
+[95:12.56] First uh we'll start from the create
+[95:14.64] analyst. Right. So this uh session is
+[95:17.12] just to give you the high level
+[95:18.32] understanding and I'll provide you this
+[95:19.84] code. In the next class guys, we are
+[95:21.60] going to be design this we are going to
+[95:23.04] be code this entire workflow. So don't
+[95:25.20] miss the next class which I'm going to
+[95:26.64] take on uh next Tuesday. Okay. Today
+[95:28.72] Saturday I'll take two day uh I will
+[95:31.20] take two days gap and then again I will
+[95:33.04] conduct one more session on Tuesday. So
+[95:35.52] uh just click uh I'm clicking on this
+[95:37.28] create analyst. See this is the method.
+[95:39.76] So what this uh method is doing so it's
+[95:42.24] going to be create a analyst. So this is
+[95:44.72] the uh it is taking the state. Okay this
+[95:47.52] is the type of state generate analyst
+[95:50.00] state. Uh from the state guys we are
+[95:52.48] going to be fetch the topic on which
+[95:54.32] topic uh we want to generate the
+[95:56.72] research. we want to perform the
+[95:58.64] research then max analyst how many
+[96:00.48] analyst we want to perform the research
+[96:03.12] okay with the human feedback is required
+[96:05.60] or not right so here we'll collect the
+[96:07.76] human feedback getting my point guys so
+[96:11.20] we have configured the llm over here so
+[96:13.60] this lm what will do this llm basically
+[96:16.72] it will give us the analyst so we have
+[96:19.20] given the complete prompt and all
+[96:20.64] everything so this llm is going to be
+[96:22.32] written analyst so this is the first
+[96:24.48] function right this is the first
+[96:26.96] function function. Now let's uh look
+[96:29.68] into the next one. So here is the flow.
+[96:32.80] So it's going to be create analyst. Now
+[96:34.32] let's look at the human feedback. How
+[96:35.84] the human is taking a feedback. So uh
+[96:38.64] human will provide a feedback. So what
+[96:40.96] we are doing? So pause note for the
+[96:42.96] human analyst feedback. So what we are
+[96:45.84] doing here? So we are just going to be
+[96:48.16] like waiting for the human feedback.
+[96:50.32] Okay. So if a human will provide a
+[96:53.44] feedback, we'll proceed further. If a
+[96:55.84] human is not providing us
+[96:58.56] gues again we'll proceed with the report
+[97:01.28] generation. Okay. So in both cases if
+[97:03.68] human is providing a feedback according
+[97:05.36] to that we are going to be refresh the
+[97:06.72] output. If human is provide not
+[97:08.56] providing then we'll proceed as it is.
+[97:11.36] Now uh let's look into the next one. So
+[97:14.80] we have the next node also interview
+[97:17.36] graph. Okay. So this is the interview
+[97:18.96] graph and see interview graph builder.
+[97:21.28] So this is the separate file which I
+[97:22.80] created. Now if I'll go inside this see
+[97:24.88] here is a class interview club builder.
+[97:27.52] What it is doing guys? Uh it's going to
+[97:29.44] be create it's going to be perform the
+[97:31.52] interview whatever analyst we are going
+[97:33.20] to be create right. So those analyst is
+[97:35.52] going to be perform the research through
+[97:37.12] where through the internet right now. So
+[97:39.68] here what we have we have a analyst here
+[97:41.76] we'll get a message. Okay now what I'll
+[97:44.56] do so see this is a system prompt the
+[97:48.24] complete prompt basically I'm going to
+[97:50.00] be collect over here. Now after that
+[97:52.24] what I'm doing guys I am providing it to
+[97:54.32] the LLM. Okay this one. So what LLM will
+[97:57.92] do according to the prompt guys LLM is
+[98:00.16] going to be generate the multiple
+[98:02.08] question behalf on this question only we
+[98:04.80] are doing a research from the internet.
+[98:07.44] So analyst is there message is there now
+[98:10.32] what we are doing we are giving a
+[98:11.76] specific prompt to the LLM. See here is
+[98:13.36] a LLM call. It's going to be generate a
+[98:15.84] multiple question. Okay. Now after that
+[98:18.40] what will happen? See we are going to be
+[98:19.84] generate a question. Now let's look into
+[98:21.68] the next node. So next node is a search
+[98:24.40] web. So inside the search web only we
+[98:26.88] are doing a multiple tool calling. So uh
+[98:29.84] here you can see so we are getting a
+[98:31.84] search query. Okay. Search query is
+[98:33.84] nothing. It is a question which is being
+[98:35.36] generated by the AI only. Then here you
+[98:38.24] can see we are going to be fetch the
+[98:39.76] information from the internet. Right? We
+[98:42.24] are going to be call a tably for the
+[98:43.84] internet scrapping. So we are searching
+[98:46.48] a document over here. Okay. will get the
+[98:48.56] complete detail inside this variable.
+[98:51.04] Now after that what we'll do guys so
+[98:52.88] focus on the return statement also I'll
+[98:54.96] come to the return statement. First of
+[98:56.48] all let me uh give you the overview of
+[98:58.72] the other different function. Now after
+[99:00.96] that after like search web what we'll do
+[99:03.60] we generate a answer. So here is a
+[99:05.76] complete flow for generating answers. So
+[99:08.24] what we are doing we have analyst we
+[99:09.60] have a message we have a context. Now
+[99:11.44] again we have a llm call okay and we are
+[99:13.92] giving the complete prompt to the llm we
+[99:16.24] have defined a separate prompt file so
+[99:18.56] where I have defined the complete
+[99:19.76] different different prompt okay so we we
+[99:21.92] are giving a prompt to the llm and what
+[99:24.32] this llm is doing uh llm is generating a
+[99:27.76] final response right now after that guys
+[99:30.16] what we'll do so here is my final
+[99:32.64] generated answer now I will save this
+[99:34.32] interview okay so here is my uh save
+[99:37.44] interview now let me show you the save
+[99:39.12] interview see uh this is the save
+[99:41.36] interview. We'll save the interview in a
+[99:43.12] buffer. Okay, this entire interview and
+[99:45.68] after saving the interview guys, what
+[99:47.44] we'll do? We'll write a section. So,
+[99:49.44] this is a note for writing a section.
+[99:52.00] So, each and every functionality we have
+[99:54.08] written in a different different uh
+[99:56.40] methods. Okay. So, write a section. So,
+[99:58.64] we have a context, we have analyst and
+[100:00.64] again guys, we have some system prompt
+[100:02.48] and we have the entire prompt and all
+[100:04.08] everything. And again, we have a lm call
+[100:06.56] which is associated with this right
+[100:08.16] section. And then we are going to be
+[100:09.76] generate a final section. So with every
+[100:11.92] function one LLM call is associated and
+[100:14.16] we are giving some instruction and we
+[100:16.16] have defined the different models
+[100:17.92] different schema the pyic schema to
+[100:20.16] generate a structure output. Okay. So in
+[100:22.72] LLM guys in agentic flow let me tell you
+[100:25.92] what all thing is required. The first
+[100:27.76] thing is the parentic model for
+[100:29.92] generating a structure output. Second
+[100:31.44] thing is a state. Third thing basically
+[100:33.52] prompt the instruction system prompt as
+[100:35.60] well as the user prompt. Okay. And the
+[100:37.76] fourth is a llm call. If you are going
+[100:40.32] to be integrate everything right in a a
+[100:42.40] separate separate functionality in a
+[100:43.76] different different functionality then
+[100:45.44] basically you can create a agentic flow
+[100:47.52] and the live example in front of you
+[100:49.52] only. So this is the complete agentic
+[100:51.52] flow guys and here you can see the edges
+[100:53.68] the connection between the different
+[100:54.88] different edges. Now what I will do in
+[100:57.04] the next class I will code this entire
+[100:59.20] flow this main flow interview builder
+[101:01.28] graph as well as this report generation
+[101:04.16] workflow inside the IPB. So again let me
+[101:07.36] show you this is the uh like complete
+[101:09.92] flow. Okay. So here I already capped it.
+[101:12.88] I will share this note so that you can
+[101:14.72] refer it and again I'm sharing this
+[101:17.52] GitHub link in the chat. So guys
+[101:18.96] directly take it from there. See this is
+[101:20.72] the flow guys. Create analyst human
+[101:22.64] feedback and in between actually we have
+[101:24.72] a loop. Okay. Uh if the human feedback
+[101:28.08] see we are going to be create a human
+[101:29.36] feedback. We are again going to the
+[101:31.12] create analyst and uh if the analyst
+[101:34.48] like is not up to the mark again we can
+[101:36.64] pass again like human can give some
+[101:38.80] feedback and again like we can create
+[101:41.28] some analyst. Okay is the AI analyst
+[101:43.60] automatically I is going to be create
+[101:44.96] this analyst to search the information
+[101:47.20] and then this is the rest of the graph.
+[101:50.24] So what I'm doing guys I'm giving you
+[101:51.76] this GitHub link so that you can follow
+[101:54.00] it. Okay. Uh I have kept the entire code
+[101:57.68] over the GitHub itself. Just follow it
+[101:59.76] guys and then I'll keep uh I'll code in
+[102:02.32] front of you inside the uh inside the
+[102:05.28] notebook itself and uh so that you can
+[102:08.80] understand just a second again I'm
+[102:11.84] giving you that this is the YouTube
+[102:13.60] crash course I think I already provided
+[102:15.20] you that uh this one is a main GitHub so
+[102:20.48] here is a GitHub guys just go and check
+[102:23.04] I'm giving you the link in the chat
+[102:24.48] itself okay
+[102:27.60] once you got it just let me know. Give
+[102:29.60] me a quick thumbs up so that uh
+[102:33.60] we can proceed.
+[102:44.40] Whatever code I'm showing you, you will
+[102:45.84] get it through this GitHub. Okay.
+[103:07.84] just take this code from this repo.
+[103:09.84] Okay, I'll uh keep it inside the latest
+[103:12.80] one, the YouTube crash course so that
+[103:14.32] you can uh like pull it later on. We'll
+[103:16.56] do that means in the next class. Now
+[103:18.88] let's uh do one thing. Let's uh run it
+[103:20.56] one more time and let's see whether my
+[103:23.12] application is performing well or not.
+[103:25.28] So what I'll do guys, I'll just refresh
+[103:27.28] it
+[103:28.96] and uh
+[103:33.04] I think my server is running. Let me
+[103:34.88] check.
+[103:45.85] [snorts]
+[104:12.48] Yeah guys, so what I'll do? I'll log in.
+[104:14.88] Okay. So first I'll log in. Now what
+[104:17.20] I'll do? I'll uh write any topic impact
+[104:20.40] of the gen developer for the job. So
+[104:23.04] yeah uh it's going to be generate a
+[104:25.12] persona. If you want to check the entire
+[104:26.88] details, see it is going to be log in
+[104:28.40] the form of logs in the back end. It is
+[104:30.80] showing you over the console itself. Now
+[104:33.76] the generated report basically we will
+[104:35.44] get inside the folder as well. Let me
+[104:38.40] show you the final folder. See here it
+[104:40.64] is guys this one generated report. So
+[104:42.96] whatever topic you are going to be write
+[104:44.88] you will get the report inside the
+[104:46.88] specific folder. Right? This one this is
+[104:49.68] the complete folder. If you want to
+[104:51.84] capture the log guys, see here the log
+[104:53.84] file is also being created. Okay,
+[104:56.24] regarding every execution, you will get
+[104:58.40] a log. See this is the log. So you can
+[105:01.04] navigate to this log, you can read what
+[105:02.80] all thing is being captured. So uh along
+[105:05.60] with every execution one log file is
+[105:07.52] associated. Okay. Now human will provide
+[105:10.24] a feedback. Uh let's say I don't want to
+[105:12.32] give the feedback. I'll simply click on
+[105:13.84] the submit feedback. Means uh this could
+[105:17.04] be ins basically you can look into that
+[105:19.44] or I'll do it means uh I can give yes or
+[105:22.48] no kind of option where if human want to
+[105:25.04] give the feedback then it will click on
+[105:26.80] that if someone don't want to give the
+[105:28.64] feedback it will not click on that okay
+[105:30.80] so that kind of functionality also we
+[105:32.32] can append over here so yeah it is uh
+[105:35.92] like generating a report and uh it will
+[105:38.40] take some time because the LM call is
+[105:40.08] there and see guys multiple LLM call is
+[105:42.80] associated so definitely it take
+[105:45.60] cost right uh multiple uh tokens is
+[105:49.12] being consuming in every function so the
+[105:51.92] cost will be associated now let's look
+[105:53.68] into the PDF so this time I'm going to
+[105:55.20] be download the PDF now here is what
+[105:57.60] guys this is the complete PDF okay so
+[106:00.56] see the topic is the impact of geni on
+[106:02.40] the developer jobs so it has uh did it
+[106:04.64] has performed the entire research from
+[106:06.00] the internet and then behalf on that
+[106:08.72] it's going to be generated output now
+[106:10.00] see this output basically it's coming in
+[106:11.60] the middle but you can adjust that there
+[106:13.52] is not a big deal you and adjust the PDF
+[106:16.24] accordingly. Okay. Uh I hope uh this is
+[106:19.76] clear. Now any more question guys? Uh if
+[106:21.68] you have any more question please let me
+[106:23.20] know. Please go through with this video
+[106:24.96] again if you have any doubt and
+[106:27.68] understand this entire workflow how the
+[106:30.96] application is working. Now in the next
+[106:32.88] class in one more class basically we'll
+[106:34.80] code it inside the notebook. Okay. So
+[106:36.56] that you will get a better understanding
+[106:38.32] of it.
+[106:40.08] [clears throat]
+[106:57.44] So any more question anything did you
+[106:59.28] like this session? If you like it guys
+[107:01.68] uh just let me know because uh today uh
+[107:06.00] like no more coding uh I already given
+[107:08.80] you the code. Just look into that.
+[107:11.44] And this uh kind of project guys is
+[107:13.84] going to be create a real impact. Okay.
+[107:16.88] If you if you are able to understand
+[107:19.28] like how to design such system then uh
+[107:21.92] guys you can work anywhere
+[107:28.40] the YouTube channel when you starting
+[107:34.00] will will let you know if if I'm going
+[107:35.68] to be start any session in the near
+[107:37.52] future.
+[107:49.20] What's the use of a docker file? Docker
+[107:50.88] file to dockerize the application. So if
+[107:54.08] I want to like run it on any container,
+[107:56.32] right, on any server, I will create a
+[107:58.24] docker image of my application. That's
+[108:00.00] the use of the docker file.
+[108:20.24] Okay fine. So guys just take the code
+[108:22.80] just go through with it and uh
+[108:24.72] understand it completely what is
+[108:27.20] happening focus on the workflow side.
+[108:29.84] Okay. So uh we'll uh start from here
+[108:32.24] itself in the next class. one more
+[108:33.84] session I'll take uh just to explain you
+[108:36.96] and now uh if you have any more query uh
+[108:40.24] regarding the free course community
+[108:42.32] session course anything guys just let us
+[108:45.04] know in the comment section if you're
+[108:46.96] going to be like uh write in a comment
+[108:49.04] section then uh definitely I'll reply
+[108:51.20] over there if you're new to this channel
+[108:53.28] means if you are watching it first time
+[108:55.20] then please registered over here so that
+[108:57.76] you can get the access of our dashboard
+[109:00.80] and the materials okay so we are
+[109:02.56] providing you over here all the session
+[109:05.28] and all everything is listed. Okay. And
+[109:08.32] if you want to know more about me then
+[109:10.64] uh check out with my LinkedIn uh there
+[109:13.28] you will uh get to know about my
+[109:15.44] experience and all everything. Okay.
+[109:19.68] So I hope guys uh this uh uh agentic
+[109:22.96] crash course is adding some value in
+[109:25.36] your learning. uh you are able to
+[109:27.12] understand that how to integrate the
+[109:28.48] workflow into the uh end to end project
+[109:31.84] and how to keep like modularize it.
+[109:34.24] Okay. Uh it's not a big deal. Uh we can
+[109:37.20] provide certain instruction to the
+[109:39.04] different modules model sorry different
+[109:41.44] co-pilot system to the models right it
+[109:44.08] can generate that but again to
+[109:45.84] understand the fundamental at least to
+[109:48.00] code a one project from scratch it is
+[109:50.32] very much required.
+[109:57.44] Fine. So yeah, I think uh this is it
+[110:00.48] guys for this session. Uh uh I will not
+[110:04.72] like u uh yeah take much time now
+[110:08.80] because I know it is Saturday and uh
+[110:11.36] yeah everyone uh is enjoying their
+[110:13.36] holiday. So now I'll meet you on Monday
+[110:16.08] or Tuesday. Uh we'll we'll schedule one
+[110:18.80] more session there. Uh we'll end up this
+[110:21.84] project. Okay. and we'll discuss
+[110:24.24] something else after that. Uh okay. Uh
+[110:26.72] next week I'm planning couple of more
+[110:28.64] things. So I'll let you know. So yeah
+[110:30.80] fine uh if you have any doubt anything
+[110:32.88] let me know. Let me in the comment
+[110:34.08] section or directly you can ping me over
+[110:35.52] the LinkedIn. Until guys uh thank you.
+[110:38.16] Bye-bye. Take care and don't forget to
+[110:39.92] run this project. I will provide all the
+[110:42.08] commands and all over everything. Uh
+[110:44.56] okay inside the read me if you want
+[110:46.56] more. But yeah this much is sufficient.
+[110:48.80] You just have to install the project and
+[110:50.96] uh uh run the account.tx. txt and uh run
+[110:54.32] this command. Okay, you will be able to
+[110:55.92] run the project. But yeah, uh the thing
+[110:58.16] is you should have the API key inside
+[111:00.08] the env file. Then only you can generate
+[111:02.40] something from the L. Fine. So guys, uh
+[111:05.92] yeah, I'll see you in the next class. Uh
+[111:08.16] thank you. Bye. And yeah, please hit the
+[111:10.56] like and leave your thoughts in the
+[111:11.76] comment section. I'll see you in the
+[111:13.36] next class. Thank you.

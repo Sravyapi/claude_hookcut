@@ -23,7 +23,7 @@ def _build_niche_config() -> str:
     return "\n".join(lines)
 
 
-def _build_prompt_skeleton(niche: str, transcript: str, language: str, rules_section: str) -> str:
+def _build_prompt_skeleton(niche: str, transcript: str, language: str, rules_section: str, interview_mode: bool = False) -> str:
     """Build the complete LLM prompt with a pluggable rules section.
 
     This is the single source of truth for the prompt template. Both
@@ -44,8 +44,43 @@ def _build_prompt_skeleton(niche: str, transcript: str, language: str, rules_sec
     hook_types_str = " | ".join(HOOK_TYPES)
     funnel_roles_str = " | ".join(FUNNEL_ROLES)
 
-    return f"""You are an expert short-form video attention analyst. Extract the strongest hook segments from the transcript at the bottom of this prompt.
+    interview_section = ""
+    if interview_mode:
+        interview_section = """
+════════════════════════════════════════════
+INTERVIEW DYNAMICS (multi-speaker conversation detected)
+════════════════════════════════════════════
 
+THIS IS AN INTERVIEW. The transcript contains [Speaker A], [Speaker B] etc. labels.
+
+The BEST interview hooks are EXCHANGES between speakers — NOT monologues from a single person.
+A single speaker talking for 30+ seconds is a monologue, not an interview hook. Avoid these.
+
+WHAT MAKES A GREAT INTERVIEW HOOK:
+- A pointed QUESTION from the host followed by a revealing ANSWER from the guest (or vice versa)
+- Back-and-forth DISAGREEMENT or DEBATE where speakers challenge each other
+- A moment where one speaker says something that visibly surprises or redirects the other
+- A rapid exchange where both speakers build on each other's points
+- The host pressing harder after an evasive answer ("But really, are you worried about that?")
+
+WHAT TO AVOID:
+- Long monologues from a single speaker (even if the content is good — save those for non-interview mode)
+- Segments where only one person speaks. At MINIMUM 3 of your 5 hooks must contain dialogue from 2+ speakers.
+
+SPEAKER FIELD:
+- Each hook MUST include primary_speaker field
+- If the hook is a genuine exchange between speakers, set primary_speaker to "Speaker A & Speaker B" (or whichever speakers are involved)
+- Only use a single speaker label (e.g. "Speaker A") if that speaker truly dominates the hook segment
+
+"""
+
+    primary_speaker_field = ""
+    if interview_mode:
+        primary_speaker_field = """    "primary_speaker": "Speaker A & Speaker B for exchanges, or single speaker label if one dominates",
+"""
+
+    return f"""You are an expert short-form video attention analyst. Extract the strongest hook segments from the transcript at the bottom of this prompt.
+{interview_section}
 ════════════════════════════════════════════
 OBJECTIVE
 ════════════════════════════════════════════
@@ -78,6 +113,11 @@ DIALECT AND VARIANT AWARENESS:
 ════════════════════════════════════════════
 HARD CONSTRAINTS (apply to every stage)
 ════════════════════════════════════════════
+
+DURATION GUIDANCE:
+- Strongly prefer hooks that are 10 seconds or longer. Hooks shorter than 10s almost never build enough tension, curiosity, or narrative arc to drive complete watch and source video pull.
+- If a candidate is under 10s, consider expanding its boundaries to include adjacent sentences that complete the tension arc. Only keep a sub-10s hook if it is exceptionally dense, self-contained, and scores 8+ on both information_density and standalone_clarity.
+- When in doubt between a shorter and longer version of the same hook cluster, choose the longer version.
 
 BOUNDARY RULES:
 - Start at a complete sentence beginning; end at a sentence boundary or open loop
@@ -307,7 +347,7 @@ EXACTLY 5 hooks. Always 5. Never fewer.
     "hook_type": "one type from the taxonomy above",
     "funnel_role": "one role from the list above",
     "cognitive_tension": "one of: contradiction | unfair_advantage | hidden_knowledge | identity_challenge | loss_risk | paradigm_shift",
-    "scores": {{
+{primary_speaker_field}    "scores": {{
       "scroll_stop": 0,
       "curiosity_gap": 0,
       "stakes_intensity": 0,
@@ -340,16 +380,16 @@ TRANSCRIPT:
 {transcript}"""
 
 
-def build_hook_prompt(niche: str, transcript: str, language: str = "English") -> str:
+def build_hook_prompt(niche: str, transcript: str, language: str = "English", interview_mode: bool = False) -> str:
     """
     Build the complete LLM prompt for hook identification.
     Encodes all 17 rules (A-Q), 4-stage pipeline, 10-dimension scoring,
     and niche/language context.
     """
-    return _build_prompt_skeleton(niche, transcript, language, _HARDCODED_RULES_SECTION)
+    return _build_prompt_skeleton(niche, transcript, language, _HARDCODED_RULES_SECTION, interview_mode=interview_mode)
 
 
-def build_hook_prompt_from_rules(rules: list[dict], niche: str, transcript: str, language: str = "English") -> str:
+def build_hook_prompt_from_rules(rules: list[dict], niche: str, transcript: str, language: str = "English", interview_mode: bool = False) -> str:
     """Build hook prompt using provided rules instead of hardcoded rules.
 
     Args:
@@ -373,4 +413,4 @@ def build_hook_prompt_from_rules(rules: list[dict], niche: str, transcript: str,
     last_key = rules[-1]["rule_key"]
     rules_section = f"{len(rules)} RULES ({first_key}-{last_key}):\n{rules_text}"
 
-    return _build_prompt_skeleton(niche, transcript, language, rules_section)
+    return _build_prompt_skeleton(niche, transcript, language, rules_section, interview_mode=interview_mode)

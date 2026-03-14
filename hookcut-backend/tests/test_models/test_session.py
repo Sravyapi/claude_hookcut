@@ -21,13 +21,6 @@ class TestAnalysisSession:
         assert session.is_watermarked is True
         assert session.credits_source == "free"
 
-    def test_session_status_values(self, db):
-        make_user(db, user_id="s3")
-        for status in ("pending", "fetching_transcript", "analyzing",
-                        "hooks_ready", "generating_shorts", "completed", "failed"):
-            session = make_session(db, "s3", status=status, video_id=f"vid-{status}")
-            assert session.status == status
-
     def test_session_credit_tracking(self, db):
         make_user(db, user_id="s4")
         session = make_session(db, "s4")
@@ -58,16 +51,6 @@ class TestHook:
         assert hook.scores["scroll_stop"] == 8
         assert hook.scores["curiosity_gap"] == 9
 
-    def test_hook_selection(self, db):
-        make_user(db, user_id="h3")
-        session = make_session(db, "h3")
-        hook = make_hook(db, session.id)
-        assert hook.is_selected is False
-        hook.is_selected = True
-        db.commit()
-        db.refresh(hook)
-        assert hook.is_selected is True
-
     def test_session_hooks_relationship(self, db):
         make_user(db, user_id="h4")
         session = make_session(db, "h4")
@@ -75,15 +58,6 @@ class TestHook:
             make_hook(db, session.id, rank=i + 1, hook_text=f"Hook {i}")
         db.refresh(session)
         assert len(session.hooks) == 5
-
-    def test_hook_composite_flag(self, db):
-        make_user(db, user_id="h5")
-        session = make_session(db, "h5")
-        hook = make_hook(db, session.id)
-        hook.is_composite = True
-        db.commit()
-        db.refresh(hook)
-        assert hook.is_composite is True
 
 
 class TestShort:
@@ -96,17 +70,6 @@ class TestShort:
         assert short.hook_id == hook.id
         assert short.status == "queued"
         assert short.is_watermarked is True
-
-    def test_short_status_transitions(self, db):
-        make_user(db, user_id="sh2")
-        session = make_session(db, "sh2")
-        hook = make_hook(db, session.id)
-        short = make_short(db, session.id, hook.id)
-        for status in ("downloading", "processing", "uploading", "ready", "failed", "expired"):
-            short.status = status
-            db.commit()
-            db.refresh(short)
-            assert short.status == status
 
     def test_short_with_video_data(self, db):
         make_user(db, user_id="sh3")

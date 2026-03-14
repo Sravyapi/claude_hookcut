@@ -1,0 +1,1757 @@
+[0:00.00] After the examination, did you know
+[0:01.36] you're definitely getting a under 100
+[0:03.04] rank?
+[0:04.00] Um
+[0:05.92] yeah. Uh I knew
+[0:11.52] the moment. So I wrote my exams. I
+[0:13.68] handed off my exam book to my dad. I
+[0:15.92] would mark my answers in that and they
+[0:18.24] would just take it in duction like try
+[0:19.76] figuring out okay how many marks you're
+[0:21.60] going to get and so on. So I think dures
+[0:24.08] he wrote on a piece of paper 1 to 10 and
+[0:27.12] gave it to my dad. Sometimes uh it is it
+[0:30.40] is very easy to compare you know your
+[0:32.72] with your batchmates like even with my
+[0:34.72] PhD batchmates um if I purely think in
+[0:37.52] terms of like how much money I'm making
+[0:39.28] I'm not even close to like you know
+[0:41.44] making the most money compared to my b
+[0:43.28] my batch mates are making like insane
+[0:44.88] amount of money
+[0:45.76] I'm going to give you some J drama now
+[0:47.52] so my team told me let's do questions
+[0:49.60] with him like you both solve a J problem
+[0:51.60] and I remember
+[0:52.64] oh my
+[0:54.48] building skills right like building
+[0:56.48] engineering skills especially Especially
+[0:58.16] for CS there is so much content online.
+[1:02.88] You as a person are focused enough on
+[1:06.40] what you want to achieve and are not
+[1:08.48] willing to stop at anything to achieve
+[1:10.16] that you can really upskill uh remotely.
+[1:12.96] If not in IT let's say you're the same
+[1:15.12] person but
+[1:16.88] God forbid you went you were sick on IT
+[1:19.60] day your exam got rigged something
+[1:21.68] happened you had to join a tier three
+[1:23.76] college. It's not like you can drop.
+[1:25.60] Could you have achieved a similar
+[1:26.88] outcome or what you would have done in
+[1:28.40] that case?
+[1:31.84] I think
+[1:34.45] [Music]
+[1:37.44] so. Hi everyone, welcome to a new pod.
+[1:39.68] Today we have Shubam with us. Shoubam is
+[1:41.92] my schoolmate more specifically my
+[1:44.64] tuition mate. We went to tuition
+[1:46.24] together in 11th and 12th and he got a 6
+[1:50.32] back in 2014. I got a 658. Big gap, I
+[1:54.08] know. So we'll try to understand uh how
+[1:56.80] our journey sort of went over the last 6
+[1:59.12] years. It's been 10 years since we got
+[2:01.12] into IITs. 6 years since we graduated.
+[2:03.76] He went to IIT Bombay for CS. I went to
+[2:05.60] ITR for CS. We'll understand his
+[2:08.16] journey. What does the network actually
+[2:10.08] provide you? Is there something special
+[2:11.52] happening in IIT? How can it be
+[2:12.88] replicated outside IITs? Is there a way
+[2:15.44] to create a network for much more people
+[2:17.76] or is it like something very specific
+[2:19.20] that's happening in these institutions?
+[2:21.36] uh that leads to heavy outcomes. With
+[2:24.08] that, Shubam, thank you for coming.
+[2:26.16] Could you give us a brief about
+[2:27.36] yourself?
+[2:29.28] Thank you so much for having me. Um
+[2:33.36] I think you've uh already given like a
+[2:35.60] pretty good brief. So, uh post I'll um
+[2:38.88] post 2014 um I spent time at IIT Bombay
+[2:43.12] doing CS. Um and then I came to the US
+[2:47.52] immediately after my BTech u to pursue
+[2:50.40] my PhD. So even going into IIT I kind of
+[2:53.36] knew I want to be more on the academic
+[2:55.12] side. Um so I worked towards that during
+[2:57.76] IIT and I came to University of
+[2:59.92] California Berkeley to pursue a PhD in
+[3:02.48] computer science. Um it was quite
+[3:05.44] adventurous because I switched research
+[3:08.32] areas um during my PhD. And um
+[3:13.52] during my PhD, I realized I might want
+[3:16.80] to be on the industry side more than the
+[3:19.52] research side like the academic research
+[3:21.68] side. So after finishing my PhD last
+[3:23.84] year, I'm now working at a startup uh
+[3:25.76] Avdar um where we do cool stuff for
+[3:29.12] online shopping.
+[3:30.56] Got it. Very cool. Let's start from the
+[3:32.56] top. uh you mentioned 2014 onwards. I
+[3:36.48] want to learn I want to know about how
+[3:38.64] did you start your J preparation more
+[3:40.08] technically when did you start preparing
+[3:41.36] for IITJ?
+[3:43.20] Uh I think we started around the same
+[3:45.84] time. Um because for me I preparation
+[3:51.60] started in 11th but I was very
+[3:55.68] academically oriented even before that
+[3:57.84] because you know there was a time when I
+[3:59.52] was preparing for NTSC um and then there
+[4:02.32] was a time when I was preparing for KVPY
+[4:04.88] then there was a time when I was
+[4:06.08] preparing for math olympiad physics
+[4:07.84] olympiad chemistry olympiad so all of
+[4:09.52] this eventually added up to also be
+[4:12.32] useful for the j preparation but I think
+[4:16.48] as preparing solely for the J exam. I
+[4:20.64] started that like mid 11thish uh is what
+[4:23.52] I feel.
+[4:24.40] Mid 11th you
+[4:25.36] personally.
+[4:26.72] Yeah. Because till then it's very
+[4:28.32] focused on like Olympiads
+[4:30.56] and there's a huge overlap between
+[4:32.08] Olympiads and the J preparation but my
+[4:35.44] focus was still very much on the
+[4:36.72] olympiad. I was not thinking about this
+[4:38.40] exam that I have to give uh at very end
+[4:40.80] maybe not mid 11th maybe like towards
+[4:43.12] early 11th. Uh wait, 11th starts in
+[4:46.80] April, right?
+[4:47.68] Yep.
+[4:49.28] Okay. Yeah. Mid year is is what I
+[4:52.16] remember. Yes. So more like uh
+[4:56.08] June, Julyish. Um
+[4:58.32] Got it.
+[4:59.12] Yeah.
+[5:00.16] I remember. So I joined Lux a little
+[5:02.80] early. I think you did as well, right?
+[5:04.40] Uh 10th end I think December onwards. I
+[5:08.00] was coming all you know every week. Uh I
+[5:11.12] think we were preparing for a math umpy
+[5:12.72] from what I remember. Uh but but nothing
+[5:15.28] before that like nothing too
+[5:16.32] complicated. Not doing it since sixth
+[5:17.84] standard.
+[5:18.72] No no no no. I mean since
+[5:22.16] 7th onwards I started preparing for NTSA
+[5:24.56] and I like you know prepared very hard
+[5:26.72] all the subjects uh maths, chemistry,
+[5:29.04] physics by whatnot. Uh even like the
+[5:31.76] social study side of things. Uh but it
+[5:33.84] wasn't with like the J exam and syllabus
+[5:36.72] in mind. I think 11th is the first time
+[5:39.12] I printed out the my dad actually
+[5:41.44] printed out the IITJ syllabus. So there
+[5:43.60] is an IITJ syllabus uh and he gave it to
+[5:46.40] me.
+[5:46.96] Uh it's I think a one two page syllabus
+[5:49.44] if I remember correctly and he was like
+[5:51.36] well this is your syllabus and
+[5:55.52] this is what you're now preparing for. I
+[5:57.44] was like okay cool
+[5:58.56] nice. I remember your dad your parents
+[6:01.04] are very academic. They used to teach
+[6:03.20] you is that wrong? uh
+[6:06.64] uh so they used to teach me till like
+[6:10.16] fifth six okay
+[6:11.36] but I think uh they had the
+[6:13.76] self-awareness to know that they weren't
+[6:16.32] the best teachers after that
+[6:17.76] okay
+[6:18.32] um so after that they either tried
+[6:20.48] finding me um books with stuff that they
+[6:24.16] couldn't teach me
+[6:25.28] or teachers who could teach me stuff
+[6:26.80] that they couldn't teach me um so I
+[6:29.44] think the teachers part came when you
+[6:31.60] know we came to Laksh mostly But till
+[6:34.40] then it was mostly books.
+[6:36.48] Got it. Makes sense. All right. So 11th
+[6:38.96] 12th you sort of grinded. Did you know
+[6:41.84] towards the end of 12th that you'd get a
+[6:43.76] under 100 rank? Maybe
+[6:47.76] uh
+[6:49.36] towards the end of 12th.
+[6:54.24] No I don't think I can say that I knew
+[6:56.64] for sure because uh
+[7:00.08] I mean my preparation was very
+[7:01.52] turbulent. uh I remember it was
+[7:05.20] January in 12th when I started studying
+[7:10.80] um
+[7:12.32] in organic chemistry properly for the
+[7:14.64] first time. So uh it wasn't until I
+[7:18.64] finished that u or maybe like till a
+[7:21.60] couple of months before J that I felt
+[7:23.44] confident that I know you know uh most
+[7:26.40] of the territory and then I'll be fine.
+[7:29.20] Um, but I was never really worried about
+[7:33.20] the rank. I was just like, I got to give
+[7:36.24] it my best and um,
+[7:39.04] what happens will happen, go where we
+[7:41.92] destined to go.
+[7:43.52] Very cool. Um, is there anything
+[7:46.40] specific you remember from the final
+[7:49.60] day? Did you have any last minute
+[7:51.68] jitters? Was it a smooth day for you?
+[7:55.76] uh I didn't have last minute jitters. Uh
+[7:59.84] so okay so I had had one experience of
+[8:02.64] failure. So I like I said been preparing
+[8:04.88] for like the Olympiads for a while and I
+[8:07.12] was very very interested in the physics
+[8:08.64] olympiad. Um, and I distinctly remember
+[8:12.72] um, massively screwing up the physics
+[8:15.20] olympiad in class 11th more than I did
+[8:19.36] in class 10th or class 12th more than I
+[8:21.76] did in class 11th because I took like a
+[8:24.16] new pen to the exam and then you know
+[8:26.96] the pen was like too thick and I could
+[8:28.80] not use my rough space properly and I
+[8:30.40] was just like very annoyed with like why
+[8:32.88] why am I carrying this pen and I
+[8:36.80] massively bombed right? Uh so uh going
+[8:41.04] into this I
+[8:43.84] had started preparing for like the
+[8:45.44] little things in advance. So like one
+[8:47.52] day before like I had my pens and
+[8:49.76] everything sorted and you know uh I knew
+[8:52.08] what food I'm going to eat all of that
+[8:53.68] when I'm going to sleep. Not the one
+[8:56.00] thing that I remember is I was annoyed
+[8:57.60] by having long hair. So like 900 p.m.
+[9:01.44] 1000 p.m. the night before the exam when
+[9:04.08] my parents came to get me I was like I
+[9:05.76] need a haircut. And then we found some
+[9:07.68] barber who was still open
+[9:10.56] and I went to get a haircut. Uh but no
+[9:12.72] jitters uh because I was like it's just
+[9:15.68] another day uh of test taking.
+[9:18.80] Very cool.
+[9:19.12] And I was regularly taking tests.
+[9:21.68] Got it. Super cool, man. Um after the
+[9:24.40] examination, did you know you're
+[9:25.68] definitely getting a under 100 rank?
+[9:29.28] Um
+[9:31.20] yeah. Uh I knew I think my parents
+[9:37.52] didn't tell me. Um
+[9:40.88] but there's this physics teacher Dur um
+[9:44.40] on a piece of paper the moment. So I
+[9:47.36] wrote my exams. I handed off my exam
+[9:49.36] book to my dad. I would mark my answers
+[9:51.44] in that and they would just take it in
+[9:53.60] duction and like try thinking out okay
+[9:55.28] how many marks you're going to get and
+[9:56.64] so on. So I think D he wrote on a piece
+[10:00.08] of paper 1 to 10 and gave it to my dad.
+[10:02.88] Nice.
+[10:03.36] Uh but he didn't show it to me till like
+[10:06.48] much later.
+[10:07.20] Got it.
+[10:07.68] Uh so I think I had a sense of I've done
+[10:11.20] good. Uh I'll be fine. Um whether it
+[10:14.48] will be IT Bombay, I Delhi, let's see.
+[10:18.16] But I knew that I've done good.
+[10:22.64] Very cool. Uh cool. Can't say I was in
+[10:25.68] the same situation. I was pretty messed
+[10:27.60] up in my head. I didn't even go to the
+[10:28.96] lakshi uh you know celebrations when
+[10:31.76] whenever they happened after the result
+[10:33.36] like under 500. Thankfully according to
+[10:35.44] rookie CS else it would have been
+[10:37.12] mechanical in Bombay or something. Um
+[10:39.28] which probably would have not been the
+[10:40.72] best decision for me. Uh but yeah I was
+[10:42.56] pretty upset initially eventually you
+[10:44.48] know after I don't know a month or two
+[10:46.32] you you sort of get used to it.
+[10:49.36] Yeah I remember you not being there at
+[10:50.96] the celebration was uh Yeah. Yeah. I I
+[10:54.40] do. Uh I mean we studied together for a
+[10:59.28] very long time, right? I mean we even
+[11:00.88] practically stayed together for a bit.
+[11:02.56] Yeah.
+[11:02.96] Uh in Patiala.
+[11:04.24] Yep.
+[11:04.96] And uh had like fun times uh preparing.
+[11:09.92] Learned a lot from each other I think.
+[11:12.16] But I mean we go where we are testing
+[11:15.28] and you know eventually we turn out
+[11:17.44] well. Um this one exam is like a
+[11:20.08] starting platform but not the end of the
+[11:22.16] world I think.
+[11:23.60] Totally agree. Yeah, I think India is a
+[11:25.12] little too competitive and it's just
+[11:27.20] much easy to see this in hindsight but
+[11:29.28] at that time yeah it just gets a little
+[11:30.96] that's true
+[11:31.44] gets to your head.
+[11:32.72] All right let's get into the juicy bits.
+[11:35.04] Uh it Bombay tell me about tell me about
+[11:37.20] the life over there. Uh how is it
+[11:40.48] different from other IITs?
+[11:43.52] I think the
+[11:46.72] the perhaps the first thing which stood
+[11:50.32] out at IT Bombay uh was that for the
+[11:55.92] first year
+[11:57.84] uh there was like a shared mess for the
+[12:01.76] boys and girls hostel. Uh
+[12:04.48] that's pretty cool.
+[12:05.52] Uh yeah. So that is I think the first
+[12:08.72] thing that stood out. Um but what stood
+[12:11.44] out more perhaps compared to my life
+[12:13.28] before that was this sense of
+[12:15.12] independence
+[12:16.96] like no one to tell me what to do when
+[12:20.24] to do and police me or not doing things
+[12:23.68] but rather people treating me as an
+[12:26.16] adult and being like well if you want to
+[12:29.28] do it great if you don't want to do it
+[12:31.36] too bad because in CS most of the
+[12:33.92] professors didn't care as much about
+[12:36.00] attendance um or anything for that
+[12:38.96] matter there. So it was like well we are
+[12:41.36] here to offer you something and if you
+[12:44.32] want to take it uh learn from it you
+[12:47.36] have the resources available you do it
+[12:50.16] otherwise you do you um and what that
+[12:54.64] ended up doing is I think u made me more
+[12:58.32] self-reliant in a sense like compared to
+[13:01.20] you know J time when they'd be like okay
+[13:03.44] you have this schedule uh breakfast is
+[13:05.84] at this time lunch is at this time
+[13:07.28] dinner is at this time and you must have
+[13:08.80] breakfast, lunch, dinner and between you
+[13:10.40] must study inorganic in the morning and
+[13:12.56] then do this in the afternoon and then
+[13:14.64] do this in the evening and go to tution
+[13:16.64] like coaching from this time to this
+[13:18.40] time. So uh so yeah it was very
+[13:22.32] different suddenly like no one's
+[13:24.16] studying anything I can sleep till 12 if
+[13:26.16] I want not have food for 3 days uh or
+[13:30.48] have lunch then go to the canteen have
+[13:32.40] as many chips I want like it was very
+[13:35.12] there's way too much freedom uh even on
+[13:37.60] entering and exiting the campus so it
+[13:40.72] was very liberating and I think it
+[13:42.64] helped me mature um as a person
+[13:48.64] Yeah. What was like for you?
+[13:51.20] Pretty similar. Uh I was surprised to
+[13:54.00] see that there are 1 hour classes
+[13:56.56] considering we are used to two
+[13:58.40] three-hour classes back at Lux. So the
+[14:00.96] first day I was like this looks like
+[14:02.56] we're not working hard and in two weeks
+[14:05.20] I was like 1 hour is too much. So I
+[14:06.96] could feel myself
+[14:09.84] becoming an adult as you said. um first
+[14:13.28] time away from home. For me, it was a
+[14:14.96] you know slightly uh new experience
+[14:17.92] being away from family. Uh I'm sure it
+[14:20.32] was probably much worse for you. My my
+[14:22.32] house was like 3 hours away. So I could
+[14:23.76] go back whenever I wanted to. Um but you
+[14:26.96] know then dragging happened. That was
+[14:28.08] another scene. So you know that was
+[14:30.16] pretty brutal. That took me back for
+[14:31.60] like another week or so. Um but after
+[14:33.92] that it was pretty chill. I think first
+[14:35.52] semester was fairly you know me being by
+[14:38.32] myself. Uh Rudy as a campus is great. uh
+[14:41.76] probably you know one of the decent
+[14:42.88] campuses amongst IITs um and college
+[14:46.64] groups were pretty decent uh I joined
+[14:48.64] labs uh in my second semester since then
+[14:52.24] I was just at labs labs is like a
+[14:54.24] college group uh at IIT Riy u that
+[14:57.28] that's one place where I found found my
+[14:58.72] crew um and you know sort of stayed
+[15:01.28] there for pretty much 4 years u but
+[15:04.00] outside it it was fun so overall a good
+[15:06.00] experience although like I think
+[15:08.24] anything beyond Bombay maybe just Bombay
+[15:10.16] or Bombay Delhi um it's a lot of you
+[15:12.00] know people trying to scound for jobs u
+[15:14.80] so the culture is very jobheavy u even
+[15:17.36] though in labs they would tell us to you
+[15:18.72] know not to do it and focus on research
+[15:20.64] or entrepreneurship uh I think most
+[15:22.88] people are behind a job so it's it's
+[15:25.04] almost like a J race beyond a point
+[15:26.72] beyond you know your third year to get
+[15:28.24] the best intern and the best placement
+[15:30.40] um so I feel like I missed out on that
+[15:32.56] like a lot of freedom to explore more
+[15:34.32] things um and you know it was just J
+[15:37.12] much much easier version of J with a
+[15:40.00] slightly bigger outcome of a job uh
+[15:42.40] beyond a point. Um that's something I
+[15:44.24] don't like. Uh
+[15:48.00] actually I think uh now that you say
+[15:50.16] that what I've described is perhaps my
+[15:51.92] first year at IIT but after that uh even
+[15:55.84] people around me were very like after
+[15:58.16] that you get into the cycle of always
+[16:00.32] finding the next internship and then
+[16:02.72] getting placed. Um so even me right um
+[16:06.96] at the
+[16:09.12] end of my third semester or during my
+[16:10.96] third semester itself it was time to
+[16:13.20] start looking for your internship after
+[16:15.84] second year and I found that and then I
+[16:20.00] went to that internship during the
+[16:22.48] summer and the moment I came back from
+[16:24.40] that internship it was already time to
+[16:25.84] find your next internship for next year.
+[16:28.64] So this cycle was there in Bombay as
+[16:31.84] well. Um I had good grades I think in
+[16:34.88] the very beginning so it was pretty easy
+[16:36.72] to get my first internship. Um but
+[16:40.88] significantly harder to get the second.
+[16:44.00] Um but thankfully I think um the group
+[16:48.00] that I had um like our batch was a lot I
+[16:52.96] felt like it was very collaborative
+[16:55.36] where people would share what they're
+[16:58.08] doing with each other um from emails to
+[17:02.00] insights to professors uh to strategies
+[17:05.84] and
+[17:07.36] be like in this mode of okay let's all
+[17:09.20] try to find a place to go to uh so I was
+[17:12.64] looking for like research internships
+[17:15.44] but uh I don't think that's always the
+[17:18.72] case. Uh uh and it can get into this
+[17:21.92] competitive toxic thing with people
+[17:24.00] around you where suddenly you're
+[17:25.60] competing with your friends. Uh uh so
+[17:29.84] luckily that didn't really happen uh for
+[17:32.40] me and I was very grateful for it. I
+[17:34.64] didn't realize it at the time, but now
+[17:37.44] looking back, I think uh it was a
+[17:39.44] blessing
+[17:41.44] to not have that environment.
+[17:44.32] Very cool. Is this the full CS pack or
+[17:46.80] your small crew of people?
+[17:49.92] I think my small crew of people.
+[17:53.92] Um yeah, we were like there are enough
+[17:57.28] jobs or positions that all of us will
+[17:59.68] find something good enough. uh and we
+[18:02.40] don't have to worry about you know
+[18:04.16] fighting for one amongst each other if
+[18:06.72] that makes sense.
+[18:08.88] Plus you also had different interests it
+[18:11.20] being like more research oriented.
+[18:14.08] Um so even though the strategies over
+[18:17.36] overlapped uh and the way we were
+[18:19.28] looking at professors and places
+[18:21.44] overlapped the exact positions weren't
+[18:23.44] necessarily uh things that we were
+[18:25.60] competing for between our us.
+[18:28.88] Got it.
+[18:29.28] Yeah. But there was competition. Uh I
+[18:31.60] think definitely more on the placement
+[18:33.28] side.
+[18:33.84] Okay.
+[18:34.72] Because there it was more clear, okay,
+[18:36.32] there's one opening and everyone wants
+[18:38.24] to get into this opening.
+[18:39.52] Yeah.
+[18:40.48] But on the research side, it was a bit
+[18:41.84] more chill.
+[18:42.72] Got it.
+[18:43.44] Maybe. Yeah.
+[18:47.04] Yeah.
+[18:49.28] Other than that, uh let's see. There was
+[18:52.96] so much more than academics which
+[18:54.32] happened in during college. I think I
+[18:56.08] love that the most, right? like but I
+[19:00.96] you you do study but then there was uh
+[19:04.16] sports that you play department events
+[19:07.28] festivals
+[19:08.80] uh and I think again this is in
+[19:12.32] hindsight because academically I'm
+[19:14.80] somewhat sorted uh career-wise sorted
+[19:17.52] but I think now looking back I cherish
+[19:19.52] that perhaps the most that and like the
+[19:22.24] shared struggle of people sleeping in
+[19:23.76] lab throughout the night working on like
+[19:26.64] homeworks and projects and crunching
+[19:28.32] group.
+[19:30.24] Very cool. Uh how big was your group of
+[19:33.20] people? These folks that you talked
+[19:34.96] about
+[19:36.88] like a group of
+[19:40.32] eight I think eight to 10 people. Yeah.
+[19:43.92] And are you all
+[19:44.72] So not very big.
+[19:45.92] Got it.
+[19:46.48] Yeah.
+[19:46.96] Are you all doing the same thing? Are
+[19:47.92] you all did you all go for PhDs?
+[19:51.44] A lot of us did. Like at least half of
+[19:54.80] us did. um I think another 25%
+[19:58.96] and the other half at least went for
+[20:00.48] masters um because it came down to like
+[20:04.00] pursuing high education um and research
+[20:06.64] does help with that as well but it was
+[20:09.12] like a surprisingly large number of
+[20:11.52] people going for PhDs uh from our batch
+[20:16.72] like it was an outlier compared to the
+[20:18.64] batch before us and the batch after us.
+[20:21.52] I think 10 if not more people overall
+[20:25.44] ended up pursuing a PhD from a batch of
+[20:29.36] 90. No, from a batch of 100. Yeah. What
+[20:32.40] do I the branch change folks?
+[20:38.56] Very good.
+[20:38.96] What was it like in your batch?
+[20:40.96] Oh, we don't do research bro. I mean I
+[20:42.72] think as I was mentioning numbers
+[20:44.40] recently so around 40 50% of my batch is
+[20:47.76] in Google Bangalore or you know Google
+[20:50.80] US um another 30% probably in startups u
+[20:54.72] there's one entrepreneur yours truly um
+[20:58.00] and there's
+[20:59.92] I don't think anyone went for a masters
+[21:02.24] u let me think it's not like our batch
+[21:04.48] is a bit of an outlier that way everyone
+[21:06.80] went into the industry um I would call
+[21:09.04] it a I don't think average is the right
+[21:11.52] word but people weren't looking beyond
+[21:14.16] jobs. Um and unfortunately that
+[21:16.80] continued for a long time. Um I think
+[21:18.96] it's generally true in CS Riki at least
+[21:21.28] that people mostly stay in jobs and you
+[21:22.88] know keep switching between one big tech
+[21:24.80] to another. Um so recently I was trying
+[21:27.04] to I was basically trying to make a
+[21:28.32] video out of this. Okay. Where is my
+[21:29.76] batch right now and as I went went
+[21:31.76] through LinkedIn's I don't think I found
+[21:34.56] one PhD. There might be people. Oh
+[21:37.12] actually a few people did go for
+[21:38.16] masters. No sorry I I uh I stand
+[21:40.48] corrected. I think three four people
+[21:41.60] went for masters right out of college
+[21:43.84] and then two three people went later as
+[21:45.68] well. Covid hit so I think a few people
+[21:47.60] did not go but the people who did go for
+[21:49.20] masters
+[21:50.00] most of them are in big tech only. Uh so
+[21:53.52] so yeah very very job centric rut for
+[21:56.96] for most of us. Uh
+[21:59.20] interesting.
+[22:00.48] Yeah. One guy
+[22:01.68] he he he started up like he was he was a
+[22:03.68] decent guy in college like he's pretty
+[22:05.44] uh known to be you know uh a smart guy
+[22:07.92] uh like not technically but you know
+[22:09.12] otherwise did like a people person. He
+[22:11.04] started up uh but did not go well. So he
+[22:14.08] he joined a job again. Uh but that's the
+[22:16.64] distribution of my batch right now.
+[22:20.08] Okay. Wow. Very different compared to uh
+[22:24.24] my batch. Yeah. I think like 25 people
+[22:26.96] or more ended up doing a masters in my
+[22:30.40] batch. Out of college directly would
+[22:32.40] have been like 15 16 I think. Uh but
+[22:35.44] like a lot more after that.
+[22:38.88] The whole bunch of them are in the US
+[22:40.48] now. Uh in the Bay Area actually and I'm
+[22:43.68] looking as if they're like right now.
+[22:47.60] It's just that they're in the vicinity
+[22:49.44] but I only end up meeting them rarely.
+[22:51.84] Uh but there there's a lot of people.
+[22:54.64] Yeah,
+[22:55.12] got it. What's the other 75 doing? Do
+[22:56.96] you know?
+[22:58.56] So, people are spread between um I think
+[23:03.44] there are very few academics like people
+[23:05.60] who want to become professors. Uh I
+[23:07.76] think there are like two or three
+[23:08.80] people. Um one is already like a
+[23:12.24] professor. Two, three might become
+[23:14.00] professors like very soon. Um then
+[23:17.52] there's a bunch of people doing research
+[23:19.84] in industry. So those are the remaining
+[23:21.84] people who did a PhD or masters. Um and
+[23:27.12] there's a bunch of people who did
+[23:28.72] masters and then uh are doing like
+[23:31.44] software engineering jobs like cool
+[23:34.00] engineering stuff. Uh and the remaining
+[23:36.48] 75ish%
+[23:38.08] you know who I think it's less than 75
+[23:40.96] but people who did not go for a masters
+[23:42.96] I think they're split between software
+[23:45.20] and finance or software for finance. Um
+[23:49.84] so
+[23:51.60] it's and of course there are a couple of
+[23:54.56] people who went the I route, couple of
+[23:56.48] people who went the MBA route. Uh so
+[23:59.36] there is that long tail as well. Um
+[24:03.60] but uh
+[24:05.84] yeah what else have people up to? Most
+[24:08.16] of most of them are in engineering
+[24:09.60] roles. Um uh I I think overall I would
+[24:13.36] say like a big chunk probably 70%ish
+[24:17.92] uh is engineering roles and then
+[24:20.64] academic research and uh management and
+[24:23.36] so on.
+[24:24.40] Got it. Very cool. Why PhD? Uh and what
+[24:27.68] did you do in your PhD?
+[24:29.20] This is a great question. So why PhD?
+[24:31.68] because I wanted to avoid
+[24:35.04] doing a job
+[24:38.64] for as long as I can.
+[24:44.00] I wanted to avoid doing a job for as
+[24:45.76] long as I can. Uh it was fun working on
+[24:48.24] like challenging problems without
+[24:49.76] thinking of making bank. Um
+[24:53.04] and in college
+[24:55.44] I did not know enough about how thriving
+[24:57.92] the finance scene was.
+[25:02.32] So
+[25:04.00] I was well into having like a good
+[25:06.80] enough profile for a PhD and it was like
+[25:08.80] okay chal let's uh go do a PhD. Um
+[25:14.24] uh so when I started so that's why I
+[25:16.64] came to do a PhD. Um what I really
+[25:19.92] wanted to do was
+[25:22.40] uh a PhD in computer vision where you're
+[25:25.20] working with images and videos and um
+[25:27.68] building models that interpret images
+[25:30.32] and videos um like algorithms for images
+[25:33.68] and videos.
+[25:35.44] Um but a lot of my research experience
+[25:38.24] in undergrad had been in programming
+[25:40.24] languages. So like formal methods,
+[25:42.96] giving proofs of things um and so on
+[25:46.24] like boolean formulas uh uh and and all
+[25:49.92] of that stuff. So
+[25:53.28] and similarly I had one internship in
+[25:55.44] like formal methods. I had one
+[25:57.12] internship in uh computer vision. So I
+[26:00.32] had like a 50/50 split um in research
+[26:04.56] and paper wise it was like all my papers
+[26:06.96] were uh formal methods. So when I was
+[26:10.40] applying for PhD it just I ended up
+[26:13.12] applying to both groups like I was like
+[26:15.92] hey I done some work in formal methods
+[26:18.08] also I've done some work in vision also
+[26:20.32] um can do either you know take me for a
+[26:23.92] PhD program and what I was hoping was
+[26:26.56] that I either combined the two somehow
+[26:29.20] to do well um or I end up doing vision.
+[26:32.88] So when I got my admits, I got a bunch
+[26:35.68] of admits from like formal methods
+[26:38.00] people, but no vision people gave me.
+[26:44.24] So I was super sad. Okay. Like I had an
+[26:47.20] admit from uh UC Berkeley, I had an
+[26:49.60] admit from uh University of Washington.
+[26:53.36] I had masters admits from Stanford. Uh I
+[26:57.12] had other admits from like APF8 Zurich.
+[26:59.52] But I was just like sad. I was and when
+[27:02.72] did I become sad? I became sad when I
+[27:04.80] came to visit these colleges. So they
+[27:06.40] have this concept of visit days. So
+[27:08.16] whether
+[27:09.92] and uh so when you visit these colleges
+[27:12.48] you set meetings with professors
+[27:14.08] one-on-one. Um and there's like a
+[27:16.16] matching system. So the professors also
+[27:17.60] decide whom they want to meet and it
+[27:19.44] tells you about like who is interested
+[27:21.36] in what student uh because uh like both
+[27:26.80] need to want to work with uh each other
+[27:29.60] only then you have like a advisor advisy
+[27:32.08] relationship.
+[27:33.68] So no professor wanted to meet me at
+[27:35.28] Berkeley. No vision professor wanted to
+[27:36.88] meet me at Berkeley and I was like so
+[27:40.00] sad.
+[27:42.08] So Jag Mar I found like this one
+[27:44.56] professor uh and I went to him and I was
+[27:46.88] like I found him in his office when
+[27:48.88] everyone else else was on a hike. Uh I
+[27:51.76] went to him and I was like I want to
+[27:53.04] work at Berkeley uh
+[27:55.68] uh he was like you'll have to find some
+[27:57.84] clever way to start working with us but
+[28:00.40] if in university of Washington u these
+[28:03.20] people want to work with you and do
+[28:04.48] vision they do good vision go to
+[28:05.84] University of Washington
+[28:08.40] all of us go there. So I became like
+[28:09.68] very sad I think overall I came back and
+[28:11.92] despite having great admits on paper I
+[28:15.12] was like very sad but slowly my parents
+[28:19.60] my uh advisers at IIT Bombay they were
+[28:22.16] like so you need to get out of this
+[28:24.40] mental rut of you didn't do well uh you
+[28:26.88] know you got great admits um and the
+[28:30.00] professors who do want to work with you
+[28:31.84] at Berkeley they want to explore like
+[28:34.32] both vision and formal methods with you
+[28:36.16] not just like formal methods so Java see
+[28:38.32] what happens Since Berkeley is a better
+[28:40.00] school, closer to the Bay Area, you get
+[28:42.16] more industry exposure and whatnot.
+[28:44.32] Otherwise,
+[28:45.92] University of Washington because there I
+[28:47.60] got to meet with like two professors,
+[28:49.20] two vision professors.
+[28:51.52] So then I came to Berkeley. Um I spent
+[28:54.16] like uh my first semester actively
+[28:58.32] working with my first adviser Sanjett on
+[29:01.68] vision plus formal methods like giving
+[29:04.08] proofs for um vision systems. um didn't
+[29:09.12] really work out. Simultaneously I was
+[29:10.88] looking at other labs. Um so in Berkeley
+[29:13.68] the way it starts is you don't have an
+[29:15.36] adviser initially. You have like a
+[29:16.80] temporary adviser and you spend the
+[29:19.60] first year finalizing like a deal with
+[29:21.84] someone
+[29:23.44] who fund your advise you. So
+[29:27.36] um
+[29:29.12] I was very stressed out I think. Uh but
+[29:33.12] my temporary adviser was like a great
+[29:35.20] person. and he pushed me to explore uh
+[29:38.00] other advisers who would be good
+[29:40.80] long-term fits. If I want to do core
+[29:42.80] vision, then I go talk to them more,
+[29:44.40] spend more time with them. I did that
+[29:47.04] and luckily enough, I found an advising
+[29:51.92] fit um
+[29:54.80] with Jandra and this uh very senior
+[29:59.20] Indian guy.
+[30:00.08] How about the film?
+[30:02.16] And it was great. Then uh you know this
+[30:04.80] uh I started having a lot of fun working
+[30:07.28] on problems like uh as they like to put
+[30:11.92] it watch a lot of pretty pictures.
+[30:15.46] [Laughter]
+[30:17.76] So
+[30:19.60] so yeah so that that is the transition
+[30:21.44] that I made um during my PhD and
+[30:25.60] so what I worked on during my PhD was
+[30:27.92] with Jendra was um on 3D modeling. So
+[30:31.36] you know how um the world is like
+[30:34.00] threedimensional but all the screens
+[30:37.12] that we have and all the images that we
+[30:39.36] take are two-dimensional. They're like
+[30:41.28] projecting like a threedimensional thing
+[30:42.88] onto two dimensions. So my research was
+[30:45.92] on taking these uh two-dimensional
+[30:49.12] images and recovering like
+[30:52.08] three-dimensional information from them.
+[30:54.48] More specifically recovering like the
+[30:56.08] threedimensional shape of these objects.
+[30:58.24] Like as humans, we have a sense of what
+[31:00.64] threedimensional shapes are. Like I know
+[31:03.04] that the microphone in front of you is
+[31:05.20] probably cylindrical um with the
+[31:09.28] diameter tapering at the top um somewhat
+[31:12.88] right like I have a sense of the
+[31:14.16] three-dimensional nature of the wall
+[31:15.68] behind you um u and I get can get to
+[31:19.36] know that because of the shadows that
+[31:21.04] exist uh and you probably have a sense
+[31:23.52] of what's behind me as well. Um but this
+[31:26.32] is information that's not really there
+[31:27.68] in the image. So during my PhD but we
+[31:31.12] can still infer with this information as
+[31:32.64] humans and we can do that because we
+[31:34.88] have some priors.
+[31:36.72] So how can we train machine learning
+[31:38.48] models to
+[31:40.88] build similar priors uh to then allow us
+[31:44.40] to extract 3D shapes and 3D information
+[31:49.12] 2D images. So that's what I did during
+[31:51.60] my PhD and I thought I did great till I
+[31:54.32] went to industry and realized it's not
+[31:55.92] production ready.
+[32:00.16] Got it. You did this for four years.
+[32:02.88] Your PhD was 5 years long.
+[32:05.12] My PhD was 5 years long. So I did this
+[32:07.12] for like four and a half years.
+[32:08.56] Got it.
+[32:09.52] Um but it was split between multiple
+[32:12.32] projects like three four projects. Uh
+[32:15.04] there was a time when I was doing shapes
+[32:17.12] of birds, animals, um chairs, cars,
+[32:21.12] airplanes. Then I was like okay random
+[32:24.00] everyday objects. Then towards the end I
+[32:25.84] was like okay let's do humans. Um so
+[32:29.44] explored like bunch of different uh sub
+[32:33.20] fields I think within this field. Yeah.
+[32:36.48] Got it. Very cool. Uh how does PhD work?
+[32:42.08] Like how do you graduate? Is there an
+[32:44.16] examination?
+[32:47.60] Um,
+[32:49.92] so every university has their own
+[32:52.24] system. Um,
+[32:55.20] but roughly it comes down to
+[32:58.40] when your adviser says you're ready to
+[33:00.16] graduate, you graduate.
+[33:03.44] Okay. So there's uh there's a lot which
+[33:06.24] is dependent on the adviser. What it was
+[33:08.88] at Berkeley was that um you join right
+[33:14.32] you have two main exams you have like a
+[33:18.08] preliminary exam where they test your
+[33:20.40] breadth of the area like let's say my
+[33:23.28] area was computer vision and AI so it'll
+[33:26.40] test me on like NLP resets uh ML stuff
+[33:30.24] uh language stuff speech stuff like
+[33:34.00] bread um and this is typically This was
+[33:37.76] after my first year. So you clear that
+[33:40.40] um then you work on projects building
+[33:43.28] your research. So you pick like some
+[33:46.72] interesting problem that both you and
+[33:48.72] your advisor think are is interesting
+[33:50.32] but unsolved. You try to make progress
+[33:53.04] in that. Um
+[33:55.52] and over time you will make progress
+[33:58.48] like in bits and pieces here and there.
+[34:00.64] Um so then they at Berkeley we had a
+[34:03.28] second exam called a qualifying exam
+[34:05.68] where you're kind of
+[34:09.04] halfway or 3/4 done with your PhD and
+[34:11.76] this is more of a talk.
+[34:13.76] Yeah. The one before that was not a
+[34:15.52] talk. It was like a proper exam exam
+[34:18.56] like an oral exam.
+[34:19.84] Right.
+[34:20.40] This one is a talk where you present the
+[34:22.08] research that you have done.
+[34:23.68] Um you present your vision for what
+[34:26.56] you're going to do in the rest of your
+[34:27.76] PhD. They ask you a couple of hard
+[34:30.24] questions to make sure you have thought
+[34:31.92] out uh where you're going and ensure
+[34:34.96] that you understand what you have done
+[34:36.56] till now well enough and why you took
+[34:38.48] certain design decisions why you didn't
+[34:40.32] do some other things do you know about
+[34:42.88] other work in the area so on um and they
+[34:46.00] say good enough and then you clear a
+[34:48.16] cause um
+[34:50.56] and at the end uh you have like a
+[34:53.44] defense talk where
+[34:56.72] finished my PhD I've like written my
+[34:59.52] thesis down. You need to give a talk
+[35:01.60] telling people what I did. So at
+[35:03.20] Berkeley there's no concept of an
+[35:04.64] examination at the end but it is very
+[35:06.56] typical for schools to have an
+[35:08.24] examination at the very end. Uh where
+[35:10.56] you present your entire research saying
+[35:13.76] what are the problems that you solved.
+[35:16.00] Um give evidence of you having solved
+[35:18.96] them. also give motivations for why you
+[35:20.88] solve them and give an idea of why they
+[35:23.20] are impactful and uh you know what
+[35:25.84] future work can come out of this. Um so
+[35:29.92] and then people will see you after your
+[35:32.24] talk like professors
+[35:34.40] will see you after your talk. That's how
+[35:36.32] it typically goes.
+[35:38.24] Pretty cool. W that sounds stressful.
+[35:40.32] What have like seems like a very big
+[35:43.04] commitment like you can't leave in the
+[35:45.28] middle or can you? I don't know. Um so
+[35:49.60] there are multiple kinds of programs. So
+[35:51.36] there are some programs where um you can
+[35:54.24] leave in the middle with a masters if
+[35:55.76] you want. So I for example didn't have a
+[35:58.08] masters. So if I wanted I could have
+[36:00.24] potentially written like a master's
+[36:01.60] thesis and left. So Berkeley had this MS
+[36:04.64] plus PhD program. A lot of places don't
+[36:07.04] have this. So it you know there's
+[36:09.68] different programs that you apply to.
+[36:11.68] Got it.
+[36:12.16] Uh but it is a long-term commitment. um
+[36:15.60] you cannot go through this just hoping
+[36:17.76] to finish your PhD like five years from
+[36:20.24] now, right?
+[36:20.96] There needs to be um there needs to be
+[36:24.72] enough motivation and love for the
+[36:26.80] journey
+[36:27.92] and the little projects that you start
+[36:31.04] finish start finish
+[36:32.40] right
+[36:33.20] otherwise it's too hard. I guess it's a
+[36:35.04] very long time.
+[36:36.40] It is insane with with you know so much
+[36:40.08] stress. I mean I I assume at Berkeley
+[36:42.96] like you get compensated more than
+[36:44.96] enough to be be able to live in US. Um
+[36:48.16] yes
+[36:49.76] but
+[36:50.32] the CS department's well funded that
+[36:52.00] way.
+[36:52.40] Okay.
+[36:52.72] Uh you can live comfortably. You can
+[36:54.32] even travel back to India uh every once
+[36:56.48] in a while. Um and if you're not in
+[36:59.28] Berkeley or somewhere else in the US
+[37:00.80] where living costs are lower, you can
+[37:03.04] even ramp up decent amount of savings.
+[37:05.44] Oh wow, that's pretty cool. That is
+[37:07.36] pretty cool.
+[37:07.92] Yeah.
+[37:08.96] Interesting. Is there do people feel I
+[37:11.44] don't know if this is true but like
+[37:12.88] suddenly LLM's picked up OpenAI grew so
+[37:15.28] well so are people in vision suddenly
+[37:17.04] like I should have gone for LLMs is are
+[37:19.68] the PhDs over there suddenly getting
+[37:21.12] hired by OpenAI do you feel that sort of
+[37:23.68] a FOMO at that stage
+[37:27.36] uh there is turbulence definitely in the
+[37:30.56] vision community okay because um a lot
+[37:33.44] of problems that we have been working
+[37:34.80] towards solving um are suddenly much
+[37:37.68] easier to solve by like the vision
+[37:39.44] language community.
+[37:41.52] Um so like there is LLM but there is
+[37:44.40] also LLM plus images where you can get
+[37:46.48] images as input and then get the LLM
+[37:49.36] book. So um a lot of people have
+[37:52.96] actually from my lab uh gone to like
+[37:55.20] open AI an entropic. Uh so what three
+[37:58.72] people went to open AI let me put that
+[38:03.44] in perspective. So at Berkeley there are
+[38:06.24] like three four vision professors. uh
+[38:08.72] three of us are like very close. Three
+[38:10.40] vision professors are like closer to
+[38:12.16] each other and of a batch of I think one
+[38:15.20] two three four five
+[38:17.76] uh 6 7 8 9 10 people that graduated in
+[38:21.52] my year a lot graduated in my year.
+[38:25.04] Three went to open AI, one went to
+[38:27.68] anthropic. Um but then they were going
+[38:30.80] and working on like vision stuff uh in
+[38:34.24] combination with like LLM stuff. Um
+[38:36.96] because at the end of the day uh the
+[38:39.60] skills that you learn on like how to
+[38:41.84] train like an ML model or like a
+[38:43.76] generative model they end up being like
+[38:45.68] similarish
+[38:47.52] you know uh it is like you become a good
+[38:50.08] auditor and you can give a you can
+[38:52.40] choose what to give a talk about
+[38:53.84] right
+[38:56.64] so the skills are somewhat transferable
+[38:59.52] but
+[39:01.44] I think especially for new PhD students
+[39:05.12] um there is this question of what do we
+[39:07.92] work on because a lot of there's this
+[39:13.36] popular regime of people training like
+[39:15.44] huge models now like these industries
+[39:17.84] you know they spend a lot of compute and
+[39:19.60] money trying to build one good model but
+[39:22.40] often times they do not release these
+[39:24.08] models but this level of so to do to do
+[39:29.12] research with such big models
+[39:32.32] you need to have
+[39:34.64] in university you don't have the
+[39:36.88] resources to train such models.
+[39:39.84] So you're often you often end up
+[39:41.84] resorting to analyzing these models
+[39:45.28] which is somewhat fun but then also
+[39:50.00] like from one model generation to the
+[39:52.88] other a lot of the analysis you have
+[39:55.44] done may or may not hold right like uh
+[40:00.00] it's not necessary that it's uh whatever
+[40:03.36] you found was like something very
+[40:05.28] fundamental which will stay around. So
+[40:07.92] there is an identity crisis right now.
+[40:10.00] There is FOMO.
+[40:11.04] Oh, really?
+[40:12.72] There is FOMO. But it's more about
+[40:17.68] why did I spend so much time doing what
+[40:20.00] I did
+[40:22.00] when the problem could have been solved
+[40:23.92] this other way.
+[40:24.80] Right?
+[40:27.76] So there is Sarasati you do learn a lot
+[40:31.52] uh in the process,
+[40:33.76] right? And it it is a good journey, but
+[40:39.44] it's it's a different kind of outcome
+[40:42.24] where
+[40:43.92] let's say you're training to be an
+[40:45.12] Olympic athlete and you came in fourth
+[40:48.88] and you so you are still a good runner.
+[40:50.96] Right. Right.
+[40:51.76] You can run like crazy but sure you did
+[40:53.92] get a gold. Does that somehat
+[40:56.32] that makes a lot of sense?
+[40:57.12] Makes sense. Yeah.
+[40:58.32] Yeah.
+[40:59.36] Very cool. I think so. So for the masses
+[41:03.20] like a lot of masses are dealing with
+[41:04.40] something very similar thanks to LM now
+[41:06.72] which is you know AI being able to do
+[41:10.32] your job at 100 times the speed
+[41:12.80] sometimes even better. Um so there's a
+[41:15.52] similar FOMO in engineering for you know
+[41:18.48] industry people as well.
+[41:20.80] So I'm actually surprised to know that
+[41:22.80] you know the same thing applies to PhDs
+[41:26.24] even though I'm sure like your worst
+[41:29.12] case is much different than you know the
+[41:31.12] worst case of an Amazon engineer in
+[41:33.04] India uh them you know just getting laid
+[41:35.68] off and you finding some challenging
+[41:37.36] problem to work on um as as time goes by
+[41:40.80] but but with that I'd love to know what
+[41:43.28] what are you doing at Avatar if if you
+[41:44.56] know you you can share that what does
+[41:46.08] the company do and and what do you do
+[41:47.36] there? Uh totally. So um so what I'll
+[41:51.60] start with what the company does and
+[41:52.96] then I'll talk about what um I do. So
+[41:55.92] what the company does is for online
+[41:58.88] shopping, you know, whenever you go to
+[42:00.40] shop online, you need to visually see
+[42:02.96] what you want to buy
+[42:05.60] on like any marketplace. But creating uh
+[42:09.60] any visuals, images or videos or even
+[42:12.40] interactive experiences can be very
+[42:14.48] expensive to um because you need to for
+[42:18.32] images and videos you need to have um
+[42:21.36] studios and professional camera crews
+[42:23.68] and you need to ship products from
+[42:25.12] warehouses to whatnot. So what avatar
+[42:29.04] does is it builds this visual content,
+[42:32.08] images, videos, interactive experiences
+[42:34.56] digitally.
+[42:36.16] uh and the core of it is um AI um and uh
+[42:40.88] 3D models.
+[42:42.96] So like creating a digital twin of your
+[42:44.96] product um and then digitally editing
+[42:49.28] the lighting or editing how you're
+[42:51.76] creating the product shot, the
+[42:53.12] placement, all of that. Um so that is
+[42:57.20] the value proposition that we enable um
+[43:02.16] visual content creation. Uh
+[43:06.16] uh and we enable this very cheaply and
+[43:08.24] we don't stop at visual content creation
+[43:10.48] the way it is seen today but also
+[43:13.28] because we are creating digital twins uh
+[43:15.84] it is very future friendly with whatever
+[43:18.88] interactive spatial experiences or
+[43:20.72] whatnot you want
+[43:23.84] now what I do at Avatar uh is um
+[43:28.64] I I lead the research side of things
+[43:33.20] where
+[43:35.20] so to build so there is there's roughly
+[43:39.04] two problems one is like building the
+[43:40.80] digital twin and then the second is like
+[43:43.28] using the digital twin uh and perhaps
+[43:46.96] you even like skip this entire thing and
+[43:49.84] directly go from like whatever uh image
+[43:52.80] inputs you have uh and directly go to
+[43:55.52] creating your enhanced images and new
+[43:59.52] settings or like a video um like
+[44:02.64] skipping digital twin al together. So
+[44:05.36] there is a lot of research involved uh
+[44:07.44] in figuring out
+[44:09.60] how to
+[44:11.68] uh
+[44:13.28] complete uh this path to go from the
+[44:16.64] inputs that we get from our clients all
+[44:18.96] the way to the visual content that we
+[44:21.60] want to deliver.
+[44:23.44] Uh and uh computer vision is at the core
+[44:27.52] of it. So I
+[44:31.84] work closely on a couple of projects,
+[44:33.84] advise the team on like other projects.
+[44:36.16] Um but we have like multiple internal
+[44:39.12] projects going on. Um which are
+[44:41.20] different product paths uh essentially.
+[44:43.92] Um and all serving this end goal of
+[44:47.76] creating visual content for online
+[44:49.36] shopping.
+[44:50.32] Got it. Uh super interesting. So so you
+[44:52.64] set you sell to e-commerce D2C players,
+[44:56.40] e-commerce people who want to sell on
+[44:58.00] Amazon.
+[45:00.16] So uh so we would sell to Amazon who
+[45:03.68] would in turn sell to uh their users
+[45:08.64] like their sellers. Um so we are uh
+[45:13.76] enterprises would be our clients.
+[45:16.64] So like our clients are like Pepper Fry.
+[45:19.52] um Home Depot, Newegg, uh Samsung,
+[45:24.40] Bajage TVS. Uh so these are kind of our
+[45:28.64] clients. Um and
+[45:32.88] a lot of them like Amazon, like some of
+[45:34.96] these are marketplaces who have a bunch
+[45:36.96] of sellers. Um, so we
+[45:42.08] sell to the enterprise marketplace and
+[45:44.80] then it ends up being like a three-way
+[45:46.96] deal where they in turn uh onboard their
+[45:50.24] sellers to this tech.
+[45:52.88] Got it. Got it.
+[45:55.92] I think you're getting into B2C like
+[45:58.16] this like a very hot market right now,
+[46:00.08] right? Uh I don't know if it's related
+[46:01.44] to 3D models, but like you know uh
+[46:04.00] creating a digital twin of yourself and
+[46:05.60] then printing out photos and videos from
+[46:07.44] it. That's probably a very easy problem,
+[46:10.40] right? Like you do it like this.
+[46:15.12] Uh we at least I'm not focused on the
+[46:18.88] B2C path right now because there are a
+[46:20.56] lot of people working on the B2C
+[46:21.84] direction. Um, but yes, I think the B2C
+[46:24.96] is easier because the bar for perfection
+[46:29.60] is lower.
+[46:30.72] Oh, for sure.
+[46:31.28] I think the problem with generative AI
+[46:32.64] is like works 90% of the time,
+[46:34.64] right?
+[46:35.20] And it'll just like sneak in 10% stuff
+[46:39.20] like it'll give you a mole on your face
+[46:40.72] that isn't there.
+[46:41.84] Um,
+[46:42.96] right. Or it'll change something which
+[46:44.32] you didn't really want to change,
+[46:46.00] but you need to look hard to figure out
+[46:47.52] that oh, something's wrong here.
+[46:49.60] Right? So that is something that you
+[46:52.40] can't afford in like a B2B setting
+[46:55.44] especially on online shopping like say
+[46:57.52] you go to buy something online and you
+[46:59.76] look at something and you're like oh
+[47:00.88] this looks cool but when it actually
+[47:02.16] comes to your home it's slightly
+[47:03.44] different u so B2C setting would be
+[47:06.72] great uh I think but I'm not focusing on
+[47:09.92] that as much right now good question why
+[47:12.56] not maybe we should focus more but then
+[47:15.20] there is the question of uh where does
+[47:17.04] the money come from for the startup
+[47:19.84] like for this for the startup people
+[47:21.44] would pay for this um like for example I
+[47:23.84] I I pay I mean like I'm very small
+[47:26.64] example but I currently pay like per
+[47:30.00] thumbnail so every thumbnail on my video
+[47:32.00] to pay that much
+[47:33.44] then these guys built this model and a
+[47:35.44] lot of people tried this never would
+[47:36.80] work you know enough for me to put it on
+[47:39.04] YouTube but now the guy created it
+[47:41.92] so good like in I think I can create
+[47:44.40] four variations in one rupee or
+[47:46.08] something and I just have to put the
+[47:48.40] title, it'll have my face and the proper
+[47:50.64] YouTube thumbnail. So, you know, I'm
+[47:53.20] sure people would pay for
+[47:54.00] Oh, very cool. I see. I see.
+[47:57.60] That is cool. I suspect though that uh
+[48:00.96] YouTube will do it for free
+[48:03.12] at some point. Um at some point, um a
+[48:06.56] lot of startups YouTube killed for
+[48:08.32] example. Yeah. Yeah, you're right. Um
+[48:10.80] they would do it, but you know, it's a
+[48:13.60] long time. It's like a slowmoving
+[48:15.20] company. I think there's a market
+[48:16.48] opportunity. Um
+[48:18.48] yeah yeah yeah yeah uh definitely there
+[48:21.04] is a market opportunity don't disagree
+[48:22.88] there but uh
+[48:25.60] yeah like
+[48:27.84] I'll think about this more uh food for
+[48:29.92] thought food for thought
+[48:31.28] indeed
+[48:32.88] I'll send you the link to that website
+[48:34.40] through which I generate my thumbnails
+[48:35.92] now uh
+[48:37.36] yes please do
+[48:38.56] pretty prime this question I have this
+[48:40.64] is probably interesting for people uh if
+[48:42.88] not an IIT let's say you're the same
+[48:45.60] person But
+[48:47.84] God forbid you went, you were sick on IT
+[48:50.56] day, your exam got rigged, something
+[48:52.64] happened, you had to join a tier three
+[48:54.80] college. It's not like you can drop.
+[48:58.00] Could you have achieved a similar
+[48:59.28] outcome or what you would have done in
+[49:00.72] that case?
+[49:04.16] I think I could have definitely achieved
+[49:07.76] a similar outcome. Um because you know
+[49:12.00] um so
+[49:14.88] what would be different um I think is I
+[49:19.68] maybe wouldn't have come to Berkeley
+[49:21.12] directly from undergrad but I would have
+[49:23.76] gone done a masters
+[49:26.64] before coming to Berkeley
+[49:29.20] if coming to Berkeley and doing a PhD
+[49:31.12] was my end goal.
+[49:33.60] Um the reason I say this is because um
+[49:37.12] think of it as like uh at least
+[49:40.96] it's kind of like a ladder that you're
+[49:42.48] climbing you know uh but you're not
+[49:45.04] starting from the middle of the ladder
+[49:46.56] you're starting like a rung below
+[49:49.68] and you just take like one extra step.
+[49:52.24] What is more important? Well, this is on
+[49:54.16] the academic side because the reputation
+[49:56.24] so the way academia works is you have to
+[49:59.12] show the work you have done and you can
+[50:00.72] only typically do good work if you are
+[50:02.56] with good people to tell you how to do
+[50:04.08] good work. Um,
+[50:06.40] right. So therefore there is this ladder
+[50:09.28] of you working with some people who are
+[50:11.68] like uh somewhat reputed who will vouch
+[50:14.88] for you and then you get that helps you
+[50:17.12] get to the next rung of the ladder and
+[50:18.40] then they vouch for you that yes this
+[50:19.76] guy does good work and you get to the
+[50:20.96] next rung of the ladder there the whole
+[50:23.20] fun of like recommendation letters like
+[50:26.08] but for building skills right like
+[50:29.20] building engineering skills um I think
+[50:33.04] especially for CS there There's
+[50:36.64] so much content online um that if you as
+[50:42.80] a person are focused enough on what you
+[50:46.64] want to achieve and are not willing to
+[50:48.88] stop at anything to achieve that you can
+[50:51.84] really upskill uh remotely. I mean like
+[50:54.80] um
+[50:56.48] it is a a lot of it is also because of
+[50:59.28] uh creators like you are right where
+[51:02.72] there is um guidance
+[51:07.44] and both content available online
+[51:11.20] and all you need is a laptop
+[51:15.52] right it's not like you need to have
+[51:18.24] it's not like material science where you
+[51:20.00] need to have access to like a $10
+[51:21.92] million
+[51:23.68] lab facility,
+[51:24.88] right,
+[51:25.44] with positive pressure inside which like
+[51:29.20] all of that you don't need that. You
+[51:30.48] don't need like special chemicals
+[51:32.40] to do reactions and stuff um in any lab.
+[51:36.16] Um you just need your laptop. You need
+[51:38.40] your laptop and you need an internet
+[51:39.92] connection. Uh and you can become a very
+[51:42.88] good engineer.
+[51:44.72] And
+[51:46.32] what matters more I've realized is
+[51:50.24] getting good people with a lot of drive
+[51:54.08] especially in industry
+[51:56.24] because um like if I want to hire right
+[51:59.76] uh I would care a lot about a how
+[52:03.52] skilled you are and how badly you want
+[52:05.60] it and b how badly you want it
+[52:08.72] and very usually uh how badly you want
+[52:12.64] it inversely correlates with um how easy
+[52:16.48] you've had it in life,
+[52:17.60] right?
+[52:17.92] Um so and the skills part you can
+[52:21.76] develop uh even online, you know, for
+[52:25.52] things that aren't cutting edge like you
+[52:27.68] know research is cutting edge where
+[52:29.12] maybe like um 1% in 1% of computer
+[52:33.36] scientists know where the boundary is of
+[52:37.28] what can be done and cannot be done and
+[52:40.00] you're trying to push that boundary. Um
+[52:43.04] but if you're not working on pushing
+[52:44.64] that boundary uh you can still build a
+[52:47.68] lot of cool apps uh you can do like lot
+[52:50.00] lot of cool engineering problems and in
+[52:52.08] that territory there's like enough
+[52:54.08] content I think online as well um where
+[52:56.64] you can do this
+[52:58.24] I totally agree u I think that's great
+[53:00.24] advice uh as you said you would have
+[53:02.00] landed up in the same spot u might have
+[53:04.48] taken you longer u and maybe would have
+[53:07.92] been a good thing because you would have
+[53:08.96] struggled more so you know you would
+[53:10.00] have wanted it more bad
+[53:12.56] Yes.
+[53:14.00] Great. What gives you FOMO today? This
+[53:16.64] one path if I would have taken might
+[53:18.16] have been a nice path.
+[53:20.48] It's hard to answer that because I think
+[53:23.44] my mentality over time
+[53:27.12] has come to be that even though things
+[53:29.52] went wrong in my life, um I think they
+[53:33.52] set the stage for me to do better next
+[53:35.44] time.
+[53:37.92] So
+[53:40.96] who knows if you know something didn't
+[53:43.12] go wrong and I went down a path of it
+[53:46.08] would have been like absolutely great.
+[53:47.92] uh who knows where I would have ended up
+[53:49.60] like maybe like 100 other things would
+[53:51.36] have gone wrong in my life right I
+[53:54.16] cannot I think look back on my life and
+[53:56.56] say that everything be the same except
+[53:59.44] this one event in between which was a
+[54:02.32] dip
+[54:03.12] right
+[54:04.80] because if that dip wasn't there then
+[54:06.56] the rest of the path wouldn't have been
+[54:07.92] there either the rest of the path would
+[54:09.60] also have been different so um I don't
+[54:13.68] really have uh FOMO about Oh, I wish I
+[54:19.04] done this. Uh, I wish I done that. Uh,
+[54:22.24] or, you know, I wish
+[54:24.72] the career, my career would have gone
+[54:26.40] that direction. Um, um, I think it's
+[54:30.24] also easy to say this because I feel
+[54:32.64] somewhat secure um, career-wise and
+[54:35.60] financially. Um, but I've definitely had
+[54:39.20] learnings.
+[54:40.80] You know, there are things which I have
+[54:42.48] improved upon, things which I need to
+[54:44.00] improve upon. Uh and all these learnings
+[54:46.88] come from dips. Uh like I was late to
+[54:51.44] our catch up today.
+[54:56.00] Something that I'm working on improving
+[54:57.44] towards
+[55:01.44] that makes sense.
+[55:03.04] Very cool.
+[55:03.76] Yeah. What about you? Do you how do you
+[55:06.64] see it?
+[55:08.88] I think you feel for you know people you
+[55:11.60] started with. So thankfully in my batch
+[55:14.24] most people are in big tech which if I
+[55:16.40] want to and if I really want to grind if
+[55:17.68] I really grind I probably get into big
+[55:19.04] tech. U so I don't feel any formu there.
+[55:21.36] Um I feel for I should have probably
+[55:24.16] started early. Um I did 1.5 year at
+[55:26.56] Goldman probably my least productive uh
+[55:28.64] years since college. College was pretty
+[55:30.48] productive. Um but Goldman was like I
+[55:33.20] don't think I learned anything there. Um
+[55:35.12] but again as you said maybe I was too
+[55:37.60] frustrated at Goldman. I had a surgery.
+[55:40.32] Maybe that happened for a good reason
+[55:41.52] because you know that forced me to leave
+[55:42.72] Goldman and figure out a different path.
+[55:44.40] Um and now since the last two years
+[55:46.80] since I've started the channel I think
+[55:48.48] uh FOMO doesn't kick in. Um only FOMO
+[55:52.32] might be from you know a very tangential
+[55:56.24] path like yours. Um but after talking to
+[55:58.72] you I feel much better. Everyone's
+[56:00.32] figuring it out and you know there's
+[56:02.88] Yeah, dude. We're all figuring it out.
+[56:04.80] Yeah.
+[56:05.52] Absolutely.
+[56:07.20] Yeah. I mean
+[56:09.44] sometimes uh it is it is very easy to
+[56:12.32] compare you know your with your
+[56:14.16] batchmates like even with my PhD
+[56:16.24] batchmates um I can like in if I purely
+[56:21.44] think in terms of like how much money
+[56:22.88] I'm making I'm not even close to like
+[56:25.76] you know making the most money compared
+[56:27.36] to my B my bachmates are making like
+[56:29.04] insane amount of money. I'm not going to
+[56:30.88] say on this podcast how much, but uh it
+[56:34.24] is like
+[56:36.16] it's it's insane. Like crazy. Okay. Um
+[56:40.16] it's like typical uh fire stuff,
+[56:43.28] financially independent retirey, but
+[56:45.52] they they they like they like what they
+[56:47.60] do. Um and they're doing it. I mean, I'm
+[56:50.40] also making good money, but uh I think
+[56:53.76] then we have different lifestyles. Uh we
+[56:55.76] have different priorities, right? uh
+[56:58.24] like I said um the company that I work
+[57:01.84] in uh is Bangalore based and it's very
+[57:04.00] important to me to have like uh strong
+[57:06.56] Indian roots um and that's and that's
+[57:10.40] something which is not important to
+[57:11.52] other people plus money is like one
+[57:14.48] factor you know doesn't go with you when
+[57:18.00] you die uh true
+[57:19.84] and it's more important to
+[57:24.00] for me I' I've learned that it's more
+[57:25.76] important to enjoy what I'm
+[57:27.60] uh and that doesn't always translate to
+[57:30.88] you know bragging about uh
+[57:34.88] what I have achieved.
+[57:37.68] Makes sense.
+[57:39.12] Monetarily or career-wise? Yeah.
+[57:42.32] Right.
+[57:44.24] That makes a lot of sense. I've seen
+[57:45.92] you've been very humble since the
+[57:47.52] beginning. like from college I remember
+[57:49.28] you sorry not college uh tuition I
+[57:52.56] remember uh you've been you know fairly
+[57:55.36] down to earth which is like one quality
+[57:57.52] of yours that I really like.
+[58:00.00] Oh really?
+[58:00.88] Yeah.
+[58:04.24] All right. I'm going to give you some J
+[58:06.16] drama now. Um I I was like sweating my
+[58:09.36] balls off before. So my team told me
+[58:11.44] that's two questions with him like you
+[58:13.12] both solve a J problem. And I remember
+[58:15.04] we've done
+[58:15.60] oh my
+[58:17.44] and it's just
+[58:18.40] I've not seen a J problem in so long
+[58:20.40] dude. You know there are times when now
+[58:23.04] gotten so used to using a calculator
+[58:25.20] that okay
+[58:27.84] how much would this be? A divided by b.
+[58:33.20] Exactly.
+[58:34.00] Okay let's see what are we doing. Oh
+[58:37.52] yeah, this this is going like
+[58:38.64] ball is thrown into the air. H okay.
+[58:42.16] I feel like I've done this one.
+[58:44.64] You've done it.
+[58:46.32] Feels familiar. Uh but you know it's
+[58:48.24] been a while.
+[58:49.28] I mean anything with projectile motion.
+[58:51.52] I guess
+[58:54.40] I think we have seen so many variants of
+[58:56.88] this graph. Uh
+[58:59.52] 100%.
+[59:00.72] It I'm seeing this person for the first
+[59:02.80] time though.
+[59:03.92] It's like
+[59:05.76] That's very unique.
+[59:09.60] Okay. So, position at position A, the
+[59:11.84] ball is at the highest point in its
+[59:13.20] path. Position B is just before it hits
+[59:15.60] the ground. Ignoring air resistance,
+[59:18.08] which of the following statements is
+[59:19.68] true? A is false.
+[59:23.44] Speed of the ball at A is zero. Not
+[59:25.52] true. It's moving horizontally. Speed of
+[59:28.32] the ball at A is the same as speed at B.
+[59:30.72] No, not true. B has higher vertical
+[59:33.36] component.
+[59:35.04] Speed of ball at A is lower than the
+[59:37.20] speed at B. Yes.
+[59:39.92] And the acceleration
+[59:42.16] at A is higher than the acceleration at
+[59:44.16] B. Not true. Same acceleration, same
+[59:47.52] gravity uh approximately.
+[59:52.00] Speed at A is lower than speed at B.
+[59:54.00] Acceleration at A is the same as
+[59:55.60] acceleration at B. We have a winner.
+[59:57.76] That's right. Yep. There we go.
+[60:01.44] That was
+[60:01.92] okay. You went easy on me.
+[60:04.32] Oh, well. Okay. Well, that brings us to
+[60:06.32] the second question then.
+[60:09.12] That was the wrong one. So, we were
+[60:14.40] yesterday we got a form filled. Whoever
+[60:16.96] has preparing for J fill this form. We
+[60:19.36] want uh you to come on site. Can one guy
+[60:22.16] filled this?
+[60:24.75] [Laughter]
+[60:26.64] Crazy.
+[60:28.40] All right, that's the one.
+[60:33.20] You're in a rowing boat on a lake. A
+[60:36.64] large heavy rock is also in the boat.
+[60:40.00] You heave the rock overboard. It sinks
+[60:42.96] to the bottom of the lake. What happens
+[60:45.84] to the water level in the lake? Does it
+[60:48.72] rise, fall, or stay the same? H
+[60:51.44] interesting. I think
+[61:00.80] let's see
+[61:04.32] if So,
+[61:07.92] so initially the amount of water that's
+[61:10.08] been displaced from the lake
+[61:12.72] um right equals like the weight of the
+[61:15.84] boat and the rock.
+[61:19.28] Um
+[61:21.52] but now once you throw the
+[61:24.48] rock in
+[61:26.80] the amount of water that is displaced is
+[61:31.20] the volume of the rock
+[61:34.88] and the weight of the boat. Um,
+[61:39.28] right. So,
+[61:41.28] because the rock sinks to the bottom,
+[61:43.36] you don't just have the buoyancy acting
+[61:45.20] on the rock, but you also have like the
+[61:48.96] normal force from the bottom of the
+[61:50.96] lake. So, lesser water is displaced now.
+[61:54.40] So I would be like um
+[61:58.32] yeah so because lesser water is
+[62:00.24] displaced now
+[62:03.92] the level of the lake is lower.
+[62:06.96] All right let's see I don't know the
+[62:08.08] answer.
+[62:10.48] What do you think?
+[62:11.68] Oh uh I was taking a very different
+[62:13.84] approach. Dude I don't remember this at
+[62:15.36] all. So my approach was like the first
+[62:17.36] thing that you said was the weight of
+[62:18.72] the boat and the weight of the the
+[62:21.44] stone. Um that did not come to my head.
+[62:23.68] Mine was it would depend on the shape of
+[62:26.56] the boat. uh I don't know why I thought
+[62:28.80] of that but if the let's say the this
+[62:31.84] and you have a lot of weight I sort of
+[62:35.12] assumed uh okay you know since it's a
+[62:37.76] heavy object it'll
+[62:41.76] displace a lot of the the amount of
+[62:44.08] water that is displaced would depend on
+[62:45.52] the shape that's probably wrong based on
+[62:46.88] what you said u but those were my
+[62:49.92] initial thoughts which was leading me to
+[62:51.44] an answer
+[62:51.92] I see
+[62:53.76] let's see let's see I'm also not certain
+[62:56.00] about This this is this is a nice one.
+[62:59.04] Yeah, let me show
+[62:59.76] I remember like a similar question
+[63:03.04] in some exam uh on there's a bunch of
+[63:08.00] icebergs floating in the water and what
+[63:11.12] happens to the water level when the
+[63:12.48] iceberg melts and the water level
+[63:15.20] doesn't change when the iceberg melts
+[63:19.52] and this is this reminds me of that
+[63:21.36] basically.
+[63:22.08] Yeah. Yeah. Sounds very similar.
+[63:23.76] Yeah. What does this say though? The
+[63:26.56] diagram is my attempt to show the
+[63:28.48] situation first. The rocks on the board
+[63:29.92] secondly.
+[63:31.68] Oh god, it's like too much. I mean over
+[63:33.84] to you. This is your territory.
+[63:38.08] Do you? No, I'm just like as with all
+[63:41.12] things Stack Overflow. Just go to the
+[63:43.20] very bottom where the answer is and
+[63:45.76] ignore everything on top.
+[63:50.48] Yeah, density of a rock is greater than
+[63:52.24] density of water. In which case the rock
+[63:54.00] sinks and when that happens
+[63:56.80] more water is displaced when the rock is
+[63:58.72] in the boat. Level falls when you chuck
+[64:01.60] the rock overboard.
+[64:03.92] Okay. Nice. Yes.
+[64:11.92] Wow. This is such a throwback.
+[64:14.40] Exactly. Every exam is said at lush case
+[64:16.08] like this such question some such
+[64:17.36] question would come and then I would be
+[64:18.80] pretty lost and there would be so with
+[64:20.72] the right answer.
+[64:22.88] No this iceberg question I don't know I
+[64:26.24] have a tendency to like uh you know I
+[64:29.36] fondly look upon like the journey that
+[64:32.48] you've done so I have a tendency to like
+[64:34.88] open armo questions um
+[64:37.28] and every once in a while or like I'll
+[64:40.48] go into this in mo hole of uh oh India
+[64:44.32] got what five goals uh I don't know in
+[64:50.00] not in mo not in IMO But I think in
+[64:53.12] physics, no, I think IMO India did very
+[64:54.96] well this time.
+[64:56.00] It's like, oh, I'm curious. Uh, you
+[64:58.24] know, what are the questions like and
+[64:59.84] then I open one and then I start and
+[65:01.44] then my entire day goes and then I have
+[65:05.04] a tendency to still keep doing this.
+[65:06.72] Like there's no reason to, but I still
+[65:08.72] like to open like competitive coding
+[65:11.12] questions sometimes because it's fun.
+[65:14.32] Uh, very cool.
+[65:16.72] Yeah, I haven't touched it.
+[65:17.84] Haven't opened a J question in a long
+[65:19.60] time though. Yeah,
+[65:20.48] same. Same. Never again.
+[65:24.40] Cool.
+[65:25.20] Uh, I think I'm out of questions. Do you
+[65:28.08] have Do you have any questions? Anything
+[65:30.40] else you'd like to discuss?
+[65:35.36] Uh,
+[65:37.76] I feel like we've had very different
+[65:39.20] paths in life.
+[65:41.36] I agree.
+[65:42.24] Yeah.
+[65:43.44] Yeah, for sure.
+[65:44.24] Uh,
+[65:46.48] so different, dude. Uh,
+[65:50.32] I mean there's a ton that I want to know
+[65:52.16] about um about you know what you've been
+[65:55.60] through.
+[65:57.12] But
+[65:59.52] I think I I know uh a bunch.
+[66:05.60] But it's okay. We should meet up
+[66:06.72] sometime. You should come over.
+[66:08.40] Um
+[66:09.52] I think this would be so much more fun
+[66:11.84] uh in person.
+[66:13.28] Yes. December first week you said uh
+[66:16.24] I'll be ready uh with a few things. Just
+[66:19.60] just come to Delhi and we'll have fun.
+[66:22.64] Okay. Okay. Sounds good. Yeah.
+[66:27.92] This was fun.
+[66:29.04] Likewise.
+[66:29.44] Well, I don't know how helpful it will
+[66:30.80] be to the people watching this but
+[66:34.08] I hope uh it's entertaining if not
+[66:37.28] anything else.
+[66:38.24] Yeah. More than that, I think it
+[66:39.28] humanizes like a single-digit ranker a
+[66:41.68] lot so people understand you. Everyone
+[66:43.20] has their own set of challenges and you
+[66:45.52] know even after so many years of
+[66:46.96] graduating everyone's doing different
+[66:48.16] things and you know you'll figure things
+[66:49.36] out as time goes by.
+[66:52.00] Okay.
+[66:53.76] Okay. Cool. Any parting thoughts? Any
+[66:56.80] last thing you'd like to say to the
+[66:58.16] students audience people?
+[67:01.84] Um
+[67:06.00] yeah don't don't plan too much uh for
+[67:09.04] like far ahead in the future you know.
+[67:11.36] Uh I think that's that's a rookie
+[67:13.84] mistake to be like 30 years from now I
+[67:18.32] want to have accomplished A B and C. Um
+[67:22.16] very unlikely
+[67:24.32] you'll be able to uh that life will go
+[67:27.60] exactly the way you planned it. You know
+[67:30.72] things will happen that you'll have to
+[67:32.40] figure out take care of. Um there'll be
+[67:34.96] opportunities that you won't be able to
+[67:36.88] get through. there'll be opportunities
+[67:38.40] that arise that you weren't expecting
+[67:41.92] to. Um, so
+[67:46.40] don't plan too far ahead into the
+[67:47.92] future. Plan every once in a while. Um,
+[67:51.20] but then spend most of your time
+[67:53.52] focusing on what you need to do today
+[67:55.92] instead of thinking about what you want
+[67:58.56] to do in the future.
+[68:01.92] Yeah, I think that would be my advice
+[68:04.32] that it's not like uh don't plan at all,
+[68:08.72] but plan every once in a while,
+[68:10.32] translate it to what you need to do
+[68:11.68] today, but and then focus on like just
+[68:14.40] sticking with what you're doing in the
+[68:16.96] moment.
+[68:19.28] That would be my advice.
+[68:20.88] I think that's great advice. Uh and you
+[68:23.04] know, super actionable for everyone. I
+[68:25.04] think there is a saying uh you
+[68:28.08] overestimate what you can do in a day
+[68:29.84] but underestimate what you what you can
+[68:31.84] do in a decade. Um
+[68:34.72] so I think yes people just need to keep
+[68:37.68] that at the back of their heads and uh
+[68:39.92] and as you said not plan to ahead you
+[68:41.68] don't know how I mean yeah I remember
+[68:44.16] for a fact people were telling me to I
+[68:45.60] wanted to go for mechanical because my I
+[68:48.08] thought I I like mechanical at least I
+[68:49.60] like physics but you know CS ended up
+[68:51.60] becoming a thing so like don't plan too
+[68:52.96] ahead and you know life changes
+[68:54.48] everything. And also in India, we don't
+[68:56.96] really know what we are getting into.
+[68:59.20] Like I didn't know what CS will be like
+[69:01.76] when I opted for CS,
+[69:03.20] right?
+[69:03.44] I'm like sure most of the people who
+[69:07.12] haven't joined college yet don't know
+[69:09.44] what CS will be like uh right now,
+[69:12.72] right?
+[69:13.12] Like when you're preparing for day, you
+[69:14.56] don't know uh you don't know what
+[69:15.92] mechanical will be like. I didn't know
+[69:17.44] what aerospace was going to be like.
+[69:19.28] like I thought for a moment that I want
+[69:21.12] to do math in life you know
+[69:23.60] um because I was working on like
+[69:25.20] olympiad stuff
+[69:26.16] right
+[69:27.20] so
+[69:29.04] I up and told my parents that I want to
+[69:30.96] do math and then I went to this um inmo
+[69:33.76] camp where there were math professors
+[69:37.20] teaching us uh preparing us so this was
+[69:40.80] like this camp where they select the
+[69:42.32] Indian team for the math olympi um and
+[69:45.68] there I got to see how these professors
+[69:47.52] think and what kind of problems they
+[69:48.80] work on. I got to see what graduate math
+[69:50.72] is like
+[69:52.48] and I was like, "Hell no.
+[69:57.60] There is no way I want to do this. This
+[70:00.40] is not nearly as fun,
+[70:02.16] right?
+[70:02.64] And this does not excite me." Uh, and
+[70:05.20] yeah, that was the difference between,
+[70:06.64] you know, like reading a
+[70:10.08] like solving some cool toy problems. Um,
+[70:13.44] and like what life would have been like
+[70:15.12] as a mathematician. Um,
+[70:18.96] so you don't know what life has in store
+[70:21.60] for you. Just uh
+[70:24.40] work hard, have fun.
+[70:26.80] It's going to be fine.
+[70:29.76] On those parting thoughts, thank you
+[70:32.16] everyone for joining. Thank you Shbam
+[70:34.64] for taking out the time. This was super
+[70:36.00] insightful for everyone and
+[70:39.20] I will see you guys in the next one.
+[70:41.92] Yeah, thanks for having me Akira. This
+[70:43.68] was wonderful. Bye-bye. Bye guys.
+[70:56.13] [Music]
+[70:58.08] Were you like holding it in for a while?
+[71:03.20] I was like, "Oh, interrupt." So the last
+[71:05.12] 20 seconds was so hard.
+[71:07.44] Oh god. Insane.
+[71:08.88] I could slowly see your face change. I
+[71:10.72] was like, "Let's see how long carries
+[71:12.64] this on for."
+[71:16.32] Okay. Okay. Okay. Is that where you are
+[71:18.08] on your
+[71:18.88] Yeah.
+[71:19.20] In your little campus?
+[71:20.72] Yeah, this is my room. Not my room like
+[71:22.56] whatever. You made this my room and
+[71:23.76] right outside is the students sitting.
+[71:25.44] If you open that door,
+[71:28.96] that's where the students and that's
+[71:30.08] where I take my classes. Like today I
+[71:31.44] took a bunch of classes. People are like
+[71:33.04] working fairly
+[71:35.36] fairly hard.
+[71:37.44] That guy's not
+[71:38.08] bad guys.
+[71:39.04] Yeah. So it's like a lot of this. It's
+[71:41.52] pretty fun. Um
+[71:43.04] you should come.
+[71:44.40] It it feels like a startup.
+[71:46.48] It is. Yeah. It's very startup vibes.
+[71:48.24] Yeah.
+[71:49.44] Yeah. Like everyone's a part of the
+[71:51.60] startup and direct goal is to maximize
+[71:54.48] everyone's equity
+[71:57.92] like that.
+[71:59.68] Yeah. So that you go to well in life
+[72:03.76] has good starts.
+[72:06.40] Yeah. Yeah. And it's just me most of the
+[72:08.88] times.
+[72:09.68] Amazing. I want to know so much more
+[72:11.52] about like how this content creation
+[72:12.96] world works.
+[72:13.76] For sure.
+[72:14.24] I feel like I'm living in a parallel
+[72:15.60] universe.
+[72:18.24] Yeah, it's crazy. But yeah, let's catch
+[72:20.64] up. Ch when we meet.
+[72:22.56] Yeah. Yeah, for sure. Take care, bro.
+[72:24.32] Bye-bye. Bye-bye. Take care. Have a good
+[72:25.76] day.

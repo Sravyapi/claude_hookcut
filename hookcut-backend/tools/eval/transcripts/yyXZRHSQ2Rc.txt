@@ -1,0 +1,263 @@
+[0:00.64] Hello everyone, welcome to Nesso
+[0:02.80] Academy. In our previous lectures, we
+[0:05.36] have understood different types of
+[0:07.52] inheritance.
+[0:09.20] We have learned single, multi-level,
+[0:12.16] multiple, hierarchical and hybrid
+[0:15.12] inheritance.
+[0:16.64] Now we are ready to understand the call
+[0:19.60] sequence of constructors and destructors
+[0:23.60] for different types of inheritance.
+[0:26.72] So without any further delay let's get
+[0:28.72] started with this lecture and let's see
+[0:30.80] what are the topics. There is only one
+[0:33.36] topic and the topic name is call
+[0:35.92] sequence of constructors and
+[0:38.40] destructors.
+[0:40.16] Now we will understand the call sequence
+[0:42.48] of constructors and destructors for
+[0:45.60] different types of inheritance and we
+[0:49.04] will begin with single inheritance.
+[0:52.72] In case of single inheritance,
+[0:55.12] constructors are executed from base to
+[0:58.24] derived class and destructors are
+[1:01.76] executed in the reverse order from
+[1:04.80] derived to base class.
+[1:07.84] To understand this properly, let's
+[1:10.00] consider one simple example program.
+[1:13.28] Here we have this program with class A
+[1:16.16] that has the public constructor that
+[1:18.56] allows us to display a constructor. It
+[1:22.24] also has the destructor that allows us
+[1:25.36] to display a destructor.
+[1:28.48] Then we have class B which is inheriting
+[1:30.96] from class A. So here we have single
+[1:33.92] inheritance.
+[1:36.00] This class also has a constructor that
+[1:39.20] allows us to display B constructor. It
+[1:42.16] has the destructor as well which will
+[1:44.48] display B destructor.
+[1:47.60] After this we have the main function
+[1:49.92] with the object of the class B. We know
+[1:53.44] class B is inheriting from class A. So
+[1:56.80] this is the base class and we have
+[1:59.36] learned this already that constructors
+[2:01.84] are executed from base to derived class.
+[2:05.68] Therefore the constructor of the base
+[2:08.08] class A will be invoked first. This
+[2:11.04] means a constructor will be displayed.
+[2:14.16] After this the constructor of the class
+[2:16.80] B will be invoked and it will display B
+[2:20.56] constructor.
+[2:22.80] And we also know this that destructors
+[2:25.04] are executed from derived to base class.
+[2:28.72] Therefore the destructor of the derived
+[2:31.52] class B will be invoked first. It will
+[2:35.28] display B destructor.
+[2:37.68] After this the destructor of the class A
+[2:40.24] will be invoked and it will display a
+[2:43.60] destructor.
+[2:45.28] Now when we execute this program we know
+[2:47.60] what is going to be the output. We will
+[2:50.24] get this output a constructor B
+[2:53.12] constructor B destructor A destructor.
+[2:57.68] So this program clearly shows the call
+[3:00.88] sequence of constructors and destructors
+[3:04.08] in case of single inheritance. I hope
+[3:07.12] this is clear to you. Now let's
+[3:09.84] understand what happens in case of
+[3:12.16] multilevel inheritance.
+[3:14.56] In case of multi-level inheritance,
+[3:17.28] constructors are executed from top base
+[3:20.48] class to bottommost derived class and
+[3:24.96] destructors are executed from bottommost
+[3:28.40] derived class to top base class. To
+[3:32.24] understand this properly, let's consider
+[3:34.16] one example program. Here we have these
+[3:37.28] classes with constructors and
+[3:39.28] destructors. Here we can observe class B
+[3:42.88] is inheriting from class A and class C
+[3:46.56] is inheriting from class B. So here we
+[3:49.76] have multilevel inheritance.
+[3:54.96] Now here inside the main function object
+[3:57.76] of class C has been created. We know
+[4:01.28] that class C is inheriting from class B
+[4:04.56] and class B is inheriting from class A.
+[4:08.08] Therefore, we can say class A is the
+[4:11.20] topmost base class.
+[4:14.40] And it has been mentioned that
+[4:16.40] constructors are executed from top base
+[4:19.68] class to bottommost derived class. So
+[4:24.16] the constructor of class A will be
+[4:26.40] invoked first then the constructor of
+[4:29.12] class B will be invoked and finally the
+[4:32.24] constructor of class C will be invoked
+[4:35.44] and destructors are executed from
+[4:38.24] bottommost derived class to top base
+[4:41.60] class. This means destructor of class C
+[4:45.28] will be invoked first then the
+[4:47.36] destructor of class B and finally the
+[4:50.32] destructor of class A.
+[4:53.12] So this is the call sequence of
+[4:55.36] constructors and destructors in case of
+[4:58.00] multi-level inheritance.
+[5:00.48] And this is the output we will get. We
+[5:03.36] will get A constructor, B constructor, C
+[5:06.24] constructor, then C destructor, B
+[5:09.04] destructor and finally A destructor.
+[5:12.32] Destructors are always executed in the
+[5:15.36] reverse order of constructors.
+[5:18.32] I hope this is clear to you. Now we have
+[5:21.36] understood what happens in case of
+[5:23.44] multi-level inheritance. Let's
+[5:26.08] understand what happens in case of
+[5:28.64] multiple inheritance. What will be the
+[5:31.36] call sequence in case of multiple
+[5:34.48] inheritance?
+[5:36.00] In case of multiple inheritance, order
+[5:38.80] of construction of base classes is same
+[5:42.48] as the order in class declaration.
+[5:46.08] Also destructors are executed in the
+[5:48.88] reverse order as usual. Let's consider
+[5:52.08] one example program to properly
+[5:54.00] understand this. Here we have these
+[5:56.64] classes with constructors and
+[5:58.16] destructors. Here we can observe that
+[6:00.96] class C is inheriting from both the
+[6:04.08] classes A and B that are defined over
+[6:07.76] here. So here we have multiple
+[6:10.40] inheritance
+[6:11.92] inside the main function. object of
+[6:14.24] class C is created
+[6:16.80] and we know class C is inheriting from
+[6:19.84] both these classes. Therefore, the
+[6:22.64] constructors of these base classes will
+[6:25.52] be executed.
+[6:27.28] But what will be the sequence of these
+[6:29.76] constructor calls? Which constructor
+[6:32.80] will be called first here? Now that's
+[6:35.68] the confusion and this confusion has
+[6:38.40] been cleared in the first point itself.
+[6:41.68] Order of construction of base classes is
+[6:45.28] same as order in class declaration. Here
+[6:49.20] you can observe the declaration of the
+[6:51.36] class C and here is the order of these
+[6:55.04] base classes. We have class A first then
+[6:58.72] we have class B. So clearly the
+[7:01.44] constructor of class A will be called
+[7:03.92] first and then the constructor of class
+[7:06.88] B will be called. After this the
+[7:09.84] constructor of class C will be called
+[7:12.72] and destructors are called in the
+[7:14.48] reverse order. So we know what is going
+[7:17.12] to be the output. This is the output. We
+[7:19.84] will get A constructor B constructor C
+[7:23.12] constructor and then C destructor B
+[7:26.08] destructor A destructor. I hope this is
+[7:29.28] clear to you. Now let's change this
+[7:32.32] order. Now we have class B first then we
+[7:36.48] have class A. order is now changed. Now
+[7:40.48] what happens in this case? We know the
+[7:43.68] order has been changed. Therefore the
+[7:46.80] constructor of class B will be called
+[7:49.04] first and then the constructor of class
+[7:51.60] A will be called. So this is the output
+[7:54.16] we will get in this case. B constructor
+[7:56.96] A constructor C constructor then C
+[8:00.32] destructor A destructor B destructor.
+[8:04.32] The order has been changed in this case.
+[8:07.52] I hope this idea is clear to you. So
+[8:10.48] this is the call sequence of
+[8:12.24] constructors and destructors in case of
+[8:14.72] multiple inheritance.
+[8:17.12] Now let's understand what happens in
+[8:19.12] case of hierarchical inheritance.
+[8:23.12] In case of hierarchical inheritance for
+[8:26.72] each derived class object constructors
+[8:30.64] are invoked from base to derived and
+[8:34.16] then destructors are invoked from
+[8:36.40] derived to base as usual. Let's
+[8:39.92] understand this with the help of an
+[8:41.76] example. Here we have these classes.
+[8:45.12] Here we can observe class B is
+[8:47.36] inheriting from class A and class C is
+[8:51.20] also inheriting from class A. So here we
+[8:54.00] have hierarchical inheritance.
+[8:57.28] Inside the main function we have the
+[8:59.52] object of class B and we know class B is
+[9:03.52] inheriting from class A. Therefore the
+[9:06.32] constructor of class A will be called
+[9:08.48] first and then the constructor of class
+[9:10.80] B will be called.
+[9:13.20] Now what happens in case of the object
+[9:16.16] of class C? We know this already. For
+[9:19.36] each derived class object constructors
+[9:22.40] are invoked from base to derived. For
+[9:25.44] this object also we will follow the same
+[9:27.84] sequence. Here we know that class C is
+[9:31.04] inheriting from class A. Therefore the
+[9:33.76] constructor of class A will be called
+[9:35.92] first and then the constructor of class
+[9:38.32] C will be called. I hope this is clear
+[9:40.96] to you.
+[9:42.48] And after this the destructors will be
+[9:44.64] called in the reverse order as usual. So
+[9:47.92] this is the output we will get. A
+[9:50.56] constructor B constructor A constructor
+[9:53.60] C constructor then C destructor A
+[9:57.36] destructor B destructor A destructor.
+[10:01.44] I hope this is completely clear to you.
+[10:03.92] So this is the call sequence of
+[10:05.68] constructors and destructors in case of
+[10:08.40] hierarchical inheritance. Now let's move
+[10:11.44] to hybrid inheritance.
+[10:15.04] In case of hybrid inheritance,
+[10:18.16] call sequence depends on the combination
+[10:21.28] of inheritance types.
+[10:23.92] Let's understand this through an
+[10:25.44] example. Here we have two types of
+[10:28.40] inheritance. We have the hierarchical
+[10:31.20] inheritance and we also have the
+[10:33.84] multiple inheritance.
+[10:36.08] Inside the main function object of class
+[10:38.48] D has been created and we can observe
+[10:41.44] class D is inheriting from classes B and
+[10:45.44] C. This is the order we have.
+[10:48.80] Class B is inheriting from class A. So
+[10:51.92] the constructor of class A will be
+[10:54.00] called first and then the constructor of
+[10:56.40] class B will be called. After this we
+[10:59.44] have class C over here and we know class
+[11:02.64] C is inheriting from class A. Therefore,
+[11:05.92] the constructor of class A will be
+[11:07.76] called first and then the constructor of
+[11:10.16] class C will be called. Finally, the
+[11:13.04] constructor of class D will be called
+[11:16.24] because we have created the object of
+[11:18.24] class D only.
+[11:20.56] And the destructors will be called in
+[11:22.64] the reverse order. So, we know what is
+[11:25.04] going to be the output. We will get this
+[11:27.44] output. A constructor, B constructor, A
+[11:30.80] constructor, C constructor, then D
+[11:33.04] constructor. After this we have
+[11:35.68] Destructor,
+[11:37.36] C destructor, A destructor, B destructor
+[11:40.88] and A destructor.
+[11:44.64] So with this we have properly understood
+[11:46.88] what happens in case of hybrid
+[11:49.04] inheritance. Call sequence in this case
+[11:52.08] depends on the combination of
+[11:54.00] inheritance types.
+[11:56.40] Now we know what is the call sequence of
+[11:59.20] constructors and destructors for
+[12:01.60] different types of inheritance.
+[12:04.80] This means we are done with this topic
+[12:07.84] call sequence of constructors and
+[12:10.24] destructors.
+[12:11.76] And this means we are done with this
+[12:13.44] lecture.
+[12:14.96] Okay friends, this is it for now. Thank
+[12:17.28] you for watching this lecture. I will
+[12:19.52] see you in the next one.
+[12:26.05] >> [music]

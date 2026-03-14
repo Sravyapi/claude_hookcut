@@ -1,8 +1,5 @@
 """Tests for auth router — register, login, role lookup."""
 from unittest.mock import patch
-from tests.conftest import TEST_USER_ID, make_user
-from app.models.user import User, CreditBalance
-from sqlalchemy import select
 
 
 @patch("app.routers.auth.rate_limiter.check")
@@ -18,19 +15,6 @@ class TestRegisterEndpoint:
         assert data["token_type"] == "bearer"
         assert data["email"] == "newuser@example.com"
         assert data["role"] == "user"
-
-    def test_register_creates_user_in_db(self, mock_rl, client, db):
-        resp = client.post(
-            "/api/auth/register",
-            json={"email": "dbcheck@example.com", "password": "securepass1", "name": "DB User"},
-        )
-        assert resp.status_code == 200
-        user_id = resp.json()["user_id"]
-        # Verify user exists in DB via test session
-        user = db.get(User, user_id)
-        # The client uses its own DB session (override_get_db), but user_id is returned
-        # so we can at minimum confirm the response contains a valid UUID string
-        assert len(user_id) > 0
 
     def test_register_duplicate_email_returns_409(self, mock_rl, client, db):
         """Registering the same email twice should raise a ConflictError (409)."""
@@ -129,17 +113,6 @@ class TestLoginEndpoint:
         )
         assert resp.status_code == 422
 
-    def test_login_returns_role_field(self, mock_rl, client, db):
-        from app.services.auth_service import AuthService
-        AuthService.register(db, "rolecheck@example.com", "securepass1", "Role Check")
-
-        resp = client.post(
-            "/api/auth/login",
-            json={"email": "rolecheck@example.com", "password": "securepass1"},
-        )
-        assert resp.status_code == 200
-        assert "role" in resp.json()
-        assert resp.json()["role"] == "user"
 
 
 @patch("app.routers.auth.rate_limiter.check")

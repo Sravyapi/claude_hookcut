@@ -1,0 +1,405 @@
+[0:00.32] Hi everyone, this is gkcs.
+[0:01.92] This video is a broad overview
+of the AI engineering space in 2025.
+[0:06.44] Specifically, there are two major
+things happening right now:
+[0:10.00] 1. We are trying to improve
+the existing technology.
+[0:12.92] Large language
+models are being improved in various ways.
+[0:16.04] 2. We are trying to solve problems
+which large language models cannot solve.
+[0:21.12] Fundamentally, we will have to change the
+architectures.
+[0:23.48] By the end of this video, you will know what technologies currently exist in the AI space.
+[0:27.32] What are the drawbacks and how we plan
+to improve on them eventually,
+[0:31.20] Till we have a timeline of AGI.
+[0:34.36] All right.
+[0:34.64] So currently most companies
+are fascinated with
+[0:39.88] Large Language Models.
+[0:42.52] This is where most of the research
+is happening.
+[0:45.00] When it comes to application development.
+[0:51.04] So GPT-5
+[0:54.88] is slightly better than GPT-4.5
+[1:00.38] which is much better than GPT-4,
+[1:06.16] which was far better than GPT-3.5.
+[1:11.96] Dollar-for-dollar training GPT-5
+[1:14.37] is more expensive than training
+GPT 4.5.
+[1:17.04] The performance boost here is smaller.
+[1:19.32] The performance boost here, from GPT-4 to GPT-4.5 is larger.
+[1:23.36] So you would expect that
+when you go from GPT-5 to GPT-6,
+[1:27.24] the performance boost
+is going to be even smaller than this.
+[1:31.44] But it turns out that we have a new type
+of model, a new architecture.
+[1:36.40] It is a Large Diffusion Model.
+[1:42.44] You see that stable diffusion
+[1:43.76] is currently being used by OpenAI
+to generate images and videos.
+[1:47.72] Gemini is doing the same thing.
+[1:48.92] Gemini is also trying
+to use diffusion for coding.
+[1:52.00] Now the interesting thing about diffusion models
+is they can train
+[1:55.44] much better on the same amount of data
+than large language models.
+[1:58.96] And so
+because you have diminishing returns here,
+[2:01.80] it makes sense to switch your approach
+to switch your architecture to a diffusion
+[2:05.56] based model. This is great,
+[2:07.32] but it doesn't solve one core problem
+that all of these models have.
+[2:11.64] Take the example
+where you flip a coin ten times,
+[2:14.92] and every time we get the result of heads.
+[2:18.36] If we are asked to predict
+what the next flip is going to result in,
+[2:22.64] any reasonable person
+is going to first check the coin
+[2:25.68] and then make a prediction
+that it could be 50% heads or 50% tails.
+[2:30.96] But when it comes to a large language
+model,
+[2:33.12] it only looks at the previous tokens
+and calculates an expected output.
+[2:37.92] So for rarely occurring
+or hard to predict tasks,
+[2:40.76] large language
+models are really, really bad.
+[2:43.32] They have no internal concept of time,
+no internal concept of space,
+[2:47.40] and no way to predict the consequences
+of their actions in the real world.
+[2:51.36] Large language models today can't do this.
+[2:53.12] Neither can diffusion based models.
+[2:55.00] But if you had an internal world
+[2:58.68] representation.
+[3:02.64] Or the world model,
+[3:04.80] then you could, using physics or using
+some of the constraints of the real world,
+[3:09.48] predict what's going to happen
+when you do an action.
+[3:12.48] For example,
+if I have the model of a tomato,
+[3:16.36] and if I perform the action of throw,
+[3:19.96] then I know that it's going to be damaged.
+[3:25.60] Okay.
+[3:26.08] If it's an unripe tomato,
+maybe the damage is small.
+[3:29.40] If it's a ripe tomato,
+the damage is large.
+[3:31.76] If it's somewhere in between,
+then the damage is significant.
+[3:35.48] But what I am doing now
+[3:36.48] is I'm not trying to predict
+the next token or the next action to do.
+[3:40.52] I'm actually finding a representation
+of the world, the world that I am living
+[3:45.40] in, and I'm trying to predict what actions
+are going to cause, what results.
+[3:51.48] So the large language
+[3:52.24] model is able to filter out actions
+which don't help in this course.
+[3:56.12] It's able to focus more on the actions
+which help bring it to its end goal.
+[4:01.92] And currently, the research by Toyota.
+[4:08.00] Around large behavioral models
+[4:10.52] where they're using robots to do
+everyday tasks is quite promising.
+[4:15.36] There's also Yann LeCun
+with the chatbot architecture,
+[4:19.48] which builds wild models and tries
+to solve these problems.
+[4:23.88] However, these do not solve
+the problem of continuous
+[4:27.72] learning.
+[4:32.12] The problem with any of the models
+that I spoke about earlier
+[4:35.08] is that once you give them data,
+once you get the information,
+[4:37.96] they try to do their best.
+[4:39.36] They try to solve the problem on the spot.
+[4:41.76] But if you have trained them on chess,
+or if you have trained them
+[4:45.12] on tomato sorting.
+[4:49.88] You can't take the knowledge
+[4:51.04] from tomato sorting
+and move the robot to play chess.
+[4:55.24] If you try to do that, then the
+information or the things that it learned
+[4:58.84] while sorting tomatoes
+[5:00.00] is going to be lost, the internal weights
+are going to be changed,
+[5:04.00] and you're going to be having a bot
+which is neither good at tomato sorting,
+[5:07.28] not good at playing chess.
+[5:09.36] While humans don't have this problem,
+[5:10.60] they are able to compartmentalize
+or somehow gain some general intelligence
+[5:14.52] such that they can perform
+well on both tasks.
+[5:18.16] Humans dream.
+[5:19.80] So at the end of the day, they sleep
+and they lose a
+[5:23.32] lot of the useless information
+that they don't need.
+[5:25.68] The neural networks are kind of reset
+or to be more precise.
+[5:29.76] They retain the information
+which they got from this day,
+[5:32.92] which is useful for the future.
+[5:34.68] The remaining information is just dumped
+or put into a backlog.
+[5:39.00] That's what humans do.
+[5:39.88] But we do not know how to do this
+with a model.
+[5:42.00] Not every biological mechanism
+can be exactly replicated in a model.
+[5:45.96] Very often
+we are trying to find the competency
+[5:48.00] and then find a mechanism
+for that competency.
+[5:50.52] The biological way in which a human does
+this is extremely complex
+[5:53.96] for us to even recognize images.
+[5:55.52] There's a lot of stuff which goes on
+in our brain, extremely efficient,
+[5:59.44] but you can mimic that same competency
+[6:02.16] with something from the metal world.
+[6:05.32] Okay,
+[6:06.36] most of the topics, such as like Sutton
+and LeCun, are hoping that this is solved.
+[6:10.52] The loss of plasticity.
+[6:17.40] Is resolved
+soon, but nothing exists for this.
+[6:20.72] Okay, this is the first challenge
+[6:22.44] in the AI space, which is currently beyond
+the research side.
+[6:26.36] So the hope again is that by 2030,
+[6:29.92] there will be some sort of research
+breakthrough
+[6:32.52] where we can find models
+or we can find the right
+[6:36.52] architecture, which is going to have
+continuous learning.
+[6:39.84] Okay.
+So this is a hope.
+[6:43.12] This is a hope of a hope.
+[6:45.48] And now we are going to go
+into a completely fuzzy line.
+[6:47.96] Okay.
+[6:48.80] Things which have not been solved
+are nowhere near being solved
+[6:52.56] and which are in the path of AGI.
+[6:55.84] So the first hurdle after learning
+[6:59.40] how to consciously learn is system
+two thinking.
+[7:08.44] This was made
+[7:09.12] really popular by a book by Daniel
+[7:13.44] Kahneman,
+[7:15.24] and the main idea was that two
+major ways of thinking,
+[7:18.48] two major modes of thinking
+were identified system one and system two.
+[7:22.68] System one is fast.
+[7:23.88] It's very, very efficient for most of
+the things that you do in your daily job.
+[7:27.48] This is good enough.
+[7:29.40] System two thinking is more involved.
+[7:31.68] It's more accurate, requires more effort.
+[7:34.68] System two thinking
+[7:35.60] is something that models can clear
+completely incapable of doing.
+[7:39.72] This includes
+the ability to have meta thinking,
+[7:43.92] which means thinking about thinking.
+[7:46.32] Thinking about things
+that you do not know.
+[7:48.24] Thinking about things
+that you might learn later.
+[7:51.24] The margins are nowhere near this.
+[7:53.04] There's other things also that system
+two thinking has, which is
+[7:57.16] when we talk about context window,
+the things that you have in your working
+[8:00.48] memory system.
+[8:01.56] Two thinking can pull things
+into working memory and push them out
+[8:04.72] as and when needed.
+[8:06.04] Okay, so if you're seeing a five players
+playing a basketball game
+[8:10.36] and the gorilla comes in between,
+you can actively ignore the gorilla crazy.
+[8:16.00] How do you choose to ignore that?
+[8:17.76] Subconsciously is just something
+that models are not yet able to do.
+[8:22.20] I said that by 2030, there is a hope
+that we are going to have this solved.
+[8:27.24] I don't see
+[8:27.84] this happening before 2040, but
+even if you are believing short timelines,
+[8:33.52] then 2035 is where I can see this
+happening.
+[8:37.80] Okay, after this comes self-defined goals.
+[8:45.36] And self
+[8:45.80] defined goals means that an AI system
+can create its own objectives
+[8:49.64] instead of following goals
+explicitly made by humans.
+[8:52.76] We need the AI to choose
+one bot amongst an infinite set of paths.
+[8:58.04] The problem with self-defined goals is
+the model needs to have some motivation,
+[9:02.64] so it needs to have a motive.
+[9:05.40] And this is not exactly the same as code.
+[9:08.76] Okay, this is what you are supposed to do
+when it comes to humans.
+[9:11.96] There's Richard Dawkins
+who wrote the books The Selfish Gene,
+[9:15.00] which means that we are all trying
+to preserve our gene.
+[9:18.12] The gene is trying to preserve itself,
+and we are basically just mediums
+[9:21.48] by which it's
+keeping its information intact.
+[9:24.96] When it comes to models,
+there is no such inherent reason to exist.
+[9:28.84] You can try to code that in,
+but we don't really know how to code that
+[9:32.40] in very well. In the case of an AI model.
+[9:34.80] If we give it the motive of being good,
+doing the maximum good for humanity,
+[9:41.28] then the model needs to understand
+what should I pursue?
+[9:44.16] What should I explore?
+[9:45.72] And that always comes internally,
+inherently in humans.
+[9:50.00] It's not very obvious how we are going to
+code this exploratory phase into a model.
+[9:55.36] This is actually even harder than system
+two thinking.
+[9:59.64] Okay.
+[10:00.16] A lot of organisms have self defined
+goals.
+[10:03.92] They do not have system two thinking.
+[10:05.52] This is more essential
+to the concept of life
+[10:08.08] than the previous things
+that we have done.
+[10:10.32] Okay, but let's be really optimistic.
+[10:12.28] Let's say by 2040
+we will have solved this problem.
+[10:15.76] Also up
+[10:18.32] very very optimistic.
+[10:19.84] And finally we have governance.
+[10:23.76] But I don't know
+when we are going to solve this.
+[10:26.88] I don't know if I have to predict,
+but if I'm forced to predict
+[10:30.24] on the fastest timeline
+which is possible, then I governance
+[10:34.12] for humans can come up by 2045.
+[10:36.84] So by the time
+this implementation reaches the world,
+[10:41.08] 2050 would be the shortest timeline
+[10:43.56] by which we hit AGI.
+[10:48.72] Okay, so in the next 25 years,
+[10:51.60] whenever someone talks about governance
+and big things like this
+[10:54.60] taking over humanity,
+usually they are completely wrong.
+[10:58.68] There is a lot of optimism
+that I've kept here.
+[11:00.84] Like too much optimism.
+[11:02.84] We probably shouldn't
+have so much optimism
+[11:04.56] when it comes to developing technology,
+[11:06.92] because there is fatigue in the research
+based on one thing.
+[11:10.84] Thank you for watching this video.
+[11:12.00] I'll see you next time.
+[11:12.68] Bye bye.
+[11:16.00] Okay, a short run
+until I recently saw a video of Richard
+[11:19.00] Sutton being interviewed by Dawkins
+Patel and I would say bookish.
+[11:23.32] If you're watching this video,
+[11:24.72] it's very nice that you bought
+such a nice guest to your podcast,
+[11:28.44] but it would be even better
+if you could prepare questions beforehand
+[11:32.40] by reading some of the papers
+in this piece,
+[11:35.16] or just looking at the fundamentals
+of how large language models work.
+[11:39.64] This is also something
+I saw in the diary of a CEO.
+[11:42.48] I think with Geoffrey Hinton.
+[11:44.32] Again, the questions there are. So,
+[11:47.52] maybe things that they've already answered
+many times in the research
+[11:50.40] and what ends up happening is they are
+[11:53.28] left with giving more clarifications,
+[11:56.40] and ending up arguing with the host
+than actually do some sort of exploration,
+[12:04.66] Some of the questions are so bad
+that people listening to them
+[12:08.42] might think that this is.
+[12:09.82] This is something to even consider.
+[12:11.82] Like one of the questions was,
+[12:14.42] don't babies mimic their moms in the first
+6 to 10 months?
+[12:18.22] And no, they don't.
+[12:20.06] I mean, if you have a baby,
+you will know this by default.
+[12:22.94] But if you if you go through basic child
+[12:25.98] psychology,
+you will know that this is not true.
+[12:27.94] So asking such a question
+then becomes a waste of time, right?
+[12:32.46] Another thing that I see
+with AI philosophers in this space,
+[12:36.18] for example, is a very famous quote.
+[12:37.82] I'm a huge fan,
+so if you're watching this,
+[12:39.70] but the idea of AI is going to come in
+the next four years,
+[12:44.22] cause a revolution and we do not need to
+fight for our rights is not true.
+[12:47.86] You know, there's a lot of things
+which are there
+[12:50.38] which need to happen
+before that can occur.
+[12:53.10] And there is no reason to believe
+that AI is going to be very nice to us
+[12:56.46] when we can't even understand ourselves.
+[12:58.90] Despite having all the time in the world.
+[13:00.90] How do you expect us to express ourselves
+to systems through code?
+[13:05.90] Our intent, our understanding, is probably
+going to be lost in translation.
+[13:09.82] All the problems of humanity
+[13:11.06] are going to exist for many, many decades
+moving forward.
+[13:14.82] They can't be solved by AI.
+[13:16.42] That looks more
+of a coping mechanism to me.
+[13:20.02] Okay.
+[13:20.50] All right.
+[13:21.02] I have now sufficiently angered everyone,
+but I just want to say to the people
+[13:24.86] who I mentioned here, like a lot
+the idea of a CEO or person.
+[13:29.02] I'm actually very, very happy
+to see you in this space.
+[13:32.54] And I just want you guys to maybe
+look more into it
+[13:35.82] so that we can have awesome discussions,
+moving forward.
+[13:38.42] Thank you. See you.

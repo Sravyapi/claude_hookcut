@@ -1,0 +1,511 @@
+[0:01.36] [Music]
+[0:06.08] hello everyone welcome back in this
+[0:09.04] presentation let's focus on E diagram
+[0:12.04] for University database we know DPMS has
+[0:16.28] a widespread application areas mainly in
+[0:20.12] banking in University Supermarket sales
+[0:23.92] Enterprises marketing Railways or
+[0:26.68] Airways reservation HR Telecom insurance
+[0:30.16] Hospital management and whatnot all
+[0:33.44] application areas are actually dealing
+[0:35.72] with the real world entities where each
+[0:38.96] entity is a real world thing or an
+[0:41.60] object which is distinguishable from all
+[0:44.40] other object so we can understand that
+[0:47.12] dbms is inevitable when we are concerned
+[0:50.44] with effectively storing the data and
+[0:52.72] effectively retrieving the data as well
+[0:55.12] as and when required in this
+[0:57.32] presentation we will focus on how
+[1:00.16] University database looks like please be
+[1:02.92] noted that this University database may
+[1:05.88] not be suitable for all universities
+[1:08.48] because this is purely requirements
+[1:10.64] based universities may have their own
+[1:13.36] requirements so this ER diagram whatever
+[1:16.40] we are going to see now is just a
+[1:18.52] generic way of representation however as
+[1:21.60] I mentioned this is requirement based
+[1:24.84] before seeing the university database we
+[1:27.28] should have a strong fundamentals about
+[1:29.40] what is an entity relationship model or
+[1:32.72] the entity relationship diagram how
+[1:35.36] entity sets are represented a strong
+[1:38.24] entity set is represented with a
+[1:40.04] rectangle and a weak entity set is
+[1:42.60] represented with a double rectangle
+[1:45.36] coming to the relationship a strong
+[1:47.52] relationship is represented with a
+[1:49.36] diamond symbol a weak relationship is
+[1:52.04] represented with double diamonds and we
+[1:54.88] have other notations as well how
+[1:56.96] attributes are represented there are
+[1:58.88] different types of attrib rutes single
+[2:00.84] valued attribute is represented with an
+[2:03.04] ellipse composite attribute is
+[2:05.00] represented like this multivalued
+[2:07.16] attributes are represented with double
+[2:08.92] ellipse derived attributes are
+[2:10.92] represented with dotted ellipse we have
+[2:13.16] null attributes as well if you are
+[2:15.40] directly watching this lecture I would
+[2:17.28] request you to watch my previous
+[2:18.80] lectures on ER model and ER diagram to
+[2:22.40] gain better insights and understanding
+[2:25.36] now let's step into the ER diagram for
+[2:28.64] the University dat database when we talk
+[2:31.76] about University these two are the
+[2:34.36] important pillars in the University
+[2:36.56] database number one the instructor
+[2:39.56] because a university cannot run without
+[2:42.32] instructor and what's the next entity
+[2:44.56] that is also inevitable the student
+[2:46.80] entity obviously yes University contains
+[2:50.52] instructors and students without any
+[2:53.24] second thought now if you talk about the
+[2:55.44] instructor entities what are all the
+[2:57.12] attributes we have the instructor ID the
+[3:00.36] name of the instructor and the salary
+[3:02.76] this instructor relation may have any
+[3:04.88] number of attributes considering the
+[3:07.04] space constraints I'm just projecting
+[3:08.96] only three attributes the instructor ID
+[3:11.56] the name of the instructor and the
+[3:13.28] salary of the instructor coming to the
+[3:15.52] student entity or student entity set we
+[3:18.12] are dealing with only three attributes
+[3:20.16] the student ID the name of the student
+[3:22.88] and the total credits If You observe
+[3:25.96] these two are strong entities you know
+[3:28.12] why because they have their own primary
+[3:31.40] key attribute instructor has instructor
+[3:33.96] ID as a primary key attribute similarly
+[3:36.64] student also has a student ID as the
+[3:39.16] primary key attribute so that these ID
+[3:41.96] attributes helps us to identify the
+[3:43.92] records uniquely all right we have seen
+[3:46.48] about two entities instructor and
+[3:48.52] student what is the relationship between
+[3:50.96] an instructor and the student obviously
+[3:53.92] it is the advisor relationship
+[3:56.44] instructor advises students or students
+[4:00.00] takes advice from the instructors so in
+[4:02.92] this example I establishing advisor
+[4:05.44] relationship between instructor entity
+[4:08.24] and student entity and what kind of
+[4:10.68] relationship is that can you see this is
+[4:13.40] actually a one to many relationship
+[4:16.60] because an instructor May advise many
+[4:20.12] number of students but a student may
+[4:23.40] have at most one advisor or instructor
+[4:27.12] and that is why the relationship between
+[4:29.36] instru instructor and the student is a
+[4:32.08] one to many relationship now talking
+[4:35.12] about the relationship it is a strong
+[4:37.76] relationship you know why because this
+[4:40.48] relationship is associated with two
+[4:43.00] entities instructor and student which
+[4:45.72] has their own primary key attribute
+[4:48.28] which is the instructor ID for
+[4:49.92] instructor relation and student ID for
+[4:52.72] the student relation fine I going to
+[4:55.76] construct the ER model with this way so
+[4:59.04] at first we started with instructor and
+[5:01.60] student entities which are connected
+[5:03.72] with the advisor relationship which is a
+[5:06.28] one to many relationship now let me
+[5:08.76] bring in another entity set which is the
+[5:11.36] department if you see all these are real
+[5:13.92] world entities right instructor is a
+[5:16.24] real world entity student is a real
+[5:18.16] world entity department is also a real
+[5:20.68] world entity in a university we cannot
+[5:23.24] think about an ER diagram without
+[5:25.00] Department because this is the one where
+[5:27.76] instructor is also associated with and
+[5:30.24] student is also associated with every
+[5:32.92] instructor who is hired definitely will
+[5:35.20] be belonging to a specific department or
+[5:37.44] a particular Department similarly every
+[5:40.20] student who is enrolled into the courses
+[5:42.16] in the University will be definitely
+[5:44.24] belonging to a department and that is
+[5:46.44] why we are thinking about the next
+[5:48.44] entity which is the department entity
+[5:50.88] which has its attributes Department name
+[5:53.84] the building and the budget as already
+[5:56.24] mentioned considering the space
+[5:57.84] constraints and projecting only The
+[5:59.96] Limited number of attributes also this
+[6:02.68] is requirements based and also this is
+[6:05.20] assumption based in a generic way a
+[6:07.44] university will have these many things
+[6:10.12] now let's focus on how instructor entity
+[6:12.84] is associated with the Department entity
+[6:15.92] obviously there will be a relationship
+[6:17.64] isn't it what's that relationship it's
+[6:20.52] the relationship between the instructor
+[6:22.36] and the department you can give any name
+[6:25.00] instructor works for department or
+[6:27.08] instructor joined in department but in a
+[6:29.60] generic way I am representing it as
+[6:31.60] instructor department so this is the
+[6:33.88] relationship instructor Department which
+[6:36.28] is connecting the instructor entity and
+[6:38.60] the department entity what kind of
+[6:40.72] relationship it will be obviously one to
+[6:43.52] many can you see here one to many
+[6:46.84] meaning a department may have many
+[6:50.56] instructors but an instructor may have
+[6:53.64] at most one department and that is why
+[6:56.64] this is one to many is it something
+[6:59.60] additional that you are noting here when
+[7:01.40] compared to the relationship between
+[7:03.48] instructor and student yes something is
+[7:06.32] different here what do we mean by this
+[7:08.60] double line meaning it is the total
+[7:11.92] participation if you recollect in one of
+[7:14.16] the previous lectures We have dealt
+[7:16.00] elaborately about the participation
+[7:17.92] constraints here there is a total
+[7:20.44] participation can you see here this
+[7:22.72] double line indicate the participation
+[7:25.36] of instructor entity with the Department
+[7:27.44] relation is total part participation
+[7:30.52] what do you mean by that all the
+[7:32.36] instructors who are working in this
+[7:33.80] University will be definitely belonging
+[7:35.88] to a department and that is why this is
+[7:38.36] a total participation here my assumption
+[7:41.28] is there are no adjunct faculty or No
+[7:44.24] guest faculties as I already mentioned
+[7:46.60] it's all dependent on the requirements
+[7:48.80] so I am talking about the regular
+[7:50.56] faculty members so I mean to say the
+[7:53.12] instructor is definitely belonging to a
+[7:55.88] department for sure and that is why all
+[7:58.44] the instructors will be definitely
+[8:00.12] working for a department and that is why
+[8:02.80] the participation is a total
+[8:05.12] participation all right we have
+[8:07.16] establish the relationship between the
+[8:09.08] instructor and the department we also
+[8:11.40] know that we are going to establish the
+[8:13.16] relationship between the student and the
+[8:15.08] department what is that definitely
+[8:17.44] student and Department are also
+[8:19.32] associated with each other through
+[8:21.44] student Department relationship you can
+[8:23.92] give any names as per the requirement as
+[8:26.40] already mentioned for generic notation
+[8:28.36] I'm just giving student Department as
+[8:30.36] the relationship between student entity
+[8:32.76] and the department entity now what is
+[8:35.32] the relationship this is also definitely
+[8:38.24] a on to many relationship because a
+[8:41.08] department may have many students but a
+[8:44.12] student must be belonging to at most one
+[8:46.88] department and that is why the
+[8:48.88] relationship student department is a one
+[8:52.16] to many relationship and what about the
+[8:55.00] participation constraint here this is
+[8:57.12] also having a total participation
+[8:59.08] because all the students will be
+[9:01.20] definitely belonging to some department
+[9:03.56] so all the students will be
+[9:05.28] participating in this relationship with
+[9:08.24] the Department entity I hope things are
+[9:11.08] clear to you now University is not
+[9:13.48] limited only with these entities we have
+[9:16.08] a lot more entities let's see the next
+[9:19.20] entity the section now when we talk
+[9:22.28] about the section again an instructor
+[9:24.48] will be handling course for a particular
+[9:26.36] section as well as a student will also
+[9:28.48] be a part of a SE ction isn't it so in
+[9:31.20] this case we have a section entity where
+[9:34.96] both instructor and student are going to
+[9:38.20] be related with each other at first
+[9:40.52] let's focus on what is the relationship
+[9:42.44] between instructor and section
+[9:44.92] relationship is teaches obviously
+[9:47.92] instructor is going to teach to a
+[9:50.48] particular section and that's why we
+[9:52.96] have a teachers relationship so
+[9:55.72] instructor and section are related with
+[9:58.84] teachers
+[10:00.40] relationship so instructor teaches
+[10:03.84] section and also if you note here this
+[10:06.24] is a total participation because if you
+[10:08.88] have a section definitely that section
+[10:10.80] will be engaged in the teaching process
+[10:12.88] with a specific instructor and that is
+[10:15.56] why it is a total participation If You
+[10:18.48] observe we have one to many relationship
+[10:20.96] here here as well as here I mean
+[10:24.32] advisers instructor Department student
+[10:27.08] Department all three have one to many
+[10:29.88] relationship what about this this is
+[10:32.36] definitely not one to many because we
+[10:34.48] have no arrows represented here so the
+[10:37.04] relationship here is a many to many
+[10:39.24] relationship many instructors may be
+[10:41.64] engaged with many sections and that is
+[10:44.08] why we cannot go for or think about one
+[10:46.84] to one or one to many or many to one in
+[10:50.52] a generic way it is a many to many
+[10:53.36] relationship we are done with
+[10:55.32] establishing the relationship between
+[10:57.28] instructor and the section how using
+[11:00.36] teachers relationship now coming to how
+[11:03.24] section and student are related to each
+[11:05.72] other takes students will be taking a
+[11:09.20] particular section or a section will be
+[11:12.40] having a set of students so obviously I
+[11:15.64] am representing it with the takes
+[11:17.68] relationship and what kind of
+[11:19.52] relationship here there is no total
+[11:22.16] participation however it is many to many
+[11:25.88] now you may be asking why I have given a
+[11:28.76] daughter line for the section ID
+[11:31.08] attribute if you see the section entity
+[11:33.68] that contains three attributes section
+[11:35.76] ID semester and year there is no primary
+[11:39.28] key here in fact section ID semester and
+[11:43.00] year all three together should form a
+[11:45.64] key in simple terms there is no primary
+[11:48.44] key attribute in the section entity of
+[11:51.00] course you can have dashed underlines
+[11:52.96] for all three I mean section ID semester
+[11:55.76] and year now one more interesting thing
+[11:58.20] here is when we we say student and
+[12:00.32] section has takes relationship obviously
+[12:03.72] the student has student ID name total
+[12:06.84] credits earned obviously students will
+[12:09.16] be belonging to a particular section
+[12:10.96] that has a section ID semester and year
+[12:14.00] so in this particular semester and year
+[12:16.88] what is the grade that student has taken
+[12:19.32] so this relationship should reveal or
+[12:21.68] should hold information about the grade
+[12:24.28] related information so what do we mean
+[12:26.88] by this it means this grade an attribute
+[12:30.72] that is attached to this relationship
+[12:33.64] set which is actually Tes relationship
+[12:36.20] set this way of representing thing is
+[12:38.88] known as attribute Associated to a
+[12:42.00] relationship set takes between student
+[12:44.92] and section is a strong relationship in
+[12:48.00] all the cases everything is a strong
+[12:50.16] relationship because there is at least
+[12:52.36] one primary key attribute in each of
+[12:54.56] this case except section entity now
+[12:57.68] let's build this e diagram for
+[12:59.20] furthermore let me bring in the course
+[13:01.60] entity what do you mean by this
+[13:04.36] obviously in a university there will be
+[13:07.52] a set of courses where each course is
+[13:10.32] identified using course ID each course
+[13:13.52] will have a title and the maximum
+[13:15.92] credits information so course entity
+[13:18.40] will have course ID as the primary key
+[13:20.72] attribute the title of the course and
+[13:22.92] credits for example 301 database
+[13:25.92] management system with the credits of
+[13:28.16] four so 3 01 meaning the course ID title
+[13:31.80] is database Management systems and the
+[13:34.20] credits is three or four as per the
+[13:36.68] university as you are aware all these
+[13:39.32] are requirements based so we can say
+[13:42.60] course is also an inevitable entity in
+[13:46.04] the University database now when we talk
+[13:49.04] about course each department will have
+[13:51.64] their set of courses so this has to be
+[13:54.04] related to the department relation I
+[13:56.48] mean the course entity should be somehow
+[13:59.28] related with the Department entity
+[14:01.28] through some relationship also when we
+[14:03.88] talk about section each course should be
+[14:06.28] associated with the section as well
+[14:08.16] because the sections are already
+[14:09.60] associated with instructor and the
+[14:11.52] student so student will be taking the
+[14:13.76] course by enrolling into a specific
+[14:15.96] section isn't it so after they are
+[14:17.92] enrolled into the section they will be
+[14:19.44] opting for specific courses similarly
+[14:21.92] courses are offered by the departments
+[14:24.88] at first let's see the relationship
+[14:26.52] between this course and the section the
+[14:28.64] relation ship between course and the
+[14:30.32] section is the section course
+[14:32.88] relationship now if you see this is a
+[14:35.36] Double Diamond what does Double Diamond
+[14:37.72] mean it means it is a weak relationship
+[14:41.28] isn't it now what kind of participation
+[14:43.64] it is a total participation and what
+[14:46.96] kind of mapping cardinality it is one to
+[14:49.76] many mapping cardinality and also if You
+[14:52.48] observe here this is not a primary key
+[14:55.52] attribute very very important please
+[14:57.76] make a note of this since we don't have
+[14:59.96] a primary key attribute anything in the
+[15:02.24] section relationship that uniquely
+[15:03.96] identifies things and that is why this
+[15:07.60] entity we refer as a weak entity so the
+[15:10.44] relationship between one strong entity
+[15:13.16] course which has a course ID as the
+[15:15.40] primary key attribute with the another
+[15:17.52] entity which is not having a primary key
+[15:20.12] attribute and that's why the
+[15:21.88] relationship that is formed between the
+[15:23.84] scores and the section entities is a
+[15:26.36] weak relationship now let's see the Rel
+[15:28.96] relationship between this course and the
+[15:30.88] department obviously course is also
+[15:33.40] associated with the Department with
+[15:35.32] course Department relationship and this
+[15:37.84] is also a total participation which is a
+[15:41.00] strong relationship why because this is
+[15:43.72] associated with two strong entities
+[15:45.80] department and course ID which has their
+[15:47.96] own primary keys and that is why this
+[15:50.40] relationship a strong
+[15:52.12] relationship whereas here this is a weak
+[15:54.92] relationship let's build the CR diagram
+[15:57.40] furthermore let's bring then the
+[15:59.72] prerequisite relation which is this what
+[16:03.04] do we mean by this you see this is a
+[16:05.84] unary relationship this is not a binary
+[16:08.24] relationship like others whatever we
+[16:10.24] have seen a binary relationship which is
+[16:12.56] actually Associated between two entities
+[16:15.08] this is a binary relationship this is a
+[16:17.24] binary relationship if you see all other
+[16:20.24] relationships whatever we have discussed
+[16:22.08] so far except this prerequisite is a
+[16:24.60] binary relationship because they are
+[16:26.36] associated with two tables or two
+[16:28.44] entities
+[16:29.44] if you see here this prerequisite
+[16:31.36] relationship is actually a unary
+[16:33.84] relation because it acts only on the
+[16:36.00] course table why because we are going to
+[16:39.44] represent two roles here what are the
+[16:41.76] roles the course ID and the prerequisite
+[16:45.08] ID let's assume the scenario if students
+[16:48.40] wants to enroll in Java before taking
+[16:51.64] the course Java students should have at
+[16:53.52] least some object-oriented knowledge and
+[16:55.76] that is why objectoriented programming
+[16:57.60] may be a prerequisite course so if you
+[16:59.96] see here this prerequisite is the
+[17:01.92] relationship that deals with only one
+[17:04.52] entity which is course where
+[17:06.64] objectoriented programming course is
+[17:08.32] also available here Java programming
+[17:10.68] course is also available here let's take
+[17:13.20] another example if students wants to
+[17:15.56] enroll in cryptography and network
+[17:17.52] security course obviously they should
+[17:19.80] have the strong fundamentals about
+[17:21.68] computer networks and that is why we can
+[17:24.36] say computer network course should be a
+[17:26.72] prerequisite for cryptography and
+[17:28.88] network security all these relationship
+[17:31.60] are existing inside the single entity
+[17:34.68] and this relationship is a prerequisite
+[17:36.52] relationship which deals with only one
+[17:38.92] entity with the roles course ID and the
+[17:42.04] prerequisite ID for example cryptography
+[17:44.88] and network security course ID should be
+[17:47.32] linked or associated with the
+[17:49.00] prerequisite ID of computer
+[17:51.56] networks I hope things are making sense
+[17:54.04] to you let's build the Z diagram
+[17:56.28] furthermore now let's bring in the class
+[17:58.88] classroom which is an entity this
+[18:01.64] classroom will be in a specific
+[18:04.28] building with the room number and the
+[18:07.44] capacity because when we think about
+[18:09.76] real world entities these things are
+[18:11.88] inevitable isn't it a classroom is also
+[18:14.24] a real world entity which is described
+[18:16.00] by building or building number room
+[18:19.08] number and the capacity now each section
+[18:22.12] needs a class isn't it now let's
+[18:24.36] establish the relationship between
+[18:25.96] section and the classroom so the
+[18:27.88] relationship is actually section class
+[18:30.12] relationship between a section and the
+[18:32.68] classroom and what kind of relationship
+[18:35.12] it is it's again one to many
+[18:37.40] relationship relationship section class
+[18:40.04] between section and classroom is having
+[18:42.92] a total participation all the sections
+[18:45.60] will be having a classroom and it's a
+[18:48.80] one to many relationship now let's bring
+[18:51.56] in another entity the time slot where
+[18:54.72] time slot ID is a primary key attribute
+[18:56.96] which is described by other comp
+[18:58.80] opposite attribute day start time and
+[19:01.60] end time as I mentioned these are all
+[19:03.76] requirements based how this time slot is
+[19:06.08] associated with a specific section which
+[19:08.36] is through Section time slot and what
+[19:10.88] kind of relationship it is it is a total
+[19:13.40] participation with one to many
+[19:15.72] relationship I hope things are clear to
+[19:18.12] you if You observe this whole ER diagram
+[19:22.04] this gives the overall logical structure
+[19:24.76] in other words we can say this is a
+[19:26.84] graphical representation which which is
+[19:29.12] easy to implement if a database
+[19:31.28] administrator sees this he knows how to
+[19:34.32] construct the database with the database
+[19:36.40] softwares it may be any software but he
+[19:39.28] or she knows that there should exist an
+[19:41.76] instructor entity with these attributes
+[19:44.24] Department entity with these attributes
+[19:46.40] and how they should be related to each
+[19:48.84] other and what kind of participation it
+[19:51.56] should be what kind of relationship it
+[19:53.92] should be established whether it is one
+[19:55.60] to one or one to many or many to one or
+[19:58.24] many to to many similarly what kind of
+[20:00.48] participation as well whether it is a
+[20:02.44] total participation or partial
+[20:04.56] participation and what kind of
+[20:06.28] relationship as well in the whole
+[20:08.24] picture if you see there are multiple
+[20:10.48] relationships one is a Unity
+[20:12.48] relationship as depicted here other
+[20:15.04] things are binary relationship because
+[20:17.24] it's acting on two tables or two
+[20:19.56] entities I hope things are clear to you
+[20:22.68] again I want to emphasize this is based
+[20:24.72] on some assumptions now there is a
+[20:26.92] homework question for you just keenly
+[20:29.16] observe this and according to you what
+[20:31.56] are all the assumptions that we have
+[20:33.12] made here I'll give you one assumption
+[20:35.68] here I have assumed that instructors
+[20:38.12] will be all regular faculty members or
+[20:40.72] regular instructors there are no
+[20:42.68] part-time or guest faculties or adjunct
+[20:45.32] faculties here all are full-time faculty
+[20:48.00] members so this is one assumption I have
+[20:50.00] made here just correlate this with your
+[20:52.80] University database and find out what
+[20:55.36] are all the assumptions that we have
+[20:56.88] made here or in other other words how
+[20:59.92] this University database is differing
+[21:02.24] from the actual logic which is
+[21:03.96] implemented in your University or in
+[21:06.28] your college draft a paragraph about
+[21:08.88] this and post your answers in the
+[21:10.84] comment section I hope the session is
+[21:13.32] interesting I'll see you in the next
+[21:15.40] presentation and thank you for watching
+[21:19.28] [Applause]
+[21:21.47] [Music]

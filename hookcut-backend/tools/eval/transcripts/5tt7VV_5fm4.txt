@@ -1,0 +1,350 @@
+[0:00.16] In this lesson, we're going to stop
+[0:02.08] talking and start building. We're going
+[0:04.00] to open V3 and create a project from
+[0:06.80] scratch. I call this [music] the
+[0:09.12] iteration method. We're not just going
+[0:11.28] to type one prompt and hope for the
+[0:13.44] best. We're going to start with a raw
+[0:16.00] idea, analyze why it fails, and then
+[0:19.04] refine using the tools we've learned
+[0:20.96] until we have a cinematic masterpiece.
+[0:24.56] So, our concept today, [music] it's a
+[0:26.88] cyberpunk noodle shop. Let's dive in.
+[0:29.84] First, let's do our pre-flight check.
+[0:31.44] [music] You need to set the machine up
+[0:33.28] for success before you even type a word.
+[0:36.40] So, first here I am selecting the text
+[0:38.48] to video option. And for the model, I'm
+[0:40.80] keeping VO3.1 [music]
+[0:42.16] quality. We want the best physics. And
+[0:44.72] for aspect ratio, [music] set this to
+[0:46.72] 16x9. We're making a movie trailer, not
+[0:49.36] a Tik Tok. Also, set the number of
+[0:52.08] outputs to two. This is crucial for
+[0:54.56] iteration. It doubles our chances of
+[0:56.88] getting a lucky seed variation. [music]
+[0:59.60] Now, let's make a mistake on purpose.
+[1:02.48] Let's do what 90% of beginners do.
+[1:05.28] Prompt poverty. I'm going to type a
+[1:07.84] robot cooking noodles.
+[1:18.16] I hit generate. Since we set outputs to
+[1:21.12] two, we are getting two variations
+[1:23.36] simultaneously. Let's wait a moment.
+[1:26.08] Okay, so we have our result. So this is
+[1:28.16] the first output and since we clicked
+[1:30.16] two outputs, this is the second one.
+[1:41.44] Look at this result. Is it a robot? Yes.
+[1:44.80] Is it cooking? Yes. But would you watch
+[1:47.84] this in a movie? No. It looks flat. The
+[1:51.44] camera is stuck in one spot. The robot
+[1:54.24] looks like a cheap toy. [music]
+[1:56.08] The AI did exactly what we asked, but we
+[1:59.52] didn't ask enough. We gave it a subject
+[2:01.84] and an action, but we ignored the
+[2:04.08] context, camera, and lighting. Let's fix
+[2:07.52] this using the sackle method. We need to
+[2:10.24] be the director. So, our subject, not
+[2:13.20] just a robot, let's say a rustic
+[2:16.00] industrial culinary droid with glowing
+[2:18.40] blue eyes.
+[2:20.16] An action instead of just cooking. Let's
+[2:22.88] say rapidly chopping vegetables with
+[2:25.68] precision. Steam rising from a hot walk.
+[2:29.60] Context. [music]
+[2:30.56] Where are we? A cramped neon lit street
+[2:33.28] food stall in a rainy cyberpunk city.
+[2:36.96] Then camera. Let's add energy. Close up.
+[2:40.00] Handheld camera movement. Shallow depth
+[2:41.79] [music] of field. Then lighting. Set the
+[2:44.40] mood. Reflections of pink. Neon signs on
+[2:47.52] wet metal. Volutric fog. Now, let's read
+[2:51.44] that back. We've painted a picture
+[2:53.84] before the video even exists.
+[2:57.52] Now, I'll copy and paste this prompt
+[2:59.47] [music] into V3. I'm copy pasting the
+[3:01.92] prompt. Now, here for the outputs per
+[3:04.40] prompt, I'm just generating one to save
+[3:06.32] credits.
+[3:09.36] Now, let's go ahead and hit generate
+[3:11.36] right here.
+[3:14.32] Let's wait for the output. [music] And
+[3:16.16] so, we finally have our completed
+[3:18.08] output.
+[3:21.20] Look at the difference comparing the
+[3:23.28] weak video versus a sackle video. The
+[3:26.08] steam moves naturally. The camera feels
+[3:28.56] like it's being held by a real
+[3:30.40] cameraman.
+[3:32.08] And now listen to the audio.
+[3:42.48] The audio of the sizzling walk matches
+[3:44.72] the visuals perfectly.
+[3:47.20] This is usable footage. Now again, I'll
+[3:49.92] show you the same thing with expander.
+[3:52.40] Sometimes you have the idea, but you
+[3:54.72] don't have the vocabulary. You don't
+[3:56.96] know if you want Rembrandt lighting or
+[3:59.52] anamorphic lens flares. That's where the
+[4:02.32] expander comes in. I'm going to take our
+[4:04.56] core idea, an industrial droid cooking,
+[4:07.52] and neon rain. I'm just hyping that.
+[4:17.36] Now I'll click the expand option and
+[4:20.48] I'll select cinematic. So see [music]
+[4:22.80] the difference. I just typed industrial
+[4:25.04] droid cooking in neon rain. But now
+[4:27.92] using expander the entire prompt is
+[4:30.08] modified.
+[4:31.60] We have the scene, visuals, environment,
+[4:36.48] like every detail, camera, SFX, music,
+[4:41.44] every detail is automatically generated.
+[4:44.56] Now, I'll hit enter. So, here we have
+[4:47.28] our output. Check out the video. It's
+[4:49.52] hyperrealistic with raindrops hitting
+[4:51.76] the metal surface. Notice how the
+[4:54.08] expander pushed the realism even
+[4:56.16] further. [music] It focused on the
+[4:58.32] texture of the rust and the physics of
+[5:00.80] the rain hitting the metal. A movie
+[5:03.52] isn't just one shot. It's a sequence.
+[5:05.89] [music]
+[5:06.88] Here's the challenge. If you try to
+[5:09.04] generate the next scene right now, say
+[5:11.76] the robot walking outside, you'll run
+[5:14.08] into what we call the amnesia problem.
+[5:17.04] Because V3 generates every pixel from
+[5:19.52] scratch, often forgets who your
+[5:21.52] character is between shots.
+[5:24.08] You might get a different robot,
+[5:25.84] different metal [music] textures, or
+[5:27.60] different lighting. To build a real
+[5:29.68] narrative, we need to cure this amnesia.
+[5:33.20] We need to lock the identity down. To
+[5:35.60] solve the consistency problem, we turn
+[5:37.84] to the ingredients tab. In technical
+[5:40.96] terms, we are utilizing reference
+[5:43.12] images.
+[5:44.64] But I [music] want you to think of this
+[5:46.32] differently. Think of this tab as your
+[5:48.32] virtual casting department and prop
+[5:50.24] room. It allows you to upload a
+[5:52.64] character [music] to lock in an actor's
+[5:54.88] facial features and object to keep
+[5:58.08] specific [music] products or props
+[6:00.08] consistent.
+[6:01.60] A style to maintain identical lighting
+[6:04.00] and color palettes across scenes.
+[6:07.12] So, step one, casting the character.
+[6:09.84] Let's start by creating our actor. I'll
+[6:12.48] select the create image option.
+[6:15.76] Now, I'll enter my prompt. So, I want a
+[6:18.24] rusted industrial culinary droid with a
+[6:20.88] heavy humanoid metal body, worn steel
+[6:23.92] plates, exposed bolts, grease stains,
+[6:26.48] burn marks, glowing blue eyes in a
+[6:29.52] compact robot head, mechanical arms with
+[6:32.32] tool-like fenders, dark factory kitchen
+[6:35.44] setting, cinematic lighting, gritty
+[6:38.40] sci-fi realism, and I want it in high
+[6:40.88] detail.
+[6:43.84] Now, I'll hit enter. So, we have our
+[6:46.72] output. Just like that, our character is
+[6:49.20] ready for the scene. Now, let's put them
+[6:51.68] to work. So, I'm adding this to the
+[6:54.32] prompt. Now, I'll select ingredients for
+[6:56.80] the video. [music] So, this image is our
+[6:59.12] ingredient. Now, I'll enter our prompt.
+[7:01.68] So, [music] rusted industrial culinary.
+[7:04.24] Droid extends a metal hand and offers a
+[7:06.96] steaming bowl of noodles to a seated
+[7:09.03] [music] customer across the steel
+[7:10.72] counter. Glowing blue eyes focus
+[7:12.96] forward. factory kitchen [music]
+[7:14.96] setting, cinematic lighting, gritty
+[7:16.88] sci-fi realism. Also, this time I'm
+[7:20.24] making the robot speak. So, here is the
+[7:22.96] robot dialogue. So, the robot will say
+[7:25.36] something like, "Here is your order.
+[7:26.88] Nutrient balance confirmed." So, this is
+[7:29.60] the dialogue. [music]
+[7:30.64] Now, from expanders, I'm selecting
+[7:33.52] cinematic
+[7:36.08] so that it will expand my [music]
+[7:37.92] prompt.
+[7:39.52] So, I've seen visuals, camera angle,
+[7:42.56] everything in detail. [music] Now, I'll
+[7:44.32] hit generate. This feature isn't
+[7:46.56] supported on VO 3.1 quality. So, now I
+[7:50.08] switched it to Veo 3.1 [music] fast.
+[7:53.28] Now, let's hit generate. Okay, so we
+[7:56.32] have our output. Let's play this.
+[7:58.96] >> Here's your order. Nutrient balance
+[8:01.36] confirmed. Temperature optimal. Enjoy
+[8:04.24] your noodles.
+[8:05.28] >> See how nicely the dialogue turned out?
+[8:07.76] The lip synchronization is precise,
+[8:09.94] [music] matching a robotic cadence
+[8:11.52] perfectly,
+[8:13.52] and the voice fits the gritty industrial
+[8:15.84] [music] aesthetic we established
+[8:17.12] earlier. It feels like a real scene. How
+[8:20.64] is this possible? It utilizes a
+[8:22.96] mechanism called cross attention.
+[8:25.84] Instead of just listening to your text,
+[8:28.24] the model keeps looking back at that
+[8:30.08] original reference image. Well, it
+[8:32.72] generates every single frame, whether
+[8:34.72] he's handing over noodles or moving his
+[8:37.28] mouth to speak.
+[8:39.36] It ensures the geometry of the robot's
+[8:42.00] face matches the image, while the text
+[8:45.04] controls the animation. Now, let's talk
+[8:47.84] about control. Sometimes you don't just
+[8:50.48] want random movement. You want a [music]
+[8:53.28] specific journey. This is where frames
+[8:55.84] to video shines. Imagine we want a
+[8:58.16] continuous shot that starts inside the
+[8:59.92] noodle shop and flies out the window
+[9:02.80] onto the street. If we leave this
+[9:05.12] entirely [music] to a text prompt, the
+[9:07.12] AI might get confused or cut to the next
+[9:09.44] scene. So, we give it a map. Step one,
+[9:12.96] the start [music] frame.
+[9:15.04] So, first we need our starting point.
+[9:17.52] So, for this I'll take a screenshot from
+[9:19.76] the video we just generated.
+[9:31.04] So we convert these frames [music] into
+[9:33.20] a video. And now let's look at frame
+[9:36.16] number one.
+[9:42.24] Then comes step two, the end frame. We
+[9:45.20] need the destination. I'll use the
+[9:47.44] create image tool [music] to generate
+[9:48.88] our target visual. So I'm giving the
+[9:51.44] prompt a rainy neon lit cyberpunk street
+[9:54.48] at night.
+[9:56.40] Okay. So we have [music] two images. I'm
+[9:58.88] selecting this one here. We have a
+[10:01.44] download option too. Like we can
+[10:03.44] download in 1K, 2K or even 4K resolution
+[10:07.04] if [music] we upgrade our plan. So again
+[10:10.16] I'm going to frames to video. And this
+[10:13.04] is my frame two. So first I'll upload
+[10:15.68] our frame one which was the screenshot
+[10:17.84] we took. and then [music] frame two. Now
+[10:20.72] I give our directional prompt.
+[10:23.68] Camera flies rapidly from the counter
+[10:26.08] through the open window out to the rainy
+[10:28.40] street and I'll hit generate.
+[10:34.40] All right [music] then. So we have our
+[10:36.08] successfully generated output. Let's
+[10:38.56] take a moment to carefully check the
+[10:40.80] results.
+[10:46.80] So, V3 calculates the pixels needed to
+[10:50.16] bridge these two images. It acts as a
+[10:52.96] bridge, interpolating the physics
+[10:54.88] between [music] point A and point B.
+[10:57.60] This is how you get those impossible
+[10:59.68] drone shots.
+[11:04.56] Okay, we have our clips. Now, let's
+[11:07.36] build the entire video. I'll click add
+[11:09.52] to scene and open the scene builder. So
+[11:12.64] this was our [music] first video. I'm
+[11:14.64] clicking add to scene. And here we have
+[11:17.28] the scene builder [music] option.
+[11:20.72] So for this I'll change to the text to
+[11:23.68] video dropdown. And then I'll click
+[11:25.84] scene builder. Okay. So this is our
+[11:28.40] first scene.
+[11:36.80] This is your AI powered timeline. Now
+[11:39.60] let's explore. So [music] feature A, as
+[11:42.32] you can see, the clip of the robot
+[11:44.16] cooking is only 8 seconds, but I need it
+[11:47.44] to be longer. I have [music] two options
+[11:49.60] here. If I click the plus icon, jump to
+[11:52.40] and extend. I'll click the extend
+[11:55.20] option.
+[11:57.12] So it's asking me what should [music]
+[11:59.20] happen next. Here, I'll give the prompt
+[12:01.36] for what should happen. So I'm given the
+[12:03.68] prompt. I want the robot to speak loudly
+[12:06.16] and try to attract the customers. So,
+[12:08.72] I'm entering that and I'll hit generate.
+[12:14.40] Okay, so we have our output.
+[12:16.08] >> Nutrient balance confirmed. Temperature
+[12:18.96] optimal. Enjoy your noodles.
+[12:22.72] Step right up. Get your fresh hot pasta
+[12:25.04] here. Guaranteed best flavor in the
+[12:27.36] city.
+[12:28.80] >> I'll click extend [music]
+[12:30.72] and I'll enter audience listening to the
+[12:34.00] robot.
+[12:36.40] Okay, [music] so our output is ready.
+[12:38.64] Let's watch the video.
+[12:39.84] >> Here is your order. Nutrient balance
+[12:42.40] confirmed. Temperature optimal. Enjoy
+[12:45.44] your noodles.
+[12:47.52] >> The pasta is served. It meets all
+[12:49.84] nutritional requirements.
+[12:54.16] >> I have my robot in the shop. Now I want
+[12:56.48] him in a subway station. [music]
+[12:58.32] I place the subway station prompt in the
+[13:00.32] timeline next to the robot click.
+[13:03.12] So, [music] I'll click the jump to
+[13:04.96] option, and I'll enter my prompt here.
+[13:07.76] Rusted [music] industrial culinary
+[13:09.52] droids standing inside an underground
+[13:11.52] subway station. Same humanoid metal body
+[13:13.84] and glowing blue eyes, concrete
+[13:15.60] platforms, tiled walls, metal pillars,
+[13:18.88] urban [music] industrial mood, and
+[13:20.40] cinematic lighting. I'll hit enter.
+[13:28.72] All right, [music] then. Now that we've
+[13:30.08] successfully generated our final output,
+[13:32.16] let's go ahead and play it back.
+[13:38.40] Also, here you have the arrange option.
+[13:41.12] If you didn't like the output, you can
+[13:42.96] delete it or you can rearrange the
+[13:44.80] video.
+[13:46.32] So here, as you can see, V3 understands
+[13:49.24] [music] that the subject is staying the
+[13:51.36] same, but the context is changing. It
+[13:54.32] generates a transition where the robot
+[13:56.40] maybe walked through a door or the light
+[13:58.80] shifts [music] blending the two worlds.
+[14:01.84] Earlier it was the noodle shop and now
+[14:04.08] we can see the subway here. I'm just
+[14:06.32] doing this for demo purposes to show you
+[14:08.56] how to use the different modes. This is
+[14:11.04] a basic example, but you can modify this
+[14:13.84] according to your specific use case.
+[14:16.32] Whether you're making a sci-fi epic or a
+[14:19.12] product commercial, you can use these
+[14:21.52] tools to [music] create absolute magic.
+[14:24.72] Now, let's watch our entire video.
+[14:27.68] >> Here is your order. Nutrient balance
+[14:30.32] confirmed. Temperature optimal. Enjoy
+[14:33.36] your noodles.
+[14:35.36] >> The pasta is served. It meets all
+[14:37.68] nutritional requirements.
+[14:42.96] >> Step right up. Get your fresh hot pasta
+[14:45.28] here. Guaranteed best flavor in the
+[14:47.60] city.
+[14:57.44] We didn't just make a gift. We made a
+[14:59.28] narrative sequence. We used ingredients
+[15:01.68] to cure the amnesia. We used frames to
+[15:04.40] video [music] to direct the camera. We
+[15:06.80] used the scene builder to stitch the
+[15:08.32] story together.
+[15:09.92] If you enjoyed this video, you can
+[15:11.60] enroll in Greatle Learning Academy for
+[15:13.60] free, choose from hundreds of courses
+[15:15.52] across multiple domains, and earn a
+[15:17.60] certificate of completion along the way.
+[15:19.60] And if you want to take it a step
+[15:20.88] further, you can try Greatlearning
+[15:22.64] Academy Pro Plus with a free trial.
+[15:24.87] [music] It provides access to additional
+[15:26.72] premium courses with more advanced
+[15:28.72] content from distinguished faculty along
+[15:30.80] with features like guided projects, a
+[15:32.88] resume builder, and mock interviews to
+[15:34.96] make your learning journey even richer.
+[15:36.88] Link is in the description.

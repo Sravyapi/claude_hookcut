@@ -1,0 +1,515 @@
+[0:00.00] or let me set the context for the video.
+[0:01.76] Today we're talking about seven mistakes
+[0:03.76] that I generally see early engineers
+[0:06.00] make in their career. These are
+[0:07.52] primarily experience-based uh talking to
+[0:09.52] a bunch of devs in the cohort at school
+[0:11.92] otherwise. What are the kind of things
+[0:13.04] that a lot of people are sort of very
+[0:14.48] commonly struggling with and if you go
+[0:16.00] through the video you might relate to a
+[0:17.84] few of them. What can you do to get over
+[0:19.68] them? Without any further ado, let's get
+[0:21.28] into the video. Let's start with point
+[0:22.88] number one which is like honestly just a
+[0:24.40] very early engineer debate which is DSA
+[0:26.24] versus dev. I see this fairly often um
+[0:29.04] not as much in you know our super 30 or
+[0:31.20] hour courses but outside of it I think
+[0:33.20] most college people are fairly confused
+[0:34.88] between the two I think if you're an
+[0:36.64] early engineer and if you want to target
+[0:38.16] an MNC eventually DSA is super important
+[0:40.56] it's still the filtering criteria for a
+[0:42.16] bunch of companies I've been saying this
+[0:43.52] for more than 5 years and you know I
+[0:45.28] think everyone including me sort of see
+[0:46.56] it as an unoptimal way to get people in
+[0:48.16] but it is way to get into an MNC right
+[0:50.40] now and hence something you need to
+[0:51.68] focus on generally a good path is to try
+[0:53.52] for ICPC um and in the process you learn
+[0:55.92] enough DS ESA to be able to crack most
+[0:57.68] interviews. The other route is to do a
+[0:59.36] bunch of lead code. The only problem
+[1:00.64] there is um there's a false sense of
+[1:02.64] satisfaction that comes with you know
+[1:04.24] 300 500 problems on lead code. But I
+[1:06.16] think there are better creators to
+[1:07.12] follow you know people to talk to. Um if
+[1:09.04] you feel like DSA is your route even
+[1:10.56] though I've done DSA back in the day
+[1:11.84] today if I were to sit even at an L1
+[1:13.68] Google interview I probably won't be
+[1:14.72] able to make it because it's been years
+[1:16.00] since I have done it. Um and you should
+[1:17.60] definitely do it if you're thinking of
+[1:18.72] sitting for an MNC. On the other side if
+[1:20.72] you're sure you do like programming
+[1:22.24] which is what happened with me in my
+[1:23.36] third year. I did DSA but honestly was
+[1:26.00] fairly bored of it and I could see
+[1:27.28] myself not reaching the world finals in
+[1:28.96] ICBC. Hence gained an interest in dev.
+[1:30.80] Ended up liking it so much. He did not
+[1:32.32] like working at an MNC eventually. The M
+[1:34.32] andc that I got out of my college
+[1:35.68] placements and eventually just moved to
+[1:36.88] startups and you know been there for a
+[1:38.80] while and I generally like the work at
+[1:40.00] startups a little more than the work at
+[1:41.60] you know bigger companies. At startups
+[1:43.84] they're going to make you live code. Uh
+[1:46.16] you are expected to hit the ground
+[1:47.52] running on day zero. U there's no
+[1:49.12] introductory period. U tickets aren't as
+[1:51.84] small as you'll find in big tech. There
+[1:53.68] is most probably fairly impactful work
+[1:55.76] if a startup is running and has hired
+[1:57.60] you, is paying you money. Um most
+[1:59.20] probably they're extracting that money
+[2:00.32] from you. Um that that generally does
+[2:02.40] not happen in you know bigger companies.
+[2:03.92] You might be an engineer who's been
+[2:04.96] slacking for many years yet been able to
+[2:06.48] you know get promotions stay at the
+[2:07.92] company. Um in the startup it's a little
+[2:09.20] more cutthroat and hence you need to
+[2:10.40] hone your skills for that. Start doing
+[2:12.32] what you would do in the company
+[2:13.36] eventually. That could be full stack,
+[2:14.72] front end, back end, mobile development,
+[2:16.00] devops, I don't know what. But whatever
+[2:17.44] it is that interests you that you can
+[2:19.04] clearly tell the market demands. Get
+[2:21.76] really good at it and that's usually the
+[2:23.28] better way to get into a startup. Decide
+[2:24.88] which one you like and 6 months is
+[2:26.80] usually enough to learn either of these.
+[2:28.40] Whatever the technology be DSA, full
+[2:30.40] stack, back end, front end, mobile,
+[2:31.76] whatever is your pick. Generally, the
+[2:33.04] better answer here is do whatever
+[2:34.64] interests you. You'll be able to put in
+[2:36.32] more hours in what interests you and
+[2:37.60] hence beat other people at their game.
+[2:39.52] With that, we'll move to point number
+[2:40.64] two, choosing between creators or
+[2:42.24] courses. Um long story short here I have
+[2:44.32] not followed any creators. I generally
+[2:45.68] don't recommend you know you follow any
+[2:47.04] any c creators including myself for
+[2:49.20] learning. I think for a complete
+[2:50.32] beginner it sort of makes sense. I have
+[2:51.76] initially in my career followed some
+[2:53.28] videos but I don't think I've learned
+[2:55.68] very well while following videos. Um
+[2:57.60] I've mostly learned by coding myself or
+[2:59.36] picking up projects or you know um doing
+[3:01.12] the dirty laundry myself. Um would
+[3:03.04] recommend you the same thing. I think
+[3:04.24] it's very easy to get confused between
+[3:05.92] course a creator of where to learn from.
+[3:07.76] Generally project based learning is the
+[3:09.36] best. So pick a project generally
+[3:10.72] something that you like something that
+[3:11.92] you might be able to get people to use
+[3:13.92] and start to build it. Learn the tech
+[3:15.52] stack on the way rather than you know
+[3:17.12] following a video step by step unless
+[3:18.64] you're very early maybe the first time
+[3:19.84] it's fine but after that it sort of
+[3:21.68] makes sense to you know be a little
+[3:22.96] independent. The earlier you become
+[3:24.72] independent the better engineer you will
+[3:26.24] be and you know try not to get trapped
+[3:28.40] in a in video hell or you know tutorial
+[3:30.64] hell or whatever course hell. Try to get
+[3:32.56] out of it as quickly as possible and you
+[3:34.64] know code things yourself. Point number
+[3:36.40] three, this one's around juggling
+[3:37.44] between stacks specifically. You know,
+[3:39.28] I've heard this common statement, I know
+[3:41.84] Java really well. Should I move to the M
+[3:43.44] stack now and you know, you think there
+[3:44.56] are more opportunities here? The answer
+[3:45.84] is there are opportunities mostly
+[3:47.20] everywhere. You know, if you're seeing
+[3:49.36] this as an escape, it's usually not a
+[3:50.88] good answer. If you weren't able to find
+[3:52.80] a job in, you know, let's say text
+[3:54.16] number one, let's say Java, there's a
+[3:55.36] high probability you might not find it
+[3:57.20] in the other place and it might just be
+[3:58.88] another escape. The other thing people
+[4:00.40] struggle with is uh deciding their
+[4:02.16] niche. um one you don't necessarily need
+[4:04.24] to pick a niche you know do AI or web 3
+[4:06.24] you know most jobs that you'll find out
+[4:07.92] there would be around you know some
+[4:09.52] level of full stack on DevOps so maybe
+[4:11.44] you you know over optimizing for a niche
+[4:13.52] very early um unless something interests
+[4:15.92] you really well might make sense to go
+[4:18.00] into it for example you might really
+[4:19.36] like cryptography or I don't know DevOps
+[4:21.28] then it sort of might make sense to
+[4:22.96] pursue it even though um whenever you're
+[4:24.88] pursuing a niche especially if you're
+[4:26.48] early it might make sense to see how
+[4:28.48] easy it is to get an entry-level job
+[4:30.00] because a lot of these roles for example
+[4:31.44] DevOps is harder to get a good job or
+[4:34.32] even a decent job as an early engineer
+[4:35.84] because you have a lot of stakeholders.
+[4:37.20] DevOps is a slightly more critical task
+[4:38.72] for a company. So getting hired there as
+[4:40.40] a early engineer is a little difficult.
+[4:41.84] Also um make sure you're following
+[4:43.44] markets. For example, right now you know
+[4:45.04] it's if you don't have any interest it
+[4:46.72] should be fairly obvious key the kind of
+[4:48.40] fundings the multiples that AI companies
+[4:50.56] are getting right now are better than
+[4:51.84] probably every other niche. Um hence
+[4:53.44] they might have more firepower or money
+[4:54.80] to throw at engineers. There is also
+[4:56.56] lack of you know engineers who have very
+[4:58.72] specific skills in machine learning and
+[5:00.08] AI. probably an obvious you know bet to
+[5:02.08] take technology to learn company to
+[5:03.84] apply for compared to something that you
+[5:05.76] know might have been super lucrative
+[5:07.36] back in the day let's say you know web
+[5:08.64] RTC or even web 3 I would say pick your
+[5:10.88] battles right pick your niche right if
+[5:12.32] you have no interest which I would say
+[5:13.68] is like 10% of us we don't know what we
+[5:15.76] really like and in that case probably
+[5:17.36] makes sense to just you know follow the
+[5:19.20] market and figure out where the job
+[5:20.56] exists getting the first job is usually
+[5:22.40] much harder than you know any future
+[5:23.76] role that you'll have so start
+[5:24.80] optimizing for that if you don't have a
+[5:26.08] job right with that we'll move to point
+[5:27.36] number four worrying about the job
+[5:28.72] market I think good engineers are
+[5:30.08] getting hired everywhere early engineers
+[5:31.60] later engineers you need to have the
+[5:32.88] skills of a senior engineer now even to
+[5:34.64] get you know the entry- level job of
+[5:36.40] whatever 8 10 LPA that's the only thing
+[5:38.16] that's changed but thankfully that's
+[5:39.68] never been too difficult you can
+[5:41.04] complain on one side that the market is
+[5:42.56] too unfair or you can just you know gain
+[5:43.92] the skills that you anyways were
+[5:45.44] supposed to once you got into the
+[5:46.72] industry and were working for like 2
+[5:48.08] years so the good thing is you're just
+[5:49.60] expected to be a good engineer at an
+[5:51.12] entry level which was not expected
+[5:52.40] before mostly what happens in a coding
+[5:53.92] career is either people take the EM
+[5:55.76] route which is they become managers they
+[5:57.68] sort of step back from coding or they to
+[5:59.84] stay in engineering. This will just help
+[6:01.12] you figure that out early. You want to
+[6:02.48] be an engineer which again probably 30%
+[6:04.40] of the people remain engineers beyond a
+[6:06.24] point in their career or if you want to
+[6:07.52] move to an AM role or if you want to do
+[6:08.96] something else. I think it makes sense
+[6:10.16] to expedite this process and AI and
+[6:12.08] productivity is sort of forcing us to
+[6:13.44] expedite the process. Other than that, I
+[6:15.20] don't think anything has changed. I I
+[6:16.56] think worrying about it is anyways not
+[6:18.08] going to change much. It's a slippery
+[6:19.44] slope, you know, looking at panic videos
+[6:21.28] and trying to figure out or predicting
+[6:22.96] where the market is going. Um in the
+[6:24.40] end, what has remained true amongst all
+[6:26.32] of this chaos is, you know, people are
+[6:27.84] hiring engineers. um an hour at least on
+[6:29.76] site batches or look at an IIT you know
+[6:31.52] look at even an NIT for that matter the
+[6:33.36] CS batch is usually doing well like
+[6:34.88] probabilistically doing really well if
+[6:36.40] if you reach an IIT CS there's a unless
+[6:38.72] you screw up royally there's no
+[6:40.32] probability of you not getting a job so
+[6:42.00] if you can which I guess gets harder you
+[6:44.16] know if you've not been getting a job
+[6:45.60] for like a year and been coding um but
+[6:48.32] generally I feel like if you've been
+[6:50.08] actually coding coding for a year it's
+[6:51.84] hard for you to not get something be it
+[6:53.68] an internship uh but like mostly a job
+[6:55.52] either you're not applying correctly or
+[6:56.64] you've not spent your time learning the
+[6:58.00] right Okay. Um, and when I say learning
+[6:59.36] the right way, I just mean, you know,
+[7:00.64] building projects, harder, ambitious
+[7:02.72] projects every day and learning
+[7:03.76] something new. The bad thing about dev
+[7:05.04] is there's no easy way to quantify if
+[7:06.48] someone's a good dev or if you're
+[7:07.52] improving every day. Um, that's not true
+[7:08.96] for, you know, DSA because, you know,
+[7:10.64] there's some sort of a rating, some sort
+[7:12.00] of a rank and you can see if you're
+[7:13.04] improving or not. Um, here it's a little
+[7:14.72] difficult. So, it's very important to be
+[7:16.72] self accountable and not lie to
+[7:18.40] yourself, know if you're growing every
+[7:19.76] day or not. With that, we move to the
+[7:21.04] fifth point, which is waiting for the
+[7:22.40] magical offer. I think mostly this
+[7:24.08] market has humbled everyone. But
+[7:25.36] generally if you're an early engineer
+[7:26.80] and if you feel like you might have an
+[7:28.40] offer let's say an internship that pays
+[7:29.84] 30 to 40,000 a month 2 months into
+[7:31.84] learning coding I think that's like a
+[7:33.44] very good offer to take. Why? Because
+[7:36.24] the your other option is you'll you know
+[7:37.60] wait for a better offer. You'll keep
+[7:39.36] learning for the next 6 months but very
+[7:41.20] high probability if you join a company
+[7:42.96] um like most companies startup when this
+[7:45.12] will happen you will probably have a
+[7:46.16] learning curve which will be much better
+[7:47.52] than you know your own self accountable
+[7:49.36] learning. If there is someone else
+[7:50.72] keeping you accountable, paying you a
+[7:52.08] salary, you will most probably learn
+[7:53.52] more compared to, you know, your own
+[7:55.04] timelines, your own projects, your own,
+[7:56.48] you know, product that you're trying to
+[7:57.76] build. Um, if you're building it for
+[7:58.96] someone else, even if it's like a
+[8:00.08] simpler product, if it is hitting users,
+[8:01.68] the learning that you'll get over there,
+[8:03.04] the feedback that comes from the users
+[8:04.48] and you improving on it is the dev
+[8:06.40] journey that's good to see early
+[8:08.00] compared to, you know, spending two
+[8:09.28] years building your own projects which
+[8:10.88] is not hitting production. By which I
+[8:12.64] mean, you know, no one's using them.
+[8:13.76] Most rums I look at like I I think
+[8:15.28] rarely have I seen an rum where I've
+[8:16.96] seen a project which does not have a
+[8:18.56] versel link or even if it doesn't it has
+[8:20.32] real users. I think that's a fairly
+[8:21.60] impressive thing to show your project
+[8:23.28] company project if it is a live link out
+[8:25.36] there. There are a lot of questions that
+[8:27.12] you can ask someone a lot of holes you
+[8:28.96] can poke in their you know journey of
+[8:30.80] building that product um and the kind of
+[8:32.48] challenges they might have faced. That's
+[8:33.76] very hard to do if you've just cloned
+[8:34.96] projects from various places. Hence
+[8:37.12] strongly recommend if you get an early
+[8:38.80] offer um that means full-time 8 LPA plus
+[8:41.44] intern 30K plus and you're early this is
+[8:43.76] your first offer it's only been 3 to 6
+[8:45.28] months that you've started coding um I
+[8:46.96] would take it eventually when the
+[8:48.32] magical offer is supposed to happen will
+[8:50.24] happen or might not happen ever but the
+[8:51.92] learning of working under someone is
+[8:53.28] usually better than you know building
+[8:54.40] your own projects point number six
+[8:55.92] applying to jobs without skills or you
+[8:57.60] know doing open source contributions
+[8:58.88] without actually understanding what
+[9:00.00] you're doing basically I don't know I
+[9:01.36] think there's a small population of
+[9:02.48] people who feel you know AI is a a
+[9:04.96] savior of some sorts And you know it
+[9:06.72] changed who can sort of get into tech.
+[9:08.72] Tech unfortunately is a very you know
+[9:10.40] pay your debt sort of an industry. By
+[9:12.00] which I mean you just have to work
+[9:13.44] through the bugs a little bit to
+[9:14.72] understand slight patterns in CS that
+[9:16.88] help you even with you know AI doing
+[9:18.88] most of your work. Now if you feel like
+[9:20.16] you can look at a GitHub issue copy it
+[9:22.16] paste it to sat GPD get the response and
+[9:23.84] create a PR that's a problem. In fact,
+[9:25.60] someone from cal.com recently tweeted
+[9:27.20] about the same. Um, can he reminisced
+[9:29.20] about the time um, back when people
+[9:31.12] actually put in the effort to, you know,
+[9:32.80] create a pull request, test it locally,
+[9:35.20] let the maintainers know what they've
+[9:36.48] done compared to what's happening right
+[9:38.00] now, which is, you know, a lot of AI
+[9:39.28] slop. There's no real hack now that AI
+[9:41.76] is here and, you know, even if it's
+[9:43.60] better than most human beings, it's very
+[9:45.44] obvious if you're using it. Um, and it's
+[9:47.12] mostly is going to piss the other side.
+[9:48.96] So don't try skipping a step of you know
+[9:51.36] paying your debts of learning the
+[9:52.80] patterns that exist in programming by
+[9:54.72] actually trying to debug things um
+[9:56.72] compared to you know using cursor or AI
+[9:59.44] for everything what will happen in the
+[10:00.80] process is you'll be a bad engineer that
+[10:02.96] creates good products but generally it's
+[10:05.52] a better idea to be a good engineer that
+[10:07.60] hopefully creates good products um for
+[10:09.36] example these days when people show me
+[10:11.28] projects um like early engineers people
+[10:13.92] in the school people who I know you know
+[10:15.44] I don't expect them to work tomorrow I
+[10:17.20] like the UI alone looks looks a little
+[10:18.96] weird. U if it looks unique in the sense
+[10:21.04] even if it looks bad, it I can tell it's
+[10:22.96] not violated. Let me just show an
+[10:24.24] example of here. Um like look at this.
+[10:26.48] It's like pretty bad UI, right? This is
+[10:28.16] one of the projects that the first year
+[10:29.68] students of the school are doing. Um and
+[10:33.12] yeah, I can no one's going to hire you
+[10:34.88] like this. But I know for a fact this
+[10:37.20] guy did not vip code the UI when he
+[10:38.72] could have. Um and he's sort of
+[10:40.00] understanding the nuances of front-end
+[10:41.28] development. Even though he's like a bad
+[10:42.48] designer, he's still not outsourcing the
+[10:44.24] process of learning. um especially when
+[10:46.40] he's in his first year and you know this
+[10:47.84] is the time for him to actually learn.
+[10:49.12] Counterintuitive advice over here is um
+[10:50.96] at least for someone early I couldn't
+[10:52.40] care less about you know their UI. I
+[10:54.32] would care more about you know how
+[10:55.36] they've written their code. Can I tell
+[10:57.04] if it's you know can I smell a lot of AI
+[10:58.56] swap in there? Can I ask them very deep
+[11:00.40] questions about the code that they have
+[11:01.52] written? Um and are they able to answer
+[11:03.04] this? Well I know this I do this for a
+[11:04.72] living now. I I take at least 30
+[11:06.32] interviews a week right now. If you look
+[11:07.76] at my calendar for this week,
+[11:10.96] most weeks I have, you know, interviews
+[11:12.32] lined up for the next super 30 and it's
+[11:14.16] the same questions I'm asking. It's the
+[11:16.00] same process that I follow and the
+[11:17.12] process sort of works fairly well. If
+[11:18.64] you have two to three good projects if
+[11:19.84] you're able to explain your code well
+[11:21.20] and I keep pushing to a point where you
+[11:23.36] know you don't know the answer to
+[11:24.48] something but if you are able to get to
+[11:25.68] that point I think it's you know a very
+[11:27.04] good sign and usually an accept in super
+[11:29.20] 30 and most obvious rejects are either
+[11:31.44] the project is very simple um or again
+[11:34.00] it's very obviously vioded or even if
+[11:35.92] it's not coded you've you know
+[11:37.04] copyrighted through a video you're not
+[11:38.24] able to explain a lot of things yourself
+[11:39.76] um the other thing is like lack of
+[11:41.28] consistency also like a lot of times
+[11:42.72] people show projects um but they're like
+[11:44.48] 8 months old and you know they they
+[11:45.68] don't have anything to show so my very
+[11:47.04] obvious question to them is what have
+[11:48.24] been doing for the last 8 months. If you
+[11:49.52] really like coding, you'll probably not,
+[11:50.72] you know, you not have a gap of 8
+[11:52.16] months. You'll probably have a gap at
+[11:53.76] max of like 3 days. Um, but other than
+[11:55.60] that, you'll be building something. Um,
+[11:56.80] if you're not doing that, then, you
+[11:57.84] know, I get that you want a job right
+[11:59.76] now, but, you know, you're probably not
+[12:01.04] as interested in CS and this will remain
+[12:03.52] like a very interested field eventually.
+[12:05.92] Um, so figure out um if you're actually
+[12:07.68] interested to stay or not. The last
+[12:09.12] point is um this being nonchalant
+[12:10.96] towards a community. I get that we are
+[12:12.96] shy people. Um, I've been shy myself,
+[12:14.96] but at at least in my college, I've made
+[12:18.24] friends that I know are smarter than me
+[12:20.00] when it comes to CS. I had friends
+[12:21.36] who've been doing coding since they were
+[12:22.88] 6 years old, were very obviously much
+[12:24.56] better than me, never sat for campus
+[12:25.92] placements, always went for higher
+[12:27.12] studies. I could tell, you know, they
+[12:28.56] have 10 years of experience ahead of me.
+[12:30.24] And just being around them is going to
+[12:31.52] make me a better coder. Honestly, I
+[12:33.84] never wanted to do coding. I wanted to
+[12:35.04] do other things. But being around these
+[12:36.32] people I could tell you know this if I
+[12:38.96] sort of get interested in CS uh I feel
+[12:41.60] like there's a lot more magic that I can
+[12:43.20] bring to the world compared to you know
+[12:44.40] whatever else I was thinking of doing.
+[12:45.60] That only happened because you know
+[12:47.12] keeping my shy nature on one side. Um at
+[12:49.36] least with this you know group of
+[12:50.48] technically smart people I was able to
+[12:51.92] interact well. If you talk to anyone in
+[12:53.44] super 30 you'll tell them that the
+[12:54.64] biggest thing that they got was the
+[12:55.60] network around them. Um the same I think
+[12:57.12] is true for IITs. Um the people is sort
+[12:59.20] of you know what ends up making everyone
+[13:01.60] better and the same happened for me when
+[13:02.88] I went to my college. You can only see
+[13:04.64] these network effects in hindsight. So
+[13:06.08] try to push for those network effects.
+[13:07.36] Try to find those people around you uh
+[13:09.04] that you know are you know obviously
+[13:10.56] much smarter than you and everything
+[13:11.84] else is actually a piece of cake. You
+[13:13.04] actually never spend your time worrying
+[13:15.20] about anything else, worrying about the
+[13:16.96] market, worrying about what project
+[13:18.56] should I pick, worrying about what stack
+[13:20.08] should I pick. If you have that group
+[13:22.00] of, you know, smarter people than you,
+[13:23.68] you know what they say, if you're the
+[13:24.64] smartest person in a room, you're
+[13:26.00] probably in the wrong room. Always
+[13:27.12] strive to be the dumbest person in the
+[13:28.40] room that you that's it. That's seven
+[13:29.60] mistakes that I think early engineers
+[13:30.96] make. To recap, point number one, DS
+[13:32.96] versus dev. Just pick whatever interests
+[13:34.40] you. Point number two, following
+[13:35.60] creators or you know just don't spend
+[13:36.88] too much time or energy figuring out
+[13:38.00] what creator to follow. Follow whatever
+[13:39.36] gives you value and if not just move on.
+[13:40.88] Point number three, stop juggling
+[13:42.08] between stacks. Try to pick one that
+[13:43.68] interests you and go deep in it. Point
+[13:45.04] number four, don't worry about the
+[13:46.16] market. Stop watching videos about the
+[13:47.60] market. It'll go where it has to go. You
+[13:49.20] focus on whatever interests you. Point
+[13:51.28] number five, don't apply for jobs before
+[13:53.12] you have any skills. Uh don't create
+[13:54.48] open source contributions if you don't
+[13:55.68] understand what you're doing. And point
+[13:56.72] number seven, try to make friends that
+[13:58.48] are smarter than you. Um, if you want to
+[13:59.84] get good at CS, the best thing you can
+[14:01.20] do is find and work for people who are
+[14:03.20] smarter than you. With that, I end the
+[14:05.12] video. I'll see you guys in the next
+[14:06.24] one.

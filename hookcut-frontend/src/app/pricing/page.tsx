@@ -165,7 +165,10 @@ export default function PricingPage() {
     }
   };
 
-  const currency = plans?.currency || detectCurrency();
+  // Prefer browser timezone detection over stored DB value — DB value may be stale
+  // (e.g. user created before currency detection was wired up). detectCurrency() always
+  // runs client-side so it correctly reflects the user's actual location.
+  const currency = detectCurrency();
   const currentTier = plans?.current_tier || "free";
 
   const getPrice = (plan: PlanInfo | (typeof PLANS)[number]) => {

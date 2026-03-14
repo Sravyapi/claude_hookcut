@@ -1,0 +1,417 @@
+[0:00.16] Seram AI, a 2.5-year-old Indian AI
+[0:02.80] startup, just did the impossible. It has
+[0:05.36] beaten Chad GPT and Google Gemini on
+[0:07.92] India's specific AI benchmarks. And what
+[0:10.56] makes this truly remarkable is the fact
+[0:12.72] that they pulled this off with just $41
+[0:15.20] million in funding, which is peanuts
+[0:17.36] when you compare it with these global
+[0:19.44] giants. On top of that, Servam's AI
+[0:21.76] model has just $3 billion parameters.
+[0:24.24] Compare that to Google's Gemini which
+[0:26.16] was trained on an estimated 2 trillion
+[0:28.56] parameters which makes Servam's AI model
+[0:31.20] 667
+[0:32.80] times smaller and this is truly India's
+[0:35.20] deepseek moment and it tells us
+[0:37.20] something way more interesting about the
+[0:39.12] future of AI in India. Welcome to our
+[0:41.36] weekly Indian startup news show. I'm
+[0:43.44] Panka your host and you're watching
+[0:45.36] backstage with millionaires a channel
+[0:47.20] that's also part of Zerodha's01 network.
+[0:54.88] Now before I start, I just want to say
+[0:56.72] that this is our 300th episode, which
+[0:59.12] means we have done 300 weekly news
+[1:01.52] videos and it took us more than 5 years
+[1:03.68] to do this. So I just want to thank you
+[1:05.68] guys to tune in every week and show us
+[1:07.92] so much love and I hope we can continue
+[1:10.00] for another 5 years and keep bringing
+[1:12.08] you exciting startup news every week
+[1:14.72] about Indian startup ecosystem. Also, I
+[1:16.96] would love to know in the comments when
+[1:18.40] did you guys start watching these weekly
+[1:20.48] startup news videos. Feel free to drop a
+[1:22.64] comment. And now on to the main news. So
+[1:25.12] before we go deeper on everything Servam
+[1:27.28] AI is doing, let's start with a recent
+[1:29.28] achievement that server just achieved.
+[1:31.44] So firstly we have server vision which
+[1:33.44] is their document reading AI and it has
+[1:35.52] scored 84.3%
+[1:37.44] accuracy on the OM OCR benchmark.
+[1:40.32] Whereas Google Gemini 3 Pro scored 80.2%
+[1:43.60] and Chad GBT scored 69.8%.
+[1:46.96] And this is not some random test. This
+[1:49.04] benchmark measures how well AI can read
+[1:51.76] real Indian documents. Things like
+[1:53.76] government forms filled out by hand,
+[1:55.76] financial records from the 1980s,
+[1:58.00] textbooks in regional languages, and
+[2:00.16] newspapers with poor scan quality.
+[2:02.48] Basically, the messy and complex
+[2:04.24] documents that's harder for machines to
+[2:06.64] read. And Serom's AI did it much better
+[2:09.20] than Gemini and Chad GPT. Then there is
+[2:11.44] Serv's textto-spech model Bulbull V3
+[2:14.32] which dominated the tests that matter
+[2:16.40] most for India which is telephon grade
+[2:18.72] audio. In a blind study with over 20,000
+[2:21.36] votes from 500 participants, Bulbull V3
+[2:24.16] was the top rated model for 8 kohz audio
+[2:27.20] which is what call centers and voice
+[2:28.88] agents actually use. Now while 11 Labs
+[2:31.44] did well in studio quality audio,
+[2:33.44] Bullbull excelled in the low bandwidth
+[2:35.76] real world condition where Indian
+[2:37.76] businesses operate. So now the question
+[2:39.68] is how did they do it? Because that is
+[2:41.52] the part that really matters. See Seram
+[2:43.92] did not try to beat Chad GPT at
+[2:46.00] everything. Instead they asked a
+[2:47.76] different question. What does India
+[2:49.44] actually need that the global models
+[2:51.52] don't do well? And the answer was
+[2:53.20] simple. Reading Indian scripts, speaking
+[2:55.36] Indian languages and understanding
+[2:57.68] Indian context. Think about how global
+[2:59.76] AI models are trained. They learned from
+[3:01.76] Reddit, Wikipedia, GitHub and Western
+[3:04.40] books. In fact about 90% of their
+[3:06.64] training data was in English. And when
+[3:08.48] you hand them a government form in say
+[3:10.32] Tamil with coffee stains and handwritten
+[3:12.64] notes, they will struggle. And when you
+[3:14.72] ask them to speak Hindi with a natural
+[3:16.64] accent and handle English, well, they
+[3:18.96] sound robotic. And which is why serum
+[3:21.12] trained their models exclusively on
+[3:23.36] Indian data, real government forms,
+[3:25.68] banking documents, textbooks in 22
+[3:28.16] regional languages, historical
+[3:29.76] newspapers, archives going back to
+[3:31.84] 1800s, voice recordings with regional
+[3:34.24] accent, and code mixed speech. They even
+[3:37.04] built custom tokenizers. Basically the
+[3:39.20] underlying tech that breaks text into
+[3:41.44] pieces specifically optimized for Indian
+[3:44.00] scripts. See the standard tokenizers
+[3:46.16] treat Danagri or Tamil very very
+[3:48.64] inefficiently requiring two to three
+[3:50.80] times more processing than English and
+[3:52.56] that's why server solved this at the
+[3:54.64] foundational level and now the company
+[3:56.32] is building India's sovereign AI
+[3:58.32] infrastructure in partnership with the
+[4:00.24] government. In April 2025, Serum was
+[4:02.56] selected as the first startup under the
+[4:04.48] India AI mission in order to develop
+[4:06.56] India's sovereign foundational large
+[4:08.56] language model. The government is
+[4:10.00] providing them access to 4,000 GPUs for
+[4:12.56] 6 months and taking equity in return.
+[4:14.96] And this is not just typical funding.
+[4:16.80] It's a strategic bet by the Indian
+[4:18.40] government that homegrown AI is critical
+[4:20.88] for national security and digital
+[4:23.12] sovereignty. And in January 2026, things
+[4:25.68] grew to a whole new level. Servam, IT
+[4:28.16] Madras and the Tamil Nadu government
+[4:29.84] announced digital SAUM which is India's
+[4:32.32] first sovereign AI research park and
+[4:34.64] this is a 10,000 cr rupees investment
+[4:37.04] over 5 years and here we'll have
+[4:38.88] research labs, startup incubation
+[4:40.72] facilities, an institute for AI and
+[4:42.96] governance and a 20 megawatt AI
+[4:45.28] optimized data center. Servam has also
+[4:47.44] signed an MOU with Odisha to build a 50
+[4:50.08] megawatt AI compute facility there. And
+[4:52.56] they're working with UIDI, the
+[4:54.56] organization behind Aadhaar to power AI
+[4:56.96] voice interaction for 1.38 billion
+[4:59.68] Indians. And this is basically the
+[5:01.36] sovereign AI strategy playing out in
+[5:03.52] real time. The government understands
+[5:05.12] that depending entirely on American or
+[5:07.28] Chinese AI for critical government
+[5:09.52] services is a strategic vulnerability
+[5:12.08] and server is positioning itself as the
+[5:14.40] solution to that problem. Now with all
+[5:16.32] of that being said, let me be very
+[5:18.32] clear. Serv did not beat Chad GPT at
+[5:21.28] everything. If you ask Serom vision to
+[5:23.04] write poetry, explain quantum mechanics
+[5:25.28] or generate code, it won't even try.
+[5:27.68] That's not what it's designed for. And
+[5:29.52] this India today article explains this
+[5:31.68] perfectly. Chad GPT and Gemini are jacks
+[5:34.32] of all trades. Whereas Servam AI is a
+[5:36.56] master of a few but highly specific
+[5:38.80] ones. And what Servam has proved here is
+[5:40.96] something more subtle but equally
+[5:42.88] important. And that is that for specific
+[5:45.12] India focused applications. A small
+[5:47.20] startup with the right focus can
+[5:49.12] outperform trillion dollar companies
+[5:51.36] with trillion parameter models.
+[5:53.44] Basically it's not about building a
+[5:54.96] bigger AI, it's about building the right
+[5:57.20] AI. And in the case of Saram, this
+[5:59.44] approach comes from the unique
+[6:00.88] backgrounds of its founders. Pratush
+[6:02.72] Kumar has worked at Microsoft research
+[6:04.72] and IBM research. And he also co-founded
+[6:06.96] AI for Bhat which has been working on
+[6:09.12] Indian languages AI for years. Then
+[6:11.44] there is Vive Ragwan who has a PhD from
+[6:13.68] Carnegi Melon and also I spent nearly 12
+[6:16.24] years as a volunteer architect for
+[6:18.24] Aadhar. So both of them not only have
+[6:20.40] the technical expertise but have also
+[6:22.64] passion for building India specific
+[6:24.80] products and these two understand that
+[6:26.72] it's not smart to compete with Chad GPT
+[6:28.96] and Gemini and that's why they're not
+[6:30.64] building for everyday consumers like you
+[6:32.40] and me. They're building solutions for
+[6:34.32] Indian enterprises. They're building
+[6:36.16] solutions like servy which is an agent
+[6:38.56] orchestration platform designed
+[6:40.32] specifically for businesses, large
+[6:42.40] enterprises and also government
+[6:44.00] entities. Also their pricing for the
+[6:46.00] Indian market too. Their voice AI agent
+[6:48.32] costs just one rupee per minute. And if
+[6:50.64] you compare that to global services,
+[6:52.40] they are two to five times more costly.
+[6:54.88] And Seram is already working with
+[6:56.40] clients like UIDAI for Aadhaar services,
+[6:59.28] many state governments and also many
+[7:01.28] large Indian companies. Their strategy
+[7:03.28] is simple. While OpenAI and Google fight
+[7:05.36] for global consumers with generalpurpose
+[7:07.60] chatbots, Serom is building the
+[7:09.68] essential AI infrastructure that Indian
+[7:12.16] enterprises actually need. Document
+[7:14.32] processing for banks including millions
+[7:16.40] of firms, voice AI for call centers
+[7:18.64] serving rural India and translation for
+[7:20.88] government services reaching non-English
+[7:23.20] speakers. [music] Okay. Similar to how
+[7:24.72] serum is building AI solutions for
+[7:26.48] India, we at Backstage with Millionaires
+[7:28.40] are trying to solve personal finance for
+[7:30.56] millions of young Indians and we're
+[7:32.16] doing it through our new app Finanjo.
+[7:34.16] Now, I've spoken about the app many
+[7:35.76] times in the past, but this week we have
+[7:37.84] launched the Finanjo AI feature for all
+[7:40.24] the users. It connects to your real
+[7:42.08] financial data and helps you understand
+[7:44.08] your money in context. Not generic GAN,
+[7:46.80] not one sizefits-all advice, but
+[7:48.72] personalized advice depending on your
+[7:50.72] financial situation. For example, you
+[7:52.64] can ask it, can I afford an iPhone 17?
+[7:55.04] And it will analyze your current monthly
+[7:56.88] expenses and your ongoing AMIs and will
+[7:59.28] tell you exactly what to do. For
+[8:01.12] example, in this case, it tells me that
+[8:02.88] my current account balance is too low
+[8:04.72] and that this month I've already spent
+[8:06.48] more than my total salary and also that
+[8:08.56] I haven't saved anything and so it's
+[8:10.64] probably not a good decision to buy an
+[8:12.48] iPhone 17 right now. And it also gives
+[8:14.56] me advice on how can I really afford
+[8:16.56] this phone, where can I save money and
+[8:18.64] how much exactly I need to save every
+[8:20.88] month to afford it. And this is just one
+[8:22.88] example. You can use financial AI to get
+[8:24.96] a clarity over things like insurance,
+[8:26.96] mutual funds, FDS, your current
+[8:28.80] financial health, and so much more. This
+[8:30.96] feature is currently in beta stage, and
+[8:32.80] I would love for you guys to download
+[8:34.24] the app and check this feature out.
+[8:36.16] Think of it like your personal financial
+[8:37.76] adviser and ask it whatever you want
+[8:39.60] about your money. Also, if you have any
+[8:41.60] feedback on it, feel free to write it in
+[8:43.36] the comments of this video or mail us at
+[8:45.36] hello@finanganangjo.com.
+[8:47.04] I'll provide the link to download the
+[8:48.40] app in description and pinned comment
+[8:50.24] down below. So, do check it out. And now
+[8:52.32] coming back to the video, the Indian
+[8:53.92] government just dropped new rules that
+[8:55.60] are about to change how AI generated
+[8:57.76] content works in India. And if you use
+[8:59.76] social media, this affects you. The
+[9:01.68] government has officially amended the
+[9:03.36] information technology rules 2021 to
+[9:06.08] bring AI generated content under clear
+[9:08.80] regulatory oversight. And this basically
+[9:10.72] means that the companies using AI
+[9:12.64] whether for text, images, audio or video
+[9:15.28] will now have to follow specific rules
+[9:17.36] around disclosure, accountability and
+[9:19.76] safety. So here is what's going to
+[9:21.52] change. First, AI generated content now
+[9:24.24] has a legal definition. The government
+[9:26.24] calls it synthetically generated
+[9:28.08] information. Basically, any audio,
+[9:29.76] video, or image that's artificially
+[9:31.60] created or altered using algorithms to
+[9:34.00] look real. Think about deep fake videos,
+[9:36.08] AI cloned voices, or those
+[9:37.68] hyperrealistic AI images that you see
+[9:39.84] everywhere. All of that now falls under
+[9:41.84] strict regulations. So what do platforms
+[9:44.32] have to do now? Well, three big things.
+[9:46.72] The first one is mandatory labeling.
+[9:48.88] Every piece of AI generated content must
+[9:51.28] be clearly labeled so you know that it's
+[9:53.60] synthetic. No more confusion about
+[9:55.36] what's real and what's AI. Number two is
+[9:57.84] permanent metadata. platforms have to
+[10:00.00] embed traceable markers in AI content
+[10:02.48] like a digital fingerprint that can't be
+[10:04.56] removed. So even if someone has shared a
+[10:06.64] video 100 times, you can still track
+[10:08.64] where it came from. The third one is
+[10:10.56] faster takedowns and that's really the
+[10:12.64] big one. Platforms now have just 3 hours
+[10:14.96] to remove illegal AI content after
+[10:17.04] getting a takedown order and that's down
+[10:19.28] from earlier deadline of 36 hours. And
+[10:22.00] if the platforms don't comply, they will
+[10:24.16] lose their safe harbor protection and
+[10:26.40] which means that they can be held liable
+[10:28.16] as if they created the content
+[10:30.08] themselves. The government is basically
+[10:31.76] saying that the era of unregulated AI
+[10:34.08] content is over. Now this big decision
+[10:36.32] comes after a wave of deep fake
+[10:38.40] controversies including fake videos of
+[10:40.48] celebrities, politicians and business
+[10:42.48] leaders that went viral and caused real
+[10:45.28] harm. And even Prime Minister Narendra
+[10:47.20] Modi himself has called it a crisis and
+[10:49.68] the amendment is India's response to
+[10:51.84] that crisis. And now the question is
+[10:53.52] that will this actually work? Can
+[10:55.36] platform build the tech to label and
+[10:57.28] trace AI content at scale. I guess we'll
+[10:59.36] find that out after February 20th when
+[11:01.44] these rules kick in. Let me know what
+[11:03.28] you think. Is this a right move to
+[11:04.96] tackle deep fakes or are these rules too
+[11:07.52] aggressive? Drop your thoughts in the
+[11:09.04] comments. All right, moving on to some
+[11:10.40] quick news updates. Three Indian space
+[11:12.40] startups Thrua Space, Astrom
+[11:14.16] Technologies and Aista Industries have
+[11:16.40] been selected by Inspace to build
+[11:18.08] indigenous small satellite bus
+[11:20.00] platforms. Basically, each companies
+[11:21.76] will receive 5 crore rupees grant to
+[11:23.92] develop a modular scalable satellite bus
+[11:26.32] under the satellite bus as a service
+[11:28.24] initiative. In simple terms, they're
+[11:29.92] building the body of a satellite, the
+[11:31.84] core systems that power, navigate and
+[11:34.24] communicate so that payload makers can
+[11:36.32] just plug in their tech and go to space.
+[11:38.56] And the idea here is to create a
+[11:40.16] cost-effective made in India platform
+[11:42.08] that works with India's growing small
+[11:44.16] launch capabilities and helps position
+[11:46.24] the country as a full stack small
+[11:48.40] satellite hub globally. All right, next
+[11:50.40] up, Physics Wala is expanding beyond
+[11:52.48] test prep and venturing into yoga and
+[11:54.88] wellness. The company has increased its
+[11:56.56] stake in Kamia Yoga and wellness to
+[11:58.72] 41.18%
+[12:00.48] after investing another 1.5 cr rupees.
+[12:02.88] Physics Walla had first signed the deal
+[12:04.64] in April 2025 and they can eventually
+[12:06.96] raise the stake to 50% depending on
+[12:09.76] conditions. All right, next up, Myntra
+[12:11.60] has brought in a new tech chief as it
+[12:13.84] doubles down on scale and quick
+[12:15.68] commerce. The company has appointed
+[12:17.28] former Instacart executive Premote
+[12:19.20] Adidam as its new CTO and he will lead
+[12:21.60] Myntra's overall technology from
+[12:23.52] platform innovation to long-term
+[12:25.52] scalability and he'll report directly to
+[12:27.28] Myntra CEO Nandita Sa. This move comes
+[12:30.16] nearly a year after Myntra's former CTO
+[12:32.48] Ragu Krishna Nandan stepped down.
+[12:35.92] All right, now let's move into the
+[12:37.12] funding news segment for today's video.
+[12:38.88] This week, Indian startups raised a
+[12:40.40] total of $247 million, which is slightly
+[12:43.76] higher than last week's 219 million. And
+[12:46.48] now, let's take a look at some of the
+[12:47.76] companies that have raised funds this
+[12:49.20] week. The first one I want to talk about
+[12:50.72] is Mumbai based radiance renewables
+[12:52.88] which helps factories and offices switch
+[12:54.80] to cheap green power from solar panels,
+[12:57.44] wind turbines, hybrids or batteries.
+[12:59.92] Basically building custom renewable
+[13:01.52] setups so that big businesses can cut
+[13:03.76] their electricity bills and carbon
+[13:05.68] footprint and they've just raised $100
+[13:07.36] million. Following that we have a
+[13:08.88] Bengaluru based biotech startup called
+[13:10.72] Pandurum Technologies which basically
+[13:12.72] grows replacement body parts like cornea
+[13:15.12] for your eyes, mini livers or lung
+[13:17.36] patches and all of this right in their
+[13:19.36] lab and they do this using stem cells,
+[13:21.52] 3D printing and smart gels and they have
+[13:23.92] raised $18 million in their series B
+[13:25.92] round. After that, we have Hyderabad
+[13:27.60] based LightMed, a company that's
+[13:29.36] creating a device called Curapod, which
+[13:31.44] uses red and near infrared light therapy
+[13:34.08] to help people suffering from chronic
+[13:36.16] pain from conditions like arthritis,
+[13:38.40] back issues or injuries. And they do
+[13:40.64] this without any drug or clinic visits.
+[13:42.96] You simply attach Curapod to the painful
+[13:44.96] areas and the light penetrates deep into
+[13:47.68] your tissues and this reduces
+[13:49.60] inflammation, boosts your cell repair
+[13:51.68] and eases discomfort. And according to
+[13:53.68] the company, people using CURPOD have
+[13:55.92] experienced up to 60% relief in just 30
+[13:58.80] minutes. And they've raised 20 cr rupees
+[14:00.72] or 2.2 million in their pre- series A
+[14:03.28] round. Next, we have a Chennai based
+[14:04.64] space tech startup called Satlab Space
+[14:06.48] Systems. And they are building data
+[14:08.16] relay satellites that act like a global
+[14:10.24] highway in space, letting other
+[14:12.00] satellites send real-time data back to
+[14:14.32] Earth anytime, anywhere without waiting
+[14:16.48] for a ground station to see them. And
+[14:18.08] they have just raised $1 million. And
+[14:20.00] finally, we have this gurugram based
+[14:21.44] startup called steam pro that turns your
+[14:23.52] regular bathroom shower into a personal
+[14:25.44] spa with their compact super smart steam
+[14:28.08] bath systems. And they've raised 3.8 cr
+[14:30.24] rupees in their seed round. All right,
+[14:31.84] that's all the startup news I have for
+[14:33.28] you this week. Feel free to download
+[14:34.72] finanjo by clicking on the link in the
+[14:36.56] description and pinned comment of this
+[14:38.40] video. As always, thanks for watching
+[14:40.00] and I'll see you in the next
